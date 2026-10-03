@@ -1,3 +1,4 @@
+import { Ionicons } from '@expo/vector-icons';
 import * as Google from 'expo-auth-session/providers/google';
 import * as WebBrowser from 'expo-web-browser';
 import { GoogleAuthProvider, signInWithCredential } from 'firebase/auth';
@@ -6,7 +7,7 @@ import { Text } from 'react-native';
 
 import { getFirebaseAuth } from '../lib/firebase';
 import { colors } from '../theme';
-import { Button } from './ui';
+import { GradientButton } from './ui';
 
 WebBrowser.maybeCompleteAuthSession();
 
@@ -30,7 +31,12 @@ export default function GoogleSignInButton() {
 
   return (
     <>
-      <Button title="Continue with Google" onPress={() => promptAsync()} disabled={!request} />
+      <GradientButton
+        title="Continue with Google"
+        icon={<Ionicons name="logo-google" size={18} color="#06210F" />}
+        onPress={() => promptAsync()}
+        disabled={!request}
+      />
       {error ? <Text style={{ color: colors.bad, marginTop: 8 }}>{error}</Text> : null}
     </>
   );

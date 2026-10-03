@@ -1,28 +1,34 @@
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
-import { SessionProvider } from '../lib/session';
+import { StoreProvider } from '../lib/store';
 import { colors } from '../theme';
 
 export default function RootLayout() {
   return (
-    <SessionProvider>
-      <StatusBar style="light" />
-      <Stack
-        screenOptions={{
-          headerStyle: { backgroundColor: colors.bg },
-          headerTintColor: colors.text,
-          headerShadowVisible: false,
-          contentStyle: { backgroundColor: colors.bg },
-        }}
-      >
-        <Stack.Screen name="index" options={{ headerShown: false }} />
-        <Stack.Screen name="home" options={{ headerShown: false }} />
-        <Stack.Screen name="dish/[id]" options={{ title: '' }} />
-        <Stack.Screen name="shop/[id]" options={{ title: 'Shopping list' }} />
-        <Stack.Screen name="cook/[id]" options={{ title: 'Cook' }} />
-        <Stack.Screen name="done/[id]" options={{ headerShown: false }} />
-      </Stack>
-    </SessionProvider>
+    <GestureHandlerRootView style={{ flex: 1, backgroundColor: colors.bg }}>
+      <StoreProvider>
+        <StatusBar style="light" />
+        <Stack
+          screenOptions={{
+            headerShown: false,
+            contentStyle: { backgroundColor: colors.bg },
+            animation: 'fade_from_bottom',
+          }}
+        >
+          <Stack.Screen name="index" options={{ animation: 'fade' }} />
+          <Stack.Screen name="onboarding" options={{ animation: 'fade' }} />
+          <Stack.Screen name="(tabs)" options={{ animation: 'fade' }} />
+          <Stack.Screen name="dish/[id]" options={{ animation: 'ios_from_right' }} />
+          <Stack.Screen name="cook/[id]" options={{ animation: 'slide_from_bottom', gestureEnabled: false }} />
+          <Stack.Screen name="done/[id]" options={{ animation: 'fade' }} />
+          <Stack.Screen name="shop/[id]" options={{ animation: 'ios_from_right' }} />
+          <Stack.Screen name="profile" options={{ animation: 'ios_from_right' }} />
+          <Stack.Screen name="grocery" options={{ animation: 'ios_from_right' }} />
+          <Stack.Screen name="log" options={{ presentation: 'formSheet', sheetAllowedDetents: [0.75, 1], sheetGrabberVisible: true, sheetCornerRadius: 28, contentStyle: { backgroundColor: colors.bgElevated } }} />
+        </Stack>
+      </StoreProvider>
+    </GestureHandlerRootView>
   );
 }

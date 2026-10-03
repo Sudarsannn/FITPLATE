@@ -1,10 +1,14 @@
-import { useLocalSearchParams } from 'expo-router';
+import { Ionicons } from '@expo/vector-icons';
+import { router, useLocalSearchParams } from 'expo-router';
 import { useState } from 'react';
-import { Alert, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Alert, ScrollView, StyleSheet, Text, View } from 'react-native';
+import Animated, { FadeIn as RFadeIn, FadeOut, LinearTransition } from 'react-native-reanimated';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { Button, Card, styles as ui } from '../../components/ui';
+import { Bar, Chip, Glass, GradientButton, PressableScale } from '../../components/ui';
 import { costToMake, getDish, scaleQty } from '../../data/dishes';
-import { colors } from '../../theme';
+import { select, success } from '../../lib/haptics';
+import { colors, radius, type } from '../../theme';
 
 export default function ShopScreen() {
   const { id, servings: s } = useLocalSearchParams<{ id: string; servings?: string }>();
@@ -16,122 +20,123 @@ export default function ShopScreen() {
   if (!dish) return null;
 
   const done = dish.ingredients.filter((i) => checked[i.name]).length;
+  const all = done === dish.ingredients.length;
 
   return (
-    <ScrollView contentContainerStyle={{ padding: 16, paddingBottom: 48 }}>
-      <Text style={styles.title}>
-        {dish.emoji} {dish.name} · {servings} {servings === 1 ? 'person' : 'people'}
-      </Text>
-      <Text style={ui.muted}>Estimated cost about ₹{costToMake(dish, servings)}</Text>
-
-      <View style={styles.tabs}>
-        {(['offline', 'online'] as const).map((m) => (
-          <Pressable key={m} onPress={() => setMode(m)} style={[styles.tab, mode === m && styles.tabOn]}>
-            <Text style={[styles.tabText, mode === m && { color: '#06210F' }]}>
-              {m === 'offline' ? 'At the supermarket' : 'Order online'}
-            </Text>
-          </Pressable>
-        ))}
+    <SafeAreaView style={{ flex: 1, backgroundColor: colors.bg }}>
+      <View style={styles.top}>
+        <PressableScale onPress={() => router.back()} style={styles.back}>
+          <Ionicons name="chevron-back" size={22} color={colors.text} />
+        </PressableScale>
+        <View style={{ alignItems: 'center' }}>
+          <Text style={[type.h2, { color: colors.text }]}>
+            {dish.emoji} {dish.name}
+          </Text>
+          <Text style={[type.small, { color: colors.muted }]}>
+            for {servings} · about ₹{costToMake(dish, servings)}
+          </Text>
+        </View>
+        <View style={{ width: 40 }} />
       </View>
 
-      {mode === 'offline' ? (
-        <Text style={[ui.muted, { marginBottom: 10 }]}>
-          Tick items off as you shop ({done}/{dish.ingredients.length}). Tap a name to see brands and prices.
-        </Text>
-      ) : (
-        <Text style={[ui.muted, { marginBottom: 10 }]}>
-          In the full app each item links to Blinkit, Zepto or Instamart. In this demo the buttons are placeholders.
-        </Text>
-      )}
-
-      <Card style={{ paddingVertical: 4 }}>
-        {dish.ingredients.map((i, idx) => {
-          const isOpen = open === i.name;
-          return (
-            <View key={i.name} style={[styles.item, idx > 0 && styles.divider]}>
-              <View style={{ flexDirection: 'row', alignItems: 'center', gap: 12 }}>
-                {mode === 'offline' ? (
-                  <Pressable
-                    onPress={() => setChecked({ ...checked, [i.name]: !checked[i.name] })}
-                    style={[styles.box, checked[i.name] && styles.boxOn]}
-                  >
-                    {checked[i.name] ? <Text style={{ color: '#06210F', fontWeight: '900' }}>✓</Text> : null}
-                  </Pressable>
-                ) : null}
-                <Pressable style={{ flex: 1 }} onPress={() => setOpen(isOpen ? null : i.name)}>
-                  <Text style={[ui.body, checked[i.name] && styles.struck]}>{i.name}</Text>
-                  <Text style={ui.muted}>
-                    {scaleQty(i.qty, dish, servings)} {i.unit}
-                  </Text>
-                </Pressable>
-                {mode === 'online' ? (
-                  <Pressable
-                    style={styles.buy}
-                    onPress={() => Alert.alert('Demo', `This would open ${i.name} on Blinkit or Zepto.`)}
-                  >
-                    <Text style={styles.buyText}>Buy</Text>
-                  </Pressable>
-                ) : null}
-              </View>
-              {isOpen ? (
-                <View style={styles.brands}>
-                  {i.look ? <Text style={[ui.muted, { marginBottom: 6 }]}>👀 {i.look}</Text> : null}
-                  {i.brands.map((b, bi) => (
-                    <View key={b.name} style={styles.brandRow}>
-                      <Text style={[ui.body, { flex: 1 }]}>
-                        {b.name}
-                        {bi === 0 && i.brands.length > 1 ? <Text style={styles.pick}>  users pick this</Text> : null}
-                      </Text>
-                      <Text style={ui.muted}>
-                        {b.pack} · ~₹{b.price}
-                      </Text>
-                    </View>
-                  ))}
-                </View>
-              ) : null}
-            </View>
-          );
-        })}
-      </Card>
-
-      {mode === 'offline' && done === dish.ingredients.length ? (
-        <View style={{ marginTop: 20 }}>
-          <Button title="Got everything 🎉" onPress={() => Alert.alert('Nice!', 'Head back and tap Start cooking.')} />
+      <ScrollView contentContainerStyle={{ padding: 18, paddingBottom: 60 }}>
+        <View style={{ flexDirection: 'row', gap: 8 }}>
+          <Chip label="🏪 At the supermarket" active={mode === 'offline'} onPress={() => setMode('offline')} />
+          <Chip label="📦 Order online" active={mode === 'online'} onPress={() => setMode('online')} />
         </View>
-      ) : null}
-    </ScrollView>
+
+        {mode === 'offline' ? (
+          <Glass style={{ marginTop: 14 }}>
+            <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginBottom: 8 }}>
+              <Text style={{ color: colors.text, fontWeight: '800' }}>
+                {done} of {dish.ingredients.length} in the basket
+              </Text>
+              <Text style={{ color: colors.muted }}>tap a name for brands</Text>
+            </View>
+            <Bar progress={done / dish.ingredients.length} />
+          </Glass>
+        ) : (
+          <Text style={{ color: colors.muted, marginTop: 14 }}>
+            In the full app each item opens Blinkit, Zepto or Instamart with the brand you pick. Here the buttons are placeholders.
+          </Text>
+        )}
+
+        <View style={{ marginTop: 12 }}>
+          {dish.ingredients.map((i) => {
+            const isOpen = open === i.name;
+            const on = !!checked[i.name];
+            return (
+              <Animated.View key={i.name} layout={LinearTransition.springify().damping(18)} style={[styles.item, on && mode === 'offline' && { opacity: 0.5 }]}>
+                <View style={{ flexDirection: 'row', alignItems: 'center', gap: 12 }}>
+                  {mode === 'offline' ? (
+                    <PressableScale
+                      haptic={false}
+                      scaleTo={0.8}
+                      onPress={() => {
+                        if (on) select();
+                        else success();
+                        setChecked({ ...checked, [i.name]: !on });
+                      }}
+                      style={[styles.box, on && styles.boxOn]}
+                    >
+                      {on ? <Ionicons name="checkmark" size={16} color="#06210F" /> : null}
+                    </PressableScale>
+                  ) : null}
+                  <PressableScale haptic={false} scaleTo={0.99} style={{ flex: 1 }} onPress={() => setOpen(isOpen ? null : i.name)}>
+                    <Text style={[styles.name, on && mode === 'offline' && { textDecorationLine: 'line-through' }]}>{i.name}</Text>
+                    <Text style={[type.small, { color: colors.muted }]}>
+                      {scaleQty(i.qty, dish, servings)} {i.unit} · {i.brands.length} {i.brands.length === 1 ? 'option' : 'brands'}
+                    </Text>
+                  </PressableScale>
+                  {mode === 'online' ? (
+                    <PressableScale style={styles.buy} onPress={() => Alert.alert('Demo', `This would open ${i.name} on Blinkit or Zepto.`)}>
+                      <Text style={styles.buyText}>Add</Text>
+                    </PressableScale>
+                  ) : (
+                    <Ionicons name={isOpen ? 'chevron-up' : 'chevron-down'} size={18} color={colors.faint} />
+                  )}
+                </View>
+                {isOpen ? (
+                  <Animated.View entering={RFadeIn.duration(200)} exiting={FadeOut.duration(120)} style={styles.brands}>
+                    {i.look ? <Text style={[type.small, { color: colors.muted, marginBottom: 8 }]}>👀 {i.look}</Text> : null}
+                    {i.brands.map((b, bi) => (
+                      <View key={b.name} style={styles.brandRow}>
+                        <Text style={{ color: colors.text, flex: 1, fontWeight: '600' }}>
+                          {b.name}
+                          {bi === 0 && i.brands.length > 1 ? <Text style={styles.pick}>  ★ users pick this</Text> : null}
+                        </Text>
+                        <Text style={{ color: colors.muted }}>
+                          {b.pack} · ~₹{b.price}
+                        </Text>
+                      </View>
+                    ))}
+                  </Animated.View>
+                ) : null}
+              </Animated.View>
+            );
+          })}
+        </View>
+
+        {mode === 'offline' && all ? (
+          <Animated.View entering={RFadeIn}>
+            <GradientButton title="Got everything. Let's cook 🔥" style={{ marginTop: 16 }} onPress={() => router.replace({ pathname: '/cook/[id]', params: { id: dish.id, servings: String(servings) } })} />
+          </Animated.View>
+        ) : null}
+      </ScrollView>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  title: { color: colors.text, fontSize: 20, fontWeight: '800' },
-  tabs: { flexDirection: 'row', gap: 8, marginVertical: 16 },
-  tab: {
-    flex: 1,
-    paddingVertical: 10,
-    borderRadius: 999,
-    borderWidth: 1,
-    borderColor: colors.border,
-    alignItems: 'center',
-  },
-  tabOn: { backgroundColor: colors.accent, borderColor: colors.accent },
-  tabText: { color: colors.text, fontWeight: '700' },
-  item: { paddingVertical: 12 },
-  divider: { borderTopWidth: 1, borderTopColor: colors.border },
-  box: {
-    width: 26,
-    height: 26,
-    borderRadius: 8,
-    borderWidth: 2,
-    borderColor: colors.muted,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+  top: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: 14, paddingTop: 6 },
+  back: { width: 40, height: 40, borderRadius: 20, backgroundColor: colors.card, alignItems: 'center', justifyContent: 'center' },
+  item: { padding: 14, borderRadius: radius.md, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, marginBottom: 8 },
+  name: { color: colors.text, fontWeight: '800', fontSize: 15 },
+  box: { width: 26, height: 26, borderRadius: 8, borderWidth: 2, borderColor: colors.faint, alignItems: 'center', justifyContent: 'center' },
   boxOn: { backgroundColor: colors.accent, borderColor: colors.accent },
-  struck: { textDecorationLine: 'line-through', color: colors.muted },
-  buy: { backgroundColor: colors.cardAlt, borderRadius: 999, paddingHorizontal: 14, paddingVertical: 8 },
-  buyText: { color: colors.accent, fontWeight: '800' },
-  brands: { marginTop: 10, marginLeft: 38, backgroundColor: colors.cardAlt, borderRadius: 12, padding: 12 },
-  brandRow: { flexDirection: 'row', paddingVertical: 4, gap: 8 },
-  pick: { color: colors.accent, fontSize: 11, fontWeight: '700' },
+  buy: { backgroundColor: colors.accent, borderRadius: 999, paddingHorizontal: 16, paddingVertical: 8 },
+  buyText: { color: '#06210F', fontWeight: '900' },
+  brands: { marginTop: 12, marginLeft: 38, backgroundColor: 'rgba(255,255,255,0.04)', borderRadius: 12, padding: 12 },
+  brandRow: { flexDirection: 'row', paddingVertical: 5, gap: 8 },
+  pick: { color: colors.accent, fontSize: 11, fontWeight: '800' },
 });
