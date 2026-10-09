@@ -1,7 +1,7 @@
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import { router } from 'expo-router';
-import { ScrollView, Share, StyleSheet, Text, View } from 'react-native';
+import { Image, ScrollView, Share, StyleSheet, Text, View } from 'react-native';
 import Animated, { useAnimatedScrollHandler, useAnimatedStyle, useSharedValue, interpolate, Extrapolation } from 'react-native-reanimated';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -30,7 +30,7 @@ function QuickAction({ icon, label, tint, onPress }: { icon: keyof typeof Ionico
 
 export default function Today() {
   const s = useStore();
-  const { profile, today, moneySaved, streak } = s;
+  const { profile, today, moneySaved, streak, user } = s;
   const goal = GOALS[profile.goal];
   const t = dayTotals(today);
   const left = goal.kcal - t.kcalIn + t.kcalOut;
@@ -63,7 +63,11 @@ export default function Today() {
                   <Text style={styles.streakText}>{streak}</Text>
                 </View>
                 <PressableScale onPress={() => router.push('/profile')} style={styles.avatar}>
-                  <Text style={styles.avatarText}>{(profile.name || 'F')[0].toUpperCase()}</Text>
+                  {user?.photo ? (
+                    <Image source={{ uri: user.photo }} referrerPolicy="no-referrer" style={styles.avatarImg} />
+                  ) : (
+                    <Text style={styles.avatarText}>{(profile.name || 'F')[0].toUpperCase()}</Text>
+                  )}
                 </PressableScale>
               </View>
             </View>
@@ -246,6 +250,7 @@ const styles = StyleSheet.create({
   streakText: { color: colors.warm, fontWeight: '900', fontSize: 15 },
   avatar: { width: 40, height: 40, borderRadius: 20, backgroundColor: colors.accentDark, alignItems: 'center', justifyContent: 'center', borderWidth: 2, borderColor: colors.accent },
   avatarText: { color: colors.text, fontWeight: '900', fontSize: 16 },
+  avatarImg: { width: 36, height: 36, borderRadius: 18 },
   ringNum: { color: colors.text, fontSize: 28, fontWeight: '900', letterSpacing: -0.8 },
   ringLabel: { color: colors.muted, fontSize: 11.5, fontWeight: '600' },
   kv: { flexDirection: 'row', alignItems: 'center', gap: 8 },
