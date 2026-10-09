@@ -108,7 +108,7 @@ function sampleState(): State {
 
 const KEY = 'fitplate.state.v2';
 
-type User = { name: string; guest: boolean };
+type User = { name: string; guest: boolean; email?: string; photo?: string };
 
 type Store = State & {
   user: User | null;
@@ -145,7 +145,11 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     const auth = getFirebaseAuth();
     if (!auth) return;
     return onAuthStateChanged(auth, (u) => {
-      setUser(u ? { name: u.displayName?.split(' ')[0] ?? '', guest: false } : null);
+      setUser(
+        u
+          ? { name: u.displayName?.split(' ')[0] ?? '', guest: false, email: u.email ?? undefined, photo: u.photoURL ?? undefined }
+          : null,
+      );
       setReady(true);
     });
   }, []);

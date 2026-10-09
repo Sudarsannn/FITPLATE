@@ -1,6 +1,6 @@
 import { Ionicons } from '@expo/vector-icons';
 import { router } from 'expo-router';
-import { Alert, ScrollView, StyleSheet, Switch, Text, View } from 'react-native';
+import { Alert, Image, ScrollView, StyleSheet, Switch, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { Chip, FadeIn, Glass, GradientButton, PressableScale } from '../components/ui';
@@ -24,10 +24,16 @@ export default function Profile() {
         <FadeIn i={0}>
           <View style={{ alignItems: 'center', marginBottom: 18 }}>
             <View style={styles.avatar}>
-              <Text style={{ color: colors.text, fontSize: 34, fontWeight: '900' }}>{(profile.name || 'F')[0].toUpperCase()}</Text>
+              {user?.photo ? (
+                <Image source={{ uri: user.photo }} referrerPolicy="no-referrer" style={{ width: 78, height: 78, borderRadius: 39 }} />
+              ) : (
+                <Text style={{ color: colors.text, fontSize: 34, fontWeight: '900' }}>{(profile.name || 'F')[0].toUpperCase()}</Text>
+              )}
             </View>
             <Text style={[type.h1, { color: colors.text, marginTop: 10 }]}>{profile.name || 'Guest'}</Text>
-            <Text style={{ color: colors.muted }}>{user?.guest ? 'Demo mode · not signed in' : 'Signed in with Google'}</Text>
+            <Text style={{ color: colors.muted }}>
+              {user?.guest ? 'Demo mode · not signed in' : user?.email ? `Signed in with Google · ${user.email}` : 'Signed in with Google'}
+            </Text>
           </View>
         </FadeIn>
 
