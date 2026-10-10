@@ -1,9 +1,10 @@
 // Feature flags for the auto-build roadmap. Every feature that is not finished,
 // or that needs a native development build, ships switched OFF so the app
-// always runs in Expo Go exactly as before. Flip a flag here to try a feature.
+// always runs in Expo Go exactly as before. A flag turns ON once its day's
+// "Done when" check passes; it then stays as a kill switch.
 export const featureFlags = {
-  /** Day 2: five-tab shell (Today, Cook, Track, Move, Profile). */
-  newTabShell: false,
+  /** Day 2: five-tab shell (Today, Cook, Track, Move, Profile). ON since Day 2; false restores the demo's four tabs. */
+  newTabShell: true,
   /** Day 4–5: load dishes, ingredients, nutrients and exercises from research JSON. */
   researchData: false,
   /** Day 12: camera check step in cook mode (plan only; needs a dev build). */
@@ -16,7 +17,7 @@ export const featureFlags = {
   poseRepCounter: false,
   /** Day 32: free vs paid locks. Everything is free until Sudarsan decides. */
   paywall: false,
-  /** Day 34: Firestore cloud sync. Stays OFF until Firestore is enabled. */
+  /** Day 3+: Firestore as the store for signed-in users (SPEC-ADDENDA §5). OFF until the storage layer ships and Firestore is enabled. */
   cloudSync: false,
 } as const;
 

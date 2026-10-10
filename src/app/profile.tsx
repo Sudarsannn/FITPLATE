@@ -4,23 +4,30 @@ import { Alert, Image, ScrollView, StyleSheet, Switch, Text, View } from 'react-
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { Chip, FadeIn, Glass, GradientButton, PressableScale } from '../components/ui';
+import { featureFlags } from '../config/featureFlags';
 import type { Diet } from '../data/dishes';
 import { setReminders } from '../lib/reminders';
 import { GOALS, useStore, type Goal, type Level } from '../lib/store';
 import { colors, type } from '../theme';
 
-export default function Profile() {
+// `asTab` is set by the Profile tab of the new shell: no back button, and room
+// at the bottom for the floating tab bar.
+export function ProfileScreen({ asTab = false }: { asTab?: boolean }) {
   const { profile, updateProfile, signOut, resetDemo, user, favourites } = useStore();
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: colors.bg }}>
+    <SafeAreaView edges={asTab ? ['top'] : undefined} style={{ flex: 1, backgroundColor: colors.bg }}>
       <View style={styles.top}>
-        <PressableScale onPress={() => router.back()} style={styles.back}>
-          <Ionicons name="chevron-back" size={22} color={colors.text} />
-        </PressableScale>
+        {asTab ? (
+          <View style={{ width: 40 }} />
+        ) : (
+          <PressableScale onPress={() => router.back()} style={styles.back} accessibilityLabel="Back">
+            <Ionicons name="chevron-back" size={22} color={colors.text} />
+          </PressableScale>
+        )}
         <Text style={[type.h2, { color: colors.text }]}>Profile</Text>
         <View style={{ width: 40 }} />
       </View>
-      <ScrollView contentContainerStyle={{ padding: 18, paddingBottom: 60 }}>
+      <ScrollView contentContainerStyle={{ padding: 18, paddingBottom: asTab ? 150 : 60 }}>
         <FadeIn i={0}>
           <View style={{ alignItems: 'center', marginBottom: 18 }}>
             <View style={styles.avatar}>
@@ -85,7 +92,7 @@ export default function Profile() {
         <FadeIn i={3}>
           <Glass style={{ marginTop: 14 }}>
             <Text style={{ color: colors.text, fontWeight: '800' }}>❤️ {favourites.length} saved dishes</Text>
-            <Text style={[type.small, { color: colors.muted, marginTop: 4 }]}>Find them under Discover → Saved.</Text>
+            <Text style={[type.small, { color: colors.muted, marginTop: 4 }]}>Find them under {featureFlags.newTabShell ? 'Cook' : 'Discover'} → Saved.</Text>
           </Glass>
         </FadeIn>
 
@@ -115,6 +122,10 @@ export default function Profile() {
       </ScrollView>
     </SafeAreaView>
   );
+}
+
+export default function Profile() {
+  return <ProfileScreen />;
 }
 
 const styles = StyleSheet.create({

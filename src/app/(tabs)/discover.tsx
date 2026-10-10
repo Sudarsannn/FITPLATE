@@ -23,7 +23,9 @@ const FILTERS: { label: string; test: (d: Dish, fav: string[]) => boolean }[] = 
   { label: 'Batch cook', test: (d) => d.tags.includes('batch-cook') },
 ];
 
-export default function Discover() {
+// The new shell shows this same screen as the Cook tab (see cook.tsx) until
+// the research dish library replaces it on Day 6.
+export function DiscoverScreen({ title = 'Discover' }: { title?: string }) {
   const { favourites } = useStore();
   const [q, setQ] = useState('');
   const [f, setF] = useState(0);
@@ -46,7 +48,7 @@ export default function Discover() {
     <SafeAreaView edges={['top']} style={{ flex: 1, backgroundColor: colors.bg }}>
       <ScrollView contentContainerStyle={{ padding: 18, paddingBottom: 140 }} keyboardShouldPersistTaps="handled" showsVerticalScrollIndicator={false}>
         <FadeIn i={0}>
-          <Text style={[type.h1, { color: colors.text }]}>Discover</Text>
+          <Text style={[type.h1, { color: colors.text }]}>{title}</Text>
           <Text style={[type.small, { color: colors.muted, marginTop: 2 }]}>Search any dish or ingredient you have at home.</Text>
           <View style={styles.search}>
             <Ionicons name="search" size={18} color={colors.muted} />
@@ -116,6 +118,10 @@ export default function Discover() {
       </ScrollView>
     </SafeAreaView>
   );
+}
+
+export default function Discover() {
+  return <DiscoverScreen />;
 }
 
 const styles = StyleSheet.create({

@@ -19,7 +19,8 @@ const SLOTS: { slot: Slot; label: string; icon: keyof typeof Ionicons.glyphMap }
 ];
 const DAY = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-export default function Plan() {
+// `embedded` is set by the Track tab, which draws its own top inset and switcher.
+export function PlanScreen({ embedded = false }: { embedded?: boolean }) {
   const { plan, setPlan, profile } = useStore();
   const week = Array.from({ length: 7 }, (_, i) => addDays(new Date(), i));
   const [sel, setSel] = useState(0);
@@ -48,7 +49,7 @@ export default function Plan() {
   };
 
   return (
-    <SafeAreaView edges={['top']} style={{ flex: 1, backgroundColor: colors.bg }}>
+    <SafeAreaView edges={embedded ? [] : ['top']} style={{ flex: 1, backgroundColor: colors.bg }}>
       <ScrollView contentContainerStyle={{ padding: 18, paddingBottom: 150 }} showsVerticalScrollIndicator={false}>
         <FadeIn i={0}>
           <Text style={[type.h1, { color: colors.text }]}>Meal plan</Text>
@@ -172,6 +173,10 @@ export default function Plan() {
       ) : null}
     </SafeAreaView>
   );
+}
+
+export default function Plan() {
+  return <PlanScreen />;
 }
 
 const styles = StyleSheet.create({

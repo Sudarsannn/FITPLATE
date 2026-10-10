@@ -9,24 +9,23 @@ import Animated, { useAnimatedStyle, useSharedValue, withSpring } from 'react-na
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { PressableScale } from '../../components/ui';
+import { featureFlags } from '../../config/featureFlags';
+import { ALL_TAB_ROUTES, visibleTabs, type TabDef } from '../../config/tabs';
 import { select, thud } from '../../lib/haptics';
 import { colors, gradients } from '../../theme';
 
-const ICONS: Record<string, [keyof typeof Ionicons.glyphMap, keyof typeof Ionicons.glyphMap, string]> = {
-  index: ['flame', 'flame-outline', 'Today'],
-  discover: ['compass', 'compass-outline', 'Discover'],
-  plan: ['calendar', 'calendar-outline', 'Plan'],
-  progress: ['stats-chart', 'stats-chart-outline', 'Progress'],
-};
+const NEW_SHELL = featureFlags.newTabShell;
+const TABS = visibleTabs(NEW_SHELL);
+const TAB_BY_NAME: Record<string, TabDef> = Object.fromEntries(TABS.map((t) => [t.name, t]));
 
-function TabItem({ name, focused, onPress }: { name: string; focused: boolean; onPress: () => void }) {
+function TabItem({ tab, focused, onPress }: { tab: TabDef; focused: boolean; onPress: () => void }) {
   const s = useSharedValue(focused ? 1 : 0);
   useEffect(() => {
     s.value = withSpring(focused ? 1 : 0, { damping: 15, stiffness: 220 });
   }, [focused, s]);
   const pill = useAnimatedStyle(() => ({ opacity: s.value, transform: [{ scale: 0.6 + s.value * 0.4 }] }));
   const icon = useAnimatedStyle(() => ({ transform: [{ translateY: -s.value * 2 }, { scale: 1 + s.value * 0.08 }] }));
-  const [on, off, label] = ICONS[name];
+  const { icon: on, iconOutline: off, label } = tab;
   return (
     <Pressable
       onPress={() => {
@@ -49,37 +48,44 @@ function TabItem({ name, focused, onPress }: { name: string; focused: boolean; o
 
 function FloatingTabBar({ state, navigation }: BottomTabBarProps) {
   const insets = useSafeAreaInsets();
-  const routes = state.routes.filter((r) => ICONS[r.name]);
+  // Keep the bar in the order of TABS, whatever order the routes were registered in.
+  const routes = TABS.map((t) => state.routes.find((r) => r.name === t.name)).filter((r) => r !== undefined);
   const go = (name: string, key: string) => {
     const ev = navigation.emit({ type: 'tabPress', target: key, canPreventDefault: true });
     if (!ev.defaultPrevented) navigation.navigate(name);
   };
-  const half = Math.ceil(routes.length / 2);
+  // Four tabs split 2 + 2 around the centre "+" button. Five tabs cannot split
+  // evenly, so the new shell keeps them in one row and moves "+" to the right end.
+  const half = NEW_SHELL ? routes.length : Math.ceil(routes.length / 2);
   const item = (r: (typeof routes)[number]) => (
-    <TabItem key={r.key} name={r.name} focused={state.routes[state.index].key === r.key} onPress={() => go(r.name, r.key)} />
+    <TabItem key={r.key} tab={TAB_BY_NAME[r.name]} focused={state.routes[state.index].key === r.key} onPress={() => go(r.name, r.key)} />
   );
   return (
     <View style={[styles.wrap, { bottom: Math.max(insets.bottom, 12) }]} pointerEvents="box-none">
-      <View style={styles.bar}>
-        {Platform.OS !== 'android' ? <BlurView intensity={40} tint="dark" style={StyleSheet.absoluteFill} /> : null}
-        <View style={[StyleSheet.absoluteFill, styles.tint]} />
-        {routes.slice(0, half).map(item)}
-        <View style={{ width: 64 }} />
-        {routes.slice(half).map(item)}
+      {/* Same width as the bar, so the "+" button lines up with the bar on wide web screens too. */}
+      <View style={styles.inner} pointerEvents="box-none">
+        <View style={styles.bar}>
+          {Platform.OS !== 'android' ? <BlurView intensity={40} tint="dark" style={StyleSheet.absoluteFill} /> : null}
+          <View style={[StyleSheet.absoluteFill, styles.tint]} />
+          {routes.slice(0, half).map(item)}
+          <View style={{ width: NEW_SHELL ? 58 : 64 }} />
+          {routes.slice(half).map(item)}
+        </View>
+        <PressableScale
+          onPress={() => {
+            thud();
+            router.push('/log');
+          }}
+          haptic={false}
+          style={[styles.fab, NEW_SHELL && styles.fabEnd]}
+          scaleTo={0.88}
+          accessibilityLabel="Quick log a meal, workout or water"
+        >
+          <LinearGradient colors={gradients.accent} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={styles.fabInner}>
+            <Ionicons name="add" size={30} color="#06210F" />
+          </LinearGradient>
+        </PressableScale>
       </View>
-      <PressableScale
-        onPress={() => {
-          thud();
-          router.push('/log');
-        }}
-        haptic={false}
-        style={styles.fab}
-        scaleTo={0.88}
-      >
-        <LinearGradient colors={gradients.accent} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={styles.fabInner}>
-          <Ionicons name="add" size={30} color="#06210F" />
-        </LinearGradient>
-      </PressableScale>
     </View>
   );
 }
@@ -90,16 +96,18 @@ export default function TabsLayout() {
       tabBar={(p) => <FloatingTabBar {...p} />}
       screenOptions={{ headerShown: false, animation: 'shift', sceneStyle: { backgroundColor: colors.bg } }}
     >
-      <Tabs.Screen name="index" />
-      <Tabs.Screen name="discover" />
-      <Tabs.Screen name="plan" />
-      <Tabs.Screen name="progress" />
+      {/* Every tab file is registered; the ones not in the current shell get no
+          href, so they leave the bar but old links to them still open. */}
+      {ALL_TAB_ROUTES.map((name) => (
+        <Tabs.Screen key={name} name={name} options={TAB_BY_NAME[name] ? {} : { href: null }} />
+      ))}
     </Tabs>
   );
 }
 
 const styles = StyleSheet.create({
   wrap: { position: 'absolute', left: 16, right: 16, alignItems: 'center' },
+  inner: { width: '100%', maxWidth: 480, alignItems: 'center' },
   bar: {
     flexDirection: 'row',
     width: '100%',
@@ -124,5 +132,6 @@ const styles = StyleSheet.create({
     borderRadius: 32,
     boxShadow: '0px 8px 24px rgba(61,220,132,0.45)',
   },
+  fabEnd: { top: 6, right: 6, width: 56, height: 56, borderRadius: 28 },
   fabInner: { flex: 1, borderRadius: 32, alignItems: 'center', justifyContent: 'center', borderWidth: 3, borderColor: colors.bg },
 });

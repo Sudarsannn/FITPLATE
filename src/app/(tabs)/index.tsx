@@ -7,6 +7,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { DishCardTall } from '../../components/DishCard';
 import { Bar, CountUp, FadeIn, Glass, Glow, PressableScale, Ring, SectionHeader } from '../../components/ui';
+import { dishLibraryHref, profileHref } from '../../config/tabs';
 import { dishes } from '../../data/dishes';
 import { select, success } from '../../lib/haptics';
 import { dayTotals, FIBRE_TARGET, GOALS, recommend, useStore, WATER_TARGET } from '../../lib/store';
@@ -19,7 +20,7 @@ const greeting = () => {
 
 function QuickAction({ icon, label, tint, onPress }: { icon: keyof typeof Ionicons.glyphMap; label: string; tint: string; onPress: () => void }) {
   return (
-    <PressableScale onPress={onPress} style={styles.qa} scaleTo={0.93}>
+    <PressableScale onPress={onPress} style={styles.qa} scaleTo={0.93} accessibilityLabel={label}>
       <View style={[styles.qaIcon, { backgroundColor: tint + '22' }]}>
         <Ionicons name={icon} size={20} color={tint} />
       </View>
@@ -62,7 +63,7 @@ export default function Today() {
                   <Text style={{ fontSize: 15 }}>🔥</Text>
                   <Text style={styles.streakText}>{streak}</Text>
                 </View>
-                <PressableScale onPress={() => router.push('/profile')} style={styles.avatar}>
+                <PressableScale onPress={() => router.push(profileHref())} style={styles.avatar} accessibilityLabel="Open your profile">
                   {user?.photo ? (
                     <Image source={{ uri: user.photo }} referrerPolicy="no-referrer" style={styles.avatarImg} />
                   ) : (
@@ -148,7 +149,7 @@ export default function Today() {
               <QuickAction icon="fast-food" label="Log meal" tint={colors.warm} onPress={() => router.push({ pathname: '/log', params: { tab: 'meal' } })} />
               <QuickAction icon="barbell" label="Workout" tint={colors.violet} onPress={() => router.push({ pathname: '/log', params: { tab: 'exercise' } })} />
               <QuickAction icon="cart" label="Groceries" tint={colors.accent} onPress={() => router.push('/grocery')} />
-              <QuickAction icon="search" label="Find dish" tint={colors.blue} onPress={() => router.push('/discover')} />
+              <QuickAction icon="search" label="Find dish" tint={colors.blue} onPress={() => router.push(dishLibraryHref())} />
             </View>
           </FadeIn>
 
@@ -189,7 +190,7 @@ export default function Today() {
           </FadeIn>
 
           <FadeIn i={5}>
-            <SectionHeader title={`Picked for you · ${goal.label.toLowerCase()}`} action="See all" onAction={() => router.push('/discover')} />
+            <SectionHeader title={`Picked for you · ${goal.label.toLowerCase()}`} action="See all" onAction={() => router.push(dishLibraryHref())} />
             <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{ marginHorizontal: -18 }} contentContainerStyle={{ paddingHorizontal: 18 }} decelerationRate="fast" snapToInterval={214}>
               {picks.map((d) => (
                 <DishCardTall key={d.id} dish={d} />

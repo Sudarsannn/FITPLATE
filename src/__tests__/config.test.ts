@@ -5,8 +5,10 @@ import { brand, colors, spacing } from '../config/theme';
 
 describe('feature flags', () => {
   it('ships every unfinished feature switched off', () => {
+    // Finished features stay listed here so turning one on is always a deliberate test change.
+    const finished: FeatureFlag[] = ['newTabShell'];
     for (const flag of Object.keys(featureFlags) as FeatureFlag[]) {
-      expect(isEnabled(flag)).toBe(false);
+      expect(isEnabled(flag)).toBe(finished.includes(flag));
     }
   });
 

@@ -29,6 +29,7 @@ export function PressableScale({
   disabled,
   haptic = true,
   scaleTo = 0.96,
+  accessibilityLabel,
 }: {
   children: ReactNode;
   onPress?: () => void;
@@ -36,12 +37,16 @@ export function PressableScale({
   disabled?: boolean;
   haptic?: boolean;
   scaleTo?: number;
+  /** Screen-reader label for icon-only buttons. */
+  accessibilityLabel?: string;
 }) {
   const s = useSharedValue(1);
   const anim = useAnimatedStyle(() => ({ transform: [{ scale: s.value }] }));
   return (
     <AnimatedPressable
       disabled={disabled}
+      accessibilityRole="button"
+      accessibilityLabel={accessibilityLabel}
       onPressIn={() => s.set(withSpring(scaleTo, { damping: 18, stiffness: 400 }))}
       onPressOut={() => s.set(withSpring(1, { damping: 14, stiffness: 300 }))}
       onPress={() => {
@@ -77,7 +82,7 @@ export function GradientButton({
     </View>
   );
   return (
-    <PressableScale onPress={onPress} disabled={disabled} style={[styles.btn, style]}>
+    <PressableScale onPress={onPress} disabled={disabled} style={[styles.btn, style]} accessibilityLabel={title}>
       {variant === 'glass' ? (
         <View style={[styles.btnFill, styles.glassBtn]}>{content}</View>
       ) : (

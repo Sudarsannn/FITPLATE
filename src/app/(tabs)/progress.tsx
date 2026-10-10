@@ -37,7 +37,8 @@ const BADGES = [
 ];
 type Ctx = { cooked: number; streak: number; saved: number; proteinDays: number; waterDays: number; workouts: number };
 
-export default function Progress() {
+// `embedded` is set by the Track tab, which draws its own top inset and switcher.
+export function ProgressScreen({ embedded = false }: { embedded?: boolean }) {
   const { days, profile, moneySaved, streak } = useStore();
   const goal = GOALS[profile.goal];
   const week = Array.from({ length: 7 }, (_, i) => addDays(new Date(), i - 6));
@@ -66,7 +67,7 @@ export default function Progress() {
   const fixers = [...dishes].sort((a, b) => (gap === 'protein' ? b.proteinG - a.proteinG : b.fibreG - a.fibreG)).slice(0, 2);
 
   return (
-    <SafeAreaView edges={['top']} style={{ flex: 1, backgroundColor: colors.bg }}>
+    <SafeAreaView edges={embedded ? [] : ['top']} style={{ flex: 1, backgroundColor: colors.bg }}>
       <ScrollView contentContainerStyle={{ padding: 18, paddingBottom: 140 }} showsVerticalScrollIndicator={false}>
         <FadeIn i={0}>
           <Text style={[type.h1, { color: colors.text }]}>Progress</Text>
@@ -189,6 +190,10 @@ function Nutrient({ label, value, target, unit, color }: { label: string; value:
       <Bar progress={value / target} color={color} height={10} />
     </View>
   );
+}
+
+export default function Progress() {
+  return <ProgressScreen />;
 }
 
 const styles = StyleSheet.create({
