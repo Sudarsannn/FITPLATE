@@ -48,18 +48,44 @@ Database: Firestore, default database, location `asia-south1`, Spark (free) plan
 
 ### Collections
 
-| Path | Holds | Added on | Links to research ids |
-|---|---|---|---|
-| `users/{uid}` | Profile document (UserProfile fields) | Day 3 (planned) | — |
-| `users/{uid}/mealLogs/{id}` | One meal eaten | Day 3 (planned) | `dishId` |
-| `users/{uid}/waterLogs/{id}` | Water intake | Day 3 (planned) | — |
-| `users/{uid}/supplementLogs/{id}` | Supplement taken | Day 3 (planned) | `nutrientId` |
-| `users/{uid}/workoutLogs/{id}` | One workout | Day 3 (planned) | `exerciseId` |
-| `users/{uid}/favourites/{id}` | Saved dish | when first needed | `dishId` |
-| `users/{uid}/mealPlans/{id}` | Meal plan entries | when first needed | `dishId` |
-| `users/{uid}/groceryLists/{id}` | Shopping list | when first needed | `ingredientId` |
-| `users/{uid}/ratings/{id}` | The user's own dish rating | when first needed | `dishId` |
-| `users/{uid}/savings/{id}` | Money saved by cooking | when first needed | `dishId` |
+Types live in `src/models/`; versions and migrations in `src/services/storage/schemas.ts`. On the device each collection is one AsyncStorage key, `fitplate.docs.<owner>.<collection>.v1` (owner = `guest` or the Firebase uid), holding an id → document map.
+
+| Path | Holds | Version | Since | Links to research ids |
+|---|---|---|---|---|
+| `users/{uid}` | Profile (`UserProfile`), document id `profile` | 1 | Day 3 | — |
+| `users/{uid}/mealLogs/{id}` | One meal eaten | 1 | Day 3 | `dishId` |
+| `users/{uid}/waterLogs/water-YYYY-MM-DD` | Glasses of water for one day (one document per day) | 1 | Day 3 | — |
+| `users/{uid}/supplementLogs/{id}` | Supplement taken | 1 | Day 3 | `nutrientId` |
+| `users/{uid}/workoutLogs/{id}` | One workout | 1 | Day 3 | `exerciseId` |
+| `users/{uid}/favourites/{dishId}` | Saved dish | 1 | Day 3 | `dishId` |
+| `users/{uid}/mealPlans/YYYY-MM-DD` | Planned dishes for one day | 1 | Day 3 | `dishId` |
+| `users/{uid}/savings/{id}` | Money saved by cooking | 1 | Day 3 | `dishId` |
+| `users/{uid}/groceryLists/{id}` | Shopping list | — | planned (Day 9) | `ingredientId` |
+| `users/{uid}/ratings/{id}` | The user's own dish rating | — | planned | `dishId` |
+
+### Fields per collection
+
+- **profile** (`UserProfile`): `name` string · `age` number|null · `sex` 'female'|'male'|'other'|null · `heightCm` number|null · `weightKg` number|null · `activityLevel` 'sedentary'|'light'|'moderate'|'active'|'very-active'|null · `goal` 'lose'|'maintain'|'gain'|'muscle' · `dietType` 'veg'|'egg'|'non-veg' · `cookingLevel` 'beginner'|'expert' · `equipmentOwned` string[] · `gymAccess` boolean|null · `breakfastReminder` boolean · `onboarded` boolean · `privateFlags` map of booleans · `onboardedOn` YYYY-MM-DD|null. Body fields stay null until the user enters them; nothing is guessed.
+- **Every log** has `timestamp` (epoch ms), `dateKey` (YYYY-MM-DD, local day) and optional `demoSample` (true only for the demo's made-up sample week; never copied to an account).
+- **mealLogs**: `name`, `emoji`, `dishId` (null for quick/custom), `source` 'dish'|'quick'|'custom', `kcal`, `proteinG`, `fibreG`, `cooked` (made at home).
+- **waterLogs**: `glasses`.
+- **supplementLogs**: `name`, `nutrientId`|null, `dose`|null, `unit`|null.
+- **workoutLogs**: `type`, `exerciseId`|null, `minutes`, `kcal` (estimate).
+- **favourites**: `dishId`.
+- **mealPlans**: `dateKey`, `slots` { breakfast?, lunch?, dinner? } → dish ids.
+- **savings**: `timestamp`, `amountInr`, `dishId`|null, `note`|null.
+
+### How sync works (`src/services/storage/`)
+
+- Guests: `LocalDocStore` only.
+- Signed in: `SyncedDocStore`. Writes land on the device first, their ids join an outbox (`fitplate.outbox.<uid>.v1`), and after 1.5 s of quiet they go to Firestore in one batch. Failed sends stay in the outbox and retry on the next flush, including after an app restart.
+- `pull(collection)` merges device and cloud, last write wins on `updatedAt` (cloud wins a tie), and writes each side only what changed.
+- Reads migrate old documents to the current `schemaVersion` and save the upgraded copy once.
+- Firestore (`firestoreRemote.ts`): web uses the persistent IndexedDB cache; native uses the memory cache plus the AsyncStorage copy.
+
+### Migration from the demo blob
+
+`fromLegacyState()` turns `fitplate.state.v2` into documents with stable ids (running it twice never duplicates). The demo's sample week is marked `demoSample: true` (meals seeded at whole minutes, workouts at time 0, water on days with only sample entries), and the seeded ₹2,860 is not counted as savings.
 
 A collection is created only on the day a feature first needs it; this table then gets its full field list.
 
@@ -80,3 +106,4 @@ Spark allows about 20,000 writes and 50,000 reads a day. Writes are batched and 
 ## 5. Changelog
 
 - 2026-10-10 (Day 2): file created. Documents the demo blob (`fitplate.state.v2`) and the planned Firestore layout. Added `firestore.rules`. No schema code yet and no data changes; the navigation shell stores nothing new.
+- 2026-10-10 (Day 3): all user collections defined at version 1, with types in `src/models/`, the device store, the synced store with outbox, last-write-wins merge, the Firestore adapter, the demo-blob migration and the guest → account copy. Tests use a mocked Firestore. The app does not use this layer yet; Day 03b connects it.
