@@ -13,9 +13,9 @@ This file is the single description of every piece of data FitPlate stores. The 
 
 Research content is never copied into Firestore. User documents refer to it by id only (`dishId`, `ingredientId`, `nutrientId`, `exerciseId`).
 
-## 2. Today's storage (demo, until Day 3)
+## 2. The demo blob (read once since Day 03b)
 
-Everything sits in one JSON blob in AsyncStorage under the key `fitplate.state.v2` (`src/lib/store.tsx`). Day 3 migrates it into the repositories below and keeps reading it once, so nobody loses data.
+Until Day 03b everything sat in one JSON blob in AsyncStorage under the key `fitplate.state.v2`. Since Day 03b the app no longer writes it. On the first start of the new version, `prepareGuestDevice` (`src/services/userSession.ts`) turns the blob into guest documents once (`fromLegacyState`), sets `fitplate.guestReady.v1`, and leaves the blob in place as a backup. Its fields were:
 
 | Field | Type | Meaning |
 |---|---|---|
@@ -97,13 +97,16 @@ Kept in `firestore.rules` at the repo root. Only the signed-in owner can read or
 
 Spark allows about 20,000 writes and 50,000 reads a day. Writes are batched and debounced (for example the water +/- buttons), each screen uses one listener, and the app never writes in a loop on start-up.
 
-## 4. Guests and sign-in
+## 4. Guests and sign-in (live since Day 03b, `src/lib/store.tsx` + `src/services/userSession.ts`)
 
-- Guests: data stays in AsyncStorage on the device.
-- Guest signs in with Google: the app offers to copy the device data into the account (one tap), then uses the cloud copy.
-- Sign-out: the cloud data stays; the device cache is cleared.
+- **Guests:** data stays in AsyncStorage on the device, under owner `guest` (`fitplate.docs.guest.<collection>.v1`). A new device gets the demo's sample week, with every entry marked `demoSample: true` (profile excepted). "Reset demo data" (guests only) restores it.
+- **Signed in (`cloudSync` ON):** owner = the Firebase uid. Device first (`fitplate.docs.<uid>.…`), then Firestore `users/{uid}/…` through the outbox. On start the app pulls and merges every collection once (last write wins). A device with no copy of this user yet waits up to 8 s for that first pull, so a returning user doesn't land in onboarding. Waiting changes are also sent when the app goes to the background.
+- **Guest signs in with Google:** if the guest has their own entries (not the sample week), the welcome screen asks "Bring your data with you?". **Copy my data** copies them into the account (the account's own profile always wins; the guest profile is used only when the account has none), then removes the guest copy from the device. **Start fresh** keeps the guest data on the device. Either answer is remembered per account in `fitplate.guestCopyAsked.<uid>.v1`.
+- **Sign-out:** pending changes are sent first. If everything reached the cloud, this device's copy of the account is cleared; if not (offline), the copy and its outbox stay so nothing is lost, and they are sent at the next sign-in.
+- **Screens:** they still read the demo's shape (`days`, `moneySaved`, `favourites`, `plan`, `profile`). `toView()` derives it from the documents in memory; each action updates memory on the same tap and writes through the repositories in order.
 
 ## 5. Changelog
 
 - 2026-10-10 (Day 2): file created. Documents the demo blob (`fitplate.state.v2`) and the planned Firestore layout. Added `firestore.rules`. No schema code yet and no data changes; the navigation shell stores nothing new.
 - 2026-10-10 (Day 3): all user collections defined at version 1, with types in `src/models/`, the device store, the synced store with outbox, last-write-wins merge, the Firestore adapter, the demo-blob migration and the guest → account copy. Tests use a mocked Firestore. The app does not use this layer yet; Day 03b connects it.
+- 2026-10-11 (Day 03b): the app now uses the storage layer. Demo blob migrated once into guest documents; guests on the device, signed-in users device + Firestore (`cloudSync` ON). Added `demoSample?` to `Favourite`, `MealPlanDay` and `SavingEntry` (optional field, so no `schemaVersion` bump; older documents simply lack it). The demo's seeded ₹2,860 now stays on the device as a `demo-sample-total` savings entry marked `demoSample`, never copied. Repositories gained `importMany` (write ready-made documents, for migration and the sample seed). New device keys: `fitplate.guestReady.v1`, `fitplate.guestCopyAsked.<uid>.v1`. No new collection, no rules change.

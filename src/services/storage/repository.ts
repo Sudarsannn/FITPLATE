@@ -96,7 +96,12 @@ export function createRepository<T extends object>(store: DocStore, schema: DocS
     return true;
   }
 
-  return { collection: schema.collection, create, get, list, update, upsert, remove };
+  /** Write documents that already carry their common fields (migration, demo seed), as they are. */
+  async function importMany(docs: D[]): Promise<void> {
+    await store.putMany(schema.collection, docs);
+  }
+
+  return { collection: schema.collection, create, get, list, update, upsert, remove, importMany };
 }
 
 export type Repository<T extends object> = ReturnType<typeof createRepository<T>>;

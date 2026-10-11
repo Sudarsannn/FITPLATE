@@ -17,8 +17,10 @@ export const featureFlags = {
   poseRepCounter: false,
   /** Day 32: free vs paid locks. Everything is free until Sudarsan decides. */
   paywall: false,
-  /** Day 3+: Firestore as the store for signed-in users (SPEC-ADDENDA §5). OFF until the storage layer ships and Firestore is enabled. */
-  cloudSync: false,
+  /** Day 03b: Firestore as the store for signed-in users (SPEC-ADDENDA §5). ON since Day 03b; false keeps a signed-in user's data on the device only. */
+  cloudSync: true,
+  /** Innovation (Day 03b): still backdrop instead of background videos with Reduce motion, Data Saver or 2G. */
+  liteMode: true,
 } as const;
 
 export type FeatureFlag = keyof typeof featureFlags;

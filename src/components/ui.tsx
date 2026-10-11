@@ -16,6 +16,7 @@ import Animated, {
 import Svg, { Circle, Defs, Stop, LinearGradient as SvgGradient } from 'react-native-svg';
 
 import { tap } from '../lib/haptics';
+import { useLiteMode } from '../lib/useLiteMode';
 import { colors, gradients, radius, type } from '../theme';
 
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
@@ -281,7 +282,21 @@ export function Stat({ label, value, hint, color = colors.text }: { label: strin
 }
 
 /** Muted, looping, cover-fit background video. */
+// Lite mode (reduce motion, data saver, 2G) shows a still backdrop instead of the video.
 export function VideoBackground({ source, dim = 0.35 }: { source: number; dim?: number }) {
+  const lite = useLiteMode();
+  if (lite) {
+    return (
+      <View style={StyleSheet.absoluteFill} pointerEvents="none">
+        <LinearGradient colors={['#123524', colors.bg]} start={{ x: 0.2, y: 0 }} end={{ x: 0.8, y: 1 }} style={StyleSheet.absoluteFill} />
+        <View style={[StyleSheet.absoluteFill, { backgroundColor: `rgba(0,0,0,${dim})` }]} />
+      </View>
+    );
+  }
+  return <VideoLayer source={source} dim={dim} />;
+}
+
+function VideoLayer({ source, dim }: { source: number; dim: number }) {
   const player = useVideoPlayer(source, (p) => {
     p.loop = true;
     p.muted = true;

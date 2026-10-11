@@ -47,7 +47,10 @@ describe('migration from the demo blob (fitplate.state.v2)', () => {
   });
 
   it('does not count the seeded ₹2,860 as the user’s savings', () => {
-    expect(out.savings).toEqual([expect.objectContaining({ id: 'legacy-total', amountInr: 450 })]);
+    expect(out.savings).toEqual([
+      expect.objectContaining({ id: 'legacy-total', amountInr: 450 }),
+      expect.objectContaining({ id: 'demo-sample-total', amountInr: DEMO_SAMPLE_SAVED_INR, demoSample: true }),
+    ]);
   });
 
   it('carries favourites and the meal plan', () => {

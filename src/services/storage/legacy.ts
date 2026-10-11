@@ -119,9 +119,15 @@ export function fromLegacyState(state: LegacyState, now: number): LegacyDocs {
   const mealPlans = Object.entries(state.plan ?? {}).map(([dateKey, slots]) => ({ ...base(dateKey, 'mealPlans'), dateKey, slots }));
 
   // The demo keeps one running total; the seeded sample amount is not the user's money.
-  const real = sampleSeen ? Math.max(0, state.moneySaved - DEMO_SAMPLE_SAVED_INR) : state.moneySaved;
-  const savings: Doc<SavingEntry>[] =
-    real > 0 ? [{ ...base('legacy-total', 'savings'), timestamp: now, amountInr: real, dishId: null, note: 'Carried over from the demo total' }] : [];
+  // The seeded amount stays on this device as a sample entry (so the demo's
+  // totals look the same) and is never copied into an account.
+  const sampleSaved = sampleSeen ? Math.min(state.moneySaved, DEMO_SAMPLE_SAVED_INR) : 0;
+  const real = state.moneySaved - sampleSaved;
+  const savings: Doc<SavingEntry>[] = [];
+  if (real > 0) savings.push({ ...base('legacy-total', 'savings'), timestamp: now, amountInr: real, dishId: null, note: 'Carried over from the demo total' });
+  if (sampleSaved > 0) {
+    savings.push({ ...base('demo-sample-total', 'savings'), timestamp: now, amountInr: sampleSaved, dishId: null, note: 'Demo sample week', demoSample: true });
+  }
 
   return { profile, mealLogs, waterLogs, workoutLogs, favourites, mealPlans, savings };
 }

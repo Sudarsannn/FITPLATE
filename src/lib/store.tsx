@@ -1,8 +1,27 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { onAuthStateChanged, signOut as fbSignOut } from 'firebase/auth';
-import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
+import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
+import { AppState } from 'react-native';
 
+import { featureFlags } from '../config/featureFlags';
 import { dishes, type Diet, type Dish } from '../data/dishes';
+import { GUEST_OWNER, openUserData, type UserData } from '../services/storage';
+import { createFirestoreAdapter, getDb } from '../services/storage/firestoreRemote';
+import type { KeyValueStore } from '../services/storage/kv';
+import {
+  copyGuestData,
+  createUserSession,
+  EMPTY_DOCS,
+  guestOfferCount,
+  legacyProfilePatch,
+  loadDocs,
+  prepareGuestDevice,
+  signOutDevice,
+  skipGuestCopy,
+  toView,
+  type UserDocs,
+  type UserSession,
+} from '../services/userSession';
 import { firebaseConfigured, getFirebaseAuth } from './firebase';
 
 export type Goal = 'lose' | 'maintain' | 'gain' | 'muscle';
@@ -22,7 +41,7 @@ export type MealLog = { name: string; emoji: string; kcal: number; protein: numb
 export type ExerciseLog = { type: string; minutes: number; kcal: number; at: number };
 export type DayLog = { meals: MealLog[]; exercise: ExerciseLog[]; water: number };
 
-type State = {
+export type State = {
   profile: Profile;
   days: Record<string, DayLog>;
   moneySaved: number;
@@ -66,8 +85,9 @@ export const addDays = (d: Date, n: number) => new Date(d.getFullYear(), d.getMo
 
 const emptyDay = (): DayLog => ({ meals: [], exercise: [], water: 0 });
 
-// Sample history so the progress screens look alive in the demo.
-function sampleState(): State {
+// Sample history so the progress screens look alive in the demo. Guests get it
+// on a new device, marked as sample, so it is never copied into an account.
+export function sampleState(): State {
   const days: Record<string, DayLog> = {};
   const today = new Date();
   const sample = [
@@ -106,14 +126,21 @@ function sampleState(): State {
   };
 }
 
-const KEY = 'fitplate.state.v2';
-
-type User = { name: string; guest: boolean; email?: string; photo?: string };
+type User = { name: string; guest: boolean; uid?: string; email?: string; photo?: string };
 
 type Store = State & {
   user: User | null;
+  /** Sign-in state is known and this user's data has loaded. */
   ready: boolean;
   today: DayLog;
+  /** Signed in and syncing to Firestore (SPEC-ADDENDA §5). */
+  cloud: boolean;
+  /** The last cloud sync failed (usually offline). Changes are safe on the device and retry later. */
+  syncError: boolean;
+  /** Guest entries on this device that a newly signed-in user can bring along (0 = nothing to ask). */
+  guestOffer: number;
+  copyGuestData: () => Promise<void>;
+  skipGuestCopy: () => Promise<void>;
   continueAsGuest: () => void;
   signOut: () => Promise<void>;
   updateProfile: (p: Partial<Profile>) => void;
@@ -123,47 +150,106 @@ type Store = State & {
   addWater: (n: number) => void;
   toggleFavourite: (id: string) => void;
   setPlan: (date: string, slot: Slot, dishId: string | null) => void;
+  /** Guests only: restore the sample week. Signed-in accounts never get sample data. */
   resetDemo: () => void;
   streak: number;
 };
 
 const StoreContext = createContext<Store | null>(null);
 
+// AsyncStorage matches the storage layer's key-value interface.
+const kv: KeyValueStore = AsyncStorage;
+
+// Firestore is used only when Firebase is configured and the cloudSync flag is on;
+// otherwise a signed-in user's data stays on the device, as in the demo.
+function cloudAdapter() {
+  if (!featureFlags.cloudSync || !firebaseConfigured || !getFirebaseAuth()) return null;
+  const db = getDb();
+  return db ? createFirestoreAdapter(db) : null;
+}
+
+// A first sign-in on a new device waits this long for the cloud before showing what the device has.
+const FIRST_SYNC_WAIT_MS = 8000;
+
+type Active = { owner: string; data: UserData; session: UserSession };
+
 export function StoreProvider({ children }: { children: ReactNode }) {
-  const [state, setState] = useState<State>(sampleState);
   const [user, setUser] = useState<User | null>(null);
-  const [ready, setReady] = useState(!firebaseConfigured);
-  const loaded = useRef(false);
+  const [authReady, setAuthReady] = useState(!firebaseConfigured);
+  const [active, setActive] = useState<Active | null>(null);
+  const [docs, setDocs] = useState<UserDocs>(EMPTY_DOCS);
+  const [syncError, setSyncError] = useState(false);
+  const [guestOffer, setGuestOffer] = useState(0);
+  const owner = user && !user.guest && user.uid ? user.uid : GUEST_OWNER;
 
   useEffect(() => {
-    AsyncStorage.getItem(KEY)
-      .then((raw) => raw && setState(JSON.parse(raw)))
-      .catch(() => {})
-      .finally(() => {
-        loaded.current = true;
-      });
     const auth = getFirebaseAuth();
     if (!auth) return;
     return onAuthStateChanged(auth, (u) => {
       setUser(
         u
-          ? { name: u.displayName?.split(' ')[0] ?? '', guest: false, email: u.email ?? undefined, photo: u.photoURL ?? undefined }
+          ? { name: u.displayName?.split(' ')[0] ?? '', guest: false, uid: u.uid, email: u.email ?? undefined, photo: u.photoURL ?? undefined }
           : null,
       );
-      setReady(true);
+      setAuthReady(true);
     });
   }, []);
 
+  // Open the data for whoever is using the app: the guest store, or the signed-in user's (device + cloud).
   useEffect(() => {
-    if (loaded.current) AsyncStorage.setItem(KEY, JSON.stringify(state)).catch(() => {});
-  }, [state]);
+    if (!authReady) return;
+    let alive = true;
+    const signedIn = owner !== GUEST_OWNER;
+    const data = openUserData({ kv, uid: signedIn ? owner : null, remote: signedIn ? cloudAdapter() : null, onSyncError: () => alive && setSyncError(true) });
 
-  const updateToday = useCallback((fn: (d: DayLog) => DayLog) => {
-    setState((s) => {
-      const k = dayKey();
-      return { ...s, days: { ...s.days, [k]: fn(s.days[k] ?? emptyDay()) } };
+    (async () => {
+      if (!signedIn) await prepareGuestDevice(kv, data, sampleState, Date.now());
+      const local = await loadDocs(data.repos);
+      const session = createUserSession(data, local, { onChange: (d) => alive && setDocs(d), onError: () => alive && setSyncError(true) });
+
+      const refresh = async () => {
+        await session.idle();
+        if (alive) session.reload(await loadDocs(data.repos));
+      };
+      if (data.cloud) {
+        const synced = data.syncAll().then(
+          () => {
+            if (alive) setSyncError(false);
+            return refresh();
+          },
+          () => {
+            if (alive) setSyncError(true);
+          },
+        );
+        // A device that already has this user's data shows it at once and syncs in the background.
+        // A new device waits for the first pull (up to FIRST_SYNC_WAIT_MS) so it doesn't look empty.
+        if (!local.profile) await Promise.race([synced, new Promise((r) => setTimeout(r, FIRST_SYNC_WAIT_MS))]);
+      }
+      const offer = signedIn ? await guestOfferCount(kv, owner) : 0;
+      if (!alive) return;
+      setGuestOffer(offer);
+      setDocs(session.docs);
+      setActive({ owner, data, session });
+    })().catch(() => {
+      if (alive) setSyncError(true);
     });
-  }, []);
+
+    return () => {
+      alive = false;
+    };
+  }, [owner, authReady]);
+
+  // Send waiting changes when the app goes to the background, before the OS may close it.
+  useEffect(() => {
+    if (!active?.data.cloud) return;
+    const sub = AppState.addEventListener('change', (s) => {
+      if (s === 'background') active.data.flush().catch(() => setSyncError(true));
+    });
+    return () => sub.remove();
+  }, [active]);
+
+  const state = useMemo(() => toView(docs), [docs]);
+  const ready = authReady && active?.owner === owner;
 
   const store = useMemo<Store>(() => {
     const today = state.days[dayKey()] ?? emptyDay();
@@ -173,53 +259,58 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       if (d?.meals.some((m) => m.cooked)) streak++;
       else if (i > 0) break;
     }
+    // Before the data has loaded, writes have nowhere to go; screens are not interactive yet anyway.
+    const s = ready ? active?.session : undefined;
     return {
       ...state,
       user,
       ready,
       today,
       streak,
+      cloud: Boolean(ready && active?.data.cloud),
+      syncError,
+      guestOffer: ready ? guestOffer : 0,
+      copyGuestData: async () => {
+        if (!active || active.owner === GUEST_OWNER) return;
+        await copyGuestData(kv, active.data, active.owner);
+        await active.session.idle();
+        active.session.reload(await loadDocs(active.data.repos));
+        setGuestOffer(0);
+      },
+      skipGuestCopy: async () => {
+        if (!active || active.owner === GUEST_OWNER) return;
+        await skipGuestCopy(kv, active.owner);
+        setGuestOffer(0);
+      },
       continueAsGuest: () => setUser({ name: '', guest: true }),
       signOut: async () => {
         const auth = getFirebaseAuth();
+        if (active && active.owner !== GUEST_OWNER) {
+          await active.session.idle();
+          await signOutDevice(active.data);
+        }
         if (auth && !user?.guest) await fbSignOut(auth);
         setUser(null);
       },
-      updateProfile: (p) => setState((s) => ({ ...s, profile: { ...s.profile, ...p } })),
+      updateProfile: (p) => s?.updateProfile(legacyProfilePatch(p)),
       logCooked: (dish, saved) => {
-        setState((s) => ({ ...s, moneySaved: s.moneySaved + saved }));
-        updateToday((d) => ({
-          ...d,
-          meals: [
-            ...d.meals,
-            { name: dish.name, emoji: dish.emoji, kcal: dish.kcal, protein: dish.proteinG, fibre: dish.fibreG, cooked: true, at: Date.now() },
-          ],
-        }));
+        if (!s) return;
+        s.addMeal({ name: dish.name, emoji: dish.emoji, dishId: dish.id, source: 'dish', kcal: dish.kcal, proteinG: dish.proteinG, fibreG: dish.fibreG, cooked: true });
+        if (saved) s.addSaving(saved, dish.id);
       },
-      logQuickMeal: (m) => updateToday((d) => ({ ...d, meals: [...d.meals, { ...m, cooked: false, at: Date.now() }] })),
+      logQuickMeal: (m) => s?.addMeal({ name: m.name, emoji: m.emoji, dishId: null, source: 'quick', kcal: m.kcal, proteinG: m.protein, fibreG: m.fibre, cooked: false }),
       logExercise: (type, minutes) => {
-        const e = EXERCISES.find((x) => x.type === type)!;
-        updateToday((d) => ({
-          ...d,
-          exercise: [...d.exercise, { type, minutes, kcal: exerciseKcal(e.met, minutes), at: Date.now() }],
-        }));
+        const e = EXERCISES.find((x) => x.type === type);
+        if (e) s?.addWorkout({ type, exerciseId: null, minutes, kcal: exerciseKcal(e.met, minutes) });
       },
-      addWater: (n) => updateToday((d) => ({ ...d, water: Math.max(0, d.water + n) })),
-      toggleFavourite: (id) =>
-        setState((s) => ({
-          ...s,
-          favourites: s.favourites.includes(id) ? s.favourites.filter((f) => f !== id) : [...s.favourites, id],
-        })),
-      setPlan: (date, slot, dishId) =>
-        setState((s) => {
-          const day = { ...(s.plan[date] ?? {}) };
-          if (dishId) day[slot] = dishId;
-          else delete day[slot];
-          return { ...s, plan: { ...s.plan, [date]: day } };
-        }),
-      resetDemo: () => setState(sampleState()),
+      addWater: (n) => s?.addWater(n),
+      toggleFavourite: (id) => s?.toggleFavourite(id),
+      setPlan: (date, slot, dishId) => s?.setPlan(date, slot, dishId),
+      resetDemo: () => {
+        if (s && active?.owner === GUEST_OWNER) s.resetToSample(sampleState());
+      },
     };
-  }, [state, user, ready, updateToday]);
+  }, [state, user, ready, active, syncError, guestOffer]);
 
   return <StoreContext.Provider value={store}>{children}</StoreContext.Provider>;
 }

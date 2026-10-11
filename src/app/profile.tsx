@@ -8,12 +8,13 @@ import { featureFlags } from '../config/featureFlags';
 import type { Diet } from '../data/dishes';
 import { setReminders } from '../lib/reminders';
 import { GOALS, useStore, type Goal, type Level } from '../lib/store';
+import { syncStatusLine } from '../services/userSession';
 import { colors, type } from '../theme';
 
 // `asTab` is set by the Profile tab of the new shell: no back button, and room
 // at the bottom for the floating tab bar.
 export function ProfileScreen({ asTab = false }: { asTab?: boolean }) {
-  const { profile, updateProfile, signOut, resetDemo, user, favourites } = useStore();
+  const { profile, updateProfile, signOut, resetDemo, user, favourites, cloud, syncError } = useStore();
   return (
     <SafeAreaView edges={asTab ? ['top'] : undefined} style={{ flex: 1, backgroundColor: colors.bg }}>
       <View style={styles.top}>
@@ -40,6 +41,9 @@ export function ProfileScreen({ asTab = false }: { asTab?: boolean }) {
             <Text style={[type.h1, { color: colors.text, marginTop: 10 }]}>{profile.name || 'Guest'}</Text>
             <Text style={{ color: colors.muted }}>
               {user?.guest ? 'Demo mode · not signed in' : user?.email ? `Signed in with Google · ${user.email}` : 'Signed in with Google'}
+            </Text>
+            <Text style={[type.small, styles.sync, { color: cloud && syncError ? colors.warn : colors.muted }]} accessibilityRole="text">
+              {syncStatusLine(Boolean(user && !user.guest), cloud, syncError)}
             </Text>
           </View>
         </FadeIn>
@@ -97,16 +101,19 @@ export function ProfileScreen({ asTab = false }: { asTab?: boolean }) {
         </FadeIn>
 
         <View style={{ gap: 10, marginTop: 24 }}>
-          <GradientButton
-            title="Reset demo data"
-            variant="glass"
-            onPress={() =>
-              Alert.alert('Reset demo data?', 'This restores the sample week and clears your logs.', [
-                { text: 'Cancel', style: 'cancel' },
-                { text: 'Reset', style: 'destructive', onPress: resetDemo },
-              ])
-            }
-          />
+          {/* Only guests can restore the sample week; a real account never gets sample data. */}
+          {user?.guest ? (
+            <GradientButton
+              title="Reset demo data"
+              variant="glass"
+              onPress={() =>
+                Alert.alert('Reset demo data?', 'This restores the sample week and clears your logs on this device.', [
+                  { text: 'Cancel', style: 'cancel' },
+                  { text: 'Reset', style: 'destructive', onPress: resetDemo },
+                ])
+              }
+            />
+          ) : null}
           <GradientButton
             title="Sign out"
             variant="glass"
@@ -133,5 +140,6 @@ const styles = StyleSheet.create({
   back: { width: 40, height: 40, borderRadius: 20, backgroundColor: colors.card, alignItems: 'center', justifyContent: 'center' },
   avatar: { width: 84, height: 84, borderRadius: 42, backgroundColor: colors.accentDark, alignItems: 'center', justifyContent: 'center', borderWidth: 3, borderColor: colors.accent },
   label: { ...type.label, color: colors.muted, marginBottom: 10 },
+  sync: { marginTop: 6, textAlign: 'center', paddingHorizontal: 12 },
   chips: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
 });

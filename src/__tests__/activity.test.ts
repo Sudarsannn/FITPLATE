@@ -8,6 +8,7 @@ import { lastSevenDaysActivity } from '../services/activity';
 // hoists these calls above the imports.
 jest.mock('firebase/auth', () => ({ onAuthStateChanged: jest.fn(), signOut: jest.fn() }));
 jest.mock('../lib/firebase', () => ({ firebaseConfigured: false, getFirebaseAuth: () => null }));
+jest.mock('../services/storage/firestoreRemote', () => ({ getDb: () => null, createFirestoreAdapter: jest.fn() }));
 
 const now = new Date(2026, 9, 10, 12, 0);
 const day = (exercise: DayLog['exercise']): DayLog => ({ meals: [], exercise, water: 0 });

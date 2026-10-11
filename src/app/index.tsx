@@ -13,6 +13,7 @@ import Animated, {
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import GoogleSignInButton from '../components/GoogleSignInButton';
+import { GuestCopyPrompt } from '../components/GuestCopyPrompt';
 import { GradientButton, VideoBackground } from '../components/ui';
 import { firebaseConfigured } from '../lib/firebase';
 import { useStore } from '../lib/store';
@@ -54,8 +55,9 @@ function RotatingWord() {
 }
 
 export default function Welcome() {
-  const { user, ready, profile, continueAsGuest } = useStore();
-  if (ready && user) return <Redirect href={profile.onboarded ? '/(tabs)' : '/onboarding'} />;
+  const { user, ready, profile, continueAsGuest, guestOffer, copyGuestData, skipGuestCopy } = useStore();
+  // A newly signed-in user first answers "Bring your data with you?", then moves on.
+  if (ready && user && guestOffer === 0) return <Redirect href={profile.onboarded ? '/(tabs)' : '/onboarding'} />;
 
   return (
     <View style={styles.root}>
@@ -85,10 +87,11 @@ export default function Welcome() {
               variant={googleReady ? 'glass' : 'primary'}
               onPress={continueAsGuest}
             />
-            <Text style={styles.fine}>Free to start · No ads · Your data stays on your phone</Text>
+            <Text style={styles.fine}>Free to start · No ads · Sign in to keep your data on every device</Text>
           </Animated.View>
         </View>
       </SafeAreaView>
+      <GuestCopyPrompt count={ready && user ? guestOffer : 0} onCopy={copyGuestData} onSkip={skipGuestCopy} />
     </View>
   );
 }

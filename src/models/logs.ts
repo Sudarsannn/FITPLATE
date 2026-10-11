@@ -51,12 +51,13 @@ export type WorkoutLog = LogBase & {
 };
 
 /** Saved dish (id = dishId). */
-export type Favourite = { dishId: string };
+export type Favourite = { dishId: string; demoSample?: boolean };
 
 /** One document per planned day (id = dateKey). */
 export type MealPlanDay = {
   dateKey: DateKey;
   slots: Partial<Record<'breakfast' | 'lunch' | 'dinner', string>>;
+  demoSample?: boolean;
 };
 
 /** Money saved by cooking instead of ordering. */
@@ -65,4 +66,5 @@ export type SavingEntry = {
   amountInr: number;
   dishId: string | null;
   note: string | null;
+  demoSample?: boolean;
 };

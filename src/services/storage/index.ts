@@ -49,6 +49,9 @@ export function openUserData(opts: { kv: KeyValueStore; uid: string | null; remo
   return {
     owner,
     cloud: synced !== null,
+    /** The store the repositories write to (device, or device + cloud). */
+    store,
+    kv: opts.kv,
     repos: createRepositories(store, opts.deps),
     /** Merge every collection with the cloud. No-op for guests. */
     async syncAll() {

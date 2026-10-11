@@ -6,14 +6,14 @@ import { brand, colors, spacing } from '../config/theme';
 describe('feature flags', () => {
   it('ships every unfinished feature switched off', () => {
     // Finished features stay listed here so turning one on is always a deliberate test change.
-    const finished: FeatureFlag[] = ['newTabShell'];
+    const finished: FeatureFlag[] = ['newTabShell', 'cloudSync', 'liteMode'];
     for (const flag of Object.keys(featureFlags) as FeatureFlag[]) {
       expect(isEnabled(flag)).toBe(finished.includes(flag));
     }
   });
 
   it('reads an overridden flag set', () => {
-    const flags = { ...featureFlags, voiceSteps: true };
+    const flags = { ...featureFlags, voiceSteps: true, cloudSync: false };
     expect(isEnabled('voiceSteps', flags)).toBe(true);
     expect(isEnabled('cloudSync', flags)).toBe(false);
   });
