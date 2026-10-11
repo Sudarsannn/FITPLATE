@@ -1,0 +1,505 @@
+{
+  "id": "005-dal-tadka",
+  "number": 5,
+  "name": "Dal Tadka",
+  "cuisine": "North Indian (Punjabi home and dhaba style)",
+  "dietType": "veg",
+  "mealType": [
+    "lunch",
+    "dinner"
+  ],
+  "difficulty": "Beginner",
+  "prepMin": 10,
+  "cookMin": 30,
+  "servings": 1,
+  "ingredients": [
+    {
+      "ingredientId": "toor-dal",
+      "name": "Split pigeon peas (toor dal / arhar dal)",
+      "quantity": 50,
+      "unit": "g",
+      "householdMeasure": "¼ cup"
+    },
+    {
+      "ingredientId": null,
+      "name": "Water (for cooking dal)",
+      "quantity": 200,
+      "unit": "ml",
+      "householdMeasure": "¾ cup + 1 tbsp"
+    },
+    {
+      "ingredientId": null,
+      "name": "Water (to adjust consistency)",
+      "quantity": 50,
+      "unit": "ml",
+      "householdMeasure": "¼ cup"
+    },
+    {
+      "ingredientId": "turmeric-powder",
+      "name": "Turmeric powder (haldi)",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "⅛ tsp"
+    },
+    {
+      "ingredientId": null,
+      "name": "Salt",
+      "quantity": 2.5,
+      "unit": "g",
+      "householdMeasure": "½ tsp (level)"
+    },
+    {
+      "ingredientId": "ghee-cow",
+      "name": "Ghee",
+      "quantity": 10,
+      "unit": "g",
+      "householdMeasure": "2 tsp (1 for masala, 1 for tadka)"
+    },
+    {
+      "ingredientId": null,
+      "name": "Cumin seeds (jeera)",
+      "quantity": 1,
+      "unit": "g",
+      "householdMeasure": "½ tsp"
+    },
+    {
+      "ingredientId": null,
+      "name": "Asafoetida (hing)",
+      "quantity": 0.1,
+      "unit": "g",
+      "householdMeasure": "1 pinch"
+    },
+    {
+      "ingredientId": "onion",
+      "name": "Onion",
+      "quantity": 40,
+      "unit": "g",
+      "householdMeasure": "½ small onion, finely chopped"
+    },
+    {
+      "ingredientId": "tomato",
+      "name": "Tomato",
+      "quantity": 50,
+      "unit": "g",
+      "householdMeasure": "½ medium tomato, finely chopped"
+    },
+    {
+      "ingredientId": "ginger",
+      "name": "Ginger (adrak)",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "½ inch piece, grated"
+    },
+    {
+      "ingredientId": "garlic",
+      "name": "Garlic (lahsun)",
+      "quantity": 6,
+      "unit": "g",
+      "householdMeasure": "3 cloves (2 chopped for masala, 1 sliced for tadka)"
+    },
+    {
+      "ingredientId": "green-chilli",
+      "name": "Green chilli (hari mirch)",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "1 small, slit"
+    },
+    {
+      "ingredientId": null,
+      "name": "Dried red chilli (sukhi lal mirch)",
+      "quantity": 1,
+      "unit": null,
+      "householdMeasure": "1 whole"
+    },
+    {
+      "ingredientId": "kashmiri-red-chilli-powder",
+      "name": "Kashmiri red chilli powder",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "¼ tsp"
+    },
+    {
+      "ingredientId": null,
+      "name": "Garam masala",
+      "quantity": 0.3,
+      "unit": "g",
+      "householdMeasure": "1 pinch"
+    },
+    {
+      "ingredientId": "coriander-leaves",
+      "name": "Coriander leaves (dhania)",
+      "quantity": 5,
+      "unit": "g",
+      "householdMeasure": "1 tbsp chopped"
+    },
+    {
+      "ingredientId": "lemon",
+      "name": "Lemon juice (optional)",
+      "quantity": 5,
+      "unit": "ml",
+      "householdMeasure": "1 tsp"
+    }
+  ],
+  "equipment": [
+    "Pressure cooker, 1.5–3 L",
+    "Small kadai or saucepan for the masala",
+    "Tadka pan (small tadka ladle)",
+    "Wooden spoon or whisk (mathani) to mash the dal",
+    "Measuring spoons and a ¼ cup measure",
+    "Chopping board, knife and grater"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "title": "Measure ¼ cup (50 g) toor dal into a bowl",
+      "text": "Measure ¼ cup (50 g) toor dal into a bowl",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "a small heap of yellow lentils",
+      "cameraCheck": "the dal in the bowl",
+      "videoShot": "lentils pouring from the measuring cup into the bowl"
+    },
+    {
+      "n": 2,
+      "title": "Rinse the dal in water 3 times, rubbing it gently with your fingers, and drain each time",
+      "text": "Rinse the dal in water 3 times, rubbing it gently with your fingers, and drain each time",
+      "timerSec": 120,
+      "tip": "if you have time, soak the dal for 20 min now. It cooks faster and softer.",
+      "visualCue": "the rinse water goes from cloudy to almost clear",
+      "cameraCheck": "the bowl showing clear water over the dal",
+      "videoShot": "a hand swirling dal in water, with cloudy water poured off"
+    },
+    {
+      "n": 3,
+      "title": "Put the drained dal into the pressure cooker and add 200 ml water",
+      "text": "Put the drained dal into the pressure cooker and add 200 ml water",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "water about 2 cm above the dal",
+      "cameraCheck": "the open cooker with dal and water",
+      "videoShot": "water poured over the dal in the cooker"
+    },
+    {
+      "n": 4,
+      "title": "Add ⅛ tsp turmeric and ¼ tsp of the salt to the cooker, and stir once",
+      "text": "Add ⅛ tsp turmeric and ¼ tsp of the salt to the cooker, and stir once",
+      "timerSec": 20,
+      "tip": "a drop of ghee in the cooker stops it from frothing out of the whistle.",
+      "visualCue": "the water turns pale yellow",
+      "cameraCheck": "yellow water in the cooker",
+      "videoShot": "turmeric sprinkled in and stirred"
+    },
+    {
+      "n": 5,
+      "title": "Close the lid and cook on medium heat for 3–4 whistles",
+      "text": "Close the lid and cook on medium heat for 3–4 whistles",
+      "timerSec": 600,
+      "tip": null,
+      "visualCue": "whistles counted, steam hissing",
+      "cameraCheck": "the closed cooker on the flame",
+      "videoShot": "the cooker whistling"
+    },
+    {
+      "n": 6,
+      "title": "Turn off the heat and let the pressure drop on its own",
+      "text": "Turn off the heat and let the pressure drop on its own",
+      "timerSec": 480,
+      "tip": "never force the lid open while there is still pressure.",
+      "visualCue": "the weight/valve drops and no more hissing",
+      "cameraCheck": "the cooker off the flame",
+      "videoShot": "the pressure valve settling down"
+    },
+    {
+      "n": 7,
+      "title": "Finely chop ½ small onion (40 g)",
+      "text": "Finely chop ½ small onion (40 g)",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "small even pieces about the size of a rice grain",
+      "cameraCheck": "the chopped onion on the board",
+      "videoShot": "knife chopping the onion"
+    },
+    {
+      "n": 8,
+      "title": "Finely chop ½ medium tomato (50 g)",
+      "text": "Finely chop ½ medium tomato (50 g)",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "small juicy cubes",
+      "cameraCheck": "the chopped tomato",
+      "videoShot": "knife dicing the tomato"
+    },
+    {
+      "n": 9,
+      "title": "Grate ½ inch ginger (3 g), chop 2 garlic cloves, and thinly slice the third clove separately",
+      "text": "Grate ½ inch ginger (3 g), chop 2 garlic cloves, and thinly slice the third clove separately",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "two small piles, one chopped and one sliced",
+      "cameraCheck": "the ginger-garlic piles",
+      "videoShot": "ginger rubbed on a grater, then garlic sliced"
+    },
+    {
+      "n": 10,
+      "title": "Slit 1 green chilli lengthwise and chop 1 tbsp coriander leaves",
+      "text": "Slit 1 green chilli lengthwise and chop 1 tbsp coriander leaves",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "chilli split open, coriander finely chopped",
+      "cameraCheck": "chilli and coriander on the board",
+      "videoShot": "knife slitting the chilli"
+    },
+    {
+      "n": 11,
+      "title": "Open the cooker and check that the dal is fully soft",
+      "text": "Open the cooker and check that the dal is fully soft",
+      "timerSec": 30,
+      "tip": "if it is still firm, add 50 ml water and give it 1–2 more whistles.",
+      "visualCue": "grains fall apart when pressed with a spoon, with no hard centre",
+      "cameraCheck": "a spoonful of cooked dal",
+      "videoShot": "a spoon pressing a lentil flat"
+    },
+    {
+      "n": 12,
+      "title": "Mash or whisk the dal for 30 seconds until mostly smooth",
+      "text": "Mash or whisk the dal for 30 seconds until mostly smooth",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "a creamy, pourable texture with a few whole bits",
+      "cameraCheck": "the mashed dal in the cooker",
+      "videoShot": "the whisk spinning in the dal"
+    },
+    {
+      "n": 13,
+      "title": "Heat 1 tsp (5 g) ghee in a kadai on medium heat",
+      "text": "Heat 1 tsp (5 g) ghee in a kadai on medium heat",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "the ghee melts and shimmers",
+      "cameraCheck": "melted ghee in the kadai",
+      "videoShot": "ghee melting in the pan"
+    },
+    {
+      "n": 14,
+      "title": "Add ¼ tsp cumin seeds (half of the 1 g) and let them crackle",
+      "text": "Add ¼ tsp cumin seeds (half of the 1 g) and let them crackle",
+      "timerSec": 20,
+      "tip": null,
+      "visualCue": "the seeds sizzle and turn a shade darker, with a nutty smell",
+      "cameraCheck": "the sizzling cumin",
+      "videoShot": "close-up of cumin bubbling in ghee"
+    },
+    {
+      "n": 15,
+      "title": "Add the chopped onion and sauté until light golden",
+      "text": "Add the chopped onion and sauté until light golden",
+      "timerSec": 180,
+      "tip": null,
+      "visualCue": "the onion edges turn golden and soft",
+      "cameraCheck": "the golden onion",
+      "videoShot": "onion stirred in the kadai"
+    },
+    {
+      "n": 16,
+      "title": "Add the ginger, chopped garlic and green chilli, and sauté",
+      "text": "Add the ginger, chopped garlic and green chilli, and sauté",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "the raw garlic smell is gone",
+      "cameraCheck": "the pan with aromatics mixed in",
+      "videoShot": "aromatics tossed into the onion"
+    },
+    {
+      "n": 17,
+      "title": "Add the chopped tomato and a pinch of salt, and cook until soft and mushy",
+      "text": "Add the chopped tomato and a pinch of salt, and cook until soft and mushy",
+      "timerSec": 180,
+      "tip": null,
+      "visualCue": "the tomato breaks down and ghee shows at the edges",
+      "cameraCheck": "the soft masala in the pan",
+      "videoShot": "tomato mashed with the spoon"
+    },
+    {
+      "n": 18,
+      "title": "Pour in the mashed dal plus 50–75 ml water and stir",
+      "text": "Pour in the mashed dal plus 50–75 ml water and stir",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "the dal is pourable like thick soup, not a paste",
+      "cameraCheck": "the dal in the kadai",
+      "videoShot": "dal poured over the masala"
+    },
+    {
+      "n": 19,
+      "title": "Add the remaining salt (to taste, about ¼ tsp) and simmer on low heat",
+      "text": "Add the remaining salt (to taste, about ¼ tsp) and simmer on low heat",
+      "timerSec": 180,
+      "tip": "stir from the bottom once a minute because dal catches easily.",
+      "visualCue": "slow bubbles on the surface and the masala blended in",
+      "cameraCheck": "the simmering dal",
+      "videoShot": "bubbles popping on the dal"
+    },
+    {
+      "n": 20,
+      "title": "Stir in a pinch of garam masala and half the coriander, then turn off the heat and pour the dal into a serving bowl",
+      "text": "Stir in a pinch of garam masala and half the coriander, then turn off the heat and pour the dal into a serving bowl",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "green flecks in yellow dal",
+      "cameraCheck": "the dal in the serving bowl",
+      "videoShot": "dal ladled into the bowl"
+    },
+    {
+      "n": 21,
+      "title": "For the tadka, heat 1 tsp (5 g) ghee in the tadka pan on medium heat",
+      "text": "For the tadka, heat 1 tsp (5 g) ghee in the tadka pan on medium heat",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "the ghee shimmers",
+      "cameraCheck": "hot ghee in the tadka pan",
+      "videoShot": "ghee melting in the small pan"
+    },
+    {
+      "n": 22,
+      "title": "Add the remaining ¼ tsp cumin and 1 dried red chilli",
+      "text": "Add the remaining ¼ tsp cumin and 1 dried red chilli",
+      "timerSec": 15,
+      "tip": null,
+      "visualCue": "cumin crackles and the chilli puffs and darkens slightly",
+      "cameraCheck": "cumin and chilli in the pan",
+      "videoShot": "seeds sizzling with the chilli"
+    },
+    {
+      "n": 23,
+      "title": "Add the sliced garlic and fry until light golden",
+      "text": "Add the sliced garlic and fry until light golden",
+      "timerSec": 20,
+      "tip": "garlic goes from golden to burnt in seconds, so have the dal bowl ready beside you.",
+      "visualCue": "the slices turn pale gold, not brown",
+      "cameraCheck": "the golden garlic",
+      "videoShot": "garlic slices turning golden"
+    },
+    {
+      "n": 24,
+      "title": "Turn off the flame, then add a pinch of hing and ¼ tsp Kashmiri chilli powder",
+      "text": "Turn off the flame, then add a pinch of hing and ¼ tsp Kashmiri chilli powder",
+      "timerSec": 5,
+      "tip": "adding chilli powder off the flame stops it from burning and turning bitter.",
+      "visualCue": "the ghee turns bright red without darkening",
+      "cameraCheck": "the red tadka",
+      "videoShot": "chilli powder blooming red in the ghee"
+    },
+    {
+      "n": 25,
+      "title": "Pour the tadka over the dal straight away",
+      "text": "Pour the tadka over the dal straight away",
+      "timerSec": 5,
+      "tip": null,
+      "visualCue": "a loud sizzle and red ghee spreading on top",
+      "cameraCheck": "the dal with tadka on top",
+      "videoShot": "the sizzling tadka poured over the dal (hero shot)"
+    },
+    {
+      "n": 26,
+      "title": "Garnish with the rest of the coriander and 1 tsp lemon juice if you like",
+      "text": "Garnish with the rest of the coriander and 1 tsp lemon juice if you like",
+      "timerSec": 20,
+      "tip": null,
+      "visualCue": "a finished glossy bowl",
+      "cameraCheck": "the final plated dal",
+      "videoShot": "coriander sprinkled over the finished bowl"
+    }
+  ],
+  "nutritionPerServing": {
+    "kcal": 305,
+    "proteinG": 12.5,
+    "carbsG": 36,
+    "fatG": 11,
+    "fibreG": 6.5
+  },
+  "microNutrientsEstimate": null,
+  "asOrdered": null,
+  "orderPrice": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 140,
+        "max": 200,
+        "avg": 175,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 150,
+      "max": 200,
+      "avg": 180
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "healthiness": {
+    "score": 8,
+    "restaurantScore": 5.5,
+    "reasons": [
+      "the home version is a high-fibre, plant-protein dish with about 12 g of protein, little added fat (2 tsp ghee) and no frying or added sugar. Restaurant dal tadka often has 1–2 tbsp of butter or ghee plus cream or butter on top, more salt (often 1.5–2 g sodium) and sometimes a dhungar (charcoal smoke) finish, while the lentil content stays about the same."
+    ]
+  },
+  "researchRating": {
+    "score": 4.6,
+    "basis": "dal tadka is one of India's most-cooked and most-searched comfort dishes. Top recipe pages are rated almost perfectly by readers, and comments consistently praise it as easy and restaurant-like. It loses a little because many people see it as an everyday, \"plain\" dish rather than a treat."
+  },
+  "storage": "Fridge: safe for 2–3 days in an airtight container. Freezer: up to 1 month, ideally frozen before adding the final tadka. Reheating: dal thickens as it cools, so add 2–4 tbsp water and reheat on the stove until it bubbles, or microwave for 1.5–2 min, stirring halfway. A fresh ½ tsp ghee tadka brings it back to life.",
+  "leftoverRemix": "make dal paratha. Knead the thick leftover dal (about ½ cup) into atta with ajwain, chopped onion and coriander, using no extra water, then roll out and cook on a tawa with a little ghee. Alternatively, simmer the dal with cooked rice into a quick dal khichdi.",
+  "burnOff": "Running: about 4.4 km at about 70 kcal per km. Walking: about 6 km at a brisk pace (est.), using about 50 kcal per km. With 2 rotis (about 530 kcal total): about 7.5 km running or about 10.5 km walking (est.).",
+  "sources": [
+    "Veg Recipes of India, Dal Tadka (Restaurant Style): https://www.vegrecipesofindia.com/restaurant-style-dal-tadka/",
+    "Swasthi's Recipes (Indian Healthy Recipes), Dal Tadka: https://www.indianhealthyrecipes.com/dal-tadka/",
+    "Cook With Manali, Dal Tadka: https://www.cookwithmanali.com/dal-tadka/",
+    "Hebbars Kitchen, dal tadka (print version): https://hebbarskitchen.com/wprm_print/54438",
+    "Sanjeev Kapoor, Dal Tadka: https://www.sanjeevkapoor.com/Recipe/Dal-Tadka.html",
+    "Ranveer Brar, Dal Tadka: https://ranveerbrar.com/recipes/dal-tadka/",
+    "Hathi Masala, restaurant-style dal tadka with ghee tadka: https://hathimasala.com/blogs/recipes/dal-tadka-recipe",
+    "My Ginger Garlic Kitchen, restaurant-style dal tadka: https://www.mygingergarlickitchen.com/PRINT-RECIPES/RECIPE-PRINT-restaurant-style-tadka-dal-recipe-how-to-make-dal-tadka.html",
+    "Wonderchef, pressure-cooking dal (whistle counts): https://www.wonderchef.com/blogs/recipes/how-to-cook-dal-in-a-pressure-cooker-perfect-every-time-for-tadka-khichdi",
+    "Swiggy, The Yellow Tadka, Borivali: https://www.swiggy.com/restaurants/the-yellow-tadka-borivali-mumbai-214579",
+    "Swiggy, Kailash Parbat, Andheri West: https://www.swiggy.com/restaurants/kailash-parbat-new-link-road-andheri-west-mumbai-24387",
+    "magicpin, Shiv Sagar, Juhu: https://magicpin.in/Mumbai/Juhu/Restaurant/Shiv-Sagar/store/240ca/menu",
+    "magicpin, Rogan Tadka, Goregaon East: https://magicpin.in/Mumbai/Goregaon-East/Restaurant/Rogan-Tadka/store/214381/menu",
+    "magicpin, Punjabi Rasoi, Kharghar: https://magicpin.in/Navi-Mumbai/Kharghar/Restaurant/Punjabi-Rasoi/store/6186c8/",
+    "Dropped outliers: Swiggy Punjab Grill Mumbai listing: https://www.swiggy.com/city/mumbai/punjab-grill magicpin Punjabi Tadka by Crystal, Kanjurmarg: https://magicpin.in/Mumbai/Powai/Restaurant/Punjabi-Tadka-By-Crystal/store/1878a8/ Swiggy Mumbai veg meals: https://www.swiggy.com/city/mumbai/veg-meals-dish-restaurants",
+    "IFCT 2017, Indian Food Composition Tables, NIN-ICMR: https://www.nin.res.in/ebooks/IFCT2017.pdf",
+    "USDA FoodData Central: https://fdc.nal.usda.gov/"
+  ],
+  "allergens": [
+    "milk",
+    "gluten"
+  ],
+  "dietClaims": [],
+  "fasting": null,
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Dishes_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "nutritionPerServing": "stable (single)",
+    "orderPrice": "price engine (single)",
+    "ingredients": "newest",
+    "steps": "newest",
+    "healthiness": "newest",
+    "researchRating": "newest",
+    "sources": "union"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 140.0–200.0 was wider than 30% of avg 175.0; narrowed to ±15%.",
+    "2026-10-04: hing: compounded hing usually contains wheat flour"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "potato",
+  "name": "Potato",
+  "aliases": [
+    "aloo",
+    "batata"
+  ],
+  "category": "Vegetable",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 20,
+        "max": 25,
+        "avg": 22,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 20,
+      "max": 25,
+      "avg": 22
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": true
+  },
+  "per100Estimate": {
+    "min": 2,
+    "max": 2.5,
+    "avg": 2.2
+  },
+  "seasonal": true,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 77,
+    "proteinG": 2,
+    "carbsG": 17.5,
+    "fatG": 0.1,
+    "fibreG": 2.2
+  },
+  "storage": "Room temperature in a dark, ventilated basket, away from onions, for 2–4 weeks. Do not refrigerate raw potatoes (they turn sweet and go grey when cooked). Boiled: fridge for 3–4 days in a covered box.",
+  "substitutes": [
+    "Sweet potato (shakarkand)",
+    "Raw banana (kacha kela), boiled",
+    "Paneer or mixed vegetables"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest"
+  },
+  "mergeNotes": []
+}

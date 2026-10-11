@@ -1,0 +1,65 @@
+{
+  "id": "lemon",
+  "name": "Lemon",
+  "aliases": [
+    "nimbu"
+  ],
+  "category": "Fruit (citrus)",
+  "standardUnit": "piece",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 4,
+        "max": 6,
+        "avg": 5,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 4,
+      "max": 6,
+      "avg": 5
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": true
+  },
+  "per100Estimate": null,
+  "seasonal": true,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 22,
+    "proteinG": 0.4,
+    "carbsG": 6.9,
+    "fatG": 0.2,
+    "fibreG": 0.3
+  },
+  "storage": "Whole: fridge, in a zip bag, for 3–4 weeks. Room temperature for about 1 week. Juice: fridge for 2–3 days, or freeze in ice-cube trays for 3 months. Cut half: wrap and refrigerate; use within 2 days.",
+  "substitutes": [
+    "Bottled lemon juice",
+    "Amchur (dry mango powder)",
+    "Vinegar"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 4.0–6.0 was wider than 30% of avg 5.0; narrowed to ±15%."
+  ]
+}

@@ -11,11 +11,16 @@ export const PROFILE_ID = 'profile';
  * touch the real project.
  */
 export type RemoteAdapter = {
-  /** All documents of a collection path, or the single document at a doc path. */
-  getCollection(path: string): Promise<BaseDoc[]>;
+  /**
+   * All documents of a collection path. `fromServer` skips the offline cache
+   * and fails when the cloud can't be reached (used before deleting).
+   */
+  getCollection(path: string, opts?: { fromServer?: boolean }): Promise<BaseDoc[]>;
   getDoc(path: string): Promise<BaseDoc | null>;
   /** Write documents in batches (Firestore batches hold at most 500 writes). */
   setMany(writes: { path: string; data: BaseDoc }[]): Promise<void>;
+  /** Hard-delete documents by path, in batches of at most 500. */
+  deleteMany(paths: string[]): Promise<void>;
 };
 
 export const userDocPath = (uid: string) => `users/${uid}`;

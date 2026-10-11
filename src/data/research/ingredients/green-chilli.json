@@ -1,0 +1,66 @@
+{
+  "id": "green-chilli",
+  "name": "Green chilli",
+  "aliases": [
+    "hari mirch"
+  ],
+  "category": "Vegetable",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 85,
+        "max": 100,
+        "avg": 95,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 85,
+      "max": 100,
+      "avg": 95
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": true
+  },
+  "per100Estimate": {
+    "min": 8.5,
+    "max": 10,
+    "avg": 9.5
+  },
+  "seasonal": true,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 40,
+    "proteinG": 2,
+    "carbsG": 9.5,
+    "fatG": 0.2,
+    "fibreG": 1.5
+  },
+  "storage": "Remove the stalks, wipe dry and store in a paper-lined box in the fridge: 10–14 days. Freezer: whole or chopped, 2–3 months (they go soft but keep their heat).",
+  "substitutes": [
+    "Red chilli powder",
+    "Green chilli paste (jar)",
+    "Black pepper"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest"
+  },
+  "mergeNotes": []
+}

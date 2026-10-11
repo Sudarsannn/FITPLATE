@@ -8,9 +8,11 @@ import { dishes, type Diet, type Dish } from '../data/dishes';
 import { GUEST_OWNER, openUserData, type UserData } from '../services/storage';
 import { createFirestoreAdapter, getDb } from '../services/storage/firestoreRemote';
 import type { KeyValueStore } from '../services/storage/kv';
+import type { RemoteAdapter } from '../services/storage/remote';
 import {
   copyGuestData,
   createUserSession,
+  deleteMyData,
   EMPTY_DOCS,
   guestOfferCount,
   legacyProfilePatch,
@@ -143,6 +145,12 @@ type Store = State & {
   skipGuestCopy: () => Promise<void>;
   continueAsGuest: () => void;
   signOut: () => Promise<void>;
+  /**
+   * Signed in with the cloud on: permanently deletes everything saved under
+   * `users/{uid}` in Firestore, clears this device's copy, then signs out.
+   * Throws (and changes nothing) when the cloud can't be reached. No-op otherwise.
+   */
+  deleteMyData: () => Promise<void>;
   updateProfile: (p: Partial<Profile>) => void;
   logCooked: (dish: Dish, saved: number) => void;
   logQuickMeal: (m: (typeof QUICK_MEALS)[number]) => void;
@@ -171,7 +179,14 @@ function cloudAdapter() {
 // A first sign-in on a new device waits this long for the cloud before showing what the device has.
 const FIRST_SYNC_WAIT_MS = 8000;
 
-type Active = { owner: string; data: UserData; session: UserSession };
+type Active = {
+  owner: string;
+  data: UserData;
+  session: UserSession;
+  remote: RemoteAdapter | null;
+  /** The start-up merge with the cloud (it may still be running in the background). */
+  firstSync: Promise<unknown>;
+};
 
 export function StoreProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
@@ -200,7 +215,8 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     if (!authReady) return;
     let alive = true;
     const signedIn = owner !== GUEST_OWNER;
-    const data = openUserData({ kv, uid: signedIn ? owner : null, remote: signedIn ? cloudAdapter() : null, onSyncError: () => alive && setSyncError(true) });
+    const remote = signedIn ? cloudAdapter() : null;
+    const data = openUserData({ kv, uid: signedIn ? owner : null, remote, onSyncError: () => alive && setSyncError(true) });
 
     (async () => {
       if (!signedIn) await prepareGuestDevice(kv, data, sampleState, Date.now());
@@ -211,6 +227,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
         await session.idle();
         if (alive) session.reload(await loadDocs(data.repos));
       };
+      let firstSync: Promise<unknown> = Promise.resolve();
       if (data.cloud) {
         const synced = data.syncAll().then(
           () => {
@@ -223,13 +240,14 @@ export function StoreProvider({ children }: { children: ReactNode }) {
         );
         // A device that already has this user's data shows it at once and syncs in the background.
         // A new device waits for the first pull (up to FIRST_SYNC_WAIT_MS) so it doesn't look empty.
+        firstSync = synced;
         if (!local.profile) await Promise.race([synced, new Promise((r) => setTimeout(r, FIRST_SYNC_WAIT_MS))]);
       }
       const offer = signedIn ? await guestOfferCount(kv, owner) : 0;
       if (!alive) return;
       setGuestOffer(offer);
       setDocs(session.docs);
-      setActive({ owner, data, session });
+      setActive({ owner, data, session, remote, firstSync });
     })().catch(() => {
       if (alive) setSyncError(true);
     });
@@ -261,6 +279,12 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     }
     // Before the data has loaded, writes have nowhere to go; screens are not interactive yet anyway.
     const s = ready ? active?.session : undefined;
+    // The last step of every sign-out: leave Firebase Auth and go back to the welcome screen.
+    const endAuth = async () => {
+      const auth = getFirebaseAuth();
+      if (auth && !user?.guest) await fbSignOut(auth);
+      setUser(null);
+    };
     return {
       ...state,
       user,
@@ -284,13 +308,21 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       },
       continueAsGuest: () => setUser({ name: '', guest: true }),
       signOut: async () => {
-        const auth = getFirebaseAuth();
         if (active && active.owner !== GUEST_OWNER) {
           await active.session.idle();
           await signOutDevice(active.data);
         }
-        if (auth && !user?.guest) await fbSignOut(auth);
-        setUser(null);
+        await endAuth();
+      },
+      deleteMyData: async () => {
+        if (!ready || !active || active.owner === GUEST_OWNER || !active.data.cloud || !active.remote) return;
+        // Let the start-up merge finish first, so it can't push documents back after the delete.
+        // (Offline it may never finish; the delete below then fails on its own.)
+        await Promise.race([active.firstSync.catch(() => {}), new Promise((r) => setTimeout(r, FIRST_SYNC_WAIT_MS))]);
+        await active.session.idle();
+        await deleteMyData(active.data, active.remote, active.owner, kv);
+        // The data is gone, so sign out without the usual flush.
+        await endAuth();
       },
       updateProfile: (p) => s?.updateProfile(legacyProfilePatch(p)),
       logCooked: (dish, saved) => {

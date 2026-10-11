@@ -1,0 +1,66 @@
+{
+  "id": "basmati-rice-everyday-grade",
+  "name": "Basmati rice, everyday grade",
+  "aliases": [
+    "basmati chawal"
+  ],
+  "category": "Grain",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 90,
+        "max": 120,
+        "avg": 105,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 90,
+      "max": 120,
+      "avg": 105
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 9,
+    "max": 12,
+    "avg": 10.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 350,
+    "proteinG": 8,
+    "carbsG": 78,
+    "fatG": 0.6,
+    "fibreG": 1.5
+  },
+  "storage": "Store it at room temperature in an airtight container. Use it within 6–12 months of opening. Put a few dried red chillies or bay leaves in the container to help keep weevils away.",
+  "substitutes": [
+    "Sona masoori or jeera-samba rice",
+    "Non-basmati long grain (e.g. Kolam)",
+    "Premium aged basmati"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest"
+  },
+  "mergeNotes": []
+}

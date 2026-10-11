@@ -1,8 +1,10 @@
 import { Ionicons } from '@expo/vector-icons';
 import { router } from 'expo-router';
-import { Alert, Image, ScrollView, StyleSheet, Switch, Text, View } from 'react-native';
+import { useState } from 'react';
+import { Alert, Image, Pressable, ScrollView, StyleSheet, Switch, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { ConfirmDeleteData } from '../components/ConfirmDeleteData';
 import { Chip, FadeIn, Glass, GradientButton, PressableScale } from '../components/ui';
 import { featureFlags } from '../config/featureFlags';
 import type { Diet } from '../data/dishes';
@@ -14,7 +16,9 @@ import { colors, type } from '../theme';
 // `asTab` is set by the Profile tab of the new shell: no back button, and room
 // at the bottom for the floating tab bar.
 export function ProfileScreen({ asTab = false }: { asTab?: boolean }) {
-  const { profile, updateProfile, signOut, resetDemo, user, favourites, cloud, syncError } = useStore();
+  const { profile, updateProfile, signOut, deleteMyData, resetDemo, user, favourites, cloud, syncError } = useStore();
+  const [confirmDelete, setConfirmDelete] = useState(false);
+  const canDelete = Boolean(user && !user.guest && cloud);
   return (
     <SafeAreaView edges={asTab ? ['top'] : undefined} style={{ flex: 1, backgroundColor: colors.bg }}>
       <View style={styles.top}>
@@ -100,6 +104,19 @@ export function ProfileScreen({ asTab = false }: { asTab?: boolean }) {
           </Glass>
         </FadeIn>
 
+        <FadeIn i={4}>
+          <PressableScale onPress={() => router.push('/your-data')} accessibilityLabel="Your data: what we save and where" style={{ marginTop: 14 }}>
+            <Glass style={styles.linkRow}>
+              <Text style={{ fontSize: 24 }}>🔒</Text>
+              <View style={{ flex: 1 }}>
+                <Text style={{ color: colors.text, fontWeight: '800' }}>Your data</Text>
+                <Text style={[type.small, { color: colors.muted }]}>What we save, where it lives, and your choices</Text>
+              </View>
+              <Ionicons name="chevron-forward" size={18} color={colors.muted} />
+            </Glass>
+          </PressableScale>
+        </FadeIn>
+
         <View style={{ gap: 10, marginTop: 24 }}>
           {/* Only guests can restore the sample week; a real account never gets sample data. */}
           {user?.guest ? (
@@ -122,11 +139,32 @@ export function ProfileScreen({ asTab = false }: { asTab?: boolean }) {
               router.replace('/');
             }}
           />
+          {canDelete ? (
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel="Delete my data"
+              accessibilityHint="Permanently deletes everything FitPlate saved for your account"
+              onPress={() => setConfirmDelete(true)}
+              style={({ pressed }) => [styles.danger, pressed && { opacity: 0.7 }]}
+            >
+              <Ionicons name="trash-outline" size={18} color={colors.bad} />
+              <Text style={styles.dangerText}>Delete my data</Text>
+            </Pressable>
+          ) : null}
         </View>
         <Text style={[type.small, { color: colors.faint, textAlign: 'center', marginTop: 20 }]}>
           FitPlate demo · nutrition and prices are estimates, not medical advice.
         </Text>
       </ScrollView>
+      <ConfirmDeleteData
+        visible={confirmDelete}
+        onConfirm={deleteMyData}
+        onCancel={() => setConfirmDelete(false)}
+        onDone={() => {
+          setConfirmDelete(false);
+          router.replace('/');
+        }}
+      />
     </SafeAreaView>
   );
 }
@@ -142,4 +180,17 @@ const styles = StyleSheet.create({
   label: { ...type.label, color: colors.muted, marginBottom: 10 },
   sync: { marginTop: 6, textAlign: 'center', paddingHorizontal: 12 },
   chips: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
+  linkRow: { flexDirection: 'row', alignItems: 'center', gap: 12 },
+  danger: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 8,
+    paddingVertical: 16,
+    borderRadius: 999,
+    borderWidth: 1,
+    borderColor: 'rgba(255,107,107,0.45)',
+    backgroundColor: 'rgba(255,107,107,0.08)',
+  },
+  dangerText: { color: colors.bad, fontSize: 16, fontWeight: '800', letterSpacing: 0.2 },
 });

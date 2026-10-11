@@ -7,7 +7,7 @@ import type { RemoteAdapter } from '../../services/storage/remote';
  */
 export function fakeFirestore() {
   const docs = new Map<string, BaseDoc>();
-  const state = { offline: false, batches: 0, writes: 0 };
+  const state = { offline: false, batches: 0, writes: 0, deleteBatches: 0, deletes: 0 };
   const check = () => {
     if (state.offline) throw new Error('unavailable: offline');
   };
@@ -26,6 +26,16 @@ export function fakeFirestore() {
       state.batches += 1;
       state.writes += writes.length;
       for (const w of writes) docs.set(w.path, structuredClone(w.data));
+    },
+    async deleteMany(paths) {
+      check();
+      // Like the real adapter: one commit per 500 deletes.
+      for (let i = 0; i < paths.length; i += 500) {
+        const chunk = paths.slice(i, i + 500);
+        state.deleteBatches += 1;
+        state.deletes += chunk.length;
+        for (const p of chunk) docs.delete(p);
+      }
     },
   };
   return { adapter, docs, state };

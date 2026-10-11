@@ -1,0 +1,66 @@
+{
+  "id": "butter-salted",
+  "name": "Butter, salted",
+  "aliases": [
+    "makkhan"
+  ],
+  "category": "Dairy",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 570,
+        "max": 600,
+        "avg": 585,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 570,
+      "max": 600,
+      "avg": 585
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 57,
+    "max": 60,
+    "avg": 58.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 717,
+    "proteinG": 0.9,
+    "carbsG": 0.1,
+    "fatG": 81,
+    "fibreG": 0
+  },
+  "storage": "Fridge, wrapped in its paper inside a box; use within 4–6 weeks of opening. Freeze extra blocks for up to 6–12 months.",
+  "substitutes": [
+    "Ghee",
+    "Unsalted butter",
+    "Oil plus a little extra cream"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest"
+  },
+  "mergeNotes": []
+}

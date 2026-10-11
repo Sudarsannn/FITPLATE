@@ -1,0 +1,69 @@
+{
+  "id": "curry-leaves",
+  "name": "Curry leaves",
+  "aliases": [
+    "kadi patta"
+  ],
+  "category": "Vegetable (fresh herb)",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 75,
+        "max": 130,
+        "avg": 100,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 85,
+      "max": 115,
+      "avg": 100
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 8.5,
+    "max": 11.5,
+    "avg": 10
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 108,
+    "proteinG": 6.1,
+    "carbsG": 18.7,
+    "fatG": 1,
+    "fibreG": 6.4
+  },
+  "storage": "strip leaves or keep on sprigs, wrap dry in paper towel in an airtight box — 1–2 weeks.",
+  "substitutes": [
+    "Dried curry leaves",
+    "Bay leaf plus a little lime zest",
+    "Omit"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 75.0–130.0 was wider than 30% of avg 100.0; narrowed to ±15%."
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "milk-toned",
+  "name": "Milk, toned",
+  "aliases": [
+    "doodh"
+  ],
+  "category": "Dairy",
+  "standardUnit": "l",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 57,
+        "max": 60,
+        "avg": 58,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 57,
+      "max": 60,
+      "avg": 58
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 5.7,
+    "max": 6,
+    "avg": 5.8
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 58,
+    "proteinG": 3.1,
+    "carbsG": 4.6,
+    "fatG": 3,
+    "fibreG": 0
+  },
+  "storage": "Refrigerate at once (below 5 °C). Boil pouch milk before use if you plan to keep it for 2+ days. Use within 2 days of opening. Do not freeze in the pouch; freezing in a container is possible (up to 1 month) but the texture changes.",
+  "substitutes": [
+    "Full cream milk",
+    "UHT carton milk",
+    "In biryani saffron milk"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest"
+  },
+  "mergeNotes": []
+}

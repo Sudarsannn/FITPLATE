@@ -25,6 +25,7 @@ export default function RootLayout() {
           <Stack.Screen name="done/[id]" options={{ animation: 'fade' }} />
           <Stack.Screen name="shop/[id]" options={{ animation: 'ios_from_right' }} />
           <Stack.Screen name="profile" options={{ animation: 'ios_from_right' }} />
+          <Stack.Screen name="your-data" options={{ animation: 'ios_from_right' }} />
           <Stack.Screen name="grocery" options={{ animation: 'ios_from_right' }} />
           <Stack.Screen name="log" options={{ presentation: 'formSheet', sheetAllowedDetents: [0.75, 1], sheetGrabberVisible: true, sheetCornerRadius: 28, contentStyle: { backgroundColor: colors.bgElevated } }} />
         </Stack>

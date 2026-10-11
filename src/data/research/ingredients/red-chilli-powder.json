@@ -1,0 +1,64 @@
+{
+  "id": "red-chilli-powder",
+  "name": "Red chilli powder",
+  "aliases": [
+    "lal mirch"
+  ],
+  "category": "Spice",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 460,
+        "max": 590,
+        "avg": 510,
+        "confidence": "High",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 460,
+      "max": 590,
+      "avg": 510
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 46,
+    "max": 59,
+    "avg": 51
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 282,
+    "proteinG": 13.5,
+    "carbsG": 50,
+    "fatG": 14.3,
+    "fibreG": 34.8
+  },
+  "storage": "Room temperature in an airtight, opaque container, away from light and stove heat. For long storage, keep it in the fridge in a sealed jar. It lasts about 6 months open.",
+  "substitutes": [
+    "Cayenne pepper, 1"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest"
+  },
+  "mergeNotes": []
+}

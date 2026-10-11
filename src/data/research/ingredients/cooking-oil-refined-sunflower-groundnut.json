@@ -1,0 +1,66 @@
+{
+  "id": "cooking-oil-refined-sunflower-groundnut",
+  "name": "Cooking oil, refined sunflower / groundnut",
+  "aliases": [
+    "tel"
+  ],
+  "category": "Oil",
+  "standardUnit": "l",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 175,
+        "max": 195,
+        "avg": 185,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 175,
+      "max": 195,
+      "avg": 185
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 17.5,
+    "max": 19.5,
+    "avg": 18.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 884,
+    "proteinG": 0,
+    "carbsG": 0,
+    "fatG": 100,
+    "fibreG": 0
+  },
+  "storage": "Room temperature in a cool, dark place, tightly closed; once a pouch is opened, pour it into a clean, dry bottle. Do not reuse deep-frying oil repeatedly.",
+  "substitutes": [
+    "Groundnut oil",
+    "Rice bran or soyabean oil",
+    "Ghee"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest"
+  },
+  "mergeNotes": []
+}

@@ -1,0 +1,504 @@
+{
+  "id": "003-paneer-butter-masala",
+  "number": 3,
+  "name": "Paneer Butter Masala",
+  "cuisine": "North Indian (Punjabi / Delhi dhaba-restaurant style)",
+  "dietType": "veg",
+  "mealType": [
+    "lunch",
+    "dinner"
+  ],
+  "difficulty": "Beginner",
+  "prepMin": 15,
+  "cookMin": 25,
+  "servings": 1,
+  "ingredients": [
+    {
+      "ingredientId": "paneer",
+      "name": "Paneer (cottage cheese)",
+      "quantity": 100,
+      "unit": "g",
+      "householdMeasure": "about 12–14 cubes of 2 cm"
+    },
+    {
+      "ingredientId": "tomato",
+      "name": "Tomato",
+      "quantity": 150,
+      "unit": "g",
+      "householdMeasure": "2 medium, ripe red"
+    },
+    {
+      "ingredientId": "onion",
+      "name": "Onion",
+      "quantity": 40,
+      "unit": "g",
+      "householdMeasure": "½ small"
+    },
+    {
+      "ingredientId": "cashew-nuts-whole",
+      "name": "Cashew nuts (kaju)",
+      "quantity": 10,
+      "unit": "g",
+      "householdMeasure": "7–8 whole cashews"
+    },
+    {
+      "ingredientId": "butter-salted",
+      "name": "Butter",
+      "quantity": 10,
+      "unit": "g",
+      "householdMeasure": "2 tsp"
+    },
+    {
+      "ingredientId": null,
+      "name": "Vegetable oil",
+      "quantity": 5,
+      "unit": "ml",
+      "householdMeasure": "1 tsp"
+    },
+    {
+      "ingredientId": "ginger-garlic-paste",
+      "name": "Ginger-garlic paste",
+      "quantity": 5,
+      "unit": "g",
+      "householdMeasure": "1 tsp"
+    },
+    {
+      "ingredientId": null,
+      "name": "Bay leaf (tej patta)",
+      "quantity": 1,
+      "unit": null,
+      "householdMeasure": "1 small leaf"
+    },
+    {
+      "ingredientId": "kashmiri-red-chilli-powder",
+      "name": "Kashmiri red chilli powder",
+      "quantity": 2,
+      "unit": "g",
+      "householdMeasure": "¾ tsp"
+    },
+    {
+      "ingredientId": null,
+      "name": "Coriander powder (dhania powder)",
+      "quantity": 1,
+      "unit": "g",
+      "householdMeasure": "½ tsp"
+    },
+    {
+      "ingredientId": "turmeric-powder",
+      "name": "Turmeric powder (haldi)",
+      "quantity": 0.3,
+      "unit": "g",
+      "householdMeasure": "a pinch"
+    },
+    {
+      "ingredientId": null,
+      "name": "Garam masala",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "¼ tsp"
+    },
+    {
+      "ingredientId": null,
+      "name": "Dried fenugreek leaves (kasuri methi)",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "½ tsp, crushed"
+    },
+    {
+      "ingredientId": null,
+      "name": "Sugar",
+      "quantity": 2,
+      "unit": "g",
+      "householdMeasure": "½ tsp"
+    },
+    {
+      "ingredientId": null,
+      "name": "Salt",
+      "quantity": 2,
+      "unit": "g",
+      "householdMeasure": "⅓ tsp (to taste)"
+    },
+    {
+      "ingredientId": "fresh-cream",
+      "name": "Fresh cream (malai/Amul fresh cream, ~25% fat)",
+      "quantity": 15,
+      "unit": "ml",
+      "householdMeasure": "1 tbsp"
+    },
+    {
+      "ingredientId": null,
+      "name": "Water",
+      "quantity": 120,
+      "unit": "ml",
+      "householdMeasure": "½ cup (for blending + simmering)"
+    },
+    {
+      "ingredientId": "coriander-leaves",
+      "name": "Coriander leaves (dhania), optional",
+      "quantity": 2,
+      "unit": "g",
+      "householdMeasure": "1 tsp chopped"
+    }
+  ],
+  "equipment": [
+    "Kadai or heavy-bottomed pan (about 20 cm)",
+    "Mixer-grinder with small chutney jar",
+    "Small bowl for soaking cashews (hot water from a kettle or a small pan)",
+    "Chopping board and knife",
+    "Spatula / wooden spoon",
+    "Measuring spoons (or use a regular teaspoon: 1 level tsp ≈ 5 ml)",
+    "Optional sieve, for a silky restaurant-smooth gravy"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "title": "Soak cashews",
+      "text": "Put 10 g (7–8) cashews in a small bowl and cover with 30 ml hot water.",
+      "timerSec": 900,
+      "tip": "hot water softens them faster than cold.",
+      "visualCue": "cashews look slightly swollen and softer",
+      "cameraCheck": "bowl of cashews submerged in water",
+      "videoShot": "hot water poured over cashews in a steel katori"
+    },
+    {
+      "n": 2,
+      "title": "Chop onion",
+      "text": "Roughly chop 40 g (½ small) onion.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "rough 2 cm pieces; size doesn't matter, it all gets blended",
+      "cameraCheck": "chopped onion on the board",
+      "videoShot": "knife cutting onion into chunks"
+    },
+    {
+      "n": 3,
+      "title": "Chop tomatoes",
+      "text": "Roughly chop 150 g (2 medium) tomatoes, removing the hard stem point.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "juicy chunks",
+      "cameraCheck": "chopped tomatoes on the board",
+      "videoShot": "tomatoes quartered and chopped"
+    },
+    {
+      "n": 4,
+      "title": "Cube paneer",
+      "text": "Cut 100 g paneer into 2 cm cubes.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "even cubes that hold their shape",
+      "cameraCheck": "paneer cubes on a plate",
+      "videoShot": "paneer block sliced into strips, then cubes"
+    },
+    {
+      "n": 5,
+      "title": "Soften paneer",
+      "text": "Cover the cubes with warm (not boiling) water and leave them.",
+      "timerSec": 600,
+      "tip": "this keeps store-bought paneer soft and stops it going rubbery in the curry.",
+      "visualCue": "cubes submerged",
+      "cameraCheck": "bowl of paneer in water",
+      "videoShot": "warm water poured over paneer"
+    },
+    {
+      "n": 6,
+      "title": "Measure spices",
+      "text": "On a small plate, put ¾ tsp Kashmiri chilli powder, ½ tsp coriander powder, a pinch of turmeric, ¼ tsp garam masala, ½ tsp sugar, ⅓ tsp salt and ½ tsp kasuri methi, each in its own little heap.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "separate heaps of spice",
+      "cameraCheck": "spice plate",
+      "videoShot": "spoon dropping each spice onto the plate"
+    },
+    {
+      "n": 7,
+      "title": "Heat oil",
+      "text": "Put the kadai on medium heat and add 1 tsp (5 ml) oil.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "oil shimmers and flows freely when you tilt the pan",
+      "cameraCheck": "the pan with oil",
+      "videoShot": "oil swirling in the kadai"
+    },
+    {
+      "n": 8,
+      "title": "Sauté onion",
+      "text": "Add the chopped onion and stir.",
+      "timerSec": 180,
+      "tip": null,
+      "visualCue": "onion turns soft and translucent at the edges, not brown",
+      "cameraCheck": "the pan",
+      "videoShot": "onion sizzling as it's stirred"
+    },
+    {
+      "n": 9,
+      "title": "Add ginger-garlic paste",
+      "text": "Add 1 tsp ginger-garlic paste and stir.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "raw garlic smell fades",
+      "cameraCheck": "the pan",
+      "videoShot": "paste stirred into onions"
+    },
+    {
+      "n": 10,
+      "title": "Add tomatoes and drained cashews",
+      "text": "Add the chopped tomatoes and the cashews (drain off the soaking water, but save it).",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "pan full of tomato chunks with cashews mixed through",
+      "cameraCheck": "the pan",
+      "videoShot": "tomatoes and cashews tipped into the pan"
+    },
+    {
+      "n": 11,
+      "title": "Cook tomatoes down",
+      "text": "Cover and cook on medium-low, stirring every minute or two.",
+      "timerSec": 360,
+      "tip": null,
+      "visualCue": "tomatoes are completely mushy and break when pressed with the spatula",
+      "cameraCheck": "the pan, pressing a tomato with the spatula",
+      "videoShot": "spatula squashing soft tomato"
+    },
+    {
+      "n": 12,
+      "title": "Cool the mixture",
+      "text": "Switch off the heat and tip the mixture onto a plate to cool.",
+      "timerSec": 300,
+      "tip": "never blend piping-hot food in a closed jar. Steam can blow the lid off.",
+      "visualCue": "warm, no longer steaming hard",
+      "cameraCheck": "the plate of cooked tomato mixture",
+      "videoShot": "mixture spread on a steel plate"
+    },
+    {
+      "n": 13,
+      "title": "Blend",
+      "text": "Put the mixture in the small mixer jar with the saved cashew water and blend until completely smooth.",
+      "timerSec": 60,
+      "tip": "for a restaurant-silky gravy, push it through a sieve (optional).",
+      "visualCue": "smooth, bright orange-red purée with no flecks of cashew",
+      "cameraCheck": "inside of the jar",
+      "videoShot": "purée pouring off a spoon in a smooth ribbon"
+    },
+    {
+      "n": 14,
+      "title": "Melt butter",
+      "text": "Wipe out the kadai, put it on low heat and add 2 tsp (10 g) butter.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "butter melted and foaming gently, not brown",
+      "cameraCheck": "the pan with melted butter",
+      "videoShot": "butter melting and foaming"
+    },
+    {
+      "n": 15,
+      "title": "Temper bay leaf",
+      "text": "Add 1 bay leaf to the butter.",
+      "timerSec": 15,
+      "tip": null,
+      "visualCue": "leaf sizzles and smells fragrant",
+      "cameraCheck": "the pan",
+      "videoShot": "bay leaf sizzling in butter"
+    },
+    {
+      "n": 16,
+      "title": "Add spice powders",
+      "text": "Add the chilli powder, coriander powder and turmeric and stir.",
+      "timerSec": 15,
+      "tip": "keep the heat low. Spices burn in seconds.",
+      "visualCue": "butter turns deep red; smells toasty, not burnt",
+      "cameraCheck": "the pan",
+      "videoShot": "red butter swirled with the spatula"
+    },
+    {
+      "n": 17,
+      "title": "Add purée",
+      "text": "Pour in the blended purée straight away and stir.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "sauce bubbles gently and spits a little",
+      "cameraCheck": "the pan",
+      "videoShot": "purée poured into the red butter"
+    },
+    {
+      "n": 18,
+      "title": "Cook the gravy",
+      "text": "Cook on medium-low, stirring often, partly covered (it splutters).",
+      "timerSec": 300,
+      "tip": null,
+      "visualCue": "gravy darkens a shade, thickens, and tiny drops of butter appear at the edges",
+      "cameraCheck": "the pan edge showing the butter separating",
+      "videoShot": "thick gravy bubbling with shiny edges"
+    },
+    {
+      "n": 19,
+      "title": "Season",
+      "text": "Add the salt and sugar and stir.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "dissolved; taste: tangy, mildly sweet, mildly spicy",
+      "cameraCheck": "the pan",
+      "videoShot": "salt and sugar sprinkled in"
+    },
+    {
+      "n": 20,
+      "title": "Loosen with water",
+      "text": "Add 60–80 ml (about ⅓ cup) water and stir. Bring to a gentle simmer.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "gravy coats the back of a spoon and drips slowly",
+      "cameraCheck": "the back of the spoon coated in gravy",
+      "videoShot": "finger line drawn through gravy on a spoon"
+    },
+    {
+      "n": 21,
+      "title": "Add paneer",
+      "text": "Drain the paneer and add the cubes. Stir gently.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "every cube coated in orange gravy",
+      "cameraCheck": "the pan",
+      "videoShot": "paneer cubes folded into gravy"
+    },
+    {
+      "n": 22,
+      "title": "Simmer paneer",
+      "text": "Simmer on low.",
+      "timerSec": 180,
+      "tip": "don't simmer longer than about 5 minutes, or the paneer toughens.",
+      "visualCue": "paneer is warmed through and soft; gravy bubbles lazily",
+      "cameraCheck": "the pan",
+      "videoShot": "slow bubbles around paneer cubes"
+    },
+    {
+      "n": 23,
+      "title": "Add kasuri methi",
+      "text": "Crush ½ tsp kasuri methi between your palms over the pan and stir.",
+      "timerSec": 15,
+      "tip": null,
+      "visualCue": "aroma becomes noticeably \"restaurant-like\"",
+      "cameraCheck": "the pan",
+      "videoShot": "kasuri methi crushed between palms"
+    },
+    {
+      "n": 24,
+      "title": "Add garam masala",
+      "text": "Sprinkle in ¼ tsp garam masala and stir.",
+      "timerSec": 15,
+      "tip": null,
+      "visualCue": "evenly mixed",
+      "cameraCheck": "the pan",
+      "videoShot": "garam masala sprinkled over"
+    },
+    {
+      "n": 25,
+      "title": "Finish with cream",
+      "text": "Turn the heat off. Swirl in 1 tbsp (15 ml) fresh cream.",
+      "timerSec": 30,
+      "tip": "adding cream with the heat off stops it splitting.",
+      "visualCue": "gravy turns a paler, glossy orange",
+      "cameraCheck": "the pan",
+      "videoShot": "white cream swirled through orange gravy"
+    },
+    {
+      "n": 26,
+      "title": "Remove bay leaf and plate",
+      "text": "Take out the bay leaf, spoon the curry into a bowl and top with chopped coriander (optional).",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "glossy orange curry with visible paneer cubes",
+      "cameraCheck": "the finished bowl",
+      "videoShot": "slow pan across the finished bowl"
+    }
+  ],
+  "nutritionPerServing": {
+    "kcal": 540,
+    "proteinG": 23,
+    "carbsG": 18,
+    "fatG": 43,
+    "fibreG": 4
+  },
+  "microNutrientsEstimate": null,
+  "asOrdered": null,
+  "orderPrice": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 280,
+        "max": 380,
+        "avg": 330,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 280,
+      "max": 380,
+      "avg": 330
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "healthiness": {
+    "score": 6,
+    "restaurantScore": 4,
+    "reasons": [
+      "Paneer gives good protein (~23 g) and the tomato base brings lycopene and some fibre. But fat is high (~43 g, much of it saturated from paneer, butter and cream), and the dish has almost no vegetables beyond tomato and onion. This version uses 10 g butter + 5 ml oil + 1 tbsp cream. Restaurant versions commonly use 2–4 times that butter and cream, plus more sugar and salt, often with a heavy butter naan on the side."
+    ]
+  },
+  "researchRating": {
+    "score": 4.6,
+    "basis": "one of India's most-ordered and most-cooked paneer dishes. Recipes are rated very highly by home cooks, though a recurring complaint is that versions can taste too sweet or heavy."
+  },
+  "storage": "Fridge-safe in an airtight container for up to 2 days. Freezer: up to 1 month (est.), though the paneer turns slightly spongy and the cream may separate a little. Reheating: gently on the stove on low with 2–3 tbsp water, stirring, until just hot. In the microwave, use 1-minute bursts and stir in between. Don't boil hard.",
+  "leftoverRemix": "Paneer makhani kathi roll. Simmer the leftover curry until thick, mash a few paneer cubes, then spread on a warm roti with sliced onion, a squeeze of lemon and green chutney, and roll it up for a quick lunch.",
+  "burnOff": "about 7.7 km of running (at ~70 kcal/km), or about 11 km of brisk walking (at ~50 kcal/km, est.).",
+  "sources": [
+    "Hebbar's Kitchen, Paneer Butter Masala (Restaurant Style): https://hebbarskitchen.com/paneer-butter-masala-recipe/",
+    "Swasthi's (Indian Healthy Recipes), Paneer Butter Masala Restaurant Style: https://www.indianhealthyrecipes.com/paneer-butter-masala-restaurant-style/",
+    "Veg Recipes of India, Paneer Butter Masala: https://www.vegrecipesofindia.com/paneer-butter-masala/",
+    "Sanjeev Kapoor, Paneer Butter Masala: https://www.sanjeevkapoor.com/Recipe/Paneer-Butter-Masala.html",
+    "Spice Up The Curry, Paneer Butter Masala: https://www.spiceupthecurry.com/paneer-butter-masala-recipe/",
+    "Whisk Affair, Restaurant Style Paneer Butter Masala: https://www.whiskaffair.com/wprm_print/restaurant-style-paneer-butter-masala-recipe-paneer-makhani",
+    "Yummy Tummy Aarthi, Paneer Butter Masala Restaurant Style: https://www.yummytummyaarthi.com/wprm_print/paneer-butter-masala-recipe-restaurant-style",
+    "Ranveer Brar, Restaurant style Paneer Butter Masala: https://ranveerbrar.com/?p=9034",
+    "Cook with Manali, Paneer Butter Masala step by step: https://www.cookwithmanali.com/wprm_print/how-to-make-paneer-butter-masala-step-by-step",
+    "Cooking and Me: https://www.cookingandme.com/paneer-butter-masala-restaurant-style/comment-page-36/",
+    "The Endless Meal: https://www.theendlessmeal.com/paneer-butter-masala",
+    "HelloFresh: https://www.hellofresh.ca/recipes/paneer-butter-masala-69de9d3f4af8f3547a6451d5",
+    "Swiggy, Best Paneer Butter Masala Restaurants in Mumbai (dish page, via search snippet): https://www.swiggy.com/city/mumbai/paneer-butter-masala-dish-restaurants",
+    "Zomato, Banarasi Pure Veg Restaurant, Chembur (via search snippet): https://www.zomato.com/mumbai/banarasi-pure-veg-restaurant-chembur/order",
+    "IFCT 2017, Indian Food Composition Tables (ICMR-NIN): https://www.nin.res.in/ebooks/IFCT2017.pdf",
+    "USDA FoodData Central: https://fdc.nal.usda.gov/"
+  ],
+  "allergens": [
+    "treeNut",
+    "milk"
+  ],
+  "dietClaims": [],
+  "fasting": null,
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Dishes_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "nutritionPerServing": "stable (single)",
+    "orderPrice": "price engine (single)",
+    "ingredients": "newest",
+    "steps": "newest",
+    "healthiness": "newest",
+    "researchRating": "newest",
+    "sources": "union"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 280.0–380.0 was wider than 30% of avg 330.0; narrowed to ±15%."
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "chicken-curry-cut-bone-in-skinless",
+  "name": "Chicken, curry cut, bone-in, skinless",
+  "aliases": [
+    "murgh"
+  ],
+  "category": "Meat/seafood",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 275,
+        "max": 340,
+        "avg": 305,
+        "confidence": "High",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 275,
+      "max": 340,
+      "avg": 305
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 27.5,
+    "max": 34,
+    "avg": 30.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 120,
+    "proteinG": 20,
+    "carbsG": 0,
+    "fatG": 4,
+    "fibreG": 0
+  },
+  "storage": "1–2 days, on the lowest shelf in a sealed container.",
+  "substitutes": [
+    "Chicken thigh/leg pieces (bone-in)",
+    "Boneless chicken",
+    "Mutton curry cut"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest"
+  },
+  "mergeNotes": []
+}

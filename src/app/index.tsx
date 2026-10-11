@@ -1,6 +1,6 @@
-import { Redirect } from 'expo-router';
+import { Link, Redirect } from 'expo-router';
 import { useEffect } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, {
   FadeIn,
   FadeInDown,
@@ -87,7 +87,15 @@ export default function Welcome() {
               variant={googleReady ? 'glass' : 'primary'}
               onPress={continueAsGuest}
             />
-            <Text style={styles.fine}>Free to start · No ads · Sign in to keep your data on every device</Text>
+            <View>
+              <Text style={styles.fine}>Free to start · No ads · Sign in to keep your data on every device</Text>
+              {/* Its own pressable so the tap area is at least 44 pt high, though the text is small. */}
+              <Link href="/your-data" asChild>
+                <Pressable accessibilityRole="link" accessibilityLabel="Your data: what we save and where" hitSlop={4} style={styles.linkHit}>
+                  <Text style={styles.link}>Your data</Text>
+                </Pressable>
+              </Link>
+            </View>
           </Animated.View>
         </View>
       </SafeAreaView>
@@ -114,4 +122,6 @@ const styles = StyleSheet.create({
   word: { fontSize: 34, lineHeight: 44, fontWeight: '900', letterSpacing: -0.8 },
   pitch: { color: 'rgba(255,255,255,0.85)', fontSize: 16, lineHeight: 23, marginTop: 14 },
   fine: { ...type.small, color: 'rgba(255,255,255,0.6)', textAlign: 'center', marginTop: 4 },
+  linkHit: { alignSelf: 'center', minHeight: 44, minWidth: 88, paddingHorizontal: 12, alignItems: 'center', justifyContent: 'center', marginTop: -6, marginBottom: -12 },
+  link: { ...type.small, color: 'rgba(255,255,255,0.85)', fontWeight: '700', textDecorationLine: 'underline' },
 });

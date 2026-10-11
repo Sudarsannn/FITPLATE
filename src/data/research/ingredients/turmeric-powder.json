@@ -1,0 +1,62 @@
+{
+  "id": "turmeric-powder",
+  "name": "Turmeric powder",
+  "aliases": [
+    "haldi"
+  ],
+  "category": "Spice",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 280,
+        "max": 355,
+        "avg": 325,
+        "confidence": "High",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 280,
+      "max": 355,
+      "avg": 325
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 28,
+    "max": 35.5,
+    "avg": 32.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 312,
+    "proteinG": 9.7,
+    "carbsG": 67,
+    "fatG": 3.3,
+    "fibreG": 22.7
+  },
+  "storage": "Room temperature, in an airtight jar, away from light, heat and steam from the stove. Keep a dry spoon. It lasts about 6–12 months once opened.",
+  "substitutes": [],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest"
+  },
+  "mergeNotes": []
+}

@@ -1,0 +1,67 @@
+{
+  "id": "onion",
+  "name": "Onion",
+  "aliases": [
+    "kanda",
+    "pyaz"
+  ],
+  "category": "Vegetable",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 45,
+        "max": 60,
+        "avg": 55,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 45,
+      "max": 60,
+      "avg": 55
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": true
+  },
+  "per100Estimate": {
+    "min": 4.5,
+    "max": 6,
+    "avg": 5.5
+  },
+  "seasonal": true,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 40,
+    "proteinG": 1.1,
+    "carbsG": 9.3,
+    "fatG": 0.1,
+    "fibreG": 1.7
+  },
+  "storage": "Whole: room temperature in a basket or mesh bag, away from potatoes and sunlight, for 3–4 weeks. Cut: airtight box in the fridge for 5–7 days. Chopped onion can be frozen for about 3 months (for cooking only).",
+  "substitutes": [
+    "Shallots (small/sambar onion)",
+    "Spring onion (white part)",
+    "Ready fried onions (birista)"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest"
+  },
+  "mergeNotes": []
+}

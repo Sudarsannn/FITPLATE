@@ -1,0 +1,66 @@
+{
+  "id": "tomato",
+  "name": "Tomato",
+  "aliases": [
+    "tamatar"
+  ],
+  "category": "Vegetable",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 35,
+        "max": 45,
+        "avg": 40,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 35,
+      "max": 45,
+      "avg": 40
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": true
+  },
+  "per100Estimate": {
+    "min": 3.5,
+    "max": 4.5,
+    "avg": 4
+  },
+  "seasonal": true,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 18,
+    "proteinG": 0.9,
+    "carbsG": 3.9,
+    "fatG": 0.2,
+    "fibreG": 1.2
+  },
+  "storage": "Unripe: room temperature, stem side down, out of the sun, until red. Ripe: fridge for 5–7 days (bring to room temperature before using). Purée: fridge for 3 days; freezer in ice-cube trays for 2–3 months.",
+  "substitutes": [
+    "Tomato purée (packaged)",
+    "Canned chopped tomatoes",
+    "A little amchur or tamarind"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest"
+  },
+  "mergeNotes": []
+}

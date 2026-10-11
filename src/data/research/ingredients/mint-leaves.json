@@ -1,0 +1,69 @@
+{
+  "id": "mint-leaves",
+  "name": "Mint leaves",
+  "aliases": [
+    "pudina"
+  ],
+  "category": "Vegetable (fresh herb)",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 105,
+        "max": 150,
+        "avg": 125,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 105,
+      "max": 145,
+      "avg": 125
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 10.5,
+    "max": 14.5,
+    "avg": 12.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 44,
+    "proteinG": 3.3,
+    "carbsG": 8.4,
+    "fatG": 0.7,
+    "fibreG": 6.8
+  },
+  "storage": "pick leaves off, wrap unwashed in a dry paper towel in a box — 5–7 days; or stems in water, loosely covered — about a week.",
+  "substitutes": [
+    "Dried mint (pudina powder/leaves)",
+    "Coriander leaves",
+    "Basil (tulsi)"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 105.0–150.0 was wider than 30% of avg 125.0; narrowed to ±15%."
+  ]
+}

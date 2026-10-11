@@ -1,0 +1,66 @@
+{
+  "id": "ghee-cow",
+  "name": "Ghee, cow",
+  "aliases": [
+    "desi ghee"
+  ],
+  "category": "Dairy",
+  "standardUnit": "l",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 560,
+        "max": 705,
+        "avg": 625,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 560,
+      "max": 705,
+      "avg": 625
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 56,
+    "max": 70.5,
+    "avg": 62.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 900,
+    "proteinG": 0,
+    "carbsG": 0,
+    "fatG": null,
+    "fibreG": 0
+  },
+  "storage": "Room temperature in an airtight jar, away from heat and light; always use a dry spoon (moisture spoils it). Fridge extends life to 6+ months.",
+  "substitutes": [
+    "Butter",
+    "Neutral cooking oil",
+    "Homemade ghee from butter or malai"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest"
+  },
+  "mergeNotes": []
+}

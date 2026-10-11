@@ -1,0 +1,66 @@
+{
+  "id": "chana-dal",
+  "name": "Chana dal",
+  "aliases": [
+    "split Bengal gram"
+  ],
+  "category": "Pulse",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 100,
+        "max": 120,
+        "avg": 110,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 100,
+      "max": 120,
+      "avg": 110
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 10,
+    "max": 12,
+    "avg": 11
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 360,
+    "proteinG": 21,
+    "carbsG": 56,
+    "fatG": 5,
+    "fibreG": 15
+  },
+  "storage": "Store it at room temperature in an airtight jar. Use it within 6 months of opening.",
+  "substitutes": [
+    "Urad dal (split white)",
+    "Roasted peanuts or cashew bits",
+    "Leave it out"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest"
+  },
+  "mergeNotes": []
+}

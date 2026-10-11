@@ -1,0 +1,67 @@
+{
+  "id": "toor-dal",
+  "name": "Toor dal",
+  "aliases": [
+    "arhar dal",
+    "split pigeon peas"
+  ],
+  "category": "Pulse",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 115,
+        "max": 150,
+        "avg": 130,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 115,
+      "max": 150,
+      "avg": 130
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 11.5,
+    "max": 15,
+    "avg": 13
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 335,
+    "proteinG": 22,
+    "carbsG": 55,
+    "fatG": 1.5,
+    "fibreG": 9
+  },
+  "storage": "Store it at room temperature in an airtight jar. Use it within 6 months of opening. A few dried neem leaves or dried red chillies in the jar help keep weevils away.",
+  "substitutes": [
+    "Masoor dal (red lentil)",
+    "Moong dal (yellow)",
+    "Mix of toor + masoor"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest"
+  },
+  "mergeNotes": []
+}

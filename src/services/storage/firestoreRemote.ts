@@ -4,6 +4,7 @@ import {
   doc,
   getDoc,
   getDocs,
+  getDocsFromServer,
   initializeFirestore,
   memoryLocalCache,
   persistentLocalCache,
@@ -40,8 +41,10 @@ export function getDb(): Firestore | null {
 
 export function createFirestoreAdapter(firestore: Firestore): RemoteAdapter {
   return {
-    async getCollection(path) {
-      const snap = await getDocs(collection(firestore, path));
+    async getCollection(path, opts) {
+      const ref = collection(firestore, path);
+      // From the server only when asked: offline, getDocs would quietly answer from the cache.
+      const snap = await (opts?.fromServer ? getDocsFromServer(ref) : getDocs(ref));
       return snap.docs.map((d) => d.data() as BaseDoc);
     },
     async getDoc(path) {
@@ -52,6 +55,13 @@ export function createFirestoreAdapter(firestore: Firestore): RemoteAdapter {
       for (let i = 0; i < writes.length; i += MAX_BATCH) {
         const batch = writeBatch(firestore);
         for (const w of writes.slice(i, i + MAX_BATCH)) batch.set(doc(firestore, w.path), w.data);
+        await batch.commit();
+      }
+    },
+    async deleteMany(paths) {
+      for (let i = 0; i < paths.length; i += MAX_BATCH) {
+        const batch = writeBatch(firestore);
+        for (const p of paths.slice(i, i + MAX_BATCH)) batch.delete(doc(firestore, p));
         await batch.commit();
       }
     },

@@ -2,10 +2,12 @@ import type { BaseDoc, DateKey, Doc } from '../models/common';
 import type { Favourite, MealLog, MealPlanDay, SavingEntry, WaterLog, WorkoutLog } from '../models/logs';
 import { DEFAULT_PROFILE, type UserProfile } from '../models/user';
 import type { DayLog, Profile, Slot } from '../lib/store';
+import { deleteAllUserData } from './storage/deleteUser';
 import { createLocalDocStore, ownerPrefix } from './storage/docStore';
 import { COLLECTIONS, copyGuestToAccount, createRepositories, fromLegacyState, GUEST_OWNER, LEGACY_KEY, PROFILE_ID, SCHEMAS, type LegacyState, type Repositories, type UserData } from './storage';
 import type { LegacyDocs } from './storage/legacy';
 import type { KeyValueStore } from './storage/kv';
+import type { RemoteAdapter } from './storage/remote';
 import { makeId } from './storage/repository';
 import { createStorageService } from './storage/storageService';
 
@@ -208,6 +210,43 @@ export async function signOutDevice(data: UserData): Promise<number> {
   const waiting = await data.pending();
   if (waiting === 0) await data.clearDevice();
   return waiting;
+}
+
+const DELETE_TIMEOUT_MS = 20_000;
+
+function withTimeout<T>(p: Promise<T>, ms: number): Promise<T> {
+  let timer: ReturnType<typeof setTimeout> | undefined;
+  const timeout = new Promise<never>((_, reject) => {
+    timer = setTimeout(() => reject(new Error('unavailable: the cloud did not answer in time')), ms);
+  });
+  return Promise.race([p, timeout]).finally(() => clearTimeout(timer));
+}
+
+/**
+ * "Delete my data" (signed in, cloud on): hard-deletes everything under
+ * `users/{uid}` in Firestore, then forgets this account on the device (its
+ * documents, its outbox so nothing re-uploads, and the "bring your data"
+ * answer). Waiting changes are sent first so no debounced write can land
+ * after the delete. If the cloud can't be reached this throws before
+ * anything on the device changes. Signing out is left to the caller.
+ */
+export async function deleteMyData(
+  data: UserData,
+  remote: RemoteAdapter,
+  uid: string,
+  kv: KeyValueStore,
+  opts: { timeoutMs?: number } = {},
+): Promise<number> {
+  if (!data.cloud || !uid) return 0;
+  // Firestore writes wait silently while offline, so give up after a while instead of spinning forever.
+  const timeoutMs = opts.timeoutMs ?? DELETE_TIMEOUT_MS;
+  // Sends the outbox and cancels the debounce timer. A failed send is retried by
+  // the next flush; if the cloud is unreachable, the delete below throws too.
+  await withTimeout(data.flush(), timeoutMs);
+  const deleted = await withTimeout(deleteAllUserData(remote, uid), timeoutMs);
+  await data.clearDevice();
+  await kv.removeItem(guestCopyAskedKey(uid));
+  return deleted;
 }
 
 /** Where this user's data lives, in one plain line. */

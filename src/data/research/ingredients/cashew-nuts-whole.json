@@ -1,0 +1,66 @@
+{
+  "id": "cashew-nuts-whole",
+  "name": "Cashew nuts, whole",
+  "aliases": [
+    "kaju"
+  ],
+  "category": "Nut",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 1030,
+        "max": 1180,
+        "avg": 1100,
+        "confidence": "High",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 1030,
+      "max": 1180,
+      "avg": 1100
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 103,
+    "max": 118,
+    "avg": 110
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 553,
+    "proteinG": 18,
+    "carbsG": 30,
+    "fatG": 44,
+    "fibreG": 3.3
+  },
+  "storage": "Store them in an airtight container in a cool, dark place for 2–3 months. They keep about 6 months in the fridge and up to a year in the freezer.",
+  "substitutes": [
+    "Cashew pieces/splits (kaju tukda)",
+    "Melon seeds (magaz)",
+    "Almonds (blanched)"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest"
+  },
+  "mergeNotes": []
+}

@@ -1,0 +1,70 @@
+{
+  "id": "urad-dal-split-skinned",
+  "name": "Urad dal, split skinned",
+  "aliases": [
+    "dhuli urad dal",
+    "white urad dal"
+  ],
+  "category": "Pulse",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 140,
+        "max": 190,
+        "avg": 165,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 140,
+      "max": 190,
+      "avg": 165
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 14,
+    "max": 19,
+    "avg": 16.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 340,
+    "proteinG": 23,
+    "carbsG": 52,
+    "fatG": 1.6,
+    "fibreG": 12
+  },
+  "storage": "Store it in an airtight container at room temperature. In humid Mumbai months, keep it in the fridge. Use it within 6 months of opening.",
+  "substitutes": [
+    "Whole skinned urad (gota)",
+    "For tempering only",
+    "For batter"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 140.0–190.0 was wider than 30% of avg 165.0; narrowed to ±15%."
+  ]
+}

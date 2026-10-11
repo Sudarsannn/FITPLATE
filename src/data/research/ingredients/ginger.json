@@ -1,0 +1,69 @@
+{
+  "id": "ginger",
+  "name": "Ginger",
+  "aliases": [
+    "adrak"
+  ],
+  "category": "Vegetable (rhizome/spice)",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 45,
+        "max": 120,
+        "avg": 80,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 68,
+      "max": 92,
+      "avg": 80
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 6.8,
+    "max": 9.2,
+    "avg": 8
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 80,
+    "proteinG": 1.8,
+    "carbsG": 17.8,
+    "fatG": 0.8,
+    "fibreG": 2
+  },
+  "storage": "Unpeeled, in a paper bag or a zip bag with the air pressed out, in the fridge vegetable drawer: 2–3 weeks. Freezer: whole or grated, 3–6 months. It grates easily straight from frozen.",
+  "substitutes": [
+    "Ginger-garlic paste (jar)",
+    "Dried ginger powder (saunth)",
+    "Leave it out"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 45.0–120.0 was wider than 30% of avg 80.0; narrowed to ±15%."
+  ]
+}

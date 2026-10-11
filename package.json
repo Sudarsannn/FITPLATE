@@ -48,7 +48,8 @@
     "web": "expo start --web",
     "typecheck": "tsc --noEmit",
     "lint": "expo lint",
-    "test": "jest"
+    "test": "jest",
+    "research:sync": "node scripts/research/run.js"
   },
   "private": true
 }

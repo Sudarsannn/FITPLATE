@@ -1,0 +1,67 @@
+{
+  "id": "flattened-rice-thick",
+  "name": "Flattened rice, thick",
+  "aliases": [
+    "poha",
+    "jada poha"
+  ],
+  "category": "Grain (processed)",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 86,
+        "max": 100,
+        "avg": 91,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 86,
+      "max": 100,
+      "avg": 91
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 8.6,
+    "max": 10,
+    "avg": 9.1
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 346,
+    "proteinG": 6.6,
+    "carbsG": 77,
+    "fatG": 1.2,
+    "fibreG": 2
+  },
+  "storage": "Keep it at room temperature in an airtight jar, away from moisture. Use it within 2–3 months of opening. In the monsoon, storing it in the fridge helps keep insects away.",
+  "substitutes": [
+    "Medium poha",
+    "Thin poha",
+    "Puffed rice (murmura)"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest"
+  },
+  "mergeNotes": []
+}

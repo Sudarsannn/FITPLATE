@@ -30,6 +30,30 @@ export type Macros = { kcal: number | null; proteinG: number | null; carbsG: num
 
 export type DishIngredient = { ingredientId: string | null; name: string; quantity: number | null; unit: string | null; householdMeasure: string | null };
 
+/** Review 2026-10-11 FIX 1: the ten allergen groups FitPlate tags. */
+export const ALLERGEN_IDS = ['peanut', 'treeNut', 'milk', 'egg', 'fish', 'shellfish', 'gluten', 'soy', 'sesame', 'mustard'] as const;
+export type AllergenId = (typeof ALLERGEN_IDS)[number];
+
+/** "Free-from" claims a dish file may make; the importer drops any its own ingredients contradict. */
+export type DietClaim = 'vegan' | 'glutenFree' | 'dairyFree';
+
+export type FastingStatus = 'yes' | 'no' | 'with-changes' | null;
+export type FastingLine = { status: FastingStatus; reason: string | null };
+/** SPEC-ADDENDA §7 (PROMPT_PATCH_02): null when the dish file predates the block. */
+export type FastingSuitability = { navratri: FastingLine; ekadashi: FastingLine; jain: FastingLine; ramadan: FastingLine };
+
+export type DishStep = {
+  n: number;
+  /** Bold lead-in of the step, e.g. "Rinse the poha". */
+  title: string | null;
+  text: string;
+  timerSec: number | null;
+  tip: string | null;
+  visualCue: string | null;
+  cameraCheck: string | null;
+  videoShot: string | null;
+};
+
 export type Dish = Provenance & {
   id: string;
   number: number;
@@ -43,7 +67,7 @@ export type Dish = Provenance & {
   servings: 1;
   ingredients: DishIngredient[];
   equipment: string[];
-  steps: { n: number; text: string; timerSec: number | null; tip: string | null }[];
+  steps: DishStep[];
   /** As-cooked recipe nutrition per serving. Never mixed with `asOrdered`. */
   nutritionPerServing: Macros;
   microNutrientsEstimate: { values: Record<string, number | null>; coveragePct: number; basis: string } | null;
@@ -55,14 +79,21 @@ export type Dish = Provenance & {
     platforms: string[];
   } | null;
   orderPrice: PriceEstimate | null;
-  /** "Healthiness score" (out of 10). One of the THREE separate scores. */
-  healthiness: { score: number | null; reasons: string[] } | null;
+  /** "Healthiness score" (out of 10) of the home-cooked recipe. One of the THREE separate scores. */
+  healthiness: { score: number | null; restaurantScore: number | null; reasons: string[] } | null;
   /** "Rating" from research. One of the THREE separate scores. */
   researchRating: { score: number | null; basis: string | null } | null;
   storage: string | null;
   leftoverRemix: string | null;
   burnOff: string | null;
   sources: string[];
+  /** Review FIX 1: derived from the ingredient list; empty means none detected, not "allergen-free". */
+  allergens: AllergenId[];
+  /** Claims kept after the allergen check. */
+  dietClaims: DietClaim[];
+  fasting: FastingSuitability | null;
+  /** Import validators' findings; listed under "needs review" in the DATA SYNC REPORT. */
+  needsReview: string[];
 };
 
 export type NutrientPer100 = {
@@ -96,6 +127,8 @@ export type Ingredient = Provenance & {
   seasonal: boolean;
   /** SPEC-ADDENDA §2 profile; null until a research file carries it. */
   nutritionPer100g: NutrientPer100 | null;
+  /** Older files' one-line macro estimate ("About N kcal | Protein …"), kept apart from the official profile. */
+  macrosPer100Estimate: Macros | null;
   storage: string | null;
   substitutes: string[];
 };

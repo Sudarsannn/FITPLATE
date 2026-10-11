@@ -1,0 +1,69 @@
+{
+  "id": "ginger-garlic-paste",
+  "name": "Ginger-garlic paste",
+  "aliases": [
+    "adrak-lehsun paste"
+  ],
+  "category": "Packaged",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 175,
+        "max": 245,
+        "avg": 215,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 185,
+      "max": 245,
+      "avg": 215
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 18.5,
+    "max": 24.5,
+    "avg": 21.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 90,
+    "proteinG": 3,
+    "carbsG": 17,
+    "fatG": 1.5,
+    "fibreG": 2
+  },
+  "storage": "Unopened: cool, dry cupboard. After opening: fridge, tightly sealed, use a clean dry spoon — 1–3 months. Freeze in small portions for longer storage.",
+  "substitutes": [
+    "Fresh home-made paste",
+    "Fresh grated ginger + crushed garlic",
+    "Separate ginger and garlic pastes"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 175.0–245.0 was wider than 30% of avg 215.0; narrowed to ±15%."
+  ]
+}

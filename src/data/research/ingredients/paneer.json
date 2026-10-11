@@ -1,0 +1,66 @@
+{
+  "id": "paneer",
+  "name": "Paneer",
+  "aliases": [
+    "cottage cheese"
+  ],
+  "category": "Dairy",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 435,
+        "max": 520,
+        "avg": 470,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 435,
+      "max": 520,
+      "avg": 470
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 43.5,
+    "max": 52,
+    "avg": 47
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 290,
+    "proteinG": 18,
+    "carbsG": 2,
+    "fatG": 23,
+    "fibreG": 0
+  },
+  "storage": "keep sealed; once opened, store submerged in water in a box, changing water daily — 2–3 days.",
+  "substitutes": [
+    "Firm tofu",
+    "Low-fat paneer (e.g. Amul or Milky Mist light)",
+    "Mushrooms or boiled chickpeas"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest"
+  },
+  "mergeNotes": []
+}

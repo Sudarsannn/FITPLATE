@@ -1,0 +1,67 @@
+{
+  "id": "peanuts-raw",
+  "name": "Peanuts, raw",
+  "aliases": [
+    "moongphali",
+    "shengdana"
+  ],
+  "category": "Nut / oilseed",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 180,
+        "max": 210,
+        "avg": 200,
+        "confidence": "High",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 180,
+      "max": 210,
+      "avg": 200
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 18,
+    "max": 21,
+    "avg": 20
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 567,
+    "proteinG": 26,
+    "carbsG": 16,
+    "fatG": 49,
+    "fibreG": 8.5
+  },
+  "storage": "Store them in an airtight jar in a cool, dark place for 1–2 months. They keep 4–6 months in the fridge and up to a year in the freezer, because the high oil content goes rancid in heat.",
+  "substitutes": [
+    "Roasted peanuts",
+    "Cashew pieces",
+    "Leave them out"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest"
+  },
+  "mergeNotes": []
+}

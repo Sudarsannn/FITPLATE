@@ -1,0 +1,65 @@
+{
+  "id": "kashmiri-red-chilli-powder",
+  "name": "Kashmiri red chilli powder",
+  "aliases": [
+    "Kashmiri lal mirch"
+  ],
+  "category": "Spice",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 920,
+        "max": 1190,
+        "avg": 1055,
+        "confidence": "High",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 920,
+      "max": 1190,
+      "avg": 1055
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 92,
+    "max": 119,
+    "avg": 105.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 290,
+    "proteinG": 13,
+    "carbsG": 50,
+    "fatG": 14,
+    "fibreG": 33
+  },
+  "storage": "Airtight, opaque jar at room temperature, away from light and heat. Keeping it in the fridge preserves the colour longer. It lasts about 6 months open.",
+  "substitutes": [
+    "Paprika (sweet, not smoked), 1",
+    "Deggi mirch, 1"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest"
+  },
+  "mergeNotes": []
+}

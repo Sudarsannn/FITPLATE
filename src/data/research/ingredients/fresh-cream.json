@@ -1,0 +1,66 @@
+{
+  "id": "fresh-cream",
+  "name": "Fresh cream",
+  "aliases": [
+    "malai"
+  ],
+  "category": "Dairy",
+  "standardUnit": "l",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 220,
+        "max": 280,
+        "avg": 250,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 220,
+      "max": 280,
+      "avg": 250
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 22,
+    "max": 28,
+    "avg": 25
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 245,
+    "proteinG": 2,
+    "carbsG": 3.5,
+    "fatG": 25,
+    "fibreG": 0
+  },
+  "storage": "Unopened: cool, dry cupboard. Opened: transfer to a covered container and refrigerate, use within 2–3 days. Freezing works for cooking use (up to 1 month) but it may split.",
+  "substitutes": [
+    "Homemade malai (cream skimmed from boiled full-cream milk)",
+    "Cashew paste (soaked cashews blended)",
+    "Whisked thick curd added off the heat"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest"
+  },
+  "mergeNotes": []
+}
