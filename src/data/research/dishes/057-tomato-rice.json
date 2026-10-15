@@ -1,0 +1,691 @@
+{
+  "id": "057-tomato-rice",
+  "number": 57,
+  "name": "Tomato Rice",
+  "cuisine": "South Indian (Tamil thakkali sadam; close cousin of Karnataka tomato bath, a lunchbox and \"variety rice\" staple)",
+  "dietType": "veg",
+  "mealType": [
+    "lunch",
+    "dinner"
+  ],
+  "difficulty": "Beginner",
+  "prepMin": 15,
+  "cookMin": 25,
+  "servings": 1,
+  "ingredients": [
+    {
+      "ingredientId": null,
+      "name": "Raw rice (sona masoori; basmati also works)",
+      "quantity": 75,
+      "unit": "g",
+      "householdMeasure": "about ⅓ cup + 1 tbsp"
+    },
+    {
+      "ingredientId": null,
+      "name": "Water, for cooking",
+      "quantity": 150,
+      "unit": "ml",
+      "householdMeasure": "about ⅔ cup"
+    },
+    {
+      "ingredientId": "tomato",
+      "name": "Tomato",
+      "quantity": 130,
+      "unit": "g",
+      "householdMeasure": "2 small (or 1 large), finely chopped"
+    },
+    {
+      "ingredientId": "onion",
+      "name": "Onion",
+      "quantity": 50,
+      "unit": "g",
+      "householdMeasure": "½ medium, thinly sliced"
+    },
+    {
+      "ingredientId": null,
+      "name": "Groundnut oil (peanut oil)",
+      "quantity": 10,
+      "unit": "g",
+      "householdMeasure": "2 tsp"
+    },
+    {
+      "ingredientId": "mustard-seeds",
+      "name": "Mustard seeds (rai)",
+      "quantity": 1,
+      "unit": "g",
+      "householdMeasure": "¼ tsp"
+    },
+    {
+      "ingredientId": "chana-dal",
+      "name": "Split Bengal gram (chana dal)",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "1 tsp"
+    },
+    {
+      "ingredientId": null,
+      "name": "Split black gram, skinned (urad dal)",
+      "quantity": 2,
+      "unit": "g",
+      "householdMeasure": "½ tsp"
+    },
+    {
+      "ingredientId": "cinnamon-cassia",
+      "name": "Cinnamon (dalchini)",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "1 cm piece"
+    },
+    {
+      "ingredientId": "cloves",
+      "name": "Cloves (laung)",
+      "quantity": 0.2,
+      "unit": "g",
+      "householdMeasure": "2 cloves"
+    },
+    {
+      "ingredientId": "bay-leaf",
+      "name": "Bay leaf (tej patta)",
+      "quantity": 0.2,
+      "unit": "g",
+      "householdMeasure": "1 small leaf"
+    },
+    {
+      "ingredientId": "curry-leaves",
+      "name": "Curry leaves (kadi patta)",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "8–10 leaves"
+    },
+    {
+      "ingredientId": "green-chilli",
+      "name": "Green chilli",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "1, slit lengthwise"
+    },
+    {
+      "ingredientId": "ginger-garlic-paste",
+      "name": "Ginger-garlic paste",
+      "quantity": 5,
+      "unit": "g",
+      "householdMeasure": "1 tsp"
+    },
+    {
+      "ingredientId": "turmeric-powder",
+      "name": "Turmeric powder (haldi)",
+      "quantity": 0.3,
+      "unit": "g",
+      "householdMeasure": "a large pinch (⅛ tsp)"
+    },
+    {
+      "ingredientId": "kashmiri-red-chilli-powder",
+      "name": "Kashmiri red chilli powder",
+      "quantity": 1,
+      "unit": "g",
+      "householdMeasure": "½ tsp"
+    },
+    {
+      "ingredientId": "coriander-powder",
+      "name": "Coriander powder (dhania powder)",
+      "quantity": 1,
+      "unit": "g",
+      "householdMeasure": "½ tsp"
+    },
+    {
+      "ingredientId": "garam-masala",
+      "name": "Garam masala",
+      "quantity": 0.3,
+      "unit": "g",
+      "householdMeasure": "a pinch (⅛ tsp)"
+    },
+    {
+      "ingredientId": "salt",
+      "name": "Salt",
+      "quantity": 2,
+      "unit": "g",
+      "householdMeasure": "a level ⅓ tsp"
+    },
+    {
+      "ingredientId": "coriander-leaves",
+      "name": "Coriander leaves (hara dhania)",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "1 tbsp, chopped"
+    }
+  ],
+  "equipment": [
+    "Pressure cooker, 1.5–3 litre",
+    "Chopping board and knife",
+    "Bowl and strainer for washing and soaking the rice",
+    "Ladle or flat spatula (a fork for fluffing)",
+    "Measuring spoons and a measuring cup (a normal teacup and teaspoons are fine stand-ins)"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "title": "Wash the rice",
+      "text": "Put 75 g (about ⅓ cup + 1 tbsp) rice in a bowl, cover with water, swirl and drain. Repeat 2 more times.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "The last rinse water is only slightly cloudy.",
+      "cameraCheck": "The bowl with the last rinse water",
+      "videoShot": "Fingers swirling rice in cloudy water."
+    },
+    {
+      "n": 2,
+      "title": "Soak",
+      "text": "Cover with fresh water and leave for 10 min, then drain fully.",
+      "timerSec": 600,
+      "tip": "For basmati, soak 20 min. Soaking keeps the grains whole and separate.",
+      "visualCue": "The grains look whiter and slightly plumper.",
+      "cameraCheck": "The drained rice in the strainer",
+      "videoShot": "Water draining from the rice through a strainer."
+    },
+    {
+      "n": 3,
+      "title": "Slice the onion",
+      "text": "Thinly slice 50 g onion (½ medium).",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Thin half-moon slices.",
+      "cameraCheck": "The sliced onion on the board",
+      "videoShot": "Knife slicing onion into thin strips."
+    },
+    {
+      "n": 4,
+      "title": "Chop the tomatoes",
+      "text": "Finely chop 130 g tomatoes (2 small).",
+      "timerSec": 120,
+      "tip": "Ripe, deep-red tomatoes give the best colour. For a smoother, kid-friendly rice, purée them instead.",
+      "visualCue": "Small, juicy pieces with their juice on the board.",
+      "cameraCheck": "The chopped tomatoes",
+      "videoShot": "Knife dicing a red tomato."
+    },
+    {
+      "n": 5,
+      "title": "Prep the greens",
+      "text": "Slit 1 green chilli lengthwise, pick 8–10 curry leaves and chop 1 tbsp coriander leaves.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Three small heaps ready on the board.",
+      "cameraCheck": "The chilli, curry leaves and coriander",
+      "videoShot": "A green chilli being slit open."
+    },
+    {
+      "n": 6,
+      "title": "Heat the oil",
+      "text": "Put the open cooker on medium heat and add 2 tsp (10 g) groundnut oil.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "The oil shimmers and flows easily.",
+      "cameraCheck": "The hot oil in the cooker",
+      "videoShot": "Oil sliding across the cooker base."
+    },
+    {
+      "n": 7,
+      "title": "Add mustard seeds",
+      "text": "Add ¼ tsp mustard seeds.",
+      "timerSec": 20,
+      "tip": null,
+      "visualCue": "The seeds crackle and pop.",
+      "cameraCheck": "The popping seeds",
+      "videoShot": "Mustard seeds spluttering in oil."
+    },
+    {
+      "n": 8,
+      "title": "Add the dals",
+      "text": "Add 1 tsp chana dal and ½ tsp urad dal; stir.",
+      "timerSec": 30,
+      "tip": "Lower the heat if they brown too fast; burnt dals taste bitter.",
+      "visualCue": "The dals turn light golden and smell nutty.",
+      "cameraCheck": "The golden dals in the oil",
+      "videoShot": "A spoon stirring yellow and white dals turning golden."
+    },
+    {
+      "n": 9,
+      "title": "Add whole spices",
+      "text": "Add the 1 cm cinnamon, 2 cloves and 1 bay leaf.",
+      "timerSec": 10,
+      "tip": null,
+      "visualCue": "A warm, sweet spice smell.",
+      "cameraCheck": "The whole spices in the oil",
+      "videoShot": "Cinnamon and cloves dropping into the oil."
+    },
+    {
+      "n": 10,
+      "title": "Add curry leaves and chilli",
+      "text": "Add the curry leaves and slit green chilli.",
+      "timerSec": 10,
+      "tip": "Stand back; wet curry leaves spit.",
+      "visualCue": "The leaves crackle and turn bright green.",
+      "cameraCheck": "The tempering in the cooker",
+      "videoShot": "Curry leaves sizzling."
+    },
+    {
+      "n": 11,
+      "title": "Sauté the onion",
+      "text": "Add the sliced onion and cook, stirring often.",
+      "timerSec": 180,
+      "tip": null,
+      "visualCue": "Soft, translucent, just turning light golden at the edges.",
+      "cameraCheck": "The onion in the cooker",
+      "videoShot": "A spatula turning golden onion slices."
+    },
+    {
+      "n": 12,
+      "title": "Add ginger-garlic paste",
+      "text": "Add 1 tsp ginger-garlic paste and stir.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "The raw garlic smell has gone.",
+      "cameraCheck": "The onion with the paste mixed in",
+      "videoShot": "Paste melting into the onions."
+    },
+    {
+      "n": 13,
+      "title": "Cook the tomatoes",
+      "text": "Add the chopped tomatoes and 2 g (a level ⅓ tsp) salt. Cover for 2 min, then uncover and mash with the spatula, cooking until fully broken down.",
+      "timerSec": 300,
+      "tip": "This is the key step. Undercooked tomatoes make the rice taste raw and sour.",
+      "visualCue": "A thick, mushy, jammy masala; tiny drops of oil appear at the edges.",
+      "cameraCheck": "The tomato masala in the cooker",
+      "videoShot": "The spatula pressing tomatoes into a pulp."
+    },
+    {
+      "n": 14,
+      "title": "Add the ground spices",
+      "text": "Add a large pinch turmeric, ½ tsp Kashmiri chilli powder, ½ tsp coriander powder and a pinch of garam masala. Stir on low heat.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "The masala turns deep red-orange and smells toasty.",
+      "cameraCheck": "The spiced masala",
+      "videoShot": "Red and yellow powders stirred into the tomato masala."
+    },
+    {
+      "n": 15,
+      "title": "Add the rice",
+      "text": "Add the drained rice and stir gently to coat it in the masala.",
+      "timerSec": 60,
+      "tip": "Stir gently so the soaked grains don't break.",
+      "visualCue": "Every grain is coated orange; no wet white grains.",
+      "cameraCheck": "The coated rice in the cooker",
+      "videoShot": "A spatula folding rice into the red masala."
+    },
+    {
+      "n": 16,
+      "title": "Add water",
+      "text": "Pour in 150 ml (about ⅔ cup) water, stir, scrape the bottom and taste the water for salt.",
+      "timerSec": 60,
+      "tip": "Basmati needs about 130 ml. For a softer, Tamil-mess style, use 180 ml.",
+      "visualCue": "The water stands about 1 cm above the rice; the bottom is clean; the water tastes slightly salty.",
+      "cameraCheck": "The open cooker with rice and water",
+      "videoShot": "Water pouring in and a spatula scraping the base."
+    },
+    {
+      "n": 17,
+      "title": "Add half the coriander and close",
+      "text": "Sprinkle in half the chopped coriander, close the lid and cook on medium heat for 2 whistles, then switch off.",
+      "timerSec": 360,
+      "tip": null,
+      "visualCue": "You have counted 2 whistles.",
+      "cameraCheck": "The closed cooker on the stove",
+      "videoShot": "Steam puffing out with a whistle."
+    },
+    {
+      "n": 18,
+      "title": "Let the pressure drop",
+      "text": "Leave the cooker closed until the pressure falls on its own.",
+      "timerSec": 600,
+      "tip": "Opening early makes the rice wet and mushy.",
+      "visualCue": "The weight lifts easily with no hiss.",
+      "cameraCheck": "The cooker with the lid off",
+      "videoShot": "The lid lifting off to show orange-red rice."
+    },
+    {
+      "n": 19,
+      "title": "Fluff",
+      "text": "Fluff gently with a fork and sprinkle the rest of the coriander; remove the bay leaf and cinnamon if you like.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Separate, soft, evenly orange grains with green flecks.",
+      "cameraCheck": "A forkful of rice lifted from the cooker",
+      "videoShot": "A fork lifting fluffy tomato rice."
+    },
+    {
+      "n": 20,
+      "title": "Serve",
+      "text": "Spoon onto a plate.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "A mound of moist, glossy, red-orange rice.",
+      "cameraCheck": "The served plate",
+      "videoShot": "Tomato rice on a steel plate with raita and papad beside it."
+    }
+  ],
+  "nutritionPerServing": {
+    "kcal": 435,
+    "proteinG": 9.4,
+    "carbsG": 72,
+    "fatG": 11.4,
+    "fibreG": 5.8
+  },
+  "microNutrientsEstimate": {
+    "values": {
+      "vitamin-a": 19.1,
+      "vitamin-c": 32.9,
+      "vitamin-k": 8.2
+    },
+    "coveragePct": 30,
+    "basis": "partial estimate from ingredient quantities"
+  },
+  "asOrdered": {
+    "price": {
+      "priceHistory": [
+        {
+          "date": "2026-10-15",
+          "min": 120,
+          "max": 220,
+          "avg": 170,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-10-15.md"
+        }
+      ],
+      "currentEstimate": {
+        "min": 140,
+        "max": 200,
+        "avg": 170
+      },
+      "method": "single",
+      "trend": "unknown",
+      "change30dPct": null,
+      "lastObserved": "2026-10-15",
+      "stale": false,
+      "seasonal": false,
+      "listingCount": 2,
+      "platforms": [
+        "Dunzo",
+        "Zomato"
+      ],
+      "outOfStock": false,
+      "confirmed": false,
+      "checkNotes": [
+        "only 2 listings back the range (need 3)"
+      ]
+    },
+    "nutrition": {
+      "calories": {
+        "value": null,
+        "source": null
+      },
+      "protein": {
+        "value": null,
+        "source": null
+      },
+      "carbs": {
+        "value": null,
+        "source": null
+      },
+      "fat": {
+        "value": null,
+        "source": null
+      },
+      "fibre": {
+        "value": null,
+        "source": null
+      }
+    },
+    "restaurantsSampled": null,
+    "platforms": [
+      "Swiggy",
+      "Zomato",
+      "magicpin"
+    ]
+  },
+  "orderPrice": {
+    "priceHistory": [
+      {
+        "date": "2026-10-15",
+        "min": 120,
+        "max": 220,
+        "avg": 170,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-10-15.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 140,
+      "max": 200,
+      "avg": 170
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-15",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 2,
+    "platforms": [
+      "Dunzo",
+      "Zomato"
+    ],
+    "outOfStock": false,
+    "confirmed": false,
+    "checkNotes": [
+      "only 2 listings back the range (need 3)"
+    ]
+  },
+  "healthiness": {
+    "score": 7,
+    "restaurantScore": 5,
+    "reasons": [
+      "boiled in a pressure cooker, with modest unsaturated oil, no dairy, no added sugar and about 180 g of tomato and onion, which bring potassium, vitamin C, lycopene and about 6 g fibre (est.). Against it: it is mostly white-rice starch (about 72 g carbs) with a high glycaemic response and only about 9 g protein, and 2 g salt gives about 40% of the day's sodium. Restaurant and mess versions often use more oil or ghee and cashews, more salt, and come with fried fryums or papad."
+    ]
+  },
+  "researchRating": {
+    "score": 4.3,
+    "basis": "a well-loved, everyday South Indian \"variety rice\" with recipes on every major Indian recipe site (Swasthi's, Hebbar's Kitchen, Veg Recipes of India, Tarla Dalal, Jeyashri's Kitchen, Raks Kitchen, Archana's Kitchen) and coverage in international food media (MasterClass, Milk Street, Saveur), praised as a quick, cheap lunchbox meal. Deduction because it is seen as a simple home or mess dish rather than a treat, it is rarely ordered in Mumbai (few menu listings), and the star counts on the main recipe pages could not be seen from this environment."
+  },
+  "storage": "Cool and refrigerate within 1 hour (cooked rice can grow Bacillus cereus if left warm). Fridge: up to 1–2 days in an airtight box. Freezer: up to 1 month in a flat freezer bag. To reheat, sprinkle 1–2 tbsp water, cover and microwave for 1½–2 min, stirring halfway, until steaming hot throughout; or warm in a covered pan on low heat for 3–4 min. Reheat only once.",
+  "leftoverRemix": "Tomato rice tikkis. Mash 1 cup cold leftover tomato rice with 2 tbsp besan (gram flour), 1 tbsp chopped coriander and a pinch of chilli flakes; shape into 4 small patties and shallow-fry on a tawa with 1 tsp oil, 2–3 min a side, until crisp and golden. Serve with green chutney or ketchup: soft rice turned into a crunchy snack, and it stays gluten-free and vegan.",
+  "burnOff": "about 6.2 km of running (435 ÷ 70 kcal/km, for a 70 kg adult), or about 8.7 km of brisk walking (about 1 h 45 min at 5 km/h, using about 50 kcal/km for walking) (est.). With raita and a roasted papad (about +100 kcal), add about 1.5 km of running.",
+  "sources": [
+    "Indian Healthy Recipes (Swasthi), Tomato Rice Recipe (Indian Style) (1½ cups aged basmati, 2 tbsp oil or ghee, 1 medium onion, 1 cup tomatoes chopped or puréed; stovetop cooker, Instant Pot, rice cooker or pot; leftover-rice option): https://www.indianhealthyrecipes.com/tomato-rice-recipe/ and print version https://www.indianhealthyrecipes.com/wprm_print/tomato-rice-recipe-indian-style",
+    "Indian Healthy Recipes, Thakkali Sadam: https://www.indianhealthyrecipes.com/thakkali-sadam/",
+    "Indian Healthy Recipes, Tomato Bath (1¾ cups water in a cooker, 2 cups in a pot): https://www.indianhealthyrecipes.com/tomato-bath-recipe-indian-tomato-rice-recipe/",
+    "Hebbar's Kitchen, Tomato Bath / Tomato Pulao (1 cup sona masuri, 2½ cups water, 3 whistles, natural release): https://hebbarskitchen.com/tomato-bath-recipe-tomato-pulao-recipe/ and https://hebbarskitchen.com/tomato-pulao-recipe-tomato-rice-recipe/",
+    "Hebbar's Kitchen, Tomato biryani / thakkali biryani (2 whistles on medium): https://hebbarskitchen.com/tomato-biryani-recipe-pressure-cooker/",
+    "Veg Recipes of India (Dassana), Tomato Bath / Tomato Rice (Karnataka style; 300 g tomatoes ground with ginger, garlic, green chillies, cumin, cloves, cinnamon and ¼ cup coconut): https://www.vegrecipesofindia.com/tomato-rice-recipe/",
+    "Tarla Dalal, Tomato rice, South Indian style / thakkali sadam (onion with cinnamon, cardamom, cloves, ginger-garlic paste, basmati, 2 whistles): https://tarladalal.com/tomato-rice-south-indian-recipes--32889r",
+    "Tarla Dalal, Calories in Tomato Rice (232 kcal per 200 g serving): https://www.tarladalal.com/calories-for-tomato-rice--south-indian-recipes--32889",
+    "Jeyashri's Kitchen, Thakkali sadam (1 cup cooked rice, tomato, tamarind, sesame oil, roasted coriander-chana dal-sesame powder; no onion or garlic): https://www.jeyashriskitchen.com/thakkali-sadam-recipe-south-indian/",
+    "Cook Click N Devour, Tomato rice: https://www.cookclickndevour.com/tomato-rice-recipe-how-to-make-tomato-rice/",
+    "Cookilicious, Tomato rice / thakkali sadam (ground tomato cooked with mustard and methi in sesame oil): https://cookilicious.com/wprm_print/tomato-rice-recipe-thakkali-sadam",
+    "Raks Kitchen, Tomato rice with garlic: https://rakskitchen.net/tomato-rice-recipe-thakkali-sadam-recipe-with-garlic/",
+    "Archana's Kitchen, One-pot tomato rice (thakkali sadam) in electric pressure cooker: https://www.archanaskitchen.com/one-pot-tomato-rice-recipe-in-electric-pressure-cooker-thakkali-sadam/amp",
+    "Yummy Tummy Aarthi, Tomato rice / thakkali sadam: https://www.yummytummyaarthi.com/easy-tomato-rice-recipe-thakkali-sadam/",
+    "MasterClass, Tomato rice recipe (thakkali sadam background; served with raita and papadams): https://www.masterclass.com/articles/tomato-rice-recipe",
+    "Milk Street, Indian tomato rice: https://www.177milkstreet.com/recipes/indian-tomato-rice",
+    "Swiggy Instamart, Tomato rice recipe page (280 kcal, serves 4; not used as as-ordered data): https://www.swiggy.com/instamart/recipe/tomato-rice",
+    "HealthifyMe, Tomato rice nutrifacts: https://www.healthifyme.com/web/nutrifacts/tomato-rice-13b1647ffd",
+    "FatSecret India, Tomato rice search: https://www.fatsecret.co.in/calories-nutrition/search?q=Tomato+Rice",
+    "Dunzo, Just Rice, Oshiwara, Andheri West (Tomato Rice ₹119): https://www.dunzo.com/mumbai/just-rice-oshiwara-andheri-west",
+    "Zomato, Madras Curd Rice Company, Manpada, Thane West (Tomato Rice ₹225): https://www.zomato.com/mumbai/madras-curd-rice-company-manpada-thane-west-thane/order",
+    "magicpin, Madras Curd Rice Company, Marol (Tomato Rice ₹221 / ₹99; Feb 2026): https://magicpin.in/Mumbai/Marol/Restaurant/Madras-Curd-Rice-Company/store/1700047/",
+    "magicpin, Madras Curd Rice Company, Lower Parel (Tomato Rice ₹221 / ₹99): https://magicpin.in/Mumbai/Lower-Parel/Restaurant/Madras-Curd-Rice-Company/store/1700059/",
+    "magicpin, Udupi Tiffins, Mulund West (Tomato Rice Tiffin with raita and sheera ₹144): https://magicpin.in/Mumbai/Mulund-West/Restaurant/Udupi-Tiffins/store/5c7c87",
+    "Zomato, Just Rice, Andheri Lokhandwala (Tomato Rice listed, price not visible): https://www.zomato.com/mumbai/just-rice-1-andheri-lokhandwala/order",
+    "Zomato, Just Rice, Powai (Tomato Rice listed, price not visible): https://www.zomato.com/mumbai/just-rice-powai/order",
+    "Swiggy, Best Tomato Rice Restaurants in Chennai (reference only): https://www.swiggy.com/city/chennai/tomato-rice-dish-restaurants",
+    "Swiggy, Best Tomato Rice Restaurants in Bangalore (reference only): https://www.swiggy.com/city/bangalore/tomato-rice-dish-restaurants",
+    "Swiggy, Best Tomato Rice Restaurants in Hyderabad (reference only): https://www.swiggy.com/city/hyderabad/tomato-rice-dish-restaurants",
+    "Swiggy, Amma Mess, Vadapalani, Chennai (Tomato Rice ₹119; reference only): https://www.swiggy.com/city/chennai/amma-mess-vadapalani-rest621566",
+    "Swiggy, Rice Express by Shero, Nizampet, Hyderabad (Tomato Variety Rice combos ₹279–339; reference only): https://www.swiggy.com/city/hyderabad/rice-express-by-shero-nizampet-pragathi-nagar-rest516607",
+    "Swiggy, Rasoi, Mumbai (Tomato Rice shown as a popular dish, no price): https://www.swiggy.com/city/mumbai/rasoi",
+    "Organic Mandya, Know your food: hing (compounded hing with wheat flour is not gluten-free): https://www.organicmandya.com/know-your-food/spices/hing/",
+    "Hindutone, Ekadashi food list (no rice or dals): https://hindutone.com/festivals/ekadashi-food-list/",
+    "USDA FoodData Central: https://fdc.nal.usda.gov/",
+    "IFCT 2017, Indian Food Composition Tables (ICMR-NIN): https://www.nin.res.in/",
+    "ICMR-NIN, Nutrient Requirements for Indians 2020 (RDA / EAR): https://www.nin.res.in/"
+  ],
+  "allergens": [
+    "peanut",
+    "treeNut",
+    "mustard"
+  ],
+  "dietClaims": [
+    "vegan",
+    "glutenFree",
+    "dairyFree"
+  ],
+  "fasting": {
+    "navratri": {
+      "status": "no",
+      "reason": "rice, onion, garlic and table salt are avoided on the common North and West Indian vrat rule set; a samak-rice (barnyard millet) tomato pulao with sendha namak is the usual swap, but that is a different dish"
+    },
+    "ekadashi": {
+      "status": "no",
+      "reason": "rice and dals (chana and urad dal in the tempering) are the main foods given up on Ekadashi"
+    },
+    "jain": {
+      "status": "with-changes",
+      "reason": "skip onion, garlic and ginger; tomato, rice, dried spices and curry leaves fit common Jain practice (see the Jain variant)"
+    },
+    "ramadan": {
+      "status": "yes",
+      "reason": "vegetarian, so there is no halal concern; filling and easy to digest, but low in protein (about 9 g) and moderately salty (about 2 g salt), so for sehri pair it with curd, dal or eggs and drink water"
+    }
+  },
+  "dietTags": {
+    "base": "Vegetarian",
+    "jain": {
+      "status": "with-changes",
+      "reason": "skip the onion and ginger-garlic paste; tomato, rice, dals, green chilli, dried spices and curry leaves stay (onion, garlic and ginger are roots/bulbs avoided in Jain food)"
+    },
+    "vegan": {
+      "status": "yes",
+      "reason": "groundnut oil, no ghee, curd, honey or other animal products"
+    },
+    "pescatarian": {
+      "status": "yes",
+      "reason": "vegetarian, no meat, fish or egg, so it fits a pescatarian diet"
+    },
+    "sattvik": {
+      "status": "with-changes",
+      "reason": "skip the onion and ginger-garlic paste; add 1 tsp grated ginger only if your family allows it"
+    },
+    "glutenFree": {
+      "status": "yes",
+      "reason": "rice, dals, vegetables and spices only; no hing is used (most hing sold in India is compounded with wheat flour, so if you add hing, use one labelled gluten-free)"
+    },
+    "dairyFree": {
+      "status": "yes",
+      "reason": "cooked in oil, no ghee, butter or curd (serve with a dairy-free side if you need it fully dairy-free)"
+    },
+    "allergensDeclared": [
+      "peanut",
+      "treeNut",
+      "mustard"
+    ]
+  },
+  "tags": [
+    "Veg",
+    "Vegan",
+    "Jain option",
+    "Gluten-free",
+    "Dairy-free",
+    "Ramadan sehri / iftar",
+    "Contains peanut",
+    "Contains tree nuts",
+    "Contains mustard",
+    "Lunch",
+    "Dinner",
+    "South Indian",
+    "Under 60 min",
+    "Beginner"
+  ],
+  "description": "A vegetarian, vegan, gluten-free and dairy-free one-pot South Indian rice cooked in a spiced tomato-onion masala; Jain and sattvik versions below.",
+  "familyId": null,
+  "variants": [
+    {
+      "category": "Jain",
+      "status": "variant",
+      "name": "Jain Tomato Rice (no onion, garlic or ginger)",
+      "origin": "fitplate-created",
+      "linkedDishNumber": null,
+      "reason": null
+    },
+    {
+      "category": "Vegan",
+      "status": "already-fits",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": ". Main recipe already vegan (groundnut oil, no ghee or dairy). If you add the optional ghee on top, skip it."
+    },
+    {
+      "category": "Gluten-free",
+      "status": "already-fits",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": ". Main recipe already gluten-free (no hing, wheat or rava). If you add hing, use one labelled gluten-free."
+    },
+    {
+      "category": "Dairy-free",
+      "status": "already-fits",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": ". Main recipe already dairy-free; serve without curd or raita, or with a dairy-free side."
+    },
+    {
+      "category": "Sattvik",
+      "status": "variant",
+      "name": "No-onion-no-garlic Tomato Rice",
+      "origin": "fitplate-created",
+      "linkedDishNumber": null,
+      "reason": null
+    },
+    {
+      "category": "Low-oil",
+      "status": "variant",
+      "name": "Light Tomato Rice (1 tsp oil)",
+      "origin": "fitplate-created",
+      "linkedDishNumber": null,
+      "reason": null
+    },
+    {
+      "category": "Higher-protein (peas)",
+      "status": "variant",
+      "name": "Tomato Peas Rice",
+      "origin": "established",
+      "linkedDishNumber": null,
+      "reason": null
+    }
+  ],
+  "needsReview": [
+    "price not confirmed (2026-10-15): only 2 listings back the range (need 3)"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-15",
+      "file": "FitPlate_Dishes_2026-10-15.md"
+    }
+  ],
+  "mergeMethod": {
+    "nutritionPerServing": "stable (single)",
+    "orderPrice": "price engine (single)",
+    "ingredients": "newest",
+    "steps": "newest",
+    "healthiness": "newest",
+    "researchRating": "newest",
+    "sources": "union",
+    "tags": "tag engine (tags.ts) on the merged dish"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 120.0–220.0 was wider than 30% of avg 170.0; narrowed to ±15%.",
+    "2026-10-15: research declares treeNut not detected from ingredient names; added"
+  ]
+}

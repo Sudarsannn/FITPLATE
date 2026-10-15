@@ -36,6 +36,7 @@ export default function RootLayout() {
           <Stack.Screen name="steps/[id]" options={{ animation: 'ios_from_right' }} />
           <Stack.Screen name="order-vs-make" options={{ animation: 'ios_from_right' }} />
           <Stack.Screen name="vendors" options={{ animation: 'ios_from_right' }} />
+          <Stack.Screen name="photo-credits" options={{ animation: 'ios_from_right' }} />
           <Stack.Screen name="log" options={{ presentation: 'formSheet', sheetAllowedDetents: [0.75, 1], sheetGrabberVisible: true, sheetCornerRadius: 28, contentStyle: { backgroundColor: colors.bgElevated } }} />
         </Stack>
       </StoreProvider>

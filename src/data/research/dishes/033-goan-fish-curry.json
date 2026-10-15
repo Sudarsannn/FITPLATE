@@ -1,0 +1,607 @@
+{
+  "id": "033-goan-fish-curry",
+  "number": 33,
+  "name": "Goan Fish Curry",
+  "cuisine": "Goan (Konkan coast; in Goa it is the everyday \"xitt kodi\" of fish curry rice, cooked in almost every Catholic and Hindu home; close cousins are Malvani fish curry and Karwari/Mangalorean gassi)",
+  "dietType": "non-veg",
+  "mealType": [
+    "lunch",
+    "dinner"
+  ],
+  "difficulty": "Beginner",
+  "prepMin": 20,
+  "cookMin": 25,
+  "servings": 1,
+  "ingredients": [
+    {
+      "ingredientId": "seer-fish-kingfish-steaks",
+      "name": "Seer fish (surmai / kingfish), steaks, skin and bone on",
+      "quantity": 150,
+      "unit": "g",
+      "householdMeasure": "2 medium steaks, about 1.5 cm thick"
+    },
+    {
+      "ingredientId": "turmeric-powder",
+      "name": "Turmeric powder (haldi), for the marinade",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "⅛ tsp"
+    },
+    {
+      "ingredientId": "salt",
+      "name": "Salt (namak), for the marinade",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "a pinch"
+    },
+    {
+      "ingredientId": "lemon",
+      "name": "Lime juice (nimbu)",
+      "quantity": 5,
+      "unit": "ml",
+      "householdMeasure": "1 tsp (about ¼ lime)"
+    },
+    {
+      "ingredientId": "kokum-dried-rind",
+      "name": "Kokum (dried kokum rind / amsul)",
+      "quantity": 5,
+      "unit": "g",
+      "householdMeasure": "3 pieces"
+    },
+    {
+      "ingredientId": null,
+      "name": "Warm water, for soaking kokum",
+      "quantity": 30,
+      "unit": "ml",
+      "householdMeasure": "2 tbsp"
+    },
+    {
+      "ingredientId": "fresh-coconut-grated",
+      "name": "Fresh grated coconut (nariyal), or frozen grated coconut, thawed",
+      "quantity": 40,
+      "unit": "g",
+      "householdMeasure": "⅓ cup, loosely packed"
+    },
+    {
+      "ingredientId": "dried-red-chilli-whole",
+      "name": "Kashmiri dried red chillies (sukhi lal mirch)",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "3 chillies, stalks removed"
+    },
+    {
+      "ingredientId": "coriander-seeds-whole",
+      "name": "Coriander seeds (sabut dhania)",
+      "quantity": 2,
+      "unit": "g",
+      "householdMeasure": "1 tsp"
+    },
+    {
+      "ingredientId": "cumin-seeds",
+      "name": "Cumin seeds (jeera)",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "¼ tsp"
+    },
+    {
+      "ingredientId": "black-peppercorns-whole",
+      "name": "Black peppercorns (kali mirch)",
+      "quantity": 0.3,
+      "unit": "g",
+      "householdMeasure": "4 peppercorns"
+    },
+    {
+      "ingredientId": "garlic",
+      "name": "Garlic (lahsun)",
+      "quantity": 6,
+      "unit": "g",
+      "householdMeasure": "2 medium cloves, peeled"
+    },
+    {
+      "ingredientId": "ginger",
+      "name": "Ginger (adrak)",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "½-inch piece, peeled"
+    },
+    {
+      "ingredientId": "turmeric-powder",
+      "name": "Turmeric powder (haldi), for the masala",
+      "quantity": 0.25,
+      "unit": "g",
+      "householdMeasure": "a pinch"
+    },
+    {
+      "ingredientId": null,
+      "name": "Water, for grinding",
+      "quantity": 80,
+      "unit": "ml",
+      "householdMeasure": "⅓ cup (add in two parts)"
+    },
+    {
+      "ingredientId": "coconut-oil",
+      "name": "Coconut oil (nariyal tel)",
+      "quantity": 10,
+      "unit": "ml",
+      "householdMeasure": "2 tsp"
+    },
+    {
+      "ingredientId": "onion",
+      "name": "Onion (pyaz/kanda)",
+      "quantity": 40,
+      "unit": "g",
+      "householdMeasure": "½ small onion, finely chopped (about 4 tbsp)"
+    },
+    {
+      "ingredientId": "green-chilli",
+      "name": "Green chilli (hari mirch)",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "1 chilli, slit lengthwise"
+    },
+    {
+      "ingredientId": null,
+      "name": "Water, to adjust the curry",
+      "quantity": 100,
+      "unit": "ml",
+      "householdMeasure": "½ cup (less if you like it thick)"
+    },
+    {
+      "ingredientId": "salt",
+      "name": "Salt (namak), for the curry",
+      "quantity": 1.5,
+      "unit": "g",
+      "householdMeasure": "¼ tsp (level)"
+    }
+  ],
+  "equipment": [
+    "Mixer-grinder with a small chutney jar",
+    "Small dry pan (tadka pan or small kadai) for roasting the whole spices",
+    "Medium heavy-bottomed kadai or wide pan, about 20 cm (a wide pan lets the fish sit in one layer)",
+    "2 small bowls (kokum soak, fish marinade) and a plate",
+    "Chopping board and knife",
+    "Wooden spoon or spatula",
+    "Measuring spoons and a measuring cup (normal teaspoons and a steel glass are fine stand-ins)",
+    "Kitchen scale (useful for the fish; or ask the fish seller for 150 g, which is about 2 medium steaks)"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "title": "Soak the kokum",
+      "text": "Put 3 pieces (5 g) kokum in a small bowl with 2 tbsp (30 ml) warm water.",
+      "timerSec": 30,
+      "tip": "Using tamarind instead? Soak 5 g tamarind the same way.",
+      "visualCue": "The water starts turning pinkish-purple within a few minutes.",
+      "cameraCheck": "The kokum in its bowl of water",
+      "videoShot": "Dark kokum pieces dropping into warm water."
+    },
+    {
+      "n": 2,
+      "title": "Rinse the fish",
+      "text": "Rinse the 150 g surmai steaks under cold running water and place them on a plate.",
+      "timerSec": 60,
+      "tip": "Frozen fish must be fully thawed first (see Quick facts). Ask the fish seller to cut steaks about 1.5 cm thick; thin steaks break in the curry.",
+      "visualCue": "No blood or scales on the surface",
+      "cameraCheck": "The 2 steaks on the plate",
+      "videoShot": "Water running over the steaks."
+    },
+    {
+      "n": 3,
+      "title": "Pat the fish dry",
+      "text": "Press both sides of each steak with a paper towel or clean cloth.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "The surface looks matte, not wet",
+      "cameraCheck": "The dried steaks",
+      "videoShot": "The towel pressing on a steak."
+    },
+    {
+      "n": 4,
+      "title": "Marinate the fish",
+      "text": "Rub ⅛ tsp turmeric, a pinch of salt and 1 tsp lime juice over both sides. Set aside.",
+      "timerSec": 60,
+      "tip": "Do not marinate in lime for more than 30 minutes; the acid starts to \"cook\" the surface and makes it mushy.",
+      "visualCue": "Evenly yellow steaks",
+      "cameraCheck": "The marinated steaks on the plate",
+      "videoShot": "Fingers rubbing turmeric over a steak."
+    },
+    {
+      "n": 5,
+      "title": "Heat the small pan",
+      "text": "Put the small dry pan on low to medium heat.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Warm air rises when you hold your palm 5 cm above it",
+      "cameraCheck": "The empty pan on the flame",
+      "videoShot": "A hand hovering over the pan."
+    },
+    {
+      "n": 6,
+      "title": "Dry-roast the chillies",
+      "text": "Add the 3 Kashmiri chillies, stalks removed, and stir.",
+      "timerSec": 30,
+      "tip": "Burnt chillies make the curry bitter. If any turn black, throw them out.",
+      "visualCue": "They puff slightly, turn a shade brighter and become crisp. Not black.",
+      "cameraCheck": "The roasted chillies in the pan",
+      "videoShot": "Chillies being turned in the pan."
+    },
+    {
+      "n": 7,
+      "title": "Add the seeds and pepper",
+      "text": "Add 1 tsp coriander seeds, ¼ tsp cumin seeds and 4 peppercorns. Stir.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "The coriander seeds turn a shade darker and the kitchen smells toasty",
+      "cameraCheck": "The spices in the pan",
+      "videoShot": "Seeds being stirred with a spoon."
+    },
+    {
+      "n": 8,
+      "title": "Cool the spices",
+      "text": "Tip the roasted spices onto a plate.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "Cool to touch",
+      "cameraCheck": "The spices on the plate",
+      "videoShot": "Spices tumbling onto the plate."
+    },
+    {
+      "n": 9,
+      "title": "Grind the spices dry",
+      "text": "Put the cooled spices in the small chutney jar and grind without water.",
+      "timerSec": 30,
+      "tip": "Grinding the dry spices first gives a smoother final paste.",
+      "visualCue": "A coarse red-brown powder",
+      "cameraCheck": "The powder in the open jar",
+      "videoShot": "The jar lid lifted to show the powder."
+    },
+    {
+      "n": 10,
+      "title": "Peel the garlic and ginger",
+      "text": "Peel 2 garlic cloves (6 g) and a ½-inch piece of ginger (3 g).",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Clean cloves and a peeled ginger piece",
+      "cameraCheck": "The garlic and ginger on the board",
+      "videoShot": "A spoon edge scraping the ginger skin."
+    },
+    {
+      "n": 11,
+      "title": "Add the coconut and aromatics to the jar",
+      "text": "Add 40 g (⅓ cup) grated coconut, the garlic, ginger, a pinch of turmeric and 3 tbsp (about 45 ml) of the grinding water.",
+      "timerSec": 30,
+      "tip": "Coconut milk shortcut: skip the coconut here, grind the spices, garlic and ginger with the water only, and keep 60 ml coconut milk ready for step 22.",
+      "visualCue": "Coconut, aromatics and a little water over the spice powder",
+      "cameraCheck": "The loaded jar, lid off",
+      "videoShot": "Coconut being added to the jar."
+    },
+    {
+      "n": 12,
+      "title": "Grind to a smooth paste",
+      "text": "Grind, scrape down the sides, add the remaining water (about 35 ml) and grind again.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "A smooth, bright orange-red paste with no visible coconut shreds when rubbed between fingers",
+      "cameraCheck": "The paste on a spoon",
+      "videoShot": "The spoon lifting thick orange paste out of the jar."
+    },
+    {
+      "n": 13,
+      "title": "Chop the onion",
+      "text": "Finely chop 40 g onion (about ½ small onion). Slit 1 green chilli lengthwise.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "Small, even onion pieces; chilli split but still joined at the stalk",
+      "cameraCheck": "The onion and chilli on the board",
+      "videoShot": "The knife rocking through the onion."
+    },
+    {
+      "n": 14,
+      "title": "Heat the oil",
+      "text": "Put the kadai on medium heat and add 2 tsp (10 ml) coconut oil.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "The oil shimmers and flows easily when you tilt the pan",
+      "cameraCheck": "The oil in the pan",
+      "videoShot": "Oil swirling in the tilted kadai."
+    },
+    {
+      "n": 15,
+      "title": "Cook the onion",
+      "text": "Add the onion and green chilli. Stir now and then.",
+      "timerSec": 240,
+      "tip": "Adding the optional tomato? Add it now and cook 2 more minutes until soft.",
+      "visualCue": "Soft, translucent onion with light-golden edges",
+      "cameraCheck": "The onion in the pan",
+      "videoShot": "The spatula stirring the softened onion."
+    },
+    {
+      "n": 16,
+      "title": "Add the masala paste",
+      "text": "Lower the heat to low-medium and add all the ground paste. Rinse the jar with 2 tbsp of the 100 ml curry water and add that too.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "The pan is full of thick orange-red paste",
+      "cameraCheck": "The paste in the pan",
+      "videoShot": "Paste being scraped into the kadai."
+    },
+    {
+      "n": 17,
+      "title": "Cook the paste",
+      "text": "Stir often so it does not catch.",
+      "timerSec": 240,
+      "tip": "If it sticks, add 1 tbsp water and keep stirring.",
+      "visualCue": "The raw garlic smell goes, the paste darkens slightly and tiny drops of oil appear at the edges",
+      "cameraCheck": "The oil beads at the edge of the paste",
+      "videoShot": "Close-up of oil glistening at the edge."
+    },
+    {
+      "n": 18,
+      "title": "Add water and salt",
+      "text": "Pour in the rest of the 100 ml water and add ¼ tsp salt. Stir.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "A smooth, pourable orange curry, like thin custard",
+      "cameraCheck": "The curry in the pan",
+      "videoShot": "Water being stirred into the paste."
+    },
+    {
+      "n": 19,
+      "title": "Add the kokum",
+      "text": "Add the soaked kokum pieces and their pink soaking water.",
+      "timerSec": 10,
+      "tip": "Using tamarind? Squeeze the soaked tamarind, strain, and add half the water now; taste after step 20 and add more only if needed.",
+      "visualCue": "The curry turns a little deeper orange-pink",
+      "cameraCheck": "The kokum pieces in the curry",
+      "videoShot": "Kokum and its water going into the pan."
+    },
+    {
+      "n": 20,
+      "title": "Simmer the curry",
+      "text": "Bring to a gentle bubble on medium heat, then lower to low.",
+      "timerSec": 180,
+      "tip": "Taste now and fix salt and sourness; it is hard to stir much once the fish is in.",
+      "visualCue": "Lazy, slow bubbles; the curry tastes balanced, tangy and mildly hot",
+      "cameraCheck": "The gently bubbling curry",
+      "videoShot": "Slow bubbles breaking on the surface."
+    },
+    {
+      "n": 21,
+      "title": "Add the fish",
+      "text": "Slide the 2 marinated steaks into the curry in one layer. Spoon curry over the top. Do not stir.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "The steaks are covered or half-covered with curry",
+      "cameraCheck": "The fish sitting in the curry",
+      "videoShot": "A steak being slid gently into the pan."
+    },
+    {
+      "n": 22,
+      "title": "Simmer the fish gently",
+      "text": "Cover and cook on low heat. Instead of stirring, hold the pan by its handles and swirl it once or twice.",
+      "timerSec": 360,
+      "tip": "Coconut milk shortcut: pour in the 60 ml coconut milk after 4 minutes, swirl, and heat just until it bubbles once; boiling hard can make coconut milk split.",
+      "visualCue": "The flesh turns from translucent pink to opaque white all the way through and flakes when pressed at the thickest part with a spoon",
+      "cameraCheck": "A steak pressed with a spoon to show white, flaky flesh",
+      "videoShot": "The pan being swirled gently."
+    },
+    {
+      "n": 23,
+      "title": "Rest and serve",
+      "text": "Turn off the heat and let the curry stand, covered, before serving. Remove the kokum pieces if you like (they are not usually eaten).",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "A thin layer of orange oil on top and the curry slightly thicker",
+      "cameraCheck": "The finished curry in a bowl",
+      "videoShot": "The curry being ladled into a bowl with one steak on top."
+    }
+  ],
+  "nutritionPerServing": {
+    "kcal": 420,
+    "proteinG": 30.4,
+    "carbsG": 17.7,
+    "fatG": 26.2,
+    "fibreG": 6.8
+  },
+  "microNutrientsEstimate": {
+    "values": {
+      "calcium": 21.3,
+      "folate": 10.5,
+      "iron": 1.3,
+      "magnesium": 69.4,
+      "potassium": 824.2,
+      "sodium": 245.8,
+      "vitamin-a": 58.5,
+      "vitamin-c": 1.7,
+      "zinc": 1.3
+    },
+    "coveragePct": 41,
+    "basis": "partial estimate from ingredient quantities"
+  },
+  "asOrdered": {
+    "price": {
+      "priceHistory": [
+        {
+          "date": "2026-10-10",
+          "min": 350,
+          "max": 400,
+          "avg": 375,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-10-10.md"
+        }
+      ],
+      "currentEstimate": {
+        "min": 350,
+        "max": 400,
+        "avg": 380
+      },
+      "method": "single",
+      "trend": "unknown",
+      "change30dPct": null,
+      "lastObserved": "2026-10-10",
+      "stale": false,
+      "seasonal": false,
+      "listingCount": 2,
+      "platforms": [
+        "LBB article",
+        "magicpin"
+      ],
+      "outOfStock": false,
+      "confirmed": false,
+      "checkNotes": [
+        "only 2 listings back the range (need 3)"
+      ]
+    },
+    "nutrition": {
+      "calories": {
+        "value": null,
+        "source": null
+      },
+      "protein": {
+        "value": null,
+        "source": null
+      },
+      "carbs": {
+        "value": null,
+        "source": null
+      },
+      "fat": {
+        "value": null,
+        "source": null
+      },
+      "fibre": {
+        "value": null,
+        "source": null
+      }
+    },
+    "restaurantsSampled": 5,
+    "platforms": [
+      "Swiggy",
+      "Zomato",
+      "magicpin"
+    ]
+  },
+  "orderPrice": {
+    "priceHistory": [
+      {
+        "date": "2026-10-10",
+        "min": 350,
+        "max": 400,
+        "avg": 375,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-10-10.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 350,
+      "max": 400,
+      "avg": 380
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-10",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 2,
+    "platforms": [
+      "LBB article",
+      "magicpin"
+    ],
+    "outOfStock": false,
+    "confirmed": false,
+    "checkNotes": [
+      "only 2 listings back the range (need 3)"
+    ]
+  },
+  "healthiness": {
+    "score": 7,
+    "restaurantScore": 5,
+    "reasons": [
+      "about 30 g of lean, high-quality protein from fish, plus omega-3 fats (surmai and especially bangda), and nothing is deep-fried. Spices, garlic, ginger and kokum add flavour without sugar. Points come off for the high saturated fat from coconut plus coconut oil (about 19 g, est.), sodium around 1,000 mg, and almost no vegetables. Restaurant versions often fry the fish first, use more oil and coconut, add more salt, and are served with a large mound of white rice."
+    ]
+  },
+  "researchRating": {
+    "score": 4.5,
+    "basis": "Goan fish curry rice is the defining everyday meal of Goa and a fixture of Mumbai's Goan, Malvani and coastal restaurants; Mumbai food media (Homegrown, Culture Trip, LBB, Curly Tales) repeatedly name it among the city's must-eat Goan dishes, and celebrity chefs (Ranveer Brar, Sanjeev Kapoor) and leading Indian and international blogs (Ruchik Randhap, Raksha's Kitchen, Whisk Affair, RecipeTin Eats, with comments running to more than 10 pages) publish versions. Visible recipe star ratings were scarce (Anjum Anand's version on Yummy Tummy Aarthi: 3.67/5 from only 3 votes; Tesco Real Food's Goan-style curry has 145 ratings, but the average was not visible). Small deductions because opinions split on \"authentic\" fish, coconut milk and tomato, and because the fish quality makes or breaks the dish."
+  },
+  "storage": "Fridge-safe in a closed box for up to 2 days; cool it within 1 hour of cooking. Many Goan cooks say it tastes better the next day, because the fish soaks up the masala. Freezing is not recommended: the fish turns soft and watery and the coconut gravy can split (the gravy alone, without fish, freezes for up to 1 month). Reheat gently in a pan on low heat, covered, swirling the pan instead of stirring, just until it bubbles once; or microwave in 30-second bursts. Do not boil hard, as the fish will break.",
+  "leftoverRemix": "Goan fish curry pulao. Lift out the leftover fish, remove any bones and flake it. Heat ½ tsp oil, fry 2 tbsp sliced onion until golden, add the leftover gravy and cook until it is thick and clinging. Add 1 cup cooked rice and the flaked fish, toss gently for 2 minutes, then finish with lime juice and chopped coriander. The coconut-kokum masala turns it into a quick tangy fish rice.",
+  "burnOff": "about 6.0 km of running (420 ÷ 70 kcal/km, for a 70 kg adult), or about 8.4 km of brisk walking (about 1 hour 40 minutes at 5 km/h, using about 50 kcal/km for walking) (est.). With 150 g rice (about 615 kcal): about 8.8 km running or 12.3 km walking (est.).",
+  "sources": [
+    "Ranveer Brar, Goan Fish Curry: https://ranveerbrar.com/recipes/goan-fish-curry/",
+    "Raksha's Kitchen, Goan surmai fish curry (seer fish, ½ cup grated coconut, marble-sized tamarind, 4 dry red chillies, 5 peppercorns, ½ tsp coriander seeds, ½ onion, 1 tbsp oil): https://www.rakshaskitchen.com/wprm_print/goan-surmai-fish-curry-seer-fish-king-fish-curry-recipe",
+    "Raksha's Kitchen, Goan pomfret curry: https://www.rakshaskitchen.com/goan-pomfret-curry/",
+    "Ruchik Randhap, Goan fish curry (dry-ground spices then coconut, ginger, garlic and tamarind; Kashmiri vs byadgi chillies; vinegar at the end; 223 kcal per serving on the recipe card): https://www.ruchikrandhap.com/goan-fish-curry/",
+    "Whisk Affair, Goan fish curry (fresh coconut and Kashmiri chillies, coconut milk, tamarind, fish marinated in salt, turmeric and lime then fried): https://www.whiskaffair.com/wprm_print/goan-fish-curry-recipe",
+    "Show Me The Curry, Goan Pomfret Fish Curry (roasted Kashmiri chillies, coriander, cumin, peppercorns; tamarind with kokum as alternative; short simmer): https://showmethecurry.com/?p=6272",
+    "Great Curry Recipes, Goan fish curry (kokum and vinegar preferred over tamarind): https://greatcurryrecipes.net/2018/12/01/goan-fish-curry/",
+    "Radio NZ, Goan Fish Curry (3 pieces kokum or 1 tbsp tamarind paste; ambot tik comparison): https://embed.radionz.co.nz/collections/recipes/goan-fish-curry",
+    "Yummy Tummy Aarthi, Goan fish curry: https://www.yummytummyaarthi.com/wprm_print/goan-fish-curry-recipe-goan-fish-curry-masala ; Anjum Anand's Goan fish curry (3.67/5 from 3 votes): https://www.yummytummyaarthi.com/anjum-anands-goan-fish-curry/",
+    "RecipeTin Eats, Goan fish curry (tomato and coconut sauce; comment pages): https://www.recipetineats.com/goan-fish-curry-indian/",
+    "Sanjeev Kapoor, Goan Fish Curry: https://www.sanjeevkapoor.com/Recipe/Goan-Fish-Curry.html",
+    "Flavors of Mumbai, Pomfret Curry Goan Style: https://www.flavorsofmumbai.com/pomfret-curry-goan-style/",
+    "Tesco Real Food, Goan-style fish curry (coconut milk route; 145 ratings): https://realfood.tesco.com/recipes/goan-style-fish-curry.html",
+    "Thawing and drying frozen basa (kitchprep guide): https://kitchprep.com/?p=11825 ; HelloFresh basa masala (5–8 min simmer): https://www.hellofresh.co.uk/recipes/basa-masala-6914a9c7623e0c85b682200c",
+    "USDA FoodData Central (king mackerel raw; coconut meat raw; coconut milk canned; coconut oil; onion; garlic; ginger; spices; lime juice): https://fdc.nal.usda.gov/",
+    "FatSecret, Surmai fish (132 kcal, 20.2 g protein, 4.9 g fat per 100 g; crowd-sourced, used only as a cross-check): https://www.fatsecret.co.nz/calories-nutrition/generic/surmai-fish",
+    "IFCT 2017 (ICMR-NIN), referenced but per-100 g seer fish values not confirmed from this environment: https://www.nin.res.in/",
+    "magicpin, Goan Spice, Khardi, Mumbai Central (Pomfret Goan Curry ₹400, Bangda Goan Curry ₹250, Prawn Goan Curry ₹370, before discount): https://magicpin.in/Mumbai/Khardi/Restaurant/Goan-Spice/store/355136/delivery",
+    "magicpin, The Fisherman Kitchen & Bar, Goregaon West (Pomfret Goan Curry ₹895; Prawns Goan Curry ₹595): https://magicpin.in/Mumbai/Goregaon-West/Restaurant/The-Fisherman-Kitchen-and-Bar/store/16a1917/delivery",
+    "magicpin, Goan Katta, Dahisar (Bangda Fish Curry ₹200): https://magicpin.in/Mumbai/Dahisar/Restaurant/Goan-Katta/store/a81959/menu",
+    "magicpin, New Martin Hotel, Colaba (Fish Curry ₹110): https://magicpin.in/Mumbai/Colaba/Restaurant/New-Martin-Hotel/store/2380c/menu",
+    "LBB, Fresh Catch, Mahim (rawas or surmai curry INR 350): https://lbb.in/mumbai/gorge-butter-garlic-crab-surmai-fry-fresh-catch-mahim/",
+    "magicpin, Fresh Catch, Bandra West (Prawns Ambotik Curry Meal ₹349; prawn, dropped): https://magicpin.in/Mumbai/Bandra-West/Restaurant/Fresh-Catch/store/25237/menu/",
+    "Swiggy, The Goan Spoon, Airoli, Navi Mumbai (thalis ₹299/₹319, Prawns Curry ₹349; dropped): https://www.swiggy.com/city/mumbai/the-goan-spoon-airoli-rest1150514",
+    "Swiggy, Jau Bai Jorat, Kamothe, Navi Mumbai (Surmai/Pomfret Thali ₹650; dropped): https://www.swiggy.com/menu/1214997",
+    "Swiggy, Fish Curry Rice, Viman Nagar, Pune (Surmai Curry and Pomfret Curry ₹835, 180 g; context only): https://www.swiggy.com/menu/406967",
+    "Swiggy, Goan restaurants in Mumbai (directory): https://www.swiggy.com/city/mumbai/goan-cuisine-restaurants",
+    "Zomato, Goan Fish Curry in Mumbai (directory; cost for two only): https://www.zomato.com/mumbai/restaurants/dish-goan-fish-curry ; Bandra West: https://www.zomato.com/mumbai/bandra-west-restaurants/dish-goan-fish-curry ; Goan Fish Curry, Virar (closed): https://www.zomato.com/mumbai/goan-fish-curry-virar",
+    "magicpin, Goa Portuguesa, Powai (no fish curry price visible): https://magicpin.in/Mumbai/Powai/Restaurant/Goa-Portuguesa/store/595b56/menu",
+    "Wanderlog, New Martin Hotel review (fish curry rice Rs 200): https://wanderlog.com/place/details/3632809/new-martin-hotel",
+    "Homegrown, The Best Goan Food In Mumbai: https://homegrown.co.in/article/801675/the-8-mumbai-restaurants-that-will-curb-your-goan-food-cravings",
+    "Homegrown, 17 fish thalis in Mumbai (Highway Gomantak surmai curry thali Rs. 270): https://homegrown.co.in/article/50391/18-delicious-fish-thalis-in-mumbai-for-every-seafood-lover",
+    "The Culture Trip, Where to eat Goan food in Mumbai: https://theculturetrip.com/asia/india/articles/where-to-eat-goan-food-in-mumbai",
+    "Curly Tales, Best seafood restaurants in Mumbai (The Fisherman's Goan Curry, prawns/pomfret): https://curlytales.com/best-seafood-restaurants-in-mumbai-that-are-a-seafood-lovers-dream/"
+  ],
+  "allergens": [
+    "fish"
+  ],
+  "dietClaims": [],
+  "fasting": null,
+  "dietTags": null,
+  "tags": [
+    "Non-veg",
+    "Contains fish",
+    "Lunch",
+    "Dinner",
+    "Goan",
+    "Under 60 min",
+    "Beginner",
+    "High protein",
+    "High fibre"
+  ],
+  "description": null,
+  "familyId": null,
+  "variants": [],
+  "needsReview": [
+    "price not confirmed (2026-10-10): only 2 listings back the range (need 3)"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-10",
+      "file": "FitPlate_Dishes_2026-10-10.md"
+    }
+  ],
+  "mergeMethod": {
+    "nutritionPerServing": "stable (single)",
+    "orderPrice": "price engine (single)",
+    "ingredients": "newest",
+    "steps": "newest",
+    "healthiness": "newest",
+    "researchRating": "newest",
+    "sources": "union",
+    "tags": "tag engine (tags.ts) on the merged dish"
+  },
+  "mergeNotes": []
+}

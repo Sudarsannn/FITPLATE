@@ -1,0 +1,599 @@
+{
+  "id": "053-paneer-tikka",
+  "number": 53,
+  "name": "Paneer Tikka",
+  "cuisine": "North Indian / Punjabi (tandoor starter, adapted here for a home oven/OTG, air fryer or tawa; no tandoor needed)",
+  "dietType": "veg",
+  "mealType": [
+    "snack"
+  ],
+  "difficulty": "Beginner",
+  "prepMin": 20,
+  "cookMin": 20,
+  "servings": 1,
+  "ingredients": [
+    {
+      "ingredientId": "paneer",
+      "name": "Paneer (cottage cheese), full-fat",
+      "quantity": 125,
+      "unit": "g",
+      "householdMeasure": "6–8 cubes of about 3 cm (a quarter of a 500 g block)"
+    },
+    {
+      "ingredientId": "green-capsicum",
+      "name": "Capsicum (shimla mirch), green",
+      "quantity": 40,
+      "unit": "g",
+      "householdMeasure": "⅓ medium capsicum, cut into 3 cm squares"
+    },
+    {
+      "ingredientId": "onion",
+      "name": "Onion (pyaz)",
+      "quantity": 40,
+      "unit": "g",
+      "householdMeasure": "½ small onion, cut into quarters and separated into 2–3-layer petals"
+    },
+    {
+      "ingredientId": null,
+      "name": "Hung curd (strained dahi) or thick Greek-style yoghurt",
+      "quantity": 40,
+      "unit": "g",
+      "householdMeasure": "2½ tbsp (from about 80 g / ⅓ cup ordinary curd strained for 30 min)"
+    },
+    {
+      "ingredientId": "ginger-garlic-paste",
+      "name": "Ginger-garlic paste (adrak-lahsun)",
+      "quantity": 6,
+      "unit": "g",
+      "householdMeasure": "1 tsp (or 3 g grated ginger + 3 g grated garlic)"
+    },
+    {
+      "ingredientId": "gram-flour",
+      "name": "Gram flour (besan), roasted",
+      "quantity": 5,
+      "unit": "g",
+      "householdMeasure": "1 tsp"
+    },
+    {
+      "ingredientId": "kashmiri-red-chilli-powder",
+      "name": "Kashmiri red chilli powder (lal mirch)",
+      "quantity": 2,
+      "unit": "g",
+      "householdMeasure": "1 tsp"
+    },
+    {
+      "ingredientId": "turmeric-powder",
+      "name": "Turmeric powder (haldi)",
+      "quantity": 0.3,
+      "unit": "g",
+      "householdMeasure": "1 small pinch"
+    },
+    {
+      "ingredientId": "coriander-powder",
+      "name": "Coriander powder (dhania powder)",
+      "quantity": 1,
+      "unit": "g",
+      "householdMeasure": "½ tsp"
+    },
+    {
+      "ingredientId": "cumin-powder",
+      "name": "Cumin powder (jeera powder)",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "¼ tsp"
+    },
+    {
+      "ingredientId": "garam-masala",
+      "name": "Garam masala",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "¼ tsp"
+    },
+    {
+      "ingredientId": "carom-seeds",
+      "name": "Carom seeds (ajwain)",
+      "quantity": 0.2,
+      "unit": "g",
+      "householdMeasure": "1 pinch, crushed"
+    },
+    {
+      "ingredientId": "dried-fenugreek-leaves",
+      "name": "Dried fenugreek leaves (kasuri methi)",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "½ tsp, crushed between the palms"
+    },
+    {
+      "ingredientId": "salt",
+      "name": "Salt (namak)",
+      "quantity": 2,
+      "unit": "g",
+      "householdMeasure": "a level ⅓ tsp"
+    },
+    {
+      "ingredientId": "lemon",
+      "name": "Lemon juice (nimbu ras)",
+      "quantity": 5,
+      "unit": "ml",
+      "householdMeasure": "1 tsp (about ¼ lemon)"
+    },
+    {
+      "ingredientId": "mustard-oil-kachi-ghani",
+      "name": "Mustard oil (sarson ka tel), or any cooking oil",
+      "quantity": 10,
+      "unit": "ml",
+      "householdMeasure": "2 tsp (1 tsp in the marinade, 1 tsp for basting)"
+    }
+  ],
+  "equipment": [
+    "Mixing bowl with a lid or cling film, for marinating",
+    "Knife and chopping board",
+    "Muslin or thin cotton cloth plus a strainer, for hanging the curd",
+    "Small dry pan, for roasting the besan",
+    "Skewers: large bamboo skewers for the oven, small ones for a tawa; soak bamboo skewers in water for 20 min so they do not burn",
+    "Oven/OTG (main method) with a wire rack over a foil-lined tray",
+    "No oven, air fryer instead: 200 °C, preheat 3 min, lightly brush the basket, cook 10–12 min, turning and basting at 6 min; add 1–2 min at the highest setting for char",
+    "No oven or air fryer, tawa/heavy pan instead: heat 1 tsp oil on a tawa or grill pan on medium-high",
+    "Basting brush (or the back of a spoon); tongs"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "title": "Hang the curd (skip if using thick Greek-style yoghurt)",
+      "text": "Put 80 g (⅓ cup) curd in a muslin-lined strainer over a bowl and leave it in the fridge.",
+      "timerSec": 60,
+      "tip": "Runny curd releases whey in the oven and the masala slides off onto the tray. Do steps 2–6 while it drains.",
+      "visualCue": "Whey drips into the bowl; the curd turns thick like soft cream cheese, about 40 g left",
+      "cameraCheck": "The thick curd in the cloth",
+      "videoShot": "A spoon pulling a thick dollop off the muslin."
+    },
+    {
+      "n": 2,
+      "title": "Cut the paneer",
+      "text": "Cut 125 g paneer into 6–8 cubes about 3 cm across and 2–2.5 cm thick.",
+      "timerSec": 120,
+      "tip": "Thin pieces dry out and turn rubbery before they char.",
+      "visualCue": "Even, chunky cubes; none thinner than 2 cm",
+      "cameraCheck": "The paneer cubes on the board",
+      "videoShot": "The knife cutting the block into cubes."
+    },
+    {
+      "n": 3,
+      "title": "Pat the paneer dry",
+      "text": "Press the cubes gently between paper towels.",
+      "timerSec": 30,
+      "tip": "Wet paneer does not hold the marinade and steams instead of roasting.",
+      "visualCue": "Matte, not wet, surface",
+      "cameraCheck": "The dried cubes",
+      "videoShot": "A paper towel pressing on the cubes."
+    },
+    {
+      "n": 4,
+      "title": "Cut the capsicum",
+      "text": "Deseed 40 g capsicum and cut it into squares about the size of the paneer (3 cm).",
+      "timerSec": 60,
+      "tip": "Do not cut them small; they shrink in the heat.",
+      "visualCue": "Flat squares the same width as the paneer",
+      "cameraCheck": "The capsicum squares",
+      "videoShot": "The knife cutting capsicum strips into squares."
+    },
+    {
+      "n": 5,
+      "title": "Cut the onion",
+      "text": "Cut 40 g onion into quarters and separate each quarter into petals of 2–3 layers.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Curved petals about 3 cm wide",
+      "cameraCheck": "The onion petals",
+      "videoShot": "Fingers separating onion layers."
+    },
+    {
+      "n": 6,
+      "title": "Roast the besan",
+      "text": "Dry-roast 1 tsp (5 g) besan in a small pan on low heat, stirring, then tip it onto a plate.",
+      "timerSec": 60,
+      "tip": "The besan soaks up moisture so the coating clings and turns crisp at the edges.",
+      "visualCue": "Turns a shade darker and smells nutty; no dark specks",
+      "cameraCheck": "The roasted besan on the plate",
+      "videoShot": "A spoon stirring besan in a dry pan."
+    },
+    {
+      "n": 7,
+      "title": "Start the marinade",
+      "text": "In a mixing bowl, whisk the 40 g hung curd with 1 tsp (6 g) ginger-garlic paste.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Smooth, thick paste with no lumps",
+      "cameraCheck": "The curd paste",
+      "videoShot": "A spoon whisking the curd smooth."
+    },
+    {
+      "n": 8,
+      "title": "Add the powders and salt",
+      "text": "Add 1 tsp (2 g) Kashmiri chilli powder, a pinch of turmeric, ½ tsp (1 g) coriander powder, ¼ tsp (0.5 g) cumin powder, ¼ tsp (0.5 g) garam masala, a pinch of crushed ajwain, ⅓ tsp (2 g) salt and the 5 g roasted besan. Mix.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "An even, orange-red paste with no streaks of white",
+      "cameraCheck": "The red marinade",
+      "videoShot": "Powders falling onto the white curd and being stirred in."
+    },
+    {
+      "n": 9,
+      "title": "Add kasuri methi, lemon and oil",
+      "text": "Crush ½ tsp kasuri methi between your palms into the bowl, add 1 tsp (5 ml) lemon juice and 1 tsp (5 ml) mustard oil. Mix well.",
+      "timerSec": 30,
+      "tip": "Too thin? Add ½ tsp more roasted besan.",
+      "visualCue": "A glossy, thick paste that coats the spoon and does not run",
+      "cameraCheck": "The spoon coated in marinade",
+      "videoShot": "Palms rubbing kasuri methi over the bowl."
+    },
+    {
+      "n": 10,
+      "title": "Coat the paneer and vegetables",
+      "text": "Add the paneer, capsicum and onion and fold gently with a spoon until every piece is coated.",
+      "timerSec": 60,
+      "tip": "Fold, do not stir hard, or the paneer edges crumble.",
+      "visualCue": "Every face of every cube is red; no bare white patches",
+      "cameraCheck": "The coated pieces in the bowl",
+      "videoShot": "A spoon folding the cubes through the marinade."
+    },
+    {
+      "n": 11,
+      "title": "Marinate",
+      "text": "Cover and refrigerate.",
+      "timerSec": 3600,
+      "tip": null,
+      "visualCue": "None needed; set a timer",
+      "cameraCheck": "The covered bowl in the fridge",
+      "videoShot": "Cling film pressed over the bowl."
+    },
+    {
+      "n": 12,
+      "title": "Soak the skewers",
+      "text": "Put 2–3 bamboo skewers in a tray of water.",
+      "timerSec": 1200,
+      "tip": null,
+      "visualCue": "Skewers fully under water",
+      "cameraCheck": "The skewers in water",
+      "videoShot": "Skewers dropping into a water tray."
+    },
+    {
+      "n": 13,
+      "title": "Preheat",
+      "text": "Set the oven/OTG to 230 °C, top and bottom heat, for the last 15 min of marinating.",
+      "timerSec": 900,
+      "tip": "Air fryer: preheat 3 min at 200 °C instead. Tawa: skip to step 14, then follow the tawa method in section 3.",
+      "visualCue": "The indicator light goes off / the beep sounds",
+      "cameraCheck": "The dial at 230 °C",
+      "videoShot": "Turning the oven dial."
+    },
+    {
+      "n": 14,
+      "title": "Thread the skewers",
+      "text": "Thread paneer, capsicum and onion alternately, 3–4 paneer cubes per skewer, leaving a small gap between pieces.",
+      "timerSec": 120,
+      "tip": "Push the skewer through the centre of the paneer gently and twist slightly so it does not split.",
+      "visualCue": "Colourful skewers, pieces not squashed together",
+      "cameraCheck": "The threaded skewers",
+      "videoShot": "A paneer cube sliding onto a skewer after an onion petal."
+    },
+    {
+      "n": 15,
+      "title": "Set up the tray",
+      "text": "Lay the skewers on a wire rack over a foil-lined tray. Brush them with ½ tsp (2.5 ml) mustard oil.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Glossy skewers resting across the rack",
+      "cameraCheck": "The skewers on the rack",
+      "videoShot": "A brush gliding over the skewers."
+    },
+    {
+      "n": 16,
+      "title": "First roast",
+      "text": "Put the tray on the middle shelf and roast.",
+      "timerSec": 480,
+      "tip": null,
+      "visualCue": "The coating has set and looks dry; onion edges start to brown",
+      "cameraCheck": "The skewers through the oven door",
+      "videoShot": "The tray sliding into the glowing oven."
+    },
+    {
+      "n": 17,
+      "title": "Turn and baste",
+      "text": "Take the tray out, turn the skewers over and brush with the remaining ½ tsp (2.5 ml) oil.",
+      "timerSec": 60,
+      "tip": "Close the oven door while you baste so it stays hot.",
+      "visualCue": "The pale underside is now on top and glossy",
+      "cameraCheck": "The turned skewers",
+      "videoShot": "Tongs flipping a skewer."
+    },
+    {
+      "n": 18,
+      "title": "Second roast",
+      "text": "Return the tray and roast.",
+      "timerSec": 420,
+      "tip": null,
+      "visualCue": "Paneer golden with brown spots; capsicum blistered; onion soft at the edges",
+      "cameraCheck": "The skewers through the oven door",
+      "videoShot": "Edges sizzling and darkening."
+    },
+    {
+      "n": 19,
+      "title": "Char",
+      "text": "Switch to grill/top heat for 2–3 min, or hold each skewer over a medium gas flame with tongs for 30–60 sec, turning.",
+      "timerSec": 120,
+      "tip": "Charring is what gives the \"tandoori\" taste. Do not keep going too long; paneer hardens when overcooked.",
+      "visualCue": "Small black spots on the paneer corners and onion edges, without burning the whole surface",
+      "cameraCheck": "A charred skewer",
+      "videoShot": "A skewer turning over a blue flame."
+    },
+    {
+      "n": 20,
+      "title": "Serve",
+      "text": "Slide the pieces onto a plate, squeeze the lemon wedge over, and sprinkle a pinch of chaat masala if you like. Serve at once with mint chutney and onion rings.",
+      "timerSec": 60,
+      "tip": "Paneer tikka is best within 5–10 min; it firms up as it cools.",
+      "visualCue": "Hot, charred pieces with green chutney beside them",
+      "cameraCheck": "The finished plate",
+      "videoShot": "Lemon being squeezed over the hot tikka."
+    }
+  ],
+  "nutritionPerServing": {
+    "kcal": 515,
+    "proteinG": 29,
+    "carbsG": 15.6,
+    "fatG": 38,
+    "fibreG": 3.7
+  },
+  "microNutrientsEstimate": {
+    "values": {
+      "cholesterol": 0,
+      "vitamin-b12": 0,
+      "vitamin-c": 49.2
+    },
+    "coveragePct": 18,
+    "basis": "partial estimate from ingredient quantities"
+  },
+  "asOrdered": {
+    "price": {
+      "priceHistory": [
+        {
+          "date": "2026-10-14",
+          "min": 200,
+          "max": 390,
+          "avg": 331,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-10-14.md"
+        }
+      ],
+      "currentEstimate": {
+        "min": 280,
+        "max": 380,
+        "avg": 330
+      },
+      "method": "single",
+      "trend": "unknown",
+      "change30dPct": null,
+      "lastObserved": "2026-10-14",
+      "stale": false,
+      "seasonal": false,
+      "listingCount": 3,
+      "platforms": [
+        "magicpin",
+        "Swiggy"
+      ],
+      "outOfStock": false,
+      "confirmed": true,
+      "checkNotes": []
+    },
+    "nutrition": {
+      "calories": {
+        "value": null,
+        "source": null
+      },
+      "protein": {
+        "value": null,
+        "source": null
+      },
+      "carbs": {
+        "value": null,
+        "source": null
+      },
+      "fat": {
+        "value": null,
+        "source": null
+      },
+      "fibre": {
+        "value": null,
+        "source": null
+      }
+    },
+    "restaurantsSampled": 10,
+    "platforms": [
+      "Swiggy",
+      "Zomato",
+      "magicpin"
+    ]
+  },
+  "orderPrice": {
+    "priceHistory": [
+      {
+        "date": "2026-10-14",
+        "min": 200,
+        "max": 390,
+        "avg": 331,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-10-14.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 280,
+      "max": 380,
+      "avg": 330
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-14",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 3,
+    "platforms": [
+      "magicpin",
+      "Swiggy"
+    ],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
+  },
+  "healthiness": {
+    "score": 6,
+    "restaurantScore": 4,
+    "reasons": [
+      "about 29 g protein with good calcium, no deep-frying, no sugar, some vegetables and only 2 tsp oil. But full-fat paneer carries about 16 g saturated fat, so one plate has about 81% of the daily saturated fat limit and about 515 kcal, a lot for a starter. Restaurant versions are usually brushed with butter, often coloured with food dye, more heavily salted, and the plate size is not stated."
+    ]
+  },
+  "researchRating": {
+    "score": 4.5,
+    "basis": "India's best-known vegetarian tandoor starter, on almost every North Indian menu in Mumbai (Swiggy's Mumbai page alone lists about 50 paneer tikka dishes, with Jain, hariyali, malai and achari versions), with Mumbai food guides (Curly Tales, Restaurant Guru's top-20 list) and diner reviews (Tripadvisor \"Best Paneer Tikka ever!\" for Peshawri) dedicated to it, and recipes from all major Indian recipe sites in oven, air-fryer and stovetop versions. Small deduction because home versions are commonly described as rubbery or with the masala sliding off when runny curd or thin pieces are used. Recipe-site vote counts could not be retrieved in this run (the sites were not reachable), so the rating rests on breadth of coverage rather than vote averages."
+  },
+  "storage": "Fridge-safe in a closed box for up to 2 days; cool within 1 hour. Freezing cooked tikka is not recommended (paneer turns crumbly and the vegetables go watery). Marinated raw paneer can wait in the fridge up to about 8 hours (longer can make it soft). Reheat on a hot tawa with a few drops of oil for 2–3 min, turning, or in an air fryer at 180 °C for 3–4 min; the microwave makes paneer rubbery.",
+  "leftoverRemix": "Paneer tikka kathi roll / frankie (an established Mumbai street-food format). Spread 1 tbsp green chutney on a hot whole-wheat roti, add the reheated tikka pieces, raw onion slices, a squeeze of lemon and a pinch of chaat masala, then roll it in foil. Or chop the leftovers into a tangy rice bowl with cucumber and curd.",
+  "burnOff": "about 7.4 km of running (515 ÷ 70 kcal/km, for a 70 kg adult), or about 10.3 km of brisk walking (about 2 hours at 5 km/h, using about 50 kcal/km for walking) (est.).",
+  "sources": [
+    "Veg Recipes of India, Paneer Tikka Recipe (Oven & Tawa) (hung curd; besan; 1–2 h marination, overnight may break the paneer; large skewers for oven, small for tawa): https://www.vegrecipesofindia.com/paneer-tikka-on-stove-top-recipe/",
+    "Swasthi's Recipes (Indian Healthy Recipes), Paneer Tikka in Oven, Air Fryer, Stovetop (thick curd, runny curd releases whey; preheat 230 °C/450 °F; spray oil on the skewers): https://www.indianhealthyrecipes.com/paneer-tikka-on-stove-top/ ; print version: https://www.indianhealthyrecipes.com/wprm_print/paneer-tikka-recipe-in-oven-air-fryer-stovetop",
+    "My Food Story, Air Fryer Paneer Tikka (pat paneer dry; about 13 min cooking): https://myfoodstory.com/?p=63213",
+    "Piping Pot Curry, paneer tikka: https://pipingpotcurry.com/?p=30424",
+    "Wonderchef, Air Fryer Paneer Tikka: https://www.wonderchef.com/blogs/recipes/air-fryer-paneer-tikka-recipe-quick-healthy-indian-snack",
+    "Instacuppa, Air Fryer Paneer Tikka (minimum 30 min marinade, 2 h better): https://instacuppastore.com/blogs/main-page/air-fryer-paneer-tikka-smoky-flavour-without-a-tandoor",
+    "Background: Wikipedia, Tikka (food): https://en.wikipedia.org/wiki/Tikka_(food)",
+    "Sanjeev Kapoor, Jain Hariyali Paneer Tikka: https://sanjeevkapoor.com/recipe/Jain-Hariyali-Paneer-Tikka.html",
+    "Indian Veggie Delight, Tandoori Tofu Tikka (air fryer, oven, grill, tawa): https://www.indianveggiedelight.com/wprm_print/tandoori-tofu-tikka-air-fryer-oven-grill-tawa",
+    "Cook's Hideout, Grilled Tofu Tikka Kebabs: https://www.cookshideout.com/wprm_print/grilled-tofu-tikka-kebabs",
+    "Herbivore Cucina, Tofu Tikka Skewers: https://herbivorecucina.com/wprm_print/tofu-tikka-skewers",
+    "Kamal Kitchen, Tofu kebabs / tofu paneer tikka: https://kamalkitchen.com/tofu-kebabs-or-tofu-paneer-tikka-pan-grilled-perfection",
+    "Vegan Richa, Tofu Tikka Masala (no onion, no garlic; non-dairy yoghurt marinade): https://www.veganricha.com/tofu-tikka-masala-no-onion-no-garlic/",
+    "The Plant-Based School, Tofu Tikka Masala (thick non-dairy yoghurt): https://theplantbasedschool.com/tofu-tikka-masala",
+    "USDA FoodData Central (fresh cheese, Greek yoghurt, capsicum, onion, chickpea flour, mustard oil, firm tofu, spices): https://fdc.nal.usda.gov/",
+    "ICMR-NIN, Nutrient Requirements for Indians 2020 (RDA/EAR reference): https://www.nin.res.in/ ; IFCT 2017 referenced but values not confirmed from this environment.",
+    "Context: Tarla Dalal, Calories in Paneer Tikka: https://www.tarladalal.com/calories-for-paneer-tikka-2754 ; ClearCals, Paneer tikka: https://clearcals.com/recipes/paneer-tikka/ ; NutriScan, Paneer Tikka: https://nutriscan.app/calories-nutrition/paneer-tikka ; Nutribit, Paneer Tikka: https://www.nutribit.app/food/66ac7fc9f3a3e393cb974305",
+    "Veg Recipes of India, Navratri fasting rules (as used in earlier FitPlate dishes): https://www.vegrecipesofindia.com/navratri-fasting-rules-vrat-ka-khana/",
+    "Hindutone, Navratri 2026 fasting rules (same rules for Ekadashi fasts): https://hindutone.com/festivals/navratri-fasting-rules-2026-vrat-food-what-to-eat-avoid/",
+    "Swiggy, Best Paneer Tikka Restaurants In Mumbai 2024 (Chaap Theka ₹199, Sadak Chaap ₹389, Ebony Casual Diner ₹458, Jain Paneer Tikka ₹199, Jain Chilli Cheese Paneer Tikka ₹239): https://www.swiggy.com/city/mumbai/paneer-tikka-dish-restaurants",
+    "magicpin, Original / Angara Paneer Tikka [10 Pcs], Lower Parel West (₹279 / ₹299): https://magicpin.in/Mumbai/Lower-Parel-West/Restaurant/product/Angara-Paneer-Tikka-[10-Pcs]/?itemId=1326260&mid=11724935&lat=18.99848945&lon=72.82144669",
+    "Zomato, Faiz Tikka, Byculla (paneer tikka stick ₹125): https://www.zomato.com/mumbai/faiz-tikka-1-byculla/order",
+    "Zomato, Versova Social (Achaari Paneer Tikka ₹395; premium): https://www.zomato.com/VersovaSocial/order",
+    "Zomato, Altitude, Lower Parel (Paneer Tikka ₹650; premium): https://www.zomato.com/mumbai/altitude-all-veg-all-vibe-kitchen-bar-lower-parel/order",
+    "Bestmenuhub, Taj Hotel Mumbai menu (Dhaniya Paneer Tikka ₹675; premium, third-party): https://bestmenuhub.com/taj-hotel-mumbai-menu/",
+    "Swiggy, Mr. Praji, Ambernath (Paneer Tikka ₹259.20; outside city): https://www.swiggy.com/menu/608568",
+    "magicpin, Mirchi, Kalamboli, Panvel (Paneer Tikka Dry ₹237 discounted; not used): https://magicpin.in/Mumbai/Kalamboli/Restaurant/Mirchi/store/2417b/delivery",
+    "Zomato, Paneer Tikka in Mumbai and Paneer Tikka Dry in Mumbai (cost for two only): https://www.zomato.com/mumbai/restaurants/dish-paneer-tikka ; https://www.zomato.com/mumbai/restaurants/dish-paneer-tikka-dry",
+    "Zomato, Sarovar Pure Veg, Kandivali West; Bhagwati Veg Restaurant, Kandivali West; Mealful Rolls, Kandivali East; The Malai Paneer Company, Malad West (no prices visible): https://www.zomato.com/mumbai/sarovar-pure-veg-kandivali-west/order ; https://www.zomato.com/mumbai/bhagwati-veg-restaurant-kandivali-west/order ; https://www.zomato.com/mumbai/mealful-rolls-indias-biggest-rolls-1-kandivali-east/order ; https://www.zomato.com/mumbai/the-malai-paneer-company-malad-west/order",
+    "Swiggy Dineout, Kalpana Restaurant & Bar, Worli; Oye Teri, Ghatkopar West (no prices visible): https://www.swiggy.com/restaurants/mumbai/worli/kalpana-restaurant-bar-18664/dineout/menu ; https://www.swiggy.com/restaurants/mumbai/ghatkopar-west/oye-teri-the-kulcha-kulture-705904/dineout",
+    "Justdial, Paneer Tikka Masala restaurants, Kandivali West (Chaap Theka, Sadak Chaap outlets): https://www.justdial.com/Mumbai/Paneer-Tikka-Masala-Dish-Restaurants-in-Mahavir-Nagar-Kandivali-West",
+    "Rating context: Curly Tales, 5 Places In Mumbai That Serve The Best Paneer Tikka: https://curlytales.com/5-places-in-mumbai-that-serve-the-best-paneer-tikka/ ; Restaurant Guru, top 20 restaurants with paneer tikka in Mumbai: https://restaurant-guru.in/paneer-tikka-Mumbai-m7924 ; Tripadvisor, Peshawri, \"Best Paneer Tikka ever!\": https://www.tripadvisor.in/ShowUserReviews-g304554-d1014520-r794743228-Peshawri-Mumbai_Maharashtra.html"
+  ],
+  "allergens": [
+    "milk",
+    "mustard"
+  ],
+  "dietClaims": [
+    "glutenFree"
+  ],
+  "fasting": {
+    "navratri": {
+      "status": "with-changes",
+      "reason": "paneer and curd are vrat foods in the common rule set, but skip onion, garlic, besan (a pulse flour), turmeric, garam masala and coriander powder, and use sendha namak instead of table salt; assumption: the common North Indian Navratri rule set."
+    },
+    "ekadashi": {
+      "status": "with-changes",
+      "reason": "same swaps as Navratri (no besan, as pulses are avoided on Ekadashi; no onion or garlic; sendha namak)."
+    },
+    "jain": {
+      "status": "with-changes",
+      "reason": "skip onion, garlic and fresh ginger; Sanjeev Kapoor's Jain Hariyali Paneer Tikka is an established version."
+    },
+    "ramadan": {
+      "status": "yes",
+      "reason": "vegetarian, so no halal sourcing needed; a good high-protein iftar starter, but at about 830 mg sodium (est.) it is a little salty for sehri unless you cut the salt."
+    }
+  },
+  "dietTags": {
+    "base": "Vegetarian",
+    "jain": {
+      "status": "with-changes",
+      "reason": "skip onion, garlic and fresh ginger (root); use the Jain Hariyali Paneer Tikka variant (section 4)."
+    },
+    "vegan": {
+      "status": "with-changes",
+      "reason": "paneer to pressed extra-firm tofu and curd to unsweetened plant yoghurt (Vegan variant, tofu tikka)."
+    },
+    "pescatarian": {
+      "status": "yes",
+      "reason": "no meat, fish or egg; vegetarian dishes fit a pescatarian diet."
+    },
+    "sattvik": {
+      "status": "with-changes",
+      "reason": "leave out the onion and the garlic (the Jain variant is also sattvik)."
+    },
+    "glutenFree": {
+      "status": "yes",
+      "reason": "the only flour is 1 tsp besan (gram flour, naturally gluten-free if pure) and no hing is used; if you sprinkle chaat masala or use a packaged tikka masala, check the label, as many contain hing compounded with wheat flour."
+    },
+    "dairyFree": {
+      "status": "with-changes",
+      "reason": "contains paneer and curd; use the Vegan variant (tofu + plant yoghurt)."
+    },
+    "allergensDeclared": [
+      "milk",
+      "mustard"
+    ]
+  },
+  "tags": [
+    "Veg",
+    "Jain option",
+    "Gluten-free",
+    "Ramadan sehri / iftar",
+    "Contains milk",
+    "Contains mustard",
+    "Snack",
+    "North Indian",
+    "Under 60 min",
+    "Beginner",
+    "High protein"
+  ],
+  "description": "A vegetarian, gluten-free grilled paneer starter with no flour or deep-frying; Jain (no onion-garlic), vegan tofu tikka, dairy-free and lower-fat versions below.",
+  "familyId": null,
+  "variants": [
+    {
+      "category": "Gluten-free",
+      "status": "already-fits",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": "main recipe already gluten-free (besan is a pulse flour; no hing, no wheat). Check chaat masala or packaged tikka masala labels."
+    }
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-10-14",
+      "file": "FitPlate_Dishes_2026-10-14.md"
+    }
+  ],
+  "mergeMethod": {
+    "nutritionPerServing": "stable (single)",
+    "orderPrice": "price engine (single)",
+    "ingredients": "newest",
+    "steps": "newest",
+    "healthiness": "newest",
+    "researchRating": "newest",
+    "sources": "union",
+    "tags": "tag engine (tags.ts) on the merged dish"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 200.0–390.0 was wider than 30% of avg 331.0; narrowed to ±15%."
+  ]
+}

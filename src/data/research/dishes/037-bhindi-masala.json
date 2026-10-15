@@ -1,0 +1,530 @@
+{
+  "id": "037-bhindi-masala",
+  "number": 37,
+  "name": "Bhindi Masala",
+  "cuisine": "North Indian (Punjabi and everyday home-style dry/semi-dry sabzi, cooked all over India)",
+  "dietType": "veg",
+  "mealType": [
+    "lunch",
+    "dinner"
+  ],
+  "difficulty": "Beginner",
+  "prepMin": 15,
+  "cookMin": 18,
+  "servings": 1,
+  "ingredients": [
+    {
+      "ingredientId": "okra",
+      "name": "Okra (bhindi / lady's finger)",
+      "quantity": 200,
+      "unit": "g",
+      "householdMeasure": "18–20 medium pods, sliced into 1.5–2 cm pieces"
+    },
+    {
+      "ingredientId": null,
+      "name": "Sunflower oil (or groundnut / mustard oil)",
+      "quantity": 10,
+      "unit": "ml",
+      "householdMeasure": "2 tsp (split: 1½ tsp for the okra, ½ tsp for the masala)"
+    },
+    {
+      "ingredientId": "cumin-seeds",
+      "name": "Cumin seeds (jeera)",
+      "quantity": 1,
+      "unit": "g",
+      "householdMeasure": "½ tsp"
+    },
+    {
+      "ingredientId": "asafoetida",
+      "name": "Asafoetida (hing), optional",
+      "quantity": 0.1,
+      "unit": "g",
+      "householdMeasure": "a tiny pinch"
+    },
+    {
+      "ingredientId": "onion",
+      "name": "Onion (pyaz)",
+      "quantity": 60,
+      "unit": "g",
+      "householdMeasure": "1 small onion, thinly sliced"
+    },
+    {
+      "ingredientId": "ginger",
+      "name": "Ginger (adrak)",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "¾ tsp, finely chopped or grated"
+    },
+    {
+      "ingredientId": "garlic",
+      "name": "Garlic (lahsun)",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "1 large clove, finely chopped"
+    },
+    {
+      "ingredientId": "green-chilli",
+      "name": "Green chilli (hari mirch)",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "½–1 chilli, slit"
+    },
+    {
+      "ingredientId": "tomato",
+      "name": "Tomato (tamatar)",
+      "quantity": 60,
+      "unit": "g",
+      "householdMeasure": "½ medium tomato, finely chopped"
+    },
+    {
+      "ingredientId": "turmeric-powder",
+      "name": "Turmeric powder (haldi)",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "⅛ tsp (a generous pinch)"
+    },
+    {
+      "ingredientId": "kashmiri-red-chilli-powder",
+      "name": "Kashmiri red chilli powder (lal mirch)",
+      "quantity": 1,
+      "unit": "g",
+      "householdMeasure": "½ tsp"
+    },
+    {
+      "ingredientId": "coriander-powder",
+      "name": "Coriander powder (dhania powder)",
+      "quantity": 2,
+      "unit": "g",
+      "householdMeasure": "1 tsp"
+    },
+    {
+      "ingredientId": "dry-mango-powder",
+      "name": "Dry mango powder (amchur)",
+      "quantity": 1,
+      "unit": "g",
+      "householdMeasure": "½ tsp"
+    },
+    {
+      "ingredientId": "garam-masala",
+      "name": "Garam masala",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "¼ tsp"
+    },
+    {
+      "ingredientId": "salt",
+      "name": "Salt (namak)",
+      "quantity": 2,
+      "unit": "g",
+      "householdMeasure": "⅓ tsp (scant ½ tsp)"
+    },
+    {
+      "ingredientId": "coriander-leaves",
+      "name": "Coriander leaves (dhania), garnish",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "1 tbsp, chopped"
+    }
+  ],
+  "equipment": [
+    "Wide frying pan or kadai (9–10 inch), preferably non-stick or well-seasoned iron",
+    "Flat spatula (wooden or steel)",
+    "Chopping board and knife (both completely dry)",
+    "Colander or strainer, and a clean dry kitchen towel (or newspaper / paper towels) for drying the okra",
+    "A plate to keep the fried okra aside",
+    "Measuring spoons (normal teaspoons are a fine stand-in)",
+    "Small bowl for the powdered spices",
+    "No lid is needed (this version is cooked uncovered)"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "title": "Wash the okra whole",
+      "text": "Put the 200 g okra pods in a colander and rinse under running water, rubbing each pod lightly with your fingers. Do not cut them yet.",
+      "timerSec": 120,
+      "tip": "Wash before cutting, never after. Water inside cut okra is the main cause of sliminess.",
+      "visualCue": "Pods look clean and bright green, no dust in the ridges.",
+      "cameraCheck": "The washed okra in the colander",
+      "videoShot": "Water running over okra pods in a colander."
+    },
+    {
+      "n": 2,
+      "title": "Dry the okra completely",
+      "text": "Spread the pods on a dry kitchen towel and rub them dry, then leave them spread out for a few minutes (or under a fan) until no damp spots remain.",
+      "timerSec": 180,
+      "tip": "Many cooks wash the okra in the morning and let it air-dry for hours. Even 10 minutes under a fan helps a lot.",
+      "visualCue": "Pods feel completely dry to the touch, including the ridges and the tip.",
+      "cameraCheck": "The dry pods spread on the towel",
+      "videoShot": "Hands rolling okra pods in a towel."
+    },
+    {
+      "n": 3,
+      "title": "Trim and slice the okra",
+      "text": "With a dry knife on a dry board, cut off the stem top and the very tip of each pod, then slice into 1.5–2 cm pieces.",
+      "timerSec": 240,
+      "tip": "Wipe the knife with a dry cloth if it gets sticky. Larger pieces release less slime than thin rounds. If a pod is hard and woody when you cut it, throw that pod away.",
+      "visualCue": "Even, thumb-width pieces; you may see a few sticky threads on the knife (normal).",
+      "cameraCheck": "The heap of sliced okra on the board",
+      "videoShot": "The knife slicing okra into rounds."
+    },
+    {
+      "n": 4,
+      "title": "Slice and chop the aromatics",
+      "text": "Thinly slice the onion (60 g). Finely chop the tomato (60 g), ginger (¾ tsp), garlic (1 clove), and slit the green chilli.",
+      "timerSec": 180,
+      "tip": null,
+      "visualCue": "Thin onion slices; tomato in small dice.",
+      "cameraCheck": "Small heaps of onion, tomato, ginger-garlic and chilli on the board",
+      "videoShot": "Overhead shot of the chopped heaps."
+    },
+    {
+      "n": 5,
+      "title": "Mix the powdered spices",
+      "text": "In a small bowl, put ⅛ tsp turmeric, ½ tsp Kashmiri chilli powder and 1 tsp coriander powder. Keep the amchur, garam masala and salt aside separately for the end.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "A small mound of yellow, red and brown powders.",
+      "cameraCheck": "The spice bowl, with amchur, garam masala and salt kept separately",
+      "videoShot": "The powders being spooned into a bowl."
+    },
+    {
+      "n": 6,
+      "title": "Heat the pan with oil for the okra",
+      "text": "Put the wide pan on medium heat and add 1½ tsp of the oil. Tilt to spread it.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "The oil shimmers and flows easily across the pan.",
+      "cameraCheck": "The pan with hot oil",
+      "videoShot": "Oil spreading across a wide pan."
+    },
+    {
+      "n": 7,
+      "title": "Add the okra in a single layer",
+      "text": "Add all the sliced okra and spread it out with the spatula so most pieces touch the pan.",
+      "timerSec": 30,
+      "tip": "Do not add salt now. Salt draws out moisture and makes the okra slimy.",
+      "visualCue": "A gentle sizzle as the okra hits the pan.",
+      "cameraCheck": "The okra spread out in the pan",
+      "videoShot": "Okra pieces tumbling into the pan and being spread out."
+    },
+    {
+      "n": 8,
+      "title": "Pan-fry the okra, uncovered, stirring rarely",
+      "text": "Cook on medium heat, stirring gently only every 1½–2 minutes.",
+      "timerSec": 480,
+      "tip": "Never cover the pan, and never add water. Too much stirring breaks the pieces and spreads the slime. Lower the heat a little if the okra browns too fast before the threads are gone.",
+      "visualCue": "At first the okra looks sticky with white threads; keep going until the threads disappear, the pieces look dry, slightly shrunk and have light golden-brown spots.",
+      "cameraCheck": "A close-up of the okra pieces showing no sticky threads",
+      "videoShot": "The spatula lifting dry, lightly browned okra."
+    },
+    {
+      "n": 9,
+      "title": "Check that the okra is cooked",
+      "text": "Press a piece with the spatula.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "It is tender and squashes easily but still holds its shape; no sticky strands when you lift the spatula.",
+      "cameraCheck": "A piece of okra pressed with the spatula",
+      "videoShot": "The spatula pressing a piece of okra."
+    },
+    {
+      "n": 10,
+      "title": "Move the okra to a plate",
+      "text": "Tip the cooked okra onto a plate and keep it uncovered.",
+      "timerSec": 30,
+      "tip": "Leave it uncovered so steam does not soften it again.",
+      "visualCue": "Dry, separate pieces on the plate.",
+      "cameraCheck": "The plate of fried okra",
+      "videoShot": "Okra sliding off the pan onto a plate."
+    },
+    {
+      "n": 11,
+      "title": "Temper the cumin",
+      "text": "In the same pan on medium heat, add the remaining ½ tsp oil, then ½ tsp cumin seeds and the pinch of hing.",
+      "timerSec": 30,
+      "tip": "The pan already has a little oil left from the okra, so this small amount is enough.",
+      "visualCue": "The cumin sizzles, darkens one shade and smells toasty.",
+      "cameraCheck": "The cumin sizzling in the pan",
+      "videoShot": "Cumin seeds crackling in a little oil."
+    },
+    {
+      "n": 12,
+      "title": "Fry the onion",
+      "text": "Add the sliced onion and stir on medium heat.",
+      "timerSec": 180,
+      "tip": null,
+      "visualCue": "The onion turns soft and light golden at the edges.",
+      "cameraCheck": "The onion in the pan",
+      "videoShot": "The spatula stirring onions turning golden."
+    },
+    {
+      "n": 13,
+      "title": "Add the ginger, garlic and green chilli",
+      "text": "Stir well.",
+      "timerSec": 40,
+      "tip": null,
+      "visualCue": "The raw garlic smell goes and the pan smells fragrant.",
+      "cameraCheck": "The onion with ginger, garlic and chilli",
+      "videoShot": "Ginger-garlic hitting the onions."
+    },
+    {
+      "n": 14,
+      "title": "Add the tomato and the spice powders",
+      "text": "Add the chopped tomato and the spice bowl (turmeric, chilli, coriander powder). Turn the heat to low-medium and stir.",
+      "timerSec": 180,
+      "tip": "If the masala sticks, press the tomato down harder to release its juice instead of adding water. If you must, add only 1 tsp water.",
+      "visualCue": "The tomato breaks down into a thick, jammy masala and a little oil shines at the edges.",
+      "cameraCheck": "The masala in the pan",
+      "videoShot": "Tomato and spices being mashed with the spatula into a paste."
+    },
+    {
+      "n": 15,
+      "title": "Return the okra to the pan",
+      "text": "Add the fried okra and toss gently so every piece is coated in masala.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "The okra is evenly coated in a red-brown masala; no liquid in the pan.",
+      "cameraCheck": "The okra mixed with the masala",
+      "videoShot": "The okra being folded into the masala."
+    },
+    {
+      "n": 16,
+      "title": "Add salt and finishing spices, cook briefly",
+      "text": "Sprinkle ⅓ tsp salt, ½ tsp amchur and ¼ tsp garam masala. Toss gently and cook uncovered on low heat.",
+      "timerSec": 120,
+      "tip": "Salt and the sour amchur go in last, when the okra is already cooked, so they flavour it without making it slimy.",
+      "visualCue": "The sabzi looks dry and glossy and smells tangy and spiced.",
+      "cameraCheck": "The finished sabzi in the pan",
+      "videoShot": "Amchur and garam masala being sprinkled over the okra."
+    },
+    {
+      "n": 17,
+      "title": "Garnish and serve",
+      "text": "Switch off the heat, scatter the chopped coriander leaves, taste a piece and adjust salt or amchur. Spoon into a bowl.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "A dry/semi-dry bowl of okra pieces coated in masala, with soft onions and green flecks.",
+      "cameraCheck": "The bowl of bhindi masala",
+      "videoShot": "Bhindi masala spooned into a bowl next to a hot roti."
+    }
+  ],
+  "nutritionPerServing": {
+    "kcal": 205,
+    "proteinG": 5.8,
+    "carbsG": 27.1,
+    "fatG": 10.6,
+    "fibreG": 9.5
+  },
+  "microNutrientsEstimate": {
+    "values": {
+      "calcium": 164,
+      "folate": 120,
+      "iron": 1.2,
+      "magnesium": 114,
+      "potassium": 598,
+      "sodium": 14,
+      "vitamin-a": 91.1,
+      "vitamin-c": 61.2,
+      "vitamin-k": 8.2,
+      "zinc": 1.2
+    },
+    "coveragePct": 75,
+    "basis": "partial estimate from ingredient quantities"
+  },
+  "asOrdered": {
+    "price": {
+      "priceHistory": [
+        {
+          "date": "2026-10-11",
+          "min": 160,
+          "max": 230,
+          "avg": 195,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-10-11.md"
+        }
+      ],
+      "currentEstimate": {
+        "min": 170,
+        "max": 220,
+        "avg": 200
+      },
+      "method": "single",
+      "trend": "unknown",
+      "change30dPct": null,
+      "lastObserved": "2026-10-11",
+      "stale": false,
+      "seasonal": false,
+      "listingCount": 3,
+      "platforms": [
+        "Swiggy"
+      ],
+      "outOfStock": false,
+      "confirmed": false,
+      "checkNotes": [
+        "only 1 platform (Swiggy) backs the range"
+      ]
+    },
+    "nutrition": {
+      "calories": {
+        "value": null,
+        "source": null
+      },
+      "protein": {
+        "value": null,
+        "source": null
+      },
+      "carbs": {
+        "value": null,
+        "source": null
+      },
+      "fat": {
+        "value": null,
+        "source": null
+      },
+      "fibre": {
+        "value": null,
+        "source": null
+      }
+    },
+    "restaurantsSampled": 6,
+    "platforms": [
+      "Swiggy",
+      "Zomato",
+      "magicpin"
+    ]
+  },
+  "orderPrice": {
+    "priceHistory": [
+      {
+        "date": "2026-10-11",
+        "min": 160,
+        "max": 230,
+        "avg": 195,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-10-11.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 170,
+      "max": 220,
+      "avg": 200
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-11",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 3,
+    "platforms": [
+      "Swiggy"
+    ],
+    "outOfStock": false,
+    "confirmed": false,
+    "checkNotes": [
+      "only 1 platform (Swiggy) backs the range"
+    ]
+  },
+  "healthiness": {
+    "score": 8,
+    "restaurantScore": 5,
+    "reasons": [
+      "a vegetable-only dish with 2 tsp oil, no cream, no deep-frying and about 9–10 g of fibre per bowl, plus folate, vitamin K and magnesium from the okra. Points come off because protein is low (about 6 g), so it needs dal, curd, paneer or chana alongside, and okra soaks up oil easily. Restaurant versions often deep-fry the okra before tossing it in masala and use more salt and oil or butter."
+    ]
+  },
+  "researchRating": {
+    "score": 4.4,
+    "basis": "one of India's most-cooked everyday sabzis and a staple on Punjabi restaurant menus. Recipes are well reviewed (Cook With Manali's bhindi masala 4.97/5 from 87 votes with 9+ comment pages; Archana's Kitchen bhindi masala curry with 3,422 ratings; Green Bowl 2 Soul 4.88/5 from 16 votes; Vegan Richa 4.84/5 from 12 votes; Subbu's Kitchen 4.80/5). Deduction because okra is polarising: many people dislike its sliminess, and almost every recipe has to spend a paragraph on avoiding it."
+  },
+  "storage": "Refrigerate in an airtight box within 2 hours of cooking. It keeps for 1–2 days in the fridge; it softens and loses its crispness after that. Freezing is not recommended; okra turns mushy and slimy when thawed. To reheat, warm it in a dry pan on medium heat for 2–3 min, tossing gently and uncovered (this brings back some crispness), or microwave uncovered for 1 min. Do not add water.",
+  "leftoverRemix": "Bhindi masala wrap with curd dip. Warm 1 cup leftover bhindi masala in a pan until it crisps a little, roll it into a roti or paratha with a few raw onion rings and a spoon of hung curd mixed with a pinch of chaat masala and mint. Or crumble it into a bowl of curd with roasted cumin for a quick bhindi raita.",
+  "burnOff": "about 2.9 km of running (205 ÷ 70 kcal/km, for a 70 kg adult), or about 4.1 km of brisk walking (about 50 min at 5 km/h, using about 50 kcal/km for walking) (est.). This is for the sabzi alone; 2 phulkas would add about 2–2.5 km of running.",
+  "sources": [
+    "Swasthi's Recipes (Indian Healthy Recipes), Bhindi Masala (okra masala): https://www.indianhealthyrecipes.com/bhindi-masala-recipe/",
+    "Veg Recipes of India, Bhindi Masala (restaurant style, 250 g bhindi, sauté okra separately): https://www.vegrecipesofindia.com/bhindi-masala/",
+    "Hebbar's Kitchen, Bhindi fry / bhindi masala dry: https://hebbarskitchen.com/bhindi-fry-recipe-bhindi-ki-sabzi/",
+    "Hebbar's Kitchen, Bhindi masala dhaba style (gravy version, for comparison): https://hebbarskitchen.com/bhindi-masala-recipe-bhindi-ki-gravy/",
+    "Cook With Manali, Bhindi Masala (okra stir fry), 4.97/5 from 87 votes: https://www.cookwithmanali.com/bhindi-masala-okra-stir-fry/",
+    "Saffron Trail, Bhindi masala (250 g okra, serves 2, 1–2 tbsp oil): https://www.saffrontrail.com/wprm_print/bhindi-masala",
+    "Spice Up The Curry, Bhindi masala: https://www.spiceupthecurry.com/bhindi-masala/",
+    "Ministry of Curry, Bhindi masala: https://ministryofcurry.com/bhindi-masala",
+    "Archana's Kitchen, Bhindi Masala Curry (3,422 ratings): https://www.archanaskitchen.com/bhindi-masala-curry-recipe",
+    "Green Bowl 2 Soul, Bhindi masala: https://greenbowl2soul.com/bhindi-masala/",
+    "Vegan Richa, Bhindi masala: https://www.veganricha.com/bhindi-masala/",
+    "Subbu's Kitchen, Bhindi masala: https://www.subbuskitchen.com/wprm_print/bhindi-masala-recipe-okra-masala-recipe",
+    "Diaspora Co., Bhindi ki subzi (salt at the end, okra fully dry): https://www.diasporaco.com/blogs/recipes/bhindi-ki-subzi-home-style-okra",
+    "Maayeka, Bhindi masala (no onion, no garlic version): https://maayeka.com/wprm_print/how-to-make-bhindi-masala",
+    "Chitra's Food Book, Bharwan bhindi (Jain, no onion no garlic): https://chitrasfoodbook.com/bharwan-bhindi-recipe-stuffed-okra-fry/",
+    "Veg Recipes of India, Navratri fasting rules: https://www.vegrecipesofindia.com/navratri-fasting-rules-vrat-ka-khana/",
+    "Swiggy listings (prices, via search snippets): Geeta Bhavan https://www.swiggy.com/city/mumbai/geeta-bhavan-kalbadevi-rest50968 ; Greens Restaurant https://www.swiggy.com/restaurants/greens-restaurant-linkway-estate-malad-west-mumbai-6379 ; New Kathiyawadi Dhaba https://www.swiggy.com/city/mumbai/new-kathiyawadi-dhaba-mira-road-rest1050595 and https://www.swiggy.com/city/mumbai/new-kathiyawadi-dhaba-new-shreenath-complex-chs-geeta-nagar-mira-road-rest421852 ; Hotel Gurudev NX https://www.swiggy.com/city/mumbai/hotel-gurudev-nx-bhoiwada-rest76771 ; Temptation https://www.swiggy.com/city/mumbai/temptation-nerul-rest110863 ; Cibo https://www.swiggy.com/restaurants/cibo-hotel-mathoshree-dombivli-mumbai-101358 ; Masala Co. https://www.swiggy.com/city/mumbai/masala-co-by-prashant-corner-east-kalyan-rest756015",
+    "USDA FoodData Central (okra, raw, FDC 169260 and other ingredients): https://fdc.nal.usda.gov/",
+    "IFCT 2017, Indian Food Composition Tables (ICMR-NIN): https://www.nin.res.in/"
+  ],
+  "allergens": [
+    "peanut",
+    "gluten",
+    "mustard"
+  ],
+  "dietClaims": [],
+  "fasting": {
+    "navratri": {
+      "status": "with-changes",
+      "reason": "skip onion, garlic, hing, turmeric and coriander powder and use sendha namak, cumin, ginger, green chilli and tomato only; okra is not a grain or pulse, but it is not on every family's vrat vegetable list (assumption: common North Indian vrat rules)"
+    },
+    "ekadashi": {
+      "status": "with-changes",
+      "reason": "the dish has no grains or pulses, but skip onion, garlic and hing (compounded hing usually contains wheat or rice flour) as most Ekadashi observers do"
+    },
+    "jain": {
+      "status": "with-changes",
+      "reason": "skip onion, garlic and fresh ginger (root vegetables) and use dry ginger powder (sonth) and tomato; okra itself grows above ground and is allowed"
+    },
+    "ramadan": {
+      "status": "yes",
+      "reason": "vegetarian, light and high in fibre; keep salt moderate if eating it at sehri, and pair it with roti and dal or curd for a fuller meal"
+    }
+  },
+  "dietTags": null,
+  "tags": [
+    "Veg",
+    "Jain option",
+    "Ramadan sehri / iftar",
+    "Contains peanut",
+    "Contains gluten",
+    "Contains mustard",
+    "Lunch",
+    "Dinner",
+    "North Indian",
+    "Under 60 min",
+    "Beginner",
+    "High fibre",
+    "Low calorie"
+  ],
+  "description": null,
+  "familyId": null,
+  "variants": [],
+  "needsReview": [
+    "price not confirmed (2026-10-11): only 1 platform (Swiggy) backs the range"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-11",
+      "file": "FitPlate_Dishes_2026-10-11.md"
+    }
+  ],
+  "mergeMethod": {
+    "nutritionPerServing": "stable (single)",
+    "orderPrice": "price engine (single)",
+    "ingredients": "newest",
+    "steps": "newest",
+    "healthiness": "newest",
+    "researchRating": "newest",
+    "sources": "union",
+    "tags": "tag engine (tags.ts) on the merged dish"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 160.0–230.0 was wider than 30% of avg 195.0; narrowed to ±15%.",
+    "2026-10-11: hing: compounded hing usually contains wheat flour"
+  ]
+}

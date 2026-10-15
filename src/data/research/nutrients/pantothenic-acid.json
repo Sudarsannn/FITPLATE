@@ -1,0 +1,443 @@
+{
+  "id": "pantothenic-acid",
+  "name": "Pantothenic acid (Vitamin B5)",
+  "type": "vitamin",
+  "subtype": "water-soluble",
+  "unit": "mg",
+  "altUnits": [
+    {
+      "unit": "µg",
+      "toMainUnitFactor": 0.001
+    }
+  ],
+  "unitConversions": [
+    {
+      "fromUnit": "µg",
+      "compound": "",
+      "toMainUnitFactor": 0.001,
+      "raw": "1,000 µg (mcg) | 1 mg"
+    },
+    {
+      "fromUnit": "mg",
+      "compound": "calcium d-pantothenate",
+      "toMainUnitFactor": 0.92,
+      "raw": "1 mg calcium D-pantothenate | about 0.92 mg"
+    },
+    {
+      "fromUnit": "mg",
+      "compound": "dexpanthenol",
+      "toMainUnitFactor": 1.07,
+      "raw": "1 mg dexpanthenol (D-panthenol) | about 1.07 mg (molar equivalent)"
+    },
+    {
+      "fromUnit": "mg",
+      "compound": "pantethine",
+      "toMainUnitFactor": 0.79,
+      "raw": "1 mg pantethine | about 0.79 mg"
+    }
+  ],
+  "targets": [
+    {
+      "group": "adult_male_sedentary",
+      "ear": null,
+      "rda": null,
+      "ai": 5,
+      "source": "ICMR-NIN 2020 as adopted by FSSAI RDA 2020 (Aug 2021 amendment), via trade-press report; AI-type value, no EAR found; matches EFSA 2014 AI"
+    },
+    {
+      "group": "adult_male_moderate",
+      "ear": null,
+      "rda": null,
+      "ai": 5,
+      "source": "ICMR-NIN 2020 via FSSAI; no activity-based scaling found"
+    },
+    {
+      "group": "adult_male_heavy",
+      "ear": null,
+      "rda": null,
+      "ai": 5,
+      "source": "ICMR-NIN 2020 via FSSAI; no activity-based scaling found"
+    },
+    {
+      "group": "adult_female_sedentary",
+      "ear": null,
+      "rda": null,
+      "ai": 5,
+      "source": "ICMR-NIN 2020 via FSSAI; AI-type value, no EAR found"
+    },
+    {
+      "group": "adult_female_moderate",
+      "ear": null,
+      "rda": null,
+      "ai": 5,
+      "source": "ICMR-NIN 2020 via FSSAI; no activity-based scaling found"
+    },
+    {
+      "group": "adult_female_heavy",
+      "ear": null,
+      "rda": null,
+      "ai": 5,
+      "source": "ICMR-NIN 2020 via FSSAI; no activity-based scaling found"
+    },
+    {
+      "group": "pregnant",
+      "ear": null,
+      "rda": null,
+      "ai": 5,
+      "source": "ICMR-NIN 2020 via FSSAI (= EFSA 2014); NASEM and WHO/FAO use 6 mg"
+    },
+    {
+      "group": "lactating",
+      "ear": null,
+      "rda": null,
+      "ai": 7,
+      "source": "ICMR-NIN 2020 via FSSAI (= EFSA 2014 and NASEM)"
+    },
+    {
+      "group": "age_60_plus",
+      "ear": null,
+      "rda": null,
+      "ai": null,
+      "source": "ICMR-NIN 2020 value for 60+ not found; app applies adult value 5 mg (NASEM and EFSA keep 5 mg)"
+    }
+  ],
+  "appDefaultTarget": {
+    "adult_male": 5,
+    "adult_female": 5,
+    "pregnant": 5,
+    "lactating": 7,
+    "age_60_plus": null
+  },
+  "upperLimit": {
+    "value": null,
+    "unit": "mg/day",
+    "appliesTo": "supplements_only",
+    "source": "No UL set: ICMR-NIN TUL not found; NASEM 1998, EU SCF 2002 and EFSA set none. App notice uses UK NHS / Food Standards Scotland guidance of 200 mg/day or less from supplements, which is not a formal UL"
+  },
+  "topFoodSources": [
+    {
+      "food": "Goat liver",
+      "veg": false,
+      "per100g": 7.01,
+      "servingG": 50,
+      "servingLabel": "a few pieces, raw weight",
+      "perServing": 3.5
+    },
+    {
+      "food": "Chicken liver",
+      "veg": false,
+      "per100g": 6.39,
+      "servingG": 50,
+      "servingLabel": "a few pieces, raw weight",
+      "perServing": 3.19
+    },
+    {
+      "food": "Prawns, big",
+      "veg": false,
+      "per100g": 1.74,
+      "servingG": 100,
+      "servingLabel": "1 small bowl, raw weight",
+      "perServing": 1.74
+    },
+    {
+      "food": "Chicken leg, skinless",
+      "veg": false,
+      "per100g": 1.28,
+      "servingG": 100,
+      "servingLabel": "1 leg piece, raw weight",
+      "perServing": 1.28
+    },
+    {
+      "food": "Rohu fish",
+      "veg": false,
+      "per100g": 1.18,
+      "servingG": 100,
+      "servingLabel": "1 medium piece, raw weight",
+      "perServing": 1.18
+    },
+    {
+      "food": "Black gram dal (urad dal)",
+      "veg": true,
+      "per100g": 2.95,
+      "servingG": 30,
+      "servingLabel": "1 katori cooked dal",
+      "perServing": 0.89
+    },
+    {
+      "food": "Egg, hen, whole",
+      "veg": false,
+      "per100g": 1.47,
+      "servingG": 50,
+      "servingLabel": "1 egg",
+      "perServing": 0.73
+    },
+    {
+      "food": "Bengal gram, whole (kala chana)",
+      "veg": true,
+      "per100g": 2.38,
+      "servingG": 30,
+      "servingLabel": "1/2 katori cooked",
+      "perServing": 0.71
+    },
+    {
+      "food": "Cow's milk, whole",
+      "veg": true,
+      "per100g": 0.34,
+      "servingG": 200,
+      "servingLabel": "1 glass (about 200 ml)",
+      "perServing": 0.68
+    },
+    {
+      "food": "Cauliflower",
+      "veg": true,
+      "per100g": 0.62,
+      "servingG": 100,
+      "servingLabel": "1 cup florets",
+      "perServing": 0.62
+    },
+    {
+      "food": "Green gram, whole (sabut moong)",
+      "veg": true,
+      "per100g": 2.02,
+      "servingG": 30,
+      "servingLabel": "3/4 cup sprouts",
+      "perServing": 0.61
+    },
+    {
+      "food": "Soya bean",
+      "veg": true,
+      "per100g": 1.97,
+      "servingG": 30,
+      "servingLabel": "1/2 katori cooked",
+      "perServing": 0.59
+    }
+  ],
+  "goodSourceDishes": [
+    {
+      "dishNumber": 55,
+      "dishName": "Prawn Masala"
+    },
+    {
+      "dishNumber": 45,
+      "dishName": "Tandoori Chicken"
+    },
+    {
+      "dishNumber": 90,
+      "dishName": "Home-style Chicken Curry"
+    },
+    {
+      "dishNumber": 2,
+      "dishName": "Chicken Biryani"
+    },
+    {
+      "dishNumber": 27,
+      "dishName": "Dal Makhani"
+    },
+    {
+      "dishNumber": 38,
+      "dishName": "Egg Curry"
+    },
+    {
+      "dishNumber": 33,
+      "dishName": "Goan Fish Curry"
+    },
+    {
+      "dishNumber": 93,
+      "dishName": "Mutton Keema"
+    },
+    {
+      "dishNumber": 14,
+      "dishName": "Egg Bhurji"
+    },
+    {
+      "dishNumber": 21,
+      "dishName": "Masala Omelette"
+    },
+    {
+      "dishNumber": 24,
+      "dishName": "Medu Vada"
+    },
+    {
+      "dishNumber": 12,
+      "dishName": "Rajma Chawal"
+    },
+    {
+      "dishNumber": 4,
+      "dishName": "Masala Dosa"
+    },
+    {
+      "dishNumber": 8,
+      "dishName": "Chole (Chana Masala)"
+    },
+    {
+      "dishNumber": 11,
+      "dishName": "Aloo Paratha"
+    },
+    {
+      "dishNumber": 9,
+      "dishName": "Idli with Sambar"
+    }
+  ],
+  "deficiencyRiskIndia": "low",
+  "absorptionBoosters": [
+    "varied diet with pulses, dairy, whole grains, vegetables and eggs, chicken or fish",
+    "fresh and minimally processed foods",
+    "steaming, pressure cooking or quick stir-frying",
+    "using cooking water and curry gravy instead of discarding it"
+  ],
+  "absorptionBlockers": [
+    "heavy alcohol use",
+    "discarding cooking water",
+    "long boiling, canning and repeated reheating",
+    "heavy grain refining (maida)",
+    "strongly acidic or alkaline cooking conditions",
+    "very high single supplement doses (saturated absorption)"
+  ],
+  "logPresets": [
+    {
+      "label": "B-complex capsule (calcium pantothenate 50 mg)",
+      "amount": 50,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 50,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Multivitamin (calcium pantothenate 10 mg)",
+      "amount": 10,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 10,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Pantothenic acid tablet 500 mg",
+      "amount": 500,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 500,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Pantethine capsule 300 mg",
+      "amount": 300,
+      "unit": "mg",
+      "toMainFactor": 0.79,
+      "factorSource": "markdown",
+      "mainAmount": 237,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Custom amount",
+      "amount": null,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": null,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    }
+  ],
+  "warnings": [
+    "No formal upper limit is set for pantothenic acid; UK guidance considers 200 mg per day or less from supplements unlikely to cause harm.",
+    "Very large doses (grams per day) can cause diarrhoea and stomach upset.",
+    "Pantethine for cholesterol should only be used with a doctor's advice, especially together with statins or other lipid medicines.",
+    "Check labels for duplicate B-complex, multivitamin or hair-skin-nails products; these also contain vitamin B6, niacin and biotin.",
+    "Topical dexpanthenol (creams, ointments) does not count toward the daily intake.",
+    "Burning, numb or tingling feet need a doctor's check-up; they are more often caused by diabetes, B12 or B1 problems than by low B5.",
+    "General information, not medical advice. Check with a doctor before starting supplements."
+  ],
+  "conditionAdjustments": [
+    {
+      "profileId": "P22 Pregnancy",
+      "change": "no increase under ICMR/EFSA; keep 5 mg/day (NASEM and WHO/FAO use 6 mg, shown as comparison)",
+      "value": 5,
+      "unit": "mg/day",
+      "source": "ICMR-NIN 2020 via FSSAI; EFSA 2014; NASEM 1998"
+    },
+    {
+      "profileId": "P23 Breastfeeding",
+      "change": "raise target by 2 mg/day to 7 mg/day",
+      "value": 7,
+      "unit": "mg/day",
+      "source": "ICMR-NIN 2020 via FSSAI; EFSA 2014; NASEM 1998"
+    },
+    {
+      "profileId": "P4 High LDL cholesterol",
+      "change": "no change to food target; do not suggest pantethine; flag any pantethine use for doctor review (modest LDL effect in small trials, no outcome data, possible additive effect with statins)",
+      "value": null,
+      "unit": "",
+      "source": "Rumberger 2011; Evans 2014; International Lipid Expert Panel 2017; Lipid Association of India position not found"
+    },
+    {
+      "profileId": "P5 High triglycerides",
+      "change": "no change to food target; flag pantethine use for doctor review",
+      "value": null,
+      "unit": "",
+      "source": "McRae 2005 pooled analysis (via secondary source); Rumberger 2011"
+    },
+    {
+      "profileId": "P6 Low HDL and metabolic syndrome",
+      "change": "no change to food target; flag pantethine use for doctor review",
+      "value": null,
+      "unit": "",
+      "source": "As P4"
+    },
+    {
+      "profileId": "P13 Chronic kidney disease (early stages)",
+      "change": "no change found; B5 deficiency unlikely in people who eat; renal B-complex only as prescribed",
+      "value": null,
+      "unit": "",
+      "source": "Clase et al. review of water-soluble vitamins in low GFR or dialysis"
+    },
+    {
+      "profileId": "P33 Jain diet",
+      "change": "no change; pulses, dairy, whole grains and permitted vegetables cover 5 mg",
+      "value": null,
+      "unit": "",
+      "source": "IFCT 2017 (FitPlate analysis)"
+    },
+    {
+      "profileId": "P1 Type 2 diabetes",
+      "change": "no change found",
+      "value": null,
+      "unit": "",
+      "source": "No change found"
+    },
+    {
+      "profileId": "P30 Steady energy and focus at work",
+      "change": "no change; extra B5 does not boost energy in people who are not deficient",
+      "value": null,
+      "unit": "",
+      "source": "Mayo Clinic; NIH ODS"
+    }
+  ],
+  "lastResearched": "2026-10-15",
+  "versions": [
+    {
+      "date": "2026-10-15",
+      "file": "FitPlate_Nutrients_2026-10-15.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3)",
+    "upperLimit": "official safety limit (D3, lower on conflict)",
+    "topFoodSources": "union; per100g official (D3)",
+    "logPresets": "union by label (newest), converted with own file factors",
+    "appDefaultTarget": "newest, kept only where it equals the ICMR row",
+    "lists": "union",
+    "warnings": "union (never dropped)",
+    "text": "newest"
+  },
+  "mergeNotes": [],
+  "needsReview": [
+    "app_default_target.age_60_plus = 5 has no ICMR row to match (age_60_plus: \"ICMR-NIN 2020 value for 60+ not found; app applies adult value 5 mg (NASEM and EFSA keep 5 mg)\"); set to null"
+  ]
+}

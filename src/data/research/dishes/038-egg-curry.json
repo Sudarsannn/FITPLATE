@@ -1,0 +1,627 @@
+{
+  "id": "038-egg-curry",
+  "number": 38,
+  "name": "Egg Curry",
+  "cuisine": "North Indian (Punjabi / dhaba-style \"anda curry\", made in an onion-tomato masala; eaten all over India, with regional cousins such as Kolhapuri anda rassa, Bengali dimer jhol and Kerala mutta curry)",
+  "dietType": "non-veg",
+  "mealType": [
+    "lunch",
+    "dinner"
+  ],
+  "difficulty": "Beginner",
+  "prepMin": 10,
+  "cookMin": 30,
+  "servings": 1,
+  "ingredients": [
+    {
+      "ingredientId": "eggs-white-standard",
+      "name": "Egg (anda), large",
+      "quantity": 2,
+      "unit": null,
+      "householdMeasure": "2 whole eggs"
+    },
+    {
+      "ingredientId": null,
+      "name": "Water, for boiling the eggs",
+      "quantity": 500,
+      "unit": "ml",
+      "householdMeasure": "enough to cover the eggs by 2–3 cm"
+    },
+    {
+      "ingredientId": "mustard-oil-kachi-ghani",
+      "name": "Mustard oil (sarson ka tel), or any cooking oil",
+      "quantity": 10,
+      "unit": "ml",
+      "householdMeasure": "2 tsp (1 tsp for the eggs, 1 tsp for the masala)"
+    },
+    {
+      "ingredientId": "bay-leaf",
+      "name": "Bay leaf (tej patta)",
+      "quantity": 1,
+      "unit": "small",
+      "householdMeasure": "1 leaf"
+    },
+    {
+      "ingredientId": "cumin-seeds",
+      "name": "Cumin seeds (jeera)",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "¼ tsp"
+    },
+    {
+      "ingredientId": "onion",
+      "name": "Onion (pyaz/kanda)",
+      "quantity": 80,
+      "unit": "g",
+      "householdMeasure": "1 small onion, finely chopped (about ½ cup)"
+    },
+    {
+      "ingredientId": "ginger",
+      "name": "Ginger (adrak)",
+      "quantity": 4,
+      "unit": "g",
+      "householdMeasure": "½-inch piece, grated"
+    },
+    {
+      "ingredientId": "garlic",
+      "name": "Garlic (lahsun)",
+      "quantity": 4,
+      "unit": "g",
+      "householdMeasure": "2 small cloves, crushed or grated"
+    },
+    {
+      "ingredientId": "green-chilli",
+      "name": "Green chilli (hari mirch)",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "1 chilli, finely chopped"
+    },
+    {
+      "ingredientId": "tomato",
+      "name": "Tomato (tamatar)",
+      "quantity": 100,
+      "unit": "g",
+      "householdMeasure": "1 medium tomato, finely chopped or grated (about ½ cup)"
+    },
+    {
+      "ingredientId": "turmeric-powder",
+      "name": "Turmeric powder (haldi)",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "⅛ tsp (half for the eggs, half for the masala)"
+    },
+    {
+      "ingredientId": "kashmiri-red-chilli-powder",
+      "name": "Kashmiri red chilli powder (lal mirch)",
+      "quantity": 1,
+      "unit": "g",
+      "householdMeasure": "½ tsp"
+    },
+    {
+      "ingredientId": "coriander-powder",
+      "name": "Coriander powder (dhania powder)",
+      "quantity": 2,
+      "unit": "g",
+      "householdMeasure": "1 tsp"
+    },
+    {
+      "ingredientId": "garam-masala",
+      "name": "Garam masala",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "¼ tsp"
+    },
+    {
+      "ingredientId": "salt",
+      "name": "Salt (namak)",
+      "quantity": 2,
+      "unit": "g",
+      "householdMeasure": "⅓ tsp (a pinch for the eggs, the rest for the gravy)"
+    },
+    {
+      "ingredientId": null,
+      "name": "Hot water, for the gravy",
+      "quantity": 150,
+      "unit": "ml",
+      "householdMeasure": "⅔ cup"
+    },
+    {
+      "ingredientId": "dried-fenugreek-leaves",
+      "name": "Dried fenugreek leaves (kasuri methi)",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "½ tsp, crushed between the palms"
+    },
+    {
+      "ingredientId": "coriander-leaves",
+      "name": "Fresh coriander leaves (hara dhania)",
+      "quantity": 5,
+      "unit": "g",
+      "householdMeasure": "1 tbsp, chopped"
+    }
+  ],
+  "equipment": [
+    "Small saucepan with a lid, for boiling the eggs",
+    "Medium kadai or small heavy-bottomed pan (about 18–20 cm)",
+    "Bowl of cold water, for cooling the eggs",
+    "Chopping board and knife",
+    "Small grater (for ginger, garlic and, if you like, the tomato)",
+    "Wooden spoon or spatula",
+    "Measuring spoons and a measuring cup (a normal teaspoon and a steel glass are fine stand-ins)",
+    "Toothpick or fork, for pricking the eggs"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "title": "Put the eggs in water",
+      "text": "Place the 2 eggs in the small saucepan and pour in cold water to cover them by 2–3 cm (about 500 ml).",
+      "timerSec": 30,
+      "tip": "Eggs straight from the fridge crack less if you start them in cold water like this.",
+      "visualCue": "Eggs lying flat on the bottom, fully under water",
+      "cameraCheck": "The eggs in the pan of water",
+      "videoShot": "Water being poured over two eggs in a saucepan."
+    },
+    {
+      "n": 2,
+      "title": "Bring to a boil",
+      "text": "Put the pan on high heat, uncovered.",
+      "timerSec": 240,
+      "tip": null,
+      "visualCue": "Large bubbles rolling across the whole surface",
+      "cameraCheck": "The boiling water",
+      "videoShot": "Bubbles rising around the eggs."
+    },
+    {
+      "n": 3,
+      "title": "Cook the eggs",
+      "text": "Lower the heat to medium, cover, and cook.",
+      "timerSec": 540,
+      "tip": "Chop the onion, tomato, ginger and garlic (steps 6–9) while the eggs cook.",
+      "visualCue": "Steady small bubbles; set a timer, as you cannot see doneness from outside",
+      "cameraCheck": "The covered pan with the timer",
+      "videoShot": "A lid placed on the pan and a phone timer starting."
+    },
+    {
+      "n": 4,
+      "title": "Cool the eggs",
+      "text": "Drain the hot water and put the eggs in a bowl of cold water.",
+      "timerSec": 180,
+      "tip": null,
+      "visualCue": "Eggs cool enough to hold comfortably",
+      "cameraCheck": "The eggs in cold water",
+      "videoShot": "Eggs being lifted with a spoon into a bowl of cold water."
+    },
+    {
+      "n": 5,
+      "title": "Peel the eggs",
+      "text": "Tap each egg all over on the counter, roll it gently, and peel off the shell under a little running water.",
+      "timerSec": 120,
+      "tip": "Torn whites are fine; they still taste the same in the curry.",
+      "visualCue": "Smooth, white eggs with no shell bits",
+      "cameraCheck": "The 2 peeled eggs on a plate",
+      "videoShot": "The shell coming away in large pieces."
+    },
+    {
+      "n": 6,
+      "title": "Chop the onion",
+      "text": "Finely chop 1 small onion (80 g).",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "Small, even pieces, about ½ cup",
+      "cameraCheck": "The chopped onion on the board",
+      "videoShot": "The knife rocking through the onion."
+    },
+    {
+      "n": 7,
+      "title": "Grate the ginger and garlic",
+      "text": "Grate ½-inch ginger (4 g) and 2 small garlic cloves (4 g). Finely chop 1 green chilli.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "A small heap of wet, pale paste and chopped chilli",
+      "cameraCheck": "The ginger-garlic paste and chilli on the board",
+      "videoShot": "Ginger being rubbed on the grater."
+    },
+    {
+      "n": 8,
+      "title": "Chop the tomato",
+      "text": "Finely chop or grate 1 medium tomato (100 g).",
+      "timerSec": 60,
+      "tip": "Grating the tomato and leaving the skin in your hand gives a smoother gravy without a mixer.",
+      "visualCue": "A pulpy red heap, about ½ cup",
+      "cameraCheck": "The tomato in a bowl",
+      "videoShot": "A tomato half being grated, skin left behind."
+    },
+    {
+      "n": 9,
+      "title": "Measure the powders",
+      "text": "Put ½ tsp Kashmiri chilli powder, 1 tsp coriander powder and a pinch (about half the ⅛ tsp) turmeric in a small bowl.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "Three small coloured heaps in a bowl",
+      "cameraCheck": "The spice bowl",
+      "videoShot": "Spoons tipping powders into the bowl."
+    },
+    {
+      "n": 10,
+      "title": "Prick the eggs",
+      "text": "Make 6–8 small pricks all over each egg with a toothpick or fork (or make 2–3 shallow slits with a knife).",
+      "timerSec": 30,
+      "tip": "This stops the egg bursting in hot oil and lets the gravy soak in.",
+      "visualCue": "Tiny holes or slits in the white, yolk not exposed",
+      "cameraCheck": "A pricked egg",
+      "videoShot": "A fork pricking the egg."
+    },
+    {
+      "n": 11,
+      "title": "Season the eggs",
+      "text": "Rub the eggs with the remaining pinch of turmeric and a pinch of salt.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "Evenly pale-yellow eggs",
+      "cameraCheck": "The yellow eggs on the plate",
+      "videoShot": "Fingers rolling an egg in turmeric."
+    },
+    {
+      "n": 12,
+      "title": "Heat 1 tsp oil",
+      "text": "Put the kadai on medium heat and add 1 tsp (5 ml) mustard oil. Heat until it just starts to smoke, then lower the heat.",
+      "timerSec": 60,
+      "tip": "Using a neutral oil? Just heat it until it shimmers; no need to smoke it.",
+      "visualCue": "A faint wisp of smoke, then the oil turns paler",
+      "cameraCheck": "The oil in the kadai",
+      "videoShot": "A thin wisp of smoke rising from the oil."
+    },
+    {
+      "n": 13,
+      "title": "Fry the eggs",
+      "text": "Add the eggs and roll them around on low-medium heat. Keep your face back: they may spit.",
+      "timerSec": 60,
+      "tip": "Optional step. If you skip it, keep this 1 tsp oil for step 14.",
+      "visualCue": "A light golden, slightly blistered skin all over",
+      "cameraCheck": "The golden eggs in the pan",
+      "videoShot": "Eggs rolling in the oil with a spoon."
+    },
+    {
+      "n": 14,
+      "title": "Take out the eggs and add the rest of the oil",
+      "text": "Lift the eggs onto the plate, leaving the oil behind. Add the second 1 tsp (5 ml) oil to the kadai.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "Eggs out, oil shimmering",
+      "cameraCheck": "The eggs on the plate",
+      "videoShot": "The eggs being lifted out with a spoon."
+    },
+    {
+      "n": 15,
+      "title": "Temper the whole spices",
+      "text": "Add 1 bay leaf and ¼ tsp cumin seeds to the hot oil.",
+      "timerSec": 20,
+      "tip": "If the cumin turns black, it is burnt; wipe the pan and start again.",
+      "visualCue": "The cumin sizzles, darkens one shade and smells nutty; the bay leaf puffs",
+      "cameraCheck": "The sizzling cumin",
+      "videoShot": "Cumin dropping into oil and sizzling."
+    },
+    {
+      "n": 16,
+      "title": "Cook the onion",
+      "text": "Add the chopped onion and stir on medium heat, stirring every 30 seconds.",
+      "timerSec": 360,
+      "tip": "This browning gives the dhaba taste. If the onion sticks, sprinkle 1 tsp water and scrape.",
+      "visualCue": "Soft, deep golden-brown onion with darker edges",
+      "cameraCheck": "The browned onion in the pan",
+      "videoShot": "The spatula turning golden onion."
+    },
+    {
+      "n": 17,
+      "title": "Add ginger, garlic and chilli",
+      "text": "Add the grated ginger-garlic and green chilli. Stir.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "The raw garlic smell goes and it smells sweet and fragrant",
+      "cameraCheck": "The paste mixed into the onion",
+      "videoShot": "The paste being stirred in."
+    },
+    {
+      "n": 18,
+      "title": "Add the powders",
+      "text": "Lower the heat, add the spice bowl powders and 1 tbsp water, and stir.",
+      "timerSec": 30,
+      "tip": "The splash of water stops the chilli powder from burning.",
+      "visualCue": "A dark red-brown paste; no dry powder visible",
+      "cameraCheck": "The spiced onion paste",
+      "videoShot": "Powders hitting the pan and the water splashing in."
+    },
+    {
+      "n": 19,
+      "title": "Add the tomato and salt",
+      "text": "Add the chopped tomato and the remaining salt (about ¼ tsp). Raise the heat to medium and stir.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "Bright red tomato mixed through the onion",
+      "cameraCheck": "The tomato in the pan",
+      "videoShot": "Tomato pulp tipping into the masala."
+    },
+    {
+      "n": 20,
+      "title": "Cook the masala",
+      "text": "Cook, stirring and mashing the tomato with the spatula.",
+      "timerSec": 300,
+      "tip": "Adding curd (optional)? Lower the heat, stir in the whisked curd now and cook 1–2 more minutes until oil shows again.",
+      "visualCue": "The tomato breaks down into a thick, jammy paste and small drops of oil appear at the edges",
+      "cameraCheck": "Oil glistening at the edge of the masala",
+      "videoShot": "Close-up of oil separating at the edge."
+    },
+    {
+      "n": 21,
+      "title": "Add hot water",
+      "text": "Pour in 150 ml (⅔ cup) hot water and stir well.",
+      "timerSec": 30,
+      "tip": "Hot water keeps the gravy boiling and the flavour deeper than cold water.",
+      "visualCue": "A smooth, orange-red gravy, about as thick as pouring cream",
+      "cameraCheck": "The gravy in the pan",
+      "videoShot": "Water being poured and stirred in."
+    },
+    {
+      "n": 22,
+      "title": "Bring to a boil",
+      "text": "Let the gravy come to a boil on medium heat.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Bubbles all over the surface",
+      "cameraCheck": "The bubbling gravy",
+      "videoShot": "Gravy bubbling."
+    },
+    {
+      "n": 23,
+      "title": "Add the eggs",
+      "text": "Slide in the 2 eggs. Spoon gravy over them.",
+      "timerSec": 30,
+      "tip": "You can halve the eggs lengthwise instead, but add the halves yolk-up at the very end so the yolk does not dissolve.",
+      "visualCue": "Eggs half covered with gravy",
+      "cameraCheck": "The eggs in the curry",
+      "videoShot": "Eggs being lowered into the gravy."
+    },
+    {
+      "n": 24,
+      "title": "Simmer",
+      "text": "Cover and simmer on low heat. Turn the eggs once halfway.",
+      "timerSec": 300,
+      "tip": "Taste the gravy now and fix the salt.",
+      "visualCue": "The gravy thickens slightly and the eggs turn orange-red on the outside",
+      "cameraCheck": "The simmering curry with the lid lifted",
+      "videoShot": "The lid lifting to show glossy gravy and eggs."
+    },
+    {
+      "n": 25,
+      "title": "Add garam masala and kasuri methi",
+      "text": "Sprinkle ¼ tsp garam masala and crush ½ tsp kasuri methi between your palms over the curry. Stir gently.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "Flecks of green and a strong, warm smell",
+      "cameraCheck": "The kasuri methi on the curry",
+      "videoShot": "Palms rubbing kasuri methi over the pan."
+    },
+    {
+      "n": 26,
+      "title": "Finish and rest",
+      "text": "Turn off the heat, scatter 1 tbsp chopped coriander leaves, and rest the curry covered. Remove the bay leaf before eating.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "A thin red oil layer on top and green coriander flecks",
+      "cameraCheck": "The finished curry in a bowl",
+      "videoShot": "The curry ladled into a bowl with both eggs on top."
+    }
+  ],
+  "nutritionPerServing": {
+    "kcal": 315,
+    "proteinG": 15.6,
+    "carbsG": 17.9,
+    "fatG": 20.8,
+    "fibreG": 4.5
+  },
+  "microNutrientsEstimate": {
+    "values": {
+      "cholesterol": 0,
+      "vitamin-a": 31.8,
+      "vitamin-b12": 0,
+      "vitamin-c": 25.3,
+      "vitamin-k": 13.7
+    },
+    "coveragePct": 13,
+    "basis": "partial estimate from ingredient quantities"
+  },
+  "asOrdered": {
+    "price": {
+      "priceHistory": [
+        {
+          "date": "2026-10-11",
+          "min": 190,
+          "max": 220,
+          "avg": 190,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-10-11.md"
+        }
+      ],
+      "currentEstimate": {
+        "min": 190,
+        "max": 220,
+        "avg": 190
+      },
+      "method": "single",
+      "trend": "unknown",
+      "change30dPct": null,
+      "lastObserved": "2026-10-11",
+      "stale": false,
+      "seasonal": false,
+      "listingCount": 4,
+      "platforms": [
+        "magicpin",
+        "Swiggy"
+      ],
+      "outOfStock": false,
+      "confirmed": true,
+      "checkNotes": []
+    },
+    "nutrition": {
+      "calories": {
+        "value": null,
+        "source": null
+      },
+      "protein": {
+        "value": 16,
+        "source": null
+      },
+      "carbs": {
+        "value": null,
+        "source": null
+      },
+      "fat": {
+        "value": null,
+        "source": null
+      },
+      "fibre": {
+        "value": null,
+        "source": null
+      }
+    },
+    "restaurantsSampled": 7,
+    "platforms": [
+      "Swiggy",
+      "Zomato",
+      "magicpin"
+    ]
+  },
+  "orderPrice": {
+    "priceHistory": [
+      {
+        "date": "2026-10-11",
+        "min": 190,
+        "max": 220,
+        "avg": 190,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-10-11.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 190,
+      "max": 220,
+      "avg": 190
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-11",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 4,
+    "platforms": [
+      "magicpin",
+      "Swiggy"
+    ],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
+  },
+  "healthiness": {
+    "score": 7,
+    "restaurantScore": 5,
+    "reasons": [
+      "two eggs give about 15–16 g of complete protein plus vitamin B12, choline and vitamin D, and the gravy is onion, tomato and spices with only 2 tsp of oil; nothing is deep-fried and there is no cream or sugar. Points come off for only modest vegetables and fibre, sodium around 900 mg, and the yolks' cholesterol for people told to limit it. Restaurant versions commonly use 2–4 times the oil, add butter, cream or cashew paste, salt more heavily and come with naan or a large mound of rice."
+    ]
+  },
+  "researchRating": {
+    "score": 4.6,
+    "basis": "egg curry is one of India's most-cooked everyday non-veg dishes and a dhaba staple; Swasthi's Recipes' dhaba-style egg curry shows 4.98/5 from 485 votes, Archana's Kitchen's Punjabi egg curry shows a ratings count of about 9,000, and celebrity chefs (Ranveer Brar, with several versions) and major blogs (Whisk Affair, My Food Story, Cook With Kushi) all publish it. Swiggy's Mumbai page lists about 50 egg curry dishes, showing wide availability. Small deduction because some people find it plain compared with meat curries and the eggs can turn rubbery if overcooked."
+  },
+  "storage": "Fridge-safe in a closed box for up to 2 days; cool it within 1 hour of cooking. Freezing is not recommended: boiled egg whites turn rubbery and watery after freezing (the gravy alone, without eggs, freezes for up to 1 month). Reheat in a pan on low heat with 1–2 tbsp water, covered, until it bubbles, about 3–4 minutes; or microwave covered in 30-second bursts. Halve the eggs before microwaving so they do not burst.",
+  "leftoverRemix": "egg curry masala toast / anda ghotala. Chop the leftover eggs roughly, then cook them with the leftover gravy in a pan until thick and almost dry. Spread the mixture on toasted pav or bread, top with chopped onion, coriander and a little grated cheese, and toast it closed like a sandwich or eat it open. The thick masala turns into a quick spicy Mumbai-style egg toast.",
+  "burnOff": "about 4.5 km of running (315 ÷ 70 kcal/km, for a 70 kg adult), or about 6.3 km of brisk walking (about 1 hour 15 minutes at 5 km/h, using about 50 kcal/km for walking) (est.). With 2 phulkas (about 495 kcal): about 7.1 km running or 9.9 km walking (est.).",
+  "sources": [
+    "Swasthi's Recipes (Indian Healthy Recipes), Egg Curry (Dhaba Style) (onion-tomato base, no cream/nuts/besan, less oil than a dhaba; 4.98/5 from 485 votes): https://www.indianhealthyrecipes.com/punjabi-egg-curry-anda-curry-dhaba-style/ ; print card: https://www.indianhealthyrecipes.com/wprm_print/egg-curry-recipe",
+    "Whisk Affair, Dhaba Style Egg Curry (serves 4; mustard oil; boiled eggs slit and shallow-fried; onion, ginger-garlic, tomato and yogurt; 8–10 min simmer): https://www.whiskaffair.com/dhaba-style-egg-curry-recipe/ ; Punjabi egg curry: https://www.whiskaffair.com/wprm_print/punjabi-egg-curry-recipe-anda-curry",
+    "Archana's Kitchen, Punjabi Style Egg Curry (4 eggs, 1 chopped onion + 1 onion paste, 2 tomatoes for 2 servings): https://www.archanaskitchen.com/punjabi-style-egg-curry-recipe ; Dhaba Style Egg Curry: https://archanaskitchen.com/dhaba-style-egg-curry-recipe",
+    "My Food Story, Dhaba Style Egg Curry: https://myfoodstory.com/wprm_print/dhaba-style-egg-curry",
+    "Cook With Kushi, Egg Curry Dhaba Style (cashews, butter, kasuri methi; 276 kcal per serving on card): https://www.cookwithkushi.com/egg-curry-recipe-dhaba-style/",
+    "Ranveer Brar, Egg Curry (whole spices, onion, ginger-garlic, tomato) and variations: https://ranveerbrar.com/recipes/egg-curry/ ; https://ranveerbrar.com/recipes/spicy-egg-curry/ ; https://ranveerbrar.com/recipes/egg-masala-curry-spicy-egg-curry/",
+    "Countrysquire, Egg curry (4 eggs, 2 onions, 2 tomatoes, 2 tbsp oil): https://countrysquire.in/2022/03/07/egg-curry/",
+    "My Spicy Kitchen, egg curry (serves 2, 3–4 eggs, 1½–2½ tbsp oil): https://www.myspicykitchen.net/wprm_print/19162",
+    "Pricking and frying the eggs (optional-but-recommended vs not preferred): https://www.funfoodfrolic.com/wprm_print/8432 ; https://www.masterclass.com/articles/egg-masala-recipe ; https://www.whiskaffair.com/wprm_print/egg-butter-masala-recipe-anda-makhani",
+    "USDA FoodData Central (egg, whole, hard-boiled; mustard oil; onion; tomato; garlic; ginger; spices; coriander leaves): https://fdc.nal.usda.gov/",
+    "Tarla Dalal, calories for egg curry (208 kcal per 140 g; context): https://www.tarladalal.com/calories-for-Egg-Curry-Recipe-42114",
+    "FatSecret, egg curry (274 kcal per cup; context): https://www.fatsecret.com.sg/calories-nutrition/generic/egg-curry",
+    "nnwa.in, calories in egg curry (Indian Nutrient Databank figure, 178 kcal for 1-egg bowl; context): https://nnwa.in/foods/dishes/egg-curry/",
+    "eatbetter.app, egg curry (216 kcal per 180 g; context): https://www.eatbetter.app/en/food/egg-curry",
+    "IFCT 2017 (ICMR-NIN), referenced but values not confirmed from this environment: https://www.nin.res.in/",
+    "Veg Recipes of India, Navratri fasting rules (meat, fish, eggs, onion, garlic avoided): https://www.vegrecipesofindia.com/navratri-fasting-rules-vrat-ka-khana/",
+    "Hindutone, Navratri 2026 fasting rules (eggs avoided; same rules for Ekadashi fasts): https://hindutone.com/festivals/navratri-fasting-rules-2026-vrat-food-what-to-eat-avoid/",
+    "Swiggy Diaries, best foods for Ramadan fasting (eggs as protein): https://blog.swiggy.com/?p=29534 ; Gulf News suhoor foods: https://gulfnews.com/food/ramadan-2019-9-suhoor-foods-to-keep-you-energised-all-day-in-ramadan-1.1556452360310 ; British Nutrition Foundation healthy Ramadan (avoid salty foods at suhoor): https://www.nutrition.org.uk/media/bytokjkm/healthy-ramadan-2021.pdf",
+    "Swiggy, Best Egg Curry Restaurants In Mumbai (Cafe Bahar ₹140, Noorani ₹185, Singarawala Egg Curry (2 Pc) ₹196, Mirch ₹220; about 50 dishes): https://www.swiggy.com/city/mumbai/egg-curry-dish-restaurants",
+    "Swiggy, Best Egg Masala Restaurants In Mumbai (Egg Masala Curry ₹249, restaurant not shown; not used): https://www.swiggy.com/city/mumbai/egg-masala-dish-restaurants",
+    "Swiggy, Noorani Restaurant, Malad East: https://www.swiggy.com/restaurants/mumbai/malad-east/noorani-restaurant-350484/dineout",
+    "Swiggy, Persian Darbar Mumbai (no egg curry price visible): https://www.swiggy.com/city/mumbai/persian-darbar",
+    "magicpin, Hotel Shashikant, Mahakali, Andheri East (Egg Masala ₹200): https://magicpin.in/Mumbai/Mahakali/Restaurant/Hotel-Shashikant/store/25174/delivery",
+    "magicpin, Protein Chef, Airoli, Navi Mumbai (Egg Curry – High Protein ₹249/₹237, about 16 g protein): https://magicpin.in/Navi-Mumbai/Sector-8/Restaurant/Protein-Chef/store/16ab855/delivery",
+    "magicpin, Daily Kitchen – Everyday Homely Meals, Ghatkopar (meals/thalis ₹199–249; dropped): https://magicpin.in/Mumbai/Ghatkopar/Restaurant/Daily-Kitchen-Everyday-Homely-Meals/store/1580958/delivery",
+    "magicpin, Curry Culture, Inorbit Mall, Goregaon West (egg curry + jeera rice ₹189; dropped): https://magicpin.in/Mumbai/Inorbit-Mall/Restaurant/Curry-Culture/store/355468/",
+    "Zomato, Egg Express, Ulhasnagar (Egg Curry ₹209, 3 eggs): https://www.zomato.com/mumbai/egg-express-2-ulhasnagar-thane/order",
+    "Zomato, Surti Egg Junction, Versova (egg curry listed, no price visible): https://www.zomato.com/mumbai/surti-egg-junction-versova/order",
+    "Zomato, Egg Curry in Mumbai (cost for two only): https://www.zomato.com/mumbai/restaurants/dish-egg-curry ; Andheri West: https://www.zomato.com/mumbai/andheri-west-restaurants/dish-egg-curry ; Egg Curry Masala: https://www.zomato.com/mumbai/restaurants/dish-egg-curry-masala"
+  ],
+  "allergens": [
+    "egg",
+    "mustard"
+  ],
+  "dietClaims": [],
+  "fasting": {
+    "navratri": {
+      "status": "no",
+      "reason": "contains egg, onion, garlic and table salt, all avoided in the common Navratri vrat rule set."
+    },
+    "ekadashi": {
+      "status": "no",
+      "reason": "contains egg, onion and garlic, which the common Ekadashi rule set avoids (same rules as Navratri vrat in the sources used)."
+    },
+    "jain": {
+      "status": "no",
+      "reason": "contains egg plus onion, garlic and ginger (root vegetables)."
+    },
+    "ramadan": {
+      "status": "yes",
+      "reason": "egg needs no halal meat sourcing and gives slow, filling protein; for sehri keep salt and chilli moderate so it does not cause thirst during the fast."
+    }
+  },
+  "dietTags": null,
+  "tags": [
+    "Non-veg",
+    "Ramadan sehri / iftar",
+    "Contains egg",
+    "Contains mustard",
+    "Lunch",
+    "Dinner",
+    "North Indian",
+    "Under 60 min",
+    "Beginner",
+    "High protein"
+  ],
+  "description": null,
+  "familyId": null,
+  "variants": [],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-10-11",
+      "file": "FitPlate_Dishes_2026-10-11.md"
+    }
+  ],
+  "mergeMethod": {
+    "nutritionPerServing": "stable (single)",
+    "orderPrice": "price engine (single)",
+    "ingredients": "newest",
+    "steps": "newest",
+    "healthiness": "newest",
+    "researchRating": "newest",
+    "sources": "union",
+    "tags": "tag engine (tags.ts) on the merged dish"
+  },
+  "mergeNotes": []
+}

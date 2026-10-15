@@ -1,0 +1,484 @@
+{
+  "id": "vitamin-b6",
+  "name": "Vitamin B6 (pyridoxine, pyridoxal, pyridoxamine, PLP)",
+  "type": "vitamin",
+  "subtype": "water-soluble",
+  "unit": "mg",
+  "altUnits": [
+    {
+      "unit": "µg",
+      "toMainUnitFactor": 0.001
+    }
+  ],
+  "unitConversions": [
+    {
+      "fromUnit": "µg",
+      "compound": "",
+      "toMainUnitFactor": 0.001,
+      "raw": "1,000 µg (mcg) | 1 mg"
+    },
+    {
+      "fromUnit": "mg",
+      "compound": "pyridoxine hydrochloride",
+      "toMainUnitFactor": 0.82,
+      "raw": "1 mg pyridoxine hydrochloride | about 0.82 mg pyridoxine"
+    },
+    {
+      "fromUnit": "mg",
+      "compound": "pyridoxal 5'-phosphate",
+      "toMainUnitFactor": 0.68,
+      "raw": "1 mg pyridoxal 5'-phosphate (PLP, anhydrous) | about 0.68 mg pyridoxine-equivalent"
+    }
+  ],
+  "targets": [
+    {
+      "group": "adult_male_sedentary",
+      "ear": 1.6,
+      "rda": 1.9,
+      "ai": null,
+      "source": "ICMR-NIN 2020 detailed RDA document (EAST-AC cut-off 1.8; EAR 1.6, RDA 1.9 for adult men and women), via search snippets"
+    },
+    {
+      "group": "adult_male_moderate",
+      "ear": 2.1,
+      "rda": 2.4,
+      "ai": null,
+      "source": "ICMR-NIN 2020 brief note, males comparison table (RDA 2.4, EAR 2.1), via search snippets"
+    },
+    {
+      "group": "adult_male_heavy",
+      "ear": null,
+      "rda": 3.1,
+      "ai": null,
+      "source": "ICMR-NIN 2020 via secondary summary only; EAR not found; lower confidence"
+    },
+    {
+      "group": "adult_female_sedentary",
+      "ear": 1.6,
+      "rda": 1.9,
+      "ai": null,
+      "source": "ICMR-NIN 2020 detailed RDA document (1.9 mg for adult men and women); secondary summary"
+    },
+    {
+      "group": "adult_female_moderate",
+      "ear": 1.6,
+      "rda": 1.9,
+      "ai": null,
+      "source": "ICMR-NIN 2020 brief note, females comparison table (RDA 1.9, EAR 1.6), via search snippets"
+    },
+    {
+      "group": "adult_female_heavy",
+      "ear": null,
+      "rda": 2.4,
+      "ai": null,
+      "source": "ICMR-NIN 2020 via secondary summary only; EAR not found; lower confidence"
+    },
+    {
+      "group": "pregnant",
+      "ear": null,
+      "rda": 2.3,
+      "ai": null,
+      "source": "ICMR-NIN 2020 via secondary summary only; EAR not found; lower confidence"
+    },
+    {
+      "group": "lactating",
+      "ear": null,
+      "rda": null,
+      "ai": null,
+      "source": "ICMR-NIN 2020 lactation value not found; next best: WHO/FAO 2004 RNI 2.0 mg and US NASEM RDA 2.0 mg; app uses 2.3 mg (est.)"
+    },
+    {
+      "group": "age_60_plus",
+      "ear": null,
+      "rda": null,
+      "ai": null,
+      "source": "ICMR-NIN 2020 value for 60+ not found; app applies adult RDA 1.9 mg (US NASEM 51+: men 1.7, women 1.5)"
+    }
+  ],
+  "appDefaultTarget": {
+    "adult_male": 1.9,
+    "adult_female": 1.9,
+    "pregnant": 2.3,
+    "lactating": null,
+    "age_60_plus": null
+  },
+  "upperLimit": {
+    "value": 100,
+    "unit": "mg/day",
+    "appliesTo": "food_and_supplements",
+    "source": "ICMR-NIN 2020 TUL as reported by CRN (2025), following US IOM/NASEM 1998 (100 mg/day). Stricter limits: EFSA 2023 UL 12 mg/day; UK advice max 10 mg/day from supplements; NHMRC draft 14 mg/day. App cautions from 10 mg/day of supplements"
+  },
+  "topFoodSources": [
+    {
+      "food": "Chicken, breast, skinless",
+      "veg": false,
+      "per100g": 0.53,
+      "servingG": 100,
+      "servingLabel": "1 small breast portion, raw weight",
+      "perServing": 0.53
+    },
+    {
+      "food": "Banana, ripe (robusta)",
+      "veg": true,
+      "per100g": 0.44,
+      "servingG": 100,
+      "servingLabel": "1 medium banana, edible part",
+      "perServing": 0.44
+    },
+    {
+      "food": "Chicken, leg, skinless",
+      "veg": false,
+      "per100g": 0.33,
+      "servingG": 100,
+      "servingLabel": "1 leg piece, raw weight",
+      "perServing": 0.33
+    },
+    {
+      "food": "Goat meat (mutton), leg",
+      "veg": false,
+      "per100g": 0.31,
+      "servingG": 100,
+      "servingLabel": "4-5 curry pieces, raw weight",
+      "perServing": 0.31
+    },
+    {
+      "food": "Rohu fish (IFCT value, low confidence)",
+      "veg": false,
+      "per100g": 0.24,
+      "servingG": 100,
+      "servingLabel": "1 large piece, raw weight",
+      "perServing": 0.24
+    },
+    {
+      "food": "Fenugreek leaves (methi)",
+      "veg": true,
+      "per100g": 0.38,
+      "servingG": 50,
+      "servingLabel": "1 cup loosely packed",
+      "perServing": 0.19
+    },
+    {
+      "food": "Rice, parboiled, milled",
+      "veg": true,
+      "per100g": 0.22,
+      "servingG": 75,
+      "servingLabel": "1 katori cooked",
+      "perServing": 0.17
+    },
+    {
+      "food": "Black gram, whole (sabut urad)",
+      "veg": true,
+      "per100g": 0.53,
+      "servingG": 30,
+      "servingLabel": "1/2 katori cooked",
+      "perServing": 0.16
+    },
+    {
+      "food": "Wheat flour, whole (atta)",
+      "veg": true,
+      "per100g": 0.25,
+      "servingG": 60,
+      "servingLabel": "2 medium rotis",
+      "perServing": 0.15
+    },
+    {
+      "food": "Potato, brown skin",
+      "veg": true,
+      "per100g": 0.1,
+      "servingG": 150,
+      "servingLabel": "1 medium potato",
+      "perServing": 0.15
+    },
+    {
+      "food": "Pistachio (pista)",
+      "veg": true,
+      "per100g": 0.96,
+      "servingG": 15,
+      "servingLabel": "2 tbsp kernels",
+      "perServing": 0.14
+    },
+    {
+      "food": "Soya bean, white",
+      "veg": true,
+      "per100g": 0.45,
+      "servingG": 30,
+      "servingLabel": "1/2 katori cooked",
+      "perServing": 0.14
+    }
+  ],
+  "goodSourceDishes": [
+    {
+      "dishNumber": 18,
+      "dishName": "Chicken Tikka Masala"
+    },
+    {
+      "dishNumber": 45,
+      "dishName": "Tandoori Chicken"
+    },
+    {
+      "dishNumber": 90,
+      "dishName": "Home-style Chicken Curry"
+    },
+    {
+      "dishNumber": 2,
+      "dishName": "Chicken Biryani"
+    },
+    {
+      "dishNumber": 62,
+      "dishName": "Mutton Biryani"
+    },
+    {
+      "dishNumber": 93,
+      "dishName": "Mutton Keema"
+    },
+    {
+      "dishNumber": 23,
+      "dishName": "Mutton Rogan Josh"
+    },
+    {
+      "dishNumber": 13,
+      "dishName": "Pav Bhaji"
+    },
+    {
+      "dishNumber": 11,
+      "dishName": "Aloo Paratha"
+    },
+    {
+      "dishNumber": 60,
+      "dishName": "Aloo Matar"
+    },
+    {
+      "dishNumber": 46,
+      "dishName": "Methi Thepla"
+    },
+    {
+      "dishNumber": 8,
+      "dishName": "Chole (Chana Masala)"
+    },
+    {
+      "dishNumber": 66,
+      "dishName": "Sprouts Chaat"
+    },
+    {
+      "dishNumber": 27,
+      "dishName": "Dal Makhani"
+    }
+  ],
+  "deficiencyRiskIndia": "moderate",
+  "absorptionBoosters": [
+    "whole pulses and sprouts instead of only split dals",
+    "whole grains, parboiled or brown rice instead of maida and white rice",
+    "dry-heat or short cooking (tandoor, grill, roast, quick saute, pressure cooking)",
+    "eating the cooking liquid (dal water, gravy, sambar, rasam)",
+    "a daily banana or other B6-rich fruit",
+    "animal-source foods for non-vegetarians (B6 absorbed slightly better than plant glucoside form)"
+  ],
+  "absorptionBlockers": [
+    "heavy alcohol use",
+    "boiling and draining cooking water",
+    "baking soda (alkali) in cooking water",
+    "long exposure to light",
+    "grain refining (maida)",
+    "long-term isoniazid, cycloserine, penicillamine, anti-seizure medicines, theophylline or levodopa",
+    "oral contraceptive pills (lower plasma PLP)"
+  ],
+  "logPresets": [
+    {
+      "label": "B-complex tablet (pyridoxine 3 mg)",
+      "amount": 3,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 3,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Neurobion Forte-type tablet (pyridoxine 3 mg)",
+      "amount": 3,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 3,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Doxylamine-pyridoxine tablet (pyridoxine 10 mg, prescribed)",
+      "amount": 10,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 10,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Doxylamine-pyridoxine OD/XT tablet (pyridoxine 20 mg, prescribed)",
+      "amount": 20,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 20,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "P5P (pyridoxal 5'-phosphate) capsule 50 mg",
+      "amount": 50,
+      "unit": "mg",
+      "toMainFactor": 0.68,
+      "factorSource": "markdown",
+      "mainAmount": 34,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Pyridoxine tablet (enter label value)",
+      "amount": null,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": null,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Multivitamin (enter label value)",
+      "amount": null,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": null,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Custom amount in mcg",
+      "amount": null,
+      "unit": "mcg",
+      "toMainFactor": 0.001,
+      "factorSource": "alt_units",
+      "mainAmount": null,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    }
+  ],
+  "warnings": [
+    "Long-term high-dose vitamin B6 supplements can cause nerve damage (tingling, numbness or burning in hands and feet, unsteady walking).",
+    "UK advice is no more than 10 mg per day of vitamin B6 from supplements; EFSA's 2023 upper limit is 12 mg per day from all sources; ICMR and the US set 100 mg per day.",
+    "Vitamin B6 is found in many B-complex, nerve, magnesium, PMS, sports and energy products; add up all products you take.",
+    "If you take isoniazid or cycloserine (TB), levodopa (Parkinson's), anti-seizure medicines or theophylline, ask your doctor before taking vitamin B6.",
+    "Tingling or numbness in the hands or feet while taking a B6-containing product needs a doctor's review.",
+    "Pregnant or breastfeeding women should only take vitamin B6 beyond a prenatal vitamin on a doctor's advice.",
+    "General information, not medical advice. Check with a doctor before starting supplements."
+  ],
+  "conditionAdjustments": [
+    {
+      "profileId": "P22 Pregnancy",
+      "change": "Raise target to ICMR pregnancy RDA; EFSA UL 12 mg/day and NASEM UL 100 mg/day still apply; B6 for nausea only as prescribed",
+      "value": 2.3,
+      "unit": "mg/day",
+      "source": "ICMR-NIN 2020 (secondary summary); EFSA 2023; Mayo Clinic"
+    },
+    {
+      "profileId": "P23 Breastfeeding",
+      "change": "ICMR lactation value not found; app uses pregnancy RDA as estimate (WHO/FAO and NASEM 2.0 mg; EFSA 1.7 mg)",
+      "value": 2.3,
+      "unit": "mg/day",
+      "source": "Estimate from ICMR-NIN 2020 pregnancy value; FAO/WHO 2004; NASEM 1998"
+    },
+    {
+      "profileId": "P13 Chronic kidney disease (early stages)",
+      "change": "No change to food target; higher risk of low B6 (dialysis losses); any supplement should be near-RDA and doctor-guided, avoid megadoses; requires doctor input",
+      "value": null,
+      "unit": "mg/day",
+      "source": "NIH ODS; KDOQI 2020 as summarised in reviews"
+    },
+    {
+      "profileId": "P31 Healthy ageing (50+)",
+      "change": "No change (ICMR 1.9 mg already above NASEM 51+ values of 1.7 mg men and 1.5 mg women); highlight food sources as low PLP is more common with age",
+      "value": 1.9,
+      "unit": "mg/day",
+      "source": "ICMR-NIN 2020; NASEM 1998; NHANES 2003-04 (Morris 2008)"
+    },
+    {
+      "profileId": "P8 PCOS",
+      "change": "No change found; oral contraceptive users often have low plasma PLP, show food-first tip",
+      "value": null,
+      "unit": "mg/day",
+      "source": "NHANES 2003-04 (Morris et al. 2008)"
+    },
+    {
+      "profileId": "P27 Muscle gain",
+      "change": "No ICMR change; info note only: B6 use rises with protein, about 0.01-0.02 mg extra per gram of protein above 150 g/day (est.)",
+      "value": null,
+      "unit": "mg/day",
+      "source": "Health Council of the Netherlands 2003; Huang et al. 1998"
+    },
+    {
+      "profileId": "P28 Body recomposition",
+      "change": "Same as P27: info note for very high protein intakes; count B6 in protein powders toward supplement caution",
+      "value": null,
+      "unit": "mg/day",
+      "source": "Health Council of the Netherlands 2003"
+    },
+    {
+      "profileId": "P33 Jain diet",
+      "change": "No change in target; replace potato, garlic and onion with banana, whole pulses, methi, nuts and seeds, whole grains",
+      "value": null,
+      "unit": "mg/day",
+      "source": "IFCT 2017"
+    },
+    {
+      "profileId": "P11 Iron-deficiency anaemia",
+      "change": "No change in target; B6 deficiency can cause anaemia that does not respond to iron (doctor to assess)",
+      "value": null,
+      "unit": "mg/day",
+      "source": "NIH ODS; Harvard Nutrition Source"
+    },
+    {
+      "profileId": "P14 Kidney stones",
+      "change": "No change found; large cohorts show no link between B6 intake and new stones",
+      "value": null,
+      "unit": "mg/day",
+      "source": "Ferraro et al. 2018, Urolithiasis"
+    },
+    {
+      "profileId": "P1 Type 2 diabetes",
+      "change": "No change found; count B6 in diabetic nerve combination products toward supplement caution",
+      "value": null,
+      "unit": "mg/day",
+      "source": "TGA 2025; EFSA 2023"
+    },
+    {
+      "profileId": "P21 Heart disease (after a cardiac event)",
+      "change": "No change found; homocysteine-lowering B vitamins did not clearly reduce heart disease",
+      "value": null,
+      "unit": "mg/day",
+      "source": "Harvard Nutrition Source"
+    }
+  ],
+  "lastResearched": "2026-10-15",
+  "versions": [
+    {
+      "date": "2026-10-15",
+      "file": "FitPlate_Nutrients_2026-10-15.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3)",
+    "upperLimit": "official safety limit (D3, lower on conflict)",
+    "topFoodSources": "union; per100g official (D3)",
+    "logPresets": "union by label (newest), converted with own file factors",
+    "appDefaultTarget": "newest, kept only where it equals the ICMR row",
+    "lists": "union",
+    "warnings": "union (never dropped)",
+    "text": "newest"
+  },
+  "mergeNotes": [],
+  "needsReview": [
+    "app_default_target.lactating = 2.3 has no ICMR row to match (lactating: \"ICMR-NIN 2020 lactation value not found; next best: WHO/FAO 2004 RNI 2.0 mg and US NASEM RDA 2.0 mg; app uses 2.3 mg (est.)\"); set to null",
+    "app_default_target.age_60_plus = 1.9 has no ICMR row to match (age_60_plus: \"ICMR-NIN 2020 value for 60+ not found; app applies adult RDA 1.9 mg (US NASEM 51+: men 1.7, women 1.5)\"); set to null"
+  ]
+}

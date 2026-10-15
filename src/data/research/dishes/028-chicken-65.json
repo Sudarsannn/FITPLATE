@@ -90,7 +90,7 @@
       "householdMeasure": "1 sprig: 4–5 leaves chopped for the marinade + 10–12 whole leaves for tempering"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "cornflour-corn-starch",
       "name": "Cornflour (corn starch)",
       "quantity": 8,
       "unit": "g",
@@ -410,7 +410,17 @@
     "fatG": 25,
     "fibreG": 2
   },
-  "microNutrientsEstimate": null,
+  "microNutrientsEstimate": {
+    "values": {
+      "calcium": 0.2,
+      "iron": 0,
+      "potassium": 0.2,
+      "riboflavin": 0,
+      "sodium": 0.7
+    },
+    "coveragePct": 5,
+    "basis": "partial estimate from ingredient quantities"
+  },
   "asOrdered": {
     "price": {
       "priceHistory": [

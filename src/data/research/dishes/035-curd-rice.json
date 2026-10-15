@@ -1,0 +1,511 @@
+{
+  "id": "035-curd-rice",
+  "number": 35,
+  "name": "Curd Rice",
+  "cuisine": "South Indian (Tamil thayir sadam / Kannada mosaranna / Telugu daddojanam)",
+  "dietType": "veg",
+  "mealType": [
+    "lunch"
+  ],
+  "difficulty": "Beginner",
+  "prepMin": 5,
+  "cookMin": 5,
+  "servings": 1,
+  "ingredients": [
+    {
+      "ingredientId": null,
+      "name": "Sona masuri rice (or ponni, or any short/medium-grain white rice), raw",
+      "quantity": 60,
+      "unit": "g",
+      "householdMeasure": "⅓ cup raw / about 1⅓ cups cooked"
+    },
+    {
+      "ingredientId": null,
+      "name": "Water (for cooking the rice; skip if using leftover rice)",
+      "quantity": 180,
+      "unit": "ml",
+      "householdMeasure": "¾ cup"
+    },
+    {
+      "ingredientId": "curd-plain",
+      "name": "Curd (dahi), plain, fresh and not sour, set from whole or toned milk",
+      "quantity": 150,
+      "unit": "g",
+      "householdMeasure": "⅔ cup"
+    },
+    {
+      "ingredientId": null,
+      "name": "Milk (full-cream or toned), boiled and cooled",
+      "quantity": 40,
+      "unit": "ml",
+      "householdMeasure": "2½ tbsp"
+    },
+    {
+      "ingredientId": "salt",
+      "name": "Salt (namak)",
+      "quantity": 1.5,
+      "unit": "g",
+      "householdMeasure": "¼ tsp"
+    },
+    {
+      "ingredientId": "sesame-oil-gingelly-til-oil-everyday-grade",
+      "name": "Sesame oil (gingelly oil/til oil; groundnut or coconut oil also used)",
+      "quantity": 5,
+      "unit": "ml",
+      "householdMeasure": "1 tsp"
+    },
+    {
+      "ingredientId": "mustard-seeds",
+      "name": "Mustard seeds (rai)",
+      "quantity": 1,
+      "unit": "g",
+      "householdMeasure": "¼ tsp"
+    },
+    {
+      "ingredientId": "urad-dal-split-skinned",
+      "name": "Urad dal (split black gram, white/husked)",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "½ tsp"
+    },
+    {
+      "ingredientId": "dried-red-chilli-whole",
+      "name": "Dried red chilli (sukhi lal mirch)",
+      "quantity": 1,
+      "unit": null,
+      "householdMeasure": "1, broken in two"
+    },
+    {
+      "ingredientId": "green-chilli",
+      "name": "Green chilli (hari mirch)",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "½–1 chilli, finely chopped"
+    },
+    {
+      "ingredientId": "ginger",
+      "name": "Ginger (adrak)",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "½ tsp, finely chopped or grated"
+    },
+    {
+      "ingredientId": "curry-leaves",
+      "name": "Curry leaves (kadi patta)",
+      "quantity": 1,
+      "unit": "g",
+      "householdMeasure": "8–10 leaves (1 small sprig)"
+    },
+    {
+      "ingredientId": "asafoetida",
+      "name": "Asafoetida (hing)",
+      "quantity": 0.1,
+      "unit": "g",
+      "householdMeasure": "a small pinch"
+    },
+    {
+      "ingredientId": "coriander-leaves",
+      "name": "Coriander leaves (dhania), chopped",
+      "quantity": 2,
+      "unit": "g",
+      "householdMeasure": "2 tsp"
+    }
+  ],
+  "equipment": [
+    "Pressure cooker (2–3 litre) or saucepan with a lid, only if cooking the rice fresh",
+    "Mixing bowl (the bowl you will serve in is fine)",
+    "Potato masher, the back of a steel ladle, or a large spoon, for mashing the rice",
+    "Small tadka pan or the smallest pan you own",
+    "Spoon for mixing",
+    "Chopping board and knife",
+    "Measuring cups and spoons (a normal teaspoon and a 200 ml tea cup are fine stand-ins)",
+    "Microwave or small pan, only for warming leftover fridge rice"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "title": "Rinse the rice",
+      "text": "Put 60 g (⅓ cup) raw rice in the pressure cooker base and rinse it 2–3 times with water, rubbing it gently, then drain.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "The rinse water is almost clear, not milky.",
+      "cameraCheck": "The rinsed rice in the cooker",
+      "videoShot": "Hand swirling the rice in water, then tipping out the cloudy water."
+    },
+    {
+      "n": 2,
+      "title": "Pressure-cook the rice soft",
+      "text": "Add 180 ml (¾ cup) water. Close the cooker and cook on medium heat for 4 whistles, then switch off and let the pressure drop on its own.",
+      "timerSec": 900,
+      "tip": "Curd rice needs softer rice than you would eat with dal, so use more water (3 parts water to 1 part rice) and more whistles than usual.",
+      "visualCue": "When you open it, all the water is absorbed and the grains are very soft and slightly broken.",
+      "cameraCheck": "The cooked rice in the open cooker",
+      "videoShot": "The cooker lid lifting off to show soft, steaming rice."
+    },
+    {
+      "n": 3,
+      "title": "Mash the rice",
+      "text": "While it is still hot, mash the rice with a masher or the back of a ladle.",
+      "timerSec": 60,
+      "tip": "Hot rice mashes easily; once cold it goes stiff. Mash less if you like a grainy texture.",
+      "visualCue": "A soft, mostly smooth mash with some grains still visible.",
+      "cameraCheck": "The mashed rice",
+      "videoShot": "The ladle pressing down on the rice."
+    },
+    {
+      "n": 4,
+      "title": "Cool the rice completely",
+      "text": "Spread the mashed rice in the mixing bowl and leave it to cool.",
+      "timerSec": 900,
+      "tip": "This is the most important step. Curd added to hot rice can split and turn sour, and heat kills the curd's live cultures.",
+      "visualCue": "No steam; the rice feels at room temperature when you touch the middle.",
+      "cameraCheck": "The cooled rice in the bowl",
+      "videoShot": "A finger touching the middle of the rice to check it is cool."
+    },
+    {
+      "n": 5,
+      "title": "Chop the chilli, ginger and coriander",
+      "text": "Finely chop ½–1 green chilli (3 g), ½ tsp ginger (3 g) and 2 tsp coriander leaves (2 g). Break the dried red chilli in two.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "Small, even pieces",
+      "cameraCheck": "The chopped chilli, ginger and coriander on the board",
+      "videoShot": "The knife chopping the ginger finely."
+    },
+    {
+      "n": 6,
+      "title": "Add the salt and curd",
+      "text": "Add ¼ tsp salt and 150 g (⅔ cup) curd to the cooled rice.",
+      "timerSec": 15,
+      "tip": "Use fresh, mild curd. Very sour curd makes the whole bowl sour; if yours is sour, use 120 g curd and a little more milk.",
+      "visualCue": "A white mound of curd on top of the rice.",
+      "cameraCheck": "The curd in the bowl before mixing",
+      "videoShot": "The curd being spooned onto the rice."
+    },
+    {
+      "n": 7,
+      "title": "Mix in the curd",
+      "text": "Stir until the rice and curd are fully combined.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Creamy, evenly white rice with no dry lumps.",
+      "cameraCheck": "The mixed curd rice",
+      "videoShot": "The spoon folding curd through the rice."
+    },
+    {
+      "n": 8,
+      "title": "Loosen with milk",
+      "text": "Add 40 ml (2½ tbsp) cooled milk and stir again.",
+      "timerSec": 30,
+      "tip": "Curd rice thickens as it stands, so make it a little looser than you want to eat it. The milk also slows souring, which is why lunchbox curd rice gets extra milk.",
+      "visualCue": "A soft, loose texture that drops slowly off the spoon, like a thick porridge. It should not be stiff or runny.",
+      "cameraCheck": "A spoonful of curd rice dropping back into the bowl",
+      "videoShot": "The milk pouring in and the spoon lifting the loosened rice."
+    },
+    {
+      "n": 9,
+      "title": "Set out the tempering",
+      "text": "Put the mustard seeds (¼ tsp) and urad dal (½ tsp) in a small bowl. Keep the red chilli, green chilli, ginger, curry leaves and hing next to the stove.",
+      "timerSec": 60,
+      "tip": "Pat the curry leaves dry; wet leaves splatter hard in hot oil.",
+      "visualCue": "Everything measured and within reach.",
+      "cameraCheck": "The small bowl of mustard seeds and urad dal, with curry leaves beside it",
+      "videoShot": "Overhead shot of the tempering items lined up by the stove."
+    },
+    {
+      "n": 10,
+      "title": "Heat the oil",
+      "text": "Put the tadka pan on medium heat and add 1 tsp (5 ml) oil.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "The oil shimmers and flows thinly when you tilt the pan. It should not smoke.",
+      "cameraCheck": "The oil in the pan",
+      "videoShot": "Oil swirling in the small pan."
+    },
+    {
+      "n": 11,
+      "title": "Crackle the mustard seeds",
+      "text": "Add the mustard seeds and urad dal.",
+      "timerSec": 20,
+      "tip": "Hold a lid over the pan; the seeds can spit.",
+      "visualCue": "The mustard seeds pop and crackle.",
+      "cameraCheck": "The seeds and dal in the oil",
+      "videoShot": "Mustard seeds jumping in the oil."
+    },
+    {
+      "n": 12,
+      "title": "Fry the urad dal golden",
+      "text": "Keep stirring on medium-low heat.",
+      "timerSec": 30,
+      "tip": "Turn the heat down if it colours fast. Dark-brown dal tastes bitter.",
+      "visualCue": "The urad dal turns light golden and smells toasty.",
+      "cameraCheck": "The golden dal in the pan",
+      "videoShot": "Close-up of the dal changing from creamy white to golden."
+    },
+    {
+      "n": 13,
+      "title": "Add the chillies, ginger and curry leaves",
+      "text": "Add the red chilli, green chilli, ginger and curry leaves. Stir.",
+      "timerSec": 20,
+      "tip": null,
+      "visualCue": "The curry leaves turn crisp and bright, and the ginger smells sharp.",
+      "cameraCheck": "The tempering with curry leaves in the pan",
+      "videoShot": "Curry leaves hitting the oil and spluttering."
+    },
+    {
+      "n": 14,
+      "title": "Add the hing and switch off",
+      "text": "Add a small pinch of hing, stir once, and switch off the flame.",
+      "timerSec": 5,
+      "tip": null,
+      "visualCue": "The hing smell blooms straight away.",
+      "cameraCheck": "The finished tempering in the pan",
+      "videoShot": "The pinch of hing dropping in and the flame turning off."
+    },
+    {
+      "n": 15,
+      "title": "Pour the tempering over the curd rice",
+      "text": "Tip the hot tempering, oil and all, over the curd rice and stir it in.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "A short sizzle, then the rice is flecked with black mustard seeds, golden dal and green curry leaves.",
+      "cameraCheck": "The tempering on top of the curd rice, before stirring",
+      "videoShot": "The tempering sizzling as it hits the white rice."
+    },
+    {
+      "n": 16,
+      "title": "Add the coriander and taste",
+      "text": "Stir in the chopped coriander. Taste a spoonful; add a pinch of salt or a little more milk if needed.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "Creamy white rice with green flecks; it smells of curry leaves, hing and ginger.",
+      "cameraCheck": "A spoonful of finished curd rice",
+      "videoShot": "The coriander going in and a spoon lifting some rice."
+    },
+    {
+      "n": 17,
+      "title": "Rest, then serve",
+      "text": "Leave it for 2–3 minutes (or chill it for 30 min in summer) so the flavours settle. Serve at room temperature or cool.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "The rice has thickened slightly and looks glossy.",
+      "cameraCheck": "The served bowl of curd rice",
+      "videoShot": "The bowl set down beside a spoon of pickle."
+    }
+  ],
+  "nutritionPerServing": {
+    "kcal": 400,
+    "proteinG": 12,
+    "carbsG": 60.5,
+    "fatG": 11.7,
+    "fibreG": 1.8
+  },
+  "microNutrientsEstimate": {
+    "values": {
+      "cholesterol": 0,
+      "riboflavin": 0.2,
+      "vitamin-a": 12.7,
+      "vitamin-b12": 0,
+      "vitamin-e": 0.1,
+      "vitamin-k": 6.1
+    },
+    "coveragePct": 35,
+    "basis": "partial estimate from ingredient quantities"
+  },
+  "asOrdered": {
+    "price": {
+      "priceHistory": [
+        {
+          "date": "2026-10-10",
+          "min": 180,
+          "max": 220,
+          "avg": 200,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-10-10.md"
+        }
+      ],
+      "currentEstimate": {
+        "min": 180,
+        "max": 220,
+        "avg": 200
+      },
+      "method": "single",
+      "trend": "unknown",
+      "change30dPct": null,
+      "lastObserved": "2026-10-10",
+      "stale": false,
+      "seasonal": false,
+      "listingCount": 9,
+      "platforms": [
+        "FoodiaQ",
+        "magicpin",
+        "Swiggy",
+        "Zomato"
+      ],
+      "outOfStock": false,
+      "confirmed": true,
+      "checkNotes": []
+    },
+    "nutrition": {
+      "calories": {
+        "value": 360,
+        "source": null
+      },
+      "protein": {
+        "value": 8.5,
+        "source": null
+      },
+      "carbs": {
+        "value": null,
+        "source": null
+      },
+      "fat": {
+        "value": null,
+        "source": null
+      },
+      "fibre": {
+        "value": null,
+        "source": null
+      }
+    },
+    "restaurantsSampled": null,
+    "platforms": [
+      "Swiggy",
+      "Zomato",
+      "magicpin"
+    ]
+  },
+  "orderPrice": {
+    "priceHistory": [
+      {
+        "date": "2026-10-10",
+        "min": 180,
+        "max": 220,
+        "avg": 200,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-10-10.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 180,
+      "max": 220,
+      "avg": 200
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-10",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 9,
+    "platforms": [
+      "FoodiaQ",
+      "magicpin",
+      "Swiggy",
+      "Zomato"
+    ],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
+  },
+  "healthiness": {
+    "score": 7,
+    "restaurantScore": 6,
+    "reasons": [
+      "no frying, only 1 tsp oil, and the curd adds protein, calcium and live cultures (if the rice is cooled before mixing). It is easy to digest and cooling in hot weather. Points come off because it is mostly white rice (high glycaemic load, very low fibre at about 2 g) with almost no vegetables, and protein is modest at about 12 g. Restaurant versions are not fried either, but some add cream, more salt or a ghee-and-cashew tempering, and portions are unknown."
+    ]
+  },
+  "researchRating": {
+    "score": 4.6,
+    "basis": "curd rice is South India's classic comfort food and the traditional last course of a meal; it is so well loved that a national chain (Madras Curd Rice Company) is named after it. Recipe ratings are very high on large samples (Hebbar's Kitchen daddojanam 5/5 from 255 votes; Hebbar's temple-style thayir sadam 4.99/5 from 71 votes). Food writers and reviewers single it out at Mumbai South Indian eateries (e.g. Mani's Lunch Home). Small deduction because it is seen as plain, everyday food, and online diners grumble about paying ₹200 or more for it on delivery apps (Quora thread on curd rice costing more than biryani)."
+  },
+  "storage": "Best eaten the same day; it keeps souring as the curd cultures carry on working. Refrigerate in an airtight box within 1–2 hours of making it and eat within 1 day. Do not freeze (the curd splits and the rice turns grainy). Do not reheat; eat it straight from the fridge or let it stand for 10 min, stirring in 1–2 tbsp milk to loosen it. For a lunchbox, make it in the morning with extra milk and a little less curd, so it is not sour by lunchtime.",
+  "leftoverRemix": "Curd rice paniyaram (crispy curd rice bites). Mix 1 cup leftover curd rice with 2 tbsp rice flour (or fine rava), 1 tbsp finely chopped onion and a pinch of salt to a thick batter. Spoon into a greased paniyaram/appe pan and cook on medium-low with ½ tsp oil in total, 3–4 min per side, until golden and crisp. Serve hot with coconut chutney as a tea-time snack.",
+  "burnOff": "about 5.7 km of running (400 ÷ 70 kcal/km, for a 70 kg adult), or about 8 km of brisk walking (about 1 hr 35 min at 5 km/h, using about 50 kcal/km for walking) (est.).",
+  "sources": [
+    "Hebbar's Kitchen, Curd Rice / Thayir Sadam (temple style), 4.99/5 from 71 votes: https://hebbarskitchen.com/curd-rice-recipe-mosaranna-thayir-sadam/",
+    "Hebbar's Kitchen, Daddojanam (Andhra-style curd rice), 5/5 from 255 votes: https://hebbarskitchen.com/daddojanam-recipe-andhra-style-curd-rice/",
+    "Swasthi's Recipes (Indian Healthy Recipes), Curd Rice: https://www.indianhealthyrecipes.com/curd-rice-recipe/",
+    "Veg Recipes of India, Curd Rice (Thayir Sadam / Daddojanam): https://www.vegrecipesofindia.com/curd-rice-how-to-make-curd-rice-thayir-sadam-bagala-bath",
+    "Whisk Affair, Curd Rice (Thayir Sadam): https://www.whiskaffair.com/curd-rice-recipe/",
+    "Sharmis Passions, Curd rice / thayir sadam: https://www.sharmispassions.com/wprm_print/curd-rice-recipe-thayir-sadam-recipe",
+    "Yummy Tummy Aarthi, Curd rice / thayir sadham: https://www.yummytummyaarthi.com/wprm_print/curd-rice-recipe-thayir-sadham-recipe-daddojanam-recipe",
+    "Cookilicious, Curd rice (cooling and live cultures tip): https://cookilicious.com/wprm_print/curd-rice-recipe-thayir-sadam-dahi-bhaat",
+    "Essence of Life, Curd Rice / Thayir Sadham: https://www.essenceoflife-food.com/2016/05/curd-rice-thayir-sadham.html",
+    "Swiggy Instamart, Curd rice recipe guide (milk to balance sour curd; porridge-like texture): https://www.swiggy.com/instamart/recipe/curd-rice",
+    "Authentic Royal, Curd rice (milk quantity): https://authenticroyal.com/recipes/curd-rice/",
+    "Flavourstreat, Curd rice (boiled-and-cooled milk tip): https://www.flavourstreat.com/wprm_print/curd-rice-recipe",
+    "Wikipedia, Curd rice: https://en.wikipedia.org/wiki/Curd_rice",
+    "USDA FoodData Central: https://fdc.nal.usda.gov/",
+    "IFCT 2017, Indian Food Composition Tables (ICMR-NIN): https://www.nin.res.in/",
+    "magicpin, Madras Curd Rice Company, Lower Parel (Classic Curd Rice ₹201): https://magicpin.in/Mumbai/Lower-Parel/Restaurant/Madras-Curd-Rice-Company/store/1700059/",
+    "magicpin, Madras Curd Rice Company, Marol (Classic Curd Rice ₹198): https://magicpin.in/Mumbai/Marol/Restaurant/Madras-Curd-Rice-Company/store/1700047/",
+    "magicpin, Madras Curd Rice Company, Mira Road (Classic Curd Rice ₹198): https://magicpin.in/Thane/Mira-Road/Restaurant/Madras-Curd-Rice-Company/store/1700056/",
+    "magicpin, Madras Curd Rice Company, Khar (menu of curd rice variants): https://magicpin.in/Mumbai/Khar/Restaurant/Madras-Curd-Rice-Company/store/170004c/",
+    "Zomato, Madras Curd Rice Company, Veera Desai Area (Classic Curd Rice ₹199): https://www.zomato.com/mumbai/madras-curd-rice-company-veera-desai-area/order",
+    "Zomato, Great Indian Khichdi by EatFit, Khar (Classic Curd Rice ₹219; 360 kcal, 8.5 g protein; variants ₹209–249): https://www.zomato.com/mumbai/great-indian-khichdi-by-eatfit-khar/order",
+    "Zomato, Great Indian Khichdi by EatFit, Vashi (Classic Combo 520 kcal, not used): https://www.zomato.com/mumbai/great-indian-khichdi-by-eatfit-vashi-navi-mumbai/order",
+    "Zomato, EatFit, Lower Parel (Classic Curd Rice ₹198): https://www.zomato.com/vi/mumbai/eatfit-lower-parel/order",
+    "Zomato, EatFit, Chembur (Classic Curd Rice ₹198; Millet Curd Rice ₹213, 419 kcal, 12 g protein): https://www.zomato.com/mumbai/eatfit-1-chembur/order",
+    "Zomato, EatFit, Kharghar (Millet Curd Rice 419 kcal): https://www.zomato.com/mumbai/eatfit-1-kharghar-navi-mumbai/order",
+    "Zomato, Madras Curd Rice Company, Powai (curd rice thali ₹265, dropped): https://www.zomato.com/mumbai/madras-curd-rice-company-powai/order",
+    "Zomato, Madras Curd Rice Company, Manpada, Thane West (Curd Rice Feast Thali ₹305, dropped): https://www.zomato.com/mumbai/madras-curd-rice-company-manpada-thane-west-thane/order",
+    "Zomato, Curd Rice in Mumbai (dish page; cost-for-two only): https://www.zomato.com/mumbai/restaurants/dish-curd-rice",
+    "Swiggy, Best Ghee Rice Restaurants in Mumbai (Haldiram's Restaurant Curd Rice ₹179): https://www.swiggy.com/city/mumbai/ghee-rice-dish-restaurants",
+    "FoodiaQ, Thayir Sadam (₹210 for 400 g, Chandivali, Powai): https://www.foodiaq.com/product/thayir-sadam/",
+    "magicpin, Banana Leaf, Ghatkopar West (Thairu Sadham ₹324): https://magicpin.in/Mumbai/Ghatkopar-West/Restaurant/Banana-Leaf/store/50bb9c/delivery/",
+    "magicpin, Banana Leaf, Matunga West (Thairu Sadham ₹326): https://magicpin.in/Mumbai/Matunga-West/Restaurant/Banana-Leaf/store/1579934/delivery",
+    "magicpin, Banana Leaf, Chikuwadi, Kandivali West (Thairu Sadham ₹320): https://magicpin.in/Mumbai/Chikuwadi/Restaurant/Banana-Leaf/store/c362b/delivery",
+    "magicpin, Udupi 2 Mumbai, Dadar East (Special Curd Rice Mini Meal ₹165, dropped): https://magicpin.in/Mumbai/Dadar-East/Restaurant/Udupi-2-Mumbai/store/155a832/menu",
+    "magicpin, Hotel Udupi, Marol (plain curd ₹40, budget note): https://magicpin.in/Mumbai/Marol/Restaurant/Hotel-Udupi/store/5b1218/",
+    "Justdial, Madras Curd Rice Company, Chembur East (price for two only): https://www.justdial.com/Mumbai/Madras-Curd-Rice-Company-Chembur-East/022PXX22-XX22-241122190124-W7Y3_BZDET",
+    "Quora, Why is curd rice priced higher than biryani on Zomato and Swiggy?: https://www.quora.com/Why-is-the-price-of-curd-rice-more-than-the-price-of-Biryani-on-Zomato-and-Swiggy",
+    "LBB, Best South Indian restaurants in Mumbai: https://lbb.in/mumbai/best-south-indian-restaurants-mumbai/",
+    "Wanderlog, Best South Indian restaurants in Mumbai (Mani's Lunch Home curd rice reviews): https://wanderlog.com/list/geoCategory/1547663/best-south-indian-restaurants-in-mumbai"
+  ],
+  "allergens": [
+    "peanut",
+    "milk",
+    "gluten",
+    "sesame",
+    "mustard"
+  ],
+  "dietClaims": [],
+  "fasting": null,
+  "dietTags": null,
+  "tags": [
+    "Veg",
+    "Contains peanut",
+    "Contains milk",
+    "Contains gluten",
+    "Contains sesame",
+    "Contains mustard",
+    "Lunch",
+    "South Indian",
+    "Under 15 min",
+    "Beginner"
+  ],
+  "description": null,
+  "familyId": null,
+  "variants": [],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-10-10",
+      "file": "FitPlate_Dishes_2026-10-10.md"
+    }
+  ],
+  "mergeMethod": {
+    "nutritionPerServing": "stable (single)",
+    "orderPrice": "price engine (single)",
+    "ingredients": "newest",
+    "steps": "newest",
+    "healthiness": "newest",
+    "researchRating": "newest",
+    "sources": "union",
+    "tags": "tag engine (tags.ts) on the merged dish"
+  },
+  "mergeNotes": [
+    "2026-10-10: hing: compounded hing usually contains wheat flour"
+  ]
+}

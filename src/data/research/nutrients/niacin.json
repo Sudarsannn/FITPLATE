@@ -1,0 +1,457 @@
+{
+  "id": "niacin",
+  "name": "Niacin (Vitamin B3)",
+  "type": "vitamin",
+  "subtype": "water-soluble",
+  "unit": "mg",
+  "altUnits": [
+    {
+      "unit": "mg NE",
+      "toMainUnitFactor": 1
+    },
+    {
+      "unit": "mg tryptophan",
+      "toMainUnitFactor": 0.016667
+    },
+    {
+      "unit": "mcg",
+      "toMainUnitFactor": 0.001
+    }
+  ],
+  "unitConversions": [
+    {
+      "fromUnit": "mg",
+      "compound": "dietary tryptophan",
+      "toMainUnitFactor": 0.0166667,
+      "raw": "60 mg dietary tryptophan | 1 mg niacin (1 mg NE)"
+    },
+    {
+      "fromUnit": "g",
+      "compound": "protein",
+      "toMainUnitFactor": 10,
+      "raw": "1 g protein | about 10 mg tryptophan (rough average; range found in IFCT: about 6 mg in maize to 17 mg in soya bean)"
+    }
+  ],
+  "targets": [
+    {
+      "group": "adult_male_sedentary",
+      "ear": 12,
+      "rda": 14,
+      "ai": null,
+      "source": "ICMR-NIN 2020 short report (via search snippets; EAR 5.6 mg per 1,000 kcal + 20%)"
+    },
+    {
+      "group": "adult_male_moderate",
+      "ear": null,
+      "rda": 18,
+      "ai": null,
+      "source": "ICMR-NIN 2020 brief note table and secondary summary; EAR not found (about 15 by calculation)"
+    },
+    {
+      "group": "adult_male_heavy",
+      "ear": null,
+      "rda": 23,
+      "ai": null,
+      "source": "ICMR-NIN 2020 via secondary summary (Metabolic Health Digest); EAR not found"
+    },
+    {
+      "group": "adult_female_sedentary",
+      "ear": 9,
+      "rda": 11,
+      "ai": null,
+      "source": "ICMR-NIN 2020 short report (via search snippets)"
+    },
+    {
+      "group": "adult_female_moderate",
+      "ear": null,
+      "rda": 14,
+      "ai": null,
+      "source": "ICMR-NIN 2020 brief note table and secondary summary; EAR not found (about 12 by calculation)"
+    },
+    {
+      "group": "adult_female_heavy",
+      "ear": null,
+      "rda": 18,
+      "ai": null,
+      "source": "ICMR-NIN 2020 via secondary summary only; lower confidence"
+    },
+    {
+      "group": "pregnant",
+      "ear": null,
+      "rda": 13.5,
+      "ai": null,
+      "source": "ICMR-NIN 2020 +2.5 mg/day (secondary summary) added to sedentary woman RDA 11 mg; base assumed; lower confidence"
+    },
+    {
+      "group": "lactating",
+      "ear": null,
+      "rda": 16,
+      "ai": null,
+      "source": "ICMR-NIN 2020 +5 mg/day (secondary summary) added to sedentary woman RDA 11 mg; base assumed; lower confidence"
+    },
+    {
+      "group": "age_60_plus",
+      "ear": null,
+      "rda": null,
+      "ai": null,
+      "source": "ICMR-NIN 2020 value for 60+ not found; app applies sedentary adult RDA (14 mg men, 11 mg women)"
+    }
+  ],
+  "appDefaultTarget": {
+    "adult_male": 14,
+    "adult_female": 11,
+    "pregnant": 13.5,
+    "lactating": 16,
+    "age_60_plus": null
+  },
+  "upperLimit": {
+    "value": 35,
+    "unit": "mg/day",
+    "appliesTo": "supplements_only",
+    "source": "ICMR-NIN 2020 TUL (via CRN review and secondary summary) and US NASEM 1998 UL; applies to niacin from supplements, fortified foods and medicines, not natural food niacin. EU SCF: nicotinic acid 10 mg, nicotinamide 900 mg"
+  },
+  "topFoodSources": [
+    {
+      "food": "Chicken breast, skinless",
+      "veg": false,
+      "per100g": 8.06,
+      "servingG": 100,
+      "servingLabel": "1 medium piece, raw weight",
+      "perServing": 8.06
+    },
+    {
+      "food": "Goat liver (kaleji)",
+      "veg": false,
+      "per100g": 12.88,
+      "servingG": 50,
+      "servingLabel": "small portion, raw weight",
+      "perServing": 6.44
+    },
+    {
+      "food": "Chicken leg, skinless",
+      "veg": false,
+      "per100g": 5.6,
+      "servingG": 100,
+      "servingLabel": "1 leg piece, raw weight",
+      "perServing": 5.6
+    },
+    {
+      "food": "Goat meat, leg (mutton)",
+      "veg": false,
+      "per100g": 5.15,
+      "servingG": 100,
+      "servingLabel": "4-5 curry pieces, raw weight",
+      "perServing": 5.15
+    },
+    {
+      "food": "Tuna",
+      "veg": false,
+      "per100g": 4.73,
+      "servingG": 100,
+      "servingLabel": "1 steak, raw weight",
+      "perServing": 4.73
+    },
+    {
+      "food": "Groundnuts (peanuts)",
+      "veg": true,
+      "per100g": 11.35,
+      "servingG": 30,
+      "servingLabel": "3 tbsp, a small handful",
+      "perServing": 3.41
+    },
+    {
+      "food": "Mackerel (bangda)",
+      "veg": false,
+      "per100g": 2.67,
+      "servingG": 100,
+      "servingLabel": "1 medium fish, edible part",
+      "perServing": 2.67
+    },
+    {
+      "food": "Pomfret, black",
+      "veg": false,
+      "per100g": 2.61,
+      "servingG": 100,
+      "servingLabel": "2 slices, raw weight",
+      "perServing": 2.61
+    },
+    {
+      "food": "Brown rice, raw",
+      "veg": true,
+      "per100g": 3.4,
+      "servingG": 75,
+      "servingLabel": "1 bowl cooked",
+      "perServing": 2.55
+    },
+    {
+      "food": "Parboiled rice, milled",
+      "veg": true,
+      "per100g": 2.51,
+      "servingG": 75,
+      "servingLabel": "1 bowl cooked",
+      "perServing": 1.88
+    },
+    {
+      "food": "Wheat flour, whole (atta)",
+      "veg": true,
+      "per100g": 2.37,
+      "servingG": 60,
+      "servingLabel": "2 medium rotis",
+      "perServing": 1.42
+    },
+    {
+      "food": "Rajma, red (kidney beans)",
+      "veg": true,
+      "per100g": 2.42,
+      "servingG": 50,
+      "servingLabel": "1 katori cooked",
+      "perServing": 1.21
+    }
+  ],
+  "goodSourceDishes": [
+    {
+      "dishNumber": 23,
+      "dishName": "Mutton Rogan Josh"
+    },
+    {
+      "dishNumber": 2,
+      "dishName": "Chicken Biryani"
+    },
+    {
+      "dishNumber": 7,
+      "dishName": "Butter Chicken"
+    },
+    {
+      "dishNumber": 18,
+      "dishName": "Chicken Tikka Masala"
+    },
+    {
+      "dishNumber": 45,
+      "dishName": "Tandoori Chicken"
+    },
+    {
+      "dishNumber": 28,
+      "dishName": "Chicken 65"
+    },
+    {
+      "dishNumber": 33,
+      "dishName": "Goan Fish Curry"
+    },
+    {
+      "dishNumber": 40,
+      "dishName": "Sabudana Khichdi"
+    },
+    {
+      "dishNumber": 11,
+      "dishName": "Aloo Paratha"
+    },
+    {
+      "dishNumber": 12,
+      "dishName": "Rajma Chawal"
+    },
+    {
+      "dishNumber": 1,
+      "dishName": "Poha"
+    },
+    {
+      "dishNumber": 14,
+      "dishName": "Egg Bhurji"
+    }
+  ],
+  "deficiencyRiskIndia": "low",
+  "absorptionBoosters": [
+    "enough protein for tryptophan (dal, peanuts, milk, paneer, eggs, meat, fish)",
+    "adequate vitamin B6, riboflavin and iron for tryptophan conversion",
+    "whole or less-polished grains instead of maida and polished rice",
+    "combining cereals with pulses",
+    "alkali (lime) treatment of maize frees bound niacin",
+    "keeping cooking water and gravies"
+  ],
+  "absorptionBlockers": [
+    "alcohol",
+    "maize- or jowar-only diets (bound niacin, low tryptophan, high leucine)",
+    "low protein intake",
+    "vitamin B6, riboflavin or iron deficiency",
+    "grain polishing and refining",
+    "discarding cooking water",
+    "isoniazid and some other medicines"
+  ],
+  "logPresets": [
+    {
+      "label": "B-complex capsule (niacinamide 100 mg)",
+      "amount": 100,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 100,
+      "mainAmountRange": null,
+      "prescriptionDose": true
+    },
+    {
+      "label": "Nerve B-complex tablet (nicotinamide, enter label value)",
+      "amount": null,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": null,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Multivitamin (enter label value)",
+      "amount": null,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": null,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Niacin 500 mg (nicotinic acid)",
+      "amount": 500,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 500,
+      "mainAmountRange": null,
+      "prescriptionDose": true
+    },
+    {
+      "label": "Pre-workout with niacin (enter label value)",
+      "amount": null,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": null,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Custom amount",
+      "amount": null,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": null,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    }
+  ],
+  "warnings": [
+    "Upper limit 35 mg per day from supplements and fortified foods (ICMR-NIN 2020, US NASEM); food niacin is not capped.",
+    "Nicotinic acid from about 30 mg can cause flushing, itching and dizziness; niacinamide does not cause flushing but long-term high doses should be checked with a doctor.",
+    "High-dose or sustained-release nicotinic acid can damage the liver and raise blood sugar and uric acid; avoid unless prescribed, especially with liver disease, diabetes, gout, peptic ulcer or alcohol use.",
+    "Niacin added to statins did not reduce heart attacks in large trials; do not self-treat cholesterol with niacin.",
+    "Check labels for duplicate B-complex products; many Indian capsules contain 100 mg niacinamide each.",
+    "A recurring dark scaly rash on sun-exposed skin with diarrhoea or confusion, especially with heavy drinking or TB treatment, needs medical care.",
+    "General information, not medical advice. Check with a doctor before starting supplements."
+  ],
+  "conditionAdjustments": [
+    {
+      "profileId": "P22 Pregnancy",
+      "change": "raise target by 2.5 mg/day over the woman's activity-level RDA",
+      "value": 2.5,
+      "unit": "mg/day",
+      "source": "ICMR-NIN 2020 (secondary summary)"
+    },
+    {
+      "profileId": "P23 Breastfeeding",
+      "change": "raise target by 5 mg/day over the woman's activity-level RDA",
+      "value": 5,
+      "unit": "mg/day",
+      "source": "ICMR-NIN 2020 (secondary summary)"
+    },
+    {
+      "profileId": "P4 High LDL cholesterol",
+      "change": "no change to food target; do not suggest niacin supplements for cholesterol; prescription use only by a doctor",
+      "value": null,
+      "unit": "",
+      "source": "HPS2-THRIVE, AIM-HIGH; National Lipid Association; Mayo Clinic"
+    },
+    {
+      "profileId": "P5 High triglycerides",
+      "change": "no change to food target; flag niacin products above 35 mg/day for doctor review",
+      "value": 35,
+      "unit": "mg/day",
+      "source": "HPS2-THRIVE; NIH ODS"
+    },
+    {
+      "profileId": "P6 Low HDL and metabolic syndrome",
+      "change": "no change to food target; raising HDL with niacin did not reduce heart events",
+      "value": null,
+      "unit": "",
+      "source": "AIM-HIGH; HPS2-THRIVE"
+    },
+    {
+      "profileId": "P1 Type 2 diabetes",
+      "change": "no change to food target; warn that high-dose nicotinic acid raises blood sugar",
+      "value": null,
+      "unit": "",
+      "source": "NIH ODS; HPS2-THRIVE"
+    },
+    {
+      "profileId": "P2 Prediabetes and insulin resistance",
+      "change": "no change to food target; high-dose nicotinic acid linked to new-onset diabetes",
+      "value": null,
+      "unit": "",
+      "source": "HPS2-THRIVE"
+    },
+    {
+      "profileId": "P7 Fatty liver (NAFLD/MASLD)",
+      "change": "no change to food target; avoid high-dose or sustained-release nicotinic acid unless prescribed (liver damage)",
+      "value": null,
+      "unit": "",
+      "source": "NIH ODS; Mayo Clinic"
+    },
+    {
+      "profileId": "P15 Gout and high uric acid",
+      "change": "no change to food target; high-dose nicotinic acid raises uric acid",
+      "value": null,
+      "unit": "",
+      "source": "Mayo Clinic; NIH ODS"
+    },
+    {
+      "profileId": "P17 Acid reflux (GERD)",
+      "change": "no change to food target; large doses of nicotinic acid can irritate the stomach",
+      "value": null,
+      "unit": "",
+      "source": "Mayo Clinic"
+    },
+    {
+      "profileId": "P33 Jain diet",
+      "change": "no change; peanuts, pulses, whole grains and milk cover needs",
+      "value": null,
+      "unit": "",
+      "source": "IFCT 2017 (FitPlate analysis)"
+    },
+    {
+      "profileId": "P13 Chronic kidney disease (early stages)",
+      "change": "no change found for food niacin",
+      "value": null,
+      "unit": "",
+      "source": "No change found"
+    }
+  ],
+  "lastResearched": "2026-10-14",
+  "versions": [
+    {
+      "date": "2026-10-14",
+      "file": "FitPlate_Nutrients_2026-10-14.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3)",
+    "upperLimit": "official safety limit (D3, lower on conflict)",
+    "topFoodSources": "union; per100g official (D3)",
+    "logPresets": "union by label (newest), converted with own file factors",
+    "appDefaultTarget": "newest, kept only where it equals the ICMR row",
+    "lists": "union",
+    "warnings": "union (never dropped)",
+    "text": "newest"
+  },
+  "mergeNotes": [],
+  "needsReview": [
+    "app_default_target.age_60_plus = 14 has no ICMR row to match (age_60_plus: \"ICMR-NIN 2020 value for 60+ not found; app applies sedentary adult RDA (14 mg men, 11 mg women)\"); set to null"
+  ]
+}

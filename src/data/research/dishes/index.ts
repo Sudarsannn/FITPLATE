@@ -31,6 +31,36 @@ import item_027_dal_makhani from './027-dal-makhani.json';
 import item_028_chicken_65 from './028-chicken-65.json';
 import item_029_misal_pav from './029-misal-pav.json';
 import item_030_lemon_rice from './030-lemon-rice.json';
+import item_031_indian_style_overnight_oats from './031-indian-style-overnight-oats.json';
+import item_032_aloo_gobi from './032-aloo-gobi.json';
+import item_033_goan_fish_curry from './033-goan-fish-curry.json';
+import item_034_chilli_paneer from './034-chilli-paneer.json';
+import item_035_curd_rice from './035-curd-rice.json';
+import item_036_rava_dosa from './036-rava-dosa.json';
+import item_037_bhindi_masala from './037-bhindi-masala.json';
+import item_038_egg_curry from './038-egg-curry.json';
+import item_039_veg_biryani from './039-veg-biryani.json';
+import item_040_sabudana_khichdi from './040-sabudana-khichdi.json';
+import item_041_pongal from './041-pongal.json';
+import item_042_malai_kofta from './042-malai-kofta.json';
+import item_043_chicken_fried_rice from './043-chicken-fried-rice.json';
+import item_044_baingan_bharta from './044-baingan-bharta.json';
+import item_045_tandoori_chicken from './045-tandoori-chicken.json';
+import item_046_methi_thepla from './046-methi-thepla.json';
+import item_047_veg_manchurian from './047-veg-manchurian.json';
+import item_048_bisi_bele_bath from './048-bisi-bele-bath.json';
+import item_049_mushroom_masala from './049-mushroom-masala.json';
+import item_050_chicken_korma from './050-chicken-korma.json';
+import item_051_uttapam from './051-uttapam.json';
+import item_052_moong_dal_khichdi from './052-moong-dal-khichdi.json';
+import item_053_paneer_tikka from './053-paneer-tikka.json';
+import item_054_matar_paneer from './054-matar-paneer.json';
+import item_055_prawn_masala from './055-prawn-masala.json';
+import item_056_pesarattu from './056-pesarattu.json';
+import item_057_tomato_rice from './057-tomato-rice.json';
+import item_058_khaman_dhokla from './058-khaman-dhokla.json';
+import item_059_chicken_kathi_roll from './059-chicken-kathi-roll.json';
+import item_060_aloo_matar from './060-aloo-matar.json';
 
 export const items: Dish[] = [
   item_001_poha as unknown as Dish,
@@ -63,4 +93,34 @@ export const items: Dish[] = [
   item_028_chicken_65 as unknown as Dish,
   item_029_misal_pav as unknown as Dish,
   item_030_lemon_rice as unknown as Dish,
+  item_031_indian_style_overnight_oats as unknown as Dish,
+  item_032_aloo_gobi as unknown as Dish,
+  item_033_goan_fish_curry as unknown as Dish,
+  item_034_chilli_paneer as unknown as Dish,
+  item_035_curd_rice as unknown as Dish,
+  item_036_rava_dosa as unknown as Dish,
+  item_037_bhindi_masala as unknown as Dish,
+  item_038_egg_curry as unknown as Dish,
+  item_039_veg_biryani as unknown as Dish,
+  item_040_sabudana_khichdi as unknown as Dish,
+  item_041_pongal as unknown as Dish,
+  item_042_malai_kofta as unknown as Dish,
+  item_043_chicken_fried_rice as unknown as Dish,
+  item_044_baingan_bharta as unknown as Dish,
+  item_045_tandoori_chicken as unknown as Dish,
+  item_046_methi_thepla as unknown as Dish,
+  item_047_veg_manchurian as unknown as Dish,
+  item_048_bisi_bele_bath as unknown as Dish,
+  item_049_mushroom_masala as unknown as Dish,
+  item_050_chicken_korma as unknown as Dish,
+  item_051_uttapam as unknown as Dish,
+  item_052_moong_dal_khichdi as unknown as Dish,
+  item_053_paneer_tikka as unknown as Dish,
+  item_054_matar_paneer as unknown as Dish,
+  item_055_prawn_masala as unknown as Dish,
+  item_056_pesarattu as unknown as Dish,
+  item_057_tomato_rice as unknown as Dish,
+  item_058_khaman_dhokla as unknown as Dish,
+  item_059_chicken_kathi_roll as unknown as Dish,
+  item_060_aloo_matar as unknown as Dish,
 ];

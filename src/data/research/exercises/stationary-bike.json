@@ -36,8 +36,8 @@
   "level": "beginner",
   "impact": "low",
   "flatFriendly": true,
-  "met": 6,
-  "compendiumCode": "01220",
+  "met": 5.8,
+  "compendiumCode": "01218",
   "metOptions": [
     {
       "code": "01214",
@@ -62,7 +62,7 @@
     {
       "code": "01220",
       "met": 6,
-      "activity": "Moderate (default for the app): code 01220, 90–100 W, moderate to vigorous: 6.0 METs."
+      "activity": "Moderate to vigorous: code 01220, 90–100 W: 6.0 METs (intermediate riders)."
     },
     {
       "code": "01236",
@@ -88,14 +88,14 @@
       "reps": null,
       "timeSec": 900,
       "restSec": null,
-      "tempo": "steady moderate (talk but not sing), RPE 3-4/10, 60-80 RPM, plus 5 min warm-up and 3-5 min cool-down",
+      "tempo": "steady moderate (talk but not sing), RPE 5-6/10 (ACSM moderate), 60-80 RPM, plus 5 min warm-up and 3-5 min cool-down",
       "perWeek": 3
     },
     {
       "level": "beginner",
       "goal": "fat_loss",
       "sets": 5,
-      "reps": "1 min harder (RPE 5/10, +2 levels) + 2 min easy",
+      "reps": "1 min harder (RPE 6/10, +2 levels) + 2 min easy",
       "timeSec": 60,
       "restSec": 120,
       "tempo": "intervals",
@@ -118,14 +118,14 @@
       "reps": null,
       "timeSec": 1800,
       "restSec": null,
-      "tempo": "steady moderate, RPE 4-5/10, 70-90 RPM, 64-76% HRmax",
+      "tempo": "steady moderate, RPE 5-6/10, 70-90 RPM, 64-76% HRmax",
       "perWeek": 4
     },
     {
       "level": "intermediate",
       "goal": "fat_loss",
       "sets": 8,
-      "reps": "1 min hard (RPE 6-7/10, +3-4 levels) + 1-2 min easy",
+      "reps": "1 min hard (RPE 7-8/10, +3-4 levels) + 1-2 min easy",
       "timeSec": 60,
       "restSec": 90,
       "tempo": "intervals",
@@ -509,7 +509,7 @@
       "action": null,
       "feel": "breathing rises slightly; you can chat easily.",
       "breathing": null,
-      "tempo": "5 minutes, RPE 2–3/10, about 60–80 RPM (est.).",
+      "tempo": "5 minutes, RPE 3–4/10 (light), about 60–80 RPM (est.).",
       "visualCheck": null
     },
     {
@@ -549,7 +549,7 @@
       "action": null,
       "feel": "breathing settles, legs feel lighter.",
       "breathing": null,
-      "tempo": "3–5 minutes, RPE 2–3/10.",
+      "tempo": "3–5 minutes, RPE 3–4/10 (light).",
       "visualCheck": null
     },
     {
@@ -669,14 +669,14 @@
   ],
   "burnMinutes": {
     "per100kcal": {
-      "60kg": 16.7,
-      "70kg": 14.3,
-      "80kg": 12.5
+      "60kg": 17.2,
+      "70kg": 14.8,
+      "80kg": 12.9
     },
     "per300kcal": {
-      "60kg": 50,
-      "70kg": 42.9,
-      "80kg": 37.5
+      "60kg": 51.7,
+      "70kg": 44.3,
+      "80kg": 38.8
     }
   },
   "gymAccess": [
@@ -808,7 +808,7 @@
     "noise": "quiet",
     "space": "machine",
     "typicalMinutes": 20,
-    "kcalPer10min70kg": 70,
+    "kcalPer10min70kg": 68,
     "difficulty1to5": 1,
     "cameraTrackable": true
   },
@@ -826,6 +826,7 @@
     "20–30 min"
   ],
   "needsReview": [
+    "MET 5.8 does not match the beginner intensity (moderate), which cardio_settings gives as 6",
     "moderate intensity given as RPE 3-4/10; ACSM maps moderate to about 5–6/10 (Borg 12–13)"
   ],
   "versions": [

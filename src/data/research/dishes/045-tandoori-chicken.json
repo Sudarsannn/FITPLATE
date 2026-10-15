@@ -1,0 +1,652 @@
+{
+  "id": "045-tandoori-chicken",
+  "number": 45,
+  "name": "Tandoori Chicken",
+  "cuisine": "Punjabi / North Indian (Peshawar–Delhi tandoor tradition, adapted here for a home oven/OTG, air fryer or tawa; no tandoor needed)",
+  "dietType": "non-veg",
+  "mealType": [
+    "lunch",
+    "dinner"
+  ],
+  "difficulty": "Beginner",
+  "prepMin": 15,
+  "cookMin": 30,
+  "servings": 1,
+  "ingredients": [
+    {
+      "ingredientId": "chicken-leg-skinless-bone-in",
+      "name": "Chicken leg, skinless, bone-in (thigh + drumstick)",
+      "quantity": 250,
+      "unit": "g",
+      "householdMeasure": "1 whole leg, cut at the joint into 2 pieces"
+    },
+    {
+      "ingredientId": "lemon",
+      "name": "Lemon juice (nimbu ras)",
+      "quantity": 10,
+      "unit": "ml",
+      "householdMeasure": "2 tsp (about ½ small lemon), for the first rub"
+    },
+    {
+      "ingredientId": "kashmiri-red-chilli-powder",
+      "name": "Kashmiri red chilli powder (lal mirch)",
+      "quantity": 2.5,
+      "unit": "g",
+      "householdMeasure": "1¼ tsp in total (½ tsp for the first rub, ¾ tsp for the marinade)"
+    },
+    {
+      "ingredientId": "salt",
+      "name": "Salt (namak)",
+      "quantity": 2.5,
+      "unit": "g",
+      "householdMeasure": "½ tsp in total (a pinch less than ¼ tsp for the first rub, the rest in the marinade)"
+    },
+    {
+      "ingredientId": null,
+      "name": "Hung curd (strained dahi) or thick Greek-style yoghurt",
+      "quantity": 40,
+      "unit": "g",
+      "householdMeasure": "2½ tbsp (made from about 80 g / ⅓ cup ordinary curd strained for 30 min)"
+    },
+    {
+      "ingredientId": "ginger",
+      "name": "Ginger (adrak), grated or paste",
+      "quantity": 5,
+      "unit": "g",
+      "householdMeasure": "1 tsp (about ¾-inch piece)"
+    },
+    {
+      "ingredientId": "garlic",
+      "name": "Garlic (lahsun), grated or paste",
+      "quantity": 5,
+      "unit": "g",
+      "householdMeasure": "1 tsp (2–3 small cloves)"
+    },
+    {
+      "ingredientId": "coriander-powder",
+      "name": "Coriander powder (dhania powder)",
+      "quantity": 1,
+      "unit": "g",
+      "householdMeasure": "½ tsp"
+    },
+    {
+      "ingredientId": "cumin-powder",
+      "name": "Cumin powder (jeera powder)",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "¼ tsp"
+    },
+    {
+      "ingredientId": "garam-masala",
+      "name": "Garam masala",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "¼ tsp"
+    },
+    {
+      "ingredientId": "turmeric-powder",
+      "name": "Turmeric powder (haldi)",
+      "quantity": 0.3,
+      "unit": "g",
+      "householdMeasure": "1 small pinch"
+    },
+    {
+      "ingredientId": "dried-fenugreek-leaves",
+      "name": "Dried fenugreek leaves (kasuri methi)",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "½ tsp, crushed between the palms"
+    },
+    {
+      "ingredientId": "mustard-oil-kachi-ghani",
+      "name": "Mustard oil (sarson ka tel), or any cooking oil",
+      "quantity": 10,
+      "unit": "ml",
+      "householdMeasure": "2 tsp (1 tsp in the marinade, 1 tsp for basting)"
+    }
+  ],
+  "equipment": [
+    "Mixing bowl (with a lid or cling film) for marinating",
+    "Sharp knife and chopping board, for slashing the chicken",
+    "Small grater (for ginger and garlic)",
+    "Muslin cloth or a clean thin cotton cloth plus a strainer, for hanging the curd",
+    "Oven/OTG (main method) with a wire rack and a tray lined with foil underneath",
+    "No oven, air fryer instead: 200 °C, preheat 3 min, cook 18–22 min, turning once and basting at 10 min; finish 2 min at the highest setting to char",
+    "No oven or air fryer, tawa/heavy pan instead: heat 1 tsp oil in a heavy tawa or kadai, add the pieces, cook 3 min per side on medium-high to colour, then cover with a lid and cook 12–15 min on low-medium, turning every 4 min and spooning any leftover marinade on top; uncover for the last 2–3 min to dry the coating",
+    "Tongs or two forks, for turning",
+    "Basting brush (or the back of a spoon)",
+    "Meat/kitchen thermometer (useful, not essential)",
+    "Optional, for smoky flavour: one small piece of charcoal, a small steel bowl, and a lid that fits your mixing bowl or pan (step 23)"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "title": "Hang the curd (skip if using thick Greek-style yoghurt)",
+      "text": "Put 80 g (⅓ cup) curd in a muslin-lined strainer over a bowl and leave it in the fridge.",
+      "timerSec": 60,
+      "tip": "Thin, runny curd slides off the chicken and steams instead of roasting. This is the single biggest difference to the result.",
+      "visualCue": "Whey drips into the bowl; the curd turns thick like soft cream cheese, about 40 g left",
+      "cameraCheck": "The thick curd in the cloth",
+      "videoShot": "A spoon pulling a thick dollop of curd off the muslin."
+    },
+    {
+      "n": 2,
+      "title": "Pat the chicken dry",
+      "text": "Pat the 250 g chicken leg dry with paper towel. If it is a whole leg, cut it at the joint into thigh and drumstick.",
+      "timerSec": 60,
+      "tip": "Wash your hands, board and knife with soap after handling raw chicken.",
+      "visualCue": "Matte, not wet, surface",
+      "cameraCheck": "The 2 pieces on the board",
+      "videoShot": "A paper towel pressing on the chicken."
+    },
+    {
+      "n": 3,
+      "title": "Slash the chicken",
+      "text": "Make 3 deep cuts (down to the bone) across the thigh and 2–3 across the drumstick.",
+      "timerSec": 60,
+      "tip": "Deep slashes let the marinade reach the bone and help the thick part cook through at the same time as the thin part.",
+      "visualCue": "Deep, open gashes about 1 cm apart",
+      "cameraCheck": "The slashed pieces",
+      "videoShot": "The knife drawing a deep cut across the thigh."
+    },
+    {
+      "n": 4,
+      "title": "First rub",
+      "text": "Sprinkle ½ tsp (1 g) Kashmiri chilli powder, a pinch of salt (about 1 g) and 2 tsp (10 ml) lemon juice over the chicken. Rub it into the slashes.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "An even, red, wet coat, with colour inside every cut",
+      "cameraCheck": "The rubbed chicken in the bowl",
+      "videoShot": "Fingers pushing red rub into a slash."
+    },
+    {
+      "n": 5,
+      "title": "Rest the first rub",
+      "text": "Cover and leave in the fridge.",
+      "timerSec": 1200,
+      "tip": "Do steps 6–9 now.",
+      "visualCue": "The surface looks slightly paler and firmer where the lemon has touched it",
+      "cameraCheck": "The covered bowl going into the fridge",
+      "videoShot": "The bowl sliding onto a fridge shelf."
+    },
+    {
+      "n": 6,
+      "title": "Grate the ginger and garlic",
+      "text": "Grate 5 g ginger (1 tsp) and 5 g garlic (1 tsp) into a small bowl.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "Two small wet heaps of pale paste",
+      "cameraCheck": "The ginger-garlic in the bowl",
+      "videoShot": "Garlic being rubbed on the grater."
+    },
+    {
+      "n": 7,
+      "title": "Start the marinade",
+      "text": "In a mixing bowl, put the 40 g hung curd and the ginger-garlic. Whisk with a spoon.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Smooth, thick, flecked white paste with no lumps",
+      "cameraCheck": "The curd paste",
+      "videoShot": "A spoon whisking the curd smooth."
+    },
+    {
+      "n": 8,
+      "title": "Add the powders and salt",
+      "text": "Add ¾ tsp (1.5 g) Kashmiri chilli powder, ½ tsp (1 g) coriander powder, ¼ tsp (0.5 g) cumin powder, ¼ tsp (0.5 g) garam masala, a small pinch of turmeric and the remaining salt (about 1.5 g, a little over ¼ tsp). Mix.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "An even, deep orange-red paste, no streaks of white",
+      "cameraCheck": "The red marinade",
+      "videoShot": "Powders falling onto the white curd and being stirred in."
+    },
+    {
+      "n": 9,
+      "title": "Add kasuri methi and oil",
+      "text": "Crush ½ tsp kasuri methi between your palms into the bowl and add 1 tsp (5 ml) mustard oil. Mix well.",
+      "timerSec": 30,
+      "tip": "Using raw mustard oil? Some cooks heat it until it just smokes and cool it first to soften its sharpness; it is optional.",
+      "visualCue": "A glossy paste with green flecks; it should coat the spoon thickly and not run",
+      "cameraCheck": "The spoon coated in marinade",
+      "videoShot": "Palms rubbing kasuri methi over the bowl."
+    },
+    {
+      "n": 10,
+      "title": "Coat the chicken",
+      "text": "Add the chicken (with any juices) to the marinade and massage it in, pushing it into every slash.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Thick, even red coat, no bare patches",
+      "cameraCheck": "The fully coated pieces",
+      "videoShot": "Hands turning the chicken in the red marinade."
+    },
+    {
+      "n": 11,
+      "title": "Marinate",
+      "text": "Cover and refrigerate.",
+      "timerSec": 7200,
+      "tip": "Longer (6 h to overnight) gives a deeper flavour, but 2 h is enough for a good result.",
+      "visualCue": "None needed; set a timer",
+      "cameraCheck": "The covered bowl in the fridge",
+      "videoShot": "Cling film being pressed over the bowl."
+    },
+    {
+      "n": 12,
+      "title": "Take the chicken out",
+      "text": "Take the bowl out of the fridge.",
+      "timerSec": 1200,
+      "tip": "Cold-from-the-fridge chicken cooks unevenly; the outside chars before the bone is done.",
+      "visualCue": "The bowl is no longer icy cold to touch",
+      "cameraCheck": "The bowl on the counter",
+      "videoShot": "The bowl being set down on the counter."
+    },
+    {
+      "n": 13,
+      "title": "Preheat the oven",
+      "text": "Set the oven/OTG to 240 °C (or its highest setting up to 250 °C), top and bottom heat, and let it heat fully.",
+      "timerSec": 600,
+      "tip": "Air fryer instead? Preheat it to 200 °C for 3 min and follow the times in section 3.",
+      "visualCue": "The oven's indicator light goes off / the beep sounds",
+      "cameraCheck": "The oven dial at 240 °C",
+      "videoShot": "Turning the dial and the light coming on."
+    },
+    {
+      "n": 14,
+      "title": "Set up the tray",
+      "text": "Line the tray with foil and put the wire rack on top.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "A rack sitting above a foil-lined tray",
+      "cameraCheck": "The tray and rack",
+      "videoShot": "Foil being pressed into the tray."
+    },
+    {
+      "n": 15,
+      "title": "Arrange the chicken",
+      "text": "Place the pieces on the rack with space between them, slashed side up. Leave the extra marinade in the bowl.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Pieces not touching",
+      "cameraCheck": "The chicken on the rack",
+      "videoShot": "Tongs placing the pieces."
+    },
+    {
+      "n": 16,
+      "title": "First roast",
+      "text": "Put the tray on the middle shelf and roast.",
+      "timerSec": 900,
+      "tip": null,
+      "visualCue": "The marinade has set and the edges are starting to brown",
+      "cameraCheck": "The chicken through the oven door",
+      "videoShot": "The tray sliding into the glowing oven."
+    },
+    {
+      "n": 17,
+      "title": "Baste and turn",
+      "text": "Take the tray out, brush the chicken with 1 tsp (5 ml) mustard oil (plus any leftover marinade), and turn the pieces over.",
+      "timerSec": 60,
+      "tip": "Work quickly so the oven does not lose its heat; close the door while you baste.",
+      "visualCue": "Glossy pieces, the underside now on top",
+      "cameraCheck": "The basted chicken",
+      "videoShot": "The brush gliding over the chicken."
+    },
+    {
+      "n": 18,
+      "title": "Second roast",
+      "text": "Return the tray and roast.",
+      "timerSec": 600,
+      "tip": null,
+      "visualCue": "Deep red-brown coat with dark, charred edges",
+      "cameraCheck": "The chicken through the oven door",
+      "videoShot": "Edges sizzling and darkening."
+    },
+    {
+      "n": 19,
+      "title": "Check it is cooked",
+      "text": "Insert a thermometer into the thickest part near the bone, or cut into it.",
+      "timerSec": 30,
+      "tip": "Still pink? Roast 4–5 min more and check again.",
+      "visualCue": "74 °C (165 °F) or above; the meat is white at the bone and the juices run clear, with no pink",
+      "cameraCheck": "The cut-open thickest piece, or the thermometer reading",
+      "videoShot": "A knife opening the thigh at the bone."
+    },
+    {
+      "n": 20,
+      "title": "Char the outside",
+      "text": "Switch the oven to top heat/grill for 2–3 min, or hold each piece with tongs over a medium gas flame for 30–60 sec, turning.",
+      "timerSec": 120,
+      "tip": "Charring is what makes it taste \"tandoori\" rather than baked.",
+      "visualCue": "Small black charred spots on the edges of the slashes, without the whole surface burning",
+      "cameraCheck": "The charred piece",
+      "videoShot": "A piece turning over the blue gas flame, edges blistering."
+    },
+    {
+      "n": 21,
+      "title": "Move to a plate",
+      "text": "Transfer the pieces to a serving plate.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "Juices on the foil stay behind",
+      "cameraCheck": "The chicken on the plate",
+      "videoShot": "Tongs lifting the chicken off the rack."
+    },
+    {
+      "n": 22,
+      "title": "Rest",
+      "text": "Leave the chicken to rest, loosely covered.",
+      "timerSec": 180,
+      "tip": null,
+      "visualCue": "Steam stops pouring off; juices settle back into the meat",
+      "cameraCheck": "The resting plate",
+      "videoShot": "A plate loosely covered with foil."
+    },
+    {
+      "n": 23,
+      "title": "Optional: smoke it (dhungar)",
+      "text": "Heat a small piece of charcoal over a gas flame until it glows (3–4 min). Put it in a small steel bowl, place the bowl in the middle of the chicken plate (or pan), pour ½ tsp ghee on the coal, and cover with a lid for 2 min.",
+      "timerSec": 360,
+      "tip": "Use tongs, keep the coal away from plastic, and open a window. Not counted in nutrition (a little ghee smoke, most of it burns).",
+      "visualCue": "Thick white smoke when the ghee hits the coal; a strong smoky smell when you lift the lid",
+      "cameraCheck": "The glowing coal in the bowl",
+      "videoShot": "Ghee hitting the coal and the lid going on."
+    },
+    {
+      "n": 24,
+      "title": "Finish and serve",
+      "text": "Squeeze the lemon wedge over the chicken and serve with onion rings and mint chutney.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Red, charred pieces with bright onion and green chutney beside them",
+      "cameraCheck": "The finished plate",
+      "videoShot": "Lemon being squeezed over the chicken."
+    }
+  ],
+  "nutritionPerServing": {
+    "kcal": 365,
+    "proteinG": 40,
+    "carbsG": 7.8,
+    "fatG": 19.6,
+    "fibreG": 1.7
+  },
+  "microNutrientsEstimate": {
+    "values": {
+      "cholesterol": 0,
+      "iron": 2,
+      "niacin": 14,
+      "pantothenic-acid": 3.2,
+      "phosphorus": 450,
+      "potassium": 595,
+      "riboflavin": 0.3,
+      "selenium": 52.5,
+      "sodium": 240,
+      "thiamine": 0.4,
+      "vitamin-b12": 0,
+      "vitamin-b6": 0.8,
+      "zinc": 4.5
+    },
+    "coveragePct": 79,
+    "basis": "partial estimate from ingredient quantities"
+  },
+  "asOrdered": {
+    "price": {
+      "priceHistory": [
+        {
+          "date": "2026-10-12",
+          "min": 260,
+          "max": 350,
+          "avg": 311,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-10-12.md"
+        }
+      ],
+      "currentEstimate": {
+        "min": 260,
+        "max": 350,
+        "avg": 310
+      },
+      "method": "single",
+      "trend": "unknown",
+      "change30dPct": null,
+      "lastObserved": "2026-10-12",
+      "stale": false,
+      "seasonal": false,
+      "listingCount": 4,
+      "platforms": [
+        "magicpin",
+        "Zomato"
+      ],
+      "outOfStock": false,
+      "confirmed": true,
+      "checkNotes": []
+    },
+    "nutrition": {
+      "calories": {
+        "value": 325,
+        "source": null
+      },
+      "protein": {
+        "value": 33.7,
+        "source": null
+      },
+      "carbs": {
+        "value": 4.2,
+        "source": null
+      },
+      "fat": {
+        "value": 19.1,
+        "source": null
+      },
+      "fibre": {
+        "value": null,
+        "source": null
+      }
+    },
+    "restaurantsSampled": 13,
+    "platforms": [
+      "Swiggy",
+      "Zomato",
+      "magicpin"
+    ]
+  },
+  "orderPrice": {
+    "priceHistory": [
+      {
+        "date": "2026-10-12",
+        "min": 260,
+        "max": 350,
+        "avg": 311,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-10-12.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 260,
+      "max": 350,
+      "avg": 310
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-12",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 4,
+    "platforms": [
+      "magicpin",
+      "Zomato"
+    ],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
+  },
+  "healthiness": {
+    "score": 8,
+    "restaurantScore": 6,
+    "reasons": [
+      "about 40 g of protein for about 365 kcal, almost no carbohydrate, no deep-frying, only 2 tsp of oil (mostly mono- and polyunsaturated mustard oil), and no sugar; the curd and spices add flavour without much energy. Points come off for sodium (about 1,150 mg, more than half the daily limit), dietary cholesterol from dark meat, very little fibre or vegetables on its own, and the small amounts of char formed at high heat. Restaurant versions are usually basted with butter, salted more heavily, often coloured with artificial red dye, and a half portion is 1.5–2× this serving."
+    ]
+  },
+  "researchRating": {
+    "score": 4.7,
+    "basis": "one of the best-known Indian dishes worldwide, with a famous origin story (Moti Mahal, Peshawar and then Daryaganj, Delhi, after 1947) and the base of butter chicken; Swasthi's Recipes' restaurant-style version shows 4.99/5 from 619 votes, The Daring Gourmet 4.99/5 from 108 votes, Once Upon a Chef 4.93 from 206 reviews, and Whisk Affair 4.84/5 (12 votes); every major Indian chef site (Sanjeev Kapoor, Ranveer Brar) publishes it, and Mumbai food guides (Curly Tales, Republic World, Tripadvisor) list dozens of places known for it. Small deduction because home oven versions are often called dry or \"not like the tandoor\" without a char or smoking step."
+  },
+  "storage": "Fridge-safe in a closed box for up to 3 days; cool it within 1 hour of cooking. Freezer: up to 2 months, well wrapped. Raw marinated chicken can wait in the fridge up to about 24 h before cooking. Reheat in an oven or air fryer at 180 °C for 6–8 min (8–10 min from thawed frozen) until piping hot to the bone, or in a covered pan with 1 tbsp water for 5–6 min, turning once; the microwave works but makes the coating soft.",
+  "leftoverRemix": "tandoori chicken chaat (an established dish; Sanjeev Kapoor publishes a Tandoori Murg Chaat). Pull the leftover meat off the bone and shred it. Toss with chopped onion, tomato, cucumber, a pinch of chaat masala, lemon juice, chopped coriander and 1 tbsp green chutney, and top with a few pomegranate seeds or roasted peanuts. A cold, tangy, high-protein salad or a filling for a roti wrap.",
+  "burnOff": "about 5.2 km of running (365 ÷ 70 kcal/km, for a 70 kg adult), or about 7.3 km of brisk walking (about 1 hour 30 minutes at 5 km/h, using about 50 kcal/km for walking) (est.). A restaurant half (about 550–750 kcal, est.) is about 8–11 km of running.",
+  "sources": [
+    "Swasthi's Recipes (Indian Healthy Recipes), Tandoori Chicken Recipe (Restaurant Style) (skinless bone-in leg quarters; hung/Greek yoghurt; Kashmiri chilli, ginger-garlic, lemon, mustard oil optional; oven 12–15 min, baste and turn, 12–15 min more; air fryer 200 °C; 4.99/5 from 619 votes): https://www.indianhealthyrecipes.com/tandoori-chicken-recipe/ ; https://www.indianhealthyrecipes.com/tandoori-chicken/",
+    "Sanjeev Kapoor, Tandoori Chicken (750 g chicken in 2 breast + 2 leg pieces; first rub of chilli, lemon, salt for ½ h; second marinade of ½ cup hung yoghurt, 1 tbsp each ginger and garlic paste, garam masala, kasuri methi, 2 tsp mustard oil, 3–4 h): https://www.sanjeevkapoor.com/Recipe/tandoori-chicken-8730165 ; other versions: https://sanjeevkapoor.com/Recipe/tandoori-chicken-7243819 ; https://sanjeevkapoor.com/Recipe/Full-Tandoori-Chicken---SK-Khazana.html ; https://sanjeevkapoor.com/Recipe/Tandoori-Chicken-Cooking-with-Olive-Oil.html",
+    "Ranveer Brar, Tandoori Chicken Bina Tandoor (first marinade ginger-garlic and lime 1 h; second of mustard oil, hung curd, cheese, roasted gram flour, whole spices, 2 h; oven): https://ranveerbrar.com/recipes/tandoori-chicken/",
+    "Whisk Affair, Best Tandoori Chicken Recipe (Oven + Air Fryer) (4.84/5, 12 votes): https://www.whiskaffair.com/tandoori-chicken-recipe/",
+    "Cubes N Juliennes, Tandoori Chicken (authentic, easy): https://www.cubesnjuliennes.com/tandoori-chicken-recipe/",
+    "Chetna Makan, Tandoori Chicken (deep slashes; oven 190 °C fan for 40–45 min): https://chetnamakan.co.uk/tandoori-chicken/",
+    "Hassan Chef, restaurant-style tandoori chicken (two-stage marinade, 3–4 h or overnight; 200 °C air fryer): https://www.hassanchef.com/2019/02/restaurant-style-tandoori-chicken-recipe.html?m=1",
+    "Ruchi's Kitchen, Tandoori Chicken Without Oven (pan method: sear, cover and cook, add leftover marinade): https://www.ruchiskitchen.com/tandoori-chicken-without-oven/",
+    "Yummy Tummy Aarthi, Air Fryer Tandoori Chicken (bone-in legs, about 20 min, high-heat finish): https://www.yummytummyaarthi.com/air-fryer-tandoori-chicken/ ; Piping Pot Curry, Tandoori Chicken Air Fryer: https://pipingpotcurry.com/tandoori-chicken-air-fryer/",
+    "Other rating references: The Daring Gourmet (4.99/5, 108 votes): https://www.daringgourmet.com/tandoori-chicken/ ; Once Upon a Chef (4.93, 206 reviews): https://www.onceuponachef.com/recipes/crispy-tandoori-chicken-drumsticks-mango-chutney.html ; Ministry of Curry (4.89, 26 votes): https://ministryofcurry.com/tandoori-chicken/",
+    "History: Moti Mahal, The History of Tandoori Chicken: https://motimahal.in/the-history-of-tandoori-chicken-infographics/ ; The Week, Betting on butter chicken: https://www.theweek.in/magazine/theweek/cover/2021/12/16/betting-on-butter-chicken.html ; Wikipedia: https://en.wikipedia.org/wiki/Tandoori_chicken",
+    "Whole30, Tandoori Chicken Marinade (coconut yoghurt; not over 24 h): https://whole30.com/recipes/whole30-tandoori-chicken-marinade/",
+    "Cook2Nourish, Tandoori Chicken (Paleo/Whole30, lemon instead of yoghurt; 1–10 h): https://cook2nourish.com/?p=7392",
+    "Sanjeev Kapoor, Jain Hariyali Paneer Tikka: https://sanjeevkapoor.com/recipe/Jain-Hariyali-Paneer-Tikka.html",
+    "Whisk Affair, Tandoori Soya Chaap (street-style): https://www.whiskaffair.com/tandoori-soya-chaap-recipe/ ; Ranveer Brar, Tandoori Soya Chaap: https://ranveerbrar.com/recipes/tandoori-soya-chaap/ ; Rachna Cooks, Tandoori Soya Chaap (soy yoghurt option): https://rachnacooks.com/tandoori-soya-chaap/ ; Blessmyfood, oven tandoori soya chaap: https://blessmyfoodbypayal.com/wprm_print/tandoori-soya-chaap-recipe-in-oven ; Zofff Foods, tandoori soya chaap (200 °C, 15–20 min): https://zofffoods.com/blogs/article/tandoori-soya-chaap-recipe",
+    "Soya chaap nutrition and wheat content: Harman Soya Chaap label (Woolworths NZ): https://www.woolworths.co.nz/shop/product-details/6079170/harman-soya-chaap ; FatSecret soya chaap: https://mobile.fatsecret.co.nz/calories-nutrition/generic/soya-chaap",
+    "Soya chaap order prices: magicpin Punjabi Grill, Kandivali: https://magicpin.in/Mumbai/Kandivali/Restaurant/Punjabi-Grill/store/4b4a24/delivery ; Kubec, Powai: https://magicpin.in/Mumbai/Powai/Restaurant/Kubec/store/a82a36/delivery ; Sadak Chaap, Malad West: https://magicpin.in/Mumbai/Malad-West/Restaurant/Sadak-Chaap-Tandoori-Chaaps-And-Snacks/store/611036/menu",
+    "USDA FoodData Central (chicken broiler dark meat, leg/thigh, meat only, raw; whole-milk Greek yoghurt; mustard oil; ginger; garlic; lemon juice; spices): https://fdc.nal.usda.gov/",
+    "ICMR-NIN, Nutrient Requirements for Indians 2020 (RDA/EAR reference): https://www.nin.res.in/ ; IFCT 2017 referenced but values not confirmed from this environment.",
+    "HealthifyMe, Chicken Tandoori (about 144 kcal/100 g; context): https://www.healthifyme.com/web/nutrifacts/chicken-tandoori-8301318240",
+    "MealStack, Tandoori chicken (145 kcal, 16.3 g protein per 100 g, INDB; context): https://www.mealstack.io/foods/tandoori-chicken",
+    "SnapCalorie, Tandoori chicken (context): https://www.snapcalorie.com/nutrition/tandoori_chicken_nutrition.html ; MyNetDiary, Body Meals tandoori chicken (context): https://www.mynetdiary.com/food/calories-in-tandoori-chicken-by-body-meals-serving-19782834-0.html",
+    "Veg Recipes of India, Navratri fasting rules (meat, onion, garlic avoided): https://www.vegrecipesofindia.com/navratri-fasting-rules-vrat-ka-khana/",
+    "Hindutone, Navratri 2026 fasting rules (same rules for Ekadashi fasts): https://hindutone.com/festivals/navratri-fasting-rules-2026-vrat-food-what-to-eat-avoid/",
+    "British Nutrition Foundation, healthy Ramadan (avoid salty foods at suhoor): https://www.nutrition.org.uk/media/bytokjkm/healthy-ramadan-2021.pdf",
+    "magicpin, Jai Hind Lunch Home, Lower Parel (Tandoori Chicken Half ₹260): https://magicpin.in/Mumbai/Lower-Parel/Restaurant/Jai-Hind-Lunch-Home/store/250ac/menu",
+    "magicpin, Tandoori Drama, Khar (Half ₹329): https://magicpin.in/Mumbai/Khar/Restaurant/Tandoori-Drama/store/2bb863/menu ; Zomato, Tandoori Drama, Khar (Half ₹329, Full ₹589): https://www.zomato.com/mumbai/tandoori-drama-khar/order",
+    "magicpin, Persia Darbar, Versova (Chicken Tandoori Half ₹354): https://magicpin.in/Mumbai/Versova/Restaurant/Persia-Darbar/store/8b396/menu",
+    "magicpin, Biryani By Kilo, Andheri West (Tandoori Chicken Half (4 Pcs) ₹399 / ₹322): https://magicpin.in/Mumbai/Andheri-West/Restaurant/Biryani-By-Kilo/store/155a8ab",
+    "magicpin, Shan Chinese, Jogeshwari (Chicken Tandoori (Half) ₹200): https://magicpin.in/Mumbai/Jogeshwari/Restaurant/Shan-Chinese/store/3ba46a/delivery/?itemId=17608182",
+    "magicpin, Hotel Dashmesh Punjab (Tandoori Chicken ₹210): https://magicpin.in/Mumbai/Ghatkopar-West/Restaurant/Hotel-Dashmesh-Punjab/store/23b44/",
+    "Zomato, Centre Point Dhaba, Borivali West (Chicken Tandoori ₹335): https://www.zomato.com/mumbai/centre-point-dhaba-borivali-west/order",
+    "Swiggy, IndiKitchen, Mahalaxmi / Lower Parel (Classic Chicken Tandoori ₹399): https://www.swiggy.com/restaurants/indikitchen-mahalaxmi-lower-parel-worli-mumbai-97871",
+    "magicpin, Copper Chimney, Malad West (Half ₹515 / ₹489; premium): https://magicpin.in/Mumbai/Malad-West/Restaurant/Copper-Chimney/store/632371/delivery",
+    "magicpin, Squee & Spoon, Nexus Seawoods, Navi Mumbai (₹260 / ₹247): https://magicpin.in/Navi-Mumbai/Nexus-Seawoods/Restaurant/Squee-and-Spoon/store/1576200/delivery",
+    "magicpin, Butter Chicken Factory, Bandra West (combo ₹800; dropped): https://magicpin.in/Mumbai/Bandra-West/Restaurant/Butter-Chicken-Factory/store/77143/delivery ; Zohra, Kharghar (combo ₹790; dropped): https://magicpin.in/Navi-Mumbai/Kharghar/Restaurant/Zohra/store/24bb7/delivery",
+    "Zomato, Simla Dhaba, Vasai (₹290): https://www.zomato.com/mumbai/simla-dhaba-3-vasai/order ; Prithvish, Nerul (₹365): https://www.zomato.com/mumbai/prithvish-nerul-navi-mumbai/order ; Angrezi Patiyalaa, Thane West (₹689, size unclear): https://www.zomato.com/mumbai/angrezi-patiyalaa-khopat-thane-west-thane/order",
+    "magicpin, Hardeep Punjab, Sion (Dahiwala Tandoori Chicken ₹390; not used): https://magicpin.in/Mumbai/Sion/Restaurant/Hardeep-Punjab/store/24681/menu/?img=Food-Menu&id=32",
+    "Zomato, Dee's Keto, Kandivali West (Keto Tandoori Chicken 325 kcal, 33.7 g protein, 4.2 g carbs, 19.1 g fat): https://www.zomato.com/mumbai/dees-keto-kandivali-west/order",
+    "Swiggy, Best Tandoori Chicken Restaurants In Mumbai 2025 (no prices in snippet): https://www.swiggy.com/city/mumbai/tandoori-chicken-dish-restaurants ; Zomato, Tandoori Chicken in Mumbai (cost for two only): https://www.zomato.com/mumbai/restaurants/dish-tandoori-chicken",
+    "Republic World, best tandoori places in Mumbai (Singh Saab from ₹225, Jai Jawan about ₹380; dated): https://www.republicworld.com/lifestyle/food/best-tandoori-places-in-mumbai.html ; Curly Tales, best tandoori chicken in Mumbai: https://curlytales.com/best-tandoori-chicken-in-mumbai/"
+  ],
+  "allergens": [
+    "milk",
+    "mustard"
+  ],
+  "dietClaims": [
+    "glutenFree"
+  ],
+  "fasting": {
+    "navratri": {
+      "status": "no",
+      "reason": "contains chicken, garlic and table salt, all avoided in the common Navratri vrat rule set."
+    },
+    "ekadashi": {
+      "status": "no",
+      "reason": "contains chicken and garlic, avoided under the common Ekadashi rule set (same as Navratri in the sources used)."
+    },
+    "jain": {
+      "status": "no",
+      "reason": "contains chicken plus garlic and ginger (root)."
+    },
+    "ramadan": {
+      "status": "with-changes",
+      "reason": "use halal chicken; a good high-protein, low-carb iftar dish, but at about 1,150 mg sodium (est.) it is salty for sehri unless you cut the salt by half."
+    }
+  },
+  "dietTags": {
+    "base": "Non-veg (chicken)",
+    "jain": {
+      "status": "no",
+      "reason": "contains chicken, plus garlic and ginger (root)."
+    },
+    "vegan": {
+      "status": "no",
+      "reason": "contains chicken and curd (yoghurt)."
+    },
+    "pescatarian": {
+      "status": "no",
+      "reason": "contains chicken."
+    },
+    "sattvik": {
+      "status": "no",
+      "reason": "contains chicken and garlic (onion is only a serving side)."
+    },
+    "glutenFree": {
+      "status": "yes",
+      "reason": "no wheat, rava, maida or besan in the marinade, and no hing (asafoetida) used; if you sprinkle chaat masala or use a packaged tandoori masala, check the label, as many contain hing compounded with wheat flour."
+    },
+    "dairyFree": {
+      "status": "no",
+      "reason": "the marinade is hung curd (yoghurt); use coconut yoghurt or the lemon-and-oil marinade in the Dairy-free variant (section 4)."
+    },
+    "allergensDeclared": [
+      "milk",
+      "mustard"
+    ]
+  },
+  "tags": [
+    "Non-veg",
+    "Gluten-free",
+    "Contains milk",
+    "Contains mustard",
+    "Lunch",
+    "Dinner",
+    "Punjabi",
+    "Under 60 min",
+    "Beginner",
+    "High protein"
+  ],
+  "description": "A non-veg (chicken), gluten-free Punjabi grill with no flour or deep-frying; dairy-free, vegetarian (tandoori soya chaap) and low-oil versions below.",
+  "familyId": null,
+  "variants": [
+    {
+      "category": "Jain",
+      "status": "not-appropriate",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": "Jain diet excludes meat, so there is no Jain tandoori chicken. The Jain route is a paneer version without garlic and ginger: Sanjeev Kapoor publishes an established Jain Hariyali Paneer Tikka (green marinade, no onion or garlic; it uses dry ginger powder, which stricter Jain practice also skips). Paneer tikka is FitPlate dish 53 and gets its own Jain variant there."
+    },
+    {
+      "category": "Vegan",
+      "status": "not-appropriate",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": "the dish is defined by chicken. The plant-based route is the Vegetarian variant below made with soy or coconut yoghurt (Rachna Cooks lists soy yoghurt as an option for tandoori soya chaap)."
+    },
+    {
+      "category": "Gluten-free",
+      "status": "already-fits",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": "main recipe already gluten-free (no flour, no hing). Check the labels of chaat masala or packaged tandoori masala if you add them."
+    }
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-10-12",
+      "file": "FitPlate_Dishes_2026-10-12.md"
+    }
+  ],
+  "mergeMethod": {
+    "nutritionPerServing": "stable (single)",
+    "orderPrice": "price engine (single)",
+    "ingredients": "newest",
+    "steps": "newest",
+    "healthiness": "newest",
+    "researchRating": "newest",
+    "sources": "union",
+    "tags": "tag engine (tags.ts) on the merged dish"
+  },
+  "mergeNotes": []
+}

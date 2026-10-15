@@ -1,0 +1,691 @@
+{
+  "id": "type-2-diabetes",
+  "type": "condition",
+  "name": "Type 2 diabetes",
+  "surveyQuestion": "Do you have any of these health conditions? (select all that apply) -> Type 2 diabetes. Follow-up: How is your diabetes managed? Diet and exercise only / Tablets / Insulin / Not sure; if Tablets: Does your doctor call any of your tablets a sulfonylurea (e.g. glimepiride, gliclazide)? Yes / No / Not sure",
+  "targets": [
+    {
+      "nutrient": "energy",
+      "unit": "kcal/day",
+      "generalAdult": 2110,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (2110 sedentary man, 1660 sedentary woman); profile: user's normal need, modest deficit aiming for at least 5% weight loss if overweight (ADA SoC 2026); no fixed number"
+    },
+    {
+      "nutrient": "protein_pct_energy",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": 15,
+      "min": 15,
+      "max": 20,
+      "direction": "raise",
+      "source": "RSSDI 2022 (about 15%); ICMR-INDIAB Diabetes Care 2023 (16-20%); capped at 0.8 g/kg if kidney disease (KDIGO 2022)"
+    },
+    {
+      "nutrient": "protein",
+      "unit": "g/day at 2000 kcal",
+      "generalAdult": null,
+      "profileValue": 75,
+      "min": 75,
+      "max": 100,
+      "direction": "raise",
+      "source": "Calculated from 15-20% of 2000 kcal; general adult 0.83 g/kg/day (ICMR-NIN 2020)"
+    },
+    {
+      "nutrient": "total_fat",
+      "unit": "% energy",
+      "generalAdult": 30,
+      "profileValue": 30,
+      "min": 25,
+      "max": 30,
+      "direction": "same",
+      "source": "DGI 2024 (30% or less); RSSDI 2022 (under 30%); ICMR 2018 20-25% via Viswanathan 2019"
+    },
+    {
+      "nutrient": "total_fat_grams",
+      "unit": "g/day at 2000 kcal",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": 56,
+      "max": 67,
+      "direction": "same",
+      "source": "Calculated from 25-30% of 2000 kcal at 9 kcal/g"
+    },
+    {
+      "nutrient": "saturated_fat",
+      "unit": "% energy",
+      "generalAdult": 10,
+      "profileValue": 7,
+      "min": null,
+      "max": 7,
+      "direction": "limit",
+      "source": "ICMR 2018 via Viswanathan et al. Adv Ther 2019 (under 7%); general under 10% (WHO); 7% of 2000 kcal = 15.6 g (calc.)"
+    },
+    {
+      "nutrient": "trans_fat",
+      "unit": "% energy",
+      "generalAdult": 1,
+      "profileValue": 1,
+      "min": null,
+      "max": 1,
+      "direction": "limit",
+      "source": "WHO under 1% of energy (general knowledge, not confirmed in this run); FSSAI 2% of total fat cap in oils/fats and foods from Jan 2022; as low as possible"
+    },
+    {
+      "nutrient": "mufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "raise",
+      "source": "ICMR 2018 via Viswanathan 2019: major share of fat from MUFA and PUFA; no number found"
+    },
+    {
+      "nutrient": "pufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "raise",
+      "source": "ICMR 2018 via Viswanathan 2019; RSSDI 2022 (2 or more oils in rotation); no number found"
+    },
+    {
+      "nutrient": "omega_3",
+      "unit": "g/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found as a number; fish about twice a week, mustard oil, flaxseed, walnuts; ADA does not advise routine supplements"
+    },
+    {
+      "nutrient": "dietary_cholesterol",
+      "unit": "mg/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found (no ICMR, RSSDI or ADA numeric limit confirmed)"
+    },
+    {
+      "nutrient": "total_carbohydrate_pct_energy",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": 52.5,
+      "min": 50,
+      "max": 55,
+      "direction": "limit",
+      "source": "RSSDI 2022 (50-60%); ICMR 2018 (55-60%, secondary); ICMR-INDIAB 2023 remission model (49-54%); Indian average 62% (ICMR-INDIAB 2025); app floor 45% without doctor input"
+    },
+    {
+      "nutrient": "total_carbohydrate",
+      "unit": "g/day at 2000 kcal",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": 250,
+      "max": 275,
+      "direction": "limit",
+      "source": "Calculated from 50-55% of 2000 kcal at 4 kcal/g; DGI 2024 caps cereals and millets at 45% of energy"
+    },
+    {
+      "nutrient": "added_sugar",
+      "unit": "g/day",
+      "generalAdult": 25,
+      "profileValue": 25,
+      "min": null,
+      "max": 25,
+      "direction": "limit",
+      "source": "DGI 2024 (under 5% of energy, about 25 g/day); WHO 2015 (free sugars under 10%, ideally under 5%)"
+    },
+    {
+      "nutrient": "fibre",
+      "unit": "g/day",
+      "generalAdult": 30,
+      "profileValue": 30,
+      "min": 30,
+      "max": 40,
+      "direction": "raise",
+      "source": "ICMR-NIN 2020 (about 30 g/2000 kcal); RSSDI 2022 (25-40 g/day); ADA (at least 14 g/1000 kcal)"
+    },
+    {
+      "nutrient": "sodium",
+      "unit": "mg/day",
+      "generalAdult": 2000,
+      "profileValue": 2000,
+      "min": null,
+      "max": 2000,
+      "direction": "limit",
+      "source": "ICMR-NIN 2020 (2000 mg = 5 g salt); ICMR 2018 salt under 5 g (secondary); ADA 2026 under 2300 mg; KDIGO 2022 under 2000 mg"
+    },
+    {
+      "nutrient": "salt",
+      "unit": "g/day",
+      "generalAdult": 5,
+      "profileValue": 5,
+      "min": null,
+      "max": 5,
+      "direction": "limit",
+      "source": "ICMR-NIN 2020; WHO"
+    },
+    {
+      "nutrient": "potassium",
+      "unit": "mg/day",
+      "generalAdult": 3500,
+      "profileValue": 3500,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (3500); WHO (3510); doctor sets limit if kidney disease or certain BP medicines"
+    },
+    {
+      "nutrient": "calcium",
+      "unit": "mg/day",
+      "generalAdult": 1000,
+      "profileValue": 1000,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020"
+    },
+    {
+      "nutrient": "iron_men",
+      "unit": "mg/day",
+      "generalAdult": 19,
+      "profileValue": 19,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020"
+    },
+    {
+      "nutrient": "iron_women",
+      "unit": "mg/day",
+      "generalAdult": 29,
+      "profileValue": 29,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020"
+    },
+    {
+      "nutrient": "magnesium_men",
+      "unit": "mg/day",
+      "generalAdult": 440,
+      "profileValue": 440,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 via FSSAI report; no routine supplements (ADA)"
+    },
+    {
+      "nutrient": "magnesium_women",
+      "unit": "mg/day",
+      "generalAdult": 370,
+      "profileValue": 370,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 via FSSAI report"
+    },
+    {
+      "nutrient": "vitamin_d",
+      "unit": "µg/day",
+      "generalAdult": 15,
+      "profileValue": 15,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (600 IU)"
+    },
+    {
+      "nutrient": "vitamin_b12",
+      "unit": "µg/day",
+      "generalAdult": 2.2,
+      "profileValue": 2.2,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 as adopted by FSSAI; metformin users: ask doctor about periodic B12 testing (ADA SoC)"
+    },
+    {
+      "nutrient": "folate_men",
+      "unit": "µg/day",
+      "generalAdult": 300,
+      "profileValue": 300,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary)"
+    },
+    {
+      "nutrient": "folate_women",
+      "unit": "µg/day",
+      "generalAdult": 220,
+      "profileValue": 220,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary)"
+    },
+    {
+      "nutrient": "water",
+      "unit": "mL/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No change from FitPlate general water target"
+    }
+  ],
+  "bloodMarkers": [
+    {
+      "marker": "HbA1c",
+      "target": "7.0 or lower (about 53 mmol/mol); about 6.5 for younger people with recent diabetes (RSSDI); higher for older or frail people",
+      "unit": "%",
+      "source": "ICMR Standard Treatment Workflow T2DM; RSSDI 2022; ADA 2025/2026"
+    },
+    {
+      "marker": "Fasting / pre-meal capillary glucose",
+      "target": "80-130",
+      "unit": "mg/dL",
+      "source": "ICMR Standard Treatment Workflow T2DM; ADA"
+    },
+    {
+      "marker": "Post-meal capillary glucose (1-2 h)",
+      "target": "under 180",
+      "unit": "mg/dL",
+      "source": "ICMR Standard Treatment Workflow T2DM; ADA"
+    },
+    {
+      "marker": "CGM time in range 70-180 mg/dL",
+      "target": "over 70% (under 4% below 70 mg/dL; under 1% below 54 mg/dL)",
+      "unit": "% of time",
+      "source": "ADA SoC 2025"
+    },
+    {
+      "marker": "Hypoglycaemia threshold",
+      "target": "Level 1 under 70; Level 2 under 54",
+      "unit": "mg/dL",
+      "source": "ADA SoC 2025"
+    },
+    {
+      "marker": "Blood pressure",
+      "target": "under 130/80 for most (ask doctor); ICMR STW under 140/90, under 130/80 with CKD; ESC 2024 systolic 120-129 if tolerated",
+      "unit": "mmHg",
+      "source": "ADA; ISH 2020; ICMR STW; ESC 2024"
+    },
+    {
+      "marker": "LDL cholesterol",
+      "target": "under 70 (high risk); under 50 (very high risk)",
+      "unit": "mg/dL",
+      "source": "Lipid Association of India 2023 Consensus IV; ICMR STW and RSSDI 2022 use under 100"
+    },
+    {
+      "marker": "Non-HDL cholesterol",
+      "target": "under 100 (high risk); under 80 (very high risk)",
+      "unit": "mg/dL",
+      "source": "Lipid Association of India 2023"
+    },
+    {
+      "marker": "Apolipoprotein B",
+      "target": "under 80 (high risk); under 65 (very high risk)",
+      "unit": "mg/dL",
+      "source": "Lipid Association of India 2023"
+    },
+    {
+      "marker": "HDL cholesterol",
+      "target": "40 or higher (men); 50 or higher (women); reference only",
+      "unit": "mg/dL",
+      "source": "ADA 2023 via diaTribe summary"
+    },
+    {
+      "marker": "Triglycerides",
+      "target": "under 150",
+      "unit": "mg/dL",
+      "source": "ADA 2023 via diaTribe summary"
+    },
+    {
+      "marker": "eGFR",
+      "target": "60 or higher; check at least yearly",
+      "unit": "mL/min/1.73 m2",
+      "source": "ADA SoC 2026; KDIGO 2022"
+    },
+    {
+      "marker": "Urine albumin-to-creatinine ratio",
+      "target": "under 30; check at least yearly",
+      "unit": "mg/g",
+      "source": "ADA SoC 2026; KDIGO"
+    },
+    {
+      "marker": "Vitamin B12 (metformin users)",
+      "target": "above about 200 (200-300 borderline; cut-offs vary)",
+      "unit": "pg/mL",
+      "source": "Indian studies; ADA SoC advises periodic testing"
+    }
+  ],
+  "waterMl": {
+    "min": null,
+    "max": null,
+    "notes": "No change from FitPlate general water target. Prefer plain water and drinks without sugar; juice and sweet drinks do not count. Unusual thirst can signal high glucose: check glucose and talk to a doctor. Sick days, fasting and hot weather: ask the doctor for a sick-day plan."
+  },
+  "sodiumMgMax": 2000,
+  "dietaryCholesterolMgMax": null,
+  "foodsFavour": [
+    "whole moong, masoor, chana, rajma, lobia and soya",
+    "ragi, jowar, bajra and other millets",
+    "whole-wheat atta roti and thepla",
+    "brown or parboiled rice in measured portions",
+    "methi, palak, karela, bhindi, lauki, cabbage, beans and cauliflower",
+    "whole fruit such as guava, apple, orange, papaya and jamun",
+    "curd and buttermilk without sugar",
+    "paneer, eggs, fish and skinless chicken",
+    "almonds, peanuts, flaxseed and walnuts in small portions",
+    "mustard, groundnut, rice bran and sesame oils in rotation"
+  ],
+  "foodsLimit": [
+    "sugar, jaggery, honey and mithai",
+    "sweetened drinks, packaged juice and sweet lassi",
+    "large portions of white rice",
+    "maida: naan, bhatura, white bread, biscuits and noodles",
+    "deep-fried snacks: samosa, pakora, vada and puri",
+    "cream, butter and cashew gravies",
+    "vanaspati and reused frying oil",
+    "pickles, papad, namkeen and instant noodles",
+    "sabudana, potato and fried fasting foods in large amounts"
+  ],
+  "goodFitDishes": [
+    {
+      "dishNumber": 26,
+      "dishName": "Moong Dal Chilla"
+    },
+    {
+      "dishNumber": 16,
+      "dishName": "Besan Chilla"
+    },
+    {
+      "dishNumber": 56,
+      "dishName": "Pesarattu"
+    },
+    {
+      "dishNumber": 66,
+      "dishName": "Sprouts Chaat"
+    },
+    {
+      "dishNumber": 71,
+      "dishName": "Ragi Dosa"
+    },
+    {
+      "dishNumber": 5,
+      "dishName": "Dal Tadka"
+    },
+    {
+      "dishNumber": 80,
+      "dishName": "Masoor Dal"
+    },
+    {
+      "dishNumber": 17,
+      "dishName": "Palak Paneer"
+    },
+    {
+      "dishNumber": 53,
+      "dishName": "Paneer Tikka"
+    },
+    {
+      "dishNumber": 45,
+      "dishName": "Tandoori Chicken"
+    },
+    {
+      "dishNumber": 21,
+      "dishName": "Masala Omelette"
+    },
+    {
+      "dishNumber": 14,
+      "dishName": "Egg Bhurji"
+    },
+    {
+      "dishNumber": 37,
+      "dishName": "Bhindi Masala"
+    },
+    {
+      "dishNumber": 44,
+      "dishName": "Baingan Bharta"
+    },
+    {
+      "dishNumber": 88,
+      "dishName": "Avial"
+    },
+    {
+      "dishNumber": 67,
+      "dishName": "Mix Veg Curry"
+    },
+    {
+      "dishNumber": 49,
+      "dishName": "Mushroom Masala"
+    },
+    {
+      "dishNumber": 46,
+      "dishName": "Methi Thepla"
+    },
+    {
+      "dishNumber": 9,
+      "dishName": "Idli with Sambar"
+    },
+    {
+      "dishNumber": 58,
+      "dishName": "Khaman Dhokla"
+    },
+    {
+      "dishNumber": 31,
+      "dishName": "Indian-style Overnight Oats"
+    },
+    {
+      "dishNumber": 8,
+      "dishName": "Chole (Chana Masala)"
+    },
+    {
+      "dishNumber": 52,
+      "dishName": "Moong Dal Khichdi"
+    },
+    {
+      "dishNumber": 33,
+      "dishName": "Goan Fish Curry"
+    }
+  ],
+  "cautionDishes": [
+    {
+      "dishNumber": 97,
+      "dishName": "Gulab Jamun",
+      "reason": "High added sugar (est.)"
+    },
+    {
+      "dishNumber": 96,
+      "dishName": "Gajar Halwa",
+      "reason": "High added sugar and ghee (est.)"
+    },
+    {
+      "dishNumber": 95,
+      "dishName": "Rice Kheer",
+      "reason": "White rice plus added sugar (est.)"
+    },
+    {
+      "dishNumber": 98,
+      "dishName": "Mango Lassi",
+      "reason": "Sugar in a drink raises glucose fast (est.)"
+    },
+    {
+      "dishNumber": 100,
+      "dishName": "Cold Coffee",
+      "reason": "Added sugar, often ice cream (est.)"
+    },
+    {
+      "dishNumber": 99,
+      "dishName": "Masala Chai",
+      "reason": "Added sugar adds up over several cups; have without sugar (est.)"
+    },
+    {
+      "dishNumber": 2,
+      "dishName": "Chicken Biryani",
+      "reason": "Large white-rice portion plus fat; keep the portion small (est.)"
+    },
+    {
+      "dishNumber": 62,
+      "dishName": "Mutton Biryani",
+      "reason": "White rice plus saturated fat (est.)"
+    },
+    {
+      "dishNumber": 39,
+      "dishName": "Veg Biryani",
+      "reason": "Large white-rice portion (est.)"
+    },
+    {
+      "dishNumber": 10,
+      "dishName": "Veg Fried Rice",
+      "reason": "White rice, salty sauces (est.)"
+    },
+    {
+      "dishNumber": 35,
+      "dishName": "Curd Rice",
+      "reason": "Mostly white rice; control the portion (est.)"
+    },
+    {
+      "dishNumber": 15,
+      "dishName": "Veg Hakka Noodles",
+      "reason": "Refined flour, high salt (est.)"
+    },
+    {
+      "dishNumber": 64,
+      "dishName": "Schezwan Noodles",
+      "reason": "Refined flour, high salt and sugar in the sauce (est.)"
+    },
+    {
+      "dishNumber": 20,
+      "dishName": "Vada Pav",
+      "reason": "White pav plus deep-fried potato (est.)"
+    },
+    {
+      "dishNumber": 13,
+      "dishName": "Pav Bhaji",
+      "reason": "White pav, butter, potato (est.)"
+    },
+    {
+      "dishNumber": 65,
+      "dishName": "Puri Bhaji",
+      "reason": "Deep-fried refined starch plus potato (est.)"
+    },
+    {
+      "dishNumber": 40,
+      "dishName": "Sabudana Khichdi",
+      "reason": "Mostly starch; common on fast days (est.)"
+    },
+    {
+      "dishNumber": 3,
+      "dishName": "Paneer Butter Masala",
+      "reason": "Cream and butter gravy pushes saturated fat up (est.)"
+    },
+    {
+      "dishNumber": 7,
+      "dishName": "Butter Chicken",
+      "reason": "Cream and butter gravy pushes saturated fat up (est.)"
+    },
+    {
+      "dishNumber": 42,
+      "dishName": "Malai Kofta",
+      "reason": "Fried koftas in a cream gravy (est.)"
+    },
+    {
+      "dishNumber": 27,
+      "dishName": "Dal Makhani",
+      "reason": "Good pulses, but often high in cream and butter; ask for a light version (est.)"
+    },
+    {
+      "dishNumber": 79,
+      "dishName": "Gobi Manchurian",
+      "reason": "Batter-fried with salty, sweet sauce (est.)"
+    },
+    {
+      "dishNumber": 83,
+      "dishName": "Bhel Puri",
+      "reason": "Puffed rice and sweet chutney (est.)"
+    },
+    {
+      "dishNumber": 11,
+      "dishName": "Aloo Paratha",
+      "reason": "Potato filling plus ghee; have with curd and little ghee (est.)"
+    },
+    {
+      "dishNumber": 1,
+      "dishName": "Poha",
+      "reason": "Refined rice flakes; add peas, vegetables and peanuts, measure the portion (est.)"
+    },
+    {
+      "dishNumber": 92,
+      "dishName": "Kothu Parotta",
+      "reason": "Maida parotta plus oil (est.)"
+    }
+  ],
+  "conflictsWith": [
+    {
+      "profileId": "chronic-kidney-disease",
+      "rule": "P13 overrides protein: cap at 0.8 g/kg/day (KDIGO 2022) even if diabetes' 15-20% energy would be higher; sodium under 2000 mg/day; potassium and phosphorus limits only from the doctor; switch off potassium-based salt substitutes; requires_doctor_input stays true"
+    },
+    {
+      "profileId": "high-ldl-cholesterol",
+      "rule": "Same direction: keep saturated fat under 7% energy and use LAI targets (LDL under 70 / non-HDL under 100 mg/dL; under 50 / under 80 if very high risk); favour pulses, nuts and fish over cream, ghee and red meat"
+    },
+    {
+      "profileId": "muscle-gain",
+      "rule": "Protein may rise to the P27 value only if there is no kidney disease (no eGFR under 60, no raised urine albumin, P13 not selected); otherwise the CKD cap applies. Surplus comes from protein and whole-food carbohydrate around workouts, not sugar or mass gainers. Show the hypoglycaemia note for insulin/sulfonylurea users"
+    },
+    {
+      "profileId": "pregnancy",
+      "rule": "Pregnancy needs override diabetes weight-loss logic: no calorie deficit; glucose targets are stricter and set by the obstetric/diabetes team; the app shows only general guidance until the doctor confirms targets"
+    },
+    {
+      "profileId": "jain-diet",
+      "rule": "Apply as a food filter: no root vegetables (removes potato, onion, garlic, carrot); protein from dals, besan, paneer, curd, milk, nuts and soya; millets and non-root vegetables for fibre; Paryushan and other fasts follow the diabetes fasting safety rules"
+    },
+    {
+      "profileId": "fat-loss",
+      "rule": "Compatible; use a larger calorie deficit only if not on insulin/sulfonylurea or the doctor agrees"
+    },
+    {
+      "profileId": "high-blood-pressure",
+      "rule": "Compatible; use the stricter sodium limit of the two profiles"
+    }
+  ],
+  "requiresDoctorInput": true,
+  "requiresDoctorInputStated": true,
+  "fluidNote": null,
+  "warnings": [
+    "General information, not medical advice. The app does not diagnose or treat diabetes and never suggests changing or stopping medicines.",
+    "Insulin or sulfonylurea users: risk of low blood sugar with skipped meals, fasting, alcohol or hard exercise. Do not go below 45% energy from carbohydrate, use a large calorie deficit or follow a fasting plan without the doctor's agreement.",
+    "Low blood sugar (under 70 mg/dL): take 15 g fast-acting carbohydrate, recheck after 15 minutes, repeat if still low (ADA 15-15 rule). Under 54 mg/dL, confusion or fainting is an emergency.",
+    "Religious fasting (Navratri, Ekadashi, Ramadan, Paryushan): talk to the doctor beforehand; break the fast if glucose is under 70 mg/dL or very high (300 mg/dL or more).",
+    "Kidney disease, pregnancy, repeated or unnoticed lows: targets must be confirmed by a doctor.",
+    "Long-term metformin users: ask the doctor about periodic vitamin B12 testing, especially with numbness or tingling.",
+    "Potassium-based low-sodium salts are not for people with kidney disease or on certain BP medicines unless the doctor agrees."
+  ],
+  "lastResearched": "2026-10-14",
+  "versions": [
+    {
+      "date": "2026-10-14",
+      "file": "FitPlate_Nutrients_2026-10-14.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3); max as safety limit",
+    "limits": "safety limit (lower on conflict)",
+    "lists": "union",
+    "requiresDoctorInput": "stated true in any version, else newest version (missing flag + limits → true)"
+  },
+  "mergeNotes": [],
+  "needsReview": []
+}

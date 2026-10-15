@@ -1,0 +1,612 @@
+{
+  "id": "055-prawn-masala",
+  "number": 55,
+  "name": "Prawn Masala",
+  "cuisine": "Maharashtrian coastal (Mumbai Koli / Malvani–Konkan style, semi-dry)",
+  "dietType": "non-veg",
+  "mealType": [
+    "lunch",
+    "dinner"
+  ],
+  "difficulty": "Beginner",
+  "prepMin": 20,
+  "cookMin": 20,
+  "servings": 1,
+  "ingredients": [
+    {
+      "ingredientId": "prawns-medium-raw-peeled-and-deveined",
+      "name": "Prawns (jhinga / kolambi), medium, peeled and deveined, raw",
+      "quantity": 150,
+      "unit": "g",
+      "householdMeasure": "About 14–18 medium prawns"
+    },
+    {
+      "ingredientId": "turmeric-powder",
+      "name": "Turmeric powder (haldi)",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "¼ tsp (for the marinade)"
+    },
+    {
+      "ingredientId": "kashmiri-red-chilli-powder",
+      "name": "Kashmiri red chilli powder (lal mirch)",
+      "quantity": 1,
+      "unit": "g",
+      "householdMeasure": "½ tsp (for the marinade)"
+    },
+    {
+      "ingredientId": "salt",
+      "name": "Salt (namak)",
+      "quantity": 2.5,
+      "unit": "g",
+      "householdMeasure": "½ tsp in total (1 g / a scant ¼ tsp in the marinade, 1.5 g / ¼ tsp in the masala)"
+    },
+    {
+      "ingredientId": "marathi-moggu",
+      "name": "Kokum (dried, aamsul)",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "2–3 petals"
+    },
+    {
+      "ingredientId": null,
+      "name": "Water (for kokum and masala)",
+      "quantity": 75,
+      "unit": "ml",
+      "householdMeasure": "2 tbsp warm water for the kokum + 1 tbsp for the spices + 2 tbsp at the end"
+    },
+    {
+      "ingredientId": "coconut-oil",
+      "name": "Oil (groundnut, sunflower or coconut oil)",
+      "quantity": 10,
+      "unit": "ml",
+      "householdMeasure": "2 tsp"
+    },
+    {
+      "ingredientId": "curry-leaves",
+      "name": "Curry leaves (kadi patta)",
+      "quantity": 1,
+      "unit": "g",
+      "householdMeasure": "6–8 leaves"
+    },
+    {
+      "ingredientId": "onion",
+      "name": "Onion (pyaaz), finely chopped",
+      "quantity": 80,
+      "unit": "g",
+      "householdMeasure": "1 small-medium onion, about ½ cup chopped"
+    },
+    {
+      "ingredientId": "ginger-garlic-paste",
+      "name": "Ginger-garlic paste (adrak-lahsun)",
+      "quantity": 8,
+      "unit": "g",
+      "householdMeasure": "1½ tsp (2–3 garlic cloves + ½-inch ginger)"
+    },
+    {
+      "ingredientId": "green-chilli",
+      "name": "Green chilli (hari mirch)",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "1 small, slit"
+    },
+    {
+      "ingredientId": "malvani-masala-packaged",
+      "name": "Malvani masala (or Koli masala)",
+      "quantity": 4,
+      "unit": "g",
+      "householdMeasure": "1 heaped tsp"
+    },
+    {
+      "ingredientId": "coriander-powder",
+      "name": "Coriander powder (dhania powder)",
+      "quantity": 1,
+      "unit": "g",
+      "householdMeasure": "½ tsp"
+    },
+    {
+      "ingredientId": "tomato",
+      "name": "Tomato (tamatar), finely chopped",
+      "quantity": 60,
+      "unit": "g",
+      "householdMeasure": "1 small tomato, about ⅓ cup chopped"
+    },
+    {
+      "ingredientId": "coriander-leaves",
+      "name": "Fresh coriander leaves (hara dhania), chopped",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "1 tbsp"
+    }
+  ],
+  "equipment": [
+    "Small kadai or heavy pan (about 20 cm) with a lid",
+    "Small sharp knife or kitchen scissors, for deveining",
+    "Chopping board and knife",
+    "Two bowls (one for the cleaned prawns and marinade, one for shells and veins) and a colander",
+    "Small bowl or cup, for soaking the kokum",
+    "Kitchen scale (useful for weighing 150 g cleaned prawns)",
+    "Spatula / wooden spoon",
+    "Optional: mortar and pestle, or a small grinder jar, to crush fresh ginger and garlic"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "title": "Thaw (frozen prawns only)",
+      "text": "Put the frozen prawns in a sealed zip bag and sink the bag in a bowl of cold water.",
+      "timerSec": 900,
+      "tip": "Never thaw prawns in hot water or leave them out on the counter; the outside starts to cook or spoil before the inside thaws. Already peeled and deveined? Skip to step 5.",
+      "visualCue": "The prawns are soft and bendy, with no ice in the middle",
+      "cameraCheck": "The bag in the bowl of water",
+      "videoShot": "A zip bag of frozen prawns being pushed under cold water."
+    },
+    {
+      "n": 2,
+      "title": "Remove the heads (whole prawns only)",
+      "text": "Hold the body, and twist and pull off each head.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "A pile of heads in the waste bowl; headless bodies in the other",
+      "cameraCheck": "The headless prawns",
+      "videoShot": "Fingers twisting a head off a grey prawn."
+    },
+    {
+      "n": 3,
+      "title": "Peel off the shell and legs",
+      "text": "Pull off the legs from the underside, then peel the shell off in rings. Pull or pinch off the tail, or leave it on for looks.",
+      "timerSec": 300,
+      "tip": "Keep the shells and heads in the freezer if you like stock; they are not used here.",
+      "visualCue": "Smooth, grey-translucent prawn meat with no shell bits",
+      "cameraCheck": "One peeled prawn on your palm",
+      "videoShot": "A thumb sliding the shell rings off a prawn."
+    },
+    {
+      "n": 4,
+      "title": "Devein",
+      "text": "Make a shallow slit (2–3 mm deep) along the curved back of each prawn with a knife tip or scissors, and lift out the thin dark thread (the vein, which is the gut) with the knife tip or a toothpick. Check the underside too; some prawns have a thin second vein there.",
+      "timerSec": 240,
+      "tip": "The vein is not harmful, but it can be gritty and bitter; always remove it on medium and large prawns.",
+      "visualCue": "No dark line visible along the back",
+      "cameraCheck": "A deveined prawn with the slit open",
+      "videoShot": "A toothpick lifting a dark vein out of the slit."
+    },
+    {
+      "n": 5,
+      "title": "Rinse and drain",
+      "text": "Rinse the cleaned prawns twice in cold water, drain in the colander, and pat dry with a paper towel or clean cloth. Weigh out 150 g.",
+      "timerSec": 120,
+      "tip": "Wash your hands, knife and board with soap after handling raw seafood.",
+      "visualCue": "Clean prawns that look matte, not dripping",
+      "cameraCheck": "150 g prawns on the scale",
+      "videoShot": "Prawns tumbling into a colander under running water."
+    },
+    {
+      "n": 6,
+      "title": "Marinate",
+      "text": "In a bowl, mix the prawns with ¼ tsp (0.5 g) turmeric, ½ tsp (1 g) Kashmiri chilli powder and a scant ¼ tsp (1 g) salt. Cover and refrigerate.",
+      "timerSec": 60,
+      "tip": "Don't marinate prawns with salt for hours; 10–30 min is enough, and longer can make them watery.",
+      "visualCue": "Every prawn coated evenly orange-red",
+      "cameraCheck": "The marinated prawns in the bowl",
+      "videoShot": "Fingers tossing the prawns in the red-yellow spice."
+    },
+    {
+      "n": 7,
+      "title": "Soak the kokum",
+      "text": "Put 2–3 kokum petals (3 g) in a cup with 2 tbsp (30 ml) warm water.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "The water turns deep pink-purple",
+      "cameraCheck": "The kokum in its cup",
+      "videoShot": "Dark kokum petals sinking into water that slowly turns pink."
+    },
+    {
+      "n": 8,
+      "title": "Chop the onion",
+      "text": "Finely chop 80 g onion.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "Small, even pieces (about rice-grain to lentil size)",
+      "cameraCheck": "The chopped onion on the board",
+      "videoShot": "A knife rocking through onion slices."
+    },
+    {
+      "n": 9,
+      "title": "Chop the tomato",
+      "text": "Finely chop 60 g tomato.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Small juicy cubes",
+      "cameraCheck": "The chopped tomato",
+      "videoShot": "A knife dicing a tomato."
+    },
+    {
+      "n": 10,
+      "title": "Prepare the aromatics",
+      "text": "Slit 1 green chilli lengthwise. Get 1½ tsp (8 g) ginger-garlic paste ready. Measure 1 heaped tsp (4 g) Malvani masala and ½ tsp (1 g) coriander powder into a small bowl.",
+      "timerSec": 120,
+      "tip": "Malvani masala burns quickly; having it measured before you start keeps step 15 calm.",
+      "visualCue": "Everything laid out near the stove",
+      "cameraCheck": "The paste, chilli and spice bowl",
+      "videoShot": "A spoon levelling the Malvani masala."
+    },
+    {
+      "n": 11,
+      "title": "Heat the oil",
+      "text": "Heat 2 tsp (10 ml) oil in the kadai on medium heat.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "The oil shimmers and flows easily",
+      "cameraCheck": "The kadai with oil",
+      "videoShot": "Oil swirling in the pan."
+    },
+    {
+      "n": 12,
+      "title": "Add curry leaves",
+      "text": "Add 6–8 curry leaves.",
+      "timerSec": 10,
+      "tip": "Pat the leaves dry first and stand back; wet leaves spit.",
+      "visualCue": "They crackle and turn bright green, then slightly crisp",
+      "cameraCheck": "The leaves in the oil",
+      "videoShot": "Curry leaves spluttering as they hit the oil."
+    },
+    {
+      "n": 13,
+      "title": "Fry the onion",
+      "text": "Add the 80 g chopped onion and sauté, stirring often.",
+      "timerSec": 360,
+      "tip": null,
+      "visualCue": "Soft and light golden-brown at the edges, with a sweet smell",
+      "cameraCheck": "The golden onions",
+      "videoShot": "The spatula turning golden onions."
+    },
+    {
+      "n": 14,
+      "title": "Add ginger-garlic and green chilli",
+      "text": "Add the 8 g ginger-garlic paste and the slit chilli. Stir.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "The raw garlic smell is gone; the paste looks lightly golden",
+      "cameraCheck": "The onion with the paste mixed in",
+      "videoShot": "The paste melting into the onion."
+    },
+    {
+      "n": 15,
+      "title": "Add the spice powders",
+      "text": "Lower the heat to low, add the Malvani masala and coriander powder with 1 tbsp (15 ml) water, and stir.",
+      "timerSec": 60,
+      "tip": "The splash of water stops the masala burning. If it smells sharp or bitter, the heat is too high.",
+      "visualCue": "A dark red paste with oil starting to show at the edges; a toasty smell, no burnt smell",
+      "cameraCheck": "The red masala in the pan",
+      "videoShot": "Spice powders hitting the onion, followed by a splash of water."
+    },
+    {
+      "n": 16,
+      "title": "Cook the tomato",
+      "text": "Add the 60 g chopped tomato and 1.5 g (¼ tsp) salt. Raise to medium and cook, mashing with the spatula.",
+      "timerSec": 240,
+      "tip": null,
+      "visualCue": "The tomato melts into a thick, glossy paste and oil separates at the edges",
+      "cameraCheck": "The finished masala base",
+      "videoShot": "The spatula pressing tomato into the masala."
+    },
+    {
+      "n": 17,
+      "title": "Add the prawns",
+      "text": "Add the marinated prawns with any spice left in the bowl. Toss to coat.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "All prawns coated in masala; they start turning pink at the edges",
+      "cameraCheck": "The prawns in the masala",
+      "videoShot": "Prawns tipped into the red masala and tossed."
+    },
+    {
+      "n": 18,
+      "title": "Add kokum and simmer covered",
+      "text": "Pour in the kokum with its soaking water, plus 2 tbsp (30 ml) water. Stir, cover and cook on low-medium heat.",
+      "timerSec": 180,
+      "tip": "A tight \"O\" curl means they are overcooked and will be rubbery; take them off sooner next time. Large prawns may need 1–2 min more.",
+      "visualCue": "The prawns are pink and opaque all the way through and have curled into a loose \"C\"",
+      "cameraCheck": "One prawn cut in half (opaque white inside, no grey glassy centre)",
+      "videoShot": "The lid lifting to show pink, curled prawns in bubbling masala."
+    },
+    {
+      "n": 19,
+      "title": "Reduce to semi-dry",
+      "text": "Uncover and cook on medium heat, stirring gently.",
+      "timerSec": 60,
+      "tip": "Want it drier (sukka)? Reduce 1 min more. Want a thin rassa for rice? Add 3–4 tbsp hot water and simmer 1 min. Lift out the kokum petals now if you don't want to bite into one.",
+      "visualCue": "The masala clings to the prawns, with only 1–2 tbsp of thick gravy left in the pan",
+      "cameraCheck": "The pan tilted to show the thick masala",
+      "videoShot": "The spatula drawing a line through the masala that holds for a second."
+    },
+    {
+      "n": 20,
+      "title": "Finish and rest",
+      "text": "Turn off the heat, scatter 1 tbsp chopped coriander leaves, cover and leave to rest.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "Glossy, deep red prawns flecked with green",
+      "cameraCheck": "The finished bowl",
+      "videoShot": "Coriander falling onto the red prawn masala."
+    }
+  ],
+  "nutritionPerServing": {
+    "kcal": 290,
+    "proteinG": 33,
+    "carbsG": 16,
+    "fatG": 10.7,
+    "fibreG": 4.5
+  },
+  "microNutrientsEstimate": {
+    "values": {
+      "cholesterol": 241.5,
+      "sodium": 178.5,
+      "vitamin-a": 19.1,
+      "vitamin-c": 15.2,
+      "vitamin-k": 8.2
+    },
+    "coveragePct": 53,
+    "basis": "partial estimate from ingredient quantities"
+  },
+  "asOrdered": {
+    "price": {
+      "priceHistory": [
+        {
+          "date": "2026-10-14",
+          "min": 230,
+          "max": 330,
+          "avg": 268,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-10-14.md"
+        }
+      ],
+      "currentEstimate": {
+        "min": 230,
+        "max": 310,
+        "avg": 270
+      },
+      "method": "single",
+      "trend": "unknown",
+      "change30dPct": null,
+      "lastObserved": "2026-10-14",
+      "stale": false,
+      "seasonal": false,
+      "listingCount": 3,
+      "platforms": [
+        "Homegrown restaurant guide",
+        "magicpin"
+      ],
+      "outOfStock": false,
+      "confirmed": true,
+      "checkNotes": []
+    },
+    "nutrition": {
+      "calories": {
+        "value": null,
+        "source": null
+      },
+      "protein": {
+        "value": null,
+        "source": null
+      },
+      "carbs": {
+        "value": null,
+        "source": null
+      },
+      "fat": {
+        "value": null,
+        "source": null
+      },
+      "fibre": {
+        "value": null,
+        "source": null
+      }
+    },
+    "restaurantsSampled": 9,
+    "platforms": [
+      "Swiggy",
+      "Zomato",
+      "magicpin"
+    ]
+  },
+  "orderPrice": {
+    "priceHistory": [
+      {
+        "date": "2026-10-14",
+        "min": 230,
+        "max": 330,
+        "avg": 268,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-10-14.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 230,
+      "max": 310,
+      "avg": 270
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-14",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 3,
+    "platforms": [
+      "Homegrown restaurant guide",
+      "magicpin"
+    ],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
+  },
+  "healthiness": {
+    "score": 8,
+    "restaurantScore": 5,
+    "reasons": [
+      "about 33 g of lean protein for about 290 kcal, with very little saturated fat, no frying and only 2 tsp of oil. Onion, tomato, curry leaves and spices add fibre and vitamins C, A and K, and prawns are rich in selenium, B12, phosphorus and some omega-3. Points come off for cholesterol (about 240 mg, about 80% of the usual 300 mg guidance), sodium (about 1,160 mg) and little vegetable volume. Restaurant versions usually use much more oil (often coconut oil, which is high in saturated fat), more salt, sometimes red colour, and are eaten with large portions of white rice or pav."
+    ]
+  },
+  "researchRating": {
+    "score": 4.5,
+    "basis": "prawn masala is a fixture of Mumbai's Malvani, Koli and Gomantak lunch homes. It is repeatedly named a must-order at Chaitanya (Dadar), Gajalee, Pal's Fish and Highway Gomantak in Mumbai food guides (Homegrown, Curly Tales, CNN Travel, LBB, Slurrp, independent food blogs), and every major Indian recipe site and chef publishes a version (Flavors of Mumbai, Yummy Tummy Aarthi, Kali Mirch by Smita, Sanjeev Kapoor, The Quint's Malvani recipe). Small deduction: published recipe star ratings and review counts could not be collected in this run (sites blocked direct access), and reviews often complain of rubbery, overcooked prawns at home and inconsistent prawn size and price in restaurants."
+  },
+  "storage": "Cool within 1 hour and refrigerate in a closed box; eat within 1–2 days (seafood keeps for less time than meat). Freezer: up to 1 month, but prawns turn firmer and slightly rubbery after freezing and reheating. Reheat only once, in a covered pan on low heat with 1–2 tbsp water for 2–3 min until just hot. Don't boil it, or the prawns toughen. Microwave on medium in 30-second bursts. Raw cleaned prawns keep 1 day in the fridge; freeze them if you are not cooking that day.",
+  "leftoverRemix": "prawn masala pav-wrap (kolambi frankie). Roughly chop the leftover prawns in their masala, warm in a pan until dry, and roll into a hot chapati with sliced onion, a little green chutney, chaat masala and lemon. Or toss with leftover rice, a few curry leaves and a fried egg for a quick prawn masala fried rice. Use within the same 1–2 day window and reheat only once.",
+  "burnOff": "about 4.1 km of running (290 ÷ 70 kcal/km, for a 70 kg adult), or about 5.8 km of brisk walking (about 1 hour 10 minutes at 5 km/h, using about 50 kcal/km for walking) (est.). With 150 g rice (about 485 kcal), about 6.9 km of running.",
+  "sources": [
+    "Flavors of Mumbai, Prawns Masala (Kolambi Masala) (fry marinated prawns, build masala from garlic, ginger, onion, curry leaves, green chilli, tomato, malvani masala, garam masala, coriander powder; warns against overcooking): https://www.flavorsofmumbai.com/prawns-masala-or-kolambi-masala-recipe/",
+    "Flavors of Mumbai, green prawn masala (kokum, tomato, raw mango or tamarind as the souring agent; cook dry or semi-dry): https://www.flavorsofmumbai.com/?p=20411 ; Prawns Recheado Masala (context): https://www.flavorsofmumbai.com/prawns-recheado-masala-recipe/",
+    "Kali Mirch by Smita, Konkani Baby Shrimps Sukka (Karandi Sukka) (turmeric-salt marinade; roasted dry coconut-onion-garlic paste; Malvani masala, tomato, kokum; served with bhakri, chapati or pav; Malvani masala substitute = 1½ tbsp Kashmiri chilli + ½ tbsp garam masala): https://kalimirchbysmita.com/konkani-baby-shrimps-sukka-karandi-sukka/ ; Kolambi Rassa (Konkani prawn curry): https://kalimirchbysmita.com/kolambi-rassa-konkani-prawns-curry/",
+    "Yummy Tummy Aarthi, Prawn Masala (recipe card about 183 kcal, about 10 g protein per serving): https://www.yummytummyaarthi.com/prawn-masala-spicy-prawn-masala-shrimp/ ; Prawn Chukka Masala: https://www.yummytummyaarthi.com/prawn-chukka-masala-recipe/",
+    "The Quint, How to make Malvani Prawn Masala at home (Mumbai chef; don't overcook the prawns): https://www.thequint.com/neon/what-the-food/how-to-make-malvani-prawn-masala-at-home",
+    "Sanjeev Kapoor, Konkani Prawn Curry (SK Khazana): https://sanjeevkapoor.com/Recipe/Konkani-Prawn-Curry-SK-Khazana.html ; Malvani Methi Prawns Masala: https://www.sanjeevkapoor.com/Recipe/malvani-methi-prawns-masala-9776216",
+    "IFB Spice Secrets, Masala Prawns: https://www.ifbappliances.com/spicesecrets/masala-prawns",
+    "Swiggy Instamart recipe, Prawn Sukka (coastal ground-spice-and-coconut version, lime finish): https://www.swiggy.com/instamart/recipe/prawn-sukka",
+    "USDA FoodData Central (raw shrimp; onion; tomato; ginger; garlic; green chilli; groundnut oil; chilli, coriander and turmeric powders; coriander leaves; raw white mushrooms for the variant): https://fdc.nal.usda.gov/",
+    "NIH Office of Dietary Supplements, Iodine fact sheet (shrimp iodine): https://ods.od.nih.gov/factsheets/Iodine-HealthProfessional/",
+    "ICMR-NIN, Nutrient Requirements for Indians 2020 (RDA/EAR reference): https://www.nin.res.in/ ; IFCT 2017 referenced but values not confirmed from this environment.",
+    "Context figures: SnapCalorie, Prawn masala: https://www.snapcalorie.com/nutrition/prawn_masala_nutrition.html ; Apollo Sugar, Calories in Prawn Masala Curry: https://apollosugar.com/world-of-diabetes/diet-tips/calories-in-prawn-masala-curry ; FatSecret, Tesco King Prawn Masala: https://www.fatsecret.co.uk/calories-nutrition/tesco/king-prawn-masala/1-pack ; FatSecret, Woolworths Prawn Masala with Basmati Rice: https://www.fatsecret.co.za/calories-nutrition/woolworths/prawn-masala-with-basmati-rice/1-serving ; Nutribit, Chettinad Eral Thokku: https://www.nutribit.app/food/669cfe6c2028bbb5cd43e4f2",
+    "Same rule sets as earlier FitPlate dishes: Veg Recipes of India, Navratri fasting rules (meat, fish, onion, garlic avoided): https://www.vegrecipesofindia.com/navratri-fasting-rules-vrat-ka-khana/ ; Hindutone, Navratri 2026 fasting rules (same rules for Ekadashi fasts): https://hindutone.com/festivals/navratri-fasting-rules-2026-vrat-food-what-to-eat-avoid/ ; British Nutrition Foundation, healthy Ramadan (avoid salty foods at suhoor): https://www.nutrition.org.uk/media/bytokjkm/healthy-ramadan-2021.pdf",
+    "magicpin, Prawns Masala around Lower Parel (₹230/₹214 and ₹570/₹456 500 ml listings; outlet names differ between snippets): https://magicpin.in/Mumbai/Lower-Parel/Restaurant/product/Prawns-Masala/",
+    "magicpin, Hotel Shashikant, Mahakali, Andheri East (Prawns Masala ₹330): https://magicpin.in/Mumbai/Mahakali/Restaurant/Hotel-Shashikant/store/25174/delivery",
+    "magicpin, Hungaroo, Ulwe, Navi Mumbai (₹399): https://magicpin.in/Navi-Mumbai/Sector-15/Restaurant/Hungaroo/store/5948c5/delivery",
+    "magicpin, Malvani Masala, Kandivali West (Prawns Curry about ₹170; not used): https://magicpin.in/Mumbai/Kandivali-West/Restaurant/Malvani-Masala/store/159c543 ; Inamdars Malvani Kitchen, Mira Road (no prawn masala shown): https://magicpin.in/Thane/Mira-Road/Restaurant/Inamdars-Malvani-Kitchen/store/16ca702/menu",
+    "Zomato, Maharashtra Lunch Home, Vashi (\"Prwans Masala Fry\", no price visible): https://www.zomato.com/mumbai/maharashtra-lunch-home-vashi-navi-mumbai/order ; Zomato, Prawn Masala in Mumbai (cost for two only): https://www.zomato.com/mumbai/restaurants/dish-prawn-masala ; Zomato, Prawns Masala in Thane (cost for two only): https://www.zomato.com/mumbai/thane-restaurants/dish-prawns-masala?nearby=0 ; Zomato, Mahesh Lunch Home, Fort (no price visible): https://www.zomato.com/mumbai/mahesh-lunch-home-fort/order",
+    "Swiggy, Prawns Masala (Medium) ₹456.25, restaurant not visible (not used): snippet from a swiggy.com/menu page whose exact URL was not shown in the results. Swiggy, Hotel Mayur, Ulhasnagar (Jhinga Hara Masala ₹650; not used): https://www.swiggy.com/city/mumbai/hotel-mayur-ulhasnagar-rest312640",
+    "Homegrown, 22 Ways To Prawn Till Dawn (Chaitanya Prawn Masala Rs 245; Fresh Catch Prawn Treasures of Konkan Rs 380; dated): https://homegrown.co.in/homegrown-explore/22-of-mumbais-most-delicious-prawn-dishes-where-to-get-them ; Homegrown, best prawn curries around Mumbai: https://homegrown.co.in/homegrown-explore/chow-down-on-some-of-the-best-prawn-curries-around-mumbai ; Homegrown, authentic Malvani food in Mumbai (Gajalee prawns masala must-try): https://homegrown.co.in/homegrown-explore/16-mumbai-spots-you-have-to-hit-up-for-the-best-dam-malvani-food-in-town",
+    "Curly Tales, Malvani Prawns Thali at Chaitanya, Dadar (₹580 thali; dropped): https://curlytales.com/malvani-prawns-thali-chaitanya-dadar-mumbai/ ; Curly Tales, best seafood restaurants in Mumbai: https://curlytales.com/best-seafood-restaurants-in-mumbai-that-are-a-seafood-lovers-dream/",
+    "My Annoying Opinions, Highway Gomantak II (January 2024; prawn masala thali): https://myannoyingopinions.com/2024/01/28/highway-gomantak-ii-bombay-january-2024/ ; Gajalee, Andheri (January 2024): https://myannoyingopinions.com/2024/02/25/gajalee-andheri-bombay-january-2024/ ; Wheels on our Feet, Highway Gomantak (prices depend on prawn size and season): https://wheelsonourfeet.com/2015/01/06/seafood-old-world-highway-gomantak-in-bandra-mumbai",
+    "CNN Travel, 6 best seafood restaurants in Mumbai: https://edition.cnn.com/travel/article/mumbai-indian-seafood-restaurants/index.html ; Slurrp, 7 amazing spots for prawn lovers in Mumbai: https://www.slurrp.com/article/7-amazing-spots-for-prawn-lovers-in-mumbai-1670238709784 ; LBB, best seafood restaurants in Mumbai: https://lbb.in/mumbai/seafood-restaurants-in-mumbai/ ; Tripadvisor, Konkan Swad, Goregaon West: https://www.tripadvisor.in/Restaurant_Review-g304554-d3912319-Reviews-Konkan_Swad-Mumbai_Maharashtra.html"
+  ],
+  "allergens": [
+    "peanut",
+    "shellfish"
+  ],
+  "dietClaims": [
+    "glutenFree",
+    "dairyFree"
+  ],
+  "fasting": {
+    "navratri": {
+      "status": "no",
+      "reason": "contains prawns, onion, garlic and table salt, all avoided in the common Navratri vrat rule set."
+    },
+    "ekadashi": {
+      "status": "no",
+      "reason": "contains prawns and onion-garlic, avoided under the common Ekadashi rule set (same as Navratri in the sources used)."
+    },
+    "jain": {
+      "status": "no",
+      "reason": "contains prawns, plus onion, garlic and ginger (root)."
+    },
+    "ramadan": {
+      "status": "yes",
+      "reason": "seafood needs no halal slaughter, so there is no meat-sourcing swap. Islamic schools differ on whether prawns are permitted, so follow your own practice. High-protein and light for iftar, but at about 1,160 mg sodium (est.) it is salty for sehri unless you halve the salt."
+    }
+  },
+  "dietTags": {
+    "base": "Non-veg (seafood: prawns)",
+    "jain": {
+      "status": "no",
+      "reason": "contains prawns, plus onion, garlic and ginger."
+    },
+    "vegan": {
+      "status": "no",
+      "reason": "contains prawns (shellfish)."
+    },
+    "pescatarian": {
+      "status": "yes",
+      "reason": "the only animal food is prawns (seafood); no meat, egg or dairy."
+    },
+    "sattvik": {
+      "status": "no",
+      "reason": "contains prawns, onion and garlic."
+    },
+    "glutenFree": {
+      "status": "yes",
+      "reason": "no wheat, rava, maida or besan, and no hing (asafoetida). Packaged Malvani/Koli masala blends vary, so check the label for wheat or hing (most hing sold in India is compounded with wheat flour)."
+    },
+    "dairyFree": {
+      "status": "yes",
+      "reason": "no curd, cream, butter or ghee; cooked in oil."
+    },
+    "allergensDeclared": [
+      "shellfish"
+    ]
+  },
+  "tags": [
+    "Non-veg",
+    "Gluten-free",
+    "Dairy-free",
+    "Pescatarian",
+    "Ramadan sehri / iftar",
+    "Contains peanut",
+    "Contains shellfish",
+    "Lunch",
+    "Dinner",
+    "Maharashtrian coastal",
+    "Under 60 min",
+    "Beginner",
+    "High protein",
+    "Low calorie"
+  ],
+  "description": "A non-veg, pescatarian, gluten-free and dairy-free Mumbai semi-dry prawn masala, soured with kokum; vegetarian (mushroom) and low-oil versions below.",
+  "familyId": "masala",
+  "variants": [
+    {
+      "category": "Jain",
+      "status": "not-appropriate",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": "the Jain diet excludes all seafood, so there is no Jain prawn masala. The dish also relies on onion, garlic and ginger."
+    },
+    {
+      "category": "Vegan",
+      "status": "not-appropriate",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": "the dish is defined by prawns. The plant-based route is the Vegetarian (mushroom) variant below, which is already vegan because the recipe has no dairy."
+    },
+    {
+      "category": "Gluten-free",
+      "status": "already-fits",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": "main recipe already gluten-free (no flour or hing). Check the label of the Malvani/Koli masala, since some blends may contain hing or flour."
+    },
+    {
+      "category": "Dairy-free",
+      "status": "already-fits",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": "main recipe already dairy-free (cooked in oil, no curd, cream or ghee)."
+    }
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-10-14",
+      "file": "FitPlate_Dishes_2026-10-14.md"
+    }
+  ],
+  "mergeMethod": {
+    "nutritionPerServing": "stable (single)",
+    "orderPrice": "price engine (single)",
+    "ingredients": "newest",
+    "steps": "newest",
+    "healthiness": "newest",
+    "researchRating": "newest",
+    "sources": "union",
+    "tags": "tag engine (tags.ts) on the merged dish"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 230.0–330.0 was wider than 30% of avg 268.0; narrowed to ±15%."
+  ]
+}

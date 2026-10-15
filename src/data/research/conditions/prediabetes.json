@@ -1,0 +1,712 @@
+{
+  "id": "prediabetes",
+  "type": "condition",
+  "name": "Prediabetes and insulin resistance",
+  "surveyQuestion": "Do you have any of these health conditions? (select all that apply) -> Prediabetes / borderline sugar / insulin resistance. Check question: Has a doctor or lab report ever told you that you have borderline sugar, pre-diabetes or insulin resistance? Yes / No / Not sure. Follow-ups: Are you taking any medicine for blood sugar? No / Metformin / Other / Not sure (insulin or sulfonylurea -> offer P1); Women: have you ever had diabetes in pregnancy?; waist in cm; optional lab values",
+  "targets": [
+    {
+      "nutrient": "energy",
+      "unit": "kcal/day",
+      "generalAdult": 2110,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "limit",
+      "source": "ICMR-NIN 2020 (2110 sedentary man, 1660 sedentary woman); deficit only if BMI 23 or more or waist 90/80 cm or more, aiming for 5-7% weight loss (ADA SoC 2026; DPP 7%; DPS 5%); otherwise no deficit (IDPP benefit without weight change)"
+    },
+    {
+      "nutrient": "weight_loss_goal",
+      "unit": "% body weight",
+      "generalAdult": null,
+      "profileValue": 7,
+      "min": 5,
+      "max": 7,
+      "direction": "limit",
+      "source": "ADA SoC 2026 (5-7%); US DPP 2002 (at least 7%); Finnish DPS (more than 5%); only when BMI 23 or more or waist 90/80 cm or more"
+    },
+    {
+      "nutrient": "protein_pct_energy",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": 16,
+      "min": 16,
+      "max": 20,
+      "direction": "raise",
+      "source": "ICMR-INDIAB prevention model, Anjana et al. Diabetes Care 2023 (16-20%)"
+    },
+    {
+      "nutrient": "protein",
+      "unit": "g/day at 2000 kcal",
+      "generalAdult": null,
+      "profileValue": 80,
+      "min": 80,
+      "max": 100,
+      "direction": "raise",
+      "source": "Calculated from 16-20% of 2000 kcal; general adult 0.83 g/kg/day (ICMR-NIN 2020)"
+    },
+    {
+      "nutrient": "total_fat",
+      "unit": "% energy",
+      "generalAdult": 30,
+      "profileValue": 30,
+      "min": 25,
+      "max": 30,
+      "direction": "same",
+      "source": "DGI 2024 (30% or less); Finnish DPS (under 30%)"
+    },
+    {
+      "nutrient": "total_fat_grams",
+      "unit": "g/day at 2000 kcal",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": 56,
+      "max": 67,
+      "direction": "same",
+      "source": "Calculated from 25-30% of 2000 kcal at 9 kcal/g"
+    },
+    {
+      "nutrient": "saturated_fat",
+      "unit": "% energy",
+      "generalAdult": 10,
+      "profileValue": 10,
+      "min": null,
+      "max": 10,
+      "direction": "limit",
+      "source": "Finnish DPS and WHO (under 10%); aim for under 7% if LDL or triglycerides are high (ICMR 2018 diabetes value via Viswanathan 2019); 10% of 2000 kcal = 22 g (calc.)"
+    },
+    {
+      "nutrient": "trans_fat",
+      "unit": "% energy",
+      "generalAdult": 1,
+      "profileValue": 1,
+      "min": null,
+      "max": 1,
+      "direction": "limit",
+      "source": "WHO under 1% (not re-confirmed in this run); FSSAI 2% of total fat cap in oils and fats from Jan 2022; as low as possible"
+    },
+    {
+      "nutrient": "mufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "raise",
+      "source": "Not found as a number; replace saturated fat with MUFA/PUFA oils and nuts; Mediterranean pattern preferred (ADA SoC 2026)"
+    },
+    {
+      "nutrient": "pufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "raise",
+      "source": "Not found as a number; 2 or more oils in rotation (RSSDI 2022)"
+    },
+    {
+      "nutrient": "omega_3",
+      "unit": "g/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found as a number; fish about twice a week, flaxseed, walnuts, mustard oil"
+    },
+    {
+      "nutrient": "dietary_cholesterol",
+      "unit": "mg/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found (no ICMR, RSSDI or ADA numeric limit for prediabetes)"
+    },
+    {
+      "nutrient": "total_carbohydrate_pct_energy",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": 52.5,
+      "min": 45,
+      "max": 55,
+      "direction": "limit",
+      "source": "Target 50-55%: ICMR-INDIAB prevention model 2023 (54-57%); RSSDI 2022 (50-60%); Indian average 62% (ICMR-INDIAB Nature Medicine 2025); 45% floor is a FitPlate design choice unless a doctor sets lower"
+    },
+    {
+      "nutrient": "total_carbohydrate",
+      "unit": "g/day at 2000 kcal",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": 250,
+      "max": 275,
+      "direction": "limit",
+      "source": "Calculated from 50-55% of 2000 kcal at 4 kcal/g; DGI 2024 caps cereals and millets at 45% of energy"
+    },
+    {
+      "nutrient": "added_sugar",
+      "unit": "g/day",
+      "generalAdult": 25,
+      "profileValue": 25,
+      "min": null,
+      "max": 25,
+      "direction": "limit",
+      "source": "DGI 2024 (under 5% of energy, about 25 g/day); WHO 2015; IDPP advice to cut sugar and refined carbohydrate"
+    },
+    {
+      "nutrient": "fibre",
+      "unit": "g/day",
+      "generalAdult": 30,
+      "profileValue": 30,
+      "min": 30,
+      "max": 40,
+      "direction": "raise",
+      "source": "ICMR-NIN 2020 (about 30 g/2000 kcal); Finnish DPS (at least 15 g/1000 kcal = 30 g at 2000 kcal, calc.)"
+    },
+    {
+      "nutrient": "sodium",
+      "unit": "mg/day",
+      "generalAdult": 2000,
+      "profileValue": 2000,
+      "min": null,
+      "max": 2000,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (2000 mg = 5 g salt); WHO"
+    },
+    {
+      "nutrient": "salt",
+      "unit": "g/day",
+      "generalAdult": 5,
+      "profileValue": 5,
+      "min": null,
+      "max": 5,
+      "direction": "same",
+      "source": "ICMR-NIN 2020; WHO"
+    },
+    {
+      "nutrient": "potassium",
+      "unit": "mg/day",
+      "generalAdult": 3500,
+      "profileValue": 3500,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (3500); WHO (3510)"
+    },
+    {
+      "nutrient": "calcium",
+      "unit": "mg/day",
+      "generalAdult": 1000,
+      "profileValue": 1000,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020"
+    },
+    {
+      "nutrient": "iron_men",
+      "unit": "mg/day",
+      "generalAdult": 19,
+      "profileValue": 19,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020"
+    },
+    {
+      "nutrient": "iron_women",
+      "unit": "mg/day",
+      "generalAdult": 29,
+      "profileValue": 29,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020"
+    },
+    {
+      "nutrient": "magnesium_men",
+      "unit": "mg/day",
+      "generalAdult": 440,
+      "profileValue": 440,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 via FSSAI; food first, no supplement advice"
+    },
+    {
+      "nutrient": "magnesium_women",
+      "unit": "mg/day",
+      "generalAdult": 370,
+      "profileValue": 370,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 via FSSAI"
+    },
+    {
+      "nutrient": "vitamin_d",
+      "unit": "µg/day",
+      "generalAdult": 15,
+      "profileValue": 15,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (600 IU)"
+    },
+    {
+      "nutrient": "vitamin_b12",
+      "unit": "µg/day",
+      "generalAdult": 2.2,
+      "profileValue": 2.2,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 as adopted by FSSAI; if a doctor has prescribed metformin, ask about periodic B12 testing (ADA SoC)"
+    },
+    {
+      "nutrient": "folate_men",
+      "unit": "µg/day",
+      "generalAdult": 300,
+      "profileValue": 300,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020"
+    },
+    {
+      "nutrient": "folate_women",
+      "unit": "µg/day",
+      "generalAdult": 220,
+      "profileValue": 220,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020"
+    },
+    {
+      "nutrient": "physical_activity",
+      "unit": "min/week",
+      "generalAdult": 150,
+      "profileValue": 150,
+      "min": 150,
+      "max": null,
+      "direction": "raise",
+      "source": "US DPP 2002; ADA SoC 2026; IDPP (30 min walking per day)"
+    },
+    {
+      "nutrient": "water",
+      "unit": "mL/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No change from FitPlate general water target; prefer water over sweet drinks (ADA)"
+    }
+  ],
+  "bloodMarkers": [
+    {
+      "marker": "HbA1c",
+      "target": "Normal under 5.7; prediabetes range 5.7-6.4 (NICE/IEC use 6.0-6.4); 6.5 or more is diabetes range, see a doctor",
+      "unit": "%",
+      "source": "ADA SoC 2026; RSSDI 2020; NICE PH38; IEC"
+    },
+    {
+      "marker": "Fasting plasma glucose",
+      "target": "Normal under 100; prediabetes range 100-125 (WHO/ICMR 110-125); 126 or more is diabetes range, see a doctor",
+      "unit": "mg/dL",
+      "source": "ADA SoC 2026; RSSDI; WHO 2006; ICMR criteria"
+    },
+    {
+      "marker": "2-h OGTT glucose (75 g)",
+      "target": "Normal under 140; IGT 140-199; 200 or more is diabetes range, see a doctor",
+      "unit": "mg/dL",
+      "source": "ADA; WHO 2006; RSSDI"
+    },
+    {
+      "marker": "Prediabetes remission (research definition)",
+      "target": "Fasting under 100 mg/dL, 2-h under 140 mg/dL and HbA1c under 5.7%",
+      "unit": "mg/dL; %",
+      "source": "DPP-based remission research (Helmholtz Munich/DZD 2024 summary)"
+    },
+    {
+      "marker": "Fasting insulin / HOMA-IR",
+      "target": "No agreed cut-off; stored as a number only, not interpreted (US often 2.0-3.0; Asian studies about 1.4-2.5)",
+      "unit": "HOMA-IR has no unit; insulin in µIU/mL",
+      "source": "MDCalc HOMA-IR review; Singh et al. 2013 (Indian adolescents)"
+    },
+    {
+      "marker": "Waist circumference",
+      "target": "Raised at 90 or more (men), 80 or more (women)",
+      "unit": "cm",
+      "source": "Indian consensus (Misra et al. 2009); WHO expert consultation for Asians"
+    },
+    {
+      "marker": "BMI",
+      "target": "Overweight 23-24.9; obese 25 or more (Asian Indian cut-offs)",
+      "unit": "kg/m2",
+      "source": "Indian consensus 2009; ADA screens Asian Americans from BMI 23"
+    },
+    {
+      "marker": "LDL cholesterol",
+      "target": "Not found for prediabetes specifically; under 70 if metabolic syndrome or fatty liver (LAI, secondary report); otherwise see P4",
+      "unit": "mg/dL",
+      "source": "Lipid Association of India 2023 (via news summary)"
+    },
+    {
+      "marker": "Triglycerides",
+      "target": "Raised at 150 or more; see P5",
+      "unit": "mg/dL",
+      "source": "ADA reference range"
+    },
+    {
+      "marker": "HDL cholesterol",
+      "target": "Low if under 40 (men) or under 50 (women); see P6",
+      "unit": "mg/dL",
+      "source": "ADA reference range"
+    },
+    {
+      "marker": "Blood pressure",
+      "target": "Not found as a prediabetes-specific target; see P3",
+      "unit": "mmHg",
+      "source": "See P3"
+    },
+    {
+      "marker": "FIB-4 (liver scarring risk score)",
+      "target": "Under 1.3 suggests low risk; ask doctor if prediabetes plus cardiometabolic risk factors",
+      "unit": "score (no unit)",
+      "source": "ADA SoC 2025 (via summaries); see P7"
+    },
+    {
+      "marker": "Vitamin B12 (only if on metformin)",
+      "target": "Above about 200 (cut-offs vary)",
+      "unit": "pg/mL",
+      "source": "Indian studies; ADA SoC (B12 and metformin)"
+    }
+  ],
+  "waterMl": {
+    "min": null,
+    "max": null,
+    "notes": "No change from FitPlate general water target. Prefer plain water, unsweetened buttermilk, lemon water or unsweetened tea/coffee; juice, sugarcane juice, sweet lassi and soft drinks do not count. Strong unusual thirst or frequent urination may signal diabetes: see a doctor rather than just drinking more."
+  },
+  "sodiumMgMax": 2000,
+  "dietaryCholesterolMgMax": null,
+  "foodsFavour": [
+    "whole moong, chana, rajma, lobia, masoor and soya",
+    "sprouts",
+    "ragi, jowar, bajra and other millets",
+    "whole-wheat atta roti and thepla",
+    "brown or parboiled rice in measured portions",
+    "methi, palak, bhindi, lauki, cabbage, beans, cauliflower and karela",
+    "whole fruit such as guava, apple, orange, papaya and jamun",
+    "curd and buttermilk without sugar",
+    "paneer, eggs, fish and skinless chicken",
+    "almonds, peanuts, flaxseed and walnuts in small portions",
+    "groundnut, mustard, rice bran and sesame oils in rotation"
+  ],
+  "foodsLimit": [
+    "sweet drinks: packaged juice, cola, sweet lassi, cold coffee, sweetened health drinks",
+    "sugar, jaggery and honey in chai",
+    "mithai and desserts",
+    "large portions of white rice",
+    "maida: white bread, pav, naan, biscuits and noodles",
+    "deep-fried snacks: samosa, pakora, vada and puri",
+    "cream, butter and cashew gravies",
+    "vanaspati and reused frying oil",
+    "namkeen, pickles, papad and instant noodles",
+    "sabudana and potato-heavy fasting food"
+  ],
+  "goodFitDishes": [
+    {
+      "dishNumber": 56,
+      "dishName": "Pesarattu"
+    },
+    {
+      "dishNumber": 26,
+      "dishName": "Moong Dal Chilla"
+    },
+    {
+      "dishNumber": 16,
+      "dishName": "Besan Chilla"
+    },
+    {
+      "dishNumber": 66,
+      "dishName": "Sprouts Chaat"
+    },
+    {
+      "dishNumber": 71,
+      "dishName": "Ragi Dosa"
+    },
+    {
+      "dishNumber": 9,
+      "dishName": "Idli with Sambar"
+    },
+    {
+      "dishNumber": 5,
+      "dishName": "Dal Tadka"
+    },
+    {
+      "dishNumber": 80,
+      "dishName": "Masoor Dal"
+    },
+    {
+      "dishNumber": 31,
+      "dishName": "Indian-style Overnight Oats"
+    },
+    {
+      "dishNumber": 46,
+      "dishName": "Methi Thepla"
+    },
+    {
+      "dishNumber": 58,
+      "dishName": "Khaman Dhokla"
+    },
+    {
+      "dishNumber": 17,
+      "dishName": "Palak Paneer"
+    },
+    {
+      "dishNumber": 53,
+      "dishName": "Paneer Tikka"
+    },
+    {
+      "dishNumber": 45,
+      "dishName": "Tandoori Chicken"
+    },
+    {
+      "dishNumber": 21,
+      "dishName": "Masala Omelette"
+    },
+    {
+      "dishNumber": 14,
+      "dishName": "Egg Bhurji"
+    },
+    {
+      "dishNumber": 37,
+      "dishName": "Bhindi Masala"
+    },
+    {
+      "dishNumber": 44,
+      "dishName": "Baingan Bharta"
+    },
+    {
+      "dishNumber": 88,
+      "dishName": "Avial"
+    },
+    {
+      "dishNumber": 67,
+      "dishName": "Mix Veg Curry"
+    },
+    {
+      "dishNumber": 49,
+      "dishName": "Mushroom Masala"
+    },
+    {
+      "dishNumber": 52,
+      "dishName": "Moong Dal Khichdi"
+    },
+    {
+      "dishNumber": 33,
+      "dishName": "Goan Fish Curry"
+    },
+    {
+      "dishNumber": 8,
+      "dishName": "Chole (Chana Masala)"
+    }
+  ],
+  "cautionDishes": [
+    {
+      "dishNumber": 98,
+      "dishName": "Mango Lassi",
+      "reason": "About 30-40 g sugar per glass, more than the daily limit (est.)"
+    },
+    {
+      "dishNumber": 100,
+      "dishName": "Cold Coffee",
+      "reason": "Added sugar, often ice cream (est.)"
+    },
+    {
+      "dishNumber": 99,
+      "dishName": "Masala Chai",
+      "reason": "About 10 g added sugar per cup with 2 tsp sugar (calc.); several cups add up"
+    },
+    {
+      "dishNumber": 97,
+      "dishName": "Gulab Jamun",
+      "reason": "High added sugar, deep-fried (est.)"
+    },
+    {
+      "dishNumber": 96,
+      "dishName": "Gajar Halwa",
+      "reason": "High added sugar and ghee (est.)"
+    },
+    {
+      "dishNumber": 95,
+      "dishName": "Rice Kheer",
+      "reason": "White rice plus added sugar (est.)"
+    },
+    {
+      "dishNumber": 2,
+      "dishName": "Chicken Biryani",
+      "reason": "About 70-90 g carbohydrate per plate with little fibre; smaller portion with raita and salad (est.)"
+    },
+    {
+      "dishNumber": 39,
+      "dishName": "Veg Biryani",
+      "reason": "Large white-rice portion (est.)"
+    },
+    {
+      "dishNumber": 62,
+      "dishName": "Mutton Biryani",
+      "reason": "White rice plus saturated fat (est.)"
+    },
+    {
+      "dishNumber": 12,
+      "dishName": "Rajma Chawal",
+      "reason": "Good legumes but a large rice portion can reach about 80 g carbohydrate; keep rice to about 1 cup cooked (est.)"
+    },
+    {
+      "dishNumber": 35,
+      "dishName": "Curd Rice",
+      "reason": "Mostly white rice; measure the portion (est.)"
+    },
+    {
+      "dishNumber": 10,
+      "dishName": "Veg Fried Rice",
+      "reason": "White rice, salty sauces (est.)"
+    },
+    {
+      "dishNumber": 1,
+      "dishName": "Poha",
+      "reason": "About 45-50 g carbohydrate and 2 g fibre per plate; add peas, vegetables, peanuts or sprouts (est.)"
+    },
+    {
+      "dishNumber": 4,
+      "dishName": "Masala Dosa",
+      "reason": "Rice batter plus potato filling; pair with extra sambar (est.)"
+    },
+    {
+      "dishNumber": 20,
+      "dishName": "Vada Pav",
+      "reason": "White pav plus deep-fried potato (est.)"
+    },
+    {
+      "dishNumber": 13,
+      "dishName": "Pav Bhaji",
+      "reason": "White pav, butter, potato (est.)"
+    },
+    {
+      "dishNumber": 65,
+      "dishName": "Puri Bhaji",
+      "reason": "Deep-fried refined starch plus potato (est.)"
+    },
+    {
+      "dishNumber": 15,
+      "dishName": "Veg Hakka Noodles",
+      "reason": "Maida, high salt (est.)"
+    },
+    {
+      "dishNumber": 64,
+      "dishName": "Schezwan Noodles",
+      "reason": "Maida, high salt and sugar in sauce (est.)"
+    },
+    {
+      "dishNumber": 40,
+      "dishName": "Sabudana Khichdi",
+      "reason": "Mostly starch with almost no fibre, about 60 g carbohydrate per plate; common on fasts (est.)"
+    },
+    {
+      "dishNumber": 83,
+      "dishName": "Bhel Puri",
+      "reason": "Puffed rice and sweet chutney (est.)"
+    },
+    {
+      "dishNumber": 3,
+      "dishName": "Paneer Butter Masala",
+      "reason": "Cream and butter gravy raises saturated fat and calories (est.)"
+    },
+    {
+      "dishNumber": 7,
+      "dishName": "Butter Chicken",
+      "reason": "Cream and butter gravy raises saturated fat and calories (est.)"
+    },
+    {
+      "dishNumber": 79,
+      "dishName": "Gobi Manchurian",
+      "reason": "Batter-fried with salty, sweet sauce (est.)"
+    },
+    {
+      "dishNumber": 11,
+      "dishName": "Aloo Paratha",
+      "reason": "Potato filling plus ghee; have with curd and little ghee (est.)"
+    }
+  ],
+  "conflictsWith": [
+    {
+      "profileId": "type-2-diabetes",
+      "rule": "P1 is a superset of P2: if both are selected, P1 wins and P2 is switched off (all P1 safety rules and requires_doctor_input true apply); ask the user to confirm which diagnosis their doctor gave"
+    },
+    {
+      "profileId": "pregnancy",
+      "rule": "Pregnancy overrides: no calorie deficit or weight-loss goal; glucose testing and gestational diabetes care belong to the obstetric team; requires_doctor_input becomes true; after delivery remind women with past gestational diabetes to be re-tested as advised"
+    },
+    {
+      "profileId": "fatty-liver",
+      "rule": "Same direction: keep P2 targets, add P7 limits on sugary drinks, fructose syrups and alcohol, use the larger weight-loss target of the two; suggest asking the doctor about FIB-4"
+    },
+    {
+      "profileId": "pcos",
+      "rule": "Compatible: P2 targets plus P8 advice; show note that an OGTT may find more dysglycaemia than fasting glucose in PCOS; if trying to conceive, no aggressive deficit"
+    },
+    {
+      "profileId": "fat-loss",
+      "rule": "Compatible: P25 sets the deficit size and rate; P2 adds carbohydrate quality, fibre and sugar limits; if not overweight, the deficit is the user's own P25 choice"
+    },
+    {
+      "profileId": "muscle-gain",
+      "rule": "Compatible: surplus from protein and whole-food carbohydrate around workouts, not sugar or mass gainers; P27 protein applies if higher and kidney function is normal; added-sugar cap and fibre minimum still apply; keep tracking waist"
+    },
+    {
+      "profileId": "jain-diet",
+      "rule": "Apply as a food filter: no root vegetables (removes potato, onion, garlic, carrot); protein from dals, besan, paneer, curd, milk, nuts and soya; millets and non-root vegetables for fibre; on fast days favour makhana, peanuts, curd and fruit over sabudana and fried kuttu"
+    },
+    {
+      "profileId": "high-blood-pressure",
+      "rule": "Compatible; use the stricter sodium limit"
+    },
+    {
+      "profileId": "high-ldl-cholesterol",
+      "rule": "Compatible; saturated fat under 7% energy and P4 LDL targets"
+    }
+  ],
+  "requiresDoctorInput": false,
+  "requiresDoctorInputStated": true,
+  "fluidNote": null,
+  "warnings": [
+    "General information, not medical advice. FitPlate does not diagnose prediabetes, insulin resistance or diabetes; only a blood test reviewed by a doctor can.",
+    "Medicines, including metformin, are a doctor's decision only. The app never suggests starting, stopping or changing a medicine or dose.",
+    "Strong unusual thirst, passing urine often, weight loss without trying or blurred vision can be signs of diabetes: see a doctor soon.",
+    "Lab values in the diabetes range (HbA1c 6.5% or more, fasting glucose 126 mg/dL or more, 2-h glucose 200 mg/dL or more) need a doctor to confirm; the app offers the Type 2 diabetes profile but does not switch it on by itself.",
+    "requires_doctor_input becomes true if the user is pregnant, under 18, has kidney disease, or takes insulin or a sulfonylurea.",
+    "Cut-offs differ between guidelines (ADA/RSSDI fasting 100-125 mg/dL vs WHO/ICMR 110-125 mg/dL; HbA1c 5.7-6.4% vs 6.0-6.4%); the user's lab or doctor may use different ranges.",
+    "HOMA-IR has no agreed cut-off; the app stores it but does not interpret it.",
+    "Re-test at least once a year (ADA; NICE PH38).",
+    "If on metformin long term, ask the doctor about vitamin B12 testing."
+  ],
+  "lastResearched": "2026-10-15",
+  "versions": [
+    {
+      "date": "2026-10-15",
+      "file": "FitPlate_Nutrients_2026-10-15.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3); max as safety limit",
+    "limits": "safety limit (lower on conflict)",
+    "lists": "union",
+    "requiresDoctorInput": "stated true in any version, else newest version (missing flag + limits → true)"
+  },
+  "mergeNotes": [],
+  "needsReview": []
+}

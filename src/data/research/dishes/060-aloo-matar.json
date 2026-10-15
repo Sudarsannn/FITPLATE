@@ -1,0 +1,679 @@
+{
+  "id": "060-aloo-matar",
+  "number": 60,
+  "name": "Aloo Matar",
+  "cuisine": null,
+  "dietType": "veg",
+  "mealType": [
+    "lunch",
+    "dinner"
+  ],
+  "difficulty": "Beginner",
+  "prepMin": 10,
+  "cookMin": 30,
+  "servings": 1,
+  "ingredients": [
+    {
+      "ingredientId": "potato",
+      "name": "Potato (aloo)",
+      "quantity": 120,
+      "unit": "g",
+      "householdMeasure": "1 medium potato, peeled, cut into 2 cm cubes"
+    },
+    {
+      "ingredientId": "green-peas-frozen",
+      "name": "Green peas (matar), fresh shelled or frozen",
+      "quantity": 60,
+      "unit": "g",
+      "householdMeasure": "a little under ½ cup"
+    },
+    {
+      "ingredientId": null,
+      "name": "Sunflower or groundnut oil",
+      "quantity": 10,
+      "unit": "g",
+      "householdMeasure": "2 tsp"
+    },
+    {
+      "ingredientId": "bay-leaf",
+      "name": "Bay leaf (tej patta)",
+      "quantity": 1,
+      "unit": "small",
+      "householdMeasure": "1 leaf"
+    },
+    {
+      "ingredientId": "cumin-seeds",
+      "name": "Cumin seeds (jeera)",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "¼ tsp"
+    },
+    {
+      "ingredientId": "onion",
+      "name": "Onion (pyaz/kanda)",
+      "quantity": 50,
+      "unit": "g",
+      "householdMeasure": "½ small onion, finely chopped"
+    },
+    {
+      "ingredientId": "ginger",
+      "name": "Ginger (adrak)",
+      "quantity": 4,
+      "unit": "g",
+      "householdMeasure": "½-inch piece, grated"
+    },
+    {
+      "ingredientId": "garlic",
+      "name": "Garlic (lahsun)",
+      "quantity": 4,
+      "unit": "g",
+      "householdMeasure": "2 small cloves, grated"
+    },
+    {
+      "ingredientId": "green-chilli",
+      "name": "Green chilli (hari mirch)",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "1 small chilli, slit or chopped"
+    },
+    {
+      "ingredientId": "tomato",
+      "name": "Tomato (tamatar)",
+      "quantity": 100,
+      "unit": "g",
+      "householdMeasure": "1 medium ripe tomato, finely chopped or grated"
+    },
+    {
+      "ingredientId": "turmeric-powder",
+      "name": "Turmeric powder (haldi)",
+      "quantity": 0.3,
+      "unit": "g",
+      "householdMeasure": "a big pinch (⅛ tsp)"
+    },
+    {
+      "ingredientId": "kashmiri-red-chilli-powder",
+      "name": "Kashmiri red chilli powder (lal mirch)",
+      "quantity": 1,
+      "unit": "g",
+      "householdMeasure": "½ tsp"
+    },
+    {
+      "ingredientId": "coriander-powder",
+      "name": "Coriander powder (dhania powder)",
+      "quantity": 1.5,
+      "unit": "g",
+      "householdMeasure": "¾ tsp"
+    },
+    {
+      "ingredientId": "salt",
+      "name": "Salt (namak)",
+      "quantity": 2,
+      "unit": "g",
+      "householdMeasure": "a level ⅓ tsp"
+    },
+    {
+      "ingredientId": null,
+      "name": "Water",
+      "quantity": 200,
+      "unit": "ml",
+      "householdMeasure": "a little under 1 cup"
+    },
+    {
+      "ingredientId": "garam-masala",
+      "name": "Garam masala",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "¼ tsp"
+    },
+    {
+      "ingredientId": "dried-fenugreek-leaves",
+      "name": "Dried fenugreek leaves (kasuri methi)",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "½ tsp, crushed"
+    },
+    {
+      "ingredientId": "coriander-leaves",
+      "name": "Fresh coriander leaves (hara dhania)",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "2 tsp, chopped"
+    }
+  ],
+  "equipment": [
+    "Chopping board and knife; vegetable peeler (no peeler? peel with the knife, or scrub well and leave the skin on for extra fibre)",
+    "Grater (for ginger, garlic and, for a smoother gravy, the tomato)",
+    "Bowl of water, to hold the cut potato so it does not brown",
+    "Kadai or medium heavy pan with a lid (about 20 cm)",
+    "Wooden spoon or spatula",
+    "Measuring spoons and a measuring cup (a normal teaspoon and a steel glass are fine stand-ins)",
+    "Optional: small pressure cooker (1.5–2 litre)",
+    "No mixer needed"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "title": "Peel the potato",
+      "text": "Peel 1 medium potato (120 g).",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "No brown skin left, pale yellow-white flesh",
+      "cameraCheck": "The peeled potato on the board",
+      "videoShot": "A peeler running down a potato."
+    },
+    {
+      "n": 2,
+      "title": "Cube the potato",
+      "text": "Cut it into 2 cm cubes and drop them into a bowl of water.",
+      "timerSec": 60,
+      "tip": "Keep the cubes small and even; big cubes stay hard in the middle while the gravy dries out.",
+      "visualCue": "15–18 even cubes, about dice-sized, under water",
+      "cameraCheck": "The cubes in the water bowl",
+      "videoShot": "Potato cubes tipped into water."
+    },
+    {
+      "n": 3,
+      "title": "Thaw or rinse the peas",
+      "text": "Measure 60 g peas (a little under ½ cup). If frozen, rinse them under running water in a sieve; if fresh, rinse and drain.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Bright green peas, no ice crystals",
+      "cameraCheck": "The peas in the sieve",
+      "videoShot": "Water running over green peas in a sieve."
+    },
+    {
+      "n": 4,
+      "title": "Chop the onion",
+      "text": "Finely chop ½ small onion (50 g).",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Small, even pieces, a little under ½ cup",
+      "cameraCheck": "The chopped onion",
+      "videoShot": "A knife chopping onion fine."
+    },
+    {
+      "n": 5,
+      "title": "Grate the ginger and garlic",
+      "text": "Grate ½-inch ginger (4 g) and 2 small garlic cloves (4 g).",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "A small heap of pale, wet paste",
+      "cameraCheck": "The paste on the board",
+      "videoShot": "Ginger rubbed on the grater."
+    },
+    {
+      "n": 6,
+      "title": "Prepare the green chilli",
+      "text": "Slit 1 small green chilli lengthwise (or chop it fine for more heat).",
+      "timerSec": 20,
+      "tip": null,
+      "visualCue": "Chilli split open, seeds showing",
+      "cameraCheck": "The slit chilli",
+      "videoShot": "A knife slitting a green chilli."
+    },
+    {
+      "n": 7,
+      "title": "Chop the tomato",
+      "text": "Finely chop or grate 1 medium ripe tomato (100 g), discarding the skin if grating.",
+      "timerSec": 60,
+      "tip": "Use a fully red tomato; an unripe one makes the gravy sour.",
+      "visualCue": "Pulpy red tomato, about ½ cup",
+      "cameraCheck": "The chopped tomato",
+      "videoShot": "Tomato rubbed on a grater, skin left in the hand."
+    },
+    {
+      "n": 8,
+      "title": "Heat the oil",
+      "text": "Put the kadai on medium heat and add 2 tsp (10 g) oil.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Oil shimmers and flows easily when the pan is tilted",
+      "cameraCheck": "The oil in the kadai",
+      "videoShot": "Oil swirling in a heating kadai."
+    },
+    {
+      "n": 9,
+      "title": "Temper the cumin and bay leaf",
+      "text": "Add ¼ tsp cumin seeds and 1 bay leaf.",
+      "timerSec": 20,
+      "tip": "If the cumin turns black at once, the oil is too hot; lower the heat.",
+      "visualCue": "Cumin sizzles and turns one shade darker; nutty smell",
+      "cameraCheck": "The sizzling cumin",
+      "videoShot": "Cumin crackling in hot oil."
+    },
+    {
+      "n": 10,
+      "title": "Cook the onion",
+      "text": "Add the chopped onion and stir on medium heat.",
+      "timerSec": 240,
+      "tip": "Stir every 30 seconds so the onion browns evenly and does not burn.",
+      "visualCue": "Soft and light golden at the edges, sweet smell",
+      "cameraCheck": "The golden onion",
+      "videoShot": "Spatula turning golden onion."
+    },
+    {
+      "n": 11,
+      "title": "Add ginger, garlic and chilli",
+      "text": "Stir in the ginger-garlic paste and the green chilli.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "The raw garlic smell goes",
+      "cameraCheck": "The paste mixed into the onion",
+      "videoShot": "The paste stirred into the onion."
+    },
+    {
+      "n": 12,
+      "title": "Add the powders",
+      "text": "Lower the heat and add a big pinch of turmeric, ½ tsp Kashmiri chilli powder and ¾ tsp coriander powder. Stir.",
+      "timerSec": 20,
+      "tip": "Powders burn in seconds; if the pan looks dry, add 1 tbsp water before the tomato.",
+      "visualCue": "The onion turns orange-red; spices smell toasted, not burnt",
+      "cameraCheck": "The spiced onion",
+      "videoShot": "Powders sprinkled over the onion and stirred."
+    },
+    {
+      "n": 13,
+      "title": "Add the tomato and salt",
+      "text": "Add the chopped tomato and 2 g (⅓ tsp) salt. Turn the heat back to medium and stir.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "Red tomato spread through the masala",
+      "cameraCheck": "The tomato in the kadai",
+      "videoShot": "Tomato tipped into the kadai."
+    },
+    {
+      "n": 14,
+      "title": "Cook the masala soft",
+      "text": "Cover and cook on medium-low, stirring and mashing every minute.",
+      "timerSec": 240,
+      "tip": null,
+      "visualCue": "Tomato completely mushy, no raw pieces",
+      "cameraCheck": "The mashed masala with the lid lifted",
+      "videoShot": "The spatula mashing soft tomato."
+    },
+    {
+      "n": 15,
+      "title": "Cook until the oil separates",
+      "text": "Uncover and keep stirring on medium-low.",
+      "timerSec": 120,
+      "tip": "This is the step that decides the taste; a gravy that has not reached this stage tastes raw and sour.",
+      "visualCue": "The masala turns thick and glossy and small drops of oil appear at the edges",
+      "cameraCheck": "The edge of the masala showing oil",
+      "videoShot": "Close-up of oil beading at the edge of the masala."
+    },
+    {
+      "n": 16,
+      "title": "Add the potato",
+      "text": "Drain the potato cubes and add them to the masala. Stir for 1 minute so every cube is coated.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Pale cubes turned orange with masala",
+      "cameraCheck": "The coated potato cubes",
+      "videoShot": "Drained potato tipped in and tossed."
+    },
+    {
+      "n": 17,
+      "title": "Add the water",
+      "text": "Pour in 200 ml water and stir, scraping the bottom.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "A thin orange gravy, potatoes just covered",
+      "cameraCheck": "The gravy after adding water",
+      "videoShot": "Water poured into the kadai."
+    },
+    {
+      "n": 18,
+      "title": "Simmer the potato",
+      "text": "Bring to a boil, cover and simmer on low.",
+      "timerSec": 600,
+      "tip": "Stir once halfway; if the gravy dries before the potato softens, add 2–3 tbsp hot water.",
+      "visualCue": "A knife tip slides into a potato cube with little resistance",
+      "cameraCheck": "A potato cube pierced with a knife tip",
+      "videoShot": "A knife tip pushed into a potato cube."
+    },
+    {
+      "n": 19,
+      "title": "Add the peas",
+      "text": "Add the 60 g peas and stir.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "Green peas spread through the gravy",
+      "cameraCheck": "The peas in the gravy",
+      "videoShot": "Peas tipped in and stirred."
+    },
+    {
+      "n": 20,
+      "title": "Simmer the peas",
+      "text": "Cover and simmer on low.",
+      "timerSec": 240,
+      "tip": null,
+      "visualCue": "A pea squashes easily between two fingers; potatoes fully soft",
+      "cameraCheck": "One pea pressed between your fingers",
+      "videoShot": "A pea being squashed on a spoon."
+    },
+    {
+      "n": 21,
+      "title": "Thicken the gravy",
+      "text": "Mash 3–4 potato cubes against the side of the kadai with the spatula and stir them in. Simmer uncovered.",
+      "timerSec": 60,
+      "tip": "This is how home cooks get a thick gravy without cream or cashew.",
+      "visualCue": "Gravy turns creamy and coats the back of a spoon",
+      "cameraCheck": "The spoon coated with gravy",
+      "videoShot": "Potato cubes pressed against the pan side."
+    },
+    {
+      "n": 22,
+      "title": "Taste and adjust",
+      "text": "Taste and add a pinch more salt only if needed; add 2–3 tbsp hot water if the gravy is too thick.",
+      "timerSec": 20,
+      "tip": null,
+      "visualCue": "Mildly spiced, slightly tangy, sweet from the peas",
+      "cameraCheck": "The spoon tasting",
+      "videoShot": "A spoon of gravy lifted for tasting."
+    },
+    {
+      "n": 23,
+      "title": "Finish with garam masala and kasuri methi",
+      "text": "Sprinkle ¼ tsp garam masala and crush ½ tsp kasuri methi between your palms over the kadai. Stir and turn off the heat.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "Green flecks and a warm, sweet smell",
+      "cameraCheck": "The kasuri methi on the gravy",
+      "videoShot": "Palms rubbing kasuri methi over the pan."
+    },
+    {
+      "n": 24,
+      "title": "Garnish and serve",
+      "text": "Remove the bay leaf, transfer to a bowl and scatter 2 tsp chopped coriander leaves on top.",
+      "timerSec": 30,
+      "tip": "The gravy thickens as it rests for 5 minutes; that is normal.",
+      "visualCue": "Orange-red gravy with yellow potato, green peas and green garnish",
+      "cameraCheck": "The finished bowl",
+      "videoShot": "Coriander scattered over the bowl, steam rising."
+    }
+  ],
+  "nutritionPerServing": {
+    "kcal": 290,
+    "proteinG": 8.1,
+    "carbsG": 42.5,
+    "fatG": 11,
+    "fibreG": 9.4
+  },
+  "microNutrientsEstimate": {
+    "values": {
+      "vitamin-a": 19.1,
+      "vitamin-b6": 0.1,
+      "vitamin-c": 53.1,
+      "vitamin-k": 34.6
+    },
+    "coveragePct": 51,
+    "basis": "partial estimate from ingredient quantities"
+  },
+  "asOrdered": {
+    "price": {
+      "priceHistory": [
+        {
+          "date": "2026-10-15",
+          "min": 210,
+          "max": 270,
+          "avg": 232,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-10-15.md"
+        }
+      ],
+      "currentEstimate": {
+        "min": 210,
+        "max": 270,
+        "avg": 230
+      },
+      "method": "single",
+      "trend": "unknown",
+      "change30dPct": null,
+      "lastObserved": "2026-10-15",
+      "stale": false,
+      "seasonal": false,
+      "listingCount": 4,
+      "platforms": [
+        "Swiggy"
+      ],
+      "outOfStock": true,
+      "confirmed": false,
+      "checkNotes": [
+        "only 1 platform (Swiggy) backs the range",
+        "a listing used for the range is marked out of stock, closed or not taking orders"
+      ]
+    },
+    "nutrition": {
+      "calories": {
+        "value": null,
+        "source": null
+      },
+      "protein": {
+        "value": null,
+        "source": null
+      },
+      "carbs": {
+        "value": null,
+        "source": null
+      },
+      "fat": {
+        "value": null,
+        "source": null
+      },
+      "fibre": {
+        "value": null,
+        "source": null
+      }
+    },
+    "restaurantsSampled": 8,
+    "platforms": [
+      "Swiggy",
+      "Zomato",
+      "magicpin"
+    ]
+  },
+  "orderPrice": {
+    "priceHistory": [
+      {
+        "date": "2026-10-15",
+        "min": 210,
+        "max": 270,
+        "avg": 232,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-10-15.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 210,
+      "max": 270,
+      "avg": 230
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-15",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 4,
+    "platforms": [
+      "Swiggy"
+    ],
+    "outOfStock": true,
+    "confirmed": false,
+    "checkNotes": [
+      "only 1 platform (Swiggy) backs the range",
+      "a listing used for the range is marked out of stock, closed or not taking orders"
+    ]
+  },
+  "healthiness": {
+    "score": 8,
+    "restaurantScore": 6,
+    "reasons": [
+      "about 290 kcal with about 9 g fibre, almost no saturated fat, no cholesterol, no added sugar, no frying, only 2 tsp oil, and good potassium, vitamin C and B6 from potato, peas and tomato. Points off for low protein (about 8 g), a high-carb, fairly high-glycaemic base (potato) and sodium (about 800 mg). Restaurant versions are usually oilier, saltier, sometimes finished with butter or cream, and come with naan or puri."
+    ]
+  },
+  "researchRating": {
+    "score": 4.4,
+    "basis": "aloo matar is one of the most common everyday North Indian sabzis; it has its own Wikipedia article (which says it is served in most North Indian restaurants), almost every major Indian recipe site publishes it, Hebbar's Kitchen's recipe shows 5 stars from about 280 votes, Tarla Dalal's shows 5/5 from 3 reviews, and ready meals are sold by Gits, MTR and others. Points off because it is seen as a plain, everyday dish rather than a special one, published review counts are small outside Hebbar's Kitchen, and a \"Jain\" version that keeps potato drew reader objections (Yummy Tummy Aarthi). Swiggy dish ratings seen (for example 4.9 from 266 ratings at Greens Restaurant) are not used. Search-result snippets were the only access to these sites this run."
+  },
+  "storage": "Fridge-safe in a closed box for up to 2 days (cool within 1 hour). Freezer: not recommended, as frozen and thawed potato turns grainy and watery. Reheat in a pan on low with 2–3 tbsp water, stirring gently, until it just bubbles (the potato soaks up gravy in the fridge); or microwave in 1-minute bursts, stirring between.",
+  "leftoverRemix": "Aloo matar tikki or toastie. Mash the leftover curry in a pan and cook it down until dry, mix in 1–2 tbsp besan or poha powder (or rice flour for gluten-free), chopped coriander and a pinch of chaat masala, shape into 3 small patties and shallow-fry them on a tawa with 1 tsp oil until crisp; serve with green chutney. Or spread the dried-down mash between two slices of bread with a slice of onion and toast it.",
+  "burnOff": "about 4.1 km of running (290 ÷ 70 kcal/km, for a 70 kg adult), or about 5.8 km of brisk walking (about 70 min at 5 km/h, using about 50 kcal/km for walking) (est.). With 2 phulkas (about 470 kcal): about 6.7 km running or 9.4 km walking (est.).",
+  "sources": [
+    "Hebbar's Kitchen, Aloo Matar (onion-tomato base with cinnamon, cardamom, kasuri methi and cumin; 4 tsp oil; about 1 cup water; pressure cooker 3 whistles; potatoes mashed slightly to adjust consistency; 5 stars from about 280 votes): https://hebbarskitchen.com/aloo-matar-recipe-aloo-mutter-recipe/ ; https://hebbarskitchen.com/wprm_print/aloo-matar-recipe-aloo-mutter-recipe-alu-matar-recipe",
+    "Indian Healthy Recipes (Swasthi), Aloo Matar (cumin, onion, ginger-garlic, tomato purée, cook until oil separates, hot water just to cover the potatoes, finish with kasuri methi and coriander; pressure-cooker option): https://www.indianhealthyrecipes.com/wprm_print/aloo-matar-recipe-aloo-mutter",
+    "Veg Recipes of India, Punjabi Aloo Matar (smooth onion-tomato-ginger-garlic paste, optional cream or malai, simmer 20–30 min) and Aloo Matar Paneer (2 whistles on medium): https://www.vegrecipesofindia.com/aloo-matar-curry-aloo-matar-gravy/comment-page-1 ; https://www.vegrecipesofindia.com/wprm_print/aloo-matar-recipe-punjabi-aloo-mutter ; https://www.vegrecipesofindia.com/wprm_print/aloo-matar-paneer",
+    "Tarla Dalal, Aloo Matar Sabzi (cumin crackled in oil, onion sautéed until translucent; mild spice, kid-friendly): https://www.tarladalal.com/aloo-matar-aloo-matar-sabzi-4323r",
+    "Cook Click n Devour, Punjabi Aloo Matar (peas and potatoes boiled first; 2 tbsp oil, 2 large tomatoes puréed, lemon to finish): https://www.cookclickndevour.com/punjabi-aloo-matar-recipe ; https://www.cookclickndevour.com/wprm_print/aloo-matar-masala-recipe",
+    "Spice Up The Curry, Punjabi Aloo Matar (pressure cooker / Instant Pot, about 20 min; dry, semi-dry or gravy): https://www.spiceupthecurry.com/aloo-matar-recipe-punjabi-style/",
+    "Smitha Kalluraya, Aloo Matar: https://smithakalluraya.com/aloo-matar-recipe-aloo-mutter-recipe-how-to-do-aloo-matar/",
+    "Sandhya Hariharan, Dhaba-style Aloo Matar: https://sandhyahariharan.co.uk/dhaba-style-aloo-matar/",
+    "Kali Mirch by Smita, Dhaba-style Aloo Matar: https://kalimirchbysmita.com/dhaba-style-aloo-matar/",
+    "Foodviva, Dry Aloo Matar: https://foodviva.com/curry-recipes/aloo-mutter-recipe/",
+    "Wikipedia, Aloo mutter: https://en.wikipedia.org/wiki/Aloo_mutter",
+    "Tarla Dalal, Green Peas and Raw Banana Subzi (Matar aur Kacha Kele ki Subzi), Jain subzis category (raw banana steamed about 7 min): https://www.tarladalal.com/green-peas-and-raw-banana-subzi-matar-aur-kacha-kale-ki-subzi-7536r",
+    "Archana's Kitchen, Kela Matar ki Sabzi (Jain-style, no onion, no garlic): https://archanaskitchen.com/kela-matar-ki-sabzi-recipe-raw-banana-green-peas-stir-fry",
+    "Yummy Tummy Aarthi, no-onion no-garlic aloo matar (labelled Jain; a reader notes potato is not Jain): https://yummytummyaarthi.com/aloo-peas-curry-recipe-aloo-matar",
+    "Harpal Sokhi, tomato-based aloo matar gravy: https://harpalssokhi.com/?p=3986",
+    "USDA FoodData Central (potato, green peas, onion, tomato, ginger, garlic, green chilli, spices, sunflower and groundnut oil): https://fdc.nal.usda.gov/",
+    "IFCT 2017 (ICMR-NIN), referenced but values not confirmed from this environment; ICMR-NIN Nutrient Requirements for Indians 2020: https://www.nin.res.in/",
+    "Tarla Dalal, calories in Aloo Matar Sabzi (155 kcal per serving; context): https://www.tarladalal.com/calories-for-Aloo-Matar-Aloo-Matar-Sabzi-4323",
+    "Tarla Dalal, calories in Aloo Mutter Tariwale (193 kcal per 200 g; context): https://www.tarladalal.com/calories-for-Aloo-Mutter-Tariwale-Punjabi-Tariwale-Aloo-Matar-22795",
+    "FatSecret, Aloo Matar generic entry (123 kcal per 125 g; context): https://www.fatsecret.com.au/calories-nutrition/generic/aloo-matar",
+    "Getfoodfacts, Truly Indian Aloo Matar (branded, per 150 g; context): https://getfoodfacts.com/food/aloo-matar-1587414",
+    "BigBasket, Gits Ready Meals Aloo Matar 300 g (₹102.80; 124 kcal per 100 g; packaged, context): https://bigbasket.com/pd/100123455/gits-ready-meals-aloo-matar-300-g-carton",
+    "Swiggy, Geeta Bhavan, Kalbadevi (Aloo Mattar ₹135): https://www.swiggy.com/city/mumbai/geeta-bhavan-kalbadevi-rest50968 ; https://www.swiggy.com/menu/50968",
+    "Swiggy, Greens Restaurant, Malad West (Aloo Mattar ₹275, serves 2): https://www.swiggy.com/restaurants/greens-restaurant-linkway-estate-malad-west-mumbai-6379",
+    "Swiggy, New Kathiyawadi Dhaba, Mira Road (Aloo Matar ₹209.64): https://www.swiggy.com/city/mumbai/new-kathiyawadi-dhaba-mira-road-rest421852",
+    "Swiggy, Pet Pooja Point (Aloo Mutter ₹240): https://www.swiggy.com/city/mumbai/pet-pooja-point-bhoiwada-rest133442 ; https://www.swiggy.com/city/mumbai/pet-pooja-point-east-kalyan-rest133442",
+    "Swiggy, Ruchi Veg Restaurant, Goregaon East (Aloo Mattar ₹250): https://www.swiggy.com/city/mumbai/ruchi-veg-restaurant-east-goregaon-rest36633",
+    "Swiggy, Harish Kitchen, Majiwada, Thane (Aloo Mattar ₹269): https://www.swiggy.com/menu/87068",
+    "Swiggy, Navaratna Veg Restaurant, Vashi (Aloo Matar ₹385): https://www.swiggy.com/restaurants/navaratna-veg-restaurant-vashi-mumbai-286146 ; https://www.swiggy.com/menu/286146",
+    "Swiggy, K Bhagat Tarachand, Borivali West (Jain Alu Mutter ₹419): https://www.swiggy.com/restaurants/k-bhagat-tarachand-borivali-mumbai-210347",
+    "Swiggy, Mumbai thali page (\"Mom Style Aloo Matar - Everyday Thali\" ₹249; combo, excluded): https://www.swiggy.com/city/mumbai/thali-dish-restaurants",
+    "Swiggy, Ganga Cloud Kitchen, Virar (aloo sabzi in ₹175 thali; combo, excluded): https://www.swiggy.com/city/mumbai/ganga-cloud-kitchen-virar-rest1411710",
+    "Swiggy, Maharaja Restaurant, Siliguri (Aloo Matar ₹190; context): https://www.swiggy.com/city/siliguri/maharaja-restaurant-sf-road-rest151074",
+    "Swiggy, Foody Cloud Parganas, Kolkata (₹117; context): https://www.swiggy.com/city/kolkata/foody-cloud-parganas-chinar-park-rest1421566"
+  ],
+  "allergens": [
+    "peanut"
+  ],
+  "dietClaims": [
+    "vegan",
+    "glutenFree",
+    "dairyFree"
+  ],
+  "fasting": {
+    "navratri": {
+      "status": "no",
+      "reason": "green peas (a legume), onion, garlic, turmeric and table salt are avoided in the common vrat rule set; potato alone with sendha namak is a different dish (vrat wale aloo)."
+    },
+    "ekadashi": {
+      "status": "no",
+      "reason": "green peas are a pulse/legume, avoided on Ekadashi in the most common rule set, along with onion and garlic."
+    },
+    "jain": {
+      "status": null,
+      "reason": "potato, onion, garlic and fresh ginger are root vegetables; use raw banana, a tomato-only gravy and sonth (Jain variant)."
+    },
+    "ramadan": {
+      "status": "yes",
+      "reason": "vegetarian, so no halal-meat issue; light and filling with roti for iftar dinner; for sehri, the fibre helps fullness, but drink water because of the sodium (about 800 mg)."
+    }
+  },
+  "dietTags": {
+    "base": "Vegetarian",
+    "jain": {
+      "status": "with-changes",
+      "reason": "potato, onion, garlic and fresh ginger are root vegetables; swap potato for raw banana (kacha kela), skip onion and garlic and use dry ginger powder (see Jain variant)."
+    },
+    "vegan": {
+      "status": "yes",
+      "reason": "cooked in vegetable oil with no ghee, butter, cream, curd or honey."
+    },
+    "pescatarian": {
+      "status": "yes",
+      "reason": "vegetarian, no meat, so it fits a pescatarian diet."
+    },
+    "sattvik": {
+      "status": "with-changes",
+      "reason": "skip onion and garlic and cook the gravy on tomato and ginger (see Sattvik variant)."
+    },
+    "glutenFree": {
+      "status": "yes",
+      "reason": "no wheat, maida, rava or besan, and the main recipe uses no hing; if you add hing, use a gluten-free one, as most hing sold in India is compounded with wheat flour."
+    },
+    "dairyFree": {
+      "status": "yes",
+      "reason": "no paneer, curd, cream, ghee or butter."
+    },
+    "allergensDeclared": [
+      "peanut"
+    ]
+  },
+  "tags": [
+    "Veg",
+    "Vegan",
+    "Jain option",
+    "Gluten-free",
+    "Dairy-free",
+    "Ramadan sehri / iftar",
+    "Contains peanut",
+    "Lunch",
+    "Dinner",
+    "Under 60 min",
+    "Beginner",
+    "High fibre",
+    "Low calorie"
+  ],
+  "description": "A vegetarian, vegan, gluten-free and dairy-free Punjabi potato-and-pea curry in onion-tomato gravy; Jain (raw banana), no-onion-garlic and low-oil versions below.",
+  "familyId": null,
+  "variants": [
+    {
+      "category": "Jain",
+      "status": "variant",
+      "name": "Jain Matar aur Kacha Kela (raw banana and peas in tomato gravy)",
+      "origin": "established",
+      "linkedDishNumber": null,
+      "reason": null
+    },
+    {
+      "category": "Sattvik",
+      "status": "variant",
+      "name": "No-onion no-garlic Aloo Matar",
+      "origin": "established",
+      "linkedDishNumber": null,
+      "reason": null
+    },
+    {
+      "category": "Low-oil",
+      "status": "variant",
+      "name": "Light Aloo Matar (1 tsp oil)",
+      "origin": "fitplate-created",
+      "linkedDishNumber": null,
+      "reason": null
+    }
+  ],
+  "needsReview": [
+    "Jain \"with-changes\" but the recipe keeps onion, garlic, potato, fresh ginger and the line doesn't say to skip them",
+    "price not confirmed (2026-10-15): only 1 platform (Swiggy) backs the range",
+    "price not confirmed (2026-10-15): a listing used for the range is marked out of stock, closed or not taking orders"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-15",
+      "file": "FitPlate_Dishes_2026-10-15.md"
+    }
+  ],
+  "mergeMethod": {
+    "nutritionPerServing": "stable (single)",
+    "orderPrice": "price engine (single)",
+    "ingredients": "newest",
+    "steps": "newest",
+    "healthiness": "newest",
+    "researchRating": "newest",
+    "sources": "union",
+    "tags": "tag engine (tags.ts) on the merged dish"
+  },
+  "mergeNotes": []
+}

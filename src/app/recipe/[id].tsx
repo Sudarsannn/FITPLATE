@@ -4,7 +4,7 @@ import type { ReactNode } from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { DishImageSlot, TagChip } from '../../components/dishes/parts';
+import { DishImageSlot, PhotoCredit, TagChip, dishPhoto } from '../../components/dishes/parts';
 import { factsLine } from '../../components/dishes/ResearchDishCard';
 import { GradientButton, PressableScale } from '../../components/ui';
 import { familyOf, getDish } from '../../data/research';
@@ -48,11 +48,18 @@ function DishBody({ dish }: { dish: Dish }) {
   const dietTags = dish.tags.filter((t) => !t.startsWith('Contains '));
   const allergenTags = dish.tags.filter((t) => t.startsWith('Contains '));
   const variants = dish.variants.filter((v) => v.status === 'variant' || v.status === 'not-appropriate');
+  const photo = dishPhoto(dish.id);
 
   return (
     <ScrollView contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
       <View style={{ alignItems: 'center' }}>
-        <DishImageSlot dish={dish} size={150} />
+        <DishImageSlot dish={dish} size={photo ? 240 : 150} />
+        {photo ? <PhotoCredit credit={photo.credit} /> : null}
+        {photo ? (
+          <Text style={styles.allCredits} onPress={() => router.push('/photo-credits')} accessibilityRole="link">
+            All photo credits
+          </Text>
+        ) : null}
       </View>
       <Text style={[type.h1, { color: colors.text, marginTop: 16 }]} accessibilityRole="header">
         {dish.name}
@@ -154,6 +161,7 @@ function Fact({ label, value }: { label: string; value: string | null }) {
 }
 
 const styles = StyleSheet.create({
+  allCredits: { color: colors.muted, fontSize: 11, marginTop: 2, textDecorationLine: 'underline' },
   top: { flexDirection: 'row', paddingHorizontal: 12, paddingVertical: 4 },
   back: { width: 44, height: 44, borderRadius: 22, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.card },
   scroll: { padding: 18, paddingBottom: 60 },

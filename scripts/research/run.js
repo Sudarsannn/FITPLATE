@@ -2,7 +2,7 @@
 /**
  * Daily data sync runner (auto-build spec section C).
  *
- *   node scripts/research/run.js --today 2026-10-15 --build Day05 [--src /mnt/project-files] [--dry-run] [--report out.json]
+ *   node scripts/research/run.js --today 2026-10-15 --build Day05 [--src /mnt/project-files] [--dry-run] [--report out.json] [--catch-up]
  *
  * 1. Parses every research file of the four streams under --src (dishes,
  *    ingredients, nutrients incl. hydration/guidance/health profiles, fitness).
@@ -45,7 +45,11 @@ const exerciseImporter = require(path.join(ROOT, 'src/services/data/exerciseImpo
 const crossLinks = require(path.join(ROOT, 'src/services/data/crossLinks.ts'));
 const { assignFamilies } = require(path.join(ROOT, 'src/services/data/tags.ts'));
 
-const CAPS = { dishes: 10, ingredients: 30, nutrients: 6, fitness: 8 };
+// Per-run caps keep a daily build small. --catch-up (on-demand runs only) lifts them
+// so a backlog left by skipped builds lands in one go.
+const CAPS = process.argv.includes('--catch-up')
+  ? { dishes: Infinity, ingredients: Infinity, nutrients: Infinity, fitness: Infinity }
+  : { dishes: 10, ingredients: 30, nutrients: 6, fitness: 8 };
 const STREAMS = {
   dishes: { dir: 'dish-research', prefix: 'FitPlate_Dishes_' },
   ingredients: { dir: 'ingredient-research', prefix: 'FitPlate_Ingredients_' },

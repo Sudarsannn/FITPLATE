@@ -1,0 +1,466 @@
+{
+  "id": "riboflavin",
+  "name": "Riboflavin (Vitamin B2)",
+  "type": "vitamin",
+  "subtype": "water-soluble",
+  "unit": "mg",
+  "altUnits": [
+    {
+      "unit": "µg",
+      "toMainUnitFactor": 0.001
+    }
+  ],
+  "unitConversions": [
+    {
+      "fromUnit": "µg",
+      "compound": "",
+      "toMainUnitFactor": 0.001,
+      "raw": "1,000 µg (mcg) | 1 mg"
+    },
+    {
+      "fromUnit": "mg",
+      "compound": "riboflavin-5'-phosphate sodium",
+      "toMainUnitFactor": 0.79,
+      "raw": "1 mg riboflavin-5'-phosphate sodium (anhydrous) | about 0.79 mg riboflavin"
+    },
+    {
+      "fromUnit": "mg",
+      "compound": "riboflavin-5'-phosphate sodium",
+      "toMainUnitFactor": 0.73,
+      "raw": "1 mg riboflavin-5'-phosphate sodium (dihydrate) | about 0.73 mg riboflavin"
+    },
+    {
+      "fromUnit": "mg",
+      "compound": "fmn",
+      "toMainUnitFactor": 0.82,
+      "raw": "1 mg FMN (free acid) | about 0.82 mg riboflavin"
+    },
+    {
+      "fromUnit": "mg",
+      "compound": "fad",
+      "toMainUnitFactor": 0.48,
+      "raw": "1 mg FAD | about 0.48 mg riboflavin"
+    }
+  ],
+  "targets": [
+    {
+      "group": "adult_male_sedentary",
+      "ear": 1.6,
+      "rda": 2,
+      "ai": null,
+      "source": "ICMR-NIN 2020 short report (via search snippets; EGR-AC cut-off 1.2)"
+    },
+    {
+      "group": "adult_male_moderate",
+      "ear": 2.1,
+      "rda": 2.5,
+      "ai": null,
+      "source": "ICMR-NIN 2020 brief note table (via search snippet); RDA also in secondary summary"
+    },
+    {
+      "group": "adult_male_heavy",
+      "ear": null,
+      "rda": 3.2,
+      "ai": null,
+      "source": "ICMR-NIN 2020 via secondary summary only; EAR not found; lower confidence"
+    },
+    {
+      "group": "adult_female_sedentary",
+      "ear": 1.6,
+      "rda": 1.9,
+      "ai": null,
+      "source": "ICMR-NIN 2020 short report (via search snippets)"
+    },
+    {
+      "group": "adult_female_moderate",
+      "ear": null,
+      "rda": 2.4,
+      "ai": null,
+      "source": "ICMR-NIN 2020 via secondary summary; EAR not found; lower confidence"
+    },
+    {
+      "group": "adult_female_heavy",
+      "ear": null,
+      "rda": 3.1,
+      "ai": null,
+      "source": "ICMR-NIN 2020 via secondary summary only; EAR not found; lower confidence"
+    },
+    {
+      "group": "pregnant",
+      "ear": null,
+      "rda": 2.7,
+      "ai": null,
+      "source": "ICMR-NIN 2020 via secondary summary only; EAR not found; lower confidence (one conflicting snippet)"
+    },
+    {
+      "group": "lactating",
+      "ear": null,
+      "rda": 3,
+      "ai": null,
+      "source": "ICMR-NIN 2020 via secondary summary only (0-6 months); 6-12 month value not found; lower confidence"
+    },
+    {
+      "group": "age_60_plus",
+      "ear": null,
+      "rda": null,
+      "ai": null,
+      "source": "ICMR-NIN 2020 value for 60+ not found; app applies sedentary adult RDA (2.0 mg men, 1.9 mg women)"
+    }
+  ],
+  "appDefaultTarget": {
+    "adult_male": 2,
+    "adult_female": 1.9,
+    "pregnant": 2.7,
+    "lactating": 3,
+    "age_60_plus": null
+  },
+  "upperLimit": {
+    "value": null,
+    "unit": "mg/day",
+    "appliesTo": "supplements_only",
+    "source": "No UL set: ICMR-NIN TUL not found; NASEM 1998, EFSA and UK EVM 2003 set none. App notice uses the UK guidance level of 40 mg/day from supplements (Food Standards Scotland), which is not a formal UL"
+  },
+  "topFoodSources": [
+    {
+      "food": "Milk, whole, buffalo (cow 0.11)",
+      "veg": true,
+      "per100g": 0.13,
+      "servingG": 206,
+      "servingLabel": "1 glass (200 ml)",
+      "perServing": 0.27
+    },
+    {
+      "food": "Goat liver",
+      "veg": false,
+      "per100g": 0.37,
+      "servingG": 75,
+      "servingLabel": "1 small katori, raw weight",
+      "perServing": 0.28
+    },
+    {
+      "food": "Amaranth leaves, red and green (chauli)",
+      "veg": true,
+      "per100g": 0.22,
+      "servingG": 100,
+      "servingLabel": "1 katori cooked (100 g raw)",
+      "perServing": 0.22
+    },
+    {
+      "food": "Egg, hen, whole",
+      "veg": false,
+      "per100g": 0.19,
+      "servingG": 100,
+      "servingLabel": "2 eggs",
+      "perServing": 0.19
+    },
+    {
+      "food": "Goat meat (mutton), shoulder",
+      "veg": false,
+      "per100g": 0.17,
+      "servingG": 100,
+      "servingLabel": "1 small portion, raw weight",
+      "perServing": 0.17
+    },
+    {
+      "food": "Chicken, leg, skinless",
+      "veg": false,
+      "per100g": 0.13,
+      "servingG": 100,
+      "servingLabel": "1 leg piece, raw weight",
+      "perServing": 0.13
+    },
+    {
+      "food": "Curd (dahi), est. from IFCT cow milk",
+      "veg": true,
+      "per100g": 0.11,
+      "servingG": 100,
+      "servingLabel": "1 katori",
+      "perServing": 0.11
+    },
+    {
+      "food": "Drumstick leaves (moringa)",
+      "veg": true,
+      "per100g": 0.45,
+      "servingG": 25,
+      "servingLabel": "about 1 cup loose leaves",
+      "perServing": 0.11
+    },
+    {
+      "food": "Fenugreek leaves (methi)",
+      "veg": true,
+      "per100g": 0.22,
+      "servingG": 50,
+      "servingLabel": "1 small bunch",
+      "perServing": 0.11
+    },
+    {
+      "food": "Wheat flour, whole (atta)",
+      "veg": true,
+      "per100g": 0.15,
+      "servingG": 60,
+      "servingLabel": "2 medium rotis",
+      "perServing": 0.09
+    },
+    {
+      "food": "Green gram, whole (sabut moong)",
+      "veg": true,
+      "per100g": 0.27,
+      "servingG": 30,
+      "servingLabel": "1 katori cooked or 3/4 cup sprouts",
+      "perServing": 0.08
+    },
+    {
+      "food": "Bajra (pearl millet)",
+      "veg": true,
+      "per100g": 0.2,
+      "servingG": 40,
+      "servingLabel": "1 bhakri",
+      "perServing": 0.08
+    }
+  ],
+  "goodSourceDishes": [
+    {
+      "dishNumber": 31,
+      "dishName": "Indian-style Overnight Oats"
+    },
+    {
+      "dishNumber": 14,
+      "dishName": "Egg Bhurji"
+    },
+    {
+      "dishNumber": 17,
+      "dishName": "Palak Paneer"
+    },
+    {
+      "dishNumber": 82,
+      "dishName": "Methi Chicken"
+    },
+    {
+      "dishNumber": 21,
+      "dishName": "Masala Omelette"
+    },
+    {
+      "dishNumber": 11,
+      "dishName": "Aloo Paratha"
+    },
+    {
+      "dishNumber": 22,
+      "dishName": "Kadai Paneer"
+    },
+    {
+      "dishNumber": 46,
+      "dishName": "Methi Thepla"
+    },
+    {
+      "dishNumber": 8,
+      "dishName": "Chole (Chana Masala)"
+    },
+    {
+      "dishNumber": 12,
+      "dishName": "Rajma Chawal"
+    }
+  ],
+  "deficiencyRiskIndia": "high",
+  "absorptionBoosters": [
+    "daily milk, curd or buttermilk",
+    "eggs and meat if eaten",
+    "whole pulses instead of only split dals",
+    "green leafy vegetables such as amaranth, methi and drumstick leaves",
+    "storing milk and curd in the dark (fridge, opaque or steel containers)",
+    "pressure cooking pulses in measured water and using the cooking water",
+    "spreading intake through the day rather than one large dose"
+  ],
+  "absorptionBlockers": [
+    "sunlight or bright light on milk and curd in clear bottles or pouches",
+    "baking soda in cooking water",
+    "boiling vegetables in excess water and discarding it",
+    "cooking rice in excess water and draining it",
+    "alcohol",
+    "some medicines (phenothiazine antipsychotics, tricyclic antidepressants, barbiturates, probenecid)"
+  ],
+  "logPresets": [
+    {
+      "label": "B-complex capsule (riboflavin 10 mg)",
+      "amount": 10,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 10,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Neurobion Forte-type tablet (riboflavin 10 mg)",
+      "amount": 10,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 10,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Riboflavin 100 mg tablet",
+      "amount": 100,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 100,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Riboflavin 400 mg (doctor-advised, migraine)",
+      "amount": 400,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 400,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Multivitamin (enter label value)",
+      "amount": null,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": null,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Custom amount in mcg",
+      "amount": null,
+      "unit": "mcg",
+      "toMainFactor": 0.001,
+      "factorSource": "alt_units",
+      "mainAmount": null,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    }
+  ],
+  "warnings": [
+    "No formal upper limit is set for riboflavin; UK guidance considers up to 40 mg per day from supplements unlikely to cause harm.",
+    "Bright yellow urine after B-complex or riboflavin supplements is expected and harmless.",
+    "Check labels for duplicate B-complex products; these also contain vitamin B6 and niacin, which matter more for safety.",
+    "Milk and curd lose riboflavin quickly in sunlight; store them in the fridge or in opaque containers.",
+    "Using riboflavin for migraine should be decided with a doctor.",
+    "People who are pregnant or breastfeeding, vegan, on dialysis, drink alcohol heavily or take regular medicines should ask their doctor about B vitamins.",
+    "General information, not medical advice. Check with a doctor before starting supplements."
+  ],
+  "conditionAdjustments": [
+    {
+      "profileId": "P22 Pregnancy",
+      "change": "raise target",
+      "value": 2.7,
+      "unit": "mg/day",
+      "source": "ICMR-NIN 2020 RDA via secondary summary (lower confidence); EFSA PRI 1.9, US RDA 1.4"
+    },
+    {
+      "profileId": "P23 Breastfeeding",
+      "change": "raise target (0-6 months; 6-12 month value not found, keep same)",
+      "value": 3,
+      "unit": "mg/day",
+      "source": "ICMR-NIN 2020 RDA via secondary summary (lower confidence); EFSA PRI 2.0, US RDA 1.6"
+    },
+    {
+      "profileId": "P27 Muscle gain",
+      "change": "no sports-specific value; use ICMR moderate or heavy activity RDA if usual activity level is moderate or heavy",
+      "value": null,
+      "unit": "mg/day",
+      "source": "ICMR-NIN 2020 activity-based RDAs (men 2.5/3.2, women 2.4/3.1)"
+    },
+    {
+      "profileId": "P28 Body recomposition",
+      "change": "no sports-specific value; use ICMR activity-level RDA",
+      "value": null,
+      "unit": "mg/day",
+      "source": "ICMR-NIN 2020 activity-based RDAs"
+    },
+    {
+      "profileId": "P29 Endurance and running",
+      "change": "no sports-specific value; use ICMR moderate or heavy activity RDA; athletes listed as an at-risk group",
+      "value": null,
+      "unit": "mg/day",
+      "source": "ICMR-NIN 2020; Nordic Nutrition Recommendations 2023; StatPearls"
+    },
+    {
+      "profileId": "P31 Healthy ageing (50+)",
+      "change": "no change found; older adults listed as at risk, highlight dairy, eggs and greens",
+      "value": null,
+      "unit": "mg/day",
+      "source": "Nordic Nutrition Recommendations 2023; NASEM 1998 (same value after 50)"
+    },
+    {
+      "profileId": "P18 Lactose intolerance",
+      "change": "no change in target; suggest curd, lactose-free milk, eggs, greens and whole pulses to replace milk",
+      "value": null,
+      "unit": "mg/day",
+      "source": "IFCT 2017 food values; no source for a changed target"
+    },
+    {
+      "profileId": "P33 Jain diet",
+      "change": "no change found; dairy, leafy greens and pulses are allowed and are the main sources",
+      "value": null,
+      "unit": "mg/day",
+      "source": "IFCT 2017 food values; no source for a changed target"
+    },
+    {
+      "profileId": "P11 Iron-deficiency anaemia",
+      "change": "no change in target; low riboflavin can worsen anaemia, so highlight riboflavin-rich foods",
+      "value": null,
+      "unit": "mg/day",
+      "source": "RIBOFEM trial, Am J Clin Nutr 2011"
+    },
+    {
+      "profileId": "P3 High blood pressure (hypertension)",
+      "change": "no change in target; research only: 1.6 mg/day lowered systolic BP by about 5.6 mmHg in MTHFR 677TT carriers",
+      "value": null,
+      "unit": "mg/day",
+      "source": "Wilson et al., Hypertension 2013"
+    },
+    {
+      "profileId": "P13 Chronic kidney disease (early stages)",
+      "change": "no change found for early stages; dialysis patients may need B-vitamin supplements prescribed by the kidney team (requires doctor input)",
+      "value": null,
+      "unit": "mg/day",
+      "source": "UK Renal Association guidance as quoted in an NHS renal vitamin prescribing guide"
+    },
+    {
+      "profileId": "P25 Fat loss",
+      "change": "no change; keep the absolute target on lower-calorie diets",
+      "value": null,
+      "unit": "mg/day",
+      "source": "No source gives a change; ICMR scales by usual activity level, not diet calories"
+    },
+    {
+      "profileId": "P9 Hypothyroidism",
+      "change": "No change found",
+      "value": null,
+      "unit": "mg/day",
+      "source": "Not found"
+    }
+  ],
+  "lastResearched": "2026-10-14",
+  "versions": [
+    {
+      "date": "2026-10-14",
+      "file": "FitPlate_Nutrients_2026-10-14.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3)",
+    "upperLimit": "official safety limit (D3, lower on conflict)",
+    "topFoodSources": "union; per100g official (D3)",
+    "logPresets": "union by label (newest), converted with own file factors",
+    "appDefaultTarget": "newest, kept only where it equals the ICMR row",
+    "lists": "union",
+    "warnings": "union (never dropped)",
+    "text": "newest"
+  },
+  "mergeNotes": [],
+  "needsReview": [
+    "app_default_target.age_60_plus = 2 has no ICMR row to match (age_60_plus: \"ICMR-NIN 2020 value for 60+ not found; app applies sedentary adult RDA (2.0 mg men, 1.9 mg women)\"); set to null"
+  ]
+}

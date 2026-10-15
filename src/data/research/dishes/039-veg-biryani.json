@@ -1,0 +1,690 @@
+{
+  "id": "039-veg-biryani",
+  "number": 39,
+  "name": "Veg Biryani",
+  "cuisine": "Mughlai / Hyderabadi-style (made across India; a fixture of Mumbai biryani chains, Udupi and Punjabi restaurant menus)",
+  "dietType": "veg",
+  "mealType": [
+    "lunch",
+    "dinner"
+  ],
+  "difficulty": "Intermediate",
+  "prepMin": 15,
+  "cookMin": 45,
+  "servings": 1,
+  "ingredients": [
+    {
+      "ingredientId": "basmati-rice-everyday-grade",
+      "name": "Basmati rice",
+      "quantity": 80,
+      "unit": "g",
+      "householdMeasure": "About ½ cup minus 1 tbsp"
+    },
+    {
+      "ingredientId": null,
+      "name": "Water (for boiling the rice, dum method; drained)",
+      "quantity": 1,
+      "unit": "l",
+      "householdMeasure": "4 cups"
+    },
+    {
+      "ingredientId": null,
+      "name": "Water (pressure-cooker shortcut only, instead of the above)",
+      "quantity": 150,
+      "unit": "ml",
+      "householdMeasure": "About ⅔ cup"
+    },
+    {
+      "ingredientId": "onion",
+      "name": "Onion (pyaz)",
+      "quantity": 60,
+      "unit": "g",
+      "householdMeasure": "1 small onion: ½ thinly sliced for frying, ½ finely chopped"
+    },
+    {
+      "ingredientId": null,
+      "name": "Vegetable oil (sunflower or groundnut)",
+      "quantity": 10,
+      "unit": "ml",
+      "householdMeasure": "2 tsp"
+    },
+    {
+      "ingredientId": "ghee-cow",
+      "name": "Ghee (clarified butter)",
+      "quantity": 5,
+      "unit": "g",
+      "householdMeasure": "1 tsp"
+    },
+    {
+      "ingredientId": "carrot",
+      "name": "Carrot (gajar)",
+      "quantity": 30,
+      "unit": "g",
+      "householdMeasure": "⅓ medium carrot, cut in 1 cm cubes (about 3 tbsp)"
+    },
+    {
+      "ingredientId": "french-beans",
+      "name": "French beans (fansi)",
+      "quantity": 25,
+      "unit": "g",
+      "householdMeasure": "5–6 beans, cut in 2 cm pieces"
+    },
+    {
+      "ingredientId": "green-peas-frozen",
+      "name": "Green peas (matar), fresh or frozen",
+      "quantity": 20,
+      "unit": "g",
+      "householdMeasure": "2 tbsp"
+    },
+    {
+      "ingredientId": "cauliflower",
+      "name": "Cauliflower (phool gobi)",
+      "quantity": 30,
+      "unit": "g",
+      "householdMeasure": "3–4 small florets"
+    },
+    {
+      "ingredientId": "potato",
+      "name": "Potato (aloo)",
+      "quantity": 30,
+      "unit": "g",
+      "householdMeasure": "¼ medium potato, cut in 2 cm cubes"
+    },
+    {
+      "ingredientId": "tomato",
+      "name": "Tomato (tamatar)",
+      "quantity": 40,
+      "unit": "g",
+      "householdMeasure": "½ small tomato, chopped"
+    },
+    {
+      "ingredientId": "curd-plain",
+      "name": "Curd (dahi), plain, whisked",
+      "quantity": 50,
+      "unit": "g",
+      "householdMeasure": "3 tbsp"
+    },
+    {
+      "ingredientId": "ginger-garlic-paste",
+      "name": "Ginger-garlic paste (adrak-lehsun paste)",
+      "quantity": 5,
+      "unit": "g",
+      "householdMeasure": "1 tsp"
+    },
+    {
+      "ingredientId": "green-chilli",
+      "name": "Green chilli (hari mirch)",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "1 small chilli, slit"
+    },
+    {
+      "ingredientId": "biryani-masala",
+      "name": "Biryani masala (or garam masala)",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "1 tsp"
+    },
+    {
+      "ingredientId": "red-chilli-powder",
+      "name": "Red chilli powder (lal mirch)",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "¼ tsp"
+    },
+    {
+      "ingredientId": "turmeric-powder",
+      "name": "Turmeric (haldi)",
+      "quantity": 0.3,
+      "unit": "g",
+      "householdMeasure": "A pinch"
+    },
+    {
+      "ingredientId": "bay-leaf",
+      "name": "Whole spices: bay leaf (tej patta) 1, green cardamom (elaichi) 2, cloves (laung) 2, cinnamon (dalchini) ½-inch, caraway/shahi jeera ¼ tsp",
+      "quantity": 2,
+      "unit": "g",
+      "householdMeasure": "As listed"
+    },
+    {
+      "ingredientId": "mint-leaves",
+      "name": "Mint leaves (pudina)",
+      "quantity": 4,
+      "unit": "g",
+      "householdMeasure": "About 15 leaves, torn"
+    },
+    {
+      "ingredientId": "coriander-leaves",
+      "name": "Coriander leaves (dhania), chopped",
+      "quantity": 4,
+      "unit": "g",
+      "householdMeasure": "1 tbsp"
+    },
+    {
+      "ingredientId": "milk-toned",
+      "name": "Milk (for saffron milk)",
+      "quantity": 20,
+      "unit": "ml",
+      "householdMeasure": "4 tsp"
+    },
+    {
+      "ingredientId": "saffron",
+      "name": "Saffron (kesar)",
+      "quantity": 4,
+      "unit": null,
+      "householdMeasure": "A pinch"
+    },
+    {
+      "ingredientId": "lemon",
+      "name": "Lemon juice (nimbu)",
+      "quantity": 5,
+      "unit": "ml",
+      "householdMeasure": "1 tsp"
+    },
+    {
+      "ingredientId": "salt",
+      "name": "Salt (namak)",
+      "quantity": 2,
+      "unit": "g",
+      "householdMeasure": "1 tbsp in the rice water (mostly drained away) + ¼ tsp in the masala"
+    }
+  ],
+  "equipment": [
+    "Small heavy-bottomed pot or kadai (1–1.5 litre) with a tight lid, for the masala and dum",
+    "Medium saucepan (2 litre) for boiling the rice",
+    "Sieve or colander for draining the rice",
+    "Tight seal for dum: aluminium foil under the lid, or a wrung-out damp kitchen towel under the lid (keep the ends away from the flame), or a strip of atta dough around the rim",
+    "Tawa (flat griddle) to put under the pot during dum",
+    "Pressure cooker (2–3 litre), only for the shortcut",
+    "Mixing bowl for soaking; chopping board and knife; measuring cup and spoons; flat spatula; a small cup for saffron milk"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "title": "Rinse the rice",
+      "text": "Put 80 g (about ½ cup minus 1 tbsp) basmati in a bowl, cover with water, swirl gently with your fingers and drain. Repeat 2–3 times.",
+      "timerSec": 120,
+      "tip": "Swirl, don't rub hard; basmati grains break easily.",
+      "visualCue": "The water is nearly clear, not milky.",
+      "cameraCheck": "The rinsed rice in the bowl",
+      "videoShot": "Fingers swirling the rice, then cloudy water poured off."
+    },
+    {
+      "n": 2,
+      "title": "Soak the rice",
+      "text": "Cover the rice with fresh water and leave it for 30 min.",
+      "timerSec": 1800,
+      "tip": null,
+      "visualCue": "The grains turn opaque white and look slightly fatter.",
+      "cameraCheck": "The rice soaking in water",
+      "videoShot": "Water poured over the rice in the bowl."
+    },
+    {
+      "n": 3,
+      "title": "Warm the saffron milk",
+      "text": "Warm 20 ml (4 tsp) milk for 10 seconds and drop in 4–5 saffron strands. Set aside.",
+      "timerSec": 60,
+      "tip": "No saffron? Skip it, or use a pinch of turmeric in the milk for colour only.",
+      "visualCue": "The milk starts turning pale orange within a few minutes.",
+      "cameraCheck": "The cup of saffron milk",
+      "videoShot": "Saffron threads dropping into warm milk."
+    },
+    {
+      "n": 4,
+      "title": "Cut the vegetables",
+      "text": "Cut the carrot (30 g) and potato (30 g) into 1–2 cm cubes, the beans (25 g) into 2 cm pieces, and break the cauliflower (30 g) into small florets. Keep the peas (20 g) ready.",
+      "timerSec": 300,
+      "tip": null,
+      "visualCue": "Even, bite-sized pieces, about the same size so they cook together.",
+      "cameraCheck": "The cut vegetables on the board",
+      "videoShot": "The knife dicing the carrot."
+    },
+    {
+      "n": 5,
+      "title": "Slice and chop the onion and tomato",
+      "text": "Thinly slice half the onion (30 g) for frying; finely chop the other half (30 g). Chop the tomato (40 g). Slit the green chilli.",
+      "timerSec": 180,
+      "tip": null,
+      "visualCue": "Thin, even onion slices; small tomato pieces.",
+      "cameraCheck": "The sliced and chopped onion side by side",
+      "videoShot": "Thin onion slices falling from the knife."
+    },
+    {
+      "n": 6,
+      "title": "Marinate the vegetables",
+      "text": "In a bowl, mix the vegetables with 50 g (3 tbsp) whisked curd, 1 tsp ginger-garlic paste, ½ tsp of the biryani masala, ¼ tsp chilli powder, a pinch of turmeric, half the mint and ¼ tsp salt. Leave while the rice soaks.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "All the vegetables are coated in a pale orange curd mix.",
+      "cameraCheck": "The marinated vegetables in the bowl",
+      "videoShot": "A spoon folding curd through the vegetables."
+    },
+    {
+      "n": 7,
+      "title": "Heat the oil",
+      "text": "Put the small heavy pot on medium heat with 2 tsp (10 ml) oil.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "The oil shimmers and flows thinly; it does not smoke.",
+      "cameraCheck": "The oil in the pot",
+      "videoShot": "Oil swirling in the pot."
+    },
+    {
+      "n": 8,
+      "title": "Fry the sliced onion golden (birista)",
+      "text": "Add the 30 g sliced onion. Fry on medium, stirring often, then on medium-low as it colours.",
+      "timerSec": 480,
+      "tip": "Onions go from brown to burnt in under a minute at the end; lower the heat once they start colouring.",
+      "visualCue": "Deep golden-brown, crisp-edged slices with a sweet smell. Not black.",
+      "cameraCheck": "The golden onions in the pot",
+      "videoShot": "Onion slices turning from pale to golden."
+    },
+    {
+      "n": 9,
+      "title": "Lift out the fried onions",
+      "text": "Take the fried onions out with a slotted spoon onto a plate, pressing them against the side so most of the oil stays in the pot.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "The onions crisp up further as they cool.",
+      "cameraCheck": "The fried onions on the plate",
+      "videoShot": "The slotted spoon lifting out the onions."
+    },
+    {
+      "n": 10,
+      "title": "Put the rice water on to boil",
+      "text": "Bring 1 litre water to a rolling boil in the saucepan with 1 tbsp salt, 1 bay leaf, 1 cardamom, 1 clove and a few drops of the lemon juice.",
+      "timerSec": 360,
+      "tip": "The water should taste salty like the sea; most of this salt drains away with the water.",
+      "visualCue": "Big rolling bubbles.",
+      "cameraCheck": "The boiling water with the whole spices",
+      "videoShot": "Spices dropping into rolling water."
+    },
+    {
+      "n": 11,
+      "title": "Temper the whole spices",
+      "text": "Back in the pot with the leftover oil, add the remaining cardamom, clove, cinnamon and ¼ tsp shahi jeera on medium heat.",
+      "timerSec": 20,
+      "tip": null,
+      "visualCue": "The spices sizzle and the cardamom puffs slightly; strong aroma.",
+      "cameraCheck": "The spices in the oil",
+      "videoShot": "Whole spices crackling in oil."
+    },
+    {
+      "n": 12,
+      "title": "Cook the chopped onion",
+      "text": "Add the 30 g chopped onion and the green chilli. Cook on medium, stirring.",
+      "timerSec": 180,
+      "tip": null,
+      "visualCue": "Soft and light golden.",
+      "cameraCheck": "The softened onion",
+      "videoShot": "The spatula stirring the onion."
+    },
+    {
+      "n": 13,
+      "title": "Add the tomato",
+      "text": "Add the chopped tomato and cook until soft.",
+      "timerSec": 180,
+      "tip": null,
+      "visualCue": "The tomato breaks down and looks mushy.",
+      "cameraCheck": "The pot after the tomato has softened",
+      "videoShot": "The tomato being pressed down with the spatula."
+    },
+    {
+      "n": 14,
+      "title": "Add the marinated vegetables",
+      "text": "Turn the heat to low, add the vegetables with all the marinade, and stir.",
+      "timerSec": 60,
+      "tip": "Lower the heat before the curd goes in; high heat curdles it.",
+      "visualCue": "The curd mixes in without splitting into white flecks.",
+      "cameraCheck": "The vegetables in the pot",
+      "videoShot": "The marinated vegetables sliding into the pot."
+    },
+    {
+      "n": 15,
+      "title": "Cook the vegetable masala",
+      "text": "Add 3 tbsp water, cover and cook on low until the vegetables are just tender, stirring once or twice. Stir in the remaining ½ tsp biryani masala.",
+      "timerSec": 480,
+      "tip": "The vegetables keep cooking during dum, so stop slightly before fully soft.",
+      "visualCue": "A knife goes into the potato with a little resistance; thick, moist masala, not watery.",
+      "cameraCheck": "A potato cube pierced with a knife",
+      "videoShot": "The lid lifting off the bubbling vegetable masala."
+    },
+    {
+      "n": 16,
+      "title": "Drain the soaked rice",
+      "text": "Drain the rice from step 2 in a sieve.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "Opaque, swollen grains.",
+      "cameraCheck": "The drained rice in the sieve",
+      "videoShot": "Water draining from the rice."
+    },
+    {
+      "n": 17,
+      "title": "Boil the rice",
+      "text": "Tip the rice into the rolling water. Stir gently once.",
+      "timerSec": 10,
+      "tip": null,
+      "visualCue": "The water stops boiling for a moment, then returns to a boil.",
+      "cameraCheck": "The rice in the boiling water",
+      "videoShot": "Rice sliding into rolling water."
+    },
+    {
+      "n": 18,
+      "title": "Cook the rice to about 75%",
+      "text": "Boil uncovered on high.",
+      "timerSec": 240,
+      "tip": "This is the most important step. Fully cooked rice turns mushy during dum; too raw stays hard.",
+      "visualCue": "Press a grain between your fingers: it breaks into pieces with a firm white core. The grains have lengthened.",
+      "cameraCheck": "One grain pressed between your fingers",
+      "videoShot": "A spoon lifting a few grains, then fingers pressing one."
+    },
+    {
+      "n": 19,
+      "title": "Drain the rice",
+      "text": "Drain the rice straight away into the sieve; leave the whole spices in it.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "Steaming, separate long grains.",
+      "cameraCheck": "The drained rice in the sieve",
+      "videoShot": "The pan tipped into the sieve with a cloud of steam."
+    },
+    {
+      "n": 20,
+      "title": "Spread the masala",
+      "text": "Level the vegetable masala in the pot (about 2–3 cm deep). Sprinkle a third of the fried onions and some chopped coriander over it.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "An even masala layer covering the base.",
+      "cameraCheck": "The levelled masala layer",
+      "videoShot": "Fried onions scattered on the masala."
+    },
+    {
+      "n": 21,
+      "title": "Layer the rice",
+      "text": "Spoon the rice over the masala in an even layer. Do not press it down.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "A loose white layer covering the masala completely.",
+      "cameraCheck": "The rice layer in the pot",
+      "videoShot": "Rice spooned gently over the masala."
+    },
+    {
+      "n": 22,
+      "title": "Top the rice",
+      "text": "Scatter the remaining mint, coriander and fried onions on top. Drizzle the saffron milk in streaks, the remaining lemon juice, and 1 tsp ghee.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Streaks of orange saffron milk, green herbs and brown onions on the white rice.",
+      "cameraCheck": "The topped rice before sealing",
+      "videoShot": "Saffron milk drizzled across the rice."
+    },
+    {
+      "n": 23,
+      "title": "Seal the pot",
+      "text": "Cover the pot tightly with foil, then the lid (or a damp cloth under the lid).",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "No gaps around the rim.",
+      "cameraCheck": "The sealed pot",
+      "videoShot": "Foil pressed down around the rim."
+    },
+    {
+      "n": 24,
+      "title": "Start the dum",
+      "text": "Put a tawa on the burner and heat it on medium for 2 min. Set the pot on the tawa and turn the flame to the lowest.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "A drop of water on the tawa sizzles before you put the pot on.",
+      "cameraCheck": "The pot sitting on the tawa",
+      "videoShot": "The sealed pot lowered onto the tawa."
+    },
+    {
+      "n": 25,
+      "title": "Dum on low",
+      "text": "Cook on the lowest flame without opening.",
+      "timerSec": 900,
+      "tip": "A burnt smell means the heat is too high; switch off at once.",
+      "visualCue": "Steam pushes at the foil; a strong spice-and-mint smell fills the kitchen. No burnt smell.",
+      "cameraCheck": "The pot on the tawa with the flame at its lowest",
+      "videoShot": "The low blue flame under the tawa."
+    },
+    {
+      "n": 26,
+      "title": "Rest",
+      "text": "Switch off and leave the pot sealed.",
+      "timerSec": 300,
+      "tip": null,
+      "visualCue": "–",
+      "cameraCheck": "The pot off the heat, still sealed",
+      "videoShot": "The flame turning off."
+    },
+    {
+      "n": 27,
+      "title": "Open and serve",
+      "text": "Open the pot. Use a spoon to dig down to the bottom and lift out the layers together onto the plate, so each spoonful has white rice, saffron rice and masala.",
+      "timerSec": 60,
+      "tip": "Vegetables release water, so 150 ml for 80 g soaked basmati is enough. More water makes it mushy.",
+      "visualCue": "Separate, cooked grains with vegetables mixed through.",
+      "cameraCheck": "The served plate",
+      "videoShot": "A fork fluffing the rice and onions sprinkled on top."
+    }
+  ],
+  "nutritionPerServing": {
+    "kcal": 595,
+    "proteinG": 13.2,
+    "carbsG": 94.1,
+    "fatG": 18.9,
+    "fibreG": 8.4
+  },
+  "microNutrientsEstimate": {
+    "values": {
+      "pantothenic-acid": 0.2,
+      "riboflavin": 0.1,
+      "vitamin-a": 362.9,
+      "vitamin-b6": 0,
+      "vitamin-c": 31.2,
+      "vitamin-k": 19.8
+    },
+    "coveragePct": 13,
+    "basis": "partial estimate from ingredient quantities"
+  },
+  "asOrdered": {
+    "price": {
+      "priceHistory": [
+        {
+          "date": "2026-10-11",
+          "min": 220,
+          "max": 300,
+          "avg": 270,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-10-11.md"
+        }
+      ],
+      "currentEstimate": {
+        "min": 220,
+        "max": 300,
+        "avg": 270
+      },
+      "method": "single",
+      "trend": "unknown",
+      "change30dPct": null,
+      "lastObserved": "2026-10-11",
+      "stale": false,
+      "seasonal": false,
+      "listingCount": 7,
+      "platforms": [
+        "Swiggy",
+        "Zomato"
+      ],
+      "outOfStock": false,
+      "confirmed": true,
+      "checkNotes": []
+    },
+    "nutrition": {
+      "calories": {
+        "value": 687,
+        "source": null
+      },
+      "protein": {
+        "value": 14.44,
+        "source": null
+      },
+      "carbs": {
+        "value": 108.62,
+        "source": null
+      },
+      "fat": {
+        "value": 21.29,
+        "source": null
+      },
+      "fibre": {
+        "value": null,
+        "source": null
+      }
+    },
+    "restaurantsSampled": 10,
+    "platforms": [
+      "Swiggy",
+      "Zomato",
+      "magicpin"
+    ]
+  },
+  "orderPrice": {
+    "priceHistory": [
+      {
+        "date": "2026-10-11",
+        "min": 220,
+        "max": 300,
+        "avg": 270,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-10-11.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 220,
+      "max": 300,
+      "avg": 270
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-11",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 7,
+    "platforms": [
+      "Swiggy",
+      "Zomato"
+    ],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
+  },
+  "healthiness": {
+    "score": 6,
+    "restaurantScore": 4,
+    "reasons": [
+      "a good amount of vegetables (about 135 g) and curd, only about 3 tsp of fat in total, no deep-frying, and decent fibre for a rice dish (about 8 g). Points come off because it is mostly white basmati (high glycaemic load), protein is modest (about 13 g), and sodium is moderate (about 790 mg). Restaurant versions typically use much more ghee or oil and deep-fried birista, larger rice portions (the one published panel is 687 kcal, 21 g fat for 500 ml), and more salt."
+    ]
+  },
+  "researchRating": {
+    "score": 4.3,
+    "basis": "veg biryani is hugely popular (Zomato reported delivering about 2 million veg biryanis in 2020; Swiggy reports note vegetarians order one every few seconds) and recipe ratings are very high on large samples (Hebbar's Kitchen Hyderabadi veg dum biryani 4.98/5 from 308 votes). It loses points because of the long-running internet joke and debate that \"veg biryani is just pulao\", and because many restaurant versions are seen as oily or bland."
+  },
+  "storage": "Refrigerate within 1–2 hours in an airtight box; eat within 1–2 days (cooked rice should not sit at room temperature). Freezes for up to 1 month in a sealed box. Reheat with 1–2 tbsp water sprinkled over, covered, in the microwave (1½–2 min, stirring once) or in a covered pan on low for 5 min, until steaming hot right through. Reheat only once.",
+  "leftoverRemix": "Biryani tikki with a crunchy crust. Mash 1 cup leftover biryani with 2 tbsp roasted besan or 1 mashed boiled potato and a little chopped coriander. Shape into 4 flat patties, coat in rava, and shallow-fry in 2 tsp oil on a tawa, 3 min per side, until crisp. Serve with mint chutney or ketchup as a tea-time snack.",
+  "burnOff": "about 8.5 km of running (595 ÷ 70 kcal/km, for a 70 kg adult), or about 12 km of brisk walking (about 2 hr 20 min at 5 km/h, using about 50 kcal/km for walking) (est.).",
+  "sources": [
+    "Hebbar's Kitchen, Hyderabadi Veg Dum Biryani (serves 4; 4.98/5 from 308 votes; rice boiled about 80% cooked, 20 min dum): https://hebbarskitchen.com/hyderabadi-veg-biryani-veg-dum-biryani/",
+    "Hebbar's Kitchen, Veg biriyani in banana leaf (serves 3; 802 kcal per serving as listed): https://hebbarskitchen.com/wprm_print/veg-biriyani-recipe-vegetable-biryani-recipe-in-banana-leaf-veg-dum-biryani",
+    "Hebbar's Kitchen, Pressure cooker biryani (veg biriyani in cooker): https://hebbarskitchen.com/wprm_print/pressure-cooker-biryani-recipe-veg-biriyani-in-cooker",
+    "Swasthi's Recipes (Indian Healthy Recipes), Veg Biryani (one-pot, pressure cooker, Instant Pot and dum versions): https://www.indianhealthyrecipes.com/vegetable-biryani/",
+    "Veg Recipes of India, Pressure Cooker Biryani (Vegetarian): https://www.vegrecipesofindia.com/pressure-cooker-biryani/",
+    "Cook Click n Devour, Hyderabadi veg dum biryani (1 cup basmati, 2 cups vegetables, ¼ cup curd, 2 tbsp ghee; serves 4, 429 kcal): https://www.cookclickndevour.com/wprm_print/veg-biryani-recipe-how-to-make-hyderabadi-veg-biryani-recipe-veg-dum-biryani-recipe",
+    "Cook Click n Devour, Restaurant-style vegetable biryani (serves 3, 1027 kcal): https://www.cookclickndevour.com/wprm_print/vegetable-biryani-recipe-how-to-make-restaurant-style-veg-biryani-recipe",
+    "Cook With Kushi, Vegetable biryani (1 cup basmati, serves 4, 411 kcal): https://www.cookwithkushi.com/wprm_print/vegetable-biryani-easy-veg-biryani",
+    "Yummy Tummy Aarthi, Vegetable biryani (2 cups basmati, serves 5, 318 kcal): https://www.yummytummyaarthi.com/wprm_print/recipe/156810",
+    "Cooking and Me, Hyderabadi vegetable dum biryani (1 cup basmati soaked 30 min): https://www.cookingandme.com/2016/01/04/hyderabadi-vegetable-dum-biryani-vegetable-dum-biryani-recipe/",
+    "Curry Trail, Vegetable dum biryani (rice ¾ cooked before layering; soak 10–15 min): https://www.currytrail.in/wprm_print/29948",
+    "Simple Indian Recipes, Vegetable Dum Biryani: https://simpleindianrecipes.com/More/Vegetable-Dum-Biryani.aspx",
+    "Onmanorama, Are vegetable pulao and veg biryani the same?: https://www.onmanorama.com/food/features/2023/12/10/veg-pulao-vegetarian-biryani-difference.html",
+    "Deccan Herald, Shades of the humble biryani: https://www.deccanherald.com/india/karnataka/bengaluru/shades-humble-biryani-702238.html",
+    "Wikipedia, Biryani: https://en.wikipedia.org/wiki/Biryani",
+    "India Gate Foods, Biryani or Pulao – what's the catch? (draining vs absorption method): https://www.indiagatefoods.com/food-stories/articles/biryani-or-pulao-what-s-the-catch",
+    "The News Minute, Zomato 2020 (veg biryani order count): https://www.thenewsminute.com/atom/zomato-2020-bengaluru-man-places-most-number-orders-almost-4-day-140552",
+    "USDA FoodData Central: https://fdc.nal.usda.gov/",
+    "IFCT 2017, Indian Food Composition Tables (ICMR-NIN): https://www.nin.res.in/",
+    "magicpin, Mumbai Fast Food, Mahakali, Andheri East (Veg Biryani 156): https://magicpin.in/Mumbai/Mahakali/Restaurant/Mumbai-Fast-Food/store/a36ab/menu",
+    "Swiggy, Best Veg Biryani Restaurants in Mumbai (Sahara ₹220, Veg Meals By LunchBox ₹239, Deepak Borivali ₹280, Surbhi ₹289 / ₹340): https://www.swiggy.com/city/mumbai/veg-biryani-dish-restaurants",
+    "Swiggy, Best Biryani Restaurants in Mumbai (Charcoal and mini bowls, variants not used): https://www.swiggy.com/city/mumbai/biryani-cuisine-restaurants",
+    "Swiggy, Borivali Biryani Centre, Mira Road (Veg Dum Biryani ₹265): https://www.swiggy.com/restaurants/mumbai/mira-road/borivali-biryani-centre-37205/dineout/menu and https://www.swiggy.com/menu/37205",
+    "Swiggy, Balaji Pure Veg, Mira Road (Veg Biryani ₹280): https://www.swiggy.com/menu/95544",
+    "Swiggy, Mallow Garden Restro, Hiranandani, Thane (₹440–459, dropped): https://www.swiggy.com/restaurants/mallow-restro-bar-brahmand-phase-4-thane-hiranandani-mumbai-652904",
+    "Swiggy, Bikkgane Biryani, Station Road, Chembur (Veg Dum Biryani Bowl 500 ml ₹339; 687 kcal, 14.44 g protein, 108.62 g carbs, 21.29 g fat): https://www.swiggy.com/city/mumbai/bikkgane-biryani-station-road-chembur-rest866739",
+    "Swiggy, Bikkgane Biryani, Mira Road (other bowls' nutrition, not used): https://www.swiggy.com/city/mumbai/bikkgane-biryani-mira-road-rest616340",
+    "Zomato, Biryani By Kilo, Ghatkopar West / Vikhroli (single Veg Hyderabadi ₹299; ½ kg ₹399 serves 1–2; 1 kg ₹699): https://www.zomato.com/mumbai/biryani-by-kilo-vikhroli/order",
+    "Zomato, Veg biryani delivery in Dadar West (cost-for-one only, not used): https://www.zomato.com/mumbai/delivery-in-dadar-west/dish-veg-biryani",
+    "Swiggy, Behrouz Biryani, Yeshwanthpur, Bengaluru (Subz-e-Biryani ₹339, out of city, not used): https://www.swiggy.com/city/bangalore/behrouz-biryani-yeshwanthpur-rest239958",
+    "magicpin blog, Behrouz Biryani price list (regular ₹299 / kilo ₹599, not used): https://magicpin.com/blog/best-behrouz-biryani-price-list"
+  ],
+  "allergens": [
+    "peanut",
+    "milk"
+  ],
+  "dietClaims": [],
+  "fasting": {
+    "navratri": {
+      "status": "no",
+      "reason": "contains rice, onion, garlic and table salt (common vrat rule set; a samak/barnyard-millet \"vrat biryani\" with sendha namak is a different dish)."
+    },
+    "ekadashi": {
+      "status": "no",
+      "reason": "rice and other grains are avoided on Ekadashi in the most common rule set; onion and garlic also excluded by many families."
+    },
+    "jain": {
+      "status": null,
+      "reason": "skip onion, garlic, fried onions, potato and carrot; use cauliflower, beans, peas, capsicum and paneer, with hing and ginger for flavour."
+    },
+    "ramadan": {
+      "status": "yes",
+      "reason": "vegetarian, so no halal-meat issue; fine as the iftar dinner, but it is rich and spiced, so keep the portion modest and the salt low at sehri."
+    }
+  },
+  "dietTags": null,
+  "tags": [
+    "Veg",
+    "Ramadan sehri / iftar",
+    "Contains peanut",
+    "Contains milk",
+    "Lunch",
+    "Dinner",
+    "Mughlai",
+    "Under 60 min",
+    "Intermediate",
+    "High fibre"
+  ],
+  "description": null,
+  "familyId": "biryani",
+  "variants": [],
+  "needsReview": [
+    "Jain \"with-changes\" but the recipe keeps fresh ginger and the line doesn't say to skip it"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-11",
+      "file": "FitPlate_Dishes_2026-10-11.md"
+    }
+  ],
+  "mergeMethod": {
+    "nutritionPerServing": "stable (single)",
+    "orderPrice": "price engine (single)",
+    "ingredients": "newest",
+    "steps": "newest",
+    "healthiness": "newest",
+    "researchRating": "newest",
+    "sources": "union",
+    "tags": "tag engine (tags.ts) on the merged dish"
+  },
+  "mergeNotes": []
+}

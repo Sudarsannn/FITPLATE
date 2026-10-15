@@ -1,14 +1,16 @@
 import { LinearGradient } from 'expo-linear-gradient';
 import type { ReactNode } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Image, Linking, Pressable, StyleSheet, Text, View } from 'react-native';
 
+import { dishImageCredits, dishImageFiles } from '../../data/research/dish-images';
 import type { Dish } from '../../models/research';
+import { creditLine, type ImageCredit } from '../../services/data/dishImageCandidates';
 import { colors, radius } from '../../theme';
 
 /**
- * Image slot for a research dish (SPEC-ADDENDA §8). No real photo or
- * illustration exists yet, so it shows a clearly labelled placeholder; real
- * images are swapped in later by file name.
+ * Image slot for a research dish (SPEC-ADDENDA §8, §10). Shows the dish's
+ * bundled, freely licensed photo when one has been verified
+ * (scripts/research/images.js); otherwise a clearly labelled placeholder.
  */
 const MEAL_ART: Record<string, { emoji: string; palette: [string, string] }> = {
   breakfast: { emoji: '🍳', palette: ['#F8D57E', '#E89B3C'] },
@@ -21,7 +23,27 @@ export function dishArt(d: Pick<Dish, 'mealType'>) {
   return MEAL_ART[d.mealType[0]?.toLowerCase() ?? ''] ?? { emoji: '🍽️', palette: ['#6FCF97', '#1E8A5A'] as [string, string] };
 }
 
-export function DishImageSlot({ dish, size, label = true }: { dish: Pick<Dish, 'mealType' | 'name'>; size: number; label?: boolean }) {
+/** The dish's verified photo and its credit, or null when it has none yet. */
+export function dishPhoto(id: string): { source: (typeof dishImageFiles)[string]; credit: ImageCredit } | null {
+  const source = dishImageFiles[id];
+  const credit = dishImageCredits[id];
+  return source && credit ? { source, credit } : null;
+}
+
+export function DishImageSlot({ dish, size, label = true }: { dish: Pick<Dish, 'id' | 'mealType' | 'name'>; size: number; label?: boolean }) {
+  const photo = dishPhoto(dish.id);
+  if (photo) {
+    return (
+      <Image
+        source={photo.source}
+        style={[styles.art, { width: size, height: size }]}
+        resizeMode="cover"
+        accessible
+        accessibilityRole="image"
+        accessibilityLabel={`${dish.name}. ${creditLine(photo.credit)}`}
+      />
+    );
+  }
   const art = dishArt(dish);
   return (
     <LinearGradient
@@ -42,6 +64,23 @@ export function DishImageSlot({ dish, size, label = true }: { dish: Pick<Dish, '
         </View>
       ) : null}
     </LinearGradient>
+  );
+}
+
+/**
+ * Attribution under a dish photo (CC BY / BY-SA need author, licence and
+ * source). Tapping opens the photo's page on the source site.
+ */
+export function PhotoCredit({ credit }: { credit: ImageCredit }) {
+  return (
+    <Text
+      style={styles.credit}
+      onPress={() => Linking.openURL(credit.pageUrl)}
+      accessibilityRole="link"
+      accessibilityHint="Opens the photo's source page"
+    >
+      {creditLine(credit)}
+    </Text>
   );
 }
 
@@ -90,6 +129,7 @@ export function SelectChip({
 
 const styles = StyleSheet.create({
   art: { borderRadius: radius.md, alignItems: 'center', justifyContent: 'center', overflow: 'hidden' },
+  credit: { color: colors.muted, fontSize: 11, marginTop: 6, textAlign: 'center', textDecorationLine: 'underline' },
   artLabel: { position: 'absolute', bottom: 5, left: 5, right: 5, alignItems: 'center' },
   artLabelText: { color: 'rgba(255,255,255,0.92)', fontSize: 9.5, fontWeight: '800', backgroundColor: 'rgba(0,0,0,0.35)', paddingHorizontal: 6, paddingVertical: 2, borderRadius: 6, overflow: 'hidden' },
   tag: { paddingHorizontal: 8, paddingVertical: 3, borderRadius: 8, borderWidth: 1 },

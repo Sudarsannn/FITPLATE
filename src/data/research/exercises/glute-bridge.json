@@ -223,11 +223,11 @@
       {
         "name": "top_target",
         "joint": "hip (shoulder-hip-knee)",
-        "angleDeg": "170-185",
+        "angleDeg": "165-180",
         "parsed": {
           "op": "between",
-          "value": 170,
-          "max": 185
+          "value": 165,
+          "max": 180
         }
       },
       {
@@ -246,12 +246,12 @@
   "formChecks": [
     {
       "joint": "hip",
-      "rule": "top hip angle < 160 degrees",
+      "rule": "top hip angle < 165 degrees (equals top phase threshold)",
       "message": "Lift a little higher: knees, hips, shoulders in a line"
     },
     {
       "joint": "hip",
-      "rule": "hip angle > 195 degrees or hip well above shoulder-knee line",
+      "rule": "arch flag: hip landmark above the shoulder-knee line by a set margin (separate flag; angle never exceeds 180)",
       "message": "Too high: ribs down, squeeze your buttocks"
     },
     {
@@ -799,10 +799,7 @@
     "Rep counter",
     "Under 10 min"
   ],
-  "needsReview": [
-    "rep_counter phase \"top_target\" (hip (shoulder-hip-knee)): angle \"170-185\" is above 180°, which an unsigned three-point angle can't reach",
-    "form check \"hip angle > 195 degrees or hip well above shoulder-knee line\": angle 195 is above 180°, which an unsigned three-point angle can't reach"
-  ],
+  "needsReview": [],
   "versions": [
     {
       "date": "2026-10-15",
