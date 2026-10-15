@@ -1,0 +1,174 @@
+{
+  "id": "starting-weight-rpe-rir",
+  "number": 4,
+  "type": "knowledge",
+  "name": "Choosing your starting weight, RPE and reps in reserve",
+  "section": "gym",
+  "keyTakeaways": [
+    "Your starting weight is found, not guessed. Start light, do a set, judge how many more good reps you could have done, and adjust. Beginners should never test a true one-rep max (1RM); ACE says direct 1RM testing is not appropriate for beginners.",
+    "RIR (reps in reserve) is the beginner-friendly way to measure effort. It means \"how many more clean reps could I have done when I stopped?\" The RIR-based RPE scale (Zourdos et al., 2016) links the two: RPE 10 = 0 RIR, RPE 9 = 1 RIR, RPE 8 = 2 RIR, RPE 7 = 3 RIR, and so on (RPE = 10 − RIR).",
+    "For the first weeks, stop sets at about 3 reps in reserve (RPE 7). That is hard enough to make progress, but leaves room for the fact that beginners often misjudge how close they are to failure. Training to failure is not required for results (2026 ACSM position stand coverage).",
+    "Expect to underestimate yourself. Across studies, people underpredict how many reps they have left by about 1 rep on average (Halperin et al., 2022), and errors are much bigger when you are far from failure (about 5 reps off at \"5 RIR\" vs about 2 reps off at \"1 RIR\" in Zourdos et al., 2019) and in high-rep sets.",
+    "Add weight with the smallest jump available once you beat your target. ACSM (2009) suggests a 2–10% load increase when you can do 1–2 reps more than the target. In Indian gyms, dumbbells usually go up in 2.5 kg steps (est.), which can be a huge percentage jump at light weights, so add reps first, then weight."
+  ],
+  "mistakes": [
+    "Copying the weight someone else uses. It leads to bad form and injury. Fix: run the finder sets every time you start a new exercise.",
+    "Starting too heavy to \"not look weak\". Fix: the first session on any exercise is a calibration day; aim for RIR 3–4.",
+    "Starting so light it does nothing, for weeks. If every set ends at RIR 5+, there is little stimulus. Fix: use the RIR check after each set and move up a step when it says to.",
+    "Calling \"burning\" or heavy breathing \"failure\". Fix: ask \"could I do one more slow, clean rep?\" If yes, RIR is not 0.",
+    "Counting ugly reps. A rep with a rounded back or a swing does not count. Fix: RIR is about clean reps only; end the set when form changes.",
+    "Jumping two dumbbell steps at once. Fix: one step at a time; if the next step is too big, add reps instead.",
+    "Searching too long. Doing 7–8 finder sets tires you out. Fix: limit to 3–4 finder sets, then commit.",
+    "Not writing anything down. You forget what you lifted and guess again next week. Fix: log weight, reps and RIR for every working set.",
+    "Using the 20 kg bar for everything. Overhead press and rows with 20 kg are too heavy for many beginners. Fix: use fixed lighter bars, dumbbells or machines first.",
+    "Skipping the empty-bar warm-up when the working weight is light. Fix: always do at least one set of practice reps with the bar or lightest pin."
+  ],
+  "appGuidance": [
+    "New user, any exercise: target RIR = 3 (RPE 7) for the first 2 weeks; RIR 2–3 from week 3.",
+    "Barbell compound lifts (squat, bench, deadlift, overhead press, row): minimum RIR 2 for beginners, always.",
+    "Machine and isolation exercises: allow RIR 1 on the last set only after 4 weeks of logged training (est.).",
+    "Never prescribe RIR 0 to a beginner.",
+    "Finder sets: maximum 4 per exercise.",
+    "Rest between finder sets: 60–120 seconds (est.).",
+    "Show: \"Let's find your weight. Start light. We'll adjust after each set.\"",
+    "After each finder set, ask: \"How many more good reps could you have done?\" Buttons: 0 / 1 / 2 / 3 / 4 / 5+. (Show RPE as a small label under each button, e.g. \"3 = RPE 7\".)",
+    "Suggest the next weight: 5+ reps left: \"Too easy. Go up one or two steps.\" 4 left: \"A bit light. Go up one step.\" 3 left: \"Perfect. This is your working weight.\" 2 left: \"Good, slightly heavy. Keep it or go down one step if form slipped.\" 0–1 left: \"Too heavy for today. Go down one step.\"",
+    "Ask: \"Did your form stay the same on every rep?\" If no: suggest one step lighter.",
+    "Save the working weight per exercise and per equipment type.",
+    "If all sets reached the top of the rep range at or above target RIR: \"Great work. Next time, add the smallest weight step available.\"",
+    "If the jump is too big (dumbbell step > about 10%, est.): \"Add 2 reps per set before moving up.\"",
+    "If reps fell 2+ below the range: \"Drop one step next time.\"",
+    "If the user reports pain: \"Stop this exercise. If pain is sharp or lasts, check with a doctor or physio.\"",
+    "Barbell weight (default 20 kg; options 15 kg, other).",
+    "Smallest plate available (default 2.5 kg; option 1.25 kg).",
+    "Dumbbell step (default 2.5 kg).",
+    "Machine stack step (default 5 kg; user can change).",
+    "Use \"reps left in the tank\" or \"reps in reserve\" with a one-line explanation on first use.",
+    "Avoid \"max out\", \"to failure\", \"no pain no gain\".",
+    "Always add: \"General information, not medical advice.\"",
+    "On one safe machine exercise, the player can offer: \"Want to check your guess? On the last set, say how many reps you think are left, then keep going with good form until you can't. We'll show how close you were.\" This uses the research finding that guesses improve near failure and with practice. Never offer this on free-weight barbell lifts."
+  ],
+  "rules": [
+    {
+      "if": "user rates a set",
+      "then": "convert using RPE = 10 - RIR (RPE 10 = 0 RIR, 9 = 1 RIR, 8 = 2 RIR, 7 = 3 RIR, 6 = 4 RIR, 5 = 5+ RIR)",
+      "source": "Zourdos et al. 2016, J Strength Cond Res; Helms et al. 2016, Strength Cond J"
+    },
+    {
+      "if": "user is a beginner in training weeks 1-2",
+      "then": "set target RIR = 3 (RPE 7) on all exercises",
+      "source": "FitPlate choice based on Halperin et al. 2022 (average underprediction about 1 rep) and Zourdos et al. 2019 (larger errors far from failure)"
+    },
+    {
+      "if": "user is a beginner in week 3 or later",
+      "then": "set target RIR = 2-3 (RPE 7-8)",
+      "source": "FitPlate choice; ACSM 2026 position stand summaries (failure not required)"
+    },
+    {
+      "if": "exercise is a barbell squat, bench press, deadlift, overhead press or row and user is a beginner",
+      "then": "never prescribe RIR below 2; require safety pins or spotter for squat and bench",
+      "source": "FitPlate safety choice; ACSM 2026 position stand summaries"
+    },
+    {
+      "if": "user has never done this exercise before",
+      "then": "run finder sets: start at lightest pin, lightest suitable dumbbells or empty bar; max 4 finder sets",
+      "source": "ACE (1RM testing not appropriate for beginners); FitPlate choice for set limit (est.)"
+    },
+    {
+      "if": "finder set RIR >= 5",
+      "then": "suggest increasing by 1-2 weight steps",
+      "source": "FitPlate choice (est.)"
+    },
+    {
+      "if": "finder set RIR = 4",
+      "then": "suggest increasing by 1 weight step",
+      "source": "FitPlate choice (est.)"
+    },
+    {
+      "if": "finder set RIR = 3 at top of rep range with stable form",
+      "then": "save as working weight",
+      "source": "FitPlate choice"
+    },
+    {
+      "if": "finder or working set RIR <= 1 or form broke down",
+      "then": "suggest decreasing by 1 weight step",
+      "source": "FitPlate choice (est.)"
+    },
+    {
+      "if": "all working sets reach top of rep range at or above target RIR",
+      "then": "next session increase by smallest available step and return to bottom of rep range",
+      "source": "ACSM 2009 position stand (2-10% increase when 1-2 reps above target)"
+    },
+    {
+      "if": "user beats target reps by 2 on last set in 2 consecutive sessions",
+      "then": "increase load",
+      "source": "2-for-2 rule, Baechle et al. 2008 (NSCA textbook) as cited in CSCS/ACSM study guides"
+    },
+    {
+      "if": "next available weight step is more than about 10% of current load",
+      "then": "add 2 reps per set (up to 15) or a 3-second lowering phase before increasing weight",
+      "source": "FitPlate choice (est.) given 2.5 kg Indian dumbbell steps (est.)"
+    },
+    {
+      "if": "reps fall 2 or more below bottom of rep range",
+      "then": "decrease by 1 weight step next session",
+      "source": "FitPlate choice (est.)"
+    },
+    {
+      "if": "user returns after 2 or more weeks off",
+      "then": "start at 80-90% of last working weight and recheck RIR",
+      "source": "FitPlate choice (est.)"
+    },
+    {
+      "if": "user reports sharp joint pain, chest pain, dizziness or unusual breathlessness",
+      "then": "stop exercise and advise seeing a doctor if it does not settle",
+      "source": "General safety guidance; NHS"
+    },
+    {
+      "if": "user has logged 4+ weeks and exercise is a machine or isolation movement",
+      "then": "allow RIR 1 on last set and offer optional RIR calibration set",
+      "source": "Robinson et al. 2024 (closer to failure aids hypertrophy); Zourdos et al. 2019 (accuracy better near failure); FitPlate choice (est.)"
+    },
+    {
+      "if": "app equipment defaults are not set by user",
+      "then": "barbell 20 kg, smallest plate 2.5 kg, dumbbell step 2.5 kg, machine step 5 kg",
+      "source": "IWF (20 kg bar); FitPlate assumptions for Indian gyms (est.)"
+    }
+  ],
+  "weeks": null,
+  "sources": [
+    "Zourdos MC et al. (2016). Novel resistance training-specific rating of perceived exertion scale measuring repetitions in reserve. J Strength Cond Res 30(1):267–275. https://openrepository.aut.ac.nz/items/efef3b25-6701-4fb5-bb82-55fcd2a26027/full",
+    "Helms ER, Cronin J, Storey A, Zourdos MC (2016). Application of the repetitions in reserve-based rating of perceived exertion scale for resistance training. Strength Cond J 38(4):42–49. https://openrepository.aut.ac.nz/items/92cefeac-7c32-44f1-bfbc-f48f4a5dd8cf/full",
+    "Halperin I et al. (2022). Accuracy in predicting repetitions to task failure in resistance exercise: a scoping review and exploratory meta-analysis. Sports Med 52(2):377–390. https://pubmed.ncbi.nlm.nih.gov/34542869/ (preprint: https://sportrxiv.org/index.php/server/preprint/view/67)",
+    "Zourdos MC et al. (2019/2021). Proximity to failure and RPE prediction accuracy in the squat at 70% 1RM. J Strength Cond Res. https://pubmed.ncbi.nlm.nih.gov/30747900/",
+    "Steele J et al. (2017). Ability to predict repetitions to momentary failure is not perfectly accurate, though improves with resistance training experience. PeerJ 5:e4105. https://peerj.com/articles/4105",
+    "Lovegrove S et al. (2022). Repetitions in reserve is a reliable tool for prescribing resistance training load. J Strength Cond Res 36(10):2696–2700. https://pubmed.ncbi.nlm.nih.gov/36135029/",
+    "Robinson ZP et al. (2024). Exploring the dose-response relationship between estimated resistance training proximity to failure, strength gain, and muscle hypertrophy: a series of meta-regressions. Sports Med 54(9):2209–2231. https://rke.abertay.ac.uk/en/publications/exploring-the-dose-response-relationship-between-estimated-resist/",
+    "Bermúdez Droguett et al. Training experience and RIR estimation accuracy in the back squat. https://repositorio.uss.cl/handle/uss/20828",
+    "Hackett DA, Cobley SP, Halaki M (2018). Estimation of repetitions to failure for monitoring resistance exercise intensity. https://paulogentil.com/pdf/Estimation%20of%20Repetitions%20to%20Failure%20for%20Monitoring%20Resistance%20Exercise%20Intensity%20-%20Building%20a%20Case%20for%20Application.pdf",
+    "ACSM (2009). Progression models in resistance training for healthy adults (position stand). https://www.sportgeneeskunde.com/wp-content/uploads/ACSM-Position-Stand-Progression-Models-in-Resistance-Training-for-Healthy-Adults.pdf",
+    "ACSM (2026). Resistance training prescription for muscle function, hypertrophy, and physical performance in healthy adults: an overview of reviews (position stand) and summaries. https://acsm.org/science-spotlight-acsm-releases-new-position-stand-on-resistance-training/ ; https://www.newswise.com/articles/acsm-unveils-landmark-2026-resistance-training-guidelines-first-update-in-17-years ; https://acsm.org/wp-content/uploads/2026/03/Resistance-Training-Position-Stand-infographic.pdf",
+    "NSCA Training Load Chart. https://dxpprod.nsca.com/contentassets/61d813865e264c6e852cadfe247eae52/nsca_training_load_chart.pdf",
+    "ACE. Understanding 1-RM and predicted 1-RM assessments. https://www.acefitness.org/fitness-certifications/ace-answers/exam-preparation-blog/2894/understanding-1-rm-and-predicted-1-rm-assessments/",
+    "NHS. Physical activity guidelines for adults aged 19 to 64. https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-for-adults-aged-19-to-64/",
+    "International Weightlifting Federation. Equipment (bar and disc specifications). https://iwf.net/weightlifting_/equipment/",
+    "Resistance training program design study guide (load increments, 2-for-2 rule). https://open-exam-prep.com/study-guides/cscs/program-design/resistance-training-program-design"
+  ],
+  "lastResearched": "2026-10-10",
+  "tags": [
+    "Gym",
+    "Guide"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-10-10",
+      "file": "FitPlate_Fitness_2026-10-10.md"
+    }
+  ],
+  "mergeMethod": {
+    "rules": "single",
+    "sources": "union"
+  },
+  "mergeNotes": []
+}

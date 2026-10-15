@@ -50,6 +50,38 @@
     "Spring onion (white part)",
     "Ready fried onions (birista)"
   ],
+  "usedIn": [
+    {
+      "dishNumber": 1,
+      "quantity": 60,
+      "unit": "g",
+      "raw": "60 g (½ medium onion)"
+    },
+    {
+      "dishNumber": 2,
+      "quantity": 80,
+      "unit": "g",
+      "raw": "80 g (1 medium)"
+    },
+    {
+      "dishNumber": 3,
+      "quantity": 40,
+      "unit": "g",
+      "raw": "40 g (½ small)"
+    },
+    {
+      "dishNumber": 4,
+      "quantity": 40,
+      "unit": "g",
+      "raw": "40 g (½ small, in the potato masala)"
+    },
+    {
+      "dishNumber": 5,
+      "quantity": 40,
+      "unit": "g",
+      "raw": "40 g (½ small)"
+    }
+  ],
   "versions": [
     {
       "date": "2026-10-04",
@@ -61,7 +93,8 @@
     "macrosPer100Estimate": "stable (single)",
     "aliases": "union",
     "substitutes": "union",
-    "storage": "newest"
+    "storage": "newest",
+    "usedIn": "newest"
   },
   "mergeNotes": []
 }

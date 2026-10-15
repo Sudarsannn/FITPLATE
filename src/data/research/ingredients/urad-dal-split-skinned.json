@@ -50,6 +50,14 @@
     "For tempering only",
     "For batter"
   ],
+  "usedIn": [
+    {
+      "dishNumber": 4,
+      "quantity": 13,
+      "unit": "g",
+      "raw": "13 g in the dosa batter + 2 g in the potato-masala tempering = 15 g in total"
+    }
+  ],
   "versions": [
     {
       "date": "2026-10-04",
@@ -61,7 +69,8 @@
     "macrosPer100Estimate": "stable (single)",
     "aliases": "union",
     "substitutes": "union",
-    "storage": "newest"
+    "storage": "newest",
+    "usedIn": "newest"
   },
   "mergeNotes": [
     "price flag: narrowed",

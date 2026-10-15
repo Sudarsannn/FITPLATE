@@ -1,0 +1,368 @@
+{
+  "id": "thiamine",
+  "name": "Thiamine (Vitamin B1)",
+  "type": "vitamin",
+  "subtype": "water-soluble",
+  "unit": "mg",
+  "altUnits": [
+    {
+      "unit": "µg",
+      "toMainUnitFactor": 0.001
+    }
+  ],
+  "unitConversions": [
+    {
+      "fromUnit": "µg",
+      "compound": "",
+      "toMainUnitFactor": 0.001,
+      "raw": "1,000 µg (mcg) | 1 mg"
+    },
+    {
+      "fromUnit": "mg",
+      "compound": "thiamine hydrochloride",
+      "toMainUnitFactor": 0.79,
+      "raw": "1 mg thiamine hydrochloride | about 0.79 mg thiamine"
+    },
+    {
+      "fromUnit": "mg",
+      "compound": "thiamine mononitrate",
+      "toMainUnitFactor": 0.81,
+      "raw": "1 mg thiamine mononitrate | about 0.81 mg thiamine"
+    },
+    {
+      "fromUnit": "mg",
+      "compound": "benfotiamine",
+      "toMainUnitFactor": 0.57,
+      "raw": "1 mg benfotiamine | about 0.57 mg thiamine"
+    }
+  ],
+  "targets": [
+    {
+      "group": "adult_male_sedentary",
+      "ear": 1.2,
+      "rda": 1.4,
+      "ai": null,
+      "source": "ICMR-NIN 2020 short report (via search snippets; ETK-AC cut-off 1.15)"
+    },
+    {
+      "group": "adult_male_moderate",
+      "ear": 1.5,
+      "rda": 1.8,
+      "ai": null,
+      "source": "ICMR-NIN 2020 brief note table (via search snippet); RDA also in secondary summary"
+    },
+    {
+      "group": "adult_male_heavy",
+      "ear": null,
+      "rda": 2.3,
+      "ai": null,
+      "source": "ICMR-NIN 2020 via secondary summary (Metabolic Health Digest); EAR not found"
+    },
+    {
+      "group": "adult_female_sedentary",
+      "ear": 1.1,
+      "rda": 1.4,
+      "ai": null,
+      "source": "ICMR-NIN 2020 short report (via search snippets)"
+    },
+    {
+      "group": "adult_female_moderate",
+      "ear": 1.4,
+      "rda": 1.7,
+      "ai": null,
+      "source": "ICMR-NIN 2020 brief note table (via search snippet); RDA also in secondary summary"
+    },
+    {
+      "group": "adult_female_heavy",
+      "ear": null,
+      "rda": 2.2,
+      "ai": null,
+      "source": "ICMR-NIN 2020 via secondary summary only; EAR not found; lower confidence"
+    },
+    {
+      "group": "pregnant",
+      "ear": null,
+      "rda": 2,
+      "ai": null,
+      "source": "ICMR-NIN 2020 via secondary summary only (based on extra calorie allowance); EAR not found; lower confidence"
+    },
+    {
+      "group": "lactating",
+      "ear": null,
+      "rda": 2.1,
+      "ai": null,
+      "source": "ICMR-NIN 2020 via secondary summary only (based on extra calorie allowance); EAR not found; lower confidence"
+    },
+    {
+      "group": "age_60_plus",
+      "ear": null,
+      "rda": null,
+      "ai": null,
+      "source": "ICMR-NIN 2020 value for 60+ not found; app applies sedentary adult RDA 1.4 mg"
+    }
+  ],
+  "appDefaultTarget": {
+    "adult_male": 1.4,
+    "adult_female": 1.4,
+    "pregnant": 2,
+    "lactating": 2.1,
+    "age_60_plus": null
+  },
+  "upperLimit": {
+    "value": null,
+    "unit": "mg/day",
+    "appliesTo": "supplements_only",
+    "source": "No UL set: ICMR-NIN TUL not found; NASEM 1998 and EU SCF/EFSA set none. App notice uses UK EVM 2003 guidance level of 100 mg/day from supplements, which is not a formal UL"
+  },
+  "topFoodSources": [
+    {
+      "food": "Wheat flour, whole (atta)",
+      "veg": true,
+      "per100g": 0.42,
+      "servingG": 60,
+      "servingLabel": "2 medium rotis",
+      "perServing": 0.25
+    },
+    {
+      "food": "Pork, chops",
+      "veg": false,
+      "per100g": 0.3,
+      "servingG": 100,
+      "servingLabel": "1 small portion, raw weight",
+      "perServing": 0.3
+    },
+    {
+      "food": "Peas, fresh (hara matar)",
+      "veg": true,
+      "per100g": 0.27,
+      "servingG": 80,
+      "servingLabel": "1/2 cup shelled",
+      "perServing": 0.22
+    },
+    {
+      "food": "Soya bean, white",
+      "veg": true,
+      "per100g": 0.61,
+      "servingG": 30,
+      "servingLabel": "2 tbsp dry (1/2 katori cooked)",
+      "perServing": 0.18
+    },
+    {
+      "food": "Groundnuts (peanuts)",
+      "veg": true,
+      "per100g": 0.57,
+      "servingG": 30,
+      "servingLabel": "3 tbsp, a small handful",
+      "perServing": 0.17
+    },
+    {
+      "food": "Peas, dry (sukha matar)",
+      "veg": true,
+      "per100g": 0.56,
+      "servingG": 30,
+      "servingLabel": "1/2 katori cooked",
+      "perServing": 0.17
+    },
+    {
+      "food": "Chicken, leg, skinless",
+      "veg": false,
+      "per100g": 0.17,
+      "servingG": 100,
+      "servingLabel": "1 leg piece, raw weight",
+      "perServing": 0.17
+    },
+    {
+      "food": "Pistachio (pista)",
+      "veg": true,
+      "per100g": 0.98,
+      "servingG": 15,
+      "servingLabel": "2 tbsp kernels",
+      "perServing": 0.15
+    },
+    {
+      "food": "Jowar (sorghum) flour",
+      "veg": true,
+      "per100g": 0.35,
+      "servingG": 40,
+      "servingLabel": "1 jowar bhakri",
+      "perServing": 0.14
+    },
+    {
+      "food": "Red gram dal (toor dal)",
+      "veg": true,
+      "per100g": 0.45,
+      "servingG": 30,
+      "servingLabel": "1 katori cooked dal",
+      "perServing": 0.14
+    },
+    {
+      "food": "Green gram, whole (sabut moong)",
+      "veg": true,
+      "per100g": 0.45,
+      "servingG": 30,
+      "servingLabel": "3/4 cup sprouts",
+      "perServing": 0.14
+    },
+    {
+      "food": "Bengal gram, whole (kala chana)",
+      "veg": true,
+      "per100g": 0.37,
+      "servingG": 30,
+      "servingLabel": "1/2 katori cooked",
+      "perServing": 0.11
+    }
+  ],
+  "goodSourceDishes": [
+    {
+      "dishNumber": 11,
+      "dishName": "Aloo Paratha"
+    },
+    {
+      "dishNumber": 5,
+      "dishName": "Dal Tadka"
+    },
+    {
+      "dishNumber": 29,
+      "dishName": "Misal Pav"
+    },
+    {
+      "dishNumber": 8,
+      "dishName": "Chole (Chana Masala)"
+    },
+    {
+      "dishNumber": 12,
+      "dishName": "Rajma Chawal"
+    },
+    {
+      "dishNumber": 27,
+      "dishName": "Dal Makhani"
+    },
+    {
+      "dishNumber": 16,
+      "dishName": "Besan Chilla"
+    },
+    {
+      "dishNumber": 9,
+      "dishName": "Idli with Sambar"
+    },
+    {
+      "dishNumber": 26,
+      "dishName": "Moong Dal Chilla"
+    },
+    {
+      "dishNumber": 40,
+      "dishName": "Sabudana Khichdi"
+    }
+  ],
+  "deficiencyRiskIndia": "moderate",
+  "absorptionBoosters": [
+    "whole grains, parboiled or brown rice and millets instead of polished rice and maida",
+    "cooking rice in measured water without draining",
+    "rinsing rice only 1-2 times",
+    "cooking fish and shellfish fully to destroy thiaminase",
+    "vitamin C-rich foods when tea intake is high (low confidence)"
+  ],
+  "absorptionBlockers": [
+    "alcohol",
+    "rice polishing, repeated washing and draining cooking water",
+    "baking soda in cooking water",
+    "long boiling and repeated reheating",
+    "raw freshwater fish and shellfish (thiaminase)",
+    "betel nut (supari) chewing",
+    "large amounts of tea or coffee with a low-thiamine diet",
+    "long-term diuretic (water pill) use"
+  ],
+  "logPresets": [
+    {
+      "label": "B-complex capsule (thiamine mononitrate 10 mg)",
+      "amount": 10,
+      "unit": "mg",
+      "toMainFactor": 0.81,
+      "factorSource": "markdown",
+      "mainAmount": 8.1,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Neurobion Forte-type tablet (thiamine 10 mg)",
+      "amount": 10,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 10,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "High-dose thiamine tablet 100 mg",
+      "amount": 100,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 100,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Benfotiamine 150 mg (combination tablet)",
+      "amount": 150,
+      "unit": "mg",
+      "toMainFactor": 0.57,
+      "factorSource": "markdown",
+      "mainAmount": 85.5,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Multivitamin (enter label value)",
+      "amount": null,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": null,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Custom amount in mcg",
+      "amount": null,
+      "unit": "mcg",
+      "toMainFactor": 0.001,
+      "factorSource": "alt_units",
+      "mainAmount": null,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    }
+  ],
+  "warnings": [
+    "No formal upper limit is set for thiamine; UK guidance considers up to 100 mg per day from supplements unlikely to cause harm.",
+    "Check labels for duplicate B-complex or nerve-vitamin products; these also contain vitamin B6 and niacin.",
+    "Thiamine injections can rarely cause severe allergic reactions and should only be given by a health professional.",
+    "Confusion, unsteady walking or double vision, especially with heavy drinking, severe vomiting or after bariatric surgery, needs urgent medical care.",
+    "A breastfed baby with a hoarse cry, vomiting, fast breathing or sudden breathlessness needs emergency care.",
+    "People who drink alcohol heavily, are pregnant or breastfeeding, have had bariatric surgery, are on dialysis or take long-term diuretics should ask their doctor about thiamine.",
+    "General information, not medical advice. Check with a doctor before starting supplements."
+  ],
+  "conditionAdjustments": [],
+  "lastResearched": "2026-10-11",
+  "versions": [
+    {
+      "date": "2026-10-11",
+      "file": "FitPlate_Nutrients_2026-10-11.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3)",
+    "upperLimit": "official safety limit (D3, lower on conflict)",
+    "topFoodSources": "union; per100g official (D3)",
+    "logPresets": "union by label (newest), converted with own file factors",
+    "appDefaultTarget": "newest, kept only where it equals the ICMR row",
+    "lists": "union",
+    "warnings": "union (never dropped)",
+    "text": "newest"
+  },
+  "mergeNotes": [],
+  "needsReview": [
+    "app_default_target.age_60_plus = 1.4 has no ICMR row to match (age_60_plus: \"ICMR-NIN 2020 value for 60+ not found; app applies sedentary adult RDA 1.4 mg\"); set to null"
+  ]
+}

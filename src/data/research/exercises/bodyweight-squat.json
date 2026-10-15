@@ -1,0 +1,573 @@
+{
+  "id": "bodyweight-squat",
+  "number": 1,
+  "name": "Bodyweight squat",
+  "otherNames": [
+    "Air squat",
+    "Free squat",
+    "Body-weight squat"
+  ],
+  "section": "home",
+  "type": "strength",
+  "equipment": [],
+  "noEquipmentAlternative": "Already equipment-free; hold a counter or chair back for balance, or squat to a sturdy chair",
+  "musclesPrimary": [
+    "quadriceps",
+    "gluteus maximus"
+  ],
+  "musclesSecondary": [
+    "adductors (adductor magnus)",
+    "hamstrings",
+    "soleus",
+    "gastrocnemius",
+    "erector spinae",
+    "abdominals",
+    "gluteus medius"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 3.8,
+  "compendiumCode": "02022",
+  "metOptions": [
+    {
+      "code": "02022",
+      "met": 3.8,
+      "activity": "02022 – Calisthenics (e.g., push-ups, sit-ups, pull-ups, lunges), moderate effort: 3.8 METs. FitPlate uses this for normal-paced squat sets."
+    },
+    {
+      "code": "02020",
+      "met": 7.5,
+      "activity": "02020 – Calisthenics, vigorous effort: 7.5 METs. Use for fast, high-rep sets with little rest."
+    },
+    {
+      "code": "02032",
+      "met": 6,
+      "activity": "02032 – Circuit training, bodyweight exercises: 6.0 METs. Use when squats are part of a circuit."
+    },
+    {
+      "code": "02024",
+      "met": 2.8,
+      "activity": "02024 – Calisthenics, light effort: 2.8 METs. Use for very easy, supported squats."
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 2,
+      "reps": "8-12",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "3-1-1",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 3,
+      "reps": "10-15",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2-0-1",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "10-15",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "3-1-1",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "strength",
+      "sets": 3,
+      "reps": "8",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "4-1-1",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 2,
+      "reps": "15-20",
+      "timeSec": 30,
+      "restSec": 60,
+      "tempo": "2-0-1",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "15-20",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2-0-1",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "fat_loss",
+      "sets": 3,
+      "reps": null,
+      "timeSec": 40,
+      "restSec": 20,
+      "tempo": "2-0-1",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "15-25",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "3-1-1",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "strength",
+      "sets": 4,
+      "reps": "8-10",
+      "timeSec": null,
+      "restSec": 105,
+      "tempo": "3-3-1",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "25-30",
+      "timeSec": 60,
+      "restSec": 50,
+      "tempo": "2-0-1",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "general_fitness",
+      "sets": 4,
+      "reps": null,
+      "timeSec": 45,
+      "restSec": 15,
+      "tempo": "2-0-1",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "fat_loss",
+      "sets": 4,
+      "reps": null,
+      "timeSec": 45,
+      "restSec": 15,
+      "tempo": "2-0-1",
+      "perWeek": 4
+    },
+    {
+      "level": "advanced",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "20-30",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "4-1-1",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": null,
+      "reps": "Progress to split squat, Bulgarian split squat or loaded squat",
+      "timeSec": null,
+      "restSec": null,
+      "tempo": null,
+      "perWeek": null
+    },
+    {
+      "level": "advanced",
+      "goal": "endurance",
+      "sets": 2,
+      "reps": "50-100",
+      "timeSec": 150,
+      "restSec": 75,
+      "tempo": "2-0-1",
+      "perWeek": 3
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle",
+      "left_heel",
+      "right_heel",
+      "left_foot_index",
+      "right_foot_index"
+    ],
+    "phases": [
+      {
+        "name": "up",
+        "joint": "knee",
+        "angleDeg": ">= 160",
+        "parsed": {
+          "op": ">=",
+          "value": 160,
+          "max": null
+        }
+      },
+      {
+        "name": "down",
+        "joint": "knee",
+        "angleDeg": "<= 110",
+        "parsed": {
+          "op": "<=",
+          "value": 110,
+          "max": null
+        }
+      },
+      {
+        "name": "up",
+        "joint": "knee",
+        "angleDeg": ">= 160",
+        "parsed": {
+          "op": ">=",
+          "value": 160,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 1
+  },
+  "formChecks": [
+    {
+      "joint": "knee",
+      "rule": "lowest knee angle > 120 deg on 3 consecutive reps",
+      "message": "Try going a little lower, if it feels comfortable"
+    },
+    {
+      "joint": "knee",
+      "rule": "front view: knee width < 80% of ankle width at bottom",
+      "message": "Knees caving in: push them out over your toes"
+    },
+    {
+      "joint": "ankle",
+      "rule": "side view: heel landmark rises > ~2 cm from standing position",
+      "message": "Keep your heels down"
+    },
+    {
+      "joint": "hip",
+      "rule": "side view: shoulder-hip line > 50 deg from vertical at bottom",
+      "message": "Chest up a little"
+    },
+    {
+      "joint": "hip",
+      "rule": "hip angle opens much faster than knee angle at start of ascent",
+      "message": "Rise with your chest and hips together"
+    },
+    {
+      "joint": "knee",
+      "rule": "top knee angle < 160 deg",
+      "message": "Stand all the way up"
+    },
+    {
+      "joint": "knee",
+      "rule": "rep duration < 1.5 s when controlled tempo is set",
+      "message": "Slow down: 3 seconds down"
+    },
+    {
+      "joint": "knee",
+      "rule": "front view: left-right knee angle difference > 15 deg",
+      "message": "Keep your weight even on both feet"
+    }
+  ],
+  "safetyFlags": [
+    "knee_pain_or_osteoarthritis_limit_depth",
+    "low_back_pain_limit_depth",
+    "hip_replacement_follow_surgeon_depth_limit",
+    "high_blood_pressure_no_breath_holding",
+    "pregnancy_free_breathing_use_support",
+    "recent_surgery_needs_clearance",
+    "balance_issues_use_chair_or_counter",
+    "stop_on_sharp_pain_dizziness_or_chest_pain"
+  ],
+  "progressions": [
+    "Tempo or pause squat",
+    "Goblet squat (water bottle, backpack or dumbbell)",
+    "Split squat to Bulgarian split squat"
+  ],
+  "regressions": [
+    "Supported mini-squat holding a chair or counter",
+    "Sit-to-stand from a chair",
+    "Box or bed-edge touch squat"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "front, 3 m, hip height, full body",
+      "shows": "Stance set-up: feet slightly wider than hips, toes slightly out",
+      "textOverlay": "Feet just wider than hips, toes slightly out"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 3 m, hip height, full body",
+      "shows": "Full rep with slow-motion bottom",
+      "textOverlay": "Hips back, chest proud, heels down"
+    },
+    {
+      "seconds": 6,
+      "angle": "front, 3 m, full body",
+      "shows": "Knees tracking over toes",
+      "textOverlay": "Knees follow your toes"
+    },
+    {
+      "seconds": 6,
+      "angle": "front, hips to feet",
+      "shows": "Knee cave wrong vs right, slow motion",
+      "textOverlay": "Knees caving? Spread the floor"
+    },
+    {
+      "seconds": 6,
+      "angle": "side, full body",
+      "shows": "Heels lifting and chest dropping wrong vs right",
+      "textOverlay": "Keep heels heavy; chest up"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, waist up",
+      "shows": "3-second lowering with breathing",
+      "textOverlay": "Down 1-2-3, breathe out up"
+    },
+    {
+      "seconds": 7,
+      "angle": "45 degree front-side, full body with chair",
+      "shows": "Chair squat / sit-to-stand regression",
+      "textOverlay": "Easier: sit to a chair and stand"
+    },
+    {
+      "seconds": 7,
+      "angle": "45 degree front-side, full body",
+      "shows": "Pause squat and goblet squat progression",
+      "textOverlay": "Harder: pause 3 s or hold a weight"
+    }
+  ],
+  "lastResearched": "2026-10-09",
+  "setupSteps": [
+    "Clear the space. Push aside anything you could trip on. Stand on a mat or a dry, non-slippery floor. Mumbai floors can get damp in monsoon, so wipe them dry first.",
+    "Footwear. Go barefoot, or wear flat shoes with a thin sole. Avoid running shoes with thick soft heels and floppy slippers.",
+    "Optional depth target. Put a sturdy chair or the bed edge behind you, about one short step back, with the seat roughly at knee height. You'll lightly touch it at the bottom. Check that it can't roll or slide.",
+    "Stance width. Put your heels about hip-width to shoulder-width apart. A simple start: heels under the outer edge of your hips, slightly wider than hip-width.",
+    "Toe angle. Turn your toes out a little, about 5–15° (est.), whatever feels natural for your hips. Pointing them straight ahead also works.",
+    "Foot pressure. Spread your weight across the whole foot: heel, base of the big toe and base of the little toe.",
+    "Arms. Choose one: hands by your sides, hands clasped at chest height, or arms reaching straight forward at shoulder height. Reaching forward helps beginners stay balanced.",
+    "Posture. Stand tall with your chest open, shoulders gently down and back, and eyes looking straight ahead at a point on the wall.",
+    "Brace. Breathe in gently through your nose, then tighten your stomach lightly, as if someone might poke it. Keep it tight but keep breathing; don't hold your breath hard.",
+    "Phone (optional). If the app is counting reps, prop the phone at hip height about 2–3 m away, side-on (see section 11)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Start tall",
+      "action": "Stand in your set-up stance, knees straight but not locked.",
+      "feel": "Weight even across both feet; thighs and buttocks relaxed but ready.",
+      "breathing": "Normal breathing.",
+      "tempo": "Hold for 1 second.",
+      "visualCheck": "Side view: ear, shoulder, hip and ankle roughly in a line. Front view: feet even, knees pointing the same way as the toes."
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Breathe and brace",
+      "action": "Take a breath in and gently tighten your stomach.",
+      "feel": "A light, firm belt of tension around your waist.",
+      "breathing": "Breathe in through your nose.",
+      "tempo": "About 1 second.",
+      "visualCheck": "Your chest doesn't sink and your lower back doesn't over-arch."
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Send the hips back",
+      "action": "Begin by pushing your hips slightly back, as if reaching for the chair behind you.",
+      "feel": "A slight stretch in the buttocks and the back of the thighs.",
+      "breathing": "Start breathing out slowly, or hold the light brace.",
+      "tempo": "Part of a 2–3 second lowering phase.",
+      "visualCheck": "Side view: hips move back and the chest tilts slightly forward, while the back stays straight."
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Bend the knees and lower",
+      "action": "Bend your knees and hips together and sink straight down between your heels.",
+      "feel": "The thighs start working; weight stays over the middle of the foot, slightly towards the heels.",
+      "breathing": "Keep breathing out slowly, or hold the light brace.",
+      "tempo": "Smooth and controlled, 2–3 seconds for the whole way down.",
+      "visualCheck": "Front view: knees travel in line with your second or third toe. Side view: knees may move forward past the toes, which is fine if your heels stay down."
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Reach your depth",
+      "action": "Stop when the tops of your thighs are about parallel to the floor, or when you lightly touch the chair. If that's too deep, stop where you can still keep your heels down and your back straight.",
+      "feel": "Strong tension in the thighs and buttocks, with no pinching in the knee or lower back.",
+      "breathing": "Brief pause; keep the brace.",
+      "tempo": "Pause for 0–1 second. Don't bounce.",
+      "visualCheck": "Side view: hip crease near knee height, heels flat, back straight (not rounded). Front view: knees still over the feet."
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Drive up",
+      "action": "Push the floor away through your whole foot and stand up.",
+      "feel": "Thighs and buttocks working hard.",
+      "breathing": "Breathe out as you rise (for example a soft \"sss\" through your teeth).",
+      "tempo": "1–2 seconds up.",
+      "visualCheck": "Hips and chest rise at the same speed. The hips shouldn't shoot up first while the chest stays down."
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Finish tall",
+      "action": "Straighten your hips and knees fully and squeeze your buttocks lightly at the top.",
+      "feel": "Buttocks tighten; legs straight but not jammed back.",
+      "breathing": "Take a fresh breath in before the next rep.",
+      "tempo": "About 1 second at the top.",
+      "visualCheck": "Same tall line as step 1. Don't lean back or push the hips forward."
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Repeat or rest",
+      "action": "Reset your feet if they shifted, then start the next rep from step 2.",
+      "feel": "Check for knee or back discomfort before continuing.",
+      "breathing": "Normal.",
+      "tempo": "As prescribed in section 7.",
+      "visualCheck": "Feet in the same place as on rep 1."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Knees caving in (knee valgus)",
+      "text": "Knees caving in (knee valgus). Why it's a problem: It shifts stress to the inner knee. Research links it with knee pain and injury risk, although the link is associative. Fix: Turn your toes out slightly, think \"spread the floor apart\", and slow down. Squat less deep until you can control it."
+    },
+    {
+      "title": "Heels lifting off the floor",
+      "text": "Heels lifting off the floor. Why it's a problem: Balance drops and more load moves to the front of the knee. It often means tight ankles or squatting too deep for now. Fix: Sit the hips back a little more, widen your stance slightly, and limit depth. As a temporary aid, rest your heels on a thin folded towel or book (2–3 cm) (est.)."
+    },
+    {
+      "title": "Lower back rounding at the bottom",
+      "text": "Lower back rounding at the bottom. Why it's a problem: The spine loses its stable position under load. With bodyweight alone this is low-risk, but it's a habit to avoid before adding weight. Fix: Stop just above the depth where the rounding starts, keep your stomach braced, and use a chair as a depth target."
+    },
+    {
+      "title": "Dropping fast and bouncing at the bottom",
+      "text": "Dropping fast and bouncing at the bottom. Why it's a problem: You lose control at the most demanding point, and joints take a jolt. It's also noisier in a flat. Fix: Count \"1-2-3\" down, pause briefly, then stand up."
+    },
+    {
+      "title": "Chest collapsing and hips shooting up first",
+      "text": "Chest collapsing and hips shooting up first. Why it's a problem: It turns the move into a forward bend and loads the lower back. Fix: \"Chest up as you push\"; reach your arms forward for counterbalance."
+    },
+    {
+      "title": "Only bending the knees",
+      "text": "Only bending the knees. The hips don't move back and the heels lift. Fix: Start each rep by sending the hips back towards the chair."
+    },
+    {
+      "title": "Holding your breath hard on every rep",
+      "text": "Holding your breath hard on every rep. Why it's a problem: Straining can spike blood pressure, which matters for people with hypertension. Fix: Breathe out on the way up, every rep."
+    },
+    {
+      "title": "Not standing fully",
+      "text": "Not standing fully. Why it's a problem: Half reps at the top reduce the training effect and confuse the rep counter. Fix: Finish each rep tall with a light squeeze of the buttocks."
+    }
+  ],
+  "safetyNotes": [
+    "Knee pain or knee osteoarthritis: Use supported, shallow squats or chair squats. Go only as deep as is comfortable. Some NHS leaflets suggest not bending past a right angle at first, and the Arthritis Foundation advises not dropping the buttocks below the knees. Mild discomfort (about 4/10 or less) that settles within 24 hours is generally acceptable in physio programmes. Pain that keeps rising is not.",
+    "Lower back problems: Use a shallower depth, keep the back still, and start with chair squats. Stop if pain spreads down the leg.",
+    "Hip problems or hip replacement: Deep hip bending may be restricted after surgery. Follow your surgeon's or physio's depth limit, often a high chair.",
+    "High blood pressure or heart conditions: Breathe steadily and never strain while holding your breath. Use moderate effort; stop if dizzy.",
+    "Pregnancy: Bodyweight squats with free breathing are generally considered acceptable in an uncomplicated pregnancy. A wider stance and holding a counter help as balance changes. Avoid heavy straining and breath-holding. Get your obstetrician's approval if there are complications, such as high blood pressure or placenta problems.",
+    "Recent surgery or injury (knee, hip, ankle, spine, abdomen): Get clearance from your doctor or physio first.",
+    "Balance problems or older users: Do squats next to a counter or with a chair behind you.",
+    "Stop immediately if you have: sharp or stabbing knee, hip or back pain; a knee giving way or locking; chest pain, unusual breathlessness, dizziness or faintness; pain, numbness or tingling travelling down a leg; or new swelling after exercise.",
+    "Spotter: Not needed. Keep a chair or counter close if your balance is shaky.",
+    "Etiquette (shared spaces or society gym): Wipe the mat afterwards and keep the area clear."
+  ],
+  "sources": [
+    "ACE (American Council on Exercise), Exercise Library: Bodyweight Squat. https://www.acefitness.org/resources/everyone/exercise-library/135/bodyweight-squat/",
+    "Mayo Clinic, Squat (fitness video, Dr. Edward Laskowski). https://www.mayoclinic.org/healthy-lifestyle/fitness/multimedia/squat/vid-20084663",
+    "NHS, Strength exercises (sit-to-stand, mini-squats). https://www.nhs.uk/live-well/exercise/strength-and-flexibility-exercises/strength-exercises/",
+    "2024 Adult Compendium of Physical Activities: Conditioning Exercise table (codes 02020, 02022, 02024, 02032). https://pacompendium.com/conditioning-exercise ; full PDF: https://pacompendium.com/wp-content/uploads/2024/01/2024-adult-compendium_1_2024.pdf",
+    "Herrmann SD et al. (2024), 2024 Adult Compendium of Physical Activities: a third update of the energy costs of human activities, *J Sport Health Sci*. https://pubmed.ncbi.nlm.nih.gov/38242596/",
+    "ACSM Position Stand (2009), Progression Models in Resistance Training for Healthy Adults. https://www.sportgeneeskunde.com/wp-content/uploads/ACSM-Position-Stand-Progression-Models-in-Resistance-Training-for-Healthy-Adults.pdf",
+    "Hartmann H, Wirth K, Klusemann M (2013), Analysis of the load on the knee joint and vertebral column with changes in squatting depth and weight load, *Sports Medicine*. https://pubmed.ncbi.nlm.nih.gov/23821469/",
+    "Fry AC, Smith JC, Schilling BK (2003), Effect of knee position on hip and knee torques during the barbell squat, *J Strength Cond Res* 17(4):629–33. Read via summary: https://www.physio-network.com/blog/knees-shouldnt-pass-toes-during-the-squat-myth-or-truth/",
+    "Impact of home-based squat training with two depths on lower limb muscle parameters and physical functional tests in older adults (*Scientific Reports*, 2021). https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7994411/",
+    "Perkin OJ et al. (2019), Exercise snacking to improve muscle function in healthy older adults: a pilot study. https://pubmed.ncbi.nlm.nih.gov/31687210/",
+    "NSCA, Bridge: Optimizing Squat Technique (video). https://www.nsca.com/education/videos/bridge-series/bridge-optimizing-squat-technique",
+    "Dynamic knee valgus kinematics and their relationship to pain (women with patellofemoral pain). https://profiles.wustl.edu/en/publications/dynamic-knee-valgus-kinematics-and-their-relationship-to-pain-in-/",
+    "Arthritis Foundation, How to Squat Correctly. https://www.arthritis.org/living-with-arthritis/pain-management/joint-protection/squat-correctly.php",
+    "NHS trust knee osteoarthritis exercise leaflet (Royal Berkshire NHS FT). https://royalberkshire.nhs.uk/leaflets/osteoarthritis-of-the-knee-advice-and-exercises",
+    "Maternal and fetal responses to acute high-intensity resistance exercise during pregnancy (*BJSM*, 2025). https://pubmed.ncbi.nlm.nih.gov/39694629/",
+    "Metrological comparison of MediaPipe and inertial sensors for knee flexion angle during squats (Università eCampus, 2026). https://iris.uniecampus.it/handle/11389/91575",
+    "The ExRx.net bodyweight squat page couldn't be retrieved. Muscle roles were cross-checked using ExRx pages for related movements and the other sources above.",
+    "No Harvard Health squat-technique article was found.",
+    "The Compendium has no squat-specific bodyweight code.",
+    "Stance: The NHS says hip-width, ACE says slightly wider than hip-width, and Mayo's video says slightly wider than shoulder-width. FitPlate chose \"hip- to shoulder-width, start slightly wider than hips.\"",
+    "Toes: Mayo says point them ahead; ACE says turn them slightly out. FitPlate chose \"slightly out (5–15°, est.) or straight, whichever is comfortable.\" Evidence on toe angle is thin.",
+    "Depth: Mayo says about a 90° knee bend or as low as you can; the NHS says as far as is comfortable; Hartmann 2013 found deep squats are not harmful for healthy knees; arthritis sources advise not going below the knees. FitPlate chose \"thighs about parallel as the target, comfortable depth for beginners, shallower for knee OA.\"",
+    "Knees past toes: Some popular sources still say never let the knees pass the toes. Fry et al. 2003 found that blocking forward knee travel increased load at the hips and lower back. FitPlate allows the knees to pass the toes as long as the heels stay down and the knees track over the toes.",
+    "Knee tracking: The NHS says over the big toe; ACE says over the second toe. FitPlate uses \"in line with the 2nd–3rd toe.\"",
+    "Volume: Mayo suggests 1 set of 12–15; the NHS suggests 5 reps for older adults; ACSM suggests 8–12 reps for novices on 2–3 days. FitPlate built the table from ACSM and uses Mayo and NHS for the minimum and starting doses."
+  ],
+  "burnMinutes": null,
+  "gymAccess": [],
+  "suitsPreferences": [],
+  "swapsByAccess": null,
+  "conditionCautions": [],
+  "searchTags": null,
+  "tags": [
+    "Home",
+    "No equipment",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Strength",
+    "Legs",
+    "Glutes",
+    "Rep counter"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-10-09",
+      "file": "FitPlate_Fitness_2026-10-09.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

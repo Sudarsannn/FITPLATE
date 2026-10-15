@@ -1,0 +1,81 @@
+{
+  "id": "mustard-seeds",
+  "name": "Mustard seeds",
+  "aliases": [
+    "rai"
+  ],
+  "category": "Spice",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 200,
+        "max": 250,
+        "avg": 225,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 200,
+      "max": 250,
+      "avg": 225
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 20,
+    "max": 25,
+    "avg": 22.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 508,
+    "proteinG": 26,
+    "carbsG": 28,
+    "fatG": 36,
+    "fibreG": 12
+  },
+  "storage": "Airtight jar at room temperature, away from heat and moisture: up to about 1 year. No need to refrigerate.",
+  "substitutes": [
+    "Cumin seeds",
+    "Yellow mustard seeds",
+    "Skip it"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 1,
+      "quantity": 1,
+      "unit": "g",
+      "raw": "1 g (¼ tsp)"
+    },
+    {
+      "dishNumber": 4,
+      "quantity": 1,
+      "unit": "g",
+      "raw": "1 g (¼ tsp)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

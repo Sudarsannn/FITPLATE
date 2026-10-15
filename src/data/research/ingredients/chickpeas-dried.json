@@ -1,0 +1,75 @@
+{
+  "id": "chickpeas-dried",
+  "name": "Chickpeas, dried",
+  "aliases": [
+    "kabuli chana"
+  ],
+  "category": "Pulse",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-05",
+        "min": 140,
+        "max": 180,
+        "avg": 160,
+        "confidence": "High",
+        "sourceFile": "FitPlate_Ingredients_2026-10-05.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 140,
+      "max": 180,
+      "avg": 160
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-05",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 14,
+    "max": 18,
+    "avg": 16
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 378,
+    "proteinG": 20.5,
+    "carbsG": 63,
+    "fatG": 6,
+    "fibreG": 12.2
+  },
+  "storage": "Airtight jar in a cool, dry cupboard for up to a year. A few dried red chillies or a bay leaf in the jar helps keep insects away. Boiled chickpeas: fridge 3–4 days, or freeze in portions for up to 3 months.",
+  "substitutes": [
+    "Canned chickpeas",
+    "Kala chana (desi brown chickpeas)",
+    "White peas (safed vatana / ragda peas)"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 8,
+      "quantity": 50,
+      "unit": "g",
+      "raw": "50 g dry (about ¼ cup; about 120 g once boiled)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-05",
+      "file": "FitPlate_Ingredients_2026-10-05.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "drumstick",
+  "name": "Drumstick",
+  "aliases": [
+    "moringa",
+    "saragva",
+    "shevga"
+  ],
+  "category": "Vegetable",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-05",
+        "min": 80,
+        "max": 120,
+        "avg": 100,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-05.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 85,
+      "max": 115,
+      "avg": 100
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-05",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 8.5,
+    "max": 11.5,
+    "avg": 10
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 37,
+    "proteinG": 2.1,
+    "carbsG": 8.5,
+    "fatG": 0.2,
+    "fibreG": 3.2
+  },
+  "storage": "Wrap in a paper towel or newspaper, put in a bag, and store in the fridge vegetable drawer for up to a week. Cut pieces can be blanched for 2 minutes and frozen for about 2 months, for sambar only.",
+  "substitutes": [
+    "Pumpkin or bottle gourd",
+    "Brinjal (baingan)",
+    "Okra (bhindi)"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 9,
+      "quantity": 25,
+      "unit": "g",
+      "raw": "25 g (three 5 cm pieces)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-05",
+      "file": "FitPlate_Ingredients_2026-10-05.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 80.0–120.0 was wider than 30% of avg 100.0; narrowed to ±15%."
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "spring-onion",
+  "name": "Spring onion",
+  "aliases": [
+    "hara pyaz"
+  ],
+  "category": "Vegetable",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-05",
+        "min": 90,
+        "max": 100,
+        "avg": 95,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-05.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 90,
+      "max": 100,
+      "avg": 95
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-05",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 9,
+    "max": 10,
+    "avg": 9.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 32,
+    "proteinG": 1.8,
+    "carbsG": 7.3,
+    "fatG": 0.2,
+    "fibreG": 2.6
+  },
+  "storage": "wrap unwashed stalks in a damp paper towel inside a bag or box, for 5–7 days. Alternatively, stand roots in a glass of water in the fridge.",
+  "substitutes": [
+    "Leeks (thinly sliced)",
+    "Onion (white part) plus coriander (green part)",
+    "Chives"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 10,
+      "quantity": 20,
+      "unit": "g",
+      "raw": "20 g (2 stalks; whites and greens chopped separately)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-05",
+      "file": "FitPlate_Ingredients_2026-10-05.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

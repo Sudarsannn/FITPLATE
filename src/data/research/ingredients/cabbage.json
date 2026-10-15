@@ -1,0 +1,75 @@
+{
+  "id": "cabbage",
+  "name": "Cabbage",
+  "aliases": [
+    "patta gobi"
+  ],
+  "category": "Vegetable",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-05",
+        "min": 30,
+        "max": 40,
+        "avg": 35,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-05.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 30,
+      "max": 40,
+      "avg": 35
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-05",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 3,
+    "max": 4,
+    "avg": 3.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 25,
+    "proteinG": 1.3,
+    "carbsG": 5.8,
+    "fatG": 0.1,
+    "fibreG": 2.5
+  },
+  "storage": "Whole head: unwashed, in a loose bag in the fridge crisper for 1–2 weeks. Peel off and discard wilted outer leaves before use. Cut/shredded: wrap tightly or keep in an airtight box in the fridge; use within 2–3 days. Blanched shreds can be frozen for cooking.",
+  "substitutes": [
+    "Chinese cabbage (napa)",
+    "Bok choy or lettuce (iceberg)",
+    "Extra capsicum/beans"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 10,
+      "quantity": 30,
+      "unit": "g",
+      "raw": "30 g (½ cup finely shredded)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-05",
+      "file": "FitPlate_Ingredients_2026-10-05.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

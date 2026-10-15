@@ -42,7 +42,7 @@
       "householdMeasure": "⅛ tsp"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "salt",
       "name": "Salt",
       "quantity": 2.5,
       "unit": "g",
@@ -56,14 +56,14 @@
       "householdMeasure": "2 tsp (1 for masala, 1 for tadka)"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "cumin-seeds",
       "name": "Cumin seeds (jeera)",
       "quantity": 1,
       "unit": "g",
       "householdMeasure": "½ tsp"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "asafoetida",
       "name": "Asafoetida (hing)",
       "quantity": 0.1,
       "unit": "g",
@@ -105,7 +105,7 @@
       "householdMeasure": "1 small, slit"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "dried-red-chilli-whole",
       "name": "Dried red chilli (sukhi lal mirch)",
       "quantity": 1,
       "unit": null,
@@ -119,7 +119,7 @@
       "householdMeasure": "¼ tsp"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "garam-masala",
       "name": "Garam masala",
       "quantity": 0.3,
       "unit": "g",
@@ -417,7 +417,16 @@
     "fatG": 11,
     "fibreG": 6.5
   },
-  "microNutrientsEstimate": null,
+  "microNutrientsEstimate": {
+    "values": {
+      "thiamine": 0.2,
+      "vitamin-a": 31.8,
+      "vitamin-c": 12.7,
+      "vitamin-k": 13.7
+    },
+    "coveragePct": 25,
+    "basis": "partial estimate from ingredient quantities"
+  },
   "asOrdered": null,
   "orderPrice": {
     "priceHistory": [
@@ -481,6 +490,21 @@
   ],
   "dietClaims": [],
   "fasting": null,
+  "dietTags": null,
+  "tags": [
+    "Veg",
+    "Contains milk",
+    "Contains gluten",
+    "Lunch",
+    "Dinner",
+    "North Indian",
+    "Under 60 min",
+    "Beginner",
+    "High fibre"
+  ],
+  "description": null,
+  "familyId": null,
+  "variants": [],
   "needsReview": [],
   "versions": [
     {
@@ -495,7 +519,8 @@
     "steps": "newest",
     "healthiness": "newest",
     "researchRating": "newest",
-    "sources": "union"
+    "sources": "union",
+    "tags": "tag engine (tags.ts) on the merged dish"
   },
   "mergeNotes": [
     "price flag: narrowed",

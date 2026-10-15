@@ -1,0 +1,73 @@
+{
+  "id": "french-beans",
+  "name": "French beans",
+  "aliases": [],
+  "category": "Vegetable",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-05",
+        "min": 80,
+        "max": 105,
+        "avg": 90,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-05.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 80,
+      "max": 105,
+      "avg": 90
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-05",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 8,
+    "max": 10.5,
+    "avg": 9
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 31,
+    "proteinG": 1.8,
+    "carbsG": 7,
+    "fatG": 0.2,
+    "fibreG": 2.7
+  },
+  "storage": "Whole: unwashed, in a perforated bag or box in the fridge crisper for 4–6 days. Cut: airtight box in the fridge for 2 days. Blanched beans freeze well for 8–10 months.",
+  "substitutes": [
+    "Cluster beans (gavar) or flat beans (papdi)",
+    "Frozen cut beans",
+    "Green peas or extra capsicum"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 10,
+      "quantity": 25,
+      "unit": "g",
+      "raw": "25 g (5–6 beans, thinly sliced)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-05",
+      "file": "FitPlate_Ingredients_2026-10-05.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

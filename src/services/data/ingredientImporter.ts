@@ -25,8 +25,25 @@ export type IngredientVersion = {
   substitutes: string[];
   macrosPer100: Macros | null;
   nutritionPer100g: NutrientPer100 | null;
+  usedIn: UsedIn[];
   notes: string[];
 };
+
+/** One "Used in" line: "- 6 Upma: 20 g (2 tbsp, finely diced)" or "- Dish 1, Poha: 60 g (thick)". */
+export type UsedIn = { dishNumber: number; quantity: number | null; unit: string | null; raw: string };
+
+/** Spec F7: the ingredient file's own "Used in" list, cross-checked against dish tables by the runner. */
+export function parseUsedIn(body: string): UsedIn[] {
+  const out: UsedIn[] = [];
+  for (const b of bullets(body)) {
+    const p = plain(b).trim();
+    const m = /^(?:dish\s+)?(\d+)[,.]?\s+[^:]+:\s*(.*)$/i.exec(p);
+    if (!m) continue;
+    const q = /^(?:about\s+|~\s*)?(\d+(?:\.\d+)?)\s*(g|kg|ml|l)\b/i.exec(m[2].trim());
+    out.push({ dishNumber: Number(m[1]), quantity: q ? Number(q[1]) : null, unit: q ? q[2].toLowerCase() : null, raw: m[2].trim() });
+  }
+  return out;
+}
 
 /** Canonical id: kebab-case of the English name, without the Indian names in brackets. */
 export function ingredientId(name: string): string {
@@ -88,11 +105,35 @@ const JSON_FIELDS: [keyof Omit<NutrientPer100, 'basis'>, string][] = [
   ['vitaminCMg', 'vitamin_c_mg'],
   ['vitaminAUgRae', 'vitamin_a_ug_rae'],
   ['folateUgDfe', 'folate_ug_dfe'],
+  // fitplate.ingredient.v2 (ingredient PATCH_02, files from 2026-10-12); null in v1 blocks.
+  ['waterG', 'water_g'],
+  ['cholesterolMg', 'cholesterol_mg'],
+  ['transFatG', 'trans_fat_g'],
+  ['mufaG', 'mufa_g'],
+  ['pufaG', 'pufa_g'],
+  ['omega3G', 'omega3_g'],
+  ['addedSugarsG', 'added_sugars_g'],
+  ['phosphorusMg', 'phosphorus_mg'],
+  ['seleniumUg', 'selenium_ug'],
+  ['copperMg', 'copper_mg'],
+  ['manganeseMg', 'manganese_mg'],
+  ['iodineUg', 'iodine_ug'],
+  ['vitaminDUg', 'vitamin_d_ug'],
+  ['vitaminEMg', 'vitamin_e_mg'],
+  ['vitaminKUg', 'vitamin_k_ug'],
+  ['thiaminMg', 'thiamin_mg'],
+  ['riboflavinMg', 'riboflavin_mg'],
+  ['niacinMg', 'niacin_mg'],
+  ['vitaminB6Mg', 'vitamin_b6_mg'],
+  ['vitaminB12Ug', 'vitamin_b12_ug'],
 ];
+
+/** Ingredient profile schemas; other blocks (e.g. fitplate.ingredient_facts.v1, PATCH_03) are not profiles. */
+const PROFILE_SCHEMAS = new Set(['fitplate.ingredient.v1', 'fitplate.ingredient.v2']);
 
 type JsonBlock = { id?: string; name?: string; nutrition?: Record<string, unknown> | null };
 
-/** Every fitplate.ingredient.v1 JSON block in the file. Malformed blocks are skipped and reported. */
+/** Every fitplate.ingredient.v1 / v2 JSON block in the file. Malformed blocks are skipped and reported. */
 export function parseJsonBlocks(text: string): { blocks: JsonBlock[]; errors: string[] } {
   const blocks: JsonBlock[] = [];
   const errors: string[] = [];
@@ -101,7 +142,7 @@ export function parseJsonBlocks(text: string): { blocks: JsonBlock[]; errors: st
   while ((m = re.exec(text))) {
     try {
       const parsed = JSON.parse(m[1]) as JsonBlock & { schema?: string };
-      if (parsed.schema === 'fitplate.ingredient.v1') blocks.push(parsed);
+      if (parsed.schema && PROFILE_SCHEMAS.has(parsed.schema)) blocks.push(parsed);
     } catch (e) {
       errors.push(`JSON block at offset ${m.index}: ${(e as Error).message}`);
     }
@@ -181,6 +222,7 @@ export function parseIngredientFile(text: string, file: string): { items: Ingred
       substitutes,
       macrosPer100: parseMacros(body(6, /nutrition/i)),
       nutritionPer100g: json ? nutritionFromJson(json.nutrition ?? null) : null,
+      usedIn: parseUsedIn(body(7, /used in/i)),
       notes,
     });
   }

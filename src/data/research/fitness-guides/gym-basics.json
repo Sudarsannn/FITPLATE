@@ -1,0 +1,190 @@
+{
+  "id": "gym-basics",
+  "number": 1,
+  "type": "knowledge",
+  "name": "Gym basics: safety, etiquette and your first visit",
+  "section": "gym",
+  "keyTakeaways": [
+    "Screen yourself first. Answer seven simple yes/no health questions (PAR-Q+ style) before your first session. Any \"yes\" means talk to a doctor or qualified exercise professional first. Chest pain, fainting or unusual breathlessness with normal activity means stop and get checked before you exercise at all (ACSM 2015 screening update; PAR-Q+).",
+    "Your first visit is about learning, not about working hard. Take the trial or induction, let a floor trainer show you around, set up machines with them, and do a short, light session. Most beginner injuries in weight rooms come from dropped weights and poor handling, not from being \"too weak\" (Kerr et al. 2010: 65.5% of emergency-department weight-training injuries came from weights dropping on the person).",
+    "Carry five things: water bottle, small sweat towel, clean indoor shoes (closed-toe), a lock for the locker, and your membership ID or app. Wear breathable clothes.",
+    "Five etiquette rules cover most of it: re-rack weights and plates, wipe the bench or machine after use, share machines between sets, keep your phone off the equipment, and give lifters space.",
+    "Mumbai heat and humidity change the plan. Drink through the day, not just at the gym. Go easier for the first one to two weeks while your body adjusts, and stop at the first sign of heat illness, such as dizziness, nausea, cramps or a headache. Many Indian gyms are not fully air-conditioned, and humidity cuts how well sweat cools you."
+  ],
+  "mistakes": [],
+  "appGuidance": [
+    "Show 7 PAR-Q+ style yes/no questions in plain English, with a Hindi option (est. requirement for India-first).",
+    "If Q2 (chest pain) or Q3 (fainting or dizziness) = yes → show: \"Please see a doctor before starting exercise. FitPlate will keep your plan paused.\" Allow only gentle walking or breathing content.",
+    "Any other yes → show: \"Check with your doctor or a qualified trainer before you start. Until then, we'll keep sessions light to moderate.\" Cap the intensity at RPE 5/10 (est.) and remove heavy barbell items.",
+    "All no → unlock beginner plans.",
+    "Re-ask every 12 months (est.), or when the user reports a new condition, pregnancy or surgery.",
+    "\"Pack: water bottle, small towel, indoor shoes, lock, membership ID.\"",
+    "\"Ask the trainer to set up these machines with you: [first 3 to 4 machines from the plan].\"",
+    "\"Today is a learning day. Keep it light, about 30 to 45 minutes.\"",
+    "Before any barbell lift: \"Collars on? Safety bars set?\"",
+    "Before bench press or squat: \"Ask a trainer to spot you if this is a new weight.\"",
+    "On every rest timer: rotate tips such as \"Sip water\", \"Wipe the bench when you're done\" and \"Let others work in during rest\".",
+    "After the last set of a station: \"Re-rack your weights and wipe down.\"",
+    "Treadmill start: \"Clip the safety key to your clothes.\"",
+    "Breathing cue on every strength move: \"Breathe out as you push or pull.\"",
+    "If the user says the gym is non-AC, or the local heat index is high (est. trigger: heat index ≥ 32 °C), shorten cardio blocks by 25% (est.), add extra water-break prompts every 10 to 15 minutes (est.), and show heat-illness signs.",
+    "In the first 2 weeks of training, keep total session time at or under 45 minutes (est.) to allow acclimatisation.",
+    "\"Stop now if you feel: chest pain or pressure, unusual breathlessness, dizziness, a racing or irregular heartbeat, nausea or a cold sweat.\" Tapping it pauses the workout, shows \"Sit down, tell gym staff. If it doesn't settle quickly, call 112 / 108\", and logs the event. Suggest seeing a doctor before the next session.",
+    "Default 2 to 3 gym days a week, never two heavy full-body days back to back for beginners (est.).",
+    "Offer a \"quiet hours\" suggestion (mid-morning, afternoon, after 9 pm, est.) for the first 2 weeks."
+  ],
+  "rules": [
+    {
+      "if": "user answers yes to chest pain at rest, during daily activity or exercise (PAR-Q+ Q2)",
+      "then": "block all workouts except gentle walking and breathing; show 'Please see a doctor before starting exercise'",
+      "source": "PAR-Q+; ACSM 2015 preparticipation screening (Riebe et al., MSSE 2015)"
+    },
+    {
+      "if": "user answers yes to dizziness-related loss of balance or fainting in last 12 months (PAR-Q+ Q3)",
+      "then": "block workouts and advise medical check before starting",
+      "source": "PAR-Q+; ACSM 2015 preparticipation screening"
+    },
+    {
+      "if": "user answers yes to any other PAR-Q+ question (heart condition/high BP, chronic condition, prescribed medication, bone/joint problem, supervised-only)",
+      "then": "advise consulting a doctor or qualified exercise professional; cap intensity at light-moderate (RPE <= 5, est.) and hide heavy barbell items until user confirms clearance",
+      "source": "PAR-Q+; ACSM 2015 preparticipation screening"
+    },
+    {
+      "if": "user is currently inactive and reports known cardiovascular, metabolic or renal disease",
+      "then": "require user to confirm medical clearance before unlocking any gym plan",
+      "source": "ACSM 2015 preparticipation screening algorithm"
+    },
+    {
+      "if": "user exercises regularly with known disease and no symptoms and wants vigorous intensity",
+      "then": "require confirmation of medical clearance before enabling vigorous sessions",
+      "source": "ACSM 2015 preparticipation screening algorithm"
+    },
+    {
+      "if": "all PAR-Q+ answers are no",
+      "then": "unlock beginner gym plans starting at light-moderate intensity with gradual progression",
+      "source": "PAR-Q+; ACSM 2015 preparticipation screening"
+    },
+    {
+      "if": "PAR-Q+ answers older than 12 months, or user reports new condition, pregnancy or surgery",
+      "then": "re-run screening questions",
+      "source": "FitPlate default (est.)"
+    },
+    {
+      "if": "user is about to do first gym visit",
+      "then": "show checklist: water bottle, small towel, closed-toe indoor shoes, lock, membership ID; suggest asking floor trainer to set up 3-4 machines; target 30-45 min light session (est.)",
+      "source": "Nuffield Health beginner tips; Harvard Health strength-training tips"
+    },
+    {
+      "if": "workout includes any strength exercise",
+      "then": "show 5-10 min warm-up first and breathing cue 'Breathe out as you push or pull; don't hold your breath'",
+      "source": "Harvard Health strength-training tips; NSCA Strength & Conditioning Journal (Valsalva and blood pressure)"
+    },
+    {
+      "if": "user has high blood pressure, heart or stroke history, or recent abdominal surgery",
+      "then": "add warning to avoid breath-holding and maximal straining; prefer moderate loads",
+      "source": "NSCA Strength & Conditioning Journal column on Valsalva; Harvard Health"
+    },
+    {
+      "if": "exercise uses a barbell on back, over face or overhead",
+      "then": "prompt 'Collars on, safety bars set, ask a trainer to spot for new weights'; beginners default to machine or dumbbell alternative",
+      "source": "NSCA spotting guidance (secondary sources); Kerr et al. 2010 AJSM"
+    },
+    {
+      "if": "user finishes a station",
+      "then": "prompt 'Re-rack weights, strip plates and wipe down the equipment'",
+      "source": "ACE gym etiquette (Nitschke); Kerr et al. 2010 (dropped weights leading injury cause)"
+    },
+    {
+      "if": "rest timer running at a gym station",
+      "then": "rotate etiquette and hydration tips: sip water, let others work in, keep phone off equipment",
+      "source": "ACE gym etiquette; general gym guidance"
+    },
+    {
+      "if": "user taps stop or reports chest pain, unusual breathlessness, dizziness, irregular or racing heartbeat, nausea or cold sweat",
+      "then": "end workout; show 'Sit down, tell gym staff; if not settling quickly call 112 or 108'; recommend doctor review before next session",
+      "source": "Mayo Clinic exercise warning signs"
+    },
+    {
+      "if": "user reports sharp or joint pain during an exercise",
+      "then": "stop that exercise, suggest an alternative or rest, and advise professional assessment if it persists",
+      "source": "Mayo Clinic ('exercise shouldn't hurt')"
+    },
+    {
+      "if": "gym is non-AC or local heat index >= 32 C (est. trigger)",
+      "then": "shorten cardio blocks by about 25% (est.), add water-break prompts every 10-15 min (est.), show heat-illness signs",
+      "source": "NOAA heat index caution band via Qatar-Weill Cornell; NHS heat exhaustion guidance"
+    },
+    {
+      "if": "user is in first 2 weeks of training in hot, humid conditions",
+      "then": "keep sessions <= 45 min (est.) and intensity light-moderate to allow heat acclimatisation",
+      "source": "Qatar-Weill Cornell heat guidance (1-2 weeks to acclimatise)"
+    },
+    {
+      "if": "pre-workout reminder 4 hours before scheduled session",
+      "then": "suggest slowly drinking about 5-7 mL per kg body weight; if urine dark or scanty about 2 h before, suggest another 3-5 mL per kg",
+      "source": "ACSM 2007 Exercise and Fluid Replacement position stand (via secondary summaries)"
+    },
+    {
+      "if": "user reports heat exhaustion signs (dizziness, headache, nausea, heavy sweating, cramps, intense thirst)",
+      "then": "stop workout; advise cool place, loosen clothing, drink water or ORS, cool skin; if not better in about 30 min or confusion or collapse, call 112 or 108",
+      "source": "NHS heat exhaustion and heatstroke"
+    },
+    {
+      "if": "scheduling a beginner gym plan",
+      "then": "default 2-3 non-consecutive gym days per week covering all major muscle groups",
+      "source": "ACSM 2009 Progression Models (novice 2-3 d/wk); ACSM 2026 resistance training position stand; NHS activity guidelines"
+    },
+    {
+      "if": "user picks a gym time during likely peak hours in first 2 weeks",
+      "then": "suggest quieter slots (mid-morning, afternoon or late evening, est.) for easier trainer access",
+      "source": "General gym guidance (Nuffield Health; first-timer guides)"
+    }
+  ],
+  "weeks": null,
+  "sources": [
+    "Riebe D et al. Updating ACSM's recommendations for exercise preparticipation health screening. *Med Sci Sports Exerc* 2015;47(11):2473-2479. https://digitalcommons.uri.edu/kinesiology_facpubs/180",
+    "ACSM blog: ACSM's New Exercise Preparticipation Screening: Removing Barriers to Initiating Exercise. https://www.acsm.org/blog-detail/acsm-certified-blog/2018/02/01/exercise-preparticipation-screening-removing-barriers-initiating-exercise",
+    "ACE: New Preparticipation Screening Guidelines: What Health and Fitness Pros Need to Know. https://www.acefitness.org/education-and-resources/professional/expert-articles/6921/new-preparticipation-screening-guidelines-what-health-and-fitness-pros-need-to-know/",
+    "Study applying the ACSM algorithm to NHANES data (PMC). https://pmc.ncbi.nlm.nih.gov/articles/PMC7059860",
+    "PAR-Q+ form (2024/2025 version, fillable copy). https://southlake.ca/wp-content/uploads/2025/02/PARQPlus2025-Form-fillable.pdf and https://richmond.ca/__shared/assets/Par-Q_Fitness_Sign65595.pdf",
+    "Study on PAR-Q+ comprehension (2024 preprint). https://www.preprints.org/manuscript/202405.0306",
+    "ACE (Nitschke E.): Do You Have Bad Gym Etiquette? https://www.acefitness.org/resources/everyone/blog/6397/do-you-have-bad-gym-etiquette/",
+    "Kerr ZY, Collins CL, Comstock RD. Epidemiology of weight training-related injuries presenting to US emergency departments, 1990 to 2007. *Am J Sports Med* 2010. https://pubmed.ncbi.nlm.nih.gov/20139328/",
+    "Mayo Clinic: Exercise and bone/joint problems, How can I expect to feel? https://mayoclinic.org/healthy-lifestyle/adult-health/in-depth/bone-and-joint-problems/art-20046047",
+    "Mayo Clinic Care Network: No pain, no gain? No way. https://www.mymlc.com/health-information/articles/n/no-pain-no-gain-no-way/",
+    "Mayo Clinic Community Health: Exercise in summer heat. https://communityhealth.mayoclinic.org/featured-stories/exercise-summer-heat",
+    "Harvard Health: 8 tips for safe and effective strength training. https://content.health.harvard.edu/blog/8-tips-for-safe-and-effective-strength-training",
+    "Harvard Health: Blood pressure and weight training. https://www.health.harvard.edu/heart-health/my-blood-pressure-was-once-very-high-but-is-now-under-control-is-it-safe-for-me-to-take-up-weight-training",
+    "NSCA *Strength and Conditioning Journal* column on breathing and the Valsalva maneuver (PDF copy). https://paulogentil.com/pdf/C17.pdf",
+    "NSCA spotting guidance (secondary summary). https://experiencelife.lifetime.life/article/on-the-spot/ and https://open-exam-prep.com/study-guides/cscs/exercise-technique/spotting-equipment-safety",
+    "ACSM position stand: Exercise and Fluid Replacement (2007). https://pubmed.ncbi.nlm.nih.gov/17277604/ ; secondary summaries of the pre-exercise mL/kg advice: https://littleleague.org/downloads/hydration-strategy-table and https://hksi.org.hk/news-publications/scientific-publications/education-pamphlets/sport-nutrition-education-series/water-the-fountain-of-life",
+    "NHS: Heat exhaustion and heatstroke. https://www.nhs.uk/conditions/heat-exhaustion-heatstroke/",
+    "NHS Forth Valley: Physical activity guidelines for adults 19 to 64. https://nhsforthvalley.com/wp-content/uploads/2022/12/Guidelines-for-adults-19-to-64-years-.pdf",
+    "Weill Cornell Medicine-Qatar: Exercising outdoors in the summer (humidity above 70%, acclimatisation, NOAA heat index). https://qatar-weill.cornell.edu/institute-for-population-health/community/stay-safe-stay-healthy/issue/exercising-outdoors-in-the-summer",
+    "Ratamess NA et al. ACSM Position Stand: Progression Models in Resistance Training for Healthy Adults. *Med Sci Sports Exerc* 2009;41(3):687-708. https://www.sportgeneeskunde.com/wp-content/uploads/ACSM-Position-Stand-Progression-Models-in-Resistance-Training-for-Healthy-Adults.pdf",
+    "ACSM 2026 resistance training guidelines update. https://acsm.org/resistance-training-guidelines-update-2026/ and https://www.newswise.com/articles/acsm-unveils-landmark-2026-resistance-training-guidelines-first-update-in-17-years",
+    "University of Florida (2011): Gym equipment unlikely source of MRSA. https://ufhealth.org/news/2011/gym-equipment-unlikely-source-mrsa",
+    "Bioscience Journal (2024): Staphylococcal and fungal contamination in fitness centres, Northern Cyprus. https://seer.ufu.br/index.php/biosciencejournal/article/view/69905",
+    "Nuffield Health: Beginner's tips / new to the gym. https://www.nuffieldhealth.com/article/new-to-the-gym-here-are-5-tips-for-new-starters",
+    "IMD city weather, Mumbai-Colaba (single-day humidity reading, 22 Oct 2024). https://city.imd.gov.in/citywx/city_weather_test_try_warnings.php?id=43057",
+    "Study of temperature and humidity conditions in Mumbai in October (heat index). https://routesjournal.org/2020/11/01/r2052/",
+    "Business Today: Indian gym trial experience. https://www.businesstoday.in/magazine/bt-more/story/definitely-a-first-128721-2008-07-22"
+  ],
+  "lastResearched": "2026-10-09",
+  "tags": [
+    "Gym",
+    "Guide"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-10-09",
+      "file": "FitPlate_Fitness_2026-10-09.md"
+    }
+  ],
+  "mergeMethod": {
+    "rules": "single",
+    "sources": "union"
+  },
+  "mergeNotes": []
+}

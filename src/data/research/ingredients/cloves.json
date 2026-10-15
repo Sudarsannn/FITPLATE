@@ -1,0 +1,75 @@
+{
+  "id": "cloves",
+  "name": "Cloves",
+  "aliases": [
+    "laung"
+  ],
+  "category": "Spice",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 1800,
+        "max": 2420,
+        "avg": 2085,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 1800,
+      "max": 2420,
+      "avg": 2085
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 180,
+    "max": 242,
+    "avg": 208.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 274,
+    "proteinG": 6,
+    "carbsG": 66,
+    "fatG": 13,
+    "fibreG": 34
+  },
+  "storage": "Airtight jar, cool dark cupboard: up to 1–2 years.",
+  "substitutes": [
+    "Garam masala",
+    "Allspice",
+    "Skip it"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 2,
+      "quantity": null,
+      "unit": null,
+      "raw": "2 cloves"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

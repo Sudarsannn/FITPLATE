@@ -1,0 +1,599 @@
+{
+  "id": "surya-namaskar",
+  "number": 2,
+  "name": "Surya Namaskar (Sun Salutation)",
+  "otherNames": [
+    "Sun Salutation",
+    "Surya Namaskara",
+    "Suryanamaskar",
+    "Salutation to the sun"
+  ],
+  "section": "yoga_stretch",
+  "type": "yoga_asana",
+  "equipment": [
+    "yoga mat"
+  ],
+  "noEquipmentAlternative": "Folded towel or bedsheet on a non-slip floor or carpet; towel under the knees for knees-down versions",
+  "musclesPrimary": [
+    "deltoids",
+    "triceps brachii",
+    "pectoralis major",
+    "serratus anterior",
+    "rectus abdominis",
+    "transversus abdominis",
+    "erector spinae"
+  ],
+  "musclesSecondary": [
+    "hamstrings (stretch)",
+    "gastrocnemius and soleus (stretch)",
+    "iliopsoas and rectus femoris (stretch)",
+    "quadriceps",
+    "gluteus maximus",
+    "obliques",
+    "wrist and forearm muscles"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 3.5,
+  "compendiumCode": "02180",
+  "metOptions": [
+    {
+      "code": "02180",
+      "met": 3.5,
+      "activity": "MET: 3.5, 2024 Adult Compendium of Physical Activities, code 02180, \"Yoga, Surya Namaskar\" (Conditioning exercise heading)."
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "flexibility",
+      "sets": 1,
+      "reps": "2-4 rounds (each round = right and left side), 1 breath per step",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "1 breath per step (about 3 s inhale or exhale)",
+      "perWeek": 6
+    },
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 1,
+      "reps": "3-6 rounds",
+      "timeSec": null,
+      "restSec": 30,
+      "tempo": "1 breath per step",
+      "perWeek": 5
+    },
+    {
+      "level": "intermediate",
+      "goal": "relaxation",
+      "sets": 1,
+      "reps": "4-6 rounds",
+      "timeSec": null,
+      "restSec": null,
+      "tempo": "slow: hold steps 3, 4, 8, 9 for 3-5 breaths",
+      "perWeek": 6
+    },
+    {
+      "level": "intermediate",
+      "goal": "fat_loss",
+      "sets": 1,
+      "reps": "6-12 rounds continuous",
+      "timeSec": null,
+      "restSec": null,
+      "tempo": "1 breath per step",
+      "perWeek": 5
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 1,
+      "reps": "12 rounds",
+      "timeSec": null,
+      "restSec": null,
+      "tempo": "brisk, controlled, RPE 5-6",
+      "perWeek": 5
+    },
+    {
+      "level": "advanced",
+      "goal": "endurance",
+      "sets": 1,
+      "reps": "12-24 rounds",
+      "timeSec": null,
+      "restSec": null,
+      "tempo": "brisk, RPE 6-7",
+      "perWeek": 5
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "stand",
+        "joint": "hip",
+        "angleDeg": ">= 160",
+        "parsed": {
+          "op": ">=",
+          "value": 160,
+          "max": null
+        }
+      },
+      {
+        "name": "arms_up",
+        "joint": "shoulder",
+        "angleDeg": ">= 150",
+        "parsed": {
+          "op": ">=",
+          "value": 150,
+          "max": null
+        }
+      },
+      {
+        "name": "forward_fold",
+        "joint": "hip",
+        "angleDeg": "<= 100",
+        "parsed": {
+          "op": "<=",
+          "value": 100,
+          "max": null
+        }
+      },
+      {
+        "name": "lunge",
+        "joint": "front_knee",
+        "angleDeg": "70-110",
+        "parsed": {
+          "op": "between",
+          "value": 70,
+          "max": 110
+        }
+      },
+      {
+        "name": "plank",
+        "joint": "shoulder_hip_ankle_line",
+        "angleDeg": ">= 160",
+        "parsed": {
+          "op": ">=",
+          "value": 160,
+          "max": null
+        }
+      },
+      {
+        "name": "eight_limb",
+        "joint": "hip_above_shoulder",
+        "angleDeg": "n/a (position check)",
+        "parsed": null
+      },
+      {
+        "name": "cobra",
+        "joint": "elbow",
+        "angleDeg": "100-170",
+        "parsed": {
+          "op": "between",
+          "value": 100,
+          "max": 170
+        }
+      },
+      {
+        "name": "mountain",
+        "joint": "hip",
+        "angleDeg": "50-110",
+        "parsed": {
+          "op": "between",
+          "value": 50,
+          "max": 110
+        }
+      },
+      {
+        "name": "lunge_return",
+        "joint": "front_knee",
+        "angleDeg": "70-110",
+        "parsed": {
+          "op": "between",
+          "value": 70,
+          "max": 110
+        }
+      },
+      {
+        "name": "forward_fold_return",
+        "joint": "hip",
+        "angleDeg": "<= 100",
+        "parsed": {
+          "op": "<=",
+          "value": 100,
+          "max": null
+        }
+      },
+      {
+        "name": "stand_return",
+        "joint": "hip",
+        "angleDeg": ">= 160",
+        "parsed": {
+          "op": ">=",
+          "value": 160,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 12
+  },
+  "formChecks": [
+    {
+      "joint": "hip",
+      "rule": "plank shoulder-hip-ankle line < 150 deg",
+      "message": "Hips sagging: tighten your belly"
+    },
+    {
+      "joint": "hip",
+      "rule": "plank shoulder-hip-ankle line > 195 deg (piked)",
+      "message": "Lower your hips into one line"
+    },
+    {
+      "joint": "knee",
+      "rule": "forward fold with knee >= 175 deg and rounded back",
+      "message": "Bend your knees, keep your back long"
+    },
+    {
+      "joint": "knee",
+      "rule": "lunge front knee angle < 70 deg",
+      "message": "Front knee over your ankle"
+    },
+    {
+      "joint": "spine",
+      "rule": "arms-up trunk lean back > 30 deg",
+      "message": "Lean back only slightly"
+    },
+    {
+      "joint": "shoulder",
+      "rule": "cobra shoulders close to ears",
+      "message": "Shoulders down, away from your ears"
+    },
+    {
+      "joint": "hip",
+      "rule": "eight-limb pose hips below shoulders",
+      "message": "Keep your hips lifted a little"
+    },
+    {
+      "joint": "hip",
+      "rule": "same leg back in both halves of a round",
+      "message": "Switch legs for the second half"
+    },
+    {
+      "joint": "tempo",
+      "rule": "transition faster than 0.5 s per step",
+      "message": "Slow down: one breath per move"
+    }
+  ],
+  "safetyFlags": [
+    "coronary_artery_disease",
+    "spinal_injury",
+    "hernia",
+    "peptic_ulcer",
+    "high_blood_pressure_slow_only",
+    "glaucoma",
+    "lower_back_problems",
+    "wrist_problems",
+    "knee_problems",
+    "pregnancy",
+    "recent_surgery",
+    "vertigo",
+    "menstruation_optional_rest"
+  ],
+  "progressions": [
+    "Slow holds of 3-5 breaths per pose",
+    "12 then 24 rounds at a brisk pace",
+    "Ashtanga Surya Namaskar A and B with Chaturanga and Upward dog (no jumping in flats)"
+  ],
+  "regressions": [
+    "Chair Surya Namaskar",
+    "Half Sun Salutation (standing steps 1-3 only)",
+    "Knees-down version with hands on blocks and baby cobra"
+  ],
+  "videoShots": [
+    {
+      "seconds": 10,
+      "angle": "side, hip height, 3 m",
+      "shows": "full half-round sped up 3x",
+      "textOverlay": "Surya Namaskar: 12 steps, 1 breath each"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "prayer, arms up, forward fold with bent knees (slow motion on hip hinge)",
+      "textOverlay": "Inhale up, exhale fold. Bend your knees!"
+    },
+    {
+      "seconds": 6,
+      "angle": "side at mat level, then front",
+      "shows": "right leg back into low lunge",
+      "textOverlay": "Inhale: right leg back, front knee over ankle"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, floor level, 2 m",
+      "shows": "plank to knees-chest-chin (slow motion on lowering)",
+      "textOverlay": "Knees, chest, chin. Elbows in"
+    },
+    {
+      "seconds": 6,
+      "angle": "side and 45 degrees, 1.5 m",
+      "shows": "cobra",
+      "textOverlay": "Inhale: lift chest, shoulders down"
+    },
+    {
+      "seconds": 6,
+      "angle": "side, 2.5 m",
+      "shows": "mountain pose (inverted V)",
+      "textOverlay": "Exhale: hips up, knees bent is fine"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "step forward with hand help, fold, rise, prayer",
+      "textOverlay": "Step forward, fold, rise, prayer"
+    },
+    {
+      "seconds": 10,
+      "angle": "side, split screen",
+      "shows": "common mistakes vs correct form",
+      "textOverlay": "Wrong / Right"
+    }
+  ],
+  "lastResearched": "2026-10-10",
+  "setupSteps": [
+    "Timing: practise on an empty stomach or 3 to 4 hours after a large meal (yoga guides agree on this; the Common Yoga Protocol also advises an empty or light stomach). Early morning is traditional, facing the sun if possible, but any time works. If done in the evening, use the slow pace.",
+    "Clear the space: move chairs and side tables away. Check there is nothing in front of you at arm's length and nothing above you (ceiling fan blades) when you reach up. Switch the fan to low if it is close to your raised hands.",
+    "Mat placement: lay the mat lengthwise with its front edge facing a clear wall or window. On tiles, put the mat on a rug or use a non-slip mat so it does not slide when you step back.",
+    "Clothing: fitted T-shirt and leggings or track pants that do not ride up when you fold forward. Bare feet (socks slip).",
+    "Starting position (Samasthiti / Tadasana base): stand at the front edge of the mat, feet together (big toes touching) or, for beginners or anyone with balance issues, hip-width apart. Weight spread evenly across both feet, slightly towards the balls of the feet. Arms relaxed by the sides.",
+    "Decide which leg goes back first: the usual convention (and the AYUSH-style version used here) is the right leg back in step 4 for the first half-round, and the left leg back in the second half. One full round = both halves (24 movements in total).",
+    "Decide your pace: beginners start slow, about one breath per step (a half-round in roughly 30 to 60 seconds (est.)), and rest standing or in Shavasana (lying flat) between rounds if needed.",
+    "Props for beginners (optional): a folded towel under the knees for the knees-down lunge and eight-limb pose; two yoga blocks, thick books or a sturdy step under the hands if the hands do not reach the floor in the forward fold."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Pranamasana / Namaskarasana (Prayer pose)",
+      "action": "from the starting position, bring the palms together in front of the centre of your chest (namaskar mudra), thumbs lightly touching the breastbone, elbows relaxed down.",
+      "feel": "feet rooted, body tall and still, shoulders soft.",
+      "breathing": "exhale fully (then breathe normally for a moment to settle).",
+      "tempo": "1 breath, or 3 to 5 breaths before the first round to settle in.",
+      "visualCheck": "side: ears, shoulders, hips and ankles stacked in one vertical line. Front: palms centred on the chest, feet together or evenly apart, shoulders level."
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Hasta Uttanasana (Raised arms pose; *hasta* = hand, *uttana* = intense stretch)",
+      "action": "raise the arms forward and up overhead, upper arms near the ears, palms together or shoulder-width apart facing each other. Lift the chest and lean back only slightly from the upper back, pushing the hips a little forward and keeping the legs straight but not locked.",
+      "feel": "a long stretch from the heels to the fingertips and across the front of the body; no pinching in the lower back.",
+      "breathing": "inhale.",
+      "tempo": "about 3 seconds (The Yoga Institute teaches a 3-second inhale here) or 1 breath.",
+      "visualCheck": "side: a gentle, even curve through the whole back, arms beside the ears, head between the arms (not dropped back). Front: arms equal height, hips level, not leaning to one side."
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Hasta Padasana / Padahastasana (Hand-to-foot pose; Standing forward bend)",
+      "action": "bend forward from the hips (not the waist), keeping the back long as you go down. Bring the palms flat to the floor beside the feet, or the fingertips to the floor, shins or blocks. Bring the forehead towards the knees only as far as is comfortable.",
+      "feel": "a stretch along the back of the legs and the back. Beginners: bend the knees as much as needed so the palms reach the floor and the lower back is not strained.",
+      "breathing": "exhale.",
+      "tempo": "about 3 seconds or 1 breath.",
+      "visualCheck": "side: hips stacked over or slightly in front of the heels, spine folding from the hip crease, palms in line with the toes. Front: hands either side of the feet, weight even on both feet."
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Ashwa Sanchalanasana (Equestrian / Low lunge pose; *ashwa* = horse, *sanchalana* = movement); right leg back",
+      "action": "keeping the hands where they are, step the right foot as far back as you comfortably can. Lower the right knee to the floor (on a towel if needed). The left foot stays flat between the hands, left knee directly over the left ankle. Lift the chest and look forward or slightly up.",
+      "feel": "a stretch in the front of the right hip and thigh; the left leg is working.",
+      "breathing": "inhale.",
+      "tempo": "1 breath.",
+      "visualCheck": "side: front shin roughly vertical, front knee not past the toes, back leg long, chest lifted. Front: front knee pointing straight ahead (not falling in or out), hands either side of the front foot, shoulders level."
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Dandasana (Stick pose; here a high plank; *danda* = stick or staff)",
+      "action": "step the left foot back to meet the right, lift the knees, and hold the body in one straight line from head to heels, hands under the shoulders, arms straight.",
+      "feel": "belly and thighs tight, shoulders pushing the floor away.",
+      "breathing": "sources differ (see below). For beginners: take a natural breath as you step back; the common Indian teaching is to inhale (or hold the breath in) here.",
+      "tempo": "1 breath.",
+      "visualCheck": "side: straight line ears–shoulders–hips–ankles; hips neither sagging nor piked up; wrists under shoulders. Front: hands shoulder-width, fingers spread, elbows soft (not hyperextended)."
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Ashtanga Namaskara (Salute with eight parts or points; *ashta* = eight, *anga* = limb)",
+      "action": "lower the knees to the floor, then slide the chest and chin (or forehead) down between the hands, keeping the hips slightly lifted. Eight points touch the floor: 2 feet (toes), 2 knees, 2 hands, chest and chin. Elbows stay close to the ribs, pointing back.",
+      "feel": "a gentle arch in the lower back with hips raised; arms and chest controlling the lowering.",
+      "breathing": "exhale (most guides). Bihar School teaches holding the breath out here.",
+      "tempo": "1 breath, lowering slowly over about 2 to 3 seconds (est.).",
+      "visualCheck": "side: hips higher than the chest, chin and chest on the floor, toes tucked. Front: elbows hugging the sides, not winging out."
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Bhujangasana (Cobra pose; *bhujanga* = serpent)",
+      "action": "slide the chest forward, lower the hips to the floor and point the toes back (tops of the feet down). Press lightly into the hands and lift the head and chest, using your back muscles more than your arms. Keep elbows slightly bent and close to the body, navel near the floor.",
+      "feel": "a gentle, even bend through the upper and middle back; no sharp pressure in the lower back.",
+      "breathing": "inhale.",
+      "tempo": "1 breath.",
+      "visualCheck": "side: shoulders drawn down away from ears, neck long (gaze forward or slightly up, not cranked back), pubic bone on the floor. Front: elbows equal, shoulders level."
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Parvatasana (Mountain pose; inverted \"V\"; very close to Adho Mukha Svanasana, Downward-facing dog)",
+      "action": "tuck the toes, press into the hands and lift the hips up and back so the body makes an upside-down \"V\". Arms and back in one line, head between the arms. Heels reach towards the floor; they do not have to touch.",
+      "feel": "stretch in the calves, hamstrings and shoulders. Beginners: bend the knees to keep the back long rather than rounding.",
+      "breathing": "exhale.",
+      "tempo": "1 breath (slow mode: hold 3 to 5 breaths).",
+      "visualCheck": "side: long straight line from wrists through shoulders to hips; hips the highest point; heels sinking. Front: hands shoulder-width, feet hip-width, weight even on both hands."
+    },
+    {
+      "n": 9,
+      "part": null,
+      "title": "Ashwa Sanchalanasana (Equestrian / Low lunge pose); right foot forward",
+      "action": "step the right foot forward between the hands (the same leg that went back in step 4). Lower the left knee to the floor. Lift the chest. If the foot does not reach, step it partway and use a hand to help bring it forward.",
+      "feel": "stretch in the front of the left hip; right leg working.",
+      "breathing": "inhale.",
+      "tempo": "1 breath.",
+      "visualCheck": "same as step 4, sides swapped: front shin vertical, front foot between the hands."
+    },
+    {
+      "n": 10,
+      "part": null,
+      "title": "Hasta Padasana / Padahastasana (Hand-to-foot pose)",
+      "action": "step the left foot forward next to the right. Straighten the legs as much as is comfortable and fold forward, palms beside the feet.",
+      "feel": "stretch in the back of the legs; knees bent as needed.",
+      "breathing": "exhale.",
+      "tempo": "1 breath.",
+      "visualCheck": "as step 3."
+    },
+    {
+      "n": 11,
+      "part": null,
+      "title": "Hasta Uttanasana (Raised arms pose)",
+      "action": "with a long back (and knees softly bent if your back is sensitive), come up to standing, raising the arms forward and up overhead, and lean back slightly.",
+      "feel": "whole-body stretch; legs pressing into the floor.",
+      "breathing": "inhale.",
+      "tempo": "1 breath.",
+      "visualCheck": "as step 2."
+    },
+    {
+      "n": 12,
+      "part": null,
+      "title": "Pranamasana / Namaskarasana (Prayer pose), returning to Tadasana",
+      "action": "bring the palms together in front of the chest, then (optionally) lower the arms to the sides.",
+      "feel": "heart rate slightly up; settle and stand still.",
+      "breathing": "exhale.",
+      "tempo": "1 breath; pause 1 to 2 breaths before the second half.",
+      "visualCheck": "as step 1."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Rushing",
+      "text": "Rushing. Going too fast breaks the link between breath and movement and causes sloppy, jerky transitions. Fix: one breath per step; slow down until every pose is clean, then speed up."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. Beginners often hold their breath while stepping back or lowering, which raises blood pressure and tires you out sooner. Fix: breathe out on every fold and lowering; if confused, just keep breathing naturally."
+    },
+    {
+      "title": "Forcing straight legs in the forward fold",
+      "text": "Forcing straight legs in the forward fold. This rounds and strains the lower back. Fix: bend the knees until the palms reach the floor or blocks; straighten gradually over weeks."
+    },
+    {
+      "title": "Big backbend in step 2 and cobra",
+      "text": "Big backbend in step 2 and cobra. Leaning far back by bending only the lower back, or pushing up hard with the arms in cobra, compresses the lower back. Fix: lean back only slightly from the upper back; in cobra lift only as high as the back muscles allow, elbows bent."
+    },
+    {
+      "title": "Hips sagging (or piking) in plank",
+      "text": "Hips sagging (or piking) in plank. Strains the lower back or skips the core work. Fix: squeeze the belly and thighs; knees down if you cannot hold a straight line."
+    },
+    {
+      "title": "Flopping into eight-limb pose",
+      "text": "Flopping into eight-limb pose. Dropping the whole body flat to the floor, or the hips landing first, loads the shoulders and back. Fix: knees down first, then lower chest and chin slowly with elbows hugging the ribs."
+    },
+    {
+      "title": "Front foot not reaching between the hands in step 9",
+      "text": "Front foot not reaching between the hands in step 9. The knee ends up way past the toes or the foot outside the hand. Fix: step partway, then use your hand to help the foot forward, or lower the back knee first."
+    },
+    {
+      "title": "Hands too far forward in mountain pose / heels forced down",
+      "text": "Hands too far forward in mountain pose / heels forced down. Puts strain on the shoulders and rounds the back. Fix: bend the knees, keep the back long; heels do not need to touch the floor."
+    }
+  ],
+  "safetyNotes": [
+    "Avoid or get medical advice first (per the Yoga Certification Board, Ministry of AYUSH): coronary artery disease, spinal injury, hernia, peptic ulcer. Traditional guidance also suggests avoiding it during menstruation; many modern teachers leave this as personal choice. We follow \"rest or practise gently, your choice\".",
+    "High blood pressure: practise slowly only, after medical clearance, keep the head above the heart as much as possible (shorter forward folds, hands on blocks), never hold the breath. Fast Surya Namaskar raised systolic pressure in children (Bhavanani et al.); slow practice lowered diastolic pressure.",
+    "Glaucoma or eye pressure problems: the forward fold and mountain pose put the head below the heart; a review of yoga adverse events advises people with glaucoma to avoid inversions. Use the chair or half version.",
+    "Lower-back problems or slipped disc: bend the knees in the folds, keep backbends small, skip cobra or keep it very low; get advice for disc problems.",
+    "Wrist, shoulder or elbow problems (common in desk workers): use the half or chair version, or put weight on fists or forearms; keep plank short.",
+    "Knee problems: towel under knees, lunges with the back knee down, shorter lunges.",
+    "Pregnancy: only under an experienced prenatal yoga teacher with the doctor's approval; avoid lying on the belly (eight-limb pose, cobra) and deep folds.",
+    "Recent surgery (especially abdominal, spine, eye) or a recent fracture: avoid until cleared by the doctor.",
+    "Vertigo or low blood pressure: come up from the fold slowly; dizziness on standing is common.",
+    "Stop immediately if: chest pain or tightness, dizziness or blurred vision, severe breathlessness, sharp or shooting pain (back, wrist, knee, shoulder), numbness or tingling.",
+    "Spotter: not needed. Etiquette (class/shared space): keep your mat in line, do not jump back in a shared room, keep phone silent."
+  ],
+  "sources": [
+    "Yoga Certification Board (Ministry of AYUSH), Suryanamaskar page (12 steps from 8 asanas, 4 repeated; second half with the other leg; contraindications): https://yogacertificationboard.nic.in/suryanamaskar/suryanamaskar.php",
+    "Ministry of AYUSH, Common Yoga Protocol booklet (general practice guidelines; edited with MDNIY): https://www.mea.gov.in/images/pdf/common-yoga-protocol-english.pdf",
+    "Morarji Desai National Institute of Yoga (MDNIY) newsletter (Surya Namaskar campaign): https://www.yogamdniy.nic.in/files/newsletter/newsletter_657957b5ac1d11702451125.pdf",
+    "Herrmann SD et al. 2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024: https://pubmed.ncbi.nlm.nih.gov/38242596/ ; Conditioning exercise table (02180 Yoga, Surya Namaskar, 3.5 METs): https://pacompendium.com/conditioning-exercise ; 2024 Compendium tracking guide: https://pacompendium.com/wp-content/uploads/2025/02/4_2024_adult-compendium-tracking-guide-1-2024.pdf",
+    "Acute effects of Surya Namaskar on the cardiovascular and metabolic system, J Bodyw Mov Ther 2011: https://pubmed.ncbi.nlm.nih.gov/21665111/",
+    "Bhutkar MV et al. How effective is sun salutation in improving muscle strength, general body endurance and body composition? Asian J Sports Med 2011: https://pmc.ncbi.nlm.nih.gov/articles/PMC3289222",
+    "Larson-Meyer DE. A systematic review of the energy cost and metabolic intensity of yoga. Med Sci Sports Exerc 2016 (abstract): https://qigonginstitute.org/abstract-print/12605",
+    "Pryor et al. Metabolic demands of yoga at varying tempos and compared with walking. J Phys Act Health 2019: https://facpub.library.fresnostate.edu/items/show/78",
+    "Bhavanani AB et al. Differential effects of slow and fast Surya Namaskar, Int J Yoga 2011: https://pmc.ncbi.nlm.nih.gov/articles/PMC3193657",
+    "Bandyopadhyay N, Das T, Mondal S. Practicing Surya Namaskar: a sequence of yogic postures for overall health and wellness among healthy adults (systematic review). Physical Education Theory and Methodology 2025: https://tmfv.com.ua/journal/article/view/3165",
+    "An observational study of the metabolic cost of the yoga sequence Surya Namaskar B. IJESAB: https://digitalcommons.wku.edu/ijesab/vol8/iss2/66",
+    "Sinha B et al. cardiorespiratory responses to Surya Namaskar vs bicycle exercise, Indian J Physiol Pharmacol 2013 (background): https://ijpp.com/IJPP%20archives/2013_57_2_Apr%20-%20Jun/169-176.pdf",
+    "Bihar School (Satyananda) Surya Namaskara tradition, review in J Ayurveda Integr Med 2022: https://pmc.ncbi.nlm.nih.gov/articles/PMC8814407/",
+    "The Yoga Institute (Mumbai), Surya Namaskar steps: https://theyogainstitute.org/surya-namaskar-the-sun-salutation/",
+    "Art of Living, Sun Salutation guide: https://www.artofliving.org/au-en/sun-salutation",
+    "ACE Fitness, A beginner's guide to sun salutations: https://www.acefitness.org/resources/everyone/blog/6835/a-beginner-s-guide-to-sun-salutations/",
+    "Cramer H et al. Adverse events associated with yoga: a systematic review of case reports and case series. PLoS One 2013: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3797727/",
+    "Ministry of AYUSH global Surya Namaskar (13 rounds) news coverage: https://www.tribuneindia.com/news/nation/ayush-ministry-to-hold-global-surya-namaskar-event-on-makar-sankranti-359682/amp"
+  ],
+  "burnMinutes": null,
+  "gymAccess": [],
+  "suitsPreferences": [],
+  "swapsByAccess": null,
+  "conditionCautions": [],
+  "searchTags": null,
+  "tags": [
+    "Yoga & stretch",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Yoga",
+    "Shoulders",
+    "Arms",
+    "Chest",
+    "Core",
+    "Back",
+    "Rep counter"
+  ],
+  "needsReview": [
+    "rep_counter phase \"eight_limb\" (hip_above_shoulder): angle \"n/a (position check)\" is not a parseable angle",
+    "form check \"plank shoulder-hip-ankle line > 195 deg (piked)\": angle 195 is above 180°, which an unsigned three-point angle can't reach"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-10",
+      "file": "FitPlate_Fitness_2026-10-10.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

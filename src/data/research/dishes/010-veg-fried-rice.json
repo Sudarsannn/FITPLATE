@@ -56,35 +56,35 @@
       "householdMeasure": "¼ medium onion, diced small"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "spring-onion",
       "name": "Spring onion (hara pyaz)",
       "quantity": 20,
       "unit": "g",
       "householdMeasure": "2 stalks; whites chopped separately from the greens"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "carrot",
       "name": "Carrot (gajar)",
       "quantity": 30,
       "unit": "g",
       "householdMeasure": "¼ medium carrot, finely diced"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "french-beans",
       "name": "French beans",
       "quantity": 25,
       "unit": "g",
       "householdMeasure": "5–6 beans, thinly sliced"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "cabbage",
       "name": "Cabbage (patta gobi)",
       "quantity": 30,
       "unit": "g",
       "householdMeasure": "½ cup finely shredded"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "green-capsicum",
       "name": "Green capsicum (shimla mirch)",
       "quantity": 25,
       "unit": "g",
@@ -112,14 +112,14 @@
       "householdMeasure": "¼ tsp"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "salt",
       "name": "Salt",
       "quantity": 0.75,
       "unit": "g",
       "householdMeasure": "⅛ tsp (adjust; soy sauce is already salty)"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "sugar",
       "name": "Sugar (optional)",
       "quantity": 0.5,
       "unit": "g",
@@ -373,7 +373,15 @@
     "fatG": 10.5,
     "fibreG": 4.5
   },
-  "microNutrientsEstimate": null,
+  "microNutrientsEstimate": {
+    "values": {
+      "vitamin-a": 337.5,
+      "vitamin-c": 40.7,
+      "vitamin-k": 42.7
+    },
+    "coveragePct": 27,
+    "basis": "partial estimate from ingredient quantities"
+  },
   "asOrdered": null,
   "orderPrice": {
     "priceHistory": [
@@ -443,6 +451,21 @@
   ],
   "dietClaims": [],
   "fasting": null,
+  "dietTags": null,
+  "tags": [
+    "Veg",
+    "Contains peanut",
+    "Contains gluten",
+    "Contains soy",
+    "Lunch",
+    "Dinner",
+    "Indo-Chinese",
+    "Under 30 min",
+    "Beginner"
+  ],
+  "description": null,
+  "familyId": null,
+  "variants": [],
   "needsReview": [],
   "versions": [
     {
@@ -457,7 +480,8 @@
     "steps": "newest",
     "healthiness": "newest",
     "researchRating": "newest",
-    "sources": "union"
+    "sources": "union",
+    "tags": "tag engine (tags.ts) on the merged dish"
   },
   "mergeNotes": [
     "price flag: narrowed",

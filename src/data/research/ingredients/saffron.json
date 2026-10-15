@@ -1,0 +1,73 @@
+{
+  "id": "saffron",
+  "name": "Saffron",
+  "aliases": [
+    "kesar"
+  ],
+  "category": "Spice",
+  "standardUnit": "g",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 320,
+        "max": 420,
+        "avg": 375,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 320,
+      "max": 420,
+      "avg": 375
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 32000,
+    "max": 42000,
+    "avg": 37500
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 310,
+    "proteinG": 11,
+    "carbsG": 65,
+    "fatG": 5.9,
+    "fibreG": 3.9
+  },
+  "storage": "Airtight, light-proof container in a cool, dry cupboard: 1–2 years. Keep away from moisture and light.",
+  "substitutes": [
+    "Skip it"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 2,
+      "quantity": null,
+      "unit": null,
+      "raw": "6–8 strands, optional (a pinch)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

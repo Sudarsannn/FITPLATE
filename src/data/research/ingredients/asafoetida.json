@@ -1,0 +1,78 @@
+{
+  "id": "asafoetida",
+  "name": "Asafoetida",
+  "aliases": [
+    "hing",
+    "compounded"
+  ],
+  "category": "Spice",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 1580,
+        "max": 1800,
+        "avg": 1685,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 1580,
+      "max": 1800,
+      "avg": 1685
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 158,
+    "max": 180,
+    "avg": 168.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 297,
+    "proteinG": 4,
+    "carbsG": 68,
+    "fatG": 1.1,
+    "fibreG": 4.1
+  },
+  "storage": "Keep the lid tightly closed, and store it inside a second airtight jar so the smell does not spread to other foods. Room temperature, dry. It lasts about 1 year open.",
+  "substitutes": [],
+  "usedIn": [
+    {
+      "dishNumber": 4,
+      "quantity": null,
+      "unit": null,
+      "raw": "a pinch (optional, potato masala)"
+    },
+    {
+      "dishNumber": 5,
+      "quantity": 0.1,
+      "unit": "g",
+      "raw": "0.1 g (1 pinch)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

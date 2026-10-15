@@ -1,0 +1,73 @@
+{
+  "id": "dried-fenugreek-leaves",
+  "name": "Dried fenugreek leaves",
+  "aliases": [
+    "kasuri methi"
+  ],
+  "category": "Spice (dried herb)",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 765,
+        "max": 1000,
+        "avg": 925,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 765,
+      "max": 1000,
+      "avg": 925
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 76.5,
+    "max": 100,
+    "avg": 92.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 300,
+    "proteinG": 20,
+    "carbsG": 50,
+    "fatG": 5,
+    "fibreG": 25
+  },
+  "storage": "Airtight container, dark dry cupboard: 6–12 months. Keep away from steam near the stove.",
+  "substitutes": [
+    "Skip it"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 3,
+      "quantity": 0.5,
+      "unit": "g",
+      "raw": "0.5 g (½ tsp, crushed)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

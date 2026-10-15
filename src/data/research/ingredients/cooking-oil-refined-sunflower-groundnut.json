@@ -49,6 +49,32 @@
     "Rice bran or soyabean oil",
     "Ghee"
   ],
+  "usedIn": [
+    {
+      "dishNumber": 1,
+      "quantity": 10,
+      "unit": "ml",
+      "raw": "10 ml (about 9 g, 2 tsp), groundnut or any neutral oil."
+    },
+    {
+      "dishNumber": 2,
+      "quantity": 10,
+      "unit": "ml",
+      "raw": "10 ml (2 tsp), sunflower/groundnut."
+    },
+    {
+      "dishNumber": 3,
+      "quantity": 5,
+      "unit": "ml",
+      "raw": "5 ml (1 tsp), vegetable oil."
+    },
+    {
+      "dishNumber": 4,
+      "quantity": 10,
+      "unit": "g",
+      "raw": "10 g in total, 5 g (1 tsp) for the tawa plus 5 g (1 tsp) for the potato masala, groundnut or sunflower."
+    }
+  ],
   "versions": [
     {
       "date": "2026-10-04",
@@ -60,7 +86,8 @@
     "macrosPer100Estimate": "stable (single)",
     "aliases": "union",
     "substitutes": "union",
-    "storage": "newest"
+    "storage": "newest",
+    "usedIn": "newest"
   },
   "mergeNotes": []
 }

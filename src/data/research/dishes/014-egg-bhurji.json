@@ -1,0 +1,456 @@
+{
+  "id": "014-egg-bhurji",
+  "number": 14,
+  "name": "Egg Bhurji",
+  "cuisine": "Maharashtrian / Mumbai street food (\"anda bhurji\", served at roadside bhurji-pav carts and Irani cafés), also cooked at home across North and West India",
+  "dietType": "egg",
+  "mealType": [
+    "breakfast"
+  ],
+  "difficulty": "Beginner",
+  "prepMin": 8,
+  "cookMin": 10,
+  "servings": 1,
+  "ingredients": [
+    {
+      "ingredientId": null,
+      "name": "Egg (anda), large",
+      "quantity": 3,
+      "unit": null,
+      "householdMeasure": "3 eggs"
+    },
+    {
+      "ingredientId": null,
+      "name": "Groundnut oil (or any neutral cooking oil)",
+      "quantity": 5,
+      "unit": "ml",
+      "householdMeasure": "1 tsp"
+    },
+    {
+      "ingredientId": "butter-salted",
+      "name": "Butter (makhan), salted, e.g. Amul",
+      "quantity": 7,
+      "unit": "g",
+      "householdMeasure": "1½ tsp"
+    },
+    {
+      "ingredientId": "cumin-seeds",
+      "name": "Cumin seeds (jeera)",
+      "quantity": 1,
+      "unit": "g",
+      "householdMeasure": "¼ tsp (optional)"
+    },
+    {
+      "ingredientId": "onion",
+      "name": "Onion (pyaz/kanda)",
+      "quantity": 60,
+      "unit": "g",
+      "householdMeasure": "1 small onion, finely chopped (about ½ cup)"
+    },
+    {
+      "ingredientId": "green-chilli",
+      "name": "Green chilli (hari mirch)",
+      "quantity": 5,
+      "unit": "g",
+      "householdMeasure": "1 chilli, finely chopped"
+    },
+    {
+      "ingredientId": "ginger-garlic-paste",
+      "name": "Ginger-garlic paste (adrak-lehsun paste)",
+      "quantity": 5,
+      "unit": "g",
+      "householdMeasure": "1 tsp"
+    },
+    {
+      "ingredientId": "tomato",
+      "name": "Tomato (tamatar)",
+      "quantity": 60,
+      "unit": "g",
+      "householdMeasure": "1 small tomato, finely chopped (about ⅓ cup)"
+    },
+    {
+      "ingredientId": "green-capsicum",
+      "name": "Capsicum (shimla mirch), green",
+      "quantity": 20,
+      "unit": "g",
+      "householdMeasure": "2 tbsp, finely chopped (optional, Mumbai cart style)"
+    },
+    {
+      "ingredientId": "turmeric-powder",
+      "name": "Turmeric powder (haldi)",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "⅛ tsp"
+    },
+    {
+      "ingredientId": "kashmiri-red-chilli-powder",
+      "name": "Kashmiri red chilli powder (lal mirch)",
+      "quantity": 1,
+      "unit": "g",
+      "householdMeasure": "½ tsp (level)"
+    },
+    {
+      "ingredientId": null,
+      "name": "Pav bhaji masala",
+      "quantity": 1.5,
+      "unit": "g",
+      "householdMeasure": "½ tsp"
+    },
+    {
+      "ingredientId": "salt",
+      "name": "Salt (namak)",
+      "quantity": 1.5,
+      "unit": "g",
+      "householdMeasure": "¼ tsp"
+    },
+    {
+      "ingredientId": "coriander-leaves",
+      "name": "Coriander leaves (dhania)",
+      "quantity": 5,
+      "unit": "g",
+      "householdMeasure": "1 tbsp, chopped"
+    }
+  ],
+  "equipment": [
+    "Kadai, tawa or 8-inch frying pan (non-stick is easiest for beginners; steel or iron works if you keep the heat at medium and keep stirring)",
+    "Mixing bowl for beating the eggs",
+    "Fork or small whisk",
+    "Flat spatula (wooden or silicone is gentlest on non-stick)",
+    "Chopping board and knife",
+    "Measuring spoons (normal teaspoons are a fine stand-in)",
+    "Optional for serving: a tawa to toast pav"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "title": "Chop the onion",
+      "text": "Peel and finely chop 60 g (1 small) onion.",
+      "timerSec": 90,
+      "tip": "Chop fine. Big onion pieces stay crunchy because the cook is short.",
+      "visualCue": "Small, even pieces about the size of a lentil.",
+      "cameraCheck": "About ½ cup chopped onion on the board",
+      "videoShot": "The knife rocking through the onion."
+    },
+    {
+      "n": 2,
+      "title": "Chop the tomato",
+      "text": "Finely chop 60 g (1 small) tomato.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Small, juicy cubes; no big skin pieces.",
+      "cameraCheck": "About ⅓ cup chopped tomato",
+      "videoShot": "The knife dicing the tomato."
+    },
+    {
+      "n": 3,
+      "title": "Chop the capsicum (optional)",
+      "text": "Finely chop 20 g capsicum.",
+      "timerSec": 40,
+      "tip": null,
+      "visualCue": "Tiny green squares",
+      "cameraCheck": "2 tbsp chopped capsicum",
+      "videoShot": "Knife chopping capsicum strips into cubes."
+    },
+    {
+      "n": 4,
+      "title": "Chop the chilli and coriander",
+      "text": "Finely chop 1 green chilli (5 g) and 1 tbsp (5 g) coriander leaves. Keep them in separate small heaps.",
+      "timerSec": 60,
+      "tip": "Remove the chilli seeds if you want less heat.",
+      "visualCue": "Fine green flecks, two heaps",
+      "cameraCheck": "The chilli and the coriander side by side",
+      "videoShot": "Coriander being chopped."
+    },
+    {
+      "n": 5,
+      "title": "Crack the eggs",
+      "text": "Crack 3 eggs into the bowl, one at a time.",
+      "timerSec": 30,
+      "tip": "Crack each egg on a flat surface, not the bowl rim, to get fewer shell pieces. Fish out any shell with a larger piece of shell.",
+      "visualCue": "Three whole yolks, no shell bits",
+      "cameraCheck": "3 eggs in the bowl",
+      "videoShot": "An egg cracking on the rim of the bowl."
+    },
+    {
+      "n": 6,
+      "title": "Beat the eggs",
+      "text": "Add a pinch of the salt (about a third of it) and beat with a fork.",
+      "timerSec": 40,
+      "tip": null,
+      "visualCue": "An even, pale-yellow mix with light froth and no streaks of white.",
+      "cameraCheck": "The beaten eggs in the bowl",
+      "videoShot": "The fork whisking in quick circles."
+    },
+    {
+      "n": 7,
+      "title": "Heat the fat",
+      "text": "Put the pan on medium heat. Add 1 tsp (5 ml) oil and 1 tsp of the butter (keep ½ tsp butter for the end).",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "The butter melts and foams lightly; it does not brown.",
+      "cameraCheck": "The pan with melted butter and oil",
+      "videoShot": "Butter melting and swirling into the oil."
+    },
+    {
+      "n": 8,
+      "title": "Add the cumin (optional)",
+      "text": "Add ¼ tsp (1 g) cumin seeds.",
+      "timerSec": 20,
+      "tip": null,
+      "visualCue": "The seeds sizzle and turn a shade darker.",
+      "cameraCheck": "Sizzling cumin in the pan",
+      "videoShot": "Cumin hitting the hot fat."
+    },
+    {
+      "n": 9,
+      "title": "Sauté the onion",
+      "text": "Add the chopped onion and stir.",
+      "timerSec": 150,
+      "tip": null,
+      "visualCue": "Soft and translucent, with light golden edges, not dark brown.",
+      "cameraCheck": "The onions in the pan",
+      "videoShot": "The spatula turning the onions."
+    },
+    {
+      "n": 10,
+      "title": "Add the chilli and ginger-garlic paste",
+      "text": "Add the green chilli and 1 tsp (5 g) ginger-garlic paste. Stir.",
+      "timerSec": 40,
+      "tip": "If it starts to stick, add 1 tsp water and keep stirring.",
+      "visualCue": "The raw garlic smell fades and it smells cooked and sweet.",
+      "cameraCheck": "The paste mixed through the onion",
+      "videoShot": "The paste being stirred in."
+    },
+    {
+      "n": 11,
+      "title": "Add the capsicum (optional)",
+      "text": "Add the capsicum and stir.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "The capsicum turns bright green and slightly soft.",
+      "cameraCheck": "Green flecks in the onion mix",
+      "videoShot": "Capsicum tossed through."
+    },
+    {
+      "n": 12,
+      "title": "Add the tomato and remaining salt",
+      "text": "Add the chopped tomato and the rest of the ¼ tsp salt. Stir.",
+      "timerSec": 120,
+      "tip": "Press the tomato pieces with the back of the spatula to speed this up.",
+      "visualCue": "The tomato breaks down into a soft, saucy mash.",
+      "cameraCheck": "The mashed tomato-onion masala",
+      "videoShot": "The spatula pressing the tomato."
+    },
+    {
+      "n": 13,
+      "title": "Lower the heat and add the spices",
+      "text": "Turn the flame to low. Add ⅛ tsp turmeric, ½ tsp Kashmiri chilli powder and ½ tsp pav bhaji masala. Stir.",
+      "timerSec": 40,
+      "tip": "Low heat stops the powders from burning and turning bitter.",
+      "visualCue": "The masala turns deep orange-red and the oil starts to show at the edges.",
+      "cameraCheck": "The red masala in the pan",
+      "videoShot": "The spices sprinkled on, then stirred."
+    },
+    {
+      "n": 14,
+      "title": "Add the eggs",
+      "text": "Turn the flame back to medium-low. Pour in the beaten eggs.",
+      "timerSec": 10,
+      "tip": null,
+      "visualCue": "The eggs spread over the masala and start to set at the edges.",
+      "cameraCheck": "Eggs poured over the masala",
+      "videoShot": "The yellow egg stream hitting the red masala."
+    },
+    {
+      "n": 15,
+      "title": "Let the eggs set briefly",
+      "text": "Leave them untouched.",
+      "timerSec": 20,
+      "tip": null,
+      "visualCue": "The bottom and edges look opaque and just set.",
+      "cameraCheck": "The edges setting in the pan",
+      "videoShot": "Close-up of the edges turning from glossy to matte."
+    },
+    {
+      "n": 16,
+      "title": "Scramble the eggs",
+      "text": "Push the set parts from the edges to the middle and mix them with the masala, folding gently.",
+      "timerSec": 90,
+      "tip": "Take the pan off the heat when the eggs still look slightly wet. They keep cooking from the heat of the pan.",
+      "visualCue": "Soft, moist curds coated in masala; a little wet egg still visible.",
+      "cameraCheck": "The soft scramble in the pan",
+      "videoShot": "The spatula folding big, soft curds."
+    },
+    {
+      "n": 17,
+      "title": "Break into smaller pieces (Mumbai style)",
+      "text": "Chop through the curds a few times with the edge of the spatula.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "Small, crumbly-but-moist pieces, like coarse crumbs.",
+      "cameraCheck": "The finely broken bhurji",
+      "videoShot": "The spatula edge chopping the eggs on the pan."
+    },
+    {
+      "n": 18,
+      "title": "Finish with butter and coriander",
+      "text": "Switch off the heat. Add the remaining ½ tsp butter and the chopped coriander. Fold once.",
+      "timerSec": 20,
+      "tip": null,
+      "visualCue": "A buttery gloss and green flecks all through",
+      "cameraCheck": "Butter melting on the bhurji",
+      "videoShot": "The butter melting and coriander falling in."
+    },
+    {
+      "n": 19,
+      "title": "Taste and adjust",
+      "text": "Taste a little. Add a pinch more salt or a squeeze of lemon only if needed.",
+      "timerSec": 20,
+      "tip": null,
+      "visualCue": "Balanced: salty, spicy, slightly tangy.",
+      "cameraCheck": "The finished bhurji in the pan",
+      "videoShot": "A spoon lifting a bite."
+    },
+    {
+      "n": 20,
+      "title": "Plate it",
+      "text": "Spoon the bhurji onto a plate straight away.",
+      "timerSec": 20,
+      "tip": null,
+      "visualCue": "Moist, orange-yellow crumbs with green flecks; no liquid pooling.",
+      "cameraCheck": "The served plate",
+      "videoShot": "A slow pan across the finished plate."
+    }
+  ],
+  "nutritionPerServing": {
+    "kcal": 365,
+    "proteinG": 21.3,
+    "carbsG": 13.9,
+    "fatG": 25.4,
+    "fibreG": 3.3
+  },
+  "microNutrientsEstimate": {
+    "values": {
+      "vitamin-a": 31.8,
+      "vitamin-c": 39.8,
+      "vitamin-k": 13.7
+    },
+    "coveragePct": 49,
+    "basis": "partial estimate from ingredient quantities"
+  },
+  "asOrdered": null,
+  "orderPrice": {
+    "priceHistory": [
+      {
+        "date": "2026-10-06",
+        "min": 130,
+        "max": 180,
+        "avg": 155,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-10-06.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 130,
+      "max": 180,
+      "avg": 160
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-06",
+    "stale": false,
+    "seasonal": false
+  },
+  "healthiness": {
+    "score": 7.5,
+    "restaurantScore": null,
+    "reasons": [
+      "three whole eggs give about 21 g of complete protein, and the dish is not deep-fried. The home version uses 1 tsp oil and 1½ tsp butter and adds about 140 g of onion, tomato and capsicum. Points come off for the saturated fat and cholesterol from the yolks plus butter, and for about 850 mg sodium. Street versions often use a large dollop of butter or extra oil and more salt and masala, and are almost always eaten with 2–4 butter-toasted pav (refined flour). That can push a plate past 700 kcal."
+    ]
+  },
+  "researchRating": {
+    "score": 4.6,
+    "basis": "egg bhurji is one of India's most-loved quick egg dishes and a Mumbai street-food classic. Recipe pages score very high (Indian Healthy Recipes 4.99/5 from 214 votes; Ministry of Curry 4.54/5 from 13 votes), and Mumbai food writers celebrate bhurji-pav carts and Irani cafés for it. Small deductions because it is seen as a simple everyday dish rather than a showpiece, and because many people find street versions too oily or buttery."
+  },
+  "storage": "Best eaten fresh. Leftovers can go in the fridge in an airtight box within 2 hours of cooking and keep for up to 2 days (cooked egg dishes are generally safe for 3–4 days, but texture suffers after day 1). Freezing is not recommended; the eggs turn watery and rubbery. To reheat, warm in a pan on low heat with 1 tsp water for 1–2 min, stirring, or microwave covered in 20-second bursts until steaming hot.",
+  "leftoverRemix": "Bhurji cheese toastie. Spread leftover bhurji between two slices of bread with 1 tsp green chutney and a slice of cheese. Toast on a tawa with ½ tsp butter for about 2 min per side, pressing with a spatula, until golden and the cheese melts. Cut diagonally and serve with ketchup.",
+  "burnOff": "about 5.2 km of running (366 ÷ 70 kcal/km, for a 70 kg adult), or about 7.3 km of brisk walking (about 1 hr 30 min at 5 km/h, using about 50 kcal/km for walking) (est.). With 2 buttered pav (about 605 kcal): about 8.6 km running or 12 km walking (est.).",
+  "sources": [
+    "Ranveer Brar, Mumbai Egg Bhurji Pav: https://ranveerbrar.com/recipes/mumbai-egg-bhurji-pav-recipe/",
+    "Ranveer Brar, 3 Egg Bhurji recipes (Amritsari): https://ranveerbrar.com/recipes/amritsari-egg-bhurji/",
+    "Whisk Affair, Egg Bhurji (Anda Bhurji), Mumbai street style: https://www.whiskaffair.com/egg-bhurji-recipe/",
+    "Archana's Kitchen, Mumbai Style Egg Bhurji: https://www.archanaskitchen.com/mumbai-style-egg-burji",
+    "Archana's Kitchen, Anda Bhurji: https://www.archanaskitchen.com/anda-bhurji-recipe-spicy-indian-style-scrambled-eggs",
+    "Sharmis Passions, Egg Bhurji (3 eggs): https://www.sharmispassions.com/wprm_print/egg-bhurji-anda-bhurji",
+    "Sinfully Spicy, Egg Bhurji: https://sinfullyspicy.com/wprm_print/egg-bhurji-indian-scrambled-eggs",
+    "Cubes N Juliennes, Egg Bhurji: https://www.cubesnjuliennes.com/egg-bhurji/",
+    "Indian Healthy Recipes, Egg Bhurji: https://www.indianhealthyrecipes.com/egg-bhurji-andhra-egg-porutu/",
+    "Tea for Turmeric, 15-Minute Egg Bhurji: https://www.teaforturmeric.com/egg-bhurji/",
+    "Ministry of Curry, Egg Bhurji: https://ministryofcurry.com/wprm_print/egg-bhurji-indian-scrambled-eggs-recipe",
+    "Sanjeev Kapoor, Anda Bhurji: https://www.sanjeevkapoor.com/Recipe/Anda-Bhurji.html",
+    "Flavors of Mumbai, Mumbai Style Egg Masala Bhurji: https://www.flavorsofmumbai.com/mumbai-style-anda-bhurji-scrambled-eggs-recipe/",
+    "Aahaaram Online, Anda Bhurji Mumbai street food style: https://aahaaramonline.com/anda-bhurji-scrambled-eggs-mumbai-street-food-style-parsi-akoori/",
+    "Finely Chopped, \"Come rain or shine an anda bhurjee will never let you down\" (sentiment): https://finelychopped.net/came-rain-or-shine-an-anda-bhurjee-will-never-let-you-down-mumbai-food-classics/",
+    "Homegrown, Mumbai egg bhurji trail (sentiment, old street prices): https://homegrown.co.in/homegrown-explore/mumbai-this-egg-bhurji-trail-is-perfect-for-monsoon-munchies",
+    "Homegrown, 24 of Mumbai's best egg dishes (sentiment): https://homegrown.co.in/homegrown-explore/eggscelent-choice-here-are-24-of-mumbais-best-egg-dishes",
+    "Wikipedia, Egg bhurji: https://en.wikipedia.org/wiki/Egg_bhurji",
+    "USDA FoodData Central: https://fdc.nal.usda.gov/",
+    "Swiggy, Bombay Coffee House, Fort (Burji Pav ₹230, 3 eggs + 2 pav): https://www.swiggy.com/menu/61313",
+    "Swiggy, Khandeshi Khanaval & Chinese Corner, Kalwa (dropped): https://www.swiggy.com/city/mumbai/khandeshi-khanaval-and-chinese-corner-kalwa-rest918005",
+    "Swiggy, Hotel Hindavi Snacks Corner, Ulhasnagar (dropped): https://www.swiggy.com/city/mumbai/hotel-hindavi-snacks-corner-ulhasnagar-rest1316323",
+    "Zomato, Lucky Bhurji Pav Center, Mahakali: https://www.zomato.com/mumbai/lucky-bhurji-pav-center-1-mahakali/order",
+    "magicpin, Lucky Bhurji Pav Center, Mahakali: https://magicpin.in/Mumbai/Mahakali/Restaurant/Lucky-Bhurji-Pav-Center/store/5a7c7b/",
+    "magicpin, Mohd Nasir Pav Bhaji And Bhurji Centre, Vile Parle West: https://magicpin.in/Mumbai/Vile-Parle-West/Restaurant/Mohd-Nasir-Pav-Bhaji-And-Bhurji-Centre/store/3c9c95/menu/",
+    "magicpin, Mohd Nasir Cooper Wala Pav Bhaji & Bhurji Centre, Vile Parle West: https://magicpin.in/Mumbai/Vile-Parle-West/Restaurant/Mohd-Nasir-Cooper-Wala-Pav-Bhaji-and-Bhurji-Centre/store/186205",
+    "magicpin, Tea & Paratha Center, Marol Naka: https://magicpin.in/Mumbai/Marol-Naka/Restaurant/Tea-and-Paratha-Center/store/3b4398/menu",
+    "magicpin, Cafe Irani, Dana Bunder: https://magicpin.in/Mumbai/Dana-Bunder/Restaurant/Cafe-Irani/store/8c806/menu/",
+    "magicpin, Goan Spice, Mumbai Central: https://magicpin.in/Mumbai/Mumbai-Central/Restaurant/Goan-Spice/store/355136/delivery/",
+    "Scribd menu documents (Chaayos, Kyani & Co.; dropped, unverified): https://www.scribd.com/document/895863312/Menu"
+  ],
+  "allergens": [
+    "peanut",
+    "milk",
+    "egg",
+    "gluten"
+  ],
+  "dietClaims": [],
+  "fasting": null,
+  "dietTags": null,
+  "tags": [
+    "Egg",
+    "Contains peanut",
+    "Contains milk",
+    "Contains egg",
+    "Contains gluten",
+    "Breakfast",
+    "Maharashtrian",
+    "Under 30 min",
+    "Beginner",
+    "High protein"
+  ],
+  "description": null,
+  "familyId": null,
+  "variants": [],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-10-06",
+      "file": "FitPlate_Dishes_2026-10-06.md"
+    }
+  ],
+  "mergeMethod": {
+    "nutritionPerServing": "stable (single)",
+    "orderPrice": "price engine (single)",
+    "ingredients": "newest",
+    "steps": "newest",
+    "healthiness": "newest",
+    "researchRating": "newest",
+    "sources": "union",
+    "tags": "tag engine (tags.ts) on the merged dish"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 130.0–180.0 was wider than 30% of avg 155.0; narrowed to ±15%."
+  ]
+}

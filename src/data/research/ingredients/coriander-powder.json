@@ -1,0 +1,73 @@
+{
+  "id": "coriander-powder",
+  "name": "Coriander powder",
+  "aliases": [
+    "dhania powder"
+  ],
+  "category": "Spice",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 305,
+        "max": 400,
+        "avg": 355,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 305,
+      "max": 400,
+      "avg": 355
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 30.5,
+    "max": 40,
+    "avg": 35.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 298,
+    "proteinG": 12.4,
+    "carbsG": 55,
+    "fatG": 17.8,
+    "fibreG": 41.9
+  },
+  "storage": "Airtight jar at room temperature, away from light, steam and heat. It lasts about 3–6 months once opened, and the aroma fades with time.",
+  "substitutes": [
+    "Coriander seeds, dry-roasted and ground fresh, 1"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 3,
+      "quantity": 1,
+      "unit": "g",
+      "raw": "1 g (½ tsp)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

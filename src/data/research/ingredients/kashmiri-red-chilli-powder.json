@@ -48,6 +48,20 @@
     "Paprika (sweet, not smoked), 1",
     "Deggi mirch, 1"
   ],
+  "usedIn": [
+    {
+      "dishNumber": 3,
+      "quantity": 2,
+      "unit": "g",
+      "raw": "2 g (¾ tsp)"
+    },
+    {
+      "dishNumber": 5,
+      "quantity": 0.5,
+      "unit": "g",
+      "raw": "0.5 g (¼ tsp)"
+    }
+  ],
   "versions": [
     {
       "date": "2026-10-04",
@@ -59,7 +73,8 @@
     "macrosPer100Estimate": "stable (single)",
     "aliases": "union",
     "substitutes": "union",
-    "storage": "newest"
+    "storage": "newest",
+    "usedIn": "newest"
   },
   "mergeNotes": []
 }

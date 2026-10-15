@@ -1,0 +1,82 @@
+{
+  "id": "bay-leaf",
+  "name": "Bay leaf",
+  "aliases": [
+    "tej patta"
+  ],
+  "category": "Spice",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 480,
+        "max": 680,
+        "avg": 580,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 495,
+      "max": 665,
+      "avg": 580
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 49.5,
+    "max": 66.5,
+    "avg": 58
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 313,
+    "proteinG": 7.6,
+    "carbsG": 75,
+    "fatG": 8.4,
+    "fibreG": 26
+  },
+  "storage": "Airtight jar or zip bag, cool dark cupboard: 6–12 months.",
+  "substitutes": [
+    "Skip it"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 2,
+      "quantity": null,
+      "unit": null,
+      "raw": "1 leaf"
+    },
+    {
+      "dishNumber": 3,
+      "quantity": null,
+      "unit": null,
+      "raw": "1 small leaf"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 480.0–680.0 was wider than 30% of avg 580.0; narrowed to ±15%."
+  ]
+}

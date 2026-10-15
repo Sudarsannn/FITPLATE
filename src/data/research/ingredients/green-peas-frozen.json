@@ -1,0 +1,60 @@
+{
+  "id": "green-peas-frozen",
+  "name": "Green peas, frozen",
+  "aliases": [
+    "matar"
+  ],
+  "category": "Vegetable (frozen)",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-05",
+        "min": 185,
+        "max": 230,
+        "avg": 210,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-05.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 185,
+      "max": 230,
+      "avg": 210
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-05",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 18.5,
+    "max": 23,
+    "avg": 21
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": null,
+  "storage": null,
+  "substitutes": [],
+  "usedIn": [],
+  "versions": [
+    {
+      "date": "2026-10-05",
+      "file": "FitPlate_Ingredients_2026-10-05.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (none)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": [
+    "2026-10-05: no detail section found"
+  ]
+}

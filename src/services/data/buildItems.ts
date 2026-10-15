@@ -10,6 +10,7 @@ import type { IngredientVersion } from './ingredientImporter';
 import { mergeOfficial, mergeStable, recipeChangedMaterially, unionList, type OfficialVersion } from './merge';
 import { slugify, splitName } from './markdown';
 import { computePriceEstimate, SEASONAL_PRODUCE, type PriceObservation } from './priceTrend';
+import { dishTags } from './tags';
 
 const byDate = <T extends { date: string }>(a: T, b: T) => a.date.localeCompare(b.date);
 
@@ -149,6 +150,7 @@ export function buildIngredient(all: IngredientVersion[], today: string): Ingred
   mergeMethod.aliases = 'union';
   mergeMethod.substitutes = 'union';
   mergeMethod.storage = 'newest';
+  mergeMethod.usedIn = 'newest';
 
   for (const v of versions) for (const n of v.notes) notes.push(`${v.date}: ${n}`);
   const unit = newest('standardUnit') as string | null;
@@ -166,6 +168,7 @@ export function buildIngredient(all: IngredientVersion[], today: string): Ingred
     macrosPer100Estimate: Object.values(macros.value).some((x) => x != null) ? macros.value : null,
     storage: newest('storage') as string | null,
     substitutes: unionList(...versions.map((v) => v.substitutes)),
+    usedIn: latest.usedIn ?? [],
     versions: versions.map((v) => ({ date: v.date, file: v.file })),
     mergeMethod,
     mergeNotes: notes,
@@ -210,7 +213,7 @@ export function buildDish(all: DishVersion[], today: string, index: IngredientIn
   // As-ordered values are published numbers: keep the newest block; its price is the order price.
   const asOrdered = [...versions].reverse().find((v) => v.asOrdered)?.asOrdered ?? null;
 
-  return {
+  const dish: Dish = {
     id: latest.id,
     number: latest.number,
     name: latest.name,
@@ -237,11 +240,22 @@ export function buildDish(all: DishVersion[], today: string, index: IngredientIn
     allergens: latest.allergens,
     dietClaims: latest.dietClaims,
     fasting: latest.fasting,
-    needsReview: latest.needsReview,
+    dietTags: latest.dietTags,
+    tags: [],
+    description: latest.description,
+    // Set across all dishes by assignFamilies() in the runner; one dish alone can't know its family.
+    familyId: null,
+    variants: latest.variants,
+    needsReview: [...latest.needsReview],
     versions: versions.map((v) => ({ date: v.date, file: v.file })),
     mergeMethod,
     mergeNotes: notes,
   };
+  const tagged = dishTags(dish);
+  dish.tags = tagged.tags;
+  dish.needsReview.push(...tagged.review);
+  mergeMethod.tags = 'tag engine (tags.ts) on the merged dish';
+  return dish;
 }
 
 /** Light validation before a record is written; problems block the write and go in the report. */

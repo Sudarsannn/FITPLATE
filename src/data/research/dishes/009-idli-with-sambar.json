@@ -34,14 +34,14 @@
       "householdMeasure": "about 1/2 tsp"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "fenugreek-seeds",
       "name": "Fenugreek seeds (methi dana), optional",
       "quantity": 0.3,
       "unit": "g",
       "householdMeasure": "a small pinch"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "salt",
       "name": "Salt",
       "quantity": 1.2,
       "unit": "g",
@@ -83,28 +83,28 @@
       "householdMeasure": "a pinch"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "shallots",
       "name": "Shallots (small onions, sambar onion)",
       "quantity": 25,
       "unit": "g",
       "householdMeasure": "4–5 small, peeled"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "drumstick",
       "name": "Drumstick (moringa, saragva)",
       "quantity": 25,
       "unit": "g",
       "householdMeasure": "3 pieces of 5 cm"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "carrot",
       "name": "Carrot",
       "quantity": 25,
       "unit": "g",
       "householdMeasure": "1/4 medium, cubed"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "pumpkin-red-yellow",
       "name": "Pumpkin (red/yellow pumpkin, kaddu) or bottle gourd (lauki)",
       "quantity": 30,
       "unit": "g",
@@ -118,7 +118,7 @@
       "householdMeasure": "1/4 medium, chopped"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "tamarind-seedless-block",
       "name": "Tamarind (imli)",
       "quantity": 3,
       "unit": "g",
@@ -139,7 +139,7 @@
       "householdMeasure": "a small pinch, about 1/2 tsp grated"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "salt",
       "name": "Salt",
       "quantity": 1.5,
       "unit": "g",
@@ -153,21 +153,21 @@
       "householdMeasure": "1 tsp"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "mustard-seeds",
       "name": "Mustard seeds (rai)",
       "quantity": 1,
       "unit": "g",
       "householdMeasure": "1/4 tsp"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "dried-red-chilli-whole",
       "name": "Dried red chilli",
       "quantity": 1,
       "unit": null,
       "householdMeasure": "1 whole, broken in two"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "asafoetida",
       "name": "Asafoetida (hing)",
       "quantity": null,
       "unit": null,
@@ -527,7 +527,16 @@
     "fatG": 7,
     "fibreG": 9
   },
-  "microNutrientsEstimate": null,
+  "microNutrientsEstimate": {
+    "values": {
+      "thiamine": 0.1,
+      "vitamin-a": 1031.3,
+      "vitamin-c": 34.6,
+      "vitamin-k": 128
+    },
+    "coveragePct": 29,
+    "basis": "partial estimate from ingredient quantities"
+  },
   "asOrdered": null,
   "orderPrice": {
     "priceHistory": [
@@ -590,6 +599,22 @@
   ],
   "dietClaims": [],
   "fasting": null,
+  "dietTags": null,
+  "tags": [
+    "Veg",
+    "Contains peanut",
+    "Contains gluten",
+    "Contains sesame",
+    "Contains mustard",
+    "Breakfast",
+    "South Indian",
+    "Under 60 min",
+    "Intermediate",
+    "High fibre"
+  ],
+  "description": null,
+  "familyId": null,
+  "variants": [],
   "needsReview": [],
   "versions": [
     {
@@ -604,7 +629,8 @@
     "steps": "newest",
     "healthiness": "newest",
     "researchRating": "newest",
-    "sources": "union"
+    "sources": "union",
+    "tags": "tag engine (tags.ts) on the merged dish"
   },
   "mergeNotes": [
     "price flag: narrowed",

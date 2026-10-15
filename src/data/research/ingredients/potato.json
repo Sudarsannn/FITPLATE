@@ -50,6 +50,20 @@
     "Raw banana (kacha kela), boiled",
     "Paneer or mixed vegetables"
   ],
+  "usedIn": [
+    {
+      "dishNumber": 4,
+      "quantity": 150,
+      "unit": "g",
+      "raw": "150 g (1 large or 2 small, for the potato masala)"
+    },
+    {
+      "dishNumber": 1,
+      "quantity": null,
+      "unit": null,
+      "raw": "optional only (1 small potato for \"kanda batata poha\"; not counted in the dish's standard quantities)"
+    }
+  ],
   "versions": [
     {
       "date": "2026-10-04",
@@ -61,7 +75,8 @@
     "macrosPer100Estimate": "stable (single)",
     "aliases": "union",
     "substitutes": "union",
-    "storage": "newest"
+    "storage": "newest",
+    "usedIn": "newest"
   },
   "mergeNotes": []
 }

@@ -1,0 +1,77 @@
+{
+  "id": "garam-masala",
+  "name": "Garam masala",
+  "aliases": [],
+  "category": "Spice blend",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 980,
+        "max": 1120,
+        "avg": 1055,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 980,
+      "max": 1120,
+      "avg": 1055
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 98,
+    "max": 112,
+    "avg": 105.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 380,
+    "proteinG": 15,
+    "carbsG": 45,
+    "fatG": 15,
+    "fibreG": 25
+  },
+  "storage": "Small airtight jar at room temperature, away from heat and light. Keep the carton sealed inside a box or jar. It lasts about 3–6 months open.",
+  "substitutes": [
+    "Homemade"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 3,
+      "quantity": 0.5,
+      "unit": "g",
+      "raw": "0.5 g (¼ tsp)"
+    },
+    {
+      "dishNumber": 5,
+      "quantity": 0.3,
+      "unit": "g",
+      "raw": "0.3 g (1 pinch)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

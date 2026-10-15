@@ -42,6 +42,33 @@ export type FastingLine = { status: FastingStatus; reason: string | null };
 /** SPEC-ADDENDA §7 (PROMPT_PATCH_02): null when the dish file predates the block. */
 export type FastingSuitability = { navratri: FastingLine; ekadashi: FastingLine; jain: FastingLine; ramadan: FastingLine };
 
+/** One "**Diet tags**" line (dish research PATCH 03). What research says; the tag engine checks it. */
+export type DietLine = { status: 'yes' | 'no' | 'with-changes' | null; reason: string | null };
+export type DietTagLines = {
+  base: string | null;
+  jain: DietLine;
+  vegan: DietLine;
+  pescatarian: DietLine;
+  /** "No onion / no garlic (sattvik)". */
+  sattvik: DietLine;
+  glutenFree: DietLine;
+  dairyFree: DietLine;
+  /** Allergens the research itself lists, mapped to FitPlate ids; null when the line is missing. */
+  allergensDeclared: AllergenId[] | null;
+};
+
+/** One entry of the "**Diet variants**" block (dish research PATCH 04). Variant recipes come only from research. */
+export type DishVariant = {
+  category: string;
+  status: 'variant' | 'already-fits' | 'not-appropriate' | null;
+  name: string | null;
+  origin: 'established' | 'fitplate-created' | null;
+  /** When the variant is another FitPlate dish ("Veg Fried Rice (FitPlate dish 10)"). */
+  linkedDishNumber: number | null;
+  /** Why it already fits or isn't appropriate. */
+  reason: string | null;
+};
+
 export type DishStep = {
   n: number;
   /** Bold lead-in of the step, e.g. "Rinse the poha". */
@@ -92,6 +119,15 @@ export type Dish = Provenance & {
   /** Claims kept after the allergen check. */
   dietClaims: DietClaim[];
   fasting: FastingSuitability | null;
+  /** SPEC-ADDENDA §9: PATCH 03 lines as researched (null before 2026-10-12 files). */
+  dietTags: DietTagLines | null;
+  /** SPEC-ADDENDA §9: search and chip tags from the tag engine (tags.ts); only what the data supports. */
+  tags: string[];
+  /** PATCH 04 description sentence; null for older files. */
+  description: string | null;
+  /** SPEC-ADDENDA §9: family of diet variants (e.g. "biryani"); null when the dish has no sibling. */
+  familyId: string | null;
+  variants: DishVariant[];
   /** Import validators' findings; listed under "needs review" in the DATA SYNC REPORT. */
   needsReview: string[];
 };
@@ -114,6 +150,27 @@ export type NutrientPer100 = {
   vitaminCMg: SourcedValue;
   vitaminAUgRae: SourcedValue;
   folateUgDfe: SourcedValue;
+  // Ingredient PATCH_02 (schema v2, from 2026-10-12); null for v1 profiles.
+  waterG: SourcedValue;
+  cholesterolMg: SourcedValue;
+  transFatG: SourcedValue;
+  mufaG: SourcedValue;
+  pufaG: SourcedValue;
+  omega3G: SourcedValue;
+  addedSugarsG: SourcedValue;
+  phosphorusMg: SourcedValue;
+  seleniumUg: SourcedValue;
+  copperMg: SourcedValue;
+  manganeseMg: SourcedValue;
+  iodineUg: SourcedValue;
+  vitaminDUg: SourcedValue;
+  vitaminEMg: SourcedValue;
+  vitaminKUg: SourcedValue;
+  thiaminMg: SourcedValue;
+  riboflavinMg: SourcedValue;
+  niacinMg: SourcedValue;
+  vitaminB6Mg: SourcedValue;
+  vitaminB12Ug: SourcedValue;
 };
 
 export type Ingredient = Provenance & {
@@ -131,14 +188,12 @@ export type Ingredient = Provenance & {
   macrosPer100Estimate: Macros | null;
   storage: string | null;
   substitutes: string[];
+  /** Spec F7: dishes the ingredient file says use it, with the quantity it gives (newest version). */
+  usedIn: { dishNumber: number; quantity: number | null; unit: string | null; raw: string }[];
 };
 
 /**
- * Nutrient, Hydration, Guidance and Exercise items follow the JSON blocks in
- * their research files exactly; Day 5 replaces these with the full shapes.
+ * Nutrient, Hydration, Guidance (nutrition) and HealthCondition types live in
+ * ./nutrient; Exercise and fitness Guidance in ./exercise (Day 5). Import them
+ * from those modules: both have a `Guidance` type, so neither is re-exported here.
  */
-export type ResearchItem = Provenance & { id: string; name: string; [key: string]: unknown };
-export type Nutrient = ResearchItem;
-export type Hydration = ResearchItem;
-export type Guidance = ResearchItem;
-export type Exercise = ResearchItem;

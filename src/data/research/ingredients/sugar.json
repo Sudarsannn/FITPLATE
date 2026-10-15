@@ -1,0 +1,80 @@
+{
+  "id": "sugar",
+  "name": "Sugar",
+  "aliases": [
+    "cheeni",
+    "refined white"
+  ],
+  "category": "Packaged",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 52,
+        "max": 66,
+        "avg": 58,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 52,
+      "max": 66,
+      "avg": 58
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 5.2,
+    "max": 6.6,
+    "avg": 5.8
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 387,
+    "proteinG": 0,
+    "carbsG": 99.9,
+    "fatG": 0,
+    "fibreG": 0
+  },
+  "storage": "Airtight container at room temperature. Keep it dry to stop clumping, and sealed against ants. It lasts indefinitely.",
+  "substitutes": [
+    "Jaggery (gur), grated, 1"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 1,
+      "quantity": 2,
+      "unit": "g",
+      "raw": "2 g (½ tsp)"
+    },
+    {
+      "dishNumber": 3,
+      "quantity": 2,
+      "unit": "g",
+      "raw": "2 g (½ tsp)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

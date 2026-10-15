@@ -1,0 +1,76 @@
+{
+  "id": "shallots",
+  "name": "Shallots",
+  "aliases": [
+    "small onion",
+    "sambar onion"
+  ],
+  "category": "Vegetable",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-05",
+        "min": 135,
+        "max": 160,
+        "avg": 150,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-05.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 135,
+      "max": 160,
+      "avg": 150
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-05",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 13.5,
+    "max": 16,
+    "avg": 15
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 72,
+    "proteinG": 2.5,
+    "carbsG": 16.8,
+    "fatG": 0.1,
+    "fibreG": 3.2
+  },
+  "storage": "Whole: room temperature in a basket or mesh bag, away from potatoes and sunlight, for 3–4 weeks. Peeled: airtight box in the fridge for 4–5 days.",
+  "substitutes": [
+    "Red onion (big)",
+    "Pearl onions",
+    "Spring onion whites"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 9,
+      "quantity": 25,
+      "unit": "g",
+      "raw": "25 g (4–5 small, peeled)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-05",
+      "file": "FitPlate_Ingredients_2026-10-05.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

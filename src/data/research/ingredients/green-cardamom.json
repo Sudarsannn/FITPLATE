@@ -1,0 +1,75 @@
+{
+  "id": "green-cardamom",
+  "name": "Green cardamom",
+  "aliases": [
+    "elaichi"
+  ],
+  "category": "Spice",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 5000,
+        "max": 6100,
+        "avg": 5535,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 5000,
+      "max": 6100,
+      "avg": 5535
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 500,
+    "max": 610,
+    "avg": 553.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 311,
+    "proteinG": 11,
+    "carbsG": 68,
+    "fatG": 6.7,
+    "fibreG": 28
+  },
+  "storage": "Airtight glass jar, cool dark place: 12 months for whole pods.",
+  "substitutes": [
+    "Garam masala",
+    "Black cardamom (badi elaichi)",
+    "Skip it"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 2,
+      "quantity": null,
+      "unit": null,
+      "raw": "2 pods"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

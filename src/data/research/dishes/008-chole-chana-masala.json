@@ -14,7 +14,7 @@
   "servings": 1,
   "ingredients": [
     {
-      "ingredientId": null,
+      "ingredientId": "chickpeas-dried",
       "name": "Chickpeas, dried (kabuli chana)",
       "quantity": 50,
       "unit": "g",
@@ -42,7 +42,7 @@
       "householdMeasure": "1 bag (or 1 tsp tea leaves tied in muslin)"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "salt",
       "name": "Salt",
       "quantity": 2.5,
       "unit": "g",
@@ -56,14 +56,14 @@
       "householdMeasure": "2 tsp"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "cumin-seeds",
       "name": "Cumin seeds (jeera)",
       "quantity": 1,
       "unit": "g",
       "householdMeasure": "½ tsp"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "bay-leaf",
       "name": "Bay leaf (tej patta)",
       "quantity": 1,
       "unit": null,
@@ -119,7 +119,7 @@
       "householdMeasure": "½ tsp"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "coriander-powder",
       "name": "Coriander powder (dhania powder)",
       "quantity": 2,
       "unit": "g",
@@ -140,7 +140,7 @@
       "householdMeasure": "¼ tsp"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "dried-fenugreek-leaves",
       "name": "Dried fenugreek leaves (kasuri methi)",
       "quantity": 0.5,
       "unit": "g",
@@ -449,7 +449,15 @@
     "fatG": 14,
     "fibreG": 11
   },
-  "microNutrientsEstimate": null,
+  "microNutrientsEstimate": {
+    "values": {
+      "vitamin-a": 31.8,
+      "vitamin-c": 19,
+      "vitamin-k": 13.7
+    },
+    "coveragePct": 10,
+    "basis": "partial estimate from ingredient quantities"
+  },
   "asOrdered": null,
   "orderPrice": {
     "priceHistory": [
@@ -521,6 +529,21 @@
   ],
   "dietClaims": [],
   "fasting": null,
+  "dietTags": null,
+  "tags": [
+    "Veg",
+    "Contains peanut",
+    "Contains mustard",
+    "Lunch",
+    "Dinner",
+    "Punjabi",
+    "Under 60 min",
+    "Beginner",
+    "High fibre"
+  ],
+  "description": null,
+  "familyId": null,
+  "variants": [],
   "needsReview": [],
   "versions": [
     {
@@ -535,7 +558,8 @@
     "steps": "newest",
     "healthiness": "newest",
     "researchRating": "newest",
-    "sources": "union"
+    "sources": "union",
+    "tags": "tag engine (tags.ts) on the merged dish"
   },
   "mergeNotes": [
     "price flag: narrowed",

@@ -1,0 +1,395 @@
+{
+  "id": "vitamin-e",
+  "name": "Vitamin E",
+  "type": "vitamin",
+  "subtype": "fat-soluble",
+  "unit": "mg",
+  "altUnits": [
+    {
+      "unit": "IU (synthetic, dl-alpha-tocopherol or its esters)",
+      "toMainUnitFactor": 0.67
+    },
+    {
+      "unit": "mg dl-alpha-tocopheryl acetate (synthetic ester)",
+      "toMainUnitFactor": 0.45
+    },
+    {
+      "unit": "mg d-alpha-tocopheryl acetate (natural ester)",
+      "toMainUnitFactor": 0.91
+    },
+    {
+      "unit": "mg dl-alpha-tocopherol (synthetic, free form)",
+      "toMainUnitFactor": 0.5
+    },
+    {
+      "unit": "mg d-alpha-tocopherol (natural)",
+      "toMainUnitFactor": 1
+    },
+    {
+      "unit": "mg alpha-TE (older food tables, est. average factor)",
+      "toMainUnitFactor": 0.8
+    }
+  ],
+  "unitConversions": [
+    {
+      "fromUnit": "mg",
+      "compound": "rrr-alpha-tocopherol",
+      "toMainUnitFactor": 1,
+      "raw": "1 mg RRR-α-tocopherol (d-α-tocopherol, natural) | 1 mg"
+    },
+    {
+      "fromUnit": "iu",
+      "compound": "natural vitamin e",
+      "toMainUnitFactor": 0.67,
+      "raw": "1 IU natural vitamin E (d-α-tocopherol or its esters) | 0.67 mg"
+    },
+    {
+      "fromUnit": "iu",
+      "compound": "synthetic vitamin e",
+      "toMainUnitFactor": 0.45,
+      "raw": "1 IU synthetic vitamin E (dl-α-tocopherol or its esters) | 0.45 mg"
+    },
+    {
+      "fromUnit": "mg",
+      "compound": "dl-alpha-tocopheryl acetate",
+      "toMainUnitFactor": 0.45,
+      "raw": "1 mg dl-α-tocopheryl acetate (synthetic ester; 1 mg = 1 IU by definition) | 0.45 mg"
+    },
+    {
+      "fromUnit": "mg",
+      "compound": "d-alpha-tocopheryl acetate",
+      "toMainUnitFactor": 0.91,
+      "raw": "1 mg d-α-tocopheryl acetate (natural ester; 1 mg = 1.36 IU) | about 0.91 mg"
+    },
+    {
+      "fromUnit": "mg",
+      "compound": "dl-alpha-tocopherol",
+      "toMainUnitFactor": 0.5,
+      "raw": "1 mg dl-α-tocopherol (synthetic, free form; 1 mg = 1.1 IU) | about 0.50 mg"
+    },
+    {
+      "fromUnit": "mg",
+      "compound": "alpha-te",
+      "toMainUnitFactor": 0.8,
+      "raw": "1 mg α-TE (older food tables) | about 0.8 mg (est., average factor for mixed diets, IOM 2000)"
+    }
+  ],
+  "targets": [
+    {
+      "group": "adult_male_sedentary",
+      "ear": null,
+      "rda": null,
+      "ai": 10,
+      "source": "ICMR-NIN 2020 (0.8 mg alpha-tocopherol per g dietary essential fatty acids, about 7.5-10 mg/day; men set at top of range per WHO/FAO 2004 split; EAR not found)"
+    },
+    {
+      "group": "adult_male_moderate",
+      "ear": null,
+      "rda": null,
+      "ai": 10,
+      "source": "ICMR-NIN 2020 (same range; no activity-specific value found)"
+    },
+    {
+      "group": "adult_male_heavy",
+      "ear": null,
+      "rda": null,
+      "ai": 10,
+      "source": "ICMR-NIN 2020 (same range; need scales with essential fatty acid intake)"
+    },
+    {
+      "group": "adult_female_sedentary",
+      "ear": null,
+      "rda": null,
+      "ai": 7.5,
+      "source": "ICMR-NIN 2020 (about 7.5-10 mg/day; women set at bottom of range per WHO/FAO 2004 split; EAR not found)"
+    },
+    {
+      "group": "adult_female_moderate",
+      "ear": null,
+      "rda": null,
+      "ai": 7.5,
+      "source": "ICMR-NIN 2020 (same range; no activity-specific value found)"
+    },
+    {
+      "group": "adult_female_heavy",
+      "ear": null,
+      "rda": null,
+      "ai": 7.5,
+      "source": "ICMR-NIN 2020 (same range; need scales with essential fatty acid intake)"
+    },
+    {
+      "group": "pregnant",
+      "ear": 12,
+      "rda": 15,
+      "ai": null,
+      "source": "ICMR-NIN value not found; NASEM 2000 / NIH ODS shown (no increase over non-pregnant adults)"
+    },
+    {
+      "group": "lactating",
+      "ear": 16,
+      "rda": 19,
+      "ai": null,
+      "source": "ICMR-NIN value not found; NASEM 2000 / NIH ODS shown"
+    },
+    {
+      "group": "age_60_plus",
+      "ear": null,
+      "rda": null,
+      "ai": null,
+      "source": "Not found in ICMR-NIN 2020; app uses adult value by sex"
+    }
+  ],
+  "appDefaultTarget": {
+    "adult_male": 10,
+    "adult_female": 7.5,
+    "pregnant": null,
+    "lactating": null,
+    "age_60_plus": null
+  },
+  "upperLimit": {
+    "value": 300,
+    "unit": "mg/day alpha-tocopherol",
+    "appliesTo": "food_and_supplements",
+    "source": "EFSA 2024 (ICMR-NIN TUL not found). Comparison: NASEM 2000 UL 1000 mg/day from supplements and fortified foods only; UK NHS 540 mg (800 IU) or less from supplements. Does not apply to people on anticoagulant or antiplatelet medicines."
+  },
+  "topFoodSources": [
+    {
+      "food": "Almonds (badam)",
+      "veg": true,
+      "per100g": 24.9,
+      "servingG": 15,
+      "servingLabel": "about 10 almonds",
+      "perServing": 3.7
+    },
+    {
+      "food": "Sunflower seeds",
+      "veg": true,
+      "per100g": 21.4,
+      "servingG": 10,
+      "servingLabel": "1 tbsp",
+      "perServing": 2.1
+    },
+    {
+      "food": "Sunflower oil (est., NIH ODS)",
+      "veg": true,
+      "per100g": 41,
+      "servingG": 10,
+      "servingLabel": "2 tsp",
+      "perServing": 4.1
+    },
+    {
+      "food": "Safflower oil (est., NIH ODS)",
+      "veg": true,
+      "per100g": 34,
+      "servingG": 10,
+      "servingLabel": "2 tsp",
+      "perServing": 3.4
+    },
+    {
+      "food": "Groundnut oil (est., USDA-derived)",
+      "veg": true,
+      "per100g": 15.7,
+      "servingG": 10,
+      "servingLabel": "2 tsp",
+      "perServing": 1.6
+    },
+    {
+      "food": "Groundnuts / peanuts, raw",
+      "veg": true,
+      "per100g": 4.3,
+      "servingG": 30,
+      "servingLabel": "small handful (about 2 tbsp)",
+      "perServing": 1.3
+    },
+    {
+      "food": "Spinach (palak), raw",
+      "veg": true,
+      "per100g": 1.3,
+      "servingG": 100,
+      "servingLabel": "1/2 katori cooked",
+      "perServing": 1.3
+    },
+    {
+      "food": "Linseeds (alsi)",
+      "veg": true,
+      "per100g": 7.8,
+      "servingG": 10,
+      "servingLabel": "1 tbsp",
+      "perServing": 0.8
+    },
+    {
+      "food": "Coconut, dry (kopra)",
+      "veg": true,
+      "per100g": 6,
+      "servingG": 10,
+      "servingLabel": "about 2 tbsp grated",
+      "perServing": 0.6
+    },
+    {
+      "food": "Rohu (fish)",
+      "veg": false,
+      "per100g": 2.4,
+      "servingG": 100,
+      "servingLabel": "2 medium pieces",
+      "perServing": 2.4
+    },
+    {
+      "food": "Tiger prawns, brown",
+      "veg": false,
+      "per100g": 3,
+      "servingG": 100,
+      "servingLabel": "about 8-10 medium prawns",
+      "perServing": 3
+    },
+    {
+      "food": "Egg, hen, whole, boiled",
+      "veg": false,
+      "per100g": 1.3,
+      "servingG": 50,
+      "servingLabel": "1 egg",
+      "perServing": 0.7
+    }
+  ],
+  "goodSourceDishes": [
+    {
+      "dishNumber": 17,
+      "dishName": "Palak Paneer"
+    },
+    {
+      "dishNumber": 32,
+      "dishName": "Aloo Gobi"
+    },
+    {
+      "dishNumber": 31,
+      "dishName": "Indian-style Overnight Oats"
+    },
+    {
+      "dishNumber": 14,
+      "dishName": "Egg Bhurji"
+    },
+    {
+      "dishNumber": 21,
+      "dishName": "Masala Omelette"
+    },
+    {
+      "dishNumber": 30,
+      "dishName": "Lemon Rice"
+    },
+    {
+      "dishNumber": 1,
+      "dishName": "Poha"
+    },
+    {
+      "dishNumber": 10,
+      "dishName": "Veg Fried Rice"
+    }
+  ],
+  "deficiencyRiskIndia": "low",
+  "absorptionBoosters": [
+    "dietary fat or oil in the same meal",
+    "taking any prescribed supplement with a meal containing fat",
+    "whole grains instead of refined grains",
+    "fruit and vegetables rich in vitamin C",
+    "fresh (not reused) cooking oil",
+    "nuts and seeds stored airtight, cool and dark"
+  ],
+  "absorptionBlockers": [
+    "very low-fat meals",
+    "fat-malabsorption conditions (pancreatic, liver, gallbladder, coeliac or Crohn's disease, cystic fibrosis, bariatric surgery)",
+    "orlistat and other fat-absorption blockers",
+    "reused or overheated frying oil",
+    "rancid nuts and oils",
+    "refined cereals (maida, polished rice)"
+  ],
+  "logPresets": [
+    {
+      "label": "Vitamin E capsule 400 mg tocopheryl acetate (form not stated; counted as 180 mg toward target, 364 mg toward limit)",
+      "amount": 400,
+      "unit": "mg tocopheryl acetate",
+      "toMainFactor": null,
+      "factorSource": null,
+      "mainAmount": null,
+      "mainAmountRange": {
+        "min": 180,
+        "max": 364
+      },
+      "prescriptionDose": true
+    },
+    {
+      "label": "Vitamin E capsule 400 IU synthetic (dl-)",
+      "amount": 180,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 180,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Vitamin E capsule 400 IU natural (d-)",
+      "amount": 268,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 268,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Multivitamin (enter label value)",
+      "amount": null,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": null,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Custom amount in IU",
+      "amount": null,
+      "unit": "IU",
+      "toMainFactor": null,
+      "factorSource": null,
+      "mainAmount": null,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    }
+  ],
+  "warnings": [
+    "Vitamin E from supplements and fortified foods should stay below 300 mg alpha-tocopherol per day for adults (EFSA 2024); 1000 mg per day is the US upper limit for supplements.",
+    "Vitamin E from ordinary food does not count toward the upper limit concern.",
+    "People taking blood thinners (e.g. warfarin) or antiplatelet medicines (e.g. aspirin, clopidogrel), with a bleeding disorder or vitamin K deficiency, or before surgery should not take vitamin E supplements unless a doctor advises it.",
+    "High-dose vitamin E supplements have not prevented heart disease or cancer in large trials; 400 IU per day slightly raised prostate cancer risk in healthy men (SELECT) and heart failure in people with vascular disease or diabetes (HOPE-TOO).",
+    "Antioxidant supplements may reduce the benefit of statin plus niacin treatment and may interact with cancer treatment; ask the treating doctor.",
+    "Indian 400 mg tocopheryl acetate capsules may equal 180-364 mg alpha-tocopherol depending on whether the form is synthetic or natural.",
+    "Pregnancy: take vitamin E supplements only if prescribed.",
+    "General information, not medical advice. Check with a doctor before starting supplements."
+  ],
+  "conditionAdjustments": [],
+  "lastResearched": "2026-10-10",
+  "versions": [
+    {
+      "date": "2026-10-10",
+      "file": "FitPlate_Nutrients_2026-10-10.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3)",
+    "upperLimit": "official safety limit (D3, lower on conflict)",
+    "topFoodSources": "union; per100g official (D3)",
+    "logPresets": "union by label (newest), converted with own file factors",
+    "appDefaultTarget": "newest, kept only where it equals the ICMR row",
+    "lists": "union",
+    "warnings": "union (never dropped)",
+    "text": "newest"
+  },
+  "mergeNotes": [],
+  "needsReview": [
+    "log preset \"Vitamin E capsule 400 mg tocopheryl acetate (form not stated; counted as 180 mg toward target, 364 mg toward limit)\": unit \"mg tocopheryl acetate\" matches several factors (0.45, 0.91); the form is ambiguous, so no single mg amount",
+    "log preset \"Custom amount in IU\": unit \"IU\" matches several factors (0.45, 0.67); the form is ambiguous, so no single mg amount",
+    "app_default_target.pregnant = 7.5 has no ICMR row to match (pregnant: \"ICMR-NIN value not found; NASEM 2000 / NIH ODS shown (no increase over non-pregnant adults)\"); set to null",
+    "app_default_target.lactating = 10 has no ICMR row to match (lactating: \"ICMR-NIN value not found; NASEM 2000 / NIH ODS shown\"); set to null",
+    "app_default_target.age_60_plus = 7.5 has no ICMR row to match (age_60_plus: \"Not found in ICMR-NIN 2020; app uses adult value by sex\"); set to null"
+  ]
+}

@@ -1,0 +1,341 @@
+{
+  "id": "vitamin-d",
+  "name": "Vitamin D",
+  "type": "vitamin",
+  "subtype": "fat-soluble",
+  "unit": "µg",
+  "altUnits": [
+    {
+      "unit": "IU",
+      "toMainUnitFactor": 0.025
+    }
+  ],
+  "unitConversions": [],
+  "targets": [
+    {
+      "group": "adult_male_sedentary",
+      "ear": 10,
+      "rda": 15,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (EAR 400 IU, RDA 600 IU)"
+    },
+    {
+      "group": "adult_male_moderate",
+      "ear": 10,
+      "rda": 15,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (no activity adjustment)"
+    },
+    {
+      "group": "adult_male_heavy",
+      "ear": 10,
+      "rda": 15,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (no activity adjustment)"
+    },
+    {
+      "group": "adult_female_sedentary",
+      "ear": 10,
+      "rda": 15,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (EAR 400 IU, RDA 600 IU)"
+    },
+    {
+      "group": "adult_female_moderate",
+      "ear": 10,
+      "rda": 15,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (no activity adjustment)"
+    },
+    {
+      "group": "adult_female_heavy",
+      "ear": 10,
+      "rda": 15,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (no activity adjustment)"
+    },
+    {
+      "group": "pregnant",
+      "ear": null,
+      "rda": 15,
+      "ai": null,
+      "source": "ICMR-NIN 2020 via secondary summary (primary table not confirmed); NASEM 2011 RDA 15 µg"
+    },
+    {
+      "group": "lactating",
+      "ear": null,
+      "rda": 15,
+      "ai": null,
+      "source": "ICMR-NIN 2020 via secondary summary (primary table not confirmed); NASEM 2011 RDA 15 µg"
+    },
+    {
+      "group": "age_60_plus",
+      "ear": null,
+      "rda": null,
+      "ai": null,
+      "source": "Not found as separate ICMR-NIN value; NASEM 2011: RDA 15 µg to age 70, 20 µg from 71"
+    }
+  ],
+  "appDefaultTarget": {
+    "adult_male": 15,
+    "adult_female": 15,
+    "pregnant": 15,
+    "lactating": 15,
+    "age_60_plus": null
+  },
+  "upperLimit": {
+    "value": 100,
+    "unit": "µg",
+    "appliesTo": "food_and_supplements",
+    "source": "NASEM/IOM 2011 and EFSA 2023 (ICMR-NIN 2020 TUL value not found)"
+  },
+  "topFoodSources": [
+    {
+      "food": "Hilsa (ilish)",
+      "veg": false,
+      "per100g": 5.98,
+      "servingG": 100,
+      "servingLabel": "1 medium piece",
+      "perServing": 5.98
+    },
+    {
+      "food": "Indian oil sardine (tarli/mathi)",
+      "veg": false,
+      "per100g": 3.51,
+      "servingG": 100,
+      "servingLabel": "3-4 small fish",
+      "perServing": 3.51
+    },
+    {
+      "food": "Black pomfret (halwa)",
+      "veg": false,
+      "per100g": 2.94,
+      "servingG": 100,
+      "servingLabel": "1 medium piece",
+      "perServing": 2.94
+    },
+    {
+      "food": "Seer fish / surmai (Vanjaram)",
+      "veg": false,
+      "per100g": 1.64,
+      "servingG": 100,
+      "servingLabel": "1 steak",
+      "perServing": 1.64
+    },
+    {
+      "food": "Prawns, small",
+      "veg": false,
+      "per100g": 1.1,
+      "servingG": 100,
+      "servingLabel": "about 3/4 cup cleaned",
+      "perServing": 1.1
+    },
+    {
+      "food": "Rohu",
+      "veg": false,
+      "per100g": 1.01,
+      "servingG": 100,
+      "servingLabel": "1 piece",
+      "perServing": 1.01
+    },
+    {
+      "food": "Egg, country hen, whole, boiled",
+      "veg": false,
+      "per100g": 2.99,
+      "servingG": 50,
+      "servingLabel": "1 egg",
+      "perServing": 1.5
+    },
+    {
+      "food": "Egg, poultry, whole, boiled",
+      "veg": false,
+      "per100g": 0.74,
+      "servingG": 50,
+      "servingLabel": "1 egg",
+      "perServing": 0.37
+    },
+    {
+      "food": "Chicken liver",
+      "veg": false,
+      "per100g": 2.64,
+      "servingG": 50,
+      "servingLabel": "2-3 pieces",
+      "perServing": 1.32
+    },
+    {
+      "food": "Chicken breast, skinless",
+      "veg": false,
+      "per100g": 1.38,
+      "servingG": 100,
+      "servingLabel": "1 small breast piece",
+      "perServing": 1.38
+    },
+    {
+      "food": "Cow milk, whole (unfortified, IFCT D2 value)",
+      "veg": true,
+      "per100g": 1.22,
+      "servingG": 200,
+      "servingLabel": "1 glass (about 200 ml)",
+      "perServing": 2.44
+    },
+    {
+      "food": "Button mushroom, fresh (IFCT D2 value, low confidence)",
+      "veg": true,
+      "per100g": 20.54,
+      "servingG": 50,
+      "servingLabel": "about 1/2 cup sliced",
+      "perServing": 10.27
+    }
+  ],
+  "goodSourceDishes": [
+    {
+      "dishNumber": 33,
+      "dishName": "Goan Fish Curry"
+    },
+    {
+      "dishNumber": 73,
+      "dishName": "Rava Fish Fry"
+    },
+    {
+      "dishNumber": 55,
+      "dishName": "Prawn Masala"
+    },
+    {
+      "dishNumber": 2,
+      "dishName": "Chicken Biryani"
+    },
+    {
+      "dishNumber": 14,
+      "dishName": "Egg Bhurji"
+    },
+    {
+      "dishNumber": 21,
+      "dishName": "Masala Omelette"
+    },
+    {
+      "dishNumber": 38,
+      "dishName": "Egg Curry"
+    }
+  ],
+  "deficiencyRiskIndia": "high",
+  "absorptionBoosters": [
+    "Midday sunlight on bare skin (UVB); ICMR-NIN 2024 recommends sun exposure",
+    "Eating vitamin D foods or supplements with a meal containing fat",
+    "Vitamin D3 form (raises blood levels more than D2)",
+    "Healthy body weight"
+  ],
+  "absorptionBlockers": [
+    "Window glass (blocks UVB)",
+    "Sunscreen, full clothing cover, shade, smog",
+    "Early-morning or late-evening sun (low UVB)",
+    "Darker skin pigmentation (needs longer exposure)",
+    "Fat malabsorption conditions and very low-fat meals",
+    "Obesity",
+    "Older age (less skin synthesis)",
+    "Some medicines: glucocorticoids, certain anti-seizure and anti-TB drugs, orlistat, bile-acid binders"
+  ],
+  "logPresets": [
+    {
+      "label": "Vitamin D3 400 IU",
+      "amount": 10,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 10,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Vitamin D3 600 IU",
+      "amount": 15,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 15,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Vitamin D3 1,000 IU",
+      "amount": 25,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 25,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Vitamin D3 2,000 IU",
+      "amount": 50,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 50,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Vitamin D3 60,000 IU weekly sachet/capsule",
+      "amount": 1500,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 1500,
+      "mainAmountRange": null,
+      "prescriptionDose": true
+    },
+    {
+      "label": "Calcium + D3 tablet (250 IU)",
+      "amount": 6.25,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 6.25,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Calcium + D3 tablet (500 IU)",
+      "amount": 12.5,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 12.5,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    }
+  ],
+  "warnings": [
+    "Show a gentle notice if supplements alone average more than 100 µg (4,000 IU) per day over 7 days and are not marked as prescribed.",
+    "Spread weekly doses: 60,000 IU (1,500 µg) once a week averages about 214 µg/day, above the UL; usually a short doctor-supervised course.",
+    "Flag stacking when two or more vitamin D-containing products are logged on the same day.",
+    "Prompt for a doctor review if a weekly 60,000 IU course runs beyond 8 weeks without a prescribed flag.",
+    "Never warn on food or sunlight; sun exposure cannot cause vitamin D toxicity.",
+    "IFCT 2017 plant vitamin D2 values are low confidence and are excluded from the progress ring by default.",
+    "People with kidney disease, kidney stones, sarcoidosis, high calcium, or on thiazide diuretics or digoxin should seek medical advice before supplementing.",
+    "General information, not medical advice."
+  ],
+  "conditionAdjustments": [],
+  "lastResearched": "2026-10-09",
+  "versions": [
+    {
+      "date": "2026-10-09",
+      "file": "FitPlate_Nutrients_2026-10-09.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3)",
+    "upperLimit": "official safety limit (D3, lower on conflict)",
+    "topFoodSources": "union; per100g official (D3)",
+    "logPresets": "union by label (newest), converted with own file factors",
+    "appDefaultTarget": "newest, kept only where it equals the ICMR row",
+    "lists": "union",
+    "warnings": "union (never dropped)",
+    "text": "newest"
+  },
+  "mergeNotes": [],
+  "needsReview": [
+    "app_default_target.age_60_plus = 15 has no ICMR row to match (age_60_plus: \"Not found as separate ICMR-NIN value; NASEM 2011: RDA 15 µg to age 70, 20 µg from 71\"); set to null"
+  ]
+}

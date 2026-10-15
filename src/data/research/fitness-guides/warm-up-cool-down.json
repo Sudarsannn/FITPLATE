@@ -1,0 +1,149 @@
+{
+  "id": "warm-up-cool-down",
+  "number": 2,
+  "type": "knowledge",
+  "name": "Warm-up and cool-down protocol",
+  "section": "gym",
+  "keyTakeaways": [
+    "Warm up every time, in three parts: about 5–10 minutes of easy cardio, then a few minutes of dynamic (moving) drills, then lighter \"ramp-up\" sets of your first weighted exercise. Warm-ups improved performance in most of the outcomes measured in a 2010 meta-analysis and rarely made anything worse.",
+    "Easy means easy: you should be able to talk in full sentences and maybe break a light sweat. If you finish the warm-up tired, it was too hard.",
+    "Before lifting, choose moving stretches over long holds. Short static holds (30 seconds or less per muscle) inside a full warm-up have only a tiny effect on strength. Holds of 60 seconds or more per muscle cause a clearer strength loss, so save long holds for after the session.",
+    "Ramp-up sets do the job of a \"specific warm-up\" for each big lift: 2–4 lighter sets that get heavier, with fewer reps as you go, and none of them close to failure.",
+    "A cool-down lets your heart rate come down gradually and helps you feel steady. Don't expect it to stop next-day soreness. Reviews find that stretching after exercise does little or nothing for muscle soreness (DOMS). The cool-down is still the best time for flexibility work, because your muscles are warm."
+  ],
+  "mistakes": [],
+  "appGuidance": [
+    "Every gym session starts with an automatic Warm-up block of three stages: (1) General cardio, 5 min by default (user can set 5–10), at \"easy, can talk\"; (2) Dynamic drills, 3–5 picked automatically from the session's muscle focus (table 2.3); (3) Ramp-up sets inserted before the first exercise for each major movement.",
+    "Ramp-up sets are calculated from the planned working weight and rep range using table 2.4, rounded down to the nearest available plate or stack step. Label them \"Warm-up set\" and exclude them from volume and progress statistics.",
+    "On machines and for exercises after the first one for the same muscle, offer just one optional \"feeler\" set at about 50% × 10.",
+    "Every session ends with a Cool-down block: 3–5 min of easy cardio, then 3–4 static stretches for the muscles trained, with a 30 s hold timer, 2 rounds by default.",
+    "Time-crunch mode: warm-up shrinks to 3 min of cardio, 2 drills and 1–2 ramp sets; cool-down shrinks to 3 min (est.). Never remove ramp sets before a heavy barbell lift.",
+    "Users aged 65 or over: default hold time 30–60 s.",
+    "Warm-up start: \"Easy pace. You should be able to chat. A light sweat is perfect.\"",
+    "Dynamic drills: \"Move smoothly through a comfortable range. No bouncing.\"",
+    "Ramp-up set: \"Light set to practise your form. Stop well before it gets hard.\"",
+    "Before working sets: \"Warm-up done. Your first working set starts now.\"",
+    "Cool-down: \"Slow down gradually. Keep moving until your breathing settles.\"",
+    "Stretch: \"Ease in until you feel a gentle stretch, not pain. Breathe slowly and hold.\"",
+    "Soreness tip (FAQ): \"Some soreness 1–3 days after a new workout is normal. Stretching won't prevent it, but building up gradually helps.\"",
+    "Safety: \"Feel dizzy, chest pain or unusually breathless? Stop, sit or lie down, and get medical help if it doesn't pass quickly.\"",
+    "Do not schedule static-stretch holds of 60 s or more per muscle before strength blocks.",
+    "If the session has no weighted exercises (bodyweight or cardio), skip ramp sets; the general warm-up builds gradually instead.",
+    "For the Gym 50 beginner plan: warm-up about 12 min plus cool-down about 7 min (est.) should fit inside the session time shown to the user."
+  ],
+  "rules": [
+    {
+      "if": "any gym session starts",
+      "then": "insert a general warm-up of 5 min (user range 5-10 min) of easy cardio on treadmill, bike, elliptical or rower at a conversational pace (RPE about 3-4/10, est.)",
+      "source": "ACSM (via secondary sources); Mayo Clinic; NHS"
+    },
+    {
+      "if": "session is heavy (main lifts at RPE 8 or above) or user is new or the gym is cold",
+      "then": "extend the general warm-up toward 10 min",
+      "source": "ACE; NHS Lothian; Mayo Clinic"
+    },
+    {
+      "if": "general warm-up is finished",
+      "then": "add 3-6 dynamic drills matched to the session's muscle focus, 8-10 reps or 20-30 s each, about 3-5 min total",
+      "source": "ACE; Jeffreys RAMP model (NSCA/UKSCA); Opplert & Babault 2018"
+    },
+    {
+      "if": "a static stretch is placed before strength exercises",
+      "then": "limit it to 30 s or less per hold and per muscle, and never schedule holds of 60 s or more per muscle before lifting",
+      "source": "Behm et al. 2016; Chaabene et al. 2019; Warneke & Lohmann 2024"
+    },
+    {
+      "if": "first exercise for a major movement with working sets of 3-6 reps (heavy)",
+      "then": "insert ramp-up sets: empty bar or 40% x 8, 60% x 5, 75-80% x 3, optional 85-90% x 1-2 of working weight, 1-2 min rest (est.)",
+      "source": "Ribeiro et al. 2020; NSCA 1RM test warm-up (via HPRC); FitPlate synthesis (est.)"
+    },
+    {
+      "if": "first exercise for a major movement with working sets of 8-12 reps (moderate)",
+      "then": "insert ramp-up sets: 40% x 8-10, then 60-70% x 5-6 of working weight, about 60 s rest (est.)",
+      "source": "Ribeiro et al. 2020; NSCA 1RM test warm-up (via HPRC); FitPlate synthesis (est.)"
+    },
+    {
+      "if": "machine exercise or a later exercise for an already-warmed muscle",
+      "then": "offer one optional feeler set at about 50% of working weight x 10-12 (est.)",
+      "source": "FitPlate synthesis (est.)"
+    },
+    {
+      "if": "a set is labelled warm-up or ramp-up",
+      "then": "keep it at 4 or more reps in reserve (est.) and exclude it from volume and progress statistics",
+      "source": "Ribeiro et al. 2020; FitPlate synthesis (est.)"
+    },
+    {
+      "if": "main session ends",
+      "then": "insert 3-5 min of easy cardio (slow walk or easy spin) before the user stops",
+      "source": "Mayo Clinic; NHS / Live Well South West"
+    },
+    {
+      "if": "easy cool-down cardio is finished",
+      "then": "add 3-4 static stretches for muscles trained, each held 10-30 s at mild tension without bouncing, about 60 s total per muscle",
+      "source": "ACSM flexibility guidelines; Mayo Clinic; Harvard Health (via secondary sources)"
+    },
+    {
+      "if": "user age is 65 or over",
+      "then": "set default static hold time to 30-60 s",
+      "source": "ACSM stretching and flexibility guidelines update (2021)"
+    },
+    {
+      "if": "app text describes the purpose of stretching or the cool-down",
+      "then": "never claim it prevents muscle soreness (DOMS) or injury; describe it as flexibility work and a gradual return to rest",
+      "source": "Herbert et al. Cochrane review 2011; Afonso et al. 2021"
+    },
+    {
+      "if": "user selects time-crunch mode",
+      "then": "shorten the warm-up to 3 min cardio, 2 drills and 1-2 ramp sets, and the cool-down to 3 min easy cardio (est.); never drop ramp sets before a heavy barbell lift",
+      "source": "FitPlate synthesis (est.); Fradkin et al. 2010"
+    },
+    {
+      "if": "user reports dizziness, chest pain or unusual breathlessness during the warm-up or cool-down",
+      "then": "stop the session, advise sitting or lying down, and show the seek-medical-help message",
+      "source": "NHS; Mayo Clinic"
+    }
+  ],
+  "weeks": null,
+  "sources": [
+    "Mayo Clinic: Aerobic exercise: How to warm up and cool down. https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/warm-up/art-20045517",
+    "NHS: Body blast warm-up (NHS Fitness Studio). https://www.nhs.uk/live-well/exercise/strength-and-resistance/body-blast-warm-up/",
+    "NHS warm-up routine (HealthWell NI, NHS content): Warming up before exercise. https://healthwell.eani.org.uk/healthtopic/get-fit/warming-exercise?type_1=3",
+    "NHS Lothian: Preventing sport injury. https://policyonline.nhslothian.scot/wp-content/uploads/2023/03/Preventing%20sport%20injury.pdf",
+    "ACSM: Stretching and flexibility guidelines update (2021). https://www.acsm.org/blog-detail/acsm-certified-blog/2021/03/18/stretching-and-flexibility-guidelines-update",
+    "ACSM cardiorespiratory training guidelines (handout, secondary). https://www.rcboe.org//cms/lib/GA01903614/Centricity/Domain/20824/ACSM%20Cardiorespiratory%20Training%20Guidelines.pdf",
+    "ACE: A detailed guide to designing activity-specific warm-up and mobility drills. https://www.acefitness.org/certifiednewsarticle/2910/a-detailed-guide-to-designing-activity-specific-warm-up-and-mobility-drills/",
+    "Jeffreys I. 2007, Warm-up revisited: the RAMP method (University of South Wales record). https://pure.southwales.ac.uk/en/publications/warm-up-revisited-the-ramp-method-of-optimizing-performance-prepa/",
+    "Fradkin AJ, Zazryn TR, Smoliga JM. 2010. Effects of warming-up on physical performance: a systematic review with meta-analysis. J Strength Cond Res. https://pubmed.ncbi.nlm.nih.gov/19996770/",
+    "Herman K et al. 2012. Neuromuscular warm-up strategies for preventing lower limb injuries: a systematic review. BMC Medicine. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3408383/",
+    "Chaabene H, Behm DG et al. 2019. Acute effects of static stretching on muscle strength and power. Frontiers in Physiology. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6895680/",
+    "Simic L et al. 2013. Does pre-exercise static stretching inhibit maximal muscular performance? A meta-analytical review. https://pubmed.ncbi.nlm.nih.gov/22316148/",
+    "Warneke K, Lohmann LH. 2024. Revisiting the stretch-induced force deficit: multilevel meta-analysis. J Sport Health Sci. https://doaj.org/article/c9ed6653d18647408f444d101de5e38f",
+    "Opplert J, Babault N. 2018. Acute effects of dynamic stretching on muscle flexibility and performance. Sports Medicine. https://pubmed.ncbi.nlm.nih.gov/29063454/",
+    "Ribeiro B et al. 2020. Warm-up protocols before squat and bench press training. IJERPH. https://ideas.repec.org/a/gam/jijerp/v17y2020i18p6882-d417011.html",
+    "Ribeiro B et al. 2021. Specific warm-up vs no warm-up, Journal of Men's Health. https://doaj.org/article/90de36e35e514c36af5f61118a42eb3a",
+    "HPRC (summarising the NSCA 1RM test protocol): One rep max for strength. https://www.hprc-online.org/articles/one-rep-max-for-strength",
+    "Herbert RD, de Noronha M, Kamper SJ. 2011. Stretching to prevent or reduce muscle soreness after exercise. Cochrane Database. https://cochranelibrary.com/cdsr/doi/10.1002/14651858.CD004577.pub3/information",
+    "Afonso J et al. 2021. Effectiveness of post-exercise stretching for recovery of strength, ROM and DOMS: systematic review and meta-analysis. Frontiers in Physiology. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8133317/",
+    "Dupuy O et al. 2018. Evidence-based approach for choosing post-exercise recovery techniques: systematic review with meta-analysis. Frontiers in Physiology. https://pmc.ncbi.nlm.nih.gov/articles/PMC5932411",
+    "Van Hooren B, Peake JM. 2018. Do we need a cool-down after exercise? Sports Medicine. https://pmc.ncbi.nlm.nih.gov/articles/PMC5999142/",
+    "Wiewelhove T et al. 2019. A meta-analysis of the effects of foam rolling on performance and recovery. Frontiers in Physiology. https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2019.00376/pdf",
+    "Live Well South West: Advice before starting any activity (cool-down / stopping suddenly). https://www.livewellsouthwest.co.uk/online-activity-resources"
+  ],
+  "lastResearched": "2026-10-09",
+  "tags": [
+    "Gym",
+    "Guide"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-10-09",
+      "file": "FitPlate_Fitness_2026-10-09.md"
+    }
+  ],
+  "mergeMethod": {
+    "rules": "single",
+    "sources": "union"
+  },
+  "mergeNotes": []
+}

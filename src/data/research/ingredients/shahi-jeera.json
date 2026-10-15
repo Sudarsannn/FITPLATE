@@ -1,0 +1,77 @@
+{
+  "id": "shahi-jeera",
+  "name": "Shahi jeera",
+  "aliases": [
+    "black cumin",
+    "caraway",
+    "caraway as sold in India"
+  ],
+  "category": "Spice",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 500,
+        "max": 525,
+        "avg": 510,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 500,
+      "max": 525,
+      "avg": 510
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 50,
+    "max": 52.5,
+    "avg": 51
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 333,
+    "proteinG": 20,
+    "carbsG": 50,
+    "fatG": 15,
+    "fibreG": 38
+  },
+  "storage": "Airtight jar, cool dry cupboard: up to 1 year.",
+  "substitutes": [
+    "Regular jeera (cumin)",
+    "Caraway seeds",
+    "Skip it"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 2,
+      "quantity": 1,
+      "unit": "g",
+      "raw": "1 g (½ tsp)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

@@ -63,7 +63,7 @@
       "householdMeasure": "1 tsp"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "bay-leaf",
       "name": "Bay leaf (tej patta)",
       "quantity": 1,
       "unit": null,
@@ -77,7 +77,7 @@
       "householdMeasure": "¾ tsp"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "coriander-powder",
       "name": "Coriander powder (dhania powder)",
       "quantity": 1,
       "unit": "g",
@@ -91,28 +91,28 @@
       "householdMeasure": "a pinch"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "garam-masala",
       "name": "Garam masala",
       "quantity": 0.5,
       "unit": "g",
       "householdMeasure": "¼ tsp"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "dried-fenugreek-leaves",
       "name": "Dried fenugreek leaves (kasuri methi)",
       "quantity": 0.5,
       "unit": "g",
       "householdMeasure": "½ tsp, crushed"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "sugar",
       "name": "Sugar",
       "quantity": 2,
       "unit": "g",
       "householdMeasure": "½ tsp"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "salt",
       "name": "Salt",
       "quantity": 2,
       "unit": "g",
@@ -418,7 +418,15 @@
     "fatG": 43,
     "fibreG": 4
   },
-  "microNutrientsEstimate": null,
+  "microNutrientsEstimate": {
+    "values": {
+      "vitamin-a": 12.7,
+      "vitamin-c": 38,
+      "vitamin-k": 5.5
+    },
+    "coveragePct": 33,
+    "basis": "partial estimate from ingredient quantities"
+  },
   "asOrdered": null,
   "orderPrice": {
     "priceHistory": [
@@ -481,6 +489,21 @@
   ],
   "dietClaims": [],
   "fasting": null,
+  "dietTags": null,
+  "tags": [
+    "Veg",
+    "Contains tree nuts",
+    "Contains milk",
+    "Lunch",
+    "Dinner",
+    "North Indian",
+    "Under 60 min",
+    "Beginner",
+    "High protein"
+  ],
+  "description": null,
+  "familyId": null,
+  "variants": [],
   "needsReview": [],
   "versions": [
     {
@@ -495,7 +518,8 @@
     "steps": "newest",
     "healthiness": "newest",
     "researchRating": "newest",
-    "sources": "union"
+    "sources": "union",
+    "tags": "tag engine (tags.ts) on the merged dish"
   },
   "mergeNotes": [
     "price flag: narrowed",

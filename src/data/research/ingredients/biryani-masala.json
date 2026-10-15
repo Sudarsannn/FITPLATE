@@ -1,0 +1,71 @@
+{
+  "id": "biryani-masala",
+  "name": "Biryani masala",
+  "aliases": [],
+  "category": "Spice blend",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 1320,
+        "max": 1380,
+        "avg": 1350,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 1320,
+      "max": 1380,
+      "avg": 1350
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 132,
+    "max": 138,
+    "avg": 135
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 350,
+    "proteinG": 12,
+    "carbsG": 50,
+    "fatG": 12,
+    "fibreG": 25
+  },
+  "storage": "After opening, transfer to a small airtight jar. Room temperature, away from light and heat. It lasts about 3–6 months.",
+  "substitutes": [
+    "Homemade blend"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 2,
+      "quantity": 3,
+      "unit": "g",
+      "raw": "3 g (1 tsp, in the marinade)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

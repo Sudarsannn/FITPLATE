@@ -1,0 +1,362 @@
+{
+  "id": "vitamin-a",
+  "name": "Vitamin A",
+  "type": "vitamin",
+  "subtype": "fat-soluble",
+  "unit": "µg",
+  "altUnits": [
+    {
+      "unit": "IU (retinol)",
+      "toMainUnitFactor": 0.3
+    },
+    {
+      "unit": "µg beta-carotene (food, ICMR 6:1)",
+      "toMainUnitFactor": 0.1667
+    },
+    {
+      "unit": "µg alpha-carotene or beta-cryptoxanthin (food, ICMR 12:1)",
+      "toMainUnitFactor": 0.0833
+    },
+    {
+      "unit": "mcg RAE (US label, preformed vitamin A)",
+      "toMainUnitFactor": 1
+    }
+  ],
+  "unitConversions": [
+    {
+      "fromUnit": "µg",
+      "compound": "retinol",
+      "toMainUnitFactor": 1,
+      "raw": "1 µg retinol (or retinyl esters as retinol) | 1 µg"
+    },
+    {
+      "fromUnit": "iu",
+      "compound": "retinol",
+      "toMainUnitFactor": 0.3,
+      "raw": "1 IU of retinol (vitamin A as on capsule labels) | 0.3 µg"
+    },
+    {
+      "fromUnit": "µg",
+      "compound": "beta-carotene from food",
+      "toMainUnitFactor": 0.167,
+      "raw": "1 µg β-carotene from food | 1/6 = 0.167 µg (ICMR 6:1)"
+    },
+    {
+      "fromUnit": "µg",
+      "compound": "alpha-carotene or beta-cryptoxanthin from food",
+      "toMainUnitFactor": 0.083,
+      "raw": "1 µg α-carotene or β-cryptoxanthin from food | 1/12 = 0.083 µg (ICMR 12:1)"
+    },
+    {
+      "fromUnit": "µg",
+      "compound": "rae",
+      "toMainUnitFactor": 1,
+      "raw": "1 µg RAE (US labels) | treat as 1 µg retinol when the source is preformed vitamin A"
+    }
+  ],
+  "targets": [
+    {
+      "group": "adult_male_sedentary",
+      "ear": 460,
+      "rda": 1000,
+      "ai": null,
+      "source": "ICMR-NIN 2020"
+    },
+    {
+      "group": "adult_male_moderate",
+      "ear": 460,
+      "rda": 1000,
+      "ai": null,
+      "source": "ICMR-NIN 2020"
+    },
+    {
+      "group": "adult_male_heavy",
+      "ear": 460,
+      "rda": 1000,
+      "ai": null,
+      "source": "ICMR-NIN 2020"
+    },
+    {
+      "group": "adult_female_sedentary",
+      "ear": 390,
+      "rda": 840,
+      "ai": null,
+      "source": "ICMR-NIN 2020"
+    },
+    {
+      "group": "adult_female_moderate",
+      "ear": 390,
+      "rda": 840,
+      "ai": null,
+      "source": "ICMR-NIN 2020"
+    },
+    {
+      "group": "adult_female_heavy",
+      "ear": 390,
+      "rda": 840,
+      "ai": null,
+      "source": "ICMR-NIN 2020"
+    },
+    {
+      "group": "pregnant",
+      "ear": null,
+      "rda": 900,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (RDA via secondary summary; EAR not found)"
+    },
+    {
+      "group": "lactating",
+      "ear": null,
+      "rda": 950,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (RDA via secondary summary; EAR not found)"
+    },
+    {
+      "group": "age_60_plus",
+      "ear": null,
+      "rda": null,
+      "ai": null,
+      "source": "Not found in ICMR-NIN 2020; app uses adult RDA by sex"
+    }
+  ],
+  "appDefaultTarget": {
+    "adult_male": 1000,
+    "adult_female": 840,
+    "pregnant": 900,
+    "lactating": 950,
+    "age_60_plus": null
+  },
+  "upperLimit": {
+    "value": 3000,
+    "unit": "µg/day preformed vitamin A (retinol)",
+    "appliesTo": "food_and_supplements",
+    "source": "ICMR-NIN 2020 (as reported by CRN); same value NASEM 2001 and EFSA 2024; does not apply to beta-carotene from food"
+  },
+  "topFoodSources": [
+    {
+      "food": "Drumstick leaves (moringa)",
+      "veg": true,
+      "per100g": 2924,
+      "servingG": 25,
+      "servingLabel": "1/2 cup leaves",
+      "perServing": 731
+    },
+    {
+      "food": "Amaranth leaves, green (chaulai)",
+      "veg": true,
+      "per100g": 1426,
+      "servingG": 100,
+      "servingLabel": "1 small katori cooked",
+      "perServing": 1426
+    },
+    {
+      "food": "Fenugreek leaves (methi)",
+      "veg": true,
+      "per100g": 1541,
+      "servingG": 50,
+      "servingLabel": "1 cup loosely packed raw",
+      "perServing": 770
+    },
+    {
+      "food": "Spinach (palak)",
+      "veg": true,
+      "per100g": 434,
+      "servingG": 100,
+      "servingLabel": "1/2 katori cooked",
+      "perServing": 434
+    },
+    {
+      "food": "Carrot, orange (gajar)",
+      "veg": true,
+      "per100g": 1125,
+      "servingG": 60,
+      "servingLabel": "1 medium",
+      "perServing": 675
+    },
+    {
+      "food": "Sweet potato, brown skin (shakarkand)",
+      "veg": true,
+      "per100g": 896,
+      "servingG": 100,
+      "servingLabel": "1 small",
+      "perServing": 896
+    },
+    {
+      "food": "Coriander leaves (dhania)",
+      "veg": true,
+      "per100g": 635,
+      "servingG": 10,
+      "servingLabel": "2 tbsp chopped",
+      "perServing": 63
+    },
+    {
+      "food": "Mango, ripe, kesar",
+      "veg": true,
+      "per100g": 211,
+      "servingG": 150,
+      "servingLabel": "1 cup cubes",
+      "perServing": 317
+    },
+    {
+      "food": "Papaya, ripe",
+      "veg": true,
+      "per100g": 170,
+      "servingG": 150,
+      "servingLabel": "1 cup cubes",
+      "perServing": 255
+    },
+    {
+      "food": "Goat liver (kaleji)",
+      "veg": false,
+      "per100g": 15655,
+      "servingG": 50,
+      "servingLabel": "small portion",
+      "perServing": 7828
+    },
+    {
+      "food": "Chicken liver",
+      "veg": false,
+      "per100g": 3486,
+      "servingG": 50,
+      "servingLabel": "3-4 pieces",
+      "perServing": 1743
+    },
+    {
+      "food": "Egg, whole, boiled",
+      "veg": false,
+      "per100g": 182,
+      "servingG": 50,
+      "servingLabel": "1 egg",
+      "perServing": 91
+    }
+  ],
+  "goodSourceDishes": [
+    {
+      "dishNumber": 17,
+      "dishName": "Palak Paneer"
+    },
+    {
+      "dishNumber": 96,
+      "dishName": "Gajar Halwa"
+    },
+    {
+      "dishNumber": 13,
+      "dishName": "Pav Bhaji"
+    },
+    {
+      "dishNumber": 14,
+      "dishName": "Egg Bhurji"
+    },
+    {
+      "dishNumber": 46,
+      "dishName": "Methi Thepla"
+    },
+    {
+      "dishNumber": 9,
+      "dishName": "Idli with Sambar"
+    },
+    {
+      "dishNumber": 10,
+      "dishName": "Veg Fried Rice"
+    },
+    {
+      "dishNumber": 25,
+      "dishName": "Veg Pulao"
+    },
+    {
+      "dishNumber": 21,
+      "dishName": "Masala Omelette"
+    }
+  ],
+  "deficiencyRiskIndia": "moderate",
+  "absorptionBoosters": [
+    "dietary fat or oil in the same meal",
+    "cooking, chopping or pureeing vegetables",
+    "sauteing, steaming or pressure cooking rather than long open boiling",
+    "turmeric during cooking (better beta-carotene retention)",
+    "adequate protein and zinc"
+  ],
+  "absorptionBlockers": [
+    "very low-fat meals",
+    "fat-malabsorption conditions",
+    "heavy alcohol use",
+    "intestinal worms and frequent diarrhoea",
+    "long cooking with tamarind",
+    "sun-drying greens",
+    "discarding cooking water"
+  ],
+  "logPresets": [
+    {
+      "label": "Vitamin A capsule 25,000 IU",
+      "amount": 7500,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 7500,
+      "mainAmountRange": null,
+      "prescriptionDose": true
+    },
+    {
+      "label": "Multivitamin (enter label value)",
+      "amount": null,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": null,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Cod liver oil capsule (enter label value)",
+      "amount": null,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": null,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Custom amount in IU (retinol)",
+      "amount": null,
+      "unit": "IU",
+      "toMainFactor": 0.3,
+      "factorSource": "markdown",
+      "mainAmount": null,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    }
+  ],
+  "warnings": [
+    "Preformed vitamin A from supplements, liver and fortified foods should stay below 3000 µg per day for adults.",
+    "Beta-carotene from fruits and vegetables does not count toward the upper limit.",
+    "Pregnancy: avoid vitamin A supplements, fish liver oil and liver unless a doctor advises them; high preformed vitamin A can cause birth defects.",
+    "Age 60+ and people at risk of osteoporosis: UK NHS advises keeping total vitamin A at or below about 1500 µg per day.",
+    "Smokers and ex-smokers should avoid high-dose beta-carotene supplements (raised lung cancer risk in trials).",
+    "Do not combine vitamin A supplements with oral retinoid medicines; check with a doctor if taking blood thinners, fat-blocking weight-loss drugs or liver-affecting medicines.",
+    "A 50 g portion of goat liver can exceed the daily upper limit; limit liver to about once a week and avoid vitamin A supplements in that week.",
+    "General information, not medical advice. Check with a doctor before starting supplements."
+  ],
+  "conditionAdjustments": [],
+  "lastResearched": "2026-10-09",
+  "versions": [
+    {
+      "date": "2026-10-09",
+      "file": "FitPlate_Nutrients_2026-10-09.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3)",
+    "upperLimit": "official safety limit (D3, lower on conflict)",
+    "topFoodSources": "union; per100g official (D3)",
+    "logPresets": "union by label (newest), converted with own file factors",
+    "appDefaultTarget": "newest, kept only where it equals the ICMR row",
+    "lists": "union",
+    "warnings": "union (never dropped)",
+    "text": "newest"
+  },
+  "mergeNotes": [],
+  "needsReview": [
+    "app_default_target.age_60_plus = 840 has no ICMR row to match (age_60_plus: \"Not found in ICMR-NIN 2020; app uses adult RDA by sex\"); set to null"
+  ]
+}

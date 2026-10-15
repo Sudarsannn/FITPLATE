@@ -45,6 +45,32 @@
     "Amchur (dry mango powder)",
     "Vinegar"
   ],
+  "usedIn": [
+    {
+      "dishNumber": 1,
+      "quantity": 5,
+      "unit": "ml",
+      "raw": "5 ml juice (1 tsp, about ¼ lemon)"
+    },
+    {
+      "dishNumber": 2,
+      "quantity": 5,
+      "unit": "ml",
+      "raw": "5 ml juice (1 tsp, about ¼ lemon)"
+    },
+    {
+      "dishNumber": 4,
+      "quantity": 5,
+      "unit": "ml",
+      "raw": "5 ml juice, optional (1 tsp, in the potato masala)"
+    },
+    {
+      "dishNumber": 5,
+      "quantity": 5,
+      "unit": "ml",
+      "raw": "5 ml juice, optional (1 tsp)"
+    }
+  ],
   "versions": [
     {
       "date": "2026-10-04",
@@ -56,7 +82,8 @@
     "macrosPer100Estimate": "stable (single)",
     "aliases": "union",
     "substitutes": "union",
-    "storage": "newest"
+    "storage": "newest",
+    "usedIn": "newest"
   },
   "mergeNotes": [
     "price flag: narrowed",

@@ -1,0 +1,73 @@
+{
+  "id": "chicken-thigh-boneless-skinless",
+  "name": "Chicken thigh, boneless, skinless",
+  "aliases": [],
+  "category": "Meat (poultry)",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-05",
+        "min": 600,
+        "max": 800,
+        "avg": 690,
+        "confidence": "High",
+        "sourceFile": "FitPlate_Ingredients_2026-10-05.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 600,
+      "max": 800,
+      "avg": 690
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-05",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 60,
+    "max": 80,
+    "avg": 69
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 121,
+    "proteinG": 19.7,
+    "carbsG": 0,
+    "fatG": 4.1,
+    "fibreG": 0
+  },
+  "storage": "1–2 days.",
+  "substitutes": [
+    "Boneless chicken breast",
+    "Bone-in thigh or curry cut",
+    "Paneer"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 7,
+      "quantity": 150,
+      "unit": "g",
+      "raw": "150 g (6–8 bite-size pieces)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-05",
+      "file": "FitPlate_Ingredients_2026-10-05.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

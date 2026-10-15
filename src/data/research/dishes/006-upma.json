@@ -13,7 +13,7 @@
   "servings": 1,
   "ingredients": [
     {
-      "ingredientId": null,
+      "ingredientId": "semolina-fine-bombay-rava",
       "name": "Semolina (rava/sooji), fine or medium \"Bombay rava\"",
       "quantity": 50,
       "unit": "g",
@@ -41,7 +41,7 @@
       "householdMeasure": "½ tsp (optional, for aroma at the end)"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "mustard-seeds",
       "name": "Mustard seeds (rai)",
       "quantity": 1,
       "unit": "g",
@@ -69,7 +69,7 @@
       "householdMeasure": "3–4 halves (optional)"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "asafoetida",
       "name": "Asafoetida (hing)",
       "quantity": 0.1,
       "unit": "g",
@@ -104,28 +104,28 @@
       "householdMeasure": "½ small onion, finely chopped (about ⅓ cup)"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "carrot",
       "name": "Carrot (gajar)",
       "quantity": 20,
       "unit": "g",
       "householdMeasure": "2 tbsp, finely diced"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "green-peas-frozen",
       "name": "Green peas (matar), fresh or frozen",
       "quantity": 15,
       "unit": "g",
       "householdMeasure": "1½ tbsp"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "salt",
       "name": "Salt (namak)",
       "quantity": 1.5,
       "unit": "g",
       "householdMeasure": "¼ tsp (scant)"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "sugar",
       "name": "Sugar (cheeni)",
       "quantity": 1,
       "unit": "g",
@@ -403,7 +403,14 @@
     "fatG": 15,
     "fibreG": 5.6
   },
-  "microNutrientsEstimate": null,
+  "microNutrientsEstimate": {
+    "values": {
+      "vitamin-a": 256.8,
+      "vitamin-k": 20.3
+    },
+    "coveragePct": 10,
+    "basis": "partial estimate from ingredient quantities"
+  },
   "asOrdered": null,
   "orderPrice": {
     "priceHistory": [
@@ -483,6 +490,22 @@
   ],
   "dietClaims": [],
   "fasting": null,
+  "dietTags": null,
+  "tags": [
+    "Veg",
+    "Contains peanut",
+    "Contains tree nuts",
+    "Contains milk",
+    "Contains gluten",
+    "Contains mustard",
+    "Breakfast",
+    "South Indian",
+    "Under 30 min",
+    "Beginner"
+  ],
+  "description": null,
+  "familyId": null,
+  "variants": [],
   "needsReview": [],
   "versions": [
     {
@@ -497,7 +520,8 @@
     "steps": "newest",
     "healthiness": "newest",
     "researchRating": "newest",
-    "sources": "union"
+    "sources": "union",
+    "tags": "tag engine (tags.ts) on the merged dish"
   },
   "mergeNotes": [
     "price flag: narrowed",

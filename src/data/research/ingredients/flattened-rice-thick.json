@@ -50,6 +50,20 @@
     "Thin poha",
     "Puffed rice (murmura)"
   ],
+  "usedIn": [
+    {
+      "dishNumber": 1,
+      "quantity": 60,
+      "unit": "g",
+      "raw": "60 g (thick)"
+    },
+    {
+      "dishNumber": 4,
+      "quantity": 5,
+      "unit": "g",
+      "raw": "5 g in the dosa batter (optional)"
+    }
+  ],
   "versions": [
     {
       "date": "2026-10-04",
@@ -61,7 +75,8 @@
     "macrosPer100Estimate": "stable (single)",
     "aliases": "union",
     "substitutes": "union",
-    "storage": "newest"
+    "storage": "newest",
+    "usedIn": "newest"
   },
   "mergeNotes": []
 }

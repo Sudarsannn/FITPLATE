@@ -1,0 +1,84 @@
+{
+  "id": "cumin-seeds",
+  "name": "Cumin seeds",
+  "aliases": [
+    "jeera"
+  ],
+  "category": "Spice",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 470,
+        "max": 640,
+        "avg": 555,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 470,
+      "max": 640,
+      "avg": 555
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 47,
+    "max": 64,
+    "avg": 55.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 375,
+    "proteinG": 18,
+    "carbsG": 44,
+    "fatG": 22,
+    "fibreG": 10.5
+  },
+  "storage": "Airtight jar, cool dry cupboard: 6–12 months. Can be frozen in a sealed bag to keep aroma longer.",
+  "substitutes": [
+    "Shahi jeera",
+    "Ground cumin",
+    "Mustard seeds"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 1,
+      "quantity": 0.5,
+      "unit": "g",
+      "raw": "0.5 g (⅛ tsp, optional)"
+    },
+    {
+      "dishNumber": 5,
+      "quantity": 1,
+      "unit": "g",
+      "raw": "1 g (½ tsp)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 470.0–640.0 was wider than 30% of avg 555.0; narrowed to ±15%."
+  ]
+}

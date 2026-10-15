@@ -49,6 +49,32 @@
     "Green chilli paste (jar)",
     "Black pepper"
   ],
+  "usedIn": [
+    {
+      "dishNumber": 1,
+      "quantity": 5,
+      "unit": "g",
+      "raw": "5 g (1 small chilli)"
+    },
+    {
+      "dishNumber": 2,
+      "quantity": null,
+      "unit": null,
+      "raw": "1 piece (slit; about 3–5 g)"
+    },
+    {
+      "dishNumber": 4,
+      "quantity": 3,
+      "unit": "g",
+      "raw": "3 g (1 small, in the potato masala)"
+    },
+    {
+      "dishNumber": 5,
+      "quantity": 3,
+      "unit": "g",
+      "raw": "3 g (1 small, slit)"
+    }
+  ],
   "versions": [
     {
       "date": "2026-10-04",
@@ -60,7 +86,8 @@
     "macrosPer100Estimate": "stable (single)",
     "aliases": "union",
     "substitutes": "union",
-    "storage": "newest"
+    "storage": "newest",
+    "usedIn": "newest"
   },
   "mergeNotes": []
 }

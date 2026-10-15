@@ -1,0 +1,80 @@
+{
+  "id": "pumpkin-red-yellow",
+  "name": "Pumpkin, red/yellow",
+  "aliases": [
+    "kaddu",
+    "lal bhopla"
+  ],
+  "category": "Vegetable",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-05",
+        "min": 65,
+        "max": 90,
+        "avg": 80,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-05.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 68,
+      "max": 90,
+      "avg": 80
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-05",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 6.8,
+    "max": 9,
+    "avg": 8
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 26,
+    "proteinG": 1,
+    "carbsG": 6.5,
+    "fatG": 0.1,
+    "fibreG": 0.5
+  },
+  "storage": "Whole: room temperature, away from sunlight, for 1–2 months. Cut: scoop out the seeds, wrap in cling film and refrigerate for 4–5 days. Peeled cubes freeze for about 3 months (for cooking only). Bottle gourd: fridge, 5–7 days whole; use cut pieces within 2 days.",
+  "substitutes": [
+    "Bottle gourd (lauki/dudhi)",
+    "Ash gourd (petha / safed kaddu)",
+    "Carrot or sweet potato"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 9,
+      "quantity": 30,
+      "unit": "g",
+      "raw": "30 g (about 5–6 small cubes), pumpkin or bottle gourd"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-05",
+      "file": "FitPlate_Ingredients_2026-10-05.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 65.0–90.0 was wider than 30% of avg 80.0; narrowed to ±15%.",
+    "range clamped to observed prices: 68–92 → 68–90"
+  ]
+}

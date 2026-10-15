@@ -34,14 +34,14 @@
       "householdMeasure": "1 tbsp"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "mustard-seeds",
       "name": "Mustard seeds (rai)",
       "quantity": 1,
       "unit": "g",
       "householdMeasure": "¼ tsp"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "cumin-seeds",
       "name": "Cumin seeds (jeera)",
       "quantity": 0.5,
       "unit": "g",
@@ -76,14 +76,14 @@
       "householdMeasure": "⅛ tsp"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "salt",
       "name": "Salt (namak)",
       "quantity": 1.5,
       "unit": "g",
       "householdMeasure": "¼ tsp (scant)"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "sugar",
       "name": "Sugar (cheeni)",
       "quantity": 2,
       "unit": "g",
@@ -339,7 +339,14 @@
     "fatG": 15.2,
     "fibreG": 3.2
   },
-  "microNutrientsEstimate": null,
+  "microNutrientsEstimate": {
+    "values": {
+      "vitamin-a": 31.8,
+      "vitamin-k": 13.7
+    },
+    "coveragePct": 3,
+    "basis": "partial estimate from ingredient quantities"
+  },
   "asOrdered": null,
   "orderPrice": {
     "priceHistory": [
@@ -409,6 +416,19 @@
   ],
   "dietClaims": [],
   "fasting": null,
+  "dietTags": null,
+  "tags": [
+    "Veg",
+    "Contains peanut",
+    "Contains mustard",
+    "Breakfast",
+    "Maharashtrian",
+    "Under 30 min",
+    "Beginner"
+  ],
+  "description": null,
+  "familyId": null,
+  "variants": [],
   "needsReview": [],
   "versions": [
     {
@@ -423,7 +443,8 @@
     "steps": "newest",
     "healthiness": "newest",
     "researchRating": "newest",
-    "sources": "union"
+    "sources": "union",
+    "tags": "tag engine (tags.ts) on the merged dish"
   },
   "mergeNotes": []
 }

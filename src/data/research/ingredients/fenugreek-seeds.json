@@ -1,0 +1,76 @@
+{
+  "id": "fenugreek-seeds",
+  "name": "Fenugreek seeds",
+  "aliases": [
+    "methi dana"
+  ],
+  "category": "Spice",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 90,
+        "max": 245,
+        "avg": 165,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 140,
+      "max": 190,
+      "avg": 165
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 14,
+    "max": 19,
+    "avg": 16.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 323,
+    "proteinG": 23,
+    "carbsG": 58,
+    "fatG": 6.4,
+    "fibreG": 25
+  },
+  "storage": "Airtight jar at room temperature, dry place: up to 1–2 years.",
+  "substitutes": [
+    "Leave it out of dosa batter"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 4,
+      "quantity": 1,
+      "unit": "g",
+      "raw": "1 g (a pinch, about ⅕ tsp)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 90.0–245.0 was wider than 30% of avg 165.0; narrowed to ±15%."
+  ]
+}

@@ -49,6 +49,20 @@
     "Canned chopped tomatoes",
     "A little amchur or tamarind"
   ],
+  "usedIn": [
+    {
+      "dishNumber": 3,
+      "quantity": 150,
+      "unit": "g",
+      "raw": "150 g (2 medium, ripe red)"
+    },
+    {
+      "dishNumber": 5,
+      "quantity": 50,
+      "unit": "g",
+      "raw": "50 g (½ medium)"
+    }
+  ],
   "versions": [
     {
       "date": "2026-10-04",
@@ -60,7 +74,8 @@
     "macrosPer100Estimate": "stable (single)",
     "aliases": "union",
     "substitutes": "union",
-    "storage": "newest"
+    "storage": "newest",
+    "usedIn": "newest"
   },
   "mergeNotes": []
 }

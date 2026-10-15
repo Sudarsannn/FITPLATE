@@ -1,0 +1,87 @@
+{
+  "id": "carrot",
+  "name": "Carrot",
+  "aliases": [
+    "gajar"
+  ],
+  "category": "Vegetable",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-05",
+        "min": 65,
+        "max": 70,
+        "avg": 65,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-05.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 65,
+      "max": 70,
+      "avg": 65
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-05",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 6.5,
+    "max": 7,
+    "avg": 6.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 41,
+    "proteinG": 0.9,
+    "carbsG": 9.6,
+    "fatG": 0.2,
+    "fibreG": 2.8
+  },
+  "storage": "unwashed, tops removed, in a perforated bag or box in the crisper drawer for 2–3 weeks.",
+  "substitutes": [
+    "Pumpkin (kaddu/lal bhopla)",
+    "Green peas or beans",
+    "Frozen mixed vegetables"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 6,
+      "quantity": 20,
+      "unit": "g",
+      "raw": "20 g (2 tbsp, finely diced)"
+    },
+    {
+      "dishNumber": 9,
+      "quantity": 25,
+      "unit": "g",
+      "raw": "25 g (¼ medium, cubed, in the sambar)"
+    },
+    {
+      "dishNumber": 10,
+      "quantity": 30,
+      "unit": "g",
+      "raw": "30 g (¼ medium, finely diced)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-05",
+      "file": "FitPlate_Ingredients_2026-10-05.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

@@ -50,6 +50,14 @@
     "Ponni boiled rice",
     "Ready idli/dosa rava"
   ],
+  "usedIn": [
+    {
+      "dishNumber": 4,
+      "quantity": 40,
+      "unit": "g",
+      "raw": "40 g raw (in the dosa batter)"
+    }
+  ],
   "versions": [
     {
       "date": "2026-10-04",
@@ -61,7 +69,8 @@
     "macrosPer100Estimate": "stable (single)",
     "aliases": "union",
     "substitutes": "union",
-    "storage": "newest"
+    "storage": "newest",
+    "usedIn": "newest"
   },
   "mergeNotes": []
 }

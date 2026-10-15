@@ -1,0 +1,204 @@
+{
+  "id": "sets-reps-rest-overload",
+  "number": 3,
+  "type": "knowledge",
+  "name": "Sets, reps, rest and progressive overload (strength vs muscle vs endurance)",
+  "section": "gym",
+  "keyTakeaways": [
+    "Turning up matters more than the perfect plan. ACSM's 2026 position stand (built on 137 systematic reviews) says the biggest jump in results comes from going from no resistance training to some. Train every major muscle group at least 2 days a week and add to it gradually.",
+    "Your goal decides how heavy you lift. Heavy loads (roughly 80% of your one-rep max or more, about 1–8 reps) build the most strength. Muscle size grows across a very wide range of loads (about 30–100% of 1RM) as long as each set ends close to failure, so total weekly sets matter more. Muscular endurance comes from lighter loads (about 40–60% of 1RM) for 15+ reps with short rests.",
+    "Count hard sets per muscle per week. For muscle growth, about 10 hard sets per muscle group per week is a well-supported target. Gains keep coming above that, but each extra set adds less, especially for strength. Beginners grow well on less.",
+    "You don't need to go to failure. Ending most sets with 1–3 reps still in the tank (reps in reserve, RIR) works for both strength and size and is safer for beginners. True failure adds at most a small extra effect on size and nothing for strength.",
+    "Progress slowly, with a rule. Use double progression: stay in a rep range (for example 8–12), add reps each session, and add the smallest weight step once every set hits the top of the range. ACSM 2009 suggests adding 2–10% load once you can do 1–2 reps more than the target. Take a lighter week (deload) about every 4–6 weeks, or whenever you stall and feel worn out."
+  ],
+  "mistakes": [
+    "Adding weight too fast. Jumping 5 kg on a curl or pressing a heavier weight with sloppy form invites injury. Fix: only add weight after every set hits the top of the rep range with good form, and use the smallest step.",
+    "Never adding anything. Doing the same 3x10 with the same weight for months gives you no reason to adapt. Fix: log every set and beat your last session by 1 rep or a small weight step.",
+    "Too many sets on day one. Heavy soreness puts beginners off. Fix: start with 1–2 sets per exercise and about 6–10 weekly sets per muscle, and build up.",
+    "Chatting or scrolling between sets. Rest of 5+ minutes kills the session's flow, and 20 s rest kills the next set. Fix: use the app's rest timer: 60–120 s for most beginner sets, 2–3 min on heavy compound lifts.",
+    "Going to failure on every set. Form breaks down and fatigue builds. Fix: stop with 2–3 reps left. A useful self-check: on the last set, would you really have managed 2 more clean reps?",
+    "Stopping far too early. Ending at 10 when 20 were possible isn't a hard set. Fix: pick a weight where the last 2–3 reps feel clearly hard (about 7–8 out of 10 effort).",
+    "Counting warm-up sets as working sets. Fix: warm-up sets (lighter, done before the working weight) don't count towards weekly volume.",
+    "Program hopping. Switching routines every week makes progress impossible to track. Fix: run one plan for at least 6–8 weeks (est.).",
+    "Skipping legs or back. Fix: cover every major muscle group at least 2 days a week (WHO, NHS, ACSM).",
+    "Ignoring deloads and sleep. Fix: take an easier week every 4–6 weeks, or whenever performance drops 2 sessions in a row."
+  ],
+  "appGuidance": [
+    "Ask for goal (general fitness / fat loss / muscle / strength / endurance), experience (beginner / intermediate / advanced) and days available (2–4).",
+    "Beginner, any goal: full body, 2–3 days, 6–8 exercises, 2 sets x 8–12 reps, 2–3 RIR, rest 90 s (60 s for isolation, 120 s for squat, deadlift, leg press and bench) (est.).",
+    "Make sure every major muscle group gets at least 2 sessions a week. If the user picks only 1 day, warn: \"One day a week helps, but 2 days gives better results.\"",
+    "Strength goal: 120–180 s compound, 90 s isolation. Advanced heavy sets (≤6 reps): 180–300 s.",
+    "Muscle goal: beginner 90 s; intermediate and advanced 120 s compound, 90 s isolation.",
+    "Endurance goal: 45–60 s, or 30 s in circuit mode.",
+    "General fitness and fat loss: 60–90 s.",
+    "Show \"Skip rest\" and \"+30 s\" buttons. If reps fall by 3 or more versus the previous set, suggest +30 s next time (est.).",
+    "After each exercise, ask \"How many more reps could you have done?\" (0 / 1 / 2 / 3 / 4+). Store it as RIR.",
+    "If all sets hit the top of the range at ≥1 RIR, raise the load next session by the smallest step for that equipment (dumbbell +2–2.5 kg; machine stack +1 plate; barbell +2.5 kg total lower body, +1.25–2.5 kg upper body).",
+    "If the new load is more than 10% heavier (common with light dumbbells), widen the rep target to 15 first, then add weight.",
+    "If the user reports 4+ RIR on all sets, raise the load at once (or add 2 reps to the target).",
+    "If reps miss the bottom of the range twice in a row, keep the weight and repeat. After a third miss, drop the load by 10%.",
+    "Volume progression (muscle goal, intermediate and up): add 1 set per muscle per week every 2–4 weeks if the user reports good recovery, up to the level's ceiling.",
+    "Suggest a deload week every 5th or 6th week of training (for beginners, from month 3), or early when 2+ lifts drop 2 sessions in a row, or when the user flags poor sleep, joint pain or low motivation.",
+    "Deload = same exercises, sets cut by 40% (round down, minimum 1), load the same or 10% lighter, target 3–4 RIR (est.).",
+    "Before a set: \"Set 2 of 3 · 8–12 reps · stop with 2 reps left in the tank.\"",
+    "After a set: \"Nice. Could you have done more? Tap how many.\"",
+    "On progression: \"You hit 12 reps on every set. Next time, try 22.5 kg.\"",
+    "On a missed target: \"Tough day? That's normal. Same weight next time.\"",
+    "Rest screen: \"Rest 90 s. Breathe, sip water, get set up for the next set.\"",
+    "Deload: \"Recovery week: same moves, fewer sets. You'll come back stronger.\"",
+    "Safety: \"Sharp pain, dizziness or chest pain? Stop now and rest.\" Never prompt failure sets on barbell squat, bench press or deadlift.",
+    "No 1RM testing for beginners. Estimate %1RM from rep performance instead.",
+    "Spotter reminder for heavy barbell bench and squat (≤6 reps): \"Use safety bars or ask for a spot.\"",
+    "Users with high blood pressure: suggest 2–3 RIR and steady breathing (no breath-holding) as a default reminder, and advise a doctor's check (est.)."
+  ],
+  "rules": [
+    {
+      "if": "any user, any goal",
+      "then": "Train all major muscle groups at least 2 days per week",
+      "source": "WHO 2020; NHS; ACSM 2026 position stand"
+    },
+    {
+      "if": "goal = general_fitness or fat_loss, level = beginner",
+      "then": "At least 1-2 sets of 8-12 reps per exercise, 6-8 exercises, rest 60-90 s, 2-3 RIR, 2-3 days per week",
+      "source": "NHS strength guidance (8-12 reps, 1+ set); rest and RIR are FitPlate estimates"
+    },
+    {
+      "if": "goal = strength, level = beginner",
+      "then": "8-12 reps for the first 4-8 weeks, then 6-8 reps; 1-3 sets; rest 60-120 s; 2-3 RIR; 2-3 days per week",
+      "source": "ACSM 2009 (novice 8-12RM, 2-3 d/wk); Grgic 2018 (60-120 s enough for untrained); switch timing is an estimate"
+    },
+    {
+      "if": "goal = strength, level = intermediate",
+      "then": "4-8 reps (about 75-85% 1RM, est.); 2-4 sets; rest 2-3 min on compound lifts and 1-2 min on isolation; 1-3 RIR; 3-4 days per week",
+      "source": "ACSM 2009 (rest, frequency); ACSM 2026 (>=~80% 1RM best for strength, per summaries)"
+    },
+    {
+      "if": "goal = strength, level = advanced",
+      "then": "1-6 reps on main lifts, 6-12 on accessories; 3-5 sets (est.); rest 3-5 min on heavy sets; 4-5 days per week; avoid routine failure",
+      "source": "ACSM 2009; Grgic 2018 (>2 min for trained); Robinson 2024 (proximity to failure barely affects strength)"
+    },
+    {
+      "if": "goal = muscle, level = beginner",
+      "then": "8-12 reps; 1-3 sets per exercise; 6-10 hard sets per muscle per week (est.); rest 60-120 s; 2-3 RIR; 2-3 full-body days",
+      "source": "ACSM 2009 novice; Schoenfeld 2017 dose-response; volume and rest values are FitPlate estimates"
+    },
+    {
+      "if": "goal = muscle, level = intermediate",
+      "then": "6-15 reps; 2-4 sets; 10-15 hard sets per muscle per week; rest 90 s-3 min; 1-2 RIR; each muscle 2x per week",
+      "source": "Schoenfeld 2017 (~10+ sets/week); Schoenfeld 2016 rest trial (3 min > 1 min); Schoenfeld 2016 frequency meta-analysis (2x > 1x)"
+    },
+    {
+      "if": "goal = muscle, level = advanced",
+      "then": "5-30 reps mixed; 3-4 sets; 12-20 hard sets per muscle per week (est.); rest 2-3 min compound, 1-2 min isolation; 0-2 RIR; add sets only if recovery is good",
+      "source": "Pelland 2026 (diminishing returns per set); Refalo 2023; Schoenfeld 2017 load meta-analysis (30-100% 1RM all grow muscle near failure)"
+    },
+    {
+      "if": "goal = endurance",
+      "then": "40-60% 1RM, 15+ reps (beginner 15-20, advanced 20-30+, est.); 2-3 sets; rest under 90 s (30 s or less in circuits); 2-4 days per week",
+      "source": "ACSM 2009 (40-60% 1RM, high reps, <90 s rest); NSCA (<=30 s, per secondary sources); Schoenfeld 2015 (25-35 reps improved endurance more)"
+    },
+    {
+      "if": "every set of an exercise reaches the top of its rep range with >= 1 RIR",
+      "then": "Increase load next session by the smallest available step (about 2.5-5% upper body, 5-10% lower body) and return to the bottom of the rep range",
+      "source": "Double progression; ACSM 2009 (2-10% increase after 1-2 reps over target); CSCS/ACSM study guides for step sizes"
+    },
+    {
+      "if": "user can do 1-2 reps above target on the last set in 2 consecutive sessions",
+      "then": "Increase load (2-for-2 rule)",
+      "source": "ACSM 2009 load-progression guidance as summarised in CSCS study guides"
+    },
+    {
+      "if": "next weight step is more than 10% heavier than the current load (common with light dumbbells or machine stacks)",
+      "then": "Raise the rep target to 15 before increasing the load, or use a 1.25 kg add-on plate if available",
+      "source": "FitPlate estimate based on 2-10% guidance (ACSM 2009)"
+    },
+    {
+      "if": "user reports 4+ RIR on all sets",
+      "then": "Increase load at the next session, or raise the rep target by 2",
+      "source": "FitPlate estimate; RIR-based autoregulation (Robinson 2024 framework)"
+    },
+    {
+      "if": "reps fall below the bottom of the range in 2 consecutive sessions",
+      "then": "Repeat the same load; after a third miss reduce load by 10% and rebuild",
+      "source": "FitPlate estimate (common coaching practice)"
+    },
+    {
+      "if": "level = beginner or exercise = barbell squat, bench press or deadlift",
+      "then": "Target 2-3 RIR; never prompt training to failure",
+      "source": "ACSM 2026 (failure not required); Robinson 2024; Refalo 2023 (only trivial size benefit from failure)"
+    },
+    {
+      "if": "goal = muscle, level >= intermediate, recovery rated good for 2+ weeks",
+      "then": "Add 1 set per muscle per week, no more often than every 2-4 weeks, up to the level ceiling",
+      "source": "Schoenfeld 2017; Pelland 2026; timing is a FitPlate estimate"
+    },
+    {
+      "if": "4-6 weeks of continuous training completed (from month 3 for beginners), or performance drops 2 sessions in a row on 2+ lifts",
+      "then": "Suggest a deload week: same exercises, sets cut by about 40%, load same or 10% lighter, 3-4 RIR",
+      "source": "Bell 2023 Delphi consensus (deloads commonly every 4-6 weeks for about 7 days); reduction amounts are FitPlate estimates"
+    },
+    {
+      "if": "rest timer, goal = strength",
+      "then": "Default 120-180 s for compound lifts, 90 s for isolation; 180-300 s for sets of 6 or fewer reps at advanced level",
+      "source": "ACSM 2009; Grgic 2018"
+    },
+    {
+      "if": "rest timer, goal = muscle",
+      "then": "Default 90 s for beginners; 120 s compound and 90 s isolation for intermediate and advanced",
+      "source": "Schoenfeld 2016 rest trial; Singer 2024; values are FitPlate estimates"
+    },
+    {
+      "if": "rest timer, goal = endurance or circuit mode",
+      "then": "Default 45-60 s, or 30 s between circuit stations",
+      "source": "ACSM 2009 (<90 s); NSCA (<=30 s, per secondary sources)"
+    },
+    {
+      "if": "reps drop by 3 or more compared with the previous set",
+      "then": "Suggest adding 30 s rest before the next set",
+      "source": "FitPlate estimate"
+    },
+    {
+      "if": "user is short on time in a week",
+      "then": "Offer a minimum session: 1 hard set of 6-12 reps per main exercise, 2 times that week",
+      "source": "Androulakis-Korakakis 2019/2020 minimum effective dose meta-analysis"
+    }
+  ],
+  "weeks": null,
+  "sources": [
+    "ACSM (2026). *Resistance Training Prescription for Muscle Function, Hypertrophy, and Physical Performance in Healthy Adults: An Overview of Reviews.* Medicine & Science in Sports & Exercise (DOI 10.1249/MSS.0000000000003897, per secondary citations). Full text could not be opened. Details come from ACSM's own announcement and infographic plus summaries: https://acsm.org/science-spotlight-acsm-releases-new-position-stand-on-resistance-training/ https://acsm.org/resistance-training-guidelines-update-2026/ https://www.acsm.org/wp-content/uploads/2026/03/Resistance-Training-Position-Stand-infographic.pdf https://news.mcmaster.ca/consistency-over-perfection-new-resistance-training-guidelines-say/ https://www.newswise.com/articles/acsm-unveils-landmark-2026-resistance-training-guidelines-first-update-in-17-years https://exrx.net/WeightTraining/Guidelines (ExRx summary of the 2026 changes) https://www.medicalnewstoday.com/articles/new-resistance-training-guidelines-debunk-myths-stronger-muscles-strength-size",
+    "ACSM (2009). *Progression Models in Resistance Training for Healthy Adults.* Med Sci Sports Exerc 41(3):687–708. https://www.sportgeneeskunde.com/wp-content/uploads/ACSM-Position-Stand-Progression-Models-in-Resistance-Training-for-Healthy-Adults.pdf",
+    "WHO (2020). Guidelines on physical activity and sedentary behaviour (Bull et al., Br J Sports Med). https://pmc.ncbi.nlm.nih.gov/articles/PMC9219310 and https://www.who.int/publications/i/item/9789240015128",
+    "NHS. Physical activity guidelines for adults aged 19 to 64. https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-for-adults-aged-19-to-64/ (the 8–12 reps / 1 set detail is from NHS strength-exercise content reproduced at https://www.warwickshire.gov.uk/news/article/6643/nhs-strength-flexibility-exercises)",
+    "NSCA. Rest-interval guidance (PTQ 10.1.3) and the Essentials of Strength Training and Conditioning goal table (via secondary sources). https://www.nsca.com/education/articles/ptq/manipulate-rest-intervals-to-maximize-strength-training/ ; https://open-exam-prep.com/study-guides/cscs/program-design/resistance-training-program-design",
+    "Schoenfeld BJ, Ogborn D, Krieger JW (2017). Dose-response relationship between weekly resistance training volume and increases in muscle mass. J Sports Sci. DOI 10.1080/02640414.2016.1210197. https://researchgate.net/publication/305455324",
+    "Pelland JC et al. (2026). Resistance training volume and frequency dose-response for hypertrophy and strength (meta-regression, 67 studies). Sports Medicine 56(2):481–505. Preprint: https://sportrxiv.org/index.php/server/preprint/view/460",
+    "Schoenfeld BJ et al. (2016). Longer interset rest periods enhance muscle strength and hypertrophy in resistance-trained men. J Strength Cond Res 30(7):1805–1812. https://brookbushinstitute.com/articles/longer-interset-rest-periods-enhance-muscle-strength-hypertrophy-resistance-trained-men",
+    "Singer A et al. (2024). Give it a rest: Bayesian meta-analysis on inter-set rest and hypertrophy. Front Sports Act Living. https://www.frontiersin.org/articles/10.3389/fspor.2024.1429789/full",
+    "Grgic J et al. (2018). Effects of rest interval duration in resistance training on measures of muscular strength: a systematic review. Sports Med. https://vuir.vu.edu.au/38537/",
+    "Schoenfeld BJ et al. (2016 Sports Med; 2019 J Sports Sci). Training-frequency meta-analyses. https://mennohenselmans.com/training-frequency-2018-meta-analysis-review/ ; https://ro.ecu.edu.au/ecuworkspost2013/5665",
+    "Schoenfeld BJ, Grgic J, Ogborn D, Krieger JW (2017). Strength and hypertrophy adaptations between low- vs high-load resistance training. J Strength Cond Res 31(12):3508–3523. https://pubmed.ncbi.nlm.nih.gov/28834797/",
+    "Schoenfeld BJ et al. (2015). Effects of low- vs high-load resistance training on muscle strength and hypertrophy in well-trained men. J Strength Cond Res 29(10):2954–2963. https://lida.sport-iat.de/ta/Record/4037869",
+    "Refalo MC et al. (2023). Influence of resistance training proximity-to-failure on skeletal muscle hypertrophy. Sports Med 53(3):649–665. https://link.springer.com/article/10.1007/s40279-023-01946-6",
+    "Robinson ZP et al. (2024). Exploring the dose-response relationship between estimated resistance training proximity to failure, strength gain and hypertrophy. Sports Med 54(9):2209–2231. https://rke.abertay.ac.uk/en/publications/exploring-the-dose-response-relationship-between-estimated-resist/",
+    "Bell L et al. (2023). Integrating deloading into strength and physique sports training programmes: an international Delphi consensus approach. Sports Med Open. https://pmc.ncbi.nlm.nih.gov/articles/PMC10511399/",
+    "Androulakis-Korakakis P et al. (2019/2020). The minimum effective training dose required to increase 1RM strength in resistance-trained men. Sports Med. https://www.ufrgs.br/sees-initiative/pmid31797219/",
+    "Load-increment and 2-for-2 rule summaries (secondary, CSCS/ACSM study guides): https://app.achievable.me/study/cscs/learn/program-design-for-resistance-training-training-frequency-exercise-order-and-training-load-and-repetitions ; https://open-exam-prep.com/study-guides/acsm-cpt/chapter-6-resistance-programming/exercise-selection-order-safety"
+  ],
+  "lastResearched": "2026-10-10",
+  "tags": [
+    "Gym",
+    "Guide"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-10-10",
+      "file": "FitPlate_Fitness_2026-10-10.md"
+    }
+  ],
+  "mergeMethod": {
+    "rules": "single",
+    "sources": "union"
+  },
+  "mergeNotes": []
+}

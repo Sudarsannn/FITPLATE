@@ -49,6 +49,20 @@
     "Neutral cooking oil",
     "Homemade ghee from butter or malai"
   ],
+  "usedIn": [
+    {
+      "dishNumber": 2,
+      "quantity": 5,
+      "unit": "g",
+      "raw": "5 g (1 tsp), drizzled before dum."
+    },
+    {
+      "dishNumber": 5,
+      "quantity": 10,
+      "unit": "g",
+      "raw": "10 g (2 tsp: 1 for the masala, 1 for the tadka)."
+    }
+  ],
   "versions": [
     {
       "date": "2026-10-04",
@@ -60,7 +74,8 @@
     "macrosPer100Estimate": "stable (single)",
     "aliases": "union",
     "substitutes": "union",
-    "storage": "newest"
+    "storage": "newest",
+    "usedIn": "newest"
   },
   "mergeNotes": []
 }

@@ -21,7 +21,7 @@
       "householdMeasure": null
     },
     {
-      "ingredientId": null,
+      "ingredientId": "chicken-thigh-boneless-skinless",
       "name": "Chicken thigh, boneless, skinless",
       "quantity": 150,
       "unit": "g",
@@ -56,7 +56,7 @@
       "householdMeasure": "a pinch"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "garam-masala",
       "name": "Garam masala",
       "quantity": 0.5,
       "unit": "g",
@@ -70,7 +70,7 @@
       "householdMeasure": "1 tsp (about ¼ lemon)"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "salt",
       "name": "Salt",
       "quantity": 1.5,
       "unit": "g",
@@ -119,21 +119,21 @@
       "householdMeasure": "2 tsp"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "green-cardamom",
       "name": "Green cardamom (elaichi)",
       "quantity": 1,
       "unit": null,
       "householdMeasure": "1 pod"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "cloves",
       "name": "Cloves (laung)",
       "quantity": 2,
       "unit": null,
       "householdMeasure": "2 cloves"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "cinnamon-cassia",
       "name": "Cinnamon (dalchini)",
       "quantity": 1,
       "unit": "piece",
@@ -154,28 +154,28 @@
       "householdMeasure": "½ tsp"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "sugar",
       "name": "Sugar",
       "quantity": 2,
       "unit": "g",
       "householdMeasure": "½ tsp"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "salt",
       "name": "Salt",
       "quantity": 1,
       "unit": "g",
       "householdMeasure": "a big pinch (to taste)"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "garam-masala",
       "name": "Garam masala",
       "quantity": 0.3,
       "unit": "g",
       "householdMeasure": "a pinch"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "dried-fenugreek-leaves",
       "name": "Dried fenugreek leaves (kasuri methi)",
       "quantity": 0.5,
       "unit": "g",
@@ -533,7 +533,15 @@
     "fatG": 30,
     "fibreG": 4
   },
-  "microNutrientsEstimate": null,
+  "microNutrientsEstimate": {
+    "values": {
+      "vitamin-a": 12.7,
+      "vitamin-c": 38,
+      "vitamin-k": 5.5
+    },
+    "coveragePct": 27,
+    "basis": "partial estimate from ingredient quantities"
+  },
   "asOrdered": null,
   "orderPrice": {
     "priceHistory": [
@@ -607,6 +615,21 @@
   ],
   "dietClaims": [],
   "fasting": null,
+  "dietTags": null,
+  "tags": [
+    "Non-veg",
+    "Contains tree nuts",
+    "Contains milk",
+    "Lunch",
+    "Dinner",
+    "North Indian",
+    "Under 60 min",
+    "Intermediate",
+    "High protein"
+  ],
+  "description": null,
+  "familyId": null,
+  "variants": [],
   "needsReview": [],
   "versions": [
     {
@@ -621,7 +644,8 @@
     "steps": "newest",
     "healthiness": "newest",
     "researchRating": "newest",
-    "sources": "union"
+    "sources": "union",
+    "tags": "tag engine (tags.ts) on the merged dish"
   },
   "mergeNotes": []
 }

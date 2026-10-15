@@ -1,0 +1,552 @@
+{
+  "id": "push-up",
+  "number": 2,
+  "name": "Push-up (with knee and incline versions)",
+  "otherNames": [
+    "press-up",
+    "knee push-up",
+    "modified push-up",
+    "incline push-up",
+    "hands-elevated push-up",
+    "wall push-up",
+    "wall press"
+  ],
+  "section": "home",
+  "type": "strength",
+  "equipment": [],
+  "noEquipmentAlternative": "Wall push-up: hands on a wall at shoulder height, feet a stride back",
+  "musclesPrimary": [
+    "pectoralis major",
+    "anterior deltoid",
+    "triceps brachii"
+  ],
+  "musclesSecondary": [
+    "coracobrachialis",
+    "serratus anterior",
+    "pectoralis minor",
+    "rectus abdominis",
+    "obliques",
+    "erector spinae",
+    "quadriceps",
+    "gluteus maximus",
+    "rotator cuff"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 3.8,
+  "compendiumCode": "02022",
+  "metOptions": [
+    {
+      "code": "02022",
+      "met": 3.8,
+      "activity": "MET: 3.8, under 2024 Adult Compendium code 02022: calisthenics (for example push-ups, sit-ups, pull-ups, lunges), moderate effort. If push-ups are done fast in a hard circuit with little rest, code 02"
+    },
+    {
+      "code": "02020",
+      "met": 7.5,
+      "activity": "MET: 3.8, under 2024 Adult Compendium code 02022: calisthenics (for example push-ups, sit-ups, pull-ups, lunges), moderate effort. If push-ups are done fast in a hard circuit with little rest, code 02"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 2,
+      "reps": "8-12 (wall, incline or knee version)",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "2-0-1-0",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "8-12 (incline or knee version)",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "3-0-1-0",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "strength",
+      "sets": 3,
+      "reps": "5-8 (lower incline)",
+      "timeSec": null,
+      "restSec": 120,
+      "tempo": "2-1-1-0",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 2,
+      "reps": "12-20 (easy incline)",
+      "timeSec": null,
+      "restSec": 50,
+      "tempo": "2-0-1-0",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "fat_loss",
+      "sets": 3,
+      "reps": "10-15",
+      "timeSec": null,
+      "restSec": 50,
+      "tempo": "2-0-1-0",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "8-15 (1-3 reps in reserve)",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "3-1-1-0",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "strength",
+      "sets": 4,
+      "reps": "5-8 (feet elevated)",
+      "timeSec": null,
+      "restSec": 150,
+      "tempo": "2-1-1-0",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "15-25",
+      "timeSec": null,
+      "restSec": 50,
+      "tempo": "1-0-1-0",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "fat_loss",
+      "sets": 4,
+      "reps": "12-20",
+      "timeSec": 40,
+      "restSec": 40,
+      "tempo": "2-0-1-0",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "6-12 (deficit or weighted)",
+      "timeSec": null,
+      "restSec": 105,
+      "tempo": "3-1-1-0",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": 5,
+      "reps": "3-6 (archer or weighted)",
+      "timeSec": null,
+      "restSec": 150,
+      "tempo": "2-1-X-0",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "max minus 1-2",
+      "timeSec": 60,
+      "restSec": 60,
+      "tempo": "1-0-1-0",
+      "perWeek": 3
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "top",
+        "joint": "elbow",
+        "angleDeg": ">= 150",
+        "parsed": {
+          "op": ">=",
+          "value": 150,
+          "max": null
+        }
+      },
+      {
+        "name": "down",
+        "joint": "elbow",
+        "angleDeg": "<= 100",
+        "parsed": {
+          "op": "<=",
+          "value": 100,
+          "max": null
+        }
+      },
+      {
+        "name": "up",
+        "joint": "elbow",
+        "angleDeg": ">= 150",
+        "parsed": {
+          "op": ">=",
+          "value": 150,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 1
+  },
+  "formChecks": [
+    {
+      "joint": "hip",
+      "rule": "shoulder-hip-ankle angle < 160 with hip below line",
+      "message": "Hips sagging. Squeeze your glutes."
+    },
+    {
+      "joint": "hip",
+      "rule": "shoulder-hip-ankle angle < 160 with hip above line",
+      "message": "Hips too high. Lower them into a plank."
+    },
+    {
+      "joint": "elbow",
+      "rule": "bottom elbow angle never <= 110",
+      "message": "Go a little lower. Chest to a fist from the floor."
+    },
+    {
+      "joint": "elbow",
+      "rule": "top elbow angle never >= 150",
+      "message": "Push all the way up."
+    },
+    {
+      "joint": "neck",
+      "rule": "nose well below shoulder-hip line",
+      "message": "Keep your neck long. Look just ahead."
+    },
+    {
+      "joint": "elbow",
+      "rule": "front view elbow-to-torso angle > 60",
+      "message": "Elbows in: make an arrow."
+    },
+    {
+      "joint": "tempo",
+      "rule": "rep duration < 1.0 s",
+      "message": "Slow down. 2 seconds down."
+    },
+    {
+      "joint": "hip",
+      "rule": "knee version: knee-hip-shoulder angle < 150",
+      "message": "Walk your hands forward. Knees, hips, shoulders in a line."
+    }
+  ],
+  "safetyFlags": [
+    "shoulder_pain",
+    "wrist_pain",
+    "elbow_pain",
+    "lower_back_pain",
+    "knee_pain_knee_version",
+    "high_blood_pressure_avoid_breath_holding",
+    "pregnancy_use_incline",
+    "diastasis_recti",
+    "recent_surgery"
+  ],
+  "progressions": [
+    "full push-up",
+    "feet-elevated push-up",
+    "deficit or tempo push-up",
+    "archer push-up",
+    "weighted (backpack) push-up"
+  ],
+  "regressions": [
+    "knee push-up",
+    "low-incline push-up (stair step)",
+    "high-incline push-up (counter or table)",
+    "wall push-up",
+    "negative push-up"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "side, floor level, 2.5 m",
+      "shows": "kneel, place hands, step back to plank",
+      "textOverlay": "Hands just outside shoulders. Body in one straight line."
+    },
+    {
+      "seconds": 10,
+      "angle": "side, hip height, 2.5 m",
+      "shows": "2 full push-ups, slow motion at bottom",
+      "textOverlay": "2 seconds down, 1 up. Breathe in down, out up."
+    },
+    {
+      "seconds": 6,
+      "angle": "overhead or front, 1.5 m",
+      "shows": "elbows at 45 degrees vs flared 90 degrees",
+      "textOverlay": "Arrow, not T."
+    },
+    {
+      "seconds": 10,
+      "angle": "side, split screen",
+      "shows": "sagging hips, piked hips, correct plank",
+      "textOverlay": "Sag no, Pike no, Plank yes."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, floor level, 2 m",
+      "shows": "knee push-up setup and 2 reps",
+      "textOverlay": "Knees to shoulders: one line."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, counter height, 2.5 m",
+      "shows": "incline push-up on kitchen counter, 2 reps",
+      "textOverlay": "Higher surface = easier. Lower it over the weeks."
+    },
+    {
+      "seconds": 6,
+      "angle": "side, 2 m",
+      "shows": "wall push-up, 2 reps",
+      "textOverlay": "Start here if floor push-ups feel too hard."
+    },
+    {
+      "seconds": 5,
+      "angle": "side, floor level",
+      "shows": "knees down and sit back to finish",
+      "textOverlay": "Knees down first. Don't collapse."
+    }
+  ],
+  "lastResearched": "2026-10-10",
+  "setupSteps": [
+    "Space: clear a strip of floor at least as long as your body. Put a mat down if the floor is hard marble or tile and your palms slip.",
+    "Kneel in the middle of the mat, facing its long edge.",
+    "Hand placement: put your palms flat on the floor directly below your shoulders, or slightly wider. Mayo Clinic says \"a bit wider than shoulder width\". ACE and South Tees NHS say shoulder width. FitPlate default: just outside shoulder width.",
+    "Hand line: the hands should sit in line with the middle of the chest (nipple line), not up by the face (est.).",
+    "Fingers: spread them and point them forward, or turn them very slightly outward if that eases the wrists or shoulders.",
+    "Arms: straight, but don't hard-lock the elbows.",
+    "Legs: step one foot back, then the other, so you are on your toes with your legs straight.",
+    "Feet: about hip-width apart. Feet together makes it slightly harder to balance; wider feet are more stable.",
+    "Body line: squeeze your glutes, lightly brace your stomach as if bracing for a poke, and make one straight line from head to heels. This is a high plank.",
+    "Head: look at the floor a little ahead of your hands, so the neck stays in line with the spine.",
+    "Start on hands and knees on a mat or folded towel, with your hands placed as for the full version.",
+    "Walk your hands forward until a straight line runs from your knees through your hips to your shoulders. Your hips must not stay piked back over your knees.",
+    "Feet: either cross your ankles and lift your feet, or leave your toes resting on the floor. ACSM's test position keeps the lower legs on the mat with the ankles pointed.",
+    "Pad the knees. Mumbai flats often have hard vitrified tiles.",
+    "Choose a surface that can't slide or tip: a wall, a kitchen counter, a heavy table against a wall, a solid bed frame, or a stair step. Never use a plastic chair or a stool with wheels.",
+    "Choose the height. Higher means easier: in the force-plate study, hands raised about 61 cm (a low table) carried about 41% of body weight, versus about 64% on the floor.",
+    "Place your hands on the edge just outside shoulder width.",
+    "Walk your feet back until your body forms one straight line from head to heels, with arms straight and shoulders over the hands. Stand on the balls of your feet.",
+    "Wall version: stand about a stride or arm's length from the wall, then place your hands at shoulder height and shoulder width on the wall (NHS South Tees)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Set the plank",
+      "action": "hold the start position from Setup, with arms straight and body straight.",
+      "feel": "light tension in your stomach and glutes, and weight spread between your hands and toes.",
+      "breathing": "take a normal breath in.",
+      "tempo": "1–2 s to settle.",
+      "visualCheck": "from the side, ears, shoulders, hips, knees and ankles sit on one straight line, with wrists under or just in front of the shoulders. From the front, hands are level and the head is centred, not dropping."
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Set the shoulders",
+      "action": "gently push the floor away so your upper back isn't sunk between your shoulder blades, and keep your shoulders away from your ears.",
+      "feel": "muscles under your armpits (serratus) switch on.",
+      "breathing": "normal.",
+      "tempo": "1 s.",
+      "visualCheck": "from the side, the upper back is flat, not dipped. From the front, the neck looks long."
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Start lowering by bending the elbows",
+      "action": "bend your elbows and let them travel back at roughly 45° from your body. Seen from above, you should look like an arrow, not a \"T\".",
+      "feel": "the chest and the front of the shoulders stretch and take the load.",
+      "breathing": "breathe in as you go down.",
+      "tempo": "2–3 s for the whole descent (controlled; Mayo Clinic warns against dropping down).",
+      "visualCheck": "from the side, the whole body lowers as one plank, without the hips dropping first. From the front, the elbows point back and slightly out, not straight out sideways."
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Reach the bottom",
+      "action": "lower until your chest is about a fist's height from the floor, or lightly touches it (for the incline version, the chest comes near the edge; for the wall version, the head comes within a few cm of the wall).",
+      "feel": "a strong stretch across the chest, with the stomach still tight.",
+      "breathing": "finish the inhale. Don't hold your breath for long.",
+      "tempo": "pause about 0–1 s, with no bouncing.",
+      "visualCheck": "from the side, upper arms are about level with the torso (elbow about 90° or less, est.) and the body is still straight. From the front, shoulders are level and not shrugged up."
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Press up",
+      "action": "push the floor away until your arms are straight again.",
+      "feel": "the chest and triceps work hard. Your stomach stops the hips from lagging behind.",
+      "breathing": "breathe out as you push up.",
+      "tempo": "1–2 s up (smooth, not snapped).",
+      "visualCheck": "from the side, shoulders and hips rise together. From the front, both arms straighten at the same speed and the body does not twist."
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Finish the rep",
+      "action": "at the top, keep pushing gently so the shoulder blades spread slightly apart, without rounding the upper back hard. Then start the next rep.",
+      "feel": "arms straight and core still braced.",
+      "breathing": "short reset breath.",
+      "tempo": "0–1 s.",
+      "visualCheck": "you are back in the same plank as step 1."
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "End the set safely",
+      "action": "after the last rep, lower your knees to the mat first, then sit back on your heels. Don't collapse onto your chest. In the incline version, walk your feet in towards the surface before standing.",
+      "feel": "muscles relaxing.",
+      "breathing": "breathe normally.",
+      "tempo": "2–3 s.",
+      "visualCheck": "controlled, with no flop."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Sagging hips (banana back)",
+      "text": "Sagging hips (banana back). This loads the lower back and turns a strength move into a back strain. Fix: squeeze your glutes, brace your stomach, or regress to an incline where the plank is easier."
+    },
+    {
+      "title": "Hips piked high",
+      "text": "Hips piked high. This cuts the range and moves the load off the chest. Fix: lower your hips until they're in line, and check sideways in a mirror or on camera."
+    },
+    {
+      "title": "Elbows flared to 90°",
+      "text": "Elbows flared to 90°. Coaching and physio sources link this to extra stress on the front of the shoulder and the inner elbow. Fix: aim for 45° (the \"arrow\"), and turn your hands very slightly outward if that helps."
+    },
+    {
+      "title": "Half reps (only bending the elbows a little)",
+      "text": "Half reps (only bending the elbows a little). The chest gets little work and progress stalls. Fix: lower to a fist's height from the floor. If you can't, raise your hands higher (an incline) rather than cutting depth."
+    },
+    {
+      "title": "Head poking down first",
+      "text": "Head poking down first. This strains the neck and fakes depth. Fix: keep your chin gently tucked so your chest arrives first."
+    },
+    {
+      "title": "Holding your breath for the whole set",
+      "text": "Holding your breath for the whole set. This raises blood pressure and makes you tire faster. Fix: breathe in on the way down and out on the way up."
+    },
+    {
+      "title": "Hands too far forward (ahead of the head)",
+      "text": "Hands too far forward (ahead of the head). This increases wrist bend and shoulder stress. Fix: keep your hands under the lower chest."
+    },
+    {
+      "title": "Rushing",
+      "text": "Rushing. Bouncing out of the bottom uses momentum and loses control. Fix: use a 2–3 s descent and a smooth 1–2 s press."
+    },
+    {
+      "title": "Knee version with the hips sitting back",
+      "text": "Knee version with the hips sitting back. This turns it into an easy \"head bob\". Fix: walk your hands out until knees, hips and shoulders line up."
+    }
+  ],
+  "safetyNotes": [
+    "Shoulder problems (impingement, rotator cuff pain, past dislocation): use a higher incline, keep the elbows near 30–45°, and limit depth to a pain-free range. Stop if pain is sharp or catches.",
+    "Wrist pain (including from long hours of typing): use push-up handles or hex dumbbells to keep the wrists straight, or do push-ups on your fists on a padded mat, or use an incline to reduce load. See a physio if pain persists, or if there is swelling, numbness or tingling.",
+    "Elbow pain (tennis or golfer's elbow): avoid very narrow hands, keep the reps slow, and use an incline.",
+    "Lower back problems: sagging puts strain on the back. Use an incline or wall version, which makes the plank easier, and stop if back pain appears.",
+    "Knee problems: for the knee version, pad well or use the incline version instead (no knee contact).",
+    "High blood pressure or heart disease: breathe steadily and don't hold your breath, because breath-holding (the Valsalva manoeuvre) spikes blood pressure. Avoid sets to failure, and prefer incline versions. Get medical clearance if your BP is uncontrolled.",
+    "Pregnancy: many pregnancy-exercise sources suggest moving to incline or wall push-ups as the bump grows, to reduce load on the stretched abdominal wall. Avoid bearing down, stop if you see doming or coning along the midline of the belly, and follow your doctor's advice.",
+    "Diastasis recti or after childbirth: start with wall or incline versions and progress under guidance.",
+    "Recent surgery (chest, shoulder, abdomen, wrist) or recent fracture: don't do this until your surgeon or physio clears you.",
+    "Osteoporosis in the wrists, or past wrist fracture: use incline or handle versions, and get professional advice.",
+    "Stop immediately if you notice: chest pain or pressure, unusual breathlessness, dizziness or light-headedness, sharp joint pain (shoulder, elbow, wrist), pins and needles or numbness in the arms or hands, or sudden back pain.",
+    "Spotter: not needed.",
+    "Home etiquette: make sure your incline surface can't slide, especially on a wet floor after mopping. Keep children and pets clear of the space under your chest."
+  ],
+  "sources": [
+    "ExRx.net – Push-up (target, synergist and stabiliser muscles): https://exrx.net/WeightExercises/PectoralSternal/BWPushup",
+    "ExRx.net – Incline Push-up: https://exrx.net/WeightExercises/PectoralSternal/BWInclinePushup",
+    "ACE Exercise Library – Push-up (and kneeling variation): https://www.acefitness.org/resources/everyone/exercise-library/220/push-up/",
+    "Mayo Clinic – Pushups video (modified and wall push-up cues): https://www.mayoclinic.org/healthy-lifestyle/fitness/multimedia/pushups/vid-20084674",
+    "Mayo Clinic Care Network – \"Know how to do a proper pushup?\": https://www.mymlc.com/health-information/articles/k/know-how-to-do-a-proper-pushup/",
+    "Harvard Health – Modify your push-ups to meet your fitness level: https://www.health.harvard.edu/exercise-and-fitness/modify-your-push-ups-to-meet-your-fitness-level",
+    "Harvard Health – The rise of push-ups: https://www.health.harvard.edu/blog/rise-push-ups-classic-exercise-can-motivate-get-stronger-2019021810165",
+    "NHS South Tees – Combined press ups (wall and knee press-up): https://www.southtees.nhs.uk/resources/combined-press-ups/",
+    "NHS RJAH OurSpace – Wall press: https://ourspace.rjah.nhs.uk/exercise/wall-press",
+    "Herrmann SD et al. 2024 Adult Compendium of Physical Activities (J Sport Health Sci): https://pubmed.ncbi.nlm.nih.gov/38242596/ ; tracking guide with codes 02020/02022: https://pacompendium.com/wp-content/uploads/2025/02/4_2024_adult-compendium-tracking-guide-1-2024.pdf",
+    "Ebben WP et al. Kinetic analysis of several variations of push-ups (2011), force-plate data: https://ojs.ub.uni-konstanz.de/cpa/article/view/4457 ; summary: https://breakingmuscle.com/fitness/kinetic-analysis-of-the-push-up-which-version-is-hardest",
+    "Suprak DN, Dawes J, Stephenson MD. The effect of position on the percentage of body mass supported during traditional and modified push-up variants. J Strength Cond Res 2011;25:497–503: https://pubmed.ncbi.nlm.nih.gov/20179649 ; summary: https://www.cooperinstitute.org/blog/how-much-weight-is-really-lifted-during-a-push-up",
+    "Kikuchi N, Nakazato K. Low-load bench press and push-up induce similar muscle hypertrophy and strength gain. J Exerc Sci Fit 2017;15(1):37–42: https://pubmed.ncbi.nlm.nih.gov/29541130/",
+    "Calatayud J et al. Bench press and push-up at comparable levels of muscle activity results in similar strength gains (2015): https://roderic.uv.es/bitstreams/9b37d667-9048-4ecb-81de-33572f0f9d02/download",
+    "Yang J et al. Association between push-up exercise capacity and future cardiovascular events among active adult men. JAMA Netw Open 2019;2(2):e188341 (Harvard T.H. Chan summary): https://hsph.harvard.edu/news/push-up-capacity-cardiovascular-disease-events-men",
+    "ACSM Position Stand – Progression models in resistance training for healthy adults (2009): https://www.sportgeneeskunde.com/wp-content/uploads/ACSM-Position-Stand-Progression-Models-in-Resistance-Training-for-Healthy-Adults.pdf",
+    "ACSM push-up test protocol (knee position description), secondary: https://exercise.trekeducation.org/2017/10/01/maximal-push-test/",
+    "E3 Rehab – Push-up modifications (wrist and shoulder adjustments): https://e3rehab.com/pushupmodifications/",
+    "Physitrack – Push-up, pregnancy modified (wall/incline): https://www.physitrack.com/exercise-library/how-to-perform-the-push-up-pregnancy-modified",
+    "Hand width: ACE and NHS say shoulder width, Mayo says slightly wider. Chosen: just outside shoulder width.",
+    "Elbow angle: most coaching sources say about 45°, while a biomechanics summary suggests 20–40°. Chosen: aim for about 45°, with anything from 20–45° acceptable, and avoid 90° flare.",
+    "Load of the knee push-up: Harvard Health says 36–45% of body weight; force-plate studies say 49% (Ebben) and 54–62% (Suprak). Chosen: the measured force-plate values.",
+    "Full push-up load: 64% (Ebben, peak force) vs 69–75% (Suprak, by position). Both are reported; the difference reflects method.",
+    "ACSM 2026 resistance-training update: reported in the news, but its specific novice numbers were not retrieved, so the 2009 position stand figures are used. Recheck next cycle.",
+    "NSCA-specific push-up technique guidance: Not found."
+  ],
+  "burnMinutes": null,
+  "gymAccess": [],
+  "suitsPreferences": [],
+  "swapsByAccess": null,
+  "conditionCautions": [],
+  "searchTags": null,
+  "tags": [
+    "Home",
+    "No equipment",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Strength",
+    "Chest",
+    "Shoulders",
+    "Arms",
+    "Rep counter"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-10-10",
+      "file": "FitPlate_Fitness_2026-10-10.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

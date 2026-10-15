@@ -1,0 +1,75 @@
+{
+  "id": "green-capsicum",
+  "name": "Green capsicum",
+  "aliases": [
+    "shimla mirch"
+  ],
+  "category": "Vegetable",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-05",
+        "min": 70,
+        "max": 75,
+        "avg": 75,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-05.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 70,
+      "max": 75,
+      "avg": 75
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-05",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 7,
+    "max": 7.5,
+    "avg": 7.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 20,
+    "proteinG": 0.9,
+    "carbsG": 4.6,
+    "fatG": 0.2,
+    "fibreG": 1.7
+  },
+  "storage": "Whole: unwashed, in a paper or perforated bag in the fridge crisper for 5–7 days. Cut: airtight box in the fridge for 2–3 days. Diced capsicum can be frozen raw for cooking (loses crunch).",
+  "substitutes": [
+    "Red or yellow capsicum",
+    "Zucchini or extra French beans",
+    "Green chilli (small amount)"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 10,
+      "quantity": 25,
+      "unit": "g",
+      "raw": "25 g (¼ medium capsicum, finely diced)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-05",
+      "file": "FitPlate_Ingredients_2026-10-05.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

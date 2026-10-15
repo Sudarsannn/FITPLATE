@@ -1,0 +1,99 @@
+{
+  "id": "salt",
+  "name": "Salt",
+  "aliases": [
+    "namak",
+    "iodised"
+  ],
+  "category": "Packaged",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-04",
+        "min": 25,
+        "max": 30,
+        "avg": 28,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 25,
+      "max": 30,
+      "avg": 28
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-04",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 2.5,
+    "max": 3,
+    "avg": 2.8
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 0,
+    "proteinG": 0,
+    "carbsG": 0,
+    "fatG": 0,
+    "fibreG": 0
+  },
+  "storage": "Airtight container at room temperature, away from steam and moisture, which cause lumps. A few rice grains in the salt shaker absorb damp. It lasts indefinitely.",
+  "substitutes": [
+    "Rock salt (sendha namak), 1",
+    "Sea salt or kosher salt, 1"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 1,
+      "quantity": 1.5,
+      "unit": "g",
+      "raw": "1.5 g (¼ tsp, scant)"
+    },
+    {
+      "dishNumber": 2,
+      "quantity": 4,
+      "unit": "g",
+      "raw": "4 g (marinade) + 6 g (rice cooking water, mostly drained off)"
+    },
+    {
+      "dishNumber": 3,
+      "quantity": 2,
+      "unit": "g",
+      "raw": "2 g (⅓ tsp)"
+    },
+    {
+      "dishNumber": 4,
+      "quantity": 1,
+      "unit": "g",
+      "raw": "1 g (batter) + 2 g (potato masala)"
+    },
+    {
+      "dishNumber": 5,
+      "quantity": 2.5,
+      "unit": "g",
+      "raw": "2.5 g (½ tsp, level)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-04",
+      "file": "FitPlate_Ingredients_2026-10-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

@@ -11,6 +11,16 @@ import item_007_butter_chicken from './007-butter-chicken.json';
 import item_008_chole_chana_masala from './008-chole-chana-masala.json';
 import item_009_idli_with_sambar from './009-idli-with-sambar.json';
 import item_010_veg_fried_rice from './010-veg-fried-rice.json';
+import item_011_aloo_paratha from './011-aloo-paratha.json';
+import item_012_rajma_chawal from './012-rajma-chawal.json';
+import item_013_pav_bhaji from './013-pav-bhaji.json';
+import item_014_egg_bhurji from './014-egg-bhurji.json';
+import item_015_veg_hakka_noodles from './015-veg-hakka-noodles.json';
+import item_016_besan_chilla from './016-besan-chilla.json';
+import item_017_palak_paneer from './017-palak-paneer.json';
+import item_018_chicken_tikka_masala from './018-chicken-tikka-masala.json';
+import item_019_jeera_rice from './019-jeera-rice.json';
+import item_020_vada_pav from './020-vada-pav.json';
 
 export const items: Dish[] = [
   item_001_poha as unknown as Dish,
@@ -23,4 +33,14 @@ export const items: Dish[] = [
   item_008_chole_chana_masala as unknown as Dish,
   item_009_idli_with_sambar as unknown as Dish,
   item_010_veg_fried_rice as unknown as Dish,
+  item_011_aloo_paratha as unknown as Dish,
+  item_012_rajma_chawal as unknown as Dish,
+  item_013_pav_bhaji as unknown as Dish,
+  item_014_egg_bhurji as unknown as Dish,
+  item_015_veg_hakka_noodles as unknown as Dish,
+  item_016_besan_chilla as unknown as Dish,
+  item_017_palak_paneer as unknown as Dish,
+  item_018_chicken_tikka_masala as unknown as Dish,
+  item_019_jeera_rice as unknown as Dish,
+  item_020_vada_pav as unknown as Dish,
 ];

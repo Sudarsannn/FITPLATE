@@ -14,7 +14,7 @@
   "servings": 1,
   "ingredients": [
     {
-      "ingredientId": "chicken-curry-cut-bone-in-skinless",
+      "ingredientId": null,
       "name": "Chicken (curry cut, bone-in, skinless)",
       "quantity": 180,
       "unit": "g",
@@ -84,7 +84,7 @@
       "householdMeasure": "1/8 tsp (a pinch)"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "biryani-masala",
       "name": "Biryani masala",
       "quantity": 3,
       "unit": "g",
@@ -98,7 +98,7 @@
       "householdMeasure": "1 tsp (1/4 lemon)"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "salt",
       "name": "Salt",
       "quantity": 4,
       "unit": "g",
@@ -119,42 +119,42 @@
       "householdMeasure": "1 tsp"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "bay-leaf",
       "name": "Bay leaf (tej patta)",
       "quantity": 1,
       "unit": null,
       "householdMeasure": "1 leaf"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "green-cardamom",
       "name": "Green cardamom (elaichi)",
       "quantity": 2,
       "unit": null,
       "householdMeasure": "2 pods"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "cloves",
       "name": "Cloves (laung)",
       "quantity": 2,
       "unit": null,
       "householdMeasure": "2 pieces"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "cinnamon-cassia",
       "name": "Cinnamon (dalchini)",
       "quantity": 1,
       "unit": "small",
       "householdMeasure": "2 cm stick"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "shahi-jeera",
       "name": "Shahi jeera (caraway / black cumin)",
       "quantity": 1,
       "unit": "g",
       "householdMeasure": "1/2 tsp"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "saffron",
       "name": "Saffron (kesar), optional",
       "quantity": 6,
       "unit": null,
@@ -493,7 +493,14 @@
     "fatG": 23,
     "fibreG": 5
   },
-  "microNutrientsEstimate": null,
+  "microNutrientsEstimate": {
+    "values": {
+      "vitamin-a": 31.8,
+      "vitamin-k": 13.7
+    },
+    "coveragePct": 0,
+    "basis": "partial estimate from ingredient quantities"
+  },
   "asOrdered": null,
   "orderPrice": {
     "priceHistory": [
@@ -554,6 +561,20 @@
   ],
   "dietClaims": [],
   "fasting": null,
+  "dietTags": null,
+  "tags": [
+    "Non-veg",
+    "Contains peanut",
+    "Contains milk",
+    "Lunch",
+    "Dinner",
+    "Hyderabadi-style dum biryani",
+    "Intermediate",
+    "High protein"
+  ],
+  "description": null,
+  "familyId": null,
+  "variants": [],
   "needsReview": [],
   "versions": [
     {
@@ -568,7 +589,8 @@
     "steps": "newest",
     "healthiness": "newest",
     "researchRating": "newest",
-    "sources": "union"
+    "sources": "union",
+    "tags": "tag engine (tags.ts) on the merged dish"
   },
   "mergeNotes": [
     "price flag: narrowed",

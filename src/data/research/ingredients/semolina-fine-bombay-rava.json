@@ -1,0 +1,61 @@
+{
+  "id": "semolina-fine-bombay-rava",
+  "name": "Semolina, fine Bombay rava",
+  "aliases": [
+    "rava",
+    "sooji"
+  ],
+  "category": "Grain (milled wheat)",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-05",
+        "min": 50,
+        "max": 65,
+        "avg": 60,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-05.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 50,
+      "max": 65,
+      "avg": 60
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-05",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 5,
+    "max": 6.5,
+    "avg": 6
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": null,
+  "storage": null,
+  "substitutes": [],
+  "usedIn": [],
+  "versions": [
+    {
+      "date": "2026-10-05",
+      "file": "FitPlate_Ingredients_2026-10-05.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (none)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": [
+    "2026-10-05: no detail section found"
+  ]
+}

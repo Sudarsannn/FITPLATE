@@ -1,0 +1,60 @@
+{
+  "id": "tamarind-seedless-block",
+  "name": "Tamarind, seedless block",
+  "aliases": [
+    "imli"
+  ],
+  "category": "Spice/condiment (dried fruit pulp)",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-05",
+        "min": 225,
+        "max": 300,
+        "avg": 260,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-05.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 225,
+      "max": 300,
+      "avg": 260
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-05",
+    "stale": false,
+    "seasonal": false
+  },
+  "per100Estimate": {
+    "min": 22.5,
+    "max": 30,
+    "avg": 26
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": null,
+  "storage": null,
+  "substitutes": [],
+  "usedIn": [],
+  "versions": [
+    {
+      "date": "2026-10-05",
+      "file": "FitPlate_Ingredients_2026-10-05.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (none)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": [
+    "2026-10-05: no detail section found"
+  ]
+}

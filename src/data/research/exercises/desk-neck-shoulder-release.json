@@ -1,0 +1,961 @@
+{
+  "id": "desk-neck-shoulder-release",
+  "number": 1,
+  "name": "Desk neck and shoulder release",
+  "otherNames": [
+    "Desk neck stretches",
+    "Office neck and shoulder routine",
+    "Griva Sanchalana (neck movement, CYP)",
+    "Skandha Chakra (shoulder rotation, CYP)"
+  ],
+  "section": "yoga_stretch",
+  "type": "mobility",
+  "equipment": [
+    "chair (optional)"
+  ],
+  "noEquipmentAlternative": "Do every step standing with hands on the waist (CYP style) or sitting cross-legged on the floor or bed.",
+  "musclesPrimary": [
+    "upper trapezius",
+    "levator scapulae",
+    "scalenes",
+    "sternocleidomastoid",
+    "neck extensors (splenius, semispinalis, suboccipitals)"
+  ],
+  "musclesSecondary": [
+    "deep neck flexors (longus colli, longus capitis)",
+    "rhomboids",
+    "middle and lower trapezius",
+    "deltoids",
+    "rotator cuff"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 2.3,
+  "compendiumCode": "02101",
+  "metOptions": [
+    {
+      "code": "02101",
+      "met": 2.3,
+      "activity": "MET: 2.3, 2024 Adult Compendium of Physical Activities, code 02101 \"Stretching, mild\" (Conditioning Exercise heading). The Compendium does not list a separate value for desk neck and shoulder routines"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "flexibility",
+      "sets": 2,
+      "reps": "Full sequence once; trapezius and levator stretches 2 holds per side",
+      "timeSec": 20,
+      "restSec": 0,
+      "tempo": "Slow: 2-3 s into each movement, 1-2 s pause",
+      "perWeek": 5
+    },
+    {
+      "level": "beginner",
+      "goal": "relaxation",
+      "sets": 1,
+      "reps": "Quick version: chin tucks x5, side bends x2 rounds, turns x2 rounds, shoulder rolls x5, Skandha Chakra x2 each way",
+      "timeSec": 120,
+      "restSec": null,
+      "tempo": "Slow, matched to breath",
+      "perWeek": 5
+    },
+    {
+      "level": "intermediate",
+      "goal": "flexibility",
+      "sets": 2,
+      "reps": "Full sequence; stretches 2 holds per side",
+      "timeSec": 30,
+      "restSec": 0,
+      "tempo": "Slow: 3 s into each movement, 2 s pause",
+      "perWeek": 7
+    },
+    {
+      "level": "advanced",
+      "goal": "flexibility",
+      "sets": 3,
+      "reps": "Full sequence; stretches 3 holds per side; optional slow full CYP neck circle if symptom-free",
+      "timeSec": 30,
+      "restSec": 0,
+      "tempo": "Slow: 3 s into each movement, 2 s pause",
+      "perWeek": 7
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "hold_timer",
+    "cameraView": "front",
+    "landmarks": [
+      "nose",
+      "left_eye",
+      "right_eye",
+      "left_ear",
+      "right_ear",
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip"
+    ],
+    "phases": [
+      {
+        "name": "neutral",
+        "joint": "head tilt (ear-to-ear line vs horizontal)",
+        "angleDeg": "< 10",
+        "parsed": {
+          "op": "<",
+          "value": 10,
+          "max": null
+        }
+      },
+      {
+        "name": "side_tilt_hold",
+        "joint": "head tilt (ear-to-ear line vs horizontal)",
+        "angleDeg": ">= 20",
+        "parsed": {
+          "op": ">=",
+          "value": 20,
+          "max": null
+        }
+      },
+      {
+        "name": "neck_turn",
+        "joint": "nose offset from shoulder midpoint / shoulder width",
+        "angleDeg": ">= 0.25 (ratio, not degrees)",
+        "parsed": null
+      },
+      {
+        "name": "elbow_circle_top",
+        "joint": "elbow height vs shoulder height",
+        "angleDeg": "elbow above shoulder line",
+        "parsed": null
+      }
+    ],
+    "minRepSec": 3
+  },
+  "formChecks": [
+    {
+      "joint": "shoulder",
+      "rule": "Shoulder on the stretched side rises (ear-to-shoulder distance drops more than 15% from baseline)",
+      "message": "Keep that shoulder down."
+    },
+    {
+      "joint": "neck",
+      "rule": "Nose rises well above the ear line (head tipped far back)",
+      "message": "Not too far back. Keep it small."
+    },
+    {
+      "joint": "neck",
+      "rule": "Rep completed faster than minimum time",
+      "message": "Slow down. Move gently."
+    },
+    {
+      "joint": "spine",
+      "rule": "Shoulder line tilts more than 10 degrees from horizontal",
+      "message": "Sit tall. Move only your head."
+    },
+    {
+      "joint": "neck",
+      "rule": "Ear line tilts more than 15 degrees during a neck turn",
+      "message": "Keep your chin level."
+    },
+    {
+      "joint": "elbow",
+      "rule": "Elbows never pass above shoulder line during Skandha Chakra",
+      "message": "Bigger circles if comfortable."
+    }
+  ],
+  "safetyFlags": [
+    "cervical_spondylosis",
+    "neck_disc_problems",
+    "spinal_stenosis",
+    "recent_whiplash",
+    "high_blood_pressure",
+    "dizziness_or_vertigo",
+    "neck_vascular_history",
+    "shoulder_injury_or_frozen_shoulder",
+    "recent_neck_shoulder_or_spine_surgery",
+    "older_adults_modify",
+    "stop_if_tingling_numbness_or_dizziness"
+  ],
+  "progressions": [
+    "Longer stretch holds: 30 s x 3 per side",
+    "Chin tuck against wall or floor resistance, 10 s holds",
+    "Full CYP neck circle (stage iv), slow and small at the back, only if symptom-free"
+  ],
+  "regressions": [
+    "Half range in every direction",
+    "Supported version: chin tucks, side tilts and shoulder rolls only, back against the chair",
+    "No-hand stretches: tilt and hold without hand pressure"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "side, chest height, 2 m",
+      "shows": "Seated set-up: tall spine, feet flat, ear over shoulder",
+      "textOverlay": "Sit tall. Ear over shoulder."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 1 m, head and shoulders",
+      "shows": "Chin tuck glide and hold",
+      "textOverlay": "Glide back, eyes level."
+    },
+    {
+      "seconds": 10,
+      "angle": "front, 1.5 m, head to waist",
+      "shows": "CYP side bend and neck turn both sides",
+      "textOverlay": "Ear to shoulder, not shoulder to ear."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 1.5 m",
+      "shows": "Front half neck circle with back half crossed out",
+      "textOverlay": "Front half only."
+    },
+    {
+      "seconds": 6,
+      "angle": "three-quarter front, 1.5 m",
+      "shows": "Two slow backward shoulder rolls",
+      "textOverlay": "Up, back, down."
+    },
+    {
+      "seconds": 10,
+      "angle": "side then front, 2 m",
+      "shows": "Skandha Chakra elbow circles",
+      "textOverlay": "Inhale up, exhale down."
+    },
+    {
+      "seconds": 10,
+      "angle": "front, 1 m, head and shoulders",
+      "shows": "Upper-trapezius stretch then levator scapulae stretch with chair-edge anchor",
+      "textOverlay": "The hand rests. It doesn't pull."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 1.5 m",
+      "shows": "Mistakes: shrugged shoulder, yanking hand, head rolled back, then fixes",
+      "textOverlay": "Shoulders down, hand light, no head-back rolls."
+    }
+  ],
+  "lastResearched": "2026-10-09",
+  "setupSteps": [
+    "Choose the chair. A stable chair, wheels locked if possible. Sit near the front third of the seat so your back is not slumped into the backrest.",
+    "Feet. Both feet flat on the floor, about hip-width apart, knees roughly over ankles (knee angle about 90° (est.)).",
+    "Pelvis. Sit tall on your two sitting bones (feel them press into the seat). Avoid rolling back onto your tailbone.",
+    "Spine. Lengthen up through the crown of the head as if a string is pulling you up gently. Keep the natural small curve in the lower back.",
+    "Shoulders. Let them drop away from your ears; arms hang by your sides or hands rest on your thighs.",
+    "Head. Eyes look straight ahead, chin level (not poking forward, not tucked down).",
+    "Clear the area. Push the keyboard and coffee cup away; you need arm's length to each side for the elbow circles.",
+    "Glasses, earphones, dupatta/scarf. Take off earphones with wires and loose scarves that can pull on the neck. Glasses can stay on.",
+    "Timing. Fine at any time of day. CYP practices are traditionally done on an empty or light stomach; for these gentle neck movements at a desk, simply avoid doing them right after a heavy meal if bending makes you uncomfortable.",
+    "Standing option. Stand with feet together or hip-width, hands on waist for neck movements (as in the CYP), knees soft."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": "Part A. Settle (20 s)",
+      "title": "Sit tall as in Setup",
+      "action": null,
+      "feel": "weight even on both sitting bones; shoulders heavy.",
+      "breathing": "normal nose breathing.",
+      "tempo": "5 s.",
+      "visualCheck": "side view, ear roughly above shoulder, shoulder above hip; front view, shoulders level, head centred."
+    },
+    {
+      "n": 2,
+      "part": "Part A. Settle (20 s)",
+      "title": "Take two slow breaths",
+      "action": null,
+      "feel": "belly and lower ribs widen on the in-breath; shoulders do not rise.",
+      "breathing": "in through the nose about 3–4 s, out about 4–5 s (est.).",
+      "tempo": "about 15 s.",
+      "visualCheck": "front view, shoulders stay still while breathing."
+    },
+    {
+      "n": 3,
+      "part": "Part B. Chin tucks (5 reps)",
+      "title": "Look straight ahead with the chin level",
+      "action": null,
+      "feel": "neck long, not strained.",
+      "breathing": "inhale.",
+      "tempo": "1 s.",
+      "visualCheck": "side view, chin parallel to the floor."
+    },
+    {
+      "n": 4,
+      "part": "Part B. Chin tucks (5 reps)",
+      "title": "Glide the head straight back, like making a double chin. (Optional: place one finger on your chin to guide it back.)",
+      "action": null,
+      "feel": "gentle stretch at the base of the skull and light work deep in the front of the neck.",
+      "breathing": "exhale as you glide back.",
+      "tempo": "2 s.",
+      "visualCheck": "side view, ear moves backward over the shoulder; eyes stay level (head does not tip down). Front view, shoulders do not move."
+    },
+    {
+      "n": 5,
+      "part": "Part B. Chin tucks (5 reps)",
+      "title": "Hold the tucked position",
+      "action": null,
+      "feel": "steady, mild effort, no pain.",
+      "breathing": "breathe normally; do not hold your breath.",
+      "tempo": "3–5 s (beginner 3 s).",
+      "visualCheck": "chin still level; shoulders relaxed."
+    },
+    {
+      "n": 6,
+      "part": "Part B. Chin tucks (5 reps)",
+      "title": "Release forward to neutral (not past it)",
+      "action": null,
+      "feel": "neck relaxes.",
+      "breathing": "inhale.",
+      "tempo": "2 s.",
+      "visualCheck": "head back to the start position, not poking forward."
+    },
+    {
+      "n": 7,
+      "part": "Part B. Chin tucks (5 reps)",
+      "title": "Repeat steps 4–6 for 5 reps in total",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 8,
+      "part": "Part C. Forward and backward bend (CYP Grivā stage i; 2 rounds)",
+      "title": "Hands on your thighs (seated) or waist (standing)",
+      "action": null,
+      "feel": "shoulders relaxed.",
+      "breathing": "normal.",
+      "tempo": "2 s.",
+      "visualCheck": "shoulders level."
+    },
+    {
+      "n": 9,
+      "part": "Part C. Forward and backward bend (CYP Grivā stage i; 2 rounds)",
+      "title": "Slowly lower the chin toward the chest",
+      "action": null,
+      "feel": "stretch along the back of the neck and between the shoulder blades.",
+      "breathing": "exhale while bending down (CYP pattern).",
+      "tempo": "3 s down; pause 1–2 s.",
+      "visualCheck": "side view, back stays upright, only the head and neck bend; front view, head centred."
+    },
+    {
+      "n": 10,
+      "part": "Part C. Forward and backward bend (CYP Grivā stage i; 2 rounds)",
+      "title": "Lift the head back to centre",
+      "action": null,
+      "feel": "neck lengthens.",
+      "breathing": "start inhaling.",
+      "tempo": "2 s.",
+      "visualCheck": "chin level again."
+    },
+    {
+      "n": 11,
+      "part": "Part C. Forward and backward bend (CYP Grivā stage i; 2 rounds)",
+      "title": "Gently tilt the head back a small amount: eyes look toward where the wall meets the ceiling",
+      "action": null,
+      "feel": "mild stretch at the front of the throat; no pinching at the back of the neck.",
+      "breathing": "finish the inhale.",
+      "tempo": "2 s; pause 1 s.",
+      "visualCheck": "side view, mouth closed and relaxed, back of the neck not crunched; do not let the head hang."
+    },
+    {
+      "n": 12,
+      "part": "Part C. Forward and backward bend (CYP Grivā stage i; 2 rounds)",
+      "title": "Return to centre",
+      "action": null,
+      "feel": "neutral.",
+      "breathing": "exhale.",
+      "tempo": "2 s.",
+      "visualCheck": "chin level."
+    },
+    {
+      "n": 13,
+      "part": "Part C. Forward and backward bend (CYP Grivā stage i; 2 rounds)",
+      "title": "Repeat steps 9–12 once more (2 rounds)",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 14,
+      "part": "Part D. Side bend, ear toward shoulder (CYP Grivā stage ii; 2 rounds)",
+      "title": "Tilt the right ear toward the right shoulder",
+      "action": null,
+      "feel": "stretch along the left side of the neck and top of the left shoulder.",
+      "breathing": "exhale while tilting.",
+      "tempo": "3 s; pause 1–2 s.",
+      "visualCheck": "front view, nose stays pointing forward (no turning); left shoulder stays down; right shoulder does not lift to meet the ear."
+    },
+    {
+      "n": 15,
+      "part": "Part D. Side bend, ear toward shoulder (CYP Grivā stage ii; 2 rounds)",
+      "title": "Bring the head back to centre",
+      "action": null,
+      "feel": "neck evens out.",
+      "breathing": "inhale.",
+      "tempo": "2 s.",
+      "visualCheck": "eyes level."
+    },
+    {
+      "n": 16,
+      "part": "Part D. Side bend, ear toward shoulder (CYP Grivā stage ii; 2 rounds)",
+      "title": "Tilt the left ear toward the left shoulder",
+      "action": null,
+      "feel": "stretch on the right side of the neck.",
+      "breathing": "exhale.",
+      "tempo": "3 s; pause 1–2 s.",
+      "visualCheck": "same as step 14, mirrored."
+    },
+    {
+      "n": 17,
+      "part": "Part D. Side bend, ear toward shoulder (CYP Grivā stage ii; 2 rounds)",
+      "title": "Return to centre",
+      "action": null,
+      "feel": null,
+      "breathing": "inhale. Tempo: 2 s.",
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 18,
+      "part": "Part D. Side bend, ear toward shoulder (CYP Grivā stage ii; 2 rounds)",
+      "title": "Repeat steps 14–17 once more (2 rounds)",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 19,
+      "part": "Part E. Neck turn, look over the shoulder (CYP Grivā stage iii; 2 rounds)",
+      "title": "Turn the head to the right, keeping the chin level, as if looking over your right shoulder",
+      "action": null,
+      "feel": "stretch on the left side and back of the neck.",
+      "breathing": "exhale while turning.",
+      "tempo": "3 s; pause 1–2 s.",
+      "visualCheck": "front view, chin moves toward (but stays level with) the right shoulder; shoulders do not twist with the head; chin does not drop or lift."
+    },
+    {
+      "n": 20,
+      "part": "Part E. Neck turn, look over the shoulder (CYP Grivā stage iii; 2 rounds)",
+      "title": "Turn back to centre",
+      "action": null,
+      "feel": null,
+      "breathing": "inhale. Tempo: 2 s.",
+      "tempo": null,
+      "visualCheck": "nose points straight ahead."
+    },
+    {
+      "n": 21,
+      "part": "Part E. Neck turn, look over the shoulder (CYP Grivā stage iii; 2 rounds)",
+      "title": "Turn the head to the left, chin level",
+      "action": null,
+      "feel": "stretch on the right side of the neck.",
+      "breathing": "exhale. Tempo: 3 s; pause 1–2 s.",
+      "tempo": null,
+      "visualCheck": "mirror of step 19."
+    },
+    {
+      "n": 22,
+      "part": "Part E. Neck turn, look over the shoulder (CYP Grivā stage iii; 2 rounds)",
+      "title": "Return to centre",
+      "action": null,
+      "feel": null,
+      "breathing": "inhale. Tempo: 2 s.",
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 23,
+      "part": "Part E. Neck turn, look over the shoulder (CYP Grivā stage iii; 2 rounds)",
+      "title": "Repeat steps 19–22 once more (2 rounds)",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 24,
+      "part": "Part F. Half neck circle, front half only (adapted from CYP Grivā stage iv; 2 each direction)",
+      "title": "Tilt the right ear toward the right shoulder (as in step 14)",
+      "action": null,
+      "feel": null,
+      "breathing": "exhale. Tempo: 2 s.",
+      "tempo": null,
+      "visualCheck": "nose forward, shoulders down."
+    },
+    {
+      "n": 25,
+      "part": "Part F. Half neck circle, front half only (adapted from CYP Grivā stage iv; 2 each direction)",
+      "title": "Roll the head slowly down and across so the chin passes close to the chest",
+      "action": null,
+      "feel": "stretch sweeps across the back of the neck.",
+      "breathing": "keep exhaling, or breathe normally.",
+      "tempo": "3 s.",
+      "visualCheck": "side view, chin near chest at the midpoint; back stays upright."
+    },
+    {
+      "n": 26,
+      "part": "Part F. Half neck circle, front half only (adapted from CYP Grivā stage iv; 2 each direction)",
+      "title": "Continue the roll up to the left ear over the left shoulder",
+      "action": null,
+      "feel": "stretch moves to the right side of the neck.",
+      "breathing": "inhale as the head comes up.",
+      "tempo": "2 s.",
+      "visualCheck": "stop at the side; the head does not roll backward."
+    },
+    {
+      "n": 27,
+      "part": "Part F. Half neck circle, front half only (adapted from CYP Grivā stage iv; 2 each direction)",
+      "title": "Reverse: roll back down through the chin and up to the right ear",
+      "action": null,
+      "feel": null,
+      "breathing": "exhale down, inhale up. Tempo: 5 s.",
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 28,
+      "part": "Part F. Half neck circle, front half only (adapted from CYP Grivā stage iv; 2 each direction)",
+      "title": "Repeat for 2 half circles each direction, then return to centre",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": "movement is smooth, slow and the same height on both sides."
+    },
+    {
+      "n": 29,
+      "part": "Part G. Shoulder rolls (5 backward, 5 forward)",
+      "title": "Let the arms hang by your sides (or hands relaxed on thighs)",
+      "action": null,
+      "feel": "arms heavy. Breath: normal. Tempo: 2 s.",
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 30,
+      "part": "Part G. Shoulder rolls (5 backward, 5 forward)",
+      "title": "Lift both shoulders up toward the ears",
+      "action": null,
+      "feel": "tops of the shoulders shorten.",
+      "breathing": "inhale.",
+      "tempo": "1–2 s.",
+      "visualCheck": "front view, both shoulders rise evenly; head stays still."
+    },
+    {
+      "n": 31,
+      "part": "Part G. Shoulder rolls (5 backward, 5 forward)",
+      "title": "Draw the shoulders back, squeezing the shoulder blades gently together",
+      "action": null,
+      "feel": "chest opens; light work between the shoulder blades.",
+      "breathing": "start exhaling.",
+      "tempo": "1 s.",
+      "visualCheck": "side view, shoulders move behind the ear line; lower back does not arch."
+    },
+    {
+      "n": 32,
+      "part": "Part G. Shoulder rolls (5 backward, 5 forward)",
+      "title": "Lower the shoulders down away from the ears",
+      "action": null,
+      "feel": "neck lengthens.",
+      "breathing": "keep exhaling.",
+      "tempo": "1 s.",
+      "visualCheck": null
+    },
+    {
+      "n": 33,
+      "part": "Part G. Shoulder rolls (5 backward, 5 forward)",
+      "title": "Let the shoulders come forward slightly to finish the circle",
+      "action": null,
+      "feel": null,
+      "breathing": "end of exhale. Tempo: 1 s.",
+      "tempo": null,
+      "visualCheck": "one smooth circle, about 4–5 s total (est.)."
+    },
+    {
+      "n": 34,
+      "part": "Part G. Shoulder rolls (5 backward, 5 forward)",
+      "title": "Do 5 backward circles, then reverse direction (up, forward, down, back) for 5 forward circles",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 35,
+      "part": "Part H. Skandha Cakra, elbow circles (CYP shoulder rotation; 5 each direction)",
+      "title": "Place the fingertips of the right hand on the right shoulder and the left hand on the left shoulder",
+      "action": null,
+      "feel": "elbows point out to the sides.",
+      "breathing": "normal.",
+      "tempo": "2 s.",
+      "visualCheck": "front view, elbows at about shoulder height or slightly lower; fingers stay on the shoulders throughout."
+    },
+    {
+      "n": 36,
+      "part": "Part H. Skandha Cakra, elbow circles (CYP shoulder rotation; 5 each direction)",
+      "title": "Bring both elbows forward until they come close to (or touch) each other in front of the chest",
+      "action": null,
+      "feel": "stretch across the upper back and between the shoulder blades.",
+      "breathing": "exhale (or begin the circle on an inhale as the elbows rise; see note).",
+      "tempo": "1–2 s.",
+      "visualCheck": "side view, elbows in front of the chest; back stays upright."
+    },
+    {
+      "n": 37,
+      "part": "Part H. Skandha Cakra, elbow circles (CYP shoulder rotation; 5 each direction)",
+      "title": "Lift the elbows up toward the ceiling",
+      "action": null,
+      "feel": "sides of the trunk lengthen; shoulders lift.",
+      "breathing": "inhale as the elbows rise.",
+      "tempo": "1–2 s.",
+      "visualCheck": "elbows go up only as far as comfortable; no shrugging the neck down into the shoulders."
+    },
+    {
+      "n": 38,
+      "part": "Part H. Skandha Cakra, elbow circles (CYP shoulder rotation; 5 each direction)",
+      "title": "Take the elbows back and open the chest",
+      "action": null,
+      "feel": "chest stretch; shoulder blades move toward each other.",
+      "breathing": "keep inhaling, then start exhaling.",
+      "tempo": "1–2 s.",
+      "visualCheck": "side view, elbows move behind the body line; lower back does not arch."
+    },
+    {
+      "n": 39,
+      "part": "Part H. Skandha Cakra, elbow circles (CYP shoulder rotation; 5 each direction)",
+      "title": "Bring the elbows down beside the ribs to complete the circle",
+      "action": null,
+      "feel": "shoulders drop.",
+      "breathing": "exhale.",
+      "tempo": "1–2 s.",
+      "visualCheck": "one big, slow circle about 6 s (est.)."
+    },
+    {
+      "n": 40,
+      "part": "Part H. Skandha Cakra, elbow circles (CYP shoulder rotation; 5 each direction)",
+      "title": "Repeat for 5 circles, then reverse the direction (back, up, forward, down) for 5 circles",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 41,
+      "part": "Part H. Skandha Cakra, elbow circles (CYP shoulder rotation; 5 each direction)",
+      "title": "Lower the hands to the thighs",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 42,
+      "part": "Part I. Upper-trapezius stretch (hand-assisted; 20–30 s × 2 each side)",
+      "title": "Hold the edge of the chair seat with your left hand (or tuck the left hand under your thigh)",
+      "action": null,
+      "feel": "left shoulder anchored down.",
+      "breathing": "normal. Tempo: 2 s.",
+      "tempo": null,
+      "visualCheck": "front view, left shoulder slightly lower than the right."
+    },
+    {
+      "n": 43,
+      "part": "Part I. Upper-trapezius stretch (hand-assisted; 20–30 s × 2 each side)",
+      "title": "Tilt the right ear toward the right shoulder",
+      "action": null,
+      "feel": "stretch along the left side of the neck into the top of the left shoulder.",
+      "breathing": "exhale. Tempo: 3 s.",
+      "tempo": null,
+      "visualCheck": "nose still points forward."
+    },
+    {
+      "n": 44,
+      "part": "Part I. Upper-trapezius stretch (hand-assisted; 20–30 s × 2 each side)",
+      "title": "Rest your right hand lightly on the left side of your head, above the ear",
+      "action": null,
+      "feel": "the weight of the arm deepens the stretch slightly.",
+      "breathing": "normal.",
+      "tempo": "2 s.",
+      "visualCheck": "the hand rests; it does not yank."
+    },
+    {
+      "n": 45,
+      "part": "Part I. Upper-trapezius stretch (hand-assisted; 20–30 s × 2 each side)",
+      "title": "Hold",
+      "action": null,
+      "feel": "a mild-to-moderate stretch (about 3–4 out of 10 (est.)), never sharp pain, tingling or numbness.",
+      "breathing": "slow breaths; let the shoulder sink a little more on each exhale.",
+      "tempo": "20–30 s (beginner 20 s).",
+      "visualCheck": "front view, left shoulder stays down; head tilted, not turned."
+    },
+    {
+      "n": 46,
+      "part": "Part I. Upper-trapezius stretch (hand-assisted; 20–30 s × 2 each side)",
+      "title": "Release: remove the hand first, then lift the head slowly back to centre",
+      "action": null,
+      "feel": null,
+      "breathing": "inhale. Tempo: 3 s.",
+      "tempo": null,
+      "visualCheck": "head returns without jerking."
+    },
+    {
+      "n": 47,
+      "part": "Part I. Upper-trapezius stretch (hand-assisted; 20–30 s × 2 each side)",
+      "title": "Repeat steps 42–46 on the other side. Do 2 holds per side",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 48,
+      "part": "Part J. Levator scapulae stretch (nose toward armpit; 20–30 s × 2 each side)",
+      "title": "Hold the chair edge with your left hand (or place the left hand behind your back)",
+      "action": null,
+      "feel": "left shoulder blade anchored down. Breath: normal. Tempo: 2 s.",
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 49,
+      "part": "Part J. Levator scapulae stretch (nose toward armpit; 20–30 s × 2 each side)",
+      "title": "Turn the head about 45° to the right",
+      "action": null,
+      "feel": "slight turn only.",
+      "breathing": "inhale. Tempo: 2 s.",
+      "tempo": null,
+      "visualCheck": "front view, nose points toward the right armpit area."
+    },
+    {
+      "n": 50,
+      "part": "Part J. Levator scapulae stretch (nose toward armpit; 20–30 s × 2 each side)",
+      "title": "Drop the chin down, as if looking into your right armpit or toward your right pocket",
+      "action": null,
+      "feel": "stretch at the back-left of the neck, toward the top inner corner of the left shoulder blade.",
+      "breathing": "exhale. Tempo: 3 s.",
+      "tempo": null,
+      "visualCheck": "side view, chin down and turned; back stays upright."
+    },
+    {
+      "n": 51,
+      "part": "Part J. Levator scapulae stretch (nose toward armpit; 20–30 s × 2 each side)",
+      "title": "Optional: rest the right hand on the back of the head to let its weight add a little stretch. Do not pull",
+      "action": null,
+      "feel": null,
+      "breathing": "normal. Tempo: 2 s.",
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 52,
+      "part": "Part J. Levator scapulae stretch (nose toward armpit; 20–30 s × 2 each side)",
+      "title": "Hold",
+      "action": null,
+      "feel": "mild-to-moderate stretch; no sharp pain, tingling or dizziness.",
+      "breathing": "slow breaths.",
+      "tempo": "20–30 s.",
+      "visualCheck": "left shoulder stays down (a common mistake is letting it hike up)."
+    },
+    {
+      "n": 53,
+      "part": "Part J. Levator scapulae stretch (nose toward armpit; 20–30 s × 2 each side)",
+      "title": "Release the hand, lift the chin, then turn back to centre",
+      "action": null,
+      "feel": null,
+      "breathing": "inhale. Tempo: 3 s.",
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 54,
+      "part": "Part J. Levator scapulae stretch (nose toward armpit; 20–30 s × 2 each side)",
+      "title": "Repeat steps 48–53 on the other side. Do 2 holds per side",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 55,
+      "part": "Part K. Shoulder-blade squeeze (5 reps) and finish",
+      "title": "Sit tall, arms by your sides, chin level",
+      "action": null,
+      "feel": null,
+      "breathing": "inhale. Tempo: 1 s.",
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 56,
+      "part": "Part K. Shoulder-blade squeeze (5 reps) and finish",
+      "title": "Gently squeeze the shoulder blades together and slide them slightly down your back",
+      "action": null,
+      "feel": "light work between and below the shoulder blades; chest opens.",
+      "breathing": "exhale.",
+      "tempo": "2 s in.",
+      "visualCheck": "side view, no arching of the lower back, chin does not poke forward; front view, shoulders do not rise."
+    },
+    {
+      "n": 57,
+      "part": "Part K. Shoulder-blade squeeze (5 reps) and finish",
+      "title": "Hold",
+      "action": null,
+      "feel": null,
+      "breathing": "normal. Tempo: 3–5 s.",
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 58,
+      "part": "Part K. Shoulder-blade squeeze (5 reps) and finish",
+      "title": "Relax",
+      "action": null,
+      "feel": null,
+      "breathing": "inhale. Tempo: 2 s.",
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 59,
+      "part": "Part K. Shoulder-blade squeeze (5 reps) and finish",
+      "title": "Repeat steps 56–58 for 5 reps",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 60,
+      "part": "Part K. Shoulder-blade squeeze (5 reps) and finish",
+      "title": "Finish with one slow breath and notice how your neck and shoulders feel. Then check your screen height (top of the monitor about eye level) before getting back to work",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Rolling the head all the way back in full circles",
+      "text": "Rolling the head all the way back in full circles. Problem: combines extension with rotation, which some clinicians link to nerve or vertebral-artery compression and dizziness. Fix: do the front half circle only."
+    },
+    {
+      "title": "Pulling the head hard with the hand",
+      "text": "Pulling the head hard with the hand. Problem: can over-stretch and provoke pain or a protective spasm. Fix: just rest the hand; let gravity do the work; stretch to mild tension."
+    },
+    {
+      "title": "Shrugging the shoulder up during a side tilt",
+      "text": "Shrugging the shoulder up during a side tilt. Problem: shortens the very muscle you are trying to stretch. Fix: anchor the opposite hand on the chair edge or under the thigh."
+    },
+    {
+      "title": "Turning instead of tilting (and vice versa)",
+      "text": "Turning instead of tilting (and vice versa). Problem: you end up stretching a different area and the stretch feels vague. Fix: for tilts, keep the nose facing forward; for turns, keep the chin level."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. Problem: tenses the neck and shoulders. Fix: exhale into each bend or stretch; use slow nose breathing during holds."
+    },
+    {
+      "title": "Bouncing at the end of the range",
+      "text": "Bouncing at the end of the range. Problem: triggers a stretch reflex and can strain tissue. Fix: move slowly, pause, then hold still."
+    },
+    {
+      "title": "Chin tucks done as nodding down",
+      "text": "Chin tucks done as nodding down. Problem: becomes a chin-to-chest movement and misses the deep neck flexors. Fix: eyes stay level; glide the head straight back."
+    },
+    {
+      "title": "Only stretching, never fixing the cause",
+      "text": "Only stretching, never fixing the cause. Problem: neck stiffness returns if the screen is too low or you sit for hours. Fix: raise the screen, take breaks every 30–60 minutes, and add strengthening work."
+    }
+  ],
+  "safetyNotes": [
+    "Who should modify or avoid: Diagnosed neck conditions (cervical spondylosis/spondylitis, disc problems, spinal stenosis, recent whiplash): the CYP's own guidance (as reproduced on Vikaspedia) says people with cervical spondylitis may avoid these loosening practices; get a physiotherapist's go-ahead, skip backward bends and circles, and keep the range small. High blood pressure: the same CYP text lists high BP as a reason to possibly avoid these practices; move slowly, never hold your breath, and avoid the head-back position. Dizziness, vertigo or history of vascular problems in the neck: skip backward bends and any circles. Older adults: the CYP text mentions elderly people may avoid; keep movements small and slow. Shoulder problems (frozen shoulder, impingement, recent dislocation, rotator cuff injury): make the elbow circles smaller and keep elbows below shoulder height; stop if painful. Recent neck, shoulder or spine surgery: only with your surgeon's or physiotherapist's clearance. Pregnancy: generally fine seated; avoid leaning too far back and stop if dizzy (est.; no specific source for this routine). Rheumatoid arthritis or Down syndrome (upper-neck instability risk): check with a doctor before neck stretching (est.; general clinical caution, not from a source specific to this routine).",
+    "Stop immediately and seek medical advice if you feel: sharp or shooting pain; pins and needles, numbness or weakness in the arms or hands; dizziness, blurred or double vision, nausea, or a sudden severe headache; difficulty speaking or swallowing; loss of balance. NHS trust leaflets list pins and needles in both arms, major loss of strength or coordination, and new dizziness or vision changes as reasons to get prompt medical help. A mild dull ache during or after stretching is normal; severe pain means you went too far.",
+    "Spotter: not needed.",
+    "Office etiquette: fine to do at your desk; turn your chair slightly away from colleagues for the elbow circles so you do not elbow anyone.",
+    "The CYP note: the protocol says its practices are not a substitute for medical advice."
+  ],
+  "sources": [
+    "Ministry of AYUSH, Common Yoga Protocol (English booklet, revised edition), loosening practices: neck bending (Grivā) and shoulder movement (Skandha Cakra). https://www.mea.gov.in/images/pdf/common-yoga-protocol-english.pdf (also hosted at https://new1.isro.gov.in/media_isro/pdf/CYP%20english.pdf and 2022 edition https://www.sanskrit.nic.in/uploads/CYP_2022/English.pdf)",
+    "Vikaspedia (Government of India portal, AYUSH section), Prayer / Loosening Practices (CYP neck stages, practice notes and cautions). https://en.vikaspedia.in/health/ayush/yoga-1/prayer-loosening-practices",
+    "Bureau of Indian Standards draft Indian Standard on the Common Yoga Protocol (IS 19114:2024, based on the MDNIY booklet), Skandha Cakra rounds. https://services.bis.gov.in/tmp/PDDAYD44423006_18122024_0.pdf",
+    "Morarji Desai National Institute of Yoga (MDNIY), newsletter / CYP resources. https://www.yogamdniy.nic.in/files/newsletter/newsletter_657952da85ba61702449882.pdf",
+    "Mayo Clinic, Neck stretches (chin to chest, head rotation, ear to shoulder; 15–30 s holds). https://www.mayoclinic.org/health/neck-stretches/MM00708",
+    "Mayo Clinic Health System, Don't just sit there: exercises for the office. https://www.mayoclinichealthsystem.org/hometown-health/speaking-of-health/dont-just-sit-there-exercises-for-the-office",
+    "North Cheshire and Mersey (NHS), Neck range of motion exercises patient advice sheet. https://northcheshireandmersey.nhs.uk/media/emlfdohl/neck-range-of-motion-exercises-patient-advice-sheet.pdf",
+    "West Midlands Ambulance Service NHS, ADV123 Neck Pain. https://wellbeing.wmas.nhs.uk/wp-content/uploads/2026/02/ADV123-Neck-Pain.pdf",
+    "Berkshire Healthcare NHS, Neck pain physiotherapy leaflet (red flags). https://www.berkshirehealthcare.nhs.uk/media/lobiivr4/bh1165o-neck-pain-v1-feb-2026.pdf",
+    "University Hospitals Sussex NHS, Self-treatment of acute neck pain. https://www.uhsussex.nhs.uk/wp-content/uploads/2023/03/2174.1-Self-treatment-of-acute-neck-pain-2025.pdf",
+    "Frimley Health NHS (FHFT), Head, neck and shoulder exercises. https://www.fhft.nhs.uk/patients-and-visitors/patient-information-library/head-neck-and-shoulder-stretches",
+    "Kaiser Permanente, Shoulder blade exercises (shoulder rolls, squeezes). https://healthy.kaiserpermanente.org/health-wellness/health-encyclopedia/he.shoulder-blade-exercises.abr7628",
+    "Physitrack, Upper trapezius stretch in sitting; Two-part neck stretch. https://uk.physitrack.com/home-exercise-video/upper-trapezius-stretch and https://us.physitrack.com/home-exercise-video/two-part-neck-stretch",
+    "ColumbiaDoctors, Levator scapula stretch. https://www.columbiadoctors.org/health-library/multimedia/levator-scapula-stretch/",
+    "Tunwattanapong P, et al. The effectiveness of a neck and shoulder stretching exercise program among office workers with neck pain: a randomized controlled trial. Clin Rehabil 2016;30(1):64–72. https://pubmed.ncbi.nlm.nih.gov/25780258/",
+    "Chen X, et al. Workplace-based interventions for neck pain in office workers: systematic review and meta-analysis (2018). https://research-repository.griffith.edu.au/items/32398aae-fcdb-496c-8ef5-b23db68ad6a3",
+    "Louw S, et al. Effectiveness of exercise in office workers with neck pain: a systematic review and meta-analysis (2017). https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6093121/",
+    "Exercise therapy for office workers with nonspecific neck pain: a systematic review (2011). https://pubmed.ncbi.nlm.nih.gov/21237409/",
+    "ACSM, Stretching and flexibility guidelines update (10–30 s holds, 2–4 reps, 60 s per muscle group). https://rebrandx.acsm.org/blog-detail/acsm-certified-blog/2021/03/18/stretching-and-flexibility-guidelines-update",
+    "Herrmann SD, et al. 2024 Adult Compendium of Physical Activities (J Sport Health Sci 2024;13:6–12) and tracking guide (code 02101, Stretching, mild, 2.3 METs). https://pubmed.ncbi.nlm.nih.gov/38242596/ and https://pacompendium.com/wp-content/uploads/2024/01/2024-adult-compendium-tracking-guide_1-2024.pdf",
+    "YogaUOnline, 3 reasons not to do neck circles (caution on extension plus rotation). https://yogauonline.com/yoga-practice-teaching-tips/yoga-anatomy/3-reasons-not-to-do-neck-circles/",
+    "LiveLighter, 5x5x5 office worker mobility guide (shoulder rolls, 4-way neck). https://cdn.livelighter.com.au/assets/resource/physical-activity/ll-mobility-guides-5x5x5-office-worker-both-sides.pdf"
+  ],
+  "burnMinutes": null,
+  "gymAccess": [],
+  "suitsPreferences": [],
+  "swapsByAccess": null,
+  "conditionCautions": [],
+  "searchTags": null,
+  "tags": [
+    "Yoga & stretch",
+    "No equipment",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Mobility",
+    "Neck",
+    "Hold timer"
+  ],
+  "needsReview": [
+    "rep_counter phase \"neck_turn\" (nose offset from shoulder midpoint / shoulder width): angle \">= 0.25 (ratio, not degrees)\" is not a parseable angle",
+    "rep_counter phase \"elbow_circle_top\" (elbow height vs shoulder height): angle \"elbow above shoulder line\" is not a parseable angle"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-09",
+      "file": "FitPlate_Fitness_2026-10-09.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

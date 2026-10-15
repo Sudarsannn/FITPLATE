@@ -6,7 +6,8 @@
  * Null always means "not found in the file"; nothing is estimated here.
  */
 import type { DietClaim, Dish, DishIngredient, DishStep, Macros } from '../../models/research';
-import { checkClaims, dishAllergens, allergenNotes, findClaims } from './allergens';
+import { checkClaims, dishAllergens, allergenNotes, findClaims, sortAllergens } from './allergens';
+import { parseDietTags, parseTagsLine, parseVariants, withoutDietTags } from './dietTags';
 import { parseFasting, validateFasting } from './fasting';
 import { bullets, labelled, minutes, num, plain, rupee, rupeeRange, seconds, slugify, splitHeadings, tableRows, type Section } from './markdown';
 
@@ -42,6 +43,11 @@ export type DishVersion = {
   allergens: Dish['allergens'];
   dietClaims: DietClaim[];
   fasting: Dish['fasting'];
+  dietTags: Dish['dietTags'];
+  /** PATCH 04 "Tags:" line as written (kept for the report; the app's tags come from tags.ts). */
+  researchTags: string[];
+  description: string | null;
+  variants: Dish['variants'];
   needsReview: string[];
   notes: string[];
 };
@@ -137,12 +143,13 @@ function parseSteps(body: string): DishStep[] {
 
 /**
  * Section 5 totals, written three ways across days:
- * "**Total: about 390 kcal | Protein 7.9 g | …**", "- Calories: about 660 kcal", or "| Calories | ~540 kcal |".
+ * "**Total: about 390 kcal | Protein 7.9 g | …**" (also "Total (2 chillas, no chutney): …"),
+ * "- Calories: about 660 kcal", or "| Calories | ~540 kcal |".
  * The per-ingredient table comes after the totals, so the first match wins.
  */
 export function parseNutrition(body: string): Macros {
   const text = plain(body);
-  const kcal = /(?:Total:\s*(?:about|~|≈)?\s*|Calories\s*(?:\(kcal\))?\s*[:|]\s*(?:about|~|≈)?\s*)([\d,]+(?:\.\d+)?)\s*kcal/i.exec(text);
+  const kcal = /(?:Total(?:\s*\([^)]*\))?:\s*(?:about|~|≈)?\s*|Calories\s*(?:\(kcal\))?\s*[:|]\s*(?:about|~|≈)?\s*)([\d,]+(?:\.\d+)?)\s*kcal/i.exec(text);
   const grams = (label: string) => {
     const m = new RegExp(`\\b(?:${label})\\b[^0-9\\n|]*\\|?\\s*(?:about|~|≈)?\\s*(\\d+(?:\\.\\d+)?)\\s*g\\b`, 'i').exec(text);
     return m ? num(m[1]) : null;
@@ -225,8 +232,11 @@ export function parseDish(block: Section, meta: { date: string; file: string }):
   if (block.n == null) return null;
   const name = plain(block.title).trim();
   const sections = splitHeadings(block.body, 3);
-  const header = parseHeader(block.body.split(/^### /m)[0]);
+  const headerText = block.body.split(/^### /m)[0];
+  const header = parseHeader(headerText);
+  const tagsLine = parseTagsLine(headerText);
   const facts = section(sections, 1, /quick facts/i);
+  const dietTags = parseDietTags(facts);
   const notes: string[] = [];
   const needsReview: string[] = [];
 
@@ -251,18 +261,31 @@ export function parseDish(block: Section, meta: { date: string; file: string }):
   const difficulty = difficultyRaw ? (/^(beginner|easy|intermediate|medium|advanced|hard)/i.exec(difficultyRaw)?.[1] ?? null) : null;
 
   const ingredients = parseIngredients(section(sections, 2, /^ingredients/i));
-  const allergens = dishAllergens(ingredients);
+  const derived = dishAllergens(ingredients);
+  // Safety first: an allergen the research declares is kept even if the ingredient names don't show it.
+  const declared = dietTags?.allergensDeclared ?? [];
+  const extra = declared.filter((a) => !derived.includes(a));
+  if (extra.length > 0) notes.push(`research declares ${extra.join(', ')} not detected from ingredient names; added`);
+  const allergens = sortAllergens([...derived, ...extra]);
   const allergenSafety = [...new Set(ingredients.flatMap((i) => allergenNotes(i)))];
   notes.push(...allergenSafety);
 
-  // Claims live in the header line ("Veg (naturally vegan and gluten-free)") and in Quick facts.
-  const claimLines = [header.diet, ...bullets(facts).map(plain).filter((b) => !/^(navratri|ekadashi|jain|ramadan)/i.test(b))];
-  const claims = checkClaims(findClaims(claimLines), allergens, header.dietType);
+  // Claims live in the header line ("Veg (naturally vegan and gluten-free)"), in Quick facts, and
+  // (from PATCH 03) as "Yes" lines in the Diet tags block, which is read structurally, not as prose.
+  const claimLines = [header.diet, ...bullets(withoutDietTags(facts)).map(plain).filter((b) => !/^(navratri|ekadashi|jain|ramadan)/i.test(b))];
+  const found = findClaims(claimLines);
+  if (dietTags) {
+    for (const [key, claim] of [['vegan', 'vegan'], ['glutenFree', 'glutenFree'], ['dairyFree', 'dairyFree']] as const) {
+      if (dietTags[key].status === 'yes' && !found.includes(claim)) found.push(claim);
+    }
+  }
+  const claims = checkClaims(found, allergens, header.dietType);
   for (const d of claims.dropped) needsReview.push(`dropped "${d.claim}" claim: recipe has ${d.because.join(', ')}`);
 
   const fastingCheck = validateFasting(parseFasting(facts), ingredients.map((i) => i.name));
   needsReview.push(...fastingCheck.issues);
 
+  const stepsBody = section(sections, 4, /micro-steps|steps/i);
   const order = section(sections, 6, /cost to order/i);
   const after = section(sections, 10, /after the meal/i);
 
@@ -282,7 +305,7 @@ export function parseDish(block: Section, meta: { date: string; file: string }):
     servingsWritten,
     ingredients,
     equipment: parseEquipment(section(sections, 3, /^equipment/i)),
-    steps: parseSteps(section(sections, 4, /micro-steps|steps/i)),
+    steps: parseSteps(stepsBody.split(/\*\*Diet variants\*\*/i)[0]),
     nutrition: parseNutrition(section(sections, 5, /calories and nutrition/i)),
     orderPrice: parseOrderPrice(order),
     asOrdered: parseAsOrdered(order),
@@ -295,6 +318,10 @@ export function parseDish(block: Section, meta: { date: string; file: string }):
     allergens,
     dietClaims: claims.kept,
     fasting: fastingCheck.fasting,
+    dietTags,
+    researchTags: tagsLine?.researchTags ?? [],
+    description: tagsLine?.description ?? null,
+    variants: parseVariants(stepsBody),
     needsReview,
     notes,
   };

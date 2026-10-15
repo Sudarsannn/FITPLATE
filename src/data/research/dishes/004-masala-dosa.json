@@ -27,7 +27,7 @@
       "householdMeasure": "about 1 tbsp"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "fenugreek-seeds",
       "name": "Fenugreek seeds (methi dana)",
       "quantity": 1,
       "unit": "g",
@@ -41,7 +41,7 @@
       "householdMeasure": "1 tsp"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "salt",
       "name": "Salt",
       "quantity": 1,
       "unit": "g",
@@ -83,7 +83,7 @@
       "householdMeasure": "1 tsp"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "mustard-seeds",
       "name": "Mustard seeds (rai)",
       "quantity": 1,
       "unit": "g",
@@ -132,14 +132,14 @@
       "householdMeasure": "a generous pinch (about 1/8 tsp)"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "asafoetida",
       "name": "Asafoetida (hing), optional",
       "quantity": null,
       "unit": null,
       "householdMeasure": "a pinch"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "salt",
       "name": "Salt",
       "quantity": 2,
       "unit": "g",
@@ -497,7 +497,15 @@
     "fatG": 11,
     "fibreG": 8
   },
-  "microNutrientsEstimate": null,
+  "microNutrientsEstimate": {
+    "values": {
+      "vitamin-a": 19.1,
+      "vitamin-c": 34.8,
+      "vitamin-k": 8.2
+    },
+    "coveragePct": 40,
+    "basis": "partial estimate from ingredient quantities"
+  },
   "asOrdered": null,
   "orderPrice": {
     "priceHistory": [
@@ -558,6 +566,21 @@
   ],
   "dietClaims": [],
   "fasting": null,
+  "dietTags": null,
+  "tags": [
+    "Veg",
+    "Contains peanut",
+    "Contains gluten",
+    "Contains mustard",
+    "Breakfast",
+    "South Indian",
+    "Under 60 min",
+    "Intermediate",
+    "High fibre"
+  ],
+  "description": null,
+  "familyId": null,
+  "variants": [],
   "needsReview": [],
   "versions": [
     {
@@ -572,7 +595,8 @@
     "steps": "newest",
     "healthiness": "newest",
     "researchRating": "newest",
-    "sources": "union"
+    "sources": "union",
+    "tags": "tag engine (tags.ts) on the merged dish"
   },
   "mergeNotes": [
     "2026-10-04: hing: compounded hing usually contains wheat flour"
