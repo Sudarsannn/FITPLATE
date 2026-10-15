@@ -190,6 +190,16 @@ export default function Today() {
           </FadeIn>
 
           <FadeIn i={5}>
+            <PressableScale onPress={() => router.push('/order-vs-make')} accessibilityLabel="Craving a takeaway? Compare it with cooking" style={{ marginTop: 14 }} scaleTo={0.98}>
+              <Glass style={{ flexDirection: 'row', alignItems: 'center', gap: 12 }}>
+                <Text style={{ fontSize: 28 }}>🛵</Text>
+                <View style={{ flex: 1 }}>
+                  <Text style={[type.h2, { color: colors.text }]}>Craving a takeaway?</Text>
+                  <Text style={[type.small, { color: colors.muted }]}>Find it on Swiggy and see what cooking it instead saves</Text>
+                </View>
+                <Ionicons name="chevron-forward" size={18} color={colors.muted} />
+              </Glass>
+            </PressableScale>
             <SectionHeader title={`Picked for you · ${goal.label.toLowerCase()}`} action="See all" onAction={() => router.push(dishLibraryHref())} />
             <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{ marginHorizontal: -18 }} contentContainerStyle={{ paddingHorizontal: 18 }} decelerationRate="fast" snapToInterval={214}>
               {picks.map((d) => (

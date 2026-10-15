@@ -105,6 +105,16 @@ export function ProfileScreen({ asTab = false }: { asTab?: boolean }) {
         </FadeIn>
 
         <FadeIn i={4}>
+          <PressableScale onPress={() => router.push('/vendors')} accessibilityLabel="Shopping and vendors" style={{ marginTop: 14 }}>
+            <Glass style={styles.linkRow}>
+              <Text style={{ fontSize: 24 }}>🛒</Text>
+              <View style={{ flex: 1 }}>
+                <Text style={{ color: colors.text, fontWeight: '800' }}>Shopping & vendors</Text>
+                <Text style={[type.small, { color: colors.muted }]}>Swiggy, Zepto, real orders and your preferred shop</Text>
+              </View>
+              <Ionicons name="chevron-forward" size={18} color={colors.muted} />
+            </Glass>
+          </PressableScale>
           <PressableScale onPress={() => router.push('/your-data')} accessibilityLabel="Your data: what we save and where" style={{ marginTop: 14 }}>
             <Glass style={styles.linkRow}>
               <Text style={{ fontSize: 24 }}>🔒</Text>

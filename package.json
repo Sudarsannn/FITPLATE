@@ -54,7 +54,9 @@
     "lint": "expo lint",
     "test": "jest",
     "research:sync": "node scripts/research/run.js",
-    "research:import": "node scripts/server/import-research.js"
+    "research:import": "node scripts/server/import-research.js",
+    "server": "node server/fitplate-server.mjs",
+    "swiggy:tools": "node server/fitplate-server.mjs --dump-tools"
   },
   "private": true
 }

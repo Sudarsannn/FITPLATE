@@ -178,6 +178,17 @@ type Store = State & {
   ratings: Record<string, DishRating['stars']>;
   rateDish: (dishId: string, stars: DishRating['stars'], note?: string | null) => void;
   logCookCompletion: (c: Omit<CookCompletion, 'timestamp' | 'dateKey'>) => void;
+  /**
+   * A research dish was cooked: logs one serving as a meal, the money saved
+   * against ordering (only when both prices are known), and the cook itself.
+   */
+  logResearchCook: (
+    dish: { id: string; name: string; kcal: number | null; proteinG: number | null; fibreG: number | null },
+    servings: number,
+    costInr: number | null,
+    orderPriceInr: number | null,
+    boughtVia: CookCompletion['boughtVia'],
+  ) => void;
 };
 
 const StoreContext = createContext<Store | null>(null);
@@ -375,6 +386,13 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       ratings: Object.fromEntries(Object.values(docs.ratings).filter((r) => !r.deleted).map((r) => [r.dishId, r.stars])),
       rateDish: (dishId, stars, note = null) => s?.rateDish(dishId, stars, note),
       logCookCompletion: (c) => s?.addCookCompletion(c),
+      logResearchCook: (dish, servings, costInr, orderPriceInr, boughtVia) => {
+        if (!s) return;
+        s.addMeal({ name: dish.name, emoji: '🍳', dishId: dish.id, source: 'dish', kcal: Math.round(dish.kcal ?? 0), proteinG: Math.round(dish.proteinG ?? 0), fibreG: Math.round(dish.fibreG ?? 0), cooked: true });
+        const saved = costInr != null && orderPriceInr != null ? Math.round(orderPriceInr - costInr) : 0;
+        if (saved > 0) s.addSaving(saved, dish.id, `Cooked ${dish.name} for ${servings} instead of ordering`);
+        s.addCookCompletion({ dishId: dish.id, servings, costInr, orderPriceInr, boughtVia });
+      },
     };
   }, [state, docs, user, ready, active, syncError, guestOffer]);
 

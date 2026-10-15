@@ -6,7 +6,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { DishImageSlot, TagChip } from '../../components/dishes/parts';
 import { factsLine } from '../../components/dishes/ResearchDishCard';
-import { PressableScale } from '../../components/ui';
+import { GradientButton, PressableScale } from '../../components/ui';
 import { familyOf, getDish } from '../../data/research';
 import type { Dish } from '../../models/research';
 import { headlineOrderPrice, orderPriceNote } from '../../services/dishLibrary';
@@ -123,7 +123,12 @@ function DishBody({ dish }: { dish: Dish }) {
         ))}
       </Section>
 
-      <Text style={[styles.note, { marginTop: 18 }]}>Full recipe steps, cost to make and guided cooking arrive in the next updates.</Text>
+      {/* Priority plan P3: shop, cook step by step, or compare with ordering. */}
+      <View style={{ gap: 10, marginTop: 20 }}>
+        <GradientButton title="🛒 Shop ingredients" onPress={() => router.push({ pathname: '/basket', params: { dishes: dish.id, servings: '2' } })} />
+        <GradientButton title="👩‍🍳 Cook it step by step" variant="glass" onPress={() => router.push({ pathname: '/steps/[id]', params: { id: dish.id, servings: '2' } })} />
+        <GradientButton title="⚖️ Order vs make" variant="glass" onPress={() => router.push({ pathname: '/order-vs-make', params: { q: dish.name } })} />
+      </View>
     </ScrollView>
   );
 }
