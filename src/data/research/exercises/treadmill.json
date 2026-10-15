@@ -1,0 +1,726 @@
+{
+  "id": "treadmill",
+  "number": 5,
+  "name": "Treadmill",
+  "otherNames": [
+    "Treadmill walking",
+    "Incline walking",
+    "Treadmill running",
+    "Running machine",
+    "12-3-30 (incline walk workout)"
+  ],
+  "section": "gym",
+  "type": "cardio",
+  "equipment": [
+    "Motorised treadmill",
+    "Running or walking shoes",
+    "Towel",
+    "Water bottle"
+  ],
+  "noEquipmentAlternative": "Brisk walking outdoors or in a corridor; stair walking for an incline effect; marching on the spot at home",
+  "musclesPrimary": [
+    "Heart and lungs (cardiorespiratory)",
+    "Calves (gastrocnemius, soleus)",
+    "Quadriceps",
+    "Hamstrings",
+    "Glutes (gluteus maximus)"
+  ],
+  "musclesSecondary": [
+    "Hip flexors (iliopsoas)",
+    "Shins (tibialis anterior)",
+    "Gluteus medius",
+    "Core (rectus abdominis, obliques, erector spinae)",
+    "Shoulders and arms (arm swing)"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": false,
+  "met": 4.8,
+  "compendiumCode": "17358",
+  "metOptions": [
+    {
+      "code": "17355",
+      "met": 3.8,
+      "activity": "Walking, treadmill, 3.0–3.4 mph (4.8–5.5 km/h), 0% grade"
+    },
+    {
+      "code": "17358",
+      "met": 4.8,
+      "activity": "Walking, treadmill, 3.5–3.9 mph (5.6–6.3 km/h), 0% grade"
+    },
+    {
+      "code": "17361",
+      "met": 5.8,
+      "activity": "Walking, treadmill, 4.0–4.4 mph (6.4–7.1 km/h), 0% grade"
+    },
+    {
+      "code": "17034",
+      "met": 5.3,
+      "activity": "Climbing hills, no load, 1–5% grade, moderate-to-brisk pace (proxy for incline treadmill walk)"
+    },
+    {
+      "code": "17035",
+      "met": 7,
+      "activity": "Climbing hills, no load, 6–10% grade, moderate-to-brisk pace (proxy)"
+    },
+    {
+      "code": "17036",
+      "met": 8.8,
+      "activity": "Climbing hills, no load, 11–20% grade, slow-to-moderate pace (proxy)"
+    },
+    {
+      "code": "12029",
+      "met": 7.8,
+      "activity": "Running, 4.3–4.8 mph (about 6.9–7.7 km/h)"
+    },
+    {
+      "code": "12030",
+      "met": 8.5,
+      "activity": "Running, 5.0–5.2 mph (about 8.0–8.4 km/h; 12 min/mile)"
+    },
+    {
+      "code": "12050",
+      "met": 9.3,
+      "activity": "Running, 6.0–6.3 mph (about 9.7–10.1 km/h; 10 min/mile)"
+    },
+    {
+      "code": "12060",
+      "met": 10.5,
+      "activity": "Running, 6.7 mph (about 10.8 km/h; 9 min/mile)"
+    },
+    {
+      "code": "12070",
+      "met": 11,
+      "activity": "Running, 7 mph (about 11.3 km/h; 8.5 min/mile)"
+    },
+    {
+      "code": "17382",
+      "met": 3.3,
+      "activity": "The 2024 Compendium's dedicated treadmill codes found were for 0% grade (17340–17367) plus a downhill code (17382, 3.3 METs at −3% to −12%, 2.8–3.1 mph) and a backward-walking incline code (17475). A "
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 1,
+      "reps": null,
+      "timeSec": 1200,
+      "restSec": null,
+      "tempo": "Flat walk 4.5-5.5 km/h, 0-1% incline, talk-but-not-sing",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 5,
+      "reps": "2 min brisk 5.5-6 km/h / 2 min easy 4.5 km/h",
+      "timeSec": 120,
+      "restSec": 120,
+      "tempo": "Easy-walk recovery between brisk bouts, 0-1% incline",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 1,
+      "reps": null,
+      "timeSec": 1500,
+      "restSec": null,
+      "tempo": "Flat walk, add 5 min per week",
+      "perWeek": 4
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 1,
+      "reps": null,
+      "timeSec": 1800,
+      "restSec": null,
+      "tempo": "Brisk walk 5-6.5 km/h at 0-2%, or 4.5-5.5 km/h at 5-10%",
+      "perWeek": 4
+    },
+    {
+      "level": "intermediate",
+      "goal": "fat_loss",
+      "sets": 1,
+      "reps": null,
+      "timeSec": 2400,
+      "restSec": null,
+      "tempo": "Incline walk 4.5-5.5 km/h at 5-10%, hands off rails",
+      "perWeek": 4
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 8,
+      "reps": "1 min jog 6.5-8 km/h / 1.5 min brisk walk",
+      "timeSec": 60,
+      "restSec": 90,
+      "tempo": "Run-walk, extend jog time weekly",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "general_fitness",
+      "sets": 1,
+      "reps": null,
+      "timeSec": 1800,
+      "restSec": null,
+      "tempo": "Continuous run 8-11 km/h at 0-1%",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "fat_loss",
+      "sets": 1,
+      "reps": null,
+      "timeSec": 1800,
+      "restSec": null,
+      "tempo": "Steep incline walk 4.5-5 km/h at 10-15% (e.g. 12-3-30)",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "endurance",
+      "sets": 8,
+      "reps": "1 min hard RPE 7-8 / 2 min easy jog or walk",
+      "timeSec": 60,
+      "restSec": 120,
+      "tempo": "Speed intervals after 10 min warm-up",
+      "perWeek": 2
+    }
+  ],
+  "cardioSettings": {
+    "machine": "motorised treadmill",
+    "speed_unit": "km/h",
+    "incline_unit": "percent",
+    "typical_machine_range": {
+      "speed_kmh": "0.8-20 (some to 25)",
+      "incline_pct": "0-15 (some -3 to 18)"
+    },
+    "warm_up": {
+      "time_min": 5,
+      "speed_kmh": "3.5-4.5",
+      "incline_pct": 0
+    },
+    "cool_down": {
+      "time_min": "3-5",
+      "speed_kmh": "3.5-4.5",
+      "incline_pct": 0
+    },
+    "intensity_bands": {
+      "moderate": {
+        "talk_test": "can talk in sentences, cannot sing",
+        "rpe_0_10": "3-4",
+        "rpe_borg_6_20": "12-13",
+        "hr_pct_max": "64-76"
+      },
+      "vigorous": {
+        "talk_test": "only a few words at a time",
+        "rpe_0_10": "5-7",
+        "rpe_borg_6_20": "14-17",
+        "hr_pct_max": "77-95"
+      }
+    },
+    "levels": [
+      {
+        "level": "beginner",
+        "mode": "walk",
+        "speed_kmh": "4.5-5.5",
+        "incline_pct": "0-4",
+        "main_min": "15-20",
+        "intensity": "moderate",
+        "per_week": "3-5",
+        "interval": "5 x (2 min brisk 5.5-6 km/h / 2 min easy 4.5 km/h)"
+      },
+      {
+        "level": "intermediate",
+        "mode": "brisk or incline walk, run-walk",
+        "speed_kmh": "4.5-6.5 walk; 6.5-8 jog",
+        "incline_pct": "0-10",
+        "main_min": "25-40",
+        "intensity": "moderate to low vigorous",
+        "per_week": "3-5",
+        "interval": "8 x (1 min jog / 1.5 min brisk walk)"
+      },
+      {
+        "level": "advanced",
+        "mode": "run or steep incline walk",
+        "speed_kmh": "8-11 run; 4.5-5 incline walk",
+        "incline_pct": "0-1 run; 10-15 walk",
+        "main_min": "25-45",
+        "intensity": "moderate to vigorous",
+        "per_week": "3-5 (max 2-3 hard)",
+        "interval": "6-8 x (1 min hard RPE 7-8 / 2 min easy)"
+      }
+    ],
+    "progression": "Change one variable per week: +5 min, or +0.2-0.5 km/h, or +1-2% incline",
+    "max_incline_pct_by_level": {
+      "beginner": 4,
+      "intermediate": 10,
+      "advanced": 15
+    },
+    "outdoor_running_simulation_incline_pct": 1,
+    "programs_recommended": "Manual for beginners",
+    "safety": {
+      "safety_clip_required": true,
+      "start_from_side_rails": true,
+      "speed_step_kmh": 0.5,
+      "incline_step_pct": 1,
+      "step_off_only_when_stopped": true
+    }
+  },
+  "repCounter": {
+    "mode": "none",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "foot_contact",
+        "joint": "ankle",
+        "angleDeg": "ankle at most forward point relative to hip (optional cadence count, est.)",
+        "parsed": null
+      },
+      {
+        "name": "push_off",
+        "joint": "ankle",
+        "angleDeg": "ankle behind hip, moving backward (est.)",
+        "parsed": null
+      }
+    ],
+    "minRepSec": 0.3
+  },
+  "formChecks": [
+    {
+      "joint": "wrist",
+      "rule": "Wrist fixed at handrail height relative to hips for more than 10 s while walking",
+      "message": "Hands off the rails, let your arms swing"
+    },
+    {
+      "joint": "ankle",
+      "rule": "Ankle well in front of knee at foot contact",
+      "message": "Shorter, quicker steps"
+    },
+    {
+      "joint": "shoulder",
+      "rule": "Shoulder behind hip while on an incline",
+      "message": "Stand tall, don't lean back"
+    },
+    {
+      "joint": "hip",
+      "rule": "Trunk bent forward more than about 25 degrees from vertical",
+      "message": "Lift your chest, lean from the ankles"
+    },
+    {
+      "joint": "nose",
+      "rule": "Nose drops well below baseline for more than 5 s",
+      "message": "Eyes forward"
+    },
+    {
+      "joint": "hip",
+      "rule": "Hip drifts steadily toward back of frame over 10 s",
+      "message": "You're drifting back, slow down"
+    }
+  ],
+  "safetyFlags": [
+    "use_safety_clip",
+    "heart_condition_get_clearance",
+    "high_blood_pressure_moderate_only",
+    "knee_pain_prefer_walking",
+    "achilles_calf_issues_limit_incline",
+    "balance_problems_start_slow",
+    "pregnancy_consult_provider",
+    "recent_surgery_follow_clinician",
+    "stop_if_chest_pain_or_dizziness"
+  ],
+  "progressions": [
+    "Incline walking 5-12% at 4.5-5.5 km/h",
+    "Run-walk intervals to continuous running",
+    "Speed or hill-run intervals"
+  ],
+  "regressions": [
+    "Slow flat walk 3-4.5 km/h with light rail touch",
+    "Short bouts 3 x 5 min with rest",
+    "Outdoor or corridor walking"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "Front, over the shoulder, close-up of console",
+      "shows": "Safety key, red stop, start, speed and incline buttons",
+      "textOverlay": "Know your buttons: clip, stop, speed, incline"
+    },
+    {
+      "seconds": 8,
+      "angle": "Side, 2.5 m, full body",
+      "shows": "Feet on side rails, clip on, start, step onto slow belt",
+      "textOverlay": "Start on the side rails. Clip on."
+    },
+    {
+      "seconds": 6,
+      "angle": "Side, hip height, full body",
+      "shows": "Tall walking posture and arm swing",
+      "textOverlay": "Tall, eyes forward, hands off the rails"
+    },
+    {
+      "seconds": 6,
+      "angle": "Low side, ankle height",
+      "shows": "Foot landing under knee vs overstriding",
+      "textOverlay": "Land under you, not out in front"
+    },
+    {
+      "seconds": 8,
+      "angle": "Side, full body, split-screen",
+      "shows": "Incline walk correct lean vs leaning back on rails",
+      "textOverlay": "Lower the incline before you grab the rails"
+    },
+    {
+      "seconds": 8,
+      "angle": "Side then front, full body",
+      "shows": "Running with short quick soft steps",
+      "textOverlay": "Short, quick, quiet steps"
+    },
+    {
+      "seconds": 6,
+      "angle": "Front-quarter, full body",
+      "shows": "Emergency: rails, side rails, pull key",
+      "textOverlay": "Emergency: rails, side rails, pull the key"
+    },
+    {
+      "seconds": 5,
+      "angle": "Side, full body",
+      "shows": "Stop, wait for belt, step off, wipe console",
+      "textOverlay": "Wait for the belt to stop"
+    }
+  ],
+  "lastResearched": "2026-10-11",
+  "setupSteps": [
+    "Shoes: closed running/walking shoes, laces double-knotted. No barefoot, socks only, chappals or slides.",
+    "Clothing: nothing loose that could drag on the belt (long dupatta ends, untied drawstrings, long towel hanging off the rail).",
+    "Check the machine: the belt is centred, nothing is on the belt or underneath the back roller, the area behind the machine is clear (no bags, bottles, dumbbells, people).",
+    "Water and towel: place your bottle and towel in the holders, not on the side rails.",
+    "Phone: in the console tray or pocket. Use earphones, not loud speaker audio.",
+    "Safety key / clip (the most important part): a magnetic or plug-in key on the console with a cord ending in a clip. Clip it to your waistband or shirt hem. If you drift back or fall, the cord pulls the key out and the belt stops. On many machines the belt will not start without the key in place. Many gyms leave it dangling unused; always clip it on anyway.",
+    "Emergency stop: a large red button or the key itself. Pressing it stops the belt quickly. Know where it is before you start.",
+    "Start / Quick Start: begins the belt at a slow default speed (often about 0.8–1.0 km/h, varies by model).",
+    "Stop / Pause: slows the belt to a stop gently; use this for a normal end. Pause usually holds your session data for a short time.",
+    "Speed (km/h on most Indian gym machines; some show mph, check the unit label): up/down arrows change speed in small steps (usually 0.1 km/h per press); many have quick-select number keys (for example 3, 6, 9, 12 km/h) that jump straight to that speed. Avoid quick-keys as a beginner: big sudden jumps are a common way to lose balance.",
+    "Incline (%): up/down arrows raise the front of the deck. 1% means the belt rises 1 m for every 100 m travelled. Commercial machines usually go 0–15%. Some also have decline (to −3%).",
+    "Programs: pre-set workouts such as Manual, Hill/Rolling Hills (incline changes automatically), Interval, Fat Burn, Cardio, Heart Rate Control (machine adjusts speed/incline to keep your heart rate in a target range; needs a chest strap or grips) and Fitness Test. Beginners should use Manual so nothing changes unexpectedly.",
+    "Heart-rate hand grips: metal sensors on the front handles. Hold them with both hands, without moving, for about 10–20 seconds (est.) to get a reading. They are only accurate with steady contact; while walking fast or running, readings are unreliable. A chest strap is the most accurate option.",
+    "Display: time, distance, speed, incline, pace, heart rate and \"calories\". The calorie number is an estimate; entering your weight improves it slightly.",
+    "Side rails (decks): the non-moving strips on either side of the belt. You stand on these to start and to step off in an emergency.",
+    "Handrails: for balance when getting on/off and adjusting settings, not for holding throughout."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": "Part A: Getting on safely",
+      "title": "Stand on the side rails",
+      "action": "step up onto the machine and place one foot on each side rail, straddling the stopped belt.",
+      "feel": "stable, weight evenly on both feet.",
+      "breathing": "normal.",
+      "tempo": "as long as needed.",
+      "visualCheck": "side, feet on the rails not the belt; front, belt visible between your feet."
+    },
+    {
+      "n": 2,
+      "part": "Part A: Getting on safely",
+      "title": "Attach the safety clip",
+      "action": "clip the cord to your waistband at the front or side. Make sure the key is seated in the console.",
+      "feel": "the cord has a little slack, but not so much it hangs to your knees.",
+      "breathing": "normal.",
+      "tempo": "5 seconds.",
+      "visualCheck": "front, cord runs from console to your waist."
+    },
+    {
+      "n": 3,
+      "part": "Part A: Getting on safely",
+      "title": "Hold the handrails lightly and press Start (Manual)",
+      "action": "one hand on a rail, press Start with the other.",
+      "feel": "the belt begins moving slowly under you.",
+      "breathing": "normal.",
+      "tempo": "wait until the belt is moving steadily (2–3 s).",
+      "visualCheck": "still on the rails, not touching the belt."
+    },
+    {
+      "n": 4,
+      "part": "Part A: Getting on safely",
+      "title": "Step onto the moving belt",
+      "action": "place one foot on the belt and walk with it for two or three steps, then bring the other foot on.",
+      "feel": "the belt pulling your foot back; match its pace.",
+      "breathing": "normal.",
+      "tempo": "first 30 s at the slowest speed.",
+      "visualCheck": "side, standing in the middle of the belt, roughly an arm's length from the console."
+    },
+    {
+      "n": 5,
+      "part": "Part A: Getting on safely",
+      "title": "Let go of the handrails",
+      "action": "release the rails once you feel steady. Let your arms swing naturally.",
+      "feel": "balance from your own legs and trunk.",
+      "breathing": "normal.",
+      "tempo": "within the first minute.",
+      "visualCheck": "front, both arms swinging, hands not touching the rails."
+    },
+    {
+      "n": 6,
+      "part": "Part B: Warm-up and walking",
+      "title": "Raise the speed gradually to an easy walk",
+      "action": "press speed up in small steps to about 3.5–4.5 km/h (est.; pick what feels easy).",
+      "feel": "relaxed, comfortable.",
+      "breathing": "easy, you could chat or hum.",
+      "tempo": "5 minutes of warm-up.",
+      "visualCheck": "steady position on the belt, not drifting backward."
+    },
+    {
+      "n": 7,
+      "part": "Part B: Warm-up and walking",
+      "title": "Set your walking posture",
+      "action": "stand tall, eyes looking forward at the console or the wall ahead, shoulders relaxed down, elbows bent about 90° for brisk walking.",
+      "feel": "tall through the crown of the head, a light brace in your tummy.",
+      "breathing": "through nose or mouth, steady rhythm.",
+      "tempo": "hold this throughout.",
+      "visualCheck": "side, ear over shoulder over hip; front, head level and centred."
+    },
+    {
+      "n": 8,
+      "part": "Part B: Warm-up and walking",
+      "title": "Land each step under you",
+      "action": "heel touches down softly just in front of your body, roll through the foot, push off the toes.",
+      "feel": "smooth heel-to-toe roll; no slapping sound.",
+      "breathing": "steady.",
+      "tempo": "natural cadence.",
+      "visualCheck": "side, foot lands close to under the knee, not far out in front."
+    },
+    {
+      "n": 9,
+      "part": "Part B: Warm-up and walking",
+      "title": "Raise to working speed",
+      "action": "increase by 0.2–0.5 km/h at a time to your brisk walk (often 5–6.5 km/h, est.).",
+      "feel": "breathing a little faster, slight warmth.",
+      "breathing": "can talk in sentences but not sing (moderate).",
+      "tempo": "main block (see section 7).",
+      "visualCheck": "you stay in the middle of the belt; if you drift back, slow down."
+    },
+    {
+      "n": 10,
+      "part": "Part C: Incline walking (optional)",
+      "title": "Add incline in small steps",
+      "action": "press incline up 1% at a time, waiting about a minute between changes. Reduce speed slightly if needed.",
+      "feel": "more work in the calves and buttocks, heart rate rising.",
+      "breathing": "faster, still able to speak in short sentences.",
+      "tempo": "as programmed.",
+      "visualCheck": "side, body leans very slightly forward from the ankles, not bent at the hips and not leaning back holding the rails."
+    },
+    {
+      "n": 11,
+      "part": "Part C: Incline walking (optional)",
+      "title": "Keep your hands off the rails on the incline",
+      "action": "arms swing; if you must hold to keep up, the incline or speed is too high, so lower it.",
+      "feel": "legs do the work.",
+      "breathing": "steady.",
+      "tempo": null,
+      "visualCheck": "front, hands moving past hips."
+    },
+    {
+      "n": 12,
+      "part": "Part D: Running (intermediate/advanced)",
+      "title": "Move from walk to jog gradually",
+      "action": "raise speed in 0.5 km/h steps until walking feels awkward, then start a gentle jog (often about 6.5–8 km/h, est.).",
+      "feel": "a light bounce, soft landings.",
+      "breathing": "rhythmic, able to speak a few words to a short sentence.",
+      "tempo": "per plan.",
+      "visualCheck": "side, foot lands under the hips/knee, shin roughly vertical at contact."
+    },
+    {
+      "n": 13,
+      "part": "Part D: Running (intermediate/advanced)",
+      "title": "Run with short, quick steps",
+      "action": "keep your stride short; if your feet land far in front, take quicker steps (raising step rate by 5–10% reduces knee and hip loading in lab studies).",
+      "feel": "quiet feet, no heavy pounding.",
+      "breathing": "rhythmic.",
+      "tempo": null,
+      "visualCheck": "front, knees track straight ahead, no crossing over."
+    },
+    {
+      "n": 14,
+      "part": "Part D: Running (intermediate/advanced)",
+      "title": "Set incline to 1% if you want to imitate outdoor running (optional). See the disagreements note in section 7",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 15,
+      "part": "Part E: Cool-down and getting off",
+      "title": "Lower speed and incline gradually",
+      "action": "bring incline back to 0% and slow to an easy walk.",
+      "feel": "breathing settles.",
+      "breathing": "slow and deeper.",
+      "tempo": "3–5 minutes.",
+      "visualCheck": null
+    },
+    {
+      "n": 16,
+      "part": "Part E: Cool-down and getting off",
+      "title": "Stop the belt with Stop/Pause",
+      "action": "press Stop. Keep walking as the belt slows.",
+      "feel": "the belt decelerating.",
+      "breathing": null,
+      "tempo": "until it stops completely.",
+      "visualCheck": "you never step off a moving belt in normal use."
+    },
+    {
+      "n": 17,
+      "part": "Part E: Cool-down and getting off",
+      "title": "Step off and unclip",
+      "action": "hold a rail, step off to the side or back once the belt is fully still; unclip the key cord.",
+      "feel": "slightly \"wobbly\" legs for a few seconds is common; stand still until it passes.",
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 18,
+      "part": "Part E: Cool-down and getting off",
+      "title": "Wipe down",
+      "action": "wipe the handles, console and rails with the gym spray or your towel.",
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Not using the safety clip",
+      "text": "Not using the safety clip. Why: if you slip or drift off the back, the belt keeps going. Fix: clip it on every session, even for walking."
+    },
+    {
+      "title": "Holding the handrails throughout (especially on steep incline)",
+      "text": "Holding the handrails throughout (especially on steep incline). Why: leaning back on the rails takes load off the legs; studies show holding while leaning back cuts energy cost on an incline, and it also pushes the shoulders and back into poor posture. Fix: lower the incline or speed until you can walk hands-free."
+    },
+    {
+      "title": "Big jumps in speed or incline (using quick-keys)",
+      "text": "Big jumps in speed or incline (using quick-keys). Why: sudden changes are a common cause of stumbles. Fix: change speed in 0.2–0.5 km/h steps and incline 1% at a time."
+    },
+    {
+      "title": "Stepping on or off a moving belt",
+      "text": "Stepping on or off a moving belt. Why: you can be thrown forward or backward. Fix: start from the side rails; stop the belt fully before stepping off."
+    },
+    {
+      "title": "Overstriding when running",
+      "text": "Overstriding when running. Why: landing with the foot far in front increases braking and knee/hip loading. Fix: shorter, quicker steps (5–10% higher step rate)."
+    },
+    {
+      "title": "Looking down at feet or a phone",
+      "text": "Looking down at feet or a phone. Why: you drift sideways or backward and strain the neck. Fix: eyes forward; put the phone in the tray and use audio."
+    },
+    {
+      "title": "Doing too much too soon (especially running or steep incline)",
+      "text": "Doing too much too soon (especially running or steep incline). Why: most treadmill injuries seen in emergency departments are lower-limb strains and sprains, and knees are the most common site. Fix: increase only one thing (time, speed or incline) at a time, by small steps each week."
+    },
+    {
+      "title": "Skipping the warm-up and cool-down",
+      "text": "Skipping the warm-up and cool-down. Why: jumping to fast speed raises heart rate abruptly; stopping suddenly can cause light-headedness. Fix: 5 minutes easy at the start and 3–5 minutes easy at the end."
+    },
+    {
+      "title": "Trusting the \"calories\" display",
+      "text": "Trusting the \"calories\" display. Why: it is an estimate. Fix: use time, speed, incline and effort (talk test/RPE) to track progress."
+    }
+  ],
+  "safetyNotes": [
+    "Heart disease, chest pain history, high blood pressure, diabetes, or any doctor-advised limit: get clearance before vigorous work; start with flat walking at moderate effort. Avoid holding the HR grips as your only monitor.",
+    "High blood pressure: keep to moderate effort to begin with; avoid sudden max-effort sprints.",
+    "Knee problems (pain at the front of the knee, arthritis): prefer walking, moderate incline and short quick steps over running; steep incline may aggravate some knees; downhill/decline settings increase knee load.",
+    "Back problems: walking is often well tolerated; avoid leaning back on rails on steep incline; stop if pain travels down the leg.",
+    "Ankle/Achilles/calf problems: high incline loads the calf and Achilles heavily; keep incline low.",
+    "Balance problems, dizziness, older adults, certain medications (for example some blood-pressure drugs): start very slowly, use the safety clip, keep a light hand on the rail when needed.",
+    "Pregnancy: ACOG guidance (via secondary summaries) supports walking, and jogging or running if it was a pre-pregnancy habit, after discussion with the care provider; avoid overheating, stay hydrated. Stop and seek care for vaginal bleeding, painful contractions, fluid leakage, dizziness, chest pain, headache, calf pain or swelling, or breathlessness before exertion.",
+    "Recent surgery or injury: follow your surgeon's or physiotherapist's timeline.",
+    "Many gyms set a time limit at peak hours (often 20–30 min, est.; check your gym's rule). Note who is waiting.",
+    "Wipe the console and rails after use; carry a sweat towel.",
+    "Do not leave the machine running unattended or lean on someone else's machine.",
+    "Keep phone calls and speaker audio off.",
+    "Do not film other members; ask staff before setting up a tripod.",
+    "Mumbai heat and humidity: gyms can be warm, so drink water and stop if you feel faint."
+  ],
+  "sources": [
+    "2024 Adult Compendium of Physical Activities, Walking (treadmill codes 17340–17382, 17475; hill codes 17034–17037): https://pacompendium.com/walking/",
+    "2024 Adult Compendium of Physical Activities, Running (codes 12029, 12030, 12050, 12060, 12070): https://pacompendium.com/running/",
+    "2024 Adult Compendium PDF table: https://pacompendium.com/wp-content/uploads/2025/02/1_2024-adult-compendium_1_2024.pdf",
+    "2024 Adult Compendium tracking guide: https://pacompendium.com/wp-content/uploads/2024/03/4_2024_adult-compendium-tracking-guide-1-2024.pdf",
+    "Herrmann et al. 2024, 2024 Adult Compendium paper (J Sport Health Sci): https://pmc.ncbi.nlm.nih.gov/articles/PMC10818145/",
+    "Bull et al., World Health Organization 2020 guidelines on physical activity and sedentary behaviour: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7719906/",
+    "NHS, Walking for health: https://www.nhs.uk/live-well/exercise/running-and-aerobic-exercises/walking-for-health/",
+    "NHS Couch to 5K structure (via council summary): https://www.warwickshire.gov.uk/news/article/6665/couch-to-5k",
+    "ACSM exercise intensity infographic: https://acsm.org/wp-content/uploads/2025/02/Exercise-intensity-infographic-PDF.pdf",
+    "ACSM-based intensity table (review): https://pmc.ncbi.nlm.nih.gov/articles/PMC9618974/table/tbl4",
+    "Mayo Clinic Minute, target heart rate: https://newsnetwork.mayoclinic.org/discussion/mayo-clinic-minute-how-to-reach-your-target-heart-rate",
+    "Lee et al. 2014, leisure-time running and mortality (ACC summary): https://www.acc.org/Latest-in-Cardiology/Articles/2014/08/27/14/53/JACC-Any-Amount-of-Leisure-Time-Running-Lowers-Cardiovascular-Mortality",
+    "Heiderscheit et al. 2011, step rate and joint loading: https://pmc.ncbi.nlm.nih.gov/articles/PMC3022995/",
+    "Jones & Doust 1996, 1% treadmill grade: https://sponet.de/sponet/Record/4001902",
+    "Wong et al., 12-3-30 vs self-paced running (Int J Exerc Sci): https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11798546/",
+    "Handrail use and energy cost (IJmker et al. 2015): https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4546819/",
+    "Handrail use, walking and jogging (Dalton, JEPonline 2013): https://www.asep.org/asep/asep/JEPonlineFebruary2013_N_Dalton.pdf",
+    "Treadmill-associated head injuries, 18-year NEISS review: https://pubmed.ncbi.nlm.nih.gov/29601218/",
+    "Treadmill-related lower extremity injuries at US EDs (summary): https://lermagazine.com/?p=40639",
+    "Cleveland Clinic, wrist vs chest-strap heart rate accuracy: https://consultqd.clevelandclinic.org/wrist-worn-devices-not-snuff-heart-rate-monitoring",
+    "Horizon Fitness, safety key and start-up: https://help.horizonfitness.com/hc/en-us/articles/47020126642452-How-to-Power-Up-Your-Treadmill",
+    "Garage Gym Reviews, treadmill safety: https://www.garagegymreviews.com/treadmill-safety",
+    "Life Fitness 97Ti specification (speed/incline range example): https://www.fitness-superstore.co.uk/life-fitness-97ti-commercial-treadmill.html",
+    "ACOG exercise in pregnancy (summaries): https://dona.org/new-acog-opinion-on-exercise-in-the-childbearing-year/ and https://www.lamaze.org/AMP_EDN/403/Exercise-During-Pregnancy-Postpartum-Advice-from-Experts-at-ACOG-941.amp.html"
+  ],
+  "burnMinutes": null,
+  "gymAccess": [],
+  "suitsPreferences": [],
+  "swapsByAccess": null,
+  "conditionCautions": [],
+  "searchTags": null,
+  "tags": [
+    "Gym",
+    "Beginner",
+    "Low impact",
+    "Cardio",
+    "Heart & lungs",
+    "Legs",
+    "Glutes"
+  ],
+  "needsReview": [
+    "MET 4.8 does not match the beginner settings (4.5-5.5 km/h): its own Compendium row 17355 gives 3.8",
+    "moderate intensity given as RPE 3-4/10; ACSM maps moderate to about 5–6/10 (Borg 12–13)"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-11",
+      "file": "FitPlate_Fitness_2026-10-11.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

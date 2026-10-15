@@ -216,8 +216,8 @@ describe('dish importer', () => {
   });
 
   it('takes the average of the range, not of the full spread', () => {
-    expect(poha.orderPrice).toEqual({ min: 120, max: 150, avg: 130 });
-    expect(biryani.orderPrice).toEqual({ min: 200, max: 260, avg: 230 });
+    expect(poha.orderPrice).toMatchObject({ min: 120, max: 150, avg: 130 });
+    expect(biryani.orderPrice).toMatchObject({ min: 200, max: 260, avg: 230 });
   });
 
   it('reads all three nutrition formats', () => {
@@ -343,7 +343,7 @@ describe('ingredient importer', () => {
 
   it('handles per-piece units', () => {
     expect(lemon.standardUnit).toBe('piece');
-    expect(lemon.price).toEqual({ min: 4, max: 6, avg: 5 });
+    expect(lemon.price).toMatchObject({ min: 4, max: 6, avg: 5 });
   });
 
   it('reads the JSON nutrient profile; missing values stay null, never estimated', () => {
@@ -354,7 +354,7 @@ describe('ingredient importer', () => {
   });
 
   it('builds one ingredient from two versions through the price engine', () => {
-    const later = { ...onion, date: '2026-10-24', file: 'FitPlate_Ingredients_2026-10-24.md', price: { min: 60, max: 75, avg: 68 }, substitutes: ['Leeks'] };
+    const later = { ...onion, date: '2026-10-24', file: 'FitPlate_Ingredients_2026-10-24.md', price: { ...onion.price!, min: 60, max: 75, avg: 68, statedAvg: 68 }, substitutes: ['Leeks'] };
     const built = buildIngredient([later, onion], '2026-10-25');
     expect(built.versions.map((v) => v.date)).toEqual(['2026-10-08', '2026-10-24']);
     expect(built.price?.priceHistory).toHaveLength(2);

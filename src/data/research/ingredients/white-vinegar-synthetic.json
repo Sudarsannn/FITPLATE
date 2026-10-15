@@ -1,0 +1,84 @@
+{
+  "id": "white-vinegar-synthetic",
+  "name": "White vinegar, synthetic",
+  "aliases": [
+    "sirka"
+  ],
+  "category": "Packaged (condiment)",
+  "standardUnit": "l",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-05",
+        "min": 85,
+        "max": 115,
+        "avg": 100,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-05.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 85,
+      "max": 115,
+      "avg": 100
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-05",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 3,
+    "platforms": [
+      "BigBasket",
+      "Flipkart",
+      "IndiaMART"
+    ],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
+  },
+  "per100Estimate": {
+    "min": 8.5,
+    "max": 11.5,
+    "avg": 10
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 18,
+    "proteinG": 0,
+    "carbsG": 0,
+    "fatG": 0,
+    "fibreG": 0
+  },
+  "storage": "Room temperature, cap tightly closed, away from heat and sunlight. Keeps well for a year or more after opening; no fridge needed.",
+  "substitutes": [
+    "Rice vinegar or cane vinegar",
+    "Lemon juice",
+    "Chilli vinegar"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 10,
+      "quantity": 2.5,
+      "unit": "ml",
+      "raw": "2.5 ml (½ tsp)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-05",
+      "file": "FitPlate_Ingredients_2026-10-05.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

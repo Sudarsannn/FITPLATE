@@ -8,6 +8,7 @@
 import type { Confidence, Macros, NutrientPer100, SourcedValue } from '../../models/research';
 import { fileDate } from './dishImporter';
 import { bullets, labelled, num, plain, rupee, rupeeRange, slugify, splitHeadings, splitName, tableRows } from './markdown';
+import { listingEvidence, parseListingTable, type ListingEvidence } from './priceChecks';
 
 export type IngredientVersion = {
   id: string;
@@ -17,7 +18,12 @@ export type IngredientVersion = {
   aliases: string[];
   category: string | null;
   standardUnit: string | null;
-  price: { min: number; max: number; avg: number | null } | null;
+  /**
+   * Summary-row price. `avg` feeds the price engine (null when outside the
+   * range); `statedAvg` is the average as written and the listing fields come
+   * from the section's price table (review 2026-10-15 FIX 2).
+   */
+  price: (ListingEvidence & { min: number; max: number; avg: number | null; statedAvg: number | null; median: number | null }) | null;
   per100: { min: number; max: number } | null;
   sourcesChecked: number | null;
   confidence: Confidence | null;
@@ -43,6 +49,15 @@ export function parseUsedIn(body: string): UsedIn[] {
     out.push({ dishNumber: Number(m[1]), quantity: q ? Number(q[1]) : null, unit: q ? q[2].toLowerCase() : null, raw: m[2].trim() });
   }
   return out;
+}
+
+/**
+ * Research rounds ingredient prices to ₹1–₹5 (₹461 → ₹460) and large per-kg
+ * prices more coarsely (₹1,396 → ₹1,400), so a listing backs the range when it
+ * sits within this much of either end.
+ */
+function ingredientPriceTolerance(max: number): number {
+  return Math.max(Math.min(2.5, 0.05 * max), 0.02 * max);
 }
 
 /** Canonical id: kebab-case of the English name, without the Indian names in brackets. */
@@ -191,7 +206,8 @@ export function parseIngredientFile(text: string, file: string): { items: Ingred
     if (!sec) notes.push('no detail section found');
 
     const range = rupeeRange(cells[3]);
-    let avg = rupee(cells[4]);
+    const statedAvg = rupee(cells[4]);
+    let avg = statedAvg;
     if (range && avg != null && (avg < range.min || avg > range.max)) {
       notes.push(`average ₹${avg} outside range; ignored`);
       avg = null;
@@ -214,7 +230,16 @@ export function parseIngredientFile(text: string, file: string): { items: Ingred
       aliases: [...new Set([...aliases, ...sectionAliases])],
       category: plain(cells[1]).trim() || null,
       standardUnit: unitOf(cells[2]),
-      price: range ? { min: range.min, max: range.max, avg } : null,
+      price: range
+        ? {
+            min: range.min,
+            max: range.max,
+            avg,
+            statedAvg,
+            median: null,
+            ...listingEvidence(parseListingTable(body(2, /price/i), 'ingredient'), range, ingredientPriceTolerance(range.max)),
+          }
+        : null,
       per100: per100 && per100.min <= per100.max ? per100 : null,
       sourcesChecked: num(/(\d+)/.exec(cells[6])?.[1]),
       confidence: confidenceOf(cells[7]),

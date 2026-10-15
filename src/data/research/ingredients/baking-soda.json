@@ -1,0 +1,83 @@
+{
+  "id": "baking-soda",
+  "name": "Baking soda",
+  "aliases": [
+    "meetha soda"
+  ],
+  "category": "Packaged (leavening)",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-07",
+        "min": 350,
+        "max": 360,
+        "avg": 355,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-07.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 350,
+      "max": 360,
+      "avg": 355
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-07",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 3,
+    "platforms": [
+      "Amazon",
+      "BigBasket"
+    ],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
+  },
+  "per100Estimate": {
+    "min": 35,
+    "max": 36,
+    "avg": 35.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 0,
+    "proteinG": 0,
+    "carbsG": 0,
+    "fatG": 0,
+    "fibreG": 0
+  },
+  "storage": "Airtight container in a cool, dry cupboard, away from steam and the stove. Always use a dry spoon. Keeps 6 months after opening.",
+  "substitutes": [
+    "Eno fruit salt (plain)",
+    "Baking powder",
+    "Leave it out"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 20,
+      "quantity": 0.2,
+      "unit": "g",
+      "raw": "0.2 g (1 tiny pinch, in the besan batter)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-07",
+      "file": "FitPlate_Ingredients_2026-10-07.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

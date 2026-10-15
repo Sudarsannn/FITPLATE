@@ -20,7 +20,7 @@
       "householdMeasure": "1 small potato"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "cauliflower",
       "name": "Cauliflower (phool gobi)",
       "quantity": 30,
       "unit": "g",
@@ -69,7 +69,7 @@
       "householdMeasure": "1 tsp"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "pav-bhaji-masala",
       "name": "Pav bhaji masala",
       "quantity": 5.5,
       "unit": "g",
@@ -118,7 +118,7 @@
       "householdMeasure": "4 tsp in total (10 g cooking, 5 g topping, 5 g for the pav)"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "pav",
       "name": "Pav (ladi pav, soft bread rolls)",
       "quantity": 2,
       "unit": null,
@@ -430,10 +430,10 @@
   "microNutrientsEstimate": {
     "values": {
       "vitamin-a": 256.8,
-      "vitamin-c": 68.3,
+      "vitamin-c": 82.4,
       "vitamin-k": 22.5
     },
-    "coveragePct": 48,
+    "coveragePct": 54,
     "basis": "partial estimate from ingredient quantities"
   },
   "asOrdered": null,
@@ -458,7 +458,16 @@
     "change30dPct": null,
     "lastObserved": "2026-10-06",
     "stale": false,
-    "seasonal": false
+    "seasonal": false,
+    "listingCount": 3,
+    "platforms": [
+      "Zomato"
+    ],
+    "outOfStock": false,
+    "confirmed": false,
+    "checkNotes": [
+      "only 1 platform (Zomato) backs the range"
+    ]
   },
   "healthiness": {
     "score": 6,
@@ -532,7 +541,9 @@
   "description": null,
   "familyId": null,
   "variants": [],
-  "needsReview": [],
+  "needsReview": [
+    "price not confirmed (2026-10-06): only 1 platform (Zomato) backs the range"
+  ],
   "versions": [
     {
       "date": "2026-10-06",

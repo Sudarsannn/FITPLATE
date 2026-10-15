@@ -523,7 +523,17 @@
     "change30dPct": null,
     "lastObserved": "2026-10-04",
     "stale": false,
-    "seasonal": false
+    "seasonal": false,
+    "listingCount": 6,
+    "platforms": [
+      "magicpin",
+      "Swiggy"
+    ],
+    "outOfStock": true,
+    "confirmed": false,
+    "checkNotes": [
+      "a listing used for the range is marked out of stock, closed or not taking orders"
+    ]
   },
   "healthiness": {
     "score": 6,
@@ -575,7 +585,9 @@
   "description": null,
   "familyId": null,
   "variants": [],
-  "needsReview": [],
+  "needsReview": [
+    "price not confirmed (2026-10-04): a listing used for the range is marked out of stock, closed or not taking orders"
+  ],
   "versions": [
     {
       "date": "2026-10-04",

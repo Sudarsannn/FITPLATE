@@ -1,0 +1,817 @@
+{
+  "id": "rowing-machine",
+  "number": 8,
+  "name": "Rowing machine",
+  "otherNames": [
+    "Indoor rower",
+    "Rowing ergometer",
+    "Erg",
+    "RowErg",
+    "Concept2",
+    "Air rower",
+    "Magnetic rower",
+    "Water rower"
+  ],
+  "section": "gym",
+  "type": "cardio",
+  "equipment": [
+    "rowing machine (air, magnetic or water)"
+  ],
+  "noEquipmentAlternative": "Brisk marching or low-impact jumping jacks for cardio, plus superman back raise for the back (no true no-equipment rowing stroke)",
+  "musclesPrimary": [
+    "quadriceps",
+    "gluteus maximus",
+    "hamstrings",
+    "latissimus dorsi"
+  ],
+  "musclesSecondary": [
+    "rhomboids",
+    "trapezius (middle and lower)",
+    "posterior deltoid",
+    "erector spinae",
+    "rectus abdominis",
+    "obliques",
+    "biceps brachii",
+    "brachialis",
+    "forearm flexors",
+    "gastrocnemius",
+    "soleus"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": false,
+  "met": 5,
+  "compendiumCode": "02071",
+  "metOptions": [
+    {
+      "code": "02070",
+      "met": 7.3,
+      "activity": "Code 02070, Rowing, stationary ergometer, general, vigorous effort: 7.3 METs (confirmed via secondary reproduction of the 2024 table; official page excerpt not seen)."
+    },
+    {
+      "code": "02071",
+      "met": 5,
+      "activity": "Code 02071, Rowing, stationary ergometer, general, <100 watts, moderate effort: 5.0 METs."
+    },
+    {
+      "code": "02072",
+      "met": 7.5,
+      "activity": "Code 02072, Rowing, stationary, 100–149 watts, vigorous effort: 7.5 METs."
+    },
+    {
+      "code": "02073",
+      "met": 11,
+      "activity": "Code 02073, Rowing, stationary, 150–199 watts, vigorous effort: 11.0 METs."
+    },
+    {
+      "code": "02074",
+      "met": 14,
+      "activity": "Code 02074, Rowing, stationary, ≥200 watts, very vigorous effort: 14.0 METs."
+    },
+    {
+      "code": "02071",
+      "met": 3.5,
+      "activity": "Light effort: Not found in the 2024 Adult Compendium (older editions listed 02071 at 3.5 METs as \"50 W, light effort\"; 2011 gave 4.8 METs). For light rowing the app uses the closest 2024 code, 02071 ="
+    },
+    {
+      "code": "02071",
+      "met": 4.8,
+      "activity": "Light effort: Not found in the 2024 Adult Compendium (older editions listed 02071 at 3.5 METs as \"50 W, light effort\"; 2011 gave 4.8 METs). For light rowing the app uses the closest 2024 code, 02071 ="
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 4,
+      "reps": "3-5 min row each",
+      "timeSec": 240,
+      "restSec": 60,
+      "tempo": "easy to moderate, 18-24 spm, damper 3-5, drive:recovery about 1:2",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 1,
+      "reps": null,
+      "timeSec": 900,
+      "restSec": null,
+      "tempo": "steady moderate (talk test), 20-24 spm; build from 10 to 20 min over weeks 3-6",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 4,
+      "reps": "3 min blocks at 20, 22, 24, 24 spm (comfortable, harder, comfortable, harder)",
+      "timeSec": 180,
+      "restSec": 60,
+      "tempo": "Concept2 beginner Workout 2, then optional 10 min steady",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 1,
+      "reps": null,
+      "timeSec": 1500,
+      "restSec": null,
+      "tempo": "steady moderate, 22-26 spm, RPE 4-5/10, 64-76% HRmax",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "fat_loss",
+      "sets": 8,
+      "reps": "1 min hard (RPE 6-7/10) + 1 min easy",
+      "timeSec": 60,
+      "restSec": 60,
+      "tempo": "intervals, 24-28 spm on work",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 1,
+      "reps": null,
+      "timeSec": 1800,
+      "restSec": null,
+      "tempo": "steady moderate, hold a set split at fixed stroke rate",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "general_fitness",
+      "sets": 1,
+      "reps": null,
+      "timeSec": 2400,
+      "restSec": null,
+      "tempo": "steady moderate, 24-28 spm",
+      "perWeek": 4
+    },
+    {
+      "level": "advanced",
+      "goal": "fat_loss",
+      "sets": 5,
+      "reps": "500 m hard (RPE 7-8/10)",
+      "timeSec": null,
+      "restSec": 120,
+      "tempo": "intervals, up to about 30-32 spm, max 2 hard days per week",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "endurance",
+      "sets": 1,
+      "reps": null,
+      "timeSec": 2700,
+      "restSec": null,
+      "tempo": "steady moderate, 24-30 spm, 64-76% HRmax",
+      "perWeek": 3
+    }
+  ],
+  "cardioSettings": {
+    "warm_up_sec": 300,
+    "cool_down_sec": 300,
+    "machine_types": [
+      "air",
+      "magnetic",
+      "water"
+    ],
+    "damper_air": "3-5 to start (Concept2); higher is not better",
+    "resistance_magnetic_note": "Levels vary by brand and are not comparable; choose by RPE",
+    "stroke_rate_spm": {
+      "beginner": "18-24",
+      "intermediate": "22-26 (est.)",
+      "advanced": "24-30 steady, up to about 32 intervals (est.)",
+      "general_concept2": "24-30",
+      "racing_max": "below 36"
+    },
+    "drive_recovery_ratio": "1:2",
+    "watts_from_pace": "watts = 2.80 / (seconds per metre)^3",
+    "pace_per_500m_at_watts": {
+      "100": "2:32",
+      "150": "2:13",
+      "200": "2:00"
+    },
+    "rpe_0_10": {
+      "beginner": "3-4",
+      "intermediate": "4-5",
+      "advanced_intervals": "7-8"
+    },
+    "hr_max_pct": {
+      "moderate": "64-76",
+      "vigorous": "77-95"
+    },
+    "talk_test": "moderate = can talk, cannot sing",
+    "safety_key": false,
+    "hr_source_preference": [
+      "chest_strap",
+      "rpe_talk_test"
+    ],
+    "met_light": null,
+    "met_moderate": 5,
+    "met_vigorous": 7.5,
+    "met_general_vigorous": 7.3,
+    "met_hard_150_199w": 11,
+    "met_very_hard_200w_plus": 14,
+    "compendium_codes": {
+      "general_vigorous": "02070",
+      "moderate_under_100w": "02071",
+      "vigorous_100_149w": "02072",
+      "vigorous_150_199w": "02073",
+      "very_vigorous_200w_plus": "02074"
+    },
+    "calorie_display_note": "Concept2 monitor calories assume a 175 lb (79 kg) person; use MET-based estimate"
+  },
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "catch",
+        "joint": "knee",
+        "angleDeg": "<= 70",
+        "parsed": {
+          "op": "<=",
+          "value": 70,
+          "max": null
+        }
+      },
+      {
+        "name": "finish",
+        "joint": "knee",
+        "angleDeg": ">= 155",
+        "parsed": {
+          "op": ">=",
+          "value": 155,
+          "max": null
+        }
+      },
+      {
+        "name": "catch",
+        "joint": "knee",
+        "angleDeg": "<= 70",
+        "parsed": {
+          "op": "<=",
+          "value": 70,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 1.5
+  },
+  "formChecks": [
+    {
+      "joint": "knee",
+      "rule": "on recovery, knee angle < 140 deg while wrist is still behind the knee",
+      "message": "Hands past your knees, then bend."
+    },
+    {
+      "joint": "hip",
+      "rule": "early drive: hip moves back > 15 cm while shoulder barely moves",
+      "message": "Push with the legs and keep your back connected."
+    },
+    {
+      "joint": "knee",
+      "rule": "at catch, shin more than 15 deg past vertical",
+      "message": "Stop when your shins are vertical."
+    },
+    {
+      "joint": "trunk",
+      "rule": "at finish, trunk more than 35 deg behind vertical",
+      "message": "Small lean back, not a lie-down."
+    },
+    {
+      "joint": "trunk",
+      "rule": "at catch, trunk more than 40 deg forward of vertical",
+      "message": "Don't over-reach. Sit tall at the front."
+    },
+    {
+      "joint": "wrist",
+      "rule": "at finish, wrist above shoulder height minus 10 cm",
+      "message": "Bring the handle to your lower ribs."
+    },
+    {
+      "joint": "tempo",
+      "rule": "stroke rate > 30 spm for over 30 s (beginner)",
+      "message": "Slow down. Recovery about twice as long as the drive."
+    }
+  ],
+  "safetyFlags": [
+    "low_back_pain",
+    "knee_pain",
+    "hip_replacement",
+    "shoulder_pain",
+    "high_blood_pressure",
+    "heart_disease",
+    "osteoporosis",
+    "pregnancy",
+    "postpartum",
+    "recent_surgery",
+    "balance_problems",
+    "low_seat_getting_up",
+    "weight_limit",
+    "beta_blockers_hr_unreliable"
+  ],
+  "progressions": [
+    "Longer steady rows (20 to 30 to 45 min)",
+    "Pace targets: lower split per 500 m at fixed stroke rate",
+    "Intervals (500 m or 30 s pieces), then a 2000 m test"
+  ],
+  "regressions": [
+    "Legs-only or arms-and-body drill rowing at low rate",
+    "Half-slide rowing to reduce knee and hip bending",
+    "Short pieces with rest (1 min row / 1 min rest x5) or recumbent bike"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "close-up on damper and feet, 0.7 m",
+      "shows": "Damper to 4, foot plate height, strap across widest part of foot",
+      "textOverlay": "Damper 3-5. Strap across the widest part of your foot."
+    },
+    {
+      "seconds": 7,
+      "angle": "monitor close-up, 0.5 m",
+      "shows": "Just Row, Units button, pace, watts, stroke rate",
+      "textOverlay": "Watch pace and stroke rate. 20-24 to start."
+    },
+    {
+      "seconds": 10,
+      "angle": "side, 3 m, seat height",
+      "shows": "Full stroke, normal then slow motion",
+      "textOverlay": "Drive: legs, body, arms. Recovery: arms, body, legs."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "Catch position held",
+      "textOverlay": "Shins vertical. Long back."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "Finish position held",
+      "textOverlay": "Small lean. Handle to the ribs."
+    },
+    {
+      "seconds": 10,
+      "angle": "side, 3 m",
+      "shows": "Knees up early vs hands past knees first",
+      "textOverlay": "Hands past knees first"
+    },
+    {
+      "seconds": 10,
+      "angle": "side, 3 m",
+      "shows": "Shooting the slide vs connected drive",
+      "textOverlay": "Legs and shoulders move together"
+    },
+    {
+      "seconds": 7,
+      "angle": "front three-quarter, 2.5 m",
+      "shows": "Handle into holder, straps off, standing up, wiping",
+      "textOverlay": "Handle in the holder. Stand up slowly."
+    }
+  ],
+  "lastResearched": "2026-10-15",
+  "setupSteps": [
+    "Waking it up: press any button, or simply start rowing. Most rower monitors are battery- or self-powered.",
+    "Just Row: start rowing and the monitor records time, distance and pace with no set target. Best for beginners.",
+    "Select Workout: set a single time (e.g. 10:00), a single distance (e.g. 1000 m) or intervals (work and rest times).",
+    "Units button: switches the main display between: Pace per 500 m (split): how long it would take to row 500 m at your current effort. Lower = faster/harder. Example from the Concept2 formula: about 2:32 per 500 m ≈ 100 W; 2:13 ≈ 150 W; 2:00 ≈ 200 W. Watts: your power. Higher = harder. Calories (per hour and total): Concept2 says this is an estimate based on a 175 lb (79 kg) person, so it is rough for anyone else. Use section 10 instead.",
+    "Stroke rate (SPM): strokes per minute, usually shown in a corner. Concept2 suggests 24–30 spm for most workouts; beginners learning technique often go lower (18–24 spm, as in Concept2's beginner workouts).",
+    "Drag factor: found under More Options on the PM5. It is the true measure of how heavy the fan feels, because a \"damper 3\" on one machine can feel like \"4\" on another. Beginners do not need to use it.",
+    "Heart rate: only with a paired chest strap or a compatible watch (no hand grips on most rowers).",
+    "No safety key or clip. The flywheel only moves when you pull. To stop, simply stop rowing.",
+    "Programs on magnetic/water rowers: often Manual, Interval, Distance, Time, Heart-rate and \"Race\" programs. Start on Manual.",
+    "Wipe the seat, handle and monitor.",
+    "Wear closed shoes, laces tucked in. Tie back long hair; no loose dupatta or towel near the rail or fan.",
+    "Set the damper (air rower) to 3–5, or the resistance (magnetic) to a low-middle level.",
+    "Sit on the seat, put your feet on the foot plates, and adjust the plate height so the strap crosses the widest part of your foot. If the feet are too high, it limits your reach at the catch; too low allows the knees to fold too far (Concept2).",
+    "Tighten the straps snugly. The heels sit in the heel cups.",
+    "Slide forward and check: at the catch your shins should come close to vertical, not past it.",
+    "Slide back with straight legs and check that your knees are not fully locked flat (a tiny bend is fine).",
+    "Adjust the monitor arm to eye level (British Rowing tip).",
+    "Lift the handle out of its holder and hold it with a relaxed overhand grip.",
+    "Press Just Row (or set your workout). You are ready."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Start at the finish position to check your posture",
+      "action": "legs straight (soft knees), body leaning slightly back, handle held lightly just below the ribs, elbows past the body.",
+      "feel": "belly gently firm; shoulders relaxed and down.",
+      "breathing": "normal.",
+      "tempo": null,
+      "visualCheck": "side – shoulders slightly behind the hips (body about \"11 o'clock\", est.). Front – handle level, wrists flat."
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Recovery part 1: arms out",
+      "action": "straighten the arms forward until the handle passes in front of the knees.",
+      "feel": "light, unhurried.",
+      "breathing": "begin to breathe in.",
+      "tempo": "smooth.",
+      "visualCheck": "side – the body has not moved yet; only the arms."
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Recovery part 2: body forward from the hips",
+      "action": "hinge forward from the hips, keeping the back long, until the shoulders are slightly in front of the hips.",
+      "feel": "a gentle stretch at the back of the thighs; the back stays long.",
+      "breathing": "keep breathing in.",
+      "tempo": null,
+      "visualCheck": "side – body about \"1 o'clock\" (forward lean, est.); the handle is past the knees before they bend."
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Recovery part 3: knees bend, slide forward to the catch",
+      "action": "let the knees bend and roll the seat towards the foot plates.",
+      "feel": "unhurried; the slide forward should take about twice as long as the drive (Concept2 recommends a drive-to-recovery ratio of about 1:2).",
+      "breathing": "finish breathing in.",
+      "tempo": null,
+      "visualCheck": "side – at the catch, shins near vertical, arms straight, chest close to the thighs but the back not rounded, heels may lift a little (Concept2 allows this)."
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Catch",
+      "action": "brief moment at the front; arms long and relaxed, core braced.",
+      "feel": "ready to push, like at the start of a jump.",
+      "breathing": "full breath in.",
+      "tempo": null,
+      "visualCheck": "side – shins not past vertical; shoulders relaxed, not shrugged."
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Drive part 1: push with the legs",
+      "action": "push the feet into the plates and straighten the legs. Arms stay straight and the body keeps its forward angle.",
+      "feel": "thighs and buttocks working hard; the pull travels from the feet through the trunk to the handle. Concept2 notes the legs do most of the drive (about the first 80% of the stroke's length).",
+      "breathing": "start breathing out.",
+      "tempo": "strong but smooth (about 1 second for the whole drive at 20–24 spm, est.).",
+      "visualCheck": "side – seat and shoulders move back together; the seat does NOT shoot away while the shoulders stay forward."
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Drive part 2: swing the body back",
+      "action": "as the legs near straight, open the hips and swing the trunk back past vertical.",
+      "feel": "core and back working; the body moves as one firm unit.",
+      "breathing": "keep breathing out.",
+      "tempo": null,
+      "visualCheck": "side – trunk moves from about 1 o'clock to about 11 o'clock (est.); no big lean-back."
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Drive part 3: pull with the arms",
+      "action": "bend the elbows and draw the handle to just below the ribs; elbows go past the body, not out to the sides.",
+      "feel": "upper back and shoulder blades squeezing gently; biceps work a little.",
+      "breathing": "finish breathing out.",
+      "tempo": null,
+      "visualCheck": "side – handle arrives at the lower ribs, not the chin. Front – wrists flat, handle level."
+    },
+    {
+      "n": 9,
+      "part": null,
+      "title": "Finish",
+      "action": "brief pause: legs long, slight lean back, handle at the ribs.",
+      "feel": "tall and braced, shoulders down.",
+      "breathing": "short pause or begin the next breath.",
+      "tempo": null,
+      "visualCheck": "side – shoulders slightly behind hips; elbows behind the body."
+    },
+    {
+      "n": 10,
+      "part": null,
+      "title": "Repeat steps 2–9 in a continuous rhythm. Concept2 says the body should never come to a complete stop; the recovery flows into the catch and the next drive",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 11,
+      "part": null,
+      "title": "Warm up: 5 minutes easy at about 18–22 spm, talking pace (British Rowing suggests five minutes of easy exercise before each session). Optional technique drill: 10 strokes arms only, 10 arms + body, 10 half-slide, then full strokes",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 12,
+      "part": null,
+      "title": "Main session (see section 7)",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 13,
+      "part": null,
+      "title": "Cool down: 3–5 minutes easy, low stroke rate",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 14,
+      "part": null,
+      "title": "Stop and step off safely. Stop at the finish, put the handle in its holder (do not let it fly back), slide the seat forward a little, undo the straps, and stand up using your hands on the frame. Low seats (about 36 cm high on a standard RowErg) can be hard to get up from; take your time",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 15,
+      "part": null,
+      "title": "Reset the damper to the gym's usual setting if posted, and wipe the machine",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Arms-only rowing (\"all arms\")",
+      "text": "Arms-only rowing (\"all arms\"). Pulling mainly with the arms tires the shoulders quickly and wastes the much stronger legs. Fix: legs-only drill, then legs + body, then add the arms; think \"push the floor away\"."
+    },
+    {
+      "title": "Shooting the slide (\"bum-shoving\")",
+      "text": "Shooting the slide (\"bum-shoving\"). The seat flies back while the shoulders stay forward, so the leg push is lost and the back takes a jerk. Fix: keep arms straight and trunk angle fixed as the legs push; the seat and shoulders should travel back together."
+    },
+    {
+      "title": "Knees up early on the recovery",
+      "text": "Knees up early on the recovery. If the knees rise before the hands pass them, you must lift the handle over them (Concept2). Fix: \"arms, body, then knees\". Pause briefly with arms out and body forward before sliding."
+    },
+    {
+      "title": "Over-reaching or over-compressing at the catch",
+      "text": "Over-reaching or over-compressing at the catch. Diving forward or folding the shins past vertical puts you in a weak position and can strain the back (Concept2; Hydrow). Fix: stop the slide when the shins are vertical; set the foot plates correctly."
+    },
+    {
+      "title": "Rounded back, big lean-back",
+      "text": "Rounded back, big lean-back. Rounding at the catch or lying far back at the finish loads the lower back. Fatigue increases lumbar bending over a long session (Holt et al. 2003, as cited). Fix: hinge from the hips, small lean, shorter sessions while learning."
+    },
+    {
+      "title": "Damper on 10",
+      "text": "Damper on 10. Many beginners think a higher damper is a better workout. Concept2 recommends 3–5 to start; a high damper feels like rowing a heavy boat and tires the back early. Fix: set 3–5 and make it harder by pushing harder, not by adding drag."
+    },
+    {
+      "title": "Rushing the recovery (stroke rate too high)",
+      "text": "Rushing the recovery (stroke rate too high). A frantic 35+ spm with short, weak strokes. Fix: keep about a 1:2 drive-to-recovery rhythm and 20–26 spm (est. for beginners); Concept2 says power comes from the drive, not from stroking faster."
+    },
+    {
+      "title": "Pulling the handle to the chin",
+      "text": "Pulling the handle to the chin. Shortens the stroke and adds neck and shoulder tension. Fix: handle to the lower ribs, elbows past the body."
+    },
+    {
+      "title": "Trusting the calorie display",
+      "text": "Trusting the calorie display. It assumes a 79 kg person. Fix: use section 10."
+    }
+  ],
+  "safetyNotes": [
+    "Lower back: the main injury area in rowing. In rowers, previous back injury and a high volume of ergometer training are the main risk factors (Wilson et al., BJSM 2014 review), and lumbar bending tends to increase as you tire. Keep sessions short while learning, use damper 3–5, avoid big lean-back and rounding, and stop if back pain appears.",
+    "Knees: the catch asks for deep knee bending. If you have knee pain, use a half-slide and do not over-compress.",
+    "Hips: deep hip bending at the catch. After a hip replacement, do not row until your surgeon or physio clears you; early hip-replacement precautions often include not bending the hip past 90°, which the catch may exceed (commercial-source claim; confirm with your surgeon).",
+    "Shoulders: keep the handle path low (to the ribs), relaxed shrug-free shoulders; use arms-light technique.",
+    "Heart and blood pressure: in small studies of heart patients, rowing produced higher heart rate, blood pressure and lactate than cycling at a similar workload, and some patients showed signs of reduced heart blood flow earlier (Urhausen et al., 1994); at low intensities rowing produced larger cardiovascular responses than the treadmill (Creighton-hosted study). Start lower than you think and get medical clearance if you have heart disease.",
+    "Getting on and off: the seat is low (about 36 cm on a standard RowErg; 51 cm with tall legs). People with balance problems, knee pain or a large body size may need a hand on the frame or a taller-legged machine.",
+    "Stop immediately if: chest pain or pressure; unusual breathlessness; dizziness or feeling faint; irregular or racing heartbeat; sharp back, knee or shoulder pain; numbness or tingling. Seek medical help for chest symptoms.",
+    "Spotter: not needed.",
+    "Hazards: fingers and clothing near the chain/fan; letting go of the handle mid-stroke (it can fly into the cage); seat rail pinching fingers. Always place the handle in its holder.",
+    "Gym etiquette: wipe the seat and handle; many Indian gyms set a time limit at peak hours (often about 20–30 min, est.); do not leave a towel to reserve it; reset the damper and monitor; keep phone calls short."
+  ],
+  "sources": [
+    "Herrmann SD, et al. 2024 Adult Compendium of Physical Activities. J Sport Health Sci 2024 – https://pubmed.ncbi.nlm.nih.gov/38242596/ ; Conditioning exercise table – https://pacompendium.com/conditioning-exercise/ ; 2024 Adult Compendium PDF – https://pacompendium.com/wp-content/uploads/2024/01/2024-adult-compendium_1_2024.pdf ; tracking guide – https://pacompendium.com/wp-content/uploads/2025/02/4_2024_adult-compendium-tracking-guide-1-2024.pdf ; 2011 Compendium (for comparison) – https://cdn-links.lww.com/permalink/mss/a/mss_43_8_2011_06_13_ainsworth_202093_sdc1.pdf ; secondary reproduction of 2024 rowing codes – https://c2forum.com/viewtopic.php?p=603382",
+    "Concept2. Rowing technique – https://www.concept2.com/technique ; https://concept2.com.au/training/rowing-technique ; Concept2 NZ catch, drive and finish – https://www.concept2.co.nz/Blog/x_post/Understanding-rowing-technique-catch-drive-and-finish-00054.html ; recovery sequence – https://concept2.co.nz/Blog/x_post/Understanding-rowing-technique-the-recovery-sequence-00059.html",
+    "Concept2. Damper Setting 101 – https://concept2.co.uk/node/108 ; drag factor and resistance – https://www.concept2.co.nz/Blog/x_post/Making-sense-of-drag-factor-and-resistance-on-the-indoor-rower-00092.html",
+    "Concept2. How to Row Harder (stroke rate 24–30, ratio 1:2) – https://concept2.co.uk/node/110 ; Understanding stroke rate – https://www.concept2.nl/en/service/monitors/pm5/how-to-use/understanding-stroke-rate",
+    "Concept2. Tips to Improve Your Rowing Technique (common mistakes) – https://concept2.co.uk/node/959 ; Find your optimal foot position – https://concept2.com/blog/find-your-optimal-foot-position-on-the-rowerg",
+    "Concept2. PM5 display options and units – https://concept2.com.au/service/monitors/pm5/how-to-use/using-monitor-display-options ; PM5 101 – https://www.concept2.com/blog/pm5-101 ; Pace-to-Watts calculator – https://concept2.com/training/watts-calculator",
+    "Concept2. Indoor Rower Workouts for Beginners – https://concept2.co.uk/node/109 ; Getting Started? Try these Workouts – https://www.concept2.co.uk/node/11676 ; Couch to Consistency plan – https://concept2.co.uk/training/plans/couch-to-consistency",
+    "Concept2. RowErg specifications – https://cms.concept2.com.au/sites/default/files/2024-06/RowErg_Specs.pdf ; https://concept2.co.uk/ergs/rowerg",
+    "British Rowing. Top tips for starting indoor rowing – https://britishrowing.org/?p=41877 ; Go Row beginners training plan – https://www.britishrowing.org/wp-content/uploads/2016/10/BR_Go_Row_A4_Beginners_Training_Plan_P3.pdf ; On the erg (Rowing & Regatta 2010) – https://plus.britishrowing.org/app/uploads/2022/11/RR_October2010_On-the-erg.pdf",
+    "Cleveland Clinic. Rowing machine benefits – https://health.clevelandclinic.org/rowing-machine-benefits",
+    "Medical News Today. Rowing machine benefits – https://www.medicalnewstoday.com/articles/rowing-machine-benefits",
+    "Frontiers in Physiology 2023 (rowing muscle use and leg/arm power share, citing Richter 2010 and Crosgrove 1999) – https://pmc.ncbi.nlm.nih.gov/articles/PMC10270737 ; Journal of Sports Science and Medicine (muscle synergy, 70% muscle mass citation) – https://jssm.org/jssm-13-793.xml",
+    "Wilson F, et al. Injury in rowers (BJSM 2014 review) and related work – https://edepositireland.ie/handle/2262/76560 ; Holt et al. 2003 lumbar flexion (as cited) – https://www.slideshare.net/slideshow/the-erg-ivan-hooper-study/16445481 ; ISBS lumbar flexion and ergometer design – https://commons.nmu.edu/isbs/vol36/iss1/103",
+    "Caplan N, Gardner T. Influence of stretcher height on posture in ergometer rowing – https://research.birmingham.ac.uk/en/publications/the-influence-of-stretcher-height-on-posture-in-ergometer-rowing/ ; Kinematic analysis during a 2000 m ergometer test – https://ojs.ub.uni-konstanz.de/cpa/article/view/326 ; Catch and finish kinematics, IJES 2025 – https://digitalcommons.wku.edu/ijes/vol18/iss7/7",
+    "Urhausen A, et al. Cardiocirculatory and metabolic strain during rowing ergometry in coronary patients – https://researchportal.lih.lu/en/publications/cardiocirculatory-and-metabolic-strain-during-rowing-ergometry-in/ ; Cardiovascular responses to rowing ergometry versus treadmill in cardiac patients – https://researchworks.creighton.edu/esploro/outputs/journalArticle/Cardiovascular-responses-to-rowing-ergometry-versus/991005929935802656",
+    "ACSM. Exercise and hypertension – https://acsm.org/exercise-hypertension ; ACSM blog on hypertension and breath-holding – https://www.acsm.org/all-blog-posts/certification-blog/acsm-certified-blog/2019/02/27/exercise-hypertension-prevention-treatment ; ACSM intensity infographic – https://acsm.org/wp-content/uploads/2025/02/Exercise-intensity-infographic-PDF.pdf",
+    "Donnelly JE, et al. ACSM position stand: physical activity for weight loss and prevention of regain (2009) – https://pubmed.ncbi.nlm.nih.gov/19127177/",
+    "ADA / Colberg 2016 physical activity in diabetes (secondary summaries) – https://health.tums.ac.ir/uploads/32/old/physical%20activity%20and%20exercise%20in%20diabetes.pdf ; https://unmc.edu/cce/_archived/2022/live/2022-diabetes-update/attendee-info/03_cates.pdf",
+    "AHA/ACC lifestyle guideline on exercise and cholesterol (secondary) – https://www.healio.com/news/cardiology/20190517/exercise-should-be-emphasized-in-patients-with-dyslipidemia ; https://livinghealthy.hawaiipacifichealth.org/heart-health/management/managing-cholesterol-exercise",
+    "Exercise in the management of PCOS: position statement (2023 guideline) – https://vuir.vu.edu.au/48965/1/Exercise_in_the_management_of_polycystic_ovary_syndrome.pdf",
+    "Effect of physical exercise in people with hypothyroidism: systematic review – https://pubmed.ncbi.nlm.nih.gov/37999992/ ; British Thyroid Foundation, coping with exercise – https://www.btf-thyroid.org/coping-with-exercise",
+    "American Thoracic Society EIB guideline (summary) – https://mdedge.com/content/guidelines-sabas-not-labas-exercise-induced-bronchoconstriction ; UF Health EIB care sheet – https://ufhealth.org/care-sheets/exercise-induced-bronchoconstriction",
+    "Strong, steady and straight: UK consensus statement on exercise for osteoporosis – https://pubmed.ncbi.nlm.nih.gov/35577538/ ; https://bjsm.bmj.com/content/56/15/837",
+    "ACOG Committee Opinion 804 (2020) via review table – https://pmc.ncbi.nlm.nih.gov/articles/PMC9772147/table/T1 ; AMSSM exercise in pregnancy – https://learn.amssm.org/AssetListing/Best-Practice-Case-Studies-1088/Exercise-in-Pregnancy-PS-4297 ; NorthShore postpartum exercise – https://northshore.org/healthy-you/safe-ways-to-begin-exercise-after-delivery",
+    "Computer-aided rowing exercise in older adults with mild knee OA (RCT 2022) – https://hub.tmu.edu.tw/zh/publications/effects-of-computer-aided-rowing-exercise-systems-on-improving-mu/",
+    "Rowing after hip and knee replacement (commercial/clinician blogs) – https://hydrow.com/blog/can-you-use-a-rowing-machine-after-a-hip-replacement/ ; https://www.ptprogress.com/ergatta-rower-review-by-a-physical-therapist/ ; Hydrow common beginner mistakes – https://hydrow.com/blog/10-common-rowing-mistakes-beginners-make-and-how-to-avoid-them/",
+    "NHS. Physical activity guidelines for adults aged 19 to 64 – https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-for-adults-aged-19-to-64/"
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 20,
+      "70kg": 17.1,
+      "80kg": 15
+    },
+    "per300kcal": {
+      "60kg": 60,
+      "70kg": 51.4,
+      "80kg": 45
+    }
+  },
+  "gymAccess": [
+    "full_gym",
+    "basic_gym",
+    "home_equipment"
+  ],
+  "suitsPreferences": [
+    "cardio",
+    "strength_endurance",
+    "low_impact",
+    "full_body",
+    "beginner_after_technique_lesson",
+    "10_to_45_min",
+    "dislikes_running"
+  ],
+  "swapsByAccess": {
+    "none": "Brisk marching or low-impact jumping jacks (Home 6) 10-20 min + superman back raise (Home 9)",
+    "home_equipment": "Resistance band row (Home 23) circuit with bodyweight squat (Home 1) and skipping or marching (Home 14); or own home rower",
+    "basic_gym": "Stationary bike (Gym 7) or elliptical (Gym 6) + seated cable row (Gym 26)",
+    "full_gym": "Rowing machine; if busy, elliptical with moving handles (Gym 6) or stationary bike (Gym 7)"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "Moderate effort, long warm-up/cool-down, no breath-holding, no all-out sprints without doctor approval",
+      "source": "ACSM hypertension guidance"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "Counts toward 150 min/week; check feet for strap pressure; carry quick sugar if on insulin/sulfonylureas",
+      "source": "ADA Standards of Care; Colberg 2016"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "Rowing raised HR and BP more than cycling in coronary patients; medical clearance and supervised start; use RPE on beta-blockers",
+      "source": "Urhausen et al. 1994; Creighton cardiac rowing study"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "About 40 min moderate-to-vigorous aerobic activity 3-4 times per week",
+      "source": "2013 AHA/ACC lifestyle guideline"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Check machine weight limit (Concept2 135 kg EN / 227 kg own test); tall legs or frame support to stand from low seat; short pieces first",
+      "source": "Concept2 RowErg specs; ACSM 2009 position stand"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "Counts toward 150-300 min moderate or 75-150 min vigorous per week",
+      "source": "2023 International PCOS guideline / exercise position statement"
+    },
+    {
+      "condition": "thyroid",
+      "status": "modify",
+      "change": "Stable treated hypothyroidism ok; uncontrolled hyperthyroidism: doctor first, easy effort only",
+      "source": "Systematic review 2023 (PubMed 37999992)"
+    },
+    {
+      "condition": "asthma",
+      "status": "modify",
+      "change": "Reliever about 15 min before if prescribed; gradual or interval warm-up; inhaler nearby",
+      "source": "American Thoracic Society EIB guideline"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Half-slide, no over-compression, low damper; stop if pain rises",
+      "source": "Concept2 technique guidance"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "ask_doctor",
+      "change": "If cleared: short sessions, damper 3-5, hinge from hips, no big lean-back",
+      "source": "Wilson et al. 2014 BJSM review"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "modify",
+      "change": "Handle low to ribs, no shrugging, legs-and-body drill if pulling hurts",
+      "source": "Concept2 technique guidance"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "ask_doctor",
+      "change": "Avoid deep forward spinal bending; hip hinge with long spine, shorter slide",
+      "source": "UK consensus Strong, steady and straight (BJSM 2022)"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "ask_doctor",
+      "change": "Moderate effort, shorter slide as bump grows, avoid overheating; rowing not specifically named by ACOG",
+      "source": "ACOG Committee Opinion 804 (2020)"
+    },
+    {
+      "condition": "postpartum",
+      "status": "modify",
+      "change": "Return gradually after clearance; short easy pieces; stop if abdominal doming, pelvic heaviness or leaking",
+      "source": "ACOG Committee Opinion 804 (secondary summaries)"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Only with surgeon/physio clearance; hip replacement catch may exceed early hip-bending limits",
+      "source": "Hydrow and PT Progress clinician articles"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "gym"
+    ],
+    "bodyRegion": [
+      "full_body"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "fat_loss",
+      "endurance"
+    ],
+    "intensity": "moderate",
+    "noise": "moderate",
+    "space": "machine",
+    "typicalMinutes": 20,
+    "kcalPer10min70kg": 58,
+    "difficulty1to5": 2,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Gym",
+    "Beginner",
+    "Low impact",
+    "Cardio",
+    "Legs",
+    "Glutes",
+    "Back",
+    "Rep counter",
+    "20–30 min"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-10-15",
+      "file": "FitPlate_Fitness_2026-10-15.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

@@ -1,0 +1,84 @@
+{
+  "id": "desiccated-coconut",
+  "name": "Desiccated coconut",
+  "aliases": [
+    "sukha khobra",
+    "copra powder"
+  ],
+  "category": "Packaged (dry coconut)",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-07",
+        "min": 440,
+        "max": 495,
+        "avg": 470,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-07.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 440,
+      "max": 495,
+      "avg": 470
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-07",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 3,
+    "platforms": [
+      "Amazon",
+      "BigBasket"
+    ],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
+  },
+  "per100Estimate": {
+    "min": 44,
+    "max": 49.5,
+    "avg": 47
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 660,
+    "proteinG": 6.9,
+    "carbsG": 23.7,
+    "fatG": 64.5,
+    "fibreG": 16.3
+  },
+  "storage": "Airtight jar in a cool, dark cupboard for up to 1 month after opening; in the fridge for 3–6 months, or the freezer for longer. The prepared dry garlic chutney keeps about 2–3 weeks in an airtight jar (longer in the fridge).",
+  "substitutes": [
+    "Whole sukha khobra (dried copra), grated",
+    "Fresh grated coconut, dry-roasted",
+    "Extra roasted peanuts or sesame"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 20,
+      "quantity": 5,
+      "unit": "g",
+      "raw": "5 g (1 tbsp, in the dry garlic chutney; 1 serving's share of a 6× batch)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-07",
+      "file": "FitPlate_Ingredients_2026-10-07.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

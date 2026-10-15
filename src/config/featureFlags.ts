@@ -5,8 +5,8 @@
 export const featureFlags = {
   /** Day 2: five-tab shell (Today, Cook, Track, Move, Profile). ON since Day 2; false restores the demo's four tabs. */
   newTabShell: true,
-  /** Day 4–5: load dishes, ingredients, nutrients and exercises from research JSON. */
-  researchData: false,
+  /** Day 6: the Cook tab lists the research dishes (search, filters, sort). ON since Day 6; false brings back the 5 demo dishes. */
+  researchData: true,
   /** Day 12: camera check step in cook mode (plan only; needs a dev build). */
   cameraCheck: false,
   /** Day 12: read steps aloud with expo-speech. */
@@ -21,6 +21,8 @@ export const featureFlags = {
   cloudSync: true,
   /** Innovation (Day 03b): still backdrop instead of background videos with Reduce motion, Data Saver or 2G. */
   liteMode: true,
+  /** Innovation (Day 06): the Cook tab remembers "Leave out dishes that contain …" on this device. */
+  rememberAllergens: true,
 } as const;
 
 export type FeatureFlag = keyof typeof featureFlags;

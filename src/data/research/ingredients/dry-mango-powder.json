@@ -1,0 +1,84 @@
+{
+  "id": "dry-mango-powder",
+  "name": "Dry mango powder",
+  "aliases": [
+    "amchur"
+  ],
+  "category": "Spice (powder)",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-05",
+        "min": 790,
+        "max": 960,
+        "avg": 875,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-05.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 790,
+      "max": 960,
+      "avg": 875
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-05",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 4,
+    "platforms": [
+      "Amazon",
+      "BigBasket",
+      "Grocery Prime"
+    ],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
+  },
+  "per100Estimate": {
+    "min": 79,
+    "max": 96,
+    "avg": 87.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 330,
+    "proteinG": 2,
+    "carbsG": 75,
+    "fatG": 1,
+    "fibreG": 10
+  },
+  "storage": "Airtight jar at room temperature, away from moisture. Amchur clumps easily in humid weather; keeping it in the fridge during the monsoon helps. Use within about 6 months of opening.",
+  "substitutes": [
+    "Lemon juice (about ½ tsp for ¼ tsp amchur)",
+    "Anardana (dried pomegranate seed) powder",
+    "Tamarind pulp"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 8,
+      "quantity": 0.5,
+      "unit": "g",
+      "raw": "0.5 g (¼ tsp), optional, only if the chole masala is not tangy"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-05",
+      "file": "FitPlate_Ingredients_2026-10-05.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

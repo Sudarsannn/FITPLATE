@@ -13,7 +13,7 @@
   "servings": 1,
   "ingredients": [
     {
-      "ingredientId": null,
+      "ingredientId": "gram-flour",
       "name": "Gram flour (besan)",
       "quantity": 50,
       "unit": "g",
@@ -62,7 +62,7 @@
       "householdMeasure": "1 tbsp, chopped"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "carom-seeds",
       "name": "Carom seeds (ajwain)",
       "quantity": 0.5,
       "unit": "g",
@@ -368,7 +368,16 @@
     "change30dPct": null,
     "lastObserved": "2026-10-07",
     "stale": false,
-    "seasonal": false
+    "seasonal": false,
+    "listingCount": 3,
+    "platforms": [
+      "magicpin"
+    ],
+    "outOfStock": false,
+    "confirmed": false,
+    "checkNotes": [
+      "only 1 platform (magicpin) backs the range"
+    ]
   },
   "healthiness": {
     "score": 8,
@@ -427,7 +436,9 @@
   "description": null,
   "familyId": null,
   "variants": [],
-  "needsReview": [],
+  "needsReview": [
+    "price not confirmed (2026-10-07): only 1 platform (magicpin) backs the range"
+  ],
   "versions": [
     {
       "date": "2026-10-07",

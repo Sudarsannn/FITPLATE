@@ -1,0 +1,846 @@
+{
+  "id": "stationary-bike",
+  "number": 7,
+  "name": "Stationary bike (upright and recumbent)",
+  "otherNames": [
+    "Exercise bike",
+    "Exercise cycle",
+    "Static bike",
+    "Cycle ergometer",
+    "Upright bike",
+    "Recumbent bike",
+    "Recumbent cycle",
+    "Lifecycle"
+  ],
+  "section": "gym",
+  "type": "cardio",
+  "equipment": [
+    "upright exercise bike",
+    "recumbent exercise bike"
+  ],
+  "noEquipmentAlternative": "Brisk marching in place or a low-impact standing cardio circuit",
+  "musclesPrimary": [
+    "quadriceps",
+    "gluteus maximus",
+    "hamstrings"
+  ],
+  "musclesSecondary": [
+    "gastrocnemius",
+    "soleus",
+    "tibialis anterior",
+    "hip flexors",
+    "rectus abdominis",
+    "obliques",
+    "erector spinae"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 6,
+  "compendiumCode": "01220",
+  "metOptions": [
+    {
+      "code": "01214",
+      "met": 4,
+      "activity": "Light: code 01214, stationary, 50 W, light effort: 4.0 METs. (Also 01210, 25–30 W, very light to light: 3.5 METs.)"
+    },
+    {
+      "code": "01210",
+      "met": 3.5,
+      "activity": "Light: code 01214, stationary, 50 W, light effort: 4.0 METs. (Also 01210, 25–30 W, very light to light: 3.5 METs.)"
+    },
+    {
+      "code": "01216",
+      "met": 5,
+      "activity": "Light to moderate: code 01216, 60 W: 5.0 METs; code 01218, 70–80 W: 5.8 METs."
+    },
+    {
+      "code": "01218",
+      "met": 5.8,
+      "activity": "Light to moderate: code 01216, 60 W: 5.0 METs; code 01218, 70–80 W: 5.8 METs."
+    },
+    {
+      "code": "01220",
+      "met": 6,
+      "activity": "Moderate (default for the app): code 01220, 90–100 W, moderate to vigorous: 6.0 METs."
+    },
+    {
+      "code": "01236",
+      "met": 10.8,
+      "activity": "Vigorous: code 01236, 200–229 W, vigorous: 10.8 METs. (Also 01228, 126–150 W: 8.0; 01232, 151–199 W: 10.3; 01240, 230–250 W, very vigorous: 12.5.)"
+    },
+    {
+      "code": "01200",
+      "met": 6.8,
+      "activity": "General (effort unknown): code 01200: 6.8 METs. Spin / RPM class: code 01270: 9.0 METs."
+    },
+    {
+      "code": "01270",
+      "met": 9,
+      "activity": "General (effort unknown): code 01200: 6.8 METs. Spin / RPM class: code 01270: 9.0 METs."
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 1,
+      "reps": null,
+      "timeSec": 900,
+      "restSec": null,
+      "tempo": "steady moderate (talk but not sing), RPE 3-4/10, 60-80 RPM, plus 5 min warm-up and 3-5 min cool-down",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 5,
+      "reps": "1 min harder (RPE 5/10, +2 levels) + 2 min easy",
+      "timeSec": 60,
+      "restSec": 120,
+      "tempo": "intervals",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 1,
+      "reps": null,
+      "timeSec": 1200,
+      "restSec": null,
+      "tempo": "steady moderate, add 5 min per week",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 1,
+      "reps": null,
+      "timeSec": 1800,
+      "restSec": null,
+      "tempo": "steady moderate, RPE 4-5/10, 70-90 RPM, 64-76% HRmax",
+      "perWeek": 4
+    },
+    {
+      "level": "intermediate",
+      "goal": "fat_loss",
+      "sets": 8,
+      "reps": "1 min hard (RPE 6-7/10, +3-4 levels) + 1-2 min easy",
+      "timeSec": 60,
+      "restSec": 90,
+      "tempo": "intervals",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 1,
+      "reps": null,
+      "timeSec": 2400,
+      "restSec": null,
+      "tempo": "steady moderate",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "20 s all-out sprint + 2 min easy (about 50 W)",
+      "timeSec": 20,
+      "restSec": 120,
+      "tempo": "sprint intervals inside a 10-min session with 2 min warm-up and 3 min cool-down",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "fat_loss",
+      "sets": 10,
+      "reps": "30 s very hard (RPE 8-9/10) + 60-90 s easy",
+      "timeSec": 30,
+      "restSec": 75,
+      "tempo": "intervals, max 2 per week",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "endurance",
+      "sets": 1,
+      "reps": null,
+      "timeSec": 3600,
+      "restSec": null,
+      "tempo": "steady moderate, 80-100 RPM, 64-76% HRmax",
+      "perWeek": 3
+    }
+  ],
+  "cardioSettings": {
+    "warm_up_sec": 300,
+    "cool_down_sec": 300,
+    "bike_types": [
+      "upright",
+      "recumbent"
+    ],
+    "resistance_scale_note": "Levels vary by brand (1-16, 20, 25, 26 or 30) and are not comparable; choose by RPE; use watts if shown",
+    "beginner": {
+      "resistance_level_of_20": "3-6 (est.)",
+      "rpm": "60-80 (est.)",
+      "watts": "50-90 (est.)",
+      "rpe_0_10": "3-4",
+      "hr_max_pct": "64-70",
+      "talk_test": "can talk, cannot sing"
+    },
+    "intermediate": {
+      "resistance_level_of_20": "6-12 (est.)",
+      "rpm": "70-90 (est.)",
+      "watts": "90-150 (est.)",
+      "rpe_0_10": "4-5",
+      "hr_max_pct": "64-76",
+      "talk_test": "can talk, cannot sing"
+    },
+    "advanced": {
+      "resistance_level_of_20": "10-20 (est.)",
+      "rpm": "80-100 steady, 60-80 heavy (est.)",
+      "watts": "150-250 (est.)",
+      "rpe_0_10": "6-8 on intervals",
+      "hr_max_pct": "77-90 on intervals",
+      "talk_test": "a few words only on intervals"
+    },
+    "min_rpm_under_heavy_resistance": 60,
+    "seat_setup": {
+      "upright": "seat at hip-bone height standing; 25-35 deg knee flexion at bottom of stroke (static)",
+      "recumbent": "leg nearly straight with heel on far pedal; soft knee bend with ball of foot"
+    },
+    "safety_key": false,
+    "spin_bike_note": "Fixed-flywheel spin bikes keep spinning; use the brake to stop",
+    "hr_source_preference": [
+      "chest_strap",
+      "rpe_talk_test",
+      "hand_grips"
+    ],
+    "met_light": 4,
+    "met_moderate": 6,
+    "met_vigorous": 10.8,
+    "met_general": 6.8,
+    "compendium_codes": {
+      "light": "01214",
+      "moderate": "01220",
+      "vigorous": "01236",
+      "general": "01200",
+      "spin_class": "01270"
+    },
+    "calorie_display_note": "Bike displays tend to overestimate slightly; use MET-based estimate, ideally from watts"
+  },
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_ear",
+      "right_ear",
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle",
+      "left_heel",
+      "right_heel",
+      "left_foot_index",
+      "right_foot_index"
+    ],
+    "phases": [
+      {
+        "name": "bottom_extended",
+        "joint": "knee",
+        "angleDeg": ">= 135",
+        "parsed": {
+          "op": ">=",
+          "value": 135,
+          "max": null
+        }
+      },
+      {
+        "name": "top_flexed",
+        "joint": "knee",
+        "angleDeg": "<= 85",
+        "parsed": {
+          "op": "<=",
+          "value": 85,
+          "max": null
+        }
+      },
+      {
+        "name": "bottom_extended",
+        "joint": "knee",
+        "angleDeg": ">= 135",
+        "parsed": {
+          "op": ">=",
+          "value": 135,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 0.4
+  },
+  "formChecks": [
+    {
+      "joint": "knee",
+      "rule": "max knee angle per revolution > 155 deg during calibration",
+      "message": "Seat may be too high: lower it one notch."
+    },
+    {
+      "joint": "knee",
+      "rule": "max knee angle per revolution < 135 deg during calibration",
+      "message": "Seat may be too low: raise it one notch."
+    },
+    {
+      "joint": "hip",
+      "rule": "hip landmark rocks beyond threshold each revolution",
+      "message": "Hips rocking: lower the seat a little."
+    },
+    {
+      "joint": "trunk",
+      "rule": "upright: shoulder-hip line more than 45 deg forward of vertical",
+      "message": "Sit taller: hinge from the hips."
+    },
+    {
+      "joint": "hip",
+      "rule": "recumbent: hip slides forward vs calibration",
+      "message": "Sit back into the seat."
+    },
+    {
+      "joint": "neck",
+      "rule": "nose below shoulder level for more than 5 s",
+      "message": "Eyes up."
+    },
+    {
+      "joint": "ankle",
+      "rule": "heel well below foot index during push",
+      "message": "Ball of the foot on the pedal."
+    },
+    {
+      "joint": "shoulder",
+      "rule": "shoulder-to-ear distance shrinks vs calibration",
+      "message": "Relax your shoulders."
+    },
+    {
+      "joint": "knee",
+      "rule": "front view: knee inside hip-ankle line",
+      "message": "Knees over your toes."
+    }
+  ],
+  "safetyFlags": [
+    "knee_pain",
+    "low_back_pain",
+    "high_blood_pressure",
+    "heart_disease",
+    "pregnancy",
+    "postpartum",
+    "recent_surgery",
+    "peripheral_neuropathy",
+    "saddle_numbness",
+    "osteoporosis_non_weight_bearing",
+    "beta_blockers_hr_unreliable",
+    "spin_bike_fixed_flywheel"
+  ],
+  "progressions": [
+    "Longer steady rides then higher resistance at the same RPM",
+    "Intervals: 1 min, then 30 s, then 20 s sprints",
+    "Spin bike / indoor cycling class including standing climbs"
+  ],
+  "regressions": [
+    "Recumbent bike, lowest level, 5-10 min at 50-60 RPM",
+    "Upright bike in short blocks: 3-5 min on, 1 min rest, x3",
+    "Raised seat, rocking half-circles then full circles with no resistance (rehab, with clearance)"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "side, 2 m, hip height",
+      "shows": "Setting seat to hip-bone height and locking the pin",
+      "textOverlay": "Seat at hip-bone height. Lock the pin."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "Soft knee bend at bottom vs seat too high and too low",
+      "textOverlay": "Soft bend at the bottom."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "Recumbent seat distance check",
+      "textOverlay": "Recumbent: nearly straight with the heel."
+    },
+    {
+      "seconds": 6,
+      "angle": "console close-up, 0.5 m",
+      "shows": "Waking console, Manual, level, RPM, watts, HR pads",
+      "textOverlay": "Start on Manual. Watch RPM and watts."
+    },
+    {
+      "seconds": 6,
+      "angle": "side close-up on feet, 1 m",
+      "shows": "Ball of foot on pedal, strap, vs heel pedalling",
+      "textOverlay": "Ball of the foot on the pedal."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 3 m, knee height",
+      "shows": "Knees tracking vs caving; light hands",
+      "textOverlay": "Knees over toes. Light hands."
+    },
+    {
+      "seconds": 8,
+      "angle": "side then face",
+      "shows": "Talk test; tall vs hunched posture",
+      "textOverlay": "Moderate = can talk, can't sing."
+    },
+    {
+      "seconds": 8,
+      "angle": "front three-quarter, 2.5 m",
+      "shows": "Cool-down, full stop, getting off, wiping seat",
+      "textOverlay": "Full stop. Then step off. Wipe the seat."
+    }
+  ],
+  "lastResearched": "2026-10-15",
+  "setupSteps": [
+    "Self-powered vs plugged in. Many commercial bikes are self-powered: the screen wakes only when you start pedalling. Pedal for a few seconds.",
+    "Quick Start / Manual. The simplest choice: a timer starts at the lowest level, and you change the level with ▲/▼ or + / −.",
+    "Resistance levels. Usually 1 to 16, 20, 25 or 30 depending on the brand (e.g. some Life Fitness recumbents list 20 levels, some Platinum models 26). Level numbers are NOT comparable across brands. Pick by effort.",
+    "RPM. Pedal revolutions per minute (one full circle of one pedal). Some bikes show \"speed\" in km/h; on a bike this is a calculated figure, not real road speed.",
+    "Watts. Many consoles show your power output in watts. This is the most useful number on the screen, because the Compendium MET values for stationary cycling are listed by watts (see section 10). If your console shows watts, use it to estimate calories.",
+    "Constant-power vs constant-resistance mode. Some bikes (often in heart-rate or \"constant watts\" programs) hold your watts steady: if you pedal faster, the resistance drops, and if you pedal slower it gets heavier. In normal Manual mode, resistance stays at the level you chose.",
+    "Programs. Common names: Manual, Hill/Rolling Hills, Interval, Random, Fat Burn, Cardio, Heart-Rate Control (HRC/Target HR), Constant Watts, Fitness Test. Beginners should start on Manual to stay in control.",
+    "Weight and age entry. Enter your real weight and age if asked; the machine uses them for calories and heart-rate targets.",
+    "Heart-rate grips. Metal pads on the handlebars (upright) or side handles (recumbent). Hold both still and lightly for a reading. Use RPE and the talk test as your main guide; a chest strap is more accurate if the console accepts one.",
+    "Calories display. A rough guide only. Press coverage of UCSF testing reported that cardio machines overestimate calories by about 19% on average, with the stationary bike the least wrong at about 7% (secondary source; original study not found).",
+    "Stop / Pause. Simply stop pedalling. Most bikes pause and then reset after a while. Gym exercise bikes have no safety key or clip, because the pedals only move when you drive them. Exception: spin bikes / indoor cycles often have a fixed-gear flywheel that keeps the pedals turning; stop them by slowing your legs gradually or pressing the red brake/resistance knob down. Never try to step off while the pedals are still spinning.",
+    "Wipe the seat, handlebars and console with the gym spray or wipes.",
+    "Wear closed training shoes, laces tucked in. No loose dupatta, saree pallu, long scarf or hanging towel near the pedals or flywheel.",
+    "Stand beside the bike. Set the seat roughly level with the top of your hip bone (the iliac crest, the rounded bony ridge at your waist) (HSS method). Pull the pop-pin, slide the seat, release, then wiggle the seat until the pin clicks fully in.",
+    "Hold the handlebars, step over the frame and sit on the widest part of the saddle (your \"sit bones\" on the saddle, not the narrow nose).",
+    "Put the balls of your feet over the centre of each pedal. Tighten the straps so they are snug, not cutting in.",
+    "Check seat height. Pedal slowly and stop with one pedal at the very bottom (6 o'clock). Your knee should be slightly bent, roughly 25–35° short of straight (ACE Group Fitness guidance; Holmes method). A quick check: put your heel on the bottom pedal; your leg should be almost straight. When you put the ball of the foot back on, the soft bend appears. Your hips should not rock side to side when you pedal. Too high: hips rock, toes point down hard at the bottom, or you reach for the pedal. Lower one notch. Too low: knee comes up high and close to the chest at the top and stays well bent at the bottom; may cause front-of-knee ache. Raise one notch.",
+    "Check fore–aft (if adjustable). With the pedals level (3 and 9 o'clock), your front knee should sit roughly above the ball of the foot / pedal spindle (est.). If you see a lot of foot in front of the knee, slide the seat forward; if you see only toes, slide it back.",
+    "Handlebars (if adjustable). Level with the seat or slightly higher for beginners, so you do not hunch forward. Elbows soft, not locked.",
+    "Start pedalling slowly to wake the console. Choose Quick Start or Manual, set a low level (for example 2–4 on a 20-level bike; est.), enter age and weight if asked.",
+    "Wipe the seat, handles and console.",
+    "Step through the low frame (or over it) and sit back fully into the seat, low back against the backrest.",
+    "Pull the seat lever and slide the seat forward or back. Place the arch or heel of one foot on the pedal at its farthest point: the leg should be almost straight. Lock the lever, check it is secure.",
+    "Now put the balls of your feet on the pedals and tighten the straps. At the farthest point, your knee should have a soft bend, roughly the same 25–35° short of straight as on the upright (est.; no specific standard found for recumbents).",
+    "At the closest point, your knee should not come up near your chest or press uncomfortably. If it does, slide the seat back one notch.",
+    "If the backrest reclines, start at a more upright setting (easier to see the console and less hip bend; est.).",
+    "Hold the side handles lightly. Start pedalling, choose Manual, low level.",
+    "Set seat height the same way, and set the saddle fore–aft and handlebar height as above.",
+    "Learn where the resistance knob and emergency brake are before you start (pressing down on the knob usually stops the flywheel).",
+    "Keep some resistance on; spinning with no resistance on a fixed flywheel lets the pedals run away from you."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Start pedalling forward slowly",
+      "action": null,
+      "feel": "smooth circles, no bumps.",
+      "breathing": "easy.",
+      "tempo": "about 60–70 RPM for the first minute (est.).",
+      "visualCheck": "side – hips still on the seat, upper body quiet. Front – knees moving straight up and down over the feet."
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Sit on your sit bones (upright) or sit back fully (recumbent)",
+      "action": null,
+      "feel": "weight on the two bony points under your buttocks, not on the soft tissue in front; on the recumbent, low back supported by the backrest.",
+      "breathing": "steady.",
+      "tempo": null,
+      "visualCheck": "side – upright rider has a tall spine with a slight forward lean from the hips; recumbent rider's back stays in contact with the backrest."
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Hold the handlebars or side handles lightly",
+      "action": null,
+      "feel": "hands resting, not gripping; shoulders relaxed and down.",
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": "front – shoulders level, elbows soft, wrists straight."
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Push through the ball of the foot from the top of the stroke",
+      "action": null,
+      "feel": "front of the thigh and buttock working as the pedal moves from about 12 o'clock to 5 o'clock (upright) or from the closest to the farthest point (recumbent).",
+      "breathing": "rhythmic.",
+      "tempo": "smooth and even.",
+      "visualCheck": "side – foot roughly flat to slightly toe-down; heel does not drop sharply."
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Let the pedal come back up without stomping",
+      "action": null,
+      "feel": "the leg follows the pedal round; the back of the thigh and front of the hip lightly help lift (more if you use straps).",
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": "the knee comes up smoothly; no bouncing on the saddle."
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Keep the knees in line",
+      "action": null,
+      "feel": "knees track over your second toe throughout.",
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": "front – knees neither fall in towards the frame nor flare out."
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Warm up: 5 minutes, easy effort",
+      "action": null,
+      "feel": "breathing rises slightly; you can chat easily.",
+      "breathing": null,
+      "tempo": "5 minutes, RPE 2–3/10, about 60–80 RPM (est.).",
+      "visualCheck": null
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Raise resistance 1–2 levels at a time to your working effort",
+      "action": null,
+      "feel": "legs working; breathing faster.",
+      "breathing": "you can talk but not sing (moderate).",
+      "tempo": "wait 30–60 seconds after each change before judging (est.).",
+      "visualCheck": "if you start rocking, bouncing, or pedalling below about 60 RPM, the resistance is too heavy for now (avoid heavy resistance that forces you below about 60 RPM; this strains the knees)."
+    },
+    {
+      "n": 9,
+      "part": null,
+      "title": "Hold your working pace for the planned time (section 7)",
+      "action": null,
+      "feel": "steady effort you could keep up for the planned minutes.",
+      "breathing": "talk test passes.",
+      "tempo": "about 70–90 RPM for steady riding (est.; beginners may be comfortable nearer 60–70).",
+      "visualCheck": null
+    },
+    {
+      "n": 10,
+      "part": null,
+      "title": "(Upright only, optional, later) Stand up out of the saddle for short climbs",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 11,
+      "part": null,
+      "title": "Cool down: 3–5 minutes at low resistance",
+      "action": null,
+      "feel": "breathing settles, legs feel lighter.",
+      "breathing": null,
+      "tempo": "3–5 minutes, RPE 2–3/10.",
+      "visualCheck": null
+    },
+    {
+      "n": 12,
+      "part": null,
+      "title": "Slow down and stop",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": "pedals fully stopped (on a spin bike, use the brake)."
+    },
+    {
+      "n": 13,
+      "part": null,
+      "title": "Get off safely",
+      "action": null,
+      "feel": "steady. If dizzy or light-headed, sit back down or hold the frame for a moment.",
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 14,
+      "part": null,
+      "title": "Wipe the seat, handles and console",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Seat too low",
+      "text": "Seat too low. Very common in shared gym bikes left at someone else's setting. More knee bend all the way round; a 2022 review found patellofemoral (kneecap) compressive force seems to rise as saddle height drops (evidence is small and mixed). Fix: raise the seat until there is a soft 25–35° bend at the bottom."
+    },
+    {
+      "title": "Seat too high",
+      "text": "Seat too high. Hips rock, toes point hard, and the back of the knee overstretches; can irritate the hamstrings and back of the knee. Fix: lower until hips stay still."
+    },
+    {
+      "title": "Recumbent seat too far or too close",
+      "text": "Recumbent seat too far or too close. Too far = reaching and locked knees; too close = knees jammed up near the chest. Fix: re-do the \"nearly straight with the heel\" check."
+    },
+    {
+      "title": "Grinding heavy resistance at very low RPM",
+      "text": "Grinding heavy resistance at very low RPM. Pushing big resistance below about 60 RPM loads the knees heavily. Fix: lower resistance and keep 60–90 RPM."
+    },
+    {
+      "title": "No resistance, flailing fast",
+      "text": "No resistance, flailing fast. The flywheel does the work, you bounce on the seat and the training effect is small. Fix: add resistance until each push has a little weight behind it."
+    },
+    {
+      "title": "Hunching over the bars or slouching on the recumbent",
+      "text": "Hunching over the bars or slouching on the recumbent. Sustained low-back flexion is linked to discomfort in cyclists; lower handlebars mean more lumbar flexion. Fix: raise the bars if you can, hinge from the hips, or use the recumbent's backrest."
+    },
+    {
+      "title": "Sitting on the saddle nose / ignoring numbness",
+      "text": "Sitting on the saddle nose / ignoring numbness. Pressure on the soft tissue between the sit bones can cause genital numbness or tingling. Fix: sit back on the wide part, wear padded shorts if available, stand up or shift position every 10–15 minutes on long rides, and choose the recumbent's wide seat. Numbness that lasts after the ride needs a doctor."
+    },
+    {
+      "title": "Watching the phone in your lap",
+      "text": "Watching the phone in your lap. Rounds the upper back and neck. Fix: phone on the console shelf at eye level, or listen instead."
+    },
+    {
+      "title": "Trusting the calorie number",
+      "text": "Trusting the calorie number. Fix: use the MET estimates in section 10, ideally from the watts reading."
+    },
+    {
+      "title": "Getting off a spin bike while the flywheel is still spinning",
+      "text": "Getting off a spin bike while the flywheel is still spinning. Fix: slow down, press the brake, wait for a full stop."
+    }
+  ],
+  "safetyNotes": [
+    "Knee problems: usually one of the best cardio choices. Set the seat height carefully (too low raises front-of-knee load), avoid heavy resistance below 60 RPM, and stop if pain rises during or after riding. One orthopaedic surgeon quoted in consumer press allows cycling for mild-to-moderate arthritis but not for severe arthritis or certain knee injuries, so ask your doctor if your knee is badly affected.",
+    "Low-back problems: the recumbent supports the back; on the upright, raise the bars and avoid hunching. Lower bars and sustained lumbar flexion are linked to low-back discomfort in cyclists.",
+    "Shoulder, wrist or hand problems: rest the hands lightly; the recumbent needs almost no upper-body support.",
+    "High blood pressure or heart disease: moderate effort, longer warm-up and cool-down, never hold your breath, no all-out sprints unless your doctor agrees.",
+    "Pregnancy: ACOG lists stationary cycling as safe in uncomplicated pregnancy and advises avoiding activities with a high fall risk; a stationary bike removes the fall risk of outdoor cycling. As the bump grows, raise the handlebars or use the recumbent, stay at a talk-test effort and avoid overheating.",
+    "Numbness or tingling in the groin, or in the feet (e.g. diabetic nerve damage): sit on the sit bones, use a wide seat (recumbent), take short standing breaks, check your feet after riding. Persistent numbness needs a doctor.",
+    "Recent surgery: only with clearance from your surgeon or physiotherapist. After knee replacement, bikes are commonly used in rehab, often starting with a raised seat and no resistance; riding full circles comfortably on an upright usually needs about 100° of knee bend, and a recumbent may need less.",
+    "Stop immediately if: chest pain or pressure; unusual breathlessness; dizziness or feeling faint; irregular or racing heartbeat; sharp joint pain; numbness that does not settle. Seek medical help for chest symptoms.",
+    "Spotter: not needed.",
+    "Hazards: keep children, hands, towels and loose clothing away from pedals and flywheel; spin-bike flywheels can keep spinning; check the seat pin is fully locked before sitting.",
+    "Gym etiquette: wipe the seat and handles (sweat collects on the saddle); many Indian gyms set a 20–30-minute limit at peak hours (est.), so check the notice board; do not \"reserve\" a bike with a towel; reset the seat lever and console when done is optional, but leave the area clear."
+  ],
+  "sources": [
+    "Herrmann SD, et al. 2024 Adult Compendium of Physical Activities. J Sport Health Sci 2024 – https://pubmed.ncbi.nlm.nih.gov/38242596/ ; Compendium Bicycling page – https://pacompendium.com/bicycling/ ; 2024 Adult Compendium tracking guide – https://pacompendium.com/wp-content/uploads/2025/02/4_2024_adult-compendium-tracking-guide-1-2024.pdf ; 2024 Adult Compendium table – https://pacompendium.com/wp-content/uploads/2025/02/1_2024-adult-compendium_1_2024.pdf",
+    "Hospital for Special Surgery (HSS). How to set up an exercise bike – https://www.hss.edu/health-library/move-better/set-up-exercise-bike",
+    "Harvard Health Publishing. Walking, cycling, and swimming are best exercises for knee osteoarthritis – https://content.health.harvard.edu/blog/walking-cycling-and-swimming-are-best-exercises-for-knee-osteoarthritis ; Calories burned in 30 minutes for people of three different weights – https://www.health.harvard.edu/exercise-and-fitness/calories-burned-in-30-minutes-for-people-of-three-different-weights",
+    "Arthritis Foundation. Benefits of stationary biking – https://www.arthritis.org/health-wellness/healthy-living/physical-activity/other-activities/benefits-of-stationary-biking ; Arthritis Research Canada / Arthritis Society low-load activities – https://arthritis.ca/wp-content/uploads/2025/09/LowLoad-Activities-EN-Mar30-26.pdf",
+    "Mayo Clinic Care Network. Cycle your way to better health – https://www.mymlc.com/health-information/articles/c/cycle-your-way-to-better-health/",
+    "NHS. Physical activity guidelines for adults aged 19 to 64 – https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-for-adults-aged-19-to-64/",
+    "ACSM. Exercise intensity infographic – https://acsm.org/wp-content/uploads/2025/02/Exercise-intensity-infographic-PDF.pdf",
+    "Peveler WW, et al. Comparing methods for setting saddle height in trained cyclists (Holmes method, 25–35°) – https://www.sponet.de/sponet/Record/4010655 ; Static vs dynamic knee angle in bike fitting (2019) – https://actabio.pwr.edu.pl/fcp/PGBUKOQtTKlQhbx08SlkTUARAUWRuHQwFDBoIVURNWH5XFVZpCFghUHcKVj0GQUw/302/public/publikacje/v21-4-2019/70.pdf ; Validity and reliability of kinematic methods for bike fitting – https://lida.sport-iat.de/bdr/Record/4032256?lng=en",
+    "Bini RR, Priego-Quesada JI. Effects of bicycle saddle height on knee injury risk and cycling performance (systematic review, 2022) – https://paulogentil.com/pdf/Effects%20of%20Bicycle%20Saddle%20Height%20on%20Knee%20Injury%20Risk%20and%20Cycling%20Performance.pdf ; Bini et al. Patellofemoral and tibiofemoral forces: effects of saddle height (2012) – https://lida.sport-iat.de/ta/Record/4031611?lng=en",
+    "Reiser RF, McMurtrey. Upright and recumbent cycling are two different skills (EMG) – https://coachsci.sdsu.edu/csa/vol133/reiser.htm",
+    "Electromyographic analysis of pedaling: a review. J Electromyogr Kinesiol 2009 – https://pubmed.ncbi.nlm.nih.gov/18093842/",
+    "Gillen JB, et al. Twelve weeks of sprint interval training vs moderate continuous training. PLoS ONE 2016 – https://doaj.org/article/0d8f38860885479c87ee1ba61460002b",
+    "Exercise prescription in individuals with prehypertension and hypertension: systematic review and meta-analysis (2024) – https://pmc.ncbi.nlm.nih.gov/articles/PMC11264040",
+    "Effects of exercise interventions for type 2 diabetes: meta-analysis of RCTs – https://banglajol.info/index.php/BJMS/article/view/85382 ; ADA/ACSM guidance summary (foot ulcers, weight-bearing) – https://www.patientcareonline.com/view/exercise-guidelines-patients-diabetes",
+    "ACOG exercise in pregnancy recommendations (MDedge report) – https://mdedge.com/content/new-acog-recommendations-encourage-exercise-during-pregnancy ; MotherToBaby. Exercise in pregnancy – https://mothertobaby.org/fact-sheets/exercise-pregnancy/",
+    "Manchester University NHS FT. Returning to exercise in the postnatal period – https://mft.nhs.uk/app/uploads/sites/4/2022/08/Returning-to-exercise-postnatal-period.pdf ; Aneurin Bevan UHB pelvic health physiotherapy, returning to exercise – https://abuhb.nhs.wales/files/physiotherapy/pelvic-health-physiotherapy-in-postnatal-care-returning-to-exercise-pdf/ ; WA Health. Exercising safely after pregnancy – https://fsfhg.health.wa.gov.au/Our-services/Maternity/Caring-for-you-after-birth/Physiotherapy-after-pregnancy/Exercising-safely-after-pregnancy",
+    "American Thoracic Society 2013 EIB guideline summary – https://hfhpulm.com/pfts/docs/ATS%202013%20Exercise%20Induced%20Bronchoconstriction%20Summary%202019-10-30.pdf ; Effect of warm-up exercise on exercise-induced bronchoconstriction (systematic review) – https://pubmed.ncbi.nlm.nih.gov/21811185/",
+    "Cycling and bone mass – https://pmc.ncbi.nlm.nih.gov/articles/PMC3554602 ; National Osteoporosis Society advice via BikeRadar – https://bikeradar.com/advice/fitness-and-training/health-bad-to-the-bone",
+    "Lumbar flexion, handlebar height and low back pain in cyclists – https://pmc.ncbi.nlm.nih.gov/articles/PMC5315261 ; systematic review on lumbar flexion and pain – https://sic.vriic.usach.cl/handle/123456789/28493",
+    "National Lipid Association. Physical activity and lipid disorders (2014) – https://www.lipid.org/node/1400 ; Exercise-based cardiac rehabilitation and lipids meta-analysis (2021) – https://pmc.ncbi.nlm.nih.gov/articles/PMC7867312",
+    "PCOS: cycle-ergometer aerobic training trial registration NCT02105428 – https://clinicaltrials.gov/study/NCT02105428 ; aerobic exercise and insulin resistance in PCOS – https://pmc.ncbi.nlm.nih.gov/articles/PMC3115385",
+    "WebMD. Exercises for an underactive thyroid – https://www.webmd.com/women/features/exercises-underactive-thyroid",
+    "Guess MK, et al. Women's bike seats: a pressing matter for competitive female cyclists (saddle pressure) – https://stacks.cdc.gov/view/cdc/192721",
+    "Knee replacement rehab and bikes – https://www.ptprogress.com/benefits-of-rowing/ ; London Health Sciences Centre TKR protocol – https://www.lhsc.on.ca/media/2246/download",
+    "TRUE 400 Recumbent spec sheet (max user weight 181 kg, walk-through) – https://truefitness.com/product/400-recumbent-bike/ ; SportsArt C535R – https://tigermedical.com/products/c535r-foundation-recumbent-cycle-spac535r.oembed ; Life Fitness Platinum Club Series recumbent (26 levels, programs) – https://www.fitness-superstore.co.uk/life-fitness-platinum-club-series-recumbent-cycle-with-engage-console.html ; Life Fitness RS1 (20 levels, 13 programs) – https://JohnLewis.com/life-fitness-rs1-lifecycle-recumbent-exercise-bike-go-console/p1685255",
+    "Calorie display accuracy, UCSF testing (press report) – https://www.salon.com/2015/01/27/your_exercise_equipment_is_lying_to_you/",
+    "Cadence guidance (60–80 RPM on heavy resistance; avoid below 60) – https://portal.peopleonehealth.com/HealthyLiving/Fitness/All/StationaryBikeWorkoutstoIncreaseSpeed"
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 16.7,
+      "70kg": 14.3,
+      "80kg": 12.5
+    },
+    "per300kcal": {
+      "60kg": 50,
+      "70kg": 42.9,
+      "80kg": 37.5
+    }
+  },
+  "gymAccess": [
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "cardio",
+    "low_impact",
+    "beginner",
+    "quiet",
+    "small_flat_if_bike_owned",
+    "knee_friendly",
+    "time_10_to_60_min"
+  ],
+  "swapsByAccess": {
+    "none": "Brisk marching in place or low-impact standing circuit (Home 6 low-impact jacks + Home 1 bodyweight squat), 20 min",
+    "home_equipment": "Home exercise bike if owned; otherwise step-ups (Home 12)",
+    "basic_gym": "Treadmill brisk or incline walk (Gym 5) or elliptical (Gym 6)",
+    "full_gym": "Swap upright for recumbent or vice versa; else elliptical (Gym 6) or rowing machine (Gym 8)"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "ok",
+      "change": "Moderate effort, long warm-up and cool-down, no breath-holding, no all-out sprints unless cleared; ask a doctor if uncontrolled",
+      "source": "Exercise prescription in prehypertension/hypertension meta-analysis 2024 (PMC11264040); ACSM"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "Non-weight-bearing, good with foot problems; check glucose if on insulin/sulfonylureas; check feet after",
+      "source": "ADA/ACSM joint statement; exercise and HbA1c meta-analyses"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "Get safe HR/RPE limits first; steady moderate riding; no sprints; RPE if on beta-blockers",
+      "source": "Cardiac rehabilitation studies using stationary bicycles; ACSM"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "Regular moderate riding toward 150 min/week plus strength training",
+      "source": "National Lipid Association review 2014; cardiac rehab lipid meta-analysis 2021"
+    },
+    {
+      "condition": "obesity",
+      "status": "ok",
+      "change": "Prefer recumbent or wide seat; check max user weight (often about 181 kg); start with 10-min blocks",
+      "source": "Manufacturer spec sheets (TRUE 400, SportsArt C535R); Mayo Clinic Care Network"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "Moderate aerobic riding 30+ min, 3+ days/week, plus strength work",
+      "source": "Review of aerobic exercise in PCOS; NCT02105428 (cycle ergometer trial)"
+    },
+    {
+      "condition": "thyroid",
+      "status": "modify",
+      "change": "Controlled: normal riding. Uncontrolled hyper- or hypothyroidism: easy-moderate only until treated; ask a doctor",
+      "source": "Consumer health sources only (WebMD); guideline-level source not found"
+    },
+    {
+      "condition": "asthma",
+      "status": "modify",
+      "change": "Reliever as prescribed; 10+ min gradual warm-up with a few short harder bursts",
+      "source": "ATS 2013 EIB guideline; warm-up systematic review (PubMed 21811185)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Correct seat height, low-moderate resistance at 60-90 RPM, recumbent if needed, stop if pain rises",
+      "source": "Harvard Health (217-trial analysis); Arthritis Foundation; Bini & Priego-Quesada 2022"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Prefer recumbent; on upright raise bars and hinge from hips",
+      "source": "Systematic review on lumbar flexion and cycling discomfort; handlebar height study (PMC5315261)"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "ok",
+      "change": "Light hand contact or hands-free on recumbent",
+      "source": "Not found"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "modify",
+      "change": "Good low-fall-risk cardio but does not load bone; add weight-bearing and strength work; step-through recumbent if balance poor",
+      "source": "Cycling and bone mass review (PMC3554602); osteoporosis charity advice via BikeRadar"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "modify",
+      "change": "Safe in uncomplicated pregnancy with doctor's OK; raise bars or recumbent; talk-test effort; avoid overheating",
+      "source": "ACOG (via MDedge); MotherToBaby"
+    },
+    {
+      "condition": "postpartum",
+      "status": "modify",
+      "change": "Usually from about 4-6 weeks once saddle sitting is comfortable and after postnatal check; later after caesarean or tear; stop if heaviness, leaking or pain",
+      "source": "Manchester University NHS FT and Aneurin Bevan UHB postnatal leaflets; WA Health"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Only with clearance; after knee replacement often used early with raised seat and no resistance",
+      "source": "TKR rehab protocols (LHSC; PT Progress)"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "gym",
+      "home"
+    ],
+    "bodyRegion": [
+      "lower"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "fat_loss",
+      "endurance"
+    ],
+    "intensity": "moderate",
+    "noise": "quiet",
+    "space": "machine",
+    "typicalMinutes": 20,
+    "kcalPer10min70kg": 70,
+    "difficulty1to5": 1,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Gym",
+    "Home",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Cardio",
+    "Legs",
+    "Glutes",
+    "Rep counter",
+    "20–30 min"
+  ],
+  "needsReview": [
+    "moderate intensity given as RPE 3-4/10; ACSM maps moderate to about 5–6/10 (Borg 12–13)"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-15",
+      "file": "FitPlate_Fitness_2026-10-15.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

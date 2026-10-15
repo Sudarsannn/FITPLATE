@@ -1,0 +1,84 @@
+{
+  "id": "sambar-powder",
+  "name": "Sambar powder",
+  "aliases": [
+    "sambar masala"
+  ],
+  "category": "Spice (packaged blend)",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-05",
+        "min": 585,
+        "max": 700,
+        "avg": 645,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-05.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 585,
+      "max": 700,
+      "avg": 645
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-05",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 5,
+    "platforms": [
+      "BigBasket",
+      "Mishry",
+      "StoreKing"
+    ],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
+  },
+  "per100Estimate": {
+    "min": 58.5,
+    "max": 70,
+    "avg": 64.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 340,
+    "proteinG": 14,
+    "carbsG": 45,
+    "fatG": 10,
+    "fibreG": 20
+  },
+  "storage": "Transfer to an airtight jar after opening and keep it at room temperature away from heat and steam. Use within about 3 months of opening; in humid Mumbai monsoon weather, keeping it in the fridge helps prevent lumps.",
+  "substitutes": [
+    "Rasam powder",
+    "Homemade mix (coriander powder + red chilli powder + a pinch of fenugreek, cumin and hing)",
+    "Bisi bele bath or kuzhambu powder"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 9,
+      "quantity": 5,
+      "unit": "g",
+      "raw": "5 g (1½ tsp)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-05",
+      "file": "FitPlate_Ingredients_2026-10-05.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

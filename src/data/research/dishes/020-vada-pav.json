@@ -111,14 +111,14 @@
       "householdMeasure": null
     },
     {
-      "ingredientId": null,
+      "ingredientId": "gram-flour",
       "name": "Gram flour (besan)",
       "quantity": 30,
       "unit": "g",
       "householdMeasure": "3½ tbsp (about ¼ cup)"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "rice-flour",
       "name": "Rice flour (chawal ka atta)",
       "quantity": 3,
       "unit": "g",
@@ -139,7 +139,7 @@
       "householdMeasure": "1 tiny pinch"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "baking-soda",
       "name": "Baking soda (meetha soda)",
       "quantity": 0.2,
       "unit": "g",
@@ -216,7 +216,7 @@
       "householdMeasure": null
     },
     {
-      "ingredientId": null,
+      "ingredientId": "desiccated-coconut",
       "name": "Desiccated coconut (sukha khobra/nariyal)",
       "quantity": 5,
       "unit": "g",
@@ -265,7 +265,7 @@
       "householdMeasure": null
     },
     {
-      "ingredientId": null,
+      "ingredientId": "pav",
       "name": "Pav (ladi pav, soft bread rolls)",
       "quantity": 2,
       "unit": null,
@@ -677,7 +677,15 @@
     "change30dPct": null,
     "lastObserved": "2026-10-07",
     "stale": false,
-    "seasonal": false
+    "seasonal": false,
+    "listingCount": 4,
+    "platforms": [
+      "magicpin",
+      "Zomato"
+    ],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
   },
   "healthiness": {
     "score": 4,

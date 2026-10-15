@@ -1,0 +1,692 @@
+{
+  "id": "adho-mukha-svanasana",
+  "number": 4,
+  "name": "Adho Mukha Svanasana (Downward Dog)",
+  "otherNames": [
+    "Downward-Facing Dog",
+    "Downward Dog",
+    "Down Dog",
+    "Parvatasana (Mountain Pose, Surya Namaskar step 5)",
+    "Bhudharasana",
+    "Inverted V"
+  ],
+  "section": "yoga_stretch",
+  "type": "yoga_asana",
+  "equipment": [
+    "yoga mat (recommended, non-slip)",
+    "yoga blocks or thick books (optional)",
+    "wall or sturdy chair for easier versions (optional)"
+  ],
+  "noEquipmentAlternative": "Half Dog at the wall: hands on a wall at hip-to-chest height, walk the feet back and hinge at the hips",
+  "musclesPrimary": [
+    "hamstrings (stretched)",
+    "gastrocnemius and soleus (stretched)",
+    "deltoids (working)",
+    "triceps brachii (working)",
+    "serratus anterior (working)"
+  ],
+  "musclesSecondary": [
+    "latissimus dorsi (lengthened)",
+    "lower trapezius",
+    "erector spinae",
+    "transversus abdominis",
+    "rectus abdominis",
+    "quadriceps",
+    "forearm and hand muscles"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 2.3,
+  "compendiumCode": "02150",
+  "metOptions": [
+    {
+      "code": "02150",
+      "met": 2.3,
+      "activity": "MET: 2.3, from the 2024 Adult Compendium of Physical Activities, code 02150, \"Yoga, Hatha\" (closest match; there is no pose-specific code, so used as an estimate for time spent in this pose, est.). Wh"
+    },
+    {
+      "code": "02180",
+      "met": 3.5,
+      "activity": "MET: 2.3, from the 2024 Adult Compendium of Physical Activities, code 02150, \"Yoga, Hatha\" (closest match; there is no pose-specific code, so used as an estimate for time spent in this pose, est.). Wh"
+    },
+    {
+      "code": "02160",
+      "met": 4,
+      "activity": "MET: 2.3, from the 2024 Adult Compendium of Physical Activities, code 02150, \"Yoga, Hatha\" (closest match; there is no pose-specific code, so used as an estimate for time spent in this pose, est.). Wh"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "flexibility",
+      "sets": 3,
+      "reps": "5 breaths (~30 s) hold, bent knees",
+      "timeSec": 30,
+      "restSec": 25,
+      "tempo": "slow entry, static hold, nasal breathing",
+      "perWeek": 5
+    },
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "20-30 s hold, wall or blocks",
+      "timeSec": 30,
+      "restSec": 30,
+      "tempo": "static hold",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "relaxation",
+      "sets": 3,
+      "reps": "2-3 breaths per Surya Namaskar round, 3-6 rounds",
+      "timeSec": null,
+      "restSec": null,
+      "tempo": "flow with breath",
+      "perWeek": 5
+    },
+    {
+      "level": "intermediate",
+      "goal": "flexibility",
+      "sets": 3,
+      "reps": "45-60 s hold, legs straighter",
+      "timeSec": 60,
+      "restSec": 20,
+      "tempo": "static hold",
+      "perWeek": 7
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "6-8 slow dog-to-plank transitions",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "3 s each way",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "flexibility",
+      "sets": 2,
+      "reps": "1-3 min hold",
+      "timeSec": 120,
+      "restSec": 30,
+      "tempo": "static hold",
+      "perWeek": 7
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": 3,
+      "reps": "30-45 s per side three-legged dog or dolphin",
+      "timeSec": 45,
+      "restSec": 60,
+      "tempo": "static hold",
+      "perWeek": 3
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "hold_timer",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "hold",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": "40-110",
+        "parsed": {
+          "op": "between",
+          "value": 40,
+          "max": 110
+        }
+      },
+      {
+        "name": "hold",
+        "joint": "elbow",
+        "angleDeg": ">= 155",
+        "parsed": {
+          "op": ">=",
+          "value": 155,
+          "max": null
+        }
+      },
+      {
+        "name": "hold",
+        "joint": "shoulder (hip-shoulder-wrist)",
+        "angleDeg": ">= 140",
+        "parsed": {
+          "op": ">=",
+          "value": 140,
+          "max": null
+        }
+      },
+      {
+        "name": "hold",
+        "joint": "hip_height",
+        "angleDeg": "hip above shoulders and ankles",
+        "parsed": null
+      }
+    ],
+    "minRepSec": 5
+  },
+  "formChecks": [
+    {
+      "joint": "hip",
+      "rule": "hip angle > 120 deg (hips too low)",
+      "message": "Lift your hips up and back"
+    },
+    {
+      "joint": "spine",
+      "rule": "back rounded / hip angle < 40 deg with straight knees",
+      "message": "Bend your knees and lengthen your back"
+    },
+    {
+      "joint": "head",
+      "rule": "nose above shoulder line by > 10 cm",
+      "message": "Let your head hang between your arms"
+    },
+    {
+      "joint": "elbow",
+      "rule": "elbow angle < 155 deg",
+      "message": "Straighten your arms and push the floor away"
+    },
+    {
+      "joint": "stance",
+      "rule": "wrist-to-ankle distance < 1.1 x torso length",
+      "message": "Step your feet back a little"
+    },
+    {
+      "joint": "time",
+      "rule": "beginner hold > 60 s",
+      "message": "Come down to Child's Pose and rest"
+    }
+  ],
+  "safetyFlags": [
+    "glaucoma_or_retinal_condition",
+    "recent_eye_surgery",
+    "uncontrolled_high_blood_pressure",
+    "heart_disease_ask_doctor",
+    "wrist_pain_or_carpal_tunnel",
+    "shoulder_injury_or_dislocation",
+    "low_back_pain_bend_knees",
+    "osteoporosis_keep_spine_neutral",
+    "pregnancy_modify_consult_provider",
+    "recent_surgery",
+    "dizziness_rise_slowly"
+  ],
+  "progressions": [
+    "Full dog with straight legs, heels toward floor, 1-3 min hold",
+    "Three-legged dog (Eka Pada Adho Mukha Svanasana)",
+    "Dog-to-plank flows or Dolphin pose"
+  ],
+  "regressions": [
+    "Half Dog at the wall",
+    "Chair or table dog",
+    "Extended Puppy pose or bent-knee dog with hands on blocks"
+  ],
+  "videoShots": [
+    {
+      "seconds": 6,
+      "angle": "high front, 1.5 m, hands only",
+      "shows": "spreading fingers and pressing knuckles",
+      "textOverlay": "Spread fingers. Press knuckles down."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 3 m, hip height",
+      "shows": "table to bent-knee dog, hips up and back",
+      "textOverlay": "Breathe out. Hips up and back."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 3 m",
+      "shows": "bent-knee dog with long flat back",
+      "textOverlay": "Bend your knees. Long back first."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, split screen",
+      "shows": "wrong (rounded back, head lifted) vs right",
+      "textOverlay": "Don't round. Don't look forward."
+    },
+    {
+      "seconds": 6,
+      "angle": "front, 2 m, mat height",
+      "shows": "shoulders away from ears, head hanging",
+      "textOverlay": "Shoulders away from ears"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 3 m",
+      "shows": "straightening legs, heels sinking",
+      "textOverlay": "Heels don't need to touch"
+    },
+    {
+      "seconds": 8,
+      "angle": "three-quarter front, 2.5 m",
+      "shows": "wall Half Dog in office clothes",
+      "textOverlay": "Desk version: hands on the wall"
+    },
+    {
+      "seconds": 6,
+      "angle": "side, 3 m",
+      "shows": "knees down, Child's Pose, slow roll up",
+      "textOverlay": "Rest, then rise slowly"
+    }
+  ],
+  "lastResearched": "2026-10-15",
+  "setupSteps": [
+    "Lay the mat lengthwise on a non-slip floor. On tiles without a mat, hands and feet can slide; use a rubber mat or do the wall version.",
+    "Come onto hands and knees (table pose). Hands under the shoulders or slightly ahead of them (Yoga Journal says slightly forward; Mayo/Healthwise-style sources say under the shoulders). Knees under the hips.",
+    "Set the hands shoulder-width apart with the wrist creases parallel to the front edge of the mat (Art of Living, Yoga International via search). Middle fingers point forward, or turn the hands out slightly if your wrists complain.",
+    "Spread the fingers wide. Press the whole palm down, especially the base of the index finger and thumb, so the weight is not all on the heel of the hand (Queensland Health; Yoga Journal).",
+    "Set the feet hip-width apart, parallel, toes pointing forward (Art of Living).",
+    "Tuck the toes under so the balls of the feet grip the mat.",
+    "Check the length: when you lift up, your hands and feet should be roughly one body-length-minus-legs apart. A common error is a stance that is too short (Donna Farhi, via search). Start with the plank-to-dog distance (step 1 of section 4 shows a check).",
+    "Stand facing a wall, about one arm-length away.",
+    "Place the palms flat on the wall at about hip to chest height, shoulder-width apart.",
+    "Walk the feet back until the arms are straight, feet under the hips, hip-width apart.",
+    "Use a sturdy chair pushed against a wall (so it cannot slide), or a heavy table edge.",
+    "Hands on the seat or table edge, shoulder-width apart; walk the feet back."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Set the hands and toes",
+      "action": "from table pose, spread the fingers and press the palms down; tuck the toes.",
+      "feel": "weight spread across the palms and finger pads, not only on the wrists.",
+      "breathing": "breathe in.",
+      "tempo": "2–3 seconds.",
+      "visualCheck": "side view, shoulders roughly over or slightly behind the wrists; front view, hands shoulder-width, fingers spread."
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Lift the knees, keeping them bent",
+      "action": "breathe out and lift the knees off the floor. Keep them clearly bent and the heels high (Yoga Journal: exhale, lift knees; keep knees bent at first).",
+      "feel": "the arms take the weight; the thighs start working.",
+      "breathing": "breathe out.",
+      "tempo": "2–3 seconds.",
+      "visualCheck": "side view, hips rising, back long, knees still bent."
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Send the hips up and back",
+      "action": "push the floor away with the hands and send the hips (sitting bones) up and back toward the wall behind you, making an upside-down V.",
+      "feel": "a long spine from hands to hips; a stretch beginning behind the knees.",
+      "breathing": "continue breathing out.",
+      "tempo": "2–3 seconds.",
+      "visualCheck": "side view, hips are the highest point; the line from wrists to hips is straight."
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Lengthen the back first (bent knees are fine)",
+      "action": "keep the knees bent as much as needed so the low back stays long and not rounded. Lift the sitting bones toward the ceiling (Yoga Journal cue).",
+      "feel": "length along the whole back; mild pull in the hamstrings.",
+      "breathing": "slow nasal breathing.",
+      "tempo": "2–3 breaths.",
+      "visualCheck": "side view, back flat or slightly arched in the low back, not humped. The Queensland guide notes that a long spine matters more than heels on the floor."
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Set the arms and shoulders",
+      "action": "straighten the elbows (do not lock them hard), firm the outer upper arms, and widen the shoulder blades away from each other (Art of Living, Yoga Journal). Let the shoulders move away from the ears.",
+      "feel": "the arms and the sides of the rib cage working; no pinching on top of the shoulders.",
+      "breathing": "breathe evenly.",
+      "tempo": "2 breaths.",
+      "visualCheck": "side view, ears level with the upper arms (not hanging below them); front view, elbow creases facing roughly toward each other, elbows not bowing out."
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Relax the head and neck",
+      "action": "let the head hang naturally between the upper arms; gaze toward the knees, navel or between the feet (Art of Living: toward the navel; NIOS: head toward the knees).",
+      "feel": "neck soft, no strain at the back of the neck.",
+      "breathing": "continue.",
+      "tempo": "in place.",
+      "visualCheck": "side view, neck in line with the spine; the head is not lifted to look forward and not jammed down."
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Optional: work the legs straighter",
+      "action": "slowly straighten the knees as far as the back stays long, and let the heels move toward the floor. Heels do not need to touch.",
+      "feel": "a stronger stretch in the hamstrings and calves, never sharp behind the knee.",
+      "breathing": "breathe out as you straighten.",
+      "tempo": "3–4 seconds.",
+      "visualCheck": "side view, if the low back starts to round, bend the knees again."
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Hold",
+      "action": "stay still, keeping the long back, active arms and relaxed neck.",
+      "feel": "steady, moderate stretch (about 4–6 out of 10, est.) and steady work in the shoulders.",
+      "breathing": "slow, deep nasal breathing (Art of Living); never hold the breath.",
+      "tempo": "5 breaths (about 30 seconds) for beginners; see section 7.",
+      "visualCheck": "no shaking in the elbows, no sagging in the shoulders, no humped low back."
+    },
+    {
+      "n": 9,
+      "part": null,
+      "title": "Come down",
+      "action": "breathe out, bend the knees and lower them to the mat, back to table pose; then sit back into Balasana (Child's Pose).",
+      "feel": "wrists and shoulders unload.",
+      "breathing": "breathe out.",
+      "tempo": "3 seconds.",
+      "visualCheck": "knees land softly, no thud."
+    },
+    {
+      "n": 10,
+      "part": null,
+      "title": "Recover upright slowly",
+      "action": "after Child's Pose, roll up slowly to sitting or kneeling before standing.",
+      "feel": "no dizziness. If light-headed, stay seated.",
+      "breathing": "normal breathing.",
+      "tempo": "5–10 seconds.",
+      "visualCheck": "head comes up last."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Rounding the back to get the heels down",
+      "text": "Rounding the back to get the heels down. The hamstrings pull the pelvis under and the spine rounds, which loads the low back and loses the shape. Fix: bend the knees and lift the sitting bones; heels can stay up (Yoga Journal beginner tip; Queensland Health)."
+    },
+    {
+      "title": "Weight dumped into the wrists",
+      "text": "Weight dumped into the wrists. Weight in the heel of the hand irritates wrists, especially for desk workers. Fix: spread fingers, press the knuckles and the base of the index finger; turn hands out slightly; use blocks or the wall version if wrists still hurt."
+    },
+    {
+      "title": "Shrugging or sagging shoulders",
+      "text": "Shrugging or sagging shoulders. Shrugging compresses the neck; sagging the chest toward the floor puts the shoulder at the end of its range with little muscle support. Fix: push the floor away, widen the shoulder blades, keep the ears in line with the upper arms."
+    },
+    {
+      "title": "Stance too short",
+      "text": "Stance too short. Feet too close to the hands crowds the shoulders and rounds the back (Donna Farhi). Fix: start from plank and push the hips back, keeping the hands and feet where they are."
+    },
+    {
+      "title": "Lifting the head to look forward",
+      "text": "Lifting the head to look forward. Strains the back of the neck. Fix: let the head hang, gaze at the knees."
+    },
+    {
+      "title": "Locking or hyperextending the elbows and knees",
+      "text": "Locking or hyperextending the elbows and knees. Puts stress on the joint rather than the muscles. Fix: a micro-bend in both."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. Raises tension and blood pressure during an already head-down pose. Fix: slow nasal breathing; come down if you cannot breathe easily."
+    },
+    {
+      "title": "Standing up too fast afterwards",
+      "text": "Standing up too fast afterwards. Can cause light-headedness after a head-down position. Fix: rest in Child's Pose and roll up slowly."
+    }
+  ],
+  "safetyNotes": [
+    "Eye conditions (glaucoma, detached retina, weak eye blood vessels, recent eye surgery): Downward Dog raised eye pressure more than any other pose tested (about 10 mmHg) in the Jasien/Ritch 2016 PLOS ONE pilot study; the American Academy of Ophthalmology advises people with glaucoma to get their doctor's OK before head-below-heart poses and to modify or substitute them. Art of Living lists detached retina and weak eye capillaries as contraindications. Use the wall version (head level with the heart).",
+    "High blood pressure: a small 2004 study (8 women) found blood pressure rose during the pose. Harvard Health says Downward Dog is generally fine for people with well-controlled high blood pressure, while full inversions are probably not. Yoga Journal and Art of Living say to avoid it with high blood pressure. Our choice: avoid if uncontrolled; if controlled, short holds, keep breathing, or use the wall version, and check with your doctor.",
+    "Heart disease: an NHS cardiac rehabilitation yoga guide (Cambridge University Hospitals) advises avoiding inversions and breath-holding. Ask your cardiologist; use the wall version.",
+    "Wrists (carpal tunnel, wrist injury, arthritis): Art of Living and Lessons.com list carpal tunnel and wrist injury as reasons to avoid. Modify with wall/chair, fists or wedge, or Dolphin on the forearms.",
+    "Shoulders (impingement, rotator cuff, dislocation history): listed as a contraindication by Art of Living. Use the wall version, keep the hands wider and turn the upper arms outward, and stop at any pinch.",
+    "Low back pain: bend the knees so the back stays long; stop if pain increases.",
+    "Pregnancy: ACOG advises avoiding yoga positions that reduce blood return and cause low blood pressure, and avoiding hot yoga. A small study at 35–37 weeks found Downward Dog caused no problems, but it was preliminary. Keep holds short, feet wider, and come up slowly; ask your provider.",
+    "Recent surgery: wait for clearance. After eye surgery (e.g. cataract), clinics advise avoiding head-below-waist positions and yoga for roughly 1–2 weeks, or until the surgeon clears you.",
+    "Other: acid reflux/heartburn, sinus congestion, ear problems or vertigo may worsen head-down (general yoga teaching; not verified by a medical source). Art of Living also lists diarrhoea.",
+    "Stop immediately if you feel: dizziness or light-headedness; pressure or pain in the eyes or head; blurred vision; chest pain or a racing heart; sharp wrist or shoulder pain; numbness or tingling in the hands; sharp pain behind the knee.",
+    "Spotter: not needed.",
+    "Gym etiquette: use the stretching zone, wipe the mat afterwards, keep your feet out of walkways."
+  ],
+  "sources": [
+    "Ministry of AYUSH / MDNIY, Common Yoga Protocol 2023 (checked; Adho Mukha Svanasana not included): https://yogamdniy.nic.in/files/pdf/CYP-2023-English.pdf ; MEA CYP booklet (2016): https://mea.gov.in/images/attach/Booklet_english_2016.pdf ; CYP 2022 (Sanskrit.nic.in): https://www.sanskrit.nic.in/uploads/CYP_2022/English.pdf",
+    "NIOS Yoga practical, Surya Namaskar (step 5 Parvatasana/Bhudharasana/Adhomukha Svanasana): https://digital.nios.ac.in/content/373en/Pract/24.pdf",
+    "Art of Living, Adho Mukha Svanasana: https://www.artofliving.org/au-en/adho-mukha-svanasana ; https://www.artofliving.org/in-en/yoga/yoga-poses/downward-facing-dog-pose",
+    "Sri Sri School of Yoga, Why Downward Dog is the foundation of a resilient practice: https://srisrischoolofyoga.org/in/why-downward-dog-is-the-foundation-of-a-resilient-practice/",
+    "Asivana Yoga, Svana and Adho meanings: https://asivanayoga.com/blogs/sanskrit/svana ; https://asivanayoga.com/blogs/sanskrit/adho",
+    "Yoga Journal, Downward-Facing Dog: https://www.yogajournal.com/poses/downward-facing-dog ; Yoga Journal instructions reproduced on Patch: https://patch.com/maryland/gaithersburg/bp--learn-yoga-downward-facing-dog",
+    "ACE Exercise Library, Downward-facing Dog: https://www.acefitness.org/resources/everyone/exercise-library/18/downward-facing-dog/",
+    "Mayo Clinic Care Network, Downward-facing dog (video): https://mymlc.com/health-information/videos/lifestyle/stress-management/stress-relief/downward-facing-dog",
+    "Queensland Health (Health and Wellbeing Queensland), Downward Dog: https://hw.qld.gov.au/physical-activity/downward-dog/",
+    "Harvard Health, Yoga and high blood pressure: https://www.health.harvard.edu/heart-health/yoga-and-high-blood-pressure",
+    "Blood pressure response in yoga poses (AAHPERD 2004 abstract): https://aahperd.confex.com/aahperd/2004/finalprogram/paper_4833.htm",
+    "Mount Sinai / Jasien et al., Yoga positions and glaucoma (PLOS ONE): https://www.mountsinai.org/about/newsroom/2016/yoga-positions-and-glaucoma",
+    "American Academy of Ophthalmology, inverted yoga positions and glaucoma: https://www.aao.org/eye-health/ask-ophthalmologist-q/glaucoma-yoga-positions ; Glaucoma and exercise (EyeNet): https://aao.org/eyenet/article/glaucoma-and-exercise",
+    "Cambridge University Hospitals NHS, Yoga: a guide for cardiac rehabilitation patients: https://cuh.nhs.uk/patient-information/yoga-a-guide-for-cardiac-rehabilitation-patients",
+    "Ni M et al. (2014), Core muscle function during specific yoga poses: https://scholarship.miami.edu/esploro/outputs/journalArticle/Core-muscle-function-during-specific-yoga/991031576452002976",
+    "The Physiological Society, Motor control in yoga (expertise and muscle engagement): https://www.physoc.org/?p=118916",
+    "YogaUOnline / Ray Long, Stabilizing the shoulders in Downward Dog: https://yogauonline.com/yoga-practice-teaching-tips/yoga-anatomy/dr-ray-long-stabilizing-the-shoulders-in-downward-dog-and-upward-hands-pose/",
+    "Hamstring flexibility after 8 weeks of yoga in rugby players (Int J Yoga 2021): https://pubmed.ncbi.nlm.nih.gov/33840979/",
+    "Herrmann SD et al. (2024), 2024 Adult Compendium of Physical Activities: https://pmc.ncbi.nlm.nih.gov/articles/PMC10818145/ ; Compendium tracking guide (codes 02150, 02160, 02170, 02180): https://pacompendium.com/wp-content/uploads/2025/02/4_2024_adult-compendium-tracking-guide-1-2024.pdf ; https://pacompendium.com/conditioning-exercise/",
+    "ACSM, Stretching and flexibility guidelines update: https://www.acsm.org/blog-detail/acsm-certified-blog/2021/03/18/stretching-and-flexibility-guidelines-update",
+    "ACOG exercise in pregnancy (secondary summaries): https://www.ideafit.com/pregnant-women-and-yoga ; https://journals.assaf.org.za/index.php/sajsm/article/view/519/396",
+    "Lancaster General Health, Exercising after giving birth: https://lancastergeneralhealth.org/health-hub-home/motherhood/fitness-and-nutrition/when-is-it-safe-to-start-exercising-after-giving-birth",
+    "Mayo Clinic study on yoga and spinal flexion in osteoporosis (Newswise): https://www.newswise.com/articles/ople-with-osteoporosis-should-avoid-certain-spinal-poses-in-yoga-mayo-clinic-study-says ; Fishman 12-pose study coverage: https://www.nextavenue.org/yoga-for-osteoporosis/",
+    "Sherman KJ et al. (2005) yoga for chronic low back pain (KP Washington): https://kpwashingtonresearch.org/news-and-events/recent-news/news-2005/yoga-more-effective-conventional-exercise-low-back-pain-group-health-study-finds",
+    "NHS Scotland, Shoulder impingement leaflet: https://rightdecisions.scot.nhs.uk/patient-information-leaflets/primary-community-services/physiotherapy/shoulder-impingement-rotator-cuff-injury-and-inflammation",
+    "Cochrane, Yoga may have health benefits for people with asthma (Yang et al. 2016): https://www.cochrane.org/news/yoga-may-have-health-benefits-people-asthma",
+    "ADA 2016 physical activity recommendations (AJMC): https://www.ajmc.com/newsroom/american-diabetes-association-issues-recommendations-for-physical-activity-exercise",
+    "Nidhi R et al., yoga for PCOS in adolescents (RCT): https://elibraryofyoga.com/items/99d1c3c8-bf67-4f45-8141-bfdad04a40fb/full",
+    "Moorfields Private (NHS), Getting back to your routine after cataract surgery: https://moorfields.nhs.uk/private/about-moorfields-private/blog-articles/getting-back-to-your-routine-after-cataract-surgery ; London Vision Clinic: https://londonvisionclinic.com/how-long-after-cataract-surgery-can-you-bend-down/",
+    "Lessons.com, Downward Dog Pose (hold times, contraindications): https://lessons.com/yoga-poses/downward-dog-pose ; University of Illinois Extension, Downward dog stretch: https://eat-move-save.extension.illinois.edu/move/exercise/downward-dog-stretch",
+    "Donna Farhi, Downward facing dog: https://donnafarhi.co.nz/downward-facing-dog/",
+    "High blood pressure: Yoga Journal and Art of Living say avoid; Harvard Health says generally fine if well controlled. We chose: avoid if uncontrolled, short holds or wall version if controlled, with a doctor check.",
+    "Hold time: 30 s (Lessons.com beginner) to 1–3 min (Yoga Journal). We chose 5 breaths (~30 s) × 2–3 for beginners, 1–3 min for advanced.",
+    "Hand position: \"slightly ahead of the shoulders\" (Yoga Journal) vs \"under the shoulders\" (Mayo/Queensland, table pose start). We start with hands under or slightly ahead and adjust the stance length from plank.",
+    "Straight vs bent legs: The Prehab Guys favour straight legs and locked elbows; ACE and Yoga Journal allow bent knees. We chose bent knees for beginners and a micro-bend in elbows (no locking), because a long spine matters more than straight legs.",
+    "Gaze: navel (Art of Living), knees (NIOS), floor (Mayo). We allow knees or navel with the neck relaxed.",
+    "Name and Indian context: not in the AYUSH Common Yoga Protocol; taught in India mainly as Parvatasana within Surya Namaskar (NIOS). Some Surya Namaskar versions use a stick/plank pose at step 5 instead."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 43,
+      "70kg": 37,
+      "80kg": 33
+    },
+    "per300kcal": {
+      "60kg": 130,
+      "70kg": 112,
+      "80kg": 98
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "yoga",
+    "mobility",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "small_flat",
+    "quiet",
+    "5_10_min",
+    "cool_down",
+    "warm_up",
+    "morning"
+  ],
+  "swapsByAccess": {
+    "none": "Half Dog at the wall",
+    "home_equipment": "Chair or table dog; supine band hamstring stretch",
+    "basic_gym": "Half Dog holding a bench or rack upright; step calf stretch",
+    "full_gym": "Half Dog holding a squat-rack or cable upright; seated hamstring stretch"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "ask_doctor",
+      "change": "Controlled: short holds, keep breathing, rise slowly; uncontrolled: avoid and use wall Half Dog",
+      "source": "Harvard Health; Yoga Journal; Art of Living; AAHPERD 2004 study"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "Fine; with diabetic retinopathy avoid head-down and use wall version (est.)",
+      "source": "ADA 2016 position statement; AAO inversion advice (by analogy)"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "Avoid inversions and breath-holding unless cleared; wall Half Dog",
+      "source": "Cambridge University Hospitals NHS cardiac rehab yoga guide"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "No pose-specific change (source not found)",
+      "source": "Not found"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Start with wall or chair dog, short holds, feet wider (est.)",
+      "source": "Not found (pose-specific)"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "No change; part of Surya Namaskar-based programmes",
+      "source": "Nidhi et al. SVYASA RCT"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "No pose-specific caution found; ask doctor if thyroid eye disease or fast heart rate (est.)",
+      "source": "Not found (pose-specific)"
+    },
+    {
+      "condition": "asthma",
+      "status": "modify",
+      "change": "Breathe slowly, come down if breathless, inhaler nearby",
+      "source": "Cochrane review Yang et al. 2016"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Bend knees, do not lock; pad knees in table pose",
+      "source": "ACE exercise library; pose-specific Not found"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Bend knees so spine stays long; stop if pain increases",
+      "source": "Yoga Journal; Sherman et al. 2005"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "modify",
+      "change": "Wall Half Dog, hands wider, arms rotated out; avoid with recent dislocation or painful impingement",
+      "source": "Art of Living; NHS Scotland impingement leaflet"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "modify",
+      "change": "Keep spine neutral with bent knees; avoid rounding under load",
+      "source": "Mayo Clinic Proceedings study (via Newswise)"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "modify",
+      "change": "Short holds, feet wider, rise slowly; stop if dizzy; ask provider",
+      "source": "ACOG Committee Opinion 650 (secondary sources)"
+    },
+    {
+      "condition": "postpartum",
+      "status": "ask_doctor",
+      "change": "Restart gently when ready; check with pelvic-health physio if diastasis recti or C-section",
+      "source": "ACOG via Lancaster General Health; pose-specific Not found"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "avoid",
+      "change": "Wait for clearance; after eye surgery avoid head-below-waist ~1-2 weeks",
+      "source": "Moorfields Private (NHS); London Vision Clinic"
+    },
+    {
+      "condition": "other",
+      "status": "avoid",
+      "change": "Glaucoma or retinal conditions: avoid or get doctor's OK; use wall Half Dog",
+      "source": "Jasien et al. PLOS ONE; American Academy of Ophthalmology"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "home",
+      "gym",
+      "office_desk"
+    ],
+    "bodyRegion": [
+      "full_body",
+      "upper",
+      "lower"
+    ],
+    "goalTags": [
+      "flexibility",
+      "general_fitness",
+      "relaxation"
+    ],
+    "intensity": "light",
+    "noise": "quiet",
+    "space": "mat_only",
+    "typicalMinutes": 3,
+    "kcalPer10min70kg": 27,
+    "difficulty1to5": 2,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Yoga & stretch",
+    "Home",
+    "Gym",
+    "Office desk",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Yoga",
+    "Legs",
+    "Shoulders",
+    "Arms",
+    "Hold timer",
+    "Under 10 min"
+  ],
+  "needsReview": [
+    "rep_counter phase \"hold\" (hip_height): angle \"hip above shoulders and ankles\" is not a parseable angle"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-15",
+      "file": "FitPlate_Fitness_2026-10-15.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

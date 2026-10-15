@@ -125,14 +125,14 @@
       "householdMeasure": "a small marble-sized piece (about 1/2 tsp packed)"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "sambar-powder",
       "name": "Sambar powder",
       "quantity": 5,
       "unit": "g",
       "householdMeasure": "1 1/2 tsp"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "jaggery-block-powder",
       "name": "Jaggery (gud), optional",
       "quantity": 2,
       "unit": "g",
@@ -559,7 +559,16 @@
     "change30dPct": null,
     "lastObserved": "2026-10-05",
     "stale": false,
-    "seasonal": false
+    "seasonal": false,
+    "listingCount": 3,
+    "platforms": [
+      "Swiggy"
+    ],
+    "outOfStock": false,
+    "confirmed": false,
+    "checkNotes": [
+      "only 1 platform (Swiggy) backs the range"
+    ]
   },
   "healthiness": {
     "score": 7.5,
@@ -615,7 +624,9 @@
   "description": null,
   "familyId": null,
   "variants": [],
-  "needsReview": [],
+  "needsReview": [
+    "price not confirmed (2026-10-05): only 1 platform (Swiggy) backs the range"
+  ],
   "versions": [
     {
       "date": "2026-10-05",

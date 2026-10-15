@@ -1,0 +1,455 @@
+{
+  "id": "hip-flexor-stretch",
+  "number": 3,
+  "name": "Hip flexor stretch",
+  "otherNames": [
+    "Half-kneeling hip flexor stretch",
+    "Kneeling lunge stretch",
+    "Standing hip flexor stretch",
+    "Anjaneyasana (Low Lunge)",
+    "Ashwa Sanchalanasana (related Surya Namaskar pose)"
+  ],
+  "section": "yoga_stretch",
+  "type": "mobility",
+  "equipment": [
+    "yoga mat (optional)",
+    "folded towel or cushion for back knee",
+    "chair or wall for balance (optional)"
+  ],
+  "noEquipmentAlternative": "Standing hip flexor stretch in a long split stance holding a desk or wall",
+  "musclesPrimary": [
+    "iliopsoas (psoas major, iliacus)"
+  ],
+  "musclesSecondary": [
+    "rectus femoris",
+    "tensor fasciae latae",
+    "sartorius",
+    "gluteus maximus (active, to tuck pelvis)",
+    "transversus abdominis (active, bracing)"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 2.3,
+  "compendiumCode": "02101",
+  "metOptions": [
+    {
+      "code": "02101",
+      "met": 2.3,
+      "activity": "MET: 2.3, from the 2024 Adult Compendium of Physical Activities, code 02101, \"stretching, mild\". The same value was used in the 2011 edition. The search could not confirm whether the 2024 value is mea"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "flexibility",
+      "sets": 2,
+      "reps": "30 s hold per side",
+      "timeSec": 30,
+      "restSec": 15,
+      "tempo": "slow entry, static hold",
+      "perWeek": 5
+    },
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 1,
+      "reps": "30 s hold per side (standing, desk break)",
+      "timeSec": 30,
+      "restSec": 0,
+      "tempo": "static hold",
+      "perWeek": 7
+    },
+    {
+      "level": "beginner",
+      "goal": "relaxation",
+      "sets": 2,
+      "reps": "5 breaths per side (Anjaneyasana, hands on blocks)",
+      "timeSec": null,
+      "restSec": 10,
+      "tempo": "slow nasal breathing",
+      "perWeek": 5
+    },
+    {
+      "level": "intermediate",
+      "goal": "flexibility",
+      "sets": 3,
+      "reps": "30 s hold per side",
+      "timeSec": 30,
+      "restSec": 15,
+      "tempo": "slow entry, static hold",
+      "perWeek": 7
+    },
+    {
+      "level": "intermediate",
+      "goal": "relaxation",
+      "sets": 2,
+      "reps": "5-8 breaths per side (Anjaneyasana, arms up)",
+      "timeSec": null,
+      "restSec": 10,
+      "tempo": "slow nasal breathing",
+      "perWeek": 5
+    },
+    {
+      "level": "advanced",
+      "goal": "flexibility",
+      "sets": 3,
+      "reps": "45-60 s hold per side or couch stretch",
+      "timeSec": 60,
+      "restSec": 20,
+      "tempo": "slow entry, static hold",
+      "perWeek": 7
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "hold_timer",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "hold",
+        "joint": "front_knee",
+        "angleDeg": "60-110",
+        "parsed": {
+          "op": "between",
+          "value": 60,
+          "max": 110
+        }
+      },
+      {
+        "name": "hold",
+        "joint": "back_hip (shoulder-hip-knee)",
+        "angleDeg": ">= 175",
+        "parsed": {
+          "op": ">=",
+          "value": 175,
+          "max": null
+        }
+      },
+      {
+        "name": "hold",
+        "joint": "torso_vs_vertical",
+        "angleDeg": "<= 15",
+        "parsed": {
+          "op": "<=",
+          "value": 15,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 10
+  },
+  "formChecks": [
+    {
+      "joint": "torso",
+      "rule": "torso tilt forward > 20 deg",
+      "message": "Leaning forward: stack your shoulders over your hips"
+    },
+    {
+      "joint": "back_hip",
+      "rule": "shoulder-hip-knee angle < 170 deg during hold",
+      "message": "Squeeze your back glute and shift your hips forward"
+    },
+    {
+      "joint": "front_knee",
+      "rule": "front knee angle < 60 deg",
+      "message": "Move your front foot further forward"
+    },
+    {
+      "joint": "hips",
+      "rule": "pelvis rotated (front view hip width shrinks > 30%)",
+      "message": "Square your hips to the front"
+    },
+    {
+      "joint": "shoulders",
+      "rule": "shoulders elevated toward ears",
+      "message": "Relax your shoulders down"
+    }
+  ],
+  "safetyFlags": [
+    "knee_pain_kneeling",
+    "recent_hip_replacement",
+    "hip_impingement_or_labral_tear",
+    "hip_flexor_or_groin_strain",
+    "low_back_pain",
+    "high_blood_pressure_avoid_long_arms_overhead",
+    "pregnancy_use_support_consult_provider",
+    "recent_surgery",
+    "balance_problems"
+  ],
+  "progressions": [
+    "Half-kneeling with same-side arm overhead and side bend",
+    "Anjaneyasana with arms up and gentle backbend",
+    "Couch stretch (back shin against wall or sofa)"
+  ],
+  "regressions": [
+    "Standing hip flexor stretch holding desk or wall",
+    "Supine edge-of-bed hip flexor stretch",
+    "Half-kneeling with both hands on a chair and thick knee cushion"
+  ],
+  "videoShots": [
+    {
+      "seconds": 6,
+      "angle": "side, 2.5 m, hip height",
+      "shows": "padding the knee and setting up half-kneeling with front knee at 90 deg",
+      "textOverlay": "Pad the back knee. Front knee over ankle."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m, waist to knees",
+      "shows": "pelvic tuck with low back flattening",
+      "textOverlay": "Tuck your tail"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m, full body",
+      "shows": "glute squeeze and whole-body forward shift, torso upright",
+      "textOverlay": "Hips forward, chest tall"
+    },
+    {
+      "seconds": 6,
+      "angle": "front, 2.5 m",
+      "shows": "square hips and front knee over middle toes",
+      "textOverlay": "Hip bones face forward"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, split screen",
+      "shows": "wrong (arched, leaning) versus right",
+      "textOverlay": "Don't arch. Don't lean."
+    },
+    {
+      "seconds": 8,
+      "angle": "three-quarter front, 2.5 m",
+      "shows": "standing version at a desk",
+      "textOverlay": "Desk version: 30 s each side"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 3 m",
+      "shows": "Anjaneyasana with arms sweeping up",
+      "textOverlay": "Anjaneyasana: Low Lunge"
+    },
+    {
+      "seconds": 5,
+      "angle": "side, 2.5 m",
+      "shows": "coming out and switching sides",
+      "textOverlay": "Switch sides"
+    }
+  ],
+  "lastResearched": "2026-10-11",
+  "setupSteps": [
+    "Put the mat lengthwise in a clear area, near a wall, sofa arm or sturdy chair you can touch for balance.",
+    "Fold a towel in two or three layers, or use a cushion, and place it where your back knee will go. Kneeling on bare tile is uncomfortable and can irritate the kneecap.",
+    "Kneel on both knees on the padding, upright, with your knees hip-width apart (about 15 to 20 cm, est.).",
+    "Step your RIGHT foot forward so it is flat on the floor and your right knee is bent to about 90°, with the knee roughly over the ankle (University of Michigan Health/Healthwise; Yoga Journal).",
+    "Keep your LEFT knee on the padding directly under or slightly behind your left hip, with the top of your left foot or the toes on the mat, pointing straight back. Do not turn the foot out.",
+    "Set the width. Your feet should sit as if on \"train tracks\" about hip-width apart, not on a tightrope, so you can balance.",
+    "Stack your torso upright: shoulders over hips, eyes forward, hands on hips or one hand on the chair or wall.",
+    "Point the front of your pelvis forward. Both hip bones should face the front wall, level, with no twist.",
+    "Stand facing your desk or a wall and hold it lightly.",
+    "Step your LEFT foot back into a long walking stride, about 60 to 90 cm (est.). Point both feet forward.",
+    "Raise the back heel so you are on the ball of the back foot. Keep the back knee straight or only slightly bent.",
+    "Optional (NHS Wrightington, Wigan and Leigh handout): put the front foot on a stair or step and use the banister for support.",
+    "From Downward Dog or all-fours, step the right foot forward between your hands with the knee over the heel.",
+    "Lower the left knee onto padding and slide it back until you feel a gentle stretch at the front of the left thigh and groin (Yoga Journal).",
+    "Rest the fingertips on blocks, books or the floor beside the front foot to start."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Brace the trunk",
+      "action": "tighten your stomach gently, as if about to be poked, without holding your breath.",
+      "feel": "a light firmness around the waist.",
+      "breathing": "breathe out as you brace.",
+      "tempo": "2 seconds.",
+      "visualCheck": "side view, the rib cage sits over the pelvis and is not flared. Front view, the shoulders are level."
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Tuck the pelvis (backward tilt)",
+      "action": "point your tailbone down toward the floor and lift the front of the pelvis toward your belly button, as if tucking a tail between your legs. Yoga Journal uses the same cue for Anjaneyasana.",
+      "feel": "an early stretch at the very front of the LEFT hip, and maybe right away.",
+      "breathing": "breathe out.",
+      "tempo": "2 to 3 seconds.",
+      "visualCheck": "side view, the low-back curve flattens slightly and does not increase."
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Squeeze the back-leg buttock",
+      "action": "squeeze the LEFT buttock.",
+      "feel": "the front-of-hip stretch gets stronger.",
+      "breathing": "normal breathing.",
+      "tempo": "2 seconds.",
+      "visualCheck": "side view, the left thigh moves slightly behind the line of the torso."
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Shift forward",
+      "action": "move your whole body slowly forward a few centimetres, bending more at the front knee, until you feel a mild-to-moderate stretch, about 4 to 6 out of 10 (est.). Do not lean the torso forward.",
+      "feel": "a stretch at the front of the left hip and upper thigh, not in the low back and not sharp in the knee.",
+      "breathing": "breathe out as you move.",
+      "tempo": "3 to 4 seconds.",
+      "visualCheck": "side view, the torso stays upright or vertical and the hips travel forward. Front view, the pelvis stays square and the front knee tracks over the second and third toes."
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Hold",
+      "action": "stay still, keeping the tuck, brace and squeeze.",
+      "feel": "the stretch may ease a little over the hold. If it fades, shift a few millimetres further.",
+      "breathing": "slow nasal breathing, about 4 seconds in and 4 to 6 seconds out (est.).",
+      "tempo": "30 seconds (see section 7).",
+      "visualCheck": "no arching, no twisting, shoulders relaxed down."
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Optional: add the arm reach (deeper, and the start of the yoga version)",
+      "action": "raise your LEFT arm (same side as the back knee) overhead and lean very slightly to the right.",
+      "feel": "the stretch spreads up the left side of the trunk.",
+      "breathing": "breathe in as the arm rises.",
+      "tempo": "3 seconds up, then hold.",
+      "visualCheck": "the ribs do not pop forward and the low back does not arch."
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Come out",
+      "action": "lower the arm, release the buttock squeeze, and slide the hips back over the back knee.",
+      "feel": "the stretch fades.",
+      "breathing": "breathe in.",
+      "tempo": "3 seconds.",
+      "visualCheck": "the torso is still upright."
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Switch sides",
+      "action": "put a hand on the front knee or the chair, bring the front foot back to kneeling, then step the left foot forward.",
+      "feel": "steady and balanced.",
+      "breathing": "normal breathing.",
+      "tempo": "in your own time.",
+      "visualCheck": "the padding is under the new back knee."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Arching the low back instead of stretching the hip",
+      "text": "Arching the low back instead of stretching the hip. The hip flexors pull the pelvis forward, so the low back \"gives\" and the stretch is lost, and it may strain the back. Fix: tuck the tailbone and brace the stomach before shifting forward. Several sources, including ACE, Physitrack and prehab libraries, flag this."
+    },
+    {
+      "title": "Leaning the torso forward",
+      "text": "Leaning the torso forward. Bending forward over the front leg shortens the hip flexors again. Fix: keep the shoulders stacked over the hips, think \"tall\", and move the whole body forward as one unit."
+    },
+    {
+      "title": "Twisting the pelvis open",
+      "text": "Twisting the pelvis open. The back-leg hip swings backward and the stretch moves away from the target. Fix: keep both hip bones facing forward (ACE: pelvis level, no rotation). Placing a hand on each hip bone helps you feel it."
+    },
+    {
+      "title": "Back foot turned outward (standing version)",
+      "text": "Back foot turned outward (standing version). This changes which muscles stretch and lets the hip rotate. Fix: point both feet straight forward (prehab library cue)."
+    },
+    {
+      "title": "Pushing into pain",
+      "text": "Pushing into pain. Going too far triggers protective tightening and can irritate the front of the hip or the knee. Fix: aim for a mild-to-moderate pull, never a sharp pain. Every NHS trust handout reviewed says to stop if the stretch causes pain."
+    },
+    {
+      "title": "Bare knee on a hard floor",
+      "text": "Bare knee on a hard floor. Pressure on the kneecap is painful and makes people rush. Fix: use a folded towel or cushion (South Tees and Columbia/NYP handouts)."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. This raises tension and can raise blood pressure. Fix: breathe slowly through the nose throughout the hold."
+    },
+    {
+      "title": "Bouncing",
+      "text": "Bouncing. Bouncing in a static stretch is not recommended for beginners. Fix: move slowly into position and hold still."
+    }
+  ],
+  "safetyNotes": [
+    "Knee problems (pain kneeling, kneecap or meniscus issues, arthritis): pad the back knee well or use the standing version instead. Avoid deep front-knee bending if it hurts.",
+    "Hip problems: this includes recent hip replacement, hip impingement (FAI), labral tears, and groin or hip flexor strain. Get clearance from your surgeon or physio first, because hip extension and rotation limits often apply after hip replacement. Stop if you feel a pinching pain at the front of the hip.",
+    "Low back pain: keep the pelvis tucked and the stretch small. If the stretch increases back pain, stop and seek advice.",
+    "High blood pressure or heart conditions: avoid long holds with the arms overhead in Anjaneyasana. Keep your hands on your hips and keep breathing, never hold the breath.",
+    "Pregnancy: the gentle standing version with support is usually tolerated, but balance changes and ligaments loosen. One yoga source advises avoiding Anjaneyasana in pregnancy and after giving birth. Ask your antenatal care provider, avoid overstretching, and always use support.",
+    "Recent surgery (abdominal, hernia, hip, knee): wait for medical clearance.",
+    "Balance problems or dizziness: do it next to a wall or chair, or use the edge-of-bed version.",
+    "Stop immediately if you feel: sharp or stabbing pain; pins and needles, numbness or burning down the leg; pain in the kneecap; low-back pain that builds; dizziness; or a \"pop\" or clicking with pain at the front of the hip.",
+    "Spotter: not needed.",
+    "Gym etiquette: use the stretching area rather than the walkway, wipe the mat afterwards, and do not hog the space during busy hours."
+  ],
+  "sources": [
+    "ACE Exercise Library, Kneeling hip flexor stretch: https://www.acefitness.org/education-and-resources/lifestyle/exercise-library/142/kneeling-hip-flexor-stretch/",
+    "ACSM, Stretching and flexibility guidelines update (2021): https://www.acsm.org/blog-detail/acsm-certified-blog/2021/03/18/stretching-and-flexibility-guidelines-update",
+    "Harvard Health, Do you spend most of your day sitting? These hip flexor stretches are for you: https://www.health.harvard.edu/staying-healthy/do-you-spend-most-of-your-day-sitting-these-hip-flexor-stretches-are-for-you",
+    "Harvard Health, The ideal stretching routine: https://www.health.harvard.edu/staying-healthy/the-ideal-stretching-routine",
+    "University of Michigan Health (Healthwise), How to do the hip flexor stretch: https://uofmhealth.org/health-library/abo6345",
+    "Columbia/NewYork-Presbyterian (Healthwise), Hip flexor stretch (kneeling): https://www.nyp.org/healthlibrary/symptoms/document/hw208017",
+    "NHS South Tees Hospitals, Hip stretch in half kneeling: https://www.southtees.nhs.uk/resources/hip-stretch-in-half-kneeling/",
+    "NHS Wrightington, Wigan and Leigh, hip exercise handout: https://www.wwl.nhs.uk/pdfreader/accessiblePDF/cnv-wwl-68ca8bce9350b5.68959973",
+    "NHS Royal Orthopaedic Hospital, Exercises for osteoarthritis of the hip: https://roh.nhs.uk/services-information/therapy/exercises-for-osteoarthritis-of-the-hip",
+    "Physitrack, Kneeling hip flexor stretch: https://www.physitrack.com/exercise-library/how-to-perform-the-kneeling-hip-flexor-stretch-exercise",
+    "The Prehab Guys, Standing hip flexor stretch: https://library.theprehabguys.com/vimeo-video/standing-hip-flexor-stretch/",
+    "Mayo Clinic Care Network, Standing stretches for the workplace (video): https://www.mymlc.com/health-information/videos/healthy-at-work/video-standing-stretches-for-the-workplace",
+    "Winters MV et al. (2004), Passive versus active stretching of hip flexor muscles in subjects with limited hip extension: a randomized clinical trial. Phys Ther 84(9):800-807. PEDro record: https://search.pedro.org.au/search-results/record-detail/11191",
+    "Hip flexor stretch with posterior pelvic tilt, randomised crossover trial, BMC Musculoskeletal Disorders (2024): https://link.springer.com/article/10.1186/s12891-024-07988-9",
+    "Yoga Journal, Low Lunge (Anjaneyasana): https://www.yogajournal.com/poses/low-lunge",
+    "Asivana Yoga, Anjaneyasana meaning: https://asivanayoga.com/blogs/sanskrit/anjaneyasana",
+    "Ministry of AYUSH / MDNIY, Common Yoga Protocol 2023 (checked; Anjaneyasana not included): https://yogamdniy.nic.in/files/pdf/CYP-2023-English.pdf",
+    "NIOS Yoga practical, Surya Namaskar (Ashwa Sanchalanasana): https://digital.nios.ac.in/content/373en/Pract/24.pdf",
+    "Herrmann SD et al. (2024), 2024 Adult Compendium of Physical Activities, J Sport Health Sci 13(1):6-12: https://pmc.ncbi.nlm.nih.gov/articles/PMC10818145/ ; Conditioning exercise list: https://pacompendium.com/conditioning-exercise/",
+    "Hold time: sources range from 5 s × 10 (NHS WWL) through 15 to 30 s (Healthwise, ACSM) to 30 to 45 s (ACE). We chose 30 s × 2 to 3 per side to meet ACSM's ~60 s total.",
+    "Front knee past the toes: some yoga sites say never let it pass the toes. Yoga Journal and Healthwise put the knee over the ankle or heel. We chose \"knee roughly over the ankle; slight forward travel during the shift is fine if it is pain-free\" (est.).",
+    "Pelvis cue: Physitrack says keep the pelvis \"neutral\". Yoga Journal, the NHS WWL handout and prehab libraries say tuck the tailbone. We chose a gentle tuck, because the 2024 trial suggests the posterior tilt changes the stretch's effect and it protects against arching.",
+    "Which muscle is stretched: the standard lunge mainly targets the iliopsoas. Bending the back knee (couch stretch) adds the rectus femoris, so we listed the couch stretch as a progression.",
+    "Pregnancy: one yoga source says avoid Anjaneyasana. Others are silent. We advise the supported standing version and checking with the antenatal provider."
+  ],
+  "burnMinutes": null,
+  "gymAccess": [],
+  "suitsPreferences": [],
+  "swapsByAccess": null,
+  "conditionCautions": [],
+  "searchTags": null,
+  "tags": [
+    "Yoga & stretch",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Mobility",
+    "Hips",
+    "Hold timer"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-10-11",
+      "file": "FitPlate_Fitness_2026-10-11.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

@@ -1,0 +1,86 @@
+{
+  "id": "light-soy-sauce",
+  "name": "Light soy sauce",
+  "aliases": [
+    "everyday Indian soy sauce",
+    "soya sauce"
+  ],
+  "category": "Packaged (sauce)",
+  "standardUnit": "l",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-05",
+        "min": 290,
+        "max": 310,
+        "avg": 300,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-05.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 290,
+      "max": 310,
+      "avg": 300
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-05",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 2,
+    "platforms": [
+      "Amazon",
+      "BigBasket"
+    ],
+    "outOfStock": false,
+    "confirmed": false,
+    "checkNotes": [
+      "only 2 listings back the range (need 3)"
+    ]
+  },
+  "per100Estimate": {
+    "min": 29,
+    "max": 31,
+    "avg": 30
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 53,
+    "proteinG": 8.1,
+    "carbsG": 4.9,
+    "fatG": 0.6,
+    "fibreG": 0.8
+  },
+  "storage": "Unopened: room temperature, out of sunlight. Opened: cap tightly; keeps 6 months or more at room temperature, longer and with better flavour in the fridge.",
+  "substitutes": [
+    "Naturally brewed soy sauce (Kikkoman etc.)",
+    "Tamari or reduced-salt soy sauce",
+    "Pinch of salt plus a few drops of dark soy/Worcestershire"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 10,
+      "quantity": 8,
+      "unit": "ml",
+      "raw": "8 ml (1½ tsp)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-05",
+      "file": "FitPlate_Ingredients_2026-10-05.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

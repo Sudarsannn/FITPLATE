@@ -20,14 +20,14 @@
       "householdMeasure": null
     },
     {
-      "ingredientId": null,
+      "ingredientId": "whole-wheat-flour",
       "name": "Whole wheat flour (atta)",
       "quantity": 80,
       "unit": "g",
       "householdMeasure": "⅔ cup (lightly spooned, not packed)"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "whole-wheat-flour",
       "name": "Whole wheat flour (atta), for dusting",
       "quantity": 10,
       "unit": "g",
@@ -90,14 +90,14 @@
       "householdMeasure": "1 tbsp, finely chopped"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "carom-seeds",
       "name": "Carom seeds (ajwain)",
       "quantity": 0.5,
       "unit": "g",
       "householdMeasure": "¼ tsp"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "cumin-powder",
       "name": "Cumin powder (jeera powder), roasted",
       "quantity": 1,
       "unit": "g",
@@ -118,7 +118,7 @@
       "householdMeasure": "¼ tsp"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "dry-mango-powder",
       "name": "Dry mango powder (amchur)",
       "quantity": 1,
       "unit": "g",
@@ -489,11 +489,12 @@
   },
   "microNutrientsEstimate": {
     "values": {
+      "thiamine": 0.4,
       "vitamin-a": 31.8,
       "vitamin-c": 37.1,
       "vitamin-k": 13.7
     },
-    "coveragePct": 50,
+    "coveragePct": 77,
     "basis": "partial estimate from ingredient quantities"
   },
   "asOrdered": null,
@@ -518,7 +519,15 @@
     "change30dPct": null,
     "lastObserved": "2026-10-06",
     "stale": false,
-    "seasonal": false
+    "seasonal": false,
+    "listingCount": 4,
+    "platforms": [
+      "magicpin",
+      "Swiggy"
+    ],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
   },
   "healthiness": {
     "score": 6.5,

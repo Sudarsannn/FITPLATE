@@ -1,0 +1,613 @@
+{
+  "id": "025-veg-pulao",
+  "number": 25,
+  "name": "Veg Pulao",
+  "cuisine": "North Indian (made across India as an everyday one-pot rice; a fixture of Mumbai Udupi and Punjabi restaurant menus)",
+  "dietType": "veg",
+  "mealType": [
+    "lunch",
+    "dinner"
+  ],
+  "difficulty": "Beginner",
+  "prepMin": 25,
+  "cookMin": 30,
+  "servings": 1,
+  "ingredients": [
+    {
+      "ingredientId": "basmati-rice-everyday-grade",
+      "name": "Basmati rice",
+      "quantity": 75,
+      "unit": "g",
+      "householdMeasure": "A little over ⅓ cup (⅓ cup + 1 tbsp)"
+    },
+    {
+      "ingredientId": null,
+      "name": "Water (for cooking)",
+      "quantity": 160,
+      "unit": "ml",
+      "householdMeasure": "About ⅔ cup + 1 tbsp (open pan) / a little over ½ cup (cooker)"
+    },
+    {
+      "ingredientId": "ghee-cow",
+      "name": "Ghee (clarified butter)",
+      "quantity": 10,
+      "unit": "g",
+      "householdMeasure": "2 tsp"
+    },
+    {
+      "ingredientId": "cumin-seeds",
+      "name": "Cumin seeds (jeera)",
+      "quantity": 1,
+      "unit": "g",
+      "householdMeasure": "½ tsp"
+    },
+    {
+      "ingredientId": "bay-leaf",
+      "name": "Bay leaf (tej patta)",
+      "quantity": 1,
+      "unit": null,
+      "householdMeasure": "1 small leaf"
+    },
+    {
+      "ingredientId": "cinnamon-cassia",
+      "name": "Cinnamon (dalchini)",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "A ½-inch piece of stick"
+    },
+    {
+      "ingredientId": "cloves",
+      "name": "Cloves (laung)",
+      "quantity": 2,
+      "unit": null,
+      "householdMeasure": "2 cloves"
+    },
+    {
+      "ingredientId": "green-cardamom",
+      "name": "Green cardamom (elaichi)",
+      "quantity": 1,
+      "unit": null,
+      "householdMeasure": "1 pod, lightly cracked"
+    },
+    {
+      "ingredientId": "black-peppercorns-whole",
+      "name": "Black peppercorns (kali mirch)",
+      "quantity": 3,
+      "unit": null,
+      "householdMeasure": "3 peppercorns (optional)"
+    },
+    {
+      "ingredientId": "onion",
+      "name": "Onion (pyaz)",
+      "quantity": 40,
+      "unit": "g",
+      "householdMeasure": "½ small onion, thinly sliced"
+    },
+    {
+      "ingredientId": "ginger-garlic-paste",
+      "name": "Ginger-garlic paste (adrak-lehsun paste)",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "½ tsp"
+    },
+    {
+      "ingredientId": "green-chilli",
+      "name": "Green chilli (hari mirch)",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "½ chilli, slit lengthwise"
+    },
+    {
+      "ingredientId": "carrot",
+      "name": "Carrot (gajar)",
+      "quantity": 25,
+      "unit": "g",
+      "householdMeasure": "¼ medium carrot, diced small (about 3 tbsp)"
+    },
+    {
+      "ingredientId": "french-beans",
+      "name": "French beans (fansi)",
+      "quantity": 20,
+      "unit": "g",
+      "householdMeasure": "4–5 beans, cut into 1 cm pieces (about 2½ tbsp)"
+    },
+    {
+      "ingredientId": "green-peas-frozen",
+      "name": "Green peas (matar), fresh or frozen",
+      "quantity": 20,
+      "unit": "g",
+      "householdMeasure": "2 tbsp"
+    },
+    {
+      "ingredientId": "salt",
+      "name": "Salt (namak)",
+      "quantity": 1.5,
+      "unit": "g",
+      "householdMeasure": "¼ tsp"
+    },
+    {
+      "ingredientId": "mint-leaves",
+      "name": "Mint leaves (pudina)",
+      "quantity": 2,
+      "unit": "g",
+      "householdMeasure": "8–10 leaves, torn"
+    },
+    {
+      "ingredientId": "coriander-leaves",
+      "name": "Coriander leaves (dhania)",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "2 tsp, chopped"
+    }
+  ],
+  "equipment": [
+    "Small heavy-bottomed saucepan or kadai (1.5 litre) with a tight-fitting lid (open-pan method)",
+    "OR a 2–3 litre pressure cooker (see the note after the steps)",
+    "Mixing bowl for rinsing and soaking",
+    "Sieve or strainer",
+    "Chopping board and knife; a peeler for the carrot (or scrape the skin with the back of the knife)",
+    "Measuring cup and spoons (a steel tumbler and ordinary teaspoons are fine; use the same cup for rice and water)",
+    "Flat spatula; a fork for fluffing"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "title": "Measure the rice",
+      "text": "Measure 75 g basmati rice (⅓ cup + 1 tbsp) into the bowl.",
+      "timerSec": 20,
+      "tip": "Spread it on a plate first and pick out any stones or dark grains.",
+      "visualCue": "Long white grains, no stones or husks",
+      "cameraCheck": "The measured rice in the bowl",
+      "videoShot": "Rice pouring from the cup into the bowl."
+    },
+    {
+      "n": 2,
+      "title": "Rinse the rice",
+      "text": "Cover with water, swirl gently with your fingers, pour off the cloudy water. Repeat 3–4 times.",
+      "timerSec": 90,
+      "tip": "Swirl, do not rub. Basmati breaks easily.",
+      "visualCue": "The last rinse water is almost clear.",
+      "cameraCheck": "The rice in nearly clear water",
+      "videoShot": "Fingers swirling the rice, cloudy water draining away."
+    },
+    {
+      "n": 3,
+      "title": "Soak the rice",
+      "text": "Cover the rinsed rice with about 1 cup fresh water and leave it for 20 minutes.",
+      "timerSec": 1200,
+      "tip": "Do steps 4–9 while it soaks.",
+      "visualCue": "Grains turn opaque white and slightly plumper.",
+      "cameraCheck": "The rice soaking in the bowl",
+      "videoShot": "Still shot of the soaking rice, then a 20-min timer being set."
+    },
+    {
+      "n": 4,
+      "title": "Slice the onion",
+      "text": "Peel and thinly slice 40 g onion (½ small onion) into half-moons.",
+      "timerSec": 90,
+      "tip": "Even slices brown evenly; very thick ones stay raw while thin ones burn.",
+      "visualCue": "Thin, even slices that separate into strands",
+      "cameraCheck": "The sliced onion on the board",
+      "videoShot": "Knife slicing the onion half into thin strips."
+    },
+    {
+      "n": 5,
+      "title": "Dice the carrot",
+      "text": "Peel and dice 25 g carrot (¼ carrot) into small 0.5–1 cm cubes.",
+      "timerSec": 90,
+      "tip": null,
+      "visualCue": "Small orange cubes, all about the same size",
+      "cameraCheck": "About 3 tbsp diced carrot",
+      "videoShot": "Knife dicing a carrot strip into cubes."
+    },
+    {
+      "n": 6,
+      "title": "Cut the beans",
+      "text": "Top and tail 4–5 French beans (20 g) and cut them into 1 cm pieces.",
+      "timerSec": 60,
+      "tip": "Keep vegetable pieces small so they cook in the same time as the rice.",
+      "visualCue": "Short green pieces about the size of the carrot cubes",
+      "cameraCheck": "The cut beans on the board",
+      "videoShot": "Beans lined up and chopped in one go."
+    },
+    {
+      "n": 7,
+      "title": "Measure the peas",
+      "text": "Measure 2 tbsp (20 g) green peas. If frozen, rinse them under tap water to remove ice.",
+      "timerSec": 20,
+      "tip": null,
+      "visualCue": "Bright green, separate peas",
+      "cameraCheck": "2 tbsp peas in a bowl",
+      "videoShot": "Peas tipped into a small bowl."
+    },
+    {
+      "n": 8,
+      "title": "Prep the herbs and chilli",
+      "text": "Slit ½ green chilli lengthwise. Tear 8–10 mint leaves. Chop 2 tsp coriander leaves. Keep the coriander separate for garnish.",
+      "timerSec": 90,
+      "tip": null,
+      "visualCue": "Slit chilli, torn mint, fine green coriander flecks",
+      "cameraCheck": "The chilli, mint and coriander in three small piles",
+      "videoShot": "Hands tearing mint leaves over the board."
+    },
+    {
+      "n": 9,
+      "title": "Measure the cooking water",
+      "text": "Measure 160 ml (about ⅔ cup + 1 tbsp) water and keep it near the stove.",
+      "timerSec": 20,
+      "tip": "This is a little under twice the volume of the dry rice; the vegetables add some water of their own.",
+      "visualCue": "Water at the line",
+      "cameraCheck": "The measuring cup of water",
+      "videoShot": "Water poured into the measuring cup."
+    },
+    {
+      "n": 10,
+      "title": "Drain the rice",
+      "text": "Tip the soaked rice into the sieve and let it drip.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "No more water dripping",
+      "cameraCheck": "The drained rice in the sieve",
+      "videoShot": "Water running out of the sieve."
+    },
+    {
+      "n": 11,
+      "title": "Heat the ghee",
+      "text": "Put the saucepan on medium heat and add 2 tsp (10 g) ghee.",
+      "timerSec": 45,
+      "tip": null,
+      "visualCue": "Ghee melts and shimmers; no smoke.",
+      "cameraCheck": "Melted ghee in the pan",
+      "videoShot": "Ghee melting and spreading across the pan."
+    },
+    {
+      "n": 12,
+      "title": "Add the cumin seeds",
+      "text": "Add ½ tsp (1 g) cumin seeds.",
+      "timerSec": 20,
+      "tip": "No sizzle means the ghee is not hot yet. Black seeds mean burnt; wipe the pan and restart.",
+      "visualCue": "They sizzle, darken one shade and smell nutty.",
+      "cameraCheck": "Sizzling cumin in the ghee",
+      "videoShot": "Cumin hitting the hot ghee and fizzing."
+    },
+    {
+      "n": 13,
+      "title": "Add the whole spices",
+      "text": "Add the bay leaf, ½-inch cinnamon, 2 cloves, the cracked cardamom and 3 peppercorns. Stir once.",
+      "timerSec": 20,
+      "tip": null,
+      "visualCue": "Cloves puff slightly, bay leaf darkens a shade; a warm, sweet smell rises.",
+      "cameraCheck": "The whole spices in the ghee",
+      "videoShot": "Spices dropping into the pan one by one."
+    },
+    {
+      "n": 14,
+      "title": "Fry the onion",
+      "text": "Add the sliced onion and stir often on medium heat.",
+      "timerSec": 180,
+      "tip": "Light golden is enough. Deep brown onion turns the pulao brown and bitter.",
+      "visualCue": "Soft, light golden at the edges, no dark brown bits",
+      "cameraCheck": "Golden onion in the pan",
+      "videoShot": "The spatula turning the onion as it colours."
+    },
+    {
+      "n": 15,
+      "title": "Add the ginger-garlic paste and chilli",
+      "text": "Add ½ tsp ginger-garlic paste and the slit chilli. Stir.",
+      "timerSec": 30,
+      "tip": "Stir constantly; the paste sticks and burns fast.",
+      "visualCue": "The raw garlic smell goes and it smells cooked and sweet.",
+      "cameraCheck": "The paste mixed into the onion",
+      "videoShot": "Paste dropped in and stirred through."
+    },
+    {
+      "n": 16,
+      "title": "Add the vegetables",
+      "text": "Add the carrot, beans and peas. Stir and fry on medium heat.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "Colours brighten; the beans turn a deeper green and look glossy.",
+      "cameraCheck": "The vegetables in the pan",
+      "videoShot": "Orange, green and pale-green vegetables tossed together."
+    },
+    {
+      "n": 17,
+      "title": "Add the mint",
+      "text": "Add the torn mint leaves and stir.",
+      "timerSec": 15,
+      "tip": null,
+      "visualCue": "The leaves wilt and a fresh mint smell rises.",
+      "cameraCheck": "Wilted mint among the vegetables",
+      "videoShot": "Mint scattered over the vegetables."
+    },
+    {
+      "n": 18,
+      "title": "Add the drained rice",
+      "text": "Tip the drained rice into the pan.",
+      "timerSec": 10,
+      "tip": null,
+      "visualCue": "The rice sits on top of the vegetables.",
+      "cameraCheck": "The rice in the pan",
+      "videoShot": "Rice sliding from the sieve into the pan."
+    },
+    {
+      "n": 19,
+      "title": "Sauté the rice gently",
+      "text": "Fold the rice gently from the bottom so every grain is coated in ghee.",
+      "timerSec": 90,
+      "tip": "Fold, do not stir hard; soaked grains break easily.",
+      "visualCue": "Grains look glossy and dry, with no wet patches.",
+      "cameraCheck": "Glossy rice mixed with vegetables",
+      "videoShot": "The spatula lifting and folding the rice."
+    },
+    {
+      "n": 20,
+      "title": "Add the water and salt",
+      "text": "Pour in the 160 ml water and add ¼ tsp (1.5 g) salt. Stir gently once.",
+      "timerSec": 20,
+      "tip": "Taste the water: it should taste lightly salty, like mild soup.",
+      "visualCue": "Water just covers the rice by about 0.5 cm.",
+      "cameraCheck": "The rice under water in the pan",
+      "videoShot": "Water poured in, salt sprinkled."
+    },
+    {
+      "n": 21,
+      "title": "Bring to a boil",
+      "text": "Raise the heat to high, uncovered.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "A rolling boil with bubbles across the surface.",
+      "cameraCheck": "The boiling pan",
+      "videoShot": "Bubbles breaking across the surface."
+    },
+    {
+      "n": 22,
+      "title": "Simmer until the surface water is gone",
+      "text": "Lower to medium and let it bubble uncovered, without stirring.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "Water drops below the rice and small steam holes appear on the surface.",
+      "cameraCheck": "The rice surface with steam holes",
+      "videoShot": "Close-up of steam escaping through the holes."
+    },
+    {
+      "n": 23,
+      "title": "Cover and cook on low",
+      "text": "Turn the flame to the lowest setting and cover tightly.",
+      "timerSec": 720,
+      "tip": "Do not lift the lid during these 12 minutes.",
+      "visualCue": "A faint, steady steam sound; no loud sizzling.",
+      "cameraCheck": "The covered pan on the lowest flame",
+      "videoShot": "Lid going on, knob turned down."
+    },
+    {
+      "n": 24,
+      "title": "Check one grain",
+      "text": "Lift the lid, take a grain from the top and press it between your fingers. Tilt the pan to check the bottom.",
+      "timerSec": 20,
+      "tip": "Still hard? Sprinkle 1–2 tbsp hot water, cover and cook 2–3 min more on low.",
+      "visualCue": "The grain is soft right through, no hard white centre; no water pooled at the bottom.",
+      "cameraCheck": "A pressed grain on your fingertip",
+      "videoShot": "Fingers squashing a cooked grain."
+    },
+    {
+      "n": 25,
+      "title": "Rest the pulao",
+      "text": "Switch off the heat and keep the lid on.",
+      "timerSec": 300,
+      "tip": null,
+      "visualCue": "Grains firm up and stand upright.",
+      "cameraCheck": "The covered pan off the flame",
+      "videoShot": "Flame turned off, 5-min timer set."
+    },
+    {
+      "n": 26,
+      "title": "Fluff the pulao",
+      "text": "Remove the lid and gently lift the grains with a fork, from the sides towards the centre.",
+      "timerSec": 30,
+      "tip": "Pick out the bay leaf, cinnamon and cloves now if you do not want to bite into them.",
+      "visualCue": "Long, separate grains with vegetables spread through",
+      "cameraCheck": "The fluffed pulao in the pan",
+      "videoShot": "The fork lifting airy grains and vegetables."
+    },
+    {
+      "n": 27,
+      "title": "Garnish and serve",
+      "text": "Sprinkle the chopped coriander and fold once.",
+      "timerSec": 20,
+      "tip": null,
+      "visualCue": "White rice dotted with orange, green and fresh coriander",
+      "cameraCheck": "The served plate",
+      "videoShot": "Coriander falling on the pulao, then a slow pan across the plate."
+    }
+  ],
+  "nutritionPerServing": {
+    "kcal": 425,
+    "proteinG": 8.1,
+    "carbsG": 73,
+    "fatG": 11.1,
+    "fibreG": 4.9
+  },
+  "microNutrientsEstimate": {
+    "values": {
+      "vitamin-a": 300.3,
+      "vitamin-k": 17
+    },
+    "coveragePct": 13,
+    "basis": "partial estimate from ingredient quantities"
+  },
+  "asOrdered": {
+    "price": {
+      "priceHistory": [
+        {
+          "date": "2026-10-08",
+          "min": 160,
+          "max": 280,
+          "avg": 220,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-10-08.md"
+        }
+      ],
+      "currentEstimate": {
+        "min": 190,
+        "max": 250,
+        "avg": 220
+      },
+      "method": "single",
+      "trend": "unknown",
+      "change30dPct": null,
+      "lastObserved": "2026-10-08",
+      "stale": false,
+      "seasonal": false,
+      "listingCount": 6,
+      "platforms": [
+        "magicpin",
+        "Swiggy"
+      ],
+      "outOfStock": false,
+      "confirmed": true,
+      "checkNotes": []
+    },
+    "nutrition": {
+      "calories": {
+        "value": 300,
+        "source": "Teesta restaurant menu, Kalimpong (West Bengal), PDF menu on the restaurant's own website (listed as \"Veg Pulao 220 / 300 CAL"
+      },
+      "protein": {
+        "value": null,
+        "source": null
+      },
+      "carbs": {
+        "value": null,
+        "source": null
+      },
+      "fat": {
+        "value": null,
+        "source": null
+      },
+      "fibre": {
+        "value": null,
+        "source": null
+      }
+    },
+    "restaurantsSampled": 1,
+    "platforms": [
+      "Swiggy",
+      "Zomato",
+      "magicpin"
+    ]
+  },
+  "orderPrice": {
+    "priceHistory": [
+      {
+        "date": "2026-10-08",
+        "min": 160,
+        "max": 280,
+        "avg": 220,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-10-08.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 190,
+      "max": 250,
+      "avg": 220
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-08",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 6,
+    "platforms": [
+      "magicpin",
+      "Swiggy"
+    ],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
+  },
+  "healthiness": {
+    "score": 7,
+    "restaurantScore": 5,
+    "reasons": [
+      "it is not fried, uses only 2 tsp ghee, and the vegetables lift fibre to about 5 g; sodium is moderate (about 600 mg). But it is still mostly refined white rice with only about 8 g protein, so on its own it is light on protein. Restaurant versions commonly use 2–3 tbsp ghee or oil per cup of rice, add cashews and sometimes butter or cream, use more salt, and serve a bigger portion with fewer vegetables, which can push it past 550–650 kcal (est.)."
+    ]
+  },
+  "researchRating": {
+    "score": 4.5,
+    "basis": "veg pulao is one of the most-cooked Indian rice dishes and a lunchbox staple; top recipe pages carry hundreds of near-perfect ratings (Indian Healthy Recipes 5/5 from 613 votes; Hebbar's Kitchen about 4.99/5 from roughly 250–300 votes) and food writers in Mumbai list pulaos among the city's comfort dishes. It loses a little because it is often seen as a simple everyday or \"lunchbox\" rice, and reviewers often mention mushy or bland results."
+  },
+  "storage": "Cool quickly (spread on a plate) and refrigerate in an airtight box within 1 hour of cooking; cooked rice can carry *Bacillus cereus* spores, which multiply if it sits warm. Keeps 1–2 days in the fridge (3 at most). Freezer: yes, flattened in a zip bag or box, up to 1 month (peas and carrot freeze well; beans soften a little). Reheat only once: sprinkle 1–2 tsp water and microwave covered 1–2 min, stirring halfway, or steam in a covered pan on low for 3–4 min, until piping hot.",
+  "leftoverRemix": "Pulao cutlets. Mash 1 cup cold leftover pulao with 1 small boiled potato, 2 tbsp besan or breadcrumbs, a pinch of chilli powder and garam masala, and chopped coriander. Shape into 4 flat patties and shallow-fry on a tawa with 1 tsp oil, 2–3 min per side, until crisp. Serve with green chutney or ketchup. (Quick alternative: a \"tawa-style\" remix by tossing the pulao on a hot tawa with ½ tsp pav bhaji masala, chopped tomato and capsicum, and a squeeze of lemon.)",
+  "burnOff": "about 6.1 km of running (424 ÷ 70 kcal/km, for a 70 kg adult), or about 8.5 km of brisk walking (about 1 hr 40 min at 5 km/h, using about 50 kcal/km for walking) (est.). With a bowl of raita (about 500 kcal in total): about 7 km running or 10 km walking (est.).",
+  "sources": [
+    "Indian Healthy Recipes (Swasthi), Pulao Recipe / Vegetable Pulao (5/5 from 613 votes): https://indianhealthyrecipes.com/pulao-recipes-pulav-varieties/",
+    "Hebbar's Kitchen, Veg Pulao (pressure cooker; about 4.99/5 from roughly 250–300 votes; richer recipe with cashews and masala): https://hebbarskitchen.com/wprm_print/veg-pulao-recipe-simple-easy-vegetable-pulav",
+    "Veg Recipes of India (Dassana), Veg Pulao (stovetop and pressure cooker): https://www.vegrecipesofindia.com/vegetable-pulao-recipe-veg-pulao/ and https://www.vegrecipesofindia.com/easy-vegetable-pulao-in-pressure-cooker/",
+    "Spice Up The Curry, Veg Pulao: https://www.spiceupthecurry.com/veg-pulao-recipe-vegetable-pulao/comment-page-1/",
+    "Sharmis Passions, Veg Pulao: https://www.sharmispassions.com/veg-pulao-recipe-or-vegetable-pulav/",
+    "Cooking From Heart, Veg Pulao: https://cookingfromheart.com/veg-pulao-vegetable-pulao/",
+    "Shweta in the Kitchen, Veg Pulao: https://shwetainthekitchen.com/wprm_print/veg-pulao-vegetable-pulav",
+    "Rachna Cooks, Vegetable Pulao (285 kcal per serving; 5/5 from 4 votes): https://rachnacooks.com/vegetable-pulao-recipe-how-to-make-veg-pulao/",
+    "Cubes n Juliennes, Veg Pulao (349 kcal per serving): https://www.cubesnjuliennes.com/wprm_print/veg-pulao-recipe",
+    "Tarla Dalal, Calories in Vegetable Pulao (201 kcal per serving) and Veg Pulao in Pressure Cooker (231 kcal): https://www.tarladalal.com/calories-for-vegetable-pulao-1580 and https://www.tarladalal.com/calories-for-pressure-cooker-veg-pulao-veg-pulao-in-pressure-cooker-1745",
+    "Finely Chopped, 10 pulaos you must try in Mumbai: https://finelychopped.net/10-pulaos-that-you-must-try-in-mumbai/",
+    "USDA FoodData Central: https://fdc.nal.usda.gov/",
+    "IFCT 2017, Indian Food Composition Tables (ICMR-NIN): https://www.nin.res.in/ (cross-check only; values recalled, not re-fetched)",
+    "Swiggy, Shiv Sagar, Juhu Tara Road (Veg Pulao ₹340; variants): https://www.swiggy.com/restaurants/shiv-sagar-juhu-tara-road-juhu-mumbai-111513",
+    "Swiggy, Shetty's Parcel Kitchen, Bhoiwada (Veg Pulao ₹192; variants): https://www.swiggy.com/city/mumbai/shettys-parcel-kitchen-bhoiwada-rest76995",
+    "Swiggy, Mallow Restro Bar, Thane (dropped): https://www.swiggy.com/restaurants/mallow-restro-bar-brahmand-phase-4-thane-hiranandani-mumbai-652904",
+    "Swiggy, Zakkas Pav Bhaji, Kalwa (variant only): https://www.swiggy.com/city/mumbai/zakkas-pav-bhaji-kalwa-rest66062",
+    "Swiggy, Sai Pooja Pure Veg, Parsik Nagar (variant only): https://www.swiggy.com/city/mumbai/sai-pooja-pure-veg-parsik-nagar-rest889770",
+    "magicpin, Dilli 6, Prabhadevi (Veg Pulao ₹280): https://magicpin.in/Mumbai/Prabhadevi/Restaurant/Dilli-6/store/607b95/menu",
+    "magicpin, Classic Pure Veg, Malad (Veg Pulao ₹160): https://magicpin.in/Mumbai/Malad/Restaurant/Classic-Pure-Veg/store/521827/",
+    "magicpin, Tasty Foods, Ghatkopar West (Veg Pulao ₹165; outlet marked shut down): https://magicpin.in/Mumbai/Ghatkopar-West/Restaurant/Tasty-Foods/store/6233cb/",
+    "magicpin, Sadguru Veg Diet, Janata Market, Chembur (Veg Pulao ₹250): https://magicpin.in/Mumbai/Chembur/Restaurant/Sadguru-Veg-Diet,-Janata-Market/store/23696/menu/",
+    "magicpin, P. Bhagat Tarachand, Town Hall, Lower Parel (Veg. Pulao ₹250): https://magicpin.in/Mumbai/Town-Hall/Restaurant/P.-Bhagat-Tarachand/store/1575b05/delivery",
+    "magicpin, Guru Sind Restaurant, Fort (on menu, no price seen): https://magicpin.in/Mumbai/Fort/Restaurant/Guru-Sind-Restaurant/store/5086cb/",
+    "magicpin, Mumbai Fast Food, Mahakali (Tawa Pulao only): https://magicpin.in/Mumbai/Mahakali/Restaurant/Mumbai-Fast-Food/store/a36ab/menu",
+    "Teesta restaurant menu, Kalimpong (Veg Pulao ₹220, 300 kcal, 260 g; the AS ORDERED calorie source): https://cdn1.simplotel.com/generic_uploads/production/0oqqnKol/teesta_menu_kalimpong.pdf",
+    "Not used (crowd-sourced, not brand-published): FatSecret, Haldiram's Vegetable Pulao: https://mobile.fatsecret.com/calories-nutrition/haldirams/vegetable-pulao"
+  ],
+  "allergens": [
+    "milk"
+  ],
+  "dietClaims": [],
+  "fasting": null,
+  "dietTags": null,
+  "tags": [
+    "Veg",
+    "Contains milk",
+    "Lunch",
+    "Dinner",
+    "North Indian",
+    "Under 60 min",
+    "Beginner"
+  ],
+  "description": null,
+  "familyId": null,
+  "variants": [],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-10-08",
+      "file": "FitPlate_Dishes_2026-10-08.md"
+    }
+  ],
+  "mergeMethod": {
+    "nutritionPerServing": "stable (single)",
+    "orderPrice": "price engine (single)",
+    "ingredients": "newest",
+    "steps": "newest",
+    "healthiness": "newest",
+    "researchRating": "newest",
+    "sources": "union",
+    "tags": "tag engine (tags.ts) on the merged dish"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 160.0–280.0 was wider than 30% of avg 220.0; narrowed to ±15%."
+  ]
+}

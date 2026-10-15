@@ -193,7 +193,11 @@ describe('tag engine', () => {
   it('checks researched sattvik and pescatarian lines against the recipe', () => {
     const lines = { base: 'Vegetarian', jain: NO, vegan: NO, glutenFree: NO, dairyFree: NO, allergensDeclared: null, sattvik: YES, pescatarian: YES };
     const ok = dishTags(base({ dietTags: lines, ingredients: [{ ingredientId: null, name: 'Rice', quantity: 50, unit: 'g', householdMeasure: null }] }));
-    expect(ok.tags).toEqual(expect.arrayContaining(['No onion-garlic', 'Pescatarian']));
+    expect(ok.tags).toContain('No onion-garlic');
+    // Veg dish: no Pescatarian chip (it would crowd every veg title); search still matches it.
+    expect(ok.tags).not.toContain('Pescatarian');
+    const fish = dishTags(base({ dietType: 'non-veg', dietTags: lines, ingredients: [{ ingredientId: null, name: 'Surmai (kingfish) steaks', quantity: 150, unit: 'g', householdMeasure: null }] }));
+    expect(fish.tags).toContain('Pescatarian');
     const bad = dishTags(
       base({
         dietTags: lines,
@@ -238,6 +242,20 @@ describe('variant families', () => {
     expect(familyOf.get('039-veg-biryani')).toBe('biryani');
     expect(familyOf.has('001-poha')).toBe(false);
     expect(links.find((l) => l.familyId === 'fried-rice')).toMatchObject({ how: 'research-variant', dishIds: ['010-veg-fried-rice', '043-chicken-fried-rice'] });
+  });
+
+  it('puts each dish in exactly one family when a research link joins two name groups (review fix 3)', () => {
+    // Dish 60 Aloo Matar links its variant "Matar aur Kacha Kela"; a Jain version shares the variant's name key.
+    const link = { category: 'Vegan', status: 'variant' as const, name: 'Matar aur Kacha Kela', origin: null, linkedDishNumber: 61, reason: null };
+    const { familyOf, links } = assignFamilies([
+      { id: '062-jain-matar-aur-kacha-kela', number: 62, name: 'Jain Matar aur Kacha Kela', variants: [] },
+      { id: '061-matar-aur-kacha-kela', number: 61, name: 'Matar aur Kacha Kela', variants: [] },
+      { id: '060-aloo-matar', number: 60, name: 'Aloo Matar', variants: [link] },
+    ]);
+    expect(familyOf.get('060-aloo-matar')).toBe('aloo-matar');
+    expect(familyOf.get('061-matar-aur-kacha-kela')).toBe('aloo-matar');
+    expect(familyOf.get('062-jain-matar-aur-kacha-kela')).toBe('aloo-matar');
+    expect(links).toEqual([{ familyId: 'aloo-matar', dishIds: ['060-aloo-matar', '061-matar-aur-kacha-kela', '062-jain-matar-aur-kacha-kela'], how: 'research-variant' }]);
   });
 });
 

@@ -24,7 +24,7 @@ import {
   type NutrientTopicVersion,
   type NutrientVersion,
 } from '../../services/data/nutrientImporter';
-import type { Nutrient } from '../../models/nutrient';
+import { FOLLOW_DOCTOR_LINE, type Nutrient } from '../../models/nutrient';
 
 // Fixtures copy the shapes of the real nutrient files (thiamine, vitamin A, vitamin E cases).
 type Json = Record<string, unknown>;
@@ -499,5 +499,57 @@ const haveReal = REAL_FILES.every((f) => fs.existsSync(path.join(REAL_DIR, f)));
     expect(byId['vitamin-e'].appDefaultTarget).toEqual({ adult_male: 10, adult_female: 7.5, pregnant: null, lactating: null, age_60_plus: null });
     expect(byId['vitamin-k'].appDefaultTarget).toEqual({ adult_male: 55, adult_female: 55, pregnant: null, lactating: null, age_60_plus: null });
     expect(byId['thiamine'].appDefaultTarget).toEqual({ adult_male: 1.4, adult_female: 1.4, pregnant: 2, lactating: 2.1, age_60_plus: null });
+  });
+});
+
+describe('condition profiles default to "ask your doctor" (review 2026-10-15 FIX 1)', () => {
+  const cond = (date: string, over: Json): ConditionVersion =>
+    parseNutrientFile(
+      `## P13. Chronic kidney disease (early stages)\n\`\`\`json\n${JSON.stringify({ id: 'ckd-early', type: 'condition', name: 'Chronic kidney disease', ...over })}\n\`\`\`\n`,
+      `FitPlate_Nutrients_${date}.md`,
+    ).items[0] as ConditionVersion;
+
+  it('flag missing with a water max → true, a needs-review note, and the doctor display line', () => {
+    const v = cond('2026-10-24', { water_ml: { min: 1500, max: 2000, notes: 'Depends on urine output' } });
+    expect(v.data).toMatchObject({ requiresDoctorInput: true, requiresDoctorInputStated: false, fluidNote: FOLLOW_DOCTOR_LINE });
+    expect(v.notes).toEqual([
+      "2026-10-24 ckd-early: requires_doctor_input is missing but the profile sets water max 2000 ml; set to true (the app asks for the doctor's number)",
+    ]);
+    const c = buildCondition([v], '2026-10-25');
+    expect(c).toMatchObject({ requiresDoctorInput: true, fluidNote: "Follow your doctor's advice" });
+    expect(c.needsReview).toContain(v.notes[0]);
+  });
+
+  it('flag missing with a sodium max or a protein/potassium/phosphorus/fluid limit → true', () => {
+    expect(cond('2026-10-24', { sodium_mg_max: 2000 }).data.requiresDoctorInput).toBe(true);
+    for (const nutrient of ['Protein', 'Potassium', 'Phosphorus', 'Fluid']) {
+      const v = cond('2026-10-24', { targets: [{ nutrient, unit: 'g', general_adult: null, profile_value: null, min: null, max: 1, direction: 'limit', source: 'KDIGO 2024' }] });
+      expect([nutrient, v.data.requiresDoctorInput]).toEqual([nutrient, true]);
+    }
+    // A protein target to raise is not a limit.
+    expect(cond('2026-10-24', { targets: [{ nutrient: 'Protein', unit: 'g', min: 60, direction: 'raise', source: 'ICMR' }] }).data.requiresDoctorInput).toBe(false);
+  });
+
+  it('flag explicitly false stays false, even with a water max; the display line is still there', () => {
+    const v = cond('2026-10-24', { water_ml: { min: 1500, max: 2000, notes: '' }, sodium_mg_max: 2000, requires_doctor_input: false });
+    expect(v.data).toMatchObject({ requiresDoctorInput: false, requiresDoctorInputStated: true, fluidNote: FOLLOW_DOCTOR_LINE });
+    expect(v.notes).toEqual([]);
+    expect(buildCondition([v], '2026-10-25')).toMatchObject({ requiresDoctorInput: false, needsReview: [] });
+  });
+
+  it('flag missing and no limits → false, no note, no display line', () => {
+    const v = cond('2026-10-24', { foods_favour: ['Fresh fruit'] });
+    expect(v.data).toMatchObject({ requiresDoctorInput: false, requiresDoctorInputStated: false, fluidNote: null });
+    expect(v.notes).toEqual([]);
+    expect(buildCondition([v], '2026-10-25').requiresDoctorInput).toBe(false);
+  });
+
+  it('a newer explicit false overrides an older default; a newer default overrides an older explicit false', () => {
+    const defaulted = cond('2026-10-24', { water_ml: { min: null, max: 2000, notes: '' } });
+    const statedFalse = cond('2026-11-14', { water_ml: { min: null, max: 2000, notes: '' }, requires_doctor_input: false });
+    expect(buildCondition([defaulted, statedFalse], '2026-11-15').requiresDoctorInput).toBe(false);
+    const olderFalse = cond('2026-10-24', { requires_doctor_input: false });
+    const newerDefault = cond('2026-11-14', { sodium_mg_max: 1500 });
+    expect(buildCondition([olderFalse, newerDefault], '2026-11-15').requiresDoctorInput).toBe(true);
   });
 });

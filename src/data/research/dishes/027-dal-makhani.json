@@ -1,0 +1,582 @@
+{
+  "id": "027-dal-makhani",
+  "number": 27,
+  "name": "Dal Makhani",
+  "cuisine": "North Indian (Punjabi)",
+  "dietType": "veg",
+  "mealType": [
+    "lunch",
+    "dinner"
+  ],
+  "difficulty": "Intermediate",
+  "prepMin": 10,
+  "cookMin": 80,
+  "servings": 1,
+  "ingredients": [
+    {
+      "ingredientId": null,
+      "name": "Whole black gram (sabut urad / kali dal)",
+      "quantity": 40,
+      "unit": "g",
+      "householdMeasure": "3 level tbsp (about ⅕ cup)"
+    },
+    {
+      "ingredientId": "red-kidney-beans-dried",
+      "name": "Red kidney beans (rajma)",
+      "quantity": 10,
+      "unit": "g",
+      "householdMeasure": "1 level tbsp"
+    },
+    {
+      "ingredientId": null,
+      "name": "Water (for soaking, discarded)",
+      "quantity": 300,
+      "unit": "ml",
+      "householdMeasure": "1¼ cups"
+    },
+    {
+      "ingredientId": null,
+      "name": "Water (for pressure cooking)",
+      "quantity": 300,
+      "unit": "ml",
+      "householdMeasure": "1¼ cups"
+    },
+    {
+      "ingredientId": null,
+      "name": "Water (for the simmer, as needed)",
+      "quantity": 100,
+      "unit": "ml",
+      "householdMeasure": "about ⅓ cup"
+    },
+    {
+      "ingredientId": "salt",
+      "name": "Salt",
+      "quantity": 2,
+      "unit": "g",
+      "householdMeasure": "⅓ tsp (to taste; less if your butter is salted)"
+    },
+    {
+      "ingredientId": "butter-salted",
+      "name": "Butter (Amul or white butter)",
+      "quantity": 15,
+      "unit": "g",
+      "householdMeasure": "1 level tbsp (10 g + 5 g)"
+    },
+    {
+      "ingredientId": "fresh-cream",
+      "name": "Fresh cream (malai / Amul fresh cream, ~25% fat)",
+      "quantity": 20,
+      "unit": "ml",
+      "householdMeasure": "4 tsp (3 tsp + 1 tsp)"
+    },
+    {
+      "ingredientId": "cumin-seeds",
+      "name": "Cumin seeds (jeera)",
+      "quantity": 1,
+      "unit": "g",
+      "householdMeasure": "½ tsp"
+    },
+    {
+      "ingredientId": "onion",
+      "name": "Onion",
+      "quantity": 40,
+      "unit": "g",
+      "householdMeasure": "½ small, finely chopped"
+    },
+    {
+      "ingredientId": "ginger",
+      "name": "Ginger (adrak)",
+      "quantity": 5,
+      "unit": "g",
+      "householdMeasure": "½-inch piece, grated"
+    },
+    {
+      "ingredientId": "garlic",
+      "name": "Garlic (lahsun)",
+      "quantity": 6,
+      "unit": "g",
+      "householdMeasure": "2 cloves, grated"
+    },
+    {
+      "ingredientId": "green-chilli",
+      "name": "Green chilli",
+      "quantity": 1,
+      "unit": null,
+      "householdMeasure": "1 small, slit"
+    },
+    {
+      "ingredientId": "tomato",
+      "name": "Tomato (puréed)",
+      "quantity": 80,
+      "unit": "g",
+      "householdMeasure": "1 small"
+    },
+    {
+      "ingredientId": "kashmiri-red-chilli-powder",
+      "name": "Kashmiri red chilli powder",
+      "quantity": 1,
+      "unit": "g",
+      "householdMeasure": "½ tsp"
+    },
+    {
+      "ingredientId": "garam-masala",
+      "name": "Garam masala",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "¼ tsp"
+    },
+    {
+      "ingredientId": "dried-fenugreek-leaves",
+      "name": "Dried fenugreek leaves (kasuri methi)",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "½ tsp, crushed"
+    },
+    {
+      "ingredientId": null,
+      "name": "Optional smoke: charcoal piece + ghee",
+      "quantity": 1,
+      "unit": "small",
+      "householdMeasure": "1 coal + ¼ tsp ghee"
+    }
+  ],
+  "equipment": [
+    "Pressure cooker, 1.5–3 L",
+    "Heavy-bottomed pan or kadai (or cook the masala in the cooker's base)",
+    "Bowl for soaking, and a sieve/colander to drain",
+    "Mixer-grinder small jar to purée the tomato",
+    "Grater for ginger and garlic (or a mortar and pestle)",
+    "Wooden spoon or ladle (for stirring and mashing)",
+    "Measuring spoons",
+    "Optional for smoke: tongs, a gas flame to heat the coal, and a small steel bowl or onion skin to hold it"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "title": "Rinse the dal",
+      "text": "Put 40 g whole urad and 10 g rajma in a bowl and rinse 3 times, rubbing between your fingers, until the water is only slightly grey.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "water much clearer than the first rinse",
+      "cameraCheck": "the rinsed lentils and beans in the bowl",
+      "videoShot": "hand swirling black lentils in water"
+    },
+    {
+      "n": 2,
+      "title": "Soak overnight",
+      "text": "Cover with 300 ml water and leave at room temperature for 8–10 hours.",
+      "timerSec": 28800,
+      "tip": "rajma must be well soaked. Undercooked rajma is hard to digest and can cause stomach upset.",
+      "visualCue": "urad and rajma about doubled in size; rajma has smooth, plump skin",
+      "cameraCheck": "the soaked bowl",
+      "videoShot": "before/after of the swollen beans"
+    },
+    {
+      "n": 3,
+      "title": "Drain",
+      "text": "Pour off the soaking water through a sieve and rinse once.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "drained, glossy lentils",
+      "cameraCheck": "the sieve with drained dal",
+      "videoShot": "water poured off through a sieve"
+    },
+    {
+      "n": 4,
+      "title": "Load the cooker",
+      "text": "Put the drained dal in the pressure cooker with 300 ml fresh water and half the salt (1 g).",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "water about 3 cm above the lentils",
+      "cameraCheck": "the open cooker",
+      "videoShot": "water poured over the dal in the cooker"
+    },
+    {
+      "n": 5,
+      "title": "Pressure cook",
+      "text": "Close the lid and cook on high until the first whistle, then turn to low and cook 25–30 min.",
+      "timerSec": 2100,
+      "tip": null,
+      "visualCue": "steady whistle, then a gentle hiss on low",
+      "cameraCheck": "the cooker on the flame",
+      "videoShot": "cooker whistling"
+    },
+    {
+      "n": 6,
+      "title": "Let the pressure drop",
+      "text": "Turn off the heat and let the pressure release on its own.",
+      "timerSec": 600,
+      "tip": null,
+      "visualCue": "pressure valve settled, no hiss",
+      "cameraCheck": "the closed cooker",
+      "videoShot": "valve dropping"
+    },
+    {
+      "n": 7,
+      "title": "Check doneness",
+      "text": "Open the cooker, take one urad and one rajma and press each between your thumb and finger.",
+      "timerSec": 60,
+      "tip": "if the rajma is still firm, add 50 ml water and cook another 10 min on low. Do not move on until it is soft.",
+      "visualCue": "both mash completely with no hard centre; some urad skins have split",
+      "cameraCheck": "a squashed urad and rajma between your fingers",
+      "videoShot": "fingers squashing a cooked rajma"
+    },
+    {
+      "n": 8,
+      "title": "Mash lightly",
+      "text": "Mash about a third of the dal against the side with the back of the ladle.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "thickened, partly creamy dal with most lentils still whole",
+      "cameraCheck": "the ladle with mashed dal",
+      "videoShot": "ladle pressing lentils against the cooker wall"
+    },
+    {
+      "n": 9,
+      "title": "Purée the tomato",
+      "text": "Blend 80 g tomato to a smooth purée.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "smooth, bright-red purée",
+      "cameraCheck": "the purée in a bowl",
+      "videoShot": "purée poured from the jar"
+    },
+    {
+      "n": 10,
+      "title": "Chop onion",
+      "text": "Finely chop 40 g onion.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "small, even pieces",
+      "cameraCheck": "chopped onion on the board",
+      "videoShot": "knife chopping onion"
+    },
+    {
+      "n": 11,
+      "title": "Grate ginger and garlic, slit chilli",
+      "text": "Grate 5 g ginger and 2 garlic cloves; slit 1 green chilli lengthwise.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "two small heaps of paste and a slit chilli",
+      "cameraCheck": "ginger, garlic and chilli on the board",
+      "videoShot": "garlic being grated"
+    },
+    {
+      "n": 12,
+      "title": "Melt butter",
+      "text": "Heat the heavy pan on medium and add 10 g butter (2 tsp).",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "butter melted and foaming, not browned",
+      "cameraCheck": "the pan with foaming butter",
+      "videoShot": "butter melting in the pan"
+    },
+    {
+      "n": 13,
+      "title": "Add cumin and onion",
+      "text": "Add ½ tsp cumin; when it sizzles (about 10 sec), add the onion and stir.",
+      "timerSec": 240,
+      "tip": null,
+      "visualCue": "onion soft and light golden",
+      "cameraCheck": "the pan",
+      "videoShot": "cumin sizzling, then onion going in"
+    },
+    {
+      "n": 14,
+      "title": "Add ginger, garlic and chilli",
+      "text": "Stir in the grated ginger, garlic and slit chilli.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "raw garlic smell gone",
+      "cameraCheck": "the pan",
+      "videoShot": "paste stirred into golden onion"
+    },
+    {
+      "n": 15,
+      "title": "Cook the tomato masala",
+      "text": "Add the tomato purée and ½ tsp Kashmiri chilli powder. Cook on medium, stirring often.",
+      "timerSec": 300,
+      "tip": "if it sticks, add 1 tbsp water, not more butter.",
+      "visualCue": "thick, deep-red masala with butter glistening at the edges",
+      "cameraCheck": "the pan, tilted to show the fat at the edge",
+      "videoShot": "thick masala bubbling"
+    },
+    {
+      "n": 16,
+      "title": "Combine dal and masala",
+      "text": "Tip the cooked dal (with its liquid) into the masala and stir. Add the remaining salt (1 g).",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "brown-black dal streaked with red masala",
+      "cameraCheck": "the pan",
+      "videoShot": "dal poured into the masala"
+    },
+    {
+      "n": 17,
+      "title": "Add water",
+      "text": "Add up to 100 ml water so the dal is loose and pourable.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "runs off the ladle like thin custard",
+      "cameraCheck": "the ladle lifted out of the dal",
+      "videoShot": "dal dripping from the ladle"
+    },
+    {
+      "n": 18,
+      "title": "Slow simmer",
+      "text": "Simmer on the lowest flame, partly covered, stirring and scraping the bottom every 3–4 min.",
+      "timerSec": 1800,
+      "tip": "this simmer is what makes it \"makhani\". Longer gives a silkier dal; more butter is not a substitute.",
+      "visualCue": "dal turns darker, glossy and creamy; lentils start to break down",
+      "cameraCheck": "the pan at the end of the simmer",
+      "videoShot": "lazy bubbles in thick, dark dal"
+    },
+    {
+      "n": 19,
+      "title": "Add cream",
+      "text": "Stir in 15 ml (3 tsp) fresh cream.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "dal turns a lighter, velvety brown",
+      "cameraCheck": "the pan",
+      "videoShot": "white cream swirled in and disappearing"
+    },
+    {
+      "n": 20,
+      "title": "Add garam masala and kasuri methi",
+      "text": "Sprinkle ¼ tsp garam masala, crush ½ tsp kasuri methi between your palms over the pan, and stir.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "aroma turns \"restaurant-like\"",
+      "cameraCheck": "the pan",
+      "videoShot": "kasuri methi crushed between palms"
+    },
+    {
+      "n": 21,
+      "title": "Final simmer",
+      "text": "Simmer 5 more min on low.",
+      "timerSec": 300,
+      "tip": null,
+      "visualCue": "thick but still pourable; coats the back of a spoon",
+      "cameraCheck": "the back of a spoon dipped in the dal",
+      "videoShot": "spoon lifted with a creamy coating"
+    },
+    {
+      "n": 22,
+      "title": "(Optional) Smoke the dal",
+      "text": "Turn off the heat. Heat a small piece of charcoal on the gas flame with tongs until it glows red, put it in a small steel bowl set on top of the dal, pour ¼ tsp ghee on it, and close the lid at once.",
+      "timerSec": 180,
+      "tip": "open a window and don't smoke longer than 3–4 min, or it tastes bitter. Remove the bowl and coal before serving.",
+      "visualCue": "thick white smoke when the ghee hits the coal",
+      "cameraCheck": "the small bowl sitting on the dal",
+      "videoShot": "ghee poured on glowing coal, lid closing"
+    },
+    {
+      "n": 23,
+      "title": "Finish and serve",
+      "text": "Taste for salt, pour into a bowl, top with the last 5 g butter and swirl 1 tsp (5 ml) cream on top.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "dark, glossy dal with a melting butter pat and white cream swirl",
+      "cameraCheck": "the finished bowl",
+      "videoShot": "slow pan across the bowl as the butter melts"
+    }
+  ],
+  "nutritionPerServing": {
+    "kcal": 380,
+    "proteinG": 15,
+    "carbsG": 41,
+    "fatG": 19,
+    "fibreG": 12
+  },
+  "microNutrientsEstimate": {
+    "values": {
+      "vitamin-c": 20.2
+    },
+    "coveragePct": 9,
+    "basis": "partial estimate from ingredient quantities"
+  },
+  "asOrdered": {
+    "price": {
+      "priceHistory": [
+        {
+          "date": "2026-10-09",
+          "min": 250,
+          "max": 330,
+          "avg": 295,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-10-09.md"
+        }
+      ],
+      "currentEstimate": {
+        "min": 250,
+        "max": 330,
+        "avg": 300
+      },
+      "method": "single",
+      "trend": "unknown",
+      "change30dPct": null,
+      "lastObserved": "2026-10-09",
+      "stale": false,
+      "seasonal": false,
+      "listingCount": 4,
+      "platforms": [
+        "Swiggy",
+        "Zomato"
+      ],
+      "outOfStock": false,
+      "confirmed": true,
+      "checkNotes": []
+    },
+    "nutrition": {
+      "calories": {
+        "value": null,
+        "source": null
+      },
+      "protein": {
+        "value": null,
+        "source": null
+      },
+      "carbs": {
+        "value": null,
+        "source": null
+      },
+      "fat": {
+        "value": null,
+        "source": null
+      },
+      "fibre": {
+        "value": null,
+        "source": null
+      }
+    },
+    "restaurantsSampled": null,
+    "platforms": [
+      "Swiggy",
+      "Zomato",
+      "magicpin"
+    ]
+  },
+  "orderPrice": {
+    "priceHistory": [
+      {
+        "date": "2026-10-09",
+        "min": 250,
+        "max": 330,
+        "avg": 295,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-10-09.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 250,
+      "max": 330,
+      "avg": 300
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-09",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 4,
+    "platforms": [
+      "Swiggy",
+      "Zomato"
+    ],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
+  },
+  "healthiness": {
+    "score": 7,
+    "restaurantScore": 4,
+    "reasons": [
+      "Whole urad and rajma give about 15 g plant protein and about 12 g fibre per bowl, with no frying and no added sugar. The weak point is saturated fat from butter and cream (~11 g of the ~19 g fat), even at FitPlate's measured 1 tbsp butter + 4 tsp cream. Restaurant versions often use several tablespoons of butter and cream per portion, plus more salt, which roughly doubles the fat."
+    ]
+  },
+  "researchRating": {
+    "score": 4.7,
+    "basis": "one of India's most-loved restaurant dals, a fixture on North Indian and dhaba menus, with very high recipe ratings and Mumbai \"best dal makhani\" round-ups. Common complaints are the long time and planning, dal that is \"not creamy\" because the urad was undercooked, and the heaviness of restaurant versions."
+  },
+  "storage": "Fridge-safe in an airtight container for 3 days (est.); it thickens and tastes better on day 2. Freezer: up to 1 month (est.), ideally before adding the final cream and butter. Reheating: on the stove on low with 3–4 tbsp water, stirring and scraping, until it bubbles gently, or 2 min in the microwave, covered, stirring halfway. Add a fresh teaspoon of cream after reheating if it looks split.",
+  "leftoverRemix": "Dal makhani paratha with a cheese pull. Cook the leftover dal down until thick and almost dry, mash it, mix in chopped onion, coriander and a pinch of chaat masala, and use it as a stuffing for parathas with a little grated cheese. Cook on a tawa with ½ tsp oil per side. Alternatively, loosen it with water and use it as a \"black dal soup\" topped with roasted cumin and lemon.",
+  "burnOff": "about 5.4 km of running (at ~70 kcal/km), or about 7.6 km of brisk walking (at ~50 kcal/km, est.). With 2 phulkas (about 550 kcal total (est.)): about 7.9 km running or 11 km walking (est.).",
+  "sources": [
+    "Veg Recipes of India, Dal Makhani (Authentic Punjabi / Restaurant Style): https://www.vegrecipesofindia.com/dal-makhani-restaurant-style-recipe/ and https://www.vegrecipesofindia.com/dal-makhani-recipe-dhaba-style/",
+    "Swasthi's Recipes (Indian Healthy Recipes), Dal Makhani (Restaurant Style): https://www.indianhealthyrecipes.com/dal-makhani-recipe/",
+    "My Ginger Garlic Kitchen, Restaurant Style Punjabi Dal Makhani: https://www.mygingergarlickitchen.com/PRINT-RECIPES/RECIPE-PRINT-restaurant-style-dal-makhani-punjabi-maa-ki-dal-video-recipe.html",
+    "Tarla Dalal, Dal Makhani (dhaba style): https://tarladalal.com/Dal-Makhani-30900r",
+    "Cook with Manali, Dal Makhani: https://cookwithmanali.com/dal-makhani and slow cooker version: https://www.cookwithmanali.com/wprm_print/slow-cooker-dal-makhani",
+    "My Food Story, Dal Makhani (stovetop, pressure cooker and Instant Pot): https://myfoodstory.com/wprm_print/dal-makhani-the-ultimate-recipe-for-stovetop-pressure-cooker-and-instant-pot",
+    "Ruchi's Veg Kitchen, Dal Makhni Restaurant Style: https://ruchisvegkitchen.com/2016/01/07/dal-makhni-restaurant-style/",
+    "All About Sikhs, Cuisine of Punjab: Dal Makhani: https://www.allaboutsikhs.com/cuisine-of-punjabdal-makhani/",
+    "J Cooking Odyssey, Dal Makhani: https://www.jcookingodyssey.com/dal-makhani-recipe/comment-page-3/",
+    "La Forte, Dal Makhani (urad:rajma 3:1, pressure cooker): https://la-forte.com/blogs/recipe/dal-makhani",
+    "PBS Food, Dal Makhani (soaking shortcut): https://www.pbs.org/food/recipes/dal-makhani-buttered-black-lentils",
+    "Hebbar's Kitchen, Dal Makhani: https://hebbarskitchen.com/wprm_print/recipe/37345",
+    "Hebbar's Kitchen (rating per snippet): https://hebbarskitchen.com/wprm_print/recipe/37345",
+    "Cook with Manali slow cooker dal makhani (rating per snippet): https://www.cookwithmanali.com/wprm_print/slow-cooker-dal-makhani",
+    "Tarla Dalal (rating per snippet): https://tarladalal.com/Dal-Makhani-30900r",
+    "Curly Tales, Best Dal Makhani in Mumbai: https://curlytales.com/best-dal-makhani-places-in-mumbai/",
+    "Wikipedia, Dal makhani: https://en.wikipedia.org/wiki/Dal_makhani",
+    "Swiggy, Best Dal Makhani Restaurants in Mumbai (dish page, via search snippet): https://www.swiggy.com/city/mumbai/dal-makhani-dish-restaurants",
+    "Swiggy, Masala Co by Prashant Corner, Kalyan East: https://www.swiggy.com/city/mumbai/masala-co-by-prashant-corner-east-kalyan-rest756015",
+    "Swiggy, Urban Tadka, Andheri West (dineout listing, area check only): https://www.swiggy.com/restaurants/mumbai/andheri-west/urban-tadka-190713/dineout",
+    "Zomato, Meal Bowl, Mahakali: https://www.zomato.com/mumbai/meal-bowl-mahakali/order",
+    "Zomato, Ghatkopar Social, Ghatkopar West: https://www.zomato.com/mumbai/ghatkopar-social-2-ghatkopar-west/order",
+    "Zomato, Dal Makhani delivery in Mumbai (cost for one only, not used): https://www.zomato.com/mumbai/delivery/dish-dal-makhani",
+    "Zomato, Dal Makhani in Mumbai (cost for two only, not used): https://www.zomato.com/mumbai/restaurants/dish-dal-makhani",
+    "Zomato, Makhani Darbar, New Panvel (no price visible, not used): https://www.zomato.com/mumbai/makhani-darbar-new-panvel-navi-mumbai/order",
+    "magicpin, Utsav Cuisine, Powai: https://magicpin.in/Mumbai/Powai/Restaurant/Utsav-Cuisine/store/24427/menu/",
+    "magicpin, Bhojanam, Mahim (combo, not used): https://magicpin.in/Mumbai/Mahim/Restaurant/Bhojanam/store/5652c4/menu",
+    "magicpin, Magic Cafe, Chakala (combo, not used): https://magicpin.in/Mumbai/Chakala/Restaurant/Magic-Cafe/store/370783/menu",
+    "EazyDiner, Achija Ghatkopar East (area check): https://www.eazydiner.com/mumbai/achija-ghatkopar-east-220734/about",
+    "Best Menu Hub, Taj Hotel Mumbai menu (premium, not used): https://bestmenuhub.com/taj-hotel-mumbai-menu/",
+    "USDA FoodData Central: https://fdc.nal.usda.gov/",
+    "IFCT 2017, Indian Food Composition Tables (ICMR-NIN): https://www.nin.res.in/ebooks/IFCT2017.pdf",
+    "Tarla Dalal, calories in dal makhani: https://www.tarladalal.com/calories-for-dal-makhani-30900",
+    "Delicious magazine, Dal makhani (Babur): https://www.deliciousmagazine.co.uk/recipes/dal-makhani/amp/",
+    "FatSecret, Haldiram's Dal Makhani (packaged): https://www.fatsecret.com.au/calories-nutrition/haldirams/dal-makhani/1-serving",
+    "EatThisMuch, Dal Makhani (packaged/user entries): https://www.eatthismuch.com/calories/dal-makhani-2108833",
+    "Swiggy Instamart, Tata Sampann Yumside Delhi Style Dal Makhani (grocery product): https://www.swiggy.com/instamart/p/tata-sampann-yumside-delhi-style-dal-makhani-XC61QUZGS1",
+    "FatSecret, Dal Makhani (generic database): https://www.fatsecret.com.au/calories-nutrition/generic/dal-makhani"
+  ],
+  "allergens": [
+    "milk"
+  ],
+  "dietClaims": [],
+  "fasting": null,
+  "dietTags": null,
+  "tags": [
+    "Veg",
+    "Contains milk",
+    "Lunch",
+    "Dinner",
+    "North Indian",
+    "Intermediate",
+    "High protein",
+    "High fibre"
+  ],
+  "description": null,
+  "familyId": null,
+  "variants": [],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-10-09",
+      "file": "FitPlate_Dishes_2026-10-09.md"
+    }
+  ],
+  "mergeMethod": {
+    "nutritionPerServing": "stable (single)",
+    "orderPrice": "price engine (single)",
+    "ingredients": "newest",
+    "steps": "newest",
+    "healthiness": "newest",
+    "researchRating": "newest",
+    "sources": "union",
+    "tags": "tag engine (tags.ts) on the merged dish"
+  },
+  "mergeNotes": []
+}

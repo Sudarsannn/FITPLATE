@@ -21,6 +21,7 @@ export default function RootLayout() {
           <Stack.Screen name="onboarding" options={{ animation: 'fade' }} />
           <Stack.Screen name="(tabs)" options={{ animation: 'fade' }} />
           <Stack.Screen name="dish/[id]" options={{ animation: 'ios_from_right' }} />
+          <Stack.Screen name="recipe/[id]" options={{ animation: 'ios_from_right' }} />
           <Stack.Screen name="cook/[id]" options={{ animation: 'slide_from_bottom', gestureEnabled: false }} />
           <Stack.Screen name="done/[id]" options={{ animation: 'fade' }} />
           <Stack.Screen name="shop/[id]" options={{ animation: 'ios_from_right' }} />

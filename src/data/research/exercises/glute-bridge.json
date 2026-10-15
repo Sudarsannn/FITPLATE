@@ -1,0 +1,821 @@
+{
+  "id": "glute-bridge",
+  "number": 4,
+  "name": "Glute bridge",
+  "otherNames": [
+    "Hip bridge",
+    "Floor bridge",
+    "Supine bridge",
+    "Bridging",
+    "Two-leg bridge",
+    "Marching bridge",
+    "Single-leg bridge"
+  ],
+  "section": "home",
+  "type": "strength",
+  "equipment": [],
+  "noEquipmentAlternative": "No equipment needed; use a folded bedsheet or towel instead of a mat on hard floors. Can be done on a firm bed.",
+  "musclesPrimary": [
+    "gluteus maximus",
+    "gluteus medius (single-leg version)"
+  ],
+  "musclesSecondary": [
+    "hamstrings (biceps femoris, semitendinosus, semimembranosus)",
+    "adductor magnus",
+    "erector spinae",
+    "transversus abdominis",
+    "obliques"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 3.5,
+  "compendiumCode": "02030",
+  "metOptions": [
+    {
+      "code": "02030",
+      "met": 3.5,
+      "activity": "MET: 3.5 (est.). The 2024 Adult Compendium of Physical Activities has no entry that names the glute bridge. The closest is code 02030, \"calisthenics, light or moderate effort, general (e.g., back exer"
+    },
+    {
+      "code": "02024",
+      "met": 2.8,
+      "activity": "MET: 3.5 (est.). The 2024 Adult Compendium of Physical Activities has no entry that names the glute bridge. The closest is code 02030, \"calisthenics, light or moderate effort, general (e.g., back exer"
+    },
+    {
+      "code": "02022",
+      "met": 3.8,
+      "activity": "MET: 3.5 (est.). The 2024 Adult Compendium of Physical Activities has no entry that names the glute bridge. The closest is code 02030, \"calisthenics, light or moderate effort, general (e.g., back exer"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "10-12 two-leg bridges",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "2 s up, 1 s hold, 2 s down",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 3,
+      "reps": "10-12 two-leg bridges (as one circuit station)",
+      "timeSec": null,
+      "restSec": 30,
+      "tempo": "2 s up, 1 s hold, 2 s down",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "10-12 two-leg bridges with 2 s squeeze",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2 s up, 2 s hold, 2 s down",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "strength",
+      "sets": 3,
+      "reps": "8-10 two-leg bridges with 5 s hold",
+      "timeSec": 5,
+      "restSec": 60,
+      "tempo": "2 s up, 5 s hold, 2 s down",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 2,
+      "reps": "15-20 two-leg bridges",
+      "timeSec": null,
+      "restSec": 30,
+      "tempo": "2 s up, 1 s hold, 2 s down",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "8-10 marches per side (marching bridge)",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "hold bridge, 1-2 s per march",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "8-12 single-leg bridges per side",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2 s up, 2 s hold, 3 s down",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "strength",
+      "sets": 3,
+      "reps": "6-8 single-leg bridges per side with 3-5 s hold",
+      "timeSec": 5,
+      "restSec": 90,
+      "tempo": "2 s up, 3-5 s hold, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "20-25 two-leg bridges",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "2 s up, 1 s hold, 2 s down",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "12-15 single-leg bridges per side",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "2 s up, 1 s hold, 2 s down",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "8-12 weighted bridges or shoulder-elevated hip thrusts",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "2 s up, 1 s hold, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": 4,
+      "reps": "5-8 heavy weighted bridges or hip thrusts",
+      "timeSec": null,
+      "restSec": 120,
+      "tempo": "controlled up, 1 s hold, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "15-20 single-leg bridges per side",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "2 s up, 1 s hold, 2 s down",
+      "perWeek": 3
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle",
+      "left_heel",
+      "right_heel",
+      "left_foot_index",
+      "right_foot_index"
+    ],
+    "phases": [
+      {
+        "name": "bottom",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": "<= 145",
+        "parsed": {
+          "op": "<=",
+          "value": 145,
+          "max": null
+        }
+      },
+      {
+        "name": "top",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": ">= 165",
+        "parsed": {
+          "op": ">=",
+          "value": 165,
+          "max": null
+        }
+      },
+      {
+        "name": "top_target",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": "170-185",
+        "parsed": {
+          "op": "between",
+          "value": 170,
+          "max": 185
+        }
+      },
+      {
+        "name": "all_phases",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": "70-110",
+        "parsed": {
+          "op": "between",
+          "value": 70,
+          "max": 110
+        }
+      }
+    ],
+    "minRepSec": 1.5
+  },
+  "formChecks": [
+    {
+      "joint": "hip",
+      "rule": "top hip angle < 160 degrees",
+      "message": "Lift a little higher: knees, hips, shoulders in a line"
+    },
+    {
+      "joint": "hip",
+      "rule": "hip angle > 195 degrees or hip well above shoulder-knee line",
+      "message": "Too high: ribs down, squeeze your buttocks"
+    },
+    {
+      "joint": "knee",
+      "rule": "knee angle at top > 115 degrees",
+      "message": "Walk your feet closer"
+    },
+    {
+      "joint": "knee",
+      "rule": "knee angle at top < 65 degrees",
+      "message": "Move your feet a little further away"
+    },
+    {
+      "joint": "ankle",
+      "rule": "heel landmark rises above foot-index landmark beyond margin",
+      "message": "Keep your heels down"
+    },
+    {
+      "joint": "hip",
+      "rule": "rep duration < 1.5 s or lowering < 1 s",
+      "message": "Slow down: 2 seconds up, 2 down"
+    },
+    {
+      "joint": "knee",
+      "rule": "front view: knee distance smaller than ankle distance beyond margin",
+      "message": "Knees over your toes"
+    },
+    {
+      "joint": "hip",
+      "rule": "single-leg, front view: left and right hip heights differ beyond margin",
+      "message": "Keep your hips level"
+    }
+  ],
+  "safetyFlags": [
+    "pregnancy_after_first_trimester_avoid_lying_flat",
+    "postpartum_get_clearance_first",
+    "acute_low_back_pain_use_small_range",
+    "uncontrolled_high_blood_pressure_breathe_continuously",
+    "neck_problems_keep_weight_on_upper_back",
+    "recent_hip_spine_abdominal_or_knee_surgery",
+    "hamstring_injury_avoid_single_leg"
+  ],
+  "progressions": [
+    "longer top hold (5-10 s)",
+    "marching bridge",
+    "single-leg bridge",
+    "band-around-knees bridge",
+    "feet-elevated bridge",
+    "weighted bridge",
+    "shoulder-elevated hip thrust"
+  ],
+  "regressions": [
+    "pelvic tilt / small-range bridge",
+    "partial-range bridge",
+    "short isometric holds (3-5 s)",
+    "bridge on a firm bed"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "side, floor level, 2 m",
+      "shows": "setup: lying, knees bent, feet hip-width, heels 15-20 cm from buttocks",
+      "textOverlay": "Feet hip-width, heels close"
+    },
+    {
+      "seconds": 6,
+      "angle": "overhead, 1.5 m",
+      "shows": "foot placement, toes forward",
+      "textOverlay": "Toes forward"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, floor level, 2 m",
+      "shows": "brace, squeeze, lift to straight line, hold, lower slowly",
+      "textOverlay": "Squeeze, then lift. Knees-hips-shoulders in a line."
+    },
+    {
+      "seconds": 6,
+      "angle": "side, split screen",
+      "shows": "too low vs arched vs correct",
+      "textOverlay": "Too low / Arched / Correct"
+    },
+    {
+      "seconds": 6,
+      "angle": "front from feet end, floor level, 2 m",
+      "shows": "knees over toes vs knees caving",
+      "textOverlay": "Knees over toes"
+    },
+    {
+      "seconds": 8,
+      "angle": "front from feet end, 2 m",
+      "shows": "marching bridge with level hips",
+      "textOverlay": "Hips stay level"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, floor level, 2 m",
+      "shows": "single-leg bridge lift and lower",
+      "textOverlay": "Push through the heel"
+    },
+    {
+      "seconds": 6,
+      "angle": "close-up, 1 m",
+      "shows": "heels down vs heels lifting; feet closer for hamstring cramp",
+      "textOverlay": "Heels heavy. Cramping? Feet closer."
+    }
+  ],
+  "lastResearched": "2026-10-15",
+  "setupSteps": [
+    "Clear a strip of floor about 1.8 m x 0.8 m (est.). Make sure nothing sharp is near your head or feet.",
+    "Lay the mat lengthwise. On a hard floor, add a folded towel under the upper back.",
+    "Lie on your back with your head on the mat. A thin folded towel under the head is fine if your neck feels strained, but not a thick pillow.",
+    "Bend both knees and put your feet flat on the floor.",
+    "Foot width: feet hip-width apart, toes pointing forward (NASM).",
+    "Foot distance: heels about 15–20 cm (6–8 inches) from your buttocks (NASM). A quick check: when you lift your hips, your shins should be close to vertical, with the knees above the ankles (NASM floor bridge: feet directly under the knees at the top). Some NHS sheets say \"feet close to the buttocks\".",
+    "Arms: lie them on the floor at your sides, palms down, about 30–45 degrees from your body (est.). They give light support; do not push hard through them.",
+    "Spine: let your lower back rest in its natural position. There may be a small gap under the lower back. Do not force it flat or arch it.",
+    "Head and eyes: look straight up at the ceiling. Do not turn the head while lifting.",
+    "Clothing: fitted track pants or leggings so you (and the camera) can see your hip and knee line."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": "A. Two-leg glute bridge (main version)",
+      "title": "Press the feet into the floor",
+      "action": "Spread your weight evenly through each whole foot, like a tripod (big-toe joint, little-toe joint and heel). Keep the heels down.",
+      "feel": "Light pressure through the heels and the balls of the feet.",
+      "breathing": "Breathe in normally.",
+      "tempo": null,
+      "visualCheck": "Side: heels flat on the floor, toes not lifted. Front: feet hip-width, toes forward."
+    },
+    {
+      "n": 2,
+      "part": "A. Two-leg glute bridge (main version)",
+      "title": "Brace the stomach",
+      "action": "Gently tighten your stomach, as if you were about to cough. Do not suck it in hard.",
+      "feel": "A light firmness around the waist; your lower ribs stay down.",
+      "breathing": "Start a slow breath out.",
+      "tempo": null,
+      "visualCheck": "Side: lower ribs do not flare up toward the ceiling."
+    },
+    {
+      "n": 3,
+      "part": "A. Two-leg glute bridge (main version)",
+      "title": "Squeeze the buttocks",
+      "action": "Squeeze your buttocks together before your hips leave the floor (NHS and NASM both cue the squeeze first).",
+      "feel": "Your buttocks tighten while you are still lying down.",
+      "breathing": "Continue breathing out.",
+      "tempo": null,
+      "visualCheck": "The pelvis may tilt very slightly (tail bone curls up a little); nothing else moves."
+    },
+    {
+      "n": 4,
+      "part": "A. Two-leg glute bridge (main version)",
+      "title": "Lift the hips",
+      "action": "Push through your feet and lift your hips off the floor until your body forms a straight line from your knees through your hips to your shoulders (NASM).",
+      "feel": "The work is mostly in the buttocks, with some in the back of the thighs. No pinch in the lower back.",
+      "breathing": "Breathe out as you lift (Mayo Clinic).",
+      "tempo": null,
+      "visualCheck": "Side: straight line from knee to hip to shoulder; shins close to vertical; weight on the upper back and shoulders, not on the neck. Front: knees stay hip-width (not falling in or flaring out); hips level."
+    },
+    {
+      "n": 5,
+      "part": "A. Two-leg glute bridge (main version)",
+      "title": "Hold at the top",
+      "action": "Keep squeezing the buttocks. Do not push the hips higher than the straight line.",
+      "feel": "Strong squeeze in the buttocks; stomach lightly braced.",
+      "breathing": "Keep breathing; do not hold your breath. On longer holds, breathe slowly in and out.",
+      "tempo": null,
+      "visualCheck": "Side: hips do not sag below the line or rise above it (no arch in the lower back). Front: pelvis level, knees still in line with the feet."
+    },
+    {
+      "n": 6,
+      "part": "A. Two-leg glute bridge (main version)",
+      "title": "Lower with control",
+      "action": "Slowly lower your hips back to the floor, putting your back down from the upper back to the tail bone.",
+      "feel": "Buttocks still working as they control the lowering.",
+      "breathing": "Breathe in as you lower.",
+      "tempo": null,
+      "visualCheck": "No dropping or bouncing off the floor."
+    },
+    {
+      "n": 7,
+      "part": "A. Two-leg glute bridge (main version)",
+      "title": "Reset",
+      "action": "Let the buttocks touch the floor lightly, relax for a moment, check your feet have not slid away, then start the next rep.",
+      "feel": null,
+      "breathing": "One easy breath.",
+      "tempo": null,
+      "visualCheck": "Feet still in the start spot."
+    },
+    {
+      "n": 8,
+      "part": "B. Marching bridge (first progression)",
+      "title": "Lift into the two-leg bridge (steps 1–5 above)",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 9,
+      "part": "B. Marching bridge (first progression)",
+      "title": "Keeping the hips level, lift one foot a few centimetres off the floor, knee still bent. Feel the standing-side buttock work harder. Breathe out as the foot lifts. About 1–2 seconds",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 10,
+      "part": "B. Marching bridge (first progression)",
+      "title": "Put the foot back down. Breathe in",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 11,
+      "part": "B. Marching bridge (first progression)",
+      "title": "Repeat with the other foot. Visual check (front): the hips do not drop or twist toward the lifted leg",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 12,
+      "part": "B. Marching bridge (first progression)",
+      "title": "Lower the hips after the planned number of marches",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 13,
+      "part": "C. Single-leg bridge (harder progression)",
+      "title": "From the setup position, straighten one leg (or lift it with the knee bent, pulled gently toward the chest, as in ACE's single-leg progression). Keep both thighs level with each other",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 14,
+      "part": "C. Single-leg bridge (harder progression)",
+      "title": "Brace the stomach and squeeze the buttock on the side of the foot that is on the floor",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 15,
+      "part": "C. Single-leg bridge (harder progression)",
+      "title": "Push through the heel on the floor and lift the hips until the line from the knee through the hip to the shoulder is straight. Breathe out. About 2 seconds",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 16,
+      "part": "C. Single-leg bridge (harder progression)",
+      "title": "Hold 1–2 seconds. The pelvis must stay level (NHS: keep the pelvis \"as level as possible\"; no dropping or rotating)",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 17,
+      "part": "C. Single-leg bridge (harder progression)",
+      "title": "Lower in 2–3 seconds. Breathe in",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 18,
+      "part": "C. Single-leg bridge (harder progression)",
+      "title": "Finish all reps on one side, then switch. Do the same number on each side",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Arching the lower back at the top (lifting too high)",
+      "text": "Arching the lower back at the top (lifting too high). Why: the lower back muscles take over and the joints at the back of the spine are pinched, while the buttocks do less. Fix: stop when the knee–hip–shoulder line is straight; keep the ribs down and buttocks squeezed. If you feel the lower back, lower a little."
+    },
+    {
+      "title": "Hamstring cramp or doing it all with the back of the thigh",
+      "text": "Hamstring cramp or doing it all with the back of the thigh. Why: feet are usually too far from the buttocks, which makes the hamstrings do more (EMG shows hamstring activity rises as the knee straightens). Fix: walk the feet 2–5 cm (est.) closer and push through the heels. Some hamstring work is normal."
+    },
+    {
+      "title": "Pushing through the toes (heels lifting)",
+      "text": "Pushing through the toes (heels lifting). Why: shifts work to the front of the thighs and calves. Fix: whole-foot tripod with heels heavy."
+    },
+    {
+      "title": "Knees falling in or flaring out",
+      "text": "Knees falling in or flaring out. Why: reduces side-hip work and can strain the knees. Fix: knees over the second toe, hip-width; a cushion or rolled towel held lightly between the knees can help you feel the line (note: squeezing between the knees, hip adduction, increased hamstring and back activity in one Korean study, so keep the squeeze light)."
+    },
+    {
+      "title": "Rushing and bouncing the hips off the floor",
+      "text": "Rushing and bouncing the hips off the floor. Why: momentum does the work and the top squeeze is skipped. Fix: 2 seconds up, 1–2 seconds hold, 2–3 seconds down."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. Why: breath-holding raises blood pressure (a concern for people with high blood pressure or heart disease). Fix: breathe out on the way up, in on the way down."
+    },
+    {
+      "title": "Single-leg version: hips dropping or twisting toward the lifted leg",
+      "text": "Single-leg version: hips dropping or twisting toward the lifted leg. Why: the target side-hip muscles are not doing their job and the lower back twists. Fix: lower the hips a little, slow down, or go back to the marching bridge."
+    },
+    {
+      "title": "Pushing with the arms or head",
+      "text": "Pushing with the arms or head. Why: strains the neck and shoulders and makes the hips work less. Fix: arms relaxed; eyes up."
+    }
+  ],
+  "safetyNotes": [
+    "Lower back problems: usually included in physiotherapy back programmes, but lift only to a straight line, never into an arch, and use the small-range version during a flare-up. Stop if pain spreads down a leg.",
+    "Pregnancy: after the first trimester, ACOG-based guidance commonly advises avoiding exercises lying flat on the back, because the womb can press on the large blood vessels and cause dizziness or low blood pressure. Some sources describe short supine periods as acceptable if the person feels well. FitPlate default: avoid after the first trimester; swap to standing hip exercises (see section 13).",
+    "Postpartum: pelvic floor exercises can usually start early; bridges are a common gentle postnatal exercise, but get clearance from your midwife, GP or pelvic-health physiotherapist first, especially after a caesarean.",
+    "High blood pressure and heart disease: breathe continuously; avoid long, maximal-effort holds; get clearance if blood pressure is uncontrolled.",
+    "Neck problems: keep the weight on the upper back, not the neck; do not lift so high that the neck bends forward.",
+    "Recent hip, spine, abdominal or knee surgery: only with your surgeon's or physiotherapist's approval.",
+    "Hamstring injury: single-leg and feet-far versions load the hamstrings more; keep feet close and use the two-leg version."
+  ],
+  "sources": [
+    "ACE Fitness, Exercise Library: Glute Bridge (and Glute Bridge Single Leg Progression). https://www.acefitness.org/resources/everyone/exercise-library/57/glute-bridge/",
+    "NASM, How to do a glute bridge (setup: feet hip-width, heels 6–8 in from glutes; straight line knees to shoulders; Phase 1 2 x 12). https://blog.nasm.org/how-to-do-a-glute-bridge",
+    "NASM, Exercise library: Floor Bridge. https://www.nasm.org/resource-center/exercise-library/floor-bridge",
+    "NASM, Why the glute bridge belongs in almost every client program. https://www.nasm.org/resource-center/blog/training/why-the-glute-bridge-belongs-in-almost-every-client-program",
+    "Mayo Clinic, Video: The glutes exercise you need to know about. https://mayoclinic.org/connected-care/the-glutes-exercise-you-need-to-know-about/vid-20307390",
+    "Mayo Clinic Care Network, Video: Bridge with fitness ball. https://www.mymlc.com/health-information/videos/fitness/strength-training/core-exercises/video-bridge-with-fitness-ball/",
+    "Harvard Health Publishing, More strengthening exercises (bridge muscles). https://www.health.harvard.edu/newsletter_article/more_strengthening_exercises",
+    "Wrightington, Wigan and Leigh NHS Teaching Hospitals, Low Back Pain Exercises leaflets (levels 1–2). https://www.wwl.nhs.uk/media/.leaflets/6214e7c8e2e1f0.63708939.pdf ; https://www.wwl.nhs.uk/pdfreader/cnv-wwl-68ca8bceac0271.70461764",
+    "NHS Fife, Back pain advice (bridge, 10 s hold x 10). https://www.nhsfife.org/media/33403/back-pain-advice-updated-21052020.pdf",
+    "2024 Adult Compendium of Physical Activities (Herrmann et al., J Sport Health Sci 2024): activity list and Conditioning Exercise page (codes 02030, 02024, 02022). https://pacompendium.com/wp-content/uploads/2024/02/1_2024-adult-compendium_1_2024.pdf ; https://pacompendium.com/conditioning-exercise/ ; https://pubmed.ncbi.nlm.nih.gov/38242596/",
+    "Gluteal EMG review table (2014), %MVIC for double- and single-limb bridge. https://pmc.ncbi.nlm.nih.gov/articles/PMC4004121/table/T2",
+    "Lehecka BJ et al. (2017), single-leg bridge at 90 vs 135 degrees knee flexion, gluteal and hamstring EMG. https://pmc.ncbi.nlm.nih.gov/articles/PMC5534144/",
+    "Supine unilateral bridge vs resisted hip extension EMG (Brookbush Institute summary). https://brookbushinstitute.com/articles/electromyographic-analysis-of-gluteus-maximus-and-hamstring-activity-during-the-supine-resisted-hip-extension-exercise-versus-supine-unilateral-bridge-to-neutral",
+    "Colonna S et al. (2025), Supine Bridge Exercise: A Narrative Review of the Literature (Part I), Cureus. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11981018/",
+    "Colonna S et al. (2025), Supine Bridge Exercise for Low Back Pain (Part II), Cureus. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12145699/",
+    "Ojoawo AO et al. (2021), bridging vs V-sitting in chronic low back pain, Eur J Clin Exp Med. https://journals.ur.edu.pl/ejcem/article/view/11886",
+    "Hip adduction/abduction during bridging EMG (Brookbush Institute summary of Korean study). https://brookbushinstitute.com/articles/hip-abduction-increased-glute-max-activation-in-bridging-exercise",
+    "Contreras B et al. (2015), barbell hip thrust vs back squat EMG. https://ro.ecu.edu.au/ecuworkspost2013/1592",
+    "ACSM (Zaleski), exercise for hypertension. https://acsm.org/?p=18319",
+    "Colberg SR et al. (2016) ADA position statement, key points. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/",
+    "ACC summary of the 2023 AHA scientific statement on resistance exercise training. https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2023/12/19/15/33/resistance-exercise-training",
+    "Patient Care Online, AHA 2007 statement on resistance training for cardiac patients. https://www.patientcareonline.com/view/aha-says-weight-training-may-benefit-cardiac-patients",
+    "AHA Professional, Physical activity as first-line treatment for elevated BP or cholesterol (Gibbs et al.). https://professional.heart.org/en/science-news/Physical-Activity-as-a-Critical-Component-of-First-Line-Treatment-for-Elevated-BP-or-Cholesterol/commentary",
+    "Donnelly JE et al. (2009), ACSM position stand on physical activity for weight loss. https://pubmed.ncbi.nlm.nih.gov/19127177/",
+    "Exercise in the management of PCOS: position statement / 2023 guideline evidence review. https://vuir.vu.edu.au/45855/1/1-s2.0-S2772696723000054-main.pdf",
+    "Effect of physical exercise in people with hypothyroidism: systematic review and meta-analysis (2023). https://pubmed.ncbi.nlm.nih.gov/37999992/",
+    "WebMD, Exercises for underactive thyroid (quoting Mayo Clinic endocrinologist). https://www.webmd.com/women/features/exercises-underactive-thyroid",
+    "Pharmacy Magazine CPD, Exercise and asthma. https://www.pharmacymagazine.co.uk/cpd-modules/making-a-difference-in-asthma-care/exercise-and-asthma-528343",
+    "Pure Physiotherapy, Knee osteoarthritis intermediate/advanced programmes (hip bridge, single-leg bridge). https://purephysiotherapy.co.uk/exercise-plans/intermediate-knee-osteoarthritis-exercise-programme/",
+    "Covenant Health (Alberta), Osteoporosis strengthening exercises: lower extremity (2024). https://covenanthealth.ca/sites/default/files/2024-08/osteoporosis-strengthening-exercises-lower-extremity.pdf",
+    "ACOG Committee Opinion No. 804 (2020), Physical activity and exercise during pregnancy and the postpartum period (abstract record). https://opqic.org/acog-committee-opinion-no-804-physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period/",
+    "Riverview Health, Pregnancy exercise (summarising ACOG guidance on lying on the back). https://riverview.org/sites/womens/article/pregnancy-exercise",
+    "OB/GYN Project, exercise in pregnancy (supine position after 20 weeks). https://www.obgproject.com/tag/exercise-pregnancy/",
+    "Norfolk and Norwich University Hospitals NHS, Post-natal physiotherapy advice and exercises. https://www.nnuh.nhs.uk/publication/download/post-natal-physiotherapy-advice-and-exercises-v2-1",
+    "Royal Devon University Healthcare NHS, Postnatal physiotherapy advice. https://www.royaldevon.nhs.uk/media/ibneih1b/patient-information-leaflet-postnatal-physiotherapy-advice-rde-20-143-001.pdf",
+    "Livestrong, 7 glute bridge mistakes (coaching cues; lower-evidence source). https://livestrong.com/article/13730397-glute-bridge-exercise-mistakes",
+    "arXiv (2023), pose-based repetition counting limitations (viewpoint). https://arxiv.org/html/2308.08632v2"
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 28.6,
+      "70kg": 24.5,
+      "80kg": 21.4
+    },
+    "per300kcal": {
+      "60kg": 85.7,
+      "70kg": 73.5,
+      "80kg": 64.3
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "strength",
+    "mobility",
+    "yoga",
+    "beginner",
+    "small_flat",
+    "neighbours_below",
+    "short_sessions",
+    "back_care",
+    "warm_up"
+  ],
+  "swapsByAccess": {
+    "none": "Bodyweight squat (Home 1) or standing hip extension holding a chair",
+    "home_equipment": "Dumbbell Romanian deadlift (Home 16) or resistance band squat and lateral walk (Home 24)",
+    "basic_gym": "Bench hip thrust (Gym 17) or standing cable/band glute kickback",
+    "full_gym": "Hip thrust machine or barbell hip thrust (Gym 17); standing option: hip abductor machine (Gym 18) or leg press (Gym 10)"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "Breathe out on lift, no breath-holding, short top holds, moderate effort; uncontrolled BP needs clearance",
+      "source": "ACSM hypertension exercise guidance"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "Use on 2-3 non-consecutive resistance days per week; usual glucose checks if on insulin or sulfonylureas",
+      "source": "ADA position statement, Colberg et al. 2016"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "After clearance: 1 set of 10-15 light reps, rhythmic breathing, no straining",
+      "source": "AHA resistance exercise statements (2007, 2023)"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "Part of 2+ days/week resistance work with aerobic activity",
+      "source": "AHA scientific statement (Gibbs et al.)"
+    },
+    {
+      "condition": "obesity",
+      "status": "ok",
+      "change": "Thicker mat; get down and up via side-lying and kneeling; pair with aerobic work",
+      "source": "ACSM weight management position stand (Donnelly et al. 2009)"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "Fits muscle-strengthening guidance; no bridge-specific advice found",
+      "source": "International PCOS guideline 2023 / exercise position statement"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "Train normally if controlled; start at beginner level with ongoing fatigue",
+      "source": "Systematic review 2023 (PubMed 37999992)"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Low intensity; warm up and keep reliever inhaler nearby",
+      "source": "Asthma exercise guidance (Pharmacy Magazine CPD citing Asthma UK)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "ok",
+      "change": "Hip strengthening is part of knee OA programmes; keep feet close enough that knees do not ache",
+      "source": "Physiotherapy knee OA exercise programmes"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Lift only to straight line, never arch; small-range version in flare; stop with leg pain",
+      "source": "NHS physiotherapy low back pain sheets; Ojoawo et al. 2021"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "ok",
+      "change": "Little shoulder load; arms relaxed at sides (no condition-specific source found)",
+      "source": "Not found"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "ok",
+      "change": "5-10 reps, 3x/week; lower slowly; avoid adding rounded-back moves",
+      "source": "Covenant Health osteoporosis strengthening handout 2024"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "modify",
+      "change": "After first trimester avoid lying flat on back; swap to standing hip exercises; ask obstetrician",
+      "source": "ACOG Committee Opinion 804 / ACOG FAQ (secondary citations)"
+    },
+    {
+      "condition": "postpartum",
+      "status": "modify",
+      "change": "Pelvic floor work first; gentle bridges once cleared, especially after caesarean",
+      "source": "NHS postnatal physiotherapy leaflets (NNUH, Royal Devon)"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Only with surgeon or physiotherapist approval",
+      "source": "Not found"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "home",
+      "gym"
+    ],
+    "bodyRegion": [
+      "lower",
+      "core"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "muscle",
+      "strength",
+      "endurance"
+    ],
+    "intensity": "light",
+    "noise": "quiet",
+    "space": "mat_only",
+    "typicalMinutes": 5,
+    "kcalPer10min70kg": 41,
+    "difficulty1to5": 1,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Home",
+    "Gym",
+    "No equipment",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Strength",
+    "Glutes",
+    "Rep counter",
+    "Under 10 min"
+  ],
+  "needsReview": [
+    "rep_counter phase \"top_target\" (hip (shoulder-hip-knee)): angle \"170-185\" is above 180°, which an unsigned three-point angle can't reach",
+    "form check \"hip angle > 195 degrees or hip well above shoulder-knee line\": angle 195 is above 180°, which an unsigned three-point angle can't reach"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-15",
+      "file": "FitPlate_Fitness_2026-10-15.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

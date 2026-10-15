@@ -1,0 +1,84 @@
+{
+  "id": "chole-masala",
+  "name": "Chole masala",
+  "aliases": [
+    "chole",
+    "chana masala"
+  ],
+  "category": "Spice (packaged blend)",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-05",
+        "min": 680,
+        "max": 920,
+        "avg": 800,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-05.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 680,
+      "max": 920,
+      "avg": 800
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-05",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 5,
+    "platforms": [
+      "Amazon",
+      "BigBasket"
+    ],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
+  },
+  "per100Estimate": {
+    "min": 68,
+    "max": 92,
+    "avg": 80
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 330,
+    "proteinG": 12,
+    "carbsG": 45,
+    "fatG": 10,
+    "fibreG": 25
+  },
+  "storage": "Room temperature, in an airtight jar away from the stove, sunlight and steam. Use within 3–4 months of opening for best aroma. Always use a dry spoon.",
+  "substitutes": [
+    "Garam masala + amchur (about 3:1) + a pinch of chilli",
+    "Pav bhaji or chana masala-style blends from the same brand",
+    "Homemade roasted blend (coriander, cumin, black cardamom, cloves, anardana, amchur)"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 8,
+      "quantity": 3,
+      "unit": "g",
+      "raw": "3 g (1 level tsp)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-05",
+      "file": "FitPlate_Ingredients_2026-10-05.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

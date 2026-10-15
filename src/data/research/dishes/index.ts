@@ -21,6 +21,16 @@ import item_017_palak_paneer from './017-palak-paneer.json';
 import item_018_chicken_tikka_masala from './018-chicken-tikka-masala.json';
 import item_019_jeera_rice from './019-jeera-rice.json';
 import item_020_vada_pav from './020-vada-pav.json';
+import item_021_masala_omelette from './021-masala-omelette.json';
+import item_022_kadai_paneer from './022-kadai-paneer.json';
+import item_023_mutton_rogan_josh from './023-mutton-rogan-josh.json';
+import item_024_medu_vada from './024-medu-vada.json';
+import item_025_veg_pulao from './025-veg-pulao.json';
+import item_026_moong_dal_chilla from './026-moong-dal-chilla.json';
+import item_027_dal_makhani from './027-dal-makhani.json';
+import item_028_chicken_65 from './028-chicken-65.json';
+import item_029_misal_pav from './029-misal-pav.json';
+import item_030_lemon_rice from './030-lemon-rice.json';
 
 export const items: Dish[] = [
   item_001_poha as unknown as Dish,
@@ -43,4 +53,14 @@ export const items: Dish[] = [
   item_018_chicken_tikka_masala as unknown as Dish,
   item_019_jeera_rice as unknown as Dish,
   item_020_vada_pav as unknown as Dish,
+  item_021_masala_omelette as unknown as Dish,
+  item_022_kadai_paneer as unknown as Dish,
+  item_023_mutton_rogan_josh as unknown as Dish,
+  item_024_medu_vada as unknown as Dish,
+  item_025_veg_pulao as unknown as Dish,
+  item_026_moong_dal_chilla as unknown as Dish,
+  item_027_dal_makhani as unknown as Dish,
+  item_028_chicken_65 as unknown as Dish,
+  item_029_misal_pav as unknown as Dish,
+  item_030_lemon_rice as unknown as Dish,
 ];

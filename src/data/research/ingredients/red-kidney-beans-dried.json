@@ -1,0 +1,84 @@
+{
+  "id": "red-kidney-beans-dried",
+  "name": "Red kidney beans, dried",
+  "aliases": [
+    "rajma"
+  ],
+  "category": "Pulse",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-06",
+        "min": 150,
+        "max": 200,
+        "avg": 185,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-06.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 150,
+      "max": 200,
+      "avg": 185
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-06",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 5,
+    "platforms": [
+      "Amazon",
+      "BigBasket",
+      "pricee.com"
+    ],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
+  },
+  "per100Estimate": {
+    "min": 15,
+    "max": 20,
+    "avg": 18.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 345,
+    "proteinG": 24,
+    "carbsG": 60,
+    "fatG": 1,
+    "fibreG": 25
+  },
+  "storage": "Dry: airtight container in a cool, dark cupboard for up to 12 months. Add a dried red chilli or bay leaf against insects. Cooked: fridge 3–4 days; freezer up to 3 months.",
+  "substitutes": [
+    "Canned/boiled ready rajma",
+    "Chitra or Jammu rajma",
+    "Kabuli chana or lobia (black-eyed beans)"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 12,
+      "quantity": 50,
+      "unit": "g",
+      "raw": "50 g dry (about 125 g once boiled)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-06",
+      "file": "FitPlate_Ingredients_2026-10-06.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

@@ -1,0 +1,84 @@
+{
+  "id": "mutton-goat-bone-in-curry-cut",
+  "name": "Mutton, goat, bone-in curry cut",
+  "aliases": [
+    "bakre ka gosht",
+    "mutton"
+  ],
+  "category": "Meat/seafood",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-08",
+        "min": 885,
+        "max": 945,
+        "avg": 915,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-08.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 885,
+      "max": 945,
+      "avg": 915
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-08",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 3,
+    "platforms": [
+      "BigBasket",
+      "OneIndia"
+    ],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
+  },
+  "per100Estimate": {
+    "min": 88.5,
+    "max": 94.5,
+    "avg": 91.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 111,
+    "proteinG": 21.1,
+    "carbsG": null,
+    "fatG": 2.4,
+    "fibreG": null
+  },
+  "storage": "1–2 days, in a covered box on the lowest shelf.",
+  "substitutes": [
+    "Lamb (sheep) curry cut",
+    "Chicken curry cut (bone-in)",
+    "Boneless mutton"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 23,
+      "quantity": 200,
+      "unit": "g",
+      "raw": "200 g bone-in curry cut (about 150 g edible meat; 5–6 medium pieces)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-08",
+      "file": "FitPlate_Ingredients_2026-10-08.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

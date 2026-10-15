@@ -242,8 +242,23 @@ export type HealthConditionData = {
    * doctor's advice". Once any version says true it stays true (safety first).
    */
   requiresDoctorInput: boolean;
+  /**
+   * Review 2026-10-15 FIX 1: true when the research file states
+   * `requires_doctor_input` itself; false when the importer decided it
+   * (missing flag: true if the profile carries a water, sodium or
+   * protein/potassium/phosphorus/fluid limit, else false).
+   */
+  requiresDoctorInputStated: boolean;
+  /**
+   * SPEC-ADDENDA §8: FOLLOW_DOCTOR_LINE whenever the profile carries a water
+   * or fluid number; null otherwise. The app shows it next to that number.
+   */
+  fluidNote: string | null;
   warnings: string[];
   lastResearched: string | null;
 };
+
+/** SPEC-ADDENDA §8 display line for any condition water or fluid number. */
+export const FOLLOW_DOCTOR_LINE = "Follow your doctor's advice";
 
 export type HealthCondition = Reviewed & HealthConditionData;

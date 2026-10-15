@@ -22,6 +22,25 @@ export type PriceEstimate = {
   lastObserved: string | null;
   stale: boolean;
   seasonal: boolean;
+} & Partial<PriceCheck>;
+
+/**
+ * Review 2026-10-15 FIX 2: what backs the newest researched range, and
+ * whether it passes the checks in services/data/priceChecks.ts. Optional on
+ * PriceEstimate so records built before the check still type-check; a missing
+ * `confirmed` means "not checked", which the app treats as not confirmed.
+ */
+export type PriceCheck = {
+  /** Distinct listings (table rows) whose price backs the range; null when the file's table could not be read. */
+  listingCount: number | null;
+  /** Platforms of those listings (e.g. ["Swiggy", "Zomato"]); empty when not readable. */
+  platforms: string[];
+  /** A listing used for the range is marked out of stock (dishes: outlet closed / not taking orders). */
+  outOfStock: boolean;
+  /** True only when every check passes; only confirmed prices may be shown as a headline or used for "money saved". */
+  confirmed: boolean;
+  /** Why the price is not confirmed (empty when confirmed). */
+  checkNotes: string[];
 };
 
 export type SourcedValue = { value: number | null; source: string | null; confidence?: Confidence | null };

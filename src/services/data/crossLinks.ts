@@ -18,7 +18,7 @@ export type AliasMap = Record<string, string>;
  * Brackets in dish lines also hold notes ("optional", "for the stir-fry",
  * "e.g. Amul", "25% fat"). Only short, plain names are learned as aliases.
  */
-const NOT_A_NAME = /\b(optional|for|e|g|eg|or|and|any|about|approx|fat|chopped|sliced|diced|petals|store|bought|homemade|amul|mdh|everest|tata|catch|brand|see|step|plus|extra|to|taste)\b/;
+const NOT_A_NAME = /\b(optional|for|e|g|eg|or|and|any|about|approx|fat|chopped|sliced|diced|petals|store|bought|homemade|amul|mdh|everest|tata|catch|brand|see|step|plus|extra|to|taste|dry|dried|fresh|frozen|refined|cut|into|squares|cubes|pieces|pureed|puree|split|whole|ground|grated|minced|crushed|soaked|boiled|cooked|raw|ripe|thin|thick|peeled|deseeded|finely|roughly|halved|julienned|large|medium)\b/;
 
 export function looksLikeName(alias: string): boolean {
   const key = slugify(alias);

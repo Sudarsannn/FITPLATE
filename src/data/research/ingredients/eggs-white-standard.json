@@ -1,0 +1,81 @@
+{
+  "id": "eggs-white-standard",
+  "name": "Eggs, white, standard",
+  "aliases": [
+    "anda"
+  ],
+  "category": "Egg",
+  "standardUnit": "dozen",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-06",
+        "min": 115,
+        "max": 125,
+        "avg": 120,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-06.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 115,
+      "max": 125,
+      "avg": 120
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-06",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 2,
+    "platforms": [
+      "BigBasket",
+      "Expatistan"
+    ],
+    "outOfStock": false,
+    "confirmed": false,
+    "checkNotes": [
+      "only 2 listings back the range (need 3)"
+    ]
+  },
+  "per100Estimate": null,
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 143,
+    "proteinG": 12.6,
+    "carbsG": 0.7,
+    "fatG": 9.5,
+    "fibreG": 0
+  },
+  "storage": "3–5 weeks. In Mumbai's heat, room-temperature storage is best kept under a week.",
+  "substitutes": [
+    "Paneer (crumbled)",
+    "Tofu (crumbled)",
+    "Brown or desi eggs"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 14,
+      "quantity": null,
+      "unit": null,
+      "raw": "3 large eggs (about 150 g without shells)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-06",
+      "file": "FitPlate_Ingredients_2026-10-06.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

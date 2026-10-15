@@ -9,6 +9,7 @@ import type { DishVersion } from './dishImporter';
 import type { IngredientVersion } from './ingredientImporter';
 import { mergeOfficial, mergeStable, recipeChangedMaterially, unionList, type OfficialVersion } from './merge';
 import { slugify, splitName } from './markdown';
+import { checkPrice, type PriceCheckInput } from './priceChecks';
 import { computePriceEstimate, SEASONAL_PRODUCE, type PriceObservation } from './priceTrend';
 import { dishTags } from './tags';
 
@@ -33,6 +34,23 @@ function stripEngine(result: ReturnType<typeof computePriceEstimate>, observatio
     }
   }
   return { estimate, notes: [...flags.map((f) => `price flag: ${f}`), ...notes] };
+}
+
+/**
+ * Review 2026-10-15 FIX 2: checks the newest researched range (the one the
+ * estimate follows) and stores the result on the merged price. Reasons go to
+ * needs-review so the DATA SYNC REPORT lists them.
+ */
+function attachPriceCheck(
+  estimate: PriceEstimate,
+  newest: (PriceCheckInput & { statedAvg: number | null }) | null,
+  date: string,
+  review: string[],
+): PriceEstimate {
+  if (!newest) return estimate;
+  const check = checkPrice({ ...newest, avg: newest.statedAvg });
+  for (const n of check.checkNotes) review.push(`price not confirmed (${date}): ${n}`);
+  return { ...estimate, ...check };
 }
 
 function mergeMacros(versions: { date: string; macros: Macros | null }[], label: string, notes: string[]): { value: Macros; method: string } {
@@ -135,7 +153,8 @@ export function buildIngredient(all: IngredientVersion[], today: string): Ingred
   let price: PriceEstimate | null = null;
   if (observations.length > 0) {
     const { estimate, notes: n } = stripEngine(computePriceEstimate(observations, { today, seasonal, kind: 'ingredient' }), observations);
-    price = estimate;
+    const newest = [...versions].reverse().find((v) => v.price);
+    price = attachPriceCheck(estimate, newest?.price ?? null, newest?.date ?? '', review);
     notes.push(...n);
     mergeMethod.price = `price engine (${estimate.method})`;
   }
@@ -182,6 +201,7 @@ export function buildDish(all: DishVersion[], today: string, index: IngredientIn
   const versions = [...all].sort(byDate);
   const latest = versions[versions.length - 1];
   const notes: string[] = [];
+  const priceReview: string[] = [];
   const mergeMethod: Record<string, string> = {};
 
   const nutrition = mergeMacros(versions.map((v) => ({ date: v.date, macros: v.nutrition })), 'nutritionPerServing', notes);
@@ -193,7 +213,8 @@ export function buildDish(all: DishVersion[], today: string, index: IngredientIn
   let orderPrice: PriceEstimate | null = null;
   if (observations.length > 0) {
     const { estimate, notes: n } = stripEngine(computePriceEstimate(observations, { today, seasonal: false, kind: 'dish' }), observations);
-    orderPrice = estimate;
+    const newest = [...versions].reverse().find((v) => v.orderPrice);
+    orderPrice = attachPriceCheck(estimate, newest?.orderPrice ?? null, newest?.date ?? '', priceReview);
     notes.push(...n);
     mergeMethod.orderPrice = `price engine (${estimate.method})`;
   }
@@ -246,7 +267,7 @@ export function buildDish(all: DishVersion[], today: string, index: IngredientIn
     // Set across all dishes by assignFamilies() in the runner; one dish alone can't know its family.
     familyId: null,
     variants: latest.variants,
-    needsReview: [...latest.needsReview],
+    needsReview: [...latest.needsReview, ...priceReview],
     versions: versions.map((v) => ({ date: v.date, file: v.file })),
     mergeMethod,
     mergeNotes: notes,

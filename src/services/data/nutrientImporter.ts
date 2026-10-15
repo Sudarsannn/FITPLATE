@@ -37,7 +37,7 @@ import type {
   UnitConversion,
   UpperLimit,
 } from '../../models/nutrient';
-import { DEFAULT_TARGET_GROUPS, TARGET_GROUPS } from '../../models/nutrient';
+import { DEFAULT_TARGET_GROUPS, FOLLOW_DOCTOR_LINE, TARGET_GROUPS } from '../../models/nutrient';
 import { fileDate } from './dishImporter';
 import { normaliseId } from './ingredientImporter';
 import { plain, slugify, splitHeadings, splitName, tableRows } from './markdown';
@@ -129,6 +129,11 @@ class Reader {
     private readonly where: string,
     private readonly notes: string[],
   ) {}
+
+  /** A needs-review note about this block that is not a wrong value type. */
+  note(message: string): void {
+    this.notes.push(`${this.where}: ${message}`);
+  }
 
   private bad(key: string, v: unknown): void {
     this.notes.push(`${this.where}: "${key}" has unexpected value ${JSON.stringify(v)}; treated as not found`);
@@ -438,9 +443,33 @@ function readGuidance(o: Obj, id: string, title: string, r: Reader): GuidanceDat
   };
 }
 
+/** Target nutrients whose limit must come from the user's doctor (review 2026-10-15 FIX 1). */
+const DOCTOR_LIMIT_NUTRIENT = /protein|potassium|phosphorus|fluid|water/i;
+
+/**
+ * Limits in a condition profile that the app must not show without a
+ * doctor's number: a water max, a sodium max, or a protein / potassium /
+ * phosphorus / fluid target with direction "limit". Empty when none.
+ */
+export function doctorLimits(d: Pick<HealthConditionData, 'waterMl' | 'sodiumMgMax' | 'targets'>): string[] {
+  const out: string[] = [];
+  if (d.waterMl?.max != null) out.push(`water max ${d.waterMl.max} ml`);
+  if (d.sodiumMgMax != null) out.push(`sodium max ${d.sodiumMgMax} mg`);
+  for (const t of d.targets) if (t.direction === 'limit' && DOCTOR_LIMIT_NUTRIENT.test(t.nutrient)) out.push(`${t.nutrient} limit`);
+  return out;
+}
+
+/** SPEC-ADDENDA §8: any water or fluid number carries "Follow your doctor's advice". */
+export function fluidNoteOf(d: Pick<HealthConditionData, 'waterMl' | 'targets'>): string | null {
+  const water = d.waterMl != null && (d.waterMl.min != null || d.waterMl.max != null);
+  const fluid = d.targets.some((t) => /fluid|water/i.test(t.nutrient) && [t.generalAdult, t.profileValue, t.min, t.max].some((v) => v != null));
+  return water || fluid ? FOLLOW_DOCTOR_LINE : null;
+}
+
 function readCondition(o: Obj, id: string, title: string, type: HealthConditionData['type'], r: Reader): HealthConditionData {
   const water = isObj(o.water_ml) ? o.water_ml : null;
-  return {
+  const stated = r.bool(o, 'requires_doctor_input');
+  const data: HealthConditionData = {
     id,
     type,
     name: r.strOrNull(o, 'name') ?? title,
@@ -476,11 +505,24 @@ function readCondition(o: Obj, id: string, title: string, type: HealthConditionD
       .objs(o, 'conflicts_with')
       .map((c) => ({ profileId: r.str(c, 'profile_id'), rule: r.str(c, 'rule') }))
       .filter((c) => c.profileId !== ''),
-    // Missing means "not stated", which is not the same as "safe without a doctor"; the build ORs versions.
-    requiresDoctorInput: r.bool(o, 'requires_doctor_input') ?? false,
+    // Missing means "not stated", which is not the same as "safe without a doctor": see below.
+    requiresDoctorInput: stated ?? false,
+    requiresDoctorInputStated: stated !== null,
+    fluidNote: null,
     warnings: r.strs(o, 'warnings'),
     lastResearched: r.strOrNull(o, 'last_researched'),
   };
+  // Review 2026-10-15 FIX 1: a profile that sets a water, sodium or protein/potassium/phosphorus/fluid
+  // limit without stating the flag defaults to "ask your doctor". An explicit false stays false.
+  if (stated === null) {
+    const limits = doctorLimits(data);
+    if (limits.length > 0) {
+      data.requiresDoctorInput = true;
+      r.note(`requires_doctor_input is missing but the profile sets ${limits.join(', ')}; set to true (the app asks for the doctor's number)`);
+    }
+  }
+  data.fluidNote = fluidNoteOf(data);
+  return data;
 }
 
 // ---------------------------------------------------------------- file parsing
@@ -925,14 +967,21 @@ export function buildCondition(all: ConditionVersion[], today: string): HealthCo
       }
     : null;
 
-  const requiresDoctorInput = versions.some((v) => v.data.requiresDoctorInput);
+  const sodiumMgMax = safety((d) => d.sodiumMgMax, 'sodiumMgMax');
+  // Stated true in any version wins (safety first). Otherwise the newest version decides, so an
+  // explicit false overrides an older importer default; with nothing stated anywhere, the merged
+  // limits decide (review 2026-10-15 FIX 1).
+  const statedTrue = versions.some((v) => v.data.requiresDoctorInputStated && v.data.requiresDoctorInput);
+  const anyStated = versions.some((v) => v.data.requiresDoctorInputStated);
+  const latestDefaulted = !latest.data.requiresDoctorInputStated && latest.data.requiresDoctorInput;
+  const requiresDoctorInput = statedTrue || latestDefaulted || (!anyStated && doctorLimits({ waterMl, sodiumMgMax, targets }).length > 0);
   if (requiresDoctorInput && !latest.data.requiresDoctorInput) {
     log.notes.push('requiresDoctorInput: an older version requires doctor input and the newest does not explain why; kept true (safety first)');
   }
   log.method.targets = 'official (D3); max as safety limit';
   log.method.limits = 'safety limit (lower on conflict)';
   log.method.lists = 'union';
-  log.method.requiresDoctorInput = 'any version';
+  log.method.requiresDoctorInput = 'stated true in any version, else newest version (missing flag + limits → true)';
 
   return {
     id: latest.id,
@@ -942,7 +991,7 @@ export function buildCondition(all: ConditionVersion[], today: string): HealthCo
     targets,
     bloodMarkers: unionBy(versions.map((v) => v.data.bloodMarkers), (b: BloodMarker) => slugify(b.marker)),
     waterMl,
-    sodiumMgMax: safety((d) => d.sodiumMgMax, 'sodiumMgMax'),
+    sodiumMgMax,
     dietaryCholesterolMgMax: safety((d) => d.dietaryCholesterolMgMax, 'dietaryCholesterolMgMax'),
     foodsFavour: unionList(...versions.map((v) => v.data.foodsFavour)),
     foodsLimit: unionList(...versions.map((v) => v.data.foodsLimit)),
@@ -950,6 +999,8 @@ export function buildCondition(all: ConditionVersion[], today: string): HealthCo
     cautionDishes: unionBy(versions.map((v) => v.data.cautionDishes), dishKey),
     conflictsWith: unionBy(versions.map((v) => v.data.conflictsWith), (c) => `${c.profileId}|${normText(c.rule)}`),
     requiresDoctorInput,
+    requiresDoctorInputStated: anyStated,
+    fluidNote: fluidNoteOf({ waterMl, targets }),
     warnings: unionList(...versions.map((v) => v.data.warnings)),
     lastResearched: newestText(versions, (v) => v.data.lastResearched),
     ...provenance(versions, log),

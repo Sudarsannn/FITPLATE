@@ -1,0 +1,88 @@
+{
+  "id": "spinach",
+  "name": "Spinach",
+  "aliases": [
+    "palak"
+  ],
+  "category": "Vegetable (leafy green)",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-07",
+        "min": 40,
+        "max": 70,
+        "avg": 55,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-07.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 47,
+      "max": 63,
+      "avg": 55
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-07",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 2,
+    "platforms": [
+      "BigBasket"
+    ],
+    "outOfStock": false,
+    "confirmed": false,
+    "checkNotes": [
+      "only 2 listings back the range (need 3)",
+      "only 1 platform (BigBasket) backs the range"
+    ]
+  },
+  "per100Estimate": {
+    "min": 4.7,
+    "max": 6.3,
+    "avg": 5.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 23,
+    "proteinG": 2.9,
+    "carbsG": 3.6,
+    "fatG": 0.4,
+    "fibreG": 2.2
+  },
+  "storage": "unwashed, wrapped in a dry cloth or paper towel inside a bag or box, for 2–4 days. Wash just before use.",
+  "substitutes": [
+    "Frozen spinach",
+    "Methi (fenugreek) leaves",
+    "Bathua / chaulai (amaranth) leaves"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 17,
+      "quantity": 150,
+      "unit": "g",
+      "raw": "150 g leaves (about 220 g as bought, with stems; ½ medium bunch)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-07",
+      "file": "FitPlate_Ingredients_2026-10-07.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 40.0–70.0 was wider than 30% of avg 55.0; narrowed to ±15%."
+  ]
+}

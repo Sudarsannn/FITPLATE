@@ -1,0 +1,84 @@
+{
+  "id": "whole-wheat-flour",
+  "name": "Whole wheat flour",
+  "aliases": [
+    "atta"
+  ],
+  "category": "Grain (flour)",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-06",
+        "min": 45,
+        "max": 55,
+        "avg": 50,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-06.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 45,
+      "max": 55,
+      "avg": 50
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-06",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 5,
+    "platforms": [
+      "Amazon",
+      "BigBasket",
+      "Swiggy Instamart"
+    ],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
+  },
+  "per100Estimate": {
+    "min": 4.5,
+    "max": 5.5,
+    "avg": 5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 340,
+    "proteinG": 12,
+    "carbsG": 69,
+    "fatG": 1.8,
+    "fibreG": 11
+  },
+  "storage": "Airtight steel or plastic container in a cool, dry cupboard: 2–3 months after opening. In hot, humid Mumbai months it keeps longer in the fridge (up to about 6 months). A couple of bay leaves in the tin is a common home trick against weevils.",
+  "substitutes": [
+    "Multigrain atta",
+    "Half atta, half maida",
+    "Jowar or bajra atta"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 11,
+      "quantity": 80,
+      "unit": "g",
+      "raw": "80 g in the dough, plus about 10 g for dusting (about 5 g of it gets used)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-06",
+      "file": "FitPlate_Ingredients_2026-10-06.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

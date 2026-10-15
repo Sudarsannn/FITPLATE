@@ -1,0 +1,89 @@
+{
+  "id": "gram-flour",
+  "name": "Gram flour",
+  "aliases": [
+    "besan"
+  ],
+  "category": "Packaged (flour)",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-07",
+        "min": 105,
+        "max": 120,
+        "avg": 110,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-07.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 105,
+      "max": 120,
+      "avg": 110
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-07",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 7,
+    "platforms": [
+      "Amazon",
+      "BigBasket"
+    ],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
+  },
+  "per100Estimate": {
+    "min": 10.5,
+    "max": 12,
+    "avg": 11
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 387,
+    "proteinG": 22.4,
+    "carbsG": 57.8,
+    "fatG": 6.7,
+    "fibreG": 10.8
+  },
+  "storage": "Airtight steel or glass jar in a cool, dry cupboard: 2–3 months after opening. In humid Mumbai weather, keep it in the fridge in an airtight box for up to 6 months to prevent weevils and rancidity.",
+  "substitutes": [
+    "Moong dal flour (or soaked, ground moong dal)",
+    "Chickpea (kabuli chana) flour",
+    "Rice flour + a little besan"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 16,
+      "quantity": 50,
+      "unit": "g",
+      "raw": "50 g (a scant ½ cup)"
+    },
+    {
+      "dishNumber": 20,
+      "quantity": 30,
+      "unit": "g",
+      "raw": "30 g (3½ tbsp, in the batter)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-07",
+      "file": "FitPlate_Ingredients_2026-10-07.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

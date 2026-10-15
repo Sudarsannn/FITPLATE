@@ -1,0 +1,84 @@
+{
+  "id": "cumin-powder",
+  "name": "Cumin powder",
+  "aliases": [
+    "jeera powder"
+  ],
+  "category": "Spice",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-06",
+        "min": 600,
+        "max": 760,
+        "avg": 680,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-06.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 600,
+      "max": 760,
+      "avg": 680
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-06",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 5,
+    "platforms": [
+      "Amazon",
+      "BigBasket",
+      "Hyperpure"
+    ],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
+  },
+  "per100Estimate": {
+    "min": 60,
+    "max": 76,
+    "avg": 68
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 375,
+    "proteinG": 18,
+    "carbsG": 44,
+    "fatG": 22,
+    "fibreG": 10.5
+  },
+  "storage": "Airtight jar, cool and dark, away from the stove. Roasted homemade powder: small batches, airtight, use within 1 month.",
+  "substitutes": [
+    "Cumin seeds, dry-roasted and crushed",
+    "Plain cumin powder, lightly dry-roasted in a pan",
+    "Garam masala or chaat masala"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 11,
+      "quantity": 1,
+      "unit": "g",
+      "raw": "1 g (½ tsp, roasted)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-06",
+      "file": "FitPlate_Ingredients_2026-10-06.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

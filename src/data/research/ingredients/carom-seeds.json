@@ -1,0 +1,85 @@
+{
+  "id": "carom-seeds",
+  "name": "Carom seeds",
+  "aliases": [
+    "ajwain"
+  ],
+  "category": "Spice",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-06",
+        "min": 495,
+        "max": 530,
+        "avg": 515,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-06.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 495,
+      "max": 530,
+      "avg": 515
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-06",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 2,
+    "platforms": [
+      "BigBasket",
+      "Hunar Setu"
+    ],
+    "outOfStock": false,
+    "confirmed": false,
+    "checkNotes": [
+      "only 2 listings back the range (need 3)"
+    ]
+  },
+  "per100Estimate": {
+    "min": 49.5,
+    "max": 53,
+    "avg": 51.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 305,
+    "proteinG": 17,
+    "carbsG": 25,
+    "fatG": 22,
+    "fibreG": 21
+  },
+  "storage": "Airtight jar in a cool, dark cupboard; keeps 12 months or more. Ground ajwain loses aroma within 2–3 months.",
+  "substitutes": [
+    "Dried thyme",
+    "Cumin seeds",
+    "Omit"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 11,
+      "quantity": 0.5,
+      "unit": "g",
+      "raw": "0.5 g (¼ tsp)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-06",
+      "file": "FitPlate_Ingredients_2026-10-06.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

@@ -1,0 +1,84 @@
+{
+  "id": "black-pepper-powder",
+  "name": "Black pepper powder",
+  "aliases": [
+    "kali mirch"
+  ],
+  "category": "Spice (powder)",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-05",
+        "min": 1350,
+        "max": 1760,
+        "avg": 1555,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-05.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 1350,
+      "max": 1760,
+      "avg": 1555
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-05",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 5,
+    "platforms": [
+      "Amazon",
+      "BigBasket",
+      "Grocery Prime"
+    ],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
+  },
+  "per100Estimate": {
+    "min": 135,
+    "max": 176,
+    "avg": 155.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 251,
+    "proteinG": 10.4,
+    "carbsG": 64,
+    "fatG": 3.3,
+    "fibreG": 25.3
+  },
+  "storage": "Airtight jar at room temperature, away from heat and light. Use within 3–4 months of opening for best flavour. Whole peppercorns keep 1–2 years.",
+  "substitutes": [
+    "White pepper powder",
+    "Freshly crushed whole peppercorns",
+    "Red chilli flakes"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 10,
+      "quantity": 0.5,
+      "unit": "g",
+      "raw": "0.5 g (¼ tsp; white pepper as an alternative)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-05",
+      "file": "FitPlate_Ingredients_2026-10-05.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

@@ -50,6 +50,8 @@ export function containsTag(label: string): string {
 const ONION_GARLIC = /\b(onions?|kanda|pyaz|spring onion|shallots?|garlic|lahsun|lehsun)\b/i;
 /** Meat and poultry, for checking a researched "Pescatarian: Yes". Fish and seafood are fine. */
 const MEAT = /\b(chicken|mutton|goat|lamb|beef|pork|keema|meat)\b/i;
+/** Fish and seafood, for showing the Pescatarian chip. */
+const SEAFOOD = /\b(fish|prawns?|shrimps?|crabs?|squid|mussels?|clams?|lobster|surmai|pomfret|bangda|mackerel|rohu|hilsa|tuna|salmon|sardines?|anchov(y|ies))\b/i;
 
 function title(s: string): string {
   return s.length ? s[0].toUpperCase() + s.slice(1) : s;
@@ -110,7 +112,9 @@ export function dishTags(d: TagInput): TagResult {
   }
   if (d.dietTags?.pescatarian.status === 'yes') {
     if (names.some((n) => MEAT.test(n))) review.push('"Pescatarian: Yes" but the recipe has meat or poultry; tag not shown');
-    else add(TAG.pescatarian);
+    // The chip only on dishes with fish or seafood (review 2026-10-15, fix 3): on every veg
+    // dish it would crowd the title. Veg dishes still match a Pescatarian filter in search.
+    else if (names.some((n) => SEAFOOD.test(n))) add(TAG.pescatarian);
   }
 
   const nav = d.fasting?.navratri.status === 'yes';
@@ -160,38 +164,70 @@ export function familyKey(name: string): string {
 export type FamilyLink = { familyId: string; dishIds: string[]; how: 'name' | 'research-variant' };
 
 /**
- * Groups dishes into variant families. Research links ("Vegetarian variant:
- * Veg Fried Rice (FitPlate dish 10)") come first; otherwise dishes whose
- * names differ only by a version word share a family. A family needs at least
- * two dishes. Name matches are listed in the DATA SYNC REPORT for checking.
+ * Groups dishes into variant families. Dishes whose names differ only by a
+ * version word share a group; a research link ("Vegetarian variant: Veg Fried
+ * Rice (FitPlate dish 10)") joins the two dishes' groups. Groups that share a
+ * dish are merged (union-find), so every dish lands in exactly one family,
+ * named after its lowest-numbered dish (review 2026-10-15, fix 3). A family
+ * needs at least two dishes. Name matches are listed in the DATA SYNC REPORT.
  */
 export function assignFamilies(dishes: Pick<Dish, 'id' | 'number' | 'name' | 'variants'>[]): { familyOf: Map<string, string>; links: FamilyLink[] } {
   const byNumber = new Map(dishes.map((d) => [d.number, d]));
-  const groups = new Map<string, { ids: Set<string>; how: FamilyLink['how'] }>();
-  const put = (key: string, id: string, how: FamilyLink['how']) => {
-    const g = groups.get(key) ?? { ids: new Set<string>(), how };
-    g.ids.add(id);
-    if (how === 'research-variant') g.how = how;
-    groups.set(key, g);
+  const parent = new Map<string, string>();
+  const find = (id: string): string => {
+    let root = id;
+    while (parent.get(root) !== root) root = parent.get(root)!;
+    // Path compression keeps later lookups flat.
+    let cur = id;
+    while (parent.get(cur) !== root) {
+      const next = parent.get(cur)!;
+      parent.set(cur, root);
+      cur = next;
+    }
+    return root;
   };
-  for (const d of dishes) put(familyKey(d.name), d.id, 'name');
+  const union = (a: string, b: string) => {
+    const ra = find(a);
+    const rb = find(b);
+    if (ra !== rb) parent.set(rb, ra);
+  };
+  for (const d of dishes) parent.set(d.id, d.id);
+
+  const byKey = new Map<string, string>();
+  for (const d of dishes) {
+    const key = familyKey(d.name);
+    if (!key) continue;
+    const first = byKey.get(key);
+    if (first) union(first, d.id);
+    else byKey.set(key, d.id);
+  }
+  const researchLinked = new Set<string>();
   for (const d of dishes) {
     for (const v of d.variants) {
       const other = v.linkedDishNumber != null ? byNumber.get(v.linkedDishNumber) : undefined;
       if (other && other.id !== d.id) {
-        const key = familyKey(d.name);
-        put(key, d.id, 'research-variant');
-        put(key, other.id, 'research-variant');
+        union(d.id, other.id);
+        researchLinked.add(d.id);
+        researchLinked.add(other.id);
       }
     }
   }
+
+  const groups = new Map<string, Pick<Dish, 'id' | 'number' | 'name' | 'variants'>[]>();
+  for (const d of dishes) {
+    const root = find(d.id);
+    groups.set(root, [...(groups.get(root) ?? []), d]);
+  }
   const familyOf = new Map<string, string>();
   const links: FamilyLink[] = [];
-  for (const [key, g] of [...groups.entries()].sort(([a], [b]) => a.localeCompare(b))) {
-    if (g.ids.size < 2 || !key) continue;
-    const ids = [...g.ids].sort();
-    for (const id of ids) if (!familyOf.has(id)) familyOf.set(id, key);
-    links.push({ familyId: key, dishIds: ids, how: g.how });
+  for (const members of groups.values()) {
+    if (members.length < 2) continue;
+    const lowest = members.reduce((a, b) => (b.number < a.number ? b : a));
+    const familyId = familyKey(lowest.name) || lowest.id;
+    const ids = members.map((m) => m.id).sort();
+    for (const id of ids) familyOf.set(id, familyId);
+    links.push({ familyId, dishIds: ids, how: ids.some((id) => researchLinked.has(id)) ? 'research-variant' : 'name' });
   }
+  links.sort((a, b) => a.familyId.localeCompare(b.familyId));
   return { familyOf, links };
 }

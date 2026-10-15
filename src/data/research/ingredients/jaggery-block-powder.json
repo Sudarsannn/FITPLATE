@@ -1,0 +1,67 @@
+{
+  "id": "jaggery-block-powder",
+  "name": "Jaggery, block/powder",
+  "aliases": [
+    "gud"
+  ],
+  "category": "Sweetener",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-05",
+        "min": 100,
+        "max": 140,
+        "avg": 120,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-05.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 100,
+      "max": 140,
+      "avg": 120
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-05",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": null,
+    "platforms": [],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
+  },
+  "per100Estimate": {
+    "min": 10,
+    "max": 14,
+    "avg": 12
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": null,
+  "storage": null,
+  "substitutes": [],
+  "usedIn": [],
+  "versions": [
+    {
+      "date": "2026-10-05",
+      "file": "FitPlate_Ingredients_2026-10-05.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (none)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 100.0–140.0 was wider than 30% of avg 120.0; narrowed to ±15%.",
+    "2026-10-05: no detail section found"
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "green-chilli-sauce",
+  "name": "Green chilli sauce",
+  "aliases": [
+    "hari mirch sauce"
+  ],
+  "category": "Packaged (condiment)",
+  "standardUnit": "l",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-06",
+        "min": 260,
+        "max": 275,
+        "avg": 270,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-06.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 260,
+      "max": 275,
+      "avg": 270
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-06",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 2,
+    "platforms": [
+      "Amazon",
+      "BigBasket"
+    ],
+    "outOfStock": false,
+    "confirmed": false,
+    "checkNotes": [
+      "only 2 listings back the range (need 3)"
+    ]
+  },
+  "per100Estimate": {
+    "min": 26,
+    "max": 27.5,
+    "avg": 27
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 70,
+    "proteinG": 0.5,
+    "carbsG": 16,
+    "fatG": 0.2,
+    "fibreG": 0.5
+  },
+  "storage": "Unopened: cool, dark cupboard. Opened: refrigerate with the cap tight; use within 1–2 months. Use a dry spoon.",
+  "substitutes": [
+    "Fresh green chilli + vinegar",
+    "Red chilli sauce",
+    "Schezwan sauce (small amount)"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 15,
+      "quantity": 5,
+      "unit": "ml",
+      "raw": "5 ml (1 tsp)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-06",
+      "file": "FitPlate_Ingredients_2026-10-06.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

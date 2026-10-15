@@ -1,6 +1,6 @@
 {
   "schema": "fitplate.links.v1",
-  "generatedFor": "Day05",
+  "generatedFor": "Day06",
   "goodSourceDishes": {
     "thiamine": [
       {
@@ -16,7 +16,7 @@
       {
         "dishNumber": 29,
         "dishName": "Misal Pav",
-        "dishId": null
+        "dishId": "029-misal-pav"
       },
       {
         "dishNumber": 8,
@@ -31,7 +31,7 @@
       {
         "dishNumber": 27,
         "dishName": "Dal Makhani",
-        "dishId": null
+        "dishId": "027-dal-makhani"
       },
       {
         "dishNumber": 16,
@@ -46,7 +46,7 @@
       {
         "dishNumber": 26,
         "dishName": "Moong Dal Chilla",
-        "dishId": null
+        "dishId": "026-moong-dal-chilla"
       },
       {
         "dishNumber": 40,
@@ -93,12 +93,12 @@
       {
         "dishNumber": 25,
         "dishName": "Veg Pulao",
-        "dishId": null
+        "dishId": "025-veg-pulao"
       },
       {
         "dishNumber": 21,
         "dishName": "Masala Omelette",
-        "dishId": null
+        "dishId": "021-masala-omelette"
       }
     ],
     "vitamin-c": [
@@ -110,7 +110,7 @@
       {
         "dishNumber": 22,
         "dishName": "Kadai Paneer",
-        "dishId": null
+        "dishId": "022-kadai-paneer"
       },
       {
         "dishNumber": 13,
@@ -172,7 +172,7 @@
       {
         "dishNumber": 21,
         "dishName": "Masala Omelette",
-        "dishId": null
+        "dishId": "021-masala-omelette"
       },
       {
         "dishNumber": 38,
@@ -204,12 +204,12 @@
       {
         "dishNumber": 21,
         "dishName": "Masala Omelette",
-        "dishId": null
+        "dishId": "021-masala-omelette"
       },
       {
         "dishNumber": 30,
         "dishName": "Lemon Rice",
-        "dishId": null
+        "dishId": "030-lemon-rice"
       },
       {
         "dishNumber": 1,
@@ -271,7 +271,7 @@
       {
         "dishNumber": 22,
         "dishName": "Kadai Paneer",
-        "dishId": null
+        "dishId": "022-kadai-paneer"
       }
     ]
   },
@@ -282,10 +282,16 @@
     "005-dal-tadka": [
       "thiamine"
     ],
+    "029-misal-pav": [
+      "thiamine"
+    ],
     "008-chole-chana-masala": [
       "thiamine"
     ],
     "012-rajma-chawal": [
+      "thiamine"
+    ],
+    "027-dal-makhani": [
       "thiamine"
     ],
     "016-besan-chilla": [
@@ -294,6 +300,9 @@
     "009-idli-with-sambar": [
       "thiamine",
       "vitamin-a"
+    ],
+    "026-moong-dal-chilla": [
+      "thiamine"
     ],
     "017-palak-paneer": [
       "vitamin-a",
@@ -318,12 +327,27 @@
       "vitamin-e",
       "vitamin-k"
     ],
+    "025-veg-pulao": [
+      "vitamin-a"
+    ],
+    "021-masala-omelette": [
+      "vitamin-a",
+      "vitamin-d",
+      "vitamin-e"
+    ],
+    "022-kadai-paneer": [
+      "vitamin-c",
+      "vitamin-k"
+    ],
     "015-veg-hakka-noodles": [
       "vitamin-c",
       "vitamin-k"
     ],
     "002-chicken-biryani": [
       "vitamin-d"
+    ],
+    "030-lemon-rice": [
+      "vitamin-e"
     ],
     "001-poha": [
       "vitamin-e"
@@ -336,6 +360,11 @@
   "drinks": [],
   "met": [
     {
+      "exerciseId": "adho-mukha-svanasana",
+      "name": "Adho Mukha Svanasana (Downward Dog)",
+      "met": 2.3
+    },
+    {
       "exerciseId": "bodyweight-squat",
       "name": "Bodyweight squat",
       "met": 3.8
@@ -346,17 +375,239 @@
       "met": 2.3
     },
     {
+      "exerciseId": "elliptical-cross-trainer",
+      "name": "Elliptical cross-trainer",
+      "met": 5
+    },
+    {
+      "exerciseId": "glute-bridge",
+      "name": "Glute bridge",
+      "met": 3.5
+    },
+    {
+      "exerciseId": "hip-flexor-stretch",
+      "name": "Hip flexor stretch",
+      "met": 2.3
+    },
+    {
+      "exerciseId": "plank-and-side-plank",
+      "name": "Plank and side plank",
+      "met": 2.8
+    },
+    {
       "exerciseId": "push-up",
       "name": "Push-up (with knee and incline versions)",
       "met": 3.8
     },
     {
+      "exerciseId": "rowing-machine",
+      "name": "Rowing machine",
+      "met": 5
+    },
+    {
+      "exerciseId": "stationary-bike",
+      "name": "Stationary bike (upright and recumbent)",
+      "met": 6
+    },
+    {
       "exerciseId": "surya-namaskar",
       "name": "Surya Namaskar (Sun Salutation)",
       "met": 3.5
+    },
+    {
+      "exerciseId": "treadmill",
+      "name": "Treadmill",
+      "met": 4.8
     }
   ],
   "microTable": {
+    "black-cardamom": {
+      "iron": {
+        "per100": 13.97,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: Spices, cardamom (SR Legacy; FDC ID shown as 170919 on a secondary site), used as a proxy for black cardamom; via secondary sites)"
+      },
+      "calcium": {
+        "per100": 383,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: Spices, cardamom (SR Legacy; FDC ID shown as 170919 on a secondary site), used as a proxy for black cardamom; via secondary sites)"
+      },
+      "potassium": {
+        "per100": 1119,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: Spices, cardamom (SR Legacy; FDC ID shown as 170919 on a secondary site), used as a proxy for black cardamom; via secondary sites)"
+      },
+      "magnesium": {
+        "per100": 229,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: Spices, cardamom (SR Legacy; FDC ID shown as 170919 on a secondary site), used as a proxy for black cardamom; via secondary sites)"
+      },
+      "zinc": {
+        "per100": 7.5,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: Spices, cardamom (SR Legacy; FDC ID shown as 170919 on a secondary site), used as a proxy for black cardamom; via secondary sites)"
+      },
+      "sodium": {
+        "per100": 18,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: Spices, cardamom (SR Legacy; FDC ID shown as 170919 on a secondary site), used as a proxy for black cardamom; via secondary sites)"
+      },
+      "vitamin-c": {
+        "per100": 21,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: Spices, cardamom (SR Legacy; FDC ID shown as 170919 on a secondary site), used as a proxy for black cardamom; via secondary sites)"
+      }
+    },
+    "black-peppercorns-whole": {
+      "iron": {
+        "per100": 9.7,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 170931, Spices, pepper, black (SR Legacy), via secondary sites)"
+      },
+      "calcium": {
+        "per100": 443,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 170931, Spices, pepper, black (SR Legacy), via secondary sites)"
+      },
+      "potassium": {
+        "per100": 1329,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 170931, Spices, pepper, black (SR Legacy), via secondary sites)"
+      },
+      "magnesium": {
+        "per100": 171,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 170931, Spices, pepper, black (SR Legacy), via secondary sites)"
+      },
+      "zinc": {
+        "per100": 1.2,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 170931, Spices, pepper, black (SR Legacy), via secondary sites)"
+      },
+      "sodium": {
+        "per100": 20,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 170931, Spices, pepper, black (SR Legacy), via secondary sites)"
+      },
+      "vitamin-c": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 170931, Spices, pepper, black (SR Legacy), via secondary sites)"
+      },
+      "folate": {
+        "per100": 17,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: FDC ID 170931, Spices, pepper, black (SR Legacy), via secondary sites)"
+      }
+    },
+    "coriander-seeds-whole": {
+      "iron": {
+        "per100": 16.3,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 170922, Spices, coriander seed (SR Legacy), via secondary sites)"
+      },
+      "calcium": {
+        "per100": 709,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 170922, Spices, coriander seed (SR Legacy), via secondary sites)"
+      },
+      "potassium": {
+        "per100": 1267,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 170922, Spices, coriander seed (SR Legacy), via secondary sites)"
+      },
+      "magnesium": {
+        "per100": 330,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 170922, Spices, coriander seed (SR Legacy), via secondary sites)"
+      },
+      "zinc": {
+        "per100": 4.7,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 170922, Spices, coriander seed (SR Legacy), via secondary sites)"
+      },
+      "sodium": {
+        "per100": 35,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 170922, Spices, coriander seed (SR Legacy), via secondary sites)"
+      },
+      "vitamin-c": {
+        "per100": 21,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 170922, Spices, coriander seed (SR Legacy), via secondary sites)"
+      }
+    },
+    "dry-ginger-powder": {
+      "iron": {
+        "per100": 19.8,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 170926, Spices, ginger, ground (via getfoodfacts.com, recipal.com, soupersage.com))"
+      },
+      "zinc": {
+        "per100": 3.6,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 170926, Spices, ginger, ground (via getfoodfacts.com, recipal.com, soupersage.com))"
+      },
+      "sodium": {
+        "per100": 27,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 170926, Spices, ginger, ground (via getfoodfacts.com, recipal.com, soupersage.com))"
+      },
+      "vitamin-a": {
+        "per100": 30,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: FDC ID 170926, Spices, ginger, ground (via getfoodfacts.com, recipal.com, soupersage.com))"
+      },
+      "folate": {
+        "per100": 13,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: FDC ID 170926, Spices, ginger, ground (via getfoodfacts.com, recipal.com, soupersage.com))"
+      }
+    },
+    "fennel-powder": {
+      "iron": {
+        "per100": 18.5,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 171323, Spices, fennel seed (via getfoodfacts.com, recipal.com, FatSecret))"
+      },
+      "calcium": {
+        "per100": 1196,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 171323, Spices, fennel seed (via getfoodfacts.com, recipal.com, FatSecret))"
+      },
+      "potassium": {
+        "per100": 1694,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 171323, Spices, fennel seed (via getfoodfacts.com, recipal.com, FatSecret))"
+      },
+      "magnesium": {
+        "per100": 385,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 171323, Spices, fennel seed (via getfoodfacts.com, recipal.com, FatSecret))"
+      },
+      "zinc": {
+        "per100": 3.7,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 171323, Spices, fennel seed (via getfoodfacts.com, recipal.com, FatSecret))"
+      },
+      "sodium": {
+        "per100": 88,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 171323, Spices, fennel seed (via getfoodfacts.com, recipal.com, FatSecret))"
+      },
+      "vitamin-c": {
+        "per100": 21,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 171323, Spices, fennel seed (via getfoodfacts.com, recipal.com, FatSecret))"
+      }
+    },
+    "whole-wheat-flour": {
+      "thiamine": {
+        "per100": 0.42,
+        "unit": "mg",
+        "source": "nutrient research (thiamine food sources)"
+      }
+    },
     "toor-dal": {
       "thiamine": {
         "per100": 0.45,
@@ -377,6 +628,23 @@
       },
       "vitamin-k": {
         "per100": 479,
+        "unit": "µg",
+        "source": "nutrient research (vitamin-k food sources)"
+      }
+    },
+    "spinach": {
+      "vitamin-a": {
+        "per100": 434,
+        "unit": "µg",
+        "source": "nutrient research (vitamin-a food sources)"
+      },
+      "vitamin-e": {
+        "per100": 1.3,
+        "unit": "mg",
+        "source": "nutrient research (vitamin-e food sources)"
+      },
+      "vitamin-k": {
+        "per100": 325,
         "unit": "µg",
         "source": "nutrient research (vitamin-k food sources)"
       }
@@ -403,6 +671,13 @@
     "green-capsicum": {
       "vitamin-c": {
         "per100": 123,
+        "unit": "mg",
+        "source": "nutrient research (vitamin-c food sources)"
+      }
+    },
+    "cauliflower": {
+      "vitamin-c": {
+        "per100": 47.1,
         "unit": "mg",
         "source": "nutrient research (vitamin-c food sources)"
       }

@@ -46,6 +46,12 @@ describe('F1 alias map', () => {
     expect(learned).toEqual([]);
   });
 
+  it('never learns preparation words as names', () => {
+    const ings = [{ id: 'hakka-noodles-dry', name: 'Hakka noodles', aliases: [] as string[] }, { id: 'tomato', name: 'Tomato', aliases: [] as string[] }];
+    const { learned } = buildAliasMap(ings, [{ ingredients: [line('Hakka noodles (dry, refined wheat)', 100, 'g'), line('Tomato (pureed)', 50, 'g'), line('Tomato (cut into squares)', 50, 'g')] }]);
+    expect(learned).toEqual([]);
+  });
+
   it('the learned aliases link new lines', () => {
     const { aliases } = buildAliasMap(INGREDIENTS, [{ ingredients: [line('Cumin seeds (jeera)', 1, 'g')] }]);
     const index = indexWithAliases(INGREDIENTS, aliases);

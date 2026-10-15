@@ -1,0 +1,635 @@
+{
+  "id": "elliptical-cross-trainer",
+  "number": 6,
+  "name": "Elliptical cross-trainer",
+  "otherNames": [
+    "Elliptical trainer",
+    "Cross-trainer",
+    "Cross trainer",
+    "EFX",
+    "Elliptical with ramp"
+  ],
+  "section": "gym",
+  "type": "cardio",
+  "equipment": [
+    "elliptical cross-trainer"
+  ],
+  "noEquipmentAlternative": "Brisk walking or marching in place (low impact)",
+  "musclesPrimary": [
+    "quadriceps",
+    "gluteus maximus",
+    "hamstrings"
+  ],
+  "musclesSecondary": [
+    "gastrocnemius",
+    "soleus",
+    "hip flexors",
+    "rectus abdominis",
+    "obliques",
+    "erector spinae",
+    "pectoralis major",
+    "anterior deltoid",
+    "latissimus dorsi",
+    "rhomboids",
+    "posterior deltoid",
+    "biceps brachii",
+    "triceps brachii"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": false,
+  "met": 5,
+  "compendiumCode": "02048",
+  "metOptions": [
+    {
+      "code": "02048",
+      "met": 5,
+      "activity": "Code 02048, Elliptical trainer, moderate effort: 5.0 METs."
+    },
+    {
+      "code": "02049",
+      "met": 9,
+      "activity": "Code 02049, Elliptical trainer, vigorous effort: 9.0 METs."
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 1,
+      "reps": null,
+      "timeSec": 900,
+      "restSec": null,
+      "tempo": "steady, moderate effort (talk but not sing), RPE 3-4/10, plus 5 min warm-up and 3-5 min cool-down",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 5,
+      "reps": "1 min harder (RPE 5/10) + 2 min easy",
+      "timeSec": 60,
+      "restSec": 120,
+      "tempo": "intervals, +2 resistance levels on work",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 1,
+      "reps": null,
+      "timeSec": 1200,
+      "restSec": null,
+      "tempo": "steady moderate, add 5 min per week",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 1,
+      "reps": null,
+      "timeSec": 1800,
+      "restSec": null,
+      "tempo": "steady moderate, RPE 4-5/10, 64-76% HRmax",
+      "perWeek": 4
+    },
+    {
+      "level": "intermediate",
+      "goal": "fat_loss",
+      "sets": 8,
+      "reps": "1 min hard (RPE 6-7/10) + 1-2 min easy",
+      "timeSec": 60,
+      "restSec": 90,
+      "tempo": "intervals, +3-4 levels or ramp on work",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 1,
+      "reps": null,
+      "timeSec": 2400,
+      "restSec": null,
+      "tempo": "steady moderate",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "general_fitness",
+      "sets": 1,
+      "reps": null,
+      "timeSec": 2700,
+      "restSec": null,
+      "tempo": "steady moderate with reverse blocks",
+      "perWeek": 4
+    },
+    {
+      "level": "advanced",
+      "goal": "fat_loss",
+      "sets": 10,
+      "reps": "30 s very hard (RPE 8-9/10) + 60-90 s easy",
+      "timeSec": 30,
+      "restSec": 75,
+      "tempo": "intervals, max 2 per week",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "endurance",
+      "sets": 1,
+      "reps": null,
+      "timeSec": 3600,
+      "restSec": null,
+      "tempo": "steady moderate, 64-76% HRmax",
+      "perWeek": 3
+    }
+  ],
+  "cardioSettings": {
+    "warm_up_sec": 300,
+    "cool_down_sec": 300,
+    "resistance_scale_note": "Levels vary by brand (1-16, 20, 25 or 30) and are not comparable; choose by RPE",
+    "beginner": {
+      "resistance_level_of_20": "3-6 (est.)",
+      "ramp": "lowest",
+      "stride": "default or shortest",
+      "spm": "110-130 (est.)",
+      "rpe_0_10": "3-4",
+      "hr_max_pct": "64-70",
+      "talk_test": "can talk, cannot sing"
+    },
+    "intermediate": {
+      "resistance_level_of_20": "6-12 (est.)",
+      "ramp": "low to mid if available",
+      "stride": "default",
+      "spm": "120-140 (est.)",
+      "rpe_0_10": "4-5",
+      "hr_max_pct": "64-76",
+      "talk_test": "can talk, cannot sing"
+    },
+    "advanced": {
+      "resistance_level_of_20": "10-20 (est.)",
+      "ramp": "mid to high if available",
+      "stride": "long",
+      "spm": "130-160 (est.)",
+      "rpe_0_10": "6-8 on intervals",
+      "hr_max_pct": "77-90 on intervals",
+      "talk_test": "a few words only on intervals"
+    },
+    "direction": [
+      "forward",
+      "reverse"
+    ],
+    "handles": [
+      "moving",
+      "fixed"
+    ],
+    "safety_key": false,
+    "hr_source_preference": [
+      "chest_strap",
+      "rpe_talk_test",
+      "hand_grips"
+    ],
+    "met_moderate": 5,
+    "met_vigorous": 9,
+    "met_light": null,
+    "compendium_codes": {
+      "moderate": "02048",
+      "vigorous": "02049"
+    },
+    "calorie_display_note": "Machine displays often overestimate; use MET-based estimate"
+  },
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle",
+      "left_heel",
+      "right_heel",
+      "left_foot_index",
+      "right_foot_index"
+    ],
+    "phases": [
+      {
+        "name": "back_extended",
+        "joint": "knee",
+        "angleDeg": ">= 150",
+        "parsed": {
+          "op": ">=",
+          "value": 150,
+          "max": null
+        }
+      },
+      {
+        "name": "front_flexed",
+        "joint": "knee",
+        "angleDeg": "<= 125",
+        "parsed": {
+          "op": "<=",
+          "value": 125,
+          "max": null
+        }
+      },
+      {
+        "name": "back_extended",
+        "joint": "knee",
+        "angleDeg": ">= 150",
+        "parsed": {
+          "op": ">=",
+          "value": 150,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 0.5
+  },
+  "formChecks": [
+    {
+      "joint": "trunk",
+      "rule": "shoulder-hip line more than 20 deg forward of vertical",
+      "message": "Stand tall: don't lean on the machine."
+    },
+    {
+      "joint": "neck",
+      "rule": "nose below shoulder line for more than 5 s",
+      "message": "Eyes forward, not down."
+    },
+    {
+      "joint": "ankle",
+      "rule": "heel well above foot index for most of the stride",
+      "message": "Press through your heels."
+    },
+    {
+      "joint": "knee",
+      "rule": "knee angle >= 175 deg at back of stride",
+      "message": "Keep a soft knee."
+    },
+    {
+      "joint": "shoulder",
+      "rule": "shoulder-to-ear distance shrinks vs calibration",
+      "message": "Relax your shoulders."
+    },
+    {
+      "joint": "knee",
+      "rule": "front view: knee inside ankle line",
+      "message": "Knees over your toes."
+    }
+  ],
+  "safetyFlags": [
+    "knee_pain",
+    "patellofemoral_pain",
+    "low_back_pain",
+    "shoulder_pain",
+    "high_blood_pressure",
+    "heart_disease",
+    "pregnancy",
+    "recent_surgery",
+    "balance_problems",
+    "peripheral_neuropathy",
+    "beta_blockers_hr_unreliable"
+  ],
+  "progressions": [
+    "Longer steady sessions then higher resistance",
+    "Add ramp or reverse pedalling blocks",
+    "Intervals, then hands-free intervals"
+  ],
+  "regressions": [
+    "Fixed handles, legs only, very low level",
+    "Shorter stride and slower pace",
+    "Recumbent elliptical or recumbent bike"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "front three-quarter, 2.5 m",
+      "shows": "Wiping down, setting lowest pedal, stepping on holding fixed handles",
+      "textOverlay": "Hold the fixed handles. Step onto the lowest pedal."
+    },
+    {
+      "seconds": 8,
+      "angle": "console close-up, 0.5 m",
+      "shows": "Waking console, Manual, level, ramp, stride, SPM, HR pads",
+      "textOverlay": "Start on Manual. Low level first."
+    },
+    {
+      "seconds": 10,
+      "angle": "side, 3 m, hip height",
+      "shows": "Upright forward pedalling with moving handles (slow motion stride)",
+      "textOverlay": "Tall chest. Light grip. Whole foot down."
+    },
+    {
+      "seconds": 6,
+      "angle": "side close-up on feet, 1 m",
+      "shows": "Heels down vs on toes",
+      "textOverlay": "Press through the heels"
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 3 m",
+      "shows": "Knees tracking vs caving and leaning",
+      "textOverlay": "Knees over toes. Don't lean."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 3 m",
+      "shows": "Slowing and switching to reverse",
+      "textOverlay": "Reverse: slow down first, then push back."
+    },
+    {
+      "seconds": 8,
+      "angle": "console then upper body",
+      "shows": "Talk test at moderate effort",
+      "textOverlay": "Moderate = can talk, can't sing."
+    },
+    {
+      "seconds": 8,
+      "angle": "front three-quarter, 2.5 m",
+      "shows": "Cool-down, full stop, stepping off, wiping",
+      "textOverlay": "Wait for a full stop. Then step off."
+    }
+  ],
+  "lastResearched": "2026-10-11",
+  "setupSteps": [
+    "Self-powered vs plugged in. Many commercial ellipticals are self-powered: the screen stays dark until you start pedalling. Pedal slowly for a few seconds to wake it.",
+    "Quick Start / Manual. The simplest option: starts a timer at the lowest level. You then change the level with the up/down or + / − keys.",
+    "Resistance levels. Usually 1 up to 16, 20, 25 or 30, depending on the brand. Higher = harder to push. Level numbers are NOT comparable between brands (level 8 on one machine can feel like level 12 on another), so choose by effort, not by number.",
+    "Incline / ramp level (where present). Shown as a separate number. Change it gradually.",
+    "Stride (where adjustable). A button or setting in inches or centimetres.",
+    "SPM / RPM. Speed is shown as strides per minute (SPM) or revolutions per minute (RPM). RPM counts full pedal circles. Many consoles count a stride as each leg, so SPM is roughly twice the RPM (est.; brands differ, check the label). Some consoles also show a \"speed\" in km/h or mph; on an elliptical this is a calculated figure, not true running speed.",
+    "Programs. Common names: Manual, Hill/Rolling Hills, Interval, Random, Fat Burn, Cardio, Heart-Rate Control (HRC/Target HR), Fitness Test, Reverse/Reverse Train. Programs change the level for you. Beginners should start with Manual so they stay in control.",
+    "Weight and age entry. Enter your real body weight and age if asked. The machine uses them for calories and heart-rate targets.",
+    "Heart-rate grips. Metal pads, usually on the fixed handles. Hold both pads lightly with still hands to get a reading. Readings are often unreliable during hard or arm-pumping effort; a chest strap (if the console accepts one) is more accurate. Use RPE and the talk test as your main guide.",
+    "Calories display. Treat as a rough guide. Studies found ellipticals often overestimate (about 100 kcal per 30 minutes in one lab study).",
+    "Forward vs reverse. Pedalling forward is the default. Most ellipticals also let you pedal backward; some consoles have a reverse program. Learn forward first.",
+    "Stop / Pause / Reset. Simply stop pedalling and the machine slows; many consoles pause automatically, then reset after a short time. Unlike a treadmill, most ellipticals have NO safety key or clip, because the pedals only move when you drive them. Some motorised or rehab ellipticals do have an emergency stop; if you see one, note where it is.",
+    "Wipe the handles and console with the gym spray or wipes.",
+    "Wear closed training shoes, laces tucked. No loose dupatta, long scarf or towel hanging near the flywheel.",
+    "Check the pedals are still and the flywheel has stopped.",
+    "Rotate the pedals by hand (or with one foot) so that the pedal on your stepping-on side is at its lowest point.",
+    "Hold the fixed handles with both hands.",
+    "Step onto the lowest pedal with one foot, then bring the other foot onto the second pedal. Keep holding the fixed handles.",
+    "Place each foot in the middle of the plate, toes forward, feet about hip-width apart (the machine sets this).",
+    "Stand tall: ears over shoulders, shoulders over hips.",
+    "Start pedalling slowly to wake the console. Choose Quick Start or Manual.",
+    "Set resistance to a low level (for example 2–4 on a 20-level machine; est.), ramp at its lowest, and stride at the default or shortest setting.",
+    "Enter age and weight if asked.",
+    "Once the motion feels smooth, move your hands from the fixed handles to the moving handles, one hand at a time."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Start pedalling forward slowly",
+      "action": null,
+      "feel": "smooth, oval leg motion, like walking without the bump.",
+      "breathing": "easy, through nose or mouth.",
+      "tempo": "slow, about 50–60 RPM (est.) for the first minute.",
+      "visualCheck": "side – body upright, not leaning on the console. Front – knees track over the middle of the feet."
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Hold the moving handles at about chest height",
+      "action": null,
+      "feel": "light grip, elbows slightly bent and relaxed.",
+      "breathing": "steady.",
+      "tempo": "whole session (or switch to fixed handles / hands-free for balance work later).",
+      "visualCheck": "side – hands in front of the chest, upper arms near the body. Front – wrists straight."
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Push the heel down through the whole stride",
+      "action": null,
+      "feel": "pressure across the whole foot, especially the heel and midfoot, not just the toes.",
+      "breathing": "steady.",
+      "tempo": "continuous.",
+      "visualCheck": "side – heel stays on or close to the plate at the back of the stride (a slight heel lift is normal on longer strides)."
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Drive the leg down and back",
+      "action": null,
+      "feel": "front of the thigh and buttock working as the pedal moves down and back.",
+      "breathing": "rhythmic, matched loosely to the strides.",
+      "tempo": "smooth, no jerks.",
+      "visualCheck": "side – knee bends and straightens smoothly; it never snaps fully straight."
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Coordinate arms with legs: push with one arm as the opposite leg goes forward",
+      "action": null,
+      "feel": "chest and front shoulder when pushing; upper back when pulling.",
+      "breathing": "steady.",
+      "tempo": "arms and legs move together; the machine links them.",
+      "visualCheck": "front – shoulders level, no twisting at the waist."
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Brace the trunk lightly",
+      "action": null,
+      "feel": "belly gently firm, as if about to laugh; you still breathe normally.",
+      "breathing": "do not hold your breath.",
+      "tempo": null,
+      "visualCheck": "side – the low back is in its natural slight curve, not arched or slumped."
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Warm up: 5 minutes at an easy effort",
+      "action": null,
+      "feel": "breathing rises a little; you can chat easily.",
+      "breathing": "comfortable.",
+      "tempo": "5 minutes. RPE 2–3 out of 10.",
+      "visualCheck": null
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Raise resistance by 1–2 levels at a time to reach your working effort",
+      "action": null,
+      "feel": "legs working, breathing faster.",
+      "breathing": "you can talk but not sing (moderate).",
+      "tempo": "change one setting at a time, wait about 30–60 seconds to judge (est.).",
+      "visualCheck": "posture unchanged as resistance rises; if you start leaning or bouncing, lower it."
+    },
+    {
+      "n": 9,
+      "part": null,
+      "title": "Hold your working pace for the planned time (see section 7)",
+      "action": null,
+      "feel": "steady effort you could keep for the planned minutes.",
+      "breathing": "talk test passes.",
+      "tempo": "as planned.",
+      "visualCheck": null
+    },
+    {
+      "n": 10,
+      "part": null,
+      "title": "(Optional, after a few sessions) Pedal in reverse for 1–2 minutes",
+      "action": null,
+      "feel": "more work in the front of the thighs; sit back very slightly, chest still upright.",
+      "breathing": "steady.",
+      "tempo": null,
+      "visualCheck": "knees stay behind or over the toes (est.); no leaning on the console."
+    },
+    {
+      "n": 11,
+      "part": null,
+      "title": "Cool down: 3–5 minutes, lower resistance",
+      "action": null,
+      "feel": "breathing settles; heart rate falls.",
+      "breathing": "slow and deep.",
+      "tempo": "3–5 minutes at RPE 2–3.",
+      "visualCheck": null
+    },
+    {
+      "n": 12,
+      "part": null,
+      "title": "Slow down gradually and come to a stop",
+      "action": null,
+      "feel": "legs relaxed.",
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": "pedals fully stopped before you step off."
+    },
+    {
+      "n": 13,
+      "part": null,
+      "title": "Step off safely",
+      "action": null,
+      "feel": "steady; if dizzy, stand holding the frame for a moment or sit down.",
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 14,
+      "part": null,
+      "title": "Wipe the machine",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Leaning on the handles or console",
+      "text": "Leaning on the handles or console. This takes weight off the legs, cuts the workload and calorie burn, and strains the wrists and low back. Fix: stand tall, grip lightly, lower resistance if you need to lean."
+    },
+    {
+      "title": "Too little resistance, pedalling very fast (\"spinning\")",
+      "text": "Too little resistance, pedalling very fast (\"spinning\"). The flywheel does the work and you bounce; training effect is small and control is poor. Fix: add resistance until each stride needs a steady push, then hold a controlled pace."
+    },
+    {
+      "title": "Standing on the toes / numb feet",
+      "text": "Standing on the toes / numb feet. Pressure on the front of the foot can cause tingling or numbness. Fix: push through the heels, keep feet flat and centred; loosen laces slightly; take a short break and wiggle the toes. If numbness keeps coming back, try a shorter stride or a different machine, and see a professional if it persists."
+    },
+    {
+      "title": "Staring down at the console or phone",
+      "text": "Staring down at the console or phone. Rounds the upper back and strains the neck. Fix: raise the eyes; put the phone at eye level, or listen instead of watching."
+    },
+    {
+      "title": "Hunched shoulders and a death grip",
+      "text": "Hunched shoulders and a death grip. Tires the forearms and neck. Fix: relax the shoulders and loosen the grip."
+    },
+    {
+      "title": "Knees caving inward or locking straight",
+      "text": "Knees caving inward or locking straight. Adds stress to the knee. Fix: keep knees over the middle of the feet, keep a soft bend at the back of the stride."
+    },
+    {
+      "title": "Jumping straight to a high level or a hard program",
+      "text": "Jumping straight to a high level or a hard program. At the same RPE, heart rate tends to run higher on the elliptical than the treadmill, so beginners can overshoot. Fix: start on Manual, low level, and build up by 1–2 levels."
+    },
+    {
+      "title": "Trusting the calorie number",
+      "text": "Trusting the calorie number. Ellipticals often overestimate. Fix: use the Compendium METs in section 10 instead."
+    },
+    {
+      "title": "Stepping off while the pedals are still moving",
+      "text": "Stepping off while the pedals are still moving. Momentum can throw a foot off. Fix: slow down, hold the fixed handles, wait for a full stop."
+    }
+  ],
+  "safetyNotes": [
+    "Knee problems (including kneecap pain or arthritis): low impact usually helps, but the elliptical asks more of the front-thigh and knee-straightening muscles than walking (Lu et al., 2007). Start with low resistance, a shorter stride and forward pedalling; avoid long reverse blocks if the front of the knee hurts. Stop if knee pain rises during or after the session.",
+    "Low-back problems: keep the trunk upright, avoid leaning or twisting. Lumbar flexion and rotation can be slightly greater than in walking (Moreside, 2012). A recumbent machine may suit better.",
+    "Shoulder problems: use the fixed handles or keep the arm motion small.",
+    "High blood pressure or heart disease: stay at moderate effort, warm up and cool down well, never hold your breath. A study in heart patients found higher heart rate and oxygen demand on the elliptical than the treadmill at the same RPE, so start lower than you think. Ask your doctor about safe heart-rate limits; some medicines (e.g. beta-blockers) make heart-rate targets unreliable, so use RPE.",
+    "Pregnancy: low-impact cardio is generally encouraged in uncomplicated pregnancy if your doctor agrees; balance changes as the bump grows, so hold the handles, keep effort moderate (talk test) and avoid overheating.",
+    "Recent surgery (especially hip, knee, ankle, abdomen): only with clearance from your surgeon or physiotherapist.",
+    "Balance problems, dizziness, or numb feet (e.g. diabetic nerve damage): hold the fixed handles; consider a recumbent machine.",
+    "Stop immediately if: chest pain or pressure; unusual breathlessness; dizziness, light-headedness or fainting feeling; irregular or racing heartbeat; sharp joint pain; numbness that does not go away when you stop. Seek medical help for chest symptoms.",
+    "Spotter: not needed.",
+    "Hazards: keep children, hands, towels and loose clothing away from the flywheel and moving linkages. Always wait for the pedals to stop before stepping on or off.",
+    "Gym etiquette: wipe down handles and console; many Indian gyms set a time limit (often about 20–30 minutes) at peak hours (est.), so check the notice board; do not leave a towel or bottle to \"reserve\" it; keep phone calls short and quiet; reset the console when done."
+  ],
+  "sources": [
+    "Herrmann SD, et al. 2024 Adult Compendium of Physical Activities: a third update of the energy costs of human activities. J Sport Health Sci, 2024 – https://pubmed.ncbi.nlm.nih.gov/38242596/ ; Compendium conditioning exercise table – https://pacompendium.com/conditioning-exercise ; tracking guide – https://pacompendium.com/wp-content/uploads/2025/02/4_2024_adult-compendium-tracking-guide-1-2024.pdf ; Older Adult Compendium – https://pacompendium.com/older-adult-compendium/",
+    "Harvard Health Publishing. Why you should try ellipticals – https://www.health.harvard.edu/exercise-and-fitness/why-you-should-try-ellipticals",
+    "NHS. Physical activity guidelines for adults aged 19 to 64 – https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-for-adults-aged-19-to-64/",
+    "ACSM. Exercise intensity infographic – https://acsm.org/wp-content/uploads/2025/02/Exercise-intensity-infographic-PDF.pdf ; ACSM intensity bands as tabulated in PMC – https://pmc.ncbi.nlm.nih.gov/articles/PMC8581515/table/T1 and https://pmc.ncbi.nlm.nih.gov/articles/PMC9830234/table/table2-15598276211052277",
+    "ACE. Try this HIIT workout on the elliptical – https://www.acefitness.org/acefit/healthy-living-article/60/3768/try-this-hiit-workout-on-the-elliptical/",
+    "ACE-sponsored research on pedalling backward (backward cycling EMG) – https://www.acefitness.org/continuing-education/prosource/june-2015/5401/ace-sponsored-research-evaluates-the-effectiveness-of-pedaling-backward/",
+    "Lu TW, Chien HL, Chen HL. Joint loading in the lower extremities during elliptical exercise. Med Sci Sports Exerc 2007;39(9):1651–1658 – https://scholars.lib.ntu.edu.tw/handle/123456789/483992",
+    "Comparison of two elliptical motion running machines and treadmill running (ISBS 1998) – https://ojs.ub.uni-konstanz.de/cpa/article/view/975",
+    "Moreside JM, et al. How do elliptical machines differ from walking? Clin Biomech 2012 – https://www.backfitpro.com/medical-scientific-articles/2012/[58]Moreside,J.M.(2012)How-do-elliptical-machines-differ-from-walking[Clin.Biomech.].pdf",
+    "Buster T, Burnfield J, Taylor AP, Stergiou N. Lower extremity kinematics during walking and elliptical training – https://digitalcommons.unomaha.edu/biomechanicsarticles/35",
+    "Brown GA, et al. Comparison of energy expenditure on a treadmill vs. an elliptical device at a self-selected exercise intensity. J Strength Cond Res 2010 – https://www.bisp-surf.de/Record/PU201103002292",
+    "Kravitz L, et al. Metabolic response of elliptical exercise training (forward, backward, resistance, speed, slope) – https://www.unm.edu/~lkravitz/Research%20Abstrs/metabolicelpptical.html",
+    "Comparing the muscles activity during walking, pedaling, frog kicking and elliptical training in healthy and PFPS men – https://jehs.ssrc.ac.ir/article_3684.html",
+    "Glave AP, et al. Accuracy of elliptical calorie displays. Exercise Medicine 2018 – https://doaj.org/article/37d08913b6004a4f901ea440279679ef ; Testing the accuracy of the calorie tracker on ellipticals (IJESAB) – https://digitalcommons.wku.edu/ijesab/vol11/iss2/53",
+    "American College of Cardiology. Wrist-worn heart rate monitors less accurate than standard chest strap (2017; includes elliptical with arm levers) – https://www.acc.org/about-acc/press-releases/2017/03/08/14/02/wrist-worn-heart-rate-monitors-less-accurate-than-standard-chest-strap",
+    "Better Health Channel (Victoria). Exercise intensity – https://www.betterhealth.vic.gov.au/health/healthyliving/exercise-intensity",
+    "Spirit Fitness CE850 spec sheet (example of adjustable stride, resistance levels, HR grips) – https://www.spiritfitness.com/ce850",
+    "Schwinn 430 elliptical (example of adjustable ramp, resistance levels) – https://fitnesssupply.com/products/schwinn-430-elliptical"
+  ],
+  "burnMinutes": null,
+  "gymAccess": [],
+  "suitsPreferences": [],
+  "swapsByAccess": null,
+  "conditionCautions": [],
+  "searchTags": null,
+  "tags": [
+    "Gym",
+    "Beginner",
+    "Low impact",
+    "Cardio",
+    "Legs",
+    "Glutes",
+    "Rep counter"
+  ],
+  "needsReview": [
+    "moderate intensity given as RPE 3-4/10; ACSM maps moderate to about 5–6/10 (Borg 12–13)"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-11",
+      "file": "FitPlate_Fitness_2026-10-11.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

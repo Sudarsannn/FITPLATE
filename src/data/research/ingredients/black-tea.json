@@ -1,0 +1,88 @@
+{
+  "id": "black-tea",
+  "name": "Black tea",
+  "aliases": [
+    "chai patti",
+    "tea bags"
+  ],
+  "category": "Beverage (packaged)",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-05",
+        "min": 420,
+        "max": 560,
+        "avg": 490,
+        "confidence": "High",
+        "sourceFile": "FitPlate_Ingredients_2026-10-05.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 420,
+      "max": 560,
+      "avg": 490
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-05",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 7,
+    "platforms": [
+      "Amazon",
+      "BigBasket",
+      "Flipkart",
+      "JioMart",
+      "Red Label 1 kg",
+      "Tata Tea Premium"
+    ],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
+  },
+  "per100Estimate": {
+    "min": 42,
+    "max": 56,
+    "avg": 49
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 1,
+    "proteinG": 0,
+    "carbsG": 0.3,
+    "fatG": 0,
+    "fibreG": 0
+  },
+  "storage": "Airtight, opaque container at room temperature, away from spices, moisture and sunlight. Do not refrigerate (it picks up moisture and smells).",
+  "substitutes": [
+    "Loose tea in a muslin bundle",
+    "Dried amla (Indian gooseberry)",
+    "Skip it"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 8,
+      "quantity": null,
+      "unit": null,
+      "raw": "1 tea bag (optional, for colour; or 1 tsp loose tea in muslin)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-05",
+      "file": "FitPlate_Ingredients_2026-10-05.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

@@ -10,6 +10,7 @@ import { checkClaims, dishAllergens, allergenNotes, findClaims, sortAllergens } 
 import { parseDietTags, parseTagsLine, parseVariants, withoutDietTags } from './dietTags';
 import { parseFasting, validateFasting } from './fasting';
 import { bullets, labelled, minutes, num, plain, rupee, rupeeRange, seconds, slugify, splitHeadings, tableRows, type Section } from './markdown';
+import { listingEvidence, parseListingTable, type ListingEvidence } from './priceChecks';
 
 /** One dish as written in one research file, before merging with other versions. */
 export type DishVersion = {
@@ -31,7 +32,7 @@ export type DishVersion = {
   steps: DishStep[];
   nutrition: Macros;
   /** Order price for 1 serving as written; feeds the price trend engine. */
-  orderPrice: { min: number; max: number; avg: number | null } | null;
+  orderPrice: OrderPriceVersion | null;
   /** "AS ORDERED" block (dish files from 2026-10-08). Null when the block is missing. */
   asOrdered: Dish['asOrdered'];
   healthiness: Dish['healthiness'];
@@ -51,6 +52,22 @@ export type DishVersion = {
   needsReview: string[];
   notes: string[];
 };
+
+/**
+ * One researched order price. `avg` is what the price engine uses (null when
+ * the file's average lies outside its own range); `statedAvg` and `median`
+ * are the headline figures as written, kept for the FIX 2 checks.
+ */
+export type OrderPriceVersion = ListingEvidence & {
+  min: number;
+  max: number;
+  avg: number | null;
+  statedAvg: number | null;
+  median: number | null;
+};
+
+/** Research rounds dish prices to ₹10, so a ₹209.64 listing backs a ₹210 floor. */
+const DISH_PRICE_TOLERANCE = 5;
 
 export function dishId(number: number, name: string): string {
   return `${String(number).padStart(3, '0')}-${slugify(name)}`;
@@ -163,7 +180,41 @@ export function parseNutrition(body: string): Macros {
   };
 }
 
-function parseOrderPrice(body: string): DishVersion['orderPrice'] {
+const AMOUNT = '₹\\s*([\\d,]+(?:\\.\\d+)?)';
+
+/** "average about ₹280" / "median ₹225" in one phrase; "average of all …" describes the full spread, not the range. */
+function statedFigure(text: string, label: 'average' | 'median'): number | null {
+  const m = new RegExp(`\\b${label}\\b(?! of all)[^₹\\n.;]{0,15}${AMOUNT}`, 'i').exec(text);
+  return m ? num(m[1]) : null;
+}
+
+/**
+ * The headline average and median the research gives for its range, as
+ * written (not filtered): the range sentence itself ("₹180–240; median about
+ * ₹230; average about ₹280."), then an "Average:" / "Median:" label, then the
+ * AS ORDERED price line when it repeats the same range.
+ */
+function headlineFigures(text: string, rangeLine: string, range: { min: number; max: number }): { avg: number | null; median: number | null } {
+  const fromRange = rangeLine.slice(rangeLine.search(/price range/i));
+  const headline = fromRange.split(/(?<=\.)\s+(?=[A-Z])/)[0];
+  const lines = text.split('\n');
+  const label = (name: string) => {
+    const inLine = new RegExp(`(?:^|\\.\\s+)${name}\\b[^:.]{0,30}:\\s*(?:about|~|≈)?\\s*${AMOUNT}`, 'i').exec(fromRange);
+    if (inLine) return num(inLine[1]);
+    const own = lines.find((l) => new RegExp(`^\\s*-?\\s*${name}\\b[^:]*:`, 'i').test(l) && !/average of all/i.test(l));
+    return own ? rupee(own) : null;
+  };
+  const asOrdered = lines.find((l) => /^\s*-?\s*price\b[^:]*:/i.test(l) && !/price range/i.test(l) && /average|median/i.test(l) && (() => {
+    const r = rupeeRange(l.slice(l.search(/range/i)));
+    return r != null && r.min === range.min && r.max === range.max;
+  })());
+  return {
+    avg: statedFigure(headline, 'average') ?? label('average') ?? (asOrdered ? statedFigure(asOrdered, 'average') : null),
+    median: statedFigure(headline, 'median') ?? label('median') ?? (asOrdered ? statedFigure(asOrdered, 'median') : null),
+  };
+}
+
+export function parseOrderPrice(body: string): OrderPriceVersion | null {
   const text = plain(body);
   const rangeLine = text.split('\n').find((l) => /price range/i.test(l));
   if (!rangeLine) return null;
@@ -180,7 +231,16 @@ function parseOrderPrice(body: string): DishVersion['orderPrice'] {
   }
   // An average outside the narrowed range belongs to the full spread, not the range.
   if (avg != null && (avg < range.min || avg > range.max)) avg = null;
-  return { min: range.min, max: range.max, avg };
+  const stated = headlineFigures(text, rangeLine, range);
+  return {
+    min: range.min,
+    max: range.max,
+    avg,
+    statedAvg: stated.avg,
+    median: stated.median,
+    // "Price range (1 serving), everyday Mumbai city restaurants: ₹180–240" leaves out-of-city rows out.
+    ...listingEvidence(parseListingTable(body, 'dish'), range, DISH_PRICE_TOLERANCE, { cityOnly: /mumbai city/i.test(rangeLine.split('₹')[0]) }),
+  };
 }
 
 function parseAsOrdered(body: string): Dish['asOrdered'] {

@@ -1,0 +1,80 @@
+{
+  "id": "pav",
+  "name": "Pav",
+  "aliases": [
+    "ladi pav",
+    "soft bread rolls"
+  ],
+  "category": "Bakery / packaged",
+  "standardUnit": "piece",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-06",
+        "min": 5,
+        "max": 6,
+        "avg": 5,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-06.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 5,
+      "max": 6,
+      "avg": 5
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-06",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 4,
+    "platforms": [
+      "BigBasket",
+      "IndiaMART"
+    ],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
+  },
+  "per100Estimate": null,
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 280,
+    "proteinG": 9,
+    "carbsG": 52,
+    "fatG": 4,
+    "fibreG": 3
+  },
+  "storage": "Room temperature in its bag or a bread box, away from sunlight: 1–2 days (bakery), up to the pack date (packaged). Freeze in a zip bag up to 1 month; thaw and toast on a buttered tawa. Fridge storage makes pav go stale faster.",
+  "substitutes": [
+    "Burger buns or dinner rolls",
+    "Whole-wheat pav",
+    "Sliced bread, toasted with butter"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 13,
+      "quantity": null,
+      "unit": null,
+      "raw": "2 pav (about 70 g)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-06",
+      "file": "FitPlate_Ingredients_2026-10-06.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

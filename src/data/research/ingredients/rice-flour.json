@@ -1,0 +1,84 @@
+{
+  "id": "rice-flour",
+  "name": "Rice flour",
+  "aliases": [
+    "chawal ka atta"
+  ],
+  "category": "Packaged (flour)",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-07",
+        "min": 60,
+        "max": 70,
+        "avg": 65,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-07.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 60,
+      "max": 70,
+      "avg": 65
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-07",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 4,
+    "platforms": [
+      "StoreKing"
+    ],
+    "outOfStock": false,
+    "confirmed": false,
+    "checkNotes": [
+      "only 1 platform (StoreKing) backs the range"
+    ]
+  },
+  "per100Estimate": {
+    "min": 6,
+    "max": 7,
+    "avg": 6.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 366,
+    "proteinG": 6,
+    "carbsG": 80.1,
+    "fatG": 1.4,
+    "fibreG": 2.4
+  },
+  "storage": "Airtight jar in a cool, dry cupboard for 2–3 months after opening; in the fridge for up to 6 months in humid weather.",
+  "substitutes": [
+    "Cornflour (cornstarch)",
+    "Fine semolina (sooji)",
+    "Leave it out"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 20,
+      "quantity": 3,
+      "unit": "g",
+      "raw": "3 g (1 tsp, in the besan batter)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-07",
+      "file": "FitPlate_Ingredients_2026-10-07.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}
