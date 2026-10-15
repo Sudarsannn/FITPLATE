@@ -1,6 +1,6 @@
 import { Link, Redirect } from 'expo-router';
 import { useEffect } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Platform, Pressable, StyleSheet, Text, View } from 'react-native';
 import Animated, {
   FadeIn,
   FadeInDown,
@@ -15,13 +15,12 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import GoogleSignInButton from '../components/GoogleSignInButton';
 import { GuestCopyPrompt } from '../components/GuestCopyPrompt';
 import { GradientButton, VideoBackground } from '../components/ui';
+import { googleClientIdsFromEnv, googleSignInAvailable } from '../config/googleAuth';
 import { firebaseConfigured } from '../lib/firebase';
 import { useStore } from '../lib/store';
 import { colors, type } from '../theme';
 
-const googleReady =
-  firebaseConfigured &&
-  Boolean(process.env.EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID || process.env.EXPO_PUBLIC_GOOGLE_ANDROID_CLIENT_ID);
+const googleReady = googleSignInAvailable(Platform.OS, googleClientIdsFromEnv(), firebaseConfigured);
 
 const WORDS = ['Cook it.', 'Track it.', 'Burn it.'];
 

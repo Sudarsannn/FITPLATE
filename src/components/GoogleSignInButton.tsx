@@ -3,20 +3,26 @@ import * as Google from 'expo-auth-session/providers/google';
 import * as WebBrowser from 'expo-web-browser';
 import { GoogleAuthProvider, signInWithCredential } from 'firebase/auth';
 import { useEffect, useState } from 'react';
-import { Text } from 'react-native';
+import { Platform, Text } from 'react-native';
 
+import { googleClientIdsFromEnv, iosGoogleRedirect } from '../config/googleAuth';
 import { getFirebaseAuth } from '../lib/firebase';
 import { colors } from '../theme';
 import { GradientButton } from './ui';
 
 WebBrowser.maybeCompleteAuthSession();
 
-// Only rendered when Firebase and the Google client IDs are configured.
+const ids = googleClientIdsFromEnv();
+
+// Only rendered when googleSignInAvailable() says this platform has its client ID.
 export default function GoogleSignInButton() {
   const [error, setError] = useState<string | null>(null);
   const [request, response, promptAsync] = Google.useIdTokenAuthRequest({
-    webClientId: process.env.EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID,
-    androidClientId: process.env.EXPO_PUBLIC_GOOGLE_ANDROID_CLIENT_ID,
+    webClientId: ids.web,
+    androidClientId: ids.android,
+    iosClientId: ids.ios,
+    // On the iPhone, Google returns to the reversed client ID scheme that app.config.js registers.
+    redirectUri: Platform.OS === 'ios' ? iosGoogleRedirect(ids.ios) : undefined,
   });
 
   useEffect(() => {
@@ -37,6 +43,9 @@ export default function GoogleSignInButton() {
         onPress={() => promptAsync()}
         disabled={!request}
       />
+      {response?.type === 'error' ? (
+        <Text style={{ color: colors.bad, marginTop: 8 }}>{response.error?.message ?? 'Google sign-in did not finish.'}</Text>
+      ) : null}
       {error ? <Text style={{ color: colors.bad, marginTop: 8 }}>{error}</Text> : null}
     </>
   );

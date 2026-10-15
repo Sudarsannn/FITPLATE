@@ -23,6 +23,8 @@ export const featureFlags = {
   liteMode: true,
   /** Innovation (Day 06): the Cook tab remembers "Leave out dishes that contain …" on this device. */
   rememberAllergens: true,
+  /** Priority plan P1-b: Google sign-in inside the iPhone / Android dev build. Only shows when that platform's client ID is in .env. */
+  nativeGoogleSignIn: true,
 } as const;
 
 export type FeatureFlag = keyof typeof featureFlags;
