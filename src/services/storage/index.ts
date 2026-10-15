@@ -1,4 +1,5 @@
 import type { Favourite, MealLog, MealPlanDay, SavingEntry, SupplementLog, WaterLog, WorkoutLog } from '../../models/logs';
+import type { CookCompletion, DishRating, ShoppingList, UserSettings, WeightLog } from '../../models/prefs';
 import type { UserProfile } from '../../models/user';
 import { createLocalDocStore, ownerPrefix, type DocStore } from './docStore';
 import type { KeyValueStore } from './kv';
@@ -11,7 +12,7 @@ import { createSyncedDocStore, outboxKey, type SyncedDocStore } from './syncedSt
 export { copyGuestToAccount } from './guest';
 export { fromLegacyState, LEGACY_KEY, type LegacyState } from './legacy';
 export { PROFILE_ID } from './remote';
-export { COLLECTIONS, SCHEMAS } from './schemas';
+export { APPEND_ONLY, COLLECTIONS, SCHEMAS } from './schemas';
 
 export const GUEST_OWNER = 'guest';
 
@@ -26,6 +27,11 @@ export function createRepositories(store: DocStore, deps: RepoDeps = {}) {
     favourites: createRepository<Favourite>(store, SCHEMAS.favourites, deps),
     mealPlans: createRepository<MealPlanDay>(store, SCHEMAS.mealPlans, deps),
     savings: createRepository<SavingEntry>(store, SCHEMAS.savings, deps),
+    settings: createRepository<UserSettings>(store, SCHEMAS.settings, deps),
+    shoppingLists: createRepository<ShoppingList>(store, SCHEMAS.shoppingLists, deps),
+    weightLogs: createRepository<WeightLog>(store, SCHEMAS.weightLogs, deps),
+    ratings: createRepository<DishRating>(store, SCHEMAS.ratings, deps),
+    cookCompletions: createRepository<CookCompletion>(store, SCHEMAS.cookCompletions, deps),
   };
 }
 

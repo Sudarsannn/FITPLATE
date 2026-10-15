@@ -3,12 +3,15 @@ import {
   collection,
   doc,
   getDoc,
+  getDocFromServer,
   getDocs,
   getDocsFromServer,
   initializeFirestore,
   memoryLocalCache,
   persistentLocalCache,
   persistentMultipleTabManager,
+  serverTimestamp,
+  setDoc,
   writeBatch,
   type Firestore,
 } from 'firebase/firestore';
@@ -57,6 +60,14 @@ export function createFirestoreAdapter(firestore: Firestore): RemoteAdapter {
         for (const w of writes.slice(i, i + MAX_BATCH)) batch.set(doc(firestore, w.path), w.data);
         await batch.commit();
       }
+    },
+    async serverNow(path) {
+      const ref = doc(firestore, path);
+      await setDoc(ref, { t: serverTimestamp() });
+      const snap = await getDocFromServer(ref);
+      const t = snap.get('t');
+      if (!t || typeof t.toMillis !== 'function') throw new Error('no server time');
+      return t.toMillis() as number;
     },
     async deleteMany(paths) {
       for (let i = 0; i < paths.length; i += MAX_BATCH) {

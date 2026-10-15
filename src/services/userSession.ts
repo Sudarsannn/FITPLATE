@@ -1,5 +1,6 @@
 import type { BaseDoc, DateKey, Doc } from '../models/common';
 import type { Favourite, MealLog, MealPlanDay, SavingEntry, WaterLog, WorkoutLog } from '../models/logs';
+import { DEFAULT_SETTINGS, type CookCompletion, type DishRating, type ShoppingList, type UserSettings, type WeightLog } from '../models/prefs';
 import { DEFAULT_PROFILE, type UserProfile } from '../models/user';
 import type { DayLog, Profile, Slot } from '../lib/store';
 import { deleteAllUserData } from './storage/deleteUser';
@@ -28,12 +29,45 @@ export type UserDocs = {
   favourites: Record<string, Doc<Favourite>>;
   mealPlans: Record<string, Doc<MealPlanDay>>;
   savings: Record<string, Doc<SavingEntry>>;
+  // Priority plan P2-b.
+  settings: Doc<UserSettings> | null;
+  shoppingLists: Record<string, Doc<ShoppingList>>;
+  weightLogs: Record<string, Doc<WeightLog>>;
+  ratings: Record<string, Doc<DishRating>>;
+  cookCompletions: Record<string, Doc<CookCompletion>>;
 };
 
-type ListCollection = Exclude<keyof UserDocs, 'profile'>;
-const LIST_COLLECTIONS: readonly ListCollection[] = ['mealLogs', 'waterLogs', 'workoutLogs', 'favourites', 'mealPlans', 'savings'];
+/** Id of the one settings document. */
+export const SETTINGS_ID = 'settings';
 
-export const EMPTY_DOCS: UserDocs = { profile: null, mealLogs: {}, waterLogs: {}, workoutLogs: {}, favourites: {}, mealPlans: {}, savings: {} };
+type ListCollection = Exclude<keyof UserDocs, 'profile' | 'settings'>;
+const LIST_COLLECTIONS: readonly ListCollection[] = [
+  'mealLogs',
+  'waterLogs',
+  'workoutLogs',
+  'favourites',
+  'mealPlans',
+  'savings',
+  'shoppingLists',
+  'weightLogs',
+  'ratings',
+  'cookCompletions',
+];
+
+export const EMPTY_DOCS: UserDocs = {
+  profile: null,
+  mealLogs: {},
+  waterLogs: {},
+  workoutLogs: {},
+  favourites: {},
+  mealPlans: {},
+  savings: {},
+  settings: null,
+  shoppingLists: {},
+  weightLogs: {},
+  ratings: {},
+  cookCompletions: {},
+};
 
 /** Set once the guest store on this device has been migrated from the demo blob, or seeded. */
 export const GUEST_READY_KEY = 'fitplate.guestReady.v1';
@@ -48,15 +82,21 @@ export const dateKeyOf = (t: number): DateKey => {
 };
 
 export async function loadDocs(repos: Repositories): Promise<UserDocs> {
-  const [profile, mealLogs, waterLogs, workoutLogs, favourites, mealPlans, savings] = await Promise.all([
-    repos.profile.get(PROFILE_ID),
-    repos.mealLogs.list(),
-    repos.waterLogs.list(),
-    repos.workoutLogs.list(),
-    repos.favourites.list(),
-    repos.mealPlans.list(),
-    repos.savings.list(),
-  ]);
+  const [profile, mealLogs, waterLogs, workoutLogs, favourites, mealPlans, savings, settings, shoppingLists, weightLogs, ratings, cookCompletions] =
+    await Promise.all([
+      repos.profile.get(PROFILE_ID),
+      repos.mealLogs.list(),
+      repos.waterLogs.list(),
+      repos.workoutLogs.list(),
+      repos.favourites.list(),
+      repos.mealPlans.list(),
+      repos.savings.list(),
+      repos.settings.get(SETTINGS_ID),
+      repos.shoppingLists.list(),
+      repos.weightLogs.list(),
+      repos.ratings.list(),
+      repos.cookCompletions.list(),
+    ]);
   return {
     profile,
     mealLogs: byId(mealLogs),
@@ -65,6 +105,11 @@ export async function loadDocs(repos: Repositories): Promise<UserDocs> {
     favourites: byId(favourites),
     mealPlans: byId(mealPlans),
     savings: byId(savings),
+    settings,
+    shoppingLists: byId(shoppingLists),
+    weightLogs: byId(weightLogs),
+    ratings: byId(ratings),
+    cookCompletions: byId(cookCompletions),
   };
 }
 
@@ -111,6 +156,7 @@ export function toView(docs: UserDocs): LegacyState {
 /** How many of these documents are the user's own (not the demo's sample week). */
 export function ownDataCount(docs: UserDocs): number {
   let n = docs.profile && !docs.profile.deleted && docs.profile.onboarded ? 1 : 0;
+  if (docs.settings && !docs.settings.deleted && Object.keys(docs.settings.brandChoice ?? {}).length) n += 1;
   for (const c of LIST_COLLECTIONS) {
     n += live(docs[c] as Record<string, BaseDoc & { demoSample?: boolean }>).filter((d) => !d.demoSample).length;
   }
@@ -375,11 +421,67 @@ export function createUserSession(
       enqueue(() => repos.mealPlans.upsert(dateKey, { dateKey, slots }));
     },
 
+    /** P2-b: settings (one document). Patch fields are merged into the current settings. */
+    updateSettings(patch: Partial<UserSettings>) {
+      const t = now();
+      const current = docs.settings ?? { ...DEFAULT_SETTINGS, ...base(SETTINGS_ID, 'settings', t) };
+      const next: Doc<UserSettings> = { ...current, ...patch, updatedAt: Math.max(t, current.updatedAt + 1) };
+      set({ ...docs, settings: next });
+      enqueue(() => repos.settings.upsert(SETTINGS_ID, fieldsOf(next)));
+    },
+
+    /** Remember the brand / pack picked for an ingredient, so it is pre-selected next time. */
+    chooseBrand(ingredientKey: string, variant: string | null) {
+      const brandChoice = { ...(docs.settings?.brandChoice ?? {}) };
+      if (variant) brandChoice[ingredientKey] = variant;
+      else delete brandChoice[ingredientKey];
+      this.updateSettings({ brandChoice });
+    },
+
+    /** Create or replace a shopping list (whole document, latest change wins). Returns its id. */
+    saveShoppingList(list: ShoppingList, id?: string): string {
+      const t = now();
+      const listId = id ?? makeId(t);
+      const current = docs.shoppingLists[listId];
+      const doc: Doc<ShoppingList> = { ...(current ?? base(listId, 'shoppingLists', t)), ...list, updatedAt: current ? Math.max(t, current.updatedAt + 1) : t };
+      put('shoppingLists', doc);
+      enqueue(() => repos.shoppingLists.upsert(listId, list));
+      return listId;
+    },
+
+    removeShoppingList(id: string) {
+      if (!docs.shoppingLists[id]) return;
+      drop('shoppingLists', id);
+      enqueue(() => repos.shoppingLists.remove(id));
+    },
+
+    addWeight(kg: number) {
+      const t = now();
+      const doc: Doc<WeightLog> = { timestamp: t, dateKey: dateKeyOf(t), kg, ...base(makeId(t), 'weightLogs', t) };
+      put('weightLogs', doc);
+      enqueue(() => repos.weightLogs.create({ ...fieldsOf(doc), id: doc.id }));
+    },
+
+    rateDish(dishId: string, stars: DishRating['stars'], note: string | null = null) {
+      const t = now();
+      const current = docs.ratings[dishId];
+      put('ratings', { ...(current ?? base(dishId, 'ratings', t)), dishId, stars, note, updatedAt: current ? Math.max(t, current.updatedAt + 1) : t });
+      enqueue(() => repos.ratings.upsert(dishId, { dishId, stars, note }));
+    },
+
+    addCookCompletion(c: Omit<CookCompletion, 'timestamp' | 'dateKey'>) {
+      const t = now();
+      const doc: Doc<CookCompletion> = { ...c, timestamp: t, dateKey: dateKeyOf(t), ...base(makeId(t), 'cookCompletions', t) };
+      put('cookCompletions', doc);
+      enqueue(() => repos.cookCompletions.create({ ...fieldsOf(doc), id: doc.id }));
+    },
+
     /** Guests only: wipe this device's guest data and load the sample week again. */
     resetToSample(seed: LegacyState) {
       const t = now();
       const sample = sampleDocs(seed, t);
       set({
+        ...EMPTY_DOCS,
         profile: sample.profile,
         mealLogs: byId(sample.mealLogs),
         waterLogs: byId(sample.waterLogs),

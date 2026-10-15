@@ -11,7 +11,7 @@ This file is the single description of every piece of data FitPlate stores. The 
 | Offline copy of the signed-in user's data | Firestore's local cache (web: persistent cache) plus AsyncStorage | No (one device) |
 | Guest data (not signed in) | AsyncStorage only | No (one device) |
 
-Research content is never copied into Firestore. User documents refer to it by id only (`dishId`, `ingredientId`, `nutrientId`, `exerciseId`).
+Research content is bundled with the app and, from the priority plan's P2-c, also copied to a shared read-only `research/…` area of Firestore by `npm run research:import` (run by Sudarsan). The app uses the server copy only when its version (`researchVersion.js`: newest ledger date + entry count) is newer than the bundle and every count matches. User documents refer to research by id only (`dishId`, `ingredientId`, `nutrientId`, `exerciseId`).
 
 Research files layout (from Day 4): `src/data/research/dishes/NNN-slug.json` (dish id = 3-digit number + slug, e.g. `001-poha`), `src/data/research/ingredients/<id>.json` (kebab-case English name without the bracketed Indian names, e.g. `peanuts-raw`), a generated `index.ts` per folder, and `ledger.json` (every ingested version as item id + research date + build day). From Day 5 also `nutrients/`, `hydration/`, `guidance/`, `conditions/` (nutrient stream; types in `src/models/nutrient.ts`), `exercises/` and `fitness-guides/` (fitness stream; types in `src/models/exercise.ts`), `ingredients/aliases.json` (any spelling → ingredient id) and `links.json` (cross-links: good-source dishes, variant families, drinks, MET values, ingredient micronutrient table). Nutrient and fitness ledger keys are `kind:id` (e.g. `nutrient:vitamin-a`, `exercise:push-up`). `npm run research:sync -- --today YYYY-MM-DD --build DayNN` rebuilds them from the research files.
 
@@ -62,8 +62,13 @@ Types live in `src/models/`; versions and migrations in `src/services/storage/sc
 | `users/{uid}/favourites/{dishId}` | Saved dish | 1 | Day 3 | `dishId` |
 | `users/{uid}/mealPlans/YYYY-MM-DD` | Planned dishes for one day | 1 | Day 3 | `dishId` |
 | `users/{uid}/savings/{id}` | Money saved by cooking | 1 | Day 3 | `dishId` |
-| `users/{uid}/groceryLists/{id}` | Shopping list | — | planned (Day 9) | `ingredientId` |
-| `users/{uid}/ratings/{id}` | The user's own dish rating | — | planned | `dishId` |
+| `users/{uid}/settings/settings` | Units, preferred vendor, brand per ingredient, toggles, Swiggy insights consent (`UserSettings`) | 1 | P2-b | ingredient ids (keys of `brandChoice`) |
+| `users/{uid}/shoppingLists/{id}` | Basket in progress: items, included/ticked, chosen variant, how it was bought (`ShoppingList`). Replaces the planned `groceryLists` | 1 | P2-b | `dishIds`, `items[].ingredientId` |
+| `users/{uid}/weightLogs/{id}` | Weight entry, append-only | 1 | P2-b | — |
+| `users/{uid}/ratings/{dishId}` | The user's own dish rating (`DishRating`) | 1 | P2-b | `dishId` |
+| `users/{uid}/cookCompletions/{id}` | One finished cook, append-only (`CookCompletion`) | 1 | P2-b | `dishId` |
+| `users/{uid}/meta/clock` | Server-clock check (`serverClock.ts`), not a user collection | — | P2-b | — |
+| `research/meta`, `research/extras`, `research/{kind}/items/{id}` | Shared read-only research library, written only by `scripts/server/import-research.js` | — | P2-c | — |
 
 ### Fields per collection
 
@@ -116,3 +121,4 @@ Spark allows about 20,000 writes and 50,000 reads a day. Writes are batched and 
 - 2026-10-11 (Day 04, review fix 3): "Your data" screen (`/your-data`) linked from the welcome screen and Profile; Profile → "Delete my data" for signed-in users hard-deletes every document under `users/{uid}` (all collections in `SCHEMAS`, in batches of ≤500) and clears the device copy, then signs out. `RemoteAdapter` gained `deleteMany(paths)` and `getCollection(path, { fromServer })`. No schema or rules change.
 - 2026-10-11 (Day 04): bundled research data started (10 dishes, 30 ingredients). `Dish` gained `allergens`, `dietClaims`, `fasting`, `needsReview`, step detail fields (`title`, `visualCue`, `cameraCheck`, `videoShot`) and `healthiness.restaurantScore`; `Ingredient` gained `macrosPer100Estimate`. Bundled content only: no Firestore change.
 - 2026-10-15 (Day 05): nutrient, hydration, guidance, health-profile, exercise and fitness-guide content bundled; `Dish` gained `tags`, `dietTags`, `description`, `familyId` and `variants` (SPEC-ADDENDA §9); `Ingredient` gained `usedIn`; `NutrientPer100` gained the 20 v2 fields (cholesterol, fat types, B vitamins, water, …), null for v1 profiles; `microNutrientsEstimate` is now filled where ingredient data exists. User documents may refer to `nutrientId` and `exerciseId` from these folders. Bundled content only: no Firestore change, no `schemaVersion` bump.
+- 2026-10-16 (priority plan P2): settings, shoppingLists, weightLogs, ratings, cookCompletions collections; append-only logs enforced in firestore.rules (APPEND_ONLY in schemas.ts); writes stamped with the server-corrected clock (users/{uid}/meta/clock); shared research library in Firestore with bundled fallback. See docs/SERVER_READINESS.md.

@@ -1,5 +1,6 @@
 import { collectionPath, docPath, PROFILE_COLLECTION, userDocPath, type RemoteAdapter } from './remote';
 import { SCHEMAS } from './schemas';
+import { clockDocPath } from './serverClock';
 
 /**
  * "Delete my data": hard-deletes everything FitPlate saved in the cloud for
@@ -21,6 +22,8 @@ export async function deleteAllUserData(adapter: RemoteAdapter, uid: string): Pr
     const docs = await adapter.getCollection(collectionPath(uid, collection), { fromServer: true });
     for (const d of docs) paths.push(docPath(uid, collection, d.id));
   }
+  // The clock check document (serverClock.ts) is not a user collection but lives under users/{uid} too.
+  paths.push(clockDocPath(uid));
   if (paths.length) await adapter.deleteMany(paths);
   await adapter.deleteMany([userDocPath(uid)]);
   return paths.length + 1;

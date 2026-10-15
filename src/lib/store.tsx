@@ -5,7 +5,10 @@ import { AppState } from 'react-native';
 
 import { featureFlags } from '../config/featureFlags';
 import { dishes, type Diet, type Dish } from '../data/dishes';
+import type { Doc } from '../models/common';
+import { DEFAULT_SETTINGS, type CookCompletion, type DishRating, type ShoppingList, type UserSettings } from '../models/prefs';
 import { GUEST_OWNER, openUserData, type UserData } from '../services/storage';
+import { createServerClock, measureClockOffset } from '../services/storage/serverClock';
 import { createFirestoreAdapter, getDb } from '../services/storage/firestoreRemote';
 import type { KeyValueStore } from '../services/storage/kv';
 import type { RemoteAdapter } from '../services/storage/remote';
@@ -161,6 +164,20 @@ type Store = State & {
   /** Guests only: restore the sample week. Signed-in accounts never get sample data. */
   resetDemo: () => void;
   streak: number;
+  // Priority plan P2-b: synced per-user data beyond the logs.
+  settings: UserSettings;
+  updateSettings: (patch: Partial<UserSettings>) => void;
+  /** Remember the brand / pack picked for an ingredient (null forgets it). */
+  chooseBrand: (ingredientKey: string, variant: string | null) => void;
+  /** Shopping lists that are not finished, newest first. */
+  shoppingLists: Doc<ShoppingList>[];
+  /** Create (no id) or replace a shopping list; returns its id. */
+  saveShoppingList: (list: ShoppingList, id?: string) => string;
+  removeShoppingList: (id: string) => void;
+  addWeight: (kg: number) => void;
+  ratings: Record<string, DishRating['stars']>;
+  rateDish: (dishId: string, stars: DishRating['stars'], note?: string | null) => void;
+  logCookCompletion: (c: Omit<CookCompletion, 'timestamp' | 'dateKey'>) => void;
 };
 
 const StoreContext = createContext<Store | null>(null);
@@ -175,6 +192,9 @@ function cloudAdapter() {
   const db = getDb();
   return db ? createFirestoreAdapter(db) : null;
 }
+
+// "Latest change wins, using the server's clock" (P2): every write is stamped with this clock.
+const clock = createServerClock();
 
 // A first sign-in on a new device waits this long for the cloud before showing what the device has.
 const FIRST_SYNC_WAIT_MS = 8000;
@@ -216,12 +236,14 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     let alive = true;
     const signedIn = owner !== GUEST_OWNER;
     const remote = signedIn ? cloudAdapter() : null;
-    const data = openUserData({ kv, uid: signedIn ? owner : null, remote, onSyncError: () => alive && setSyncError(true) });
+    const data = openUserData({ kv, uid: signedIn ? owner : null, remote, deps: { now: clock.now }, onSyncError: () => alive && setSyncError(true) });
+    // Measure the server clock in the background; writes before it lands use the device clock.
+    if (signedIn && remote) measureClockOffset(remote, owner).then((ms) => ms !== null && clock.setOffset(ms));
 
     (async () => {
       if (!signedIn) await prepareGuestDevice(kv, data, sampleState, Date.now());
       const local = await loadDocs(data.repos);
-      const session = createUserSession(data, local, { onChange: (d) => alive && setDocs(d), onError: () => alive && setSyncError(true) });
+      const session = createUserSession(data, local, { onChange: (d) => alive && setDocs(d), onError: () => alive && setSyncError(true), now: clock.now });
 
       const refresh = async () => {
         await session.idle();
@@ -341,8 +363,20 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       resetDemo: () => {
         if (s && active?.owner === GUEST_OWNER) s.resetToSample(sampleState());
       },
+      settings: { ...DEFAULT_SETTINGS, ...(docs.settings && !docs.settings.deleted ? docs.settings : {}) },
+      updateSettings: (patch) => s?.updateSettings(patch),
+      chooseBrand: (key, variant) => s?.chooseBrand(key, variant),
+      shoppingLists: Object.values(docs.shoppingLists)
+        .filter((l) => !l.deleted && l.status !== 'done')
+        .sort((a, b) => b.updatedAt - a.updatedAt),
+      saveShoppingList: (list, id) => s?.saveShoppingList(list, id) ?? id ?? '',
+      removeShoppingList: (id) => s?.removeShoppingList(id),
+      addWeight: (kg) => s?.addWeight(kg),
+      ratings: Object.fromEntries(Object.values(docs.ratings).filter((r) => !r.deleted).map((r) => [r.dishId, r.stars])),
+      rateDish: (dishId, stars, note = null) => s?.rateDish(dishId, stars, note),
+      logCookCompletion: (c) => s?.addCookCompletion(c),
     };
-  }, [state, user, ready, active, syncError, guestOffer]);
+  }, [state, docs, user, ready, active, syncError, guestOffer]);
 
   return <StoreContext.Provider value={store}>{children}</StoreContext.Provider>;
 }

@@ -2,10 +2,12 @@ import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
+import { useServerResearch } from '../lib/researchLoader';
 import { StoreProvider } from '../lib/store';
 import { colors } from '../theme';
 
 export default function RootLayout() {
+  useServerResearch();
   return (
     <GestureHandlerRootView style={{ flex: 1, backgroundColor: colors.bg }}>
       <StoreProvider>

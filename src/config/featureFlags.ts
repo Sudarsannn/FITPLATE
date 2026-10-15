@@ -25,6 +25,8 @@ export const featureFlags = {
   rememberAllergens: true,
   /** Priority plan P1-b: Google sign-in inside the iPhone / Android dev build. Only shows when that platform's client ID is in .env. */
   nativeGoogleSignIn: true,
+  /** Priority plan P2-c: read the research library from the server when it is newer than the bundled copy. */
+  serverResearch: true,
 } as const;
 
 export type FeatureFlag = keyof typeof featureFlags;

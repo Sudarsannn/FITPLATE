@@ -69,6 +69,7 @@ describe('toView (documents → the screens’ shape)', () => {
     const docs = fromLegacyState(blob, 1);
     const byId = <T extends { id: string }>(l: T[]) => Object.fromEntries(l.map((d) => [d.id, d]));
     const view = toView({
+      ...EMPTY_DOCS,
       profile: docs.profile,
       mealLogs: byId(docs.mealLogs),
       waterLogs: byId(docs.waterLogs),

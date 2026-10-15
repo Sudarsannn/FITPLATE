@@ -21,6 +21,8 @@ export type RemoteAdapter = {
   setMany(writes: { path: string; data: BaseDoc }[]): Promise<void>;
   /** Hard-delete documents by path, in batches of at most 500. */
   deleteMany(paths: string[]): Promise<void>;
+  /** Optional: write the server's clock to this path and read it back (epoch ms). See serverClock.ts. */
+  serverNow?(path: string): Promise<number>;
 };
 
 export const userDocPath = (uid: string) => `users/${uid}`;

@@ -36,8 +36,10 @@
   },
   "devDependencies": {
     "@jest/globals": "^29.7.0",
+    "@modelcontextprotocol/sdk": "^1.32.1",
     "@types/react": "~19.2.2",
     "eslint": "^9.39.5",
+    "firebase-admin": "^13.10.0",
     "jest": "^29.7.0",
     "jest-expo": "~57.0.5",
     "typescript": "~6.0.3"
@@ -51,7 +53,8 @@
     "typecheck": "tsc --noEmit",
     "lint": "expo lint",
     "test": "jest",
-    "research:sync": "node scripts/research/run.js"
+    "research:sync": "node scripts/research/run.js",
+    "research:import": "node scripts/server/import-research.js"
   },
   "private": true
 }

@@ -40,7 +40,8 @@ describe('deleteAllUserData (mocked Firestore)', () => {
 
     const sent = await deleteAllUserData(fs.adapter, 'u1');
 
-    expect(sent).toBe(1 + (COLLECTIONS.length - 1) * 2);
+    // + 1 for the clock check document (serverClock.ts).
+    expect(sent).toBe(1 + (COLLECTIONS.length - 1) * 2 + 1);
     expect(pathsOf(fs, 'u1')).toEqual([]);
     expect(new Map([...fs.docs].filter(([p]) => p.startsWith('users/u2')))).toEqual(u2Before);
     expect(pathsOf(fs, 'u2')).toHaveLength(u2Before.size);
@@ -63,7 +64,7 @@ describe('deleteAllUserData (mocked Firestore)', () => {
     await deleteAllUserData(fs.adapter, 'u1');
 
     expect(pathsOf(fs, 'u1')).toEqual([]);
-    expect(fs.state.deletes).toBe(1203 + 1 + 1);
+    expect(fs.state.deletes).toBe(1203 + 1 + 1 + 1);
     // 1204 subcollection docs → 3 batches (500 + 500 + 204), then the user document.
     expect(fs.state.deleteBatches).toBe(4);
   });

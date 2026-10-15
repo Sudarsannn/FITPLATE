@@ -1,8 +1,44 @@
 rules_version = '2';
+
+// FitPlate security rules (priority plan P2). Publish them in the Firebase
+// console: Firestore Database → Rules → paste this file → Publish.
 service cloud.firestore {
   match /databases/{database}/documents {
-    match /users/{userId}/{document=**} {
-      allow read, write: if request.auth != null && request.auth.uid == userId;
+
+    function isOwner(userId) {
+      return request.auth != null && request.auth.uid == userId;
+    }
+
+    // Collections whose entries are never rewritten once created
+    // (src/services/storage/schemas.ts APPEND_ONLY). Keep the two lists in step.
+    function appendOnly(collection) {
+      return collection in ['mealLogs', 'supplementLogs', 'workoutLogs', 'weightLogs', 'cookCompletions', 'savings'];
+    }
+
+    // An append-only entry may later change only to be soft-deleted
+    // (or have its schema version upgraded).
+    function onlySoftDelete() {
+      return request.resource.data.diff(resource.data).affectedKeys().hasOnly(['deleted', 'updatedAt', 'schemaVersion']);
+    }
+
+    // The profile lives on the user document itself.
+    match /users/{userId} {
+      allow read, write: if isOwner(userId);
+    }
+
+    // Each user reads and writes only their own data. Hard delete stays
+    // allowed for the owner, for "Delete my data".
+    match /users/{userId}/{collection}/{docId} {
+      allow read, create, delete: if isOwner(userId);
+      allow update: if isOwner(userId) && (!appendOnly(collection) || onlySoftDelete());
+    }
+
+    // Shared research library: read-only for everyone (guests included).
+    // Only the import script (scripts/server/import-research.js, admin
+    // credentials on Sudarsan's Mac) writes here; admin access skips rules.
+    match /research/{document=**} {
+      allow read: if true;
+      allow write: if false;
     }
   }
 }
