@@ -138,6 +138,7 @@ async function resolveCommons(fileName) {
   const author = stripHtml(meta.Artist && meta.Artist.value) || stripHtml(meta.Credit && meta.Credit.value);
   if (!C.licenceAllowed(licence)) throw new Error(`licence not allowed: ${licence || 'unknown'}`);
   if (!author) throw new Error('no author on Commons');
+  if (/^https?:\/\//i.test(author)) throw new Error(`author is only a web address (${author}); provenance unclear`);
   if (info.width && info.width < 400) throw new Error(`too small (${info.width}px)`);
   return {
     // Commons hands out thumb.wikimedia.org links; the same path is served by
@@ -211,13 +212,14 @@ async function main() {
       if (!have) report.noCandidate.push(d.id);
       continue;
     }
-    const key = C.candidateKey(c);
-    if (have && have.candidate === key && fs.existsSync(path.join(ASSETS, have.file))) {
+    // Try the pick, then its Commons alternates.
+    const tries = [c, ...c.alternates.map((a) => ({ ...c, site: C.siteOf(a) || c.site, file: C.commonsFileName(a) || a, pageUrl: /^https?:/.test(a) ? a : c.pageUrl }))];
+    // Keep a stored photo that is still one of this candidate's options (an
+    // alternate used because the pick failed the licence check stays put).
+    if (have && tries.some((t) => C.candidateKey(t) === have.candidate) && fs.existsSync(path.join(ASSETS, have.file))) {
       report.kept.push(d.id);
       continue;
     }
-    // Try the pick, then its Commons alternates.
-    const tries = [c, ...c.alternates.map((a) => ({ ...c, site: C.siteOf(a) || c.site, file: C.commonsFileName(a) || a, pageUrl: /^https?:/.test(a) ? a : c.pageUrl }))];
     const errors = [];
     for (const t of tries) {
       try {
