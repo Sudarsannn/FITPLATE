@@ -1,20 +1,40 @@
 import { Ionicons } from '@expo/vector-icons';
 import { router, useLocalSearchParams } from 'expo-router';
-import type { ReactNode } from 'react';
-import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { useCallback, useRef, useState, type ReactNode } from 'react';
+import { Linking, ScrollView, StyleSheet, Text, View, type LayoutChangeEvent } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { DishImageSlot, PhotoCredit, TagChip, dishPhoto } from '../../components/dishes/parts';
+import { DishImageSlot, PhotoCredit, SelectChip, TagChip, dishPhoto } from '../../components/dishes/parts';
 import { factsLine } from '../../components/dishes/ResearchDishCard';
 import { GradientButton, PressableScale } from '../../components/ui';
-import { familyOf, getDish } from '../../data/research';
+import { featureFlags } from '../../config/featureFlags';
+import { familyOf, getDish, researchLinks } from '../../data/research';
+import { useStore } from '../../lib/store';
 import type { Dish } from '../../models/research';
+import {
+  burnWays,
+  caloriesSaved,
+  DEFAULT_WEIGHT_KG,
+  durationLabel,
+  hasPublishedOrdered,
+  microRows,
+  nutrientLabel,
+  nutritionRows,
+  quickFacts,
+  researchUpdatesLine,
+  shortDate,
+  splitEquipment,
+  splitSource,
+  trendArrow,
+} from '../../services/dishDetail';
 import { headlineOrderPrice, orderPriceNote } from '../../services/dishLibrary';
 import { colors, radius, type } from '../../theme';
 
 /**
- * Day 6: what a research dish shows when tapped in the library. Day 7 turns
- * this into the full dish detail (nutrition, cost, equipment, storage, sources).
+ * Day 7: the full dish detail for a research dish. Every section renders for
+ * every dish; anything research hasn't covered reads "Coming soon". The three
+ * scores stay separate with their exact labels, and burn-off is opt-in
+ * (SPEC-ADDENDA §8), never shown on its own.
  */
 export default function RecipeScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -42,16 +62,24 @@ export default function RecipeScreen() {
 }
 
 function DishBody({ dish }: { dish: Dish }) {
-  const n = dish.nutritionPerServing;
-  const price = headlineOrderPrice(dish);
   const family = familyOf(dish);
   const dietTags = dish.tags.filter((t) => !t.startsWith('Contains '));
   const allergenTags = dish.tags.filter((t) => t.startsWith('Contains '));
   const variants = dish.variants.filter((v) => v.status === 'variant' || v.status === 'not-appropriate');
   const photo = dishPhoto(dish.id);
+  // Innovation (Day 07): "Jump to" chips; each anchor records its y on layout.
+  const scrollRef = useRef<ScrollView>(null);
+  const anchors = useRef<Partial<Record<JumpId, number>>>({});
+  const record = useCallback((jump: JumpId, e: LayoutChangeEvent) => {
+    anchors.current[jump] = e.nativeEvent.layout.y;
+  }, []);
+  const jumpTo = (jump: JumpId) => {
+    const y = anchors.current[jump];
+    if (y != null) scrollRef.current?.scrollTo({ y: Math.max(0, y - 8), animated: true });
+  };
 
   return (
-    <ScrollView contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
+    <ScrollView ref={scrollRef} contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
       <View style={{ alignItems: 'center' }}>
         <DishImageSlot dish={dish} size={photo ? 240 : 150} />
         {photo ? <PhotoCredit credit={photo.credit} /> : null}
@@ -73,36 +101,38 @@ function DishBody({ dish }: { dish: Dish }) {
       {dish.description ? <Text style={styles.body}>{dish.description}</Text> : null}
       {allergenTags.length ? <Text style={styles.note}>Allergens are worked out from the recipe. Check labels if you have an allergy.</Text> : null}
 
-      <Section title="Per serving (home-cooked)">
-        <View style={styles.grid}>
-          <Fact label="Calories" value={n.kcal != null ? `${Math.round(n.kcal)} kcal` : null} />
-          <Fact label="Protein" value={n.proteinG != null ? `${n.proteinG} g` : null} />
-          <Fact label="Carbs" value={n.carbsG != null ? `${n.carbsG} g` : null} />
-          <Fact label="Fat" value={n.fatG != null ? `${n.fatG} g` : null} />
-          <Fact label="Fibre" value={n.fibreG != null ? `${n.fibreG} g` : null} />
+      {/* Priority plan P3: shop, cook step by step, or compare with ordering. */}
+      <View style={{ gap: 10, marginTop: 16 }}>
+        <GradientButton title="👩‍🍳 Cook it step by step" onPress={() => router.push({ pathname: '/steps/[id]', params: { id: dish.id, servings: '2' } })} />
+        <View style={{ flexDirection: 'row', gap: 10 }}>
+          <View style={{ flex: 1 }}>
+            <GradientButton title="🛒 Shop" variant="glass" onPress={() => router.push({ pathname: '/basket', params: { dishes: dish.id, servings: '2' } })} />
+          </View>
+          <View style={{ flex: 1 }}>
+            <GradientButton title="⚖️ Order vs make" variant="glass" onPress={() => router.push({ pathname: '/order-vs-make', params: { q: dish.name } })} />
+          </View>
         </View>
-      </Section>
+      </View>
 
-      <Section title="Scores">
-        <Text style={styles.body}>
-          Healthiness score: <Text style={styles.strong}>{dish.healthiness?.score != null ? `${dish.healthiness.score}/10` : 'Coming soon'}</Text>
-        </Text>
-        <Text style={styles.body}>
-          Rating: <Text style={styles.strong}>{dish.researchRating?.score != null ? `★ ${dish.researchRating.score}` : 'Coming soon'}</Text>
-        </Text>
-        <Text style={styles.note}>Rating is FitPlate&apos;s research of what people say online, not user or restaurant ratings.</Text>
-      </Section>
+      {featureFlags.dishJumpChips ? (
+        <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.jumpRow} accessibilityLabel="Jump to a section">
+          {JUMPS.map((j) => (
+            <SelectChip key={j.id} label={j.label} selected={false} onPress={() => jumpTo(j.id)} />
+          ))}
+        </ScrollView>
+      ) : null}
 
-      <Section title="To order">
-        {price ? (
-          <Text style={styles.body}>
-            About <Text style={styles.strong}>₹{price.avg}</Text> (usually ₹{price.min}–{price.max}){price.observed ? `, seen ${price.observed}` : ''}
-          </Text>
-        ) : (
-          <Text style={styles.body}>Order price not confirmed yet.</Text>
-        )}
-        {orderPriceNote(dish) ? <Text style={styles.note}>{orderPriceNote(dish)}</Text> : null}
-      </Section>
+      <QuickFactsSection dish={dish} />
+      <ScoresSection dish={dish} />
+      <View onLayout={(e) => record('nutrition', e)}>
+        <NutritionSection dish={dish} />
+      </View>
+      <View onLayout={(e) => record('vitamins', e)}>
+        <MicroSection dish={dish} />
+      </View>
+      <View onLayout={(e) => record('price', e)}>
+        <OrderSection dish={dish} />
+      </View>
 
       {variants.length || family.length ? (
         <Section title="Other versions">
@@ -121,22 +151,248 @@ function DishBody({ dish }: { dish: Dish }) {
         </Section>
       ) : null}
 
+      <View onLayout={(e) => record('ingredients', e)} />
       <Section title={`Ingredients (1 serving, ${dish.ingredients.length})`}>
-        {dish.ingredients.map((i, k) => (
-          <Text key={`${i.name}-${k}`} style={styles.body}>
-            • {i.name}
-            {i.quantity != null ? <Text style={styles.muted}>{`  ${i.quantity}${i.unit ? ` ${i.unit}` : ''}`}</Text> : i.householdMeasure ? <Text style={styles.muted}>{`  ${i.householdMeasure}`}</Text> : null}
-          </Text>
-        ))}
+        {dish.ingredients.length ? (
+          dish.ingredients.map((i, k) => (
+            <Text key={`${i.name}-${k}`} style={styles.body}>
+              • {i.name}
+              {i.quantity != null ? <Text style={styles.muted}>{`  ${i.quantity}${i.unit ? ` ${i.unit}` : ''}`}</Text> : i.householdMeasure ? <Text style={styles.muted}>{`  ${i.householdMeasure}`}</Text> : null}
+            </Text>
+          ))
+        ) : (
+          <Text style={styles.body}>Coming soon</Text>
+        )}
       </Section>
 
-      {/* Priority plan P3: shop, cook step by step, or compare with ordering. */}
-      <View style={{ gap: 10, marginTop: 20 }}>
-        <GradientButton title="🛒 Shop ingredients" onPress={() => router.push({ pathname: '/basket', params: { dishes: dish.id, servings: '2' } })} />
-        <GradientButton title="👩‍🍳 Cook it step by step" variant="glass" onPress={() => router.push({ pathname: '/steps/[id]', params: { id: dish.id, servings: '2' } })} />
-        <GradientButton title="⚖️ Order vs make" variant="glass" onPress={() => router.push({ pathname: '/order-vs-make', params: { q: dish.name } })} />
+      <EquipmentSection dish={dish} />
+
+      <View onLayout={(e) => record('storage', e)} />
+      <Section title="Storage and leftovers">
+        <Text style={styles.subhead}>Keeping it</Text>
+        <Text style={styles.body}>{dish.storage ?? 'Coming soon'}</Text>
+        <Text style={[styles.subhead, { marginTop: 10 }]}>Leftover idea</Text>
+        <Text style={styles.body}>{dish.leftoverRemix ?? 'Coming soon'}</Text>
+      </Section>
+
+      <BurnSection dish={dish} />
+      <View onLayout={(e) => record('sources', e)}>
+        <SourcesSection dish={dish} />
       </View>
+
+      <Text style={[styles.note, { marginTop: 18, textAlign: 'center' }]}>{researchUpdatesLine(dish)}</Text>
+      <Text style={[styles.note, { textAlign: 'center' }]}>General information, not medical advice.</Text>
     </ScrollView>
+  );
+}
+
+const JUMPS = [
+  { id: 'nutrition', label: 'Nutrition' },
+  { id: 'vitamins', label: 'Vitamins' },
+  { id: 'price', label: 'Price' },
+  { id: 'ingredients', label: 'Ingredients' },
+  { id: 'storage', label: 'Storage' },
+  { id: 'sources', label: 'Sources' },
+] as const;
+type JumpId = (typeof JUMPS)[number]['id'];
+
+function QuickFactsSection({ dish }: { dish: Dish }) {
+  return (
+    <Section title="Quick facts">
+      <View style={styles.grid}>
+        {quickFacts(dish).map((f) => (
+          <View key={f.label} style={styles.fact} accessible accessibilityLabel={`${f.label}: ${f.value}`}>
+            <Text style={styles.factValueSm}>{f.value}</Text>
+            <Text style={styles.muted}>{f.label}</Text>
+          </View>
+        ))}
+      </View>
+    </Section>
+  );
+}
+
+/** THREE SCORES RULE: separate rows, exact labels, never combined. */
+function ScoresSection({ dish }: { dish: Dish }) {
+  const h = dish.healthiness;
+  const r = dish.researchRating;
+  return (
+    <Section title="Scores">
+      <ScoreRow label="Healthiness score" value={h?.score != null ? `${h.score}/10` : 'Coming soon'} hint={h?.restaurantScore != null ? `Restaurant version: ${h.restaurantScore}/10` : null} />
+      {h?.reasons.length ? <Text style={styles.note}>{h.reasons[0]}</Text> : null}
+      <ScoreRow label="Rating" value={r?.score != null ? `★ ${r.score}` : 'Coming soon'} hint="FitPlate's research of what people say online, not user or restaurant ratings." />
+      <ScoreRow label="FitPlate Score" value="Coming after launch" hint="Built from cooks and your ratings once FitPlate launches." />
+    </Section>
+  );
+}
+
+function ScoreRow({ label, value, hint }: { label: string; value: string; hint: string | null }) {
+  return (
+    <View style={styles.scoreRow} accessible accessibilityLabel={`${label}: ${value}`}>
+      <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline' }}>
+        <Text style={styles.body}>{label}</Text>
+        <Text style={styles.strong}>{value}</Text>
+      </View>
+      {hint ? <Text style={styles.note}>{hint}</Text> : null}
+    </View>
+  );
+}
+
+/** SPEC-ADDENDA §1: as-ordered beside home-cooked, clearly labelled, never merged. */
+function NutritionSection({ dish }: { dish: Dish }) {
+  const rows = nutritionRows(dish);
+  const showOrdered = hasPublishedOrdered(dish);
+  const saved = caloriesSaved(dish);
+  return (
+    <Section title="Nutrition per serving">
+      <View style={styles.tableHead}>
+        <Text style={[styles.cellLabel, styles.muted]} />
+        <Text style={[styles.cell, styles.headText]}>Home-cooked (FitPlate recipe)</Text>
+        {showOrdered ? <Text style={[styles.cell, styles.headText]}>As ordered (published by the restaurant)</Text> : null}
+      </View>
+      {rows.map((r) => (
+        <View key={r.label} style={styles.tableRow} accessible accessibilityLabel={`${r.label}: home-cooked ${r.cooked}${showOrdered ? `, as ordered ${r.ordered}` : ''}`}>
+          <Text style={[styles.cellLabel, styles.muted]}>{r.label}</Text>
+          <Text style={[styles.cell, styles.strong]}>{r.cooked}</Text>
+          {showOrdered ? <Text style={[styles.cell, r.ordered === 'Not published' ? styles.muted : styles.strong]}>{r.ordered}</Text> : null}
+        </View>
+      ))}
+      {saved ? <Text style={[styles.body, { marginTop: 8 }]}>Cooking it at home saves about {saved} kcal compared with the published restaurant version.</Text> : null}
+      {!showOrdered ? <Text style={styles.note}>Restaurant nutrition: not published for this dish yet.</Text> : null}
+    </Section>
+  );
+}
+
+function MicroSection({ dish }: { dish: Dish }) {
+  const micro = microRows(dish);
+  const goodFor = researchLinks.dishGoodSourceOf[dish.id] ?? [];
+  return (
+    <Section title="Vitamins and minerals">
+      {micro ? (
+        <>
+          <Text style={styles.note}>Partial estimate from the ingredients ({micro.coveragePct}% of the recipe covered).</Text>
+          <View style={[styles.grid, { marginTop: 8 }]}>
+            {micro.rows.map((m) => (
+              <View key={m.id} style={styles.fact}>
+                <Text style={styles.factValueSm}>{m.value}</Text>
+                <Text style={styles.muted}>{m.label}</Text>
+              </View>
+            ))}
+          </View>
+        </>
+      ) : (
+        <Text style={styles.body}>Coming soon</Text>
+      )}
+      {goodFor.length ? <Text style={[styles.body, { marginTop: 8 }]}>Research lists it as a good source of {goodFor.map(nutrientLabel).join(', ')}.</Text> : null}
+    </Section>
+  );
+}
+
+function OrderSection({ dish }: { dish: Dish }) {
+  const price = headlineOrderPrice(dish);
+  const trend = trendArrow(dish.orderPrice?.trend);
+  const note = orderPriceNote(dish);
+  return (
+    <Section title="Cost to order">
+      {price ? (
+        <Text style={styles.body} accessibilityLabel={`About ${price.avg} rupees, usually ${price.min} to ${price.max}${trend ? `, ${trend.label}` : ''}`}>
+          About <Text style={styles.strong}>₹{price.avg}</Text> (usually ₹{price.min}–{price.max}){' '}
+          {trend ? <Text style={{ color: trend.arrow === '↑' ? colors.warn : colors.accent }}>{trend.arrow}</Text> : null}
+        </Text>
+      ) : (
+        <Text style={styles.body}>Order price not confirmed yet.</Text>
+      )}
+      {price?.observed ? <Text style={styles.note}>Prices updated {shortDate(price.observed)}.</Text> : null}
+      {note ? <Text style={styles.note}>{note}</Text> : null}
+      <Text style={styles.note}>Cost to make arrives in the next update.</Text>
+    </Section>
+  );
+}
+
+function EquipmentSection({ dish }: { dish: Dish }) {
+  return (
+    <Section title="Equipment">
+      {dish.equipment.length ? (
+        dish.equipment.map((e, k) => {
+          const { item, note } = splitEquipment(e);
+          return (
+            <Text key={`${k}-${item}`} style={styles.body}>
+              • {item}
+              {note ? <Text style={styles.muted}>{`  (${note})`}</Text> : null}
+            </Text>
+          );
+        })
+      ) : (
+        <Text style={styles.body}>Coming soon</Text>
+      )}
+    </Section>
+  );
+}
+
+/**
+ * SPEC-ADDENDA §8: opt-in only. Nothing about burning calories shows until
+ * the user asks; then it offers several ways with minutes at their weight.
+ */
+function BurnSection({ dish }: { dish: Dish }) {
+  const [open, setOpen] = useState(false);
+  const { bodyWeightKg } = useStore();
+  const kcal = dish.nutritionPerServing.kcal;
+  const ways = open ? burnWays(kcal, bodyWeightKg, researchLinks.met) : [];
+  return (
+    <Section title="Balance it out">
+      <PressableScale onPress={() => setOpen((o) => !o)} style={styles.link} scaleTo={0.98} accessibilityLabel={open ? "Hide ways to burn this" : "How could I burn this?"}>
+        <Text style={styles.linkText}>How could I burn this?</Text>
+        <Ionicons name={open ? 'chevron-up' : 'chevron-down'} size={16} color={colors.muted} />
+      </PressableScale>
+      {open ? (
+        ways.length ? (
+          <>
+            {ways.map((w) => (
+              <View key={w.exerciseId} style={styles.burnRow}>
+                <Text style={styles.body}>{w.name}</Text>
+                <Text style={styles.strong}>{durationLabel(w.minutes)}</Text>
+              </View>
+            ))}
+            <Text style={styles.note}>
+              For one serving ({Math.round(kcal ?? 0)} kcal) at {bodyWeightKg ?? DEFAULT_WEIGHT_KG} kg
+              {bodyWeightKg ? '' : ' (the research average; your own weight is used once you log it)'}. Estimates from Compendium MET values. Food is fuel; this is just for curiosity.
+            </Text>
+            <PressableScale onPress={() => router.push('/move')} style={styles.link} scaleTo={0.98} accessibilityLabel="See workouts in the Move tab">
+              <Text style={styles.linkText}>See workouts</Text>
+              <Ionicons name="chevron-forward" size={16} color={colors.muted} />
+            </PressableScale>
+            <Text style={styles.note}>Check with a doctor before starting new exercise.</Text>
+          </>
+        ) : (
+          <Text style={styles.body}>Coming soon</Text>
+        )
+      ) : null}
+    </Section>
+  );
+}
+
+function SourcesSection({ dish }: { dish: Dish }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <Section title="Sources">
+      <PressableScale onPress={() => setOpen((o) => !o)} style={styles.link} scaleTo={0.98} accessibilityLabel={`${open ? 'Hide' : 'Show'} ${dish.sources.length} sources`}>
+        <Text style={styles.linkText}>{dish.sources.length ? `${open ? 'Hide' : 'Show'} ${dish.sources.length} sources` : 'Coming soon'}</Text>
+        {dish.sources.length ? <Ionicons name={open ? 'chevron-up' : 'chevron-down'} size={16} color={colors.muted} /> : null}
+      </PressableScale>
+      {open
+        ? dish.sources.map((s, k) => {
+            const { label, url } = splitSource(s);
+            return url ? (
+              <Text key={k} style={[styles.note, styles.sourceLink]} onPress={() => Linking.openURL(url)} accessibilityRole="link">
+                {label}
+              </Text>
+            ) : (
+              <Text key={k} style={styles.note}>
+                {label}
+              </Text>
+            );
+          })
+        : null}
+    </Section>
   );
 }
 
@@ -151,30 +407,31 @@ function Section({ title, children }: { title: string; children: ReactNode }) {
   );
 }
 
-function Fact({ label, value }: { label: string; value: string | null }) {
-  return (
-    <View style={styles.fact}>
-      <Text style={styles.factValue}>{value ?? '—'}</Text>
-      <Text style={styles.muted}>{value ? label : `${label}: coming soon`}</Text>
-    </View>
-  );
-}
-
 const styles = StyleSheet.create({
+  jumpRow: { gap: 8, paddingTop: 14 },
   allCredits: { color: colors.muted, fontSize: 11, marginTop: 2, textDecorationLine: 'underline' },
   top: { flexDirection: 'row', paddingHorizontal: 12, paddingVertical: 4 },
   back: { width: 44, height: 44, borderRadius: 22, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.card },
   scroll: { padding: 18, paddingBottom: 60 },
   muted: { color: colors.muted, fontSize: 13 },
   body: { color: colors.text, fontSize: 15, lineHeight: 22, marginTop: 4 },
+  subhead: { color: colors.text, fontSize: 13, fontWeight: '700' },
   strong: { fontWeight: '800', color: colors.text },
   note: { color: colors.faint, fontSize: 12, lineHeight: 17, marginTop: 6 },
   chips: { flexDirection: 'row', flexWrap: 'wrap', gap: 6, marginTop: 10 },
   section: { marginTop: 16, padding: 14, borderRadius: radius.lg, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border },
-  grid: { flexDirection: 'row', flexWrap: 'wrap', gap: 10 },
+  grid: { flexDirection: 'row', flexWrap: 'wrap', gap: 12 },
   fact: { minWidth: 90, flexGrow: 1 },
-  factValue: { color: colors.text, fontSize: 18, fontWeight: '800' },
+  factValueSm: { color: colors.text, fontSize: 15, fontWeight: '800' },
+  scoreRow: { paddingVertical: 6, borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: colors.border },
+  tableHead: { flexDirection: 'row', gap: 8, paddingBottom: 6, borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: colors.border },
+  tableRow: { flexDirection: 'row', gap: 8, paddingVertical: 6 },
+  cellLabel: { width: 64 },
+  cell: { flex: 1, fontSize: 14, color: colors.text },
+  headText: { color: colors.muted, fontSize: 11, lineHeight: 15 },
+  burnRow: { flexDirection: 'row', justifyContent: 'space-between', paddingVertical: 4 },
   link: { minHeight: 44, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
   linkText: { color: colors.accent, fontSize: 15, fontWeight: '700' },
+  sourceLink: { textDecorationLine: 'underline' },
   missing: { alignItems: 'center', padding: 30 },
 });

@@ -175,6 +175,8 @@ type Store = State & {
   saveShoppingList: (list: ShoppingList, id?: string) => string;
   removeShoppingList: (id: string) => void;
   addWeight: (kg: number) => void;
+  /** Newest logged weight, else the profile's; null when neither exists (burn-off then assumes 70 kg). */
+  bodyWeightKg: number | null;
   ratings: Record<string, DishRating['stars']>;
   rateDish: (dishId: string, stars: DishRating['stars'], note?: string | null) => void;
   logCookCompletion: (c: Omit<CookCompletion, 'timestamp' | 'dateKey'>) => void;
@@ -383,6 +385,11 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       saveShoppingList: (list, id) => s?.saveShoppingList(list, id) ?? id ?? '',
       removeShoppingList: (id) => s?.removeShoppingList(id),
       addWeight: (kg) => s?.addWeight(kg),
+      bodyWeightKg:
+        Object.values(docs.weightLogs)
+          .filter((w) => !w.deleted)
+          .sort((a, b) => b.timestamp - a.timestamp)[0]?.kg ??
+        (docs.profile && !docs.profile.deleted ? docs.profile.weightKg : null),
       ratings: Object.fromEntries(Object.values(docs.ratings).filter((r) => !r.deleted).map((r) => [r.dishId, r.stars])),
       rateDish: (dishId, stars, note = null) => s?.rateDish(dishId, stars, note),
       logCookCompletion: (c) => s?.addCookCompletion(c),

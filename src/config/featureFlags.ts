@@ -23,6 +23,8 @@ export const featureFlags = {
   liteMode: true,
   /** Innovation (Day 06): the Cook tab remembers "Leave out dishes that contain …" on this device. */
   rememberAllergens: true,
+  /** Innovation (Day 07): "Jump to" chips at the top of the dish page. */
+  dishJumpChips: true,
   /** Priority plan P1-b: Google sign-in inside the iPhone / Android dev build. Only shows when that platform's client ID is in .env. */
   nativeGoogleSignIn: true,
   /** Priority plan P2-c: read the research library from the server when it is newer than the bundled copy. */
