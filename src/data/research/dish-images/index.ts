@@ -6,6 +6,16 @@ import manifest from './manifest.json';
 
 /** Bundled dish photos by dish id; dishes not listed show the labelled placeholder. */
 export const dishImageFiles: Record<string, ImageSourcePropType> = {
+  '001-poha': require('../../../../assets/dishes/001-poha.jpg'),
+  '013-pav-bhaji': require('../../../../assets/dishes/013-pav-bhaji.jpg'),
+  '019-jeera-rice': require('../../../../assets/dishes/019-jeera-rice.jpg'),
+  '020-vada-pav': require('../../../../assets/dishes/020-vada-pav.jpg'),
+  '025-veg-pulao': require('../../../../assets/dishes/025-veg-pulao.jpg'),
+  '028-chicken-65': require('../../../../assets/dishes/028-chicken-65.jpg'),
+  '029-misal-pav': require('../../../../assets/dishes/029-misal-pav.jpg'),
+  '030-lemon-rice': require('../../../../assets/dishes/030-lemon-rice.jpg'),
+  '035-curd-rice': require('../../../../assets/dishes/035-curd-rice.jpg'),
+  '058-khaman-dhokla': require('../../../../assets/dishes/058-khaman-dhokla.jpg'),
 };
 
 export const dishImageCredits = manifest.images as Record<string, ImageCredit>;

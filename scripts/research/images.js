@@ -81,14 +81,33 @@ function loadCandidates() {
   return C.pickCandidates(fromFiles, fromJson);
 }
 
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+/** Wikimedia rate-limits shared cloud IPs (HTTP 429, dropped connections): back off and retry. */
+async function fetchRetry(url, headers) {
+  for (let attempt = 0; ; attempt++) {
+    let res;
+    try {
+      res = await fetch(url, { headers });
+    } catch (e) {
+      if (attempt >= 6) throw e;
+      await sleep(Math.min(2 ** attempt * 1000, 20000));
+      continue;
+    }
+    if ((res.status !== 429 && res.status < 500) || attempt >= 6) return res;
+    const wait = Math.max(Number(res.headers.get('retry-after')) || 1, 2 ** attempt) * 1000;
+    await sleep(Math.min(wait, 20000));
+  }
+}
+
 async function getJson(url) {
-  const res = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'application/json' } });
+  const res = await fetchRetry(url, { 'User-Agent': UA, Accept: 'application/json' });
   if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
   return res.json();
 }
 
 async function download(url, file) {
-  const res = await fetch(url, { headers: { 'User-Agent': UA } });
+  const res = await fetchRetry(url, { 'User-Agent': UA });
   if (!res.ok) throw new Error(`HTTP ${res.status} downloading ${url}`);
   const type = res.headers.get('content-type') || '';
   if (!/^image\//.test(type)) throw new Error(`not an image (${type}) at ${url}`);
