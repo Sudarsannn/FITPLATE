@@ -90,11 +90,11 @@ async function fetchRetry(url, headers) {
     try {
       res = await fetch(url, { headers });
     } catch (e) {
-      if (attempt >= 6) throw e;
+      if (attempt >= 10) throw e;
       await sleep(Math.min(2 ** attempt * 1000, 20000));
       continue;
     }
-    if ((res.status !== 429 && res.status < 500) || attempt >= 6) return res;
+    if ((res.status !== 429 && res.status < 500) || attempt >= 10) return res;
     const wait = Math.max(Number(res.headers.get('retry-after')) || 1, 2 ** attempt) * 1000;
     await sleep(Math.min(wait, 20000));
   }
@@ -128,7 +128,7 @@ async function resolveCommons(fileName) {
   const title = `File:${fileName}`;
   const url =
     'https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&prop=imageinfo' +
-    `&iiprop=url|extmetadata|mime|size&iiurlwidth=1000&titles=${encodeURIComponent(title)}`;
+    `&iiprop=url|extmetadata|mime|size&iiurlwidth=960&titles=${encodeURIComponent(title)}`;
   const data = await getJson(url);
   const page = data.query && data.query.pages && data.query.pages[0];
   if (!page || page.missing || !page.imageinfo) throw new Error(`no such Commons file: ${fileName}`);
@@ -140,7 +140,9 @@ async function resolveCommons(fileName) {
   if (!author) throw new Error('no author on Commons');
   if (info.width && info.width < 400) throw new Error(`too small (${info.width}px)`);
   return {
-    imageUrl: info.thumburl || info.url,
+    // Commons hands out thumb.wikimedia.org links; the same path is served by
+    // upload.wikimedia.org, the host the cloud environment allows.
+    imageUrl: (info.thumburl || info.url).replace(/^https:\/\/thumb\.wikimedia\.org\//, 'https://upload.wikimedia.org/').replace(/\?.*$/, ''),
     title: stripHtml(meta.ObjectName && meta.ObjectName.value) || fileName.replace(/\.[a-z]+$/i, ''),
     author,
     licence,
