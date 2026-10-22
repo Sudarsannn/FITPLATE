@@ -6,8 +6,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { DishRow } from '../../components/DishCard';
 import { Bar, CountUp, FadeIn, Glass, SectionHeader } from '../../components/ui';
-import { dishes } from '../../data/dishes';
-import { addDays, dayKey, dayTotals, FIBRE_TARGET, GOALS, useStore, WATER_TARGET } from '../../lib/store';
+import { addDays, allowedDishes, dayKey, dayTotals, FIBRE_TARGET, GOALS, useStore, WATER_TARGET } from '../../lib/store';
 import { colors, radius, type } from '../../theme';
 
 const DAY = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
@@ -58,13 +57,15 @@ export function ProgressScreen({ embedded = false }: { embedded?: boolean }) {
     waterDays: Object.values(days).filter((d) => d.water >= WATER_TARGET).length,
     workouts: Object.values(days).reduce((s, d) => s + d.exercise.length, 0),
   };
+  const researchPool = allowedDishes(profile);
   const homeShare = allMeals.length ? Math.round((cooked / allMeals.length) * 100) : 0;
 
   // Weekly nutrition report: suggest dishes that close the biggest gap.
   const proteinGap = avg('protein') / goal.protein;
   const fibreGap = avg('fibre') / FIBRE_TARGET;
   const gap = proteinGap < fibreGap ? 'protein' : 'fibre';
-  const fixers = [...dishes].sort((a, b) => (gap === 'protein' ? b.proteinG - a.proteinG : b.fibreG - a.fibreG)).slice(0, 2);
+  const per = (d: (typeof researchPool)[number]) => (gap === 'protein' ? d.nutritionPerServing.proteinG : d.nutritionPerServing.fibreG) ?? 0;
+  const fixers = [...researchPool].sort((a, b) => per(b) - per(a)).slice(0, 2);
 
   return (
     <SafeAreaView edges={embedded ? [] : ['top']} style={{ flex: 1, backgroundColor: colors.bg }}>
@@ -117,7 +118,7 @@ export function ProgressScreen({ embedded = false }: { embedded?: boolean }) {
             </Text>
             <View style={{ marginTop: 10 }}>
               {fixers.map((d) => (
-                <DishRow key={d.id} dish={d} right={<Text style={{ color: colors.accent, fontWeight: '900' }}>{gap === 'protein' ? `${d.proteinG} g` : `${d.fibreG} g`}</Text>} />
+                <DishRow key={d.id} dish={d} right={<Text style={{ color: colors.accent, fontWeight: '900' }}>{`${Math.round(per(d))} g`}</Text>} />
               ))}
             </View>
           </Glass>

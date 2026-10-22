@@ -24,3 +24,10 @@ export const PAYMENT_CHECK_GAP_MS = 3000;
 
 /** Vendors shown in the checkout sheet. Blinkit stays in the data model but is parked (no official access). */
 export const VENDOR_VISIBLE = { instamart: true, zepto: true, blinkit: false } as const;
+
+/**
+ * Food and grocery app hook-ups are paused (Sudarsan, 22 Oct 2026) until the
+ * real iPhone/Android app exists. While paused, every vendor shows as a
+ * logo placeholder ("Coming with the app") and nothing calls a vendor.
+ */
+export const VENDORS_PAUSED = true;

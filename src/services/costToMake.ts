@@ -95,10 +95,35 @@ export type CostLine = {
 const WATER = /^(warm |cold |hot |ice cubes \+ cold )?water\b/i;
 const PINCH = /\bpinch\b/i;
 
-type PricedIngredient = Pick<Ingredient, 'id' | 'standardUnit' | 'price'>;
+type PricedIngredient = Pick<Ingredient, 'id' | 'standardUnit' | 'price'> & Partial<Pick<Ingredient, 'usedIn'>>;
+
+const FRACTIONS: Record<string, number> = { '¼': 0.25, '½': 0.5, '¾': 0.75, '1/4': 0.25, '1/2': 0.5, '3/4': 0.75, '1/3': 1 / 3, '⅓': 1 / 3 };
+const num = (t: string) => FRACTIONS[t] ?? Number(t);
+
+/**
+ * A second measure the research itself wrote next to the amount, e.g.
+ * "1 tsp (from about ¼ lemon)" or "1 small piece (about 2 cm stick, roughly
+ * 1 g est.)". Used only when the main amount can't be converted to the
+ * price unit; the line is then marked (est.).
+ */
+export function measureHint(texts: (string | null | undefined)[], priceUnit: string | null): Amount | null {
+  const u = priceUnit?.trim().toLowerCase();
+  for (const t of texts) {
+    if (!t) continue;
+    if (u === 'kg' || u === 'g') {
+      const g = t.match(/(?:about|roughly|approx\.?|~)\s*(\d+(?:\.\d+)?)(?:\s*[–-]\s*(\d+(?:\.\d+)?))?\s*g\b/i);
+      if (g) return { kind: 'mass', amount: g[2] ? (Number(g[1]) + Number(g[2])) / 2 : Number(g[1]) };
+    }
+    if (u === 'piece' || u === 'dozen') {
+      const p = t.match(/(?:about|roughly|from)\s+(?:about\s+)?(\d+(?:\.\d+)?|¼|½|¾|⅓|1\/4|1\/2|3\/4|1\/3)\s+(?:of\s+a\s+)?(?:lemon|lime|egg|onion|tomato|potato|piece|pav|bun)s?\b/i);
+      if (p) return { kind: 'count', amount: num(p[1]) };
+    }
+  }
+  return null;
+}
 
 /** One ingredient line's cost, or why there isn't one. Section headings (no amount at all) return null. */
-export function lineCost(line: DishIngredient, ingredient: PricedIngredient | undefined): CostLine | null {
+export function lineCost(line: DishIngredient, ingredient: PricedIngredient | undefined, dishNumber: number | null = null): CostLine | null {
   const base = { name: line.name, ingredientId: line.ingredientId, min: null, max: null, avg: null, confirmed: false };
   if (line.quantity == null && !line.unit && !line.householdMeasure) return null;
   if (!line.ingredientId && WATER.test(line.name.trim())) return { ...base, status: 'free', note: 'no cost' };
@@ -106,7 +131,17 @@ export function lineCost(line: DishIngredient, ingredient: PricedIngredient | un
   const est = ingredient?.price?.currentEstimate;
   if (!ingredient || !est) return { ...base, status: 'coming-soon', note: 'price coming soon' };
   const amount = toBase(line.quantity, line.unit);
-  const units = amount ? inPriceUnits(amount, ingredient.standardUnit) : null;
+  let units = amount ? inPriceUnits(amount, ingredient.standardUnit) : null;
+  let fromHint = false;
+  if (!units) {
+    const usedIn = ingredient.usedIn?.filter((u) => dishNumber != null && u.dishNumber === dishNumber).map((u) => u.raw) ?? [];
+    const hint = measureHint([line.householdMeasure, line.name, ...usedIn], ingredient.standardUnit);
+    const viaHint = hint ? inPriceUnits(hint, ingredient.standardUnit) : null;
+    if (viaHint) {
+      units = { units: viaHint.units, estimated: true };
+      fromHint = true;
+    }
+  }
   if (!units) return { ...base, status: 'coming-soon', note: 'price coming soon' };
   return {
     ...base,
@@ -114,7 +149,7 @@ export function lineCost(line: DishIngredient, ingredient: PricedIngredient | un
     min: est.min * units.units,
     max: est.max * units.units,
     avg: est.avg * units.units,
-    note: units.estimated ? `(est.) counted at ${ASSUMED_G_PER_ML} g per ml` : null,
+    note: fromHint ? "(est.) from the recipe's own measure" : units.estimated ? `(est.) counted at ${ASSUMED_G_PER_ML} g per ml` : null,
     confirmed: ingredient.price?.confirmed !== false,
   };
 }
@@ -171,11 +206,11 @@ export function makeTrend(lines: { avg: number | null; ingredient: PricedIngredi
 }
 
 /** Cost to make one serving. Null when not a single line could be priced. */
-export function dishCostToMake(dish: Pick<Dish, 'ingredients'>, ingredients: (id: string) => PricedIngredient | undefined): DishCost | null {
+export function dishCostToMake(dish: Pick<Dish, 'ingredients'> & Partial<Pick<Dish, 'number'>>, ingredients: (id: string) => PricedIngredient | undefined): DishCost | null {
   const rows = dish.ingredients
     .map((line) => {
       const ingredient = line.ingredientId ? ingredients(line.ingredientId) : undefined;
-      return { cost: lineCost(line, ingredient), ingredient };
+      return { cost: lineCost(line, ingredient, dish.number ?? null), ingredient };
     })
     .filter((r): r is { cost: CostLine; ingredient: PricedIngredient | undefined } => r.cost != null);
   const lines = rows.map((r) => r.cost);

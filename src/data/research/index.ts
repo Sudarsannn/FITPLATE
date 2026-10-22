@@ -1,7 +1,7 @@
 /**
  * Research content bundled with the app (generated per-item JSON; see
- * scripts/research/run.js). The app reads it only when the researchData
- * flag is on (Day 6); until then the demo dishes in src/data/dishes.ts stay.
+ * scripts/research/run.js). It is the app's only dish content: the demo
+ * dishes were removed on 22 Oct 2026.
  *
  * Priority plan P2-c: when the shared research library on the server is newer
  * than this bundle, services/researchRemote.ts swaps it in with

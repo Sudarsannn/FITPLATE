@@ -6,8 +6,13 @@ import Animated, { FadeIn as RFadeIn, FadeOut, SlideInDown, SlideOutDown, Linear
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { DishRow } from '../../components/DishCard';
+import { factsLine } from '../../components/dishes/ResearchDishCard';
+import { DishImageSlot } from '../../components/dishes/parts';
 import { FadeIn, Glass, GradientButton, PressableScale } from '../../components/ui';
-import { costToMake, costToOrder, getDish } from '../../data/dishes';
+import { getDish } from '../../data/research';
+import type { Dish } from '../../models/research';
+import { savingVsOrder } from '../../services/costToMake';
+import { makeCost, orderRange } from '../../services/dishLibrary';
 import { success } from '../../lib/haptics';
 import { addDays, allowedDishes, dayKey, recommend, useStore, type Slot } from '../../lib/store';
 import { colors, radius, type } from '../../theme';
@@ -18,6 +23,7 @@ const SLOTS: { slot: Slot; label: string; icon: keyof typeof Ionicons.glyphMap }
   { slot: 'dinner', label: 'Dinner', icon: 'moon-outline' },
 ];
 const DAY = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const isBreakfast = (d: Dish) => d.mealType.some((m) => /breakfast/i.test(m));
 
 // `embedded` is set by the Track tab, which draws its own top inset and switcher.
 export function PlanScreen({ embedded = false }: { embedded?: boolean }) {
@@ -28,14 +34,17 @@ export function PlanScreen({ embedded = false }: { embedded?: boolean }) {
   const key = dayKey(week[sel]);
   const day = plan[key] ?? {};
 
-  const planned = week.flatMap((d) => Object.values(plan[dayKey(d)] ?? {}).map((id) => getDish(id!)!)).filter(Boolean);
-  const weekCost = planned.reduce((s, d) => s + costToMake(d, 1), 0);
-  const weekSave = planned.reduce((s, d) => s + costToOrder(d, 1) - costToMake(d, 1), 0);
+  // Old demo plan entries don't match a research dish and simply drop out.
+  const planned = week.flatMap((d) => Object.values(plan[dayKey(d)] ?? {}).map((id) => getDish(id!))).filter((d): d is Dish => !!d);
+  const costs = planned.map((d) => makeCost(d));
+  const weekCost = costs.reduce((s, c) => s + (c?.avg ?? 0), 0);
+  const partial = costs.some((c) => !c?.complete);
+  const weekSave = planned.reduce((s, d, i) => s + Math.max(0, savingVsOrder(costs[i], orderRange(d))?.rupees ?? 0), 0);
 
   const autoPlan = () => {
     const ranked = recommend(profile);
-    const bf = ranked.filter((d) => d.category === 'Breakfast');
-    const mains = ranked.filter((d) => d.category === 'Main');
+    const bf = ranked.filter((d) => isBreakfast(d));
+    const mains = ranked.filter((d) => !isBreakfast(d));
     week.forEach((d, i) => {
       const k = dayKey(d);
       const existing = plan[k] ?? {};
@@ -98,7 +107,7 @@ export function PlanScreen({ embedded = false }: { embedded?: boolean }) {
                   <PressableScale onPress={() => setPicking(slot)} style={styles.empty} scaleTo={0.98}>
                     <Ionicons name="add-circle" size={22} color={colors.accent} />
                     <Text style={{ color: colors.text, fontWeight: '700' }}>Add {label.toLowerCase()}</Text>
-                    {slot === 'lunch' ? <Text style={[type.small, { color: colors.muted, marginLeft: 'auto' }]}>or log the canteen later</Text> : null}
+                    
                   </PressableScale>
                 )}
               </FadeIn>
@@ -116,7 +125,7 @@ export function PlanScreen({ embedded = false }: { embedded?: boolean }) {
               </View>
               <View style={{ flex: 1 }}>
                 <Text style={styles.big}>₹{weekCost}</Text>
-                <Text style={[type.small, { color: colors.muted }]}>to cook (1 person)</Text>
+                <Text style={[type.small, { color: colors.muted }]}>{partial ? 'to cook (1 person, some prices coming)' : 'to cook (1 person)'}</Text>
               </View>
               <View style={{ flex: 1 }}>
                 <Text style={[styles.big, { color: colors.accent }]}>₹{weekSave}</Text>
@@ -129,7 +138,7 @@ export function PlanScreen({ embedded = false }: { embedded?: boolean }) {
                 title="🛒 Grocery list for the week"
                 variant="glass"
                 disabled={planned.length === 0}
-                onPress={() => router.push('/grocery')}
+                onPress={() => router.push({ pathname: '/basket', params: { dishes: planned.map((d) => d.id).join(','), servings: '1' } })}
               />
             </View>
           </Glass>
@@ -146,7 +155,7 @@ export function PlanScreen({ embedded = false }: { embedded?: boolean }) {
             <Text style={[type.h2, { color: colors.text, marginBottom: 12 }]}>Pick {picking}</Text>
             <ScrollView style={{ maxHeight: 420 }}>
               {allowedDishes(profile)
-                .sort((a, b) => Number(b.category === (picking === 'breakfast' ? 'Breakfast' : 'Main')) - Number(a.category === (picking === 'breakfast' ? 'Breakfast' : 'Main')))
+                .sort((a, b) => Number(isBreakfast(b) === (picking === 'breakfast')) - Number(isBreakfast(a) === (picking === 'breakfast')))
                 .map((d) => (
                   <PressableScale
                     key={d.id}
@@ -157,11 +166,13 @@ export function PlanScreen({ embedded = false }: { embedded?: boolean }) {
                     style={styles.pickRow}
                     scaleTo={0.98}
                   >
-                    <Text style={{ fontSize: 26 }}>{d.emoji}</Text>
-                    <View style={{ flex: 1 }}>
-                      <Text style={{ color: colors.text, fontWeight: '800' }}>{d.name}</Text>
-                      <Text style={[type.small, { color: colors.muted }]}>
-                        {d.kcal} kcal · {d.timeMins} min
+                    <DishImageSlot dish={d} size={44} label={false} />
+                    <View style={{ flex: 1, minWidth: 0 }}>
+                      <Text style={{ color: colors.text, fontWeight: '800' }} numberOfLines={1}>
+                        {d.name}
+                      </Text>
+                      <Text style={[type.small, { color: colors.muted }]} numberOfLines={1}>
+                        {factsLine(d)}
                       </Text>
                     </View>
                     <Ionicons name="add" size={20} color={colors.accent} />

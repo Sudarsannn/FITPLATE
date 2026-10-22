@@ -14,7 +14,8 @@ import type { ShoppingItem, ShoppingList } from '../models/prefs';
 import type { Dish } from '../models/research';
 import { dishCost } from '../services/vendors';
 import { buildShoppingItems, cheapestPer100, newShoppingList, offlineVariants, preselect, variantLabel, type VariantOption } from '../services/vendors/basket';
-import { VENDOR_VISIBLE } from '../services/vendors/config';
+import { VENDOR_VISIBLE, VENDORS_PAUSED } from '../services/vendors/config';
+import { VendorPlaceholders } from '../components/vendors/VendorLogos';
 import { openExternal, zeptoTarget } from '../services/vendors/openApp';
 import type { VendorProduct } from '../services/vendors/types';
 import { colors, radius, type } from '../theme';
@@ -63,9 +64,28 @@ export default function BasketScreen() {
     return (
       <SafeAreaView style={{ flex: 1, backgroundColor: colors.bg }}>
         <ScreenTop title="Shopping list" fallback="/cook" />
-        <View style={{ padding: 24 }}>
-          <Notice tone="warn">Pick a dish first: open any dish in the Cook tab and tap “Shop ingredients”.</Notice>
-        </View>
+        <ScrollView contentContainerStyle={{ padding: 18, gap: 10 }}>
+          {store.shoppingLists.length ? (
+            store.shoppingLists.map((l) => (
+              <PressableScale key={l.id} style={s.item} onPress={() => router.replace({ pathname: '/basket', params: { list: l.id } })} accessibilityLabel={`Open ${l.title}`}>
+                <View style={{ flexDirection: 'row', alignItems: 'center', gap: 12 }}>
+                  <Ionicons name="list" size={20} color={colors.accent} />
+                  <View style={{ flex: 1, minWidth: 0 }}>
+                    <Text style={s.name} numberOfLines={1}>
+                      {l.title}
+                    </Text>
+                    <Text style={k.muted}>
+                      {l.items.filter((i) => i.checked).length} of {l.items.length} ticked
+                    </Text>
+                  </View>
+                  <Ionicons name="chevron-forward" size={18} color={colors.muted} />
+                </View>
+              </PressableScale>
+            ))
+          ) : (
+            <Notice tone="warn">No shopping list yet. Open any dish in the Cook tab and tap “Shopping list”, or plan your week and tap “Grocery list for the week”.</Notice>
+          )}
+        </ScrollView>
       </SafeAreaView>
     );
   }
@@ -126,7 +146,7 @@ export default function BasketScreen() {
           <Chip label="📦 Order online" active={tab === 'online'} onPress={() => setTab('online')} />
           <Chip label="🏪 At the shop" active={tab === 'shop'} onPress={() => setTab('shop')} />
         </View>
-        {tab === 'online' && mode === 'sample' ? <SampleBanner what="brands, prices and stock" /> : null}
+        {tab === 'online' && mode === 'sample' && !VENDORS_PAUSED ? <SampleBanner what="brands, prices and stock" /> : null}
         {tab === 'shop' ? (
           <View style={{ marginTop: 12 }}>
             <Text style={{ color: colors.text, fontWeight: '800', marginBottom: 6 }}>
@@ -158,7 +178,7 @@ export default function BasketScreen() {
                 patchItem(item.key, { variant: label });
                 store.chooseBrand(item.key, label);
               }}
-              online={tab === 'online'}
+              online={tab === 'online' && !VENDORS_PAUSED}
               search={im.searchProducts}
               addresses={im.getAddresses}
               connected={im.status}
@@ -170,7 +190,7 @@ export default function BasketScreen() {
       <View style={s.footer}>
         {tab === 'online' ? (
           <>
-            <GradientButton title={`Add to basket & checkout (${included.length})`} onPress={() => setSheet('vendor')} disabled={included.length === 0} />
+            <GradientButton title={VENDORS_PAUSED ? `Buy online (${included.length})` : `Add to basket & checkout (${included.length})`} onPress={() => setSheet('vendor')} disabled={included.length === 0} />
             <Pressable onPress={() => continueToCook('self')} style={s.plain} accessibilityRole="button">
               <Text style={s.plainText}>Bought them yourself? Continue</Text>
             </Pressable>
@@ -183,7 +203,33 @@ export default function BasketScreen() {
       <Modal visible={sheet !== null} transparent animationType="slide" onRequestClose={() => setSheet(null)}>
         <Pressable style={s.scrim} onPress={() => setSheet(null)} accessibilityLabel="Close" />
         <View style={s.sheet}>
-          {sheet === 'vendor' ? (
+          {sheet === 'vendor' && VENDORS_PAUSED ? (
+            <>
+              <Text style={[type.h2, { color: colors.text }]}>Grocery apps are coming</Text>
+              <Text style={[k.muted, { marginTop: 4, marginBottom: 12 }]}>
+                Ordering these {included.length} items through a grocery app arrives with the FitPlate phone app. For now, take this list to the shop or your usual app.
+              </Text>
+              <VendorPlaceholders vendors={['instamart', 'zepto', 'blinkit']} />
+              <GradientButton
+                title="Use the list at the shop"
+                onPress={() => {
+                  setSheet(null);
+                  setTab('shop');
+                }}
+                style={{ marginTop: 16 }}
+              />
+              <Pressable
+                onPress={() => {
+                  setSheet(null);
+                  continueToCook('self');
+                }}
+                style={s.plain}
+                accessibilityRole="button"
+              >
+                <Text style={s.plainText}>I’ve bought them. Continue to cooking</Text>
+              </Pressable>
+            </>
+          ) : sheet === 'vendor' ? (
             <>
               <Text style={[type.h2, { color: colors.text }]}>Where do you want to buy?</Text>
               <Text style={[k.muted, { marginTop: 4 }]}>{included.length} items. You pay the shop directly; FitPlate never sees your payment.</Text>
@@ -341,14 +387,16 @@ function ItemRow({
                     {o.source === 'research' ? <Text style={[k.muted, { fontSize: 11 }]}>FitPlate research estimate</Text> : null}
                   </View>
                 </View>
-                <ZeptoCircle
-                  exact={z.exact}
-                  onPress={async () => {
-                    const ok = await openExternal(z.url);
-                    if (!z.exact) notify('Zepto', `FitPlate doesn’t have the exact Zepto link for ${o.brand} ${item.name} yet, so Zepto’s home page opened. Search for it there.`);
-                    else if (!ok) notify('Zepto', 'Couldn’t open Zepto on this device.');
-                  }}
-                />
+                {VENDORS_PAUSED ? null : (
+                  <ZeptoCircle
+                    exact={z.exact}
+                    onPress={async () => {
+                      const ok = await openExternal(z.url);
+                      if (!z.exact) notify('Zepto', `FitPlate doesn’t have the exact Zepto link for ${o.brand} ${item.name} yet, so Zepto’s home page opened. Search for it there.`);
+                      else if (!ok) notify('Zepto', 'Couldn’t open Zepto on this device.');
+                    }}
+                  />
+                )}
               </Pressable>
             );
           })}

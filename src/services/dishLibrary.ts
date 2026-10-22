@@ -30,6 +30,19 @@ export function headlineOrderPrice(d: Pick<Dish, 'orderPrice'>): { avg: number; 
   return { ...p.currentEstimate, observed: p.lastObserved };
 }
 
+/**
+ * Sudarsan (22 Oct 2026): always show the researched order price as a range
+ * ("₹190–260 on Swiggy and Zomato"), averaged across the restaurants research
+ * sampled, even when it rests on fewer listings than the headline checks
+ * want. `confirmed` says whether it passed those checks, so the page can say
+ * so in a note instead of hiding the price.
+ */
+export function orderRange(d: Pick<Dish, 'orderPrice'>): { min: number; max: number; avg: number; confirmed: boolean; listings: number | null; observed: string | null } | null {
+  const p = d.orderPrice;
+  if (!p?.currentEstimate) return null;
+  return { ...p.currentEstimate, confirmed: p.confirmed !== false, listings: p.listingCount ?? null, observed: p.lastObserved };
+}
+
 /** "Based on 3 listings" under a price backed by fewer than 5 listings (review 2026-10-15, fix 2). */
 export function orderPriceNote(d: Pick<Dish, 'orderPrice'>): string | null {
   const p = d.orderPrice;
@@ -134,10 +147,10 @@ export const DISH_SORTS: SortOption<Dish>[] = [
   { id: 'healthiness', label: 'Healthiness score', value: (d) => d.healthiness?.score ?? null, direction: 'desc' },
   { id: 'rating', label: 'Rating', value: (d) => d.researchRating?.score ?? null, direction: 'desc' },
   { id: 'fewest-ingredients', label: 'Fewest ingredients', value: (d) => (d.ingredients.length ? d.ingredients.length : null), direction: 'asc' },
-  { id: 'order-price', label: 'Cheapest to order', value: (d) => headlineOrderPrice(d)?.avg ?? null, direction: 'asc' },
+  { id: 'order-price', label: 'Cheapest to order', value: (d) => orderRange(d)?.avg ?? null, direction: 'asc' },
   // Day 8: only dishes whose every ingredient is priced take part; the rest sort last.
   { id: 'make-cost', label: 'Cheapest to cook', value: (d) => completeMakeCost(d), direction: 'asc' },
-  { id: 'most-saved', label: 'Most saved vs ordering', value: (d) => savingVsOrder(makeCost(d), headlineOrderPrice(d))?.rupees ?? null, direction: 'desc' },
+  { id: 'most-saved', label: 'Most saved vs ordering', value: (d) => savingVsOrder(makeCost(d), orderRange(d))?.rupees ?? null, direction: 'desc' },
   ...(featureFlags.proteinPerRupee
     ? [{ id: 'protein-per-rupee', label: 'Protein per ₹', value: (d: Dish) => rupeesPer10gProtein(makeCost(d), d.nutritionPerServing.proteinG), direction: 'asc' as const }]
     : []),

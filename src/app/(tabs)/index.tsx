@@ -6,9 +6,9 @@ import Animated, { useAnimatedScrollHandler, useAnimatedStyle, useSharedValue, i
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { DishCardTall } from '../../components/DishCard';
-import { Bar, CountUp, FadeIn, Glass, Glow, PressableScale, Ring, SectionHeader } from '../../components/ui';
+import { NutritionCard } from '../../components/NutritionCard';
+import { CountUp, FadeIn, Glass, Glow, PressableScale, Ring, SectionHeader } from '../../components/ui';
 import { dishLibraryHref, profileHref } from '../../config/tabs';
-import { dishes } from '../../data/dishes';
 import { select, success } from '../../lib/haptics';
 import { dayTotals, FIBRE_TARGET, GOALS, recommend, useStore, WATER_TARGET } from '../../lib/store';
 import { colors, gradients, radius, type } from '../../theme';
@@ -31,13 +31,15 @@ function QuickAction({ icon, label, tint, onPress }: { icon: keyof typeof Ionico
 
 export default function Today() {
   const s = useStore();
-  const { profile, today, moneySaved, streak, user } = s;
+  const { profile, today, moneySaved, streak, user, sex } = s;
   const goal = GOALS[profile.goal];
   const t = dayTotals(today);
   const left = goal.kcal - t.kcalIn + t.kcalOut;
   const picks = recommend(profile).slice(0, 6);
   const evening = new Date().getHours() >= 17;
-  const breakfasts = dishes.filter((d) => (evening ? d.tags.includes('night-before') : d.tags.includes('zero-energy')));
+  const breakfasts = recommend(profile)
+    .filter((d) => d.mealType.includes('breakfast'))
+    .slice(0, 8);
 
   const y = useSharedValue(0);
   const onScroll = useAnimatedScrollHandler((e) => {
@@ -99,26 +101,9 @@ export default function Today() {
                   </View>
                 </View>
               </View>
-              <View style={{ flexDirection: 'row', gap: 16, marginTop: 18 }}>
-                <View style={{ flex: 1 }}>
-                  <View style={styles.nutRow}>
-                    <Text style={styles.nutLabel}>Protein</Text>
-                    <Text style={styles.nutVal}>
-                      {t.protein}/{goal.protein} g
-                    </Text>
-                  </View>
-                  <Bar progress={t.protein / goal.protein} color={colors.violet} />
-                </View>
-                <View style={{ flex: 1 }}>
-                  <View style={styles.nutRow}>
-                    <Text style={styles.nutLabel}>Fibre</Text>
-                    <Text style={styles.nutVal}>
-                      {t.fibre}/{FIBRE_TARGET} g
-                    </Text>
-                  </View>
-                  <Bar progress={t.fibre / FIBRE_TARGET} color={colors.accent2} />
-                </View>
-              </View>
+              <View style={styles.divider} />
+              <Text style={[type.h2, { color: colors.text }]}>Today&apos;s nutrition</Text>
+              <NutritionCard today={today} goal={goal} fibreTarget={FIBRE_TARGET} sex={sex} />
             </Glass>
           </FadeIn>
 
@@ -148,7 +133,7 @@ export default function Today() {
             <View style={styles.qaRow}>
               <QuickAction icon="fast-food" label="Log meal" tint={colors.warm} onPress={() => router.push({ pathname: '/log', params: { tab: 'meal' } })} />
               <QuickAction icon="barbell" label="Workout" tint={colors.violet} onPress={() => router.push({ pathname: '/log', params: { tab: 'exercise' } })} />
-              <QuickAction icon="cart" label="Groceries" tint={colors.accent} onPress={() => router.push('/grocery')} />
+              <QuickAction icon="cart" label="Groceries" tint={colors.accent} onPress={() => router.push('/basket')} />
               <QuickAction icon="search" label="Find dish" tint={colors.blue} onPress={() => router.push(dishLibraryHref())} />
             </View>
           </FadeIn>
@@ -190,16 +175,6 @@ export default function Today() {
           </FadeIn>
 
           <FadeIn i={5}>
-            <PressableScale onPress={() => router.push('/order-vs-make')} accessibilityLabel="Craving a takeaway? Compare it with cooking" style={{ marginTop: 14 }} scaleTo={0.98}>
-              <Glass style={{ flexDirection: 'row', alignItems: 'center', gap: 12 }}>
-                <Text style={{ fontSize: 28 }}>🛵</Text>
-                <View style={{ flex: 1 }}>
-                  <Text style={[type.h2, { color: colors.text }]}>Craving a takeaway?</Text>
-                  <Text style={[type.small, { color: colors.muted }]}>Find it on Swiggy and see what cooking it instead saves</Text>
-                </View>
-                <Ionicons name="chevron-forward" size={18} color={colors.muted} />
-              </Glass>
-            </PressableScale>
             <SectionHeader title={`Picked for you · ${goal.label.toLowerCase()}`} action="See all" onAction={() => router.push(dishLibraryHref())} />
             <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{ marginHorizontal: -18 }} contentContainerStyle={{ paddingHorizontal: 18 }} decelerationRate="fast" snapToInterval={214}>
               {picks.map((d) => (
@@ -209,7 +184,7 @@ export default function Today() {
           </FadeIn>
 
           <FadeIn i={6}>
-            <SectionHeader title={evening ? '🌙 Prep tonight, eat tomorrow' : '⚡ Zero-energy breakfasts'} />
+            <SectionHeader title={evening ? "🌙 Tomorrow's breakfast" : '☀️ Breakfast ideas'} />
             <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{ marginHorizontal: -18 }} contentContainerStyle={{ paddingHorizontal: 18 }}>
               {breakfasts.map((d) => (
                 <DishCardTall key={d.id} dish={d} width={160} />
@@ -267,9 +242,7 @@ const styles = StyleSheet.create({
   kv: { flexDirection: 'row', alignItems: 'center', gap: 8 },
   kvLabel: { color: colors.muted, flex: 1, fontSize: 14 },
   kvVal: { color: colors.text, fontWeight: '800', fontSize: 16 },
-  nutRow: { flexDirection: 'row', justifyContent: 'space-between', marginBottom: 6 },
-  nutLabel: { color: colors.muted, fontSize: 12.5, fontWeight: '600' },
-  nutVal: { color: colors.text, fontSize: 12.5, fontWeight: '700' },
+  divider: { height: 1, backgroundColor: colors.border, marginVertical: 16 },
   money: { borderRadius: radius.lg, padding: 18, flexDirection: 'row', alignItems: 'center' },
   moneyNum: { color: '#1a0a00', fontSize: 36, fontWeight: '900', letterSpacing: -1, marginTop: 2 },
   moneySub: { color: 'rgba(26,10,0,0.75)', fontSize: 13, fontWeight: '600' },

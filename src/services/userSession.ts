@@ -136,7 +136,7 @@ export function toView(docs: UserDocs): LegacyState {
   const days: Record<string, DayLog> = {};
   const day = (k: DateKey) => (days[k] ??= { meals: [], exercise: [], water: 0 });
   for (const m of live(docs.mealLogs).sort((a, b) => a.timestamp - b.timestamp)) {
-    day(m.dateKey).meals.push({ name: m.name, emoji: m.emoji, kcal: m.kcal, protein: m.proteinG, fibre: m.fibreG, cooked: m.cooked, at: m.timestamp });
+    day(m.dateKey).meals.push({ name: m.name, emoji: m.emoji, kcal: m.kcal, protein: m.proteinG, fibre: m.fibreG, cooked: m.cooked, at: m.timestamp, dishId: m.dishId });
   }
   for (const w of live(docs.workoutLogs).sort((a, b) => a.timestamp - b.timestamp)) {
     day(w.dateKey).exercise.push({ type: w.type, minutes: w.minutes, kcal: w.kcal, at: w.timestamp });

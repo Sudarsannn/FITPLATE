@@ -4,9 +4,11 @@ import { createContext, useContext, useEffect, useMemo, useState, type ReactNode
 import { AppState } from 'react-native';
 
 import { featureFlags } from '../config/featureFlags';
-import { dishes, type Diet, type Dish } from '../data/dishes';
+import { researchDishes } from '../data/research';
+import type { Dish as ResearchDish } from '../models/research';
 import type { Doc } from '../models/common';
 import { DEFAULT_SETTINGS, type CookCompletion, type DishRating, type ShoppingList, type UserSettings } from '../models/prefs';
+import { exerciseKcal } from '../services/fitness';
 import { GUEST_OWNER, openUserData, type UserData } from '../services/storage';
 import { createServerClock, measureClockOffset } from '../services/storage/serverClock';
 import { createFirestoreAdapter, getDb } from '../services/storage/firestoreRemote';
@@ -29,6 +31,8 @@ import {
 } from '../services/userSession';
 import { firebaseConfigured, getFirebaseAuth } from './firebase';
 
+/** The user's diet preference (the research dishes carry `dietType`). */
+export type Diet = 'veg' | 'egg' | 'non-veg';
 export type Goal = 'lose' | 'maintain' | 'gain' | 'muscle';
 export type Level = 'beginner' | 'expert';
 export type Slot = 'breakfast' | 'lunch' | 'dinner';
@@ -42,7 +46,7 @@ export type Profile = {
   onboarded: boolean;
 };
 
-export type MealLog = { name: string; emoji: string; kcal: number; protein: number; fibre: number; cooked: boolean; at: number };
+export type MealLog = { name: string; emoji: string; kcal: number; protein: number; fibre: number; cooked: boolean; at: number; dishId?: string | null };
 export type ExerciseLog = { type: string; minutes: number; kcal: number; at: number };
 export type DayLog = { meals: MealLog[]; exercise: ExerciseLog[]; water: number };
 
@@ -63,26 +67,7 @@ export const GOALS: Record<Goal, { label: string; emoji: string; kcal: number; p
 export const FIBRE_TARGET = 30;
 export const WATER_TARGET = 8;
 
-// MET values; kcal = MET × 70 kg × hours.
-export const EXERCISES = [
-  { type: 'Walk', emoji: '🚶', met: 3.5 },
-  { type: 'Run', emoji: '🏃', met: 9.8 },
-  { type: 'Cycle', emoji: '🚴', met: 7.5 },
-  { type: 'Yoga', emoji: '🧘', met: 3 },
-  { type: 'Gym', emoji: '🏋️', met: 6 },
-  { type: 'Sport', emoji: '🏸', met: 7 },
-];
-export const exerciseKcal = (met: number, minutes: number) => Math.round((met * 70 * minutes) / 60);
-
-// Quick logs for days you don't cook (office canteen, ordering in).
-export const QUICK_MEALS = [
-  { name: 'Office canteen thali', emoji: '🍱', kcal: 650, protein: 20, fibre: 8 },
-  { name: 'Sandwich', emoji: '🥪', kcal: 380, protein: 14, fibre: 4 },
-  { name: 'Salad bowl', emoji: '🥗', kcal: 320, protein: 12, fibre: 9 },
-  { name: 'Dosa + chutney', emoji: '🫓', kcal: 400, protein: 9, fibre: 4 },
-  { name: 'Ordered biryani', emoji: '🍗', kcal: 850, protein: 30, fibre: 3 },
-  { name: 'Chai + biscuits', emoji: '☕', kcal: 180, protein: 3, fibre: 1 },
-];
+export { exerciseKcal } from '../services/fitness';
 
 export const dayKey = (d = new Date()) =>
   `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
@@ -90,43 +75,14 @@ export const addDays = (d: Date, n: number) => new Date(d.getFullYear(), d.getMo
 
 const emptyDay = (): DayLog => ({ meals: [], exercise: [], water: 0 });
 
-// Sample history so the progress screens look alive in the demo. Guests get it
-// on a new device, marked as sample, so it is never copied into an account.
+// New devices start empty: no demo history (Sudarsan, 22 Oct 2026). The
+// name stays because the guest-device setup and "Reset" call it.
 export function sampleState(): State {
-  const days: Record<string, DayLog> = {};
-  const today = new Date();
-  const sample = [
-    { m: ['poha', 'q:Office canteen thali', 'paneer-butter-masala'], ex: ['Walk', 30], w: 7 },
-    { m: ['overnight-oats', 'q:Sandwich', 'rajma-chawal'], ex: ['Yoga', 25], w: 6 },
-    { m: ['q:Chai + biscuits', 'q:Office canteen thali', 'q:Ordered biryani'], ex: null, w: 4 },
-    { m: ['moong-chilla', 'q:Salad bowl', 'egg-bhurji'], ex: ['Run', 20], w: 8 },
-    { m: ['masala-oats', 'q:Office canteen thali', 'chicken-biryani'], ex: ['Gym', 45], w: 7 },
-    { m: ['poha', 'q:Dosa + chutney', 'rajma-chawal'], ex: ['Walk', 40], w: 6 },
-  ] as const;
-  sample.forEach((s, i) => {
-    const day = emptyDay();
-    s.m.forEach((m, j) => {
-      const at = addDays(today, -(6 - i)).getTime() + (8 + j * 5) * 3600_000;
-      if (m.startsWith('q:')) {
-        const q = QUICK_MEALS.find((x) => x.name === m.slice(2))!;
-        day.meals.push({ ...q, cooked: false, at });
-      } else {
-        const d = dishes.find((x) => x.id === m)!;
-        day.meals.push({ name: d.name, emoji: d.emoji, kcal: d.kcal, protein: d.proteinG, fibre: d.fibreG, cooked: true, at });
-      }
-    });
-    if (s.ex) {
-      const e = EXERCISES.find((x) => x.type === s.ex![0])!;
-      day.exercise.push({ type: e.type, minutes: s.ex[1], kcal: exerciseKcal(e.met, s.ex[1]), at: 0 });
-    }
-    day.water = s.w;
-    days[dayKey(addDays(today, -(6 - i)))] = day;
-  });
   return {
     profile: { name: '', goal: 'lose', level: 'beginner', diet: 'non-veg', breakfastReminder: true, onboarded: false },
-    days,
-    moneySaved: 2860,
-    favourites: ['poha', 'paneer-butter-masala'],
+    days: {},
+    moneySaved: 0,
+    favourites: [],
     plan: {},
   };
 }
@@ -155,9 +111,12 @@ type Store = State & {
    */
   deleteMyData: () => Promise<void>;
   updateProfile: (p: Partial<Profile>) => void;
-  logCooked: (dish: Dish, saved: number) => void;
-  logQuickMeal: (m: (typeof QUICK_MEALS)[number]) => void;
-  logExercise: (type: string, minutes: number) => void;
+  /** One serving of a research dish, eaten (not necessarily cooked here). */
+  logDish: (dish: ResearchDish) => void;
+  /** A meal that isn't a FitPlate dish, with the user's own numbers. */
+  logCustomMeal: (m: { name: string; kcal: number; protein: number; fibre: number }) => void;
+  /** A research exercise for some minutes; kcal from its Compendium MET and the user's weight. */
+  logWorkout: (exercise: { id: string; name: string; met: number }, minutes: number) => void;
   addWater: (n: number) => void;
   toggleFavourite: (id: string) => void;
   setPlan: (date: string, slot: Slot, dishId: string | null) => void;
@@ -177,6 +136,9 @@ type Store = State & {
   addWeight: (kg: number) => void;
   /** Newest logged weight, else the profile's; null when neither exists (burn-off then assumes 70 kg). */
   bodyWeightKg: number | null;
+  /** From the profile; picks the ICMR-NIN target group for the nutrient bars (null = not given). */
+  sex: 'male' | 'female' | null;
+  setSex: (sex: 'male' | 'female') => void;
   ratings: Record<string, DishRating['stars']>;
   rateDish: (dishId: string, stars: DishRating['stars'], note?: string | null) => void;
   logCookCompletion: (c: Omit<CookCompletion, 'timestamp' | 'dateKey'>) => void;
@@ -320,6 +282,11 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       if (auth && !user?.guest) await fbSignOut(auth);
       setUser(null);
     };
+    const bodyWeight =
+      Object.values(docs.weightLogs)
+        .filter((w) => !w.deleted)
+        .sort((a, b) => b.timestamp - a.timestamp)[0]?.kg ??
+      (docs.profile && !docs.profile.deleted ? docs.profile.weightKg : null);
     return {
       ...state,
       user,
@@ -360,16 +327,12 @@ export function StoreProvider({ children }: { children: ReactNode }) {
         await endAuth();
       },
       updateProfile: (p) => s?.updateProfile(legacyProfilePatch(p)),
-      logCooked: (dish, saved) => {
-        if (!s) return;
-        s.addMeal({ name: dish.name, emoji: dish.emoji, dishId: dish.id, source: 'dish', kcal: dish.kcal, proteinG: dish.proteinG, fibreG: dish.fibreG, cooked: true });
-        if (saved) s.addSaving(saved, dish.id);
+      logDish: (dish) => {
+        const n = dish.nutritionPerServing;
+        s?.addMeal({ name: dish.name, emoji: '🍽️', dishId: dish.id, source: 'dish', kcal: Math.round(n.kcal ?? 0), proteinG: Math.round(n.proteinG ?? 0), fibreG: Math.round(n.fibreG ?? 0), cooked: false });
       },
-      logQuickMeal: (m) => s?.addMeal({ name: m.name, emoji: m.emoji, dishId: null, source: 'quick', kcal: m.kcal, proteinG: m.protein, fibreG: m.fibre, cooked: false }),
-      logExercise: (type, minutes) => {
-        const e = EXERCISES.find((x) => x.type === type);
-        if (e) s?.addWorkout({ type, exerciseId: null, minutes, kcal: exerciseKcal(e.met, minutes) });
-      },
+      logCustomMeal: (m) => s?.addMeal({ name: m.name, emoji: '🍴', dishId: null, source: 'custom', kcal: Math.round(m.kcal), proteinG: Math.round(m.protein), fibreG: Math.round(m.fibre), cooked: false }),
+      logWorkout: (e, minutes) => s?.addWorkout({ type: e.name, exerciseId: e.id, minutes, kcal: exerciseKcal(e.met, minutes, bodyWeight) }),
       addWater: (n) => s?.addWater(n),
       toggleFavourite: (id) => s?.toggleFavourite(id),
       setPlan: (date, slot, dishId) => s?.setPlan(date, slot, dishId),
@@ -385,11 +348,9 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       saveShoppingList: (list, id) => s?.saveShoppingList(list, id) ?? id ?? '',
       removeShoppingList: (id) => s?.removeShoppingList(id),
       addWeight: (kg) => s?.addWeight(kg),
-      bodyWeightKg:
-        Object.values(docs.weightLogs)
-          .filter((w) => !w.deleted)
-          .sort((a, b) => b.timestamp - a.timestamp)[0]?.kg ??
-        (docs.profile && !docs.profile.deleted ? docs.profile.weightKg : null),
+      bodyWeightKg: bodyWeight,
+      setSex: (sex) => s?.updateProfile({ sex }),
+      sex: docs.profile && !docs.profile.deleted && (docs.profile.sex === 'male' || docs.profile.sex === 'female') ? docs.profile.sex : null,
       ratings: Object.fromEntries(Object.values(docs.ratings).filter((r) => !r.deleted).map((r) => [r.dishId, r.stars])),
       rateDish: (dishId, stars, note = null) => s?.rateDish(dishId, stars, note),
       logCookCompletion: (c) => s?.addCookCompletion(c),
@@ -419,25 +380,30 @@ export const dayTotals = (d: DayLog) => ({
   fibre: d.meals.reduce((s, m) => s + m.fibre, 0),
 });
 
-const dietAllows = (pref: Diet, dish: Diet) =>
+const dietAllows = (pref: Diet, dish: ResearchDish['dietType']) =>
   pref === 'non-veg' || dish === 'veg' || (pref === 'egg' && dish === 'egg');
 
-// Tasty-first: every dish stays available, recommendations just rank what fits the goal.
-export function recommend(profile: Profile) {
-  const ok = dishes.filter((d) => dietAllows(profile.diet, d.diet));
-  const score = (d: Dish) => {
+// Tasty-first: every research dish stays available; recommendations just rank what fits the goal.
+export function recommend(profile: Profile): ResearchDish[] {
+  const ok = researchDishes.filter((d) => dietAllows(profile.diet, d.dietType));
+  const score = (d: ResearchDish) => {
+    const n = d.nutritionPerServing;
+    const health = d.healthiness?.score ?? 5;
+    const kcal = n.kcal ?? 500;
+    const protein = n.proteinG ?? 0;
+    const fibre = n.fibreG ?? 0;
     switch (profile.goal) {
       case 'lose':
-        return d.healthScore * 40 + d.fibreG * 10 - d.kcal / 5;
+        return health * 40 + fibre * 10 - kcal / 5;
       case 'muscle':
-        return d.proteinG * 6 + d.healthScore * 10;
+        return protein * 6 + health * 10;
       case 'gain':
-        return d.kcal / 5 + d.proteinG * 3;
+        return kcal / 5 + protein * 3;
       default:
-        return d.healthScore * 30 + d.fibreG * 5;
+        return health * 30 + fibre * 5;
     }
   };
   return [...ok].sort((a, b) => score(b) - score(a));
 }
 
-export const allowedDishes = (profile: Profile) => dishes.filter((d) => dietAllows(profile.diet, d.diet));
+export const allowedDishes = (profile: Profile): ResearchDish[] => researchDishes.filter((d) => dietAllows(profile.diet, d.dietType));

@@ -6,17 +6,15 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { ConfirmDeleteData } from '../components/ConfirmDeleteData';
 import { Chip, FadeIn, Glass, GradientButton, PressableScale } from '../components/ui';
-import { featureFlags } from '../config/featureFlags';
-import type { Diet } from '../data/dishes';
 import { setReminders } from '../lib/reminders';
-import { GOALS, useStore, type Goal, type Level } from '../lib/store';
+import { GOALS, useStore, type Diet, type Goal, type Level } from '../lib/store';
 import { syncStatusLine } from '../services/userSession';
 import { colors, type } from '../theme';
 
 // `asTab` is set by the Profile tab of the new shell: no back button, and room
 // at the bottom for the floating tab bar.
 export function ProfileScreen({ asTab = false }: { asTab?: boolean }) {
-  const { profile, updateProfile, signOut, deleteMyData, resetDemo, user, favourites, cloud, syncError } = useStore();
+  const { profile, updateProfile, sex, setSex, signOut, deleteMyData, resetDemo, user, favourites, cloud, syncError } = useStore();
   const [confirmDelete, setConfirmDelete] = useState(false);
   const canDelete = Boolean(user && !user.guest && cloud);
   return (
@@ -69,6 +67,13 @@ export function ProfileScreen({ asTab = false }: { asTab?: boolean }) {
                 <Chip key={d} label={l} active={profile.diet === d} onPress={() => updateProfile({ diet: d })} />
               ))}
             </View>
+            <Text style={[styles.label, { marginTop: 18 }]}>Vitamin and mineral targets for</Text>
+            <View style={styles.chips}>
+              {([['female', 'Women'], ['male', 'Men']] as const).map(([d, l]) => (
+                <Chip key={d} label={l} active={sex === d} onPress={() => setSex(d)} />
+              ))}
+            </View>
+            <Text style={[type.small, { color: colors.muted, marginTop: 6 }]}>ICMR-NIN sets some daily targets differently for adult women and men. Men&apos;s targets are used until you choose.</Text>
             <Text style={[styles.label, { marginTop: 18 }]}>Cooking level</Text>
             <View style={styles.chips}>
               {([['beginner', '🌱 Beginner'], ['expert', '👨‍🍳 Expert']] as [Level, string][]).map(([d, l]) => (
@@ -100,17 +105,17 @@ export function ProfileScreen({ asTab = false }: { asTab?: boolean }) {
         <FadeIn i={3}>
           <Glass style={{ marginTop: 14 }}>
             <Text style={{ color: colors.text, fontWeight: '800' }}>❤️ {favourites.length} saved dishes</Text>
-            <Text style={[type.small, { color: colors.muted, marginTop: 4 }]}>Find them under {featureFlags.newTabShell ? 'Cook' : 'Discover'} → Saved.</Text>
+            <Text style={[type.small, { color: colors.muted, marginTop: 4 }]}>Find them under Cook → Saved.</Text>
           </Glass>
         </FadeIn>
 
         <FadeIn i={4}>
-          <PressableScale onPress={() => router.push('/vendors')} accessibilityLabel="Shopping and vendors" style={{ marginTop: 14 }}>
+          <PressableScale onPress={() => router.push('/basket')} accessibilityLabel="Your shopping lists" style={{ marginTop: 14 }}>
             <Glass style={styles.linkRow}>
               <Text style={{ fontSize: 24 }}>🛒</Text>
               <View style={{ flex: 1 }}>
-                <Text style={{ color: colors.text, fontWeight: '800' }}>Shopping & vendors</Text>
-                <Text style={[type.small, { color: colors.muted }]}>Swiggy, Zepto, real orders and your preferred shop</Text>
+                <Text style={{ color: colors.text, fontWeight: '800' }}>Shopping lists</Text>
+                <Text style={[type.small, { color: colors.muted }]}>Grocery apps arrive with the phone app</Text>
               </View>
               <Ionicons name="chevron-forward" size={18} color={colors.muted} />
             </Glass>

@@ -32,12 +32,12 @@ const blob: LegacyState = {
   profile: { name: 'Asha', goal: 'muscle', level: 'expert', diet: 'veg', breakfastReminder: false, onboarded: true },
   days: {
     '2026-10-09': {
-      meals: [{ name: 'Poha', emoji: '🍚', kcal: 300, protein: 8, fibre: 3, cooked: true, at: sampleAt }],
+      meals: [{ name: 'Poha', emoji: '🍚', kcal: 300, protein: 8, fibre: 3, cooked: true, at: sampleAt, dishId: null }],
       exercise: [{ type: 'Walk', minutes: 30, kcal: 120, at: 0 }],
       water: 7,
     },
     '2026-10-10': {
-      meals: [{ name: 'Sandwich', emoji: '🥪', kcal: 380, protein: 14, fibre: 4, cooked: false, at: realAt }],
+      meals: [{ name: 'Sandwich', emoji: '🥪', kcal: 380, protein: 14, fibre: 4, cooked: false, at: realAt, dishId: null }],
       exercise: [{ type: 'Run', minutes: 20, kcal: 200, at: realAt + 5 }],
       water: 3,
     },

@@ -1,4 +1,3 @@
-import { dishes as demoDishes } from '../../data/dishes';
 import type { Dish, Ingredient } from '../../models/research';
 import type { ShoppingItem, ShoppingList } from '../../models/prefs';
 import type { VendorProduct } from './types';
@@ -130,22 +129,13 @@ export function cheapestPer100(options: Pick<VariantOption, 'pricePer100'>[]): n
 }
 
 /**
- * Offline / sample options for an ingredient: the demo's brand list when the
- * name matches one, plus a researched "typical" option from the price estimate.
+ * Offline options for an ingredient: the researched "typical" option from the
+ * price estimate (the demo's made-up brand prices were removed on 22 Oct 2026).
  * Research `links` (ingredient research PATCH: vendor product links) are used
  * when present; otherwise links are null and the app says so.
  */
 export function offlineVariants(item: Pick<ShoppingItem, 'name' | 'ingredientId'>, ingredient: (Pick<Ingredient, 'per100Estimate' | 'standardUnit' | 'name'> & { links?: Partial<VariantOption['links']> }) | undefined): VariantOption[] {
   const out: VariantOption[] = [];
-  const target = normaliseName(item.name);
-  const demo = demoDishes.flatMap((d) => d.ingredients).find((i) => {
-    const n = normaliseName(i.name);
-    return n === target || n.includes(target) || target.includes(n);
-  });
-  for (const b of demo?.brands ?? []) {
-    const grams = packGrams(b.pack);
-    out.push({ label: variantLabel(b.name, b.pack), brand: b.name, pack: b.pack, priceInr: b.price, pricePer100: per100(b.price, grams), source: 'demo', links: { zepto: null, instamart: null, blinkit: null } });
-  }
   const est = ingredient?.per100Estimate;
   if (est) {
     const unit = ingredient?.standardUnit === 'l' ? 'l' : 'kg';

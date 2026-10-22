@@ -5,10 +5,9 @@ import Animated, { FadeInRight, FadeOutLeft } from 'react-native-reanimated';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { Bar, GradientButton, PressableScale, VideoBackground } from '../components/ui';
-import type { Diet } from '../data/dishes';
 import { select, success } from '../lib/haptics';
 import { setReminders } from '../lib/reminders';
-import { GOALS, useStore, type Goal, type Level } from '../lib/store';
+import { GOALS, useStore, type Diet, type Goal, type Level } from '../lib/store';
 import { colors, radius, type } from '../theme';
 
 function Option({ emoji, title, sub, on, onPress }: { emoji: string; title: string; sub?: string; on: boolean; onPress: () => void }) {

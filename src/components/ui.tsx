@@ -223,33 +223,6 @@ export function CountUp({ value, prefix = '', style, duration = 1000 }: { value:
 }
 
 /** Gradient tile with the dish emoji, used wherever a photo would go. */
-export function DishArt({
-  emoji,
-  palette,
-  size = 72,
-  rounded = radius.md,
-  style,
-}: {
-  emoji: string;
-  palette: readonly [string, string];
-  size?: number | '100%';
-  rounded?: number;
-  style?: StyleProp<ViewStyle>;
-}) {
-  const n = typeof size === 'number' ? size : 220;
-  return (
-    <LinearGradient
-      colors={[palette[0], palette[1]]}
-      start={{ x: 0.1, y: 0 }}
-      end={{ x: 0.9, y: 1 }}
-      style={[{ width: size, height: size === '100%' ? undefined : size, borderRadius: rounded, alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }, style]}
-    >
-      <View style={[styles.artGlow, { width: n * 0.9, height: n * 0.9, borderRadius: n }]} />
-      <Text style={{ fontSize: n * 0.5 }}>{emoji}</Text>
-    </LinearGradient>
-  );
-}
-
 export function Chip({ label, active, onPress }: { label: string; active?: boolean; onPress?: () => void }) {
   return (
     <PressableScale onPress={onPress} style={[styles.chip, active && styles.chipOn]} scaleTo={0.92}>
