@@ -3,7 +3,7 @@ import { router, useLocalSearchParams } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useCallback, useRef, useState, type ReactNode } from 'react';
 import { Image, Linking, ScrollView, Share, StyleSheet, Text, View, type LayoutChangeEvent } from 'react-native';
-import Animated, { Extrapolation, interpolate, useAnimatedRef, useAnimatedScrollHandler, useAnimatedStyle, useSharedValue, ZoomIn } from 'react-native-reanimated';
+import Animated, { Extrapolation, FadeInDown, FadeOutDown, interpolate, runOnJS, useAnimatedReaction, useAnimatedRef, useAnimatedScrollHandler, useAnimatedStyle, useSharedValue, ZoomIn } from 'react-native-reanimated';
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { dishArt, PhotoCredit, SelectChip, TagChip, dishPhoto } from '../../components/dishes/parts';
@@ -16,12 +16,8 @@ import { dayKey, useStore } from '../../lib/store';
 import type { Dish } from '../../models/research';
 import { rangeLabel, rupees, rupeesPer10gProtein, savingVsOrder, type DishCost } from '../../services/costToMake';
 import {
-  BALANCE_HIDE_LABEL,
   BALANCE_LABEL,
-  burnWays,
   caloriesSaved,
-  DEFAULT_WEIGHT_KG,
-  durationLabel,
   hasPublishedOrdered,
   microRows,
   nutrientLabel,
@@ -109,6 +105,16 @@ function DishBody({ dish, back }: { dish: Dish; back: () => void }) {
     ],
   }));
   const barStyle = useAnimatedStyle(() => ({ opacity: interpolate(y.value, [HERO - 140, HERO - 60], [0, 1], Extrapolation.CLAMP) }));
+  // The bottom "Cook it yourself" bar only appears once the price card (and its own button) has scrolled away.
+  const priceBottom = useSharedValue(0);
+  const [showCta, setShowCta] = useState(false);
+  useAnimatedReaction(
+    () => priceBottom.value > 0 && y.value > priceBottom.value - 40,
+    (now, before) => {
+      if (now !== before) runOnJS(setShowCta)(now);
+    },
+  );
+  const cookHref = { pathname: '/basket' as const, params: { dishes: dish.id, servings: String(servings) } };
 
   // Innovation (Day 07): "Jump to" chips; each anchor records its y on layout.
   const scrollRef = useAnimatedRef<Animated.ScrollView>();
@@ -163,6 +169,20 @@ function DishBody({ dish, back }: { dish: Dish; back: () => void }) {
             <Pill icon="speedometer" color={colors.accent} value={levelWord(dish.difficulty)} label="level" />
           </View>
           <Text style={styles.perServing}>Per serving, from the researched recipe</Text>
+          <PressableScale onPress={() => router.push({ pathname: '/balance', params: { dish: dish.id } })} style={styles.balance} scaleTo={0.98} accessibilityLabel={BALANCE_LABEL}>
+            <Ionicons name="walk" size={17} color={colors.warm} />
+            <Text style={styles.balanceText}>{BALANCE_LABEL}</Text>
+            <Ionicons name="chevron-forward" size={16} color={colors.muted} />
+          </PressableScale>
+
+          <View
+            onLayout={(e) => {
+              record('price', e);
+              priceBottom.value = sheetY.current + e.nativeEvent.layout.y + e.nativeEvent.layout.height;
+            }}
+          >
+            <MakeOrOrder dish={dish} cost={cost} order={order} servings={servings} setServings={setServings} />
+          </View>
 
           {dish.description ? <Text style={styles.body}>{dish.description}</Text> : null}
           {allergenTags.length ? <Text style={styles.note}>Allergens are worked out from the recipe. Check labels if you have an allergy.</Text> : null}
@@ -176,9 +196,6 @@ function DishBody({ dish, back }: { dish: Dish; back: () => void }) {
             </Text>
           ) : null}
 
-          <View onLayout={(e) => record('price', e)}>
-            <MakeOrOrder dish={dish} cost={cost} order={order} servings={servings} setServings={setServings} />
-          </View>
           <HealthCompare dish={dish} />
 
           <View style={styles.actions}>
@@ -265,7 +282,6 @@ function DishBody({ dish, back }: { dish: Dish; back: () => void }) {
         <Text style={styles.body}>{dish.leftoverRemix ?? 'Coming soon'}</Text>
       </Section>
 
-      <BurnSection dish={dish} />
       <View onLayout={(e) => record('sources', e)}>
         <SourcesSection dish={dish} />
       </View>
@@ -304,9 +320,11 @@ function DishBody({ dish, back }: { dish: Dish; back: () => void }) {
         </View>
       </View>
 
-      <View style={[styles.cta, { paddingBottom: Math.max(insets.bottom, 14) }]}>
-        <GradientButton title={`▶  Cook it step by step (for ${servings})`} onPress={() => router.push({ pathname: '/steps/[id]', params: { id: dish.id, servings: String(servings) } })} />
-      </View>
+      {showCta ? (
+        <Animated.View entering={FadeInDown.duration(220)} exiting={FadeOutDown.duration(180)} style={[styles.cta, { paddingBottom: Math.max(insets.bottom, 14) }]}>
+          <GradientButton title={`🍳  Cook it yourself (for ${servings})`} onPress={() => router.push(cookHref)} />
+        </Animated.View>
+      ) : null}
     </View>
   );
 }
@@ -387,9 +405,12 @@ function MakeOrOrder({ dish, cost, order, servings, setServings }: { dish: Dish;
         ) : (
           <Text style={styles.note}>Ingredient prices for this dish are coming soon.</Text>
         )}
-        <View style={styles.optionBtns}>
-          <GradientButton title="🛒 Shopping list" variant="glass" style={{ flex: 1 }} onPress={() => router.push({ pathname: '/basket', params: { dishes: dish.id, servings: String(servings) } })} />
-        </View>
+        <GradientButton title="🍳  Cook it yourself" style={{ marginTop: 12 }} onPress={() => router.push({ pathname: '/basket', params: { dishes: dish.id, servings: String(servings) } })} />
+        <Text style={styles.flow}>Next: buy the ingredients online or at the shop, then cook step by step.</Text>
+        <PressableScale onPress={() => router.push({ pathname: '/steps/[id]', params: { id: dish.id, servings: String(servings) } })} style={styles.link} scaleTo={0.98} accessibilityLabel="Already have everything? Start cooking">
+          <Text style={styles.linkText}>Already have everything? Start cooking</Text>
+          <Ionicons name="chevron-forward" size={16} color={colors.muted} />
+        </PressableScale>
         {cost ? (
           <PressableScale onPress={() => setOpen((o) => !o)} style={styles.link} scaleTo={0.98} accessibilityLabel={open ? 'Hide cost per ingredient' : 'Show cost per ingredient'}>
             <Text style={styles.linkText}>{open ? 'Hide cost per ingredient' : 'Cost per ingredient'}</Text>
@@ -625,44 +646,6 @@ function EquipmentSection({ dish }: { dish: Dish }) {
  * SPEC-ADDENDA §8: opt-in only. Nothing about burning calories shows until
  * the user asks; then it offers several ways with minutes at their weight.
  */
-function BurnSection({ dish }: { dish: Dish }) {
-  const [open, setOpen] = useState(false);
-  const { bodyWeightKg } = useStore();
-  const kcal = dish.nutritionPerServing.kcal;
-  const ways = open ? burnWays(kcal, bodyWeightKg, researchLinks.met) : [];
-  return (
-    <Section title="Balance it out">
-      <PressableScale onPress={() => setOpen((o) => !o)} style={styles.link} scaleTo={0.98} accessibilityLabel={open ? BALANCE_HIDE_LABEL : BALANCE_LABEL}>
-        <Text style={styles.linkText}>{open ? BALANCE_HIDE_LABEL : BALANCE_LABEL}</Text>
-        <Ionicons name={open ? 'chevron-up' : 'chevron-down'} size={16} color={colors.muted} />
-      </PressableScale>
-      {open ? (
-        ways.length ? (
-          <>
-            {ways.map((w) => (
-              <View key={w.exerciseId} style={styles.burnRow}>
-                <Text style={styles.body}>{w.name}</Text>
-                <Text style={styles.strong}>{durationLabel(w.minutes)}</Text>
-              </View>
-            ))}
-            <Text style={styles.note}>
-              For one serving ({Math.round(kcal ?? 0)} kcal) at {bodyWeightKg ?? DEFAULT_WEIGHT_KG} kg
-              {bodyWeightKg ? '' : ' (the research average; your own weight is used once you log it)'}. Estimates from Compendium MET values. Food is fuel; this is just for curiosity.
-            </Text>
-            <PressableScale onPress={() => router.push('/move')} style={styles.link} scaleTo={0.98} accessibilityLabel="See workouts in the Move tab">
-              <Text style={styles.linkText}>See workouts</Text>
-              <Ionicons name="chevron-forward" size={16} color={colors.muted} />
-            </PressableScale>
-            <Text style={styles.note}>Check with a doctor before starting new exercise.</Text>
-          </>
-        ) : (
-          <Text style={styles.body}>Coming soon</Text>
-        )
-      ) : null}
-    </Section>
-  );
-}
-
 function SourcesSection({ dish }: { dish: Dish }) {
   const [open, setOpen] = useState(false);
   return (
@@ -722,7 +705,9 @@ const styles = StyleSheet.create({
   option: { marginTop: 14, padding: 14, borderRadius: radius.md, backgroundColor: 'rgba(255,255,255,0.04)', borderWidth: 1, borderColor: colors.border },
   optionHead: { flexDirection: 'row', alignItems: 'baseline', justifyContent: 'space-between', gap: 8, marginBottom: 8 },
   optionTitle: { color: colors.text, fontSize: 15, fontWeight: '800', flexShrink: 1 },
-  optionBtns: { flexDirection: 'row', gap: 10, marginTop: 12 },
+  flow: { color: colors.muted, fontSize: 12, lineHeight: 17, marginTop: 8, textAlign: 'center' },
+  balance: { flexDirection: 'row', alignItems: 'center', gap: 8, marginTop: 12, paddingHorizontal: 14, minHeight: 46, borderRadius: radius.pill, backgroundColor: 'rgba(255,138,61,0.10)', borderWidth: 1, borderColor: 'rgba(255,138,61,0.28)' },
+  balanceText: { color: colors.text, fontWeight: '800', fontSize: 14, flex: 1 },
   price: { fontSize: 24, fontWeight: '900', letterSpacing: -0.5 },
   verdict: { marginTop: 14, padding: 14, borderRadius: radius.md },
   verdictText: { color: colors.text, fontWeight: '800', fontSize: 15, lineHeight: 21 },

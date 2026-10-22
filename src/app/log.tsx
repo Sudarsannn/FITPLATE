@@ -21,7 +21,7 @@ const num = (s: string) => {
 };
 
 export default function Log() {
-  const params = useLocalSearchParams<{ tab?: Tab; exercise?: string }>();
+  const params = useLocalSearchParams<{ tab?: Tab; exercise?: string; minutes?: string }>();
   const [tab, setTab] = useState<Tab>(params.tab ?? (params.exercise ? 'exercise' : 'meal'));
   const { logDish, logCustomMeal, logWorkout, addWater, today, profile, bodyWeightKg } = useStore();
 
@@ -33,7 +33,7 @@ export default function Log() {
 
   const exercises = useMemo(() => researchExercises.filter((e) => e.met != null), []);
   const [ex, setEx] = useState<Exercise | undefined>(() => exercises.find((e) => e.id === params.exercise) ?? exercises[0]);
-  const [mins, setMins] = useState(() => (ex ? suggestedMinutes(ex) : 20));
+  const [mins, setMins] = useState(() => Math.max(5, Number(params.minutes) || (ex ? suggestedMinutes(ex) : 20)));
 
   const ranked = useMemo(() => recommend(profile), [profile]);
   const results = useMemo(() => {

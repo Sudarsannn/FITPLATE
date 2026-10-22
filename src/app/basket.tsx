@@ -121,7 +121,20 @@ export default function BasketScreen() {
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: colors.bg }}>
       <ScreenTop title="Shopping list" subtitle={list.title} fallback="/cook" />
-      <ScrollView contentContainerStyle={{ padding: 18, paddingBottom: 140 }}>
+      <ScrollView contentContainerStyle={{ padding: 18, paddingBottom: 190 }}>
+        {dishes.length ? (
+          <View style={s.flow} accessibilityLabel="Step 1 of 2: buy the ingredients. Step 2: cook step by step">
+            <View style={[s.flowDot, { backgroundColor: colors.accent }]}>
+              <Text style={s.flowN}>1</Text>
+            </View>
+            <Text style={[s.flowText, { color: colors.text }]}>Buy</Text>
+            <View style={s.flowLine} />
+            <View style={s.flowDot}>
+              <Text style={[s.flowN, { color: colors.muted }]}>2</Text>
+            </View>
+            <Text style={s.flowText}>Cook step by step</Text>
+          </View>
+        ) : null}
         {single && servings ? (
           <View style={s.servings}>
             <Text style={{ color: colors.text, fontWeight: '800', flex: 1 }}>Cooking for</Text>
@@ -191,12 +204,10 @@ export default function BasketScreen() {
         {tab === 'online' ? (
           <>
             <GradientButton title={VENDORS_PAUSED ? `Buy online (${included.length})` : `Add to basket & checkout (${included.length})`} onPress={() => setSheet('vendor')} disabled={included.length === 0} />
-            <Pressable onPress={() => continueToCook('self')} style={s.plain} accessibilityRole="button">
-              <Text style={s.plainText}>Bought them yourself? Continue</Text>
-            </Pressable>
+            <GradientButton title="✓  I’ve bought them. Start cooking" variant="glass" onPress={() => continueToCook('self')} style={{ marginTop: 10 }} />
           </>
         ) : (
-          <GradientButton title={ticked === list.items.length ? 'Got everything. Let’s cook 🔥' : 'Continue'} onPress={() => continueToCook('self')} />
+          <GradientButton title={ticked === list.items.length ? 'Got everything. Let’s cook 🔥' : '✓  I’ve bought them. Start cooking'} onPress={() => continueToCook('self')} />
         )}
       </View>
 
@@ -451,6 +462,11 @@ const s = StyleSheet.create({
   name: { color: colors.text, fontWeight: '800', fontSize: 15 },
   options: { marginTop: 10, marginLeft: 38, gap: 4 },
   option: { flexDirection: 'row', alignItems: 'center', gap: 10, paddingVertical: 8, minHeight: 44 },
+  flow: { flexDirection: 'row', alignItems: 'center', gap: 8, marginBottom: 14 },
+  flowDot: { width: 22, height: 22, borderRadius: 11, backgroundColor: colors.cardAlt, alignItems: 'center', justifyContent: 'center' },
+  flowN: { color: '#06210F', fontWeight: '900', fontSize: 12 },
+  flowText: { color: colors.muted, fontWeight: '800', fontSize: 13 },
+  flowLine: { flex: 1, height: 2, borderRadius: 1, backgroundColor: colors.border },
   footer: { position: 'absolute', left: 0, right: 0, bottom: 0, padding: 16, paddingBottom: 24, backgroundColor: colors.bgElevated, borderTopWidth: 1, borderColor: colors.border },
   plain: { minHeight: 44, alignItems: 'center', justifyContent: 'center', marginTop: 6 },
   plainText: { color: colors.muted, fontWeight: '700', textDecorationLine: 'underline' },

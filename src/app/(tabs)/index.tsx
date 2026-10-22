@@ -6,11 +6,12 @@ import Animated, { useAnimatedScrollHandler, useAnimatedStyle, useSharedValue, i
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { DishCardTall } from '../../components/DishCard';
-import { NutritionCard } from '../../components/NutritionCard';
+import { MacroLines, MicroSummary } from '../../components/TodaySummary';
 import { CountUp, FadeIn, Glass, Glow, PressableScale, Ring, SectionHeader } from '../../components/ui';
 import { dishLibraryHref, profileHref } from '../../config/tabs';
 import { select, success } from '../../lib/haptics';
 import { dayTotals, FIBRE_TARGET, GOALS, recommend, useStore, WATER_TARGET } from '../../lib/store';
+import { BALANCE_LABEL } from '../../services/dishDetail';
 import { colors, gradients, radius, type } from '../../theme';
 
 const greeting = () => {
@@ -26,6 +27,16 @@ function QuickAction({ icon, label, tint, onPress }: { icon: keyof typeof Ionico
       </View>
       <Text style={styles.qaLabel}>{label}</Text>
     </PressableScale>
+  );
+}
+
+function MiniStat({ icon, color, label, value }: { icon: keyof typeof Ionicons.glyphMap; color: string; label: string; value: number }) {
+  return (
+    <View style={styles.mini}>
+      <Ionicons name={icon} size={13} color={color} />
+      <Text style={styles.miniVal}>{value.toLocaleString('en-IN')}</Text>
+      <Text style={styles.miniLabel}>{label}</Text>
+    </View>
   );
 }
 
@@ -79,31 +90,30 @@ export default function Today() {
           <FadeIn i={1}>
             <Glass style={{ marginTop: 18 }}>
               <View style={{ flexDirection: 'row', alignItems: 'center', gap: 18 }}>
-                <Ring size={136} stroke={13} progress={t.kcalIn / (goal.kcal + t.kcalOut)}>
+                <Ring size={128} stroke={12} progress={t.kcalIn / (goal.kcal + t.kcalOut)}>
                   <CountUp value={Math.max(0, left)} style={styles.ringNum} />
-                  <Text style={styles.ringLabel}>kcal left</Text>
+                  <Text style={styles.ringLabel}>{left < 0 ? 'kcal over' : 'kcal left'}</Text>
                 </Ring>
-                <View style={{ flex: 1, gap: 12 }}>
-                  <View style={styles.kv}>
-                    <Ionicons name="restaurant" size={15} color={colors.accent} />
-                    <Text style={styles.kvLabel}>Eaten</Text>
-                    <Text style={styles.kvVal}>{t.kcalIn}</Text>
-                  </View>
-                  <View style={styles.kv}>
-                    <Ionicons name="flame" size={15} color={colors.warm} />
-                    <Text style={styles.kvLabel}>Burnt</Text>
-                    <Text style={styles.kvVal}>{t.kcalOut}</Text>
-                  </View>
-                  <View style={styles.kv}>
-                    <Ionicons name="flag" size={15} color={colors.blue} />
-                    <Text style={styles.kvLabel}>Goal</Text>
-                    <Text style={styles.kvVal}>{goal.kcal}</Text>
-                  </View>
+                <View style={{ flex: 1, minWidth: 0 }}>
+                  <MacroLines today={today} goal={goal} fibreTarget={FIBRE_TARGET} />
                 </View>
               </View>
+              <View style={styles.kcalRow}>
+                <MiniStat icon="restaurant" color={colors.accent} label="Eaten" value={t.kcalIn} />
+                <PressableScale onPress={() => router.push('/move')} scaleTo={0.95} style={{ flex: 1 }} accessibilityLabel="Burnt. Open Move">
+                  <MiniStat icon="flame" color={colors.warm} label="Burnt" value={t.kcalOut} />
+                </PressableScale>
+                <MiniStat icon="flag" color={colors.blue} label="Goal" value={goal.kcal} />
+              </View>
+              {left < 0 ? (
+                <PressableScale onPress={() => router.push({ pathname: '/balance', params: { kcal: String(-left) } })} style={styles.balance} scaleTo={0.98} accessibilityLabel={BALANCE_LABEL}>
+                  <Ionicons name="walk" size={16} color={colors.warm} />
+                  <Text style={styles.balanceText}>{BALANCE_LABEL}</Text>
+                  <Ionicons name="chevron-forward" size={15} color={colors.muted} />
+                </PressableScale>
+              ) : null}
               <View style={styles.divider} />
-              <Text style={[type.h2, { color: colors.text }]}>Today&apos;s nutrition</Text>
-              <NutritionCard today={today} goal={goal} fibreTarget={FIBRE_TARGET} sex={sex} />
+              <MicroSummary today={today} sex={sex} profile={profile} />
             </Glass>
           </FadeIn>
 
@@ -132,7 +142,7 @@ export default function Today() {
           <FadeIn i={3}>
             <View style={styles.qaRow}>
               <QuickAction icon="fast-food" label="Log meal" tint={colors.warm} onPress={() => router.push({ pathname: '/log', params: { tab: 'meal' } })} />
-              <QuickAction icon="barbell" label="Workout" tint={colors.violet} onPress={() => router.push({ pathname: '/log', params: { tab: 'exercise' } })} />
+              <QuickAction icon="barbell" label="Workout" tint={colors.violet} onPress={() => router.push('/move')} />
               <QuickAction icon="cart" label="Groceries" tint={colors.accent} onPress={() => router.push('/basket')} />
               <QuickAction icon="search" label="Find dish" tint={colors.blue} onPress={() => router.push(dishLibraryHref())} />
             </View>
@@ -239,9 +249,12 @@ const styles = StyleSheet.create({
   avatarImg: { width: 36, height: 36, borderRadius: 18 },
   ringNum: { color: colors.text, fontSize: 28, fontWeight: '900', letterSpacing: -0.8 },
   ringLabel: { color: colors.muted, fontSize: 11.5, fontWeight: '600' },
-  kv: { flexDirection: 'row', alignItems: 'center', gap: 8 },
-  kvLabel: { color: colors.muted, flex: 1, fontSize: 14 },
-  kvVal: { color: colors.text, fontWeight: '800', fontSize: 16 },
+  kcalRow: { flexDirection: 'row', gap: 8, marginTop: 14 },
+  mini: { flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 5, paddingVertical: 8, borderRadius: radius.sm, backgroundColor: colors.card },
+  miniVal: { color: colors.text, fontWeight: '900', fontSize: 13.5 },
+  miniLabel: { color: colors.muted, fontSize: 11.5, fontWeight: '600' },
+  balance: { flexDirection: 'row', alignItems: 'center', gap: 8, marginTop: 10, paddingHorizontal: 12, minHeight: 42, borderRadius: radius.pill, backgroundColor: 'rgba(255,138,61,0.10)', borderWidth: 1, borderColor: 'rgba(255,138,61,0.28)' },
+  balanceText: { color: colors.text, fontWeight: '800', fontSize: 13.5, flex: 1 },
   divider: { height: 1, backgroundColor: colors.border, marginVertical: 16 },
   money: { borderRadius: radius.lg, padding: 18, flexDirection: 'row', alignItems: 'center' },
   moneyNum: { color: '#1a0a00', fontSize: 36, fontWeight: '900', letterSpacing: -1, marginTop: 2 },

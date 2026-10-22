@@ -11,6 +11,7 @@ import { success } from '../../lib/haptics';
 import { useStore } from '../../lib/store';
 import type { CookCompletion } from '../../models/prefs';
 import type { Dish } from '../../models/research';
+import { BALANCE_LABEL } from '../../services/dishDetail';
 import { headlineOrderPrice } from '../../services/dishLibrary';
 import { dishCost } from '../../services/vendors';
 import { colors, radius, type } from '../../theme';
@@ -162,6 +163,9 @@ function Finished({ dish, servings }: { dish: Dish; servings: number }) {
           </Section>
         ) : null}
         <GradientButton title="Back to Today" onPress={() => router.replace('/(tabs)')} style={{ marginTop: 18 }} />
+        <Pressable onPress={() => router.push({ pathname: '/balance', params: { dish: dish.id } })} style={{ minHeight: 44, alignItems: 'center', justifyContent: 'center', marginTop: 6 }} accessibilityRole="button">
+          <Text style={{ color: colors.muted, fontWeight: '700' }}>{BALANCE_LABEL}</Text>
+        </Pressable>
       </ScrollView>
     </SafeAreaView>
   );

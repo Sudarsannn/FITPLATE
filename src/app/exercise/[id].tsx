@@ -66,6 +66,10 @@ function ExerciseBody({ e }: { e: Exercise }) {
         </View>
       ) : null}
       {p?.tempo ? <Text style={styles.note}>Tempo: {p.tempo}</Text> : null}
+      <View style={{ flexDirection: 'row', gap: 10, marginTop: 14 }}>
+        <GradientButton title="▶  Start workout" style={{ flex: 1 }} onPress={() => router.push({ pathname: '/workout/[id]', params: { id: e.id } })} />
+        <GradientButton title="Log it" variant="glass" style={{ flex: 0.6 }} onPress={() => router.push({ pathname: '/log', params: { tab: 'exercise', exercise: e.id } })} />
+      </View>
 
       <Card title="Works">
         <Text style={styles.body}>{e.musclesPrimary.map(clean).map(cap).join(', ') || 'Coming soon'}</Text>
@@ -156,7 +160,8 @@ function ExerciseBody({ e }: { e: Exercise }) {
         Calories are estimates (Compendium MET {e.met ?? '–'} × {bodyWeightKg ?? 70} kg{bodyWeightKg ? '' : ', until you add your weight'}). Check with a doctor before starting new exercise, especially with a health condition, pregnancy or an injury.
       </Text>
 
-      <GradientButton title={`Log ${shortExerciseName(e.name)}`} variant="warm" style={{ marginTop: 16 }} onPress={() => router.push({ pathname: '/log', params: { tab: 'exercise', exercise: e.id } })} />
+      <GradientButton title="▶  Start workout" style={{ marginTop: 16 }} onPress={() => router.push({ pathname: '/workout/[id]', params: { id: e.id } })} />
+      <GradientButton title={`Log ${shortExerciseName(e.name)}`} variant="glass" style={{ marginTop: 10 }} onPress={() => router.push({ pathname: '/log', params: { tab: 'exercise', exercise: e.id } })} />
     </ScrollView>
   );
 }

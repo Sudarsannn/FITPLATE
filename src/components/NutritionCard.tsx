@@ -137,21 +137,18 @@ export function NutritionCard({
           <Chip label="Minerals" active={tab === 'mineral'} onPress={() => setTab('mineral')} />
         </View>
       </View>
-      {!loggedDishes ? (
-        <Text style={styles.empty}>Log a FitPlate dish to fill these bars. Each dish carries its researched vitamin and mineral estimate.</Text>
+      {!loggedDishes ? <Text style={styles.empty}>Nothing to count yet: these fill as you log FitPlate dishes, because each one carries researched vitamin and mineral estimates. Meals you type in yourself only add calories and protein.</Text> : null}
+      {list.length ? (
+        list.map((b) => <MicroRow key={b.id} bar={b} />)
       ) : (
-        <>
-          {list.map((b) => (
-            <MicroRow key={b.id} bar={b} />
-          ))}
-          {shown.length > 6 ? (
-            <Text style={styles.more} onPress={() => setAll((v) => !v)}>
-              {all ? 'Show fewer' : `Show all ${shown.length}`}
-            </Text>
-          ) : null}
-          {tab === 'mineral' ? <Text style={styles.note}>Mineral targets are still being researched, so these show amounts only.</Text> : null}
-        </>
+        <Text style={styles.note}>{tab === 'mineral' ? 'Mineral research is still coming in, so nothing to show here yet.' : 'Coming soon'}</Text>
       )}
+      {shown.length > 6 ? (
+        <Text style={styles.more} onPress={() => setAll((v) => !v)}>
+          {all ? 'Show fewer' : `Show all ${shown.length}`}
+        </Text>
+      ) : null}
+      {tab === 'mineral' && list.length ? <Text style={styles.note}>Mineral targets are still being researched, so these show amounts only.</Text> : null}
       <View style={styles.legendRow}>
         {(Object.keys(BAND_COLOR) as Band[]).map((k) => (
           <View key={k} style={styles.legendItem}>
@@ -187,7 +184,7 @@ const styles = StyleSheet.create({
   micro: { flexDirection: 'row', alignItems: 'center', gap: 10, paddingVertical: 5 },
   microLabel: { width: 128, color: colors.muted, fontSize: 12.5, fontWeight: '600' },
   microVal: { width: 64, textAlign: 'right', color: colors.text, fontSize: 12.5, fontWeight: '800' },
-  empty: { color: colors.muted, fontSize: 12.5, lineHeight: 18 },
+  empty: { color: colors.muted, fontSize: 12.5, lineHeight: 18, marginBottom: 6, padding: 10, borderRadius: radius.sm, backgroundColor: colors.card },
   more: { color: colors.accent, fontWeight: '800', fontSize: 12.5, marginTop: 4 },
   note: { color: colors.faint, fontSize: 11.5, lineHeight: 16, marginTop: 8 },
 });
