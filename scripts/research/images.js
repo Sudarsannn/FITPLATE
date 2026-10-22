@@ -81,14 +81,33 @@ function loadCandidates() {
   return C.pickCandidates(fromFiles, fromJson);
 }
 
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+/** Wikimedia rate-limits shared cloud IPs (HTTP 429, dropped connections): back off and retry. */
+async function fetchRetry(url, headers) {
+  for (let attempt = 0; ; attempt++) {
+    let res;
+    try {
+      res = await fetch(url, { headers });
+    } catch (e) {
+      if (attempt >= 10) throw e;
+      await sleep(Math.min(2 ** attempt * 1000, 20000));
+      continue;
+    }
+    if ((res.status !== 429 && res.status < 500) || attempt >= 10) return res;
+    const wait = Math.max(Number(res.headers.get('retry-after')) || 1, 2 ** attempt) * 1000;
+    await sleep(Math.min(wait, 20000));
+  }
+}
+
 async function getJson(url) {
-  const res = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'application/json' } });
+  const res = await fetchRetry(url, { 'User-Agent': UA, Accept: 'application/json' });
   if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
   return res.json();
 }
 
 async function download(url, file) {
-  const res = await fetch(url, { headers: { 'User-Agent': UA } });
+  const res = await fetchRetry(url, { 'User-Agent': UA });
   if (!res.ok) throw new Error(`HTTP ${res.status} downloading ${url}`);
   const type = res.headers.get('content-type') || '';
   if (!/^image\//.test(type)) throw new Error(`not an image (${type}) at ${url}`);
@@ -109,7 +128,7 @@ async function resolveCommons(fileName) {
   const title = `File:${fileName}`;
   const url =
     'https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&prop=imageinfo' +
-    `&iiprop=url|extmetadata|mime|size&iiurlwidth=1000&titles=${encodeURIComponent(title)}`;
+    `&iiprop=url|extmetadata|mime|size&iiurlwidth=960&titles=${encodeURIComponent(title)}`;
   const data = await getJson(url);
   const page = data.query && data.query.pages && data.query.pages[0];
   if (!page || page.missing || !page.imageinfo) throw new Error(`no such Commons file: ${fileName}`);
@@ -119,9 +138,12 @@ async function resolveCommons(fileName) {
   const author = stripHtml(meta.Artist && meta.Artist.value) || stripHtml(meta.Credit && meta.Credit.value);
   if (!C.licenceAllowed(licence)) throw new Error(`licence not allowed: ${licence || 'unknown'}`);
   if (!author) throw new Error('no author on Commons');
+  if (/^https?:\/\//i.test(author)) throw new Error(`author is only a web address (${author}); provenance unclear`);
   if (info.width && info.width < 400) throw new Error(`too small (${info.width}px)`);
   return {
-    imageUrl: info.thumburl || info.url,
+    // Commons hands out thumb.wikimedia.org links; the same path is served by
+    // upload.wikimedia.org, the host the cloud environment allows.
+    imageUrl: (info.thumburl || info.url).replace(/^https:\/\/thumb\.wikimedia\.org\//, 'https://upload.wikimedia.org/').replace(/\?.*$/, ''),
     title: stripHtml(meta.ObjectName && meta.ObjectName.value) || fileName.replace(/\.[a-z]+$/i, ''),
     author,
     licence,
@@ -190,13 +212,14 @@ async function main() {
       if (!have) report.noCandidate.push(d.id);
       continue;
     }
-    const key = C.candidateKey(c);
-    if (have && have.candidate === key && fs.existsSync(path.join(ASSETS, have.file))) {
+    // Try the pick, then its Commons alternates.
+    const tries = [c, ...c.alternates.map((a) => ({ ...c, site: C.siteOf(a) || c.site, file: C.commonsFileName(a) || a, pageUrl: /^https?:/.test(a) ? a : c.pageUrl }))];
+    // Keep a stored photo that is still one of this candidate's options (an
+    // alternate used because the pick failed the licence check stays put).
+    if (have && tries.some((t) => C.candidateKey(t) === have.candidate) && fs.existsSync(path.join(ASSETS, have.file))) {
       report.kept.push(d.id);
       continue;
     }
-    // Try the pick, then its Commons alternates.
-    const tries = [c, ...c.alternates.map((a) => ({ ...c, site: C.siteOf(a) || c.site, file: C.commonsFileName(a) || a, pageUrl: /^https?:/.test(a) ? a : c.pageUrl }))];
     const errors = [];
     for (const t of tries) {
       try {
