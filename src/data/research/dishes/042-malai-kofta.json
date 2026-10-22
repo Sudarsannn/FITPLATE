@@ -70,7 +70,7 @@
       "householdMeasure": "4 raisins"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "cooking-oil-refined-sunflower-groundnut",
       "name": "Sunflower or groundnut oil, for deep-frying",
       "quantity": 250,
       "unit": "ml",
@@ -98,7 +98,7 @@
       "householdMeasure": "¼ cup"
     },
     {
-      "ingredientId": null,
+      "ingredientId": "cooking-oil-refined-sunflower-groundnut",
       "name": "Sunflower or groundnut oil",
       "quantity": 5,
       "unit": "ml",
@@ -594,6 +594,7 @@
   },
   "microNutrientsEstimate": {
     "values": {
+      "biotin": 8.4,
       "calcium": 1.2,
       "folate": 0.1,
       "iron": 0.1,
@@ -601,12 +602,15 @@
       "potassium": 15.1,
       "sodium": 0.8,
       "vitamin-a": 19.1,
+      "vitamin-b12": 0.2,
       "vitamin-b6": 0,
       "vitamin-c": 28.4,
+      "vitamin-d": 9,
+      "vitamin-e": 104.6,
       "vitamin-k": 8.2,
       "zinc": 0
     },
-    "coveragePct": 18,
+    "coveragePct": 61,
     "basis": "partial estimate from ingredient quantities"
   },
   "asOrdered": {

@@ -149,11 +149,18 @@ export function splitEquipment(text: string): { item: string; note: string | nul
 
 // ---------------------------------------------------------------- burn-off (opt-in)
 
+/**
+ * Review 2026-10-21 FIX 2: one neutral name for the opt-in button, from
+ * SPEC-ADDENDA §8. Never the fitness file's "Check how to burn these calories".
+ */
+export const BALANCE_LABEL = 'See ways to balance this';
+export const BALANCE_HIDE_LABEL = 'Hide ways to balance this';
+
 export type MetEntry = { exerciseId: string; name: string; met: number };
 export type BurnWay = { exerciseId: string; name: string; minutes: number };
 
 /**
- * SPEC-ADDENDA §8: only shown after the user taps "How could I burn this?".
+ * SPEC-ADDENDA §8: only shown after the user taps BALANCE_LABEL.
  * Minutes = kcal ÷ (MET × kg) × 60, using the research's Compendium METs.
  * Light stretches (MET under 3) are left out: they would need hours and read
  * as a punishment, which the tasty-first rule forbids.

@@ -61,6 +61,14 @@ import item_057_tomato_rice from './057-tomato-rice.json';
 import item_058_khaman_dhokla from './058-khaman-dhokla.json';
 import item_059_chicken_kathi_roll from './059-chicken-kathi-roll.json';
 import item_060_aloo_matar from './060-aloo-matar.json';
+import item_061_appam_with_veg_stew from './061-appam-with-veg-stew.json';
+import item_063_shahi_paneer from './063-shahi-paneer.json';
+import item_064_schezwan_noodles from './064-schezwan-noodles.json';
+import item_065_puri_bhaji from './065-puri-bhaji.json';
+import item_066_sprouts_chaat from './066-sprouts-chaat.json';
+import item_067_mix_veg_curry from './067-mix-veg-curry.json';
+import item_069_paneer_bhurji from './069-paneer-bhurji.json';
+import item_070_egg_fried_rice from './070-egg-fried-rice.json';
 
 export const items: Dish[] = [
   item_001_poha as unknown as Dish,
@@ -123,4 +131,12 @@ export const items: Dish[] = [
   item_058_khaman_dhokla as unknown as Dish,
   item_059_chicken_kathi_roll as unknown as Dish,
   item_060_aloo_matar as unknown as Dish,
+  item_061_appam_with_veg_stew as unknown as Dish,
+  item_063_shahi_paneer as unknown as Dish,
+  item_064_schezwan_noodles as unknown as Dish,
+  item_065_puri_bhaji as unknown as Dish,
+  item_066_sprouts_chaat as unknown as Dish,
+  item_067_mix_veg_curry as unknown as Dish,
+  item_069_paneer_bhurji as unknown as Dish,
+  item_070_egg_fried_rice as unknown as Dish,
 ];

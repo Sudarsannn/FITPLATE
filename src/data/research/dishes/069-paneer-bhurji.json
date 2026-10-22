@@ -1,0 +1,613 @@
+{
+  "id": "069-paneer-bhurji",
+  "number": 69,
+  "name": "Paneer Bhurji",
+  "cuisine": null,
+  "dietType": "veg",
+  "mealType": [
+    "breakfast",
+    "lunch",
+    "dinner"
+  ],
+  "difficulty": "Beginner",
+  "prepMin": 8,
+  "cookMin": 12,
+  "servings": 1,
+  "ingredients": [
+    {
+      "ingredientId": "paneer",
+      "name": "Paneer (cottage cheese), full-fat",
+      "quantity": 100,
+      "unit": "g",
+      "householdMeasure": "a fifth of a 500 g block; about ¾ cup when crumbled"
+    },
+    {
+      "ingredientId": "onion",
+      "name": "Onion (pyaz/kanda)",
+      "quantity": 50,
+      "unit": "g",
+      "householdMeasure": "1 small onion, finely chopped (about ⅓ cup)"
+    },
+    {
+      "ingredientId": "tomato",
+      "name": "Tomato (tamatar)",
+      "quantity": 60,
+      "unit": "g",
+      "householdMeasure": "1 small ripe tomato, finely chopped (about ⅓ cup)"
+    },
+    {
+      "ingredientId": "green-chilli",
+      "name": "Green chilli (hari mirch)",
+      "quantity": 2,
+      "unit": "g",
+      "householdMeasure": "½–1 small chilli, finely chopped"
+    },
+    {
+      "ingredientId": "ginger",
+      "name": "Ginger (adrak)",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "½-inch piece, finely chopped or grated"
+    },
+    {
+      "ingredientId": "garlic",
+      "name": "Garlic (lahsun)",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "1 large or 2 small cloves, finely chopped"
+    },
+    {
+      "ingredientId": "cooking-oil-refined-sunflower-groundnut",
+      "name": "Sunflower oil (or other neutral oil)",
+      "quantity": 5,
+      "unit": "g",
+      "householdMeasure": "1 tsp"
+    },
+    {
+      "ingredientId": "butter-salted",
+      "name": "Butter (makkhan), salted or unsalted",
+      "quantity": 5,
+      "unit": "g",
+      "householdMeasure": "1 tsp"
+    },
+    {
+      "ingredientId": "cumin-seeds",
+      "name": "Cumin seeds (jeera)",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "¼ tsp"
+    },
+    {
+      "ingredientId": "turmeric-powder",
+      "name": "Turmeric powder (haldi)",
+      "quantity": 0.3,
+      "unit": "g",
+      "householdMeasure": "a large pinch (about ⅛ tsp)"
+    },
+    {
+      "ingredientId": "kashmiri-red-chilli-powder",
+      "name": "Kashmiri red chilli powder (lal mirch)",
+      "quantity": 1,
+      "unit": "g",
+      "householdMeasure": "½ tsp"
+    },
+    {
+      "ingredientId": "coriander-powder",
+      "name": "Coriander powder (dhania powder)",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "¼ tsp"
+    },
+    {
+      "ingredientId": "garam-masala",
+      "name": "Garam masala",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "¼ tsp"
+    },
+    {
+      "ingredientId": "dried-fenugreek-leaves",
+      "name": "Dried fenugreek leaves (kasuri methi)",
+      "quantity": 0.3,
+      "unit": "g",
+      "householdMeasure": "¼ tsp, crushed"
+    },
+    {
+      "ingredientId": "salt",
+      "name": "Salt (namak)",
+      "quantity": 1.5,
+      "unit": "g",
+      "householdMeasure": "¼ tsp"
+    },
+    {
+      "ingredientId": "milk-toned",
+      "name": "Milk (doodh), toned",
+      "quantity": 15,
+      "unit": "ml",
+      "householdMeasure": "1 tbsp"
+    },
+    {
+      "ingredientId": "coriander-leaves",
+      "name": "Fresh coriander leaves (hara dhania)",
+      "quantity": 2,
+      "unit": "g",
+      "householdMeasure": "1 tsp, chopped"
+    }
+  ],
+  "equipment": [
+    "Chopping board and knife",
+    "Plate or bowl, to crumble the paneer by hand (or a box grater)",
+    "Kadai or 8-inch non-stick or heavy pan",
+    "Wooden spoon or flat spatula",
+    "Measuring spoons (a normal teaspoon is fine)"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "title": "Crumble the paneer",
+      "text": "Break 100 g paneer into a plate and crumble it with your fingers into small, uneven bits (about pea size), or grate it on the large holes of a grater.",
+      "timerSec": 60,
+      "tip": "Hard fridge paneer crumbles poorly; soak the block in warm water for 10 min first, then pat dry.",
+      "visualCue": "Coarse, uneven crumbs, no big lumps; not a smooth paste",
+      "cameraCheck": "The plate of crumbled paneer",
+      "videoShot": "Fingers crumbling a paneer block onto a plate."
+    },
+    {
+      "n": 2,
+      "title": "Chop the onion",
+      "text": "Finely chop 1 small onion (50 g).",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Small even pieces, about ⅓ cup",
+      "cameraCheck": "The chopped onion",
+      "videoShot": "A knife chopping onion finely."
+    },
+    {
+      "n": 3,
+      "title": "Chop the tomato",
+      "text": "Finely chop 1 small ripe tomato (60 g).",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "Small red pieces with their juice, about ⅓ cup",
+      "cameraCheck": "The chopped tomato",
+      "videoShot": "Tomato diced on the board."
+    },
+    {
+      "n": 4,
+      "title": "Chop ginger, garlic and chilli",
+      "text": "Finely chop ½-inch ginger (3 g), 1 large garlic clove (3 g) and ½–1 green chilli (2 g).",
+      "timerSec": 60,
+      "tip": "1 tsp ready ginger-garlic paste works instead (most recipe sites use paste).",
+      "visualCue": "Three small heaps of fine pieces",
+      "cameraCheck": "The three heaps on the board",
+      "videoShot": "Knife mincing garlic and ginger."
+    },
+    {
+      "n": 5,
+      "title": "Chop the coriander",
+      "text": "Chop 1 tsp (2 g) fresh coriander leaves.",
+      "timerSec": 20,
+      "tip": null,
+      "visualCue": "Fine green flecks",
+      "cameraCheck": "The chopped coriander",
+      "videoShot": "Coriander leaves chopped."
+    },
+    {
+      "n": 6,
+      "title": "Heat the fat",
+      "text": "Put the kadai on medium heat with 1 tsp (5 g) oil and 1 tsp (5 g) butter.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Butter melted and foaming lightly",
+      "cameraCheck": "The fat in the pan",
+      "videoShot": "Butter melting into oil."
+    },
+    {
+      "n": 7,
+      "title": "Temper the cumin",
+      "text": "Add ¼ tsp cumin seeds.",
+      "timerSec": 15,
+      "tip": "If the cumin blackens at once, the pan is too hot; lower the heat.",
+      "visualCue": "Seeds sizzle and turn one shade darker; nutty smell",
+      "cameraCheck": "The sizzling cumin",
+      "videoShot": "Cumin seeds crackling in butter."
+    },
+    {
+      "n": 8,
+      "title": "Cook the onion",
+      "text": "Add the chopped onion and stir now and then on medium heat.",
+      "timerSec": 180,
+      "tip": null,
+      "visualCue": "Soft and translucent with light golden edges; sweet smell",
+      "cameraCheck": "The softened onion",
+      "videoShot": "Onion stirred until translucent."
+    },
+    {
+      "n": 9,
+      "title": "Add ginger, garlic and chilli",
+      "text": "Add the chopped ginger, garlic and green chilli; stir.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Raw garlic smell gone; garlic just turning pale gold",
+      "cameraCheck": "The pan after stirring",
+      "videoShot": "Ginger and garlic tipped onto the onions."
+    },
+    {
+      "n": 10,
+      "title": "Add the powders",
+      "text": "Lower the heat and add a large pinch of turmeric, ½ tsp Kashmiri chilli powder and ¼ tsp coriander powder. Stir.",
+      "timerSec": 20,
+      "tip": "Add 1 tsp water if the powders start to stick.",
+      "visualCue": "Onions turn orange-red; spices smell toasted, not burnt",
+      "cameraCheck": "The orange onion mix",
+      "videoShot": "Powders sprinkled and stirred in."
+    },
+    {
+      "n": 11,
+      "title": "Add the tomato and salt",
+      "text": "Add the chopped tomato and ¼ tsp (1.5 g) salt; stir and turn the heat back to medium.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "Tomato coated in the masala",
+      "cameraCheck": "The tomato in the pan",
+      "videoShot": "Tomato added to the masala."
+    },
+    {
+      "n": 12,
+      "title": "Cook the tomato down",
+      "text": "Cook, stirring and pressing the tomato with the spoon.",
+      "timerSec": 180,
+      "tip": null,
+      "visualCue": "Tomato soft and mushy, masala thick, a little fat shows at the edges",
+      "cameraCheck": "The edge of the masala showing fat",
+      "videoShot": "Spoon mashing soft tomato."
+    },
+    {
+      "n": 13,
+      "title": "Add the paneer",
+      "text": "Tip in the crumbled paneer and mix gently so every crumb is coated.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "Paneer evenly orange-yellow, no white patches",
+      "cameraCheck": "The mixed bhurji",
+      "videoShot": "Paneer crumbs folded into red masala."
+    },
+    {
+      "n": 14,
+      "title": "Add milk, garam masala and kasuri methi",
+      "text": "Sprinkle 1 tbsp (15 ml) milk, ¼ tsp garam masala, and crush ¼ tsp kasuri methi between your palms over the pan. Mix.",
+      "timerSec": 20,
+      "tip": null,
+      "visualCue": "Bhurji looks moist, not dry; warm, sweet smell",
+      "cameraCheck": "The kasuri methi flecks on the bhurji",
+      "videoShot": "Palms rubbing kasuri methi over the pan."
+    },
+    {
+      "n": 15,
+      "title": "Heat through briefly",
+      "text": "Cook on low heat, stirring gently.",
+      "timerSec": 60,
+      "tip": "Do not cook longer than 2 minutes after the paneer goes in; overcooked paneer turns hard and chewy (the warning in almost every source).",
+      "visualCue": "Steaming, soft and moist; crumbs still distinct",
+      "cameraCheck": "A spoonful lifted to show soft crumbs",
+      "videoShot": "Gentle stirring with steam rising."
+    },
+    {
+      "n": 16,
+      "title": "Taste and adjust",
+      "text": "Turn off the heat, taste and add a pinch more salt only if needed.",
+      "timerSec": 20,
+      "tip": null,
+      "visualCue": "Mildly spicy, savoury, a little tangy from tomato",
+      "cameraCheck": "The spoon tasting",
+      "videoShot": "A spoon of bhurji lifted for tasting."
+    },
+    {
+      "n": 17,
+      "title": "Garnish and serve",
+      "text": "Scatter the chopped coriander, add a squeeze of lemon if you like, and transfer to a plate.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "Moist orange-yellow crumbs with green flecks",
+      "cameraCheck": "The finished plate",
+      "videoShot": "Coriander scattered over the bhurji, steam rising."
+    }
+  ],
+  "nutritionPerServing": {
+    "kcal": 405,
+    "proteinG": 21,
+    "carbsG": 14,
+    "fatG": 31,
+    "fibreG": 2.8
+  },
+  "microNutrientsEstimate": {
+    "values": {
+      "biotin": 21,
+      "vitamin-a": 12.7,
+      "vitamin-b12": 0.6,
+      "vitamin-c": 15.2,
+      "vitamin-d": 0.2,
+      "vitamin-e": 2.1,
+      "vitamin-k": 5.5
+    },
+    "coveragePct": 67,
+    "basis": "partial estimate from ingredient quantities"
+  },
+  "asOrdered": {
+    "price": {
+      "priceHistory": [
+        {
+          "date": "2026-10-21",
+          "min": 280,
+          "max": 390,
+          "avg": 335,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-10-21.md"
+        }
+      ],
+      "currentEstimate": {
+        "min": 280,
+        "max": 390,
+        "avg": 340
+      },
+      "method": "single",
+      "trend": "unknown",
+      "change30dPct": null,
+      "lastObserved": "2026-10-21",
+      "stale": false,
+      "seasonal": false,
+      "listingCount": 2,
+      "platforms": [
+        "Swiggy"
+      ],
+      "outOfStock": false,
+      "confirmed": false,
+      "checkNotes": [
+        "only 2 listings back the range (need 3)",
+        "only 1 platform (Swiggy) backs the range"
+      ]
+    },
+    "nutrition": {
+      "calories": {
+        "value": null,
+        "source": null
+      },
+      "protein": {
+        "value": null,
+        "source": null
+      },
+      "carbs": {
+        "value": null,
+        "source": null
+      },
+      "fat": {
+        "value": null,
+        "source": null
+      },
+      "fibre": {
+        "value": null,
+        "source": null
+      }
+    },
+    "restaurantsSampled": 3,
+    "platforms": [
+      "Swiggy",
+      "Zomato",
+      "magicpin"
+    ]
+  },
+  "orderPrice": {
+    "priceHistory": [
+      {
+        "date": "2026-10-21",
+        "min": 280,
+        "max": 390,
+        "avg": 335,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-10-21.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 280,
+      "max": 390,
+      "avg": 340
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-21",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 2,
+    "platforms": [
+      "Swiggy"
+    ],
+    "outOfStock": false,
+    "confirmed": false,
+    "checkNotes": [
+      "only 2 listings back the range (need 3)",
+      "only 1 platform (Swiggy) backs the range"
+    ]
+  },
+  "healthiness": {
+    "score": 6,
+    "restaurantScore": 4,
+    "reasons": [
+      "about 21 g protein, about 245 mg calcium and B12 from paneer, no frying, no flour and no sugar, ready in 20 minutes, and only 2 tsp fat added. Points off for about 16 g saturated fat (about three quarters of a day's limit, mostly from full-fat paneer), about 625 mg sodium and little fibre (about 2.8 g) or vegetable. Restaurant and street versions usually use more butter or oil, sometimes cream or cheese, and come with buttered pav, often making it a 700–900 kcal meal."
+    ]
+  },
+  "researchRating": {
+    "score": 4.5,
+    "basis": "a very popular quick paneer dish; Indian Healthy Recipes' version shows 5 from 176 votes, Cook With Manali 5 from 18, Manjula's Kitchen 5 from 1; Veg Recipes of India's page has at least two pages of comments; it is published by almost every major Indian recipe site and chef (Hebbar's Kitchen, Ranveer Brar, Kunal Kapur, Archana's Kitchen, Saveur), is a named signature dish of Bhagat Tarachand, and is sold as a frozen ready product by Hyperpure. Points off because it is seen as a simple everyday or backup dish rather than a favourite, and Mumbai delivery menus list it far less often than egg bhurji or paneer gravies. Platform dish ratings were not used."
+  },
+  "storage": "Fridge-safe in a closed box for up to 2 days (cool within 1 hour). Freezer: not recommended; frozen crumbled paneer turns dry and grainy. Reheat in a pan on low with 1–2 tbsp milk or water, stirring gently, for 1–2 min; or microwave covered in 30-second bursts. Do not overheat or the paneer turns rubbery.",
+  "leftoverRemix": "Paneer bhurji stuffed paratha or chilla. Mash the leftover bhurji a little, stuff it into whole-wheat dough and roll a paratha (cook on a tawa with ½ tsp oil), or spread it over a besan or moong dal chilla and fold it (Veg Recipes of India also uses it as a grilled sandwich filling).",
+  "burnOff": "about 5.8 km of running (405 ÷ 70 kcal/km, for a 70 kg adult), or about 8.1 km of brisk walking (about 1 h 40 min at 5 km/h, using about 50 kcal/km for walking) (est.). With 2 phulkas (about 585 kcal): about 8.4 km running or 11.7 km walking (est.).",
+  "sources": [
+    "Indian Healthy Recipes, Paneer Bhurji (200 g paneer, 1½ tbsp oil; about 15 min with paneer ready; tofu or soya granules as substitutes; 5 from 176 votes): https://www.indianhealthyrecipes.com/wprm_print/paneer-bhurji-recipe ; https://www.indianhealthyrecipes.com/palak-paneer-bhurji-easy-paneer-recipe/",
+    "Cook With Manali, Paneer Bhurji (250 g paneer, 1 medium onion, 2 tomatoes, 1 tbsp oil, cumin and fennel, hing; warns overcooked paneer turns rubbery; 5 from 18 votes): https://www.cookwithmanali.com/wprm_print/paneer-bhurji ; https://cookwithmanali.com/paneer-bhurji",
+    "Veg Recipes of India, Paneer Bhurji (Punjabi style; 1 cup tomatoes, ¼ tsp turmeric) and Paneer Bhurji Sandwich (200 g paneer, 1.5 tbsp butter, ⅓ cup onion, ½ cup tomato): https://www.vegrecipesofindia.com/wprm_print/134395 ; https://vegrecipesofindia.com/paneer-bhurji-scrambled-cottage-cheese-with-spices/comment-page-2 ; https://www.vegrecipesofindia.com/paneer-bhurji-sandwich-recipe ; gravy version: https://www.vegrecipesofindia.com/wprm_print/easy-paneer-bhurji-gravy-recipe",
+    "Hebbar's Kitchen, dry Paneer Bhurji (2 cups crumbled paneer, 3 servings, 25 min; kasuri methi, garam masala; warns paneer turns hard if overcooked) and dhaba-style gravy (besan, capsicum, water): https://hebbarskitchen.com/wprm_print/paneer-bhurji-recipe-how-to-make-dry-paneer-bhurji-recipe ; https://hebbarskitchen.com/wprm_print/paneer-bhurji-gravy-recipe-dhaba-style-paneer-ki-bhurji-gravy-street-style",
+    "Whisk Affair, Paneer Bhurji (ghee, pav bhaji masala, bell pepper; do not overcook or it turns dry): https://www.whiskaffair.com/wprm_print/paneer-bhurji-recipe-indian-style-scrambled-cottage-cheese",
+    "Ranveer Brar, Paneer Bhurji (homemade paneer, onion, ginger-garlic, tomato): https://ranveerbrar.com/recipes/paneer-bhurji/",
+    "Chef Kunal Kapur, Paneer Bhurji (oil and butter, kasoori methi, homemade paneer): https://www.chefkunalkapur.com/recipe/paneer-bhurji/",
+    "Archana's Kitchen, Paneer Capsicum Bhurji (200 g paneer, 2 capsicums, 4 servings): https://archanaskitchen.com/paneer-capsicum-bhurji-cottage-cheese-bell-pepper-crumble",
+    "Kalimirch by Smita, Paneer Bhurji (250 g paneer, 1 capsicum, serves 3–4; dry version common in Mumbai street food): https://kalimirchbysmita.com/how-to-make-paneer-bhurji/",
+    "Chitra's Food Book, Paneer Bhurji: https://chitrasfoodbook.com/?p=660",
+    "My Ginger Garlic Kitchen, Punjabi Paneer Bhurji Dry: https://mygingergarlickitchen.com/PRINT-RECIPES/RECIPE-PRINT-how-to-make-paneer-bhurji-punjabi-paneer-bhurji-dry-video-recipe.html",
+    "Manjula's Kitchen, Paneer Bhurji (5 from 1 vote): https://manjulaskitchen.com/paneer-bhurji/",
+    "Aahaaram Online, Paneer Bhurji (veg counterpart of egg bhurji, on most Mumbai local eatery menus, served with pav): https://aahaaramonline.com/paneer-bhurji-spicy-cottage-cheese-crumble/",
+    "Saveur, Paneer Bhurji (Scrambled Paneer Curry): https://www.saveur.com/recipes/paneer-bhurji-scrambled-paneer-curry/",
+    "Times of Urbania, Bhagat Tarachand (paneer bhurji among signature dishes): https://timesofurbania.substack.com/p/mumbais-iconic-restaurant-bhagat",
+    "Ruchi's Veg Kitchen, Paneer Bhurji – No Onion No Garlic: https://ruchisvegkitchen.com/2015/12/15/paneer-bhurji-no-onion-no-garlic/",
+    "Hathi Masala, Paneer Bhurji (Jain style; cumin, tomato, hing; no onion, garlic or ginger): https://hathimasala.com/blogs/recipes/paneer-bhurji-recipe",
+    "Veg Recipes of India, Tofu Bhurji: https://www.vegrecipesofindia.com/tofu-bhurji-scrambled-tofu/",
+    "Vegan Richa, Tofu Bhurji: https://www.veganricha.com/tofu-bhurji-vegan-bhurji-indian/",
+    "Archana's Kitchen, Tofu Bhurji: https://archanaskitchen.com/tofu-bhurji-recipe",
+    "Indian Veggie Delight, Tofu Bhurji: https://www.indianveggiedelight.com/tofu-bhurji-scrambled-tofu-indian-style/",
+    "USDA FoodData Central (onion, tomato, ginger, garlic, green chilli, spices, butter, sunflower oil, milk, coriander, firm tofu): https://fdc.nal.usda.gov/",
+    "IFCT 2017 (ICMR-NIN), referenced but values not confirmed from this environment; ICMR-NIN Nutrient Requirements for Indians 2020: https://www.nin.res.in/",
+    "ClearCals, Paneer Kanda Bhurji (217 kcal per small cup; context): https://clearcals.com/recipes/paneer-kanda-bhurji",
+    "Swiggy, Pet Pooja Point (Paneer Bhurji ₹280): https://www.swiggy.com/city/mumbai/pet-pooja-point-bhoiwada-rest133442 ; https://www.swiggy.com/city/mumbai/pet-pooja-point-east-kalyan-rest133442",
+    "Swiggy, Suruchi Bhog, Airoli (Paneer Bhurji ₹390): https://www.swiggy.com/menu/37797",
+    "Swiggy, Navaratna Veg Restaurant, Vashi (Paneer Bhurji ₹434; premium, excluded): https://www.swiggy.com/restaurants/navaratna-veg-restaurant-vashi-mumbai-286146 ; https://www.swiggy.com/menu/286146",
+    "Swiggy, unnamed outlet (Paneer Bhurji with 2 butter pav ₹255; location not stated, not used): https://www.swiggy.com/menu/622792",
+    "Swiggy, Best Paneer Bhurji Restaurants Near Me (city list only, no Mumbai prices): https://www.swiggy.com/paneer-bhurji-dish-restaurants-near-me",
+    "magicpin, Princess Dock breakfast listing (New Shanti Bhuvan Hotel paneer bhurji review, no price): https://magicpin.in/india/Mumbai/Princess-Dock/Restaurant/Breakfast/?amp=1",
+    "Hyperpure, frozen Paneer Bhurji packs (context): https://www.hyperpure.com/in/paneer-bhurji-by-hyperpure-pack-of-1kg-frozen"
+  ],
+  "allergens": [
+    "peanut",
+    "milk"
+  ],
+  "dietClaims": [
+    "glutenFree"
+  ],
+  "fasting": {
+    "navratri": {
+      "status": "with-changes",
+      "reason": "paneer, tomato, green chilli, ginger and milk are allowed in the common vrat rule set; skip onion and garlic, use sendha namak instead of table salt, and leave out turmeric, garam masala and coriander powder if your family avoids them (cumin and black pepper are widely used)."
+    },
+    "ekadashi": {
+      "status": "with-changes",
+      "reason": "no grains or pulses in the dish; skip onion and garlic (common rule set; family rules on spices vary). Serve without roti or pav."
+    },
+    "jain": {
+      "status": null,
+      "reason": "onion, garlic and fresh ginger are root vegetables; use the Jain variant (tomato-capsicum base with sonth)."
+    },
+    "ramadan": {
+      "status": "yes",
+      "reason": "vegetarian, so no halal-meat issue; quick, high-protein and not too heavy with 2 rotis for sehri or iftar; moderately salty (about 625 mg sodium), so drink water."
+    }
+  },
+  "dietTags": {
+    "base": "Vegetarian",
+    "jain": {
+      "status": "with-changes",
+      "reason": "onion, garlic and fresh ginger are root vegetables; skip all three, use dry ginger powder (sonth), more tomato and capsicum (see Jain variant)."
+    },
+    "vegan": {
+      "status": "with-changes",
+      "reason": "paneer, butter and milk are dairy; use firm tofu and oil (see Vegan variant, Tofu Bhurji)."
+    },
+    "pescatarian": {
+      "status": "yes",
+      "reason": "vegetarian, no meat, so it fits a pescatarian diet."
+    },
+    "sattvik": {
+      "status": "with-changes",
+      "reason": "skip onion and garlic, keep ginger, add more tomato and capsicum (see Sattvik variant)."
+    },
+    "glutenFree": {
+      "status": "yes",
+      "reason": "no wheat, maida, rava or besan, and the main recipe uses no hing; if you add hing, use a gluten-free one, as most hing sold in India is compounded with wheat flour. Check the garam masala label for added flour. The dhaba gravy style thickened with besan is still gluten-free; pav, roti and paratha are not."
+    },
+    "dairyFree": {
+      "status": "with-changes",
+      "reason": "paneer, butter and milk are dairy; use the Tofu Bhurji variant."
+    },
+    "allergensDeclared": [
+      "milk",
+      "peanut"
+    ]
+  },
+  "tags": [
+    "Veg",
+    "Jain option",
+    "Vegan option",
+    "Gluten-free",
+    "Dairy-free option",
+    "Ramadan sehri / iftar",
+    "Contains peanut",
+    "Contains milk",
+    "Breakfast",
+    "Lunch",
+    "Dinner",
+    "Under 30 min",
+    "Beginner",
+    "High protein"
+  ],
+  "description": "Family: paneer-bhurji",
+  "familyId": "bhurji",
+  "variants": [
+    {
+      "category": "Jain",
+      "status": "variant",
+      "name": "Jain Paneer Bhurji (no onion, garlic or ginger)",
+      "origin": "established",
+      "linkedDishNumber": null,
+      "reason": null
+    },
+    {
+      "category": "Vegan",
+      "status": "variant",
+      "name": "Tofu Bhurji",
+      "origin": "established",
+      "linkedDishNumber": null,
+      "reason": null
+    },
+    {
+      "category": "Dairy-free",
+      "status": "variant",
+      "name": "Tofu Bhurji (same as the Vegan variant)",
+      "origin": "established",
+      "linkedDishNumber": null,
+      "reason": null
+    },
+    {
+      "category": "Sattvik",
+      "status": "variant",
+      "name": "No-onion no-garlic Paneer Bhurji",
+      "origin": "established",
+      "linkedDishNumber": null,
+      "reason": null
+    }
+  ],
+  "needsReview": [
+    "Jain \"with-changes\" but the recipe keeps onion, garlic, fresh ginger and the line doesn't say to skip them",
+    "price not confirmed (2026-10-21): only 2 listings back the range (need 3)",
+    "price not confirmed (2026-10-21): only 1 platform (Swiggy) backs the range"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-21",
+      "file": "FitPlate_Dishes_2026-10-21.md"
+    }
+  ],
+  "mergeMethod": {
+    "nutritionPerServing": "stable (single)",
+    "orderPrice": "price engine (single)",
+    "ingredients": "newest",
+    "steps": "newest",
+    "healthiness": "newest",
+    "researchRating": "newest",
+    "sources": "union",
+    "tags": "tag engine (tags.ts) on the merged dish"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 280.0–390.0 was wider than 30% of avg 335.0; narrowed to ±15%.",
+    "2026-10-21: research declares peanut not detected from ingredient names; added"
+  ]
+}

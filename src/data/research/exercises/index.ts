@@ -6,10 +6,14 @@ import item_bodyweight_squat from './bodyweight-squat.json';
 import item_desk_neck_shoulder_release from './desk-neck-shoulder-release.json';
 import item_elliptical_cross_trainer from './elliptical-cross-trainer.json';
 import item_glute_bridge from './glute-bridge.json';
+import item_hamstring_stretch from './hamstring-stretch.json';
 import item_hip_flexor_stretch from './hip-flexor-stretch.json';
+import item_leg_press from './leg-press.json';
 import item_plank_and_side_plank from './plank-and-side-plank.json';
 import item_push_up from './push-up.json';
+import item_reverse_lunge from './reverse-lunge.json';
 import item_rowing_machine from './rowing-machine.json';
+import item_stair_climber from './stair-climber.json';
 import item_stationary_bike from './stationary-bike.json';
 import item_surya_namaskar from './surya-namaskar.json';
 import item_treadmill from './treadmill.json';
@@ -20,10 +24,14 @@ export const items: Exercise[] = [
   item_desk_neck_shoulder_release as unknown as Exercise,
   item_elliptical_cross_trainer as unknown as Exercise,
   item_glute_bridge as unknown as Exercise,
+  item_hamstring_stretch as unknown as Exercise,
   item_hip_flexor_stretch as unknown as Exercise,
+  item_leg_press as unknown as Exercise,
   item_plank_and_side_plank as unknown as Exercise,
   item_push_up as unknown as Exercise,
+  item_reverse_lunge as unknown as Exercise,
   item_rowing_machine as unknown as Exercise,
+  item_stair_climber as unknown as Exercise,
   item_stationary_bike as unknown as Exercise,
   item_surya_namaskar as unknown as Exercise,
   item_treadmill as unknown as Exercise,

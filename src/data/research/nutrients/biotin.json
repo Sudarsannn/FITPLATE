@@ -1,0 +1,421 @@
+{
+  "id": "biotin",
+  "name": "Biotin (Vitamin B7)",
+  "type": "vitamin",
+  "subtype": "water-soluble",
+  "unit": "µg",
+  "altUnits": [
+    {
+      "unit": "mcg",
+      "toMainUnitFactor": 1
+    },
+    {
+      "unit": "mg",
+      "toMainUnitFactor": 1000
+    }
+  ],
+  "unitConversions": [
+    {
+      "fromUnit": "µg",
+      "compound": "",
+      "toMainUnitFactor": 1,
+      "raw": "1 mcg | 1 µg"
+    },
+    {
+      "fromUnit": "mg",
+      "compound": "",
+      "toMainUnitFactor": 1000,
+      "raw": "1 mg | 1,000 µg"
+    },
+    {
+      "fromUnit": "µg",
+      "compound": "d-biotin",
+      "toMainUnitFactor": 1,
+      "raw": "1 µg D-biotin | 1 µg"
+    }
+  ],
+  "targets": [
+    {
+      "group": "adult_male_sedentary",
+      "ear": null,
+      "rda": null,
+      "ai": 40,
+      "source": "ICMR-NIN 2020 as adopted by FSSAI RDA 2020 (partial modification, 2 Aug 2021), via trade-press report (secondary, unverified); AI-type value, no EAR found; matches EFSA 2014 AI"
+    },
+    {
+      "group": "adult_male_moderate",
+      "ear": null,
+      "rda": null,
+      "ai": 40,
+      "source": "ICMR-NIN 2020 via FSSAI (secondary, unverified); no activity-based scaling found"
+    },
+    {
+      "group": "adult_male_heavy",
+      "ear": null,
+      "rda": null,
+      "ai": 40,
+      "source": "ICMR-NIN 2020 via FSSAI (secondary, unverified); no activity-based scaling found"
+    },
+    {
+      "group": "adult_female_sedentary",
+      "ear": null,
+      "rda": null,
+      "ai": 40,
+      "source": "ICMR-NIN 2020 via FSSAI (secondary, unverified); AI-type value, no EAR found"
+    },
+    {
+      "group": "adult_female_moderate",
+      "ear": null,
+      "rda": null,
+      "ai": 40,
+      "source": "ICMR-NIN 2020 via FSSAI (secondary, unverified); no activity-based scaling found"
+    },
+    {
+      "group": "adult_female_heavy",
+      "ear": null,
+      "rda": null,
+      "ai": 40,
+      "source": "ICMR-NIN 2020 via FSSAI (secondary, unverified); no activity-based scaling found"
+    },
+    {
+      "group": "pregnant",
+      "ear": null,
+      "rda": null,
+      "ai": 40,
+      "source": "ICMR-NIN 2020 via FSSAI (secondary, unverified); = EFSA 2014; NASEM uses 30 µg"
+    },
+    {
+      "group": "lactating",
+      "ear": null,
+      "rda": null,
+      "ai": 45,
+      "source": "ICMR-NIN 2020 via FSSAI (secondary, unverified); = EFSA 2014; NASEM uses 35 µg"
+    }
+  ],
+  "appDefaultTarget": {
+    "adult_male": 40,
+    "adult_female": 40,
+    "pregnant": 40,
+    "lactating": 45,
+    "age_60_plus": null
+  },
+  "upperLimit": {
+    "value": null,
+    "unit": "µg/day",
+    "appliesTo": "supplements_only",
+    "source": "No UL set: ICMR-NIN TUL not found; NASEM 1998, EU SCF 2001 and EFSA set none. App notice and prescription_dose threshold use UK NHS guidance (via NHS 111 Wales) of 900 µg (0.9 mg) per day or less from supplements, which is not a formal UL"
+  },
+  "topFoodSources": [
+    {
+      "food": "Goat liver",
+      "veg": false,
+      "per100g": 178,
+      "servingG": 50,
+      "servingLabel": "a few pieces, raw weight (IFCT value uncertain)",
+      "perServing": 89
+    },
+    {
+      "food": "Goat kidney",
+      "veg": false,
+      "per100g": 68.8,
+      "servingG": 50,
+      "servingLabel": "a few pieces, raw weight",
+      "perServing": 34.4
+    },
+    {
+      "food": "Colocasia (arbi) leaves, green",
+      "veg": true,
+      "per100g": 12.1,
+      "servingG": 100,
+      "servingLabel": "patra / alu vadi for one",
+      "perServing": 12.1
+    },
+    {
+      "food": "Paneer",
+      "veg": true,
+      "per100g": 21,
+      "servingG": 50,
+      "servingLabel": "6-8 small cubes",
+      "perServing": 10.5
+    },
+    {
+      "food": "Button mushroom",
+      "veg": true,
+      "per100g": 9.23,
+      "servingG": 100,
+      "servingLabel": "1 cup sliced",
+      "perServing": 9.2
+    },
+    {
+      "food": "Egg, hen, whole",
+      "veg": false,
+      "per100g": 18.2,
+      "servingG": 50,
+      "servingLabel": "1 egg (raw value; boiled 7.7 µg)",
+      "perServing": 9.1
+    },
+    {
+      "food": "Sweet potato",
+      "veg": true,
+      "per100g": 5.19,
+      "servingG": 100,
+      "servingLabel": "1 small",
+      "perServing": 5.2
+    },
+    {
+      "food": "Chicken leg, skinless",
+      "veg": false,
+      "per100g": 4.58,
+      "servingG": 100,
+      "servingLabel": "1 leg piece, raw weight",
+      "perServing": 4.6
+    },
+    {
+      "food": "Spinach (palak)",
+      "veg": true,
+      "per100g": 4.14,
+      "servingG": 100,
+      "servingLabel": "about 1 cup cooked",
+      "perServing": 4.1
+    },
+    {
+      "food": "Cow's milk, whole",
+      "veg": true,
+      "per100g": 1.98,
+      "servingG": 200,
+      "servingLabel": "1 glass (about 200 ml)",
+      "perServing": 4
+    },
+    {
+      "food": "Linseed (alsi)",
+      "veg": true,
+      "per100g": 21.3,
+      "servingG": 10,
+      "servingLabel": "1 tbsp",
+      "perServing": 2.1
+    },
+    {
+      "food": "Walnut",
+      "veg": true,
+      "per100g": 13.1,
+      "servingG": 15,
+      "servingLabel": "about 4 halves",
+      "perServing": 2
+    }
+  ],
+  "goodSourceDishes": [
+    {
+      "dishNumber": 14,
+      "dishName": "Egg Bhurji"
+    },
+    {
+      "dishNumber": 53,
+      "dishName": "Paneer Tikka"
+    },
+    {
+      "dishNumber": 17,
+      "dishName": "Palak Paneer"
+    },
+    {
+      "dishNumber": 22,
+      "dishName": "Kadai Paneer"
+    },
+    {
+      "dishNumber": 3,
+      "dishName": "Paneer Butter Masala"
+    },
+    {
+      "dishNumber": 49,
+      "dishName": "Mushroom Masala"
+    },
+    {
+      "dishNumber": 38,
+      "dishName": "Egg Curry"
+    },
+    {
+      "dishNumber": 54,
+      "dishName": "Matar Paneer"
+    },
+    {
+      "dishNumber": 21,
+      "dishName": "Masala Omelette"
+    },
+    {
+      "dishNumber": 2,
+      "dishName": "Chicken Biryani"
+    },
+    {
+      "dishNumber": 45,
+      "dishName": "Tandoori Chicken"
+    }
+  ],
+  "deficiencyRiskIndia": "low",
+  "absorptionBoosters": [
+    "cooking eggs fully (inactivates avidin)",
+    "varied diet with paneer, milk, cooked eggs, mushrooms, leafy greens, peas, sweet potato, nuts and seeds",
+    "using dal and vegetable cooking water"
+  ],
+  "absorptionBlockers": [
+    "raw egg white (avidin)",
+    "heavy alcohol use",
+    "long-term anti-seizure medicines (carbamazepine, phenytoin, phenobarbital, primidone)",
+    "discarding cooking water",
+    "strong acids and oxidising conditions"
+  ],
+  "logPresets": [
+    {
+      "label": "Multivitamin (biotin 150 µg)",
+      "amount": 150,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 150,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "B-complex with zinc (biotin 100 µg)",
+      "amount": 100,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 100,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Biotin hair tablet 5,000 µg (prescription dose)",
+      "amount": 5000,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 5000,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Biotin hair tablet 10,000 µg / 10 mg (prescription dose)",
+      "amount": 10000,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 10000,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Custom amount",
+      "amount": null,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": null,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    }
+  ],
+  "warnings": [
+    "No formal upper limit is set for biotin; UK guidance considers 900 µg (0.9 mg) per day or less from supplements unlikely to cause harm.",
+    "High-dose biotin can cause false results in some blood tests, including troponin (heart attack test) and thyroid tests. Tell your doctor and the lab about any biotin product before a blood test.",
+    "Hair, skin and nail supplements often contain 5,000-10,000 µg of biotin, far more than the 40 µg daily target; benefit for hair or nails in healthy people is not proven.",
+    "Raw egg white contains avidin, which blocks biotin absorption; eat eggs cooked.",
+    "Long-term anti-seizure medicines can lower biotin; discuss with your doctor.",
+    "Biotin shampoos and hair oils do not count toward daily intake.",
+    "Hair fall needs a doctor's check for causes such as iron deficiency or thyroid problems before taking biotin.",
+    "General information, not medical advice. Check with a doctor before starting supplements."
+  ],
+  "conditionAdjustments": [
+    {
+      "profileId": "P22 Pregnancy",
+      "change": "no increase under ICMR/EFSA; keep 40 µg/day (NASEM uses 30 µg); marginal status reported in some US pregnancy studies, no target change by any body",
+      "value": 40,
+      "unit": "µg/day",
+      "source": "ICMR-NIN 2020 via FSSAI (secondary, unverified); EFSA 2014; Mock et al. 2002"
+    },
+    {
+      "profileId": "P23 Breastfeeding",
+      "change": "raise target by 5 µg/day to 45 µg/day",
+      "value": 45,
+      "unit": "µg/day",
+      "source": "ICMR-NIN 2020 via FSSAI (secondary, unverified); EFSA 2014"
+    },
+    {
+      "profileId": "P9 Hypothyroidism",
+      "change": "no change to food target; show lab-test warning: biotin can make TSH falsely low and free T4/T3 falsely high",
+      "value": null,
+      "unit": "",
+      "source": "FDA safety communications 2017 and 2019; Mayo Clinic Laboratories; thyroid case series"
+    },
+    {
+      "profileId": "P10 Hyperthyroidism",
+      "change": "no change to food target; show lab-test warning: biotin can mimic an overactive thyroid on tests",
+      "value": null,
+      "unit": "",
+      "source": "FDA 2017/2019; Elston et al. 2016 (factitious Graves' disease)"
+    },
+    {
+      "profileId": "P21 Heart disease (after a cardiac event)",
+      "change": "no change to food target; show lab-test warning: high-dose biotin can make some troponin tests read falsely low",
+      "value": null,
+      "unit": "",
+      "source": "FDA safety communications 2017 and 2019"
+    },
+    {
+      "profileId": "P27 Muscle gain",
+      "change": "no change to target; warn against regular raw egg white intake (avidin)",
+      "value": null,
+      "unit": "",
+      "source": "NIH ODS; Indian Pediatrics 2007 case report"
+    },
+    {
+      "profileId": "P33 Jain diet",
+      "change": "no change to target; rely on paneer, khoa, milk, peas, capsicum, spinach, walnuts, pistachios and linseed (eggs and often mushrooms and root vegetables excluded)",
+      "value": null,
+      "unit": "",
+      "source": "IFCT 2017 (FitPlate analysis)"
+    },
+    {
+      "profileId": "P34 Vegan diet",
+      "change": "no change to target; rely on mushrooms, colocasia leaves, spinach, peas, sweet potato, nuts, seeds and legumes; tracked intake may look low (est.)",
+      "value": null,
+      "unit": "",
+      "source": "IFCT 2017 (FitPlate analysis)"
+    },
+    {
+      "profileId": "P13 Chronic kidney disease (early stages)",
+      "change": "no change found; renal vitamin products only as prescribed",
+      "value": null,
+      "unit": "",
+      "source": "No change found"
+    },
+    {
+      "profileId": "P30 Steady energy and focus at work",
+      "change": "no change; extra biotin does not boost energy in people who are not deficient",
+      "value": null,
+      "unit": "",
+      "source": "Mayo Clinic; Harvard Nutrition Source"
+    }
+  ],
+  "lastResearched": "2026-10-21",
+  "versions": [
+    {
+      "date": "2026-10-21",
+      "file": "FitPlate_Nutrients_2026-10-21.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3)",
+    "upperLimit": "official safety limit (D3, lower on conflict)",
+    "topFoodSources": "union; per100g official (D3)",
+    "logPresets": "union by label (newest), converted with own file factors",
+    "appDefaultTarget": "newest, kept only where it equals the ICMR row",
+    "lists": "union",
+    "warnings": "union (never dropped)",
+    "text": "newest"
+  },
+  "mergeNotes": [],
+  "needsReview": [
+    "2026-10-21 biotin: \"group\" has unexpected value \"age_60_plus_male\"; treated as not found",
+    "2026-10-21 biotin: \"group\" has unexpected value \"age_60_plus_female\"; treated as not found"
+  ]
+}

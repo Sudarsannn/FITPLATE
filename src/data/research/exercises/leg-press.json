@@ -1,0 +1,799 @@
+{
+  "id": "leg-press",
+  "number": 10,
+  "name": "Leg press",
+  "otherNames": [
+    "45-degree leg press",
+    "Incline leg press",
+    "Sled leg press",
+    "Plate-loaded leg press",
+    "Seated leg press",
+    "Horizontal leg press",
+    "Selectorized leg press",
+    "Pin-loaded leg press",
+    "Single-leg leg press"
+  ],
+  "section": "gym",
+  "type": "strength",
+  "equipment": [
+    "45-degree plate-loaded leg press sled with weight plates (kg)",
+    "or seated selectorized (pin-loaded) leg press"
+  ],
+  "noEquipmentAlternative": "Bodyweight squat (Home 1) or wall sit (Home 10); with dumbbells, goblet squat (Home 15)",
+  "musclesPrimary": [
+    "quadriceps (rectus femoris, vastus lateralis, vastus medialis, vastus intermedius)",
+    "gluteus maximus"
+  ],
+  "musclesSecondary": [
+    "adductor magnus",
+    "hamstrings (biceps femoris, semitendinosus, semimembranosus)",
+    "gastrocnemius",
+    "soleus"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": false,
+  "met": 3.5,
+  "compendiumCode": null,
+  "metOptions": [
+    {
+      "code": "02052",
+      "met": 5,
+      "activity": "Extras (text only, harder work): 02052, 5.0 METs, \"resistance (weight) training, squats, deadlift, slow or explosive effort\" (closest heavy compound leg code; the leg press is not named, so est.); 020"
+    },
+    {
+      "code": "02050",
+      "met": 6,
+      "activity": "Extras (text only, harder work): 02052, 5.0 METs, \"resistance (weight) training, squats, deadlift, slow or explosive effort\" (closest heavy compound leg code; the leg press is not named, so est.); 020"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 2,
+      "reps": "10-12 at RIR 3",
+      "timeSec": null,
+      "restSec": 105,
+      "tempo": "3 s down, 0 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 2,
+      "reps": "10-12 at RIR 3 (as one circuit station)",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "3 s down, 0 s pause, 2 s up",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "10-12 at RIR 2-3",
+      "timeSec": null,
+      "restSec": 105,
+      "tempo": "3 s down, 0 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "strength",
+      "sets": 3,
+      "reps": "8-10 at RIR 3",
+      "timeSec": null,
+      "restSec": 120,
+      "tempo": "3 s down, 1 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 2,
+      "reps": "15 at RIR 3-4",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "2 s down, 0 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "10-12 at RIR 2",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "2 s down, 0 s pause, 1 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "8-12 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 120,
+      "tempo": "3 s down, 0 s pause, 1 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "strength",
+      "sets": 4,
+      "reps": "5-8 at RIR 2",
+      "timeSec": null,
+      "restSec": 150,
+      "tempo": "2 s down, 1 s pause, 1 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "15-20 at RIR 2",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2 s down, 0 s pause, 1 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "general_fitness",
+      "sets": 4,
+      "reps": "12-15 at RIR 1-2 (or single-leg 10-12 per leg)",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "2 s down, 0 s pause, 1 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "8-12 at RIR 0-2, plus single-leg 2 x 10-12",
+      "timeSec": null,
+      "restSec": 120,
+      "tempo": "3 s down, 0 s pause, 1 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": 5,
+      "reps": "4-6 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 180,
+      "tempo": "2 s down, 1 s pause, 1 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "endurance",
+      "sets": 4,
+      "reps": "20-25 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 50,
+      "tempo": "2 s down, 0 s pause, 1 s up",
+      "perWeek": 2
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle",
+      "left_heel",
+      "right_heel",
+      "left_foot_index",
+      "right_foot_index"
+    ],
+    "phases": [
+      {
+        "name": "top",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": ">= 155",
+        "parsed": {
+          "op": ">=",
+          "value": 155,
+          "max": null
+        }
+      },
+      {
+        "name": "bottom",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": "<= 100",
+        "parsed": {
+          "op": "<=",
+          "value": 100,
+          "max": null
+        }
+      },
+      {
+        "name": "top_max",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": "<= 175",
+        "parsed": {
+          "op": "<=",
+          "value": 175,
+          "max": null
+        }
+      },
+      {
+        "name": "bottom_min",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": ">= 70",
+        "parsed": {
+          "op": ">=",
+          "value": 70,
+          "max": null
+        }
+      },
+      {
+        "name": "bottom_min_hip",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": ">= 50",
+        "parsed": {
+          "op": ">=",
+          "value": 50,
+          "max": null
+        }
+      },
+      {
+        "name": "bottom_short_range_mode",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": "<= 135",
+        "parsed": {
+          "op": "<=",
+          "value": 135,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 2
+  },
+  "formChecks": [
+    {
+      "joint": "knee",
+      "rule": "bottom knee angle > 100 degrees (equals bottom phase threshold; > 135 in short-range mode)",
+      "message": "Go a little deeper: knees to about 90 degrees"
+    },
+    {
+      "joint": "knee",
+      "rule": "top knee angle < 155 degrees (equals top phase threshold)",
+      "message": "Press all the way up, soft knees"
+    },
+    {
+      "joint": "knee",
+      "rule": "top knee angle > 175 degrees (equals top_max threshold)",
+      "message": "Don't lock: keep a small bend"
+    },
+    {
+      "joint": "knee",
+      "rule": "bottom knee angle < 70 degrees (equals bottom_min threshold)",
+      "message": "Too deep: stop at about 90 degrees"
+    },
+    {
+      "joint": "hip",
+      "rule": "bottom hip angle < 50 degrees (equals bottom_min_hip threshold)",
+      "message": "Stop before your hips roll up"
+    },
+    {
+      "joint": "hip",
+      "rule": "separate flag: hip landmark moves away from the seat line beyond a set margin at the bottom (no angle used)",
+      "message": "Keep your hips on the seat"
+    },
+    {
+      "joint": "ankle",
+      "rule": "heel landmark separates from the foot-index line beyond a set margin",
+      "message": "Push through your heels"
+    },
+    {
+      "joint": "knee",
+      "rule": "rep duration < 2.0 s or lowering < 1.5 s",
+      "message": "Slow down: 3 seconds down"
+    },
+    {
+      "joint": "knee",
+      "rule": "front view: knee distance smaller than ankle distance beyond margin during press",
+      "message": "Knees out over your toes"
+    }
+  ],
+  "safetyFlags": [
+    "use_safety_catches_and_stops",
+    "do_not_lock_knees",
+    "keep_hips_on_pad",
+    "high_blood_pressure_breathe_out_no_failure_sets",
+    "resting_bp_180_120_do_not_lift",
+    "knee_pain_short_range",
+    "lower_back_pain_limit_depth",
+    "pregnancy_ask_obstetrician_limit_depth",
+    "check_machine_max_user_weight",
+    "recent_knee_or_hip_surgery_follow_surgeon_limits"
+  ],
+  "progressions": [
+    "heavier load with same depth (double progression)",
+    "more sets",
+    "single-leg leg press",
+    "slow 4 s lowering with 1-2 s bottom pause",
+    "hack squat machine (Gym 13)",
+    "barbell back squat (Gym 15)"
+  ],
+  "regressions": [
+    "seated selectorized leg press at lightest pin",
+    "short-range leg press (45-60 degrees of knee bend)",
+    "bodyweight box squat to bench",
+    "wall sit (Home 10)"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "side, hip height, 3 m",
+      "shows": "finding and turning the safety handles; setting the safety stops",
+      "textOverlay": "Find the catches first"
+    },
+    {
+      "seconds": 8,
+      "angle": "three-quarter front, 2 m",
+      "shows": "loading equal plates, largest first, clips on",
+      "textOverlay": "Equal plates both sides"
+    },
+    {
+      "seconds": 6,
+      "angle": "front beyond footplate, 2 m",
+      "shows": "foot placement hip-width, middle of plate",
+      "textOverlay": "Feet hip-width, middle of the plate"
+    },
+    {
+      "seconds": 10,
+      "angle": "side, hip height, 3 m",
+      "shows": "full rep: lower 3 s to about 90 degrees, press, soft knees",
+      "textOverlay": "Down 3 s - Knees ~90 - Soft at the top"
+    },
+    {
+      "seconds": 8,
+      "angle": "side split screen, 3 m",
+      "shows": "hips on pad vs going too deep with tailbone rolling up",
+      "textOverlay": "Stop before your hips roll up"
+    },
+    {
+      "seconds": 6,
+      "angle": "front, 2 m",
+      "shows": "knees over toes vs caving; heels down vs lifting",
+      "textOverlay": "Knees over toes - Heels down"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 3 m",
+      "shows": "seated selectorized: seat to 90 degrees, pin in stack, full rep",
+      "textOverlay": "Seat number - Pin all the way in"
+    },
+    {
+      "seconds": 6,
+      "angle": "side close-up, 1.5 m",
+      "shows": "locked knee vs soft knee at the top",
+      "textOverlay": "Don't lock. Keep a small bend."
+    }
+  ],
+  "lastResearched": "2026-10-16",
+  "setupSteps": [
+    "Check the machine is empty or loaded evenly. Plates on the sled's weight horns (pegs) must be equal on both sides. Unload anything left by the last person if it is too heavy for you (and return plates to the rack).",
+    "Find the safety catches before loading. Most sleds have two handles beside the seat that rotate the catches in (locked) or out (free). Some also have adjustable safety stops (bars or pins) that stop the sled from coming down past a set point. Ask staff to show you how this specific model works; designs vary.",
+    "Set the safety stops (if the machine has them) at a point just below your planned lowest position, so the sled cannot crush you if you fail a rep (est.; follow the machine's labels).",
+    "Set the backrest angle (if adjustable). A more upright back gives less depth; a more reclined back gives more. ExRx: set the back support so you get near-full range without your hips rounding off the pad. Beginners: middle setting (est.).",
+    "First set: start with the empty sled. The sled itself has weight (it varies by model; check the machine label or ask staff; Indian model sled weights Not found). Because the sled runs at 45°, the force you push is roughly 70% (sin 45° ≈ 0.71) of the sled-plus-plate weight, slightly less because of rail friction (geometry estimate; secondary sources only, est.). Do not compare your number with a friend's on a different machine.",
+    "Load plates (later sets): largest plates first, close to the frame, equal on both sides; add collars/clips if the horns have them. Load and unload one side at a time only if the sled is locked on its catches.",
+    "Sit: back and tailbone flat against the backrest, head resting on the headrest.",
+    "Foot plate position: feet in the middle of the plate, hip-width apart (NASM), toes pointing forward or turned out a little (5–15°, est.). Whole foot on the plate, heels down.",
+    "Foot height: middle of the plate is the default. Higher on the plate works the buttocks a bit more; lower works the front thighs more (ExRx; one small EMG study in 14 women found higher gluteus maximus activity with feet high and higher quadriceps activity with feet low). Too low lifts the heels and stresses the knees.",
+    "Hands: hold the side handles (not the knees).",
+    "Unrack: push the sled up until your legs are straight but not locked, then turn the safety handles outward to free the sled. Keep the hands on the handles.",
+    "Pin: put the selector pin fully into the lightest or second-lightest plate of the stack (Gym 4). Push it all the way in.",
+    "Seat/back pad: move the seat (usually a lever or pop-pin, often numbered) so that with your feet on the plate your knees bend to about 90° (ACE; NASM). Note the number for next time.",
+    "Sit: back and tailbone against the backrest (ACE), head relaxed.",
+    "Feet: hip-width, toes forward or slightly out, heels flat, middle of the plate (ACE: toes forward, heels flat).",
+    "Hands: lightly hold the handles (ACE) and brace the stomach.",
+    "Range limiter (if fitted): set it so the stack cannot go deeper than your comfortable depth."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": "A. 45° sled leg press (main steps; the seated machine is the same from step 2 on, without catches)",
+      "title": "Brace",
+      "action": "With the sled unlocked and legs straight but soft (not locked), gently tighten your stomach as if about to cough.",
+      "feel": "Lower back and buttocks pressed into the pad.",
+      "breathing": "Breathe in.",
+      "tempo": null,
+      "visualCheck": "Side: back and hips flat on the pad, knees slightly bent. Front: knees in line with feet."
+    },
+    {
+      "n": 2,
+      "part": "A. 45° sled leg press (main steps; the seated machine is the same from step 2 on, without catches)",
+      "title": "Lower the sled",
+      "action": "Bend your knees and hips together to let the sled come slowly toward you.",
+      "feel": "Thighs and buttocks working to control the weight; a stretch in the buttocks near the bottom.",
+      "breathing": "Keep breathing in, or hold a light brace, as you lower.",
+      "tempo": null,
+      "visualCheck": "Side: knees bend toward the shoulders, heels stay on the plate. Front: knees point the same way as the toes (NASM: knees in line with the middle toes), not caving in."
+    },
+    {
+      "n": 3,
+      "part": "A. 45° sled leg press (main steps; the seated machine is the same from step 2 on, without catches)",
+      "title": "Stop at your depth",
+      "action": "Stop when your knees are bent to about 90° (beginner default; NASM returns to about 90°), or earlier if your hips start to roll up off the pad (ExRx; Muscle & Strength: stop just before the lower back comes off the pad).",
+      "feel": "Strong thigh tension, no pinch in the lower back or kneecap.",
+      "breathing": "Brief light brace.",
+      "tempo": null,
+      "visualCheck": "Side: knees about 90° bent; tailbone still on the seat. Front: knees over the second toe."
+    },
+    {
+      "n": 4,
+      "part": "A. 45° sled leg press (main steps; the seated machine is the same from step 2 on, without catches)",
+      "title": "Press",
+      "action": "Push through the whole foot (heel and mid-foot) to straighten the legs and drive the sled away.",
+      "feel": "Front thighs and buttocks doing the work; heels heavy.",
+      "breathing": "Breathe out as you push (never hold the breath through the whole rep).",
+      "tempo": null,
+      "visualCheck": "Side: heels stay down, hips stay on the pad. Front: knees track over the toes, do not snap inward."
+    },
+    {
+      "n": 5,
+      "part": "A. 45° sled leg press (main steps; the seated machine is the same from step 2 on, without catches)",
+      "title": "Stop just short of lockout",
+      "action": "Stop with the knees almost straight but still soft (Livestrong-quoted trainer: about 10° short of fully straight; NASM: don't lock out).",
+      "feel": "Weight held by the muscles, not the joint.",
+      "breathing": "Finish breathing out, then breathe in.",
+      "tempo": null,
+      "visualCheck": "Side: a small bend still visible at the knee."
+    },
+    {
+      "n": 6,
+      "part": "A. 45° sled leg press (main steps; the seated machine is the same from step 2 on, without catches)",
+      "title": "Repeat for the planned reps",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 7,
+      "part": "A. 45° sled leg press (main steps; the seated machine is the same from step 2 on, without catches)",
+      "title": "Rack the sled (45° only)",
+      "action": "At the top of the last rep, turn the safety handles back in so the catches are engaged, then let the sled rest on them gently.",
+      "feel": "Sled held by the catches before you relax the legs.",
+      "breathing": "Normal.",
+      "tempo": null,
+      "visualCheck": "Catches clearly locked before you take your feet off the plate."
+    },
+    {
+      "n": 8,
+      "part": "A. 45° sled leg press (main steps; the seated machine is the same from step 2 on, without catches)",
+      "title": "Seated machine finish: return the stack slowly until the plates touch silently; then lift your feet off",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 9,
+      "part": "B. Single-leg leg press (progression)",
+      "title": "Set up as above with a lighter load (about half or less, est.)",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 10,
+      "part": "B. Single-leg leg press (progression)",
+      "title": "Put one foot in the middle of the plate; rest the other foot on the floor or frame",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 11,
+      "part": "B. Single-leg leg press (progression)",
+      "title": "Lower to a smaller depth than the two-leg version; keep the hip on the pad",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 12,
+      "part": "B. Single-leg leg press (progression)",
+      "title": "Press with the knee in line with the toes; finish the reps, then switch legs",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Going too deep so the hips lift and the lower back rounds",
+      "text": "Going too deep so the hips lift and the lower back rounds. Why: the pelvis tucks under and the lower back bends under load, which may increase shear forces on the lumbar spine (clinical trial protocol note; efdeportes article). Fix: set the backrest/safety stops so you stop just before the tailbone leaves the seat; beginner depth about 90° at the knee."
+    },
+    {
+      "title": "Locking the knees at the top",
+      "text": "Locking the knees at the top. Why: lockout puts the load on the joint; a JBJS case report describes a lifter who dislocated both knees after locking out under very heavy load (one case, but it supports caution). Fix: stop about 10° short of straight."
+    },
+    {
+      "title": "Knees caving in on the press",
+      "text": "Knees caving in on the press. Why: strains the inside of the knee and wastes force. Fix: lighter load, knees over the second toe (NASM; Physitrack: push the knees outward)."
+    },
+    {
+      "title": "Heels lifting off the plate",
+      "text": "Heels lifting off the plate. Why: the knees travel forward and kneecap stress rises; the push shifts to the toes. Fix: move the feet a little higher and push through the heels (ExRx)."
+    },
+    {
+      "title": "Bouncing at the bottom",
+      "text": "Bouncing at the bottom. Why: momentum and a sudden load on the knees and back (NASM lists bouncing as a common error). Fix: 2–3 seconds down, a short pause, then press."
+    },
+    {
+      "title": "Holding the breath and straining on every rep",
+      "text": "Holding the breath and straining on every rep. Why: leg press produced the highest blood pressures of all lifts studied by MacDougall et al. (1985): group mean peak 320/250 mmHg in experienced bodybuilders lifting to failure, partly from the Valsalva (breath-hold) effect. Fix: breathe out on the press, stop 2–3 reps before failure."
+    },
+    {
+      "title": "Loading too much and doing tiny half-reps (ego loading)",
+      "text": "Loading too much and doing tiny half-reps (ego loading). Why: big numbers, little work, higher joint stress. Fix: choose a load that allows full planned depth for all reps (Gym 4 finder sets)."
+    },
+    {
+      "title": "Forgetting the safety catches / unloading one side",
+      "text": "Forgetting the safety catches / unloading one side. Why: an unlocked sled can drop; uneven plates can twist the sled. Fix: always lock the catches before getting out; unload evenly."
+    },
+    {
+      "title": "Pushing on the knees with the hands",
+      "text": "Pushing on the knees with the hands. Why: takes work off the legs and can push knees inward. Fix: hands on the handles."
+    }
+  ],
+  "safetyNotes": [
+    "Knee problems: use the short-range version (45–60° of knee bend) and a light load; stop if kneecap pain increases.",
+    "Lower back problems: go only as deep as your tailbone stays on the seat; the seated machine may feel easier; stop with leg pain or numbness.",
+    "High blood pressure / heart disease: breathe out on every press, avoid sets to failure and heavy singles (MacDougall 1985: leg press gave the highest blood pressures measured). Do not lift if resting BP is 180/120 mmHg or higher; get clearance at 140–179/90–119 (secondary ACSM-aligned sources).",
+    "Pregnancy: choose the seated or 45° machine over any flat-lying version, reduce load, widen the feet and limit depth so the belly is not squashed, no breath-holding; ask your obstetrician (ACOG supports continued strength training for healthy pregnancies; leg-press-specific advice comes from secondary sources).",
+    "Hip replacement or recent knee/hip surgery: deep hip bending may be restricted; follow your surgeon's limits.",
+    "Larger bodies: check the machine's maximum user weight (e.g., some commercial seated models list 136 kg or 150 kg)."
+  ],
+  "sources": [
+    "ExRx.net, Sled 45° Leg Press (quadriceps and gluteus maximus versions). https://exrx.net/WeightExercises/Quadriceps/SL45LegPress ; https://exrx.net/WeightExercises/GluteusMaximus/SL45LegPress",
+    "ExRx.net, Locking out knees on leg press (Q&A). https://exrx.net/Questions/LegPressLockOut",
+    "NASM, Exercise library: Leg Press and Single-Leg Press. https://www.nasm.org/resource-center/exercise-library/leg-press ; https://nasm.org/exercise-library/leg-press ; https://nasm.org/exercise-library/single-leg-press",
+    "ACE Fitness, Exercise Library: Seated Leg Press. https://www.acefitness.org/resources/everyone/exercise-library/154/seated-leg-press/",
+    "2024 Adult Compendium of Physical Activities (Herrmann et al., J Sport Health Sci 2024): codes 02054, 02052, 02050. https://pacompendium.com/wp-content/uploads/2024/02/1_2024-adult-compendium_1_2024.pdf ; https://pacompendium.com/conditioning-exercise/ ; https://pubmed.ncbi.nlm.nih.gov/38242596/",
+    "Escamilla RF et al. (1998), Biomechanics of the knee during closed and open kinetic chain exercises, Med Sci Sports Exerc 30(4):556–569. https://pubmed.ncbi.nlm.nih.gov/9565938/",
+    "Escamilla RF et al. (2001), Effects of technique variations on knee biomechanics during the squat and leg press, Med Sci Sports Exerc 33(9). https://pubmed.ncbi.nlm.nih.gov/11528346/",
+    "Steinkamp LA et al. (1993), Biomechanical considerations in patellofemoral joint rehabilitation, Am J Sports Med. https://pubmed.ncbi.nlm.nih.gov/8346760/",
+    "Leg press exercise in patellofemoral pain, one-year follow-up (ISBS proceedings). https://ojs.ub.uni-konstanz.de/cpa/article/view/3089",
+    "MacDougall JD et al. (1985), Arterial blood pressure response to heavy resistance exercise, J Appl Physiol 58(3):785–790. https://pubmed.ncbi.nlm.nih.gov/3980383/",
+    "Weight training-induced bilateral knee dislocation (JBJS Case Connector, OrthoBuzz summary). https://orthobuzz.jbjs.org/2019/03/29/weight-training-induced-bilateral-knee-dislocation/",
+    "Muscle activation and kinematic analysis during the inclined leg press in young females (2020). https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7700405/",
+    "Leg press foot placement EMG summaries (Escamilla 2001; Martín-Fuentes; Brazilian foot-height study): Stronger by Science and Fitsociety. https://www.strongerbyscience.com/?p=55152 ; https://fitsociety.nl/?p=20172 ; https://fitsociety.nl/?p=20308",
+    "Leg press range of motion and quadriceps hypertrophy (2025 within-subject trial; StrengthLog summary). https://www.strengthlog.com/range-of-motion-in-the-leg-press/",
+    "Clinical trial protocol (NCT07351097), mini-squat plus leg press (notes on pelvic tilt and lumbar shear). https://cdn.clinicaltrials.gov/large-docs/97/NCT07351097/Prot_SAP_ICF_000.pdf",
+    "EF Deportes, O leg press 45 graus (kinesiology of the 45° press). https://efdeportes.com/efd215/o-leg-press-45-graus.htm",
+    "Barbell Logic, How to perform the leg press exercise. https://barbell-logic.com/leg-press-exercise-how-to/",
+    "WebMD, How to do a leg press. https://www.webmd.com/fitness-exercise/how-to-do-a-leg-press",
+    "Physitrack, Inclined leg press. https://us.physitrack.com/home-exercise-video/leg-press---version-2",
+    "Motra (Train Fitness), Leg press. https://motra.com/exercises/legPress",
+    "Muscle & Strength, Leg Press 101. https://www.muscleandstrength.com/node/49962",
+    "Livestrong, 6 leg press mistakes (coaching cues; lower-evidence source). https://livestrong.com/article/13773374-leg-press-mistakes",
+    "Skelcore, 45 degree leg press guide (safety catches; lower-evidence source). https://www.skelcore.com/guides/45-degree-leg-press-mastering-form-angles",
+    "Leg press weight calculator (sin 45° effective load; low-quality source, used only as an estimate). https://calculator.academy/leg-press-weight-calculator/",
+    "Jerai Fitness (India), 45° Leg Press product pages (dimensions). https://jeraifitness.com/products/strength-load-on-45deg-leg-press ; https://jeraifitness.com/products/strength-falcon-45deg-leg-press",
+    "Kibi Sports (India), weight plate listings (1.25–25 kg plates). https://shop.kibisports.com/products/kore-rubber-10-40-kg-spare-weight-plates-combo ; https://shop.kibisports.com/en-intlnd/products/usi-rwp-tough-rubber-weight-plate",
+    "Selectorized leg press specifications (5 kg increments; max user weights): Primal Strength, Fitness Supply, Life Fitness Hammer Strength Select. https://gymequipment.co.uk/primal-strength-stealth-leg-press-selectorised-machine ; https://fitnesssupply.com/products/185kg-pin-select-seated-leg-press-usss9100 ; https://lifefitness.com/it-it/prodotti/forza/selectorized/hammer-strength-select-seated-leg-press",
+    "Zourdos MC et al. (2016), RIR-based RPE scale. https://openrepository.aut.ac.nz/items/efef3b25-6701-4fb5-bb82-55fcd2a26027/full",
+    "ACSM (2009), Progression models in resistance training for healthy adults. https://www.sportgeneeskunde.com/wp-content/uploads/ACSM-Position-Stand-Progression-Models-in-Resistance-Training-for-Healthy-Adults.pdf",
+    "ACSM (Zaleski), exercise for hypertension. https://acsm.org/?p=18319",
+    "Resistance training in hypertensives (Frontiers in Physiology 2020 review). https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2020.00481/pdf",
+    "Colberg SR et al. (2016), ADA position statement. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/",
+    "ACC summary of the 2023 AHA statement on resistance exercise. https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2023/12/19/15/33/resistance-exercise-training",
+    "AHA Professional, physical activity for elevated BP or cholesterol (Gibbs et al.). https://professional.heart.org/en/science-news/Physical-Activity-as-a-Critical-Component-of-First-Line-Treatment-for-Elevated-BP-or-Cholesterol/commentary",
+    "Donnelly JE et al. (2009), ACSM position stand on weight loss. https://pubmed.ncbi.nlm.nih.gov/19127177/",
+    "PCOS exercise position statement / 2023 guideline evidence. https://vuir.vu.edu.au/45855/1/1-s2.0-S2772696723000054-main.pdf",
+    "Exercise in hypothyroidism, systematic review (2023). https://pubmed.ncbi.nlm.nih.gov/37999992/",
+    "Pharmacy Magazine CPD, Exercise and asthma. https://www.pharmacymagazine.co.uk/cpd-modules/making-a-difference-in-asthma-care/exercise-and-asthma-528343",
+    "Osteoporosis Canada, Too Fit To Fracture. https://osteoporosis.ca/wp-content/uploads/2014-07-25-Are-you-too-fit-to-fracture-for-patients.pdf ; https://www.bonehealthandosteoporosis.org/wp-content/uploads/2016/09/OC-Too-Fit-To-Fracture-Osteo-Exercise-Book.pdf",
+    "ACOG Committee Opinion No. 804 (abstract record). https://opqic.org/acog-committee-opinion-no-804-physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period/",
+    "Can you leg press while pregnant? (secondary, lower-evidence). https://biologyinsights.com/can-you-leg-press-while-pregnant/",
+    "NNUH NHS, Post-natal physiotherapy advice. https://www.nnuh.nhs.uk/publication/download/post-natal-physiotherapy-advice-and-exercises-v2-1",
+    "Royal Devon NHS, Postnatal physiotherapy advice. https://www.royaldevon.nhs.uk/media/ibneih1b/patient-information-leaflet-postnatal-physiotherapy-advice-rde-20-143-001.pdf",
+    "arXiv (2023), pose-based repetition counting limitations. https://arxiv.org/html/2308.08632v2"
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 28.6,
+      "70kg": 24.5,
+      "80kg": 21.4
+    },
+    "per300kcal": {
+      "60kg": 85.7,
+      "70kg": 73.5,
+      "80kg": 64.3
+    }
+  },
+  "gymAccess": [
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "strength",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "knee_friendly_short_range",
+    "leg_day",
+    "full_body_machine_circuit",
+    "20_to_60_min_sessions"
+  ],
+  "swapsByAccess": {
+    "none": "Bodyweight squat (Home 1) or wall sit (Home 10)",
+    "home_equipment": "Dumbbell goblet squat (Home 15) or Bulgarian split squat (Home 22)",
+    "basic_gym": "Smith machine squat (Gym 14) or goblet squat; seated leg press if available",
+    "full_gym": "Hack squat machine (Gym 13) or the other leg press type (seated vs 45-degree)"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "Breathe out on every press; moderate loads 10-15 reps, stop 2-3 reps before failure; rest > 60 s; no lifting if resting BP >= 180/120",
+      "source": "MacDougall et al. 1985; ACSM hypertension guidance"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "2-3 non-consecutive resistance days per week; usual glucose checks if on insulin or sulfonylureas",
+      "source": "ADA position statement, Colberg et al. 2016"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "After clearance: light load, 10-15 reps, continuous breathing, no straining",
+      "source": "AHA resistance exercise statements (2007, 2023)"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "Part of 2+ days/week resistance work with aerobic activity",
+      "source": "AHA scientific statement (Gibbs et al.)"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Seated machine may be more comfortable than the reclined sled; feet slightly wider; check machine maximum user weight",
+      "source": "ACSM weight management position stand (Donnelly et al. 2009); manufacturer listings"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "Fits muscle-strengthening guidance; no leg-press-specific advice found",
+      "source": "International PCOS guideline 2023 / exercise position statement"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "Train normally if controlled; start at beginner level with ongoing fatigue",
+      "source": "Systematic review 2023 (PubMed 37999992)"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Warm up and keep reliever inhaler nearby",
+      "source": "Asthma exercise guidance (Pharmacy Magazine CPD citing Asthma UK)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Short range (45-60 degrees knee bend), lighter load, slow tempo; stop if pain rises",
+      "source": "Steinkamp et al. 1993; leg press trials in patellofemoral pain and knee OA"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Limit depth so tailbone stays on seat; brace; seated machine; stop with leg pain",
+      "source": "ExRx; NASM; clinicaltrials.gov protocol note"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "ok",
+      "change": "Little shoulder load; light grip, no shrugging (no condition-specific source found)",
+      "source": "Not found"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "modify",
+      "change": "2x/week, 8-12 reps; avoid depth where the lower back rounds; with spine fracture see a physiotherapist first",
+      "source": "Osteoporosis Canada, Too Fit To Fracture"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "modify",
+      "change": "Seated or 45-degree machine, lighter load, wider feet and limited depth for belly room, no breath-holding; ask obstetrician",
+      "source": "ACOG Committee Opinion 804 (secondary citations); pregnancy gym guides"
+    },
+    {
+      "condition": "postpartum",
+      "status": "modify",
+      "change": "Pelvic floor work first; light machine leg work once cleared, especially after caesarean",
+      "source": "NHS postnatal physiotherapy leaflets (NNUH, Royal Devon)"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Only with surgeon or physiotherapist approval; knee and hip surgery often restrict depth",
+      "source": "Not found"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "gym"
+    ],
+    "bodyRegion": [
+      "lower"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "fat_loss",
+      "muscle",
+      "strength",
+      "endurance"
+    ],
+    "intensity": "moderate",
+    "noise": "quiet",
+    "space": "machine",
+    "typicalMinutes": 10,
+    "kcalPer10min70kg": 41,
+    "difficulty1to5": 2,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Gym",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Strength",
+    "Legs",
+    "Glutes",
+    "Rep counter",
+    "10–20 min"
+  ],
+  "needsReview": [
+    "last_researched 2026-10-16 differs from file date 2026-10-22"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-22",
+      "file": "FitPlate_Fitness_2026-10-22.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": [
+    "2026-10-22: last_researched 2026-10-16 differs from file date 2026-10-22"
+  ]
+}

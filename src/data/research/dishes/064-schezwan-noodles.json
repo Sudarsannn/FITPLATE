@@ -1,0 +1,713 @@
+{
+  "id": "064-schezwan-noodles",
+  "number": 64,
+  "name": "Schezwan Noodles",
+  "cuisine": "Indo-Chinese (Mumbai street and restaurant style)",
+  "dietType": "veg",
+  "mealType": [
+    "lunch",
+    "dinner"
+  ],
+  "difficulty": "Beginner",
+  "prepMin": 12,
+  "cookMin": 18,
+  "servings": 1,
+  "ingredients": [
+    {
+      "ingredientId": "hakka-noodles-dry",
+      "name": "Hakka noodles, dry (egg-free, wheat)",
+      "quantity": 75,
+      "unit": "g",
+      "householdMeasure": "½ of a 150 g packet"
+    },
+    {
+      "ingredientId": null,
+      "name": "Water, for boiling noodles",
+      "quantity": 1,
+      "unit": "l",
+      "householdMeasure": "4 cups"
+    },
+    {
+      "ingredientId": "salt",
+      "name": "Salt, for the boiling water",
+      "quantity": 1.5,
+      "unit": "g",
+      "householdMeasure": "¼ tsp"
+    },
+    {
+      "ingredientId": "cooking-oil-refined-sunflower-groundnut",
+      "name": "Refined sunflower oil",
+      "quantity": 12.5,
+      "unit": "g",
+      "householdMeasure": "2½ tsp (½ tsp for the boiled noodles + 2 tsp for the stir-fry)"
+    },
+    {
+      "ingredientId": "garlic",
+      "name": "Garlic (lahsun)",
+      "quantity": 6,
+      "unit": "g",
+      "householdMeasure": "2 large cloves, finely chopped"
+    },
+    {
+      "ingredientId": "ginger",
+      "name": "Ginger (adrak)",
+      "quantity": 2,
+      "unit": "g",
+      "householdMeasure": "½ tsp, finely chopped"
+    },
+    {
+      "ingredientId": "spring-onion",
+      "name": "Spring onion (hara pyaz)",
+      "quantity": 15,
+      "unit": "g",
+      "householdMeasure": "2 stalks; whites and greens chopped separately"
+    },
+    {
+      "ingredientId": "onion",
+      "name": "Onion",
+      "quantity": 30,
+      "unit": "g",
+      "householdMeasure": "¼ medium, thinly sliced"
+    },
+    {
+      "ingredientId": "carrot",
+      "name": "Carrot",
+      "quantity": 25,
+      "unit": "g",
+      "householdMeasure": "¼ medium, cut into thin matchsticks"
+    },
+    {
+      "ingredientId": "cabbage",
+      "name": "Cabbage (patta gobi)",
+      "quantity": 40,
+      "unit": "g",
+      "householdMeasure": "about ⅔ cup, finely shredded"
+    },
+    {
+      "ingredientId": "green-capsicum",
+      "name": "Green capsicum (shimla mirch)",
+      "quantity": 25,
+      "unit": "g",
+      "householdMeasure": "¼ medium, thinly sliced"
+    },
+    {
+      "ingredientId": null,
+      "name": "Schezwan chutney / Schezwan sauce (ready-made, e.g. Ching's Secret)",
+      "quantity": 25,
+      "unit": "g",
+      "householdMeasure": "1½ tbsp"
+    },
+    {
+      "ingredientId": null,
+      "name": "Soy sauce (dark or light)",
+      "quantity": 5,
+      "unit": "ml",
+      "householdMeasure": "1 tsp"
+    },
+    {
+      "ingredientId": null,
+      "name": "Vinegar (white or synthetic)",
+      "quantity": 2.5,
+      "unit": "ml",
+      "householdMeasure": "½ tsp"
+    },
+    {
+      "ingredientId": "tomato-ketchup",
+      "name": "Tomato ketchup",
+      "quantity": 6,
+      "unit": "g",
+      "householdMeasure": "1 tsp"
+    },
+    {
+      "ingredientId": "black-pepper-powder",
+      "name": "Black pepper powder (kali mirch)",
+      "quantity": 0.2,
+      "unit": "g",
+      "householdMeasure": "a pinch"
+    },
+    {
+      "ingredientId": "salt",
+      "name": "Salt, for the stir-fry",
+      "quantity": 0.3,
+      "unit": "g",
+      "householdMeasure": "a small pinch, only if needed after tasting"
+    }
+  ],
+  "equipment": [
+    "Large pot or saucepan (at least 2 litres) for boiling the noodles",
+    "Colander or large strainer",
+    "Wok or wide kadai (a heavy wide frying pan also works; cook on the highest heat and don't crowd it)",
+    "Two forks, tongs or chopsticks for tossing (a spatula plus a fork is fine)",
+    "Chopping board and a sharp knife",
+    "Measuring spoons (normal teaspoons and a tablespoon are fine stand-ins) and a plate"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "title": "Boil the water",
+      "text": "Put 1 litre water and ¼ tsp salt in a large pot on high heat.",
+      "timerSec": 300,
+      "tip": "Plenty of water keeps the noodles from turning sticky.",
+      "visualCue": "Large, rolling bubbles across the whole surface.",
+      "cameraCheck": "The pot of boiling water",
+      "videoShot": "Steam rising from a pot at a rolling boil."
+    },
+    {
+      "n": 2,
+      "title": "Measure the noodles",
+      "text": "Weigh out 75 g dry hakka noodles (half a 150 g packet).",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "About one and a half dry noodle bundles.",
+      "cameraCheck": "The dry noodles on a plate",
+      "videoShot": "Hands breaking a packet of noodles in half."
+    },
+    {
+      "n": 3,
+      "title": "Add the noodles",
+      "text": "Slide the noodles into the boiling water and loosen them gently with a fork.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "The bundles separate and sink.",
+      "cameraCheck": "Noodles in the boiling water",
+      "videoShot": "A fork loosening noodles in bubbling water."
+    },
+    {
+      "n": 4,
+      "title": "Cook until just done",
+      "text": "Boil on high heat, stirring once or twice, until the noodles are cooked but still firm (follow the packet time, usually 3–5 min).",
+      "timerSec": 180,
+      "tip": "Stop a minute early; the noodles cook again in the wok. Overcooked noodles break and turn mushy.",
+      "visualCue": "A strand pressed between fingers breaks cleanly with no hard white core and still has a slight bite.",
+      "cameraCheck": "One noodle strand pinched between two fingers",
+      "videoShot": "Tongs lifting a few strands out of the pot."
+    },
+    {
+      "n": 5,
+      "title": "Drain and rinse",
+      "text": "Tip the noodles into a colander and rinse under cold running water for 15–20 seconds.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "The noodles feel cool and no longer steam.",
+      "cameraCheck": "The drained noodles in the colander",
+      "videoShot": "Cold water running over noodles in a colander."
+    },
+    {
+      "n": 6,
+      "title": "Oil the noodles",
+      "text": "Shake off the water and toss the noodles with ½ tsp oil. Spread them on a plate.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Glossy, loose strands that don't clump.",
+      "cameraCheck": "The oiled noodles spread on a plate",
+      "videoShot": "Fingers lifting shiny, separate noodles."
+    },
+    {
+      "n": 7,
+      "title": "Chop the garlic and ginger",
+      "text": "Finely chop 2 large garlic cloves (6 g) and ½ tsp ginger (2 g).",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "Tiny, even bits.",
+      "cameraCheck": "The chopped garlic and ginger on the board",
+      "videoShot": "A knife rocking over chopped garlic."
+    },
+    {
+      "n": 8,
+      "title": "Cut the spring onion",
+      "text": "Chop 2 spring onion stalks; keep the white parts and the green parts in separate heaps.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "A small white heap and a larger green heap.",
+      "cameraCheck": "The two heaps on the board",
+      "videoShot": "A knife slicing spring onion into rings."
+    },
+    {
+      "n": 9,
+      "title": "Slice the onion and capsicum",
+      "text": "Thinly slice 30 g onion (¼ medium) and 25 g capsicum (¼ medium).",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "Thin, even strips.",
+      "cameraCheck": "The sliced onion and capsicum",
+      "videoShot": "A knife cutting capsicum into thin strips."
+    },
+    {
+      "n": 10,
+      "title": "Cut the carrot",
+      "text": "Peel and cut 25 g carrot (¼ medium) into thin matchsticks.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "Thin orange sticks about 4–5 cm long.",
+      "cameraCheck": "The carrot matchsticks",
+      "videoShot": "Knife cutting a carrot into fine strips."
+    },
+    {
+      "n": 11,
+      "title": "Shred the cabbage",
+      "text": "Finely shred 40 g cabbage (about ⅔ cup).",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Thin, pale-green ribbons.",
+      "cameraCheck": "The shredded cabbage",
+      "videoShot": "A knife shredding a cabbage wedge."
+    },
+    {
+      "n": 12,
+      "title": "Set out the sauces",
+      "text": "Put 1½ tbsp Schezwan chutney, 1 tsp soy sauce, ½ tsp vinegar and 1 tsp ketchup in a small bowl, next to the stove.",
+      "timerSec": 60,
+      "tip": "Taste your brand of Schezwan chutney first: brands vary a lot in heat and salt. If it is very hot, start with 1 tbsp.",
+      "visualCue": "A small bowl with a red paste and dark liquid.",
+      "cameraCheck": "The sauce bowl",
+      "videoShot": "Schezwan chutney spooned into a small bowl."
+    },
+    {
+      "n": 13,
+      "title": "Heat the wok",
+      "text": "Put the wok on the highest heat and add 2 tsp oil.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "The oil shimmers and the first wisp of smoke appears.",
+      "cameraCheck": "The hot oil in the wok",
+      "videoShot": "Oil swirling around a hot wok."
+    },
+    {
+      "n": 14,
+      "title": "Fry the garlic and ginger",
+      "text": "Add the chopped garlic and ginger and stir.",
+      "timerSec": 20,
+      "tip": "Don't let it brown dark; burnt garlic tastes bitter.",
+      "visualCue": "Sizzling, fragrant, just turning pale gold.",
+      "cameraCheck": "The garlic in the wok",
+      "videoShot": "Garlic sizzling in oil."
+    },
+    {
+      "n": 15,
+      "title": "Add spring onion whites and onion",
+      "text": "Add the spring onion whites and the sliced onion; toss.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "The onion turns glossy and just translucent at the edges but is still crunchy.",
+      "cameraCheck": "The onion in the wok",
+      "videoShot": "A spatula tossing onion slices."
+    },
+    {
+      "n": 16,
+      "title": "Add carrot and capsicum",
+      "text": "Add the carrot and capsicum; toss on high heat.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Colours brighten; the vegetables are still crisp.",
+      "cameraCheck": "The vegetables in the wok",
+      "videoShot": "Orange and green strips tossed in the wok."
+    },
+    {
+      "n": 17,
+      "title": "Add the cabbage",
+      "text": "Add the cabbage and toss.",
+      "timerSec": 60,
+      "tip": "Keep the heat high and keep moving; low heat makes the vegetables watery.",
+      "visualCue": "The cabbage wilts slightly but stays crunchy.",
+      "cameraCheck": "The mixed vegetables in the wok",
+      "videoShot": "Cabbage ribbons tossed with the other vegetables."
+    },
+    {
+      "n": 18,
+      "title": "Add the sauces",
+      "text": "Pour in the sauce bowl (Schezwan chutney, soy sauce, vinegar and ketchup) and stir for a few seconds.",
+      "timerSec": 30,
+      "tip": "Turn on the exhaust fan or open a window; the chilli fumes can make you cough.",
+      "visualCue": "The vegetables turn red and glossy; a sharp chilli-vinegar smell rises.",
+      "cameraCheck": "The sauced vegetables",
+      "videoShot": "Red sauce sizzling as it hits the hot wok."
+    },
+    {
+      "n": 19,
+      "title": "Add the noodles",
+      "text": "Add the boiled noodles to the wok.",
+      "timerSec": 15,
+      "tip": null,
+      "visualCue": "The noodles sit on top of the vegetables.",
+      "cameraCheck": "The noodles in the wok",
+      "videoShot": "Noodles dropped onto the red vegetables."
+    },
+    {
+      "n": 20,
+      "title": "Toss",
+      "text": "Toss with two forks or tongs, lifting from the bottom, on high heat until every strand is coated.",
+      "timerSec": 60,
+      "tip": "Lift and toss rather than stir; stirring breaks the noodles.",
+      "visualCue": "Evenly red-orange noodles, hot throughout, with no pale patches.",
+      "cameraCheck": "A forkful of noodles lifted from the wok",
+      "videoShot": "Tongs lifting and tossing red noodles."
+    },
+    {
+      "n": 21,
+      "title": "Season",
+      "text": "Add a pinch of black pepper, taste and add a small pinch of salt only if needed. Toss once more.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "Spicy, tangy and salty enough when tasted.",
+      "cameraCheck": "The noodles after seasoning",
+      "videoShot": "Pepper dusted over the noodles."
+    },
+    {
+      "n": 22,
+      "title": "Finish with spring onion greens",
+      "text": "Switch off the heat, add the spring onion greens and toss once.",
+      "timerSec": 15,
+      "tip": null,
+      "visualCue": "Bright green flecks through the red noodles.",
+      "cameraCheck": "The finished noodles in the wok",
+      "videoShot": "Spring onion greens scattered over steaming noodles."
+    },
+    {
+      "n": 23,
+      "title": "Serve",
+      "text": "Transfer to a plate and serve hot.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "A heap of glossy, red, separate noodles with crunchy vegetables.",
+      "cameraCheck": "The served plate",
+      "videoShot": "Noodles twirled onto a plate with a fork."
+    }
+  ],
+  "nutritionPerServing": {
+    "kcal": 485,
+    "proteinG": 11.3,
+    "carbsG": 69,
+    "fatG": 16.5,
+    "fibreG": 5.9
+  },
+  "microNutrientsEstimate": {
+    "values": {
+      "calcium": 0.9,
+      "iron": 0,
+      "magnesium": 0.8,
+      "potassium": 16.9,
+      "sodium": 54.4,
+      "vitamin-a": 281.3,
+      "vitamin-c": 44.3,
+      "vitamin-d": 0.4,
+      "vitamin-e": 5.1,
+      "vitamin-k": 51.8
+    },
+    "coveragePct": 10,
+    "basis": "partial estimate from ingredient quantities"
+  },
+  "asOrdered": {
+    "price": {
+      "priceHistory": [
+        {
+          "date": "2026-10-16",
+          "min": 140,
+          "max": 270,
+          "avg": 205,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-10-16.md"
+        }
+      ],
+      "currentEstimate": {
+        "min": 170,
+        "max": 240,
+        "avg": 210
+      },
+      "method": "single",
+      "trend": "unknown",
+      "change30dPct": null,
+      "lastObserved": "2026-10-16",
+      "stale": false,
+      "seasonal": false,
+      "listingCount": 11,
+      "platforms": [
+        "magicpin",
+        "Swiggy",
+        "Zomato"
+      ],
+      "outOfStock": false,
+      "confirmed": true,
+      "checkNotes": []
+    },
+    "nutrition": {
+      "calories": {
+        "value": null,
+        "source": null
+      },
+      "protein": {
+        "value": null,
+        "source": null
+      },
+      "carbs": {
+        "value": null,
+        "source": null
+      },
+      "fat": {
+        "value": null,
+        "source": null
+      },
+      "fibre": {
+        "value": null,
+        "source": null
+      }
+    },
+    "restaurantsSampled": null,
+    "platforms": [
+      "Swiggy",
+      "Zomato",
+      "magicpin"
+    ]
+  },
+  "orderPrice": {
+    "priceHistory": [
+      {
+        "date": "2026-10-16",
+        "min": 140,
+        "max": 270,
+        "avg": 205,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-10-16.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 170,
+      "max": 240,
+      "avg": 210
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-16",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 11,
+    "platforms": [
+      "magicpin",
+      "Swiggy",
+      "Zomato"
+    ],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
+  },
+  "healthiness": {
+    "score": 5,
+    "restaurantScore": 3,
+    "reasons": [
+      "mostly refined-wheat (maida) noodles, so it digests fast with a high glycaemic response and only about 11 g protein, and the Schezwan chutney and soy sauce bring about 1,080 mg sodium (over half the day's limit). On the plus side it is stir-fried, not deep-fried, uses a measured 2½ tsp of unsaturated oil, and has about 135 g of vegetables, giving vitamin A, C and K and about 6 g fibre (est.). Restaurant versions use much more oil and sauce, often MSG, a larger portion and fewer vegetables, and are usually eaten with fried Manchurian."
+    ]
+  },
+  "researchRating": {
+    "score": 4.3,
+    "basis": "a hugely popular Indo-Chinese street and restaurant dish across Mumbai and India, with recipes on every major Indian recipe site (Hebbar's Kitchen, Veg Recipes of India, Cook With Manali, Tarla Dalal, Spice Up The Curry, Yummy Tummy Aarthi) and listed by almost every Indo-Chinese outlet on the delivery apps; Hebbar's Kitchen's recipes are rated highly by readers. Deduction because it is widely seen as heavy, oily, salty junk food, and restaurant versions are often criticised as greasy or too spicy."
+  },
+  "storage": "Cool and refrigerate within 1 hour (cooked noodles, like rice, can grow Bacillus cereus if left warm). Fridge: up to 1–2 days in an airtight box; the vegetables lose their crunch. Freezer: not recommended (the noodles turn mushy and the vegetables watery). To reheat, sprinkle 1 tbsp water and toss in a hot pan for 2–3 min, or microwave covered for 1½–2 min, stirring halfway, until steaming hot throughout. Reheat only once.",
+  "leftoverRemix": "Schezwan noodle frankie. Warm a roti or paratha on a tawa, spread 1 tsp mint chutney or a little mayo, add a line of reheated Schezwan noodles, some sliced onion and shredded cabbage, roll it up tightly and toast seam-side down for 1 min. A Mumbai street-style wrap (Hebbar's Kitchen and Ranveer Brar both publish noodle frankies) that turns a soggy leftover into a crisp, hand-held snack.",
+  "burnOff": "about 6.9 km of running (485 ÷ 70 kcal/km, for a 70 kg adult), or about 9.7 km of brisk walking (about 2 h at 5 km/h, using about 50 kcal/km for walking) (est.). With a side of Manchurian gravy (about +225 kcal), add about 3.2 km of running.",
+  "sources": [
+    "Hebbar's Kitchen, Schezwan Noodles Recipe with Homemade Sauce, Street Style (250 g noodles for 2; garlic, spring onion, onion, carrot, cabbage, beans, capsicum; 2 tbsp Schezwan sauce; keep the heat high and don't over-mix): https://hebbarskitchen.com/schezwan-noodles-recipe-szechuan-noodles/ and print version https://hebbarskitchen.com/wprm_print/schezwan-noodles-recipe-with-homemade-sauce-street-style",
+    "Hebbar's Kitchen, Schezwan noodles (quick version with rice noodles, Maggi or any cooked noodles; 1 tbsp Schezwan sauce, 1 tsp soy sauce, 1 tsp vinegar, tomato sauce): https://hebbarskitchen.com/schezwan-noodles-recipe-chinese-schezuan-noodles-recipe/",
+    "Hebbar's Kitchen, Noodles frankie / Schezwan noodles frankie: https://hebbarskitchen.com/noodles-frankie-recipe-kathi-roll/",
+    "Veg Recipes of India (Dassana), Schezwan Noodles (Street Style) (vegan; 2 tbsp oil; homemade sauce; noodles boiled, rinsed and oiled): https://www.vegrecipesofindia.com/schezwan-noodles-recipe/",
+    "Cook With Manali, Schezwan Noodles (300 g thin egg-free noodles; 5–6 tbsp homemade sauce): https://www.cookwithmanali.com/schezwan-noodles/",
+    "Spice Up The Curry, Schezwan Noodles (227 g noodles, ¼ cup Schezwan sauce, 3 servings): https://www.spiceupthecurry.com/schezwan-noodles-recipe/",
+    "Yummy Tummy Aarthi, Veg Schezwan Noodles (½ cup sauce for 4; about 335 kcal per serving): https://www.yummytummyaarthi.com/schezwan-noodles-recipe-veg-schezwan/",
+    "Borosil, Veg Schezwan Noodles Recipe (300 g noodles, 5 tbsp Schezwan sauce, 4 servings): https://myborosil.com/blogs/borosil-blog/veg-schezwan-noodles-recipe",
+    "Tarla Dalal, Schezwan noodles (3 tbsp oil, 1 tbsp chopped garlic, chilli oil): https://www.tarladalal.com/schezwan-noodles--chinese-schezuan-noodles-recipe-22762r",
+    "My Ginger Garlic Kitchen, Easy Veg Schezwan Noodles (200 g chow mein noodles): https://www.mygingergarlickitchen.com/veg-schezwan-noodles-recipe-video-how-to-make-easy-veg-schezwan-noodles",
+    "Cook Click N Devour, Schezwan Noodles (Vegan): https://www.cookclickndevour.com/schezwan-noodles-vegan/",
+    "Cooking Carnival, Schezwan Noodles (about 364 kcal per serving): https://www.cookingcarnival.com/schezwan-noodles/",
+    "Herbivore Cucina, Schezwan noodles (any noodles, including rice noodles): https://herbivorecucina.com/wprm_print/schezwan-noodles",
+    "Divine Taste, Vegetarian Schezwan noodles (no onion or garlic): https://www.divinetaste.com/vegetarian-schezwan-noodles/",
+    "Nisha Madhulika, Veg Chowmein without onion and garlic: https://nishamadhulika.com/en/2354-veg_chowmein_recipe_without_onion_garlic.html and Schezwan sauce without onion and garlic: https://ipv4.nishamadhulika.com/en/2259-homemade_schezwan_sauce_recipe_without_onion_and_garlic.html",
+    "iShopIndian, Ching's Secret Jain Schezwan Chutney (no onion, no garlic; contains celery): https://www.ishopindian.com/Indian-Chinese-Products/ching-s-secret-jain-schezwan-chutney-no-onion-no-garlic-250-gm",
+    "Veg on Plate, Veg Spicy Schezwan Paneer Noodles: https://www.vegonplate.com/2022/10/veg-schezwan-paneer-noodles-recipe.html",
+    "Homegrown, Sagar Chinese, Mumbai late-night Chinese (Schezwan noodles with Manchurian a highlight): https://homegrown.co.in/amp/story/homegrown-explore/the-mumbai-joint-serving-seriously-tasty-chinese-food-till-4-am",
+    "Swiggy Instamart, Schezwan noodles recipe page (376 kcal, serves 4; not used as as-ordered data): https://www.swiggy.com/instamart/recipe/schezwan-noodles",
+    "FatSecret India, Ching's Secret Schezwan Chutney (172 kcal, 10.6 g fat per 100 g): https://www.fatsecret.co.in/calories-nutrition/chings-secret/schezwan-chutney/1-tbsp?frc=True",
+    "Fitatu, Schezwan Chutney (Ching's Secret) (177 kcal, 11.2 g fat, 3.8 g saturated per 100 g): https://www.fitatu.com/catalog/en/schezwan-chutney--120189798",
+    "Open Food Facts, Ching's Secret Schezwan Chutney (salt 4.93 g; basis unclear): https://world.openfoodfacts.org/product/8901595863280/schezwan-chutney-ching-s-secret",
+    "Nutribit, Veg Schezwan Noodles (350 kcal per 250 g; not used as as-ordered data): https://www.nutribit.app/food/66acbdcb43da2e33ae5ca92e",
+    "Zomato, Mumbai Chaska, Borivali West (Veg Schezwan Noodles ₹143): https://www.zomato.com/mumbai/mumbai-chaska-1-borivali-west/order",
+    "Zomato, Swanky, Andheri Lokhandwala (Veg ₹199, Chicken ₹219): https://www.zomato.com/mumbai/swanky-andheri-lokhandwala/order",
+    "Zomato, Nom Nom Express, Kandivali West (Veg ₹269): https://www.zomato.com/mumbai/nom-nom-express-kandivali-west/order",
+    "Zomato, Chinese Wok, Lower Parel (Veg Half 500 ml ₹259, Full 1,000 ml ₹329; Egg Full ₹349): https://www.zomato.com/mumbai/chinese-wok-lower-parel/order",
+    "Zomato, Chinese Wok, Mahalaxmi (Veg Half 500 ml ₹259): https://www.zomato.com/mumbai/chinese-wok-wok-express-churchgate/order",
+    "Zomato, Flavours Of China, Bandra East (Chicken ₹350, Egg ₹330; context only): https://www.zomato.com/mumbai/flavours-of-china-bandra-east/order",
+    "Zomato, Sizzling Schezwan, Dombivli East (Veg ₹190; MMR): https://www.zomato.com/mumbai/sizzling-schezwan-1-dombivali-east-thane/order",
+    "Zomato, Veg Schezwan Noodles in Mumbai dish page (cost for two only; not used): https://www.zomato.com/mumbai/restaurants/dish-veg-schezwan-noodles",
+    "magicpin, Pure Veg Chinese, Sakinaka (₹149 / ₹106): https://magicpin.in/Mumbai/Sakinaka/Restaurant/Pure-Veg-Chinese/store/3771cb",
+    "magicpin, Shan Chinese, Jogeshwari (₹160): https://magicpin.in/Mumbai/Jogeshwari/Restaurant/Shan-Chinese/store/3ba46a/delivery?itemId=17608182",
+    "magicpin, One By Two, Mahim East (₹179; Veg Noodles Meal ₹279): https://magicpin.in/Mumbai/Mahim-East/Restaurant/One-By-Two/store/164a81a/delivery",
+    "magicpin, Shanghai Xpress, Vikhroli East (₹190): https://magicpin.in/Mumbai/Vikhroli-East/Restaurant/Shanghai-Xpress/store/526a9a",
+    "magicpin, Afzal Restaurant, Mazgaon (₹200): https://magicpin.in/Mumbai/Mazgaon/Restaurant/Afzal-Restaurant/store/23601/delivery?itemId=4863718",
+    "magicpin, Govindas Veg Treat, Malad West (₹210): https://magicpin.in/Mumbai/The-Mall/Restaurant/Govindas-Veg-Treat/store/52c846",
+    "magicpin, Mama's China Garden, Dombivli East (₹200; MMR): https://magicpin.in/Mumbai/Dombivali/Restaurant/Mamas-China-Garden/store/39c241/menu",
+    "magicpin, Shanti Lunch Home, Vashi (₹247, ₹260 struck through; MMR): https://magicpin.in/Navi-Mumbai/Vashi/Restaurant/Shanti-Lunch-Home/store/381210/menu",
+    "magicpin, Chin-Ease, Kharghar (₹169; MMR): https://magicpin.in/Navi-Mumbai/Sector-3/Restaurant/Chin-ease/store/1555171",
+    "magicpin, China Magic, Chembur (no Schezwan noodles price visible): https://magicpin.in/Mumbai/Chembur/Restaurant/China-Magic/store/29923/menu",
+    "Swiggy, 5 Spice, Matunga (Veg Schezwan Noodles 500 ml ₹255; Chicken 500 ml ₹265): https://www.swiggy.com/city/mumbai/5-spice-matunga-rest1071256",
+    "Swiggy, 5 Spice, Wadala (Chicken 500 ml ₹379; context only): https://www.swiggy.com/city/mumbai/5-spice-wadala-rest1071256",
+    "Swiggy, 5 Spice, Khar (Chicken 500 ml ₹265; context only): https://www.swiggy.com/city/mumbai/5-spice-khar-rest3277",
+    "Swiggy, 5 Spice, Borivali West (conflicting figures; not used): https://www.swiggy.com/restaurants/5-spice-west-borivali-mumbai-10449",
+    "Swiggy, Wok HonG Chinese Food, Ambarnath (veg about ₹180, Paneer Schezwan Noodles ₹239; MMR): https://www.swiggy.com/city/mumbai/wok-hong-chinese-food-ambarnath-rest586473",
+    "Swiggy, Rajmata Veg Treat, Panvel-Kamothe (Paneer Schezwan Noodles ₹170; MMR): https://www.swiggy.com/restaurants/rajmata-veg-treat-panvel-kamothe-mumbai-652409",
+    "Swiggy, Best Veg Noodles Restaurants in Mumbai 2025 (unnamed prices; context only): https://www.swiggy.com/city/mumbai/veg-noodles-dish-restaurants",
+    "Unsplash, Schezwan noodles / chow mein photos (Unsplash+ paid licence; not usable): https://unsplash.com/s/photos/asian-food",
+    "USDA FoodData Central: https://fdc.nal.usda.gov/",
+    "IFCT 2017, Indian Food Composition Tables (ICMR-NIN): https://www.nin.res.in/",
+    "ICMR-NIN, Nutrient Requirements for Indians 2020 (RDA / EAR): https://www.nin.res.in/"
+  ],
+  "allergens": [
+    "egg",
+    "gluten",
+    "soy",
+    "sesame"
+  ],
+  "dietClaims": [
+    "dairyFree"
+  ],
+  "fasting": {
+    "navratri": {
+      "status": "no",
+      "reason": "wheat noodles, onion, garlic and table salt are all avoided on the common North and West Indian vrat rule set"
+    },
+    "ekadashi": {
+      "status": "no",
+      "reason": "wheat (a grain) is the main ingredient, and grains are given up on Ekadashi"
+    },
+    "jain": {
+      "status": "with-changes",
+      "reason": "drop onion, spring onion, garlic, ginger and carrot and use a Jain (no onion, no garlic) Schezwan chutney; see the Jain variant"
+    },
+    "ramadan": {
+      "status": "yes",
+      "reason": "vegetarian, so there is no halal concern; quick and filling for iftar, but salty (about 2.7 g salt) and very spicy, so it is a poor choice for sehri, when it can increase thirst during the fast"
+    }
+  },
+  "dietTags": {
+    "base": "Vegetarian",
+    "jain": {
+      "status": "with-changes",
+      "reason": "drop onion, spring onion, garlic, ginger and carrot (all roots or bulbs), and use a no-onion-no-garlic (Jain) Schezwan chutney instead of a regular one; see the Jain variant"
+    },
+    "vegan": {
+      "status": "yes",
+      "reason": "egg-free hakka noodles, oil, vegetables and plant sauces; no dairy, ghee, honey or egg (check the noodle pack: some \"egg noodles\" contain egg)"
+    },
+    "pescatarian": {
+      "status": "yes",
+      "reason": "vegetarian, no meat, fish or egg, so it fits a pescatarian diet"
+    },
+    "sattvik": {
+      "status": "with-changes",
+      "reason": "drop onion, spring onion and garlic and use a no-onion-no-garlic Schezwan chutney; ginger can stay if your family allows it"
+    },
+    "glutenFree": {
+      "status": "no",
+      "reason": "the noodles are refined wheat (maida), and soy sauce and most ready-made Schezwan chutneys contain wheat; a rice-noodle version is possible (see the Gluten-free variant)"
+    },
+    "dairyFree": {
+      "status": "yes",
+      "reason": "no milk, butter, ghee, cream or paneer in the main recipe"
+    },
+    "allergensDeclared": [
+      "gluten",
+      "egg",
+      "soy",
+      "sesame"
+    ]
+  },
+  "tags": [
+    "Veg",
+    "Jain option",
+    "Gluten-free option",
+    "Dairy-free",
+    "Ramadan sehri / iftar",
+    "Contains egg",
+    "Contains gluten",
+    "Contains soy",
+    "Contains sesame",
+    "Lunch",
+    "Dinner",
+    "Indo-Chinese",
+    "Under 30 min",
+    "Beginner"
+  ],
+  "description": "Family: noodles",
+  "familyId": null,
+  "variants": [
+    {
+      "category": "Jain",
+      "status": "variant",
+      "name": "Jain Schezwan Noodles (no onion, garlic or roots)",
+      "origin": "established",
+      "linkedDishNumber": null,
+      "reason": null
+    },
+    {
+      "category": "Vegan",
+      "status": "already-fits",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": ". Main recipe already vegan (egg-free noodles, oil, no dairy). Check that the noodle pack says egg-free."
+    },
+    {
+      "category": "Gluten-free",
+      "status": "variant",
+      "name": "Schezwan Rice Noodles",
+      "origin": "established",
+      "linkedDishNumber": null,
+      "reason": null
+    },
+    {
+      "category": "Dairy-free",
+      "status": "already-fits",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": ". Main recipe already dairy-free."
+    },
+    {
+      "category": "Low-oil",
+      "status": "variant",
+      "name": "Light Schezwan Noodles (1 tsp oil)",
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": null
+    },
+    {
+      "category": "Higher-protein (paneer)",
+      "status": "variant",
+      "name": "Paneer Schezwan Noodles",
+      "origin": "established",
+      "linkedDishNumber": null,
+      "reason": null
+    }
+  ],
+  "needsReview": [
+    "dropped \"vegan\" claim: recipe has egg"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-16",
+      "file": "FitPlate_Dishes_2026-10-16.md"
+    }
+  ],
+  "mergeMethod": {
+    "nutritionPerServing": "stable (single)",
+    "orderPrice": "price engine (single)",
+    "ingredients": "newest",
+    "steps": "newest",
+    "healthiness": "newest",
+    "researchRating": "newest",
+    "sources": "union",
+    "tags": "tag engine (tags.ts) on the merged dish"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 140.0–270.0 was wider than 30% of avg 205.0; narrowed to ±15%.",
+    "2026-10-16: research declares sesame not detected from ingredient names; added"
+  ]
+}

@@ -1,0 +1,804 @@
+{
+  "id": "reverse-lunge",
+  "number": 5,
+  "name": "Reverse lunge",
+  "otherNames": [
+    "Rear lunge",
+    "Backward lunge",
+    "Step-back lunge",
+    "Reverse bodyweight lunge",
+    "Supported reverse lunge",
+    "Split squat (regression)",
+    "Dumbbell reverse lunge"
+  ],
+  "section": "home",
+  "type": "strength",
+  "equipment": [],
+  "noEquipmentAlternative": "No equipment needed; hold a wall, door frame or sturdy chair for balance, and use a folded towel under the back knee on hard floors.",
+  "musclesPrimary": [
+    "quadriceps (rectus femoris, vastus lateralis, vastus medialis, vastus intermedius)",
+    "gluteus maximus"
+  ],
+  "musclesSecondary": [
+    "adductor magnus",
+    "hamstrings",
+    "soleus",
+    "gastrocnemius",
+    "gluteus medius",
+    "gluteus minimus",
+    "erector spinae",
+    "obliques",
+    "transversus abdominis"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 3.8,
+  "compendiumCode": "02022",
+  "metOptions": [
+    {
+      "code": "02022",
+      "met": 3.8,
+      "activity": "MET: 3.8, Compendium code 02022, \"calisthenics (e.g., push-ups, sit-ups, pull-ups, lunges), moderate effort\" (2024 Adult Compendium of Physical Activities). This matches the beginner prescription in s"
+    },
+    {
+      "code": "02024",
+      "met": 2.8,
+      "activity": "Extras (text only, not used in the JSON): light calisthenics 02024 = 2.8 METs (e.g. very easy supported or partial lunges, est. mapping); vigorous calisthenics 02020 = 7.5 METs (e.g. jumping lunges or"
+    },
+    {
+      "code": "02020",
+      "met": 7.5,
+      "activity": "Extras (text only, not used in the JSON): light calisthenics 02024 = 2.8 METs (e.g. very easy supported or partial lunges, est. mapping); vigorous calisthenics 02020 = 7.5 METs (e.g. jumping lunges or"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "8-10 per leg, alternating (supported if needed)",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2 s down, 1 s pause, 1 s up",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 3,
+      "reps": "8-10 per leg, alternating (as one circuit station)",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "2 s down, 1 s pause, 1 s up",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "8-10 per leg, alternating",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "3 s down, 1 s pause, 1 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "strength",
+      "sets": 3,
+      "reps": "6-8 split squats per leg with 2 s pause",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "2 s down, 2 s pause, 1 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 2,
+      "reps": "12-15 per leg, short range if needed",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "2 s down, 1 s up",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "10-12 per leg, free-standing",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2 s down, 1 s pause, 1 s up",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "8-12 dumbbell reverse lunges per leg",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "3 s down, 1 s pause, 1 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "strength",
+      "sets": 4,
+      "reps": "6-8 dumbbell reverse lunges per leg",
+      "timeSec": null,
+      "restSec": 120,
+      "tempo": "2 s down, 1 s pause, controlled up",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "15-20 per leg or 40 s continuous alternating",
+      "timeSec": 40,
+      "restSec": 45,
+      "tempo": "2 s down, 1 s up",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "12-15 per leg, walking lunges or reverse lunge to knee drive",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "2 s down, 1 s up",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "8-12 deficit dumbbell reverse lunges per leg",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "3 s down, 1 s pause, 1 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": 4,
+      "reps": "5-6 heavy dumbbell or barbell reverse lunges per leg",
+      "timeSec": null,
+      "restSec": 120,
+      "tempo": "2 s down, 1 s pause, controlled up",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "60 s continuous reverse or walking lunges",
+      "timeSec": 60,
+      "restSec": 45,
+      "tempo": "2 s down, 1 s up",
+      "perWeek": 3
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle",
+      "left_heel",
+      "right_heel",
+      "left_foot_index",
+      "right_foot_index"
+    ],
+    "phases": [
+      {
+        "name": "top",
+        "joint": "front knee (hip-knee-ankle)",
+        "angleDeg": ">= 160",
+        "parsed": {
+          "op": ">=",
+          "value": 160,
+          "max": null
+        }
+      },
+      {
+        "name": "bottom",
+        "joint": "front knee (hip-knee-ankle)",
+        "angleDeg": "<= 100",
+        "parsed": {
+          "op": "<=",
+          "value": 100,
+          "max": null
+        }
+      },
+      {
+        "name": "bottom_target",
+        "joint": "front knee (hip-knee-ankle)",
+        "angleDeg": "80-100",
+        "parsed": {
+          "op": "between",
+          "value": 80,
+          "max": 100
+        }
+      },
+      {
+        "name": "bottom_guide",
+        "joint": "back knee (hip-knee-ankle)",
+        "angleDeg": "80-110",
+        "parsed": {
+          "op": "between",
+          "value": 80,
+          "max": 110
+        }
+      }
+    ],
+    "minRepSec": 2
+  },
+  "formChecks": [
+    {
+      "joint": "knee",
+      "rule": "lowest front-knee angle in the rep > 100 degrees (equals bottom phase threshold): not counted, flagged",
+      "message": "Go a little lower: back knee towards the floor"
+    },
+    {
+      "joint": "knee",
+      "rule": "front-knee angle < 160 degrees at top between reps (equals top phase threshold)",
+      "message": "Stand all the way up between reps"
+    },
+    {
+      "joint": "knee",
+      "rule": "knee-slam flag: back-knee landmark reaches ankle height fast or downward speed spikes near bottom (separate flag, not an angle)",
+      "message": "Lower softly: knee hovers above the floor"
+    },
+    {
+      "joint": "ankle",
+      "rule": "front heel landmark rises above front foot-index landmark beyond margin",
+      "message": "Keep your front heel down; step further back"
+    },
+    {
+      "joint": "hip",
+      "rule": "shoulder-hip line more than 30 degrees from vertical at bottom (unsigned angle)",
+      "message": "Chest up"
+    },
+    {
+      "joint": "hip",
+      "rule": "lean-back flag: shoulder landmark behind hip landmark beyond margin (separate flag)",
+      "message": "Don't lean back; ribs down"
+    },
+    {
+      "joint": "knee",
+      "rule": "rep duration < 2.0 s or lowering < 1 s",
+      "message": "Slow down: 2 seconds down"
+    },
+    {
+      "joint": "knee",
+      "rule": "front view: front knee inside the front hip-ankle line beyond margin",
+      "message": "Front knee over your toes"
+    },
+    {
+      "joint": "knee",
+      "rule": "left and right rep counts differ by more than 1 at set end",
+      "message": "Match both legs"
+    }
+  ],
+  "safetyFlags": [
+    "knee_pain_use_short_range_reverse_not_forward",
+    "avoid_deep_lunges_with_knee_osteoarthritis",
+    "balance_problems_use_wall_or_chair",
+    "osteoporosis_use_support_avoid_loaded_forward_bending",
+    "pregnancy_use_support_avoid_with_pelvic_girdle_pain",
+    "postpartum_get_clearance_first",
+    "uncontrolled_high_blood_pressure_breathe_continuously",
+    "recent_lower_limb_or_spine_surgery",
+    "hard_floor_protect_back_knee"
+  ],
+  "progressions": [
+    "free-standing full-depth reverse lunge",
+    "slower lowering (3 s)",
+    "dumbbell or backpack reverse lunge",
+    "deficit reverse lunge (front foot on 5-10 cm step)",
+    "reverse lunge to knee drive",
+    "walking lunges",
+    "reverse lunge with rotation",
+    "Bulgarian split squat (Home 22)"
+  ],
+  "regressions": [
+    "supported reverse lunge with partial range",
+    "split squat / static lunge",
+    "step-back toe tap with slight knee bend",
+    "chair sit-to-stand"
+  ],
+  "videoShots": [
+    {
+      "seconds": 7,
+      "angle": "side, hip height, 2.5-3 m",
+      "shows": "setup: feet hip-width, hands on hips, standing tall",
+      "textOverlay": "Stand tall, feet hip-width"
+    },
+    {
+      "seconds": 6,
+      "angle": "front, hip height, 2.5 m",
+      "shows": "step back onto ball of foot on hip-width tracks",
+      "textOverlay": "Step back on train tracks, not a tightrope"
+    },
+    {
+      "seconds": 10,
+      "angle": "side, hip height, 2.5-3 m",
+      "shows": "full rep: step back, lower, pause, drive up, return",
+      "textOverlay": "Down 2, pause, push through the front heel"
+    },
+    {
+      "seconds": 6,
+      "angle": "side, knee height, 1.5 m",
+      "shows": "bottom position: both knees about 90 degrees, back knee hovering",
+      "textOverlay": "Both knees ~90°. Back knee hovers."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, knee height, 2 m, split screen",
+      "shows": "front knee caving vs knee over second toe",
+      "textOverlay": "Front knee over your toes"
+    },
+    {
+      "seconds": 6,
+      "angle": "side, hip height, split screen",
+      "shows": "step too short with heel lift vs rounded back vs correct",
+      "textOverlay": "Too short / Rounded / Correct"
+    },
+    {
+      "seconds": 7,
+      "angle": "side, hip height, 2.5 m",
+      "shows": "supported version, hand on wall, partial range",
+      "textOverlay": "Easier: hold a wall, go halfway"
+    },
+    {
+      "seconds": 7,
+      "angle": "side, hip height, 2.5 m",
+      "shows": "dumbbell reverse lunge",
+      "textOverlay": "Harder: add dumbbells"
+    }
+  ],
+  "lastResearched": "2026-10-16",
+  "setupSteps": [
+    "Clear a strip of floor about 1.5 m long and 1 m wide (est.). Move rugs or slippers that the back foot could catch.",
+    "Footwear: barefoot on a non-slip floor or flat trainers. Avoid socks on smooth tiles (slipping risk) and soft, squishy shoes (wobbly).",
+    "Support (beginners): stand side-on to a wall, kitchen counter or a sturdy chair placed beside you, close enough to rest your fingertips on it. Do not use a chair with wheels.",
+    "Feet: stand tall with feet hip-width apart, toes pointing forward. Picture two railway tracks rather than a tightrope: the feet stay hip-width apart side to side even after you step back (coaching sources; keeps balance).",
+    "Hands: on your hips (Harvard Health), lightly on the support, or crossed on the chest. For harder versions, hold dumbbells by your sides.",
+    "Posture: chest lifted, shoulders relaxed and down, eyes looking straight ahead at a spot on the wall at eye level.",
+    "Back knee cushion (optional): if you will let the knee touch down, place a folded towel or mat where it will land, about one long step behind you.",
+    "Clothing: fitted track pants or leggings so you and the camera can see the knee and hip."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": "A. Bodyweight reverse lunge, alternating legs (main version)",
+      "title": "Brace and stand tall",
+      "action": "Feet hip-width, weight spread over the whole of both feet. Gently tighten your stomach as if about to cough.",
+      "feel": "Light firmness around the waist; standing tall.",
+      "breathing": "Breathe in normally.",
+      "tempo": null,
+      "visualCheck": "Side: ear, shoulder, hip and ankle roughly in one vertical line. Front: feet hip-width, toes forward."
+    },
+    {
+      "n": 2,
+      "part": "A. Bodyweight reverse lunge, alternating legs (main version)",
+      "title": "Shift your weight onto the front (staying) leg",
+      "action": "Move your weight onto the right foot (if the left leg will step back). Keep the right foot fully planted, heel down.",
+      "feel": "The right foot and right buttock take your weight.",
+      "breathing": "Keep breathing in.",
+      "tempo": null,
+      "visualCheck": "Front: hips stay level, not swinging out to the side."
+    },
+    {
+      "n": 3,
+      "part": "A. Bodyweight reverse lunge, alternating legs (main version)",
+      "title": "Step back",
+      "action": "Take a long, controlled step backwards with the left foot, keeping it hip-width from the right foot. Land softly on the ball of the left foot; the left heel stays lifted (ACE, Harvard).",
+      "feel": "Most weight stays on the front foot; the back foot is mainly for balance.",
+      "breathing": "Breathing in.",
+      "tempo": null,
+      "visualCheck": "Side: step length is long enough that, at the bottom, the front shin is close to vertical. Front: back foot lands in its own \"track\", not behind the front foot."
+    },
+    {
+      "n": 4,
+      "part": "A. Bodyweight reverse lunge, alternating legs (main version)",
+      "title": "Lower straight down",
+      "action": "Bend both knees and lower your body straight down, like an elevator, until the front thigh is about parallel to the floor and the back knee hovers just above the floor (or lightly touches the towel). ACE cues sitting back into the front hip as you lower. Go only as low as you can control (Mayo).",
+      "feel": "Work in the front thigh and front buttock; a gentle stretch at the front of the back hip.",
+      "breathing": "Breathe in as you lower.",
+      "tempo": null,
+      "visualCheck": "Side: both knees bent to about 90 degrees; trunk upright or with a slight forward lean; front knee over the middle of the foot. Front: front knee in line with the second toe, not caving in or bowing out (Mayo)."
+    },
+    {
+      "n": 5,
+      "part": "A. Bodyweight reverse lunge, alternating legs (main version)",
+      "title": "Pause at the bottom",
+      "action": "Hold briefly without resting the knee's weight on the floor.",
+      "feel": "Steady and balanced; front heel still down.",
+      "breathing": "Start to breathe out.",
+      "tempo": null,
+      "visualCheck": "Side: back knee a few centimetres off the floor, pointing down, not forward."
+    },
+    {
+      "n": 6,
+      "part": "A. Bodyweight reverse lunge, alternating legs (main version)",
+      "title": "Drive back up",
+      "action": "Push the front foot firmly into the floor (mostly through the heel and middle of the foot) and stand up, bringing the back foot forward to meet it. ACE cues pulling the front knee slightly back while swinging the back leg forward.",
+      "feel": "The front buttock and thigh do the work; the back leg only helps a little.",
+      "breathing": "Breathe out as you rise. Do not hold your breath.",
+      "tempo": null,
+      "visualCheck": "Side: trunk rises without first pitching forward. Front: front knee stays over the toes."
+    },
+    {
+      "n": 7,
+      "part": "A. Bodyweight reverse lunge, alternating legs (main version)",
+      "title": "Stand tall and reset",
+      "action": "Return to feet hip-width, fully upright, weight even. Then repeat with the other leg stepping back.",
+      "feel": "Balanced on both feet.",
+      "breathing": "One easy breath.",
+      "tempo": null,
+      "visualCheck": "Side: knees straight (not locked hard), hips fully forward, body vertical again."
+    },
+    {
+      "n": 8,
+      "part": "B. Supported reverse lunge (first regression)",
+      "title": "Stand side-on to a wall, counter or chair, fingertips on it",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 9,
+      "part": "B. Supported reverse lunge (first regression)",
+      "title": "Follow steps 1–7 above, using the support only for balance, not to pull yourself up",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 10,
+      "part": "B. Supported reverse lunge (first regression)",
+      "title": "Lower only as far as feels steady and pain-free (a quarter or half of the way is fine at first)",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 11,
+      "part": "C. Split squat / static lunge (regression that removes the stepping)",
+      "title": "Take the bottom-position stance: one foot forward, one foot about a long step behind, hip-width apart, back heel lifted",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 12,
+      "part": "C. Split squat / static lunge (regression that removes the stepping)",
+      "title": "Lower straight down (2 s) and rise (1–2 s) without moving the feet. ExRx lists the split squat as the easier version of the rear lunge",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 13,
+      "part": "C. Split squat / static lunge (regression that removes the stepping)",
+      "title": "Do all reps on one side, then switch",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 14,
+      "part": "D. Dumbbell reverse lunge (progression)",
+      "title": "Hold a dumbbell in each hand by your sides, palms facing in, shoulders down",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 15,
+      "part": "D. Dumbbell reverse lunge (progression)",
+      "title": "Follow steps 1–7. Keep the weights hanging straight down; do not let them swing",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Front knee caving inward",
+      "text": "Front knee caving inward. Why: strains the inside of the knee and means the side-hip muscles are not doing their job. Fix: push the front knee gently out over the second toe; use a shorter range or the supported version until it stays in line."
+    },
+    {
+      "title": "Stepping onto a tightrope (feet in one line)",
+      "text": "Stepping onto a tightrope (feet in one line). Why: makes balance very hard, so you wobble and twist. Fix: keep the feet hip-width apart, like railway tracks, even when you step back."
+    },
+    {
+      "title": "Step too short, so the front heel lifts and the knee shoots far forward",
+      "text": "Step too short, so the front heel lifts and the knee shoots far forward. Why: puts more of the work on the front of the knee and shifts weight to the toes. Fix: step further back; keep the front heel down. Note: the knee travelling a little past the toes is not automatically dangerous (Fry et al. 2003 showed that blocking forward knee travel in a squat shifts load to the hips and lower back), but for beginners the front heel must stay down."
+    },
+    {
+      "title": "Slamming the back knee into the floor",
+      "text": "Slamming the back knee into the floor. Why: painful on the kneecap, noisy for neighbours, and means the lowering is uncontrolled. Fix: lower in 2 seconds; stop a few centimetres above the floor or touch a folded towel lightly."
+    },
+    {
+      "title": "Leaning far forward with a rounded back, or leaning back",
+      "text": "Leaning far forward with a rounded back, or leaning back. Why: rounding loads the lower back (the UK osteoporosis consensus advises avoiding loaded forward bending); leaning back arches it. Fix: chest proud, eyes ahead; a slight forward lean from the hips with a flat back is fine."
+    },
+    {
+      "title": "Pushing off the back foot to stand up",
+      "text": "Pushing off the back foot to stand up. Why: the back leg and momentum do the work, and the front leg gets less training. Fix: think \"front heel drives me up\"; pause at the bottom first."
+    },
+    {
+      "title": "Rushing and bouncing",
+      "text": "Rushing and bouncing. Why: less control, more wobble and knee strain. Fix: 1 s step, 2 s down, 1 s pause, 1–2 s up."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. Why: breath-holding (Valsalva) raises blood pressure more than breathing during effort (1992 study of novice lifters, BJSM). Fix: breathe in on the way down, out on the way up."
+    }
+  ],
+  "safetyNotes": [
+    "Knee problems (kneecap pain, osteoarthritis, after knee injury): the reverse lunge is usually better tolerated than the forward lunge (lower patellofemoral load in the 2021 lab study), but use a shorter step-down range, keep the front heel down, and stop if knee pain rises. Several clinic sources advise people with knee arthritis to avoid deep lunges (front knee past 90°).",
+    "Lower back problems: keep the trunk upright and the stomach lightly braced; avoid rounding forward; start with the split squat. The backward lunge works the back muscles more than the forward lunge (Song and Yoo 2021), which is fine for most people but may be noticed during a flare.",
+    "Balance problems, dizziness, older adults, osteoporosis: always use a wall or chair for support; the main risk is a fall, not the movement itself.",
+    "Pregnancy: balance changes as pregnancy progresses, and ACOG advises avoiding activities with a high fall risk; use support. NHS pelvic girdle pain leaflets advise reducing movements that take one leg away from the other, so skip lunges if you have pelvic girdle (pubic or sacroiliac) pain.",
+    "Postpartum: start with pelvic floor exercises; add supported, shallow lunges once cleared and free of heaviness, leaking or pain.",
+    "High blood pressure and heart disease: breathe continuously, keep effort moderate, no straining.",
+    "Recent hip, knee, ankle or spine surgery: only with your surgeon's or physiotherapist's approval."
+  ],
+  "sources": [
+    "ACE Fitness, Exercise Library: Reverse Lunge (barbell, step-back cues). https://www.acefitness.org/resources/everyone/exercise-library/319/reverse-lunge/",
+    "ACE Fitness, Exercise Library: Anti-Rotation Reverse Lunge; Reverse Lunge with Rotation. https://acefitness.org/resources/everyone/exercise-library/348/anti-rotation-reverse-lunge ; https://www.acefitness.org/education-and-resources/lifestyle/exercise-library/360/reverse-lunge-with-rotation",
+    "ExRx.net, Bodyweight Rear Lunge (long vs short step emphasis; split squat as easier version). https://exrx.net/WeightExercises/GluteusMaximus/BWRearLunge ; https://exrx.net/WeightExercises/Quadriceps/BWRearLunge",
+    "Mayo Clinic, Video: Lunge (knee centred over foot, 90 degrees, neutral back). https://www.mayoclinic.org/healthy-lifestyle/fitness/multimedia/lunge/vid-20084662 ; transcript via Mayo Clinic Care Network: https://www.mymlc.com/health-information/videos/fitness/strength-training/body-weight-exercises/video-lunge-exercise/",
+    "Mayo Clinic, Video: Find a hallway and try some walking lunges (10 per side, up to 3 sets). https://mayoclinic.org/connected-care/find-a-hallway-and-try-some-walking-lunges/vid-20307386",
+    "Harvard Health Publishing, Move of the month: stationary lunge (8–12 per side, up to 3 sets, 30–90 s rest; knee over ankle). https://www.health.harvard.edu/heart-health/move-of-the-month-stationary-lunge",
+    "NSCA, Personal Training Quarterly: The Undervalued Lunge (Boyd and Milton, 2017). https://nsca.com/education/articles/ptq/the-undervalued-lunge ; https://dxpprod.nsca.com/contentassets/24dd7222ed1b4caeb8a0a46b81bd11f3/ptq-4.4.9-the-undervalued-lunge.pdf",
+    "Human Kinetics, Top-loaded reverse lunge with variations (book excerpt). https://us.humankinetics.com/blogs/excerpt/top-loaded-reverse-lunge-with-variations",
+    "Hinge Health, How to do a reverse lunge; How to do lunges (modifications). https://www.hingehealth.com/gb/en/resources/articles/reverse-lunges/ ; https://www.hingehealth.com/gb/en/resources/articles/lunge/",
+    "Physitrack, Functional lunges (both knees about 90 degrees). https://www.physitrack.com/en-ie/exercise-library/how-to-perform-the-functional-lunges-exercise",
+    "2024 Adult Compendium of Physical Activities (Herrmann et al., J Sport Health Sci 2024): codes 02022, 02024, 02020; Older Adult Compendium. https://pacompendium.com/wp-content/uploads/2024/02/1_2024-adult-compendium_1_2024.pdf ; https://pacompendium.com/conditioning-exercise/ ; https://pubmed.ncbi.nlm.nih.gov/38242596/ ; https://pacompendium.com/older-adult-compendium/",
+    "Patellofemoral joint loading during the forward and backward lunge, Physical Therapy in Sport 2021;47:178–184. https://scholars.csus.edu/esploro/outputs/journalArticle/Patellofemoral-Joint-Loading-During-the-Performance/99257925355601671 ; summary: https://www.sportsinjurybulletin.com/patellofemoral-pain-syndrome-is-it-okay-to-use-lunges/",
+    "Song and Yoo (2021), Effect of backward versus forward lunge exercises on trunk muscle activities, Physical Therapy Korea 28(4):273–279. https://doaj.org/article/f2adff51dab24852b40acf671fc66449",
+    "Farrokhi S et al. (2008), trunk position and lower-extremity EMG during the lunge. https://pubmed.ncbi.nlm.nih.gov/18591759/",
+    "Effects of step length and stride variation during forward lunges on lower-extremity muscle activity. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11843896/",
+    "Forward vs side lunge patellofemoral loading, IJSPT 2022. https://ijspt.scholasticahq.com/article/31876.pdf",
+    "Fry AC, Smith JC, Schilling BK (2003), knee position and hip/knee torques in the squat (summary). https://www.physio-network.com/blog/knees-shouldnt-pass-toes-during-the-squat-myth-or-truth/",
+    "ACSM Position Stand (2009), Progression models in resistance training for healthy adults. https://www.sportgeneeskunde.com/wp-content/uploads/ACSM-Position-Stand-Progression-Models-in-Resistance-Training-for-Healthy-Adults.pdf",
+    "Balance- and strength-based exercise for fall prevention in older adults: systematic review of RCTs. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12842942/",
+    "Strong, Steady and Straight: UK consensus statement on physical activity and exercise for osteoporosis (BJSM 2022). https://bjsm.bmj.com/content/56/15/837",
+    "Cheshire and Merseyside NHS, Pelvic Girdle Pain in Pregnancy leaflet. https://plr.cht.nhs.uk/download/1475/Pelvic%20Girdle%20Pain%20in%20Pregnancy%20A4",
+    "MotherToBaby, Exercise in pregnancy fact sheet; NCBI Bookshelf exercise in pregnancy. https://mothertobaby.org/fact-sheets/exercise-pregnancy/pdf/ ; https://www.ncbi.nlm.nih.gov/books/NBK582697/",
+    "Manchester University NHS FT, Returning to exercise in the postnatal period. https://mft.nhs.uk/app/uploads/sites/4/2022/08/Returning-to-exercise-postnatal-period.pdf",
+    "Goom, Donnelly and Brockwell (2019), Returning to running postnatal guideline. https://athleticsni.org/download/files/Returning_to_running_postnatal_guideline_for_medical_health_and_fitness_professionals_managing_this_population.05.pdf",
+    "Breathing technique and blood pressure during resistance exercise (BJSM 1992). https://bjsm.bmj.com/content/26/2/97",
+    "ACSM (Zaleski), exercise for hypertension. https://acsm.org/?p=18319",
+    "Colberg SR et al. (2016), ADA position statement. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/",
+    "ACC summary of the 2023 AHA scientific statement on resistance exercise training. https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2023/12/19/15/33/resistance-exercise-training",
+    "AHA Professional, Physical activity as first-line treatment for elevated BP or cholesterol (Gibbs et al.). https://professional.heart.org/en/science-news/Physical-Activity-as-a-Critical-Component-of-First-Line-Treatment-for-Elevated-BP-or-Cholesterol/commentary",
+    "Donnelly JE et al. (2009), ACSM position stand on physical activity for weight loss. https://pubmed.ncbi.nlm.nih.gov/19127177/",
+    "Exercise in the management of PCOS: position statement / 2023 guideline evidence review. https://vuir.vu.edu.au/45855/1/1-s2.0-S2772696723000054-main.pdf",
+    "Effect of physical exercise in people with hypothyroidism: systematic review and meta-analysis (2023). https://pubmed.ncbi.nlm.nih.gov/37999992/",
+    "Pharmacy Magazine CPD, Exercise and asthma. https://www.pharmacymagazine.co.uk/cpd-modules/making-a-difference-in-asthma-care/exercise-and-asthma-528343",
+    "Healthline, Knee arthritis exercises to avoid (deep lunges; lower-evidence source). https://www.healthline.com/health/knee-arthritis-exercises-to-avoid",
+    "Pose-based repetition counting (arXiv 2023); LearnOpenCV pose-based exercise analysis. https://arxiv.org/html/2308.08632v2 ; https://learnopencv.com/?p=45353"
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 26.3,
+      "70kg": 22.6,
+      "80kg": 19.7
+    },
+    "per300kcal": {
+      "60kg": 78.9,
+      "70kg": 67.7,
+      "80kg": 59.2
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "strength",
+    "sports",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "small_flat",
+    "neighbours_below",
+    "short_sessions",
+    "balance",
+    "leg_day"
+  ],
+  "swapsByAccess": {
+    "none": "Wall-supported split squat, or bodyweight squat / chair sit-to-stand (Home 1); glute bridge (Home 4) if single-leg standing is a problem",
+    "home_equipment": "Dumbbell goblet squat (Home 15) or step-ups on a low stair (Home 12)",
+    "basic_gym": "Step-ups onto a low bench or box (Home 12) or Smith machine split squat (Gym 14)",
+    "full_gym": "Leg press, including single-leg leg press (Gym 10), or hack squat machine (Gym 13)"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "Breathe in down, out up; no breath-holding; moderate effort 2-3 sets of 8-12; uncontrolled BP needs clearance",
+      "source": "ACSM hypertension exercise guidance; 1992 Valsalva BP study (BJSM)"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "Use on 2-3 non-consecutive resistance days per week; usual glucose checks if on insulin or sulfonylureas; wear shoes if neuropathy",
+      "source": "ADA position statement, Colberg et al. 2016"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "After clearance: supported version, 1-2 sets of 10-15 light reps, rhythmic breathing, no straining",
+      "source": "AHA resistance exercise statements (2007, 2023)"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "Part of 2+ days/week resistance work with aerobic activity",
+      "source": "AHA scientific statement (Gibbs et al.)"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Start supported and partial range, or split squats / chair sit-to-stands; build up gradually; pair with aerobic work",
+      "source": "ACSM weight management position stand (Donnelly et al. 2009); range advice est."
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "Fits muscle-strengthening guidance; no lunge-specific advice found",
+      "source": "International PCOS guideline 2023 / exercise position statement"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "Train normally if controlled; start at beginner level with ongoing fatigue",
+      "source": "Systematic review 2023 (PubMed 37999992)"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Warm up and keep reliever inhaler nearby",
+      "source": "Asthma exercise guidance (Pharmacy Magazine CPD citing Asthma UK)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Reverse rather than forward lunge; short range, front heel down, hold support; avoid deep lunges; stop if pain rises",
+      "source": "Forward vs backward lunge PFJ loading study (Phys Ther Sport 2021); Hinge Health"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Upright trunk, light brace, no rounding; start with split squats; stop with leg pain or numbness",
+      "source": "Song and Yoo 2021 (Physical Therapy Korea); coaching/clinic sources (lower evidence)"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "ok",
+      "change": "Bodyweight version does not load shoulders; light weights or backpack for loaded versions (no condition-specific source found)",
+      "source": "Not found"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "modify",
+      "change": "Always hold a wall or chair; upright spine, avoid loaded forward bending; individual advice with vertebral fractures",
+      "source": "UK consensus Strong, Steady and Straight (ROS, BJSM 2022)"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "modify",
+      "change": "Use support, shorter step; avoid with pelvic girdle pain; stop with dizziness or pain; ask obstetrician",
+      "source": "ACOG guidance via MotherToBaby / NCBI Bookshelf; NHS pelvic girdle pain leaflets"
+    },
+    {
+      "condition": "postpartum",
+      "status": "modify",
+      "change": "Pelvic floor work first; supported shallow lunges once cleared; stop with heaviness, leaking or pelvic pain",
+      "source": "NHS postnatal return-to-exercise leaflet (MFT); Goom et al. 2019 postnatal guideline"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Only with surgeon or physiotherapist approval",
+      "source": "Not found"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "home",
+      "gym",
+      "outdoor"
+    ],
+    "bodyRegion": [
+      "lower"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "fat_loss",
+      "muscle",
+      "strength",
+      "endurance"
+    ],
+    "intensity": "moderate",
+    "noise": "quiet",
+    "space": "small_room",
+    "typicalMinutes": 6,
+    "kcalPer10min70kg": 44,
+    "difficulty1to5": 2,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Home",
+    "Gym",
+    "Outdoors",
+    "No equipment",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Strength",
+    "Legs",
+    "Glutes",
+    "Rep counter",
+    "Under 10 min"
+  ],
+  "needsReview": [
+    "last_researched 2026-10-16 differs from file date 2026-10-22"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-22",
+      "file": "FitPlate_Fitness_2026-10-22.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": [
+    "2026-10-22: last_researched 2026-10-16 differs from file date 2026-10-22"
+  ]
+}

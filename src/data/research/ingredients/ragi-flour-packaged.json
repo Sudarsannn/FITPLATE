@@ -1,0 +1,68 @@
+{
+  "id": "ragi-flour-packaged",
+  "name": "Ragi flour, packaged",
+  "aliases": [
+    "finger millet flour",
+    "nachni atta"
+  ],
+  "category": "Flour",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-22",
+        "min": 70,
+        "max": 105,
+        "avg": 90,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-22.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 77,
+      "max": 103,
+      "avg": 90
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-22",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": null,
+    "platforms": [],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
+  },
+  "per100Estimate": {
+    "min": 7.7,
+    "max": 10.3,
+    "avg": 9
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": null,
+  "storage": null,
+  "substitutes": [],
+  "usedIn": [],
+  "versions": [
+    {
+      "date": "2026-10-22",
+      "file": "FitPlate_Ingredients_2026-10-22.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (none)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 70.0–105.0 was wider than 30% of avg 90.0; narrowed to ±15%.",
+    "2026-10-22: no detail section found"
+  ]
+}

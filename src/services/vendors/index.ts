@@ -1,6 +1,7 @@
 import { getIngredient, researchDishes, researchIngredients } from '../../data/research';
 import type { Dish } from '../../models/research';
-import { costToMake, normaliseName } from './basket';
+import { dishCostToMake } from '../costToMake';
+import { normaliseName } from './basket';
 import { FITPLATE_API_URL } from './config';
 import { createLiveFood, createLiveInstamart } from './liveSwiggy';
 import { createSampleFood } from './sampleFood';
@@ -15,7 +16,6 @@ export const liveAvailable = () => Boolean(FITPLATE_API_URL);
 /** The user's chosen mode, falling back to sample wherever live isn't possible. */
 export const vendorMode = (wantsLive: boolean | undefined): VendorMode => (wantsLive && liveAvailable() ? 'live' : 'sample');
 
-const ingredientMap = () => new Map(researchIngredients.map((i) => [i.id, i]));
 
 /** Researched price per 100 g for a product query, so sample prices look like real ones. */
 function priceHint(query: string): number | null {
@@ -39,9 +39,15 @@ export function swiggyFood(mode: VendorMode): SwiggyFoodApi {
   return (sampleFood ??= createSampleFood({ dishes: () => researchDishes }));
 }
 
-/** Cost to make one dish for these servings, from researched ingredient prices. */
-export function dishCost(dish: Dish, servings = 1) {
-  return costToMake(dish, servings, ingredientMap());
+/**
+ * Cost to make one dish for these servings, from researched ingredient prices.
+ * Day 8: uses the cost-to-make engine (services/costToMake.ts); coverage is
+ * the share of counted ingredient lines that have a price.
+ */
+export function dishCost(dish: Dish, servings = 1): { inr: number; coveragePct: number } | null {
+  const c = dishCostToMake(dish, getIngredient);
+  if (!c) return null;
+  return { inr: Math.max(1, Math.round(c.avg * servings)), coveragePct: Math.round((c.pricedLines / Math.max(1, c.countedLines)) * 100) };
 }
 
 export * from './types';

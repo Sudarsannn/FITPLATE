@@ -4,8 +4,11 @@
  * Option lists for cuisine, meal type and difficulty come from the dishes
  * themselves, so the library grows with every import.
  */
+import { featureFlags } from '../config/featureFlags';
+import { getIngredient } from '../data/research';
 import type { AllergenId, Dish } from '../models/research';
 import { ALLERGEN_IDS } from '../models/research';
+import { dishCostToMake, rupeesPer10gProtein, savingVsOrder } from './costToMake';
 import { ALLERGEN_LABELS } from './data/allergens';
 import { cuisineTag, TAG } from './data/tags';
 import type { FilterGroup, FilterOption, SearchDoc, SortOption } from './search';
@@ -132,13 +135,24 @@ export const DISH_SORTS: SortOption<Dish>[] = [
   { id: 'rating', label: 'Rating', value: (d) => d.researchRating?.score ?? null, direction: 'desc' },
   { id: 'fewest-ingredients', label: 'Fewest ingredients', value: (d) => (d.ingredients.length ? d.ingredients.length : null), direction: 'asc' },
   { id: 'order-price', label: 'Cheapest to order', value: (d) => headlineOrderPrice(d)?.avg ?? null, direction: 'asc' },
+  // Day 8: only dishes whose every ingredient is priced take part; the rest sort last.
+  { id: 'make-cost', label: 'Cheapest to cook', value: (d) => completeMakeCost(d), direction: 'asc' },
+  { id: 'most-saved', label: 'Most saved vs ordering', value: (d) => savingVsOrder(makeCost(d), headlineOrderPrice(d))?.rupees ?? null, direction: 'desc' },
+  ...(featureFlags.proteinPerRupee
+    ? [{ id: 'protein-per-rupee', label: 'Protein per ₹', value: (d: Dish) => rupeesPer10gProtein(makeCost(d), d.nutritionPerServing.proteinG), direction: 'asc' as const }]
+    : []),
 ];
+
+/** Day 8: cost to make one serving from the bundled ingredient prices. */
+export const makeCost = (d: Pick<Dish, 'ingredients'>) => dishCostToMake(d, getIngredient);
+
+function completeMakeCost(d: Dish): number | null {
+  const c = makeCost(d);
+  return c?.complete ? c.avg : null;
+}
 
 /** Sorts named in SPEC-ADDENDA §9 that need data from a later day; shown greyed out with the reason. */
 export const COMING_SORTS: { label: string; when: string }[] = [
-  { label: 'Cheapest to cook', when: 'cost to make' },
-  { label: 'Most saved vs ordering', when: 'cost to make' },
-  { label: 'Protein per ₹', when: 'cost to make' },
   { label: 'Lowest sodium', when: 'dish sodium data' },
 ];
 

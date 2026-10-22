@@ -1,0 +1,502 @@
+{
+  "id": "vitamin-b12",
+  "name": "Vitamin B12 (cobalamin; cyanocobalamin, methylcobalamin / mecobalamin, hydroxocobalamin, adenosylcobalamin)",
+  "type": "vitamin",
+  "subtype": "water-soluble",
+  "unit": "µg",
+  "altUnits": [
+    {
+      "unit": "mcg",
+      "toMainUnitFactor": 1
+    },
+    {
+      "unit": "mg",
+      "toMainUnitFactor": 1000
+    }
+  ],
+  "unitConversions": [],
+  "targets": [
+    {
+      "group": "adult_male_sedentary",
+      "ear": 2,
+      "rda": 2.2,
+      "ai": null,
+      "source": "ICMR-NIN 2020 brief note comparison table and RDA 2020 method text (EAR 2 µg from 50% bioavailability, stable isotope studies), via search snippets (secondary, unverified)"
+    },
+    {
+      "group": "adult_male_moderate",
+      "ear": 2,
+      "rda": 2.2,
+      "ai": null,
+      "source": "ICMR-NIN 2020; one adult value, not scaled by activity (secondary, unverified)"
+    },
+    {
+      "group": "adult_male_heavy",
+      "ear": 2,
+      "rda": 2.2,
+      "ai": null,
+      "source": "ICMR-NIN 2020; one adult value, not scaled by activity (secondary, unverified)"
+    },
+    {
+      "group": "adult_female_sedentary",
+      "ear": 2,
+      "rda": 2.2,
+      "ai": null,
+      "source": "ICMR-NIN 2020; same value for both sexes (secondary, unverified)"
+    },
+    {
+      "group": "adult_female_moderate",
+      "ear": 2,
+      "rda": 2.2,
+      "ai": null,
+      "source": "ICMR-NIN 2020; one adult value, not scaled by activity (secondary, unverified)"
+    },
+    {
+      "group": "adult_female_heavy",
+      "ear": 2,
+      "rda": 2.2,
+      "ai": null,
+      "source": "ICMR-NIN 2020; one adult value, not scaled by activity (secondary, unverified)"
+    },
+    {
+      "group": "pregnant",
+      "ear": null,
+      "rda": 2.6,
+      "ai": null,
+      "source": "ICMR-NIN 2020 pregnancy value not found in an acceptable source (2.45 µg seen only on a retailer blog, not used); US NASEM 1998 / NIH ODS RDA 2.6 µg used"
+    },
+    {
+      "group": "lactating",
+      "ear": null,
+      "rda": 2.8,
+      "ai": null,
+      "source": "ICMR-NIN 2020 lactation value not found in an acceptable source (3.2 µg seen only on a retailer blog, not used); US NASEM 1998 / NIH ODS RDA 2.8 µg used"
+    }
+  ],
+  "appDefaultTarget": {
+    "adult_male": 2.2,
+    "adult_female": 2.2,
+    "pregnant": null,
+    "lactating": null,
+    "age_60_plus": null
+  },
+  "upperLimit": {
+    "value": null,
+    "unit": "µg/day",
+    "appliesTo": "food_and_supplements",
+    "source": "No UL set: ICMR-NIN TUL for B12 not found; US NASEM 1998 did not set a UL; EU SCF 2000 / EFSA set none; NNR 2023 insufficient data. App soft notice above 2,000 µg/day from supplements based on NHS wording (secondary, unverified)"
+  },
+  "topFoodSources": [
+    {
+      "food": "Lamb liver (proxy for goat/mutton liver), raw",
+      "veg": false,
+      "per100g": 59,
+      "servingG": 50,
+      "servingLabel": "1/2 small katori liver fry, raw weight (USDA NZ lamb liver via secondary mirror; est.)",
+      "perServing": 29.5
+    },
+    {
+      "food": "Chicken liver, raw",
+      "veg": false,
+      "per100g": 16.6,
+      "servingG": 50,
+      "servingLabel": "2-3 small pieces, raw weight (USDA via secondary mirror; est.)",
+      "perServing": 8.3
+    },
+    {
+      "food": "Sardine (tarli/mathi)",
+      "veg": false,
+      "per100g": 8.9,
+      "servingG": 100,
+      "servingLabel": "2-3 medium fish, edible part (USDA Atlantic sardine canned in oil, secondary; est.)",
+      "perServing": 8.9
+    },
+    {
+      "food": "Mackerel (bangda), raw",
+      "veg": false,
+      "per100g": 8.7,
+      "servingG": 100,
+      "servingLabel": "1 medium fish, edible part (USDA Atlantic mackerel as proxy, secondary; est.)",
+      "perServing": 8.7
+    },
+    {
+      "food": "Mutton (goat meat), raw",
+      "veg": false,
+      "per100g": 1.13,
+      "servingG": 120,
+      "servingLabel": "1 katori curry, edible meat (USDA goat, secondary; est.)",
+      "perServing": 1.36
+    },
+    {
+      "food": "Prawns, raw",
+      "veg": false,
+      "per100g": 1.1,
+      "servingG": 100,
+      "servingLabel": "1 katori masala, cleaned weight (est. from FitPlate dish 55)",
+      "perServing": 1.1
+    },
+    {
+      "food": "Egg, hen, whole",
+      "veg": false,
+      "per100g": 0.89,
+      "servingG": 100,
+      "servingLabel": "2 eggs (USDA, secondary; est.)",
+      "perServing": 0.89
+    },
+    {
+      "food": "Milk, whole (cow or buffalo)",
+      "veg": true,
+      "per100g": 0.45,
+      "servingG": 200,
+      "servingLabel": "1 glass, 200 ml (USDA, secondary; Indian milk about 0.2-0.7; est.)",
+      "perServing": 0.9
+    },
+    {
+      "food": "Paneer",
+      "veg": true,
+      "per100g": 0.6,
+      "servingG": 100,
+      "servingLabel": "1 katori sabzi portion (est., FitPlate dish files; not in IFCT)",
+      "perServing": 0.6
+    },
+    {
+      "food": "Curd (dahi), plain, whole milk",
+      "veg": true,
+      "per100g": 0.37,
+      "servingG": 150,
+      "servingLabel": "1 katori (USDA plain whole-milk yogurt, secondary; est.)",
+      "perServing": 0.56
+    },
+    {
+      "food": "Chicken, raw",
+      "veg": false,
+      "per100g": 0.3,
+      "servingG": 150,
+      "servingLabel": "1 serving curry, edible meat (USDA 0.2-0.34, secondary; est.)",
+      "perServing": 0.45
+    },
+    {
+      "food": "Buttermilk (chaas), thin",
+      "veg": true,
+      "per100g": null,
+      "servingG": 200,
+      "servingLabel": "1 glass; value not found (est. about 0.25 µg per glass)",
+      "perServing": null
+    }
+  ],
+  "goodSourceDishes": [
+    {
+      "dishNumber": 33,
+      "dishName": "Goan Fish Curry"
+    },
+    {
+      "dishNumber": 23,
+      "dishName": "Mutton Rogan Josh"
+    },
+    {
+      "dishNumber": 55,
+      "dishName": "Prawn Masala"
+    },
+    {
+      "dishNumber": 62,
+      "dishName": "Mutton Biryani"
+    },
+    {
+      "dishNumber": 45,
+      "dishName": "Tandoori Chicken"
+    },
+    {
+      "dishNumber": 14,
+      "dishName": "Egg Bhurji"
+    },
+    {
+      "dishNumber": 53,
+      "dishName": "Paneer Tikka"
+    },
+    {
+      "dishNumber": 59,
+      "dishName": "Chicken Kathi Roll"
+    },
+    {
+      "dishNumber": 21,
+      "dishName": "Masala Omelette"
+    },
+    {
+      "dishNumber": 38,
+      "dishName": "Egg Curry"
+    },
+    {
+      "dishNumber": 70,
+      "dishName": "Egg Fried Rice"
+    },
+    {
+      "dishNumber": 31,
+      "dishName": "Indian-style Overnight Oats"
+    },
+    {
+      "dishNumber": 35,
+      "dishName": "Curd Rice"
+    },
+    {
+      "dishNumber": 63,
+      "dishName": "Shahi Paneer"
+    },
+    {
+      "dishNumber": 2,
+      "dishName": "Chicken Biryani"
+    },
+    {
+      "dishNumber": 50,
+      "dishName": "Chicken Korma"
+    }
+  ],
+  "deficiencyRiskIndia": "high",
+  "absorptionBoosters": [
+    "healthy stomach acid and intrinsic factor",
+    "spreading B12 foods across meals (each meal's active absorption is capped at about 1.2-1.5 µg)",
+    "fortified foods and supplements (crystalline B12 needs no stomach acid to be released), especially after 50 and with acid-reducing medicines",
+    "milk, curd and paneer for vegetarians (milk B12 is well absorbed)",
+    "eating the gravy and juices of meat and fish curries"
+  ],
+  "absorptionBlockers": [
+    "low stomach acid (ageing, atrophic gastritis)",
+    "proton pump inhibitors and H2 blockers taken long term",
+    "metformin",
+    "lack of intrinsic factor (pernicious anaemia) or stomach surgery",
+    "ileal disease or surgery, celiac disease",
+    "colchicine, chloramphenicol",
+    "heavy alcohol use",
+    "nitrous oxide exposure",
+    "long boiling of meat with the liquid discarded, repeated re-boiling of milk"
+  ],
+  "logPresets": [
+    {
+      "label": "Multivitamin or B-complex, 2.2 mcg B12",
+      "amount": 2.2,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 2.2,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "B-complex with 15 mcg B12 (example; use your label)",
+      "amount": 15,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 15,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Methylcobalamin 500 mcg tablet",
+      "amount": 500,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 500,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Methylcobalamin 1500 mcg tablet",
+      "amount": 1500,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 1500,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "B12 injection 1000 mcg, as prescribed (prescription dose)",
+      "amount": 1000,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 1000,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Methylcobalamin injection 1500 mcg, as prescribed (prescription dose)",
+      "amount": 1500,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 1500,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Fortified food or drink (enter label value)",
+      "amount": null,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": null,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Custom amount (mcg or mg, converted to µg)",
+      "amount": null,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": null,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    }
+  ],
+  "warnings": [
+    "Vitamin B12 is found naturally only in foods from animals (milk, curd, paneer, eggs, fish, meat); vegans need fortified foods or a supplement, and should ask a doctor what is right for them.",
+    "Pins and needles, numbness, balance problems or memory changes can be signs of low B12 and need a doctor's check soon, because some nerve damage may not fully reverse.",
+    "Long-term metformin and acid-reducing medicines (PPIs, H2 blockers) can lower B12; ask your doctor whether a B12 test is useful.",
+    "After 50, the body absorbs B12 from food less well; doctors often advise fortified foods or supplements.",
+    "No upper limit has been set for B12, but very high doses act like medicines; in kidney disease, take high-dose B-vitamin combinations only if prescribed.",
+    "High-dose folic acid can hide B12 deficiency; do not self-treat anaemia or tiredness with folic acid alone.",
+    "B12 injections are prescription treatment; the doctor decides the dose.",
+    "General information, not medical advice. Check with a doctor before starting supplements."
+  ],
+  "conditionAdjustments": [
+    {
+      "profileId": "P22 Pregnancy",
+      "change": "Raise target to US NASEM pregnancy RDA (ICMR value not found); Indian public programme supplies iron and folic acid but not B12; any B12 supplement set by the doctor",
+      "value": 2.6,
+      "unit": "µg/day",
+      "source": "NASEM 1998 / NIH ODS; Behere et al. 2021 (Frontiers in Endocrinology)"
+    },
+    {
+      "profileId": "P23 Breastfeeding",
+      "change": "Raise target to US NASEM lactation RDA (ICMR value not found); baby depends on mother's B12; vegetarian or vegan mothers should ask the doctor",
+      "value": 2.8,
+      "unit": "µg/day",
+      "source": "NASEM 1998 / NIH ODS"
+    },
+    {
+      "profileId": "P34 Vegan diet",
+      "change": "No change in target, but food alone cannot meet it; always show the fortified food or supplement note (no dose)",
+      "value": 2.2,
+      "unit": "µg/day",
+      "source": "ICMR-NIN 2020 (secondary, unverified); NIH ODS; Merck Manual"
+    },
+    {
+      "profileId": "P33 Jain diet",
+      "change": "No change; dairy (milk, curd, paneer) is the only natural source; 2-3 dairy servings a day needed to approach target (est.)",
+      "value": 2.2,
+      "unit": "µg/day",
+      "source": "ICMR-NIN 2020 (secondary, unverified); USDA values (est.)"
+    },
+    {
+      "profileId": "P12 Vitamin D and B12 deficiency (diet follow-up)",
+      "change": "No change in food target; treatment doses set by the doctor and logged as prescribed; folic acid masking caution",
+      "value": null,
+      "unit": "µg/day",
+      "source": "NHS; NASEM 1998"
+    },
+    {
+      "profileId": "P1 Type 2 diabetes",
+      "change": "No change in target; metformin lowers B12 over time; one-time card to ask the doctor about B12 testing",
+      "value": null,
+      "unit": "µg/day",
+      "source": "Metformin prescribing information; UK MHRA Drug Safety Update"
+    },
+    {
+      "profileId": "P2 Prediabetes and insulin resistance",
+      "change": "No change; metformin note if the user takes metformin",
+      "value": null,
+      "unit": "µg/day",
+      "source": "UK MHRA Drug Safety Update"
+    },
+    {
+      "profileId": "P8 PCOS",
+      "change": "No change; metformin note if the user takes metformin",
+      "value": null,
+      "unit": "µg/day",
+      "source": "UK MHRA Drug Safety Update"
+    },
+    {
+      "profileId": "P17 Acid reflux (GERD)",
+      "change": "No change; long-term PPIs and H2 blockers reduce release of B12 from food; fortified or supplemental B12 less affected",
+      "value": null,
+      "unit": "µg/day",
+      "source": "UK MHRA (PPIs as risk factor); NASEM 1998; secondary drug-interaction summaries"
+    },
+    {
+      "profileId": "P31 Healthy ageing (50+)",
+      "change": "No change in number; advise most B12 from fortified foods or supplements (doctor decides); show B12 test note",
+      "value": 2.2,
+      "unit": "µg/day",
+      "source": "NASEM 1998 (10-30% of older adults malabsorb food B12); NIH ODS"
+    },
+    {
+      "profileId": "P11 Iron-deficiency anaemia",
+      "change": "No change; suggest asking the doctor whether B12 was checked, as anaemia can have several causes",
+      "value": null,
+      "unit": "µg/day",
+      "source": "NIN Research Highlights 2020-21 (secondary); NHS"
+    },
+    {
+      "profileId": "P13 Chronic kidney disease (early stages)",
+      "change": "No change in food target; avoid high-dose B-vitamin combinations unless prescribed; requires doctor input",
+      "value": null,
+      "unit": "µg/day",
+      "source": "House et al. 2010, JAMA (DIVINe trial)"
+    },
+    {
+      "profileId": "P19 Celiac disease and gluten sensitivity",
+      "change": "No change in target; small-bowel damage can reduce absorption; testing is for the doctor",
+      "value": null,
+      "unit": "µg/day",
+      "source": "General medical sources (Merck Manual)"
+    },
+    {
+      "profileId": "P16 IBS",
+      "change": "No change found; if the doctor has found ileal disease or bacterial overgrowth, absorption may be lower",
+      "value": null,
+      "unit": "µg/day",
+      "source": "General medical sources"
+    },
+    {
+      "profileId": "P21 Heart disease (after a cardiac event)",
+      "change": "No change found; homocysteine-lowering B vitamins did not reduce heart events in trials",
+      "value": null,
+      "unit": "µg/day",
+      "source": "House et al. 2010, JAMA"
+    },
+    {
+      "profileId": "P18 Lactose intolerance",
+      "change": "No change; curd, hung curd and paneer are lower-lactose B12 sources; eggs and fish for non-vegetarians",
+      "value": null,
+      "unit": "µg/day",
+      "source": "USDA values (est.)"
+    }
+  ],
+  "lastResearched": "2026-10-22",
+  "versions": [
+    {
+      "date": "2026-10-22",
+      "file": "FitPlate_Nutrients_2026-10-22.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3)",
+    "upperLimit": "official safety limit (D3, lower on conflict)",
+    "topFoodSources": "union; per100g official (D3)",
+    "logPresets": "union by label (newest), converted with own file factors",
+    "appDefaultTarget": "newest, kept only where it equals the ICMR row",
+    "lists": "union",
+    "warnings": "union (never dropped)",
+    "text": "newest"
+  },
+  "mergeNotes": [],
+  "needsReview": [
+    "app_default_target.pregnant = 2.6 has no ICMR row to match (pregnant: \"ICMR-NIN 2020 pregnancy value not found in an acceptable source (2.45 µg seen only on a retailer blog, not used); US NASEM 1998 / NIH ODS RDA 2.6 µg used\"); set to null",
+    "app_default_target.lactating = 2.8 has no ICMR row to match (lactating: \"ICMR-NIN 2020 lactation value not found in an acceptable source (3.2 µg seen only on a retailer blog, not used); US NASEM 1998 / NIH ODS RDA 2.8 µg used\"); set to null",
+    "2026-10-22 vitamin-b12: \"group\" has unexpected value \"age_60_plus_male\"; treated as not found",
+    "2026-10-22 vitamin-b12: \"group\" has unexpected value \"age_60_plus_female\"; treated as not found"
+  ]
+}

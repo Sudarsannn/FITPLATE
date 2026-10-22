@@ -1,7 +1,64 @@
 {
   "schema": "fitplate.links.v1",
-  "generatedFor": "Day07",
+  "generatedFor": "Day08",
   "goodSourceDishes": {
+    "biotin": [
+      {
+        "dishNumber": 14,
+        "dishName": "Egg Bhurji",
+        "dishId": "014-egg-bhurji"
+      },
+      {
+        "dishNumber": 53,
+        "dishName": "Paneer Tikka",
+        "dishId": "053-paneer-tikka"
+      },
+      {
+        "dishNumber": 17,
+        "dishName": "Palak Paneer",
+        "dishId": "017-palak-paneer"
+      },
+      {
+        "dishNumber": 22,
+        "dishName": "Kadai Paneer",
+        "dishId": "022-kadai-paneer"
+      },
+      {
+        "dishNumber": 3,
+        "dishName": "Paneer Butter Masala",
+        "dishId": "003-paneer-butter-masala"
+      },
+      {
+        "dishNumber": 49,
+        "dishName": "Mushroom Masala",
+        "dishId": "049-mushroom-masala"
+      },
+      {
+        "dishNumber": 38,
+        "dishName": "Egg Curry",
+        "dishId": "038-egg-curry"
+      },
+      {
+        "dishNumber": 54,
+        "dishName": "Matar Paneer",
+        "dishId": "054-matar-paneer"
+      },
+      {
+        "dishNumber": 21,
+        "dishName": "Masala Omelette",
+        "dishId": "021-masala-omelette"
+      },
+      {
+        "dishNumber": 2,
+        "dishName": "Chicken Biryani",
+        "dishId": "002-chicken-biryani"
+      },
+      {
+        "dishNumber": 45,
+        "dishName": "Tandoori Chicken",
+        "dishId": "045-tandoori-chicken"
+      }
+    ],
     "niacin": [
       {
         "dishNumber": 23,
@@ -297,6 +354,88 @@
         "dishId": "021-masala-omelette"
       }
     ],
+    "vitamin-b12": [
+      {
+        "dishNumber": 33,
+        "dishName": "Goan Fish Curry",
+        "dishId": "033-goan-fish-curry"
+      },
+      {
+        "dishNumber": 23,
+        "dishName": "Mutton Rogan Josh",
+        "dishId": "023-mutton-rogan-josh"
+      },
+      {
+        "dishNumber": 55,
+        "dishName": "Prawn Masala",
+        "dishId": "055-prawn-masala"
+      },
+      {
+        "dishNumber": 62,
+        "dishName": "Mutton Biryani",
+        "dishId": null
+      },
+      {
+        "dishNumber": 45,
+        "dishName": "Tandoori Chicken",
+        "dishId": "045-tandoori-chicken"
+      },
+      {
+        "dishNumber": 14,
+        "dishName": "Egg Bhurji",
+        "dishId": "014-egg-bhurji"
+      },
+      {
+        "dishNumber": 53,
+        "dishName": "Paneer Tikka",
+        "dishId": "053-paneer-tikka"
+      },
+      {
+        "dishNumber": 59,
+        "dishName": "Chicken Kathi Roll",
+        "dishId": "059-chicken-kathi-roll"
+      },
+      {
+        "dishNumber": 21,
+        "dishName": "Masala Omelette",
+        "dishId": "021-masala-omelette"
+      },
+      {
+        "dishNumber": 38,
+        "dishName": "Egg Curry",
+        "dishId": "038-egg-curry"
+      },
+      {
+        "dishNumber": 70,
+        "dishName": "Egg Fried Rice",
+        "dishId": "070-egg-fried-rice"
+      },
+      {
+        "dishNumber": 31,
+        "dishName": "Indian-style Overnight Oats",
+        "dishId": "031-indian-style-overnight-oats"
+      },
+      {
+        "dishNumber": 35,
+        "dishName": "Curd Rice",
+        "dishId": "035-curd-rice"
+      },
+      {
+        "dishNumber": 63,
+        "dishName": "Shahi Paneer",
+        "dishId": "063-shahi-paneer"
+      },
+      {
+        "dishNumber": 2,
+        "dishName": "Chicken Biryani",
+        "dishId": "002-chicken-biryani"
+      },
+      {
+        "dishNumber": 50,
+        "dishName": "Chicken Korma",
+        "dishId": "050-chicken-korma"
+      }
+    ],
     "vitamin-b6": [
       {
         "dishNumber": 18,
@@ -361,7 +500,7 @@
       {
         "dishNumber": 66,
         "dishName": "Sprouts Chaat",
-        "dishId": null
+        "dishId": "066-sprouts-chaat"
       },
       {
         "dishNumber": 27,
@@ -544,15 +683,78 @@
     ]
   },
   "dishGoodSourceOf": {
-    "023-mutton-rogan-josh": [
-      "niacin",
-      "vitamin-b6"
-    ],
-    "002-chicken-biryani": [
+    "014-egg-bhurji": [
+      "biotin",
       "niacin",
       "pantothenic-acid",
+      "riboflavin",
+      "vitamin-a",
+      "vitamin-b12",
+      "vitamin-d",
+      "vitamin-e",
+      "vitamin-k"
+    ],
+    "053-paneer-tikka": [
+      "biotin",
+      "vitamin-b12"
+    ],
+    "017-palak-paneer": [
+      "biotin",
+      "riboflavin",
+      "vitamin-a",
+      "vitamin-c",
+      "vitamin-e",
+      "vitamin-k"
+    ],
+    "022-kadai-paneer": [
+      "biotin",
+      "riboflavin",
+      "vitamin-c",
+      "vitamin-k"
+    ],
+    "003-paneer-butter-masala": [
+      "biotin"
+    ],
+    "049-mushroom-masala": [
+      "biotin"
+    ],
+    "038-egg-curry": [
+      "biotin",
+      "pantothenic-acid",
+      "vitamin-b12",
+      "vitamin-d"
+    ],
+    "054-matar-paneer": [
+      "biotin"
+    ],
+    "021-masala-omelette": [
+      "biotin",
+      "pantothenic-acid",
+      "riboflavin",
+      "vitamin-a",
+      "vitamin-b12",
+      "vitamin-d",
+      "vitamin-e"
+    ],
+    "002-chicken-biryani": [
+      "biotin",
+      "niacin",
+      "pantothenic-acid",
+      "vitamin-b12",
       "vitamin-b6",
       "vitamin-d"
+    ],
+    "045-tandoori-chicken": [
+      "biotin",
+      "niacin",
+      "pantothenic-acid",
+      "vitamin-b12",
+      "vitamin-b6"
+    ],
+    "023-mutton-rogan-josh": [
+      "niacin",
+      "vitamin-b12",
+      "vitamin-b6"
     ],
     "007-butter-chicken": [
       "niacin"
@@ -561,17 +763,13 @@
       "niacin",
       "vitamin-b6"
     ],
-    "045-tandoori-chicken": [
-      "niacin",
-      "pantothenic-acid",
-      "vitamin-b6"
-    ],
     "028-chicken-65": [
       "niacin"
     ],
     "033-goan-fish-curry": [
       "niacin",
       "pantothenic-acid",
+      "vitamin-b12",
       "vitamin-d"
     ],
     "040-sabudana-khichdi": [
@@ -595,34 +793,15 @@
       "niacin",
       "vitamin-e"
     ],
-    "014-egg-bhurji": [
-      "niacin",
-      "pantothenic-acid",
-      "riboflavin",
-      "vitamin-a",
-      "vitamin-d",
-      "vitamin-e",
-      "vitamin-k"
-    ],
     "055-prawn-masala": [
       "pantothenic-acid",
+      "vitamin-b12",
       "vitamin-d"
     ],
     "027-dal-makhani": [
       "pantothenic-acid",
       "thiamine",
       "vitamin-b6"
-    ],
-    "038-egg-curry": [
-      "pantothenic-acid",
-      "vitamin-d"
-    ],
-    "021-masala-omelette": [
-      "pantothenic-acid",
-      "riboflavin",
-      "vitamin-a",
-      "vitamin-d",
-      "vitamin-e"
     ],
     "024-medu-vada": [
       "pantothenic-acid"
@@ -643,19 +822,8 @@
     ],
     "031-indian-style-overnight-oats": [
       "riboflavin",
+      "vitamin-b12",
       "vitamin-e"
-    ],
-    "017-palak-paneer": [
-      "riboflavin",
-      "vitamin-a",
-      "vitamin-c",
-      "vitamin-e",
-      "vitamin-k"
-    ],
-    "022-kadai-paneer": [
-      "riboflavin",
-      "vitamin-c",
-      "vitamin-k"
     ],
     "046-methi-thepla": [
       "riboflavin",
@@ -690,7 +858,25 @@
     "025-veg-pulao": [
       "vitamin-a"
     ],
+    "059-chicken-kathi-roll": [
+      "vitamin-b12"
+    ],
+    "070-egg-fried-rice": [
+      "vitamin-b12"
+    ],
+    "035-curd-rice": [
+      "vitamin-b12"
+    ],
+    "063-shahi-paneer": [
+      "vitamin-b12"
+    ],
+    "050-chicken-korma": [
+      "vitamin-b12"
+    ],
     "060-aloo-matar": [
+      "vitamin-b6"
+    ],
+    "066-sprouts-chaat": [
       "vitamin-b6"
     ],
     "032-aloo-gobi": [
@@ -717,6 +903,14 @@
   },
   "families": [
     {
+      "familyId": "bhurji",
+      "dishIds": [
+        "014-egg-bhurji",
+        "069-paneer-bhurji"
+      ],
+      "how": "name"
+    },
+    {
       "familyId": "biryani",
       "dishIds": [
         "002-chicken-biryani",
@@ -728,7 +922,8 @@
       "familyId": "fried-rice",
       "dishIds": [
         "010-veg-fried-rice",
-        "043-chicken-fried-rice"
+        "043-chicken-fried-rice",
+        "070-egg-fried-rice"
       ],
       "how": "research-variant"
     },
@@ -769,9 +964,19 @@
       "met": 3.5
     },
     {
+      "exerciseId": "hamstring-stretch",
+      "name": "Hamstring stretch (supine strap, standing, seated)",
+      "met": 2.3
+    },
+    {
       "exerciseId": "hip-flexor-stretch",
       "name": "Hip flexor stretch",
       "met": 2.3
+    },
+    {
+      "exerciseId": "leg-press",
+      "name": "Leg press",
+      "met": 3.5
     },
     {
       "exerciseId": "plank-and-side-plank",
@@ -784,9 +989,19 @@
       "met": 3.8
     },
     {
+      "exerciseId": "reverse-lunge",
+      "name": "Reverse lunge",
+      "met": 3.8
+    },
+    {
       "exerciseId": "rowing-machine",
       "name": "Rowing machine",
       "met": 5
+    },
+    {
+      "exerciseId": "stair-climber",
+      "name": "Stair climber (stepmill and pedal stepper)",
+      "met": 4.5
     },
     {
       "exerciseId": "stationary-bike",
@@ -867,6 +1082,73 @@
         "per100": 24.9,
         "unit": "mg",
         "source": "nutrient research (vitamin-e food sources)"
+      }
+    },
+    "baby-potatoes": {
+      "iron": {
+        "per100": 0.81,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 170026 (SR Legacy): Potatoes, flesh and skin, raw; via triagemethod.com and Wikipedia nutrition table; zero by composition: none recorded)"
+      },
+      "calcium": {
+        "per100": 12,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 170026 (SR Legacy): Potatoes, flesh and skin, raw; via triagemethod.com and Wikipedia nutrition table; zero by composition: none recorded)"
+      },
+      "potassium": {
+        "per100": 421,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 170026 (SR Legacy): Potatoes, flesh and skin, raw; via triagemethod.com and Wikipedia nutrition table; zero by composition: none recorded)"
+      },
+      "magnesium": {
+        "per100": 23,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 170026 (SR Legacy): Potatoes, flesh and skin, raw; via triagemethod.com and Wikipedia nutrition table; zero by composition: none recorded)"
+      },
+      "zinc": {
+        "per100": 0.3,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 170026 (SR Legacy): Potatoes, flesh and skin, raw; via triagemethod.com and Wikipedia nutrition table; zero by composition: none recorded)"
+      },
+      "sodium": {
+        "per100": 6,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 170026 (SR Legacy): Potatoes, flesh and skin, raw; via triagemethod.com and Wikipedia nutrition table; zero by composition: none recorded)"
+      },
+      "vitamin-c": {
+        "per100": 19.7,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 170026 (SR Legacy): Potatoes, flesh and skin, raw; via triagemethod.com and Wikipedia nutrition table; zero by composition: none recorded)"
+      },
+      "folate": {
+        "per100": 16,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: FDC ID 170026 (SR Legacy): Potatoes, flesh and skin, raw; via triagemethod.com and Wikipedia nutrition table; zero by composition: none recorded)"
+      },
+      "phosphorus": {
+        "per100": 57,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 170026 (SR Legacy): Potatoes, flesh and skin, raw; via triagemethod.com and Wikipedia nutrition table; zero by composition: none recorded)"
+      },
+      "vitamin-k": {
+        "per100": 1.9,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: FDC ID 170026 (SR Legacy): Potatoes, flesh and skin, raw; via triagemethod.com and Wikipedia nutrition table; zero by composition: none recorded)"
+      },
+      "thiamine": {
+        "per100": 0.08,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 170026 (SR Legacy): Potatoes, flesh and skin, raw; via triagemethod.com and Wikipedia nutrition table; zero by composition: none recorded)"
+      },
+      "niacin": {
+        "per100": 1.05,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 170026 (SR Legacy): Potatoes, flesh and skin, raw; via triagemethod.com and Wikipedia nutrition table; zero by composition: none recorded)"
+      },
+      "vitamin-b6": {
+        "per100": 0.295,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 170026 (SR Legacy): Potatoes, flesh and skin, raw; via triagemethod.com and Wikipedia nutrition table; zero by composition: none recorded)"
       }
     },
     "bisi-bele-bath-powder-packaged": {
@@ -953,6 +1235,13 @@
         "per100": 17,
         "unit": "µg",
         "source": "ingredient research (USDA FDC: FDC ID 170931, Spices, pepper, black (SR Legacy), via secondary sites)"
+      }
+    },
+    "black-salt-powdered-packaged": {
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (Other: no pack label or food-composition entry found: No IFCT 2017 or USDA FDC entry and no Indian pack nutrition label seen; composition described only qualitatively (mostly sodium chloride with sodium sulphate, iron sulphide and hydrogen sulphide traces; Steenbergs, Wikipedia); zero by composition: energy_kcal, protein_g, carbohydrate_g, sugars_g, fat_g, saturated_fat_g, fibre_g, cholesterol_mg, trans_fat_g, mufa_g, pufa_g, omega3_g, added_sugars_g)"
       }
     },
     "brinjal-large-bharta-variety": {
@@ -1082,6 +1371,11 @@
         "unit": "µg",
         "source": "ingredient research (USDA FDC: SR Legacy: Chicken, broilers or fryers, leg, meat only, raw (FDC ID not shown), via triagemethod.com)"
       },
+      "biotin": {
+        "per100": 4.58,
+        "unit": "µg",
+        "source": "nutrient research (biotin food sources)"
+      },
       "niacin": {
         "per100": 5.6,
         "unit": "mg",
@@ -1106,6 +1400,43 @@
         "per100": 0.33,
         "unit": "mg",
         "source": "nutrient research (vitamin-b6 food sources)"
+      }
+    },
+    "coconut-milk-thick-packaged": {
+      "potassium": {
+        "per100": 220,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 170173 Nuts, coconut milk, canned (liquid expressed from grated meat and water), via getfoodfacts.com, triagemethod.com and recipal.com; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "zinc": {
+        "per100": 0.6,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 170173 Nuts, coconut milk, canned (liquid expressed from grated meat and water), via getfoodfacts.com, triagemethod.com and recipal.com; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "sodium": {
+        "per100": 13,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 170173 Nuts, coconut milk, canned (liquid expressed from grated meat and water), via getfoodfacts.com, triagemethod.com and recipal.com; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 170173 Nuts, coconut milk, canned (liquid expressed from grated meat and water), via getfoodfacts.com, triagemethod.com and recipal.com; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "phosphorus": {
+        "per100": 96,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 170173 Nuts, coconut milk, canned (liquid expressed from grated meat and water), via getfoodfacts.com, triagemethod.com and recipal.com; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "manganese": {
+        "per100": 0.8,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 170173 Nuts, coconut milk, canned (liquid expressed from grated meat and water), via getfoodfacts.com, triagemethod.com and recipal.com; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: FDC ID 170173 Nuts, coconut milk, canned (liquid expressed from grated meat and water), via getfoodfacts.com, triagemethod.com and recipal.com; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
     "coriander-seeds-whole": {
@@ -1165,6 +1496,43 @@
         "per100": 9,
         "unit": "mg",
         "source": "ingredient research (USDA FDC: FDC ID 169698, Cornstarch (SR Legacy), via secondary sites)"
+      }
+    },
+    "cucumber": {
+      "potassium": {
+        "per100": 147,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 168409 Cucumber, with peel, raw (SR Legacy), via secondary sites (getfoodfacts.com, fitnessvolt.com, nutrivore.com, recipal.com); zinc agrees with FDC 2346406; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "magnesium": {
+        "per100": 13,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 168409 Cucumber, with peel, raw (SR Legacy), via secondary sites (getfoodfacts.com, fitnessvolt.com, nutrivore.com, recipal.com); zinc agrees with FDC 2346406; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "zinc": {
+        "per100": 0.2,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 168409 Cucumber, with peel, raw (SR Legacy), via secondary sites (getfoodfacts.com, fitnessvolt.com, nutrivore.com, recipal.com); zinc agrees with FDC 2346406; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-c": {
+        "per100": 3,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 168409 Cucumber, with peel, raw (SR Legacy), via secondary sites (getfoodfacts.com, fitnessvolt.com, nutrivore.com, recipal.com); zinc agrees with FDC 2346406; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 168409 Cucumber, with peel, raw (SR Legacy), via secondary sites (getfoodfacts.com, fitnessvolt.com, nutrivore.com, recipal.com); zinc agrees with FDC 2346406; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-k": {
+        "per100": 16,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: FDC ID 168409 Cucumber, with peel, raw (SR Legacy), via secondary sites (getfoodfacts.com, fitnessvolt.com, nutrivore.com, recipal.com); zinc agrees with FDC 2346406; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: FDC ID 168409 Cucumber, with peel, raw (SR Legacy), via secondary sites (getfoodfacts.com, fitnessvolt.com, nutrivore.com, recipal.com); zinc agrees with FDC 2346406; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
     "dry-ginger-powder": {
@@ -1238,6 +1606,103 @@
         "source": "ingredient research (USDA FDC: FDC ID 171323, Spices, fennel seed (via getfoodfacts.com, recipal.com, FatSecret))"
       }
     },
+    "fennel-seeds-whole": {
+      "iron": {
+        "per100": 18.5,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171323, Spices, fennel seed (SR Legacy), values seen via getfoodfacts.com, triagemethod.com, foodstruct.com and all-creatures.org; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "calcium": {
+        "per100": 1196,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171323, Spices, fennel seed (SR Legacy), values seen via getfoodfacts.com, triagemethod.com, foodstruct.com and all-creatures.org; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "potassium": {
+        "per100": 1694,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171323, Spices, fennel seed (SR Legacy), values seen via getfoodfacts.com, triagemethod.com, foodstruct.com and all-creatures.org; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "magnesium": {
+        "per100": 385,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171323, Spices, fennel seed (SR Legacy), values seen via getfoodfacts.com, triagemethod.com, foodstruct.com and all-creatures.org; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "zinc": {
+        "per100": 3.7,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171323, Spices, fennel seed (SR Legacy), values seen via getfoodfacts.com, triagemethod.com, foodstruct.com and all-creatures.org; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "sodium": {
+        "per100": 88,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171323, Spices, fennel seed (SR Legacy), values seen via getfoodfacts.com, triagemethod.com, foodstruct.com and all-creatures.org; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-c": {
+        "per100": 21,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171323, Spices, fennel seed (SR Legacy), values seen via getfoodfacts.com, triagemethod.com, foodstruct.com and all-creatures.org; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-a": {
+        "per100": 7,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171323, Spices, fennel seed (SR Legacy), values seen via getfoodfacts.com, triagemethod.com, foodstruct.com and all-creatures.org; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171323, Spices, fennel seed (SR Legacy), values seen via getfoodfacts.com, triagemethod.com, foodstruct.com and all-creatures.org; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "phosphorus": {
+        "per100": 487,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171323, Spices, fennel seed (SR Legacy), values seen via getfoodfacts.com, triagemethod.com, foodstruct.com and all-creatures.org; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "selenium": {
+        "per100": 2.7,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171323, Spices, fennel seed (SR Legacy), values seen via getfoodfacts.com, triagemethod.com, foodstruct.com and all-creatures.org; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "copper": {
+        "per100": 1.1,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171323, Spices, fennel seed (SR Legacy), values seen via getfoodfacts.com, triagemethod.com, foodstruct.com and all-creatures.org; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "manganese": {
+        "per100": 6.5,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171323, Spices, fennel seed (SR Legacy), values seen via getfoodfacts.com, triagemethod.com, foodstruct.com and all-creatures.org; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-d": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171323, Spices, fennel seed (SR Legacy), values seen via getfoodfacts.com, triagemethod.com, foodstruct.com and all-creatures.org; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "thiamine": {
+        "per100": 0.41,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171323, Spices, fennel seed (SR Legacy), values seen via getfoodfacts.com, triagemethod.com, foodstruct.com and all-creatures.org; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "riboflavin": {
+        "per100": 0.35,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171323, Spices, fennel seed (SR Legacy), values seen via getfoodfacts.com, triagemethod.com, foodstruct.com and all-creatures.org; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "niacin": {
+        "per100": 6,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171323, Spices, fennel seed (SR Legacy), values seen via getfoodfacts.com, triagemethod.com, foodstruct.com and all-creatures.org; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b6": {
+        "per100": 0.47,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171323, Spices, fennel seed (SR Legacy), values seen via getfoodfacts.com, triagemethod.com, foodstruct.com and all-creatures.org; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171323, Spices, fennel seed (SR Legacy), values seen via getfoodfacts.com, triagemethod.com, foodstruct.com and all-creatures.org; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
     "fresh-coconut-grated": {
       "iron": {
         "per100": 2.43,
@@ -1287,6 +1752,18 @@
         "source": "ingredient research (Other: Eno product leaflet: Eno UK patient leaflet via drugs.com (0.85 g sodium per 5 g dose); composition per 5 g: sodium bicarbonate 2.32 g, citric acid 2.18 g, sodium carbonate 0.50 g (UK product information; SAHPRA package insert 25 Jul 2019))"
       }
     },
+    "green-chutney-ready-made": {
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (Other: Kissan Chatpati Hari Chutney label data via FatSecret India: FatSecret India, Kissan Chatpati Hari Chutney per 100 g (user-contributed); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (Other: Kissan Chatpati Hari Chutney label data via FatSecret India: FatSecret India, Kissan Chatpati Hari Chutney per 100 g (user-contributed); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
     "honey": {
       "sodium": {
         "per100": 4,
@@ -1304,6 +1781,75 @@
         "per100": 0,
         "unit": "mg",
         "source": "ingredient research (Other: iD idly dosa batter pack label: iD idly dosa batter 1 kg label values via BigBasket listing, Mishry review and FatSecret India iD dosa batter entry)"
+      }
+    },
+    "instant-yeast-dry": {
+      "iron": {
+        "per100": 2.17,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 175043 Leavening agents, yeast, baker's, active dry (SR Legacy), via Wikipedia Baker's yeast nutrition table and getfoodfacts.com; zero by composition: cholesterol_mg)"
+      },
+      "potassium": {
+        "per100": 955,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 175043 Leavening agents, yeast, baker's, active dry (SR Legacy), via Wikipedia Baker's yeast nutrition table and getfoodfacts.com; zero by composition: cholesterol_mg)"
+      },
+      "magnesium": {
+        "per100": 54,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 175043 Leavening agents, yeast, baker's, active dry (SR Legacy), via Wikipedia Baker's yeast nutrition table and getfoodfacts.com; zero by composition: cholesterol_mg)"
+      },
+      "zinc": {
+        "per100": 7.94,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 175043 Leavening agents, yeast, baker's, active dry (SR Legacy), via Wikipedia Baker's yeast nutrition table and getfoodfacts.com; zero by composition: cholesterol_mg)"
+      },
+      "sodium": {
+        "per100": 51,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 175043 Leavening agents, yeast, baker's, active dry (SR Legacy), via Wikipedia Baker's yeast nutrition table and getfoodfacts.com; zero by composition: cholesterol_mg)"
+      },
+      "folate": {
+        "per100": 2340,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: FDC ID 175043 Leavening agents, yeast, baker's, active dry (SR Legacy), via Wikipedia Baker's yeast nutrition table and getfoodfacts.com; zero by composition: cholesterol_mg)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 175043 Leavening agents, yeast, baker's, active dry (SR Legacy), via Wikipedia Baker's yeast nutrition table and getfoodfacts.com; zero by composition: cholesterol_mg)"
+      },
+      "phosphorus": {
+        "per100": 637,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 175043 Leavening agents, yeast, baker's, active dry (SR Legacy), via Wikipedia Baker's yeast nutrition table and getfoodfacts.com; zero by composition: cholesterol_mg)"
+      },
+      "thiamine": {
+        "per100": 10.99,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 175043 Leavening agents, yeast, baker's, active dry (SR Legacy), via Wikipedia Baker's yeast nutrition table and getfoodfacts.com; zero by composition: cholesterol_mg)"
+      },
+      "riboflavin": {
+        "per100": 4,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 175043 Leavening agents, yeast, baker's, active dry (SR Legacy), via Wikipedia Baker's yeast nutrition table and getfoodfacts.com; zero by composition: cholesterol_mg)"
+      },
+      "niacin": {
+        "per100": 40.2,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 175043 Leavening agents, yeast, baker's, active dry (SR Legacy), via Wikipedia Baker's yeast nutrition table and getfoodfacts.com; zero by composition: cholesterol_mg)"
+      }
+    },
+    "kewra-water": {
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (Other: Fitatu food database: Fitatu, Kewra Water (KTC), 0 kcal per 100 g, other fields n.d.; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (Other: Fitatu food database: Fitatu, Kewra Water (KTC), 0 kcal per 100 g, other fields n.d.; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
     "kokum-dried-rind": {
@@ -1358,6 +1904,63 @@
         "per100": 625,
         "unit": "µg",
         "source": "ingredient research (USDA FDC: FDC ID 174256, Mung beans, mature seeds, raw (SR Legacy; whole seed used as proxy for split dal), via secondary sites)"
+      }
+    },
+    "moong-sprouts-fresh-packaged": {
+      "iron": {
+        "per100": 0.91,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA SR Legacy Mung beans, mature seeds, sprouted, raw (FDC ID not shown), via secondary sites (foodstruct.com, recipal.com, triagemethod.com); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "calcium": {
+        "per100": 13,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA SR Legacy Mung beans, mature seeds, sprouted, raw (FDC ID not shown), via secondary sites (foodstruct.com, recipal.com, triagemethod.com); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "potassium": {
+        "per100": 149,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA SR Legacy Mung beans, mature seeds, sprouted, raw (FDC ID not shown), via secondary sites (foodstruct.com, recipal.com, triagemethod.com); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "magnesium": {
+        "per100": 21,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA SR Legacy Mung beans, mature seeds, sprouted, raw (FDC ID not shown), via secondary sites (foodstruct.com, recipal.com, triagemethod.com); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "zinc": {
+        "per100": 0.41,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA SR Legacy Mung beans, mature seeds, sprouted, raw (FDC ID not shown), via secondary sites (foodstruct.com, recipal.com, triagemethod.com); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA SR Legacy Mung beans, mature seeds, sprouted, raw (FDC ID not shown), via secondary sites (foodstruct.com, recipal.com, triagemethod.com); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "phosphorus": {
+        "per100": 54,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA SR Legacy Mung beans, mature seeds, sprouted, raw (FDC ID not shown), via secondary sites (foodstruct.com, recipal.com, triagemethod.com); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "selenium": {
+        "per100": 0.6,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA SR Legacy Mung beans, mature seeds, sprouted, raw (FDC ID not shown), via secondary sites (foodstruct.com, recipal.com, triagemethod.com); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "copper": {
+        "per100": 0.16,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA SR Legacy Mung beans, mature seeds, sprouted, raw (FDC ID not shown), via secondary sites (foodstruct.com, recipal.com, triagemethod.com); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "manganese": {
+        "per100": 0.19,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA SR Legacy Mung beans, mature seeds, sprouted, raw (FDC ID not shown), via secondary sites (foodstruct.com, recipal.com, triagemethod.com); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA SR Legacy Mung beans, mature seeds, sprouted, raw (FDC ID not shown), via secondary sites (foodstruct.com, recipal.com, triagemethod.com); zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
     "moth-beans-dry": {
@@ -1503,6 +2106,88 @@
         "source": "nutrient research (vitamin-b6 food sources)"
       }
     },
+    "pomegranate": {
+      "iron": {
+        "per100": 0.3,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 169134 Pomegranates, raw (SR Legacy; SR Basic Report 09286), via secondary sites (getfoodfacts.com, recipal.com, triagemethod.com, growables.org); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "calcium": {
+        "per100": 10,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 169134 Pomegranates, raw (SR Legacy; SR Basic Report 09286), via secondary sites (getfoodfacts.com, recipal.com, triagemethod.com, growables.org); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "potassium": {
+        "per100": 236,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 169134 Pomegranates, raw (SR Legacy; SR Basic Report 09286), via secondary sites (getfoodfacts.com, recipal.com, triagemethod.com, growables.org); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "magnesium": {
+        "per100": 12,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 169134 Pomegranates, raw (SR Legacy; SR Basic Report 09286), via secondary sites (getfoodfacts.com, recipal.com, triagemethod.com, growables.org); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "zinc": {
+        "per100": 0.35,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 169134 Pomegranates, raw (SR Legacy; SR Basic Report 09286), via secondary sites (getfoodfacts.com, recipal.com, triagemethod.com, growables.org); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-c": {
+        "per100": 10.2,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 169134 Pomegranates, raw (SR Legacy; SR Basic Report 09286), via secondary sites (getfoodfacts.com, recipal.com, triagemethod.com, growables.org); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "folate": {
+        "per100": 38,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: FDC ID 169134 Pomegranates, raw (SR Legacy; SR Basic Report 09286), via secondary sites (getfoodfacts.com, recipal.com, triagemethod.com, growables.org); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 169134 Pomegranates, raw (SR Legacy; SR Basic Report 09286), via secondary sites (getfoodfacts.com, recipal.com, triagemethod.com, growables.org); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "phosphorus": {
+        "per100": 36,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 169134 Pomegranates, raw (SR Legacy; SR Basic Report 09286), via secondary sites (getfoodfacts.com, recipal.com, triagemethod.com, growables.org); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "copper": {
+        "per100": 0.158,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 169134 Pomegranates, raw (SR Legacy; SR Basic Report 09286), via secondary sites (getfoodfacts.com, recipal.com, triagemethod.com, growables.org); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-e": {
+        "per100": 0.6,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 169134 Pomegranates, raw (SR Legacy; SR Basic Report 09286), via secondary sites (getfoodfacts.com, recipal.com, triagemethod.com, growables.org); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-k": {
+        "per100": 16.4,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: FDC ID 169134 Pomegranates, raw (SR Legacy; SR Basic Report 09286), via secondary sites (getfoodfacts.com, recipal.com, triagemethod.com, growables.org); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "thiamine": {
+        "per100": 0.067,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 169134 Pomegranates, raw (SR Legacy; SR Basic Report 09286), via secondary sites (getfoodfacts.com, recipal.com, triagemethod.com, growables.org); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "niacin": {
+        "per100": 0.29,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 169134 Pomegranates, raw (SR Legacy; SR Basic Report 09286), via secondary sites (getfoodfacts.com, recipal.com, triagemethod.com, growables.org); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b6": {
+        "per100": 0.07,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: FDC ID 169134 Pomegranates, raw (SR Legacy; SR Basic Report 09286), via secondary sites (getfoodfacts.com, recipal.com, triagemethod.com, growables.org); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: FDC ID 169134 Pomegranates, raw (SR Legacy; SR Basic Report 09286), via secondary sites (getfoodfacts.com, recipal.com, triagemethod.com, growables.org); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
     "poppy-seeds": {
       "iron": {
         "per100": 9.8,
@@ -1640,6 +2325,23 @@
         "source": "ingredient research (USDA FDC: SR Legacy Cereals, oats, regular and rolled and quick and instant, not fortified, dry (NDB 08120), FDC ID not confirmed, via secondary sites)"
       }
     },
+    "rose-water": {
+      "sodium": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (Other: label data (Cortas, Sadaf) and ReciPal: Cortas rose water label (Hannaford), Sadaf rose water label (H-E-B), ReciPal Rose water entry, Eat This Much Al Wadi rose water; US label zeros (rounded); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (Other: label data (Cortas, Sadaf) and ReciPal: Cortas rose water label (Hannaford), Sadaf rose water label (H-E-B), ReciPal Rose water entry, Eat This Much Al Wadi rose water; US label zeros (rounded); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (Other: label data (Cortas, Sadaf) and ReciPal: Cortas rose water label (Hannaford), Sadaf rose water label (H-E-B), ReciPal Rose water entry, Eat This Much Al Wadi rose water; US label zeros (rounded); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
     "sago-tapioca-pearls-medium": {
       "iron": {
         "per100": 1.58,
@@ -1670,6 +2372,13 @@
         "per100": 1,
         "unit": "mg",
         "source": "ingredient research (USDA FDC: FDC ID 169717, Tapioca, pearl, dry (SR Legacy), via secondary sites; Mg and Zn converted from per-cup (152 g) values)"
+      }
+    },
+    "schezwan-chutney-ready-made": {
+      "sodium": {
+        "per100": 1972,
+        "unit": "mg",
+        "source": "ingredient research (Other: Ching's Secret label data via Fitatu, FatSecret India and Open Food Facts: Fitatu Schezwan Chutney (Ching's Secret) per 100 g; sodium from Open Food Facts 8901595863280 salt 4.93 g (basis unclear) divided by 2.5)"
       }
     },
     "seer-fish-kingfish-steaks": {
@@ -1808,6 +2517,47 @@
         "per100": 1,
         "unit": "mg",
         "source": "ingredient research (USDA FDC: FDC ID 169760, Rice, white, medium-grain, raw, unenriched (SR Legacy), via secondary site)"
+      }
+    },
+    "star-anise": {
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (Other: Fitatu catalogue entry for Fudco Star Anise (pack label data): Fitatu catalogue, Star Anise (Fudco), per 100 g; no IFCT 2017 or USDA FDC entry for star anise found; Recipal entry (367 kcal) seen but not used (source not stated); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (Other: Fitatu catalogue entry for Fudco Star Anise (pack label data): Fitatu catalogue, Star Anise (Fudco), per 100 g; no IFCT 2017 or USDA FDC entry for star anise found; Recipal entry (367 kcal) seen but not used (source not stated); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
+    "tamarind-date-chutney-ready-made": {
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (Other: Tata Sampann Meethi Imli Khajur Chutney Dip label data via FatSecret India: FatSecret India, Tata Sampann Meethi Imli Khajur Chutney Dip per 100 g; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (Other: Tata Sampann Meethi Imli Khajur Chutney Dip label data via FatSecret India: FatSecret India, Tata Sampann Meethi Imli Khajur Chutney Dip per 100 g; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
+    "thin-sev-plain": {
+      "sodium": {
+        "per100": 1091,
+        "unit": "mg",
+        "source": "ingredient research (Other: SWAD nylon sev label data via EatThisMuch: EatThisMuch nylon sev (SWAD), per 55 g serving converted to per 100 g; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (Other: SWAD nylon sev label data via EatThisMuch: EatThisMuch nylon sev (SWAD), per 55 g serving converted to per 100 g; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (Other: SWAD nylon sev label data via EatThisMuch: EatThisMuch nylon sev (SWAD), per 55 g serving converted to per 100 g; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
     "tomato-ketchup": {
@@ -1986,6 +2736,40 @@
         "source": "nutrient research (pantothenic-acid food sources)"
       }
     },
+    "paneer": {
+      "biotin": {
+        "per100": 21,
+        "unit": "µg",
+        "source": "nutrient research (biotin food sources)"
+      },
+      "vitamin-b12": {
+        "per100": 0.6,
+        "unit": "µg",
+        "source": "nutrient research (vitamin-b12 food sources)"
+      }
+    },
+    "spinach": {
+      "biotin": {
+        "per100": 4.14,
+        "unit": "µg",
+        "source": "nutrient research (biotin food sources)"
+      },
+      "vitamin-a": {
+        "per100": 434,
+        "unit": "µg",
+        "source": "nutrient research (vitamin-a food sources)"
+      },
+      "vitamin-e": {
+        "per100": 1.3,
+        "unit": "mg",
+        "source": "nutrient research (vitamin-e food sources)"
+      },
+      "vitamin-k": {
+        "per100": 325,
+        "unit": "µg",
+        "source": "nutrient research (vitamin-k food sources)"
+      }
+    },
     "mutton-goat-bone-in-curry-cut": {
       "niacin": {
         "per100": 5.15,
@@ -2042,6 +2826,11 @@
         "per100": 0.11,
         "unit": "mg",
         "source": "nutrient research (riboflavin food sources)"
+      },
+      "vitamin-b12": {
+        "per100": 0.37,
+        "unit": "µg",
+        "source": "nutrient research (vitamin-b12 food sources)"
       }
     },
     "drumstick": {
@@ -2093,23 +2882,6 @@
         "per100": 0.45,
         "unit": "mg",
         "source": "nutrient research (thiamine food sources)"
-      }
-    },
-    "spinach": {
-      "vitamin-a": {
-        "per100": 434,
-        "unit": "µg",
-        "source": "nutrient research (vitamin-a food sources)"
-      },
-      "vitamin-e": {
-        "per100": 1.3,
-        "unit": "mg",
-        "source": "nutrient research (vitamin-e food sources)"
-      },
-      "vitamin-k": {
-        "per100": 325,
-        "unit": "µg",
-        "source": "nutrient research (vitamin-k food sources)"
       }
     },
     "carrot": {
@@ -2167,6 +2939,18 @@
         "per100": 113,
         "unit": "µg",
         "source": "nutrient research (vitamin-k food sources)"
+      }
+    },
+    "cooking-oil-refined-sunflower-groundnut": {
+      "vitamin-d": {
+        "per100": 3.51,
+        "unit": "µg",
+        "source": "nutrient research (vitamin-d food sources)"
+      },
+      "vitamin-e": {
+        "per100": 41,
+        "unit": "mg",
+        "source": "nutrient research (vitamin-e food sources)"
       }
     },
     "green-peas-frozen": {

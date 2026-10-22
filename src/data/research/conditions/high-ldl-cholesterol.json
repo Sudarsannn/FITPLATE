@@ -1,0 +1,807 @@
+{
+  "id": "high-ldl-cholesterol",
+  "type": "condition",
+  "name": "High LDL cholesterol",
+  "surveyQuestion": "Do you have any of these health conditions? (select all that apply) -> High cholesterol (high LDL). Check question: Has a doctor told you your cholesterol or LDL is high or borderline? Yes, high / Yes, borderline (lifestyle-only mode) / No / Never tested (suggest lipid test from age 18, CSI) / Not sure. Follow-ups: Do you take any medicine for cholesterol? No / Yes / Not sure; Has a doctor given you an LDL goal? (enter it) / No / Not sure; Close family member with early heart attack or stroke, or very high cholesterol? Yes / No / Not sure; optional lab entry (total cholesterol, LDL, HDL, non-HDL, triglycerides, Lp(a), test date)",
+  "targets": [
+    {
+      "nutrient": "energy",
+      "unit": "kcal/day",
+      "generalAdult": 2110,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "limit",
+      "source": "ICMR-NIN 2020 (2110 sedentary man, 1660 sedentary woman) (secondary, unverified); modest deficit only if BMI 23 or more or waist 90/80 cm or more; LDL change per kg lost Not found"
+    },
+    {
+      "nutrient": "protein",
+      "unit": "g/kg/day",
+      "generalAdult": 0.83,
+      "profileValue": 0.83,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); prefer pulses, soy, fish, skinless chicken, egg whites, low-fat dairy; soy protein lowers LDL about 3-4% (2019 meta-analysis of 46 trials, via summary)"
+    },
+    {
+      "nutrient": "total_fat",
+      "unit": "% energy",
+      "generalAdult": 30,
+      "profileValue": 30,
+      "min": null,
+      "max": 30,
+      "direction": "same",
+      "source": "DGI 2024 (30% or less); WHO 2023; 67 g or less at 2000 kcal (calc.)"
+    },
+    {
+      "nutrient": "visible_fat_men",
+      "unit": "g/day",
+      "generalAdult": 25,
+      "profileValue": 25,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 sedentary man 25 g (moderate 30, heavy 40) via news (secondary, unverified); swap type to non-tropical vegetable oils"
+    },
+    {
+      "nutrient": "visible_fat_women",
+      "unit": "g/day",
+      "generalAdult": 20,
+      "profileValue": 20,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 sedentary woman 20 g (moderate 25, heavy 30) via news (secondary, unverified)"
+    },
+    {
+      "nutrient": "saturated_fat",
+      "unit": "% energy",
+      "generalAdult": 10,
+      "profileValue": 7,
+      "min": null,
+      "max": 7,
+      "direction": "limit",
+      "source": "NLA Part 2 2015 (under 7%); ICMR 2018 diabetes guideline via Viswanathan 2019 (under 7%); WHO 2023 general 10%; optional stretch 5-6% (AHA); 15.6 g at 2000 kcal (calc.)"
+    },
+    {
+      "nutrient": "saturated_fat_g",
+      "unit": "g/day at 2000 kcal",
+      "generalAdult": 22,
+      "profileValue": 15.6,
+      "min": null,
+      "max": 15.6,
+      "direction": "limit",
+      "source": "Calculated from 7% of 2000 kcal at 9 kcal/g; stretch about 13 g (AHA 5-6%); about 5 g per main meal (calc.)"
+    },
+    {
+      "nutrient": "trans_fat",
+      "unit": "% energy",
+      "generalAdult": 1,
+      "profileValue": 1,
+      "min": null,
+      "max": 1,
+      "direction": "limit",
+      "source": "WHO 2023 (1% or less, industrial and ruminant); as low as possible; under 2.2 g at 2000 kcal (calc.); FSSAI industrial TFA 2% or less of fat from 1 Jan 2022"
+    },
+    {
+      "nutrient": "mufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "raise",
+      "source": "Not found as a number; replace saturated fat with plant MUFA (WHO 2023): groundnut, mustard, rice bran, sesame, olive oils, nuts"
+    },
+    {
+      "nutrient": "pufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "raise",
+      "source": "Not found as a number; replace saturated fat with PUFA (WHO 2023; AHA); rotate 2 or more oils"
+    },
+    {
+      "nutrient": "omega_3",
+      "unit": "fish servings/week",
+      "generalAdult": null,
+      "profileValue": 2,
+      "min": 2,
+      "max": null,
+      "direction": "raise",
+      "source": "AHA 2021 dietary guidance (fish 2 or more times a week); plant omega-3 from flaxseed, walnuts, mustard oil; g/day value Not found; no fish-oil capsule advice"
+    },
+    {
+      "nutrient": "dietary_cholesterol",
+      "unit": "mg/day",
+      "generalAdult": null,
+      "profileValue": 200,
+      "min": null,
+      "max": 200,
+      "direction": "limit",
+      "source": "NLA Part 2 2015 (under 200 mg/day, Grade B); no ICMR limit found; AHA 2019 advisory sets no number but gives caveats for dyslipidaemia; 1 large egg about 186 mg (FitPlate dish files, USDA)"
+    },
+    {
+      "nutrient": "total_carbohydrate",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No P4-specific value found; DGI 2024 caps cereals and millets at 45% of energy; CSI 2024 advises cutting sugar and refined carbohydrate (via press)"
+    },
+    {
+      "nutrient": "added_sugar",
+      "unit": "g/day",
+      "generalAdult": 25,
+      "profileValue": 25,
+      "min": null,
+      "max": 25,
+      "direction": "limit",
+      "source": "DGI 2024 (under 5% of energy, about 25 g); CSI 2024 (reduce sugar, via press)"
+    },
+    {
+      "nutrient": "fibre",
+      "unit": "g/day",
+      "generalAdult": 30,
+      "profileValue": 30,
+      "min": 30,
+      "max": null,
+      "direction": "raise",
+      "source": "ICMR-NIN 2020 about 30 g/2000 kcal (secondary, unverified); Harvard Health 20-35 g"
+    },
+    {
+      "nutrient": "soluble_fibre",
+      "unit": "g/day",
+      "generalAdult": null,
+      "profileValue": 5,
+      "min": 5,
+      "max": 25,
+      "direction": "raise",
+      "source": "NLA Part 2 5-10 g/day viscous fibre, up to 25 g if achievable (via Healio summary); Harvard Health at least 5-10 g soluble"
+    },
+    {
+      "nutrient": "oat_barley_beta_glucan",
+      "unit": "g/day",
+      "generalAdult": null,
+      "profileValue": 3,
+      "min": 3,
+      "max": null,
+      "direction": "raise",
+      "source": "Whitehead et al. AJCN 2014 (28 RCTs, 3 g/day or more lowered LDL 0.25 mmol/L); EFSA beta-glucan claim; only if the user eats oats or barley"
+    },
+    {
+      "nutrient": "plant_sterols_stanols",
+      "unit": "g/day",
+      "generalAdult": null,
+      "profileValue": 2,
+      "min": null,
+      "max": 3,
+      "direction": "raise",
+      "source": "Optional, fortified foods only: NLA about 2 g/day (via Healio); EAS 2014 consensus 8-10% LDL lowering at 2 g; EFSA/EU Reg 686/2014 1.5-3 g lowers LDL 7-12% in 2-3 weeks; FSSAI 2016 rules, draft labelling under 3 g/day, not for pregnant or breastfeeding women or children under 5, statin users under medical supervision; avoid in sitosterolaemia"
+    },
+    {
+      "nutrient": "nuts",
+      "unit": "g/day",
+      "generalAdult": null,
+      "profileValue": 28,
+      "min": null,
+      "max": null,
+      "direction": "raise",
+      "source": "Del Gobbo et al. AJCN 2015 (61 trials): 1 serving/day linked to about 4.8 mg/dL lower LDL (via letter and summary; secondary); unsalted, in place of other snacks"
+    },
+    {
+      "nutrient": "sodium",
+      "unit": "mg/day",
+      "generalAdult": 2000,
+      "profileValue": 2000,
+      "min": null,
+      "max": 2000,
+      "direction": "limit",
+      "source": "WHO 2012; DGI 2024; ICMR STW (as P3)"
+    },
+    {
+      "nutrient": "salt",
+      "unit": "g/day",
+      "generalAdult": 5,
+      "profileValue": 5,
+      "min": null,
+      "max": 5,
+      "direction": "limit",
+      "source": "WHO 2012; DGI 2024 (as P3)"
+    },
+    {
+      "nutrient": "potassium",
+      "unit": "mg/day",
+      "generalAdult": 3510,
+      "profileValue": 3510,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "WHO 2012 (at least 3510 mg); ICMR-NIN 2020 3500 mg (secondary, unverified); P3/P13 safety rules apply"
+    },
+    {
+      "nutrient": "calcium",
+      "unit": "mg/day",
+      "generalAdult": 1000,
+      "profileValue": 1000,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); from low-fat dairy, ragi, sesame, calcium-set tofu"
+    },
+    {
+      "nutrient": "iron_men",
+      "unit": "mg/day",
+      "generalAdult": 19,
+      "profileValue": 19,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "iron_women",
+      "unit": "mg/day",
+      "generalAdult": 29,
+      "profileValue": 29,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "magnesium_men",
+      "unit": "mg/day",
+      "generalAdult": 440,
+      "profileValue": 440,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 via FSSAI (secondary, unverified)"
+    },
+    {
+      "nutrient": "magnesium_women",
+      "unit": "mg/day",
+      "generalAdult": 370,
+      "profileValue": 370,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 via FSSAI (secondary, unverified)"
+    },
+    {
+      "nutrient": "vitamin_d",
+      "unit": "µg/day",
+      "generalAdult": 15,
+      "profileValue": 15,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "vitamin_b12",
+      "unit": "µg/day",
+      "generalAdult": 2.2,
+      "profileValue": 2.2,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 as adopted by FSSAI (secondary, unverified); watch if cutting dairy and eggs"
+    },
+    {
+      "nutrient": "folate_men",
+      "unit": "µg DFE/day",
+      "generalAdult": 300,
+      "profileValue": 300,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "folate_women",
+      "unit": "µg DFE/day",
+      "generalAdult": 220,
+      "profileValue": 220,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "unfiltered_coffee",
+      "unit": "-",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "limit",
+      "source": "Prefer paper-filtered coffee; 0.9 L/day cafetiere coffee raised LDL 9% over 6 months (Urgert et al., via FAO AGRIS record); cafestol in South Indian metal-filter coffee Not found"
+    },
+    {
+      "nutrient": "alcohol",
+      "unit": "standard drinks/day",
+      "generalAdult": null,
+      "profileValue": 0,
+      "min": null,
+      "max": 2,
+      "direction": "limit",
+      "source": "No LDL benefit; no P4-specific number found; best none; ceiling as P3 (ACC/AHA 2017: 2 men, 1 women)"
+    },
+    {
+      "nutrient": "red_yeast_rice",
+      "unit": "-",
+      "generalAdult": null,
+      "profileValue": 0,
+      "min": null,
+      "max": 0,
+      "direction": "limit",
+      "source": "Not recommended: EFSA 2018 could not identify a safe monacolin intake; severe adverse reactions reported at 3 mg/day; monacolin K identical to lovastatin"
+    },
+    {
+      "nutrient": "physical_activity",
+      "unit": "min/week",
+      "generalAdult": 150,
+      "profileValue": 150,
+      "min": 150,
+      "max": null,
+      "direction": "raise",
+      "source": "NLA Part 2; AHA 2021; NHS (150 min/week); exercise training lowered LDL about 7.2 mg/dL (2025 meta-analysis of 148 RCTs)"
+    },
+    {
+      "nutrient": "water",
+      "unit": "mL/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No change from FitPlate general water target; never pushed higher; heart, kidney, liver disease, pregnancy or diuretics: follow your doctor's advice"
+    }
+  ],
+  "bloodMarkers": [
+    {
+      "marker": "LDL cholesterol (general bands)",
+      "target": "Under 100 optimal; 100-129 near optimal; 130-159 borderline high; 160-189 high; 190 or more very high (possible FH, see doctor); app never diagnoses",
+      "unit": "mg/dL",
+      "source": "NCEP ATP III classification (via secondary tables)"
+    },
+    {
+      "marker": "LDL cholesterol goal (doctor sets by risk)",
+      "target": "Low or moderate risk under 100; high risk under 70; very high risk under 50 (LAI) or under 55 (CSI 2024, ESC 2019); extreme risk category A 50 or lower (optional 30 or lower), category B 30 or lower, category C 10-15 (LAI, secondary); low-risk drug consideration if 130 or more after at least 3 months of lifestyle change (LAI)",
+      "unit": "mg/dL",
+      "source": "Lipid Association of India 2020 table and 2023 update (secondary, unverified); CSI 2024 clinical practice guidelines (Indian Heart J); ESC/EAS 2019 and 2025 focused update"
+    },
+    {
+      "marker": "Non-HDL cholesterol goal (doctor sets)",
+      "target": "Low or moderate risk under 130; high risk under 100; very high risk under 80 (LAI) or under 85 (CSI); main focus when triglycerides are over 150",
+      "unit": "mg/dL",
+      "source": "LAI (secondary, unverified); CSI 2024"
+    },
+    {
+      "marker": "Total cholesterol",
+      "target": "200 or more is the usual high cut-off; not a treatment target",
+      "unit": "mg/dL",
+      "source": "ICMR-INDIAB cut-off; LAI and CSI use LDL and non-HDL instead"
+    },
+    {
+      "marker": "Triglycerides",
+      "target": "Over 150 raised (risk modifier, switch to non-HDL focus); see P5",
+      "unit": "mg/dL",
+      "source": "LAI 2023 update; CSI 2024"
+    },
+    {
+      "marker": "HDL cholesterol",
+      "target": "Low at under 40 (men) or under 50 (women); reference only; see P6",
+      "unit": "mg/dL",
+      "source": "As P1/P6 (ADA reference)"
+    },
+    {
+      "marker": "Lipoprotein(a)",
+      "target": "50 or more high-risk feature; 20-49 moderate; measure at least once; ESC: over 50 mg/dL (over 105 nmol/L) refines risk",
+      "unit": "mg/dL; nmol/L",
+      "source": "LAI via PIMR 2023 review; CSI 2024; ESC/EAS 2025 focused update"
+    },
+    {
+      "marker": "Lipid testing",
+      "target": "Non-fasting test acceptable; first test at age 18, earlier with family history",
+      "unit": "-",
+      "source": "CSI 2024 (via press)"
+    },
+    {
+      "marker": "TSH",
+      "target": "Stored only; underactive thyroid can raise LDL; see P9",
+      "unit": "mIU/L",
+      "source": "European dyslipidaemia review (secondary)"
+    },
+    {
+      "marker": "eGFR",
+      "target": "Stored only; CKD = very high risk group (doctor sets LDL goal); see P13",
+      "unit": "mL/min/1.73 m2",
+      "source": "CSI 2024"
+    }
+  ],
+  "waterMl": {
+    "min": null,
+    "max": null,
+    "notes": "No change from FitPlate general water target; high LDL alone does not change water needs. Drink more in heat, exercise or fever per general rules, and drink plenty of water with isabgol or other fibre supplements. With heart disease, heart failure, kidney or liver disease, pregnancy or diuretics, the app shows only the general range and never pushes a higher target. Follow your doctor's advice."
+  },
+  "sodiumMgMax": 2000,
+  "dietaryCholesterolMgMax": 200,
+  "foodsFavour": [
+    "whole pulses and dals (rajma, chana, moong, masoor, urad, matki, lobia, sprouts)",
+    "oats, barley (jau), ragi, jowar, bajra and whole-wheat atta",
+    "isabgol (psyllium) husk with plenty of water",
+    "brinjal, bhindi, methi, palak, beans, cabbage and carrots",
+    "guava, apple, orange, pear and papaya",
+    "soybean, tofu, soy milk and soy chunks",
+    "unsalted almonds, walnuts and groundnuts (about one small handful a day)",
+    "flaxseed and sesame seeds",
+    "groundnut, mustard, rice bran, sesame, sunflower or olive oil in measured amounts",
+    "fish about twice a week (bangda, surmai, sardines), not fried",
+    "skinless chicken and egg whites",
+    "toned or double-toned milk, low-fat curd, plain chaas, low-fat paneer in moderate portions",
+    "paper-filtered coffee, unsweetened tea, water"
+  ],
+  "foodsLimit": [
+    "ghee (61.9 g saturated fat and 256 mg cholesterol per 100 g; about 1 tsp a day inside the budget)",
+    "butter, cream, malai, khoya and cheese",
+    "large portions of full-fat paneer",
+    "coconut, coconut oil and coconut milk gravies (coconut oil raised LDL 10.47 mg/dL vs non-tropical oils)",
+    "palm oil and palmolein in namkeen, biscuits and fried street food",
+    "vanaspati and bakery shortening (puffs, khari, nankhatai, cream biscuits, cakes)",
+    "deep-fried snacks, especially in reused oil (samosa, vada, bhajiya, puri, farsan)",
+    "fatty red meat, organ meat, sausages and salami",
+    "more than one whole egg a day (use egg whites)",
+    "large portions of prawns (cholesterol)",
+    "mithai and sugary drinks",
+    "large amounts of unfiltered (French press or boiled) coffee",
+    "red yeast rice and other cholesterol-cure supplements"
+  ],
+  "goodFitDishes": [
+    {
+      "dishNumber": 67,
+      "dishName": "Mix Veg Curry"
+    },
+    {
+      "dishNumber": 66,
+      "dishName": "Sprouts Chaat"
+    },
+    {
+      "dishNumber": 60,
+      "dishName": "Aloo Matar"
+    },
+    {
+      "dishNumber": 44,
+      "dishName": "Baingan Bharta"
+    },
+    {
+      "dishNumber": 56,
+      "dishName": "Pesarattu"
+    },
+    {
+      "dishNumber": 51,
+      "dishName": "Uttapam"
+    },
+    {
+      "dishNumber": 57,
+      "dishName": "Tomato Rice"
+    },
+    {
+      "dishNumber": 49,
+      "dishName": "Mushroom Masala"
+    },
+    {
+      "dishNumber": 46,
+      "dishName": "Methi Thepla"
+    },
+    {
+      "dishNumber": 58,
+      "dishName": "Khaman Dhokla"
+    },
+    {
+      "dishNumber": 31,
+      "dishName": "Indian-style Overnight Oats"
+    },
+    {
+      "dishNumber": 9,
+      "dishName": "Idli with Sambar"
+    },
+    {
+      "dishNumber": 12,
+      "dishName": "Rajma Chawal"
+    },
+    {
+      "dishNumber": 8,
+      "dishName": "Chole (Chana Masala)"
+    },
+    {
+      "dishNumber": 5,
+      "dishName": "Dal Tadka"
+    },
+    {
+      "dishNumber": 80,
+      "dishName": "Masoor Dal"
+    },
+    {
+      "dishNumber": 16,
+      "dishName": "Besan Chilla"
+    },
+    {
+      "dishNumber": 26,
+      "dishName": "Moong Dal Chilla"
+    },
+    {
+      "dishNumber": 71,
+      "dishName": "Ragi Dosa"
+    },
+    {
+      "dishNumber": 45,
+      "dishName": "Tandoori Chicken"
+    }
+  ],
+  "cautionDishes": [
+    {
+      "dishNumber": 61,
+      "dishName": "Appam with Veg Stew",
+      "reason": "About 25 g saturated fat from coconut milk, coconut oil and grated coconut (est.)"
+    },
+    {
+      "dishNumber": 63,
+      "dishName": "Shahi Paneer",
+      "reason": "About 21 g saturated fat and 93 mg cholesterol from paneer, cream and ghee (est.)"
+    },
+    {
+      "dishNumber": 33,
+      "dishName": "Goan Fish Curry",
+      "reason": "About 19 g saturated fat from coconut and coconut oil; use less coconut (est.)"
+    },
+    {
+      "dishNumber": 53,
+      "dishName": "Paneer Tikka",
+      "reason": "About 18.6 g saturated fat from full-fat paneer (est.)"
+    },
+    {
+      "dishNumber": 69,
+      "dishName": "Paneer Bhurji",
+      "reason": "About 16 g saturated fat from paneer and butter (est.)"
+    },
+    {
+      "dishNumber": 42,
+      "dishName": "Malai Kofta",
+      "reason": "About 13.4 g saturated fat; fried koftas, cream and butter (est.)"
+    },
+    {
+      "dishNumber": 54,
+      "dishName": "Matar Paneer",
+      "reason": "About 11.3 g saturated fat from paneer (est.)"
+    },
+    {
+      "dishNumber": 27,
+      "dishName": "Dal Makhani",
+      "reason": "About 11 g saturated fat from butter and cream (est.)"
+    },
+    {
+      "dishNumber": 13,
+      "dishName": "Pav Bhaji",
+      "reason": "About 10 g saturated fat from 20 g butter (est.)"
+    },
+    {
+      "dishNumber": 62,
+      "dishName": "Mutton Biryani",
+      "reason": "About 9.5 g saturated fat and 100 mg cholesterol from ghee and mutton (est.)"
+    },
+    {
+      "dishNumber": 68,
+      "dishName": "Chicken Chettinad",
+      "reason": "About 9 g saturated fat from coconut and 105 mg cholesterol (est.)"
+    },
+    {
+      "dishNumber": 41,
+      "dishName": "Pongal",
+      "reason": "About 8.8 g saturated fat from 1 tbsp ghee (est.)"
+    },
+    {
+      "dishNumber": 50,
+      "dishName": "Chicken Korma",
+      "reason": "About 8.6 g saturated fat and 155 mg cholesterol (est.)"
+    },
+    {
+      "dishNumber": 48,
+      "dishName": "Bisi Bele Bath",
+      "reason": "About 7.7 g saturated fat from ghee and dry coconut; swap most ghee for oil (est.)"
+    },
+    {
+      "dishNumber": 52,
+      "dishName": "Moong Dal Khichdi",
+      "reason": "About 6.4 g saturated fat from ghee; swap most ghee for oil (est.)"
+    },
+    {
+      "dishNumber": 3,
+      "dishName": "Paneer Butter Masala",
+      "reason": "About 43 g fat, much of it saturated from paneer, butter and cream (est.)"
+    },
+    {
+      "dishNumber": 7,
+      "dishName": "Butter Chicken",
+      "reason": "About 30 g fat from butter and cream gravy (est.)"
+    },
+    {
+      "dishNumber": 17,
+      "dishName": "Palak Paneer",
+      "reason": "About 35 g fat, much of it saturated from paneer and cream (est.)"
+    },
+    {
+      "dishNumber": 22,
+      "dishName": "Kadai Paneer",
+      "reason": "About 34 g fat, much of it saturated from paneer and cream (est.)"
+    },
+    {
+      "dishNumber": 14,
+      "dishName": "Egg Bhurji",
+      "reason": "About 560 mg cholesterol from 3 yolks plus butter; use 1 whole egg and whites (est.)"
+    },
+    {
+      "dishNumber": 70,
+      "dishName": "Egg Fried Rice",
+      "reason": "About 370 mg cholesterol from 2 yolks (est.)"
+    },
+    {
+      "dishNumber": 21,
+      "dishName": "Masala Omelette",
+      "reason": "About 370 mg cholesterol from 2 yolks; swap 1 egg for 2 whites (est.)"
+    },
+    {
+      "dishNumber": 38,
+      "dishName": "Egg Curry",
+      "reason": "About 370 mg cholesterol from 2 yolks (est.)"
+    },
+    {
+      "dishNumber": 59,
+      "dishName": "Chicken Kathi Roll",
+      "reason": "About 280 mg cholesterol from egg and chicken (est.)"
+    },
+    {
+      "dishNumber": 43,
+      "dishName": "Chicken Fried Rice",
+      "reason": "About 260 mg cholesterol from egg and chicken (est.)"
+    },
+    {
+      "dishNumber": 55,
+      "dishName": "Prawn Masala",
+      "reason": "Low saturated fat but about 240 mg cholesterol; smaller portion, not on egg days (est.)"
+    },
+    {
+      "dishNumber": 20,
+      "dishName": "Vada Pav",
+      "reason": "Deep-fried; trans-fat risk with reused oil or vanaspati (est.)"
+    },
+    {
+      "dishNumber": 24,
+      "dishName": "Medu Vada",
+      "reason": "Deep-fried; trans-fat risk with reused oil (est.)"
+    },
+    {
+      "dishNumber": 28,
+      "dishName": "Chicken 65",
+      "reason": "Deep-fried (est.)"
+    },
+    {
+      "dishNumber": 65,
+      "dishName": "Puri Bhaji",
+      "reason": "Deep-fried puris, about 24 g oil; trans-fat risk with reused oil (est.)"
+    },
+    {
+      "dishNumber": 77,
+      "dishName": "Keema Pav",
+      "reason": "Fatty mince and buttered pav; not yet researched (est.)"
+    },
+    {
+      "dishNumber": 78,
+      "dishName": "Navratan Korma",
+      "reason": "Cream and nut gravy; not yet researched (est.)"
+    }
+  ],
+  "conflictsWith": [
+    {
+      "profileId": "heart-disease",
+      "rule": "P21 overrides: LDL goal is the doctor's (very high risk); fluid follows P21; saturated fat at least as strict as P4; requires_doctor_input true"
+    },
+    {
+      "profileId": "pregnancy",
+      "rule": "Pregnancy overrides: no plant-sterol foods (FSSAI caution) and no red yeast rice; no weight-loss deficit; saturated fat stays at 7% (no 5-6% stretch); eggs not restricted below pregnancy needs (doctor or dietitian decides); medicines are the doctor's decision"
+    },
+    {
+      "profileId": "breastfeeding",
+      "rule": "No plant-sterol foods (FSSAI caution); otherwise P4 fat-quality rules apply within P23 energy needs"
+    },
+    {
+      "profileId": "chronic-kidney-disease",
+      "rule": "CKD is very high risk (CSI 2024); LDL goal is the doctor's; P13 overrides protein, potassium, phosphorus and fluid, including for soy, nuts and pulses"
+    },
+    {
+      "profileId": "type-2-diabetes",
+      "rule": "Same direction: saturated fat under 7%, fibre 30 g or more, sugar under 25 g; LDL goal context under 70 (LAI, CSI), doctor sets it"
+    },
+    {
+      "profileId": "prediabetes",
+      "rule": "Compatible; P2 carbohydrate and sugar rules plus P4 fat-quality rules"
+    },
+    {
+      "profileId": "hypertension",
+      "rule": "Compatible; DASH pattern suits both; P3 sodium and potassium rules plus P4 saturated fat"
+    },
+    {
+      "profileId": "high-triglycerides",
+      "rule": "Compatible; non-HDL shown as main lipid when TG over 150; P5 adds stricter sugar, refined carbohydrate and alcohol limits"
+    },
+    {
+      "profileId": "low-hdl-metabolic-syndrome",
+      "rule": "Compatible; LAI counts metabolic syndrome as a risk modifier; P6 weight and activity rules plus P4 fat quality"
+    },
+    {
+      "profileId": "fatty-liver",
+      "rule": "Compatible; LAI counts NAFLD as a risk modifier; P7 weight-loss and sugar rules plus P4 fat quality"
+    },
+    {
+      "profileId": "muscle-gain",
+      "rule": "Protein rises to P27 target from lean sources (soy, pulses, whey isolate or plant protein, egg whites, fish, skinless chicken, low-fat paneer); saturated fat 7% and cholesterol 200 mg caps stay; check bars and gainers for palm oil"
+    },
+    {
+      "profileId": "healthy-weight-gain",
+      "rule": "Extra calories from vegetable oils, nuts, oats and whole grains, not ghee, butter or cream; P4 caps stay"
+    },
+    {
+      "profileId": "hypothyroidism",
+      "rule": "Compatible; underactive thyroid can raise LDL; suggest mentioning thyroid status to doctor; no target change"
+    },
+    {
+      "profileId": "jain-diet",
+      "rule": "Food filter; soluble fibre from oats, barley, isabgol, rajma, chana, moong, bhindi, guava, apple; emphasise oil instead of ghee"
+    },
+    {
+      "profileId": "vegan-diet",
+      "rule": "No dietary cholesterol; limit coconut milk, coconut oil and palm-oil vegan butters and cheeses; prefer soy or peanut curd and soy milk; B12 per P34"
+    },
+    {
+      "profileId": "fat-loss",
+      "rule": "Compatible; P25 sets deficit; P4 adds fat-quality, cholesterol and fibre rules"
+    }
+  ],
+  "requiresDoctorInput": true,
+  "requiresDoctorInputStated": true,
+  "fluidNote": null,
+  "warnings": [
+    "General information, not medical advice. FitPlate does not diagnose high cholesterol; a blood test reviewed by a doctor is needed.",
+    "The app never suggests starting, stopping, skipping or changing a statin or any cholesterol medicine or dose. Food changes add to medicines but do not replace them. Follow your doctor.",
+    "Your LDL goal depends on your total heart risk and is set by your doctor. Indian goals range from under 100 to 30 mg/dL or lower.",
+    "LDL of 190 mg/dL or more, especially with a family history of early heart attack, can be inherited (familial hypercholesterolaemia). See a doctor; family members may need testing.",
+    "Red yeast rice contains a statin-like compound; EFSA found no safe intake and severe muscle and liver reactions at doses as low as 3 mg/day. Not recommended.",
+    "Plant-sterol fortified foods: not for pregnant or breastfeeding women or children under 5; if you take a cholesterol medicine, ask your doctor first; keep under 3 g/day.",
+    "Grapefruit juice can raise blood levels of some statins (especially simvastatin). Ask your doctor or pharmacist.",
+    "Emergency: chest pain or pressure spreading to the arm, jaw or back, with sweating or breathlessness, or signs of stroke. Seek emergency care now.",
+    "With heart, kidney or liver disease, pregnancy or diuretics, follow your doctor's advice on fluids.",
+    "requires_doctor_input is true because high LDL is a cardiovascular risk condition whose goal and medicines only a doctor can set; the app sets only general fat-quality, fibre, cholesterol, sodium, sugar and activity guidance on its own."
+  ],
+  "lastResearched": "2026-10-22",
+  "versions": [
+    {
+      "date": "2026-10-22",
+      "file": "FitPlate_Nutrients_2026-10-22.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3); max as safety limit",
+    "limits": "safety limit (lower on conflict)",
+    "lists": "union",
+    "requiresDoctorInput": "stated true in any version, else newest version (missing flag + limits → true)"
+  },
+  "mergeNotes": [],
+  "needsReview": []
+}

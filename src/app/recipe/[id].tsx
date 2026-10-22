@@ -11,7 +11,10 @@ import { featureFlags } from '../../config/featureFlags';
 import { familyOf, getDish, researchLinks } from '../../data/research';
 import { useStore } from '../../lib/store';
 import type { Dish } from '../../models/research';
+import { rangeLabel, rupees, rupeesPer10gProtein, savingVsOrder, type DishCost } from '../../services/costToMake';
 import {
+  BALANCE_HIDE_LABEL,
+  BALANCE_LABEL,
   burnWays,
   caloriesSaved,
   DEFAULT_WEIGHT_KG,
@@ -27,7 +30,7 @@ import {
   splitSource,
   trendArrow,
 } from '../../services/dishDetail';
-import { headlineOrderPrice, orderPriceNote } from '../../services/dishLibrary';
+import { headlineOrderPrice, makeCost, orderPriceNote } from '../../services/dishLibrary';
 import { colors, radius, type } from '../../theme';
 
 /**
@@ -132,6 +135,7 @@ function DishBody({ dish }: { dish: Dish }) {
       </View>
       <View onLayout={(e) => record('price', e)}>
         <OrderSection dish={dish} />
+        <MakeSection dish={dish} />
       </View>
 
       {variants.length || family.length ? (
@@ -303,8 +307,84 @@ function OrderSection({ dish }: { dish: Dish }) {
       )}
       {price?.observed ? <Text style={styles.note}>Prices updated {shortDate(price.observed)}.</Text> : null}
       {note ? <Text style={styles.note}>{note}</Text> : null}
-      <Text style={styles.note}>Cost to make arrives in the next update.</Text>
     </Section>
+  );
+}
+
+/**
+ * Day 8: cost to make one serving, as a range, from the researched
+ * ingredient prices, and the saving versus ordering once every ingredient is
+ * priced and the order price is confirmed.
+ */
+function MakeSection({ dish }: { dish: Dish }) {
+  const [open, setOpen] = useState(false);
+  const cost = makeCost(dish);
+  const saving = savingVsOrder(cost, headlineOrderPrice(dish));
+  const perProtein = featureFlags.proteinPerRupee ? rupeesPer10gProtein(cost, dish.nutritionPerServing.proteinG) : null;
+  if (!cost) {
+    return (
+      <Section title="Cost to make">
+        <Text style={styles.body}>Coming soon</Text>
+      </Section>
+    );
+  }
+  const trend = cost.trend ? trendArrow(cost.trend.trend) : null;
+  return (
+    <Section title="Cost to make">
+      <Text style={styles.body} accessibilityLabel={`About ${cost.avg} rupees per serving, usually ${cost.min} to ${cost.max}${trend ? `, ${trend.label}` : ''}`}>
+        About <Text style={styles.strong}>₹{cost.avg}</Text> per serving ({rangeLabel(cost)}){' '}
+        {trend ? <Text style={{ color: trend.arrow === '↑' ? colors.warn : colors.accent }}>{trend.arrow}</Text> : null}
+      </Text>
+      {cost.complete ? null : (
+        <Text style={styles.note}>
+          Covers {cost.pricedLines} of {cost.countedLines} ingredients. {cost.missing.length} {cost.missing.length === 1 ? 'price is' : 'prices are'} coming soon, so the full cost is a little higher.
+        </Text>
+      )}
+      <SavingLine cost={cost} saving={saving} />
+      {perProtein != null ? <Text style={styles.body}>₹{perProtein} per 10 g of protein</Text> : null}
+      <Text style={styles.note}>{trend ? `${trend.label} for its ingredients over the last month${cost.trend?.change30dPct != null ? ` (${cost.trend.change30dPct > 0 ? '+' : ''}${cost.trend.change30dPct}%)` : ''}.` : 'Ingredient price trend: not enough price history yet.'}</Text>
+      {cost.estimated ? <Text style={styles.note}>(est.) Some amounts were converted between weight and volume at 1 g per ml, because research hasn&apos;t published densities yet.</Text> : null}
+      {cost.unconfirmed ? (
+        <Text style={styles.note}>
+          {cost.unconfirmed} {cost.unconfirmed === 1 ? 'ingredient price rests' : 'ingredient prices rest'} on fewer than 3 shop listings so far.
+        </Text>
+      ) : null}
+      <PressableScale onPress={() => setOpen((o) => !o)} style={styles.link} scaleTo={0.98} accessibilityLabel={open ? 'Hide cost per ingredient' : 'Show cost per ingredient'}>
+        <Text style={styles.linkText}>{open ? 'Hide cost per ingredient' : 'Show cost per ingredient'}</Text>
+        <Ionicons name={open ? 'chevron-up' : 'chevron-down'} size={16} color={colors.muted} />
+      </PressableScale>
+      {open
+        ? cost.lines.map((l, k) => (
+            <View key={`${k}-${l.name}`} style={styles.burnRow}>
+              <Text style={[styles.body, { flex: 1 }]}>{l.name}</Text>
+              <Text style={l.avg != null ? styles.strong : styles.muted}>
+                {l.avg != null ? rupees(l.avg) : l.note}
+                {l.status === 'estimated' ? ' (est.)' : ''}
+              </Text>
+            </View>
+          ))
+        : null}
+      <Text style={styles.note}>For 1 serving, from researched shop prices. Cooking gas isn&apos;t included.</Text>
+    </Section>
+  );
+}
+
+function SavingLine({ cost, saving }: { cost: DishCost; saving: { rupees: number; pct: number } | null }) {
+  if (!saving) {
+    return <Text style={styles.note}>{cost.complete ? 'Saving versus ordering shows once the order price is confirmed.' : 'Saving versus ordering shows once every ingredient has a price.'}</Text>;
+  }
+  if (saving.rupees > 0) {
+    return (
+      <Text style={[styles.body, { color: colors.accent }]}>
+        Saves about <Text style={styles.strong}>₹{saving.rupees}</Text> ({saving.pct}%) versus ordering
+      </Text>
+    );
+  }
+  if (saving.rupees === 0) return <Text style={styles.body}>About the same as ordering</Text>;
+  return (
+    <Text style={styles.body}>
+      Costs about ₹{-saving.rupees} ({-saving.pct}%) more than ordering
+    </Text>
   );
 }
 
@@ -339,8 +419,8 @@ function BurnSection({ dish }: { dish: Dish }) {
   const ways = open ? burnWays(kcal, bodyWeightKg, researchLinks.met) : [];
   return (
     <Section title="Balance it out">
-      <PressableScale onPress={() => setOpen((o) => !o)} style={styles.link} scaleTo={0.98} accessibilityLabel={open ? "Hide ways to burn this" : "How could I burn this?"}>
-        <Text style={styles.linkText}>How could I burn this?</Text>
+      <PressableScale onPress={() => setOpen((o) => !o)} style={styles.link} scaleTo={0.98} accessibilityLabel={open ? BALANCE_HIDE_LABEL : BALANCE_LABEL}>
+        <Text style={styles.linkText}>{open ? BALANCE_HIDE_LABEL : BALANCE_LABEL}</Text>
         <Ionicons name={open ? 'chevron-up' : 'chevron-down'} size={16} color={colors.muted} />
       </PressableScale>
       {open ? (

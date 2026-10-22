@@ -1,0 +1,741 @@
+{
+  "id": "063-shahi-paneer",
+  "number": 63,
+  "name": "Shahi Paneer",
+  "cuisine": null,
+  "dietType": "veg",
+  "mealType": [
+    "lunch",
+    "dinner"
+  ],
+  "difficulty": "Intermediate",
+  "prepMin": 10,
+  "cookMin": 30,
+  "servings": 1,
+  "ingredients": [
+    {
+      "ingredientId": "paneer",
+      "name": "Paneer (cottage cheese), full-fat",
+      "quantity": 100,
+      "unit": "g",
+      "householdMeasure": "a fifth of a 500 g block, cut into about 12 cubes of 2 cm"
+    },
+    {
+      "ingredientId": "onion",
+      "name": "Onion (pyaz/kanda)",
+      "quantity": 60,
+      "unit": "g",
+      "householdMeasure": "½ medium onion, roughly chopped"
+    },
+    {
+      "ingredientId": "tomato",
+      "name": "Tomato (tamatar)",
+      "quantity": 80,
+      "unit": "g",
+      "householdMeasure": "1 small ripe tomato, roughly chopped"
+    },
+    {
+      "ingredientId": "cashew-nuts-whole",
+      "name": "Cashew nuts (kaju), whole",
+      "quantity": 10,
+      "unit": "g",
+      "householdMeasure": "7–8 cashews"
+    },
+    {
+      "ingredientId": "ginger",
+      "name": "Ginger (adrak)",
+      "quantity": 4,
+      "unit": "g",
+      "householdMeasure": "½-inch piece, sliced"
+    },
+    {
+      "ingredientId": "garlic",
+      "name": "Garlic (lahsun)",
+      "quantity": 4,
+      "unit": "g",
+      "householdMeasure": "2 small cloves"
+    },
+    {
+      "ingredientId": "green-chilli",
+      "name": "Green chilli (hari mirch)",
+      "quantity": 2,
+      "unit": "g",
+      "householdMeasure": "½ small chilli, slit"
+    },
+    {
+      "ingredientId": null,
+      "name": "Water",
+      "quantity": 175,
+      "unit": "ml",
+      "householdMeasure": "about ¾ cup (100 ml to boil the base, 15 ml for the curd, 60 ml for the gravy)"
+    },
+    {
+      "ingredientId": "ghee-cow",
+      "name": "Ghee",
+      "quantity": 5,
+      "unit": "g",
+      "householdMeasure": "1 tsp"
+    },
+    {
+      "ingredientId": "cooking-oil-refined-sunflower-groundnut",
+      "name": "Sunflower oil (or other neutral oil)",
+      "quantity": 5,
+      "unit": "g",
+      "householdMeasure": "1 tsp"
+    },
+    {
+      "ingredientId": "bay-leaf",
+      "name": "Bay leaf (tej patta)",
+      "quantity": 1,
+      "unit": "small",
+      "householdMeasure": "1 leaf"
+    },
+    {
+      "ingredientId": "green-cardamom",
+      "name": "Green cardamom (elaichi)",
+      "quantity": 2,
+      "unit": null,
+      "householdMeasure": "2 pods, lightly cracked"
+    },
+    {
+      "ingredientId": "cloves",
+      "name": "Cloves (laung)",
+      "quantity": 2,
+      "unit": null,
+      "householdMeasure": "2 cloves"
+    },
+    {
+      "ingredientId": "cinnamon-cassia",
+      "name": "Cinnamon (dalchini)",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "½-inch piece of stick"
+    },
+    {
+      "ingredientId": "cumin-seeds",
+      "name": "Cumin seeds (jeera)",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "¼ tsp"
+    },
+    {
+      "ingredientId": "kashmiri-red-chilli-powder",
+      "name": "Kashmiri red chilli powder (lal mirch)",
+      "quantity": 1,
+      "unit": "g",
+      "householdMeasure": "½ tsp"
+    },
+    {
+      "ingredientId": "coriander-powder",
+      "name": "Coriander powder (dhania powder)",
+      "quantity": 1,
+      "unit": "g",
+      "householdMeasure": "½ tsp"
+    },
+    {
+      "ingredientId": "turmeric-powder",
+      "name": "Turmeric powder (haldi)",
+      "quantity": 0.2,
+      "unit": "g",
+      "householdMeasure": "a small pinch"
+    },
+    {
+      "ingredientId": "curd-plain",
+      "name": "Curd (dahi), whole-milk, not sour",
+      "quantity": 30,
+      "unit": "g",
+      "householdMeasure": "2 tbsp"
+    },
+    {
+      "ingredientId": "salt",
+      "name": "Salt (namak)",
+      "quantity": 2,
+      "unit": "g",
+      "householdMeasure": "a level ⅓ tsp"
+    },
+    {
+      "ingredientId": "sugar",
+      "name": "Sugar (cheeni)",
+      "quantity": 1,
+      "unit": "g",
+      "householdMeasure": "¼ tsp"
+    },
+    {
+      "ingredientId": "fresh-cream",
+      "name": "Fresh cream (about 25% fat, e.g. a packaged \"fresh cream\")",
+      "quantity": 20,
+      "unit": "g",
+      "householdMeasure": "4 tsp (a little over 1 tbsp)"
+    },
+    {
+      "ingredientId": "garam-masala",
+      "name": "Garam masala",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "¼ tsp"
+    },
+    {
+      "ingredientId": "dried-fenugreek-leaves",
+      "name": "Dried fenugreek leaves (kasuri methi)",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "½ tsp, crushed"
+    },
+    {
+      "ingredientId": "coriander-leaves",
+      "name": "Fresh coriander leaves (hara dhania)",
+      "quantity": 2,
+      "unit": "g",
+      "householdMeasure": "1 tsp, chopped"
+    }
+  ],
+  "equipment": [
+    "Chopping board and knife",
+    "Small saucepan with a lid, to boil the onion-cashew base (any small pot works)",
+    "Mixer-grinder with the small chutney jar",
+    "Kadai or medium heavy pan with a lid (about 20 cm)",
+    "Small bowl and fork or whisk, for the curd",
+    "Bowl of warm water, to keep the paneer cubes soft",
+    "Wooden spoon or spatula",
+    "Measuring spoons and a measuring cup (a normal teaspoon and a steel glass are fine stand-ins)"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "title": "Cube the paneer",
+      "text": "Cut 100 g paneer into 2 cm cubes (about 12).",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Even, clean-edged white cubes",
+      "cameraCheck": "The paneer cubes on the board",
+      "videoShot": "A knife cutting a paneer block into cubes."
+    },
+    {
+      "n": 2,
+      "title": "Soak the paneer",
+      "text": "Put the cubes in a bowl of warm (not hot) water and leave them while you cook.",
+      "timerSec": 20,
+      "tip": "Store-bought paneer can be rubbery; 15–20 minutes in warm water makes it soft again.",
+      "visualCue": "Cubes fully under water",
+      "cameraCheck": "The cubes in the water bowl",
+      "videoShot": "Paneer cubes slipped into warm water."
+    },
+    {
+      "n": 3,
+      "title": "Chop the onion",
+      "text": "Roughly chop ½ medium onion (60 g).",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Rough chunks, about ½ cup",
+      "cameraCheck": "The chopped onion",
+      "videoShot": "A knife cutting onion into chunks."
+    },
+    {
+      "n": 4,
+      "title": "Chop the tomato",
+      "text": "Roughly chop 1 small ripe tomato (80 g).",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "Red chunks, about ⅓ cup",
+      "cameraCheck": "The chopped tomato",
+      "videoShot": "Tomato cut into chunks."
+    },
+    {
+      "n": 5,
+      "title": "Prepare ginger, garlic and chilli",
+      "text": "Slice ½-inch ginger (4 g), peel 2 small garlic cloves (4 g) and slit ½ small green chilli (2 g).",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Thin ginger slices, two peeled cloves, a slit chilli",
+      "cameraCheck": "The three on the board",
+      "videoShot": "Ginger being sliced."
+    },
+    {
+      "n": 6,
+      "title": "Load the base pan",
+      "text": "Put the onion, tomato, 7–8 cashews (10 g), ginger, garlic and chilli into the small saucepan with 100 ml water.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "Water just covers about half the vegetables",
+      "cameraCheck": "The loaded pan",
+      "videoShot": "Cashews dropped onto onion and tomato in a pan."
+    },
+    {
+      "n": 7,
+      "title": "Boil the base",
+      "text": "Bring to a boil on medium heat, then cover and simmer on low.",
+      "timerSec": 480,
+      "tip": "Boiling the onion instead of frying it keeps the gravy pale orange and uses no oil at this stage.",
+      "visualCue": "Onion translucent and very soft, tomato skin loose, cashews soft enough to press flat",
+      "cameraCheck": "A cashew pressed with a spoon",
+      "videoShot": "The lid lifted on a simmering pan."
+    },
+    {
+      "n": 8,
+      "title": "Cool the base",
+      "text": "Turn off the heat, uncover and let it cool.",
+      "timerSec": 300,
+      "tip": "Blending a very hot mix can blow the jar lid open.",
+      "visualCue": "Warm, not steaming hard",
+      "cameraCheck": "The pan off the heat",
+      "videoShot": "Steam fading from the pan."
+    },
+    {
+      "n": 9,
+      "title": "Blend the base",
+      "text": "Tip everything, with its cooking water, into the small mixer jar and blend until completely smooth; add up to 2 tbsp water if it sticks.",
+      "timerSec": 60,
+      "tip": "Grit means more blending; this step decides how \"shahi\" (silky) the gravy feels.",
+      "visualCue": "Silky, pale orange-pink paste with no cashew grit when rubbed between fingers",
+      "cameraCheck": "The paste on a spoon",
+      "videoShot": "Smooth paste poured from the jar."
+    },
+    {
+      "n": 10,
+      "title": "Whisk the curd",
+      "text": "Whisk 2 tbsp (30 g) curd with 1 tbsp (15 ml) water until smooth.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "Smooth, no lumps, like thick buttermilk",
+      "cameraCheck": "The whisked curd",
+      "videoShot": "A fork whisking curd in a bowl."
+    },
+    {
+      "n": 11,
+      "title": "Heat the fat",
+      "text": "Put the kadai on medium heat with 1 tsp (5 g) ghee and 1 tsp (5 g) oil.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Ghee melted, fat shimmering",
+      "cameraCheck": "The fat in the kadai",
+      "videoShot": "Ghee melting into oil."
+    },
+    {
+      "n": 12,
+      "title": "Temper the whole spices",
+      "text": "Add 1 bay leaf, 2 cracked cardamom pods, 2 cloves, ½-inch cinnamon and ¼ tsp cumin seeds.",
+      "timerSec": 20,
+      "tip": "If the cumin turns black at once, the fat is too hot; lower the heat.",
+      "visualCue": "Cumin sizzles and darkens one shade; cardamom puffs; warm, sweet smell",
+      "cameraCheck": "The sizzling spices",
+      "videoShot": "Whole spices crackling in ghee."
+    },
+    {
+      "n": 13,
+      "title": "Add the paste",
+      "text": "Pour in the blended paste and stir. Stand back; it splutters.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "Paste spread across the kadai, bubbling",
+      "cameraCheck": "The paste in the kadai",
+      "videoShot": "Paste poured into the spiced ghee."
+    },
+    {
+      "n": 14,
+      "title": "Cook the paste",
+      "text": "Cook on medium-low, stirring every 30 seconds.",
+      "timerSec": 300,
+      "tip": "Half-cover the kadai with the lid if it splashes.",
+      "visualCue": "Thickens to a mound, turns a shade darker, raw onion smell gone, a little ghee shows at the edges",
+      "cameraCheck": "The edge of the paste showing ghee",
+      "videoShot": "Spatula drawing a line through thick paste."
+    },
+    {
+      "n": 15,
+      "title": "Add the powders",
+      "text": "Lower the heat and add ½ tsp Kashmiri chilli powder, ½ tsp coriander powder and a small pinch of turmeric. Stir.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "Gravy turns a soft orange; spices smell toasted, not burnt",
+      "cameraCheck": "The orange paste",
+      "videoShot": "Powders sprinkled over the paste and stirred."
+    },
+    {
+      "n": 16,
+      "title": "Add the curd slowly",
+      "text": "Turn the heat to the lowest. Add the whisked curd 1 tbsp at a time, stirring all the time.",
+      "timerSec": 60,
+      "tip": "High heat or sour curd makes the gravy split into grains; if it does, blend it smooth again or whisk hard off the heat.",
+      "visualCue": "Each spoon blends in smoothly before the next; no white specks",
+      "cameraCheck": "The gravy after the last spoon of curd",
+      "videoShot": "A spoon of curd stirred into orange gravy."
+    },
+    {
+      "n": 17,
+      "title": "Cook the curd in",
+      "text": "Keep stirring on low heat.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "Gravy smooth and glossy again, edges just starting to show fat",
+      "cameraCheck": "The glossy gravy",
+      "videoShot": "Close-up of glossy gravy."
+    },
+    {
+      "n": 18,
+      "title": "Season and loosen",
+      "text": "Add 2 g (⅓ tsp) salt, ¼ tsp (1 g) sugar and 60 ml water. Stir and simmer.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "Gravy coats the back of a spoon and drips slowly",
+      "cameraCheck": "The coated spoon",
+      "videoShot": "Water poured in, gravy stirred and bubbling gently."
+    },
+    {
+      "n": 19,
+      "title": "Add the paneer",
+      "text": "Drain the paneer and add the cubes. Fold them in gently and simmer on low.",
+      "timerSec": 120,
+      "tip": "Fold, don't stir hard; soft paneer breaks easily.",
+      "visualCue": "Cubes coated in gravy and warmed through",
+      "cameraCheck": "The paneer in the gravy",
+      "videoShot": "Paneer cubes tipped in and folded."
+    },
+    {
+      "n": 20,
+      "title": "Add the cream",
+      "text": "Pour in 4 tsp (20 ml) fresh cream (and the saffron milk, if using) and fold in.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Gravy turns paler and silkier; let it come just to a simmer, not a hard boil",
+      "cameraCheck": "The swirl of cream in the gravy",
+      "videoShot": "Cream swirled into the gravy."
+    },
+    {
+      "n": 21,
+      "title": "Finish with garam masala and kasuri methi",
+      "text": "Sprinkle ¼ tsp garam masala and crush ½ tsp kasuri methi between your palms over the kadai. Stir once and turn off the heat.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "Green flecks and a warm, sweet smell",
+      "cameraCheck": "The kasuri methi on the gravy",
+      "videoShot": "Palms rubbing kasuri methi over the pan."
+    },
+    {
+      "n": 22,
+      "title": "Taste and adjust",
+      "text": "Taste and add a pinch more salt only if needed; add 1–2 tbsp hot water if it is too thick.",
+      "timerSec": 20,
+      "tip": null,
+      "visualCue": "Mild, creamy, slightly sweet and nutty, gently spiced",
+      "cameraCheck": "The spoon tasting",
+      "videoShot": "A spoon of gravy lifted for tasting."
+    },
+    {
+      "n": 23,
+      "title": "Garnish and serve",
+      "text": "Remove the bay leaf and cinnamon, transfer to a bowl and scatter 1 tsp chopped coriander leaves on top.",
+      "timerSec": 30,
+      "tip": "The gravy thickens as it rests; that is normal.",
+      "visualCue": "Pale-orange, glossy gravy with white paneer cubes and green flecks",
+      "cameraCheck": "The finished bowl",
+      "videoShot": "Coriander scattered over the bowl, steam rising."
+    }
+  ],
+  "nutritionPerServing": {
+    "kcal": 545,
+    "proteinG": 24,
+    "carbsG": 20,
+    "fatG": 42,
+    "fibreG": 4
+  },
+  "microNutrientsEstimate": {
+    "values": {
+      "biotin": 21,
+      "riboflavin": 0,
+      "vitamin-a": 12.7,
+      "vitamin-b12": 0.7,
+      "vitamin-c": 20.2,
+      "vitamin-d": 0.2,
+      "vitamin-e": 2.1,
+      "vitamin-k": 5.5
+    },
+    "coveragePct": 43,
+    "basis": "partial estimate from ingredient quantities"
+  },
+  "asOrdered": {
+    "price": {
+      "priceHistory": [
+        {
+          "date": "2026-10-16",
+          "min": 320,
+          "max": 380,
+          "avg": 350,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-10-16.md"
+        }
+      ],
+      "currentEstimate": {
+        "min": 320,
+        "max": 380,
+        "avg": 350
+      },
+      "method": "single",
+      "trend": "unknown",
+      "change30dPct": null,
+      "lastObserved": "2026-10-16",
+      "stale": false,
+      "seasonal": false,
+      "listingCount": 2,
+      "platforms": [
+        "magicpin",
+        "Swiggy"
+      ],
+      "outOfStock": false,
+      "confirmed": false,
+      "checkNotes": [
+        "only 2 listings back the range (need 3)"
+      ]
+    },
+    "nutrition": {
+      "calories": {
+        "value": null,
+        "source": null
+      },
+      "protein": {
+        "value": null,
+        "source": null
+      },
+      "carbs": {
+        "value": null,
+        "source": null
+      },
+      "fat": {
+        "value": null,
+        "source": null
+      },
+      "fibre": {
+        "value": null,
+        "source": null
+      }
+    },
+    "restaurantsSampled": 4,
+    "platforms": [
+      "Swiggy",
+      "Zomato",
+      "magicpin"
+    ]
+  },
+  "orderPrice": {
+    "priceHistory": [
+      {
+        "date": "2026-10-16",
+        "min": 320,
+        "max": 380,
+        "avg": 350,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-10-16.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 320,
+      "max": 380,
+      "avg": 350
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-16",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 2,
+    "platforms": [
+      "magicpin",
+      "Swiggy"
+    ],
+    "outOfStock": false,
+    "confirmed": false,
+    "checkNotes": [
+      "only 2 listings back the range (need 3)"
+    ]
+  },
+  "healthiness": {
+    "score": 5,
+    "restaurantScore": 3,
+    "reasons": [
+      "good protein (about 24 g), calcium (about 310 mg) and B12 from paneer, no frying, no maida, and only ¼ tsp sugar. Points off for about 42 g fat with about 21 g saturated fat (close to a full day's limit), about 93 mg cholesterol, about 850 mg sodium, and little fibre or vegetable (about 4 g fibre). Restaurant versions usually use more cream, butter and cashew, sometimes sugar or condensed milk and malai, and come with naan, so 800–1,000 kcal meals are common."
+    ]
+  },
+  "researchRating": {
+    "score": 4.5,
+    "basis": "a classic, widely loved North Indian restaurant curry; it has its own Wikipedia article, Swiggy's blog lists it among its top-8 must-try paneer dishes, almost every major Indian recipe site publishes it, Hebbar's Kitchen's version shows 4.99 from 184 votes (Hindi page), My Food Story 4.75 from 8, and Veg Recipes of India's page has at least 17 pages of comments; it is sold as a ready meal by MTR. Points off because it is seen as a heavy, special-occasion dish, it is often confused with paneer butter masala and korma, and Mumbai delivery menus list it far less often than paneer butter masala or kadai paneer. Platform dish ratings were not used."
+  },
+  "storage": "Fridge-safe in a closed box for up to 2 days (cool within 1 hour). Freezer: the gravy alone (without paneer) freezes for up to 1 month; cream-and-curd gravies can turn a little grainy, so whisk well while reheating; frozen paneer turns crumbly, so add fresh paneer when reheating if you can. Reheat in a pan on low with 2–3 tbsp water or milk, stirring gently, until it just bubbles (do not boil hard or the gravy may split); or microwave in 1-minute bursts, stirring between.",
+  "leftoverRemix": "Shahi paneer kathi roll or toastie. Cook the leftover curry down in a pan until thick and clinging, mash a few paneer cubes, then roll it in a warm roti with sliced onion, a little green chutney and a pinch of chaat masala, and toast the roll on a tawa with ½ tsp oil. Or spread it between two slices of bread with capsicum slices and grill it as a sandwich.",
+  "burnOff": "about 7.8 km of running (545 ÷ 70 kcal/km, for a 70 kg adult), or about 10.9 km of brisk walking (about 2 h 10 min at 5 km/h, using about 50 kcal/km for walking) (est.). With 2 phulkas (about 725 kcal): about 10.4 km running or 14.5 km walking (est.).",
+  "sources": [
+    "Veg Recipes of India, Shahi Paneer (Restaurant Style / Mughlai white gravy: onions, yogurt, almonds, cashews, melon seeds, ginger and garlic cooked in water and blended; ghee, saffron, whole spices, kewra and cream; no tomato; whole-milk curd only): https://www.vegrecipesofindia.com/shahi-paneer/ ; https://www.vegrecipesofindia.com/wprm_print/shahi-paneer-recipe-creamy-restaurant-style ; https://www.vegrecipesofindia.com/wprm_print/shahi-paneer-mughlai-white-gravy ; https://vegrecipesofindia.com/shahi-paneer/comment-page-17",
+    "Hebbar's Kitchen, Shahi Paneer (onion-tomato puree with whole spices, ginger, garlic, blanched almonds and curd; butter and oil; cream, saffron, a little sugar, kasuri methi; 4 servings, about 40 min; 4.99 from 184 votes on the Hindi page): https://hebbarskitchen.com/restaurant-style-shahi-paneer-recipe/ ; https://hebbarskitchen.com/wprm_print/shahi-paneer-recipe-creamy-and-delicious-dish ; https://hebbarskitchen.com/hi/wprm_print/recipe/107260",
+    "Spice Up The Curry, Mughlai Shahi Paneer in White Gravy (onions boiled, not fried, to keep the colour pale; yogurt, cashews, saffron-cream finish): https://www.spiceupthecurry.com/shahi-paneer-recipe/",
+    "Cook With Manali, Shahi Paneer: https://www.cookwithmanali.com/wprm_print/shahi-paneer",
+    "Pankaj Bhadouria, Shahi Paneer (onion, ginger, garlic and cashews simmered in water and blended): https://www.pankajbhadouria.com/shahi-paneer",
+    "Sailu's Food, Shahi Paneer: https://www.sailusfood.com/shahi-paneer-recipe",
+    "Spicy Indian Kitchen, Shahi Paneer: https://spicyindiankitchen.com/shahi-paneer/",
+    "My Food Story, Shahi Paneer (tomato and cashew cooked together; 350 g paneer, ¼ cup cream, kasuri methi; 4.75 from 8 votes): https://myfoodstory.com/shahi-paneer/",
+    "Gulf News, Shahi Paneer (serves 3: 250 g paneer, 10–15 cashews, 5 tomatoes, 3 tbsp cream, 2 tbsp condensed milk): https://gulfnews.com/food/cooking-cuisines/shahi-paneer-royal-dish-with-nuts-tomato-gravy-1.1670496514867",
+    "Jeyashri's Kitchen, Shahi Paneer (serves 2; tomato optional): https://www.jeyashriskitchen.com/shahi-paneer-recipe/",
+    "Shweta in the Kitchen, Shahi Paneer in creamy tomato gravy (red and white versions): https://shwetainthekitchen.com/shahi-paneer-cottage-cheese-in-creamy-tomato-gravy/",
+    "J Cooking Odyssey, Shahi Paneer (whole and ground spice list; mildly sweet tomato gravy): https://www.jcookingodyssey.com/2023/02/25/shahi-paneer-recipe",
+    "Madhura's Recipe, Restaurant-style Shahi Paneer (4.5 from 2 votes): https://madhurasrecipe.com/restaurant-style-shahi-paneer/",
+    "Ranveer Brar, Shahi Paneer Patiala (tomato-cashew red gravy; different style, context): https://ranveerbrar.com/recipes/shahi-paneer-patiala/",
+    "Wikipedia, Shahi paneer (paneer in a thick gravy of cream, tomatoes and spices; sweeter than paneer butter masala): https://en.wikipedia.org/wiki/Shahi_paneer",
+    "Swiggy Diaries, Top 8 must-taste paneer varieties (cream, nuts, saffron): https://blog.swiggy.com/food/top-eight-must-taste-paneer-varieties/",
+    "Chef Kunal Kapur, \"No Onion, Garlic, No Tomato Paneer Ki Sabji\" (Tasty Shahi Paneer Curry Jain Style; cashew paste, kasuri methi; peanuts listed as an alternative to cashews): https://www.chefkunalkapur.com/recipe/paneer-ki-sabji/",
+    "Ruchi's Veg Kitchen, pure-Jain paneer (no onion no garlic; cashew paste, blanched tomatoes, kasuri methi, hing): https://ruchisvegkitchen.com/2015/12/15/paneer-bhurji-no-onion-no-garlic/",
+    "Hebbar's Kitchen, paneer butter masala without onion and garlic (Jain-style tomato-cashew gravy): https://hebbarskitchen.com/paneer-butter-masala-jain-recipes/",
+    "Cook With Manali, Instant Pot Shahi Tofu (vegan take on shahi paneer; cashews only, no cream, yogurt or butter): https://www.cookwithmanali.com/shahi-tofu/",
+    "Tarla Dalal, healthier Shahi Paneer Mutter (low-fat milk, 1 tbsp cashew paste): https://m.tarladalal.com/recipes-for-Healthy-Paneer-Sabzis-563",
+    "Indian Food Freak, Shahi Paneer (low-fat milk instead of cream): https://indianfoodfreak.com/?p=13531",
+    "USDA FoodData Central (cashews, onion, tomato, ginger, garlic, green chilli, spices, butter oil/ghee, sunflower oil, whole-milk yogurt, cream, firm tofu): https://fdc.nal.usda.gov/",
+    "IFCT 2017 (ICMR-NIN), referenced but values not confirmed from this environment; ICMR-NIN Nutrient Requirements for Indians 2020: https://www.nin.res.in/",
+    "Tarla Dalal, calories in Shahi Paneer Sabzi (351 kcal per 200 g; context): https://tarladalal.com/calories-for-shahi-paneer-shahi-paneer-sabzi-249",
+    "FatSecret, Shahi Paneer generic entry (261 kcal per 200 g; context): https://www.fatsecret.com.sg/calories-nutrition/generic/shahi-paneer",
+    "Fitia, Shahi Paneer (351 kcal per 283 g; context): https://fitia.app/calories-nutritional-information/shahi-paneer-F64scmq4o0/",
+    "Swiggy, Pet Pooja Point (Paneer Shahi Korma ₹320): https://www.swiggy.com/city/mumbai/pet-pooja-point-bhoiwada-rest133442 ; https://www.swiggy.com/city/mumbai/pet-pooja-point-east-kalyan-rest133442",
+    "magicpin, Lucky Restaurant, Bandra West (Shahi Paneer Korma ₹380): https://magicpin.in/Mumbai/Bandra-West/Restaurant/Lucky-Restaurant/store/2333b/delivery/?itemId=4848982",
+    "Swiggy, Navaratna Veg Restaurant, Vashi (Shahi Paneer ₹462; premium, excluded): https://www.swiggy.com/restaurants/navaratna-veg-restaurant-vashi-mumbai-286146 ; https://www.swiggy.com/menu/286146",
+    "bestmenuhub.com, Taj Hotel Mumbai menu (Shahi Paneer ₹895; not a platform; premium, excluded): https://bestmenuhub.com/taj-hotel-mumbai-menu/",
+    "Zomato, Shahi Paneer in Mumbai (cost for two only): https://www.zomato.com/mumbai/restaurants/dish-shahi-paneer",
+    "Famous Biryaniwala, Paneer Shahi Korma (per kg; not used): https://famousbiryaniwala.com/product/main-course/veg-main-course-2/paneer-shahi-korma/"
+  ],
+  "allergens": [
+    "peanut",
+    "treeNut",
+    "milk"
+  ],
+  "dietClaims": [
+    "glutenFree"
+  ],
+  "fasting": {
+    "navratri": {
+      "status": "with-changes",
+      "reason": "paneer, curd, cream, cashews and tomato are allowed in the common vrat rule set; skip onion and garlic, use sendha namak instead of table salt, and leave out turmeric and coriander powder if your family avoids them."
+    },
+    "ekadashi": {
+      "status": "with-changes",
+      "reason": "the dish has no grains or pulses; skip onion and garlic (common rule set; family rules on spices vary)."
+    },
+    "jain": {
+      "status": null,
+      "reason": "onion, garlic and fresh ginger are root vegetables; use the Jain variant (tomato-cashew gravy, sonth)."
+    },
+    "ramadan": {
+      "status": "yes",
+      "reason": "vegetarian, so no halal-meat issue; a filling, high-protein iftar dinner with roti or naan; for sehri it is heavy (about 42 g fat) and fairly salty (about 850 mg sodium), so eat a small bowl and drink water."
+    }
+  },
+  "dietTags": {
+    "base": "Vegetarian",
+    "jain": {
+      "status": "with-changes",
+      "reason": "onion, garlic and fresh ginger are root vegetables; skip all three, use dry ginger powder (sonth) and a tomato-cashew base (see Jain variant)."
+    },
+    "vegan": {
+      "status": "with-changes",
+      "reason": "paneer, ghee, curd and cream are dairy; use firm tofu, oil and extra cashews instead (see Vegan variant, Shahi Tofu)."
+    },
+    "pescatarian": {
+      "status": "yes",
+      "reason": "vegetarian, no meat, so it fits a pescatarian diet."
+    },
+    "sattvik": {
+      "status": "with-changes",
+      "reason": "skip onion and garlic and build the gravy on tomato, cashew and ginger (see Sattvik variant)."
+    },
+    "glutenFree": {
+      "status": "yes",
+      "reason": "no wheat, maida, rava or besan, and the main recipe uses no hing; if you add hing, use a gluten-free one, as most hing sold in India is compounded with wheat flour. Check the garam masala label for added flour."
+    },
+    "dairyFree": {
+      "status": "with-changes",
+      "reason": "paneer, ghee, curd and cream are dairy; use the Shahi Tofu variant."
+    },
+    "allergensDeclared": [
+      "milk",
+      "peanut",
+      "treeNut"
+    ]
+  },
+  "tags": [
+    "Veg",
+    "Jain option",
+    "Vegan option",
+    "Gluten-free",
+    "Dairy-free option",
+    "Ramadan sehri / iftar",
+    "Contains peanut",
+    "Contains tree nuts",
+    "Contains milk",
+    "Lunch",
+    "Dinner",
+    "Under 60 min",
+    "Intermediate",
+    "High protein"
+  ],
+  "description": "Family: shahi-paneer",
+  "familyId": null,
+  "variants": [
+    {
+      "category": "Jain",
+      "status": "variant",
+      "name": "Jain Shahi Paneer (no onion, garlic or ginger)",
+      "origin": "established",
+      "linkedDishNumber": null,
+      "reason": null
+    },
+    {
+      "category": "Vegan",
+      "status": "variant",
+      "name": "Shahi Tofu",
+      "origin": "established",
+      "linkedDishNumber": null,
+      "reason": null
+    },
+    {
+      "category": "Dairy-free",
+      "status": "variant",
+      "name": "Shahi Tofu (same as the Vegan variant)",
+      "origin": "established",
+      "linkedDishNumber": null,
+      "reason": null
+    },
+    {
+      "category": "Sattvik",
+      "status": "variant",
+      "name": "No-onion no-garlic Shahi Paneer",
+      "origin": "established",
+      "linkedDishNumber": null,
+      "reason": null
+    },
+    {
+      "category": "Lighter",
+      "status": "variant",
+      "name": "Lighter Shahi Paneer (no ghee, milk instead of cream)",
+      "origin": "established",
+      "linkedDishNumber": null,
+      "reason": null
+    }
+  ],
+  "needsReview": [
+    "Jain \"with-changes\" but the recipe keeps onion, garlic, fresh ginger and the line doesn't say to skip them",
+    "price not confirmed (2026-10-16): only 2 listings back the range (need 3)"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-16",
+      "file": "FitPlate_Dishes_2026-10-16.md"
+    }
+  ],
+  "mergeMethod": {
+    "nutritionPerServing": "stable (single)",
+    "orderPrice": "price engine (single)",
+    "ingredients": "newest",
+    "steps": "newest",
+    "healthiness": "newest",
+    "researchRating": "newest",
+    "sources": "union",
+    "tags": "tag engine (tags.ts) on the merged dish"
+  },
+  "mergeNotes": [
+    "2026-10-16: research declares peanut not detected from ingredient names; added"
+  ]
+}

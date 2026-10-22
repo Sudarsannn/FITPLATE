@@ -1,0 +1,795 @@
+{
+  "id": "stair-climber",
+  "number": 9,
+  "name": "Stair climber (stepmill and pedal stepper)",
+  "otherNames": [
+    "Stepmill",
+    "Revolving stair machine",
+    "StairMaster",
+    "Stair-treadmill ergometer",
+    "Stair machine",
+    "Stair stepper",
+    "Pedal stepper",
+    "Step machine",
+    "Gauntlet",
+    "PowerMill",
+    "Mini stepper"
+  ],
+  "section": "gym",
+  "type": "cardio",
+  "equipment": [
+    "stepmill (revolving-stair machine)",
+    "pedal-type stepper",
+    "home mini stepper"
+  ],
+  "noEquipmentAlternative": "Climb your building's stairs slowly (take the lift down), or step-ups on the lowest stair",
+  "musclesPrimary": [
+    "gluteus maximus",
+    "quadriceps"
+  ],
+  "musclesSecondary": [
+    "hamstrings",
+    "gastrocnemius",
+    "soleus",
+    "gluteus medius",
+    "hip flexors",
+    "rectus abdominis",
+    "obliques",
+    "erector spinae"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 4.5,
+  "compendiumCode": "17133",
+  "metOptions": [
+    {
+      "code": "17133",
+      "met": 4.5,
+      "activity": "Beginner default for the app (JSON \"met\"): code 17133, Stair climbing, slow pace: 4.5 METs (Walking heading; closest match to the beginner plan of slow stepmill levels with a light rail touch; this co"
+    },
+    {
+      "code": "17131",
+      "met": 6.8,
+      "activity": "General stair climbing: code 17131, Stair climbing, general: 6.8 METs (2024 value as listed on the Compendium Walking page)."
+    },
+    {
+      "code": "02065",
+      "met": 9.3,
+      "activity": "Machine, typical gym pace (intermediate/advanced): code 02065, Stair-treadmill ergometer, general: 9.3 METs (Conditioning Exercise heading; the 2011 value was 9.0)."
+    },
+    {
+      "code": "17134",
+      "met": 9.3,
+      "activity": "Extras: code 17134, Stair climbing, fast pace: 9.3 METs (one search listing; not confirmed against the 2024 table, est.); code 12170, Running, stairs, up: 15.0 METs."
+    },
+    {
+      "code": "12170",
+      "met": 15,
+      "activity": "Extras: code 17134, Stair climbing, fast pace: 9.3 METs (one search listing; not confirmed against the 2024 table, est.); code 12170, Running, stairs, up: 15.0 METs."
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 1,
+      "reps": null,
+      "timeSec": 600,
+      "restSec": null,
+      "tempo": "steady moderate (talk but not sing), RPE 5-6/10 (ACSM moderate, Borg 12-13), stepmill level 1-4 (about 24-50 spm, est.), light rail touch, plus 2-3 min warm-up and cool-down",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 4,
+      "reps": "1 min at +1-2 levels (RPE 6/10, Borg 13) + 1.5-2 min easy",
+      "timeSec": 60,
+      "restSec": 105,
+      "tempo": "intervals",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 1,
+      "reps": null,
+      "timeSec": 900,
+      "restSec": null,
+      "tempo": "steady moderate, build from 5-10 min by 1-2 min per session",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 1,
+      "reps": null,
+      "timeSec": 1200,
+      "restSec": null,
+      "tempo": "steady moderate, RPE 5-6/10 (Borg 12-13), level 4-8 (about 50-80 spm, est.), fingertips only",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "fat_loss",
+      "sets": 7,
+      "reps": "1 min at +3-4 levels (RPE 7-8/10, Borg 14-17) + 1 min easy",
+      "timeSec": 60,
+      "restSec": 60,
+      "tempo": "intervals",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 1,
+      "reps": null,
+      "timeSec": 1500,
+      "restSec": null,
+      "tempo": "steady moderate",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "general_fitness",
+      "sets": 1,
+      "reps": null,
+      "timeSec": 1800,
+      "restSec": null,
+      "tempo": "steady moderate, level 8-14 (about 80-120 spm, est.), hands free",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "fat_loss",
+      "sets": 9,
+      "reps": "30 s fast or skip-a-step (RPE 8/10, Borg 15-17) + 60 s easy",
+      "timeSec": 30,
+      "restSec": 60,
+      "tempo": "intervals, max 2 hard days per week",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "endurance",
+      "sets": 1,
+      "reps": null,
+      "timeSec": 2700,
+      "restSec": null,
+      "tempo": "steady moderate, 64-76% HRmax",
+      "perWeek": 3
+    }
+  ],
+  "cardioSettings": {
+    "warm_up_sec": 180,
+    "cool_down_sec": 180,
+    "machine_types": [
+      "stepmill",
+      "pedal_stepper_dependent",
+      "pedal_stepper_independent",
+      "mini_stepper"
+    ],
+    "level_scale_note": "Stepmill levels set step speed (StairMaster 4G/8Gx: 20 levels, about 24-162 spm; Life Fitness PowerMill about 30-180 spm); per-level rates not published and not comparable across brands; choose by RPE",
+    "beginner": {
+      "stepmill_level_of_20": "1-4 (est.)",
+      "spm": "24-50 (est.)",
+      "rpe_0_10": "5-6",
+      "borg_6_20": "12-13",
+      "hr_max_pct": "64-70",
+      "talk_test": "can talk, cannot sing",
+      "rails": "light touch"
+    },
+    "intermediate": {
+      "stepmill_level_of_20": "4-8 (est.)",
+      "spm": "50-80 (est.)",
+      "rpe_0_10": "5-6",
+      "borg_6_20": "12-13",
+      "hr_max_pct": "64-76",
+      "talk_test": "can talk, cannot sing",
+      "rails": "fingertips only"
+    },
+    "advanced": {
+      "stepmill_level_of_20": "8-14+ (est.)",
+      "spm": "80-120 (est.)",
+      "rpe_0_10": "7-8 on intervals",
+      "borg_6_20": "14-17 on intervals",
+      "hr_max_pct": "77-90 on intervals",
+      "talk_test": "a few words only on intervals",
+      "rails": "hands free"
+    },
+    "effort_scale": "ACSM: light 3-4/10 = Borg 9-11; moderate 5-6/10 = Borg 12-13; vigorous 7-8/10 = Borg 14-17",
+    "safety_key": false,
+    "emergency_stop_button": true,
+    "stop_before_dismount": true,
+    "max_user_weight_kg_typical": 181,
+    "met_beginner": 4.5,
+    "met_general": 6.8,
+    "met_machine_general": 9.3,
+    "compendium_codes": {
+      "beginner_slow": "17133",
+      "general_stairs": "17131",
+      "machine_general": "02065",
+      "fast_pace_unconfirmed": "17134",
+      "running_stairs": "12170"
+    },
+    "calorie_display_note": "Console METs/calories overstate burn when holding the handrails; use MET-based estimate"
+  },
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_ear",
+      "right_ear",
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle",
+      "left_heel",
+      "right_heel",
+      "left_foot_index",
+      "right_foot_index"
+    ],
+    "phases": [
+      {
+        "name": "step_up_flexed",
+        "joint": "knee",
+        "angleDeg": "<= 140",
+        "parsed": {
+          "op": "<=",
+          "value": 140,
+          "max": null
+        }
+      },
+      {
+        "name": "push_extended",
+        "joint": "knee",
+        "angleDeg": ">= 160",
+        "parsed": {
+          "op": ">=",
+          "value": 160,
+          "max": null
+        }
+      },
+      {
+        "name": "step_up_flexed",
+        "joint": "knee",
+        "angleDeg": "<= 140",
+        "parsed": {
+          "op": "<=",
+          "value": 140,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 0.7
+  },
+  "formChecks": [
+    {
+      "joint": "knee",
+      "rule": "knee angle never <= 140 deg during a stride = shallow step, not counted",
+      "message": "Take fuller steps."
+    },
+    {
+      "joint": "knee",
+      "rule": "knee angle never >= 160 deg during a stride = incomplete push, not counted",
+      "message": "Straighten your leg as you push up."
+    },
+    {
+      "joint": "trunk",
+      "rule": "shoulder-hip line more than 30 deg forward of vertical for more than 5 s",
+      "message": "Stand tall over your feet."
+    },
+    {
+      "joint": "elbow",
+      "rule": "elbow angle >= 165 deg while trunk lean is more than 30 deg forward of vertical",
+      "message": "Light hands: rails are for balance."
+    },
+    {
+      "joint": "ankle",
+      "rule": "stepmill only: heel above foot index through the whole push",
+      "message": "Whole foot on the step."
+    },
+    {
+      "joint": "neck",
+      "rule": "nose below shoulder level for more than 5 s",
+      "message": "Eyes forward."
+    },
+    {
+      "joint": "knee",
+      "rule": "front view: knee inside hip-ankle line",
+      "message": "Knees over your toes."
+    }
+  ],
+  "safetyFlags": [
+    "knee_pain",
+    "knee_osteoarthritis",
+    "low_back_pain",
+    "high_blood_pressure",
+    "heart_disease",
+    "balance_problems",
+    "pregnancy",
+    "postpartum",
+    "recent_surgery",
+    "obesity_check_max_weight",
+    "beta_blockers_hr_unreliable",
+    "moving_steps_fall_hazard",
+    "loose_clothing_entrapment",
+    "handrail_leaning_overstates_calories"
+  ],
+  "progressions": [
+    "Longer steady climbs with fingertips only, then hands-free",
+    "Intervals then higher levels",
+    "Skip-a-step climbing at slow speed (advanced)"
+  ],
+  "regressions": [
+    "Building stairs slowly with the banister, rest on landings, lift down",
+    "Pedal stepper or mini stepper at low resistance, 3-5 min",
+    "Stepmill level 1 in 3-5 min blocks with 1 min rest, x2-3"
+  ],
+  "videoShots": [
+    {
+      "seconds": 7,
+      "angle": "front three-quarter, 2 m, chest height",
+      "shows": "Finding the stop button and stepping on while steps are still",
+      "textOverlay": "Find STOP first. Step on while it's still."
+    },
+    {
+      "seconds": 6,
+      "angle": "console close-up, 0.5 m",
+      "shows": "Quick Start / Manual, level buttons, spm and floors",
+      "textOverlay": "Start on Manual, level 1-3."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m, hip height",
+      "shows": "Correct climbing posture and full stride",
+      "textOverlay": "Stand tall. Whole foot. Full steps."
+    },
+    {
+      "seconds": 7,
+      "angle": "side, 2.5 m",
+      "shows": "Rail-hanging and hunching vs corrected",
+      "textOverlay": "Rails are for balance, not support."
+    },
+    {
+      "seconds": 6,
+      "angle": "side close-up on feet, 1 m",
+      "shows": "Whole foot vs toes only",
+      "textOverlay": "Push through your heel."
+    },
+    {
+      "seconds": 7,
+      "angle": "front, 3 m, knee height",
+      "shows": "Knees tracking vs caving",
+      "textOverlay": "Knees over toes."
+    },
+    {
+      "seconds": 7,
+      "angle": "side, 2.5 m",
+      "shows": "Pedal stepper smooth full pushes",
+      "textOverlay": "Pedal stepper: smooth, full pushes."
+    },
+    {
+      "seconds": 8,
+      "angle": "front three-quarter, 2 m",
+      "shows": "Cool-down, stop, step off holding rails, wipe rails",
+      "textOverlay": "Full stop. Then step off. Wipe the rails."
+    }
+  ],
+  "lastResearched": "2026-10-16",
+  "setupSteps": [
+    "Quick Start / Manual. The simplest choice. On a stepmill, the steps start slowly at the lowest level; change the level with ▲/▼ or + / −. Level numbers are NOT comparable across brands; pick by effort.",
+    "What the screen shows. Time, level, steps per minute (SPM), steps or floors climbed, calories, heart rate, and sometimes METs. On a stepmill, a higher level means the steps move faster.",
+    "Programs. Common names: Manual, Interval, Fat Burn, Landmark/Summit (climb a famous building), Heart-Rate Control, Fitness Test. Beginners should use Manual.",
+    "Weight and age entry. Enter your real weight and age; calories and heart-rate targets depend on them.",
+    "Calories and METs on the console. A rough guide only. In a 1991 study on the StairMaster Gauntlet, the machine's estimated METs overstated actual energy use when people held the handrails. Lean less, trust the screen less.",
+    "Heart-rate grips. Hold the pads still and lightly for a reading; use RPE and the talk test as your main guide.",
+    "Safety key/clip. Most stepmills use a big red stop button rather than a clip; some models may have a clip or safety sensor (check yours). Pedal steppers have no key because nothing moves unless you push. Note: in the US, some StairMaster 8G Gauntlet units were recalled because the steps could speed up without user input; report any machine that changes speed by itself.",
+    "Wipe the handrails, front bar and console.",
+    "Wear closed training shoes with laces tucked in. No loose dupatta, saree pallu, long scarf, hanging towel or long track-pant cords near the steps; they can catch in the rolling steps.",
+    "Check the steps are stopped. Find the red emergency stop button.",
+    "Holding both side rails, step onto the lowest step that sits flat, one foot at a time (follow the machine's \"getting on\" guide; the StairMaster SM916 manual has one).",
+    "Stand tall, feet hip-width apart, toes pointing forward, whole foot on the step.",
+    "Press Quick Start or Manual. Enter age and weight if asked. The steps start at the lowest speed; start climbing as soon as they move.",
+    "Set level 1–3 for the first 2–3 minutes (roughly 24–40 steps per minute on a StairMaster; est., since per-level step rates are not published).",
+    "Wipe the handles and console.",
+    "Holding the handles, step onto the lower pedal first, then the other.",
+    "Feet hip-width, whole foot on each pedal, heels not hanging off the back.",
+    "Set a low resistance. Start stepping slowly with smooth, controlled pushes; do not let the pedal crash to the bottom stop.",
+    "Home mini stepper: place it on a non-slip mat, near a wall or sturdy table you can touch for balance; check the hydraulic tension knob is set to a light setting."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Start climbing slowly at the lowest level",
+      "action": null,
+      "feel": "steady, controlled steps; no rush.",
+      "breathing": "easy.",
+      "tempo": "lowest speed (about 24–40 steps per minute, est.) for 2–3 minutes.",
+      "visualCheck": "side – body upright over the feet. Front – feet hip-width, knees in line with toes."
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Place the whole foot on each step",
+      "action": null,
+      "feel": "weight through the middle of the foot and heel, not only the toes.",
+      "breathing": "steady.",
+      "tempo": null,
+      "visualCheck": "side – the heel is on the step, not hanging off."
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Push down through the heel and middle of the foot to rise",
+      "action": null,
+      "feel": "buttock and front of thigh working as the leg straightens.",
+      "breathing": "rhythmic, about one breath every 2–4 steps (est.).",
+      "tempo": null,
+      "visualCheck": "side – the pushing leg straightens almost fully (soft knee, not snapped straight) and the hip opens fully."
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Lift the other leg to the next step",
+      "action": null,
+      "feel": "front of the hip lifting the knee; a full step, not a shuffle.",
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": "side – the knee lifts so the foot clears the step edge."
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Stand tall with a light hand on the rails",
+      "action": null,
+      "feel": "hands resting, fingers or palms lightly on the rails, shoulders relaxed.",
+      "breathing": "talk test passes at moderate effort.",
+      "tempo": null,
+      "visualCheck": "side – trunk upright or leaning only slightly forward from the hips (less than about 30°, est.); elbows soft; you are not hanging on the rails."
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Look forward, not at your feet",
+      "action": null,
+      "feel": "neck long; chin level.",
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": "side – ear roughly over the shoulder."
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Keep the knees in line",
+      "action": null,
+      "feel": "knees track over the second toe.",
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": "front – knees do not fall in towards each other."
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Warm up: 2–3 minutes at level 1–3",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": "2–3 minutes, RPE 3–4/10 (light; Borg 9–11).",
+      "visualCheck": null
+    },
+    {
+      "n": 9,
+      "part": null,
+      "title": "Raise the level one at a time to your working effort",
+      "action": null,
+      "feel": "breathing faster; legs working.",
+      "breathing": "you can talk but not sing (moderate, RPE 5–6/10, Borg 12–13).",
+      "tempo": "wait about 30–60 seconds after each change before judging (est.).",
+      "visualCheck": "if you start leaning hard on the rails or taking tiny steps, the level is too high for now."
+    },
+    {
+      "n": 10,
+      "part": null,
+      "title": "Hold the working pace for the planned time (section 7)",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 11,
+      "part": null,
+      "title": "Cool down: 2–3 minutes at the lowest level",
+      "action": null,
+      "feel": "breathing settles.",
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 12,
+      "part": null,
+      "title": "Stop the machine before stepping off",
+      "action": null,
+      "feel": "legs may feel wobbly for a few seconds. Hold the rail and stand still for a moment before walking away; if dizzy, sit down.",
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 13,
+      "part": null,
+      "title": "Wipe the rails, front bar and console",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Leaning on or hanging from the rails",
+      "text": "Leaning on or hanging from the rails. It takes body weight off the legs, so the workout gets easier than the screen suggests: oxygen use was significantly lower with handrail support on the StairMaster Gauntlet (Gerhards, 1991 thesis), and up to about 8% lower in women using handrails on a stepping machine (Ohio State study). It also rounds the back and loads the wrists. Fix: lower the level until you can climb with a light touch."
+    },
+    {
+      "title": "Level too high",
+      "text": "Level too high. Common in Indian gyms where people copy the person next to them. Leads to rail-hanging, tiny steps and early exhaustion. Fix: start at level 1–3; increase by one level at a time."
+    },
+    {
+      "title": "Tiny, shuffling steps or toes only",
+      "text": "Tiny, shuffling steps or toes only. Less glute work and more calf strain. Fix: whole foot on each step, push through the heel, straighten the leg at the top."
+    },
+    {
+      "title": "Hunching over the console / staring at feet or phone",
+      "text": "Hunching over the console / staring at feet or phone. Rounds the upper back and neck. Fix: eyes forward; phone on the console shelf or listen instead."
+    },
+    {
+      "title": "Knees caving in",
+      "text": "Knees caving in. Strains the inside of the knee. Fix: feet hip-width, knees over the second toe; slow down."
+    },
+    {
+      "title": "Stepping off a moving stepmill, or getting on while it moves",
+      "text": "Stepping off a moving stepmill, or getting on while it moves. A fall hazard. Fix: press Stop, wait for a full stop, hold both rails, step down."
+    },
+    {
+      "title": "Locking the knee hard at the top",
+      "text": "Locking the knee hard at the top. Fix: straighten with a soft knee."
+    },
+    {
+      "title": "Trusting the calorie number",
+      "text": "Trusting the calorie number. Console estimates assume you are not holding the rails. Fix: use the MET estimates in section 10."
+    },
+    {
+      "title": "Too long, too soon",
+      "text": "Too long, too soon. Stair climbing gets hard quickly; beginners who try 20–30 minutes often end up sore or hanging on the rails. Fix: start at 5–10 minutes and add 1–2 minutes per session."
+    }
+  ],
+  "safetyNotes": [
+    "If you have a health condition, check with a doctor or physiotherapist before starting.",
+    "Knee problems: stair ascent loads the knee more than level walking. In people with instrumented knee implants, average peak knee forces were about 316% of body weight on stair ascent, 346% on descent and 261% on level walking (Kutzner et al., 2010). A 2024 UK Biobank study (nearly 400,000 people) linked more frequent stair climbing with higher risk of knee osteoarthritis, especially in people genetically prone to it. With knee pain: start slow and short, use a lower step rate, avoid skip-a-step, and choose the bike or elliptical if pain rises.",
+    "Low-back problems: stand tall; leaning over the rails rounds the back. Stop if back pain appears.",
+    "Balance problems, dizziness, or new to machines: use the rails lightly, start at the slowest level and stand next to the stop button. Get off slowly; legs often feel wobbly after a climb.",
+    "High blood pressure or heart disease: moderate effort, longer warm-up and cool-down, no breath-holding, no all-out bursts unless your doctor agrees. The effort rises fast, so monitor RPE closely.",
+    "Pregnancy: stair walking becomes less stable in late pregnancy (a 2013 study of 29 pregnant women found changes that may raise fall risk, with more side-to-side sway in the third trimester), and ACOG advises avoiding activities with a high fall risk. If cleared and experienced, keep to slow levels with both hands on the rails, talk-test effort, avoid overheating; switch to the stationary bike as balance changes.",
+    "Recent surgery: only with surgeon or physiotherapist clearance.",
+    "Stop immediately if: chest pain or pressure; unusual breathlessness; dizziness or feeling faint; irregular or racing heartbeat; sharp knee, hip or ankle pain; loss of balance. Press the stop button first, then step off holding the rails. Seek medical help for chest symptoms.",
+    "Spotter: not needed. If you feel unwell, press Stop rather than trying to step off moving stairs.",
+    "Hazards: loose clothing, cords or towels can catch in rolling steps; keep children away from the machine; never put a hand on moving steps; report any machine that speeds up by itself (recall precedent: StairMaster 8G Gauntlet, CPSC).",
+    "Gym etiquette: stepmills are popular and few in number in most Indian gyms; respect any time limit (often 20–30 min at peak hours, est.), wipe the rails and console, do not leave a towel on it to \"reserve\" it."
+  ],
+  "sources": [
+    "Herrmann SD, et al. 2024 Adult Compendium of Physical Activities. J Sport Health Sci 2024 – https://pubmed.ncbi.nlm.nih.gov/38242596/ ; Compendium Conditioning Exercise page (02065) – https://pacompendium.com/conditioning-exercise/ ; Compendium Walking page (17131, 17133, 17134) – https://pacompendium.com/walking/ ; 2024 Adult Compendium table – https://pacompendium.com/wp-content/uploads/2024/03/1_2024-adult-compendium_1_2024.pdf ; tracking guide – https://pacompendium.com/wp-content/uploads/2025/02/4_2024_adult-compendium-tracking-guide-1-2024.pdf",
+    "Life Fitness service document: METs conversion for climbers (METs ≈ 0.127 × spm + 1, 7-inch step) – https://support.lifefitness.com/hc/ca/article_attachments/27331725370647 ; ACSM stepping equation (Topend Sports) – https://www.topendsports.com/testing/equation-acsm-stepping.htm",
+    "Boreham CAG, et al. Training effects of short bouts of stair climbing on cardiorespiratory fitness, blood lipids, and homocysteine in sedentary young women. Br J Sports Med 2005;39:590–593 – https://bjsm.bmj.com/content/39/9/590 ; Boreham CAG, et al. Training effects of accumulated daily stair-climbing exercise in previously sedentary young women. Prev Med 2000 – https://pubmed.ncbi.nlm.nih.gov/10731455/",
+    "Jenkins EM, et al. Do stair climbing exercise \"snacks\" improve cardiorespiratory fitness? Appl Physiol Nutr Metab 2019;44(6):681–684 – https://pubmed.ncbi.nlm.nih.gov/30649897/",
+    "Paddock S, et al. Stair climbing and mortality meta-analysis, presented at ESC Preventive Cardiology 2024 (NPR report) – https://www.gpb.org/news/shots-health-news/2024/04/30/elevator-or-stairs-your-choice-could-boost-longevity-study-finds",
+    "Gerhards M. Handrail assisted versus nonhandrail assisted StairMaster Gauntlet ergometry (UW-La Crosse thesis, 1991) – https://minds.wisconsin.edu/handle/1793/48743 ; Heilman P. Physiological responses on the StairMaster Gauntlet with and without the use of hands – https://minds.wisc.edu/items/dd0d5c21-1205-4b59-a558-e70cb04850d9 ; Ohio State University. Hands off the best way to reap benefits from step workout – https://news.osu.edu/hands-off-the-best-way-to-reap-benefits-from-step-workout/",
+    "Bone Health and Osteoporosis Foundation. Exercise for your bone health (low-impact list includes stair-step machines; high-impact includes stair climbing) – https://www.bonehealthandosteoporosis.org/?p=2053 ; US Surgeon General 2004 Bone Health and Osteoporosis report, table – https://ncbi.nlm.nih.gov/books/NBK45523/table/ch7.t7",
+    "Kutzner I, et al. Loading of the knee joint during activities of daily living measured in vivo in five subjects (J Biomech 2010) – https://refubium.fu-berlin.de/handle/fub188/24271",
+    "UK Biobank. Stair climbing and risk of knee and hip osteoarthritis (2024 study summary) – https://www.ukbiobank.ac.uk/?p=13827",
+    "Gluteus maximus activity in level walking, incline walking and stair ascent in healthy people and chronic low back pain (J Back Musculoskelet Rehabil) – https://content.iospress.com/articles/journal-of-back-and-musculoskeletal-rehabilitation/bmr00191 ; Effects of stair stepping exercise direction and cadence on EMG activity (1994) – https://iro.uiowa.edu/esploro/outputs/journalArticle/Effects-of-Stair-Stepping-Exercise-Direction-and/9983557796402771",
+    "Protopapadaki A, et al. Hip, knee, ankle kinematics and kinetics during stair ascent and descent in healthy young individuals. Clin Biomech 2007;22(2):203–210 – https://pubmed.ncbi.nlm.nih.gov/17126461/ ; secondary review table – https://pmc.ncbi.nlm.nih.gov/articles/PMC3528906/table/Tab4 ; Hip and knee kinematics during stair ascent and descent in children, adolescents and young adults – https://johk.pl/wp-content/uploads/2023/02/10.2478_v10078-010-0047-9.pdf",
+    "StairMaster 4G StepMill spec (20 levels, 24–162 spm) – https://www.costco.co.uk/p/583926 and https://www.delta-fitness.com/products/stairmaster-4-g-stepmill-low-footprint-commercial-stair-climber ; StairMaster 8Gx Gauntlet spec (step height, max user weight) – https://www.fitshop.co.uk/stairmaster-8gx-gauntlet-stepmill-sm-8gx and https://progymsupply.com/p/stairmaster-8gx-stepmill-led-display/ ; Life Fitness Integrity PowerMill (30–180 spm, 400 lb) – https://progymsupply.com/p/life-fitness-integrity-powermill/ ; StairMaster SM3 (safety stop sensor) – https://fitnesssuperstore.com/StairMaster-SM3-StepMill-LCD-D1-p/sm3d1.htm",
+    "StairMaster SM916 StepMill owner's manual (getting on and off guidelines) – https://keystonefitness.ca/wp-content/uploads/2023/07/StairMaster-SM916-StepMill-Owners-Manual.pdf ; US CPSC recall listing for StairMaster 8G Gauntlet (steps accelerating) – https://www.cpsc.gov/Recall-Products/Exercise-Equipment",
+    "Spirit CS800 dependent-action stepper description – https://www.ironcompany.com/spirit-cs800-stairclimber-commercial-stepper ; Independent action stepper patent – https://patents.justia.com/patent/5622527",
+    "ACSM. Exercise intensity infographic – https://acsm.org/wp-content/uploads/2025/02/Exercise-intensity-infographic-PDF.pdf ; ACE (Pete McCall). Try this high-intensity stair climbing workout – https://www.acefitness.org/resources/everyone/blog/3753/try-this-high-intensity-stair-climbing-workout/",
+    "NHS. Physical activity guidelines for adults aged 19 to 64 – https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-for-adults-aged-19-to-64/",
+    "Technique and handrail guidance (fitness sources): Aaptiv (physical therapist on handrail use) – https://aaptiv.com/magazine/?p=6960 ; TRUE Fitness stair climber tips – https://truefitness.com/stair-climber-tips-for-a-powerful-workout/ ; PureGym, master the art of the stair climber – https://www.puregym.com/us/blog/master-the-art-of-the-stair-climber ; GoodRx stair climbing safety tips – https://www.goodrx.com/well-being/movement-exercise/stair-climbing-safety-tips",
+    "Knee OA and stair climbers (consumer sources): Livestrong (cites NCPAD) – https://www.livestrong.com/article/301818-are-stair-climbers-good-for-the-knees/ ; Johns Hopkins Arthritis Center – https://www.hopkinsarthritis.org/?p=17947",
+    "Pregnancy: stair walking stability in pregnant women (2013; index record) – https://pesquisa.bvsalud.org/ses/resource/es/mdl-23523281 (PubMed 23523281) ; ACOG exercise in pregnancy recommendations (MDedge report) – https://mdedge.com/content/new-acog-recommendations-encourage-exercise-during-pregnancy ; Livestrong, stepper in pregnancy (cites American Pregnancy Association) – https://www.livestrong.com/article/528934-can-i-use-the-stepper-if-i-am-pregnant/",
+    "Exercise prescription in prehypertension and hypertension, meta-analysis 2024 – https://pmc.ncbi.nlm.nih.gov/articles/PMC11264040 ; ADA/ACSM guidance summary – https://www.patientcareonline.com/view/exercise-guidelines-patients-diabetes ; Aerobic exercise and insulin resistance in PCOS – https://pmc.ncbi.nlm.nih.gov/articles/PMC3115385 ; WebMD, exercises for an underactive thyroid – https://www.webmd.com/women/features/exercises-underactive-thyroid ; ATS 2013 EIB guideline summary – https://hfhpulm.com/pfts/docs/ATS%202013%20Exercise%20Induced%20Bronchoconstriction%20Summary%202019-10-30.pdf ; warm-up and EIB systematic review – https://pubmed.ncbi.nlm.nih.gov/21811185/",
+    "Postpartum: Manchester University NHS FT, returning to exercise in the postnatal period – https://mft.nhs.uk/app/uploads/sites/4/2022/08/Returning-to-exercise-postnatal-period.pdf ; Aneurin Bevan UHB, returning to exercise – https://abuhb.nhs.wales/files/physiotherapy/pelvic-health-physiotherapy-in-postnatal-care-returning-to-exercise-pdf/"
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 22.2,
+      "70kg": 19,
+      "80kg": 16.7
+    },
+    "per300kcal": {
+      "60kg": 66.7,
+      "70kg": 57.1,
+      "80kg": 50
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "cardio",
+    "low_impact",
+    "glutes",
+    "weight_bearing_bone_health",
+    "short_sessions",
+    "time_10_to_30_min",
+    "beginner_slow_levels"
+  ],
+  "swapsByAccess": {
+    "none": "Building stairs at a slow steady pace (lift down) or step-ups on the lowest stair (Home 12), 10-15 min",
+    "home_equipment": "Mini stepper, or step-ups on a sturdy step or bench (Home 12)",
+    "basic_gym": "Treadmill incline walk (Gym 5) or elliptical (Gym 6)",
+    "full_gym": "Pedal stepper if stepmill busy; else incline treadmill walk (Gym 5), elliptical (Gym 6), or stationary bike (Gym 7) for knee pain"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "ok",
+      "change": "Moderate effort only, long warm-up and cool-down, no breath-holding, no all-out bursts; ask a doctor if uncontrolled",
+      "source": "Exercise in prehypertension/hypertension meta-analysis 2024 (PMC11264040); ACSM"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "Check glucose if on insulin/sulfonylureas; carry quick sugar; use non-weight-bearing cardio if foot ulcers or numb feet",
+      "source": "ADA/ACSM guidance summary"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "Get safe HR/RPE limits first; slow levels, short blocks; no intervals unless cleared; RPE if on beta-blockers",
+      "source": "ACSM; 2024 ESC stair-climbing meta-analysis (association only)"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "Regular moderate sessions toward 150 min/week plus strength training",
+      "source": "Boreham et al. 2005 BJSM; Boreham et al. 2000 Prev Med"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Check max user weight (often about 181 kg); 3-5 min blocks at slowest level; bike or elliptical may be kinder on knees at first",
+      "source": "Manufacturer spec sheets (StairMaster 8Gx, Life Fitness PowerMill); Kutzner et al. 2010"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "Moderate aerobic work 30+ min, 3+ days/week (can mix machines), plus strength work",
+      "source": "Review of aerobic exercise and insulin resistance in PCOS (PMC3115385)"
+    },
+    {
+      "condition": "thyroid",
+      "status": "modify",
+      "change": "Controlled: normal use. Uncontrolled: easy-moderate only until treated; ask a doctor",
+      "source": "Consumer health source only (WebMD); guideline-level source not found"
+    },
+    {
+      "condition": "asthma",
+      "status": "modify",
+      "change": "Reliever as prescribed; 10+ min gradual warm-up; build effort slowly",
+      "source": "ATS 2013 EIB guideline; warm-up systematic review (PubMed 21811185)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Slowest levels, short blocks, no skip-a-step, stop if pain rises; prefer bike or elliptical on painful days; ask a doctor if severe",
+      "source": "Kutzner et al. 2010; UK Biobank 2024 stair climbing and knee OA study; Johns Hopkins Arthritis Center"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Stand tall, no rail-hanging or hunching, short sessions, stop if pain rises",
+      "source": "Gluteus maximus EMG study in chronic low back pain (J Back Musculoskelet Rehabil)"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "ok",
+      "change": "Light hand contact only",
+      "source": "Not found"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "modify",
+      "change": "Good low-impact weight-bearing option; rails for balance, slow levels, careful on and off; avoid real-stair sprints unless cleared",
+      "source": "Bone Health and Osteoporosis Foundation; US Surgeon General 2004 bone health report"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "modify",
+      "change": "Only if cleared and experienced; slow levels, both hands on rails, talk-test effort, avoid overheating; switch to bike as balance changes",
+      "source": "ACOG (via MDedge); stair-walking stability in pregnancy study 2013 (PubMed 23523281)"
+    },
+    {
+      "condition": "postpartum",
+      "status": "modify",
+      "change": "After postnatal check once walking is comfortable; slow levels for 5 min; stop if heaviness, leaking or pain; later after caesarean",
+      "source": "Manchester University NHS FT and Aneurin Bevan UHB postnatal leaflets"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Only with surgeon/physio clearance; reintroduce gradually",
+      "source": "Not found"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "gym",
+      "home"
+    ],
+    "bodyRegion": [
+      "lower"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "fat_loss",
+      "endurance"
+    ],
+    "intensity": "moderate",
+    "noise": "moderate",
+    "space": "machine",
+    "typicalMinutes": 10,
+    "kcalPer10min70kg": 53,
+    "difficulty1to5": 3,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Gym",
+    "Home",
+    "Flat-friendly",
+    "Beginner",
+    "Low impact",
+    "Cardio",
+    "Glutes",
+    "Legs",
+    "Rep counter",
+    "10–20 min"
+  ],
+  "needsReview": [
+    "last_researched 2026-10-16 differs from file date 2026-10-22"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-22",
+      "file": "FitPlate_Fitness_2026-10-22.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": [
+    "2026-10-22: last_researched 2026-10-16 differs from file date 2026-10-22"
+  ]
+}

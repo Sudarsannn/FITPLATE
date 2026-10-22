@@ -25,6 +25,8 @@ export const featureFlags = {
   rememberAllergens: true,
   /** Innovation (Day 07): "Jump to" chips at the top of the dish page. */
   dishJumpChips: true,
+  /** Innovation (Day 08, review idea 4): "₹ per 10 g protein" on the dish page and a "Protein per ₹" sort. */
+  proteinPerRupee: true,
   /** Priority plan P1-b: Google sign-in inside the iPhone / Android dev build. Only shows when that platform's client ID is in .env. */
   nativeGoogleSignIn: true,
   /** Priority plan P2-c: read the research library from the server when it is newer than the bundled copy. */

@@ -1,0 +1,862 @@
+{
+  "id": "hamstring-stretch",
+  "number": 5,
+  "name": "Hamstring stretch (supine strap, standing, seated)",
+  "otherNames": [
+    "Back-of-thigh stretch",
+    "Lying strap hamstring stretch",
+    "Towel hamstring stretch",
+    "Doorway hamstring stretch",
+    "Standing heel-on-step hamstring stretch",
+    "Seated chair hamstring stretch",
+    "Supta Padangusthasana (Reclining Hand-to-Big-Toe Pose)",
+    "Ardha Uttanasana (Half Standing Forward Bend, related)",
+    "Padahastasana (Hand-to-Foot Pose, related)"
+  ],
+  "section": "yoga_stretch",
+  "type": "mobility",
+  "equipment": [
+    "yoga strap, belt, towel or dupatta (optional)",
+    "mat or rug (optional)",
+    "low step or bottom stair (standing version, optional)",
+    "chair without wheels (seated version, optional)",
+    "doorway (hands-free version, optional)"
+  ],
+  "noEquipmentAlternative": "Seated chair hamstring stretch at a desk, or lying stretch holding the back of the thigh with both hands",
+  "musclesPrimary": [
+    "biceps femoris",
+    "semitendinosus",
+    "semimembranosus"
+  ],
+  "musclesSecondary": [
+    "gastrocnemius",
+    "adductor magnus (hamstring part)",
+    "gluteus maximus",
+    "quadriceps (working to straighten knee)",
+    "erector spinae and transversus abdominis (holding flat back, standing)"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 2.3,
+  "compendiumCode": "02101",
+  "metOptions": [
+    {
+      "code": "02101",
+      "met": 2.3,
+      "activity": "MET: 2.3, 2024 Adult Compendium of Physical Activities, code 02101, \"Stretching, mild\" (Conditioning Exercise heading). This matches the beginner prescription (static, mild holds). Extras (text only):"
+    },
+    {
+      "code": "02150",
+      "met": 2.3,
+      "activity": "MET: 2.3, 2024 Adult Compendium of Physical Activities, code 02101, \"Stretching, mild\" (Conditioning Exercise heading). This matches the beginner prescription (static, mild holds). Extras (text only):"
+    },
+    {
+      "code": "02180",
+      "met": 3.5,
+      "activity": "MET: 2.3, 2024 Adult Compendium of Physical Activities, code 02101, \"Stretching, mild\" (Conditioning Exercise heading). This matches the beginner prescription (static, mild holds). Extras (text only):"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "flexibility",
+      "sets": 2,
+      "reps": "30 s hold per leg, supine strap, bottom knee bent",
+      "timeSec": 30,
+      "restSec": 10,
+      "tempo": "slow entry, static hold, nasal breathing",
+      "perWeek": 5
+    },
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 1,
+      "reps": "30 s hold per leg, seated chair version, 2-3 times per workday",
+      "timeSec": 30,
+      "restSec": 5,
+      "tempo": "static hold",
+      "perWeek": 5
+    },
+    {
+      "level": "beginner",
+      "goal": "relaxation",
+      "sets": 2,
+      "reps": "5-8 slow breaths per leg, supine strap",
+      "timeSec": 45,
+      "restSec": 10,
+      "tempo": "static hold, slow breathing",
+      "perWeek": 7
+    },
+    {
+      "level": "intermediate",
+      "goal": "flexibility",
+      "sets": 3,
+      "reps": "45-60 s per leg, bottom leg straight or doorway",
+      "timeSec": 60,
+      "restSec": 10,
+      "tempo": "static hold",
+      "perWeek": 7
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 2,
+      "reps": "30 s per leg, standing heel-on-step after training",
+      "timeSec": 30,
+      "restSec": 10,
+      "tempo": "static hold",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "flexibility",
+      "sets": 2,
+      "reps": "2-3 min per leg doorway, or 10 breaths holding big toe",
+      "timeSec": 150,
+      "restSec": 15,
+      "tempo": "static hold",
+      "perWeek": 7
+    },
+    {
+      "level": "advanced",
+      "goal": "flexibility",
+      "sets": 3,
+      "reps": "hold-relax: 5 s gentle press into strap, relax, ease deeper, 20-30 s hold per leg",
+      "timeSec": 30,
+      "restSec": 10,
+      "tempo": "5 s contract, 20-30 s hold",
+      "perWeek": 3
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "hold_timer",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "hold_supine",
+        "joint": "stretching-leg hip (shoulder-hip-knee)",
+        "angleDeg": "<= 135",
+        "parsed": {
+          "op": "<=",
+          "value": 135,
+          "max": null
+        }
+      },
+      {
+        "name": "hold_supine",
+        "joint": "stretching-leg knee (hip-knee-ankle)",
+        "angleDeg": ">= 150",
+        "parsed": {
+          "op": ">=",
+          "value": 150,
+          "max": null
+        }
+      },
+      {
+        "name": "hold_supine_bottom_leg_straight_option",
+        "joint": "bottom-leg hip (shoulder-hip-knee)",
+        "angleDeg": ">= 160",
+        "parsed": {
+          "op": ">=",
+          "value": 160,
+          "max": null
+        }
+      },
+      {
+        "name": "hold_supine",
+        "joint": "body_position",
+        "angleDeg": "shoulder and hip within 10 cm height (lying); shoulders not lifted",
+        "parsed": null
+      },
+      {
+        "name": "hold_standing",
+        "joint": "raised-leg hip (shoulder-hip-knee)",
+        "angleDeg": "<= 140",
+        "parsed": {
+          "op": "<=",
+          "value": 140,
+          "max": null
+        }
+      },
+      {
+        "name": "hold_standing",
+        "joint": "raised-leg knee",
+        "angleDeg": ">= 160",
+        "parsed": {
+          "op": ">=",
+          "value": 160,
+          "max": null
+        }
+      },
+      {
+        "name": "hold_seated",
+        "joint": "straight-leg hip (shoulder-hip-knee)",
+        "angleDeg": "<= 85",
+        "parsed": {
+          "op": "<=",
+          "value": 85,
+          "max": null
+        }
+      },
+      {
+        "name": "hold_seated",
+        "joint": "straight-leg knee",
+        "angleDeg": ">= 160",
+        "parsed": {
+          "op": ">=",
+          "value": 160,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 10
+  },
+  "formChecks": [
+    {
+      "joint": "hip (supine)",
+      "rule": "stretching-leg hip angle > 135 deg (equals hold threshold)",
+      "message": "Raise your leg a little more, to the first mild stretch"
+    },
+    {
+      "joint": "knee (supine)",
+      "rule": "stretching-leg knee angle < 150 deg (equals hold threshold)",
+      "message": "Straighten your knee a little; keep it soft"
+    },
+    {
+      "joint": "bottom hip (supine, straight-bottom-leg option)",
+      "rule": "bottom-leg hip angle < 160 deg (equals hold threshold)",
+      "message": "Keep your bottom leg heavy on the floor"
+    },
+    {
+      "joint": "shoulders (supine)",
+      "rule": "shoulders more than 10 cm above hip line (above-the-line flag, not an angle)",
+      "message": "Rest your head and shoulders down"
+    },
+    {
+      "joint": "hip (standing)",
+      "rule": "raised-leg hip angle > 140 deg (equals hold threshold)",
+      "message": "Hinge forward from your hips"
+    },
+    {
+      "joint": "knee (standing/seated)",
+      "rule": "front knee angle < 160 deg (equals hold threshold)",
+      "message": "Straighten the front knee gently"
+    },
+    {
+      "joint": "hip (seated)",
+      "rule": "straight-leg hip angle > 85 deg (equals hold threshold)",
+      "message": "Lean forward from your hips, back straight"
+    },
+    {
+      "joint": "spine (standing/seated)",
+      "rule": "nose below shoulder line while hip angle has not reached hold threshold (rounded-back flag)",
+      "message": "Don't round your back. Hinge from the hips"
+    },
+    {
+      "joint": "ankle",
+      "rule": "more than 3 direction changes in 2 s",
+      "message": "Hold still. No bouncing"
+    },
+    {
+      "joint": "time",
+      "rule": "beginner hold > 60 s",
+      "message": "Nice. Release and switch legs"
+    }
+  ],
+  "safetyFlags": [
+    "recent_hamstring_strain_wait_2_4_days",
+    "sciatica_or_leg_tingling_modify",
+    "hip_replacement_90_deg_limit_ask_surgeon",
+    "osteoporosis_no_rounded_forward_bend",
+    "pregnancy_no_supine_after_12_weeks",
+    "low_back_pain_use_supine_bent_knee",
+    "knee_pain_soft_knee",
+    "recent_surgery",
+    "no_bouncing",
+    "no_breath_holding"
+  ],
+  "progressions": [
+    "Supine strap with bottom leg straight, longer holds then doorway 1-3 min",
+    "Supta Padangusthasana holding the big toe, leg near vertical",
+    "Paschimottanasana / Padahastasana and hold-relax (PNF) strap stretching"
+  ],
+  "regressions": [
+    "Bent-knee supine stretch holding the back of the thigh",
+    "Seated chair stretch with a small lean",
+    "Doorway stretch with hips far from the wall"
+  ],
+  "videoShots": [
+    {
+      "seconds": 6,
+      "angle": "high front, 1.5 m, foot and hands",
+      "shows": "looping strap or dupatta round the ball of the foot",
+      "textOverlay": "Strap on the ball of the foot"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m, mat height",
+      "shows": "straightening top leg to the first mild stretch, bottom knee bent",
+      "textOverlay": "Breathe out. Stop at the first stretch."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, split screen",
+      "shows": "wrong (head lifted, pelvis curling, yanking) vs right",
+      "textOverlay": "Head down. Hips heavy."
+    },
+    {
+      "seconds": 6,
+      "angle": "side, 2.5 m",
+      "shows": "doorway version, heel up the frame",
+      "textOverlay": "No strap? Use a doorway."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 3 m, hip height",
+      "shows": "heel on low stair, flat-back hip hinge",
+      "textOverlay": "Hinge from the hips, back flat"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, split screen",
+      "shows": "wrong (rounded back, high step) vs right",
+      "textOverlay": "Don't round to reach"
+    },
+    {
+      "seconds": 8,
+      "angle": "three-quarter front, 2 m",
+      "shows": "seated chair version at a desk in office clothes",
+      "textOverlay": "Desk break: 30 s each leg"
+    },
+    {
+      "seconds": 6,
+      "angle": "front, 2 m, close",
+      "shows": "relaxed ankle, slow breathing, 30 s timer",
+      "textOverlay": "Mild stretch. Keep breathing."
+    }
+  ],
+  "lastResearched": "2026-10-16",
+  "setupSteps": [
+    "Lay the mat lengthwise on the floor, with enough space for one leg to point at the ceiling. Avoid a bed or sofa: the soft surface lets the pelvis sink.",
+    "Get a strap, belt, long towel or dupatta about 1.5–2 m long (est.). Fold a towel lengthwise so it does not twist.",
+    "Sit on the mat, then lie on your back. Head on the mat or on a thin folded towel if your chin pokes up.",
+    "Bottom leg (beginner default): bend the non-stretching knee and put that foot flat on the mat, hip-width from the other leg. This keeps the low back relaxed (South Tees NHS; Healthwise). Harder option: bottom leg straight on the floor, toes to the ceiling.",
+    "Bend the stretching knee toward your chest and loop the strap around the ball or arch of that foot (Liforme), not the toes.",
+    "Hold one end of the strap in each hand, elbows relaxed on the floor or bent, shoulders down.",
+    "Lie on your back in a doorway, with the stretching leg on the door-frame side.",
+    "Shuffle your bottom close to the wall beside the frame and rest the heel of the stretching leg up the wall; the other leg goes straight through the doorway along the floor (Healthwise doorway stretch; Mayo Clinic wall stretch).",
+    "Move your hips closer to the wall for more stretch, further away for less.",
+    "Stand facing a low step, bottom stair or sturdy footstool (about ankle to mid-shin height, est.). Higher is not better: a high step tips the pelvis back.",
+    "Hold a wall, rail or table edge for balance if needed.",
+    "Place the heel of the stretching leg on the step, knee straight but soft, toes up and relaxed. The standing leg is straight under the hip with a soft knee, foot pointing forward.",
+    "Hands on the hips or on the thigh of the raised leg (never pressing down on the knee).",
+    "Use a sturdy chair without wheels (Mayo Clinic Care Network); push it against a wall or desk if it slides on tiles.",
+    "Sit near the front edge of the seat, feet flat.",
+    "Slide the stretching leg forward so the knee is straight and the heel rests on the floor, toes up. The other foot stays flat with the knee bent at about 90°.",
+    "Sit tall: weight on both sitting bones, hands on the bent-knee thigh or the front of the seat."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Lie down and loop the strap",
+      "action": "lie on your back, bottom-leg knee bent, foot flat; loop the strap around the ball of the other foot with that knee bent toward the chest.",
+      "feel": "back of the pelvis and shoulders resting evenly on the mat.",
+      "breathing": "breathe in and out normally.",
+      "tempo": "5 seconds.",
+      "visualCheck": "side view, head, shoulders and pelvis on the mat; front view, strap ends held evenly in both hands."
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Straighten the leg toward the ceiling",
+      "action": "breathe out and slowly press the foot up into the strap, straightening the knee as much as is comfortable.",
+      "feel": "a gradual pull starting in the middle of the back of the thigh.",
+      "breathing": "breathe out as the leg rises.",
+      "tempo": "3–4 seconds.",
+      "visualCheck": "side view, leg rising roughly toward vertical; a soft knee bend is fine."
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Find the first point of stretch",
+      "action": "stop raising the leg as soon as you feel mild tension (the ACSM \"point of tightness or slight discomfort\"). Many beginners stop well before vertical (45–70° from the floor, est.), and that is fine.",
+      "feel": "steady tension in the belly of the hamstring, not at the back of the knee or in the buttock crease.",
+      "breathing": "slow breath in.",
+      "tempo": "2 seconds.",
+      "visualCheck": "pelvis still flat on the mat; the bottom of the pelvis has not curled up off the floor."
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Set the pelvis and back",
+      "action": "let both buttocks stay heavy on the mat and keep the natural small gap under the low back. If the tailbone curls up, lower the leg a little (Yoga Journal: lower the leg or bend the knee if needed).",
+      "feel": "low back relaxed, not pressed flat or arched hard.",
+      "breathing": "breathe out.",
+      "tempo": "2 seconds.",
+      "visualCheck": "side view, hip bones level; the bottom leg's knee not drifting."
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Relax the shoulders, arms and ankle",
+      "action": "keep the elbows soft and shoulders on the floor; let the strap hold the leg so the arms do little work (Liforme). Keep the ankle relaxed in a neutral position, not pulled hard toward you.",
+      "feel": "neck and shoulders soft; stretch stays in the back of the thigh.",
+      "breathing": "easy nasal breathing.",
+      "tempo": "2 breaths.",
+      "visualCheck": "front view, shoulders level, chin not lifted toward the ceiling."
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Hold",
+      "action": "stay still. Do not bounce or pull in jerks.",
+      "feel": "mild, steady stretch (stretch sensation about 3–5 out of 10, est.) that eases slightly as you hold. Overall effort is light: 3–4 on the ACSM 0–10 perceived-exertion scale (= Borg 9–11 on the 6–20 scale).",
+      "breathing": "slow breathing, about 5–6 breaths in 30 seconds (est.); never hold the breath.",
+      "tempo": "30 seconds (beginner); see section 7.",
+      "visualCheck": "no shaking in the leg, pelvis and head still on the mat."
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Optional: ease a little deeper",
+      "action": "if the stretch has faded, breathe out and draw the leg a few centimetres closer, or straighten the knee a little more.",
+      "feel": "the tension returns to the same mild level, never sharp.",
+      "breathing": "breathe out while moving.",
+      "tempo": "3 seconds, then continue the hold.",
+      "visualCheck": "pelvis still flat; if the tailbone lifts, go back."
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Release",
+      "action": "bend the knee, bring it toward the chest, slip off the strap and lower the foot to the mat.",
+      "feel": "the stretch fades; no lingering pain.",
+      "breathing": "breathe out.",
+      "tempo": "3–4 seconds.",
+      "visualCheck": "foot lowered with control, not dropped."
+    },
+    {
+      "n": 9,
+      "part": null,
+      "title": "Switch sides",
+      "action": "loop the strap on the other foot and repeat steps 2–8. Do 2 rounds per leg (section 7).",
+      "feel": "the two sides may differ; that is common.",
+      "breathing": "normal breathing between sides.",
+      "tempo": "about 10 seconds to change over.",
+      "visualCheck": "same setup on both sides."
+    },
+    {
+      "n": 10,
+      "part": null,
+      "title": "Get up safely",
+      "action": "roll onto your side, push up with your hands to sitting, then stand.",
+      "feel": "no strain in the back; no dizziness.",
+      "breathing": "normal.",
+      "tempo": "5 seconds.",
+      "visualCheck": "no sit-up \"jack-knife\" straight from the back."
+    },
+    {
+      "n": 11,
+      "part": "Standing heel-on-step version (each step: action | feel | breath | tempo | visual check)",
+      "title": "Heel on the low step, both knees soft, hands on hips | weight mostly on the standing leg | breathe in | 3 s | side view, upright trunk, standing foot under hip",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 12,
+      "part": "Standing heel-on-step version (each step: action | feel | breath | tempo | visual check)",
+      "title": "Lift the chest and lengthen the spine | back long, not slumped | breathe in | 2 s | side view, ear, shoulder and hip in a line",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 13,
+      "part": "Standing heel-on-step version (each step: action | feel | breath | tempo | visual check)",
+      "title": "Hinge forward from the hips, sending the bottom slightly back, keeping the back flat | stretch builds in the back of the raised thigh | breathe out | 3–4 s | side view, the back stays straight like a tabletop tilt; the movement is at the hip, not the waist (Prehab Guys)",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 14,
+      "part": "Standing heel-on-step version (each step: action | feel | breath | tempo | visual check)",
+      "title": "Stop at the first mild stretch and hold | stretch 3–5/10 (est.), effort light 3–4/10 (Borg 9–11) | slow breathing | 30 s | front view, hips square to the step, raised foot pointing up, not rolled out",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 15,
+      "part": "Standing heel-on-step version (each step: action | feel | breath | tempo | visual check)",
+      "title": "If too strong, point the toes away slightly or soften the knee (Prehab Guys) | stretch eases | breathe out | 2 s | knee not locked back",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 16,
+      "part": "Standing heel-on-step version (each step: action | feel | breath | tempo | visual check)",
+      "title": "Return upright by pushing the hips forward, lift the heel down, switch legs | no back strain | breathe in | 3 s | stand fully upright before changing legs",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 17,
+      "part": "Seated chair version (each step: action | feel | breath | tempo | visual check)",
+      "title": "Sit tall on the front edge of the chair, one leg straight, heel on the floor, toes up | weight on both sitting bones | breathe in | 3 s | side view, trunk upright",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 18,
+      "part": "Seated chair version (each step: action | feel | breath | tempo | visual check)",
+      "title": "Hands on the bent-knee thigh; lean the chest forward from the hips, keeping the back straight (Mayo Clinic Care Network) | stretch behind the straight thigh | breathe out | 3–4 s | side view, the whole trunk tilts as one piece; the back does not curl",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 19,
+      "part": "Seated chair version (each step: action | feel | breath | tempo | visual check)",
+      "title": "Hold at the first mild stretch | stretch 3–5/10 (est.), effort light 3–4/10 (Borg 9–11) | slow breathing | 30 s | chin level, shoulders relaxed",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 20,
+      "part": "Seated chair version (each step: action | feel | breath | tempo | visual check)",
+      "title": "Sit back up, switch legs | stretch fades | breathe in | 3 s | upright before switching",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Rounding the back to reach the toes",
+      "text": "Rounding the back to reach the toes. It moves the stretch from the hamstrings to the spine and loads the low back; López-Miñarro's work shows a good hamstring stretch shows up as pelvic tilt, not more spinal rounding. Fix: hinge from the hips with a flat back; reach less far; use the supine version."
+    },
+    {
+      "title": "Bouncing",
+      "text": "Bouncing. Jerky movement can over-stretch tissue and triggers muscle guarding. Fix: move slowly into a still hold (ACSM static stretching)."
+    },
+    {
+      "title": "Stretching into pain",
+      "text": "Stretching into pain. Sharp pain, pain behind the knee or tingling down the leg is not a useful stretch. Fix: back off to mild tension; stop if pain persists (Healthwise; South Tees NHS: aim for a gentle pull, no need to force the range)."
+    },
+    {
+      "title": "Pulling the toes hard toward the shin and dropping the chin",
+      "text": "Pulling the toes hard toward the shin and dropping the chin. Adds tension on the sciatic nerve rather than the muscle; if tingling or burning appears, this is the likely cause (Prehab Guys). Fix: relax the ankle and keep the head neutral."
+    },
+    {
+      "title": "Locking the knee or pushing it down with a hand",
+      "text": "Locking the knee or pushing it down with a hand. Stresses the back of the knee joint. Fix: soft knee; hands on the thigh, never the kneecap."
+    },
+    {
+      "title": "Lifting the pelvis or head in the supine version",
+      "text": "Lifting the pelvis or head in the supine version. The tailbone curls up and the stretch disappears into the back. Fix: lower the leg until the pelvis rests down; head on the mat."
+    },
+    {
+      "title": "Too high a step in the standing version",
+      "text": "Too high a step in the standing version. A table-height leg rest tips the pelvis back and rounds the back. Fix: use a step at ankle to mid-shin height."
+    },
+    {
+      "title": "Long static holds right before sprinting or heavy lifting",
+      "text": "Long static holds right before sprinting or heavy lifting. Holds of 60 s or more per muscle can briefly reduce strength and power (Behm et al. 2016 review); holds under 60 s inside a full warm-up have trivial effects. Fix: before workouts use short holds or leg swings; save longer holds for after."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. Raises tension and blood pressure. Fix: slow nasal breathing throughout."
+    }
+  ],
+  "safetyNotes": [
+    "Low back pain: use the supine version (back supported) with the bottom knee bent. South Tees NHS advises people with a back problem to check with their physiotherapist first. Avoid standing toe-touches with a rounded back. Stop if back pain increases.",
+    "Sciatica or leg pain that runs below the knee, numbness or tingling: this may be nerve sensitivity, not tight muscle. If changing the ankle or neck position changes the symptoms, the nerve is likely involved (Prehab Guys; clinical rule of thumb, not a validated test). Keep the ankle relaxed and the head down; stop if tingling appears; get assessed.",
+    "Recent hamstring strain or tear: no stretching in the first 2–4 days; start gentle stretches only when normal walking is pain-free; stretches should never hurt (Northern Care Alliance NHS; nidirect).",
+    "Knee problems: keep a soft knee; never press on the kneecap; pain behind the knee means ease off.",
+    "Hip replacement (especially posterior approach): the upper body and thigh must not come closer than 90°, usually for about 6 weeks or until the surgeon says otherwise (Kaiser Permanente; Northwestern Medicine). Supine leg raises past 90° hip flexion and forward bends break this rule; ask your surgeon.",
+    "Osteoporosis: avoid forward bending with a rounded spine, toe touches and twisting forward bends (New York State and New Jersey osteoporosis guidance). Use the supine strap version with a neutral spine.",
+    "High blood pressure: stretching is suitable; keep breathing and get up slowly from the floor. Avoid breath-holding.",
+    "Pregnancy: avoid lying flat on the back after the first trimester (about 12 weeks; ACOG guidance as reported by secondary sources), so use the seated or standing versions; joints are looser (relaxin), so do not push beyond your pre-pregnancy range.",
+    "Recent surgery: wait for clearance (abdominal, hip, knee, spine or eye surgery).",
+    "Stop immediately if you feel: sharp or tearing pain in the thigh or behind the knee; tingling, burning or numbness down the leg; back pain that increases; dizziness when getting up; a pop or sudden weakness.",
+    "Spotter: not needed.",
+    "Gym etiquette: use the stretching area or a mat out of walkways; do not hog a bench or squat rack for a heel-on-step stretch; wipe mats and straps after use."
+  ],
+  "sources": [
+    "Ministry of AYUSH / MDNIY, Common Yoga Protocol (Padahastasana listed; Supta Padangusthasana not included): https://www.mea.gov.in/images/pdf/common-yoga-protocol-english.pdf ; https://yogamdniy.nic.in/files/pdf/CYP-2023-English.pdf ; BIS draft standard drawing on the CYP: https://services.bis.gov.in/tmp/PDDAYD44423006_18122024_0.pdf",
+    "Mayo Clinic, Hamstring stretch (wall/doorway, ~30 s): https://www.mayoclinic.org/diseases-conditions/hamstring-injury/multimedia/hamstring-stretch/img-20006930 ; Mayo Clinic Care Network, Seated stretches for the workplace: https://www.mymlc.com/health-information/videos/life-stage/adult/adult-health-and-wellness/healthy-at-work/video-seated-stretches-for-the-workplace/",
+    "South Tees Hospitals NHS Foundation Trust, Hamstring stretch: https://www.southtees.nhs.uk/resources/hamstring-stretch-1",
+    "Northern Care Alliance NHS, Thigh injury – hamstrings: https://northerncarealliance.nhs.uk/patient-information/patient-leaflets/emergency-and-urgent-care-thigh-injury-hamstrings ; nidirect, Hamstring injury: https://www.nidirect.gov.uk/node/10640",
+    "Healthwise, Hamstring stretch with towel: https://www.ummhealth.org/health-library/hamstring-stretch-with-towel ; Hamstring stretch in a doorway: https://www.healthlinkbc.ca/healthwise/hamstring-stretch-doorway ; Hamstring stretch while sitting: https://uofmhealth.org/health-library/acd9475",
+    "ACSM, Stretching and flexibility guidelines update (2021): https://www.acsm.org/blog-detail/acsm-certified-blog/2021/03/18/stretching-and-flexibility-guidelines-update ; Garber et al. 2011 flexibility table (reproduced): https://www.anatomytrains.com/wp-content/uploads/manual/acsm.docx",
+    "Herrmann SD et al., 2024 Adult Compendium of Physical Activities (code 02101 Stretching, mild, 2.3 METs; 02150; 02180): https://pacompendium.com/conditioning-exercise ; https://pacompendium.com/wp-content/uploads/2024/01/2024-adult-compendium_1_2024.pdf ; https://pmc.ncbi.nlm.nih.gov/articles/PMC10818145/",
+    "Decoster LC et al. (2005), The effects of hamstring stretching on range of motion: a systematic literature review: https://pubmed.ncbi.nlm.nih.gov/16001909/",
+    "Influence of static stretching on hamstring flexibility in healthy young adults: systematic review and meta-analysis (2016): https://pubmed.ncbi.nlm.nih.gov/27458757/",
+    "Bandy WD et al. (1997), hamstring stretch time and frequency (PEDro record): https://search.pedro.org.au/search-results/record-detail/1877 ; Bandy and Irion (1994): https://pubmed.ncbi.nlm.nih.gov/8066111/",
+    "López-Miñarro PA et al. (2012), Acute effects of hamstring stretching on sagittal spinal curvatures and pelvic tilt: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3588653/",
+    "2024 systematic review, hamstring stretching in back pain: https://pmc.ncbi.nlm.nih.gov/articles/PMC11289822/",
+    "Behm et al. (2016) static stretching review, as summarised in Frontiers in Physiology (2019): https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2019.01468/pdf",
+    "The Prehab Guys, Proper hamstring stretching (nerve tension) and Standing hamstring stretch: https://theprehabguys.com/proper-hamstring-stretching/ ; https://library.theprehabguys.com/vimeo-video/standing-hamstring-stretch-dynamic",
+    "University of Saskatchewan, Stretching more effective than walking to lower high blood pressure: https://pharmacy-nutrition.usask.ca/news/2021/stretching-more-effective-than-walking-to-lower-high-blood-pressure-usask-study.php",
+    "Yoga Journal, Reclining Big Toe Pose and 3 ways to modify Supta Padangusthasana: https://www.yogajournal.com/poses/reclining-big-toe-pose/ ; https://www.yogajournal.com/poses/3-ways-modify-supta-padangusthasana/ ; Standing Forward Bend: https://www.yogajournal.com/poses/standing-forward-bend-2/",
+    "Liforme, How to do Reclined Big Toe Pose: https://liforme.com/blogs/blog/how-to-do-reclined-big-toe-pose-supta-padangusthasana ; Pranayoga (India), Supta Padangushtasana: https://pranayoga.co.in/asana/supta-padangushtasana-reclining-big-toe-posture",
+    "Donna Farhi, Reclining big toe pose variations (SI joint caution): https://donnafarhi.co.nz/reclining-big-toe-pose-variations/",
+    "Paschimottanasana and Uttanasana name meanings: https://en.wikipedia.org/wiki/Paschimottanasana ; https://en.wikipedia.org/wiki/Uttanasana ; Devvrat Yoga, Ardha Uttanasana: https://www.devvratyoga.com/learning-resources/ardha-uttanasana/",
+    "Bandal and Jeswani (2026), Paschimottanasana vs foam roller for hamstring tightness, Int J Community Med Public Health (Pune, India): https://www.ijcmph.com/index.php/ijcmph/article/view/16489",
+    "New York State Dept of Health, osteoporosis exercise guidance: https://Health.NY.Gov/publications/1929.pdf ; New Jersey DoAS, Osteoporosis exercise do's and don'ts: https://www.nj.gov/humanservices/doas/documents/osteo_exercise_do_dont.pdf",
+    "Kaiser Permanente, Posterior hip precautions: https://mydoctor.kaiserpermanente.org/ncal/Images/011061-424%20Hip%20Precautions%20Posterior%20FINAL_tcm75-1164856.pdf ; Northwestern Medicine hip precautions: https://WWW.NM.ORG/-/media/northwestern/resources/patients-and-visitors/patient-education/therapy/northwestern-medicine-hip-precautions-after-hip-replacement.pdf",
+    "Pregnancy (secondary summaries of ACOG): https://open-exam-prep.com/study-guides/acsm-cpt/chapter-8-special-populations/prenatal-postpartum-musculoskeletal ; https://onepeloton.com/blog/pregnancy-stretches ; Lancaster General Health, Exercising after giving birth: https://lancastergeneralhealth.org/health-hub-home/motherhood/fitness-and-nutrition/when-is-it-safe-to-start-exercising-after-giving-birth",
+    "ADA 2016 position statement summary (Frontiers in Endocrinology 2017): https://frontiersin.org/articles/10.3389/fendo.2017.00033/full",
+    "KNEEhabilitation trial protocol (knee OA hamstring stretch 20 s × 3): https://cdn.clinicaltrials.gov/large-docs/14/NCT02634814/Prot_SAP_000.pdf ; Singapore General Hospital, stretching for knee pain (HealthXchange): https://www.healthxchange.sg/exercise/workouts/stretching-exercises-knee-pain-hamstring-calf-knee-joint",
+    "Hinge Health, Can tight hamstrings cause back pain?: https://www.hingehealth.com/gb/en/resources/articles/can-tight-hamstrings-cause-back-pain/",
+    "Cambridge University Hospitals NHS, Yoga: a guide for cardiac rehabilitation patients: https://cuh.nhs.uk/patient-information/yoga-a-guide-for-cardiac-rehabilitation-patients",
+    "Cochrane, Yoga for asthma (Yang et al. 2016): https://www.cochrane.org/news/yoga-may-have-health-benefits-people-asthma",
+    "Nidhi R et al., yoga for PCOS in adolescents (RCT): https://elibraryofyoga.com/items/99d1c3c8-bf67-4f45-8141-bfdad04a40fb/full",
+    "Hold time: 10–30 s (ACSM), ~30 s (Mayo), 15–30 s up to 1 min (Healthwise towel), 30–60 s (US lying-towel guides), 1–6 min (Healthwise doorway). Bandy found 30 s = 60 s. We chose 30 s × 2 per leg for beginners; longer doorway holds only for intermediate/advanced flexibility goals.",
+    "Which version first: standing toe-touch versions are common in Indian school PE, but they invite back rounding and are flagged for osteoporosis and back pain. We teach the supine strap version first (back supported, Mayo/Healthwise/NHS), with standing and seated versions as alternatives.",
+    "Bottom leg bent or straight (supine): NHS and Healthwise start with the bottom knee bent; yoga sources keep it straight and pressing down. Beginners bend; straight is a progression.",
+    "Ankle pulled up or relaxed: pulling the toes toward the shin increases the calf and nerve stretch; nerve-tension sources advise against it for sensitive people. We default to a relaxed, neutral ankle.",
+    "Stretching before exercise: long holds (≥ 60 s) can briefly reduce strength and power; short holds within a full warm-up have trivial effects. We keep pre-workout holds ≤ 30 s and put longer holds after training.",
+    "Hamstring stretching for back pain: a 2024 review supports range-of-motion gains in radiating back pain; effect on pain is less certain. Framed as \"may help\", with physio check first."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 43.5,
+      "70kg": 37.3,
+      "80kg": 32.6
+    },
+    "per300kcal": {
+      "60kg": 130.4,
+      "70kg": 111.8,
+      "80kg": 97.8
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "mobility",
+    "yoga",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "small_flat",
+    "quiet",
+    "office_desk",
+    "2_5_min",
+    "cool_down",
+    "desk_break",
+    "evening"
+  ],
+  "swapsByAccess": {
+    "none": "Seated chair stretch or hands-behind-thigh supine stretch",
+    "home_equipment": "Resistance band as the strap; doorway stretch",
+    "basic_gym": "Heel on a low aerobic step; mat strap stretch in the stretching area",
+    "full_gym": "Strap or band stretch in the stretching zone; stretching machine if available"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "ok",
+      "change": "Keep breathing, no breath-holding, rise slowly from the floor",
+      "source": "University of Saskatchewan stretching vs walking trial; Cambridge University Hospitals NHS cardiac rehab yoga guide"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "No change; flexibility 2-3x/week, 10-30 s holds",
+      "source": "ADA 2016 position statement (via Frontiers 2017)"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ok",
+      "change": "Gentle holds, no breath-holding, rise slowly; ask doctor if unstable",
+      "source": "Cambridge University Hospitals NHS cardiac rehab yoga guide"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "No change (source not found)",
+      "source": "Not found"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Seated or doorway versions; longer strap or towel (est.)",
+      "source": "Not found (pose-specific)"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "No change",
+      "source": "Not found (hamstring-specific); Nidhi et al. SVYASA RCT (whole yoga programme)"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "No pose-specific caution found",
+      "source": "Not found"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Breathe slowly; inhaler nearby",
+      "source": "Cochrane review Yang et al. 2016"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Lying towel stretch about 20 s x 2-3, soft knee, never into pain",
+      "source": "KNEEhabilitation protocol NCT02634814; Singapore General Hospital physiotherapy (HealthXchange)"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Supine version with bottom knee bent; no rounded toe-touches; physio check first; stop if pain increases",
+      "source": "South Tees Hospitals NHS; 2024 systematic review PMC11289822"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "modify",
+      "change": "Doorway version or long strap so arms stay low",
+      "source": "Healthwise doorway stretch; pose-specific Not found"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "modify",
+      "change": "Avoid rounded forward bends and toe touches; supine strap with neutral spine",
+      "source": "New York State Dept of Health; New Jersey DoAS osteoporosis exercise guidance"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "modify",
+      "change": "After ~12 weeks no lying flat: seated or standing versions; stay within pre-pregnancy range",
+      "source": "ACOG guidance (secondary summaries); Peloton OB/GYN article"
+    },
+    {
+      "condition": "postpartum",
+      "status": "ask_doctor",
+      "change": "Gentle stretching when ready; pelvic-health physio check after C-section or diastasis recti",
+      "source": "ACOG via Lancaster General Health; pose-specific Not found"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "avoid",
+      "change": "Wait for clearance; after hip replacement keep within 90 deg hip flexion",
+      "source": "Kaiser Permanente posterior hip precautions; Northwestern Medicine"
+    },
+    {
+      "condition": "other",
+      "status": "modify",
+      "change": "Sciatica or nerve-type leg pain: ankle relaxed, head neutral, stop with tingling",
+      "source": "The Prehab Guys, proper hamstring stretching"
+    },
+    {
+      "condition": "other",
+      "status": "avoid",
+      "change": "Recent hamstring strain: no stretching first 2-4 days; start when walking is pain-free",
+      "source": "Northern Care Alliance NHS; nidirect"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "home",
+      "gym",
+      "office_desk"
+    ],
+    "bodyRegion": [
+      "lower"
+    ],
+    "goalTags": [
+      "flexibility",
+      "general_fitness",
+      "relaxation"
+    ],
+    "intensity": "light",
+    "noise": "quiet",
+    "space": "mat_only",
+    "typicalMinutes": 3,
+    "kcalPer10min70kg": 27,
+    "difficulty1to5": 1,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Yoga & stretch",
+    "Home",
+    "Gym",
+    "Office desk",
+    "No equipment",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Mobility",
+    "Hold timer",
+    "Under 10 min"
+  ],
+  "needsReview": [
+    "condition caution \"other\" has conflicting statuses across versions: modify, avoid",
+    "last_researched 2026-10-16 differs from file date 2026-10-22",
+    "rep_counter phase \"hold_supine\" (body_position): angle \"shoulder and hip within 10 cm height (lying); shoulders not lifted\" is not a parseable angle"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-22",
+      "file": "FitPlate_Fitness_2026-10-22.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": [
+    "2026-10-22: last_researched 2026-10-16 differs from file date 2026-10-22"
+  ]
+}

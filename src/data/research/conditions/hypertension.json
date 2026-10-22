@@ -1,0 +1,666 @@
+{
+  "id": "hypertension",
+  "type": "condition",
+  "name": "High blood pressure (hypertension)",
+  "surveyQuestion": "Do you have any of these health conditions? (select all that apply) -> High blood pressure (hypertension). Check question: Has a doctor or nurse ever told you that your BP is high or borderline? Yes, high / Yes, borderline (lifestyle-only mode) / No / Not sure (suggest a BP check). Follow-ups: Do you take any medicine for BP? No / Yes / Not sure; if Yes: water pill (diuretic) / a medicine ending in -pril or -sartan / spironolactone, eplerenone or amiloride / other / I don't know; Has a doctor told you that you have kidney disease? Yes / No / Not sure; Are you pregnant or planning a pregnancy?; optional home BP log and lab values (eGFR, potassium, lipids, HbA1c)",
+  "targets": [
+    {
+      "nutrient": "energy",
+      "unit": "kcal/day",
+      "generalAdult": 2110,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "limit",
+      "source": "ICMR-NIN 2020 (2110 sedentary man, 1660 sedentary woman) (secondary, unverified); modest deficit only if BMI 23 or more or waist 90/80 cm or more; about 1 mmHg lower systolic BP per kg lost (ACC/AHA 2017 via 2019 primary prevention table)"
+    },
+    {
+      "nutrient": "protein",
+      "unit": "g/kg/day",
+      "generalAdult": 0.83,
+      "profileValue": 0.83,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); no hypertension-specific change; about 54 g/day at 65 kg, about 11% of 2000 kcal (calc.)"
+    },
+    {
+      "nutrient": "total_fat",
+      "unit": "% energy",
+      "generalAdult": 30,
+      "profileValue": 30,
+      "min": null,
+      "max": 30,
+      "direction": "same",
+      "source": "DGI 2024 (30% or less); 67 g or less at 2000 kcal (calc.)"
+    },
+    {
+      "nutrient": "saturated_fat",
+      "unit": "% energy",
+      "generalAdult": 10,
+      "profileValue": 10,
+      "min": null,
+      "max": 10,
+      "direction": "limit",
+      "source": "WHO (under 10%); DASH trial reduced saturated fat; under 22 g at 2000 kcal (calc.); stricter P4 value if LDL is high"
+    },
+    {
+      "nutrient": "trans_fat",
+      "unit": "% energy",
+      "generalAdult": 1,
+      "profileValue": 1,
+      "min": null,
+      "max": 1,
+      "direction": "limit",
+      "source": "WHO under 1% (under 2.2 g at 2000 kcal, calc.); FSSAI 2% of fat cap in oils and fats"
+    },
+    {
+      "nutrient": "mufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "raise",
+      "source": "Not found as a number; replace ghee, butter and vanaspati with groundnut, mustard, rice bran or sesame oil"
+    },
+    {
+      "nutrient": "pufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "raise",
+      "source": "Not found as a number; rotate 2 or more oils"
+    },
+    {
+      "nutrient": "omega_3",
+      "unit": "g/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found as a number; fish about twice a week, flaxseed, walnuts; no supplement advice"
+    },
+    {
+      "nutrient": "dietary_cholesterol",
+      "unit": "mg/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found for hypertension; see P4"
+    },
+    {
+      "nutrient": "total_carbohydrate",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found as a hypertension-specific value; prefer whole grains, millets and pulses (DASH); DGI 2024 caps cereals and millets at 45% of energy"
+    },
+    {
+      "nutrient": "added_sugar",
+      "unit": "g/day",
+      "generalAdult": 25,
+      "profileValue": 25,
+      "min": null,
+      "max": 25,
+      "direction": "limit",
+      "source": "DGI 2024 (under 5% of energy, about 25 g); ESC 2024 restricts free sugar especially sugary drinks (max 10% of energy, via bpac summary)"
+    },
+    {
+      "nutrient": "fibre",
+      "unit": "g/day",
+      "generalAdult": 30,
+      "profileValue": 30,
+      "min": 30,
+      "max": null,
+      "direction": "raise",
+      "source": "ICMR-NIN 2020 (about 30 g/2000 kcal) (secondary, unverified); DASH high-fibre pattern"
+    },
+    {
+      "nutrient": "sodium",
+      "unit": "mg/day",
+      "generalAdult": 2000,
+      "profileValue": 2000,
+      "min": null,
+      "max": 2000,
+      "direction": "limit",
+      "source": "ICMR STW Hypertension in adults (salt under 5 g) (secondary, unverified); DGI 2024; WHO 2012; ESC 2024 (under 2 g); KDIGO 2021; optional 1500 mg stretch goal only with doctor agreement (ACC/AHA 2017 and 2025)"
+    },
+    {
+      "nutrient": "salt",
+      "unit": "g/day",
+      "generalAdult": 5,
+      "profileValue": 5,
+      "min": null,
+      "max": 5,
+      "direction": "limit",
+      "source": "ICMR STW; DGI 2024 (5 g maximum); WHO 2012; ESC 2024; Indian mean intake 8.0 g/day (NNMS, Sci Rep 2023)"
+    },
+    {
+      "nutrient": "potassium",
+      "unit": "mg/day",
+      "generalAdult": 3510,
+      "profileValue": 3510,
+      "min": 3510,
+      "max": null,
+      "direction": "raise",
+      "source": "WHO 2012 (at least 3510 mg); ICMR-NIN 2020 3500 mg (secondary, unverified); ACC/AHA 2017 3500-5000 mg from food; ONLY if no kidney disease, not pregnant, and no potassium-raising medicine (ACE inhibitor, ARB, potassium-sparing diuretic); otherwise doctor sets it; food only, no supplements"
+    },
+    {
+      "nutrient": "calcium",
+      "unit": "mg/day",
+      "generalAdult": 1000,
+      "profileValue": 1000,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); DASH includes low-fat dairy; food first"
+    },
+    {
+      "nutrient": "iron_men",
+      "unit": "mg/day",
+      "generalAdult": 19,
+      "profileValue": 19,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "iron_women",
+      "unit": "mg/day",
+      "generalAdult": 29,
+      "profileValue": 29,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "magnesium_men",
+      "unit": "mg/day",
+      "generalAdult": 440,
+      "profileValue": 440,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 via FSSAI (secondary, unverified); food first, no supplement advice"
+    },
+    {
+      "nutrient": "magnesium_women",
+      "unit": "mg/day",
+      "generalAdult": 370,
+      "profileValue": 370,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 via FSSAI (secondary, unverified)"
+    },
+    {
+      "nutrient": "vitamin_d",
+      "unit": "µg/day",
+      "generalAdult": 15,
+      "profileValue": 15,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "vitamin_b12",
+      "unit": "µg/day",
+      "generalAdult": 2.2,
+      "profileValue": 2.2,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 as adopted by FSSAI (secondary, unverified)"
+    },
+    {
+      "nutrient": "folate_men",
+      "unit": "µg DFE/day",
+      "generalAdult": 300,
+      "profileValue": 300,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "folate_women",
+      "unit": "µg DFE/day",
+      "generalAdult": 220,
+      "profileValue": 220,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "alcohol",
+      "unit": "standard drinks/day",
+      "generalAdult": null,
+      "profileValue": 0,
+      "min": null,
+      "max": 2,
+      "direction": "limit",
+      "source": "Best none: ICMR STW (avoid), ACC/AHA 2025 (eliminate or substantially limit), ESC 2024 (reduce); absolute ceiling if drinking: 2 men, 1 women (ACC/AHA 2017)"
+    },
+    {
+      "nutrient": "caffeine",
+      "unit": "mg/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found as a guideline number; acute rise 8.2/5.6 mmHg up to 3 h (Mesas 2011 meta-analysis), habitual coffee about 2.0/0.7 mmHg (Noordzij 2005); moderate tea/coffee fine; avoid before home BP reading and high-caffeine pre-workouts"
+    },
+    {
+      "nutrient": "physical_activity",
+      "unit": "min/week",
+      "generalAdult": 150,
+      "profileValue": 150,
+      "min": 150,
+      "max": null,
+      "direction": "raise",
+      "source": "ESC 2024 (150 min/week moderate aerobic, Class I A); ISH 2020 (30 min on 5 or more days)"
+    },
+    {
+      "nutrient": "water",
+      "unit": "mL/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No change from FitPlate general water target; never pushed higher; diuretic, heart, kidney, liver or pregnancy: follow your doctor's advice"
+    }
+  ],
+  "bloodMarkers": [
+    {
+      "marker": "Office blood pressure",
+      "target": "Optimal under 120/80; high normal 130-139/85-89; hypertension range 140/90 or more (ACC/AHA uses 130/80); app never diagnoses",
+      "unit": "mmHg",
+      "source": "IGH-IV 2019 (secondary, unverified); ICMR STW (secondary, unverified); ESH 2023; ACC/AHA 2017/2025"
+    },
+    {
+      "marker": "Home blood pressure (average)",
+      "target": "135/85 or more suggests high BP",
+      "unit": "mmHg",
+      "source": "IGH-IV via 2023 Indian review; ISH 2020; ESC 2024"
+    },
+    {
+      "marker": "Treatment target (doctor sets)",
+      "target": "Under 140/90 general; under 130/80 with diabetes, CKD or established CVD; age 80+ systolic under 150 (ICMR STW); ESC 2024 systolic 120-129 if tolerated; KDIGO 2021 systolic under 120 in CKD",
+      "unit": "mmHg",
+      "source": "ICMR STW (secondary, unverified); ESC 2024; ESH 2023; ISH 2020; ACC/AHA 2025; KDIGO 2021"
+    },
+    {
+      "marker": "Hypertensive crisis",
+      "target": "180/120 or more: recheck; with symptoms seek emergency care; without symptoms contact doctor promptly",
+      "unit": "mmHg",
+      "source": "AHA"
+    },
+    {
+      "marker": "Blood pressure in pregnancy (after 20 weeks)",
+      "target": "140/90 or more on 2 readings 4 h apart = hypertension in pregnancy; 160/110 or more = severe range, urgent care",
+      "unit": "mmHg",
+      "source": "ACOG via AAFP summary; FOGSI-ICOG HDP 2026 (thresholds not confirmed in FOGSI text)"
+    },
+    {
+      "marker": "LDL cholesterol",
+      "target": "Depends on total risk (hypertension is a major risk factor under LAI 2023); see P4; under 70 if metabolic syndrome or fatty liver (LAI, news summary)",
+      "unit": "mg/dL",
+      "source": "Lipid Association of India 2023 update (via summaries)"
+    },
+    {
+      "marker": "Fasting glucose / HbA1c",
+      "target": "Fasting 100-125 or HbA1c 5.7-6.4 = prediabetes range; 126 / 6.5 or more = diabetes range, doctor to confirm",
+      "unit": "mg/dL; %",
+      "source": "ADA; RSSDI (as in P2)"
+    },
+    {
+      "marker": "eGFR",
+      "target": "Stored only; under 60 = usual CKD range: switch off potassium-raising advice and salt substitutes, suggest P13",
+      "unit": "mL/min/1.73 m2",
+      "source": "KDIGO"
+    },
+    {
+      "marker": "Serum potassium",
+      "target": "Stored only; above lab normal range: no potassium-raising advice, see doctor; mild hyperkalaemia 5.5-5.9, moderate 6.0-6.4, severe 6.5 or more",
+      "unit": "mmol/L",
+      "source": "NHS ThinkKidneys primary care guidance"
+    },
+    {
+      "marker": "Waist circumference",
+      "target": "Raised at 90 or more (men), 80 or more (women)",
+      "unit": "cm",
+      "source": "Indian consensus 2009 (as in P2)"
+    }
+  ],
+  "waterMl": {
+    "min": null,
+    "max": null,
+    "notes": "No change from FitPlate general water target; hypertension alone does not change water needs. Drink more in heat, exercise or fever per general rules. Anyone on a diuretic (water pill), or with heart, kidney or liver disease, or pregnancy: app shows only the general range and never pushes a higher target. Follow your doctor's advice."
+  },
+  "sodiumMgMax": 2000,
+  "dietaryCholesterolMgMax": null,
+  "foodsFavour": [
+    "whole pulses, dals and sprouts (moong, matki, masoor, chana, rajma, urad) cooked with less salt",
+    "leafy greens such as methi and palak",
+    "mushrooms, bhindi, brinjal, tomato, lauki and beans",
+    "whole fruit such as banana, guava, orange, papaya and pomegranate",
+    "ragi, jowar, bajra, oats and whole-wheat atta",
+    "plain curd and unsalted buttermilk",
+    "fish, eggs and skinless chicken with home masala",
+    "unsalted nuts and seeds",
+    "lemon, amchur, kokum, tamarind, ginger, garlic, herbs, pepper and roasted jeera for flavour instead of salt"
+  ],
+  "foodsLimit": [
+    "pickles (1600-5433 mg sodium per 100 g)",
+    "papad (mean 1219 mg sodium per 100 g)",
+    "namkeen, farsan, sev, chips and salted nuts",
+    "instant noodles, soup packets and stock cubes",
+    "soy, chilli, Schezwan and tomato sauces, ketchup and mayonnaise",
+    "processed meats, salted dried fish, cheese and salted butter",
+    "pav, bread and bakery biscuits",
+    "chaat masala, black salt and rock salt sprinkled on top",
+    "restaurant and street food",
+    "alcohol",
+    "sugary drinks and mithai"
+  ],
+  "goodFitDishes": [
+    {
+      "dishNumber": 31,
+      "dishName": "Indian-style Overnight Oats"
+    },
+    {
+      "dishNumber": 21,
+      "dishName": "Masala Omelette"
+    },
+    {
+      "dishNumber": 51,
+      "dishName": "Uttapam"
+    },
+    {
+      "dishNumber": 56,
+      "dishName": "Pesarattu"
+    },
+    {
+      "dishNumber": 16,
+      "dishName": "Besan Chilla"
+    },
+    {
+      "dishNumber": 26,
+      "dishName": "Moong Dal Chilla"
+    },
+    {
+      "dishNumber": 46,
+      "dishName": "Methi Thepla"
+    },
+    {
+      "dishNumber": 52,
+      "dishName": "Moong Dal Khichdi"
+    },
+    {
+      "dishNumber": 44,
+      "dishName": "Baingan Bharta"
+    },
+    {
+      "dishNumber": 49,
+      "dishName": "Mushroom Masala"
+    },
+    {
+      "dishNumber": 60,
+      "dishName": "Aloo Matar"
+    },
+    {
+      "dishNumber": 37,
+      "dishName": "Bhindi Masala"
+    },
+    {
+      "dishNumber": 5,
+      "dishName": "Dal Tadka"
+    },
+    {
+      "dishNumber": 80,
+      "dishName": "Masoor Dal"
+    },
+    {
+      "dishNumber": 66,
+      "dishName": "Sprouts Chaat"
+    },
+    {
+      "dishNumber": 71,
+      "dishName": "Ragi Dosa"
+    },
+    {
+      "dishNumber": 67,
+      "dishName": "Mix Veg Curry"
+    },
+    {
+      "dishNumber": 88,
+      "dishName": "Avial"
+    },
+    {
+      "dishNumber": 33,
+      "dishName": "Goan Fish Curry"
+    }
+  ],
+  "cautionDishes": [
+    {
+      "dishNumber": 20,
+      "dishName": "Vada Pav",
+      "reason": "About 1450 mg sodium per serving, about 73% of the daily limit (est.)"
+    },
+    {
+      "dishNumber": 13,
+      "dishName": "Pav Bhaji",
+      "reason": "About 1250 mg sodium from salt, pav and salted butter (est.)"
+    },
+    {
+      "dishNumber": 4,
+      "dishName": "Masala Dosa",
+      "reason": "About 1200 mg sodium from 3 g salt (est.)"
+    },
+    {
+      "dishNumber": 12,
+      "dishName": "Rajma Chawal",
+      "reason": "About 1180 mg sodium from 3 g salt; halve the salt (est.)"
+    },
+    {
+      "dishNumber": 55,
+      "dishName": "Prawn Masala",
+      "reason": "About 1160 mg sodium (est.)"
+    },
+    {
+      "dishNumber": 45,
+      "dishName": "Tandoori Chicken",
+      "reason": "About 1150 mg sodium from the marinade (est.)"
+    },
+    {
+      "dishNumber": 50,
+      "dishName": "Chicken Korma",
+      "reason": "About 1130 mg sodium plus cream and nuts (est.)"
+    },
+    {
+      "dishNumber": 9,
+      "dishName": "Idli with Sambar",
+      "reason": "About 1050 mg sodium from 2.7 g salt; cut salt in sambar and chutney (est.)"
+    },
+    {
+      "dishNumber": 43,
+      "dishName": "Chicken Fried Rice",
+      "reason": "About 1050 mg sodium, mostly soy sauce (est.)"
+    },
+    {
+      "dishNumber": 34,
+      "dishName": "Chilli Paneer",
+      "reason": "About 1000-1100 mg sodium from soy, chilli sauce and ketchup (est.)"
+    },
+    {
+      "dishNumber": 15,
+      "dishName": "Veg Hakka Noodles",
+      "reason": "About 1000 mg sodium, mostly soy sauce (est.)"
+    },
+    {
+      "dishNumber": 59,
+      "dishName": "Chicken Kathi Roll",
+      "reason": "About 1000 mg sodium (est.)"
+    },
+    {
+      "dishNumber": 8,
+      "dishName": "Chole (Chana Masala)",
+      "reason": "About 1000 mg sodium from 2.5 g salt; more with salted chole masala or unrinsed canned chickpeas (est.)"
+    },
+    {
+      "dishNumber": 29,
+      "dishName": "Misal Pav",
+      "reason": "About 980 mg sodium plus farsan topping and pav (est.)"
+    },
+    {
+      "dishNumber": 27,
+      "dishName": "Dal Makhani",
+      "reason": "About 900 mg sodium plus butter and cream (est.)"
+    },
+    {
+      "dishNumber": 47,
+      "dishName": "Veg Manchurian",
+      "reason": "About 850 mg sodium from soy, chilli sauce and ketchup (est.)"
+    },
+    {
+      "dishNumber": 28,
+      "dishName": "Chicken 65",
+      "reason": "About 850 mg sodium, fried (est.)"
+    },
+    {
+      "dishNumber": 2,
+      "dishName": "Chicken Biryani",
+      "reason": "Recipe uses 4 g salt in marinade plus 6 g in rice water (only part absorbed; per-serving sodium Not found); often served with pickle (est.)"
+    },
+    {
+      "dishNumber": 79,
+      "dishName": "Gobi Manchurian",
+      "reason": "Soy and chilli sauces, batter-fried; not yet researched (est.)"
+    },
+    {
+      "dishNumber": 64,
+      "dishName": "Schezwan Noodles",
+      "reason": "Schezwan and soy sauces; not yet researched (est.)"
+    },
+    {
+      "dishNumber": 87,
+      "dishName": "Chilli Chicken",
+      "reason": "Soy and chilli sauces; not yet researched (est.)"
+    },
+    {
+      "dishNumber": 83,
+      "dishName": "Bhel Puri",
+      "reason": "Sev and farsan (about 675 mg sodium per 100 g) plus chutneys; not yet researched (est.)"
+    },
+    {
+      "dishNumber": 77,
+      "dishName": "Keema Pav",
+      "reason": "Salted keema plus pav and butter; not yet researched (est.)"
+    },
+    {
+      "dishNumber": 86,
+      "dishName": "Bombay Veg Sandwich",
+      "reason": "Bread, salted butter, chutney and chaat masala; not yet researched (est.)"
+    },
+    {
+      "dishNumber": 92,
+      "dishName": "Kothu Parotta",
+      "reason": "Parotta with salty gravy; not yet researched (est.)"
+    },
+    {
+      "dishNumber": 35,
+      "dishName": "Curd Rice",
+      "reason": "About 590 mg sodium alone but usually eaten with pickle (est.)"
+    }
+  ],
+  "conflictsWith": [
+    {
+      "profileId": "chronic-kidney-disease",
+      "rule": "P13 overrides potassium (no raise; doctor sets it; no potassium salt substitutes or coconut-water push), protein and fluid; sodium stays under 2000 mg (KDIGO 2021); BP target is the doctor's (KDIGO suggests systolic under 120); requires_doctor_input true"
+    },
+    {
+      "profileId": "heart-disease",
+      "rule": "P21 overrides fluid (possible fluid limit) and medicine-related potassium rules; sodium at least as strict as P3; never push higher water; requires_doctor_input true"
+    },
+    {
+      "profileId": "pregnancy",
+      "rule": "Pregnancy overrides: no weight-loss deficit, no potassium salt substitutes (outside WHO 2025 scope), no 1500 mg stretch goal; show pregnancy red flags (160/110 or more, severe headache, vision change, upper abdominal pain, sudden swelling); obstetric team manages BP; requires_doctor_input true"
+    },
+    {
+      "profileId": "type-2-diabetes",
+      "rule": "Compatible; ICMR STW BP target under 130/80 with diabetes shown as context only; P1 carbohydrate and sugar rules plus P3 sodium and potassium rules; all doctor-input rules apply"
+    },
+    {
+      "profileId": "prediabetes",
+      "rule": "Compatible; P2 carbohydrate, fibre and sugar rules plus P3 sodium and potassium rules"
+    },
+    {
+      "profileId": "high-ldl-cholesterol",
+      "rule": "Compatible; use P4's stricter saturated-fat limit; DASH-style pulses and low-fat dairy suit both"
+    },
+    {
+      "profileId": "muscle-gain",
+      "rule": "Protein may rise to P27 target only if kidney function is normal (P13 not selected; ask for eGFR); count sodium in protein powders, bars and high-protein snacks; flag high-caffeine pre-workouts as ask your doctor; sodium cap stays"
+    },
+    {
+      "profileId": "endurance-running",
+      "rule": "Daily sodium cap 2000 mg stays; sodium from sports drinks or electrolytes during long or hot sessions is a logged P29 exception only if the doctor agrees; no salt tablets without doctor; users on diuretics follow the doctor's fluid advice"
+    },
+    {
+      "profileId": "jain-diet",
+      "rule": "Food filter: no onion, garlic, potato or other roots; potassium from dals, whole moong, matki, leafy greens, bhindi, tomato, banana, raisins and nuts; rock salt counts fully as salt; fast days favour fruit, unsalted makhana, curd and nuts"
+    },
+    {
+      "profileId": "vegan-diet",
+      "rule": "Replace DASH low-fat dairy with calcium-set tofu, fortified soy milk or curd, ragi and sesame; check labels of vegan mock meats, cheeses and ready meals for sodium; same potassium safety gate"
+    },
+    {
+      "profileId": "fat-loss",
+      "rule": "Compatible; P25 sets deficit size and rate; P3 adds sodium, potassium and alcohol rules"
+    }
+  ],
+  "requiresDoctorInput": true,
+  "requiresDoctorInputStated": true,
+  "fluidNote": null,
+  "warnings": [
+    "General information, not medical advice. FitPlate does not diagnose high blood pressure; repeated readings reviewed by a doctor are needed.",
+    "The app never suggests starting, stopping, skipping or changing a BP medicine or dose, and food changes do not replace prescribed medicines.",
+    "Emergency: a reading of 180/120 mmHg or more with chest pain, breathlessness, back pain, numbness or weakness, vision changes, trouble speaking, severe headache or confusion. Seek emergency care now.",
+    "Pregnancy: BP 160/110 or more, severe headache, vision changes, upper abdominal pain, sudden swelling of face or hands, breathlessness or reduced baby movements need urgent care.",
+    "Potassium-enriched low-sodium salt substitutes and high-potassium advice are not for people with kidney disease, pregnant women, or anyone on ACE inhibitors, ARBs or potassium-sparing diuretics unless their doctor agrees.",
+    "Rock salt (sendha namak), black salt and Eno all contain sodium and count toward the daily salt limit.",
+    "Anyone on a diuretic (water pill), or with heart, kidney or liver disease, or pregnant: follow your doctor's advice on fluids and salt.",
+    "Guidelines differ: Indian, European and WHO guidelines use 140/90 (home 135/85) to diagnose hypertension; ACC/AHA uses 130/80. Your doctor sets your personal target.",
+    "requires_doctor_input is true because many users take BP medicines that change potassium and fluid safety; the app sets only general sodium, sugar, fat, alcohol and activity guidance on its own."
+  ],
+  "lastResearched": "2026-10-21",
+  "versions": [
+    {
+      "date": "2026-10-21",
+      "file": "FitPlate_Nutrients_2026-10-21.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3); max as safety limit",
+    "limits": "safety limit (lower on conflict)",
+    "lists": "union",
+    "requiresDoctorInput": "stated true in any version, else newest version (missing flag + limits → true)"
+  },
+  "mergeNotes": [],
+  "needsReview": []
+}

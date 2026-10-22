@@ -5,6 +5,7 @@ import item_alkanet_root from './alkanet-root.json';
 import item_all_purpose_flour from './all-purpose-flour.json';
 import item_almonds_whole from './almonds-whole.json';
 import item_asafoetida from './asafoetida.json';
+import item_baby_potatoes from './baby-potatoes.json';
 import item_baking_soda from './baking-soda.json';
 import item_basmati_rice_everyday_grade from './basmati-rice-everyday-grade.json';
 import item_bay_leaf from './bay-leaf.json';
@@ -13,6 +14,7 @@ import item_bisi_bele_bath_powder_packaged from './bisi-bele-bath-powder-package
 import item_black_cardamom from './black-cardamom.json';
 import item_black_pepper_powder from './black-pepper-powder.json';
 import item_black_peppercorns_whole from './black-peppercorns-whole.json';
+import item_black_salt_powdered_packaged from './black-salt-powdered-packaged.json';
 import item_black_tea from './black-tea.json';
 import item_brinjal_large_bharta_variety from './brinjal-large-bharta-variety.json';
 import item_butter_salted from './butter-salted.json';
@@ -32,12 +34,14 @@ import item_chickpeas_dried from './chickpeas-dried.json';
 import item_chole_masala from './chole-masala.json';
 import item_cinnamon_cassia from './cinnamon-cassia.json';
 import item_cloves from './cloves.json';
+import item_coconut_milk_thick_packaged from './coconut-milk-thick-packaged.json';
 import item_coconut_oil from './coconut-oil.json';
 import item_cooking_oil_refined_sunflower_groundnut from './cooking-oil-refined-sunflower-groundnut.json';
 import item_coriander_leaves from './coriander-leaves.json';
 import item_coriander_powder from './coriander-powder.json';
 import item_coriander_seeds_whole from './coriander-seeds-whole.json';
 import item_cornflour_corn_starch from './cornflour-corn-starch.json';
+import item_cucumber from './cucumber.json';
 import item_cumin_powder from './cumin-powder.json';
 import item_cumin_seeds from './cumin-seeds.json';
 import item_curd_plain from './curd-plain.json';
@@ -51,6 +55,7 @@ import item_dry_mango_powder from './dry-mango-powder.json';
 import item_eggs_white_standard from './eggs-white-standard.json';
 import item_farsan_mixed_namkeen from './farsan-mixed-namkeen.json';
 import item_fennel_powder from './fennel-powder.json';
+import item_fennel_seeds_whole from './fennel-seeds-whole.json';
 import item_fenugreek_seeds from './fenugreek-seeds.json';
 import item_flattened_rice_thick from './flattened-rice-thick.json';
 import item_french_beans from './french-beans.json';
@@ -68,13 +73,17 @@ import item_green_capsicum from './green-capsicum.json';
 import item_green_cardamom from './green-cardamom.json';
 import item_green_chilli from './green-chilli.json';
 import item_green_chilli_sauce from './green-chilli-sauce.json';
+import item_green_chutney_ready_made from './green-chutney-ready-made.json';
 import item_green_peas_frozen from './green-peas-frozen.json';
 import item_hakka_noodles_dry from './hakka-noodles-dry.json';
 import item_honey from './honey.json';
 import item_idli_dosa_batter_ready_made_packaged from './idli-dosa-batter-ready-made-packaged.json';
 import item_idli_rice_parboiled_rice from './idli-rice-parboiled-rice.json';
+import item_instant_yeast_dry from './instant-yeast-dry.json';
 import item_jaggery_block_powder from './jaggery-block-powder.json';
+import item_kalpasi_stone_flower_dried_lichen from './kalpasi-stone-flower-dried-lichen.json';
 import item_kashmiri_red_chilli_powder from './kashmiri-red-chilli-powder.json';
+import item_kewra_water from './kewra-water.json';
 import item_kokum_dried_rind from './kokum-dried-rind.json';
 import item_lemon from './lemon.json';
 import item_light_soy_sauce from './light-soy-sauce.json';
@@ -83,6 +92,7 @@ import item_marathi_moggu from './marathi-moggu.json';
 import item_milk_toned from './milk-toned.json';
 import item_mint_leaves from './mint-leaves.json';
 import item_moong_dal_split_yellow_skinless from './moong-dal-split-yellow-skinless.json';
+import item_moong_sprouts_fresh_packaged from './moong-sprouts-fresh-packaged.json';
 import item_moth_beans_dry from './moth-beans-dry.json';
 import item_mustard_oil_kachi_ghani from './mustard-oil-kachi-ghani.json';
 import item_mustard_seeds from './mustard-seeds.json';
@@ -94,10 +104,12 @@ import item_pav from './pav.json';
 import item_pav_bhaji_masala from './pav-bhaji-masala.json';
 import item_peanuts_raw from './peanuts-raw.json';
 import item_pistachios_unsalted_shelled_kernels from './pistachios-unsalted-shelled-kernels.json';
+import item_pomegranate from './pomegranate.json';
 import item_poppy_seeds from './poppy-seeds.json';
 import item_potato from './potato.json';
 import item_prawns_medium_raw_peeled_and_deveined from './prawns-medium-raw-peeled-and-deveined.json';
 import item_pumpkin_red_yellow from './pumpkin-red-yellow.json';
+import item_ragi_flour_packaged from './ragi-flour-packaged.json';
 import item_raisins_green_golden from './raisins-green-golden.json';
 import item_red_chilli_powder from './red-chilli-powder.json';
 import item_red_chilli_sauce from './red-chilli-sauce.json';
@@ -105,10 +117,12 @@ import item_red_kidney_beans_dried from './red-kidney-beans-dried.json';
 import item_rice_flour from './rice-flour.json';
 import item_rock_salt from './rock-salt.json';
 import item_rolled_oats_plain from './rolled-oats-plain.json';
+import item_rose_water from './rose-water.json';
 import item_saffron from './saffron.json';
 import item_sago_tapioca_pearls_medium from './sago-tapioca-pearls-medium.json';
 import item_salt from './salt.json';
 import item_sambar_powder from './sambar-powder.json';
+import item_schezwan_chutney_ready_made from './schezwan-chutney-ready-made.json';
 import item_seer_fish_kingfish_steaks from './seer-fish-kingfish-steaks.json';
 import item_semolina_fine_bombay_rava from './semolina-fine-bombay-rava.json';
 import item_sesame_oil_gingelly_til_oil_everyday_grade from './sesame-oil-gingelly-til-oil-everyday-grade.json';
@@ -118,8 +132,11 @@ import item_shallots from './shallots.json';
 import item_sona_masoori_rice_raw from './sona-masoori-rice-raw.json';
 import item_spinach from './spinach.json';
 import item_spring_onion from './spring-onion.json';
+import item_star_anise from './star-anise.json';
 import item_sugar from './sugar.json';
+import item_tamarind_date_chutney_ready_made from './tamarind-date-chutney-ready-made.json';
 import item_tamarind_seedless_block from './tamarind-seedless-block.json';
+import item_thin_sev_plain from './thin-sev-plain.json';
 import item_tomato from './tomato.json';
 import item_tomato_ketchup from './tomato-ketchup.json';
 import item_toor_dal from './toor-dal.json';
@@ -135,6 +152,7 @@ export const items: Ingredient[] = [
   item_all_purpose_flour as unknown as Ingredient,
   item_almonds_whole as unknown as Ingredient,
   item_asafoetida as unknown as Ingredient,
+  item_baby_potatoes as unknown as Ingredient,
   item_baking_soda as unknown as Ingredient,
   item_basmati_rice_everyday_grade as unknown as Ingredient,
   item_bay_leaf as unknown as Ingredient,
@@ -143,6 +161,7 @@ export const items: Ingredient[] = [
   item_black_cardamom as unknown as Ingredient,
   item_black_pepper_powder as unknown as Ingredient,
   item_black_peppercorns_whole as unknown as Ingredient,
+  item_black_salt_powdered_packaged as unknown as Ingredient,
   item_black_tea as unknown as Ingredient,
   item_brinjal_large_bharta_variety as unknown as Ingredient,
   item_butter_salted as unknown as Ingredient,
@@ -162,12 +181,14 @@ export const items: Ingredient[] = [
   item_chole_masala as unknown as Ingredient,
   item_cinnamon_cassia as unknown as Ingredient,
   item_cloves as unknown as Ingredient,
+  item_coconut_milk_thick_packaged as unknown as Ingredient,
   item_coconut_oil as unknown as Ingredient,
   item_cooking_oil_refined_sunflower_groundnut as unknown as Ingredient,
   item_coriander_leaves as unknown as Ingredient,
   item_coriander_powder as unknown as Ingredient,
   item_coriander_seeds_whole as unknown as Ingredient,
   item_cornflour_corn_starch as unknown as Ingredient,
+  item_cucumber as unknown as Ingredient,
   item_cumin_powder as unknown as Ingredient,
   item_cumin_seeds as unknown as Ingredient,
   item_curd_plain as unknown as Ingredient,
@@ -181,6 +202,7 @@ export const items: Ingredient[] = [
   item_eggs_white_standard as unknown as Ingredient,
   item_farsan_mixed_namkeen as unknown as Ingredient,
   item_fennel_powder as unknown as Ingredient,
+  item_fennel_seeds_whole as unknown as Ingredient,
   item_fenugreek_seeds as unknown as Ingredient,
   item_flattened_rice_thick as unknown as Ingredient,
   item_french_beans as unknown as Ingredient,
@@ -198,13 +220,17 @@ export const items: Ingredient[] = [
   item_green_cardamom as unknown as Ingredient,
   item_green_chilli as unknown as Ingredient,
   item_green_chilli_sauce as unknown as Ingredient,
+  item_green_chutney_ready_made as unknown as Ingredient,
   item_green_peas_frozen as unknown as Ingredient,
   item_hakka_noodles_dry as unknown as Ingredient,
   item_honey as unknown as Ingredient,
   item_idli_dosa_batter_ready_made_packaged as unknown as Ingredient,
   item_idli_rice_parboiled_rice as unknown as Ingredient,
+  item_instant_yeast_dry as unknown as Ingredient,
   item_jaggery_block_powder as unknown as Ingredient,
+  item_kalpasi_stone_flower_dried_lichen as unknown as Ingredient,
   item_kashmiri_red_chilli_powder as unknown as Ingredient,
+  item_kewra_water as unknown as Ingredient,
   item_kokum_dried_rind as unknown as Ingredient,
   item_lemon as unknown as Ingredient,
   item_light_soy_sauce as unknown as Ingredient,
@@ -213,6 +239,7 @@ export const items: Ingredient[] = [
   item_milk_toned as unknown as Ingredient,
   item_mint_leaves as unknown as Ingredient,
   item_moong_dal_split_yellow_skinless as unknown as Ingredient,
+  item_moong_sprouts_fresh_packaged as unknown as Ingredient,
   item_moth_beans_dry as unknown as Ingredient,
   item_mustard_oil_kachi_ghani as unknown as Ingredient,
   item_mustard_seeds as unknown as Ingredient,
@@ -224,10 +251,12 @@ export const items: Ingredient[] = [
   item_pav_bhaji_masala as unknown as Ingredient,
   item_peanuts_raw as unknown as Ingredient,
   item_pistachios_unsalted_shelled_kernels as unknown as Ingredient,
+  item_pomegranate as unknown as Ingredient,
   item_poppy_seeds as unknown as Ingredient,
   item_potato as unknown as Ingredient,
   item_prawns_medium_raw_peeled_and_deveined as unknown as Ingredient,
   item_pumpkin_red_yellow as unknown as Ingredient,
+  item_ragi_flour_packaged as unknown as Ingredient,
   item_raisins_green_golden as unknown as Ingredient,
   item_red_chilli_powder as unknown as Ingredient,
   item_red_chilli_sauce as unknown as Ingredient,
@@ -235,10 +264,12 @@ export const items: Ingredient[] = [
   item_rice_flour as unknown as Ingredient,
   item_rock_salt as unknown as Ingredient,
   item_rolled_oats_plain as unknown as Ingredient,
+  item_rose_water as unknown as Ingredient,
   item_saffron as unknown as Ingredient,
   item_sago_tapioca_pearls_medium as unknown as Ingredient,
   item_salt as unknown as Ingredient,
   item_sambar_powder as unknown as Ingredient,
+  item_schezwan_chutney_ready_made as unknown as Ingredient,
   item_seer_fish_kingfish_steaks as unknown as Ingredient,
   item_semolina_fine_bombay_rava as unknown as Ingredient,
   item_sesame_oil_gingelly_til_oil_everyday_grade as unknown as Ingredient,
@@ -248,8 +279,11 @@ export const items: Ingredient[] = [
   item_sona_masoori_rice_raw as unknown as Ingredient,
   item_spinach as unknown as Ingredient,
   item_spring_onion as unknown as Ingredient,
+  item_star_anise as unknown as Ingredient,
   item_sugar as unknown as Ingredient,
+  item_tamarind_date_chutney_ready_made as unknown as Ingredient,
   item_tamarind_seedless_block as unknown as Ingredient,
+  item_thin_sev_plain as unknown as Ingredient,
   item_tomato as unknown as Ingredient,
   item_tomato_ketchup as unknown as Ingredient,
   item_toor_dal as unknown as Ingredient,

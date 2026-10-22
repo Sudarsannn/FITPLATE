@@ -68,7 +68,14 @@ function mergeMacros(versions: { date: string; macros: Macros | null }[], label:
 // ---------------------------------------------------------------- ingredients
 
 /** Lookup from any spelling (English name, alias) to a canonical ingredient id. */
-export type IngredientIndex = { byKey: Map<string, string>; ids: string[] };
+export type IngredientIndex = {
+  byKey: Map<string, string>;
+  ids: string[];
+  /** Day 8: the part of each name before its first comma ("Tamarind, seedless block" → tamarind); '' when two items share it. */
+  heads?: Map<string, string>;
+  /** Day 8: every item that claims an alias, kept even when the alias is shared. */
+  claims?: Map<string, Set<string>>;
+};
 
 export function buildIngredientIndex(items: { id: string; name: string; aliases: string[] }[]): IngredientIndex {
   const byKey = new Map<string, string>();
@@ -82,7 +89,17 @@ export function buildIngredientIndex(items: { id: string; name: string; aliases:
       else if (!byKey.has(key)) byKey.set(key, item.id);
     }
   }
-  return { byKey, ids: items.map((i) => i.id) };
+  const heads = new Map<string, string>();
+  const claims = new Map<string, Set<string>>();
+  for (const item of items) {
+    const head = slugify(item.name.split(',')[0]);
+    heads.set(head, heads.has(head) && heads.get(head) !== item.id ? '' : item.id);
+    for (const alias of item.aliases) {
+      const key = slugify(alias);
+      claims.set(key, (claims.get(key) ?? new Set<string>()).add(item.id));
+    }
+  }
+  return { byKey, ids: items.map((i) => i.id), heads, claims };
 }
 
 /**
@@ -90,7 +107,19 @@ export function buildIngredientIndex(items: { id: string; name: string; aliases:
  * English name, then a bracketed alias, then a whole-word prefix ("lemon
  * juice" → lemon). Unmatched lines stay null; Day 5 adds the full alias map.
  */
+export const NEUTRAL_OIL_ID = 'cooking-oil-refined-sunflower-groundnut';
+const NEUTRAL_OIL_LINE = /\boil\b/i;
+const OTHER_FAT = /\b(mustard|sesame|gingelly|til|coconut|olive|ghee|butter|chilli|chili)\b/i;
+
 export function linkIngredient(name: string, index: IngredientIndex): string | null {
+  // Day 8: the whole line, brackets included, can be an ingredient's exact id
+  // ("Chicken (curry cut, bone-in, skinless)"); that is a match, not a guess.
+  const whole = slugify(name);
+  if (index.ids.includes(whole)) return whole;
+  // Day 8: "Groundnut oil (or any neutral cooking oil)", "Vegetable oil" and
+  // the like are what the ingredient research prices as one item, refined
+  // sunflower / groundnut oil. Lines naming a different fat keep their own link.
+  if (NEUTRAL_OIL_LINE.test(name) && !OTHER_FAT.test(name) && index.ids.includes(NEUTRAL_OIL_ID)) return NEUTRAL_OIL_ID;
   const { english, aliases } = splitName(name);
   const key = slugify(english);
   const direct = index.byKey.get(key);
@@ -99,6 +128,10 @@ export function linkIngredient(name: string, index: IngredientIndex): string | n
     const hit = index.byKey.get(slugify(alias));
     if (hit) return hit;
   }
+  // "Tamarind (imli)": "imli" is shared, but only "Tamarind, seedless block"
+  // is plain "Tamarind" before its comma AND claims "imli". Both must agree.
+  const head = index.heads?.get(key);
+  if (head && aliases.some((a) => index.claims?.get(slugify(a))?.has(head))) return head;
   const prefixes = index.ids.filter((id) => key.startsWith(id + '-')).sort((a, b) => b.length - a.length);
   if (prefixes.length > 0) return prefixes[0];
   const longer = index.ids.filter((id) => id.startsWith(key + '-'));

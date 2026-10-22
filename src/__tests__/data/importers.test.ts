@@ -1,7 +1,7 @@
 import { describe, expect, it } from '@jest/globals';
 
 import { allergensOf, checkClaims, dishAllergens, findClaims } from '../../services/data/allergens';
-import { buildDish, buildIngredient, buildIngredientIndex, linkIngredient, validateDish } from '../../services/data/buildItems';
+import { buildDish, buildIngredient, buildIngredientIndex, linkIngredient, NEUTRAL_OIL_ID, validateDish } from '../../services/data/buildItems';
 import { parseDishFile, parseNutrition } from '../../services/data/dishImporter';
 import { parseFasting, validateFasting } from '../../services/data/fasting';
 import { normaliseId, parseIngredientFile } from '../../services/data/ingredientImporter';
@@ -376,6 +376,27 @@ describe('building dishes', () => {
     expect(linkIngredient('Lemon (nimbu) juice', index)).toBe('lemon');
     expect(linkIngredient('Pyaz', index)).toBe('onion');
     expect(linkIngredient('Saffron', index)).toBeNull();
+  });
+
+  it('Day 8: links whole-name ids, neutral cooking oil and a unique name head, but not other fats', () => {
+    const small = buildIngredientIndex([
+      { id: 'chicken-curry-cut-bone-in-skinless', name: 'Chicken, curry cut, bone-in, skinless', aliases: [] },
+      { id: 'chicken-thigh-boneless', name: 'Chicken thigh, boneless', aliases: [] },
+      { id: NEUTRAL_OIL_ID, name: 'Cooking oil, refined sunflower / groundnut', aliases: ['tel'] },
+      { id: 'mustard-oil', name: 'Mustard oil', aliases: [] },
+      { id: 'tamarind-seedless-block', name: 'Tamarind, seedless block', aliases: ['imli'] },
+      { id: 'tamarind-date-chutney', name: 'Tamarind-date chutney, ready-made', aliases: ['imli'] },
+      { id: 'sugar', name: 'Sugar', aliases: [] },
+    ]);
+    expect(linkIngredient('Chicken (curry cut, bone-in, skinless)', small)).toBe('chicken-curry-cut-bone-in-skinless');
+    expect(linkIngredient('Groundnut oil (or any neutral cooking oil)', small)).toBe(NEUTRAL_OIL_ID);
+    expect(linkIngredient('Vegetable oil (for searing)', small)).toBe(NEUTRAL_OIL_ID);
+    expect(linkIngredient('Mustard oil (sarson ka tel), or any cooking oil', small)).toBe('mustard-oil');
+    expect(linkIngredient('Oil or ghee for roasting', small)).toBeNull();
+    expect(linkIngredient('Boiled potato', small)).toBeNull();
+    // "imli" is claimed by two items, but only one is plainly "Tamarind" before its comma.
+    expect(linkIngredient('Tamarind (imli)', small)).toBe('tamarind-seedless-block');
+    expect(linkIngredient('Chicken', small)).toBeNull();
   });
 
   it('produces a valid Dish with an order price estimate', () => {

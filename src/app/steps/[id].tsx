@@ -161,11 +161,6 @@ function Finished({ dish, servings }: { dish: Dish; servings: number }) {
             <Text style={k.body}>{dish.leftoverRemix}</Text>
           </Section>
         ) : null}
-        {dish.burnOff ? (
-          <Section title="If you want to burn it off (optional)">
-            <Text style={k.body}>{dish.burnOff}</Text>
-          </Section>
-        ) : null}
         <GradientButton title="Back to Today" onPress={() => router.replace('/(tabs)')} style={{ marginTop: 18 }} />
       </ScrollView>
     </SafeAreaView>

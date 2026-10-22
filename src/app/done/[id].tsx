@@ -7,7 +7,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { CountUp, DishArt, FadeIn, Glass, GradientButton, PressableScale } from '../../components/ui';
 import { costToMake, costToOrder, getDish } from '../../data/dishes';
 import { select } from '../../lib/haptics';
-import { EXERCISES, useStore } from '../../lib/store';
+import { useStore } from '../../lib/store';
 import { colors, type } from '../../theme';
 
 const { width: W, height: H } = Dimensions.get('window');
@@ -81,18 +81,6 @@ export default function DoneScreen() {
           </FadeIn>
 
           <FadeIn i={3}>
-            <Text style={styles.h}>Burn one plate off</Text>
-            <View style={{ flexDirection: 'row', gap: 10 }}>
-              {EXERCISES.filter((e) => ['Run', 'Walk', 'Cycle', 'Yoga'].includes(e.type)).map((e) => (
-                <View key={e.type} style={styles.burn}>
-                  <Text style={{ fontSize: 22 }}>{e.emoji}</Text>
-                  <Text style={{ color: colors.warm, fontWeight: '900', fontSize: 16 }}>{Math.round((dish.kcal / (e.met * 70)) * 60)}m</Text>
-                </View>
-              ))}
-            </View>
-          </FadeIn>
-
-          <FadeIn i={4}>
             <Text style={styles.h}>How did it turn out?</Text>
             <View style={{ flexDirection: 'row', justifyContent: 'center', gap: 10 }}>
               {[1, 2, 3, 4, 5].map((n) => (
@@ -114,7 +102,7 @@ export default function DoneScreen() {
             {stars ? <Text style={{ color: colors.muted, textAlign: 'center', marginTop: 8 }}>Thanks! Ratings help us recommend better dishes.</Text> : null}
           </FadeIn>
 
-          <FadeIn i={5}>
+          <FadeIn i={4}>
             {[
               ['🍽️ Eating it', dish.finish.eat],
               ['🧊 Storing leftovers', dish.finish.store],
@@ -146,5 +134,4 @@ const styles = StyleSheet.create({
   big: { color: colors.warn, fontSize: 30, fontWeight: '900', letterSpacing: -1 },
   small: { color: colors.muted, fontSize: 12.5, marginTop: 2 },
   h: { ...type.h2, color: colors.text, marginTop: 26, marginBottom: 12 },
-  burn: { flex: 1, alignItems: 'center', paddingVertical: 12, borderRadius: 16, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border },
 });
