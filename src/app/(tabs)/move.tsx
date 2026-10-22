@@ -21,10 +21,12 @@ const SECTION_BLURB: Record<ExerciseSection, string> = {
 
 /** The Move tab: the fitness research library, grouped Home / Yoga & stretch / Gym, plus gym know-how guides. */
 export default function Move() {
-  const { days, bodyWeightKg } = useStore();
+  const { days, bodyWeightKg, profile } = useStore();
   const week = lastSevenDaysActivity(days);
   const groups = bySection(researchExercises);
-  const [section, setSection] = useState<ExerciseSection | 'all'>('all');
+  // One training place in the survey opens on its section; gym or mixed answers see everything.
+  const where = profile.survey.trainWhere;
+  const [section, setSection] = useState<ExerciseSection | 'all'>(where.length === 1 && where[0] === 'home' ? 'home' : 'all');
   const shown = section === 'all' ? SECTIONS : [section];
 
   return (

@@ -1,3 +1,4 @@
+import { DEFAULT_SURVEY } from '../../models/survey';
 import { describe, expect, it } from '@jest/globals';
 
 import { createLocalDocStore } from '../../services/storage/docStore';
@@ -13,7 +14,7 @@ const sampleAt = new Date(2026, 9, 9, 8).getTime(); // whole hour, as the demo s
 const realAt = sampleAt + 1234; // a real tap
 
 const state: LegacyState = {
-  profile: { name: 'Sudarsan', goal: 'muscle', level: 'expert', diet: 'veg', breakfastReminder: false, onboarded: true },
+  profile: { name: 'Sudarsan', goal: 'muscle', level: 'expert', diet: 'veg', breakfastReminder: false, onboarded: true, survey: DEFAULT_SURVEY },
   days: {
     '2026-10-09': {
       meals: [{ name: 'Poha', emoji: '🍚', kcal: 300, protein: 8, fibre: 3, cooked: true, at: sampleAt }],
@@ -35,7 +36,7 @@ describe('migration from the demo blob (fitplate.state.v2)', () => {
   const out = fromLegacyState(state, NOW);
 
   it('maps the profile onto the new UserProfile with nulls for unknown body data', () => {
-    expect(out.profile).toMatchObject({ id: 'profile', name: 'Sudarsan', goal: 'muscle', dietType: 'veg', cookingLevel: 'expert', breakfastReminder: false, onboarded: true, weightKg: null, schemaVersion: 1 });
+    expect(out.profile).toMatchObject({ id: 'profile', name: 'Sudarsan', goal: 'muscle', dietType: 'veg', cookingLevel: 'expert', breakfastReminder: false, onboarded: true, weightKg: null, schemaVersion: 2 });
   });
 
   it('marks the made-up sample week and keeps real logs unmarked', () => {

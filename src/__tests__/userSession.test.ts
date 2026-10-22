@@ -1,3 +1,4 @@
+import { DEFAULT_SURVEY } from '../models/survey';
 import { describe, expect, it } from '@jest/globals';
 
 import type { LegacyState } from '../services/storage';
@@ -29,7 +30,7 @@ const sampleAt = new Date(2026, 9, 9, 8).getTime(); // whole hour, as the demo s
 const realAt = sampleAt + 1234;
 
 const blob: LegacyState = {
-  profile: { name: 'Asha', goal: 'muscle', level: 'expert', diet: 'veg', breakfastReminder: false, onboarded: true },
+  profile: { name: 'Asha', goal: 'muscle', level: 'expert', diet: 'veg', breakfastReminder: false, onboarded: true, survey: DEFAULT_SURVEY },
   days: {
     '2026-10-09': {
       meals: [{ name: 'Poha', emoji: '🍚', kcal: 300, protein: 8, fibre: 3, cooked: true, at: sampleAt, dishId: null }],
@@ -48,7 +49,7 @@ const blob: LegacyState = {
 };
 
 const seed = (): LegacyState => ({
-  profile: { name: '', goal: 'lose', level: 'beginner', diet: 'non-veg', breakfastReminder: true, onboarded: false },
+  profile: { name: '', goal: 'lose', level: 'beginner', diet: 'non-veg', breakfastReminder: true, onboarded: false, survey: DEFAULT_SURVEY },
   days: { '2026-10-08': { meals: [{ name: 'Poha', emoji: '🍚', kcal: 300, protein: 8, fibre: 3, cooked: true, at: sampleAt }], exercise: [], water: 6 } },
   moneySaved: DEMO_SAMPLE_SAVED_INR,
   favourites: ['poha'],

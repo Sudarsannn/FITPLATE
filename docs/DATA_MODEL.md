@@ -54,7 +54,7 @@ Types live in `src/models/`; versions and migrations in `src/services/storage/sc
 
 | Path | Holds | Version | Since | Links to research ids |
 |---|---|---|---|---|
-| `users/{uid}` | Profile (`UserProfile`), document id `profile` | 1 | Day 3 | — |
+| `users/{uid}` | Profile (`UserProfile`), document id `profile` | 2 | Day 3 (v2: 2026-10-22) | — |
 | `users/{uid}/mealLogs/{id}` | One meal eaten | 1 | Day 3 | `dishId` |
 | `users/{uid}/waterLogs/water-YYYY-MM-DD` | Glasses of water for one day (one document per day) | 1 | Day 3 | — |
 | `users/{uid}/supplementLogs/{id}` | Supplement taken | 1 | Day 3 | `nutrientId` |
@@ -123,3 +123,4 @@ Spark allows about 20,000 writes and 50,000 reads a day. Writes are batched and 
 - 2026-10-15 (Day 05): nutrient, hydration, guidance, health-profile, exercise and fitness-guide content bundled; `Dish` gained `tags`, `dietTags`, `description`, `familyId` and `variants` (SPEC-ADDENDA §9); `Ingredient` gained `usedIn`; `NutrientPer100` gained the 20 v2 fields (cholesterol, fat types, B vitamins, water, …), null for v1 profiles; `microNutrientsEstimate` is now filled where ingredient data exists. User documents may refer to `nutrientId` and `exerciseId` from these folders. Bundled content only: no Firestore change, no `schemaVersion` bump.
 - 2026-10-16 (priority plan P2): settings, shoppingLists, weightLogs, ratings, cookCompletions collections; append-only logs enforced in firestore.rules (APPEND_ONLY in schemas.ts); writes stamped with the server-corrected clock (users/{uid}/meta/clock); shared research library in Firestore with bundled fallback. See docs/SERVER_READINESS.md.
 - 2026-10-16 (priority plan P3): shopping list, Instamart checkout, Zepto links, "Cook it instead" and step-by-step cooking use the P2 collections (`shoppingLists` with `status`/`boughtVia`, `settings.brandChoice`, `settings.featureToggles.swiggyLive`, `settings.swiggyOrderInsights`, `cookCompletions`, `ratings`). No new collection, no rules change. Nothing from Swiggy is stored. See docs/VENDOR_INTEGRATIONS.md.
+- 2026-10-22 (on demand, profile survey): profile `schemaVersion` 2 adds `survey` (goals, healthIssues, healthOther, allergies, mealsPerDay, cuisines, dislikes, budgetPerMeal, trainWhere, workoutEquipment, experience, daysPerWeek, sessionMin, workoutTypes, limits, limitsOther; `src/models/survey.ts`); v1 documents migrate by adding empty answers. `dietType` adds `jain`, `vegan`, `pescatarian`, `no-onion-garlic` (matched by researched dish tags). Survey also fills existing `age`, `sex`, `heightCm`, `weightKg`, `activityLevel`, `equipmentOwned`. Health answers stay under `users/{uid}` only. No rules change.

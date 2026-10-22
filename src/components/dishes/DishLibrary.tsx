@@ -8,7 +8,7 @@ import { featureFlags } from '../../config/featureFlags';
 import { researchDishes } from '../../data/research';
 import { useStore } from '../../lib/store';
 import type { Dish } from '../../models/research';
-import { byNumber, COMING_SORTS, dishDoc, dishFilterGroups, DISH_SORTS } from '../../services/dishLibrary';
+import { byNumber, COMING_SORTS, DIET_OPTIONS, dishDoc, dishFilterGroups, DISH_SORTS } from '../../services/dishLibrary';
 import { loadExcludedAllergens, saveExcludedAllergens } from '../../services/rememberedFilters';
 import { GUEST_OWNER } from '../../services/storage';
 import { activeCount, optionCounts, runSearch, toggle, type FilterGroup, type Selection } from '../../services/search';
@@ -29,10 +29,14 @@ const RELEVANCE = 'relevance';
 /**
  * Day 6: the Cook tab's dish library on the research data (SPEC-ADDENDA §9).
  * Search covers every dish; the person narrows it with filters. Nothing here
- * is driven by the survey.
+ * is filtered by the survey.
  */
 export function DishLibrary({ dishes = researchDishes }: { dishes?: readonly Dish[] }) {
   const insets = useSafeAreaInsets();
+  // The survey never filters the library; it only swaps the first one-tap chip to the person's own diet.
+  const { profile } = useStore();
+  const myDiet = profile.diet !== 'non-veg' && profile.diet !== 'veg' ? DIET_OPTIONS.find((o) => o.id === profile.diet) : undefined;
+  const quick = myDiet ? [{ group: 'diet', option: myDiet.id, label: myDiet.label }, ...QUICK] : QUICK;
   const [query, setQuery] = useState('');
   const deferredQuery = useDeferredValue(query);
   const [selection, setSelection] = useState<Selection>({});
@@ -88,7 +92,7 @@ export function DishLibrary({ dishes = researchDishes }: { dishes?: readonly Dis
           icon={<Ionicons name="options-outline" size={16} color={nActive ? '#06210F' : colors.text} />}
         />
         <SelectChip label={sortLabel} selected={sort !== RELEVANCE} onPress={() => setSheet('sort')} icon={<Ionicons name="swap-vertical" size={16} color={sort !== RELEVANCE ? '#06210F' : colors.text} />} />
-        {QUICK.filter((q) => groups.some((g) => g.id === q.group && g.options.some((o) => o.id === q.option))).map((q) => (
+        {quick.filter((q) => groups.some((g) => g.id === q.group && g.options.some((o) => o.id === q.option))).map((q) => (
           <SelectChip key={q.label} label={q.label} selected={!!selection[q.group]?.includes(q.option)} onPress={() => setSelection((s) => toggle(s, q.group, q.option))} />
         ))}
       </ScrollView>

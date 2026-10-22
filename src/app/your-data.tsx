@@ -9,7 +9,8 @@ import { useStore } from '../lib/store';
 import { colors, type } from '../theme';
 
 const SAVED: [string, string, string][] = [
-  ['👤', 'Your profile', 'Name, goal, diet, cooking level and reminder setting.'],
+  ['👤', 'Your profile', 'Name, goals, diet, cooking level, reminder setting and your survey answers (body details, eating habits, kitchen, training).'],
+  ['🩺', 'Health answers', 'Any health conditions you chose in the survey. Optional, private to your account, and never shared.'],
   ['🍛', 'Meals', 'What you ate or cooked, with its calories, protein and fibre.'],
   ['💧', 'Water', 'Glasses of water per day.'],
   ['🏃', 'Workouts', 'Type of exercise, minutes and calories burned.'],

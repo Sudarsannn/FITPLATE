@@ -8,7 +8,10 @@ import { researchDishes } from '../data/research';
 import type { Dish as ResearchDish } from '../models/research';
 import type { Doc } from '../models/common';
 import { DEFAULT_SETTINGS, type CookCompletion, type DishRating, type ShoppingList, type UserSettings } from '../models/prefs';
+import { DEFAULT_SURVEY, type Survey } from '../models/survey';
+import type { DietType, UserProfile } from '../models/user';
 import { exerciseKcal } from '../services/fitness';
+import { fitsSurvey, likedCuisine } from '../services/surveyMatch';
 import { GUEST_OWNER, openUserData, type UserData } from '../services/storage';
 import { createServerClock, measureClockOffset } from '../services/storage/serverClock';
 import { createFirestoreAdapter, getDb } from '../services/storage/firestoreRemote';
@@ -32,13 +35,15 @@ import {
 import { firebaseConfigured, getFirebaseAuth } from './firebase';
 
 /** The user's diet preference (the research dishes carry `dietType`). */
-export type Diet = 'veg' | 'egg' | 'non-veg';
+export type Diet = DietType;
 export type Goal = 'lose' | 'maintain' | 'gain' | 'muscle';
 export type Level = 'beginner' | 'expert';
 export type Slot = 'breakfast' | 'lunch' | 'dinner';
 
 export type Profile = {
   name: string;
+  /** Profile survey answers (SPEC-ADDENDA §8). */
+  survey: Survey;
   goal: Goal;
   level: Level;
   diet: Diet;
@@ -79,7 +84,7 @@ const emptyDay = (): DayLog => ({ meals: [], exercise: [], water: 0 });
 // name stays because the guest-device setup and "Reset" call it.
 export function sampleState(): State {
   return {
-    profile: { name: '', goal: 'lose', level: 'beginner', diet: 'non-veg', breakfastReminder: true, onboarded: false },
+    profile: { name: '', goal: 'lose', level: 'beginner', diet: 'non-veg', breakfastReminder: true, onboarded: false, survey: DEFAULT_SURVEY },
     days: {},
     moneySaved: 0,
     favourites: [],
@@ -139,6 +144,12 @@ type Store = State & {
   /** From the profile; picks the ICMR-NIN target group for the nutrient bars (null = not given). */
   sex: 'male' | 'female' | null;
   setSex: (sex: 'male' | 'female') => void;
+  /** Age, height, weight and activity from the profile (null = not given). */
+  body: Pick<UserProfile, 'age' | 'heightCm' | 'weightKg' | 'activityLevel'>;
+  /** Kitchen equipment from the survey (UserProfile.equipmentOwned). */
+  equipmentOwned: string[];
+  setEquipmentOwned: (list: string[]) => void;
+  updateBody: (patch: Partial<Pick<UserProfile, 'age' | 'sex' | 'heightCm' | 'weightKg' | 'activityLevel'>>) => void;
   ratings: Record<string, DishRating['stars']>;
   rateDish: (dishId: string, stars: DishRating['stars'], note?: string | null) => void;
   logCookCompletion: (c: Omit<CookCompletion, 'timestamp' | 'dateKey'>) => void;
@@ -350,6 +361,15 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       addWeight: (kg) => s?.addWeight(kg),
       bodyWeightKg: bodyWeight,
       setSex: (sex) => s?.updateProfile({ sex }),
+      body: {
+        age: docs.profile && !docs.profile.deleted ? docs.profile.age : null,
+        heightCm: docs.profile && !docs.profile.deleted ? docs.profile.heightCm : null,
+        weightKg: docs.profile && !docs.profile.deleted ? docs.profile.weightKg : null,
+        activityLevel: docs.profile && !docs.profile.deleted ? docs.profile.activityLevel : null,
+      },
+      updateBody: (patch) => s?.updateProfile(patch),
+      equipmentOwned: docs.profile && !docs.profile.deleted ? (docs.profile.equipmentOwned ?? []) : [],
+      setEquipmentOwned: (equipmentOwned) => s?.updateProfile({ equipmentOwned }),
       sex: docs.profile && !docs.profile.deleted && (docs.profile.sex === 'male' || docs.profile.sex === 'female') ? docs.profile.sex : null,
       ratings: Object.fromEntries(Object.values(docs.ratings).filter((r) => !r.deleted).map((r) => [r.dishId, r.stars])),
       rateDish: (dishId, stars, note = null) => s?.rateDish(dishId, stars, note),
@@ -380,12 +400,10 @@ export const dayTotals = (d: DayLog) => ({
   fibre: d.meals.reduce((s, m) => s + m.fibre, 0),
 });
 
-const dietAllows = (pref: Diet, dish: ResearchDish['dietType']) =>
-  pref === 'non-veg' || dish === 'veg' || (pref === 'egg' && dish === 'egg');
 
 // Tasty-first: every research dish stays available; recommendations just rank what fits the goal.
 export function recommend(profile: Profile): ResearchDish[] {
-  const ok = researchDishes.filter((d) => dietAllows(profile.diet, d.dietType));
+  const ok = allowedDishes(profile);
   const score = (d: ResearchDish) => {
     const n = d.nutritionPerServing;
     const health = d.healthiness?.score ?? 5;
@@ -403,7 +421,9 @@ export function recommend(profile: Profile): ResearchDish[] {
         return health * 30 + fibre * 5;
     }
   };
-  return [...ok].sort((a, b) => score(b) - score(a));
+  // Liked cuisines get a nudge up, never a filter.
+  const liked = (d: ResearchDish) => (likedCuisine(profile.survey.cuisines, d) ? 40 : 0);
+  return [...ok].sort((a, b) => score(b) + liked(b) - (score(a) + liked(a)));
 }
 
-export const allowedDishes = (profile: Profile): ResearchDish[] => researchDishes.filter((d) => dietAllows(profile.diet, d.dietType));
+export const allowedDishes = (profile: Profile): ResearchDish[] => researchDishes.filter((d) => fitsSurvey(profile.diet, profile.survey, d));

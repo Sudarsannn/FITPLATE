@@ -1,3 +1,4 @@
+import { DEFAULT_SURVEY } from '../../models/survey';
 import type { DocSchema } from './repository';
 
 /**
@@ -7,7 +8,8 @@ import type { DocSchema } from './repository';
  * in step with this file.
  */
 export const SCHEMAS = {
-  profile: { collection: 'profile', version: 1, migrations: {} },
+  // v2 (22 Oct 2026): the profile survey's answers under `survey`.
+  profile: { collection: 'profile', version: 2, migrations: { 1: (d) => ({ ...d, survey: { ...DEFAULT_SURVEY } }) } },
   mealLogs: { collection: 'mealLogs', version: 1, migrations: {} },
   waterLogs: { collection: 'waterLogs', version: 1, migrations: {} },
   supplementLogs: { collection: 'supplementLogs', version: 1, migrations: {} },

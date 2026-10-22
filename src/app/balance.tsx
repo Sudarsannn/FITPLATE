@@ -8,6 +8,7 @@ import { FadeIn, PressableScale } from '../components/ui';
 import { getDish, researchExercises, researchLinks } from '../data/research';
 import { useStore } from '../lib/store';
 import { burnWays, DEFAULT_WEIGHT_KG, durationLabel } from '../services/dishDetail';
+import { workoutFit } from '../services/surveyMatch';
 import { musclesLine, SECTION_ICON, SECTION_LABEL, shortExerciseName } from '../services/fitness';
 import { colors, radius, type } from '../theme';
 
@@ -19,11 +20,16 @@ import { colors, radius, type } from '../theme';
  */
 export default function Balance() {
   const { kcal: k, dish: dishId } = useLocalSearchParams<{ kcal?: string; dish?: string }>();
-  const { bodyWeightKg } = useStore();
+  const { bodyWeightKg, profile } = useStore();
   const dish = dishId ? getDish(dishId) : undefined;
   const kcal = Math.round(Number(k) || dish?.nutritionPerServing.kcal || 0);
-  const ways = burnWays(kcal, bodyWeightKg, researchLinks.met, 8);
   const byId = new Map(researchExercises.map((e) => [e.id, e]));
+  // Moves that fit the Training answers come first; minutes break ties.
+  const fit = (id: string) => {
+    const e = byId.get(id);
+    return e ? workoutFit(profile.survey, e) : 0;
+  };
+  const ways = burnWays(kcal, bodyWeightKg, researchLinks.met, 8).sort((a, b) => fit(b.exerciseId) - fit(a.exerciseId) || a.minutes - b.minutes);
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: colors.bg }}>
@@ -53,6 +59,7 @@ export default function Balance() {
                       <Text style={styles.name} numberOfLines={1}>
                         {shortExerciseName(w.name)}
                       </Text>
+                      {fit(w.exerciseId) >= 2 ? <Text style={styles.fits}>✓ Fits your training answers</Text> : null}
                       <Text style={styles.meta} numberOfLines={1}>
                         {[e?.section ? SECTION_LABEL[e.section] : null, e ? musclesLine(e) : null].filter(Boolean).join(' · ')}
                       </Text>
@@ -101,6 +108,7 @@ const styles = StyleSheet.create({
   head: { flexDirection: 'row', alignItems: 'center', gap: 12 },
   icon: { width: 38, height: 38, borderRadius: 19, backgroundColor: 'rgba(61,220,132,0.14)', alignItems: 'center', justifyContent: 'center' },
   name: { color: colors.text, fontWeight: '800', fontSize: 15 },
+  fits: { color: colors.accent2, fontSize: 11.5, fontWeight: '800', marginTop: 1 },
   meta: { color: colors.muted, fontSize: 12.5, marginTop: 2 },
   mins: { color: colors.warm, fontWeight: '900', fontSize: 17 },
   minsUnit: { color: colors.muted, fontSize: 10.5, fontWeight: '600' },

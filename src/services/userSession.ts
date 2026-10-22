@@ -1,6 +1,7 @@
 import type { BaseDoc, DateKey, Doc } from '../models/common';
 import type { Favourite, MealLog, MealPlanDay, SavingEntry, WaterLog, WorkoutLog } from '../models/logs';
 import { DEFAULT_SETTINGS, type CookCompletion, type DishRating, type ShoppingList, type UserSettings, type WeightLog } from '../models/prefs';
+import { withSurveyDefaults } from '../models/survey';
 import { DEFAULT_PROFILE, type UserProfile } from '../models/user';
 import type { DayLog, Profile, Slot } from '../lib/store';
 import { deleteAllUserData } from './storage/deleteUser';
@@ -115,7 +116,7 @@ export async function loadDocs(repos: Repositories): Promise<UserDocs> {
 
 export function profileToLegacy(p: UserProfile | null): Profile {
   const x = p ?? DEFAULT_PROFILE;
-  return { name: x.name, goal: x.goal, level: x.cookingLevel, diet: x.dietType, breakfastReminder: x.breakfastReminder, onboarded: x.onboarded };
+  return { name: x.name, goal: x.goal, level: x.cookingLevel, diet: x.dietType, breakfastReminder: x.breakfastReminder, onboarded: x.onboarded, survey: withSurveyDefaults(x.survey) };
 }
 
 export function legacyProfilePatch(p: Partial<Profile>): Partial<UserProfile> {
@@ -126,6 +127,7 @@ export function legacyProfilePatch(p: Partial<Profile>): Partial<UserProfile> {
   if (p.diet !== undefined) out.dietType = p.diet;
   if (p.breakfastReminder !== undefined) out.breakfastReminder = p.breakfastReminder;
   if (p.onboarded !== undefined) out.onboarded = p.onboarded;
+  if (p.survey !== undefined) out.survey = p.survey;
   return out;
 }
 
