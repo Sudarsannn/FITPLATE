@@ -42,6 +42,8 @@ export type ShoppingItem = {
   /** Total across the list's dishes, null when a dish gives no amount. */
   quantity: number | null;
   unit: string | null;
+  /** Amounts in a unit that can't be added to the main one (e.g. "2 small" next to "150 g"). Day 9. */
+  more?: { quantity: number; unit: string | null }[];
   /** Which dishes need it. */
   dishIds: string[];
   /** The whole-ingredient checkbox: buy it or not. */

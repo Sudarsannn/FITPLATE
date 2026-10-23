@@ -1,0 +1,86 @@
+{
+  "id": "pineapple-fresh-whole",
+  "name": "Pineapple, fresh whole",
+  "aliases": [
+    "ananas",
+    "anaras"
+  ],
+  "category": "Fruit",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-23",
+        "min": 75,
+        "max": 180,
+        "avg": 135,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-23.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 115,
+      "max": 155,
+      "avg": 135
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-23",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 5,
+    "platforms": [
+      "BigBasket",
+      "Blinkit",
+      "Flipkart"
+    ],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
+  },
+  "per100Estimate": {
+    "min": 11.5,
+    "max": 15.5,
+    "avg": 13.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": null,
+  "storage": "Keep whole at room temperature until ripe; refrigerate cut pieces in a closed box and use within about 3 days.",
+  "looksLike": "A spiky green-brown to golden-yellow fruit with a leafy crown; the flesh is pale to golden yellow, juicy and sweet-tart. Sold by the piece (about 800 g to 1 kg) in India.",
+  "howToPick": "Heavy for its size, a sweet smell at the base, a golden-yellow colour near the bottom, and crown leaves that look green and fresh. Avoid a fermented or sour smell, soft wet spots or mould.",
+  "shelfLife": "Ripe whole fruit lasts about 2 to 3 days on the counter and a few days in the fridge once cut (general guidance; not taken from a source in this run).",
+  "substitutes": [
+    "Canned pineapple pieces (drained)",
+    "Raisins or a little chopped ripe mango",
+    "Omit"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 78,
+      "quantity": 15,
+      "unit": "g",
+      "raw": "15 g per serving (1 tbsp chopped); the Jain variant also keeps it"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-23",
+      "file": "FitPlate_Ingredients_2026-10-23.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (none)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "looksLike": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 75.0–180.0 was wider than 30% of avg 135.0; narrowed to ±15%."
+  ]
+}

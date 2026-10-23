@@ -62,13 +62,25 @@ import item_058_khaman_dhokla from './058-khaman-dhokla.json';
 import item_059_chicken_kathi_roll from './059-chicken-kathi-roll.json';
 import item_060_aloo_matar from './060-aloo-matar.json';
 import item_061_appam_with_veg_stew from './061-appam-with-veg-stew.json';
+import item_062_mutton_biryani from './062-mutton-biryani.json';
 import item_063_shahi_paneer from './063-shahi-paneer.json';
 import item_064_schezwan_noodles from './064-schezwan-noodles.json';
 import item_065_puri_bhaji from './065-puri-bhaji.json';
 import item_066_sprouts_chaat from './066-sprouts-chaat.json';
 import item_067_mix_veg_curry from './067-mix-veg-curry.json';
+import item_068_chicken_chettinad from './068-chicken-chettinad.json';
 import item_069_paneer_bhurji from './069-paneer-bhurji.json';
 import item_070_egg_fried_rice from './070-egg-fried-rice.json';
+import item_071_ragi_dosa from './071-ragi-dosa.json';
+import item_072_kadhi_pakora from './072-kadhi-pakora.json';
+import item_073_rava_fish_fry from './073-rava-fish-fry.json';
+import item_074_puliyodarai_tamarind_rice from './074-puliyodarai-tamarind-rice.json';
+import item_075_dum_aloo from './075-dum-aloo.json';
+import item_076_semiya_upma from './076-semiya-upma.json';
+import item_077_keema_pav from './077-keema-pav.json';
+import item_078_navratan_korma from './078-navratan-korma.json';
+import item_079_gobi_manchurian from './079-gobi-manchurian.json';
+import item_080_masoor_dal from './080-masoor-dal.json';
 
 export const items: Dish[] = [
   item_001_poha as unknown as Dish,
@@ -132,11 +144,23 @@ export const items: Dish[] = [
   item_059_chicken_kathi_roll as unknown as Dish,
   item_060_aloo_matar as unknown as Dish,
   item_061_appam_with_veg_stew as unknown as Dish,
+  item_062_mutton_biryani as unknown as Dish,
   item_063_shahi_paneer as unknown as Dish,
   item_064_schezwan_noodles as unknown as Dish,
   item_065_puri_bhaji as unknown as Dish,
   item_066_sprouts_chaat as unknown as Dish,
   item_067_mix_veg_curry as unknown as Dish,
+  item_068_chicken_chettinad as unknown as Dish,
   item_069_paneer_bhurji as unknown as Dish,
   item_070_egg_fried_rice as unknown as Dish,
+  item_071_ragi_dosa as unknown as Dish,
+  item_072_kadhi_pakora as unknown as Dish,
+  item_073_rava_fish_fry as unknown as Dish,
+  item_074_puliyodarai_tamarind_rice as unknown as Dish,
+  item_075_dum_aloo as unknown as Dish,
+  item_076_semiya_upma as unknown as Dish,
+  item_077_keema_pav as unknown as Dish,
+  item_078_navratan_korma as unknown as Dish,
+  item_079_gobi_manchurian as unknown as Dish,
+  item_080_masoor_dal as unknown as Dish,
 ];

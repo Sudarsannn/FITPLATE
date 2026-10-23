@@ -166,7 +166,7 @@ function parseSteps(body: string): DishStep[] {
  */
 export function parseNutrition(body: string): Macros {
   const text = plain(body);
-  const kcal = /(?:Total(?:\s*\([^)]*\))?:\s*(?:about|~|≈)?\s*|Calories\s*(?:\(kcal\))?\s*[:|]\s*(?:about|~|≈)?\s*)([\d,]+(?:\.\d+)?)\s*kcal/i.exec(text);
+  const kcal = /(?:Total(?:\s*\((?:[^()]|\([^()]*\))*\))?:\s*(?:about|~|≈)?\s*|Calories\s*(?:\(kcal\))?\s*[:|]\s*(?:about|~|≈)?\s*)([\d,]+(?:\.\d+)?)\s*kcal/i.exec(text);
   const grams = (label: string) => {
     const m = new RegExp(`\\b(?:${label})\\b[^0-9\\n|]*\\|?\\s*(?:about|~|≈)?\\s*(\\d+(?:\\.\\d+)?)\\s*g\\b`, 'i').exec(text);
     return m ? num(m[1]) : null;

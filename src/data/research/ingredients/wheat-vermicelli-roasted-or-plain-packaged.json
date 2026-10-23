@@ -1,0 +1,72 @@
+{
+  "id": "wheat-vermicelli-roasted-or-plain-packaged",
+  "name": "Wheat vermicelli, roasted or plain, packaged",
+  "aliases": [
+    "semiya",
+    "seviyan"
+  ],
+  "category": "Grain",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-23",
+        "min": 95,
+        "max": 400,
+        "avg": 165,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-23.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 140,
+      "max": 190,
+      "avg": 165
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-23",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": null,
+    "platforms": [],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
+  },
+  "per100Estimate": {
+    "min": 14,
+    "max": 19,
+    "avg": 16.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": null,
+  "storage": null,
+  "looksLike": null,
+  "howToPick": null,
+  "shelfLife": null,
+  "substitutes": [],
+  "usedIn": [],
+  "versions": [
+    {
+      "date": "2026-10-23",
+      "file": "FitPlate_Ingredients_2026-10-23.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (none)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "looksLike": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 95.0–400.0 was wider than 30% of avg 165.0; narrowed to ±15%.",
+    "2026-10-23: no detail section found"
+  ]
+}

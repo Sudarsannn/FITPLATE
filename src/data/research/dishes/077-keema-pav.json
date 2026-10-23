@@ -1,0 +1,699 @@
+{
+  "id": "077-keema-pav",
+  "number": 77,
+  "name": "Keema Pav",
+  "cuisine": "Mumbai (Irani cafés and street stalls; also a Ramadan sehri classic)",
+  "dietType": "non-veg",
+  "mealType": [
+    "breakfast",
+    "dinner",
+    "snack"
+  ],
+  "difficulty": "Beginner",
+  "prepMin": 15,
+  "cookMin": 35,
+  "servings": 1,
+  "ingredients": [
+    {
+      "ingredientId": null,
+      "name": "For the keema",
+      "quantity": null,
+      "unit": null,
+      "householdMeasure": null
+    },
+    {
+      "ingredientId": "mutton-mince-keema",
+      "name": "Mutton (goat) mince (keema)",
+      "quantity": 125,
+      "unit": "g",
+      "householdMeasure": "a heaped ½ cup, loosely packed"
+    },
+    {
+      "ingredientId": "cooking-oil-refined-sunflower-groundnut",
+      "name": "Sunflower oil",
+      "quantity": 10,
+      "unit": "g",
+      "householdMeasure": "2 tsp"
+    },
+    {
+      "ingredientId": "bay-leaf",
+      "name": "Bay leaf (tej patta)",
+      "quantity": 1,
+      "unit": null,
+      "householdMeasure": "1 leaf"
+    },
+    {
+      "ingredientId": "cinnamon-cassia",
+      "name": "Cinnamon stick (dalchini)",
+      "quantity": 1,
+      "unit": "g",
+      "householdMeasure": "a 1 cm piece"
+    },
+    {
+      "ingredientId": "cloves",
+      "name": "Cloves (laung)",
+      "quantity": 2,
+      "unit": null,
+      "householdMeasure": "2 buds"
+    },
+    {
+      "ingredientId": "green-cardamom",
+      "name": "Green cardamom (elaichi)",
+      "quantity": 1,
+      "unit": null,
+      "householdMeasure": "1 pod, lightly crushed"
+    },
+    {
+      "ingredientId": "onion",
+      "name": "Onion (pyaz/kanda)",
+      "quantity": 60,
+      "unit": "g",
+      "householdMeasure": "½ small onion, finely chopped"
+    },
+    {
+      "ingredientId": "ginger",
+      "name": "Ginger (adrak)",
+      "quantity": 5,
+      "unit": "g",
+      "householdMeasure": "1 cm piece, minced"
+    },
+    {
+      "ingredientId": "garlic",
+      "name": "Garlic (lasun)",
+      "quantity": 6,
+      "unit": "g",
+      "householdMeasure": "2 cloves, minced"
+    },
+    {
+      "ingredientId": "green-chilli",
+      "name": "Green chilli (hari mirch)",
+      "quantity": 4,
+      "unit": "g",
+      "householdMeasure": "1 medium, chopped"
+    },
+    {
+      "ingredientId": "tomato",
+      "name": "Tomato (tamatar)",
+      "quantity": 60,
+      "unit": "g",
+      "householdMeasure": "½ medium, chopped"
+    },
+    {
+      "ingredientId": "turmeric-powder",
+      "name": "Turmeric powder (haldi)",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "¼ tsp (a generous pinch)"
+    },
+    {
+      "ingredientId": "red-chilli-powder",
+      "name": "Red chilli powder (lal mirch)",
+      "quantity": 2,
+      "unit": "g",
+      "householdMeasure": "¾ tsp"
+    },
+    {
+      "ingredientId": "coriander-powder",
+      "name": "Coriander powder (dhania)",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "1 tsp"
+    },
+    {
+      "ingredientId": "garam-masala",
+      "name": "Garam masala",
+      "quantity": 1,
+      "unit": "g",
+      "householdMeasure": "½ tsp"
+    },
+    {
+      "ingredientId": "salt",
+      "name": "Salt (namak)",
+      "quantity": 2.5,
+      "unit": "g",
+      "householdMeasure": "a scant ½ tsp"
+    },
+    {
+      "ingredientId": "green-peas-frozen",
+      "name": "Green peas (matar), frozen or fresh",
+      "quantity": 30,
+      "unit": "g",
+      "householdMeasure": "2 tbsp"
+    },
+    {
+      "ingredientId": null,
+      "name": "Water",
+      "quantity": 80,
+      "unit": "ml",
+      "householdMeasure": "about 5 tbsp"
+    },
+    {
+      "ingredientId": "coriander-leaves",
+      "name": "Fresh coriander leaves (hara dhania)",
+      "quantity": 5,
+      "unit": "g",
+      "householdMeasure": "1 tbsp, chopped"
+    },
+    {
+      "ingredientId": "lemon",
+      "name": "Lemon juice (nimbu)",
+      "quantity": 5,
+      "unit": "ml",
+      "householdMeasure": "1 tsp (about ¼ lemon)"
+    },
+    {
+      "ingredientId": null,
+      "name": "For the pav and serving",
+      "quantity": null,
+      "unit": null,
+      "householdMeasure": null
+    },
+    {
+      "ingredientId": "pav",
+      "name": "Pav (soft bread rolls, ladi pav)",
+      "quantity": 2,
+      "unit": null,
+      "householdMeasure": "2 rolls"
+    },
+    {
+      "ingredientId": "butter-salted",
+      "name": "Butter (makhan)",
+      "quantity": 8,
+      "unit": "g",
+      "householdMeasure": "2 tsp"
+    },
+    {
+      "ingredientId": "onion",
+      "name": "Onion, raw, thinly sliced (to serve)",
+      "quantity": 20,
+      "unit": "g",
+      "householdMeasure": "a few rings"
+    },
+    {
+      "ingredientId": "lemon",
+      "name": "Lemon wedge (to serve)",
+      "quantity": null,
+      "unit": null,
+      "householdMeasure": "1 wedge"
+    }
+  ],
+  "equipment": [
+    "Kadai or heavy-bottomed pan (about 20 cm) with a lid",
+    "Tawa or flat pan for the pav",
+    "Chopping board and knife",
+    "Wooden spoon or spatula; a potato masher or the back of the spoon to break mince lumps",
+    "Measuring spoons and a small kitchen scale (cups and spoons are given for the scale-less)",
+    "Small bowls for spices",
+    "Optional: pressure cooker (1.5 L), the method in Sanjeev Kapoor's recipe: cook the mince 2–3 whistles instead of the 15 min covered simmer"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "title": "Measure the mince",
+      "text": "Put 125 g mutton mince in a bowl and pat it dry with paper.",
+      "timerSec": 60,
+      "tip": "Keep it in the fridge until step 16 so it stays safe.",
+      "visualCue": "Pink-red mince, no pooled liquid",
+      "cameraCheck": "The mince in the bowl",
+      "videoShot": "Mince spooned into a bowl."
+    },
+    {
+      "n": 2,
+      "title": "Chop the onion",
+      "text": "Finely chop ½ small onion (60 g).",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "Small even pieces, about ⅓ cup",
+      "cameraCheck": "The chopped onion",
+      "videoShot": "A knife dicing onion."
+    },
+    {
+      "n": 3,
+      "title": "Chop the tomato",
+      "text": "Chop ½ medium tomato (60 g) into small pieces.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Small pieces with the juice",
+      "cameraCheck": "The chopped tomato",
+      "videoShot": "A tomato being diced."
+    },
+    {
+      "n": 4,
+      "title": "Make the ginger-garlic",
+      "text": "Mince 1 cm ginger (5 g) and 2 garlic cloves (6 g) fine, or crush them in a mortar.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "A coarse wet paste",
+      "cameraCheck": "The ginger and garlic",
+      "videoShot": "Garlic crushed under a knife."
+    },
+    {
+      "n": 5,
+      "title": "Chop the chilli",
+      "text": "Chop 1 green chilli (4 g).",
+      "timerSec": 30,
+      "tip": "Remove the seeds for less heat.",
+      "visualCue": "Small green rings",
+      "cameraCheck": "The chopped chilli",
+      "videoShot": "A knife slicing chilli."
+    },
+    {
+      "n": 6,
+      "title": "Measure the peas",
+      "text": "Put 30 g peas (2 tbsp) in a small bowl; if frozen, rinse under warm water.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Bright green, no ice",
+      "cameraCheck": "The peas in the bowl",
+      "videoShot": "Peas spooned into a bowl."
+    },
+    {
+      "n": 7,
+      "title": "Chop the coriander",
+      "text": "Chop 1 tbsp (5 g) coriander leaves.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Fresh green, not bruised",
+      "cameraCheck": "The chopped coriander",
+      "videoShot": "A knife through coriander."
+    },
+    {
+      "n": 8,
+      "title": "Prepare the serving onion and lemon",
+      "text": "Slice 20 g onion into thin rings and cut a ¼ lemon wedge (keep 1 tsp of juice for step 20).",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Thin rings, neat wedge",
+      "cameraCheck": "The onion rings and lemon",
+      "videoShot": "Onion rings and lemon on a plate."
+    },
+    {
+      "n": 9,
+      "title": "Mix the powders",
+      "text": "In a small bowl, put ¼ tsp (0.5 g) turmeric, ¾ tsp (2 g) red chilli powder and 1 tsp (3 g) coriander powder.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Three colours of powder side by side",
+      "cameraCheck": "The bowl of powders",
+      "videoShot": "Spices measured into a bowl."
+    },
+    {
+      "n": 10,
+      "title": "Heat the oil",
+      "text": "Put the kadai on medium heat and add 2 tsp (10 g) oil.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Oil looks thin and shimmers",
+      "cameraCheck": "The oil in the kadai",
+      "videoShot": "Oil swirled in the pan."
+    },
+    {
+      "n": 11,
+      "title": "Temper the whole spices",
+      "text": "Add 1 bay leaf, 1 cm cinnamon, 2 cloves and 1 crushed cardamom pod.",
+      "timerSec": 30,
+      "tip": "Do not let them blacken.",
+      "visualCue": "Strong sweet aroma; cloves puff slightly",
+      "cameraCheck": "The spices sizzling in oil",
+      "videoShot": "Whole spices hitting hot oil."
+    },
+    {
+      "n": 12,
+      "title": "Brown the onion",
+      "text": "Add the chopped onion (60 g) and cook, stirring every minute.",
+      "timerSec": 480,
+      "tip": "If it browns too fast, lower the heat and add 1 tbsp water.",
+      "visualCue": "Soft, then deep golden brown at the edges; sweet smell",
+      "cameraCheck": "The onion in the pan",
+      "videoShot": "Onion turning golden in the oil."
+    },
+    {
+      "n": 13,
+      "title": "Add ginger, garlic and chilli",
+      "text": "Stir in the ginger-garlic and the chilli.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Raw garlic smell goes; mixture sizzles",
+      "cameraCheck": "The pan after adding them",
+      "videoShot": "Ginger-garlic stirred into onion."
+    },
+    {
+      "n": 14,
+      "title": "Cook the tomato",
+      "text": "Add the chopped tomato and 2.5 g salt; cook, mashing with the spoon.",
+      "timerSec": 300,
+      "tip": null,
+      "visualCue": "Tomato breaks down to a thick paste; oil separates at the edges",
+      "cameraCheck": "The thick masala",
+      "videoShot": "Tomato mashed into a paste."
+    },
+    {
+      "n": 15,
+      "title": "Add the powders",
+      "text": "Lower the heat, add the bowl of powders and 30 ml (2 tbsp) water; stir.",
+      "timerSec": 60,
+      "tip": "The water stops the powders burning.",
+      "visualCue": "Deep red-brown paste, no dry powder smell",
+      "cameraCheck": "The masala paste",
+      "videoShot": "Powders stirred into the paste."
+    },
+    {
+      "n": 16,
+      "title": "Add the mince",
+      "text": "Turn the heat to medium-high, add the 125 g mince, break up lumps with the spoon and stir.",
+      "timerSec": 300,
+      "tip": null,
+      "visualCue": "Colour changes from pink to grey-brown; no large lumps; juices reduce",
+      "cameraCheck": "The browned mince",
+      "videoShot": "Mince breaking apart in the masala."
+    },
+    {
+      "n": 17,
+      "title": "Add water and peas",
+      "text": "Add 50 ml water and the 30 g peas; stir and bring to a gentle boil.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Small bubbles at the edge",
+      "cameraCheck": "The pan with peas",
+      "videoShot": "Peas stirred into the keema."
+    },
+    {
+      "n": 18,
+      "title": "Simmer covered",
+      "text": "Lower to low heat, cover and cook, stirring twice.",
+      "timerSec": 900,
+      "tip": "If it dries out before the mince is soft, add 2 tbsp hot water.",
+      "visualCue": "Mince is tender (a piece crumbles between spoon and pan); thick gravy",
+      "cameraCheck": "The keema with a spoonful lifted",
+      "videoShot": "Lid lifted, steam rising."
+    },
+    {
+      "n": 19,
+      "title": "Dry it down",
+      "text": "Remove the lid and cook on medium heat, stirring, until thick.",
+      "timerSec": 180,
+      "tip": null,
+      "visualCue": "Spoon leaves a trail; oil shimmers on top; no watery pool",
+      "cameraCheck": "The thick keema",
+      "videoShot": "A spoon dragged through the keema leaving a trail."
+    },
+    {
+      "n": 20,
+      "title": "Finish",
+      "text": "Switch off the heat, stir in ½ tsp (1 g) garam masala, half the coriander and 1 tsp lemon juice.",
+      "timerSec": 60,
+      "tip": "Spoon off any pool of oil on top before serving if you want it lighter (not counted in section 5).",
+      "visualCue": "Fresh aroma, bright green flecks",
+      "cameraCheck": "The finished keema",
+      "videoShot": "Coriander sprinkled over keema."
+    },
+    {
+      "n": 21,
+      "title": "Rest it",
+      "text": "Leave the keema covered off the heat.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "Gravy settles and thickens slightly",
+      "cameraCheck": "The covered pan",
+      "videoShot": "Lid placed on the pan."
+    },
+    {
+      "n": 22,
+      "title": "Split the pav",
+      "text": "Cut each of the 2 pav (70 g) in half sideways, not all the way through.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "Pockets open like a book",
+      "cameraCheck": "The split pav",
+      "videoShot": "A knife splitting a pav."
+    },
+    {
+      "n": 23,
+      "title": "Melt the butter",
+      "text": "Heat the tawa on medium and melt 2 tsp (8 g) butter.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "Butter foams gently; no browning",
+      "cameraCheck": "The melted butter",
+      "videoShot": "Butter melting on a tawa."
+    },
+    {
+      "n": 24,
+      "title": "Toast the pav",
+      "text": "Place the pav cut side down in the butter.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Cut sides golden and crisp-edged; buttery smell",
+      "cameraCheck": "The toasted pav",
+      "videoShot": "Pav sizzling in butter."
+    },
+    {
+      "n": 25,
+      "title": "Plate it",
+      "text": "Put the keema (about 190 g) on a plate with the pav, serving onion, remaining coriander and the lemon wedge.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Hot, glossy keema; golden pav",
+      "cameraCheck": "The plated dish",
+      "videoShot": "A slow pan over the plate."
+    },
+    {
+      "n": 26,
+      "title": "Squeeze lemon and eat",
+      "text": "Squeeze the wedge over the keema and eat at once, scooping keema into the pav.",
+      "timerSec": null,
+      "tip": null,
+      "visualCue": "Steam rising",
+      "cameraCheck": "The final plate",
+      "videoShot": "A bite of pav loaded with keema."
+    }
+  ],
+  "nutritionPerServing": {
+    "kcal": 690,
+    "proteinG": 36,
+    "carbsG": 60,
+    "fatG": 33,
+    "fibreG": 7
+  },
+  "microNutrientsEstimate": {
+    "values": {
+      "cholesterol": 71.3,
+      "copper": 0.4,
+      "iron": 3.5,
+      "niacin": 4.7,
+      "phosphorus": 225,
+      "potassium": 481.3,
+      "riboflavin": 0.6,
+      "selenium": 11,
+      "sodium": 102.5,
+      "thiamine": 0.1,
+      "vitamin-a": 31.8,
+      "vitamin-b12": 1.4,
+      "vitamin-c": 15.2,
+      "vitamin-d": 0.4,
+      "vitamin-e": 4.1,
+      "vitamin-k": 26.9,
+      "zinc": 4.9
+    },
+    "coveragePct": 54,
+    "basis": "partial estimate from ingredient quantities"
+  },
+  "asOrdered": {
+    "price": null,
+    "nutrition": {
+      "calories": {
+        "value": null,
+        "source": null
+      },
+      "protein": {
+        "value": null,
+        "source": null
+      },
+      "carbs": {
+        "value": null,
+        "source": null
+      },
+      "fat": {
+        "value": null,
+        "source": null
+      },
+      "fibre": {
+        "value": null,
+        "source": null
+      }
+    },
+    "restaurantsSampled": null,
+    "platforms": [
+      "Swiggy",
+      "Zomato",
+      "magicpin"
+    ]
+  },
+  "orderPrice": null,
+  "healthiness": {
+    "score": 6,
+    "restaurantScore": 4,
+    "reasons": [
+      "high-quality protein (about 36 g), some fibre from onion and peas, and no deep frying. Points off for saturated fat (about 12 g, from mutton fat and butter), about 1,430 mg sodium and refined white pav. Restaurants usually use more oil or ghee, more salt and more butter on the pav, and often fatter mince."
+    ]
+  },
+  "researchRating": {
+    "score": 4.5,
+    "basis": "keema pav is a much-loved Mumbai Irani-café classic (Curly Tales and Homegrown run \"best kheema pav in Mumbai\" lists; Cafe Military is known for it; Rana Safvi calls it a sehri favourite), and many recipe sites carry it (Sanjeev Kapoor, Ranveer Brar, Mrs Balbir Singh, SBS, Delicious, Olive). Points off because it is heavy and fatty, and per-recipe review counts were not visible (pages could only be seen through search snippets)."
+  },
+  "storage": "Keema: fridge-safe in a closed box for up to 3 days (cool within 1 hour); freezes for up to 2 months. Reheat in a pan with 2 tbsp water on low until steaming hot all the way through, or microwave covered for 2 minutes, stirring once. Pav: best fresh; toast again when needed.",
+  "leftoverRemix": "Keema paratha or keema toastie. Use cold keema as a paratha stuffing (mix with chopped coriander and a little grated cheese) or spread it between two slices of bread with cheese and grill until crisp. (Swiggy Instamart and Sanjeev Kapoor list keema pav with cheese-baked and \"twist\" versions.)",
+  "burnOff": "about 9.9 km of running (690 ÷ 70 kcal/km, for a 70 kg adult), or about 13.8 km of brisk walking (about 2 h 45 min at 5 km/h, using about 50 kcal/km for walking) (est.).",
+  "sources": [
+    "Sanjeev Kapoor, Keema Pav (pressure-cooker keema with whole spices, onion, tomato, ginger-garlic, 500 g mutton, 8 pav, serves 4; lemon; nutrition listed for the whole recipe): https://sanjeevkapoor.com/recipe/Keema-Pav-.html ; https://sanjeevkapoor.com/recipe/Keema-Pav.html",
+    "Ranveer Brar, Mumbai-style Hara Masala Keema (green paste, curd marinade; Irani and Parsi restaurant style): https://ranveerbrar.com/recipes/mumbai-style-hara-masala-keema/",
+    "Ranveer Brar, Famous Chicken Ghotala / Keema Pav: https://ranveerbrar.com/recipes/famous-chicken-ghotala/",
+    "Rana Safvi, Bombay Kheema Pav (green masala, tomatoes, peas; warm pav on a tawa, lime; eaten at sehri): https://ranasafvi.com/bombay-kheema-pav/amp/",
+    "Mrs Balbir Singh, Keema Pav (split soft pav, toast and butter, onion, coriander, lime): https://mrsbalbirsingh.com/blogs/recipes/mrs-balbir-singhs-keema-pav",
+    "Celebration in My Kitchen, Kheema Pav (origin in Irani cafés; drain excess fat): https://www.celebrationinmykitchen.com/kheema-pav",
+    "SBS (Adam Liaw), Kheema Pav (500 g mince, cumin, ginger, garlic, turmeric, chilli): https://www.sbs.com.au/food/the-cook-up-with-adam-liaw/recipe/kheema-pav/w7ea0uwxv",
+    "Stahl Kitchens, Kheema Pav (500 g mince, ½ cup peas, whole spices, brown the marinated mince, add tomatoes, simmer about 15 min): https://stahlkitchens.com/blogs/recipes/kheema-pav",
+    "Cooking the Globe, Mutton Keema Pav (serves 2, 40 min, 1 cup onion, 1 cup tomato, ¼ cup peas): https://cookingtheglobe.com/?p=8538",
+    "Swiggy Instamart, Kheema Pav and Mutton Keema Pav recipes: https://www.swiggy.com/instamart/recipe/kheema-pav ; https://www.swiggy.com/instamart/recipe/mutton-keema-pav",
+    "Great Curry Recipes, Chicken Keema Pav: https://greatcurryrecipes.net/2023/06/12/chicken-keema-pav/",
+    "Curly Tales, 8 Best Kheema Pav Spots In Mumbai and 5 Places That Offer The Best Kheema Pav In Mumbai: https://curlytales.com/?p=637018 ; https://curlytales.com/5-places-that-kheema-pav/amp/",
+    "Homegrown, 6 Mumbai Kheema-Paos To Ward Off Your Monsoon Blues: https://homegrown.co.in/article/801275/6-mumbai-kheema-paos-to-ward-off-your-monsoon-blues",
+    "Table Journey, kheema pav: https://tablejourney.com/dish/kheema-pav/",
+    "The Better India, Cafe Military: https://thebetterindia.com/72036/mumbai-cafe-military-iconic-widely-loved-why",
+    "Olive Magazine, Keema pav: https://www.olivemagazine.com/recipes/meat-and-poultry/keema-pav",
+    "Tarla Dalal, Soya Mutter Keema: https://cdn.tarladalal.com/soya-mutter-keema-5627r",
+    "Maggi India, Soya keema matar pav: https://www.maggi.in/en/recipes/Soya-keema-matar-pav/",
+    "Ranveer Brar, Veg Soya Keema (veg keema pav): https://ranveerbrar.com/recipes/veg-soya-keema/",
+    "Veg Recipes of India, Soya Keema: https://www.vegrecipesofindia.com/soya-keema",
+    "Swiggy Instamart (450 kcal), Delicious magazine (411 kcal per serving): https://www.deliciousmagazine.co.uk/recipes/keema-pav-brussels-sprouts/amp/ ; Kenwood (494 kcal): https://recipeapp.kenwoodworld.com/24844-keema-pav ; Eat This Much (1,960 kcal for one chicken keema pav serving, treated as unreliable): https://www.eatthismuch.com/calories/chicken-keema-pav-2528775",
+    "USDA FoodData Central: https://fdc.nal.usda.gov/ ; IFCT 2017 and ICMR-NIN Nutrient Requirements 2020: https://www.nin.res.in/",
+    "Swiggy, The Kheemah Company, Thane West (mutton ₹379, chicken ₹295; MMR): https://www.swiggy.com/menu/622792 ; menu: https://kheemahcompany.in/menu/",
+    "Swiggy, Mumbai pav dish page (Nothing But Chicken ₹128; Faredoons ₹69 bun; Soya Cheese Kheema Pav ₹169): https://www.swiggy.com/city/mumbai/pav-dish-restaurants",
+    "Swiggy, Mumbai kheema ghotala page (Hotel Sahil ₹300; Bande Khan ₹430, ₹319): https://www.swiggy.com/city/mumbai/kheema-ghotala-dish-restaurants",
+    "Zomato, Mutton Kheema Pav in Mumbai (cost for two only): https://www.zomato.com/mumbai/restaurants/dish-mutton-kheema-pav",
+    "FoodiaQ, Irani Mutton Kheema Pav (₹360, own site): https://www.foodiaq.com/product/irani-mutton-kheema-pav/"
+  ],
+  "allergens": [
+    "milk",
+    "gluten"
+  ],
+  "dietClaims": [],
+  "fasting": {
+    "navratri": {
+      "status": "no",
+      "reason": "mutton, onion, garlic and wheat pav are all avoided"
+    },
+    "ekadashi": {
+      "status": "no",
+      "reason": "meat, onion, garlic and a wheat bread are avoided"
+    },
+    "jain": {
+      "status": "no",
+      "reason": "meat, onion, garlic and fresh ginger"
+    },
+    "ramadan": {
+      "status": "with-changes",
+      "reason": "use halal-sourced mutton; keema pav is a traditional sehri dish in Mumbai (Rana Safvi), but this plate is heavy and has about 1,430 mg sodium (est.), which adds to thirst during the fast"
+    }
+  },
+  "dietTags": {
+    "base": "Non-veg (mutton)",
+    "jain": {
+      "status": "no",
+      "reason": "mutton, onion, garlic, fresh ginger; Jain rules exclude meat and root vegetables"
+    },
+    "vegan": {
+      "status": "no",
+      "reason": "mutton, butter on the pav"
+    },
+    "pescatarian": {
+      "status": "no",
+      "reason": "contains mutton (red meat)"
+    },
+    "sattvik": {
+      "status": "no",
+      "reason": "contains onion and garlic, and meat"
+    },
+    "glutenFree": {
+      "status": "no",
+      "reason": "the pav is wheat bread; the keema itself has no wheat (this recipe uses no hing), so serve it on gluten-free bread (see Gluten-free variant)"
+    },
+    "dairyFree": {
+      "status": "with-changes",
+      "reason": "toast the pav in oil instead of butter (8 g butter → 5 g oil); check that the pav is made without milk or butter, as some bakeries use them"
+    },
+    "allergensDeclared": [
+      "gluten",
+      "milk"
+    ]
+  },
+  "tags": [
+    "Non-veg",
+    "Gluten-free option",
+    "Dairy-free option",
+    "Veg option",
+    "Contains milk",
+    "Contains gluten",
+    "Breakfast",
+    "Dinner",
+    "Snack",
+    "Mumbai",
+    "Under 60 min",
+    "Beginner",
+    "High protein",
+    "High fibre"
+  ],
+  "description": "Family: keema-pav",
+  "familyId": null,
+  "variants": [
+    {
+      "category": "Vegetarian",
+      "status": "variant",
+      "name": "Soya Keema Pav",
+      "origin": "established",
+      "linkedDishNumber": null,
+      "reason": null
+    },
+    {
+      "category": "Gluten-free",
+      "status": "variant",
+      "name": "Keema on gluten-free bread",
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": null
+    },
+    {
+      "category": "Dairy-free",
+      "status": "variant",
+      "name": "Oil-toasted Keema Pav",
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": null
+    },
+    {
+      "category": "Chicken",
+      "status": "variant",
+      "name": "Chicken Keema Pav",
+      "origin": "established",
+      "linkedDishNumber": null,
+      "reason": null
+    }
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-10-23",
+      "file": "FitPlate_Dishes_2026-10-23.md"
+    }
+  ],
+  "mergeMethod": {
+    "nutritionPerServing": "stable (single)",
+    "ingredients": "newest",
+    "steps": "newest",
+    "healthiness": "newest",
+    "researchRating": "newest",
+    "sources": "union",
+    "tags": "tag engine (tags.ts) on the merged dish"
+  },
+  "mergeNotes": []
+}

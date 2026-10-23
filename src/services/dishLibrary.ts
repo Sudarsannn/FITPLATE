@@ -9,6 +9,7 @@ import { getIngredient } from '../data/research';
 import type { AllergenId, Dish } from '../models/research';
 import { ALLERGEN_IDS } from '../models/research';
 import { dishCostToMake, rupeesPer10gProtein, savingVsOrder } from './costToMake';
+import { caloriesSaved } from './dishDetail';
 import { ALLERGEN_LABELS } from './data/allergens';
 import { cuisineTag, TAG } from './data/tags';
 import type { FilterGroup, FilterOption, SearchDoc, SortOption } from './search';
@@ -154,6 +155,7 @@ export const DISH_SORTS: SortOption<Dish>[] = [
   ...(featureFlags.proteinPerRupee
     ? [{ id: 'protein-per-rupee', label: 'Protein per ₹', value: (d: Dish) => rupeesPer10gProtein(makeCost(d), d.nutritionPerServing.proteinG), direction: 'asc' as const }]
     : []),
+  ...(featureFlags.calorieGapBadge ? [{ id: 'kcal-saved', label: 'Most kcal saved vs restaurant', value: (d: Dish) => caloriesSaved(d), direction: 'desc' as const }] : []),
 ];
 
 /** Day 8: cost to make one serving from the bundled ingredient prices. */

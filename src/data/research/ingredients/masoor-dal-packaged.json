@@ -1,0 +1,73 @@
+{
+  "id": "masoor-dal-packaged",
+  "name": "Masoor dal, packaged",
+  "aliases": [
+    "split red lentils",
+    "skinned",
+    "dhuli masoor dal"
+  ],
+  "category": "Pulse",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-23",
+        "min": 95,
+        "max": 145,
+        "avg": 120,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-23.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 100,
+      "max": 140,
+      "avg": 120
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-23",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": null,
+    "platforms": [],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
+  },
+  "per100Estimate": {
+    "min": 10,
+    "max": 14,
+    "avg": 12
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": null,
+  "storage": null,
+  "looksLike": null,
+  "howToPick": null,
+  "shelfLife": null,
+  "substitutes": [],
+  "usedIn": [],
+  "versions": [
+    {
+      "date": "2026-10-23",
+      "file": "FitPlate_Ingredients_2026-10-23.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (none)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "looksLike": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 95.0–145.0 was wider than 30% of avg 120.0; narrowed to ±15%.",
+    "2026-10-23: no detail section found"
+  ]
+}

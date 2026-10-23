@@ -28,6 +28,10 @@ export type IngredientVersion = {
   sourcesChecked: number | null;
   confidence: Confidence | null;
   storage: string | null;
+  /** Basics "What it looks like" and Buying guide "How to pick" / "Shelf life" (Day 9 checklist). */
+  looksLike: string | null;
+  howToPick: string | null;
+  shelfLife: string | null;
   substitutes: string[];
   macrosPer100: Macros | null;
   nutritionPer100g: NutrientPer100 | null;
@@ -221,6 +225,8 @@ export function parseIngredientFile(text: string, file: string): { items: Ingred
       .map((b) => /^\*\*(.+?)[:.]?\*\*/.exec(b)?.[1]?.replace(/:$/, '').trim() ?? /^([^:]{2,60}):/.exec(plain(b))?.[1]?.trim() ?? null)
       .filter((s): s is string => !!s);
     const storageBody = body(4, /storage/i);
+    const basics = body(1, /basics/i);
+    const buying = body(3, /buying/i);
 
     items.push({
       id,
@@ -244,6 +250,9 @@ export function parseIngredientFile(text: string, file: string): { items: Ingred
       sourcesChecked: num(/(\d+)/.exec(cells[6])?.[1]),
       confidence: confidenceOf(cells[7]),
       storage: storageBody ? (labelled(storageBody, ['Storage', 'Fridge', 'Pantry']) ?? (bullets(storageBody).map(plain).join(' ') || null)) : null,
+      looksLike: basics ? labelled(basics, ['What it looks like']) : null,
+      howToPick: buying ? labelled(buying, ['How to pick']) : null,
+      shelfLife: buying ? labelled(buying, ['Shelf life']) : null,
       substitutes,
       macrosPer100: parseMacros(body(6, /nutrition/i)),
       nutritionPer100g: json ? nutritionFromJson(json.nutrition ?? null) : null,

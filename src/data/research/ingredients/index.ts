@@ -89,6 +89,7 @@ import item_lemon from './lemon.json';
 import item_light_soy_sauce from './light-soy-sauce.json';
 import item_malvani_masala_packaged from './malvani-masala-packaged.json';
 import item_marathi_moggu from './marathi-moggu.json';
+import item_masoor_dal_packaged from './masoor-dal-packaged.json';
 import item_milk_toned from './milk-toned.json';
 import item_mint_leaves from './mint-leaves.json';
 import item_moong_dal_split_yellow_skinless from './moong-dal-split-yellow-skinless.json';
@@ -97,12 +98,14 @@ import item_moth_beans_dry from './moth-beans-dry.json';
 import item_mustard_oil_kachi_ghani from './mustard-oil-kachi-ghani.json';
 import item_mustard_seeds from './mustard-seeds.json';
 import item_mutton_goat_bone_in_curry_cut from './mutton-goat-bone-in-curry-cut.json';
+import item_mutton_mince_keema from './mutton-mince-keema.json';
 import item_okra from './okra.json';
 import item_onion from './onion.json';
 import item_paneer from './paneer.json';
 import item_pav from './pav.json';
 import item_pav_bhaji_masala from './pav-bhaji-masala.json';
 import item_peanuts_raw from './peanuts-raw.json';
+import item_pineapple_fresh_whole from './pineapple-fresh-whole.json';
 import item_pistachios_unsalted_shelled_kernels from './pistachios-unsalted-shelled-kernels.json';
 import item_pomegranate from './pomegranate.json';
 import item_poppy_seeds from './poppy-seeds.json';
@@ -142,6 +145,7 @@ import item_tomato_ketchup from './tomato-ketchup.json';
 import item_toor_dal from './toor-dal.json';
 import item_turmeric_powder from './turmeric-powder.json';
 import item_urad_dal_split_skinned from './urad-dal-split-skinned.json';
+import item_wheat_vermicelli_roasted_or_plain_packaged from './wheat-vermicelli-roasted-or-plain-packaged.json';
 import item_white_vinegar_synthetic from './white-vinegar-synthetic.json';
 import item_whole_black_gram from './whole-black-gram.json';
 import item_whole_green_moong from './whole-green-moong.json';
@@ -236,6 +240,7 @@ export const items: Ingredient[] = [
   item_light_soy_sauce as unknown as Ingredient,
   item_malvani_masala_packaged as unknown as Ingredient,
   item_marathi_moggu as unknown as Ingredient,
+  item_masoor_dal_packaged as unknown as Ingredient,
   item_milk_toned as unknown as Ingredient,
   item_mint_leaves as unknown as Ingredient,
   item_moong_dal_split_yellow_skinless as unknown as Ingredient,
@@ -244,12 +249,14 @@ export const items: Ingredient[] = [
   item_mustard_oil_kachi_ghani as unknown as Ingredient,
   item_mustard_seeds as unknown as Ingredient,
   item_mutton_goat_bone_in_curry_cut as unknown as Ingredient,
+  item_mutton_mince_keema as unknown as Ingredient,
   item_okra as unknown as Ingredient,
   item_onion as unknown as Ingredient,
   item_paneer as unknown as Ingredient,
   item_pav as unknown as Ingredient,
   item_pav_bhaji_masala as unknown as Ingredient,
   item_peanuts_raw as unknown as Ingredient,
+  item_pineapple_fresh_whole as unknown as Ingredient,
   item_pistachios_unsalted_shelled_kernels as unknown as Ingredient,
   item_pomegranate as unknown as Ingredient,
   item_poppy_seeds as unknown as Ingredient,
@@ -289,6 +296,7 @@ export const items: Ingredient[] = [
   item_toor_dal as unknown as Ingredient,
   item_turmeric_powder as unknown as Ingredient,
   item_urad_dal_split_skinned as unknown as Ingredient,
+  item_wheat_vermicelli_roasted_or_plain_packaged as unknown as Ingredient,
   item_white_vinegar_synthetic as unknown as Ingredient,
   item_whole_black_gram as unknown as Ingredient,
   item_whole_green_moong as unknown as Ingredient,

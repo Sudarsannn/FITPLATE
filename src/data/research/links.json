@@ -1,6 +1,6 @@
 {
   "schema": "fitplate.links.v1",
-  "generatedFor": "Day08",
+  "generatedFor": "Day09",
   "goodSourceDishes": {
     "biotin": [
       {
@@ -373,7 +373,7 @@
       {
         "dishNumber": 62,
         "dishName": "Mutton Biryani",
-        "dishId": null
+        "dishId": "062-mutton-biryani"
       },
       {
         "dishNumber": 45,
@@ -460,7 +460,7 @@
       {
         "dishNumber": 62,
         "dishName": "Mutton Biryani",
-        "dishId": null
+        "dishId": "062-mutton-biryani"
       },
       {
         "dishNumber": 93,
@@ -559,7 +559,7 @@
       {
         "dishNumber": 73,
         "dishName": "Rava Fish Fry",
-        "dishId": null
+        "dishId": "073-rava-fish-fry"
       },
       {
         "dishNumber": 55,
@@ -858,6 +858,10 @@
     "025-veg-pulao": [
       "vitamin-a"
     ],
+    "062-mutton-biryani": [
+      "vitamin-b12",
+      "vitamin-b6"
+    ],
     "059-chicken-kathi-roll": [
       "vitamin-b12"
     ],
@@ -894,6 +898,9 @@
     "037-bhindi-masala": [
       "vitamin-c"
     ],
+    "073-rava-fish-fry": [
+      "vitamin-d"
+    ],
     "030-lemon-rice": [
       "vitamin-e"
     ],
@@ -914,7 +921,8 @@
       "familyId": "biryani",
       "dishIds": [
         "002-chicken-biryani",
-        "039-veg-biryani"
+        "039-veg-biryani",
+        "062-mutton-biryani"
       ],
       "how": "name"
     },
@@ -2015,6 +2023,68 @@
         "per100": 0,
         "unit": "µg",
         "source": "ingredient research (USDA FDC: USDA FDC 172337 Oil, mustard (SR Legacy), per 100 g via getfoodfacts.com, HealthifyMe and a USDA-citing listing; converted to per 100 ml at 0.92 g/ml (FitPlate dish-file density); zero by composition: protein_g, carbohydrate_g, sugars_g, fibre_g, added_sugars_g, cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
+    "mutton-mince-keema": {
+      "iron": {
+        "per100": 2.83,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 175303 'Game meat, goat, raw' (raw goat meat, not specifically minced); values seen only on secondary sites (myfooddata, foodintake, nutriranker and others quoting it); zero by composition: carbohydrate_g, sugars_g, fibre_g)"
+      },
+      "potassium": {
+        "per100": 385,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 175303 'Game meat, goat, raw' (raw goat meat, not specifically minced); values seen only on secondary sites (myfooddata, foodintake, nutriranker and others quoting it); zero by composition: carbohydrate_g, sugars_g, fibre_g)"
+      },
+      "zinc": {
+        "per100": 3.9,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 175303 'Game meat, goat, raw' (raw goat meat, not specifically minced); values seen only on secondary sites (myfooddata, foodintake, nutriranker and others quoting it); zero by composition: carbohydrate_g, sugars_g, fibre_g)"
+      },
+      "sodium": {
+        "per100": 82,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 175303 'Game meat, goat, raw' (raw goat meat, not specifically minced); values seen only on secondary sites (myfooddata, foodintake, nutriranker and others quoting it); zero by composition: carbohydrate_g, sugars_g, fibre_g)"
+      },
+      "cholesterol": {
+        "per100": 57,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 175303 'Game meat, goat, raw' (raw goat meat, not specifically minced); values seen only on secondary sites (myfooddata, foodintake, nutriranker and others quoting it); zero by composition: carbohydrate_g, sugars_g, fibre_g)"
+      },
+      "phosphorus": {
+        "per100": 180,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 175303 'Game meat, goat, raw' (raw goat meat, not specifically minced); values seen only on secondary sites (myfooddata, foodintake, nutriranker and others quoting it); zero by composition: carbohydrate_g, sugars_g, fibre_g)"
+      },
+      "selenium": {
+        "per100": 8.8,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 175303 'Game meat, goat, raw' (raw goat meat, not specifically minced); values seen only on secondary sites (myfooddata, foodintake, nutriranker and others quoting it); zero by composition: carbohydrate_g, sugars_g, fibre_g)"
+      },
+      "copper": {
+        "per100": 0.3,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 175303 'Game meat, goat, raw' (raw goat meat, not specifically minced); values seen only on secondary sites (myfooddata, foodintake, nutriranker and others quoting it); zero by composition: carbohydrate_g, sugars_g, fibre_g)"
+      },
+      "thiamine": {
+        "per100": 0.11,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 175303 'Game meat, goat, raw' (raw goat meat, not specifically minced); values seen only on secondary sites (myfooddata, foodintake, nutriranker and others quoting it); zero by composition: carbohydrate_g, sugars_g, fibre_g)"
+      },
+      "riboflavin": {
+        "per100": 0.49,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 175303 'Game meat, goat, raw' (raw goat meat, not specifically minced); values seen only on secondary sites (myfooddata, foodintake, nutriranker and others quoting it); zero by composition: carbohydrate_g, sugars_g, fibre_g)"
+      },
+      "niacin": {
+        "per100": 3.75,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 175303 'Game meat, goat, raw' (raw goat meat, not specifically minced); values seen only on secondary sites (myfooddata, foodintake, nutriranker and others quoting it); zero by composition: carbohydrate_g, sugars_g, fibre_g)"
+      },
+      "vitamin-b12": {
+        "per100": 1.13,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 175303 'Game meat, goat, raw' (raw goat meat, not specifically minced); values seen only on secondary sites (myfooddata, foodintake, nutriranker and others quoting it); zero by composition: carbohydrate_g, sugars_g, fibre_g)"
       }
     },
     "okra": {

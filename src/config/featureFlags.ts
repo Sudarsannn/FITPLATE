@@ -27,6 +27,8 @@ export const featureFlags = {
   dishJumpChips: true,
   /** Innovation (Day 08, review idea 4): "₹ per 10 g protein" on the dish page and a "Protein per ₹" sort. */
   proteinPerRupee: true,
+  /** Innovation (Day 07 idea, built Day 09): "N kcal lighter than the restaurant version" on Cook cards and a matching sort, only where the restaurant published its calories. */
+  calorieGapBadge: true,
   /** Priority plan P1-b: Google sign-in inside the iPhone / Android dev build. Only shows when that platform's client ID is in .env. */
   nativeGoogleSignIn: true,
   /** Priority plan P2-c: read the research library from the server when it is newer than the bundled copy. */

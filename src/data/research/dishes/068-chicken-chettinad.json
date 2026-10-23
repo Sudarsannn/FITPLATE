@@ -1,0 +1,670 @@
+{
+  "id": "068-chicken-chettinad",
+  "number": 68,
+  "name": "Chicken Chettinad",
+  "cuisine": "Tamil Nadu (Chettinad / Karaikudi region; South Indian)",
+  "dietType": "non-veg",
+  "mealType": [
+    "lunch",
+    "dinner"
+  ],
+  "difficulty": "Intermediate",
+  "prepMin": 15,
+  "cookMin": 35,
+  "servings": 1,
+  "ingredients": [
+    {
+      "ingredientId": null,
+      "name": "Chicken and marinade",
+      "quantity": null,
+      "unit": null,
+      "householdMeasure": null
+    },
+    {
+      "ingredientId": "chicken-curry-cut-bone-in-skinless",
+      "name": "Chicken, curry cut, bone-in, skinless",
+      "quantity": 200,
+      "unit": "g",
+      "householdMeasure": "6–7 medium pieces"
+    },
+    {
+      "ingredientId": "turmeric-powder",
+      "name": "Turmeric powder (haldi)",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "A pinch (⅛ tsp)"
+    },
+    {
+      "ingredientId": "salt",
+      "name": "Salt (namak), for the marinade",
+      "quantity": 1,
+      "unit": "g",
+      "householdMeasure": "A scant ¼ tsp"
+    },
+    {
+      "ingredientId": null,
+      "name": "Chettinad masala (dry-roasted and ground)",
+      "quantity": null,
+      "unit": null,
+      "householdMeasure": null
+    },
+    {
+      "ingredientId": "coriander-seeds-whole",
+      "name": "Coriander seeds (sabut dhania)",
+      "quantity": 4,
+      "unit": "g",
+      "householdMeasure": "1½ tsp"
+    },
+    {
+      "ingredientId": "black-peppercorns-whole",
+      "name": "Black peppercorns (kali mirch)",
+      "quantity": 2,
+      "unit": "g",
+      "householdMeasure": "¾ tsp"
+    },
+    {
+      "ingredientId": null,
+      "name": "Dry red chillies (sookhi lal mirch)",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "2–3 chillies (use Kashmiri for colour, Guntur for heat)"
+    },
+    {
+      "ingredientId": "fennel-seeds-whole",
+      "name": "Fennel seeds (saunf)",
+      "quantity": 1,
+      "unit": "g",
+      "householdMeasure": "½ tsp"
+    },
+    {
+      "ingredientId": "cumin-seeds",
+      "name": "Cumin seeds (jeera)",
+      "quantity": 1,
+      "unit": "g",
+      "householdMeasure": "½ tsp"
+    },
+    {
+      "ingredientId": "poppy-seeds",
+      "name": "Poppy seeds (khus khus)",
+      "quantity": 2,
+      "unit": "g",
+      "householdMeasure": "¾ tsp"
+    },
+    {
+      "ingredientId": "cloves",
+      "name": "Cloves (laung)",
+      "quantity": 2,
+      "unit": null,
+      "householdMeasure": "2 pieces"
+    },
+    {
+      "ingredientId": "cinnamon-cassia",
+      "name": "Cinnamon (dalchini)",
+      "quantity": 1,
+      "unit": "small",
+      "householdMeasure": "2 cm stick"
+    },
+    {
+      "ingredientId": "green-cardamom",
+      "name": "Green cardamom (elaichi)",
+      "quantity": 1,
+      "unit": null,
+      "householdMeasure": "1 pod"
+    },
+    {
+      "ingredientId": "star-anise",
+      "name": "Star anise (chakri phool)",
+      "quantity": 1,
+      "unit": null,
+      "householdMeasure": "1 point of the star"
+    },
+    {
+      "ingredientId": "kalpasi-stone-flower-dried-lichen",
+      "name": "Kalpasi / stone flower (dagad phool), optional",
+      "quantity": 0.3,
+      "unit": "g",
+      "householdMeasure": "A small pinch"
+    },
+    {
+      "ingredientId": "fresh-coconut-grated",
+      "name": "Coconut, fresh, grated (nariyal)",
+      "quantity": 20,
+      "unit": "g",
+      "householdMeasure": "3 tbsp"
+    },
+    {
+      "ingredientId": null,
+      "name": "Water, for grinding",
+      "quantity": 30,
+      "unit": "ml",
+      "householdMeasure": "2 tbsp"
+    },
+    {
+      "ingredientId": null,
+      "name": "Gravy",
+      "quantity": null,
+      "unit": null,
+      "householdMeasure": null
+    },
+    {
+      "ingredientId": "sesame-oil-gingelly-til-oil-everyday-grade",
+      "name": "Gingelly oil / sesame oil (til ka tel; untoasted Indian kind)",
+      "quantity": 12,
+      "unit": "ml",
+      "householdMeasure": "2½ tsp"
+    },
+    {
+      "ingredientId": "fennel-seeds-whole",
+      "name": "Fennel seeds (saunf), for tempering",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "¼ tsp"
+    },
+    {
+      "ingredientId": "curry-leaves",
+      "name": "Curry leaves (kadi patta)",
+      "quantity": 1,
+      "unit": "g",
+      "householdMeasure": "1 sprig (about 10 leaves)"
+    },
+    {
+      "ingredientId": "onion",
+      "name": "Onion (pyaaz), finely chopped",
+      "quantity": 70,
+      "unit": "g",
+      "householdMeasure": "1 small onion"
+    },
+    {
+      "ingredientId": "green-chilli",
+      "name": "Green chilli (hari mirch), slit",
+      "quantity": 4,
+      "unit": "g",
+      "householdMeasure": "1 small chilli"
+    },
+    {
+      "ingredientId": "ginger-garlic-paste",
+      "name": "Ginger-garlic paste (adrak-lahsun)",
+      "quantity": 10,
+      "unit": "g",
+      "householdMeasure": "2 tsp"
+    },
+    {
+      "ingredientId": "tomato",
+      "name": "Tomato, finely chopped",
+      "quantity": 70,
+      "unit": "g",
+      "householdMeasure": "1 small tomato"
+    },
+    {
+      "ingredientId": "salt",
+      "name": "Salt (namak), for the gravy",
+      "quantity": 1.5,
+      "unit": "g",
+      "householdMeasure": "¼ tsp"
+    },
+    {
+      "ingredientId": null,
+      "name": "Water, for the gravy",
+      "quantity": 120,
+      "unit": "ml",
+      "householdMeasure": "½ cup"
+    },
+    {
+      "ingredientId": "coriander-leaves",
+      "name": "Coriander leaves (hara dhania), chopped",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "1 tbsp"
+    }
+  ],
+  "equipment": [
+    "Heavy kadai or deep pan with a lid (20 cm), for the curry",
+    "Small pan or tawa, for dry-roasting the spices",
+    "Mixer-grinder with a small (chutney) jar, for the masala paste",
+    "Mixing bowl, small plate (for cooling the spices), knife, chopping board, spatula, measuring spoons",
+    "Optional: pressure cooker (cook the chicken 1 whistle instead of simmering, if the pieces are large or from an older bird)"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "title": "Wash the chicken",
+      "text": "Rinse 200 g chicken pieces under running water and drain well.",
+      "timerSec": 120,
+      "tip": "Wash your hands, knife and board with soap after handling raw chicken.",
+      "visualCue": "Water runs clear; no blood pooling",
+      "cameraCheck": "The drained chicken in a colander",
+      "videoShot": "Chicken pieces rinsed under a tap."
+    },
+    {
+      "n": 2,
+      "title": "Marinate",
+      "text": "Rub the chicken with 0.5 g (a pinch) turmeric and 1 g (scant ¼ tsp) salt. Set aside.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Every piece evenly yellow",
+      "cameraCheck": "The coated chicken in the bowl",
+      "videoShot": "Hands turning chicken in yellow turmeric."
+    },
+    {
+      "n": 3,
+      "title": "Chop the onion",
+      "text": "Finely chop 70 g onion.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "Small, even pieces about 3–4 mm",
+      "cameraCheck": "The chopped onion",
+      "videoShot": "A knife chopping onion finely."
+    },
+    {
+      "n": 4,
+      "title": "Chop the tomato",
+      "text": "Finely chop 70 g tomato and slit the green chilli.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Small, juicy tomato pieces",
+      "cameraCheck": "The tomato and the slit chilli",
+      "videoShot": "A knife dicing tomato."
+    },
+    {
+      "n": 5,
+      "title": "Heat the roasting pan",
+      "text": "Heat a small pan or tawa on low-medium heat, dry (no oil).",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "A drop of water sizzles away in 2–3 seconds",
+      "cameraCheck": "The empty pan on the flame",
+      "videoShot": "A water drop dancing on the hot pan."
+    },
+    {
+      "n": 6,
+      "title": "Roast the whole spices",
+      "text": "Add 4 g coriander seeds, 2 g peppercorns, the dry red chillies, 1 g fennel, 1 g cumin, 2 cloves, the cinnamon, 1 cardamom, 1 star-anise petal and the kalpasi (if using). Stir continuously.",
+      "timerSec": 180,
+      "tip": "Keep the heat low and keep stirring; burnt spices make the curry bitter. If any turn black, start again.",
+      "visualCue": "Coriander turns a shade darker, the chillies puff and crisp; a strong roasted, peppery smell",
+      "cameraCheck": "The roasted spices in the pan",
+      "videoShot": "Spices tumbling and darkening in a dry pan."
+    },
+    {
+      "n": 7,
+      "title": "Roast the poppy seeds",
+      "text": "Add 2 g poppy seeds and stir.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "The seeds turn from white to light cream and start to pop",
+      "cameraCheck": "The pan with the poppy seeds in",
+      "videoShot": "Tiny seeds jumping in the pan."
+    },
+    {
+      "n": 8,
+      "title": "Roast the coconut",
+      "text": "Add 20 g grated coconut and keep stirring.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "The coconut turns golden-brown and smells toasty, not burnt",
+      "cameraCheck": "The golden coconut and spices",
+      "videoShot": "White coconut shreds browning among the spices."
+    },
+    {
+      "n": 9,
+      "title": "Cool the masala",
+      "text": "Tip everything onto a plate to stop the cooking.",
+      "timerSec": 180,
+      "tip": null,
+      "visualCue": "Cool enough to touch",
+      "cameraCheck": "The spread-out masala on the plate",
+      "videoShot": "Roasted masala tipped onto a steel plate."
+    },
+    {
+      "n": 10,
+      "title": "Grind the masala",
+      "text": "Grind the cooled mix to a powder first, then add 30 ml (2 tbsp) water and grind to a smooth, thick paste.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "A smooth, dark brown paste with no whole peppercorns",
+      "cameraCheck": "The paste in the mixer jar",
+      "videoShot": "The open jar with a thick brown paste."
+    },
+    {
+      "n": 11,
+      "title": "Heat the oil",
+      "text": "Heat 12 ml (2½ tsp) gingelly oil in the kadai on medium heat.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "The oil shimmers",
+      "cameraCheck": "The oil in the kadai",
+      "videoShot": "Oil swirling in the kadai."
+    },
+    {
+      "n": 12,
+      "title": "Temper",
+      "text": "Add ¼ tsp fennel seeds and the curry leaves.",
+      "timerSec": 20,
+      "tip": "Stand back; wet curry leaves spit.",
+      "visualCue": "Fennel darkens slightly; curry leaves crackle and turn glossy",
+      "cameraCheck": "The tempering in the oil",
+      "videoShot": "Curry leaves spluttering in hot oil."
+    },
+    {
+      "n": 13,
+      "title": "Fry the onion",
+      "text": "Add the onion and green chilli and fry, stirring every 30 seconds.",
+      "timerSec": 360,
+      "tip": null,
+      "visualCue": "Onion soft and light golden-brown at the edges",
+      "cameraCheck": "The browned onion",
+      "videoShot": "Onion turning golden in the kadai."
+    },
+    {
+      "n": 14,
+      "title": "Add ginger-garlic paste",
+      "text": "Add 10 g (2 tsp) ginger-garlic paste and stir.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "The raw garlic smell is gone",
+      "cameraCheck": "The onion with the paste mixed in",
+      "videoShot": "A spoon stirring paste into onions."
+    },
+    {
+      "n": 15,
+      "title": "Add the tomato",
+      "text": "Add the tomato and 1.5 g (¼ tsp) salt; cook, stirring.",
+      "timerSec": 180,
+      "tip": null,
+      "visualCue": "The tomato breaks down to a soft, mushy masala",
+      "cameraCheck": "The softened tomato masala",
+      "videoShot": "The spatula pressing soft tomato."
+    },
+    {
+      "n": 16,
+      "title": "Add the chicken",
+      "text": "Add the marinated chicken and stir-fry on medium-high heat.",
+      "timerSec": 180,
+      "tip": null,
+      "visualCue": "The chicken turns opaque white on all sides",
+      "cameraCheck": "The chicken in the masala",
+      "videoShot": "Chicken pieces turning white in the masala."
+    },
+    {
+      "n": 17,
+      "title": "Add the ground masala",
+      "text": "Add all the Chettinad paste (rinse the jar with 2 tbsp of the 120 ml water and add that too). Stir to coat the chicken.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "The chicken is coated in a thick, dark brown masala",
+      "cameraCheck": "The coated chicken",
+      "videoShot": "Brown paste being stirred through the chicken."
+    },
+    {
+      "n": 18,
+      "title": "Add water and simmer",
+      "text": "Add the rest of the 120 ml water, bring to a boil, cover and simmer on low heat, stirring every 5 min.",
+      "timerSec": 900,
+      "tip": null,
+      "visualCue": "The chicken is cooked through; a piece cut at the thickest part shows no pink and clear juices",
+      "cameraCheck": "A piece of chicken cut open on a spoon",
+      "videoShot": "The lid lifted on a bubbling brown gravy."
+    },
+    {
+      "n": 19,
+      "title": "Finish the gravy",
+      "text": "Uncover and cook until the gravy is as thick as you like.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "A thick, coating gravy with a thin layer of red-brown oil at the edges",
+      "cameraCheck": "The gravy with oil at the edges",
+      "videoShot": "The spatula dragging through thick gravy."
+    },
+    {
+      "n": 20,
+      "title": "Taste and garnish",
+      "text": "Taste for salt and pepper, turn off the heat and scatter 1 tbsp chopped coriander leaves.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Green coriander on dark brown gravy",
+      "cameraCheck": "The finished curry in the kadai",
+      "videoShot": "Coriander falling onto the curry."
+    },
+    {
+      "n": 21,
+      "title": "Rest and serve",
+      "text": "Leave covered for 5 min so the spices settle, then serve hot.",
+      "timerSec": 300,
+      "tip": "The curry tastes even better after a few hours.",
+      "visualCue": "The gravy thickens a little more",
+      "cameraCheck": "The served bowl with chicken pieces visible",
+      "videoShot": "Steam rising from a bowl of Chicken Chettinad."
+    }
+  ],
+  "nutritionPerServing": {
+    "kcal": 460,
+    "proteinG": 36,
+    "carbsG": 23,
+    "fatG": 24,
+    "fibreG": 8
+  },
+  "microNutrientsEstimate": {
+    "values": {
+      "calcium": 86.7,
+      "cholesterol": 0,
+      "copper": 0,
+      "folate": 5.5,
+      "iron": 1.8,
+      "magnesium": 35.7,
+      "manganese": 0.2,
+      "niacin": 0.1,
+      "phosphorus": 7.3,
+      "potassium": 188.2,
+      "riboflavin": 0,
+      "selenium": 0,
+      "sodium": 7.6,
+      "thiamine": 0,
+      "vitamin-a": 19.2,
+      "vitamin-b12": 0,
+      "vitamin-b6": 0,
+      "vitamin-c": 19.5,
+      "vitamin-d": 0,
+      "vitamin-e": 0.2,
+      "vitamin-k": 9.7,
+      "zinc": 0.5
+    },
+    "coveragePct": 21,
+    "basis": "partial estimate from ingredient quantities"
+  },
+  "asOrdered": {
+    "price": null,
+    "nutrition": {
+      "calories": {
+        "value": null,
+        "source": null
+      },
+      "protein": {
+        "value": null,
+        "source": null
+      },
+      "carbs": {
+        "value": null,
+        "source": null
+      },
+      "fat": {
+        "value": null,
+        "source": null
+      },
+      "fibre": {
+        "value": null,
+        "source": null
+      }
+    },
+    "restaurantsSampled": null,
+    "platforms": [
+      "Swiggy",
+      "Zomato",
+      "magicpin"
+    ]
+  },
+  "orderPrice": null,
+  "healthiness": {
+    "score": 7,
+    "restaurantScore": 5,
+    "reasons": [
+      "lean skinless chicken gives 36 g of protein for about 460 kcal, the gravy is built on whole spices, onion and tomato (8 g fibre), and nothing is deep-fried; 12 ml oil is moderate. Points come off for saturated fat from coconut (about 9 g), sodium (about 1,100 mg) and few vegetables. Restaurant versions usually use more oil (often groundnut or refined oil, sometimes a layer floating on top), more salt and sometimes coconut milk or cream."
+    ]
+  },
+  "researchRating": {
+    "score": 4.4,
+    "basis": "a classic and widely loved Tamil curry with its own Wikipedia article, on South Indian and North Indian restaurant menus across India and abroad (UK, US, Canada, Singapore and Dubai listings seen), and highly rated on recipe sites: Indian Healthy Recipes 4.97/5 (227 votes), Glebe Kitchen 4.88/5 (32 votes), Yummy Tummy Aarthi 4.07/5 (16 votes). Deduction: Hari Ghotra's version sits at 3.5/5 (447 votes), and the heat and long spice list put some cooks off; restaurant versions are often said to be \"Chettinad\" in name only."
+  },
+  "storage": "Cool within 1 hour, then refrigerate in a closed box for up to 2 days, or freeze for up to 1 month (the coconut gravy freezes well). Reheat once, in a pan on low heat with 2–3 tbsp water, stirring, for 5–6 min until steaming hot right through (or covered in a microwave for 2–3 min, stirring halfway). Thaw frozen curry in the fridge overnight first.",
+  "leftoverRemix": "Chettinad chicken kothu-style wrap. Pull the chicken off the bone, cook it down with the leftover gravy until almost dry, add a handful of sliced onion and capsicum, and roll it in a warm roti or parotta with a smear of mint chutney. Use within the same 2-day window.",
+  "burnOff": "about 6.6 km of running (460 ÷ 70 kcal/km, for a 70 kg adult), or about 9.2 km of brisk walking (about 1 hour 50 minutes at 5 km/h, using about 50 kcal/km for walking) (est.). Rice or parotta on the side is extra.",
+  "sources": [
+    "Indian Healthy Recipes (Swasthi), Chicken Chettinad Gravy (gingelly oil optional; 4.97/5 from 227 votes): https://www.indianhealthyrecipes.com/chettinad-chicken-curry/ ; print: https://www.indianhealthyrecipes.com/wprm_print/chicken-chettinad",
+    "Whisk Affair, Chicken Chettinad (Murgh Chettinad) (coriander, cumin, fennel, poppy seeds, cinnamon, star anise; coconut roasted dark brown): https://www.whiskaffair.com/wprm_print/chicken-chettinad-recipe-murgh-chettinad",
+    "Yummy Tummy Aarthi, Chicken Chettinad (kalpasi as the authentic spice; pressure-cooked method): https://www.yummytummyaarthi.com/wprm_print/chicken-chettinad-chettinad-chicken-recipe ; https://www.yummytummyaarthi.com/wprm_print/138132",
+    "Raksha's Kitchen, Chettinad chicken curry: https://www.rakshaskitchen.com/wprm_print/chettinad-chicken-curry",
+    "Sinfully Spicy, Chettinad chicken (coconut oil as the next-best swap for gingelly oil): https://sinfullyspicy.com/wprm_print/chettinad-chicken",
+    "Cook with Kushi, Chicken Chettinad: https://www.cookwithkushi.com/wprm_print/chicken-chettinad-spicy-chicken-curry",
+    "Glebe Kitchen, Chettinad chicken: https://glebekitchen.com/wprm_print/4147",
+    "Observatory wiki, Chettinad Chicken Curry (kalpasi and marathi mokku in the masala): https://observatory.wiki/wiki/Recipe:South_Asian/Chettinad_Chicken_Curry",
+    "Sanjeev Kapoor, Chicken Chettinaad: https://www.sanjeevkapoor.com/Recipe/Chicken-Chettinaad-Khazana-of-Indian-Recipes.html",
+    "Great British Chefs, Chettinad chicken curry (coconut milk or grated coconut added at the end): https://www.greatbritishchefs.com/recipes/chettinad-chicken-curry",
+    "Swiggy Instamart recipe, Chicken Chettinad: https://www.swiggy.com/instamart/recipe/chicken-chettinad",
+    "Wikipedia, Chicken Chettinad: https://en.wikipedia.org/wiki/Chicken_Chettinad",
+    "USDA FoodData Central (chicken broiler meat only, raw; sesame oil; coconut meat, raw; onion; tomato; garlic; ginger; green chilli; coriander leaves; spices): https://fdc.nal.usda.gov/",
+    "ICMR-NIN, Nutrient Requirements for Indians 2020 (RDA/EAR reference): https://www.nin.res.in/ ; IFCT 2017 referenced but values not confirmed from this environment.",
+    "FatSecret, generic Chicken Chettinad (context only): https://www.fatsecret.com.au/calories-nutrition/generic/chicken-chettinad",
+    "Same rule sets as earlier FitPlate dishes: Veg Recipes of India, Navratri fasting rules: https://www.vegrecipesofindia.com/navratri-fasting-rules-vrat-ka-khana/ ; Hindutone, Navratri 2026 fasting rules: https://hindutone.com/festivals/navratri-fasting-rules-2026-vrat-food-what-to-eat-avoid/ ; British Nutrition Foundation, healthy Ramadan: https://www.nutrition.org.uk/media/bytokjkm/healthy-ramadan-2021.pdf",
+    "Zomato, Chettinad Tiffun, 4 Bungalows (Chicken Chettinad Curry 500 ml ₹410): https://www.zomato.com/mumbai/chettinad-tiffun-1-4-bungalows/order",
+    "Zomato, Chettinad Tiffun, Powai: https://www.zomato.com/mumbai/chettinad-tiffun-powai/order ; magicpin, Chettinad Tiffun, Powai (combo ₹390): https://magicpin.in/Mumbai/Powai/Restaurant/Chettinad-Tiffun/store/157b998/ ; Dindoshi: https://magicpin.in/Mumbai/Dindoshi/Restaurant/Chettinad-Tiffun/store/5c0056/",
+    "Zomato, The Tanjore Tiffin Room, Versova (Chicken Chettinad ₹570; premium): https://www.zomato.com/mumbai/the-tanjore-tiffin-room-versova/order ; Swiggy, Khar West (₹570; Vegetable Chettinad ₹410; Paneer Chettinad ₹570): https://www.swiggy.com/city/mumbai/the-tanjore-tiffin-room-khar-west-rest358809 ; https://www.swiggy.com/menu/358809",
+    "Zomato, Taj Mahal Tea House, Bandra West (Chettinad Braised Chicken ₹780; premium): https://www.zomato.com/mumbai/taj-mahal-tea-house-reclamation-bandra-west/order",
+    "Zomato, De Aura Global Dining and Bar, Thane West (MMR, ₹629): https://www.zomato.com/mumbai/de-aura-global-dining-and-bar-majiwada-thane-west-thane/order",
+    "Zomato, Chicken Chettinad in Mumbai and Chettinad restaurants in Mumbai: https://www.zomato.com/mumbai/restaurants/dish-chicken-chettinad ; https://www.zomato.com/mumbai/best-chettinad-restaurants",
+    "Swiggy, Chettinad restaurants in Mumbai and non-veg thali page: https://www.swiggy.com/city/mumbai/chettinad-cuisine-restaurants ; https://www.swiggy.com/city/mumbai/non-veg-thali-dish-restaurants",
+    "Swiggy, Yummy Biryani, Mahim (Chicken Chettinad Biryani ₹400, context): https://www.swiggy.com/restaurants/yummy-biryani-mahim-dadar-mumbai-424786",
+    "magicpin, Jashn-E-Biryani (context): https://magicpin.in/Navi-Mumbai/Kharghar/Restaurant/Jash-E-Biryani/store/574cb6/",
+    "Swiggy Dineout, Dakshin Culture Curry, Mahim: https://www.swiggy.com/restaurants/mumbai/mahim/dakshin-culture-curry-6658/dineout ; District, Dadar: https://www.district.in/dining/mumbai/dakshin-culture-curry-dadar-shivaji-park",
+    "Swiggy outside Mumbai (context): Sri Madhavan Mess, Chennai: https://www.swiggy.com/city/chennai/sri-madhavan-mess-kolathur-rest44948 ; Aachi Mess, Vasco: https://www.swiggy.com/city/central-goa/aachi-mess-sou-vasco-rest1330045 ; Hotel Chola, Ramanathapuram: https://www.swiggy.com/city/ramanathapuram/hotel-chola-railway-feeder-road-rest199300 ; Hotel Praveen, Virudhachalam: https://www.swiggy.com/city/virudhachalam/hotel-praveen-virudhachalam-rest1174323",
+    "Recipe ratings: Indian Healthy Recipes, Glebe Kitchen, Yummy Tummy Aarthi (above); Hari Ghotra, Chettinad chicken (3.5/5, 447 votes): https://www.harighotra.co.uk/chettinad-chicken-recipe",
+    "Curly Tales, 7 best Chettinad chicken in Chennai: https://curlytales.com/?p=574619",
+    "Wikimedia Commons category Chicken Chettinad (via mirror listing): https://c.enwp.org/wiki/Category:Chicken_Chettinad"
+  ],
+  "allergens": [
+    "peanut",
+    "sesame"
+  ],
+  "dietClaims": [
+    "glutenFree",
+    "dairyFree"
+  ],
+  "fasting": {
+    "navratri": {
+      "status": "no",
+      "reason": "contains chicken, onion, garlic and table salt, all avoided under the common Navratri vrat rule set."
+    },
+    "ekadashi": {
+      "status": "no",
+      "reason": "contains chicken, onion and garlic, avoided on Ekadashi under the common rule set."
+    },
+    "jain": {
+      "status": "no",
+      "reason": "contains chicken, plus onion, garlic and fresh ginger (roots)."
+    },
+    "ramadan": {
+      "status": "with-changes",
+      "reason": "use halal chicken. A good iftar main with rice or parotta; at about 1,100 mg sodium (est.) and very peppery-hot it is salty and spicy for sehri unless the salt and chilli are cut."
+    }
+  },
+  "dietTags": {
+    "base": "Non-veg (chicken)",
+    "jain": {
+      "status": "no",
+      "reason": "contains chicken, plus onion, garlic and fresh ginger (roots)."
+    },
+    "vegan": {
+      "status": "no",
+      "reason": "contains chicken."
+    },
+    "pescatarian": {
+      "status": "no",
+      "reason": "contains chicken."
+    },
+    "sattvik": {
+      "status": "no",
+      "reason": "contains chicken, onion and garlic."
+    },
+    "glutenFree": {
+      "status": "yes",
+      "reason": "chicken, coconut, vegetables and whole spices; this recipe uses no hing (compounded hing contains wheat) and no flour. Check any packaged Chettinad masala label."
+    },
+    "dairyFree": {
+      "status": "yes",
+      "reason": "no curd, cream, ghee or milk; the richness comes from coconut and gingelly oil."
+    },
+    "allergensDeclared": [
+      "peanut",
+      "sesame"
+    ]
+  },
+  "tags": [
+    "Non-veg",
+    "Gluten-free",
+    "Dairy-free",
+    "Contains peanut",
+    "Contains sesame",
+    "Lunch",
+    "Dinner",
+    "Tamil Nadu",
+    "Under 60 min",
+    "Intermediate",
+    "High protein",
+    "High fibre"
+  ],
+  "description": "Family: chettinad-curry",
+  "familyId": null,
+  "variants": [
+    {
+      "category": "Jain",
+      "status": "not-appropriate",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": "the Jain diet excludes chicken, and the gravy relies on onion, garlic and fresh ginger (roots). A root-free vegetable Chettinad would be a separate dish."
+    },
+    {
+      "category": "Gluten-free",
+      "status": "already-fits",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": "main recipe already gluten-free (no hing, no flour). Check any packaged masala label."
+    },
+    {
+      "category": "Dairy-free",
+      "status": "already-fits",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": "main recipe already dairy-free (coconut and gingelly oil, no curd, cream or ghee)."
+    }
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-10-21",
+      "file": "FitPlate_Dishes_2026-10-21.md"
+    }
+  ],
+  "mergeMethod": {
+    "nutritionPerServing": "stable (single)",
+    "ingredients": "newest",
+    "steps": "newest",
+    "healthiness": "newest",
+    "researchRating": "newest",
+    "sources": "union",
+    "tags": "tag engine (tags.ts) on the merged dish"
+  },
+  "mergeNotes": [
+    "2026-10-21: research declares peanut not detected from ingredient names; added"
+  ]
+}

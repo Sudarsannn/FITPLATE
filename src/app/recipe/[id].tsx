@@ -10,7 +10,7 @@ import { dishArt, PhotoCredit, SelectChip, TagChip, dishPhoto } from '../../comp
 import { Bar, GradientButton, PressableScale } from '../../components/ui';
 import { VendorPlaceholders } from '../../components/vendors/VendorLogos';
 import { featureFlags } from '../../config/featureFlags';
-import { familyOf, getDish, researchLinks } from '../../data/research';
+import { familyOf, getDish, getIngredient, researchLinks } from '../../data/research';
 import { success, thud } from '../../lib/haptics';
 import { dayKey, useStore } from '../../lib/store';
 import type { Dish } from '../../models/research';
@@ -30,6 +30,7 @@ import {
   trendArrow,
 } from '../../services/dishDetail';
 import { makeCost, orderRange } from '../../services/dishLibrary';
+import { isPantryStaple, recipeAmountLabel } from '../../services/vendors/basket';
 import { colors, radius, type } from '../../theme';
 
 const HERO = 320;
@@ -261,9 +262,12 @@ function DishBody({ dish, back }: { dish: Dish; back: () => void }) {
         {dish.ingredients.length ? (
           dish.ingredients.map((i, k) => (
             <View key={`${i.name}-${k}`} style={[styles.ing, k > 0 && styles.ingLine]}>
-              <Text style={[styles.body, { flex: 1, marginTop: 0 }]}>{i.name}</Text>
+              <View style={{ flex: 1 }}>
+                <Text style={[styles.body, { marginTop: 0 }]}>{i.name}</Text>
+                {isPantryStaple(i.ingredientId ? getIngredient(i.ingredientId) : undefined, i.name) ? <Text style={styles.pantry}>Pantry staple</Text> : null}
+              </View>
               <Text style={styles.ingQty}>
-                {i.quantity != null ? `${Math.round(i.quantity * servings * 10) / 10}${i.unit ? ` ${i.unit}` : ''}` : servings === 1 ? (i.householdMeasure ?? '') : i.householdMeasure ? `${i.householdMeasure} × ${servings}` : ''}
+                {i.quantity != null ? recipeAmountLabel(i.quantity * servings, i.unit) : servings === 1 ? (i.householdMeasure ?? '') : i.householdMeasure ? `${i.householdMeasure} × ${servings}` : ''}
               </Text>
             </View>
           ))
@@ -715,6 +719,7 @@ const styles = StyleSheet.create({
   small: { color: colors.text, fontSize: 13, lineHeight: 18 },
   ing: { flexDirection: 'row', alignItems: 'center', gap: 10, paddingVertical: 9 },
   ingLine: { borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: colors.border },
+  pantry: { color: colors.warm, fontSize: 11, fontWeight: '800', marginTop: 2 },
   ingQty: { color: colors.muted, fontWeight: '700', fontSize: 13, maxWidth: '45%', textAlign: 'right' },
   topBar: { position: 'absolute', top: 0, left: 0, right: 0, backgroundColor: 'rgba(7,9,10,0.95)', alignItems: 'center', justifyContent: 'center', paddingHorizontal: 120, borderBottomWidth: 1, borderBottomColor: colors.border },
   topBtns: { position: 'absolute', left: 16, right: 16, flexDirection: 'row', justifyContent: 'space-between' },

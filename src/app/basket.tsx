@@ -1,7 +1,7 @@
 import { Ionicons } from '@expo/vector-icons';
 import { router, useLocalSearchParams } from 'expo-router';
 import { useEffect, useMemo, useState } from 'react';
-import { Alert, Modal, Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Alert, Modal, Platform, Pressable, ScrollView, Share, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { Checkbox, k, Loading, Notice, Radio, SampleBanner, ScreenTop, ZeptoCircle } from '../components/vendors/kit';
@@ -13,7 +13,7 @@ import { useVendors } from '../lib/useVendors';
 import type { ShoppingItem, ShoppingList } from '../models/prefs';
 import type { Dish } from '../models/research';
 import { dishCost } from '../services/vendors';
-import { buildShoppingItems, cheapestPer100, newShoppingList, offlineVariants, preselect, variantLabel, type VariantOption } from '../services/vendors/basket';
+import { buildShoppingItems, cheapestPer100, isPantryStaple, itemAmountLabel, newShoppingList, offlineVariants, preselect, shoppingListText, variantLabel, type VariantOption } from '../services/vendors/basket';
 import { VENDOR_VISIBLE, VENDORS_PAUSED } from '../services/vendors/config';
 import { VendorPlaceholders } from '../components/vendors/VendorLogos';
 import { openExternal, zeptoTarget } from '../services/vendors/openApp';
@@ -109,7 +109,28 @@ export default function BasketScreen() {
 
   const included = list.items.filter((i) => i.included);
   const ticked = list.items.filter((i) => i.checked).length;
-  const cost = single ? dishCost(single, servings ?? 2) : null;
+  // Day 9: one estimate for the whole list, from each dish's researched cost to make.
+  const costs = dishes.map((d) => dishCost(d, list.servings[d.id] ?? 2));
+  const known = costs.filter((c): c is NonNullable<typeof c> => !!c);
+  const cost = known.length ? { inr: known.reduce((t, c) => t + c.inr, 0), coveragePct: Math.round(known.reduce((t, c) => t + c.coveragePct, 0) / dishes.length) } : null;
+
+  const shareList = async () => {
+    const text = shoppingListText(list, { estimateInr: cost?.inr ?? null });
+    try {
+      if (Platform.OS !== 'web') {
+        await Share.share({ message: text });
+        return;
+      }
+      if (typeof navigator !== 'undefined' && navigator.share) {
+        await navigator.share({ title: list.title, text });
+        return;
+      }
+      await navigator.clipboard.writeText(text);
+      notify('List copied', 'Paste it into WhatsApp, Notes or a message.');
+    } catch {
+      // Share sheet closed, or the browser blocked it: nothing to do.
+    }
+  };
 
   const continueToCook = (via: ShoppingList['boughtVia']) => {
     save({ ...list, status: 'done', boughtVia: via, orderedAt: Date.now() });
@@ -144,20 +165,26 @@ export default function BasketScreen() {
             <Text style={{ color: colors.text, fontWeight: '900', fontSize: 18, minWidth: 64, textAlign: 'center' }}>
               {servings} {servings === 1 ? 'person' : 'people'}
             </Text>
-            <PressableScale style={s.step} onPress={() => servings < 12 && setServings(servings + 1)} accessibilityLabel="More people">
+            <PressableScale style={s.step} onPress={() => servings < 8 && setServings(servings + 1)} accessibilityLabel="More people">
               <Ionicons name="add" size={18} color={colors.text} />
             </PressableScale>
           </View>
         ) : null}
         {cost ? (
           <Text style={[k.muted, { marginTop: 8 }]}>
-            About ₹{cost.inr} of ingredients for this cook{cost.coveragePct < 100 ? ` (prices known for ${cost.coveragePct}% of them)` : ''}. Packs cost more; you keep the rest.
+            About ₹{cost.inr} of ingredients for {single ? 'this cook' : `these ${dishes.length} dishes`}
+            {cost.coveragePct < 100 ? ` (prices known for ${cost.coveragePct}% of them)` : ''}. Packs cost more; you keep the rest.
           </Text>
         ) : null}
 
-        <View style={{ flexDirection: 'row', gap: 8, marginTop: 14 }}>
+        <View style={{ flexDirection: 'row', gap: 8, marginTop: 14, alignItems: 'center' }}>
           <Chip label="📦 Order online" active={tab === 'online'} onPress={() => setTab('online')} />
           <Chip label="🏪 At the shop" active={tab === 'shop'} onPress={() => setTab('shop')} />
+          <View style={{ flex: 1 }} />
+          <PressableScale onPress={shareList} style={s.share} scaleTo={0.94} accessibilityLabel="Share the list as text">
+            <Ionicons name="share-outline" size={16} color={colors.text} />
+            <Text style={s.shareText}>Share</Text>
+          </PressableScale>
         </View>
         {tab === 'online' && mode === 'sample' && !VENDORS_PAUSED ? <SampleBanner what="brands, prices and stock" /> : null}
         {tab === 'shop' ? (
@@ -355,7 +382,8 @@ function ItemRow({
   const chosenIdx = preselect(options, item.variant);
   const best = cheapestPer100(options);
   const box = tab === 'shop' ? item.checked : item.included;
-  const qty = item.quantity != null ? `${item.quantity}${item.unit ? ` ${item.unit}` : ''}` : 'as needed';
+  const qty = itemAmountLabel(item);
+  const pantry = isPantryStaple(ingredient, item.name);
   const dim = tab === 'shop' ? item.checked : !item.included;
 
   return (
@@ -368,11 +396,33 @@ function ItemRow({
             {qty}
             {item.variant ? ` · ${item.variant}` : ''}
           </Text>
+          {pantry ? (
+            <View style={s.pantry}>
+              <Text style={s.pantryText}>Pantry staple · check your shelf</Text>
+            </View>
+          ) : null}
         </Pressable>
         <Ionicons name={expanded ? 'chevron-up' : 'chevron-down'} size={18} color={colors.faint} />
       </View>
       {expanded ? (
         <View style={s.options}>
+          {ingredient?.looksLike || ingredient?.howToPick ? (
+            <View style={s.know}>
+              {ingredient.looksLike ? (
+                <Text style={s.knowText}>
+                  <Text style={s.knowLabel}>What it looks like </Text>
+                  {ingredient.looksLike}
+                </Text>
+              ) : null}
+              {ingredient.howToPick ? (
+                <Text style={[s.knowText, ingredient.looksLike ? { marginTop: 6 } : null]}>
+                  <Text style={s.knowLabel}>How to pick </Text>
+                  {ingredient.howToPick}
+                </Text>
+              ) : null}
+              {ingredient.shelfLife ? <Text style={[k.muted, { marginTop: 6, fontSize: 12 }]}>Keeps: {ingredient.shelfLife}</Text> : null}
+            </View>
+          ) : null}
           {loading ? <Loading label="Checking what’s in stock…" /> : null}
           {options.map((o, i) => {
             const z = zeptoTarget(o.links.zepto);
@@ -475,5 +525,12 @@ const s = StyleSheet.create({
   vendor: { flexDirection: 'row', alignItems: 'center', gap: 12, padding: 14, marginTop: 12, borderRadius: radius.md, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border },
   logo: { width: 40, height: 40, borderRadius: 12, alignItems: 'center', justifyContent: 'center' },
   logoText: { color: '#fff', fontWeight: '900', fontSize: 18 },
+  share: { flexDirection: 'row', alignItems: 'center', gap: 5, height: 36, paddingHorizontal: 12, borderRadius: radius.pill, backgroundColor: colors.cardAlt, borderWidth: 1, borderColor: colors.border },
+  shareText: { color: colors.text, fontWeight: '800', fontSize: 13 },
+  pantry: { alignSelf: 'flex-start', marginTop: 4, paddingHorizontal: 8, paddingVertical: 2, borderRadius: radius.pill, backgroundColor: 'rgba(255,138,61,0.14)' },
+  pantryText: { color: colors.warm, fontSize: 11, fontWeight: '800' },
+  know: { padding: 10, borderRadius: radius.sm, backgroundColor: colors.cardAlt, marginBottom: 6 },
+  knowText: { color: colors.text, fontSize: 13, lineHeight: 18 },
+  knowLabel: { color: colors.accent, fontWeight: '800' },
   zrow: { flexDirection: 'row', alignItems: 'center', gap: 12, paddingVertical: 10, borderBottomWidth: 1, borderColor: colors.border },
 });

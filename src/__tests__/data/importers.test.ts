@@ -137,6 +137,11 @@ const INGREDIENT_FILE = `Based on: FitPlate_Dishes_2026-10-04.md
 
 ### 1. Basics
 - **Category:** Vegetable
+- **What it looks like:** Round bulbs with dry, papery pink-red skin.
+
+### 3. Buying guide
+- **How to pick:** Firm, heavy, dry necks, no sprouts.
+- **Shelf life:** 3–4 weeks whole.
 
 ### 4. Storage
 - Whole: room temperature in a basket for 3–4 weeks.
@@ -230,6 +235,11 @@ describe('dish importer', () => {
       fatG: 23,
       fibreG: 5,
     });
+  });
+
+  it('reads a Total line whose serving note has brackets inside it (dishes 73 and 77)', () => {
+    const line = '**Total (1 serving = about 190 g cooked keema from 125 g raw mince + 2 pav (70 g)): about 690 kcal | Protein 36 g | Carbs 60 g | Fat 33 g | Fibre 7 g (all est.)**';
+    expect(parseNutrition(line).kcal).toBe(690);
   });
 
   it('has no as-ordered block or fasting data unless the file has one', () => {
@@ -339,6 +349,11 @@ describe('ingredient importer', () => {
     expect(onion.substitutes).toEqual(['Shallots (small/sambar onion)', 'Spring onion']);
     expect(onion.macrosPer100).toEqual({ kcal: 40, proteinG: 1.1, carbsG: 9.3, fatG: 0.1, fibreG: 1.7 });
     expect(onion.nutritionPer100g).toBeNull();
+  });
+
+  it('Day 9: reads what it looks like, how to pick and shelf life for the shopping checklist', () => {
+    expect(onion).toMatchObject({ looksLike: 'Round bulbs with dry, papery pink-red skin.', howToPick: 'Firm, heavy, dry necks, no sprouts.', shelfLife: '3–4 weeks whole.' });
+    expect(lemon.looksLike).toBeNull();
   });
 
   it('handles per-piece units', () => {

@@ -1,7 +1,7 @@
 import { describe, expect, it } from '@jest/globals';
 
 import type { Dish } from '../../models/research';
-import { buildShoppingItems, cheapestPer100, costToMake, newShoppingList, packGrams, pickProduct, preselect, toGrams, type VariantOption } from '../../services/vendors/basket';
+import { buildShoppingItems, cheapestPer100, costToMake, isPantryStaple, itemAmountLabel, newShoppingList, shoppingListText, packGrams, pickProduct, preselect, toGrams, type VariantOption } from '../../services/vendors/basket';
 import type { VendorProduct } from '../../services/vendors/types';
 
 const ing = (name: string, quantity: number | null, unit: string | null, ingredientId: string | null = null) => ({ name, quantity, unit, ingredientId }) as Dish['ingredients'][number];
@@ -21,6 +21,46 @@ describe('shopping list', () => {
     const onion = items.find((i) => i.key === 'onion');
     expect(onion?.quantity).toBe(110);
     expect(onion?.dishIds).toEqual(['dal', 'sabzi']);
+  });
+
+  it('Day 9: folds kg into g and l into ml, and keeps amounts it cannot add instead of dropping them', () => {
+    const a = { id: 'a', ingredients: [ing('Onion', 0.6, 'kg', 'onion'), ing('Oil', 1, 'l', 'oil'), ing('Tomato', 2, 'small', 'tomato')] };
+    const b = { id: 'b', ingredients: [ing('Onion', 150, 'g', 'onion'), ing('Oil', 15, 'ml', 'oil'), ing('Tomato', 120, 'g', 'tomato'), ing('Onion', null, null, 'onion')] };
+    const items = buildShoppingItems([
+      { dish: a, servings: 2 },
+      { dish: b, servings: 1 },
+    ]);
+    const by = (k: string) => items.find((i) => i.key === k)!;
+    expect(by('onion')).toMatchObject({ quantity: 1350, unit: 'g' });
+    expect(itemAmountLabel(by('onion'))).toBe('1.4 kg');
+    expect(by('oil')).toMatchObject({ quantity: 2015, unit: 'ml' });
+    expect(by('tomato')).toMatchObject({ quantity: 4, unit: 'small', more: [{ quantity: 120, unit: 'g' }] });
+    expect(itemAmountLabel(by('tomato'))).toBe('4 small + 120 g');
+    expect(items).toHaveLength(3);
+  });
+
+  it('says "as needed" when no dish gives an amount', () => {
+    expect(itemAmountLabel(buildShoppingItems([{ dish: sabzi, servings: 3 }]).find((i) => i.key === 'salt')!)).toBe('as needed');
+  });
+
+  it('tags pantry staples from the research category', () => {
+    expect(isPantryStaple({ category: 'Spice blend' }, 'Garam masala')).toBe(true);
+    expect(isPantryStaple({ category: 'Pulse' }, 'Toor dal')).toBe(true);
+    expect(isPantryStaple({ category: 'Vegetable' }, 'Onion')).toBe(false);
+    expect(isPantryStaple({ category: 'Meat/seafood' }, 'Chicken')).toBe(false);
+    expect(isPantryStaple(undefined, 'Salt')).toBe(true);
+    expect(isPantryStaple(undefined, 'Paneer')).toBe(false);
+  });
+
+  it('shares the list as text, leaving out what the person already has', () => {
+    const list = newShoppingList([{ dish: dal, servings: 2 }]);
+    list.items[1] = { ...list.items[1], checked: true };
+    list.items.push({ ...list.items[0], key: 'x', name: 'Ghee', included: false });
+    const text = shoppingListText(list, { estimateInr: 42 });
+    expect(text).toContain('☐ Toor dal: 100 g');
+    expect(text).toContain('✓ Onion: 80 g');
+    expect(text).not.toContain('Ghee');
+    expect(text).toContain('about ₹42');
   });
 
   it('starts a list with the saved brand choices', () => {

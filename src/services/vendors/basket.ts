@@ -26,29 +26,78 @@ export const normaliseName = (s: string) =>
 /** Stable key for an ingredient: its research id, else its normalised name. */
 export const ingredientKey = (ingredientId: string | null, name: string) => ingredientId ?? `name:${normaliseName(name)}`;
 
+/** Units folded into one base so "1 kg" and "200 g" add up; spoons stay apart (a spoon of spice isn't 5 g). */
+const BASE_UNIT: Record<string, { unit: string; factor: number }> = {
+  g: { unit: 'g', factor: 1 },
+  gm: { unit: 'g', factor: 1 },
+  gram: { unit: 'g', factor: 1 },
+  grams: { unit: 'g', factor: 1 },
+  kg: { unit: 'g', factor: 1000 },
+  ml: { unit: 'ml', factor: 1 },
+  l: { unit: 'ml', factor: 1000 },
+  litre: { unit: 'ml', factor: 1000 },
+  liter: { unit: 'ml', factor: 1000 },
+  cup: { unit: 'ml', factor: 240 },
+};
+
+export function baseAmount(quantity: number, unit: string | null): { quantity: number; unit: string | null } {
+  const u = unit?.trim().toLowerCase() ?? null;
+  const b = u ? BASE_UNIT[u] : undefined;
+  return b ? { quantity: quantity * b.factor, unit: b.unit } : { quantity, unit: u };
+}
+
+/** "1500 g" → "1.5 kg", "750 ml" → "750 ml", "2 small" → "2 small", null unit → "2". */
+export function amountLabel(quantity: number, unit: string | null): string {
+  if (unit === 'g' && quantity >= 1000) return `${round(quantity / 1000)} kg`;
+  if (unit === 'ml' && quantity >= 1000) return `${round(quantity / 1000)} l`;
+  return `${round(quantity)}${unit ? ` ${unit}` : ''}`;
+}
+
+/** One recipe amount, folded and labelled: 1200 g → "1.2 kg". */
+export function recipeAmountLabel(quantity: number, unit: string | null): string {
+  const a = baseAmount(quantity, unit);
+  return amountLabel(a.quantity, a.unit);
+}
+
+/** Everything a list line needs: "1.2 kg + 2 small", or "as needed" when no dish gives an amount. */
+export function itemAmountLabel(item: Pick<ShoppingItem, 'quantity' | 'unit' | 'more'>): string {
+  const parts = [item.quantity != null ? amountLabel(item.quantity, item.unit) : null, ...(item.more ?? []).map((m) => amountLabel(m.quantity, m.unit))].filter(Boolean);
+  return parts.length ? parts.join(' + ') : 'as needed';
+}
+
 /**
- * Union of the ingredients of the chosen dishes, scaled to servings. The same
- * ingredient in two dishes becomes one line; amounts add up when the units
- * agree (g with g, ml with ml), otherwise the first unit's amount is kept.
+ * Union of the ingredients of the chosen dishes, scaled to servings (Day 9).
+ * The same ingredient in two dishes becomes one line. Amounts add up after
+ * folding units to a base (kg into g, l and cups into ml); amounts in units
+ * that can't be added ("2 small" next to "150 g") are kept beside the main
+ * one in `more`, never dropped. Lines with no amount ("to taste") add none.
  * Water and lines without a name are left out.
  */
 export function buildShoppingItems(chosen: { dish: Pick<Dish, 'id' | 'ingredients'>; servings: number }[]): ShoppingItem[] {
-  const byKey = new Map<string, ShoppingItem>();
+  const byKey = new Map<string, { item: ShoppingItem; amounts: Map<string, number> }>();
   for (const { dish, servings } of chosen) {
     for (const ing of dish.ingredients) {
       if (!ing.name || /^water\b/i.test(ing.name.trim())) continue;
       const key = ingredientKey(ing.ingredientId, ing.name);
-      const qty = ing.quantity != null ? round(ing.quantity * servings) : null;
-      const prev = byKey.get(key);
-      if (!prev) {
-        byKey.set(key, { key, ingredientId: ing.ingredientId, name: cleanName(ing.name), quantity: qty, unit: ing.unit, dishIds: [dish.id], included: true, checked: false, variant: null });
-        continue;
+      let entry = byKey.get(key);
+      if (!entry) {
+        entry = { item: { key, ingredientId: ing.ingredientId, name: cleanName(ing.name), quantity: null, unit: null, dishIds: [], included: true, checked: false, variant: null }, amounts: new Map() };
+        byKey.set(key, entry);
       }
-      if (!prev.dishIds.includes(dish.id)) prev.dishIds.push(dish.id);
-      if (qty != null && prev.unit === ing.unit) prev.quantity = round((prev.quantity ?? 0) + qty);
+      if (!entry.item.dishIds.includes(dish.id)) entry.item.dishIds.push(dish.id);
+      if (ing.quantity == null) continue;
+      const a = baseAmount(ing.quantity * servings, ing.unit);
+      const u = a.unit ?? '';
+      entry.amounts.set(u, (entry.amounts.get(u) ?? 0) + a.quantity);
     }
   }
-  return [...byKey.values()];
+  return [...byKey.values()].map(({ item, amounts }) => {
+    // The unit seen first leads; insertion order keeps the recipe's own order.
+    const [first, ...rest] = [...amounts.entries()].map(([unit, q]) => ({ quantity: round(q), unit: unit || null }));
+    const out: ShoppingItem = { ...item, quantity: first?.quantity ?? null, unit: first?.unit ?? null };
+    if (rest.length) out.more = rest;
+    return out;
+  });
 }
 
 const round = (n: number) => Math.round(n * 10) / 10;
@@ -180,3 +229,22 @@ export function pickProduct(item: Pick<ShoppingItem, 'variant'>, products: Vendo
   return priced[0] ?? inStock[0] ?? products[0] ?? null;
 }
 
+
+/**
+ * Day 9 "pantry staple" tag: dry, long-keeping goods most kitchens already
+ * stock, read from the ingredient research's own category (spices, pulses,
+ * grains, flours, oils, condiments, sweeteners, nuts). Never hidden, only
+ * tagged so people check the shelf before buying.
+ */
+const PANTRY = /\b(spice|masala|pulse|lentil|dal|grain|rice|flour|oil|fat|condiment|sweetener|sugar|salt|nut|seed|packaged)\b/i;
+export function isPantryStaple(ingredient: { category: string | null } | undefined, name: string): boolean {
+  if (ingredient?.category) return PANTRY.test(ingredient.category);
+  return /^(salt|sugar|oil|turmeric|chilli powder|red chilli powder|cumin|mustard seeds|garam masala|hing|asafoetida)\b/i.test(name.trim());
+}
+
+/** The list as plain text for WhatsApp or notes: ticked items marked, skipped ones left out. */
+export function shoppingListText(list: Pick<ShoppingList, 'title' | 'items'>, opts: { estimateInr?: number | null } = {}): string {
+  const lines = list.items.filter((i) => i.included).map((i) => `${i.checked ? '✓' : '☐'} ${i.name}: ${itemAmountLabel(i)}${i.variant ? ` (${i.variant})` : ''}`);
+  const total = opts.estimateInr ? [``, `Estimated ingredients: about ₹${opts.estimateInr} (FitPlate research prices)`] : [];
+  return [`🛒 ${list.title}`, '', ...lines, ...total, '', 'Made with FitPlate'].join('\n');
+}

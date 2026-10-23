@@ -6,7 +6,7 @@ import { brand, colors, spacing } from '../config/theme';
 describe('feature flags', () => {
   it('ships every unfinished feature switched off', () => {
     // Finished features stay listed here so turning one on is always a deliberate test change.
-    const finished: FeatureFlag[] = ['newTabShell', 'cloudSync', 'liteMode', 'researchData', 'rememberAllergens', 'dishJumpChips', 'proteinPerRupee', 'nativeGoogleSignIn', 'serverResearch'];
+    const finished: FeatureFlag[] = ['newTabShell', 'cloudSync', 'liteMode', 'researchData', 'rememberAllergens', 'dishJumpChips', 'proteinPerRupee', 'calorieGapBadge', 'nativeGoogleSignIn', 'serverResearch'];
     for (const flag of Object.keys(featureFlags) as FeatureFlag[]) {
       expect(isEnabled(flag)).toBe(finished.includes(flag));
     }

@@ -206,6 +206,10 @@ export type Ingredient = Provenance & {
   /** Older files' one-line macro estimate ("About N kcal | Protein …"), kept apart from the official profile. */
   macrosPer100Estimate: Macros | null;
   storage: string | null;
+  /** Research "What it looks like", "How to pick" and "Shelf life" (Day 9); absent in files before the sync that added them. */
+  looksLike?: string | null;
+  howToPick?: string | null;
+  shelfLife?: string | null;
   substitutes: string[];
   /** Spec F7: dishes the ingredient file says use it, with the quantity it gives (newest version). */
   usedIn: { dishNumber: number; quantity: number | null; unit: string | null; raw: string }[];

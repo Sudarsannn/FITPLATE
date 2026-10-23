@@ -1,0 +1,719 @@
+{
+  "id": "078-navratan-korma",
+  "number": 78,
+  "name": "Navratan Korma",
+  "cuisine": "Mughlai / North Indian",
+  "dietType": "veg",
+  "mealType": [
+    "lunch",
+    "dinner"
+  ],
+  "difficulty": "Intermediate",
+  "prepMin": 20,
+  "cookMin": 35,
+  "servings": 1,
+  "ingredients": [
+    {
+      "ingredientId": "cashew-nuts-whole",
+      "name": "Cashew nuts (kaju)",
+      "quantity": 20,
+      "unit": "g",
+      "householdMeasure": "about 14 cashews"
+    },
+    {
+      "ingredientId": "onion",
+      "name": "Onion",
+      "quantity": 40,
+      "unit": "g",
+      "householdMeasure": "½ small"
+    },
+    {
+      "ingredientId": "ginger",
+      "name": "Ginger (adrak)",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "1 cm piece"
+    },
+    {
+      "ingredientId": "garlic",
+      "name": "Garlic (lehsun)",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "2 cloves"
+    },
+    {
+      "ingredientId": "green-chilli",
+      "name": "Green chilli",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "½ chilli"
+    },
+    {
+      "ingredientId": "carrot",
+      "name": "Carrot (gajar)",
+      "quantity": 30,
+      "unit": "g",
+      "householdMeasure": "¼ medium"
+    },
+    {
+      "ingredientId": "potato",
+      "name": "Potato (aloo)",
+      "quantity": 30,
+      "unit": "g",
+      "householdMeasure": "¼ medium"
+    },
+    {
+      "ingredientId": "french-beans",
+      "name": "French beans",
+      "quantity": 25,
+      "unit": "g",
+      "householdMeasure": "4–5 beans"
+    },
+    {
+      "ingredientId": "green-peas-frozen",
+      "name": "Green peas (matar)",
+      "quantity": 20,
+      "unit": "g",
+      "householdMeasure": "2 tbsp"
+    },
+    {
+      "ingredientId": "cauliflower",
+      "name": "Cauliflower (gobi)",
+      "quantity": 30,
+      "unit": "g",
+      "householdMeasure": "3–4 small florets"
+    },
+    {
+      "ingredientId": "paneer",
+      "name": "Paneer",
+      "quantity": 30,
+      "unit": "g",
+      "householdMeasure": "3 cubes (2 cm)"
+    },
+    {
+      "ingredientId": "pineapple-fresh-whole",
+      "name": "Pineapple",
+      "quantity": 15,
+      "unit": "g",
+      "householdMeasure": "1 tbsp chopped"
+    },
+    {
+      "ingredientId": "raisins-green-golden",
+      "name": "Raisins (kishmish)",
+      "quantity": 5,
+      "unit": "g",
+      "householdMeasure": "1 tsp"
+    },
+    {
+      "ingredientId": "fresh-cream",
+      "name": "Fresh cream (malai)",
+      "quantity": 15,
+      "unit": "g",
+      "householdMeasure": "1 tbsp"
+    },
+    {
+      "ingredientId": "milk-toned",
+      "name": "Milk",
+      "quantity": 50,
+      "unit": "ml",
+      "householdMeasure": "¼ cup"
+    },
+    {
+      "ingredientId": "ghee-cow",
+      "name": "Ghee",
+      "quantity": 5,
+      "unit": "g",
+      "householdMeasure": "1 tsp"
+    },
+    {
+      "ingredientId": "cooking-oil-refined-sunflower-groundnut",
+      "name": "Sunflower oil",
+      "quantity": 5,
+      "unit": "g",
+      "householdMeasure": "1 tsp"
+    },
+    {
+      "ingredientId": "bay-leaf",
+      "name": "Bay leaf (tej patta)",
+      "quantity": 1,
+      "unit": null,
+      "householdMeasure": "1 leaf"
+    },
+    {
+      "ingredientId": "green-cardamom",
+      "name": "Green cardamom (elaichi)",
+      "quantity": 1,
+      "unit": null,
+      "householdMeasure": "1 pod"
+    },
+    {
+      "ingredientId": "cloves",
+      "name": "Cloves (laung)",
+      "quantity": 2,
+      "unit": null,
+      "householdMeasure": "2 buds"
+    },
+    {
+      "ingredientId": "cinnamon-cassia",
+      "name": "Cinnamon (dalchini)",
+      "quantity": 1,
+      "unit": null,
+      "householdMeasure": "1 cm stick"
+    },
+    {
+      "ingredientId": "turmeric-powder",
+      "name": "Turmeric powder (haldi)",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "¼ tsp"
+    },
+    {
+      "ingredientId": "kashmiri-red-chilli-powder",
+      "name": "Kashmiri red chilli powder",
+      "quantity": 1,
+      "unit": "g",
+      "householdMeasure": "½ tsp"
+    },
+    {
+      "ingredientId": "coriander-powder",
+      "name": "Coriander powder (dhania)",
+      "quantity": 1.5,
+      "unit": "g",
+      "householdMeasure": "¾ tsp"
+    },
+    {
+      "ingredientId": "garam-masala",
+      "name": "Garam masala",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "¼ tsp"
+    },
+    {
+      "ingredientId": "salt",
+      "name": "Salt",
+      "quantity": 1.5,
+      "unit": "g",
+      "householdMeasure": "¼ tsp"
+    },
+    {
+      "ingredientId": "coriander-leaves",
+      "name": "Coriander leaves (dhania patta)",
+      "quantity": 2,
+      "unit": "g",
+      "householdMeasure": "1 tbsp chopped"
+    },
+    {
+      "ingredientId": null,
+      "name": "Water",
+      "quantity": 230,
+      "unit": "ml",
+      "householdMeasure": null
+    }
+  ],
+  "equipment": [
+    "Kadai or heavy pan with lid: the base of the whole dish",
+    "Small saucepan for boiling the vegetables",
+    "Mixer-grinder or hand blender for the smooth paste",
+    "Chopping board and knife, small bowl for soaking, measuring spoons, kitchen scale"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "title": "Soak the cashews",
+      "text": "Put 15 g cashews in a small bowl with 50 ml hot water.",
+      "timerSec": 900,
+      "tip": null,
+      "visualCue": "Cashews look plump and slightly soft",
+      "cameraCheck": "The bowl of cashews in water",
+      "videoShot": "Cashews dropping into hot water."
+    },
+    {
+      "n": 2,
+      "title": "Dice the hard vegetables",
+      "text": "Cut 30 g carrot and 30 g potato into 1 cm cubes.",
+      "timerSec": 180,
+      "tip": null,
+      "visualCue": "Even cubes, so they cook at the same speed",
+      "cameraCheck": "The cubes on the board next to a ruler or coin",
+      "videoShot": "Knife dicing a carrot."
+    },
+    {
+      "n": 3,
+      "title": "Cut the beans and cauliflower",
+      "text": "Cut 25 g beans into 1 cm pieces and 30 g cauliflower into small florets.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "Pieces roughly the size of the carrot cubes",
+      "cameraCheck": "All chopped vegetables in one bowl",
+      "videoShot": "Florets falling into the bowl."
+    },
+    {
+      "n": 4,
+      "title": "Slice the onion",
+      "text": "Slice 40 g onion thin.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Thin, even half-rings",
+      "cameraCheck": "The sliced onion",
+      "videoShot": "Knife slicing an onion."
+    },
+    {
+      "n": 5,
+      "title": "Prepare the aromatics and paneer",
+      "text": "Chop 3 g ginger, 3 g garlic and ½ green chilli roughly. Cut 30 g paneer into 2 cm cubes and chop 15 g pineapple small.",
+      "timerSec": 180,
+      "tip": null,
+      "visualCue": "Small bits of ginger and garlic, white paneer cubes",
+      "cameraCheck": "The paneer cubes and chopped aromatics on the board",
+      "videoShot": "Paneer cubes sliding off the knife."
+    },
+    {
+      "n": 6,
+      "title": "Boil the vegetables",
+      "text": "In a saucepan bring 200 ml water with a pinch of salt to a boil. Add carrot, potato, beans and cauliflower and simmer 4 min, then add 20 g peas and simmer 2 min more.",
+      "timerSec": 420,
+      "tip": "Under-cook slightly; they cook again in the gravy.",
+      "visualCue": "A knife tip goes in with light resistance; the vegetables keep their colour and shape",
+      "cameraCheck": "A fork piercing a carrot cube",
+      "videoShot": "Colourful vegetables bubbling in the pan."
+    },
+    {
+      "n": 7,
+      "title": "Drain the vegetables",
+      "text": "Drain in a sieve, keeping 4 tbsp (60 ml) of the cooking water.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Vegetables steaming in the sieve",
+      "cameraCheck": "The drained vegetables and the saved water",
+      "videoShot": "Water draining through a sieve."
+    },
+    {
+      "n": 8,
+      "title": "Fry the paneer",
+      "text": "Heat 5 g (1 tsp) oil in the kadai on medium for 1 min. Fry the paneer cubes for 2 min, turning, until lightly golden on two sides. Lift out onto a plate.",
+      "timerSec": 180,
+      "tip": null,
+      "visualCue": "Light golden edges, no dark brown",
+      "cameraCheck": "The golden paneer on the plate",
+      "videoShot": "Paneer sizzling in the pan."
+    },
+    {
+      "n": 9,
+      "title": "Fry the nuts and raisins",
+      "text": "Add 5 g (1 tsp) ghee to the same pan on low. Fry 5 g cashews for 30 sec until pale gold, then 5 g raisins for 10 sec until they puff. Lift both out onto the plate.",
+      "timerSec": 60,
+      "tip": "Cashews burn fast; take them out while still pale.",
+      "visualCue": "Cashews pale gold, raisins puffed and plump",
+      "cameraCheck": "The fried cashews and raisins",
+      "videoShot": "Raisins puffing in the ghee."
+    },
+    {
+      "n": 10,
+      "title": "Temper the whole spices",
+      "text": "In the fat left in the pan, on low heat, add the bay leaf, cardamom, cloves and cinnamon. Stir for 30 sec.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "A sweet spice smell, the cloves swell slightly",
+      "cameraCheck": "The spices in the pan",
+      "videoShot": "Whole spices sizzling in the fat."
+    },
+    {
+      "n": 11,
+      "title": "Cook the onion",
+      "text": "Add the sliced onion and a pinch of salt. Cook on medium-low for 4–5 min, stirring, until soft and translucent but not brown.",
+      "timerSec": 300,
+      "tip": null,
+      "visualCue": "Soft, glassy onion with no brown edges (white gravy)",
+      "cameraCheck": "The onion in the pan",
+      "videoShot": "Onion turning glassy."
+    },
+    {
+      "n": 12,
+      "title": "Add ginger, garlic and chilli",
+      "text": "Add the chopped ginger, garlic and green chilli and stir for 1 min.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "A raw smell turns to a warm one",
+      "cameraCheck": "The pan",
+      "videoShot": "Aromatics dropping onto the onion."
+    },
+    {
+      "n": 13,
+      "title": "Cool and remove the whole spices",
+      "text": "Add 100 ml water and simmer 3 min. Fish out the bay leaf and cinnamon, switch off the heat and cool 5 min.",
+      "timerSec": 480,
+      "tip": "Never blend a very hot mixture; steam can push the lid off.",
+      "visualCue": "Soft onion mixture, thin liquid",
+      "cameraCheck": "The bay leaf and cinnamon on a plate",
+      "videoShot": "Spoon lifting the bay leaf out."
+    },
+    {
+      "n": 14,
+      "title": "Blend the paste",
+      "text": "Tip the onion mixture and the soaked cashews with their soaking water into a blender. Blend 1–2 min until completely smooth.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "A pale, silky paste with no grit when rubbed between fingers",
+      "cameraCheck": "A spoon of paste held up",
+      "videoShot": "Blender running, paste swirling."
+    },
+    {
+      "n": 15,
+      "title": "Cook the paste with the powders",
+      "text": "Pour the paste back into the pan on low heat. Add 0.5 g turmeric, 1 g Kashmiri chilli and 1.5 g coriander powder. Cook 3 min, stirring constantly.",
+      "timerSec": 180,
+      "tip": "If it splutters or sticks, add 1 tbsp water.",
+      "visualCue": "The raw smell goes and the paste thickens slightly",
+      "cameraCheck": "The thick pale-orange paste",
+      "videoShot": "Powders mixing into the paste."
+    },
+    {
+      "n": 16,
+      "title": "Add milk and water",
+      "text": "Pour in 50 ml milk and the saved vegetable water (60 ml). Stir and simmer on low for 3 min.",
+      "timerSec": 180,
+      "tip": null,
+      "visualCue": "A smooth gravy that coats the back of a spoon",
+      "cameraCheck": "A spoon coated with gravy",
+      "videoShot": "Milk swirling into the paste."
+    },
+    {
+      "n": 17,
+      "title": "Add vegetables and pineapple",
+      "text": "Add the boiled vegetables, pineapple and 1.5 g (¼ tsp) salt. Simmer covered on low for 4 min.",
+      "timerSec": 240,
+      "tip": null,
+      "visualCue": "Gravy bubbling gently around the vegetables",
+      "cameraCheck": "The pan",
+      "videoShot": "Vegetables folding into the gravy."
+    },
+    {
+      "n": 18,
+      "title": "Finish with paneer, cream and garam masala",
+      "text": "Add the fried paneer, 15 g (1 tbsp) cream and 0.5 g garam masala. Stir gently and warm for 1 min. Do not boil hard.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "A smooth, creamy, pale-ivory gravy; no oil slick, no curdled bits",
+      "cameraCheck": "The finished curry in the pan",
+      "videoShot": "Cream swirling in."
+    },
+    {
+      "n": 19,
+      "title": "Garnish and rest",
+      "text": "Switch off the heat. Scatter the fried cashews, raisins and 2 g coriander leaves. Rest covered for 2 min.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "Glossy gravy with golden nuts on top",
+      "cameraCheck": "The finished bowl",
+      "videoShot": "Nuts and raisins dropping on the korma."
+    }
+  ],
+  "nutritionPerServing": {
+    "kcal": 480,
+    "proteinG": 15,
+    "carbsG": 37,
+    "fatG": 31,
+    "fibreG": 7
+  },
+  "microNutrientsEstimate": {
+    "values": {
+      "biotin": 6.3,
+      "calcium": 2.7,
+      "folate": 0.2,
+      "iron": 0.1,
+      "magnesium": 1.8,
+      "pantothenic-acid": 0.2,
+      "potassium": 37.3,
+      "sodium": 0.6,
+      "vitamin-a": 350.2,
+      "vitamin-b12": 0.2,
+      "vitamin-b6": 0,
+      "vitamin-c": 21.3,
+      "vitamin-d": 0.2,
+      "vitamin-e": 2.1,
+      "vitamin-k": 14.3,
+      "zinc": 0
+    },
+    "coveragePct": 27,
+    "basis": "partial estimate from ingredient quantities"
+  },
+  "asOrdered": {
+    "price": {
+      "priceHistory": [
+        {
+          "date": "2026-10-23",
+          "min": 190,
+          "max": 350,
+          "avg": 260,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-10-23.md"
+        }
+      ],
+      "currentEstimate": {
+        "min": 220,
+        "max": 300,
+        "avg": 260
+      },
+      "method": "single",
+      "trend": "unknown",
+      "change30dPct": null,
+      "lastObserved": "2026-10-23",
+      "stale": false,
+      "seasonal": false,
+      "listingCount": 11,
+      "platforms": [
+        "magicpin",
+        "Swiggy",
+        "Zomato"
+      ],
+      "outOfStock": true,
+      "confirmed": false,
+      "checkNotes": [
+        "a listing used for the range is marked out of stock, closed or not taking orders"
+      ]
+    },
+    "nutrition": {
+      "calories": {
+        "value": null,
+        "source": null
+      },
+      "protein": {
+        "value": null,
+        "source": null
+      },
+      "carbs": {
+        "value": null,
+        "source": null
+      },
+      "fat": {
+        "value": null,
+        "source": null
+      },
+      "fibre": {
+        "value": null,
+        "source": null
+      }
+    },
+    "restaurantsSampled": null,
+    "platforms": [
+      "Swiggy",
+      "Zomato",
+      "magicpin"
+    ]
+  },
+  "orderPrice": {
+    "priceHistory": [
+      {
+        "date": "2026-10-23",
+        "min": 190,
+        "max": 350,
+        "avg": 260,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-10-23.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 220,
+      "max": 300,
+      "avg": 260
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-23",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 11,
+    "platforms": [
+      "magicpin",
+      "Swiggy",
+      "Zomato"
+    ],
+    "outOfStock": true,
+    "confirmed": false,
+    "checkNotes": [
+      "a listing used for the range is marked out of stock, closed or not taking orders"
+    ]
+  },
+  "healthiness": {
+    "score": 5,
+    "restaurantScore": 3,
+    "reasons": [
+      "a good variety of vegetables (about 135 g), some protein from paneer and cashew, and no frying of the vegetables. Points off because it is a rich dish: about 31 g fat, with saturated fat about 14 g (ghee, paneer, cream, cashew), plus sweetness from raisins and pineapple and moderate sodium (about 650 mg). Restaurant versions commonly add more cream, butter, khoya and sugar, so 550–700 kcal bowls with 15 g or more saturated fat are common (est.)."
+    ]
+  },
+  "researchRating": {
+    "score": 4.3,
+    "basis": "a very widely published restaurant-menu staple. Veg Recipes of India, Indian Healthy Recipes, Archana's Kitchen, Yummy Tummy, Gulf News, MasterClass and many others publish it, and Wikipedia's korma article lists it as a standard vegetarian korma (\"nine gems\"). Points off because it is rich and sweet, many reviewers say restaurant versions are heavy, and it is not an everyday home dish. Recipe-site star counts were not checked this run. Platform dish ratings were not used."
+  },
+  "storage": "Fridge-safe in a closed box for up to 2 days (cool within 1 hour). Freezing is not recommended: the paneer turns crumbly and the cream gravy can split on thawing. Reheat in a pan on low with 2–3 tbsp water or milk, stirring gently, until just steaming; or microwave covered in 1-minute bursts. The gravy thickens overnight, so loosen it.",
+  "leftoverRemix": "Navratan korma kathi roll. Cook the leftover korma down until it is very thick and dry. Spread green chutney on a warm roti, add the korma, sliced onion and a squeeze of lemon, roll tight and toast on a tawa with ½ tsp oil.",
+  "burnOff": "about 6.9 km of running (480 ÷ 70 kcal/km, for a 70 kg adult), or about 9.6 km of brisk walking (about 1 h 55 min at 5 km/h, using about 50 kcal/km for walking) (est.). With 2 phulkas (about 660 kcal): about 9.4 km running or 13.2 km walking (est.).",
+  "sources": [
+    "Indian Healthy Recipes, Navratan Korma Recipe (Navratan Curry): https://www.indianhealthyrecipes.com/navratan-korma-recipe/ ; https://www.indianhealthyrecipes.com/wprm_print/navratan-korma-recipe-navratan-curry",
+    "Veg Recipes of India, Navratan Korma: https://www.vegrecipesofindia.com/navratan-korma-recipe-navratan-korma/ ; https://www.vegrecipesofindia.com/wprm_print/139632",
+    "Archana's Kitchen, Navratan Korma Recipe (coconut milk version; raisins roasted in ghee): https://www.archanaskitchen.com/navratan-korma-recipe ; https://archanaskitchen.com/vegan-navratan-korma-recipe",
+    "Indian Veggie Delight, Restaurant Style Navratan Korma: https://www.indianveggiedelight.com/restaurant-style-navratan-korma/",
+    "Gulf News, Navratan korma recipe (50 g chopped cashews in the paste; 4 tsp single cream): https://gulfnews.com/food/cooking-cuisines/navratan-korma-recipe-1.1609164686019",
+    "Kitchen of Debjani, Navratan Korma: https://kitchenofdebjani.com/wprm_print/navaratan-korma-recipe-navratan-korma-navratna-korma",
+    "MasterClass, Navratan Korma Recipe: https://www.masterclass.com/articles/navratan-korma-recipe",
+    "Yummy Tummy, Navratan Korma: https://www.yummytummyaarthi.com/wprm_print/navratan-korma-recipe-navaratna-kurma-recipe",
+    "The Plant-Based School, Navratan Korma (vegan, coconut milk and tofu): https://theplantbasedschool.com/navratan-korma/",
+    "Veganuary, Korma: https://veganuary.com/recipes/korma/",
+    "Jain-adaptation evidence: Tarla Dalal Jain recipes https://www.tarladalal.com/recipes-for-veg-recipes-jain-34 ; Veg Recipes of India, Jain Palak Paneer https://www.vegrecipesofindia.com/jain-palak-paneer/",
+    "Wikipedia, Korma (navratan korma as a vegetarian korma of vegetables with paneer or nuts): https://en.wikipedia.org/wiki/Korma",
+    "Tarla Dalal, Nutritional Facts of Navratna Korma (223 kcal per serving): https://www.tarladalal.com/calories-for-navratna-korma-veg-navratan-korma-2407",
+    "Swiggy Instamart recipe page, navratan korma (350 kcal, 4 servings): https://swiggy.com/instamart/recipe/navratan-korma",
+    "BigOven: https://www.bigoven.com/recipe/navratan-korma/155469",
+    "magicpin, Navratan Korma listings: Satkar Kitchen, Powai https://magicpin.in/Mumbai/Powai/Restaurant/Satkar-Kitchen/store/24425/delivery?itemId=5308784 ; Krishna Leela, Chembur https://magicpin.in/Mumbai/Chembur/Restaurant/Krishna-Leela/store/8b1b5/delivery ; Uncle's Corner, Borivali West https://magicpin.in/Mumbai/Borivali-West/Restaurant/Uncles-Corner/store/23511/delivery ; Mumbai Darbar, Byculla https://magicpin.in/Mumbai/Byculla/Restaurant/Mumbai-Darbar/store/23612/delivery ; Cafe Noorani https://magicpin.in/Mumbai/Bay-Side-Mall/Restaurant/Cafe-Noorani/store/8ac71/delivery ; Hotel Ravindra, Dahisar https://magicpin.in/Mumbai/Dahisar-East/Restaurant/Hotel-Ravindra/store/2cb7cc/delivery/?itemId=7106674 ; Western Tadka https://magicpin.in/Mumbai/Chikuwadi/Restaurant/Western-Tadka/store/148c118/delivery?itemId=261363192 ; Malhaar (dropped) https://magicpin.in/Mumbai/Chembur/Restaurant/Malhaar-Family-Restaurant/store/236ca/delivery?itemId=4869886 ; Green Tadka (dropped) https://magicpin.in/Mumbai/Sunder-Nagar/Restaurant/Green-Tadka/store/30c763/delivery",
+    "Swiggy: Aamantran, Borivali https://www.swiggy.com/restaurants/aamantran-borivali-mumbai-405168 ; Amar Juice Centre, Borivali West https://www.swiggy.com/restaurants/amar-juice-centre-sv-road-borivali-west-mumbai-25557",
+    "Zomato: Navratan Korma in Mumbai https://www.zomato.com/mumbai/restaurants/dish-navratan-korma ; Sudarshan Veg Restaurant, Sakinaka https://www.zomato.com/mumbai/sudarshan-veg-restaurant-sakinaka/order ; The Central Bistro, Wadala https://www.zomato.com/mumbai/the-central-bistro-wadala/order"
+  ],
+  "allergens": [
+    "peanut",
+    "treeNut",
+    "milk"
+  ],
+  "dietClaims": [
+    "glutenFree"
+  ],
+  "fasting": {
+    "navratri": {
+      "status": null,
+      "reason": "onion, garlic, table salt and garam masala are out under the common rule set; use sendha namak, keep potato, carrot, paneer, nuts, pineapple and raisins, and leave out peas, beans and cauliflower (assumption: the common rule set; families differ)."
+    },
+    "ekadashi": {
+      "status": null,
+      "reason": "no grains or pulses in the dish, but peas and beans are legumes and onion and garlic are avoided; cook the Sattvik variant with only potato, carrot and paneer and use sendha namak (common rule set)."
+    },
+    "jain": {
+      "status": null,
+      "reason": "the main recipe uses onion, garlic, fresh ginger, potato and carrot; cook the Jain variant."
+    },
+    "ramadan": {
+      "status": "yes",
+      "reason": "vegetarian, so no halal-meat issue; it is a rich, filling curry with roti for iftar dinner. Sodium is moderate (about 650 mg) and the dish is heavy, so keep the portion small at sehri."
+    }
+  },
+  "dietTags": {
+    "base": "Vegetarian",
+    "jain": {
+      "status": "with-changes",
+      "reason": "drop onion, garlic, fresh ginger, potato and carrot; use the Jain variant (cashew-almond base, beans, peas, capsicum and cauliflower, hing for flavour)."
+    },
+    "vegan": {
+      "status": "with-changes",
+      "reason": "ghee, paneer, milk and cream are dairy; use the Vegan variant (oil, tofu, coconut milk and cashew cream)."
+    },
+    "pescatarian": {
+      "status": "yes",
+      "reason": "vegetarian, so it fits a pescatarian diet."
+    },
+    "sattvik": {
+      "status": "with-changes",
+      "reason": "leave out onion, garlic and green chilli paste; use the Sattvik variant (cashew-poppy-ginger-powder base)."
+    },
+    "glutenFree": {
+      "status": "yes",
+      "reason": "no wheat, maida or rava, and the recipe uses no hing; check the garam masala label for added flour. Most hing sold in India is compounded with wheat flour, so use gluten-free hing if you add any."
+    },
+    "dairyFree": {
+      "status": "with-changes",
+      "reason": "dairy is ghee 5 g, paneer 30 g, milk 50 ml and cream 15 g; use the Dairy-free variant."
+    },
+    "allergensDeclared": [
+      "milk",
+      "peanut",
+      "treeNut"
+    ]
+  },
+  "tags": [
+    "Veg",
+    "Jain option",
+    "Vegan option",
+    "Gluten-free",
+    "Dairy-free option",
+    "Ramadan sehri / iftar",
+    "Contains peanut",
+    "Contains tree nuts",
+    "Contains milk",
+    "Lunch",
+    "Dinner",
+    "Mughlai",
+    "Under 60 min",
+    "Intermediate",
+    "High protein",
+    "High fibre"
+  ],
+  "description": "Family: navratan-korma",
+  "familyId": null,
+  "variants": [
+    {
+      "category": "Jain",
+      "status": "variant",
+      "name": "Jain Navratan Korma (no onion, garlic, ginger, potato, carrot)",
+      "origin": "fitplate-created",
+      "linkedDishNumber": null,
+      "reason": null
+    },
+    {
+      "category": "Vegan",
+      "status": "variant",
+      "name": "Vegan Navratan Korma (tofu, coconut milk, oil)",
+      "origin": "established",
+      "linkedDishNumber": null,
+      "reason": null
+    },
+    {
+      "category": "Dairy-free",
+      "status": "variant",
+      "name": "Dairy-free Navratan Korma",
+      "origin": "established",
+      "linkedDishNumber": null,
+      "reason": null
+    },
+    {
+      "category": "Sattvik",
+      "status": "variant",
+      "name": "No-onion, no-garlic Navratan Korma",
+      "origin": "established",
+      "linkedDishNumber": null,
+      "reason": null
+    },
+    {
+      "category": "Low-oil",
+      "status": "variant",
+      "name": "Lighter Navratan Korma",
+      "origin": "established",
+      "linkedDishNumber": null,
+      "reason": null
+    }
+  ],
+  "needsReview": [
+    "Jain \"with-changes\" but the recipe keeps onion, garlic, potato, carrot, fresh ginger and the line doesn't say to skip them",
+    "Navratri \"with-changes\" but the recipe has onion, garlic with no skip",
+    "Ekadashi \"with-changes\" but the recipe has onion, garlic with no skip",
+    "price not confirmed (2026-10-23): a listing used for the range is marked out of stock, closed or not taking orders"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-23",
+      "file": "FitPlate_Dishes_2026-10-23.md"
+    }
+  ],
+  "mergeMethod": {
+    "nutritionPerServing": "stable (single)",
+    "orderPrice": "price engine (single)",
+    "ingredients": "newest",
+    "steps": "newest",
+    "healthiness": "newest",
+    "researchRating": "newest",
+    "sources": "union",
+    "tags": "tag engine (tags.ts) on the merged dish"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 190.0–350.0 was wider than 30% of avg 260.0; narrowed to ±15%.",
+    "2026-10-23: research declares peanut not detected from ingredient names; added"
+  ]
+}

@@ -202,6 +202,7 @@ export function buildIngredient(all: IngredientVersion[], today: string): Ingred
   mergeMethod.aliases = 'union';
   mergeMethod.substitutes = 'union';
   mergeMethod.storage = 'newest';
+  mergeMethod.looksLike = 'newest';
   mergeMethod.usedIn = 'newest';
 
   for (const v of versions) for (const n of v.notes) notes.push(`${v.date}: ${n}`);
@@ -219,6 +220,9 @@ export function buildIngredient(all: IngredientVersion[], today: string): Ingred
     nutritionPer100g,
     macrosPer100Estimate: Object.values(macros.value).some((x) => x != null) ? macros.value : null,
     storage: newest('storage') as string | null,
+    looksLike: newest('looksLike') as string | null,
+    howToPick: newest('howToPick') as string | null,
+    shelfLife: newest('shelfLife') as string | null,
     substitutes: unionList(...versions.map((v) => v.substitutes)),
     usedIn: latest.usedIn ?? [],
     versions: versions.map((v) => ({ date: v.date, file: v.file })),

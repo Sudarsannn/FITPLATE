@@ -1,0 +1,802 @@
+{
+  "id": "062-mutton-biryani",
+  "number": 62,
+  "name": "Mutton Biryani",
+  "cuisine": "Hyderabadi / Mughlai-style dum biryani (Deccan and Mughlai; a Mumbai Muslim-restaurant and delivery favourite)",
+  "dietType": "non-veg",
+  "mealType": [
+    "lunch",
+    "dinner"
+  ],
+  "difficulty": "Intermediate",
+  "prepMin": 10,
+  "cookMin": 80,
+  "servings": 1,
+  "ingredients": [
+    {
+      "ingredientId": null,
+      "name": "Mutton marinade",
+      "quantity": null,
+      "unit": null,
+      "householdMeasure": null
+    },
+    {
+      "ingredientId": null,
+      "name": "Mutton (goat meat), curry cut, bone-in",
+      "quantity": 160,
+      "unit": "g",
+      "householdMeasure": "5–6 medium pieces"
+    },
+    {
+      "ingredientId": "curd-plain",
+      "name": "Curd (dahi), plain, thick",
+      "quantity": 50,
+      "unit": "g",
+      "householdMeasure": "3 tbsp"
+    },
+    {
+      "ingredientId": "ginger-garlic-paste",
+      "name": "Ginger-garlic paste (adrak-lahsun)",
+      "quantity": 10,
+      "unit": "g",
+      "householdMeasure": "2 tsp"
+    },
+    {
+      "ingredientId": "red-chilli-powder",
+      "name": "Red chilli powder (lal mirch)",
+      "quantity": 2,
+      "unit": "g",
+      "householdMeasure": "¾ tsp"
+    },
+    {
+      "ingredientId": "turmeric-powder",
+      "name": "Turmeric powder (haldi)",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "A pinch (⅛ tsp)"
+    },
+    {
+      "ingredientId": "biryani-masala",
+      "name": "Biryani masala (or garam masala)",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "1 tsp"
+    },
+    {
+      "ingredientId": "lemon",
+      "name": "Lemon juice (nimbu)",
+      "quantity": 5,
+      "unit": "ml",
+      "householdMeasure": "1 tsp"
+    },
+    {
+      "ingredientId": "green-chilli",
+      "name": "Green chilli (hari mirch), slit",
+      "quantity": 4,
+      "unit": "g",
+      "householdMeasure": "1 small chilli"
+    },
+    {
+      "ingredientId": "mint-leaves",
+      "name": "Mint leaves (pudina)",
+      "quantity": 5,
+      "unit": "g",
+      "householdMeasure": "A small handful (about 10 sprigs' leaves), split in two"
+    },
+    {
+      "ingredientId": "coriander-leaves",
+      "name": "Coriander leaves (hara dhania), chopped",
+      "quantity": 5,
+      "unit": "g",
+      "householdMeasure": "2 tbsp, split in two"
+    },
+    {
+      "ingredientId": "salt",
+      "name": "Salt (namak), for the mutton",
+      "quantity": 1.5,
+      "unit": "g",
+      "householdMeasure": "¼ tsp"
+    },
+    {
+      "ingredientId": null,
+      "name": "Onions (birista)",
+      "quantity": null,
+      "unit": null,
+      "householdMeasure": null
+    },
+    {
+      "ingredientId": "onion",
+      "name": "Onion (pyaaz), thinly sliced",
+      "quantity": 75,
+      "unit": "g",
+      "householdMeasure": "1 small-medium onion"
+    },
+    {
+      "ingredientId": "cooking-oil-refined-sunflower-groundnut",
+      "name": "Oil (sunflower or other neutral oil)",
+      "quantity": 10,
+      "unit": "ml",
+      "householdMeasure": "2 tsp"
+    },
+    {
+      "ingredientId": "rice-flour",
+      "name": "Rice",
+      "quantity": null,
+      "unit": null,
+      "householdMeasure": null
+    },
+    {
+      "ingredientId": "basmati-rice-everyday-grade",
+      "name": "Basmati rice",
+      "quantity": 75,
+      "unit": "g",
+      "householdMeasure": "A little over ⅓ cup"
+    },
+    {
+      "ingredientId": null,
+      "name": "Water, for boiling the rice",
+      "quantity": 750,
+      "unit": "ml",
+      "householdMeasure": "3 cups"
+    },
+    {
+      "ingredientId": "salt",
+      "name": "Salt (namak), for the rice water",
+      "quantity": 6,
+      "unit": "g",
+      "householdMeasure": "1 tsp"
+    },
+    {
+      "ingredientId": "bay-leaf",
+      "name": "Bay leaf (tej patta)",
+      "quantity": 1,
+      "unit": null,
+      "householdMeasure": "1 leaf"
+    },
+    {
+      "ingredientId": "green-cardamom",
+      "name": "Green cardamom (elaichi)",
+      "quantity": 2,
+      "unit": null,
+      "householdMeasure": "2 pods"
+    },
+    {
+      "ingredientId": "cloves",
+      "name": "Cloves (laung)",
+      "quantity": 2,
+      "unit": null,
+      "householdMeasure": "2 pieces"
+    },
+    {
+      "ingredientId": "cinnamon-cassia",
+      "name": "Cinnamon (dalchini)",
+      "quantity": 1,
+      "unit": "small",
+      "householdMeasure": "2 cm stick"
+    },
+    {
+      "ingredientId": "shahi-jeera",
+      "name": "Shahi jeera (caraway / black cumin)",
+      "quantity": 0.5,
+      "unit": "g",
+      "householdMeasure": "¼ tsp"
+    },
+    {
+      "ingredientId": null,
+      "name": "Layering and dum",
+      "quantity": null,
+      "unit": null,
+      "householdMeasure": null
+    },
+    {
+      "ingredientId": "ghee-cow",
+      "name": "Ghee",
+      "quantity": 10,
+      "unit": "g",
+      "householdMeasure": "2 tsp (1 for the pot base, 1 for the top)"
+    },
+    {
+      "ingredientId": "saffron",
+      "name": "Saffron (kesar)",
+      "quantity": 6,
+      "unit": null,
+      "householdMeasure": "A pinch"
+    },
+    {
+      "ingredientId": null,
+      "name": "Milk, warm",
+      "quantity": 15,
+      "unit": "ml",
+      "householdMeasure": "1 tbsp"
+    },
+    {
+      "ingredientId": null,
+      "name": "Water, for pressure-cooking the mutton",
+      "quantity": 60,
+      "unit": "ml",
+      "householdMeasure": "¼ cup"
+    },
+    {
+      "ingredientId": "kewra-water",
+      "name": "Kewra water or rose water (optional)",
+      "quantity": 2,
+      "unit": null,
+      "householdMeasure": "2 drops"
+    }
+  ],
+  "equipment": [
+    "Pressure cooker, 2–3 litre, for the mutton",
+    "Heavy-bottomed small pot or pan with a tight lid (16–18 cm), for the dum",
+    "Flat tawa (griddle), to put under the pot during dum so the bottom doesn't burn",
+    "Aluminium foil, to seal the pot under the lid",
+    "A large pot or saucepan for boiling the rice, and a colander or large sieve to drain it",
+    "Mixing bowl, small bowl (saffron milk), knife, chopping board, slotted spoon, kitchen paper, a flat spoon or spatula"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "title": "Wash the mutton",
+      "text": "Rinse 160 g mutton pieces under running water and drain well in a colander.",
+      "timerSec": 120,
+      "tip": "Wash your hands, knife and board with soap after handling raw meat.",
+      "visualCue": "Water runs clear; no bone dust or blood pooling",
+      "cameraCheck": "The drained mutton in the colander",
+      "videoShot": "Mutton pieces being rinsed under a tap."
+    },
+    {
+      "n": 2,
+      "title": "Mix the marinade",
+      "text": "In a bowl, mix 50 g curd, 10 g ginger-garlic paste, 2 g (¾ tsp) red chilli powder, 0.5 g turmeric, 3 g (1 tsp) biryani masala, 5 ml (1 tsp) lemon juice, the slit green chilli, half the mint, half the coriander and 1.5 g (¼ tsp) salt.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "A smooth orange-red paste with green flecks",
+      "cameraCheck": "The marinade in the bowl",
+      "videoShot": "A spoon stirring red spice powder into white curd."
+    },
+    {
+      "n": 3,
+      "title": "Coat the mutton",
+      "text": "Add the mutton and turn every piece in the marinade.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Every piece fully coated, no bare red meat showing",
+      "cameraCheck": "The coated mutton",
+      "videoShot": "Hands turning meat in red marinade."
+    },
+    {
+      "n": 4,
+      "title": "Rest the mutton",
+      "text": "Cover and refrigerate.",
+      "timerSec": 3600,
+      "tip": null,
+      "visualCue": "The marinade clings thickly to the meat",
+      "cameraCheck": "The covered bowl going into the fridge",
+      "videoShot": "A lid placed on the bowl."
+    },
+    {
+      "n": 5,
+      "title": "Wash the rice",
+      "text": "Rinse 75 g basmati rice in a bowl of water, rubbing gently, and pour off the water. Repeat 3 times.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "The water is almost clear, not milky",
+      "cameraCheck": "The rice in clear water",
+      "videoShot": "Fingers swirling rice in water."
+    },
+    {
+      "n": 6,
+      "title": "Soak the rice",
+      "text": "Cover the rice with fresh water and leave it.",
+      "timerSec": 1800,
+      "tip": "Soaked basmati cooks evenly and grows long instead of breaking.",
+      "visualCue": "The grains turn opaque white and slightly longer",
+      "cameraCheck": "The soaking rice",
+      "videoShot": "Water being poured over the rice."
+    },
+    {
+      "n": 7,
+      "title": "Soak the saffron",
+      "text": "Warm 15 ml milk (10 seconds in a microwave or 30 seconds in a small pan) and drop in 6–8 saffron strands.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "The milk slowly turns golden-orange",
+      "cameraCheck": "The saffron milk",
+      "videoShot": "Red strands bleeding colour into white milk."
+    },
+    {
+      "n": 8,
+      "title": "Slice the onion",
+      "text": "Slice 75 g onion into thin, even half-moons.",
+      "timerSec": 120,
+      "tip": "Even slices fry evenly; thick ones stay soft while thin ones burn.",
+      "visualCue": "Thin slices, about 2 mm, that separate into strands",
+      "cameraCheck": "The sliced onion",
+      "videoShot": "A knife slicing onion into thin crescents."
+    },
+    {
+      "n": 9,
+      "title": "Heat the oil",
+      "text": "Heat 10 ml (2 tsp) oil in the pressure cooker base on medium heat.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "The oil shimmers; an onion slice sizzles at once",
+      "cameraCheck": "The oil in the cooker",
+      "videoShot": "Oil swirling in the cooker base."
+    },
+    {
+      "n": 10,
+      "title": "Fry the onions (birista)",
+      "text": "Add the onion and fry, stirring every 30 seconds, until deep golden-brown.",
+      "timerSec": 600,
+      "tip": "Lower the heat once they turn light gold; they go from brown to burnt in under a minute. Burnt onions make the biryani bitter.",
+      "visualCue": "Deep golden-brown and starting to crisp; sweet, toasty smell",
+      "cameraCheck": "The browned onions in the pan",
+      "videoShot": "Onions turning from white to golden-brown."
+    },
+    {
+      "n": 11,
+      "title": "Take out the onions",
+      "text": "Lift the onions out with a slotted spoon onto kitchen paper. Leave the oil in the cooker.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "The onions crisp as they cool",
+      "cameraCheck": "The fried onions on paper",
+      "videoShot": "A slotted spoon lifting crisp onions out."
+    },
+    {
+      "n": 12,
+      "title": "Add half the onions to the mutton",
+      "text": "Crush half the fried onions with your fingers into the marinated mutton and mix. Keep the other half for the top.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "Brown onion bits through the marinade",
+      "cameraCheck": "The mutton with crushed onion",
+      "videoShot": "Fingers crumbling fried onion over the meat."
+    },
+    {
+      "n": 13,
+      "title": "Brown the mutton",
+      "text": "Heat the onion oil left in the cooker on medium-high, add the mutton with all its marinade, and stir-fry.",
+      "timerSec": 240,
+      "tip": null,
+      "visualCue": "The marinade thickens, darkens a shade and the raw garlic smell goes",
+      "cameraCheck": "The mutton in the cooker",
+      "videoShot": "Red-coated mutton sizzling and being stirred."
+    },
+    {
+      "n": 14,
+      "title": "Add water and close",
+      "text": "Add 60 ml (¼ cup) water, scrape the bottom, close the cooker and put on the weight.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "Nothing stuck on the base before you close it",
+      "cameraCheck": "The closed cooker",
+      "videoShot": "The lid locking onto the cooker."
+    },
+    {
+      "n": 15,
+      "title": "Pressure-cook",
+      "text": "Cook on medium heat for 4–5 whistles, then low heat for 5 min.",
+      "timerSec": 1200,
+      "tip": "Young goat may need 3–4 whistles; older, tougher mutton up to 6–7.",
+      "visualCue": "Steady whistles",
+      "cameraCheck": "The cooker on the stove",
+      "videoShot": "The cooker whistling."
+    },
+    {
+      "n": 16,
+      "title": "Release pressure naturally",
+      "text": "Turn off the heat and let the pressure drop on its own (start step 18 now).",
+      "timerSec": 600,
+      "tip": null,
+      "visualCue": "The pressure valve drops; no hiss",
+      "cameraCheck": "The valve fully down",
+      "videoShot": "A hand lifting the weight with no steam."
+    },
+    {
+      "n": 17,
+      "title": "Check and reduce the mutton",
+      "text": "Open the cooker. Press a piece with a spoon; it should give easily. Cook uncovered on medium heat until the masala is thick and clings to the meat.",
+      "timerSec": 180,
+      "tip": null,
+      "visualCue": "Thick masala with oil at the edges; about 2–3 tbsp of liquid left, not dry",
+      "cameraCheck": "A piece of mutton pulled off the bone with a spoon",
+      "videoShot": "The spoon pressing meat that falls off the bone."
+    },
+    {
+      "n": 18,
+      "title": "Boil the rice water",
+      "text": "In a large pot, bring 750 ml water to a rolling boil with 6 g (1 tsp) salt, the bay leaf, 2 cardamom, 2 cloves, the cinnamon and ¼ tsp shahi jeera.",
+      "timerSec": 300,
+      "tip": "Taste the water: it should be noticeably salty, like sea water. Most of the salt drains away.",
+      "visualCue": "Big rolling bubbles; the water smells of whole spices",
+      "cameraCheck": "The boiling spiced water",
+      "videoShot": "Whole spices tumbling in boiling water."
+    },
+    {
+      "n": 19,
+      "title": "Add the rice",
+      "text": "Drain the soaked rice and tip it into the boiling water. Stir once gently.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "The rice sinks, then the water returns to the boil",
+      "cameraCheck": "The rice in the pot",
+      "videoShot": "Rice pouring into boiling water."
+    },
+    {
+      "n": 20,
+      "title": "Boil the rice to 70%",
+      "text": "Boil uncovered without stirring.",
+      "timerSec": 300,
+      "tip": "This is the step people get wrong. Drain a minute early rather than late; the rice keeps cooking on dum.",
+      "visualCue": "A grain pressed between your fingers breaks with a small hard white centre (about 70% cooked)",
+      "cameraCheck": "One grain pressed on a plate",
+      "videoShot": "Fingers pinching a single grain."
+    },
+    {
+      "n": 21,
+      "title": "Drain the rice",
+      "text": "Drain the rice in a colander right away. Pick out the bay leaf if you like.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "Separate, long grains with steam rising",
+      "cameraCheck": "The drained rice",
+      "videoShot": "Rice tipped into a colander in a cloud of steam."
+    },
+    {
+      "n": 22,
+      "title": "Grease the dum pot",
+      "text": "Spread 5 g (1 tsp) ghee over the base of the heavy pot (or keep the mutton in the cooker base and use that).",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "A thin, shiny ghee coat",
+      "cameraCheck": "The greased pot",
+      "videoShot": "A spoon spreading ghee."
+    },
+    {
+      "n": 23,
+      "title": "Add the mutton layer",
+      "text": "Spread the mutton and all its masala in an even layer in the pot. Scatter the rest of the mint and coriander over it.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "An even, red-brown layer with green herbs on top",
+      "cameraCheck": "The mutton layer",
+      "videoShot": "Mutton spread flat in the pot, herbs falling on top."
+    },
+    {
+      "n": 24,
+      "title": "Add the rice layer",
+      "text": "Spoon the rice evenly over the mutton without pressing it down.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "A loose, even white layer covering all the meat",
+      "cameraCheck": "The rice layer",
+      "videoShot": "Rice spooned gently over the meat."
+    },
+    {
+      "n": 25,
+      "title": "Top the rice",
+      "text": "Drizzle the saffron milk in streaks over the rice. Scatter the remaining fried onions, dot with 5 g (1 tsp) ghee and add 2 drops of kewra or rose water if using.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "Orange-yellow streaks on white rice, with brown onions on top",
+      "cameraCheck": "The topped rice",
+      "videoShot": "Saffron milk drizzled in lines over the rice."
+    },
+    {
+      "n": 26,
+      "title": "Seal the pot",
+      "text": "Cover the pot tightly with foil, then press the lid on top.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "No gap at the edge; no steam can escape",
+      "cameraCheck": "The sealed pot",
+      "videoShot": "Foil crimped around the rim and the lid pressed down."
+    },
+    {
+      "n": 27,
+      "title": "Cook on dum",
+      "text": "Put a tawa on the stove, heat it for 2 min, then set the pot on it and cook on the lowest heat.",
+      "timerSec": 1200,
+      "tip": "No tawa? Use the lowest flame and lift the pot off for 1 min every 5 min.",
+      "visualCue": "After 15 min a gentle steam smell of saffron and spices; the foil puffs slightly",
+      "cameraCheck": "The pot on the tawa",
+      "videoShot": "The pot sitting on a tawa over a low blue flame."
+    },
+    {
+      "n": 28,
+      "title": "Rest",
+      "text": "Turn off the heat and leave the pot sealed.",
+      "timerSec": 300,
+      "tip": null,
+      "visualCue": "The steam settles; the rice firms up",
+      "cameraCheck": "The pot off the heat",
+      "videoShot": "A hand turning off the flame."
+    },
+    {
+      "n": 29,
+      "title": "Open and serve",
+      "text": "Open the pot, slide a flat spoon down the side to the bottom and lift out portions so each spoonful has rice and mutton. Serve hot.",
+      "timerSec": 60,
+      "tip": "Don't stir the biryani; it breaks the rice. Lift from the side.",
+      "visualCue": "Fluffy long grains, some white and some saffron-orange, with tender mutton underneath; no water at the bottom",
+      "cameraCheck": "The plated biryani with mutton pieces visible",
+      "videoShot": "The foil peeled back, steam rising and a spoon lifting rice and meat."
+    }
+  ],
+  "nutritionPerServing": {
+    "kcal": 670,
+    "proteinG": 34,
+    "carbsG": 77,
+    "fatG": 25,
+    "fibreG": 4.5
+  },
+  "microNutrientsEstimate": {
+    "values": {
+      "riboflavin": 0.1,
+      "vitamin-a": 31.8,
+      "vitamin-b12": 0.2,
+      "vitamin-d": 0.4,
+      "vitamin-e": 4.1,
+      "vitamin-k": 13.7
+    },
+    "coveragePct": 5,
+    "basis": "partial estimate from ingredient quantities"
+  },
+  "asOrdered": {
+    "price": {
+      "priceHistory": [
+        {
+          "date": "2026-10-16",
+          "min": 300,
+          "max": 600,
+          "avg": 507,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-10-16.md"
+        }
+      ],
+      "currentEstimate": {
+        "min": 430,
+        "max": 580,
+        "avg": 510
+      },
+      "method": "single",
+      "trend": "unknown",
+      "change30dPct": null,
+      "lastObserved": "2026-10-16",
+      "stale": false,
+      "seasonal": false,
+      "listingCount": 5,
+      "platforms": [
+        "magicpin",
+        "Swiggy"
+      ],
+      "outOfStock": false,
+      "confirmed": true,
+      "checkNotes": []
+    },
+    "nutrition": {
+      "calories": {
+        "value": null,
+        "source": null
+      },
+      "protein": {
+        "value": null,
+        "source": null
+      },
+      "carbs": {
+        "value": null,
+        "source": null
+      },
+      "fat": {
+        "value": null,
+        "source": null
+      },
+      "fibre": {
+        "value": null,
+        "source": null
+      }
+    },
+    "restaurantsSampled": null,
+    "platforms": [
+      "Swiggy",
+      "Zomato",
+      "magicpin"
+    ]
+  },
+  "orderPrice": {
+    "priceHistory": [
+      {
+        "date": "2026-10-16",
+        "min": 300,
+        "max": 600,
+        "avg": 507,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-10-16.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 430,
+      "max": 580,
+      "avg": 510
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-16",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 5,
+    "platforms": [
+      "magicpin",
+      "Swiggy"
+    ],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
+  },
+  "healthiness": {
+    "score": 6,
+    "restaurantScore": 4,
+    "reasons": [
+      "a filling one-pot meal with 34 g of protein and good iron, zinc and B12 from the mutton, cooked with a measured 10 ml oil and 10 g ghee and no deep-frying of the meat. Points come off for white basmati rice (low fibre, 4.5 g), saturated fat from ghee (about 9.5 g), sodium (about 1,110 mg) and almost no vegetables. Restaurant biryani usually has much more ghee, oil and salt, deep-fried onions, larger rice portions and often an egg and salan on the side."
+    ]
+  },
+  "researchRating": {
+    "score": 4.6,
+    "basis": "biryani is India's most-ordered dish on Swiggy year after year (7.6 crore biryani orders in 12 months, Swiggy data reported by Business Today and afaqs), and mutton biryani is the dish Mumbai's best-known Muslim restaurants are named for (Jaffer Bhai's Delhi Darbar, Lucky \"Biryani\" in Bandra, Persian Darbar, Cafe Noorani; The Better India, LBB, magicpin, Siasat). Small deduction: it is costlier and less ordered than chicken biryani, and reviews often complain of tough or too-few mutton pieces, bland rice or inconsistent quality (Wanderlog reviews of Delhi Darbar Mahim; an Outlook Traveller and Wanderlog note on Biryani By Kilo; magicpin reviews of Sahara Dindoshi). Recipe-site star ratings were not checked in this run (search budget), so the rating rests on articles and review sites more than usual."
+  },
+  "storage": "Cool the biryani to room temperature within 1 hour (cooked rice left warm can grow Bacillus cereus), then refrigerate in a closed box for up to 2 days, or freeze for up to 1 month. Reheat only once: sprinkle 1–2 tbsp water over it, cover and heat in a pan on low for 5–7 min, or microwave covered for 2–3 min, until steaming hot right through. Thaw frozen biryani in the fridge overnight first.",
+  "leftoverRemix": "biryani tikki with mint raita. Mash 1 cup of leftover biryani with the mutton shredded off the bone, 1 tbsp besan (gram flour) and a little chopped coriander. Shape into 3–4 small patties and shallow-fry in 1 tsp oil for 2–3 min per side until crisp. Serve with mint raita or green chutney. Use within the same 2-day window.",
+  "burnOff": "about 9.6 km of running (670 ÷ 70 kcal/km, for a 70 kg adult), or about 13.4 km of brisk walking (about 2 hours 40 minutes at 5 km/h, using about 50 kcal/km for walking) (est.).",
+  "sources": [
+    "Yummy Tummy Aarthi, Hyderabadi Mutton Dum Biryani (kacchi; onion-fried oil in the marinade; raw papaya paste; 1–2 h marinade, or 8 h / overnight without papaya; rice cooked only to about 50%): https://www.yummytummyaarthi.com/wprm_print/130004 ; https://yummytummyaarthi.com/wprm_print/hyderabadi-dum-biryani-recipe-authentic-hyderabadi-mutton-dum-biryani-recipe",
+    "With a Spin, Kachchi Biryani – Dum Mutton Biryani: https://withaspin.com/easyrecipe-print/2877-0/",
+    "Kali Mirch by Smita, Hyderabadi Mutton Biryani (Kachchi method): https://kalimirchbysmita.com/easyrecipe-print/2652-0/",
+    "Gulf News, Guide to making Hyderabadi mutton dum biryani (rice about 70% cooked; dough-sealed pot; dum then 10–15 min rest): https://gulfnews.com/food/guide-cooking/guide-to-making-hyderabadi-mutton-dum-biryani-1.1663689134304 ; Recipe for Mumbai mutton biryani: https://gulfnews.com/food/cooking-cuisines/recipe-for-mumbai-mutton-biryani-1.1610889659904",
+    "Archana's Kitchen, Mutton Dum Biryani: https://www.archanaskitchen.com/recipe/mutton-dum-biryani-recipe",
+    "But First Chai, Kacchi Mutton Biryani: https://butfirstchai.com/kacchi-mutton-biryani/",
+    "Cooking 4 All Seasons, Mutton Dum Biryani: https://www.cooking4allseasons.com/mutton-dum-biryani/",
+    "Simple Indian Recipes, Hyderabadi Mutton Dum Biryani: https://simpleindianrecipes.com/Home/Hyderabadi-Mutton-Dum-Biryani.aspx",
+    "HealthifyMe, Hyderabadi Biryani (food library): https://www.healthifyme.com/recipes/hyderabadi-biryani",
+    "USDA FoodData Central (goat meat raw; lamb as a B6 proxy; white long-grain rice, unenriched; whole-milk yoghurt; ghee / butter oil; sunflower oil; onion; garlic; ginger; green chilli; lemon juice; coriander and mint; whole milk; spices; jackfruit for the variants): https://fdc.nal.usda.gov/",
+    "ICMR-NIN, Nutrient Requirements for Indians 2020 (RDA/EAR reference): https://www.nin.res.in/ ; IFCT 2017 referenced but values not confirmed from this environment.",
+    "Same rule sets as earlier FitPlate dishes: Veg Recipes of India, Navratri fasting rules: https://www.vegrecipesofindia.com/navratri-fasting-rules-vrat-ka-khana/ ; Hindutone, Navratri 2026 fasting rules (same rules for Ekadashi fasts): https://hindutone.com/festivals/navratri-fasting-rules-2026-vrat-food-what-to-eat-avoid/ ; British Nutrition Foundation, healthy Ramadan (avoid salty foods at suhoor): https://www.nutrition.org.uk/media/bytokjkm/healthy-ramadan-2021.pdf ; magicpin, Sehri time Mumbai: https://magicpin.com/blog/Sehri-time-mumbai",
+    "magicpin, Sahara Restaurant, Dindoshi (Mutton Biryani ₹300 per plate; reviews): https://magicpin.in/Mumbai/Dindoshi/Restaurant/Sahara-Restaurant/store/527471/",
+    "Swiggy, Bikkgane Biryani, Station Road, Chembur (Mutton Dum Biryani Bowl 500 ml ₹459): https://www.swiggy.com/city/mumbai/bikkgane-biryani-station-road-chembur-rest866739 ; Mira Road (MMR): https://www.swiggy.com/city/mumbai/bikkgane-biryani-naya-nagar-road-mira-road-rest616340",
+    "Swiggy, Best Mutton Biryani Restaurants in Mumbai (Central Prabhu Mutton Biryani (5 Pcs) ₹475; Behrouz Dum Gosht Biryani serves 1 ₹569, serves 2 ₹985): https://www.swiggy.com/city/mumbai/mutton-biryani-dish-restaurants",
+    "Swiggy, biryani dishes in Mumbai (House of Biryan Dum Hyderabadi Mutton Biryani (Australian Lamb) [Boneless] ₹599; unnamed Mutton Dum Biryani Bowl ₹439; unnamed Mutton Hyderabadi Dum Biryani [Serve 1] ₹599 and ½ kg ₹799): https://www.swiggy.com/city/mumbai/biryani-dish-restaurants",
+    "Swiggy, meat dishes / meat cuisine in Mumbai (Charcoal Eats boneless mutton biryanis ₹639; Sahara Restaurant Mutton Dum Biryani ₹342): https://www.swiggy.com/city/mumbai/meat-dish-restaurants ; https://swiggy.com/city/mumbai/meat-cuisine-restaurants",
+    "Swiggy, Charcoal Eats outlets (Dum Kathal bowls, Thane West ₹289 and Panvel ₹269; for the Vegetarian variant): https://www.swiggy.com/city/mumbai/charcoal-eats-biryani-and-beyond-tahne-west-vartaknagar-rest328883 ; https://www.swiggy.com/city/mumbai/charcoal-eats-biryani-and-beyond-panvel-rest1004015",
+    "magicpin, Behrouz Biryani, Airoli, Navi Mumbai (MMR; mutton biryani serves 2 ₹849): https://magicpin.in/Navi-Mumbai/Airoli/Restaurant/Behrouz-Biryani/store/2c15a3/menu/ ; Mahakali: https://magicpin.in/Mumbai/Mahakali/Restaurant/Behrouz-Biryani/store/53b58b/menu ; Parel: https://magicpin.in/Mumbai/Parel/Restaurant/Behrouz-Biryani/store/531803/menu ; Gurgaon (₹570 serves 1, context): https://magicpin.in/Gurgaon/Sector-23-A/Restaurant/Behrouz-Biryani/store/4c8c5c",
+    "magicpin blog, Behrouz price list (Dum Gosht ₹349 regular, ₹699 kilo; updated August 2024): https://magicpin.com/blog/best-behrouz-biryani-price-list",
+    "magicpin blog, Best biryani outlets in Mumbai (Persian Darbar ₹500 serves 2–3; Shalimar; Cafe Noorani; Dum Mutka): https://magicpin.com/blog/best-biryani-outlets-mumbai",
+    "magicpin, Sahara Hotel, Kurla West (no mutton biryani price seen): https://magicpin.in/Mumbai/Kurla-West/Restaurant/Sahara-Hotel/store/24c93 ; The Biryani Life, Mahakali: https://magicpin.in/Mumbai/Mahakali/Restaurant/The-Biryani-Life/store/57bb08/menu ; Persian Darbar, Kurla West: https://magicpin.in/Mumbai/Kurla/Restaurant/Persian-Darbar/store/18a607/menu ; Lazeez Biryani, Malad West: https://magicpin.in/Mumbai/Mindspace/Restaurant/Lazeez-Biryani/store/45c40a/menu/",
+    "Swiggy, Lucky Restaurant, Khar (no biryani price seen): https://www.swiggy.com/city/mumbai/lucky-restaurant-since-1938--khar-rest2884",
+    "Best Menu Hub, Taj Hotel Mumbai menu (premium, excluded): https://bestmenuhub.com/taj-hotel-mumbai-menu/",
+    "Red Bucket Biryani, menu (dated context): https://redbucketbiryani.com/our-menu/",
+    "Indian Food Freak, Peetuk, Mumbai (2015 context): https://www.indianfoodfreak.com/?p=27866",
+    "Swiggy outside Mumbai (context): Biryani By Kilo, Patna: https://www.swiggy.com/city/patna/biryani-by-kilo-khajpura-rest337225 ; Behrouz Biryani, Gwalior: https://www.swiggy.com/city/gwalior/behrouz-biryani-govindpuri-rest458038",
+    "Business Today, Swiggy 7.6 crore biryani orders: https://businesstoday.in/latest/trends/story/swiggy-reveals-indians-placed-76-crore-biryani-orders-in-last-12-months-387844-2023-07-01 ; afaqs: https://www.afaqs.com/news/mktg/india-ordered-76-million-biryanis-on-swiggy-in-last-12-months",
+    "The Better India, iconic biryani places in India: https://www.thebetterindia.com/270232/best-biryani-places-in-india-iconic-restaurants/",
+    "LBB, Best biryani joints in Mumbai: https://lbb.in/mumbai/Best-Biryani-Joints-Mumbai-Food/ ; Lucky Restaurant, Bandra: https://lbb.in/mumbai/order-biryani-lucky-restaurant-bandra",
+    "Siasat, oldest places for Hyderabadi biryani in Mumbai: https://www.siasat.com/5-oldest-and-iconic-places-to-eat-hyderabadi-biryani-in-mumbai-3345018/",
+    "Outlook Traveller, Biryani By Kilo review: https://www.outlooktraveller.com/explore/food-and-drink/food-review-biryani-by-kilo",
+    "Wanderlog, Jaffer Bhai's Delhi Darbar: https://wanderlog.com/place/details/1468685/jaffer-bhais-delhi-darbar"
+  ],
+  "allergens": [
+    "peanut",
+    "treeNut",
+    "milk",
+    "egg"
+  ],
+  "dietClaims": [
+    "glutenFree"
+  ],
+  "fasting": {
+    "navratri": {
+      "status": "no",
+      "reason": "contains mutton, rice (a grain), onion, garlic and table salt, all avoided under the common Navratri vrat rule set."
+    },
+    "ekadashi": {
+      "status": "no",
+      "reason": "contains rice (grain) and mutton, both avoided on Ekadashi under the common rule set."
+    },
+    "jain": {
+      "status": "no",
+      "reason": "contains mutton, plus onion, garlic and fresh ginger (roots)."
+    },
+    "ramadan": {
+      "status": "with-changes",
+      "reason": "use halal mutton. Biryani is a classic iftar and Eid dish in Mumbai, but at about 1,110 mg sodium (est.) and 25 g fat it is heavy and salty for sehri unless the salt is cut."
+    }
+  },
+  "dietTags": {
+    "base": "Non-veg (mutton / goat meat)",
+    "jain": {
+      "status": "no",
+      "reason": "contains mutton, plus onion, garlic and fresh ginger (roots)."
+    },
+    "vegan": {
+      "status": "no",
+      "reason": "contains mutton, curd, ghee and milk."
+    },
+    "pescatarian": {
+      "status": "no",
+      "reason": "contains mutton."
+    },
+    "sattvik": {
+      "status": "no",
+      "reason": "contains mutton, onion and garlic."
+    },
+    "glutenFree": {
+      "status": "yes",
+      "reason": "rice, mutton, curd and whole spices; this recipe uses no hing and seals the pot with foil instead of atta dough. Check that a packaged biryani masala is labelled gluten-free, and if you seal with atta dough, don't let the dough touch the rice."
+    },
+    "dairyFree": {
+      "status": "with-changes",
+      "reason": "curd 50 g → 40 g tomato purée + 5 ml more lemon juice; ghee 10 g → 10 ml oil; milk for the saffron → warm water (see Diet variants)."
+    },
+    "allergensDeclared": [
+      "milk",
+      "peanut",
+      "egg",
+      "treeNut"
+    ]
+  },
+  "tags": [
+    "Non-veg",
+    "Gluten-free",
+    "Contains peanut",
+    "Contains tree nuts",
+    "Contains milk",
+    "Contains egg",
+    "Lunch",
+    "Dinner",
+    "Hyderabadi",
+    "Intermediate",
+    "High protein"
+  ],
+  "description": "Family: biryani",
+  "familyId": "biryani",
+  "variants": [
+    {
+      "category": "Jain",
+      "status": "not-appropriate",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": "the Jain diet excludes meat, and the masala relies on onion, garlic and fresh ginger (roots). A Jain biryani is a vegetable biryani made without roots, a separate dish (see dish 39, Veg Biryani)."
+    },
+    {
+      "category": "Gluten-free",
+      "status": "already-fits",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": "main recipe already gluten-free (rice, mutton, curd, whole spices, foil seal; no hing). Check the biryani masala label."
+    }
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-10-16",
+      "file": "FitPlate_Dishes_2026-10-16.md"
+    }
+  ],
+  "mergeMethod": {
+    "nutritionPerServing": "stable (single)",
+    "orderPrice": "price engine (single)",
+    "ingredients": "newest",
+    "steps": "newest",
+    "healthiness": "newest",
+    "researchRating": "newest",
+    "sources": "union",
+    "tags": "tag engine (tags.ts) on the merged dish"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 300.0–600.0 was wider than 30% of avg 507.0; narrowed to ±15%.",
+    "2026-10-16: research declares peanut, egg, treeNut not detected from ingredient names; added"
+  ]
+}

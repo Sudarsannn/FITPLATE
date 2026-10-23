@@ -198,6 +198,13 @@ describe('bundled dishes (Day 8 done-when)', () => {
     expect(DISH_SORTS.some((s) => s.id === 'most-saved')).toBe(true);
     expect(DISH_SORTS.some((s) => s.id === 'protein-per-rupee')).toBe(true);
   });
+
+  it('innovation: sorts by kcal saved vs the restaurant, only where the restaurant published calories', () => {
+    const sort = DISH_SORTS.find((s) => s.id === 'kcal-saved')!;
+    const withGap = researchDishes.filter((d) => sort.value(d) != null);
+    expect(withGap.length).toBeGreaterThan(0);
+    for (const d of withGap) expect(d.asOrdered?.nutrition?.calories.value).toBeGreaterThan(d.nutritionPerServing.kcal ?? Infinity);
+  });
 });
 
 describe('review 2026-10-21 FIX 2', () => {

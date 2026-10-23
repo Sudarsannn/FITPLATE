@@ -2,7 +2,9 @@ import { router } from 'expo-router';
 import { memo } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+import { featureFlags } from '../../config/featureFlags';
 import type { Dish } from '../../models/research';
+import { caloriesSaved } from '../../services/dishDetail';
 import { cardChips, totalMinutes } from '../../services/dishLibrary';
 import { colors, radius } from '../../theme';
 import { PressableScale } from '../ui';
@@ -23,6 +25,8 @@ export const ResearchDishCard = memo(function ResearchDishCard({ dish }: { dish:
   const health = dish.healthiness?.score;
   const rating = dish.researchRating?.score;
   const chips = cardChips(dish);
+  // Innovation (calorieGapBadge): only when the restaurant published its calories.
+  const gap = featureFlags.calorieGapBadge ? caloriesSaved(dish) : null;
   return (
     <PressableScale
       scaleTo={0.98}
@@ -38,6 +42,13 @@ export const ResearchDishCard = memo(function ResearchDishCard({ dish }: { dish:
         <Text style={styles.meta} numberOfLines={1}>
           {factsLine(dish)}
         </Text>
+        {gap ? (
+          <View style={styles.gap}>
+            <Text style={styles.gapText} numberOfLines={1}>
+              {gap} kcal lighter than the restaurant version
+            </Text>
+          </View>
+        ) : null}
         {chips.length ? (
           <View style={styles.chips}>
             {chips.map((c) => (
@@ -76,6 +87,8 @@ const styles = StyleSheet.create({
   name: { color: colors.text, fontSize: 16, fontWeight: '800' },
   meta: { color: colors.muted, fontSize: 12.5, marginTop: 2 },
   chips: { flexDirection: 'row', flexWrap: 'wrap', gap: 5, marginTop: 6 },
+  gap: { alignSelf: 'flex-start', marginTop: 6, paddingHorizontal: 8, paddingVertical: 3, borderRadius: radius.pill, backgroundColor: 'rgba(61,220,132,0.15)', maxWidth: '100%' },
+  gapText: { color: colors.accent, fontSize: 11.5, fontWeight: '800' },
   scores: { flexDirection: 'row', flexWrap: 'wrap', columnGap: 12, marginTop: 6 },
   score: { color: colors.muted, fontSize: 12 },
   scoreValue: { color: colors.text, fontWeight: '800' },
