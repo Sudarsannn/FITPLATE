@@ -15,6 +15,7 @@
  * Secrets (Cloudflare dashboard, Settings, Variables and Secrets):
  *   GEMINI_API_KEY   required, free from https://aistudio.google.com/apikey
  *   GITHUB_TOKEN     optional, fine-grained token with Contents write on the repo
+ *   TAVILY_API_KEY   optional, free web search (https://tavily.com); without it the AI falls back to Google Search grounding, then to its own knowledge
  * Variables (optional, normally leave unset: the newest free flash model is found automatically): GEMINI_MODEL, GEMINI_FALLBACK_MODELS, GITHUB_REPO, QUEUE_BRANCH.
  */
 
@@ -354,11 +355,51 @@ export async function plan(body, ctx) {
   return { plan: out, model: r.model };
 }
 
+/**
+ * Real web search through Tavily's free tier (about 1,000 searches a month, no card):
+ * a few queries, deduplicated pages, each with its text. The AI then writes the notes from these pages
+ * instead of from memory. Returns [] when no key is set or the search fails.
+ */
+export async function webSearch(env, fetchImpl, queries) {
+  if (!env.TAVILY_API_KEY) return [];
+  const seen = new Set();
+  const results = [];
+  for (const q of queries.slice(0, 3)) {
+    try {
+      const res = await fetchImpl('https://api.tavily.com/search', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json', authorization: `Bearer ${env.TAVILY_API_KEY}` },
+        body: JSON.stringify({ query: q, search_depth: 'basic', max_results: 5, include_raw_content: true, include_answer: false }),
+      });
+      if (!res.ok) continue;
+      const data = await res.json();
+      for (const r of data.results ?? []) {
+        if (!r.url || seen.has(r.url)) continue;
+        seen.add(r.url);
+        results.push({ title: String(r.title ?? r.url).slice(0, 120), url: String(r.url), text: String(r.raw_content || r.content || '').replace(/\s+/g, ' ').slice(0, 2500) });
+      }
+    } catch {
+      /* try the next query */
+    }
+  }
+  return results.slice(0, 10);
+}
+
+export function webBlock(results) {
+  return `\n\nWEB RESULTS (real pages found just now; base the recipe and numbers on what these pages agree on, say where they disagree, and use only these as sources):\n${results.map((r, n) => `[${n + 1}] ${r.title} (${r.url})\n${r.text}`).join('\n\n')}`;
+}
+
 export async function research(body, ctx) {
   const description = needText(body.description, 'The description');
   const canonicalName = needText(body.canonicalName, 'The dish name');
   const base = body.base && typeof body.base === 'object' ? { name: clip(String(body.base.name), 80), ingredients: clip(String(body.base.ingredients), 2500), steps: clip(String(body.base.steps), 3500) } : null;
   const args = { description, canonicalName, mode: body.mode === 'variation' ? 'variation' : 'new', base, changes: (Array.isArray(body.changes) ? body.changes : []).slice(0, 12).map((c) => clip(String(c), 200)) };
+  const queries = (Array.isArray(body.searchQueries) ? body.searchQueries : []).map((q) => clip(String(q), 120)).filter(Boolean);
+  const web = await webSearch(ctx.env, ctx.fetchImpl, queries.length ? queries : [`${canonicalName} recipe`, `${canonicalName} nutrition per serving`]);
+  if (web.length >= 2) {
+    const r = await callGemini({ ...ctx, system: SYSTEM_BASE, prompt: researchPrompt(args) + webBlock(web), search: false, temperature: 0.3 });
+    return { notes: r.text, sources: web.map((w) => ({ title: w.title, url: w.url })), queries, model: r.model, grounded: true, via: 'web-search' };
+  }
   try {
     const r = await callGemini({ ...ctx, system: SYSTEM_BASE, prompt: researchPrompt(args), search: true, temperature: 0.3 });
     return { notes: r.text, sources: r.sources.slice(0, 20), queries: r.queries.slice(0, 8), model: r.model, grounded: true };
@@ -516,7 +557,7 @@ export async function handleAi(request, env, fetchImpl = fetch) {
   const route = url.pathname.replace(/\/+$/, '');
   try {
     if (route === '/api/ai/status' && request.method === 'GET') {
-      const out = { ok: true, configured: Boolean(env.GEMINI_API_KEY), queue: Boolean(env.GITHUB_TOKEN), model: env.GEMINI_MODEL || 'auto' };
+      const out = { ok: true, configured: Boolean(env.GEMINI_API_KEY), queue: Boolean(env.GITHUB_TOKEN), web: Boolean(env.TAVILY_API_KEY), model: env.GEMINI_MODEL || 'auto' };
       // ?check=1 asks Google which free models this key can use right now.
       if (url.searchParams.get('check') && env.GEMINI_API_KEY) out.available = env.GEMINI_MODEL ? [env.GEMINI_MODEL] : await discoverModels(env, fetchImpl);
       if (url.searchParams.get('test') && env.GEMINI_API_KEY) out.probe = await probe(env, fetchImpl);

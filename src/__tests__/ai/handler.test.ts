@@ -132,6 +132,26 @@ describe('AI server handler', () => {
     expect(searches.includes(true) && searches.includes(false)).toBe(true);
   });
 
+  it('research reads real web pages through Tavily when a key is set, and cites only those', async () => {
+    const prompts: string[] = [];
+    const fetchImpl = async (u: string, init?: any) => {
+      if (u.includes('/models?')) return { ok: true, status: 200, json: async () => LIST } as any;
+      if (u.includes('tavily')) {
+        const q = JSON.parse(init.body).query;
+        return { ok: true, status: 200, json: async () => ({ results: [{ title: 'Site A', url: 'https://a.test/x', raw_content: `recipe for ${q}` }, { title: 'Site B', url: 'https://b.test/y', content: 'snippet' }] }) } as any;
+      }
+      prompts.push(JSON.parse(init.body).contents[0].parts[0].text);
+      expect(JSON.parse(init.body).tools).toBeUndefined();
+      return gem('notes from pages');
+    };
+    const res = await handleAi(post('/api/ai/research', { description: 'dal', canonicalName: 'Dal', searchQueries: ['dal recipe', 'dal nutrition'] }), { GEMINI_API_KEY: 'k', TAVILY_API_KEY: 't' }, fetchImpl as any);
+    const body = await res.json();
+    expect(body).toMatchObject({ grounded: true, via: 'web-search' });
+    expect(body.sources).toEqual([{ title: 'Site A', url: 'https://a.test/x' }, { title: 'Site B', url: 'https://b.test/y' }]);
+    expect(prompts[0]).toContain('WEB RESULTS');
+    expect(prompts[0]).toContain('recipe for dal recipe');
+  });
+
   it('library: reads every queue file in one call and hides researched ones', async () => {
     const calls: string[] = [];
     const file = (name: string, status: string) => ({ name: `${name}.json`, object: { text: JSON.stringify({ slug: name, name, status, requests: name === 'a' ? 5 : 1, dish: { name } }) } });

@@ -113,7 +113,7 @@ export async function createDishWithAi(input: CreateInput, opts: { onPhase?: (p:
   on('researching');
   const res = await post<{ notes: string; sources: { title: string; url: string }[]; model: string; grounded?: boolean }>(
     '/api/ai/research',
-    { description, canonicalName: plan.canonicalName, mode, base: base && mode === 'variation' ? baseSummary(base) : null, changes: plan.changes },
+    { description, canonicalName: plan.canonicalName, mode, base: base && mode === 'variation' ? baseSummary(base) : null, changes: plan.changes, searchQueries: plan.searchQueries },
     f,
     opts.signal,
   );
