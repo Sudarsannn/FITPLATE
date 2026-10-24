@@ -12,6 +12,8 @@ import { useStore } from '../lib/store';
 import { useVendors } from '../lib/useVendors';
 import type { ShoppingItem, ShoppingList } from '../models/prefs';
 import type { Dish } from '../models/research';
+import { makeCost } from '../services/dishLibrary';
+import { rupees } from '../services/costToMake';
 import { dishCost } from '../services/vendors';
 import { buildShoppingItems, cheapestPer100, isPantryStaple, itemAmountLabel, newShoppingList, offlineVariants, preselect, shoppingListText, variantLabel, type VariantOption } from '../services/vendors/basket';
 import { VENDOR_VISIBLE, VENDORS_PAUSED } from '../services/vendors/config';
@@ -176,6 +178,8 @@ export default function BasketScreen() {
             {cost.coveragePct < 100 ? ` (prices known for ${cost.coveragePct}% of them)` : ''}. Packs cost more; you keep the rest.
           </Text>
         ) : null}
+
+        <CostPerIngredient dishes={dishes} servings={list.servings} />
 
         <View style={{ flexDirection: 'row', gap: 8, marginTop: 14, alignItems: 'center' }}>
           <Chip label="📦 Order online" active={tab === 'online'} onPress={() => setTab('online')} />
@@ -534,3 +538,37 @@ const s = StyleSheet.create({
   knowLabel: { color: colors.accent, fontWeight: '800' },
   zrow: { flexDirection: 'row', alignItems: 'center', gap: 12, paddingVertical: 10, borderBottomWidth: 1, borderColor: colors.border },
 });
+
+/** What each ingredient costs, shown here (after "Cook it yourself") rather than on the dish page. */
+function CostPerIngredient({ dishes, servings }: { dishes: Dish[]; servings: Record<string, number> }) {
+  const [open, setOpen] = useState(false);
+  const costs = dishes.map((d) => ({ dish: d, cost: makeCost(d), n: servings[d.id] ?? 2 })).filter((c) => c.cost);
+  if (!costs.length) return null;
+  return (
+    <View style={{ marginTop: 8 }}>
+      <Pressable onPress={() => setOpen((o) => !o)} accessibilityRole="button" accessibilityLabel={open ? 'Hide cost per ingredient' : 'Show cost per ingredient'} style={{ flexDirection: 'row', alignItems: 'center', gap: 4 }}>
+        <Text style={{ color: colors.accent, fontWeight: '700', fontSize: 13.5 }}>{open ? 'Hide cost per ingredient' : 'Cost per ingredient'}</Text>
+        <Ionicons name={open ? 'chevron-up' : 'chevron-down'} size={16} color={colors.accent} />
+      </Pressable>
+      {open
+        ? costs.map(({ dish, cost, n }) => (
+            <View key={dish.id} style={{ marginTop: 8 }}>
+              {dishes.length > 1 ? <Text style={[k.muted, { fontWeight: '800' }]}>{dish.name}</Text> : null}
+              {cost!.lines.map((l, i) => (
+                <View key={`${i}-${l.name}`} style={{ flexDirection: 'row', justifyContent: 'space-between', gap: 8, paddingVertical: 3 }}>
+                  <Text style={[k.muted, { flex: 1 }]} numberOfLines={2}>
+                    {l.name}
+                  </Text>
+                  <Text style={[k.muted, l.avg != null ? { color: colors.text, fontWeight: '700' } : null]}>
+                    {l.avg != null ? rupees(l.avg * n) : l.note}
+                    {l.status === 'estimated' ? ' (est.)' : ''}
+                  </Text>
+                </View>
+              ))}
+            </View>
+          ))
+        : null}
+      {open ? <Text style={[k.muted, { fontSize: 11.5, marginTop: 4 }]}>Researched shop prices for the amount you need. Packs cost more; cooking gas isn&apos;t included.</Text> : null}
+    </View>
+  );
+}

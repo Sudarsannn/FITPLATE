@@ -8,13 +8,12 @@ import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context'
 
 import { dishArt, PhotoCredit, SelectChip, TagChip, dishPhoto } from '../../components/dishes/parts';
 import { Bar, GradientButton, PressableScale } from '../../components/ui';
-import { VendorPlaceholders } from '../../components/vendors/VendorLogos';
 import { featureFlags } from '../../config/featureFlags';
 import { familyOf, getDish, getIngredient, researchLinks } from '../../data/research';
 import { success, thud } from '../../lib/haptics';
 import { dayKey, useStore } from '../../lib/store';
 import type { Dish } from '../../models/research';
-import { rangeLabel, rupees, rupeesPer10gProtein, savingVsOrder, type DishCost } from '../../services/costToMake';
+import { rangeLabel, rupeesPer10gProtein, savingVsOrder, type DishCost } from '../../services/costToMake';
 import {
   BALANCE_LABEL,
   caloriesSaved,
@@ -416,32 +415,25 @@ function MakeOrOrder({ dish, cost, order, servings, setServings }: { dish: Dish;
           <Text style={styles.linkText}>Already have everything? Start cooking</Text>
           <Ionicons name="chevron-forward" size={16} color={colors.muted} />
         </PressableScale>
-        {cost ? (
-          <PressableScale onPress={() => setOpen((o) => !o)} style={styles.link} scaleTo={0.98} accessibilityLabel={open ? 'Hide cost per ingredient' : 'Show cost per ingredient'}>
-            <Text style={styles.linkText}>{open ? 'Hide cost per ingredient' : 'Cost per ingredient'}</Text>
+        {dish.ingredients.length ? (
+          <PressableScale onPress={() => setOpen((o) => !o)} style={styles.link} scaleTo={0.98} accessibilityLabel={open ? 'Hide ingredient list' : 'Show ingredient list'}>
+            <Text style={styles.linkText}>{open ? 'Hide ingredient list' : `Ingredient list (${dish.ingredients.length})`}</Text>
             <Ionicons name={open ? 'chevron-up' : 'chevron-down'} size={16} color={colors.muted} />
           </PressableScale>
         ) : null}
-        {open && cost ? (
+        {open ? (
           <>
-            {cost.lines.map((l, k) => (
-              <View key={`${k}-${l.name}`} style={styles.burnRow}>
+            {dish.ingredients.map((i, k) => (
+              <View key={`${k}-${i.name}`} style={styles.burnRow}>
                 <Text style={[styles.small, { flex: 1 }]} numberOfLines={2}>
-                  {l.name}
+                  {i.name}
                 </Text>
-                <Text style={[styles.small, l.avg != null ? styles.strong : { color: colors.muted }]}>
-                  {l.avg != null ? rupees(l.avg * servings) : l.note}
-                  {l.status === 'estimated' ? ' (est.)' : ''}
+                <Text style={[styles.small, styles.strong]}>
+                  {i.quantity != null ? recipeAmountLabel(i.quantity * servings, i.unit) : servings === 1 ? (i.householdMeasure ?? '') : i.householdMeasure ? `${i.householdMeasure} × ${servings}` : ''}
                 </Text>
               </View>
             ))}
-            {cost.estimated ? <Text style={styles.note}>(est.) Some amounts were converted between weight and volume, or taken from the recipe&apos;s own measure, because research hasn&apos;t published them yet.</Text> : null}
-            {cost.unconfirmed ? (
-              <Text style={styles.note}>
-                {cost.unconfirmed} {cost.unconfirmed === 1 ? 'price rests' : 'prices rest'} on fewer than 3 shop listings so far.
-              </Text>
-            ) : null}
-            <Text style={styles.note}>Cooking gas isn&apos;t included.</Text>
+            <Text style={styles.note}>Tap &quot;Cook it yourself&quot; to see what each ingredient costs and to buy them.</Text>
           </>
         ) : null}
       </View>
@@ -463,9 +455,12 @@ function MakeOrOrder({ dish, cost, order, servings, setServings }: { dish: Dish;
         ) : (
           <Text style={styles.note}>Restaurant prices for this dish are coming soon.</Text>
         )}
-        <View style={{ marginTop: 10 }}>
-          <VendorPlaceholders vendors={['swiggy', 'zomato']} />
-        </View>
+        <GradientButton
+          title="🛵  Order on Swiggy"
+          style={{ marginTop: 12 }}
+          onPress={() => router.push({ pathname: '/order-vs-make', params: { q: dish.name } })}
+        />
+        <Text style={styles.flow}>Finds this dish on Swiggy near you with its live price. You pay in Swiggy or your UPI app, never in FitPlate.</Text>
       </View>
 
       {saving ? (

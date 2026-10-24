@@ -122,7 +122,17 @@ export function ProfileScreen({ asTab = false }: { asTab?: boolean }) {
               <Text style={{ fontSize: 24 }}>🛒</Text>
               <View style={{ flex: 1 }}>
                 <Text style={{ color: colors.text, fontWeight: '800' }}>Shopping lists</Text>
-                <Text style={[type.small, { color: colors.muted }]}>Grocery apps arrive with the phone app</Text>
+                <Text style={[type.small, { color: colors.muted }]}>Pick brands and packs, buy online or at the shop</Text>
+              </View>
+              <Ionicons name="chevron-forward" size={18} color={colors.muted} />
+            </Glass>
+          </PressableScale>
+          <PressableScale onPress={() => router.push('/vendors')} accessibilityLabel="Shopping and vendors: Swiggy connection" style={{ marginTop: 14 }}>
+            <Glass style={styles.linkRow}>
+              <Text style={{ fontSize: 24 }}>🛵</Text>
+              <View style={{ flex: 1 }}>
+                <Text style={{ color: colors.text, fontWeight: '800' }}>Shopping &amp; vendors</Text>
+                <Text style={[type.small, { color: colors.muted }]}>Swiggy Instamart and Food, sample or live</Text>
               </View>
               <Ionicons name="chevron-forward" size={18} color={colors.muted} />
             </Glass>

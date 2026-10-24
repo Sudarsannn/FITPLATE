@@ -26,8 +26,8 @@ export const PAYMENT_CHECK_GAP_MS = 3000;
 export const VENDOR_VISIBLE = { instamart: true, zepto: true, blinkit: false } as const;
 
 /**
- * Food and grocery app hook-ups are paused (Sudarsan, 22 Oct 2026) until the
- * real iPhone/Android app exists. While paused, every vendor shows as a
- * logo placeholder ("Coming with the app") and nothing calls a vendor.
+ * Food and grocery app hook-ups were paused on 22 Oct 2026 and resumed on
+ * 24 Oct 2026 at Sudarsan's request. Set true to hide them again (logo
+ * placeholders only, nothing calls a vendor).
  */
-export const VENDORS_PAUSED = true;
+export const VENDORS_PAUSED = false;

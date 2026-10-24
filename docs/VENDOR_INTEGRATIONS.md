@@ -13,6 +13,15 @@ switch them from sample data to the real thing on your own Mac.
 Live is only possible on your Mac because Swiggy currently allows sign-in
 redirects to `localhost` only. Going public needs Swiggy's approval (see the end).
 
+## Status
+
+Resumed on 24 Oct 2026 (paused 22-24 Oct). Dish page: "Make it yourself" shows
+the ingredient list; cost per ingredient appears after "Cook it yourself", on
+the shopping list. "Order on Swiggy" opens Cook it instead for that dish.
+Profile → Shopping & vendors holds the sample/live switch. Swiggy's README says
+third-party app development isn't permitted yet, so live use is localhost-only
+for your own testing.
+
 ## Screens
 
 - **Shopping list** (`/basket`, from a dish's "Shop ingredients"): one list for
