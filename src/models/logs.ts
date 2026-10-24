@@ -15,6 +15,9 @@ type LogBase = {
 
 export type MealSource = 'dish' | 'quick' | 'custom';
 
+/** How the meal came to be (My Meals, 24 Oct 2026). Older logs have only `cooked`. */
+export type MealHow = 'cooked' | 'ordered' | 'logged';
+
 export type MealLog = LogBase & {
   name: string;
   emoji: string;
@@ -26,6 +29,13 @@ export type MealLog = LogBase & {
   fibreG: number;
   /** True when cooked at home. */
   cooked: boolean;
+  /** Cooked, ordered or just logged. Missing on older logs: read as cooked when `cooked`, else logged. */
+  how?: MealHow;
+  /** What it cost to make or order, ₹, when known at the time. */
+  costInr?: number | null;
+  /** What ordering it would cost (or did cost, when ordered), ₹. */
+  orderInr?: number | null;
+  servings?: number;
 };
 
 /** One document per day (id `water-YYYY-MM-DD`), so +/- taps update one counter. */

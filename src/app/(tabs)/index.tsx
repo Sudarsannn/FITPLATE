@@ -6,12 +6,14 @@ import Animated, { useAnimatedScrollHandler, useAnimatedStyle, useSharedValue, i
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { DishCardTall } from '../../components/DishCard';
+import { MealsOfDay } from '../../components/meals/MealsByDay';
 import { MacroLines, MicroSummary } from '../../components/TodaySummary';
 import { CountUp, FadeIn, Glass, Glow, PressableScale, Ring, SectionHeader } from '../../components/ui';
 import { dishLibraryHref, profileHref } from '../../config/tabs';
 import { select, success } from '../../lib/haptics';
-import { dayTotals, FIBRE_TARGET, GOALS, recommend, useStore, WATER_TARGET } from '../../lib/store';
+import { dayKey, dayTotals, FIBRE_TARGET, GOALS, recommend, useStore, WATER_TARGET } from '../../lib/store';
 import { BALANCE_LABEL } from '../../services/dishDetail';
+import { dayGroup } from '../../services/meals';
 import { colors, gradients, radius, type } from '../../theme';
 
 const greeting = () => {
@@ -210,16 +212,7 @@ export default function Today() {
               </Glass>
             ) : (
               <Glass style={{ paddingVertical: 6 }}>
-                {today.meals.map((m, i) => (
-                  <View key={`m${i}`} style={styles.logRow}>
-                    <Text style={{ fontSize: 22 }}>{m.emoji}</Text>
-                    <View style={{ flex: 1 }}>
-                      <Text style={styles.logName}>{m.name}</Text>
-                      <Text style={[type.small, { color: colors.muted }]}>{m.cooked ? 'Cooked at home' : 'Logged'} · {m.protein} g protein</Text>
-                    </View>
-                    <Text style={styles.logKcal}>+{m.kcal}</Text>
-                  </View>
-                ))}
+                {today.meals.length ? <MealsOfDay group={dayGroup(dayKey(), today)} /> : null}
                 {today.exercise.map((e, i) => (
                   <View key={`e${i}`} style={styles.logRow}>
                     <Text style={{ fontSize: 22 }}>🏃</Text>

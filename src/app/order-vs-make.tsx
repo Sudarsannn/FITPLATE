@@ -334,6 +334,7 @@ function CartResult({ c }: { c: CartCompare }) {
 
 function Compare({ item, dishes, onBack, mode, ordersLive }: { item: MenuDish; dishes: readonly Dish[]; onBack: () => void; mode: 'sample' | 'live'; ordersLive: boolean }) {
   const { food } = useVendors();
+  const { logDish } = useStore();
   const [servings, setServings] = useState(1);
   const [bill, setBill] = useState<FoodCart | null>(null);
   const [methods, setMethods] = useState<PaymentMethod[]>([]);
@@ -378,6 +379,8 @@ function Compare({ item, dishes, onBack, mode, ordersLive }: { item: MenuDish; d
         // Sample mode and cash need no UPI hop; live UPI pays in the user's UPI app.
         if ((await food.checkPaymentStatus(placed.orderId)) === 'success') await food.confirmOrder(placed.orderId);
       }
+      // Only real orders go into My Meals; sample mode's pretend orders never do.
+      if (mode === 'live') logDish(dish, 'ordered', bill?.toPay ?? swiggyPrice);
       setStep('placed');
     } catch (e) {
       setError(e instanceof VendorError ? e.message : 'The order didn’t go through.');

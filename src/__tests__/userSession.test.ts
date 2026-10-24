@@ -65,6 +65,12 @@ function guestSession(kv = memoryKeyValueStore(), now = fakeClock().now) {
   return { kv, data, session, view: () => toView(latest) };
 }
 
+/** The view adds `id` and `how` to each meal (My Meals); the old blob has neither. */
+const withoutMealExtras = <T extends { days: Record<string, { meals: Record<string, unknown>[] }> }>(v: T): T => ({
+  ...v,
+  days: Object.fromEntries(Object.entries(v.days).map(([k, d]) => [k, { ...d, meals: d.meals.map(({ id: _id, how: _how, ...m }) => m) }])),
+});
+
 describe('toView (documents → the screens’ shape)', () => {
   it('rebuilds the demo state from migrated documents', () => {
     const docs = fromLegacyState(blob, 1);
@@ -79,7 +85,7 @@ describe('toView (documents → the screens’ shape)', () => {
       mealPlans: byId(docs.mealPlans),
       savings: byId(docs.savings),
     });
-    expect(view).toEqual(blob);
+    expect(withoutMealExtras(view)).toEqual(blob);
   });
 
   it('shows the default profile and empty totals when there is nothing yet', () => {
@@ -98,7 +104,7 @@ describe('prepareGuestDevice', () => {
     const data = openUserData({ kv, uid: null, remote: null });
     expect(await prepareGuestDevice(kv, data, seed, 5)).toBe('migrated');
     expect(await prepareGuestDevice(kv, data, seed, 6)).toBe('ready');
-    expect(toView(await loadDocs(data.repos))).toEqual(blob);
+    expect(withoutMealExtras(toView(await loadDocs(data.repos)))).toEqual(blob);
     expect(await kv.getItem(LEGACY_KEY)).not.toBeNull();
   });
 

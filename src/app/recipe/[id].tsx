@@ -222,6 +222,20 @@ function DishBody({ dish, back }: { dish: Dish; back: () => void }) {
               }}
             />
           </View>
+          {!logged ? (
+            <PressableScale
+              onPress={() => {
+                logDish(dish, 'ordered', order ? order.avg : null);
+                setLogged(true);
+                success();
+              }}
+              style={styles.link}
+              scaleTo={0.98}
+              accessibilityLabel="I ordered this instead"
+            >
+              <Text style={styles.linkText}>🛵 I ordered this instead</Text>
+            </PressableScale>
+          ) : null}
 
       {featureFlags.dishJumpChips ? (
         <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.jumpRow} accessibilityLabel="Jump to a section">

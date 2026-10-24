@@ -51,7 +51,21 @@ export type Profile = {
   onboarded: boolean;
 };
 
-export type MealLog = { name: string; emoji: string; kcal: number; protein: number; fibre: number; cooked: boolean; at: number; dishId?: string | null };
+export type MealLog = {
+  id?: string;
+  name: string;
+  emoji: string;
+  kcal: number;
+  protein: number;
+  fibre: number;
+  cooked: boolean;
+  at: number;
+  dishId?: string | null;
+  how?: 'cooked' | 'ordered' | 'logged';
+  costInr?: number | null;
+  orderInr?: number | null;
+  servings?: number;
+};
 export type ExerciseLog = { type: string; minutes: number; kcal: number; at: number };
 export type DayLog = { meals: MealLog[]; exercise: ExerciseLog[]; water: number };
 
@@ -116,8 +130,8 @@ type Store = State & {
    */
   deleteMyData: () => Promise<void>;
   updateProfile: (p: Partial<Profile>) => void;
-  /** One serving of a research dish, eaten (not necessarily cooked here). */
-  logDish: (dish: ResearchDish) => void;
+  /** One serving of a research dish, eaten (not necessarily cooked here). `ordered` marks a takeaway, with what it cost. */
+  logDish: (dish: ResearchDish, how?: 'logged' | 'ordered', orderInr?: number | null) => void;
   /** A meal that isn't a FitPlate dish, with the user's own numbers. */
   logCustomMeal: (m: { name: string; kcal: number; protein: number; fibre: number }) => void;
   /** A research exercise for some minutes; kcal from its Compendium MET and the user's weight. */
@@ -338,9 +352,9 @@ export function StoreProvider({ children }: { children: ReactNode }) {
         await endAuth();
       },
       updateProfile: (p) => s?.updateProfile(legacyProfilePatch(p)),
-      logDish: (dish) => {
+      logDish: (dish, how = 'logged', orderInr = null) => {
         const n = dish.nutritionPerServing;
-        s?.addMeal({ name: dish.name, emoji: '🍽️', dishId: dish.id, source: 'dish', kcal: Math.round(n.kcal ?? 0), proteinG: Math.round(n.proteinG ?? 0), fibreG: Math.round(n.fibreG ?? 0), cooked: false });
+        s?.addMeal({ name: dish.name, emoji: how === 'ordered' ? '🛵' : '🍽️', dishId: dish.id, source: 'dish', kcal: Math.round(n.kcal ?? 0), proteinG: Math.round(n.proteinG ?? 0), fibreG: Math.round(n.fibreG ?? 0), cooked: false, how, ...(orderInr != null ? { orderInr } : {}) });
       },
       logCustomMeal: (m) => s?.addMeal({ name: m.name, emoji: '🍴', dishId: null, source: 'custom', kcal: Math.round(m.kcal), proteinG: Math.round(m.protein), fibreG: Math.round(m.fibre), cooked: false }),
       logWorkout: (e, minutes) => s?.addWorkout({ type: e.name, exerciseId: e.id, minutes, kcal: exerciseKcal(e.met, minutes, bodyWeight) }),
@@ -376,7 +390,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       logCookCompletion: (c) => s?.addCookCompletion(c),
       logResearchCook: (dish, servings, costInr, orderPriceInr, boughtVia) => {
         if (!s) return;
-        s.addMeal({ name: dish.name, emoji: '🍳', dishId: dish.id, source: 'dish', kcal: Math.round(dish.kcal ?? 0), proteinG: Math.round(dish.proteinG ?? 0), fibreG: Math.round(dish.fibreG ?? 0), cooked: true });
+        s.addMeal({ name: dish.name, emoji: '🍳', dishId: dish.id, source: 'dish', kcal: Math.round(dish.kcal ?? 0), proteinG: Math.round(dish.proteinG ?? 0), fibreG: Math.round(dish.fibreG ?? 0), cooked: true, how: 'cooked', servings, costInr: costInr ?? null, orderInr: orderPriceInr ?? null });
         const saved = costInr != null && orderPriceInr != null ? Math.round(orderPriceInr - costInr) : 0;
         if (saved > 0) s.addSaving(saved, dish.id, `Cooked ${dish.name} for ${servings} instead of ordering`);
         s.addCookCompletion({ dishId: dish.id, servings, costInr, orderPriceInr, boughtVia });

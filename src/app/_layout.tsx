@@ -39,6 +39,7 @@ export default function RootLayout() {
           <Stack.Screen name="workout/[id]" options={{ animation: 'slide_from_bottom' }} />
           <Stack.Screen name="balance" options={{ animation: 'ios_from_right' }} />
           <Stack.Screen name="order-vs-make" options={{ animation: 'ios_from_right' }} />
+          <Stack.Screen name="meal/[id]" options={{ animation: 'ios_from_right' }} />
           <Stack.Screen name="vendors" options={{ animation: 'ios_from_right' }} />
           <Stack.Screen name="photo-credits" options={{ animation: 'ios_from_right' }} />
           <Stack.Screen name="log" options={{ presentation: 'formSheet', sheetAllowedDetents: [0.75, 1], sheetGrabberVisible: true, sheetCornerRadius: 28, contentStyle: { backgroundColor: colors.bgElevated } }} />

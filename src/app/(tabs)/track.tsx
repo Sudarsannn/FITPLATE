@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { MyMeals } from '../../components/meals/MyMeals';
 import { NutritionCard } from '../../components/NutritionCard';
 import { FadeIn, Glass, PressableScale } from '../../components/ui';
 import { select } from '../../lib/haptics';
@@ -11,10 +12,11 @@ import { colors, radius, type } from '../../theme';
 import { PlanScreen } from './plan';
 import { ProgressScreen } from './progress';
 
-type TrackView = 'nutrition' | 'progress' | 'plan';
+type TrackView = 'nutrition' | 'meals' | 'progress' | 'plan';
 
 const OPTIONS: { key: TrackView; label: string }[] = [
   { key: 'nutrition', label: 'Nutrition' },
+  { key: 'meals', label: 'My Meals' },
   { key: 'progress', label: 'Progress' },
   { key: 'plan', label: 'Meal plan' },
 ];
@@ -52,7 +54,7 @@ export default function Track() {
           );
         })}
       </View>
-      {view === 'nutrition' ? <NutritionScreen /> : view === 'progress' ? <ProgressScreen embedded /> : <PlanScreen embedded />}
+      {view === 'nutrition' ? <NutritionScreen /> : view === 'meals' ? <MyMeals /> : view === 'progress' ? <ProgressScreen embedded /> : <PlanScreen embedded />}
     </SafeAreaView>
   );
 }
@@ -102,5 +104,5 @@ const styles = StyleSheet.create({
   },
   option: { flex: 1, minHeight: 40, borderRadius: radius.pill, alignItems: 'center', justifyContent: 'center' },
   optionOn: { backgroundColor: colors.accent },
-  optionText: { fontWeight: '800', fontSize: 14 },
+  optionText: { fontWeight: '800', fontSize: 13 },
 });
