@@ -26,6 +26,14 @@ import { colors, radius, type } from '../theme';
  * at the confirmation screen unless real orders are on. Only the FitPlate
  * dish id the user picks is ever kept, never Swiggy's menu data.
  */
+/** Quick searches for lighter orders (Swiggy returns no calories, so FitPlate's own research does the judging once a dish is matched). */
+const HEALTHY_SEARCHES = [
+  { label: '🥗 Salad', q: 'salad', nonVeg: false },
+  { label: '🍲 Dal & roti', q: 'dal', nonVeg: false },
+  { label: '🍗 Grilled', q: 'grilled', nonVeg: true },
+  { label: '🥚 Egg dishes', q: 'egg', nonVeg: true },
+];
+
 export default function OrderVsMake() {
   const params = useLocalSearchParams<{ q?: string }>();
   const store = useStore();
@@ -142,6 +150,20 @@ export default function OrderVsMake() {
           </View>
         </View>
 
+        <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginTop: 10 }}>
+          {HEALTHY_SEARCHES.filter((h) => !h.nonVeg || !vegOnly).map((h) => (
+            <Chip
+              key={h.q}
+              label={h.label}
+              active={false}
+              onPress={() => {
+                setQuery(h.q);
+                run(h.q);
+              }}
+            />
+          ))}
+        </View>
+
         {connected === false ? (
           <Section title="Connect Swiggy">
             <Text style={k.body}>Connect your Swiggy account once to search live menus near you.</Text>
@@ -192,6 +214,11 @@ export default function OrderVsMake() {
                     {m.price != null ? ` · ₹${m.price}` : ''}
                     {m.rating ? ` · ★ ${m.rating}${m.ratingCount ? ` (${m.ratingCount})` : ''}` : ''}
                   </Text>
+                  {match ? (
+                    <Text style={[k.muted, { fontSize: 12, color: colors.accent }]}>
+                      FitPlate has this recipe{dishCost(match.dish, 1) ? ` · about ₹${dishCost(match.dish, 1)!.inr} a serving to make` : ''}
+                    </Text>
+                  ) : null}
                   {m.sizes.length || m.addons.length ? <Text style={[k.muted, { fontSize: 12 }]}>{[...m.sizes, ...m.addons].slice(0, 4).join(' · ')}</Text> : null}
                   <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 8, gap: 10 }}>
                     <Pressable onPress={() => setPicked(m)} style={[s.cook, !match && { opacity: 0.5 }]} disabled={!match} accessibilityRole="button">
