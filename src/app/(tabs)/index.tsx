@@ -13,6 +13,7 @@ import { MacroLines, MicroSummary } from '../../components/TodaySummary';
 import { CountUp, FadeIn, Glass, Glow, PressableScale, Ring, SectionHeader } from '../../components/ui';
 import { dishLibraryHref, profileHref } from '../../config/tabs';
 import { select, success } from '../../lib/haptics';
+import { StreakButton } from '../../components/StreakButton';
 import { addDays, dayKey, dayTotals, FIBRE_TARGET, GOALS, recommend, useStore, WATER_TARGET } from '../../lib/store';
 import { BALANCE_LABEL } from '../../services/dishDetail';
 import { dayGroup } from '../../services/meals';
@@ -66,7 +67,7 @@ function MiniStat({ icon, color, label, value }: { icon: keyof typeof Ionicons.g
 
 export default function Today() {
   const s = useStore();
-  const { profile, today, moneySaved, streak, user, sex } = s;
+  const { profile, today, moneySaved, user, sex } = s;
   const goal = GOALS[profile.goal];
   const t = dayTotals(today);
   const left = goal.kcal - t.kcalIn + t.kcalOut;
@@ -89,17 +90,14 @@ export default function Today() {
       <SafeAreaView edges={['top']} style={{ flex: 1 }}>
         <Animated.View style={[styles.headerBg, headerBg]} pointerEvents="none" />
         <Animated.ScrollView onScroll={onScroll} scrollEventThrottle={16} contentContainerStyle={{ padding: 18, paddingBottom: 140 }} showsVerticalScrollIndicator={false}>
-          <FadeIn i={0}>
+          <FadeIn i={0} style={{ zIndex: 30 }}>
             <View style={styles.header}>
               <View>
                 <Text style={[type.small, { color: colors.muted }]}>{greeting()}</Text>
                 <Text style={[type.h1, { color: colors.text }]}>{profile.name || 'there'}</Text>
               </View>
               <View style={{ flexDirection: 'row', gap: 10, alignItems: 'center' }}>
-                <View style={styles.streak}>
-                  <Ionicons name="flame" size={16} color={colors.warm} />
-                  <Text style={styles.streakText}>{streak}</Text>
-                </View>
+                <StreakButton />
                 <PressableScale onPress={() => router.push(profileHref())} style={styles.avatar} accessibilityLabel="Open your profile">
                   {user?.photo ? (
                     <Image source={{ uri: user.photo }} referrerPolicy="no-referrer" style={styles.avatarImg} />

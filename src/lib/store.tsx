@@ -8,6 +8,7 @@ import { featureFlags } from '../config/featureFlags';
 import { researchDishes } from '../data/research';
 import type { Dish as ResearchDish } from '../models/research';
 import type { Doc } from '../models/common';
+import { cookedDays, currentStreak } from '../services/streaks';
 import { DEFAULT_SETTINGS, type CookCompletion, type DishRating, type ShoppingList, type UserSettings } from '../models/prefs';
 import { DEFAULT_SURVEY, type Survey } from '../models/survey';
 import type { DietType, UserProfile } from '../models/user';
@@ -294,12 +295,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
 
   const store = useMemo<Store>(() => {
     const today = state.days[dayKey()] ?? emptyDay();
-    let streak = 0;
-    for (let i = 0; i < 365; i++) {
-      const d = state.days[dayKey(addDays(new Date(), -i))];
-      if (d?.meals.some((m) => m.cooked)) streak++;
-      else if (i > 0) break;
-    }
+    const streak = currentStreak(cookedDays(state.days), dayKey());
     // Before the data has loaded, writes have nowhere to go; screens are not interactive yet anyway.
     const s = ready ? active?.session : undefined;
     // The last step of every sign-out: leave Firebase Auth and go back to the welcome screen.
