@@ -361,7 +361,7 @@ function AiDishNotice({ dish }: { dish: Dish }) {
       <View style={{ flex: 1, gap: 6 }}>
         <Text style={styles.cardTitle}>{ai.shared ? 'Created by FitPlate AI for another cook' : 'Created for you by FitPlate AI'}</Text>
         <Text style={styles.note}>
-          {ai.basedOn ? `Built from our researched ${ai.basedOn.name}${ai.changes.length ? `, with these changes: ${ai.changes.join('; ')}` : ''}, checked against recipes online.` : 'Researched from several recipes online, using the same method as our own dishes.'} Our daily research will verify it.
+          {ai.grounded === false ? 'Written from the AI\u2019s own knowledge; web sources have not been checked yet. ' : ''}{ai.basedOn ? `Built from our researched ${ai.basedOn.name}${ai.changes.length ? `, with these changes: ${ai.changes.join('; ')}` : ''}, checked against recipes online.` : 'Researched from several recipes online, using the same method as our own dishes.'} Our daily research will verify it.
         </Text>
         {ai.needsMoreResearch.length ? <Text style={styles.note}>Still to confirm: {ai.needsMoreResearch.join('; ')}.</Text> : null}
         {ai.shared ? null : (

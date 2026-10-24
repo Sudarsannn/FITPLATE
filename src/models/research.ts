@@ -172,6 +172,8 @@ export type AiDishInfo = {
   /** What the AI could not confirm; the daily research checks these. */
   needsMoreResearch: string[];
   model: string;
+  /** False when the AI wrote it from its own knowledge because web search was not available. */
+  grounded?: boolean;
   /** Someone else asked for this dish first; it came from the shared library, not this device. */
   shared?: boolean;
   /** How many people have asked for it. */

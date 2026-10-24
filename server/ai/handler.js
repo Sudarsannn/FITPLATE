@@ -159,7 +159,7 @@ export class AiError extends Error {
 /** Tries each usable model with a tiny request (and one with Google Search) and reports what Google says. For diagnosing from /api/ai/status?check=1&test=1. */
 export async function probe(env, fetchImpl) {
   const out = [];
-  const models = (env.GEMINI_MODEL ? [env.GEMINI_MODEL] : await discoverModels(env, fetchImpl)).slice(0, 6);
+  const models = (env.GEMINI_MODEL ? [env.GEMINI_MODEL] : await discoverModels(env, fetchImpl)).slice(0, 12);
   for (const model of models) {
     for (const search of [false, true]) {
       const body = { contents: [{ role: 'user', parts: [{ text: 'Reply with the word OK.' }] }], generationConfig: { maxOutputTokens: 20 }, ...(search ? { tools: [{ google_search: {} }] } : {}) };
@@ -358,8 +358,17 @@ export async function research(body, ctx) {
   const description = needText(body.description, 'The description');
   const canonicalName = needText(body.canonicalName, 'The dish name');
   const base = body.base && typeof body.base === 'object' ? { name: clip(String(body.base.name), 80), ingredients: clip(String(body.base.ingredients), 2500), steps: clip(String(body.base.steps), 3500) } : null;
-  const r = await callGemini({ ...ctx, system: SYSTEM_BASE, prompt: researchPrompt({ description, canonicalName, mode: body.mode === 'variation' ? 'variation' : 'new', base, changes: (Array.isArray(body.changes) ? body.changes : []).slice(0, 12).map((c) => clip(String(c), 200)) }), search: true, temperature: 0.3 });
-  return { notes: r.text, sources: r.sources.slice(0, 20), queries: r.queries.slice(0, 8), model: r.model };
+  const args = { description, canonicalName, mode: body.mode === 'variation' ? 'variation' : 'new', base, changes: (Array.isArray(body.changes) ? body.changes : []).slice(0, 12).map((c) => clip(String(c), 200)) };
+  try {
+    const r = await callGemini({ ...ctx, system: SYSTEM_BASE, prompt: researchPrompt(args), search: true, temperature: 0.3 });
+    return { notes: r.text, sources: r.sources.slice(0, 20), queries: r.queries.slice(0, 8), model: r.model, grounded: true };
+  } catch (e) {
+    // Google Search grounding is not part of the free allowance for every key or model. The dish is still
+    // written from the model's own knowledge, and marked as not yet checked online so research verifies it.
+    if (!(e instanceof AiError) || !['quota', 'upstream', 'model'].includes(e.code)) throw e;
+    const r = await callGemini({ ...ctx, system: SYSTEM_BASE, prompt: `${researchPrompt(args)}\n\nYou cannot browse the web right now. Write the notes from what you reliably know, say clearly where you are unsure, and do not cite sources you cannot be certain exist.`, search: false, temperature: 0.3 });
+    return { notes: r.text, sources: [], queries: [], model: r.model, grounded: false };
+  }
 }
 
 export async function compose(body, ctx) {
@@ -432,6 +441,7 @@ export async function submit(body, ctx) {
     needsMoreResearch: Array.isArray(dish.needsMoreResearch) ? dish.needsMoreResearch.slice(0, 12).map((c) => clip(String(c), 200)) : [],
     sources: (Array.isArray(body.sources) ? body.sources : []).slice(0, 20),
     model: clip(String(body.model ?? ''), 60),
+    grounded: body.grounded !== false,
     note: 'Created by FitPlate AI from the user request. Not yet researched by the daily dish research. The dish below is a first draft, not verified.',
     dish,
   };
@@ -486,7 +496,7 @@ export async function library(ctx, cacheStore) {
     try {
       const q = JSON.parse(e.object.text);
       if (q.status === 'researched' || !q.dish?.name) continue;
-      dishes.push({ slug: q.slug, name: q.name, mode: q.mode, basedOn: q.basedOn ?? null, changes: q.changes ?? [], sources: q.sources ?? [], model: q.model ?? '', requests: q.requests ?? 1, firstRequestedAt: q.firstRequestedAt, dish: q.dish });
+      dishes.push({ slug: q.slug, name: q.name, mode: q.mode, basedOn: q.basedOn ?? null, changes: q.changes ?? [], sources: q.sources ?? [], model: q.model ?? '', grounded: q.grounded !== false, requests: q.requests ?? 1, firstRequestedAt: q.firstRequestedAt, dish: q.dish });
     } catch {
       /* skip a damaged file */
     }

@@ -31,7 +31,7 @@ export const nameKey = (n: string) => n.toLowerCase().replace(/[^a-z0-9]+/g, '')
 /** The dish a shared entry becomes in the app; null when it cannot be built. */
 export function dishFromShared(e: SharedEntry, number: number): Dish | null {
   try {
-    return buildDish(e.dish, { id: `ai-${e.slug}`, number, request: '', mode: e.mode, basedOn: e.basedOn, changes: e.changes ?? [], sources: e.sources ?? [], model: e.model ?? '' }).dish;
+    return buildDish(e.dish, { id: `ai-${e.slug}`, number, request: '', mode: e.mode, basedOn: e.basedOn, changes: e.changes ?? [], sources: e.sources ?? [], model: e.model ?? '', grounded: (e as { grounded?: boolean }).grounded }).dish;
   } catch {
     return null;
   }

@@ -108,7 +108,7 @@ export const kcalFromMacros = (p: number, c: number, f: number) => Math.round(p 
 
 export function buildDish(
   raw: RawAiDish,
-  ctx: { id: string; number: number; request: string; mode: 'variation' | 'new'; basedOn: { id: string; name: string } | null; changes: string[]; sources: { title: string; url: string }[]; model: string; now?: string },
+  ctx: { id: string; number: number; request: string; mode: 'variation' | 'new'; basedOn: { id: string; name: string } | null; changes: string[]; sources: { title: string; url: string }[]; model: string; grounded?: boolean; now?: string },
 ): { dish: Dish; notes: string[] } {
   validateRaw(raw);
   const notes: string[] = [];
@@ -169,8 +169,9 @@ export function buildDish(
     basedOn: ctx.basedOn,
     changes: ctx.changes,
     sources: ctx.sources.slice(0, 20),
-    needsMoreResearch: (raw.needsMoreResearch ?? []).filter(Boolean).slice(0, 12),
+    needsMoreResearch: [...(ctx.grounded === false ? ['Not checked against web sources yet'] : []), ...(raw.needsMoreResearch ?? []).filter(Boolean)].slice(0, 12),
     model: ctx.model,
+    grounded: ctx.grounded !== false,
   };
 
   const base: Omit<Dish, 'tags' | 'needsReview'> = {

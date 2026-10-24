@@ -111,7 +111,7 @@ export async function createDishWithAi(input: CreateInput, opts: { onPhase?: (p:
   const basedOn = mode === 'variation' && base ? { id: base.id, name: base.name } : null;
 
   on('researching');
-  const res = await post<{ notes: string; sources: { title: string; url: string }[]; model: string }>(
+  const res = await post<{ notes: string; sources: { title: string; url: string }[]; model: string; grounded?: boolean }>(
     '/api/ai/research',
     { description, canonicalName: plan.canonicalName, mode, base: base && mode === 'variation' ? baseSummary(base) : null, changes: plan.changes },
     f,
@@ -126,7 +126,7 @@ export async function createDishWithAi(input: CreateInput, opts: { onPhase?: (p:
   const id = aiDishId(comp.dish.name ?? plan.canonicalName, (x) => all.some((d) => d.id === x));
   let dish: Dish;
   try {
-    dish = buildDish(comp.dish, { id, number: 1000 + getCustomDishes().length + 1, request: description, mode, basedOn, changes: plan.changes, sources: res.sources, model: comp.model }).dish;
+    dish = buildDish(comp.dish, { id, number: 1000 + getCustomDishes().length + 1, request: description, mode, basedOn, changes: plan.changes, sources: res.sources, model: comp.model, grounded: res.grounded }).dish;
   } catch (e) {
     if (e instanceof AiDishError) throw new AiRequestError(e.message, 'bad-output');
     throw e;
@@ -136,7 +136,7 @@ export async function createDishWithAi(input: CreateInput, opts: { onPhase?: (p:
   // Tell the research queue. The dish is already usable, so a failure here is not the user's problem.
   let queued = false;
   try {
-    const q = await post<{ saved: boolean }>('/api/ai/submit', { dish: { ...comp.dish, name: dish.name }, description, mode, basedOn, changes: plan.changes, sources: res.sources, model: comp.model }, f, opts.signal);
+    const q = await post<{ saved: boolean }>('/api/ai/submit', { dish: { ...comp.dish, name: dish.name }, description, mode, basedOn, changes: plan.changes, sources: res.sources, model: comp.model, grounded: res.grounded !== false }, f, opts.signal);
     queued = q.saved === true;
   } catch {
     queued = false;

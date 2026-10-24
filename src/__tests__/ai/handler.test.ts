@@ -118,6 +118,20 @@ describe('AI server handler', () => {
     expect(body.probe[1]).toMatchObject({ search: true, status: 429, why: 'quota: limit 0' });
   });
 
+  it('research falls back to the AI\'s own knowledge when web search has no free allowance', async () => {
+    const searches: boolean[] = [];
+    const fetchImpl = async (u: string, init?: any) => {
+      if (u.includes('/models?')) return { ok: true, status: 200, json: async () => LIST } as any;
+      const search = JSON.parse(init.body).tools != null;
+      searches.push(search);
+      return search ? ({ ok: false, status: 429, json: async () => ({ error: { message: 'quota' } }) } as any) : gem('notes from knowledge');
+    };
+    const res = await handleAi(post('/api/ai/research', { description: 'dal', canonicalName: 'Dal' }), { GEMINI_API_KEY: 'k' }, fetchImpl as any);
+    const body = await res.json();
+    expect(body).toMatchObject({ ok: true, grounded: false, sources: [], notes: 'notes from knowledge' });
+    expect(searches.includes(true) && searches.includes(false)).toBe(true);
+  });
+
   it('library: reads every queue file in one call and hides researched ones', async () => {
     const calls: string[] = [];
     const file = (name: string, status: string) => ({ name: `${name}.json`, object: { text: JSON.stringify({ slug: name, name, status, requests: name === 'a' ? 5 : 1, dish: { name } }) } });
