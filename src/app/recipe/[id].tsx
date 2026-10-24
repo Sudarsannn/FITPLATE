@@ -31,6 +31,7 @@ import {
   trendArrow,
 } from '../../services/dishDetail';
 import { makeCost, orderRange } from '../../services/dishLibrary';
+import { haveLabel, lineCoverage } from '../../services/pantry';
 import { deleteAiDish } from '../../services/ai/store';
 import { kitchenGaps } from '../../services/kitchen';
 import { isPantryStaple, recipeAmountLabel } from '../../services/vendors/basket';
@@ -84,7 +85,8 @@ function Hero({ dish }: { dish: Dish }) {
 
 function DishBody({ dish, back }: { dish: Dish; back: () => void }) {
   const insets = useSafeAreaInsets();
-  const { favourites, toggleFavourite, setPlan, logDish, equipmentOwned } = useStore();
+  const { favourites, toggleFavourite, setPlan, logDish, equipmentOwned, settings } = useStore();
+  const pantry = settings.pantry ?? {};
   const [servings, setServings] = useState(2);
   const [planned, setPlanned] = useState(false);
   const [logged, setLogged] = useState(false);
@@ -283,6 +285,11 @@ function DishBody({ dish, back }: { dish: Dish; back: () => void }) {
               <View style={{ flex: 1 }}>
                 <Text style={[styles.body, { marginTop: 0 }]}>{i.name}</Text>
                 {isPantryStaple(i.ingredientId ? getIngredient(i.ingredientId) : undefined, i.name) ? <Text style={styles.pantry}>Pantry staple</Text> : null}
+                {(() => {
+                  const c = lineCoverage(pantry, i, servings);
+                  const label = haveLabel(c, i.unit === 'kg' ? 'g' : i.unit === 'l' ? 'ml' : i.unit);
+                  return label ? <Text style={[styles.pantry, { color: c.status === 'enough' ? colors.accent : colors.warn }]}>{c.status === 'some' && c.missing != null ? `${label}, need ${c.missing} more` : label}</Text> : null;
+                })()}
               </View>
               <Text style={styles.ingQty}>
                 {i.quantity != null ? recipeAmountLabel(i.quantity * servings, i.unit) : servings === 1 ? (i.householdMeasure ?? '') : i.householdMeasure ? `${i.householdMeasure} × ${servings}` : ''}

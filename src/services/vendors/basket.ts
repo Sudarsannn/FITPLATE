@@ -101,7 +101,7 @@ export function buildShoppingItems(chosen: { dish: Pick<Dish, 'id' | 'ingredient
 }
 
 const round = (n: number) => Math.round(n * 10) / 10;
-const cleanName = (s: string) => s.replace(/\s+/g, ' ').trim();
+const cleanName = (s: string) => s.replace(/\s+/g, ' ').replace(/^[–—-]\s+/, '').trim();
 
 /** A new shopping list for these dishes. */
 export function newShoppingList(chosen: { dish: Pick<Dish, 'id' | 'name' | 'ingredients'>; servings: number }[], brandChoice: Record<string, string> = {}): ShoppingList {

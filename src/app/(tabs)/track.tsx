@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { Inventory } from '../../components/pantry/Inventory';
 import { MyMeals } from '../../components/meals/MyMeals';
 import { NutritionCard } from '../../components/NutritionCard';
 import { FadeIn, Glass, PressableScale, TopGlow } from '../../components/ui';
@@ -13,13 +14,14 @@ import { colors, radius, type } from '../../theme';
 import { PlanScreen } from './plan';
 import { ProgressScreen } from './progress';
 
-type TrackView = 'nutrition' | 'meals' | 'progress' | 'plan';
+type TrackView = 'nutrition' | 'meals' | 'progress' | 'plan' | 'ingredients';
 
 const OPTIONS: { key: TrackView; label: string }[] = [
   { key: 'nutrition', label: 'Nutrition' },
-  { key: 'meals', label: 'My Meals' },
+  { key: 'meals', label: 'Meals' },
   { key: 'progress', label: 'Progress' },
-  { key: 'plan', label: 'Meal plan' },
+  { key: 'plan', label: 'Plan' },
+  { key: 'ingredients', label: 'Ingredients' },
 ];
 
 // Day 2 shell: Track holds today's full nutrition, Progress and Plan behind a
@@ -56,7 +58,7 @@ export default function Track() {
           );
         })}
       </View>
-      {view === 'nutrition' ? <NutritionScreen /> : view === 'meals' ? <MyMeals /> : view === 'progress' ? <ProgressScreen embedded /> : <PlanScreen embedded />}
+      {view === 'nutrition' ? <NutritionScreen /> : view === 'meals' ? <MyMeals /> : view === 'progress' ? <ProgressScreen embedded /> : view === 'ingredients' ? <Inventory /> : <PlanScreen embedded />}
     </SafeAreaView>
   );
 }
@@ -98,7 +100,7 @@ const styles = StyleSheet.create({
   linkText: { color: colors.text, fontWeight: '800', fontSize: 14 },
   switcher: {
     flexDirection: 'row',
-    marginHorizontal: 18,
+    marginHorizontal: 12,
     marginTop: 8,
     padding: 4,
     borderRadius: radius.pill,
@@ -108,5 +110,5 @@ const styles = StyleSheet.create({
   },
   option: { flex: 1, minHeight: 40, borderRadius: radius.pill, alignItems: 'center', justifyContent: 'center' },
   optionOn: { backgroundColor: colors.accent },
-  optionText: { fontWeight: '800', fontSize: 13 },
+  optionText: { fontWeight: '800', fontSize: 11.5 },
 });

@@ -8,11 +8,13 @@ import { Checkbox, k, Loading, Notice, Radio, SampleBanner, ScreenTop, ZeptoCirc
 import { Bar, Chip, GradientButton, PressableScale } from '../components/ui';
 import { getDish, getIngredient } from '../data/research';
 import { select, success } from '../lib/haptics';
-import { useStore } from '../lib/store';
+import { addDays, dayKey, useStore } from '../lib/store';
 import { useVendors } from '../lib/useVendors';
 import type { ShoppingItem, ShoppingList } from '../models/prefs';
 import type { Dish } from '../models/research';
 import { makeCost } from '../services/dishLibrary';
+import { addBought, coverage, haveLabel, onlyMissing } from '../services/pantry';
+import { firstDishOfDay, mealPrepDishes } from '../services/planSlots';
 import { rupees } from '../services/costToMake';
 import { dishCost } from '../services/vendors';
 import { buildShoppingItems, cheapestPer100, isPantryStaple, itemAmountLabel, newShoppingList, offlineVariants, preselect, shoppingListText, variantLabel, type VariantOption } from '../services/vendors/basket';
@@ -33,6 +35,9 @@ const toOption = (p: VendorProduct): VariantOption => ({
   skuId: p.skuId,
   inStock: p.inStock,
 });
+
+/** Outside the component so event handlers can stamp a time without the render-purity lint. */
+const nowMs = () => Date.now();
 
 const sameIds = (a: string[], b: string[]) => a.length === b.length && a.every((x) => b.includes(x));
 
@@ -60,7 +65,9 @@ export default function BasketScreen() {
   });
   const [tab, setTab] = useState<'online' | 'shop'>('online');
   const [open, setOpen] = useState<string | null>(null);
-  const [sheet, setSheet] = useState<'vendor' | 'zepto' | null>(null);
+  const [sheet, setSheet] = useState<'vendor' | 'zepto' | 'prep' | null>(null);
+  const [prepDays, setPrepDays] = useState(2);
+  const [stocked, setStocked] = useState(false);
 
   if (!list) {
     return (
@@ -135,7 +142,7 @@ export default function BasketScreen() {
   };
 
   const continueToCook = (via: ShoppingList['boughtVia']) => {
-    save({ ...list, status: 'done', boughtVia: via, orderedAt: Date.now() });
+    save({ ...list, status: 'done', boughtVia: via, orderedAt: nowMs() });
     const first = dishes[0];
     if (dishes.length > 1) {
       // Several dishes: cook them together on one timeline.
@@ -151,6 +158,41 @@ export default function BasketScreen() {
     };
     if (Platform.OS === 'ios' && sheet !== null) setTimeout(go, 450);
     else go();
+  };
+
+  // ---- inventory ("What is in my kitchen"), meal prep and the first dish of the day
+  const pantry = store.settings.pantry ?? {};
+  const havePantry = Object.keys(pantry).length > 0;
+  const covered = list.items.filter((i) => i.included && coverage(pantry, i).status === 'enough').length;
+  const rebuilt = () => {
+    const fresh = buildShoppingItems(dishes.map((d) => ({ dish: d, servings: list.servings[d.id] ?? 2 })));
+    const old = new Map(list.items.map((i) => [i.key, i]));
+    return fresh.map((i) => ({ ...i, included: true, checked: old.get(i.key)?.checked ?? false, variant: old.get(i.key)?.variant ?? store.settings.brandChoice[i.key] ?? null }));
+  };
+  const buyEverything = () => save({ ...list, items: rebuilt() });
+  const buyOnlyMissing = () => save({ ...list, items: onlyMissing(rebuilt(), pantry) });
+
+  const alreadyBought = () => {
+    store.updateSettings({ pantry: addBought(pantry, list.items.filter((i) => i.included)) });
+    save({ ...list, status: 'done', boughtVia: 'self', orderedAt: nowMs() });
+    success();
+    setStocked(true);
+  };
+  const days = Array.from({ length: 7 }, (_, i) => dayKey(addDays(new Date(), i)));
+  const prepDishes = mealPrepDishes(store.plan, days, list.dishIds, prepDays);
+  const startPrep = () => {
+    const chosen = prepDishes.filter((p) => getDish(p.id));
+    save({ ...list, status: 'done', boughtVia: list.boughtVia ?? 'self', orderedAt: list.orderedAt ?? nowMs() });
+    setSheet(null);
+    const go = () => router.replace({ pathname: '/multicook', params: { dishes: chosen.map((p) => p.id).join(','), servings: chosen.map((p) => String(p.servings)).join(','), via: 'self' } });
+    if (Platform.OS === 'ios') setTimeout(go, 450);
+    else go();
+  };
+  const startFirstDish = () => {
+    const id = firstDishOfDay(store.plan, days, list.dishIds) ?? dishes[0]?.id;
+    if (!id) return;
+    save({ ...list, status: 'done', boughtVia: list.boughtVia ?? 'self', orderedAt: list.orderedAt ?? nowMs() });
+    router.replace({ pathname: '/steps/[id]', params: { id, servings: String(list.servings[id] ?? 1), via: 'self' } });
   };
 
   return (
@@ -215,11 +257,29 @@ export default function BasketScreen() {
           <Text style={[k.muted, { marginTop: 10 }]}>Untick anything you already have. Under each item, pick the brand and pack you want.</Text>
         )}
 
+        <View style={s.after}>
+          <Text style={[type.h2, { color: colors.text }]}>{stocked ? 'Added to your ingredients' : 'After you buy'}</Text>
+          <Text style={[k.muted, { marginTop: 4 }]}>{stocked ? 'Your kitchen is updated. Every dish now shows what you have and what is missing.' : 'Pick what happens next.'}</Text>
+          <GradientButton title="Already bought it. Add to inventory" variant="glass" onPress={alreadyBought} style={{ marginTop: 12 }} />
+          {stocked ? <GradientButton title="See my ingredients" variant="glass" onPress={() => router.push({ pathname: '/(tabs)/track', params: { view: 'ingredients' } })} style={{ marginTop: 10 }} /> : null}
+          {dishes.length > 1 ? <GradientButton title="Start meal prep" variant="glass" onPress={() => setSheet('prep')} style={{ marginTop: 10 }} /> : null}
+          <GradientButton title={dishes.length > 1 ? 'Start the first dish of the day' : 'Start cooking'} onPress={dishes.length > 1 ? startFirstDish : () => continueToCook('self')} style={{ marginTop: 10 }} />
+        </View>
+        {havePantry && tab === 'online' ? (
+          <View style={s.pantryBar}>
+            <Ionicons name="basket-outline" size={18} color={colors.accent} />
+            <Text style={[k.muted, { flex: 1 }]}>{covered ? `${covered} of these you already have.` : 'Checked against what is in your kitchen.'}</Text>
+            <Chip label="Buy all" onPress={buyEverything} />
+            <Chip label="Only what I'm missing" onPress={buyOnlyMissing} />
+          </View>
+        ) : null}
+
         <View style={{ marginTop: 12 }}>
           {list.items.map((item) => (
             <ItemRow
               key={item.key}
               item={item}
+              have={haveLabel(coverage(pantry, item), item.unit)}
               tab={tab}
               expanded={open === item.key}
               onToggleOpen={() => setOpen(open === item.key ? null : item.key)}
@@ -245,19 +305,35 @@ export default function BasketScreen() {
 
       <View style={s.footer}>
         {tab === 'online' ? (
-          <>
-            <GradientButton title={VENDORS_PAUSED ? `Buy online (${included.length})` : `Add to basket & checkout (${included.length})`} onPress={() => setSheet('vendor')} disabled={included.length === 0} />
-            <GradientButton title="I’ve bought them. Start cooking" variant="glass" onPress={() => continueToCook('self')} style={{ marginTop: 10 }} />
-          </>
+          <GradientButton title={VENDORS_PAUSED ? `Buy online (${included.length})` : `Add to basket & checkout (${included.length})`} onPress={() => setSheet('vendor')} disabled={included.length === 0} />
         ) : (
-          <GradientButton title={ticked === list.items.length ? 'Got everything. Let’s cook' : 'I’ve bought them. Start cooking'} onPress={() => continueToCook('self')} />
+          <GradientButton title={ticked === list.items.length ? 'Got everything. Add to inventory' : 'Bought these. Add to inventory'} onPress={alreadyBought} />
         )}
       </View>
 
       <Modal visible={sheet !== null} transparent animationType="slide" onRequestClose={() => setSheet(null)}>
         <Pressable style={s.scrim} onPress={() => setSheet(null)} accessibilityLabel="Close" />
         <View style={s.sheet}>
-          {sheet === 'vendor' && VENDORS_PAUSED ? (
+          {sheet === 'prep' ? (
+            <>
+              <Text style={[type.h2, { color: colors.text }]}>Meal prep</Text>
+              <Text style={[k.muted, { marginTop: 4 }]}>Cook ahead in one session. Ingredients and steps are combined on one timeline, like cooking a basket of dishes together.</Text>
+              <View style={s.prepRow}>
+                <Text style={{ color: colors.text, fontWeight: '800', flex: 1 }}>Prep for how many days?</Text>
+                <PressableScale onPress={() => setPrepDays(Math.max(1, prepDays - 1))} style={s.prepStep} scaleTo={0.9} accessibilityLabel="Fewer days">
+                  <Ionicons name="remove" size={18} color={colors.text} />
+                </PressableScale>
+                <Text style={s.prepDays}>{prepDays}</Text>
+                <PressableScale onPress={() => setPrepDays(Math.min(7, prepDays + 1))} style={s.prepStep} scaleTo={0.9} accessibilityLabel="More days">
+                  <Ionicons name="add" size={18} color={colors.text} />
+                </PressableScale>
+              </View>
+              <Text style={[k.muted, { marginTop: 10 }]}>
+                {prepDishes.map((p) => `${getDish(p.id)?.name ?? p.id}${p.servings > 1 ? ` ×${p.servings}` : ''}`).join(', ')}
+              </Text>
+              <GradientButton title={`Start meal prep (${prepDays} ${prepDays === 1 ? 'day' : 'days'})`} onPress={startPrep} disabled={prepDishes.length === 0} style={{ marginTop: 16 }} />
+            </>
+          ) : sheet === 'vendor' && VENDORS_PAUSED ? (
             <>
               <Text style={[type.h2, { color: colors.text }]}>Grocery apps are coming</Text>
               <Text style={[k.muted, { marginTop: 4, marginBottom: 12 }]}>
@@ -357,7 +433,9 @@ function ItemRow({
   search,
   addresses,
   connected,
+  have,
 }: {
+  have?: string | null;
   item: ShoppingItem;
   tab: 'online' | 'shop';
   expanded: boolean;
@@ -414,6 +492,7 @@ function ItemRow({
             {qty}
             {item.variant ? ` · ${item.variant}` : ''}
           </Text>
+          {have ? <Text style={[k.muted, { color: colors.accent }]}>{have}</Text> : null}
           {pantry ? (
             <View style={s.pantry}>
               <Text style={s.pantryText}>Pantry staple · check your shelf</Text>
@@ -532,6 +611,11 @@ const s = StyleSheet.create({
   flowText: { color: colors.muted, fontWeight: '800', fontSize: 13 },
   flowLine: { flex: 1, height: 2, borderRadius: 1, backgroundColor: colors.border },
   footer: { position: 'absolute', left: 0, right: 0, bottom: 0, padding: 16, paddingBottom: 24, backgroundColor: colors.bgElevated, borderTopWidth: 1, borderColor: colors.border },
+  pantryBar: { flexDirection: 'row', alignItems: 'center', flexWrap: 'wrap', gap: 8, marginTop: 12, padding: 12, borderRadius: radius.md, backgroundColor: 'rgba(61,220,132,0.08)', borderWidth: 1, borderColor: 'rgba(61,220,132,0.3)' },
+  after: { marginTop: 18, padding: 16, borderRadius: radius.lg, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border },
+  prepRow: { flexDirection: 'row', alignItems: 'center', gap: 10, marginTop: 16 },
+  prepStep: { width: 36, height: 36, borderRadius: 18, alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(255,255,255,0.08)' },
+  prepDays: { color: colors.text, fontWeight: '900', fontSize: 20, minWidth: 28, textAlign: 'center' },
   plain: { minHeight: 44, alignItems: 'center', justifyContent: 'center', marginTop: 6 },
   plainText: { color: colors.muted, fontWeight: '700', textDecorationLine: 'underline' },
   scrim: { flex: 1, backgroundColor: 'rgba(0,0,0,0.5)' },

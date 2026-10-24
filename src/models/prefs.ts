@@ -26,6 +26,17 @@ export type UserSettings = {
   swiggyOrderInsights: boolean;
   /** Burners or induction plates available for cooking several dishes at once (Multi-dish cooking, 24 Oct 2026). */
   burners?: number;
+  /** What is in the kitchen, by shopping-list ingredient key (24 Oct 2026). */
+  pantry?: Record<string, PantryItem>;
+};
+
+/** One inventory line. Amounts are in g or ml where the unit allows, otherwise in the unit typed. */
+export type PantryItem = {
+  name: string;
+  ingredientId: string | null;
+  quantity: number | null;
+  unit: string | null;
+  updatedAt: number;
 };
 
 export const DEFAULT_SETTINGS: UserSettings = {

@@ -5,12 +5,14 @@ import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import Animated, { FadeIn as RFadeIn, FadeOut, SlideInDown, SlideOutDown, LinearTransition } from 'react-native-reanimated';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { Checkbox } from '../../components/vendors/kit';
 import { DishRow } from '../../components/DishCard';
 import { factsLine } from '../../components/dishes/ResearchDishCard';
 import { DishImageSlot } from '../../components/dishes/parts';
 import { FadeIn, Glass, GradientButton, PressableScale } from '../../components/ui';
 import { getDish } from '../../data/research';
 import type { Dish } from '../../models/research';
+import { CAFETERIA_PLATE, dishesForSlot, isOfficeDay, pickerOrder } from '../../services/planSlots';
 import { savingVsOrder } from '../../services/costToMake';
 import { makeCost, orderRange } from '../../services/dishLibrary';
 import { success } from '../../lib/haptics';
@@ -23,11 +25,12 @@ const SLOTS: { slot: Slot; label: string; icon: keyof typeof Ionicons.glyphMap }
   { slot: 'dinner', label: 'Dinner', icon: 'moon-outline' },
 ];
 const DAY = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-const isBreakfast = (d: Dish) => d.mealType.some((m) => /breakfast/i.test(m));
 
 // `embedded` is set by the Track tab, which draws its own top inset and switcher.
 export function PlanScreen({ embedded = false }: { embedded?: boolean }) {
-  const { plan, setPlan, profile } = useStore();
+  const { plan, setPlan, profile, settings, updateSettings } = useStore();
+  // Lunch on office days is eaten at the canteen unless the user unticks this (default ticked).
+  const officeLunch = settings.featureToggles.skipOfficeLunch ?? true;
   const week = Array.from({ length: 7 }, (_, i) => addDays(new Date(), i));
   const [sel, setSel] = useState(0);
   const [picking, setPicking] = useState<Slot | null>(null);
@@ -43,16 +46,18 @@ export function PlanScreen({ embedded = false }: { embedded?: boolean }) {
 
   const autoPlan = () => {
     const ranked = recommend(profile);
-    const bf = ranked.filter((d) => isBreakfast(d));
-    const mains = ranked.filter((d) => !isBreakfast(d));
+    const bf = dishesForSlot(ranked, 'breakfast');
+    const lunches = dishesForSlot(ranked, 'lunch');
+    const dinners = dishesForSlot(ranked, 'dinner');
     week.forEach((d, i) => {
       const k = dayKey(d);
       const existing = plan[k] ?? {};
       if (!existing.breakfast && bf.length) setPlan(k, 'breakfast', bf[i % bf.length].id);
-      // Lunch on weekdays is usually the office canteen, so only plan weekend lunches.
-      const weekend = d.getDay() === 0 || d.getDay() === 6;
-      if (!existing.lunch && weekend && mains.length) setPlan(k, 'lunch', mains[(i + 1) % mains.length].id);
-      if (!existing.dinner && mains.length) setPlan(k, 'dinner', mains[i % mains.length].id);
+      if (!existing.lunch) {
+        if (officeLunch && isOfficeDay(d)) setPlan(k, 'lunch', CAFETERIA_PLATE);
+        else if (lunches.length) setPlan(k, 'lunch', lunches[(i + 1) % lunches.length].id);
+      }
+      if (!existing.dinner && dinners.length) setPlan(k, 'dinner', dinners[i % dinners.length].id);
     });
     success();
   };
@@ -88,13 +93,16 @@ export function PlanScreen({ embedded = false }: { embedded?: boolean }) {
         <Animated.View key={sel} entering={RFadeIn.duration(250)} layout={LinearTransition}>
           {SLOTS.map(({ slot, label, icon }, i) => {
             const dish = day[slot] ? getDish(day[slot]!) : undefined;
+            const cafeteria = slot === 'lunch' && day.lunch === CAFETERIA_PLATE;
             return (
               <FadeIn key={slot} i={i + 2}>
                 <View style={styles.slotHead}>
                   <Ionicons name={icon} size={16} color={colors.muted} />
                   <Text style={[type.label, { color: colors.muted }]}>{label}</Text>
                 </View>
-                {dish ? (
+                {cafeteria ? (
+                  <Cafeteria onAddDish={() => setPicking('lunch')} onClear={() => setPlan(key, 'lunch', null)} />
+                ) : dish ? (
                   <DishRow
                     dish={dish}
                     right={
@@ -133,12 +141,19 @@ export function PlanScreen({ embedded = false }: { embedded?: boolean }) {
               </View>
             </View>
             <View style={{ gap: 10, marginTop: 16 }}>
+              <View style={styles.office}>
+                <Checkbox on={officeLunch} onPress={() => updateSettings({ featureToggles: { ...settings.featureToggles, skipOfficeLunch: !officeLunch } })} label="I eat lunch at the office on weekdays" />
+                <View style={{ flex: 1 }}>
+                  <Text style={{ color: colors.text, fontWeight: '800' }}>I eat lunch at the office on weekdays</Text>
+                  <Text style={[type.small, { color: colors.muted, marginTop: 2 }]}>{officeLunch ? 'Auto-plan leaves weekday lunch for your cafeteria plate. Untick to plan lunch too.' : 'Auto-plan will plan lunch every day, picking dishes people eat at lunch.'}</Text>
+                </View>
+              </View>
               <GradientButton title="Auto-plan my week" onPress={autoPlan} />
               <GradientButton
                 title="Grocery list for the week"
                 variant="glass"
                 disabled={planned.length === 0}
-                onPress={() => router.push({ pathname: '/basket', params: { dishes: planned.map((d) => d.id).join(','), servings: '1' } })}
+                onPress={() => router.push({ pathname: '/basket', params: { dishes: planned.map((d) => d.id).join(','), servings: '1', from: 'week' } })}
               />
             </View>
           </Glass>
@@ -154,8 +169,7 @@ export function PlanScreen({ embedded = false }: { embedded?: boolean }) {
             <View style={styles.grabber} />
             <Text style={[type.h2, { color: colors.text, marginBottom: 12 }]}>Pick {picking}</Text>
             <ScrollView style={{ maxHeight: 420 }}>
-              {allowedDishes(profile)
-                .sort((a, b) => Number(isBreakfast(b) === (picking === 'breakfast')) - Number(isBreakfast(a) === (picking === 'breakfast')))
+              {pickerOrder(allowedDishes(profile), picking)
                 .map((d) => (
                   <PressableScale
                     key={d.id}
@@ -186,6 +200,36 @@ export function PlanScreen({ embedded = false }: { embedded?: boolean }) {
   );
 }
 
+/** Weekday lunch at the office: add a dish, or (later) build a cafeteria plate. */
+function Cafeteria({ onAddDish, onClear }: { onAddDish: () => void; onClear: () => void }) {
+  const [noted, setNoted] = useState(false);
+  return (
+    <View style={styles.cafe}>
+      <View style={{ flexDirection: 'row', alignItems: 'center', gap: 10 }}>
+        <Ionicons name="briefcase-outline" size={20} color={colors.violet} />
+        <Text style={{ color: colors.text, fontWeight: '800', flex: 1 }}>Lunch at the office</Text>
+        <Pressable hitSlop={12} onPress={onClear} accessibilityLabel="Clear office lunch">
+          <Ionicons name="close-circle" size={22} color={colors.faint} />
+        </Pressable>
+      </View>
+      <View style={{ gap: 8, marginTop: 12 }}>
+        <PressableScale onPress={onAddDish} style={styles.cafeBtn} scaleTo={0.98} accessibilityLabel="Add a dish for lunch">
+          <Ionicons name="add-circle" size={20} color={colors.accent} />
+          <Text style={{ color: colors.text, fontWeight: '700', flex: 1 }}>Add a dish I carry or order</Text>
+        </PressableScale>
+        <PressableScale onPress={() => setNoted(true)} style={[styles.cafeBtn, { opacity: 0.85 }]} scaleTo={0.98} accessibilityLabel="Create a cafeteria plate, coming soon">
+          <Ionicons name="restaurant-outline" size={20} color={colors.violet} />
+          <Text style={{ color: colors.text, fontWeight: '700', flex: 1 }}>Create a cafeteria plate</Text>
+          <View style={styles.soon}>
+            <Text style={{ color: colors.violet, fontWeight: '800', fontSize: 11 }}>Coming soon</Text>
+          </View>
+        </PressableScale>
+      </View>
+      {noted ? <Text style={[type.small, { color: colors.muted, marginTop: 8 }]}>Noted. Building a canteen plate and tracking office meals is on our list, and we will plan it later.</Text> : null}
+    </View>
+  );
+}
+
 export default function Plan() {
   return <PlanScreen />;
 }
@@ -207,6 +251,10 @@ const styles = StyleSheet.create({
     borderStyle: 'dashed',
     borderColor: 'rgba(61,220,132,0.35)',
   },
+  office: { flexDirection: 'row', alignItems: 'flex-start', gap: 12, padding: 12, borderRadius: radius.md, backgroundColor: 'rgba(255,255,255,0.04)', borderWidth: 1, borderColor: colors.border },
+  cafe: { padding: 14, borderRadius: radius.lg, borderWidth: 1, borderColor: 'rgba(167,139,250,0.4)', backgroundColor: 'rgba(167,139,250,0.08)' },
+  cafeBtn: { flexDirection: 'row', alignItems: 'center', gap: 10, padding: 12, borderRadius: radius.md, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border },
+  soon: { paddingHorizontal: 8, paddingVertical: 3, borderRadius: radius.pill, backgroundColor: 'rgba(167,139,250,0.18)' },
   big: { color: colors.text, fontSize: 22, fontWeight: '900' },
   sheet: {
     position: 'absolute',
