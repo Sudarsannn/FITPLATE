@@ -152,6 +152,8 @@ function parseSteps(body: string): DishStep[] {
     else if (key.startsWith('visual cue')) current.visualCue = value;
     else if (key.startsWith('camera check')) current.cameraCheck = value;
     else if (key.startsWith('video shot')) current.videoShot = value;
+    else if (key.startsWith('watch out')) current.watchOut = value;
+    else if (key.startsWith('fun fact')) current.funFact = value;
     else if (key.includes('tip')) current.tip = value;
   }
   if (current) steps.push(current);

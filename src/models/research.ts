@@ -98,6 +98,10 @@ export type DishStep = {
   visualCue: string | null;
   cameraCheck: string | null;
   videoShot: string | null;
+  /** What can go wrong in this step and how to tell. Researched dishes carry it from 24 Oct 2026 (patch 08); older steps show their tip. */
+  watchOut?: string | null;
+  /** One true, sourced fact about this step or ingredient, where research found one. */
+  funFact?: string | null;
 };
 
 export type Dish = Provenance & {

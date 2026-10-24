@@ -25,7 +25,7 @@ export type RawAiDish = {
   batchNote?: string | null;
   ingredients: { name: string; quantity: number | null; unit: 'g' | 'ml' | 'count' | string; householdMeasure?: string | null; looksLike?: string | null }[];
   equipment?: string[];
-  steps: { title?: string | null; text: string; timerSec?: number | null; tip?: string | null; visualCue?: string | null; cameraCheck?: string | null; videoShot?: string | null }[];
+  steps: { title?: string | null; text: string; timerSec?: number | null; tip?: string | null; watchOut?: string | null; funFact?: string | null; visualCue?: string | null; cameraCheck?: string | null; videoShot?: string | null }[];
   nutrition: { kcal: number | null; proteinG: number | null; carbsG: number | null; fatG: number | null; fibreG?: number | null; basis?: string | null };
   healthiness?: { score?: number | null; restaurantScore?: number | null; reason?: string | null; swaps?: string[] } | null;
   rating?: { score?: number | null; basis?: string | null } | null;
@@ -125,6 +125,8 @@ export function buildDish(
     text: s.text.trim(),
     timerSec: typeof s.timerSec === 'number' && s.timerSec > 0 && s.timerSec <= 7200 ? Math.round(s.timerSec) : null,
     tip: str(s.tip),
+    watchOut: str(s.watchOut),
+    funFact: str(s.funFact),
     visualCue: str(s.visualCue),
     cameraCheck: str(s.cameraCheck),
     videoShot: str(s.videoShot),

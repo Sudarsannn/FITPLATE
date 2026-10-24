@@ -6,11 +6,14 @@ import Animated, { FadeInRight } from 'react-native-reanimated';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { k, Notice, ScreenTop, Section } from '../../components/vendors/kit';
-import { Celebrate } from '../../components/Icon';
+import { alpha, Celebrate, IconBadge } from '../../components/Icon';
+import { GuideCard } from '../../components/Guide';
+import { MusicPanel } from '../../components/Music';
 import { Bar, GradientButton, PressableScale, Ring } from '../../components/ui';
 import { getDish } from '../../data/research';
-import { success } from '../../lib/haptics';
+import { select, success } from '../../lib/haptics';
 import { useStore } from '../../lib/store';
+import { stepIcon, whyItWorks } from '../../services/cookGuide';
 import { showBeginnerTips } from '../../services/kitchen';
 import type { CookCompletion } from '../../models/prefs';
 import type { Dish } from '../../models/research';
@@ -34,6 +37,7 @@ export default function StepsScreen() {
   const [i, setI] = useState(-1); // -1 = ingredients overview
   const [done, setDone] = useState(false);
   const [have, setHave] = useState<Record<string, boolean>>({});
+  const [track, setTrack] = useState<'yes' | 'unsure' | null>(null);
 
   if (!dish) {
     return (
@@ -54,11 +58,27 @@ export default function StepsScreen() {
     <SafeAreaView style={{ flex: 1, backgroundColor: colors.bg }}>
       <ScreenTop title={dish.name} subtitle={`for ${servings} · ${steps.length} steps`} fallback="/cook" />
       <View style={{ paddingHorizontal: 18 }}>
-        <Bar progress={steps.length ? (i + 1) / steps.length : 0} />
+        {steps.length > 0 && steps.length <= 40 ? (
+          <View style={{ flexDirection: 'row', gap: 3 }}>
+            {steps.map((_, n) => (
+              <View key={n} style={{ flex: 1, height: 5, borderRadius: 3, backgroundColor: n < i ? colors.accent : n === i ? colors.accent2 : 'rgba(255,255,255,0.10)' }} />
+            ))}
+          </View>
+        ) : (
+          <Bar progress={steps.length ? (i + 1) / steps.length : 0} />
+        )}
       </View>
       <ScrollView contentContainerStyle={{ padding: 18, paddingBottom: 140 }}>
         {i === -1 ? (
           <>
+            <View style={s.overview}>
+              <OverviewStat icon="time-outline" value={dish.prepMin != null || dish.cookMin != null ? `${(dish.prepMin ?? 0) + (dish.cookMin ?? 0)} min` : '–'} label="total" />
+              <OverviewStat icon="list-outline" value={`${steps.length}`} label="steps" />
+              <OverviewStat icon="flame-outline" value={dish.nutritionPerServing.kcal != null ? `${Math.round(dish.nutritionPerServing.kcal)}` : '–'} label="kcal each" />
+            </View>
+            <View style={{ marginBottom: 14 }}>
+              <MusicPanel kind="cooking" />
+            </View>
             <Section title={`You need (for ${servings})`} right={<Text style={[k.muted, { fontWeight: '800' }]}>{Object.values(have).filter(Boolean).length} of {dish.ingredients.length} ready</Text>}>
               {dish.ingredients.map((g, n) => {
                 const key = `${g.name}-${n}`;
@@ -88,21 +108,78 @@ export default function StepsScreen() {
           </>
         ) : step ? (
           <Animated.View key={i} entering={FadeInRight.duration(320)}>
-            <View style={{ flexDirection: 'row', alignItems: 'baseline', gap: 10 }}>
-              <Text style={s.bigNum}>{String(i + 1).padStart(2, '0')}</Text>
-              <Text style={[type.label, { color: colors.accent }]}>of {steps.length} steps</Text>
+            <View style={{ flexDirection: 'row', alignItems: 'center', gap: 14 }}>
+              <IconBadge name={stepIcon(`${step.title ?? ''} ${step.text}`)} color={colors.accent} size={60} radius={20} />
+              <View>
+                <Text style={s.bigNum}>{String(i + 1).padStart(2, '0')}</Text>
+                <Text style={[type.label, { color: colors.accent }]}>of {steps.length} steps</Text>
+              </View>
             </View>
-            {step.title ? <Text style={[type.h1, { color: colors.text, marginTop: 6 }]}>{step.title}</Text> : null}
-            <Text style={[k.body, { fontSize: 18, lineHeight: 27, marginTop: 10 }]}>{step.text}</Text>
+            {step.title ? <Text style={[type.h1, { color: colors.text, marginTop: 12 }]}>{step.title}</Text> : null}
+            {step.text && step.text !== step.title ? <Text style={[k.body, { fontSize: 18, lineHeight: 27, marginTop: 8 }]}>{step.text}</Text> : null}
             {step.timerSec ? <StepTimer key={i} seconds={step.timerSec} /> : null}
-            {step.visualCue ? <Notice tone="ok">Looks right when: {step.visualCue}</Notice> : null}
-            {step.tip && tips ? <Notice>Tip: {step.tip}</Notice> : null}
+
+            {step.visualCue ? (
+              <GuideCard icon="eye-outline" tone={colors.accent} label="You should see" body={step.visualCue} />
+            ) : null}
+            {step.watchOut || (step.tip && tips) ? (
+              <GuideCard icon="warning-outline" tone={colors.warn} label={step.watchOut ? 'Watch out for' : 'Tip'} body={(step.watchOut ?? step.tip)!} />
+            ) : null}
+            {step.watchOut && step.tip && tips ? <GuideCard icon="bulb-outline" tone={colors.blue} label="Tip" body={step.tip} /> : null}
+
+            {step.visualCue || step.watchOut ? (
+              <View style={s.trackRow}>
+                <PressableScale
+                  onPress={() => {
+                    select();
+                    setTrack('yes');
+                  }}
+                  style={[s.trackBtn, track === 'yes' && { backgroundColor: alpha(colors.accent, 0.2), borderColor: colors.accent }]}
+                  accessibilityLabel="Mine looks like this"
+                >
+                  <Ionicons name="checkmark-circle-outline" size={18} color={colors.accent} />
+                  <Text style={s.trackText}>Mine looks like this</Text>
+                </PressableScale>
+                <PressableScale
+                  onPress={() => {
+                    select();
+                    setTrack('unsure');
+                  }}
+                  style={[s.trackBtn, track === 'unsure' && { backgroundColor: alpha(colors.warn, 0.18), borderColor: colors.warn }]}
+                  accessibilityLabel="Not sure"
+                >
+                  <Ionicons name="help-circle-outline" size={18} color={colors.warn} />
+                  <Text style={s.trackText}>Not sure</Text>
+                </PressableScale>
+              </View>
+            ) : null}
+            {track === 'yes' ? (
+              <Animated.View entering={FadeInRight.duration(200)}>
+                <Notice tone="ok">You are on track. Move on when you are ready.</Notice>
+              </Animated.View>
+            ) : null}
+            {track === 'unsure' ? (
+              <Animated.View entering={FadeInRight.duration(200)}>
+                <Notice tone="warn">
+                  {step.timerSec ? 'Give it the full time first, then compare again. ' : 'Take a moment and compare again. '}
+                  {step.visualCue ? `It should look like this: ${step.visualCue.replace(/[.\s]+$/, '')}. ` : ''}
+                  {step.watchOut ?? step.tip ?? 'If it looks different, pause the heat and go back one step.'}
+                </Notice>
+              </Animated.View>
+            ) : null}
+
+            {step.funFact ? <GuideCard icon="sparkles-outline" tone={colors.violet} label="Fun fact" body={step.funFact} /> : null}
+            {!step.funFact && whyItWorks(`${step.title ?? ''} ${step.text}`) ? <GuideCard icon="flask-outline" tone={colors.violet} label="Why it works" body={whyItWorks(`${step.title ?? ''} ${step.text}`)!} /> : null}
+
+            <View style={{ marginTop: 16 }}>
+              <MusicPanel kind="cooking" />
+            </View>
           </Animated.View>
         ) : null}
       </ScrollView>
       <View style={s.footer}>
         {i >= 0 ? (
-          <PressableScale onPress={() => setI(i - 1)} style={s.backBtn} accessibilityLabel="Previous step">
+          <PressableScale onPress={() => (setTrack(null), setI(i - 1))} style={s.backBtn} accessibilityLabel="Previous step">
             <Ionicons name="chevron-back" size={22} color={colors.text} />
           </PressableScale>
         ) : null}
@@ -110,6 +187,7 @@ export default function StepsScreen() {
           style={{ flex: 1 }}
           title={i === -1 ? 'Start cooking' : i < steps.length - 1 ? 'Next step' : 'Done'}
           onPress={() => {
+            setTrack(null);
             if (i < steps.length - 1) setI(i + 1);
             else {
               success();
@@ -131,6 +209,16 @@ function prices(dish: Dish, servings: number) {
   const cost = dishCost(dish, servings);
   const order = headlineOrderPrice(dish);
   return { cost, orderTotal: order ? order.avg * servings : null };
+}
+
+function OverviewStat({ icon, value, label }: { icon: keyof typeof Ionicons.glyphMap; value: string; label: string }) {
+  return (
+    <View style={s.ovStat}>
+      <Ionicons name={icon} size={18} color={colors.accent} />
+      <Text style={s.ovValue}>{value}</Text>
+      <Text style={k.muted}>{label}</Text>
+    </View>
+  );
 }
 
 function Finished({ dish, servings }: { dish: Dish; servings: number }) {
@@ -226,6 +314,12 @@ export function StepTimer({ seconds }: { seconds: number }) {
 }
 
 const s = StyleSheet.create({
+  overview: { flexDirection: 'row', gap: 10, marginBottom: 14 },
+  ovStat: { flex: 1, alignItems: 'center', gap: 2, paddingVertical: 12, borderRadius: radius.md, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border },
+  ovValue: { color: colors.text, fontSize: 18, fontWeight: '900' },
+  trackRow: { flexDirection: 'row', gap: 10, marginTop: 14 },
+  trackBtn: { flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 6, paddingVertical: 12, borderRadius: radius.pill, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border },
+  trackText: { color: colors.text, fontWeight: '800', fontSize: 13 },
   footer: { position: 'absolute', left: 0, right: 0, bottom: 0, flexDirection: 'row', gap: 10, padding: 16, paddingBottom: 24, backgroundColor: colors.bgElevated, borderTopWidth: 1, borderColor: colors.border },
   backBtn: { width: 52, height: 52, borderRadius: 26, backgroundColor: colors.card, alignItems: 'center', justifyContent: 'center' },
   timer: { marginTop: 18, padding: 16, borderRadius: radius.lg, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, flexDirection: 'row', alignItems: 'center', gap: 16 },

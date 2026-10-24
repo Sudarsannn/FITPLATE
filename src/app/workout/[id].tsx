@@ -6,7 +6,9 @@ import Animated, { FadeIn as RFadeIn } from 'react-native-reanimated';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { ScreenTop } from '../../components/vendors/kit';
+import { GuideCard } from '../../components/Guide';
 import { Celebrate } from '../../components/Icon';
+import { MusicPanel } from '../../components/Music';
 import { GradientButton, PressableScale, Ring } from '../../components/ui';
 import { researchExercises } from '../../data/research';
 import { select, success } from '../../lib/haptics';
@@ -150,6 +152,7 @@ function Player({ e, target }: { e: Exercise; target: number | null }) {
               </Text>
               {target ? <Text style={styles.heroNote}>Aiming for about {target} min to balance your meal.</Text> : null}
             </View>
+            <MusicPanel kind="workout" />
             {e.setupSteps.length ? (
               <View style={styles.card}>
                 <Text style={styles.cardLabel}>Get set up</Text>
@@ -212,6 +215,16 @@ function Player({ e, target }: { e: Exercise; target: number | null }) {
                 {step.breathing ? <Text style={styles.muted}>Breathe: {step.breathing}</Text> : null}
               </View>
             ) : null}
+            {phase.kind === 'work' && step?.feel ? <View style={{ alignSelf: 'stretch' }}><GuideCard icon="body-outline" tone={colors.accent} label="You should feel" body={step.feel.charAt(0).toUpperCase() + step.feel.slice(1)} /></View> : null}
+            {phase.kind === 'work' && step?.visualCheck ? <View style={{ alignSelf: 'stretch' }}><GuideCard icon="eye-outline" tone={colors.blue} label="Your form should look like" body={step.visualCheck.charAt(0).toUpperCase() + step.visualCheck.slice(1)} /></View> : null}
+            {phase.kind === 'work' && e.commonMistakes.length ? (
+              <View style={{ alignSelf: 'stretch' }}>
+                <GuideCard icon="warning-outline" tone={colors.warn} label="Watch out for" body={e.commonMistakes[Math.min(cue, e.commonMistakes.length - 1)].text} />
+              </View>
+            ) : null}
+            <View style={{ alignSelf: 'stretch', marginTop: 16 }}>
+              <MusicPanel kind="workout" />
+            </View>
           </Animated.View>
         )}
       </ScrollView>

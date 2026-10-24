@@ -193,7 +193,7 @@ Use at least 3 independent sources. Write the notes as plain text with these par
 1. Quick facts: cuisine or region, veg/egg/non-veg, meal type, difficulty with a reason, prep and cook minutes, smallest practical batch if one serving is impractical.
 2. Ingredients for 1 serving with quantity in g or ml (count for whole items), household measure, what unfamiliar items look like.
 3. Equipment with an alternative for anything not everyone owns.
-4. Micro-steps: one small action each, with exact measure, time, visual cue (colour, smell, sound, texture), camera check, a beginner tip where useful.
+4. Micro-steps: one small action each, with exact measure, time, visual cue (exactly what the user should see, smell or hear when it is going right), what to watch out for (the usual mistake and how to tell), a beginner tip where useful, and a true fun fact only where a source gives one.
 5. Nutrition per serving (kcal, protein, carbs, fat, fibre) from IFCT 2017 or USDA data, and which basis you used.
 6. Healthiness (home version and typical restaurant version, out of 10) with reasons and three healthier swaps.
 7. Internet-sentiment rating out of 5 with a one-line reason (not restaurant ratings).
@@ -230,7 +230,7 @@ export const COMPOSE_SCHEMA = {
       type: 'ARRAY',
       items: {
         type: 'OBJECT',
-        properties: { title: STR, text: STR, timerSec: { type: 'INTEGER', nullable: true }, tip: { type: 'STRING', nullable: true }, visualCue: { type: 'STRING', nullable: true }, cameraCheck: { type: 'STRING', nullable: true }, videoShot: { type: 'STRING', nullable: true } },
+        properties: { title: STR, text: STR, timerSec: { type: 'INTEGER', nullable: true }, tip: { type: 'STRING', nullable: true }, watchOut: { type: 'STRING', nullable: true }, funFact: { type: 'STRING', nullable: true }, visualCue: { type: 'STRING', nullable: true }, cameraCheck: { type: 'STRING', nullable: true }, videoShot: { type: 'STRING', nullable: true } },
         required: ['title', 'text'],
       },
     },
@@ -256,7 +256,7 @@ User's description: ${description}
 ${base ? `Based on FitPlate's researched dish "${base.name}" with these changes: ${(changes ?? []).join('; ') || 'none'}.\n` : ''}
 Rules:
 - Everything per 1 serving. Ingredient quantities in g or ml, or count for whole items. Use standard names with the Indian name in brackets where common.
-- Steps: 8 to 30 micro-steps, one small action each. title is a short lead-in (for example "Rinse the poha"), text is the instruction with the exact measure. timerSec only for a step that really waits. visualCue, cameraCheck and videoShot for every step.
+- Steps: 8 to 30 micro-steps, one small action each. title is a short lead-in (for example "Rinse the poha"), text is the instruction with the exact measure. timerSec only for a step that really waits. visualCue, cameraCheck and videoShot for every step. visualCue says exactly what the user should SEE, smell or hear when the step is going right (colour, texture, size of bubbles, sound). watchOut says what most often goes wrong in that step and how the user can tell it is going wrong, in one or two sentences, for every step. funFact only where the research notes contain a true fact about that step or ingredient; otherwise null, never invent one.
 - nutrition is per serving and the kcal must roughly equal 4 x protein + 4 x carbs + 9 x fat.
 - healthiness.score and restaurantScore are out of 10. rating.score is out of 5 and rating.basis must say it comes from general internet sentiment, never restaurant ratings.
 - allergens uses only the allowed ids and lists every one the ingredients contain.
