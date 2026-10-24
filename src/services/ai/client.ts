@@ -92,7 +92,7 @@ export function findKnownAiDish(query: string): Dish | null {
   return m && m.score >= 0.75 ? m.dish : null;
 }
 
-export async function createDishWithAi(input: CreateInput, opts: { onPhase?: (p: AiPhase) => void; fetchImpl?: Fetch; signal?: AbortSignal; saveImpl?: typeof saveAiDish } = {}): Promise<CreateResult> {
+export async function createDishWithAi(input: CreateInput, opts: { onPhase?: (p: AiPhase) => void; onName?: (name: string) => void; fetchImpl?: Fetch; signal?: AbortSignal; saveImpl?: typeof saveAiDish } = {}): Promise<CreateResult> {
   const f = opts.fetchImpl ?? fetch;
   const on = opts.onPhase ?? (() => {});
   const name = input.name.trim();
@@ -104,6 +104,7 @@ export async function createDishWithAi(input: CreateInput, opts: { onPhase?: (p:
   const known = findKnownAiDish(name || description);
   if (known) return { kind: 'existing', dish: known };
   const { plan } = await post<{ plan: PlanOut }>('/api/ai/plan', { name, description, diet: input.diet, catalog: catalogOf(researchDishes.concat(getCustomDishes().filter((d) => !researchDishes.includes(d)))) }, f, opts.signal);
+  if (plan.canonicalName?.trim()) opts.onName?.(plan.canonicalName.trim());
   const base = plan.baseDishId ? getDish(plan.baseDishId) ?? null : null;
   if (plan.mode === 'existing' && base) return { kind: 'existing', dish: base };
 

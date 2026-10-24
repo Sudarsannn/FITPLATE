@@ -31,6 +31,21 @@ describe('AI server handler', () => {
     expect(body.sources).toEqual([{ title: 'A', url: 'https://a.test' }]);
   });
 
+  it('compose asks again once when the first recipe is too thin', async () => {
+    const prompts: string[] = [];
+    const thin = { name: 'Dish', ingredients: [{ name: 'a' }], steps: [{ title: 't', text: 'x' }] };
+    const full = { name: 'Dish', ingredients: [1, 2, 3, 4].map((n) => ({ name: `i${n}` })), steps: [1, 2, 3, 4, 5, 6, 7, 8].map((n) => ({ title: `s${n}`, text: 'x' })) };
+    const fetchImpl = async (u: string, init: any) => {
+      if (u.endsWith('/models')) return { ok: false, status: 500, json: async () => ({}) };
+      prompts.push(JSON.parse(init.body).contents[0].parts[0].text);
+      return gem(JSON.stringify(prompts.length === 1 ? thin : full));
+    };
+    const res = await handleAi(post('/api/ai/compose', { description: 'dish desc', canonicalName: 'Dish', notes: 'n'.repeat(60) }), { GEMINI_API_KEY: 'k', GEMINI_MODEL: 'm' }, fetchImpl as any);
+    const body = await res.json();
+    expect(body.dish.steps).toHaveLength(8);
+    expect(prompts[1]).toMatch(/TOO THIN/);
+  });
+
   it('plan drops a base dish that is not in the catalogue', async () => {
     const fetchImpl = async () => gem(JSON.stringify({ mode: 'variation', baseDishId: 'made-up', canonicalName: 'X', summary: '', changes: [], searchQueries: [] }));
     const res = await handleAi(post('/api/ai/plan', { description: 'x dish', catalog: [{ id: '001-poha', name: 'Poha' }] }), { GEMINI_API_KEY: 'k' }, fetchImpl as any);

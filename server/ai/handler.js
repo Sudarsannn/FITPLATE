@@ -94,7 +94,7 @@ export async function callGemini({ env, fetchImpl, system, prompt, schema, searc
       const body = {
         systemInstruction: { parts: [{ text: system }] },
         contents: [{ role: 'user', parts: [{ text: prompt }] }],
-        generationConfig: { temperature, ...(schema ? { responseMimeType: 'application/json', responseSchema: schema } : {}) },
+        generationConfig: { temperature, maxOutputTokens: 32000, ...(schema ? { responseMimeType: 'application/json', responseSchema: schema } : {}) },
         ...(search ? { tools: [{ google_search: {} }] } : {}),
       };
       let res;
@@ -215,7 +215,7 @@ Decide:
 - "existing": the request is really one of the researched dishes (same dish, different spelling or menu name). Set baseDishId.
 - "variation": a researched dish can be modified to make it (swap a main ingredient, make it Jain or vegan, change spice level, change the cooking method). Set baseDishId and list the changes.
 - "new": no researched dish is close enough. baseDishId null.
-Give canonicalName as the dish's usual English name. summary is one sentence. changes lists each modification (empty for existing and new). searchQueries has 2 to 4 web search queries that would find authentic recipes and nutrition facts for it.`;
+Give canonicalName as the dish's usual English name with the spelling corrected (the user may have mistyped it, for example "Cheicken" is "Chicken"); keep real regional names such as Dindigul or Seeraga Samba. summary is one sentence. changes lists each modification (empty for existing and new). searchQueries has 2 to 4 web search queries that would find authentic recipes and nutrition facts for it.`;
 }
 
 export function researchPrompt({ description, canonicalName, mode, base, changes }) {
@@ -254,6 +254,7 @@ export const COMPOSE_SCHEMA = {
     batchNote: { type: 'STRING', nullable: true },
     ingredients: {
       type: 'ARRAY',
+      minItems: 3,
       items: {
         type: 'OBJECT',
         properties: { name: STR, quantity: NUM, unit: { type: 'STRING', enum: ['g', 'ml', 'count'] }, householdMeasure: { type: 'STRING', nullable: true }, looksLike: { type: 'STRING', nullable: true } },
@@ -263,6 +264,7 @@ export const COMPOSE_SCHEMA = {
     equipment: { type: 'ARRAY', items: STR },
     steps: {
       type: 'ARRAY',
+      minItems: 8,
       items: {
         type: 'OBJECT',
         properties: { title: STR, text: STR, timerSec: { type: 'INTEGER', nullable: true }, tip: { type: 'STRING', nullable: true }, watchOut: { type: 'STRING', nullable: true }, funFact: { type: 'STRING', nullable: true }, visualCue: { type: 'STRING', nullable: true }, cameraCheck: { type: 'STRING', nullable: true }, videoShot: { type: 'STRING', nullable: true } },
@@ -291,6 +293,7 @@ User's description: ${description}
 ${base ? `Based on FitPlate's researched dish "${base.name}" with these changes: ${(changes ?? []).join('; ') || 'none'}.\n` : ''}
 Rules:
 - Everything per 1 serving. Ingredient quantities in g or ml, or count for whole items. Use standard names with the Indian name in brackets where common.
+- name is the dish's usual name with any spelling mistake from the user's request corrected.
 - Steps: 8 to 30 micro-steps, one small action each. title is a short lead-in (for example "Rinse the poha"), text is the instruction with the exact measure. timerSec only for a step that really waits. visualCue, cameraCheck and videoShot for every step. visualCue says exactly what the user should SEE, smell or hear when the step is going right (colour, texture, size of bubbles, sound). watchOut says what most often goes wrong in that step and how the user can tell it is going wrong, in one or two sentences, for every step. funFact only where the research notes contain a true fact about that step or ingredient; otherwise null, never invent one.
 - nutrition is per serving and the kcal must roughly equal 4 x protein + 4 x carbs + 9 x fat.
 - healthiness.score and restaurantScore are out of 10. rating.score is out of 5 and rating.basis must say it comes from general internet sentiment, never restaurant ratings.
@@ -417,8 +420,21 @@ export async function compose(body, ctx) {
   const description = needText(body.description, 'The description');
   const notes = needText(body.notes, 'The research notes', 50);
   const base = body.base && typeof body.base === 'object' ? { name: clip(String(body.base.name), 80) } : null;
-  const r = await callGemini({ ...ctx, system: SYSTEM_BASE, prompt: composePrompt({ canonicalName, description, notes, base, changes: (Array.isArray(body.changes) ? body.changes : []).slice(0, 12).map((c) => clip(String(c), 200)) }), schema: COMPOSE_SCHEMA, temperature: 0.2 });
-  return { dish: parseModelJson(r.text), model: r.model };
+  const changes = (Array.isArray(body.changes) ? body.changes : []).slice(0, 12).map((c) => clip(String(c), 200));
+  // The model sometimes returns a thin recipe; ask again once, saying what was missing, before giving up.
+  let extra = '';
+  let out = null;
+  let model = '';
+  for (let attempt = 0; attempt < 2; attempt++) {
+    const r = await callGemini({ ...ctx, system: SYSTEM_BASE, prompt: composePrompt({ canonicalName, description, notes, base, changes }) + extra, schema: COMPOSE_SCHEMA, temperature: attempt ? 0.5 : 0.2 });
+    model = r.model;
+    out = parseModelJson(r.text);
+    const nSteps = Array.isArray(out?.steps) ? out.steps.length : 0;
+    const nIng = Array.isArray(out?.ingredients) ? out.ingredients.length : 0;
+    if (nSteps >= 4 && nIng >= 3) break;
+    extra = `\n\nYOUR LAST ANSWER WAS TOO THIN (${nIng} ingredients, ${nSteps} steps). Write at least 6 ingredients and at least 8 micro-steps, even if the notes are short: fill gaps from standard technique for this dish and list them in needsMoreResearch.`;
+  }
+  return { dish: out, model };
 }
 
 // ----------------------------------------------------------------- research queue

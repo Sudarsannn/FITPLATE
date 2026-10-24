@@ -86,7 +86,7 @@ export async function startAiJob(input: CreateInput, opts: { notify?: boolean } 
   emit();
   const mine = job;
   try {
-    const r = await createDishWithAi(input, { onPhase: (phase) => (job?.startedAt === mine.startedAt ? set({ phase }) : undefined), signal: abort.signal });
+    const r = await createDishWithAi(input, { onPhase: (phase) => (job?.startedAt === mine.startedAt ? set({ phase }) : undefined), onName: (name) => (job?.startedAt === mine.startedAt ? set({ name }) : undefined), signal: abort.signal });
     set({ status: 'done', dishId: r.dish.id, endedAt: Date.now() });
     if (job?.notify && isAway()) void notifyDone('Your dish is ready', `${r.dish.name} is ready to cook.`);
   } catch (e) {
