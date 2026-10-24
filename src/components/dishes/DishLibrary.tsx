@@ -1,6 +1,7 @@
 import { Ionicons } from '@expo/vector-icons';
 import { router } from 'expo-router';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import type { ReactNode } from 'react';
 import { useDeferredValue, useEffect, useMemo, useRef, useState } from 'react';
 import Animated, { FadeInDown } from 'react-native-reanimated';
 import { FlatList, Modal, Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
@@ -17,7 +18,7 @@ import { GUEST_OWNER } from '../../services/storage';
 import { activeCount, optionCounts, runSearch, toggle, type FilterGroup, type Selection } from '../../services/search';
 import { colors, radius, type } from '../../theme';
 import { IconBadge, type IconName } from '../Icon';
-import { PressableScale, TopGlow } from '../ui';
+import { GradientButton, PressableScale, TopGlow } from '../ui';
 import { SelectChip } from './parts';
 import { ResearchDishCard } from './ResearchDishCard';
 
@@ -182,9 +183,16 @@ export function DishLibrary({ dishes = researchDishes }: { dishes?: readonly Dis
           ) : (
             <Empty
               icon="search-outline"
-              title="No dishes match"
+              title="No results"
               body={query ? `Nothing for “${query.trim()}” with these filters. Try fewer filters or another word.` : 'Try removing a filter.'}
               action={nActive || query ? { label: 'Clear search and filters', onPress: () => (setSelection({}), setQuery('')) } : undefined}
+              extra={
+                <GradientButton
+                  title="Why stop here? Cook whatever is in your mind"
+                  onPress={() => router.push({ pathname: '/create-dish', params: query.trim() ? { name: query.trim() } : {} })}
+                  style={{ marginTop: 14 }}
+                />
+              }
             />
           )
         }
@@ -317,7 +325,7 @@ function Sheet({
   );
 }
 
-function Empty({ icon, title, body, action }: { icon: IconName; title: string; body: string; action?: { label: string; onPress: () => void } }) {
+function Empty({ icon, title, body, action, extra }: { icon: IconName; title: string; body: string; action?: { label: string; onPress: () => void }; extra?: ReactNode }) {
   return (
     <View style={styles.empty}>
       <IconBadge name={icon} size={64} color={colors.muted} />
@@ -328,6 +336,7 @@ function Empty({ icon, title, body, action }: { icon: IconName; title: string; b
           <Text style={styles.footerText}>{action.label}</Text>
         </Pressable>
       ) : null}
+      {extra ? <View style={{ alignSelf: 'stretch' }}>{extra}</View> : null}
     </View>
   );
 }

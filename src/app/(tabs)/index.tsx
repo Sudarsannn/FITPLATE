@@ -141,11 +141,26 @@ export default function Today() {
             </Glass>
           </FadeIn>
 
-          <PressableScale onPress={() => router.push('/analyse')} scaleTo={0.98} style={[styles.balance, { marginTop: 12 }]} accessibilityLabel="Analyse my Swiggy Checkout">
-            <Ionicons name="cart" size={16} color={colors.warm} />
-            <Text style={[styles.balanceText, { fontWeight: '800' }]}>Analyse my Swiggy Checkout</Text>
-            <Ionicons name="chevron-forward" size={15} color={colors.muted} />
-          </PressableScale>
+          <FadeIn i={1}>
+            <View style={{ gap: 10, marginTop: 12 }}>
+              <PressableScale onPress={() => router.push('/create-dish')} scaleTo={0.98} style={[styles.panel, { backgroundColor: 'rgba(167,139,250,0.10)', borderColor: 'rgba(167,139,250,0.30)' }]} accessibilityLabel="Create your own dish and prepare it">
+                <IconBadge name="sparkles-outline" color={colors.violet} size={44} />
+                <View style={{ flex: 1 }}>
+                  <Text style={styles.panelTitle}>Create your own dish and prepare it</Text>
+                  <Text style={styles.panelSub}>Describe anything. Get the recipe, ingredients and step-by-step cooking.</Text>
+                </View>
+                <Ionicons name="chevron-forward" size={18} color={colors.muted} />
+              </PressableScale>
+              <PressableScale onPress={() => router.push('/analyse')} scaleTo={0.98} style={[styles.panel, { backgroundColor: 'rgba(255,138,61,0.10)', borderColor: 'rgba(255,138,61,0.30)' }]} accessibilityLabel="Make your Swiggy cart at home">
+                <IconBadge name="cart-outline" color={colors.warm} size={44} />
+                <View style={{ flex: 1 }}>
+                  <Text style={styles.panelTitle}>Make your Swiggy cart at home</Text>
+                  <Text style={styles.panelSub}>See what you can cook instead of order, and what it saves.</Text>
+                </View>
+                <Ionicons name="chevron-forward" size={18} color={colors.muted} />
+              </PressableScale>
+            </View>
+          </FadeIn>
 
           <FadeIn i={2}>
             <WeekCard days={s.days} goalKcal={goal.kcal} />
@@ -265,6 +280,9 @@ export default function Today() {
 }
 
 const styles = StyleSheet.create({
+  panel: { flexDirection: 'row', alignItems: 'center', gap: 12, padding: 14, borderRadius: radius.lg, borderWidth: 1 },
+  panelTitle: { color: colors.text, fontWeight: '800', fontSize: 15 },
+  panelSub: { color: colors.muted, fontSize: 12.5, lineHeight: 17, marginTop: 2 },
   headerBg: { position: 'absolute', top: 0, left: 0, right: 0, height: 0 },
   header: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
   streak: { flexDirection: 'row', alignItems: 'center', gap: 4, paddingHorizontal: 12, paddingVertical: 7, borderRadius: 999, backgroundColor: 'rgba(255,138,61,0.15)', borderWidth: 1, borderColor: 'rgba(255,138,61,0.35)' },
