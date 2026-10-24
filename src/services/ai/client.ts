@@ -136,7 +136,7 @@ export async function createDishWithAi(input: CreateInput, opts: { onPhase?: (p:
   // Tell the research queue. The dish is already usable, so a failure here is not the user's problem.
   let queued = false;
   try {
-    const q = await post<{ saved: boolean }>('/api/ai/submit', { dish: { ...comp.dish, name: dish.name }, description, mode, basedOn, changes: plan.changes, sources: res.sources, model: comp.model, grounded: res.grounded !== false }, f, opts.signal);
+    const q = await post<{ saved: boolean }>('/api/ai/submit', { dish: { ...comp.dish, name: dish.name }, unmatchedIngredients: dish.ingredients.filter((i) => !i.ingredientId).map((i) => i.name), description, mode, basedOn, changes: plan.changes, sources: res.sources, model: comp.model, grounded: res.grounded !== false }, f, opts.signal);
     queued = q.saved === true;
   } catch {
     queued = false;

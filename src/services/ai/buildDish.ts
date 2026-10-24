@@ -7,7 +7,8 @@
  * ingredient list, diet claims are checked against them, and a calorie figure
  * that does not match its own macros is replaced by the one the macros give.
  */
-import { getIngredient, ingredientAliases, researchIngredients } from '../../data/research';
+import { dishMicros } from '../data/crossLinks';
+import { getIngredient, ingredientAliases, researchIngredients, researchLinks } from '../../data/research';
 import type { AiDishInfo, AllergenId, Dish, DishIngredient, DishStep, DietClaim } from '../../models/research';
 import { ALLERGEN_IDS } from '../../models/research';
 import { checkClaims, dishAllergens, sortAllergens } from '../data/allergens';
@@ -189,7 +190,7 @@ export function buildDish(
     equipment: (raw.equipment ?? []).filter(Boolean),
     steps,
     nutritionPerServing: { kcal, proteinG: p, carbsG: c, fatG: f, fibreG: num(n.fibreG) },
-    microNutrientsEstimate: null,
+    microNutrientsEstimate: dishMicros({ ingredients }, researchLinks.microTable),
     asOrdered: null,
     orderPrice: null,
     healthiness: raw.healthiness ? { score: score(raw.healthiness.score), restaurantScore: score(raw.healthiness.restaurantScore), reasons } : null,

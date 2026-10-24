@@ -479,6 +479,7 @@ export async function submit(body, ctx) {
     firstRequestedAt: now,
     lastRequestedAt: now,
     userWords: [clip(String(body.description ?? ''), 600)],
+    unmatchedIngredients: (Array.isArray(body.unmatchedIngredients) ? body.unmatchedIngredients : []).slice(0, 30).map((c) => clip(String(c), 80)),
     needsMoreResearch: Array.isArray(dish.needsMoreResearch) ? dish.needsMoreResearch.slice(0, 12).map((c) => clip(String(c), 200)) : [],
     sources: (Array.isArray(body.sources) ? body.sources : []).slice(0, 20),
     model: clip(String(body.model ?? ''), 60),
@@ -495,7 +496,7 @@ export async function submit(body, ctx) {
     sha = file.sha;
     try {
       const old = JSON.parse(unb64(file.content));
-      content = { ...old, requests: (old.requests ?? 1) + 1, lastRequestedAt: now, userWords: [...new Set([...(old.userWords ?? []), ...entryFresh.userWords])].slice(0, 20) };
+      content = { ...old, requests: (old.requests ?? 1) + 1, lastRequestedAt: now, unmatchedIngredients: [...new Set([...(old.unmatchedIngredients ?? []), ...entryFresh.unmatchedIngredients])].slice(0, 30), userWords: [...new Set([...(old.userWords ?? []), ...entryFresh.userWords])].slice(0, 20) };
     } catch {
       content = entryFresh;
     }

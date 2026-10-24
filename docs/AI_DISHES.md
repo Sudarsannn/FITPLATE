@@ -44,3 +44,8 @@ Check it: open `https://fitplate.sudarsanmohanchander.workers.dev/api/ai/status`
 - Anyone with the app address can call the AI endpoints. The key stays secret and the free tier has no bill, so the worst case is the allowance running out. If that happens, add a check (Firebase sign-in token) in `worker/index.js`.
 - Your own AI dishes are stored on the device and are also in the shared library (if the research queue is switched on), so a reinstall gets them back.
 - It is a first draft. The recipe page says so, lists what the AI could not confirm, and the daily research verifies it.
+
+## Minimise, notify and richer AI dishes (24 Oct 2026)
+- The wait screen has a Minimise button: the screen shrinks to a floating bar above the tab bar showing the dish, time so far and a rough time left. Tap it to expand, or to open the dish when it is ready. State lives in `src/services/ai/job.ts`, the bar is `src/components/AiJobBar.tsx`.
+- "Notify me when it's done" sends a local notification (or a browser one on the web) only if the app is in the background when the dish finishes. The request itself runs while the app is open or briefly backgrounded; a phone may pause it if the app is closed.
+- Vitamins and minerals for AI dishes are now worked out from the researched per-100 g data of matched ingredients (partial coverage is shown). Ingredients with no researched match are listed in the queue entry as `unmatchedIngredients`; ingredient research PATCH_05 adds up to 5 a run.

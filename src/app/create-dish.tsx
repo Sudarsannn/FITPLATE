@@ -1,7 +1,7 @@
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import { router, useLocalSearchParams } from 'expo-router';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { KeyboardAvoidingView, Platform, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import Animated, { Easing, FadeIn, FadeInDown, useAnimatedStyle, useSharedValue, withRepeat, withTiming } from 'react-native-reanimated';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -11,7 +11,8 @@ import { alpha, IconBadge } from '../components/Icon';
 import { Chip, GradientButton, PressableScale, TopGlow } from '../components/ui';
 import { Notice, ScreenTop } from '../components/vendors/kit';
 import { useStore } from '../lib/store';
-import { AiRequestError, createDishWithAi, PHASES, type AiPhase } from '../services/ai/client';
+import { PHASES, type AiPhase } from '../services/ai/client';
+import { askNotifyPermission, cancelAiJob, clock, dismissAiJob, getAiJob, secondsLeft, setMinimised, setNotify, startAiJob, useAiJob } from '../services/ai/job';
 import { colors, radius, type } from '../theme';
 
 const EXAMPLES = [
@@ -34,34 +35,39 @@ export default function CreateDish() {
   const { profile } = useStore();
   const [name, setName] = useState(params.name ?? '');
   const [description, setDescription] = useState(params.description ?? '');
-  const [running, setRunning] = useState(false);
-  const [phase, setPhase] = useState<AiPhase>('matching');
-  const [error, setError] = useState<string | null>(null);
-  const abort = useRef<AbortController | null>(null);
+  const job = useAiJob();
+  const [notify, setNotifyOn] = useState(() => (getAiJob()?.status === 'running' ? !!getAiJob()?.notify : false));
+  const running = job?.status === 'running';
 
-  useEffect(() => () => abort.current?.abort(), []);
-
-  const start = async () => {
-    setError(null);
-    setRunning(true);
-    setPhase('matching');
-    abort.current = new AbortController();
-    try {
-      const r = await createDishWithAi({ name, description, diet: profile.diet }, { onPhase: setPhase, signal: abort.current.signal });
-      router.replace({ pathname: '/recipe/[id]', params: { id: r.dish.id } });
-    } catch (e) {
-      if ((e as Error)?.name === 'AbortError') return;
-      setError(e instanceof AiRequestError ? e.message : 'Something went wrong while creating the dish. Try again.');
-      setRunning(false);
+  // A finished job opens its dish; a failed one comes back to the form with the reason.
+  useEffect(() => {
+    if (!job || job.minimised) return;
+    if (job.status === 'done' && job.dishId) {
+      const id = job.dishId;
+      dismissAiJob();
+      router.replace({ pathname: '/recipe/[id]', params: { id } });
     }
+  }, [job]);
+  const error = job?.status === 'error' ? job.error : null;
+
+  const start = () => {
+    dismissAiJob();
+    void startAiJob({ name, description, diet: profile.diet }, { notify });
   };
 
-  const cancel = () => {
-    abort.current?.abort();
-    setRunning(false);
+  const toggleNotify = async () => {
+    if (!notify && !(await askNotifyPermission())) return;
+    setNotifyOn(!notify);
+    setNotify(!notify);
   };
 
-  if (running) return <Researching phase={phase} name={name || 'your dish'} onCancel={cancel} />;
+  const minimise = () => {
+    setMinimised(true);
+    if (router.canGoBack()) router.back();
+    else router.replace('/(tabs)');
+  };
+
+  if (running && job) return <Researching phase={job.phase} name={job.name} startedAt={job.startedAt} notify={notify} onNotify={toggleNotify} onMinimise={minimise} onCancel={cancelAiJob} />;
 
   const ready = name.trim().length >= 2 || description.trim().length >= 6;
   return (
@@ -140,12 +146,12 @@ function How({ icon, title, body }: { icon: keyof typeof Ionicons.glyphMap; titl
 }
 
 /** The wait screen: a slowly turning ring around a spark, the four steps ticking off, a timer and a rotating note. */
-function Researching({ phase, name, onCancel }: { phase: AiPhase; name: string; onCancel: () => void }) {
-  const [secs, setSecs] = useState(0);
+function Researching({ phase, name, startedAt, notify, onNotify, onMinimise, onCancel }: { phase: AiPhase; name: string; startedAt: number; notify: boolean; onNotify: () => void; onMinimise: () => void; onCancel: () => void }) {
+  const [secs, setSecs] = useState(() => Math.floor((Date.now() - startedAt) / 1000));
   useEffect(() => {
-    const t = setInterval(() => setSecs((s) => s + 1), 1000);
+    const t = setInterval(() => setSecs(Math.floor((Date.now() - startedAt) / 1000)), 1000);
     return () => clearInterval(t);
-  }, []);
+  }, [startedAt]);
   const spin = useSharedValue(0);
   const pulse = useSharedValue(0);
   useEffect(() => {
@@ -156,7 +162,8 @@ function Researching({ phase, name, onCancel }: { phase: AiPhase; name: string; 
   const core = useAnimatedStyle(() => ({ transform: [{ scale: 0.94 + pulse.value * 0.1 }] }));
   const at = PHASES.findIndex((p) => p.id === phase);
   const progress = Math.min(0.95, (at + 1 - Math.exp(-secs / 14)) / PHASES.length);
-  const mm = `${Math.floor(secs / 60)}:${String(secs % 60).padStart(2, '0')}`;
+  const mm = clock(secs);
+  const left = secondsLeft(phase, secs);
   const SIZE = 150;
 
   return (
@@ -179,7 +186,7 @@ function Researching({ phase, name, onCancel }: { phase: AiPhase; name: string; 
           <Text style={[type.h1, { color: colors.text, textAlign: 'center', marginTop: 22 }]} numberOfLines={2}>
             Researching {name}
           </Text>
-          <Text style={{ color: colors.muted, marginTop: 4, fontVariant: ['tabular-nums'] }}>{mm}</Text>
+          <Text style={{ color: colors.muted, marginTop: 4, fontVariant: ['tabular-nums'] }}>{mm} so far · about {left < 60 ? `${left} s` : `${Math.round(left / 60)} min`} left</Text>
         </Animated.View>
 
         <View style={styles.track}>
@@ -205,6 +212,14 @@ function Researching({ phase, name, onCancel }: { phase: AiPhase; name: string; 
         </View>
 
         <Text style={[type.small, { color: colors.faint, textAlign: 'center', marginTop: 26, minHeight: 36 }]}>{TIPS[Math.floor(secs / 5) % TIPS.length]}</Text>
+        <PressableScale onPress={onMinimise} style={styles.minimise} accessibilityLabel="Minimise and keep working in the background">
+          <Ionicons name="chevron-down" size={18} color={colors.text} />
+          <Text style={{ color: colors.text, fontWeight: '800' }}>Minimise</Text>
+        </PressableScale>
+        <PressableScale onPress={onNotify} style={{ alignSelf: 'center', flexDirection: 'row', alignItems: 'center', gap: 8, marginTop: 10, padding: 8 }} accessibilityLabel="Notify me when done">
+          <Ionicons name={notify ? 'notifications' : 'notifications-outline'} size={18} color={notify ? colors.accent : colors.muted} />
+          <Text style={{ color: notify ? colors.accent : colors.muted, fontWeight: '700' }}>{notify ? 'We’ll notify you when it’s done' : 'Notify me when it’s done'}</Text>
+        </PressableScale>
         <PressableScale onPress={onCancel} style={{ alignSelf: 'center', marginTop: 8, padding: 12 }} accessibilityLabel="Cancel">
           <Text style={{ color: colors.muted, fontWeight: '700' }}>Cancel</Text>
         </PressableScale>
@@ -218,6 +233,7 @@ const styles = StyleSheet.create({
   label: { color: colors.muted, fontSize: 12, fontWeight: '800', letterSpacing: 0.8, textTransform: 'uppercase', marginBottom: 8 },
   input: { color: colors.text, borderWidth: 1, borderColor: colors.border, borderRadius: radius.md, paddingHorizontal: 14, paddingVertical: 12, fontSize: 16, backgroundColor: 'rgba(255,255,255,0.03)' },
   count: { color: colors.faint, fontSize: 11, textAlign: 'right', marginTop: 6 },
+  minimise: { alignSelf: 'center', flexDirection: 'row', alignItems: 'center', gap: 8, marginTop: 14, paddingVertical: 12, paddingHorizontal: 22, borderRadius: radius.lg, borderWidth: 1, borderColor: colors.border, backgroundColor: colors.card },
   track: { height: 6, borderRadius: 3, backgroundColor: 'rgba(255,255,255,0.08)', marginTop: 28, overflow: 'hidden' },
   fill: { height: '100%', borderRadius: 3, overflow: 'hidden' },
 });

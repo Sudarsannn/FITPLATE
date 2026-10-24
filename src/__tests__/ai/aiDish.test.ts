@@ -50,6 +50,17 @@ describe('buildDish', () => {
     expect(dish.tags[0]).toBe('AI created');
   });
 
+  it('works out vitamins and minerals from the researched ingredients that matched', () => {
+    const { dish } = buildDish({ ...raw, ingredients: [...raw.ingredients, { name: 'Onion', quantity: 100, unit: 'g' }] }, ctx);
+    const matched = dish.ingredients.filter((i) => i.ingredientId && i.unit === 'g');
+    if (matched.length) {
+      expect(dish.microNutrientsEstimate).not.toBeNull();
+      expect(dish.microNutrientsEstimate!.coveragePct).toBeLessThanOrEqual(100);
+    } else {
+      expect(dish.microNutrientsEstimate).toBeNull();
+    }
+  });
+
   it('refuses a dish that is too thin to cook from', () => {
     expect(() => buildDish({ ...raw, steps: raw.steps.slice(0, 2) }, ctx)).toThrow(/too few steps/);
     expect(() => buildDish({ ...raw, ingredients: raw.ingredients.slice(0, 1) }, ctx)).toThrow(/too few ingredients/);

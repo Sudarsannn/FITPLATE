@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import { useServerResearch } from '../lib/researchLoader';
 import { loadAiDishes } from '../services/ai/store';
 import { syncSharedDishes } from '../services/ai/shared';
+import { AiJobBar } from '../components/AiJobBar';
 import { StoreProvider } from '../lib/store';
 import { colors } from '../theme';
 
@@ -55,6 +56,7 @@ export default function RootLayout() {
           <Stack.Screen name="photo-credits" options={{ animation: 'ios_from_right' }} />
           <Stack.Screen name="log" options={{ presentation: 'formSheet', sheetAllowedDetents: [0.75, 1], sheetGrabberVisible: true, sheetCornerRadius: 28, contentStyle: { backgroundColor: colors.bgElevated } }} />
         </Stack>
+        <AiJobBar />
       </StoreProvider>
     </GestureHandlerRootView>
   );
