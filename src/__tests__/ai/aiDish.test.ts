@@ -3,7 +3,7 @@ import { describe, expect, it } from '@jest/globals';
 import { getCustomDishes, getDish, researchDishes } from '../../data/research';
 import { createDishWithAi, findKnownAiDish } from '../../services/ai/client';
 import { applyShared, syncSharedDishes } from '../../services/ai/shared';
-import { buildDish, kcalFromMacros, matchIngredientId, type RawAiDish } from '../../services/ai/buildDish';
+import { buildDish, kcalFromMacros, matchIngredientId, shorten, type RawAiDish } from '../../services/ai/buildDish';
 import { loadAiDishes, saveAiDish, deleteAiDish } from '../../services/ai/store';
 
 const raw: RawAiDish = {
@@ -33,6 +33,16 @@ const raw: RawAiDish = {
 };
 
 const ctx = { id: 'ai-paneer-lababdar', number: 1001, request: 'rich paneer', mode: 'new' as const, basedOn: null, changes: [], sources: [{ title: 'Site', url: 'https://example.com/a' }], model: 'm', now: '2026-10-24T10:00:00.000Z' };
+
+describe('shorten', () => {
+  it('keeps whole sentences and drops looping padding', () => {
+    const junk = 'Do not soak for more than 20 minutes. Rinse gently. ' + 'clean setup. standard visual. fine finish. '.repeat(80);
+    const out = shorten(junk, 300);
+    expect(out).toBe('Do not soak for more than 20 minutes. Rinse gently. clean setup.');
+    expect(out.length).toBeLessThanOrEqual(300);
+    expect(shorten('A single very long sentence '.repeat(30), 100).length).toBeLessThanOrEqual(101);
+  });
+});
 
 describe('buildDish', () => {
   it('makes a researched-shape dish and checks what the AI said', () => {

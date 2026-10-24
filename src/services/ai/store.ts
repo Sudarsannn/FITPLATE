@@ -2,6 +2,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import { aliasDish, getCustomDishes, registerCustomDish, removeCustomDish, researchDishes } from '../../data/research';
 import type { Dish } from '../../models/research';
+import { tidyDish } from './buildDish';
 
 const nameKey = (n: string) => n.toLowerCase().replace(/[^a-z0-9]+/g, '');
 const KEY = 'fitplate.aiDishes.v1';
@@ -19,7 +20,7 @@ export async function loadAiDishes(storage: Storage = AsyncStorage): Promise<num
       if (!d || typeof d.id !== 'string' || !d.ai) continue;
       const real = researched.get(nameKey(d.name));
       if (real) aliasDish(d.id, real.id);
-      else registerCustomDish(d);
+      else registerCustomDish(tidyDish(d));
     }
     return list.length;
   } catch {

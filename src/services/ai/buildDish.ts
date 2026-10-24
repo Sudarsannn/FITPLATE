@@ -86,7 +86,46 @@ export function matchIngredientId(name: string): string | null {
 }
 
 const num = (v: unknown): number | null => (typeof v === 'number' && Number.isFinite(v) ? v : null);
-const str = (v: unknown): string | null => (typeof v === 'string' && v.trim() ? v.trim() : null);
+/** Keeps whole sentences up to `max` characters. The model sometimes loops and pads a field with hundreds of words; only the first sentences are real. */
+export function shorten(v: string, max: number, maxSentences = 3): string {
+  const t = v.replace(/\s+/g, ' ').trim();
+  if (t.length <= max) return t;
+  let out = '';
+  let n = 0;
+  const seen = new Set<string>();
+  for (const sentence of t.split(/(?<=[.!?])\s+/)) {
+    const k = sentence.toLowerCase();
+    if (seen.has(k)) continue;
+    seen.add(k);
+    if (n >= maxSentences || (out + ' ' + sentence).trim().length > max) break;
+    out = (out + ' ' + sentence).trim();
+    n++;
+  }
+  if (out) return out;
+  const cut = t.slice(0, max);
+  return cut.slice(0, Math.max(cut.lastIndexOf(' '), 20)).replace(/[,;:\s]+$/, '') + '.';
+}
+
+const LIMITS = { title: 80, text: 600, tip: 260, watchOut: 300, funFact: 260, visualCue: 260, cameraCheck: 200, videoShot: 200 } as const;
+const str = (v: unknown, max = 400): string | null => (typeof v === 'string' && v.trim() ? shorten(v, max) : null);
+
+/** Trims the text fields of an AI dish's steps. Used on new dishes and on ones saved before the trimming existed. */
+export function tidyDish(d: Dish): Dish {
+  return {
+    ...d,
+    steps: d.steps.map((st) => ({
+      ...st,
+      title: st.title ? shorten(st.title, LIMITS.title) : st.title,
+      text: shorten(st.text, LIMITS.text, 6),
+      tip: st.tip ? shorten(st.tip, LIMITS.tip) : st.tip,
+      watchOut: st.watchOut ? shorten(st.watchOut, LIMITS.watchOut) : st.watchOut,
+      funFact: st.funFact ? shorten(st.funFact, LIMITS.funFact) : st.funFact,
+      visualCue: st.visualCue ? shorten(st.visualCue, LIMITS.visualCue) : st.visualCue,
+      cameraCheck: st.cameraCheck ? shorten(st.cameraCheck, LIMITS.cameraCheck) : st.cameraCheck,
+      videoShot: st.videoShot ? shorten(st.videoShot, LIMITS.videoShot) : st.videoShot,
+    })),
+  };
+}
 
 /** Slug id for an AI dish, unique against the dishes already known. */
 export function aiDishId(name: string, taken: (id: string) => boolean): string {
@@ -122,15 +161,15 @@ export function buildDish(
 
   const steps: DishStep[] = raw.steps.map((s, n) => ({
     n: n + 1,
-    title: str(s.title),
-    text: s.text.trim(),
+    title: str(s.title, LIMITS.title),
+    text: shorten(s.text, LIMITS.text, 6),
     timerSec: typeof s.timerSec === 'number' && s.timerSec > 0 && s.timerSec <= 7200 ? Math.round(s.timerSec) : null,
-    tip: str(s.tip),
-    watchOut: str(s.watchOut),
-    funFact: str(s.funFact),
-    visualCue: str(s.visualCue),
-    cameraCheck: str(s.cameraCheck),
-    videoShot: str(s.videoShot),
+    tip: str(s.tip, LIMITS.tip),
+    watchOut: str(s.watchOut, LIMITS.watchOut),
+    funFact: str(s.funFact, LIMITS.funFact),
+    visualCue: str(s.visualCue, LIMITS.visualCue),
+    cameraCheck: str(s.cameraCheck, LIMITS.cameraCheck),
+    videoShot: str(s.videoShot, LIMITS.videoShot),
   }));
 
   // Allergens come from the ingredients; the AI's list can only add to them.
