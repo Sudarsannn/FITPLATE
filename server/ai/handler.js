@@ -51,7 +51,7 @@ const versionOf = (name) => {
 /**
  * The free "flash" models this key can use, newest first, asked from Google
  * itself so a retired model never breaks the feature. Stable releases come
- * before previews of the same version. Cached for an hour per Worker instance.
+ * before previews, since previews have the tightest free limits. Cached for an hour per Worker instance.
  */
 export async function discoverModels(env, fetchImpl) {
   if (modelCache.list.length && Date.now() - modelCache.at < 3_600_000) return modelCache.list;
@@ -64,7 +64,7 @@ export async function discoverModels(env, fetchImpl) {
       .map((m) => String(m.name).replace(/^models\//, ''))
       .filter((n) => /^gemini-[\d.]+-flash(-\d+)?$|^gemini-[\d.]+-flash-(preview|latest)/.test(n) || /^gemini-[\d.]+-flash$/.test(n))
       .filter((n) => !/(image|tts|live|audio|thinking|exp|lite|8b|robotics|computer)/.test(n))
-      .sort((a, b) => versionOf(b) - versionOf(a) || Number(/preview/.test(a)) - Number(/preview/.test(b)) || a.localeCompare(b));
+      .sort((a, b) => Number(/preview/.test(a)) - Number(/preview/.test(b)) || versionOf(b) - versionOf(a) || a.localeCompare(b)); // stable first: previews have the tightest free limits
     // A lite model is the last resort when nothing else is left.
     const lite = (data.models ?? [])
       .map((m) => String(m.name).replace(/^models\//, ''))
@@ -104,7 +104,14 @@ export async function callGemini({ env, fetchImpl, system, prompt, schema, searc
         continue;
       }
       if (res.status === 429) {
-        last = new AiError(429, 'quota', 'The free AI allowance is used up for now. Try again later.');
+        let why = '';
+        try {
+          why = String((await res.json())?.error?.message ?? '').replace(/\s+/g, ' ').slice(0, 220);
+        } catch {
+          /* no body */
+        }
+        last = new AiError(429, 'quota', `The free AI allowance is used up for now (${model}${why ? `: ${why}` : ''}). Try again later.`);
+        first = first ?? last;
         break; // next model has its own allowance
       }
       if (res.status === 503 || res.status === 500) {
@@ -138,7 +145,7 @@ export async function callGemini({ env, fetchImpl, system, prompt, schema, searc
     }
   }
   // The first failure is the real one: later models only fail because the first did.
-  throw (last?.code === 'quota' ? last : first ?? last) ?? new AiError(502, 'upstream', 'The AI service is unavailable.');
+  throw (first ?? last) ?? new AiError(502, 'upstream', 'The AI service is unavailable.');
 }
 
 export class AiError extends Error {
@@ -147,6 +154,32 @@ export class AiError extends Error {
     this.status = status;
     this.code = code;
   }
+}
+
+/** Tries each usable model with a tiny request (and one with Google Search) and reports what Google says. For diagnosing from /api/ai/status?check=1&test=1. */
+export async function probe(env, fetchImpl) {
+  const out = [];
+  const models = (env.GEMINI_MODEL ? [env.GEMINI_MODEL] : await discoverModels(env, fetchImpl)).slice(0, 6);
+  for (const model of models) {
+    for (const search of [false, true]) {
+      const body = { contents: [{ role: 'user', parts: [{ text: 'Reply with the word OK.' }] }], generationConfig: { maxOutputTokens: 20 }, ...(search ? { tools: [{ google_search: {} }] } : {}) };
+      try {
+        const res = await fetchImpl(`${GEMINI}/${model}:generateContent`, { method: 'POST', headers: { 'content-type': 'application/json', 'x-goog-api-key': env.GEMINI_API_KEY }, body: JSON.stringify(body) });
+        let why = '';
+        if (!res.ok) {
+          try {
+            why = String((await res.json())?.error?.message ?? '').replace(/\s+/g, ' ').slice(0, 200);
+          } catch {
+            /* no body */
+          }
+        }
+        out.push({ model, search, status: res.status, why });
+      } catch {
+        out.push({ model, search, status: 0, why: 'network' });
+      }
+    }
+  }
+  return out;
 }
 
 // ----------------------------------------------------------------- prompts
@@ -476,6 +509,7 @@ export async function handleAi(request, env, fetchImpl = fetch) {
       const out = { ok: true, configured: Boolean(env.GEMINI_API_KEY), queue: Boolean(env.GITHUB_TOKEN), model: env.GEMINI_MODEL || 'auto' };
       // ?check=1 asks Google which free models this key can use right now.
       if (url.searchParams.get('check') && env.GEMINI_API_KEY) out.available = env.GEMINI_MODEL ? [env.GEMINI_MODEL] : await discoverModels(env, fetchImpl);
+      if (url.searchParams.get('test') && env.GEMINI_API_KEY) out.probe = await probe(env, fetchImpl);
       return json(out);
     }
     const ctx = { env, fetchImpl };

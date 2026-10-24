@@ -39,7 +39,7 @@ describe('AI server handler', () => {
 
   const LIST = { models: ['gemini-2.5-flash', 'gemini-3-flash-preview', 'gemini-3-flash', 'gemini-2.5-flash-lite', 'gemini-2.5-flash-image', 'gemini-2.5-pro', 'embedding-001'].map((n) => ({ name: `models/${n}`, supportedGenerationMethods: n === 'embedding-001' ? ['embedContent'] : ['generateContent'] })) };
 
-  it('asks Google which models exist and tries the newest stable flash first, lite last', async () => {
+  it('asks Google which models exist and tries stable models first, newest first, previews then lite last', async () => {
     const tried: string[] = [];
     const fetchImpl = async (u: string) => {
       if (u.includes('/models?')) return { ok: true, status: 200, json: async () => LIST } as any;
@@ -47,8 +47,8 @@ describe('AI server handler', () => {
       return tried.length < 3 ? ({ ok: false, status: tried.length === 1 ? 404 : 429, json: async () => ({ error: { message: 'gone' } }) } as any) : gem('ok');
     };
     const r = await callGemini({ env: { GEMINI_API_KEY: 'k' }, fetchImpl, system: 's', prompt: 'p', schema: undefined, search: false });
-    expect(tried).toEqual(['gemini-3-flash', 'gemini-3-flash-preview', 'gemini-2.5-flash']);
-    expect(r.model).toBe('gemini-2.5-flash');
+    expect(tried).toEqual(['gemini-3-flash', 'gemini-2.5-flash', 'gemini-3-flash-preview']);
+    expect(r.model).toBe('gemini-3-flash-preview');
   });
 
   it('reports the first real failure, with Google\'s reason', async () => {
@@ -105,6 +105,17 @@ describe('AI server handler', () => {
     expect(b.requests).toBe(2);
     expect(put[1].sha).toBe('sha1');
     expect(put[1].branch).toBe('ai-dish-queue');
+  });
+
+  it('test=1 probes every usable model with and without Google Search and reports what Google says', async () => {
+    const fetchImpl = async (u: string, init?: any) => {
+      if (u.includes('/models?')) return { ok: true, status: 200, json: async () => LIST } as any;
+      const search = JSON.parse(init.body).tools != null;
+      return search ? ({ ok: false, status: 429, json: async () => ({ error: { message: 'quota: limit 0' } }) } as any) : ({ ok: true, status: 200, json: async () => ({}) } as any);
+    };
+    const body = await (await handleAi(new Request('https://x.test/api/ai/status?check=1&test=1'), { GEMINI_API_KEY: 'k' }, fetchImpl as any)).json();
+    expect(body.probe[0]).toMatchObject({ model: 'gemini-3-flash', search: false, status: 200 });
+    expect(body.probe[1]).toMatchObject({ search: true, status: 429, why: 'quota: limit 0' });
   });
 
   it('library: reads every queue file in one call and hides researched ones', async () => {
