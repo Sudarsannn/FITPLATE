@@ -126,8 +126,14 @@ export function onResearchChange(listener: () => void): () => void {
   return () => listeners.delete(listener);
 }
 
+/** An AI dish id that the researched dish has since replaced, so old logs, favourites and plans still open. */
+const idAliases = new Map<string, string>();
+export function aliasDish(from: string, to: string): void {
+  idAliases.set(from, to);
+}
+
 export function getDish(id: string): Dish | undefined {
-  return dishById.get(id);
+  return dishById.get(id) ?? dishById.get(idAliases.get(id) ?? '');
 }
 
 export function getIngredient(id: string): Ingredient | undefined {

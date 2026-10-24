@@ -13,11 +13,12 @@
  */
 import { getDish, getCustomDishes, researchDishes } from '../../data/research';
 import type { Dish } from '../../models/research';
+import { matchDish } from '../vendors/match';
 import { aiDishId, AiDishError, buildDish, type RawAiDish } from './buildDish';
 import { saveAiDish } from './store';
 
-/** The FitPlate server that fronts the AI. Override with EXPO_PUBLIC_FITPLATE_AI_URL (no trailing slash). */
-export const AI_BASE_URL: string = (process.env.EXPO_PUBLIC_FITPLATE_AI_URL || 'https://fitplate.sudarsanmohanchander.workers.dev').replace(/\/+$/, '');
+import { AI_BASE_URL } from './config';
+export { AI_BASE_URL };
 
 export type AiPhase = 'matching' | 'researching' | 'writing' | 'saving';
 export const PHASES: { id: AiPhase; label: string; detail: string }[] = [
@@ -83,6 +84,14 @@ export function baseSummary(d: Dish) {
 
 type PlanOut = { mode: 'existing' | 'variation' | 'new'; baseDishId: string | null; canonicalName: string; summary: string; changes: string[]; searchQueries: string[] };
 
+/** An AI dish (this device's or the shared library's) that is the same dish by name, or null. */
+export function findKnownAiDish(query: string): Dish | null {
+  const q = query.trim();
+  if (q.length < 3) return null;
+  const m = matchDish(q, getCustomDishes());
+  return m && m.score >= 0.75 ? m.dish : null;
+}
+
 export async function createDishWithAi(input: CreateInput, opts: { onPhase?: (p: AiPhase) => void; fetchImpl?: Fetch; signal?: AbortSignal; saveImpl?: typeof saveAiDish } = {}): Promise<CreateResult> {
   const f = opts.fetchImpl ?? fetch;
   const on = opts.onPhase ?? (() => {});
@@ -91,6 +100,9 @@ export async function createDishWithAi(input: CreateInput, opts: { onPhase?: (p:
   if (name.length < 2 && description.length < 6) throw new AiRequestError('Tell us a little about the dish first.', 'bad-request');
 
   on('matching');
+  // Somebody may already have asked for this dish: the shared library is free and instant.
+  const known = findKnownAiDish(name || description);
+  if (known) return { kind: 'existing', dish: known };
   const { plan } = await post<{ plan: PlanOut }>('/api/ai/plan', { name, description, diet: input.diet, catalog: catalogOf(researchDishes.concat(getCustomDishes().filter((d) => !researchDishes.includes(d)))) }, f, opts.signal);
   const base = plan.baseDishId ? getDish(plan.baseDishId) ?? null : null;
   if (plan.mode === 'existing' && base) return { kind: 'existing', dish: base };

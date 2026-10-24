@@ -6,13 +6,14 @@ import { useEffect } from 'react';
 
 import { useServerResearch } from '../lib/researchLoader';
 import { loadAiDishes } from '../services/ai/store';
+import { syncSharedDishes } from '../services/ai/shared';
 import { StoreProvider } from '../lib/store';
 import { colors } from '../theme';
 
 export default function RootLayout() {
   useServerResearch();
   useEffect(() => {
-    loadAiDishes();
+    loadAiDishes().then(() => syncSharedDishes());
   }, []);
   return (
     <GestureHandlerRootView style={{ flex: 1, backgroundColor: colors.bg }}>

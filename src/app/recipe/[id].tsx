@@ -359,11 +359,12 @@ function AiDishNotice({ dish }: { dish: Dish }) {
     <View style={[styles.card, { flexDirection: 'row', gap: 12 }]}>
       <IconBadge name="sparkles-outline" color={colors.violet} size={40} />
       <View style={{ flex: 1, gap: 6 }}>
-        <Text style={styles.cardTitle}>Created for you by FitPlate AI</Text>
+        <Text style={styles.cardTitle}>{ai.shared ? 'Created by FitPlate AI for another cook' : 'Created for you by FitPlate AI'}</Text>
         <Text style={styles.note}>
           {ai.basedOn ? `Built from our researched ${ai.basedOn.name}${ai.changes.length ? `, with these changes: ${ai.changes.join('; ')}` : ''}, checked against recipes online.` : 'Researched from several recipes online, using the same method as our own dishes.'} Our daily research will verify it.
         </Text>
         {ai.needsMoreResearch.length ? <Text style={styles.note}>Still to confirm: {ai.needsMoreResearch.join('; ')}.</Text> : null}
+        {ai.shared ? null : (
         <PressableScale
           onPress={async () => {
             await deleteAiDish(dish.id);
@@ -373,6 +374,7 @@ function AiDishNotice({ dish }: { dish: Dish }) {
         >
           <Text style={[styles.note, { color: colors.bad, fontWeight: '700' }]}>Delete this dish</Text>
         </PressableScale>
+        )}
       </View>
     </View>
   );

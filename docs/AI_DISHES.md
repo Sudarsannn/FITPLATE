@@ -9,6 +9,13 @@ Cook tab, top card: "Create your own dish with AI". The user names and describes
 
 The Analyse my Swiggy Checkout page has the same button for cart items with no recipe.
 
+## Shared library and replacement
+
+- Every AI dish is shared: `GET /api/ai/library` returns the queue's dishes that research has not replaced (cached 10 minutes), and every app lists them in Cook on start-up (cached on the device for offline). Before calling the AI, creation looks for the same dish by name there, so nobody generates it twice.
+- They log like any dish ("cooked by you", My Meals, Today totals); AI dishes have no order price, so no money-saved figure.
+- When the daily research ships a researched dish with the same name, the app shows that one and drops the AI draft. The old AI dish id keeps opening (as the researched dish), so logs, favourites and plans survive. The research must keep the queue entry's exact name (PATCH_07).
+- The shared list is capped at 200 dishes, most requested first.
+
 ## Which AI
 
 Google Gemini through the Gemini API free tier (no card, no expiry, rate limits only). The server asks Google which models the key can use and picks the newest stable Flash model, then falls back to older ones (and a Flash-Lite last) when one is retired or out of allowance, so a retired model never breaks it. `https://<your-address>/api/ai/status?check=1` lists them. To force one, set the Worker variable `GEMINI_MODEL` (and optionally `GEMINI_FALLBACK_MODELS`, comma separated). Free-tier requests can be used by Google to improve its products; FitPlate only sends the dish text and the researched dish names, never names, emails or health data.
@@ -34,5 +41,5 @@ Check it: open `https://fitplate.sudarsanmohanchander.workers.dev/api/ai/status`
 ## Limits to know
 
 - Anyone with the app address can call the AI endpoints. The key stays secret and the free tier has no bill, so the worst case is the allowance running out. If that happens, add a check (Firebase sign-in token) in `worker/index.js`.
-- AI dishes live on the device they were created on. Deleting the app deletes them; the queue copy stays.
+- Your own AI dishes are stored on the device and are also in the shared library (if the research queue is switched on), so a reinstall gets them back.
 - It is a first draft. The recipe page says so, lists what the AI could not confirm, and the daily research verifies it.

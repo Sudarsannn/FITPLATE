@@ -1,6 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-import { getCustomDishes, registerCustomDish, removeCustomDish, researchDishes } from '../../data/research';
+import { aliasDish, getCustomDishes, registerCustomDish, removeCustomDish, researchDishes } from '../../data/research';
 import type { Dish } from '../../models/research';
 
 const nameKey = (n: string) => n.toLowerCase().replace(/[^a-z0-9]+/g, '');
@@ -14,8 +14,13 @@ export async function loadAiDishes(storage: Storage = AsyncStorage): Promise<num
     const raw = await storage.getItem(KEY);
     const list: Dish[] = raw ? JSON.parse(raw) : [];
     // Once daily research has produced the real dish, it replaces the user's AI draft of the same name.
-    const researched = new Set(researchDishes.filter((d) => !d.ai).map((d) => nameKey(d.name)));
-    for (const d of list) if (d && typeof d.id === 'string' && d.ai && !researched.has(nameKey(d.name))) registerCustomDish(d);
+    const researched = new Map(researchDishes.filter((d) => !d.ai).map((d) => [nameKey(d.name), d]));
+    for (const d of list) {
+      if (!d || typeof d.id !== 'string' || !d.ai) continue;
+      const real = researched.get(nameKey(d.name));
+      if (real) aliasDish(d.id, real.id);
+      else registerCustomDish(d);
+    }
     return list.length;
   } catch {
     return 0;
@@ -24,7 +29,7 @@ export async function loadAiDishes(storage: Storage = AsyncStorage): Promise<num
 
 async function persist(storage: Storage) {
   try {
-    await storage.setItem(KEY, JSON.stringify(getCustomDishes()));
+    await storage.setItem(KEY, JSON.stringify(getCustomDishes().filter((d) => !d.ai?.shared)));
   } catch {
     /* the dish stays for this session even if the device refuses to store it */
   }

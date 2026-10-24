@@ -9,6 +9,7 @@
  *   POST /api/ai/research  search the web (Google Search grounding) for the dish
  *   POST /api/ai/compose   write the full dish in FitPlate's research shape (JSON)
  *   POST /api/ai/submit    save the finished dish to the research queue (GitHub)
+ *   GET  /api/ai/library   AI dishes not yet researched, shared with every user
  *   GET  /api/ai/status    is the key configured (no secrets returned)
  *
  * Secrets (Cloudflare dashboard, Settings, Variables and Secrets):
@@ -422,6 +423,47 @@ export async function submit(body, ctx) {
   return { saved: true, slug, requests: content.requests };
 }
 
+// ----------------------------------------------------------------- shared library
+
+/**
+ * Every AI dish not yet replaced by researched content, for the app to offer
+ * to everyone so nobody regenerates a dish somebody already asked for. One
+ * GraphQL call reads all queue files at once. Cached for 10 minutes.
+ */
+export async function library(ctx, cacheStore) {
+  const { env, fetchImpl } = ctx;
+  if (!env.GITHUB_TOKEN) return { dishes: [], reason: 'queue-not-configured' };
+  const cacheKey = new Request('https://fitplate.internal/ai-library');
+  const hit = cacheStore ? await cacheStore.match(cacheKey) : null;
+  if (hit) return hit.json();
+  const repo = env.GITHUB_REPO || 'sudarsannn/fitplate';
+  const [owner, name] = repo.split('/');
+  const branch = env.QUEUE_BRANCH || 'ai-dish-queue';
+  const res = await fetchImpl('https://api.github.com/graphql', {
+    method: 'POST',
+    headers: { authorization: `Bearer ${env.GITHUB_TOKEN}`, 'content-type': 'application/json', 'user-agent': 'fitplate-ai-queue' },
+    body: JSON.stringify({ query: `query($o:String!,$n:String!,$e:String!){repository(owner:$o,name:$n){object(expression:$e){... on Tree{entries{name object{... on Blob{text}}}}}}}`, variables: { o: owner, n: name, e: `${branch}:queue` } }),
+  });
+  if (!res.ok) throw new AiError(502, 'queue', `GitHub answered ${res.status}.`);
+  const data = await res.json();
+  const entries = data?.data?.repository?.object?.entries ?? [];
+  const dishes = [];
+  for (const e of entries) {
+    if (!/\.json$/.test(e.name) || !e.object?.text) continue;
+    try {
+      const q = JSON.parse(e.object.text);
+      if (q.status === 'researched' || !q.dish?.name) continue;
+      dishes.push({ slug: q.slug, name: q.name, mode: q.mode, basedOn: q.basedOn ?? null, changes: q.changes ?? [], sources: q.sources ?? [], model: q.model ?? '', requests: q.requests ?? 1, firstRequestedAt: q.firstRequestedAt, dish: q.dish });
+    } catch {
+      /* skip a damaged file */
+    }
+  }
+  dishes.sort((a, b) => (b.requests ?? 1) - (a.requests ?? 1)).splice(200);
+  const body = { dishes };
+  if (cacheStore) await cacheStore.put(cacheKey, new Response(JSON.stringify(body), { headers: { 'cache-control': 'max-age=600', 'content-type': 'application/json' } }));
+  return body;
+}
+
 // ----------------------------------------------------------------- router
 
 /** Route one request. `env` carries the secrets; `fetchImpl` defaults to global fetch. */
@@ -436,8 +478,12 @@ export async function handleAi(request, env, fetchImpl = fetch) {
       if (url.searchParams.get('check') && env.GEMINI_API_KEY) out.available = env.GEMINI_MODEL ? [env.GEMINI_MODEL] : await discoverModels(env, fetchImpl);
       return json(out);
     }
-    if (request.method !== 'POST') return json({ error: 'not-found', message: 'Not found.' }, 404);
     const ctx = { env, fetchImpl };
+    if (route === '/api/ai/library' && request.method === 'GET') {
+      const store = typeof caches !== 'undefined' && caches.default ? caches.default : null;
+      return json({ ok: true, ...(await library(ctx, store)) });
+    }
+    if (request.method !== 'POST') return json({ error: 'not-found', message: 'Not found.' }, 404);
     if (route === '/api/ai/plan') return json({ ok: true, ...(await plan(await readBody(request), ctx)) });
     if (route === '/api/ai/research') return json({ ok: true, ...(await research(await readBody(request), ctx)) });
     if (route === '/api/ai/compose') return json({ ok: true, ...(await compose(await readBody(request), ctx)) });

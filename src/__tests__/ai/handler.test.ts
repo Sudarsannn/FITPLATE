@@ -107,6 +107,21 @@ describe('AI server handler', () => {
     expect(put[1].branch).toBe('ai-dish-queue');
   });
 
+  it('library: reads every queue file in one call and hides researched ones', async () => {
+    const calls: string[] = [];
+    const file = (name: string, status: string) => ({ name: `${name}.json`, object: { text: JSON.stringify({ slug: name, name, status, requests: name === 'a' ? 5 : 1, dish: { name } }) } });
+    const fetchImpl = async (u: string) => {
+      calls.push(u);
+      return { ok: true, status: 200, json: async () => ({ data: { repository: { object: { entries: [file('b', 'pending-research'), file('a', 'pending-research'), file('c', 'researched'), { name: 'x.txt', object: { text: 'no' } }] } } } }) } as any;
+    };
+    const res = await handleAi(new Request('https://x.test/api/ai/library'), { GEMINI_API_KEY: 'k', GITHUB_TOKEN: 't' }, fetchImpl as any);
+    const body = await res.json();
+    expect(calls).toEqual(['https://api.github.com/graphql']);
+    expect(body.dishes.map((d: any) => d.slug)).toEqual(['a', 'b']); // most asked for first, researched hidden
+    const none = await (await handleAi(new Request('https://x.test/api/ai/library'), { GEMINI_API_KEY: 'k' })).json();
+    expect(none.dishes).toEqual([]);
+  });
+
   it('slugifies names', () => {
     expect(slugify('Paneer Lababdar (rich)!')).toBe('paneer-lababdar-rich');
   });

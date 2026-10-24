@@ -1,7 +1,8 @@
 import { describe, expect, it } from '@jest/globals';
 
 import { getCustomDishes, getDish, researchDishes } from '../../data/research';
-import { createDishWithAi } from '../../services/ai/client';
+import { createDishWithAi, findKnownAiDish } from '../../services/ai/client';
+import { applyShared, syncSharedDishes } from '../../services/ai/shared';
 import { buildDish, kcalFromMacros, matchIngredientId, type RawAiDish } from '../../services/ai/buildDish';
 import { loadAiDishes, saveAiDish, deleteAiDish } from '../../services/ai/store';
 
@@ -134,5 +135,39 @@ describe('createDishWithAi', () => {
     }) as unknown as typeof fetch;
     const r = await createDishWithAi({ name: 'Test dish', description: 'test' }, { fetchImpl, saveImpl: async () => {} });
     expect(r.kind === 'created' && r.queued).toBe(false);
+  });
+});
+
+describe('shared AI library', () => {
+  // imported late so the registry state from the tests above is what it sees
+  it('lists shared dishes for everyone, skips known ones and retires replaced ones', async () => {
+    const entry = { slug: 'paneer-lababdar', name: 'Paneer Lababdar', mode: 'new' as const, basedOn: null, changes: [], sources: [], model: 'm', requests: 3, dish: raw };
+    expect(applyShared([entry])).toBe(1);
+    const d = getDish('ai-paneer-lababdar')!;
+    expect(d.ai?.shared).toBe(true);
+    expect(d.ai?.requests).toBe(3);
+    expect(applyShared([entry])).toBe(0); // already there
+    expect(findKnownAiDish('paneer lababdar')?.id).toBe('ai-paneer-lababdar');
+    expect(findKnownAiDish('zzz unknown dish')).toBeNull();
+
+    // a researched dish with the same name replaces it, and the old id still opens
+    const real = researchDishes.find((x) => !x.ai)!;
+    applyShared([{ ...entry, slug: 'poha-copy', name: real.name }]);
+    expect(getDish('ai-poha-copy')?.id).toBe(real.id);
+
+    // sync caches the server's list and survives being offline
+    const mem = new Map<string, string>();
+    const storage = { getItem: async (k: string) => mem.get(k) ?? null, setItem: async (k: string, v: string) => void mem.set(k, v) };
+    const ok = (async () => ({ ok: true, json: async () => ({ dishes: [{ ...entry, slug: 'other-dish', name: 'Other Dish' }] }) })) as unknown as typeof fetch;
+    expect(await syncSharedDishes({ fetchImpl: ok, storage })).toBe(1);
+    expect(mem.get('fitplate.sharedAi.v1')).toContain('other-dish');
+    const offline = (async () => { throw new Error('offline'); }) as unknown as typeof fetch;
+    await expect(syncSharedDishes({ fetchImpl: offline, storage })).resolves.toBeGreaterThanOrEqual(0);
+  });
+
+  it('creation returns an existing shared dish without calling the AI', async () => {
+    const fetchImpl = (async () => { throw new Error('should not be called'); }) as unknown as typeof fetch;
+    const r = await createDishWithAi({ name: 'Paneer Lababdar', description: 'again' }, { fetchImpl });
+    expect(r.kind).toBe('existing');
   });
 });
