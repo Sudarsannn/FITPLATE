@@ -1,0 +1,748 @@
+{
+  "id": "jumping-jacks",
+  "number": 6,
+  "name": "Jumping jacks (with a low-impact step-jack version)",
+  "otherNames": [
+    "Star jumps",
+    "Side-straddle hop",
+    "Step jacks",
+    "No-jump jacks",
+    "March jacks",
+    "Low-impact jumping jacks"
+  ],
+  "section": "home",
+  "type": "cardio",
+  "equipment": [],
+  "noEquipmentAlternative": "No equipment needed; a yoga mat or thick rug helps muffle noise, and step jacks or arms-only jacks replace the jump in a flat with neighbours below.",
+  "musclesPrimary": [
+    "quadriceps (rectus femoris, vastus lateralis, vastus medialis, vastus intermedius)",
+    "gluteus maximus",
+    "cardiovascular system (heart and lungs)"
+  ],
+  "musclesSecondary": [
+    "hamstrings",
+    "gastrocnemius",
+    "soleus",
+    "gluteus medius",
+    "gluteus minimus",
+    "hip adductors",
+    "deltoids",
+    "trapezius",
+    "serratus anterior",
+    "rectus abdominis",
+    "obliques",
+    "transversus abdominis"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 4.8,
+  "compendiumCode": "02005",
+  "metOptions": [
+    {
+      "code": "02005",
+      "met": 4.8,
+      "activity": "MET: 4.8, Compendium code 02005, \"aerobic dance, low impact, moderate effort\" (2024 Adult Compendium of Physical Activities). This is the closest low-impact aerobic code to the beginner step-jack pres"
+    },
+    {
+      "code": "02020",
+      "met": 7.5,
+      "activity": "Extras (text only, not used in the JSON): the standard jump version at vigorous effort maps to 02020, \"calisthenics (e.g., push-ups, sit-ups, pull-ups, jumping jacks, burpees, battling ropes), vigorou"
+    },
+    {
+      "code": "02024",
+      "met": 2.8,
+      "activity": "Extras (text only, not used in the JSON): the standard jump version at vigorous effort maps to 02020, \"calisthenics (e.g., push-ups, sit-ups, pull-ups, jumping jacks, burpees, battling ropes), vigorou"
+    },
+    {
+      "code": "02022",
+      "met": 3.8,
+      "activity": "Extras (text only, not used in the JSON): the standard jump version at vigorous effort maps to 02020, \"calisthenics (e.g., push-ups, sit-ups, pull-ups, jumping jacks, burpees, battling ropes), vigorou"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "about 15-20 low-impact step jacks (30 s)",
+      "timeSec": 30,
+      "restSec": 40,
+      "tempo": "1 rep about 2 s, steady",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 4,
+      "reps": "about 15-20 low-impact step jacks (30 s, as a circuit station)",
+      "timeSec": 30,
+      "restSec": 30,
+      "tempo": "1 rep about 2 s, steady",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 4,
+      "reps": "30 s step jacks, or one 5 minute continuous block at easy-to-moderate pace",
+      "timeSec": 30,
+      "restSec": 25,
+      "tempo": "1 rep about 2 s, steady",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "40 s standard jumping jacks",
+      "timeSec": 40,
+      "restSec": 30,
+      "tempo": "about 1 rep per second",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "fat_loss",
+      "sets": 4,
+      "reps": "40 s jumping jacks in a circuit with squats and lunges",
+      "timeSec": 40,
+      "restSec": 30,
+      "tempo": "about 1 rep per second",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 4,
+      "reps": "60 s jumping jacks",
+      "timeSec": 60,
+      "restSec": 30,
+      "tempo": "about 1 rep per second",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "fat_loss",
+      "sets": 8,
+      "reps": "20 s fast jumping jacks, vigorous effort",
+      "timeSec": 20,
+      "restSec": 10,
+      "tempo": "fast, controlled",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "endurance",
+      "sets": 4,
+      "reps": "90 s jumping jacks or plank jacks in a circuit",
+      "timeSec": 90,
+      "restSec": 30,
+      "tempo": "about 1 rep per second",
+      "perWeek": 3
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "front",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "closed",
+        "joint": "shoulder abduction (hip-shoulder-elbow), both sides",
+        "angleDeg": "<= 40",
+        "parsed": {
+          "op": "<=",
+          "value": 40,
+          "max": null
+        }
+      },
+      {
+        "name": "open",
+        "joint": "shoulder abduction (hip-shoulder-elbow), both sides",
+        "angleDeg": ">= 150",
+        "parsed": {
+          "op": ">=",
+          "value": 150,
+          "max": null
+        }
+      },
+      {
+        "name": "closed_feet",
+        "joint": "ankle distance as multiple of hip width (ratio, not an angle)",
+        "angleDeg": "<= 1.2",
+        "parsed": {
+          "op": "<=",
+          "value": 1.2,
+          "max": null
+        }
+      },
+      {
+        "name": "open_feet",
+        "joint": "ankle distance as multiple of hip width (ratio, not an angle)",
+        "angleDeg": ">= 1.5",
+        "parsed": {
+          "op": ">=",
+          "value": 1.5,
+          "max": null
+        }
+      },
+      {
+        "name": "landing_knee",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": "150-175",
+        "parsed": {
+          "op": "between",
+          "value": 150,
+          "max": 175
+        }
+      }
+    ],
+    "minRepSec": 0.8
+  },
+  "formChecks": [
+    {
+      "joint": "shoulder",
+      "rule": "shoulder abduction angle < 150 degrees at open phase (equals open phase threshold): not counted, flagged",
+      "message": "Reach higher: arms overhead"
+    },
+    {
+      "joint": "shoulder",
+      "rule": "shoulder abduction angle > 40 degrees at closed phase (equals closed phase threshold)",
+      "message": "Bring your arms all the way down"
+    },
+    {
+      "joint": "ankle",
+      "rule": "ankle distance < 1.5 x hip width at open phase (equals open feet threshold)",
+      "message": "Step or jump wider"
+    },
+    {
+      "joint": "ankle",
+      "rule": "ankle distance > 1.2 x hip width at closed phase (equals closed feet threshold)",
+      "message": "Bring your feet back together"
+    },
+    {
+      "joint": "knee",
+      "rule": "knee angle > 175 degrees at landing (above landing_knee range)",
+      "message": "Soft knees on landing"
+    },
+    {
+      "joint": "knee",
+      "rule": "knee angle < 150 degrees at landing (below landing_knee range)",
+      "message": "Stay lighter: don't sink into a squat"
+    },
+    {
+      "joint": "knee",
+      "rule": "front view: knee landmark inside the hip-ankle line beyond margin (flag, not an angle)",
+      "message": "Knees over your toes"
+    },
+    {
+      "joint": "ankle",
+      "rule": "hard-landing flag: ankle or hip vertical speed spikes at landing (separate flag)",
+      "message": "Quieter feet: land softly"
+    },
+    {
+      "joint": "shoulder",
+      "rule": "left and right shoulder angles differ by more than 30 degrees at open phase",
+      "message": "Raise both arms together"
+    },
+    {
+      "joint": "shoulder",
+      "rule": "shrug flag: shoulder landmarks rise toward ears beyond margin (separate flag)",
+      "message": "Shoulders down"
+    },
+    {
+      "joint": "hip",
+      "rule": "rep duration < 0.8 s",
+      "message": "Slow down a little"
+    }
+  ],
+  "safetyFlags": [
+    "noise_use_step_jack_when_neighbours_below",
+    "knee_or_ankle_problems_use_step_or_arms_only",
+    "osteoporosis_fractures_keep_impact_low",
+    "back_pain_brace_avoid_arching",
+    "shoulder_problems_limit_overhead_range",
+    "hypertension_moderate_effort_breathe_continuously",
+    "heart_disease_get_clearance_first",
+    "asthma_warm_up_and_carry_reliever",
+    "pregnancy_low_impact_only_ask_obstetrician",
+    "postpartum_no_jumping_until_cleared_pelvic_floor",
+    "recent_surgery_get_approval",
+    "stop_with_chest_pain_dizziness_or_leaking"
+  ],
+  "progressions": [
+    "march jacks to step jacks",
+    "faster tempo step jacks",
+    "mini jacks with a tiny jump on a mat",
+    "standard jumping jacks",
+    "longer or interval jumping jacks",
+    "plank jacks",
+    "squat jacks"
+  ],
+  "regressions": [
+    "march jacks or mini step jacks",
+    "arms-only jacks with feet still",
+    "seated jacks on a chair"
+  ],
+  "videoShots": [
+    {
+      "seconds": 6,
+      "angle": "front, chest height, 2.5-3 m",
+      "shows": "setup: stand tall, feet together, arms at sides, ceiling check",
+      "textOverlay": "Stand tall. Check the ceiling."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, chest height, 2.5-3 m",
+      "shows": "step jack: step out and arms up, step in and arms down",
+      "textOverlay": "Step out, arms up. Step in, arms down."
+    },
+    {
+      "seconds": 7,
+      "angle": "front, chest height, 2.5-3 m",
+      "shows": "alternating step jacks at a steady rhythm",
+      "textOverlay": "Steady rhythm. Quiet feet."
+    },
+    {
+      "seconds": 6,
+      "angle": "side, hip height, 2.5 m",
+      "shows": "soft landing: ball of foot then heel, soft knees",
+      "textOverlay": "Land soft: ball, then heel"
+    },
+    {
+      "seconds": 8,
+      "angle": "front, knee height, 2 m, split screen",
+      "shows": "knees caving vs knees over toes; locked vs soft knees",
+      "textOverlay": "Knees over toes. Soft knees."
+    },
+    {
+      "seconds": 6,
+      "angle": "front, chest height, 2.5 m, split screen",
+      "shows": "shrugged shoulders and low arms vs long arms overhead",
+      "textOverlay": "Shoulders down. Reach up."
+    },
+    {
+      "seconds": 7,
+      "angle": "front, chest height, 2.5 m",
+      "shows": "easier versions: march jacks and arms-only jacks",
+      "textOverlay": "Easier: march or arms only"
+    },
+    {
+      "seconds": 7,
+      "angle": "front, chest height, 2.5-3 m",
+      "shows": "standard jumping jacks on a mat",
+      "textOverlay": "Harder: jump (only if your knees and neighbours allow)"
+    }
+  ],
+  "lastResearched": "2026-10-24",
+  "setupSteps": [
+    "Clear the space. About 1.5 m wide x 1.2 m deep (est.). Move rugs that slide, shoes, and anything the feet could catch. Check overhead: ceiling fans, low lights and loft beds.",
+    "Floor and noise: a non-slip floor. In a flat with neighbours below, do the step jack only, on a yoga mat or thick carpet, and keep the foot landing soft. Avoid early morning and late night with the jump version.",
+    "Footwear: flat, supportive trainers for the jump version; barefoot or trainers for step jacks. Avoid socks on smooth tiles (slipping).",
+    "Starting stance: stand tall, feet together or just hip-width apart, toes pointing forward, arms by your sides (Pfizer; WebMD).",
+    "Posture: chest lifted, shoulders relaxed and down, stomach lightly braced, eyes looking forward at a fixed spot.",
+    "Hands: open and relaxed, palms facing inwards or forwards, arms nearly straight but elbows not locked hard.",
+    "Clothing: fitted top and track pants or leggings so the camera can see shoulders and knees; a supportive sports bra if needed for comfort.",
+    "Water and fan: keep water nearby; use a fan, because this move warms up quickly."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": "A. Low-impact step jack (beginner main version)",
+      "title": "Stand tall and brace",
+      "action": "Feet together or hip-width, arms by your sides, gently tighten your stomach.",
+      "feel": "Light firmness around the waist.",
+      "breathing": "Breathe in normally.",
+      "tempo": null,
+      "visualCheck": "Side: ear, shoulder, hip and ankle roughly in one line. Front: feet together, shoulders level."
+    },
+    {
+      "n": 2,
+      "part": "A. Low-impact step jack (beginner main version)",
+      "title": "Shift weight to the left foot",
+      "action": "Let your weight rest on the left foot, with a soft knee.",
+      "feel": "Left foot and hip take the weight.",
+      "breathing": "Keep breathing easily.",
+      "tempo": null,
+      "visualCheck": "Front: hips stay level, not swaying."
+    },
+    {
+      "n": 3,
+      "part": "A. Low-impact step jack (beginner main version)",
+      "title": "Step the right foot out to the side",
+      "action": "Take a comfortable step out to the right (about shoulder-width plus a little, est.), landing softly on the ball of the foot then lowering the heel; toes point forward or slightly out.",
+      "feel": "Gentle push in the outer hips.",
+      "breathing": "Breathe out as you step.",
+      "tempo": null,
+      "visualCheck": "Front: right foot clearly wider than the shoulders' width apart; knee over the second toe."
+    },
+    {
+      "n": 4,
+      "part": "A. Low-impact step jack (beginner main version)",
+      "title": "Raise both arms overhead as the foot goes out",
+      "action": "Sweep both arms out to the sides and up, until the hands are overhead or as high as is comfortable (palms may touch).",
+      "feel": "Shoulders lifting, chest open; no pinching at the shoulder tip.",
+      "breathing": "Continue breathing out.",
+      "tempo": null,
+      "visualCheck": "Front: arms form a \"Y\"; shoulders stay down, not shrugged to the ears."
+    },
+    {
+      "n": 5,
+      "part": "A. Low-impact step jack (beginner main version)",
+      "title": "Step the right foot back in",
+      "action": "Bring the right foot back to meet the left, landing softly.",
+      "feel": "Weight returns to both feet.",
+      "breathing": "Breathe in.",
+      "tempo": null,
+      "visualCheck": "Front: feet together, weight even."
+    },
+    {
+      "n": 6,
+      "part": "A. Low-impact step jack (beginner main version)",
+      "title": "Lower the arms",
+      "action": "Bring the arms down in a controlled sweep to your sides, in time with step 5.",
+      "feel": "Shoulders relax.",
+      "breathing": "Breathe in.",
+      "tempo": null,
+      "visualCheck": "Front: hands back by the thighs, not slapping them."
+    },
+    {
+      "n": 7,
+      "part": "A. Low-impact step jack (beginner main version)",
+      "title": "Repeat on the left",
+      "action": "Step the left foot out and raise the arms again, then return. Alternate sides.",
+      "feel": "A steady, easy rhythm.",
+      "breathing": "Out as you step out, in as you step back (est.; any steady pattern is fine, never hold your breath).",
+      "tempo": null,
+      "visualCheck": "Front: left and right steps look the same width."
+    },
+    {
+      "n": 8,
+      "part": "B. Standard jumping jack (intermediate version)",
+      "title": "Stand tall, feet together, arms at sides",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 9,
+      "part": "B. Standard jumping jack (intermediate version)",
+      "title": "Jump both feet out to slightly wider than shoulder width while the arms sweep overhead (NASM; Pfizer)",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 10,
+      "part": "B. Standard jumping jack (intermediate version)",
+      "title": "Land softly on the balls of the feet with soft knees; the heels touch down lightly",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 11,
+      "part": "B. Standard jumping jack (intermediate version)",
+      "title": "Jump the feet back together while the arms come down",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 12,
+      "part": "B. Standard jumping jack (intermediate version)",
+      "title": "Keep a steady rhythm of about 1 rep per second (est.), staying light on the feet",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Locking the knees on landing",
+      "text": "Locking the knees on landing. Why: the shock goes straight up the knees and spine (NASM names landing with straight knees as a common error). Fix: keep a small knee bend and land on the balls of the feet, then lower the heels."
+    },
+    {
+      "title": "Landing flat and loud",
+      "text": "Landing flat and loud. Why: harder landings mean higher joint load and noise through the floor. Fix: step out (low-impact version) or land on the toes and roll down quietly; slow the rhythm."
+    },
+    {
+      "title": "Knees caving in or toes turning far out",
+      "text": "Knees caving in or toes turning far out. Why: twists the knee and strains the ankle. Fix: point the knees over the second toe; make the step narrower."
+    },
+    {
+      "title": "Arms stopping at shoulder height or flapping unevenly",
+      "text": "Arms stopping at shoulder height or flapping unevenly. Why: less work and an uneven rhythm. Fix: reach both arms up together to overhead (or as high as is pain-free) and bring them down together."
+    },
+    {
+      "title": "Shrugging the shoulders and arching the lower back as the arms go up",
+      "text": "Shrugging the shoulders and arching the lower back as the arms go up. Why: pinches the neck and loads the lower back. Fix: ribs down, stomach lightly in, shoulders away from the ears; use arms to shoulder height if overhead pinches."
+    },
+    {
+      "title": "Going too fast too soon",
+      "text": "Going too fast too soon. Why: form breaks down and you get dizzy or breathless. Fix: start at about 1 rep per 2 seconds with step jacks and increase speed only when breathing stays comfortable (talk test)."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. Why: breath-holding raises blood pressure more than breathing during effort. Fix: breathe out as the arms go up (or any steady pattern) and keep talking-pace breathing."
+    },
+    {
+      "title": "Doing it on slippery or hard floors in socks",
+      "text": "Doing it on slippery or hard floors in socks. Why: slips and joint jolts. Fix: non-slip floor, mat or shoes."
+    }
+  ],
+  "safetyNotes": [
+    "Knee, ankle or hip problems (arthritis, injury, replacements): do step jacks only, or arms-only jacks; avoid the jump version if it hurts. Pfizer advises knee or ankle pain and osteoarthritis users to check with a healthcare provider.",
+    "Osteoporosis: low-level impact is recommended for bone strength in general osteoporosis advice, but people with vertebral or multiple fractures should stay at brisk-walking-level impact and get individual advice (Strong, Steady and Straight).",
+    "Back problems: step jacks with a braced stomach; avoid arching as the arms rise.",
+    "Shoulder problems: keep the arms below the painful range; use shoulder-height arms or hands on hips.",
+    "High blood pressure and heart disease: moderate effort, steady breathing, cool down gradually; get medical clearance if BP is severe or uncontrolled or you have known heart disease.",
+    "Pregnancy: balance changes raise fall risk; low-impact aerobics is listed as safe to continue in an uncomplicated pregnancy; skip the jump version and ask your obstetrician.",
+    "Postpartum and pelvic-floor symptoms: NHS trust leaflets advise avoiding jumping for at least 3 months after birth (time ranges from 12 weeks to 6–12 months across leaflets); leaking or heaviness is a signal to stop and see a women's health physiotherapist.",
+    "Recent surgery, dizziness, balance problems: only with approval; hold a wall for balance."
+  ],
+  "sources": [
+    "NASM, Exercise Library: Jumping Jacks (primary and secondary muscles, steps, landing mistakes). https://www.nasm.org/resource-center/exercise-library/jumping-jacks",
+    "Pfizer, Health Answers: How to Do Jumping Jacks (form, step-jack version, joint cautions). https://healthanswers.pfizer.com/physical-activity/aerobic/how-to-do-jumping-jacks",
+    "WebMD, How to do jumping jacks (posture, muscles worked). https://webmd.com/fitness-exercise/how-to-do-jumping-jacks ; https://www.webmd.com/obesity/features/6-helpful-exercise-modifications-to-lower-your-injury-risk",
+    "Physitrack, Step-by-step guide to the jumping jack exercise (mini, side-to-side and step-out versions; 10–20 reps for beginners). https://www.physitrack.com/exercise-library/how-to-perform-the-jumping-jack-exercise",
+    "Livestrong, What muscles do jumping jacks work? https://livestrong.com/article/434676-what-muscles-do-jumping-jacks-work",
+    "Acibadem International (hospital network), jumping jacks article (lower-impact version, similar cardio benefit). https://acibademinternational.com/?p=138642",
+    "Fit&Well, Can't do jumping jacks? Low-impact alternatives (step-out, 45-degree and jog-in-place jacks). https://www.fitandwell.com/exercise/bodyweight-exercises/cant-do-jumping-jacks-try-these-low-impact-exercises-instead-to-get-your-heart-pumping",
+    "Bustle, Quiet workouts (no-jump jumping jacks for knees or neighbours). https://www.bustle.com/wellness/quiet-workouts-quarantine",
+    "Mirafit, Flat-friendly cardio workout (march jacks). https://mirafit.co.uk/blog/flat-friendly-cardio-workout/",
+    "Fitness Blender, Quiet cardio workout (low-impact apartment cardio). https://fitnessblender.com/videos/quiet-cardio-workout-low-impact-apartment-cardio-workout",
+    "2024 Adult Compendium of Physical Activities (Herrmann et al., J Sport Health Sci 2024): codes 02005, 02006, 02020, 02022, 02024. https://pacompendium.com/conditioning-exercise/ ; https://pacompendium.com/wp-content/uploads/2024/02/1_2024-adult-compendium_1_2024.pdf ; https://pubmed.ncbi.nlm.nih.gov/38242596/",
+    "WHO 2020 guidelines on physical activity and sedentary behaviour (Bull et al., BJSM). https://bjsm.bmj.com/content/54/24/1451",
+    "American Heart Association, Recommendations for physical activity in adults. https://heart.org/en/healthy-living/exercise-and-physical-activity/fitness-basics/aha-recs-for-physical-activity-in-adults",
+    "ACSM-linked Borg RPE bands (light 9–11, moderate 12–13, vigorous 14–17) and talk test. https://pmc.ncbi.nlm.nih.gov/articles/PMC10310950/table/tbl1 ; https://pmc.ncbi.nlm.nih.gov/articles/PMC9618974/table/tbl4 ; https://blog.nasm.org/rate-of-perceived-exertion",
+    "Effects of functional HIIT (including jumping jacks) vs treadmill HIIT, Frontiers in Physiology 2024. https://public-pages-files-2025.frontiersin.org/journals/physiology/articles/10.3389/fphys.2024.1325403/text ; https://doaj.org/article/acfe37c1807745c39ac27ad90c2de0e2",
+    "Sian et al., equipment-free HIIT supervised vs unsupervised (Gibala group preprint). https://macsphere.mcmaster.ca/bitstream/11375/25716/1/MacSphere%20Preprint%20-%20Archila%20et%20al%20%28Gibala%29%2021Aug2020.pdf",
+    "JSSM 11-31, ground reaction forces of simple jumps in children (jumping jacks about 3.5 x body weight). https://jssm.org/11-1-31.p_d_f",
+    "Relationship of ground and knee joint reaction forces in plyometric exercises (small study). https://ojs.ub.uni-konstanz.de/cpa/article/view/4420",
+    "Strong, Steady and Straight: UK osteoporosis exercise consensus (BJSM 2022); Society for Endocrinology summary and quick guide. https://bjsm.bmj.com/content/56/15/837 ; https://www.endocrinology.org/endocrinologist/135-spring20/features/strong-steady-and-straight-exercise-recommendations-for-osteoporosis-and-bone-health/ ; https://www.endocrinology.org/media/3590/final-quick-guide_strong-steady-straight_dec18.pdf",
+    "Aneurin Bevan UHB, Pelvic health physiotherapy in postnatal care: returning to exercise. https://abuhb.nhs.wales/files/physiotherapy/pelvic-health-physiotherapy-in-postnatal-care-returning-to-exercise-pdf/",
+    "Oxford University Hospitals, postnatal exercise leaflet. https://ulive.ouh.nhs.uk/media/43daol3i/109181exercise.pdf",
+    "Walsall Healthcare, Postnatal advice exercises. https://www.walsallhealthcare.nhs.uk/wp-content/uploads/2022/11/Postnatal-Advice-Exercises-1.pdf",
+    "West Hertfordshire Hospitals, Post natal exercises. https://westhertshospitals.nhs.uk/patients-and-visitors/patient-information-leaflets/post-natal-exercises",
+    "ACOG opinion on exercise in the childbearing year via DONA summary; NCBI Bookshelf exercise in pregnancy. https://dona.org/new-acog-opinion-on-exercise-in-the-childbearing-year/ ; https://www.ncbi.nlm.nih.gov/books/NBK582697/",
+    "Pharmacy Magazine CPD, Exercise and asthma (Asthma UK tips); Cambridge University Hospitals, exercise-induced bronchoconstriction leaflet; warm-up review. https://www.pharmacymagazine.co.uk/cpd-modules/making-a-difference-in-asthma-care/exercise-and-asthma-528343 ; https://www.cuh.nhs.uk/patient-information/exercise-induced-bronchoconstriction-for-children-and-young-people/ ; https://pubmed.ncbi.nlm.nih.gov/21811185/",
+    "ACSM (Zaleski), exercise for the prevention and treatment of hypertension; NCHPAD summary. https://acsm.org/exercise-for-the-prevention-and-treatment-of-hypertension/ ; https://nchpad.org/817/4203/Physical~Activity~~The~Best~Prescription~for~Hypertension",
+    "Colberg SR et al. (2016), ADA position statement on physical activity/exercise and diabetes, Diabetes Care 39:2065–2079. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/",
+    "AHA Professional, Physical activity as first-line treatment for elevated BP or cholesterol (Gibbs et al.). https://professional.heart.org/en/science-news/Physical-Activity-as-a-Critical-Component-of-First-Line-Treatment-for-Elevated-BP-or-Cholesterol/commentary",
+    "Donnelly JE et al. (2009), ACSM position stand on physical activity for weight loss. https://pubmed.ncbi.nlm.nih.gov/19127177/",
+    "JMU Recreation, Losing weight (low-impact options); ACE Fitness, Tips for training clients impacted by obesity. https://www.jmu.edu/recreation/_files/wellness/losing-weight.pdf ; https://www.acefitness.org/education-and-resources/professional/expert-articles/6459/tips-for-training-clients-impacted-by-obesity/",
+    "Effect of physical exercise in people with hypothyroidism: systematic review and meta-analysis (2023). https://pubmed.ncbi.nlm.nih.gov/37999992/",
+    "Harvard Health, Walking, cycling and swimming are best exercises for knee osteoarthritis; Today's Dietitian, Getting fit with osteoarthritis (Arthritis Foundation recommendations); knee OA aerobic exercise mini review. https://content.health.harvard.edu/blog/walking-cycling-and-swimming-are-best-exercises-for-knee-osteoarthritis ; https://www.todaysdietitian.com/focus-on-fitness-getting-fit-with-osteoarthritis/ ; https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12646927/",
+    "Oxford University Hospitals, back pain leaflet; Sherwood Forest Hospitals, Managing back pain; Surrey Physio, Activities of daily living. https://www.ouh.nhs.uk/media/mrfblszk/116451pain.pdf ; https://sfh-tr.nhs.uk/media/0jlnxa0c/pil202501-06-mbp-managing-back-pain.pdf ; https://www.surreyphysio.co.uk/article/activities-of-daily-living/",
+    "HSS Rehabilitation, Shoulder impingement non-operative guideline; Pure Physiotherapy, shoulder impingement exercise programmes. https://www.hss.edu/files/HSSRehabilitationClinicalGuidelines-Shoulder-Impingement-Non-operative.pdf ; https://purephysiotherapy.co.uk/exercise-plans/intermediate-shoulder-impingement-exercise-programme"
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 20.8,
+      "70kg": 17.9,
+      "80kg": 15.6
+    },
+    "per300kcal": {
+      "60kg": 62.5,
+      "70kg": 53.6,
+      "80kg": 46.9
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "cardio",
+    "strength_warmup",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "small_flat",
+    "neighbours_below_step_version_only",
+    "short_sessions",
+    "no_equipment",
+    "morning_or_evening_quiet_step_version"
+  ],
+  "swapsByAccess": {
+    "none": "March in place with arm raises, arms-only jacks, or Surya Namaskar (Yoga & Stretch 2)",
+    "home_equipment": "Step-ups on a low stair with arm raises (Home 12), or skipping rope (Home 14) if joints and noise allow",
+    "basic_gym": "Treadmill brisk walk (Gym 5) or stationary bike (Gym 7)",
+    "full_gym": "Elliptical (Gym 6), rowing machine (Gym 8) or stair climber (Gym 9) for low-impact cardio"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "Step jacks at moderate effort (5-6/10, Borg 12-13); keep breathing; extend the cool-down; severe or uncontrolled BP needs a medical check first",
+      "source": "ACSM hypertension guidance (Zaleski); NCHPAD summary"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "Counts toward aerobic activity; usual glucose checks and fast carbohydrate on hand if on insulin or sulfonylureas; wear shoes and check feet if neuropathy",
+      "source": "ADA position statement (Colberg et al. 2016); ACSM 2022 consensus (via search summary)"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "After clearance only: slow step jacks at light effort (3-4/10, Borg 9-11), short bouts; stop with chest discomfort or breathlessness",
+      "source": "AHA physical activity recommendations; clearance specifics Not found"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "Counts toward 150+ minutes/week of aerobic activity alongside resistance work",
+      "source": "AHA recommendations; AHA statement (Gibbs et al.)"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Use the low-impact step jack; start with 3 x 30 s and build up; avoid the jump version until strength and tolerance improve",
+      "source": "JMU low-impact guidance; ACE obesity training article; ACSM weight management position stand (Donnelly 2009)"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "Fits aerobic activity guidance; no jumping-jack-specific advice found",
+      "source": "Not found"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "Train normally if controlled; start at beginner level with ongoing fatigue",
+      "source": "Systematic review 2023 (PubMed 37999992)"
+    },
+    {
+      "condition": "asthma",
+      "status": "modify",
+      "change": "Warm up 10-15 minutes before harder work, keep reliever inhaler nearby, avoid cold dry air; stop and use reliever if symptoms start",
+      "source": "Asthma UK tips via Pharmacy Magazine CPD; Cambridge University Hospitals leaflet; PubMed 21811185"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Step jacks or arms-only jacks only; avoid the jump version; mat and flat trainers; stop if pain rises",
+      "source": "Harvard Health 217-trial analysis (low-impact aerobic best for knee OA); Arthritis Foundation via Today's Dietitian; Pfizer Health Answers"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Brace stomach, ribs down, step jacks; avoid the jump version in a flare; staying active beats bed rest",
+      "source": "NHS hospital leaflets (Oxford University Hospitals; Sheffield); Surrey Physio (high-impact claim lower evidence)"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "modify",
+      "change": "Raise arms only as high as comfortable (pain up to 4/10 in physio programmes; avoid painful overhead reaching when irritated); shoulder-height arms or hands on hips",
+      "source": "HSS shoulder impingement protocol; Pure Physiotherapy programmes"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "modify",
+      "change": "Brief low-level impact can help bones; with vertebral or multiple fractures stay at brisk-walking-level impact (step jacks) and avoid spinal flexion; get individual advice",
+      "source": "Strong, Steady and Straight (Royal Osteoporosis Society, BJSM 2022); Society for Endocrinology summary"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "modify",
+      "change": "Low-impact step jacks only in an uncomplicated pregnancy; no jumping (balance and fall risk); stop with dizziness, pain or leaking; ask obstetrician",
+      "source": "ACOG opinion via DONA summary; NCBI Bookshelf NBK582697 (jumping not mentioned directly)"
+    },
+    {
+      "condition": "postpartum",
+      "status": "modify",
+      "change": "No jumping for at least 3 months and until cleared (leaflets range from 12 weeks to 6-12 months); step jacks only if no leaking, heaviness or pain; see a women's health physiotherapist if leaking",
+      "source": "Aneurin Bevan UHB physiotherapy leaflet; Oxford University Hospitals; Walsall Healthcare; West Hertfordshire leaflet"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Only with surgeon or physiotherapist approval",
+      "source": "Not found"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "home",
+      "gym",
+      "outdoor"
+    ],
+    "bodyRegion": [
+      "full_body"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "fat_loss",
+      "endurance"
+    ],
+    "intensity": "moderate",
+    "noise": "quiet",
+    "space": "small_room",
+    "typicalMinutes": 5,
+    "kcalPer10min70kg": 56,
+    "difficulty1to5": 2,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Home",
+    "Gym",
+    "Outdoors",
+    "No equipment",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Cardio",
+    "Legs",
+    "Glutes",
+    "Heart & lungs",
+    "Rep counter",
+    "Under 10 min"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-10-24",
+      "file": "FitPlate_Fitness_2026-10-24.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

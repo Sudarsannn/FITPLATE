@@ -30,6 +30,7 @@ import {
   trendArrow,
 } from '../../services/dishDetail';
 import { makeCost, orderRange } from '../../services/dishLibrary';
+import { kitchenGaps } from '../../services/kitchen';
 import { isPantryStaple, recipeAmountLabel } from '../../services/vendors/basket';
 import { colors, radius, type } from '../../theme';
 
@@ -81,7 +82,7 @@ function Hero({ dish }: { dish: Dish }) {
 
 function DishBody({ dish, back }: { dish: Dish; back: () => void }) {
   const insets = useSafeAreaInsets();
-  const { favourites, toggleFavourite, setPlan, logDish } = useStore();
+  const { favourites, toggleFavourite, setPlan, logDish, equipmentOwned } = useStore();
   const [servings, setServings] = useState(2);
   const [planned, setPlanned] = useState(false);
   const [logged, setLogged] = useState(false);
@@ -276,7 +277,7 @@ function DishBody({ dish, back }: { dish: Dish; back: () => void }) {
         )}
       </Section>
 
-      <EquipmentSection dish={dish} />
+      <EquipmentSection dish={dish} owned={equipmentOwned} />
 
       <View onLayout={(e) => record('storage', e)} />
       <Section title="Storage and leftovers">
@@ -554,12 +555,34 @@ function QuickFactsSection({ dish }: { dish: Dish }) {
 function ScoresSection({ dish }: { dish: Dish }) {
   const h = dish.healthiness;
   const r = dish.researchRating;
+  // Innovation (scoreExplainer): every researched reason behind the two scores, kept separate (three-scores rule).
+  const [why, setWhy] = useState(false);
+  const canExplain = featureFlags.scoreExplainer && (!!h?.reasons.length || !!r?.basis);
   return (
     <Section title="Scores">
       <ScoreRow label="Healthiness score" value={h?.score != null ? `${h.score}/10` : 'Coming soon'} hint={h?.restaurantScore != null ? `Restaurant version: ${h.restaurantScore}/10` : null} />
-      {h?.reasons.length ? <Text style={styles.note}>{h.reasons[0]}</Text> : null}
+      {h?.reasons.length && !canExplain ? <Text style={styles.note}>{h.reasons[0]}</Text> : null}
       <ScoreRow label="Rating" value={r?.score != null ? `★ ${r.score}` : 'Coming soon'} hint="FitPlate's research of what people say online, not user or restaurant ratings." />
       <ScoreRow label="FitPlate Score" value="Coming after launch" hint="Built from cooks and your ratings once FitPlate launches." />
+      {canExplain ? (
+        <PressableScale onPress={() => setWhy((o) => !o)} style={styles.link} scaleTo={0.98} accessibilityLabel={why ? 'Hide why' : 'Why these scores?'}>
+          <Text style={styles.linkText}>{why ? 'Hide why' : 'Why these scores?'}</Text>
+          <Ionicons name={why ? 'chevron-up' : 'chevron-down'} size={16} color={colors.muted} />
+        </PressableScale>
+      ) : null}
+      {why ? (
+        <>
+          {h?.reasons.length ? <Text style={styles.subhead}>Healthiness score</Text> : null}
+          {h?.reasons.map((x, i) => (
+            <Text key={i} style={styles.small}>
+              • {x.charAt(0).toUpperCase() + x.slice(1)}
+            </Text>
+          ))}
+          {r?.basis ? <Text style={[styles.subhead, { marginTop: 10 }]}>Rating</Text> : null}
+          {r?.basis ? <Text style={styles.small}>{r.basis.charAt(0).toUpperCase() + r.basis.slice(1)}</Text> : null}
+          <Text style={styles.note}>From FitPlate&apos;s dish research; the sources are listed at the bottom of this page.</Text>
+        </>
+      ) : null}
     </Section>
   );
 }
@@ -626,9 +649,25 @@ function MicroSection({ dish }: { dish: Dish }) {
   );
 }
 
-function EquipmentSection({ dish }: { dish: Dish }) {
+function EquipmentSection({ dish, owned }: { dish: Dish; owned: string[] }) {
+  // Day 10: what the person's kitchen lacks, with the research's own way round when it gives one.
+  const gaps = kitchenGaps(dish, owned);
   return (
     <Section title="Equipment">
+      {gaps.length ? (
+        <View style={styles.gapBox}>
+          {gaps.map((g) => (
+            <Text key={g.appliance} style={styles.gapText}>
+              <Text style={{ fontWeight: '800' }}>No {g.appliance.toLowerCase()}? </Text>
+              {g.alternative ? `The recipe research offers: ${g.alternative.charAt(0).toLowerCase()}${g.alternative.slice(1)}.` : g.required ? 'The recipe research doesn’t give a way round it yet.' : 'The recipe research lists other options below.'}
+            </Text>
+          ))}
+        </View>
+      ) : owned.length === 0 && dish.equipment.length ? (
+        <Text style={styles.muted} onPress={() => router.push({ pathname: '/survey', params: { page: 'kitchen' } })} accessibilityRole="link">
+          Tell FitPlate what’s in your kitchen to see what you’d need to swap. <Text style={{ color: colors.accent, fontWeight: '800' }}>Add your kitchen</Text>
+        </Text>
+      ) : null}
       {dish.equipment.length ? (
         dish.equipment.map((e, k) => {
           const { item, note } = splitEquipment(e);
@@ -719,6 +758,8 @@ const styles = StyleSheet.create({
   small: { color: colors.text, fontSize: 13, lineHeight: 18 },
   ing: { flexDirection: 'row', alignItems: 'center', gap: 10, paddingVertical: 9 },
   ingLine: { borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: colors.border },
+  gapBox: { padding: 12, borderRadius: radius.md, backgroundColor: 'rgba(255,138,61,0.12)', borderWidth: 1, borderColor: 'rgba(255,138,61,0.35)', gap: 6, marginBottom: 8 },
+  gapText: { color: colors.text, fontSize: 13.5, lineHeight: 19 },
   pantry: { color: colors.warm, fontSize: 11, fontWeight: '800', marginTop: 2 },
   ingQty: { color: colors.muted, fontWeight: '700', fontSize: 13, maxWidth: '45%', textAlign: 'right' },
   topBar: { position: 'absolute', top: 0, left: 0, right: 0, backgroundColor: 'rgba(7,9,10,0.95)', alignItems: 'center', justifyContent: 'center', paddingHorizontal: 120, borderBottomWidth: 1, borderBottomColor: colors.border },

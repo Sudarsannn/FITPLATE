@@ -9,6 +9,7 @@ import { Bar, GradientButton, PressableScale } from '../../components/ui';
 import { getDish } from '../../data/research';
 import { success } from '../../lib/haptics';
 import { useStore } from '../../lib/store';
+import { showBeginnerTips } from '../../services/kitchen';
 import type { CookCompletion } from '../../models/prefs';
 import type { Dish } from '../../models/research';
 import { BALANCE_LABEL } from '../../services/dishDetail';
@@ -26,7 +27,8 @@ export default function StepsScreen() {
   const { id, servings: sv, via } = useLocalSearchParams<{ id: string; servings?: string; via?: string }>();
   const dish = id ? getDish(id) : undefined;
   const servings = Math.max(1, Number(sv) || 2);
-  const { logResearchCook } = useStore();
+  const { logResearchCook, profile, settings } = useStore();
+  const tips = showBeginnerTips(profile.level, settings.featureToggles);
   const [i, setI] = useState(-1); // -1 = ingredients overview
   const [done, setDone] = useState(false);
 
@@ -78,7 +80,7 @@ export default function StepsScreen() {
             <Text style={[k.body, { fontSize: 18, lineHeight: 27, marginTop: 10 }]}>{step.text}</Text>
             {step.timerSec ? <StepTimer key={i} seconds={step.timerSec} /> : null}
             {step.visualCue ? <Notice tone="ok">👀 Looks right when: {step.visualCue}</Notice> : null}
-            {step.tip ? <Notice>💡 {step.tip}</Notice> : null}
+            {step.tip && tips ? <Notice>💡 {step.tip}</Notice> : null}
           </View>
         ) : null}
       </ScrollView>

@@ -2,12 +2,16 @@
 import type { Exercise } from '../../../models/exercise';
 
 import item_adho_mukha_svanasana from './adho-mukha-svanasana.json';
+import item_bhujangasana_cobra_pose from './bhujangasana-cobra-pose.json';
 import item_bodyweight_squat from './bodyweight-squat.json';
 import item_desk_neck_shoulder_release from './desk-neck-shoulder-release.json';
 import item_elliptical_cross_trainer from './elliptical-cross-trainer.json';
 import item_glute_bridge from './glute-bridge.json';
 import item_hamstring_stretch from './hamstring-stretch.json';
 import item_hip_flexor_stretch from './hip-flexor-stretch.json';
+import item_jumping_jacks from './jumping-jacks.json';
+import item_leg_curl from './leg-curl.json';
+import item_leg_extension_machine from './leg-extension-machine.json';
 import item_leg_press from './leg-press.json';
 import item_plank_and_side_plank from './plank-and-side-plank.json';
 import item_push_up from './push-up.json';
@@ -20,12 +24,16 @@ import item_treadmill from './treadmill.json';
 
 export const items: Exercise[] = [
   item_adho_mukha_svanasana as unknown as Exercise,
+  item_bhujangasana_cobra_pose as unknown as Exercise,
   item_bodyweight_squat as unknown as Exercise,
   item_desk_neck_shoulder_release as unknown as Exercise,
   item_elliptical_cross_trainer as unknown as Exercise,
   item_glute_bridge as unknown as Exercise,
   item_hamstring_stretch as unknown as Exercise,
   item_hip_flexor_stretch as unknown as Exercise,
+  item_jumping_jacks as unknown as Exercise,
+  item_leg_curl as unknown as Exercise,
+  item_leg_extension_machine as unknown as Exercise,
   item_leg_press as unknown as Exercise,
   item_plank_and_side_plank as unknown as Exercise,
   item_push_up as unknown as Exercise,

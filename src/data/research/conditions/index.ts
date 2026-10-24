@@ -2,12 +2,14 @@
 import type { HealthCondition } from '../../../models/nutrient';
 
 import item_high_ldl_cholesterol from './high-ldl-cholesterol.json';
+import item_high_triglycerides from './high-triglycerides.json';
 import item_hypertension from './hypertension.json';
 import item_prediabetes from './prediabetes.json';
 import item_type_2_diabetes from './type-2-diabetes.json';
 
 export const items: HealthCondition[] = [
   item_high_ldl_cholesterol as unknown as HealthCondition,
+  item_high_triglycerides as unknown as HealthCondition,
   item_hypertension as unknown as HealthCondition,
   item_prediabetes as unknown as HealthCondition,
   item_type_2_diabetes as unknown as HealthCondition,

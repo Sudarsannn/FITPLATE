@@ -1,4 +1,5 @@
 import { Ionicons } from '@expo/vector-icons';
+import { router } from 'expo-router';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useDeferredValue, useEffect, useMemo, useRef, useState } from 'react';
 import { FlatList, Modal, Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
@@ -9,6 +10,7 @@ import { researchDishes } from '../../data/research';
 import { useStore } from '../../lib/store';
 import type { Dish } from '../../models/research';
 import { byNumber, COMING_SORTS, DIET_OPTIONS, dishDoc, dishFilterGroups, DISH_SORTS } from '../../services/dishLibrary';
+import { worksWithKitchen } from '../../services/kitchen';
 import { loadExcludedAllergens, saveExcludedAllergens } from '../../services/rememberedFilters';
 import { GUEST_OWNER } from '../../services/storage';
 import { activeCount, optionCounts, runSearch, toggle, type FilterGroup, type Selection } from '../../services/search';
@@ -34,7 +36,9 @@ const RELEVANCE = 'relevance';
 export function DishLibrary({ dishes = researchDishes }: { dishes?: readonly Dish[] }) {
   const insets = useSafeAreaInsets();
   // The survey never filters the library; it only swaps the first one-tap chip to the person's own diet.
-  const { profile } = useStore();
+  const { profile, equipmentOwned } = useStore();
+  // Day 10: "Works with my kitchen" uses the survey's kitchen answers; off until tapped.
+  const [myKitchen, setMyKitchen] = useState(false);
   const myDiet = profile.diet !== 'non-veg' && profile.diet !== 'veg' ? DIET_OPTIONS.find((o) => o.id === profile.diet) : undefined;
   const quick = myDiet ? [{ group: 'diet', option: myDiet.id, label: myDiet.label }, ...QUICK] : QUICK;
   const [query, setQuery] = useState('');
@@ -46,10 +50,10 @@ export function DishLibrary({ dishes = researchDishes }: { dishes?: readonly Dis
 
   const groups = useMemo(() => dishFilterGroups(dishes), [dishes]);
   const sort = DISH_SORTS.find((s) => s.id === sortId) ?? RELEVANCE;
-  const results = useMemo(
-    () => runSearch(dishes, { toDoc: dishDoc, query: deferredQuery, groups, selection, sort, tieBreak: byNumber }).map((r) => r.item),
-    [dishes, deferredQuery, groups, selection, sort],
-  );
+  const results = useMemo(() => {
+    const found = runSearch(dishes, { toDoc: dishDoc, query: deferredQuery, groups, selection, sort, tieBreak: byNumber }).map((r) => r.item);
+    return myKitchen && equipmentOwned.length ? found.filter((d) => worksWithKitchen(d, equipmentOwned)) : found;
+  }, [dishes, deferredQuery, groups, selection, sort, myKitchen, equipmentOwned]);
   const counts = useMemo(() => (sheet === 'filters' ? optionCounts(dishes, groups, selection) : {}), [sheet, dishes, groups, selection]);
   const nActive = activeCount(selection);
   const activeChips = groups.flatMap((g) => g.options.filter((o) => selection[g.id]?.includes(o.id)).map((o) => ({ g, o })));
@@ -92,6 +96,12 @@ export function DishLibrary({ dishes = researchDishes }: { dishes?: readonly Dis
           icon={<Ionicons name="options-outline" size={16} color={nActive ? '#06210F' : colors.text} />}
         />
         <SelectChip label={sortLabel} selected={sort !== RELEVANCE} onPress={() => setSheet('sort')} icon={<Ionicons name="swap-vertical" size={16} color={sort !== RELEVANCE ? '#06210F' : colors.text} />} />
+        <SelectChip
+          label="Works with my kitchen"
+          selected={myKitchen && equipmentOwned.length > 0}
+          onPress={() => (equipmentOwned.length ? setMyKitchen((on) => !on) : router.push({ pathname: '/survey', params: { page: 'kitchen' } }))}
+          icon={<Ionicons name="flame-outline" size={16} color={myKitchen && equipmentOwned.length ? '#06210F' : colors.text} />}
+        />
         {quick.filter((q) => groups.some((g) => g.id === q.group && g.options.some((o) => o.id === q.option))).map((q) => (
           <SelectChip key={q.label} label={q.label} selected={!!selection[q.group]?.includes(q.option)} onPress={() => setSelection((s) => toggle(s, q.group, q.option))} />
         ))}
@@ -121,6 +131,14 @@ export function DishLibrary({ dishes = researchDishes }: { dishes?: readonly Dis
       <Text style={[type.label, { color: colors.muted, marginTop: 16 }]} accessibilityLiveRegion="polite">
         {results.length} {results.length === 1 ? 'dish' : 'dishes'}
       </Text>
+      {myKitchen && equipmentOwned.length ? (
+        <Text style={styles.note}>
+          Only dishes your kitchen can make, from the {equipmentOwned.length} {equipmentOwned.length === 1 ? 'item' : 'items'} you ticked.{' '}
+          <Text style={{ color: colors.accent, fontWeight: '800' }} onPress={() => router.push({ pathname: '/survey', params: { page: 'kitchen' } })} accessibilityRole="link">
+            Edit your kitchen
+          </Text>
+        </Text>
+      ) : null}
       <Text style={styles.note}>
         Allergens are worked out from each recipe&apos;s ingredients. Check labels if you have an allergy
         {excludesAllergens ? ', because packaged spice mixes can contain allergens their names don’t show.' : '.'}

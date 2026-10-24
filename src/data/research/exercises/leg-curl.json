@@ -1,0 +1,781 @@
+{
+  "id": "leg-curl",
+  "number": 12,
+  "name": "Leg curl (lying and seated)",
+  "otherNames": [
+    "Lying leg curl",
+    "Prone leg curl",
+    "Lying hamstring curl",
+    "Seated leg curl",
+    "Seated hamstring curl",
+    "Hamstring curl machine",
+    "Lever leg curl"
+  ],
+  "section": "gym",
+  "type": "strength",
+  "equipment": [
+    "lying (prone) leg curl machine",
+    "or seated leg curl machine (usually pin-loaded weight stack, kg)"
+  ],
+  "noEquipmentAlternative": "Glute bridge (Home 4); with dumbbells, Romanian deadlift (Home 16)",
+  "musclesPrimary": [
+    "hamstrings (biceps femoris long and short head, semitendinosus, semimembranosus)"
+  ],
+  "musclesSecondary": [
+    "gastrocnemius",
+    "gracilis",
+    "sartorius",
+    "popliteus"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": false,
+  "met": 3.5,
+  "compendiumCode": null,
+  "metOptions": [
+    {
+      "code": "02052",
+      "met": 5,
+      "activity": "Extras (text only, harder work): 02052, 5.0 METs, resistance training, squats, deadlift, slow or explosive effort (not a leg curl code; est.); 02050, 6.0 METs, resistance (weight lifting), power lifti"
+    },
+    {
+      "code": "02050",
+      "met": 6,
+      "activity": "Extras (text only, harder work): 02052, 5.0 METs, resistance training, squats, deadlift, slow or explosive effort (not a leg curl code; est.); 02050, 6.0 METs, resistance (weight lifting), power lifti"
+    },
+    {
+      "code": "02055",
+      "met": 5.8,
+      "activity": "Extras (text only, harder work): 02052, 5.0 METs, resistance training, squats, deadlift, slow or explosive effort (not a leg curl code; est.); 02050, 6.0 METs, resistance (weight lifting), power lifti"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 2,
+      "reps": "10-12 at RIR 3",
+      "timeSec": null,
+      "restSec": 82,
+      "tempo": "2 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 2,
+      "reps": "10-12 at RIR 3 (as one circuit station)",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "2 s up, 1 s pause, 3 s down",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "10-12 at RIR 2-3",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "2 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "strength",
+      "sets": 3,
+      "reps": "8-10 at RIR 3",
+      "timeSec": null,
+      "restSec": 120,
+      "tempo": "2 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 2,
+      "reps": "15 at RIR 3-4",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2 s up, 0 s pause, 2 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "10-12 at RIR 2",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "2 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "8-12 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 105,
+      "tempo": "2 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "strength",
+      "sets": 4,
+      "reps": "6-8 at RIR 2",
+      "timeSec": null,
+      "restSec": 150,
+      "tempo": "2 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "15-20 at RIR 2",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2 s up, 0 s pause, 2 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "general_fitness",
+      "sets": 4,
+      "reps": "12-15 at RIR 1-2 (or single-leg 10-12 per leg)",
+      "timeSec": null,
+      "restSec": 68,
+      "tempo": "2 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "8-12 at RIR 0-2, seated first, plus single-leg work",
+      "timeSec": null,
+      "restSec": 120,
+      "tempo": "2 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": 5,
+      "reps": "5-6 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 180,
+      "tempo": "2 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "endurance",
+      "sets": 4,
+      "reps": "20-25 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 50,
+      "tempo": "2 s up, 0 s pause, 2 s down",
+      "perWeek": 2
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle",
+      "left_heel",
+      "right_heel",
+      "left_foot_index",
+      "right_foot_index"
+    ],
+    "phases": [
+      {
+        "name": "start",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": ">= 155",
+        "parsed": {
+          "op": ">=",
+          "value": 155,
+          "max": null
+        }
+      },
+      {
+        "name": "top",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": "<= 70",
+        "parsed": {
+          "op": "<=",
+          "value": 70,
+          "max": null
+        }
+      },
+      {
+        "name": "start_max",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": "<= 175",
+        "parsed": {
+          "op": "<=",
+          "value": 175,
+          "max": null
+        }
+      },
+      {
+        "name": "hip_flat_min_lying",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": ">= 160",
+        "parsed": {
+          "op": ">=",
+          "value": 160,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 3
+  },
+  "formChecks": [
+    {
+      "joint": "knee",
+      "rule": "top knee angle > 70 degrees (equals top phase threshold)",
+      "message": "Curl a little further: heels toward buttocks"
+    },
+    {
+      "joint": "knee",
+      "rule": "start knee angle < 155 degrees (equals start phase threshold)",
+      "message": "Lower all the way down, slowly"
+    },
+    {
+      "joint": "knee",
+      "rule": "start knee angle > 175 degrees (equals start_max threshold)",
+      "message": "Don't snap straight: keep a small bend"
+    },
+    {
+      "joint": "hip",
+      "rule": "lying only: top hip angle < 160 degrees (equals hip_flat_min_lying threshold)",
+      "message": "Keep your hips on the bench"
+    },
+    {
+      "joint": "spine",
+      "rule": "separate flag: shoulder-to-hip line moves away from bench or back-pad line beyond a set margin (no angle used)",
+      "message": "Ribs down, back flat"
+    },
+    {
+      "joint": "hip",
+      "rule": "seated only, separate flag: hip or knee landmark rises from the seat line beyond a set margin (no angle used)",
+      "message": "Keep your thighs down"
+    },
+    {
+      "joint": "knee",
+      "rule": "rep duration < 3.0 s or lowering < 2.0 s",
+      "message": "Slow down: 3 seconds down"
+    }
+  ],
+  "safetyFlags": [
+    "hips_stay_down",
+    "knee_aligned_with_pivot",
+    "pad_above_ankles_not_achilles",
+    "do_not_snap_knees_straight",
+    "stop_on_sudden_hamstring_pain_or_pop",
+    "recent_hamstring_graft_acl_follow_surgeon_limits",
+    "high_blood_pressure_breathe_out_no_failure_sets",
+    "resting_bp_180_120_do_not_lift",
+    "knee_pain_light_load_reduced_range",
+    "lower_back_pain_prefer_seated",
+    "pregnancy_seated_only_ask_obstetrician",
+    "check_machine_max_user_weight"
+  ],
+  "progressions": [
+    "more weight or sets with same tempo (double progression)",
+    "single-leg leg curl",
+    "two-leg curl up, single-leg slow lowering",
+    "seated first then lying as a second exercise"
+  ],
+  "regressions": [
+    "seated leg curl at lightest pin",
+    "half-range curl",
+    "glute bridge (Home 4)"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "three-quarter side, 2 m",
+      "shows": "lying machine: pin in stack, ankle pad just above ankles",
+      "textOverlay": "Pad just above your ankles"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, bench height, 2 m",
+      "shows": "knee lined up with pivot, hips on bench",
+      "textOverlay": "Knee over the hinge"
+    },
+    {
+      "seconds": 10,
+      "angle": "side, 3 m",
+      "shows": "full lying rep: brace, curl 2 s, squeeze 1 s, lower 3 s",
+      "textOverlay": "Up 2 - Squeeze 1 - Down 3"
+    },
+    {
+      "seconds": 8,
+      "angle": "side split screen, 3 m",
+      "shows": "hips down vs hips pop and back arch",
+      "textOverlay": "Hips down, back flat"
+    },
+    {
+      "seconds": 8,
+      "angle": "three-quarter side, 2 m",
+      "shows": "seated setup: back pad to pivot, ankle pad, thigh pad snug",
+      "textOverlay": "Knee at the pivot - Thigh pad snug"
+    },
+    {
+      "seconds": 10,
+      "angle": "side, 3 m",
+      "shows": "full seated rep: back on pad, curl 2 s, squeeze 1 s, return 3 s",
+      "textOverlay": "Back on the pad - Down 2 - Up 3"
+    },
+    {
+      "seconds": 6,
+      "angle": "side close-up, 1.5 m",
+      "shows": "snapped-straight vs soft knee at the start",
+      "textOverlay": "Don't snap straight. Soft knee."
+    },
+    {
+      "seconds": 6,
+      "angle": "front or top-down, 2 m",
+      "shows": "pad above ankles vs on Achilles tendon",
+      "textOverlay": "Not on the heel tendon"
+    }
+  ],
+  "lastResearched": "2026-10-24",
+  "setupSteps": [
+    "Pin: put the selector pin fully into a light plate (Gym 4). Push it all the way in.",
+    "Find your lever or pad adjustment. Many machines let you slide the roller pad (a pull-pin or knob) so that, when your legs are straight, it rests just above your ankles (NASM; ExRx). NASM's single-leg page instead describes the pad on the lower calf near the Achilles (heel) tendon, so brands differ; the ankle-pad rule is: just above the ankles, not on the Achilles tendon, not mid-calf.",
+    "Lie face down. Put your knees just off the edge of the bench so your knee joint lines up with the machine's pivot (the round hinge at the side; ExRx/Fitwill cue). Many benches have a small bend (hip slope) built in; leave it as built.",
+    "Hips and stomach: hips pressed on the pad, hip bones against the bench. Hold the handles (ExRx).",
+    "Head: neck relaxed, face looking down at the bench or slightly to one side, in line with the spine (NASM EDGE cue: head in line with the back).",
+    "Ankles: roller pad on the back of the heels or just above; toes pointing back and slightly toward the shins (dorsiflexed, \"toes pulled toward you\"). ExRx notes that pulling the toes up reduces gastrocnemius \"active insufficiency\" so it can help the curl; a 2023 within-person trial found no clear difference in hamstring EMG between ankle positions, so this is a comfort choice.",
+    "Start position: legs straight but not snapped straight (soft knees). If there is a start-position adjustment, set it so the stack hangs without strain.",
+    "Pin: put the selector pin fully into a light plate (Gym 4).",
+    "Back pad: slide the seat or back pad (usually a lever or pin, often numbered) so your knee joint lines up with the lever's pivot (ExRx: position back of seat so knees are aligned with the fulcrum; Hoist machine guide).",
+    "Ankle pad: set the roller on the back of the lower legs just above the ankles (ExRx), not on the Achilles tendon.",
+    "Thigh pad: lower it until it rests firmly on the thighs just above the knees, snug but not squeezing (ExRx; University of Western Ontario campus rec equipment guide). It stops your hips and thighs lifting.",
+    "Sit: buttocks back against the seat, back against the pad, hands on the handles (ExRx). Put the leg nearer the lever in first (ExRx).",
+    "Start position (if adjustable): some machines have 3–5 start positions (Hammer Strength Select lists five). Choose the one where legs are straight, or very slightly bent if your hamstrings feel a hard stretch behind the knee; reduce range if the stretch strains your knees (Hoist guide).",
+    "Check for leg length: if the pad sits on your calves or Achilles, shorten the lever or ask staff to show you the adjustment; shorter people often need the seat moved forward."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": "A. Lying leg curl",
+      "title": "Brace and flatten",
+      "action": "With legs straight (soft knees), gently tighten your stomach and press your hips into the bench.",
+      "feel": "Hip bones heavy on the pad; lower back not arched.",
+      "breathing": "Breathe in.",
+      "tempo": null,
+      "visualCheck": "Side: back flat, hips on bench, legs almost straight. Front/top: hips level."
+    },
+    {
+      "n": 2,
+      "part": "A. Lying leg curl",
+      "title": "Curl up",
+      "action": "Bend your knees to bring the heels toward the buttocks, moving only the lower legs.",
+      "feel": "Back of thighs working; maybe slight calf effort.",
+      "breathing": "Breathe out as you curl.",
+      "tempo": null,
+      "visualCheck": "Side: thighs and hips stay down; heels travel in an arc. Front: both legs move together."
+    },
+    {
+      "n": 3,
+      "part": "A. Lying leg curl",
+      "title": "Squeeze at the top",
+      "action": "Stop when the heels are near the buttocks or when your hips would start to lift, whichever comes first (NASM single-leg cue: heel up as far as possible without arching or lifting the hips).",
+      "feel": "Strong hamstring squeeze; no pinch in the lower back.",
+      "breathing": "Finish breathing out.",
+      "tempo": null,
+      "visualCheck": "Side: knee angle about 40–70° (est.), hips still flat."
+    },
+    {
+      "n": 4,
+      "part": "A. Lying leg curl",
+      "title": "Lower slowly",
+      "action": "Let the pad return by straightening the knees under control.",
+      "feel": "Hamstrings stretching and braking the weight.",
+      "breathing": "Breathe in.",
+      "tempo": null,
+      "visualCheck": "Side: smooth, no drop; hips stay down."
+    },
+    {
+      "n": 5,
+      "part": "A. Lying leg curl",
+      "title": "Stop just short of locking",
+      "action": "Stop with the knees almost straight (NASM: stop just short of full extension to keep tension).",
+      "feel": "Weight held by muscle, stack not touching.",
+      "breathing": "Breathe in fully before the next rep.",
+      "tempo": null,
+      "visualCheck": "Side: a small bend visible at the knee."
+    },
+    {
+      "n": 6,
+      "part": "A. Lying leg curl",
+      "title": "Repeat for the planned reps, then lower the stack slowly until the plates rest silently; sit up and step off",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 7,
+      "part": "B. Seated leg curl",
+      "title": "Brace",
+      "action": "Back against the pad, thigh pad snug, legs straight and soft, tighten your stomach lightly.",
+      "feel": "Thighs held under the pad, back supported.",
+      "breathing": "Breathe in.",
+      "tempo": null,
+      "visualCheck": "Side: upright back, thighs level or slightly sloping, ankle pad above ankles."
+    },
+    {
+      "n": 8,
+      "part": "B. Seated leg curl",
+      "title": "Curl down and back",
+      "action": "Press the roller pad down and back by bending the knees until the lower legs are under the seat line, about 90° or a little more bent (NASM seated start/finish cues use about 90° knee bends).",
+      "feel": "Back of thighs working; the pad pushing into the calves.",
+      "breathing": "Breathe out.",
+      "tempo": null,
+      "visualCheck": "Side: the back stays against the pad; thighs stay pressed under the pad."
+    },
+    {
+      "n": 9,
+      "part": "B. Seated leg curl",
+      "title": "Squeeze",
+      "action": "Pause with the knees bent as far as your range allows, hips still.",
+      "feel": "Hamstring squeeze.",
+      "breathing": "Brief light brace.",
+      "tempo": null,
+      "visualCheck": "Side: knee angle about 60–90° (est.); no leaning forward off the back pad."
+    },
+    {
+      "n": 10,
+      "part": "B. Seated leg curl",
+      "title": "Return slowly",
+      "action": "Let the legs rise back toward straight, keeping tension.",
+      "feel": "Stretch behind the thighs and knees.",
+      "breathing": "Breathe in.",
+      "tempo": null,
+      "visualCheck": "Side: no jerk; thigh pad holds legs down."
+    },
+    {
+      "n": 11,
+      "part": "B. Seated leg curl",
+      "title": "Stop just short of locking and repeat. Finish by returning the stack until it rests gently",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 12,
+      "part": "C. Single-leg version (progression)",
+      "title": "Use about half the load (est.)",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 13,
+      "part": "C. Single-leg version (progression)",
+      "title": "Curl with one leg while the other rests on the pad or floor (machine permitting)",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 14,
+      "part": "C. Single-leg version (progression)",
+      "title": "Keep hips and thighs still; switch legs after the set",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Hips lifting off the bench (lying)",
+      "text": "Hips lifting off the bench (lying). Why: moves the load onto the lower back and takes work off the hamstrings (Liftosaur; NASM names hip shift as a common mistake). Fix: lighter weight, stop the curl before the hips rise; press hips into the bench. Note: Iron Man magazine allows about an inch of hip rise for full contraction; FitPlate chooses the stricter \"hips stay down\" because sources agree it reduces back strain."
+    },
+    {
+      "title": "Arching the lower back",
+      "text": "Arching the lower back. Why: the spine takes up the effort instead of the knees (ExRx: keep the torso flat to limit lower back hyperextension). Fix: tighten the stomach, lower the weight, or switch to the seated machine."
+    },
+    {
+      "title": "Using too much weight and swinging",
+      "text": "Using too much weight and swinging. Why: momentum, hip pop and a jerk on the hamstring at the end of range (Fitness Volt; Famme). Fix: weight that allows 10–12 slow reps at about 3 reps in reserve."
+    },
+    {
+      "title": "Dropping the weight on the way down",
+      "text": "Dropping the weight on the way down. Why: loses the controlled stretch under load and can jolt the knees and hamstrings. Fix: 3 seconds down, always."
+    },
+    {
+      "title": "Misaligned pivot (knee not at the hinge)",
+      "text": "Misaligned pivot (knee not at the hinge). Why: the pad slides along your leg and the range shifts (ExRx; Fitwill; Hoist). Fix: re-adjust the seat or lever and note the settings."
+    },
+    {
+      "title": "Pad on the Achilles tendon or too high on the calf",
+      "text": "Pad on the Achilles tendon or too high on the calf. Why: pressure on the tendon, or the pad slips and the lever arm changes. Fix: just above the ankles; ask staff for the adjustment."
+    },
+    {
+      "title": "Locking out the knees and bouncing at the bottom",
+      "text": "Locking out the knees and bouncing at the bottom. Why: transfers the load to the joint and lets momentum do the work. Fix: stop just short of straight and keep tension."
+    },
+    {
+      "title": "Rushing through half-reps",
+      "text": "Rushing through half-reps. Why: less muscle work; for the seated curl in particular the lengthened start is where the benefit lies (Maeo 2021). Fix: use the full comfortable range at a lighter load."
+    },
+    {
+      "title": "Lifting the thighs off the seat pad (seated)",
+      "text": "Lifting the thighs off the seat pad (seated). Why: the thigh pad is not doing its job. Fix: lower the pad firmly onto the thighs and reduce the load."
+    }
+  ],
+  "safetyNotes": [
+    "Hamstring strain or tear (recent): NHS Wales advises stopping exercise at the first sign of pain in the leg; mild strains settle in a few days, severe ones (pop, can't use the leg) need a GP (nidirect). Return to leg curls only when pain-free; start very light.",
+    "Hamstring-graft knee surgery (ACL): published protocols delay resisted hamstring curls for about 6–12 weeks (e.g. Indiana Bone & Joint: none before week 8; Dartmouth: restricted 12 weeks). Follow your surgeon.",
+    "Knee problems: use a light load and reduced range; stop if kneecap or joint pain rises.",
+    "Lower back problems: prefer the seated version (back supported); on the lying machine, stop if your back arches or you feel pain.",
+    "High blood pressure / heart disease: breathe continuously, no straining to failure, rest at least 60 s (est.).",
+    "Pregnancy: the face-down lying machine is not suitable once the belly is large; secondary sources say traditional advice (attributed to ACOG) avoids lying flat on the back after the first trimester. Use the seated version and ask your obstetrician.",
+    "Larger bodies: check the machine's maximum user weight and whether the bench and pad fit."
+  ],
+  "sources": [
+    "ExRx.net, Lever Lying Leg Curl. https://exrx.net/WeightExercises/Hamstrings/LVLyingLegCurl",
+    "ExRx.net, Lever Seated Leg Curl. https://exrx.net/WeightExercises/Hamstrings/LVSeatedLegCurl",
+    "ExRx.net, Lever Seated Leg Curl (plate loaded; ankle dorsiflexion note). https://exrx.net/WeightExercises/Hamstrings/LVSeatedLegCurlH",
+    "NASM, Exercise library: Seated Leg Curl. https://www.nasm.org/resource-center/exercise-library/seated-leg-curl",
+    "NASM, Exercise library: Lying Leg Curl; Single-Leg Lying Leg Curl; Single-Leg Seated Leg Curl. https://www.nasm.org/resource-center/exercise-library/lying-leg-curl ; https://www.nasm.org/exercise-library/lying-leg-curl-single-leg ; https://www.nasm.org/resource-center/exercise-library/single-leg-seated-leg-curl",
+    "Maeo S et al. (2021), Greater hamstrings muscle hypertrophy but similar damage protection after training at long versus short muscle lengths, Med Sci Sports Exerc 53(4):825–837. https://pubmed.ncbi.nlm.nih.gov/33009197/ ; https://pmc.ncbi.nlm.nih.gov/articles/PMC7969179/",
+    "2024 Adult Compendium of Physical Activities (Herrmann et al., J Sport Health Sci 2024): codes 02054, 02052, 02050, 02055. https://pacompendium.com/conditioning-exercise/ ; https://pacompendium.com/wp-content/uploads/2024/02/1_2024-adult-compendium_1_2024.pdf ; https://pubmed.ncbi.nlm.nih.gov/38242596/",
+    "NHS Wales 111, Hamstring injury. https://111.wales.nhs.uk/hamstringinjury/",
+    "nidirect (NI Government), Hamstring injury (muscle strain). https://www.nidirect.gov.uk/node/10640",
+    "ACL reconstruction hamstring autograft protocols: Indiana Bone & Joint https://www.ibji.com/uploads/documents/ACLR-Hamstring-Autograft-Protocol.pdf ; Dartmouth-Hitchcock https://www.dartmouth-hitchcock.org/sites/default/files/2022-06/ACL-Recontruction-Physical-Therapy-Protocol.pdf ; Massachusetts General https://www.massgeneral.org/assets/MGH/pdf/orthopaedics/sports-medicine/physical-therapy/rehabilitation-protocol-for-ACL.pdf ; University of Utah https://www.justinernatmd.med.utah.edu/pdf/acl-reconstruction-pt-protocol.pdf",
+    "Hoist Fitness, HD-3400 leg extension/leg curl (pivot alignment, pad setup). https://www.hoistfitness.com/pages/hd-3400-leg-extension-leg-curl",
+    "University of Western Ontario Campus Rec, equipment guide: legs. https://www.uwo.ca/campusrec/orientation/equipment_guides/legs.html",
+    "HKU, Active hamstring exercises handout. https://www.cse.hku.hk/document/exercises-Active-Hamstrings.pdf",
+    "Vanderbilt Sports Medicine, Knee OA hamstring exercises. https://www.vumc.org/sports-medicine/sites/vumc.org.sports-medicine/files/public_files/documents/Knee_OA_ex_%20hamstring.pdf",
+    "Vanderbilt Health Library, Lying hamstring curl. https://healthlibrary.vanderbilthealth.com/library/HealthSheets/3,S,89915",
+    "Hinge Health, How to do a hamstring curl. https://www.hingehealth.com/resources/articles/hamstring-curl/",
+    "Nordic hamstring exercise injury-prevention trial (Petersen et al. 2011, Am J Sports Med). https://pubmed.ncbi.nlm.nih.gov/21825112/",
+    "Iron Man Magazine, lying leg curl technique (hip lift view). https://www.ironmanmagazine.com/?p=945",
+    "Fitness Volt, Lying leg curl; and lying vs seated comparison. https://fitnessvolt.com/24561/lying-leg-curl/ ; https://fitnessvolt.com/exercise-vs-exercise/lying-leg-curls-vs-seated-hamstring/",
+    "Liftosaur, Leverage machine lying leg curl; Famme, Lying leg curl. https://www.liftosaur.com/exercises/leverage-machine-lying-leg-curl ; https://famme.no/blogs/trening/lying-leg-curl",
+    "University of Vienna master's theses on ankle position and leg curl EMG (lower-evidence). https://utheses-gateway.univie.ac.at/api/document/get/file/72313 ; https://utheses-gateway.univie.ac.at/api/document/get/file/70204",
+    "Penn State, role of the gastrocnemius during the leg curl. https://pure.psu.edu/en/publications/examining-the-role-of-the-gastrocnemius-during-the-leg-curl-exerc/",
+    "Muscle & Strength, lying leg curl and seated leg curl exercise profiles. https://www.muscleandstrength.com/node/3931 ; https://www.muscleandstrength.com/exercises/seated-leg-curl",
+    "Indian seller listings (leg curl machines, 60–100 kg stacks; seller claims): IndiaMART https://m.indiamart.com/pune/leg-curl-machine.html ; TradeIndia https://www.tradeindia.com/products/seated-leg-curl-c8246225.html ; Gymleco https://www.gymleco.com/wp-content/uploads/2022/05/341_Gymleco_Legcurl_Seated.pdf",
+    "Escamilla RF et al. (1998), Biomechanics of the knee during closed and open kinetic chain exercises. https://pubmed.ncbi.nlm.nih.gov/9565938/",
+    "Zourdos MC et al. (2016), RIR-based RPE scale. https://openrepository.aut.ac.nz/items/efef3b25-6701-4fb5-bb82-55fcd2a26027/full",
+    "ACSM (2009), Progression models in resistance training for healthy adults. https://www.sportgeneeskunde.com/wp-content/uploads/ACSM-Position-Stand-Progression-Models-in-Resistance-Training-for-Healthy-Adults.pdf",
+    "ACSM (Zaleski), exercise for hypertension. https://acsm.org/?p=18319",
+    "Resistance training in hypertensives (Frontiers in Physiology 2020). https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2020.00481/pdf",
+    "Colberg SR et al. (2016), ADA position statement. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/",
+    "ACC summary of the 2023 AHA statement on resistance exercise. https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2023/12/19/15/33/resistance-exercise-training",
+    "AHA Professional, physical activity for elevated BP or cholesterol (Gibbs et al.). https://professional.heart.org/en/science-news/Physical-Activity-as-a-Critical-Component-of-First-Line-Treatment-for-Elevated-BP-or-Cholesterol/commentary",
+    "Donnelly JE et al. (2009), ACSM position stand on weight loss. https://pubmed.ncbi.nlm.nih.gov/19127177/",
+    "PCOS exercise position statement / 2023 guideline evidence. https://vuir.vu.edu.au/45855/1/1-s2.0-S2772696723000054-main.pdf",
+    "Exercise in hypothyroidism, systematic review (2023). https://pubmed.ncbi.nlm.nih.gov/37999992/",
+    "Pharmacy Magazine CPD, Exercise and asthma. https://www.pharmacymagazine.co.uk/cpd-modules/making-a-difference-in-asthma-care/exercise-and-asthma-528343",
+    "Osteoporosis Canada, Too Fit To Fracture. https://osteoporosis.ca/wp-content/uploads/2014-07-25-Are-you-too-fit-to-fracture-for-patients.pdf",
+    "ACOG Committee Opinion No. 804 (abstract record). https://opqic.org/acog-committee-opinion-no-804-physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period/",
+    "Riverview Health, pregnancy exercise (secondary); Healthline, exercises to avoid while pregnant (secondary). https://riverview.org/sites/womens/article/pregnancy-exercise ; https://healthline.com/health/fitness/exercises-to-avoid-while-pregnant",
+    "NNUH NHS, Post-natal physiotherapy advice. https://www.nnuh.nhs.uk/publication/download/post-natal-physiotherapy-advice-and-exercises-v2-1",
+    "Royal Devon NHS, Postnatal physiotherapy advice. https://www.royaldevon.nhs.uk/media/ibneih1b/patient-information-leaflet-postnatal-physiotherapy-advice-rde-20-143-001.pdf",
+    "arXiv (2023), pose-based repetition counting limitations. https://arxiv.org/html/2308.08632v2"
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 28.6,
+      "70kg": 24.5,
+      "80kg": 21.4
+    },
+    "per300kcal": {
+      "60kg": 85.7,
+      "70kg": 73.5,
+      "80kg": 64.3
+    }
+  },
+  "gymAccess": [
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "strength",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "leg_day",
+    "full_body_machine_circuit",
+    "hamstring_balance",
+    "20_to_60_min_sessions"
+  ],
+  "swapsByAccess": {
+    "none": "Glute bridge (Home 4)",
+    "home_equipment": "Dumbbell Romanian deadlift (Home 16) or resistance band hamstring curl",
+    "basic_gym": "The other curl machine (seated vs lying) if only one is free, or dumbbell Romanian deadlift",
+    "full_gym": "The other curl type (seated if you did lying) or hip thrust (Gym 17)"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "Breathe out on the curl; moderate loads 10-15 reps, stop 2-3 reps before failure; rest > 60 s; no lifting if resting BP >= 180/120",
+      "source": "ACSM hypertension guidance (Zaleski); Frontiers in Physiology 2020 review"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "2-3 non-consecutive resistance days per week; usual glucose checks if on insulin or sulfonylureas",
+      "source": "ADA position statement, Colberg et al. 2016"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "After clearance: light load, 10-15 reps, continuous breathing, no straining",
+      "source": "AHA resistance exercise statements (2007, 2023)"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "Part of 2+ days/week resistance work with aerobic activity",
+      "source": "AHA scientific statement (Gibbs et al.)"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Seated machine may fit better than the lying bench; check machine maximum user weight and pad fit",
+      "source": "ACSM weight management position stand (Donnelly et al. 2009); comfort advice (est.)"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "Fits muscle-strengthening guidance; no leg-curl-specific advice found",
+      "source": "International PCOS guideline 2023 / exercise position statement"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "Train normally if controlled; beginner level with ongoing fatigue",
+      "source": "Systematic review 2023 (PubMed 37999992)"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Warm up and keep reliever inhaler nearby",
+      "source": "Pharmacy Magazine CPD citing Asthma UK"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Light load, reduced range, slow tempo; stop if pain rises during or after",
+      "source": "Vanderbilt Sports Medicine knee OA hamstring handout; Hinge Health guide"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Prefer seated curl; on lying curl keep hips down and back flat; stop with pain or leg symptoms",
+      "source": "ExRx; NASM; Famme and Fitness Volt (secondary)"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "ok",
+      "change": "Little shoulder load; light grip (no condition-specific source found)",
+      "source": "Not found"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "modify",
+      "change": "2x/week, 8-12 reps; seated version preferred; avoid spinal rounding; with spine fracture see a physiotherapist first",
+      "source": "Osteoporosis Canada, Too Fit To Fracture"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "modify",
+      "change": "Seated curl only, lighter load, no breath-holding; avoid face-down lying machine as belly grows and avoid lying flat on back; ask obstetrician",
+      "source": "ACOG Committee Opinion 804 (secondary citations); Riverview Health; Healthline"
+    },
+    {
+      "condition": "postpartum",
+      "status": "modify",
+      "change": "Pelvic floor work first; light machine leg work once cleared, especially after caesarean",
+      "source": "NHS postnatal physiotherapy leaflets (NNUH, Royal Devon)"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Only with surgeon or physiotherapist approval; hamstring-graft ACL protocols delay resisted curls about 6-12 weeks",
+      "source": "ACL protocols (Indiana Bone and Joint; Dartmouth-Hitchcock; MGH; Utah)"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "gym"
+    ],
+    "bodyRegion": [
+      "lower"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "fat_loss",
+      "muscle",
+      "strength",
+      "endurance"
+    ],
+    "intensity": "moderate",
+    "noise": "quiet",
+    "space": "machine",
+    "typicalMinutes": 8,
+    "kcalPer10min70kg": 41,
+    "difficulty1to5": 2,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Gym",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Strength",
+    "Legs",
+    "Rep counter",
+    "Under 10 min"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-10-24",
+      "file": "FitPlate_Fitness_2026-10-24.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

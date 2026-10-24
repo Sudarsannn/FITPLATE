@@ -1,0 +1,833 @@
+{
+  "id": "high-triglycerides",
+  "type": "condition",
+  "name": "High triglycerides",
+  "surveyQuestion": "Do you have any of these health conditions? (select all that apply) -> High triglycerides. Check question: Has a doctor told you your triglycerides are high or borderline? Yes, high / Yes, borderline (lifestyle-only mode) / No / Never tested (suggest lipid test, CSI) / Not sure. Follow-ups: latest triglyceride value in mg/dL (500 or more hides numeric food targets and shows a talk-to-your-doctor card); Do you take any medicine for cholesterol, triglycerides, diabetes, BP or thyroid? No / Yes / Not sure; Do you drink alcohol? Never / Rarely / Weekly / Most days; Do you eat fish?; optional lab entry (triglycerides, total cholesterol, LDL, HDL, non-HDL, HbA1c, TSH, test date, fasting or non-fasting)",
+  "targets": [
+    {
+      "nutrient": "energy",
+      "unit": "kcal/day",
+      "generalAdult": 2110,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "limit",
+      "source": "ICMR-NIN 2020 (2110 sedentary man, 1660 sedentary woman) (secondary, unverified); modest deficit only if BMI 23 or more or waist 90/80 cm or more; target 5-10% weight loss (NLA 2023)"
+    },
+    {
+      "nutrient": "protein",
+      "unit": "g/kg/day",
+      "generalAdult": 0.83,
+      "profileValue": 0.83,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); ACC 2021 mentions a higher protein share in moderate hypertriglyceridemia with no number: Not found"
+    },
+    {
+      "nutrient": "total_fat",
+      "unit": "% energy",
+      "generalAdult": 30,
+      "profileValue": 30,
+      "min": null,
+      "max": 30,
+      "direction": "same",
+      "source": "DGI 2024 (30% or less); NLA 2023 25-35% individualised; at 500 mg/dL or more a doctor-led temporary 10-15% of energy (20-40 g/day, NLA nutrition table) or 20-30 g/day from 1000 mg/dL (ACC 2021): doctor only"
+    },
+    {
+      "nutrient": "saturated_fat",
+      "unit": "% energy",
+      "generalAdult": 10,
+      "profileValue": 7,
+      "min": null,
+      "max": 7,
+      "direction": "limit",
+      "source": "As P4: NLA Part 2 2015 (under 7%); ICMR 2018 via Viswanathan 2019 (secondary); WHO 2023 general 10%; 15.6 g at 2000 kcal (calc.)"
+    },
+    {
+      "nutrient": "trans_fat",
+      "unit": "% energy",
+      "generalAdult": 1,
+      "profileValue": 1,
+      "min": null,
+      "max": 1,
+      "direction": "limit",
+      "source": "As P4: WHO 2023 (1% or less); as low as possible; under 2.2 g at 2000 kcal (calc.)"
+    },
+    {
+      "nutrient": "mufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "raise",
+      "source": "Not found as a number; as P4, plant MUFA oils and nuts in measured amounts (WHO 2023)"
+    },
+    {
+      "nutrient": "pufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "raise",
+      "source": "Not found as a number; as P4 (WHO 2023; AHA)"
+    },
+    {
+      "nutrient": "omega_3_fish",
+      "unit": "servings/week",
+      "generalAdult": null,
+      "profileValue": 2,
+      "min": 2,
+      "max": null,
+      "direction": "raise",
+      "source": "AHA 2021 dietary guidance (at least 2 fish meals a week; fried fish not associated with benefit); oily fish such as sardine and hilsa; per-100g EPA+DHA of Indian fish: Not found here"
+    },
+    {
+      "nutrient": "epa_dha_general_health",
+      "unit": "mg/day",
+      "generalAdult": 250,
+      "profileValue": 250,
+      "min": 250,
+      "max": 500,
+      "direction": "raise",
+      "source": "General-health reference only: 2025 review of national and international recommendations (250 mg/day most common); EFSA labelling reference 250 mg/day; WHO range 250-500 mg/day (all via a secondary review); ICMR-NIN value Not found"
+    },
+    {
+      "nutrient": "epa_dha_treatment_dose",
+      "unit": "g/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": 2,
+      "max": 4,
+      "direction": "raise",
+      "source": "NLA 2023 lists 2-4 g/day EPA+DHA to lower triglycerides; AHA 2019 advisory: 4 g/day prescription omega-3 lowers TG about 20-30%; doctor only, prescription dose, never an app target or quick choice; dose-related atrial fibrillation warning (EMA via MHRA)"
+    },
+    {
+      "nutrient": "plant_omega_3_alpha_linolenic",
+      "unit": "-",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "raise",
+      "source": "Flaxseed, walnuts, mustard oil as food only; flaxseed and triglycerides mixed (31 RCTs about -19.8 mg/dL with whole flaxseed; 2009 meta-analysis no change); ICMR-NIN ALA value Not found"
+    },
+    {
+      "nutrient": "dietary_cholesterol",
+      "unit": "mg/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No P5-specific change found; AHA 2019 sets no number; if P4 selected, P4 under 200 mg/day (NLA via P4)"
+    },
+    {
+      "nutrient": "total_carbohydrate",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No ICMR total found; DGI 2024 caps cereals and millets at 45% of energy (secondary, unverified, as P4); shift quality to whole grains, pulses, vegetables (NLA 2023; ACC 2021; CSI 2024); ICMR-INDIAB carbohydrate share about 62% of energy (via news, secondary, unverified)"
+    },
+    {
+      "nutrient": "refined_carbohydrate",
+      "unit": "portions/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "limit",
+      "source": "NLA 2023 and ACC 2021 (limit refined starch and simple carbohydrate); no numeric limit found; whole vs refined grain meta-analysis TG change -0.04 mmol/L not significant (Hollaender 2015)"
+    },
+    {
+      "nutrient": "added_sugar",
+      "unit": "g/day",
+      "generalAdult": 25,
+      "profileValue": 25,
+      "min": null,
+      "max": 25,
+      "direction": "limit",
+      "source": "WHO 2015 (under 10% of energy strong; below 5%, about 25 g, conditional); NLA 2023 (reduce, markedly reduce at 500-749, eliminate at 750 or more; secondary, unverified); ICMR-NIN figure conflicts (NIN director: around 30 g/day via Down To Earth); DGI 2024 PDF not opened; honey, jaggery and syrups count as free sugars"
+    },
+    {
+      "nutrient": "fructose",
+      "unit": "g/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "limit",
+      "source": "Not found as a TG-specific limit; AHA 2011 linked more than 50-100 g/day to higher TG (via summary); isocaloric trials no overall effect, higher doses above about 60 g/day or extra calories raise TG (Sievenpiper-group meta-analyses)"
+    },
+    {
+      "nutrient": "fibre",
+      "unit": "g/day",
+      "generalAdult": 30,
+      "profileValue": 30,
+      "min": 30,
+      "max": null,
+      "direction": "raise",
+      "source": "As P4: ICMR-NIN 2020 about 30 g/2000 kcal (secondary, unverified); University of Michigan Health (fibre-rich diets lowered TG in some studies)"
+    },
+    {
+      "nutrient": "soluble_fibre",
+      "unit": "g/day",
+      "generalAdult": null,
+      "profileValue": 5,
+      "min": 5,
+      "max": 25,
+      "direction": "raise",
+      "source": "As P4: NLA Part 2 via Healio; barley beta-glucan lowered TG about 11.8 mg/dL in 8 trials (meta-analysis)"
+    },
+    {
+      "nutrient": "sodium",
+      "unit": "mg/day",
+      "generalAdult": 2000,
+      "profileValue": 2000,
+      "min": null,
+      "max": 2000,
+      "direction": "limit",
+      "source": "WHO 2012; DGI 2024; ICMR STW (as P3); no triglyceride-specific value found"
+    },
+    {
+      "nutrient": "salt",
+      "unit": "g/day",
+      "generalAdult": 5,
+      "profileValue": 5,
+      "min": null,
+      "max": 5,
+      "direction": "limit",
+      "source": "WHO 2012; DGI 2024 (as P3)"
+    },
+    {
+      "nutrient": "potassium",
+      "unit": "mg/day",
+      "generalAdult": 3510,
+      "profileValue": 3510,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "WHO 2012; ICMR-NIN 2020 3500 mg (secondary, unverified); P3/P13 safety rules apply"
+    },
+    {
+      "nutrient": "calcium",
+      "unit": "mg/day",
+      "generalAdult": 1000,
+      "profileValue": 1000,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "iron_men",
+      "unit": "mg/day",
+      "generalAdult": 19,
+      "profileValue": 19,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "iron_women",
+      "unit": "mg/day",
+      "generalAdult": 29,
+      "profileValue": 29,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "magnesium_men",
+      "unit": "mg/day",
+      "generalAdult": 440,
+      "profileValue": 440,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 via FSSAI (secondary, unverified)"
+    },
+    {
+      "nutrient": "magnesium_women",
+      "unit": "mg/day",
+      "generalAdult": 370,
+      "profileValue": 370,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 via FSSAI (secondary, unverified)"
+    },
+    {
+      "nutrient": "vitamin_d",
+      "unit": "µg/day",
+      "generalAdult": 15,
+      "profileValue": 15,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "vitamin_b12",
+      "unit": "µg/day",
+      "generalAdult": 2.2,
+      "profileValue": 2.2,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 as adopted by FSSAI (secondary, unverified)"
+    },
+    {
+      "nutrient": "folate_men",
+      "unit": "µg DFE/day",
+      "generalAdult": 300,
+      "profileValue": 300,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "folate_women",
+      "unit": "µg DFE/day",
+      "generalAdult": 220,
+      "profileValue": 220,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "niacin",
+      "unit": "mg/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No TG-specific food target found; niacin and fibrates are medicines the doctor decides (Endocrine Society 2012 via AAFP); no niacin dose given"
+    },
+    {
+      "nutrient": "alcohol",
+      "unit": "standard drinks/day",
+      "generalAdult": null,
+      "profileValue": 0,
+      "min": null,
+      "max": 2,
+      "direction": "limit",
+      "source": "NLA 2023 (restrict below 500 mg/dL, abstain at 500 or more); AHA 2011 (abstinence for very high TG, via summary); NHS up to 14 units/week over 3 or more days; ceiling as P3 (ACC/AHA 2017: 2 men, 1 women); India-specific TG value Not found"
+    },
+    {
+      "nutrient": "weight_loss_if_overweight",
+      "unit": "% body weight",
+      "generalAdult": null,
+      "profileValue": 5,
+      "min": 5,
+      "max": 10,
+      "direction": "limit",
+      "source": "NLA 2023 (5-10% for increased adiposity); AHA 2011 about 20% TG reduction (via secondary summary)"
+    },
+    {
+      "nutrient": "physical_activity",
+      "unit": "min/week",
+      "generalAdult": 150,
+      "profileValue": 150,
+      "min": 150,
+      "max": null,
+      "direction": "raise",
+      "source": "NLA 2023; NHS (150 min moderate or 75 min vigorous); exercise training lowered TG about 8 mg/dL (2025 meta-analysis of 148 RCTs)"
+    },
+    {
+      "nutrient": "water",
+      "unit": "mL/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No change from FitPlate general water target; never pushed higher; heart, kidney, liver disease, pregnancy or diuretics: follow your doctor's advice"
+    }
+  ],
+  "bloodMarkers": [
+    {
+      "marker": "Triglycerides (bands)",
+      "target": "Under 150 not raised; 150-499 raised, moderate range (ACC: fasting 150 or non-fasting 175); 500-999 severe, pancreatitis prevention is the main aim, doctor needed; 1000 or more very severe, urgent review; LAI Indian bands Not found; app never diagnoses",
+      "unit": "mg/dL",
+      "source": "ESC/EAS 2019; ACC 2021 (via BMJ Best Practice summary); NLA 2023; Endocrine Society 2012 (AAFP: severe 1000-1999); AHA 2019 (FDA approval above 500)"
+    },
+    {
+      "marker": "Pancreatitis threshold",
+      "target": "500 mg/dL or more: main aim becomes preventing acute pancreatitis (NLA 2023, ACC 2021); Endocrine Society places its pancreatitis-risk category at 1000 mg/dL or more; FitPlate uses 500 as the see-a-doctor line",
+      "unit": "mg/dL",
+      "source": "NLA 2023; ACC 2021; Endocrine Society 2012; AHA 2019"
+    },
+    {
+      "marker": "Triglycerides unit conversion",
+      "target": "mmol/L = mg/dL divided by about 88.57; 150 mg/dL = 1.7 mmol/L; 500 mg/dL = 5.6 mmol/L",
+      "unit": "mmol/L",
+      "source": "ESC/EAS 2019; ACC 2021 (lab conversion factor not re-verified)"
+    },
+    {
+      "marker": "Non-HDL cholesterol",
+      "target": "Main lipid focus when triglycerides are above 150; goals as P4 set by the doctor (under 130 low or moderate risk, under 100 high risk, under 80 or 85 very high risk)",
+      "unit": "mg/dL",
+      "source": "CSI 2024; LAI (as P4, secondary, unverified)"
+    },
+    {
+      "marker": "HDL cholesterol",
+      "target": "Low at under 40 (men) or under 50 (women); see P6",
+      "unit": "mg/dL",
+      "source": "IDF metabolic syndrome definition"
+    },
+    {
+      "marker": "Metabolic syndrome (South Asian)",
+      "target": "Waist 90 cm or more (men) or 80 cm or more (women) plus any 2 of: triglycerides 150 or more, low HDL, raised BP, raised fasting glucose; see P6",
+      "unit": "cm; mg/dL",
+      "source": "IDF consensus definition"
+    },
+    {
+      "marker": "Fasting vs non-fasting",
+      "target": "Non-fasting lipid tests acceptable for risk (CSI 2024); Endocrine Society advises a fasting sample to diagnose hypertriglyceridemia; ACC non-fasting 175 mg/dL equals fasting 150",
+      "unit": "-",
+      "source": "CSI 2024; Endocrine Society 2012; ACC 2021"
+    },
+    {
+      "marker": "HbA1c and fasting glucose",
+      "target": "Stored only; uncontrolled diabetes is a common cause of high TG; ADA 2025 advises intensifying lifestyle and optimising glucose when TG is 150 or more; ranges as P1/P2",
+      "unit": "%; mg/dL",
+      "source": "ADA 2025 (via secondary summary); Endocrine Society 2012"
+    },
+    {
+      "marker": "TSH",
+      "target": "Stored only; underactive thyroid is a common, easily tested cause; see P9",
+      "unit": "mIU/L",
+      "source": "Endocrine Society 2012 (via AAFP); clinical review"
+    },
+    {
+      "marker": "eGFR",
+      "target": "Stored only; kidney disease can raise TG; see P13",
+      "unit": "mL/min/1.73 m2",
+      "source": "Endocrine Society 2012 (via AAFP)"
+    },
+    {
+      "marker": "LDL cholesterol and Lp(a)",
+      "target": "Goals set by the doctor by risk group; see P4",
+      "unit": "mg/dL",
+      "source": "As P4 (LAI, CSI 2024)"
+    }
+  ],
+  "waterMl": {
+    "min": null,
+    "max": null,
+    "notes": "No change from FitPlate general water target; high triglycerides alone do not change water needs. Drink more in heat, exercise or fever per general rules. With heart disease, heart failure, kidney or liver disease, pregnancy or diuretics, the app shows only the general range and never pushes a higher target. Choose water, plain chaas and unsweetened drinks; avoid sweet chai, soft drinks, packaged juice, sharbat and alcohol. Follow your doctor's advice."
+  },
+  "sodiumMgMax": 2000,
+  "dietaryCholesterolMgMax": null,
+  "foodsFavour": [
+    "whole pulses and dals (rajma, chana, moong, masoor, urad, matki, sprouts) in place of extra rice",
+    "vegetables for half the plate (bhindi, brinjal, methi, palak, beans, cabbage, gourds)",
+    "oats, barley (jau), ragi, jowar, bajra and whole-wheat atta in measured portions",
+    "whole fruit (guava, apple, orange, papaya) instead of juice",
+    "fatty fish about twice a week, baked, grilled or in light curry, not fried (sardine, hilsa, threadfin bream; bangda not confirmed)",
+    "small amounts of flaxseed, walnuts and mustard oil for plant omega-3",
+    "plain curd, plain chaas and toned milk",
+    "water, unsweetened tea or coffee, sugar-free nimbu pani",
+    "non-tropical cooking oils in measured amounts"
+  ],
+  "foodsLimit": [
+    "sugar and sugary drinks (sweet chai, cold coffee, lassi, soft drinks, packaged juice, energy drinks, sharbat)",
+    "mithai and desserts (gulab jamun, halwa, kheer, jalebi, ladoo); honey, jaggery and syrups count as sugar",
+    "refined flour foods (white bread, pav, bakery items, noodles, maida rotis and parathas, namkeen, biscuits)",
+    "large portions of polished white rice (biryani, pulao, fried rice)",
+    "alcohol (none at all if triglycerides are 500 mg/dL or more)",
+    "fruit juice (and fruit itself if triglycerides are 500 mg/dL or more, with the doctor)",
+    "deep-fried snacks, vanaspati and reused frying oil",
+    "ultra-processed packaged snacks (also high in salt)",
+    "over-the-counter fish-oil capsules used instead of a doctor's prescription"
+  ],
+  "goodFitDishes": [
+    {
+      "dishNumber": 66,
+      "dishName": "Sprouts Chaat"
+    },
+    {
+      "dishNumber": 56,
+      "dishName": "Pesarattu"
+    },
+    {
+      "dishNumber": 67,
+      "dishName": "Mix Veg Curry"
+    },
+    {
+      "dishNumber": 44,
+      "dishName": "Baingan Bharta"
+    },
+    {
+      "dishNumber": 37,
+      "dishName": "Bhindi Masala"
+    },
+    {
+      "dishNumber": 49,
+      "dishName": "Mushroom Masala"
+    },
+    {
+      "dishNumber": 16,
+      "dishName": "Besan Chilla"
+    },
+    {
+      "dishNumber": 26,
+      "dishName": "Moong Dal Chilla"
+    },
+    {
+      "dishNumber": 80,
+      "dishName": "Masoor Dal"
+    },
+    {
+      "dishNumber": 5,
+      "dishName": "Dal Tadka"
+    },
+    {
+      "dishNumber": 8,
+      "dishName": "Chole (Chana Masala)"
+    },
+    {
+      "dishNumber": 12,
+      "dishName": "Rajma Chawal"
+    },
+    {
+      "dishNumber": 52,
+      "dishName": "Moong Dal Khichdi"
+    },
+    {
+      "dishNumber": 32,
+      "dishName": "Aloo Gobi"
+    },
+    {
+      "dishNumber": 31,
+      "dishName": "Indian-style Overnight Oats"
+    },
+    {
+      "dishNumber": 71,
+      "dishName": "Ragi Dosa"
+    },
+    {
+      "dishNumber": 45,
+      "dishName": "Tandoori Chicken"
+    },
+    {
+      "dishNumber": 73,
+      "dishName": "Rava Fish Fry"
+    },
+    {
+      "dishNumber": 33,
+      "dishName": "Goan Fish Curry"
+    },
+    {
+      "dishNumber": 55,
+      "dishName": "Prawn Masala"
+    }
+  ],
+  "cautionDishes": [
+    {
+      "dishNumber": 39,
+      "dishName": "Veg Biryani",
+      "reason": "About 94 g carbohydrate, large rice portion (est.)"
+    },
+    {
+      "dishNumber": 62,
+      "dishName": "Mutton Biryani",
+      "reason": "About 77 g carbohydrate, large rice portion (est.)"
+    },
+    {
+      "dishNumber": 2,
+      "dishName": "Chicken Biryani",
+      "reason": "About 74 g carbohydrate, large rice portion (est.)"
+    },
+    {
+      "dishNumber": 11,
+      "dishName": "Aloo Paratha",
+      "reason": "About 94 g carbohydrate for 2 parathas with potato (est.)"
+    },
+    {
+      "dishNumber": 20,
+      "dishName": "Vada Pav",
+      "reason": "About 93 g carbohydrate; refined-flour pav and deep-fried vada (est.)"
+    },
+    {
+      "dishNumber": 29,
+      "dishName": "Misal Pav",
+      "reason": "About 83 g carbohydrate; refined-flour pav and 3 g jaggery (est.)"
+    },
+    {
+      "dishNumber": 13,
+      "dishName": "Pav Bhaji",
+      "reason": "About 72 g carbohydrate; refined-flour pav and butter (est.)"
+    },
+    {
+      "dishNumber": 65,
+      "dishName": "Puri Bhaji",
+      "reason": "About 81 g carbohydrate; fried puris (est.)"
+    },
+    {
+      "dishNumber": 40,
+      "dishName": "Sabudana Khichdi",
+      "reason": "About 86 g carbohydrate, mostly sago starch, little protein (est.)"
+    },
+    {
+      "dishNumber": 61,
+      "dishName": "Appam with Veg Stew",
+      "reason": "About 81 g carbohydrate, 5 g sugar, and coconut milk (est.)"
+    },
+    {
+      "dishNumber": 57,
+      "dishName": "Tomato Rice",
+      "reason": "About 72 g carbohydrate, rice-based (est.)"
+    },
+    {
+      "dishNumber": 74,
+      "dishName": "Puliyodarai (Tamarind Rice)",
+      "reason": "About 69 g carbohydrate, rice-based (est.)"
+    },
+    {
+      "dishNumber": 25,
+      "dishName": "Veg Pulao",
+      "reason": "About 73 g carbohydrate, rice-based (est.)"
+    },
+    {
+      "dishNumber": 30,
+      "dishName": "Lemon Rice",
+      "reason": "About 70 g carbohydrate, rice-based (est.)"
+    },
+    {
+      "dishNumber": 19,
+      "dishName": "Jeera Rice",
+      "reason": "About 61 g carbohydrate and only about 1.4 g fibre (est.)"
+    },
+    {
+      "dishNumber": 35,
+      "dishName": "Curd Rice",
+      "reason": "About 60 g carbohydrate and only about 1.8 g fibre (est.)"
+    },
+    {
+      "dishNumber": 10,
+      "dishName": "Veg Fried Rice",
+      "reason": "Refined rice with soy sauce and sugar (est.)"
+    },
+    {
+      "dishNumber": 15,
+      "dishName": "Veg Hakka Noodles",
+      "reason": "Refined noodles with sauces (est.)"
+    },
+    {
+      "dishNumber": 64,
+      "dishName": "Schezwan Noodles",
+      "reason": "About 69 g carbohydrate; refined noodles, Schezwan sauce and ketchup (est.)"
+    },
+    {
+      "dishNumber": 70,
+      "dishName": "Egg Fried Rice",
+      "reason": "About 59 g carbohydrate, refined rice (est.)"
+    },
+    {
+      "dishNumber": 43,
+      "dishName": "Chicken Fried Rice",
+      "reason": "About 71 g carbohydrate, refined rice (est.)"
+    },
+    {
+      "dishNumber": 59,
+      "dishName": "Chicken Kathi Roll",
+      "reason": "About 49 g carbohydrate; 50 g maida wrap (est.)"
+    },
+    {
+      "dishNumber": 36,
+      "dishName": "Rava Dosa",
+      "reason": "About 51.5 g carbohydrate; semolina and maida (est.)"
+    },
+    {
+      "dishNumber": 1,
+      "dishName": "Poha",
+      "reason": "About 57.6 g carbohydrate and 2 g sugar; refined starch breakfast (est.)"
+    },
+    {
+      "dishNumber": 6,
+      "dishName": "Upma",
+      "reason": "About 53 g carbohydrate; semolina (est.)"
+    },
+    {
+      "dishNumber": 76,
+      "dishName": "Semiya Upma",
+      "reason": "About 50 g carbohydrate; refined vermicelli (est.)"
+    },
+    {
+      "dishNumber": 58,
+      "dishName": "Khaman Dhokla",
+      "reason": "About 8 g sugar added in batter and tempering (est.)"
+    },
+    {
+      "dishNumber": 47,
+      "dishName": "Veg Manchurian",
+      "reason": "Maida batter, ketchup and sauces, fried (est.)"
+    },
+    {
+      "dishNumber": 79,
+      "dishName": "Gobi Manchurian",
+      "reason": "Maida batter, ketchup and sauces, fried (est.)"
+    },
+    {
+      "dishNumber": 34,
+      "dishName": "Chilli Paneer",
+      "reason": "About 38 g carbohydrate; maida, ketchup and sauces, and 38 g fat (est.)"
+    },
+    {
+      "dishNumber": 24,
+      "dishName": "Medu Vada",
+      "reason": "Deep-fried; see P4 (est.)"
+    },
+    {
+      "dishNumber": 28,
+      "dishName": "Chicken 65",
+      "reason": "Deep-fried; see P4 (est.)"
+    },
+    {
+      "dishNumber": 95,
+      "dishName": "Rice Kheer",
+      "reason": "Not yet researched; sweet dessert (est. high added sugar)"
+    },
+    {
+      "dishNumber": 96,
+      "dishName": "Gajar Halwa",
+      "reason": "Not yet researched; sweet dessert (est. high added sugar)"
+    },
+    {
+      "dishNumber": 97,
+      "dishName": "Gulab Jamun",
+      "reason": "Not yet researched; fried sugar-syrup dessert (est. high added sugar)"
+    },
+    {
+      "dishNumber": 98,
+      "dishName": "Mango Lassi",
+      "reason": "Not yet researched; sweetened drink (est. high added sugar)"
+    },
+    {
+      "dishNumber": 99,
+      "dishName": "Masala Chai",
+      "reason": "Not yet researched; sugar spoons add up across the day (est.)"
+    },
+    {
+      "dishNumber": 100,
+      "dishName": "Cold Coffee",
+      "reason": "Not yet researched; sweetened drink (est. high added sugar)"
+    }
+  ],
+  "conflictsWith": [
+    {
+      "profileId": "heart-disease",
+      "rule": "P21 overrides: fluid follows P21; requires_doctor_input true; triglyceride goals are the doctor's"
+    },
+    {
+      "profileId": "pregnancy",
+      "rule": "Pregnancy overrides: no weight-loss deficit, no fish-oil capsules without the doctor, and a doctor reviews any raised triglycerides"
+    },
+    {
+      "profileId": "breastfeeding",
+      "rule": "P23 energy needs apply; sugar and alcohol limits stay; no fish-oil capsules without the doctor"
+    },
+    {
+      "profileId": "chronic-kidney-disease",
+      "rule": "P13 overrides protein, potassium and fluid; kidney disease can raise triglycerides; doctor sets lipid goals"
+    },
+    {
+      "profileId": "fatty-liver",
+      "rule": "Compatible; P7 sugar, alcohol and weight-loss rules match P5; fatty liver often comes with high triglycerides; doctor input"
+    },
+    {
+      "profileId": "type-2-diabetes",
+      "rule": "Same direction; stricter sugar limit wins; glucose control also lowers triglycerides (ADA 2025)"
+    },
+    {
+      "profileId": "prediabetes",
+      "rule": "Compatible; P2 carbohydrate and sugar rules plus P5 refined-carbohydrate and alcohol rules"
+    },
+    {
+      "profileId": "high-ldl-cholesterol",
+      "rule": "Compatible; P4 saturated fat, fibre and soluble-fibre goals apply; at triglycerides of 500 mg/dL or more the doctor's plan overrides nut, oil and fruit goals; non-HDL is the main lipid when TG is above 150"
+    },
+    {
+      "profileId": "low-hdl-metabolic-syndrome",
+      "rule": "Compatible; P6 weight and activity rules plus P5 sugar, refined-carbohydrate and alcohol limits"
+    },
+    {
+      "profileId": "hypertension",
+      "rule": "Compatible; P3 sodium and potassium rules plus P5 sugar and alcohol limits; thiazide diuretics and beta-blockers can raise triglycerides, the doctor decides about medicines"
+    },
+    {
+      "profileId": "hypothyroidism",
+      "rule": "An underactive thyroid is a common cause of high triglycerides; suggest mentioning thyroid status to the doctor; no target change"
+    },
+    {
+      "profileId": "menopause",
+      "rule": "Oral estrogen can raise triglycerides; suggest mentioning it to the doctor; no target change"
+    },
+    {
+      "profileId": "gout-high-uric-acid",
+      "rule": "Alcohol and sugary-drink limits point the same way; use the stricter rule"
+    },
+    {
+      "profileId": "fat-loss",
+      "rule": "Compatible; P25 sets the deficit; P5 adds sugar, refined-carbohydrate and alcohol rules"
+    },
+    {
+      "profileId": "muscle-gain",
+      "rule": "Extra calories from whole grains, pulses, nuts and oils, not sweets or sweetened mass-gainer drinks; check labels for sugar"
+    },
+    {
+      "profileId": "endurance-running",
+      "rule": "Carbohydrate for long training set by P29 and the doctor or dietitian; avoid routine sugary drinks"
+    },
+    {
+      "profileId": "jain-diet",
+      "rule": "Food filter; plant omega-3 from flaxseed and walnuts; whole-grain and pulse swaps"
+    },
+    {
+      "profileId": "vegan-diet",
+      "rule": "Plant omega-3 from flaxseed and walnuts; algae-based EPA and DHA not found in this run; check coconut-milk swaps for saturated fat"
+    }
+  ],
+  "requiresDoctorInput": true,
+  "requiresDoctorInputStated": true,
+  "fluidNote": null,
+  "warnings": [
+    "General information, not medical advice. FitPlate does not diagnose high triglycerides; a blood test reviewed by a doctor is needed.",
+    "The app never suggests starting, stopping, skipping or changing any medicine, supplement or dose. Follow your doctor.",
+    "Triglycerides of 500 mg/dL or more can cause acute pancreatitis. The app does not set food targets at this level; talk to your doctor. 1000 mg/dL or more needs urgent review.",
+    "Omega-3 doses of 2-4 g/day are treatment doses (prescription dose) for the doctor to decide; over-the-counter fish-oil capsules are not a substitute for a prescription (AHA 2019). Prescription omega-3 has a dose-related atrial fibrillation warning (EMA via MHRA).",
+    "Some medicines can raise triglycerides (for example thiazide diuretics, beta-blockers, oral estrogen, corticosteroids). Do not stop any medicine; ask your doctor.",
+    "Poorly controlled diabetes and an underactive thyroid are common causes of high triglycerides; the doctor checks these first.",
+    "Alcohol: best none; none at all if triglycerides are 500 mg/dL or more (NLA 2023).",
+    "Emergency: sudden severe upper abdominal pain that spreads to the back, with vomiting; or chest pain or stroke signs. Seek emergency care now.",
+    "With heart, kidney or liver disease, pregnancy or diuretics, follow your doctor's advice on fluids.",
+    "requires_doctor_input is true because high triglycerides can reach a pancreatitis-risk level and often have a medical cause or need a prescription; the app sets only general sugar, refined-carbohydrate, alcohol, fibre, saturated-fat, sodium and activity guidance on its own."
+  ],
+  "lastResearched": "2026-10-24",
+  "versions": [
+    {
+      "date": "2026-10-24",
+      "file": "FitPlate_Nutrients_2026-10-24.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3); max as safety limit",
+    "limits": "safety limit (lower on conflict)",
+    "lists": "union",
+    "requiresDoctorInput": "stated true in any version, else newest version (missing flag + limits → true)"
+  },
+  "mergeNotes": [],
+  "needsReview": []
+}

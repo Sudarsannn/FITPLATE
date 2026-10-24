@@ -1,0 +1,765 @@
+{
+  "id": "bhujangasana-cobra-pose",
+  "number": 6,
+  "name": "Bhujangasana (Cobra pose)",
+  "otherNames": [
+    "Cobra pose",
+    "Baby cobra",
+    "Low cobra",
+    "Ardha Bhujangasana (Half Cobra)",
+    "Salamba Bhujangasana (Sphinx pose, supported cobra)",
+    "Full cobra",
+    "Serpent pose"
+  ],
+  "section": "yoga_stretch",
+  "type": "yoga_asana",
+  "equipment": [
+    "yoga mat or rug (optional)",
+    "folded towel (optional)"
+  ],
+  "noEquipmentAlternative": "Sphinx pose on forearms on a carpet, or a standing wall chest opener",
+  "musclesPrimary": [
+    "erector spinae",
+    "middle trapezius",
+    "lower trapezius",
+    "rhomboids"
+  ],
+  "musclesSecondary": [
+    "gluteus maximus",
+    "hamstrings",
+    "external oblique",
+    "posterior deltoid",
+    "triceps (full cobra)",
+    "stretched: rectus abdominis, pectoralis major, hip flexors"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 2.3,
+  "compendiumCode": "02150",
+  "metOptions": [
+    {
+      "code": "02150",
+      "met": 2.3,
+      "activity": "MET: 2.3, 2024 Adult Compendium of Physical Activities, code 02150, \"Yoga, Hatha\" (Conditioning Exercise heading). This matches the beginner prescription (a few short holds with rests in a Hatha-style"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "flexibility",
+      "sets": 3,
+      "reps": "15 s baby cobra hold, bent elbows, pelvis down",
+      "timeSec": 15,
+      "restSec": 10,
+      "tempo": "3 s rise, 15 s hold, 4 s lower, natural breathing",
+      "perWeek": 4
+    },
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "15 s baby cobra, build to 30 s",
+      "timeSec": 15,
+      "restSec": 10,
+      "tempo": "3 s rise, hold, 4 s lower",
+      "perWeek": 4
+    },
+    {
+      "level": "beginner",
+      "goal": "relaxation",
+      "sets": 2,
+      "reps": "5 slow breaths, sphinx pose",
+      "timeSec": 30,
+      "restSec": 10,
+      "tempo": "static hold, slow breathing",
+      "perWeek": 5
+    },
+    {
+      "level": "intermediate",
+      "goal": "flexibility",
+      "sets": 3,
+      "reps": "20-30 s baby to full cobra",
+      "timeSec": 30,
+      "restSec": 10,
+      "tempo": "static hold",
+      "perWeek": 4
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 4,
+      "reps": "20-30 s hold with 5 slow lift-and-lower reps",
+      "timeSec": 30,
+      "restSec": 10,
+      "tempo": "6 s per rep",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "flexibility",
+      "sets": 4,
+      "reps": "30 s full cobra",
+      "timeSec": 30,
+      "restSec": 10,
+      "tempo": "static hold",
+      "perWeek": 5
+    },
+    {
+      "level": "advanced",
+      "goal": "relaxation",
+      "sets": 2,
+      "reps": "10 breaths sphinx or full cobra, then Balasana",
+      "timeSec": 60,
+      "restSec": 15,
+      "tempo": "static hold, slow breathing",
+      "perWeek": 5
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "hold_timer",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "hold_baby_cobra",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": "<= 165",
+        "parsed": {
+          "op": "<=",
+          "value": 165,
+          "max": null
+        }
+      },
+      {
+        "name": "hold_baby_cobra",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": ">= 150",
+        "parsed": {
+          "op": ">=",
+          "value": 150,
+          "max": null
+        }
+      },
+      {
+        "name": "hold_baby_cobra",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": "<= 150",
+        "parsed": {
+          "op": "<=",
+          "value": 150,
+          "max": null
+        }
+      },
+      {
+        "name": "hold_baby_cobra",
+        "joint": "neck (nose-shoulder-hip)",
+        "angleDeg": ">= 150",
+        "parsed": {
+          "op": ">=",
+          "value": 150,
+          "max": null
+        }
+      },
+      {
+        "name": "hold_baby_cobra",
+        "joint": "pelvis_down",
+        "angleDeg": "hip landmark within 10 cm of knee landmark height",
+        "parsed": null
+      },
+      {
+        "name": "hold_full_cobra",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": "<= 150",
+        "parsed": {
+          "op": "<=",
+          "value": 150,
+          "max": null
+        }
+      },
+      {
+        "name": "hold_full_cobra",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": ">= 130",
+        "parsed": {
+          "op": ">=",
+          "value": 130,
+          "max": null
+        }
+      },
+      {
+        "name": "hold_full_cobra",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": ">= 150",
+        "parsed": {
+          "op": ">=",
+          "value": 150,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 5
+  },
+  "formChecks": [
+    {
+      "joint": "hip",
+      "rule": "hip angle > 165 deg (equals baby cobra hold threshold)",
+      "message": "Lift your chest a little more"
+    },
+    {
+      "joint": "hip (baby cobra)",
+      "rule": "hip angle < 150 deg (equals baby cobra hold threshold)",
+      "message": "Too high for baby cobra: lower a little, or choose full cobra"
+    },
+    {
+      "joint": "neck",
+      "rule": "nose-shoulder-hip angle < 150 deg (equals hold threshold)",
+      "message": "Keep your neck long. Look at the floor ahead"
+    },
+    {
+      "joint": "pelvis",
+      "rule": "hip landmark more than 10 cm above knee landmark (above-the-line flag, not an angle)",
+      "message": "Press your hips and thighs into the floor"
+    },
+    {
+      "joint": "elbow (baby cobra)",
+      "rule": "elbow angle > 150 deg (equals baby cobra hold threshold)",
+      "message": "Bend your elbows. Lift with your back"
+    },
+    {
+      "joint": "hip (full cobra)",
+      "rule": "hip angle < 130 deg (equals full cobra hold threshold)",
+      "message": "Ease down a little. Spread the arch through your back"
+    },
+    {
+      "joint": "elbow (full cobra)",
+      "rule": "elbow angle < 150 deg (equals full cobra hold threshold)",
+      "message": "Press up a little more if it feels comfortable"
+    },
+    {
+      "joint": "shoulders",
+      "rule": "shoulder landmark within 8 cm of ear height (shrug flag, not an angle)",
+      "message": "Shoulders away from your ears"
+    },
+    {
+      "joint": "time",
+      "rule": "beginner hold > 45 s",
+      "message": "Nice. Lower down and rest"
+    }
+  ],
+  "safetyFlags": [
+    "pregnancy_avoid_prone",
+    "recent_abdominal_surgery_avoid",
+    "hernia_or_peptic_ulcer_avoid_or_guidance",
+    "lower_back_injury_sphinx_only",
+    "wrist_or_carpal_tunnel_use_forearms",
+    "hypertension_expert_guidance",
+    "hyperthyroid_expert_guidance",
+    "osteoporosis_small_lift_check_doctor",
+    "no_breath_holding",
+    "not_upward_dog"
+  ],
+  "progressions": [
+    "Full cobra: arms straightening, pelvis down",
+    "Dynamic cobra: 5 slow lift-and-lower reps",
+    "Salabhasana (Locust) then Upward-Facing Dog once cobra is steady"
+  ],
+  "regressions": [
+    "Sphinx pose on forearms",
+    "Head-and-chest lift with hands off or very light",
+    "Standing wall or chair cobra"
+  ],
+  "videoShots": [
+    {
+      "seconds": 6,
+      "angle": "high front, 1.5 m",
+      "shows": "hand placement beside the chest, elbows tucked",
+      "textOverlay": "Elbows hug the ribs"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m, mat height",
+      "shows": "lifting head and chest into baby cobra",
+      "textOverlay": "Lift from the back, not the arms"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, split screen",
+      "shows": "wrong (hips lifting, neck back, shrug) vs right",
+      "textOverlay": "Pelvis down. Neck long."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "hold with easy breathing and 15 s timer",
+      "textOverlay": "Breathe normally. Stay light."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, split screen",
+      "shows": "baby cobra vs full cobra",
+      "textOverlay": "Baby cobra: bent elbows. Full: pelvis down."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, split screen",
+      "shows": "cobra vs Upward Dog",
+      "textOverlay": "Cobra is not Upward Dog"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "sphinx pose",
+      "textOverlay": "Hurts? Try sphinx"
+    },
+    {
+      "seconds": 6,
+      "angle": "side, 2.5 m",
+      "shows": "slow lower down then Child's Pose",
+      "textOverlay": "Rest in Child's Pose"
+    }
+  ],
+  "lastResearched": "2026-10-24",
+  "setupSteps": [
+    "Lay the mat on a flat, non-slip floor (a rug on tiles can slide; put the mat against a wall or sofa end if needed).",
+    "Lie face down. Legs straight behind you, feet hip-width or together, tops of the feet flat on the mat (toes pointing back, not curled under, which keeps the thighs relaxed).",
+    "Forehead on the mat. A folded towel under the forehead or hips is fine if the floor is hard.",
+    "Place the palms flat on the mat beside the lower ribs, fingertips roughly level with the chest. Beginner default: hands slightly ahead of the shoulders, elbows bent and tucked in towards the body (a classic description puts the hands in front of the shoulders to spare the back). Elbows point backward, not out to the sides.",
+    "Legs: press the tops of the thighs and the pubic bone into the floor and gently tuck the tailbone down. Do not clench the buttocks hard.",
+    "Check wrists: if wrists ache in this position, rest on the forearms (sphinx) instead.",
+    "Camera: phone on the floor or a low stool, side-on, 2–2.5 m away (see section 11)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Lie down and settle",
+      "action": "lie face down, forehead on the mat, arms bent with palms beside the chest.",
+      "feel": "belly, chest and hips resting on the mat.",
+      "breathing": "breathe normally.",
+      "tempo": "5 seconds.",
+      "visualCheck": "side view, the body in one long line; front view, elbows close to the ribs."
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Set the legs and hips",
+      "action": "press the tops of the thighs, hip bones and feet into the floor.",
+      "feel": "a gentle firmness in the thighs and buttocks, not a clench.",
+      "breathing": "breathe out.",
+      "tempo": "2 seconds.",
+      "visualCheck": "side view, hips and thighs touching the mat."
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Look down, then lengthen the neck",
+      "action": "slide the chin slightly in and stretch the back of the neck long.",
+      "feel": "the back of the neck long, shoulders away from the ears.",
+      "breathing": "breathe in.",
+      "tempo": "2 seconds.",
+      "visualCheck": "side view, ear, shoulder and spine in one line, not looking up."
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Lift the head and chest using the back muscles (baby cobra)",
+      "action": "on a slow breath in, peel the head, then the shoulders and upper chest off the mat. The hands stay on the floor with light pressure only; imagine sliding the hands slightly back toward the feet without moving them.",
+      "feel": "a working feeling along the spine between and below the shoulder blades, not a squeeze at the low back.",
+      "breathing": "breathe in while lifting.",
+      "tempo": "3 seconds.",
+      "visualCheck": "side view, lower ribs and the navel still on the mat or hovering about 3 cm (est.) at most; the chest has risen only a hand's width (est.)."
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Roll the shoulders back and down",
+      "action": "draw the shoulder blades gently toward each other and slightly down, lifting the breastbone forward.",
+      "feel": "chest opening, shoulders away from the ears.",
+      "breathing": "breathe out slowly.",
+      "tempo": "2 seconds.",
+      "visualCheck": "front view, shoulders level and low, elbows still bent and by the ribs."
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Hold",
+      "action": "stay at a comfortable height; keep the thighs and pelvis down and the neck long.",
+      "feel": "mild muscle effort in the back and a gentle stretch across the front of the chest and belly. Overall effort is light: 3–4/10 on the ACSM 0–10 perceived-exertion scale (= Borg 9–11 on the 6–20 scale).",
+      "breathing": "normal, easy breathing (the NIOS manual says breathe normally at the final position); never hold the breath.",
+      "tempo": "15–30 seconds (about 3–5 slow breaths, est.); see section 7.",
+      "visualCheck": "side view, a smooth gentle arch in the upper back; no sharp fold in the low back."
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Optional: deepen to full cobra",
+      "action": "only if the back is comfortable, press lightly into the hands and straighten the arms a little (stop before the elbows lock) while the pelvis and thighs stay down. Straight arms are not required; how far the arms straighten depends on flexibility.",
+      "feel": "a deeper stretch in the front of the body, the work spread over the whole back; no pinch in the low back.",
+      "breathing": "breathe in while rising a little, then normal.",
+      "tempo": "3 seconds, then hold up to 15 seconds (est.).",
+      "visualCheck": "side view, hips on the mat, the arch spread through the spine, shoulders not up by the ears."
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Lower down slowly",
+      "action": "breathe out and slowly lower chest, shoulders and head in the reverse order.",
+      "feel": "the back muscles letting go.",
+      "breathing": "breathe out while lowering.",
+      "tempo": "4 seconds.",
+      "visualCheck": "side view, controlled descent, no dropping."
+    },
+    {
+      "n": 9,
+      "part": null,
+      "title": "Rest",
+      "action": "turn the head to one side, rest the cheek on the stacked hands, or sit back into Balasana (Child's Pose, Yoga & Stretch 8) for a few breaths to unload the back.",
+      "feel": "lower back soft; breathing returns to normal.",
+      "breathing": "easy breathing.",
+      "tempo": "10 seconds between rounds.",
+      "visualCheck": "no tension in the shoulders."
+    },
+    {
+      "n": 10,
+      "part": null,
+      "title": "Repeat, then get up safely",
+      "action": "do 3 rounds (section 7), then press into the hands, push back into Child's Pose or onto all fours, and stand slowly.",
+      "feel": "no back strain, no dizziness.",
+      "breathing": "normal.",
+      "tempo": "5 seconds.",
+      "visualCheck": "no sudden sit-up from a flat back."
+    },
+    {
+      "n": 11,
+      "part": "Sphinx version (easiest; each step: action | feel | breath | tempo | visual check)",
+      "title": "Lie face down, then rest on the forearms with the elbows under the shoulders, forearms parallel and palms down | chest slightly lifted, back soft | breathe in | 4 s | side view, upper arms near vertical",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 12,
+      "part": "Sphinx version (easiest; each step: action | feel | breath | tempo | visual check)",
+      "title": "Press the forearms lightly into the floor and lengthen the neck | upper back gently working | breathe out | 3 s | ears over shoulders, not craning",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 13,
+      "part": "Sphinx version (easiest; each step: action | feel | breath | tempo | visual check)",
+      "title": "Hold and breathe | mild, steady stretch in the front of the trunk | slow breathing | 20–30 s (est.) | hips and thighs on the mat",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 14,
+      "part": "Sphinx version (easiest; each step: action | feel | breath | tempo | visual check)",
+      "title": "Lower down slowly | back lets go | breathe out | 4 s | controlled",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Pushing up with the arms and straightening the elbows too soon",
+      "text": "Pushing up with the arms and straightening the elbows too soon. The back muscles do nothing and the low back takes the load. Fix: keep the elbows bent, lift with the back, and use \"light hands\"."
+    },
+    {
+      "title": "Hips and thighs lifting off the floor (drifting toward Upward Dog)",
+      "text": "Hips and thighs lifting off the floor (drifting toward Upward Dog). Changes the pose, loads the wrists and low back. Fix: press the pubic bone and thighs down; if you cannot, lower the height (Cam Yoga, Yoga International)."
+    },
+    {
+      "title": "Throwing the head back and crunching the neck",
+      "text": "Throwing the head back and crunching the neck. Compresses the back of the neck. Fix: long neck, gaze down, lift as one piece with the chest."
+    },
+    {
+      "title": "Shrugging the shoulders up to the ears",
+      "text": "Shrugging the shoulders up to the ears. Tightens the neck and shortens the chest. Fix: roll the shoulders back and down first."
+    },
+    {
+      "title": "Clenching the buttocks and bending only at the low back",
+      "text": "Clenching the buttocks and bending only at the low back. A sharp fold at one spot. Fix: soften the glutes, lengthen the tailbone toward the heels, spread the arch through the upper back."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. Raises tension and blood pressure. Fix: normal, easy breathing in the hold (NIOS manual)."
+    },
+    {
+      "title": "Going too high for a stiff back",
+      "text": "Going too high for a stiff back. Pain or pinching in the low back means the lift is too big. Fix: drop to sphinx or lower down and rest."
+    },
+    {
+      "title": "Flared elbows or wrists bent hard",
+      "text": "Flared elbows or wrists bent hard. Strains the wrists and shoulders. Fix: elbows tucked, hands slightly ahead of the shoulders, or switch to forearms."
+    },
+    {
+      "title": "Jumping to Upward Dog before cobra is steady",
+      "text": "Jumping to Upward Dog before cobra is steady. One teaching source calls this the most common cause of low-back and wrist strain in flow classes. Fix: master baby cobra for several weeks first."
+    }
+  ],
+  "safetyNotes": [
+    "Lower back: an extension pose. Use baby cobra or sphinx only, avoid it with a recent lower-back injury, practise a slipped disc only under instruction, and stop if back pain increases. Some low back pain responds to extension and some gets worse; if leg pain or numbness starts, stop.",
+    "Wrist and elbow problems, carpal tunnel: use the sphinx (forearms) version.",
+    "Neck: keep the neck long; stop if there is neck pain or tingling in the arms.",
+    "Abdominal surgery, hernia, peptic ulcer: avoid or practise only under expert guidance (NIOS manual lists peptic ulcer, hernia, hypertension and hyperthyroidism under expert guidance; Bajaj Allianz and others say avoid after recent abdominal surgery).",
+    "Pregnancy: avoid lying face-down (pressure on the abdomen); use a standing or seated chest opener instead.",
+    "Asthma: do not practise during an attack.",
+    "Fractured rib or wrist: avoid.",
+    "Stop immediately if you feel: sharp or pinching low-back pain; pain, tingling or numbness down an arm or leg; neck pain; wrist pain; dizziness; stomach or incision pain; breathlessness.",
+    "Spotter: not needed.",
+    "Gym etiquette: use the stretching area or a mat out of walkways; wipe the mat after use."
+  ],
+  "sources": [
+    "NIOS (National Institute of Open Schooling, Government of India), Yoga practical manual, Bhujangasana technique, 3-5 rounds, breathing, expert-guidance list (peptic ulcer, hernia, hypertension, hyperthyroidism): https://digital.nios.ac.in/content/373en/Pract/19.pdf",
+    "Ministry of AYUSH / MDNIY, Common Yoga Protocol (Bhujangasana text itself not verified in this run; no MDNIY-specific page found): https://www.mea.gov.in/images/pdf/common-yoga-protocol-english.pdf ; https://yogamdniy.nic.in/files/pdf/CYP-2023-English.pdf",
+    "Wikipedia, Cobra pose (name, classification): https://en.wikipedia.org/wiki/Cobra_pose ; Asivana Yoga, Bhujanga meaning: https://asivanayoga.com/blogs/sanskrit/bhujanga ; Google Arts and Culture, Bhujangasana: https://artsandculture.google.com/story/jAWhFpxFeJWRJg",
+    "Yoga International, How Upward-Facing Dog Differs from Cobra: https://yogainternational.com/article/view/urdhva-mukha-svanasana-upward-facing-dog ; Satyori, Cobra vs Upward Dog: https://satyori.com/yoga/articles/cobra-vs-upward-dog/ ; Cam Yoga, How to avoid the dreaded Cobra Dog: https://www.camyoga.co.uk/camyoga-blog/blog/how-to-avoid-the-dreaded-cobra-dog",
+    "Peloton, How to do cobra pose: https://www.onepeloton.com/blog/how-to-do-cobra-pose ; Liforme, Cobra pose Bhujangasana: https://liforme.com/blog/cobra-pose-bhujangasana/ ; WebMD, How to do cobra pose: https://www.webmd.com/fitness-exercise/how-to-do-cobra-pose",
+    "lessons.com, Cobra Pose and Sphinx Pose (cautions, chair variation): https://lessons.com/yoga-poses/cobra-pose ; https://lessons.com/yoga-poses/sphinx-pose",
+    "Amala Ayurveda, Bhujangasana (asthma, back injury cautions, 15-30 s): https://www.amalaayurveda.org/blog/post/bhujangasana-cobra-pose",
+    "Bajaj Allianz, Bhujangasana (pregnancy, abdominal surgery, slipped disc): https://bajajallianz.com/blog/?p=24399",
+    "Art of Living, Salamba Bhujangasana (sphinx) and standing backward bend (high BP, ulcer, hernia cautions): https://www.artofliving.org/us-en/salamba-bhujangasana-sphinx-pose ; https://www.artofliving.org/yoga/yoga-poses/standing-backward-bend",
+    "Yoga posture surface EMG literature review (cobra erector spinae 32.0-38.6% MVIC; indirect, found via search, Charles University thesis on extension positions): https://dspace.cuni.cz/handle/20.500.11956/83625 ; https://doaj.org/article/5d18af64487a434398b86a0d53405005",
+    "Ferreira ML et al. (2006), McKenzie method meta-analysis (Spine; PEDro record): https://search.pedro.org.au/search-results/record-detail/15525 ; Cochrane, McKenzie method for (sub)acute non-specific low back pain: https://cochranelibrary.com/cdsr/doi/10.1002/14651858.CD009711.pub2/information",
+    "Cochrane, Yoga for chronic non-specific low back pain: https://pubmed.ncbi.nlm.nih.gov/36398843/ ; Yoga as a treatment for chronic low back pain, systematic review: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4878447/",
+    "ClinicalTrials.gov NCT04721639, Sphinx pose (Salamba Bhujangasana) in chronic low back pain (protocol, no results): https://clinicaltrials.gov/study/NCT04721639",
+    "Herrmann SD et al., 2024 Adult Compendium of Physical Activities (02150 Yoga, Hatha 2.3; 02175; 02153 8.0; 02180 3.5; 02101 stretching mild 2.3): https://pacompendium.com/conditioning-exercise/ ; https://pmc.ncbi.nlm.nih.gov/articles/PMC10818145/ ; https://pubmed.ncbi.nlm.nih.gov/38242596/",
+    "UK consensus statement, Strong, steady and straight: physical activity and exercise for osteoporosis (BJSM 2022): https://pubmed.ncbi.nlm.nih.gov/35577538/ ; https://pmc.ncbi.nlm.nih.gov/articles/PMC9304091 ; osteoporosis.foundation, exercise for individuals with osteoporosis: https://osteoporosis.foundation/health-professionals/prevention/exercise/exercise-individuals-with-osteoporosis",
+    "RCOG and ACOG supine-exercise guidance as reported by secondary sources (prone-specific guidance Not found): https://www.ideafit.com/acog-guidelines ; https://thepogp.co.uk/_userfiles/pages/files/journals/122/gps7unb278sdc9.pdf",
+    "Tommy's, When and how to exercise after a C-section: https://Tommys.Org/pregnancy-information/giving-birth/caesarean-section/when-and-how-exercise-after-c-section ; Herts NHS, After your C-section: https://www.enherts-tr.nhs.uk/content/uploads/2019/10/M-After-Your-C-Section-c-section_infoleaflet2014-1.pdf",
+    "ADA 2016 position statement summary (Frontiers in Endocrinology 2017): https://frontiersin.org/articles/10.3389/fendo.2017.00033/full",
+    "Cambridge University Hospitals NHS, Yoga: a guide for cardiac rehabilitation patients: https://cuh.nhs.uk/patient-information/yoga-a-guide-for-cardiac-rehabilitation-patients",
+    "Cochrane, Yoga for asthma (Yang et al. 2016): https://www.cochrane.org/news/yoga-may-have-health-benefits-people-asthma",
+    "Nidhi R et al., yoga for PCOS in adolescents (RCT): https://elibraryofyoga.com/items/99d1c3c8-bf67-4f45-8141-bfdad04a40fb/full",
+    "Baby vs full cobra: bent-arm (baby, low) is gentler and strength-focused; straight-arm (full) is deeper. We teach baby cobra first and make full cobra an option (sources use the terms loosely).",
+    "Hold time and rounds: 15-30 s (Amala) and 3-5 rounds (NIOS); some guides ~10 s. We chose 3 rounds of 15 s for beginners.",
+    "Hand position: classic description (hands in front of the shoulders) vs under the shoulders or beside the ribs; we use slightly ahead of the shoulders with tucked elbows.",
+    "Cobra vs Upward Dog: cobra keeps pelvis and thighs down with bent elbows; Upward Dog lifts the thighs, straightens the arms and loads the wrists. We teach them as separate poses.",
+    "Hypertension and back-bends: NIOS says expert guidance; Art of Living says avoid back-bends. We chose \"ask a doctor\", baby cobra or sphinx only.",
+    "Osteoporosis: extension is generally favoured over flexion (UK consensus), but forced deep arches are not advised for spine fracture; we say modify.",
+    "Lower back pain: extension helps some and aggravates others; the pose-specific trial evidence is Not found.",
+    "Pregnancy: guidance concerns lying on the back; for lying face-down we follow the pose sources (avoid)."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 43.5,
+      "70kg": 37.3,
+      "80kg": 32.6
+    },
+    "per300kcal": {
+      "60kg": 130.4,
+      "70kg": 111.8,
+      "80kg": 97.8
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "yoga",
+    "mobility",
+    "beginner",
+    "intermediate",
+    "small_flat",
+    "quiet",
+    "3_6_min",
+    "warm_up",
+    "cool_down",
+    "posture",
+    "evening",
+    "morning"
+  ],
+  "swapsByAccess": {
+    "none": "Sphinx pose on forearms or a standing wall chest opener",
+    "home_equipment": "Thin foam mat or folded towel under the hips; yoga block under forearms",
+    "basic_gym": "Mat in the stretching area; sphinx pose",
+    "full_gym": "Roman chair / back extension bench (Gym 31) for back extensors"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "ask_doctor",
+      "change": "NIOS manual: practise under expert guidance; avoid back-bends per Art of Living; no breath-holding; baby cobra or sphinx only; rise slowly",
+      "source": "NIOS Bhujangasana practical manual; Art of Living (backward bends)"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "No pose-specific caution found; flexibility 2-3x/week generally",
+      "source": "ADA 2016 position statement (via Frontiers 2017); Not found (pose-specific)"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "Pose-specific source not found; gentle yoga fits cardiac rehab; no breath-holding",
+      "source": "Cambridge University Hospitals NHS cardiac rehab yoga guide (general); Not found (pose-specific)"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "No change (source not found)",
+      "source": "Not found"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Sphinx or baby cobra; towel under hips may ease abdominal pressure (est.)",
+      "source": "Not found (pose-specific)"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "No pose-specific caution found",
+      "source": "Nidhi et al. SVYASA RCT (whole programme); Not found (pose-specific)"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ask_doctor",
+      "change": "Hyperthyroidism: expert guidance per NIOS manual; hypothyroidism not found",
+      "source": "NIOS Bhujangasana practical manual"
+    },
+    {
+      "condition": "asthma",
+      "status": "modify",
+      "change": "Not during an attack; inhaler nearby; breathe slowly",
+      "source": "Amala Ayurveda (Bhujangasana); Cochrane review Yang et al. 2016"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Thin folded towel under kneecaps and thighs (est.); stop if knee pain increases",
+      "source": "Not found (pose-specific)"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Baby cobra or sphinx only; avoid with recent lower-back injury; slipped disc under instruction; stop if pain or leg symptoms increase",
+      "source": "Bajaj Allianz (cobra precautions); Ferreira et al. 2006; Cochrane yoga for chronic low back pain"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "modify",
+      "change": "Hands low, elbows tucked, use forearms; stop with shoulder pain",
+      "source": "Not found (pose-specific)"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "modify",
+      "change": "Small lift only, no forcing; spine extension generally favoured over flexion; past spine fracture: ask doctor or physio",
+      "source": "UK consensus statement on exercise for osteoporosis (BJSM 2022); osteoporosis.foundation"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "avoid",
+      "change": "Avoid lying face-down; use a standing or seated chest opener",
+      "source": "Bajaj Allianz (cobra precautions); lessons.com"
+    },
+    {
+      "condition": "postpartum",
+      "status": "ask_doctor",
+      "change": "After C-section or diastasis recti wait for clearance (often 6-8 week check)",
+      "source": "Tommy's (after C-section); Herts NHS C-section leaflet; Not found (pose-specific)"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "avoid",
+      "change": "Abdominal surgery: avoid until surgeon clears; other surgery: wait for clearance",
+      "source": "Bajaj Allianz; lessons.com"
+    },
+    {
+      "condition": "other",
+      "status": "modify",
+      "change": "Carpal tunnel or wrist pain: use sphinx (forearms)",
+      "source": "lessons.com (cobra cautions); Art of Living (sphinx)"
+    },
+    {
+      "condition": "other",
+      "status": "avoid",
+      "change": "Hernia or peptic ulcer: avoid or expert guidance only",
+      "source": "NIOS manual; Art of Living"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "home"
+    ],
+    "bodyRegion": [
+      "core",
+      "upper"
+    ],
+    "goalTags": [
+      "flexibility",
+      "general_fitness",
+      "relaxation"
+    ],
+    "intensity": "light",
+    "noise": "quiet",
+    "space": "mat_only",
+    "typicalMinutes": 4,
+    "kcalPer10min70kg": 27,
+    "difficulty1to5": 2,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Yoga & stretch",
+    "Home",
+    "No equipment",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Yoga",
+    "Back",
+    "Hold timer",
+    "Under 10 min"
+  ],
+  "needsReview": [
+    "condition caution \"other\" has conflicting statuses across versions: modify, avoid",
+    "rep_counter phase \"hold_baby_cobra\" (pelvis_down): angle \"hip landmark within 10 cm of knee landmark height\" is not a parseable angle"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-24",
+      "file": "FitPlate_Fitness_2026-10-24.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

@@ -10,13 +10,14 @@ import { surveySummary } from '../components/survey/surveySummary';
 import { FadeIn, Glass, GradientButton, PressableScale } from '../components/ui';
 import { setReminders } from '../lib/reminders';
 import { GOALS, useStore } from '../lib/store';
+import { showBeginnerTips } from '../services/kitchen';
 import { syncStatusLine } from '../services/userSession';
 import { colors, type } from '../theme';
 
 // `asTab` is set by the Profile tab of the new shell: no back button, and room
 // at the bottom for the floating tab bar.
 export function ProfileScreen({ asTab = false }: { asTab?: boolean }) {
-  const { profile, updateProfile, sex, body, equipmentOwned, signOut, deleteMyData, resetDemo, user, favourites, cloud, syncError } = useStore();
+  const { profile, updateProfile, settings, updateSettings, sex, body, equipmentOwned, signOut, deleteMyData, resetDemo, user, favourites, cloud, syncError } = useStore();
   const [confirmDelete, setConfirmDelete] = useState(false);
   const canDelete = Boolean(user && !user.guest && cloud);
   return (
@@ -87,6 +88,23 @@ export function ProfileScreen({ asTab = false }: { asTab?: boolean }) {
               }}
               trackColor={{ true: colors.accent, false: '#333' }}
               thumbColor="#fff"
+            />
+          </Glass>
+        </FadeIn>
+
+        <FadeIn i={2}>
+          <Glass style={{ marginTop: 14, flexDirection: 'row', alignItems: 'center', gap: 12 }}>
+            <Text style={{ fontSize: 26 }}>💡</Text>
+            <View style={{ flex: 1 }}>
+              <Text style={{ color: colors.text, fontWeight: '800' }}>Beginner tips while cooking</Text>
+              <Text style={[type.small, { color: colors.muted }]}>Extra tips on each step. On for beginner cooks; change your level under Kitchen.</Text>
+            </View>
+            <Switch
+              value={showBeginnerTips(profile.level, settings.featureToggles)}
+              onValueChange={(v) => updateSettings({ featureToggles: { ...settings.featureToggles, beginnerTips: v } })}
+              trackColor={{ true: colors.accent, false: '#333' }}
+              thumbColor="#fff"
+              accessibilityLabel="Beginner tips while cooking"
             />
           </Glass>
         </FadeIn>

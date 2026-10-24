@@ -1,0 +1,453 @@
+{
+  "id": "phosphorus",
+  "name": "Phosphorus (phosphate, phytate phosphorus)",
+  "type": "mineral",
+  "subtype": "macromineral",
+  "unit": "mg",
+  "altUnits": [
+    {
+      "unit": "g",
+      "toMainUnitFactor": 1000
+    },
+    {
+      "unit": "mmol",
+      "toMainUnitFactor": 30.97
+    },
+    {
+      "unit": "mg phosphate (PO4)",
+      "toMainUnitFactor": 0.326
+    },
+    {
+      "unit": "mg phytic acid (P content)",
+      "toMainUnitFactor": 0.28
+    }
+  ],
+  "unitConversions": [
+    {
+      "fromUnit": "g",
+      "compound": "phosphorus",
+      "toMainUnitFactor": 1000,
+      "raw": "1 g phosphorus | 1,000 mg P"
+    },
+    {
+      "fromUnit": "mg",
+      "compound": "phosphate",
+      "toMainUnitFactor": 0.326,
+      "raw": "1 mg phosphate (PO4) | 0.326 mg P"
+    },
+    {
+      "fromUnit": "mg",
+      "compound": "phytic acid",
+      "toMainUnitFactor": 0.28,
+      "raw": "1 mg phytic acid | about 0.28 mg P"
+    }
+  ],
+  "targets": [
+    {
+      "group": "adult_male_sedentary",
+      "ear": null,
+      "rda": 1000,
+      "ai": null,
+      "source": "ICMR-NIN 2020 via a regulatory data website citing Annexure IB and a short-report excerpt saying phosphorus is 1:1 with calcium (secondary, unverified); EAR not found"
+    },
+    {
+      "group": "adult_male_moderate",
+      "ear": null,
+      "rda": 1000,
+      "ai": null,
+      "source": "ICMR-NIN 2020; one value, not scaled by activity (secondary, unverified)"
+    },
+    {
+      "group": "adult_male_heavy",
+      "ear": null,
+      "rda": 1000,
+      "ai": null,
+      "source": "ICMR-NIN 2020; one value, not scaled by activity (secondary, unverified)"
+    },
+    {
+      "group": "adult_female_sedentary",
+      "ear": null,
+      "rda": 1000,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (secondary, unverified); EAR not found"
+    },
+    {
+      "group": "adult_female_moderate",
+      "ear": null,
+      "rda": 1000,
+      "ai": null,
+      "source": "ICMR-NIN 2020; one value, not scaled by activity (secondary, unverified)"
+    },
+    {
+      "group": "adult_female_heavy",
+      "ear": null,
+      "rda": 1000,
+      "ai": null,
+      "source": "ICMR-NIN 2020; one value, not scaled by activity (secondary, unverified)"
+    },
+    {
+      "group": "pregnant",
+      "ear": null,
+      "rda": 1000,
+      "ai": null,
+      "source": "ICMR-NIN 2020 pregnancy row not seen; 1,000 mg inferred (est.) from the 1:1 calcium ratio statement (secondary, unverified); US RDA 700, EFSA AI 550"
+    },
+    {
+      "group": "lactating",
+      "ear": null,
+      "rda": 1000,
+      "ai": null,
+      "source": "ICMR-NIN 2020 lactation row not seen; 1,000 mg inferred (est.) from the 1:1 calcium ratio statement (secondary, unverified); US RDA 700, EFSA AI 550"
+    }
+  ],
+  "appDefaultTarget": {
+    "adult_male": 1000,
+    "adult_female": 1000,
+    "pregnant": 1000,
+    "lactating": 1000,
+    "age_60_plus": null
+  },
+  "upperLimit": {
+    "value": 4000,
+    "unit": "mg/day",
+    "appliesTo": "food_and_supplements",
+    "source": "US NASEM 1997 / NIH ODS (4,000 mg ages 19-70; 3,000 mg over 70; 3,500 mg pregnancy; 4,000 mg lactation). ICMR TUL for phosphorus not found. EFSA sets no UL (2005 opinion via BfR: about 3,000 mg tolerated, data insufficient; 2019 additive group ADI 40 mg P/kg bw/day). Not for people with kidney disease"
+  },
+  "topFoodSources": [
+    {
+      "food": "Paneer",
+      "veg": true,
+      "per100g": 330,
+      "servingG": 100,
+      "servingLabel": "about 12 cubes of 2 cm",
+      "perServing": 330
+    },
+    {
+      "food": "Rajma, red (red kidney beans)",
+      "veg": true,
+      "per100g": 409,
+      "servingG": 50,
+      "servingLabel": "1 katori cooked, dry weight",
+      "perServing": 205
+    },
+    {
+      "food": "Egg, hen, whole, boiled",
+      "veg": false,
+      "per100g": 209,
+      "servingG": 100,
+      "servingLabel": "2 eggs",
+      "perServing": 209
+    },
+    {
+      "food": "Rohu (fish)",
+      "veg": false,
+      "per100g": 200,
+      "servingG": 100,
+      "servingLabel": "1 medium piece",
+      "perServing": 200
+    },
+    {
+      "food": "Milk, whole, cow",
+      "veg": true,
+      "per100g": 97,
+      "servingG": 200,
+      "servingLabel": "1 glass, about 200 ml",
+      "perServing": 193
+    },
+    {
+      "food": "Wheat flour (atta)",
+      "veg": true,
+      "per100g": 315,
+      "servingG": 60,
+      "servingLabel": "2 rotis",
+      "perServing": 189
+    },
+    {
+      "food": "Chicken breast, skinless",
+      "veg": false,
+      "per100g": 178,
+      "servingG": 100,
+      "servingLabel": "1 small piece",
+      "perServing": 178
+    },
+    {
+      "food": "Moong dal (split green gram)",
+      "veg": true,
+      "per100g": 416,
+      "servingG": 40,
+      "servingLabel": "1 katori cooked dal, dry weight",
+      "perServing": 166
+    },
+    {
+      "food": "Soya bean, white",
+      "veg": true,
+      "per100g": 494,
+      "servingG": 30,
+      "servingLabel": "1/2 katori cooked, dry weight",
+      "perServing": 148
+    },
+    {
+      "food": "Sunflower seeds",
+      "veg": true,
+      "per100g": 752,
+      "servingG": 20,
+      "servingLabel": "2 tbsp",
+      "perServing": 150
+    },
+    {
+      "food": "Cashew nut",
+      "veg": true,
+      "per100g": 500,
+      "servingG": 20,
+      "servingLabel": "about 12 to 15 nuts",
+      "perServing": 100
+    },
+    {
+      "food": "Gingelly (sesame) seeds, white",
+      "veg": true,
+      "per100g": 754,
+      "servingG": 10,
+      "servingLabel": "1 tbsp",
+      "perServing": 75
+    }
+  ],
+  "goodSourceDishes": [
+    {
+      "dishNumber": 53,
+      "dishName": "Paneer Tikka"
+    },
+    {
+      "dishNumber": 2,
+      "dishName": "Chicken Biryani"
+    },
+    {
+      "dishNumber": 3,
+      "dishName": "Paneer Butter Masala"
+    },
+    {
+      "dishNumber": 63,
+      "dishName": "Shahi Paneer"
+    },
+    {
+      "dishNumber": 17,
+      "dishName": "Palak Paneer"
+    },
+    {
+      "dishNumber": 69,
+      "dishName": "Paneer Bhurji"
+    },
+    {
+      "dishNumber": 54,
+      "dishName": "Matar Paneer"
+    },
+    {
+      "dishNumber": 62,
+      "dishName": "Mutton Biryani"
+    },
+    {
+      "dishNumber": 14,
+      "dishName": "Egg Bhurji"
+    },
+    {
+      "dishNumber": 12,
+      "dishName": "Rajma Chawal"
+    },
+    {
+      "dishNumber": 38,
+      "dishName": "Egg Curry"
+    },
+    {
+      "dishNumber": 56,
+      "dishName": "Pesarattu"
+    },
+    {
+      "dishNumber": 26,
+      "dishName": "Moong Dal Chilla"
+    },
+    {
+      "dishNumber": 27,
+      "dishName": "Dal Makhani"
+    },
+    {
+      "dishNumber": 35,
+      "dishName": "Curd Rice"
+    },
+    {
+      "dishNumber": 5,
+      "dishName": "Dal Tadka"
+    }
+  ],
+  "deficiencyRiskIndia": "low",
+  "absorptionBoosters": [
+    "animal foods and dairy (higher absorption than plant seeds)",
+    "soaking, sprouting and fermenting pulses and grains (lowers phytate)",
+    "inorganic phosphate additives (raise absorbed phosphorus sharply; a concern, not a benefit)"
+  ],
+  "absorptionBlockers": [
+    "phytate in whole grains, pulses, nuts and seeds (about half is unavailable)",
+    "calcium, aluminium or magnesium antacids and dairy, iron or zinc supplements taken with phosphate tablets",
+    "phosphate binders prescribed for kidney disease (taken with meals)"
+  ],
+  "logPresets": [
+    {
+      "label": "Prescribed sodium/potassium phosphate tablet, US label 250 mg P per tablet (enter only if prescribed)",
+      "amount": 250,
+      "unit": "mg",
+      "toMainFactor": 0.326,
+      "factorSource": "markdown",
+      "mainAmount": 81.5,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Calcium + phosphate tablet (enter label value)",
+      "amount": null,
+      "unit": "mg",
+      "toMainFactor": 0.326,
+      "factorSource": "markdown",
+      "mainAmount": null,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Multivitamin-mineral (enter label value)",
+      "amount": null,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": null,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Prescribed phosphate replacement, dose set by doctor (prescription dose)",
+      "amount": null,
+      "unit": "mg",
+      "toMainFactor": 0.326,
+      "factorSource": "markdown",
+      "mainAmount": null,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Custom amount (mg P, mg PO4 or mmol, converted to mg P)",
+      "amount": null,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": null,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    }
+  ],
+  "warnings": [
+    "Phosphorus is in almost every food; most healthy people reach the target from normal meals and do not need a supplement.",
+    "Phosphate additives (phosphoric acid, phosphates, E338 to E341, E450 to E452) in colas, processed cheese and processed meats are absorbed almost completely and are not shown on Indian food labels as phosphorus.",
+    "If you have kidney disease of any stage, your doctor or renal dietitian sets your phosphorus limit. Follow your doctor's advice. Do not take phosphorus supplements, phosphate laxatives or enemas unless your doctor prescribes them.",
+    "Sodium phosphate laxatives and enemas can cause acute kidney injury, especially with dehydration or kidney disease, or with diuretics, ACE inhibitors, ARBs or NSAIDs.",
+    "If you have eaten very little for several days or weeks, ask a doctor before returning to normal meals (refeeding risk).",
+    "Upper limit 4,000 mg/day for adults (3,000 mg over age 70) from US NASEM; ICMR upper limit not found.",
+    "General information, not medical advice. Check with a doctor before starting supplements."
+  ],
+  "conditionAdjustments": [
+    {
+      "profileId": "P13 Chronic kidney disease (early stages)",
+      "change": "General target does not apply; requires doctor input. KDIGO 2017 suggests lowering elevated phosphate toward normal, limiting dietary phosphate and considering the source (animal, vegetable, additive); no Indian mg/day target found; app shows only general information and 'Follow your doctor's advice', never a higher target, and does not log phosphate supplements without a doctor note",
+      "value": null,
+      "unit": "mg/day",
+      "source": "KDIGO 2017 CKD-MBD guideline (via summaries); National Kidney Foundation; Harvard Nutrition Source"
+    },
+    {
+      "profileId": "P14 Kidney stones",
+      "change": "No change found for dietary phosphorus; prescription phosphate tablets are doctor-only and contraindicated with infected phosphate stones",
+      "value": null,
+      "unit": "mg/day",
+      "source": "US K-Phos Neutral prescribing information; University of Chicago kidney stone clinic page"
+    },
+    {
+      "profileId": "P20 Osteoporosis and low bone density",
+      "change": "No change found; calcium and vitamin D matter more; limit cola and additive-heavy foods (observational evidence)",
+      "value": null,
+      "unit": "mg/day",
+      "source": "Tucker 2006 Framingham; Calvo and Uribarri 2013"
+    },
+    {
+      "profileId": "P22 Pregnancy",
+      "change": "ICMR value inferred 1,000 mg (est.); US RDA 700; EFSA AI 550; any supplement is doctor-led",
+      "value": 1000,
+      "unit": "mg/day",
+      "source": "ICMR-NIN 2020 inferred (secondary, unverified); NASEM; EFSA 2015"
+    },
+    {
+      "profileId": "P23 Breastfeeding",
+      "change": "ICMR value inferred 1,000 mg (est.); US RDA 700; EFSA AI 550; any supplement is doctor-led",
+      "value": 1000,
+      "unit": "mg/day",
+      "source": "ICMR-NIN 2020 inferred (secondary, unverified); NASEM; EFSA 2015"
+    },
+    {
+      "profileId": "P31 Healthy ageing (50+)",
+      "change": "No change to target; NASEM upper limit is 3,000 mg/day from age 70",
+      "value": 3000,
+      "unit": "mg/day upper limit from age 70",
+      "source": "US NASEM 1997"
+    },
+    {
+      "profileId": "P33 Jain diet",
+      "change": "No change; pulses, nuts, seeds, milk products and whole grains remain sources",
+      "value": null,
+      "unit": "mg/day",
+      "source": "IFCT 2017"
+    },
+    {
+      "profileId": "P34 Vegan diet",
+      "change": "No change to target; plant phosphorus is partly phytate (about 50% available) so meet the full target; use soaking, sprouting and fermenting; sources: soya, rajma, moong, sesame, sunflower seeds, cashew",
+      "value": null,
+      "unit": "mg/day",
+      "source": "Linus Pauling Institute; IFCT 2017"
+    },
+    {
+      "profileId": "P18 Lactose intolerance",
+      "change": "No change found; replace milk and paneer phosphorus with pulses, seeds and nuts; calcium is the bigger gap",
+      "value": null,
+      "unit": "mg/day",
+      "source": "IFCT 2017"
+    },
+    {
+      "profileId": "P27 Muscle gain",
+      "change": "No change found; phosphate loading (3 to 5 g/day sodium phosphate) has mixed results and is not suggested",
+      "value": null,
+      "unit": "mg/day",
+      "source": "Buck et al. 2014 review (via search); J Sports Sci Med 2014 trial"
+    },
+    {
+      "profileId": "P25 Fat loss",
+      "change": "No change found; after very low intake for days, ask a doctor before refeeding",
+      "value": null,
+      "unit": "mg/day",
+      "source": "NICE NG32 summaries (secondary)"
+    }
+  ],
+  "lastResearched": "2026-10-24",
+  "versions": [
+    {
+      "date": "2026-10-24",
+      "file": "FitPlate_Nutrients_2026-10-24.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3)",
+    "upperLimit": "official safety limit (D3, lower on conflict)",
+    "topFoodSources": "union; per100g official (D3)",
+    "logPresets": "union by label (newest), converted with own file factors",
+    "appDefaultTarget": "newest, kept only where it equals the ICMR row",
+    "lists": "union",
+    "warnings": "union (never dropped)",
+    "text": "newest"
+  },
+  "mergeNotes": [],
+  "needsReview": [
+    "2026-10-24 phosphorus: \"group\" has unexpected value \"age_60_plus_male\"; treated as not found",
+    "2026-10-24 phosphorus: \"group\" has unexpected value \"age_60_plus_female\"; treated as not found"
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "schema": "fitplate.links.v1",
-  "generatedFor": "Day09",
+  "generatedFor": "Day10",
   "goodSourceDishes": {
     "biotin": [
       {
@@ -57,6 +57,78 @@
         "dishNumber": 45,
         "dishName": "Tandoori Chicken",
         "dishId": "045-tandoori-chicken"
+      }
+    ],
+    "calcium": [
+      {
+        "dishNumber": 53,
+        "dishName": "Paneer Tikka",
+        "dishId": "053-paneer-tikka"
+      },
+      {
+        "dishNumber": 17,
+        "dishName": "Palak Paneer",
+        "dishId": "017-palak-paneer"
+      },
+      {
+        "dishNumber": 22,
+        "dishName": "Kadai Paneer",
+        "dishId": "022-kadai-paneer"
+      },
+      {
+        "dishNumber": 63,
+        "dishName": "Shahi Paneer",
+        "dishId": "063-shahi-paneer"
+      },
+      {
+        "dishNumber": 3,
+        "dishName": "Paneer Butter Masala",
+        "dishId": "003-paneer-butter-masala"
+      },
+      {
+        "dishNumber": 69,
+        "dishName": "Paneer Bhurji",
+        "dishId": "069-paneer-bhurji"
+      },
+      {
+        "dishNumber": 34,
+        "dishName": "Chilli Paneer",
+        "dishId": "034-chilli-paneer"
+      },
+      {
+        "dishNumber": 54,
+        "dishName": "Matar Paneer",
+        "dishId": "054-matar-paneer"
+      },
+      {
+        "dishNumber": 31,
+        "dishName": "Indian-style Overnight Oats",
+        "dishId": "031-indian-style-overnight-oats"
+      },
+      {
+        "dishNumber": 78,
+        "dishName": "Navratan Korma",
+        "dishId": "078-navratan-korma"
+      },
+      {
+        "dishNumber": 35,
+        "dishName": "Curd Rice",
+        "dishId": "035-curd-rice"
+      },
+      {
+        "dishNumber": 71,
+        "dishName": "Ragi Dosa",
+        "dishId": "071-ragi-dosa"
+      },
+      {
+        "dishNumber": 46,
+        "dishName": "Methi Thepla",
+        "dishId": "046-methi-thepla"
+      },
+      {
+        "dishNumber": 55,
+        "dishName": "Prawn Masala",
+        "dishId": "055-prawn-masala"
       }
     ],
     "niacin": [
@@ -201,6 +273,88 @@
         "dishNumber": 9,
         "dishName": "Idli with Sambar",
         "dishId": "009-idli-with-sambar"
+      }
+    ],
+    "phosphorus": [
+      {
+        "dishNumber": 53,
+        "dishName": "Paneer Tikka",
+        "dishId": "053-paneer-tikka"
+      },
+      {
+        "dishNumber": 2,
+        "dishName": "Chicken Biryani",
+        "dishId": "002-chicken-biryani"
+      },
+      {
+        "dishNumber": 3,
+        "dishName": "Paneer Butter Masala",
+        "dishId": "003-paneer-butter-masala"
+      },
+      {
+        "dishNumber": 63,
+        "dishName": "Shahi Paneer",
+        "dishId": "063-shahi-paneer"
+      },
+      {
+        "dishNumber": 17,
+        "dishName": "Palak Paneer",
+        "dishId": "017-palak-paneer"
+      },
+      {
+        "dishNumber": 69,
+        "dishName": "Paneer Bhurji",
+        "dishId": "069-paneer-bhurji"
+      },
+      {
+        "dishNumber": 54,
+        "dishName": "Matar Paneer",
+        "dishId": "054-matar-paneer"
+      },
+      {
+        "dishNumber": 62,
+        "dishName": "Mutton Biryani",
+        "dishId": "062-mutton-biryani"
+      },
+      {
+        "dishNumber": 14,
+        "dishName": "Egg Bhurji",
+        "dishId": "014-egg-bhurji"
+      },
+      {
+        "dishNumber": 12,
+        "dishName": "Rajma Chawal",
+        "dishId": "012-rajma-chawal"
+      },
+      {
+        "dishNumber": 38,
+        "dishName": "Egg Curry",
+        "dishId": "038-egg-curry"
+      },
+      {
+        "dishNumber": 56,
+        "dishName": "Pesarattu",
+        "dishId": "056-pesarattu"
+      },
+      {
+        "dishNumber": 26,
+        "dishName": "Moong Dal Chilla",
+        "dishId": "026-moong-dal-chilla"
+      },
+      {
+        "dishNumber": 27,
+        "dishName": "Dal Makhani",
+        "dishId": "027-dal-makhani"
+      },
+      {
+        "dishNumber": 35,
+        "dishName": "Curd Rice",
+        "dishId": "035-curd-rice"
+      },
+      {
+        "dishNumber": 5,
+        "dishName": "Dal Tadka",
+        "dishId": "005-dal-tadka"
       }
     ],
     "riboflavin": [
@@ -687,6 +841,7 @@
       "biotin",
       "niacin",
       "pantothenic-acid",
+      "phosphorus",
       "riboflavin",
       "vitamin-a",
       "vitamin-b12",
@@ -696,10 +851,14 @@
     ],
     "053-paneer-tikka": [
       "biotin",
+      "calcium",
+      "phosphorus",
       "vitamin-b12"
     ],
     "017-palak-paneer": [
       "biotin",
+      "calcium",
+      "phosphorus",
       "riboflavin",
       "vitamin-a",
       "vitamin-c",
@@ -708,12 +867,15 @@
     ],
     "022-kadai-paneer": [
       "biotin",
+      "calcium",
       "riboflavin",
       "vitamin-c",
       "vitamin-k"
     ],
     "003-paneer-butter-masala": [
-      "biotin"
+      "biotin",
+      "calcium",
+      "phosphorus"
     ],
     "049-mushroom-masala": [
       "biotin"
@@ -721,11 +883,14 @@
     "038-egg-curry": [
       "biotin",
       "pantothenic-acid",
+      "phosphorus",
       "vitamin-b12",
       "vitamin-d"
     ],
     "054-matar-paneer": [
-      "biotin"
+      "biotin",
+      "calcium",
+      "phosphorus"
     ],
     "021-masala-omelette": [
       "biotin",
@@ -740,6 +905,7 @@
       "biotin",
       "niacin",
       "pantothenic-acid",
+      "phosphorus",
       "vitamin-b12",
       "vitamin-b6",
       "vitamin-d"
@@ -750,6 +916,49 @@
       "pantothenic-acid",
       "vitamin-b12",
       "vitamin-b6"
+    ],
+    "063-shahi-paneer": [
+      "calcium",
+      "phosphorus",
+      "vitamin-b12"
+    ],
+    "069-paneer-bhurji": [
+      "calcium",
+      "phosphorus"
+    ],
+    "034-chilli-paneer": [
+      "calcium",
+      "vitamin-c"
+    ],
+    "031-indian-style-overnight-oats": [
+      "calcium",
+      "riboflavin",
+      "vitamin-b12",
+      "vitamin-e"
+    ],
+    "078-navratan-korma": [
+      "calcium"
+    ],
+    "035-curd-rice": [
+      "calcium",
+      "phosphorus",
+      "vitamin-b12"
+    ],
+    "071-ragi-dosa": [
+      "calcium"
+    ],
+    "046-methi-thepla": [
+      "calcium",
+      "riboflavin",
+      "vitamin-a",
+      "vitamin-b6",
+      "vitamin-k"
+    ],
+    "055-prawn-masala": [
+      "calcium",
+      "pantothenic-acid",
+      "vitamin-b12",
+      "vitamin-d"
     ],
     "023-mutton-rogan-josh": [
       "niacin",
@@ -786,6 +995,7 @@
     "012-rajma-chawal": [
       "niacin",
       "pantothenic-acid",
+      "phosphorus",
       "riboflavin",
       "thiamine"
     ],
@@ -793,13 +1003,9 @@
       "niacin",
       "vitamin-e"
     ],
-    "055-prawn-masala": [
-      "pantothenic-acid",
-      "vitamin-b12",
-      "vitamin-d"
-    ],
     "027-dal-makhani": [
       "pantothenic-acid",
+      "phosphorus",
       "thiamine",
       "vitamin-b6"
     ],
@@ -820,27 +1026,26 @@
       "thiamine",
       "vitamin-a"
     ],
-    "031-indian-style-overnight-oats": [
-      "riboflavin",
+    "062-mutton-biryani": [
+      "phosphorus",
       "vitamin-b12",
-      "vitamin-e"
+      "vitamin-b6"
     ],
-    "046-methi-thepla": [
-      "riboflavin",
-      "vitamin-a",
-      "vitamin-b6",
-      "vitamin-k"
+    "056-pesarattu": [
+      "phosphorus"
+    ],
+    "026-moong-dal-chilla": [
+      "phosphorus",
+      "thiamine"
     ],
     "005-dal-tadka": [
+      "phosphorus",
       "thiamine"
     ],
     "029-misal-pav": [
       "thiamine"
     ],
     "016-besan-chilla": [
-      "thiamine"
-    ],
-    "026-moong-dal-chilla": [
       "thiamine"
     ],
     "013-pav-bhaji": [
@@ -858,20 +1063,10 @@
     "025-veg-pulao": [
       "vitamin-a"
     ],
-    "062-mutton-biryani": [
-      "vitamin-b12",
-      "vitamin-b6"
-    ],
     "059-chicken-kathi-roll": [
       "vitamin-b12"
     ],
     "070-egg-fried-rice": [
-      "vitamin-b12"
-    ],
-    "035-curd-rice": [
-      "vitamin-b12"
-    ],
-    "063-shahi-paneer": [
       "vitamin-b12"
     ],
     "050-chicken-korma": [
@@ -887,9 +1082,6 @@
       "vitamin-c",
       "vitamin-e",
       "vitamin-k"
-    ],
-    "034-chilli-paneer": [
-      "vitamin-c"
     ],
     "015-veg-hakka-noodles": [
       "vitamin-c",
@@ -952,6 +1144,11 @@
       "met": 2.3
     },
     {
+      "exerciseId": "bhujangasana-cobra-pose",
+      "name": "Bhujangasana (Cobra pose)",
+      "met": 2.3
+    },
+    {
       "exerciseId": "bodyweight-squat",
       "name": "Bodyweight squat",
       "met": 3.8
@@ -980,6 +1177,21 @@
       "exerciseId": "hip-flexor-stretch",
       "name": "Hip flexor stretch",
       "met": 2.3
+    },
+    {
+      "exerciseId": "jumping-jacks",
+      "name": "Jumping jacks (with a low-impact step-jack version)",
+      "met": 4.8
+    },
+    {
+      "exerciseId": "leg-curl",
+      "name": "Leg curl (lying and seated)",
+      "met": 3.5
+    },
+    {
+      "exerciseId": "leg-extension-machine",
+      "name": "Leg extension machine",
+      "met": 3.5
     },
     {
       "exerciseId": "leg-press",
@@ -1912,6 +2124,11 @@
         "per100": 625,
         "unit": "µg",
         "source": "ingredient research (USDA FDC: FDC ID 174256, Mung beans, mature seeds, raw (SR Legacy; whole seed used as proxy for split dal), via secondary sites)"
+      },
+      "phosphorus": {
+        "per100": 416,
+        "unit": "mg",
+        "source": "nutrient research (phosphorus food sources)"
       }
     },
     "moong-sprouts-fresh-packaged": {
@@ -2812,6 +3029,16 @@
         "unit": "µg",
         "source": "nutrient research (biotin food sources)"
       },
+      "calcium": {
+        "per100": 476,
+        "unit": "mg",
+        "source": "nutrient research (calcium food sources)"
+      },
+      "phosphorus": {
+        "per100": 330,
+        "unit": "mg",
+        "source": "nutrient research (phosphorus food sources)"
+      },
       "vitamin-b12": {
         "per100": 0.6,
         "unit": "µg",
@@ -2840,6 +3067,40 @@
         "source": "nutrient research (vitamin-k food sources)"
       }
     },
+    "ragi-flour-packaged": {
+      "calcium": {
+        "per100": 364,
+        "unit": "mg",
+        "source": "nutrient research (calcium food sources)"
+      }
+    },
+    "fenugreek-seeds": {
+      "calcium": {
+        "per100": 274,
+        "unit": "mg",
+        "source": "nutrient research (calcium food sources)"
+      },
+      "riboflavin": {
+        "per100": 0.22,
+        "unit": "mg",
+        "source": "nutrient research (riboflavin food sources)"
+      },
+      "vitamin-a": {
+        "per100": 1541,
+        "unit": "µg",
+        "source": "nutrient research (vitamin-a food sources)"
+      },
+      "vitamin-b6": {
+        "per100": 0.38,
+        "unit": "mg",
+        "source": "nutrient research (vitamin-b6 food sources)"
+      },
+      "vitamin-k": {
+        "per100": 428,
+        "unit": "µg",
+        "source": "nutrient research (vitamin-k food sources)"
+      }
+    },
     "mutton-goat-bone-in-curry-cut": {
       "niacin": {
         "per100": 5.15,
@@ -2862,6 +3123,11 @@
         "per100": 2.37,
         "unit": "mg",
         "source": "nutrient research (niacin food sources)"
+      },
+      "phosphorus": {
+        "per100": 315,
+        "unit": "mg",
+        "source": "nutrient research (phosphorus food sources)"
       },
       "riboflavin": {
         "per100": 0.15,
@@ -2921,28 +3187,6 @@
       },
       "vitamin-k": {
         "per100": 479,
-        "unit": "µg",
-        "source": "nutrient research (vitamin-k food sources)"
-      }
-    },
-    "fenugreek-seeds": {
-      "riboflavin": {
-        "per100": 0.22,
-        "unit": "mg",
-        "source": "nutrient research (riboflavin food sources)"
-      },
-      "vitamin-a": {
-        "per100": 1541,
-        "unit": "µg",
-        "source": "nutrient research (vitamin-a food sources)"
-      },
-      "vitamin-b6": {
-        "per100": 0.38,
-        "unit": "mg",
-        "source": "nutrient research (vitamin-b6 food sources)"
-      },
-      "vitamin-k": {
-        "per100": 428,
         "unit": "µg",
         "source": "nutrient research (vitamin-k food sources)"
       }

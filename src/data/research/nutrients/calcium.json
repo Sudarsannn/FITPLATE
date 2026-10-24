@@ -1,0 +1,487 @@
+{
+  "id": "calcium",
+  "name": "Calcium",
+  "type": "mineral",
+  "subtype": "macromineral",
+  "unit": "mg",
+  "altUnits": [
+    {
+      "unit": "mmol",
+      "toMainUnitFactor": 40.08
+    },
+    {
+      "unit": "mEq",
+      "toMainUnitFactor": 20.04
+    },
+    {
+      "unit": "mg calcium carbonate",
+      "toMainUnitFactor": 0.4
+    }
+  ],
+  "unitConversions": [
+    {
+      "fromUnit": "mg",
+      "compound": "calcium carbonate",
+      "toMainUnitFactor": 0.4,
+      "raw": "1 mg calcium carbonate | x 0.40"
+    },
+    {
+      "fromUnit": "mg",
+      "compound": "calcium citrate",
+      "toMainUnitFactor": 0.21,
+      "raw": "1 mg calcium citrate | x 0.21"
+    }
+  ],
+  "targets": [
+    {
+      "group": "adult_male_sedentary",
+      "ear": 800,
+      "rda": 1000,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "group": "adult_male_moderate",
+      "ear": 800,
+      "rda": 1000,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "group": "adult_male_heavy",
+      "ear": 800,
+      "rda": 1000,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "group": "adult_female_sedentary",
+      "ear": 800,
+      "rda": 1000,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "group": "adult_female_moderate",
+      "ear": 800,
+      "rda": 1000,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "group": "adult_female_heavy",
+      "ear": 800,
+      "rda": 1000,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "group": "pregnant",
+      "ear": null,
+      "rda": 1000,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "group": "lactating",
+      "ear": null,
+      "rda": 1200,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    }
+  ],
+  "appDefaultTarget": {
+    "adult_male": 1000,
+    "adult_female": 1000,
+    "pregnant": 1000,
+    "lactating": 1200,
+    "age_60_plus": null
+  },
+  "upperLimit": {
+    "value": 2500,
+    "unit": "mg/day (adults 19-50; 2000 mg/day for age 51+)",
+    "appliesTo": "food_and_supplements",
+    "source": "NASEM/IOM 2011 and EFSA 2012 (ICMR-NIN TUL for calcium: Not found); US figures seen via search snippets (secondary, unverified)"
+  },
+  "topFoodSources": [
+    {
+      "food": "Paneer",
+      "veg": true,
+      "per100g": 476,
+      "servingG": 100,
+      "servingLabel": "1 medium katori of paneer sabzi (100 g raw paneer)",
+      "perServing": 476
+    },
+    {
+      "food": "Milk, cow (whole)",
+      "veg": true,
+      "per100g": 118,
+      "servingG": 200,
+      "servingLabel": "1 glass (about 200 ml)",
+      "perServing": 236
+    },
+    {
+      "food": "Sesame seeds, white (til)",
+      "veg": true,
+      "per100g": 1283,
+      "servingG": 10,
+      "servingLabel": "2 tsp (til chutney or laddoo)",
+      "perServing": 128
+    },
+    {
+      "food": "Ragi (finger millet) flour",
+      "veg": true,
+      "per100g": 364,
+      "servingG": 50,
+      "servingLabel": "2 ragi rotis or 1 bowl ragi porridge",
+      "perServing": 182
+    },
+    {
+      "food": "Amaranth leaves, green (chaulai)",
+      "veg": true,
+      "per100g": 330,
+      "servingG": 100,
+      "servingLabel": "about 1 katori cooked (high oxalate, low absorption)",
+      "perServing": 330
+    },
+    {
+      "food": "Fenugreek leaves (methi)",
+      "veg": true,
+      "per100g": 274,
+      "servingG": 50,
+      "servingLabel": "about 1/2 katori cooked",
+      "perServing": 137
+    },
+    {
+      "food": "Horse gram, whole (kulthi)",
+      "veg": true,
+      "per100g": 269,
+      "servingG": 50,
+      "servingLabel": "1 katori cooked dal or usal",
+      "perServing": 135
+    },
+    {
+      "food": "Soya bean, brown",
+      "veg": true,
+      "per100g": 239,
+      "servingG": 30,
+      "servingLabel": "1/2 katori cooked",
+      "perServing": 72
+    },
+    {
+      "food": "Almond",
+      "veg": true,
+      "per100g": 228,
+      "servingG": 20,
+      "servingLabel": "about 15 almonds",
+      "perServing": 46
+    },
+    {
+      "food": "Bengal gram, whole (kala chana)",
+      "veg": true,
+      "per100g": 150,
+      "servingG": 50,
+      "servingLabel": "1 katori cooked",
+      "perServing": 75
+    },
+    {
+      "food": "Rajma, red",
+      "veg": true,
+      "per100g": 126,
+      "servingG": 50,
+      "servingLabel": "1 katori cooked",
+      "perServing": 63
+    },
+    {
+      "food": "Prawns, small",
+      "veg": false,
+      "per100g": 68,
+      "servingG": 100,
+      "servingLabel": "1 katori masala (raw edible weight)",
+      "perServing": 68
+    }
+  ],
+  "goodSourceDishes": [
+    {
+      "dishNumber": 53,
+      "dishName": "Paneer Tikka"
+    },
+    {
+      "dishNumber": 17,
+      "dishName": "Palak Paneer"
+    },
+    {
+      "dishNumber": 22,
+      "dishName": "Kadai Paneer"
+    },
+    {
+      "dishNumber": 63,
+      "dishName": "Shahi Paneer"
+    },
+    {
+      "dishNumber": 3,
+      "dishName": "Paneer Butter Masala"
+    },
+    {
+      "dishNumber": 69,
+      "dishName": "Paneer Bhurji"
+    },
+    {
+      "dishNumber": 34,
+      "dishName": "Chilli Paneer"
+    },
+    {
+      "dishNumber": 54,
+      "dishName": "Matar Paneer"
+    },
+    {
+      "dishNumber": 31,
+      "dishName": "Indian-style Overnight Oats"
+    },
+    {
+      "dishNumber": 78,
+      "dishName": "Navratan Korma"
+    },
+    {
+      "dishNumber": 35,
+      "dishName": "Curd Rice"
+    },
+    {
+      "dishNumber": 71,
+      "dishName": "Ragi Dosa"
+    },
+    {
+      "dishNumber": 46,
+      "dishName": "Methi Thepla"
+    },
+    {
+      "dishNumber": 55,
+      "dishName": "Prawn Masala"
+    }
+  ],
+  "deficiencyRiskIndia": "high",
+  "absorptionBoosters": [
+    "Vitamin D sufficiency (sun exposure, diet or doctor-advised supplement)",
+    "Spreading calcium across the day in portions of about 500 mg or less",
+    "Taking calcium carbonate tablets with a meal",
+    "Low-oxalate calcium foods: milk, curd, paneer, ragi, fenugreek, drumstick leaves, kale or collard-type greens",
+    "Fermented, soaked or sprouted millets and pulses (human absorption data Not found)",
+    "Adequate protein and fruit/vegetable intake for calcium balance"
+  ],
+  "absorptionBlockers": [
+    "Oxalate-rich greens (spinach/palak, amaranth, bathua, colocasia leaves): calcium largely bound",
+    "Phytate in whole grains, pulses, nuts (reduced by soaking, sprouting, fermentation)",
+    "Very high sodium intake (raises urinary calcium loss)",
+    "Vitamin D deficiency",
+    "Taking calcium carbonate on an empty stomach, especially with acid-reducing medicines",
+    "Calcium taken together with iron, levothyroxine, some antibiotics or bisphosphonates (separate by the times on the product label or pharmacist advice)"
+  ],
+  "logPresets": [
+    {
+      "label": "Calcium tablet, 250 mg elemental",
+      "amount": 250,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 250,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Calcium tablet, 500 mg elemental (e.g. 1250 mg calcium carbonate, with or without vitamin D3)",
+      "amount": 500,
+      "unit": "mg",
+      "toMainFactor": 0.4,
+      "factorSource": "markdown",
+      "mainAmount": 200,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Calcium citrate tablet or capsule, 500 mg elemental",
+      "amount": 500,
+      "unit": "mg",
+      "toMainFactor": 0.21,
+      "factorSource": "markdown",
+      "mainAmount": 105,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Two 500 mg tablets in a day (1000 mg elemental)",
+      "amount": 1000,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 1000,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Doctor-prescribed pregnancy dose, 1500 mg elemental split across the day (WHO scheme for low-calcium-intake settings)",
+      "amount": 1500,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 1500,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Calcium 3000 mg elemental in a day (prescription dose)",
+      "amount": 3000,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 3000,
+      "mainAmountRange": null,
+      "prescriptionDose": true
+    }
+  ],
+  "warnings": [
+    "General information, not medical advice. Check with a doctor before starting calcium supplements.",
+    "Food first: the Endocrine Society of India advises meeting calcium needs from food and using supplements only when diet cannot meet needs or needs are higher.",
+    "Total calcium from food and supplements above 2,500 mg/day (2,000 mg/day from age 51) is above the US/EFSA upper limits; high supplement doses can cause constipation, high blood calcium (hypercalcaemia), kidney stones and, with antacids, milk-alkali syndrome.",
+    "Single supplement doses above about 500 mg are absorbed less well; split larger amounts.",
+    "Calcium can block absorption of levothyroxine, iron, some antibiotics (tetracyclines, quinolones) and bisphosphonates; gaps of several hours are advised, so ask a pharmacist or doctor.",
+    "Thiazide-type water pills reduce calcium loss in urine, so calcium and vitamin D supplements need medical supervision.",
+    "In chronic kidney disease, total calcium intake (food plus calcium-based binders) is set by the kidney team; never self-supplement.",
+    "Pregnancy and breastfeeding calcium supplements are prescribed by the doctor or health programme; the app never sets the dose."
+  ],
+  "conditionAdjustments": [
+    {
+      "profileId": "P22 Pregnancy",
+      "change": "Food target stays at the adult value; India's national programme (2014) provides 500 mg elemental calcium with vitamin D3 250 IU daily and WHO advises 1500-2000 mg/day only where dietary intake is low; the 2024 NEJM India/Tanzania trials found 500 mg/day not clearly worse than 1500 mg/day for pre-eclampsia. Dose is set by the doctor; requires doctor input",
+      "value": 1000,
+      "unit": "mg/day",
+      "source": "ICMR-NIN 2020 (secondary, unverified); MoHFW 2014 guideline (secondary: search snippet); WHO; NEJM 2024"
+    },
+    {
+      "profileId": "P23 Breastfeeding",
+      "change": "Raise food target to the ICMR lactation RDA (adult value plus 200 mg); programme supplement continues under health worker or doctor advice",
+      "value": 1200,
+      "unit": "mg/day",
+      "source": "ICMR-NIN 2020 (secondary, unverified); MoHFW 2014 guideline (secondary)"
+    },
+    {
+      "profileId": "P24 Menopause",
+      "change": "Use 1200 mg/day (age 51+ women in US/BHOF standard; ICMR 60+ value is 1200); Indian Menopause Society 2020 position quoted 800 mg RDA in a 2022 commentary (conflict); food first, supplement only if diet falls short",
+      "value": 1200,
+      "unit": "mg/day",
+      "source": "NASEM/NIH ODS; BHOF; ICMR-NIN 2020 via IJMR (secondary, unverified); Journal of Mid-Life Health 2022"
+    },
+    {
+      "profileId": "P20 Osteoporosis and low bone density",
+      "change": "Total (food plus supplement) 1200 mg/day for women 50+ and men 71+ (BHOF); no benefit shown above the recommended amount; vitamin D status matters; treatment is doctor-led",
+      "value": 1200,
+      "unit": "mg/day",
+      "source": "BHOF; ESI consensus (via press and abstract)"
+    },
+    {
+      "profileId": "P31 Healthy ageing (50+)",
+      "change": "Use the 60+ ICMR value of 1200 mg/day from age 60 (US raises it at 51 for women, 71 for men)",
+      "value": 1200,
+      "unit": "mg/day",
+      "source": "ICMR-NIN 2020 via IJMR (secondary, unverified); NASEM"
+    },
+    {
+      "profileId": "P14 Kidney stones",
+      "change": "Do not restrict dietary calcium; keep normal intake from food (700-1200 mg/day in guidance summaries) with lower salt and animal protein; calcium supplements carry a small stone risk, so use only with a doctor; requires doctor input",
+      "value": null,
+      "unit": "mg/day",
+      "source": "Cleveland Clinic J Med review and GPnotebook/Italian guideline summary (secondary); WHI trial"
+    },
+    {
+      "profileId": "P13 Chronic kidney disease (early stages)",
+      "change": "Total calcium from diet plus medicines suggested 800-1000 mg/day and not above 1500 mg/day (ERA/ESPN 2024); KDIGO 2017 caps total elemental calcium at 2000 mg/day; set by the kidney team; requires doctor input",
+      "value": null,
+      "unit": "mg/day",
+      "source": "ERA/ESPN consensus 2024; KDIGO 2017 CKD-MBD (via search snippets, secondary)"
+    },
+    {
+      "profileId": "P18 Lactose intolerance",
+      "change": "Same target; use curd, buttermilk, paneer, lactose-free milk, ragi, sesame, greens; if dairy is cut, a doctor or dietitian may advise a supplement",
+      "value": null,
+      "unit": "mg/day",
+      "source": "Search-snippet review of lactose-restricted diets (secondary); ESI consensus"
+    },
+    {
+      "profileId": "P34 Vegan diet",
+      "change": "Same target but harder to reach; EPIC-Oxford vegans had lower calcium and higher fracture risk; rely on ragi, sesame, greens (low-oxalate), calcium-set tofu or fortified plant milk, and a supplement only on doctor or dietitian advice",
+      "value": null,
+      "unit": "mg/day",
+      "source": "EPIC-Oxford (Appleby 2007; Tong 2020, via search snippets)"
+    },
+    {
+      "profileId": "P33 Jain diet",
+      "change": "No change; Jain diets usually include dairy, so milk, curd, paneer, ragi, sesame, and permitted greens cover calcium",
+      "value": null,
+      "unit": "mg/day",
+      "source": "IFCT 2017"
+    },
+    {
+      "profileId": "P9 Hypothyroidism",
+      "change": "No change to the target; calcium (and iron) tablets can block levothyroxine absorption, so keep them several hours apart as per the label or pharmacist",
+      "value": null,
+      "unit": "mg/day",
+      "source": "Product label summaries (secondary)"
+    },
+    {
+      "profileId": "P17 Acid reflux (GERD)",
+      "change": "No change to the target; antacids may contain calcium carbonate (count it); long-term acid-reducing medicines can reduce absorption of carbonate taken without food, so take with meals or ask about citrate",
+      "value": null,
+      "unit": "mg/day",
+      "source": "AFP letter and review summaries (secondary)"
+    },
+    {
+      "profileId": "P12 Vitamin D and B12 deficiency (diet follow-up)",
+      "change": "No change to the calcium target; vitamin D deficiency lowers calcium absorption, so correcting it is part of calcium adequacy",
+      "value": null,
+      "unit": "mg/day",
+      "source": "ESI consensus (via press)"
+    },
+    {
+      "profileId": "P21 Heart disease (after a cardiac event)",
+      "change": "No change to the food target; the Bolland meta-analysis linked calcium supplements (without vitamin D) with more heart attacks (RR 1.27), so avoid unprescribed high-dose supplements",
+      "value": null,
+      "unit": "mg/day",
+      "source": "BMJ 2010;341:c3691"
+    },
+    {
+      "profileId": "P3 High blood pressure (hypertension)",
+      "change": "No change to the calcium target; lower salt intake reduces urinary calcium loss; thiazide-type diuretics raise blood calcium, so check supplements with the doctor",
+      "value": null,
+      "unit": "mg/day",
+      "source": "Frontiers in Endocrinology 2025 meta-analysis (snippet); label summaries"
+    },
+    {
+      "profileId": "P25 Fat loss",
+      "change": "No change found; keep milk, curd and ragi in a calorie-cut plan so calcium does not fall below target",
+      "value": null,
+      "unit": "mg/day",
+      "source": "No source found"
+    }
+  ],
+  "lastResearched": "2026-10-24",
+  "versions": [
+    {
+      "date": "2026-10-24",
+      "file": "FitPlate_Nutrients_2026-10-24.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3)",
+    "upperLimit": "official safety limit (D3, lower on conflict)",
+    "topFoodSources": "union; per100g official (D3)",
+    "logPresets": "union by label (newest), converted with own file factors",
+    "appDefaultTarget": "newest, kept only where it equals the ICMR row",
+    "lists": "union",
+    "warnings": "union (never dropped)",
+    "text": "newest"
+  },
+  "mergeNotes": [],
+  "needsReview": [
+    "2026-10-24 calcium: \"group\" has unexpected value \"age_60_plus_male\"; treated as not found",
+    "2026-10-24 calcium: \"group\" has unexpected value \"age_60_plus_female\"; treated as not found"
+  ]
+}
