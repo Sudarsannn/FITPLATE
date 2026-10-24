@@ -60,6 +60,9 @@ export type ResearchLinks = {
 export const researchLinks: ResearchLinks = { ...(linkData as unknown as ResearchLinks) };
 
 const dishById = new Map(dishList.map((d) => [d.id, d]));
+/** Dishes the AI created on this device (see services/ai). They sit in dishList too, so every screen finds them with getDish. */
+const customDishes: Dish[] = [];
+let customRev = 0;
 const ingredientById = new Map(ingredientList.map((i) => [i.id, i]));
 
 /** One full research library, as the import script writes it to the server. */
@@ -101,6 +104,8 @@ export function applyResearchSnapshot(snap: ResearchSnapshot): void {
     Object.assign(aliasMap, snap.aliases);
   }
   if (snap.links) Object.assign(researchLinks, snap.links);
+  // Dishes the AI created on this device stay, whichever library is in use.
+  for (const d of customDishes) if (!dishList.some((x) => x.id === d.id)) dishList.push(d);
   dishById.clear();
   for (const d of dishList) dishById.set(d.id, d);
   ingredientById.clear();
@@ -133,4 +138,37 @@ export function getIngredient(id: string): Ingredient | undefined {
 export function familyOf(dish: Dish): Dish[] {
   if (!dish.familyId) return [];
   return dishList.filter((d) => d.familyId === dish.familyId && d.id !== dish.id);
+}
+
+/** Add (or replace) a dish the AI created. Screens re-read the lists through onResearchChange. */
+export function registerCustomDish(dish: Dish): void {
+  const at = customDishes.findIndex((d) => d.id === dish.id);
+  if (at >= 0) customDishes[at] = dish;
+  else customDishes.push(dish);
+  const inList = dishList.findIndex((d) => d.id === dish.id);
+  if (inList >= 0) dishList[inList] = dish;
+  else dishList.push(dish);
+  dishById.set(dish.id, dish);
+  customRev++;
+  listeners.forEach((l) => l());
+}
+
+export function removeCustomDish(id: string): void {
+  const at = customDishes.findIndex((d) => d.id === id);
+  if (at < 0) return;
+  customDishes.splice(at, 1);
+  const inList = dishList.findIndex((d) => d.id === id);
+  if (inList >= 0) dishList.splice(inList, 1);
+  dishById.delete(id);
+  customRev++;
+  listeners.forEach((l) => l());
+}
+
+export function getCustomDishes(): readonly Dish[] {
+  return customDishes;
+}
+
+/** Changes whenever an AI dish is added or removed; screens use it to recompute lists. */
+export function customRevision(): number {
+  return customRev;
 }

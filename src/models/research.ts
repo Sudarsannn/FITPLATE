@@ -149,6 +149,25 @@ export type Dish = Provenance & {
   variants: DishVariant[];
   /** Import validators' findings; listed under "needs review" in the DATA SYNC REPORT. */
   needsReview: string[];
+  /**
+   * Set only on dishes the AI created on a user's request (23-24 Oct 2026). They are a first
+   * draft: cook-only, no order price, and queued for the daily dish research to verify.
+   */
+  ai?: AiDishInfo;
+};
+
+export type AiDishInfo = {
+  createdAt: string;
+  /** What the user typed. */
+  request: string;
+  mode: 'variation' | 'new';
+  basedOn: { id: string; name: string } | null;
+  changes: string[];
+  /** Web pages the AI read while researching. */
+  sources: { title: string; url: string }[];
+  /** What the AI could not confirm; the daily research checks these. */
+  needsMoreResearch: string[];
+  model: string;
 };
 
 export type NutrientPer100 = {

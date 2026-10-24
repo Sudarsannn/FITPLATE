@@ -17,7 +17,7 @@ import { GUEST_OWNER } from '../../services/storage';
 import { activeCount, optionCounts, runSearch, toggle, type FilterGroup, type Selection } from '../../services/search';
 import { colors, radius, type } from '../../theme';
 import { IconBadge, type IconName } from '../Icon';
-import { TopGlow } from '../ui';
+import { PressableScale, TopGlow } from '../ui';
 import { SelectChip } from './parts';
 import { ResearchDishCard } from './ResearchDishCard';
 
@@ -69,8 +69,22 @@ export function DishLibrary({ dishes = researchDishes }: { dishes?: readonly Dis
         Cook
       </Text>
       <Text style={[type.small, { color: colors.muted, marginTop: 2 }]}>
-        {dishes.length} researched dishes, and more every day. Search by name, ingredient or diet.
+        {dishes.filter((d) => !d.ai).length} researched dishes, and more every day. Search by name, ingredient or diet.
       </Text>
+
+      <PressableScale
+        onPress={() => router.push({ pathname: '/create-dish', params: query.trim() ? { name: query.trim() } : {} })}
+        style={styles.aiCard}
+        scaleTo={0.98}
+        accessibilityLabel="Create your own dish with AI"
+      >
+        <IconBadge name="sparkles-outline" color={colors.violet} size={42} />
+        <View style={{ flex: 1 }}>
+          <Text style={styles.aiTitle}>Create your own dish with AI</Text>
+          <Text style={styles.aiSub}>Not on the list? Describe it and get the full recipe, ingredients and step-by-step cooking.</Text>
+        </View>
+        <Ionicons name="chevron-forward" size={18} color={colors.muted} />
+      </PressableScale>
 
       <View style={styles.search}>
         <Ionicons name="search" size={18} color={colors.muted} />
@@ -319,6 +333,9 @@ function Empty({ icon, title, body, action }: { icon: IconName; title: string; b
 }
 
 const styles = StyleSheet.create({
+  aiCard: { flexDirection: 'row', alignItems: 'center', gap: 12, marginTop: 14, padding: 14, borderRadius: radius.lg, backgroundColor: 'rgba(167,139,250,0.10)', borderWidth: 1, borderColor: 'rgba(167,139,250,0.30)' },
+  aiTitle: { color: colors.text, fontWeight: '800', fontSize: 15 },
+  aiSub: { color: colors.muted, fontSize: 12.5, lineHeight: 17, marginTop: 2 },
   search: {
     flexDirection: 'row',
     alignItems: 'center',

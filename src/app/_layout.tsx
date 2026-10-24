@@ -2,12 +2,18 @@ import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
+import { useEffect } from 'react';
+
 import { useServerResearch } from '../lib/researchLoader';
+import { loadAiDishes } from '../services/ai/store';
 import { StoreProvider } from '../lib/store';
 import { colors } from '../theme';
 
 export default function RootLayout() {
   useServerResearch();
+  useEffect(() => {
+    loadAiDishes();
+  }, []);
   return (
     <GestureHandlerRootView style={{ flex: 1, backgroundColor: colors.bg }}>
       <StoreProvider>
@@ -42,6 +48,7 @@ export default function RootLayout() {
           <Stack.Screen name="meal/[id]" options={{ animation: 'ios_from_right' }} />
           <Stack.Screen name="order-instead" options={{ animation: 'ios_from_right' }} />
           <Stack.Screen name="multicook" options={{ animation: 'ios_from_right' }} />
+          <Stack.Screen name="create-dish" options={{ animation: 'slide_from_bottom' }} />
           <Stack.Screen name="analyse" options={{ animation: 'ios_from_right' }} />
           <Stack.Screen name="vendors" options={{ animation: 'ios_from_right' }} />
           <Stack.Screen name="photo-credits" options={{ animation: 'ios_from_right' }} />

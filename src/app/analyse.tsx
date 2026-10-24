@@ -8,6 +8,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { DishImageSlot } from '../components/dishes/parts';
 import { MacroSplitBar } from '../components/viz';
 import { Chip, GradientButton } from '../components/ui';
+import { AiRequestError, createDishWithAi, PHASES, type AiPhase } from '../services/ai/client';
 import { Checkbox, k, Loading, Notice, SampleBanner, ScreenTop, Section } from '../components/vendors/kit';
 import { useResearchDishes } from '../lib/useResearch';
 import { useVendors } from '../lib/useVendors';
@@ -37,6 +38,26 @@ export default function Analyse() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [q, setQ] = useState('');
+  const [making, setMaking] = useState<{ key: string; phase: AiPhase } | null>(null);
+  const [aiError, setAiError] = useState<string | null>(null);
+
+  /** Cart dishes FitPlate has no recipe for: the AI builds one (from our research first), and the item becomes cookable. */
+  const createFor = async (keys: string[]) => {
+    setAiError(null);
+    for (const key of keys) {
+      const item = items.find((i) => i.key === key);
+      if (!item || item.dish) continue;
+      try {
+        setMaking({ key, phase: 'matching' });
+        const r = await createDishWithAi({ name: item.name, description: item.name }, { onPhase: (phase) => setMaking({ key, phase }) });
+        setItems((cur) => cur.map((i) => (i.key === key ? { ...i, dish: r.dish, choice: 'cook' } : i)));
+      } catch (e) {
+        setAiError(e instanceof AiRequestError ? e.message : 'Couldn’t create that recipe.');
+        break;
+      }
+    }
+    setMaking(null);
+  };
 
   const add = (name: string, qty: number, price: number | null) => {
     const m = matchDish(name, dishes);
@@ -147,7 +168,13 @@ export default function Analyse() {
                 <Chip key={i.key} label={i.name} icon={i.choice === 'cook' ? 'flame-outline' : 'bicycle-outline'} active={n === tab} onPress={() => setTab(n)} />
               ))}
             </ScrollView>
-            {cur ? <Tab item={cur} onChoice={(c) => setChoice(cur.key, c)} /> : null}
+            {cur ? <Tab item={cur} onChoice={(c) => setChoice(cur.key, c)} onCreate={() => createFor([cur.key])} making={making?.key === cur.key ? making.phase : null} busy={!!making} /> : null}
+            {items.filter((i) => !i.dish).length > 1 && !making ? (
+              <Pressable onPress={() => createFor(items.filter((i) => !i.dish).map((i) => i.key))} accessibilityRole="button" style={{ marginTop: 10 }}>
+                <Text style={{ color: colors.violet, fontWeight: '800' }}>Create recipes for all {items.filter((i) => !i.dish).length} missing dishes with AI</Text>
+              </Pressable>
+            ) : null}
+            {aiError ? <Notice tone="warn">{aiError}</Notice> : null}
             <Notice tone="info">
               {cook.length} to cook, {order.length} to order.
             </Notice>
@@ -160,7 +187,7 @@ export default function Analyse() {
 }
 
 /** A compact dish page for one cart item. The full recipe page is one tap away. */
-function Tab({ item, onChoice }: { item: Item; onChoice: (c: Item['choice']) => void }) {
+function Tab({ item, onChoice, onCreate, making, busy }: { item: Item; onChoice: (c: Item['choice']) => void; onCreate: () => void; making: AiPhase | null; busy: boolean }) {
   const d = item.dish;
   const make = d ? dishCost(d, item.qty)?.inr ?? null : null;
   const swiggy = item.price != null ? item.price * item.qty : null;
@@ -198,7 +225,17 @@ function Tab({ item, onChoice }: { item: Item; onChoice: (c: Item['choice']) => 
           </Pressable>
         </>
       ) : (
-        <Notice tone="warn">FitPlate has no recipe for this yet, so it can only go in the order list.</Notice>
+        <>
+          <Notice tone="warn">FitPlate has no researched recipe for this one. Order it, or let AI write the recipe from our research and the web.</Notice>
+          {making ? (
+            <Loading label={`${PHASES.find((p) => p.id === making)?.label ?? 'Working'}…`} />
+          ) : (
+            <Pressable onPress={onCreate} disabled={busy} accessibilityRole="button" style={[s.aiBtn, busy && { opacity: 0.5 }]}>
+              <Ionicons name="sparkles-outline" size={16} color={colors.violet} />
+              <Text style={{ color: colors.violet, fontWeight: '800' }}>Create this recipe with AI</Text>
+            </Pressable>
+          )}
+        </>
       )}
       <View style={{ gap: 12, marginTop: 14 }}>
         <Pressable onPress={() => d && onChoice('cook')} style={{ flexDirection: 'row', alignItems: 'center', gap: 10, opacity: d ? 1 : 0.4 }}>
@@ -215,6 +252,7 @@ function Tab({ item, onChoice }: { item: Item; onChoice: (c: Item['choice']) => 
 }
 
 const s = StyleSheet.create({
+  aiBtn: { flexDirection: 'row', alignItems: 'center', gap: 8, alignSelf: 'flex-start', marginTop: 10, paddingHorizontal: 14, paddingVertical: 10, borderRadius: radius.pill, backgroundColor: 'rgba(167,139,250,0.12)', borderWidth: 1, borderColor: 'rgba(167,139,250,0.35)' },
   saveChip: { flexDirection: 'row', alignItems: 'center', gap: 6, alignSelf: 'flex-start', paddingHorizontal: 10, paddingVertical: 5, borderRadius: radius.pill, backgroundColor: 'rgba(61,220,132,0.12)' },
   saveText: { color: colors.accent, fontWeight: '800', fontSize: 12 },
 });

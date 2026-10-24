@@ -6,6 +6,7 @@ import { Image, Linking, ScrollView, Share, StyleSheet, Text, View, type LayoutC
 import Animated, { Extrapolation, FadeInDown, FadeOutDown, interpolate, runOnJS, useAnimatedReaction, useAnimatedRef, useAnimatedScrollHandler, useAnimatedStyle, useSharedValue, ZoomIn } from 'react-native-reanimated';
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import { IconBadge } from '../../components/Icon';
 import { MacroDonut } from '../../components/viz';
 import { DishArtMark, dishArt, PhotoCredit, SelectChip, TagChip, dishPhoto } from '../../components/dishes/parts';
 import { Bar, GradientButton, PressableScale } from '../../components/ui';
@@ -30,6 +31,7 @@ import {
   trendArrow,
 } from '../../services/dishDetail';
 import { makeCost, orderRange } from '../../services/dishLibrary';
+import { deleteAiDish } from '../../services/ai/store';
 import { kitchenGaps } from '../../services/kitchen';
 import { isPantryStaple, recipeAmountLabel } from '../../services/vendors/basket';
 import { colors, radius, type } from '../../theme';
@@ -186,6 +188,7 @@ function DishBody({ dish, back }: { dish: Dish; back: () => void }) {
             <MakeOrOrder dish={dish} cost={cost} order={order} servings={servings} setServings={setServings} />
           </View>
 
+          {dish.ai ? <AiDishNotice dish={dish} /> : null}
           {dish.description ? <Text style={styles.body}>{dish.description}</Text> : null}
           {allergenTags.length ? <Text style={styles.note}>Allergens are worked out from the recipe. Check labels if you have an allergy.</Text> : null}
           {photo ? (
@@ -223,7 +226,7 @@ function DishBody({ dish, back }: { dish: Dish; back: () => void }) {
               }}
             />
           </View>
-          {!logged ? (
+          {!logged && !dish.ai ? (
             <PressableScale
               onPress={() => {
                 logDish(dish, 'ordered', order ? order.avg : null);
@@ -349,6 +352,32 @@ function DishBody({ dish, back }: { dish: Dish; back: () => void }) {
 }
 
 /** The research's difficulty in a word that fits a pill: Beginner → Easy, Intermediate → Medium, Advanced → Hard. */
+/** Shown on dishes the AI created: what it is based on, what is unverified, and a way to remove it. */
+function AiDishNotice({ dish }: { dish: Dish }) {
+  const ai = dish.ai!;
+  return (
+    <View style={[styles.card, { flexDirection: 'row', gap: 12 }]}>
+      <IconBadge name="sparkles-outline" color={colors.violet} size={40} />
+      <View style={{ flex: 1, gap: 6 }}>
+        <Text style={styles.cardTitle}>Created for you by FitPlate AI</Text>
+        <Text style={styles.note}>
+          {ai.basedOn ? `Built from our researched ${ai.basedOn.name}${ai.changes.length ? `, with these changes: ${ai.changes.join('; ')}` : ''}, checked against recipes online.` : 'Researched from several recipes online, using the same method as our own dishes.'} Our daily research will verify it.
+        </Text>
+        {ai.needsMoreResearch.length ? <Text style={styles.note}>Still to confirm: {ai.needsMoreResearch.join('; ')}.</Text> : null}
+        <PressableScale
+          onPress={async () => {
+            await deleteAiDish(dish.id);
+            router.replace('/(tabs)/cook');
+          }}
+          accessibilityLabel="Delete this AI dish"
+        >
+          <Text style={[styles.note, { color: colors.bad, fontWeight: '700' }]}>Delete this dish</Text>
+        </PressableScale>
+      </View>
+    </View>
+  );
+}
+
 function levelWord(d: string | null): string {
   if (!d) return '–';
   if (/^begin/i.test(d)) return 'Easy';
@@ -391,7 +420,7 @@ function MakeOrOrder({ dish, cost, order, servings, setServings }: { dish: Dish;
   return (
     <View style={styles.card}>
       <View style={styles.servRow}>
-        <Text style={styles.cardTitle}>Make it or order it?</Text>
+        <Text style={styles.cardTitle}>{dish.ai ? 'Cost to make' : 'Make it or order it?'}</Text>
         <View style={styles.stepper}>
           <PressableScale onPress={() => setServings(Math.max(1, servings - 1))} style={styles.step} accessibilityLabel="Fewer servings">
             <Ionicons name="remove" size={18} color={colors.text} />
@@ -453,6 +482,8 @@ function MakeOrOrder({ dish, cost, order, servings, setServings }: { dish: Dish;
         ) : null}
       </View>
 
+      {dish.ai ? null : (
+        <>
       {/* Order online */}
       <View style={styles.option}>
         <View style={styles.optionHead}>
@@ -495,8 +526,12 @@ function MakeOrOrder({ dish, cost, order, servings, setServings }: { dish: Dish;
       ) : cost && order ? (
         <Text style={[styles.note, { marginTop: 12 }]}>The saving shows once every ingredient has a price.</Text>
       ) : null}
+        </>
+      )}
       <Text style={styles.note}>
-        Averages from FitPlate&apos;s price research{updated ? `, last checked ${shortDate(updated)}` : ''}. New prices are added as research comes in and all prices are refreshed monthly.
+        {dish.ai
+          ? 'Ingredient prices come from FitPlate\u2019s price research where the ingredient has been researched.'
+          : `Averages from FitPlate's price research${updated ? `, last checked ${shortDate(updated)}` : ''}. New prices are added as research comes in and all prices are refreshed monthly.`}
       </Text>
     </View>
   );

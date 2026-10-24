@@ -1,0 +1,400 @@
+/**
+ * FitPlate AI dish creation: the server half.
+ *
+ * One handler, used by the Cloudflare Worker (worker/index.mjs). It keeps the
+ * free Gemini API key off the phone and the web bundle, and it calls Google
+ * through `fetchImpl` so tests can pass a fake.
+ *
+ *   POST /api/ai/plan      match a description against the researched dishes
+ *   POST /api/ai/research  search the web (Google Search grounding) for the dish
+ *   POST /api/ai/compose   write the full dish in FitPlate's research shape (JSON)
+ *   POST /api/ai/submit    save the finished dish to the research queue (GitHub)
+ *   GET  /api/ai/status    is the key configured (no secrets returned)
+ *
+ * Secrets (Cloudflare dashboard, Settings, Variables and Secrets):
+ *   GEMINI_API_KEY   required, free from https://aistudio.google.com/apikey
+ *   GITHUB_TOKEN     optional, fine-grained token with Contents write on the repo
+ * Variables (optional): GEMINI_MODEL, GEMINI_FALLBACK_MODELS, GITHUB_REPO, QUEUE_BRANCH.
+ */
+
+export const DEFAULT_MODEL = 'gemini-2.5-flash';
+export const DEFAULT_FALLBACKS = 'gemini-2.5-flash-lite';
+const GEMINI = 'https://generativelanguage.googleapis.com/v1beta/models';
+const MAX_TEXT = 6000;
+
+const json = (body, status = 200) =>
+  new Response(JSON.stringify(body), {
+    status,
+    headers: { 'content-type': 'application/json; charset=utf-8', 'access-control-allow-origin': '*', 'cache-control': 'no-store' },
+  });
+
+const CORS = {
+  'access-control-allow-origin': '*',
+  'access-control-allow-methods': 'GET, POST, OPTIONS',
+  'access-control-allow-headers': 'content-type',
+  'access-control-max-age': '86400',
+};
+
+const clip = (s, n = MAX_TEXT) => (typeof s === 'string' ? s.slice(0, n) : '');
+
+// ----------------------------------------------------------------- Gemini
+
+/** One Gemini call, with a model fallback chain and one retry on overload. Returns { text, sources, queries, model }. */
+export async function callGemini({ env, fetchImpl, system, prompt, schema, search, temperature = 0.4 }) {
+  const key = env.GEMINI_API_KEY;
+  if (!key) throw new AiError(503, 'not-configured', 'The AI key is not set up on the server yet.');
+  const models = [env.GEMINI_MODEL || DEFAULT_MODEL, ...String(env.GEMINI_FALLBACK_MODELS ?? DEFAULT_FALLBACKS).split(',').map((m) => m.trim()).filter(Boolean)];
+  let last = null;
+  for (const model of [...new Set(models)]) {
+    for (let attempt = 0; attempt < 2; attempt++) {
+      const body = {
+        systemInstruction: { parts: [{ text: system }] },
+        contents: [{ role: 'user', parts: [{ text: prompt }] }],
+        generationConfig: { temperature, ...(schema ? { responseMimeType: 'application/json', responseSchema: schema } : {}) },
+        ...(search ? { tools: [{ google_search: {} }] } : {}),
+      };
+      let res;
+      try {
+        res = await fetchImpl(`${GEMINI}/${model}:generateContent`, { method: 'POST', headers: { 'content-type': 'application/json', 'x-goog-api-key': key }, body: JSON.stringify(body) });
+      } catch (e) {
+        last = new AiError(502, 'network', 'Could not reach the AI service.');
+        continue;
+      }
+      if (res.status === 429) {
+        last = new AiError(429, 'quota', 'The free AI allowance is used up for now. Try again later.');
+        break; // next model has its own allowance
+      }
+      if (res.status === 503 || res.status === 500) {
+        last = new AiError(503, 'overloaded', 'The AI service is busy. Try again in a minute.');
+        continue;
+      }
+      if (res.status === 404) {
+        last = new AiError(502, 'model', `Model ${model} is not available.`);
+        break;
+      }
+      if (!res.ok) {
+        last = new AiError(502, 'upstream', `The AI service answered ${res.status}.`);
+        break;
+      }
+      const data = await res.json();
+      const cand = data?.candidates?.[0];
+      const text = (cand?.content?.parts ?? []).map((p) => p.text ?? '').join('').trim();
+      if (!text) {
+        last = new AiError(502, 'empty', 'The AI returned nothing. Try again.');
+        continue;
+      }
+      const gm = cand?.groundingMetadata;
+      const sources = (gm?.groundingChunks ?? []).map((c) => c.web).filter(Boolean).map((w) => ({ title: String(w.title ?? w.uri), url: String(w.uri) }));
+      const seen = new Set();
+      const uniq = sources.filter((s) => (seen.has(s.url) ? false : (seen.add(s.url), true)));
+      return { text, sources: uniq, queries: gm?.webSearchQueries ?? [], model };
+    }
+  }
+  throw last ?? new AiError(502, 'upstream', 'The AI service is unavailable.');
+}
+
+export class AiError extends Error {
+  constructor(status, code, message) {
+    super(message);
+    this.status = status;
+    this.code = code;
+  }
+}
+
+// ----------------------------------------------------------------- prompts
+
+const SYSTEM_BASE = `You are the research engine for FitPlate, an India-first app that helps busy people cook at home instead of ordering from Swiggy or Zomato.
+You follow FitPlate's dish research protocol: everything is for ONE serving, standard ingredient names with the Indian name in brackets where common (for example "Cumin seeds (jeera)"), realistic for a beginner in a home kitchen in India, written in your own words, never copying recipe text.
+Never invent a source, a rating or a nutrition number. Mark estimates as estimates. Say "not found" instead of guessing.`;
+
+export const PLAN_SCHEMA = {
+  type: 'OBJECT',
+  properties: {
+    mode: { type: 'STRING', enum: ['existing', 'variation', 'new'] },
+    baseDishId: { type: 'STRING', nullable: true },
+    canonicalName: { type: 'STRING' },
+    summary: { type: 'STRING' },
+    changes: { type: 'ARRAY', items: { type: 'STRING' } },
+    searchQueries: { type: 'ARRAY', items: { type: 'STRING' } },
+  },
+  required: ['mode', 'canonicalName', 'summary', 'changes', 'searchQueries'],
+};
+
+export function planPrompt({ description, name, catalog, diet }) {
+  const lines = catalog.map((d) => `${d.id} | ${d.name} | ${d.cuisine ?? ''} | ${d.dietType ?? ''}${d.family ? ` | family ${d.family}` : ''}`).join('\n');
+  return `A user wants a dish that is not on their Cook list.
+Name they typed: ${name || '(none)'}
+Description: ${description}
+${diet ? `Their diet: ${diet}\n` : ''}
+FitPlate's researched dishes (id | name | cuisine | diet):
+${lines}
+
+Decide:
+- "existing": the request is really one of the researched dishes (same dish, different spelling or menu name). Set baseDishId.
+- "variation": a researched dish can be modified to make it (swap a main ingredient, make it Jain or vegan, change spice level, change the cooking method). Set baseDishId and list the changes.
+- "new": no researched dish is close enough. baseDishId null.
+Give canonicalName as the dish's usual English name. summary is one sentence. changes lists each modification (empty for existing and new). searchQueries has 2 to 4 web search queries that would find authentic recipes and nutrition facts for it.`;
+}
+
+export function researchPrompt({ description, canonicalName, mode, base, changes }) {
+  return `Research this dish on the web as FitPlate's research engine and write research notes.
+Dish: ${canonicalName}
+User's description: ${description}
+Mode: ${mode}
+${base ? `Start from FitPlate's researched dish "${base.name}". Its ingredients (1 serving): ${base.ingredients}\nIts method in short: ${base.steps}\nChanges to make: ${(changes ?? []).join('; ') || 'none'}\nCheck online that the modified recipe is authentic and workable (what to change in quantities, timings and technique).\n` : 'There is no researched dish to start from. Build the recipe from several independent online sources and choose what most reliable sources agree on; note the key disagreements.\n'}
+Use at least 3 independent sources. Write the notes as plain text with these parts:
+1. Quick facts: cuisine or region, veg/egg/non-veg, meal type, difficulty with a reason, prep and cook minutes, smallest practical batch if one serving is impractical.
+2. Ingredients for 1 serving with quantity in g or ml (count for whole items), household measure, what unfamiliar items look like.
+3. Equipment with an alternative for anything not everyone owns.
+4. Micro-steps: one small action each, with exact measure, time, visual cue (colour, smell, sound, texture), camera check, a beginner tip where useful.
+5. Nutrition per serving (kcal, protein, carbs, fat, fibre) from IFCT 2017 or USDA data, and which basis you used.
+6. Healthiness (home version and typical restaurant version, out of 10) with reasons and three healthier swaps.
+7. Internet-sentiment rating out of 5 with a one-line reason (not restaurant ratings).
+8. Storage and reheating, a leftover remix, and allergens.
+9. Where sources disagree and what you chose.`;
+}
+
+const STR = { type: 'STRING' };
+const NUM = { type: 'NUMBER', nullable: true };
+const ALLERGENS = ['peanut', 'treeNut', 'milk', 'egg', 'fish', 'shellfish', 'gluten', 'soy', 'sesame', 'mustard'];
+
+export const COMPOSE_SCHEMA = {
+  type: 'OBJECT',
+  properties: {
+    name: STR,
+    description: STR,
+    cuisine: STR,
+    dietType: { type: 'STRING', enum: ['veg', 'egg', 'non-veg'] },
+    mealType: { type: 'ARRAY', items: { type: 'STRING', enum: ['breakfast', 'lunch', 'dinner', 'snack'] } },
+    difficulty: { type: 'STRING', enum: ['Beginner', 'Intermediate', 'Advanced'] },
+    prepMin: NUM,
+    cookMin: NUM,
+    batchNote: { type: 'STRING', nullable: true },
+    ingredients: {
+      type: 'ARRAY',
+      items: {
+        type: 'OBJECT',
+        properties: { name: STR, quantity: NUM, unit: { type: 'STRING', enum: ['g', 'ml', 'count'] }, householdMeasure: { type: 'STRING', nullable: true }, looksLike: { type: 'STRING', nullable: true } },
+        required: ['name', 'quantity', 'unit'],
+      },
+    },
+    equipment: { type: 'ARRAY', items: STR },
+    steps: {
+      type: 'ARRAY',
+      items: {
+        type: 'OBJECT',
+        properties: { title: STR, text: STR, timerSec: { type: 'INTEGER', nullable: true }, tip: { type: 'STRING', nullable: true }, visualCue: { type: 'STRING', nullable: true }, cameraCheck: { type: 'STRING', nullable: true }, videoShot: { type: 'STRING', nullable: true } },
+        required: ['title', 'text'],
+      },
+    },
+    nutrition: { type: 'OBJECT', properties: { kcal: NUM, proteinG: NUM, carbsG: NUM, fatG: NUM, fibreG: NUM, basis: STR }, required: ['kcal', 'proteinG', 'carbsG', 'fatG'] },
+    healthiness: { type: 'OBJECT', properties: { score: NUM, restaurantScore: NUM, reason: STR, swaps: { type: 'ARRAY', items: STR } }, required: ['score', 'reason'] },
+    rating: { type: 'OBJECT', properties: { score: NUM, basis: STR }, required: ['basis'] },
+    storage: { type: 'STRING', nullable: true },
+    leftoverRemix: { type: 'STRING', nullable: true },
+    allergens: { type: 'ARRAY', items: { type: 'STRING', enum: ALLERGENS } },
+    jainFriendly: { type: 'BOOLEAN' },
+    veganFriendly: { type: 'BOOLEAN' },
+    glutenFree: { type: 'BOOLEAN' },
+    dairyFree: { type: 'BOOLEAN' },
+    needsMoreResearch: { type: 'ARRAY', items: STR },
+  },
+  required: ['name', 'description', 'cuisine', 'dietType', 'mealType', 'difficulty', 'ingredients', 'equipment', 'steps', 'nutrition', 'healthiness', 'rating', 'allergens', 'needsMoreResearch'],
+};
+
+export function composePrompt({ canonicalName, description, notes, base, changes }) {
+  return `Turn these research notes into the final FitPlate dish record as JSON.
+Dish: ${canonicalName}
+User's description: ${description}
+${base ? `Based on FitPlate's researched dish "${base.name}" with these changes: ${(changes ?? []).join('; ') || 'none'}.\n` : ''}
+Rules:
+- Everything per 1 serving. Ingredient quantities in g or ml, or count for whole items. Use standard names with the Indian name in brackets where common.
+- Steps: 8 to 30 micro-steps, one small action each. title is a short lead-in (for example "Rinse the poha"), text is the instruction with the exact measure. timerSec only for a step that really waits. visualCue, cameraCheck and videoShot for every step.
+- nutrition is per serving and the kcal must roughly equal 4 x protein + 4 x carbs + 9 x fat.
+- healthiness.score and restaurantScore are out of 10. rating.score is out of 5 and rating.basis must say it comes from general internet sentiment, never restaurant ratings.
+- allergens uses only the allowed ids and lists every one the ingredients contain.
+- needsMoreResearch lists anything the notes could not confirm (a nutrition value, an authentic quantity, a technique). Empty if nothing.
+- Never invent numbers the notes do not support; use null where unknown.
+
+RESEARCH NOTES:
+${clip(notes, 24000)}`;
+}
+
+// ----------------------------------------------------------------- handlers
+
+async function readBody(request) {
+  let raw;
+  try {
+    raw = await request.text();
+  } catch {
+    throw new AiError(400, 'bad-request', 'Could not read the request.');
+  }
+  if (raw.length > 120_000) throw new AiError(413, 'too-large', 'The request is too large.');
+  try {
+    return JSON.parse(raw);
+  } catch {
+    throw new AiError(400, 'bad-request', 'The request is not valid JSON.');
+  }
+}
+
+function needText(v, label, min = 2) {
+  const s = clip(typeof v === 'string' ? v.trim() : '', 600);
+  if (s.length < min) throw new AiError(400, 'bad-request', `${label} is missing.`);
+  return s;
+}
+
+function parseModelJson(text) {
+  try {
+    return JSON.parse(text);
+  } catch {
+    const m = text.match(/\{[\s\S]*\}/);
+    if (m) {
+      try {
+        return JSON.parse(m[0]);
+      } catch {
+        /* fall through */
+      }
+    }
+    throw new AiError(502, 'bad-output', 'The AI answered in a shape FitPlate could not read. Try again.');
+  }
+}
+
+export async function plan(body, ctx) {
+  const description = needText(body.description, 'The description');
+  const catalog = (Array.isArray(body.catalog) ? body.catalog : []).slice(0, 300).map((d) => ({ id: clip(String(d.id), 80), name: clip(String(d.name), 80), cuisine: d.cuisine ? clip(String(d.cuisine), 60) : null, dietType: d.dietType ?? null, family: d.family ? clip(String(d.family), 40) : null }));
+  const r = await callGemini({ ...ctx, system: SYSTEM_BASE, prompt: planPrompt({ description, name: clip(body.name ?? '', 80), catalog, diet: clip(body.diet ?? '', 80) }), schema: PLAN_SCHEMA, temperature: 0.2 });
+  const out = parseModelJson(r.text);
+  if (out.mode !== 'new' && out.baseDishId && !catalog.some((d) => d.id === out.baseDishId)) {
+    out.baseDishId = null;
+    if (out.mode === 'existing') out.mode = 'new';
+    if (out.mode === 'variation') out.mode = 'new';
+  }
+  if (out.mode !== 'new' && !out.baseDishId) out.mode = 'new';
+  return { plan: out, model: r.model };
+}
+
+export async function research(body, ctx) {
+  const description = needText(body.description, 'The description');
+  const canonicalName = needText(body.canonicalName, 'The dish name');
+  const base = body.base && typeof body.base === 'object' ? { name: clip(String(body.base.name), 80), ingredients: clip(String(body.base.ingredients), 2500), steps: clip(String(body.base.steps), 3500) } : null;
+  const r = await callGemini({ ...ctx, system: SYSTEM_BASE, prompt: researchPrompt({ description, canonicalName, mode: body.mode === 'variation' ? 'variation' : 'new', base, changes: (Array.isArray(body.changes) ? body.changes : []).slice(0, 12).map((c) => clip(String(c), 200)) }), search: true, temperature: 0.3 });
+  return { notes: r.text, sources: r.sources.slice(0, 20), queries: r.queries.slice(0, 8), model: r.model };
+}
+
+export async function compose(body, ctx) {
+  const canonicalName = needText(body.canonicalName, 'The dish name');
+  const description = needText(body.description, 'The description');
+  const notes = needText(body.notes, 'The research notes', 50);
+  const base = body.base && typeof body.base === 'object' ? { name: clip(String(body.base.name), 80) } : null;
+  const r = await callGemini({ ...ctx, system: SYSTEM_BASE, prompt: composePrompt({ canonicalName, description, notes, base, changes: (Array.isArray(body.changes) ? body.changes : []).slice(0, 12).map((c) => clip(String(c), 200)) }), schema: COMPOSE_SCHEMA, temperature: 0.2 });
+  return { dish: parseModelJson(r.text), model: r.model };
+}
+
+// ----------------------------------------------------------------- research queue
+
+export const slugify = (s) =>
+  String(s)
+    .toLowerCase()
+    .normalize('NFKD')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .slice(0, 60) || 'dish';
+
+const b64 = (s) => {
+  const bytes = new TextEncoder().encode(s);
+  let bin = '';
+  bytes.forEach((b) => (bin += String.fromCharCode(b)));
+  return btoa(bin);
+};
+const unb64 = (s) => new TextDecoder().decode(Uint8Array.from(atob(s.replace(/\n/g, '')), (c) => c.charCodeAt(0)));
+
+/**
+ * Save an AI-made dish to the research queue: one JSON file per dish on a
+ * separate branch of the repo (never the deploy branch), so the daily dish
+ * research can pick it up. Asking again for the same dish only raises its count.
+ */
+export async function submit(body, ctx) {
+  const { env, fetchImpl } = ctx;
+  const token = env.GITHUB_TOKEN;
+  if (!token) return { saved: false, reason: 'queue-not-configured' };
+  const repo = env.GITHUB_REPO || 'sudarsannn/fitplate';
+  const branch = env.QUEUE_BRANCH || 'ai-dish-queue';
+  const dish = body.dish;
+  if (!dish || typeof dish !== 'object' || typeof dish.name !== 'string') throw new AiError(400, 'bad-request', 'There is no dish to save.');
+  const slug = slugify(dish.name);
+  const path = `queue/${slug}.json`;
+  const gh = (p, init = {}) => fetchImpl(`https://api.github.com/repos/${repo}${p}`, { ...init, headers: { accept: 'application/vnd.github+json', authorization: `Bearer ${token}`, 'x-github-api-version': '2022-11-28', 'user-agent': 'fitplate-ai-queue', 'content-type': 'application/json', ...(init.headers ?? {}) } });
+
+  // Branch: create from the default branch the first time.
+  let ref = await gh(`/git/ref/heads/${branch}`);
+  if (ref.status === 404) {
+    const info = await (await gh('')).json();
+    const head = await (await gh(`/git/ref/heads/${info.default_branch}`)).json();
+    const made = await gh('/git/refs', { method: 'POST', body: JSON.stringify({ ref: `refs/heads/${branch}`, sha: head.object.sha }) });
+    if (!made.ok && made.status !== 422) throw new AiError(502, 'queue', 'Could not create the queue branch.');
+  } else if (!ref.ok) {
+    throw new AiError(502, 'queue', `GitHub answered ${ref.status}.`);
+  }
+
+  const now = new Date().toISOString();
+  const entryFresh = {
+    slug,
+    name: dish.name,
+    status: 'pending-research',
+    mode: body.mode === 'variation' ? 'variation' : 'new',
+    basedOn: body.basedOn ? { id: clip(String(body.basedOn.id), 80), name: clip(String(body.basedOn.name), 80) } : null,
+    changes: (Array.isArray(body.changes) ? body.changes : []).slice(0, 12).map((c) => clip(String(c), 200)),
+    requests: 1,
+    firstRequestedAt: now,
+    lastRequestedAt: now,
+    userWords: [clip(String(body.description ?? ''), 600)],
+    needsMoreResearch: Array.isArray(dish.needsMoreResearch) ? dish.needsMoreResearch.slice(0, 12).map((c) => clip(String(c), 200)) : [],
+    sources: (Array.isArray(body.sources) ? body.sources : []).slice(0, 20),
+    model: clip(String(body.model ?? ''), 60),
+    note: 'Created by FitPlate AI from the user request. Not yet researched by the daily dish research. The dish below is a first draft, not verified.',
+    dish,
+  };
+
+  const existing = await gh(`/contents/${path}?ref=${branch}`);
+  let content = entryFresh;
+  let sha;
+  if (existing.ok) {
+    const file = await existing.json();
+    sha = file.sha;
+    try {
+      const old = JSON.parse(unb64(file.content));
+      content = { ...old, requests: (old.requests ?? 1) + 1, lastRequestedAt: now, userWords: [...new Set([...(old.userWords ?? []), ...entryFresh.userWords])].slice(0, 20) };
+    } catch {
+      content = entryFresh;
+    }
+  } else if (existing.status !== 404) {
+    throw new AiError(502, 'queue', `GitHub answered ${existing.status}.`);
+  }
+  const put = await gh(`/contents/${path}`, { method: 'PUT', body: JSON.stringify({ message: `AI dish queue: ${dish.name}${sha ? ' (requested again)' : ''}`, content: b64(JSON.stringify(content, null, 2) + '\n'), branch, ...(sha ? { sha } : {}) }) });
+  if (!put.ok) throw new AiError(502, 'queue', `Could not save to the queue (${put.status}).`);
+  return { saved: true, slug, requests: content.requests };
+}
+
+// ----------------------------------------------------------------- router
+
+/** Route one request. `env` carries the secrets; `fetchImpl` defaults to global fetch. */
+export async function handleAi(request, env, fetchImpl = fetch) {
+  const url = new URL(request.url);
+  if (request.method === 'OPTIONS') return new Response(null, { status: 204, headers: CORS });
+  const route = url.pathname.replace(/\/+$/, '');
+  try {
+    if (route === '/api/ai/status' && request.method === 'GET') {
+      return json({ ok: true, configured: Boolean(env.GEMINI_API_KEY), queue: Boolean(env.GITHUB_TOKEN), model: env.GEMINI_MODEL || DEFAULT_MODEL });
+    }
+    if (request.method !== 'POST') return json({ error: 'not-found', message: 'Not found.' }, 404);
+    const ctx = { env, fetchImpl };
+    if (route === '/api/ai/plan') return json({ ok: true, ...(await plan(await readBody(request), ctx)) });
+    if (route === '/api/ai/research') return json({ ok: true, ...(await research(await readBody(request), ctx)) });
+    if (route === '/api/ai/compose') return json({ ok: true, ...(await compose(await readBody(request), ctx)) });
+    if (route === '/api/ai/submit') return json({ ok: true, ...(await submit(await readBody(request), ctx)) });
+    return json({ error: 'not-found', message: 'Not found.' }, 404);
+  } catch (e) {
+    if (e instanceof AiError) return json({ ok: false, error: e.code, message: e.message }, e.status);
+    return json({ ok: false, error: 'server', message: 'Something went wrong on the server.' }, 500);
+  }
+}
