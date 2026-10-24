@@ -14,7 +14,7 @@
  * Secrets (Cloudflare dashboard, Settings, Variables and Secrets):
  *   GEMINI_API_KEY   required, free from https://aistudio.google.com/apikey
  *   GITHUB_TOKEN     optional, fine-grained token with Contents write on the repo
- * Variables (optional): GEMINI_MODEL, GEMINI_FALLBACK_MODELS, GITHUB_REPO, QUEUE_BRANCH.
+ * Variables (optional, normally leave unset: the newest free flash model is found automatically): GEMINI_MODEL, GEMINI_FALLBACK_MODELS, GITHUB_REPO, QUEUE_BRANCH.
  */
 
 export const DEFAULT_MODEL = 'gemini-2.5-flash';
@@ -39,12 +39,54 @@ const clip = (s, n = MAX_TEXT) => (typeof s === 'string' ? s.slice(0, n) : '');
 
 // ----------------------------------------------------------------- Gemini
 
+let modelCache = { at: 0, list: /** @type {string[]} */ ([]) };
+
+/** Version number in a model name: gemini-2.5-flash gives 2.5, gemini-3-flash-preview gives 3. */
+const versionOf = (name) => {
+  const m = /gemini-(\d+(?:\.\d+)?)/.exec(name);
+  return m ? parseFloat(m[1]) : 0;
+};
+
+/**
+ * The free "flash" models this key can use, newest first, asked from Google
+ * itself so a retired model never breaks the feature. Stable releases come
+ * before previews of the same version. Cached for an hour per Worker instance.
+ */
+export async function discoverModels(env, fetchImpl) {
+  if (modelCache.list.length && Date.now() - modelCache.at < 3_600_000) return modelCache.list;
+  try {
+    const res = await fetchImpl(`${GEMINI}?pageSize=200`, { headers: { 'x-goog-api-key': env.GEMINI_API_KEY } });
+    if (!res.ok) return [];
+    const data = await res.json();
+    const list = (data.models ?? [])
+      .filter((m) => (m.supportedGenerationMethods ?? []).includes('generateContent'))
+      .map((m) => String(m.name).replace(/^models\//, ''))
+      .filter((n) => /^gemini-[\d.]+-flash(-\d+)?$|^gemini-[\d.]+-flash-(preview|latest)/.test(n) || /^gemini-[\d.]+-flash$/.test(n))
+      .filter((n) => !/(image|tts|live|audio|thinking|exp|lite|8b|robotics|computer)/.test(n))
+      .sort((a, b) => versionOf(b) - versionOf(a) || Number(/preview/.test(a)) - Number(/preview/.test(b)) || a.localeCompare(b));
+    // A lite model is the last resort when nothing else is left.
+    const lite = (data.models ?? [])
+      .map((m) => String(m.name).replace(/^models\//, ''))
+      .filter((n) => /^gemini-[\d.]+-flash-lite$/.test(n) && (data.models.find((m) => m.name === `models/${n}`)?.supportedGenerationMethods ?? []).includes('generateContent'))
+      .sort((a, b) => versionOf(b) - versionOf(a));
+    modelCache = { at: Date.now(), list: [...list, ...lite] };
+  } catch {
+    return [];
+  }
+  return modelCache.list;
+}
+
 /** One Gemini call, with a model fallback chain and one retry on overload. Returns { text, sources, queries, model }. */
 export async function callGemini({ env, fetchImpl, system, prompt, schema, search, temperature = 0.4 }) {
   const key = env.GEMINI_API_KEY;
   if (!key) throw new AiError(503, 'not-configured', 'The AI key is not set up on the server yet.');
-  const models = [env.GEMINI_MODEL || DEFAULT_MODEL, ...String(env.GEMINI_FALLBACK_MODELS ?? DEFAULT_FALLBACKS).split(',').map((m) => m.trim()).filter(Boolean)];
+  const pinned = env.GEMINI_MODEL
+    ? [env.GEMINI_MODEL, ...String(env.GEMINI_FALLBACK_MODELS ?? '').split(',').map((m) => m.trim()).filter(Boolean)]
+    : [];
+  const discovered = pinned.length ? [] : await discoverModels(env, fetchImpl);
+  const models = [...pinned, ...discovered, ...(pinned.length || discovered.length ? [] : [DEFAULT_MODEL, ...DEFAULT_FALLBACKS.split(',')])].slice(0, 5);
   let last = null;
+  let first = null;
   for (const model of [...new Set(models)]) {
     for (let attempt = 0; attempt < 2; attempt++) {
       const body = {
@@ -68,12 +110,16 @@ export async function callGemini({ env, fetchImpl, system, prompt, schema, searc
         last = new AiError(503, 'overloaded', 'The AI service is busy. Try again in a minute.');
         continue;
       }
-      if (res.status === 404) {
-        last = new AiError(502, 'model', `Model ${model} is not available.`);
-        break;
-      }
       if (!res.ok) {
-        last = new AiError(502, 'upstream', `The AI service answered ${res.status}.`);
+        let why = '';
+        try {
+          why = String((await res.json())?.error?.message ?? '').slice(0, 200);
+        } catch {
+          /* no body */
+        }
+        const e = res.status === 404 ? new AiError(502, 'model', `Model ${model} is not available${why ? `: ${why}` : '.'}`) : new AiError(502, 'upstream', `The AI service answered ${res.status} for ${model}${why ? `: ${why}` : '.'}`);
+        first = first ?? e;
+        last = e;
         break;
       }
       const data = await res.json();
@@ -90,7 +136,8 @@ export async function callGemini({ env, fetchImpl, system, prompt, schema, searc
       return { text, sources: uniq, queries: gm?.webSearchQueries ?? [], model };
     }
   }
-  throw last ?? new AiError(502, 'upstream', 'The AI service is unavailable.');
+  // The first failure is the real one: later models only fail because the first did.
+  throw (last?.code === 'quota' ? last : first ?? last) ?? new AiError(502, 'upstream', 'The AI service is unavailable.');
 }
 
 export class AiError extends Error {
@@ -384,7 +431,10 @@ export async function handleAi(request, env, fetchImpl = fetch) {
   const route = url.pathname.replace(/\/+$/, '');
   try {
     if (route === '/api/ai/status' && request.method === 'GET') {
-      return json({ ok: true, configured: Boolean(env.GEMINI_API_KEY), queue: Boolean(env.GITHUB_TOKEN), model: env.GEMINI_MODEL || DEFAULT_MODEL });
+      const out = { ok: true, configured: Boolean(env.GEMINI_API_KEY), queue: Boolean(env.GITHUB_TOKEN), model: env.GEMINI_MODEL || 'auto' };
+      // ?check=1 asks Google which free models this key can use right now.
+      if (url.searchParams.get('check') && env.GEMINI_API_KEY) out.available = env.GEMINI_MODEL ? [env.GEMINI_MODEL] : await discoverModels(env, fetchImpl);
+      return json(out);
     }
     if (request.method !== 'POST') return json({ error: 'not-found', message: 'Not found.' }, 404);
     const ctx = { env, fetchImpl };

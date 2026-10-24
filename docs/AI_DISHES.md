@@ -11,7 +11,7 @@ The Analyse my Swiggy Checkout page has the same button for cart items with no r
 
 ## Which AI
 
-Google Gemini through the Gemini API free tier (no card, no expiry, rate limits only). Default model `gemini-2.5-flash`, falling back to `gemini-2.5-flash-lite` when one is out of allowance. Change them with the Worker variables `GEMINI_MODEL` and `GEMINI_FALLBACK_MODELS` (comma separated) when Google ships a newer free Flash model. Free-tier requests can be used by Google to improve its products; FitPlate only sends the dish text and the researched dish names, never names, emails or health data.
+Google Gemini through the Gemini API free tier (no card, no expiry, rate limits only). The server asks Google which models the key can use and picks the newest stable Flash model, then falls back to older ones (and a Flash-Lite last) when one is retired or out of allowance, so a retired model never breaks it. `https://<your-address>/api/ai/status?check=1` lists them. To force one, set the Worker variable `GEMINI_MODEL` (and optionally `GEMINI_FALLBACK_MODELS`, comma separated). Free-tier requests can be used by Google to improve its products; FitPlate only sends the dish text and the researched dish names, never names, emails or health data.
 
 If the free allowance runs out the screen says so and the rest of the app is unaffected.
 

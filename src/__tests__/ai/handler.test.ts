@@ -9,7 +9,7 @@ describe('AI server handler', () => {
   it('says whether it is configured, never returning secrets', async () => {
     const res = await handleAi(new Request('https://x.test/api/ai/status'), { GEMINI_API_KEY: 'secret' });
     const body = await res.json();
-    expect(body).toMatchObject({ configured: true, queue: false });
+    expect(body).toMatchObject({ configured: true, queue: false, model: 'auto' });
     expect(JSON.stringify(body)).not.toContain('secret');
   });
 
@@ -37,15 +37,32 @@ describe('AI server handler', () => {
     expect((await res.json()).plan).toMatchObject({ mode: 'new', baseDishId: null });
   });
 
-  it('falls back to the next model when one is out of allowance', async () => {
+  const LIST = { models: ['gemini-2.5-flash', 'gemini-3-flash-preview', 'gemini-3-flash', 'gemini-2.5-flash-lite', 'gemini-2.5-flash-image', 'gemini-2.5-pro', 'embedding-001'].map((n) => ({ name: `models/${n}`, supportedGenerationMethods: n === 'embedding-001' ? ['embedContent'] : ['generateContent'] })) };
+
+  it('asks Google which models exist and tries the newest stable flash first, lite last', async () => {
     const tried: string[] = [];
     const fetchImpl = async (u: string) => {
+      if (u.includes('/models?')) return { ok: true, status: 200, json: async () => LIST } as any;
       tried.push(u.split('/models/')[1].split(':')[0]);
-      return tried.length === 1 ? ({ ok: false, status: 429, json: async () => ({}) } as any) : gem('ok');
+      return tried.length < 3 ? ({ ok: false, status: tried.length === 1 ? 404 : 429, json: async () => ({ error: { message: 'gone' } }) } as any) : gem('ok');
     };
     const r = await callGemini({ env: { GEMINI_API_KEY: 'k' }, fetchImpl, system: 's', prompt: 'p', schema: undefined, search: false });
-    expect(tried).toEqual(['gemini-2.5-flash', 'gemini-2.5-flash-lite']);
-    expect(r.model).toBe('gemini-2.5-flash-lite');
+    expect(tried).toEqual(['gemini-3-flash', 'gemini-3-flash-preview', 'gemini-2.5-flash']);
+    expect(r.model).toBe('gemini-2.5-flash');
+  });
+
+  it('reports the first real failure, with Google\'s reason', async () => {
+    const fetchImpl = async (u: string) => (u.includes('/models?') ? ({ ok: true, status: 200, json: async () => LIST } as any) : ({ ok: false, status: 404, json: async () => ({ error: { message: 'model retired' } }) } as any));
+    const res = await handleAi(post('/api/ai/research', { description: 'dal', canonicalName: 'Dal' }), { GEMINI_API_KEY: 'k' }, fetchImpl as any);
+    expect(res.status).toBe(502);
+    expect((await res.json()).message).toMatch(/gemini-3-flash.*model retired/);
+  });
+
+  it('status can list the models the key can use', async () => {
+    const fetchImpl = async () => ({ ok: true, status: 200, json: async () => LIST }) as any;
+    const body = await (await handleAi(new Request('https://x.test/api/ai/status?check=1'), { GEMINI_API_KEY: 'k' }, fetchImpl as any)).json();
+    expect(body.available[0]).toBe('gemini-3-flash');
+    expect(body.available).not.toContain('gemini-2.5-flash-image');
   });
 
   it('reports quota when every model is exhausted', async () => {
