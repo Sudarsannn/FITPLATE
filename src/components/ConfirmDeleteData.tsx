@@ -3,6 +3,7 @@ import { ActivityIndicator, Modal, Pressable, StyleSheet, Text, View } from 'rea
 
 import { tap } from '../lib/haptics';
 import { colors, type } from '../theme';
+import { IconBadge } from './Icon';
 import { GradientButton } from './ui';
 
 type Props = {
@@ -45,7 +46,7 @@ export function ConfirmDeleteData({ visible, onConfirm, onDone, onCancel }: Prop
     <Modal visible={visible} transparent animationType="fade" onRequestClose={cancel}>
       <View style={styles.backdrop}>
         <View style={styles.card} accessibilityViewIsModal accessibilityRole="alert">
-          <Text style={styles.emoji}>🗑️</Text>
+          <IconBadge name="trash-outline" color={colors.bad} size={52} style={{ marginBottom: 10 }} />
           <Text style={styles.title}>Delete all your FitPlate data?</Text>
           <Text style={styles.body}>
             This permanently deletes your profile, meal, water and workout logs, saved dishes, meal plans and savings, from the cloud and from

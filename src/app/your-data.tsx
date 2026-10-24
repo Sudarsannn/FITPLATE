@@ -6,17 +6,18 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { FadeIn, Glass, PressableScale } from '../components/ui';
 import { useStore } from '../lib/store';
+import { IconBadge, type IconName } from '../components/Icon';
 import { colors, type } from '../theme';
 
-const SAVED: [string, string, string][] = [
-  ['👤', 'Your profile', 'Name, goals, diet, cooking level, reminder setting and your survey answers (body details, eating habits, kitchen, training).'],
-  ['🩺', 'Health answers', 'Any health conditions you chose in the survey. Optional, private to your account, and never shared.'],
-  ['🍛', 'Meals', 'What you ate or cooked, with its calories, protein and fibre.'],
-  ['💧', 'Water', 'Glasses of water per day.'],
-  ['🏃', 'Workouts', 'Type of exercise, minutes and calories burned.'],
-  ['❤️', 'Favourites', 'Dishes you saved.'],
-  ['🗓️', 'Meal plans', 'Dishes you planned for each day.'],
-  ['💰', 'Savings', 'Money saved by cooking instead of ordering.'],
+const SAVED: [IconName, string, string][] = [
+  ['person-outline', 'Your profile', 'Name, goals, diet, cooking level, reminder setting and your survey answers (body details, eating habits, kitchen, training).'],
+  ['medkit-outline', 'Health answers', 'Any health conditions you chose in the survey. Optional, private to your account, and never shared.'],
+  ['restaurant-outline', 'Meals', 'What you ate or cooked, with its calories, protein and fibre.'],
+  ['water-outline', 'Water', 'Glasses of water per day.'],
+  ['barbell-outline', 'Workouts', 'Type of exercise, minutes and calories burned.'],
+  ['heart-outline', 'Favourites', 'Dishes you saved.'],
+  ['calendar-outline', 'Meal plans', 'Dishes you planned for each day.'],
+  ['wallet-outline', 'Savings', 'Money saved by cooking instead of ordering.'],
 ];
 
 function Section({ i, title, children }: { i: number; title: string; children: ReactNode }) {
@@ -63,9 +64,9 @@ export default function YourData() {
 
         <Section i={1} title="What we save">
           <Text style={[styles.body, { marginBottom: 10 }]}>Only what you enter or tap in the app:</Text>
-          {SAVED.map(([emoji, name, what]) => (
+          {SAVED.map(([icon, name, what]) => (
             <View key={name} style={styles.row}>
-              <Text style={styles.emoji}>{emoji}</Text>
+              <IconBadge name={icon} size={34} />
               <View style={{ flex: 1 }}>
                 <Text style={styles.rowTitle}>{name}</Text>
                 <Text style={styles.small}>{what}</Text>

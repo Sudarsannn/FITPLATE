@@ -91,7 +91,7 @@ export default function VendorsScreen() {
         </Section>
 
         <Section title="Real orders">
-          <Text style={k.body}>{ordersLive ? '🟢 On. Placing an order is real and charges you on Swiggy.' : '⚪ Off. You can build carts and see bills, but “Place order” stays locked.'}</Text>
+          <Text style={k.body}>{ordersLive ? 'On. Placing an order is real and charges you on Swiggy.' : 'Off. You can build carts and see bills, but “Place order” stays locked.'}</Text>
           <Text style={[k.muted, { marginTop: 6 }]}>
             Turned on only when the app setting and the server setting are both on ({CHECKOUT_LIVE ? 'app on' : 'app off'}
             {mode === 'live' && server ? `, server ${server.checkoutLive ? 'on' : 'off'}` : ''}). FitPlate never sees your card or UPI details: you pay in Swiggy or your UPI app.

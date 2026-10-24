@@ -1,3 +1,4 @@
+import { Ionicons } from '@expo/vector-icons';
 import { BlurView } from 'expo-blur';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useVideoPlayer, VideoView } from 'expo-video';
@@ -16,6 +17,7 @@ import Animated, {
 import Svg, { Circle, Defs, Stop, LinearGradient as SvgGradient } from 'react-native-svg';
 
 import { tap } from '../lib/haptics';
+import { alpha, type IconName } from './Icon';
 import { useLiteMode } from '../lib/useLiteMode';
 import { colors, gradients, radius, type } from '../theme';
 
@@ -83,7 +85,7 @@ export function GradientButton({
     </View>
   );
   return (
-    <PressableScale onPress={onPress} disabled={disabled} style={[styles.btn, style]} accessibilityLabel={title}>
+    <PressableScale onPress={onPress} disabled={disabled} style={[styles.btn, variant === 'primary' && styles.btnGlow, variant === 'warm' && styles.btnGlowWarm, style]} accessibilityLabel={title}>
       {variant === 'glass' ? (
         <View style={[styles.btnFill, styles.glassBtn]}>{content}</View>
       ) : (
@@ -104,6 +106,7 @@ export function GradientButton({
 export function Glass({ children, style, intensity = 30 }: { children: ReactNode; style?: StyleProp<ViewStyle>; intensity?: number }) {
   return (
     <View style={[styles.glass, style]}>
+      <LinearGradient colors={['rgba(255,255,255,0)', 'rgba(255,255,255,0.22)', 'rgba(255,255,255,0)']} start={{ x: 0, y: 0 }} end={{ x: 1, y: 0 }} style={styles.sheen} pointerEvents="none" />
       {Platform.OS !== 'android' ? (
         <BlurView intensity={intensity} tint="dark" style={StyleSheet.absoluteFill} />
       ) : null}
@@ -111,6 +114,11 @@ export function Glass({ children, style, intensity = 30 }: { children: ReactNode
       {children}
     </View>
   );
+}
+
+/** A soft wash of colour at the top of a screen, so tab screens share one atmosphere. */
+export function TopGlow({ color = colors.accent, height = 300 }: { color?: string; height?: number }) {
+  return <LinearGradient pointerEvents="none" colors={[alpha(color, 0.18), alpha(color, 0.05), 'rgba(0,0,0,0)']} style={{ position: 'absolute', top: 0, left: 0, right: 0, height }} />;
 }
 
 export function Card({ children, style }: { children: ReactNode; style?: StyleProp<ViewStyle> }) {
@@ -222,11 +230,13 @@ export function CountUp({ value, prefix = '', style, duration = 1000 }: { value:
   );
 }
 
-/** Gradient tile with the dish emoji, used wherever a photo would go. */
-export function Chip({ label, active, onPress }: { label: string; active?: boolean; onPress?: () => void }) {
+export function Chip({ label, active, onPress, icon }: { label: string; active?: boolean; onPress?: () => void; icon?: IconName }) {
   return (
     <PressableScale onPress={onPress} style={[styles.chip, active && styles.chipOn]} scaleTo={0.92}>
-      <Text style={[styles.chipText, active && { color: '#06210F' }]}>{label}</Text>
+      <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
+        {icon ? <Ionicons name={icon} size={15} color={active ? '#06210F' : colors.muted} /> : null}
+        <Text style={[styles.chipText, active && { color: '#06210F' }]}>{label}</Text>
+      </View>
     </PressableScale>
   );
 }
@@ -312,10 +322,13 @@ export function Glow({ color = colors.accent, size = 260, style }: { color?: str
 
 export const styles = StyleSheet.create({
   btn: { borderRadius: radius.pill, overflow: 'hidden' },
+  btnGlow: { boxShadow: '0px 10px 26px rgba(61,220,132,0.28)' },
+  btnGlowWarm: { boxShadow: '0px 10px 26px rgba(255,122,26,0.28)' },
   btnFill: { paddingVertical: 16, paddingHorizontal: 22, borderRadius: radius.pill },
   btnInner: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 10 },
   btnText: { fontSize: 16, fontWeight: '800', letterSpacing: 0.2 },
   glassBtn: { backgroundColor: 'rgba(255,255,255,0.10)', borderWidth: 1, borderColor: colors.border },
+  sheen: { position: 'absolute', top: 0, left: 0, right: 0, height: 1 },
   glass: { borderRadius: radius.lg, overflow: 'hidden', borderWidth: 1, borderColor: colors.border, padding: 16, backgroundColor: 'rgba(20,26,23,0.55)' },
   card: { borderRadius: radius.lg, overflow: 'hidden', borderWidth: 1, borderColor: colors.border, padding: 16, backgroundColor: colors.cardSolid },
   artGlow: { position: 'absolute', backgroundColor: 'rgba(255,255,255,0.22)', top: '-25%', left: '-20%' },

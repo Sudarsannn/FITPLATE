@@ -1,3 +1,4 @@
+import { Ionicons } from '@expo/vector-icons';
 import { Link, Redirect } from 'expo-router';
 import { useEffect } from 'react';
 import { Platform, Pressable, StyleSheet, Text, View } from 'react-native';
@@ -65,7 +66,8 @@ export default function Welcome() {
       <SafeAreaView style={styles.content}>
         <Animated.View entering={FadeIn.duration(900)}>
           <View style={styles.badge}>
-            <Text style={styles.badgeText}>🍽️  FITPLATE</Text>
+            <Ionicons name="restaurant-outline" size={14} color={colors.text} />
+            <Text style={styles.badgeText}>FITPLATE</Text>
           </View>
         </Animated.View>
 
@@ -115,6 +117,9 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0,0,0,0.35)',
     borderWidth: 1,
     borderColor: 'rgba(255,255,255,0.15)',
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
   },
   badgeText: { ...type.label, color: colors.text },
   title: { ...type.hero, fontSize: 40, lineHeight: 44, color: colors.text },

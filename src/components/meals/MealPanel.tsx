@@ -7,6 +7,7 @@ import { Glass, PressableScale } from '../ui';
 import { makeCost, orderRange } from '../../services/dishLibrary';
 import { HOW_LABEL, howOf, MONEY_COLOR, mealMoney, SLOT_LABEL, timeLabel, type MealRow } from '../../services/meals';
 import { colors, type } from '../../theme';
+import { IconBadge } from '../Icon';
 
 /** The money line for a meal, using its own prices or the dish's researched ones. */
 export function useMealMoney(m: MealRow) {
@@ -32,7 +33,7 @@ export function MealPanel({ meal }: { meal: MealRow }) {
       style={{ marginTop: 8 }}
     >
       <Glass style={styles.card}>
-        {photo ? <Image source={photo.source} style={styles.thumb} accessibilityIgnoresInvertColors /> : <View style={[styles.thumb, styles.emoji]}><Text style={{ fontSize: 26 }}>{meal.emoji}</Text></View>}
+        {photo ? <Image source={photo.source} style={styles.thumb} accessibilityIgnoresInvertColors /> : <IconBadge name={how === 'ordered' ? 'bicycle-outline' : how === 'cooked' ? 'flame-outline' : 'restaurant-outline'} color={how === 'ordered' ? colors.bad : how === 'cooked' ? colors.accent : colors.warm} size={56} radius={14} />}
         <View style={{ flex: 1, minHeight: 56 }}>
           <Text style={styles.name} numberOfLines={1}>
             {meal.name}

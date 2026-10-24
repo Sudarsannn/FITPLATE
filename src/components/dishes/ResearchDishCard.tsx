@@ -8,6 +8,7 @@ import { caloriesSaved } from '../../services/dishDetail';
 import { cardChips, totalMinutes } from '../../services/dishLibrary';
 import { colors, radius } from '../../theme';
 import { PressableScale } from '../ui';
+import { MACRO_COLORS, macroShares, MacroSplitBar } from '../viz';
 import { DishImageSlot, TagChip } from './parts';
 
 /** One line of facts: "25 min · Beginner · 390 kcal". Missing values are left out, never guessed. */
@@ -42,6 +43,18 @@ export const ResearchDishCard = memo(function ResearchDishCard({ dish }: { dish:
         <Text style={styles.meta} numberOfLines={1}>
           {factsLine(dish)}
         </Text>
+        <View style={{ marginTop: 6, gap: 4 }}>
+          <MacroSplitBar macros={dish.nutritionPerServing} height={5} />
+          {macroShares(dish.nutritionPerServing) ? (
+            <Text style={styles.macroLine} numberOfLines={1}>
+              <Text style={{ color: MACRO_COLORS.protein }}>Protein {Math.round(dish.nutritionPerServing.proteinG!)} g</Text>
+              {'   '}
+              <Text style={{ color: MACRO_COLORS.carbs }}>Carbs {Math.round(dish.nutritionPerServing.carbsG!)} g</Text>
+              {'   '}
+              <Text style={{ color: MACRO_COLORS.fat }}>Fat {Math.round(dish.nutritionPerServing.fatG!)} g</Text>
+            </Text>
+          ) : null}
+        </View>
         {gap ? (
           <View style={styles.gap}>
             <Text style={styles.gapText} numberOfLines={1}>
@@ -74,6 +87,7 @@ export const ResearchDishCard = memo(function ResearchDishCard({ dish }: { dish:
 });
 
 const styles = StyleSheet.create({
+  macroLine: { fontSize: 11.5, fontWeight: '700' },
   card: {
     flexDirection: 'row',
     gap: 12,

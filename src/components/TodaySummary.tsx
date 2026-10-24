@@ -179,7 +179,7 @@ export function MicroSummary({ today, sex, profile }: { today: DayLog; sex: 'mal
         </PressableScale>
       ) : fix && lowest && (lowest.fraction ?? 0) < 0.9 ? (
         <PressableScale onPress={() => router.push({ pathname: '/recipe/[id]', params: { id: fix.dishId! } })} style={styles.nudge} scaleTo={0.98} accessibilityLabel={`Low on ${lowest.label}. Try ${fix.dishName}`}>
-          <Text style={{ fontSize: 16 }}>💡</Text>
+          <Ionicons name="bulb-outline" size={18} color={colors.warn} />
           <Text style={styles.nudgeText} numberOfLines={2}>
             Low on {lowest.label}? <Text style={{ color: colors.accent }}>{fix.dishName}</Text> is a good source
           </Text>

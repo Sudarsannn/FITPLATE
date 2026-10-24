@@ -1,29 +1,30 @@
+import type { IconName } from '../components/Icon';
 import type { AllergenId } from '../models/research';
 import type { Budget, Experience, ExtraGoal, TrainWhere } from '../models/survey';
 import type { ActivityLevel, DietType } from '../models/user';
 
 /** Labels for the profile survey's choices (SPEC-ADDENDA §8). Diet and condition rules come from research, not from here. */
-export type Choice<T extends string> = { id: T; label: string; emoji?: string; sub?: string };
+export type Choice<T extends string> = { id: T; label: string; icon?: IconName; sub?: string };
 
 export const DIETS: Choice<DietType>[] = [
-  { id: 'veg', label: 'Vegetarian', emoji: '🥦' },
-  { id: 'egg', label: 'Eggetarian', emoji: '🥚', sub: 'Vegetarian plus eggs' },
-  { id: 'non-veg', label: 'Non-vegetarian', emoji: '🍗' },
-  { id: 'jain', label: 'Jain', emoji: '🙏', sub: 'Dishes research marks Jain, or with a Jain version' },
-  { id: 'vegan', label: 'Vegan', emoji: '🌱', sub: 'Dishes research marks vegan, or with a vegan version' },
-  { id: 'pescatarian', label: 'Pescatarian', emoji: '🐟', sub: 'Vegetarian, eggs and fish' },
-  { id: 'no-onion-garlic', label: 'No onion or garlic', emoji: '🧄', sub: 'Dishes research marks no onion-garlic' },
+  { id: 'veg', label: 'Vegetarian', icon: 'leaf-outline' },
+  { id: 'egg', label: 'Eggetarian', icon: 'egg-outline', sub: 'Vegetarian plus eggs' },
+  { id: 'non-veg', label: 'Non-vegetarian', icon: 'restaurant-outline' },
+  { id: 'jain', label: 'Jain', icon: 'flower-outline', sub: 'Dishes research marks Jain, or with a Jain version' },
+  { id: 'vegan', label: 'Vegan', icon: 'rose-outline', sub: 'Dishes research marks vegan, or with a vegan version' },
+  { id: 'pescatarian', label: 'Pescatarian', icon: 'fish-outline', sub: 'Vegetarian, eggs and fish' },
+  { id: 'no-onion-garlic', label: 'No onion or garlic', icon: 'ban-outline', sub: 'Dishes research marks no onion-garlic' },
 ];
 
 export const EXTRA_GOALS: Choice<ExtraGoal>[] = [
-  { id: 'eat-cheaper', label: 'Spend less on food', emoji: '💰' },
-  { id: 'less-ordering', label: 'Order in less', emoji: '🛵' },
-  { id: 'cook-more', label: 'Cook more at home', emoji: '🍳' },
-  { id: 'more-energy', label: 'More energy in the day', emoji: '⚡' },
-  { id: 'better-digestion', label: 'Better digestion', emoji: '🌿' },
-  { id: 'regular-meals', label: 'Eat at regular times', emoji: '⏰' },
-  { id: 'better-sleep', label: 'Sleep better', emoji: '🌙' },
-  { id: 'eat-for-condition', label: 'Eat for a health condition', emoji: '🩺' },
+  { id: 'eat-cheaper', label: 'Spend less on food', icon: 'wallet-outline' },
+  { id: 'less-ordering', label: 'Order in less', icon: 'bicycle-outline' },
+  { id: 'cook-more', label: 'Cook more at home', icon: 'flame-outline' },
+  { id: 'more-energy', label: 'More energy in the day', icon: 'flash-outline' },
+  { id: 'better-digestion', label: 'Better digestion', icon: 'leaf-outline' },
+  { id: 'regular-meals', label: 'Eat at regular times', icon: 'time-outline' },
+  { id: 'better-sleep', label: 'Sleep better', icon: 'moon-outline' },
+  { id: 'eat-for-condition', label: 'Eat for a health condition', icon: 'medkit-outline' },
 ];
 
 export const ALLERGIES: Choice<AllergenId>[] = [
@@ -60,9 +61,9 @@ export const BUDGETS: Choice<Budget>[] = [
 export const KITCHEN = ['Pressure cooker', 'Kadai', 'Tawa', 'Non-stick pan', 'Mixer-grinder', 'Induction', 'Microwave', 'Oven / OTG', 'Air fryer', 'Blender'];
 
 export const TRAIN_WHERE: Choice<TrainWhere>[] = [
-  { id: 'home', label: 'At home', emoji: '🏠' },
-  { id: 'gym', label: 'At a gym', emoji: '🏋️' },
-  { id: 'outdoors', label: 'Outdoors', emoji: '🌳' },
+  { id: 'home', label: 'At home', icon: 'home-outline' },
+  { id: 'gym', label: 'At a gym', icon: 'barbell-outline' },
+  { id: 'outdoors', label: 'Outdoors', icon: 'walk-outline' },
 ];
 
 export const EXPERIENCE: Choice<Experience>[] = [

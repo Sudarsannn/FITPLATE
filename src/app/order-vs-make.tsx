@@ -28,10 +28,10 @@ import { colors, radius, type } from '../theme';
  */
 /** Quick searches for lighter orders (Swiggy returns no calories, so FitPlate's own research does the judging once a dish is matched). */
 const HEALTHY_SEARCHES = [
-  { label: '🥗 Salad', q: 'salad', nonVeg: false },
-  { label: '🍲 Dal & roti', q: 'dal', nonVeg: false },
-  { label: '🍗 Grilled', q: 'grilled', nonVeg: true },
-  { label: '🥚 Egg dishes', q: 'egg', nonVeg: true },
+  { label: 'Salad', q: 'salad', nonVeg: false },
+  { label: 'Dal & roti', q: 'dal', nonVeg: false },
+  { label: 'Grilled', q: 'grilled', nonVeg: true },
+  { label: 'Egg dishes', q: 'egg', nonVeg: true },
 ];
 
 export default function OrderVsMake() {
@@ -192,7 +192,7 @@ export default function OrderVsMake() {
 
         <Section title="Already have a Swiggy cart?">
           <Text style={k.body}>Build your cart in Swiggy, then come back and compare it with cooking the same dishes.</Text>
-          <GradientButton title="🛒  Compare my Swiggy cart" onPress={compareCart} style={{ marginTop: 10 }} />
+          <GradientButton title="Compare my Swiggy cart" onPress={compareCart} style={{ marginTop: 10 }} />
           {mode === 'sample' ? <Text style={[k.muted, { marginTop: 6, fontSize: 12 }]}>Sample mode has no real cart. Search a dish below, tap Cook it instead, then Order anyway to put one in the sample cart (nothing is bought).</Text> : null}
           {cartCmp === 'empty' ? <Notice>Your Swiggy cart is empty right now.</Notice> : null}
           {cartCmp && cartCmp !== 'empty' ? <CartResult c={cartCmp} /> : null}
@@ -256,7 +256,7 @@ export default function OrderVsMake() {
                   {m.sizes.length || m.addons.length ? <Text style={[k.muted, { fontSize: 12 }]}>{[...m.sizes, ...m.addons].slice(0, 4).join(' · ')}</Text> : null}
                   <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 8, gap: 10 }}>
                     <Pressable onPress={() => setPicked(m)} style={[s.cook, !match && { opacity: 0.5 }]} disabled={!match} accessibilityRole="button">
-                      <Text style={{ color: '#06210F', fontWeight: '900' }}>🍳 Cook it instead</Text>
+                      <Text style={{ color: '#06210F', fontWeight: '900' }}>Cook it instead</Text>
                     </Pressable>
                     {!match ? <Text style={[k.muted, { flex: 1, fontSize: 12 }]}>No FitPlate recipe for this one yet.</Text> : null}
                   </View>
@@ -325,7 +325,7 @@ function CartResult({ c }: { c: CartCompare }) {
           <Text style={[k.strong, { marginTop: 6, color: colors.accent }]}>
             {swiggyMatched > makeTotal ? `Cooking ${matched.length === c.rows.length ? 'these' : 'the dishes with recipes'} saves about ₹${swiggyMatched - makeTotal}.` : 'Cooking costs about the same as ordering.'}
           </Text>
-          <GradientButton title="🍳  Start cooking these" onPress={() => router.push({ pathname: '/basket', params: { dishes: ids.join(','), servings: servings.join(',') } })} style={{ marginTop: 8 }} />
+          <GradientButton title="Start cooking these" onPress={() => router.push({ pathname: '/basket', params: { dishes: ids.join(','), servings: servings.join(',') } })} style={{ marginTop: 8 }} />
         </>
       ) : null}
     </View>

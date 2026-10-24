@@ -32,7 +32,7 @@ export function ScreenTop({ title, subtitle, fallback = '/(tabs)', right }: { ti
 export function SampleBanner({ what = 'prices, products and orders' }: { what?: string }) {
   return (
     <View style={k.banner} accessibilityRole="text">
-      <Text style={k.bannerText}>🧪 Sample mode: the {what} here are made up. Nothing is ordered and nothing is paid.</Text>
+      <Text style={k.bannerText}>Sample mode: the {what} here are made up. Nothing is ordered and nothing is paid.</Text>
     </View>
   );
 }

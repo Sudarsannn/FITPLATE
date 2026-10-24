@@ -3,6 +3,7 @@ import { ActivityIndicator, Modal, StyleSheet, Text, View } from 'react-native';
 
 import { GradientButton } from './ui';
 import { colors, type } from '../theme';
+import { IconBadge } from './Icon';
 
 type Props = {
   /** Number of entries the guest logged on this device. The prompt shows while it is above 0. */
@@ -36,7 +37,7 @@ export function GuestCopyPrompt({ count, onCopy, onSkip }: Props) {
     <Modal visible={count > 0} transparent animationType="fade" onRequestClose={() => {}}>
       <View style={styles.backdrop}>
         <View style={styles.card} accessibilityViewIsModal accessibilityRole="alert">
-          <Text style={styles.emoji}>📲</Text>
+          <IconBadge name="cloud-upload-outline" size={52} style={{ marginBottom: 10 }} />
           <Text style={styles.title}>Bring your data with you?</Text>
           <Text style={styles.body}>
             Copy the meals, water and workouts you logged on this device into your account, so they show on every device.

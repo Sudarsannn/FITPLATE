@@ -61,7 +61,7 @@ export default function TrackScreen() {
         <View style={s.hero}>
           <Text style={[type.label, { color: colors.muted }]}>Swiggy Instamart</Text>
           <Text style={[type.h1, { color: colors.text, marginTop: 4 }]}>
-            {t?.delivered ? 'Delivered 🎉' : t?.etaMin != null ? `Ingredients arrive in about ${t.etaMin} min` : 'Order placed'}
+            {t?.delivered ? 'Delivered' : t?.etaMin != null ? `Ingredients arrive in about ${t.etaMin} min` : 'Order placed'}
           </Text>
           <Text style={[k.muted, { marginTop: 4 }]}>{t?.status ?? 'Checking the delivery status…'}</Text>
           <View style={{ marginTop: 12 }}>

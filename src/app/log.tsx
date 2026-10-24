@@ -5,6 +5,7 @@ import { ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import Animated, { FadeIn as RFadeIn } from 'react-native-reanimated';
 
 import { DishImageSlot } from '../components/dishes/parts';
+import type { IconName } from '../components/Icon';
 import { Chip, GradientButton, PressableScale } from '../components/ui';
 import { researchExercises } from '../data/research';
 import { success } from '../lib/haptics';
@@ -54,12 +55,12 @@ export default function Log() {
       <View style={styles.tabs}>
         {(
           [
-            ['meal', '🍱 Meal'],
-            ['exercise', '🏃 Workout'],
-            ['water', '💧 Water'],
-          ] as [Tab, string][]
-        ).map(([t, l]) => (
-          <Chip key={t} label={l} active={tab === t} onPress={() => setTab(t)} />
+            ['meal', 'Meal', 'restaurant-outline'],
+            ['exercise', 'Workout', 'barbell-outline'],
+            ['water', 'Water', 'water-outline'],
+          ] as [Tab, string, IconName][]
+        ).map(([t, l, ic]) => (
+          <Chip key={t} label={l} icon={ic} active={tab === t} onPress={() => setTab(t)} />
         ))}
       </View>
 
@@ -177,7 +178,7 @@ export default function Log() {
             <Text style={styles.hint}>
               {today.water} of {WATER_TARGET} glasses today
             </Text>
-            <Text style={{ fontSize: 80, marginVertical: 10 }}>💧</Text>
+            <Ionicons name="water" size={84} color={colors.blue} style={{ marginVertical: 10 }} />
             <View style={{ flexDirection: 'row', gap: 10, alignSelf: 'stretch' }}>
               <GradientButton
                 title="+1 glass"

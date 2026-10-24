@@ -3,6 +3,7 @@ import { onAuthStateChanged, signOut as fbSignOut } from 'firebase/auth';
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
 import { AppState } from 'react-native';
 
+import type { IconName } from '../components/Icon';
 import { featureFlags } from '../config/featureFlags';
 import { researchDishes } from '../data/research';
 import type { Dish as ResearchDish } from '../models/research';
@@ -77,11 +78,11 @@ export type State = {
   plan: Record<string, Partial<Record<Slot, string>>>;
 };
 
-export const GOALS: Record<Goal, { label: string; emoji: string; kcal: number; protein: number; blurb: string }> = {
-  lose: { label: 'Lose weight', emoji: '🔥', kcal: 1800, protein: 90, blurb: 'Tasty, lighter meals and a small daily deficit.' },
-  maintain: { label: 'Eat healthier', emoji: '🥗', kcal: 2200, protein: 70, blurb: 'Better nutrition without counting every bite.' },
-  gain: { label: 'Gain weight', emoji: '🍽️', kcal: 2600, protein: 90, blurb: 'Bigger, wholesome meals in a steady surplus.' },
-  muscle: { label: 'Build muscle', emoji: '💪', kcal: 2400, protein: 120, blurb: 'High-protein meals to match your workouts.' },
+export const GOALS: Record<Goal, { label: string; icon: IconName; kcal: number; protein: number; blurb: string }> = {
+  lose: { label: 'Lose weight', icon: 'trending-down-outline', kcal: 1800, protein: 90, blurb: 'Tasty, lighter meals and a small daily deficit.' },
+  maintain: { label: 'Eat healthier', icon: 'nutrition-outline', kcal: 2200, protein: 70, blurb: 'Better nutrition without counting every bite.' },
+  gain: { label: 'Gain weight', icon: 'trending-up-outline', kcal: 2600, protein: 90, blurb: 'Bigger, wholesome meals in a steady surplus.' },
+  muscle: { label: 'Build muscle', icon: 'barbell-outline', kcal: 2400, protein: 120, blurb: 'High-protein meals to match your workouts.' },
 };
 export const FIBRE_TARGET = 30;
 export const WATER_TARGET = 8;
@@ -354,9 +355,9 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       updateProfile: (p) => s?.updateProfile(legacyProfilePatch(p)),
       logDish: (dish, how = 'logged', orderInr = null) => {
         const n = dish.nutritionPerServing;
-        s?.addMeal({ name: dish.name, emoji: how === 'ordered' ? '🛵' : '🍽️', dishId: dish.id, source: 'dish', kcal: Math.round(n.kcal ?? 0), proteinG: Math.round(n.proteinG ?? 0), fibreG: Math.round(n.fibreG ?? 0), cooked: false, how, ...(orderInr != null ? { orderInr } : {}) });
+        s?.addMeal({ name: dish.name, emoji: '', dishId: dish.id, source: 'dish', kcal: Math.round(n.kcal ?? 0), proteinG: Math.round(n.proteinG ?? 0), fibreG: Math.round(n.fibreG ?? 0), cooked: false, how, ...(orderInr != null ? { orderInr } : {}) });
       },
-      logCustomMeal: (m) => s?.addMeal({ name: m.name, emoji: '🍴', dishId: null, source: 'custom', kcal: Math.round(m.kcal), proteinG: Math.round(m.protein), fibreG: Math.round(m.fibre), cooked: false }),
+      logCustomMeal: (m) => s?.addMeal({ name: m.name, emoji: '', dishId: null, source: 'custom', kcal: Math.round(m.kcal), proteinG: Math.round(m.protein), fibreG: Math.round(m.fibre), cooked: false }),
       logWorkout: (e, minutes) => s?.addWorkout({ type: e.name, exerciseId: e.id, minutes, kcal: exerciseKcal(e.met, minutes, bodyWeight) }),
       addWater: (n) => s?.addWater(n),
       toggleFavourite: (id) => s?.toggleFavourite(id),
@@ -390,7 +391,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       logCookCompletion: (c) => s?.addCookCompletion(c),
       logResearchCook: (dish, servings, costInr, orderPriceInr, boughtVia) => {
         if (!s) return;
-        s.addMeal({ name: dish.name, emoji: '🍳', dishId: dish.id, source: 'dish', kcal: Math.round(dish.kcal ?? 0), proteinG: Math.round(dish.proteinG ?? 0), fibreG: Math.round(dish.fibreG ?? 0), cooked: true, how: 'cooked', servings, costInr: costInr ?? null, orderInr: orderPriceInr ?? null });
+        s.addMeal({ name: dish.name, emoji: '', dishId: dish.id, source: 'dish', kcal: Math.round(dish.kcal ?? 0), proteinG: Math.round(dish.proteinG ?? 0), fibreG: Math.round(dish.fibreG ?? 0), cooked: true, how: 'cooked', servings, costInr: costInr ?? null, orderInr: orderPriceInr ?? null });
         const saved = costInr != null && orderPriceInr != null ? Math.round(orderPriceInr - costInr) : 0;
         if (saved > 0) s.addSaving(saved, dish.id, `Cooked ${dish.name} for ${servings} instead of ordering`);
         s.addCookCompletion({ dishId: dish.id, servings, costInr, orderPriceInr, boughtVia });

@@ -6,7 +6,8 @@ import { Image, Linking, ScrollView, Share, StyleSheet, Text, View, type LayoutC
 import Animated, { Extrapolation, FadeInDown, FadeOutDown, interpolate, runOnJS, useAnimatedReaction, useAnimatedRef, useAnimatedScrollHandler, useAnimatedStyle, useSharedValue, ZoomIn } from 'react-native-reanimated';
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { dishArt, PhotoCredit, SelectChip, TagChip, dishPhoto } from '../../components/dishes/parts';
+import { MacroDonut } from '../../components/viz';
+import { DishArtMark, dishArt, PhotoCredit, SelectChip, TagChip, dishPhoto } from '../../components/dishes/parts';
 import { Bar, GradientButton, PressableScale } from '../../components/ui';
 import { featureFlags } from '../../config/featureFlags';
 import { familyOf, getDish, getIngredient, researchLinks } from '../../data/research';
@@ -58,7 +59,7 @@ export default function RecipeScreen() {
           </PressableScale>
         </View>
         <View style={styles.missing}>
-          <Text style={{ fontSize: 40 }}>🍽️</Text>
+          <Ionicons name="restaurant-outline" size={40} color={colors.muted} />
           <Text style={[type.h2, { color: colors.text, marginTop: 8 }]}>Dish not found</Text>
           <Text style={{ color: colors.muted, marginTop: 6, textAlign: 'center' }}>It may have been renamed in an update. Find it again in the Cook tab.</Text>
         </View>
@@ -74,7 +75,7 @@ function Hero({ dish }: { dish: Dish }) {
   const art = dishArt(dish);
   return (
     <LinearGradient colors={art.palette} style={{ width: '100%', height: HERO + 40, alignItems: 'center', justifyContent: 'center' }}>
-      <Text style={{ fontSize: 110 }}>{art.emoji}</Text>
+      <DishArtMark icon={art.icon} size={190} />
     </LinearGradient>
   );
 }
@@ -201,7 +202,7 @@ function DishBody({ dish, back }: { dish: Dish; back: () => void }) {
 
           <View style={styles.actions}>
             <GradientButton
-              title={planned ? '✓ On tonight' : '📅 Plan tonight'}
+              title={planned ? 'On tonight' : 'Plan tonight'}
               variant="glass"
               style={{ flex: 1 }}
               onPress={() => {
@@ -211,7 +212,7 @@ function DishBody({ dish, back }: { dish: Dish; back: () => void }) {
               }}
             />
             <GradientButton
-              title={logged ? '✓ Logged' : '🍽️ I ate this'}
+              title={logged ? 'Logged' : 'I ate this'}
               variant="glass"
               style={{ flex: 1 }}
               disabled={logged}
@@ -233,7 +234,7 @@ function DishBody({ dish, back }: { dish: Dish; back: () => void }) {
               scaleTo={0.98}
               accessibilityLabel="I ordered this instead"
             >
-              <Text style={styles.linkText}>🛵 I ordered this instead</Text>
+              <Text style={styles.linkText}>I ordered this instead</Text>
             </PressableScale>
           ) : null}
 
@@ -340,7 +341,7 @@ function DishBody({ dish, back }: { dish: Dish; back: () => void }) {
 
       {showCta ? (
         <Animated.View entering={FadeInDown.duration(220)} exiting={FadeOutDown.duration(180)} style={[styles.cta, { paddingBottom: Math.max(insets.bottom, 14) }]}>
-          <GradientButton title={`🍳  Cook it yourself (for ${servings})`} onPress={() => router.push(cookHref)} />
+          <GradientButton title={`Cook it yourself (for ${servings})`} onPress={() => router.push(cookHref)} />
         </Animated.View>
       ) : null}
     </View>
@@ -408,7 +409,7 @@ function MakeOrOrder({ dish, cost, order, servings, setServings }: { dish: Dish;
       {/* Make it yourself */}
       <View style={styles.option}>
         <View style={styles.optionHead}>
-          <Text style={styles.optionTitle}>🏠 Make it yourself</Text>
+          <Text style={styles.optionTitle}>Make it yourself</Text>
           <Text style={[styles.price, { color: colors.accent }]}>{make != null ? `₹${make}` : '–'}</Text>
         </View>
         {cost ? (
@@ -423,7 +424,7 @@ function MakeOrOrder({ dish, cost, order, servings, setServings }: { dish: Dish;
         ) : (
           <Text style={styles.note}>Ingredient prices for this dish are coming soon.</Text>
         )}
-        <GradientButton title="🍳  Cook it yourself" style={{ marginTop: 12 }} onPress={() => router.push({ pathname: '/basket', params: { dishes: dish.id, servings: String(servings) } })} />
+        <GradientButton title="Cook it yourself" style={{ marginTop: 12 }} onPress={() => router.push({ pathname: '/basket', params: { dishes: dish.id, servings: String(servings) } })} />
         <Text style={styles.flow}>Next: buy the ingredients online or at the shop, then cook step by step.</Text>
         <PressableScale onPress={() => router.push({ pathname: '/steps/[id]', params: { id: dish.id, servings: String(servings) } })} style={styles.link} scaleTo={0.98} accessibilityLabel="Already have everything? Start cooking">
           <Text style={styles.linkText}>Already have everything? Start cooking</Text>
@@ -455,7 +456,7 @@ function MakeOrOrder({ dish, cost, order, servings, setServings }: { dish: Dish;
       {/* Order online */}
       <View style={styles.option}>
         <View style={styles.optionHead}>
-          <Text style={styles.optionTitle}>🛵 Order online</Text>
+          <Text style={styles.optionTitle}>Order online</Text>
           <Text style={[styles.price, { color: colors.bad }]}>{orderAvg != null ? `₹${orderAvg}` : '–'}</Text>
         </View>
         {order ? (
@@ -619,6 +620,11 @@ function NutritionSection({ dish }: { dish: Dish }) {
   const saved = caloriesSaved(dish);
   return (
     <Section title="Nutrition per serving">
+      {dish.nutritionPerServing.proteinG != null && dish.nutritionPerServing.carbsG != null && dish.nutritionPerServing.fatG != null ? (
+        <View style={{ marginBottom: 16 }}>
+          <MacroDonut macros={dish.nutritionPerServing} kcal={dish.nutritionPerServing.kcal} />
+        </View>
+      ) : null}
       <View style={styles.tableHead}>
         <Text style={[styles.cellLabel, styles.muted]} />
         <Text style={[styles.cell, styles.headText]}>Home-cooked (FitPlate recipe)</Text>

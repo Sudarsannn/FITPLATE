@@ -15,7 +15,6 @@ export type MealHowKind = 'cooked' | 'ordered' | 'logged';
 
 export const SLOT_ORDER: MealSlot[] = ['breakfast', 'lunch', 'snack', 'dinner'];
 export const SLOT_LABEL: Record<MealSlot, string> = { breakfast: 'Breakfast', lunch: 'Lunch', snack: 'Snacks', dinner: 'Dinner' };
-export const SLOT_ICON: Record<MealSlot, string> = { breakfast: '☀️', lunch: '🍛', snack: '🍵', dinner: '🌙' };
 
 /** Time of day: 4:00–10:59 breakfast, 11:00–15:59 lunch, 16:00–18:59 snacks, otherwise dinner. */
 export function slotOf(at: number): MealSlot {

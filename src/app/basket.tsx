@@ -194,8 +194,8 @@ export default function BasketScreen() {
         <CostPerIngredient dishes={dishes} servings={list.servings} />
 
         <View style={{ flexDirection: 'row', gap: 8, marginTop: 14, alignItems: 'center' }}>
-          <Chip label="📦 Order online" active={tab === 'online'} onPress={() => setTab('online')} />
-          <Chip label="🏪 At the shop" active={tab === 'shop'} onPress={() => setTab('shop')} />
+          <Chip label="Order online" icon="cube-outline" active={tab === 'online'} onPress={() => setTab('online')} />
+          <Chip label="At the shop" icon="storefront-outline" active={tab === 'shop'} onPress={() => setTab('shop')} />
           <View style={{ flex: 1 }} />
           <PressableScale onPress={shareList} style={s.share} scaleTo={0.94} accessibilityLabel="Share the list as text">
             <Ionicons name="share-outline" size={16} color={colors.text} />
@@ -247,10 +247,10 @@ export default function BasketScreen() {
         {tab === 'online' ? (
           <>
             <GradientButton title={VENDORS_PAUSED ? `Buy online (${included.length})` : `Add to basket & checkout (${included.length})`} onPress={() => setSheet('vendor')} disabled={included.length === 0} />
-            <GradientButton title="✓  I’ve bought them. Start cooking" variant="glass" onPress={() => continueToCook('self')} style={{ marginTop: 10 }} />
+            <GradientButton title="I’ve bought them. Start cooking" variant="glass" onPress={() => continueToCook('self')} style={{ marginTop: 10 }} />
           </>
         ) : (
-          <GradientButton title={ticked === list.items.length ? 'Got everything. Let’s cook 🔥' : '✓  I’ve bought them. Start cooking'} onPress={() => continueToCook('self')} />
+          <GradientButton title={ticked === list.items.length ? 'Got everything. Let’s cook' : 'I’ve bought them. Start cooking'} onPress={() => continueToCook('self')} />
         )}
       </View>
 

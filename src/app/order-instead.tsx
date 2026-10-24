@@ -39,8 +39,8 @@ export default function OrderInstead() {
         ) : null}
 
         <Section title="Order Here">
-          <Text style={k.body}>🛵 Restaurants that deliver {query || 'this'}: coming soon.</Text>
-          <Text style={[k.body, { marginTop: 6 }]}>🍽️ Restaurants to dine in: coming soon.</Text>
+          <Text style={k.body}>Restaurants that deliver {query || 'this'}: coming soon.</Text>
+          <Text style={[k.body, { marginTop: 6 }]}>Restaurants to dine in: coming soon.</Text>
         </Section>
       </ScrollView>
     </SafeAreaView>

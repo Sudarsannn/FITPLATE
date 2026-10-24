@@ -5,6 +5,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { Celebrate } from '../components/Icon';
 import { Bar, Chip, GradientButton, PressableScale } from '../components/ui';
 import { k, Notice, ScreenTop, Section } from '../components/vendors/kit';
 import { getDish } from '../data/research';
@@ -23,8 +24,8 @@ import { StepTimer } from './steps/[id]';
 const PALETTE = [colors.accent, colors.warm, colors.blue, colors.violet, colors.warn, '#F472B6'];
 const KIND_LABEL: Record<Plan['kind'], string> = { hands: 'Your hands', 'burner-hands': 'Burner + you', 'burner-passive': 'Burner, then free', wait: 'Just wait' };
 const PLAYLISTS = [
-  { label: '🎵 Spotify cooking playlists', url: 'https://open.spotify.com/search/cooking%20playlist' },
-  { label: '▶️ YouTube Music', url: 'https://music.youtube.com/search?q=cooking%20playlist' },
+  { label: 'Spotify cooking playlists', url: 'https://open.spotify.com/search/cooking%20playlist' },
+  { label: 'YouTube Music', url: 'https://music.youtube.com/search?q=cooking%20playlist' },
 ];
 
 /**
@@ -85,7 +86,9 @@ export default function MultiCook() {
     return (
       <SafeAreaView style={{ flex: 1, backgroundColor: colors.bg }}>
         <ScrollView contentContainerStyle={{ padding: 22, paddingBottom: 60 }}>
-          <Text style={{ fontSize: 54, textAlign: 'center', marginTop: 20 }}>🍽️</Text>
+          <View style={{ marginTop: 10 }}>
+            <Celebrate />
+          </View>
           <Text style={[type.h1, { color: colors.text, textAlign: 'center', marginTop: 8 }]}>{dishes.length} dishes, one go!</Text>
           <Text style={[k.muted, { textAlign: 'center', marginTop: 6 }]}>{dishes.map((x) => x.name).join(' · ')} are in My Meals now.</Text>
           <GradientButton title="Back to Today" onPress={() => router.replace('/(tabs)')} style={{ marginTop: 22 }} />
@@ -216,8 +219,8 @@ function CookStage({ plan, i, setI, colorOf, tips, dishes, finish, readAloud, se
         {p.title ? <Text style={[type.h1, { color: colors.text, marginTop: 12 }]}>{p.title}</Text> : null}
         <Text style={[k.body, { fontSize: 18, lineHeight: 27, marginTop: 10 }]}>{p.text}</Text>
         {p.timerSec ? <StepTimer key={`${p.dishId}-${p.stepIndex}`} seconds={p.timerSec} /> : null}
-        {full?.visualCue ? <Notice tone="ok">👀 Looks right when: {full.visualCue}</Notice> : null}
-        {full?.tip && tips ? <Notice>💡 {full.tip}</Notice> : null}
+        {full?.visualCue ? <Notice tone="ok">Looks right when: {full.visualCue}</Notice> : null}
+        {full?.tip && tips ? <Notice>Tip: {full.tip}</Notice> : null}
 
         {others.length ? (
           <Section title="On the stove meanwhile">
@@ -238,7 +241,7 @@ function CookStage({ plan, i, setI, colorOf, tips, dishes, finish, readAloud, se
         ) : null}
         {canSpeak ? (
           <Pressable onPress={() => setReadAloud(!readAloud)} style={{ marginTop: 14, minHeight: 44, justifyContent: 'center' }} accessibilityRole="switch" accessibilityState={{ checked: readAloud }}>
-            <Text style={{ color: readAloud ? colors.accent : colors.muted, fontWeight: '800' }}>{readAloud ? '🔊 Reading each step aloud' : '🔈 Read steps aloud'}</Text>
+            <Text style={{ color: readAloud ? colors.accent : colors.muted, fontWeight: '800' }}>{readAloud ? 'Reading each step aloud' : 'Read steps aloud'}</Text>
           </Pressable>
         ) : null}
       </ScrollView>
@@ -248,7 +251,7 @@ function CookStage({ plan, i, setI, colorOf, tips, dishes, finish, readAloud, se
             <Ionicons name="chevron-back" size={22} color={colors.text} />
           </PressableScale>
         ) : null}
-        <GradientButton style={{ flex: 1 }} title={i < plan.length - 1 ? 'Next step' : 'Done! 🎉'} onPress={() => (i < plan.length - 1 ? setI(i + 1) : finish())} />
+        <GradientButton style={{ flex: 1 }} title={i < plan.length - 1 ? 'Next step' : 'Done'} onPress={() => (i < plan.length - 1 ? setI(i + 1) : finish())} />
       </View>
     </SafeAreaView>
   );

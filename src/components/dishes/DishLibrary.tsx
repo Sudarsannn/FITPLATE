@@ -2,6 +2,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { router } from 'expo-router';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useDeferredValue, useEffect, useMemo, useRef, useState } from 'react';
+import Animated, { FadeInDown } from 'react-native-reanimated';
 import { FlatList, Modal, Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 
@@ -15,6 +16,8 @@ import { loadExcludedAllergens, saveExcludedAllergens } from '../../services/rem
 import { GUEST_OWNER } from '../../services/storage';
 import { activeCount, optionCounts, runSearch, toggle, type FilterGroup, type Selection } from '../../services/search';
 import { colors, radius, type } from '../../theme';
+import { IconBadge, type IconName } from '../Icon';
+import { TopGlow } from '../ui';
 import { SelectChip } from './parts';
 import { ResearchDishCard } from './ResearchDishCard';
 
@@ -148,18 +151,23 @@ export function DishLibrary({ dishes = researchDishes }: { dishes?: readonly Dis
 
   return (
     <SafeAreaView edges={['top']} style={{ flex: 1, backgroundColor: colors.bg }}>
+      <TopGlow color={colors.accent} />
       <FlatList
         data={results}
         keyExtractor={(d) => d.id}
-        renderItem={({ item }) => <ResearchDishCard dish={item} />}
+        renderItem={({ item, index }) => (
+          <Animated.View entering={FadeInDown.delay(Math.min(index, 8) * 55).duration(420)}>
+            <ResearchDishCard dish={item} />
+          </Animated.View>
+        )}
         ListHeaderComponent={header}
         ListHeaderComponentStyle={{ marginBottom: 10 }}
         ListEmptyComponent={
           dishes.length === 0 ? (
-            <Empty icon="🍳" title="Dishes are on their way" body="The first researched dishes arrive with the next app update." />
+            <Empty icon="restaurant-outline" title="Dishes are on their way" body="The first researched dishes arrive with the next app update." />
           ) : (
             <Empty
-              icon="🔍"
+              icon="search-outline"
               title="No dishes match"
               body={query ? `Nothing for “${query.trim()}” with these filters. Try fewer filters or another word.` : 'Try removing a filter.'}
               action={nActive || query ? { label: 'Clear search and filters', onPress: () => (setSelection({}), setQuery('')) } : undefined}
@@ -295,10 +303,10 @@ function Sheet({
   );
 }
 
-function Empty({ icon, title, body, action }: { icon: string; title: string; body: string; action?: { label: string; onPress: () => void } }) {
+function Empty({ icon, title, body, action }: { icon: IconName; title: string; body: string; action?: { label: string; onPress: () => void } }) {
   return (
     <View style={styles.empty}>
-      <Text style={{ fontSize: 40 }}>{icon}</Text>
+      <IconBadge name={icon} size={64} color={colors.muted} />
       <Text style={[type.h2, { color: colors.text, marginTop: 8, textAlign: 'center' }]}>{title}</Text>
       <Text style={{ color: colors.muted, textAlign: 'center', marginTop: 6 }}>{body}</Text>
       {action ? (

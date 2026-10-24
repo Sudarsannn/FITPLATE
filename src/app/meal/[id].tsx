@@ -12,7 +12,7 @@ import { getDish, researchNutrients } from '../../data/research';
 import { FIBRE_TARGET, GOALS, useStore } from '../../lib/store';
 import { dayMicros } from '../../services/dayNutrition';
 import { caloriesSaved } from '../../services/dishDetail';
-import { HOW_LABEL, MONEY_COLOR, SLOT_ICON, SLOT_LABEL, findMeal, howOf, timeLabel, type MealRow } from '../../services/meals';
+import { HOW_LABEL, MONEY_COLOR, SLOT_LABEL, findMeal, howOf, timeLabel, type MealRow } from '../../services/meals';
 import { colors, radius, type } from '../../theme';
 
 /**
@@ -60,11 +60,11 @@ function Body({ meal, days, goal, sex }: { meal: MealRow; days: ReturnType<typeo
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: colors.bg }}>
-      <ScreenTop title={meal.name} subtitle={`${SLOT_ICON[meal.slot]} ${SLOT_LABEL[meal.slot]} · ${timeLabel(meal.at)}`} fallback="/track" />
+      <ScreenTop title={meal.name} subtitle={`${SLOT_LABEL[meal.slot]} · ${timeLabel(meal.at)}`} fallback="/track" />
       <ScrollView contentContainerStyle={{ padding: 18, paddingBottom: 70 }} showsVerticalScrollIndicator={false}>
         <FadeIn i={0}>
           <View style={styles.hero}>
-            {photo ? <Image source={photo.source} style={styles.photo} accessibilityIgnoresInvertColors /> : <View style={[styles.photo, styles.emoji]}><Text style={{ fontSize: 44 }}>{meal.emoji}</Text></View>}
+            {photo ? <Image source={photo.source} style={styles.photo} accessibilityIgnoresInvertColors /> : <View style={[styles.photo, styles.emoji]}><Ionicons name="restaurant-outline" size={44} color={colors.muted} /></View>}
             <View style={{ flex: 1 }}>
               <Text style={styles.how}>{HOW_LABEL[how]}</Text>
               <Text style={[type.small, { color: colors.muted }]}>{date}</Text>
@@ -176,11 +176,11 @@ function Body({ meal, days, goal, sex }: { meal: MealRow; days: ReturnType<typeo
 
         <FadeIn i={8}>
           <Text style={styles.h}>What next</Text>
-          <GradientButton title="⚖️  See ways to balance this" variant="glass" onPress={() => router.push({ pathname: '/balance', params: { kcal: String(meal.kcal), ...(meal.dishId ? { dish: meal.dishId } : {}) } })} />
+          <GradientButton title="See ways to balance this" variant="glass" onPress={() => router.push({ pathname: '/balance', params: { kcal: String(meal.kcal), ...(meal.dishId ? { dish: meal.dishId } : {}) } })} />
           {dish ? (
             <>
-              <GradientButton title="📖  Open the dish page" variant="glass" style={{ marginTop: 10 }} onPress={() => router.push({ pathname: '/recipe/[id]', params: { id: dish.id } })} />
-              <GradientButton title="🍳  Cook it again" style={{ marginTop: 10 }} onPress={() => router.push({ pathname: '/basket', params: { dishes: dish.id, servings: '2' } })} />
+              <GradientButton title="Open the dish page" variant="glass" style={{ marginTop: 10 }} onPress={() => router.push({ pathname: '/recipe/[id]', params: { id: dish.id } })} />
+              <GradientButton title="Cook it again" style={{ marginTop: 10 }} onPress={() => router.push({ pathname: '/basket', params: { dishes: dish.id, servings: '2' } })} />
             </>
           ) : null}
           <Text style={[type.small, { color: colors.faint, marginTop: 14, textAlign: 'center' }]}>

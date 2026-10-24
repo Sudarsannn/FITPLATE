@@ -246,5 +246,5 @@ export function isPantryStaple(ingredient: { category: string | null } | undefin
 export function shoppingListText(list: Pick<ShoppingList, 'title' | 'items'>, opts: { estimateInr?: number | null } = {}): string {
   const lines = list.items.filter((i) => i.included).map((i) => `${i.checked ? '✓' : '☐'} ${i.name}: ${itemAmountLabel(i)}${i.variant ? ` (${i.variant})` : ''}`);
   const total = opts.estimateInr ? [``, `Estimated ingredients: about ₹${opts.estimateInr} (FitPlate research prices)`] : [];
-  return [`🛒 ${list.title}`, '', ...lines, ...total, '', 'Made with FitPlate'].join('\n');
+  return [list.title, '', ...lines, ...total, '', 'Made with FitPlate'].join('\n');
 }

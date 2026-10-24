@@ -4,9 +4,10 @@ import { useState } from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { Chip, FadeIn, Glass, GradientButton, PressableScale } from '../../components/ui';
+import { Chip, FadeIn, Glass, GradientButton, PressableScale, TopGlow } from '../../components/ui';
 import { researchExercises, researchFitnessGuides } from '../../data/research';
-import { useStore } from '../../lib/store';
+import { addDays, dayKey, useStore } from '../../lib/store';
+import { WeekBars } from '../../components/viz';
 import type { ExerciseSection } from '../../models/exercise';
 import { lastSevenDaysActivity } from '../../services/activity';
 import { bySection, doseLabel, kcalPer10, musclesLine, prescriptionFor, SECTION_ICON, SECTION_LABEL, shortExerciseName } from '../../services/fitness';
@@ -23,6 +24,7 @@ const SECTION_BLURB: Record<ExerciseSection, string> = {
 export default function Move() {
   const { days, bodyWeightKg, profile } = useStore();
   const week = lastSevenDaysActivity(days);
+  const dates = Array.from({ length: 7 }, (_, i) => addDays(new Date(), i - 6));
   const groups = bySection(researchExercises);
   // One training place in the survey opens on its section; gym or mixed answers see everything.
   const where = profile.survey.trainWhere;
@@ -31,6 +33,7 @@ export default function Move() {
 
   return (
     <SafeAreaView edges={['top']} style={{ flex: 1, backgroundColor: colors.bg }}>
+      <TopGlow color={colors.warm} />
       <ScrollView contentContainerStyle={{ padding: 18, paddingBottom: 150 }} showsVerticalScrollIndicator={false}>
         <FadeIn i={0}>
           <Text style={[type.h1, { color: colors.text }]}>Move</Text>
@@ -43,11 +46,16 @@ export default function Move() {
             {week.sessions === 0 ? (
               <Text style={[type.body, { color: colors.text }]}>No workouts logged this week yet. Ten minutes counts.</Text>
             ) : (
-              <View style={styles.stats}>
-                <Stat value={week.sessions} unit={week.sessions === 1 ? 'workout' : 'workouts'} />
-                <Stat value={week.minutes} unit="minutes" />
-                <Stat value={week.kcal} unit="kcal (est.)" />
-              </View>
+              <>
+                <View style={styles.stats}>
+                  <Stat value={week.sessions} unit={week.sessions === 1 ? 'workout' : 'workouts'} />
+                  <Stat value={week.minutes} unit="minutes" />
+                  <Stat value={week.kcal} unit="kcal (est.)" />
+                </View>
+                <View style={{ marginTop: 14 }}>
+                  <WeekBars values={dates.map((d) => (days[dayKey(d)]?.exercise ?? []).reduce((t, e) => t + e.minutes, 0))} labels={dates.map((d) => 'SMTWTFS'[d.getDay()])} color={colors.warm} height={64} />
+                </View>
+              </>
             )}
             <GradientButton title="Log a workout" onPress={() => router.push({ pathname: '/log', params: { tab: 'exercise' } })} style={{ marginTop: 14 }} />
           </Glass>

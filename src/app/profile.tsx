@@ -7,11 +7,12 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { ConfirmDeleteData } from '../components/ConfirmDeleteData';
 import { PAGE_TITLE, SURVEY_PAGES } from '../components/survey/SurveyFlow';
 import { surveySummary } from '../components/survey/surveySummary';
-import { FadeIn, Glass, GradientButton, PressableScale } from '../components/ui';
+import { FadeIn, Glass, GradientButton, PressableScale, TopGlow } from '../components/ui';
 import { setReminders } from '../lib/reminders';
 import { GOALS, useStore } from '../lib/store';
 import { showBeginnerTips } from '../services/kitchen';
 import { syncStatusLine } from '../services/userSession';
+import { IconBadge } from '../components/Icon';
 import { colors, type } from '../theme';
 
 // `asTab` is set by the Profile tab of the new shell: no back button, and room
@@ -22,6 +23,7 @@ export function ProfileScreen({ asTab = false }: { asTab?: boolean }) {
   const canDelete = Boolean(user && !user.guest && cloud);
   return (
     <SafeAreaView edges={asTab ? ['top'] : undefined} style={{ flex: 1, backgroundColor: colors.bg }}>
+      <TopGlow color={colors.violet} />
       <View style={styles.top}>
         {asTab ? (
           <View style={{ width: 40 }} />
@@ -75,7 +77,7 @@ export function ProfileScreen({ asTab = false }: { asTab?: boolean }) {
 
         <FadeIn i={2}>
           <Glass style={{ marginTop: 14, flexDirection: 'row', alignItems: 'center', gap: 12 }}>
-            <Text style={{ fontSize: 26 }}>🌙</Text>
+            <IconBadge name="moon-outline" color={colors.violet} size={42} />
             <View style={{ flex: 1 }}>
               <Text style={{ color: colors.text, fontWeight: '800' }}>Breakfast & batch-cook nudges</Text>
               <Text style={[type.small, { color: colors.muted }]}>9 pm prep reminder, Sunday batch-cook reminder</Text>
@@ -94,7 +96,7 @@ export function ProfileScreen({ asTab = false }: { asTab?: boolean }) {
 
         <FadeIn i={2}>
           <Glass style={{ marginTop: 14, flexDirection: 'row', alignItems: 'center', gap: 12 }}>
-            <Text style={{ fontSize: 26 }}>💡</Text>
+            <IconBadge name="bulb-outline" color={colors.warn} size={42} />
             <View style={{ flex: 1 }}>
               <Text style={{ color: colors.text, fontWeight: '800' }}>Beginner tips while cooking</Text>
               <Text style={[type.small, { color: colors.muted }]}>Extra tips on each step. On for beginner cooks; change your level under Kitchen.</Text>
@@ -111,7 +113,10 @@ export function ProfileScreen({ asTab = false }: { asTab?: boolean }) {
 
         <FadeIn i={3}>
           <Glass style={{ marginTop: 14 }}>
-            <Text style={{ color: colors.text, fontWeight: '800' }}>❤️ {favourites.length} saved dishes</Text>
+            <View style={{ flexDirection: 'row', alignItems: 'center', gap: 10 }}>
+              <IconBadge name="heart-outline" color={colors.bad} size={36} />
+              <Text style={{ color: colors.text, fontWeight: '800' }}>{favourites.length} saved dishes</Text>
+            </View>
             <Text style={[type.small, { color: colors.muted, marginTop: 4 }]}>Find them under Cook → Saved.</Text>
           </Glass>
         </FadeIn>
@@ -119,7 +124,7 @@ export function ProfileScreen({ asTab = false }: { asTab?: boolean }) {
         <FadeIn i={4}>
           <PressableScale onPress={() => router.push('/basket')} accessibilityLabel="Your shopping lists" style={{ marginTop: 14 }}>
             <Glass style={styles.linkRow}>
-              <Text style={{ fontSize: 24 }}>🛒</Text>
+              <IconBadge name="cart-outline" color={colors.accent} size={42} />
               <View style={{ flex: 1 }}>
                 <Text style={{ color: colors.text, fontWeight: '800' }}>Shopping lists</Text>
                 <Text style={[type.small, { color: colors.muted }]}>Pick brands and packs, buy online or at the shop</Text>
@@ -129,7 +134,7 @@ export function ProfileScreen({ asTab = false }: { asTab?: boolean }) {
           </PressableScale>
           <PressableScale onPress={() => router.push('/vendors')} accessibilityLabel="Shopping and vendors: Swiggy connection" style={{ marginTop: 14 }}>
             <Glass style={styles.linkRow}>
-              <Text style={{ fontSize: 24 }}>🛵</Text>
+              <IconBadge name="storefront-outline" color={colors.warm} size={42} />
               <View style={{ flex: 1 }}>
                 <Text style={{ color: colors.text, fontWeight: '800' }}>Shopping &amp; vendors</Text>
                 <Text style={[type.small, { color: colors.muted }]}>Swiggy Instamart and Food, sample or live</Text>
@@ -139,7 +144,7 @@ export function ProfileScreen({ asTab = false }: { asTab?: boolean }) {
           </PressableScale>
           <PressableScale onPress={() => router.push('/your-data')} accessibilityLabel="Your data: what we save and where" style={{ marginTop: 14 }}>
             <Glass style={styles.linkRow}>
-              <Text style={{ fontSize: 24 }}>🔒</Text>
+              <IconBadge name="lock-closed-outline" color={colors.blue} size={42} />
               <View style={{ flex: 1 }}>
                 <Text style={{ color: colors.text, fontWeight: '800' }}>Your data</Text>
                 <Text style={[type.small, { color: colors.muted }]}>What we save, where it lives, and your choices</Text>

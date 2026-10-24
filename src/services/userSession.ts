@@ -302,7 +302,7 @@ export function syncStatusLine(signedIn: boolean, cloud: boolean, syncError: boo
   if (!signedIn) return 'Saved on this device only. Sign in to keep it on every device.';
   if (!cloud) return 'Saved on this device.';
   if (syncError) return 'Offline right now. Changes are saved on this phone and will sync when you’re back online.';
-  return '☁️ Synced to your account on every device.';
+  return 'Synced to your account on every device.';
 }
 
 type Fields<T> = Omit<T, keyof BaseDoc>;

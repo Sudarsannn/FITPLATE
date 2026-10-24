@@ -1,3 +1,4 @@
+import { Ionicons } from '@expo/vector-icons';
 import { router } from 'expo-router';
 import { useState, type ReactNode } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
@@ -21,6 +22,7 @@ import {
   type Choice,
 } from '../../config/survey';
 import { researchConditions } from '../../data/research';
+import { IconBadge, type IconName } from '../Icon';
 import { select, success } from '../../lib/haptics';
 import { GOALS, useStore, type Goal, type Level } from '../../lib/store';
 import type { Survey } from '../../models/survey';
@@ -41,7 +43,7 @@ export const PAGE_TITLE: Record<SurveyPage, string> = {
   training: 'Training',
 };
 
-function Option({ emoji, title, sub, on, onPress, multi = false }: { emoji?: string; title: string; sub?: string; on: boolean; onPress: () => void; multi?: boolean }) {
+function Option({ icon, title, sub, on, onPress, multi = false }: { icon?: IconName; title: string; sub?: string; on: boolean; onPress: () => void; multi?: boolean }) {
   return (
     <PressableScale
       onPress={() => {
@@ -52,17 +54,17 @@ function Option({ emoji, title, sub, on, onPress, multi = false }: { emoji?: str
       style={[styles.option, on && styles.optionOn]}
       accessibilityLabel={`${title}${on ? ', selected' : ''}`}
     >
-      {emoji ? <Text style={{ fontSize: 26 }}>{emoji}</Text> : null}
+      {icon ? <IconBadge name={icon} size={40} color={on ? colors.accent : colors.muted} /> : null}
       <View style={{ flex: 1 }}>
         <Text style={styles.optTitle}>{title}</Text>
         {sub ? <Text style={styles.optSub}>{sub}</Text> : null}
       </View>
-      <View style={[multi ? styles.box : styles.radio, on && styles.radioOn]}>{on ? <Text style={styles.tick}>✓</Text> : null}</View>
+      <View style={[multi ? styles.box : styles.radio, on && styles.radioOn]}>{on ? <Ionicons name="checkmark" size={14} color="#06210F" /> : null}</View>
     </PressableScale>
   );
 }
 
-function Pill({ label, on, onPress }: { label: string; on: boolean; onPress: () => void }) {
+function Pill({ label, on, onPress, icon }: { label: string; on: boolean; onPress: () => void; icon?: IconName }) {
   return (
     <Pressable
       onPress={() => {
@@ -74,10 +76,10 @@ function Pill({ label, on, onPress }: { label: string; on: boolean; onPress: () 
       accessibilityState={{ checked: on }}
       accessibilityLabel={label}
     >
-      <Text style={[styles.pillText, on && { color: '#06210F' }]}>
-        {on ? '✓ ' : ''}
-        {label}
-      </Text>
+      <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
+        {on ? <Ionicons name="checkmark" size={14} color="#06210F" /> : icon ? <Ionicons name={icon} size={14} color={colors.muted} /> : null}
+        <Text style={[styles.pillText, on && { color: '#06210F' }]}>{label}</Text>
+      </View>
     </Pressable>
   );
 }
@@ -191,7 +193,7 @@ export function SurveyFlow({ mode, start = 'name' }: { mode: 'onboarding' | 'edi
 
   const conditions = researchConditions.map((c) => ({ id: c.id, label: c.name }));
   const choose = <T extends string>(list: Choice<T>[], value: T | null, onPick: (v: T) => void) =>
-    list.map((c) => <Option key={c.id} emoji={c.emoji} title={c.label} sub={c.sub} on={value === c.id} onPress={() => onPick(c.id)} />);
+    list.map((c) => <Option key={c.id} icon={c.icon} title={c.label} sub={c.sub} on={value === c.id} onPress={() => onPick(c.id)} />);
 
   const screens: Record<SurveyPage, ReactNode> = {
     name: (
@@ -208,13 +210,13 @@ export function SurveyFlow({ mode, start = 'name' }: { mode: 'onboarding' | 'edi
         <Text style={styles.groupTitle}>Main goal</Text>
         <View style={{ marginTop: 10 }}>
           {(Object.keys(GOALS) as Goal[]).map((g) => (
-            <Option key={g} emoji={GOALS[g].emoji} title={GOALS[g].label} sub={GOALS[g].blurb} on={d.goal === g} onPress={() => set({ goal: g })} />
+            <Option key={g} icon={GOALS[g].icon} title={GOALS[g].label} sub={GOALS[g].blurb} on={d.goal === g} onPress={() => set({ goal: g })} />
           ))}
         </View>
         <Group title="Also want to" hint="Select all that apply">
           <Pills>
             {EXTRA_GOALS.map((g) => (
-              <Pill key={g.id} label={`${g.emoji} ${g.label}`} on={s.goals.includes(g.id)} onPress={() => setS({ goals: toggle(s.goals, g.id) })} />
+              <Pill key={g.id} label={g.label} icon={g.icon} on={s.goals.includes(g.id)} onPress={() => setS({ goals: toggle(s.goals, g.id) })} />
             ))}
           </Pills>
         </Group>
@@ -307,8 +309,8 @@ export function SurveyFlow({ mode, start = 'name' }: { mode: 'onboarding' | 'edi
       <View>
         <Text style={styles.q}>Your kitchen</Text>
         <Text style={styles.hint}>Beginners get extra tips and &ldquo;what it looks like&rdquo; help at every step.</Text>
-        <Option emoji="🌱" title="Beginner" sub="Explain everything, I'm learning" on={d.level === 'beginner'} onPress={() => set({ level: 'beginner' })} />
-        <Option emoji="👨‍🍳" title="I know my way around" sub="Just the steps and measurements" on={d.level === 'expert'} onPress={() => set({ level: 'expert' })} />
+        <Option icon="leaf-outline" title="Beginner" sub="Explain everything, I'm learning" on={d.level === 'beginner'} onPress={() => set({ level: 'beginner' })} />
+        <Option icon="ribbon-outline" title="I know my way around" sub="Just the steps and measurements" on={d.level === 'expert'} onPress={() => set({ level: 'expert' })} />
         <Group title="What you have" hint="Select all that apply">
           <Pills>
             {KITCHEN.map((k) => (
@@ -325,7 +327,7 @@ export function SurveyFlow({ mode, start = 'name' }: { mode: 'onboarding' | 'edi
         <Group title="Where you train" hint="Select all that apply">
           <Pills>
             {TRAIN_WHERE.map((w) => (
-              <Pill key={w.id} label={`${w.emoji} ${w.label}`} on={s.trainWhere.includes(w.id)} onPress={() => setS({ trainWhere: toggle(s.trainWhere, w.id) })} />
+              <Pill key={w.id} label={w.label} icon={w.icon} on={s.trainWhere.includes(w.id)} onPress={() => setS({ trainWhere: toggle(s.trainWhere, w.id) })} />
             ))}
           </Pills>
         </Group>
@@ -399,7 +401,7 @@ export function SurveyFlow({ mode, start = 'name' }: { mode: 'onboarding' | 'edi
         </ScrollView>
         <View style={styles.footer}>
           {step > 0 ? <GradientButton title="Back" variant="glass" onPress={() => setStep(step - 1)} style={{ flex: 1 }} /> : null}
-          <GradientButton title={last ? (mode === 'onboarding' ? "Let's cook 🔥" : 'Save') : 'Continue'} onPress={next} style={{ flex: 2 }} />
+          <GradientButton title={last ? (mode === 'onboarding' ? "Let's cook" : 'Save') : 'Continue'} onPress={next} style={{ flex: 2 }} />
         </View>
       </SafeAreaView>
     </View>

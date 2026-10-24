@@ -2,10 +2,11 @@ import { Ionicons } from '@expo/vector-icons';
 import { router, useLocalSearchParams } from 'expo-router';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
-import Animated, { FadeIn as RFadeIn, ZoomIn } from 'react-native-reanimated';
+import Animated, { FadeIn as RFadeIn } from 'react-native-reanimated';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { ScreenTop } from '../../components/vendors/kit';
+import { Celebrate } from '../../components/Icon';
 import { GradientButton, PressableScale, Ring } from '../../components/ui';
 import { researchExercises } from '../../data/research';
 import { select, success } from '../../lib/haptics';
@@ -97,9 +98,7 @@ function Player({ e, target }: { e: Exercise; target: number | null }) {
       <SafeAreaView style={{ flex: 1, backgroundColor: colors.bg }}>
         <ScreenTop title={name} subtitle="Done" fallback="/move" />
         <ScrollView contentContainerStyle={{ padding: 22, alignItems: 'center', paddingBottom: 60 }}>
-          <Animated.Text entering={ZoomIn.springify().damping(9)} style={{ fontSize: 72 }}>
-            🎉
-          </Animated.Text>
+          <Celebrate />
           <Text style={[type.h1, { color: colors.text, marginTop: 8 }]}>Workout done</Text>
           <View style={styles.stats}>
             <Stat value={clock(elapsed)} label="time" />
@@ -108,7 +107,7 @@ function Player({ e, target }: { e: Exercise; target: number | null }) {
           </View>
           {e.met != null ? (
             <GradientButton
-              title={logged ? '✓ Logged to Today' : `Log ${mins} min of ${name}`}
+              title={logged ? 'Logged to Today' : `Log ${mins} min of ${name}`}
               variant="warm"
               disabled={logged}
               style={{ alignSelf: 'stretch', marginTop: 22 }}
@@ -242,7 +241,7 @@ function Player({ e, target }: { e: Exercise; target: number | null }) {
             <GradientButton
               style={{ flex: 1 }}
               variant={phase.kind === 'rest' ? 'glass' : 'primary'}
-              title={phase.kind === 'rest' ? 'Skip rest' : phase.seconds ? (at === phases.length - 1 ? 'Finish' : 'Skip to next') : at === phases.length - 1 ? '✓ Done. Finish' : '✓ Done set'}
+              title={phase.kind === 'rest' ? 'Skip rest' : phase.seconds ? (at === phases.length - 1 ? 'Finish' : 'Skip to next') : at === phases.length - 1 ? 'Done. Finish' : 'Done set'}
               onPress={() => {
                 success();
                 setPaused(false);

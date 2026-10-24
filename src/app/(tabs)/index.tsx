@@ -6,12 +6,14 @@ import Animated, { useAnimatedScrollHandler, useAnimatedStyle, useSharedValue, i
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { DishCardTall } from '../../components/DishCard';
+import { IconBadge } from '../../components/Icon';
+import { WeekBars } from '../../components/viz';
 import { MealsOfDay } from '../../components/meals/MealsByDay';
 import { MacroLines, MicroSummary } from '../../components/TodaySummary';
 import { CountUp, FadeIn, Glass, Glow, PressableScale, Ring, SectionHeader } from '../../components/ui';
 import { dishLibraryHref, profileHref } from '../../config/tabs';
 import { select, success } from '../../lib/haptics';
-import { dayKey, dayTotals, FIBRE_TARGET, GOALS, recommend, useStore, WATER_TARGET } from '../../lib/store';
+import { addDays, dayKey, dayTotals, FIBRE_TARGET, GOALS, recommend, useStore, WATER_TARGET } from '../../lib/store';
 import { BALANCE_LABEL } from '../../services/dishDetail';
 import { dayGroup } from '../../services/meals';
 import { colors, gradients, radius, type } from '../../theme';
@@ -28,6 +30,26 @@ function QuickAction({ icon, label, tint, onPress }: { icon: keyof typeof Ionico
         <Ionicons name={icon} size={20} color={tint} />
       </View>
       <Text style={styles.qaLabel}>{label}</Text>
+    </PressableScale>
+  );
+}
+
+const DAY_LETTER = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
+
+/** The last seven days of calories eaten against the goal; opens Progress. */
+function WeekCard({ days, goalKcal }: { days: Record<string, { meals: { kcal: number }[] }>; goalKcal: number }) {
+  const week = Array.from({ length: 7 }, (_, i) => addDays(new Date(), i - 6));
+  const values = week.map((d) => (days[dayKey(d)]?.meals ?? []).reduce((t, m) => t + m.kcal, 0));
+  const logged = values.filter((v) => v > 0).length;
+  return (
+    <PressableScale onPress={() => router.push({ pathname: '/track', params: { view: 'progress' } })} scaleTo={0.98} accessibilityLabel="This week. Open progress">
+      <Glass style={{ marginTop: 14 }}>
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: 12 }}>
+          <Text style={[type.h2, { color: colors.text }]}>This week</Text>
+          <Text style={[type.small, { color: colors.muted }]}>{logged === 0 ? 'Log a meal to start' : `${logged} of 7 days logged`}</Text>
+        </View>
+        <WeekBars values={values} labels={week.map((d) => DAY_LETTER[d.getDay()])} goal={goalKcal} />
+      </Glass>
     </PressableScale>
   );
 }
@@ -71,11 +93,11 @@ export default function Today() {
             <View style={styles.header}>
               <View>
                 <Text style={[type.small, { color: colors.muted }]}>{greeting()}</Text>
-                <Text style={[type.h1, { color: colors.text }]}>{profile.name || 'there'} 👋</Text>
+                <Text style={[type.h1, { color: colors.text }]}>{profile.name || 'there'}</Text>
               </View>
               <View style={{ flexDirection: 'row', gap: 10, alignItems: 'center' }}>
                 <View style={styles.streak}>
-                  <Text style={{ fontSize: 15 }}>🔥</Text>
+                  <Ionicons name="flame" size={16} color={colors.warm} />
                   <Text style={styles.streakText}>{streak}</Text>
                 </View>
                 <PressableScale onPress={() => router.push(profileHref())} style={styles.avatar} accessibilityLabel="Open your profile">
@@ -126,11 +148,15 @@ export default function Today() {
           </PressableScale>
 
           <FadeIn i={2}>
+            <WeekCard days={s.days} goalKcal={goal.kcal} />
+          </FadeIn>
+
+          <FadeIn i={2}>
             <PressableScale
               scaleTo={0.98}
               onPress={() => {
                 success();
-                Share.share({ message: `I've saved ₹${moneySaved.toLocaleString('en-IN')} by cooking instead of ordering, with FitPlate 🍽️💪` }).catch(() => {});
+                Share.share({ message: `I've saved ₹${moneySaved.toLocaleString('en-IN')} by cooking instead of ordering, with FitPlate` }).catch(() => {});
               }}
               style={{ marginTop: 14 }}
             >
@@ -202,7 +228,7 @@ export default function Today() {
           </FadeIn>
 
           <FadeIn i={6}>
-            <SectionHeader title={evening ? "🌙 Tomorrow's breakfast" : '☀️ Breakfast ideas'} />
+            <SectionHeader title={evening ? "Tomorrow's breakfast" : 'Breakfast ideas'} />
             <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{ marginHorizontal: -18 }} contentContainerStyle={{ paddingHorizontal: 18 }}>
               {breakfasts.map((d) => (
                 <DishCardTall key={d.id} dish={d} width={160} />
@@ -221,7 +247,7 @@ export default function Today() {
                 {today.meals.length ? <MealsOfDay group={dayGroup(dayKey(), today)} /> : null}
                 {today.exercise.map((e, i) => (
                   <View key={`e${i}`} style={styles.logRow}>
-                    <Text style={{ fontSize: 22 }}>🏃</Text>
+                    <IconBadge name="barbell-outline" color={colors.warm} size={38} />
                     <View style={{ flex: 1 }}>
                       <Text style={styles.logName}>{e.type}</Text>
                       <Text style={[type.small, { color: colors.muted }]}>{e.minutes} min</Text>

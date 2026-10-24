@@ -133,9 +133,9 @@ export function PlanScreen({ embedded = false }: { embedded?: boolean }) {
               </View>
             </View>
             <View style={{ gap: 10, marginTop: 16 }}>
-              <GradientButton title="✨ Auto-plan my week" onPress={autoPlan} />
+              <GradientButton title="Auto-plan my week" onPress={autoPlan} />
               <GradientButton
-                title="🛒 Grocery list for the week"
+                title="Grocery list for the week"
                 variant="glass"
                 disabled={planned.length === 0}
                 onPress={() => router.push({ pathname: '/basket', params: { dishes: planned.map((d) => d.id).join(','), servings: '1' } })}

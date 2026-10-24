@@ -1,26 +1,42 @@
+import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import type { ReactNode } from 'react';
 import { Image, Linking, Pressable, StyleSheet, Text, View } from 'react-native';
+import Svg, { Circle } from 'react-native-svg';
 
 import { dishImageCredits, dishImageFiles } from '../../data/research/dish-images';
 import type { Dish } from '../../models/research';
 import { creditLine, type ImageCredit } from '../../services/data/dishImageCandidates';
 import { colors, radius } from '../../theme';
+import type { IconName } from '../Icon';
+
+/** Plate rings and a line icon, drawn for dishes that have no photo yet. */
+export function DishArtMark({ icon, size }: { icon: IconName; size: number }) {
+  return (
+    <View style={{ width: size, height: size, alignItems: 'center', justifyContent: 'center' }} pointerEvents="none">
+      <Svg width={size} height={size} style={{ position: 'absolute' }}>
+        <Circle cx={size / 2} cy={size / 2} r={size * 0.46} stroke="rgba(255,255,255,0.35)" strokeWidth={1.5} fill="none" />
+        <Circle cx={size / 2} cy={size / 2} r={size * 0.34} stroke="rgba(255,255,255,0.22)" strokeWidth={1} fill="rgba(255,255,255,0.10)" />
+      </Svg>
+      <Ionicons name={icon} size={size * 0.36} color="rgba(255,255,255,0.92)" />
+    </View>
+  );
+}
 
 /**
  * Image slot for a research dish (SPEC-ADDENDA §8, §10). Shows the dish's
  * bundled, freely licensed photo when one has been verified
  * (scripts/research/images.js); otherwise a clearly labelled placeholder.
  */
-const MEAL_ART: Record<string, { emoji: string; palette: [string, string] }> = {
-  breakfast: { emoji: '🍳', palette: ['#F8D57E', '#E89B3C'] },
-  lunch: { emoji: '🍛', palette: ['#F2A65A', '#C2502E'] },
-  dinner: { emoji: '🍲', palette: ['#B5654A', '#5E2A1E'] },
-  snack: { emoji: '🥟', palette: ['#E9C46A', '#B5793A'] },
+const MEAL_ART: Record<string, { icon: IconName; palette: [string, string] }> = {
+  breakfast: { icon: 'sunny-outline', palette: ['#F8D57E', '#E89B3C'] },
+  lunch: { icon: 'restaurant-outline', palette: ['#F2A65A', '#C2502E'] },
+  dinner: { icon: 'moon-outline', palette: ['#B5654A', '#5E2A1E'] },
+  snack: { icon: 'cafe-outline', palette: ['#E9C46A', '#B5793A'] },
 };
 
 export function dishArt(d: Pick<Dish, 'mealType'>) {
-  return MEAL_ART[d.mealType[0]?.toLowerCase() ?? ''] ?? { emoji: '🍽️', palette: ['#6FCF97', '#1E8A5A'] as [string, string] };
+  return MEAL_ART[d.mealType[0]?.toLowerCase() ?? ''] ?? { icon: 'restaurant-outline' as IconName, palette: ['#6FCF97', '#1E8A5A'] as [string, string] };
 }
 
 /** The dish's verified photo and its credit, or null when it has none yet. */
@@ -55,7 +71,7 @@ export function DishImageSlot({ dish, size, label = true }: { dish: Pick<Dish, '
       accessibilityRole="image"
       accessibilityLabel={`${dish.name}: picture coming soon`}
     >
-      <Text style={{ fontSize: size * 0.42 }}>{art.emoji}</Text>
+      <DishArtMark icon={art.icon} size={size * 0.74} />
       {label ? (
         <View style={styles.artLabel}>
           <Text style={styles.artLabelText} numberOfLines={1}>

@@ -1,3 +1,4 @@
+import { Ionicons } from '@expo/vector-icons';
 import { router } from 'expo-router';
 import { useEffect } from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
@@ -5,6 +6,7 @@ import Animated, { Easing, useAnimatedStyle, useSharedValue, withDelay, withTimi
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { DishRow } from '../../components/DishCard';
+import { IconBadge, type IconName } from '../../components/Icon';
 import { Bar, CountUp, FadeIn, Glass, SectionHeader } from '../../components/ui';
 import { addDays, allowedDishes, dayKey, dayTotals, FIBRE_TARGET, GOALS, useStore, WATER_TARGET } from '../../lib/store';
 import { colors, radius, type } from '../../theme';
@@ -24,15 +26,15 @@ function Column({ value, max, color, delay }: { value: number; max: number; colo
   );
 }
 
-const BADGES = [
-  { id: 'first', emoji: '🍳', title: 'First cook', test: (c: Ctx) => c.cooked >= 1 },
-  { id: 'streak3', emoji: '🔥', title: '3-day streak', test: (c: Ctx) => c.streak >= 3 },
-  { id: 'saved1k', emoji: '💰', title: '₹1,000 saved', test: (c: Ctx) => c.saved >= 1000 },
-  { id: 'saved5k', emoji: '🏦', title: '₹5,000 saved', test: (c: Ctx) => c.saved >= 5000 },
-  { id: 'protein', emoji: '💪', title: 'Protein day', test: (c: Ctx) => c.proteinDays >= 1 },
-  { id: 'water', emoji: '💧', title: 'Hydrated', test: (c: Ctx) => c.waterDays >= 1 },
-  { id: 'mover', emoji: '🏃', title: '5 workouts', test: (c: Ctx) => c.workouts >= 5 },
-  { id: 'chef', emoji: '👨‍🍳', title: '10 home meals', test: (c: Ctx) => c.cooked >= 10 },
+const BADGES: { id: string; icon: IconName; title: string; test: (c: Ctx) => boolean }[] = [
+  { id: 'first', icon: 'restaurant-outline', title: 'First cook', test: (c: Ctx) => c.cooked >= 1 },
+  { id: 'streak3', icon: 'flame-outline', title: '3-day streak', test: (c: Ctx) => c.streak >= 3 },
+  { id: 'saved1k', icon: 'wallet-outline', title: '₹1,000 saved', test: (c: Ctx) => c.saved >= 1000 },
+  { id: 'saved5k', icon: 'trending-up-outline', title: '₹5,000 saved', test: (c: Ctx) => c.saved >= 5000 },
+  { id: 'protein', icon: 'barbell-outline', title: 'Protein day', test: (c: Ctx) => c.proteinDays >= 1 },
+  { id: 'water', icon: 'water-outline', title: 'Hydrated', test: (c: Ctx) => c.waterDays >= 1 },
+  { id: 'mover', icon: 'walk-outline', title: '5 workouts', test: (c: Ctx) => c.workouts >= 5 },
+  { id: 'chef', icon: 'ribbon-outline', title: '10 home meals', test: (c: Ctx) => c.cooked >= 10 },
 ];
 type Ctx = { cooked: number; streak: number; saved: number; proteinDays: number; waterDays: number; workouts: number };
 
@@ -114,7 +116,7 @@ export function ProgressScreen({ embedded = false }: { embedded?: boolean }) {
               <Nutrient label="Fibre" value={avg('fibre')} target={FIBRE_TARGET} unit="g" color={colors.accent2} />
             </View>
             <Text style={{ color: colors.text, marginTop: 16, fontWeight: '700' }}>
-              {gap === 'protein' ? '💪 You were lowest on protein.' : '🥦 You were lowest on fibre.'} These close the gap:
+              {gap === 'protein' ? 'You were lowest on protein.' : 'You were lowest on fibre.'} These close the gap:
             </Text>
             <View style={{ marginTop: 10 }}>
               {fixers.map((d) => (
@@ -130,7 +132,7 @@ export function ProgressScreen({ embedded = false }: { embedded?: boolean }) {
               <Text style={[type.label, { color: colors.muted }]}>Total saved by cooking</Text>
               <CountUp value={moneySaved} prefix="₹" style={{ color: colors.warn, fontSize: 32, fontWeight: '900', letterSpacing: -1 }} />
             </View>
-            <Text style={{ fontSize: 46 }}>💰</Text>
+            <IconBadge name="wallet-outline" color={colors.warn} size={56} />
           </Glass>
         </FadeIn>
 
@@ -142,7 +144,7 @@ export function ProgressScreen({ embedded = false }: { embedded?: boolean }) {
               return (
                 <View key={b.id} style={[styles.badge, !on && { opacity: 0.35 }]}>
                   <View style={[styles.badgeIcon, on && styles.badgeIconOn]}>
-                    <Text style={{ fontSize: 26 }}>{on ? b.emoji : '🔒'}</Text>
+                    <Ionicons name={on ? b.icon : 'lock-closed-outline'} size={26} color={on ? colors.accent : colors.muted} />
                   </View>
                   <Text style={styles.badgeText}>{b.title}</Text>
                 </View>

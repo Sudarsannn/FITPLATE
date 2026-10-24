@@ -1,8 +1,12 @@
+import { Ionicons } from '@expo/vector-icons';
 import { router } from 'expo-router';
 import { useState } from 'react';
-import { Pressable, ScrollView, Text, TextInput, View } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
+import Animated, { FadeInRight } from 'react-native-reanimated';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { DishImageSlot } from '../components/dishes/parts';
+import { MacroSplitBar } from '../components/viz';
 import { Chip, GradientButton } from '../components/ui';
 import { Checkbox, k, Loading, Notice, SampleBanner, ScreenTop, Section } from '../components/vendors/kit';
 import { useResearchDishes } from '../lib/useResearch';
@@ -112,7 +116,7 @@ export default function Analyse() {
         {stage === 'start' ? (
           <>
             <Text style={[k.muted, { marginBottom: 10 }]}>Build your cart in Swiggy, then come back and tap below. FitPlate reads the cart (it never places an order here) and lines each dish up against its recipe.</Text>
-            <GradientButton title="🛒  Read my Swiggy cart" onPress={readCart} />
+            <GradientButton title="Read my Swiggy cart" onPress={readCart} />
             {loading ? <Loading label="Reading your cart…" /> : null}
             {error ? <Notice tone="warn">{error}</Notice> : null}
           </>
@@ -140,7 +144,7 @@ export default function Analyse() {
           <>
             <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 8, paddingVertical: 8 }}>
               {items.map((i, n) => (
-                <Chip key={i.key} label={`${i.choice === 'cook' ? '🍳' : '🛵'} ${i.name}`} active={n === tab} onPress={() => setTab(n)} />
+                <Chip key={i.key} label={i.name} icon={i.choice === 'cook' ? 'flame-outline' : 'bicycle-outline'} active={n === tab} onPress={() => setTab(n)} />
               ))}
             </ScrollView>
             {cur ? <Tab item={cur} onChoice={(c) => setChoice(cur.key, c)} /> : null}
@@ -160,8 +164,23 @@ function Tab({ item, onChoice }: { item: Item; onChoice: (c: Item['choice']) => 
   const d = item.dish;
   const make = d ? dishCost(d, item.qty)?.inr ?? null : null;
   const swiggy = item.price != null ? item.price * item.qty : null;
+  const saving = make != null && swiggy != null ? swiggy - make : null;
   return (
-    <View style={{ marginTop: 6 }}>
+    <Animated.View key={item.key} entering={FadeInRight.duration(300)} style={{ marginTop: 6 }}>
+      {d ? (
+        <View style={{ flexDirection: 'row', alignItems: 'center', gap: 14, marginBottom: 12 }}>
+          <DishImageSlot dish={d} size={84} label={false} />
+          <View style={{ flex: 1, gap: 6 }}>
+            <MacroSplitBar macros={d.nutritionPerServing} height={6} />
+            {saving != null && saving > 0 ? (
+              <View style={s.saveChip}>
+                <Ionicons name="trending-down" size={13} color={colors.accent} />
+                <Text style={s.saveText}>Cooking saves about ₹{Math.round(saving)}</Text>
+              </View>
+            ) : null}
+          </View>
+        </View>
+      ) : null}
       <Text style={[type.h2, { color: colors.text }]}>
         {item.qty} × {item.name}
       </Text>
@@ -191,6 +210,11 @@ function Tab({ item, onChoice }: { item: Item; onChoice: (c: Item['choice']) => 
           <Text style={k.strong}>Order it on Swiggy</Text>
         </Pressable>
       </View>
-    </View>
+    </Animated.View>
   );
 }
+
+const s = StyleSheet.create({
+  saveChip: { flexDirection: 'row', alignItems: 'center', gap: 6, alignSelf: 'flex-start', paddingHorizontal: 10, paddingVertical: 5, borderRadius: radius.pill, backgroundColor: 'rgba(61,220,132,0.12)' },
+  saveText: { color: colors.accent, fontWeight: '800', fontSize: 12 },
+});

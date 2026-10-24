@@ -1,3 +1,4 @@
+import { Ionicons } from '@expo/vector-icons';
 import { router, useLocalSearchParams } from 'expo-router';
 import { useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
@@ -5,7 +6,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { MyMeals } from '../../components/meals/MyMeals';
 import { NutritionCard } from '../../components/NutritionCard';
-import { FadeIn, Glass, PressableScale } from '../../components/ui';
+import { FadeIn, Glass, PressableScale, TopGlow } from '../../components/ui';
 import { select } from '../../lib/haptics';
 import { FIBRE_TARGET, GOALS, useStore } from '../../lib/store';
 import { colors, radius, type } from '../../theme';
@@ -34,6 +35,7 @@ export default function Track() {
   }
   return (
     <SafeAreaView edges={['top']} style={{ flex: 1, backgroundColor: colors.bg }}>
+      <TopGlow color={colors.blue} />
       <View style={styles.switcher} accessibilityRole="tablist">
         {OPTIONS.map((o) => {
           const on = view === o.key;
@@ -77,10 +79,12 @@ function NutritionScreen() {
       <FadeIn i={2}>
         <View style={styles.links}>
           <PressableScale onPress={() => router.push({ pathname: '/log', params: { tab: 'meal' } })} style={styles.linkBtn} scaleTo={0.96}>
-            <Text style={styles.linkText}>🍱 Log a meal</Text>
+            <Ionicons name="add-circle-outline" size={17} color={colors.text} />
+            <Text style={styles.linkText}>Log a meal</Text>
           </PressableScale>
           <PressableScale onPress={() => router.push('/cook')} style={styles.linkBtn} scaleTo={0.96}>
-            <Text style={styles.linkText}>🍳 Find a dish</Text>
+            <Ionicons name="search-outline" size={17} color={colors.text} />
+            <Text style={styles.linkText}>Find a dish</Text>
           </PressableScale>
         </View>
       </FadeIn>
@@ -90,7 +94,7 @@ function NutritionScreen() {
 
 const styles = StyleSheet.create({
   links: { flexDirection: 'row', gap: 10, marginTop: 14 },
-  linkBtn: { flex: 1, minHeight: 46, alignItems: 'center', justifyContent: 'center', borderRadius: radius.pill, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border },
+  linkBtn: { flex: 1, minHeight: 46, flexDirection: 'row', gap: 8, alignItems: 'center', justifyContent: 'center', borderRadius: radius.pill, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border },
   linkText: { color: colors.text, fontWeight: '800', fontSize: 14 },
   switcher: {
     flexDirection: 'row',

@@ -59,7 +59,7 @@ export default function Balance() {
                       <Text style={styles.name} numberOfLines={1}>
                         {shortExerciseName(w.name)}
                       </Text>
-                      {fit(w.exerciseId) >= 2 ? <Text style={styles.fits}>✓ Fits your training answers</Text> : null}
+                      {fit(w.exerciseId) >= 2 ? <Text style={styles.fits}>Fits your training answers</Text> : null}
                       <Text style={styles.meta} numberOfLines={1}>
                         {[e?.section ? SECTION_LABEL[e.section] : null, e ? musclesLine(e) : null].filter(Boolean).join(' · ')}
                       </Text>
