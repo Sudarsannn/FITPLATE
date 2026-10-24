@@ -137,8 +137,13 @@ export default function BasketScreen() {
   const continueToCook = (via: ShoppingList['boughtVia']) => {
     save({ ...list, status: 'done', boughtVia: via, orderedAt: Date.now() });
     const first = dishes[0];
-    if (first) router.replace({ pathname: '/steps/[id]', params: { id: first.id, servings: String(list.servings[first.id] ?? 2), via: via ?? 'self' } });
-    else router.back();
+    // iOS drops a navigation made while a Modal is still closing, so wait for it.
+    const go = () => {
+      if (first) router.replace({ pathname: '/steps/[id]', params: { id: first.id, servings: String(list.servings[first.id] ?? 2), via: via ?? 'self' } });
+      else router.back();
+    };
+    if (Platform.OS === 'ios' && sheet !== null) setTimeout(go, 450);
+    else go();
   };
 
   return (
@@ -281,7 +286,9 @@ export default function BasketScreen() {
                   onPress={() => {
                     setSheet(null);
                     store.updateSettings({ preferredVendor: 'instamart' });
-                    router.push({ pathname: '/checkout/instamart', params: { list: listId ?? store.saveShoppingList(list) } });
+                    const id = listId ?? store.saveShoppingList(list);
+                    // iOS drops a navigation made while a Modal is still closing, so wait for it.
+                    setTimeout(() => router.push({ pathname: '/checkout/instamart', params: { list: id } }), Platform.OS === 'ios' ? 450 : 0);
                   }}
                 >
                   <View style={[s.logo, { backgroundColor: '#FC8019' }]}>

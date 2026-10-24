@@ -49,6 +49,7 @@ export default function OrderVsMake() {
   const [picked, setPicked] = useState<MenuDish | null>(null);
   const [connected, setConnected] = useState<boolean | null>(null);
   const [insights, setInsights] = useState<OrderInsight[] | null>(null);
+  const [cartCmp, setCartCmp] = useState<CartCompare | 'empty' | null>(null);
 
   const addressId = async () => (await food.getAddresses())[0]?.id ?? null;
 
@@ -103,6 +104,31 @@ export default function OrderVsMake() {
       setRestaurants(await food.searchRestaurants(query.trim() || 'north indian', addr));
     } catch (e) {
       setError(e instanceof VendorError ? e.message : 'Couldn’t load restaurants.');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  /** Reads the Swiggy Food cart (get_food_cart) and lines each dish up against its FitPlate recipe. */
+  const compareCart = async () => {
+    setLoading(true);
+    setError(null);
+    try {
+      const st = await food.status();
+      setConnected(st.connected);
+      if (!st.connected) return;
+      const addr = await addressId();
+      if (!addr) throw new VendorError('OTHER', 'Add a delivery address in Swiggy first.');
+      const cart = await food.getFoodCart(addr);
+      if (!cart.lines.length) return setCartCmp('empty');
+      const rows = cart.lines.map((l) => {
+        const m = matchDish(l.name, dishes);
+        const c = m ? dishCost(m.dish, l.quantity) : null;
+        return { line: l, dish: m?.dish ?? null, make: c?.inr ?? null };
+      });
+      setCartCmp({ restaurant: cart.restaurantName, rows, toPay: cart.toPay });
+    } catch (e) {
+      setError(e instanceof VendorError ? e.message : 'Couldn’t read your Swiggy cart.');
     } finally {
       setLoading(false);
     }
@@ -163,6 +189,14 @@ export default function OrderVsMake() {
             />
           ))}
         </View>
+
+        <Section title="Already have a Swiggy cart?">
+          <Text style={k.body}>Build your cart in Swiggy, then come back and compare it with cooking the same dishes.</Text>
+          <GradientButton title="🛒  Compare my Swiggy cart" onPress={compareCart} style={{ marginTop: 10 }} />
+          {mode === 'sample' ? <Text style={[k.muted, { marginTop: 6, fontSize: 12 }]}>Sample mode has no real cart. Search a dish below, tap Cook it instead, then Order anyway to put one in the sample cart (nothing is bought).</Text> : null}
+          {cartCmp === 'empty' ? <Notice>Your Swiggy cart is empty right now.</Notice> : null}
+          {cartCmp && cartCmp !== 'empty' ? <CartResult c={cartCmp} /> : null}
+        </Section>
 
         {connected === false ? (
           <Section title="Connect Swiggy">
@@ -258,6 +292,43 @@ export default function OrderVsMake() {
         </Section>
       </ScrollView>
     </SafeAreaView>
+  );
+}
+
+type CartCompare = { restaurant: string; rows: { line: FoodCart['lines'][number]; dish: Dish | null; make: number | null }[]; toPay: number | null };
+
+/** The cart next to what cooking those dishes would cost, with a way into the shopping list. */
+function CartResult({ c }: { c: CartCompare }) {
+  const matched = c.rows.filter((r) => r.dish);
+  const makeTotal = matched.reduce((t, r) => t + (r.make ?? 0), 0);
+  const swiggyMatched = matched.reduce((t, r) => t + (r.line.price ?? 0) * r.line.quantity, 0);
+  const ids = matched.map((r) => r.dish!.id);
+  const servings = matched.map((r) => Math.min(8, Math.max(1, r.line.quantity)));
+  return (
+    <View style={{ marginTop: 10 }}>
+      <Text style={k.strong}>{c.restaurant}</Text>
+      {c.rows.map((r, i) => (
+        <View key={`${r.line.itemId}-${i}`} style={{ flexDirection: 'row', justifyContent: 'space-between', gap: 8, paddingVertical: 4 }}>
+          <Text style={[k.muted, { flex: 1 }]}>
+            {r.line.quantity} × {r.line.name}
+            {r.dish ? '' : ' (no FitPlate recipe yet)'}
+          </Text>
+          <Text style={k.muted}>
+            {r.line.price != null ? `₹${r.line.price * r.line.quantity}` : '–'}
+            {r.make != null ? ` → ₹${r.make} to make` : ''}
+          </Text>
+        </View>
+      ))}
+      {c.toPay != null ? <Text style={k.muted}>Swiggy total with delivery and taxes: ₹{c.toPay}</Text> : null}
+      {matched.length ? (
+        <>
+          <Text style={[k.strong, { marginTop: 6, color: colors.accent }]}>
+            {swiggyMatched > makeTotal ? `Cooking ${matched.length === c.rows.length ? 'these' : 'the dishes with recipes'} saves about ₹${swiggyMatched - makeTotal}.` : 'Cooking costs about the same as ordering.'}
+          </Text>
+          <GradientButton title="🍳  Start cooking these" onPress={() => router.push({ pathname: '/basket', params: { dishes: ids.join(','), servings: servings.join(',') } })} style={{ marginTop: 8 }} />
+        </>
+      ) : null}
+    </View>
   );
 }
 
