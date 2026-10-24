@@ -1,6 +1,16 @@
 // Dynamic Expo config on top of app.json (priority plan P1-a). Reads only
 // public, non-secret values from the environment; never put keys in here.
+const { withEntitlementsPlist } = require('expo/config-plugins');
 const queried = require('./src/config/queriedSchemes.json');
+
+// expo-notifications adds the remote-push entitlement, which a free Apple ID
+// (Personal Team) can't sign. FitPlate only uses local reminders, so drop it
+// unless FITPLATE_IOS_REMOTE_PUSH=true (paid Apple programme, later).
+const withoutRemotePush = (config) =>
+  withEntitlementsPlist(config, (mod) => {
+    if (process.env.FITPLATE_IOS_REMOTE_PUSH !== 'true') delete mod.modResults['aps-environment'];
+    return mod;
+  });
 
 /** "123-abc.apps.googleusercontent.com" → "com.googleusercontent.apps.123-abc" */
 function reversedClientId(id) {
@@ -13,7 +23,7 @@ module.exports = ({ config }) => {
   const schemes = ['fitplate', ...(iosGoogle ? [iosGoogle] : [])];
   const querySchemes = Array.from(new Set([...queried.zepto, ...queried.swiggy, ...queried.upi]));
 
-  return {
+  return withoutRemotePush({
     ...config,
     // The first scheme stays "fitplate" (deep links like fitplate://checkout/return).
     scheme: schemes,
@@ -28,5 +38,5 @@ module.exports = ({ config }) => {
       },
     },
     plugins: [...(config.plugins || []), 'expo-dev-client'],
-  };
+  });
 };
