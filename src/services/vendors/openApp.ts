@@ -27,3 +27,8 @@ export async function openExternal(url: string): Promise<boolean> {
 export function zeptoTarget(link: string | null | undefined): { url: string; exact: boolean } {
   return link && /^https:\/\/(www\.)?zepto(now)?\.com\//i.test(link) ? { url: link, exact: true } : { url: ZEPTO_HOME, exact: false };
 }
+
+export const SWIGGY_DINEOUT = 'https://www.swiggy.com/dineout';
+
+/** Swiggy's own search results for a dish (opens the Swiggy app when it is installed and claims the link). */
+export const swiggySearchUrl = (query: string) => `https://www.swiggy.com/search?query=${encodeURIComponent(query.trim())}`;

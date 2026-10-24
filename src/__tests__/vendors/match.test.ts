@@ -4,7 +4,7 @@ import type { Dish } from '../../models/research';
 import { orderInsights } from '../../services/vendors/insights';
 import { matchDish } from '../../services/vendors/match';
 import { prepTimeline } from '../../services/vendors/prep';
-import { zeptoTarget } from '../../services/vendors/openApp';
+import { swiggySearchUrl, zeptoTarget } from '../../services/vendors/openApp';
 
 const dish = (id: string, name: string, dietType: string) => ({ id, name, dietType }) as unknown as Dish;
 const dishes = [dish('01-butter-chicken', 'Butter Chicken', 'non-veg'), dish('02-paneer-butter-masala', 'Paneer Butter Masala', 'veg'), dish('03-masala-dosa', 'Masala Dosa', 'veg')];
@@ -50,5 +50,11 @@ describe('small helpers', () => {
     expect(zeptoTarget('https://www.zepto.com/pn/atta/pvid/1')).toEqual({ url: 'https://www.zepto.com/pn/atta/pvid/1', exact: true });
     expect(zeptoTarget('https://evil.example/zepto.com/')).toMatchObject({ exact: false });
     expect(zeptoTarget(null).exact).toBe(false);
+  });
+});
+
+describe('swiggySearchUrl', () => {
+  it('opens Swiggy search for the dish, encoded', () => {
+    expect(swiggySearchUrl(' Dal Tadka ')).toBe('https://www.swiggy.com/search?query=Dal%20Tadka');
   });
 });

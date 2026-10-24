@@ -469,12 +469,16 @@ function MakeOrOrder({ dish, cost, order, servings, setServings }: { dish: Dish;
         ) : (
           <Text style={styles.note}>Restaurant prices for this dish are coming soon.</Text>
         )}
-        <GradientButton
-          title="🛵  Order on Swiggy"
-          style={{ marginTop: 12 }}
-          onPress={() => router.push({ pathname: '/order-vs-make', params: { q: dish.name } })}
-        />
-        <Text style={styles.flow}>Finds this dish on Swiggy near you with its live price. You pay in Swiggy or your UPI app, never in FitPlate.</Text>
+        <PressableScale
+          onPress={() => router.push({ pathname: '/order-instead', params: { dish: dish.id } })}
+          style={styles.orderBtn}
+          scaleTo={0.97}
+          accessibilityLabel="Order instead, on Swiggy"
+        >
+          <Text style={styles.orderTitle}>Order instead</Text>
+          <Text style={styles.orderSmall}>Swiggy</Text>
+        </PressableScale>
+        <Text style={styles.flow}>See who serves it near you, for delivery or dining in. You order and pay in Swiggy, never in FitPlate.</Text>
       </View>
 
       {saving ? (
@@ -736,6 +740,9 @@ function Section({ title, children }: { title: string; children: ReactNode }) {
 }
 
 const styles = StyleSheet.create({
+  orderBtn: { alignItems: 'center', justifyContent: 'center', minHeight: 56, borderRadius: radius.lg, backgroundColor: '#FC8019', marginTop: 12 },
+  orderTitle: { color: '#fff', fontWeight: '900', fontSize: 16 },
+  orderSmall: { color: 'rgba(255,255,255,0.85)', fontWeight: '700', fontSize: 10.5, marginTop: 1 },
   jumpRow: { gap: 8, paddingTop: 14 },
   allCredits: { color: colors.muted, fontSize: 11, marginTop: 2, textDecorationLine: 'underline' },
   topPlain: { flexDirection: 'row', paddingHorizontal: 12, paddingVertical: 4 },
