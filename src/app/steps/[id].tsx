@@ -173,7 +173,7 @@ function Finished({ dish, servings }: { dish: Dish; servings: number }) {
   );
 }
 
-function StepTimer({ seconds }: { seconds: number }) {
+export function StepTimer({ seconds }: { seconds: number }) {
   const [left, setLeft] = useState(seconds);
   const [running, setRunning] = useState(false);
   useEffect(() => {

@@ -24,6 +24,8 @@ export type UserSettings = {
   featureToggles: Record<string, boolean>;
   /** P3c: the user agreed that FitPlate may read their Swiggy Food order history for insights. */
   swiggyOrderInsights: boolean;
+  /** Burners or induction plates available for cooking several dishes at once (Multi-dish cooking, 24 Oct 2026). */
+  burners?: number;
 };
 
 export const DEFAULT_SETTINGS: UserSettings = {

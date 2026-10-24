@@ -119,6 +119,12 @@ export default function Today() {
             </Glass>
           </FadeIn>
 
+          <PressableScale onPress={() => router.push('/analyse')} scaleTo={0.98} style={[styles.balance, { marginTop: 12 }]} accessibilityLabel="Analyse my Swiggy Checkout">
+            <Ionicons name="cart" size={16} color={colors.warm} />
+            <Text style={[styles.balanceText, { fontWeight: '800' }]}>Analyse my Swiggy Checkout</Text>
+            <Ionicons name="chevron-forward" size={15} color={colors.muted} />
+          </PressableScale>
+
           <FadeIn i={2}>
             <PressableScale
               scaleTo={0.98}

@@ -18,7 +18,7 @@ import { dishCost } from '../services/vendors';
 import { buildShoppingItems, cheapestPer100, isPantryStaple, itemAmountLabel, newShoppingList, offlineVariants, preselect, shoppingListText, variantLabel, type VariantOption } from '../services/vendors/basket';
 import { VENDOR_VISIBLE, VENDORS_PAUSED } from '../services/vendors/config';
 import { VendorPlaceholders } from '../components/vendors/VendorLogos';
-import { openExternal, zeptoTarget } from '../services/vendors/openApp';
+import { instamartSearchUrl, openExternal, zeptoSearchUrl, zeptoTarget } from '../services/vendors/openApp';
 import type { VendorProduct } from '../services/vendors/types';
 import { colors, radius, type } from '../theme';
 
@@ -137,6 +137,13 @@ export default function BasketScreen() {
   const continueToCook = (via: ShoppingList['boughtVia']) => {
     save({ ...list, status: 'done', boughtVia: via, orderedAt: Date.now() });
     const first = dishes[0];
+    if (dishes.length > 1) {
+      // Several dishes: cook them together on one timeline.
+      const go2 = () => router.replace({ pathname: '/multicook', params: { dishes: dishes.map((d) => d.id).join(','), servings: dishes.map((d) => String(list.servings[d.id] ?? 2)).join(','), via: via ?? 'self' } });
+      if (Platform.OS === 'ios' && sheet !== null) setTimeout(go2, 450);
+      else go2();
+      return;
+    }
     // iOS drops a navigation made while a Modal is still closing, so wait for it.
     const go = () => {
       if (first) router.replace({ pathname: '/steps/[id]', params: { id: first.id, servings: String(list.servings[first.id] ?? 2), via: via ?? 'self' } });
@@ -461,11 +468,10 @@ function ItemRow({
                 </View>
                 {VENDORS_PAUSED ? null : (
                   <ZeptoCircle
-                    exact={z.exact}
+                    exact
                     onPress={async () => {
-                      const ok = await openExternal(z.url);
-                      if (!z.exact) notify('Zepto', `FitPlate doesn’t have the exact Zepto link for ${o.brand} ${item.name} yet, so Zepto’s home page opened. Search for it there.`);
-                      else if (!ok) notify('Zepto', 'Couldn’t open Zepto on this device.');
+                      const ok = await openExternal(z.exact ? z.url : zeptoSearchUrl(`${o.brand} ${item.name}`));
+                      if (!ok) notify('Zepto', 'Couldn’t open Zepto on this device.');
                     }}
                   />
                 )}
@@ -493,15 +499,12 @@ function ZeptoList({ items, onDone }: { items: ShoppingItem[]; onDone: () => voi
             <View key={i.key} style={s.zrow}>
               <View style={{ flex: 1 }}>
                 <Text style={k.strong}>{i.name}</Text>
-                <Text style={k.muted}>{i.variant ?? 'any brand'}</Text>
+                <Text style={k.muted}>{i.variant ?? 'any brand'}{z.exact ? '' : ' · opens a Zepto search'}</Text>
               </View>
-              <ZeptoCircle
-                exact={z.exact}
-                onPress={async () => {
-                  await openExternal(z.url);
-                  if (!z.exact) notify('Zepto', `No exact Zepto link for ${i.name} yet, so Zepto’s home page opened. Search for “${i.name}” there.`);
-                }}
-              />
+              <Pressable onPress={() => openExternal(instamartSearchUrl(i.name))} hitSlop={8} accessibilityRole="link" accessibilityLabel={`Search ${i.name} on Swiggy Instamart`} style={{ marginRight: 8 }}>
+                <Text style={{ color: colors.warm, fontWeight: '800', fontSize: 12 }}>Swiggy</Text>
+              </Pressable>
+              <ZeptoCircle exact onPress={() => openExternal(z.exact ? z.url : zeptoSearchUrl(i.name))} />
             </View>
           );
         })}

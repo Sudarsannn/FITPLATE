@@ -28,6 +28,10 @@ export function zeptoTarget(link: string | null | undefined): { url: string; exa
   return link && /^https:\/\/(www\.)?zepto(now)?\.com\//i.test(link) ? { url: link, exact: true } : { url: ZEPTO_HOME, exact: false };
 }
 
+/** Search results for one ingredient: used when FitPlate has no exact product link. */
+export const zeptoSearchUrl = (query: string) => `https://www.zepto.com/search?query=${encodeURIComponent(query.trim())}`;
+export const instamartSearchUrl = (query: string) => `https://www.swiggy.com/instamart/search?custom_back=true&query=${encodeURIComponent(query.trim())}`;
+
 export const SWIGGY_DINEOUT = 'https://www.swiggy.com/dineout';
 
 /** Swiggy's own search results for a dish (opens the Swiggy app when it is installed and claims the link). */
