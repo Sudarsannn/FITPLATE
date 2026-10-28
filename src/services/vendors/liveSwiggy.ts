@@ -1,4 +1,4 @@
-import { FITPLATE_API_URL } from './config';
+import { FITPLATE_API_KEY, FITPLATE_API_URL } from './config';
 import * as N from './normalize';
 import { VendorError, type InstamartApi, type SwiggyFoodApi, type VendorErrorCode } from './types';
 
@@ -9,13 +9,18 @@ import { VendorError, type InstamartApi, type SwiggyFoodApi, type VendorErrorCod
  */
 type Server = 'im' | 'food';
 
+const keyHeader = (): Record<string, string> => (FITPLATE_API_KEY ? { 'X-FitPlate-Key': FITPLATE_API_KEY } : {});
+
+/** True when the server is hosted off this computer, so login is by pasting the return address. */
+export const hostedLogin = (): boolean => Boolean(FITPLATE_API_KEY);
+
 export async function callSwiggy(server: Server, tool: string, args: Record<string, unknown> = {}, base = FITPLATE_API_URL, fetcher: typeof fetch = fetch): Promise<unknown> {
   if (!base) throw new VendorError('OFFLINE', 'The FitPlate server is not set up on this device.');
   let res: Response;
   try {
     res = await fetcher(`${base}/api/swiggy/${server}/call`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json', ...keyHeader() },
       body: JSON.stringify({ tool, args }),
     });
   } catch {
@@ -35,7 +40,7 @@ export async function callSwiggy(server: Server, tool: string, args: Record<stri
 async function status(server: Server, base = FITPLATE_API_URL): Promise<{ connected: boolean }> {
   if (!base) return { connected: false };
   try {
-    const r = await fetch(`${base}/api/swiggy/${server}/status`);
+    const r = await fetch(`${base}/api/swiggy/${server}/status`, { headers: keyHeader() });
     const j = await r.json();
     return { connected: Boolean(j.connected) };
   } catch {
@@ -44,6 +49,33 @@ async function status(server: Server, base = FITPLATE_API_URL): Promise<{ connec
 }
 
 const connectUrl = (server: Server, returnTo: string) => (FITPLATE_API_URL ? `${FITPLATE_API_URL}/api/swiggy/${server}/connect?return=${encodeURIComponent(returnTo)}` : null);
+
+/** Hosted login step 1: the Swiggy sign-in address to open. `connected: true` means no sign-in is needed. */
+export async function hostedAuthUrl(server: Server, base = FITPLATE_API_URL, fetcher: typeof fetch = fetch): Promise<{ connected: boolean; authUrl: string | null }> {
+  if (!base) throw new VendorError('OFFLINE', 'The FitPlate server is not set up on this device.');
+  let res: Response;
+  try {
+    res = await fetcher(`${base}/api/swiggy/${server}/auth-url`, { headers: keyHeader() });
+  } catch {
+    throw new VendorError('OFFLINE', 'Can’t reach the FitPlate server.');
+  }
+  const j = await res.json().catch(() => ({}));
+  if (!res.ok) throw new VendorError(res.status === 401 ? 'AUTH' : 'SERVER', j.message ?? 'Couldn’t start the Swiggy sign-in.');
+  return { connected: Boolean(j.connected), authUrl: j.authUrl ?? null };
+}
+
+/** Hosted login step 2: send back the address Swiggy redirected to (or just the code). */
+export async function hostedFinish(server: Server, text: string, base = FITPLATE_API_URL, fetcher: typeof fetch = fetch): Promise<void> {
+  if (!base) throw new VendorError('OFFLINE', 'The FitPlate server is not set up on this device.');
+  let res: Response;
+  try {
+    res = await fetcher(`${base}/api/swiggy/${server}/finish`, { method: 'POST', headers: { 'Content-Type': 'application/json', ...keyHeader() }, body: JSON.stringify({ text }) });
+  } catch {
+    throw new VendorError('OFFLINE', 'Can’t reach the FitPlate server.');
+  }
+  const j = await res.json().catch(() => ({}));
+  if (!res.ok || !j.ok) throw new VendorError(j.code ?? 'OTHER', j.message ?? 'Swiggy didn’t accept that.');
+}
 
 /** Is the local FitPlate server running? */
 export async function serverHealth(base = FITPLATE_API_URL): Promise<{ running: boolean; checkoutLive: boolean }> {
@@ -64,7 +96,7 @@ export function createLiveInstamart(): InstamartApi {
     status: () => status('im'),
     connectUrl: (returnTo) => connectUrl('im', returnTo),
     disconnect: async () => {
-      if (FITPLATE_API_URL) await fetch(`${FITPLATE_API_URL}/api/swiggy/im/logout`, { method: 'POST' }).catch(() => {});
+      if (FITPLATE_API_URL) await fetch(`${FITPLATE_API_URL}/api/swiggy/im/logout`, { method: 'POST', headers: keyHeader() }).catch(() => {});
     },
     getAddresses: async () => N.toAddresses(await call('get_addresses')),
     createAddress: async (text) => {

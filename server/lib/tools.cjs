@@ -102,4 +102,36 @@ function safeReturnUrl(url) {
   return null;
 }
 
-module.exports = { ALLOWED, ORDER_TOOLS, adaptArgs, parseToolResult, errorCode, safeReturnUrl };
+/**
+ * Hosted login: Swiggy sends the browser to http://localhost/callback?code=..., which cannot load
+ * on another device, so the person pastes the address bar text (or just the code) back instead.
+ */
+function parsePastedLogin(input) {
+  const text = String(input ?? '').trim();
+  if (!text) return null;
+  try {
+    const u = new URL(text);
+    const code = u.searchParams.get('code');
+    return code ? { code, state: u.searchParams.get('state') ?? '' } : null;
+  } catch {
+    // not a URL: fall through to a bare code
+  }
+  const m = text.match(/[?&]code=([^&\s]+)/);
+  if (m) return { code: decodeURIComponent(m[1]), state: (text.match(/[?&]state=([^&\s]+)/) || [])[1] ?? '' };
+  return /^[\w.~-]{8,}$/.test(text) ? { code: text, state: '' } : null;
+}
+
+/** Constant-time check of the shared access key a hosted server requires. */
+function keyMatches(provided, expected) {
+  const a = Buffer.from(String(provided ?? ''));
+  const b = Buffer.from(String(expected ?? ''));
+  return b.length > 0 && a.length === b.length && require('node:crypto').timingSafeEqual(a, b);
+}
+
+/** Browser origins allowed to call a hosted server: localhost always, plus the comma-separated list given. */
+function originAllowed(origin, list) {
+  if (safeReturnUrl(origin)) return true;
+  return String(list ?? '').split(',').map((x) => x.trim().replace(/\/$/, '')).filter(Boolean).includes(String(origin).replace(/\/$/, ''));
+}
+
+module.exports = { ALLOWED, ORDER_TOOLS, adaptArgs, parseToolResult, errorCode, safeReturnUrl, parsePastedLogin, keyMatches, originAllowed };

@@ -7,6 +7,12 @@
 export const FITPLATE_API_URL: string | null = process.env.EXPO_PUBLIC_FITPLATE_API_URL || null;
 
 /**
+ * Access key for a hosted FitPlate server (one that is not on this computer). Put it in .env for your own
+ * phone build only; anything in EXPO_PUBLIC_ ships inside the app, so never set it on the public website.
+ */
+export const FITPLATE_API_KEY: string | null = process.env.EXPO_PUBLIC_FITPLATE_API_KEY || null;
+
+/**
  * Real Swiggy orders are off unless this is true AND the local server was
  * started with CHECKOUT_LIVE=true. Off, the flow stops at the confirmation screen.
  */

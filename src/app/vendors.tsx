@@ -1,7 +1,7 @@
 import * as Linking from 'expo-linking';
 import * as WebBrowser from 'expo-web-browser';
 import { useEffect, useState } from 'react';
-import { Platform, Pressable, ScrollView, Switch, Text, View } from 'react-native';
+import { Platform, Pressable, ScrollView, Switch, Text, TextInput, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { Notice, Radio, SampleBanner, ScreenTop, Section, k } from '../components/vendors/kit';
@@ -9,6 +9,7 @@ import { useStore } from '../lib/store';
 import { useVendors } from '../lib/useVendors';
 import type { VendorId } from '../models/prefs';
 import { CHECKOUT_LIVE, VENDOR_VISIBLE } from '../services/vendors/config';
+import { hostedAuthUrl, hostedFinish, hostedLogin } from '../services/vendors/liveSwiggy';
 import { colors } from '../theme';
 
 const VENDORS: { id: VendorId; label: string; note: string }[] = [
@@ -39,7 +40,41 @@ export default function VendorsScreen() {
     };
   }, [im, food, tick]);
 
+  // Hosted server: Swiggy's return page (localhost) can't load here, so the address is pasted back.
+  const [pasting, setPasting] = useState<'im' | 'food' | null>(null);
+  const [pasted, setPasted] = useState('');
+  const [pasteMsg, setPasteMsg] = useState<string | null>(null);
+
+  const connectHosted = async (which: 'im' | 'food') => {
+    setPasteMsg(null);
+    try {
+      const r = await hostedAuthUrl(which);
+      if (r.connected) return setTick((t) => t + 1);
+      if (r.authUrl) {
+        setPasting(which);
+        setPasted('');
+        if (Platform.OS === 'web') window.open(r.authUrl, '_blank');
+        else await WebBrowser.openBrowserAsync(r.authUrl);
+      }
+    } catch (e) {
+      setPasteMsg(e instanceof Error ? e.message : 'Couldn’t start the Swiggy sign-in.');
+    }
+  };
+
+  const finishHosted = async () => {
+    if (!pasting) return;
+    try {
+      await hostedFinish(pasting, pasted);
+      setPasting(null);
+      setPasteMsg(null);
+      setTick((t) => t + 1);
+    } catch (e) {
+      setPasteMsg(e instanceof Error ? e.message : 'Swiggy didn’t accept that.');
+    }
+  };
+
   const connect = async (which: 'im' | 'food') => {
+    if (hostedLogin()) return connectHosted(which);
     const back = Platform.OS === 'web' ? window.location.href : Linking.createURL('/vendors');
     const url = (which === 'im' ? im : food).connectUrl(back);
     if (!url) return;
@@ -80,6 +115,27 @@ export default function VendorsScreen() {
               <View style={{ marginTop: 10, gap: 8 }}>
                 <ConnectRow label="Instamart" connected={conn?.im} onConnect={() => connect('im')} />
                 <ConnectRow label="Swiggy Food" connected={conn?.food} onConnect={() => connect('food')} />
+                {pasting ? (
+                  <View style={{ gap: 8 }}>
+                    <Text style={k.muted}>
+                      Sign in on Swiggy in the page that just opened. It ends on a page that won&apos;t load (localhost). Copy that page&apos;s whole address and paste it here.
+                    </Text>
+                    <TextInput
+                      value={pasted}
+                      onChangeText={setPasted}
+                      placeholder="http://localhost:8787/callback?code=…"
+                      placeholderTextColor={colors.faint}
+                      autoCapitalize="none"
+                      autoCorrect={false}
+                      style={{ color: colors.text, borderWidth: 1, borderColor: colors.border, borderRadius: 12, padding: 12 }}
+                      accessibilityLabel="Swiggy return address"
+                    />
+                    <Pressable onPress={finishHosted} accessibilityRole="button" style={{ alignSelf: 'flex-start', paddingHorizontal: 14, paddingVertical: 8, borderRadius: 999, backgroundColor: colors.accent }}>
+                      <Text style={{ color: '#06210F', fontWeight: '900' }}>Finish connecting</Text>
+                    </Pressable>
+                  </View>
+                ) : null}
+                {pasteMsg ? <Notice tone="warn">{pasteMsg}</Notice> : null}
                 {conn?.im || conn?.food ? (
                   <Pressable onPress={disconnect} accessibilityRole="button">
                     <Text style={{ color: colors.bad, fontWeight: '800', marginTop: 4 }}>Disconnect Swiggy</Text>

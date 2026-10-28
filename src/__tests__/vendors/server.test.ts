@@ -35,4 +35,21 @@ describe('local FitPlate server helpers', () => {
   it('keeps order-placing tools on the gated list', () => {
     expect([...tools.ORDER_TOOLS].sort()).toEqual(['checkout', 'confirm_order', 'place_food_order']);
   });
+
+  it('reads a pasted Swiggy return address, a query string or a bare code', () => {
+    expect(tools.parsePastedLogin('http://localhost:8787/callback?code=abc123XYZ&state=s1')).toEqual({ code: 'abc123XYZ', state: 's1' });
+    expect(tools.parsePastedLogin('callback?code=abc123XYZ&state=s1')).toEqual({ code: 'abc123XYZ', state: 's1' });
+    expect(tools.parsePastedLogin('  abc123XYZ-def ')).toEqual({ code: 'abc123XYZ-def', state: '' });
+    expect(tools.parsePastedLogin('hello world')).toBeNull();
+    expect(tools.parsePastedLogin('')).toBeNull();
+  });
+
+  it('checks the hosted access key and the allowed origins', () => {
+    expect(tools.keyMatches('secret', 'secret')).toBe(true);
+    expect(tools.keyMatches('secreT', 'secret')).toBe(false);
+    expect(tools.keyMatches('', '')).toBe(false);
+    expect(tools.originAllowed('https://fit.example.dev', 'https://fit.example.dev/, https://b.dev')).toBe(true);
+    expect(tools.originAllowed('http://localhost:8081', '')).toBe(true);
+    expect(tools.originAllowed('https://evil.example', 'https://fit.example.dev')).toBe(false);
+  });
 });

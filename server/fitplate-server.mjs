@@ -25,10 +25,21 @@ import { Client } from '@modelcontextprotocol/sdk/client/index.js';
 import { StreamableHTTPClientTransport } from '@modelcontextprotocol/sdk/client/streamableHttp.js';
 
 const require = createRequire(import.meta.url);
-const { ALLOWED, ORDER_TOOLS, adaptArgs, errorCode, parseToolResult, safeReturnUrl } = require('./lib/tools.cjs');
+const { ALLOWED, ORDER_TOOLS, adaptArgs, errorCode, keyMatches, originAllowed, parsePastedLogin, parseToolResult, safeReturnUrl } = require('./lib/tools.cjs');
 
 const PORT = Number(process.env.FITPLATE_SERVER_PORT || 8787);
 const CHECKOUT_LIVE = process.env.CHECKOUT_LIVE === 'true';
+// Hosted mode (off the Mac): HOST=0.0.0.0 plus FITPLATE_ACCESS_KEY, which every /api/swiggy request must carry.
+const HOST = process.env.HOST || '127.0.0.1';
+const HOSTED = HOST !== '127.0.0.1' && HOST !== 'localhost';
+const ACCESS_KEY = process.env.FITPLATE_ACCESS_KEY || '';
+const ALLOWED_ORIGINS = process.env.FITPLATE_ALLOWED_ORIGINS || '';
+// Keeps the Swiggy login across restarts. Needs a disk that survives them; unset = memory only.
+const TOKEN_FILE = process.env.FITPLATE_TOKEN_FILE || '';
+if (HOSTED && !ACCESS_KEY) {
+  console.error('[fitplate] Refusing to listen on a public address without FITPLATE_ACCESS_KEY (anyone could use your Swiggy login).');
+  process.exit(1);
+}
 // Swiggy whitelists http://localhost and http://localhost/callback (loopback; any port per RFC 8252).
 const REDIRECT_URI = process.env.SWIGGY_REDIRECT_URI || `http://localhost:${PORT}/callback`;
 const SERVERS = { im: 'https://mcp.swiggy.com/im', food: 'https://mcp.swiggy.com/food' };
@@ -54,10 +65,12 @@ function createConnection(id) {
     clientInformation: () => auth.clientInformation,
     saveClientInformation: (info) => {
       auth.clientInformation = info;
+      persist();
     },
     tokens: () => auth.tokens,
     saveTokens: (t) => {
       auth.tokens = t;
+      persist();
     },
     redirectToAuthorization: (url) => {
       auth.authUrl = url.toString();
@@ -73,11 +86,32 @@ function createConnection(id) {
       if (scope === 'all' || scope === 'tokens') auth.tokens = undefined;
       if (scope === 'all' || scope === 'client') auth.clientInformation = undefined;
       if (scope === 'all' || scope === 'verifier') auth.codeVerifier = undefined;
+      persist();
     },
   };
 
   let client = null;
   let tools = null; // name → inputSchema
+
+  if (TOKEN_FILE) {
+    try {
+      const saved = JSON.parse(fs.readFileSync(`${TOKEN_FILE}.${id}.json`, 'utf8'));
+      auth.clientInformation = saved.clientInformation;
+      auth.tokens = saved.tokens;
+    } catch {
+      // first run, or nothing saved yet
+    }
+  }
+  const persist = () => {
+    if (!TOKEN_FILE) return;
+    try {
+      const file = `${TOKEN_FILE}.${id}.json`;
+      if (!auth.tokens && !auth.clientInformation) return fs.rmSync(file, { force: true });
+      fs.writeFileSync(file, JSON.stringify({ clientInformation: auth.clientInformation, tokens: auth.tokens }), { mode: 0o600 });
+    } catch {
+      // the login still works from memory
+    }
+  };
 
   async function open() {
     const transport = new StreamableHTTPClientTransport(new URL(SERVERS[id]), { authProvider: provider });
@@ -160,11 +194,11 @@ function log(line) {
 
 function cors(req, res) {
   const origin = req.headers.origin;
-  if (origin && safeReturnUrl(origin)) {
+  if (origin && originAllowed(origin, ALLOWED_ORIGINS)) {
     res.setHeader('Access-Control-Allow-Origin', origin);
     res.setHeader('Vary', 'Origin');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, X-FitPlate-Key');
   }
 }
 
@@ -217,6 +251,9 @@ const server = http.createServer(async (req, res) => {
     if (parts[0] === 'api' && parts[1] === 'swiggy' && connections[parts[2]]) {
       const conn = connections[parts[2]];
       const action = parts[3];
+      if (HOSTED && !keyMatches(req.headers['x-fitplate-key'] ?? url.searchParams.get('key'), ACCESS_KEY)) {
+        return send(res, 401, { ok: false, code: 'AUTH', message: 'Wrong or missing FitPlate access key.' });
+      }
 
       if (action === 'status') return send(res, 200, { connected: conn.connected() });
 
@@ -242,6 +279,38 @@ const server = http.createServer(async (req, res) => {
         }
         res.writeHead(302, { Location: authUrl });
         return res.end();
+      }
+
+      // Hosted login, step 1: the Swiggy address to open (the app shows it; the redirect to localhost will not load).
+      if (action === 'auth-url') {
+        const state = crypto.randomBytes(16).toString('hex');
+        pendingLogins.set(state, { server: conn.id, returnTo: null, at: Date.now() });
+        try {
+          const authUrl = await conn.begin(state);
+          if (!authUrl) pendingLogins.delete(state);
+          return send(res, 200, { ok: true, connected: !authUrl, authUrl });
+        } catch (e) {
+          pendingLogins.delete(state);
+          log(`${conn.id} auth-url failed: ${errorCode(e)}`);
+          return send(res, 502, { ok: false, code: 'SERVER', message: 'Couldn’t reach Swiggy’s sign-in.' });
+        }
+      }
+
+      // Hosted login, step 2: the pasted address (or bare code) from the page that would not load.
+      if (action === 'finish' && req.method === 'POST') {
+        const { text } = await readJson(req);
+        const parsed = parsePastedLogin(text);
+        const pending = parsed && (pendingLogins.get(parsed.state) ?? (parsed.state ? null : [...pendingLogins.values()].filter((p) => p.server === conn.id).pop()));
+        if (!parsed || !pending || pending.server !== conn.id) return send(res, 400, { ok: false, code: 'OTHER', message: 'That doesn’t look like the Swiggy return address. Tap Connect again and paste the whole address.' });
+        pendingLogins.delete(parsed.state);
+        try {
+          await conn.finish(parsed.code);
+        } catch (e) {
+          log(`${conn.id} finish failed: ${errorCode(e)}`);
+          return send(res, 400, { ok: false, code: errorCode(e), message: 'Swiggy didn’t accept that code. Codes work once and expire quickly; tap Connect again.' });
+        }
+        log(`${conn.id} connected (pasted)`);
+        return send(res, 200, { ok: true, connected: true });
       }
 
       if (action === 'logout' && req.method === 'POST') {
@@ -295,8 +364,8 @@ if (process.argv.includes('--dump-tools')) {
   log('Connect Swiggy from the app first, then press Enter here to save the tool list.');
 }
 
-server.listen(PORT, '127.0.0.1', () => {
-  log(`listening on http://localhost:${PORT}  (real orders ${CHECKOUT_LIVE ? 'ON' : 'off'})`);
+server.listen(PORT, HOST, () => {
+  log(`listening on ${HOSTED ? `${HOST}:${PORT} (hosted, access key required)` : `http://localhost:${PORT}`}  (real orders ${CHECKOUT_LIVE ? 'ON' : 'off'})`);
   log(`Swiggy return address: ${REDIRECT_URI}`);
 });
 
