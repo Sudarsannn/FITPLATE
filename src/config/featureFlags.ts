@@ -31,6 +31,8 @@ export const featureFlags = {
   calorieGapBadge: true,
   /** Innovation (Day 07 idea, built Day 10): "Why these scores?" on the dish page, from the researched reasons and rating basis. */
   scoreExplainer: true,
+  /** Innovation (Day 11): "Cook again" and "Recently viewed" rows on the Cook tab. */
+  recentDishes: true,
   /** Priority plan P1-b: Google sign-in inside the iPhone / Android dev build. Only shows when that platform's client ID is in .env. */
   nativeGoogleSignIn: true,
   /** Priority plan P2-c: read the research library from the server when it is newer than the bundled copy. */

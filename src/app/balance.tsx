@@ -3,11 +3,12 @@ import { router, useLocalSearchParams } from 'expo-router';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { ScreenTop } from '../components/vendors/kit';
+import { Notice, ScreenTop } from '../components/vendors/kit';
 import { FadeIn, PressableScale } from '../components/ui';
 import { getDish, researchExercises, researchLinks } from '../data/research';
 import { useStore } from '../lib/store';
 import { burnWays, DEFAULT_WEIGHT_KG, durationLabel } from '../services/dishDetail';
+import { fitOrder, moveFit, userConcerns, type Fit } from '../services/moveSafety';
 import { workoutFit } from '../services/surveyMatch';
 import { musclesLine, SECTION_ICON, SECTION_LABEL, shortExerciseName } from '../services/fitness';
 import { colors, radius, type } from '../theme';
@@ -29,7 +30,14 @@ export default function Balance() {
     const e = byId.get(id);
     return e ? workoutFit(profile.survey, e) : 0;
   };
-  const ways = burnWays(kcal, bodyWeightKg, researchLinks.met, 8).sort((a, b) => fit(b.exerciseId) - fit(a.exerciseId) || a.minutes - b.minutes);
+  const { concerns, unresearched } = userConcerns(profile.survey);
+  const safety = (id: string) => (byId.get(id) ? moveFit(byId.get(id)!, concerns) : { fit: 'unknown' as Fit, notes: [] });
+  const all = burnWays(kcal, bodyWeightKg, researchLinks.met, 8);
+  // The research says to avoid these for you, so they are left out; the rest go safest first.
+  const ways = all
+    .filter((w) => safety(w.exerciseId).fit !== 'avoid')
+    .sort((a, b) => fitOrder(safety(a.exerciseId).fit) - fitOrder(safety(b.exerciseId).fit) || fit(b.exerciseId) - fit(a.exerciseId) || a.minutes - b.minutes);
+  const hidden = all.length - ways.length;
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: colors.bg }}>
@@ -45,6 +53,21 @@ export default function Balance() {
           </View>
         </FadeIn>
 
+        {concerns.length || unresearched.length ? (
+          <View style={{ marginBottom: 12, gap: 8 }}>
+            {concerns.length ? (
+              <Notice tone="warn">
+                Picked with your answers in mind ({concerns.map((c) => c.label).join(', ')}).{hidden ? ` ${hidden} move${hidden > 1 ? 's' : ''} the research says to avoid for you ${hidden > 1 ? 'are' : 'is'} hidden.` : ''} Moves marked &quot;Ask first&quot; need a doctor&apos;s OK.
+              </Notice>
+            ) : null}
+            {unresearched.length ? (
+              <Notice tone="warn">
+                You told us about your {unresearched.join(', ')}, and we have no research on which moves suit that yet. Please check with a doctor or physio before choosing, or skip anything that hurts.
+              </Notice>
+            ) : null}
+          </View>
+        ) : null}
+
         {ways.length ? (
           ways.map((w, i) => {
             const e = byId.get(w.exerciseId);
@@ -59,7 +82,12 @@ export default function Balance() {
                       <Text style={styles.name} numberOfLines={1}>
                         {shortExerciseName(w.name)}
                       </Text>
-                      {fit(w.exerciseId) >= 2 ? <Text style={styles.fits}>Fits your training answers</Text> : null}
+                      {safety(w.exerciseId).fit === 'ask_doctor' ? <Text style={styles.warn}>Ask first: needs a doctor&apos;s OK</Text> : null}
+                      {safety(w.exerciseId).fit === 'unknown' ? <Text style={styles.warn}>No research for your answers: ask first</Text> : null}
+                      {safety(w.exerciseId).notes.filter((n) => n.status === 'modify').slice(0, 2).map((n) => (
+                        <Text key={n.label} style={styles.fits}>For your {n.label}: {n.change}</Text>
+                      ))}
+                      {fit(w.exerciseId) >= 2 && safety(w.exerciseId).fit === 'ok' ? <Text style={styles.fits}>Fits your training answers</Text> : null}
                       <Text style={styles.meta} numberOfLines={1}>
                         {[e?.section ? SECTION_LABEL[e.section] : null, e ? musclesLine(e) : null].filter(Boolean).join(' · ')}
                       </Text>
@@ -93,7 +121,7 @@ export default function Balance() {
           <Text style={styles.allText}>Browse every workout in Move</Text>
           <Ionicons name="chevron-forward" size={16} color={colors.muted} />
         </PressableScale>
-        <Text style={styles.note}>Minutes = calories ÷ (Compendium MET × weight), using the fitness research. Gentle stretches are left out because they would take hours. Check with a doctor before starting new exercise.</Text>
+        <Text style={styles.note}>Minutes = calories ÷ (Compendium MET × weight), using the fitness research. Gentle stretches are left out because they would take hours. Moves come from the fitness research; where it has no rule for your answers we ask you to check first. Check with a doctor before starting new exercise.</Text>
       </ScrollView>
     </SafeAreaView>
   );
@@ -108,6 +136,7 @@ const styles = StyleSheet.create({
   head: { flexDirection: 'row', alignItems: 'center', gap: 12 },
   icon: { width: 38, height: 38, borderRadius: 19, backgroundColor: 'rgba(61,220,132,0.14)', alignItems: 'center', justifyContent: 'center' },
   name: { color: colors.text, fontWeight: '800', fontSize: 15 },
+  warn: { color: colors.warn, fontSize: 11.5, fontWeight: '800', marginTop: 1 },
   fits: { color: colors.accent2, fontSize: 11.5, fontWeight: '800', marginTop: 1 },
   meta: { color: colors.muted, fontSize: 12.5, marginTop: 2 },
   mins: { color: colors.warm, fontWeight: '900', fontSize: 17 },

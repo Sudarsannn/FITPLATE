@@ -19,6 +19,7 @@ import { activeCount, optionCounts, runSearch, toggle, type FilterGroup, type Se
 import { colors, radius, type } from '../../theme';
 import { IconBadge, type IconName } from '../Icon';
 import { GradientButton, PressableScale, TopGlow } from '../ui';
+import { RecentRows } from './RecentRows';
 import { SelectChip } from './parts';
 import { ResearchDishCard } from './ResearchDishCard';
 
@@ -72,6 +73,7 @@ export function DishLibrary({ dishes = researchDishes }: { dishes?: readonly Dis
       <Text style={[type.small, { color: colors.muted, marginTop: 2 }]}>
         {dishes.filter((d) => !d.ai).length} researched dishes, and more every day. Search by name, ingredient or diet.
       </Text>
+      {featureFlags.recentDishes && !query.trim() ? <RecentRows /> : null}
 
       <PressableScale
         onPress={() => router.push({ pathname: '/create-dish', params: query.trim() ? { name: query.trim() } : {} })}

@@ -81,6 +81,13 @@ import item_077_keema_pav from './077-keema-pav.json';
 import item_078_navratan_korma from './078-navratan-korma.json';
 import item_079_gobi_manchurian from './079-gobi-manchurian.json';
 import item_080_masoor_dal from './080-masoor-dal.json';
+import item_081_paneer_paratha from './081-paneer-paratha.json';
+import item_082_methi_chicken from './082-methi-chicken.json';
+import item_083_bhel_puri from './083-bhel-puri.json';
+import item_084_egg_biryani from './084-egg-biryani.json';
+import item_085_south_indian_veg_kurma from './085-south-indian-veg-kurma.json';
+import item_101_dindigul_chicken_biryani from './101-dindigul-chicken-biryani.json';
+import item_102_pink_sauce_penne_pasta from './102-pink-sauce-penne-pasta.json';
 
 export const items: Dish[] = [
   item_001_poha as unknown as Dish,
@@ -163,4 +170,11 @@ export const items: Dish[] = [
   item_078_navratan_korma as unknown as Dish,
   item_079_gobi_manchurian as unknown as Dish,
   item_080_masoor_dal as unknown as Dish,
+  item_081_paneer_paratha as unknown as Dish,
+  item_082_methi_chicken as unknown as Dish,
+  item_083_bhel_puri as unknown as Dish,
+  item_084_egg_biryani as unknown as Dish,
+  item_085_south_indian_veg_kurma as unknown as Dish,
+  item_101_dindigul_chicken_biryani as unknown as Dish,
+  item_102_pink_sauce_penne_pasta as unknown as Dish,
 ];

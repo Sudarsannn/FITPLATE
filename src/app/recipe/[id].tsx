@@ -1,7 +1,7 @@
 import { Ionicons } from '@expo/vector-icons';
 import { router, useLocalSearchParams } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
-import { useCallback, useRef, useState, type ReactNode } from 'react';
+import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react';
 import { Image, Linking, ScrollView, Share, StyleSheet, Text, View, type LayoutChangeEvent } from 'react-native';
 import Animated, { Extrapolation, FadeInDown, FadeOutDown, interpolate, runOnJS, useAnimatedReaction, useAnimatedRef, useAnimatedScrollHandler, useAnimatedStyle, useSharedValue, ZoomIn } from 'react-native-reanimated';
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -11,6 +11,7 @@ import { MacroDonut } from '../../components/viz';
 import { DishArtMark, dishArt, PhotoCredit, SelectChip, TagChip, dishPhoto } from '../../components/dishes/parts';
 import { Bar, GradientButton, PressableScale } from '../../components/ui';
 import { featureFlags } from '../../config/featureFlags';
+import { recordViewed } from '../../services/recentDishes';
 import { familyOf, getDish, getIngredient, researchLinks } from '../../data/research';
 import { success, thud } from '../../lib/haptics';
 import { dayKey, useStore } from '../../lib/store';
@@ -51,6 +52,9 @@ const HERO = 320;
 export default function RecipeScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const dish = id ? getDish(id) : undefined;
+  useEffect(() => {
+    if (featureFlags.recentDishes && dish) recordViewed(dish.id);
+  }, [dish]);
   const back = () => (router.canGoBack() ? router.back() : router.replace('/cook'));
 
   if (!dish) {

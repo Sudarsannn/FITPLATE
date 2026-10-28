@@ -1,5 +1,6 @@
 import { Ionicons } from '@expo/vector-icons';
 import { router, useLocalSearchParams } from 'expo-router';
+import { activateKeepAwakeAsync, deactivateKeepAwake } from 'expo-keep-awake';
 import { useEffect, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import Animated, { FadeInRight } from 'react-native-reanimated';
@@ -11,9 +12,11 @@ import { GuideCard } from '../../components/Guide';
 import { MusicPanel } from '../../components/Music';
 import { Bar, GradientButton, PressableScale, Ring } from '../../components/ui';
 import { getDish } from '../../data/research';
+import { ringAlarm } from '../../lib/alarm';
 import { select, success } from '../../lib/haptics';
 import { useStore } from '../../lib/store';
 import { stepIcon, whyItWorks } from '../../services/cookGuide';
+import { clearCookProgress, loadCookProgress, saveCookProgress, usableProgress, type CookProgress } from '../../services/cookProgress';
 import { showBeginnerTips } from '../../services/kitchen';
 import type { CookCompletion } from '../../models/prefs';
 import type { Dish } from '../../models/research';
@@ -38,6 +41,33 @@ export default function StepsScreen() {
   const [done, setDone] = useState(false);
   const [have, setHave] = useState<Record<string, boolean>>({});
   const [track, setTrack] = useState<'yes' | 'unsure' | null>(null);
+  const [saved, setSaved] = useState<CookProgress | null>(null);
+  const dishId = dish?.id;
+  const stepCount = dish?.steps.length ?? 0;
+
+  // Keep the screen on while cooking (a phone that locks mid-sauce is the main complaint).
+  useEffect(() => {
+    activateKeepAwakeAsync('fitplate-cook').catch(() => {});
+    return () => {
+      deactivateKeepAwake('fitplate-cook').catch(() => {});
+    };
+  }, []);
+
+  // Offer to pick up where this dish was left.
+  useEffect(() => {
+    if (!dishId) return;
+    let live = true;
+    loadCookProgress(dishId, servings).then((p) => live && setSaved(usableProgress(p, stepCount, Date.now())));
+    return () => {
+      live = false;
+    };
+  }, [dishId, servings, stepCount]);
+
+  // Remember the step and ticks as they change (not the overview with nothing ticked).
+  useEffect(() => {
+    if (!dishId || done || (i < 0 && !Object.values(have).some(Boolean))) return;
+    saveCookProgress(dishId, servings, { step: i, have }, Date.now());
+  }, [dishId, servings, i, have, done]);
 
   if (!dish) {
     return (
@@ -76,6 +106,34 @@ export default function StepsScreen() {
               <OverviewStat icon="list-outline" value={`${steps.length}`} label="steps" />
               <OverviewStat icon="flame-outline" value={dish.nutritionPerServing.kcal != null ? `${Math.round(dish.nutritionPerServing.kcal)}` : '–'} label="kcal each" />
             </View>
+            {saved ? (
+              <View style={s.resume}>
+                <Text style={[k.body, { fontWeight: '800' }]}>You were on step {saved.step + 1} of {steps.length}</Text>
+                <View style={{ flexDirection: 'row', gap: 10, marginTop: 10 }}>
+                  <PressableScale
+                    onPress={() => {
+                      setHave(saved.have);
+                      setI(saved.step);
+                      setSaved(null);
+                    }}
+                    style={[s.timerBtn, { flex: 1 }]}
+                    accessibilityLabel="Resume cooking"
+                  >
+                    <Text style={{ color: '#06210F', fontWeight: '900' }}>Resume</Text>
+                  </PressableScale>
+                  <PressableScale
+                    onPress={() => {
+                      clearCookProgress(dish.id, servings);
+                      setSaved(null);
+                    }}
+                    style={[s.timerBtn, { flex: 1, backgroundColor: colors.cardAlt }]}
+                    accessibilityLabel="Start over"
+                  >
+                    <Text style={{ color: colors.text, fontWeight: '800' }}>Start over</Text>
+                  </PressableScale>
+                </View>
+              </View>
+            ) : null}
             <View style={{ marginBottom: 14 }}>
               <MusicPanel kind="cooking" />
             </View>
@@ -195,6 +253,7 @@ export default function StepsScreen() {
               const n = dish.nutritionPerServing;
               const boughtVia = (['instamart', 'zepto', 'blinkit', 'self'].includes(via ?? '') ? via : 'self') as CookCompletion['boughtVia'];
               logResearchCook({ id: dish.id, name: dish.name, kcal: n.kcal, proteinG: n.proteinG, fibreG: n.fibreG }, servings, cost?.inr ?? null, orderTotal, boughtVia);
+              clearCookProgress(dish.id, servings);
               setDone(true);
             }
           }}
@@ -289,7 +348,10 @@ export function StepTimer({ seconds }: { seconds: number }) {
   }, [running]);
   const done = left === 0;
   useEffect(() => {
-    if (done && running) success();
+    if (done && running) {
+      success();
+      ringAlarm();
+    }
   }, [done, running]);
   const mm = Math.floor(left / 60);
   const ss = String(left % 60).padStart(2, '0');
@@ -314,6 +376,7 @@ export function StepTimer({ seconds }: { seconds: number }) {
 }
 
 const s = StyleSheet.create({
+  resume: { padding: 14, borderRadius: radius.lg, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.accent, marginBottom: 14 },
   overview: { flexDirection: 'row', gap: 10, marginBottom: 14 },
   ovStat: { flex: 1, alignItems: 'center', gap: 2, paddingVertical: 12, borderRadius: radius.md, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border },
   ovValue: { color: colors.text, fontSize: 18, fontWeight: '900' },
