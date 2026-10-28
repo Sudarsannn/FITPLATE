@@ -34,7 +34,7 @@ FITPLATE_ACCESS_KEY=<the secret>
 FITPLATE_TOKEN_FILE=/data/swiggy
 FITPLATE_ALLOWED_ORIGINS=https://fitplate.sudarsanmohanchander.workers.dev
 ```
-Here the server listens only on the VM itself and Caddy puts HTTPS in front, so the access-key check still applies through `FITPLATE_ACCESS_KEY` even though `HOST` is local. (To force the check on, also set `HOST=0.0.0.0` and close port 8787 in the firewall.)
+The server listens only on the VM itself and Caddy puts HTTPS in front. Because `FITPLATE_ACCESS_KEY` is set, every Swiggy request must carry the key, even through Caddy.
 
 Caddy: put this in `/etc/caddy/Caddyfile`, then `sudo systemctl restart caddy`:
 ```

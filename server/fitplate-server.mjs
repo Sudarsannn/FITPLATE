@@ -251,7 +251,7 @@ const server = http.createServer(async (req, res) => {
     if (parts[0] === 'api' && parts[1] === 'swiggy' && connections[parts[2]]) {
       const conn = connections[parts[2]];
       const action = parts[3];
-      if (HOSTED && !keyMatches(req.headers['x-fitplate-key'] ?? url.searchParams.get('key'), ACCESS_KEY)) {
+      if ((HOSTED || ACCESS_KEY) && !keyMatches(req.headers['x-fitplate-key'] ?? url.searchParams.get('key'), ACCESS_KEY)) {
         return send(res, 401, { ok: false, code: 'AUTH', message: 'Wrong or missing FitPlate access key.' });
       }
 
