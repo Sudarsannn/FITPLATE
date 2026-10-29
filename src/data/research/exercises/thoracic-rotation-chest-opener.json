@@ -1,0 +1,797 @@
+{
+  "id": "thoracic-rotation-chest-opener",
+  "number": 7,
+  "name": "Thoracic rotation and chest opener",
+  "otherNames": [
+    "Open book stretch",
+    "Side-lying thoracic rotation",
+    "Quadruped thoracic rotation",
+    "T-spine rotation",
+    "Thread the needle (Parsva Balasana)",
+    "Doorway chest stretch",
+    "Wall chest stretch",
+    "Pectoral stretch"
+  ],
+  "section": "yoga_stretch",
+  "type": "mobility",
+  "equipment": [
+    "yoga mat or rug (optional)",
+    "pillow or folded towel (optional)",
+    "door frame (for chest stretch)"
+  ],
+  "noEquipmentAlternative": "Seated chair trunk rotation with arms folded across the chest, and a wall or door-frame chest stretch",
+  "musclesPrimary": [
+    "thoracic rotators (rotatores, multifidus)",
+    "internal oblique",
+    "external oblique",
+    "middle trapezius",
+    "rhomboids",
+    "stretched: pectoralis major",
+    "stretched: pectoralis minor"
+  ],
+  "musclesSecondary": [
+    "anterior deltoid (stretched)",
+    "serratus anterior",
+    "rotator cuff (supporting arm)",
+    "deep neck flexors and rotators",
+    "gluteus maximus (pelvis steadying)",
+    "transversus abdominis"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 2.3,
+  "compendiumCode": "02101",
+  "metOptions": [
+    {
+      "code": "02101",
+      "met": 2.3,
+      "activity": "MET: 2.3, 2024 Adult Compendium of Physical Activities, code 02101, \"Stretching, mild\" (Conditioning Exercise heading; the page describes sitting, teaching stretching or yoga, or light-effort exercise"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "flexibility",
+      "sets": 2,
+      "reps": "8 slow open-book reps per side, 2-3 s pause at the end; doorway chest stretch 2 x 20-30 s per side",
+      "timeSec": null,
+      "restSec": 15,
+      "tempo": "3 s open, 2-3 s pause, 3 s close; exhale on opening",
+      "perWeek": 4
+    },
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 2,
+      "reps": "6 quadruped rotations per side; doorway chest stretch 2 x 20 s per side",
+      "timeSec": null,
+      "restSec": 15,
+      "tempo": "5-6 s per rep",
+      "perWeek": 4
+    },
+    {
+      "level": "beginner",
+      "goal": "relaxation",
+      "sets": 1,
+      "reps": "8 very slow open-book reps per side with long exhales",
+      "timeSec": null,
+      "restSec": 10,
+      "tempo": "8-10 s per rep",
+      "perWeek": 4
+    },
+    {
+      "level": "intermediate",
+      "goal": "flexibility",
+      "sets": 3,
+      "reps": "10 open-book reps per side (or 8 quadruped), 3-5 s pause; doorway 3 x 30 s per side",
+      "timeSec": 30,
+      "restSec": 15,
+      "tempo": "3 s open, 3-5 s pause, 3 s close",
+      "perWeek": 4
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "thread the needle 5 breaths per side plus 8 quadruped rotations",
+      "timeSec": null,
+      "restSec": 15,
+      "tempo": "slow, controlled",
+      "perWeek": 4
+    },
+    {
+      "level": "advanced",
+      "goal": "flexibility",
+      "sets": 3,
+      "reps": "10 reps per side with a 5 s pause; doorway 3 x 45-60 s per side",
+      "timeSec": 60,
+      "restSec": 15,
+      "tempo": "slow, controlled",
+      "perWeek": 5
+    },
+    {
+      "level": "advanced",
+      "goal": "relaxation",
+      "sets": 2,
+      "reps": "5 slow open-book rounds per side, 6 s exhales",
+      "timeSec": null,
+      "restSec": 15,
+      "tempo": "static end range with slow breathing",
+      "perWeek": 5
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "front",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "closed",
+        "joint": "rotation angle A (moving elbow-shoulder-other shoulder)",
+        "angleDeg": "<= 80",
+        "parsed": {
+          "op": "<=",
+          "value": 80,
+          "max": null
+        }
+      },
+      {
+        "name": "open",
+        "joint": "rotation angle A (moving elbow-shoulder-other shoulder)",
+        "angleDeg": ">= 130",
+        "parsed": {
+          "op": ">=",
+          "value": 130,
+          "max": null
+        }
+      },
+      {
+        "name": "support",
+        "joint": "supporting elbow (shoulder-elbow-wrist)",
+        "angleDeg": ">= 160",
+        "parsed": {
+          "op": ">=",
+          "value": 160,
+          "max": null
+        }
+      },
+      {
+        "name": "hip_still",
+        "joint": "hip landmarks sideways shift",
+        "angleDeg": "position flag: shift <= 8 cm",
+        "parsed": null
+      },
+      {
+        "name": "hold_doorway",
+        "joint": "shoulder (hip-shoulder-elbow)",
+        "angleDeg": ">= 80",
+        "parsed": {
+          "op": ">=",
+          "value": 80,
+          "max": null
+        }
+      },
+      {
+        "name": "hold_doorway",
+        "joint": "shoulder (hip-shoulder-elbow)",
+        "angleDeg": "<= 100",
+        "parsed": {
+          "op": "<=",
+          "value": 100,
+          "max": null
+        }
+      },
+      {
+        "name": "hold_doorway",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": ">= 80",
+        "parsed": {
+          "op": ">=",
+          "value": 80,
+          "max": null
+        }
+      },
+      {
+        "name": "hold_doorway",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": "<= 100",
+        "parsed": {
+          "op": "<=",
+          "value": 100,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 4
+  },
+  "formChecks": [
+    {
+      "joint": "rotation angle A (open)",
+      "rule": "A < 130 deg at the top (equals open phase threshold; rep incomplete)",
+      "message": "Turn a little further if it feels comfortable"
+    },
+    {
+      "joint": "rotation angle A (closed)",
+      "rule": "A > 80 deg at the bottom (equals closed phase threshold; rep incomplete)",
+      "message": "Bring the elbow all the way down under you"
+    },
+    {
+      "joint": "supporting elbow",
+      "rule": "elbow angle < 160 deg (equals support phase threshold)",
+      "message": "Keep your supporting arm strong"
+    },
+    {
+      "joint": "hips",
+      "rule": "hip landmarks shift more than 8 cm sideways during a rep (position flag, not an angle)",
+      "message": "Keep your hips still"
+    },
+    {
+      "joint": "shoulders",
+      "rule": "shoulder landmark within 8 cm of ear height (shrug flag, not an angle)",
+      "message": "Shoulders away from your ears"
+    },
+    {
+      "joint": "doorway shoulder",
+      "rule": "shoulder angle < 80 deg (equals doorway hold threshold)",
+      "message": "Lift your elbow a little higher"
+    },
+    {
+      "joint": "doorway shoulder",
+      "rule": "shoulder angle > 100 deg (equals doorway hold threshold)",
+      "message": "Lower your elbow a little"
+    },
+    {
+      "joint": "doorway elbow",
+      "rule": "elbow angle < 80 deg (equals doorway hold threshold)",
+      "message": "Open your elbow a little"
+    },
+    {
+      "joint": "doorway elbow",
+      "rule": "elbow angle > 100 deg (equals doorway hold threshold)",
+      "message": "Bend your elbow a little more"
+    },
+    {
+      "joint": "time",
+      "rule": "doorway hold > 45 s for a beginner",
+      "message": "Nice. Release and switch sides"
+    }
+  ],
+  "safetyFlags": [
+    "no_breath_holding",
+    "lower_back_keep_pelvis_still",
+    "osteoporosis_gentle_no_forced_twisting",
+    "shoulder_instability_skip_doorway",
+    "acute_impingement_or_rotator_cuff_skip_doorway",
+    "pregnancy_avoid_lying_flat_on_back",
+    "recent_surgery_ask_doctor",
+    "postpartum_c_section_ask_doctor",
+    "scoliosis_disc_spinal_fracture_ask_doctor",
+    "stop_with_arm_tingling_or_numbness"
+  ],
+  "progressions": [
+    "Quadruped rotation with a 3 s pause",
+    "Thread the needle with a longer hold",
+    "Half-kneeling or standing rotation, then seated twist (Ardha Matsyendrasana, Yoga & Stretch 19) once pain-free"
+  ],
+  "regressions": [
+    "Seated chair trunk rotation with arms folded",
+    "Lying knee rolls (not in later pregnancy)",
+    "Open book with small range and pillow support, or wall chest stretch with a lower elbow"
+  ],
+  "videoShots": [
+    {
+      "seconds": 6,
+      "angle": "high front-side, 1.5 m",
+      "shows": "side-lying setup, knees stacked at 90 degrees, cushion between knees",
+      "textOverlay": "Knees stacked. Pelvis still."
+    },
+    {
+      "seconds": 8,
+      "angle": "above and behind the head, 1.5 m",
+      "shows": "open book: arm opens, eyes follow the hand",
+      "textOverlay": "Ribs turn, hips stay"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, split screen, 2 m",
+      "shows": "wrong (knees falling open, arched back, thrown arm) vs right",
+      "textOverlay": "Turn the chest, not the knees"
+    },
+    {
+      "seconds": 8,
+      "angle": "front, floor level, 2 m",
+      "shows": "quadruped rotation, elbow down then up, hips level",
+      "textOverlay": "Hips quiet. Eyes follow the elbow."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "thread the needle on all fours",
+      "textOverlay": "Hips over knees. Breathe."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 2 m",
+      "shows": "doorway chest stretch with 20 s timer",
+      "textOverlay": "Mild stretch. Keep breathing."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, split screen, 2 m",
+      "shows": "doorway wrong (arched back, shrug) vs right",
+      "textOverlay": "Ribs down. Shoulders low."
+    },
+    {
+      "seconds": 6,
+      "angle": "front, 1.5 m",
+      "shows": "seated desk trunk rotation, arms folded",
+      "textOverlay": "Desk break: 5 each side"
+    }
+  ],
+  "lastResearched": "2026-10-28",
+  "setupSteps": [
+    "Mat and space. Lay the mat on a flat, non-slip floor. Keep at least 2 m of clear floor so the top arm can sweep out.",
+    "Clothes. Fitted top and track pants or leggings so the shoulders and hips show on camera. Remove a watch or loose bangles that dig into the floor.",
+    "Open book (A). Lie on one side. Pillow or folded towel under the head if the neck feels tilted. Bend hips and knees to about 90 degrees (est.), thighs forward of the body, knees and feet stacked. Arms straight out in front at shoulder height, palms together.",
+    "Knee wedge (optional but helpful). A cushion or folded towel between the knees reminds you to keep the knees stacked and the pelvis from rolling back.",
+    "Quadruped (B). Hands under shoulders, knees under hips (hips and knees at about 90 degrees, est.). Fold a towel under knees and wrists if the floor is hard.",
+    "Doorway (C). Stand in a doorway with one forearm or hand on the frame, upper arm out to the side at about shoulder height (est. 80–100 degrees from the body), elbow bent about 90 degrees (est.). One foot a half step forward for balance.",
+    "Camera. For the quadruped rotation: phone on the floor or a low stool at mat height, 2 m in front of you (head end), landscape, so both shoulders, both elbows and hips are in frame (see section 11)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": "A. Side-lying open book",
+      "title": "Lie on your side and stack the knees",
+      "action": "lie on one side, hips and knees bent about 90 degrees, knees and feet stacked, arms straight ahead with palms together.",
+      "feel": "supported, hips heavy on the mat.",
+      "breathing": "breathe normally.",
+      "tempo": "5 seconds.",
+      "visualCheck": "front view (from the feet or above), knees stacked and level; side view, thighs forward, spine long."
+    },
+    {
+      "n": 2,
+      "part": "A. Side-lying open book",
+      "title": "Lock the pelvis and knees",
+      "action": "press the top knee down onto the bottom knee (or the cushion) and keep the lower back long, not arched.",
+      "feel": "a light steadiness in the glutes and deep belly; lower back quiet.",
+      "breathing": "breathe out.",
+      "tempo": "2 seconds.",
+      "visualCheck": "top knee stays on the bottom knee through the whole move."
+    },
+    {
+      "n": 3,
+      "part": "A. Side-lying open book",
+      "title": "Lift and lead with the hand",
+      "action": "lift the top arm just off the other hand and let your eyes follow it.",
+      "feel": "a mild turning feeling in the mid-back.",
+      "breathing": "breathe in.",
+      "tempo": "2 seconds.",
+      "visualCheck": "head turns with the hand, neck stays long, not craned."
+    },
+    {
+      "n": 4,
+      "part": "A. Side-lying open book",
+      "title": "Open the book",
+      "action": "slowly rotate the chest and open the top arm out and back toward the floor behind you, going only as far as the knees stay stacked.",
+      "feel": "stretch across the front of the chest and shoulder, gentle turn between the shoulder blades; no pinch in the low back or shoulder.",
+      "breathing": "breathe out slowly as you open.",
+      "tempo": "3 seconds.",
+      "visualCheck": "the opening comes from the ribcage turning, not from the knees falling away or the back arching."
+    },
+    {
+      "n": 5,
+      "part": "A. Side-lying open book",
+      "title": "Pause at your comfortable end range",
+      "action": "stop where it feels like a mild-to-moderate stretch; do not force the arm to touch the floor. Let the shoulder blade settle.",
+      "feel": "light effort 3–4/10 on the ACSM 0–10 effort scale (= Borg 9–11 on the 6–20 scale).",
+      "breathing": "one slow breath in and out.",
+      "tempo": "2–3 seconds (est.).",
+      "visualCheck": "chest turned toward the ceiling, top knee still on the bottom knee."
+    },
+    {
+      "n": 6,
+      "part": "A. Side-lying open book",
+      "title": "Close the book",
+      "action": "breathe in and sweep the arm back to meet the other hand, leading with the hand and letting the chest turn back.",
+      "feel": "the turn easing off.",
+      "breathing": "breathe in.",
+      "tempo": "3 seconds.",
+      "visualCheck": "palms touching again, no jerk at the end."
+    },
+    {
+      "n": 7,
+      "part": "A. Side-lying open book",
+      "title": "Repeat",
+      "action": "repeat steps 3 to 6 for 8 slow reps (see section 7), then turn over and do the other side.",
+      "feel": "more freedom each rep, never pain.",
+      "breathing": "out on opening, in on closing.",
+      "tempo": "about 8–10 seconds per rep (est.).",
+      "visualCheck": "same range each rep, knees stacked."
+    },
+    {
+      "n": 8,
+      "part": "B. Quadruped rotation (the camera-countable move)",
+      "title": "Come onto hands and knees",
+      "action": "hands under shoulders, knees under hips, spine neutral, eyes on the floor.",
+      "feel": "weight even across hands and knees.",
+      "breathing": "breathe normally.",
+      "tempo": "3 seconds.",
+      "visualCheck": "side view, back flat like a table; front view, shoulders level."
+    },
+    {
+      "n": 9,
+      "part": "B. Quadruped rotation (the camera-countable move)",
+      "title": "Place one hand behind the head",
+      "action": "slide one hand behind the head with the fingertips lightly touching; the other arm stays straight under the shoulder.",
+      "feel": "shoulders away from the ears.",
+      "breathing": "breathe in.",
+      "tempo": "2 seconds.",
+      "visualCheck": "supporting elbow nearly straight (not locked), elbow of the other arm pointing out to the side."
+    },
+    {
+      "n": 10,
+      "part": "B. Quadruped rotation (the camera-countable move)",
+      "title": "Rock the hips slightly back (optional lock)",
+      "action": "sit the hips back a hand's width toward the heels to lock the low back, as one physio source teaches.",
+      "feel": "the low back \"switched off\", the movement will come from the mid-back.",
+      "breathing": "breathe out.",
+      "tempo": "2 seconds.",
+      "visualCheck": "hips stay still for the rest of the set."
+    },
+    {
+      "n": 11,
+      "part": "B. Quadruped rotation (the camera-countable move)",
+      "title": "Rotate down",
+      "action": "bring the elbow of the hand behind your head down toward the opposite elbow, turning the chest to the floor.",
+      "feel": "a gentle rounding and turning in the mid-back.",
+      "breathing": "breathe out.",
+      "tempo": "2 seconds.",
+      "visualCheck": "front view, elbow below the shoulder line."
+    },
+    {
+      "n": 12,
+      "part": "B. Quadruped rotation (the camera-countable move)",
+      "title": "Rotate up and open",
+      "action": "turn the chest to the side and lift that elbow toward the ceiling, following it with your eyes, as far as is comfortable; keep the hips level.",
+      "feel": "chest opening, mid-back turning, light work between the shoulder blades.",
+      "breathing": "breathe in as you open.",
+      "tempo": "3 seconds.",
+      "visualCheck": "front view, elbow level with or above the shoulder; hips have not shifted sideways."
+    },
+    {
+      "n": 13,
+      "part": "B. Quadruped rotation (the camera-countable move)",
+      "title": "Return and repeat",
+      "action": "lower the elbow back under the body in a slow controlled path. 6 to 8 reps, then switch hands.",
+      "feel": "smooth rhythm.",
+      "breathing": "out on lowering, in on opening (or whichever feels natural; never hold the breath).",
+      "tempo": "5–6 seconds per rep (est.).",
+      "visualCheck": "no side-bending of the neck, no rocking of the hips."
+    },
+    {
+      "n": 14,
+      "part": "C. Doorway chest stretch",
+      "title": "Take the position",
+      "action": "stand in a doorway, forearm or hand on the frame at about shoulder height, elbow bent about 90 degrees, one foot half a step forward.",
+      "feel": "shoulder comfortable, not strained.",
+      "breathing": "breathe normally.",
+      "tempo": "3 seconds.",
+      "visualCheck": "front view, elbow roughly at shoulder height; side view, standing tall."
+    },
+    {
+      "n": 15,
+      "part": "C. Doorway chest stretch",
+      "title": "Turn away gently",
+      "action": "slowly turn the chest and body away from the frame until a mild stretch appears across the front of the chest. Do not lean forward so far that the low back arches.",
+      "feel": "a mild-to-moderate pull in the chest and front shoulder, never sharp, never numbness or tingling in the arm or hand.",
+      "breathing": "slow, easy breathing; never hold it.",
+      "tempo": "hold 20–30 seconds (see section 7).",
+      "visualCheck": "ribs stay down, shoulders not shrugged."
+    },
+    {
+      "n": 16,
+      "part": "C. Doorway chest stretch",
+      "title": "Release and switch",
+      "action": "turn back and lower the arm slowly; repeat on the other arm. 2 rounds per side.",
+      "feel": "chest open, shoulders loose.",
+      "breathing": "breathe out.",
+      "tempo": "5 seconds rest between sides.",
+      "visualCheck": "no sudden drop of the arm."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Twisting from the low back, with the knees falling away or the pelvis rolling",
+      "text": "Twisting from the low back, with the knees falling away or the pelvis rolling. The low back is not built to rotate much, and the thoracic spine gets none of the work. Fix: stack the knees (cushion between them) and cue \"ribs turn, hips stay\"."
+    },
+    {
+      "title": "Throwing the arm back with momentum",
+      "text": "Throwing the arm back with momentum. Range comes from the arm swinging, not the spine turning, and the shoulder can be stressed. Fix: slow 3-second opens, eyes on the hand, stop at the first comfortable resistance."
+    },
+    {
+      "title": "Chasing the floor with the arm",
+      "text": "Chasing the floor with the arm. Forcing the arm to touch the mat strains the shoulder and the front of the chest. Fix: work to a mild stretch; the end range will grow over weeks."
+    },
+    {
+      "title": "Side-bending the trunk instead of rotating (quadruped)",
+      "text": "Side-bending the trunk instead of rotating (quadruped). The move becomes a lean, not a turn. Fix: keep both shoulders at the same distance from the floor and turn the chest, not the shoulder line toward the hip."
+    },
+    {
+      "title": "Pressing or pulling on the head",
+      "text": "Pressing or pulling on the head. Neck strain. Fix: fingertips only on the head, or rest the hand on the upper back."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. Raises tension and, in people with high blood pressure, adds strain. Fix: breathe out on opening, breathe normally through holds."
+    },
+    {
+      "title": "Over-arching the low back in the doorway stretch",
+      "text": "Over-arching the low back in the doorway stretch. Leaning in to feel more chest stretch puts the work in the low back. Fix: ribs down, belly lightly drawn in, smaller range."
+    },
+    {
+      "title": "Bouncing into the chest stretch",
+      "text": "Bouncing into the chest stretch. Bouncing is called out as a common mistake in physio libraries. Fix: move slowly in and out, hold still."
+    },
+    {
+      "title": "Skipping the stronger hand or side",
+      "text": "Skipping the stronger hand or side. People stretch only the tight side. Fix: do both sides and note differences (see \"film yourself\")."
+    }
+  ],
+  "safetyNotes": [
+    "Lower back: keep the pelvis and knees still, move only within a comfortable range, and stop if back pain increases or leg symptoms start. NHS leaflets say keep moving and avoid long rest, but do not continue exercises that significantly increase pain.",
+    "Osteoporosis or bone thinning: use the slow side-lying version with small range, no forced or fast twisting, no pushing the arm to the floor. The International Osteoporosis Foundation advises avoiding powerful twisting movements of the trunk, and the UK consensus statement (BJSM 2022) advises avoiding postures with a high degree of spinal flexion and recommends extension exercises. With a known spine fracture, ask a doctor or physio first.",
+    "Shoulder problems: doorway chest stretch is listed as unsuitable with acute shoulder impingement, a recent rotator cuff injury or chronic shoulder instability (a physio exercise library), so skip it and use lighter versions (elbow lower, smaller turn). Stop if there is pinching, numbness, tingling or pins and needles in the arm or hand.",
+    "Neck: keep the neck long; do not force the head round; stop with neck pain or arm tingling.",
+    "Knees or wrists: pad under the knees and wrists, or use the side-lying or standing versions.",
+    "Pregnancy: avoid lying flat on the back for long periods, especially after 16 weeks (Tommy's, citing NICE; the earlier RCOG advice was based on expert opinion per a 2019 BJSM review), so do the seated or quadruped version and keep the open arm in a modest range.",
+    "Recent surgery (chest, spine, abdomen): wait for the surgeon or physio before twisting or stretching the chest wall.",
+    "Asthma: keep the reliever inhaler nearby; stop if you wheeze or feel breathless.",
+    "Spine conditions: scoliosis, a herniated disc or a spinal fracture mean checking with your doctor before thread the needle (Livestrong).",
+    "Stop immediately if you feel: sharp or pinching pain in the back, shoulder or neck; pain, tingling or numbness down an arm or leg; chest pain, dizziness or breathlessness; new bladder or bowel changes with back pain (an NHS leaflet lists these as red flags).",
+    "Spotter: not needed.",
+    "Gym etiquette: use the stretching area or a mat out of walkways; wipe the mat after use."
+  ],
+  "sources": [
+    "ACE (American Council on Exercise), Brian Tabor, Thoracic mobility exercises to address shoulder pain (thread the needle 5-10 reps per side, side-lying books): https://www.acefitness.org/education-and-resources/professional/expert-articles/7960/thoracic-mobility-exercises-to-address-shoulder-pain",
+    "ACSM, Stretching and flexibility guidelines update (2-3+ days a week, 10-30 s holds): https://www.acsm.org/blog-detail/acsm-certified-blog/2021/03/18/stretching-and-flexibility-guidelines-update ; ACSM flexibility table (Garber 2011 position stand, secondary copy, 60 s total per area): https://www.anatomytrains.com/wp-content/uploads/manual/acsm.docx",
+    "Seo, Song and Shin, thoracic mobility exercise vs manipulation in office workers with chronic neck pain, Med Sci Monit 2022: https://medscimonit.com/abstract/full/idArt/937316 ; PEDro record: https://search.pedro.org.au/search-results/record-detail/71012",
+    "NHS trust physio leaflets: Royal Devon, Thoracic range of movement exercises: https://www.royaldevon.nhs.uk/media/rnzfkr2p/thoracic-range-of-movement-exercises-985-v1.pdf ; Cambridge University Hospitals, Thoracic spine exercises: https://www.cuh.nhs.uk/patient-information/thoracic-spine-exercises/ ; Berkshire Healthcare, Upper thoracic pain leaflet (2024 update): https://www.berkshirehealthcare.nhs.uk/media/i3zle0z3/upper-thoracic-pain-physio-leaflet-2024-update.pdf",
+    "Fit&Well (osteopath), open book stretch: https://www.fitandwell.com/exercise/flexibility/an-osteopath-urges-everyone-to-do-this-one-daily-stretch-to-undo-the-damage-caused-by-prolonged-sitting-it-only-takes-three-minutes ; Fit&Well doorway chest stretch for desk workers: https://www.fitandwell.com/exercise/flexibility/this-is-one-of-the-best-upper-body-exercises-to-try-if-you-sit-at-a-desk-all-day",
+    "Bone Coach, Open book stretch with osteoporosis or osteopenia: https://bonecoach.com/exercise-open-book-stretch-thoracic-mobility-osteoporosis-osteopenia",
+    "Liforme, Thread the needle stretch: https://liforme.com/blogs/blog/how-to-do-thread-the-needle-stretch ; Livestrong, Thread the needle pose cautions: https://livestrong.com/article/13770758-thread-the-needle-pose ; Yogamatters, Parsva Balasana: https://www.yogamatters.com/blogs/pose-library/thread-the-needle-pose-parsva-balasana ; Bustle: https://www.bustle.com/wellness/thread-the-needle-pose",
+    "Physitrack, Quadruped thoracic rotation: https://ie.physitrack.com/home-exercise-video/quadruped-thoracic-rotation ; The Prehab Guys, FMS quadruped thoracic spine rotation: https://library.theprehabguys.com/vimeo-video/fms-quadruped-thoracic-spine-rotation/",
+    "The Prehab Guys, Pec minor stretch in a doorway (when to avoid): https://library.theprehabguys.com/vimeo-video/pec-minor-stretch-doorway/ ; UMM / StayWell doorway pectoral stretch handout: https://www.ummhealth.org/health-library/doorway-pectoral-stretch-flexibility",
+    "Pec minor stretching in office workers (randomised, n=30, immediate effects), Thai journal: https://he01.tci-thaijo.org/index.php/slc/article/view/286527",
+    "Thoracic rotation measurement: normative values (golfers, University of Johannesburg): https://pure.uj.ac.za/en/publications/establishing-normative-flexibility-values-for-the-thoracic-spine-/ ; reliability of thoracic rotation measurements in healthy adults (2012): https://www.bisp-surf.de/Record/PU201203002193",
+    "Brooke-Wavell K et al., Strong, steady and straight: UK consensus statement on physical activity and exercise for osteoporosis, BJSM 2022: https://pubmed.ncbi.nlm.nih.gov/35577538/ ; https://bjsm.bmj.com/content/56/15/837 ; International Osteoporosis Foundation, exercise for individuals with osteoporosis: https://www.osteoporosis.foundation/health-professionals/prevention/exercise/exercise-individuals-with-osteoporosis",
+    "Herrmann SD et al., 2024 Adult Compendium of Physical Activities (02101 Stretching, mild 2.3; 02150 Yoga, Hatha): https://pacompendium.com/conditioning-exercise/ ; https://pubmed.ncbi.nlm.nih.gov/38242596/",
+    "Thoracic-focused interventions for low back pain, systematic review and meta-analysis (PLOS One, Jan 2026): https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12803473/",
+    "NHS trust back pain leaflets: Berkshire Healthcare low back pain (Feb 2026): https://www.berkshirehealthcare.nhs.uk/media/qwqaccdd/bh1165n-low-back-pain-v1-feb-2026.pdf ; Cambridge University Hospitals, Stretches (back pain management programme): https://www.cuh.nhs.uk/patient-information/stretches-back-pain-management-programme/ ; NHS Dorset MSK: https://www.mskdorset.nhs.uk/back-pain_1/back-pain-low-back-pain/",
+    "Tommy's, Exercises to avoid in pregnancy: https://www.tommys.org/pregnancy-information/im-pregnant/exercise-pregnancy/exercises-avoid ; BJSM 2019 review (supine exercise advice based on expert opinion): https://bjsm.bmj.com/content/53/2/82",
+    "Tommy's, When and how to exercise after a C-section: https://Tommys.Org/pregnancy-information/giving-birth/caesarean-section/when-and-how-exercise-after-c-section ; East and North Herts NHS, After your C-section: https://www.enherts-tr.nhs.uk/content/uploads/2019/10/M-After-Your-C-Section-c-section_infoleaflet2014-1.pdf ; East Sussex Healthcare NHS postnatal leaflet: https://www.esht.nhs.uk/wp-content/uploads/2021/01/0894.pdf",
+    "Key points from the updated guidelines on exercise and diabetes (ADA): https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/",
+    "British Heart Foundation, Cool down exercises: https://www.bhf.org.uk/informationsupport/heart-matters-magazine/activity/cool-down-exercises ; BHF, Exercise for heart failure: https://www.bhf.org.uk/informationsupport/heart-matters-magazine/activity/exercise-for-heart-failure",
+    "Sutter Health, Exercising with high blood pressure: https://www.Sutterhealth.Org/pdf/services/heart-vascular/hypertension-exercising.pdf",
+    "Exercise in the management of PCOS, position statement: https://researchers.westernsydney.edu.au/en/publications/exercise-in-the-management-of-polycystic-ovary-syndrome-a-positio/",
+    "Asthma exercise safety: Marshfield Clinic: https://shine365.marshfieldclinic.org/wellness/asthma-exercise/ ; ECU Health: https://healthlibrary.ecuhealth.org/lung-health/management/asthma-management-exercise-safety",
+    "Knee osteoarthritis NHS leaflets: Royal Berkshire: https://royalberkshire.nhs.uk/leaflets/osteoarthritis-of-the-knee-advice-and-exercises ; Queen Victoria Hospital: https://www.qvh.nhs.uk/wp-content/uploads/2015/09/Knee-Osteoarthritis-Rvw-Sept-2018.pdf",
+    "Surgery recovery leaflets: University Hospitals Sussex, Physiotherapy advice after abdominal surgery (2025): https://www.uhsussex.nhs.uk/wp-content/uploads/2025/10/2637-Physiotherapy-advice-after-abdominal-surgery-2025.pdf ; Oxford University Hospitals, laminectomy: https://WWW.OUH.NHS.UK/patient-guide/leaflets/files/100720laminectomy.pdf",
+    "Ministry of AYUSH / MDNIY Common Yoga Protocol (booklet found; spinal-twist text not verified): https://www.mea.gov.in/images/pdf/common-yoga-protocol-english.pdf ; PharmEasy, Ardha Matsyendrasana cautions (secondary): https://pharmeasy.in/blog/health-fitness-benefits-of-ardha-matsyendrasana-and-how-to-do-it/ ; Brett Larkin, Ardha Matsyendrasana: https://www.brettlarkin.com/seated-spinal-twist-half-lord-of-the-fishes-ardha-matsyendrasana/",
+    "Open book dose: 10 reps per side (Bone Coach), 30 s to 1 min per side (osteopath), 5–10 reps (ACE). We chose 8 slow reps per side, 2 rounds.",
+    "Doorway hold time: 15 s × 3 (handouts), 30–60 s (Fit&Well), 10–30 s (ACSM). We chose 20–30 s × 2 per side.",
+    "Quadruped lock: some sources start with the hips rocked back to lock the low back; others keep a neutral spine with a braced core. We offer the rock-back as an optional cue.",
+    "Hand placement: behind the head (most common), behind the lower back or upper back (some sources). We use behind the head with light fingertips, or on the upper back if the shoulder or neck complains.",
+    "Osteoporosis and rotation: the UK consensus warns against high spinal flexion and recommends extension work; the IOF advises avoiding powerful trunk twisting; Bone Coach teaches a gentle open book. We chose \"modify\": slow, small range, no forced twisting, and ask a doctor with a known spine fracture.",
+    "Pregnancy: older RCOG advice about avoiding lying on the back after 16 weeks was expert opinion; UK parenting and charity pages still repeat it. We chose the cautious \"avoid lying flat on the back\" and offer seated or quadruped.",
+    "Evidence strength: thoracic mobility exercise has low-quality evidence and only small trials; we state benefits as likely, not proven."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 43.5,
+      "70kg": 37.3,
+      "80kg": 32.6
+    },
+    "per300kcal": {
+      "60kg": 130.4,
+      "70kg": 111.8,
+      "80kg": 97.8
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "yoga",
+    "mobility",
+    "beginner",
+    "intermediate",
+    "small_flat",
+    "quiet",
+    "4_8_min",
+    "warm_up",
+    "cool_down",
+    "desk_break",
+    "posture",
+    "evening",
+    "morning"
+  ],
+  "swapsByAccess": {
+    "none": "Seated chair trunk rotation plus a wall or door-frame chest stretch",
+    "home_equipment": "Mat with a pillow between the knees; foam roller or rolled towel under the upper back",
+    "basic_gym": "Mat in the stretching area; foam roller thoracic extension; wall chest stretch",
+    "full_gym": "Mat open book in the stretching area, plus reverse pec deck (Gym 35) or cable face pull (Gym 36) for upper-back strength"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "Breathe throughout, no breath-holding, slow movement, rise slowly; pose-specific source not found",
+      "source": "Sutter Health exercising with hypertension (general); Not found (pose-specific)"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "No pose-specific caution found; flexibility work 2-3 times a week is recommended mainly for older adults",
+      "source": "ADA exercise guidance via PMC5317029; Not found (pose-specific)"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "Pose-specific source not found; cool-down of at least 10 minutes, gradual finish, keep breathing, ask your cardiac team",
+      "source": "BHF cool-down exercises (general); Not found (pose-specific)"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "No change (source not found)",
+      "source": "Not found"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Side-lying with a pillow between the knees or seated version; thick pad under knees (est.)",
+      "source": "Not found (pose-specific)"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "No pose-specific caution found",
+      "source": "Position statement on exercise in PCOS (2023 guideline based); Not found (pose-specific)"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "No pose-specific caution found; CYP and MDNIY text on twists not found",
+      "source": "Not found"
+    },
+    {
+      "condition": "asthma",
+      "status": "modify",
+      "change": "Reliever inhaler nearby; warm up first; stop if wheezing or breathless",
+      "source": "Marshfield Clinic and ECU Health asthma exercise-safety pages (general)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Use side-lying or standing versions; thick towel under kneeling knees; stop if knee pain increases",
+      "source": "Royal Berkshire NHS knee osteoarthritis leaflet; Queen Victoria Hospital knee OA leaflet"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Small range, pelvis and knees locked, no forcing; stop if pain or leg symptoms increase; red flags need a clinician",
+      "source": "Berkshire Healthcare low back pain leaflet; Cambridge University Hospitals back pain stretches; NHS Dorset MSK"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "modify",
+      "change": "Skip doorway stretch with acute impingement, recent rotator cuff injury or chronic instability; otherwise elbow lower and smaller turn",
+      "source": "The Prehab Guys pec minor stretch (when to avoid); UMM/StayWell doorway pec stretch"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "modify",
+      "change": "Slow side-lying, small range, no forced or fast twisting; avoid heavy spinal flexion; known spine fracture: ask doctor or physio",
+      "source": "International Osteoporosis Foundation exercise guidance; UK consensus statement (BJSM 2022); Bone Coach"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "modify",
+      "change": "Avoid lying flat on the back, especially after 16 weeks; seated or quadruped rotation, gentle range",
+      "source": "Tommy's exercises to avoid (citing NICE); BJSM 2019 review"
+    },
+    {
+      "condition": "postpartum",
+      "status": "ask_doctor",
+      "change": "After C-section wait for clearance (often the 6-8 week check); gentle movement such as knee rolling is allowed earlier in NHS leaflets",
+      "source": "Tommy's after a C-section; East and North Herts NHS leaflet; East Sussex NHS postnatal leaflet"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Follow surgeon or physio timeline; avoid twisting and chest-wall stretching after chest, spine or abdominal surgery until cleared",
+      "source": "University Hospitals Sussex physiotherapy advice after abdominal surgery (2025); Oxford University Hospitals laminectomy leaflet"
+    },
+    {
+      "condition": "other",
+      "status": "ask_doctor",
+      "change": "Scoliosis, herniated disc or spinal fracture: check with a doctor before thread the needle or deep twists",
+      "source": "Livestrong thread the needle pose"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "home",
+      "office_desk"
+    ],
+    "bodyRegion": [
+      "upper",
+      "core"
+    ],
+    "goalTags": [
+      "flexibility",
+      "general_fitness",
+      "relaxation"
+    ],
+    "intensity": "light",
+    "noise": "quiet",
+    "space": "mat_only",
+    "typicalMinutes": 6,
+    "kcalPer10min70kg": 27,
+    "difficulty1to5": 2,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Yoga & stretch",
+    "Home",
+    "Office desk",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Mobility",
+    "Core",
+    "Back",
+    "Chest",
+    "Rep counter",
+    "Under 10 min"
+  ],
+  "needsReview": [
+    "rep_counter phase \"hip_still\" (hip landmarks sideways shift): angle \"position flag: shift <= 8 cm\" is not a parseable angle"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-28",
+      "file": "FitPlate_Fitness_2026-10-28.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

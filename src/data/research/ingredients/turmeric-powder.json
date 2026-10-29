@@ -4,7 +4,7 @@
   "aliases": [
     "haldi"
   ],
-  "category": "Spice",
+  "category": "Spice (ground)",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -15,37 +15,226 @@
         "avg": 325,
         "confidence": "High",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-10-25",
+        "min": 245,
+        "max": 470,
+        "avg": 365,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
       }
     ],
     "currentEstimate": {
-      "min": 280,
-      "max": 355,
-      "avg": 325
+      "min": 290,
+      "max": 395,
+      "avg": 345
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-10-25",
     "stale": false,
     "seasonal": false,
-    "listingCount": 6,
+    "listingCount": 12,
     "platforms": [
-      "Amazon",
-      "BigBasket",
-      "Blinkit",
-      "Zepto"
+      "BigBasket"
     ],
     "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "confirmed": false,
+    "checkNotes": [
+      "only 1 platform (BigBasket) backs the range"
+    ]
   },
   "per100Estimate": {
-    "min": 28,
-    "max": 35.5,
-    "avg": 32.5
+    "min": 29,
+    "max": 39.5,
+    "avg": 34.5
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 312,
+      "source": "USDA FDC: USDA FDC 172231 'Spices, turmeric, ground'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "proteinG": {
+      "value": 9.7,
+      "source": "USDA FDC: USDA FDC 172231 'Spices, turmeric, ground'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "carbsG": {
+      "value": 67.1,
+      "source": "USDA FDC: USDA FDC 172231 'Spices, turmeric, ground'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fatG": {
+      "value": 3.3,
+      "source": "USDA FDC: USDA FDC 172231 'Spices, turmeric, ground'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 22.7,
+      "source": "USDA FDC: USDA FDC 172231 'Spices, turmeric, ground'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sodiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": 20,
+      "source": "USDA FDC: USDA FDC 172231 'Spices, turmeric, ground'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 172231 'Spices, turmeric, ground'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": 0.1,
+      "source": "USDA FDC: USDA FDC 172231 'Spices, turmeric, ground'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "riboflavinMg": {
+      "value": 0.1,
+      "source": "USDA FDC: USDA FDC 172231 'Spices, turmeric, ground'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "niacinMg": {
+      "value": 1.4,
+      "source": "USDA FDC: USDA FDC 172231 'Spices, turmeric, ground'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 172231 'Spices, turmeric, ground'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    }
+  },
   "macrosPer100Estimate": {
     "kcal": 312,
     "proteinG": 9.7,
@@ -53,57 +242,63 @@
     "fatG": 3.3,
     "fibreG": 22.7
   },
-  "storage": "Room temperature, in an airtight jar, away from light, heat and steam from the stove. Keep a dry spoon. It lasts about 6–12 months once opened.",
-  "looksLike": "a fine, bright yellow-orange powder with an earthy, slightly bitter smell. It stains fingers and cloths yellow.",
-  "howToPick": "choose a sealed, recently packed pouch. Good powder is evenly bright yellow, smells fresh and earthy, and flows freely. Avoid packs that are dull or brownish, caked or damp, or that smell musty. Unusually lurid colour in loose powder can mean added colouring.",
-  "shelfLife": "usually 12–24 months from packing, unopened (check the pack). Use within about 6 months after opening for the best colour and aroma.",
-  "substitutes": [],
+  "storage": "Keep in an airtight dry jar away from light and moisture at room temperature, up to about 6 months once opened.",
+  "looksLike": "a fine, bright yellow-orange powder with an earthy, slightly bitter smell; it stains hands and cloth yellow.",
+  "howToPick": "a deep, even yellow-orange colour and a warm earthy smell; avoid a dull, pale or lumpy powder or a musty smell. Prefer sealed packs from known brands.",
+  "shelfLife": "about 12 months sealed, per the best-before dates printed on packs (general guidance; not taken from a source in this run).",
+  "substitutes": [
+    "Fresh turmeric root, grated",
+    "Mild curry powder",
+    "Omit"
+  ],
   "usedIn": [
     {
-      "dishNumber": 1,
+      "dishNumber": 82,
       "quantity": 0.5,
       "unit": "g",
-      "raw": "0.5 g (⅛ tsp)"
+      "raw": "0.5 g per serving (¼ tsp)"
     },
     {
-      "dishNumber": 2,
+      "dishNumber": 84,
       "quantity": 0.5,
       "unit": "g",
-      "raw": "0.5 g (a pinch)"
+      "raw": "0.5 g per serving (¼ tsp)"
     },
     {
-      "dishNumber": 3,
-      "quantity": 0.3,
-      "unit": "g",
-      "raw": "0.3 g (a pinch)"
-    },
-    {
-      "dishNumber": 4,
+      "dishNumber": 85,
       "quantity": 0.5,
       "unit": "g",
-      "raw": "0.5 g (generous pinch, potato masala)"
+      "raw": "0.5 g per serving (¼ tsp)"
     },
     {
-      "dishNumber": 5,
+      "dishNumber": 101,
       "quantity": 0.5,
       "unit": "g",
-      "raw": "0.5 g (⅛ tsp)"
+      "raw": "0.5 g per serving (¼ tsp, in the chicken marinade)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-10-25",
+      "file": "FitPlate_Ingredients_2026-10-25.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (wma)",
     "macrosPer100Estimate": "stable (single)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 264.3–406.5 was wider than 30% of avg 342.9; narrowed to ±15%."
+  ]
 }

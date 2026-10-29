@@ -4,7 +4,7 @@
   "aliases": [
     "dhania"
   ],
-  "category": "Vegetable (fresh herb)",
+  "category": "Herb",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -15,62 +15,292 @@
         "avg": 85,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-10-25",
+        "min": 32,
+        "max": 70,
+        "avg": 51,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
       }
     ],
     "currentEstimate": {
-      "min": 72,
-      "max": 98,
-      "avg": 85
+      "min": 58,
+      "max": 78,
+      "avg": 68
     },
-    "method": "single",
+    "method": "spike-blend",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-10-25",
     "stale": false,
     "seasonal": true,
-    "listingCount": 4,
+    "listingCount": 2,
     "platforms": [
-      "BigBasket",
-      "CurlyTales report",
-      "OneIndia"
+      "BigBasket"
     ],
     "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "confirmed": false,
+    "checkNotes": [
+      "only 2 listings back the range (need 3)",
+      "only 1 platform (BigBasket) backs the range"
+    ]
   },
   "per100Estimate": {
-    "min": 7.2,
-    "max": 9.8,
-    "avg": 8.5
+    "min": 5.8,
+    "max": 7.8,
+    "avg": 6.8
   },
   "seasonal": true,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 23,
+      "source": "Other: aggregator blend of USDA FDC, AFCD and Ciqual: USDA FDC 'Coriander (cilantro) leaves, raw' (ID not confirmed) seen via secondary aggregators blending USDA, AFCD and Ciqual values; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "proteinG": {
+      "value": 2.1,
+      "source": "Other: aggregator blend of USDA FDC, AFCD and Ciqual: USDA FDC 'Coriander (cilantro) leaves, raw' (ID not confirmed) seen via secondary aggregators blending USDA, AFCD and Ciqual values; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "carbsG": {
+      "value": 3.7,
+      "source": "Other: aggregator blend of USDA FDC, AFCD and Ciqual: USDA FDC 'Coriander (cilantro) leaves, raw' (ID not confirmed) seen via secondary aggregators blending USDA, AFCD and Ciqual values; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "sugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fatG": {
+      "value": 0.6,
+      "source": "Other: aggregator blend of USDA FDC, AFCD and Ciqual: USDA FDC 'Coriander (cilantro) leaves, raw' (ID not confirmed) seen via secondary aggregators blending USDA, AFCD and Ciqual values; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "saturatedFatG": {
+      "value": 0.014,
+      "source": "Other: aggregator blend of USDA FDC, AFCD and Ciqual: USDA FDC 'Coriander (cilantro) leaves, raw' (ID not confirmed) seen via secondary aggregators blending USDA, AFCD and Ciqual values; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "fibreG": {
+      "value": 3.2,
+      "source": "Other: aggregator blend of USDA FDC, AFCD and Ciqual: USDA FDC 'Coriander (cilantro) leaves, raw' (ID not confirmed) seen via secondary aggregators blending USDA, AFCD and Ciqual values; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "sodiumMg": {
+      "value": 45,
+      "source": "Other: aggregator blend of USDA FDC, AFCD and Ciqual: USDA FDC 'Coriander (cilantro) leaves, raw' (ID not confirmed) seen via secondary aggregators blending USDA, AFCD and Ciqual values; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "ironMg": {
+      "value": 4.5,
+      "source": "Other: aggregator blend of USDA FDC, AFCD and Ciqual: USDA FDC 'Coriander (cilantro) leaves, raw' (ID not confirmed) seen via secondary aggregators blending USDA, AFCD and Ciqual values; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "calciumMg": {
+      "value": 86,
+      "source": "Other: aggregator blend of USDA FDC, AFCD and Ciqual: USDA FDC 'Coriander (cilantro) leaves, raw' (ID not confirmed) seen via secondary aggregators blending USDA, AFCD and Ciqual values; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "potassiumMg": {
+      "value": 540,
+      "source": "Other: aggregator blend of USDA FDC, AFCD and Ciqual: USDA FDC 'Coriander (cilantro) leaves, raw' (ID not confirmed) seen via secondary aggregators blending USDA, AFCD and Ciqual values; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "magnesiumMg": {
+      "value": 30,
+      "source": "Other: aggregator blend of USDA FDC, AFCD and Ciqual: USDA FDC 'Coriander (cilantro) leaves, raw' (ID not confirmed) seen via secondary aggregators blending USDA, AFCD and Ciqual values; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "zincMg": {
+      "value": 0.55,
+      "source": "Other: aggregator blend of USDA FDC, AFCD and Ciqual: USDA FDC 'Coriander (cilantro) leaves, raw' (ID not confirmed) seen via secondary aggregators blending USDA, AFCD and Ciqual values; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "vitaminCMg": {
+      "value": 30,
+      "source": "Other: aggregator blend of USDA FDC, AFCD and Ciqual: USDA FDC 'Coriander (cilantro) leaves, raw' (ID not confirmed) seen via secondary aggregators blending USDA, AFCD and Ciqual values; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "vitaminAUgRae": {
+      "value": 515,
+      "source": "Other: aggregator blend of USDA FDC, AFCD and Ciqual: USDA FDC 'Coriander (cilantro) leaves, raw' (ID not confirmed) seen via secondary aggregators blending USDA, AFCD and Ciqual values; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "folateUgDfe": {
+      "value": 62,
+      "source": "Other: aggregator blend of USDA FDC, AFCD and Ciqual: USDA FDC 'Coriander (cilantro) leaves, raw' (ID not confirmed) seen via secondary aggregators blending USDA, AFCD and Ciqual values; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "Other: aggregator blend of USDA FDC, AFCD and Ciqual: USDA FDC 'Coriander (cilantro) leaves, raw' (ID not confirmed) seen via secondary aggregators blending USDA, AFCD and Ciqual values; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": 54,
+      "source": "Other: aggregator blend of USDA FDC, AFCD and Ciqual: USDA FDC 'Coriander (cilantro) leaves, raw' (ID not confirmed) seen via secondary aggregators blending USDA, AFCD and Ciqual values; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": 0.47,
+      "source": "Other: aggregator blend of USDA FDC, AFCD and Ciqual: USDA FDC 'Coriander (cilantro) leaves, raw' (ID not confirmed) seen via secondary aggregators blending USDA, AFCD and Ciqual values; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": 1.7,
+      "source": "Other: aggregator blend of USDA FDC, AFCD and Ciqual: USDA FDC 'Coriander (cilantro) leaves, raw' (ID not confirmed) seen via secondary aggregators blending USDA, AFCD and Ciqual values; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "vitaminKUg": {
+      "value": 310,
+      "source": "Other: aggregator blend of USDA FDC, AFCD and Ciqual: USDA FDC 'Coriander (cilantro) leaves, raw' (ID not confirmed) seen via secondary aggregators blending USDA, AFCD and Ciqual values; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "Other: aggregator blend of USDA FDC, AFCD and Ciqual: USDA FDC 'Coriander (cilantro) leaves, raw' (ID not confirmed) seen via secondary aggregators blending USDA, AFCD and Ciqual values; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    }
+  },
   "macrosPer100Estimate": {
     "kcal": 23,
     "proteinG": 2.1,
     "carbsG": 3.7,
-    "fatG": 0.5,
+    "fatG": 0,
     "fibreG": 2.8
   },
-  "storage": "remove rubber band, discard bad leaves, wrap unwashed in a dry paper towel or cloth in a box or zip bag — 5–7 days. Alternatively stand stems in a glass of water in the fridge, loosely covered — about a week.",
-  "looksLike": "Bright green, flat, frilly leaves on thin pale-green stems, often sold as a bunch with the roots still attached. Smells fresh and slightly citrusy when crushed.",
-  "howToPick": "leaves bright green and perky, stems crisp, strong fresh smell when crushed. Avoid yellowing, black slimy patches, wilted or wet bunches. Bunches with roots stay fresh longer.",
-  "shelfLife": "1–2 days at room temperature; wilts quickly in Mumbai heat.",
+  "storage": "Trim the roots, wrap the bunch in a dry paper towel and keep it in a box in the fridge, or stand the stems in a glass of water, loosely covered. Chop only when needed.",
+  "looksLike": "A bunch of flat, lobed, bright green leaves on thin stems, with a strong fresh citrusy smell.",
+  "howToPick": "Bright green, perky leaves with a strong smell; avoid yellowing, slimy or wilted bunches.",
+  "shelfLife": "3 to 5 days in the fridge when stored well (general guidance; not taken from a source in this run).",
   "substitutes": [
     "Parsley (flat-leaf)",
     "Mint leaves",
-    "Omit it"
+    "Omit it",
+    "Mint leaves or curry leaves (for garnish)",
+    "Frozen or dried coriander",
+    "Parsley"
   ],
-  "usedIn": [],
+  "usedIn": [
+    {
+      "dishNumber": 81,
+      "quantity": 3,
+      "unit": "g",
+      "raw": "3 g per serving."
+    },
+    {
+      "dishNumber": 83,
+      "quantity": 12,
+      "unit": "g",
+      "raw": "12 g per serving (8 g in chutney, 4 g garnish)."
+    },
+    {
+      "dishNumber": 84,
+      "quantity": 5,
+      "unit": "g",
+      "raw": "5 g per serving."
+    },
+    {
+      "dishNumber": 85,
+      "quantity": 2,
+      "unit": "g",
+      "raw": "2 g per serving."
+    },
+    {
+      "dishNumber": 101,
+      "quantity": 5,
+      "unit": "g",
+      "raw": "5 g per serving."
+    }
+  ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-10-25",
+      "file": "FitPlate_Ingredients_2026-10-25.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (spike-blend)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
@@ -78,7 +308,10 @@
     "usedIn": "newest"
   },
   "mergeNotes": [
+    "price flag: possible-spike",
     "price flag: narrowed",
-    "Range 70.0–100.0 was wider than 30% of avg 85.0; narrowed to ±15%."
+    "Possible spike: latest avg 51 (2026-10-25) moved more than 35% from the previous estimate; using the halfway point.",
+    "Range 51.0–85.0 was wider than 30% of avg 68.0; narrowed to ±15%.",
+    "macrosPer100Estimate.fatG: Versions 2026-10-04 (0.5) and 2026-10-25 (0.014) differ by more than 25%; kept the newer."
   ]
 }

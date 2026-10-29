@@ -1,0 +1,776 @@
+{
+  "id": "low-hdl-metabolic-syndrome",
+  "type": "condition",
+  "name": "Low HDL and metabolic syndrome",
+  "surveyQuestion": "Do you have any of these health conditions? (select all that apply) -> Low HDL (good) cholesterol / metabolic syndrome. Check question: Has a doctor or lab report told you that your HDL is low, or that you have metabolic syndrome? Yes, low HDL / Yes, metabolic syndrome / Yes, borderline (lifestyle-only mode) / No / Never tested (suggest a lipid and glucose check) / Not sure. Follow-ups: waist in cm (enter or skip), weight and height; latest HDL, triglycerides, fasting glucose and BP if known; Do you take any medicine for cholesterol, BP, diabetes or thyroid? No / Yes / Not sure; Do you smoke or use tobacco? Never / Quit / Yes; Do you drink alcohol? Never / Rarely / Weekly / Most days",
+  "targets": [
+    {
+      "nutrient": "energy",
+      "unit": "kcal/day",
+      "generalAdult": 2110,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "limit",
+      "source": "ICMR-NIN 2020 (2110 sedentary man, 1660 sedentary woman) (secondary, unverified); modest deficit only if BMI 23 or more or waist 90/80 cm or more; target 7-10% weight loss over 6-12 months (AHA/NHLBI 2005 via AAFP summary); FitPlate default 5-10%"
+    },
+    {
+      "nutrient": "weight_loss_if_overweight",
+      "unit": "% body weight",
+      "generalAdult": null,
+      "profileValue": 7,
+      "min": 5,
+      "max": 10,
+      "direction": "limit",
+      "source": "AHA/NHLBI 2005 via AAFP (7-10% over 6-12 months, 500-1000 kcal/day deficit); P2 uses 5-7% (ADA); HDL rises about 0.35 mg/dL per kg lost once weight is stable (Dattilo 1992 meta-analysis, via secondary tables) and about 0.46 mg/dL per kg in a later meta-analysis of 73 RCTs (secondary, unverified)"
+    },
+    {
+      "nutrient": "protein",
+      "unit": "g/kg/day",
+      "generalAdult": 0.83,
+      "profileValue": 0.83,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); no HDL-specific protein change found"
+    },
+    {
+      "nutrient": "total_fat",
+      "unit": "% energy",
+      "generalAdult": 30,
+      "profileValue": 30,
+      "min": null,
+      "max": 30,
+      "direction": "same",
+      "source": "DGI 2024 (30% or less); WHO 2023; fat quality matters more than total for HDL; Not found: HDL-specific total fat target"
+    },
+    {
+      "nutrient": "saturated_fat",
+      "unit": "% energy",
+      "generalAdult": 10,
+      "profileValue": 7,
+      "min": null,
+      "max": 7,
+      "direction": "limit",
+      "source": "As P4 (NLA 2015; ICMR 2018 via Viswanathan 2019, secondary); WHO 2023 general 10%; 15.6 g at 2000 kcal (calc.). Note: swapping saturated fat for refined carbohydrate does not improve total:HDL ratio (Mensink 2003); swap for unsaturated fat instead"
+    },
+    {
+      "nutrient": "trans_fat",
+      "unit": "% energy",
+      "generalAdult": 1,
+      "profileValue": 1,
+      "min": null,
+      "max": 1,
+      "direction": "limit",
+      "source": "WHO 2023 (strong recommendation, under 1%); as P4; trans fat is described as lowering HDL (general, no per-1% figure found)"
+    },
+    {
+      "nutrient": "mufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "raise",
+      "source": "Not found as a number; groundnut, mustard, rice bran, sesame, olive oil and nuts in measured amounts (as P4); PREDIMED Mediterranean diets with extra-virgin olive oil or nuts helped reversal of metabolic syndrome (HR 1.35 and 1.28; Babio, CMAJ 2014)"
+    },
+    {
+      "nutrient": "pufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "raise",
+      "source": "Not found as a number; cis-unsaturated fat replacing saturated fat lowers the total:HDL ratio (Mensink 2003); as P4"
+    },
+    {
+      "nutrient": "omega_3_fish",
+      "unit": "servings/week",
+      "generalAdult": null,
+      "profileValue": 2,
+      "min": 2,
+      "max": null,
+      "direction": "raise",
+      "source": "AHA 2021 (as P5); fish oil raised HDL only about 1.6 mg/dL in a 21-trial meta-analysis (secondary summary); effect inconsistent across analyses; ICMR-NIN omega-3 value Not found"
+    },
+    {
+      "nutrient": "dietary_cholesterol",
+      "unit": "mg/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No P6-specific change found; as P4 if P4 selected"
+    },
+    {
+      "nutrient": "total_carbohydrate",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No ICMR total found; DGI 2024 cereals and millets cap 45% of energy (as P4, secondary, unverified); a South Indian study linked higher total carbohydrate and glycemic load to lower HDL-C, glycemic load more strongly (abstract via search, secondary); an urban slum study found diets of about 59-60% energy from carbohydrate with low MUFA and high rates of low HDL (regional)"
+    },
+    {
+      "nutrient": "refined_carbohydrate",
+      "unit": "portions/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "limit",
+      "source": "No numeric limit found; shift to whole grains, millets, pulses (as P5)"
+    },
+    {
+      "nutrient": "added_sugar",
+      "unit": "g/day",
+      "generalAdult": 25,
+      "profileValue": 25,
+      "min": null,
+      "max": 25,
+      "direction": "limit",
+      "source": "WHO 2015 (5% of energy, about 25 g, conditional); as P5; sugar-sweetened drinks were linked to about 20% higher metabolic syndrome risk at 1-2 drinks/day (Malik 2010 meta-analysis of 11 cohorts, via press summary, secondary, unverified)"
+    },
+    {
+      "nutrient": "fibre",
+      "unit": "g/day",
+      "generalAdult": 30,
+      "profileValue": 30,
+      "min": 30,
+      "max": null,
+      "direction": "raise",
+      "source": "As P4/P5 (ICMR-NIN 2020 about 30 g per 2000 kcal, secondary, unverified)"
+    },
+    {
+      "nutrient": "soluble_fibre",
+      "unit": "g/day",
+      "generalAdult": null,
+      "profileValue": 5,
+      "min": 5,
+      "max": 25,
+      "direction": "raise",
+      "source": "As P4 (NLA via Healio); HDL-specific value Not found"
+    },
+    {
+      "nutrient": "sodium",
+      "unit": "mg/day",
+      "generalAdult": 2000,
+      "profileValue": 2000,
+      "min": null,
+      "max": 2000,
+      "direction": "limit",
+      "source": "WHO 2012; DGI 2024; as P3 (raised BP is a metabolic syndrome component)"
+    },
+    {
+      "nutrient": "salt",
+      "unit": "g/day",
+      "generalAdult": 5,
+      "profileValue": 5,
+      "min": null,
+      "max": 5,
+      "direction": "limit",
+      "source": "As P3"
+    },
+    {
+      "nutrient": "potassium",
+      "unit": "mg/day",
+      "generalAdult": 3510,
+      "profileValue": 3510,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "WHO 2012; ICMR-NIN 2020 3500 mg (secondary, unverified); P3/P13 safety rules apply"
+    },
+    {
+      "nutrient": "calcium",
+      "unit": "mg/day",
+      "generalAdult": 1000,
+      "profileValue": 1000,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "iron_men",
+      "unit": "mg/day",
+      "generalAdult": 19,
+      "profileValue": 19,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "iron_women",
+      "unit": "mg/day",
+      "generalAdult": 29,
+      "profileValue": 29,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "magnesium_men",
+      "unit": "mg/day",
+      "generalAdult": 440,
+      "profileValue": 440,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 via FSSAI (secondary, unverified); higher dietary magnesium linked to lower metabolic syndrome odds (OR 0.83 per 100 mg/day, cross-sectional; Dibaba 2014); no target change"
+    },
+    {
+      "nutrient": "magnesium_women",
+      "unit": "mg/day",
+      "generalAdult": 370,
+      "profileValue": 370,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 via FSSAI (secondary, unverified); observational link only"
+    },
+    {
+      "nutrient": "vitamin_d",
+      "unit": "µg/day",
+      "generalAdult": 15,
+      "profileValue": 15,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); 25-trial meta-analysis in people with overweight, obesity or metabolic disorders found no overall effect on HDL-C (2025, secondary)"
+    },
+    {
+      "nutrient": "vitamin_b12",
+      "unit": "µg/day",
+      "generalAdult": 2.2,
+      "profileValue": 2.2,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 as adopted by FSSAI (secondary, unverified)"
+    },
+    {
+      "nutrient": "folate_men",
+      "unit": "µg DFE/day",
+      "generalAdult": 300,
+      "profileValue": 300,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "folate_women",
+      "unit": "µg DFE/day",
+      "generalAdult": 220,
+      "profileValue": 220,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "niacin",
+      "unit": "mg/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No food target for HDL; niacin as a medicine did not reduce events on top of statins (AIM-HIGH, HPS2-THRIVE) and its use to raise HDL is not recommended in a review; doctor only; no dose given"
+    },
+    {
+      "nutrient": "alcohol",
+      "unit": "standard drinks/day",
+      "generalAdult": null,
+      "profileValue": 0,
+      "min": null,
+      "max": null,
+      "direction": "limit",
+      "source": "Best none and do not start drinking to raise HDL: about 30 g/day ethanol raised HDL by about 4 mg/dL (Rimm 1999, via summary) but WHO (2023) says no level is safe and AHA does not recommend alcohol for heart health (via Optum summary); if any, P3 ceiling and NHS 14 units/week (as P5)"
+    },
+    {
+      "nutrient": "physical_activity",
+      "unit": "min/week",
+      "generalAdult": 150,
+      "profileValue": 150,
+      "min": 150,
+      "max": 300,
+      "direction": "raise",
+      "source": "WHO 2020 (150-300 min moderate); Kodama 2007 minimum for HDL benefit about 120 min/week; Indian consensus 60 min/day with at least 30 min moderate aerobic (Misra group 2012, secondary)"
+    },
+    {
+      "nutrient": "waist_circumference_cutoff",
+      "unit": "cm",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "limit",
+      "source": "Raised at 90 or more (men), 80 or more (women): Indian consensus (Misra 2009), IDF South Asian; not a daily target"
+    },
+    {
+      "nutrient": "water",
+      "unit": "mL/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No change from FitPlate general water target; never pushed higher; Follow your doctor's advice"
+    }
+  ],
+  "bloodMarkers": [
+    {
+      "marker": "HDL cholesterol (low)",
+      "target": "Under 40 (men) or under 50 (women); no Indian numeric HDL goal found (LAI/CSI set LDL and non-HDL goals instead); very high HDL is not a goal (lowest mortality near 73 mg/dL men and 93 mg/dL women in a Danish cohort)",
+      "unit": "mg/dL",
+      "source": "IDF 2006; AHA/NHLBI 2005; Harmonized 2009; Madsen, Eur Heart J 2017 (via summaries)"
+    },
+    {
+      "marker": "Waist circumference",
+      "target": "Raised at 90 or more (men), 80 or more (women) for Asian Indians; 102/88 in the US AHA/NHLBI definition",
+      "unit": "cm",
+      "source": "Misra 2009; IDF 2006; AHA/NHLBI 2005"
+    },
+    {
+      "marker": "Triglycerides",
+      "target": "150 or more is a criterion (or on treatment); see P5",
+      "unit": "mg/dL",
+      "source": "IDF 2006; AHA/NHLBI 2005; Harmonized 2009"
+    },
+    {
+      "marker": "Blood pressure",
+      "target": "130 systolic or 85 diastolic or more is a criterion (or on BP treatment); see P3",
+      "unit": "mmHg",
+      "source": "IDF 2006; AHA/NHLBI 2005; Harmonized 2009"
+    },
+    {
+      "marker": "Fasting glucose",
+      "target": "100 or more is a criterion (or diagnosed type 2 diabetes or on treatment); see P1/P2",
+      "unit": "mg/dL",
+      "source": "IDF 2006; AHA/NHLBI 2005; Harmonized 2009"
+    },
+    {
+      "marker": "Metabolic syndrome (IDF South Asian)",
+      "target": "Waist 90/80 cm or more PLUS any 2 of: TG 150 or more, low HDL, BP 130/85 or more, fasting glucose 100 or more",
+      "unit": "cm; mg/dL; mmHg",
+      "source": "IDF 2006 (via MJA commentary and review tables)"
+    },
+    {
+      "marker": "Metabolic syndrome (AHA/NHLBI 2005 and Harmonized 2009)",
+      "target": "Any 3 of 5 (waist, TG, HDL, BP, glucose); no mandatory component; waist uses national or regional cut-offs in the 2009 statement",
+      "unit": "-",
+      "source": "Grundy, Circulation 2005; Alberti, Circulation 2009 (via summaries)"
+    },
+    {
+      "marker": "Non-HDL cholesterol",
+      "target": "Main lipid focus when TG is above 150; goals set by the doctor as P4",
+      "unit": "mg/dL",
+      "source": "CSI 2024; LAI (as P4, secondary, unverified)"
+    },
+    {
+      "marker": "LDL cholesterol and Lp(a)",
+      "target": "Goals by risk group set by the doctor; see P4. LAI counts metabolic syndrome as a risk modifier (secondary)",
+      "unit": "mg/dL",
+      "source": "As P4"
+    },
+    {
+      "marker": "HbA1c",
+      "target": "Stored only; ranges as P1/P2",
+      "unit": "%",
+      "source": "P1/P2"
+    },
+    {
+      "marker": "BMI",
+      "target": "Asian Indian overweight cut-off 23 or more (used by FitPlate for deficit trigger)",
+      "unit": "kg/m2",
+      "source": "Misra 2009 consensus (as P2)"
+    },
+    {
+      "marker": "Unit conversion",
+      "target": "HDL mmol/L = mg/dL divided by about 38.67; 40 mg/dL = 1.03 mmol/L; 50 mg/dL = 1.29 mmol/L",
+      "unit": "mmol/L",
+      "source": "IDF review tables (1.03 and 1.29 mmol/L)"
+    }
+  ],
+  "waterMl": {
+    "min": null,
+    "max": null,
+    "notes": "No change from FitPlate general water target; low HDL and metabolic syndrome alone do not change water needs. Drink more in heat, exercise or fever per general rules. Many people with metabolic syndrome take BP medicines, including water pills (diuretics), so the app shows only the general range and never pushes a higher target. Choose water, plain chaas and unsweetened drinks; avoid sweet chai, soft drinks, packaged juice, sharbat and alcohol. Follow your doctor's advice."
+  },
+  "sodiumMgMax": 2000,
+  "dietaryCholesterolMgMax": null,
+  "foodsFavour": [
+    "whole pulses and dals (rajma, chana, moong, masoor, urad, matki, sprouts) in place of extra rice",
+    "vegetables for half the plate (bhindi, brinjal, methi, palak, beans, cabbage, gourds)",
+    "oats, barley (jau), ragi, jowar, bajra and whole-wheat atta in measured portions",
+    "a small handful of nuts (almonds, walnuts, groundnuts) in measured amounts",
+    "groundnut, mustard, rice bran, sesame or olive oil in measured amounts, rotated",
+    "fatty fish about twice a week, baked, grilled or in light curry, not fried",
+    "whole fruit instead of juice",
+    "plain curd, plain chaas, water, unsweetened tea or coffee"
+  ],
+  "foodsLimit": [
+    "sugar and sugary drinks (sweet chai, cold coffee, lassi, soft drinks, packaged juice, sharbat)",
+    "mithai and desserts; honey, jaggery and syrups count as sugar",
+    "refined flour foods (white bread, pav, bakery items, noodles, maida rotis and parathas, namkeen, biscuits)",
+    "large portions of polished white rice (biryani, pulao, fried rice)",
+    "vanaspati, reused frying oil and deep-fried snacks (trans fat)",
+    "butter, cream, ghee, coconut milk and palm oil in large amounts (saturated fat)",
+    "alcohol (do not start drinking to raise HDL)",
+    "tobacco in any form",
+    "ultra-processed packaged snacks (also high in salt)",
+    "over-the-counter niacin or fish-oil capsules used to raise HDL without a doctor"
+  ],
+  "goodFitDishes": [
+    {
+      "dishNumber": 66,
+      "dishName": "Sprouts Chaat"
+    },
+    {
+      "dishNumber": 56,
+      "dishName": "Pesarattu"
+    },
+    {
+      "dishNumber": 67,
+      "dishName": "Mix Veg Curry"
+    },
+    {
+      "dishNumber": 44,
+      "dishName": "Baingan Bharta"
+    },
+    {
+      "dishNumber": 37,
+      "dishName": "Bhindi Masala"
+    },
+    {
+      "dishNumber": 49,
+      "dishName": "Mushroom Masala"
+    },
+    {
+      "dishNumber": 16,
+      "dishName": "Besan Chilla"
+    },
+    {
+      "dishNumber": 26,
+      "dishName": "Moong Dal Chilla"
+    },
+    {
+      "dishNumber": 80,
+      "dishName": "Masoor Dal"
+    },
+    {
+      "dishNumber": 5,
+      "dishName": "Dal Tadka"
+    },
+    {
+      "dishNumber": 8,
+      "dishName": "Chole (Chana Masala)"
+    },
+    {
+      "dishNumber": 12,
+      "dishName": "Rajma Chawal"
+    },
+    {
+      "dishNumber": 52,
+      "dishName": "Moong Dal Khichdi"
+    },
+    {
+      "dishNumber": 31,
+      "dishName": "Indian-style Overnight Oats"
+    },
+    {
+      "dishNumber": 71,
+      "dishName": "Ragi Dosa"
+    },
+    {
+      "dishNumber": 45,
+      "dishName": "Tandoori Chicken"
+    },
+    {
+      "dishNumber": 55,
+      "dishName": "Prawn Masala"
+    },
+    {
+      "dishNumber": 88,
+      "dishName": "Avial"
+    },
+    {
+      "dishNumber": 85,
+      "dishName": "South Indian Veg Kurma"
+    }
+  ],
+  "cautionDishes": [
+    {
+      "dishNumber": 39,
+      "dishName": "Veg Biryani",
+      "reason": "About 94 g carbohydrate, large rice portion (est.)"
+    },
+    {
+      "dishNumber": 62,
+      "dishName": "Mutton Biryani",
+      "reason": "About 77 g carbohydrate, large rice portion, red meat (est.)"
+    },
+    {
+      "dishNumber": 2,
+      "dishName": "Chicken Biryani",
+      "reason": "About 74 g carbohydrate, large rice portion (est.)"
+    },
+    {
+      "dishNumber": 11,
+      "dishName": "Aloo Paratha",
+      "reason": "About 94 g carbohydrate for 2 parathas with potato (est.)"
+    },
+    {
+      "dishNumber": 20,
+      "dishName": "Vada Pav",
+      "reason": "About 93 g carbohydrate; refined-flour pav and deep-fried vada (est.)"
+    },
+    {
+      "dishNumber": 29,
+      "dishName": "Misal Pav",
+      "reason": "About 83 g carbohydrate; refined-flour pav (est.)"
+    },
+    {
+      "dishNumber": 13,
+      "dishName": "Pav Bhaji",
+      "reason": "About 72 g carbohydrate; refined-flour pav and butter (est.)"
+    },
+    {
+      "dishNumber": 65,
+      "dishName": "Puri Bhaji",
+      "reason": "About 81 g carbohydrate; fried puris (est.)"
+    },
+    {
+      "dishNumber": 40,
+      "dishName": "Sabudana Khichdi",
+      "reason": "About 86 g carbohydrate, mostly sago starch (est.)"
+    },
+    {
+      "dishNumber": 61,
+      "dishName": "Appam with Veg Stew",
+      "reason": "About 81 g carbohydrate and coconut milk (est.)"
+    },
+    {
+      "dishNumber": 57,
+      "dishName": "Tomato Rice",
+      "reason": "About 72 g carbohydrate, rice-based (est.)"
+    },
+    {
+      "dishNumber": 25,
+      "dishName": "Veg Pulao",
+      "reason": "About 73 g carbohydrate, rice-based (est.)"
+    },
+    {
+      "dishNumber": 30,
+      "dishName": "Lemon Rice",
+      "reason": "About 70 g carbohydrate, rice-based (est.)"
+    },
+    {
+      "dishNumber": 19,
+      "dishName": "Jeera Rice",
+      "reason": "About 61 g carbohydrate and little fibre (est.)"
+    },
+    {
+      "dishNumber": 10,
+      "dishName": "Veg Fried Rice",
+      "reason": "Refined rice with soy sauce and sugar (est.)"
+    },
+    {
+      "dishNumber": 15,
+      "dishName": "Veg Hakka Noodles",
+      "reason": "Refined noodles with sauces (est.)"
+    },
+    {
+      "dishNumber": 64,
+      "dishName": "Schezwan Noodles",
+      "reason": "About 69 g carbohydrate; refined noodles and sugary sauces (est.)"
+    },
+    {
+      "dishNumber": 59,
+      "dishName": "Chicken Kathi Roll",
+      "reason": "About 49 g carbohydrate; maida wrap (est.)"
+    },
+    {
+      "dishNumber": 36,
+      "dishName": "Rava Dosa",
+      "reason": "About 51.5 g carbohydrate; semolina and maida (est.)"
+    },
+    {
+      "dishNumber": 1,
+      "dishName": "Poha",
+      "reason": "About 57.6 g carbohydrate; refined starch breakfast (est.)"
+    },
+    {
+      "dishNumber": 47,
+      "dishName": "Veg Manchurian",
+      "reason": "Maida batter, ketchup and sauces, fried (est.)"
+    },
+    {
+      "dishNumber": 79,
+      "dishName": "Gobi Manchurian",
+      "reason": "Maida batter, ketchup and sauces, fried (est.)"
+    },
+    {
+      "dishNumber": 24,
+      "dishName": "Medu Vada",
+      "reason": "Deep-fried; trans fat if oil is reused (est.)"
+    },
+    {
+      "dishNumber": 28,
+      "dishName": "Chicken 65",
+      "reason": "Deep-fried; trans fat if oil is reused (est.)"
+    },
+    {
+      "dishNumber": 3,
+      "dishName": "Paneer Butter Masala",
+      "reason": "Butter and cream gravy: high saturated fat (est., see P4)"
+    },
+    {
+      "dishNumber": 7,
+      "dishName": "Butter Chicken",
+      "reason": "Butter and cream gravy: high saturated fat (est., see P4)"
+    },
+    {
+      "dishNumber": 27,
+      "dishName": "Dal Makhani",
+      "reason": "Butter and cream; high saturated fat (est., see P4)"
+    },
+    {
+      "dishNumber": 42,
+      "dishName": "Malai Kofta",
+      "reason": "Cream and fried koftas (est., see P4)"
+    },
+    {
+      "dishNumber": 95,
+      "dishName": "Rice Kheer",
+      "reason": "Sweet dessert (est. high added sugar)"
+    },
+    {
+      "dishNumber": 96,
+      "dishName": "Gajar Halwa",
+      "reason": "Sweet dessert (est. high added sugar)"
+    },
+    {
+      "dishNumber": 97,
+      "dishName": "Gulab Jamun",
+      "reason": "Fried sugar-syrup dessert (est. high added sugar)"
+    },
+    {
+      "dishNumber": 98,
+      "dishName": "Mango Lassi",
+      "reason": "Sweetened drink (est. high added sugar)"
+    },
+    {
+      "dishNumber": 99,
+      "dishName": "Masala Chai",
+      "reason": "Sugar spoons add up across the day (est.)"
+    },
+    {
+      "dishNumber": 100,
+      "dishName": "Cold Coffee",
+      "reason": "Sweetened drink (est. high added sugar)"
+    }
+  ],
+  "conflictsWith": [
+    {
+      "profileId": "high-triglycerides",
+      "rule": "Compatible and usually co-exists; P5 sugar, refined-carbohydrate and alcohol limits apply; TG of 500 mg/dL or more: doctor's plan overrides"
+    },
+    {
+      "profileId": "high-ldl-cholesterol",
+      "rule": "Compatible; P4 fat quality and fibre goals; LAI counts metabolic syndrome as a risk modifier"
+    },
+    {
+      "profileId": "hypertension",
+      "rule": "Compatible; P3 sodium and potassium rules; thiazide diuretics and beta-blockers can alter lipids, doctor decides about medicines"
+    },
+    {
+      "profileId": "type-2-diabetes",
+      "rule": "Same direction; P1 carbohydrate and sugar rules; stricter sugar limit wins; doctor input"
+    },
+    {
+      "profileId": "prediabetes",
+      "rule": "Same direction; P2 rules; waist and BMI triggers shared"
+    },
+    {
+      "profileId": "fatty-liver",
+      "rule": "Compatible; P7 sugar, alcohol and weight-loss rules match P6; doctor input"
+    },
+    {
+      "profileId": "chronic-kidney-disease",
+      "rule": "P13 overrides protein, potassium and fluid"
+    },
+    {
+      "profileId": "heart-disease",
+      "rule": "P21 overrides; fluid follows P21; doctor sets lipid goals"
+    },
+    {
+      "profileId": "pregnancy",
+      "rule": "Pregnancy overrides; no weight-loss deficit; a doctor reviews lipids and glucose"
+    },
+    {
+      "profileId": "breastfeeding",
+      "rule": "P23 energy needs apply; no deficit pushed; alcohol best none"
+    },
+    {
+      "profileId": "fat-loss",
+      "rule": "Compatible; P25 sets the deficit; P6 adds activity and alcohol rules"
+    },
+    {
+      "profileId": "muscle-gain",
+      "rule": "Compatible; resistance training is useful; surplus from whole foods, not sweets"
+    },
+    {
+      "profileId": "endurance-running",
+      "rule": "Compatible; avoid routine sugary sports drinks; carbohydrate set by P29"
+    },
+    {
+      "profileId": "pcos",
+      "rule": "Often co-exists (insulin resistance); same food direction; doctor input"
+    },
+    {
+      "profileId": "jain-diet",
+      "rule": "Food filter; use pulses, whole grains, nuts and seeds for fibre and unsaturated fat"
+    },
+    {
+      "profileId": "vegan-diet",
+      "rule": "Food filter; watch coconut milk saturated fat; plant omega-3 from flaxseed and walnuts"
+    }
+  ],
+  "requiresDoctorInput": true,
+  "requiresDoctorInputStated": true,
+  "fluidNote": null,
+  "warnings": [
+    "General information, not medical advice. FitPlate does not diagnose low HDL or metabolic syndrome; a clinical assessment and blood tests by a doctor are needed.",
+    "The app never suggests starting, stopping or changing any medicine or supplement (statins, fibrates, niacin, metformin, BP medicines, omega-3 capsules). Follow your doctor.",
+    "Do not take niacin or fish-oil capsules to raise HDL on your own; large trials of niacin added to statins showed no benefit and the HDL-raising approach is not recommended in a review.",
+    "HDL can fall with sugar-heavy and refined-carbohydrate diets, excess weight, inactivity and smoking; a higher HDL from alcohol is not a reason to drink (WHO: no safe level).",
+    "Very high HDL is not a goal; a Danish cohort found higher all-cause mortality at extreme HDL values.",
+    "Metabolic syndrome means several risk factors together; raised BP, glucose or triglycerides each need their own review; TG of 500 mg/dL or more: see P5 and talk to your doctor.",
+    "Emergency: chest pain, sudden breathlessness, or stroke signs (face droop, arm weakness, speech difficulty). Seek emergency care now (112).",
+    "With heart, kidney or liver disease, pregnancy or diuretics, follow your doctor's advice on fluids.",
+    "requires_doctor_input is true because metabolic syndrome bundles raised BP, glucose and triglycerides that often need medicines and monitoring, and many users take diuretics or other BP medicines; the app sets only general food, weight, activity, alcohol and sodium guidance on its own."
+  ],
+  "lastResearched": "2026-10-28",
+  "versions": [
+    {
+      "date": "2026-10-28",
+      "file": "FitPlate_Nutrients_2026-10-28.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3); max as safety limit",
+    "limits": "safety limit (lower on conflict)",
+    "lists": "union",
+    "requiresDoctorInput": "stated true in any version, else newest version (missing flag + limits → true)"
+  },
+  "mergeNotes": [],
+  "needsReview": []
+}

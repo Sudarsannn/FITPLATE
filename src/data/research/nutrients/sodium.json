@@ -1,0 +1,350 @@
+{
+  "id": "sodium",
+  "name": "Sodium",
+  "type": "mineral",
+  "subtype": "macromineral",
+  "unit": "mg",
+  "altUnits": [
+    {
+      "unit": "g salt (NaCl)",
+      "toMainUnitFactor": 393
+    },
+    {
+      "unit": "mmol",
+      "toMainUnitFactor": 22.99
+    }
+  ],
+  "unitConversions": [
+    {
+      "fromUnit": "g",
+      "compound": "salt",
+      "toMainUnitFactor": 393,
+      "raw": "1 g salt (NaCl) | 393 mg sodium"
+    },
+    {
+      "fromUnit": "mg",
+      "compound": "sodium",
+      "toMainUnitFactor": 2.54,
+      "raw": "1,000 mg sodium | 2.54 g salt"
+    }
+  ],
+  "targets": [
+    {
+      "group": "adult_male_sedentary",
+      "ear": null,
+      "rda": null,
+      "ai": 2000,
+      "source": "ICMR-NIN 2020 safe intake 2,000 mg (limit); WHO 2012 (secondary, unverified)"
+    },
+    {
+      "group": "adult_male_moderate",
+      "ear": null,
+      "rda": null,
+      "ai": 2000,
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "group": "adult_male_heavy",
+      "ear": null,
+      "rda": null,
+      "ai": 2000,
+      "source": "ICMR-NIN 2020 (secondary, unverified); heavy sweating needs Not found"
+    },
+    {
+      "group": "adult_female_sedentary",
+      "ear": null,
+      "rda": null,
+      "ai": 2000,
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "group": "adult_female_moderate",
+      "ear": null,
+      "rda": null,
+      "ai": 2000,
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "group": "adult_female_heavy",
+      "ear": null,
+      "rda": null,
+      "ai": 2000,
+      "source": "ICMR-NIN 2020 (secondary, unverified); heavy sweating needs Not found"
+    },
+    {
+      "group": "pregnant",
+      "ear": null,
+      "rda": null,
+      "ai": null,
+      "source": "ICMR value Not found; EFSA 2019 2,000 mg applies (secondary)"
+    },
+    {
+      "group": "lactating",
+      "ear": null,
+      "rda": null,
+      "ai": null,
+      "source": "ICMR value Not found; EFSA 2019 2,000 mg applies (secondary)"
+    }
+  ],
+  "appDefaultTarget": {
+    "adult_male": 2000,
+    "adult_female": 2000,
+    "pregnant": null,
+    "lactating": null,
+    "age_60_plus": null
+  },
+  "upperLimit": {
+    "value": 2300,
+    "unit": "mg",
+    "appliesTo": "food_and_supplements",
+    "source": "NASEM 2019 Chronic Disease Risk Reduction Intake (not a classical UL; age 14+); ICMR TUL Not found; app soft limit is 2,000 mg (ICMR-NIN/WHO)"
+  },
+  "topFoodSources": [
+    {
+      "food": "Iodised table salt (added in cooking)",
+      "veg": true,
+      "per100g": 39300,
+      "servingG": 5,
+      "servingLabel": "1 level tsp (est.)",
+      "perServing": 1965
+    },
+    {
+      "food": "Pickle (achar), low end of range",
+      "veg": true,
+      "per100g": 1600,
+      "servingG": 15,
+      "servingLabel": "1 tbsp (est.)",
+      "perServing": 240
+    },
+    {
+      "food": "Papad (survey mean)",
+      "veg": true,
+      "per100g": 1219,
+      "servingG": 12,
+      "servingLabel": "1 piece (est.)",
+      "perServing": 146
+    },
+    {
+      "food": "Aloo bhujia / namkeen (retailer label, unverified)",
+      "veg": true,
+      "per100g": 984,
+      "servingG": 30,
+      "servingLabel": "1 handful (est.)",
+      "perServing": 295
+    },
+    {
+      "food": "Processed cheese slice (one brand label)",
+      "veg": true,
+      "per100g": 1650,
+      "servingG": 20,
+      "servingLabel": "1 slice (est.)",
+      "perServing": 330
+    },
+    {
+      "food": "Egg, whole, boiled (IFCT M004)",
+      "veg": false,
+      "per100g": 121,
+      "servingG": 50,
+      "servingLabel": "1 egg",
+      "perServing": 61
+    }
+  ],
+  "goodSourceDishes": [
+    {
+      "dishNumber": 31,
+      "dishName": "Indian-style Overnight Oats"
+    },
+    {
+      "dishNumber": 81,
+      "dishName": "Paneer Paratha"
+    },
+    {
+      "dishNumber": 21,
+      "dishName": "Masala Omelette"
+    },
+    {
+      "dishNumber": 66,
+      "dishName": "Sprouts Chaat"
+    },
+    {
+      "dishNumber": 51,
+      "dishName": "Uttapam"
+    },
+    {
+      "dishNumber": 56,
+      "dishName": "Pesarattu"
+    }
+  ],
+  "deficiencyRiskIndia": "low",
+  "absorptionBoosters": [
+    "Glucose with sodium in ORS (helps gut absorption)"
+  ],
+  "absorptionBlockers": [],
+  "logPresets": [
+    {
+      "label": "Pinch of salt, about 0.5 g (est.)",
+      "amount": 197,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 197,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "1/4 tsp salt, about 1.25 g (est.)",
+      "amount": 491,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 491,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "1 level tsp salt, about 5 g (est.)",
+      "amount": 1965,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 1965,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "ORS glass 200 ml, WHO low-osmolarity",
+      "amount": 345,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 345,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "1 g salt tablet (sodium chloride)",
+      "amount": 393,
+      "unit": "mg",
+      "toMainFactor": 2.54,
+      "factorSource": "markdown",
+      "mainAmount": 998.22,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Doctor-prescribed sodium 3,000 mg/day (prescription dose)",
+      "amount": 3000,
+      "unit": "mg",
+      "toMainFactor": 2.54,
+      "factorSource": "markdown",
+      "mainAmount": 7620,
+      "mainAmountRange": null,
+      "prescriptionDose": true
+    }
+  ],
+  "warnings": [
+    "Sodium is tracked as a limit, not a target to reach; the default ceiling is 2,000 mg (about 5 g salt) a day.",
+    "good_source_dishes lists the lower-sodium dish picks, not sodium-rich dishes.",
+    "Do not use IFCT 'Prawns, big' (S008, 849 mg/100 g): suspect outlier; use about 188 mg/100 g (Q007).",
+    "Rock salt, black salt and pink salt are not low-sodium.",
+    "Potassium-enriched salt substitutes are not for kidney disease, pregnancy or users of ACE inhibitors, ARBs or potassium-sparing diuretics unless a doctor agrees.",
+    "Users with kidney, heart or liver disease, pregnancy, or on diuretics: show only the general range plus 'Follow your doctor's advice'; never push higher or lower salt or water.",
+    "Very low blood sodium signs (confusion, seizure, repeated vomiting): see a doctor now."
+  ],
+  "conditionAdjustments": [
+    {
+      "profileId": "P3",
+      "change": "Same 2,000 mg ceiling; optional 1,500 mg stretch goal only with doctor's agreement",
+      "value": 2000,
+      "unit": "mg",
+      "source": "ICMR STW hypertension; ESC 2024; KDIGO 2021; ACC/AHA (as in P3)"
+    },
+    {
+      "profileId": "P13",
+      "change": "KDIGO suggests under 2 g sodium for CKD with high BP; not for sodium-wasting kidney disease; no salt substitutes; requires doctor input",
+      "value": 2000,
+      "unit": "mg",
+      "source": "KDIGO 2021 BP in CKD guideline (via review snippet)"
+    },
+    {
+      "profileId": "P21",
+      "change": "ESC heart-failure advice about 5 g salt/day; US heart-failure guidance under 2,300 mg; doctor sets plan; requires doctor input",
+      "value": 2000,
+      "unit": "mg",
+      "source": "ESC HF consensus 2024 (via snippet); AHA/ACC/HFSA via review"
+    },
+    {
+      "profileId": "P22",
+      "change": "No routine sodium restriction recommended; no extra advice; requires doctor input for hypertension in pregnancy",
+      "value": null,
+      "unit": "mg",
+      "source": "Cochrane CD001687 (603 women, two trials); narrative reviews"
+    },
+    {
+      "profileId": "P23",
+      "change": "No change found; EFSA 2,000 mg applies to lactation",
+      "value": null,
+      "unit": "mg",
+      "source": "EFSA 2019 (secondary)"
+    },
+    {
+      "profileId": "P14",
+      "change": "Lower sodium advised for calcium stones; keep dietary calcium",
+      "value": 2300,
+      "unit": "mg",
+      "source": "NIDDK kidney stone diet guidance; CCJM review"
+    },
+    {
+      "profileId": "P29",
+      "change": "No change to daily limit; sodium-containing drink only for sessions over about 2 hours, heavy or salty sweat; drink to thirst",
+      "value": null,
+      "unit": "mg",
+      "source": "EAH consensus 2015; sweat-sodium data (secondary)"
+    },
+    {
+      "profileId": "P31",
+      "change": "Same limit; older adults on thiazide-type tablets are at risk of low sodium, so no very low salt push; requires doctor input if on diuretics",
+      "value": 2000,
+      "unit": "mg",
+      "source": "Thiazide hyponatraemia reviews (PMC)"
+    },
+    {
+      "profileId": "P33",
+      "change": "No change found; watch pickles, papad and namkeen",
+      "value": null,
+      "unit": "mg",
+      "source": "No change found"
+    },
+    {
+      "profileId": "P34",
+      "change": "No change found; watch soy sauce and packaged meat alternatives",
+      "value": null,
+      "unit": "mg",
+      "source": "No change found"
+    }
+  ],
+  "lastResearched": "2026-10-28",
+  "versions": [
+    {
+      "date": "2026-10-28",
+      "file": "FitPlate_Nutrients_2026-10-28.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3)",
+    "upperLimit": "official safety limit (D3, lower on conflict)",
+    "topFoodSources": "union; per100g official (D3)",
+    "logPresets": "union by label (newest), converted with own file factors",
+    "appDefaultTarget": "newest, kept only where it equals the ICMR row",
+    "lists": "union",
+    "warnings": "union (never dropped)",
+    "text": "newest"
+  },
+  "mergeNotes": [],
+  "needsReview": [
+    "app_default_target.pregnant = 2000 has no ICMR row to match (pregnant: \"ICMR value Not found; EFSA 2019 2,000 mg applies (secondary)\"); set to null",
+    "app_default_target.lactating = 2000 has no ICMR row to match (lactating: \"ICMR value Not found; EFSA 2019 2,000 mg applies (secondary)\"); set to null",
+    "2026-10-28 sodium: \"group\" has unexpected value \"age_60_plus_male\"; treated as not found",
+    "2026-10-28 sodium: \"group\" has unexpected value \"age_60_plus_female\"; treated as not found"
+  ]
+}

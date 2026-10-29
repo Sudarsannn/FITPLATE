@@ -15,66 +15,275 @@
         "avg": 305,
         "confidence": "High",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-10-25",
+        "min": 275,
+        "max": 420,
+        "avg": 340,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
       }
     ],
     "currentEstimate": {
       "min": 275,
-      "max": 340,
-      "avg": 305
+      "max": 370,
+      "avg": 320
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-10-25",
     "stale": false,
     "seasonal": false,
-    "listingCount": 3,
+    "listingCount": 5,
     "platforms": [
-      "BigBasket",
-      "OneIndia"
+      "BigBasket"
     ],
     "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "confirmed": false,
+    "checkNotes": [
+      "only 1 platform (BigBasket) backs the range"
+    ]
   },
   "per100Estimate": {
     "min": 27.5,
-    "max": 34,
-    "avg": 30.5
+    "max": 37,
+    "avg": 32
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 119,
+      "source": "USDA FDC: USDA SR 'Chicken, broilers or fryers, meat only, raw' (getfoodfacts id 171052; ReciPal id 830) seen only on mirror sites; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "proteinG": {
+      "value": 21.4,
+      "source": "USDA FDC: USDA SR 'Chicken, broilers or fryers, meat only, raw' (getfoodfacts id 171052; ReciPal id 830) seen only on mirror sites; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "carbsG": {
+      "value": 0,
+      "source": "USDA FDC: USDA SR 'Chicken, broilers or fryers, meat only, raw' (getfoodfacts id 171052; ReciPal id 830) seen only on mirror sites; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "sugarsG": {
+      "value": 0,
+      "source": "USDA FDC: USDA SR 'Chicken, broilers or fryers, meat only, raw' (getfoodfacts id 171052; ReciPal id 830) seen only on mirror sites; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "fatG": {
+      "value": 3.1,
+      "source": "USDA FDC: USDA SR 'Chicken, broilers or fryers, meat only, raw' (getfoodfacts id 171052; ReciPal id 830) seen only on mirror sites; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 0,
+      "source": "USDA FDC: USDA SR 'Chicken, broilers or fryers, meat only, raw' (getfoodfacts id 171052; ReciPal id 830) seen only on mirror sites; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "sodiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 70,
+      "source": "USDA FDC: USDA SR 'Chicken, broilers or fryers, meat only, raw' (getfoodfacts id 171052; ReciPal id 830) seen only on mirror sites; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": 16,
+      "source": "USDA FDC: USDA SR 'Chicken, broilers or fryers, meat only, raw' (getfoodfacts id 171052; ReciPal id 830) seen only on mirror sites; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": 8.2,
+      "source": "USDA FDC: USDA SR 'Chicken, broilers or fryers, meat only, raw' (getfoodfacts id 171052; ReciPal id 830) seen only on mirror sites; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "vitaminB6Mg": {
+      "value": 0.4,
+      "source": "USDA FDC: USDA SR 'Chicken, broilers or fryers, meat only, raw' (getfoodfacts id 171052; ReciPal id 830) seen only on mirror sites; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "vitaminB12Ug": {
+      "value": 0.4,
+      "source": "USDA FDC: USDA SR 'Chicken, broilers or fryers, meat only, raw' (getfoodfacts id 171052; ReciPal id 830) seen only on mirror sites; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Medium"
+    }
+  },
   "macrosPer100Estimate": {
-    "kcal": 120,
-    "proteinG": 20,
+    "kcal": 119.5,
+    "proteinG": 20.7,
     "carbsG": 0,
-    "fatG": 4,
+    "fatG": 3.6,
     "fibreG": 0
   },
-  "storage": "1–2 days, on the lowest shelf in a sealed container.",
-  "looksLike": "Pink, raw broiler chicken cut into medium pieces (BigBasket lists 12–16 pieces per 500 g pack) with bone, skin removed — mixed leg, thigh, breast and wing pieces.",
-  "howToPick": "light pink flesh, firm and springy, no grey/green tinge, no sour smell, little liquid in the pack; check packed-on date for chilled packs.",
-  "shelfLife": "chilled packs 1–2 days in the fridge (follow the use-by date).",
+  "storage": "Keep in the coldest part of the fridge and cook within a day or two, or freeze in a sealed bag; thaw in the fridge, not on the counter.",
+  "looksLike": "Raw chicken cut into small pieces (about 12 to 16 per 500 g) with the bone left in and the skin removed; pale pink meat with white bone.",
+  "howToPick": "Fresh pink flesh, no sour or strong smell, no slime, pieces cold and firmly packed. Avoid grey patches, sticky surface or a pool of liquid in the pack.",
+  "shelfLife": "Raw chicken keeps 1 to 2 days in the fridge (general guidance; not taken from a source in this run).",
   "substitutes": [
     "Chicken thigh/leg pieces (bone-in)",
     "Boneless chicken",
-    "Mutton curry cut"
+    "Mutton curry cut",
+    "Boneless chicken thigh",
+    "Mutton or goat curry cut",
+    "Whole chicken cut at home"
   ],
-  "usedIn": [],
+  "usedIn": [
+    {
+      "dishNumber": 101,
+      "quantity": 170,
+      "unit": "g",
+      "raw": "170 g per serving (about 120 g edible meat; 4 small pieces)"
+    }
+  ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-10-25",
+      "file": "FitPlate_Ingredients_2026-10-25.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 275.0–375.9 was wider than 30% of avg 320.7; narrowed to ±15%."
+  ]
 }

@@ -12,8 +12,10 @@ import { GuideCard } from '../../components/Guide';
 import { MusicPanel } from '../../components/Music';
 import { Bar, GradientButton, PressableScale, Ring } from '../../components/ui';
 import { getDish } from '../../data/research';
+import { featureFlags } from '../../config/featureFlags';
 import { ringAlarm } from '../../lib/alarm';
 import { select, success } from '../../lib/haptics';
+import { speakStep, stepSpeech, stopSpeaking } from '../../lib/speak';
 import { useStore } from '../../lib/store';
 import { stepIcon, whyItWorks } from '../../services/cookGuide';
 import { clearCookProgress, loadCookProgress, saveCookProgress, usableProgress, type CookProgress } from '../../services/cookProgress';
@@ -35,7 +37,7 @@ export default function StepsScreen() {
   const { id, servings: sv, via } = useLocalSearchParams<{ id: string; servings?: string; via?: string }>();
   const dish = id ? getDish(id) : undefined;
   const servings = Math.max(1, Number(sv) || 2);
-  const { logResearchCook, profile, settings } = useStore();
+  const { logResearchCook, profile, settings, updateSettings } = useStore();
   const tips = showBeginnerTips(profile.level, settings.featureToggles);
   const [i, setI] = useState(-1); // -1 = ingredients overview
   const [done, setDone] = useState(false);
@@ -52,6 +54,15 @@ export default function StepsScreen() {
       deactivateKeepAwake('fitplate-cook').catch(() => {});
     };
   }, []);
+
+  // Read each step aloud when the switch is on (stops when the step changes or the screen closes).
+  const readAloud = featureFlags.voiceSteps && settings.featureToggles.readAloud === true;
+  const spoken = i >= 0 ? dish?.steps[i] : undefined;
+  useEffect(() => {
+    if (readAloud && spoken && !done) speakStep(stepSpeech(spoken));
+    else stopSpeaking();
+    return stopSpeaking;
+  }, [readAloud, spoken, done]);
 
   // Offer to pick up where this dish was left.
   useEffect(() => {
@@ -98,6 +109,18 @@ export default function StepsScreen() {
           <Bar progress={steps.length ? (i + 1) / steps.length : 0} />
         )}
       </View>
+      {featureFlags.voiceSteps && i >= 0 ? (
+        <Pressable
+          onPress={() => updateSettings({ featureToggles: { ...settings.featureToggles, readAloud: !readAloud } })}
+          style={s.voice}
+          accessibilityRole="switch"
+          accessibilityState={{ checked: readAloud }}
+          accessibilityLabel="Read steps aloud"
+        >
+          <Ionicons name={readAloud ? 'volume-high' : 'volume-mute-outline'} size={18} color={readAloud ? colors.accent : colors.muted} />
+          <Text style={{ color: readAloud ? colors.accent : colors.muted, fontWeight: '800', fontSize: 13 }}>{readAloud ? 'Reading aloud' : 'Read aloud'}</Text>
+        </Pressable>
+      ) : null}
       <ScrollView contentContainerStyle={{ padding: 18, paddingBottom: 140 }}>
         {i === -1 ? (
           <>
@@ -180,6 +203,8 @@ export default function StepsScreen() {
             {step.visualCue ? (
               <GuideCard icon="eye-outline" tone={colors.accent} label="You should see" body={step.visualCue} />
             ) : null}
+            {step.videoShot ? <GuideCard icon="videocam-outline" tone={colors.blue} label="Video for this step (coming soon)" body={`What it will show: ${step.videoShot.replace(/[.\s]+$/, '')}.`} /> : null}
+            {featureFlags.cameraCheck && step.cameraCheck ? <GuideCard icon="camera-outline" tone={colors.violet} label="Camera check (coming soon)" body={step.cameraCheck} /> : null}
             {step.watchOut || (step.tip && tips) ? (
               <GuideCard icon="warning-outline" tone={colors.warn} label={step.watchOut ? 'Watch out for' : 'Tip'} body={(step.watchOut ?? step.tip)!} />
             ) : null}
@@ -310,6 +335,14 @@ function Finished({ dish, servings }: { dish: Dish; servings: number }) {
         </View>
         {saved == null ? <Text style={[k.muted, { textAlign: 'center' }]}>Money saved shows once both the order price and the ingredient prices are confirmed.</Text> : null}
 
+        <View style={{ marginTop: 14, padding: 12, borderRadius: radius.md, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, flexDirection: 'row', alignItems: 'center', gap: 10 }}>
+          <Ionicons name="checkmark-circle" size={22} color={colors.accent} />
+          <Text style={[k.body, { flex: 1 }]}>Logged to Today{n.kcal != null ? `: ${Math.round(n.kcal)} kcal` : ''}. Ate less or more? Edit it in My Meals.</Text>
+          <Pressable onPress={() => router.push('/(tabs)/track')} accessibilityRole="button" hitSlop={8}>
+            <Text style={{ color: colors.accent, fontWeight: '800' }}>View</Text>
+          </Pressable>
+        </View>
+
         <Section title="How was it?">
           <View style={{ flexDirection: 'row', gap: 8, justifyContent: 'center' }}>
             {([1, 2, 3, 4, 5] as const).map((v) => (
@@ -376,6 +409,7 @@ export function StepTimer({ seconds }: { seconds: number }) {
 }
 
 const s = StyleSheet.create({
+  voice: { alignSelf: 'flex-end', flexDirection: 'row', alignItems: 'center', gap: 6, marginRight: 18, marginTop: 8, paddingHorizontal: 12, paddingVertical: 7, borderRadius: radius.pill, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border },
   resume: { padding: 14, borderRadius: radius.lg, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.accent, marginBottom: 14 },
   overview: { flexDirection: 'row', gap: 10, marginBottom: 14 },
   ovStat: { flex: 1, alignItems: 'center', gap: 2, paddingVertical: 12, borderRadius: radius.md, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border },

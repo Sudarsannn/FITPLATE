@@ -15,35 +15,226 @@
         "avg": 95,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-10-25",
+        "min": 70,
+        "max": 210,
+        "avg": 135,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
       }
     ],
     "currentEstimate": {
-      "min": 85,
-      "max": 100,
-      "avg": 95
+      "min": 100,
+      "max": 130,
+      "avg": 115
     },
-    "method": "single",
+    "method": "spike-blend",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-10-25",
     "stale": false,
     "seasonal": true,
-    "listingCount": 5,
+    "listingCount": 6,
     "platforms": [
       "BigBasket",
-      "OneIndia"
+      "Blinkit",
+      "Swiggy Instamart"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 8.5,
-    "max": 10,
-    "avg": 9.5
+    "min": 10,
+    "max": 13,
+    "avg": 11.5
   },
   "seasonal": true,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 40,
+      "source": "USDA FDC: USDA 'Peppers, hot chili, green, raw' (getfoodfacts lists FDC 170497; ID not confirmed against FDC); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "proteinG": {
+      "value": 2,
+      "source": "USDA FDC: USDA 'Peppers, hot chili, green, raw' (getfoodfacts lists FDC 170497; ID not confirmed against FDC); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "carbsG": {
+      "value": 9.5,
+      "source": "USDA FDC: USDA 'Peppers, hot chili, green, raw' (getfoodfacts lists FDC 170497; ID not confirmed against FDC); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sugarsG": {
+      "value": 5.1,
+      "source": "USDA FDC: USDA 'Peppers, hot chili, green, raw' (getfoodfacts lists FDC 170497; ID not confirmed against FDC); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "fatG": {
+      "value": 0.2,
+      "source": "USDA FDC: USDA 'Peppers, hot chili, green, raw' (getfoodfacts lists FDC 170497; ID not confirmed against FDC); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 1.5,
+      "source": "USDA FDC: USDA 'Peppers, hot chili, green, raw' (getfoodfacts lists FDC 170497; ID not confirmed against FDC); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sodiumMg": {
+      "value": 7,
+      "source": "USDA FDC: USDA 'Peppers, hot chili, green, raw' (getfoodfacts lists FDC 170497; ID not confirmed against FDC); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "ironMg": {
+      "value": 1.2,
+      "source": "USDA FDC: USDA 'Peppers, hot chili, green, raw' (getfoodfacts lists FDC 170497; ID not confirmed against FDC); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "calciumMg": {
+      "value": 18,
+      "source": "USDA FDC: USDA 'Peppers, hot chili, green, raw' (getfoodfacts lists FDC 170497; ID not confirmed against FDC); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "potassiumMg": {
+      "value": 340,
+      "source": "USDA FDC: USDA 'Peppers, hot chili, green, raw' (getfoodfacts lists FDC 170497; ID not confirmed against FDC); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": 242.5,
+      "source": "USDA FDC: USDA 'Peppers, hot chili, green, raw' (getfoodfacts lists FDC 170497; ID not confirmed against FDC); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": 87.7,
+      "source": "USDA FDC: USDA 'Peppers, hot chili, green, raw' (getfoodfacts lists FDC 170497; ID not confirmed against FDC); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "USDA FDC: USDA 'Peppers, hot chili, green, raw' (getfoodfacts lists FDC 170497; ID not confirmed against FDC); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "USDA FDC: USDA 'Peppers, hot chili, green, raw' (getfoodfacts lists FDC 170497; ID not confirmed against FDC); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    }
+  },
   "macrosPer100Estimate": {
     "kcal": 40,
     "proteinG": 2,
@@ -51,55 +242,80 @@
     "fatG": 0.2,
     "fibreG": 1.5
   },
-  "storage": "Remove the stalks, wipe dry and store in a paper-lined box in the fridge: 10–14 days. Freezer: whole or chopped, 2–3 months (they go soft but keep their heat).",
-  "looksLike": "Slim, glossy green pods, 5–10 cm long, with a green stalk cap. The common Mumbai market chilli is medium-long and medium-hot; \"bullet\" and \"jwala\" types are shorter and hotter.",
-  "howToPick": null,
-  "shelfLife": "1–2 weeks in the fridge.",
+  "storage": "Remove the stems, keep in a paper-lined box or bag in the fridge for about a week; do not wash until use.",
+  "looksLike": "A slim, 5 to 10 cm green pod, glossy, pointed at the tip. BigBasket sells long medium, small and dark green types; heat varies a lot.",
+  "howToPick": "Bright glossy green, firm, with the stem attached and no wrinkles or black spots. Avoid soft, slimy or yellowing pods.",
+  "shelfLife": "About a week in the fridge (general guidance; not taken from a source in this run).",
   "substitutes": [
     "Red chilli powder",
     "Green chilli paste (jar)",
-    "Black pepper"
+    "Black pepper",
+    "Green chilli paste or slit pods from the pantry (frozen)",
+    "Red chilli powder or flakes",
+    "Green capsicum plus a pinch of pepper"
   ],
   "usedIn": [
     {
-      "dishNumber": 1,
-      "quantity": 5,
-      "unit": "g",
-      "raw": "5 g (1 small chilli)"
-    },
-    {
-      "dishNumber": 2,
-      "quantity": null,
-      "unit": null,
-      "raw": "1 piece (slit; about 3–5 g)"
-    },
-    {
-      "dishNumber": 4,
+      "dishNumber": 81,
       "quantity": 3,
       "unit": "g",
-      "raw": "3 g (1 small, in the potato masala)"
+      "raw": "3 g per serving (½ small chilli, finely chopped)"
     },
     {
-      "dishNumber": 5,
+      "dishNumber": 82,
+      "quantity": 4,
+      "unit": "g",
+      "raw": "4 g per serving (1 medium, slit)"
+    },
+    {
+      "dishNumber": 83,
       "quantity": 3,
       "unit": "g",
-      "raw": "3 g (1 small, slit)"
+      "raw": "3 g per serving (1 small, half in chutney and half chopped)"
+    },
+    {
+      "dishNumber": 84,
+      "quantity": 4,
+      "unit": "g",
+      "raw": "4 g per serving (1 medium, slit)"
+    },
+    {
+      "dishNumber": 85,
+      "quantity": 3,
+      "unit": "g",
+      "raw": "3 g per serving (1 small)"
+    },
+    {
+      "dishNumber": 101,
+      "quantity": 6,
+      "unit": "g",
+      "raw": "6 g per serving (1 to 2 medium)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-10-25",
+      "file": "FitPlate_Ingredients_2026-10-25.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (spike-blend)",
     "macrosPer100Estimate": "stable (single)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: possible-spike",
+    "price flag: narrowed",
+    "Possible spike: latest avg 135 (2026-10-25) moved more than 35% from the previous estimate; using the halfway point.",
+    "Range 77.5–155.0 was wider than 30% of avg 115.0; narrowed to ±15%."
+  ]
 }

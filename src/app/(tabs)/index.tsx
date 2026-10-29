@@ -13,6 +13,7 @@ import { MacroLines, MicroSummary } from '../../components/TodaySummary';
 import { CountUp, FadeIn, Glass, Glow, PressableScale, Ring, SectionHeader } from '../../components/ui';
 import { dishLibraryHref, profileHref } from '../../config/tabs';
 import { select, success } from '../../lib/haptics';
+import { LateNightCard } from '../../components/LateNightCard';
 import { StreakButton } from '../../components/StreakButton';
 import { addDays, dayKey, dayTotals, FIBRE_TARGET, GOALS, recommend, useStore, WATER_TARGET } from '../../lib/store';
 import { BALANCE_LABEL } from '../../services/dishDetail';
@@ -196,6 +197,7 @@ export default function Today() {
           </FadeIn>
 
           <FadeIn i={4}>
+            <LateNightCard />
             <Glass style={{ marginTop: 14 }}>
               <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
                 <View>

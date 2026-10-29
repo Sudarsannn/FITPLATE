@@ -5,7 +5,7 @@
     "namak",
     "iodised"
   ],
-  "category": "Packaged",
+  "category": "Packaged (seasoning)",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -16,6 +16,14 @@
         "avg": 28,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-10-25",
+        "min": 24,
+        "max": 30,
+        "avg": 28,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
       }
     ],
     "currentEstimate": {
@@ -23,17 +31,16 @@
       "max": 30,
       "avg": 28
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-10-25",
     "stale": false,
     "seasonal": false,
-    "listingCount": 3,
+    "listingCount": 4,
     "platforms": [
       "BigBasket",
-      "StoreKing",
-      "take.app"
+      "StoreKing"
     ],
     "outOfStock": false,
     "confirmed": true,
@@ -45,7 +52,189 @@
     "avg": 2.8
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 0,
+      "source": "Other: composition (no database entry seen): No IFCT or USDA entry seen; zero by composition: energy_kcal, protein_g, carbohydrate_g, sugars_g, fat_g, saturated_fat_g, fibre_g, cholesterol_mg, trans_fat_g, added_sugars_g, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "proteinG": {
+      "value": 0,
+      "source": "Other: composition (no database entry seen): No IFCT or USDA entry seen; zero by composition: energy_kcal, protein_g, carbohydrate_g, sugars_g, fat_g, saturated_fat_g, fibre_g, cholesterol_mg, trans_fat_g, added_sugars_g, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "carbsG": {
+      "value": 0,
+      "source": "Other: composition (no database entry seen): No IFCT or USDA entry seen; zero by composition: energy_kcal, protein_g, carbohydrate_g, sugars_g, fat_g, saturated_fat_g, fibre_g, cholesterol_mg, trans_fat_g, added_sugars_g, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "sugarsG": {
+      "value": 0,
+      "source": "Other: composition (no database entry seen): No IFCT or USDA entry seen; zero by composition: energy_kcal, protein_g, carbohydrate_g, sugars_g, fat_g, saturated_fat_g, fibre_g, cholesterol_mg, trans_fat_g, added_sugars_g, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "fatG": {
+      "value": 0,
+      "source": "Other: composition (no database entry seen): No IFCT or USDA entry seen; zero by composition: energy_kcal, protein_g, carbohydrate_g, sugars_g, fat_g, saturated_fat_g, fibre_g, cholesterol_mg, trans_fat_g, added_sugars_g, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "saturatedFatG": {
+      "value": 0,
+      "source": "Other: composition (no database entry seen): No IFCT or USDA entry seen; zero by composition: energy_kcal, protein_g, carbohydrate_g, sugars_g, fat_g, saturated_fat_g, fibre_g, cholesterol_mg, trans_fat_g, added_sugars_g, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "fibreG": {
+      "value": 0,
+      "source": "Other: composition (no database entry seen): No IFCT or USDA entry seen; zero by composition: energy_kcal, protein_g, carbohydrate_g, sugars_g, fat_g, saturated_fat_g, fibre_g, cholesterol_mg, trans_fat_g, added_sugars_g, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "sodiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "Other: composition (no database entry seen): No IFCT or USDA entry seen; zero by composition: energy_kcal, protein_g, carbohydrate_g, sugars_g, fat_g, saturated_fat_g, fibre_g, cholesterol_mg, trans_fat_g, added_sugars_g, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "transFatG": {
+      "value": 0,
+      "source": "Other: composition (no database entry seen): No IFCT or USDA entry seen; zero by composition: energy_kcal, protein_g, carbohydrate_g, sugars_g, fat_g, saturated_fat_g, fibre_g, cholesterol_mg, trans_fat_g, added_sugars_g, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": 0,
+      "source": "Other: composition (no database entry seen): No IFCT or USDA entry seen; zero by composition: energy_kcal, protein_g, carbohydrate_g, sugars_g, fat_g, saturated_fat_g, fibre_g, cholesterol_mg, trans_fat_g, added_sugars_g, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "Other: composition (no database entry seen): No IFCT or USDA entry seen; zero by composition: energy_kcal, protein_g, carbohydrate_g, sugars_g, fat_g, saturated_fat_g, fibre_g, cholesterol_mg, trans_fat_g, added_sugars_g, vitamin_b12_ug",
+      "confidence": "Low"
+    }
+  },
   "macrosPer100Estimate": {
     "kcal": 0,
     "proteinG": 0,
@@ -53,55 +242,75 @@
     "fatG": 0,
     "fibreG": 0
   },
-  "storage": "Airtight container at room temperature, away from steam and moisture, which cause lumps. A few rice grains in the salt shaker absorb damp. It lasts indefinitely.",
-  "looksLike": "fine, free-flowing white crystals, sold in 1 kg plastic pouches.",
-  "howToPick": "choose a sealed pouch marked \"iodised\" with a recent date. The salt should be dry and free-flowing, not lumpy or wet.",
-  "shelfLife": "salt does not spoil. Packs usually state about 2–3 years, mainly because iodine content falls slowly.",
+  "storage": "Keep in a dry airtight container away from the stove and damp; iodised salt loses iodine if it gets hot and wet.",
+  "looksLike": "Fine white free-flowing crystals in a 1 kg pouch; iodised table salt has potassium iodate or iodide added.",
+  "howToPick": "Look for \"iodised\" and the FSSAI mark on a sealed, dry pouch; the salt should flow freely and be dry and white.",
+  "shelfLife": "Salt does not spoil; iodine slowly declines with heat, moisture and light, so use within about a year and keep sealed (general guidance).",
   "substitutes": [
     "Rock salt (sendha namak), 1",
-    "Sea salt or kosher salt, 1"
+    "Sea salt or kosher salt, 1",
+    "Rock salt (sendha namak)",
+    "Sea salt",
+    "Low-sodium (potassium) salt"
   ],
   "usedIn": [
     {
-      "dishNumber": 1,
-      "quantity": 1.5,
+      "dishNumber": 81,
+      "quantity": 0.3,
       "unit": "g",
-      "raw": "1.5 g (¼ tsp, scant)"
+      "raw": "0.3 g in the dough and 0.4 g in the filling"
     },
     {
-      "dishNumber": 2,
-      "quantity": 4,
-      "unit": "g",
-      "raw": "4 g (marinade) + 6 g (rice cooking water, mostly drained off)"
-    },
-    {
-      "dishNumber": 3,
-      "quantity": 2,
-      "unit": "g",
-      "raw": "2 g (⅓ tsp)"
-    },
-    {
-      "dishNumber": 4,
-      "quantity": 1,
-      "unit": "g",
-      "raw": "1 g (batter) + 2 g (potato masala)"
-    },
-    {
-      "dishNumber": 5,
+      "dishNumber": 82,
       "quantity": 2.5,
       "unit": "g",
-      "raw": "2.5 g (½ tsp, level)"
+      "raw": "2.5 g per serving"
+    },
+    {
+      "dishNumber": 83,
+      "quantity": 0.5,
+      "unit": "g",
+      "raw": "0.5 g per serving (black salt 0.3 g is separate)"
+    },
+    {
+      "dishNumber": 84,
+      "quantity": 2,
+      "unit": "g",
+      "raw": "2 g for the rice water and 2.5 g for the masala (4.5 g)"
+    },
+    {
+      "dishNumber": 85,
+      "quantity": 1.5,
+      "unit": "g",
+      "raw": "1.5 g per serving"
+    },
+    {
+      "dishNumber": 101,
+      "quantity": 1,
+      "unit": "g",
+      "raw": "1 g in the marinade and 1.5 g in the pot (2.5 g)"
+    },
+    {
+      "dishNumber": 102,
+      "quantity": 5,
+      "unit": "g",
+      "raw": "5 g in the pasta water and 1.5 g in the sauce"
     }
   ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-10-25",
+      "file": "FitPlate_Ingredients_2026-10-25.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (wma)",
     "macrosPer100Estimate": "stable (single)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",

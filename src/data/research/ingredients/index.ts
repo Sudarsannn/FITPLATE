@@ -48,6 +48,7 @@ import item_curd_plain from './curd-plain.json';
 import item_curry_leaves from './curry-leaves.json';
 import item_desiccated_coconut from './desiccated-coconut.json';
 import item_dried_fenugreek_leaves from './dried-fenugreek-leaves.json';
+import item_dried_oregano_packaged from './dried-oregano-packaged.json';
 import item_dried_red_chilli_whole from './dried-red-chilli-whole.json';
 import item_drumstick from './drumstick.json';
 import item_dry_ginger_powder from './dry-ginger-powder.json';
@@ -87,6 +88,7 @@ import item_kewra_water from './kewra-water.json';
 import item_kokum_dried_rind from './kokum-dried-rind.json';
 import item_lemon from './lemon.json';
 import item_light_soy_sauce from './light-soy-sauce.json';
+import item_mace_whole_blades from './mace-whole-blades.json';
 import item_malvani_masala_packaged from './malvani-masala-packaged.json';
 import item_marathi_moggu from './marathi-moggu.json';
 import item_masoor_dal_packaged from './masoor-dal-packaged.json';
@@ -199,6 +201,7 @@ export const items: Ingredient[] = [
   item_curry_leaves as unknown as Ingredient,
   item_desiccated_coconut as unknown as Ingredient,
   item_dried_fenugreek_leaves as unknown as Ingredient,
+  item_dried_oregano_packaged as unknown as Ingredient,
   item_dried_red_chilli_whole as unknown as Ingredient,
   item_drumstick as unknown as Ingredient,
   item_dry_ginger_powder as unknown as Ingredient,
@@ -238,6 +241,7 @@ export const items: Ingredient[] = [
   item_kokum_dried_rind as unknown as Ingredient,
   item_lemon as unknown as Ingredient,
   item_light_soy_sauce as unknown as Ingredient,
+  item_mace_whole_blades as unknown as Ingredient,
   item_malvani_masala_packaged as unknown as Ingredient,
   item_marathi_moggu as unknown as Ingredient,
   item_masoor_dal_packaged as unknown as Ingredient,

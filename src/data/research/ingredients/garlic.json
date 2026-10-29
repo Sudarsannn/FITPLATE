@@ -4,7 +4,7 @@
   "aliases": [
     "lahsun"
   ],
-  "category": "Vegetable (bulb/spice)",
+  "category": "Vegetable",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -15,75 +15,298 @@
         "avg": 185,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-10-25",
+        "min": 160,
+        "max": 280,
+        "avg": 235,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
       }
     ],
     "currentEstimate": {
-      "min": 180,
-      "max": 190,
-      "avg": 185
+      "min": 185,
+      "max": 250,
+      "avg": 215
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-10-25",
     "stale": false,
     "seasonal": false,
-    "listingCount": 2,
+    "listingCount": 8,
     "platforms": [
-      "BigBasket",
-      "OneIndia"
+      "BigBasket"
     ],
     "outOfStock": false,
     "confirmed": false,
     "checkNotes": [
-      "only 2 listings back the range (need 3)"
+      "only 1 platform (BigBasket) backs the range"
     ]
   },
   "per100Estimate": {
-    "min": 18,
-    "max": 19,
-    "avg": 18.5
+    "min": 18.5,
+    "max": 25,
+    "avg": 21.5
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 149,
+      "source": "USDA FDC: USDA FDC 169230 'Garlic, raw' (SR Legacy); values seen only on secondary pages; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "proteinG": {
+      "value": 6.4,
+      "source": "USDA FDC: USDA FDC 169230 'Garlic, raw' (SR Legacy); values seen only on secondary pages; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "carbsG": {
+      "value": 33.1,
+      "source": "USDA FDC: USDA FDC 169230 'Garlic, raw' (SR Legacy); values seen only on secondary pages; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "sugarsG": {
+      "value": 1,
+      "source": "USDA FDC: USDA FDC 169230 'Garlic, raw' (SR Legacy); values seen only on secondary pages; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "fatG": {
+      "value": 0.5,
+      "source": "USDA FDC: USDA FDC 169230 'Garlic, raw' (SR Legacy); values seen only on secondary pages; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "saturatedFatG": {
+      "value": 0.09,
+      "source": "USDA FDC: USDA FDC 169230 'Garlic, raw' (SR Legacy); values seen only on secondary pages; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "fibreG": {
+      "value": 2.1,
+      "source": "USDA FDC: USDA FDC 169230 'Garlic, raw' (SR Legacy); values seen only on secondary pages; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "sodiumMg": {
+      "value": 17,
+      "source": "USDA FDC: USDA FDC 169230 'Garlic, raw' (SR Legacy); values seen only on secondary pages; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "ironMg": {
+      "value": 1.7,
+      "source": "USDA FDC: USDA FDC 169230 'Garlic, raw' (SR Legacy); values seen only on secondary pages; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": 31.2,
+      "source": "USDA FDC: USDA FDC 169230 'Garlic, raw' (SR Legacy); values seen only on secondary pages; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 169230 'Garlic, raw' (SR Legacy); values seen only on secondary pages; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": 14.2,
+      "source": "USDA FDC: USDA FDC 169230 'Garlic, raw' (SR Legacy); values seen only on secondary pages; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 169230 'Garlic, raw' (SR Legacy); values seen only on secondary pages; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    }
+  },
   "macrosPer100Estimate": {
     "kcal": 149,
     "proteinG": 6.4,
     "carbsG": 33.1,
-    "fatG": 0.5,
+    "fatG": 0.1,
     "fibreG": 2.1
   },
-  "storage": "Whole bulbs: room temperature, in a dry, airy, dark place (not the fridge), for 1–2 months. Peeled cloves: airtight container in the fridge for 1–2 weeks. Paste: fridge for 1 week, or freezer in cubes for 3 months.",
-  "looksLike": "A white or purple-tinged papery bulb made of many small cloves. Indian \"desi\" garlic has small cloves; \"Ooty\" or big-clove garlic has larger, easier-to-peel cloves.",
-  "howToPick": null,
-  "shelfLife": "Whole bulbs keep 1–2 months.",
+  "storage": "Keep whole bulbs at room temperature in a dry, ventilated basket away from sunlight; peeled cloves keep about a week in the fridge in a closed box.",
+  "looksLike": "A papery-skinned white bulb made of several curved cloves, with a strong pungent smell when cut or crushed.",
+  "howToPick": "Hard, plump bulbs with tight dry skin and no green sprouts or soft spots. Avoid damp, mouldy or hollow bulbs.",
+  "shelfLife": "A few weeks to a couple of months in a dry, airy place (general guidance; not taken from a source in this run).",
   "substitutes": [
     "Ginger-garlic paste",
     "Garlic powder",
-    "Asafoetida (hing)"
+    "Asafoetida (hing)",
+    "Hing (asafoetida) with a little ginger"
   ],
   "usedIn": [
     {
-      "dishNumber": 5,
+      "dishNumber": 82,
       "quantity": 6,
       "unit": "g",
-      "raw": "6 g (3 cloves; 2 chopped for the masala, 1 sliced for the tadka)"
+      "raw": "6 g per serving."
+    },
+    {
+      "dishNumber": 84,
+      "quantity": 4,
+      "unit": "g",
+      "raw": "4 g per serving."
+    },
+    {
+      "dishNumber": 85,
+      "quantity": 2,
+      "unit": "g",
+      "raw": "2 g per serving."
+    },
+    {
+      "dishNumber": 101,
+      "quantity": 6,
+      "unit": "g",
+      "raw": "6 g per serving."
+    },
+    {
+      "dishNumber": 102,
+      "quantity": 5,
+      "unit": "g",
+      "raw": "5 g per serving."
     }
   ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-10-25",
+      "file": "FitPlate_Ingredients_2026-10-25.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 167.6–245.7 was wider than 30% of avg 215.9; narrowed to ±15%.",
+    "macrosPer100Estimate.fatG: Versions 2026-10-04 (0.5) and 2026-10-25 (0.09) differ by more than 25%; kept the newer."
+  ]
 }

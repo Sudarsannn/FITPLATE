@@ -15,37 +15,231 @@
         "avg": 40,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-10-25",
+        "min": 36,
+        "max": 80,
+        "avg": 54,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
       }
     ],
     "currentEstimate": {
-      "min": 35,
-      "max": 45,
-      "avg": 40
+      "min": 41,
+      "max": 56,
+      "avg": 49
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-10-25",
     "stale": false,
     "seasonal": true,
-    "listingCount": 4,
+    "listingCount": 7,
     "platforms": [
       "Amazon",
       "BigBasket",
-      "Expatistan",
-      "OneIndia"
+      "Blinkit",
+      "DMart Ready",
+      "JioMart",
+      "Swiggy Instamart"
     ],
-    "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "outOfStock": true,
+    "confirmed": false,
+    "checkNotes": [
+      "a listing used for the range is marked out of stock, closed or not taking orders"
+    ]
   },
   "per100Estimate": {
-    "min": 3.5,
-    "max": 4.5,
-    "avg": 4
+    "min": 4.1,
+    "max": 5.6,
+    "avg": 4.9
   },
   "seasonal": true,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 18,
+      "source": "USDA FDC: USDA FDC 170457 'Tomatoes, red, ripe, raw, year round average' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "proteinG": {
+      "value": 0.9,
+      "source": "USDA FDC: USDA FDC 170457 'Tomatoes, red, ripe, raw, year round average' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "carbsG": {
+      "value": 3.9,
+      "source": "USDA FDC: USDA FDC 170457 'Tomatoes, red, ripe, raw, year round average' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sugarsG": {
+      "value": 2.63,
+      "source": "USDA FDC: USDA FDC 170457 'Tomatoes, red, ripe, raw, year round average' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "fatG": {
+      "value": 0.2,
+      "source": "USDA FDC: USDA FDC 170457 'Tomatoes, red, ripe, raw, year round average' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 1.2,
+      "source": "USDA FDC: USDA FDC 170457 'Tomatoes, red, ripe, raw, year round average' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sodiumMg": {
+      "value": 5,
+      "source": "USDA FDC: USDA FDC 170457 'Tomatoes, red, ripe, raw, year round average' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "ironMg": {
+      "value": 0.27,
+      "source": "USDA FDC: USDA FDC 170457 'Tomatoes, red, ripe, raw, year round average' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "calciumMg": {
+      "value": 10,
+      "source": "USDA FDC: USDA FDC 170457 'Tomatoes, red, ripe, raw, year round average' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "potassiumMg": {
+      "value": 237,
+      "source": "USDA FDC: USDA FDC 170457 'Tomatoes, red, ripe, raw, year round average' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": 13.7,
+      "source": "USDA FDC: USDA FDC 170457 'Tomatoes, red, ripe, raw, year round average' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": 94.5,
+      "source": "USDA FDC: USDA FDC 170457 'Tomatoes, red, ripe, raw, year round average' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 170457 'Tomatoes, red, ripe, raw, year round average' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 170457 'Tomatoes, red, ripe, raw, year round average' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    }
+  },
   "macrosPer100Estimate": {
     "kcal": 18,
     "proteinG": 0.9,
@@ -53,43 +247,66 @@
     "fatG": 0.2,
     "fibreG": 1.2
   },
-  "storage": "Unripe: room temperature, stem side down, out of the sun, until red. Ripe: fridge for 5–7 days (bring to room temperature before using). Purée: fridge for 3 days; freezer in ice-cube trays for 2–3 months.",
-  "looksLike": "Round, glossy red fruit with a green stem scar. The everyday \"hybrid\" tomato is firm, round and evenly red. The \"desi/country\" type is softer, more sour and often ribbed.",
-  "howToPick": null,
-  "shelfLife": "3–5 days ripe at room temperature; about a week in the fridge.",
+  "storage": "Ripe tomatoes keep at room temperature for a few days; the fridge slows spoilage but dulls the flavour. Keep cut tomato in a closed box in the fridge for 1 to 2 days.",
+  "looksLike": "A round, smooth red fruit, juicy inside with seeds in jelly-like pulp. Indian shops sell \"desi\" or \"local\" (smaller, tangier, softer) and \"hybrid\" (firmer, more uniform) types.",
+  "howToPick": "Firm but slightly yielding, evenly red, glossy, with a fresh tomato smell. Avoid split skin, soft wet patches or green shoulders (unripe) unless you want tangy firm tomato.",
+  "shelfLife": "Ripe tomatoes keep about 3 to 5 days on the counter (general guidance; not taken from a source in this run).",
   "substitutes": [
     "Tomato purée (packaged)",
     "Canned chopped tomatoes",
-    "A little amchur or tamarind"
+    "A little amchur or tamarind",
+    "Tomato puree",
+    "Canned chopped tomato",
+    "Curd or a little tamarind"
   ],
   "usedIn": [
     {
-      "dishNumber": 3,
-      "quantity": 150,
+      "dishNumber": 82,
+      "quantity": 60,
       "unit": "g",
-      "raw": "150 g (2 medium, ripe red)"
+      "raw": "60 g per serving (½ medium, chopped)"
     },
     {
-      "dishNumber": 5,
-      "quantity": 50,
+      "dishNumber": 83,
+      "quantity": 30,
       "unit": "g",
-      "raw": "50 g (½ medium)"
+      "raw": "30 g per serving (2 tbsp, finely chopped)"
+    },
+    {
+      "dishNumber": 84,
+      "quantity": 60,
+      "unit": "g",
+      "raw": "60 g per serving (½ medium, chopped)"
+    },
+    {
+      "dishNumber": 85,
+      "quantity": 40,
+      "unit": "g",
+      "raw": "40 g per serving (½ small)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-10-25",
+      "file": "FitPlate_Ingredients_2026-10-25.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (wma)",
     "macrosPer100Estimate": "stable (single)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 35.6–66.7 was wider than 30% of avg 48.7; narrowed to ±15%."
+  ]
 }

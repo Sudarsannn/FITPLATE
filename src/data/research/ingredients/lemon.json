@@ -15,33 +15,222 @@
         "avg": 5,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-10-25",
+        "min": 5,
+        "max": 15,
+        "avg": 9,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
       }
     ],
     "currentEstimate": {
-      "min": 4,
-      "max": 6,
-      "avg": 5
+      "min": 6,
+      "max": 8,
+      "avg": 7
     },
-    "method": "single",
+    "method": "spike-blend",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-10-25",
     "stale": false,
     "seasonal": true,
-    "listingCount": 1,
+    "listingCount": 3,
     "platforms": [
-      "BigBasket"
+      "Blinkit",
+      "Swiggy Instamart",
+      "Zepto"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 1 listing backs the range (need 3)",
-      "only 1 platform (BigBasket) backs the range"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": null,
   "seasonal": true,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 29,
+      "source": "USDA FDC: USDA FDC 167746 'Lemons, raw, without peel' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "proteinG": {
+      "value": 1.1,
+      "source": "USDA FDC: USDA FDC 167746 'Lemons, raw, without peel' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "carbsG": {
+      "value": 9.3,
+      "source": "USDA FDC: USDA FDC 167746 'Lemons, raw, without peel' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sugarsG": {
+      "value": 2.5,
+      "source": "USDA FDC: USDA FDC 167746 'Lemons, raw, without peel' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "fatG": {
+      "value": 0.3,
+      "source": "USDA FDC: USDA FDC 167746 'Lemons, raw, without peel' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 2.8,
+      "source": "USDA FDC: USDA FDC 167746 'Lemons, raw, without peel' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sodiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 167746 'Lemons, raw, without peel' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 167746 'Lemons, raw, without peel' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    }
+  },
   "macrosPer100Estimate": {
     "kcal": 22,
     "proteinG": 0.4,
@@ -49,50 +238,57 @@
     "fatG": 0.2,
     "fibreG": 0.3
   },
-  "storage": "Whole: fridge, in a zip bag, for 3–4 weeks. Room temperature for about 1 week. Juice: fridge for 2–3 days, or freeze in ice-cube trays for 3 months. Cut half: wrap and refrigerate; use within 2 days.",
-  "looksLike": "A small round-to-oval citrus fruit, 3–5 cm across, with thin smooth skin that turns from green to bright yellow when ripe. Indian \"kagzi\" lime-lemons are small, thin-skinned and very juicy.",
-  "howToPick": null,
-  "shelfLife": "About 1 week at room temperature; 3–4 weeks in the fridge.",
+  "storage": "Keep on the counter for a few days or in the fridge crisper for up to a few weeks. Squeezed juice keeps 1 to 2 days in the fridge in a closed jar.",
+  "looksLike": "A small round-to-oval citrus fruit with thin skin that is green to bright yellow. Indian shops sell it by weight (200–250 g packs) or in packs of 4 to 6 pieces; imported larger lemons and Thai lemon are sold separately at higher prices.",
+  "howToPick": "Heavy for its size with thin, smooth, slightly shiny skin; a gentle squeeze should give a little. Avoid hard, dull, shrivelled or mouldy ones.",
+  "shelfLife": "About 1 week on the counter and 3 to 4 weeks in the fridge (general guidance; not taken from a source in this run).",
   "substitutes": [
     "Bottled lemon juice",
     "Amchur (dry mango powder)",
-    "Vinegar"
+    "Vinegar",
+    "Lime (kagzi nimbu)",
+    "Tamarind water or a pinch of citric acid"
   ],
   "usedIn": [
     {
-      "dishNumber": 1,
-      "quantity": 5,
+      "dishNumber": 82,
+      "quantity": 3,
       "unit": "ml",
-      "raw": "5 ml juice (1 tsp, about ¼ lemon)"
+      "raw": "3 ml juice per serving (½ tsp)"
     },
     {
-      "dishNumber": 2,
-      "quantity": 5,
+      "dishNumber": 83,
+      "quantity": 8,
       "unit": "ml",
-      "raw": "5 ml juice (1 tsp, about ¼ lemon)"
+      "raw": "8 ml juice per serving (1½ tsp)"
     },
     {
-      "dishNumber": 4,
+      "dishNumber": 84,
       "quantity": 5,
       "unit": "ml",
-      "raw": "5 ml juice, optional (1 tsp, in the potato masala)"
+      "raw": "5 ml juice per serving (1 tsp, about ¼ lemon)"
     },
     {
-      "dishNumber": 5,
-      "quantity": 5,
+      "dishNumber": 101,
+      "quantity": 3,
       "unit": "ml",
-      "raw": "5 ml juice, optional (1 tsp)"
+      "raw": "3 ml juice per serving (½ tsp)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-10-25",
+      "file": "FitPlate_Ingredients_2026-10-25.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (spike-blend)",
     "macrosPer100Estimate": "stable (single)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
@@ -100,7 +296,9 @@
     "usedIn": "newest"
   },
   "mergeNotes": [
+    "price flag: possible-spike",
     "price flag: narrowed",
-    "Range 4.0–6.0 was wider than 30% of avg 5.0; narrowed to ±15%."
+    "Possible spike: latest avg 9 (2026-10-25) moved more than 35% from the previous estimate; using the halfway point.",
+    "Range 4.5–10.5 was wider than 30% of avg 7.0; narrowed to ±15%."
   ]
 }

@@ -15,73 +15,276 @@
         "avg": 105,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-10-25",
+        "min": 80,
+        "max": 175,
+        "avg": 120,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
       }
     ],
     "currentEstimate": {
-      "min": 90,
-      "max": 120,
-      "avg": 105
+      "min": 95,
+      "max": 130,
+      "avg": 115
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-10-25",
     "stale": false,
     "seasonal": false,
-    "listingCount": 5,
+    "listingCount": 7,
     "platforms": [
+      "Amazon",
       "BigBasket",
-      "StoreKing"
+      "Flipkart"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 9,
-    "max": 12,
-    "avg": 10.5
+    "min": 9.5,
+    "max": 13,
+    "avg": 11.5
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 360,
+      "source": "Other: FatSecret: FatSecret generic basmati rice and India Gate label entries (crowd-sourced/label); no IFCT or USDA FDC entry opened; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "proteinG": {
+      "value": 8.5,
+      "source": "Other: FatSecret: FatSecret generic basmati rice and India Gate label entries (crowd-sourced/label); no IFCT or USDA FDC entry opened; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "carbsG": {
+      "value": 77,
+      "source": "Other: FatSecret: FatSecret generic basmati rice and India Gate label entries (crowd-sourced/label); no IFCT or USDA FDC entry opened; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "sugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fatG": {
+      "value": 0.9,
+      "source": "Other: FatSecret: FatSecret generic basmati rice and India Gate label entries (crowd-sourced/label); no IFCT or USDA FDC entry opened; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 1.4,
+      "source": "Other: FatSecret: FatSecret generic basmati rice and India Gate label entries (crowd-sourced/label); no IFCT or USDA FDC entry opened; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "sodiumMg": {
+      "value": 5,
+      "source": "Other: FatSecret: FatSecret generic basmati rice and India Gate label entries (crowd-sourced/label); no IFCT or USDA FDC entry opened; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": 81,
+      "source": "Other: FatSecret: FatSecret generic basmati rice and India Gate label entries (crowd-sourced/label); no IFCT or USDA FDC entry opened; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "Other: FatSecret: FatSecret generic basmati rice and India Gate label entries (crowd-sourced/label); no IFCT or USDA FDC entry opened; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "Other: FatSecret: FatSecret generic basmati rice and India Gate label entries (crowd-sourced/label); no IFCT or USDA FDC entry opened; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    }
+  },
   "macrosPer100Estimate": {
-    "kcal": 350,
-    "proteinG": 8,
-    "carbsG": 78,
-    "fatG": 0.6,
+    "kcal": 355,
+    "proteinG": 8.3,
+    "carbsG": 77.5,
+    "fatG": 0.9,
     "fibreG": 1.5
   },
-  "storage": "Store it at room temperature in an airtight container. Use it within 6–12 months of opening. Put a few dried red chillies or bay leaves in the container to help keep weevils away.",
-  "looksLike": "Long, slender, white grains with a mild nutty smell. The grains get much longer when cooked.",
-  "howToPick": null,
-  "shelfLife": "12–24 months unopened. Aged rice keeps well.",
+  "storage": "Keep in an airtight container in a cool, dry cupboard; use within about a year. Cooked rice goes in the fridge within an hour and is eaten within 1 to 2 days.",
+  "looksLike": "Long, slender, slightly pale white grains that lengthen a lot when cooked and smell faintly nutty.",
+  "howToPick": "Long, unbroken, evenly coloured grains with a mild fragrance; few broken bits or powder in the pack. Avoid damp-smelling or insect-damaged rice. Older (aged) rice costs more and cooks drier and longer.",
+  "shelfLife": "About a year in a sealed pack (general guidance; not taken from a source in this run).",
   "substitutes": [
     "Sona masoori or jeera-samba rice",
     "Non-basmati long grain (e.g. Kolam)",
-    "Premium aged basmati"
+    "Premium aged basmati",
+    "Other long-grain rice (sona masuri, jeera rice)",
+    "Brown basmati",
+    "Short-grain or parboiled rice"
   ],
   "usedIn": [
     {
-      "dishNumber": 2,
-      "quantity": 75,
+      "dishNumber": 84,
+      "quantity": 70,
       "unit": "g",
-      "raw": "75 g"
+      "raw": "70 g dry basmati rice per serving."
     }
   ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-10-25",
+      "file": "FitPlate_Ingredients_2026-10-25.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 83.8–154.0 was wider than 30% of avg 114.3; narrowed to ±15%.",
+    "macrosPer100Estimate.fatG: Versions 2026-10-04 (0.6) and 2026-10-25 (0.9) differ by more than 25%; kept the newer."
+  ]
 }

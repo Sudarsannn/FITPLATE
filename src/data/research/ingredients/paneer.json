@@ -15,61 +15,265 @@
         "avg": 470,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-10-25",
+        "min": 380,
+        "max": 480,
+        "avg": 415,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
       }
     ],
     "currentEstimate": {
-      "min": 435,
-      "max": 520,
-      "avg": 470
+      "min": 410,
+      "max": 500,
+      "avg": 445
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-10-25",
     "stale": false,
     "seasonal": false,
     "listingCount": 7,
     "platforms": [
       "BigBasket",
-      "Swiggy Instamart"
+      "StoreKing"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 43.5,
-    "max": 52,
-    "avg": 47
+    "min": 41,
+    "max": 50,
+    "avg": 44.5
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 293,
+      "source": "Other: FatSecret generic paneer entry: FatSecret (fatsecret.com.au) generic 'Paneer' entry; no IFCT 2017 or USDA entry for paneer was found",
+      "confidence": "Low"
+    },
+    "proteinG": {
+      "value": 14.01,
+      "source": "Other: FatSecret generic paneer entry: FatSecret (fatsecret.com.au) generic 'Paneer' entry; no IFCT 2017 or USDA entry for paneer was found",
+      "confidence": "Low"
+    },
+    "carbsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "sugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fatG": {
+      "value": 25.13,
+      "source": "Other: FatSecret generic paneer entry: FatSecret (fatsecret.com.au) generic 'Paneer' entry; no IFCT 2017 or USDA entry for paneer was found",
+      "confidence": "Low"
+    },
+    "saturatedFatG": {
+      "value": 15.84,
+      "source": "Other: FatSecret generic paneer entry: FatSecret (fatsecret.com.au) generic 'Paneer' entry; no IFCT 2017 or USDA entry for paneer was found",
+      "confidence": "Low"
+    },
+    "fibreG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "sodiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 80,
+      "source": "Other: FatSecret generic paneer entry: FatSecret (fatsecret.com.au) generic 'Paneer' entry; no IFCT 2017 or USDA entry for paneer was found",
+      "confidence": "Low"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    }
+  },
   "macrosPer100Estimate": {
-    "kcal": 290,
-    "proteinG": 18,
+    "kcal": 291.5,
+    "proteinG": 16,
     "carbsG": 2,
-    "fatG": 23,
+    "fatG": 24.1,
     "fibreG": 0
   },
-  "storage": "keep sealed; once opened, store submerged in water in a box, changing water daily — 2–3 days.",
-  "looksLike": "A white, firm, smooth block of fresh unripened cheese that holds its shape when cubed; mild milky taste.",
-  "howToPick": "white to creamy colour, firm but soft when pressed, sweet milky smell, no yellow edges, slime or sour smell; check the packed-on date (fresh paneer is best within a few days of packing); pouch should not be puffed.",
-  "shelfLife": "packaged chilled paneer about 7–10 days unopened in the fridge (check pack date); loose paneer 2–3 days.",
+  "storage": "Refrigerate in the pack; once opened, keep submerged in clean water in a closed box and change the water daily, or freeze in cubes.",
+  "looksLike": "A soft, white, slightly crumbly block of pressed curdled milk; sold in vacuum pouches or cartons, plain or cubed.",
+  "howToPick": "Check the use-by date, an intact sealed pouch, milky-white colour and a fresh milky smell. Avoid sour smell, slimy surface or a bloated pack.",
+  "shelfLife": "A sealed chilled pouch usually carries about 1 to 2 weeks (check the pack); open paneer should be used within a few days (general guidance).",
   "substitutes": [
     "Firm tofu",
     "Low-fat paneer (e.g. Amul or Milky Mist light)",
-    "Mushrooms or boiled chickpeas"
+    "Mushrooms or boiled chickpeas",
+    "Homemade paneer (from full-fat milk)",
+    "Cottage cheese (chhena)"
   ],
-  "usedIn": [],
+  "usedIn": [
+    {
+      "dishNumber": 81,
+      "quantity": 40,
+      "unit": "g",
+      "raw": "40 g per serving (about 4 tbsp crumbled or grated)"
+    }
+  ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-10-25",
+      "file": "FitPlate_Ingredients_2026-10-25.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",

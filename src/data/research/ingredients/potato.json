@@ -16,36 +16,227 @@
         "avg": 22,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-10-25",
+        "min": 21,
+        "max": 43,
+        "avg": 30,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
       }
     ],
     "currentEstimate": {
-      "min": 20,
-      "max": 25,
-      "avg": 22
+      "min": 22,
+      "max": 30,
+      "avg": 26
     },
-    "method": "single",
+    "method": "spike-blend",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-10-25",
     "stale": false,
     "seasonal": true,
-    "listingCount": 3,
+    "listingCount": 4,
     "platforms": [
-      "Amazon",
       "BigBasket",
-      "OneIndia"
+      "Blinkit",
+      "Swiggy Instamart",
+      "Zepto"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 2,
-    "max": 2.5,
-    "avg": 2.2
+    "min": 2.2,
+    "max": 3,
+    "avg": 2.6
   },
   "seasonal": true,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 77,
+      "source": "USDA FDC: USDA FDC 170026 'Potatoes, flesh and skin, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "proteinG": {
+      "value": 2,
+      "source": "USDA FDC: USDA FDC 170026 'Potatoes, flesh and skin, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "carbsG": {
+      "value": 17.5,
+      "source": "USDA FDC: USDA FDC 170026 'Potatoes, flesh and skin, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sugarsG": {
+      "value": 0.8,
+      "source": "USDA FDC: USDA FDC 170026 'Potatoes, flesh and skin, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "fatG": {
+      "value": 0.1,
+      "source": "USDA FDC: USDA FDC 170026 'Potatoes, flesh and skin, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 2.1,
+      "source": "USDA FDC: USDA FDC 170026 'Potatoes, flesh and skin, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sodiumMg": {
+      "value": 6,
+      "source": "USDA FDC: USDA FDC 170026 'Potatoes, flesh and skin, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": 421,
+      "source": "USDA FDC: USDA FDC 170026 'Potatoes, flesh and skin, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": 19.7,
+      "source": "USDA FDC: USDA FDC 170026 'Potatoes, flesh and skin, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": 79.25,
+      "source": "USDA FDC: USDA FDC 170026 'Potatoes, flesh and skin, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 170026 'Potatoes, flesh and skin, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": 0.3,
+      "source": "USDA FDC: USDA FDC 170026 'Potatoes, flesh and skin, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 170026 'Potatoes, flesh and skin, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    }
+  },
   "macrosPer100Estimate": {
     "kcal": 77,
     "proteinG": 2,
@@ -53,43 +244,55 @@
     "fatG": 0.1,
     "fibreG": 2.2
   },
-  "storage": "Room temperature in a dark, ventilated basket, away from onions, for 2–4 weeks. Do not refrigerate raw potatoes (they turn sweet and go grey when cooked). Boiled: fridge for 3–4 days in a covered box.",
-  "looksLike": "Oval or round tuber with thin light-brown or yellowish skin and pale cream-yellow flesh. It has small \"eyes\" (buds) on the surface.",
-  "howToPick": null,
-  "shelfLife": "2–4 weeks in a cool, dark, airy place.",
+  "storage": "Store in a cool, dark, ventilated place, away from onions, for a few weeks. Boiled potato keeps 2 to 3 days in the fridge in a closed box.",
+  "looksLike": "Oval to round tuber with thin light-brown skin and pale cream flesh. Red-skinned potatoes (kempu aloo gadde) are a separate, pricier variety.",
+  "howToPick": "Firm, smooth, dry skin with no green patches, sprouts, cuts or soft spots. Avoid any with a green tinge or bitter smell.",
+  "shelfLife": "A few weeks in a cool dark place (general guidance; not taken from a source in this run).",
   "substitutes": [
     "Sweet potato (shakarkand)",
     "Raw banana (kacha kela), boiled",
-    "Paneer or mixed vegetables"
+    "Paneer or mixed vegetables",
+    "Raw banana or yam (suran)",
+    "Cauliflower or peas"
   ],
   "usedIn": [
     {
-      "dishNumber": 4,
-      "quantity": 150,
+      "dishNumber": 83,
+      "quantity": 40,
       "unit": "g",
-      "raw": "150 g (1 large or 2 small, for the potato masala)"
+      "raw": "40 g per serving, boiled (about ½ small potato, diced)"
     },
     {
-      "dishNumber": 1,
-      "quantity": null,
-      "unit": null,
-      "raw": "optional only (1 small potato for \"kanda batata poha\"; not counted in the dish's standard quantities)"
+      "dishNumber": 85,
+      "quantity": 40,
+      "unit": "g",
+      "raw": "40 g per serving (½ small)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-10-25",
+      "file": "FitPlate_Ingredients_2026-10-25.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (spike-blend)",
     "macrosPer100Estimate": "stable (single)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: possible-spike",
+    "price flag: narrowed",
+    "Possible spike: latest avg 30 (2026-10-25) moved more than 35% from the previous estimate; using the halfway point.",
+    "Range 20.5–34.0 was wider than 30% of avg 26.0; narrowed to ±15%."
+  ]
 }

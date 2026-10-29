@@ -16,98 +16,300 @@
         "avg": 55,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-10-25",
+        "min": 29,
+        "max": 65,
+        "avg": 49,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
       }
     ],
     "currentEstimate": {
-      "min": 45,
-      "max": 60,
-      "avg": 55
+      "min": 44,
+      "max": 59,
+      "avg": 51
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-10-25",
     "stale": false,
     "seasonal": true,
-    "listingCount": 3,
+    "listingCount": 5,
     "platforms": [
-      "Amazon",
       "BigBasket",
-      "NewsBytes news report"
+      "Blinkit",
+      "Swiggy Instamart",
+      "Zepto"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 4.5,
-    "max": 6,
-    "avg": 5.5
+    "min": 4.4,
+    "max": 5.9,
+    "avg": 5.1
   },
   "seasonal": true,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 40,
+      "source": "USDA FDC: USDA FDC 170000 'Onions, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "proteinG": {
+      "value": 1.1,
+      "source": "USDA FDC: USDA FDC 170000 'Onions, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "carbsG": {
+      "value": 9.3,
+      "source": "USDA FDC: USDA FDC 170000 'Onions, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sugarsG": {
+      "value": 4.2,
+      "source": "USDA FDC: USDA FDC 170000 'Onions, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "fatG": {
+      "value": 0.1,
+      "source": "USDA FDC: USDA FDC 170000 'Onions, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 1.7,
+      "source": "USDA FDC: USDA FDC 170000 'Onions, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sodiumMg": {
+      "value": 4,
+      "source": "USDA FDC: USDA FDC 170000 'Onions, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": 146,
+      "source": "USDA FDC: USDA FDC 170000 'Onions, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": 7.4,
+      "source": "USDA FDC: USDA FDC 170000 'Onions, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 170000 'Onions, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": 0.12,
+      "source": "USDA FDC: USDA FDC 170000 'Onions, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 170000 'Onions, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    }
+  },
   "macrosPer100Estimate": {
-    "kcal": 40,
-    "proteinG": 1.1,
-    "carbsG": 9.3,
+    "kcal": 39,
+    "proteinG": 1,
+    "carbsG": 8.9,
     "fatG": 0.1,
     "fibreG": 1.7
   },
-  "storage": "Whole: room temperature in a basket or mesh bag, away from potatoes and sunlight, for 3–4 weeks. Cut: airtight box in the fridge for 5–7 days. Chopped onion can be frozen for about 3 months (for cooking only).",
-  "looksLike": "Round bulb with dry, papery skin. The everyday Maharashtra (Nashik) onion is pinkish-red to purple outside, with white-pink rings inside.",
-  "howToPick": null,
-  "shelfLife": "3–4 weeks whole, in a cool, dry, airy place.",
+  "storage": "Keep in a cool, dry, ventilated spot away from potatoes, for weeks. Cut onion goes in a closed box in the fridge for 2 to 3 days.",
+  "looksLike": "A round bulb with dry, papery red-brown or pinkish skin and layered white to pale-purple flesh inside. FitPlate dishes use the everyday red onion, not the small sambar onion or spring onion.",
+  "howToPick": "Firm, heavy bulbs with dry papery skin and no soft spots, sprouting, black mould or a wet neck. Avoid ones that smell sour.",
+  "shelfLife": "Several weeks in a cool dry airy place (general guidance; not taken from a source in this run).",
   "substitutes": [
     "Shallots (small/sambar onion)",
     "Spring onion (white part)",
-    "Ready fried onions (birista)"
+    "Ready fried onions (birista)",
+    "Shallots (small onions)",
+    "Spring onion bulbs and greens",
+    "Onion powder or dried flakes"
   ],
   "usedIn": [
     {
-      "dishNumber": 1,
-      "quantity": 60,
+      "dishNumber": 82,
+      "quantity": 70,
       "unit": "g",
-      "raw": "60 g (½ medium onion)"
+      "raw": "70 g per serving (½ medium, thinly sliced)"
     },
     {
-      "dishNumber": 2,
+      "dishNumber": 83,
+      "quantity": 30,
+      "unit": "g",
+      "raw": "30 g per serving (2 tbsp, finely chopped)"
+    },
+    {
+      "dishNumber": 84,
       "quantity": 80,
       "unit": "g",
-      "raw": "80 g (1 medium)"
+      "raw": "80 g per serving (1 small onion, thinly sliced)"
     },
     {
-      "dishNumber": 3,
+      "dishNumber": 85,
       "quantity": 40,
       "unit": "g",
-      "raw": "40 g (½ small)"
+      "raw": "40 g per serving (½ small)"
     },
     {
-      "dishNumber": 4,
-      "quantity": 40,
+      "dishNumber": 102,
+      "quantity": 30,
       "unit": "g",
-      "raw": "40 g (½ small, in the potato masala)"
-    },
-    {
-      "dishNumber": 5,
-      "quantity": 40,
-      "unit": "g",
-      "raw": "40 g (½ small)"
+      "raw": "30 g per serving (¼ medium, finely chopped)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-10-25",
+      "file": "FitPlate_Ingredients_2026-10-25.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 35.1–63.1 was wider than 30% of avg 51.3; narrowed to ±15%."
+  ]
 }

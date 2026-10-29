@@ -13,79 +13,291 @@
         "avg": 1055,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-10-25",
+        "min": 675,
+        "max": 1060,
+        "avg": 890,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
       }
     ],
     "currentEstimate": {
-      "min": 980,
-      "max": 1120,
-      "avg": 1055
+      "min": 810,
+      "max": 1095,
+      "avg": 955
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-10-25",
     "stale": false,
     "seasonal": false,
-    "listingCount": 2,
+    "listingCount": 7,
     "platforms": [
-      "BigBasket",
-      "Blinkit"
+      "Amazon",
+      "BigBasket"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 2 listings back the range (need 3)"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 98,
-    "max": 112,
-    "avg": 105.5
+    "min": 81,
+    "max": 109.5,
+    "avg": 95.5
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 260,
+      "source": "USDA FDC: USDA FDC branded entry 'Garam Masala' (MDH), 13 kcal per 5 g serving; values seen only on a secondary site; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "proteinG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "carbsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "sugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "sodiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC branded entry 'Garam Masala' (MDH), 13 kcal per 5 g serving; values seen only on a secondary site; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC branded entry 'Garam Masala' (MDH), 13 kcal per 5 g serving; values seen only on a secondary site; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    }
+  },
   "macrosPer100Estimate": {
-    "kcal": 380,
+    "kcal": 260,
     "proteinG": 15,
     "carbsG": 45,
     "fatG": 15,
     "fibreG": 25
   },
-  "storage": "Small airtight jar at room temperature, away from heat and light. Keep the carton sealed inside a box or jar. It lasts about 3–6 months open.",
-  "looksLike": "a dark brown, aromatic powder that smells of cinnamon, clove, cardamom and pepper.",
-  "howToPick": "the blend should smell strong and warm as soon as the pack is opened. Avoid faded, flat-smelling or lumpy powder. Check the packing date, because blends lose aroma faster than single spices.",
-  "shelfLife": "about 12 months unopened (check the pack). It is best within 3–4 months of opening.",
+  "storage": "Airtight jar, cool, dry and dark; the aroma fades within a few months of opening.",
+  "looksLike": "a dark brown, fragrant powder of ground whole spices with a warm, sweet-pungent smell.",
+  "howToPick": "a strong sweet-warm smell and an even dark-brown colour; avoid a flat smell, clumps or moisture.",
+  "shelfLife": "about 6 to 12 months sealed (general guidance; not from a source in this run).",
   "substitutes": [
-    "Homemade"
+    "Homemade",
+    "Home blend",
+    "Biryani masala or kitchen king masala",
+    "Chaat masala"
   ],
   "usedIn": [
     {
-      "dishNumber": 3,
-      "quantity": 0.5,
-      "unit": "g",
-      "raw": "0.5 g (¼ tsp)"
-    },
-    {
-      "dishNumber": 5,
+      "dishNumber": 81,
       "quantity": 0.3,
       "unit": "g",
-      "raw": "0.3 g (1 pinch)"
+      "raw": "0.3 g per serving (a pinch, ⅛ tsp)"
+    },
+    {
+      "dishNumber": 82,
+      "quantity": 1,
+      "unit": "g",
+      "raw": "1 g per serving (½ tsp)"
+    },
+    {
+      "dishNumber": 84,
+      "quantity": 1.5,
+      "unit": "g",
+      "raw": "1.5 g per serving (¾ tsp)"
+    },
+    {
+      "dishNumber": 85,
+      "quantity": 0.5,
+      "unit": "g",
+      "raw": "0.5 g per serving (¼ tsp)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-10-25",
+      "file": "FitPlate_Ingredients_2026-10-25.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (wma)",
     "macrosPer100Estimate": "stable (single)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 791.2–1082.9 was wider than 30% of avg 952.9; narrowed to ±15%.",
+    "macrosPer100Estimate.kcal: Versions 2026-10-04 (380) and 2026-10-25 (260) differ by more than 25%; kept the newer."
+  ]
 }

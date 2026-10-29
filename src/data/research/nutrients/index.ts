@@ -7,6 +7,7 @@ import item_niacin from './niacin.json';
 import item_pantothenic_acid from './pantothenic-acid.json';
 import item_phosphorus from './phosphorus.json';
 import item_riboflavin from './riboflavin.json';
+import item_sodium from './sodium.json';
 import item_thiamine from './thiamine.json';
 import item_vitamin_a from './vitamin-a.json';
 import item_vitamin_b12 from './vitamin-b12.json';
@@ -23,6 +24,7 @@ export const items: Nutrient[] = [
   item_pantothenic_acid as unknown as Nutrient,
   item_phosphorus as unknown as Nutrient,
   item_riboflavin as unknown as Nutrient,
+  item_sodium as unknown as Nutrient,
   item_thiamine as unknown as Nutrient,
   item_vitamin_a as unknown as Nutrient,
   item_vitamin_b12 as unknown as Nutrient,

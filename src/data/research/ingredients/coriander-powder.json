@@ -4,7 +4,7 @@
   "aliases": [
     "dhania powder"
   ],
-  "category": "Spice",
+  "category": "Spice (ground)",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -15,37 +15,226 @@
         "avg": 355,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-10-25",
+        "min": 235,
+        "max": 400,
+        "avg": 355,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
       }
     ],
     "currentEstimate": {
-      "min": 305,
+      "min": 300,
       "max": 400,
       "avg": 355
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-10-25",
     "stale": false,
     "seasonal": false,
-    "listingCount": 7,
+    "listingCount": 8,
     "platforms": [
-      "Amazon",
-      "BigBasket",
-      "Blinkit",
-      "magicdrop.in"
+      "BigBasket"
     ],
     "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "confirmed": false,
+    "checkNotes": [
+      "only 1 platform (BigBasket) backs the range"
+    ]
   },
   "per100Estimate": {
-    "min": 30.5,
+    "min": 30,
     "max": 40,
     "avg": 35.5
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 298,
+      "source": "USDA FDC: USDA FDC 170922 'Spices, coriander seed'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "proteinG": {
+      "value": 12.4,
+      "source": "USDA FDC: USDA FDC 170922 'Spices, coriander seed'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "carbsG": {
+      "value": 55,
+      "source": "USDA FDC: USDA FDC 170922 'Spices, coriander seed'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fatG": {
+      "value": 17.8,
+      "source": "USDA FDC: USDA FDC 170922 'Spices, coriander seed'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "saturatedFatG": {
+      "value": 1,
+      "source": "USDA FDC: USDA FDC 170922 'Spices, coriander seed'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "fibreG": {
+      "value": 41.9,
+      "source": "USDA FDC: USDA FDC 170922 'Spices, coriander seed'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sodiumMg": {
+      "value": 35,
+      "source": "USDA FDC: USDA FDC 170922 'Spices, coriander seed'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "ironMg": {
+      "value": 16.3,
+      "source": "USDA FDC: USDA FDC 170922 'Spices, coriander seed'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "calciumMg": {
+      "value": 710,
+      "source": "USDA FDC: USDA FDC 170922 'Spices, coriander seed'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "potassiumMg": {
+      "value": 1270,
+      "source": "USDA FDC: USDA FDC 170922 'Spices, coriander seed'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "magnesiumMg": {
+      "value": 330,
+      "source": "USDA FDC: USDA FDC 170922 'Spices, coriander seed'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "zincMg": {
+      "value": 4.7,
+      "source": "USDA FDC: USDA FDC 170922 'Spices, coriander seed'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminCMg": {
+      "value": 21,
+      "source": "USDA FDC: USDA FDC 170922 'Spices, coriander seed'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminAUgRae": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 170922 'Spices, coriander seed'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 170922 'Spices, coriander seed'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": 410,
+      "source": "USDA FDC: USDA FDC 170922 'Spices, coriander seed'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "seleniumUg": {
+      "value": 26,
+      "source": "USDA FDC: USDA FDC 170922 'Spices, coriander seed'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "copperMg": {
+      "value": 1,
+      "source": "USDA FDC: USDA FDC 170922 'Spices, coriander seed'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "manganeseMg": {
+      "value": 1.9,
+      "source": "USDA FDC: USDA FDC 170922 'Spices, coriander seed'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": 0.2,
+      "source": "USDA FDC: USDA FDC 170922 'Spices, coriander seed'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "riboflavinMg": {
+      "value": 0.3,
+      "source": "USDA FDC: USDA FDC 170922 'Spices, coriander seed'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "niacinMg": {
+      "value": 2.1,
+      "source": "USDA FDC: USDA FDC 170922 'Spices, coriander seed'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 170922 'Spices, coriander seed'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    }
+  },
   "macrosPer100Estimate": {
     "kcal": 298,
     "proteinG": 12.4,
@@ -53,35 +242,59 @@
     "fatG": 17.8,
     "fibreG": 41.9
   },
-  "storage": "Airtight jar at room temperature, away from light, steam and heat. It lasts about 3–6 months once opened, and the aroma fades with time.",
-  "looksLike": "a light brown to greenish-khaki powder with a warm, citrusy, slightly sweet smell.",
-  "howToPick": "fresh powder smells strongly of citrus when you open the pack. It should be greenish-brown and free-flowing. Avoid powder that is dusty-brown, has little smell or is caked. Coriander powder loses its aroma faster than most spices, so smaller packs are better.",
-  "shelfLife": "about 9–12 months unopened (check the pack). It is best used within 3–4 months of opening.",
+  "storage": "Airtight jar, cool and dry, away from light; use within about 6 months after opening. Whole seeds keep longer if you grind at home.",
+  "looksLike": "a pale brown to greenish-tan powder with a mild, citrusy, slightly sweet smell.",
+  "howToPick": "a fresh, sweet-citrus smell and an even tan-green colour; stale powder smells flat or musty.",
+  "shelfLife": "about 6 to 12 months sealed; it loses aroma faster than whole seeds (general guidance; not from a source in this run).",
   "substitutes": [
-    "Coriander seeds, dry-roasted and ground fresh, 1"
+    "Coriander seeds, dry-roasted and ground fresh, 1",
+    "Whole coriander seeds, dry roasted and ground",
+    "Cumin powder",
+    "Garam masala (a little)"
   ],
   "usedIn": [
     {
-      "dishNumber": 3,
-      "quantity": 1,
+      "dishNumber": 82,
+      "quantity": 3,
       "unit": "g",
-      "raw": "1 g (½ tsp)"
+      "raw": "3 g per serving (1 tsp)"
+    },
+    {
+      "dishNumber": 84,
+      "quantity": 2,
+      "unit": "g",
+      "raw": "2 g per serving (¾ tsp)"
+    },
+    {
+      "dishNumber": 85,
+      "quantity": 1.5,
+      "unit": "g",
+      "raw": "1.5 g per serving (¾ tsp)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-10-25",
+      "file": "FitPlate_Ingredients_2026-10-25.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 273.6–400.0 was wider than 30% of avg 355.0; narrowed to ±15%.",
+    "range clamped to observed prices: 300–410 → 300–400"
+  ]
 }

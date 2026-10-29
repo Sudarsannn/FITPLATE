@@ -15,6 +15,14 @@
         "avg": 185,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-10-25",
+        "min": 175,
+        "max": 195,
+        "avg": 185,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
       }
     ],
     "currentEstimate": {
@@ -22,16 +30,17 @@
       "max": 195,
       "avg": 185
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-10-25",
     "stale": false,
     "seasonal": false,
-    "listingCount": 3,
+    "listingCount": 5,
     "platforms": [
+      "Amazon",
       "BigBasket",
-      "StoreKing"
+      "Flipkart"
     ],
     "outOfStock": false,
     "confirmed": true,
@@ -43,7 +52,189 @@
     "avg": 18.5
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 884,
+      "source": "USDA FDC: USDA FDC 171025 'Oil, sunflower, linoleic (approx. 65%)' seen only on mirror sites (getfoodfacts); zero by composition: protein_g, carbohydrate_g, sugars_g, fibre_g, cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "proteinG": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 171025 'Oil, sunflower, linoleic (approx. 65%)' seen only on mirror sites (getfoodfacts); zero by composition: protein_g, carbohydrate_g, sugars_g, fibre_g, cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "carbsG": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 171025 'Oil, sunflower, linoleic (approx. 65%)' seen only on mirror sites (getfoodfacts); zero by composition: protein_g, carbohydrate_g, sugars_g, fibre_g, cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sugarsG": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 171025 'Oil, sunflower, linoleic (approx. 65%)' seen only on mirror sites (getfoodfacts); zero by composition: protein_g, carbohydrate_g, sugars_g, fibre_g, cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "fatG": {
+      "value": 100,
+      "source": "USDA FDC: USDA FDC 171025 'Oil, sunflower, linoleic (approx. 65%)' seen only on mirror sites (getfoodfacts); zero by composition: protein_g, carbohydrate_g, sugars_g, fibre_g, cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "saturatedFatG": {
+      "value": 10.3,
+      "source": "USDA FDC: USDA FDC 171025 'Oil, sunflower, linoleic (approx. 65%)' seen only on mirror sites (getfoodfacts); zero by composition: protein_g, carbohydrate_g, sugars_g, fibre_g, cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "fibreG": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 171025 'Oil, sunflower, linoleic (approx. 65%)' seen only on mirror sites (getfoodfacts); zero by composition: protein_g, carbohydrate_g, sugars_g, fibre_g, cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sodiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 171025 'Oil, sunflower, linoleic (approx. 65%)' seen only on mirror sites (getfoodfacts); zero by composition: protein_g, carbohydrate_g, sugars_g, fibre_g, cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": 19.5,
+      "source": "USDA FDC: USDA FDC 171025 'Oil, sunflower, linoleic (approx. 65%)' seen only on mirror sites (getfoodfacts); zero by composition: protein_g, carbohydrate_g, sugars_g, fibre_g, cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "pufaG": {
+      "value": 65.7,
+      "source": "USDA FDC: USDA FDC 171025 'Oil, sunflower, linoleic (approx. 65%)' seen only on mirror sites (getfoodfacts); zero by composition: protein_g, carbohydrate_g, sugars_g, fibre_g, cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": 41.1,
+      "source": "USDA FDC: USDA FDC 171025 'Oil, sunflower, linoleic (approx. 65%)' seen only on mirror sites (getfoodfacts); zero by composition: protein_g, carbohydrate_g, sugars_g, fibre_g, cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminKUg": {
+      "value": 5.4,
+      "source": "USDA FDC: USDA FDC 171025 'Oil, sunflower, linoleic (approx. 65%)' seen only on mirror sites (getfoodfacts); zero by composition: protein_g, carbohydrate_g, sugars_g, fibre_g, cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 171025 'Oil, sunflower, linoleic (approx. 65%)' seen only on mirror sites (getfoodfacts); zero by composition: protein_g, carbohydrate_g, sugars_g, fibre_g, cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    }
+  },
   "macrosPer100Estimate": {
     "kcal": 884,
     "proteinG": 0,
@@ -51,50 +242,58 @@
     "fatG": 100,
     "fibreG": 0
   },
-  "storage": "Room temperature in a cool, dark place, tightly closed; once a pouch is opened, pour it into a clean, dry bottle. Do not reuse deep-frying oil repeatedly.",
-  "looksLike": "clear, pale-golden liquid in 1 L pouches, bottles or 5 L / 15 L cans. Sunflower oil is very light and mild; groundnut (peanut) oil is a deeper gold with a faint nutty smell.",
-  "howToPick": "sealed pouch without leaks; clear oil with no cloudiness or sediment; check the packing date (fresher is better). Avoid a rancid or paint-like smell.",
-  "shelfLife": "about 9 months from packing (Gemini pouch lists 270 days per StoreKing); use within 1–2 months of opening.",
+  "storage": "Keep in a cool, dark place, away from the stove; close the cap tightly. Do not reuse oil that smells rancid or is dark and smoky.",
+  "looksLike": "A clear, pale-yellow, neutral-smelling liquid, sold in 1 L pouches, bottles and tins.",
+  "howToPick": "Sealed pouch or bottle, within date, clear oil with no sediment or smell. Check the label says refined sunflower oil, not a blend, if you want pure sunflower.",
+  "shelfLife": "Usually about 9 to 12 months sealed (check the pack; general guidance).",
   "substitutes": [
     "Groundnut oil",
     "Rice bran or soyabean oil",
-    "Ghee"
+    "Ghee",
+    "Refined groundnut oil",
+    "Rice bran oil",
+    "Mustard or coconut oil"
   ],
   "usedIn": [
     {
-      "dishNumber": 1,
-      "quantity": 10,
-      "unit": "ml",
-      "raw": "10 ml (about 9 g, 2 tsp), groundnut or any neutral oil."
+      "dishNumber": 82,
+      "quantity": 12,
+      "unit": "g",
+      "raw": "12 g per serving (about 1 tbsp, a scant; sunflower oil or any neutral oil)"
     },
     {
-      "dishNumber": 2,
-      "quantity": 10,
-      "unit": "ml",
-      "raw": "10 ml (2 tsp), sunflower/groundnut."
-    },
-    {
-      "dishNumber": 3,
-      "quantity": 5,
-      "unit": "ml",
-      "raw": "5 ml (1 tsp), vegetable oil."
-    },
-    {
-      "dishNumber": 4,
+      "dishNumber": 84,
       "quantity": 10,
       "unit": "g",
-      "raw": "10 g in total, 5 g (1 tsp) for the tawa plus 5 g (1 tsp) for the potato masala, groundnut or sunflower."
+      "raw": "10 g per serving (2 tsp; 3 g for the eggs, 7 g for the onion)"
+    },
+    {
+      "dishNumber": 85,
+      "quantity": 6,
+      "unit": "g",
+      "raw": "6 g per serving (1½ tsp)"
+    },
+    {
+      "dishNumber": 101,
+      "quantity": 5,
+      "unit": "ml",
+      "raw": "5 ml per serving (1 tsp)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-10-25",
+      "file": "FitPlate_Ingredients_2026-10-25.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",

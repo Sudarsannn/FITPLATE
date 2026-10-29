@@ -1,0 +1,708 @@
+{
+  "id": "mountain-climbers",
+  "number": 7,
+  "name": "Mountain climbers (with a slow, quiet, hands-elevated beginner version)",
+  "otherNames": [
+    "Running plank",
+    "Plank knee drives",
+    "Knee tucks in plank",
+    "Incline mountain climbers",
+    "Hands-elevated mountain climbers",
+    "Bench mountain climbers",
+    "Cardio plank"
+  ],
+  "section": "home",
+  "type": "cardio",
+  "equipment": [
+    "sturdy raised surface for the beginner version (kitchen counter, fixed bench or stair step)"
+  ],
+  "noEquipmentAlternative": "Floor mountain climbers on a mat, slow and with no hop, or standing knee drives with the hands on a wall; the beginner version needs a fixed raised surface that cannot slide.",
+  "musclesPrimary": [
+    "rectus abdominis",
+    "external obliques",
+    "internal obliques",
+    "transversus abdominis",
+    "deltoids",
+    "serratus anterior",
+    "pectoralis major",
+    "triceps brachii"
+  ],
+  "musclesSecondary": [
+    "iliopsoas",
+    "rectus femoris",
+    "quadriceps",
+    "gluteus maximus",
+    "gluteus medius",
+    "hamstrings",
+    "gastrocnemius",
+    "soleus",
+    "erector spinae"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 2.8,
+  "compendiumCode": "02024",
+  "metOptions": [
+    {
+      "code": "02024",
+      "met": 2.8,
+      "activity": "MET: 2.8, Compendium code 02024, \"calisthenics (e.g., curl ups, abdominal crunches, plank), light effort\" (2024 Adult Compendium of Physical Activities). This is the code that matches the beginner pre"
+    },
+    {
+      "code": "02022",
+      "met": 3.8,
+      "activity": "Extras (text only, not used in the JSON): the moderate floor version maps to 02022, \"calisthenics (e.g., pushups, sit ups, pull-ups, lunges), moderate effort\" = 3.8 METs (5-6/10, Borg 12-13); the fast"
+    },
+    {
+      "code": "02020",
+      "met": 7.5,
+      "activity": "Extras (text only, not used in the JSON): the moderate floor version maps to 02022, \"calisthenics (e.g., pushups, sit ups, pull-ups, lunges), moderate effort\" = 3.8 METs (5-6/10, Borg 12-13); the fast"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "about 8-10 slow knee drives in total (20 s), hands on a counter",
+      "timeSec": 20,
+      "restSec": 40,
+      "tempo": "1 drive about every 2 s, quiet toes",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 4,
+      "reps": "20 s slow hands-elevated climbers as a circuit station",
+      "timeSec": 20,
+      "restSec": 30,
+      "tempo": "1 drive about every 2 s, quiet toes",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 4,
+      "reps": "30 s slow hands-elevated climbers",
+      "timeSec": 30,
+      "restSec": 30,
+      "tempo": "1 drive about every 2 s, quiet toes",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "30 s floor mountain climbers",
+      "timeSec": 30,
+      "restSec": 30,
+      "tempo": "about 1 drive per second",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "12-16 slow floor drives per leg as a core finisher",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "2 s per drive",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 4,
+      "reps": "45 s floor mountain climbers",
+      "timeSec": 45,
+      "restSec": 30,
+      "tempo": "about 1 drive per second",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "fat_loss",
+      "sets": 8,
+      "reps": "20 s fast floor climbers, vigorous effort",
+      "timeSec": 20,
+      "restSec": 10,
+      "tempo": "fast, controlled",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "endurance",
+      "sets": 4,
+      "reps": "60 s cross-body or fast floor climbers in a circuit",
+      "timeSec": 60,
+      "restSec": 30,
+      "tempo": "fast, controlled",
+      "perWeek": 3
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "start_leg_back",
+        "joint": "hip of moving leg (shoulder-hip-knee)",
+        "angleDeg": ">= 150",
+        "parsed": {
+          "op": ">=",
+          "value": 150,
+          "max": null
+        }
+      },
+      {
+        "name": "knee_in",
+        "joint": "hip of moving leg (shoulder-hip-knee)",
+        "angleDeg": "<= 100",
+        "parsed": {
+          "op": "<=",
+          "value": 100,
+          "max": null
+        }
+      },
+      {
+        "name": "body_line",
+        "joint": "body line (shoulder-hip-ankle)",
+        "angleDeg": ">= 160",
+        "parsed": {
+          "op": ">=",
+          "value": 160,
+          "max": null
+        }
+      },
+      {
+        "name": "arms_straight",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": ">= 160",
+        "parsed": {
+          "op": ">=",
+          "value": 160,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 1
+  },
+  "formChecks": [
+    {
+      "joint": "hip",
+      "rule": "hip angle of moving leg > 100 degrees at knee-in phase (equals knee_in phase threshold): not counted, flagged",
+      "message": "Bring the knee in further"
+    },
+    {
+      "joint": "hip",
+      "rule": "hip angle of moving leg < 150 degrees at start phase (equals start_leg_back phase threshold)",
+      "message": "Send the foot all the way back"
+    },
+    {
+      "joint": "hip",
+      "rule": "body line angle (shoulder-hip-ankle) < 160 degrees during a rep (equals body_line phase threshold)",
+      "message": "Keep one straight line"
+    },
+    {
+      "joint": "hip",
+      "rule": "hip-hike flag: hip landmark above the shoulder-ankle line beyond margin (separate flag, not an angle)",
+      "message": "Lower the hips"
+    },
+    {
+      "joint": "hip",
+      "rule": "hip-sag flag: hip landmark below the shoulder-ankle line beyond margin (separate flag, not an angle)",
+      "message": "Lift the hips, belly in"
+    },
+    {
+      "joint": "elbow",
+      "rule": "elbow angle < 160 degrees during the rep (equals arms_straight phase threshold)",
+      "message": "Push the surface away: straight arms"
+    },
+    {
+      "joint": "shoulder",
+      "rule": "shoulder landmark far behind or ahead of the wrist beyond margin (flag, not an angle)",
+      "message": "Hands under shoulders"
+    },
+    {
+      "joint": "ankle",
+      "rule": "hard-touch flag: ankle vertical speed spikes at touchdown (separate flag)",
+      "message": "Quiet toes: place, don't stamp"
+    },
+    {
+      "joint": "hip",
+      "rule": "rep duration < 1.0 s (equals min_rep_sec)",
+      "message": "Slow down a little"
+    }
+  ],
+  "safetyFlags": [
+    "use_a_fixed_surface_for_beginner_version",
+    "noise_use_slow_incline_version_when_neighbours_below",
+    "wrist_problems_use_forearms_or_standing_knee_drive",
+    "shoulder_problems_raise_hands_or_use_standing_version",
+    "back_pain_brace_stop_if_arching",
+    "hypertension_light_to_moderate_breathe_continuously",
+    "heart_disease_get_clearance_first",
+    "asthma_warm_up_and_carry_reliever",
+    "pregnancy_ask_obstetrician_belly_doming",
+    "postpartum_check_abdominal_separation_first",
+    "osteoporosis_neutral_spine_get_advice",
+    "recent_surgery_get_approval",
+    "stop_with_chest_pain_dizziness_or_belly_bulging"
+  ],
+  "progressions": [
+    "lower the surface from counter to bench to floor",
+    "slow floor climbers",
+    "steady-tempo floor climbers",
+    "faster tempo",
+    "cross-body climbers",
+    "sliders",
+    "circuit with burpees"
+  ],
+  "regressions": [
+    "hands on a higher surface or wall with slow marching knees",
+    "static plank knee tuck, one knee at a time",
+    "standing knee drive at a wall"
+  ],
+  "videoShots": [
+    {
+      "seconds": 6,
+      "angle": "side, hip height, 2.5 m",
+      "shows": "setup: test the fixed surface, hands shoulder-width",
+      "textOverlay": "Test the surface. It must not move."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, hip height, 2.5 m",
+      "shows": "walk feet back into a straight slanted line and brace",
+      "textOverlay": "One straight line. Belly in."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, hip height, 2.5 m",
+      "shows": "slow knee drive: knee in, foot back, soft toe touch",
+      "textOverlay": "Knee in. Foot back. Quiet toes."
+    },
+    {
+      "seconds": 7,
+      "angle": "side, hip height, 2.5 m",
+      "shows": "alternating slow climbers about 1 drive every 2 s",
+      "textOverlay": "Slow and steady. Keep breathing."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, knee height, 2 m, split screen",
+      "shows": "hips piked up vs sagging vs level",
+      "textOverlay": "Hips level with shoulders."
+    },
+    {
+      "seconds": 6,
+      "angle": "front, chest height, 2.5 m",
+      "shows": "hands under shoulders, fingers spread, hips level",
+      "textOverlay": "Hands under shoulders."
+    },
+    {
+      "seconds": 7,
+      "angle": "side, hip height, 2.5 m",
+      "shows": "easier: hands higher or standing knee drive at a wall",
+      "textOverlay": "Easier: hands higher"
+    },
+    {
+      "seconds": 7,
+      "angle": "side, hip height, 2.5 m",
+      "shows": "harder: floor climbers at a steady pace on a mat",
+      "textOverlay": "Harder: the floor (only if neighbours allow)"
+    }
+  ],
+  "lastResearched": "2026-10-28",
+  "setupSteps": [
+    "Choose the surface. For the beginner version, use a kitchen counter or a heavy, fixed bench, about hip height (the surface should be at or just below your hip crease when standing; higher is easier; est.). Press down on it hard to check it does not slide, tip or wobble. Avoid a rolling chair, a stool on tiles, or a table with loose legs.",
+    "Floor and noise: a non-slip floor for the feet. In a flat with neighbours below, put a yoga mat or thick rug where the feet will land and keep the knee drives slow. Avoid early morning and late night with the fast floor version.",
+    "Footwear: flat trainers, or bare feet on a non-slip mat. Avoid socks on smooth tiles (the foot can slide out).",
+    "Hand position: place your hands on the edge of the surface about shoulder-width apart (Strengthlog), directly under the shoulders (Healthline: shoulders directly over the wrists), fingers spread, pointing forward.",
+    "Walk the feet back: step both feet back until your arms are straight, your body forms a slanted straight line from head through hips to heels, and your shoulders are above or just ahead of your wrists. Feet about hip-width apart (est.).",
+    "Brace: gently pull the belly button towards the spine, squeeze the buttocks lightly, and press the floor of your palms into the surface so the shoulder blades spread slightly.",
+    "Head and eyes: neck in line with the spine; look at a spot just beyond your hands (Healthline suggests a spot just in front of the hands on the floor).",
+    "Clothing: a fitted top and track pants or leggings so the camera can see the hips and knees; avoid loose kurtas that hang down and hide the body line.",
+    "Water and fan: keep water within reach; the heart rate climbs quickly in the faster versions."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": "A. Slow, quiet, hands-elevated mountain climber (beginner main version)",
+      "title": "Take the incline plank",
+      "action": "Hands on the counter or bench, arms straight, feet back, body in one slanted line.",
+      "feel": "Light firmness in the belly and the front of the shoulders; the arms do not burn.",
+      "breathing": "Breathe in normally.",
+      "tempo": null,
+      "visualCheck": "Side: ear, shoulder, hip and ankle form one straight line. Front: shoulders level, hands shoulder-width."
+    },
+    {
+      "n": 2,
+      "part": "A. Slow, quiet, hands-elevated mountain climber (beginner main version)",
+      "title": "Brace and shift weight",
+      "action": "Gently tighten your stomach and press into both hands; let the weight rest over the left foot and both hands.",
+      "feel": "Even pressure through both palms.",
+      "breathing": "Keep breathing easily.",
+      "tempo": null,
+      "visualCheck": "Side: hips do not rise or sink; front: hips level."
+    },
+    {
+      "n": 3,
+      "part": "A. Slow, quiet, hands-elevated mountain climber (beginner main version)",
+      "title": "Lift the right foot slightly",
+      "action": "Lift the right foot an inch or two off the floor, keeping the leg low.",
+      "feel": "A little work in the left thigh and the belly.",
+      "breathing": "Start to breathe out.",
+      "tempo": null,
+      "visualCheck": "Side: the body line does not change."
+    },
+    {
+      "n": 4,
+      "part": "A. Slow, quiet, hands-elevated mountain climber (beginner main version)",
+      "title": "Draw the right knee in slowly",
+      "action": "Slide the right knee forward and slightly up towards your right elbow or chest, as far as you can without the hips rising or the back rounding. Do not hop.",
+      "feel": "Lower belly and front of the hip working; the knee moves in a smooth arc.",
+      "breathing": "Continue breathing out as the knee comes in.",
+      "tempo": null,
+      "visualCheck": "Side: the knee goes under or in front of the hip; shoulders stay above the hands; hips stay in line."
+    },
+    {
+      "n": 5,
+      "part": "A. Slow, quiet, hands-elevated mountain climber (beginner main version)",
+      "title": "Touch the toe down softly, then return the foot",
+      "action": "Press the right foot back along the floor, or lift it back, until the leg is nearly straight and the toes touch softly.",
+      "feel": "Back of the thigh and buttock working; no stamp.",
+      "breathing": "Breathe in as the leg goes back.",
+      "tempo": null,
+      "visualCheck": "Side: the leg ends nearly straight and the body line returns to a slanted straight line."
+    },
+    {
+      "n": 6,
+      "part": "A. Slow, quiet, hands-elevated mountain climber (beginner main version)",
+      "title": "Repeat on the left",
+      "action": "Lift the left foot, draw the knee in, return.",
+      "feel": "A steady, easy rhythm with the trunk still.",
+      "breathing": "Out as the knee comes in, in as it goes back (est.; any steady pattern is fine, never hold your breath).",
+      "tempo": null,
+      "visualCheck": "Front: hips level, no side-to-side sway; side: hips do not bob."
+    },
+    {
+      "n": 7,
+      "part": "A. Slow, quiet, hands-elevated mountain climber (beginner main version)",
+      "title": "Finish the set",
+      "action": "Step both feet in, stand up and walk around.",
+      "feel": "Heart rate up, breathing quicker, but you can still speak in short sentences.",
+      "breathing": "Slow, deep breaths.",
+      "tempo": null,
+      "visualCheck": "Stand tall; shake out the wrists."
+    },
+    {
+      "n": 8,
+      "part": "B. Floor mountain climber (intermediate version)",
+      "title": "Start in a high plank, hands under the shoulders, body in a straight line from head to heels (Healthline)",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 9,
+      "part": "B. Floor mountain climber (intermediate version)",
+      "title": "Drive one knee in towards the chest, keeping the hips down and level",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 10,
+      "part": "B. Floor mountain climber (intermediate version)",
+      "title": "Return that foot and switch legs in a smooth running rhythm; pick the pace so the hips do not rise (Livestrong, Hinge Health)",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 11,
+      "part": "B. Floor mountain climber (intermediate version)",
+      "title": "Keep the shoulders over the wrists and the neck neutral; stop the set when the hips start to rise or sag",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Hips rising (pike)",
+      "text": "Hips rising (pike). Why: it takes tension off the core and shifts work to the shoulders (FitnessVolt advice; sources say hips often rise as you tire or speed up). Fix: slow down; keep the body in one line; stop the set when you cannot."
+    },
+    {
+      "title": "Hips sagging",
+      "text": "Hips sagging. Why: the lower back arches and takes the load (a physical therapist quoted by Livestrong). Fix: squeeze the buttocks lightly and brace the belly; raise the hands higher to make it easier."
+    },
+    {
+      "title": "Rushing so the form breaks down",
+      "text": "Rushing so the form breaks down. Why: speed usually causes poor form, especially the hips shifting above the rest of the body (a trainer quoted in a news piece), and bouncing on the toes adds impact (Hinge Health). Fix: begin at one drive every 1-2 seconds and add speed only when the line stays straight."
+    },
+    {
+      "title": "Bouncing shoulders or hands too far forward or too wide",
+      "text": "Bouncing shoulders or hands too far forward or too wide. Why: strains the wrists and shoulders and stops the core doing the work. Fix: hands shoulder-width, directly beneath the shoulders; press the surface away."
+    },
+    {
+      "title": "Short knee drive or crossing the feet",
+      "text": "Short knee drive or crossing the feet. Why: reduced range and balance loss (Livestrong and others). Fix: drive the knee forward and under you; keep feet hip-width."
+    },
+    {
+      "title": "Stamping or hopping the feet",
+      "text": "Stamping or hopping the feet. Why: noise and joint shock, especially in a flat with neighbours below. Fix: lift the foot slightly and slide it back; use a mat."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. Why: breath-holding raises blood pressure more than breathing during effort. Fix: breathe out as the knee comes in; talk-test."
+    },
+    {
+      "title": "Using a wobbly surface for the beginner version",
+      "text": "Using a wobbly surface for the beginner version. Why: a sliding or tipping surface can cause a fall onto the face or wrists. Fix: choose a fixed counter or heavy bench and test it first."
+    }
+  ],
+  "safetyNotes": [
+    "Wrist, elbow or shoulder problems: use a higher surface, forearms on the surface, or the standing knee drive; avoid bearing weight if it hurts.",
+    "Back problems: keep the stomach braced and ribs down; use the incline version; stop if the lower back arches or hurts. Hinge Health advises checking with a provider if back pain is significant.",
+    "High blood pressure and heart disease: light-to-moderate effort, steady breathing, avoid breath-holding; get clearance if BP is severe or uncontrolled or you have known heart disease.",
+    "Pregnancy and postpartum: the plank position loads the front belly wall; ask your obstetrician or women's health physiotherapist first, and stop if the belly bulges or domes.",
+    "Recent surgery, dizziness, balance problems: only with approval.",
+    "Osteoporosis: wrists and spine are in a weight-bearing position; use the incline version and avoid spinal bending; get individual advice."
+  ],
+  "sources": [
+    "2024 Adult Compendium of Physical Activities (Herrmann et al., J Sport Health Sci 2024): codes 02020, 02022, 02024 (calisthenics, vigorous / moderate / light). https://pacompendium.com/conditioning-exercise/ ; https://pacompendium.com/wp-content/uploads/2024/02/1_2024-adult-compendium_1_2024.pdf ; https://pubmed.ncbi.nlm.nih.gov/38242596/",
+    "Healthline, What do mountain climbers work (muscles, setup, shoulders over wrists, heel-to-head line, gaze). https://www.healthline.com/health/fitness/what-do-mountain-climbers-work",
+    "StrengthLog, How to do mountain climbers (steps, hips down, shoulder-width hands). https://www.strengthlog.com/mountain-climbers/",
+    "Hinge Health, How to do mountain climbers (form, bouncing on the toes, back-pain note, easier versions in video). https://www.hingehealth.com/gb/en/resources/articles/mountain-climbers/",
+    "Livestrong, 4 mistakes that make mountain climbers less effective (lower-back movement, slow the reps) ; Livestrong, mountain climber form. https://livestrong.com/article/13728682-mountain-climber-exercise-mistakes ; https://livestrong.com/article/13721880-mountain-climber-exercise",
+    "Bodybuilding.com, flat bench mountain climber (hands elevated lowers shoulder challenge) and floor mountain climber. https://bodybuilding.com/exercises/30-flat-bench-mountain-climber ; https://bodybuilding.com/exercises/mountain-climbers",
+    "FitnessVolt, Mountain climbers (do not raise the hips). https://fitnessvolt.com/mountain-climbers/",
+    "Dr Muscle, The ultimate guide to climbers variations (cross-body and sliding progressions; hands-elevated option). https://dr-muscle.com/the-ultimate-guide-to-climbers-variations/",
+    "NASM, Incline push-up (hands-elevated regression). https://www.nasm.org/resource-center/exercise-library/incline-push-up",
+    "Breaking Muscle, Kinetic analysis of the push-up: which version is hardest (percent of body weight with hands on boxes; direction only). https://breakingmuscle.com/kinetic-analysis-of-the-push-up-which-version-is-hardest/",
+    "Motriz (2020), Energy expenditure and intensity of a HIIT bodyweight session including mountain climbers (average heart rate about 160 bpm, about 251 kcal; whole-session figures). https://www.scielo.br/j/motriz/a/nCndpJpMRKg4tLNDbHxRbnf/abstract/?lang=en ; https://doaj.org/article/8d100eefe0924757b162c952dbd83db2",
+    "Alo Moves, No-jumping apartment workouts; Bustle, Quiet workouts (pace and padding for neighbours). https://blog.alomoves.com/movement/12-best-no-jumping-apartment-friendly-exercises ; https://www.bustle.com/wellness/quiet-workouts-quarantine",
+    "ACSM-linked Borg RPE bands (light 9-11, moderate 12-13, vigorous 14-17) and talk test. https://pmc.ncbi.nlm.nih.gov/articles/PMC10310950/table/tbl1 ; https://pmc.ncbi.nlm.nih.gov/articles/PMC9618974/table/tbl4 ; https://blog.nasm.org/rate-of-perceived-exertion",
+    "MKUH, Diastasis recti following pregnancy; Berkshire Healthcare, Divarication of rectus abdominis leaflet; Oxford University Hospitals, diastasis leaflet; Livestrong, planks while pregnant (trainer view, lower evidence). https://www.mkuh.nhs.uk/?p=22862 ; https://www.berkshirehealthcare.nhs.uk/media/109514453/divarication-of-rectus-abdominis-physio-leaflet-berkshrie-healthcare.pdf ; https://ulive.ouh.nhs.uk/media/gedal1lb/74152pdiastasis.pdf ; https://livestrong.com/article/13729516-planks-while-pregnant",
+    "ACOG opinion on exercise in the childbearing year via DONA summary; NCBI Bookshelf exercise in pregnancy. https://dona.org/new-acog-opinion-on-exercise-in-the-childbearing-year/ ; https://www.ncbi.nlm.nih.gov/books/NBK582697/",
+    "Pharmacy Magazine CPD, Exercise and asthma (Asthma UK tips); Cambridge University Hospitals, exercise-induced bronchoconstriction leaflet; warm-up review. https://www.pharmacymagazine.co.uk/cpd-modules/making-a-difference-in-asthma-care/exercise-and-asthma-528343 ; https://www.cuh.nhs.uk/patient-information/exercise-induced-bronchoconstriction-for-children-and-young-people/ ; https://pubmed.ncbi.nlm.nih.gov/21811185/",
+    "ACSM (Zaleski), exercise for the prevention and treatment of hypertension; NCHPAD summary. https://acsm.org/exercise-for-the-prevention-and-treatment-of-hypertension/ ; https://nchpad.org/817/4203/Physical~Activity~~The~Best~Prescription~for~Hypertension",
+    "Colberg SR et al. (2016), ADA position statement on physical activity/exercise and diabetes, Diabetes Care 39:2065-2079. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/",
+    "AHA, Recommendations for physical activity in adults; AHA Professional, Physical activity as first-line treatment for elevated BP or cholesterol (Gibbs et al.). https://heart.org/en/healthy-living/exercise-and-physical-activity/fitness-basics/aha-recs-for-physical-activity-in-adults ; https://professional.heart.org/en/science-news/Physical-Activity-as-a-Critical-Component-of-First-Line-Treatment-for-Elevated-BP-or-Cholesterol/commentary",
+    "Donnelly JE et al. (2009), ACSM position stand on physical activity for weight loss; ACE Fitness, Tips for training clients impacted by obesity. https://pubmed.ncbi.nlm.nih.gov/19127177/ ; https://www.acefitness.org/education-and-resources/professional/expert-articles/6459/tips-for-training-clients-impacted-by-obesity/",
+    "Effect of physical exercise in people with hypothyroidism: systematic review and meta-analysis (2023). https://pubmed.ncbi.nlm.nih.gov/37999992/",
+    "Harvard Health, Walking, cycling and swimming are best exercises for knee osteoarthritis; Today's Dietitian, Getting fit with osteoarthritis. https://content.health.harvard.edu/blog/walking-cycling-and-swimming-are-best-exercises-for-knee-osteoarthritis ; https://www.todaysdietitian.com/focus-on-fitness-getting-fit-with-osteoarthritis/",
+    "Oxford University Hospitals, back pain leaflet; Sherwood Forest Hospitals, Managing back pain. https://www.ouh.nhs.uk/media/mrfblszk/116451pain.pdf ; https://sfh-tr.nhs.uk/media/0jlnxa0c/pil202501-06-mbp-managing-back-pain.pdf",
+    "HSS Rehabilitation, Shoulder impingement non-operative guideline. https://www.hss.edu/files/HSSRehabilitationClinicalGuidelines-Shoulder-Impingement-Non-operative.pdf",
+    "Strong, Steady and Straight: UK osteoporosis exercise consensus (BJSM 2022). https://bjsm.bmj.com/content/56/15/837"
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 35.7,
+      "70kg": 30.6,
+      "80kg": 26.8
+    },
+    "per300kcal": {
+      "60kg": 107.1,
+      "70kg": 91.8,
+      "80kg": 80.4
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "cardio",
+    "core",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "small_flat",
+    "neighbours_below_slow_incline_version_only",
+    "short_sessions",
+    "no_equipment",
+    "circuit_finisher"
+  ],
+  "swapsByAccess": {
+    "none": "Standing knee drives at a wall, plank from the knees (Home 3) or Glute bridge (Home 4)",
+    "home_equipment": "Step-ups on a low stair (Home 12) or Dead bug (Home 8)",
+    "basic_gym": "Treadmill brisk walk (Gym 5) or stationary bike (Gym 7)",
+    "full_gym": "Elliptical (Gym 6), rowing machine (Gym 8), stair climber (Gym 9), or cable crunch and captain's chair leg raise (Gym 42-43)"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "Slow incline version at light-to-moderate effort (3-5/10, Borg 9-12); keep breathing; avoid fast floor sets; severe or uncontrolled BP needs a medical check first",
+      "source": "ACSM hypertension guidance (Zaleski); NCHPAD summary"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "Fits as part of activity; usual glucose checks and fast carbohydrate on hand if on insulin or sulfonylureas; check feet if neuropathy",
+      "source": "ADA position statement (Colberg et al. 2016)"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "After clearance only: slow incline version at light effort (3-4/10, Borg 9-11), short bouts; stop with chest discomfort or breathlessness",
+      "source": "AHA physical activity recommendations; clearance specifics Not found"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "Counts toward the 150+ minutes/week aerobic and resistance mix; start with the slow version",
+      "source": "AHA recommendations; AHA statement (Gibbs et al.)"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Use the hands-elevated version (hands-high lowers load); start 3 x 20 s and build; avoid fast floor sets until strong",
+      "source": "Breaking Muscle push-up kinetics summary (direction only); ACE obesity training article; ACSM weight position stand (Donnelly 2009)"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "Fits general exercise guidance; no mountain-climber-specific advice found",
+      "source": "Not found"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "Train as usual if controlled; start at beginner level if fatigued",
+      "source": "Systematic review 2023 (PubMed 37999992)"
+    },
+    {
+      "condition": "asthma",
+      "status": "modify",
+      "change": "Warm up first, keep reliever nearby, keep it light-to-moderate; stop and use reliever if wheeze or cough starts",
+      "source": "Asthma UK tips via Pharmacy Magazine CPD; Cambridge University Hospitals leaflet; PubMed 21811185"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Shorten the knee drive, avoid hopping, mat under feet, or use the standing wall knee drive; stop if pain rises",
+      "source": "Harvard Health low-impact analysis for knee OA; Arthritis Foundation via Today's Dietitian; mountain-climber-specific advice Not found"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Incline version, braced belly, ribs down; stop if the back arches or hurts; staying active beats bed rest",
+      "source": "Hinge Health guide; NHS hospital back-pain leaflets (Oxford University Hospitals; Sherwood Forest)"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "modify",
+      "change": "Raise the hands higher (lower shoulder load); stop if pinching or pain; use the standing wall knee drive if the plank hurts",
+      "source": "Bodybuilding.com flat-bench climber note; HSS shoulder impingement protocol"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "modify",
+      "change": "Incline version with a neutral spine; avoid rounding or spinal bending; get individual advice (mountain-climber-specific advice Not found)",
+      "source": "Strong, Steady and Straight (Royal Osteoporosis Society, BJSM 2022)"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "ask_doctor",
+      "change": "Plank-position moves load the belly wall; ask your obstetrician first; standing knee drives are an alternative; stop if the belly doms or bulges, or with dizziness or pain",
+      "source": "ACOG via DONA summary; NCBI NBK582697; mountain climbers Not found"
+    },
+    {
+      "condition": "postpartum",
+      "status": "ask_doctor",
+      "change": "Avoid movements that dome or bulge the belly until a physiotherapist checks abdominal separation; mountain climbers not named in leaflets (Not found)",
+      "source": "MKUH, Berkshire Healthcare and Oxford University Hospitals diastasis leaflets"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Only with surgeon or physiotherapist approval",
+      "source": "Not found"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "home",
+      "gym"
+    ],
+    "bodyRegion": [
+      "core",
+      "full_body"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "fat_loss",
+      "endurance"
+    ],
+    "intensity": "light",
+    "noise": "quiet",
+    "space": "small_room",
+    "typicalMinutes": 5,
+    "kcalPer10min70kg": 32.7,
+    "difficulty1to5": 2,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Home",
+    "Gym",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Cardio",
+    "Core",
+    "Shoulders",
+    "Chest",
+    "Arms",
+    "Rep counter",
+    "Under 10 min"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-10-28",
+      "file": "FitPlate_Fitness_2026-10-28.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

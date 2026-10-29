@@ -4,7 +4,7 @@
   "aliases": [
     "Kashmiri lal mirch"
   ],
-  "category": "Spice",
+  "category": "Spice (ground)",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -15,80 +15,293 @@
         "avg": 1055,
         "confidence": "High",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-10-25",
+        "min": 925,
+        "max": 1450,
+        "avg": 1195,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
       }
     ],
     "currentEstimate": {
-      "min": 920,
-      "max": 1190,
-      "avg": 1055
+      "min": 950,
+      "max": 1285,
+      "avg": 1120
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-10-25",
     "stale": false,
     "seasonal": false,
     "listingCount": 5,
     "platforms": [
-      "Amazon",
       "BigBasket",
-      "Blinkit",
-      "magicdrop.in (comparison page"
+      "Flipkart"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 92,
-    "max": 119,
-    "avg": 105.5
+    "min": 95,
+    "max": 128.5,
+    "avg": 112
   },
   "seasonal": false,
-  "nutritionPer100g": null,
-  "macrosPer100Estimate": {
-    "kcal": 290,
-    "proteinG": 13,
-    "carbsG": 50,
-    "fatG": 14,
-    "fibreG": 33
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 292,
+      "source": "Other: Eastern Kashmiri Chilli Powder pack label via BigBasket: Eastern Kashmiri Chilli Powder label (BigBasket listing https://bigbasket.com/pd/40270423/eastern-kashmiri-chilli-powder-mild-spice-for-thick-red-gravy-flavour-locked-500-g-pouch); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "proteinG": {
+      "value": 13,
+      "source": "Other: Eastern Kashmiri Chilli Powder pack label via BigBasket: Eastern Kashmiri Chilli Powder label (BigBasket listing https://bigbasket.com/pd/40270423/eastern-kashmiri-chilli-powder-mild-spice-for-thick-red-gravy-flavour-locked-500-g-pouch); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "carbsG": {
+      "value": 63,
+      "source": "Other: Eastern Kashmiri Chilli Powder pack label via BigBasket: Eastern Kashmiri Chilli Powder label (BigBasket listing https://bigbasket.com/pd/40270423/eastern-kashmiri-chilli-powder-mild-spice-for-thick-red-gravy-flavour-locked-500-g-pouch); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "sugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fatG": {
+      "value": 10,
+      "source": "Other: Eastern Kashmiri Chilli Powder pack label via BigBasket: Eastern Kashmiri Chilli Powder label (BigBasket listing https://bigbasket.com/pd/40270423/eastern-kashmiri-chilli-powder-mild-spice-for-thick-red-gravy-flavour-locked-500-g-pouch); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "sodiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "Other: Eastern Kashmiri Chilli Powder pack label via BigBasket: Eastern Kashmiri Chilli Powder label (BigBasket listing https://bigbasket.com/pd/40270423/eastern-kashmiri-chilli-powder-mild-spice-for-thick-red-gravy-flavour-locked-500-g-pouch); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "Other: Eastern Kashmiri Chilli Powder pack label via BigBasket: Eastern Kashmiri Chilli Powder label (BigBasket listing https://bigbasket.com/pd/40270423/eastern-kashmiri-chilli-powder-mild-spice-for-thick-red-gravy-flavour-locked-500-g-pouch); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    }
   },
-  "storage": "Airtight, opaque jar at room temperature, away from light and heat. Keeping it in the fridge preserves the colour longer. It lasts about 6 months open.",
-  "looksLike": "a bright brick-red to crimson powder with a mild, fruity smell. It gives far more colour than heat.",
-  "howToPick": "look for a vivid, even red with a mild sweet smell. Avoid dull, brown or caked powder. An unnaturally neon red may mean added colour, so stick to sealed branded packs.",
-  "shelfLife": "about 12 months unopened (check the pack). The colour fades within a few months of opening if it is exposed to light.",
+  "macrosPer100Estimate": {
+    "kcal": 291,
+    "proteinG": 13,
+    "carbsG": 63,
+    "fatG": 10,
+    "fibreG": 34
+  },
+  "storage": "Airtight container away from light and heat; colour fades with time, so use within about 6 months once opened.",
+  "looksLike": "a bright, deep red powder with mild heat, used to colour gravies red without making them very hot.",
+  "howToPick": "a vivid, even red; a dull brown or very bright artificial red suggests added colour or age.",
+  "shelfLife": "about 6 to 12 months sealed (general guidance; not from a source in this run).",
   "substitutes": [
     "Paprika (sweet, not smoked), 1",
-    "Deggi mirch, 1"
+    "Deggi mirch, 1",
+    "Regular red chilli powder plus a little paprika",
+    "Byadgi chilli powder",
+    "Sweet paprika"
   ],
   "usedIn": [
     {
-      "dishNumber": 3,
+      "dishNumber": 82,
       "quantity": 2,
       "unit": "g",
-      "raw": "2 g (¾ tsp)"
+      "raw": "2 g per serving (¾ tsp)"
     },
     {
-      "dishNumber": 5,
+      "dishNumber": 83,
+      "quantity": 0.2,
+      "unit": "g",
+      "raw": "0.2 g per serving (a small pinch, in the green chutney; the dish lists it as \"red chilli powder (Kashmiri)\")"
+    },
+    {
+      "dishNumber": 85,
       "quantity": 0.5,
       "unit": "g",
-      "raw": "0.5 g (¼ tsp)"
+      "raw": "0.5 g per serving (¼ tsp)"
+    },
+    {
+      "dishNumber": 102,
+      "quantity": 1,
+      "unit": "g",
+      "raw": "1 g per serving (½ tsp; the dish names it \"red chilli powder (lal mirch, Kashmiri)\", so it is counted here, not under regular lal mirch)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-10-25",
+      "file": "FitPlate_Ingredients_2026-10-25.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 922.2–1306.5 was wider than 30% of avg 1117.7; narrowed to ±15%.",
+    "macrosPer100Estimate.carbsG: Versions 2026-10-04 (50) and 2026-10-25 (63) differ by more than 25%; kept the newer.",
+    "macrosPer100Estimate.fatG: Versions 2026-10-04 (14) and 2026-10-25 (10) differ by more than 25%; kept the newer."
+  ]
 }

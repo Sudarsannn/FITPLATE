@@ -4,7 +4,7 @@
   "aliases": [
     "adrak"
   ],
-  "category": "Vegetable (rhizome/spice)",
+  "category": "Vegetable",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -15,37 +15,227 @@
         "avg": 80,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-10-25",
+        "min": 205,
+        "max": 235,
+        "avg": 220,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
       }
     ],
     "currentEstimate": {
-      "min": 68,
-      "max": 92,
-      "avg": 80
+      "min": 130,
+      "max": 175,
+      "avg": 150
     },
-    "method": "single",
+    "method": "spike-blend",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-10-25",
     "stale": false,
     "seasonal": false,
     "listingCount": 2,
     "platforms": [
-      "BigBasket",
-      "OneIndia"
+      "BigBasket"
     ],
     "outOfStock": false,
     "confirmed": false,
     "checkNotes": [
-      "only 2 listings back the range (need 3)"
+      "only 2 listings back the range (need 3)",
+      "only 1 platform (BigBasket) backs the range"
     ]
   },
   "per100Estimate": {
-    "min": 6.8,
-    "max": 9.2,
-    "avg": 8
+    "min": 13,
+    "max": 17.5,
+    "avg": 15
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 80,
+      "source": "USDA FDC: USDA FDC 169231 'Ginger root, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "proteinG": {
+      "value": 1.8,
+      "source": "USDA FDC: USDA FDC 169231 'Ginger root, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "carbsG": {
+      "value": 17.8,
+      "source": "USDA FDC: USDA FDC 169231 'Ginger root, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sugarsG": {
+      "value": 1.7,
+      "source": "USDA FDC: USDA FDC 169231 'Ginger root, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "fatG": {
+      "value": 0.8,
+      "source": "USDA FDC: USDA FDC 169231 'Ginger root, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "saturatedFatG": {
+      "value": 0.2,
+      "source": "USDA FDC: USDA FDC 169231 'Ginger root, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "fibreG": {
+      "value": 2,
+      "source": "USDA FDC: USDA FDC 169231 'Ginger root, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sodiumMg": {
+      "value": 13,
+      "source": "USDA FDC: USDA FDC 169231 'Ginger root, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "ironMg": {
+      "value": 0.6,
+      "source": "USDA FDC: USDA FDC 169231 'Ginger root, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "calciumMg": {
+      "value": 16,
+      "source": "USDA FDC: USDA FDC 169231 'Ginger root, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "potassiumMg": {
+      "value": 415,
+      "source": "USDA FDC: USDA FDC 169231 'Ginger root, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "magnesiumMg": {
+      "value": 43,
+      "source": "USDA FDC: USDA FDC 169231 'Ginger root, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "zincMg": {
+      "value": 0.4,
+      "source": "USDA FDC: USDA FDC 169231 'Ginger root, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminCMg": {
+      "value": 5,
+      "source": "USDA FDC: USDA FDC 169231 'Ginger root, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": 79,
+      "source": "USDA FDC: USDA FDC 169231 'Ginger root, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 169231 'Ginger root, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": 34,
+      "source": "USDA FDC: USDA FDC 169231 'Ginger root, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": 0.23,
+      "source": "USDA FDC: USDA FDC 169231 'Ginger root, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "manganeseMg": {
+      "value": 0.23,
+      "source": "USDA FDC: USDA FDC 169231 'Ginger root, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": 0.1,
+      "source": "USDA FDC: USDA FDC 169231 'Ginger root, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": 0.03,
+      "source": "USDA FDC: USDA FDC 169231 'Ginger root, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "niacinMg": {
+      "value": 0.9,
+      "source": "USDA FDC: USDA FDC 169231 'Ginger root, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminB6Mg": {
+      "value": 0.16,
+      "source": "USDA FDC: USDA FDC 169231 'Ginger root, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 169231 'Ginger root, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    }
+  },
   "macrosPer100Estimate": {
     "kcal": 80,
     "proteinG": 1.8,
@@ -53,38 +243,64 @@
     "fatG": 0.8,
     "fibreG": 2
   },
-  "storage": "Unpeeled, in a paper bag or a zip bag with the air pressed out, in the fridge vegetable drawer: 2–3 weeks. Freezer: whole or grated, 3–6 months. It grates easily straight from frozen.",
-  "looksLike": "Knobbly, branching beige-brown root with thin skin and pale yellow, fibrous, strongly aromatic flesh.",
-  "howToPick": null,
-  "shelfLife": "2–3 weeks in the fridge.",
+  "storage": "Keep unpeeled in a paper bag in the fridge for 2 to 3 weeks; peeled or grated ginger can be frozen in small portions.",
+  "looksLike": "A knobbly, beige-skinned underground stem with pale yellow flesh and a sharp, warm, citrusy smell.",
+  "howToPick": "Firm, plump, heavy roots with thin taut skin and a sharp smell. Avoid shrivelled, soft, mouldy or sprouting pieces.",
+  "shelfLife": "About 2 to 3 weeks in the fridge (general guidance; not taken from a source in this run).",
   "substitutes": [
     "Ginger-garlic paste (jar)",
     "Dried ginger powder (saunth)",
-    "Leave it out"
+    "Leave it out",
+    "Dry ginger powder (sonth)",
+    "Ginger paste (jar)",
+    "Galangal"
   ],
   "usedIn": [
     {
-      "dishNumber": 4,
-      "quantity": 3,
+      "dishNumber": 81,
+      "quantity": 2,
       "unit": "g",
-      "raw": "3 g (½-inch piece, finely chopped)"
+      "raw": "2 g per serving."
     },
     {
-      "dishNumber": 5,
-      "quantity": 3,
+      "dishNumber": 82,
+      "quantity": 5,
       "unit": "g",
-      "raw": "3 g (½-inch piece, grated)"
+      "raw": "5 g per serving."
+    },
+    {
+      "dishNumber": 84,
+      "quantity": 4,
+      "unit": "g",
+      "raw": "4 g per serving."
+    },
+    {
+      "dishNumber": 85,
+      "quantity": 2,
+      "unit": "g",
+      "raw": "2 g per serving."
+    },
+    {
+      "dishNumber": 101,
+      "quantity": 5,
+      "unit": "g",
+      "raw": "5 g per serving."
     }
   ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-10-25",
+      "file": "FitPlate_Ingredients_2026-10-25.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (spike-blend)",
     "macrosPer100Estimate": "stable (single)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
@@ -92,7 +308,9 @@
     "usedIn": "newest"
   },
   "mergeNotes": [
+    "price flag: possible-spike",
     "price flag: narrowed",
-    "Range 45.0–120.0 was wider than 30% of avg 80.0; narrowed to ±15%."
+    "Possible spike: latest avg 220 (2026-10-25) moved more than 35% from the previous estimate; using the halfway point.",
+    "Range 125.0–177.5 was wider than 30% of avg 150.0; narrowed to ±15%."
   ]
 }

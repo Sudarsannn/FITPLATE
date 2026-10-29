@@ -9,8 +9,8 @@ export const featureFlags = {
   researchData: true,
   /** Day 12: camera check step in cook mode (plan only; needs a dev build). */
   cameraCheck: false,
-  /** Day 12: read steps aloud with expo-speech. */
-  voiceSteps: false,
+  /** Day 12: read steps aloud with expo-speech (a switch on the step screen). Needs the iPhone app rebuilt once for the new module. */
+  voiceSteps: true,
   /** Day 17 / 33: local reminders through expo-notifications. */
   reminders: false,
   /** Day 26: live pose-based rep counting (needs a dev build). */
@@ -33,6 +33,8 @@ export const featureFlags = {
   scoreExplainer: true,
   /** Innovation (Day 11): "Cook again" and "Recently viewed" rows on the Cook tab. */
   recentDishes: true,
+  /** Innovation (Day 11): after 9 pm Today suggests three quick, lighter dishes instead of ordering. */
+  lateNightHelper: true,
   /** Priority plan P1-b: Google sign-in inside the iPhone / Android dev build. Only shows when that platform's client ID is in .env. */
   nativeGoogleSignIn: true,
   /** Priority plan P2-c: read the research library from the server when it is newer than the bundled copy. */

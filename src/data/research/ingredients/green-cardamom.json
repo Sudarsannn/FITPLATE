@@ -15,74 +15,286 @@
         "avg": 5535,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-10-25",
+        "min": 3000,
+        "max": 6100,
+        "avg": 4550,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
       }
     ],
     "currentEstimate": {
-      "min": 5000,
-      "max": 6100,
-      "avg": 5535
+      "min": 4185,
+      "max": 5665,
+      "avg": 4925
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-10-25",
     "stale": false,
     "seasonal": false,
-    "listingCount": 3,
+    "listingCount": 5,
     "platforms": [
-      "BigBasket"
+      "BigBasket",
+      "StoreKing"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 1 platform (BigBasket) backs the range"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 500,
-    "max": 610,
-    "avg": 553.5
+    "min": 418.5,
+    "max": 566.5,
+    "avg": 492.5
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 311,
+      "source": "USDA FDC: USDA FDC 170919 'Spices, cardamom'; seen on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "proteinG": {
+      "value": 10.8,
+      "source": "USDA FDC: USDA FDC 170919 'Spices, cardamom'; seen on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "carbsG": {
+      "value": 68.5,
+      "source": "USDA FDC: USDA FDC 170919 'Spices, cardamom'; seen on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fatG": {
+      "value": 6.7,
+      "source": "USDA FDC: USDA FDC 170919 'Spices, cardamom'; seen on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 28,
+      "source": "USDA FDC: USDA FDC 170919 'Spices, cardamom'; seen on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sodiumMg": {
+      "value": 18,
+      "source": "USDA FDC: USDA FDC 170919 'Spices, cardamom'; seen on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "ironMg": {
+      "value": 13.97,
+      "source": "USDA FDC: USDA FDC 170919 'Spices, cardamom'; seen on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "calciumMg": {
+      "value": 383,
+      "source": "USDA FDC: USDA FDC 170919 'Spices, cardamom'; seen on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "potassiumMg": {
+      "value": 1119,
+      "source": "USDA FDC: USDA FDC 170919 'Spices, cardamom'; seen on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "magnesiumMg": {
+      "value": 229,
+      "source": "USDA FDC: USDA FDC 170919 'Spices, cardamom'; seen on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "zincMg": {
+      "value": 7.47,
+      "source": "USDA FDC: USDA FDC 170919 'Spices, cardamom'; seen on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 170919 'Spices, cardamom'; seen on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": 178,
+      "source": "USDA FDC: USDA FDC 170919 'Spices, cardamom'; seen on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": 28,
+      "source": "USDA FDC: USDA FDC 170919 'Spices, cardamom'; seen on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 170919 'Spices, cardamom'; seen on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    }
+  },
   "macrosPer100Estimate": {
     "kcal": 311,
-    "proteinG": 11,
-    "carbsG": 68,
+    "proteinG": 10.9,
+    "carbsG": 68.3,
     "fatG": 6.7,
     "fibreG": 28
   },
-  "storage": "Airtight glass jar, cool dark place: 12 months for whole pods.",
-  "looksLike": "small pale-green ribbed pods, about 1 cm long, holding sticky black seeds with a strong sweet-floral aroma.",
-  "howToPick": null,
-  "shelfLife": "about 12 months as whole pods; powder loses aroma within weeks.",
+  "storage": "Airtight jar in a cool, dark place, away from heat and damp; whole pods keep their aroma far longer than powder.",
+  "looksLike": "Small pale-green ribbed pods about 1 cm long, holding sticky black seeds with a sweet, floral aroma.",
+  "howToPick": "General guidance, not from a source in this run: plump green pods of even size with a strong sweet smell. Avoid pale, shrivelled, dusty pods or ones that smell stale.",
+  "shelfLife": "About 1 year whole in a sealed pack (general guidance).",
   "substitutes": [
     "Garam masala",
     "Black cardamom (badi elaichi)",
-    "Skip it"
+    "Skip it",
+    "Cardamom seeds or powder",
+    "A small piece of cinnamon",
+    "Omit"
   ],
   "usedIn": [
     {
-      "dishNumber": 2,
+      "dishNumber": 84,
       "quantity": null,
       "unit": null,
-      "raw": "2 pods"
+      "raw": "2 pods per serving (1 in the rice water, 1 in the masala)"
+    },
+    {
+      "dishNumber": 85,
+      "quantity": null,
+      "unit": null,
+      "raw": "1 pod per serving"
+    },
+    {
+      "dishNumber": 101,
+      "quantity": null,
+      "unit": null,
+      "raw": "2 pods per serving"
     }
   ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-10-25",
+      "file": "FitPlate_Ingredients_2026-10-25.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 3762.0–6100.0 was wider than 30% of avg 4925.3; narrowed to ±15%."
+  ]
 }

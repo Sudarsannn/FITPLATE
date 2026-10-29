@@ -1,0 +1,92 @@
+{
+  "id": "mace-whole-blades",
+  "name": "Mace, whole blades",
+  "aliases": [
+    "javitri"
+  ],
+  "category": "Spice",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-25",
+        "min": 3220,
+        "max": 4575,
+        "avg": 3900,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 3315,
+      "max": 4485,
+      "avg": 3900
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-25",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 2,
+    "platforms": [
+      "BigBasket",
+      "Flipkart"
+    ],
+    "outOfStock": false,
+    "confirmed": false,
+    "checkNotes": [
+      "only 2 listings back the range (need 3)"
+    ]
+  },
+  "per100Estimate": {
+    "min": 331.5,
+    "max": 448.5,
+    "avg": 390
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 525,
+    "proteinG": null,
+    "carbsG": null,
+    "fatG": null,
+    "fibreG": null
+  },
+  "storage": "Airtight jar in a cool, dark place, away from damp and heat. Whole blades keep their aroma longer than ground mace.",
+  "looksLike": "Thin, lacy, flat blades that are orange-red when fresh and amber to golden-brown when dried; a warm, sweet, nutmeg-like aroma.",
+  "howToPick": "General guidance, not from a source in this run: whole, flat, lacy blades in orange to golden colour with a warm smell. Avoid dark, brittle, powdery or odourless pieces.",
+  "shelfLife": "About 1 year whole in a sealed pack (general guidance).",
+  "substitutes": [
+    "Nutmeg (jaiphal), a tiny grating",
+    "Garam masala or biryani masala",
+    "Omit"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 101,
+      "quantity": null,
+      "unit": null,
+      "raw": "1 small blade (about 0.2 g) per serving"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-25",
+      "file": "FitPlate_Ingredients_2026-10-25.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "looksLike": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 3220.0–4575.0 was wider than 30% of avg 3900.0; narrowed to ±15%."
+  ]
+}

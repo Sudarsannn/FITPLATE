@@ -4,7 +4,7 @@
   "aliases": [
     "desi ghee"
   ],
-  "category": "Dairy",
+  "category": "Dairy (fat)",
   "standardUnit": "l",
   "price": {
     "priceHistory": [
@@ -15,80 +15,285 @@
         "avg": 625,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-10-25",
+        "min": 485,
+        "max": 830,
+        "avg": 670,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
       }
     ],
     "currentEstimate": {
-      "min": 560,
-      "max": 705,
-      "avg": 625
+      "min": 550,
+      "max": 740,
+      "avg": 645
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-10-25",
     "stale": false,
     "seasonal": false,
     "listingCount": 8,
     "platforms": [
-      "Amul ghee MRP after GST cut",
       "BigBasket",
-      "Pricee.com"
+      "Swiggy Instamart"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 56,
-    "max": 70.5,
-    "avg": 62.5
+    "min": 55,
+    "max": 74,
+    "avg": 64.5
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 897,
+      "source": "Other: matvaretabellen.no ghee and USDA butter oil, anhydrous (mirror): Matvaretabellen (Norwegian food table) 'ghee': energy 897 kcal, cholesterol 256 mg, saturated fat 61.9 g; USDA SR 'Butter oil, anhydrous' (getfoodfacts id 173412): total fat 99.5 g, retinol 824 µg, beta-carotene 193 µg; vitamin A RAE = 824 + 193/12 = 840; mixed sources",
+      "confidence": "Low"
+    },
+    "proteinG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "carbsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "sugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fatG": {
+      "value": 99.5,
+      "source": "Other: matvaretabellen.no ghee and USDA butter oil, anhydrous (mirror): Matvaretabellen (Norwegian food table) 'ghee': energy 897 kcal, cholesterol 256 mg, saturated fat 61.9 g; USDA SR 'Butter oil, anhydrous' (getfoodfacts id 173412): total fat 99.5 g, retinol 824 µg, beta-carotene 193 µg; vitamin A RAE = 824 + 193/12 = 840; mixed sources",
+      "confidence": "Low"
+    },
+    "saturatedFatG": {
+      "value": 61.9,
+      "source": "Other: matvaretabellen.no ghee and USDA butter oil, anhydrous (mirror): Matvaretabellen (Norwegian food table) 'ghee': energy 897 kcal, cholesterol 256 mg, saturated fat 61.9 g; USDA SR 'Butter oil, anhydrous' (getfoodfacts id 173412): total fat 99.5 g, retinol 824 µg, beta-carotene 193 µg; vitamin A RAE = 824 + 193/12 = 840; mixed sources",
+      "confidence": "Low"
+    },
+    "fibreG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "sodiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": 840,
+      "source": "Other: matvaretabellen.no ghee and USDA butter oil, anhydrous (mirror): Matvaretabellen (Norwegian food table) 'ghee': energy 897 kcal, cholesterol 256 mg, saturated fat 61.9 g; USDA SR 'Butter oil, anhydrous' (getfoodfacts id 173412): total fat 99.5 g, retinol 824 µg, beta-carotene 193 µg; vitamin A RAE = 824 + 193/12 = 840; mixed sources",
+      "confidence": "Low"
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 256,
+      "source": "Other: matvaretabellen.no ghee and USDA butter oil, anhydrous (mirror): Matvaretabellen (Norwegian food table) 'ghee': energy 897 kcal, cholesterol 256 mg, saturated fat 61.9 g; USDA SR 'Butter oil, anhydrous' (getfoodfacts id 173412): total fat 99.5 g, retinol 824 µg, beta-carotene 193 µg; vitamin A RAE = 824 + 193/12 = 840; mixed sources",
+      "confidence": "Low"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    }
+  },
   "macrosPer100Estimate": {
-    "kcal": 900,
+    "kcal": 898.5,
     "proteinG": 0,
     "carbsG": 0,
-    "fatG": null,
+    "fatG": 61.9,
     "fibreG": 0
   },
-  "storage": "Room temperature in an airtight jar, away from heat and light; always use a dry spoon (moisture spoils it). Fridge extends life to 6+ months.",
-  "looksLike": "golden-yellow clarified butter, grainy and semi-solid at room temperature, clear liquid when warm, with a nutty, buttery smell.",
-  "howToPick": "golden to pale-yellow colour, grainy texture when set, pleasant nutty smell. Avoid a rancid or soapy smell, a separated oily layer with off colour, or a bulged/damaged pack.",
-  "shelfLife": "9–12 months unopened (check pack); about 3 months after opening at room temperature if kept dry.",
+  "storage": "Store in a clean, dry airtight jar at room temperature away from heat and moisture, with a dry spoon.",
+  "looksLike": "A golden, grainy-to-smooth fat that is solid in cool weather and liquid when warm, with a nutty, buttery smell.",
+  "howToPick": "Check the pack says pure cow ghee (not vanaspati), is within date and has a clean nutty smell and even colour. Avoid a rancid or soapy smell.",
+  "shelfLife": "Packs usually carry about 9 to 12 months (check the pack; general guidance).",
   "substitutes": [
     "Butter",
     "Neutral cooking oil",
-    "Homemade ghee from butter or malai"
+    "Homemade ghee from butter or malai",
+    "Refined oil",
+    "Mustard or coconut oil"
   ],
   "usedIn": [
     {
-      "dishNumber": 2,
+      "dishNumber": 81,
       "quantity": 5,
       "unit": "g",
-      "raw": "5 g (1 tsp), drizzled before dum."
+      "raw": "5 g per serving (1 tsp)"
     },
     {
-      "dishNumber": 5,
-      "quantity": 10,
+      "dishNumber": 84,
+      "quantity": 5,
       "unit": "g",
-      "raw": "10 g (2 tsp: 1 for the masala, 1 for the tadka)."
+      "raw": "5 g per serving (1 tsp)"
+    },
+    {
+      "dishNumber": 101,
+      "quantity": 7,
+      "unit": "g",
+      "raw": "7 g per serving (1½ tsp)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-10-25",
+      "file": "FitPlate_Ingredients_2026-10-25.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 526.4–761.0 was wider than 30% of avg 645.2; narrowed to ±15%."
+  ]
 }

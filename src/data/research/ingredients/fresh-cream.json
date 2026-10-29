@@ -15,69 +15,266 @@
         "avg": 250,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-10-25",
+        "min": 205,
+        "max": 280,
+        "avg": 240,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
       }
     ],
     "currentEstimate": {
-      "min": 220,
+      "min": 215,
       "max": 280,
-      "avg": 250
+      "avg": 245
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-10-25",
     "stale": false,
     "seasonal": false,
-    "listingCount": 5,
+    "listingCount": 4,
     "platforms": [
-      "Amul official shop",
       "BigBasket",
-      "IndiaMart / Aajjo sellers (Bengaluru"
+      "StoreKing"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 22,
+    "min": 21.5,
     "max": 28,
-    "avg": 25
+    "avg": 24.5
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 292,
+      "source": "USDA FDC: USDA SR 'Cream, fluid, light whipping' (getfoodfacts id 170858) seen only on mirror sites; a close match, not Indian fresh cream",
+      "confidence": "Medium"
+    },
+    "proteinG": {
+      "value": 2.2,
+      "source": "USDA FDC: USDA SR 'Cream, fluid, light whipping' (getfoodfacts id 170858) seen only on mirror sites; a close match, not Indian fresh cream",
+      "confidence": "Medium"
+    },
+    "carbsG": {
+      "value": 3,
+      "source": "USDA FDC: USDA SR 'Cream, fluid, light whipping' (getfoodfacts id 170858) seen only on mirror sites; a close match, not Indian fresh cream",
+      "confidence": "Medium"
+    },
+    "sugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fatG": {
+      "value": 30.9,
+      "source": "USDA FDC: USDA SR 'Cream, fluid, light whipping' (getfoodfacts id 170858) seen only on mirror sites; a close match, not Indian fresh cream",
+      "confidence": "Medium"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "sodiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    }
+  },
   "macrosPer100Estimate": {
-    "kcal": 245,
-    "proteinG": 2,
-    "carbsG": 3.5,
-    "fatG": 25,
+    "kcal": 268.5,
+    "proteinG": 2.1,
+    "carbsG": 3.3,
+    "fatG": 28,
     "fibreG": 0
   },
-  "storage": "Unopened: cool, dry cupboard. Opened: transfer to a covered container and refrigerate, use within 2–3 days. Freezing works for cooking use (up to 1 month) but it may split.",
-  "looksLike": "thick, white, pourable cream in a small tetra pack (Amul Fresh Cream, about 25% fat); thickens further in the fridge.",
-  "howToPick": "tetra pack not bulged or dented, well within date. When opened it should be smooth and white with a clean milky smell; sour smell or lumps with watery liquid mean it has turned.",
-  "shelfLife": "UHT tetra about 4–6 months unopened at room temperature (check pack); 2–3 days after opening, refrigerated.",
+  "storage": "Keep refrigerated, upright. Freezing cream splits it, so freeze only if it will be cooked into a sauce later.",
+  "looksLike": "A thick, white to pale-cream pourable liquid sold in chilled cartons (tetra packs); it whips when cold.",
+  "howToPick": "Cold, sealed carton, within date, no bulging. Cream that smells sour, has lumps or has separated is spoiled.",
+  "shelfLife": "A chilled carton usually carries a few weeks (check the pack); open cream within about 2 to 3 days (general guidance).",
   "substitutes": [
     "Homemade malai (cream skimmed from boiled full-cream milk)",
     "Cashew paste (soaked cashews blended)",
-    "Whisked thick curd added off the heat"
+    "Whisked thick curd added off the heat",
+    "Homemade malai (from boiled full-fat milk)",
+    "Cashew paste (soaked, blended) or coconut cream",
+    "Thick curd/Greek yoghurt with a little milk"
   ],
   "usedIn": [
     {
-      "dishNumber": 3,
-      "quantity": 15,
-      "unit": "ml",
-      "raw": "15 ml (1 tbsp), swirled in at the end."
+      "dishNumber": 102,
+      "quantity": 30,
+      "unit": "g",
+      "raw": "30 g per serving (2 tbsp; fresh cream about 25% fat)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-10-25",
+      "file": "FitPlate_Ingredients_2026-10-25.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",

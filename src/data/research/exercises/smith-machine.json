@@ -1,0 +1,800 @@
+{
+  "id": "smith-machine",
+  "number": 14,
+  "name": "Smith machine (squat and press uses)",
+  "otherNames": [
+    "Smith squat",
+    "Smith machine squat",
+    "Guided barbell squat",
+    "Smith machine bench press",
+    "Smith machine shoulder press"
+  ],
+  "section": "gym",
+  "type": "strength",
+  "equipment": [
+    "Smith machine with adjustable hooks and safety stops",
+    "weight plates (and collars if loadable)",
+    "bench for press variants"
+  ],
+  "noEquipmentAlternative": "Bodyweight squat (Home 1) and push-up (Home 2); with dumbbells, goblet squat (Home 15) and dumbbell press (Home 18 or 21)",
+  "musclesPrimary": [
+    "quadriceps (rectus femoris, vastus lateralis, vastus medialis, vastus intermedius)",
+    "gluteus maximus"
+  ],
+  "musclesSecondary": [
+    "adductor magnus",
+    "hamstrings (biceps femoris, semitendinosus, semimembranosus)",
+    "gastrocnemius",
+    "soleus",
+    "erector spinae",
+    "abdominals",
+    "press variant: pectoralis major, anterior deltoid, triceps brachii"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": false,
+  "met": 3.5,
+  "compendiumCode": null,
+  "metOptions": [
+    {
+      "code": "02052",
+      "met": 5,
+      "activity": "Extras (text only, harder work): 02052, 5.0 METs, resistance training, squats, deadlift, slow or explosive effort (est. as a closer match for heavy squats); 02050, 6.0 METs, resistance (weight lifting"
+    },
+    {
+      "code": "02050",
+      "met": 6,
+      "activity": "Extras (text only, harder work): 02052, 5.0 METs, resistance training, squats, deadlift, slow or explosive effort (est. as a closer match for heavy squats); 02050, 6.0 METs, resistance (weight lifting"
+    },
+    {
+      "code": "02055",
+      "met": 5.8,
+      "activity": "Extras (text only, harder work): 02052, 5.0 METs, resistance training, squats, deadlift, slow or explosive effort (est. as a closer match for heavy squats); 02050, 6.0 METs, resistance (weight lifting"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 2,
+      "reps": "10-12 at RIR 3 (bar only to start)",
+      "timeSec": null,
+      "restSec": 82,
+      "tempo": "3 s down, 1 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 2,
+      "reps": "10-12 at RIR 3 (as one circuit station)",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "3 s down, 1 s pause, 2 s up",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "10-12 at RIR 2-3",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "3 s down, 1 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "strength",
+      "sets": 3,
+      "reps": "8-10 at RIR 3",
+      "timeSec": null,
+      "restSec": 120,
+      "tempo": "3 s down, 1 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 2,
+      "reps": "15 at RIR 3-4",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2 s down, 0 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "10-12 at RIR 2",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "3 s down, 1 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "8-12 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 105,
+      "tempo": "3 s down, 1 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "strength",
+      "sets": 4,
+      "reps": "6-8 at RIR 2",
+      "timeSec": null,
+      "restSec": 150,
+      "tempo": "3 s down, 1 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "15-20 at RIR 2",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2 s down, 0 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "general_fitness",
+      "sets": 4,
+      "reps": "12-15 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 68,
+      "tempo": "3 s down, 1 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "8-12 at RIR 0-2",
+      "timeSec": null,
+      "restSec": 120,
+      "tempo": "3 s down, 1 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": 5,
+      "reps": "4-6 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 180,
+      "tempo": "3 s down, 1 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "endurance",
+      "sets": 4,
+      "reps": "20-25 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 50,
+      "tempo": "2 s down, 0 s pause, 2 s up",
+      "perWeek": 2
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle",
+      "left_heel",
+      "right_heel",
+      "left_foot_index",
+      "right_foot_index"
+    ],
+    "phases": [
+      {
+        "name": "top",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": ">= 165",
+        "parsed": {
+          "op": ">=",
+          "value": 165,
+          "max": null
+        }
+      },
+      {
+        "name": "bottom",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": "<= 100",
+        "parsed": {
+          "op": "<=",
+          "value": 100,
+          "max": null
+        }
+      },
+      {
+        "name": "press_top",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": ">= 165",
+        "parsed": {
+          "op": ">=",
+          "value": 165,
+          "max": null
+        }
+      },
+      {
+        "name": "press_bottom",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": "<= 100",
+        "parsed": {
+          "op": "<=",
+          "value": 100,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 3
+  },
+  "formChecks": [
+    {
+      "joint": "knee",
+      "rule": "bottom knee angle > 100 degrees (equals bottom phase threshold)",
+      "message": "Sit a little lower, to about parallel"
+    },
+    {
+      "joint": "knee",
+      "rule": "top knee angle < 165 degrees (equals top phase threshold)",
+      "message": "Stand all the way up (soft knees)"
+    },
+    {
+      "joint": "ankle",
+      "rule": "separate flag: heel landmark rises from the floor line beyond a set margin (no angle used)",
+      "message": "Keep your heels flat: feet slightly further forward"
+    },
+    {
+      "joint": "spine",
+      "rule": "separate flag: shoulder-hip line leans past a set margin from vertical (no angle used)",
+      "message": "Chest up, ribs down"
+    },
+    {
+      "joint": "knee",
+      "rule": "front view separate flag: knee moves inside the ankle line (no angle used)",
+      "message": "Knees out over the toes"
+    },
+    {
+      "joint": "elbow",
+      "rule": "press only: top elbow angle < 165 degrees (equals press_top threshold)",
+      "message": "Press all the way up"
+    },
+    {
+      "joint": "elbow",
+      "rule": "press only: bottom elbow angle > 100 degrees (equals press_bottom threshold)",
+      "message": "Lower the bar to your chest line"
+    },
+    {
+      "joint": "knee",
+      "rule": "rep duration < 3.0 s or lowering < 2.0 s",
+      "message": "Slow down: 3 seconds down"
+    }
+  ],
+  "safetyFlags": [
+    "set_stops_just_below_lowest_point_and_test_with_bar_only",
+    "practise_hook_twist_and_emergency_catch_with_bar_only",
+    "bar_weight_unknown_use_reps_in_reserve",
+    "feet_slightly_forward_heels_flat",
+    "knees_track_over_toes",
+    "no_breath_holding_to_failure",
+    "high_blood_pressure_breathe_out_no_failure_sets",
+    "resting_bp_180_120_do_not_lift",
+    "knee_pain_shallow_range_light_load",
+    "lower_back_pain_neutral_back_or_use_leg_press",
+    "shoulder_problems_avoid_press_if_impingement",
+    "avoid_lying_flat_on_back_late_pregnancy",
+    "check_machine_and_bench_weight_limits"
+  ],
+  "progressions": [
+    "add plates with same tempo (double progression)",
+    "pause squat or 4-second lowering",
+    "Smith split squat then free-weight barbell back squat (Gym 15)",
+    "press variant: Smith bench press then barbell bench press (Gym 20)",
+    "press variant: seated Smith shoulder press then barbell overhead press (Gym 32)"
+  ],
+  "regressions": [
+    "bodyweight or goblet squat to a box (Home 1, Home 15)",
+    "Smith squat with bar only and shallow depth",
+    "leg press (Gym 10) or chest press machine (Gym 22) for the press"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "three-quarter front, 2 m",
+      "shows": "setting bar height and both safety stops at the same hole",
+      "textOverlay": "Bar at shoulder height - Stops just below your bottom"
+    },
+    {
+      "seconds": 8,
+      "angle": "close-up of hands and hook, 1 m",
+      "shows": "rotating wrists to unhook and hook the bar",
+      "textOverlay": "Twist to unhook - Twist back to lock"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "feet 15-30 cm forward of the bar line, toes slightly out",
+      "textOverlay": "Feet slightly forward of the bar"
+    },
+    {
+      "seconds": 10,
+      "angle": "side, 3 m",
+      "shows": "full squat rep: brace, down 3 s, pause 1 s, up 2 s",
+      "textOverlay": "Down 3 - Pause 1 - Up 2"
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 3 m",
+      "shows": "knees over toes vs caving in",
+      "textOverlay": "Knees out over the toes"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "bar-only practice of lowering onto stops and twisting hooks to catch",
+      "textOverlay": "Practise the catch with the bar only"
+    },
+    {
+      "seconds": 10,
+      "angle": "side, 3 m",
+      "shows": "bench press: bar over lower chest, down 3 s, up 2 s",
+      "textOverlay": "Bar over the lower chest"
+    },
+    {
+      "seconds": 6,
+      "angle": "side, 2 m",
+      "shows": "seated shoulder press, bar passes just in front of the face",
+      "textOverlay": "Bar passes in front of the face"
+    }
+  ],
+  "lastResearched": "2026-10-28",
+  "setupSteps": [
+    "Warm up and check the machine. Do 5 minutes of easy bike or walking (Gym 7 or Gym 5) and a few bodyweight squats (Home 1). Check that the bar slides smoothly on the rails and the hooks turn freely; report a sticking bar to staff.",
+    "Set the bar height (hooks). Place the bar at about upper-chest to shoulder height, so you can step under it, set it on your back and stand up without rising on your toes. Guides differ: ExRx describes the bar at upper-chest height; other guides say shoulder level or just below. If you have to stand on tiptoe to unhook it, lower it a notch (gadgetsfeed guide). The FitPlate choice: a notch that lets you unrack with soft knees and a straight back.",
+    "Set the safety stops. Set both stops at the same hole on each side, a little below the bottom of your squat, usually about knee height or just below it (est.; one guide says about knee height; Gold's Gym says just below your lowest intended depth). Test them with the bar alone: lower the bar slowly onto the stops and confirm both sides hit together.",
+    "Load the bar. Start with the bar only (Gym 4). Add plates evenly on both sides only after you have learned the movement. Use collars or clips if the sleeves have them.",
+    "Know the bar weight. Smith machine bars are not standard: guides report anything from about 6 kg to 20 kg, and a counterbalanced bar can feel much lighter than its real weight; no single official figure exists. Indian seller listings state the machine's total weight, not the bar's. The FitPlate choice: treat the bar weight as unknown (Not found for Indian brands), look for a stamp or ask staff, and judge load by reps in reserve (RIR), not by plate arithmetic.",
+    "Step under the bar. Stand facing the bar with the bar across the back of your shoulders, on the upper back (the muscle ridge at the top of the back, not your neck). Hold it with hands slightly wider than shoulder width, wrists straight.",
+    "Place the feet. Step your feet about 15-30 cm (6-12 inches, est.; guides range from 3-6 inches to 6-12 inches) forward of the bar line, feet about shoulder width, toes out about 15-30 degrees. The fixed bar path is why: a vertical bar cannot move back as you sit, so the feet move forward (Gutierrez and Bahamonde kinematic study). Too far forward and the back rounds or the knee presses behind the kneecap; too close and the heels lift.",
+    "Test the position. Do a few bodyweight-feeling reps with the bar only; the heels must stay flat and the knees must track over the toes.",
+    "Bench placement. Centre the bench between the rails (bench lengthwise, head toward the machine front) so the bar, when lowered, lines up over the lower part of the chest, around the nipple line or just below (Major Fitness guides). A common beginner error is sitting too high under the bar.",
+    "Hooks and stops. Set the hook height so you can unhook with arms nearly straight. Set the stops about 2-3 inches below where the bar touches your chest, or at chest level (ExRx). Keep your legs on the same side of the hooks to reduce the chance of the hooks catching (ExRx).",
+    "Body position. Feet flat and wide, buttocks and shoulder blades on the bench, shoulder blades gently pulled back and down, hands slightly wider than shoulder width.",
+    "Set an adjustable bench near upright (guides range from about 80-90 degrees; Dynamo describes just off vertical so the bar clears the face). Position it so the bar passes just in front of your face on the way down, and lower the bar to about shoulder or upper-chest level. Eye and chin cues Not found."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": "A. Smith squat (primary)",
+      "title": "Unhook the bar",
+      "action": "Stand up straight under the bar. Rotate your wrists so the hooks release (usually a quarter turn; direction varies by machine), taking the weight on your shoulders.",
+      "feel": "The bar weight settles on your upper back; legs take the load.",
+      "breathing": "Breathe in.",
+      "tempo": null,
+      "visualCheck": "Side: standing tall, bar over the mid-foot line, soft knees, neutral spine. Front: even feet, hips level."
+    },
+    {
+      "n": 2,
+      "part": "A. Smith squat (primary)",
+      "title": "Brace",
+      "action": "Tighten your stomach as if bracing for a light poke, ribs down, chest proud, eyes forward.",
+      "feel": "Trunk firm; no arching of the lower back.",
+      "breathing": "Hold the breath briefly (brace) or take a deep belly breath.",
+      "tempo": null,
+      "visualCheck": "Side: straight line from head to hips; front: shoulders level."
+    },
+    {
+      "n": 3,
+      "part": "A. Smith squat (primary)",
+      "title": "Sit down and back",
+      "action": "Start by pushing the hips slightly back, then bend the knees and lower in a smooth straight line until the thighs are about parallel to the floor or as low as you can control.",
+      "feel": "Front of thighs and buttocks stretching and loading; heels heavy.",
+      "breathing": "Breathe in as you go down (after the brace).",
+      "tempo": null,
+      "visualCheck": "Side: shins fairly upright because the feet are forward, back angle steady, knees about 90 degrees (est.) at the bottom. Front: knees over the toes, not caving in."
+    },
+    {
+      "n": 4,
+      "part": "A. Smith squat (primary)",
+      "title": "Pause",
+      "action": "Hold for a beat at the bottom without relaxing.",
+      "feel": "Tension in the thighs and trunk.",
+      "breathing": "Hold the brace.",
+      "tempo": null,
+      "visualCheck": "Side: heels flat, back not rounded; the bar is above the safety stops."
+    },
+    {
+      "n": 5,
+      "part": "A. Smith squat (primary)",
+      "title": "Stand up",
+      "action": "Press through the whole foot, keeping heels flat, until the knees and hips are nearly straight (soft knees, no snap).",
+      "feel": "Thighs and buttocks driving; no pain at the front of the knee.",
+      "breathing": "Breathe out in the last half of the rise (or after passing the hardest part).",
+      "tempo": null,
+      "visualCheck": "Side: bar travels straight up; hips and chest rise together. Front: knees still tracking with the toes."
+    },
+    {
+      "n": 6,
+      "part": "A. Smith squat (primary)",
+      "title": "Re-hook the bar",
+      "action": "At the end of the set, stand fully, put the bar against the hooks and rotate your wrists back until the hooks catch. Lower the bar gently until it is fully seated before letting go (a guide advises waiting until the bar settles before rotating).",
+      "feel": "A click or a firm stop; the bar no longer moves.",
+      "breathing": "Breathe out and relax.",
+      "tempo": null,
+      "visualCheck": "Side: hooks engaged on both sides; the bar is level."
+    },
+    {
+      "n": 7,
+      "part": "A. Smith squat (primary)",
+      "title": "Emergency. If you cannot stand, lower slowly onto the safety stops, then slide out sideways from under the bar, or rotate the hooks to catch the bar partway up. Do not panic-drop. Do this once with the bar alone to learn the feel",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 8,
+      "part": "B. Smith bench press (second use)",
+      "title": "Unhook. Straighten the arms and rotate the wrists to release the hooks; keep the bar over the shoulders (breathe in, 1 s)",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 9,
+      "part": "B. Smith bench press (second use)",
+      "title": "Lower. Bend the elbows, lowering the bar in a straight line to the lower chest, elbows about 45-75 degrees from the body (est.; flare angle not sourced), shoulder blades still pinched (3 s, breathe in)",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 10,
+      "part": "B. Smith bench press (second use)",
+      "title": "Pause lightly just above the chest without bouncing (0-1 s)",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 11,
+      "part": "B. Smith bench press (second use)",
+      "title": "Press up. Push the bar straight up, elbows soft at the top, shoulders not rolling forward (about 2 s, breathe out)",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 12,
+      "part": "B. Smith bench press (second use)",
+      "title": "Re-hook by rotating the wrists back until the hooks catch (a guide advises lowering the arms to confirm it is locked before letting go)",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": "Side: forearms vertical at the bottom, bar on the lower chest line; front: the bar level, wrists straight."
+    },
+    {
+      "n": 13,
+      "part": "C. Smith shoulder press (second use)",
+      "title": "Sit with back flat on the pad, feet flat, bar at about shoulder level; unhook (breathe in)",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 14,
+      "part": "C. Smith shoulder press (second use)",
+      "title": "Press straight up until arms are nearly straight (2 s, breathe out)",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 15,
+      "part": "C. Smith shoulder press (second use)",
+      "title": "Lower slowly to about shoulder/upper-chest level (3 s, breathe in). Visual check: front: elbows slightly forward of the line of the shoulders; side: the bar passes just in front of the face",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Feet directly under the bar with a deep squat",
+      "text": "Feet directly under the bar with a deep squat. Why: because the bar cannot move back, the knee goes far forward and presses behind the kneecap; the heels lift. Fix: step the feet about 15-30 cm (est.) forward and keep the heels flat."
+    },
+    {
+      "title": "Feet too far forward",
+      "text": "Feet too far forward. Why: the lower back rounds, the knees may not bend enough, and the shin leans back. Fix: bring the feet back a few cm until you can reach parallel with a straight back (guides warn of both extremes)."
+    },
+    {
+      "title": "Leaving the hooks engaged or unhooking half-way",
+      "text": "Leaving the hooks engaged or unhooking half-way. Why: the bar sticks mid-rep or catches unexpectedly. Fix: rotate the wrists fully and lift slightly to take the weight off the hook (vanswe guide)."
+    },
+    {
+      "title": "Setting the stops too high or too low",
+      "text": "Setting the stops too high or too low. Why: too high blocks your depth and bumps the bar; too low gives no catch for a failed rep. Fix: set just below your lowest point and test with the bar alone."
+    },
+    {
+      "title": "Using the machine as an excuse for a heavy start",
+      "text": "Using the machine as an excuse for a heavy start. Why: the fixed bar path does not protect joints that do not match the track; the bar weight is unknown. Fix: begin with the bar only and judge by RIR."
+    },
+    {
+      "title": "Holding the breath to failure",
+      "text": "Holding the breath to failure. Why: raises blood pressure sharply; dizziness. Fix: brace on the way down, breathe out through the hardest part, stop 2-3 reps short of failure."
+    },
+    {
+      "title": "Bouncing off the safety stops",
+      "text": "Bouncing off the safety stops. Why: the machine takes the load and the muscles stop working; risk of jolting the knees or back. Fix: pause above the stops under control."
+    },
+    {
+      "title": "Bench press: bench too far back or too far forward",
+      "text": "Bench press: bench too far back or too far forward. Why: the bar lands on the neck or the belly rather than the lower chest and the shoulders strain. Fix: line the bar over the lower chest."
+    },
+    {
+      "title": "Locking elbows hard at the top (press)",
+      "text": "Locking elbows hard at the top (press). Why: puts joint load rather than muscle load. Fix: stop with elbows soft."
+    },
+    {
+      "title": "Never leaving the Smith",
+      "text": "Never leaving the Smith. Why: the fixed path trains the stabilisers less; carry-over to free-weight squats is weaker (guide consensus). Fix: plan to learn the free-weight squat later (Gym 15)."
+    }
+  ],
+  "safetyNotes": [
+    "Who should modify or avoid it (check with a doctor or physiotherapist first if any apply): Knee pain or past knee injury: the fixed path can load the knee if the feet are mis-placed; use a shallower range and light load; stop if kneecap or joint pain rises. Lower back pain or spine problems: keep the trunk braced and the back neutral; leg press (Gym 10) may be gentler; stop with back or leg symptoms. Shoulder problems: the press and the bar-on-back position both load the shoulders; Motra lists acute shoulder impingement as a reason to avoid the incline press; use the machine chest press (Gym 22) or shoulder press machine (Gym 33) instead and check with a clinician. High blood pressure or heart disease: breathe continuously, no straining to failure, rests at least 60 s (est.). Pregnancy, recent surgery: see the table. Large frames or tall users: the rails and bench may not fit; the fixed path may not suit your body; try another exercise.",
+    "Spotter: not required for a beginner on a Smith machine, if the stops are set correctly and you have practised the emergency twist-and-catch with the bar alone. A spotter can still help on heavy sets. Guides also warn that the Smith bar can stall between catch slots, so know how to twist the hooks before going heavy. Manufacturer claims that no spotter is needed are marketing statements, not safety studies.",
+    "Gym etiquette: re-hook the bar and strip your plates; wipe the bench and the bar; do not leave the bar hooked halfway; ask staff to show the hook direction on that machine (it varies); avoid hogging the machine during peak hours; do not film other members."
+  ],
+  "sources": [
+    "ExRx.net, Smith Squat (quadriceps and glutes pages). https://exrx.net/WeightExercises/Quadriceps/SMSquat ; https://exrx.net/WeightExercises/GluteusMaximus/SMSquat",
+    "ExRx.net, Smith Squat kinesiology analysis. https://exrx.net/kinesiology/SmithSquat1",
+    "ExRx.net, Smith bench press (safety catches at chest level; leg position vs hooks). https://exrx.net/WeightExercises/Power/SMBenchPressThrow",
+    "Schwanbeck S, Chilibeck PD, Binsted G (2009), A comparison of free weight squat to Smith machine squat using electromyography, J Strength Cond Res. https://www.bisp-surf.de/Record/PU201102001039",
+    "Schick EE et al. (2010), A comparison of muscle activation between a Smith machine and free weight bench press, J Strength Cond Res. https://pubmed.ncbi.nlm.nih.gov/20093960/",
+    "Gutierrez and Bahamonde, Kinematic analysis of the traditional back squat and Smith machine squat exercises. https://ojs.ub.uni-konstanz.de/cpa/article/view/3199",
+    "Benvenuti P et al. (2011), Smith squat analytical model (University of Verona). https://iris.univr.it/handle/11562/880008",
+    "Van den Tillaar et al. (2021), sticking region in Smith machine squats, IJERPH. https://pmc.ncbi.nlm.nih.gov/articles/PMC7908405",
+    "AsphaltGreen, The Beginner's Guide to the Smith Machine. https://www.asphaltgreen.org/blog/beginners-guide-to-the-smith-machine/",
+    "Gold's Gym, How to do Smith machine squats. https://www.goldsgym.com/blog/how-to-do-smith-machine-squats/",
+    "Planet Fitness, Smith machine squats. https://www.planetfitness.com/blog/articles/smith-machine-squats",
+    "LIVESTRONG, Smith machine squats aren't as bad as some say. https://livestrong.com/article/13770849-smith-machine-squat",
+    "Major Fitness (bench position, bar height, hooks), several guides. https://www.majorfitness.com/blogs/wiki/how-to-properly-bench-press-on-a-smith-machine-a-step-by-step-guide ; https://www.majorfitness.com/blogs/wiki/how-to-squat-on-smith-machine-a-step-by-step-guide ; https://www.majorfitness.com/blogs/wiki/how-to-lower-bar-on-smith-machine-effectively",
+    "Vanswe Fitness and gadgetsfeed, how to use a Smith machine (hook rotation, bar height). https://www.vanswefitness.com/blogs/smith-machine/how-to-use-smith-machine ; https://gadgetsfeed.com/how-to-use-smith-machine/",
+    "Dynamo Fitness, Smith machine shoulder press. https://blog.dynamofitness.com.au/?p=3043",
+    "Motra, Smith machine squat and incline bench press (contraindication notes; secondary). https://motra.com/exercises/smithMachineSquat ; https://motra.com/exercises/smithMachineInclineBenchPress",
+    "Smith machine bar weight guides (range 6-20+ kg; no standard; secondary): Skelcore https://www.skelcore.com/guides/smith-machine-bar-weight ; Set for Set https://www.setforset.com/blogs/news/smith-machine-bar-weight",
+    "Indian seller listings (machine weight only, no bar weight): IndiaMART https://m.indiamart.com/city/nashik/smith-machine.html ; TradeIndia https://www.tradeindia.com/products/smith-machine-c6402676.html",
+    "Wikipedia, Smith machine. https://en.wikipedia.org/wiki/Smith_machine",
+    "2024 Adult Compendium of Physical Activities (Herrmann et al., J Sport Health Sci 2024): codes 02054, 02052, 02050, 02055. https://pacompendium.com/conditioning-exercise/ ; https://pacompendium.com/wp-content/uploads/2024/02/1_2024-adult-compendium_1_2024.pdf ; https://pubmed.ncbi.nlm.nih.gov/38242596/",
+    "Zourdos MC et al. (2016), RIR-based RPE scale. https://openrepository.aut.ac.nz/items/efef3b25-6701-4fb5-bb82-55fcd2a26027/full",
+    "ACSM (2009), Progression models in resistance training for healthy adults. https://www.sportgeneeskunde.com/wp-content/uploads/ACSM-Position-Stand-Progression-Models-in-Resistance-Training-for-Healthy-Adults.pdf",
+    "ACSM (Zaleski), exercise for hypertension. https://acsm.org/?p=18319",
+    "Resistance training in hypertensives (Frontiers in Physiology 2020). https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2020.00481/pdf",
+    "Colberg SR et al. (2016), ADA position statement. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/",
+    "ACC summary of the 2023 AHA statement on resistance exercise. https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2023/12/19/15/33/resistance-exercise-training",
+    "AHA Professional, physical activity for elevated BP or cholesterol (Gibbs et al.). https://professional.heart.org/en/science-news/Physical-Activity-as-a-Critical-Component-of-First-Line-Treatment-for-Elevated-BP-or-Cholesterol/commentary",
+    "Donnelly JE et al. (2009), ACSM position stand on weight loss. https://pubmed.ncbi.nlm.nih.gov/19127177/",
+    "PCOS exercise position statement / 2023 guideline evidence. https://vuir.vu.edu.au/45855/1/1-s2.0-S2772696723000054-main.pdf",
+    "Exercise in hypothyroidism, systematic review (2023). https://pubmed.ncbi.nlm.nih.gov/37999992/",
+    "Pharmacy Magazine CPD, Exercise and asthma. https://www.pharmacymagazine.co.uk/cpd-modules/making-a-difference-in-asthma-care/exercise-and-asthma-528343",
+    "Vanderbilt Sports Medicine, Knee OA exercise handouts. https://www.vumc.org/sports-medicine/sites/vumc.org.sports-medicine/files/public_files/documents/Knee_OA_ex_%20hamstring.pdf",
+    "Osteoporosis Canada, Too Fit To Fracture. https://osteoporosis.ca/wp-content/uploads/2014-07-25-Are-you-too-fit-to-fracture-for-patients.pdf",
+    "ACOG Committee Opinion No. 804 (abstract record). https://opqic.org/acog-committee-opinion-no-804-physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period/",
+    "NNUH NHS, Post-natal physiotherapy advice. https://www.nnuh.nhs.uk/publication/download/post-natal-physiotherapy-advice-and-exercises-v2-1",
+    "Royal Devon NHS, Postnatal physiotherapy advice. https://www.royaldevon.nhs.uk/media/ibneih1b/patient-information-leaflet-postnatal-physiotherapy-advice-rde-20-143-001.pdf"
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 28.6,
+      "70kg": 24.5,
+      "80kg": 21.4
+    },
+    "per300kcal": {
+      "60kg": 85.7,
+      "70kg": 73.5,
+      "80kg": 64.3
+    }
+  },
+  "gymAccess": [
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "strength",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "leg_day",
+    "full_body_machine_circuit",
+    "train_alone",
+    "learn_the_squat_pattern",
+    "upper_body_push_day",
+    "20_to_60_min_sessions"
+  ],
+  "swapsByAccess": {
+    "none": "Bodyweight squat (Home 1) and push-up (Home 2)",
+    "home_equipment": "Dumbbell goblet squat (Home 15); dumbbell bench or floor press (Home 21); dumbbell shoulder press (Home 18)",
+    "basic_gym": "Leg press (Gym 10) for the squat; chest press machine (Gym 22) for the press",
+    "full_gym": "Hack squat (Gym 13) or barbell back squat in a rack (Gym 15); barbell bench press (Gym 20) for the press"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "Breathe out on effort; moderate loads 10-15 reps, stop 2-3 reps before failure; rest > 60 s; no lifting if resting BP >= 180/120",
+      "source": "ACSM hypertension guidance (Zaleski); Frontiers in Physiology 2020 review"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "2-3 non-consecutive resistance days per week; usual glucose checks if on insulin or sulfonylureas",
+      "source": "ADA position statement, Colberg et al. 2016"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "After clearance: light load, 10-15 reps, continuous breathing, no straining",
+      "source": "AHA resistance exercise statements (2007, 2023)"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "Part of 2+ days per week resistance work with aerobic activity",
+      "source": "AHA scientific statement (Gibbs et al.)"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Check machine and bench weight limits and bar fit; start with the empty bar; pair with aerobic work",
+      "source": "ACSM weight management position stand (Donnelly et al. 2009); fit advice (est.)"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "Fits muscle-strengthening guidance; no Smith-specific advice found",
+      "source": "International PCOS guideline 2023 / exercise position statement"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "Train normally if controlled; use the beginner level if fatigued",
+      "source": "Systematic review 2023 (PubMed 37999992)"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Warm up and keep reliever inhaler nearby",
+      "source": "Pharmacy Magazine CPD citing Asthma UK"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Light load, reduced range, slow tempo; stop if pain rises; consider leg press at a short range",
+      "source": "Motra (secondary); Vanderbilt Sports Medicine knee OA handouts"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Brace, neutral back, bar-only practice; stop with back or leg pain; leg press may suit better",
+      "source": "Motra (secondary); ExRx"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "modify",
+      "change": "Press and bar-on-back positions load the shoulder; avoid with acute impingement; use machine presses with physiotherapist advice",
+      "source": "Motra incline press avoid-list (secondary); condition-specific guidance Not found"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "modify",
+      "change": "2x/week, 8-12 reps; neutral spine, avoid rounding under load; with spine fracture see a physiotherapist first",
+      "source": "Osteoporosis Canada, Too Fit To Fracture"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "modify",
+      "change": "Light load; avoid lying flat on the back for bench press after the first trimester; ask obstetrician",
+      "source": "ACOG Committee Opinion 804 (secondary citations); pregnancy exercise articles (secondary)"
+    },
+    {
+      "condition": "postpartum",
+      "status": "modify",
+      "change": "Pelvic floor work first; light loaded squats once cleared, especially after caesarean",
+      "source": "NHS postnatal physiotherapy leaflets (NNUH, Royal Devon)"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Only with surgeon or physiotherapist approval; loaded squats and presses are delayed after many surgeries",
+      "source": "Smith-specific timing Not found; general rehabilitation protocols"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "gym"
+    ],
+    "bodyRegion": [
+      "lower",
+      "upper"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "fat_loss",
+      "muscle",
+      "strength",
+      "endurance"
+    ],
+    "intensity": "moderate",
+    "noise": "moderate",
+    "space": "machine",
+    "typicalMinutes": 10,
+    "kcalPer10min70kg": 41,
+    "difficulty1to5": 3,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Gym",
+    "Beginner",
+    "Low impact",
+    "Strength",
+    "Legs",
+    "Glutes",
+    "Rep counter",
+    "10–20 min"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-10-28",
+      "file": "FitPlate_Fitness_2026-10-28.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

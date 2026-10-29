@@ -1,0 +1,507 @@
+{
+  "id": "091-aloo-tikki",
+  "number": 91,
+  "name": "Aloo Tikki",
+  "cuisine": "North Indian (Punjabi) street food, also sold at Mumbai chaat stalls",
+  "dietType": "veg",
+  "mealType": [
+    "breakfast",
+    "snack"
+  ],
+  "difficulty": "Beginner",
+  "prepMin": 35,
+  "cookMin": 28,
+  "servings": 1,
+  "ingredients": [
+    {
+      "ingredientId": "potato",
+      "name": "Potato (aloo)",
+      "quantity": 200,
+      "unit": "g",
+      "householdMeasure": "2 small potatoes"
+    },
+    {
+      "ingredientId": null,
+      "name": "Water (to boil the potatoes)",
+      "quantity": 400,
+      "unit": "ml",
+      "householdMeasure": "1⅔ cups"
+    },
+    {
+      "ingredientId": "salt",
+      "name": "Salt",
+      "quantity": 1.5,
+      "unit": "g",
+      "householdMeasure": "¼ tsp in the mix"
+    },
+    {
+      "ingredientId": null,
+      "name": "Bread crumbs (dry)",
+      "quantity": 15,
+      "unit": "g",
+      "householdMeasure": "2 tbsp"
+    },
+    {
+      "ingredientId": "green-chilli",
+      "name": "Green chilli",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "1 small chilli, finely chopped"
+    },
+    {
+      "ingredientId": "ginger",
+      "name": "Ginger (adrak)",
+      "quantity": 2,
+      "unit": "g",
+      "householdMeasure": "1 cm piece, grated"
+    },
+    {
+      "ingredientId": "coriander-leaves",
+      "name": "Coriander leaves (dhania patta)",
+      "quantity": 5,
+      "unit": "g",
+      "householdMeasure": "1½ tbsp chopped"
+    },
+    {
+      "ingredientId": "cumin-powder",
+      "name": "Cumin powder (jeera)",
+      "quantity": 1,
+      "unit": "g",
+      "householdMeasure": "½ tsp"
+    },
+    {
+      "ingredientId": "chaat-masala-packaged",
+      "name": "Chaat masala",
+      "quantity": 1.5,
+      "unit": "g",
+      "householdMeasure": "½ tsp"
+    },
+    {
+      "ingredientId": "kashmiri-red-chilli-powder",
+      "name": "Kashmiri red chilli powder",
+      "quantity": 1,
+      "unit": "g",
+      "householdMeasure": "½ tsp"
+    },
+    {
+      "ingredientId": "lemon",
+      "name": "Lemon juice",
+      "quantity": 3,
+      "unit": "ml",
+      "householdMeasure": "½ tsp"
+    },
+    {
+      "ingredientId": "cooking-oil-refined-sunflower-groundnut",
+      "name": "Sunflower oil (or other neutral oil)",
+      "quantity": 10,
+      "unit": "g",
+      "householdMeasure": "2 tsp"
+    },
+    {
+      "ingredientId": "green-chutney-ready-made",
+      "name": "Green chutney (mint-coriander)",
+      "quantity": 20,
+      "unit": "g",
+      "householdMeasure": "1 heaped tbsp"
+    },
+    {
+      "ingredientId": "tamarind-date-chutney-ready-made",
+      "name": "Tamarind-date chutney (imli chutney)",
+      "quantity": 15,
+      "unit": "g",
+      "householdMeasure": "1 tbsp"
+    }
+  ],
+  "equipment": [
+    "Non-stick tawa or wide non-stick frying pan: wide flat surface so all 3 tikkis fry at once",
+    "Pressure cooker or a saucepan with a lid for the potatoes",
+    "Mixing bowl, potato masher or fork (or a coarse grater for the cold potatoes)",
+    "Flat steel spatula or a thin fish slice for flipping",
+    "Kitchen scale, measuring spoons, knife and board",
+    "Paper towel or a plate lined with kitchen paper to drain the tikkis"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "title": "Boil the potatoes",
+      "text": "Wash 200 g potatoes and put them with skin in a saucepan with 400 ml water and a pinch of salt. Bring to a boil, cover, and cook on medium for 20 min (pressure cooker: 3 whistles, then let the pressure drop).",
+      "timerSec": 1200,
+      "tip": null,
+      "visualCue": "A knife slides into the thickest potato with almost no resistance and the skin starts to split.",
+      "cameraCheck": "The knife piercing a potato",
+      "videoShot": "Potatoes bubbling in water with a knife test.",
+      "watchOut": "Undercooked centres that leave hard bits in the mash, or very soggy potatoes after too long in water; test with a knife at 17 min and drain as soon as it slides in."
+    },
+    {
+      "n": 2,
+      "title": "Drain and cool the potatoes",
+      "text": "Drain, leave the potatoes in the open pan for 20 min, then peel off the skin with your fingers.",
+      "timerSec": 1200,
+      "tip": "Boil the potatoes the night before and refrigerate them; cold potatoes are drier and make crisper tikkis.",
+      "visualCue": "The skin slips off in one piece and the surface looks dry with no steam rising.",
+      "cameraCheck": "The peeled, dry potatoes on a plate",
+      "videoShot": "Skin sliding off a cooled potato.",
+      "watchOut": "Mashing while the potato is steaming-hot or wet, which makes a gluey, sticky dough that falls apart in the pan; let it cool fully, and if it still looks wet, spread it on a plate for 5 more minutes."
+    },
+    {
+      "n": 3,
+      "title": "Chop the fresh items",
+      "text": "Finely chop 3 g green chilli and 5 g coriander, and grate 2 g ginger.",
+      "timerSec": 180,
+      "tip": null,
+      "visualCue": "Three tiny piles of green chilli, green coriander and a wet beige ginger paste.",
+      "cameraCheck": "The three small piles on the board",
+      "videoShot": "Knife chopping chilli and coriander.",
+      "watchOut": "Big chilli pieces that bite in a bite of tikki; chop as fine as grains of rice."
+    },
+    {
+      "n": 4,
+      "title": "Measure the dry items",
+      "text": "In a small bowl put 15 g bread crumbs, 1 g cumin powder, 1.5 g chaat masala, 1 g chilli powder and 1.5 g salt.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "A small bowl of tan-coloured, evenly speckled powder.",
+      "cameraCheck": "The bowl of measured dry items",
+      "videoShot": "Spoons dropping spices into a bowl.",
+      "watchOut": "Adding the salt without measuring; it goes in with the chaat masala, which is already salty (check the pack), so stick to ¼ tsp."
+    },
+    {
+      "n": 5,
+      "title": "Mash the potatoes",
+      "text": "Put the peeled potatoes in a large bowl and mash them with a masher or fork until no lumps are bigger than a pea. A coarse grater also works.",
+      "timerSec": 180,
+      "tip": null,
+      "visualCue": "A smooth, pale yellow mash that holds together when pressed, with no big lumps.",
+      "cameraCheck": "The bowl of fine mash",
+      "videoShot": "Masher pressing down cooked potatoes.",
+      "watchOut": "Over-mashing or blending it into a paste, which makes the tikki gummy; stop as soon as the big lumps are gone."
+    },
+    {
+      "n": 6,
+      "title": "Add everything to the mash",
+      "text": "Add the chilli, ginger, coriander and the dry mix to the mash.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Flecks of green and orange-red scattered over the pale mash.",
+      "cameraCheck": "The bowl with everything added, before mixing",
+      "videoShot": "Spices falling onto the mash.",
+      "watchOut": "Pouring the dry mix in one spot, which leaves salty patches; sprinkle it evenly over the top."
+    },
+    {
+      "n": 7,
+      "title": "Add the lemon and mix",
+      "text": "Add 3 ml lemon juice and fold everything together lightly with your hands for about 1 min until it forms one soft dough.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "A uniform, soft, slightly sticky dough with no streaks of spice, that holds a shape when you squeeze a handful.",
+      "cameraCheck": "A squeezed handful of dough held up",
+      "videoShot": "Hands folding the dough.",
+      "watchOut": "Kneading hard, which makes the starch gluey; fold gently. If it sticks to your palms, add 1 tbsp more bread crumbs (5 g); if it cracks, sprinkle 1 tsp water."
+    },
+    {
+      "n": 8,
+      "title": "Divide into 3 balls",
+      "text": "Weigh the dough (about 195 g), split it into 3 equal parts of about 65 g, and roll each between your palms into a smooth ball.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "Three smooth round balls, each about the size of a small lemon, with no cracks.",
+      "cameraCheck": "The three balls side by side",
+      "videoShot": "Hands rolling a ball of dough.",
+      "watchOut": "Balls with cracks, which split when pressed flat; pinch the cracks closed or add a drop of water."
+    },
+    {
+      "n": 9,
+      "title": "Shape the tikkis",
+      "text": "Rub a few drops of oil on your palms. Press each ball into a flat disc about 7 cm wide and 1.5 cm thick, smoothing the edges.",
+      "timerSec": 180,
+      "tip": null,
+      "visualCue": "Three even discs with smooth, crack-free edges that hold their shape when lifted.",
+      "cameraCheck": "The three shaped tikkis on a plate",
+      "videoShot": "Palm pressing a ball into a disc.",
+      "watchOut": "Tikkis that are too thick, which stay raw and pale inside, or too thin, which break when flipped; aim for about 1.5 cm, roughly the thickness of your little finger."
+    },
+    {
+      "n": 10,
+      "title": "Heat the tawa",
+      "text": "Put a non-stick tawa on medium heat for 1 min and add 10 g (2 tsp) oil; tilt the pan to spread it.",
+      "timerSec": 120,
+      "tip": null,
+      "visualCue": "The oil shimmers and flows thin across the tawa; a pinch of dough dropped in sizzles gently.",
+      "cameraCheck": "The tawa with a thin film of shimmering oil",
+      "videoShot": "Oil spreading as the pan is tilted.",
+      "watchOut": "A smoking pan that burns the outside before the middle warms; if the oil smokes, lower the heat and wait 30 seconds."
+    },
+    {
+      "n": 11,
+      "title": "Fry the first side",
+      "text": "Lay the 3 tikkis in the pan with space between them and cook on medium for 3–4 min without moving them.",
+      "timerSec": 240,
+      "tip": null,
+      "visualCue": "The edges turn golden brown and a crust forms underneath; the smell is toasty and the tikki slides when you shake the pan.",
+      "cameraCheck": "The tikkis frying, edges beginning to brown",
+      "videoShot": "Tikkis sizzling in the pan.",
+      "watchOut": "Flipping or poking too early, which tears the soft crust off and leaves it stuck; wait until a thin spatula slides under it with no resistance. Pale tikkis mean the heat is too low."
+    },
+    {
+      "n": 12,
+      "title": "Flip and fry the second side",
+      "text": "Flip each tikki carefully with the spatula and cook another 3 min, pressing lightly on the top once.",
+      "timerSec": 180,
+      "tip": null,
+      "visualCue": "Both sides are an even deep golden-brown with a crisp, slightly bubbly crust.",
+      "cameraCheck": "The golden second side after the flip",
+      "videoShot": "Spatula flipping a tikki to show the crust.",
+      "watchOut": "A soft, oily crust from a cold pan or low heat; turn the heat up slightly and cook 1 min more. Dark brown or black patches mean the heat is too high; turn it down and move the tikki to a cooler part of the pan."
+    },
+    {
+      "n": 13,
+      "title": "Drain",
+      "text": "Lift the tikkis onto a plate lined with kitchen paper for 30 sec.",
+      "timerSec": 30,
+      "tip": null,
+      "visualCue": "A little oil soaks into the paper and the tikkis stay crisp on top.",
+      "cameraCheck": "The tikkis on the paper",
+      "videoShot": "Golden tikkis resting on paper.",
+      "watchOut": "Stacking hot tikkis, which steams the crust soft; leave them in a single layer."
+    },
+    {
+      "n": 14,
+      "title": "Plate with chutneys",
+      "text": "Place the tikkis on a plate and add 20 g green chutney and 15 g tamarind-date chutney in two small spoonfuls beside them. Serve straight away.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Three golden patties with a bright green and a dark brown spoonful of chutney, the crust crackling when pressed.",
+      "cameraCheck": "The finished plate",
+      "videoShot": "Tikki broken open to show the soft inside.",
+      "watchOut": "Waiting too long to serve, since the crust goes soft in 10 minutes as moisture returns; re-crisp on a hot tawa for 1 min per side.",
+      "funFact": "In Mumbai the tikki is served with a spicy white-pea curry as ragda pattice, sold at chaat stalls, especially on Chowpatti Beach (Wikipedia, Aloo tikki)."
+    }
+  ],
+  "nutritionPerServing": {
+    "kcal": 340,
+    "proteinG": 6.5,
+    "carbsG": 57,
+    "fatG": 9,
+    "fibreG": 5
+  },
+  "microNutrientsEstimate": {
+    "values": {
+      "calcium": 5.2,
+      "cholesterol": 0,
+      "copper": 0,
+      "folate": 3.1,
+      "iron": 0.3,
+      "magnesium": 2.4,
+      "manganese": 0,
+      "niacin": 0,
+      "phosphorus": 3.4,
+      "potassium": 887.5,
+      "riboflavin": 0,
+      "sodium": 14.7,
+      "vitamin-a": 25.8,
+      "vitamin-b12": 0,
+      "vitamin-b6": 0.6,
+      "vitamin-c": 48.3,
+      "vitamin-d": 0.4,
+      "vitamin-e": 4.2,
+      "vitamin-k": 16,
+      "zinc": 0
+    },
+    "coveragePct": 38,
+    "basis": "partial estimate from ingredient quantities"
+  },
+  "asOrdered": {
+    "price": null,
+    "nutrition": {
+      "calories": {
+        "value": null,
+        "source": null
+      },
+      "protein": {
+        "value": null,
+        "source": null
+      },
+      "carbs": {
+        "value": null,
+        "source": null
+      },
+      "fat": {
+        "value": null,
+        "source": null
+      },
+      "fibre": {
+        "value": null,
+        "source": null
+      }
+    },
+    "restaurantsSampled": null,
+    "platforms": [
+      "Swiggy",
+      "Zomato",
+      "magicpin"
+    ]
+  },
+  "orderPrice": null,
+  "healthiness": {
+    "score": 6,
+    "restaurantScore": 4,
+    "reasons": [
+      "a simple whole-food base of potato with only about 8 g oil, no dairy or cholesterol, a little vitamin C and potassium from the potato, and low saturated fat (about 1 g). Points off for being mostly starch with low protein (about 6.5 g) and about 900 mg sodium (45% of a daily limit), plus the sweet chutney's added sugar. Street and restaurant versions are often deep-fried or fried in a lot of oil (30 to 40% more fat and 400 kcal or more per plate, est.) and are often topped with curd, sev and sweet chutney."
+    ]
+  },
+  "researchRating": {
+    "score": 4.4,
+    "basis": "a very widely published North Indian street snack, found on Tarla Dalal, Swasthi's Indian Healthy Recipes, Hebbar's Kitchen, Sanjeev Kapoor, Cook Click N Devour and many other sites and loved as a quick, crisp, comforting snack and the base of aloo tikki chaat; Zomato's data also describes chaat as Mumbai's most-ordered dish (an old article). Points off because it is a simple potato-and-starch snack that is easy to make soggy and oily, and depends on good chutneys. Recipe-site star counts were not checked this run."
+  },
+  "storage": "Fridge-safe in a closed box for up to 2 days (cool within 1 hour). Freezing: shaped, uncooked or cooked tikkis can be frozen in a single layer for up to 1 month (est.; not confirmed from a source). Reheat on a hot tawa or in an air fryer (180 °C for 4–5 min) so the crust crisps again; a microwave makes them soft.",
+  "leftoverRemix": "Aloo tikki chaat. Crumble 2 leftover tikkis over a bowl, top with 3 tbsp whisked curd, 1 tbsp each of green and tamarind chutney, chopped onion, sev and a pinch of chaat masala; or tuck a tikki into pav with chutney for a quick burger.",
+  "burnOff": "about 4.9 km of running (340 ÷ 70 kcal/km, for a 70 kg adult), or about 6.8 km of brisk walking (about 1 h 22 min at 5 km/h, using about 50 kcal/km for walking) (est.).",
+  "sources": [
+    "Tarla Dalal, Aloo Tikki (non-fried, coarse rice flour for crispness): https://www.tarladalal.com/aloo-tikki-2586r ; Punjabi Aloo Tikki: https://cdn.tarladalal.com/aloo-tikki-punjabi-aloo-tikki-32745r",
+    "Swasthi's Indian Healthy Recipes, Aloo Tikki (potato, cornflour or rice flour or poha, bread crumbs; bake or air fry for less oil): https://indianhealthyrecipes.com/aloo-tikki-recipe/",
+    "Hebbar's Kitchen, Aloo Tikki (shallow-fry versus deep-fry): https://hebbarskitchen.com/aloo-tikki-recipe-aloo-ki-tikki/",
+    "Sanjeev Kapoor, Aloo Ki Tikki (sendha namak, hing, ghee): https://sanjeevkapoor.com/recipe/Aloo-Ki-Tikki.html",
+    "Cook Click N Devour, Aloo Tikki (poha powder binder): https://www.cookclickndevour.com/wprm_print/aloo-tikki-recipe",
+    "Weekly Voice, Ultimate Crispy Aloo Tikki (bread crumb binder, 3–4 min per side): https://weeklyvoice.com/ultimate-crispy-aloo-tikki-recipe-street-style/",
+    "Indian Veggie Delight, Aloo Tikki (shallow-fry or air-fry): https://www.indianveggiedelight.com/wprm_print/aloo-tikki-recipe-shallow-fry-air-fry",
+    "Wikipedia, Aloo tikki (origin on the Indian subcontinent; ragda pattice in Mumbai): https://en.wikipedia.org/wiki/Aloo_tikki",
+    "Variants: Aahaaram, Kacche Kele Ki Tikki (raw banana, fasting and Jain): https://aahaaramonline.com/kacche-kele-ki-tikki/ ; BWC India, Jain Ragda Pattice: https://www.bwcindia.org/web/Recipes/JainRagdaPattice.html ; Sanjeev Kapoor, Jain Raw Banana Rosti: https://www.sanjeevkapoor.com/Recipe/Jain-Raw-Banana-Rosti.html ; Cubes n Juliennes, Aloo Tikki (rice flour, gluten-free): https://www.cubesnjuliennes.com/wprm_print/aloo-tikki-recipe ; Profusion Curry, Aloo Tikki: https://profusioncurry.com/wprm_print/aloo-tikki-recipe ; Vegan Easy, Vegan Aloo Tikki: https://www.veganeasy.org/recipes/vegan-aloo-tikki/",
+    "Tarla Dalal, Calories in Aloo Tikki (87 kcal per 60 g tikki): https://www.tarladalal.com/calories-for-Aloo-Tikki-2586",
+    "FatSecret, generic Aloo Tikki (111 kcal per 125 g): https://www.fatsecret.co.za/calories-nutrition/generic/aloo-tikki",
+    "Wikimedia Commons, File:Aloo Tikki - Homemade - Assam - DSC 002.jpg (Gitika Gayan, CC BY-SA 4.0): https://commons.wikimedia.org/wiki/File:Aloo_Tikki_-_Homemade_-_Assam_-_DSC_002.jpg",
+    "Swiggy, Dwarka Sweets, Vashi (Aloo Tikki ₹105, Chole Tikki ₹115, Matar Tikki ₹105): https://www.swiggy.com/restaurants/dwarka-sweets-vashi-mumbai-837437",
+    "Swiggy, Rani's Kitchen, Jankalyan Nagar, Borivali (Aloo Tikki Chole Chaat / Ragda Pattice ₹120): https://www.swiggy.com/restaurants/ranis-kitchen-jankalyan-nagar-borivali-mumbai-481691",
+    "Swiggy, Harish Kitchen, Majiwada, Thane (Aloo Tikki ₹380; closed at snapshot): https://www.swiggy.com/menu/87068",
+    "Swiggy, McDonald's, Vinay Nagar / Kashimira and Mira Road (McAloo Tikki combos; not used): https://www.swiggy.com/city/mumbai/mcdonalds-mira-road-rest1356671",
+    "Swiggy, Eraya Made With Love, Silvassa (Aloo Tikki Chaat ₹109; not Mumbai, not used): https://www.swiggy.com/menu/1234937",
+    "Zomato, Aloo Tikki in Mumbai (cost-for-two only; not used): https://www.zomato.com/mumbai/restaurants/dish-aloo-tikki",
+    "Chhota Banaras menu (Aloo Tikki Chaat ₹190–250; outlet city unconfirmed; not used): https://menufromindia.com/chhota-banaras-menu/"
+  ],
+  "allergens": [
+    "milk",
+    "gluten"
+  ],
+  "dietClaims": [],
+  "fasting": {
+    "navratri": {
+      "status": null,
+      "reason": "swap table salt for sendha namak, replace the bread crumbs with arrowroot, singhara (water chestnut) or kuttu flour 12 g, and use black pepper and cumin instead of chaat masala (assumption: the common rule set that avoids grains, onion, garlic and table salt; potato is allowed)."
+    },
+    "ekadashi": {
+      "status": "with-changes",
+      "reason": "the bread crumbs are a wheat grain; swap for arrowroot or singhara flour, use sendha namak, and skip chaat masala (assumption: the common rule set that avoids grains and pulses; potato is usually allowed, families differ)."
+    },
+    "jain": {
+      "status": null,
+      "reason": "potato and fresh ginger are roots; cook the Jain variant with raw banana and sonth (dry ginger)."
+    },
+    "ramadan": {
+      "status": "yes",
+      "reason": "vegetarian, so no halal-meat issue; a good iftar snack, but fried and moderately salty (about 900 mg sodium) and low in protein, so it is not ideal as the main sehri meal."
+    }
+  },
+  "dietTags": {
+    "base": "Vegetarian",
+    "jain": {
+      "status": "with-changes",
+      "reason": "the main recipe uses potato and fresh ginger (both roots); cook the Jain variant (raw banana instead of potato, dry ginger powder sonth instead of fresh ginger)."
+    },
+    "vegan": {
+      "status": "yes",
+      "reason": "made with potato, bread crumbs and oil, no dairy, ghee, honey or egg; check that the bread crumbs list no milk, and note that Sanjeev Kapoor's version uses ghee (swap it for oil)."
+    },
+    "pescatarian": {
+      "status": "yes",
+      "reason": "vegetarian, so no meat or egg; no fish needed."
+    },
+    "sattvik": {
+      "status": "yes",
+      "reason": "the recipe has no onion or garlic (fresh ginger is fine); check the label of ready-made chaat masala and the chutneys."
+    },
+    "glutenFree": {
+      "status": "with-changes",
+      "reason": "bread crumbs 15 g are wheat; use rice flour or poha powder instead (see the Gluten-free variant). The recipe uses no hing; most hing sold in India is compounded with wheat flour, so use none or gluten-free hing if you add any."
+    },
+    "dairyFree": {
+      "status": "yes",
+      "reason": "fried in oil with no butter, curd or paneer; check the bread crumbs label for milk."
+    },
+    "allergensDeclared": [
+      "milk",
+      "gluten"
+    ]
+  },
+  "tags": [
+    "Veg",
+    "Jain option",
+    "Gluten-free option",
+    "No onion-garlic",
+    "Ramadan sehri / iftar",
+    "Contains milk",
+    "Contains gluten",
+    "Breakfast",
+    "Snack",
+    "North Indian",
+    "Beginner"
+  ],
+  "description": "Family: aloo-tikki",
+  "familyId": null,
+  "variants": [
+    {
+      "category": "Jain",
+      "status": "variant",
+      "name": "Kacche Kele Ki Tikki (raw banana tikki, no potato or ginger)",
+      "origin": "established",
+      "linkedDishNumber": null,
+      "reason": null
+    },
+    {
+      "category": "Gluten-free",
+      "status": "variant",
+      "name": "Rice Flour Aloo Tikki",
+      "origin": "established",
+      "linkedDishNumber": null,
+      "reason": null
+    },
+    {
+      "category": "Low-oil",
+      "status": "variant",
+      "name": "Air-fried or Baked Aloo Tikki",
+      "origin": "established",
+      "linkedDishNumber": null,
+      "reason": null
+    },
+    {
+      "category": "Navratri vrat",
+      "status": "variant",
+      "name": "Sendha Namak Aloo Tikki (vrat)",
+      "origin": "established",
+      "linkedDishNumber": null,
+      "reason": null
+    }
+  ],
+  "needsReview": [
+    "dropped \"vegan\" claim: recipe has milk",
+    "dropped \"dairyFree\" claim: recipe has milk",
+    "Jain \"with-changes\" but the recipe keeps potato, fresh ginger and the line doesn't say to skip them",
+    "Navratri \"with-changes\" but the recipe has grain with no skip"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-29",
+      "file": "FitPlate_Dishes_2026-10-29.md"
+    }
+  ],
+  "mergeMethod": {
+    "nutritionPerServing": "stable (single)",
+    "ingredients": "newest",
+    "steps": "newest",
+    "healthiness": "newest",
+    "researchRating": "newest",
+    "sources": "union",
+    "tags": "tag engine (tags.ts) on the merged dish"
+  },
+  "mergeNotes": [
+    "2026-10-29: research declares milk not detected from ingredient names; added"
+  ]
+}

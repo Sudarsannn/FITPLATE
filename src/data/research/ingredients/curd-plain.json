@@ -15,73 +15,289 @@
         "avg": 78,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-10-25",
+        "min": 75,
+        "max": 125,
+        "avg": 100,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
       }
     ],
     "currentEstimate": {
-      "min": 74,
-      "max": 80,
-      "avg": 78
+      "min": 78,
+      "max": 105,
+      "avg": 92
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-10-25",
     "stale": false,
     "seasonal": false,
-    "listingCount": 4,
+    "listingCount": 6,
     "platforms": [
-      "BigBasket",
-      "StoreKing"
+      "BigBasket"
     ],
     "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "confirmed": false,
+    "checkNotes": [
+      "only 1 platform (BigBasket) backs the range"
+    ]
   },
   "per100Estimate": {
-    "min": 7.4,
-    "max": 8,
-    "avg": 7.8
+    "min": 7.8,
+    "max": 10.5,
+    "avg": 9.2
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 61,
+      "source": "USDA FDC: USDA FDC 171284 'Yogurt, plain, whole milk' seen via secondary sites; saturated_fat_g from docindia.org and cholesterol_mg from FatSecret dahi entry; no IFCT entry opened",
+      "confidence": "Medium"
+    },
+    "proteinG": {
+      "value": 3.5,
+      "source": "USDA FDC: USDA FDC 171284 'Yogurt, plain, whole milk' seen via secondary sites; saturated_fat_g from docindia.org and cholesterol_mg from FatSecret dahi entry; no IFCT entry opened",
+      "confidence": "Medium"
+    },
+    "carbsG": {
+      "value": 4.7,
+      "source": "USDA FDC: USDA FDC 171284 'Yogurt, plain, whole milk' seen via secondary sites; saturated_fat_g from docindia.org and cholesterol_mg from FatSecret dahi entry; no IFCT entry opened",
+      "confidence": "Medium"
+    },
+    "sugarsG": {
+      "value": 4.7,
+      "source": "USDA FDC: USDA FDC 171284 'Yogurt, plain, whole milk' seen via secondary sites; saturated_fat_g from docindia.org and cholesterol_mg from FatSecret dahi entry; no IFCT entry opened",
+      "confidence": "Medium"
+    },
+    "fatG": {
+      "value": 3.3,
+      "source": "USDA FDC: USDA FDC 171284 'Yogurt, plain, whole milk' seen via secondary sites; saturated_fat_g from docindia.org and cholesterol_mg from FatSecret dahi entry; no IFCT entry opened",
+      "confidence": "Medium"
+    },
+    "saturatedFatG": {
+      "value": 2.3,
+      "source": "USDA FDC: USDA FDC 171284 'Yogurt, plain, whole milk' seen via secondary sites; saturated_fat_g from docindia.org and cholesterol_mg from FatSecret dahi entry; no IFCT entry opened",
+      "confidence": "Medium"
+    },
+    "fibreG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "sodiumMg": {
+      "value": 46,
+      "source": "USDA FDC: USDA FDC 171284 'Yogurt, plain, whole milk' seen via secondary sites; saturated_fat_g from docindia.org and cholesterol_mg from FatSecret dahi entry; no IFCT entry opened",
+      "confidence": "Medium"
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": 120,
+      "source": "USDA FDC: USDA FDC 171284 'Yogurt, plain, whole milk' seen via secondary sites; saturated_fat_g from docindia.org and cholesterol_mg from FatSecret dahi entry; no IFCT entry opened",
+      "confidence": "Medium"
+    },
+    "potassiumMg": {
+      "value": 160,
+      "source": "USDA FDC: USDA FDC 171284 'Yogurt, plain, whole milk' seen via secondary sites; saturated_fat_g from docindia.org and cholesterol_mg from FatSecret dahi entry; no IFCT entry opened",
+      "confidence": "Medium"
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": 30,
+      "source": "USDA FDC: USDA FDC 171284 'Yogurt, plain, whole milk' seen via secondary sites; saturated_fat_g from docindia.org and cholesterol_mg from FatSecret dahi entry; no IFCT entry opened",
+      "confidence": "Medium"
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 14,
+      "source": "USDA FDC: USDA FDC 171284 'Yogurt, plain, whole milk' seen via secondary sites; saturated_fat_g from docindia.org and cholesterol_mg from FatSecret dahi entry; no IFCT entry opened",
+      "confidence": "Medium"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": 100,
+      "source": "USDA FDC: USDA FDC 171284 'Yogurt, plain, whole milk' seen via secondary sites; saturated_fat_g from docindia.org and cholesterol_mg from FatSecret dahi entry; no IFCT entry opened",
+      "confidence": "Medium"
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": 0.1,
+      "source": "USDA FDC: USDA FDC 171284 'Yogurt, plain, whole milk' seen via secondary sites; saturated_fat_g from docindia.org and cholesterol_mg from FatSecret dahi entry; no IFCT entry opened",
+      "confidence": "Medium"
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": 0.4,
+      "source": "USDA FDC: USDA FDC 171284 'Yogurt, plain, whole milk' seen via secondary sites; saturated_fat_g from docindia.org and cholesterol_mg from FatSecret dahi entry; no IFCT entry opened",
+      "confidence": "Medium"
+    }
+  },
   "macrosPer100Estimate": {
-    "kcal": 60,
+    "kcal": 77,
     "proteinG": 3.1,
     "carbsG": null,
-    "fatG": 4,
+    "fatG": 2.3,
     "fibreG": 0
   },
-  "storage": "Fridge only, in a covered bowl after opening; use within 2–3 days. It gets sourer each day. Do not freeze for marinades (it separates).",
-  "looksLike": "thick, white, set yoghurt with a mildly sour smell, sold in pouches, cups and tubs.",
-  "howToPick": "firmly set with little watery whey on top, clean sour smell, cold pack, well within date. Avoid swollen pouches, a fizzy or bitter taste, or pink/green spots.",
-  "shelfLife": "pouch/cup curd about 7–15 days refrigerated unopened (check pack); 2–3 days after opening.",
+  "storage": "Keep refrigerated at all times; once opened, use within 2 to 3 days and keep covered. Let it sit out of the fridge for a short time before whisking into hot gravy so it does not split.",
+  "looksLike": "Soft white set yoghurt, slightly tangy; sold in pouches and cups.",
+  "howToPick": "Check the date, a firm set with little watery whey, a clean tangy smell. Avoid bulging packs, off smells or pink or grey patches.",
+  "shelfLife": "Packed curd lasts about 5 to 7 days in the fridge (general guidance; not taken from a source in this run).",
   "substitutes": [
     "Hung curd / Greek yoghurt",
     "Buttermilk plus a little lemon",
-    "Homemade curd from toned milk"
+    "Homemade curd from toned milk",
+    "Hung curd or Greek yoghurt",
+    "Coconut yoghurt (unsweetened)",
+    "Buttermilk or lemon juice in water"
   ],
   "usedIn": [
     {
-      "dishNumber": 2,
-      "quantity": 50,
+      "dishNumber": 82,
+      "quantity": 40,
       "unit": "g",
-      "raw": "50 g (3 tbsp), in the chicken marinade."
+      "raw": "40 g whisked curd per serving."
+    },
+    {
+      "dishNumber": 84,
+      "quantity": 40,
+      "unit": "g",
+      "raw": "40 g curd per serving."
+    },
+    {
+      "dishNumber": 101,
+      "quantity": 20,
+      "unit": "g",
+      "raw": "20 g curd per serving."
     }
   ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-10-25",
+      "file": "FitPlate_Ingredients_2026-10-25.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (wma)",
     "macrosPer100Estimate": "stable (single)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 74.6–107.9 was wider than 30% of avg 91.6; narrowed to ±15%.",
+    "macrosPer100Estimate.kcal: Versions 2026-10-04 (60) and 2026-10-25 (77) differ by more than 25%; kept the newer.",
+    "macrosPer100Estimate.fatG: Versions 2026-10-04 (4) and 2026-10-25 (2.3) differ by more than 25%; kept the newer."
+  ]
 }

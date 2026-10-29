@@ -4,7 +4,7 @@
   "aliases": [
     "lal mirch"
   ],
-  "category": "Spice",
+  "category": "Spice (ground)",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -15,73 +15,280 @@
         "avg": 510,
         "confidence": "High",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-10-25",
+        "min": 420,
+        "max": 700,
+        "avg": 520,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
       }
     ],
     "currentEstimate": {
-      "min": 460,
+      "min": 435,
       "max": 590,
-      "avg": 510
+      "avg": 515
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-10-25",
     "stale": false,
     "seasonal": false,
-    "listingCount": 6,
+    "listingCount": 9,
     "platforms": [
-      "Amazon",
-      "BigBasket",
-      "Blinkit",
-      "Superbajaar"
+      "BigBasket"
     ],
     "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "confirmed": false,
+    "checkNotes": [
+      "only 1 platform (BigBasket) backs the range"
+    ]
   },
   "per100Estimate": {
-    "min": 46,
+    "min": 43.5,
     "max": 59,
-    "avg": 51
+    "avg": 51.5
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 318,
+      "source": "USDA FDC: USDA FDC 170932 'Spices, pepper, red or cayenne'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "proteinG": {
+      "value": 12,
+      "source": "USDA FDC: USDA FDC 170932 'Spices, pepper, red or cayenne'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "carbsG": {
+      "value": 56.6,
+      "source": "USDA FDC: USDA FDC 170932 'Spices, pepper, red or cayenne'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sugarsG": {
+      "value": 10.3,
+      "source": "USDA FDC: USDA FDC 170932 'Spices, pepper, red or cayenne'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "fatG": {
+      "value": 17.3,
+      "source": "USDA FDC: USDA FDC 170932 'Spices, pepper, red or cayenne'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "saturatedFatG": {
+      "value": 3.3,
+      "source": "USDA FDC: USDA FDC 170932 'Spices, pepper, red or cayenne'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "fibreG": {
+      "value": 27.2,
+      "source": "USDA FDC: USDA FDC 170932 'Spices, pepper, red or cayenne'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sodiumMg": {
+      "value": 30,
+      "source": "USDA FDC: USDA FDC 170932 'Spices, pepper, red or cayenne'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "ironMg": {
+      "value": 7.8,
+      "source": "USDA FDC: USDA FDC 170932 'Spices, pepper, red or cayenne'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "calciumMg": {
+      "value": 148,
+      "source": "USDA FDC: USDA FDC 170932 'Spices, pepper, red or cayenne'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "potassiumMg": {
+      "value": 2014,
+      "source": "USDA FDC: USDA FDC 170932 'Spices, pepper, red or cayenne'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "magnesiumMg": {
+      "value": 152,
+      "source": "USDA FDC: USDA FDC 170932 'Spices, pepper, red or cayenne'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "zincMg": {
+      "value": 2.5,
+      "source": "USDA FDC: USDA FDC 170932 'Spices, pepper, red or cayenne'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminCMg": {
+      "value": 76.4,
+      "source": "USDA FDC: USDA FDC 170932 'Spices, pepper, red or cayenne'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminAUgRae": {
+      "value": 2081,
+      "source": "USDA FDC: USDA FDC 170932 'Spices, pepper, red or cayenne'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "folateUgDfe": {
+      "value": 106,
+      "source": "USDA FDC: USDA FDC 170932 'Spices, pepper, red or cayenne'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "waterG": {
+      "value": 8.1,
+      "source": "USDA FDC: USDA FDC 170932 'Spices, pepper, red or cayenne'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 170932 'Spices, pepper, red or cayenne'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": 293,
+      "source": "USDA FDC: USDA FDC 170932 'Spices, pepper, red or cayenne'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "seleniumUg": {
+      "value": 8.8,
+      "source": "USDA FDC: USDA FDC 170932 'Spices, pepper, red or cayenne'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "copperMg": {
+      "value": 0.37,
+      "source": "USDA FDC: USDA FDC 170932 'Spices, pepper, red or cayenne'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "manganeseMg": {
+      "value": 2,
+      "source": "USDA FDC: USDA FDC 170932 'Spices, pepper, red or cayenne'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": 29.8,
+      "source": "USDA FDC: USDA FDC 170932 'Spices, pepper, red or cayenne'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminKUg": {
+      "value": 80.3,
+      "source": "USDA FDC: USDA FDC 170932 'Spices, pepper, red or cayenne'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "thiaminMg": {
+      "value": 0.33,
+      "source": "USDA FDC: USDA FDC 170932 'Spices, pepper, red or cayenne'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "riboflavinMg": {
+      "value": 0.92,
+      "source": "USDA FDC: USDA FDC 170932 'Spices, pepper, red or cayenne'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "niacinMg": {
+      "value": 8.7,
+      "source": "USDA FDC: USDA FDC 170932 'Spices, pepper, red or cayenne'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminB6Mg": {
+      "value": 2.5,
+      "source": "USDA FDC: USDA FDC 170932 'Spices, pepper, red or cayenne'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 170932 'Spices, pepper, red or cayenne'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    }
+  },
   "macrosPer100Estimate": {
-    "kcal": 282,
+    "kcal": 375,
     "proteinG": 13.5,
     "carbsG": 50,
     "fatG": 14.3,
     "fibreG": 34.8
   },
-  "storage": "Room temperature in an airtight, opaque container, away from light and stove heat. For long storage, keep it in the fridge in a sealed jar. It lasts about 6 months open.",
-  "looksLike": "a fine, deep red to orange-red powder with a sharp, hot smell that can make you sneeze.",
-  "howToPick": "choose a sealed, recent pack. The colour should be evenly red, not brick-dull. It should smell pungent, and the powder should be free-flowing. Avoid caked, faded or musty packs.",
-  "shelfLife": "usually 12–18 months unopened (check the pack). After opening, the heat and colour fade over 4–6 months.",
+  "storage": "Airtight dry container, away from light and heat, at room temperature; best used within about 6 months after opening.",
+  "looksLike": "a fine, bright to brick-red hot powder, usually with a sharp smell that makes you cough or sneeze.",
+  "howToPick": "an even red colour and a clean, sharp smell; avoid a very bright unnatural red, clumps, or a musty smell.",
+  "shelfLife": "about 6 to 12 months sealed (general guidance; not from a source in this run).",
   "substitutes": [
-    "Cayenne pepper, 1"
+    "Cayenne pepper, 1",
+    "Kashmiri red chilli powder",
+    "Cayenne or paprika blend",
+    "Fresh green chilli"
   ],
   "usedIn": [
     {
-      "dishNumber": 2,
+      "dishNumber": 81,
+      "quantity": 0.3,
+      "unit": "g",
+      "raw": "0.3 g per serving (a pinch, ⅛ tsp)"
+    },
+    {
+      "dishNumber": 84,
       "quantity": 2,
       "unit": "g",
-      "raw": "2 g (¾ tsp, in the marinade)"
+      "raw": "2 g per serving (¾ tsp)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-10-25",
+      "file": "FitPlate_Ingredients_2026-10-25.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (wma)",
     "macrosPer100Estimate": "stable (single)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 442.1–639.3 was wider than 30% of avg 514.5; narrowed to ±15%.",
+    "macrosPer100Estimate.kcal: Versions 2026-10-04 (282) and 2026-10-25 (375) differ by more than 25%; kept the newer."
+  ]
 }
