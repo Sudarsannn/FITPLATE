@@ -1,0 +1,69 @@
+{
+  "id": "tamarind-paste-pulp",
+  "name": "Tamarind paste / pulp",
+  "aliases": [
+    "imli paste"
+  ],
+  "category": "Packaged / condiment",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-25",
+        "min": 223,
+        "max": 290,
+        "avg": 266,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 225,
+      "max": 290,
+      "avg": 265
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-25",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": null,
+    "platforms": [],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
+  },
+  "per100Estimate": {
+    "min": 22.5,
+    "max": 29,
+    "avg": 26.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": null,
+  "storage": null,
+  "looksLike": null,
+  "howToPick": null,
+  "shelfLife": null,
+  "substitutes": [],
+  "usedIn": [],
+  "versions": [
+    {
+      "date": "2026-10-25",
+      "file": "FitPlate_Ingredients_2026-10-25.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (none)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "looksLike": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": [
+    "2026-10-25: no detail section found"
+  ]
+}

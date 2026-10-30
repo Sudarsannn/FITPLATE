@@ -5,12 +5,14 @@ import { ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import Animated, { FadeIn as RFadeIn } from 'react-native-reanimated';
 
 import { DishImageSlot } from '../components/dishes/parts';
+import { LogDishCard } from '../components/meals/LogDishCard';
 import type { IconName } from '../components/Icon';
 import { Chip, GradientButton, PressableScale } from '../components/ui';
 import { researchExercises } from '../data/research';
 import { success } from '../lib/haptics';
 import { recommend, useStore, WATER_TARGET } from '../lib/store';
 import type { Exercise } from '../models/exercise';
+import type { Dish } from '../models/research';
 import { exerciseKcal, SECTION_LABEL, shortExerciseName, suggestedMinutes } from '../services/fitness';
 import { colors, radius, type } from '../theme';
 
@@ -24,9 +26,10 @@ const num = (s: string) => {
 export default function Log() {
   const params = useLocalSearchParams<{ tab?: Tab; exercise?: string; minutes?: string }>();
   const [tab, setTab] = useState<Tab>(params.tab ?? (params.exercise ? 'exercise' : 'meal'));
-  const { logDish, logCustomMeal, logWorkout, addWater, today, profile, bodyWeightKg } = useStore();
+  const { logCustomMeal, logWorkout, addWater, today, profile, bodyWeightKg } = useStore();
 
   const [q, setQ] = useState('');
+  const [pick, setPick] = useState<Dish | null>(null);
   const [custom, setCustom] = useState(false);
   const [cName, setCName] = useState('');
   const [cKcal, setCKcal] = useState('');
@@ -67,21 +70,19 @@ export default function Log() {
       <Animated.View key={tab} entering={RFadeIn.duration(250)}>
         {tab === 'meal' ? (
           <>
+            {pick ? <LogDishCard dish={pick} onDone={done} onCancel={() => setPick(null)} /> : null}
             <View style={styles.search}>
               <Ionicons name="search" size={18} color={colors.muted} />
               <TextInput value={q} onChangeText={setQ} placeholder="Search a FitPlate dish" placeholderTextColor={colors.faint} style={styles.input} />
             </View>
-            <Text style={styles.hint}>{q ? `${results.length} dishes` : 'Picked for your goal. One tap logs one serving.'}</Text>
+            <Text style={styles.hint}>{q ? `${results.length} dishes` : 'Picked for your goal. Tap a dish to choose servings and log it.'}</Text>
             {results.map((d) => {
               const n = d.nutritionPerServing;
               return (
                 <PressableScale
                   key={d.id}
                   scaleTo={0.98}
-                  onPress={() => {
-                    logDish(d);
-                    done();
-                  }}
+                  onPress={() => setPick(d)}
                   style={styles.row}
                   accessibilityLabel={`Log ${d.name}`}
                 >

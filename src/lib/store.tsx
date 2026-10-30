@@ -9,6 +9,7 @@ import { researchDishes } from '../data/research';
 import type { Dish as ResearchDish } from '../models/research';
 import type { Doc } from '../models/common';
 import { cookedDays, currentStreak } from '../services/streaks';
+import { portionPatch } from '../services/meals';
 import { DEFAULT_SETTINGS, type CookCompletion, type DishRating, type ShoppingList, type UserSettings } from '../models/prefs';
 import { DEFAULT_SURVEY, type Survey } from '../models/survey';
 import type { DietType, UserProfile } from '../models/user';
@@ -133,7 +134,11 @@ type Store = State & {
   deleteMyData: () => Promise<void>;
   updateProfile: (p: Partial<Profile>) => void;
   /** One serving of a research dish, eaten (not necessarily cooked here). `ordered` marks a takeaway, with what it cost. */
-  logDish: (dish: ResearchDish, how?: 'logged' | 'ordered', orderInr?: number | null) => void;
+  logDish: (dish: ResearchDish, how?: 'logged' | 'ordered', orderInr?: number | null, servings?: number) => void;
+  /** Day 13: change the portion of a logged meal (its numbers scale with it). */
+  setMealServings: (id: string, servings: number) => void;
+  /** Day 13: delete a logged meal. */
+  deleteMeal: (id: string) => void;
   /** A meal that isn't a FitPlate dish, with the user's own numbers. */
   logCustomMeal: (m: { name: string; kcal: number; protein: number; fibre: number }) => void;
   /** A research exercise for some minutes; kcal from its Compendium MET and the user's weight. */
@@ -349,10 +354,15 @@ export function StoreProvider({ children }: { children: ReactNode }) {
         await endAuth();
       },
       updateProfile: (p) => s?.updateProfile(legacyProfilePatch(p)),
-      logDish: (dish, how = 'logged', orderInr = null) => {
+      logDish: (dish, how = 'logged', orderInr = null, servings = 1) => {
         const n = dish.nutritionPerServing;
-        s?.addMeal({ name: dish.name, emoji: '', dishId: dish.id, source: 'dish', kcal: Math.round(n.kcal ?? 0), proteinG: Math.round(n.proteinG ?? 0), fibreG: Math.round(n.fibreG ?? 0), cooked: false, how, ...(orderInr != null ? { orderInr } : {}) });
+        s?.addMeal({ name: dish.name, emoji: '', dishId: dish.id, source: 'dish', kcal: Math.round((n.kcal ?? 0) * servings), proteinG: Math.round((n.proteinG ?? 0) * servings), fibreG: Math.round((n.fibreG ?? 0) * servings), cooked: false, how, servings, ...(orderInr != null ? { orderInr: Math.round(orderInr * servings) } : {}) });
       },
+      setMealServings: (id, servings) => {
+        const m = s?.docs.mealLogs[id];
+        if (s && m) s.updateMeal(id, portionPatch(m, servings));
+      },
+      deleteMeal: (id) => s?.removeMeal(id),
       logCustomMeal: (m) => s?.addMeal({ name: m.name, emoji: '', dishId: null, source: 'custom', kcal: Math.round(m.kcal), proteinG: Math.round(m.protein), fibreG: Math.round(m.fibre), cooked: false }),
       logWorkout: (e, minutes) => s?.addWorkout({ type: e.name, exerciseId: e.id, minutes, kcal: exerciseKcal(e.met, minutes, bodyWeight) }),
       addWater: (n) => s?.addWater(n),

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Alert, Image, Pressable, ScrollView, StyleSheet, Switch, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { featureFlags } from '../config/featureFlags';
 import { ConfirmDeleteData } from '../components/ConfirmDeleteData';
 import { PAGE_TITLE, SURVEY_PAGES } from '../components/survey/SurveyFlow';
 import { surveySummary } from '../components/survey/surveySummary';
@@ -109,6 +110,22 @@ export function ProfileScreen({ asTab = false }: { asTab?: boolean }) {
               accessibilityLabel="Beginner tips while cooking"
             />
           </Glass>
+          {featureFlags.deskBreak ? (
+            <Glass style={{ marginTop: 14, flexDirection: 'row', alignItems: 'center', gap: 12 }}>
+              <IconBadge name="body-outline" color={colors.blue} size={42} />
+              <View style={{ flex: 1 }}>
+                <Text style={{ color: colors.text, fontWeight: '800' }}>Desk breaks</Text>
+                <Text style={[type.small, { color: colors.muted }]}>On weekdays 10 am to 6 pm, Today suggests one short desk stretch.</Text>
+              </View>
+              <Switch
+                value={settings.featureToggles.deskBreak === true}
+                onValueChange={(v) => updateSettings({ featureToggles: { ...settings.featureToggles, deskBreak: v } })}
+                trackColor={{ true: colors.accent, false: '#333' }}
+                thumbColor="#fff"
+                accessibilityLabel="Desk breaks"
+              />
+            </Glass>
+          ) : null}
         </FadeIn>
 
         <FadeIn i={3}>

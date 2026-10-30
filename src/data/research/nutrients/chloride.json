@@ -1,0 +1,347 @@
+{
+  "id": "chloride",
+  "name": "Chloride",
+  "type": "mineral",
+  "subtype": "macromineral",
+  "unit": "mg",
+  "altUnits": [
+    {
+      "unit": "g salt (NaCl)",
+      "toMainUnitFactor": 607
+    },
+    {
+      "unit": "mmol",
+      "toMainUnitFactor": 35.45
+    }
+  ],
+  "unitConversions": [
+    {
+      "fromUnit": "g",
+      "compound": "salt",
+      "toMainUnitFactor": 607,
+      "raw": "1 g salt (NaCl) | 607 mg chloride + 393 mg sodium"
+    },
+    {
+      "fromUnit": "mg",
+      "compound": "chloride",
+      "toMainUnitFactor": 1.65,
+      "raw": "1,000 mg chloride | 1.65 g salt"
+    },
+    {
+      "fromUnit": "g",
+      "compound": "potassium chloride",
+      "toMainUnitFactor": 475,
+      "raw": "1 g potassium chloride (KCl) | about 475 mg chloride"
+    }
+  ],
+  "targets": [
+    {
+      "group": "adult_male_sedentary",
+      "ear": null,
+      "rda": null,
+      "ai": 2300,
+      "source": "ICMR-NIN 2020 range 1,800-2,300 mg for age 9+ via FSSAI direction annex OCR (secondary, unverified); same as IOM 2005 AI"
+    },
+    {
+      "group": "adult_male_moderate",
+      "ear": null,
+      "rda": null,
+      "ai": 2300,
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "group": "adult_male_heavy",
+      "ear": null,
+      "rda": null,
+      "ai": 2300,
+      "source": "ICMR-NIN 2020 (secondary, unverified); heavy sweating needs Not found"
+    },
+    {
+      "group": "adult_female_sedentary",
+      "ear": null,
+      "rda": null,
+      "ai": 2300,
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "group": "adult_female_moderate",
+      "ear": null,
+      "rda": null,
+      "ai": 2300,
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "group": "adult_female_heavy",
+      "ear": null,
+      "rda": null,
+      "ai": 2300,
+      "source": "ICMR-NIN 2020 (secondary, unverified); heavy sweating needs Not found"
+    },
+    {
+      "group": "pregnant",
+      "ear": null,
+      "rda": null,
+      "ai": 2300,
+      "source": "ICMR-NIN 2020 via FSSAI annex (secondary, unverified); IOM 2005 2,300; EFSA 2019 3,100"
+    },
+    {
+      "group": "lactating",
+      "ear": null,
+      "rda": null,
+      "ai": 2300,
+      "source": "ICMR-NIN 2020 via FSSAI annex (secondary, unverified); IOM 2005 2,300"
+    }
+  ],
+  "appDefaultTarget": {
+    "adult_male": 2300,
+    "adult_female": 2300,
+    "pregnant": 2300,
+    "lactating": 2300,
+    "age_60_plus": null
+  },
+  "upperLimit": {
+    "value": 3600,
+    "unit": "mg",
+    "appliesTo": "food_and_supplements",
+    "source": "US IOM 2005 UL for adults (secondary, unverified: textbook table); ICMR TUL Not found; practical ceiling follows sodium limit (5 g salt = about 3,030 mg chloride)"
+  },
+  "topFoodSources": [
+    {
+      "food": "Iodised table salt (added in cooking)",
+      "veg": true,
+      "per100g": 60700,
+      "servingG": 5,
+      "servingLabel": "1 level tsp (est.)",
+      "perServing": 3033
+    },
+    {
+      "food": "Pickle (achar), low end of range (est. from sodium)",
+      "veg": true,
+      "per100g": 2470,
+      "servingG": 15,
+      "servingLabel": "1 tbsp (est.)",
+      "perServing": 370
+    },
+    {
+      "food": "Papad (est. from survey mean sodium)",
+      "veg": true,
+      "per100g": 1880,
+      "servingG": 12,
+      "servingLabel": "1 piece (est.)",
+      "perServing": 225
+    },
+    {
+      "food": "Aloo bhujia / namkeen (est. from retailer label sodium, unverified)",
+      "veg": true,
+      "per100g": 1520,
+      "servingG": 30,
+      "servingLabel": "1 handful (est.)",
+      "perServing": 455
+    },
+    {
+      "food": "Processed cheese slice (est. upper bound from one brand sodium)",
+      "veg": true,
+      "per100g": 2540,
+      "servingG": 20,
+      "servingLabel": "1 slice (est.)",
+      "perServing": 510
+    },
+    {
+      "food": "ORS, WHO low-osmolarity, made up",
+      "veg": true,
+      "per100g": 230,
+      "servingG": 200,
+      "servingLabel": "1 glass 200 ml",
+      "perServing": 461
+    }
+  ],
+  "goodSourceDishes": [
+    {
+      "dishNumber": 31,
+      "dishName": "Indian-style Overnight Oats"
+    },
+    {
+      "dishNumber": 81,
+      "dishName": "Paneer Paratha"
+    },
+    {
+      "dishNumber": 21,
+      "dishName": "Masala Omelette"
+    },
+    {
+      "dishNumber": 66,
+      "dishName": "Sprouts Chaat"
+    },
+    {
+      "dishNumber": 51,
+      "dishName": "Uttapam"
+    },
+    {
+      "dishNumber": 56,
+      "dishName": "Pesarattu"
+    }
+  ],
+  "deficiencyRiskIndia": "low",
+  "absorptionBoosters": [
+    "Sodium and glucose in ORS (help gut take up chloride and water)"
+  ],
+  "absorptionBlockers": [],
+  "logPresets": [
+    {
+      "label": "Pinch of salt, about 0.5 g (est.)",
+      "amount": 303,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 303,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "1/4 tsp salt, about 1.25 g (est.)",
+      "amount": 758,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 758,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "1 level tsp salt, about 5 g (est.)",
+      "amount": 3033,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 3033,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "ORS glass 200 ml, WHO low-osmolarity",
+      "amount": 461,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 461,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "1 g salt tablet (sodium chloride)",
+      "amount": 607,
+      "unit": "mg",
+      "toMainFactor": 1.65,
+      "factorSource": "markdown",
+      "mainAmount": 1001.55,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Doctor-prescribed salt 6 g/day (prescription dose)",
+      "amount": 3640,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 3640,
+      "mainAmountRange": null,
+      "prescriptionDose": true
+    }
+  ],
+  "warnings": [
+    "Chloride follows salt: calculate it from the salt/sodium log (1 g salt = 607 mg chloride); do not ask users to eat more salt to reach it.",
+    "IFCT 2017 has no chloride values; plain-food chloride is Not found. Processed-food chloride is an estimate (sodium x 1.54, upper bound).",
+    "ICMR chloride values are secondary, unverified (OCR of FSSAI direction); ICMR EAR and TUL Not found.",
+    "good_source_dishes lists the lighter-salt dish picks, not chloride-rich dishes.",
+    "Potassium-chloride salt substitutes and KCl tablets are not for kidney disease, pregnancy or users of ACE inhibitors, ARBs or potassium-sparing diuretics unless a doctor agrees.",
+    "Users with kidney, heart or liver disease, pregnancy, or on diuretics: show only the general range plus 'Follow your doctor's advice'; never push higher or lower salt, chloride or water.",
+    "Repeated vomiting, severe diarrhoea, confusion or seizure: see a doctor now."
+  ],
+  "conditionAdjustments": [
+    {
+      "profileId": "P3",
+      "change": "Same salt ceiling as sodium topic; chloride not tracked separately; chloride-specific BP effect suggested but unproven",
+      "value": null,
+      "unit": "mg",
+      "source": "Chloride and hypertension review 2015 (Pflugers Arch); topic 18 P3 sources"
+    },
+    {
+      "profileId": "P13",
+      "change": "No chloride target set by app; high blood chloride occurs with impaired excretion; no KCl substitutes; requires doctor input",
+      "value": null,
+      "unit": "mg",
+      "source": "Teaching pages on hyperchloraemia (secondary); WHO 2025 salt-substitute exclusions via topic 18"
+    },
+    {
+      "profileId": "P21",
+      "change": "Diuretics cause chloride loss and low chloride; doctor sets salt, fluid and electrolyte plan; requires doctor input",
+      "value": null,
+      "unit": "mg",
+      "source": "Merck Manual metabolic alkalosis table; NYSORA (secondary)"
+    },
+    {
+      "profileId": "P22",
+      "change": "ICMR 2,300 mg shown as general information; no routine salt restriction; requires doctor input for hypertension in pregnancy",
+      "value": 2300,
+      "unit": "mg",
+      "source": "ICMR-NIN 2020 via FSSAI annex (secondary, unverified); Cochrane via topic 18"
+    },
+    {
+      "profileId": "P23",
+      "change": "ICMR 2,300 mg shown as general information",
+      "value": 2300,
+      "unit": "mg",
+      "source": "ICMR-NIN 2020 via FSSAI annex (secondary, unverified)"
+    },
+    {
+      "profileId": "P29",
+      "change": "No change to daily value; sodium chloride drink only for long heavy-sweat sessions; drink to thirst",
+      "value": null,
+      "unit": "mg",
+      "source": "Sweat chloride data in healthy adults (clinical test, secondary); EAH consensus via topic 18"
+    },
+    {
+      "profileId": "P31",
+      "change": "2,000 mg estimate (1,800 mg for 71+); thiazide-type tablets can lower chloride; requires doctor input if on diuretics",
+      "value": 2000,
+      "unit": "mg",
+      "source": "IOM 2005 via MedlinePlus (secondary); Merck Manual"
+    },
+    {
+      "profileId": "P33",
+      "change": "No change found; watch pickles, papad and namkeen",
+      "value": null,
+      "unit": "mg",
+      "source": "No change found"
+    },
+    {
+      "profileId": "P34",
+      "change": "No change found; watch soy sauce and packaged meat alternatives",
+      "value": null,
+      "unit": "mg",
+      "source": "No change found"
+    }
+  ],
+  "lastResearched": "2026-10-30",
+  "versions": [
+    {
+      "date": "2026-10-30",
+      "file": "FitPlate_Nutrients_2026-10-30.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3)",
+    "upperLimit": "official safety limit (D3, lower on conflict)",
+    "topFoodSources": "union; per100g official (D3)",
+    "logPresets": "union by label (newest), converted with own file factors",
+    "appDefaultTarget": "newest, kept only where it equals the ICMR row",
+    "lists": "union",
+    "warnings": "union (never dropped)",
+    "text": "newest"
+  },
+  "mergeNotes": [],
+  "needsReview": [
+    "2026-10-30 chloride: \"group\" has unexpected value \"age_60_plus_male\"; treated as not found",
+    "2026-10-30 chloride: \"group\" has unexpected value \"age_60_plus_female\"; treated as not found"
+  ]
+}

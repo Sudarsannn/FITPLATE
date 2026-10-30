@@ -1,0 +1,626 @@
+{
+  "id": "balasana-childs-pose",
+  "number": 8,
+  "name": "Balasana (Child's Pose)",
+  "otherNames": [
+    "Child's Pose",
+    "Wide-knee Child's Pose",
+    "Knees-together Child's Pose",
+    "Supported Child's Pose",
+    "Shashankasana (Hare pose, in some schools)",
+    "Shishuasana"
+  ],
+  "section": "yoga_stretch",
+  "type": "yoga_asana",
+  "equipment": [
+    "yoga mat or rug (optional)",
+    "folded blanket or pillow (optional)",
+    "bolster or firm pillows (optional)",
+    "rolled towel (optional)"
+  ],
+  "noEquipmentAlternative": "Chair version: sit with knees apart and rest forearms and forehead on a table with a pillow; or use carpet with a cushion under the forehead",
+  "musclesPrimary": [
+    "erector spinae (stretched)",
+    "gluteus maximus (stretched)",
+    "latissimus dorsi (stretched, arms forward)",
+    "quadriceps (stretched)",
+    "hip adductors (stretched, wide knees)"
+  ],
+  "musclesSecondary": [
+    "tibialis anterior and ankle front (stretched)",
+    "diaphragm and intercostals (breathing)",
+    "neck muscles (relaxed)",
+    "hip rotators"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 2.3,
+  "compendiumCode": "02101",
+  "metOptions": [
+    {
+      "code": "02101",
+      "met": 2.3,
+      "activity": "MET: 2.3, 2024 Adult Compendium of Physical Activities, code 02101, \"Stretching, mild\" (Conditioning Exercise heading). This matches the beginner prescription (a light, still, restful hold). Extras (t"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "flexibility",
+      "sets": 2,
+      "reps": "wide-knee hold, forehead supported",
+      "timeSec": 30,
+      "restSec": 15,
+      "tempo": "slow breaths, long exhale",
+      "perWeek": 4
+    },
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 1,
+      "reps": "rest between harder poses",
+      "timeSec": 25,
+      "restSec": 0,
+      "tempo": "slow breaths",
+      "perWeek": 4
+    },
+    {
+      "level": "beginner",
+      "goal": "relaxation",
+      "sets": 1,
+      "reps": "supported hold, 5-10 slow breaths",
+      "timeSec": 60,
+      "restSec": 0,
+      "tempo": "long exhales",
+      "perWeek": 5
+    },
+    {
+      "level": "intermediate",
+      "goal": "flexibility",
+      "sets": 3,
+      "reps": "wide-knee hold, arms forward",
+      "timeSec": 45,
+      "restSec": 15,
+      "tempo": "slow breaths",
+      "perWeek": 5
+    },
+    {
+      "level": "intermediate",
+      "goal": "relaxation",
+      "sets": 2,
+      "reps": "supported on a bolster",
+      "timeSec": 75,
+      "restSec": 0,
+      "tempo": "long exhales",
+      "perWeek": 6
+    },
+    {
+      "level": "advanced",
+      "goal": "flexibility",
+      "sets": 3,
+      "reps": "hold, then side reach about 30 s per side",
+      "timeSec": 60,
+      "restSec": 15,
+      "tempo": "slow breaths",
+      "perWeek": 5
+    },
+    {
+      "level": "advanced",
+      "goal": "relaxation",
+      "sets": 1,
+      "reps": "supported hold, yin-style",
+      "timeSec": 180,
+      "restSec": 0,
+      "tempo": "slow breaths",
+      "perWeek": 5
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "hold_timer",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "hold_fold",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": "<= 70",
+        "parsed": {
+          "op": "<=",
+          "value": 70,
+          "max": null
+        }
+      },
+      {
+        "name": "hold_fold",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": "<= 70",
+        "parsed": {
+          "op": "<=",
+          "value": 70,
+          "max": null
+        }
+      },
+      {
+        "name": "hold_head_down",
+        "joint": "nose below shoulder line",
+        "angleDeg": "position flag: nose below shoulder line",
+        "parsed": null
+      },
+      {
+        "name": "hold_still",
+        "joint": "hip landmarks sideways shift",
+        "angleDeg": "position flag: shift <= 8 cm",
+        "parsed": null
+      }
+    ],
+    "minRepSec": 5
+  },
+  "formChecks": [
+    {
+      "joint": "hip",
+      "rule": "hip angle > 70 deg (equals hold_fold phase threshold; not folded enough)",
+      "message": "Sit your hips back and fold a little lower, or add a blanket"
+    },
+    {
+      "joint": "knee",
+      "rule": "knee angle > 70 deg (equals hold_fold phase threshold; hips not back)",
+      "message": "Sit back toward your heels, or use a blanket between seat and heels"
+    },
+    {
+      "joint": "head",
+      "rule": "nose not below shoulder line (equals hold_head_down phase flag)",
+      "message": "Let your forehead rest down; add a pillow if needed"
+    },
+    {
+      "joint": "hips",
+      "rule": "hip landmarks shift more than 8 cm sideways during the hold (position flag, not an angle)",
+      "message": "Stay still and settle"
+    },
+    {
+      "joint": "time",
+      "rule": "hold longer than 180 s (cap, est.)",
+      "message": "Nice. Roll up slowly when you are ready"
+    }
+  ],
+  "safetyFlags": [
+    "knee_injury_or_surgery_ask_doctor",
+    "knee_pain_use_towel_or_blanket",
+    "ankle_pain_pad_under_ankles",
+    "pregnancy_wide_knees_belly_supported_check_with_midwife",
+    "osteoporosis_neutral_spine_props_ask_doctor_if_fracture",
+    "hypertension_head_not_far_below_heart_rise_slowly",
+    "heart_disease_ask_doctor",
+    "hernia_ask_doctor",
+    "rise_slowly_dizziness",
+    "no_breath_holding",
+    "recent_surgery_ask_doctor"
+  ],
+  "progressions": [
+    "Hold 60-90 s with breath into the back ribs",
+    "Arms forward and walk the fingertips to one side for a side stretch",
+    "Knees together with hips fully on the heels, forehead on floor; then Downward Dog or seated forward bend"
+  ],
+  "regressions": [
+    "Folded blanket or block between seat and heels, forehead on stacked fists or a folded towel",
+    "Rolled towel behind the knees and/or under the ankles",
+    "Supported on a bolster or pillows, or chair version with forearms and forehead on a table"
+  ],
+  "videoShots": [
+    {
+      "seconds": 6,
+      "angle": "side, 2 m",
+      "shows": "kneeling start, tops of the feet down, big toes touching",
+      "textOverlay": "Kneel. Big toes touch."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, floor level, 1.5 m",
+      "shows": "wide-knee version, knees to mat width, hips sitting back",
+      "textOverlay": "Knees wide. Hips back."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "fold forward, forehead on the mat, arms forward",
+      "textOverlay": "Long spine. Rest your forehead."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 1.5 m",
+      "shows": "blanket between seat and heels, towel behind the knees",
+      "textOverlay": "Add support. No pinching."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "supported version on a bolster",
+      "textOverlay": "Let the bolster hold you."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, split screen, 2 m",
+      "shows": "wrong (hips hovering, neck strain) vs right",
+      "textOverlay": "Bring the floor closer"
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 1.5 m",
+      "shows": "breath into the back ribs",
+      "textOverlay": "Breathe into your back ribs"
+    },
+    {
+      "seconds": 6,
+      "angle": "side, 2 m",
+      "shows": "rolling up slowly, head last",
+      "textOverlay": "Roll up slowly. Pause."
+    }
+  ],
+  "lastResearched": "2026-10-30",
+  "setupSteps": [
+    "Mat and space. Lay the mat on a flat, non-slip floor. A carpet or a doubled mat is kinder to the knees and ankles.",
+    "Clothes. Fitted track pants or leggings so the hips, knees and ankles show; a loose kurta or dupatta can be tucked in so it does not cover the hips on camera.",
+    "Props ready. Folded blanket (or a second pillow) to place between the seat and heels if the hips do not reach; rolled towel for behind the knees or under the ankles; a bolster, a firm pillow or 2–3 stacked pillows for the supported version; a folded towel or blanket under the forehead if it does not reach the floor.",
+    "Starting position. Kneel on the mat with the tops of the feet down. Knees apart for the wide version (about mat width, est.), big toes touching; knees together for the knees-together version.",
+    "Camera. Phone on a low stool at mat height, 2 m to the side, landscape, so the head, hips, knees and ankles are all in frame (see section 11)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": "A. Wide-knee Child's Pose",
+      "title": "Kneel",
+      "action": "kneel on the mat with the tops of the feet flat and the big toes touching.",
+      "feel": "weight even on both knees, ankles comfortable.",
+      "breathing": "breathe normally.",
+      "tempo": "3 seconds.",
+      "visualCheck": "side view, shins flat, back long; front view, knees level."
+    },
+    {
+      "n": 2,
+      "part": "A. Wide-knee Child's Pose",
+      "title": "Open the knees",
+      "action": "slide the knees apart to about mat width, keeping the big toes touching.",
+      "feel": "stretch along the inner thighs, no pinch at the knees.",
+      "breathing": "breathe out.",
+      "tempo": "3 seconds.",
+      "visualCheck": "knees symmetrical, feet together behind."
+    },
+    {
+      "n": 3,
+      "part": "A. Wide-knee Child's Pose",
+      "title": "Sit the hips back",
+      "action": "move the hips back toward the heels, keeping the back long, as far as it feels comfortable (see step 3b for a gap).",
+      "feel": "gentle stretch through the low back and the front of the thighs.",
+      "breathing": "breathe out.",
+      "tempo": "3 seconds.",
+      "visualCheck": "side view, hips moving back, not the back rounding first."
+    },
+    {
+      "n": 4,
+      "part": "A. Wide-knee Child's Pose",
+      "title": "Fold forward",
+      "action": "bend from the hips and lower the torso between or over the thighs.",
+      "feel": "weight of the belly on the thighs, a gentle stretch in the back.",
+      "breathing": "breathe out.",
+      "tempo": "4 seconds.",
+      "visualCheck": "side view, back long and gently rounded, not collapsed."
+    },
+    {
+      "n": 5,
+      "part": "A. Wide-knee Child's Pose",
+      "title": "Rest the forehead",
+      "action": "let the forehead rest on the mat, a folded towel or stacked fists, so the neck is long and relaxed.",
+      "feel": "neck soft, jaw loose.",
+      "breathing": "breathe in.",
+      "tempo": "2 seconds.",
+      "visualCheck": "front view, head hanging evenly, no twisting."
+    },
+    {
+      "n": 6,
+      "part": "A. Wide-knee Child's Pose",
+      "title": "Place the arms",
+      "action": "stretch the arms forward with palms down (more shoulder stretch) or lay them back along the thighs with palms up (more relaxed; the Balasana version in some schools).",
+      "feel": "shoulders heavy, away from the ears.",
+      "breathing": "breathe in.",
+      "tempo": "3 seconds.",
+      "visualCheck": "elbows soft, shoulders level."
+    },
+    {
+      "n": 7,
+      "part": "A. Wide-knee Child's Pose",
+      "title": "Hold and breathe",
+      "action": "stay still, breathing slowly and sending the breath into the back ribs.",
+      "feel": "light effort 3–4/10 on the ACSM 0–10 effort scale (= Borg 9–11 on the 6–20 scale); a feeling of rest, never pain.",
+      "breathing": "slow breaths in through the nose and out through the nose or mouth, 5 to 10 breaths.",
+      "tempo": "hold 30–60 seconds (see section 7).",
+      "visualCheck": "body still, ribs moving slightly with each breath."
+    },
+    {
+      "n": 8,
+      "part": "A. Wide-knee Child's Pose",
+      "title": "Come out",
+      "action": "walk the hands back toward the knees and roll up slowly, one vertebra at a time, head last.",
+      "feel": "easy rise, no dizziness.",
+      "breathing": "breathe in as you rise.",
+      "tempo": "5 seconds.",
+      "visualCheck": "no sudden jump up; pause a breath kneeling before standing."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Forcing the hips to the heels with sore knees",
+      "text": "Forcing the hips to the heels with sore knees. Deep knee bending can pinch or aggravate the knee. Fix: put a folded blanket between the seat and heels, roll a towel behind the knees, or skip the pose; stop if knee pain persists (Expanding Light, DoYouYoga, Bodybyyoga)."
+    },
+    {
+      "title": "Letting the ankles crunch",
+      "text": "Letting the ankles crunch. Tops of the feet on a hard floor can be painful. Fix: a rolled towel under the ankles (Ekhart, Yogahealthy blog) or a thicker mat."
+    },
+    {
+      "title": "Hanging the head with no support",
+      "text": "Hanging the head with no support. Neck and shoulder strain. Fix: forehead on a stack of fists, a block or a folded towel, or a bolster."
+    },
+    {
+      "title": "Collapsing into the back (a sharply rounded spine)",
+      "text": "Collapsing into the back (a sharply rounded spine). The stretch goes to the ribs and the neck takes the weight. Fix: hips back first, long spine, then fold; consider the supported version, especially with osteoporosis (Bone Coach)."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. Raises tension and, with high blood pressure, adds strain. Fix: slow breath through the nose and long exhale."
+    },
+    {
+      "title": "Pressing the belly in a later pregnancy with knees together",
+      "text": "Pressing the belly in a later pregnancy with knees together. Compresses the abdomen. Fix: knees wide so the belly has room, or the bolster version (Prenatal Yoga Center and other prenatal sources)."
+    },
+    {
+      "title": "Rushing out of the pose",
+      "text": "Rushing out of the pose. Dizziness from a head-down fold, especially with low or high blood pressure. Fix: roll up slowly and pause kneeling for a breath."
+    },
+    {
+      "title": "Treating it as a calorie burner",
+      "text": "Treating it as a calorie burner. It is a rest pose at about 2.3 MET (est.). Fix: use it to recover between harder poses."
+    }
+  ],
+  "safetyNotes": [
+    "Knees: Several teaching sources say avoid the pose with a current or recent knee injury, or a knee arthritis flare, unless taught by an experienced teacher; if you continue, place a blanket or bolster between the seat and the heels, roll a towel behind the knees, widen the knees, or choose another pose (Lessons.com, Expanding Light, Bodybyyoga, DoYouYoga). Stop if knee pain persists.",
+    "Ankles and hips: pad under the ankles with a rolled towel; stop with sharp pain in the ankle, hip or groin. Hip, knee or ankle injuries are reasons to check with a clinician (Bodybyyoga).",
+    "Lower back: the knees-wide, supported version is gentle on the back in most teaching sources; do not force the fold, stop with increased back pain or leg symptoms.",
+    "Osteoporosis or bone thinning: Bone Coach teaches a modified Child's Pose with the spine neutral and the forehead supported so the neck and upper back do not round. A physician-led case series (Sinaki, Pain Practice, 2013, as cited in a search summary) linked yoga spinal-flexion positions to vertebral compression fractures in people with low bone density. With a diagnosed fracture or low bone density, ask a doctor or physio before holding the pose.",
+    "Pregnancy: the knees should be kept apart (wide) so the belly has room; avoid compressing the abdomen; use a bolster or pillows under the chest and belly in later pregnancy (Prenatal Yoga Center and other prenatal sources). Opinions differ: most prenatal teaching pages say the pose is fine through pregnancy with changes, one OB/GYN quoted in mindbodygreen says to avoid it in the third trimester (or second trimester with twins) over blood-flow concerns. This is not settled; check with your midwife or doctor. Tommy's advice is to avoid lying on the back for long periods after 16 weeks and to keep breathing steadily, which this pose (kneeling and folded forward) does not conflict with.",
+    "Blood pressure: Lessons.com advises avoiding prolonged holds with the head below the heart for high blood pressure or inner ear infections; other lists name very low blood pressure. The AYUSH CYP summary for Shashankasana lists high blood pressure, heart disease and hernia as cautions. Rise slowly and keep the head only slightly low, using a bolster.",
+    "Diarrhoea: a few teaching lists include it (Lessons.com, Sri Sri Yoga page), but a clinical reason was not found.",
+    "Neck: rest the forehead so the neck stays long; do not twist the neck under load.",
+    "Recent surgery (abdomen, knee, hip, spine): wait for the surgeon or physio before folding forward over the thighs.",
+    "Stop immediately if you feel: sharp or pinching pain in a knee, ankle or hip; tingling or numbness in a leg; dizziness, chest pain or breathlessness; pressure or pain in the belly (pregnancy).",
+    "Spotter: not needed.",
+    "Gym etiquette: use the stretching area or a mat out of walkways; wipe the mat after use."
+  ],
+  "sources": [
+    "Ministry of AYUSH / MDNIY Common Yoga Protocol (booklet could be found; step text for Shashankasana not verified): https://www.mea.gov.in/images/pdf/common-yoga-protocol-english.pdf ; ISRO copy: https://new1.isro.gov.in/media_isro/pdf/CYP%20english.pdf ; CYP Shashankasana cautions via secondary summaries: https://www.indoindians.com/42-yoga-poses-of-common-yoga-protocol-of-international-day-of-yoga/ ; Habuild, Shashankasana: https://habuild.in/habitology/asana-mudra/shashank-asana/ ; Pranayoga, Shashankasana and Balasana: https://pranayoga.co.in/asana/shashankasana-hare-posure-balasana-childs-posture",
+    "Ekhart Yoga, Balasana and how to modify Child's Pose: https://ekhartyoga.com/poses/balasana ; https://ekhartyoga.com/blog/how-to-modify-childs-pose-balasana",
+    "Yoga Journal, 4 ways to practise Child's Pose: https://www.yogajournal.com/practice/4-ways-to-practice-childs-pose ; Yogamatters, Child's Pose (Balasana): https://www.yogamatters.com/blogs/pose-library/childs-pose-balasana ; Liforme, Child's Pose: https://liforme.com/blogs/blog/childs-pose-balasana",
+    "Brett Larkin, Child's Pose (Balasana): https://www.brettlarkin.com/childs-pose-balasana/ ; Lessons.com, Child's Pose: https://lessons.com/yoga-poses/childs-pose",
+    "Bone Coach, How to do a Child's Pose safely with osteoporosis or osteopenia: https://bonecoach.com/how-to-do-a-childs-pose-safely-when-you-have-osteoporosis-or-osteopenia (the Sinaki 2013 Pain Practice finding is cited here from a search summary; its own URL: Not found)",
+    "Expanding Light, Easy ways to modify Balasana for knee problems: https://www.expandinglight.org/free/yoga-teacher/advice/balasana-knee-problems.php ; DoYouYoga, 5 ways to make Child's Pose more comfortable: https://www.doyouyoga.com/5-ways-to-make-child-s-pose-more-comfortable-38213/ ; Fit&Well, struggling with Child's Pose: https://www.fitandwell.com/wellness/yoga/if-you-struggle-with-childs-pose-heres-how-to-make-it-work-for-you/",
+    "Yoga International, 3 variations to try when Child's Pose does not feel like a rest pose: https://yogainternational.com/article/view/3-childs-pose-variations ; Prenatal Yoga Center, Child's Pose: https://prenatalyogacenter.com/childs-pose-balasana/ ; mindbodygreen, best prenatal yoga poses: https://mindbodygreen.com/articles/best-prenatal-yoga-poses",
+    "Tommy's, Yoga in pregnancy: https://www.tommys.org/pregnancy-information/im-pregnant/exercise-in-pregnancy/yoga-pregnancy ; Tommy's, Exercises to avoid in pregnancy: https://www.tommys.org/pregnancy-information/im-pregnant/exercise-pregnancy/exercises-avoid",
+    "Sherman et al., Comparing yoga, exercise and a self-care book for chronic low back pain, Arch Intern Med 2011 (PEDro): https://search.pedro.org.au/search-results/record-detail/30905 ; NIH-funded coverage: https://www.eurekalert.org/news-releases/599248 ; Back to Health coverage: https://www.mprnews.org/story/2017/06/20/npr-study-finds-yoga-can-help-back-pain-but-keep-it-gentle-with-these-poses ; registered paediatric trial including Child's Pose (no results yet): https://clinicaltrials.gov/study/NCT07331610",
+    "Herrmann SD et al., 2024 Adult Compendium of Physical Activities (02101 Stretching, mild 2.3; 02150 Yoga, Hatha): https://pacompendium.com/conditioning-exercise/ ; https://pubmed.ncbi.nlm.nih.gov/38242596/",
+    "ACSM, Stretching and flexibility guidelines update (10-30 s holds, 2-3+ days a week): https://www.acsm.org/blog-detail/acsm-certified-blog/2021/03/18/stretching-and-flexibility-guidelines-update",
+    "Condition sources reused from earlier items (general guidance): UK consensus statement on osteoporosis, BJSM 2022: https://pubmed.ncbi.nlm.nih.gov/35577538/ ; International Osteoporosis Foundation: https://www.osteoporosis.foundation/health-professionals/prevention/exercise/exercise-individuals-with-osteoporosis ; ADA key points, PMC5317029: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/ ; BHF cool-down: https://www.bhf.org.uk/informationsupport/heart-matters-magazine/activity/cool-down-exercises ; Sutter Health hypertension exercise: https://www.Sutterhealth.Org/pdf/services/heart-vascular/hypertension-exercising.pdf ; PCOS position statement: https://researchers.westernsydney.edu.au/en/publications/exercise-in-the-management-of-polycystic-ovary-syndrome-a-positio/ ; Marshfield Clinic asthma: https://shine365.marshfieldclinic.org/wellness/asthma-exercise/ ; ECU Health asthma: https://healthlibrary.ecuhealth.org/lung-health/management/asthma-management-exercise-safety ; Royal Berkshire knee OA: https://royalberkshire.nhs.uk/leaflets/osteoarthritis-of-the-knee-advice-and-exercises ; Berkshire Healthcare low back pain: https://www.berkshirehealthcare.nhs.uk/media/qwqaccdd/bh1165n-low-back-pain-v1-feb-2026.pdf ; Tommy's C-section: https://Tommys.Org/pregnancy-information/giving-birth/caesarean-section/when-and-how-exercise-after-c-section ; East and North Herts NHS: https://www.enherts-tr.nhs.uk/content/uploads/2019/10/M-After-Your-C-Section-c-section_infoleaflet2014-1.pdf ; East Sussex NHS postnatal: https://www.esht.nhs.uk/wp-content/uploads/2021/01/0894.pdf ; UH Sussex abdominal surgery: https://www.uhsussex.nhs.uk/wp-content/uploads/2025/10/2637-Physiotherapy-advice-after-abdominal-surgery-2025.pdf ; Oxford laminectomy: https://WWW.OUH.NHS.UK/patient-guide/leaflets/files/100720laminectomy.pdf",
+    "Knees wide vs together: wide gives belly and chest room and is the pregnancy choice; together suits tight hips or a sensitive low back in some teaching. We chose wide as the default and offer together as a variation.",
+    "Arms forward vs back: forward gives more shoulder stretch; back (palms up) is the more relaxed Balasana version in some schools, while Shashankasana reaches forward. We offer both.",
+    "Hold time: 30 s to 3 min in teaching sources; yin holds longer; ACSM 10-30 s per stretch. We chose 30-60 s for beginners.",
+    "Pregnancy: most prenatal pages say fine with changes (wide knees, bolster); one quoted OB/GYN says avoid it in the third trimester. We chose \"modify\" with a check-with-midwife flag.",
+    "Osteoporosis: Bone Coach teaches a modified version; a case series links flexion yoga to fractures. We chose \"modify\" with props and a doctor check for a known fracture.",
+    "Blood pressure: some lists say avoid head-down holds with high blood pressure, others name low blood pressure; the CYP summary lists high blood pressure. We chose \"modify\" with a slight head-down and slow rise.",
+    "Evidence strength: no trial tests Child's Pose alone; benefits are described as teaching claims or from multi-pose programmes.",
+    "Official AYUSH step text: Not found (booklet could not be read); CYP details are from secondary summaries."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 43.5,
+      "70kg": 37.3,
+      "80kg": 32.6
+    },
+    "per300kcal": {
+      "60kg": 130.4,
+      "70kg": 111.8,
+      "80kg": 97.8
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "yoga",
+    "mobility",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "small_flat",
+    "quiet",
+    "1_3_min",
+    "rest_pose",
+    "cool_down",
+    "wind_down",
+    "evening",
+    "relaxation"
+  ],
+  "swapsByAccess": {
+    "none": "Chair version: knees apart, forearms and forehead on a table with a pillow; or a wall-supported forward fold",
+    "home_equipment": "Bolster or firm pillows, a yoga block or blanket under the seat or forehead",
+    "basic_gym": "Mat in the stretching area; gym bench with a folded towel as a forearm rest for a standing hip-back version",
+    "full_gym": "Mat and bolster or block in the stretching or studio area; or a seated forward fold with a rolled towel under the knees"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "Head only slightly below the heart, bolster or chair version, no breath-holding, roll up slowly; CYP summary lists high blood pressure under Shashankasana",
+      "source": "Lessons.com Child's Pose; Habuild/CYP summary (secondary); Sutter Health (general)"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "No pose-specific caution found; check feet and knees for sores or numbness before kneeling (est.)",
+      "source": "ADA exercise guidance via PMC5317029; Not found (pose-specific)"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "CYP summary lists heart disease for Shashankasana; keep breathing, use a bolster, ask your cardiac team",
+      "source": "Habuild/CYP summary (secondary); BHF (general)"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "No change (source not found)",
+      "source": "Not found"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Wide knees for belly room, bolster under the chest, thick pad under knees (est.); chair version if hips cannot sit back",
+      "source": "Not found (pose-specific)"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "No pose-specific caution found",
+      "source": "Position statement on exercise in PCOS (2023 guideline based); Not found (pose-specific)"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "No pose-specific caution found; CYP and MDNIY text not read",
+      "source": "Not found"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "No pose-specific caution found; reliever inhaler nearby; stop if wheezing or breathless",
+      "source": "Marshfield Clinic and ECU Health asthma exercise-safety pages (general)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Towel behind the knees, blanket between seat and heels, wider knees or chair version; avoid after recent knee injury; stop if pain increases",
+      "source": "Lessons.com; Expanding Light; Royal Berkshire NHS knee OA leaflet (general)"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Wide-knee supported version, fold within comfort; stop if pain or leg symptoms increase; red flags need a clinician",
+      "source": "Sherman et al. 2011 and Back to Health trial coverage; Berkshire Healthcare low back pain leaflet"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "ok",
+      "change": "No pose-specific caution found; rest the arms back beside the legs if reaching forward pinches",
+      "source": "Not found (pose-specific)"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "modify",
+      "change": "Spine neutral, forehead supported, bolster, hips doing the bending; case series links flexion yoga with fractures; known fracture: ask doctor or physio",
+      "source": "Bone Coach; Sinaki 2013 (secondary citation); UK consensus statement (BJSM 2022)"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "modify",
+      "change": "Wide knees only, belly not compressed, bolster under the chest, rise slowly; one OB/GYN advises avoiding it in later pregnancy; check with a midwife or doctor",
+      "source": "Prenatal Yoga Center; mindbodygreen prenatal yoga; Tommy's yoga in pregnancy (general)"
+    },
+    {
+      "condition": "postpartum",
+      "status": "ask_doctor",
+      "change": "After C-section wait for clearance before folding over the belly; gentle movement allowed earlier in NHS leaflets",
+      "source": "Tommy's after a C-section; East and North Herts NHS leaflet; East Sussex NHS postnatal leaflet"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Follow surgeon or physio timeline; knee, hip, spine or abdominal surgery usually needs clearance before deep knee bending or forward folds",
+      "source": "University Hospitals Sussex physiotherapy advice after abdominal surgery (2025); Oxford University Hospitals laminectomy leaflet"
+    },
+    {
+      "condition": "other",
+      "status": "ask_doctor",
+      "change": "Hernia, diarrhoea, vertigo or ankle injury: check with a doctor; ankle injury needs padding or another pose",
+      "source": "Habuild/CYP summary (secondary); Lessons.com; Bodybyyoga"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "home"
+    ],
+    "bodyRegion": [
+      "lower",
+      "core"
+    ],
+    "goalTags": [
+      "flexibility",
+      "relaxation",
+      "general_fitness"
+    ],
+    "intensity": "light",
+    "noise": "quiet",
+    "space": "mat_only",
+    "typicalMinutes": 2,
+    "kcalPer10min70kg": 27,
+    "difficulty1to5": 1,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Yoga & stretch",
+    "Home",
+    "No equipment",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Yoga",
+    "Back",
+    "Glutes",
+    "Legs",
+    "Hold timer",
+    "Under 10 min"
+  ],
+  "needsReview": [
+    "rep_counter phase \"hold_head_down\" (nose below shoulder line): angle \"position flag: nose below shoulder line\" is not a parseable angle",
+    "rep_counter phase \"hold_still\" (hip landmarks sideways shift): angle \"position flag: shift <= 8 cm\" is not a parseable angle"
+  ],
+  "versions": [
+    {
+      "date": "2026-10-30",
+      "file": "FitPlate_Fitness_2026-10-30.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

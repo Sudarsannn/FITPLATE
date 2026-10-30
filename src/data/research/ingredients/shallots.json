@@ -16,37 +16,226 @@
         "avg": 150,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-05.md"
+      },
+      {
+        "date": "2026-10-29",
+        "min": 25,
+        "max": 95,
+        "avg": 50,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
       }
     ],
     "currentEstimate": {
-      "min": 135,
-      "max": 160,
-      "avg": 150
+      "min": 85,
+      "max": 115,
+      "avg": 100
     },
-    "method": "single",
+    "method": "spike-blend",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-05",
+    "lastObserved": "2026-10-29",
     "stale": false,
     "seasonal": false,
-    "listingCount": 2,
+    "listingCount": 3,
     "platforms": [
-      "BigBasket",
-      "OneIndia"
+      "BigBasket"
     ],
     "outOfStock": false,
     "confirmed": false,
     "checkNotes": [
-      "only 2 listings back the range (need 3)"
+      "only 1 platform (BigBasket) backs the range"
     ]
   },
   "per100Estimate": {
-    "min": 13.5,
-    "max": 16,
-    "avg": 15
+    "min": 8.5,
+    "max": 11.5,
+    "avg": 10
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 72,
+      "source": "USDA FDC: USDA FDC 170499 'Shallots, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "proteinG": {
+      "value": 2.5,
+      "source": "USDA FDC: USDA FDC 170499 'Shallots, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "carbsG": {
+      "value": 16.8,
+      "source": "USDA FDC: USDA FDC 170499 'Shallots, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sugarsG": {
+      "value": 7.9,
+      "source": "USDA FDC: USDA FDC 170499 'Shallots, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "fatG": {
+      "value": 0.1,
+      "source": "USDA FDC: USDA FDC 170499 'Shallots, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 3.2,
+      "source": "USDA FDC: USDA FDC 170499 'Shallots, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sodiumMg": {
+      "value": 12,
+      "source": "USDA FDC: USDA FDC 170499 'Shallots, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "ironMg": {
+      "value": 1.2,
+      "source": "USDA FDC: USDA FDC 170499 'Shallots, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "calciumMg": {
+      "value": 37,
+      "source": "USDA FDC: USDA FDC 170499 'Shallots, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "potassiumMg": {
+      "value": 334,
+      "source": "USDA FDC: USDA FDC 170499 'Shallots, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "magnesiumMg": {
+      "value": 21,
+      "source": "USDA FDC: USDA FDC 170499 'Shallots, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "zincMg": {
+      "value": 0.4,
+      "source": "USDA FDC: USDA FDC 170499 'Shallots, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminCMg": {
+      "value": 8,
+      "source": "USDA FDC: USDA FDC 170499 'Shallots, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminAUgRae": {
+      "value": 4,
+      "source": "USDA FDC: USDA FDC 170499 'Shallots, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "folateUgDfe": {
+      "value": 34,
+      "source": "USDA FDC: USDA FDC 170499 'Shallots, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "waterG": {
+      "value": 79.8,
+      "source": "USDA FDC: USDA FDC 170499 'Shallots, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 170499 'Shallots, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": 60,
+      "source": "USDA FDC: USDA FDC 170499 'Shallots, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": 0.29,
+      "source": "USDA FDC: USDA FDC 170499 'Shallots, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": 0.345,
+      "source": "USDA FDC: USDA FDC 170499 'Shallots, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 170499 'Shallots, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    }
+  },
   "macrosPer100Estimate": {
     "kcal": 72,
     "proteinG": 2.5,
@@ -54,37 +243,49 @@
     "fatG": 0.1,
     "fibreG": 3.2
   },
-  "storage": "Whole: room temperature in a basket or mesh bag, away from potatoes and sunlight, for 3–4 weeks. Peeled: airtight box in the fridge for 4–5 days.",
-  "looksLike": "Small, grape-to-walnut-sized onions with reddish-purple papery skin, often in clusters of two or three bulbs; pink-purple inside.",
-  "howToPick": null,
-  "shelfLife": "3–4 weeks in a cool, dry, airy place; peeled shallots 4–5 days in the fridge.",
+  "storage": "Keep whole bulbs in a cool, dry, ventilated basket away from potatoes; keep peeled shallots in a closed box in the fridge for 3 to 4 days.",
+  "looksLike": "Small, round to oval onions about 2 to 4 cm across with a reddish-purple, papery skin and a pink-purple flesh; they grow in clusters. Sold as \"sambar onion\", \"small onion\" or \"Madras onion\".",
+  "howToPick": "Hard, plump bulbs with dry, shiny skin and no sprouting. Avoid soft spots, mould or a damp smell.",
+  "shelfLife": "Several weeks in a cool, dry, airy place; peeled ones only a few days in the fridge (general guidance, not from a source in this run).",
   "substitutes": [
     "Red onion (big)",
     "Pearl onions",
-    "Spring onion whites"
+    "Spring onion whites",
+    "Regular red onion (kanda)",
+    "Spring onion bulbs or white onion"
   ],
   "usedIn": [
     {
-      "dishNumber": 9,
+      "dishNumber": 103,
       "quantity": 25,
       "unit": "g",
-      "raw": "25 g (4–5 small, peeled)"
+      "raw": "25 g per serving (3 to 4 peeled)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-05",
       "file": "FitPlate_Ingredients_2026-10-05.md"
+    },
+    {
+      "date": "2026-10-29",
+      "file": "FitPlate_Ingredients_2026-10-29.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (spike-blend)",
     "macrosPer100Estimate": "stable (single)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: possible-spike",
+    "price flag: narrowed",
+    "Possible spike: latest avg 50 (2026-10-29) moved more than 35% from the previous estimate; using the halfway point.",
+    "Range 80.0–127.5 was wider than 30% of avg 100.0; narrowed to ±15%."
+  ]
 }

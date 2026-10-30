@@ -15,37 +15,226 @@
         "avg": 75,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-05.md"
+      },
+      {
+        "date": "2026-10-29",
+        "min": 40,
+        "max": 180,
+        "avg": 90,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
       }
     ],
     "currentEstimate": {
-      "min": 70,
-      "max": 75,
-      "avg": 75
+      "min": 74,
+      "max": 100,
+      "avg": 87
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-05",
+    "lastObserved": "2026-10-29",
     "stale": false,
     "seasonal": false,
-    "listingCount": 2,
+    "listingCount": 6,
     "platforms": [
       "BigBasket",
-      "OneIndia"
+      "Blinkit",
+      "Swiggy Instamart"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 2 listings back the range (need 3)"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 7,
-    "max": 7.5,
-    "avg": 7.5
+    "min": 7.4,
+    "max": 10,
+    "avg": 8.7
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 20,
+      "source": "USDA FDC: USDA FDC 170427 'Peppers, sweet, green, raw' (SR Legacy); values mixed from several secondary sites that mirror it and disagree on iron, folate, vitamin C and vitamin A; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "proteinG": {
+      "value": 0.9,
+      "source": "USDA FDC: USDA FDC 170427 'Peppers, sweet, green, raw' (SR Legacy); values mixed from several secondary sites that mirror it and disagree on iron, folate, vitamin C and vitamin A; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "carbsG": {
+      "value": 4.6,
+      "source": "USDA FDC: USDA FDC 170427 'Peppers, sweet, green, raw' (SR Legacy); values mixed from several secondary sites that mirror it and disagree on iron, folate, vitamin C and vitamin A; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "sugarsG": {
+      "value": 2.4,
+      "source": "USDA FDC: USDA FDC 170427 'Peppers, sweet, green, raw' (SR Legacy); values mixed from several secondary sites that mirror it and disagree on iron, folate, vitamin C and vitamin A; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "fatG": {
+      "value": 0.2,
+      "source": "USDA FDC: USDA FDC 170427 'Peppers, sweet, green, raw' (SR Legacy); values mixed from several secondary sites that mirror it and disagree on iron, folate, vitamin C and vitamin A; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 1.7,
+      "source": "USDA FDC: USDA FDC 170427 'Peppers, sweet, green, raw' (SR Legacy); values mixed from several secondary sites that mirror it and disagree on iron, folate, vitamin C and vitamin A; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "sodiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "ironMg": {
+      "value": 0.34,
+      "source": "USDA FDC: USDA FDC 170427 'Peppers, sweet, green, raw' (SR Legacy); values mixed from several secondary sites that mirror it and disagree on iron, folate, vitamin C and vitamin A; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "calciumMg": {
+      "value": 10,
+      "source": "USDA FDC: USDA FDC 170427 'Peppers, sweet, green, raw' (SR Legacy); values mixed from several secondary sites that mirror it and disagree on iron, folate, vitamin C and vitamin A; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "potassiumMg": {
+      "value": 163,
+      "source": "USDA FDC: USDA FDC 170427 'Peppers, sweet, green, raw' (SR Legacy); values mixed from several secondary sites that mirror it and disagree on iron, folate, vitamin C and vitamin A; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "magnesiumMg": {
+      "value": 10,
+      "source": "USDA FDC: USDA FDC 170427 'Peppers, sweet, green, raw' (SR Legacy); values mixed from several secondary sites that mirror it and disagree on iron, folate, vitamin C and vitamin A; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "zincMg": {
+      "value": 0.13,
+      "source": "USDA FDC: USDA FDC 170427 'Peppers, sweet, green, raw' (SR Legacy); values mixed from several secondary sites that mirror it and disagree on iron, folate, vitamin C and vitamin A; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "vitaminCMg": {
+      "value": 99.5,
+      "source": "USDA FDC: USDA FDC 170427 'Peppers, sweet, green, raw' (SR Legacy); values mixed from several secondary sites that mirror it and disagree on iron, folate, vitamin C and vitamin A; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": 10,
+      "source": "USDA FDC: USDA FDC 170427 'Peppers, sweet, green, raw' (SR Legacy); values mixed from several secondary sites that mirror it and disagree on iron, folate, vitamin C and vitamin A; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 170427 'Peppers, sweet, green, raw' (SR Legacy); values mixed from several secondary sites that mirror it and disagree on iron, folate, vitamin C and vitamin A; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": 20,
+      "source": "USDA FDC: USDA FDC 170427 'Peppers, sweet, green, raw' (SR Legacy); values mixed from several secondary sites that mirror it and disagree on iron, folate, vitamin C and vitamin A; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": 7.4,
+      "source": "USDA FDC: USDA FDC 170427 'Peppers, sweet, green, raw' (SR Legacy); values mixed from several secondary sites that mirror it and disagree on iron, folate, vitamin C and vitamin A; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": 0.22,
+      "source": "USDA FDC: USDA FDC 170427 'Peppers, sweet, green, raw' (SR Legacy); values mixed from several secondary sites that mirror it and disagree on iron, folate, vitamin C and vitamin A; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 170427 'Peppers, sweet, green, raw' (SR Legacy); values mixed from several secondary sites that mirror it and disagree on iron, folate, vitamin C and vitamin A; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    }
+  },
   "macrosPer100Estimate": {
     "kcal": 20,
     "proteinG": 0.9,
@@ -53,37 +242,53 @@
     "fatG": 0.2,
     "fibreG": 1.7
   },
-  "storage": "Whole: unwashed, in a paper or perforated bag in the fridge crisper for 5–7 days. Cut: airtight box in the fridge for 2–3 days. Diced capsicum can be frozen raw for cooking (loses crunch).",
-  "looksLike": "Glossy, bright green, bell-shaped pepper with three or four lobes, hollow inside with white seeds and ribs. About 100–150 g each.",
-  "howToPick": null,
-  "shelfLife": "About 1 week in the fridge; 2–3 days at room temperature.",
+  "storage": "Keep unwashed in the fridge vegetable drawer in a loose bag; cut pieces keep 2 to 3 days in a closed box.",
+  "looksLike": "A glossy, hollow, blocky green pepper with 3 to 4 lobes, mild and slightly bitter-sweet, with no heat.",
+  "howToPick": "Firm, glossy, heavy for its size with a fresh green stem. Avoid wrinkled skin, soft sunken spots or a dried stem.",
+  "shelfLife": "About 1 week in the fridge (general guidance; not from a source in this run).",
   "substitutes": [
     "Red or yellow capsicum",
     "Zucchini or extra French beans",
-    "Green chilli (small amount)"
+    "Green chilli (small amount)",
+    "Mild green chillies (a little)",
+    "Skip it"
   ],
   "usedIn": [
     {
-      "dishNumber": 10,
+      "dishNumber": 87,
+      "quantity": 40,
+      "unit": "g",
+      "raw": "40 g per serving (¼ medium capsicum, cubed)"
+    },
+    {
+      "dishNumber": 89,
       "quantity": 25,
       "unit": "g",
-      "raw": "25 g (¼ medium capsicum, finely diced)"
+      "raw": "25 g per serving (¼ medium, small pieces)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-05",
       "file": "FitPlate_Ingredients_2026-10-05.md"
+    },
+    {
+      "date": "2026-10-29",
+      "file": "FitPlate_Ingredients_2026-10-29.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 46.7–156.6 was wider than 30% of avg 86.7; narrowed to ±15%."
+  ]
 }

@@ -1,0 +1,779 @@
+{
+  "id": "barbell-deadlift",
+  "number": 16,
+  "name": "Barbell deadlift",
+  "otherNames": [
+    "Deadlift",
+    "Conventional deadlift",
+    "Sumo deadlift (variant)",
+    "Romanian deadlift (variant)",
+    "Trap-bar / hex-bar deadlift (variant)"
+  ],
+  "section": "gym",
+  "type": "strength",
+  "equipment": [
+    "Olympic barbell",
+    "weight plates",
+    "collars",
+    "flat floor or lifting platform",
+    "optional lifting belt, chalk, straps, blocks"
+  ],
+  "noEquipmentAlternative": "Hip hinge practice with no weight and glute bridge (Home 4); dumbbell Romanian deadlift (Home 16) with weights",
+  "musclesPrimary": [
+    "hamstrings (biceps femoris, semitendinosus, semimembranosus)",
+    "gluteus maximus",
+    "erector spinae"
+  ],
+  "musclesSecondary": [
+    "quadriceps",
+    "adductor magnus",
+    "latissimus dorsi",
+    "trapezius",
+    "forearm grip muscles",
+    "trunk stabilisers"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": false,
+  "met": 3.5,
+  "compendiumCode": null,
+  "metOptions": [
+    {
+      "code": "02052",
+      "met": 5,
+      "activity": "Extras (text only, harder work): 02052, 5.0 METs, \"resistance (weight) training, squats, deadlift, slow or explosive effort\" (the Compendium code that names the deadlift, used for hard sets), and 0205"
+    },
+    {
+      "code": "02050",
+      "met": 6,
+      "activity": "Extras (text only, harder work): 02052, 5.0 METs, \"resistance (weight) training, squats, deadlift, slow or explosive effort\" (the Compendium code that names the deadlift, used for hard sets), and 0205"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 2,
+      "reps": "8-10 at RIR 3-4",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "2 s lower, 1 s floor reset, 2 s lift",
+      "perWeek": 1
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 2,
+      "reps": "8-10 at RIR 3-4 (as one station in a full-body session)",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "2 s lower, 1 s floor reset, 2 s lift",
+      "perWeek": 1
+    },
+    {
+      "level": "beginner",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "8-10 at RIR 3",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "3 s lower, 1 s floor reset, 2 s lift",
+      "perWeek": 1
+    },
+    {
+      "level": "beginner",
+      "goal": "strength",
+      "sets": 3,
+      "reps": "5 at RIR 3-4",
+      "timeSec": null,
+      "restSec": 120,
+      "tempo": "2 s lower, 1 s floor reset, 2 s lift",
+      "perWeek": 1
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 2,
+      "reps": "12 at RIR 4 (light)",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "2 s lower, 1 s floor reset, 2 s lift",
+      "perWeek": 1
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "8 at RIR 2-3",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "2 s lower, 1 s floor reset, 2 s lift",
+      "perWeek": 1
+    },
+    {
+      "level": "intermediate",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "6-10 at RIR 2",
+      "timeSec": null,
+      "restSec": 120,
+      "tempo": "3 s lower, 1 s floor reset, 2 s lift",
+      "perWeek": 1
+    },
+    {
+      "level": "intermediate",
+      "goal": "strength",
+      "sets": 4,
+      "reps": "3-5 at RIR 2",
+      "timeSec": null,
+      "restSec": 180,
+      "tempo": "2 s lower, 1 s floor reset, 1 s lift",
+      "perWeek": 1
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "12-15 at RIR 3",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "2 s lower, 1 s floor reset, 2 s lift",
+      "perWeek": 1
+    },
+    {
+      "level": "advanced",
+      "goal": "general_fitness",
+      "sets": 4,
+      "reps": "6-8 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 120,
+      "tempo": "2 s lower, 1 s floor reset, 2 s lift",
+      "perWeek": 1
+    },
+    {
+      "level": "advanced",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "5-8 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 150,
+      "tempo": "3 s lower, 1 s floor reset, 2 s lift",
+      "perWeek": 1
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": 5,
+      "reps": "1-5 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 240,
+      "tempo": "2 s lower, 1 s floor reset, 1 s lift",
+      "perWeek": 1
+    },
+    {
+      "level": "advanced",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "15 at RIR 2-3",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "2 s lower, 1 s floor reset, 2 s lift",
+      "perWeek": 1
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle",
+      "left_heel",
+      "right_heel",
+      "left_foot_index",
+      "right_foot_index"
+    ],
+    "phases": [
+      {
+        "name": "top_hip",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": ">= 165",
+        "parsed": {
+          "op": ">=",
+          "value": 165,
+          "max": null
+        }
+      },
+      {
+        "name": "top_knee",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": ">= 165",
+        "parsed": {
+          "op": ">=",
+          "value": 165,
+          "max": null
+        }
+      },
+      {
+        "name": "bottom_hip",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": "<= 110",
+        "parsed": {
+          "op": "<=",
+          "value": 110,
+          "max": null
+        }
+      },
+      {
+        "name": "bottom_knee",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": "<= 140",
+        "parsed": {
+          "op": "<=",
+          "value": 140,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 4
+  },
+  "formChecks": [
+    {
+      "joint": "hip",
+      "rule": "top hip angle < 165 degrees (equals top_hip phase threshold; rep not counted)",
+      "message": "Stand tall: finish with your hips"
+    },
+    {
+      "joint": "knee",
+      "rule": "top knee angle < 165 degrees (equals top_knee phase threshold; rep not counted)",
+      "message": "Straighten your knees at the top"
+    },
+    {
+      "joint": "hip",
+      "rule": "bottom hip angle > 110 degrees (equals bottom_hip phase threshold; rep not counted)",
+      "message": "Hinge a bit more: bar to the floor"
+    },
+    {
+      "joint": "knee",
+      "rule": "bottom knee angle > 140 degrees (equals bottom_knee phase threshold; rep not counted)",
+      "message": "Bend your knees to reach the bar"
+    },
+    {
+      "joint": "spine",
+      "rule": "separate flag: shoulder landmark behind the hip line at the top by a set margin (no angle)",
+      "message": "Don't lean back at the top"
+    },
+    {
+      "joint": "spine",
+      "rule": "separate flag: shoulder-hip-neck line bows away from straight by a set margin (no angle; coarse)",
+      "message": "Keep your back flat"
+    },
+    {
+      "joint": "hip",
+      "rule": "separate flag: hip height rises faster than shoulder height off the floor (no angle)",
+      "message": "Hips and chest rise together"
+    },
+    {
+      "joint": "wrist",
+      "rule": "separate flag: wrist or bar-line x-position moves ahead of the mid-foot line by a set margin",
+      "message": "Keep the bar close to your legs"
+    },
+    {
+      "joint": "knee",
+      "rule": "rep duration < 4 s or lowering < 2 s",
+      "message": "Slow down: lower under control"
+    }
+  ],
+  "safetyFlags": [
+    "start_with_empty_bar_or_light_plates_at_standard_height",
+    "check_with_trainer_for_form_before_adding_weight",
+    "keep_back_neutral_stop_if_rounding",
+    "lower_under_control_do_not_drop",
+    "load_plates_evenly_and_use_collars",
+    "lifting_belt_optional_not_for_beginners",
+    "high_blood_pressure_breathe_out_no_failure_sets",
+    "resting_bp_180_120_do_not_lift",
+    "lower_back_pain_get_advice_first",
+    "disc_or_nerve_symptoms_stop_and_see_doctor",
+    "osteoporosis_ask_doctor_first",
+    "pregnancy_ask_obstetrician",
+    "hernia_or_recent_surgery_follow_surgeon_limits",
+    "no_spotter_needed_form_check_advised",
+    "check_gym_rules_on_dropping_and_chalk"
+  ],
+  "progressions": [
+    "more weight or sets (double progression)",
+    "slower lowering with a 1-2 s pause just off the floor",
+    "hook or mixed grip for heavier loads",
+    "deficit or single-leg variations (advanced, with coaching)"
+  ],
+  "regressions": [
+    "hip hinge practice with no weight and glute bridge (Home 4)",
+    "rack pull or deadlift from blocks with light weight",
+    "dumbbell Romanian deadlift (Home 16) or trap-bar deadlift"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "three-quarter front, 3 m",
+      "shows": "empty bar, plates loaded evenly, collars on, bar on the floor or blocks",
+      "textOverlay": "Even plates, collars on"
+    },
+    {
+      "seconds": 6,
+      "angle": "side, floor level, 1.5 m",
+      "shows": "bar over mid-foot, shins an inch away",
+      "textOverlay": "Bar over mid-foot"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, hip height, 3 m",
+      "shows": "hinge down, grip, shins touch the bar, chest up",
+      "textOverlay": "Hips back, shins to bar"
+    },
+    {
+      "seconds": 6,
+      "angle": "front close-up, 1.5 m",
+      "shows": "double overhand, hook and mixed grips",
+      "textOverlay": "Start with double overhand"
+    },
+    {
+      "seconds": 10,
+      "angle": "side, hip height, 3 m",
+      "shows": "full rep: lats on, brace, push the floor away, stand tall, lower under control",
+      "textOverlay": "Push the floor - Stand tall - Lower with control"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 3 m",
+      "shows": "bar close to legs in a vertical line vs drifting forward",
+      "textOverlay": "Keep the bar close"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 3 m",
+      "shows": "flat back vs rounding and hips shooting up first",
+      "textOverlay": "Flat back, hips and chest together"
+    },
+    {
+      "seconds": 6,
+      "angle": "side, 2 m",
+      "shows": "standing tall with no lean-back; hips back first, bar sliding down thighs, plates set down gently",
+      "textOverlay": "Tall at the top, set it down gently"
+    }
+  ],
+  "lastResearched": "2026-10-30",
+  "setupSteps": [
+    "Pick your area and check the floor. Use a flat, non-slip area clear of bags, dumbbells and people. Confirm what your gym allows: many Indian gyms do not allow dropping weights, so plan to lower the bar under control every rep.",
+    "Choose the bar and plates. An Olympic men's bar is usually 20 kg and 2.2 m long (est.; check the label, women's bars and some gym bars differ). Standard bumper plates are 450 mm across at every weight; iron plates shrink as the weight falls, so a light iron plate puts the bar lower than a heavy one and makes the start harder (Bells of Steel; Liftbigeatbig). Beginners often feel the pull is easier and safer from the standard height. If the plates are small, raise the bar to the standard height on blocks, or set it in a rack or on safety pins at that height (Starting Strength advice).",
+    "Load evenly. Same plates on both sides, pushed fully on, with the bar level when you look from the end. Fit the collars or clips on both sides, even for light sets. Plates sliding on one side can tip the bar.",
+    "Start with the empty bar or light plates. The empty bar (20 kg, est.) is enough for the first sessions while you learn the position. Build up slowly (Gym 4).",
+    "Shoes. Flat, firm-soled shoes or bare feet where allowed. Thick cushioned running shoes make you less stable. No sliders or sandals.",
+    "Belt (optional). A lifting belt is not needed for light technique work. See the belt note under Safety.",
+    "Stand with the bar over your mid-foot. Feet about hip-width apart (about the width of your pelvis, est.), toes straight or turned out slightly. The bar should be over the middle of your foot, about over the shoelaces, about an inch from your shins (Starting Strength). If you look down, you should not see the laces' knot hiding under the bar (coaching advice).",
+    "Hinge and grip. Push your hips back and bend down while keeping the back flat, until you can reach the bar. Your hands should be just outside your legs, so your arms hang straight down.",
+    "Double overhand (both palms toward you). The starting grip for beginners and for lighter sets. It keeps the shoulders even (coaching sources).",
+    "Hook grip. Same overhand grip, but the thumbs go under the fingers. It can let you hold heavier loads and is common in Olympic lifting; it can hurt the thumbs at first (coaching sources). Learn it after double overhand.",
+    "Mixed grip (one palm toward you, one away). Most common in powerlifting for heavy sets because it stops the bar rolling. The downside is that the arm with the palm turned away (supinated) is placed so its biceps tendon is more exposed to strain, and the shoulders get uneven (coaching sources). Switch your hands from set to set if you use it, and use only after the double overhand grip is the limit.",
+    "Straps are an extra tool, used after your grip runs out on heavier sets; do not use them to hide poor grip on every set.",
+    "Drop the hips only as far as needed. Bend your knees until your shins touch the bar. Do not drop the hips lower or the shins will push the bar ahead of your mid-foot (Starting Strength).",
+    "Chest up, neck neutral. Look at a spot on the floor about 2 m in front (est.).",
+    "Engage the lats. Imagine squeezing oranges in your armpits or bending the bar around your shins. Your lats hold the bar close and your arms stay straight (Starting Strength; coaching sources).",
+    "Brace. Take a breath into your belly and tighten your stomach as if bracing for a light punch, before the bar leaves the floor."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Walk up to the bar",
+      "action": "Stand with the bar over your mid-foot, feet hip-width apart.",
+      "feel": "Weight spread across the whole foot.",
+      "breathing": "Normal breathing.",
+      "tempo": null,
+      "visualCheck": "Side: bar over the middle of the foot. Front: feet even, toes straight or slightly out."
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Hinge and grip the bar",
+      "action": "Push your hips back and bend down with a flat back, then grab the bar just outside your legs.",
+      "feel": "Stretch in the back of the thighs; weight stays in the whole foot, not on the toes.",
+      "breathing": "Breathe out gently as you go down.",
+      "tempo": null,
+      "visualCheck": "Side: back flat, not rounded; arms straight and hanging under the shoulders. Front: hands even and just outside the legs."
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Bring the shins to the bar",
+      "action": "Bend the knees until the shins touch the bar. Do not move the bar.",
+      "feel": "Shins touch the bar lightly; hamstrings stretched.",
+      "breathing": "Normal.",
+      "tempo": null,
+      "visualCheck": "Side: shins slightly forward, shoulders slightly in front of the bar, bar still over mid-foot. Front: knees tracking out over the toes."
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Chest up and lats on",
+      "action": "Lift your chest, pull your shoulder blades gently down, and squeeze the bar into your legs with your lats.",
+      "feel": "Tension under the armpits and across the upper back; slack taken out of the bar.",
+      "breathing": "Breathe in as you take up the slack.",
+      "tempo": null,
+      "visualCheck": "Side: spine neutral from head to tailbone; arms straight. Front: shoulders even, not shrugged."
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Brace",
+      "action": "Fill your belly with air and tighten your midsection before you pull.",
+      "feel": "A firm, wide trunk; lower back not arched hard.",
+      "breathing": "Hold the breath briefly (a short brace) or take a deep breath and keep tension.",
+      "tempo": null,
+      "visualCheck": "Side: ribs stacked over the hips, not flared; back still flat."
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Push the floor away",
+      "action": "Push your feet into the floor and straighten the knees and hips together so the bar rises straight up.",
+      "feel": "Legs pushing; bar brushing the shins; back staying in position.",
+      "breathing": "Keep the brace; start breathing out slowly as the bar passes the knees.",
+      "tempo": null,
+      "visualCheck": "Side: bar travels in a straight vertical line close to the legs; hips and shoulders rise together. Front: knees out, not caving."
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Pass the knees and finish",
+      "action": "As the bar passes the knees, push the hips forward, squeeze the buttocks and stand tall.",
+      "feel": "Buttocks squeezing; back long and steady, not bent backwards.",
+      "breathing": "Finish breathing out.",
+      "tempo": null,
+      "visualCheck": "Side: standing straight, shoulders over the hips, ribs down, no backward lean. Front: hips and shoulders level, bar resting on the thighs."
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Pause briefly at the top",
+      "action": "Stand tall for a moment with the bar against your thighs.",
+      "feel": "Tall and steady; knees straight but not forced back.",
+      "breathing": "Quick breath in.",
+      "tempo": null,
+      "visualCheck": "Side: head, shoulders, hips in one line."
+    },
+    {
+      "n": 9,
+      "part": null,
+      "title": "Lower the bar",
+      "action": "Push the hips back first, keeping the bar against the thighs, and bend the knees only once the bar passes them.",
+      "feel": "Hamstrings stretching; bar sliding down the thighs.",
+      "breathing": "Breathe in as you lower.",
+      "tempo": null,
+      "visualCheck": "Side: back flat; bar close to the legs in a straight line. Front: knees tracking out."
+    },
+    {
+      "n": 10,
+      "part": null,
+      "title": "Set it down under control",
+      "action": "Place the plates on the floor; do not drop them. Let go only when the plates are resting.",
+      "feel": "Controlled, steady lowering.",
+      "breathing": "Reset the breath before the next rep.",
+      "tempo": null,
+      "visualCheck": "Bar rests on the floor; plates even."
+    },
+    {
+      "n": 11,
+      "part": null,
+      "title": "Repeat or finish the set",
+      "action": "Reset the setup (steps 2-5) for each rep when the bar rests on the floor. After the last rep, stand and step back, then unload the bar.",
+      "feel": "Legs and back tired but steady; no sharp pain.",
+      "breathing": "Normal.",
+      "tempo": null,
+      "visualCheck": "Bar rests flat; plates and collars even."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Rounding the lower back",
+      "text": "Rounding the lower back. Why: the most common beginner error and it adds disc stress when loaded. Fix: lower the weight, brace, hinge from the hips and stop the set when the back starts to round."
+    },
+    {
+      "title": "Bar too far from the legs, or drifting forward",
+      "text": "Bar too far from the legs, or drifting forward. Why: lengthens the lever on the lower back, so the lift gets harder and riskier. Fix: bar over mid-foot, lats on, bar brushes the shins and thighs."
+    },
+    {
+      "title": "Hips too low at the start (\"squatting the deadlift\")",
+      "text": "Hips too low at the start (\"squatting the deadlift\"). Why: shins push the bar forward of mid-foot (Starting Strength). Fix: keep hips higher; set the shins against the bar and stop there."
+    },
+    {
+      "title": "Hips rising before the shoulders",
+      "text": "Hips rising before the shoulders. Why: turns it into a stiff-leg \"good-morning\" pull and puts the stress on the low back. Fix: lighter weight, push the floor away, keep the chest up as the bar leaves the floor."
+    },
+    {
+      "title": "Jerking the bar off the floor",
+      "text": "Jerking the bar off the floor. Why: yanks the back and loses tension. Fix: take the slack out of the bar first, then push the floor away smoothly."
+    },
+    {
+      "title": "Hyperextending at the top",
+      "text": "Hyperextending at the top. Why: leaning back past upright squeezes the lower back, not the glutes. Fix: stand tall, squeeze the glutes, ribs down."
+    },
+    {
+      "title": "Dropping the bar after the lift",
+      "text": "Dropping the bar after the lift. Why: damages the floor, plates and bar, and is banned in most Indian gyms outside a platform. Fix: lower it with control. Bumper plates are made to be dropped from a platform; iron plates are not (Verve Fitness; Catalyst Athletics)."
+    },
+    {
+      "title": "Looking up into the mirror",
+      "text": "Looking up into the mirror. Why: bends the neck back and spoils the line. Fix: pick a spot on the floor."
+    },
+    {
+      "title": "Going too heavy too soon",
+      "text": "Going too heavy too soon. Why: form fails first and the bar rounds the back. Fix: build up slowly with the double progression in Gym 3 and Gym 4."
+    },
+    {
+      "title": "Turning it into a pull with the arms",
+      "text": "Turning it into a pull with the arms. Why: bent elbows cost you tension and can strain the biceps, especially with a mixed grip. Fix: arms straight, lats tight."
+    }
+  ],
+  "safetyNotes": [
+    "Lower back pain or a past disc problem: the deadlift loads the back directly. Evidence on deadlifts for low back pain is mixed (one trial found benefit for some people with recurrent pain; a pilot found none). Get advice first, use light loads or a regression (rack pull, trap bar, RDL with dumbbells), and stop if pain spreads down the leg or gets worse.",
+    "Uncontrolled high blood pressure, heart disease, stroke history, aneurysm: heavy lifting with straining can spike blood pressure (MacDougall et al. 1985). Breathe out on the effort, avoid sets to failure, and get clearance. Do not lift if resting BP is 180/120 mmHg or higher; get clearance at 140-179/90-119 (secondary ACSM-aligned sources).",
+    "Osteoporosis, especially with a spine fracture: supervised programmes like LIFTMOR used deadlifts, but they were done under qualified supervision with progressive loading; see a doctor or physiotherapist before starting.",
+    "Pregnancy: ACOG's own text on heavy deadlifts was not reached; a 2025 BJSM study in experienced lifters found fetal heart rate did not change after sets at 70-90% of 10-rep max, even with Valsalva, but it excluded beginners. Ask your obstetrician.",
+    "Hernia, recent abdominal or pelvic surgery, diastasis recti: straining and bracing raise abdominal pressure; follow your surgeon's limits.",
+    "Wrist, elbow or shoulder injuries: heavy gripping and the hanging load can aggravate them; use lighter weight or the trap bar.",
+    "Tall or short users: if you cannot reach the bar with a flat back, raise the bar on blocks or plates.",
+    "Bumper plates (rubber, 450 mm at every weight, made to be dropped from a platform) vs iron plates (thinner, smaller at light weights, not made to be dropped). Bumpers keep the bar at the same height at every load; light iron plates leave the bar lower, so raise the bar to standard height with blocks or a rack when you use small plates.",
+    "Do not drop the bar on a floor or platform that forbids it; lower every rep under control. Never drop an empty bar on a platform, never drop loaded plates on gym equipment or racks, and let a loaded bar land only once and level on bumper plates if your gym allows platform drops (Catalyst Athletics; Youfit; Rep Fitness; GVSU rules).",
+    "Use collars on both sides, strip the bar after use, and return plates to the rack.",
+    "Keep clear of other people's lanes; do not film strangers; ask before using chalk."
+  ],
+  "sources": [
+    "Starting Strength, deadlift setup articles (bar over mid-foot, shins touch bar, hips-too-low error, lats). https://startingstrength.com/training/the-primary-start-position-error-in-the-deadlift ; https://startingstrength.com/training/common-deadlift-error-hips-too-low-and-the-bar-forward ; https://startingstrength.com/training/lats-in-the-deadlift",
+    "RitFit Sports, How to deadlift instructions (setup and cues; seen via search summary). https://www.ritfitsports.com/blogs/article/how-to-deadlift-instructions",
+    "Bodybuilding.com, Mastering deadlift form: essential techniques and cues. https://bodybuilding.com/content/mastering-deadlift-form-essential-techniques-and-cues.html",
+    "ExRx.net, Barbell Straight-back Straight-leg Deadlift (related exercise page; the conventional deadlift page itself was not reached). https://exrx.net/WeightExercises/Hamstrings/BBStrBackStrLegDeadlift",
+    "StrengthLog, How to grip the bar when deadlifting. https://www.strengthlog.com/how-to-grip-the-bar-when-deadlifting/",
+    "Starting Strength, deadlift grip adjustments; CrossFit, mixed grip deadlift; Powerlifting Technique, deadlift grip. https://startingstrength.com/training/deadlift-grip-adjustments ; https://crossfit.com/pro-coach/ask-a-coach-crossfit-mixed-grip-deadlift ; https://powerliftingtechnique.com/how-to-maximize-your-deadlift-grip/",
+    "Powerlifting Technique, Deadlift bar path and lockout. https://powerliftingtechnique.com/deadlift-bar-path/ ; https://powerliftingtechnique.com/improve-your-deadlift-lockout/",
+    "Invictus (CrossFit), The finish of a deadlift. https://www.crossfitinvictus.com/competitors/blog/the-finish-of-a-deadlift/",
+    "Escamilla RF et al., An electromyographic analysis of sumo and conventional style deadlifts (via summary). https://pubmed.ncbi.nlm.nih.gov/11932579/",
+    "Taylor's Strength, The deadlift: a biomechanical assessment. https://www.taylorsstrength.co.uk/the-deadlift-a-bio-mechanical-assessment/",
+    "Swinton PA et al. (2011), straight vs hexagonal bar deadlift (via Stronger by Science and RGU repository summaries). https://www.strongerbyscience.com/trap-bar-deadlift/ ; https://rgu-repository.worktribe.com/OutputFile/295851",
+    "Hex-bar deadlift knee-angle study (via search summary). https://pmc.ncbi.nlm.nih.gov/articles/PMC9022700",
+    "Harman EA et al. (1989), Effects of a belt on intra-abdominal pressure during weight lifting. https://pubmed.ncbi.nlm.nih.gov/2709981/",
+    "BackFit Pro, On the use of weight belts (summarises Hunter et al. 1989 and Nachemson 1986). https://www.backfitpro.com/use-weight-belts/",
+    "Barbell Medicine, The science of weight lifting belts. https://www.barbellmedicine.com/blog/the-science-of-weight-lifting-belts/",
+    "Henselmans, Is spinal flexion actually dangerous when squatting or deadlifting? https://mennohenselmans.com/is-spinal-flexion-dangerous/",
+    "Physio-Network, Beyond the neutral spine: narrative review for low back injury prevention in deadlifting (2025). https://www.physio-network.com/research-reviews/low-back/beyond-the-neutral-spine-a-narrative-review-and-modern-framework-for-low-back-injury-prevention-in-deadlifting/",
+    "Which patients with low back pain benefit from deadlift training? (J Strength Cond Res). https://pubmed.ncbi.nlm.nih.gov/25559899/",
+    "Effects of a modified deadlift exercise program on low back pain: a pilot study (Wichita State). https://soar.wichita.edu/items/220d5575-155f-4b73-8197-6cb864faf0f7",
+    "LIFTMOR trials (bone density, heavy lifting including deadlift). https://pubmed.ncbi.nlm.nih.gov/26243363/ ; https://pubmed.ncbi.nlm.nih.gov/28975661/ ; https://pubmed.ncbi.nlm.nih.gov/32176813/",
+    "British Journal of Sports Medicine 2025, maternal and fetal responses to high-intensity resistance exercise in pregnancy (seen via summary). https://bjsm.bmj.com/content/59/3/159",
+    "Bells of Steel, Bumper vs iron vs calibrated plates; Liftbigeatbig, deadlift with bumper plates; Verve Fitness, bumper vs iron plates (450 mm diameter; dropping). https://bellsofsteel.us/blogs/content/bumper-vs-iron-vs-calibrated-plates ; https://liftbigeatbig.com/?p=8957 ; https://www.vervefitness.com.au/blogs/all/bumper-plates-vs-iron-plates-which-should-you-buy",
+    "Catalyst Athletics, Be a good gym member (etiquette); Youfit, Olympic platform etiquette; Rep Fitness, 11 rules of barbell etiquette; GVSU weight lifting center rules. https://catalystathletics.com/article/1830/Be-a-Good-Gym-Member-Safety-Respect-and-Taking-Care-of-Equip/ ; https://youfit.com/blog/olympic-weightlifting-platform-etiquette ; https://repfitness.com/blogs/training/11-rules-of-barbell-etiquette ; https://www.gvsu.edu/cms4/asset/25EBF8C1-EC52-597D-9683FE4CFB4EB64F/weight_lifting_center_rules.pdf",
+    "Romanian deadlift vs conventional (coaching sources; knee bend about 15° figure from one summary). https://fitnessvolt.com/romanian-deadlift-vs-conventional-deadlift/ ; https://www.setforset.com/blogs/news/romanian-deadlift-vs-deadlift",
+    "Indian bumper-plate sellers (Bullrock Fitness, Jerai Home Gym): 450 mm, India delivery. https://bullrockfitness.com/product/black-rubber-bumper-plates-2-0 ; https://jeraihomegym.com/products/steel-bumper-plates",
+    "2024 Adult Compendium of Physical Activities (Herrmann et al., J Sport Health Sci 2024): codes 02054, 02052, 02050. https://pubmed.ncbi.nlm.nih.gov/38242596/ ; https://pacompendium.com/conditioning-exercise",
+    "Zourdos MC et al. (2016), RIR-based RPE scale. https://openrepository.aut.ac.nz/items/efef3b25-6701-4fb5-bb82-55fcd2a26027/full",
+    "ACSM (2009), Progression models in resistance training for healthy adults. https://www.sportgeneeskunde.com/wp-content/uploads/ACSM-Position-Stand-Progression-Models-in-Resistance-Training-for-Healthy-Adults.pdf",
+    "MacDougall JD et al. (1985), Arterial blood pressure response to heavy resistance exercise. https://pubmed.ncbi.nlm.nih.gov/3980383/",
+    "ACSM (Zaleski), exercise for hypertension. https://acsm.org/?p=18319",
+    "Colberg SR et al. (2016), ADA position statement. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/",
+    "ACC summary of the 2023 AHA statement on resistance exercise. https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2023/12/19/15/33/resistance-exercise-training",
+    "AHA Professional, physical activity for elevated BP or cholesterol (Gibbs et al.). https://professional.heart.org/en/science-news/Physical-Activity-as-a-Critical-Component-of-First-Line-Treatment-for-Elevated-BP-or-Cholesterol/commentary",
+    "Donnelly JE et al. (2009), ACSM position stand on weight loss. https://pubmed.ncbi.nlm.nih.gov/19127177/",
+    "PCOS exercise position statement / 2023 guideline evidence. https://vuir.vu.edu.au/45855/1/1-s2.0-S2772696723000054-main.pdf",
+    "Exercise in hypothyroidism, systematic review (2023). https://pubmed.ncbi.nlm.nih.gov/37999992/",
+    "Pharmacy Magazine CPD, Exercise and asthma. https://www.pharmacymagazine.co.uk/cpd-modules/making-a-difference-in-asthma-care/exercise-and-asthma-528343",
+    "Osteoporosis Canada, Too Fit To Fracture. https://osteoporosis.ca/wp-content/uploads/2014-07-25-Are-you-too-fit-to-fracture-for-patients.pdf",
+    "ACOG Committee Opinion No. 804 (abstract record). https://opqic.org/acog-committee-opinion-no-804-physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period/",
+    "NNUH NHS, Post-natal physiotherapy advice. https://www.nnuh.nhs.uk/publication/download/post-natal-physiotherapy-advice-and-exercises-v2-1",
+    "Royal Devon NHS, Postnatal physiotherapy advice. https://www.royaldevon.nhs.uk/media/ibneih1b/patient-information-leaflet-postnatal-physiotherapy-advice-rde-20-143-001.pdf",
+    "Note: most deadlift sources were seen only as search-result summaries (publisher pages were not opened in full). Not found: an NSCA or ACSM page specific to the deadlift, the ExRx conventional deadlift page, a peer-reviewed typical hip angle at the conventional start, ACOG's own text on heavy deadlifts, a deadlift-specific source for obesity, PCOS, shoulder problems or recent surgery, and the exact weight of Indian gym bars (assumed 20 kg, est.)."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 28.6,
+      "70kg": 24.5,
+      "80kg": 21.4
+    },
+    "per300kcal": {
+      "60kg": 85.7,
+      "70kg": 73.5,
+      "80kg": 64.3
+    }
+  },
+  "gymAccess": [
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "strength",
+    "beginner_with_form_check",
+    "intermediate",
+    "advanced",
+    "full_body_strength",
+    "lower_body_day",
+    "pull_day",
+    "8_to_12_min_block",
+    "25_to_60_min_sessions"
+  ],
+  "swapsByAccess": {
+    "none": "Hip hinge practice with no weight and glute bridge (Home 4)",
+    "home_equipment": "Dumbbell Romanian deadlift (Home 16)",
+    "basic_gym": "Dumbbell or barbell Romanian deadlift from a rack, or a light rack pull; leg curl (Gym 12) for the hamstrings",
+    "full_gym": "Trap-bar deadlift if available, or rack pull / barbell RDL; Smith machine RDL (Gym 14) is also possible"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "Breathe out on each lift; 10-15 reps, no failure sets, rest > 60 s; no lifting if resting BP >= 180/120; a belt may raise BP, so avoid or ask a doctor",
+      "source": "MacDougall et al. 1985; ACSM hypertension guidance (Zaleski); Hunter et al. 1989 via BackFit Pro summary"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "2-3 non-consecutive resistance days per week; usual glucose checks if on insulin or sulfonylureas; start light",
+      "source": "ADA position statement, Colberg et al. 2016"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "Only after clearance or in cardiac rehab; light load, 10-15 reps, continuous breathing, no straining or heavy singles",
+      "source": "AHA resistance exercise statements (2007, 2023)"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "Part of 2+ days/week resistance work with aerobic activity; start light",
+      "source": "AHA scientific statement (Gibbs et al.)"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Raise the bar on blocks if belly or thighs block the hinge; wider stance or trap bar may fit better; pair with aerobic work",
+      "source": "ACSM weight management position stand (Donnelly et al. 2009); deadlift-specific advice not found"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "Fits muscle-strengthening guidance; no deadlift-specific advice found",
+      "source": "International PCOS guideline 2023 / exercise position statement"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "Train normally if controlled; start at beginner level with ongoing fatigue",
+      "source": "Systematic review 2023 (PubMed 37999992)"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Warm up and keep reliever inhaler nearby",
+      "source": "Pharmacy Magazine CPD citing Asthma UK"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Use rack pull or light dumbbell RDL; trap bar raises knee load in one study; stop if the knee hurts",
+      "source": "Swinton et al. 2011 (search summary); condition-specific source not found"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Ask a clinician first; light load, hinge pattern, rack pull or dumbbell RDL; stop if pain spreads down a leg or worsens; evidence is mixed",
+      "source": "Which patients with LBP benefit from deadlift training? (PubMed 25559899); Wichita State pilot study"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "modify",
+      "change": "Lighter loads, straight arms; skip mixed grip if the shoulder hurts; use dumbbells or trap bar",
+      "source": "Not found"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "ask_doctor",
+      "change": "LIFTMOR-style programmes included deadlifts only under supervision; start with a qualified physiotherapist, especially after a spine fracture",
+      "source": "LIFTMOR trials (PubMed 26243363, 28975661, 32176813); Osteoporosis Canada Too Fit To Fracture"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "ask_doctor",
+      "change": "Ask obstetrician; if cleared, light load, no breath-holding, stop for dizziness, bleeding or cramps; do not lie flat",
+      "source": "BJSM 2025 study (experienced lifters); ACOG Committee Opinion 804 (secondary citations)"
+    },
+    {
+      "condition": "postpartum",
+      "status": "modify",
+      "change": "Pelvic floor work first; return to loaded hinging once cleared, especially after caesarean; light loads",
+      "source": "NHS postnatal physiotherapy leaflets (NNUH, Royal Devon)"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Only with surgeon or physiotherapist approval; abdominal, hernia, back, hip or knee surgery usually restricts lifting from the floor",
+      "source": "General clearance advice; condition-specific source not found"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "gym"
+    ],
+    "bodyRegion": [
+      "lower",
+      "full_body"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "fat_loss",
+      "muscle",
+      "strength",
+      "endurance"
+    ],
+    "intensity": "moderate",
+    "noise": "moderate",
+    "space": "large_area",
+    "typicalMinutes": 10,
+    "kcalPer10min70kg": 41,
+    "difficulty1to5": 4,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Gym",
+    "Beginner",
+    "Low impact",
+    "Strength",
+    "Legs",
+    "Glutes",
+    "Back",
+    "Rep counter",
+    "10–20 min"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-10-30",
+      "file": "FitPlate_Fitness_2026-10-30.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

@@ -134,6 +134,21 @@ describe('createUserSession', () => {
     expect(toView(await loadDocs(data.repos)).days[k].meals).toHaveLength(1);
   });
 
+  it('edits a logged meal in place and deletes it, on screen at once and on the device', async () => {
+    const { data, session, view } = guestSession();
+    session.addMeal(meal);
+    const k = dateKeyOf(fakeClock().now());
+    const id = view().days[k].meals[0].id!;
+    session.updateMeal(id, { kcal: 400, proteinG: 18, servings: 2 });
+    expect(view().days[k].meals).toEqual([expect.objectContaining({ id, kcal: 400, protein: 18, servings: 2 })]);
+    await session.idle();
+    expect(await data.repos.mealLogs.get(id)).toEqual(expect.objectContaining({ kcal: 400, servings: 2 }));
+    session.removeMeal(id);
+    expect(view().days[k]?.meals ?? []).toHaveLength(0);
+    await session.idle();
+    expect(await data.repos.mealLogs.list()).toHaveLength(0);
+  });
+
   it('keeps every rapid water tap and never goes below zero', async () => {
     const { data, session, view } = guestSession();
     session.addWater(1);

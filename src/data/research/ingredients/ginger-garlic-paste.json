@@ -15,62 +15,273 @@
         "avg": 215,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-10-29",
+        "min": 175,
+        "max": 345,
+        "avg": 225,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
       }
     ],
     "currentEstimate": {
-      "min": 185,
-      "max": 245,
-      "avg": 215
+      "min": 190,
+      "max": 255,
+      "avg": 220
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-10-29",
     "stale": false,
     "seasonal": false,
-    "listingCount": 8,
+    "listingCount": 7,
     "platforms": [
       "BigBasket",
-      "Mishry review",
-      "StoreKing"
+      "Flipkart",
+      "Zepto"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 18.5,
-    "max": 24.5,
-    "avg": 21.5
+    "min": 19,
+    "max": 25.5,
+    "avg": 22
   },
   "seasonal": false,
-  "nutritionPer100g": null,
-  "macrosPer100Estimate": {
-    "kcal": 90,
-    "proteinG": 3,
-    "carbsG": 17,
-    "fatG": 1.5,
-    "fibreG": 2
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 146.6,
+      "source": "Other: Shan ginger and garlic paste label (India): Shan Ginger & Garlic Paste 700 g label values via spicevillage.eu; sodium converted from salt 3.4 g (salt ÷ 2.5); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "proteinG": {
+      "value": 3.4,
+      "source": "Other: Shan ginger and garlic paste label (India): Shan Ginger & Garlic Paste 700 g label values via spicevillage.eu; sodium converted from salt 3.4 g (salt ÷ 2.5); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "carbsG": {
+      "value": 21.5,
+      "source": "Other: Shan ginger and garlic paste label (India): Shan Ginger & Garlic Paste 700 g label values via spicevillage.eu; sodium converted from salt 3.4 g (salt ÷ 2.5); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "sugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fatG": {
+      "value": 5.2,
+      "source": "Other: Shan ginger and garlic paste label (India): Shan Ginger & Garlic Paste 700 g label values via spicevillage.eu; sodium converted from salt 3.4 g (salt ÷ 2.5); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 1.6,
+      "source": "Other: Shan ginger and garlic paste label (India): Shan Ginger & Garlic Paste 700 g label values via spicevillage.eu; sodium converted from salt 3.4 g (salt ÷ 2.5); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "sodiumMg": {
+      "value": 1360,
+      "source": "Other: Shan ginger and garlic paste label (India): Shan Ginger & Garlic Paste 700 g label values via spicevillage.eu; sodium converted from salt 3.4 g (salt ÷ 2.5); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "Other: Shan ginger and garlic paste label (India): Shan Ginger & Garlic Paste 700 g label values via spicevillage.eu; sodium converted from salt 3.4 g (salt ÷ 2.5); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "Other: Shan ginger and garlic paste label (India): Shan Ginger & Garlic Paste 700 g label values via spicevillage.eu; sodium converted from salt 3.4 g (salt ÷ 2.5); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    }
   },
-  "storage": "Unopened: cool, dry cupboard. After opening: fridge, tightly sealed, use a clean dry spoon — 1–3 months. Freeze in small portions for longer storage.",
-  "looksLike": "Thick, pale beige to light-brown paste, slightly grainy, with a sharp ginger-garlic smell; sold in pouches, jars or tubs.",
-  "howToPick": "check the manufacture date (fresher is more pungent); paste should be beige, not dark brown or grey; avoid puffed pouches or a fermented/sour smell. \"No added colour\" variants cost more.",
-  "shelfLife": "unopened about 9–12 months (Smith & Jones lists 360 days); after opening, 1–3 months in the fridge (follow the pack).",
+  "macrosPer100Estimate": {
+    "kcal": 146.6,
+    "proteinG": 3.2,
+    "carbsG": 21.5,
+    "fatG": 5.2,
+    "fibreG": 1.8
+  },
+  "storage": "Refrigerate after opening in a clean, dry, closed jar and use a clean dry spoon; use within the time on the label (homemade paste keeps about a month in the fridge or six months or longer in the freezer, per masalaandchai).",
+  "looksLike": "A pale beige, smooth paste with a sharp smell, sold in pouches and jars; usually ginger and garlic with salt and an acidity regulator.",
+  "howToPick": "Read the label: ginger and garlic should come first, followed by salt and an acidity regulator; some brands also add preservatives such as E211 or E202 (Onmanorama). Look for an FSSAI licence number, a manufacturing date and a batch number.",
+  "shelfLife": "Unopened pouches or jars keep for months; check the date printed.",
   "substitutes": [
     "Fresh home-made paste",
     "Fresh grated ginger + crushed garlic",
-    "Separate ginger and garlic pastes"
+    "Separate ginger and garlic pastes",
+    "Freshly grated ginger and garlic (1:1)",
+    "Ginger paste plus garlic paste separately",
+    "Dry ginger and garlic powder (¼ tsp each)"
   ],
-  "usedIn": [],
+  "usedIn": [
+    {
+      "dishNumber": 92,
+      "quantity": 8,
+      "unit": "g",
+      "raw": "8 g per serving (1½ tsp)"
+    },
+    {
+      "dishNumber": 87,
+      "quantity": 5,
+      "unit": "g",
+      "raw": "5 g per serving (1 tsp)"
+    }
+  ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-10-29",
+      "file": "FitPlate_Ingredients_2026-10-29.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (wma)",
     "macrosPer100Estimate": "stable (single)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
@@ -79,6 +290,9 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 175.0–245.0 was wider than 30% of avg 215.0; narrowed to ±15%."
+    "Range 175.0–309.1 was wider than 30% of avg 221.4; narrowed to ±15%.",
+    "macrosPer100Estimate.kcal: Versions 2026-10-04 (90) and 2026-10-29 (146.6) differ by more than 25%; kept the newer.",
+    "macrosPer100Estimate.carbsG: Versions 2026-10-04 (17) and 2026-10-29 (21.5) differ by more than 25%; kept the newer.",
+    "macrosPer100Estimate.fatG: Versions 2026-10-04 (1.5) and 2026-10-29 (5.2) differ by more than 25%; kept the newer."
   ]
 }

@@ -15,63 +15,275 @@
         "avg": 100,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-10-29",
+        "min": 75,
+        "max": 360,
+        "avg": 205,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
       }
     ],
     "currentEstimate": {
-      "min": 85,
-      "max": 115,
-      "avg": 100
+      "min": 130,
+      "max": 175,
+      "avg": 155
     },
-    "method": "single",
+    "method": "spike-blend",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-10-29",
     "stale": false,
     "seasonal": false,
-    "listingCount": 2,
+    "listingCount": 5,
     "platforms": [
-      "BigBasket"
+      "BigBasket",
+      "Blinkit"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 2 listings back the range (need 3)",
-      "only 1 platform (BigBasket) backs the range"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 8.5,
-    "max": 11.5,
-    "avg": 10
+    "min": 13,
+    "max": 17.5,
+    "avg": 15.5
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 108,
+      "source": "Other: nutritionhab blog and ICAR review: Other: nutritionhab blog and ICAR review of fresh Murraya koenigii leaves (no IFCT/USDA entry seen); vitamin A as beta-carotene/12; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "proteinG": {
+      "value": 6.1,
+      "source": "Other: nutritionhab blog and ICAR review: Other: nutritionhab blog and ICAR review of fresh Murraya koenigii leaves (no IFCT/USDA entry seen); vitamin A as beta-carotene/12; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "carbsG": {
+      "value": 18.7,
+      "source": "Other: nutritionhab blog and ICAR review: Other: nutritionhab blog and ICAR review of fresh Murraya koenigii leaves (no IFCT/USDA entry seen); vitamin A as beta-carotene/12; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "sugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fatG": {
+      "value": 1,
+      "source": "Other: nutritionhab blog and ICAR review: Other: nutritionhab blog and ICAR review of fresh Murraya koenigii leaves (no IFCT/USDA entry seen); vitamin A as beta-carotene/12; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 6.4,
+      "source": "Other: nutritionhab blog and ICAR review: Other: nutritionhab blog and ICAR review of fresh Murraya koenigii leaves (no IFCT/USDA entry seen); vitamin A as beta-carotene/12; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "sodiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "ironMg": {
+      "value": 0.93,
+      "source": "Other: nutritionhab blog and ICAR review: Other: nutritionhab blog and ICAR review of fresh Murraya koenigii leaves (no IFCT/USDA entry seen); vitamin A as beta-carotene/12; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "calciumMg": {
+      "value": 830,
+      "source": "Other: nutritionhab blog and ICAR review: Other: nutritionhab blog and ICAR review of fresh Murraya koenigii leaves (no IFCT/USDA entry seen); vitamin A as beta-carotene/12; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": 630,
+      "source": "Other: nutritionhab blog and ICAR review: Other: nutritionhab blog and ICAR review of fresh Murraya koenigii leaves (no IFCT/USDA entry seen); vitamin A as beta-carotene/12; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "folateUgDfe": {
+      "value": 93.9,
+      "source": "Other: nutritionhab blog and ICAR review: Other: nutritionhab blog and ICAR review of fresh Murraya koenigii leaves (no IFCT/USDA entry seen); vitamin A as beta-carotene/12; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "Other: nutritionhab blog and ICAR review: Other: nutritionhab blog and ICAR review of fresh Murraya koenigii leaves (no IFCT/USDA entry seen); vitamin A as beta-carotene/12; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "Other: nutritionhab blog and ICAR review: Other: nutritionhab blog and ICAR review of fresh Murraya koenigii leaves (no IFCT/USDA entry seen); vitamin A as beta-carotene/12; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    }
+  },
   "macrosPer100Estimate": {
-    "kcal": 108,
+    "kcal": 457,
     "proteinG": 6.1,
     "carbsG": 18.7,
     "fatG": 1,
     "fibreG": 6.4
   },
-  "storage": "strip leaves or keep on sprigs, wrap dry in paper towel in an airtight box — 1–2 weeks.",
-  "looksLike": "Small, glossy, dark-green, pointed leaves arranged in pairs along a thin stalk (a \"sprig\"); strong, slightly citrusy-nutty smell when rubbed.",
-  "howToPick": "leaves glossy, dark green, firmly attached to the stalk, with a strong smell when rubbed. Avoid yellow, black-spotted, dry or brittle leaves.",
-  "shelfLife": "2–3 days at room temperature.",
+  "storage": "Keep sprigs dry in a box lined with paper towel in the fridge for about a week; leaves can be frozen on the stalk for a few months.",
+  "looksLike": "Small, glossy, dark green leaflets on a thin stalk; crushed, they smell strongly of citrus and spice.",
+  "howToPick": "Deep green, fragrant, glossy leaves still on the stalk. Avoid yellowing, blackened or limp leaves and a weak smell.",
+  "shelfLife": "About a week in the fridge (general guidance, not from a source in this run).",
   "substitutes": [
     "Dried curry leaves",
     "Bay leaf plus a little lime zest",
     "Omit"
   ],
-  "usedIn": [],
+  "usedIn": [
+    {
+      "dishNumber": 92,
+      "quantity": 3,
+      "unit": "g",
+      "raw": "3 g per serving (about 6 leaves)"
+    },
+    {
+      "dishNumber": 88,
+      "quantity": 1.5,
+      "unit": "g",
+      "raw": "1.5 g per serving (10 leaves)"
+    },
+    {
+      "dishNumber": 103,
+      "quantity": null,
+      "unit": null,
+      "raw": "5 leaves per serving (weight not stated; about 0.8 g at the Kothu Parotta rate of 0.5 g per leaf)"
+    }
+  ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-10-29",
+      "file": "FitPlate_Ingredients_2026-10-29.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (spike-blend)",
     "macrosPer100Estimate": "stable (single)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
@@ -79,7 +291,10 @@
     "usedIn": "newest"
   },
   "mergeNotes": [
+    "price flag: possible-spike",
     "price flag: narrowed",
-    "Range 75.0–130.0 was wider than 30% of avg 100.0; narrowed to ±15%."
+    "Possible spike: latest avg 205 (2026-10-29) moved more than 35% from the previous estimate; using the halfway point.",
+    "Range 75.0–245.0 was wider than 30% of avg 152.5; narrowed to ±15%.",
+    "macrosPer100Estimate.kcal: Versions 2026-10-04 (108) and 2026-10-29 (457) differ by more than 25%; kept the newer."
   ]
 }

@@ -1,0 +1,740 @@
+{
+  "id": "barbell-back-squat",
+  "number": 15,
+  "name": "Barbell back squat",
+  "otherNames": [
+    "Back squat",
+    "Barbell squat",
+    "Squat rack squat",
+    "Power rack squat",
+    "High-bar back squat",
+    "Low-bar back squat"
+  ],
+  "section": "gym",
+  "type": "strength",
+  "equipment": [
+    "Squat rack or power rack with J-hooks and safety pins or spotter arms",
+    "Olympic barbell (usually 20 kg; 15 kg women's bar or lighter bars exist)",
+    "Weight plates",
+    "Collars",
+    "Flat shoes"
+  ],
+  "noEquipmentAlternative": "Bodyweight squat to a chair (Home 1) or wall sit (Home 10); dumbbell goblet squat (Home 15) with weights",
+  "musclesPrimary": [
+    "quadriceps (rectus femoris, vastus lateralis, vastus medialis, vastus intermedius)",
+    "gluteus maximus"
+  ],
+  "musclesSecondary": [
+    "adductor magnus",
+    "hamstrings",
+    "calves (gastrocnemius, soleus)",
+    "erector spinae",
+    "abdominals and obliques (trunk stabilisers)"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": false,
+  "met": 3.5,
+  "compendiumCode": null,
+  "metOptions": [
+    {
+      "code": "02052",
+      "met": 5,
+      "activity": "Extras (text only, harder work): 02052, 5.0 METs, \"resistance (weight) training, squats, deadlift, slow or explosive effort\"; 02050, 6.0 METs, vigorous-effort resistance training (code listed in earli"
+    },
+    {
+      "code": "02050",
+      "met": 6,
+      "activity": "Extras (text only, harder work): 02052, 5.0 METs, \"resistance (weight) training, squats, deadlift, slow or explosive effort\"; 02050, 6.0 METs, vigorous-effort resistance training (code listed in earli"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 2,
+      "reps": "8-10 at RIR 3 (empty bar or light load)",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "3 s down, 1 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 2,
+      "reps": "8-10 at RIR 3 (as one circuit station)",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "3 s down, 1 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "8-10 at RIR 2-3",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "3 s down, 1 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "strength",
+      "sets": 3,
+      "reps": "5-8 at RIR 3",
+      "timeSec": null,
+      "restSec": 120,
+      "tempo": "3 s down, 1 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 2,
+      "reps": "12-15 light at RIR 3-4",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2 s down, 0 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "8-10 at RIR 2",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "3 s down, 1 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "6-10 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 105,
+      "tempo": "3 s down, 1 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "strength",
+      "sets": 4,
+      "reps": "4-6 at RIR 2",
+      "timeSec": null,
+      "restSec": 180,
+      "tempo": "3 s down, 1 s pause, 1 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "15 at RIR 2",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2 s down, 0 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "general_fitness",
+      "sets": 4,
+      "reps": "8 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "3 s down, 1 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "5-10 at RIR 0-2",
+      "timeSec": null,
+      "restSec": 120,
+      "tempo": "3 s down, 1 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": 5,
+      "reps": "2-5 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 240,
+      "tempo": "3 s down, 1 s pause, 1 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "endurance",
+      "sets": 4,
+      "reps": "15-20 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 53,
+      "tempo": "2 s down, 0 s pause, 2 s up",
+      "perWeek": 2
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle",
+      "left_heel",
+      "right_heel",
+      "left_foot_index",
+      "right_foot_index"
+    ],
+    "phases": [
+      {
+        "name": "top",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": ">= 160",
+        "parsed": {
+          "op": ">=",
+          "value": 160,
+          "max": null
+        }
+      },
+      {
+        "name": "bottom",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": "<= 100",
+        "parsed": {
+          "op": "<=",
+          "value": 100,
+          "max": null
+        }
+      },
+      {
+        "name": "top_max",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": "<= 175",
+        "parsed": {
+          "op": "<=",
+          "value": 175,
+          "max": null
+        }
+      },
+      {
+        "name": "hip_min",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": ">= 45",
+        "parsed": {
+          "op": ">=",
+          "value": 45,
+          "max": null
+        }
+      },
+      {
+        "name": "bottom_short_range_mode",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": "<= 130",
+        "parsed": {
+          "op": "<=",
+          "value": 130,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 3
+  },
+  "formChecks": [
+    {
+      "joint": "knee",
+      "rule": "bottom knee angle > 100 degrees (equals bottom phase threshold; > 130 in short-range mode; rep not counted)",
+      "message": "Go a little lower, about parallel"
+    },
+    {
+      "joint": "knee",
+      "rule": "top knee angle < 160 degrees (equals top phase threshold; rep not counted)",
+      "message": "Stand all the way up (soft knees)"
+    },
+    {
+      "joint": "knee",
+      "rule": "top knee angle > 175 degrees (equals top_max threshold)",
+      "message": "Don't lock: keep a small bend"
+    },
+    {
+      "joint": "hip",
+      "rule": "bottom hip angle < 45 degrees (equals hip_min threshold)",
+      "message": "Chest up: keep your back flat"
+    },
+    {
+      "joint": "ankle",
+      "rule": "separate flag: heel landmark rises above the foot-index line beyond a set margin (no angle used)",
+      "message": "Keep your heels down"
+    },
+    {
+      "joint": "knee",
+      "rule": "front view only, separate flag: knee landmarks move inward of the ankles beyond a set margin at the bottom (no angle used)",
+      "message": "Knees out over your toes"
+    },
+    {
+      "joint": "hip",
+      "rule": "separate flag: hip rises faster than the shoulder on the way up (no angle used)",
+      "message": "Chest and hips rise together"
+    },
+    {
+      "joint": "knee",
+      "rule": "rep duration < 3 s or lowering < 2 s",
+      "message": "Slow down: 3 seconds down"
+    }
+  ],
+  "safetyFlags": [
+    "set_safety_pins_1_2_inches_below_bottom",
+    "set_j_hooks_so_unrack_is_a_small_leg_dip",
+    "start_with_empty_bar",
+    "use_collars_every_set",
+    "load_both_sides_evenly",
+    "bail_by_lowering_onto_safety_pins",
+    "do_not_dump_bar_behind",
+    "walk_out_2_3_small_steps_straight_back",
+    "do_not_lock_knees",
+    "knees_out_over_toes",
+    "heels_down",
+    "neutral_back",
+    "high_blood_pressure_no_breath_holding_no_failure_sets",
+    "resting_bp_180_120_do_not_lift",
+    "knee_pain_short_range_or_lighter_load",
+    "lower_back_pain_ask_professional",
+    "shoulder_wrist_issue_widen_grip_or_use_goblet_squat",
+    "pregnancy_ask_obstetrician",
+    "osteoporosis_ask_doctor_neutral_spine",
+    "recent_surgery_follow_surgeon_limits",
+    "spotter_for_heavy_sets_or_rack_without_safeties",
+    "check_bar_weight_label"
+  ],
+  "progressions": [
+    "add small plates or sets (double progression)",
+    "slow 4-5 s lowering with 1-2 s bottom pause (lighter weight)",
+    "heavier, paused or low-bar squats with a spotter or safeties set (intermediate to advanced)"
+  ],
+  "regressions": [
+    "bodyweight squat to a chair (Home 1) or wall sit (Home 10)",
+    "dumbbell goblet squat (Home 15)",
+    "Smith machine squat (Gym 14), hack squat (Gym 13) or leg press (Gym 10)"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "three-quarter front, 3 m",
+      "shows": "uprights, J-hooks, safety pins, bar, plates and collars named",
+      "textOverlay": "Know the hooks, the pins and the collars"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "setting J-hook height and safety pins about 1-2 inches below the bottom position",
+      "textOverlay": "Hooks at shoulder height; pins below your bottom"
+    },
+    {
+      "seconds": 8,
+      "angle": "back view, 1.5 m",
+      "shows": "bar on the muscle shelf (high bar) vs lower on the rear shoulders (low bar); even grip, elbows down",
+      "textOverlay": "Bar on muscle, not bone"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "unrack and walk out two or three small steps straight back",
+      "textOverlay": "Unrack - 2-3 steps - set feet"
+    },
+    {
+      "seconds": 10,
+      "angle": "side, hip height, 3 m",
+      "shows": "full empty-bar rep: 3 s down, 1 s pause at about parallel, 2 s up, soft knees at the top",
+      "textOverlay": "Down 3 - Pause 1 - Up 2"
+    },
+    {
+      "seconds": 8,
+      "angle": "front, knee height, 2.5 m",
+      "shows": "knees tracking out over the toes vs caving in",
+      "textOverlay": "Knees out over toes"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "heels flat and neutral back vs heels lifting and back rounding",
+      "textOverlay": "Heels down, back neutral"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "safe bail: lower the bar onto the safety pins and step out",
+      "textOverlay": "Lower onto the pins, step out"
+    }
+  ],
+  "lastResearched": "2026-10-30",
+  "setupSteps": [
+    "Pick a rack that is free and stable. Check it sits on a level floor and the uprights do not wobble.",
+    "Check what you are lifting. Look at the bar (20 kg? 15 kg? lighter?) and whether the sleeves rotate. Learn the bar's weight so your logging is correct; if the label is not visible, ask staff (bar weights vary between gyms).",
+    "Set the safety pins or spotter arms. Do one empty-bar squat to find your lowest point, then set the pins or arms about 1–2 inches (about 2.5–5 cm, est.) below the bar at that point (RitFit; Rep Fitness advice); Starting Strength suggests about a fist-width below the bar's lowest point. If you bump the pins on every rep, they are too high. Pins must go in on both sides at the same height.",
+    "Set the J-hooks (bar height). Sources differ: about collarbone height, mid-chest, or about shoulder height (an inch below). Choose a height where you can unrack by straightening your legs with a small dip, not on tiptoe, and where you can re-rack without hunting for the hooks.",
+    "Load the bar evenly. Load the same plates on both sides, push them fully against the stopper, and fit collars on both sleeves. Collars stop plates sliding down the sleeve and tipping the bar (Stack; Starting Strength; RitFit); some experienced lifters skip them when training alone because they can dump the plates, but beginners should use them.",
+    "Start with the empty bar. Practise unrack, walk-out, 5–10 squats and re-rack with just the bar (20 kg or whatever your bar weighs).",
+    "Face the bar and step under it so it rests across the back of your shoulders, not on the neck bone (the bump at the base of your neck).",
+    "Bar position (choose one). High bar: the bar sits on top of the upper trapezius muscle (the \"shelf\" across the upper back). A more upright torso and more knee bend are typical (Glassbrook et al. 2017 review; Stronger by Science). Low bar: the bar sits lower, across the rear shoulder muscles (rear deltoids), with more forward lean and more hip bend; it usually lets people lift more but needs more shoulder and wrist flexibility (powerlifting guides). Beginner default (FitPlate choice): high bar, as it asks for less shoulder flexibility and a more upright torso; low bar only with coach guidance.",
+    "Grip. Hold the bar with both hands evenly, hands wider than the shoulders at first (narrow grips ask for more shoulder and wrist flexibility). Keep wrists straight or nearly straight; if your wrists or shoulders complain, widen the grip. The thumb can wrap around or sit on top (sources vary: a thumbless grip is fine if the bar feels secure).",
+    "Elbows. Pull your elbows down and slightly forward or back as needed to make a firm shelf with your upper back; do not flare them high. Starting Strength notes a narrower grip with elbows in for low bar, while other coaches suggest trying elbows slightly forward or back. A specific degree value is Not found; judge by comfort and a solid shelf.",
+    "Tighten your upper back. Squeeze your shoulder blades together so the bar sits on muscle, not bone.",
+    "Unrack. Take a breath in, tighten your stomach, and stand straight up so the bar lifts off the hooks. Feet should be under the bar at about shoulder-width. Lift with both legs, not by leaning back. Take a short pause to check the bar is balanced, then walk out.",
+    "Take two or three small steps back, not diagonal (guides: 2–3 small steps; step back, do not drift to one side). Many coaches use one step back with each foot then a small adjustment.",
+    "Set your stance. Feet about shoulder-width (a bit wider is fine), toes turned out about 15–30° (sources range 15–30°); knees will track in line with your toes. There is no single best stance; use what feels strong and stable.",
+    "Eyes forward on a spot on the floor or wall (a spot on the floor about 2–3 m ahead, est.). Head neutral."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Stand tall and brace",
+      "action": "With the bar on your back and feet set, take a small breath into your belly and tighten your stomach as if bracing for a light push.",
+      "feel": "Firm trunk; upper back tight under the bar; weight spread over the whole foot.",
+      "breathing": "Breathe in through the nose; brace without holding hard for long (see Safety for Valsalva).",
+      "tempo": null,
+      "visualCheck": "Side: bar over the middle of the foot; ears over shoulders over hips over mid-foot; knees soft. Front: feet even, toes slightly out, bar level."
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Start the descent with the hips and knees together",
+      "action": "Push your hips back a little and bend your knees at the same time, pushing the knees out in line with the toes.",
+      "feel": "Thighs and buttocks loading; heels pressed down.",
+      "breathing": "Keep the brace; let out a little air if needed, but do not gasp.",
+      "tempo": null,
+      "visualCheck": "Side: back stays at the same angle (no rounding); heels flat. Front: knees move out over the toes, not inward."
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Reach a comfortable depth",
+      "action": "Lower until your thighs are about parallel to the floor (the hip crease about level with the top of the knee), or only as deep as you keep your back flat and heels down.",
+      "feel": "Strong stretch in the thighs and hips; no pinch at the front of the hip or knee.",
+      "breathing": "Hold your brace briefly.",
+      "tempo": null,
+      "visualCheck": "Side: thighs about level with the floor; heels flat; back neutral. Front: knees in line with toes, hips level."
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Stand up by pushing the floor away",
+      "action": "Push the whole foot into the floor and drive your hips and shoulders up together.",
+      "feel": "Thighs and buttocks pushing; the bar going straight up over the mid-foot.",
+      "breathing": "Breathe out gently as you pass the hardest point (or once you are standing, if you have high blood pressure breathe out throughout the push).",
+      "tempo": null,
+      "visualCheck": "Side: hips and chest rise together (not hips first, which turns the squat into a good morning). Front: knees do not cave in."
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Stop just short of locking the knees",
+      "action": "At the top, stand tall with a small soft bend.",
+      "feel": "Weight held by muscles, not knee joints.",
+      "breathing": "Finish breathing out, then breathe in for the next rep.",
+      "tempo": null,
+      "visualCheck": "Side: hips under the bar; knees slightly bent. Front: legs straight but soft."
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Repeat smoothly for the planned reps without bouncing",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Re-rack the bar",
+      "action": "After the last rep, walk forward the same number of steps until the bar touches the uprights, then lower the bar straight onto the hooks.",
+      "feel": "Weight leaves your back; legs tired.",
+      "breathing": "Normal.",
+      "tempo": null,
+      "visualCheck": "Side: the bar is seated inside both hooks (sit it on both hooks before you let go); you can feel it settle on both sides, then step out."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Setting the J-hooks too high or too low",
+      "text": "Setting the J-hooks too high or too low. Why: too high makes you stand on tiptoe to unrack and risk a bad rack; too low makes you squat down to lift the bar off. Fix: set hooks so a small leg dip lifts the bar clear."
+    },
+    {
+      "title": "Safety pins set too high or not at all",
+      "text": "Safety pins set too high or not at all. Why: pins too high get hit every rep, but pins too low or missing leave no safety net. Fix: set them about 1–2 inches below your lowest point (check with an empty-bar squat) and set both sides equally."
+    },
+    {
+      "title": "Bar on the neck bone",
+      "text": "Bar on the neck bone. Why: pain and an unstable bar. Fix: sit it on the muscle shelf (high bar) or lower rear-shoulder shelf (low bar), tighten the upper back."
+    },
+    {
+      "title": "Knees caving in",
+      "text": "Knees caving in. Why: strains the knee, shows the load is too heavy or the hips are weak. Fix: lighter weight, push knees out over toes."
+    },
+    {
+      "title": "Heels lifting",
+      "text": "Heels lifting. Why: pushes the knees forward and the load onto the toes, and can be an ankle mobility limit. Fix: shallow depth, slightly wider stance, flat shoes, work on calf and ankle mobility (Yoga and Stretch 13)."
+    },
+    {
+      "title": "Hips rising before the chest (\"good morning\" squat)",
+      "text": "Hips rising before the chest (\"good morning\" squat). Why: turns the lift into a back lift and strains the lower back. Fix: lighter weight, \"chest up, push the floor away\"."
+    },
+    {
+      "title": "Rounding the lower back at the bottom (\"butt wink\")",
+      "text": "Rounding the lower back at the bottom (\"butt wink\"). Why: spinal flexion under load. Fix: stop higher, brace, lighter weight."
+    },
+    {
+      "title": "Walking out with too many or diagonal steps",
+      "text": "Walking out with too many or diagonal steps. Why: tiring and wobbling before the first rep. Fix: 2–3 small steps straight back, check balance first."
+    },
+    {
+      "title": "Skipping collars or loading unevenly",
+      "text": "Skipping collars or loading unevenly. Why: plates can slide and tip the bar (Stack). Fix: collars on every set, check both sides."
+    },
+    {
+      "title": "Holding the breath on every rep",
+      "text": "Holding the breath on every rep. Why: spikes blood pressure (see Safety). Fix: breathe out as you push up, especially with hypertension."
+    },
+    {
+      "title": "Ego loading",
+      "text": "Ego loading. Why: shallow, shaky reps and injury risk. Fix: empty bar until 3 sets of 8–10 are smooth."
+    }
+  ],
+  "safetyNotes": [
+    "Back problems: the bar loads the spine; beginners with back pain should ask a professional and may prefer leg press or goblet squat.",
+    "Knee problems: kneecap load rises with depth; use a shorter range or lighter load.",
+    "Shoulder or wrist problems: the bar position needs shoulder and wrist movement; widen the grip, use high bar, or choose another squat.",
+    "High blood pressure: the breath-hold (Valsalva manoeuvre) raises intra-abdominal pressure and blood pressure. A 2013 systematic review found the manoeuvre raises blood pressure during resistance exercise but that its health risks remain unconfirmed; an NSCA column advises watching for breath-holding in people with high blood pressure, heart attack or stroke history. Breathe out on each push, avoid sets to failure, and keep loads moderate. Do not lift when resting BP is 180/120 mmHg or higher.",
+    "Pregnancy, recent surgery, osteoporosis: see the table; ask a professional.",
+    "Larger bodies, tall or very short users: check the rack height range and whether J-hooks and pins fit."
+  ],
+  "sources": [
+    "Starting Strength, unracking and racking tips; collars on the bar; the importance of using safeties in the squat and bench press (hands, grip, walk-out, collars, safeties). https://startingstrength.com/video/avoid-squat-wrecks-unracking-and-racking-tips ; https://startingstrength.com/article/collars-on-the-bar ; https://mail.startingstrength.com/article/the-importance-of-using-safeties-in-the-squat-and-bench-press",
+    "Stronger by Science, High-bar and low-bar squatting (hip angle difference about 3°; torque comparison). https://www.strongerbyscience.com/high-bar-and-low-bar-squatting-2-0/",
+    "Glassbrook et al. (2017/2019), A review of the biomechanical differences between the high-bar and low-bar back squat (Aston University record; seen via summaries). https://research.aston.ac.uk/en/publications/a-review-of-the-biomechanical-differences-between-the-high-bar-an/",
+    "RitFit Sports, how to safely squat in a squat rack; barbell collars; barbell squat for beginners (pins, J-hooks, empty bar). https://ritfitsports.com/blogs/article/how-to-safely-squat-in-a-squat-rack-master-your-ritfit-power-rack ; https://www.ritfitsports.com/blogs/article/how-to-use-barbell-collars-safely ; https://www.ritfitsports.com/blogs/article/how-to-squat-with-a-bar-for-beginners",
+    "Rep Fitness, How to safely fail a heavy squat in the gym. https://repfitness.com/blogs/training/how-to-safely-fail-a-heavy-squat-in-the-gym",
+    "Gravitus, How to lift heavy and fail safely. https://gravitus.com/blog/how-to-lift-heavy-and-fail-safely",
+    "Garage Gym Reviews, how to bail out of a squat; squat rack safety. https://www.garagegymreviews.com/how-to-bail-out-of-a-squat ; https://www.garagegymreviews.com/squat-rack-safety",
+    "Powerlifting Technique, spotting for squats (rear spotter 2–3 ft behind). https://powerliftingtechnique.com/spotting-for-squats/",
+    "NCSF study guide, Spotting, liftoffs and pre-lift communication (hands under wrists/forearms). https://open-exam-prep.com/study-guides/ncsf-cpt/training-instruction/spotting-liftoff-communication",
+    "Stack, Why you should always put safety collars on the bar. https://www.stack.com/?p=280987",
+    "Brian Mac, Back Squat. https://brianmac.co.uk/bsquat.htm",
+    "Experience Life, how to set up a barbell back squat; Sport Fitness Advisor, how to squat properly (toe angle 15–30°, 2–3 steps). https://experiencelife.lifetime.life/article/how-to-set-up-a-barbell-back-squat/ ; https://www.sport-fitness-advisor.com/how-to-squat-properly.html",
+    "Hartmann H et al. (2013), Influence of squatting depth on muscular and joint stress, Sports Medicine 43:993–1008 (seen via secondary summaries only). https://thebarbellphysio.com/the-safety-of-deep-squats/",
+    "Squat depth and the knee, scoping review (Frontiers in Sports and Active Living 2024). https://www.frontiersin.org/journals/sports-and-active-living/articles/10.3389/fspor.2024.1477796/full",
+    "Squatting kinematics and kinetics (Schoenfeld 2010, PubMed 20182386); Knee biomechanics of the dynamic squat exercise (Escamilla 2001, PubMed 11194098). https://pubmed.ncbi.nlm.nih.gov/20182386/ ; https://pubmed.ncbi.nlm.nih.gov/11194098/",
+    "The Valsalva manoeuvre: its effect on intra-abdominal pressure and safety issues during resistance exercise (2013 systematic review). https://pubmed.ncbi.nlm.nih.gov/23222073/",
+    "Biology of Sport, systematic review of intra-abdominal and intrathoracic pressures during high-intensity resistance exercise with the Valsalva manoeuvre. https://termedia.pl/Systematic-review-of-intra-abdominal-and-intrathoracic-r-npressures-initiated-by-the-Valsalva-manoeuvre-during-r-nhigh-intensity-resistance-exercises,78,38043,0,0.html",
+    "NSCA column on Valsalva and hypertension (seen via a search summary only; page not opened). Not found as a stable URL.",
+    "2024 Adult Compendium of Physical Activities (Herrmann et al., J Sport Health Sci 2024): codes 02054 (3.5), 02052 (5.0). https://pacompendium.com/conditioning-exercise ; https://pubmed.ncbi.nlm.nih.gov/38242596/",
+    "Bar weight: Fitness Superstore, women's vs men's barbells (20 kg vs 15 kg; 28 mm vs 25 mm shaft); SetGraph, Olympic bar weight (Smith bars and specialty bars vary). https://www.fitness-superstore.co.uk/blog/womens-barbells-vs-mens-barbells/ ; https://setgraph.app/articles/olympic-bar-weight-how-much-every-barbell-actually-weighs",
+    "Indian listings (IndiaMART: 7 ft, 20 kg Olympic bars; a 5 ft 15 kg gym rod): https://m.indiamart.com/impcat/olympic-bar.html ; https://m.indiamart.com/impcat/weight-lifting-bars.html",
+    "Zourdos MC et al. (2016), RIR-based RPE scale. https://openrepository.aut.ac.nz/items/efef3b25-6701-4fb5-bb82-55fcd2a26027/full",
+    "ACSM (2009), Progression models in resistance training for healthy adults. https://www.sportgeneeskunde.com/wp-content/uploads/ACSM-Position-Stand-Progression-Models-in-Resistance-Training-for-Healthy-Adults.pdf",
+    "ACSM (Zaleski), exercise for hypertension. https://acsm.org/?p=18319",
+    "Colberg SR et al. (2016), ADA position statement. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/",
+    "ACC summary of the 2023 AHA statement on resistance exercise. https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2023/12/19/15/33/resistance-exercise-training",
+    "AHA Professional, physical activity for elevated BP or cholesterol (Gibbs et al.). https://professional.heart.org/en/science-news/Physical-Activity-as-a-Critical-Component-of-First-Line-Treatment-for-Elevated-BP-or-Cholesterol/commentary",
+    "Donnelly JE et al. (2009), ACSM position stand on weight loss. https://pubmed.ncbi.nlm.nih.gov/19127177/",
+    "PCOS exercise position statement / 2023 guideline evidence. https://vuir.vu.edu.au/45855/1/1-s2.0-S2772696723000054-main.pdf",
+    "Exercise in hypothyroidism, systematic review (2023). https://pubmed.ncbi.nlm.nih.gov/37999992/",
+    "Pharmacy Magazine CPD, Exercise and asthma. https://www.pharmacymagazine.co.uk/cpd-modules/making-a-difference-in-asthma-care/exercise-and-asthma-528343",
+    "Review of patellofemoral joint loading in squat and lunge (PMC). https://pmc.ncbi.nlm.nih.gov/articles/PMC4901792",
+    "LIFTMOR trial: Watson et al., high-intensity resistance and impact training (JBMR, via summaries). https://academic.oup.com/jbmr/article/33/2/211/7605709",
+    "Osteoporosis Canada, Too Fit To Fracture. https://osteoporosis.ca/wp-content/uploads/2014-07-25-Are-you-too-fit-to-fracture-for-patients.pdf",
+    "ACOG Committee Opinion No. 804 (abstract record). https://opqic.org/acog-committee-opinion-no-804-physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period/",
+    "NNUH NHS, Post-natal physiotherapy advice. https://www.nnuh.nhs.uk/publication/download/post-natal-physiotherapy-advice-and-exercises-v2-1",
+    "Royal Devon NHS, Postnatal physiotherapy advice. https://www.royaldevon.nhs.uk/media/ibneih1b/patient-information-leaflet-postnatal-physiotherapy-advice-rde-20-143-001.pdf",
+    "Note: most squat-specific sources were seen only as search-result summaries (publisher pages not opened in full); many are retailer or coaching blogs. No NSCA, ACE or ExRx page on bailing or J-hook height was retrieved, no exact numeric elbow angle was found, and how common lighter bars are in Indian gyms is Not found. Condition rows for ADA, AHA, ACSM, PCOS, thyroid, asthma, Osteoporosis Canada, ACOG and NHS are carried over from earlier items' citations and were not re-opened this session."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 28.6,
+      "70kg": 24.5,
+      "80kg": 21.4
+    },
+    "per300kcal": {
+      "60kg": 85.7,
+      "70kg": 73.5,
+      "80kg": 64.3
+    }
+  },
+  "gymAccess": [
+    "full_gym",
+    "basic_gym"
+  ],
+  "suitsPreferences": [
+    "strength",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "leg_day",
+    "full_body",
+    "free_weights",
+    "bodybuilding_split",
+    "30_to_60_min_sessions"
+  ],
+  "swapsByAccess": {
+    "none": "Bodyweight squat to a chair (Home 1) or wall sit (Home 10)",
+    "home_equipment": "Dumbbell goblet squat (Home 15) or Bulgarian split squat (Home 22)",
+    "basic_gym": "Smith machine squat (Gym 14, if available) or leg press (Gym 10)",
+    "full_gym": "Hack squat (Gym 13) or leg press (Gym 10) for a supported option; barbell back squat once ready"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "No breath-holding: breathe out on each push; moderate loads 10-15 reps, stop 2-3 reps before failure; no lifting if resting BP >= 180/120; uncontrolled BP: ask a doctor",
+      "source": "2013 systematic review on the Valsalva manoeuvre (PubMed 23222073); NSCA column on Valsalva and hypertension; ACSM hypertension guidance"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "2-3 non-consecutive resistance days per week; usual glucose checks if on insulin or sulfonylureas",
+      "source": "ADA position statement, Colberg et al. 2016"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "After clearance: light load, 10-15 reps, continuous breathing, no straining",
+      "source": "AHA resistance exercise statements (via ACC summary 2023)"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "Part of 2+ days/week resistance work with aerobic activity",
+      "source": "AHA scientific statement (Gibbs et al.)"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Check rack, bar and pad fit; start with the empty bar; goblet squat or leg press if the bar position is hard; pair with aerobic work",
+      "source": "ACSM weight management position stand (Donnelly et al. 2009)"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "Fits muscle-strengthening guidance; barbell-squat-specific advice not found",
+      "source": "International PCOS guideline 2023 / exercise position statement"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "Train normally if controlled; start at beginner level with ongoing fatigue",
+      "source": "Systematic review 2023 (PubMed 37999992)"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Warm up and keep reliever inhaler nearby",
+      "source": "Asthma exercise guidance (Pharmacy Magazine CPD citing Asthma UK)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Light load, slow tempo, shorter range (60-90 degrees of knee bend, unsigned knee angle 120-150) or use leg press; stop if pain rises",
+      "source": "Patellofemoral loading review (PMC4901792); 2024 scoping review on deep squat and the knee"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "ask_doctor",
+      "change": "Bar loads the spine; ask a clinician; light load, neutral spine, stop higher, or use goblet squat or leg press",
+      "source": "Not found"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "modify",
+      "change": "High bar with a wider grip, or goblet squat or leg press if the bar position hurts",
+      "source": "Not found"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "ask_doctor",
+      "change": "Resistance work benefits bone, but with low bone mass or a spine fracture see a physiotherapist first; supervised, neutral-spine, progressive loading",
+      "source": "LIFTMOR trial (Watson et al., via summaries); Osteoporosis Canada"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "ask_doctor",
+      "change": "Ask obstetrician; if cleared, light load, no breath-holding, short range; barbell-squat-specific advice not found",
+      "source": "ACOG Committee Opinion 804 (secondary citations)"
+    },
+    {
+      "condition": "postpartum",
+      "status": "modify",
+      "change": "Pelvic floor work first; return to loaded squats once cleared, especially after caesarean",
+      "source": "NHS postnatal physiotherapy leaflets (NNUH, Royal Devon)"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Only with surgeon or physiotherapist approval; knee, hip or spine surgery often restricts squat depth and load",
+      "source": "General clearance advice; condition-specific source not found"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "gym"
+    ],
+    "bodyRegion": [
+      "lower"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "fat_loss",
+      "muscle",
+      "strength",
+      "endurance"
+    ],
+    "intensity": "moderate",
+    "noise": "quiet",
+    "space": "large_area",
+    "typicalMinutes": 11,
+    "kcalPer10min70kg": 41,
+    "difficulty1to5": 4,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Gym",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Strength",
+    "Legs",
+    "Glutes",
+    "Rep counter",
+    "10–20 min"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-10-30",
+      "file": "FitPlate_Fitness_2026-10-30.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

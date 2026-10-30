@@ -2,8 +2,12 @@
 import type { Exercise } from '../../../models/exercise';
 
 import item_adho_mukha_svanasana from './adho-mukha-svanasana.json';
+import item_balasana_childs_pose from './balasana-childs-pose.json';
+import item_barbell_back_squat from './barbell-back-squat.json';
+import item_barbell_deadlift from './barbell-deadlift.json';
 import item_bhujangasana_cobra_pose from './bhujangasana-cobra-pose.json';
 import item_bodyweight_squat from './bodyweight-squat.json';
+import item_dead_bug from './dead-bug.json';
 import item_desk_neck_shoulder_release from './desk-neck-shoulder-release.json';
 import item_elliptical_cross_trainer from './elliptical-cross-trainer.json';
 import item_glute_bridge from './glute-bridge.json';
@@ -28,8 +32,12 @@ import item_treadmill from './treadmill.json';
 
 export const items: Exercise[] = [
   item_adho_mukha_svanasana as unknown as Exercise,
+  item_balasana_childs_pose as unknown as Exercise,
+  item_barbell_back_squat as unknown as Exercise,
+  item_barbell_deadlift as unknown as Exercise,
   item_bhujangasana_cobra_pose as unknown as Exercise,
   item_bodyweight_squat as unknown as Exercise,
+  item_dead_bug as unknown as Exercise,
   item_desk_neck_shoulder_release as unknown as Exercise,
   item_elliptical_cross_trainer as unknown as Exercise,
   item_glute_bridge as unknown as Exercise,

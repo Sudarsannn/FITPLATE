@@ -81,3 +81,17 @@ export function dayLabel(dateKey: string, today: string, yesterday: string): str
 }
 
 export const timeLabel = (at: number) => new Date(at).toLocaleTimeString('en-IN', { hour: 'numeric', minute: '2-digit' });
+
+/** Numbers of a logged meal that change with the portion size. */
+export type PortionFields = { kcal: number; proteinG: number; fibreG: number; costInr?: number | null; orderInr?: number | null; servings?: number };
+
+/**
+ * The patch that turns a logged meal into `servings` portions (Day 13). Everything is scaled from
+ * the meal's own numbers, so editing 1 to 2 doubles it and back to 1 restores it. Prices stay null when unknown.
+ */
+export function portionPatch(m: PortionFields, servings: number): PortionFields & { servings: number } {
+  const next = Math.min(20, Math.max(0.5, Math.round(servings * 2) / 2));
+  const f = next / (m.servings ?? 1);
+  const scale = (v: number | null | undefined) => (v == null ? v : Math.round(v * f));
+  return { kcal: Math.round(m.kcal * f), proteinG: Math.round(m.proteinG * f), fibreG: Math.round(m.fibreG * f), costInr: scale(m.costInr), orderInr: scale(m.orderInr), servings: next };
+}

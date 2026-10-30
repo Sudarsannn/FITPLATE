@@ -15,69 +15,271 @@
         "avg": 585,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-10-29",
+        "min": 460,
+        "max": 650,
+        "avg": 590,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
       }
     ],
     "currentEstimate": {
-      "min": 570,
-      "max": 600,
+      "min": 520,
+      "max": 625,
       "avg": 585
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-10-29",
     "stale": false,
     "seasonal": false,
-    "listingCount": 4,
+    "listingCount": 6,
     "platforms": [
-      "Amul MRP after GST cut",
       "BigBasket",
-      "StoreKing"
+      "Swiggy Instamart"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 57,
-    "max": 60,
+    "min": 52,
+    "max": 62.5,
     "avg": 58.5
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 717,
+      "source": "USDA FDC: USDA FDC 173410 'Butter, salted' (SR Legacy); values seen only on secondary sites (getfoodfacts, foodstruct, recipal) that repackage it; vitamin A from one site only",
+      "confidence": "Medium"
+    },
+    "proteinG": {
+      "value": 0.8,
+      "source": "USDA FDC: USDA FDC 173410 'Butter, salted' (SR Legacy); values seen only on secondary sites (getfoodfacts, foodstruct, recipal) that repackage it; vitamin A from one site only",
+      "confidence": "Medium"
+    },
+    "carbsG": {
+      "value": 0.1,
+      "source": "USDA FDC: USDA FDC 173410 'Butter, salted' (SR Legacy); values seen only on secondary sites (getfoodfacts, foodstruct, recipal) that repackage it; vitamin A from one site only",
+      "confidence": "Medium"
+    },
+    "sugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fatG": {
+      "value": 81.1,
+      "source": "USDA FDC: USDA FDC 173410 'Butter, salted' (SR Legacy); values seen only on secondary sites (getfoodfacts, foodstruct, recipal) that repackage it; vitamin A from one site only",
+      "confidence": "Medium"
+    },
+    "saturatedFatG": {
+      "value": 51.4,
+      "source": "USDA FDC: USDA FDC 173410 'Butter, salted' (SR Legacy); values seen only on secondary sites (getfoodfacts, foodstruct, recipal) that repackage it; vitamin A from one site only",
+      "confidence": "Medium"
+    },
+    "fibreG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "sodiumMg": {
+      "value": 643,
+      "source": "USDA FDC: USDA FDC 173410 'Butter, salted' (SR Legacy); values seen only on secondary sites (getfoodfacts, foodstruct, recipal) that repackage it; vitamin A from one site only",
+      "confidence": "Medium"
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": 758,
+      "source": "USDA FDC: USDA FDC 173410 'Butter, salted' (SR Legacy); values seen only on secondary sites (getfoodfacts, foodstruct, recipal) that repackage it; vitamin A from one site only",
+      "confidence": "Medium"
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 215,
+      "source": "USDA FDC: USDA FDC 173410 'Butter, salted' (SR Legacy); values seen only on secondary sites (getfoodfacts, foodstruct, recipal) that repackage it; vitamin A from one site only",
+      "confidence": "Medium"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    }
+  },
   "macrosPer100Estimate": {
-    "kcal": 717,
+    "kcal": 715.5,
     "proteinG": 0.9,
     "carbsG": 0.1,
     "fatG": 81,
     "fibreG": 0
   },
-  "storage": "Fridge, wrapped in its paper inside a box; use within 4–6 weeks of opening. Freeze extra blocks for up to 6–12 months.",
-  "looksLike": "a pale-yellow, firm block wrapped in foil-paper inside a small carton (Amul's yellow-and-red \"utterly butterly\" pack).",
-  "howToPick": "cold, firm block; carton not greasy or soft; uniform pale-yellow colour. Avoid darker-yellow surface patches or a rancid/cheesy smell (sign of oxidation).",
-  "shelfLife": "about 6 months refrigerated unopened (check pack); about 1 year frozen.",
+  "storage": "Keep in the fridge (about 4 °C) in its wrapper or a closed box; it can be frozen for longer storage. Keep a small amount at room temperature in a covered dish for a day or two if wanted for spreading.",
+  "looksLike": "A pale yellow, soft block that spreads at room temperature; table butter sold in India (Amul and similar) is salted.",
+  "howToPick": "Check the manufacturing date and a sealed pack, an even pale-yellow colour, and no sour or rancid smell. Avoid packs with oily leaks or dark patches (general guidance, not from a source in this run).",
+  "shelfLife": "About several months refrigerated in an unopened pack; check the printed best-before date.",
   "substitutes": [
     "Ghee",
     "Unsalted butter",
-    "Oil plus a little extra cream"
+    "Oil plus a little extra cream",
+    "Unsalted butter plus a pinch of salt",
+    "Refined oil"
   ],
   "usedIn": [
     {
-      "dishNumber": 3,
-      "quantity": 10,
+      "dishNumber": 86,
+      "quantity": 15,
       "unit": "g",
-      "raw": "10 g (2 tsp)."
+      "raw": "15 g per serving (10 g inside, 5 g outside the bread)"
+    },
+    {
+      "dishNumber": 89,
+      "quantity": 8,
+      "unit": "g",
+      "raw": "8 g per serving"
     }
   ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-10-29",
+      "file": "FitPlate_Ingredients_2026-10-29.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",

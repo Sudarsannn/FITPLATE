@@ -1,0 +1,802 @@
+{
+  "id": "dead-bug",
+  "number": 8,
+  "name": "Dead bug (arms-only, heel-tap and full versions)",
+  "otherNames": [
+    "Dead bugs",
+    "Supine opposite arm and leg reach",
+    "Dead bug core drill",
+    "Arms-only dead bug",
+    "Heel-tap dead bug",
+    "Single-leg dead bug"
+  ],
+  "section": "home",
+  "type": "strength",
+  "equipment": [],
+  "noEquipmentAlternative": "No equipment needed; a mat, carpet or folded blanket under the back is enough.",
+  "musclesPrimary": [
+    "transversus abdominis",
+    "rectus abdominis",
+    "internal obliques",
+    "external obliques"
+  ],
+  "musclesSecondary": [
+    "iliopsoas",
+    "rectus femoris",
+    "anterior deltoid",
+    "gluteus maximus",
+    "erector spinae",
+    "lumbar multifidus"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 2.8,
+  "compendiumCode": "02024",
+  "metOptions": [
+    {
+      "code": "02024",
+      "met": 2.8,
+      "activity": "MET: 2.8, Compendium code 02024, \"calisthenics (e.g., curl ups, abdominal crunches, plank), light effort\" (2024 Adult Compendium of Physical Activities). This is the code that matches the beginner pre"
+    },
+    {
+      "code": "02022",
+      "met": 3.8,
+      "activity": "Extras (text only, not used in the JSON): the full dead bug at a moderate pace could map to 02022, \"calisthenics (e.g., pushups, sit ups, pull-ups, lunges), moderate effort\" = 3.8 METs (5-6/10, Borg 1"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "5-8 per side, arms-only or heel taps",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "3 s out, 3 s back",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 3,
+      "reps": "6 per side, arms-only or heel taps, as a circuit core station",
+      "timeSec": null,
+      "restSec": 30,
+      "tempo": "3 s out, 3 s back",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "strength",
+      "sets": 2,
+      "reps": "5 per side, core-control drill before strength work",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "3 s out, 3 s back",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "8-10 per side, arms-only or heel taps",
+      "timeSec": null,
+      "restSec": 30,
+      "tempo": "3 s out, 3 s back",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "8-10 per side, full dead bug",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "3 s out, 1 s hold, 3 s back",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "8-12 per side with a 2 s pause at full reach",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "3 s out, 2 s pause, 3 s back",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "12 per side, full dead bug",
+      "timeSec": null,
+      "restSec": 30,
+      "tempo": "3 s out, 3 s back",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": 3,
+      "reps": "6-8 per side with a heavier band or dumbbell",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "3 s out, 2 s pause, 3 s back",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "endurance",
+      "sets": 4,
+      "reps": "12-15 per side, banded or straight-leg",
+      "timeSec": null,
+      "restSec": 30,
+      "tempo": "3 s out, 3 s back",
+      "perWeek": 3
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "start_arm",
+        "joint": "shoulder (hip-shoulder-wrist)",
+        "angleDeg": "<= 100",
+        "parsed": {
+          "op": "<=",
+          "value": 100,
+          "max": null
+        }
+      },
+      {
+        "name": "start_leg",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": "<= 100",
+        "parsed": {
+          "op": "<=",
+          "value": 100,
+          "max": null
+        }
+      },
+      {
+        "name": "reach_arm",
+        "joint": "shoulder (hip-shoulder-wrist)",
+        "angleDeg": ">= 150",
+        "parsed": {
+          "op": ">=",
+          "value": 150,
+          "max": null
+        }
+      },
+      {
+        "name": "reach_leg_full_hip",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": ">= 140",
+        "parsed": {
+          "op": ">=",
+          "value": 140,
+          "max": null
+        }
+      },
+      {
+        "name": "reach_leg_full_knee",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": ">= 150",
+        "parsed": {
+          "op": ">=",
+          "value": 150,
+          "max": null
+        }
+      },
+      {
+        "name": "heel_tap_hip",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": ">= 115",
+        "parsed": {
+          "op": ">=",
+          "value": 115,
+          "max": null
+        }
+      },
+      {
+        "name": "heel_tap_knee",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": "<= 110",
+        "parsed": {
+          "op": "<=",
+          "value": 110,
+          "max": null
+        }
+      },
+      {
+        "name": "arms_straight",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": ">= 160",
+        "parsed": {
+          "op": ">=",
+          "value": 160,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 2
+  },
+  "formChecks": [
+    {
+      "joint": "shoulder",
+      "rule": "shoulder angle < 150 degrees at arm-reach phase (equals reach_arm phase threshold): not counted, flagged",
+      "message": "Reach the arm a little further back"
+    },
+    {
+      "joint": "hip",
+      "rule": "hip angle < 140 degrees at full-version leg-reach phase (equals reach_leg_full_hip phase threshold)",
+      "message": "Extend the leg a little more, if the back stays flat"
+    },
+    {
+      "joint": "knee",
+      "rule": "knee angle < 150 degrees at full-version leg-reach phase (equals reach_leg_full_knee phase threshold)",
+      "message": "Extend the leg a little more, if the back stays flat"
+    },
+    {
+      "joint": "hip",
+      "rule": "hip angle < 115 degrees at heel-tap phase (equals heel_tap_hip phase threshold)",
+      "message": "Lower the heel a little more"
+    },
+    {
+      "joint": "knee",
+      "rule": "knee angle > 110 degrees at heel-tap phase (equals heel_tap_knee phase threshold)",
+      "message": "Keep the knee bent"
+    },
+    {
+      "joint": "shoulder",
+      "rule": "shoulder angle > 100 degrees at start phase (equals start_arm phase threshold)",
+      "message": "Bring the arm back to the start"
+    },
+    {
+      "joint": "hip",
+      "rule": "hip angle > 100 degrees at start phase (equals start_leg phase threshold)",
+      "message": "Bring the knee back over the hip"
+    },
+    {
+      "joint": "elbow",
+      "rule": "elbow angle < 160 degrees during the rep (equals arms_straight phase threshold)",
+      "message": "Keep the arm straight but soft"
+    },
+    {
+      "joint": "hip",
+      "rule": "lower-back-arch flag: hip or ribcage landmark rising above the mat line beyond margin (separate flag, not an angle)",
+      "message": "Back down: shorten the reach"
+    },
+    {
+      "joint": "nose",
+      "rule": "head-lift flag: nose landmark rising above the shoulder line beyond margin (separate flag, not an angle)",
+      "message": "Rest your head on the floor"
+    },
+    {
+      "joint": "hip",
+      "rule": "rep duration < 2.0 s (equals min_rep_sec)",
+      "message": "Slow down: 3 seconds out, 3 back"
+    }
+  ],
+  "safetyFlags": [
+    "lower_back_must_stay_down_shorten_reach_if_arching",
+    "breathe_steadily_never_hold_breath",
+    "hypertension_light_effort_rise_slowly",
+    "heart_disease_get_clearance_first",
+    "back_pain_pain_free_range_only",
+    "neck_head_rests_on_floor",
+    "knee_pain_use_feet_flat_arms_only",
+    "shoulder_problems_limit_arm_range",
+    "osteoporosis_neutral_spine_get_advice",
+    "pregnancy_supine_ask_obstetrician",
+    "postpartum_check_abdominal_separation_first",
+    "recent_surgery_get_approval",
+    "stop_with_chest_pain_dizziness_or_belly_bulging"
+  ],
+  "progressions": [
+    "full opposite arm-and-leg dead bug",
+    "2 second pause at full reach",
+    "slower tempo 3 s out and 3 s back",
+    "straight-leg dead bug",
+    "banded dead bug",
+    "light dumbbell dead bug",
+    "stability-ball dead bug"
+  ],
+  "regressions": [
+    "feet-flat arms-only dead bug",
+    "heel taps with a smaller range",
+    "single-limb dead bug"
+  ],
+  "videoShots": [
+    {
+      "seconds": 6,
+      "angle": "side, floor level, 2.5 m",
+      "shows": "setup: lie down, arms up, tabletop, hand-under-back check",
+      "textOverlay": "Light contact: back stays heavy."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, floor level, 2.5 m",
+      "shows": "brace: breathe out, ribs down, lower back light on floor",
+      "textOverlay": "Ribs down. Belly in."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, floor level, 2.5 m",
+      "shows": "arms-only: one arm lowers behind the head and returns",
+      "textOverlay": "One arm at a time."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, floor level, 2.5 m",
+      "shows": "heel tap: heel lowers with knee at 90 degrees and returns",
+      "textOverlay": "Knee stays bent. Soft heel."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, floor level, 2.5 m",
+      "shows": "full dead bug: opposite arm and leg reach and return slowly",
+      "textOverlay": "Opposite arm and leg. Slow."
+    },
+    {
+      "seconds": 7,
+      "angle": "side, floor level, 2 m, split screen",
+      "shows": "wrong vs right: lower back arching vs flat",
+      "textOverlay": "Back stays down."
+    },
+    {
+      "seconds": 6,
+      "angle": "front, floor level above head, 2 m",
+      "shows": "shoulders level, pelvis still",
+      "textOverlay": "Pelvis still."
+    },
+    {
+      "seconds": 7,
+      "angle": "side, floor level, 2.5 m",
+      "shows": "easier feet-flat arms-only and harder banded dead bug",
+      "textOverlay": "Easier: feet flat. Harder: add a band."
+    }
+  ],
+  "lastResearched": "2026-10-30",
+  "setupSteps": [
+    "Floor and mat: lie on a non-slip mat or carpet on a firm floor. Avoid a soft bed, which lets the back sink and hides the arch.",
+    "Noise: the movement is quiet. Place the mat away from the wall so the arms can reach overhead.",
+    "Lie on your back: head resting on the floor in a neutral position, eyes on the ceiling. Do not tuck the chin hard or lift the head (a sport-performance source warns that watching your legs strains the neck).",
+    "Arms: reach both arms straight up over the chest with the palms facing each other (Fit & Well, MyFitnessPal and Healthline all describe this start).",
+    "Legs, full and heel-tap start (tabletop): lift both legs so the hips and knees are bent at about 90 degrees, shins parallel to the floor and knees stacked over the hips (Physitrack and other guides). Beginner start: keep both feet flat on the floor with knees bent (the easier start used for the arms-only version).",
+    "Check the lower back: slide a hand under the small of the back. You should feel light contact, not a big gap (Fit & Well suggests a neutral spine with a slight natural curve; other sources say press the lower back down). Pick one cue and keep it: FitPlate uses \"belly in, lower back stays heavy on the floor\".",
+    "Brace: breathe out and draw the lower ribs down towards the hips (the \"ribs down\" cue). Keep that feeling while you move.",
+    "Clothing: fitted top and leggings or track pants so the camera can see the hips, knees and shoulders. Loose kurtas hide the hip line.",
+    "Water: keep a bottle nearby; this is light work but slow reps feel long."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": "A. Arms-only dead bug (beginner main version)",
+      "title": "Lie down and set the start",
+      "action": "Lie on the mat, arms straight up, knees bent with feet flat (or in tabletop if comfortable).",
+      "feel": "Back of the head and ribs resting on the floor; calm belly.",
+      "breathing": "Breathe in normally.",
+      "tempo": null,
+      "visualCheck": "Side: shoulders, ribs and hips all touching the floor, lower back close to the mat. Front: arms straight up, shoulders level."
+    },
+    {
+      "n": 2,
+      "part": "A. Arms-only dead bug (beginner main version)",
+      "title": "Brace the belly",
+      "action": "Breathe out and gently pull the lower ribs towards the hips so the lower back presses lightly to the floor.",
+      "feel": "Lower belly firm; waistband tight.",
+      "breathing": "Out for the whole brace.",
+      "tempo": null,
+      "visualCheck": "Side: ribs do not point to the ceiling."
+    },
+    {
+      "n": 3,
+      "part": "A. Arms-only dead bug (beginner main version)",
+      "title": "Lower one arm back slowly",
+      "action": "Keeping the elbow straight, lower the right arm behind your head, stopping before the ribs flare or the lower back lifts.",
+      "feel": "Stretch in the front of the shoulder; belly working harder to hold the back down.",
+      "breathing": "Breathe in as the arm lowers (Fit & Well and others suggest in as limbs reach; any steady pattern is fine, never hold the breath).",
+      "tempo": null,
+      "visualCheck": "Side: lower back stays on the floor; ribs stay down. Front: the other arm still straight up, shoulders level."
+    },
+    {
+      "n": 4,
+      "part": "A. Arms-only dead bug (beginner main version)",
+      "title": "Return the arm",
+      "action": "Bring the arm back up over the chest in a controlled arc.",
+      "feel": "Belly stays firm.",
+      "breathing": "Breathe out as it returns.",
+      "tempo": null,
+      "visualCheck": "Arm ends straight up over the shoulder, back still flat."
+    },
+    {
+      "n": 5,
+      "part": "A. Arms-only dead bug (beginner main version)",
+      "title": "Switch arms",
+      "action": "Repeat with the left arm.",
+      "feel": "Same even work in both sides.",
+      "breathing": "Steady.",
+      "tempo": null,
+      "visualCheck": "Pelvis does not tilt or twist."
+    },
+    {
+      "n": 6,
+      "part": "A. Arms-only dead bug (beginner main version)",
+      "title": "Finish the set",
+      "action": "Lower both arms and rest your feet or knees.",
+      "feel": "Belly warm; no back ache.",
+      "breathing": "Slow breaths.",
+      "tempo": null,
+      "visualCheck": "Stop the set early if the lower back lifted."
+    },
+    {
+      "n": 7,
+      "part": "B. Heel-tap dead bug (beginner step up)",
+      "title": "Start in tabletop with arms straight up and the lower back lightly pressed down, as in Setup (steps 4-7)",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 8,
+      "part": "B. Heel-tap dead bug (beginner step up)",
+      "title": "Breathe out to brace, then slowly lower the right heel towards the floor, keeping the knee bent at about 90 degrees (Healthline describes this as keeping the knee bent and tapping the heel to the floor). Breathe in while lowering",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 9,
+      "part": "B. Heel-tap dead bug (beginner step up)",
+      "title": "Tap the heel lightly or hover it, without letting the lower back arch. Stop earlier if the back lifts",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 10,
+      "part": "B. Heel-tap dead bug (beginner step up)",
+      "title": "Bring the knee back to tabletop over the hip, breathing out. Repeat with the left. About 3 seconds down, 3 seconds up (est.)",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 11,
+      "part": "B. Heel-tap dead bug (beginner step up)",
+      "title": "Keep arms up and still in this version, or add arms once your back stays down",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 12,
+      "part": "C. Full dead bug (intermediate)",
+      "title": "Start in tabletop with arms straight up. Brace",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 13,
+      "part": "C. Full dead bug (intermediate)",
+      "title": "Slowly lower the right arm overhead and straighten the left leg away at the same moment, stopping both a few centimetres above the floor, with the lower back still down",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 14,
+      "part": "C. Full dead bug (intermediate)",
+      "title": "Return both to the start together, then repeat on the other side. Breathe in as the limbs reach and out as they return, or out on the reach; pick one and keep it steady (sources differ; see section 7)",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 15,
+      "part": "C. Full dead bug (intermediate)",
+      "title": "Stop the set when the lower back lifts or the ribs flare",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Lower back arching off the floor",
+      "text": "Lower back arching off the floor. Why: the most-cited error; it lets the hip flexors and back muscles do the work instead of the abs and can aggravate back pain. Fix: shorten the reach, raise the legs, or go back to arms-only or heel taps; keep ribs down."
+    },
+    {
+      "title": "Rushing",
+      "text": "Rushing. Why: fast reps lose control and pull the back off the floor (MyFitnessPal and others). Fix: count 3 s out, 3 s back (est.)."
+    },
+    {
+      "title": "Ribs flaring as the arm goes overhead",
+      "text": "Ribs flaring as the arm goes overhead. Why: the ribcage lifts and drags the back into an arch. Fix: stop the arm where the ribs stay down; breathe out to draw the ribs in."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. Why: breath-holding raises blood pressure more than open breathing during effort (lab data from heavy lifting, PubMed 7741618). Fix: breathe steadily; exhale with effort."
+    },
+    {
+      "title": "Lifting the head or tucking the chin to watch the legs",
+      "text": "Lifting the head or tucking the chin to watch the legs. Why: strains the neck. Fix: eyes on the ceiling, head resting."
+    },
+    {
+      "title": "Legs too low or straightened too far too soon",
+      "text": "Legs too low or straightened too far too soon. Why: a long lever arm lifts the back. Fix: keep knees bent (heel taps) until the back stays flat."
+    },
+    {
+      "title": "Pelvis tipping or hips rocking",
+      "text": "Pelvis tipping or hips rocking. Why: the spine moves instead of resisting. Fix: move one limb pair slowly with a still pelvis."
+    },
+    {
+      "title": "Bulging or coning in the middle of the belly (mostly postpartum)",
+      "text": "Bulging or coning in the middle of the belly (mostly postpartum). Why: a sign of poor pressure control. Fix: shorten the range, exhale earlier, and ask a physiotherapist."
+    }
+  ],
+  "safetyNotes": [
+    "Back problems: commonly used as a low-load back exercise, but stay in a range where the back does not arch or hurt; a small group of people find most exercise, including the dead bug, aggravates their pain. Stop if the pain rises.",
+    "Neck or shoulder problems: limit the arm range; keep the head resting.",
+    "High blood pressure and heart disease: breathe steadily, avoid breath-holding, get up slowly from the floor; get clearance for severe or uncontrolled BP or known heart disease.",
+    "Pregnancy and postpartum: the exercise is done lying on the back; guidelines advise limiting back-lying after the first trimester or after 20 weeks (sources disagree); ask an obstetrician. After childbirth, check for abdominal separation first and stop if the belly bulges or domes.",
+    "Recent surgery (especially abdominal), dizziness or balance problems on the floor: only with approval.",
+    "Osteoporosis: the dead bug avoids spinal flexion (practitioner sources), but a clinician should confirm the right exercises for you."
+  ],
+  "sources": [
+    "2024 Adult Compendium of Physical Activities (Herrmann et al., J Sport Health Sci 2024): codes 02022 and 02024 (calisthenics, moderate / light). https://pacompendium.com/conditioning-exercise/ ; https://pacompendium.com/wp-content/uploads/2024/02/1_2024-adult-compendium_1_2024.pdf ; https://pubmed.ncbi.nlm.nih.gov/38242596/",
+    "Healthline, Dead bug exercise (benefits, heel-tap variation, who it suits). https://www.healthline.com/health/exercise-fitness/dead-bug-exercise",
+    "Harvard Health, The many benefits of the \"dead bug\". https://content.health.harvard.edu/blog/the-many-benefits-of-the-ldquodead-bugrdquo",
+    "Hinge Health, How to do a dead bug. https://www.hingehealth.com/gb/en/resources/articles/deadbug/",
+    "AMA, This beginner-friendly core move does more than you think. https://www.ama-assn.org/public-health/prevention-wellness/beginner-friendly-core-move-does-more-you-think",
+    "NASM, Dead bug (exercise library; anti-extension, beginner level). https://www.nasm.org/resource-center/exercise-library/dead-bug",
+    "Fit & Well, How to do dead bugs properly (neutral spine, breathing, pelvis). https://fitandwell.com/how-to/dead-bug",
+    "StrengthLog, How to do dead bugs (muscles worked). https://www.strengthlog.com/dead-bugs/",
+    "MyFitnessPal, 5 rules for better dead bugs (alternating arms as a regression; speed). https://blog.myfitnesspal.com/5-rules-for-better-dead-bugs",
+    "Livestrong, The 8 best dead bug variations. https://livestrong.com/article/13765225-dead-bug-variations",
+    "MasterClass, Dead bug exercise guide (sets and reps for beginners); Greatist, Dead bug exercise (1-3 sets of 5-12 per side); Fitbod, Dead bug (3 sets of 9). https://www.masterclass.com/articles/dead-bug-exercise-guide ; https://www.greatist.com/health/dead-bug-exercise ; https://fitbod.me/exercises/dead-bug",
+    "NTAI, Dead bug workout (3 s extend, 1 s hold, 3 s return); Motra, Dead bug (30-60 s rest). https://www.ntaifitness.com/en/dead-bug-workout ; https://motra.com/exercises/deadBug",
+    "Training Station, Dead bug muscles worked and progressions; NFPT, Dead bug exercise; University of Sussex, Dead bug (primary muscles). https://trainingstation.co.uk/blogs/news/dead-bug-exercise ; https://nfpt.com/dead-bug-exercise/ ; https://www.sussex.ac.uk/sport/documents/dead-bug.pdf",
+    "Physitrack, Supine dead bugs (tabletop 90 degrees). https://au.physitrack.com/home-exercise-video/supine-dead-bugs",
+    "Sport Manitoba, 5 common mistakes that squash the benefits of your dead bug (neck, back, speed, breath). https://sportmanitoba.ca/resources/5-common-mistakes-that-squash-the-benefits-of-your-dead-bug",
+    "Korean EMG study on dead bug variations and speed (rectus abdominis and obliques). https://koreascience.or.kr/article/JAKO201718155358635.pdf ; Chapman University abstract (surface EMG cannot measure deep muscles). https://digitalcommons.chapman.edu/cusrd_abstracts/239 ; Comparison of stabilization exercises (Brieflands). https://brieflands.com/journals/zjrms/articles/963",
+    "ClinicalTrials.gov NCT06399549, Dead bug vs McGill exercises for chronic non-specific low back pain (no results found). https://clinicaltrials.gov/study/NCT06399549",
+    "Bodyspec, Dead bug exercise: form, benefits, variations (research summary on activation). https://www.bodyspec.com/blog/post/dead_bug_exercise_form_benefits_and_variations",
+    "Catalyst Athletics, Dead bug (pelvis and spine control). https://catalystathletics.com/exercise/494/Dead-Bug",
+    "ACSM-linked Borg RPE bands (light 9-11, moderate 12-13, vigorous 14-17) and talk test. https://pmc.ncbi.nlm.nih.gov/articles/PMC10310950/table/tbl1 ; https://pmc.ncbi.nlm.nih.gov/articles/PMC9618974/table/tbl4 ; https://blog.nasm.org/rate-of-perceived-exertion",
+    "Influence of breathing technique on arterial blood pressure during heavy weight lifting (1995). https://pubmed.ncbi.nlm.nih.gov/7741618/",
+    "IDEA Fitness, ACOG guidelines summary (back-lying after the first trimester); ACOG opinion via DONA summary; NCBI Bookshelf exercise in pregnancy. https://www.ideafit.com/acog-guidelines ; https://dona.org/new-acog-opinion-on-exercise-in-the-childbearing-year/ ; https://www.ncbi.nlm.nih.gov/books/NBK582697/",
+    "MKUH, Diastasis recti following pregnancy; Berkshire Healthcare, Divarication of rectus abdominis leaflet; Oxford University Hospitals, diastasis leaflet; University of Padua thesis on postpartum diastasis physiotherapy. https://www.mkuh.nhs.uk/?p=22862 ; https://www.berkshirehealthcare.nhs.uk/media/109514453/divarication-of-rectus-abdominis-physio-leaflet-berkshrie-healthcare.pdf ; https://ulive.ouh.nhs.uk/media/gedal1lb/74152pdiastasis.pdf ; https://thesis.unipd.it/handle/20.500.12608/56620",
+    "Globe and Mail, Are there good alternatives to sit-ups (osteoporosis and flexion). https://www.theglobeandmail.com/amp/life/health-and-fitness/ask-a-health-expert/are-there-good-alternatives-to-sit-ups/article562893/",
+    "Pharmacy Magazine CPD, Exercise and asthma (Asthma UK tips); Cambridge University Hospitals, exercise-induced bronchoconstriction leaflet; warm-up review. https://www.pharmacymagazine.co.uk/cpd-modules/making-a-difference-in-asthma-care/exercise-and-asthma-528343 ; https://www.cuh.nhs.uk/patient-information/exercise-induced-bronchoconstriction-for-children-and-young-people/ ; https://pubmed.ncbi.nlm.nih.gov/21811185/",
+    "ACSM (Zaleski), exercise for the prevention and treatment of hypertension; NCHPAD summary. https://acsm.org/exercise-for-the-prevention-and-treatment-of-hypertension/ ; https://nchpad.org/817/4203/Physical~Activity~~The~Best~Prescription~for~Hypertension",
+    "Colberg SR et al. (2016), ADA position statement on physical activity/exercise and diabetes, Diabetes Care 39:2065-2079. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/",
+    "AHA, Recommendations for physical activity in adults; AHA Professional, Physical activity as first-line treatment for elevated BP or cholesterol (Gibbs et al.). https://heart.org/en/healthy-living/exercise-and-physical-activity/fitness-basics/aha-recs-for-physical-activity-in-adults ; https://professional.heart.org/en/science-news/Physical-Activity-as-a-Critical-Component-of-First-Line-Treatment-for-Elevated-BP-or-Cholesterol/commentary",
+    "Donnelly JE et al. (2009), ACSM position stand on physical activity for weight loss; ACE Fitness, Tips for training clients impacted by obesity. https://pubmed.ncbi.nlm.nih.gov/19127177/ ; https://www.acefitness.org/education-and-resources/professional/expert-articles/6459/tips-for-training-clients-impacted-by-obesity/",
+    "Effect of physical exercise in people with hypothyroidism: systematic review and meta-analysis (2023). https://pubmed.ncbi.nlm.nih.gov/37999992/",
+    "Harvard Health, Walking, cycling and swimming are best exercises for knee osteoarthritis. https://content.health.harvard.edu/blog/walking-cycling-and-swimming-are-best-exercises-for-knee-osteoarthritis",
+    "Oxford University Hospitals, back pain leaflet; Sherwood Forest Hospitals, Managing back pain. https://www.ouh.nhs.uk/media/mrfblszk/116451pain.pdf ; https://sfh-tr.nhs.uk/media/0jlnxa0c/pil202501-06-mbp-managing-back-pain.pdf",
+    "HSS Rehabilitation, Shoulder impingement non-operative guideline. https://www.hss.edu/files/HSSRehabilitationClinicalGuidelines-Shoulder-Impingement-Non-operative.pdf",
+    "Strong, Steady and Straight: UK osteoporosis exercise consensus (BJSM 2022). https://bjsm.bmj.com/content/56/15/837"
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 35.7,
+      "70kg": 30.6,
+      "80kg": 26.8
+    },
+    "per300kcal": {
+      "60kg": 107.1,
+      "70kg": 91.8,
+      "80kg": 80.4
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "strength",
+    "core",
+    "mobility",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "small_flat",
+    "neighbours_below",
+    "quiet",
+    "short_sessions",
+    "no_equipment",
+    "back_friendly_core",
+    "warm_up_core_drill"
+  ],
+  "swapsByAccess": {
+    "none": "Plank on the knees (Home 3) or a standing wall march for core control; side-lying core work if a clinician approves",
+    "home_equipment": "Plank from the knees (Home 3) on a mat, or a sofa-incline dead bug (est.)",
+    "basic_gym": "Plank (Home 3) on the mat area, or a stability-ball version if available",
+    "full_gym": "Cable crunch or ab crunch machine (Gym 42), captain's chair leg raise (Gym 43) or cable woodchopper (Gym 44)"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "Light effort (3-4/10, Borg 9-11); slow reps; breathe out on effort and never hold the breath; rise slowly from the floor; severe or uncontrolled BP needs a medical check first",
+      "source": "ACSM hypertension guidance (Zaleski); NCHPAD summary; Valsalva study (PubMed 7741618)"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "Counts as resistance work; usual glucose checks and fast carbohydrate on hand if on insulin or sulfonylureas; check feet if neuropathy",
+      "source": "ADA position statement (Colberg et al. 2016)"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "After clearance only: slow arms-only version at light effort (3-4/10, Borg 9-11), steady breathing; stop with chest discomfort or breathlessness",
+      "source": "AHA physical activity recommendations; clearance specifics Not found"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "Counts toward the resistance part of the weekly exercise mix; aerobic minutes still come from other items",
+      "source": "AHA recommendations; AHA statement (Gibbs et al.)"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Make sure getting down to and up from the floor is comfortable; start with arms-only on a firm mat; build slowly",
+      "source": "ACE obesity training article; ACSM weight position stand (Donnelly 2009); dead-bug-specific advice Not found"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "Fits general strength guidance; no dead-bug-specific advice found",
+      "source": "Not found"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "Train as usual if controlled; start at beginner level if fatigued",
+      "source": "Systematic review 2023 (PubMed 37999992)"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Low-intensity floor work; warm up, keep reliever nearby; stop and use it if wheeze or cough starts",
+      "source": "Asthma UK tips via Pharmacy Magazine CPD; Cambridge University Hospitals leaflet; PubMed 21811185"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Tabletop holds knees at about 90 degrees; if that hurts, use the feet-flat arms-only version; keep ranges small",
+      "source": "Harvard Health low-impact analysis for knee OA; Healthline dead bug article; dead-bug-specific knee advice Not found"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Start arms-only or heel taps in a pain-free range; keep the back flat; stop if the back arches or pain increases; staying active beats bed rest",
+      "source": "Healthline dead bug article; Hinge Health guide; NHS hospital back-pain leaflets (Oxford University Hospitals; Sherwood Forest); ClinicalTrials.gov NCT06399549 (no results found)"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "modify",
+      "change": "Limit how far the arm lowers behind the head; use the heel-tap version with arms still; stop if pinching or pain",
+      "source": "HSS shoulder impingement protocol; dead-bug-specific shoulder advice Not found"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "modify",
+      "change": "Keep a neutral spine, no crunch-style spinal bending; practitioner sources call the dead bug a flexion-free alternative; ask for individual advice",
+      "source": "Strong, Steady and Straight (Royal Osteoporosis Society, BJSM 2022); Globe and Mail health-expert answer; clinical guideline naming the dead bug Not found"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "ask_doctor",
+      "change": "Done lying on the back; ACOG as summarised by IDEA says avoid back-lying after the first trimester (another source says after 20 weeks); ask your obstetrician; side-lying or all-fours core work are alternatives",
+      "source": "ACOG via IDEA Fitness summary; ACOG via DONA summary; UK physiotherapy good-practice statement; dead-bug-specific advice Not found"
+    },
+    {
+      "condition": "postpartum",
+      "status": "ask_doctor",
+      "change": "Ask a women's health physiotherapist first; reduce the range and stop if the belly bulges or domes",
+      "source": "MKUH, Berkshire Healthcare and Oxford University Hospitals diastasis leaflets; University of Padua thesis"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Only with surgeon or physiotherapist approval, especially after abdominal surgery",
+      "source": "Not found"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "home",
+      "gym"
+    ],
+    "bodyRegion": [
+      "core"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "strength",
+      "endurance"
+    ],
+    "intensity": "light",
+    "noise": "quiet",
+    "space": "mat_only",
+    "typicalMinutes": 5,
+    "kcalPer10min70kg": 32.7,
+    "difficulty1to5": 2,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Home",
+    "Gym",
+    "No equipment",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Strength",
+    "Core",
+    "Rep counter",
+    "Under 10 min"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-10-30",
+      "file": "FitPlate_Fitness_2026-10-30.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

@@ -1,0 +1,413 @@
+{
+  "id": "potassium",
+  "name": "Potassium",
+  "type": "mineral",
+  "subtype": "macromineral",
+  "unit": "mg",
+  "altUnits": [
+    {
+      "unit": "mmol",
+      "toMainUnitFactor": 39.1
+    },
+    {
+      "unit": "mEq",
+      "toMainUnitFactor": 39.1
+    },
+    {
+      "unit": "mg potassium chloride (KCl)",
+      "toMainUnitFactor": 0.524
+    }
+  ],
+  "unitConversions": [
+    {
+      "fromUnit": "g",
+      "compound": "potassium chloride",
+      "toMainUnitFactor": 524,
+      "raw": "1 g potassium chloride (KCl) | about 524 mg potassium (13.4 mmol)"
+    },
+    {
+      "fromUnit": "mg",
+      "compound": "kcl tablet",
+      "toMainUnitFactor": 0.521667,
+      "raw": "600 mg KCl tablet (\"8 mEq\", extended-release) | about 313 mg potassium"
+    },
+    {
+      "fromUnit": "mg",
+      "compound": "potassium citrate tablet",
+      "toMainUnitFactor": 0.362037,
+      "raw": "1,080 mg potassium citrate tablet | about 391 mg potassium (10 mEq)"
+    }
+  ],
+  "targets": [
+    {
+      "group": "adult_male_sedentary",
+      "ear": null,
+      "rda": null,
+      "ai": 3510,
+      "source": "ICMR-NIN 2020 AI 3,510 mg (secondary, unverified); WHO 2012 basis"
+    },
+    {
+      "group": "adult_male_moderate",
+      "ear": null,
+      "rda": null,
+      "ai": 3510,
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "group": "adult_male_heavy",
+      "ear": null,
+      "rda": null,
+      "ai": 3510,
+      "source": "ICMR-NIN 2020 (secondary, unverified); heavy sweating needs Not found"
+    },
+    {
+      "group": "adult_female_sedentary",
+      "ear": null,
+      "rda": null,
+      "ai": 3510,
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "group": "adult_female_moderate",
+      "ear": null,
+      "rda": null,
+      "ai": 3510,
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "group": "adult_female_heavy",
+      "ear": null,
+      "rda": null,
+      "ai": 3510,
+      "source": "ICMR-NIN 2020 (secondary, unverified); heavy sweating needs Not found"
+    },
+    {
+      "group": "pregnant",
+      "ear": null,
+      "rda": null,
+      "ai": null,
+      "source": "ICMR value Not found; EFSA 2016 3,500 mg; NASEM 2019 2,900 mg (secondary)"
+    },
+    {
+      "group": "lactating",
+      "ear": null,
+      "rda": null,
+      "ai": null,
+      "source": "ICMR value Not found; EFSA 2016 4,000 mg; NASEM 2019 2,800 mg; NHMRC 3,200 mg (secondary)"
+    }
+  ],
+  "appDefaultTarget": {
+    "adult_male": 3510,
+    "adult_female": 3510,
+    "pregnant": null,
+    "lactating": null,
+    "age_60_plus": null
+  },
+  "upperLimit": {
+    "value": null,
+    "unit": "mg",
+    "appliesTo": "supplements_only",
+    "source": "No UL: ICMR TUL Not found; NASEM 2019 and EFSA set none for food. Reference points only (secondary): NHS 3,700 mg/day supplements unlikely to harm healthy adults; Norway VKM 3,000 mg/day supplemental guidance level; German BfR proposal 500 mg per daily dose. Any potassium medicine needs doctor input"
+  },
+  "topFoodSources": [
+    {
+      "food": "Red gram dal, raw (toor/arhar) (IFCT B021)",
+      "veg": true,
+      "per100g": 1395,
+      "servingG": 30,
+      "servingLabel": "30 g raw, about 1 katori dal (est.)",
+      "perServing": 418
+    },
+    {
+      "food": "Rajmah, brown, raw (IFCT B019)",
+      "veg": true,
+      "per100g": 1366,
+      "servingG": 30,
+      "servingLabel": "30 g raw (est.)",
+      "perServing": 410
+    },
+    {
+      "food": "Green gram whole, raw (moong) (IFCT B011)",
+      "veg": true,
+      "per100g": 1177,
+      "servingG": 30,
+      "servingLabel": "30 g raw (est.)",
+      "perServing": 353
+    },
+    {
+      "food": "Potato, brown skin, big (IFCT F006)",
+      "veg": true,
+      "per100g": 541,
+      "servingG": 150,
+      "servingLabel": "1 medium (est.)",
+      "perServing": 812
+    },
+    {
+      "food": "Spinach (palak) (IFCT C033)",
+      "veg": true,
+      "per100g": 625,
+      "servingG": 100,
+      "servingLabel": "100 g raw (est.)",
+      "perServing": 625
+    },
+    {
+      "food": "Banana, ripe, montham (IFCT E009)",
+      "veg": true,
+      "per100g": 362,
+      "servingG": 100,
+      "servingLabel": "1 medium, peeled (est.)",
+      "perServing": 362
+    },
+    {
+      "food": "Coconut water, tender (IFCT K002)",
+      "veg": true,
+      "per100g": 215,
+      "servingG": 200,
+      "servingLabel": "1 glass 200 ml (est.)",
+      "perServing": 430
+    },
+    {
+      "food": "Chicken breast, skinless (IFCT N003)",
+      "veg": false,
+      "per100g": 295,
+      "servingG": 150,
+      "servingLabel": "150 g (est.)",
+      "perServing": 443
+    }
+  ],
+  "goodSourceDishes": [
+    {
+      "dishNumber": 49,
+      "dishName": "Mushroom Masala"
+    },
+    {
+      "dishNumber": 60,
+      "dishName": "Aloo Matar"
+    },
+    {
+      "dishNumber": 75,
+      "dishName": "Dum Aloo"
+    },
+    {
+      "dishNumber": 67,
+      "dishName": "Mix Veg Curry"
+    },
+    {
+      "dishNumber": 44,
+      "dishName": "Baingan Bharta"
+    },
+    {
+      "dishNumber": 66,
+      "dishName": "Sprouts Chaat"
+    },
+    {
+      "dishNumber": 56,
+      "dishName": "Pesarattu"
+    }
+  ],
+  "deficiencyRiskIndia": "moderate",
+  "absorptionBoosters": [
+    "Normal blood magnesium (low magnesium causes potassium loss in urine)",
+    "Potassium with citrate-type organic salts from fruit and vegetables",
+    "Eating the cooking liquid of dal and vegetables (keeps leached potassium)"
+  ],
+  "absorptionBlockers": [
+    "No food blockers; losses from diarrhoea, vomiting, diuretics, laxatives, steroids and high sodium intake lower body potassium"
+  ],
+  "logPresets": [
+    {
+      "label": "ORS glass 200 ml, WHO low-osmolarity (20 mmol/L potassium)",
+      "amount": 156,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 156,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Low-sodium salt 1/4 tsp, about 1.25 g (Tata Salt Lite listing; est.)",
+      "amount": 98,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 98,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Low-sodium salt 1 level tsp, about 5 g (Tata Salt Lite listing; est.)",
+      "amount": 390,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 390,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Tender coconut water 200 ml (IFCT; est.)",
+      "amount": 430,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 430,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Doctor-prescribed potassium chloride 600 mg tablet, 8 mEq (prescription dose)",
+      "amount": 313,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 313,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Doctor-prescribed potassium chloride syrup 15 ml, about 20 mEq (prescription dose)",
+      "amount": 786,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 786,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Doctor-prescribed potassium chloride 40 mEq/day (prescription dose)",
+      "amount": 1564,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 1564,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Doctor-prescribed potassium citrate 60 mEq/day (prescription dose)",
+      "amount": 2346,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 2346,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    }
+  ],
+  "warnings": [
+    "Potassium from food is tracked as a target to reach (3,510 mg), not a limit, for users with healthy kidneys and no potassium-raising medicines.",
+    "Kidney disease, ACE inhibitors, ARBs, potassium-sparing diuretics (spironolactone, eplerenone, amiloride), NSAIDs, pregnancy or breastfeeding: requires_doctor_input; show only the general benchmark plus 'Follow your doctor's advice'; never push more or less potassium.",
+    "Never recommend potassium supplements, potassium tablets or potassium-enriched salt substitutes; show salt substitutes only after the user confirms no kidney disease, not pregnant and no potassium-raising medicine, with 'check with your doctor first' (WHO 2025; P3).",
+    "Any potassium medicine (tablet, syrup, citrate) is logged as a prescription dose and only when the user marks it as prescribed; never a quick choice.",
+    "No ICMR TUL or international UL exists for food potassium; the 3,000 mg supplement reference is secondary.",
+    "ICMR potassium values are secondary, unverified; ICMR pregnancy, lactation and 60+ values Not found.",
+    "IFCT Prawns, big (S008) row is suspect (sodium 849 mg/100 g); potassium 269 mg/100 g is plausible but use about 141-149 mg/100 g until checked.",
+    "Dish files mix 3,500 and 3,510 mg references; use 3,510 mg.",
+    "Symptoms of high or low potassium (palpitations, fainting, severe weakness, paralysis, tingling with chest pain): see a doctor now."
+  ],
+  "conditionAdjustments": [
+    {
+      "profileId": "P3",
+      "change": "At least 3,510 mg from food only if no kidney disease and no potassium-raising medicine (ACC/AHA 3,500-5,000); no potassium salt substitutes without a doctor's OK; requires_doctor_input if on ACE inhibitor, ARB or potassium-sparing diuretic",
+      "value": 3510,
+      "unit": "mg",
+      "source": "WHO 2012; ACC/AHA 2017; ESC 2024; WHO 2025 (as in P3)"
+    },
+    {
+      "profileId": "P13",
+      "change": "No automatic push higher or lower; KDIGO 2024 favours an individual plan from serum potassium and stage; no supplements or salt substitutes; requires_doctor_input",
+      "value": null,
+      "unit": "mg",
+      "source": "KDIGO 2024 (via secondary summaries); NKF-type guidance (secondary)"
+    },
+    {
+      "profileId": "P21",
+      "change": "Many users take ACE inhibitors, ARBs, spironolactone or diuretics; doctor sets potassium; requires_doctor_input",
+      "value": null,
+      "unit": "mg",
+      "source": "Drug Safety 2014 review; Mayo Clinic hyperkalemia"
+    },
+    {
+      "profileId": "P22",
+      "change": "ICMR value Not found; EFSA 3,500 mg; NASEM 2,900 mg; food only, no supplements or salt substitutes; requires_doctor_input",
+      "value": 3500,
+      "unit": "mg",
+      "source": "EFSA 2016; NASEM 2019; WHO 2025 (secondary)"
+    },
+    {
+      "profileId": "P23",
+      "change": "ICMR value Not found; EFSA 4,000 mg, NASEM 2,800 mg, NHMRC 3,200 mg; milk loses about 500 mg potassium per litre; food only; requires_doctor_input",
+      "value": 4000,
+      "unit": "mg",
+      "source": "EFSA 2016; NASEM 2019; NHMRC (secondary)"
+    },
+    {
+      "profileId": "P14",
+      "change": "DASH-style fruit and vegetable eating lowered stone risk in cohorts; potassium citrate is a prescription medicine for low urinary citrate; requires_doctor_input for potassium citrate",
+      "value": null,
+      "unit": "mg",
+      "source": "DASH kidney stone cohort studies (PubMed 19679672); AUA-linked review (secondary)"
+    },
+    {
+      "profileId": "P20",
+      "change": "No change found for the target; potassium salts lowered bone resorption markers but not bone density",
+      "value": null,
+      "unit": "mg",
+      "source": "Lambert et al. meta-analysis; Nutrients 2024 narrative review (via snippets)"
+    },
+    {
+      "profileId": "P29",
+      "change": "No change found; sweat potassium about 80-390 mg/L, covered by food",
+      "value": null,
+      "unit": "mg",
+      "source": "Sweat potassium summaries (secondary)"
+    },
+    {
+      "profileId": "P31",
+      "change": "Same 3,510 mg benchmark; older adults at higher risk from supplements and diuretic-related low potassium; requires_doctor_input if on diuretics, ACE inhibitors or ARBs",
+      "value": 3510,
+      "unit": "mg",
+      "source": "nidirect/NHS; Food Standards Scotland; geriatric drug-induced hypokalemia review (secondary)"
+    },
+    {
+      "profileId": "P33",
+      "change": "No change to target; no potato, arbi, yam or beetroot; use dals, leafy greens, banana, nuts, dried fruit and milk products",
+      "value": null,
+      "unit": "mg",
+      "source": "IFCT 2017; Jain diet rules (P33)"
+    },
+    {
+      "profileId": "P34",
+      "change": "No change found; plant sources supply potassium; watch sodium in vegan convenience foods",
+      "value": null,
+      "unit": "mg",
+      "source": "No change found"
+    }
+  ],
+  "lastResearched": "2026-10-30",
+  "versions": [
+    {
+      "date": "2026-10-30",
+      "file": "FitPlate_Nutrients_2026-10-30.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3)",
+    "upperLimit": "official safety limit (D3, lower on conflict)",
+    "topFoodSources": "union; per100g official (D3)",
+    "logPresets": "union by label (newest), converted with own file factors",
+    "appDefaultTarget": "newest, kept only where it equals the ICMR row",
+    "lists": "union",
+    "warnings": "union (never dropped)",
+    "text": "newest"
+  },
+  "mergeNotes": [],
+  "needsReview": [
+    "app_default_target.pregnant = 3510 has no ICMR row to match (pregnant: \"ICMR value Not found; EFSA 2016 3,500 mg; NASEM 2019 2,900 mg (secondary)\"); set to null",
+    "app_default_target.lactating = 3510 has no ICMR row to match (lactating: \"ICMR value Not found; EFSA 2016 4,000 mg; NASEM 2019 2,800 mg; NHMRC 3,200 mg (secondary)\"); set to null",
+    "2026-10-30 potassium: \"group\" has unexpected value \"age_60_plus_male\"; treated as not found",
+    "2026-10-30 potassium: \"group\" has unexpected value \"age_60_plus_female\"; treated as not found"
+  ]
+}

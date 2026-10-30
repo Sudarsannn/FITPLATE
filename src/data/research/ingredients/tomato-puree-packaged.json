@@ -1,0 +1,87 @@
+{
+  "id": "tomato-puree-packaged",
+  "name": "Tomato puree, packaged",
+  "aliases": [
+    "tamatar puree",
+    "Kissan",
+    "Dabur Hommade"
+  ],
+  "category": "Packaged / condiment",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-25",
+        "min": 115,
+        "max": 158,
+        "avg": 133,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 115,
+      "max": 155,
+      "avg": 135
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-25",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 3,
+    "platforms": [
+      "BigBasket"
+    ],
+    "outOfStock": false,
+    "confirmed": false,
+    "checkNotes": [
+      "only 1 platform (BigBasket) backs the range"
+    ]
+  },
+  "per100Estimate": {
+    "min": 11.5,
+    "max": 15.5,
+    "avg": 13.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": null,
+  "storage": "Keep unopened packs in a cool cupboard; refrigerate after opening in a closed glass or steel container and use within 2 to 3 days, or freeze in small portions.",
+  "looksLike": "A thick, smooth red liquid in a small carton or tetra pack, without chunks or added ketchup.",
+  "howToPick": "Read the label for \"tomato puree\" with only tomato and perhaps salt or acid, not ketchup with sugar and vinegar. A deep red colour and no leaking carton are good signs.",
+  "shelfLife": "Several months unopened on the pack date; use within 2 to 3 days once opened (general guidance, not from a source in this run).",
+  "substitutes": [
+    "Fresh tomatoes, blanched and blended (about 120 g per 80 g puree)",
+    "Tomato paste thinned with water (1 part to 2 parts)",
+    "Canned chopped tomatoes, blended"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 102,
+      "quantity": 80,
+      "unit": "g",
+      "raw": "80 g per serving (about ⅓ cup)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-25",
+      "file": "FitPlate_Ingredients_2026-10-25.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (none)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "looksLike": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 115.0–158.0 was wider than 30% of avg 133.0; narrowed to ±15%."
+  ]
+}

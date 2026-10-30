@@ -1,6 +1,6 @@
 {
   "schema": "fitplate.links.v1",
-  "generatedFor": "Day12",
+  "generatedFor": "Day13",
   "goodSourceDishes": {
     "biotin": [
       {
@@ -129,6 +129,38 @@
         "dishNumber": 55,
         "dishName": "Prawn Masala",
         "dishId": "055-prawn-masala"
+      }
+    ],
+    "chloride": [
+      {
+        "dishNumber": 31,
+        "dishName": "Indian-style Overnight Oats",
+        "dishId": "031-indian-style-overnight-oats"
+      },
+      {
+        "dishNumber": 81,
+        "dishName": "Paneer Paratha",
+        "dishId": "081-paneer-paratha"
+      },
+      {
+        "dishNumber": 21,
+        "dishName": "Masala Omelette",
+        "dishId": "021-masala-omelette"
+      },
+      {
+        "dishNumber": 66,
+        "dishName": "Sprouts Chaat",
+        "dishId": "066-sprouts-chaat"
+      },
+      {
+        "dishNumber": 51,
+        "dishName": "Uttapam",
+        "dishId": "051-uttapam"
+      },
+      {
+        "dishNumber": 56,
+        "dishName": "Pesarattu",
+        "dishId": "056-pesarattu"
       }
     ],
     "niacin": [
@@ -355,6 +387,43 @@
         "dishNumber": 5,
         "dishName": "Dal Tadka",
         "dishId": "005-dal-tadka"
+      }
+    ],
+    "potassium": [
+      {
+        "dishNumber": 49,
+        "dishName": "Mushroom Masala",
+        "dishId": "049-mushroom-masala"
+      },
+      {
+        "dishNumber": 60,
+        "dishName": "Aloo Matar",
+        "dishId": "060-aloo-matar"
+      },
+      {
+        "dishNumber": 75,
+        "dishName": "Dum Aloo",
+        "dishId": "075-dum-aloo"
+      },
+      {
+        "dishNumber": 67,
+        "dishName": "Mix Veg Curry",
+        "dishId": "067-mix-veg-curry"
+      },
+      {
+        "dishNumber": 44,
+        "dishName": "Baingan Bharta",
+        "dishId": "044-baingan-bharta"
+      },
+      {
+        "dishNumber": 66,
+        "dishName": "Sprouts Chaat",
+        "dishId": "066-sprouts-chaat"
+      },
+      {
+        "dishNumber": 56,
+        "dishName": "Pesarattu",
+        "dishId": "056-pesarattu"
       }
     ],
     "riboflavin": [
@@ -910,7 +979,8 @@
       "phosphorus"
     ],
     "049-mushroom-masala": [
-      "biotin"
+      "biotin",
+      "potassium"
     ],
     "038-egg-curry": [
       "biotin",
@@ -926,6 +996,7 @@
     ],
     "021-masala-omelette": [
       "biotin",
+      "chloride",
       "pantothenic-acid",
       "riboflavin",
       "sodium",
@@ -965,6 +1036,7 @@
     ],
     "031-indian-style-overnight-oats": [
       "calcium",
+      "chloride",
       "riboflavin",
       "sodium",
       "vitamin-b12",
@@ -993,6 +1065,26 @@
       "pantothenic-acid",
       "vitamin-b12",
       "vitamin-d"
+    ],
+    "081-paneer-paratha": [
+      "chloride",
+      "sodium"
+    ],
+    "066-sprouts-chaat": [
+      "chloride",
+      "potassium",
+      "sodium",
+      "vitamin-b6"
+    ],
+    "051-uttapam": [
+      "chloride",
+      "sodium"
+    ],
+    "056-pesarattu": [
+      "chloride",
+      "phosphorus",
+      "potassium",
+      "sodium"
     ],
     "023-mutton-rogan-josh": [
       "niacin",
@@ -1073,10 +1165,6 @@
       "vitamin-b12",
       "vitamin-b6"
     ],
-    "056-pesarattu": [
-      "phosphorus",
-      "sodium"
-    ],
     "026-moong-dal-chilla": [
       "phosphorus",
       "thiamine"
@@ -1085,19 +1173,22 @@
       "phosphorus",
       "thiamine"
     ],
+    "060-aloo-matar": [
+      "potassium",
+      "vitamin-b6"
+    ],
+    "075-dum-aloo": [
+      "potassium"
+    ],
+    "067-mix-veg-curry": [
+      "potassium"
+    ],
+    "044-baingan-bharta": [
+      "potassium"
+    ],
     "082-methi-chicken": [
       "riboflavin",
       "vitamin-k"
-    ],
-    "081-paneer-paratha": [
-      "sodium"
-    ],
-    "066-sprouts-chaat": [
-      "sodium",
-      "vitamin-b6"
-    ],
-    "051-uttapam": [
-      "sodium"
     ],
     "029-misal-pav": [
       "thiamine"
@@ -1128,9 +1219,6 @@
     ],
     "050-chicken-korma": [
       "vitamin-b12"
-    ],
-    "060-aloo-matar": [
-      "vitamin-b6"
     ],
     "032-aloo-gobi": [
       "vitamin-c",
@@ -1199,6 +1287,21 @@
       "met": 2.3
     },
     {
+      "exerciseId": "balasana-childs-pose",
+      "name": "Balasana (Child's Pose)",
+      "met": 2.3
+    },
+    {
+      "exerciseId": "barbell-back-squat",
+      "name": "Barbell back squat",
+      "met": 3.5
+    },
+    {
+      "exerciseId": "barbell-deadlift",
+      "name": "Barbell deadlift",
+      "met": 3.5
+    },
+    {
       "exerciseId": "bhujangasana-cobra-pose",
       "name": "Bhujangasana (Cobra pose)",
       "met": 2.3
@@ -1207,6 +1310,11 @@
       "exerciseId": "bodyweight-squat",
       "name": "Bodyweight squat",
       "met": 3.8
+    },
+    {
+      "exerciseId": "dead-bug",
+      "name": "Dead bug (arms-only, heel-tap and full versions)",
+      "met": 2.8
     },
     {
       "exerciseId": "desk-neck-shoulder-release",
@@ -1495,6 +1603,68 @@
         "source": "ingredient research (USDA FDC: USDA FDC 170917 'Spices, bay leaf' (Laurus nobilis, not C. tamala); seen on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
+    "beetroot": {
+      "iron": {
+        "per100": 0.8,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169145 'Beets, raw'; values seen only on secondary sites that mirror it; mineral figures chosen from ranges; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "calcium": {
+        "per100": 16,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169145 'Beets, raw'; values seen only on secondary sites that mirror it; mineral figures chosen from ranges; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "potassium": {
+        "per100": 325,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169145 'Beets, raw'; values seen only on secondary sites that mirror it; mineral figures chosen from ranges; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "magnesium": {
+        "per100": 25,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169145 'Beets, raw'; values seen only on secondary sites that mirror it; mineral figures chosen from ranges; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "sodium": {
+        "per100": 78,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169145 'Beets, raw'; values seen only on secondary sites that mirror it; mineral figures chosen from ranges; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-c": {
+        "per100": 4.9,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169145 'Beets, raw'; values seen only on secondary sites that mirror it; mineral figures chosen from ranges; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "folate": {
+        "per100": 109,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169145 'Beets, raw'; values seen only on secondary sites that mirror it; mineral figures chosen from ranges; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169145 'Beets, raw'; values seen only on secondary sites that mirror it; mineral figures chosen from ranges; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "phosphorus": {
+        "per100": 40,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169145 'Beets, raw'; values seen only on secondary sites that mirror it; mineral figures chosen from ranges; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "copper": {
+        "per100": 0.08,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169145 'Beets, raw'; values seen only on secondary sites that mirror it; mineral figures chosen from ranges; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "manganese": {
+        "per100": 0.33,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169145 'Beets, raw'; values seen only on secondary sites that mirror it; mineral figures chosen from ranges; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169145 'Beets, raw'; values seen only on secondary sites that mirror it; mineral figures chosen from ranges; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
     "bisi-bele-bath-powder-packaged": {
       "sodium": {
         "per100": 28,
@@ -1605,6 +1775,23 @@
         "source": "ingredient research (USDA FDC: FDC ID 169228 Eggplant, raw (SR Legacy) and FDC ID 2685577 Eggplant, raw (Foundation), via secondary sites (getfoodfacts.com, recipal.com, fatsecret))"
       }
     },
+    "butter-salted": {
+      "sodium": {
+        "per100": 643,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 173410 'Butter, salted' (SR Legacy); values seen only on secondary sites (getfoodfacts, foodstruct, recipal) that repackage it; vitamin A from one site only)"
+      },
+      "vitamin-a": {
+        "per100": 758,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 173410 'Butter, salted' (SR Legacy); values seen only on secondary sites (getfoodfacts, foodstruct, recipal) that repackage it; vitamin A from one site only)"
+      },
+      "cholesterol": {
+        "per100": 215,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 173410 'Butter, salted' (SR Legacy); values seen only on secondary sites (getfoodfacts, foodstruct, recipal) that repackage it; vitamin A from one site only)"
+      }
+    },
     "button-mushrooms-white": {
       "potassium": {
         "per100": 320,
@@ -1640,6 +1827,68 @@
         "per100": 3.6,
         "unit": "mg",
         "source": "ingredient research (USDA FDC: FDC ID 169251 (NDB 11260) Mushrooms, white, raw (SR Legacy), via secondary sites (recipal.com label, fitnessvolt.com, triagemethod.com))"
+      }
+    },
+    "carrot": {
+      "iron": {
+        "per100": 0.3,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170393 'Carrots, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, nutritionvalue.org); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "calcium": {
+        "per100": 33,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170393 'Carrots, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, nutritionvalue.org); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "potassium": {
+        "per100": 320,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170393 'Carrots, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, nutritionvalue.org); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "magnesium": {
+        "per100": 12,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170393 'Carrots, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, nutritionvalue.org); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "zinc": {
+        "per100": 0.24,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170393 'Carrots, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, nutritionvalue.org); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-c": {
+        "per100": 5.9,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170393 'Carrots, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, nutritionvalue.org); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-a": {
+        "per100": 835,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170393 'Carrots, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, nutritionvalue.org); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170393 'Carrots, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, nutritionvalue.org); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "phosphorus": {
+        "per100": 35,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170393 'Carrots, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, nutritionvalue.org); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-k": {
+        "per100": 13.2,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170393 'Carrots, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, nutritionvalue.org); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b6": {
+        "per100": 0.14,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170393 'Carrots, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, nutritionvalue.org); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170393 'Carrots, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, nutritionvalue.org); zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
     "cashew-nuts-whole": {
@@ -1742,6 +1991,68 @@
         "per100": 0,
         "unit": "µg",
         "source": "ingredient research (USDA FDC: USDA FDC 170162 'Nuts, cashew nuts, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
+    "cauliflower": {
+      "iron": {
+        "per100": 0.42,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169986 'Cauliflower, raw' (SR Legacy); values seen only on secondary sites that mirror it (Alibaba spice pages, fitnessvolt, Foodstruct, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "calcium": {
+        "per100": 22,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169986 'Cauliflower, raw' (SR Legacy); values seen only on secondary sites that mirror it (Alibaba spice pages, fitnessvolt, Foodstruct, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "potassium": {
+        "per100": 299,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169986 'Cauliflower, raw' (SR Legacy); values seen only on secondary sites that mirror it (Alibaba spice pages, fitnessvolt, Foodstruct, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-c": {
+        "per100": 48.2,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169986 'Cauliflower, raw' (SR Legacy); values seen only on secondary sites that mirror it (Alibaba spice pages, fitnessvolt, Foodstruct, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "folate": {
+        "per100": 57,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169986 'Cauliflower, raw' (SR Legacy); values seen only on secondary sites that mirror it (Alibaba spice pages, fitnessvolt, Foodstruct, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169986 'Cauliflower, raw' (SR Legacy); values seen only on secondary sites that mirror it (Alibaba spice pages, fitnessvolt, Foodstruct, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-k": {
+        "per100": 16,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169986 'Cauliflower, raw' (SR Legacy); values seen only on secondary sites that mirror it (Alibaba spice pages, fitnessvolt, Foodstruct, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "thiamine": {
+        "per100": 0.05,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169986 'Cauliflower, raw' (SR Legacy); values seen only on secondary sites that mirror it (Alibaba spice pages, fitnessvolt, Foodstruct, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "niacin": {
+        "per100": 0.51,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169986 'Cauliflower, raw' (SR Legacy); values seen only on secondary sites that mirror it (Alibaba spice pages, fitnessvolt, Foodstruct, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b6": {
+        "per100": 0.18,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169986 'Cauliflower, raw' (SR Legacy); values seen only on secondary sites that mirror it (Alibaba spice pages, fitnessvolt, Foodstruct, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169986 'Cauliflower, raw' (SR Legacy); values seen only on secondary sites that mirror it (Alibaba spice pages, fitnessvolt, Foodstruct, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "pantothenic-acid": {
+        "per100": 0.62,
+        "unit": "mg",
+        "source": "nutrient research (pantothenic-acid food sources)"
       }
     },
     "chia-seeds": {
@@ -1873,6 +2184,53 @@
         "per100": 0.33,
         "unit": "mg",
         "source": "nutrient research (vitamin-b6 food sources)"
+      }
+    },
+    "chicken-thigh-boneless-skinless": {
+      "potassium": {
+        "per100": 272,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: Mixed secondary listings of USDA chicken thigh raw entries (FDC 171477 family); not one entry; zero by composition: carbohydrate_g, sugars_g, fibre_g)"
+      },
+      "zinc": {
+        "per100": 1.58,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: Mixed secondary listings of USDA chicken thigh raw entries (FDC 171477 family); not one entry; zero by composition: carbohydrate_g, sugars_g, fibre_g)"
+      },
+      "sodium": {
+        "per100": 62,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: Mixed secondary listings of USDA chicken thigh raw entries (FDC 171477 family); not one entry; zero by composition: carbohydrate_g, sugars_g, fibre_g)"
+      },
+      "cholesterol": {
+        "per100": 92,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: Mixed secondary listings of USDA chicken thigh raw entries (FDC 171477 family); not one entry; zero by composition: carbohydrate_g, sugars_g, fibre_g)"
+      },
+      "phosphorus": {
+        "per100": 178,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: Mixed secondary listings of USDA chicken thigh raw entries (FDC 171477 family); not one entry; zero by composition: carbohydrate_g, sugars_g, fibre_g)"
+      },
+      "selenium": {
+        "per100": 22.9,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: Mixed secondary listings of USDA chicken thigh raw entries (FDC 171477 family); not one entry; zero by composition: carbohydrate_g, sugars_g, fibre_g)"
+      },
+      "niacin": {
+        "per100": 5.557,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: Mixed secondary listings of USDA chicken thigh raw entries (FDC 171477 family); not one entry; zero by composition: carbohydrate_g, sugars_g, fibre_g)"
+      },
+      "vitamin-b6": {
+        "per100": 0.3,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: Mixed secondary listings of USDA chicken thigh raw entries (FDC 171477 family); not one entry; zero by composition: carbohydrate_g, sugars_g, fibre_g)"
+      },
+      "vitamin-b12": {
+        "per100": 0.4,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: Mixed secondary listings of USDA chicken thigh raw entries (FDC 171477 family); not one entry; zero by composition: carbohydrate_g, sugars_g, fibre_g)"
       }
     },
     "cinnamon-cassia": {
@@ -2417,6 +2775,38 @@
         "source": "ingredient research (USDA FDC: USDA FDC 171284 'Yogurt, plain, whole milk' seen via secondary sites; saturated_fat_g from docindia.org and cholesterol_mg from FatSecret dahi entry; no IFCT entry opened)"
       }
     },
+    "curry-leaves": {
+      "iron": {
+        "per100": 0.93,
+        "unit": "mg",
+        "source": "ingredient research (Other: nutritionhab blog and ICAR review: Other: nutritionhab blog and ICAR review of fresh Murraya koenigii leaves (no IFCT/USDA entry seen); vitamin A as beta-carotene/12; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "calcium": {
+        "per100": 830,
+        "unit": "mg",
+        "source": "ingredient research (Other: nutritionhab blog and ICAR review: Other: nutritionhab blog and ICAR review of fresh Murraya koenigii leaves (no IFCT/USDA entry seen); vitamin A as beta-carotene/12; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-a": {
+        "per100": 630,
+        "unit": "µg",
+        "source": "ingredient research (Other: nutritionhab blog and ICAR review: Other: nutritionhab blog and ICAR review of fresh Murraya koenigii leaves (no IFCT/USDA entry seen); vitamin A as beta-carotene/12; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "folate": {
+        "per100": 93.9,
+        "unit": "µg",
+        "source": "ingredient research (Other: nutritionhab blog and ICAR review: Other: nutritionhab blog and ICAR review of fresh Murraya koenigii leaves (no IFCT/USDA entry seen); vitamin A as beta-carotene/12; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (Other: nutritionhab blog and ICAR review: Other: nutritionhab blog and ICAR review of fresh Murraya koenigii leaves (no IFCT/USDA entry seen); vitamin A as beta-carotene/12; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (Other: nutritionhab blog and ICAR review: Other: nutritionhab blog and ICAR review of fresh Murraya koenigii leaves (no IFCT/USDA entry seen); vitamin A as beta-carotene/12; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
     "dried-oregano-packaged": {
       "iron": {
         "per100": 36.8,
@@ -2437,6 +2827,68 @@
         "per100": 0,
         "unit": "µg",
         "source": "ingredient research (USDA FDC: USDA FDC 171328 'Spices, oregano, dried'; seen on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
+    "drumstick": {
+      "iron": {
+        "per100": 0.4,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170483 'Drumstick pods, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "calcium": {
+        "per100": 30,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170483 'Drumstick pods, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "potassium": {
+        "per100": 461,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170483 'Drumstick pods, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "magnesium": {
+        "per100": 45,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170483 'Drumstick pods, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-c": {
+        "per100": 141,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170483 'Drumstick pods, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170483 'Drumstick pods, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "riboflavin": {
+        "per100": 0.1,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170483 'Drumstick pods, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "niacin": {
+        "per100": 0.6,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170483 'Drumstick pods, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b6": {
+        "per100": 0.1,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170483 'Drumstick pods, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170483 'Drumstick pods, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-a": {
+        "per100": 2924,
+        "unit": "µg",
+        "source": "nutrient research (vitamin-a food sources)"
+      },
+      "vitamin-k": {
+        "per100": 479,
+        "unit": "µg",
+        "source": "nutrient research (vitamin-k food sources)"
       }
     },
     "dry-ginger-powder": {
@@ -2464,6 +2916,45 @@
         "per100": 13,
         "unit": "µg",
         "source": "ingredient research (USDA FDC: FDC ID 170926, Spices, ginger, ground (via getfoodfacts.com, recipal.com, soupersage.com))"
+      }
+    },
+    "eggs-white-standard": {
+      "iron": {
+        "per100": 1.8,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171287 'Egg, whole, raw, fresh'; values seen only on secondary sites that mirror it; zero by composition: fibre_g)"
+      },
+      "cholesterol": {
+        "per100": 372,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171287 'Egg, whole, raw, fresh'; values seen only on secondary sites that mirror it; zero by composition: fibre_g)"
+      }
+    },
+    "elephant-foot-yam": {
+      "calcium": {
+        "per100": 50,
+        "unit": "mg",
+        "source": "ingredient research (Other: secondary compilations: Secondary compilations (Truemeds, Krishi Jagran) plus ICAR-CTCRI table; no IFCT or USDA entry reached; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "potassium": {
+        "per100": 670,
+        "unit": "mg",
+        "source": "ingredient research (Other: secondary compilations: Secondary compilations (Truemeds, Krishi Jagran) plus ICAR-CTCRI table; no IFCT or USDA entry reached; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "sodium": {
+        "per100": 8,
+        "unit": "mg",
+        "source": "ingredient research (Other: secondary compilations: Secondary compilations (Truemeds, Krishi Jagran) plus ICAR-CTCRI table; no IFCT or USDA entry reached; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (Other: secondary compilations: Secondary compilations (Truemeds, Krishi Jagran) plus ICAR-CTCRI table; no IFCT or USDA entry reached; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (Other: secondary compilations: Secondary compilations (Truemeds, Krishi Jagran) plus ICAR-CTCRI table; no IFCT or USDA entry reached; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
     "farsan-mixed-namkeen": {
@@ -2605,6 +3096,73 @@
         "per100": 0,
         "unit": "µg",
         "source": "ingredient research (USDA FDC: USDA FDC 171323, Spices, fennel seed (SR Legacy), values seen via getfoodfacts.com, triagemethod.com, foodstruct.com and all-creatures.org; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
+    "french-beans": {
+      "iron": {
+        "per100": 1,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169961 'Beans, snap, green, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, MyFoodData, Foodstruct); zero by composition: cholesterol_mg, trans_fat_g, vitamin_b12_ug)"
+      },
+      "calcium": {
+        "per100": 37,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169961 'Beans, snap, green, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, MyFoodData, Foodstruct); zero by composition: cholesterol_mg, trans_fat_g, vitamin_b12_ug)"
+      },
+      "potassium": {
+        "per100": 211,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169961 'Beans, snap, green, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, MyFoodData, Foodstruct); zero by composition: cholesterol_mg, trans_fat_g, vitamin_b12_ug)"
+      },
+      "magnesium": {
+        "per100": 25,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169961 'Beans, snap, green, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, MyFoodData, Foodstruct); zero by composition: cholesterol_mg, trans_fat_g, vitamin_b12_ug)"
+      },
+      "zinc": {
+        "per100": 0.24,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169961 'Beans, snap, green, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, MyFoodData, Foodstruct); zero by composition: cholesterol_mg, trans_fat_g, vitamin_b12_ug)"
+      },
+      "sodium": {
+        "per100": 6,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169961 'Beans, snap, green, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, MyFoodData, Foodstruct); zero by composition: cholesterol_mg, trans_fat_g, vitamin_b12_ug)"
+      },
+      "vitamin-c": {
+        "per100": 12.2,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169961 'Beans, snap, green, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, MyFoodData, Foodstruct); zero by composition: cholesterol_mg, trans_fat_g, vitamin_b12_ug)"
+      },
+      "vitamin-a": {
+        "per100": 35,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169961 'Beans, snap, green, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, MyFoodData, Foodstruct); zero by composition: cholesterol_mg, trans_fat_g, vitamin_b12_ug)"
+      },
+      "folate": {
+        "per100": 33,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169961 'Beans, snap, green, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, MyFoodData, Foodstruct); zero by composition: cholesterol_mg, trans_fat_g, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169961 'Beans, snap, green, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, MyFoodData, Foodstruct); zero by composition: cholesterol_mg, trans_fat_g, vitamin_b12_ug)"
+      },
+      "phosphorus": {
+        "per100": 38,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169961 'Beans, snap, green, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, MyFoodData, Foodstruct); zero by composition: cholesterol_mg, trans_fat_g, vitamin_b12_ug)"
+      },
+      "vitamin-k": {
+        "per100": 14,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169961 'Beans, snap, green, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, MyFoodData, Foodstruct); zero by composition: cholesterol_mg, trans_fat_g, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169961 'Beans, snap, green, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, MyFoodData, Foodstruct); zero by composition: cholesterol_mg, trans_fat_g, vitamin_b12_ug)"
       }
     },
     "fresh-coconut-grated": {
@@ -2794,6 +3352,85 @@
         "source": "ingredient research (USDA FDC: USDA FDC 169231 'Ginger root, raw' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
+    "ginger-garlic-paste": {
+      "sodium": {
+        "per100": 1360,
+        "unit": "mg",
+        "source": "ingredient research (Other: Shan ginger and garlic paste label (India): Shan Ginger & Garlic Paste 700 g label values via spicevillage.eu; sodium converted from salt 3.4 g (salt ÷ 2.5); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (Other: Shan ginger and garlic paste label (India): Shan Ginger & Garlic Paste 700 g label values via spicevillage.eu; sodium converted from salt 3.4 g (salt ÷ 2.5); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (Other: Shan ginger and garlic paste label (India): Shan Ginger & Garlic Paste 700 g label values via spicevillage.eu; sodium converted from salt 3.4 g (salt ÷ 2.5); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
+    "green-capsicum": {
+      "iron": {
+        "per100": 0.34,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170427 'Peppers, sweet, green, raw' (SR Legacy); values mixed from several secondary sites that mirror it and disagree on iron, folate, vitamin C and vitamin A; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "calcium": {
+        "per100": 10,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170427 'Peppers, sweet, green, raw' (SR Legacy); values mixed from several secondary sites that mirror it and disagree on iron, folate, vitamin C and vitamin A; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "potassium": {
+        "per100": 163,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170427 'Peppers, sweet, green, raw' (SR Legacy); values mixed from several secondary sites that mirror it and disagree on iron, folate, vitamin C and vitamin A; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "magnesium": {
+        "per100": 10,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170427 'Peppers, sweet, green, raw' (SR Legacy); values mixed from several secondary sites that mirror it and disagree on iron, folate, vitamin C and vitamin A; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "zinc": {
+        "per100": 0.13,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170427 'Peppers, sweet, green, raw' (SR Legacy); values mixed from several secondary sites that mirror it and disagree on iron, folate, vitamin C and vitamin A; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-c": {
+        "per100": 99.5,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170427 'Peppers, sweet, green, raw' (SR Legacy); values mixed from several secondary sites that mirror it and disagree on iron, folate, vitamin C and vitamin A; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "folate": {
+        "per100": 10,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170427 'Peppers, sweet, green, raw' (SR Legacy); values mixed from several secondary sites that mirror it and disagree on iron, folate, vitamin C and vitamin A; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170427 'Peppers, sweet, green, raw' (SR Legacy); values mixed from several secondary sites that mirror it and disagree on iron, folate, vitamin C and vitamin A; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "phosphorus": {
+        "per100": 20,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170427 'Peppers, sweet, green, raw' (SR Legacy); values mixed from several secondary sites that mirror it and disagree on iron, folate, vitamin C and vitamin A; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-k": {
+        "per100": 7.4,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170427 'Peppers, sweet, green, raw' (SR Legacy); values mixed from several secondary sites that mirror it and disagree on iron, folate, vitamin C and vitamin A; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b6": {
+        "per100": 0.22,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170427 'Peppers, sweet, green, raw' (SR Legacy); values mixed from several secondary sites that mirror it and disagree on iron, folate, vitamin C and vitamin A; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170427 'Peppers, sweet, green, raw' (SR Legacy); values mixed from several secondary sites that mirror it and disagree on iron, folate, vitamin C and vitamin A; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
     "green-cardamom": {
       "iron": {
         "per100": 13.97,
@@ -2893,6 +3530,93 @@
         "per100": 0,
         "unit": "µg",
         "source": "ingredient research (Other: Kissan Chatpati Hari Chutney label data via FatSecret India: FatSecret India, Kissan Chatpati Hari Chutney per 100 g (user-contributed); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
+    "green-peas": {
+      "iron": {
+        "per100": 1.5,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA 'Peas, green, frozen, unprepared' (NDB 11312; FDC IDs differ between mirrors); values seen only on secondary sites (Vitals Hub, Recipal, Happy Forks, nutritionvalue.org, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "calcium": {
+        "per100": 22,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA 'Peas, green, frozen, unprepared' (NDB 11312; FDC IDs differ between mirrors); values seen only on secondary sites (Vitals Hub, Recipal, Happy Forks, nutritionvalue.org, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "potassium": {
+        "per100": 153,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA 'Peas, green, frozen, unprepared' (NDB 11312; FDC IDs differ between mirrors); values seen only on secondary sites (Vitals Hub, Recipal, Happy Forks, nutritionvalue.org, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "magnesium": {
+        "per100": 26,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA 'Peas, green, frozen, unprepared' (NDB 11312; FDC IDs differ between mirrors); values seen only on secondary sites (Vitals Hub, Recipal, Happy Forks, nutritionvalue.org, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "zinc": {
+        "per100": 0.82,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA 'Peas, green, frozen, unprepared' (NDB 11312; FDC IDs differ between mirrors); values seen only on secondary sites (Vitals Hub, Recipal, Happy Forks, nutritionvalue.org, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "sodium": {
+        "per100": 108,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA 'Peas, green, frozen, unprepared' (NDB 11312; FDC IDs differ between mirrors); values seen only on secondary sites (Vitals Hub, Recipal, Happy Forks, nutritionvalue.org, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-c": {
+        "per100": 18,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA 'Peas, green, frozen, unprepared' (NDB 11312; FDC IDs differ between mirrors); values seen only on secondary sites (Vitals Hub, Recipal, Happy Forks, nutritionvalue.org, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-a": {
+        "per100": 103,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA 'Peas, green, frozen, unprepared' (NDB 11312; FDC IDs differ between mirrors); values seen only on secondary sites (Vitals Hub, Recipal, Happy Forks, nutritionvalue.org, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "folate": {
+        "per100": 53,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA 'Peas, green, frozen, unprepared' (NDB 11312; FDC IDs differ between mirrors); values seen only on secondary sites (Vitals Hub, Recipal, Happy Forks, nutritionvalue.org, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA 'Peas, green, frozen, unprepared' (NDB 11312; FDC IDs differ between mirrors); values seen only on secondary sites (Vitals Hub, Recipal, Happy Forks, nutritionvalue.org, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "phosphorus": {
+        "per100": 82,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA 'Peas, green, frozen, unprepared' (NDB 11312; FDC IDs differ between mirrors); values seen only on secondary sites (Vitals Hub, Recipal, Happy Forks, nutritionvalue.org, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "manganese": {
+        "per100": 0.34,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA 'Peas, green, frozen, unprepared' (NDB 11312; FDC IDs differ between mirrors); values seen only on secondary sites (Vitals Hub, Recipal, Happy Forks, nutritionvalue.org, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-e": {
+        "per100": 0.02,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA 'Peas, green, frozen, unprepared' (NDB 11312; FDC IDs differ between mirrors); values seen only on secondary sites (Vitals Hub, Recipal, Happy Forks, nutritionvalue.org, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-k": {
+        "per100": 28,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA 'Peas, green, frozen, unprepared' (NDB 11312; FDC IDs differ between mirrors); values seen only on secondary sites (Vitals Hub, Recipal, Happy Forks, nutritionvalue.org, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "thiamine": {
+        "per100": 0.26,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA 'Peas, green, frozen, unprepared' (NDB 11312; FDC IDs differ between mirrors); values seen only on secondary sites (Vitals Hub, Recipal, Happy Forks, nutritionvalue.org, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b6": {
+        "per100": 0.08,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA 'Peas, green, frozen, unprepared' (NDB 11312; FDC IDs differ between mirrors); values seen only on secondary sites (Vitals Hub, Recipal, Happy Forks, nutritionvalue.org, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA 'Peas, green, frozen, unprepared' (NDB 11312; FDC IDs differ between mirrors); values seen only on secondary sites (Vitals Hub, Recipal, Happy Forks, nutritionvalue.org, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
     "honey": {
@@ -3017,6 +3741,13 @@
         "per100": 0,
         "unit": "µg",
         "source": "ingredient research (USDA FDC: USDA FDC 167746 'Lemons, raw, without peel' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
+    "malabar-parotta": {
+      "sodium": {
+        "per100": 250,
+        "unit": "mg",
+        "source": "ingredient research (Other: brand label: Other: iD Fresh Malabar Parota label via Swiggy Instamart; other brand labels differ)"
       }
     },
     "mint-leaves": {
@@ -3602,6 +4333,33 @@
         "source": "ingredient research (USDA FDC: FDC ID 175179 Crustaceans, shrimp, raw (SR Legacy), via getfoodfacts.com)"
       }
     },
+    "puffed-rice": {
+      "calcium": {
+        "per100": 6,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 173912 'Cereals ready-to-eat, rice, puffed, fortified' seen via FatSecret and recipal mirrors; used as a proxy for plain murmura; iron left out because the 31.7 mg shown is from fortification; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "potassium": {
+        "per100": 113,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 173912 'Cereals ready-to-eat, rice, puffed, fortified' seen via FatSecret and recipal mirrors; used as a proxy for plain murmura; iron left out because the 31.7 mg shown is from fortification; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "sodium": {
+        "per100": 3,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 173912 'Cereals ready-to-eat, rice, puffed, fortified' seen via FatSecret and recipal mirrors; used as a proxy for plain murmura; iron left out because the 31.7 mg shown is from fortification; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 173912 'Cereals ready-to-eat, rice, puffed, fortified' seen via FatSecret and recipal mirrors; used as a proxy for plain murmura; iron left out because the 31.7 mg shown is from fortification; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 173912 'Cereals ready-to-eat, rice, puffed, fortified' seen via FatSecret and recipal mirrors; used as a proxy for plain murmura; iron left out because the 31.7 mg shown is from fortification; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
     "raisins-green-golden": {
       "iron": {
         "per100": 1.79,
@@ -3642,6 +4400,80 @@
         "per100": 3,
         "unit": "µg",
         "source": "ingredient research (USDA FDC: FDC ID 168164, Raisins, golden, seedless (SR Legacy 9297), via secondary sites)"
+      }
+    },
+    "raw-plantain": {
+      "potassium": {
+        "per100": 406,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 2710818 'Plantains, underripe, raw' via getfoodfacts and nutrientnorms mirrors; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "magnesium": {
+        "per100": 29.5,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 2710818 'Plantains, underripe, raw' via getfoodfacts and nutrientnorms mirrors; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-c": {
+        "per100": 18.5,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 2710818 'Plantains, underripe, raw' via getfoodfacts and nutrientnorms mirrors; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 2710818 'Plantains, underripe, raw' via getfoodfacts and nutrientnorms mirrors; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 2710818 'Plantains, underripe, raw' via getfoodfacts and nutrientnorms mirrors; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
+    "red-chilli-flakes": {
+      "iron": {
+        "per100": 7.8,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA SR 'Spices, pepper, red or cayenne' NDB 02031 (FDC 170932 per getfoodfacts URL) via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "calcium": {
+        "per100": 148,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA SR 'Spices, pepper, red or cayenne' NDB 02031 (FDC 170932 per getfoodfacts URL) via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "potassium": {
+        "per100": 2014,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA SR 'Spices, pepper, red or cayenne' NDB 02031 (FDC 170932 per getfoodfacts URL) via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "sodium": {
+        "per100": 30,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA SR 'Spices, pepper, red or cayenne' NDB 02031 (FDC 170932 per getfoodfacts URL) via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-c": {
+        "per100": 76.4,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA SR 'Spices, pepper, red or cayenne' NDB 02031 (FDC 170932 per getfoodfacts URL) via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA SR 'Spices, pepper, red or cayenne' NDB 02031 (FDC 170932 per getfoodfacts URL) via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-k": {
+        "per100": 80.3,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA SR 'Spices, pepper, red or cayenne' NDB 02031 (FDC 170932 per getfoodfacts URL) via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b6": {
+        "per100": 2.5,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA SR 'Spices, pepper, red or cayenne' NDB 02031 (FDC 170932 per getfoodfacts URL) via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA SR 'Spices, pepper, red or cayenne' NDB 02031 (FDC 170932 per getfoodfacts URL) via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
     "red-chilli-powder": {
@@ -3756,6 +4588,100 @@
         "per100": 1460,
         "unit": "mg",
         "source": "ingredient research (Other: retailer label listing: Ching's Secret Red Chilli Sauce 200 g, label-style values on indiamart-srl.odoo.com)"
+      }
+    },
+    "roasted-gram-dal": {
+      "iron": {
+        "per100": 9,
+        "unit": "mg",
+        "source": "ingredient research (Other: NIN Nutritive Value of Indian Foods (2004): Gopalan, Rama Sastri and Balasubramanian, Nutritive Value of Indian Foods (NIN, ICMR, 2004), 'Bengal gram, roasted', seen via nutritionvalue.org public_ingredient_29712; no IFCT 2017 roasted-gram entry opened; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "calcium": {
+        "per100": 58,
+        "unit": "mg",
+        "source": "ingredient research (Other: NIN Nutritive Value of Indian Foods (2004): Gopalan, Rama Sastri and Balasubramanian, Nutritive Value of Indian Foods (NIN, ICMR, 2004), 'Bengal gram, roasted', seen via nutritionvalue.org public_ingredient_29712; no IFCT 2017 roasted-gram entry opened; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (Other: NIN Nutritive Value of Indian Foods (2004): Gopalan, Rama Sastri and Balasubramanian, Nutritive Value of Indian Foods (NIN, ICMR, 2004), 'Bengal gram, roasted', seen via nutritionvalue.org public_ingredient_29712; no IFCT 2017 roasted-gram entry opened; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "phosphorus": {
+        "per100": 340,
+        "unit": "mg",
+        "source": "ingredient research (Other: NIN Nutritive Value of Indian Foods (2004): Gopalan, Rama Sastri and Balasubramanian, Nutritive Value of Indian Foods (NIN, ICMR, 2004), 'Bengal gram, roasted', seen via nutritionvalue.org public_ingredient_29712; no IFCT 2017 roasted-gram entry opened; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (Other: NIN Nutritive Value of Indian Foods (2004): Gopalan, Rama Sastri and Balasubramanian, Nutritive Value of Indian Foods (NIN, ICMR, 2004), 'Bengal gram, roasted', seen via nutritionvalue.org public_ingredient_29712; no IFCT 2017 roasted-gram entry opened; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
+    "roasted-peanuts-plain": {
+      "iron": {
+        "per100": 1.6,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA SR Legacy NDB 16390 'Peanuts, all types, dry-roasted, without salt' seen via recipal, USDA basic-report printout and triagemethod mirrors (FDC ID not shown); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "calcium": {
+        "per100": 60,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA SR Legacy NDB 16390 'Peanuts, all types, dry-roasted, without salt' seen via recipal, USDA basic-report printout and triagemethod mirrors (FDC ID not shown); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "potassium": {
+        "per100": 630,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA SR Legacy NDB 16390 'Peanuts, all types, dry-roasted, without salt' seen via recipal, USDA basic-report printout and triagemethod mirrors (FDC ID not shown); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "magnesium": {
+        "per100": 178,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA SR Legacy NDB 16390 'Peanuts, all types, dry-roasted, without salt' seen via recipal, USDA basic-report printout and triagemethod mirrors (FDC ID not shown); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "zinc": {
+        "per100": 2.8,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA SR Legacy NDB 16390 'Peanuts, all types, dry-roasted, without salt' seen via recipal, USDA basic-report printout and triagemethod mirrors (FDC ID not shown); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "sodium": {
+        "per100": 6,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA SR Legacy NDB 16390 'Peanuts, all types, dry-roasted, without salt' seen via recipal, USDA basic-report printout and triagemethod mirrors (FDC ID not shown); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "folate": {
+        "per100": 95,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA SR Legacy NDB 16390 'Peanuts, all types, dry-roasted, without salt' seen via recipal, USDA basic-report printout and triagemethod mirrors (FDC ID not shown); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA SR Legacy NDB 16390 'Peanuts, all types, dry-roasted, without salt' seen via recipal, USDA basic-report printout and triagemethod mirrors (FDC ID not shown); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "phosphorus": {
+        "per100": 360,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA SR Legacy NDB 16390 'Peanuts, all types, dry-roasted, without salt' seen via recipal, USDA basic-report printout and triagemethod mirrors (FDC ID not shown); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-e": {
+        "per100": 4.9,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA SR Legacy NDB 16390 'Peanuts, all types, dry-roasted, without salt' seen via recipal, USDA basic-report printout and triagemethod mirrors (FDC ID not shown); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "thiamine": {
+        "per100": 0.152,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA SR Legacy NDB 16390 'Peanuts, all types, dry-roasted, without salt' seen via recipal, USDA basic-report printout and triagemethod mirrors (FDC ID not shown); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "niacin": {
+        "per100": 14.355,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA SR Legacy NDB 16390 'Peanuts, all types, dry-roasted, without salt' seen via recipal, USDA basic-report printout and triagemethod mirrors (FDC ID not shown); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA SR Legacy NDB 16390 'Peanuts, all types, dry-roasted, without salt' seen via recipal, USDA basic-report printout and triagemethod mirrors (FDC ID not shown); zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
     "rock-salt": {
@@ -3897,6 +4823,43 @@
         "source": "ingredient research (USDA FDC: SR Legacy, Fish, mackerel, king, raw (FDC ID not confirmed), via recipal.com/fatsecret; Mg, Zn and vitamin A via triagemethod.com (AFCD + SR Legacy))"
       }
     },
+    "seeraga-samba-rice": {
+      "iron": {
+        "per100": 0.1,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 168878 'Rice, white, long-grain, regular, raw, unenriched' via triagemethod and recipal mirrors, used as a proxy for seeraga samba (no seeraga samba entry found); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "magnesium": {
+        "per100": 26.5,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 168878 'Rice, white, long-grain, regular, raw, unenriched' via triagemethod and recipal mirrors, used as a proxy for seeraga samba (no seeraga samba entry found); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 168878 'Rice, white, long-grain, regular, raw, unenriched' via triagemethod and recipal mirrors, used as a proxy for seeraga samba (no seeraga samba entry found); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "phosphorus": {
+        "per100": 108,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 168878 'Rice, white, long-grain, regular, raw, unenriched' via triagemethod and recipal mirrors, used as a proxy for seeraga samba (no seeraga samba entry found); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "thiamine": {
+        "per100": 0.1,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 168878 'Rice, white, long-grain, regular, raw, unenriched' via triagemethod and recipal mirrors, used as a proxy for seeraga samba (no seeraga samba entry found); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "niacin": {
+        "per100": 1.4,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 168878 'Rice, white, long-grain, regular, raw, unenriched' via triagemethod and recipal mirrors, used as a proxy for seeraga samba (no seeraga samba entry found); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 168878 'Rice, white, long-grain, regular, raw, unenriched' via triagemethod and recipal mirrors, used as a proxy for seeraga samba (no seeraga samba entry found); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
     "sesame-oil-gingelly-til-oil-everyday-grade": {
       "cholesterol": {
         "per100": 0,
@@ -4001,11 +4964,175 @@
         "source": "ingredient research (USDA FDC: FDC ID 170150 Seeds, sesame seeds, whole, dried (SR Legacy), via secondary sites (recipal.com, triagemethod.com, getfoodfacts.com))"
       }
     },
+    "shallots": {
+      "iron": {
+        "per100": 1.2,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170499 'Shallots, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "calcium": {
+        "per100": 37,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170499 'Shallots, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "potassium": {
+        "per100": 334,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170499 'Shallots, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "magnesium": {
+        "per100": 21,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170499 'Shallots, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "zinc": {
+        "per100": 0.4,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170499 'Shallots, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "sodium": {
+        "per100": 12,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170499 'Shallots, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-c": {
+        "per100": 8,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170499 'Shallots, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-a": {
+        "per100": 4,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170499 'Shallots, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "folate": {
+        "per100": 34,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170499 'Shallots, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170499 'Shallots, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "phosphorus": {
+        "per100": 60,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170499 'Shallots, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "manganese": {
+        "per100": 0.29,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170499 'Shallots, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b6": {
+        "per100": 0.345,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170499 'Shallots, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170499 'Shallots, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
     "sona-masoori-rice-raw": {
       "sodium": {
         "per100": 1,
         "unit": "mg",
         "source": "ingredient research (USDA FDC: FDC ID 169760, Rice, white, medium-grain, raw, unenriched (SR Legacy), via secondary site)"
+      }
+    },
+    "spring-onion": {
+      "iron": {
+        "per100": 1.5,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170005 'Onions, spring or scallions (includes tops and bulb), raw' (SR Legacy); values seen only on secondary sites that mirror it (MyFoodData, nutritionvalue.org, getfoodfacts); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "calcium": {
+        "per100": 72,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170005 'Onions, spring or scallions (includes tops and bulb), raw' (SR Legacy); values seen only on secondary sites that mirror it (MyFoodData, nutritionvalue.org, getfoodfacts); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "potassium": {
+        "per100": 276,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170005 'Onions, spring or scallions (includes tops and bulb), raw' (SR Legacy); values seen only on secondary sites that mirror it (MyFoodData, nutritionvalue.org, getfoodfacts); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "magnesium": {
+        "per100": 20,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170005 'Onions, spring or scallions (includes tops and bulb), raw' (SR Legacy); values seen only on secondary sites that mirror it (MyFoodData, nutritionvalue.org, getfoodfacts); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "zinc": {
+        "per100": 0.39,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170005 'Onions, spring or scallions (includes tops and bulb), raw' (SR Legacy); values seen only on secondary sites that mirror it (MyFoodData, nutritionvalue.org, getfoodfacts); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "sodium": {
+        "per100": 16,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170005 'Onions, spring or scallions (includes tops and bulb), raw' (SR Legacy); values seen only on secondary sites that mirror it (MyFoodData, nutritionvalue.org, getfoodfacts); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-c": {
+        "per100": 18.8,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170005 'Onions, spring or scallions (includes tops and bulb), raw' (SR Legacy); values seen only on secondary sites that mirror it (MyFoodData, nutritionvalue.org, getfoodfacts); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-a": {
+        "per100": 50,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170005 'Onions, spring or scallions (includes tops and bulb), raw' (SR Legacy); values seen only on secondary sites that mirror it (MyFoodData, nutritionvalue.org, getfoodfacts); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "folate": {
+        "per100": 64,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170005 'Onions, spring or scallions (includes tops and bulb), raw' (SR Legacy); values seen only on secondary sites that mirror it (MyFoodData, nutritionvalue.org, getfoodfacts); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170005 'Onions, spring or scallions (includes tops and bulb), raw' (SR Legacy); values seen only on secondary sites that mirror it (MyFoodData, nutritionvalue.org, getfoodfacts); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "phosphorus": {
+        "per100": 37,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170005 'Onions, spring or scallions (includes tops and bulb), raw' (SR Legacy); values seen only on secondary sites that mirror it (MyFoodData, nutritionvalue.org, getfoodfacts); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-e": {
+        "per100": 0.55,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170005 'Onions, spring or scallions (includes tops and bulb), raw' (SR Legacy); values seen only on secondary sites that mirror it (MyFoodData, nutritionvalue.org, getfoodfacts); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-k": {
+        "per100": 207,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170005 'Onions, spring or scallions (includes tops and bulb), raw' (SR Legacy); values seen only on secondary sites that mirror it (MyFoodData, nutritionvalue.org, getfoodfacts); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "thiamine": {
+        "per100": 0.06,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170005 'Onions, spring or scallions (includes tops and bulb), raw' (SR Legacy); values seen only on secondary sites that mirror it (MyFoodData, nutritionvalue.org, getfoodfacts); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "riboflavin": {
+        "per100": 0.08,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170005 'Onions, spring or scallions (includes tops and bulb), raw' (SR Legacy); values seen only on secondary sites that mirror it (MyFoodData, nutritionvalue.org, getfoodfacts); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "niacin": {
+        "per100": 0.53,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170005 'Onions, spring or scallions (includes tops and bulb), raw' (SR Legacy); values seen only on secondary sites that mirror it (MyFoodData, nutritionvalue.org, getfoodfacts); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b6": {
+        "per100": 0.061,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170005 'Onions, spring or scallions (includes tops and bulb), raw' (SR Legacy); values seen only on secondary sites that mirror it (MyFoodData, nutritionvalue.org, getfoodfacts); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170005 'Onions, spring or scallions (includes tops and bulb), raw' (SR Legacy); values seen only on secondary sites that mirror it (MyFoodData, nutritionvalue.org, getfoodfacts); zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
     "star-anise": {
@@ -4148,6 +5275,53 @@
         "per100": 0,
         "unit": "µg",
         "source": "ingredient research (USDA FDC: USDA FDC 172231 'Spices, turmeric, ground'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
+    "white-sandwich-bread": {
+      "iron": {
+        "per100": 3.74,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 172687 'Bread, white, commercially prepared (includes soft bread crumbs)' via fitnessvolt, triagemethod and UH Hospitals per-oz values converted to 100 g)"
+      },
+      "calcium": {
+        "per100": 151,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 172687 'Bread, white, commercially prepared (includes soft bread crumbs)' via fitnessvolt, triagemethod and UH Hospitals per-oz values converted to 100 g)"
+      },
+      "potassium": {
+        "per100": 100,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 172687 'Bread, white, commercially prepared (includes soft bread crumbs)' via fitnessvolt, triagemethod and UH Hospitals per-oz values converted to 100 g)"
+      },
+      "magnesium": {
+        "per100": 23,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 172687 'Bread, white, commercially prepared (includes soft bread crumbs)' via fitnessvolt, triagemethod and UH Hospitals per-oz values converted to 100 g)"
+      },
+      "zinc": {
+        "per100": 0.74,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 172687 'Bread, white, commercially prepared (includes soft bread crumbs)' via fitnessvolt, triagemethod and UH Hospitals per-oz values converted to 100 g)"
+      },
+      "sodium": {
+        "per100": 490,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 172687 'Bread, white, commercially prepared (includes soft bread crumbs)' via fitnessvolt, triagemethod and UH Hospitals per-oz values converted to 100 g)"
+      },
+      "selenium": {
+        "per100": 23.2,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 172687 'Bread, white, commercially prepared (includes soft bread crumbs)' via fitnessvolt, triagemethod and UH Hospitals per-oz values converted to 100 g)"
+      },
+      "vitamin-e": {
+        "per100": 0.21,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 172687 'Bread, white, commercially prepared (includes soft bread crumbs)' via fitnessvolt, triagemethod and UH Hospitals per-oz values converted to 100 g)"
+      },
+      "thiamine": {
+        "per100": 0.51,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 172687 'Bread, white, commercially prepared (includes soft bread crumbs)' via fitnessvolt, triagemethod and UH Hospitals per-oz values converted to 100 g)"
       }
     },
     "whole-black-gram": {
@@ -4300,6 +5474,11 @@
         "unit": "µg",
         "source": "nutrient research (biotin food sources)"
       },
+      "potassium": {
+        "per100": 625,
+        "unit": "mg",
+        "source": "nutrient research (potassium food sources)"
+      },
       "vitamin-a": {
         "per100": 434,
         "unit": "µg",
@@ -4394,59 +5573,11 @@
         "source": "nutrient research (vitamin-b6 food sources)"
       }
     },
-    "cauliflower": {
-      "pantothenic-acid": {
-        "per100": 0.62,
-        "unit": "mg",
-        "source": "nutrient research (pantothenic-acid food sources)"
-      },
-      "vitamin-c": {
-        "per100": 47.1,
-        "unit": "mg",
-        "source": "nutrient research (vitamin-c food sources)"
-      }
-    },
-    "drumstick": {
-      "riboflavin": {
-        "per100": 0.45,
-        "unit": "mg",
-        "source": "nutrient research (riboflavin food sources)"
-      },
-      "vitamin-a": {
-        "per100": 2924,
-        "unit": "µg",
-        "source": "nutrient research (vitamin-a food sources)"
-      },
-      "vitamin-c": {
-        "per100": 108,
-        "unit": "mg",
-        "source": "nutrient research (vitamin-c food sources)"
-      },
-      "vitamin-k": {
-        "per100": 479,
-        "unit": "µg",
-        "source": "nutrient research (vitamin-k food sources)"
-      }
-    },
     "toor-dal": {
       "thiamine": {
         "per100": 0.45,
         "unit": "mg",
         "source": "nutrient research (thiamine food sources)"
-      }
-    },
-    "carrot": {
-      "vitamin-a": {
-        "per100": 1125,
-        "unit": "µg",
-        "source": "nutrient research (vitamin-a food sources)"
-      }
-    },
-    "green-capsicum": {
-      "vitamin-c": {
-        "per100": 123,
-        "unit": "mg",
-        "source": "nutrient research (vitamin-c food sources)"
       }
     },
     "cabbage": {
@@ -4457,20 +5588,6 @@
       },
       "vitamin-k": {
         "per100": 113,
-        "unit": "µg",
-        "source": "nutrient research (vitamin-k food sources)"
-      }
-    },
-    "green-peas-frozen": {
-      "vitamin-k": {
-        "per100": 44,
-        "unit": "µg",
-        "source": "nutrient research (vitamin-k food sources)"
-      }
-    },
-    "spring-onion": {
-      "vitamin-k": {
-        "per100": 44,
         "unit": "µg",
         "source": "nutrient research (vitamin-k food sources)"
       }

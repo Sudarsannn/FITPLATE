@@ -15,33 +15,222 @@
         "avg": 120,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-06.md"
+      },
+      {
+        "date": "2026-10-29",
+        "min": 115,
+        "max": 165,
+        "avg": 135,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
       }
     ],
     "currentEstimate": {
       "min": 115,
-      "max": 125,
-      "avg": 120
+      "max": 145,
+      "avg": 125
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-06",
+    "lastObserved": "2026-10-29",
     "stale": false,
     "seasonal": false,
-    "listingCount": 2,
+    "listingCount": 4,
     "platforms": [
-      "BigBasket",
-      "Expatistan"
+      "BigBasket"
     ],
     "outOfStock": false,
     "confirmed": false,
     "checkNotes": [
-      "only 2 listings back the range (need 3)"
+      "only 1 platform (BigBasket) backs the range"
     ]
   },
   "per100Estimate": null,
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 143,
+      "source": "USDA FDC: USDA FDC 171287 'Egg, whole, raw, fresh'; values seen only on secondary sites that mirror it; zero by composition: fibre_g",
+      "confidence": "Medium"
+    },
+    "proteinG": {
+      "value": 12.6,
+      "source": "USDA FDC: USDA FDC 171287 'Egg, whole, raw, fresh'; values seen only on secondary sites that mirror it; zero by composition: fibre_g",
+      "confidence": "Medium"
+    },
+    "carbsG": {
+      "value": 0.7,
+      "source": "USDA FDC: USDA FDC 171287 'Egg, whole, raw, fresh'; values seen only on secondary sites that mirror it; zero by composition: fibre_g",
+      "confidence": "Medium"
+    },
+    "sugarsG": {
+      "value": 0.4,
+      "source": "USDA FDC: USDA FDC 171287 'Egg, whole, raw, fresh'; values seen only on secondary sites that mirror it; zero by composition: fibre_g",
+      "confidence": "Medium"
+    },
+    "fatG": {
+      "value": 9.5,
+      "source": "USDA FDC: USDA FDC 171287 'Egg, whole, raw, fresh'; values seen only on secondary sites that mirror it; zero by composition: fibre_g",
+      "confidence": "Medium"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 171287 'Egg, whole, raw, fresh'; values seen only on secondary sites that mirror it; zero by composition: fibre_g",
+      "confidence": "Medium"
+    },
+    "sodiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "ironMg": {
+      "value": 1.8,
+      "source": "USDA FDC: USDA FDC 171287 'Egg, whole, raw, fresh'; values seen only on secondary sites that mirror it; zero by composition: fibre_g",
+      "confidence": "Medium"
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 372,
+      "source": "USDA FDC: USDA FDC 171287 'Egg, whole, raw, fresh'; values seen only on secondary sites that mirror it; zero by composition: fibre_g",
+      "confidence": "Medium"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    }
+  },
   "macrosPer100Estimate": {
     "kcal": 143,
     "proteinG": 12.6,
@@ -49,32 +238,39 @@
     "fatG": 9.5,
     "fibreG": 0
   },
-  "storage": "3–5 weeks. In Mumbai's heat, room-temperature storage is best kept under a week.",
-  "looksLike": "Oval, smooth white-shelled hen's egg, about 50–60 g in the shell. Sold loose, in 6/10/12-egg boxes, or 30-egg trays.",
-  "howToPick": "Clean, uncracked shells; no stains or feathers stuck on. A fresh egg sinks and lies flat in a glass of water; one that floats is old. Check the pack date on boxed eggs.",
-  "shelfLife": "About 2 weeks at room temperature in cool weather, 3–5 weeks in the fridge.",
+  "storage": "Keep in the fridge in the carton, pointed end down; use within about 3 weeks; hard-boiled eggs keep about a week.",
+  "looksLike": "A hen's egg with a white shell, about 50 g edible weight for a standard egg (the dish files treat 2 eggs as about 100 g); a clear white and a yellow-orange yolk inside.",
+  "howToPick": "Clean, uncracked shells with no strong smell. A fresh egg sinks and lies flat in a bowl of water; a floating egg is old.",
+  "shelfLife": "About 3 to 5 weeks refrigerated from the pack date (general guidance, not from a source in this run).",
   "substitutes": [
     "Paneer (crumbled)",
     "Tofu (crumbled)",
-    "Brown or desi eggs"
+    "Brown or desi eggs",
+    "Egg whites only",
+    "Paneer crumble or tofu scramble"
   ],
   "usedIn": [
     {
-      "dishNumber": 14,
+      "dishNumber": 92,
       "quantity": null,
       "unit": null,
-      "raw": "3 large eggs (about 150 g without shells)"
+      "raw": "2 eggs per serving (about 100 g)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-06",
       "file": "FitPlate_Ingredients_2026-10-06.md"
+    },
+    {
+      "date": "2026-10-29",
+      "file": "FitPlate_Ingredients_2026-10-29.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (wma)",
     "macrosPer100Estimate": "stable (single)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",

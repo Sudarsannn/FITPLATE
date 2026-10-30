@@ -15,37 +15,225 @@
         "avg": 50,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-06.md"
+      },
+      {
+        "date": "2026-10-29",
+        "min": 60,
+        "max": 165,
+        "avg": 110,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
       }
     ],
     "currentEstimate": {
-      "min": 45,
-      "max": 55,
-      "avg": 50
+      "min": 68,
+      "max": 92,
+      "avg": 80
     },
-    "method": "single",
+    "method": "spike-blend",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-06",
+    "lastObserved": "2026-10-29",
     "stale": false,
     "seasonal": false,
-    "listingCount": 2,
+    "listingCount": 8,
     "platforms": [
       "BigBasket",
-      "OneIndia"
+      "Blinkit"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 2 listings back the range (need 3)"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 4.5,
-    "max": 5.5,
-    "avg": 5
+    "min": 6.8,
+    "max": 9.2,
+    "avg": 8
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 25,
+      "source": "USDA FDC: USDA FDC 169986 'Cauliflower, raw' (SR Legacy); values seen only on secondary sites that mirror it (Alibaba spice pages, fitnessvolt, Foodstruct, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "proteinG": {
+      "value": 1.92,
+      "source": "USDA FDC: USDA FDC 169986 'Cauliflower, raw' (SR Legacy); values seen only on secondary sites that mirror it (Alibaba spice pages, fitnessvolt, Foodstruct, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "carbsG": {
+      "value": 4.97,
+      "source": "USDA FDC: USDA FDC 169986 'Cauliflower, raw' (SR Legacy); values seen only on secondary sites that mirror it (Alibaba spice pages, fitnessvolt, Foodstruct, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "sugarsG": {
+      "value": 1.91,
+      "source": "USDA FDC: USDA FDC 169986 'Cauliflower, raw' (SR Legacy); values seen only on secondary sites that mirror it (Alibaba spice pages, fitnessvolt, Foodstruct, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "fatG": {
+      "value": 0.28,
+      "source": "USDA FDC: USDA FDC 169986 'Cauliflower, raw' (SR Legacy); values seen only on secondary sites that mirror it (Alibaba spice pages, fitnessvolt, Foodstruct, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "saturatedFatG": {
+      "value": 0.13,
+      "source": "USDA FDC: USDA FDC 169986 'Cauliflower, raw' (SR Legacy); values seen only on secondary sites that mirror it (Alibaba spice pages, fitnessvolt, Foodstruct, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "fibreG": {
+      "value": 2,
+      "source": "USDA FDC: USDA FDC 169986 'Cauliflower, raw' (SR Legacy); values seen only on secondary sites that mirror it (Alibaba spice pages, fitnessvolt, Foodstruct, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "sodiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "ironMg": {
+      "value": 0.42,
+      "source": "USDA FDC: USDA FDC 169986 'Cauliflower, raw' (SR Legacy); values seen only on secondary sites that mirror it (Alibaba spice pages, fitnessvolt, Foodstruct, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "calciumMg": {
+      "value": 22,
+      "source": "USDA FDC: USDA FDC 169986 'Cauliflower, raw' (SR Legacy); values seen only on secondary sites that mirror it (Alibaba spice pages, fitnessvolt, Foodstruct, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "potassiumMg": {
+      "value": 299,
+      "source": "USDA FDC: USDA FDC 169986 'Cauliflower, raw' (SR Legacy); values seen only on secondary sites that mirror it (Alibaba spice pages, fitnessvolt, Foodstruct, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": 48.2,
+      "source": "USDA FDC: USDA FDC 169986 'Cauliflower, raw' (SR Legacy); values seen only on secondary sites that mirror it (Alibaba spice pages, fitnessvolt, Foodstruct, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": 57,
+      "source": "USDA FDC: USDA FDC 169986 'Cauliflower, raw' (SR Legacy); values seen only on secondary sites that mirror it (Alibaba spice pages, fitnessvolt, Foodstruct, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 169986 'Cauliflower, raw' (SR Legacy); values seen only on secondary sites that mirror it (Alibaba spice pages, fitnessvolt, Foodstruct, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": 16,
+      "source": "USDA FDC: USDA FDC 169986 'Cauliflower, raw' (SR Legacy); values seen only on secondary sites that mirror it (Alibaba spice pages, fitnessvolt, Foodstruct, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "thiaminMg": {
+      "value": 0.05,
+      "source": "USDA FDC: USDA FDC 169986 'Cauliflower, raw' (SR Legacy); values seen only on secondary sites that mirror it (Alibaba spice pages, fitnessvolt, Foodstruct, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": 0.51,
+      "source": "USDA FDC: USDA FDC 169986 'Cauliflower, raw' (SR Legacy); values seen only on secondary sites that mirror it (Alibaba spice pages, fitnessvolt, Foodstruct, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "vitaminB6Mg": {
+      "value": 0.18,
+      "source": "USDA FDC: USDA FDC 169986 'Cauliflower, raw' (SR Legacy); values seen only on secondary sites that mirror it (Alibaba spice pages, fitnessvolt, Foodstruct, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 169986 'Cauliflower, raw' (SR Legacy); values seen only on secondary sites that mirror it (Alibaba spice pages, fitnessvolt, Foodstruct, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    }
+  },
   "macrosPer100Estimate": {
     "kcal": 25,
     "proteinG": 1.9,
@@ -53,37 +241,42 @@
     "fatG": 0.3,
     "fibreG": 2
   },
-  "storage": "Whole head: wrap loosely in a cloth or paper bag in the fridge's vegetable drawer, 4–7 days. Florets: blanch 2 minutes, cool, and freeze up to 6 months (for cooking, e.g. in bhaji). Soak florets in warm salted water for 10 minutes before cooking to drive out insects.",
-  "looksLike": "A tight, creamy-white head of florets (the \"curd\") wrapped in thick green leaves. A medium head weighs about 400–600 g.",
-  "howToPick": "Heavy for its size, with a tight, compact, creamy-white head and fresh, crisp green leaves. Avoid brown or black spots, loose or spreading florets, a yellowish tint, or a strong sulphur smell. Check between florets for small green caterpillars.",
-  "shelfLife": "4–7 days in the fridge whole.",
+  "storage": "Keep the head unwashed in a loose bag in the fridge; cut florets keep 2 to 3 days in a closed box.",
+  "looksLike": "A dense white head (curd) made of tiny florets, wrapped in pale green leaves; mild, slightly nutty taste when cooked.",
+  "howToPick": "A tight, creamy-white, heavy head with fresh green leaves. Avoid brown spots, loose or spreading florets, a yellow tinge or a sour smell.",
+  "shelfLife": "About 5 to 7 days in the fridge (general guidance; not from a source in this run).",
   "substitutes": [
     "Cabbage",
     "Bottle gourd (lauki) or extra potato",
-    "Frozen cauliflower florets"
+    "Frozen cauliflower florets",
+    "Broccoli",
+    "Potato (diced)"
   ],
-  "usedIn": [
-    {
-      "dishNumber": 13,
-      "quantity": 30,
-      "unit": "g",
-      "raw": "30 g (3–4 small florets, about ¼ cup chopped)"
-    }
-  ],
+  "usedIn": [],
   "versions": [
     {
       "date": "2026-10-06",
       "file": "FitPlate_Ingredients_2026-10-06.md"
+    },
+    {
+      "date": "2026-10-29",
+      "file": "FitPlate_Ingredients_2026-10-29.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (spike-blend)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: possible-spike",
+    "price flag: narrowed",
+    "Possible spike: latest avg 110 (2026-10-29) moved more than 35% from the previous estimate; using the halfway point.",
+    "Range 52.5–110.0 was wider than 30% of avg 80.0; narrowed to ±15%."
+  ]
 }

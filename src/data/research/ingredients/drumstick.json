@@ -17,37 +17,226 @@
         "avg": 100,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-05.md"
+      },
+      {
+        "date": "2026-10-29",
+        "min": 65,
+        "max": 120,
+        "avg": 90,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
       }
     ],
     "currentEstimate": {
-      "min": 85,
-      "max": 115,
-      "avg": 100
+      "min": 80,
+      "max": 108,
+      "avg": 94
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-05",
+    "lastObserved": "2026-10-29",
     "stale": false,
     "seasonal": false,
-    "listingCount": 2,
+    "listingCount": 4,
     "platforms": [
-      "BigBasket",
-      "Mumbai retail price pages (indiaprices.co.in / Golden Chennai rates; snippet did not show which gave which"
+      "BigBasket"
     ],
     "outOfStock": false,
     "confirmed": false,
     "checkNotes": [
-      "only 2 listings back the range (need 3)"
+      "only 1 platform (BigBasket) backs the range"
     ]
   },
   "per100Estimate": {
-    "min": 8.5,
-    "max": 11.5,
-    "avg": 10
+    "min": 8,
+    "max": 10.8,
+    "avg": 9.4
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 37,
+      "source": "USDA FDC: USDA FDC 170483 'Drumstick pods, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "proteinG": {
+      "value": 2.1,
+      "source": "USDA FDC: USDA FDC 170483 'Drumstick pods, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "carbsG": {
+      "value": 8.5,
+      "source": "USDA FDC: USDA FDC 170483 'Drumstick pods, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fatG": {
+      "value": 0.2,
+      "source": "USDA FDC: USDA FDC 170483 'Drumstick pods, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 3.2,
+      "source": "USDA FDC: USDA FDC 170483 'Drumstick pods, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sodiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "ironMg": {
+      "value": 0.4,
+      "source": "USDA FDC: USDA FDC 170483 'Drumstick pods, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "calciumMg": {
+      "value": 30,
+      "source": "USDA FDC: USDA FDC 170483 'Drumstick pods, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "potassiumMg": {
+      "value": 461,
+      "source": "USDA FDC: USDA FDC 170483 'Drumstick pods, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "magnesiumMg": {
+      "value": 45,
+      "source": "USDA FDC: USDA FDC 170483 'Drumstick pods, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": 141,
+      "source": "USDA FDC: USDA FDC 170483 'Drumstick pods, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 170483 'Drumstick pods, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": 0.1,
+      "source": "USDA FDC: USDA FDC 170483 'Drumstick pods, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "niacinMg": {
+      "value": 0.6,
+      "source": "USDA FDC: USDA FDC 170483 'Drumstick pods, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminB6Mg": {
+      "value": 0.1,
+      "source": "USDA FDC: USDA FDC 170483 'Drumstick pods, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 170483 'Drumstick pods, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    }
+  },
   "macrosPer100Estimate": {
     "kcal": 37,
     "proteinG": 2.1,
@@ -55,32 +244,39 @@
     "fatG": 0.2,
     "fibreG": 3.2
   },
-  "storage": "Wrap in a paper towel or newspaper, put in a bag, and store in the fridge vegetable drawer for up to a week. Cut pieces can be blanched for 2 minutes and frozen for about 2 months, for sambar only.",
-  "looksLike": "A long, thin, dark-green pod, 30–45 cm long and about as thick as a finger, with lengthwise ridges. Inside is soft pulp with pale, winged seeds.",
-  "howToPick": null,
-  "shelfLife": "4–7 days in the fridge.",
+  "storage": "Wrap in a paper towel or cloth and keep in the fridge crisper for 3 to 5 days; cut pieces can be frozen raw for a few weeks.",
+  "looksLike": "A long, thin, ridged green pod, 30 to 60 cm long, with a tough skin and a soft, seed-dotted pulp inside. It is cut into 5 to 8 cm pieces for cooking and the pulp is scraped out with the teeth.",
+  "howToPick": "Slim, firm, bright green pods that snap when bent. Avoid thick, woody, yellowing or shrivelled pods; they are mostly fibre.",
+  "shelfLife": "About 3 to 5 days in the fridge (general guidance, not from a source in this run).",
   "substitutes": [
     "Pumpkin or bottle gourd",
     "Brinjal (baingan)",
-    "Okra (bhindi)"
+    "Okra (bhindi)",
+    "Frozen drumstick pieces",
+    "Raw mango strips or green beans"
   ],
   "usedIn": [
     {
-      "dishNumber": 9,
+      "dishNumber": 88,
       "quantity": 25,
       "unit": "g",
-      "raw": "25 g (three 5 cm pieces)"
+      "raw": "25 g per serving (1 piece, about 6 cm)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-05",
       "file": "FitPlate_Ingredients_2026-10-05.md"
+    },
+    {
+      "date": "2026-10-29",
+      "file": "FitPlate_Ingredients_2026-10-29.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (wma)",
     "macrosPer100Estimate": "stable (single)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
@@ -89,6 +285,6 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 80.0–120.0 was wider than 30% of avg 100.0; narrowed to ±15%."
+    "Range 70.5–120.0 was wider than 30% of avg 93.6; narrowed to ±15%."
   ]
 }

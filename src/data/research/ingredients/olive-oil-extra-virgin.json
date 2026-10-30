@@ -1,0 +1,92 @@
+{
+  "id": "olive-oil-extra-virgin",
+  "name": "Olive oil, extra virgin",
+  "aliases": [
+    "jaitun ka tel",
+    "Figaro",
+    "Borges style"
+  ],
+  "category": "Oil / fat",
+  "standardUnit": "l",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-25",
+        "min": 855,
+        "max": 1500,
+        "avg": 1195,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 1015,
+      "max": 1375,
+      "avg": 1195
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-25",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 7,
+    "platforms": [
+      "BigBasket",
+      "Swiggy Instamart"
+    ],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
+  },
+  "per100Estimate": {
+    "min": 101.5,
+    "max": 137.5,
+    "avg": 119.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 884,
+    "proteinG": null,
+    "carbsG": null,
+    "fatG": null,
+    "fibreG": null
+  },
+  "storage": "Keep tightly closed in a cool, dark cupboard, away from the stove; use within about 3 months of opening for best flavour. Do not refrigerate (it clouds, harmlessly).",
+  "looksLike": "A pale gold to green liquid oil sold in glass or plastic bottles and tins; extra virgin has a fruity, slightly peppery smell.",
+  "howToPick": "For \"extra virgin\" look for the words on the label, a harvest or best-before date and a dark glass bottle or tin. Avoid a rancid, crayon-like smell or a bottle kept in a sunny shop window. Use plain \"pure\" or \"extra light\" for high-heat frying and extra virgin for sauces and finishing.",
+  "shelfLife": "Usually 18 to 24 months sealed, shorter once opened (general guidance, not from a source in this run).",
+  "substitutes": [
+    "Refined sunflower or groundnut oil",
+    "Butter (about the same weight)",
+    "Mustard or sesame oil"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 102,
+      "quantity": 9,
+      "unit": "g",
+      "raw": "9 g (10 ml, 2 tsp) per serving"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-25",
+      "file": "FitPlate_Ingredients_2026-10-25.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "looksLike": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 855.0–1500.0 was wider than 30% of avg 1195.0; narrowed to ±15%."
+  ]
+}

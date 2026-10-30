@@ -1,0 +1,95 @@
+{
+  "id": "processed-cheese-block",
+  "name": "Processed cheese, block",
+  "aliases": [
+    "Amul",
+    "Britannia",
+    "cheese"
+  ],
+  "category": "Dairy",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-25",
+        "min": 520,
+        "max": 645,
+        "avg": 605,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 520,
+      "max": 645,
+      "avg": 605
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-25",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 5,
+    "platforms": [
+      "BigBasket",
+      "Swiggy Instamart"
+    ],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
+  },
+  "per100Estimate": {
+    "min": 52,
+    "max": 64.5,
+    "avg": 60.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 307,
+    "proteinG": 16.1,
+    "carbsG": 8.8,
+    "fatG": 23.1,
+    "fibreG": null
+  },
+  "storage": "Keep refrigerated in the carton or foil, wrapped tightly once opened; use within about 3 to 4 weeks of opening (general guidance).",
+  "looksLike": "A pale yellow, firm, smooth block in a carton or tin that grates or slices easily; also sold as individually wrapped slices, spread, cubes and shredded.",
+  "howToPick": "Check the sealed pack, a mild milky smell and no oily sweating or mould on the surface; the date on the carton matters.",
+  "shelfLife": "Several months unopened in the fridge on the carton date (general guidance, not from a source in this run).",
+  "substitutes": [
+    "Cheddar or mozzarella, grated",
+    "Parmesan (small amount)",
+    "Cashew cream or vegan cheese"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 102,
+      "quantity": 15,
+      "unit": "g",
+      "raw": "15 g grated per serving (2 tbsp)"
+    },
+    {
+      "dishNumber": 81,
+      "quantity": null,
+      "unit": null,
+      "raw": "optional 1 tbsp grated, not counted in the base recipe"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-25",
+      "file": "FitPlate_Ingredients_2026-10-25.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "looksLike": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

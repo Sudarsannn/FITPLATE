@@ -35,6 +35,8 @@ export const featureFlags = {
   recentDishes: true,
   /** Innovation (Day 11): after 9 pm Today suggests three quick, lighter dishes instead of ordering. */
   lateNightHelper: true,
+  /** Innovation (Day 13): opt-in desk-break stretch card on Today, weekdays 10:00 to 18:00. */
+  deskBreak: true,
   /** Priority plan P1-b: Google sign-in inside the iPhone / Android dev build. Only shows when that platform's client ID is in .env. */
   nativeGoogleSignIn: true,
   /** Priority plan P2-c: read the research library from the server when it is newer than the bundled copy. */

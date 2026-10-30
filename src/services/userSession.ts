@@ -376,6 +376,21 @@ export function createUserSession(
       enqueue(() => repos.mealLogs.create({ ...fieldsOf(doc), id: doc.id }));
     },
 
+    /** Day 13: change a logged meal (portion, name, numbers). Stays the same document, so the cloud copy updates in place. */
+    updateMeal(id: string, patch: Partial<Pick<MealLog, 'name' | 'kcal' | 'proteinG' | 'fibreG' | 'servings' | 'costInr' | 'orderInr' | 'how' | 'cooked'>>) {
+      const current = docs.mealLogs[id];
+      if (!current) return;
+      put('mealLogs', { ...current, ...patch, updatedAt: now() });
+      enqueue(() => repos.mealLogs.update(id, patch));
+    },
+
+    /** Day 13: delete a logged meal (a soft delete, so other devices learn about it). */
+    removeMeal(id: string) {
+      if (!docs.mealLogs[id]) return;
+      drop('mealLogs', id);
+      enqueue(() => repos.mealLogs.remove(id));
+    },
+
     addWorkout(w: Omit<WorkoutLog, 'timestamp' | 'dateKey'>) {
       const t = now();
       const doc: Doc<WorkoutLog> = { ...w, timestamp: t, dateKey: dateKeyOf(t), ...base(makeId(t), 'workoutLogs', t) };

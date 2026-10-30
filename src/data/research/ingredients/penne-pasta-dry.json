@@ -1,0 +1,92 @@
+{
+  "id": "penne-pasta-dry",
+  "name": "Penne pasta, dry",
+  "aliases": [
+    "durum wheat",
+    "durum wheat penne rigate"
+  ],
+  "category": "Packaged / grain",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-25",
+        "min": 115,
+        "max": 395,
+        "avg": 260,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 220,
+      "max": 300,
+      "avg": 260
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-25",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 6,
+    "platforms": [
+      "BigBasket"
+    ],
+    "outOfStock": false,
+    "confirmed": false,
+    "checkNotes": [
+      "only 1 platform (BigBasket) backs the range"
+    ]
+  },
+  "per100Estimate": {
+    "min": 22,
+    "max": 30,
+    "avg": 26
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 371,
+    "proteinG": null,
+    "carbsG": null,
+    "fatG": null,
+    "fibreG": null
+  },
+  "storage": "Keep dry in an airtight jar or the closed pouch at room temperature, away from damp. Cooked penne keeps 2 to 3 days in the fridge.",
+  "looksLike": "Short, ridged, hollow tubes cut at an angle, pale yellow, sold dry in 500 g and 1 kg pouches.",
+  "howToPick": "Choose \"100% durum wheat semolina\" for firmer pasta that holds its bite; check the pouch is sealed with no broken pieces or insect holes. Maida-based pasta turns soft faster.",
+  "shelfLife": "About 12 to 24 months dry on the pack date (general guidance, not from a source in this run).",
+  "substitutes": [
+    "Fusilli, rigatoni or macaroni",
+    "Whole wheat or multigrain penne",
+    "Gluten-free penne (rice, corn or chickpea)"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 102,
+      "quantity": 75,
+      "unit": "g",
+      "raw": "75 g dry penne per serving (about ¾ cup)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-25",
+      "file": "FitPlate_Ingredients_2026-10-25.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "looksLike": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 115.0–395.0 was wider than 30% of avg 260.0; narrowed to ±15%."
+  ]
+}

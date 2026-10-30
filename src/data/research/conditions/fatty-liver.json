@@ -1,0 +1,796 @@
+{
+  "id": "fatty-liver",
+  "type": "condition",
+  "name": "Fatty liver (NAFLD/MASLD)",
+  "surveyQuestion": "Do you have any of these health conditions? (select all that apply) -> Fatty liver (NAFLD/MASLD). Check question: Has a doctor, ultrasound or lab report told you that you have fatty liver, MASLD or NAFLD, or raised liver enzymes? Yes, fatty liver / Yes, raised enzymes only (lifestyle-only mode) / Yes, scarring or cirrhosis (doctor-led mode) / No / Never tested (suggest a liver check if large waist, diabetes or high triglycerides) / Not sure. Follow-ups: weight, height, waist in cm; optional ALT, AST, platelets, FibroScan kPa and test date; Do you take any medicine? No / Yes / Not sure; Do you drink alcohol? Never / Rarely / Weekly / Most days",
+  "targets": [
+    {
+      "nutrient": "energy",
+      "unit": "kcal/day",
+      "generalAdult": 2110,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "limit",
+      "source": "ICMR-NIN 2020 (2110 sedentary man, 1660 sedentary woman) (secondary, unverified); modest deficit only if BMI 23 or more or waist 90/80 cm or more; deficit size Not found for MASLD; INASL: gradual loss over 3-6 months (via Tribune, secondary)"
+    },
+    {
+      "nutrient": "weight_loss_if_overweight",
+      "unit": "% body weight",
+      "generalAdult": null,
+      "profileValue": 7,
+      "min": 7,
+      "max": 10,
+      "direction": "limit",
+      "source": "INASL 2023 7-10% if overweight or obese (via author press piece, secondary); tiers: 5% or more for liver fat, 7-10% for inflammation, 10% or more for fibrosis (Global NASH/MASH Council 2025 via news; AASLD 2023 and EASL 2024 via summaries, which conflict on exact thresholds)"
+    },
+    {
+      "nutrient": "weight_loss_if_lean",
+      "unit": "% body weight",
+      "generalAdult": null,
+      "profileValue": 4,
+      "min": 3,
+      "max": 5,
+      "direction": "limit",
+      "source": "AGA clinical practice update 2022 (lean NAFLD 3-5%); INASL via Tribune (secondary)"
+    },
+    {
+      "nutrient": "protein",
+      "unit": "g/kg/day",
+      "generalAdult": 0.83,
+      "profileValue": 0.83,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); no MASLD guideline protein target found; cirrhosis 1.2-1.5 g/kg/day is set by the doctor (EASL/AASLD tables, secondary)"
+    },
+    {
+      "nutrient": "total_fat",
+      "unit": "% energy",
+      "generalAdult": 30,
+      "profileValue": 30,
+      "min": null,
+      "max": 30,
+      "direction": "same",
+      "source": "DGI 2024 (30% or less, via news); WHO 2023; fat quality matters more than total"
+    },
+    {
+      "nutrient": "saturated_fat",
+      "unit": "% energy",
+      "generalAdult": 10,
+      "profileValue": 10,
+      "min": null,
+      "max": 10,
+      "direction": "limit",
+      "source": "WHO 2023 under 10% (about 22 g at 2000 kcal, calc.); AGA 2021 minimise saturated fat, especially red and processed meat; Luukkonen 2018 overfeeding: liver fat +55% saturated vs +15% unsaturated; under 7% if P4 selected"
+    },
+    {
+      "nutrient": "trans_fat",
+      "unit": "% energy",
+      "generalAdult": 1,
+      "profileValue": 1,
+      "min": null,
+      "max": 1,
+      "direction": "limit",
+      "source": "WHO 2023 (under 1%); as P4/P6"
+    },
+    {
+      "nutrient": "mufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "raise",
+      "source": "Not found as a number; groundnut, mustard, rice bran, sesame, olive oil and nuts in measured amounts; Mediterranean-style pattern (AASLD 2023, AGA 2021, EASL 2024 via summaries)"
+    },
+    {
+      "nutrient": "pufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "raise",
+      "source": "Not found as a number; polyunsaturated fat promoted less liver fat than saturated fat in LIPOGAIN-2 (via summary); NutriAct 12-month trial found a direct PUFA effect on liver fat (via summaries)"
+    },
+    {
+      "nutrient": "omega_3_fish",
+      "unit": "servings/week",
+      "generalAdult": null,
+      "profileValue": 2,
+      "min": 2,
+      "max": null,
+      "direction": "raise",
+      "source": "AHA 2021 (as P5/P6); omega-3 capsule meta-analyses mixed: liver fat improved, ALT inconsistent, best dose unknown (secondary); ICMR-NIN omega-3 value Not found; capsules are the doctor's decision"
+    },
+    {
+      "nutrient": "dietary_cholesterol",
+      "unit": "mg/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No fatty-liver-specific value found; P4 applies if selected"
+    },
+    {
+      "nutrient": "total_carbohydrate",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No ICMR total found; DGI 2024 cereals and millets cap 45% of energy (as P4/P6, secondary, unverified); CENTRAL trial 18 months: Mediterranean/low-carbohydrate cut liver fat more than low-fat (via summary); no very low-carbohydrate target set"
+    },
+    {
+      "nutrient": "refined_carbohydrate",
+      "unit": "portions/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "limit",
+      "source": "No numeric limit found; refined rice, refined sugar and fried foods higher in Indian NAFLD cases (Trivandrum case-control 2022, via summary, secondary); shift to whole grains, millets, pulses"
+    },
+    {
+      "nutrient": "added_sugar",
+      "unit": "g/day",
+      "generalAdult": 25,
+      "profileValue": 25,
+      "min": null,
+      "max": 25,
+      "direction": "limit",
+      "source": "WHO 2015 (5% of energy, about 25 g, conditional); DGI 2024 20-25 g/day (via news); sugar-sweetened beverages with extra calories raise liver fat and ALT (Nutrients 2022 meta-analysis of feeding trials, high certainty, via summary); NAFLD OR 1.31 with high-fructose foods (2023 meta-analysis, observational)"
+    },
+    {
+      "nutrient": "fructose_added",
+      "unit": "g/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "limit",
+      "source": "Not found as a number; AGA 2021: limit or eliminate commercially produced fructose"
+    },
+    {
+      "nutrient": "fibre",
+      "unit": "g/day",
+      "generalAdult": 30,
+      "profileValue": 30,
+      "min": 30,
+      "max": null,
+      "direction": "raise",
+      "source": "As P4/P6 (ICMR-NIN 2020 about 30 g per 2000 kcal, secondary, unverified); UK Biobank about 190,000 adults: higher fibre HR 0.72 (0.58-0.90) for MASLD (observational, via summary)"
+    },
+    {
+      "nutrient": "sodium",
+      "unit": "mg/day",
+      "generalAdult": 2000,
+      "profileValue": 2000,
+      "min": null,
+      "max": 2000,
+      "direction": "limit",
+      "source": "WHO 2012; DGI 2024; as P3; cirrhosis with ascites about 2 g/day set by the doctor (secondary summaries)"
+    },
+    {
+      "nutrient": "salt",
+      "unit": "g/day",
+      "generalAdult": 5,
+      "profileValue": 5,
+      "min": null,
+      "max": 5,
+      "direction": "limit",
+      "source": "DGI 2024 (5 g, via news); as P3"
+    },
+    {
+      "nutrient": "potassium",
+      "unit": "mg/day",
+      "generalAdult": 3510,
+      "profileValue": 3510,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "WHO 2012; ICMR-NIN 2020 3500 mg (secondary, unverified); from food only; potassium-sparing diuretics and kidney disease need the doctor"
+    },
+    {
+      "nutrient": "calcium",
+      "unit": "mg/day",
+      "generalAdult": 1000,
+      "profileValue": 1000,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "iron_men",
+      "unit": "mg/day",
+      "generalAdult": 19,
+      "profileValue": 19,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "iron_women",
+      "unit": "mg/day",
+      "generalAdult": 29,
+      "profileValue": 29,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "magnesium_men",
+      "unit": "mg/day",
+      "generalAdult": 440,
+      "profileValue": 440,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 via FSSAI (secondary, unverified)"
+    },
+    {
+      "nutrient": "magnesium_women",
+      "unit": "mg/day",
+      "generalAdult": 370,
+      "profileValue": 370,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 via FSSAI (secondary, unverified)"
+    },
+    {
+      "nutrient": "vitamin_d",
+      "unit": "µg/day",
+      "generalAdult": 15,
+      "profileValue": 15,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); fatty-liver-specific value Not found"
+    },
+    {
+      "nutrient": "vitamin_b12",
+      "unit": "µg/day",
+      "generalAdult": 2.2,
+      "profileValue": 2.2,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 as adopted by FSSAI (secondary, unverified)"
+    },
+    {
+      "nutrient": "folate_men",
+      "unit": "µg DFE/day",
+      "generalAdult": 300,
+      "profileValue": 300,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "folate_women",
+      "unit": "µg DFE/day",
+      "generalAdult": 220,
+      "profileValue": 220,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "vitamin_e",
+      "unit": "IU/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Food only; no supplement preset. 800 IU/day is a doctor-prescribed option for selected non-diabetic adults with biopsy-proven NASH (PIVENS, Sanyal 2010: improvement 43% vs 19% placebo, fibrosis not improved); prostate cancer signal with long-term use and mortality signal at 400 IU/day or more in a meta-analysis (via search summaries, secondary); doctor only"
+    },
+    {
+      "nutrient": "alcohol",
+      "unit": "standard drinks/day",
+      "generalAdult": null,
+      "profileValue": 0,
+      "min": null,
+      "max": 0,
+      "direction": "limit",
+      "source": "Complete avoidance advised; AASLD 2023 abstinence if significant fibrosis (via summary); no safe limit in MASLD with metabolic risk (Arias-Loste, J Hepatol 2024, observational); EASL 2024 discourages alcohol and defines MetALD at 140-350 g/week (women) and 210-420 g/week (men)"
+    },
+    {
+      "nutrient": "coffee",
+      "unit": "cups/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No target: observational links only (2 or more cups/day with lower advanced fibrosis or cirrhosis, Liu 2015 meta-analysis of 16 studies; HR 0.57 for liver failure in MASLD, Lee 2023); summaries of INASL differ (more than 2 vs 3 or more cups); unsweetened only; not a treatment"
+    },
+    {
+      "nutrient": "physical_activity",
+      "unit": "min/week",
+      "generalAdult": 150,
+      "profileValue": 150,
+      "min": 150,
+      "max": 300,
+      "direction": "raise",
+      "source": "AGA 2021 (150-300 min moderate or 75-150 vigorous, resistance complementary); WHO 2020; DGI 2024 30-45 min/day (via news); 14-RCT meta-analysis 2023 (via news, secondary)"
+    },
+    {
+      "nutrient": "water",
+      "unit": "mL/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No change from FitPlate general water target; never pushed higher; Follow your doctor's advice"
+    }
+  ],
+  "bloodMarkers": [
+    {
+      "marker": "FIB-4",
+      "target": "Under 1.3 advanced fibrosis less likely; 1.3-2.67 indeterminate; above 2.67 high risk, refer to a liver specialist; doctor interprets",
+      "unit": "score",
+      "source": "AASLD 2023 and AGA 2021 (via comparison table); Indian guideline wording via search summary (secondary)"
+    },
+    {
+      "marker": "Liver stiffness (FibroScan)",
+      "target": "INASL 2022: 6.0 kPa or less significant fibrosis unlikely; 8.2 kPa or more suggests F2 or higher; an Indian guideline refers above 7.9 kPa to a hepatologist; cut-offs differ by guideline",
+      "unit": "kPa",
+      "source": "Search snippets (secondary, unverified); doctor interprets"
+    },
+    {
+      "marker": "ALT and AST",
+      "target": "Not found as a single Indian normal range in this run; stored only",
+      "unit": "U/L",
+      "source": "Not found"
+    },
+    {
+      "marker": "Triglycerides",
+      "target": "150 or more is raised; see P5",
+      "unit": "mg/dL",
+      "source": "As P5/P6"
+    },
+    {
+      "marker": "HDL cholesterol",
+      "target": "Low under 40 (men), under 50 (women); see P6",
+      "unit": "mg/dL",
+      "source": "IDF; AHA/NHLBI (as P6)"
+    },
+    {
+      "marker": "LDL and non-HDL cholesterol",
+      "target": "Goals set by the doctor by risk group; see P4",
+      "unit": "mg/dL",
+      "source": "As P4"
+    },
+    {
+      "marker": "Fasting glucose",
+      "target": "100 or more is a MASLD criterion; ranges as P1/P2",
+      "unit": "mg/dL",
+      "source": "As P1/P2/P6"
+    },
+    {
+      "marker": "HbA1c",
+      "target": "Stored only; ranges as P1/P2",
+      "unit": "%",
+      "source": "P1/P2"
+    },
+    {
+      "marker": "Blood pressure",
+      "target": "130/85 or more is a criterion; see P3",
+      "unit": "mmHg",
+      "source": "As P6"
+    },
+    {
+      "marker": "Waist circumference",
+      "target": "Raised at 90 or more (men), 80 or more (women)",
+      "unit": "cm",
+      "source": "Misra 2009 (as P6)"
+    },
+    {
+      "marker": "BMI",
+      "target": "23 or more is the Indian overweight cut-off used for the deficit trigger; lean people can have fatty liver",
+      "unit": "kg/m2",
+      "source": "Misra 2009 (as P2/P6); lean NAFLD studies (secondary)"
+    },
+    {
+      "marker": "Platelets, bilirubin, albumin, INR",
+      "target": "Stored only; the doctor uses them to judge advanced disease",
+      "unit": "-",
+      "source": "Not applicable (no target set)"
+    }
+  ],
+  "waterMl": {
+    "min": null,
+    "max": null,
+    "notes": "No change from FitPlate general water target. requires_doctor_input is true: with advanced liver disease, ascites, swelling, heart or kidney disease, pregnancy or water pills (diuretics such as spironolactone) the app shows only the general range and never pushes a higher target; fluid limits in advanced liver disease are set by the doctor. Choose water, plain chaas and unsweetened drinks; avoid soft drinks, packaged juice, sharbat, sweet lassi, alcohol and herbal liver-detox drinks. Follow your doctor's advice."
+  },
+  "sodiumMgMax": 2000,
+  "dietaryCholesterolMgMax": null,
+  "foodsFavour": [
+    "pulses and dals (moong, masoor, chana, rajma, sprouts) in place of extra rice",
+    "vegetables for half the plate, including leafy greens",
+    "oats, barley, ragi, jowar, bajra, whole-wheat atta and brown rice in measured portions",
+    "groundnut, mustard, rice bran, sesame or olive oil in measured amounts",
+    "a small handful of nuts and seeds (walnut, almond, flaxseed)",
+    "fish about twice a week, grilled, baked or in light curry",
+    "whole fruit instead of juice",
+    "plain curd, plain chaas, water, unsweetened tea or coffee if already used"
+  ],
+  "foodsLimit": [
+    "sugar and sugary drinks (soft drinks, packaged juice, sharbat, sweet lassi, cold coffee, sweet chai)",
+    "mithai and desserts; honey, jaggery and syrups count as sugar",
+    "refined flour foods (white bread, pav, bakery items, noodles, maida rotis, namkeen, biscuits)",
+    "large portions of polished white rice (biryani, pulao, fried rice)",
+    "deep-fried snacks, vanaspati and reused frying oil",
+    "butter, cream, coconut milk and palm oil in large amounts; ghee in excess",
+    "fatty red meat and processed meat",
+    "alcohol in any amount",
+    "ultra-processed packaged snacks (also high in salt)",
+    "herbal or Ayurvedic liver tonics, detox products, concentrated turmeric or green tea extracts, fat burners and protein powders without a doctor",
+    "vitamin E or omega-3 capsules taken on your own"
+  ],
+  "goodFitDishes": [
+    {
+      "dishNumber": 66,
+      "dishName": "Sprouts Chaat"
+    },
+    {
+      "dishNumber": 56,
+      "dishName": "Pesarattu"
+    },
+    {
+      "dishNumber": 67,
+      "dishName": "Mix Veg Curry"
+    },
+    {
+      "dishNumber": 44,
+      "dishName": "Baingan Bharta"
+    },
+    {
+      "dishNumber": 37,
+      "dishName": "Bhindi Masala"
+    },
+    {
+      "dishNumber": 49,
+      "dishName": "Mushroom Masala"
+    },
+    {
+      "dishNumber": 16,
+      "dishName": "Besan Chilla"
+    },
+    {
+      "dishNumber": 26,
+      "dishName": "Moong Dal Chilla"
+    },
+    {
+      "dishNumber": 80,
+      "dishName": "Masoor Dal"
+    },
+    {
+      "dishNumber": 5,
+      "dishName": "Dal Tadka"
+    },
+    {
+      "dishNumber": 8,
+      "dishName": "Chole (Chana Masala)"
+    },
+    {
+      "dishNumber": 12,
+      "dishName": "Rajma Chawal"
+    },
+    {
+      "dishNumber": 52,
+      "dishName": "Moong Dal Khichdi"
+    },
+    {
+      "dishNumber": 31,
+      "dishName": "Indian-style Overnight Oats"
+    },
+    {
+      "dishNumber": 71,
+      "dishName": "Ragi Dosa"
+    },
+    {
+      "dishNumber": 45,
+      "dishName": "Tandoori Chicken"
+    },
+    {
+      "dishNumber": 55,
+      "dishName": "Prawn Masala"
+    },
+    {
+      "dishNumber": 88,
+      "dishName": "Avial"
+    },
+    {
+      "dishNumber": 85,
+      "dishName": "South Indian Veg Kurma"
+    }
+  ],
+  "cautionDishes": [
+    {
+      "dishNumber": 39,
+      "dishName": "Veg Biryani",
+      "reason": "About 94 g carbohydrate, large rice portion (est.)"
+    },
+    {
+      "dishNumber": 62,
+      "dishName": "Mutton Biryani",
+      "reason": "About 77 g carbohydrate, large rice portion, red meat (est.)"
+    },
+    {
+      "dishNumber": 2,
+      "dishName": "Chicken Biryani",
+      "reason": "About 74 g carbohydrate, large rice portion (est.)"
+    },
+    {
+      "dishNumber": 11,
+      "dishName": "Aloo Paratha",
+      "reason": "About 94 g carbohydrate for 2 parathas with potato (est.)"
+    },
+    {
+      "dishNumber": 20,
+      "dishName": "Vada Pav",
+      "reason": "About 93 g carbohydrate; refined-flour pav and deep-fried vada (est.)"
+    },
+    {
+      "dishNumber": 29,
+      "dishName": "Misal Pav",
+      "reason": "About 83 g carbohydrate; refined-flour pav (est.)"
+    },
+    {
+      "dishNumber": 13,
+      "dishName": "Pav Bhaji",
+      "reason": "About 72 g carbohydrate; refined-flour pav and butter (est.)"
+    },
+    {
+      "dishNumber": 65,
+      "dishName": "Puri Bhaji",
+      "reason": "About 81 g carbohydrate; fried puris (est.)"
+    },
+    {
+      "dishNumber": 40,
+      "dishName": "Sabudana Khichdi",
+      "reason": "About 86 g carbohydrate, mostly sago starch (est.)"
+    },
+    {
+      "dishNumber": 61,
+      "dishName": "Appam with Veg Stew",
+      "reason": "About 81 g carbohydrate and coconut milk (est.)"
+    },
+    {
+      "dishNumber": 57,
+      "dishName": "Tomato Rice",
+      "reason": "About 72 g carbohydrate, rice-based (est.)"
+    },
+    {
+      "dishNumber": 25,
+      "dishName": "Veg Pulao",
+      "reason": "About 73 g carbohydrate, rice-based (est.)"
+    },
+    {
+      "dishNumber": 30,
+      "dishName": "Lemon Rice",
+      "reason": "About 70 g carbohydrate, rice-based (est.)"
+    },
+    {
+      "dishNumber": 19,
+      "dishName": "Jeera Rice",
+      "reason": "About 61 g carbohydrate and little fibre (est.)"
+    },
+    {
+      "dishNumber": 10,
+      "dishName": "Veg Fried Rice",
+      "reason": "Refined rice with soy sauce and sugar (est.)"
+    },
+    {
+      "dishNumber": 15,
+      "dishName": "Veg Hakka Noodles",
+      "reason": "Refined noodles with sauces (est.)"
+    },
+    {
+      "dishNumber": 64,
+      "dishName": "Schezwan Noodles",
+      "reason": "About 69 g carbohydrate; refined noodles and sugary, salty sauces (est.)"
+    },
+    {
+      "dishNumber": 59,
+      "dishName": "Chicken Kathi Roll",
+      "reason": "About 49 g carbohydrate; maida wrap (est.)"
+    },
+    {
+      "dishNumber": 36,
+      "dishName": "Rava Dosa",
+      "reason": "About 51.5 g carbohydrate; semolina and maida (est.)"
+    },
+    {
+      "dishNumber": 1,
+      "dishName": "Poha",
+      "reason": "About 57.6 g carbohydrate; refined starch breakfast (est.)"
+    },
+    {
+      "dishNumber": 47,
+      "dishName": "Veg Manchurian",
+      "reason": "Maida batter, ketchup and sauces, fried (est.)"
+    },
+    {
+      "dishNumber": 79,
+      "dishName": "Gobi Manchurian",
+      "reason": "Maida batter, ketchup and sauces, fried (est.)"
+    },
+    {
+      "dishNumber": 24,
+      "dishName": "Medu Vada",
+      "reason": "Deep-fried; trans fat if oil is reused (est.)"
+    },
+    {
+      "dishNumber": 28,
+      "dishName": "Chicken 65",
+      "reason": "Deep-fried; trans fat if oil is reused (est.)"
+    },
+    {
+      "dishNumber": 3,
+      "dishName": "Paneer Butter Masala",
+      "reason": "Butter and cream gravy: high saturated fat (est.)"
+    },
+    {
+      "dishNumber": 7,
+      "dishName": "Butter Chicken",
+      "reason": "Butter and cream gravy: high saturated fat (est.)"
+    },
+    {
+      "dishNumber": 27,
+      "dishName": "Dal Makhani",
+      "reason": "Butter and cream; high saturated fat (est.)"
+    },
+    {
+      "dishNumber": 42,
+      "dishName": "Malai Kofta",
+      "reason": "Cream and fried koftas (est.)"
+    },
+    {
+      "dishNumber": 95,
+      "dishName": "Rice Kheer",
+      "reason": "Sweet dessert (est. high added sugar)"
+    },
+    {
+      "dishNumber": 96,
+      "dishName": "Gajar Halwa",
+      "reason": "Sweet dessert (est. high added sugar)"
+    },
+    {
+      "dishNumber": 97,
+      "dishName": "Gulab Jamun",
+      "reason": "Fried sugar-syrup dessert (est. high added sugar)"
+    },
+    {
+      "dishNumber": 98,
+      "dishName": "Mango Lassi",
+      "reason": "Sweetened drink (est. high added sugar; sugary drinks raise liver fat)"
+    },
+    {
+      "dishNumber": 99,
+      "dishName": "Masala Chai",
+      "reason": "Sugar spoons add up across the day (est.)"
+    },
+    {
+      "dishNumber": 100,
+      "dishName": "Cold Coffee",
+      "reason": "Sweetened drink (est. high added sugar)"
+    }
+  ],
+  "conflictsWith": [
+    {
+      "profileId": "low-hdl-metabolic-syndrome",
+      "rule": "Compatible and usually co-exists; sugar, alcohol and weight-loss rules match P6; doctor input"
+    },
+    {
+      "profileId": "high-triglycerides",
+      "rule": "Compatible; P5 sugar, refined-carbohydrate and alcohol limits apply; TG of 500 mg/dL or more: doctor's plan overrides"
+    },
+    {
+      "profileId": "high-ldl-cholesterol",
+      "rule": "Compatible; P4 fat quality and fibre goals; statins are the doctor's decision"
+    },
+    {
+      "profileId": "hypertension",
+      "rule": "Compatible; P3 sodium and potassium rules; no potassium salt substitute without the doctor"
+    },
+    {
+      "profileId": "type-2-diabetes",
+      "rule": "Same direction; P1 carbohydrate and sugar rules; stricter sugar limit wins; doctor input; no fasting plans on glucose-lowering medicine without the doctor"
+    },
+    {
+      "profileId": "prediabetes",
+      "rule": "Same direction; P2 rules; waist and BMI triggers shared"
+    },
+    {
+      "profileId": "chronic-kidney-disease",
+      "rule": "P13 overrides protein, potassium and fluid; both need the doctor"
+    },
+    {
+      "profileId": "heart-disease",
+      "rule": "P21 overrides; fluid follows P21; doctor sets lipid goals"
+    },
+    {
+      "profileId": "pregnancy",
+      "rule": "Pregnancy overrides; no weight-loss deficit; alcohol none; doctor reviews liver tests"
+    },
+    {
+      "profileId": "breastfeeding",
+      "rule": "P23 energy needs apply; no deficit pushed; alcohol none"
+    },
+    {
+      "profileId": "fat-loss",
+      "rule": "Compatible; P25 sets the deficit and pace; P7 adds no-alcohol, no-sugary-drink and supplement-safety rules"
+    },
+    {
+      "profileId": "muscle-gain",
+      "rule": "Compatible; resistance training useful; surplus from whole foods; no protein powders or supplements without the doctor"
+    },
+    {
+      "profileId": "endurance-running",
+      "rule": "Compatible; avoid routine sugary sports drinks"
+    },
+    {
+      "profileId": "pcos",
+      "rule": "Often co-exists (insulin resistance); same food direction; doctor input"
+    },
+    {
+      "profileId": "hypothyroidism",
+      "rule": "Often co-exists; mention to the doctor; no target change"
+    },
+    {
+      "profileId": "gout-high-uric-acid",
+      "rule": "Often co-exists; alcohol and sugary drinks limits point the same way; P15 purine rules also apply"
+    },
+    {
+      "profileId": "jain-diet",
+      "rule": "Food filter; use pulses, whole grains, nuts and seeds for fibre and unsaturated fat"
+    },
+    {
+      "profileId": "vegan-diet",
+      "rule": "Food filter; watch coconut milk saturated fat; plant omega-3 from flaxseed and walnuts"
+    }
+  ],
+  "requiresDoctorInput": true,
+  "requiresDoctorInputStated": true,
+  "fluidNote": null,
+  "warnings": [
+    "General information, not medical advice. FitPlate does not diagnose fatty liver or judge liver scarring; blood tests, ultrasound and often a FibroScan reviewed by a doctor are needed.",
+    "The app never suggests starting, stopping or changing any medicine or supplement (vitamin E, pioglitazone, semaglutide, resmetirom, statins, diabetes or BP medicines, omega-3 capsules, herbal products). Follow your doctor.",
+    "No alcohol is advised. Do not stop heavy drinking suddenly without medical advice.",
+    "Vitamin E at 800 IU/day is a doctor-only option for selected biopsy-proven NASH; reports link long-term use with a small prostate cancer rise and possible higher mortality at high doses. The app has no vitamin E preset.",
+    "Herbal, Ayurvedic and 'liver detox' products, and concentrated extracts of turmeric, green tea, ashwagandha or giloy, have been linked to liver injury; show any such product to your doctor.",
+    "Coffee has only observational links with less liver scarring; it is not a treatment and the app sets no cups target. Keep it unsweetened.",
+    "Emergency: vomiting blood, black stools, new confusion or extreme drowsiness, severe belly pain or fever with a swollen belly, chest pain or stroke signs. Seek emergency care now (112).",
+    "Talk to your doctor for yellow eyes or skin, dark urine, a swollen belly or legs, easy bruising, FIB-4 of 1.3 or more, or a FibroScan above about 8 kPa.",
+    "With advanced liver disease, heart or kidney disease, pregnancy or diuretics, follow your doctor's advice on fluids and salt; potassium salt substitutes are not shown.",
+    "requires_doctor_input is true because fatty liver can hide scarring, many users take diabetes, BP or cholesterol medicines and diuretics, and protein, fluid and sodium needs change in advanced disease; the app sets only general food, sugar, alcohol, sodium, activity and weight guidance on its own."
+  ],
+  "lastResearched": "2026-10-30",
+  "versions": [
+    {
+      "date": "2026-10-30",
+      "file": "FitPlate_Nutrients_2026-10-30.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3); max as safety limit",
+    "limits": "safety limit (lower on conflict)",
+    "lists": "union",
+    "requiresDoctorInput": "stated true in any version, else newest version (missing flag + limits → true)"
+  },
+  "mergeNotes": [],
+  "needsReview": []
+}

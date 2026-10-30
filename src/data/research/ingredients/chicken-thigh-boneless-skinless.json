@@ -13,75 +13,274 @@
         "avg": 690,
         "confidence": "High",
         "sourceFile": "FitPlate_Ingredients_2026-10-05.md"
+      },
+      {
+        "date": "2026-10-29",
+        "min": 600,
+        "max": 685,
+        "avg": 640,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
       }
     ],
     "currentEstimate": {
       "min": 600,
-      "max": 800,
-      "avg": 690
+      "max": 745,
+      "avg": 665
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-05",
+    "lastObserved": "2026-10-29",
     "stale": false,
     "seasonal": false,
-    "listingCount": 5,
+    "listingCount": 2,
     "platforms": [
-      "BigBasket",
-      "Flipkart",
-      "Licious website",
-      "Zepto"
+      "BigBasket"
     ],
     "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "confirmed": false,
+    "checkNotes": [
+      "only 2 listings back the range (need 3)",
+      "only 1 platform (BigBasket) backs the range"
+    ]
   },
   "per100Estimate": {
     "min": 60,
-    "max": 80,
-    "avg": 69
+    "max": 74.5,
+    "avg": 66.5
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 121,
+      "source": "USDA FDC: Mixed secondary listings of USDA chicken thigh raw entries (FDC 171477 family); not one entry; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Low"
+    },
+    "proteinG": {
+      "value": 18.6,
+      "source": "USDA FDC: Mixed secondary listings of USDA chicken thigh raw entries (FDC 171477 family); not one entry; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Low"
+    },
+    "carbsG": {
+      "value": 0,
+      "source": "USDA FDC: Mixed secondary listings of USDA chicken thigh raw entries (FDC 171477 family); not one entry; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Low"
+    },
+    "sugarsG": {
+      "value": 0,
+      "source": "USDA FDC: Mixed secondary listings of USDA chicken thigh raw entries (FDC 171477 family); not one entry; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Low"
+    },
+    "fatG": {
+      "value": 7.9,
+      "source": "USDA FDC: Mixed secondary listings of USDA chicken thigh raw entries (FDC 171477 family); not one entry; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Low"
+    },
+    "saturatedFatG": {
+      "value": 1.7,
+      "source": "USDA FDC: Mixed secondary listings of USDA chicken thigh raw entries (FDC 171477 family); not one entry; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Low"
+    },
+    "fibreG": {
+      "value": 0,
+      "source": "USDA FDC: Mixed secondary listings of USDA chicken thigh raw entries (FDC 171477 family); not one entry; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Low"
+    },
+    "sodiumMg": {
+      "value": 62,
+      "source": "USDA FDC: Mixed secondary listings of USDA chicken thigh raw entries (FDC 171477 family); not one entry; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Low"
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": 272,
+      "source": "USDA FDC: Mixed secondary listings of USDA chicken thigh raw entries (FDC 171477 family); not one entry; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Low"
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": 1.58,
+      "source": "USDA FDC: Mixed secondary listings of USDA chicken thigh raw entries (FDC 171477 family); not one entry; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Low"
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 92,
+      "source": "USDA FDC: Mixed secondary listings of USDA chicken thigh raw entries (FDC 171477 family); not one entry; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Low"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": 178,
+      "source": "USDA FDC: Mixed secondary listings of USDA chicken thigh raw entries (FDC 171477 family); not one entry; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Low"
+    },
+    "seleniumUg": {
+      "value": 22.9,
+      "source": "USDA FDC: Mixed secondary listings of USDA chicken thigh raw entries (FDC 171477 family); not one entry; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Low"
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": 5.557,
+      "source": "USDA FDC: Mixed secondary listings of USDA chicken thigh raw entries (FDC 171477 family); not one entry; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Low"
+    },
+    "vitaminB6Mg": {
+      "value": 0.3,
+      "source": "USDA FDC: Mixed secondary listings of USDA chicken thigh raw entries (FDC 171477 family); not one entry; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Low"
+    },
+    "vitaminB12Ug": {
+      "value": 0.4,
+      "source": "USDA FDC: Mixed secondary listings of USDA chicken thigh raw entries (FDC 171477 family); not one entry; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Low"
+    }
+  },
   "macrosPer100Estimate": {
     "kcal": 121,
-    "proteinG": 19.7,
+    "proteinG": 19.2,
     "carbsG": 0,
-    "fatG": 4.1,
+    "fatG": 7.9,
     "fibreG": 0
   },
-  "storage": "1–2 days.",
-  "looksLike": "Irregular, flattish pieces of pinkish-red dark meat with some white fat at the edges, no bone and no skin. Darker and juicier than breast.",
-  "howToPick": null,
-  "shelfLife": "1–2 days in the fridge (follow the pack's use-by date).",
+  "storage": "Keep at 0 to 4 degrees C and cook within 1 to 2 days of buying, or freeze in portions; thaw in the fridge, not on the counter.",
+  "looksLike": "Pink-beige, soft, slightly irregular pieces of leg meat with the bone and skin removed; darker and juicier than breast. Packs hold 5 to 7 pieces per 450 g.",
+  "howToPick": "Pink, moist, firm meat with no grey patches, no sour smell and no excess liquid in the pack. Check the date and cold-chain.",
+  "shelfLife": "1 to 2 days in the fridge; 6 to 9 months frozen (general guidance, not from a source in this run).",
   "substitutes": [
     "Boneless chicken breast",
     "Bone-in thigh or curry cut",
-    "Paneer"
+    "Paneer",
+    "Chicken breast, boneless",
+    "Paneer or firm tofu (vegetarian)"
   ],
   "usedIn": [
     {
-      "dishNumber": 7,
+      "dishNumber": 87,
       "quantity": 150,
       "unit": "g",
-      "raw": "150 g (6–8 bite-size pieces)"
+      "raw": "150 g per serving (boneless chicken, thigh or breast; about 2 thighs)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-05",
       "file": "FitPlate_Ingredients_2026-10-05.md"
+    },
+    {
+      "date": "2026-10-29",
+      "file": "FitPlate_Ingredients_2026-10-29.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "macrosPer100Estimate.fatG: Versions 2026-10-05 (4.1) and 2026-10-29 (7.9) differ by more than 25%; kept the newer."
+  ]
 }

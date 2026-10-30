@@ -1,0 +1,92 @@
+{
+  "id": "bread-crumbs-dry",
+  "name": "Bread crumbs, dry",
+  "aliases": [
+    "packaged",
+    "Weikfield",
+    "Mr. Bread",
+    "Ching's type"
+  ],
+  "category": "Bakery",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-29",
+        "min": 135,
+        "max": 160,
+        "avg": 150,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 135,
+      "max": 160,
+      "avg": 150
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-29",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 2,
+    "platforms": [
+      "BigBasket"
+    ],
+    "outOfStock": false,
+    "confirmed": false,
+    "checkNotes": [
+      "only 2 listings back the range (need 3)",
+      "only 1 platform (BigBasket) backs the range"
+    ]
+  },
+  "per100Estimate": {
+    "min": 13.5,
+    "max": 16,
+    "avg": 15
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 367,
+    "proteinG": null,
+    "carbsG": null,
+    "fatG": 3.3,
+    "fibreG": null
+  },
+  "storage": "Keep in a sealed jar or zip pouch at room temperature, away from damp, for about 2 to 3 months after opening. Homemade crumbs from dry bread keep for a few weeks in an airtight jar.",
+  "looksLike": "Fine, dry, pale golden to cream crumbs sold in pouches. Panko is a separate, coarser, flakier Japanese-style crumb.",
+  "howToPick": "Look for dry, uniformly fine crumbs in a sealed pouch with no clumps, damp patches or rancid smell. Check the label for milk, added salt and \"mix\" (seasoned or coated).",
+  "shelfLife": "About 6 to 12 months unopened, from the printed date (general guidance; follow the label).",
+  "substitutes": [
+    "Homemade crumbs from stale bread, dried and ground",
+    "Rice flour, poha powder or arrowroot / kuttu flour",
+    "Rava (suji) or cornflour"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 91,
+      "quantity": 15,
+      "unit": "g",
+      "raw": "15 g per serving (2 tbsp)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-29",
+      "file": "FitPlate_Ingredients_2026-10-29.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "looksLike": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

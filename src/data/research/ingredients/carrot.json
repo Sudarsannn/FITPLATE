@@ -15,37 +15,229 @@
         "avg": 65,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-05.md"
+      },
+      {
+        "date": "2026-10-29",
+        "min": 40,
+        "max": 130,
+        "avg": 75,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
       }
     ],
     "currentEstimate": {
-      "min": 65,
-      "max": 70,
-      "avg": 65
+      "min": 62,
+      "max": 84,
+      "avg": 73
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-05",
+    "lastObserved": "2026-10-29",
     "stale": false,
     "seasonal": false,
-    "listingCount": 2,
+    "listingCount": 12,
     "platforms": [
       "Amazon",
-      "BigBasket"
+      "BigBasket",
+      "Blinkit",
+      "Flipkart",
+      "JioMart",
+      "Zepto"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 2 listings back the range (need 3)"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 6.5,
-    "max": 7,
-    "avg": 6.5
+    "min": 6.2,
+    "max": 8.4,
+    "avg": 7.3
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 41,
+      "source": "USDA FDC: USDA FDC 170393 'Carrots, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, nutritionvalue.org); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "proteinG": {
+      "value": 0.9,
+      "source": "USDA FDC: USDA FDC 170393 'Carrots, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, nutritionvalue.org); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "carbsG": {
+      "value": 9.6,
+      "source": "USDA FDC: USDA FDC 170393 'Carrots, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, nutritionvalue.org); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sugarsG": {
+      "value": 4.7,
+      "source": "USDA FDC: USDA FDC 170393 'Carrots, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, nutritionvalue.org); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "fatG": {
+      "value": 0.2,
+      "source": "USDA FDC: USDA FDC 170393 'Carrots, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, nutritionvalue.org); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 2.8,
+      "source": "USDA FDC: USDA FDC 170393 'Carrots, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, nutritionvalue.org); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sodiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "ironMg": {
+      "value": 0.3,
+      "source": "USDA FDC: USDA FDC 170393 'Carrots, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, nutritionvalue.org); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "calciumMg": {
+      "value": 33,
+      "source": "USDA FDC: USDA FDC 170393 'Carrots, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, nutritionvalue.org); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "potassiumMg": {
+      "value": 320,
+      "source": "USDA FDC: USDA FDC 170393 'Carrots, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, nutritionvalue.org); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "magnesiumMg": {
+      "value": 12,
+      "source": "USDA FDC: USDA FDC 170393 'Carrots, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, nutritionvalue.org); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "zincMg": {
+      "value": 0.24,
+      "source": "USDA FDC: USDA FDC 170393 'Carrots, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, nutritionvalue.org); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminCMg": {
+      "value": 5.9,
+      "source": "USDA FDC: USDA FDC 170393 'Carrots, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, nutritionvalue.org); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminAUgRae": {
+      "value": 835,
+      "source": "USDA FDC: USDA FDC 170393 'Carrots, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, nutritionvalue.org); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 170393 'Carrots, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, nutritionvalue.org); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": 35,
+      "source": "USDA FDC: USDA FDC 170393 'Carrots, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, nutritionvalue.org); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": 13.2,
+      "source": "USDA FDC: USDA FDC 170393 'Carrots, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, nutritionvalue.org); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": 0.14,
+      "source": "USDA FDC: USDA FDC 170393 'Carrots, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, nutritionvalue.org); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 170393 'Carrots, raw' (SR Legacy); values seen only on secondary sites that mirror it (getfoodfacts, nutritionvalue.org); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    }
+  },
   "macrosPer100Estimate": {
     "kcal": 41,
     "proteinG": 0.9,
@@ -53,49 +245,54 @@
     "fatG": 0.2,
     "fibreG": 2.8
   },
-  "storage": "unwashed, tops removed, in a perforated bag or box in the crisper drawer for 2–3 weeks.",
-  "looksLike": "Long, tapering orange root, about 15–20 cm, sometimes with feathery green tops attached. The winter \"Delhi\" carrot is longer and red-pink; the year-round \"Ooty\"/hybrid carrot is shorter and bright orange.",
-  "howToPick": null,
-  "shelfLife": "About 2–3 weeks in the fridge; 3–4 days at room temperature.",
+  "storage": "Cut off any green tops, keep carrots in a bag or box in the fridge vegetable drawer; wash just before use.",
+  "looksLike": "A tapering orange root, 10 to 20 cm long, with a smooth skin and a sweet, crunchy flesh. Ooty carrots are thicker and bright orange; red or desi winter carrots are a different, redder type.",
+  "howToPick": "Firm, smooth, bright orange roots with no cracks, soft spots or hairy side roots. Avoid rubbery, bendy or sprouting carrots.",
+  "shelfLife": "About 1 to 2 weeks in the fridge (general guidance; not from a source in this run).",
   "substitutes": [
     "Pumpkin (kaddu/lal bhopla)",
     "Green peas or beans",
-    "Frozen mixed vegetables"
+    "Frozen mixed vegetables",
+    "Pumpkin or sweet potato (diced)",
+    "Beetroot",
+    "Skip it"
   ],
   "usedIn": [
     {
-      "dishNumber": 6,
-      "quantity": 20,
-      "unit": "g",
-      "raw": "20 g (2 tbsp, finely diced)"
-    },
-    {
-      "dishNumber": 9,
+      "dishNumber": 88,
       "quantity": 25,
       "unit": "g",
-      "raw": "25 g (¼ medium, cubed, in the sambar)"
+      "raw": "25 g per serving (¼ medium carrot)"
     },
     {
-      "dishNumber": 10,
-      "quantity": 30,
+      "dishNumber": 89,
+      "quantity": 20,
       "unit": "g",
-      "raw": "30 g (¼ medium, finely diced)"
+      "raw": "20 g per serving (2 tbsp diced)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-05",
       "file": "FitPlate_Ingredients_2026-10-05.md"
+    },
+    {
+      "date": "2026-10-29",
+      "file": "FitPlate_Ingredients_2026-10-29.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (wma)",
     "macrosPer100Estimate": "stable (single)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 45.6–116.6 was wider than 30% of avg 72.8; narrowed to ±15%."
+  ]
 }

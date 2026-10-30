@@ -5,6 +5,7 @@ import Svg, { Circle } from 'react-native-svg';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { dishPhoto } from '../../components/dishes/parts';
+import { EditLog } from '../../components/meals/EditLog';
 import { useMealMoney } from '../../components/meals/MealPanel';
 import { Bar, FadeIn, Glass, GradientButton } from '../../components/ui';
 import { ScreenTop } from '../../components/vendors/kit';
@@ -72,6 +73,10 @@ function Body({ meal, days, goal, sex }: { meal: MealRow; days: ReturnType<typeo
               <Text style={styles.kcalSmall}>{meal.kcal} kcal</Text>
             </View>
           </View>
+        </FadeIn>
+
+        <FadeIn i={1}>
+          <EditLog meal={meal} />
         </FadeIn>
 
         {money ? (
