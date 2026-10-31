@@ -66,6 +66,8 @@ Already on the branch. Nothing to rebuild on the phone for this day (no new nati
 
 None.
 
+**Carry-over for Day 15:** the Supervisor review thread says FitPlate_Review_2026-10-28.md (missed on Days 11-14) and FitPlate_Review_2026-10-31.md exist. Day 15 must read both, do the §3 FIX items (AI endpoint auth/CORS/cap, AI allergens in the allergy filter, plus the 31 Oct ones) or record each as skipped, and record the §5 ideas.
+
 ## 14. BUILD STATE
 
 ### Roadmap
