@@ -1,6 +1,6 @@
 {
   "schema": "fitplate.links.v1",
-  "generatedFor": "Day13",
+  "generatedFor": "Day14",
   "goodSourceDishes": {
     "biotin": [
       {
@@ -1442,7 +1442,17 @@
       "sodium": {
         "per100": 2,
         "unit": "mg",
-        "source": "ingredient research (USDA FDC: FDC ID 789890, Flour, wheat, all-purpose, enriched, bleached (Foundation), via getfoodfacts.com and triagemethod.com)"
+        "source": "ingredient research (USDA FDC: USDA FDC 169761 'Wheat flour, white, all-purpose, unenriched' (energy 364 kcal) with protein, fat, carbohydrate, fibre, sugars and sodium quoted from the enriched calcium-fortified entry FDC 169754 on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169761 'Wheat flour, white, all-purpose, unenriched' (energy 364 kcal) with protein, fat, carbohydrate, fibre, sugars and sodium quoted from the enriched calcium-fortified entry FDC 169754 on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169761 'Wheat flour, white, all-purpose, unenriched' (energy 364 kcal) with protein, fat, carbohydrate, fibre, sugars and sodium quoted from the enriched calcium-fortified entry FDC 169754 on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
     "almonds-whole": {
@@ -1552,6 +1562,18 @@
         "per100": 0.295,
         "unit": "mg",
         "source": "ingredient research (USDA FDC: FDC ID 170026 (SR Legacy): Potatoes, flesh and skin, raw; via triagemethod.com and Wikipedia nutrition table; zero by composition: none recorded)"
+      }
+    },
+    "baking-soda": {
+      "sodium": {
+        "per100": 27360,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 'Leavening agents, baking soda' (page shows ID 175040; a 175001 search did not confirm); sodium via secondary sites; zero by composition (pure sodium bicarbonate): energy_kcal, protein_g, carbohydrate_g, sugars_g, fat_g, saturated_fat_g, fibre_g, cholesterol_mg, trans_fat_g, mufa_g, pufa_g, omega3_g, added_sugars_g)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 'Leavening agents, baking soda' (page shows ID 175040; a 175001 search did not confirm); sodium via secondary sites; zero by composition (pure sodium bicarbonate): energy_kcal, protein_g, carbohydrate_g, sugars_g, fat_g, saturated_fat_g, fibre_g, cholesterol_mg, trans_fat_g, mufa_g, pufa_g, omega3_g, added_sugars_g)"
       }
     },
     "basmati-rice-everyday-grade": {
@@ -1709,26 +1731,63 @@
         "source": "ingredient research (USDA FDC: Spices, cardamom (SR Legacy; FDC ID shown as 170919 on a secondary site), used as a proxy for black cardamom; via secondary sites)"
       }
     },
-    "black-peppercorns-whole": {
+    "black-pepper-powder": {
       "iron": {
         "per100": 9.7,
         "unit": "mg",
-        "source": "ingredient research (USDA FDC: FDC ID 170931, Spices, pepper, black (SR Legacy), via secondary sites)"
+        "source": "ingredient research (USDA FDC: USDA FDC 170931 'Spices, pepper, black' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       },
       "calcium": {
         "per100": 443,
         "unit": "mg",
-        "source": "ingredient research (USDA FDC: FDC ID 170931, Spices, pepper, black (SR Legacy), via secondary sites)"
+        "source": "ingredient research (USDA FDC: USDA FDC 170931 'Spices, pepper, black' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       },
       "potassium": {
         "per100": 1329,
         "unit": "mg",
-        "source": "ingredient research (USDA FDC: FDC ID 170931, Spices, pepper, black (SR Legacy), via secondary sites)"
+        "source": "ingredient research (USDA FDC: USDA FDC 170931 'Spices, pepper, black' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       },
       "magnesium": {
         "per100": 171,
         "unit": "mg",
-        "source": "ingredient research (USDA FDC: FDC ID 170931, Spices, pepper, black (SR Legacy), via secondary sites)"
+        "source": "ingredient research (USDA FDC: USDA FDC 170931 'Spices, pepper, black' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "zinc": {
+        "per100": 1.19,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170931 'Spices, pepper, black' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170931 'Spices, pepper, black' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170931 'Spices, pepper, black' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
+    "black-peppercorns-whole": {
+      "iron": {
+        "per100": 9.7,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170931 'Spices, pepper, black' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "calcium": {
+        "per100": 443,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170931 'Spices, pepper, black' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "potassium": {
+        "per100": 1329,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170931 'Spices, pepper, black' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "magnesium": {
+        "per100": 171,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170931 'Spices, pepper, black' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       },
       "zinc": {
         "per100": 1.2,
@@ -1749,6 +1808,16 @@
         "per100": 17,
         "unit": "µg",
         "source": "ingredient research (USDA FDC: FDC ID 170931, Spices, pepper, black (SR Legacy), via secondary sites)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170931 'Spices, pepper, black' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170931 'Spices, pepper, black' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
     "black-salt-powdered-packaged": {
@@ -1756,6 +1825,18 @@
         "per100": 0,
         "unit": "mg",
         "source": "ingredient research (Other: no pack label or food-composition entry found: No IFCT 2017 or USDA FDC entry and no Indian pack nutrition label seen; composition described only qualitatively (mostly sodium chloride with sodium sulphate, iron sulphide and hydrogen sulphide traces; Steenbergs, Wikipedia); zero by composition: energy_kcal, protein_g, carbohydrate_g, sugars_g, fat_g, saturated_fat_g, fibre_g, cholesterol_mg, trans_fat_g, mufa_g, pufa_g, omega3_g, added_sugars_g)"
+      }
+    },
+    "black-tea-ctc-loose-leaf": {
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (Other: none found for dry CTC leaf: No direct IFCT 2017 or USDA FDC entry for dry black CTC tea leaf was seen; only brewed black tea (USDA SR 14355, about 1 kcal per 100 g) appeared and was not used; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (Other: none found for dry CTC leaf: No direct IFCT 2017 or USDA FDC entry for dry black CTC tea leaf was seen; only brewed black tea (USDA SR 14355, about 1 kcal per 100 g) appeared and was not used; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
     "brinjal-large-bharta-variety": {
@@ -2233,6 +2314,18 @@
         "source": "ingredient research (USDA FDC: Mixed secondary listings of USDA chicken thigh raw entries (FDC 171477 family); not one entry; zero by composition: carbohydrate_g, sugars_g, fibre_g)"
       }
     },
+    "chocolate-syrup": {
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC Branded entry for Hershey's chocolate syrup (ID not seen), values via a secondary page; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC Branded entry for Hershey's chocolate syrup (ID not seen), values via a secondary page; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
     "cinnamon-cassia": {
       "sodium": {
         "per100": 10,
@@ -2624,6 +2717,48 @@
         "per100": 0,
         "unit": "µg",
         "source": "ingredient research (USDA FDC: FDC ID 168409 Cucumber, with peel, raw (SR Legacy), via secondary sites (getfoodfacts.com, fitnessvolt.com, nutrivore.com, recipal.com); zinc agrees with FDC 2346406; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
+    "cumin-powder": {
+      "iron": {
+        "per100": 66.36,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170923 'Spices, cumin seed' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "calcium": {
+        "per100": 931,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170923 'Spices, cumin seed' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "potassium": {
+        "per100": 1788,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170923 'Spices, cumin seed' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "magnesium": {
+        "per100": 366,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170923 'Spices, cumin seed' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "zinc": {
+        "per100": 4.8,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170923 'Spices, cumin seed' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "sodium": {
+        "per100": 168,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170923 'Spices, cumin seed' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170923 'Spices, cumin seed' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170923 'Spices, cumin seed' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
     "cumin-seeds": {
@@ -3214,6 +3349,28 @@
         "source": "ingredient research (Other: Eno product leaflet: Eno UK patient leaflet via drugs.com (0.85 g sodium per 5 g dose); composition per 5 g: sodium bicarbonate 2.32 g, citric acid 2.18 g, sodium carbonate 0.50 g (UK product information; SAHPRA package insert 25 Jul 2019))"
       }
     },
+    "full-cream-milk-powder": {
+      "calcium": {
+        "per100": 910,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 173454 'Milk, dry, whole, without added vitamin D' (SR Legacy); values seen only on secondary mirrors; vitamin D 20 IU converted at 40 IU per µg)"
+      },
+      "potassium": {
+        "per100": 1330,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 173454 'Milk, dry, whole, without added vitamin D' (SR Legacy); values seen only on secondary mirrors; vitamin D 20 IU converted at 40 IU per µg)"
+      },
+      "cholesterol": {
+        "per100": 97,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 173454 'Milk, dry, whole, without added vitamin D' (SR Legacy); values seen only on secondary mirrors; vitamin D 20 IU converted at 40 IU per µg)"
+      },
+      "vitamin-d": {
+        "per100": 0.5,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 173454 'Milk, dry, whole, without added vitamin D' (SR Legacy); values seen only on secondary mirrors; vitamin D 20 IU converted at 40 IU per µg)"
+      }
+    },
     "garam-masala": {
       "cholesterol": {
         "per100": 0,
@@ -3638,6 +3795,30 @@
         "source": "ingredient research (Other: iD idly dosa batter pack label: iD idly dosa batter 1 kg label values via BigBasket listing, Mishry review and FatSecret India iD dosa batter entry)"
       }
     },
+    "idli-rice-parboiled-rice": {
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 'Rice, white, long-grain, parboiled, unenriched, dry' via happyforks.com (fatsecret shows protein 8.11 g, fibre 2.2 g); FDC ID not shown; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 'Rice, white, long-grain, parboiled, unenriched, dry' via happyforks.com (fatsecret shows protein 8.11 g, fibre 2.2 g); FDC ID not shown; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
+    "instant-coffee-powder": {
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171893 'Beverages, coffee, instant, regular, powder' (SR Legacy; ID taken from a mirror page, one source linked 171890 to plain coffee); values seen only on secondary mirrors; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171893 'Beverages, coffee, instant, regular, powder' (SR Legacy; ID taken from a mirror page, one source linked 171890 to plain coffee); values seen only on secondary mirrors; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
     "instant-yeast-dry": {
       "iron": {
         "per100": 2.17,
@@ -3743,11 +3924,45 @@
         "source": "ingredient research (USDA FDC: USDA FDC 167746 'Lemons, raw, without peel' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
+    "light-soy-sauce": {
+      "potassium": {
+        "per100": 435,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 174277 'Soy sauce made from soy and wheat (shoyu)' via secondary sites; potassium_mg and vitamin_b6_mg from soupersage (USDA-cited, generic soy sauce); not converted to per 100 ml)"
+      },
+      "sodium": {
+        "per100": 5493,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 174277 'Soy sauce made from soy and wheat (shoyu)' via secondary sites; potassium_mg and vitamin_b6_mg from soupersage (USDA-cited, generic soy sauce); not converted to per 100 ml)"
+      },
+      "folate": {
+        "per100": 14,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 174277 'Soy sauce made from soy and wheat (shoyu)' via secondary sites; potassium_mg and vitamin_b6_mg from soupersage (USDA-cited, generic soy sauce); not converted to per 100 ml)"
+      },
+      "niacin": {
+        "per100": 2.2,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 174277 'Soy sauce made from soy and wheat (shoyu)' via secondary sites; potassium_mg and vitamin_b6_mg from soupersage (USDA-cited, generic soy sauce); not converted to per 100 ml)"
+      },
+      "vitamin-b6": {
+        "per100": 0.148,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 174277 'Soy sauce made from soy and wheat (shoyu)' via secondary sites; potassium_mg and vitamin_b6_mg from soupersage (USDA-cited, generic soy sauce); not converted to per 100 ml)"
+      }
+    },
     "malabar-parotta": {
       "sodium": {
         "per100": 250,
         "unit": "mg",
         "source": "ingredient research (Other: brand label: Other: iD Fresh Malabar Parota label via Swiggy Instamart; other brand labels differ)"
+      }
+    },
+    "milk-toned": {
+      "calcium": {
+        "per100": 140,
+        "unit": "mg",
+        "source": "ingredient research (Other: brand label (search result): Indian packaged toned milk label figures per 100 ml (one brand: 58.2 kcal, fat 3.0 g, carbohydrate 4.8 g, protein 3.0 g, calcium 140 mg) as quoted in a search summary of consumer-voice.org and brand pages; other brands showed calcium 102 to 127 mg and protein 3.1 g; no IFCT or USDA entry opened)"
       }
     },
     "mint-leaves": {
@@ -3965,6 +4180,43 @@
         "source": "ingredient research (USDA FDC: USDA FDC 172337 Oil, mustard (SR Legacy), per 100 g via getfoodfacts.com, HealthifyMe and a USDA-citing listing; converted to per 100 ml at 0.92 g/ml (FitPlate dish-file density); zero by composition: protein_g, carbohydrate_g, sugars_g, fibre_g, added_sugars_g, cholesterol_mg, vitamin_b12_ug)"
       }
     },
+    "mustard-seeds": {
+      "iron": {
+        "per100": 9.98,
+        "unit": "mg",
+        "source": "ingredient research (Other: USDA-derived values via Wikipedia: Table for 'mustard seed, yellow' (USDA-based, seen via Wikipedia mirror https://solarspell-dls.sfis.asu.edu/mea/wikipedia/wp/m/Mustard_seed.htm); no FDC ID shown; ground mustard seed FDC 170929 differs (508 kcal, 26.1 g protein, 36.2 g fat, 12.2 g fibre); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "calcium": {
+        "per100": 521,
+        "unit": "mg",
+        "source": "ingredient research (Other: USDA-derived values via Wikipedia: Table for 'mustard seed, yellow' (USDA-based, seen via Wikipedia mirror https://solarspell-dls.sfis.asu.edu/mea/wikipedia/wp/m/Mustard_seed.htm); no FDC ID shown; ground mustard seed FDC 170929 differs (508 kcal, 26.1 g protein, 36.2 g fat, 12.2 g fibre); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "magnesium": {
+        "per100": 298,
+        "unit": "mg",
+        "source": "ingredient research (Other: USDA-derived values via Wikipedia: Table for 'mustard seed, yellow' (USDA-based, seen via Wikipedia mirror https://solarspell-dls.sfis.asu.edu/mea/wikipedia/wp/m/Mustard_seed.htm); no FDC ID shown; ground mustard seed FDC 170929 differs (508 kcal, 26.1 g protein, 36.2 g fat, 12.2 g fibre); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (Other: USDA-derived values via Wikipedia: Table for 'mustard seed, yellow' (USDA-based, seen via Wikipedia mirror https://solarspell-dls.sfis.asu.edu/mea/wikipedia/wp/m/Mustard_seed.htm); no FDC ID shown; ground mustard seed FDC 170929 differs (508 kcal, 26.1 g protein, 36.2 g fat, 12.2 g fibre); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-e": {
+        "per100": 2.89,
+        "unit": "mg",
+        "source": "ingredient research (Other: USDA-derived values via Wikipedia: Table for 'mustard seed, yellow' (USDA-based, seen via Wikipedia mirror https://solarspell-dls.sfis.asu.edu/mea/wikipedia/wp/m/Mustard_seed.htm); no FDC ID shown; ground mustard seed FDC 170929 differs (508 kcal, 26.1 g protein, 36.2 g fat, 12.2 g fibre); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b6": {
+        "per100": 0.43,
+        "unit": "mg",
+        "source": "ingredient research (Other: USDA-derived values via Wikipedia: Table for 'mustard seed, yellow' (USDA-based, seen via Wikipedia mirror https://solarspell-dls.sfis.asu.edu/mea/wikipedia/wp/m/Mustard_seed.htm); no FDC ID shown; ground mustard seed FDC 170929 differs (508 kcal, 26.1 g protein, 36.2 g fat, 12.2 g fibre); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (Other: USDA-derived values via Wikipedia: Table for 'mustard seed, yellow' (USDA-based, seen via Wikipedia mirror https://solarspell-dls.sfis.asu.edu/mea/wikipedia/wp/m/Mustard_seed.htm); no FDC ID shown; ground mustard seed FDC 170929 differs (508 kcal, 26.1 g protein, 36.2 g fat, 12.2 g fibre); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
     "mutton-mince-keema": {
       "iron": {
         "per100": 2.83,
@@ -4131,6 +4383,18 @@
         "per100": 0.6,
         "unit": "µg",
         "source": "nutrient research (vitamin-b12 food sources)"
+      }
+    },
+    "pav-bhaji-masala": {
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (Other: MDH pack label via retailer: MDH Pav Bhaji Masala label values (energy 1167 kJ / 279 kcal, protein 11.6 g, carbohydrate 31.2 g, fat 12 g, salt 8 g) as shown by a retailer listing; sodium not stated (salt only); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (Other: MDH pack label via retailer: MDH Pav Bhaji Masala label values (energy 1167 kJ / 279 kcal, protein 11.6 g, carbohydrate 31.2 g, fat 12 g, salt 8 g) as shown by a retailer listing; sodium not stated (salt only); zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
     "pistachios-unsalted-shelled-kernels": {
@@ -4374,7 +4638,7 @@
       "potassium": {
         "per100": 746,
         "unit": "mg",
-        "source": "ingredient research (USDA FDC: FDC ID 168164, Raisins, golden, seedless (SR Legacy 9297), via secondary sites)"
+        "source": "ingredient research (USDA FDC: USDA FDC 168164 'Raisins, golden, seedless' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       },
       "magnesium": {
         "per100": 35,
@@ -4400,6 +4664,21 @@
         "per100": 3,
         "unit": "µg",
         "source": "ingredient research (USDA FDC: FDC ID 168164, Raisins, golden, seedless (SR Legacy 9297), via secondary sites)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 168164 'Raisins, golden, seedless' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-k": {
+        "per100": 3.5,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 168164 'Raisins, golden, seedless' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 168164 'Raisins, golden, seedless' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
     "raw-plantain": {
@@ -4745,6 +5024,23 @@
         "source": "ingredient research (Other: label data (Cortas, Sadaf) and ReciPal: Cortas rose water label (Hannaford), Sadaf rose water label (H-E-B), ReciPal Rose water entry, Eat This Much Al Wadi rose water; US label zeros (rounded); zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
+    "saffron": {
+      "vitamin-c": {
+        "per100": 80.8,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170934 'Spices, saffron' (the FDC ID in the search was 170934; 170931 was not confirmed) via secondary sites (foodstruct, getfoodfacts, recipal); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170934 'Spices, saffron' (the FDC ID in the search was 170934; 170931 was not confirmed) via secondary sites (foodstruct, getfoodfacts, recipal); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170934 'Spices, saffron' (the FDC ID in the search was 170934; 170931 was not confirmed) via secondary sites (foodstruct, getfoodfacts, recipal); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
     "sago-tapioca-pearls-medium": {
       "iron": {
         "per100": 1.58,
@@ -4787,6 +5083,35 @@
         "per100": 0,
         "unit": "µg",
         "source": "ingredient research (Other: composition (no database entry seen): No IFCT or USDA entry seen; zero by composition: energy_kcal, protein_g, carbohydrate_g, sugars_g, fat_g, saturated_fat_g, fibre_g, cholesterol_mg, trans_fat_g, added_sugars_g, vitamin_b12_ug)"
+      }
+    },
+    "sambar-powder": {
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (Other: Everest pack label via retailer: Everest Sambar Masala label values (1,209 kJ / 289 kcal, protein 13.2 g, carbohydrate 32 g, fat 12 g, fibre 16 g, salt 2.5 g) via Jamoona listings; sodium not stated; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (Other: Everest pack label via retailer: Everest Sambar Masala label values (1,209 kJ / 289 kcal, protein 13.2 g, carbohydrate 32 g, fat 12 g, fibre 16 g, salt 2.5 g) via Jamoona listings; sodium not stated; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
+    "sandwich-masala": {
+      "sodium": {
+        "per100": 2800,
+        "unit": "mg",
+        "source": "ingredient research (Other: generic calorie database: caloriedetails.com 'Sandwich Masala' per 100 g (generic entry, source claimed as USDA); no brand label found; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (Other: generic calorie database: caloriedetails.com 'Sandwich Masala' per 100 g (generic entry, source claimed as USDA); no brand label found; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (Other: generic calorie database: caloriedetails.com 'Sandwich Masala' per 100 g (generic entry, source claimed as USDA); no brand label found; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
     "schezwan-chutney-ready-made": {
@@ -5147,6 +5472,28 @@
         "source": "ingredient research (Other: Fitatu catalogue entry for Fudco Star Anise (pack label data): Fitatu catalogue, Star Anise (Fudco), per 100 g; no IFCT 2017 or USDA FDC entry for star anise found; Recipal entry (367 kcal) seen but not used (source not stated); zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
+    "sugar": {
+      "iron": {
+        "per100": 0.05,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169655 'Sugars, granulated' (SR Legacy); values seen only on secondary mirrors; zero by composition: protein_g, fat_g, fibre_g)"
+      },
+      "calcium": {
+        "per100": 1,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169655 'Sugars, granulated' (SR Legacy); values seen only on secondary mirrors; zero by composition: protein_g, fat_g, fibre_g)"
+      },
+      "potassium": {
+        "per100": 2,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169655 'Sugars, granulated' (SR Legacy); values seen only on secondary mirrors; zero by composition: protein_g, fat_g, fibre_g)"
+      },
+      "sodium": {
+        "per100": 1,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169655 'Sugars, granulated' (SR Legacy); values seen only on secondary mirrors; zero by composition: protein_g, fat_g, fibre_g)"
+      }
+    },
     "tamarind-date-chutney-ready-made": {
       "cholesterol": {
         "per100": 0,
@@ -5245,6 +5592,38 @@
         "source": "ingredient research (USDA FDC: FDC ID 168556, Catsup (SR Legacy), via getfoodfacts.com and other secondary sites)"
       }
     },
+    "toor-dal": {
+      "iron": {
+        "per100": 6,
+        "unit": "mg",
+        "source": "ingredient research (Other: FNRI Philippines Food Composition Table, dried pigeon pea: FNRI PH FCT dried pigeon pea seed (i.fnri.dost.gov.ph/fct/library/report/3249, 3250, 3454); folate 456 µg quoted by a secondary page citing 'ICMR IFCT 2017' but not verified; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "calcium": {
+        "per100": 131,
+        "unit": "mg",
+        "source": "ingredient research (Other: FNRI Philippines Food Composition Table, dried pigeon pea: FNRI PH FCT dried pigeon pea seed (i.fnri.dost.gov.ph/fct/library/report/3249, 3250, 3454); folate 456 µg quoted by a secondary page citing 'ICMR IFCT 2017' but not verified; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "folate": {
+        "per100": 456,
+        "unit": "µg",
+        "source": "ingredient research (Other: FNRI Philippines Food Composition Table, dried pigeon pea: FNRI PH FCT dried pigeon pea seed (i.fnri.dost.gov.ph/fct/library/report/3249, 3250, 3454); folate 456 µg quoted by a secondary page citing 'ICMR IFCT 2017' but not verified; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (Other: FNRI Philippines Food Composition Table, dried pigeon pea: FNRI PH FCT dried pigeon pea seed (i.fnri.dost.gov.ph/fct/library/report/3249, 3250, 3454); folate 456 µg quoted by a secondary page citing 'ICMR IFCT 2017' but not verified; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (Other: FNRI Philippines Food Composition Table, dried pigeon pea: FNRI PH FCT dried pigeon pea seed (i.fnri.dost.gov.ph/fct/library/report/3249, 3250, 3454); folate 456 µg quoted by a secondary page citing 'ICMR IFCT 2017' but not verified; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "thiamine": {
+        "per100": 0.45,
+        "unit": "mg",
+        "source": "nutrient research (thiamine food sources)"
+      }
+    },
     "turmeric-powder": {
       "folate": {
         "per100": 20,
@@ -5322,6 +5701,38 @@
         "per100": 0.51,
         "unit": "mg",
         "source": "ingredient research (USDA FDC: USDA FDC 172687 'Bread, white, commercially prepared (includes soft bread crumbs)' via fitnessvolt, triagemethod and UH Hospitals per-oz values converted to 100 g)"
+      }
+    },
+    "white-vinegar-synthetic": {
+      "iron": {
+        "per100": 0.03,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 172237 'Vinegar, distilled' (SR Legacy); values seen only on secondary mirrors; closest USDA match to Indian synthetic vinegar; zero by composition: protein_g, fat_g, fibre_g)"
+      },
+      "calcium": {
+        "per100": 6,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 172237 'Vinegar, distilled' (SR Legacy); values seen only on secondary mirrors; closest USDA match to Indian synthetic vinegar; zero by composition: protein_g, fat_g, fibre_g)"
+      },
+      "potassium": {
+        "per100": 2,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 172237 'Vinegar, distilled' (SR Legacy); values seen only on secondary mirrors; closest USDA match to Indian synthetic vinegar; zero by composition: protein_g, fat_g, fibre_g)"
+      },
+      "magnesium": {
+        "per100": 1,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 172237 'Vinegar, distilled' (SR Legacy); values seen only on secondary mirrors; closest USDA match to Indian synthetic vinegar; zero by composition: protein_g, fat_g, fibre_g)"
+      },
+      "sodium": {
+        "per100": 2,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 172237 'Vinegar, distilled' (SR Legacy); values seen only on secondary mirrors; closest USDA match to Indian synthetic vinegar; zero by composition: protein_g, fat_g, fibre_g)"
+      },
+      "phosphorus": {
+        "per100": 4,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 172237 'Vinegar, distilled' (SR Legacy); values seen only on secondary mirrors; closest USDA match to Indian synthetic vinegar; zero by composition: protein_g, fat_g, fibre_g)"
       }
     },
     "whole-black-gram": {
@@ -5571,13 +5982,6 @@
         "per100": 0.25,
         "unit": "mg",
         "source": "nutrient research (vitamin-b6 food sources)"
-      }
-    },
-    "toor-dal": {
-      "thiamine": {
-        "per100": 0.45,
-        "unit": "mg",
-        "source": "nutrient research (thiamine food sources)"
       }
     },
     "cabbage": {

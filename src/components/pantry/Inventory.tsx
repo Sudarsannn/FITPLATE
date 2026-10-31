@@ -3,6 +3,7 @@ import { router } from 'expo-router';
 import { useMemo, useState } from 'react';
 import { ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 
+import { featureFlags } from '../../config/featureFlags';
 import { researchIngredients } from '../../data/research';
 import { select, success } from '../../lib/haptics';
 import { useStore } from '../../lib/store';
@@ -81,6 +82,12 @@ export function Inventory() {
           />
         </View>
       </FadeIn>
+
+      {featureFlags.fridgeRescue && rows.length ? (
+        <FadeIn i={2}>
+          <GradientButton title="What can I cook with this?" variant="glass" onPress={() => router.push('/fridge')} style={{ marginTop: 14 }} />
+        </FadeIn>
+      ) : null}
 
       <FadeIn i={2}>
         {rows.length ? (

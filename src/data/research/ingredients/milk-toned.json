@@ -15,69 +15,267 @@
         "avg": 58,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-10-31",
+        "min": 56,
+        "max": 60,
+        "avg": 58,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-31.md"
       }
     ],
     "currentEstimate": {
-      "min": 57,
+      "min": 56,
       "max": 60,
       "avg": 58
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-10-31",
     "stale": false,
     "seasonal": false,
-    "listingCount": 4,
+    "listingCount": 5,
     "platforms": [
-      "Amul Taaza toned",
-      "Gokul Taaza toned milk",
-      "Mother Dairy toned"
+      "BigBasket",
+      "Swiggy Instamart",
+      "Zepto"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 5.7,
+    "min": 5.6,
     "max": 6,
     "avg": 5.8
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100ml",
+    "energyKcal": {
+      "value": 58.2,
+      "source": "Other: brand label (search result): Indian packaged toned milk label figures per 100 ml (one brand: 58.2 kcal, fat 3.0 g, carbohydrate 4.8 g, protein 3.0 g, calcium 140 mg) as quoted in a search summary of consumer-voice.org and brand pages; other brands showed calcium 102 to 127 mg and protein 3.1 g; no IFCT or USDA entry opened",
+      "confidence": "Low"
+    },
+    "proteinG": {
+      "value": 3,
+      "source": "Other: brand label (search result): Indian packaged toned milk label figures per 100 ml (one brand: 58.2 kcal, fat 3.0 g, carbohydrate 4.8 g, protein 3.0 g, calcium 140 mg) as quoted in a search summary of consumer-voice.org and brand pages; other brands showed calcium 102 to 127 mg and protein 3.1 g; no IFCT or USDA entry opened",
+      "confidence": "Low"
+    },
+    "carbsG": {
+      "value": 4.8,
+      "source": "Other: brand label (search result): Indian packaged toned milk label figures per 100 ml (one brand: 58.2 kcal, fat 3.0 g, carbohydrate 4.8 g, protein 3.0 g, calcium 140 mg) as quoted in a search summary of consumer-voice.org and brand pages; other brands showed calcium 102 to 127 mg and protein 3.1 g; no IFCT or USDA entry opened",
+      "confidence": "Low"
+    },
+    "sugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fatG": {
+      "value": 3,
+      "source": "Other: brand label (search result): Indian packaged toned milk label figures per 100 ml (one brand: 58.2 kcal, fat 3.0 g, carbohydrate 4.8 g, protein 3.0 g, calcium 140 mg) as quoted in a search summary of consumer-voice.org and brand pages; other brands showed calcium 102 to 127 mg and protein 3.1 g; no IFCT or USDA entry opened",
+      "confidence": "Low"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "sodiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": 140,
+      "source": "Other: brand label (search result): Indian packaged toned milk label figures per 100 ml (one brand: 58.2 kcal, fat 3.0 g, carbohydrate 4.8 g, protein 3.0 g, calcium 140 mg) as quoted in a search summary of consumer-voice.org and brand pages; other brands showed calcium 102 to 127 mg and protein 3.1 g; no IFCT or USDA entry opened",
+      "confidence": "Low"
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    }
+  },
   "macrosPer100Estimate": {
-    "kcal": 58,
+    "kcal": 58.1,
     "proteinG": 3.1,
-    "carbsG": 4.6,
+    "carbsG": 4.7,
     "fatG": 3,
     "fibreG": 0
   },
-  "storage": "Refrigerate at once (below 5 °C). Boil pouch milk before use if you plan to keep it for 2+ days. Use within 2 days of opening. Do not freeze in the pouch; freezing in a container is possible (up to 1 month) but the texture changes.",
-  "looksLike": "white liquid sold chilled in 500 ml or 1 L plastic pouches (Amul Taaza blue, Gokul, Mahananda), or in shelf-stable tetra cartons.",
-  "howToPick": "buy from a chilled shelf; the pouch should be cold, firm and not puffed up; check the use-by date (usually 2–3 days). Avoid leaking or swollen pouches and milk that smells sour.",
-  "shelfLife": "pouch milk about 2–3 days refrigerated; UHT carton about 6 months unopened (24–48 h after opening, refrigerated).",
+  "storage": "Keep pouches in the fridge below 5 °C and use within a day or two of opening; do not refreeze or leave out for hours.",
+  "looksLike": "White liquid sold chilled in 500 ml and 1 L plastic pouches (Amul Taaza, Gokul, Mother Dairy) or in shelf-stable cartons.",
+  "howToPick": "Check the pack for \"toned\" and the fat percentage, a manufacture or use-by date within a day or two for pouch milk, and an intact cold pouch. Consumer Voice advises boiling pouch milk before drinking.",
+  "shelfLife": "Refrigerated pouch milk is normally used within 1 to 2 days; UHT cartons last months unopened (general guidance, not taken from a source in this run).",
   "substitutes": [
     "Full cream milk",
     "UHT carton milk",
-    "In biryani saffron milk"
+    "In biryani saffron milk",
+    "Full-cream milk",
+    "Double-toned milk",
+    "Soy or oat milk (unsweetened)"
   ],
   "usedIn": [
     {
-      "dishNumber": 2,
-      "quantity": 15,
+      "dishNumber": 100,
+      "quantity": 200,
       "unit": "ml",
-      "raw": "15 ml (1 tbsp), for the saffron milk."
+      "raw": "200 ml per serving (chilled toned milk). Dishes 96 Gajar Halwa, 98 Mango Lassi and 99 Masala Chai use full-fat milk, which is not this ingredient and is not counted here."
     }
   ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-10-31",
+      "file": "FitPlate_Ingredients_2026-10-31.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",

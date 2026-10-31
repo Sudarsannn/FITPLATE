@@ -15,45 +15,52 @@
         "avg": 1650,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-08.md"
+      },
+      {
+        "date": "2026-10-29",
+        "min": 1110,
+        "max": 1690,
+        "avg": 1360,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
       }
     ],
     "currentEstimate": {
-      "min": 1405,
-      "max": 1895,
-      "avg": 1650
+      "min": 1290,
+      "max": 1750,
+      "avg": 1520
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-08",
+    "lastObserved": "2026-10-29",
     "stale": false,
     "seasonal": false,
-    "listingCount": 5,
+    "listingCount": 8,
     "platforms": [
       "BigBasket",
-      "Flipkart",
-      "Hunarsetu"
+      "Flipkart"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 140.5,
-    "max": 189.5,
-    "avg": 165
+    "min": 129,
+    "max": 175,
+    "avg": 152
   },
   "seasonal": false,
   "nutritionPer100g": {
     "basis": "100g",
     "energyKcal": {
       "value": 251,
-      "source": "USDA FDC: FDC ID 170931, Spices, pepper, black (SR Legacy), via secondary sites",
+      "source": "USDA FDC: USDA FDC 170931 'Spices, pepper, black' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "proteinG": {
       "value": 10.4,
-      "source": "USDA FDC: FDC ID 170931, Spices, pepper, black (SR Legacy), via secondary sites",
+      "source": "USDA FDC: USDA FDC 170931 'Spices, pepper, black' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "carbsG": {
@@ -68,7 +75,7 @@
     },
     "fatG": {
       "value": 3.3,
-      "source": "USDA FDC: FDC ID 170931, Spices, pepper, black (SR Legacy), via secondary sites",
+      "source": "USDA FDC: USDA FDC 170931 'Spices, pepper, black' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "saturatedFatG": {
@@ -77,9 +84,9 @@
       "confidence": "Medium"
     },
     "fibreG": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 25.3,
+      "source": "USDA FDC: USDA FDC 170931 'Spices, pepper, black' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "sodiumMg": {
       "value": 20,
@@ -88,22 +95,22 @@
     },
     "ironMg": {
       "value": 9.7,
-      "source": "USDA FDC: FDC ID 170931, Spices, pepper, black (SR Legacy), via secondary sites",
+      "source": "USDA FDC: USDA FDC 170931 'Spices, pepper, black' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "calciumMg": {
       "value": 443,
-      "source": "USDA FDC: FDC ID 170931, Spices, pepper, black (SR Legacy), via secondary sites",
+      "source": "USDA FDC: USDA FDC 170931 'Spices, pepper, black' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "potassiumMg": {
       "value": 1329,
-      "source": "USDA FDC: FDC ID 170931, Spices, pepper, black (SR Legacy), via secondary sites",
+      "source": "USDA FDC: USDA FDC 170931 'Spices, pepper, black' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "magnesiumMg": {
       "value": 171,
-      "source": "USDA FDC: FDC ID 170931, Spices, pepper, black (SR Legacy), via secondary sites",
+      "source": "USDA FDC: USDA FDC 170931 'Spices, pepper, black' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "zincMg": {
@@ -132,9 +139,9 @@
       "confidence": null
     },
     "cholesterolMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 170931 'Spices, pepper, black' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "transFatG": {
       "value": null,
@@ -222,50 +229,50 @@
       "confidence": null
     },
     "vitaminB12Ug": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 170931 'Spices, pepper, black' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     }
   },
-  "macrosPer100Estimate": null,
-  "storage": "Airtight jar at room temperature, away from heat, light and moisture: 1–2 years for good flavour (keeps longer but fades). Crush or grind only what you need.",
-  "looksLike": "Tiny hard balls, 3–5 mm across, black to dark brown with a deeply wrinkled skin. Sharp, hot, woody smell when cracked.",
-  "howToPick": null,
-  "shelfLife": "2–3 years whole in a sealed pack; ground pepper loses its punch within a few months.",
+  "macrosPer100Estimate": {
+    "kcal": 251,
+    "proteinG": 10.4,
+    "carbsG": null,
+    "fatG": 3.3,
+    "fibreG": 25.3
+  },
+  "storage": "Keep in an airtight jar in a cool, dark cupboard; crush or grind only what is needed.",
+  "looksLike": "Small, round, wrinkled, dark brown-black berries about 4 to 5 mm across, hard and with a sharp, woody aroma when crushed.",
+  "howToPick": "Choose heavy, dark, evenly sized, well-wrinkled berries with a sharp smell when rubbed; avoid pale, light, dusty or mouldy berries and any with a stale smell (light berries can be 'pinheads', immature berries).",
+  "shelfLife": "About 2 to 3 years in a sealed container, longer than ground pepper (general guidance; not taken from a source in this run). (general guidance; not taken from a source in this run)",
   "substitutes": [
     "Black pepper powder",
     "White pepper",
-    "Green chilli (extra)"
+    "Green chilli (extra)",
+    "Long pepper (pippali) or white peppercorns",
+    "Dried red chilli"
   ],
   "usedIn": [
     {
-      "dishNumber": 22,
+      "dishNumber": 93,
       "quantity": null,
       "unit": null,
-      "raw": "3 peppercorns (about 0.2 g), roasted and ground into the kadai masala"
-    },
-    {
-      "dishNumber": 24,
-      "quantity": 0.5,
-      "unit": "g",
-      "raw": "0.5 g (¼ tsp, coarsely crushed)"
-    },
-    {
-      "dishNumber": 25,
-      "quantity": null,
-      "unit": null,
-      "raw": "3 peppercorns (about 0.2 g, optional, left whole)"
+      "raw": "3 corns per serving (about 0.1 g, in the whole-spice tempering)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-08",
       "file": "FitPlate_Ingredients_2026-10-08.md"
+    },
+    {
+      "date": "2026-10-29",
+      "file": "FitPlate_Ingredients_2026-10-29.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (none)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (single)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -275,6 +282,8 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 1400.0–1900.0 was wider than 30% of avg 1650.0; narrowed to ±15%."
+    "Range 1270.0–1805.9 was wider than 30% of avg 1520.0; narrowed to ±15%.",
+    "nutritionPer100g.carbsG: Conflict (2026-10-08: 64 vs 2026-10-29: 63.9); both cite the official table, kept the previous value.",
+    "nutritionPer100g.zincMg: Conflict (2026-10-08: 1.2 vs 2026-10-29: 1.19); both cite the official table, kept the previous value."
   ]
 }

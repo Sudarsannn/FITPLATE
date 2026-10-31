@@ -4,7 +4,7 @@
   "aliases": [
     "meetha soda"
   ],
-  "category": "Packaged (leavening)",
+  "category": "Packaged (leavening agent)",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -15,20 +15,28 @@
         "avg": 355,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-07.md"
+      },
+      {
+        "date": "2026-10-31",
+        "min": 260,
+        "max": 360,
+        "avg": 320,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-31.md"
       }
     ],
     "currentEstimate": {
-      "min": 350,
+      "min": 295,
       "max": 360,
-      "avg": 355
+      "avg": 335
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-07",
+    "lastObserved": "2026-10-31",
     "stale": false,
     "seasonal": false,
-    "listingCount": 3,
+    "listingCount": 5,
     "platforms": [
       "Amazon",
       "BigBasket"
@@ -38,12 +46,194 @@
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 35,
+    "min": 29.5,
     "max": 36,
-    "avg": 35.5
+    "avg": 33.5
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 'Leavening agents, baking soda' (page shows ID 175040; a 175001 search did not confirm); sodium via secondary sites; zero by composition (pure sodium bicarbonate): energy_kcal, protein_g, carbohydrate_g, sugars_g, fat_g, saturated_fat_g, fibre_g, cholesterol_mg, trans_fat_g, mufa_g, pufa_g, omega3_g, added_sugars_g",
+      "confidence": "Medium"
+    },
+    "proteinG": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 'Leavening agents, baking soda' (page shows ID 175040; a 175001 search did not confirm); sodium via secondary sites; zero by composition (pure sodium bicarbonate): energy_kcal, protein_g, carbohydrate_g, sugars_g, fat_g, saturated_fat_g, fibre_g, cholesterol_mg, trans_fat_g, mufa_g, pufa_g, omega3_g, added_sugars_g",
+      "confidence": "Medium"
+    },
+    "carbsG": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 'Leavening agents, baking soda' (page shows ID 175040; a 175001 search did not confirm); sodium via secondary sites; zero by composition (pure sodium bicarbonate): energy_kcal, protein_g, carbohydrate_g, sugars_g, fat_g, saturated_fat_g, fibre_g, cholesterol_mg, trans_fat_g, mufa_g, pufa_g, omega3_g, added_sugars_g",
+      "confidence": "Medium"
+    },
+    "sugarsG": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 'Leavening agents, baking soda' (page shows ID 175040; a 175001 search did not confirm); sodium via secondary sites; zero by composition (pure sodium bicarbonate): energy_kcal, protein_g, carbohydrate_g, sugars_g, fat_g, saturated_fat_g, fibre_g, cholesterol_mg, trans_fat_g, mufa_g, pufa_g, omega3_g, added_sugars_g",
+      "confidence": "Medium"
+    },
+    "fatG": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 'Leavening agents, baking soda' (page shows ID 175040; a 175001 search did not confirm); sodium via secondary sites; zero by composition (pure sodium bicarbonate): energy_kcal, protein_g, carbohydrate_g, sugars_g, fat_g, saturated_fat_g, fibre_g, cholesterol_mg, trans_fat_g, mufa_g, pufa_g, omega3_g, added_sugars_g",
+      "confidence": "Medium"
+    },
+    "saturatedFatG": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 'Leavening agents, baking soda' (page shows ID 175040; a 175001 search did not confirm); sodium via secondary sites; zero by composition (pure sodium bicarbonate): energy_kcal, protein_g, carbohydrate_g, sugars_g, fat_g, saturated_fat_g, fibre_g, cholesterol_mg, trans_fat_g, mufa_g, pufa_g, omega3_g, added_sugars_g",
+      "confidence": "Medium"
+    },
+    "fibreG": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 'Leavening agents, baking soda' (page shows ID 175040; a 175001 search did not confirm); sodium via secondary sites; zero by composition (pure sodium bicarbonate): energy_kcal, protein_g, carbohydrate_g, sugars_g, fat_g, saturated_fat_g, fibre_g, cholesterol_mg, trans_fat_g, mufa_g, pufa_g, omega3_g, added_sugars_g",
+      "confidence": "Medium"
+    },
+    "sodiumMg": {
+      "value": 27360,
+      "source": "USDA FDC: USDA FDC 'Leavening agents, baking soda' (page shows ID 175040; a 175001 search did not confirm); sodium via secondary sites; zero by composition (pure sodium bicarbonate): energy_kcal, protein_g, carbohydrate_g, sugars_g, fat_g, saturated_fat_g, fibre_g, cholesterol_mg, trans_fat_g, mufa_g, pufa_g, omega3_g, added_sugars_g",
+      "confidence": "Medium"
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 'Leavening agents, baking soda' (page shows ID 175040; a 175001 search did not confirm); sodium via secondary sites; zero by composition (pure sodium bicarbonate): energy_kcal, protein_g, carbohydrate_g, sugars_g, fat_g, saturated_fat_g, fibre_g, cholesterol_mg, trans_fat_g, mufa_g, pufa_g, omega3_g, added_sugars_g",
+      "confidence": "Medium"
+    },
+    "transFatG": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 'Leavening agents, baking soda' (page shows ID 175040; a 175001 search did not confirm); sodium via secondary sites; zero by composition (pure sodium bicarbonate): energy_kcal, protein_g, carbohydrate_g, sugars_g, fat_g, saturated_fat_g, fibre_g, cholesterol_mg, trans_fat_g, mufa_g, pufa_g, omega3_g, added_sugars_g",
+      "confidence": "Medium"
+    },
+    "mufaG": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 'Leavening agents, baking soda' (page shows ID 175040; a 175001 search did not confirm); sodium via secondary sites; zero by composition (pure sodium bicarbonate): energy_kcal, protein_g, carbohydrate_g, sugars_g, fat_g, saturated_fat_g, fibre_g, cholesterol_mg, trans_fat_g, mufa_g, pufa_g, omega3_g, added_sugars_g",
+      "confidence": "Medium"
+    },
+    "pufaG": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 'Leavening agents, baking soda' (page shows ID 175040; a 175001 search did not confirm); sodium via secondary sites; zero by composition (pure sodium bicarbonate): energy_kcal, protein_g, carbohydrate_g, sugars_g, fat_g, saturated_fat_g, fibre_g, cholesterol_mg, trans_fat_g, mufa_g, pufa_g, omega3_g, added_sugars_g",
+      "confidence": "Medium"
+    },
+    "omega3G": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 'Leavening agents, baking soda' (page shows ID 175040; a 175001 search did not confirm); sodium via secondary sites; zero by composition (pure sodium bicarbonate): energy_kcal, protein_g, carbohydrate_g, sugars_g, fat_g, saturated_fat_g, fibre_g, cholesterol_mg, trans_fat_g, mufa_g, pufa_g, omega3_g, added_sugars_g",
+      "confidence": "Medium"
+    },
+    "addedSugarsG": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 'Leavening agents, baking soda' (page shows ID 175040; a 175001 search did not confirm); sodium via secondary sites; zero by composition (pure sodium bicarbonate): energy_kcal, protein_g, carbohydrate_g, sugars_g, fat_g, saturated_fat_g, fibre_g, cholesterol_mg, trans_fat_g, mufa_g, pufa_g, omega3_g, added_sugars_g",
+      "confidence": "Medium"
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    }
+  },
   "macrosPer100Estimate": {
     "kcal": 0,
     "proteinG": 0,
@@ -51,32 +241,39 @@
     "fatG": 0,
     "fibreG": 0
   },
-  "storage": "Airtight container in a cool, dry cupboard, away from steam and the stove. Always use a dry spoon. Keeps 6 months after opening.",
-  "looksLike": "A fine, bright-white, odourless powder (sodium bicarbonate) with a faintly salty-soapy taste; usually sold in small plastic jars or pouches labelled \"baking soda\", \"cooking soda\" or \"meetha soda\".",
-  "howToPick": null,
-  "shelfLife": "About 1–2 years unopened (see pack); best used within 6 months of opening for full strength.",
+  "storage": "Keep tightly closed in a dry spot away from spices and moisture. Test old soda by dropping a pinch into vinegar; it should fizz hard.",
+  "looksLike": "Fine, white, odourless powder (sodium bicarbonate) with a faintly salty-soapy taste, sold in small jars or pouches labelled baking soda, cooking soda or meetha soda.",
+  "howToPick": "Buy a sealed pack labelled sodium bicarbonate; it should be dry, white and free-flowing. Old or damp soda is clumped and weak.",
+  "shelfLife": "Long (often 1 to 2 years sealed), but it loses punch in humid air (general guidance, not from a source this run).",
   "substitutes": [
     "Eno fruit salt (plain)",
     "Baking powder",
-    "Leave it out"
+    "Leave it out",
+    "Baking powder (about 3 times as much by volume)",
+    "Omit"
   ],
   "usedIn": [
     {
-      "dishNumber": 20,
-      "quantity": 0.2,
+      "dishNumber": 97,
+      "quantity": 0.3,
       "unit": "g",
-      "raw": "0.2 g (1 tiny pinch, in the besan batter)"
+      "raw": "0.3 g per serving (a small pinch)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-07",
       "file": "FitPlate_Ingredients_2026-10-07.md"
+    },
+    {
+      "date": "2026-10-31",
+      "file": "FitPlate_Ingredients_2026-10-31.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (wma)",
     "macrosPer100Estimate": "stable (single)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",

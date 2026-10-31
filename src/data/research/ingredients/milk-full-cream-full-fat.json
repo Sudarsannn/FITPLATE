@@ -1,0 +1,88 @@
+{
+  "id": "milk-full-cream-full-fat",
+  "name": "Milk, full-cream / full-fat",
+  "aliases": [
+    "doodh"
+  ],
+  "category": "Dairy",
+  "standardUnit": "l",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-29",
+        "min": 68,
+        "max": 80,
+        "avg": 75,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 68,
+      "max": 80,
+      "avg": 75
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-29",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 3,
+    "platforms": [
+      "BigBasket"
+    ],
+    "outOfStock": false,
+    "confirmed": false,
+    "checkNotes": [
+      "only 1 platform (BigBasket) backs the range"
+    ]
+  },
+  "per100Estimate": {
+    "min": 6.8,
+    "max": 8,
+    "avg": 7.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 61,
+    "proteinG": 3.2,
+    "carbsG": 4.8,
+    "fatG": 3.3,
+    "fibreG": null
+  },
+  "storage": "Keep in the fridge at 4 °C or below and use within a day or two; do not leave it out for long. Boil once, cool and refrigerate if keeping.",
+  "looksLike": "White, creamy liquid in a sealed pouch or carton; sold as full cream (for example Amul Gold, Mother Dairy full cream, Gokul full cream), richer than toned or double-toned milk.",
+  "howToPick": "Check the pack for 'full cream' (FSSAI minimum 6.0% fat, 9.0% SNF) and the expiry date; choose a cold, undamaged, sealed pouch.",
+  "shelfLife": "Pasteurised pouch milk keeps about 1 to 2 days in the fridge after purchase or until the printed date; boil before use if it is plain pasteurised (general guidance).",
+  "substitutes": [
+    "Toned milk (3% fat)",
+    "Full-fat milk plus a little cream or khoya",
+    "Unsweetened plant milk (soy or oat)"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 95,
+      "quantity": 200,
+      "unit": "ml",
+      "raw": "200 ml per serving (about ¾ cup)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-29",
+      "file": "FitPlate_Ingredients_2026-10-29.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "looksLike": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

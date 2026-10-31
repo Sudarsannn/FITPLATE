@@ -4,7 +4,7 @@
   "aliases": [
     "kali mirch"
   ],
-  "category": "Spice (powder)",
+  "category": "Spice",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -15,36 +15,226 @@
         "avg": 1555,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-05.md"
+      },
+      {
+        "date": "2026-10-29",
+        "min": 1130,
+        "max": 1850,
+        "avg": 1575,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
       }
     ],
     "currentEstimate": {
-      "min": 1350,
-      "max": 1760,
-      "avg": 1555
+      "min": 1330,
+      "max": 1800,
+      "avg": 1565
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-05",
+    "lastObserved": "2026-10-29",
     "stale": false,
     "seasonal": false,
-    "listingCount": 5,
+    "listingCount": 9,
     "platforms": [
-      "Amazon",
-      "BigBasket",
-      "Grocery Prime"
+      "BigBasket"
     ],
     "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "confirmed": false,
+    "checkNotes": [
+      "only 1 platform (BigBasket) backs the range"
+    ]
   },
   "per100Estimate": {
-    "min": 135,
-    "max": 176,
-    "avg": 155.5
+    "min": 133,
+    "max": 180,
+    "avg": 156.5
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 251,
+      "source": "USDA FDC: USDA FDC 170931 'Spices, pepper, black' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "proteinG": {
+      "value": 10.4,
+      "source": "USDA FDC: USDA FDC 170931 'Spices, pepper, black' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "carbsG": {
+      "value": 63.9,
+      "source": "USDA FDC: USDA FDC 170931 'Spices, pepper, black' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fatG": {
+      "value": 3.3,
+      "source": "USDA FDC: USDA FDC 170931 'Spices, pepper, black' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 25.3,
+      "source": "USDA FDC: USDA FDC 170931 'Spices, pepper, black' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sodiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "ironMg": {
+      "value": 9.7,
+      "source": "USDA FDC: USDA FDC 170931 'Spices, pepper, black' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "calciumMg": {
+      "value": 443,
+      "source": "USDA FDC: USDA FDC 170931 'Spices, pepper, black' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "potassiumMg": {
+      "value": 1329,
+      "source": "USDA FDC: USDA FDC 170931 'Spices, pepper, black' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "magnesiumMg": {
+      "value": 171,
+      "source": "USDA FDC: USDA FDC 170931 'Spices, pepper, black' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "zincMg": {
+      "value": 1.19,
+      "source": "USDA FDC: USDA FDC 170931 'Spices, pepper, black' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 170931 'Spices, pepper, black' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 170931 'Spices, pepper, black' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    }
+  },
   "macrosPer100Estimate": {
     "kcal": 251,
     "proteinG": 10.4,
@@ -52,37 +242,58 @@
     "fatG": 3.3,
     "fibreG": 25.3
   },
-  "storage": "Airtight jar at room temperature, away from heat and light. Use within 3–4 months of opening for best flavour. Whole peppercorns keep 1–2 years.",
-  "looksLike": "A fine grey-black powder with a sharp, woody, hot smell, ground from dried black peppercorns.",
-  "howToPick": null,
-  "shelfLife": "About 12 months unopened; ground pepper loses aroma noticeably within a few months of opening.",
+  "storage": "Keep in an airtight jar away from heat, light and steam, at room temperature; do not shake it over a steaming pot.",
+  "looksLike": "A fine grey-black powder with a sharp, hot, woody smell. Sold in 50 g to 100 g cartons, pouches and shaker jars.",
+  "howToPick": "Look for a dark grey-black, uniform powder with a sharp aroma when the pack is opened; a dull smell, clumping or visible pale husk specks suggest age or adulteration. Buy a sealed pack from a known brand.",
+  "shelfLife": "About 6 to 12 months in a sealed pack; best flavour in the first few months. (general guidance; not taken from a source in this run)",
   "substitutes": [
     "White pepper powder",
     "Freshly crushed whole peppercorns",
-    "Red chilli flakes"
+    "Red chilli flakes",
+    "Green chilli"
   ],
   "usedIn": [
     {
-      "dishNumber": 10,
+      "dishNumber": 87,
       "quantity": 0.5,
       "unit": "g",
-      "raw": "0.5 g (¼ tsp; white pepper as an alternative)"
+      "raw": "0.5 g per serving (¼ tsp)"
+    },
+    {
+      "dishNumber": 94,
+      "quantity": 0.3,
+      "unit": "g",
+      "raw": "0.3 g per serving (a pinch)"
+    },
+    {
+      "dishNumber": 91,
+      "quantity": null,
+      "unit": null,
+      "raw": "only in the Navratri variant swap (about 0.5 g black pepper instead of chaat masala); not in the main recipe"
     }
   ],
   "versions": [
     {
       "date": "2026-10-05",
       "file": "FitPlate_Ingredients_2026-10-05.md"
+    },
+    {
+      "date": "2026-10-29",
+      "file": "FitPlate_Ingredients_2026-10-29.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 1247.6–1801.9 was wider than 30% of avg 1564.3; narrowed to ±15%."
+  ]
 }

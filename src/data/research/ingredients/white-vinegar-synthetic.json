@@ -4,7 +4,7 @@
   "aliases": [
     "sirka"
   ],
-  "category": "Packaged (condiment)",
+  "category": "Condiment",
   "standardUnit": "l",
   "price": {
     "priceHistory": [
@@ -15,36 +15,225 @@
         "avg": 100,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-05.md"
+      },
+      {
+        "date": "2026-10-29",
+        "min": 75,
+        "max": 210,
+        "avg": 140,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
       }
     ],
     "currentEstimate": {
-      "min": 85,
-      "max": 115,
-      "avg": 100
+      "min": 100,
+      "max": 140,
+      "avg": 120
     },
-    "method": "single",
+    "method": "spike-blend",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-05",
+    "lastObserved": "2026-10-29",
     "stale": false,
     "seasonal": false,
-    "listingCount": 3,
+    "listingCount": 5,
     "platforms": [
       "BigBasket",
-      "Flipkart",
-      "IndiaMART"
+      "Flipkart"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 8.5,
-    "max": 11.5,
-    "avg": 10
+    "min": 10,
+    "max": 14,
+    "avg": 12
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 18,
+      "source": "USDA FDC: USDA FDC 172237 'Vinegar, distilled' (SR Legacy); values seen only on secondary mirrors; closest USDA match to Indian synthetic vinegar; zero by composition: protein_g, fat_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "proteinG": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 172237 'Vinegar, distilled' (SR Legacy); values seen only on secondary mirrors; closest USDA match to Indian synthetic vinegar; zero by composition: protein_g, fat_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "carbsG": {
+      "value": 0.04,
+      "source": "USDA FDC: USDA FDC 172237 'Vinegar, distilled' (SR Legacy); values seen only on secondary mirrors; closest USDA match to Indian synthetic vinegar; zero by composition: protein_g, fat_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "sugarsG": {
+      "value": 0.04,
+      "source": "USDA FDC: USDA FDC 172237 'Vinegar, distilled' (SR Legacy); values seen only on secondary mirrors; closest USDA match to Indian synthetic vinegar; zero by composition: protein_g, fat_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "fatG": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 172237 'Vinegar, distilled' (SR Legacy); values seen only on secondary mirrors; closest USDA match to Indian synthetic vinegar; zero by composition: protein_g, fat_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 172237 'Vinegar, distilled' (SR Legacy); values seen only on secondary mirrors; closest USDA match to Indian synthetic vinegar; zero by composition: protein_g, fat_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "sodiumMg": {
+      "value": 2,
+      "source": "USDA FDC: USDA FDC 172237 'Vinegar, distilled' (SR Legacy); values seen only on secondary mirrors; closest USDA match to Indian synthetic vinegar; zero by composition: protein_g, fat_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "ironMg": {
+      "value": 0.03,
+      "source": "USDA FDC: USDA FDC 172237 'Vinegar, distilled' (SR Legacy); values seen only on secondary mirrors; closest USDA match to Indian synthetic vinegar; zero by composition: protein_g, fat_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "calciumMg": {
+      "value": 6,
+      "source": "USDA FDC: USDA FDC 172237 'Vinegar, distilled' (SR Legacy); values seen only on secondary mirrors; closest USDA match to Indian synthetic vinegar; zero by composition: protein_g, fat_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "potassiumMg": {
+      "value": 2,
+      "source": "USDA FDC: USDA FDC 172237 'Vinegar, distilled' (SR Legacy); values seen only on secondary mirrors; closest USDA match to Indian synthetic vinegar; zero by composition: protein_g, fat_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "magnesiumMg": {
+      "value": 1,
+      "source": "USDA FDC: USDA FDC 172237 'Vinegar, distilled' (SR Legacy); values seen only on secondary mirrors; closest USDA match to Indian synthetic vinegar; zero by composition: protein_g, fat_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": 4,
+      "source": "USDA FDC: USDA FDC 172237 'Vinegar, distilled' (SR Legacy); values seen only on secondary mirrors; closest USDA match to Indian synthetic vinegar; zero by composition: protein_g, fat_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    }
+  },
   "macrosPer100Estimate": {
     "kcal": 18,
     "proteinG": 0,
@@ -52,37 +241,50 @@
     "fatG": 0,
     "fibreG": 0
   },
-  "storage": "Room temperature, cap tightly closed, away from heat and sunlight. Keeps well for a year or more after opening; no fridge needed.",
-  "looksLike": "Clear, colourless, sharp-smelling liquid in a plastic (HDPE) or glass bottle.",
-  "howToPick": null,
-  "shelfLife": "1–2 years or more unopened; practically does not spoil.",
+  "storage": "Room temperature in a closed bottle, away from sunlight; no refrigeration needed. Keep it out of reach of children.",
+  "looksLike": "A clear, colourless, sharp-smelling liquid in a plastic bottle.",
+  "howToPick": "Look for \"synthetic vinegar\" and the acidity on the label (Indian rules require at least 3.75% acidity, per the compliance summary below), a clear liquid, and an intact seal. Brewed vinegar is labelled differently and costs more.",
+  "shelfLife": "Very long when sealed; flavour holds for a year or more (general guidance; not from a source in this run).",
   "substitutes": [
     "Rice vinegar or cane vinegar",
     "Lemon juice",
-    "Chilli vinegar"
+    "Chilli vinegar",
+    "Lemon or lime juice",
+    "Brewed vinegar (cane, rice, apple cider)",
+    "Skip"
   ],
   "usedIn": [
     {
-      "dishNumber": 10,
-      "quantity": 2.5,
+      "dishNumber": 87,
+      "quantity": 3,
       "unit": "ml",
-      "raw": "2.5 ml (½ tsp)"
+      "raw": "3 ml per serving (½ tsp, in the sauce)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-05",
       "file": "FitPlate_Ingredients_2026-10-05.md"
+    },
+    {
+      "date": "2026-10-29",
+      "file": "FitPlate_Ingredients_2026-10-29.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (spike-blend)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: possible-spike",
+    "price flag: narrowed",
+    "Possible spike: latest avg 140 (2026-10-29) moved more than 35% from the previous estimate; using the halfway point.",
+    "Range 80.0–162.5 was wider than 30% of avg 120.0; narrowed to ±15%."
+  ]
 }

@@ -1,0 +1,91 @@
+{
+  "id": "ripe-mango-fresh-whole",
+  "name": "Ripe mango, fresh whole",
+  "aliases": [
+    "aam"
+  ],
+  "category": "Fruit",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-10-31",
+        "min": 40,
+        "max": 395,
+        "avg": 175,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-31.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 150,
+      "max": 200,
+      "avg": 175
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-10-31",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 9,
+    "platforms": [
+      "BigBasket"
+    ],
+    "outOfStock": false,
+    "confirmed": false,
+    "checkNotes": [
+      "only 1 platform (BigBasket) backs the range"
+    ]
+  },
+  "per100Estimate": {
+    "min": 15,
+    "max": 20,
+    "avg": 17.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 60,
+    "proteinG": 0.8,
+    "carbsG": 15,
+    "fatG": 0.4,
+    "fibreG": 1.6
+  },
+  "storage": "Ripen unripe mangoes at room temperature in a paper bag; keep ripe fruit in the fridge and use within about 5 days. Cut flesh can be frozen in boxes for a few months.",
+  "looksLike": "Oval to kidney-shaped fruit with green, yellow or orange-red skin; ripe flesh is soft, juicy and orange-yellow around a large flat stone.",
+  "howToPick": "A fruity smell at the stem end, slight give when pressed gently, and a deep colour for the variety. Avoid very soft wet patches, black sunken spots, a sour or fermented smell, and fruit that looks unevenly or too uniformly coloured (a sign of artificial ripening).",
+  "shelfLife": "Ripe fruit keeps 2 to 3 days at room temperature and about 5 days in the fridge (general guidance, not from a source in this run).",
+  "substitutes": [
+    "Canned mango pulp (about 100 g for 120 g flesh)",
+    "Frozen mango chunks",
+    "Ripe banana or papaya"
+  ],
+  "usedIn": [
+    {
+      "dishNumber": 98,
+      "quantity": 120,
+      "unit": "g",
+      "raw": "120 g peeled flesh per serving (about ½ cup chopped)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-10-31",
+      "file": "FitPlate_Ingredients_2026-10-31.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "storage": "newest",
+    "looksLike": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 40.0–395.0 was wider than 30% of avg 175.0; narrowed to ±15%."
+  ]
+}

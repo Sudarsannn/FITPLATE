@@ -28,7 +28,12 @@ export type UserSettings = {
   burners?: number;
   /** What is in the kitchen, by shopping-list ingredient key (24 Oct 2026). */
   pantry?: Record<string, PantryItem>;
+  /** Cooked dishes put away as leftovers, with a use-by date (Day 14). */
+  leftovers?: Leftover[];
 };
+
+/** A cooked dish kept as leftovers. `useByDays` comes from the dish's researched storage note. */
+export type Leftover = { dishId: string; name: string; storedAt: number; useByDays: number; remix: string | null };
 
 /** One inventory line. Amounts are in g or ml where the unit allows, otherwise in the unit typed. */
 export type PantryItem = {

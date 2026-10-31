@@ -20,6 +20,7 @@ import { useStore } from '../../lib/store';
 import { stepIcon, whyItWorks } from '../../services/cookGuide';
 import { clearCookProgress, loadCookProgress, saveCookProgress, usableProgress, type CookProgress } from '../../services/cookProgress';
 import { showBeginnerTips } from '../../services/kitchen';
+import { addLeftover, fridgeDays } from '../../services/leftovers';
 import type { CookCompletion } from '../../models/prefs';
 import type { Dish } from '../../models/research';
 import { BALANCE_LABEL } from '../../services/dishDetail';
@@ -306,7 +307,7 @@ function OverviewStat({ icon, value, label }: { icon: keyof typeof Ionicons.glyp
 }
 
 function Finished({ dish, servings }: { dish: Dish; servings: number }) {
-  const { rateDish, ratings } = useStore();
+  const { rateDish, ratings, settings, updateSettings } = useStore();
   const { cost, orderTotal } = prices(dish, servings);
   const saved = cost && orderTotal ? Math.max(0, Math.round(orderTotal - cost.inr)) : null;
   const n = dish.nutritionPerServing;
@@ -355,6 +356,13 @@ function Finished({ dish, servings }: { dish: Dish; servings: number }) {
         {dish.storage ? (
           <Section title="Storing leftovers">
             <Text style={k.body}>{dish.storage}</Text>
+            {featureFlags.savingsDashboard ? (
+              (settings.leftovers ?? []).some((l) => l.dishId === dish.id) ? (
+                <Text style={[k.muted, { marginTop: 8 }]}>Saved as leftovers. Today will remind you to use them.</Text>
+              ) : (
+                <GradientButton title={`Put away: use by ${fridgeDays(dish.storage)} day${fridgeDays(dish.storage) > 1 ? 's' : ''}`} variant="glass" onPress={() => updateSettings({ leftovers: addLeftover(settings.leftovers ?? [], dish) })} style={{ marginTop: 10 }} />
+              )
+            ) : null}
           </Section>
         ) : null}
         {dish.leftoverRemix ? (

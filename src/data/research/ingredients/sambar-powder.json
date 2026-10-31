@@ -4,7 +4,7 @@
   "aliases": [
     "sambar masala"
   ],
-  "category": "Spice (packaged blend)",
+  "category": "Spice blend",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -15,74 +15,275 @@
         "avg": 645,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-05.md"
+      },
+      {
+        "date": "2026-10-29",
+        "min": 490,
+        "max": 900,
+        "avg": 680,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
       }
     ],
     "currentEstimate": {
-      "min": 585,
-      "max": 700,
-      "avg": 645
+      "min": 560,
+      "max": 760,
+      "avg": 660
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-05",
+    "lastObserved": "2026-10-29",
     "stale": false,
     "seasonal": false,
-    "listingCount": 5,
+    "listingCount": 11,
     "platforms": [
       "BigBasket",
-      "Mishry",
-      "StoreKing"
+      "Flipkart"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 58.5,
-    "max": 70,
-    "avg": 64.5
+    "min": 56,
+    "max": 76,
+    "avg": 66
   },
   "seasonal": false,
-  "nutritionPer100g": null,
-  "macrosPer100Estimate": {
-    "kcal": 340,
-    "proteinG": 14,
-    "carbsG": 45,
-    "fatG": 10,
-    "fibreG": 20
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 289,
+      "source": "Other: Everest pack label via retailer: Everest Sambar Masala label values (1,209 kJ / 289 kcal, protein 13.2 g, carbohydrate 32 g, fat 12 g, fibre 16 g, salt 2.5 g) via Jamoona listings; sodium not stated; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "proteinG": {
+      "value": 13.2,
+      "source": "Other: Everest pack label via retailer: Everest Sambar Masala label values (1,209 kJ / 289 kcal, protein 13.2 g, carbohydrate 32 g, fat 12 g, fibre 16 g, salt 2.5 g) via Jamoona listings; sodium not stated; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "carbsG": {
+      "value": 32,
+      "source": "Other: Everest pack label via retailer: Everest Sambar Masala label values (1,209 kJ / 289 kcal, protein 13.2 g, carbohydrate 32 g, fat 12 g, fibre 16 g, salt 2.5 g) via Jamoona listings; sodium not stated; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "sugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fatG": {
+      "value": 12,
+      "source": "Other: Everest pack label via retailer: Everest Sambar Masala label values (1,209 kJ / 289 kcal, protein 13.2 g, carbohydrate 32 g, fat 12 g, fibre 16 g, salt 2.5 g) via Jamoona listings; sodium not stated; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 16,
+      "source": "Other: Everest pack label via retailer: Everest Sambar Masala label values (1,209 kJ / 289 kcal, protein 13.2 g, carbohydrate 32 g, fat 12 g, fibre 16 g, salt 2.5 g) via Jamoona listings; sodium not stated; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "sodiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "Other: Everest pack label via retailer: Everest Sambar Masala label values (1,209 kJ / 289 kcal, protein 13.2 g, carbohydrate 32 g, fat 12 g, fibre 16 g, salt 2.5 g) via Jamoona listings; sodium not stated; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "Other: Everest pack label via retailer: Everest Sambar Masala label values (1,209 kJ / 289 kcal, protein 13.2 g, carbohydrate 32 g, fat 12 g, fibre 16 g, salt 2.5 g) via Jamoona listings; sodium not stated; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    }
   },
-  "storage": "Transfer to an airtight jar after opening and keep it at room temperature away from heat and steam. Use within about 3 months of opening; in humid Mumbai monsoon weather, keeping it in the fridge helps prevent lumps.",
-  "looksLike": "A reddish-brown powder with a roasted smell, made from red chilli, coriander seed, toor/chana dal, fenugreek, cumin, pepper and curry leaves, sometimes with asafoetida.",
-  "howToPick": null,
-  "shelfLife": "Usually 6–12 months unopened (see the pack).",
+  "macrosPer100Estimate": {
+    "kcal": 314.5,
+    "proteinG": 13.6,
+    "carbsG": 32,
+    "fatG": 11,
+    "fibreG": 18
+  },
+  "storage": "Airtight jar in a cool, dry cupboard; keep away from steam. Refrigerating after opening keeps the aroma longer.",
+  "looksLike": "A coarse, brick-red to orange-brown ground blend with a roasted, curry-leaf and fenugreek smell, sold in 100 g and 200 g pouches.",
+  "howToPick": "Look for a coarse, even, reddish-brown powder that smells of roasted coriander, fenugreek and curry leaf; avoid pale, clumped or musty packs. Check the label for added flour or starch if you need gluten-free.",
+  "shelfLife": "About 6 to 12 months in a sealed pack (general guidance; check the best-before). (general guidance; not taken from a source in this run)",
   "substitutes": [
     "Rasam powder",
     "Homemade mix (coriander powder + red chilli powder + a pinch of fenugreek, cumin and hing)",
-    "Bisi bele bath or kuzhambu powder"
+    "Bisi bele bath or kuzhambu powder",
+    "Rasam powder or homemade roasted blend",
+    "Coriander powder + red chilli powder + a pinch of fenugreek and turmeric",
+    "Garam masala"
   ],
   "usedIn": [
     {
-      "dishNumber": 9,
-      "quantity": 5,
+      "dishNumber": 103,
+      "quantity": 3,
       "unit": "g",
-      "raw": "5 g (1½ tsp)"
+      "raw": "3 g per serving (1 tsp)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-05",
       "file": "FitPlate_Ingredients_2026-10-05.md"
+    },
+    {
+      "date": "2026-10-29",
+      "file": "FitPlate_Ingredients_2026-10-29.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 540.8–793.1 was wider than 30% of avg 661.3; narrowed to ±15%.",
+    "macrosPer100Estimate.carbsG: Versions 2026-10-05 (45) and 2026-10-29 (32) differ by more than 25%; kept the newer."
+  ]
 }

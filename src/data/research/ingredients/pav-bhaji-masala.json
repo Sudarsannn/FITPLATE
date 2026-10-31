@@ -15,80 +15,277 @@
         "avg": 760,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-06.md"
+      },
+      {
+        "date": "2026-10-29",
+        "min": 460,
+        "max": 835,
+        "avg": 690,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
       }
     ],
     "currentEstimate": {
-      "min": 705,
-      "max": 810,
-      "avg": 760
+      "min": 620,
+      "max": 835,
+      "avg": 730
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-06",
+    "lastObserved": "2026-10-29",
     "stale": false,
     "seasonal": false,
-    "listingCount": 6,
+    "listingCount": 8,
     "platforms": [
-      "Amazon",
-      "BigBasket",
-      "Mishry"
+      "BigBasket"
     ],
     "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "confirmed": false,
+    "checkNotes": [
+      "only 1 platform (BigBasket) backs the range"
+    ]
   },
   "per100Estimate": {
-    "min": 70.5,
-    "max": 81,
-    "avg": 76
+    "min": 62,
+    "max": 83.5,
+    "avg": 73
   },
   "seasonal": false,
-  "nutritionPer100g": null,
-  "macrosPer100Estimate": {
-    "kcal": 310,
-    "proteinG": 12,
-    "carbsG": 45,
-    "fatG": 9,
-    "fibreG": 20
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 279,
+      "source": "Other: MDH pack label via retailer: MDH Pav Bhaji Masala label values (energy 1167 kJ / 279 kcal, protein 11.6 g, carbohydrate 31.2 g, fat 12 g, salt 8 g) as shown by a retailer listing; sodium not stated (salt only); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "proteinG": {
+      "value": 11.6,
+      "source": "Other: MDH pack label via retailer: MDH Pav Bhaji Masala label values (energy 1167 kJ / 279 kcal, protein 11.6 g, carbohydrate 31.2 g, fat 12 g, salt 8 g) as shown by a retailer listing; sodium not stated (salt only); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "carbsG": {
+      "value": 31.2,
+      "source": "Other: MDH pack label via retailer: MDH Pav Bhaji Masala label values (energy 1167 kJ / 279 kcal, protein 11.6 g, carbohydrate 31.2 g, fat 12 g, salt 8 g) as shown by a retailer listing; sodium not stated (salt only); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "sugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fatG": {
+      "value": 12,
+      "source": "Other: MDH pack label via retailer: MDH Pav Bhaji Masala label values (energy 1167 kJ / 279 kcal, protein 11.6 g, carbohydrate 31.2 g, fat 12 g, salt 8 g) as shown by a retailer listing; sodium not stated (salt only); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "sodiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "Other: MDH pack label via retailer: MDH Pav Bhaji Masala label values (energy 1167 kJ / 279 kcal, protein 11.6 g, carbohydrate 31.2 g, fat 12 g, salt 8 g) as shown by a retailer listing; sodium not stated (salt only); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "Other: MDH pack label via retailer: MDH Pav Bhaji Masala label values (energy 1167 kJ / 279 kcal, protein 11.6 g, carbohydrate 31.2 g, fat 12 g, salt 8 g) as shown by a retailer listing; sodium not stated (salt only); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    }
   },
-  "storage": "Transfer to an airtight jar after opening; keep in a cool, dark place away from the stove. Use within 3–4 months for best flavour.",
-  "looksLike": "Fine reddish-brown powder with a strong, tangy, warm smell, sold in small printed cartons (50 g, 100 g).",
-  "howToPick": null,
-  "shelfLife": "About 9–12 months unopened; flavour fades within 3–4 months after opening.",
+  "macrosPer100Estimate": {
+    "kcal": 294.5,
+    "proteinG": 11.8,
+    "carbsG": 31.2,
+    "fatG": 12,
+    "fibreG": 18
+  },
+  "storage": "Airtight jar or the closed pack in a cool, dry cupboard; use a dry spoon.",
+  "looksLike": "A dark red-brown ground blend with a smoky, tangy-warm smell, sold in 50 g and 100 g cartons.",
+  "howToPick": "Pick a sealed carton with a clear ingredient list, a deep red-brown colour and a rich smell; avoid faded, clumped or damp packs. Check the label if you need it gluten-free, as blends can include fillers.",
+  "shelfLife": "Typically 6 to 12 months in the sealed pack (general guidance; check the pack's best-before). (general guidance; not taken from a source in this run)",
   "substitutes": [
     "Garam masala + chilli powder + amchur",
     "Garam masala alone",
-    "Homemade blend"
+    "Homemade blend",
+    "Garam masala plus a little coriander powder, red chilli powder and dry mango powder (amchur)",
+    "Chole or kitchen king masala",
+    "Sambar powder"
   ],
   "usedIn": [
     {
-      "dishNumber": 13,
-      "quantity": 5.5,
+      "dishNumber": 89,
+      "quantity": 4,
       "unit": "g",
-      "raw": "5.5 g (1½ tsp + 1 pinch for the pav)"
-    },
-    {
-      "dishNumber": 14,
-      "quantity": 1.5,
-      "unit": "g",
-      "raw": "1.5 g (½ tsp)"
+      "raw": "4 g per serving (1½ tsp)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-06",
       "file": "FitPlate_Ingredients_2026-10-06.md"
+    },
+    {
+      "date": "2026-10-29",
+      "file": "FitPlate_Ingredients_2026-10-29.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 592.4–821.5 was wider than 30% of avg 727.8; narrowed to ±15%.",
+    "macrosPer100Estimate.carbsG: Versions 2026-10-06 (45) and 2026-10-29 (31.2) differ by more than 25%; kept the newer.",
+    "macrosPer100Estimate.fatG: Versions 2026-10-06 (9) and 2026-10-29 (12) differ by more than 25%; kept the newer."
+  ]
 }

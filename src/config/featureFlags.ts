@@ -37,6 +37,10 @@ export const featureFlags = {
   lateNightHelper: true,
   /** Innovation (Day 13): opt-in desk-break stretch card on Today, weekdays 10:00 to 18:00. */
   deskBreak: true,
+  /** Day 14: leftovers reminders and the money and calories saved summary. ON since Day 14. */
+  savingsDashboard: true,
+  /** Innovation (Day 14): "What can I cook with what I have?" from the ingredient inventory. */
+  fridgeRescue: true,
   /** Priority plan P1-b: Google sign-in inside the iPhone / Android dev build. Only shows when that platform's client ID is in .env. */
   nativeGoogleSignIn: true,
   /** Priority plan P2-c: read the research library from the server when it is newer than the bundled copy. */

@@ -4,7 +4,7 @@
   "aliases": [
     "maida"
   ],
-  "category": "Flour",
+  "category": "Flour (refined wheat flour)",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -15,33 +15,41 @@
         "avg": 56,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-10.md"
+      },
+      {
+        "date": "2026-10-31",
+        "min": 53,
+        "max": 90,
+        "avg": 67,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-31.md"
       }
     ],
     "currentEstimate": {
-      "min": 50,
-      "max": 65,
-      "avg": 56
+      "min": 52,
+      "max": 70,
+      "avg": 61
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-10",
+    "lastObserved": "2026-10-31",
     "stale": false,
     "seasonal": false,
-    "listingCount": 7,
+    "listingCount": 9,
     "platforms": [
-      "Amazon",
-      "BigBasket",
-      "StoreKing"
+      "BigBasket"
     ],
     "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "confirmed": false,
+    "checkNotes": [
+      "only 1 platform (BigBasket) backs the range"
+    ]
   },
   "per100Estimate": {
-    "min": 5,
-    "max": 6.5,
-    "avg": 5.6
+    "min": 5.2,
+    "max": 7,
+    "avg": 6.1
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -62,9 +70,9 @@
       "confidence": "Medium"
     },
     "sugarsG": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0.27,
+      "source": "USDA FDC: USDA FDC 169761 'Wheat flour, white, all-purpose, unenriched' (energy 364 kcal) with protein, fat, carbohydrate, fibre, sugars and sodium quoted from the enriched calcium-fortified entry FDC 169754 on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "fatG": {
       "value": 1.5,
@@ -77,13 +85,13 @@
       "confidence": null
     },
     "fibreG": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 2.7,
+      "source": "USDA FDC: USDA FDC 169761 'Wheat flour, white, all-purpose, unenriched' (energy 364 kcal) with protein, fat, carbohydrate, fibre, sugars and sodium quoted from the enriched calcium-fortified entry FDC 169754 on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "sodiumMg": {
       "value": 2,
-      "source": "USDA FDC: FDC ID 789890, Flour, wheat, all-purpose, enriched, bleached (Foundation), via getfoodfacts.com and triagemethod.com",
+      "source": "USDA FDC: USDA FDC 169761 'Wheat flour, white, all-purpose, unenriched' (energy 364 kcal) with protein, fat, carbohydrate, fibre, sugars and sodium quoted from the enriched calcium-fortified entry FDC 169754 on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "ironMg": {
@@ -132,9 +140,9 @@
       "confidence": null
     },
     "cholesterolMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 169761 'Wheat flour, white, all-purpose, unenriched' (energy 364 kcal) with protein, fat, carbohydrate, fibre, sugars and sodium quoted from the enriched calcium-fortified entry FDC 169754 on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "transFatG": {
       "value": null,
@@ -222,38 +230,51 @@
       "confidence": null
     },
     "vitaminB12Ug": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 169761 'Wheat flour, white, all-purpose, unenriched' (energy 364 kcal) with protein, fat, carbohydrate, fibre, sugars and sodium quoted from the enriched calcium-fortified entry FDC 169754 on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     }
   },
-  "macrosPer100Estimate": null,
-  "storage": "Airtight steel or plastic container, at room temperature, away from the stove and damp: 2–3 months once opened. In Mumbai's humid monsoon months, keep it in the fridge (airtight) to stop weevils and lumping: up to about 6 months. Bring to room temperature before use.",
-  "looksLike": "Very fine, soft, bright-white powder with no visible bran specks. It feels silky between the fingers and clumps when squeezed (unlike atta, which is creamy-beige and slightly gritty).",
-  "howToPick": null,
-  "shelfLife": "About 6–9 months unopened (check the pack's best-before); 2–3 months once opened at room temperature in a humid city.",
+  "macrosPer100Estimate": {
+    "kcal": 364,
+    "proteinG": 10.3,
+    "carbsG": 76.3,
+    "fatG": 1,
+    "fibreG": 2.7
+  },
+  "storage": "Airtight container, cool and dry, away from moisture and insects; refrigerate in monsoon if stored for long.",
+  "looksLike": "Very fine, soft, bright-white powder with no bran specks that clumps when squeezed (atta is creamier and grittier).",
+  "howToPick": "Uniformly white, fine and free-flowing; no musty smell, lumps, insects or webbing. Check the pack says maida/refined wheat flour (FSSAI labelling rule, see section 9).",
+  "shelfLife": "About 3 to 6 months in a sealed pack (general guidance, not from a source this run).",
   "substitutes": [
     "Cornflour alone",
     "Rice flour",
-    "Whole wheat flour (atta)"
+    "Whole wheat flour (atta)",
+    "Fine atta (whole wheat) or a half-and-half mix",
+    "Rice flour or arrowroot",
+    "Omit"
   ],
   "usedIn": [
     {
-      "dishNumber": 34,
+      "dishNumber": 97,
       "quantity": 8,
       "unit": "g",
-      "raw": "8 g (1 tbsp), in the cornflour-maida batter for the paneer"
+      "raw": "8 g per serving (about 1 tbsp)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-10",
       "file": "FitPlate_Ingredients_2026-10-10.md"
+    },
+    {
+      "date": "2026-10-31",
+      "file": "FitPlate_Ingredients_2026-10-31.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (none)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (single)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -261,5 +282,12 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 51.3–76.2 was wider than 30% of avg 60.9; narrowed to ±15%.",
+    "nutritionPer100g.energyKcal: Conflict (2026-10-10: 366 vs 2026-10-31: 364); both cite the official table, kept the previous value.",
+    "nutritionPer100g.proteinG: Conflict (2026-10-10: 10.9 vs 2026-10-31: 10.3); both cite the official table, kept the previous value.",
+    "nutritionPer100g.carbsG: Conflict (2026-10-10: 77.3 vs 2026-10-31: 76.3); both cite the official table, kept the previous value.",
+    "nutritionPer100g.fatG: Conflict (2026-10-10: 1.5 vs 2026-10-31: 1); both cite the official table, kept the previous value."
+  ]
 }

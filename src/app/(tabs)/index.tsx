@@ -15,6 +15,7 @@ import { dishLibraryHref, profileHref } from '../../config/tabs';
 import { select, success } from '../../lib/haptics';
 import { DeskBreakCard } from '../../components/DeskBreakCard';
 import { LateNightCard } from '../../components/LateNightCard';
+import { LeftoversCard } from '../../components/LeftoversCard';
 import { StreakButton } from '../../components/StreakButton';
 import { addDays, dayKey, dayTotals, FIBRE_TARGET, GOALS, recommend, useStore, WATER_TARGET } from '../../lib/store';
 import { BALANCE_LABEL } from '../../services/dishDetail';
@@ -198,6 +199,7 @@ export default function Today() {
           </FadeIn>
 
           <FadeIn i={4}>
+            <LeftoversCard />
             <DeskBreakCard />
             <LateNightCard />
             <Glass style={{ marginTop: 14 }}>

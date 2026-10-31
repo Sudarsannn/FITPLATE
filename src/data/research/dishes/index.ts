@@ -95,6 +95,7 @@ import item_091_aloo_tikki from './091-aloo-tikki.json';
 import item_092_kothu_parotta from './092-kothu-parotta.json';
 import item_093_mutton_keema from './093-mutton-keema.json';
 import item_094_pasta_in_red_sauce_indian_style from './094-pasta-in-red-sauce-indian-style.json';
+import item_098_mango_lassi from './098-mango-lassi.json';
 import item_101_dindigul_chicken_biryani from './101-dindigul-chicken-biryani.json';
 import item_102_pink_sauce_penne_pasta from './102-pink-sauce-penne-pasta.json';
 import item_103_arisi_paruppu_sadam from './103-arisi-paruppu-sadam.json';
@@ -194,6 +195,7 @@ export const items: Dish[] = [
   item_092_kothu_parotta as unknown as Dish,
   item_093_mutton_keema as unknown as Dish,
   item_094_pasta_in_red_sauce_indian_style as unknown as Dish,
+  item_098_mango_lassi as unknown as Dish,
   item_101_dindigul_chicken_biryani as unknown as Dish,
   item_102_pink_sauce_penne_pasta as unknown as Dish,
   item_103_arisi_paruppu_sadam as unknown as Dish,

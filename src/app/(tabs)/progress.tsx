@@ -6,6 +6,7 @@ import Animated, { Easing, useAnimatedStyle, useSharedValue, withDelay, withTimi
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { DishRow } from '../../components/DishCard';
+import { SavingsCard } from '../../components/SavingsCard';
 import { IconBadge, type IconName } from '../../components/Icon';
 import { Bar, CountUp, FadeIn, Glass, SectionHeader } from '../../components/ui';
 import { addDays, allowedDishes, dayKey, dayTotals, FIBRE_TARGET, GOALS, useStore, WATER_TARGET } from '../../lib/store';
@@ -134,6 +135,10 @@ export function ProgressScreen({ embedded = false }: { embedded?: boolean }) {
             </View>
             <IconBadge name="wallet-outline" color={colors.warn} size={56} />
           </Glass>
+        </FadeIn>
+
+        <FadeIn i={4}>
+          <SavingsCard />
         </FadeIn>
 
         <FadeIn i={4}>

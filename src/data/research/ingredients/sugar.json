@@ -5,7 +5,7 @@
     "cheeni",
     "refined white"
   ],
-  "category": "Packaged",
+  "category": "Sweetener",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -16,78 +16,284 @@
         "avg": 58,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-10-29",
+        "min": 50,
+        "max": 65,
+        "avg": 58,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
       }
     ],
     "currentEstimate": {
-      "min": 52,
-      "max": 66,
+      "min": 51,
+      "max": 65,
       "avg": 58
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-10-29",
     "stale": false,
     "seasonal": false,
-    "listingCount": 4,
+    "listingCount": 8,
     "platforms": [
       "BigBasket",
-      "Dept. of Consumer Affairs all-India average (14 Sep 2026",
-      "Dept. of Consumer Affairs retail price"
+      "Swiggy Instamart",
+      "Zepto"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 5.2,
-    "max": 6.6,
+    "min": 5.1,
+    "max": 6.5,
     "avg": 5.8
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 387,
+      "source": "USDA FDC: USDA FDC 169655 'Sugars, granulated' (SR Legacy); values seen only on secondary mirrors; zero by composition: protein_g, fat_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "proteinG": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 169655 'Sugars, granulated' (SR Legacy); values seen only on secondary mirrors; zero by composition: protein_g, fat_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "carbsG": {
+      "value": 100,
+      "source": "USDA FDC: USDA FDC 169655 'Sugars, granulated' (SR Legacy); values seen only on secondary mirrors; zero by composition: protein_g, fat_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "sugarsG": {
+      "value": 99.8,
+      "source": "USDA FDC: USDA FDC 169655 'Sugars, granulated' (SR Legacy); values seen only on secondary mirrors; zero by composition: protein_g, fat_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "fatG": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 169655 'Sugars, granulated' (SR Legacy); values seen only on secondary mirrors; zero by composition: protein_g, fat_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 169655 'Sugars, granulated' (SR Legacy); values seen only on secondary mirrors; zero by composition: protein_g, fat_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "sodiumMg": {
+      "value": 1,
+      "source": "USDA FDC: USDA FDC 169655 'Sugars, granulated' (SR Legacy); values seen only on secondary mirrors; zero by composition: protein_g, fat_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "ironMg": {
+      "value": 0.05,
+      "source": "USDA FDC: USDA FDC 169655 'Sugars, granulated' (SR Legacy); values seen only on secondary mirrors; zero by composition: protein_g, fat_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "calciumMg": {
+      "value": 1,
+      "source": "USDA FDC: USDA FDC 169655 'Sugars, granulated' (SR Legacy); values seen only on secondary mirrors; zero by composition: protein_g, fat_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "potassiumMg": {
+      "value": 2,
+      "source": "USDA FDC: USDA FDC 169655 'Sugars, granulated' (SR Legacy); values seen only on secondary mirrors; zero by composition: protein_g, fat_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    }
+  },
   "macrosPer100Estimate": {
     "kcal": 387,
     "proteinG": 0,
-    "carbsG": 99.9,
-    "fatG": 0,
+    "carbsG": 100,
+    "fatG": 0.3,
     "fibreG": 0
   },
-  "storage": "Airtight container at room temperature. Keep it dry to stop clumping, and sealed against ants. It lasts indefinitely.",
-  "looksLike": "white, sparkling, free-flowing crystals. It is sold loose or in 1 kg / 5 kg packs.",
-  "howToPick": "the crystals should be white, dry and free-flowing, with no lumps, dark specks or ants. Sealed branded packs are cleaner than loose sugar.",
-  "shelfLife": "sugar does not spoil when kept dry. Packs usually state about 1–2 years.",
+  "storage": "Airtight jar at room temperature, away from damp and strong smells; in monsoon keep a dry spoon in use. Do not refrigerate.",
+  "looksLike": "White, glittering, free-flowing crystals of sucrose, sold loose or in 500 g, 1 kg and 5 kg pouches.",
+  "howToPick": "Dry, loose, uniformly white crystals with no lumps, no yellow tint and no damp patches. Avoid hardened clumps (moisture) or a sour or smoky smell.",
+  "shelfLife": "Effectively indefinite if kept dry (general guidance; not from a source in this run); packs carry a best-before date.",
   "substitutes": [
-    "Jaggery (gur), grated, 1"
+    "Jaggery (gur), grated, 1",
+    "Jaggery powder (gur) or brown sugar",
+    "Honey",
+    "Omit"
   ],
   "usedIn": [
     {
-      "dishNumber": 1,
-      "quantity": 2,
+      "dishNumber": 95,
+      "quantity": 20,
       "unit": "g",
-      "raw": "2 g (½ tsp)"
+      "raw": "20 g per serving (4 tsp); the Low-sugar variant uses 10 g"
     },
     {
-      "dishNumber": 3,
-      "quantity": 2,
+      "dishNumber": 87,
+      "quantity": 1.5,
       "unit": "g",
-      "raw": "2 g (½ tsp)"
+      "raw": "1.5 g per serving (½ tsp, in the sauce)"
+    },
+    {
+      "dishNumber": 94,
+      "quantity": null,
+      "unit": null,
+      "raw": "not counted (only an optional pinch if the tomatoes are sour)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-10-29",
+      "file": "FitPlate_Ingredients_2026-10-29.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "macrosPer100Estimate.fatG: Versions 2026-10-04 (0) and 2026-10-29 (0.32) differ by more than 25%; kept the newer."
+  ]
 }

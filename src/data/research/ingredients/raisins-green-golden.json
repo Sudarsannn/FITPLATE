@@ -15,40 +15,48 @@
         "avg": 570,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-10.md"
+      },
+      {
+        "date": "2026-10-31",
+        "min": 415,
+        "max": 740,
+        "avg": 530,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-10-31.md"
       }
     ],
     "currentEstimate": {
-      "min": 500,
-      "max": 640,
-      "avg": 570
+      "min": 465,
+      "max": 625,
+      "avg": 545
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-10",
+    "lastObserved": "2026-10-31",
     "stale": false,
     "seasonal": false,
-    "listingCount": 7,
+    "listingCount": 9,
     "platforms": [
-      "Amazon",
       "BigBasket",
-      "StoreKing"
+      "Flipkart",
+      "Zepto"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 50,
-    "max": 64,
-    "avg": 57
+    "min": 46.5,
+    "max": 62.5,
+    "avg": 54.5
   },
   "seasonal": false,
   "nutritionPer100g": {
     "basis": "100g",
     "energyKcal": {
       "value": 302,
-      "source": "USDA FDC: FDC ID 168164, Raisins, golden, seedless (SR Legacy 9297), via secondary sites",
+      "source": "USDA FDC: USDA FDC 168164 'Raisins, golden, seedless' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "proteinG": {
@@ -98,7 +106,7 @@
     },
     "potassiumMg": {
       "value": 746,
-      "source": "USDA FDC: FDC ID 168164, Raisins, golden, seedless (SR Legacy 9297), via secondary sites",
+      "source": "USDA FDC: USDA FDC 168164 'Raisins, golden, seedless' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "magnesiumMg": {
@@ -132,9 +140,9 @@
       "confidence": null
     },
     "cholesterolMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 168164 'Raisins, golden, seedless' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "transFatG": {
       "value": null,
@@ -197,9 +205,9 @@
       "confidence": null
     },
     "vitaminKUg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 3.5,
+      "source": "USDA FDC: USDA FDC 168164 'Raisins, golden, seedless' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "thiaminMg": {
       "value": null,
@@ -222,44 +230,50 @@
       "confidence": null
     },
     "vitaminB12Ug": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 168164 'Raisins, golden, seedless' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     }
   },
   "macrosPer100Estimate": {
-    "kcal": 301,
+    "kcal": 316.5,
     "proteinG": 3.3,
     "carbsG": 80,
     "fatG": 0.2,
     "fibreG": 3.3
   },
-  "storage": "6 months or more; in Mumbai's humid monsoon months the fridge also keeps out ants and mould. Bring to room temperature or soak before use if they harden.",
-  "looksLike": "Small, wrinkled, oval dried grapes, about 1–1.5 cm long. The everyday Indian kishmish (mostly from Nashik and Sangli in Maharashtra) is green-gold to light amber, soft and sticky, with no seeds.",
-  "howToPick": null,
-  "shelfLife": "About 6–12 months in a sealed pack (check the best-before date); 2–3 months once opened at room temperature.",
+  "storage": "Airtight jar in a cool, dry place for a few months; refrigerate in hot, humid Mumbai weather to keep them soft and avoid insects.",
+  "looksLike": "Small, wrinkled, oval dried grapes, green-gold to light amber, soft and sticky and seedless. Black raisins (kali kishmish) are a different, darker product.",
+  "howToPick": "Plump, soft, evenly golden-green and not rock hard; no white sugar crust, mould or sour smell. Very dark, hard or sticky-clumped raisins are old.",
+  "shelfLife": "Several months in a sealed pack (general guidance, not from a source this run).",
   "substitutes": [
     "Chopped soft dates (khajur)",
     "Black raisins (kali kishmish)",
-    "Dried cranberries or chopped dried apricots"
+    "Dried cranberries or chopped dried apricots",
+    "Chopped dates or dried cranberries",
+    "Omit"
   ],
   "usedIn": [
     {
-      "dishNumber": 31,
-      "quantity": 8,
+      "dishNumber": 96,
+      "quantity": 5,
       "unit": "g",
-      "raw": "8 g (1 tbsp), stirred in the night before so they plump up and sweeten the jar"
+      "raw": "5 g per serving (8 to 10 raisins)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-10",
       "file": "FitPlate_Ingredients_2026-10-10.md"
+    },
+    {
+      "date": "2026-10-31",
+      "file": "FitPlate_Ingredients_2026-10-31.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -267,5 +281,15 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 447.4–701.9 was wider than 30% of avg 545.2; narrowed to ±15%.",
+    "nutritionPer100g.proteinG: Conflict (2026-10-10: 3.39 vs 2026-10-31: 3.3); both cite the official table, kept the previous value.",
+    "nutritionPer100g.carbsG: Conflict (2026-10-10: 79.52 vs 2026-10-31: 80); both cite the official table, kept the previous value.",
+    "nutritionPer100g.sugarsG: Conflict (2026-10-10: 59.19 vs 2026-10-31: 65.7); both cite the official table, kept the previous value.",
+    "nutritionPer100g.fatG: Conflict (2026-10-10: 0.46 vs 2026-10-31: 0.2); both cite the official table, kept the previous value.",
+    "nutritionPer100g.fibreG: Conflict (2026-10-10: 4 vs 2026-10-31: 3.3); both cite the official table, kept the previous value.",
+    "nutritionPer100g.sodiumMg: Conflict (2026-10-10: 12 vs 2026-10-31: 24); both cite the official table, kept the previous value.",
+    "nutritionPer100g.calciumMg: Conflict (2026-10-10: 53 vs 2026-10-31: 64); both cite the official table, kept the previous value."
+  ]
 }

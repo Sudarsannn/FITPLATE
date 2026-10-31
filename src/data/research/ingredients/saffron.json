@@ -15,73 +15,272 @@
         "avg": 375,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-10-29",
+        "min": 230,
+        "max": 545,
+        "avg": 360,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
       }
     ],
     "currentEstimate": {
-      "min": 320,
-      "max": 420,
-      "avg": 375
+      "min": 315,
+      "max": 425,
+      "avg": 370
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-10-29",
     "stale": false,
     "seasonal": false,
-    "listingCount": 7,
+    "listingCount": 11,
     "platforms": [
-      "Amazon",
       "BigBasket",
-      "Flipkart",
-      "magicdrop.in roundup"
+      "Flipkart"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 32000,
-    "max": 42000,
-    "avg": 37500
+    "min": 31500,
+    "max": 42500,
+    "avg": 37000
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 310,
+      "source": "USDA FDC: USDA FDC 170934 'Spices, saffron' (the FDC ID in the search was 170934; 170931 was not confirmed) via secondary sites (foodstruct, getfoodfacts, recipal); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "proteinG": {
+      "value": 11.4,
+      "source": "USDA FDC: USDA FDC 170934 'Spices, saffron' (the FDC ID in the search was 170934; 170931 was not confirmed) via secondary sites (foodstruct, getfoodfacts, recipal); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "carbsG": {
+      "value": 65.37,
+      "source": "USDA FDC: USDA FDC 170934 'Spices, saffron' (the FDC ID in the search was 170934; 170931 was not confirmed) via secondary sites (foodstruct, getfoodfacts, recipal); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fatG": {
+      "value": 5.8,
+      "source": "USDA FDC: USDA FDC 170934 'Spices, saffron' (the FDC ID in the search was 170934; 170931 was not confirmed) via secondary sites (foodstruct, getfoodfacts, recipal); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 3.9,
+      "source": "USDA FDC: USDA FDC 170934 'Spices, saffron' (the FDC ID in the search was 170934; 170931 was not confirmed) via secondary sites (foodstruct, getfoodfacts, recipal); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sodiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": 80.8,
+      "source": "USDA FDC: USDA FDC 170934 'Spices, saffron' (the FDC ID in the search was 170934; 170931 was not confirmed) via secondary sites (foodstruct, getfoodfacts, recipal); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 170934 'Spices, saffron' (the FDC ID in the search was 170934; 170931 was not confirmed) via secondary sites (foodstruct, getfoodfacts, recipal); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 170934 'Spices, saffron' (the FDC ID in the search was 170934; 170931 was not confirmed) via secondary sites (foodstruct, getfoodfacts, recipal); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    }
+  },
   "macrosPer100Estimate": {
     "kcal": 310,
-    "proteinG": 11,
-    "carbsG": 65,
+    "proteinG": 11.2,
+    "carbsG": 65.2,
     "fatG": 5.9,
     "fibreG": 3.9
   },
-  "storage": "Airtight, light-proof container in a cool, dry cupboard: 1–2 years. Keep away from moisture and light.",
-  "looksLike": "thin, deep-red threads 2–3 cm long, sometimes with a yellow tail (lacha/mongra grades); strong honey-hay aroma; colours milk golden-yellow.",
-  "howToPick": null,
-  "shelfLife": "about 2–3 years sealed; best within 1 year of opening.",
+  "storage": "Keep the box tightly closed in a cool, dark, dry cupboard, away from light and damp. Soak threads in 1 to 2 tbsp warm milk for 10 to 15 minutes before use.",
+  "looksLike": "Thin, trumpet-ended, deep red threads (dried flower stigmas) that colour milk golden-orange when soaked.",
+  "howToPick": "Buy a sealed box with a lot number and FSSAI licence from a known brand. Real threads are deep red with a slightly lighter tip and release colour slowly in warm milk; instant, bright dye in cold water is a warning sign (general guidance, not from a source in this run).",
+  "shelfLife": "About 2 to 3 years if kept dry and dark; check the pack date.",
   "substitutes": [
-    "Skip it"
+    "Skip it",
+    "Turmeric (a pinch) with cardamom",
+    "Kesar essence or saffron-flavoured milk powder",
+    "Omit"
   ],
   "usedIn": [
     {
-      "dishNumber": 2,
-      "quantity": null,
-      "unit": null,
-      "raw": "6–8 strands, optional (a pinch)"
+      "dishNumber": 95,
+      "quantity": 0.05,
+      "unit": "g",
+      "raw": "about 0.05 g per serving (3 threads, optional)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-10-29",
+      "file": "FitPlate_Ingredients_2026-10-29.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 277.6–478.9 was wider than 30% of avg 367.9; narrowed to ±15%."
+  ]
 }

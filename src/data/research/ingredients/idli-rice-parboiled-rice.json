@@ -16,73 +16,275 @@
         "avg": 67,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-10-29",
+        "min": 50,
+        "max": 77,
+        "avg": 60,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
       }
     ],
     "currentEstimate": {
-      "min": 58,
-      "max": 77,
-      "avg": 67
+      "min": 53,
+      "max": 72,
+      "avg": 63
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-10-29",
     "stale": false,
     "seasonal": false,
-    "listingCount": 3,
+    "listingCount": 6,
     "platforms": [
       "BigBasket",
-      "StoreKing"
+      "Swiggy Instamart"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 5.8,
-    "max": 7.7,
-    "avg": 6.7
+    "min": 5.3,
+    "max": 7.2,
+    "avg": 6.3
   },
   "seasonal": false,
-  "nutritionPer100g": null,
-  "macrosPer100Estimate": {
-    "kcal": 360,
-    "proteinG": 7.5,
-    "carbsG": 79,
-    "fatG": 0.8,
-    "fibreG": 2
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 374,
+      "source": "USDA FDC: USDA FDC 'Rice, white, long-grain, parboiled, unenriched, dry' via happyforks.com (fatsecret shows protein 8.11 g, fibre 2.2 g); FDC ID not shown; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "proteinG": {
+      "value": 7.51,
+      "source": "USDA FDC: USDA FDC 'Rice, white, long-grain, parboiled, unenriched, dry' via happyforks.com (fatsecret shows protein 8.11 g, fibre 2.2 g); FDC ID not shown; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "carbsG": {
+      "value": 80.89,
+      "source": "USDA FDC: USDA FDC 'Rice, white, long-grain, parboiled, unenriched, dry' via happyforks.com (fatsecret shows protein 8.11 g, fibre 2.2 g); FDC ID not shown; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fatG": {
+      "value": 1.03,
+      "source": "USDA FDC: USDA FDC 'Rice, white, long-grain, parboiled, unenriched, dry' via happyforks.com (fatsecret shows protein 8.11 g, fibre 2.2 g); FDC ID not shown; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 1.8,
+      "source": "USDA FDC: USDA FDC 'Rice, white, long-grain, parboiled, unenriched, dry' via happyforks.com (fatsecret shows protein 8.11 g, fibre 2.2 g); FDC ID not shown; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sodiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 'Rice, white, long-grain, parboiled, unenriched, dry' via happyforks.com (fatsecret shows protein 8.11 g, fibre 2.2 g); FDC ID not shown; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 'Rice, white, long-grain, parboiled, unenriched, dry' via happyforks.com (fatsecret shows protein 8.11 g, fibre 2.2 g); FDC ID not shown; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    }
   },
-  "storage": "Store it at room temperature in an airtight container. Use it within 6 months of opening.",
-  "looksLike": "Short, plump, opaque grains, creamy to pale yellow. Parboiling gives them a slightly glassy, hard feel.",
-  "howToPick": null,
-  "shelfLife": "12 months or more unopened.",
+  "macrosPer100Estimate": {
+    "kcal": 367,
+    "proteinG": 7.5,
+    "carbsG": 79.9,
+    "fatG": 1,
+    "fibreG": 1.9
+  },
+  "storage": "Keep in an airtight container at room temperature in a dry place; a few dried neem leaves or a cool spot helps against insects (general guidance).",
+  "looksLike": "Short to medium, slightly plump cream or pale-yellow grains, parboiled before milling so they stay firm when cooked.",
+  "howToPick": "Uniform, firm grains of even colour with little broken rice or dust; avoid musty smell or insects (general guidance, not from a source in this run).",
+  "shelfLife": "About a year in a dry, airtight container; check the date printed.",
   "substitutes": [
     "Sona masoori (raw)",
     "Ponni boiled rice",
-    "Ready idli/dosa rava"
+    "Ready idli/dosa rava",
+    "Ponni boiled rice or any parboiled rice",
+    "Raw rice (sona masoori)",
+    "Poha or rice rava"
   ],
   "usedIn": [
     {
-      "dishNumber": 4,
-      "quantity": 40,
+      "dishNumber": 103,
+      "quantity": 65,
       "unit": "g",
-      "raw": "40 g raw (in the dosa batter)"
+      "raw": "65 g per serving (about ⅓ cup of parboiled rice, puzhungal arisi)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-10-29",
+      "file": "FitPlate_Ingredients_2026-10-29.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 52.9–77.0 was wider than 30% of avg 62.5; narrowed to ±15%.",
+    "macrosPer100Estimate.fatG: Versions 2026-10-04 (0.8) and 2026-10-29 (1.03) differ by more than 25%; kept the newer."
+  ]
 }

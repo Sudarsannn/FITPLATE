@@ -5,7 +5,7 @@
     "everyday Indian soy sauce",
     "soya sauce"
   ],
-  "category": "Packaged (sauce)",
+  "category": "Condiment",
   "standardUnit": "l",
   "price": {
     "priceHistory": [
@@ -16,37 +16,225 @@
         "avg": 300,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-05.md"
+      },
+      {
+        "date": "2026-10-29",
+        "min": 100,
+        "max": 335,
+        "avg": 240,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
       }
     ],
     "currentEstimate": {
-      "min": 290,
-      "max": 310,
-      "avg": 300
+      "min": 225,
+      "max": 300,
+      "avg": 260
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-05",
+    "lastObserved": "2026-10-29",
     "stale": false,
     "seasonal": false,
-    "listingCount": 2,
+    "listingCount": 7,
     "platforms": [
-      "Amazon",
-      "BigBasket"
+      "BigBasket",
+      "Swiggy Instamart"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 2 listings back the range (need 3)"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 29,
-    "max": 31,
-    "avg": 30
+    "min": 22.5,
+    "max": 30,
+    "avg": 26
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 53,
+      "source": "USDA FDC: USDA FDC 174277 'Soy sauce made from soy and wheat (shoyu)' via secondary sites; potassium_mg and vitamin_b6_mg from soupersage (USDA-cited, generic soy sauce); not converted to per 100 ml",
+      "confidence": "Medium"
+    },
+    "proteinG": {
+      "value": 8.1,
+      "source": "USDA FDC: USDA FDC 174277 'Soy sauce made from soy and wheat (shoyu)' via secondary sites; potassium_mg and vitamin_b6_mg from soupersage (USDA-cited, generic soy sauce); not converted to per 100 ml",
+      "confidence": "Medium"
+    },
+    "carbsG": {
+      "value": 4.9,
+      "source": "USDA FDC: USDA FDC 174277 'Soy sauce made from soy and wheat (shoyu)' via secondary sites; potassium_mg and vitamin_b6_mg from soupersage (USDA-cited, generic soy sauce); not converted to per 100 ml",
+      "confidence": "Medium"
+    },
+    "sugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fatG": {
+      "value": 0.6,
+      "source": "USDA FDC: USDA FDC 174277 'Soy sauce made from soy and wheat (shoyu)' via secondary sites; potassium_mg and vitamin_b6_mg from soupersage (USDA-cited, generic soy sauce); not converted to per 100 ml",
+      "confidence": "Medium"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 0.8,
+      "source": "USDA FDC: USDA FDC 174277 'Soy sauce made from soy and wheat (shoyu)' via secondary sites; potassium_mg and vitamin_b6_mg from soupersage (USDA-cited, generic soy sauce); not converted to per 100 ml",
+      "confidence": "Medium"
+    },
+    "sodiumMg": {
+      "value": 5493,
+      "source": "USDA FDC: USDA FDC 174277 'Soy sauce made from soy and wheat (shoyu)' via secondary sites; potassium_mg and vitamin_b6_mg from soupersage (USDA-cited, generic soy sauce); not converted to per 100 ml",
+      "confidence": "Medium"
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": 435,
+      "source": "USDA FDC: USDA FDC 174277 'Soy sauce made from soy and wheat (shoyu)' via secondary sites; potassium_mg and vitamin_b6_mg from soupersage (USDA-cited, generic soy sauce); not converted to per 100 ml",
+      "confidence": "Medium"
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": 14,
+      "source": "USDA FDC: USDA FDC 174277 'Soy sauce made from soy and wheat (shoyu)' via secondary sites; potassium_mg and vitamin_b6_mg from soupersage (USDA-cited, generic soy sauce); not converted to per 100 ml",
+      "confidence": "Medium"
+    },
+    "waterG": {
+      "value": 71.2,
+      "source": "USDA FDC: USDA FDC 174277 'Soy sauce made from soy and wheat (shoyu)' via secondary sites; potassium_mg and vitamin_b6_mg from soupersage (USDA-cited, generic soy sauce); not converted to per 100 ml",
+      "confidence": "Medium"
+    },
+    "cholesterolMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": 2.2,
+      "source": "USDA FDC: USDA FDC 174277 'Soy sauce made from soy and wheat (shoyu)' via secondary sites; potassium_mg and vitamin_b6_mg from soupersage (USDA-cited, generic soy sauce); not converted to per 100 ml",
+      "confidence": "Medium"
+    },
+    "vitaminB6Mg": {
+      "value": 0.148,
+      "source": "USDA FDC: USDA FDC 174277 'Soy sauce made from soy and wheat (shoyu)' via secondary sites; potassium_mg and vitamin_b6_mg from soupersage (USDA-cited, generic soy sauce); not converted to per 100 ml",
+      "confidence": "Medium"
+    },
+    "vitaminB12Ug": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    }
+  },
   "macrosPer100Estimate": {
     "kcal": 53,
     "proteinG": 8.1,
@@ -54,37 +242,48 @@
     "fatG": 0.6,
     "fibreG": 0.8
   },
-  "storage": "Unopened: room temperature, out of sunlight. Opened: cap tightly; keeps 6 months or more at room temperature, longer and with better flavour in the fridge.",
-  "looksLike": "Thin, salty, dark-brown liquid in a plastic or glass bottle.",
-  "howToPick": null,
-  "shelfLife": "About 12–18 months unopened (check the pack).",
+  "storage": "Cool, dry cupboard before opening; after opening keep the cap tight and use within a few months (fridge helps with brewed types).",
+  "looksLike": "A thin, salty, dark-brown liquid in a plastic or glass bottle.",
+  "howToPick": "Clear dark brown, no sediment, intact seal, within best-before. Check the label: \"naturally brewed\" is different from the cheaper acid-hydrolysed vegetable protein types. Avoid bottles with a bulging cap or a sour, off smell.",
+  "shelfLife": "Unopened about 1–2 years; opened bottles last several months (general guidance; not from a source in this run).",
   "substitutes": [
     "Naturally brewed soy sauce (Kikkoman etc.)",
     "Tamari or reduced-salt soy sauce",
-    "Pinch of salt plus a few drops of dark soy/Worcestershire"
+    "Pinch of salt plus a few drops of dark soy/Worcestershire",
+    "Tamari",
+    "Salt plus a little vinegar and a pinch of sugar",
+    "Coconut aminos or Worcestershire sauce"
   ],
   "usedIn": [
     {
-      "dishNumber": 10,
-      "quantity": 8,
+      "dishNumber": 87,
+      "quantity": 13,
       "unit": "ml",
-      "raw": "8 ml (1½ tsp)"
+      "raw": "13 ml per serving in all (5 ml in the marinade, 8 ml in the sauce); the Gluten-free variant swaps it for tamari"
     }
   ],
   "versions": [
     {
       "date": "2026-10-05",
       "file": "FitPlate_Ingredients_2026-10-05.md"
+    },
+    {
+      "date": "2026-10-29",
+      "file": "FitPlate_Ingredients_2026-10-29.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 169.3–325.9 was wider than 30% of avg 261.9; narrowed to ±15%."
+  ]
 }

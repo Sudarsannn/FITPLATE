@@ -15,74 +15,275 @@
         "avg": 680,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-06.md"
+      },
+      {
+        "date": "2026-10-29",
+        "min": 315,
+        "max": 910,
+        "avg": 575,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
       }
     ],
     "currentEstimate": {
-      "min": 600,
-      "max": 760,
-      "avg": 680
+      "min": 535,
+      "max": 725,
+      "avg": 630
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-06",
+    "lastObserved": "2026-10-29",
     "stale": false,
     "seasonal": false,
-    "listingCount": 5,
+    "listingCount": 6,
     "platforms": [
-      "Amazon",
-      "BigBasket",
-      "Hyperpure"
+      "BigBasket"
     ],
     "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "confirmed": false,
+    "checkNotes": [
+      "only 1 platform (BigBasket) backs the range"
+    ]
   },
   "per100Estimate": {
-    "min": 60,
-    "max": 76,
-    "avg": 68
+    "min": 53.5,
+    "max": 72.5,
+    "avg": 63
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 375,
+      "source": "USDA FDC: USDA FDC 170923 'Spices, cumin seed' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "proteinG": {
+      "value": 17.8,
+      "source": "USDA FDC: USDA FDC 170923 'Spices, cumin seed' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "carbsG": {
+      "value": 44.2,
+      "source": "USDA FDC: USDA FDC 170923 'Spices, cumin seed' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sugarsG": {
+      "value": 2.25,
+      "source": "USDA FDC: USDA FDC 170923 'Spices, cumin seed' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "fatG": {
+      "value": 22.3,
+      "source": "USDA FDC: USDA FDC 170923 'Spices, cumin seed' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 10.5,
+      "source": "USDA FDC: USDA FDC 170923 'Spices, cumin seed' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sodiumMg": {
+      "value": 168,
+      "source": "USDA FDC: USDA FDC 170923 'Spices, cumin seed' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "ironMg": {
+      "value": 66.36,
+      "source": "USDA FDC: USDA FDC 170923 'Spices, cumin seed' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "calciumMg": {
+      "value": 931,
+      "source": "USDA FDC: USDA FDC 170923 'Spices, cumin seed' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "potassiumMg": {
+      "value": 1788,
+      "source": "USDA FDC: USDA FDC 170923 'Spices, cumin seed' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "magnesiumMg": {
+      "value": 366,
+      "source": "USDA FDC: USDA FDC 170923 'Spices, cumin seed' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "zincMg": {
+      "value": 4.8,
+      "source": "USDA FDC: USDA FDC 170923 'Spices, cumin seed' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 170923 'Spices, cumin seed' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 170923 'Spices, cumin seed' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    }
+  },
   "macrosPer100Estimate": {
     "kcal": 375,
     "proteinG": 18,
-    "carbsG": 44,
-    "fatG": 22,
+    "carbsG": 44.1,
+    "fatG": 22.2,
     "fibreG": 10.5
   },
-  "storage": "Airtight jar, cool and dark, away from the stove. Roasted homemade powder: small batches, airtight, use within 1 month.",
-  "looksLike": "Fine light-brown to khaki powder with a warm, earthy smell. Roasted cumin powder (bhuna jeera) is darker brown with a smoky smell.",
-  "howToPick": null,
-  "shelfLife": "About 12 months unopened; best within 3 months of opening.",
+  "storage": "Airtight jar in a cool, dark cupboard; keep the spoon dry.",
+  "looksLike": "A fine, earthy-brown to khaki ground spice with a warm, slightly bitter, nutty smell, sold in 100 g and 200 g cartons and pouches.",
+  "howToPick": "Look for a uniform khaki-brown powder with a strong cumin smell; a faded colour, clumps or a flat smell suggest age. For best taste dry-roast whole seeds and grind them.",
+  "shelfLife": "About 6 to 12 months once opened, if kept airtight (general guidance; not taken from a source in this run). (general guidance; not taken from a source in this run)",
   "substitutes": [
     "Cumin seeds, dry-roasted and crushed",
     "Plain cumin powder, lightly dry-roasted in a pan",
-    "Garam masala or chaat masala"
+    "Garam masala or chaat masala",
+    "Cumin seeds, ground fresh",
+    "Garam masala or coriander powder",
+    "Caraway seeds"
   ],
   "usedIn": [
     {
-      "dishNumber": 11,
+      "dishNumber": 91,
       "quantity": 1,
       "unit": "g",
-      "raw": "1 g (½ tsp, roasted)"
+      "raw": "1 g per serving (½ tsp)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-06",
       "file": "FitPlate_Ingredients_2026-10-06.md"
+    },
+    {
+      "date": "2026-10-29",
+      "file": "FitPlate_Ingredients_2026-10-29.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (wma)",
     "macrosPer100Estimate": "stable (single)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 469.0–828.9 was wider than 30% of avg 631.7; narrowed to ±15%."
+  ]
 }
