@@ -1,6 +1,6 @@
 import { describe, expect, it } from '@jest/globals';
 
-import { addLeftover, fridgeDays, leftoverStatus, removeLeftover } from '../services/leftovers';
+import { addLeftover, addMealLeftover, fridgeDays, leftoverStatus, reminderAt, removeLeftover } from '../services/leftovers';
 
 const D = 86_400_000;
 const at = new Date(2026, 9, 31, 20, 0).getTime();
@@ -32,5 +32,21 @@ describe('leftovers', () => {
     ];
     const s = leftoverStatus(list, at + 3600_000);
     expect(s.map((x) => [x.dishId, x.daysLeft, x.state])).toEqual([['c', -1, 'past'], ['b', 0, 'today'], ['a', 3, 'ok']]);
+  });
+});
+
+describe('leftovers from any meal (1 Nov 2026)', () => {
+  it('keeps a non-dish meal for 1 day under its own key and replaces a repeat', () => {
+    const a = addMealLeftover([], { id: 'm1', name: 'Restaurant paneer' }, at, 'ordered');
+    expect(a[0]).toMatchObject({ dishId: 'meal:m1', useByDays: 1, source: 'ordered', remix: null });
+    expect(addMealLeftover(a, { id: 'm1', name: 'Restaurant paneer' }, at + D)).toHaveLength(1);
+  });
+  it('remembers where the dish came from', () => {
+    expect(addLeftover([], { id: 'poha', name: 'Poha', storage: 'Fridge 2 days', leftoverRemix: null }, at, 'cooked')[0].source).toBe('cooked');
+  });
+  it('reminds at 9:00 on the use-by day, and not at all once that time has passed', () => {
+    const l = { storedAt: new Date(2026, 10, 1, 20, 0).getTime(), useByDays: 2 };
+    expect(reminderAt(l, new Date(2026, 10, 1, 21, 0).getTime())).toEqual(new Date(2026, 10, 3, 9, 0, 0));
+    expect(reminderAt(l, new Date(2026, 10, 3, 10, 0).getTime())).toBeNull();
   });
 });

@@ -30,9 +30,22 @@ const startOfDay = (t: number) => {
   return new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime();
 };
 
-export function addLeftover(list: Leftover[], dish: Pick<Dish, 'id' | 'name' | 'storage' | 'leftoverRemix'>, now = Date.now()): Leftover[] {
-  const next: Leftover = { dishId: dish.id, name: dish.name, storedAt: now, useByDays: fridgeDays(dish.storage), remix: dish.leftoverRemix ?? null };
+export function addLeftover(list: Leftover[], dish: Pick<Dish, 'id' | 'name' | 'storage' | 'leftoverRemix'>, now = Date.now(), source?: Leftover['source']): Leftover[] {
+  const next: Leftover = { dishId: dish.id, name: dish.name, storedAt: now, useByDays: fridgeDays(dish.storage), remix: dish.leftoverRemix ?? null, ...(source ? { source } : {}) };
   return [next, ...list.filter((l) => l.dishId !== dish.id)];
+}
+
+/** A meal that isn't a researched dish (a custom or restaurant dish): no storage note, so it is kept for 1 day. */
+export function addMealLeftover(list: Leftover[], meal: { id: string; name: string }, now = Date.now(), source?: Leftover['source']): Leftover[] {
+  const key = `meal:${meal.id}`;
+  return [{ dishId: key, name: meal.name, storedAt: now, useByDays: 1, remix: null, ...(source ? { source } : {}) }, ...list.filter((l) => l.dishId !== key)];
+}
+
+/** When to remind: 9:00 on the use-by day, or null when that time has already gone. */
+export function reminderAt(l: Pick<Leftover, 'storedAt' | 'useByDays'>, now = Date.now()): Date | null {
+  const d = new Date(startOfDay(l.storedAt) + l.useByDays * DAY);
+  const at = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 9, 0, 0);
+  return at.getTime() > now ? at : null;
 }
 
 export const removeLeftover = (list: Leftover[], dishId: string): Leftover[] => list.filter((l) => l.dishId !== dishId);

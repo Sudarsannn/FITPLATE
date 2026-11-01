@@ -7,6 +7,7 @@ import Animated, { Extrapolation, FadeInDown, FadeOutDown, interpolate, runOnJS,
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { IconBadge } from '../../components/Icon';
+import { LeftoverButton } from '../../components/LeftoverButton';
 import { MacroDonut } from '../../components/viz';
 import { DishArtMark, dishArt, PhotoCredit, SelectChip, TagChip, dishPhoto } from '../../components/dishes/parts';
 import { Bar, GradientButton, PressableScale } from '../../components/ui';
@@ -232,6 +233,7 @@ function DishBody({ dish, back }: { dish: Dish; back: () => void }) {
               }}
             />
           </View>
+          {logged ? <LeftoverButton dish={dish} source="logged" /> : null}
           {!logged && !dish.ai ? (
             <PressableScale
               onPress={() => {

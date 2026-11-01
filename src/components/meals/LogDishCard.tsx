@@ -6,6 +6,7 @@ import type { Dish } from '../../models/research';
 import { headlineOrderPrice } from '../../services/dishLibrary';
 import { dishCost } from '../../services/vendors';
 import { colors, radius, type } from '../../theme';
+import { useLeftovers } from '../LeftoverButton';
 import { Chip, GradientButton } from '../ui';
 import { Stepper } from './EditLog';
 
@@ -20,6 +21,8 @@ export function LogDishCard({ dish, onDone, onCancel }: { dish: Dish; onDone: ()
   const [servings, setServings] = useState(1);
   const [how, setHow] = useState<How>('logged');
   const [paid, setPaid] = useState('');
+  const [leftovers, setLeftovers] = useState(false);
+  const lo = useLeftovers();
   const n = dish.nutritionPerServing;
 
   const submit = () => {
@@ -34,6 +37,7 @@ export function LogDishCard({ dish, onDone, onCancel }: { dish: Dish; onDone: ()
     } else {
       logDish(dish, 'logged', null, servings);
     }
+    if (leftovers) lo.saveDish(dish, how);
     onDone();
   };
 
@@ -50,6 +54,7 @@ export function LogDishCard({ dish, onDone, onCancel }: { dish: Dish; onDone: ()
         <Chip label="Ordered" active={how === 'ordered'} onPress={() => setHow('ordered')} />
       </View>
       {how === 'ordered' ? <TextInput value={paid} onChangeText={setPaid} placeholder="What you paid in total, ₹ (optional)" keyboardType="numeric" placeholderTextColor={colors.faint} style={styles.field} accessibilityLabel="Amount paid" /> : null}
+      <Chip label="I will have leftovers" active={leftovers} onPress={() => setLeftovers(!leftovers)} icon="snow-outline" />
       <GradientButton title="Log it" onPress={submit} />
       <Text onPress={onCancel} style={styles.cancel} accessibilityRole="button">
         Choose a different dish

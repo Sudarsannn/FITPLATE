@@ -5,6 +5,7 @@ import { Pressable, ScrollView, StyleSheet, Switch, Text, TextInput, View } from
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { BillRows, k, Loading, Notice, Radio, SampleBanner, ScreenTop, Section } from '../components/vendors/kit';
+import { LeftoverButton } from '../components/LeftoverButton';
 import { Chip, GradientButton } from '../components/ui';
 import { useStore } from '../lib/store';
 import { useResearchDishes } from '../lib/useResearch';
@@ -475,6 +476,7 @@ function Compare({ item, dishes, onBack, mode, ordersLive }: { item: MenuDish; d
         {step === 'placed' ? (
           <Section title="Order placed">
             <Text style={k.body}>Enjoy your meal. Next time, {dish.name} at home would cost about ₹{cost?.inr ?? '—'}.</Text>
+            {mode === 'live' ? <LeftoverButton dish={dish} source="ordered" /> : null}
             <GradientButton title="Back to Today" onPress={() => router.replace('/(tabs)')} style={{ marginTop: 10 }} />
           </Section>
         ) : null}

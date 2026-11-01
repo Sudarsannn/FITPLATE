@@ -33,7 +33,16 @@ export type UserSettings = {
 };
 
 /** A cooked dish kept as leftovers. `useByDays` comes from the dish's researched storage note. */
-export type Leftover = { dishId: string; name: string; storedAt: number; useByDays: number; remix: string | null };
+export type Leftover = {
+  /** The research dish id, or `meal:<id>` for a logged meal that isn't a FitPlate dish. */
+  dishId: string;
+  name: string;
+  storedAt: number;
+  useByDays: number;
+  remix: string | null;
+  /** Where the food came from; ordered food with no researched dish is kept for 1 day. */
+  source?: 'cooked' | 'logged' | 'ordered';
+};
 
 /** One inventory line. Amounts are in g or ml where the unit allows, otherwise in the unit typed. */
 export type PantryItem = {

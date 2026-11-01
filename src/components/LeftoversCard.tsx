@@ -3,6 +3,8 @@ import { useState } from 'react';
 import { Text, View } from 'react-native';
 
 import { featureFlags } from '../config/featureFlags';
+import { getDish } from '../data/research';
+import { cancelLeftoverReminder } from '../lib/reminders';
 import { useStore } from '../lib/store';
 import { leftoverStatus, removeLeftover } from '../services/leftovers';
 import { colors, type } from '../theme';
@@ -31,11 +33,14 @@ export function LeftoversCard() {
       {rows.map((l) => (
         <View key={l.dishId} style={{ marginTop: 12 }}>
           <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
-            <PressableScale onPress={() => router.push({ pathname: '/recipe/[id]', params: { id: l.dishId } })} scaleTo={0.98} style={{ flex: 1 }} accessibilityLabel={`Open ${l.name}`}>
+            <PressableScale onPress={() => (getDish(l.dishId) ? router.push({ pathname: '/recipe/[id]', params: { id: l.dishId } }) : undefined)} scaleTo={0.98} style={{ flex: 1 }} accessibilityLabel={`Open ${l.name}`}>
               <Text style={{ color: colors.text, fontWeight: '800' }} numberOfLines={1}>{l.name}</Text>
               <Text style={[type.small, { color: l.state === 'ok' ? colors.muted : colors.warn }]}>{when(l.daysLeft)}</Text>
             </PressableScale>
-            <PressableScale onPress={() => updateSettings({ leftovers: removeLeftover(list, l.dishId) })} scaleTo={0.94} accessibilityLabel={`${l.name} is finished`} style={{ paddingHorizontal: 12, paddingVertical: 8 }}>
+            <PressableScale onPress={() => {
+                updateSettings({ leftovers: removeLeftover(list, l.dishId) });
+                void cancelLeftoverReminder(l.dishId);
+              }} scaleTo={0.94} accessibilityLabel={`${l.name} is finished`} style={{ paddingHorizontal: 12, paddingVertical: 8 }}>
               <Text style={{ color: colors.accent, fontWeight: '800' }}>Finished</Text>
             </PressableScale>
           </View>
