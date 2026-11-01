@@ -1,6 +1,6 @@
 {
   "schema": "fitplate.links.v1",
-  "generatedFor": "Day14",
+  "generatedFor": "Day15",
   "goodSourceDishes": {
     "biotin": [
       {
@@ -571,7 +571,7 @@
       {
         "dishNumber": 96,
         "dishName": "Gajar Halwa",
-        "dishId": null
+        "dishId": "096-gajar-halwa"
       },
       {
         "dishNumber": 13,
@@ -1196,6 +1196,9 @@
     "016-besan-chilla": [
       "thiamine"
     ],
+    "096-gajar-halwa": [
+      "vitamin-a"
+    ],
     "013-pav-bhaji": [
       "vitamin-a",
       "vitamin-b6",
@@ -1495,6 +1498,13 @@
         "per100": 24.9,
         "unit": "mg",
         "source": "nutrient research (vitamin-e food sources)"
+      }
+    },
+    "asafoetida": {
+      "calcium": {
+        "per100": 690,
+        "unit": "mg",
+        "source": "ingredient research (Other: published asafoetida analysis (PMC3459456) and nutrition-database listing: PMC3459456 asafoetida analysis; energy from a nutrition-database listing; no IFCT or USDA FDC entry found; iron conflicting (39 vs about 23.4 mg) so left null)"
       }
     },
     "baby-potatoes": {
@@ -2134,6 +2144,33 @@
         "per100": 0.62,
         "unit": "mg",
         "source": "nutrient research (pantothenic-acid food sources)"
+      }
+    },
+    "chana-dal": {
+      "iron": {
+        "per100": 4.3,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 173756 'Chickpeas (garbanzo beans, bengal gram), mature seeds, raw'; values seen only on secondary sites that mirror it; not the dehusked split desi form; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "sodium": {
+        "per100": 24,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 173756 'Chickpeas (garbanzo beans, bengal gram), mature seeds, raw'; values seen only on secondary sites that mirror it; not the dehusked split desi form; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 173756 'Chickpeas (garbanzo beans, bengal gram), mature seeds, raw'; values seen only on secondary sites that mirror it; not the dehusked split desi form; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "copper": {
+        "per100": 0.66,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 173756 'Chickpeas (garbanzo beans, bengal gram), mature seeds, raw'; values seen only on secondary sites that mirror it; not the dehusked split desi form; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 173756 'Chickpeas (garbanzo beans, bengal gram), mature seeds, raw'; values seen only on secondary sites that mirror it; not the dehusked split desi form; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
     "chia-seeds": {
@@ -2964,6 +3001,13 @@
         "source": "ingredient research (USDA FDC: USDA FDC 171328 'Spices, oregano, dried'; seen on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
+    "dried-red-chilli-whole": {
+      "vitamin-c": {
+        "per100": 64,
+        "unit": "mg",
+        "source": "ingredient research (Other: J Food Sci Technol dried chilli paper (s13197-022-05656-1) and a manufacturer label: s13197-022-05656-1 dry chilli composition via search summary; fat from a manufacturer label; no IFCT or USDA FDC entry opened)"
+      }
+    },
     "drumstick": {
       "iron": {
         "per100": 0.4,
@@ -3231,6 +3275,100 @@
         "per100": 0,
         "unit": "µg",
         "source": "ingredient research (USDA FDC: USDA FDC 171323, Spices, fennel seed (SR Legacy), values seen via getfoodfacts.com, triagemethod.com, foodstruct.com and all-creatures.org; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
+    "fenugreek-seeds": {
+      "iron": {
+        "per100": 33.5,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171324 'Spices, fenugreek seed'; values seen only on secondary sites that mirror it (getfoodfacts, foodstruct, vegnt, nutrientnorms); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "calcium": {
+        "per100": 176,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171324 'Spices, fenugreek seed'; values seen only on secondary sites that mirror it (getfoodfacts, foodstruct, vegnt, nutrientnorms); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "potassium": {
+        "per100": 770,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171324 'Spices, fenugreek seed'; values seen only on secondary sites that mirror it (getfoodfacts, foodstruct, vegnt, nutrientnorms); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "magnesium": {
+        "per100": 191,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171324 'Spices, fenugreek seed'; values seen only on secondary sites that mirror it (getfoodfacts, foodstruct, vegnt, nutrientnorms); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "zinc": {
+        "per100": 2.5,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171324 'Spices, fenugreek seed'; values seen only on secondary sites that mirror it (getfoodfacts, foodstruct, vegnt, nutrientnorms); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "sodium": {
+        "per100": 67,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171324 'Spices, fenugreek seed'; values seen only on secondary sites that mirror it (getfoodfacts, foodstruct, vegnt, nutrientnorms); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-a": {
+        "per100": 3,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171324 'Spices, fenugreek seed'; values seen only on secondary sites that mirror it (getfoodfacts, foodstruct, vegnt, nutrientnorms); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171324 'Spices, fenugreek seed'; values seen only on secondary sites that mirror it (getfoodfacts, foodstruct, vegnt, nutrientnorms); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "selenium": {
+        "per100": 6.3,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171324 'Spices, fenugreek seed'; values seen only on secondary sites that mirror it (getfoodfacts, foodstruct, vegnt, nutrientnorms); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "copper": {
+        "per100": 1.1,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171324 'Spices, fenugreek seed'; values seen only on secondary sites that mirror it (getfoodfacts, foodstruct, vegnt, nutrientnorms); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "manganese": {
+        "per100": 1.23,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171324 'Spices, fenugreek seed'; values seen only on secondary sites that mirror it (getfoodfacts, foodstruct, vegnt, nutrientnorms); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b6": {
+        "per100": 0.6,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171324 'Spices, fenugreek seed'; values seen only on secondary sites that mirror it (getfoodfacts, foodstruct, vegnt, nutrientnorms); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171324 'Spices, fenugreek seed'; values seen only on secondary sites that mirror it (getfoodfacts, foodstruct, vegnt, nutrientnorms); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "riboflavin": {
+        "per100": 0.22,
+        "unit": "mg",
+        "source": "nutrient research (riboflavin food sources)"
+      },
+      "vitamin-k": {
+        "per100": 428,
+        "unit": "µg",
+        "source": "nutrient research (vitamin-k food sources)"
+      }
+    },
+    "flattened-rice-thick": {
+      "iron": {
+        "per100": 2.7,
+        "unit": "mg",
+        "source": "ingredient research (IFCT 2017: IFCT 2017 dry flattened rice values as quoted by Organic Mandya (secondary site); iron 2.7 mg from an IFCT-attributed table in search results, not verified; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (IFCT 2017: IFCT 2017 dry flattened rice values as quoted by Organic Mandya (secondary site); iron 2.7 mg from an IFCT-attributed table in search results, not verified; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (IFCT 2017: IFCT 2017 dry flattened rice values as quoted by Organic Mandya (secondary site); iron 2.7 mg from an IFCT-attributed table in search results, not verified; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
     "french-beans": {
@@ -4397,6 +4535,23 @@
         "source": "ingredient research (Other: MDH pack label via retailer: MDH Pav Bhaji Masala label values (energy 1167 kJ / 279 kcal, protein 11.6 g, carbohydrate 31.2 g, fat 12 g, salt 8 g) as shown by a retailer listing; sodium not stated (salt only); zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
+    "peanuts-raw": {
+      "sodium": {
+        "per100": 18,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 172430 'Peanuts, all types, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 172430 'Peanuts, all types, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 172430 'Peanuts, all types, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
     "pistachios-unsalted-shelled-kernels": {
       "iron": {
         "per100": 3.5,
@@ -5289,6 +5444,13 @@
         "source": "ingredient research (USDA FDC: FDC ID 170150 Seeds, sesame seeds, whole, dried (SR Legacy), via secondary sites (recipal.com, triagemethod.com, getfoodfacts.com))"
       }
     },
+    "shahi-jeera": {
+      "calcium": {
+        "per100": 689,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170918 'Spices, caraway seed' via secondary sites; caraway (Carum carvi) used as the shahi jeera proxy; calcium from a single site)"
+      }
+    },
     "shallots": {
       "iron": {
         "per100": 1.2,
@@ -5656,6 +5818,53 @@
         "source": "ingredient research (USDA FDC: USDA FDC 172231 'Spices, turmeric, ground'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
+    "urad-dal-split-skinned": {
+      "iron": {
+        "per100": 7.57,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA 'Mungo beans, mature seeds, raw' (black gram, whole seed) as reproduced by Wikipedia and Foodstruct; FDC ID not seen; fat shown only rounded to 2 g; not the dehulled split form; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "calcium": {
+        "per100": 138,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA 'Mungo beans, mature seeds, raw' (black gram, whole seed) as reproduced by Wikipedia and Foodstruct; FDC ID not seen; fat shown only rounded to 2 g; not the dehulled split form; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "potassium": {
+        "per100": 983,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA 'Mungo beans, mature seeds, raw' (black gram, whole seed) as reproduced by Wikipedia and Foodstruct; FDC ID not seen; fat shown only rounded to 2 g; not the dehulled split form; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "folate": {
+        "per100": 628,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA 'Mungo beans, mature seeds, raw' (black gram, whole seed) as reproduced by Wikipedia and Foodstruct; FDC ID not seen; fat shown only rounded to 2 g; not the dehulled split form; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA 'Mungo beans, mature seeds, raw' (black gram, whole seed) as reproduced by Wikipedia and Foodstruct; FDC ID not seen; fat shown only rounded to 2 g; not the dehulled split form; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "thiamine": {
+        "per100": 0.273,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA 'Mungo beans, mature seeds, raw' (black gram, whole seed) as reproduced by Wikipedia and Foodstruct; FDC ID not seen; fat shown only rounded to 2 g; not the dehulled split form; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "riboflavin": {
+        "per100": 0.254,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA 'Mungo beans, mature seeds, raw' (black gram, whole seed) as reproduced by Wikipedia and Foodstruct; FDC ID not seen; fat shown only rounded to 2 g; not the dehulled split form; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "niacin": {
+        "per100": 1.447,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA 'Mungo beans, mature seeds, raw' (black gram, whole seed) as reproduced by Wikipedia and Foodstruct; FDC ID not seen; fat shown only rounded to 2 g; not the dehulled split form; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA 'Mungo beans, mature seeds, raw' (black gram, whole seed) as reproduced by Wikipedia and Foodstruct; FDC ID not seen; fat shown only rounded to 2 g; not the dehulled split form; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
     "white-sandwich-bread": {
       "iron": {
         "per100": 3.74,
@@ -5911,33 +6120,6 @@
         "per100": 364,
         "unit": "mg",
         "source": "nutrient research (calcium food sources)"
-      }
-    },
-    "fenugreek-seeds": {
-      "calcium": {
-        "per100": 274,
-        "unit": "mg",
-        "source": "nutrient research (calcium food sources)"
-      },
-      "riboflavin": {
-        "per100": 0.22,
-        "unit": "mg",
-        "source": "nutrient research (riboflavin food sources)"
-      },
-      "vitamin-a": {
-        "per100": 1541,
-        "unit": "µg",
-        "source": "nutrient research (vitamin-a food sources)"
-      },
-      "vitamin-b6": {
-        "per100": 0.38,
-        "unit": "mg",
-        "source": "nutrient research (vitamin-b6 food sources)"
-      },
-      "vitamin-k": {
-        "per100": 428,
-        "unit": "µg",
-        "source": "nutrient research (vitamin-k food sources)"
       }
     },
     "mutton-goat-bone-in-curry-cut": {

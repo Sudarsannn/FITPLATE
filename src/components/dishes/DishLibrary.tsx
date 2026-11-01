@@ -161,7 +161,7 @@ export function DishLibrary({ dishes = researchDishes }: { dishes?: readonly Dis
       ) : null}
       <Text style={styles.note}>
         Allergens are worked out from each recipe&apos;s ingredients. Check labels if you have an allergy
-        {excludesAllergens ? ', because packaged spice mixes can contain allergens their names don’t show.' : '.'}
+        {excludesAllergens ? ', because packaged spice mixes can contain allergens their names don’t show. AI dishes are hidden until FitPlate checks their allergens.' : '.'}
       </Text>
     </View>
   );

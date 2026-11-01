@@ -1,9 +1,30 @@
-import { describe, expect, it } from '@jest/globals';
+import { beforeAll, describe, expect, it } from '@jest/globals';
 
 import { callGemini, handleAi, slugify } from '../../../server/ai/handler';
+import { __setKeysForTest } from '../../../server/ai/guard';
+
+// A signed-in caller: tests mint a Firebase-style ID token with a throwaway RSA key.
+let token = '';
+let pair: CryptoKeyPair;
+const b64 = (o: unknown) => Buffer.from(JSON.stringify(o)).toString('base64url');
+async function mint(sub: string, over: Record<string, unknown> = {}, keyPair = pair) {
+  const head = b64({ alg: 'RS256', kid: 'k1', typ: 'JWT' });
+  const now = Math.floor(Date.now() / 1000);
+  const body = b64({ aud: 'fp', iss: 'https://securetoken.google.com/fp', sub, iat: now, exp: now + 3600, ...over });
+  const sig = Buffer.from(await crypto.subtle.sign('RSASSA-PKCS1-v1_5', keyPair.privateKey, new TextEncoder().encode(`${head}.${body}`))).toString('base64url');
+  return `${head}.${body}.${sig}`;
+}
+const newPair = () => crypto.subtle.generateKey({ name: 'RSASSA-PKCS1-v1_5', modulusLength: 2048, publicExponent: new Uint8Array([1, 0, 1]), hash: 'SHA-256' }, true, ['sign', 'verify']);
+beforeAll(async () => {
+  pair = await newPair();
+  __setKeysForTest([{ ...(await crypto.subtle.exportKey('jwk', pair.publicKey)), kid: 'k1', alg: 'RS256' }]);
+  token = await mint('user-1');
+});
+const postAs = (t: string, path: string, body: unknown) => new Request(`https://x.test${path}`, { method: 'POST', body: JSON.stringify(body), headers: { authorization: `Bearer ${t}` } });
+const withAuth = (env: Record<string, unknown>) => ({ FIREBASE_PROJECT_ID: 'fp', ...env });
 
 const gem = (text: string, extra: Record<string, unknown> = {}) => ({ ok: true, status: 200, json: async () => ({ candidates: [{ content: { parts: [{ text }] }, ...extra }] }) });
-const post = (path: string, body: unknown) => new Request(`https://x.test${path}`, { method: 'POST', body: JSON.stringify(body) });
+const post = (path: string, body: unknown, auth = true) => new Request(`https://x.test${path}`, { method: 'POST', body: JSON.stringify(body), headers: auth ? { authorization: `Bearer ${token}` } : {} });
 
 describe('AI server handler', () => {
   it('says whether it is configured, never returning secrets', async () => {
@@ -14,7 +35,7 @@ describe('AI server handler', () => {
   });
 
   it('answers 503 not-configured without a key', async () => {
-    const res = await handleAi(post('/api/ai/research', { description: 'dal', canonicalName: 'Dal' }), {});
+    const res = await handleAi(post('/api/ai/research', { description: 'dal', canonicalName: 'Dal' }), withAuth({}));
     expect(res.status).toBe(503);
     expect((await res.json()).error).toBe('not-configured');
   });
@@ -25,7 +46,7 @@ describe('AI server handler', () => {
       sent = JSON.parse(init.body);
       return gem('notes', { groundingMetadata: { groundingChunks: [{ web: { uri: 'https://a.test', title: 'A' } }, { web: { uri: 'https://a.test', title: 'A' } }], webSearchQueries: ['q'] } });
     };
-    const res = await handleAi(post('/api/ai/research', { description: 'dal', canonicalName: 'Dal', mode: 'new' }), { GEMINI_API_KEY: 'k' }, fetchImpl as any);
+    const res = await handleAi(post('/api/ai/research', { description: 'dal', canonicalName: 'Dal', mode: 'new' }), withAuth({ GEMINI_API_KEY: 'k' }), fetchImpl as any);
     const body = await res.json();
     expect(sent.tools).toEqual([{ google_search: {} }]);
     expect(body.sources).toEqual([{ title: 'A', url: 'https://a.test' }]);
@@ -40,7 +61,7 @@ describe('AI server handler', () => {
       prompts.push(JSON.parse(init.body).contents[0].parts[0].text);
       return gem(JSON.stringify(prompts.length === 1 ? thin : full));
     };
-    const res = await handleAi(post('/api/ai/compose', { description: 'dish desc', canonicalName: 'Dish', notes: 'n'.repeat(60) }), { GEMINI_API_KEY: 'k', GEMINI_MODEL: 'm' }, fetchImpl as any);
+    const res = await handleAi(post('/api/ai/compose', { description: 'dish desc', canonicalName: 'Dish', notes: 'n'.repeat(60) }), withAuth({ GEMINI_API_KEY: 'k', GEMINI_MODEL: 'm' }), fetchImpl as any);
     const body = await res.json();
     expect(body.dish.steps).toHaveLength(8);
     expect(prompts[1]).toMatch(/TOO THIN/);
@@ -48,7 +69,7 @@ describe('AI server handler', () => {
 
   it('plan drops a base dish that is not in the catalogue', async () => {
     const fetchImpl = async () => gem(JSON.stringify({ mode: 'variation', baseDishId: 'made-up', canonicalName: 'X', summary: '', changes: [], searchQueries: [] }));
-    const res = await handleAi(post('/api/ai/plan', { description: 'x dish', catalog: [{ id: '001-poha', name: 'Poha' }] }), { GEMINI_API_KEY: 'k' }, fetchImpl as any);
+    const res = await handleAi(post('/api/ai/plan', { description: 'x dish', catalog: [{ id: '001-poha', name: 'Poha' }] }), withAuth({ GEMINI_API_KEY: 'k' }), fetchImpl as any);
     expect((await res.json()).plan).toMatchObject({ mode: 'new', baseDishId: null });
   });
 
@@ -68,7 +89,7 @@ describe('AI server handler', () => {
 
   it('reports the first real failure, with Google\'s reason', async () => {
     const fetchImpl = async (u: string) => (u.includes('/models?') ? ({ ok: true, status: 200, json: async () => LIST } as any) : ({ ok: false, status: 404, json: async () => ({ error: { message: 'model retired' } }) } as any));
-    const res = await handleAi(post('/api/ai/research', { description: 'dal', canonicalName: 'Dal' }), { GEMINI_API_KEY: 'k' }, fetchImpl as any);
+    const res = await handleAi(post('/api/ai/research', { description: 'dal', canonicalName: 'Dal' }), withAuth({ GEMINI_API_KEY: 'k' }), fetchImpl as any);
     expect(res.status).toBe(502);
     expect((await res.json()).message).toMatch(/gemini-3-flash.*model retired/);
   });
@@ -82,13 +103,13 @@ describe('AI server handler', () => {
 
   it('reports quota when every model is exhausted', async () => {
     const fetchImpl = async () => ({ ok: false, status: 429, json: async () => ({}) }) as any;
-    const res = await handleAi(post('/api/ai/research', { description: 'dal', canonicalName: 'Dal' }), { GEMINI_API_KEY: 'k' }, fetchImpl);
+    const res = await handleAi(post('/api/ai/research', { description: 'dal', canonicalName: 'Dal' }), withAuth({ GEMINI_API_KEY: 'k' }), fetchImpl);
     expect(res.status).toBe(429);
   });
 
   it('queue: skips quietly with no token, and writes one file per dish with a request count', async () => {
     const dish = { name: 'Paneer Lababdar', needsMoreResearch: ['x'] };
-    const none = await handleAi(post('/api/ai/submit', { dish }), { GEMINI_API_KEY: 'k' });
+    const none = await handleAi(post('/api/ai/submit', { dish }), withAuth({ GEMINI_API_KEY: 'k' }));
     expect(await none.json()).toMatchObject({ saved: false });
 
     const files = new Map<string, { sha: string; content: string }>();
@@ -114,11 +135,14 @@ describe('AI server handler', () => {
       return json({}, 500);
     };
     const env = { GEMINI_API_KEY: 'k', GITHUB_TOKEN: 't' };
-    const a = await (await handleAi(post('/api/ai/submit', { dish, description: 'rich gravy', mode: 'new' }), env, fetchImpl as any)).json();
+    const a = await (await handleAi(post('/api/ai/submit', { dish, description: 'rich gravy', mode: 'new' }), withAuth(env), fetchImpl as any)).json();
     expect(a).toMatchObject({ saved: true, slug: 'paneer-lababdar', requests: 1 });
-    const b = await (await handleAi(post('/api/ai/submit', { dish, description: 'dhaba style', mode: 'new' }), env, fetchImpl as any)).json();
-    expect(b.requests).toBe(2);
+    const b = await (await handleAi(post('/api/ai/submit', { dish, description: 'dhaba style', mode: 'new' }), withAuth(env), fetchImpl as any)).json();
+    expect(b.requests).toBe(1); // the same user asking again does not raise the count
     expect(put[1].sha).toBe('sha1');
+    const other = await mint('user-2');
+    const c = await (await handleAi(postAs(other, '/api/ai/submit', { dish, description: 'another person', mode: 'new' }), withAuth(env), fetchImpl as any)).json();
+    expect(c.requests).toBe(2);
     expect(put[1].branch).toBe('ai-dish-queue');
   });
 
@@ -141,7 +165,7 @@ describe('AI server handler', () => {
       searches.push(search);
       return search ? ({ ok: false, status: 429, json: async () => ({ error: { message: 'quota' } }) } as any) : gem('notes from knowledge');
     };
-    const res = await handleAi(post('/api/ai/research', { description: 'dal', canonicalName: 'Dal' }), { GEMINI_API_KEY: 'k' }, fetchImpl as any);
+    const res = await handleAi(post('/api/ai/research', { description: 'dal', canonicalName: 'Dal' }), withAuth({ GEMINI_API_KEY: 'k' }), fetchImpl as any);
     const body = await res.json();
     expect(body).toMatchObject({ ok: true, grounded: false, sources: [], notes: 'notes from knowledge' });
     expect(searches.includes(true) && searches.includes(false)).toBe(true);
@@ -159,7 +183,7 @@ describe('AI server handler', () => {
       expect(JSON.parse(init.body).tools).toBeUndefined();
       return gem('notes from pages');
     };
-    const res = await handleAi(post('/api/ai/research', { description: 'dal', canonicalName: 'Dal', searchQueries: ['dal recipe', 'dal nutrition'] }), { GEMINI_API_KEY: 'k', TAVILY_API_KEY: 't' }, fetchImpl as any);
+    const res = await handleAi(post('/api/ai/research', { description: 'dal', canonicalName: 'Dal', searchQueries: ['dal recipe', 'dal nutrition'] }), withAuth({ GEMINI_API_KEY: 'k', TAVILY_API_KEY: 't' }), fetchImpl as any);
     const body = await res.json();
     expect(body).toMatchObject({ grounded: true, via: 'web-search' });
     expect(body.sources).toEqual([{ title: 'Site A', url: 'https://a.test/x' }, { title: 'Site B', url: 'https://b.test/y' }]);
@@ -184,5 +208,47 @@ describe('AI server handler', () => {
 
   it('slugifies names', () => {
     expect(slugify('Paneer Lababdar (rich)!')).toBe('paneer-lababdar-rich');
+  });
+
+  describe('lock-down (review 2026-10-28 FIX 2)', () => {
+    const body = { description: 'dal', canonicalName: 'Dal' };
+    const env = withAuth({ GEMINI_API_KEY: 'k' });
+    const never = (async () => {
+      throw new Error('should not reach Google');
+    }) as any;
+    it('401 without a token, with a bad token, with a wrong project and with a foreign key', async () => {
+      expect((await handleAi(post('/api/ai/research', body, false), env, never)).status).toBe(401);
+      expect((await handleAi(postAs('abc.def.ghi', '/api/ai/research', body), env, never)).status).toBe(401);
+      expect((await handleAi(postAs(await mint('u', { aud: 'other' }), '/api/ai/research', body), env, never)).status).toBe(401);
+      expect((await handleAi(postAs(await mint('u', { exp: 1 }), '/api/ai/research', body), env, never)).status).toBe(401);
+      const stranger = await newPair();
+      expect((await handleAi(postAs(await mint('u', {}, stranger), '/api/ai/research', body), env, never)).status).toBe(401);
+    });
+    it('answers 503 when the server does not know the Firebase project', async () => {
+      const res = await handleAi(post('/api/ai/research', body), { GEMINI_API_KEY: 'k' }, never);
+      expect(res.status).toBe(503);
+      expect((await res.json()).error).toBe('auth-not-configured');
+    });
+    it('429 after 5 dish creations in a day, per user, and the counter is separate per user', async () => {
+      const ok = async () => ({ ok: true, status: 200, json: async () => ({ candidates: [{ content: { parts: [{ text: '{"name":"D","ingredients":[],"steps":[]}' }] } }] }) });
+      const t = await mint('capped-user');
+      const compose = { description: 'dish desc', canonicalName: 'Dish', notes: 'n'.repeat(60) };
+      const codes: number[] = [];
+      for (let i = 0; i < 6; i++) codes.push((await handleAi(postAs(t, '/api/ai/compose', compose), withAuth({ GEMINI_API_KEY: 'k', GEMINI_MODEL: 'm' }), ok as any)).status);
+      expect(codes.slice(0, 5).every((c) => c !== 429)).toBe(true);
+      expect(codes[5]).toBe(429);
+      const fresh = await handleAi(postAs(await mint('other-user'), '/api/ai/compose', compose), withAuth({ GEMINI_API_KEY: 'k', GEMINI_MODEL: 'm' }), ok as any);
+      expect(fresh.status).not.toBe(429);
+    });
+    it('only echoes the app\'s own origins and refuses others', async () => {
+      const req = (origin: string) => new Request('https://x.test/api/ai/status', { headers: { origin } });
+      const good = await handleAi(req('https://fitplate.sudarsanmohanchander.workers.dev'), { GEMINI_API_KEY: 'k' });
+      expect(good.headers.get('access-control-allow-origin')).toBe('https://fitplate.sudarsanmohanchander.workers.dev');
+      const bad = await handleAi(req('https://evil.test'), { GEMINI_API_KEY: 'k' });
+      expect(bad.status).toBe(403);
+      expect(bad.headers.get('access-control-allow-origin')).toBeNull();
+      const pre = await handleAi(new Request('https://x.test/api/ai/compose', { method: 'OPTIONS', headers: { origin: 'https://evil.test' } }), { GEMINI_API_KEY: 'k' });
+      expect(pre.status).toBe(403);
+    });
   });
 });

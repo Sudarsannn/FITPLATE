@@ -28,6 +28,7 @@ describe('leftovers', () => {
       { dishId: 'b', name: 'B', storedAt: at - D, useByDays: 1, remix: null },
       { dishId: 'c', name: 'C', storedAt: at - 2 * D, useByDays: 1, remix: null },
       { dishId: 'old', name: 'Old', storedAt: at - 10 * D, useByDays: 2, remix: null },
+      { dishId: 'gone', name: 'Gone', storedAt: at - 3 * D, useByDays: 1, remix: null },
     ];
     const s = leftoverStatus(list, at + 3600_000);
     expect(s.map((x) => [x.dishId, x.daysLeft, x.state])).toEqual([['c', -1, 'past'], ['b', 0, 'today'], ['a', 3, 'ok']]);

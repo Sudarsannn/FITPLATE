@@ -15,6 +15,14 @@
         "avg": 110,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-11-01",
+        "min": 103,
+        "max": 120,
+        "avg": 109,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-01.md"
       }
     ],
     "currentEstimate": {
@@ -22,19 +30,20 @@
       "max": 120,
       "avg": 110
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-11-01",
     "stale": false,
     "seasonal": false,
-    "listingCount": 3,
+    "listingCount": 2,
     "platforms": [
       "BigBasket"
     ],
     "outOfStock": false,
     "confirmed": false,
     "checkNotes": [
+      "only 2 listings back the range (need 3)",
       "only 1 platform (BigBasket) backs the range"
     ]
   },
@@ -44,40 +53,230 @@
     "avg": 11
   },
   "seasonal": false,
-  "nutritionPer100g": null,
-  "macrosPer100Estimate": {
-    "kcal": 360,
-    "proteinG": 21,
-    "carbsG": 56,
-    "fatG": 5,
-    "fibreG": 15
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 378,
+      "source": "USDA FDC: USDA FDC 173756 'Chickpeas (garbanzo beans, bengal gram), mature seeds, raw'; values seen only on secondary sites that mirror it; not the dehusked split desi form; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "proteinG": {
+      "value": 20.5,
+      "source": "USDA FDC: USDA FDC 173756 'Chickpeas (garbanzo beans, bengal gram), mature seeds, raw'; values seen only on secondary sites that mirror it; not the dehusked split desi form; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "carbsG": {
+      "value": 63,
+      "source": "USDA FDC: USDA FDC 173756 'Chickpeas (garbanzo beans, bengal gram), mature seeds, raw'; values seen only on secondary sites that mirror it; not the dehusked split desi form; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "sugarsG": {
+      "value": 10.7,
+      "source": "USDA FDC: USDA FDC 173756 'Chickpeas (garbanzo beans, bengal gram), mature seeds, raw'; values seen only on secondary sites that mirror it; not the dehusked split desi form; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "fatG": {
+      "value": 6,
+      "source": "USDA FDC: USDA FDC 173756 'Chickpeas (garbanzo beans, bengal gram), mature seeds, raw'; values seen only on secondary sites that mirror it; not the dehusked split desi form; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 12.2,
+      "source": "USDA FDC: USDA FDC 173756 'Chickpeas (garbanzo beans, bengal gram), mature seeds, raw'; values seen only on secondary sites that mirror it; not the dehusked split desi form; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "sodiumMg": {
+      "value": 24,
+      "source": "USDA FDC: USDA FDC 173756 'Chickpeas (garbanzo beans, bengal gram), mature seeds, raw'; values seen only on secondary sites that mirror it; not the dehusked split desi form; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "ironMg": {
+      "value": 4.3,
+      "source": "USDA FDC: USDA FDC 173756 'Chickpeas (garbanzo beans, bengal gram), mature seeds, raw'; values seen only on secondary sites that mirror it; not the dehusked split desi form; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 173756 'Chickpeas (garbanzo beans, bengal gram), mature seeds, raw'; values seen only on secondary sites that mirror it; not the dehusked split desi form; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": 0.66,
+      "source": "USDA FDC: USDA FDC 173756 'Chickpeas (garbanzo beans, bengal gram), mature seeds, raw'; values seen only on secondary sites that mirror it; not the dehusked split desi form; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 173756 'Chickpeas (garbanzo beans, bengal gram), mature seeds, raw'; values seen only on secondary sites that mirror it; not the dehusked split desi form; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    }
   },
-  "storage": "Store it at room temperature in an airtight jar. Use it within 6 months of opening.",
-  "looksLike": "Small yellow split lentils, a bit larger and rounder than toor dal, with one flat side. Matte yellow.",
-  "howToPick": null,
-  "shelfLife": "9–12 months unopened.",
+  "macrosPer100Estimate": {
+    "kcal": 369,
+    "proteinG": 20.8,
+    "carbsG": 59.5,
+    "fatG": 5.5,
+    "fibreG": 13.6
+  },
+  "storage": "Airtight container at room temperature, away from damp and sunlight; refrigerate in humid weather to keep weevils away.",
+  "looksLike": "Small yellow split lentils, larger and rounder than toor dal, with one flat side.",
+  "howToPick": "Bright, even yellow splits with no insect holes, dust or musty smell. Polished and unpolished (slightly duller) both cook well; unpolished is a pricier niche.",
+  "shelfLife": "About 6 to 12 months if kept dry (general guidance; not from a source in this run).",
   "substitutes": [
     "Urad dal (split white)",
     "Roasted peanuts or cashew bits",
-    "Leave it out"
+    "Leave it out",
+    "Toor dal or moong dal (split)",
+    "Split urad dal (extra)",
+    "Omit"
   ],
   "usedIn": [
     {
       "dishNumber": 4,
       "quantity": 3,
       "unit": "g",
-      "raw": "3 g (potato-masala tempering)"
+      "raw": "3 g per serving (about ½ tsp, in the tempering)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-11-01",
+      "file": "FitPlate_Ingredients_2026-11-01.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",

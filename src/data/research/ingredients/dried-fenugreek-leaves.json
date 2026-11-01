@@ -4,7 +4,7 @@
   "aliases": [
     "kasuri methi"
   ],
-  "category": "Spice (dried herb)",
+  "category": "Herb (dried)",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -15,22 +15,29 @@
         "avg": 925,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-11-01",
+        "min": 560,
+        "max": 1650,
+        "avg": 880,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-01.md"
       }
     ],
     "currentEstimate": {
-      "min": 765,
-      "max": 1000,
-      "avg": 925
+      "min": 770,
+      "max": 1040,
+      "avg": 905
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-11-01",
     "stale": false,
     "seasonal": false,
-    "listingCount": 4,
+    "listingCount": 13,
     "platforms": [
-      "Amazon",
       "BigBasket",
       "Flipkart"
     ],
@@ -39,48 +46,241 @@
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 76.5,
-    "max": 100,
-    "avg": 92.5
+    "min": 77,
+    "max": 104,
+    "avg": 90.5
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 323,
+      "source": "Other: ReciPal dried fenugreek leaves listing: recipal.com ingredient 19751 'Fenugreek leaves, dried' via search summary; conflicting sources (Fudco label, Hermetica) so iron and calcium left null; no IFCT or USDA FDC entry opened",
+      "confidence": "Low"
+    },
+    "proteinG": {
+      "value": 23,
+      "source": "Other: ReciPal dried fenugreek leaves listing: recipal.com ingredient 19751 'Fenugreek leaves, dried' via search summary; conflicting sources (Fudco label, Hermetica) so iron and calcium left null; no IFCT or USDA FDC entry opened",
+      "confidence": "Low"
+    },
+    "carbsG": {
+      "value": 58,
+      "source": "Other: ReciPal dried fenugreek leaves listing: recipal.com ingredient 19751 'Fenugreek leaves, dried' via search summary; conflicting sources (Fudco label, Hermetica) so iron and calcium left null; no IFCT or USDA FDC entry opened",
+      "confidence": "Low"
+    },
+    "sugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 25,
+      "source": "Other: ReciPal dried fenugreek leaves listing: recipal.com ingredient 19751 'Fenugreek leaves, dried' via search summary; conflicting sources (Fudco label, Hermetica) so iron and calcium left null; no IFCT or USDA FDC entry opened",
+      "confidence": "Low"
+    },
+    "sodiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    }
+  },
   "macrosPer100Estimate": {
-    "kcal": 300,
-    "proteinG": 20,
-    "carbsG": 50,
+    "kcal": 311.5,
+    "proteinG": 21.5,
+    "carbsG": 54,
     "fatG": 5,
     "fibreG": 25
   },
-  "storage": "Airtight container, dark dry cupboard: 6–12 months. Keep away from steam near the stove.",
-  "looksLike": "dry, crumbly khaki-green leaf flakes with a strong, sweetish, slightly bitter aroma.",
-  "howToPick": null,
-  "shelfLife": "about 12 months sealed; aroma fades within a few months of opening.",
+  "storage": "Airtight jar away from light and humidity; crush a little at a time; use within about 6 months for the best aroma.",
+  "looksLike": "Crumbly khaki-green flakes with a strong, slightly bitter-sweet aroma that is released when crushed between the palms.",
+  "howToPick": "Look for green-brown leaves with a strong smell, few stalks and no dust. Stalky, pale, odourless packs are old or stem-heavy.",
+  "shelfLife": "About 6 to 12 months sealed (general guidance, not from a source in this run).",
   "substitutes": [
-    "Skip it"
+    "Skip it",
+    "Fresh methi leaves (chopped, cooked down)",
+    "Garam masala pinch plus a tiny fenugreek seed pinch",
+    "Omit"
   ],
   "usedIn": [
     {
       "dishNumber": 3,
       "quantity": 0.5,
       "unit": "g",
-      "raw": "0.5 g (½ tsp, crushed)"
+      "raw": "0.5 g per serving (about ½ tsp, crushed)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-11-01",
+      "file": "FitPlate_Ingredients_2026-11-01.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 664.9–1317.5 was wider than 30% of avg 903.0; narrowed to ±15%."
+  ]
 }

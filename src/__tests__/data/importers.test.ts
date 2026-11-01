@@ -240,6 +240,8 @@ describe('dish importer', () => {
   it('reads a Total line whose serving note has brackets inside it (dishes 73 and 77)', () => {
     const line = '**Total (1 serving = about 190 g cooked keema from 125 g raw mince + 2 pav (70 g)): about 690 kcal | Protein 36 g | Carbs 60 g | Fat 33 g | Fibre 7 g (all est.)**';
     expect(parseNutrition(line).kcal).toBe(690);
+    // 2026-10-29 files: one row per nutrient, no "kcal" or "g" after the number.
+    expect(parseNutrition('| Nutrient | Amount | % |\n|---|---|---|\n| Energy (kcal) | ~290 | 14% |\n| Protein (g) | ~8.5 | 16% (vs 54 g) | Milk about 7 g |\n| Carbohydrate (g) | ~43 | 33% |\n| of which sugars (g) | ~33 | – |\n| Fibre (g) | ~1 | 3% |\n| Fat (g) | ~10 | 15% (vs 67 g) | Milk about 7 g |\n| of which saturated (g) | ~4.6 | 21% |')).toEqual({ kcal: 290, proteinG: 8.5, carbsG: 43, fatG: 10, fibreG: 1 });
   });
 
   it('has no as-ordered block or fasting data unless the file has one', () => {

@@ -16,69 +16,265 @@
         "avg": 165,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-11-01",
+        "min": 220,
+        "max": 270,
+        "avg": 240,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-01.md"
       }
     ],
     "currentEstimate": {
-      "min": 140,
-      "max": 190,
-      "avg": 165
+      "min": 180,
+      "max": 230,
+      "avg": 205
     },
-    "method": "single",
+    "method": "spike-blend",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-11-01",
     "stale": false,
     "seasonal": false,
-    "listingCount": 4,
+    "listingCount": 3,
     "platforms": [
       "BigBasket",
-      "Flipkart",
-      "StoreKing"
+      "Flipkart"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 14,
-    "max": 19,
-    "avg": 16.5
+    "min": 18,
+    "max": 23,
+    "avg": 20.5
   },
   "seasonal": false,
-  "nutritionPer100g": null,
-  "macrosPer100Estimate": {
-    "kcal": 340,
-    "proteinG": 23,
-    "carbsG": 52,
-    "fatG": 1.6,
-    "fibreG": 12
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 341,
+      "source": "USDA FDC: USDA 'Mungo beans, mature seeds, raw' (black gram, whole seed) as reproduced by Wikipedia and Foodstruct; FDC ID not seen; fat shown only rounded to 2 g; not the dehulled split form; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "proteinG": {
+      "value": 25,
+      "source": "USDA FDC: USDA 'Mungo beans, mature seeds, raw' (black gram, whole seed) as reproduced by Wikipedia and Foodstruct; FDC ID not seen; fat shown only rounded to 2 g; not the dehulled split form; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "carbsG": {
+      "value": 59,
+      "source": "USDA FDC: USDA 'Mungo beans, mature seeds, raw' (black gram, whole seed) as reproduced by Wikipedia and Foodstruct; FDC ID not seen; fat shown only rounded to 2 g; not the dehulled split form; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "sugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fatG": {
+      "value": 2,
+      "source": "USDA FDC: USDA 'Mungo beans, mature seeds, raw' (black gram, whole seed) as reproduced by Wikipedia and Foodstruct; FDC ID not seen; fat shown only rounded to 2 g; not the dehulled split form; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 18.3,
+      "source": "USDA FDC: USDA 'Mungo beans, mature seeds, raw' (black gram, whole seed) as reproduced by Wikipedia and Foodstruct; FDC ID not seen; fat shown only rounded to 2 g; not the dehulled split form; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "sodiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "ironMg": {
+      "value": 7.57,
+      "source": "USDA FDC: USDA 'Mungo beans, mature seeds, raw' (black gram, whole seed) as reproduced by Wikipedia and Foodstruct; FDC ID not seen; fat shown only rounded to 2 g; not the dehulled split form; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "calciumMg": {
+      "value": 138,
+      "source": "USDA FDC: USDA 'Mungo beans, mature seeds, raw' (black gram, whole seed) as reproduced by Wikipedia and Foodstruct; FDC ID not seen; fat shown only rounded to 2 g; not the dehulled split form; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "potassiumMg": {
+      "value": 983,
+      "source": "USDA FDC: USDA 'Mungo beans, mature seeds, raw' (black gram, whole seed) as reproduced by Wikipedia and Foodstruct; FDC ID not seen; fat shown only rounded to 2 g; not the dehulled split form; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": 628,
+      "source": "USDA FDC: USDA 'Mungo beans, mature seeds, raw' (black gram, whole seed) as reproduced by Wikipedia and Foodstruct; FDC ID not seen; fat shown only rounded to 2 g; not the dehulled split form; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "USDA FDC: USDA 'Mungo beans, mature seeds, raw' (black gram, whole seed) as reproduced by Wikipedia and Foodstruct; FDC ID not seen; fat shown only rounded to 2 g; not the dehulled split form; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": 0.273,
+      "source": "USDA FDC: USDA 'Mungo beans, mature seeds, raw' (black gram, whole seed) as reproduced by Wikipedia and Foodstruct; FDC ID not seen; fat shown only rounded to 2 g; not the dehulled split form; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "riboflavinMg": {
+      "value": 0.254,
+      "source": "USDA FDC: USDA 'Mungo beans, mature seeds, raw' (black gram, whole seed) as reproduced by Wikipedia and Foodstruct; FDC ID not seen; fat shown only rounded to 2 g; not the dehulled split form; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "niacinMg": {
+      "value": 1.447,
+      "source": "USDA FDC: USDA 'Mungo beans, mature seeds, raw' (black gram, whole seed) as reproduced by Wikipedia and Foodstruct; FDC ID not seen; fat shown only rounded to 2 g; not the dehulled split form; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "USDA FDC: USDA 'Mungo beans, mature seeds, raw' (black gram, whole seed) as reproduced by Wikipedia and Foodstruct; FDC ID not seen; fat shown only rounded to 2 g; not the dehulled split form; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    }
   },
-  "storage": "Store it in an airtight container at room temperature. In humid Mumbai months, keep it in the fridge. Use it within 6 months of opening.",
-  "looksLike": "Small, flat, chalk-white split lentils. This is black gram with the black skin removed.",
-  "howToPick": null,
-  "shelfLife": "6–12 months unopened.",
+  "macrosPer100Estimate": {
+    "kcal": 340.5,
+    "proteinG": 24,
+    "carbsG": 55.5,
+    "fatG": 1.8,
+    "fibreG": 18.3
+  },
+  "storage": "Airtight jar at room temperature, away from damp; refrigerate or add a dried neem leaf or bay leaf in humid weather to deter weevils.",
+  "looksLike": "Small, flat, chalk-white split lentils; black gram with the black skin removed.",
+  "howToPick": "Chalk-white, even, clean splits with no black husk flecks, insects or webbing, and no musty smell. For dosa, ask for \"dhuli\" or \"white split\", not \"chilka\".",
+  "shelfLife": "About 6 to 12 months if kept dry (general guidance; not from a source in this run).",
   "substitutes": [
     "Whole skinned urad (gota)",
     "For tempering only",
-    "For batter"
+    "For batter",
+    "Split urad with skin (chilka)",
+    "Poha or cooked rice in the batter"
   ],
   "usedIn": [
     {
       "dishNumber": 4,
       "quantity": 13,
       "unit": "g",
-      "raw": "13 g in the dosa batter + 2 g in the potato-masala tempering = 15 g in total"
+      "raw": "13 g per serving in the batter (about 1 tbsp, raw) plus 2 g in the tempering, 15 g in total"
     }
   ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-11-01",
+      "file": "FitPlate_Ingredients_2026-11-01.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (spike-blend)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
@@ -86,7 +282,8 @@
     "usedIn": "newest"
   },
   "mergeNotes": [
-    "price flag: narrowed",
-    "Range 140.0–190.0 was wider than 30% of avg 165.0; narrowed to ±15%."
+    "price flag: possible-spike",
+    "Possible spike: latest avg 240 (2026-11-01) moved more than 35% from the previous estimate; using the halfway point.",
+    "macrosPer100Estimate.fibreG: Versions 2026-10-04 (12) and 2026-11-01 (18.3) differ by more than 25%; kept the newer."
   ]
 }

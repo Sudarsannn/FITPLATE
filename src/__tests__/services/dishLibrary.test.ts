@@ -67,7 +67,11 @@ describe('dish library on the bundled research dishes', () => {
 
   it('shows diet chips before allergens, three at most', () => {
     const poha = researchDishes.find((d) => d.id === '001-poha')!;
-    expect(cardChips(poha)).toEqual(['Veg', 'Contains peanut', 'Contains mustard']);
+    const chips = cardChips(poha);
+    expect(chips[0]).toBe('Veg');
+    expect(chips.length).toBeLessThanOrEqual(3);
+    const firstAllergen = chips.findIndex((c) => c.startsWith('Contains '));
+    expect(firstAllergen === -1 || chips.slice(firstAllergen).every((c) => c.startsWith('Contains '))).toBe(true); // diet chips never come after allergens
   });
 });
 

@@ -29,9 +29,16 @@ If the free allowance runs out the screen says so and the rest of the app is una
 3. Research queue (so Claude can pick the dishes up): GitHub, Settings, Developer settings, Fine-grained tokens, repository `FITPLATE` only, permission **Contents: Read and write**, no expiry (or a year). Add it in Cloudflare as Secret `GITHUB_TOKEN`. Optional variables: `GITHUB_REPO` (default `sudarsannn/fitplate`), `QUEUE_BRANCH` (default `ai-dish-queue`).
 3b. Web search (recommended): sign up free at https://tavily.com (no card, about 1,000 searches a month; a dish uses 2 to 3), copy the API key (starts `tvly-`), add it in Cloudflare as Secret `TAVILY_API_KEY`, Deploy. `/api/ai/status` then shows `"web":true`.
 4. Cloudflare, Settings, Build, turn off "Builds for non-production branches" so queue commits do not start builds.
+4b. **Required since 1 Nov 2026: tell the server which Firebase project to trust.** Cloudflare, Settings, Variables and Secrets, Add: type **Text**, name `FIREBASE_PROJECT_ID`, value your Firebase project id (the `EXPO_PUBLIC_FIREBASE_PROJECT_ID` line in `.env`; it is public). Deploy. Without it every AI request is refused with "switched off until the server knows which Firebase project to trust", on purpose, because the server must check who is calling.
+4c. Optional but better: a daily cap that all server copies share. Cloudflare, Storage and Databases, Workers KV, create a namespace, then Worker Settings, Bindings, add KV namespace with variable name `AI_LIMITS`. Without it each server copy counts on its own.
+4d. Optional: `AI_ALLOWED_ORIGINS` (comma list of web addresses allowed to call the AI from a browser). The default is the live site plus localhost.
 5. The phone app talks to `https://fitplate.sudarsanmohanchander.workers.dev` by default. To use another address put `EXPO_PUBLIC_FITPLATE_AI_URL=...` in `.env` and rebuild.
 
 Check it: open `https://fitplate.sudarsanmohanchander.workers.dev/api/ai/status`. It shows `"configured": true` when the key is set and `"queue": true` when the token is set.
+
+## Who can use it (review fix, 1 Nov 2026)
+
+Only signed-in users: every request carries the Firebase ID token and the server checks it against Google's keys (guests see "Sign in with Google to create dishes with AI"). Each user can create 5 dishes a day and each IP address 20 (plus 60 and 150 calls overall). The same user asking for the same dish again does not raise its request count. Browsers from other websites are refused (CORS). `/api/ai/status` and `/api/ai/library` stay public and read-only. Code: `server/ai/guard.js`.
 
 ## Where things are
 

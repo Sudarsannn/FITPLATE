@@ -11,7 +11,7 @@ import type { AllergenId, Dish } from '../models/research';
 import type { Exercise } from '../models/exercise';
 import type { Survey } from '../models/survey';
 
-type DishLike = Pick<Dish, 'dietType' | 'tags' | 'allergens' | 'cuisine'>;
+type DishLike = Pick<Dish, 'dietType' | 'tags' | 'allergens' | 'cuisine'> & { ai?: unknown };
 
 const has = (d: DishLike, ...tags: string[]) => tags.some((t) => d.tags.includes(t));
 
@@ -34,7 +34,9 @@ export function dietAllows(diet: DietType, d: DishLike): boolean {
   }
 }
 
-export function allergyAllows(allergies: readonly AllergenId[], d: DishLike): boolean {
+export function allergyAllows(allergies: readonly AllergenId[], d: DishLike & { ai?: unknown }): boolean {
+  // An AI draft's allergens are the model's own list, unverified: with any allergy set it is never recommended.
+  if (allergies.length > 0 && d.ai) return false;
   return !allergies.some((a) => d.allergens.includes(a));
 }
 

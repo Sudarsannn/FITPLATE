@@ -16,36 +16,225 @@
         "avg": 1685,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-11-01",
+        "min": 970,
+        "max": 3500,
+        "avg": 2050,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-01.md"
       }
     ],
     "currentEstimate": {
-      "min": 1580,
-      "max": 1800,
-      "avg": 1685
+      "min": 1635,
+      "max": 2215,
+      "avg": 1925
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-11-01",
     "stale": false,
     "seasonal": false,
-    "listingCount": 4,
+    "listingCount": 18,
     "platforms": [
       "BigBasket",
-      "StoreKing",
-      "Unnamed retailer in search summary"
+      "Flipkart"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 158,
-    "max": 180,
-    "avg": 168.5
+    "min": 163.5,
+    "max": 221.5,
+    "avg": 192.5
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 297,
+      "source": "Other: published asafoetida analysis (PMC3459456) and nutrition-database listing: PMC3459456 asafoetida analysis; energy from a nutrition-database listing; no IFCT or USDA FDC entry found; iron conflicting (39 vs about 23.4 mg) so left null",
+      "confidence": "Low"
+    },
+    "proteinG": {
+      "value": 4,
+      "source": "Other: published asafoetida analysis (PMC3459456) and nutrition-database listing: PMC3459456 asafoetida analysis; energy from a nutrition-database listing; no IFCT or USDA FDC entry found; iron conflicting (39 vs about 23.4 mg) so left null",
+      "confidence": "Low"
+    },
+    "carbsG": {
+      "value": 67.8,
+      "source": "Other: published asafoetida analysis (PMC3459456) and nutrition-database listing: PMC3459456 asafoetida analysis; energy from a nutrition-database listing; no IFCT or USDA FDC entry found; iron conflicting (39 vs about 23.4 mg) so left null",
+      "confidence": "Low"
+    },
+    "sugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fatG": {
+      "value": 1.1,
+      "source": "Other: published asafoetida analysis (PMC3459456) and nutrition-database listing: PMC3459456 asafoetida analysis; energy from a nutrition-database listing; no IFCT or USDA FDC entry found; iron conflicting (39 vs about 23.4 mg) so left null",
+      "confidence": "Low"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 4.1,
+      "source": "Other: published asafoetida analysis (PMC3459456) and nutrition-database listing: PMC3459456 asafoetida analysis; energy from a nutrition-database listing; no IFCT or USDA FDC entry found; iron conflicting (39 vs about 23.4 mg) so left null",
+      "confidence": "Low"
+    },
+    "sodiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": 690,
+      "source": "Other: published asafoetida analysis (PMC3459456) and nutrition-database listing: PMC3459456 asafoetida analysis; energy from a nutrition-database listing; no IFCT or USDA FDC entry found; iron conflicting (39 vs about 23.4 mg) so left null",
+      "confidence": "Low"
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": 16,
+      "source": "Other: published asafoetida analysis (PMC3459456) and nutrition-database listing: PMC3459456 asafoetida analysis; energy from a nutrition-database listing; no IFCT or USDA FDC entry found; iron conflicting (39 vs about 23.4 mg) so left null",
+      "confidence": "Low"
+    },
+    "cholesterolMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    }
+  },
   "macrosPer100Estimate": {
     "kcal": 297,
     "proteinG": 4,
@@ -53,39 +242,51 @@
     "fatG": 1.1,
     "fibreG": 4.1
   },
-  "storage": "Keep the lid tightly closed, and store it inside a second airtight jar so the smell does not spread to other foods. Room temperature, dry. It lasts about 1 year open.",
-  "looksLike": "a fine, pale yellow to off-white powder with a very strong, sulphur-like smell, sold in small plastic or metal boxes. Everyday \"compounded\" hing is the resin mixed with wheat or rice flour and gum arabic.",
-  "howToPick": "the box should be tightly sealed, and the powder should smell strong and pungent the moment it is opened. Avoid packs that smell weak or have hardened into lumps. Compounded hing is often not gluten-free because of the wheat flour.",
-  "shelfLife": "about 12–24 months unopened (check the pack). The strength fades slowly after opening.",
-  "substitutes": [],
+  "storage": "Keep in an airtight jar, away from other spices because the smell spreads; room temperature, dry and out of sunlight; use within about a year.",
+  "looksLike": "A fine pale-yellow powder (or lumps of brownish resin) with a very strong sulphur-like smell that mellows into an onion-garlic flavour once fried in hot oil.",
+  "howToPick": "Buy a sealed airtight bottle or jar; the smell should be strong and sharp even through the pack. A weak smell means a lot of filler or old stock. Wheat-containing blends are common, so check the label if you avoid gluten.",
+  "shelfLife": "Several months to a year in a tight container; the aroma fades with air (general guidance, not taken from a source in this run).",
+  "substitutes": [
+    "Garlic and onion (finely chopped, fried first)",
+    "Skip it",
+    "Gluten-free hing"
+  ],
   "usedIn": [
     {
       "dishNumber": 4,
       "quantity": null,
       "unit": null,
-      "raw": "a pinch (optional, potato masala)"
+      "raw": "a pinch (about 0.1 g; optional)"
     },
     {
       "dishNumber": 5,
       "quantity": 0.1,
       "unit": "g",
-      "raw": "0.1 g (1 pinch)"
+      "raw": "0.1 g per serving (1 pinch)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-11-01",
+      "file": "FitPlate_Ingredients_2026-11-01.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 1179.6–2915.7 was wider than 30% of avg 1924.6; narrowed to ±15%."
+  ]
 }

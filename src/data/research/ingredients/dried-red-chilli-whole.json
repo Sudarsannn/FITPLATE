@@ -15,71 +15,275 @@
         "avg": 650,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-11-01",
+        "min": 475,
+        "max": 1640,
+        "avg": 930,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-01.md"
       }
     ],
     "currentEstimate": {
-      "min": 550,
-      "max": 725,
-      "avg": 650
+      "min": 670,
+      "max": 910,
+      "avg": 790
     },
-    "method": "single",
+    "method": "spike-blend",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-11-01",
     "stale": false,
     "seasonal": false,
-    "listingCount": 4,
+    "listingCount": 7,
     "platforms": [
-      "Amazon",
-      "BigBasket"
+      "BigBasket",
+      "Flipkart"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 55,
-    "max": 72.5,
-    "avg": 65
+    "min": 67,
+    "max": 91,
+    "avg": 79
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 415,
+      "source": "Other: J Food Sci Technol dried chilli paper (s13197-022-05656-1) and a manufacturer label: s13197-022-05656-1 dry chilli composition via search summary; fat from a manufacturer label; no IFCT or USDA FDC entry opened",
+      "confidence": "Low"
+    },
+    "proteinG": {
+      "value": 14,
+      "source": "Other: J Food Sci Technol dried chilli paper (s13197-022-05656-1) and a manufacturer label: s13197-022-05656-1 dry chilli composition via search summary; fat from a manufacturer label; no IFCT or USDA FDC entry opened",
+      "confidence": "Low"
+    },
+    "carbsG": {
+      "value": 58.2,
+      "source": "Other: J Food Sci Technol dried chilli paper (s13197-022-05656-1) and a manufacturer label: s13197-022-05656-1 dry chilli composition via search summary; fat from a manufacturer label; no IFCT or USDA FDC entry opened",
+      "confidence": "Low"
+    },
+    "sugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fatG": {
+      "value": 14.1,
+      "source": "Other: J Food Sci Technol dried chilli paper (s13197-022-05656-1) and a manufacturer label: s13197-022-05656-1 dry chilli composition via search summary; fat from a manufacturer label; no IFCT or USDA FDC entry opened",
+      "confidence": "Low"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "sodiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": 64,
+      "source": "Other: J Food Sci Technol dried chilli paper (s13197-022-05656-1) and a manufacturer label: s13197-022-05656-1 dry chilli composition via search summary; fat from a manufacturer label; no IFCT or USDA FDC entry opened",
+      "confidence": "Low"
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": 6.5,
+      "source": "Other: J Food Sci Technol dried chilli paper (s13197-022-05656-1) and a manufacturer label: s13197-022-05656-1 dry chilli composition via search summary; fat from a manufacturer label; no IFCT or USDA FDC entry opened",
+      "confidence": "Low"
+    },
+    "cholesterolMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    }
+  },
   "macrosPer100Estimate": {
-    "kcal": 318,
-    "proteinG": 12,
-    "carbsG": 57,
-    "fatG": 17,
+    "kcal": 415,
+    "proteinG": 13,
+    "carbsG": 57.6,
+    "fatG": 15.6,
     "fibreG": 27
   },
-  "storage": "Airtight jar or zip bag, cool dry place: 6–12 months; fridge keeps colour longer.",
-  "looksLike": "shrivelled, glossy dark-red pods 4–8 cm long, with or without the green stalk; seeds rattle inside.",
-  "howToPick": null,
-  "shelfLife": "6–12 months.",
+  "storage": "Airtight jar or tin in a cool, dry place; sun-dry briefly in monsoon if pods feel soft; keep away from moisture.",
+  "looksLike": "A shrivelled dark-red pod, about 5 cm long, with seeds inside; hot and smoky once fried in oil.",
+  "howToPick": "Deep, even red colour, pods that are dry and crisp with an intact stem, a clean pungent smell. Avoid dull, dark-brown, damp or dusty pods, or any with white mould.",
+  "shelfLife": "About 1 year if kept dry (general guidance, not from a source in this run).",
   "substitutes": [
-    "Skip it"
+    "Skip it",
+    "Red chilli flakes",
+    "Kashmiri whole chilli",
+    "Red chilli powder (a pinch)"
   ],
   "usedIn": [
     {
       "dishNumber": 5,
       "quantity": null,
       "unit": null,
-      "raw": "1 whole chilli"
+      "raw": "1 whole pod per serving (a shrivelled dark-red pod, about 5 cm long)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-11-01",
+      "file": "FitPlate_Ingredients_2026-11-01.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (spike-blend)",
     "macrosPer100Estimate": "stable (single)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: possible-spike",
+    "price flag: narrowed",
+    "Possible spike: latest avg 930 (2026-11-01) moved more than 35% from the previous estimate; using the halfway point.",
+    "Range 512.5–1182.5 was wider than 30% of avg 790.0; narrowed to ±15%.",
+    "macrosPer100Estimate.kcal: Versions 2026-10-04 (318) and 2026-11-01 (415) differ by more than 25%; kept the newer."
+  ]
 }

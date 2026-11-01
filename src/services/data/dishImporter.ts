@@ -169,12 +169,18 @@ function parseSteps(body: string): DishStep[] {
 export function parseNutrition(body: string): Macros {
   const text = plain(body);
   const kcal = /(?:Total(?:\s*\((?:[^()]|\([^()]*\))*\))?:\s*(?:about|~|≈)?\s*|Calories\s*(?:\(kcal\))?\s*[:|]\s*(?:about|~|≈)?\s*)([\d,]+(?:\.\d+)?)\s*kcal/i.exec(text);
-  const grams = (label: string) => {
-    const m = new RegExp(`\\b(?:${label})\\b[^0-9\\n|]*\\|?\\s*(?:about|~|≈)?\\s*(\\d+(?:\\.\\d+)?)\\s*g\\b`, 'i').exec(text);
+  // Newer files give one table row per nutrient: "| Energy (kcal) | ~290 | 14% |", "| Protein (g) | ~8.5 | 16% |".
+  const row = (label: string) => {
+    const m = new RegExp(`\\|\\s*(?:${label})\\s*\\(g\\)\\s*\\|\\s*(?:about|~|≈)?\\s*(\\d+(?:\\.\\d+)?)`, 'i').exec(text);
     return m ? num(m[1]) : null;
   };
+  const grams = (label: string) => {
+    const m = new RegExp(`\\b(?:${label})\\b[^0-9\\n|]*\\|?\\s*(?:about|~|≈)?\\s*(\\d+(?:\\.\\d+)?)\\s*g\\b`, 'i').exec(text);
+    return row(label) ?? (m ? num(m[1]) : null);
+  };
+  const energyRow = /\|\s*Energy\s*\(kcal\)\s*\|\s*(?:about|~|≈)?\s*([\d,]+(?:\.\d+)?)/i.exec(text);
   return {
-    kcal: kcal ? num(kcal[1]) : null,
+    kcal: kcal ? num(kcal[1]) : energyRow ? num(energyRow[1]) : null,
     proteinG: grams('Protein'),
     carbsG: grams('Carbs|Carbohydrates?'),
     fatG: grams('Fat'),

@@ -9,7 +9,7 @@ import { colors, type } from '../theme';
 import { IconBadge } from './Icon';
 import { Glass, PressableScale } from './ui';
 
-const when = (daysLeft: number) => (daysLeft < 0 ? 'past its date: smell and check before eating' : daysLeft === 0 ? 'use today' : daysLeft === 1 ? 'use by tomorrow' : `${daysLeft} days left`);
+const when = (daysLeft: number) => (daysLeft < 0 ? 'past its safe date: best thrown out' : daysLeft === 0 ? 'use today' : daysLeft === 1 ? 'use by tomorrow' : `${daysLeft} days left`);
 
 /** Today: leftovers put away after cooking, soonest first, with the researched remix idea (flag `savingsDashboard`). Hidden when there are none. */
 export function LeftoversCard() {

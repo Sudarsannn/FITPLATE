@@ -95,7 +95,12 @@ import item_091_aloo_tikki from './091-aloo-tikki.json';
 import item_092_kothu_parotta from './092-kothu-parotta.json';
 import item_093_mutton_keema from './093-mutton-keema.json';
 import item_094_pasta_in_red_sauce_indian_style from './094-pasta-in-red-sauce-indian-style.json';
+import item_095_rice_kheer from './095-rice-kheer.json';
+import item_096_gajar_halwa from './096-gajar-halwa.json';
+import item_097_gulab_jamun from './097-gulab-jamun.json';
 import item_098_mango_lassi from './098-mango-lassi.json';
+import item_099_masala_chai from './099-masala-chai.json';
+import item_100_cold_coffee from './100-cold-coffee.json';
 import item_101_dindigul_chicken_biryani from './101-dindigul-chicken-biryani.json';
 import item_102_pink_sauce_penne_pasta from './102-pink-sauce-penne-pasta.json';
 import item_103_arisi_paruppu_sadam from './103-arisi-paruppu-sadam.json';
@@ -195,7 +200,12 @@ export const items: Dish[] = [
   item_092_kothu_parotta as unknown as Dish,
   item_093_mutton_keema as unknown as Dish,
   item_094_pasta_in_red_sauce_indian_style as unknown as Dish,
+  item_095_rice_kheer as unknown as Dish,
+  item_096_gajar_halwa as unknown as Dish,
+  item_097_gulab_jamun as unknown as Dish,
   item_098_mango_lassi as unknown as Dish,
+  item_099_masala_chai as unknown as Dish,
+  item_100_cold_coffee as unknown as Dish,
   item_101_dindigul_chicken_biryani as unknown as Dish,
   item_102_pink_sauce_penne_pasta as unknown as Dish,
   item_103_arisi_paruppu_sadam as unknown as Dish,

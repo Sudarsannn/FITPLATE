@@ -42,10 +42,21 @@ export type CreateResult = { kind: 'existing'; dish: Dish } | { kind: 'created';
 
 type Fetch = typeof fetch;
 
+/** The signed-in user's Firebase ID token (the server checks it on every AI call), or null for a guest. */
+export async function idToken(): Promise<string | null> {
+  try {
+    const { getFirebaseAuth } = await import('../../lib/firebase');
+    return (await getFirebaseAuth()?.currentUser?.getIdToken()) ?? null;
+  } catch {
+    return null;
+  }
+}
+
 async function post<T>(path: string, body: unknown, fetchImpl: Fetch, signal?: AbortSignal): Promise<T> {
   let res: Response;
+  const token = await idToken();
   try {
-    res = await fetchImpl(`${AI_BASE_URL}${path}`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body), signal });
+    res = await fetchImpl(`${AI_BASE_URL}${path}`, { method: 'POST', headers: { 'content-type': 'application/json', ...(token ? { authorization: `Bearer ${token}` } : {}) }, body: JSON.stringify(body), signal });
   } catch (e) {
     if ((e as Error)?.name === 'AbortError') throw e;
     throw new AiRequestError('Couldn’t reach FitPlate’s server. Check your connection and try again.', 'network');
@@ -60,6 +71,9 @@ async function post<T>(path: string, body: unknown, fetchImpl: Fetch, signal?: A
     const code = String(data.error ?? res.status);
     const friendly: Record<string, string> = {
       'not-configured': 'AI dishes are not switched on yet. The server needs its free AI key (see docs/AI_DISHES.md).',
+      'sign-in': 'Sign in with Google to create dishes with AI.',
+      'auth-not-configured': 'AI dishes are switched off until the server is told which Firebase project to trust (see docs/AI_DISHES.md).',
+      'daily-limit': 'You have reached today’s limit for AI dishes. Try again tomorrow.',
       quota: 'The free AI allowance is used up for now. Try again later today.',
       overloaded: 'The AI service is busy. Try again in a minute.',
     };

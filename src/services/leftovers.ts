@@ -39,13 +39,13 @@ export const removeLeftover = (list: Leftover[], dishId: string): Leftover[] => 
 
 export type LeftoverStatus = Leftover & { daysLeft: number; state: 'ok' | 'today' | 'past' };
 
-/** Days left counted in calendar days: 0 is "use today", below 0 is past its date. Items more than 2 days past are dropped. Soonest first. */
+/** Days left counted in calendar days: 0 is "use today", below 0 is past its date. Items more than 1 day past are dropped. Soonest first. */
 export function leftoverStatus(list: Leftover[], now = Date.now()): LeftoverStatus[] {
   return list
     .map((l) => {
       const daysLeft = Math.round((startOfDay(l.storedAt) + l.useByDays * DAY - startOfDay(now)) / DAY);
       return { ...l, daysLeft, state: daysLeft < 0 ? ('past' as const) : daysLeft === 0 ? ('today' as const) : ('ok' as const) };
     })
-    .filter((l) => l.daysLeft >= -2)
+    .filter((l) => l.daysLeft >= -1)
     .sort((a, b) => a.daysLeft - b.daysLeft);
 }

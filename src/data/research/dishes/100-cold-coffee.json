@@ -1,0 +1,375 @@
+{
+  "id": "100-cold-coffee",
+  "number": 100,
+  "name": "Cold Coffee",
+  "cuisine": "Indian café drink (pan-Indian)",
+  "dietType": "veg",
+  "mealType": [
+    "breakfast",
+    "snack"
+  ],
+  "difficulty": "Beginner",
+  "prepMin": 4,
+  "cookMin": 0,
+  "servings": 1,
+  "ingredients": [
+    {
+      "ingredientId": null,
+      "name": "Toned milk, chilled (doodh)",
+      "quantity": 200,
+      "unit": "ml",
+      "householdMeasure": "about ¾ cup"
+    },
+    {
+      "ingredientId": "instant-coffee-powder",
+      "name": "Instant coffee powder (e.g. Nescafe Classic, Bru)",
+      "quantity": 3,
+      "unit": "g",
+      "householdMeasure": "1.5 tsp"
+    },
+    {
+      "ingredientId": "sugar",
+      "name": "Sugar (cheeni)",
+      "quantity": 15,
+      "unit": "g",
+      "householdMeasure": "3 tsp"
+    },
+    {
+      "ingredientId": null,
+      "name": "Warm water (for the coffee)",
+      "quantity": 15,
+      "unit": "ml",
+      "householdMeasure": "1 tbsp"
+    },
+    {
+      "ingredientId": null,
+      "name": "Ice cubes",
+      "quantity": 4,
+      "unit": null,
+      "householdMeasure": "4 cubes"
+    },
+    {
+      "ingredientId": "chocolate-syrup",
+      "name": "Chocolate syrup, optional (for the glass)",
+      "quantity": 1,
+      "unit": "tsp",
+      "householdMeasure": "1 tsp"
+    }
+  ],
+  "equipment": [
+    "Blender (or a hand blender with a tall jug): blends the drink to a froth in 20-30 seconds",
+    "Tall glass (300 ml or more): so the froth has room",
+    "Small cup or bowl and a spoon: to dissolve the coffee and sugar",
+    "Measuring spoons and a measuring jug (or use the household measures)",
+    "Kettle or a small pan: only for 1 tbsp of warm water",
+    "Straw: optional"
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "title": "Chill the milk",
+      "text": "Keep 200 ml milk in the fridge for at least 1 hour beforehand.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "The milk carton or jug feels cold to the touch and has fridge condensation on the outside",
+      "cameraCheck": "The cold milk jug or carton, with the 200 ml mark or measuring jug in view",
+      "videoShot": "Milk poured from the fridge into a measuring jug up to 200 ml.",
+      "watchOut": "Using room-temperature milk, which makes a thin drink that melts the ice quickly; if you forgot, put the milk in the freezer for 15 min and use 1 extra ice cube."
+    },
+    {
+      "n": 2,
+      "title": "Measure the coffee and sugar",
+      "text": "Put 1.5 tsp instant coffee and 3 tsp sugar into a small cup.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Two level small heaps in the cup, one brown-black and one white",
+      "cameraCheck": "The cup with the coffee and sugar, next to the teaspoon",
+      "videoShot": "A level teaspoon of coffee being tipped into a cup.",
+      "watchOut": "Heaped spoons, which make the drink bitter or too sweet; level the spoons with a knife."
+    },
+    {
+      "n": 3,
+      "title": "Heat the water",
+      "text": "Warm 1 tbsp (15 ml) water until it is hot to the touch but not boiling.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "Small bubbles start at the bottom and steam rises, but no rolling boil",
+      "cameraCheck": "The little pan or kettle with steam rising",
+      "videoShot": "Steam rising from a small pan of water.",
+      "watchOut": "Boiling water, which scorches instant coffee and gives a harsh, burnt taste; if it boils, let it cool for 30 seconds first."
+    },
+    {
+      "n": 4,
+      "title": "Dissolve the coffee",
+      "text": "Pour the warm water over the coffee and sugar and stir for about 30 seconds into a thick dark syrup.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "No visible granules left; a glossy dark brown paste or syrup that smells strongly of coffee",
+      "cameraCheck": "The cup of smooth dark coffee syrup, with a spoon lifted out clean",
+      "videoShot": "A spoon stirring until the coffee and sugar vanish into a dark syrup.",
+      "watchOut": "Undissolved granules and sugar crystals, which end up as a gritty layer at the bottom of the glass; keep stirring, and if lumps remain, add 1 tsp more warm water."
+    },
+    {
+      "n": 5,
+      "title": "Add the syrup and milk to the blender",
+      "text": "Pour the coffee syrup into the blender jar, then add the 200 ml cold milk.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "The milk turns from white to a light brown swirl as it meets the syrup",
+      "cameraCheck": "The blender jar with the milk and coffee syrup in it",
+      "videoShot": "Dark coffee syrup swirling into white milk in the jar.",
+      "watchOut": "Filling the jar more than two-thirds full, so it leaks or spills when blending; one serving fits easily in a standard jar."
+    },
+    {
+      "n": 6,
+      "title": "Add the ice",
+      "text": "Drop in 4 ice cubes.",
+      "timerSec": null,
+      "tip": null,
+      "visualCue": "The cubes float on top of the milk in the jar",
+      "cameraCheck": "The jar with 4 ice cubes visible",
+      "videoShot": "Ice cubes dropping into the jar.",
+      "watchOut": "Too many cubes, which water the drink down and give a thin taste; stay at 4 cubes, and if it is still thin, add a little more coffee and sugar."
+    },
+    {
+      "n": 7,
+      "title": "Blend",
+      "text": "Close the lid and blend for 20-30 seconds on high.",
+      "timerSec": null,
+      "tip": "Hold the lid down firmly with a hand towel; the cold liquid and ice can pop the lid.",
+      "visualCue": "The drink turns an even light-coffee colour with a thick froth on top, and the ice is gone or only small bits are left",
+      "cameraCheck": "The blended drink in the jar showing froth on top",
+      "videoShot": "The jar blending, with froth rising at the top.",
+      "watchOut": "Blending too long, which melts the ice and flattens the froth (one source warns that blending too long or at very high speed works against a foamy drink); stop when there are no large ice pieces. If the froth is weak, the milk was not cold enough."
+    },
+    {
+      "n": 8,
+      "title": "Pour into the glass",
+      "text": "If you like, drizzle 1 tsp chocolate syrup inside the empty glass first, then pour the cold coffee in.",
+      "timerSec": 60,
+      "tip": null,
+      "visualCue": "A tall glass filled to about 2 cm below the rim with a layer of froth on top, and (if used) dark streaks on the glass wall",
+      "cameraCheck": "The filled glass held in front of the camera",
+      "videoShot": "Cold coffee being poured down the side of a tall glass.",
+      "watchOut": "Pouring in a hurry so the froth overflows; tilt the glass a little and pour down the side."
+    },
+    {
+      "n": 9,
+      "title": "Serve at once",
+      "text": "Add a straw and drink straight away.",
+      "timerSec": null,
+      "tip": null,
+      "visualCue": "A light-brown frothy drink with condensation on the glass",
+      "cameraCheck": "The finished glass with froth on top",
+      "videoShot": "A straw going into the finished glass.",
+      "watchOut": "Letting it stand for more than 10-15 minutes, when the froth collapses and the ice melts into the milk; if it has stood, give it a quick stir or shake."
+    }
+  ],
+  "nutritionPerServing": {
+    "kcal": 185,
+    "proteinG": 6.5,
+    "carbsG": 25,
+    "fatG": 6,
+    "fibreG": 0
+  },
+  "microNutrientsEstimate": {
+    "values": {
+      "calcium": 0.2,
+      "cholesterol": 0,
+      "iron": 0,
+      "potassium": 0.3,
+      "sodium": 0.2,
+      "vitamin-b12": 0
+    },
+    "coveragePct": 8,
+    "basis": "partial estimate from ingredient quantities"
+  },
+  "asOrdered": {
+    "price": null,
+    "nutrition": {
+      "calories": {
+        "value": null,
+        "source": null
+      },
+      "protein": {
+        "value": null,
+        "source": null
+      },
+      "carbs": {
+        "value": null,
+        "source": null
+      },
+      "fat": {
+        "value": null,
+        "source": null
+      },
+      "fibre": {
+        "value": null,
+        "source": null
+      }
+    },
+    "restaurantsSampled": null,
+    "platforms": [
+      "Swiggy",
+      "Zomato",
+      "magicpin"
+    ]
+  },
+  "orderPrice": null,
+  "healthiness": {
+    "score": 5,
+    "restaurantScore": 3,
+    "reasons": [
+      "no oil or frying, no salt, and milk gives useful calcium (about 24% of the day), riboflavin and B12 with only about 185 kcal. Points off for about 15 g of added sugar (60% of the 25 g limit), no fibre, and about 90 mg of caffeine (est.). Restaurant glasses are bigger (350-400 ml), are often made with ice cream, chocolate syrup or whipped cream, and use more sugar, so about 300-400 kcal and 25-40 g sugar is likely (est.; a published café-style recipe shows 202 kcal and 24 g sugar, and ice-cream versions about 390 kcal)."
+    ]
+  },
+  "researchRating": {
+    "score": 4.5,
+    "basis": "a much-loved, very widely made café and home drink, with many Indian recipe sites and blogs publishing near-identical quick versions and a lot of positive comments about the froth and the five-minute method. Points off because results depend on instant-coffee brand and milk temperature, and because café versions are often very sweet. Recipe-site star counts were not checked this run. Platform dish ratings were not used."
+  },
+  "storage": "Best fresh. If you must keep it, pour into a closed bottle and keep in the fridge for up to about 1 day (milk drink, keep it cold; not source-checked); shake before drinking because it separates and loses its froth. Not recommended for the freezer as a drink. Do not reheat.",
+  "leftoverRemix": "Coffee ice cubes. Pour leftover cold coffee into an ice-cube tray and freeze for at least 4 hours; next time use these cubes in place of plain ice so the drink does not get watered down.",
+  "burnOff": "about 2.6 km of running (185 ÷ 70 kcal/km, for a 70 kg adult), or about 3.7 km of brisk walking (about 45 min at 5 km/h, using about 50 kcal/km for walking) (est.).",
+  "sources": [
+    "Spice Up The Curry, Cold coffee (without ice cream) (1 cup milk, 1.5 tbsp sugar, 1.5-2 tsp instant coffee, 4-5 ice cubes; cold milk; do not over-blend; plant-milk substitution): https://www.spiceupthecurry.com/cold-coffee-recipe/",
+    "Spice Up The Curry, Cold coffee with ice cream / coffee milkshake (5 tsp coffee, 2 tbsp sugar, 1.5 cups milk, ice cream scoops; cut sugar when adding ice cream): https://www.spiceupthecurry.com/wprm_print/cold-coffee-with-ice-cream-coffee-milkshake",
+    "Sinfully Spicy, 5 minute Indian style cold coffee (1.5-2 tbsp instant coffee for a stronger taste): https://sinfullyspicy.com/5-minute-indian-style-cold-coffee/",
+    "Piping Pot Curry, Cold coffee: https://pipingpotcurry.com/cold-coffee/",
+    "Hebbar's Kitchen, Cold coffee / iced coffee 4 ways (1 tbsp coffee powder, 2 tbsp sugar, 3 tbsp warm water, chilled milk, ice, scoop of ice cream): https://hebbarskitchen.com/wprm_print/cold-coffee-recipe-iced-coffee-4-ways",
+    "Veg Recipes of India, Cold coffee recipe, easy café style (about 2 drinks of 8-10 oz): https://www.vegrecipesofindia.com/wprm_print/cold-coffee-recipe-easy-cafe-style",
+    "Revi's Foodography, Indian style cold coffee: https://revisfoodography.com/wprm_print/indian-style-cold-coffee",
+    "Manjula's Kitchen, Cold coffee / iced coffee: https://www.manjulaskitchen.com/wprm_print/12754",
+    "Geetha's Kitchen, Iced coffee quencher (Indian style): https://www.geethaskitchen.com/2008/06/iced-coffee-quencher-indian-style-iced.html",
+    "Tarla Dalal, Cold coffee (Indian coffee milkshake), about 265 kcal per glass: https://www.tarladalal.com/calories-for-cold-coffee-indian-coffee-milkshake-40593",
+    "Tarla Dalal, Cold coffee with ice cream, about 392 kcal per glass: https://www.tarladalal.com/calories-for-cold-coffee-with-ice-cream-indian-coffee-milkshake-36032",
+    "PlatterShare, café-style cold coffee (202 kcal per serving): https://www.plattershare.com/wprm_print/17726",
+    "CarbManager, cold coffee (McDonald's India, 250 ml, 182 kcal): https://www.carbmanager.com/food-detail/md:0836c99641ced7843ed9873967b8a2ef/beverages-cold-coffee",
+    "Swiggy Instamart, Bru Cold Coffee Classic (packaged): https://www.swiggy.com/instamart/p/bru-cold-coffee-classic-P1V344XI9M",
+    "Wikimedia Commons, File:Iced coffee (with special milk).jpg (author Ahri.boy, CC BY 4.0, 3456 × 4608 px, as shown on the file page): https://commons.wikimedia.org/wiki/File:Iced_coffee_(with_special_milk).jpg ; alternate File:Cappuccino freddo.jpg (Lajmmoore, CC BY-SA 4.0): https://commons.wikimedia.org/wiki/File:Cappuccino_freddo.jpg ; Category:Iced coffee: https://commons.wikimedia.org/wiki/Category:Iced_coffee",
+    "Swiggy, Bombay Coffee House, Bandra West (Old School Cold Coffee 400 ml ₹315): https://www.swiggy.com/menu/18950",
+    "Swiggy, Bombay Coffee House, Fort (Old School Cold Coffee 400 ml ₹221 with 30% off; not used): https://www.swiggy.com/menu/61313",
+    "Swiggy, The Brew Cafe, Kandivali East (Cold Coffee with ice cream ₹249): https://www.swiggy.com/city/mumbai/the-brew-cafe-kandivali-east-govind-nagar-rest712265",
+    "magicpin, Coffee House, Fort (Vanilla Cold Coffee ₹55): https://magicpin.in/Mumbai/Fort/Restaurant/Coffee-House/store/23a4c/menu",
+    "Swiggy, Deeps Cafe, Kharghar (Cold Coffee 350 ml ₹219; MMR): https://www.swiggy.com/city/mumbai/deeps-cafe-sector-18-kharghar-rest922005",
+    "Swiggy, The Kaffee Nation, Kalyan (Classic Cold Coffee ₹159; MMR): https://www.swiggy.com/city/mumbai/the-kaffee-nation-kalyan-rest757865",
+    "Swiggy, The Pantry, Lower Parel (Keto Cold Coffee ₹345; not used): https://swiggy.com/city/mumbai/the-pantry-guiltfree-goodness-samundipuram-main-road-lower-parel-worli-rest798411",
+    "Swiggy, Dope Coffee Roasters, Lower Parel (Iced Latte ₹238, Iced Americano ₹190; different drinks): https://www.swiggy.com/city/mumbai/dope-coffee-roasters-lower-parel-rest261858",
+    "Swiggy, Third Wave Coffee, Chakala (combos only): https://www.swiggy.com/city/mumbai/third-wave-coffee-chakala-andheri-east-rest788344",
+    "Zomato, Cold Coffee in Mumbai (no menu price seen): https://www.zomato.com/mumbai/ristoranti/dish-cold-coffee",
+    "magicpin blog, Cafe Coffee Day coffee price (Signature Cold Coffee ₹269; context only): https://magicpin.com/blog/cafe-coffee-day-coffee-price",
+    "magicpin blog, Starbucks cold coffees with price (national; context only): https://magicpin.com/blog/starbucks-cold-coffees-with-price"
+  ],
+  "allergens": [
+    "treeNut",
+    "milk",
+    "soy"
+  ],
+  "dietClaims": [
+    "glutenFree"
+  ],
+  "fasting": {
+    "navratri": {
+      "status": null,
+      "reason": "Not found — no source seen on whether coffee is accepted in vrat; the other ingredients (milk, sugar) are normally allowed, but caffeine and instant coffee powder are treated differently by different families"
+    },
+    "ekadashi": {
+      "status": null,
+      "reason": "Not found — no source seen on coffee on Ekadashi; milk and sugar are not grains, but rules on caffeine differ by family"
+    },
+    "jain": {
+      "status": "yes",
+      "reason": "no roots, onion, garlic, meat, fish, egg or honey in the recipe"
+    },
+    "ramadan": {
+      "status": "yes",
+      "reason": "vegetarian, so no halal-meat issue; it contains about 90 mg caffeine (est.) and 15 g added sugar, and many people find caffeine makes them thirstier later in the day, so it is easier at iftar than at sehri (not source-checked)"
+    }
+  },
+  "dietTags": {
+    "base": "Vegetarian",
+    "jain": {
+      "status": "yes",
+      "reason": "milk, sugar, instant coffee and ice only; no onion, garlic, potato or other root vegetable, no egg, no honey"
+    },
+    "vegan": {
+      "status": "with-changes",
+      "reason": "the main recipe uses cow milk (200 ml); use oat, soy or almond milk (see Vegan variant)"
+    },
+    "pescatarian": {
+      "status": "yes",
+      "reason": "vegetarian recipe with no meat or egg"
+    },
+    "sattvik": {
+      "status": "yes",
+      "reason": "the recipe has no onion or garlic (note: coffee is a stimulant and some sattvik traditions avoid caffeine; that is a separate rule that was not source-checked)"
+    },
+    "glutenFree": {
+      "status": "yes",
+      "reason": "milk, coffee, sugar and ice; no wheat, rava, maida or hing (check the label if you add chocolate syrup or a flavoured coffee mix)"
+    },
+    "dairyFree": {
+      "status": "with-changes",
+      "reason": "milk; use the plant-milk version (see Dairy-free variant)"
+    },
+    "allergensDeclared": [
+      "milk",
+      "treeNut",
+      "soy"
+    ]
+  },
+  "tags": [
+    "Veg",
+    "Jain",
+    "Gluten-free",
+    "No onion-garlic",
+    "Ramadan sehri / iftar",
+    "Contains tree nuts",
+    "Contains milk",
+    "Contains soy",
+    "Breakfast",
+    "Snack",
+    "Indian café drink",
+    "Under 15 min",
+    "Beginner",
+    "Low calorie"
+  ],
+  "description": "Family: cold-coffee",
+  "familyId": null,
+  "variants": [
+    {
+      "category": "Jain",
+      "status": "already-fits",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": "Main recipe already Jain (no onion, garlic, roots, egg or honey)."
+    },
+    {
+      "category": "Gluten-free",
+      "status": "already-fits",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": "Main recipe already gluten-free (no wheat, rava, maida or hing; check labels on chocolate syrup)."
+    }
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-10-31",
+      "file": "FitPlate_Dishes_2026-10-31.md"
+    }
+  ],
+  "mergeMethod": {
+    "nutritionPerServing": "stable (single)",
+    "ingredients": "newest",
+    "steps": "newest",
+    "healthiness": "newest",
+    "researchRating": "newest",
+    "sources": "union",
+    "tags": "tag engine (tags.ts) on the merged dish"
+  },
+  "mergeNotes": [
+    "2026-10-31: research declares treeNut, soy not detected from ingredient names; added"
+  ]
+}

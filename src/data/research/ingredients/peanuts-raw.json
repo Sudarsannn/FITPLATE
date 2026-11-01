@@ -16,75 +16,275 @@
         "avg": 200,
         "confidence": "High",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-11-01",
+        "min": 160,
+        "max": 290,
+        "avg": 210,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-01.md"
       }
     ],
     "currentEstimate": {
-      "min": 180,
-      "max": 210,
-      "avg": 200
+      "min": 175,
+      "max": 240,
+      "avg": 205
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-11-01",
     "stale": false,
     "seasonal": false,
-    "listingCount": 4,
+    "listingCount": 9,
     "platforms": [
       "Amazon",
       "BigBasket",
-      "Flipkart",
-      "StoreKing"
+      "Flipkart"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 18,
-    "max": 21,
-    "avg": 20
+    "min": 17.5,
+    "max": 24,
+    "avg": 20.5
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 567,
+      "source": "USDA FDC: USDA FDC 172430 'Peanuts, all types, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "proteinG": {
+      "value": 25.8,
+      "source": "USDA FDC: USDA FDC 172430 'Peanuts, all types, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "carbsG": {
+      "value": 16.1,
+      "source": "USDA FDC: USDA FDC 172430 'Peanuts, all types, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sugarsG": {
+      "value": 4.7,
+      "source": "USDA FDC: USDA FDC 172430 'Peanuts, all types, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "fatG": {
+      "value": 49.2,
+      "source": "USDA FDC: USDA FDC 172430 'Peanuts, all types, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 8.5,
+      "source": "USDA FDC: USDA FDC 172430 'Peanuts, all types, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sodiumMg": {
+      "value": 18,
+      "source": "USDA FDC: USDA FDC 172430 'Peanuts, all types, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 172430 'Peanuts, all types, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 172430 'Peanuts, all types, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    }
+  },
   "macrosPer100Estimate": {
     "kcal": 567,
-    "proteinG": 26,
-    "carbsG": 16,
-    "fatG": 49,
+    "proteinG": 25.9,
+    "carbsG": 16.1,
+    "fatG": 49.1,
     "fibreG": 8.5
   },
-  "storage": "Store them in an airtight jar in a cool, dark place for 1–2 months. They keep 4–6 months in the fridge and up to a year in the freezer, because the high oil content goes rancid in heat.",
-  "looksLike": "Oval kernels about 1 cm long with a thin, papery red-pink skin, sold out of the shell.",
-  "howToPick": null,
-  "shelfLife": "4–6 months unopened at room temperature.",
+  "storage": "Airtight container in a cool, dry place for a few months; refrigerate in hot, humid Mumbai weather for longer life.",
+  "looksLike": "Oval kernels about 1 cm long with a thin papery red-pink skin, shelled.",
+  "howToPick": "Plump, evenly sized kernels with intact pink skin and no shrivelled, mouldy or dark-spotted ones; a fresh nutty smell. Avoid musty or bitter-smelling nuts, which can mean rancidity or mould.",
+  "shelfLife": "One Zepto listing mentions about 6 months; raw peanuts go stale faster in heat and damp.",
   "substitutes": [
     "Roasted peanuts",
     "Cashew pieces",
-    "Leave them out"
+    "Leave them out",
+    "Roasted unsalted peanuts (add at the end)",
+    "Cashew pieces or chana dal (fried)",
+    "Omit"
   ],
   "usedIn": [
     {
       "dishNumber": 1,
       "quantity": 10,
       "unit": "g",
-      "raw": "10 g"
+      "raw": "10 g per serving (about 1 tbsp, raw, fried in the tempering)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-11-01",
+      "file": "FitPlate_Ingredients_2026-11-01.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 166.9–262.5 was wider than 30% of avg 206.6; narrowed to ±15%."
+  ]
 }

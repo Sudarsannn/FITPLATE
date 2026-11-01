@@ -127,8 +127,9 @@ export function dishFilterGroups(dishes: readonly Dish[]): FilterGroup<Dish>[] {
     {
       id: 'allergen',
       label: 'Leave out dishes that contain',
+      // An AI draft's allergen list comes from the model and is unverified, so any allergen filter hides it (review 2026-10-28 fix 3).
       mode: 'exclude',
-      options: allergens.map((a: AllergenId) => ({ id: a, label: ALLERGEN_LABELS[a], test: (d: Dish) => d.allergens.includes(a) })),
+      options: allergens.map((a: AllergenId) => ({ id: a, label: ALLERGEN_LABELS[a], test: (d: Dish) => d.allergens.includes(a) || !!d.ai })),
     },
     { id: 'meal', label: 'Meal', mode: 'any', options: meals.map((m) => ({ id: m.toLowerCase(), label: m, test: (d: Dish) => d.mealType.some((x) => title(x) === m) })) },
     { id: 'time', label: 'Time', mode: 'any', options: TIME_OPTIONS },
@@ -171,10 +172,10 @@ export const COMING_SORTS: { label: string; when: string }[] = [
   { label: 'Lowest sodium', when: 'dish sodium data' },
 ];
 
-/** The few chips a card has room for: diet first, then "option" tags, then allergens. */
+/** The few chips a card has room for: "AI draft" first, then diet, then "option" tags, then allergens. */
 export function cardChips(d: Dish, max = 3): string[] {
   const diet = [TAG.veg, TAG.egg, TAG.nonVeg, TAG.vegan, TAG.jain, TAG.jainOption, TAG.veganOption, TAG.glutenFree, TAG.dairyFree, TAG.pescatarian, TAG.sattvik] as string[];
   const chips = d.tags.filter((t) => diet.includes(t));
   const allergens = d.tags.filter((t) => t.startsWith('Contains '));
-  return [...chips, ...allergens].slice(0, max);
+  return [...(d.ai ? ['AI draft'] : []), ...chips, ...allergens].slice(0, max);
 }

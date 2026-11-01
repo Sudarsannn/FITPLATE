@@ -13,73 +13,273 @@
         "avg": 1350,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-11-01",
+        "min": 600,
+        "max": 1960,
+        "avg": 1435,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-01.md"
       }
     ],
     "currentEstimate": {
-      "min": 1320,
-      "max": 1380,
-      "avg": 1350
+      "min": 1195,
+      "max": 1615,
+      "avg": 1405
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-11-01",
     "stale": false,
     "seasonal": false,
-    "listingCount": 2,
+    "listingCount": 13,
     "platforms": [
-      "magicdrop.in (comparison page",
-      "take.app"
+      "Amazon",
+      "BigBasket"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 2 listings back the range (need 3)"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 132,
-    "max": 138,
-    "avg": 135
+    "min": 119.5,
+    "max": 161.5,
+    "avg": 140.5
   },
   "seasonal": false,
-  "nutritionPer100g": null,
-  "macrosPer100Estimate": {
-    "kcal": 350,
-    "proteinG": 12,
-    "carbsG": 50,
-    "fatG": 12,
-    "fibreG": 25
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 289,
+      "source": "Other: Everest Shahi Biryani Masala label via Jamoona listing: Everest Shahi Biryani Masala 50 g label as shown on jamoona.com; Dookan listing disagrees (carbohydrate 64 g, sodium 441 mg) so sodium and sugars left null; no IFCT or USDA entry",
+      "confidence": "Low"
+    },
+    "proteinG": {
+      "value": 13.2,
+      "source": "Other: Everest Shahi Biryani Masala label via Jamoona listing: Everest Shahi Biryani Masala 50 g label as shown on jamoona.com; Dookan listing disagrees (carbohydrate 64 g, sodium 441 mg) so sodium and sugars left null; no IFCT or USDA entry",
+      "confidence": "Low"
+    },
+    "carbsG": {
+      "value": 32,
+      "source": "Other: Everest Shahi Biryani Masala label via Jamoona listing: Everest Shahi Biryani Masala 50 g label as shown on jamoona.com; Dookan listing disagrees (carbohydrate 64 g, sodium 441 mg) so sodium and sugars left null; no IFCT or USDA entry",
+      "confidence": "Low"
+    },
+    "sugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fatG": {
+      "value": 12,
+      "source": "Other: Everest Shahi Biryani Masala label via Jamoona listing: Everest Shahi Biryani Masala 50 g label as shown on jamoona.com; Dookan listing disagrees (carbohydrate 64 g, sodium 441 mg) so sodium and sugars left null; no IFCT or USDA entry",
+      "confidence": "Low"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 16,
+      "source": "Other: Everest Shahi Biryani Masala label via Jamoona listing: Everest Shahi Biryani Masala 50 g label as shown on jamoona.com; Dookan listing disagrees (carbohydrate 64 g, sodium 441 mg) so sodium and sugars left null; no IFCT or USDA entry",
+      "confidence": "Low"
+    },
+    "sodiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    }
   },
-  "storage": "After opening, transfer to a small airtight jar. Room temperature, away from light and heat. It lasts about 3–6 months.",
-  "looksLike": "a brown, fragrant powder, usually sold in 50 g cartons. It smells of whole-spice notes such as mace, star anise, cardamom and bay leaf.",
-  "howToPick": "the carton should be sealed with an inner foil pouch and recently packed, and the masala should smell strongly aromatic. Check whether the blend contains salt, and adjust the dish's salt if it does.",
-  "shelfLife": "about 12 months unopened (check the pack). It is best within 3 months of opening.",
+  "macrosPer100Estimate": {
+    "kcal": 319.5,
+    "proteinG": 12.6,
+    "carbsG": 32,
+    "fatG": 12,
+    "fibreG": 16
+  },
+  "storage": "Airtight steel or glass jar, cool and dry, away from sunlight and steam; do not dip a wet spoon in.",
+  "looksLike": "A brown to dark-brown fragrant powder, finer than whole spices, with warm cinnamon, clove, cardamom and coriander notes.",
+  "howToPick": "A strong sweet-spicy smell when you open the box, a uniform colour and no lumps or damp. Some blends add salt or fillers, so check the ingredient list and sodium per 100 g.",
+  "shelfLife": "Typically 6 to 12 months sealed from the pack date; use within 2 to 3 months after opening for best aroma (general guidance, not from a source in this run).",
   "substitutes": [
-    "Homemade blend"
+    "Homemade blend",
+    "Garam masala plus a little extra coriander and cumin powder",
+    "Whole biryani spices (cardamom, clove, cinnamon, bay leaf, mace)"
   ],
   "usedIn": [
     {
       "dishNumber": 2,
       "quantity": 3,
       "unit": "g",
-      "raw": "3 g (1 tsp, in the marinade)"
+      "raw": "3 g per serving (1 tsp), in the chicken marinade"
     }
   ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-11-01",
+      "file": "FitPlate_Ingredients_2026-11-01.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 847.4–1760.7 was wider than 30% of avg 1405.8; narrowed to ±15%.",
+    "macrosPer100Estimate.carbsG: Versions 2026-10-04 (50) and 2026-11-01 (32) differ by more than 25%; kept the newer.",
+    "macrosPer100Estimate.fibreG: Versions 2026-10-04 (25) and 2026-11-01 (16) differ by more than 25%; kept the newer."
+  ]
 }

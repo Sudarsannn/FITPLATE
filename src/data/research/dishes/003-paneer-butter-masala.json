@@ -2,7 +2,7 @@
   "id": "003-paneer-butter-masala",
   "number": 3,
   "name": "Paneer Butter Masala",
-  "cuisine": "North Indian (Punjabi / Delhi dhaba-restaurant style)",
+  "cuisine": "North Indian (Punjabi / Delhi dhaba-restaurant style; originated in New Delhi per Wikipedia)",
   "dietType": "veg",
   "mealType": [
     "lunch",
@@ -15,7 +15,7 @@
   "ingredients": [
     {
       "ingredientId": "paneer",
-      "name": "Paneer (cottage cheese)",
+      "name": "Paneer (cottage cheese), full-fat",
       "quantity": 100,
       "unit": "g",
       "householdMeasure": "about 12–14 cubes of 2 cm"
@@ -29,7 +29,7 @@
     },
     {
       "ingredientId": "onion",
-      "name": "Onion",
+      "name": "Onion (pyaz)",
       "quantity": 40,
       "unit": "g",
       "householdMeasure": "½ small"
@@ -50,7 +50,7 @@
     },
     {
       "ingredientId": "cooking-oil-refined-sunflower-groundnut",
-      "name": "Vegetable oil",
+      "name": "Sunflower or vegetable oil",
       "quantity": 5,
       "unit": "ml",
       "householdMeasure": "1 tsp"
@@ -120,7 +120,7 @@
     },
     {
       "ingredientId": "fresh-cream",
-      "name": "Fresh cream (malai/Amul fresh cream, ~25% fat)",
+      "name": "Fresh cream (about 25% fat)",
       "quantity": 15,
       "unit": "ml",
       "householdMeasure": "1 tbsp"
@@ -130,7 +130,7 @@
       "name": "Water",
       "quantity": 120,
       "unit": "ml",
-      "householdMeasure": "½ cup (for blending + simmering)"
+      "householdMeasure": "½ cup (blending and simmering)"
     },
     {
       "ingredientId": "coriander-leaves",
@@ -143,11 +143,10 @@
   "equipment": [
     "Kadai or heavy-bottomed pan (about 20 cm)",
     "Mixer-grinder with small chutney jar",
-    "Small bowl for soaking cashews (hot water from a kettle or a small pan)",
-    "Chopping board and knife",
-    "Spatula / wooden spoon",
-    "Measuring spoons (or use a regular teaspoon: 1 level tsp ≈ 5 ml)",
-    "Optional sieve, for a silky restaurant-smooth gravy"
+    "Small bowl for soaking cashews (hot water from a kettle or small pan)",
+    "Chopping board and knife; spatula or wooden spoon",
+    "Measuring spoons (or a regular teaspoon: 1 level tsp is about 5 ml)",
+    "Optional sieve for a silky restaurant-smooth gravy; without one, blend a little longer"
   ],
   "steps": [
     {
@@ -155,10 +154,11 @@
       "title": "Soak cashews",
       "text": "Put 10 g (7–8) cashews in a small bowl and cover with 30 ml hot water.",
       "timerSec": 900,
-      "tip": "hot water softens them faster than cold.",
-      "visualCue": "cashews look slightly swollen and softer",
+      "tip": null,
+      "visualCue": "cashews look slightly swollen and softer, and the water turns faintly cloudy",
       "cameraCheck": "bowl of cashews submerged in water",
-      "videoShot": "hot water poured over cashews in a steel katori"
+      "videoShot": "hot water poured over cashews in a steel katori",
+      "watchOut": "cold water barely softens them, so the blend stays gritty; use hot (not boiling-on-the-stove) water, and if short of time, soak at least 10 min."
     },
     {
       "n": 2,
@@ -166,9 +166,10 @@
       "text": "Roughly chop 40 g (½ small) onion.",
       "timerSec": 60,
       "tip": null,
-      "visualCue": "rough 2 cm pieces; size doesn't matter, it all gets blended",
+      "visualCue": "rough 2 cm pieces; size does not matter, it all gets blended",
       "cameraCheck": "chopped onion on the board",
-      "videoShot": "knife cutting onion into chunks"
+      "videoShot": "knife cutting onion into chunks",
+      "watchOut": "very big chunks cook unevenly and leave a raw onion taste in the gravy; keep them under 3 cm."
     },
     {
       "n": 3,
@@ -176,9 +177,10 @@
       "text": "Roughly chop 150 g (2 medium) tomatoes, removing the hard stem point.",
       "timerSec": 120,
       "tip": null,
-      "visualCue": "juicy chunks",
+      "visualCue": "juicy red chunks, firm-ripe, no green patches",
       "cameraCheck": "chopped tomatoes on the board",
-      "videoShot": "tomatoes quartered and chopped"
+      "videoShot": "tomatoes quartered and chopped",
+      "watchOut": "pale or unripe tomatoes make the gravy sour and dull; if they are pale, add the full ½ tsp sugar in step 19 and taste."
     },
     {
       "n": 4,
@@ -188,7 +190,8 @@
       "tip": null,
       "visualCue": "even cubes that hold their shape",
       "cameraCheck": "paneer cubes on a plate",
-      "videoShot": "paneer block sliced into strips, then cubes"
+      "videoShot": "paneer block sliced into strips, then cubes",
+      "watchOut": "very thin pieces crumble when stirred; keep cubes at least 1.5 cm thick."
     },
     {
       "n": 5,
@@ -196,19 +199,21 @@
       "text": "Cover the cubes with warm (not boiling) water and leave them.",
       "timerSec": 600,
       "tip": "this keeps store-bought paneer soft and stops it going rubbery in the curry.",
-      "visualCue": "cubes submerged",
+      "visualCue": "cubes submerged, water slightly milky",
       "cameraCheck": "bowl of paneer in water",
-      "videoShot": "warm water poured over paneer"
+      "videoShot": "warm water poured over paneer",
+      "watchOut": "boiling water makes paneer rubbery and crumbly; the water should feel comfortably warm to a finger."
     },
     {
       "n": 6,
       "title": "Measure spices",
-      "text": "On a small plate, put ¾ tsp Kashmiri chilli powder, ½ tsp coriander powder, a pinch of turmeric, ¼ tsp garam masala, ½ tsp sugar, ⅓ tsp salt and ½ tsp kasuri methi, each in its own little heap.",
+      "text": "On a small plate, put ¾ tsp Kashmiri chilli powder, ½ tsp coriander powder, a pinch of turmeric, ¼ tsp garam masala, ½ tsp sugar, ⅓ tsp salt and ½ tsp kasuri methi, each in its own heap.",
       "timerSec": 120,
       "tip": null,
-      "visualCue": "separate heaps of spice",
+      "visualCue": "separate heaps of spice, within arm's reach of the stove",
       "cameraCheck": "spice plate",
-      "videoShot": "spoon dropping each spice onto the plate"
+      "videoShot": "spoon dropping each spice onto the plate",
+      "watchOut": "measuring while the pan is hot lets spices burn; have everything ready first."
     },
     {
       "n": 7,
@@ -218,7 +223,8 @@
       "tip": null,
       "visualCue": "oil shimmers and flows freely when you tilt the pan",
       "cameraCheck": "the pan with oil",
-      "videoShot": "oil swirling in the kadai"
+      "videoShot": "oil swirling in the kadai",
+      "watchOut": "smoking oil is too hot (it tastes bitter); lower the heat and wait 20 seconds."
     },
     {
       "n": 8,
@@ -226,9 +232,10 @@
       "text": "Add the chopped onion and stir.",
       "timerSec": 180,
       "tip": null,
-      "visualCue": "onion turns soft and translucent at the edges, not brown",
+      "visualCue": "onion turns soft and translucent at the edges, smells sweet, not brown",
       "cameraCheck": "the pan",
-      "videoShot": "onion sizzling as it's stirred"
+      "videoShot": "onion sizzling as it is stirred",
+      "watchOut": "brown edges mean the gravy will taste bitter and darker than the usual orange; lower the heat and add a splash of water."
     },
     {
       "n": 9,
@@ -236,9 +243,10 @@
       "text": "Add 1 tsp ginger-garlic paste and stir.",
       "timerSec": 60,
       "tip": null,
-      "visualCue": "raw garlic smell fades",
+      "visualCue": "raw garlic smell fades and turns savoury",
       "cameraCheck": "the pan",
-      "videoShot": "paste stirred into onions"
+      "videoShot": "paste stirred into onions",
+      "watchOut": "paste sticking and darkening on the pan; keep stirring and add a spoon of water if it catches."
     },
     {
       "n": 10,
@@ -248,7 +256,8 @@
       "tip": null,
       "visualCue": "pan full of tomato chunks with cashews mixed through",
       "cameraCheck": "the pan",
-      "videoShot": "tomatoes and cashews tipped into the pan"
+      "videoShot": "tomatoes and cashews tipped into the pan",
+      "watchOut": "throwing away the cashew water; it goes into the blender in step 13."
     },
     {
       "n": 11,
@@ -256,19 +265,21 @@
       "text": "Cover and cook on medium-low, stirring every minute or two.",
       "timerSec": 360,
       "tip": null,
-      "visualCue": "tomatoes are completely mushy and break when pressed with the spatula",
+      "visualCue": "tomatoes are completely mushy, skins curling away, and break when pressed with the spatula",
       "cameraCheck": "the pan, pressing a tomato with the spatula",
-      "videoShot": "spatula squashing soft tomato"
+      "videoShot": "spatula squashing soft tomato",
+      "watchOut": "firm tomato pieces left in will make the purée grainy and sour; keep cooking until a piece squashes with no resistance. If it sticks, add 2 tbsp water."
     },
     {
       "n": 12,
       "title": "Cool the mixture",
       "text": "Switch off the heat and tip the mixture onto a plate to cool.",
       "timerSec": 300,
-      "tip": "never blend piping-hot food in a closed jar. Steam can blow the lid off.",
+      "tip": "never blend hot food in a sealed jar.",
       "visualCue": "warm, no longer steaming hard",
       "cameraCheck": "the plate of cooked tomato mixture",
-      "videoShot": "mixture spread on a steel plate"
+      "videoShot": "mixture spread on a steel plate",
+      "watchOut": "blending piping-hot food in a closed jar; steam can blow the lid off and scald you."
     },
     {
       "n": 13,
@@ -278,7 +289,8 @@
       "tip": "for a restaurant-silky gravy, push it through a sieve (optional).",
       "visualCue": "smooth, bright orange-red purée with no flecks of cashew",
       "cameraCheck": "inside of the jar",
-      "videoShot": "purée pouring off a spoon in a smooth ribbon"
+      "videoShot": "purée pouring off a spoon in a smooth ribbon",
+      "watchOut": "tiny cashew bits (gritty gravy); blend 30 seconds longer, or push through a sieve."
     },
     {
       "n": 14,
@@ -286,9 +298,11 @@
       "text": "Wipe out the kadai, put it on low heat and add 2 tsp (10 g) butter.",
       "timerSec": 60,
       "tip": null,
-      "visualCue": "butter melted and foaming gently, not brown",
+      "visualCue": "butter melted and foaming gently, pale yellow",
       "cameraCheck": "the pan with melted butter",
-      "videoShot": "butter melting and foaming"
+      "videoShot": "butter melting and foaming",
+      "watchOut": "brown specks or a nutty-burnt smell; butter on too high a heat browns fast, so lower the heat or start again with fresh butter.",
+      "funFact": "\"makhani\" means \"buttery\", from makhan, the Hindi word for butter (Wikipedia, Paneer makhani)."
     },
     {
       "n": 15,
@@ -296,9 +310,10 @@
       "text": "Add 1 bay leaf to the butter.",
       "timerSec": 15,
       "tip": null,
-      "visualCue": "leaf sizzles and smells fragrant",
+      "visualCue": "leaf sizzles gently and smells fragrant",
       "cameraCheck": "the pan",
-      "videoShot": "bay leaf sizzling in butter"
+      "videoShot": "bay leaf sizzling in butter",
+      "watchOut": "a leaf that turns black (burnt, bitter); lift the pan off the heat for a few seconds."
     },
     {
       "n": 16,
@@ -308,7 +323,8 @@
       "tip": "keep the heat low. Spices burn in seconds.",
       "visualCue": "butter turns deep red; smells toasty, not burnt",
       "cameraCheck": "the pan",
-      "videoShot": "red butter swirled with the spatula"
+      "videoShot": "red butter swirled with the spatula",
+      "watchOut": "powders darkening to brown-black within seconds, with a sharp acrid smell; if that happens pour the purée in at once, or start again."
     },
     {
       "n": 17,
@@ -318,7 +334,8 @@
       "tip": null,
       "visualCue": "sauce bubbles gently and spits a little",
       "cameraCheck": "the pan",
-      "videoShot": "purée poured into the red butter"
+      "videoShot": "purée poured into the red butter",
+      "watchOut": "hard splattering on a hot pan; lower the heat and part-cover."
     },
     {
       "n": 18,
@@ -328,7 +345,8 @@
       "tip": null,
       "visualCue": "gravy darkens a shade, thickens, and tiny drops of butter appear at the edges",
       "cameraCheck": "the pan edge showing the butter separating",
-      "videoShot": "thick gravy bubbling with shiny edges"
+      "videoShot": "thick gravy bubbling with shiny edges",
+      "watchOut": "a raw tomato smell or no butter at the edges means it needs a few more minutes; sticking at the bottom means the heat is too high (add 2 tbsp water)."
     },
     {
       "n": 19,
@@ -336,9 +354,10 @@
       "text": "Add the salt and sugar and stir.",
       "timerSec": 30,
       "tip": null,
-      "visualCue": "dissolved; taste: tangy, mildly sweet, mildly spicy",
+      "visualCue": "dissolved; taste is tangy, mildly sweet, mildly spicy",
       "cameraCheck": "the pan",
-      "videoShot": "salt and sugar sprinkled in"
+      "videoShot": "salt and sugar sprinkled in",
+      "watchOut": "too sweet (a common complaint with this dish); stop at ½ tsp sugar, and if it is too sour add a pinch, not a spoon."
     },
     {
       "n": 20,
@@ -348,7 +367,8 @@
       "tip": null,
       "visualCue": "gravy coats the back of a spoon and drips slowly",
       "cameraCheck": "the back of the spoon coated in gravy",
-      "videoShot": "finger line drawn through gravy on a spoon"
+      "videoShot": "finger line drawn through gravy on a spoon",
+      "watchOut": "gravy that is too thick (it clings in a lump) or watery (runs off the spoon like juice); add water 1 tbsp at a time, or simmer 1 more minute."
     },
     {
       "n": 21,
@@ -358,17 +378,19 @@
       "tip": null,
       "visualCue": "every cube coated in orange gravy",
       "cameraCheck": "the pan",
-      "videoShot": "paneer cubes folded into gravy"
+      "videoShot": "paneer cubes folded into gravy",
+      "watchOut": "stirring hard, which breaks cubes into crumbs; fold with the spatula instead."
     },
     {
       "n": 22,
       "title": "Simmer paneer",
       "text": "Simmer on low.",
       "timerSec": 180,
-      "tip": "don't simmer longer than about 5 minutes, or the paneer toughens.",
+      "tip": null,
       "visualCue": "paneer is warmed through and soft; gravy bubbles lazily",
       "cameraCheck": "the pan",
-      "videoShot": "slow bubbles around paneer cubes"
+      "videoShot": "slow bubbles around paneer cubes",
+      "watchOut": "paneer cooked more than about 5 minutes turns tough and chewy, with no rescue; switch off in time."
     },
     {
       "n": 23,
@@ -376,9 +398,10 @@
       "text": "Crush ½ tsp kasuri methi between your palms over the pan and stir.",
       "timerSec": 15,
       "tip": null,
-      "visualCue": "aroma becomes noticeably \"restaurant-like\"",
+      "visualCue": "aroma becomes noticeably \"restaurant-like\" and slightly bitter-sweet",
       "cameraCheck": "the pan",
-      "videoShot": "kasuri methi crushed between palms"
+      "videoShot": "kasuri methi crushed between palms",
+      "watchOut": "adding it too early or too much (bitter taste); half a teaspoon, late, is enough."
     },
     {
       "n": 24,
@@ -386,9 +409,10 @@
       "text": "Sprinkle in ¼ tsp garam masala and stir.",
       "timerSec": 15,
       "tip": null,
-      "visualCue": "evenly mixed",
+      "visualCue": "evenly mixed, warm spice smell",
       "cameraCheck": "the pan",
-      "videoShot": "garam masala sprinkled over"
+      "videoShot": "garam masala sprinkled over",
+      "watchOut": "too much garam masala overpowers the butter and tomato; do not add a second pinch."
     },
     {
       "n": 25,
@@ -398,7 +422,8 @@
       "tip": "adding cream with the heat off stops it splitting.",
       "visualCue": "gravy turns a paler, glossy orange",
       "cameraCheck": "the pan",
-      "videoShot": "white cream swirled through orange gravy"
+      "videoShot": "white cream swirled through orange gravy",
+      "watchOut": "white streaks and a grainy, split look when cream goes into boiling gravy; take the pan off the heat first, and whisk in 1 tbsp water to rescue it."
     },
     {
       "n": 26,
@@ -408,14 +433,15 @@
       "tip": null,
       "visualCue": "glossy orange curry with visible paneer cubes",
       "cameraCheck": "the finished bowl",
-      "videoShot": "slow pan across the finished bowl"
+      "videoShot": "slow pan across the finished bowl",
+      "watchOut": "leaving the bay leaf in; it is tough and not meant to be eaten."
     }
   ],
   "nutritionPerServing": {
     "kcal": 540,
     "proteinG": 23,
     "carbsG": 18,
-    "fatG": 43,
+    "fatG": 42.5,
     "fibreG": 4
   },
   "microNutrientsEstimate": {
@@ -447,7 +473,77 @@
     "coveragePct": 71,
     "basis": "partial estimate from ingredient quantities"
   },
-  "asOrdered": null,
+  "asOrdered": {
+    "price": {
+      "priceHistory": [
+        {
+          "date": "2026-10-04",
+          "min": 280,
+          "max": 380,
+          "avg": 330,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-10-04.md"
+        },
+        {
+          "date": "2026-11-01",
+          "min": 290,
+          "max": 420,
+          "avg": 330,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-11-01.md"
+        }
+      ],
+      "currentEstimate": {
+        "min": 280,
+        "max": 380,
+        "avg": 330
+      },
+      "method": "wma",
+      "trend": "unknown",
+      "change30dPct": null,
+      "lastObserved": "2026-11-01",
+      "stale": false,
+      "seasonal": false,
+      "listingCount": 8,
+      "platforms": [
+        "Swiggy"
+      ],
+      "outOfStock": true,
+      "confirmed": false,
+      "checkNotes": [
+        "only 1 platform (Swiggy) backs the range",
+        "a listing used for the range is marked out of stock, closed or not taking orders"
+      ]
+    },
+    "nutrition": {
+      "calories": {
+        "value": null,
+        "source": null
+      },
+      "protein": {
+        "value": null,
+        "source": null
+      },
+      "carbs": {
+        "value": null,
+        "source": null
+      },
+      "fat": {
+        "value": null,
+        "source": null
+      },
+      "fibre": {
+        "value": null,
+        "source": null
+      }
+    },
+    "restaurantsSampled": null,
+    "platforms": [
+      "Swiggy",
+      "Zomato",
+      "magicpin"
+    ]
+  },
   "orderPrice": {
     "priceHistory": [
       {
@@ -457,6 +553,14 @@
         "avg": 330,
         "confidence": null,
         "sourceFile": "FitPlate_Dishes_2026-10-04.md"
+      },
+      {
+        "date": "2026-11-01",
+        "min": 290,
+        "max": 420,
+        "avg": 330,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-11-01.md"
       }
     ],
     "currentEstimate": {
@@ -464,34 +568,36 @@
       "max": 380,
       "avg": 330
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-11-01",
     "stale": false,
     "seasonal": false,
-    "listingCount": 5,
+    "listingCount": 8,
     "platforms": [
-      "Swiggy",
-      "Zomato"
+      "Swiggy"
     ],
-    "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "outOfStock": true,
+    "confirmed": false,
+    "checkNotes": [
+      "only 1 platform (Swiggy) backs the range",
+      "a listing used for the range is marked out of stock, closed or not taking orders"
+    ]
   },
   "healthiness": {
-    "score": 6,
-    "restaurantScore": 4,
+    "score": 5,
+    "restaurantScore": 3,
     "reasons": [
-      "Paneer gives good protein (~23 g) and the tomato base brings lycopene and some fibre. But fat is high (~43 g, much of it saturated from paneer, butter and cream), and the dish has almost no vegetables beyond tomato and onion. This version uses 10 g butter + 5 ml oil + 1 tbsp cream. Restaurant versions commonly use 2–4 times that butter and cream, plus more sugar and salt, often with a heavy butter naan on the side."
+      "paneer gives good protein (about 23 g), calcium and B12, and the tomato base brings lycopene. But fat is high (about 42 g) with about 23 g saturated (a full day's limit), about 93 mg cholesterol and about 830 mg sodium, and there is almost no vegetable beyond tomato and onion. Restaurant versions commonly use 2–4 times the butter and cream, more sugar and salt, and come with butter naan."
     ]
   },
   "researchRating": {
     "score": 4.6,
-    "basis": "one of India's most-ordered and most-cooked paneer dishes. Recipes are rated very highly by home cooks, though a recurring complaint is that versions can taste too sweet or heavy."
+    "basis": "one of India's most-cooked and most-ordered paneer dishes; at least 15 independent recipe sites and food blogs publish a restaurant-style version (Veg Recipes of India, Swasthi's, Whisk Affair, Archana's Kitchen, Cook with Manali and others), and it is on pure-veg menus across Mumbai. A recurring complaint is that versions can be too sweet or heavy. Star counts and review totals were not visible in this cycle's search snippets, so the 4.6 is carried over from the previous cycle's evidence (Cooking and Me 4.99 from 60 votes, The Endless Meal 4.9 from 62 ratings, HelloFresh 4.0–4.5), not re-verified."
   },
-  "storage": "Fridge-safe in an airtight container for up to 2 days. Freezer: up to 1 month (est.), though the paneer turns slightly spongy and the cream may separate a little. Reheating: gently on the stove on low with 2–3 tbsp water, stirring, until just hot. In the microwave, use 1-minute bursts and stir in between. Don't boil hard.",
-  "leftoverRemix": "Paneer makhani kathi roll. Simmer the leftover curry until thick, mash a few paneer cubes, then spread on a warm roti with sliced onion, a squeeze of lemon and green chutney, and roll it up for a quick lunch.",
+  "storage": "Fridge-safe in an airtight container for up to 2 days. Freezer: up to 1 month (est.), though the paneer turns slightly spongy and the cream may separate. Reheating: gently on the stove on low with 2–3 tbsp water, stirring, until just hot. In the microwave, use 1-minute bursts and stir between. Do not boil hard.",
+  "leftoverRemix": "Paneer makhani kathi roll. Simmer the leftover curry until thick, mash a few paneer cubes, spread on a warm roti with sliced onion, a squeeze of lemon and green chutney, and roll it up.",
   "burnOff": "about 7.7 km of running (at ~70 kcal/km), or about 11 km of brisk walking (at ~50 kcal/km, est.).",
   "sources": [
     "Hebbar's Kitchen, Paneer Butter Masala (Restaurant Style): https://hebbarskitchen.com/paneer-butter-masala-recipe/",
@@ -509,17 +615,96 @@
     "Swiggy, Best Paneer Butter Masala Restaurants in Mumbai (dish page, via search snippet): https://www.swiggy.com/city/mumbai/paneer-butter-masala-dish-restaurants",
     "Zomato, Banarasi Pure Veg Restaurant, Chembur (via search snippet): https://www.zomato.com/mumbai/banarasi-pure-veg-restaurant-chembur/order",
     "IFCT 2017, Indian Food Composition Tables (ICMR-NIN): https://www.nin.res.in/ebooks/IFCT2017.pdf",
-    "USDA FoodData Central: https://fdc.nal.usda.gov/"
+    "USDA FoodData Central: https://fdc.nal.usda.gov/",
+    "Swasthi's, Paneer Butter Masala restaurant style: https://www.indianhealthyrecipes.com/paneer-butter-masala-restaurant-style/",
+    "Archana's Kitchen, Paneer Makhani: https://archanaskitchen.com/paneer-makhani",
+    "Cubes N Juliennes, Restaurant Style Paneer Butter Masala: https://www.cubesnjuliennes.com/restaurant-style-paneer-butter-masala/",
+    "My Food Story, Restaurant Style Paneer Butter Masala: https://myfoodstory.com/wprm_print/restaurant-style-paneer-butter-masala",
+    "Three Whistles Kitchen, Paneer Butter Masala Restaurant Style: https://threewhistleskitchen.com/paneer-butter-masala-restaurant-style/",
+    "Chef Kunal Kapur, Paneer Butter Masala: https://www.chefkunalkapur.com/paneer-butter-masala/",
+    "Cook with Manali (snippet listing): https://www.cookwithmanali.com/wprm_print/42646",
+    "Wikipedia, Paneer makhani (origin, \"makhani\" = buttery): https://en.wikipedia.org/wiki/Paneer_makhani",
+    "Medium / vegfoodblogger, paneer butter masala without onion garlic: https://vegfoodblogger.medium.com/learn-how-to-cook-paneer-butter-masala-without-onion-garlic-c3d5e241c041",
+    "Yumsome, Vegan Paneer Butter Masala (title only): https://www.yumsome.com/vegan-paneer-butter-masala/",
+    "Neo Welcome, Ghatkopar West: https://swiggy.com/city/mumbai/neo-welcome-restaurant-ghatkopar-west-rest6278",
+    "Ruchi Veg, Goregaon East: https://swiggy.com/restaurants/ruchi-veg-restaurant-east-goregaon-mumbai-36633",
+    "Tulsi Vihar, Kandivali West: https://www.swiggy.com/city/mumbai/tulsi-vihar-kandivali-west-rest110123",
+    "Radha Krishna, Andheri West: https://swiggy.com/restaurants/radha-krishna-near-station-andheri-west-mumbai-313634",
+    "Suruchi Bhog, Airoli (MMR): https://swiggy.com/city/mumbai/suruchi-bhog-airoli-rest37797",
+    "Pet Pooja Point (MMR): https://www.swiggy.com/city/mumbai/pet-pooja-point-east-kalyan-rest133442",
+    "Swad Veg Treats, Panvel (MMR): https://www.swiggy.com/city/mumbai/swad-veg-treats-sector-10-panvel-rest48193",
+    "The Chicken Story, Thane (MMR): https://swiggy.com/city/mumbai/the-chicken-story-manpada-thane-rest883448",
+    "Navaratna Veg Restaurant, Vashi (MMR, premium, excluded): https://www.swiggy.com/city/mumbai/navaratna-veg-restaurant-vashi-rest286146",
+    "Zomato, Vijay Pure Veg, Kandivali East (no price shown): https://www.zomato.com/mumbai/vijay-pure-veg-kandivali-east/order",
+    "IFCT 2017 (ICMR-NIN): https://www.nin.res.in/ebooks/IFCT2017.pdf ; USDA FoodData Central: https://fdc.nal.usda.gov/",
+    "As-ordered context only: Tarla Dalal https://www.tarladalal.com/calories-for-paneer-butter-masala-38973 ; FatSecret https://www.fatsecret.com.au/calories-nutrition/generic/paneer-butter-masala ; We Are Food https://www.fatsecret.co.za/calories-nutrition/we-are-food/paneer-butter-masala/1-serving"
   ],
   "allergens": [
+    "peanut",
     "treeNut",
     "milk"
   ],
-  "dietClaims": [],
-  "fasting": null,
-  "dietTags": null,
+  "dietClaims": [
+    "glutenFree"
+  ],
+  "fasting": {
+    "navratri": {
+      "status": "with-changes",
+      "reason": "paneer, cream, butter, cashew and tomato are allowed in the common vrat rule set; skip onion, garlic, kasuri methi and garam masala if your family avoids them, and use sendha namak (assumption: the common rule set)."
+    },
+    "ekadashi": {
+      "status": "with-changes",
+      "reason": "no grains or pulses in the dish; skip onion and garlic (common rule set; family rules on spices vary)."
+    },
+    "jain": {
+      "status": "with-changes",
+      "reason": "onion, garlic and fresh ginger are roots; use the Jain variant (sonth, no onion, garlic or ginger)."
+    },
+    "ramadan": {
+      "status": "yes",
+      "reason": "vegetarian, so no halal-meat issue; filling and high in protein, but heavy for sehri (about 42 g fat, about 830 mg sodium, est.), so eat a small bowl and drink water."
+    }
+  },
+  "dietTags": {
+    "base": "Vegetarian",
+    "jain": {
+      "status": "with-changes",
+      "reason": "onion, garlic and fresh ginger are root vegetables; drop all three, use dry ginger powder (sonth) and extra tomato and cashew (see Jain variant)."
+    },
+    "vegan": {
+      "status": "with-changes",
+      "reason": "paneer, butter and cream are dairy; use firm tofu, oil and extra cashew (see Vegan variant)."
+    },
+    "pescatarian": {
+      "status": "yes",
+      "reason": "vegetarian, no meat or egg."
+    },
+    "sattvik": {
+      "status": "with-changes",
+      "reason": "skip onion and garlic and lean on tomato, cashew and ginger (see Sattvik variant)."
+    },
+    "glutenFree": {
+      "status": "yes",
+      "reason": "no wheat, maida, rava or hing in the recipe; if you add hing use a gluten-free one, as most hing sold in India is compounded with wheat flour. Check the garam masala label for added flour."
+    },
+    "dairyFree": {
+      "status": "with-changes",
+      "reason": "paneer, butter and cream are the dairy; use the Vegan variant."
+    },
+    "allergensDeclared": [
+      "milk",
+      "peanut",
+      "treeNut"
+    ]
+  },
   "tags": [
     "Veg",
+    "Jain option",
+    "Vegan option",
+    "Gluten-free",
+    "Dairy-free option",
+    "Ramadan sehri / iftar",
+    "Contains peanut",
     "Contains tree nuts",
     "Contains milk",
     "Lunch",
@@ -529,19 +714,59 @@
     "Beginner",
     "High protein"
   ],
-  "description": null,
+  "description": "Family: paneer-butter-masala",
   "familyId": null,
-  "variants": [],
-  "needsReview": [],
+  "variants": [
+    {
+      "category": "Jain",
+      "status": "variant",
+      "name": "Jain Paneer Butter Masala (no onion, garlic or ginger)",
+      "origin": "established",
+      "linkedDishNumber": null,
+      "reason": null
+    },
+    {
+      "category": "Vegan",
+      "status": "variant",
+      "name": "Tofu Butter Masala",
+      "origin": "established",
+      "linkedDishNumber": null,
+      "reason": null
+    },
+    {
+      "category": "Dairy-free",
+      "status": "variant",
+      "name": "Tofu Butter Masala (same as the Vegan variant)",
+      "origin": "established",
+      "linkedDishNumber": null,
+      "reason": null
+    },
+    {
+      "category": "Sattvik",
+      "status": "variant",
+      "name": "No-onion no-garlic Paneer Butter Masala",
+      "origin": "established",
+      "linkedDishNumber": null,
+      "reason": null
+    }
+  ],
+  "needsReview": [
+    "price not confirmed (2026-11-01): only 1 platform (Swiggy) backs the range",
+    "price not confirmed (2026-11-01): a listing used for the range is marked out of stock, closed or not taking orders"
+  ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Dishes_2026-10-04.md"
+    },
+    {
+      "date": "2026-11-01",
+      "file": "FitPlate_Dishes_2026-11-01.md"
     }
   ],
   "mergeMethod": {
-    "nutritionPerServing": "stable (single)",
-    "orderPrice": "price engine (single)",
+    "nutritionPerServing": "stable (mean-2)",
+    "orderPrice": "price engine (wma)",
     "ingredients": "newest",
     "steps": "newest",
     "healthiness": "newest",
@@ -551,6 +776,7 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 280.0–380.0 was wider than 30% of avg 330.0; narrowed to ±15%."
+    "Range 286.6–406.3 was wider than 30% of avg 330.0; narrowed to ±15%.",
+    "2026-11-01: research declares peanut not detected from ingredient names; added"
   ]
 }

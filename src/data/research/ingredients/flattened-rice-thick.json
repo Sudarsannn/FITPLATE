@@ -16,79 +16,274 @@
         "avg": 91,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-11-01",
+        "min": 78,
+        "max": 134,
+        "avg": 104,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-01.md"
       }
     ],
     "currentEstimate": {
-      "min": 86,
-      "max": 100,
-      "avg": 91
+      "min": 83,
+      "max": 112,
+      "avg": 97
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-11-01",
     "stale": false,
     "seasonal": false,
-    "listingCount": 6,
+    "listingCount": 12,
     "platforms": [
       "BigBasket",
-      "Swiggy Instamart"
+      "Blinkit"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 8.6,
-    "max": 10,
-    "avg": 9.1
+    "min": 8.3,
+    "max": 11.2,
+    "avg": 9.7
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 346,
+      "source": "IFCT 2017: IFCT 2017 dry flattened rice values as quoted by Organic Mandya (secondary site); iron 2.7 mg from an IFCT-attributed table in search results, not verified; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "proteinG": {
+      "value": 6.6,
+      "source": "IFCT 2017: IFCT 2017 dry flattened rice values as quoted by Organic Mandya (secondary site); iron 2.7 mg from an IFCT-attributed table in search results, not verified; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "carbsG": {
+      "value": 77.3,
+      "source": "IFCT 2017: IFCT 2017 dry flattened rice values as quoted by Organic Mandya (secondary site); iron 2.7 mg from an IFCT-attributed table in search results, not verified; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "sugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 1.2,
+      "source": "IFCT 2017: IFCT 2017 dry flattened rice values as quoted by Organic Mandya (secondary site); iron 2.7 mg from an IFCT-attributed table in search results, not verified; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "sodiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "ironMg": {
+      "value": 2.7,
+      "source": "IFCT 2017: IFCT 2017 dry flattened rice values as quoted by Organic Mandya (secondary site); iron 2.7 mg from an IFCT-attributed table in search results, not verified; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "IFCT 2017: IFCT 2017 dry flattened rice values as quoted by Organic Mandya (secondary site); iron 2.7 mg from an IFCT-attributed table in search results, not verified; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "IFCT 2017: IFCT 2017 dry flattened rice values as quoted by Organic Mandya (secondary site); iron 2.7 mg from an IFCT-attributed table in search results, not verified; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    }
+  },
   "macrosPer100Estimate": {
     "kcal": 346,
     "proteinG": 6.6,
-    "carbsG": 77,
+    "carbsG": 77.2,
     "fatG": 1.2,
-    "fibreG": 2
+    "fibreG": 1.2
   },
-  "storage": "Keep it at room temperature in an airtight jar, away from moisture. Use it within 2–3 months of opening. In the monsoon, storing it in the fridge helps keep insects away.",
-  "looksLike": "Flat, off-white, oval flakes about the size of a fingernail, slightly see-through. The thick (\"jada\") kind is stiff and does not crumble when you press it. The thin (\"patla\") kind is papery.",
-  "howToPick": null,
-  "shelfLife": "About 6–9 months unopened. Check the date on the pack.",
+  "storage": "Keep in an airtight container at room temperature, away from damp. Use within a few months of opening.",
+  "looksLike": "Flat, off-white, oval flakes that stay stiff when pressed; the thin (\"patla\") kind is papery.",
+  "howToPick": "Buy \"thick\" or \"jada\" flakes that look whole and not powdery, with little broken dust at the bottom of the pack; a clean, mild smell. Avoid a musty smell or damp, clumped flakes.",
+  "shelfLife": "Typically several months sealed (general guidance; not from a source in this run).",
   "substitutes": [
     "Medium poha",
     "Thin poha",
-    "Puffed rice (murmura)"
+    "Puffed rice (murmura)",
+    "Red or brown poha",
+    "Cooked rice or sabudana"
   ],
   "usedIn": [
     {
       "dishNumber": 1,
       "quantity": 60,
       "unit": "g",
-      "raw": "60 g (thick)"
-    },
-    {
-      "dishNumber": 4,
-      "quantity": 5,
-      "unit": "g",
-      "raw": "5 g in the dosa batter (optional)"
+      "raw": "60 g per serving (about ¾ cup, dry thick poha)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-11-01",
+      "file": "FitPlate_Ingredients_2026-11-01.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 82.1–116.6 was wider than 30% of avg 97.3; narrowed to ±15%.",
+    "macrosPer100Estimate.fibreG: Versions 2026-10-04 (2) and 2026-11-01 (1.2) differ by more than 25%; kept the newer."
+  ]
 }

@@ -15,20 +15,28 @@
         "avg": 165,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-11-01",
+        "min": 90,
+        "max": 300,
+        "avg": 220,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-01.md"
       }
     ],
     "currentEstimate": {
-      "min": 140,
-      "max": 190,
-      "avg": 165
+      "min": 170,
+      "max": 230,
+      "avg": 200
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-11-01",
     "stale": false,
     "seasonal": false,
-    "listingCount": 3,
+    "listingCount": 7,
     "platforms": [
       "BigBasket"
     ],
@@ -39,43 +47,233 @@
     ]
   },
   "per100Estimate": {
-    "min": 14,
-    "max": 19,
-    "avg": 16.5
+    "min": 17,
+    "max": 23,
+    "avg": 20
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 323,
+      "source": "USDA FDC: USDA FDC 171324 'Spices, fenugreek seed'; values seen only on secondary sites that mirror it (getfoodfacts, foodstruct, vegnt, nutrientnorms); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "proteinG": {
+      "value": 23,
+      "source": "USDA FDC: USDA FDC 171324 'Spices, fenugreek seed'; values seen only on secondary sites that mirror it (getfoodfacts, foodstruct, vegnt, nutrientnorms); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "carbsG": {
+      "value": 58.4,
+      "source": "USDA FDC: USDA FDC 171324 'Spices, fenugreek seed'; values seen only on secondary sites that mirror it (getfoodfacts, foodstruct, vegnt, nutrientnorms); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fatG": {
+      "value": 6.4,
+      "source": "USDA FDC: USDA FDC 171324 'Spices, fenugreek seed'; values seen only on secondary sites that mirror it (getfoodfacts, foodstruct, vegnt, nutrientnorms); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "saturatedFatG": {
+      "value": 1.5,
+      "source": "USDA FDC: USDA FDC 171324 'Spices, fenugreek seed'; values seen only on secondary sites that mirror it (getfoodfacts, foodstruct, vegnt, nutrientnorms); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "fibreG": {
+      "value": 24.6,
+      "source": "USDA FDC: USDA FDC 171324 'Spices, fenugreek seed'; values seen only on secondary sites that mirror it (getfoodfacts, foodstruct, vegnt, nutrientnorms); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sodiumMg": {
+      "value": 67,
+      "source": "USDA FDC: USDA FDC 171324 'Spices, fenugreek seed'; values seen only on secondary sites that mirror it (getfoodfacts, foodstruct, vegnt, nutrientnorms); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "ironMg": {
+      "value": 33.5,
+      "source": "USDA FDC: USDA FDC 171324 'Spices, fenugreek seed'; values seen only on secondary sites that mirror it (getfoodfacts, foodstruct, vegnt, nutrientnorms); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "calciumMg": {
+      "value": 176,
+      "source": "USDA FDC: USDA FDC 171324 'Spices, fenugreek seed'; values seen only on secondary sites that mirror it (getfoodfacts, foodstruct, vegnt, nutrientnorms); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "potassiumMg": {
+      "value": 770,
+      "source": "USDA FDC: USDA FDC 171324 'Spices, fenugreek seed'; values seen only on secondary sites that mirror it (getfoodfacts, foodstruct, vegnt, nutrientnorms); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "magnesiumMg": {
+      "value": 191,
+      "source": "USDA FDC: USDA FDC 171324 'Spices, fenugreek seed'; values seen only on secondary sites that mirror it (getfoodfacts, foodstruct, vegnt, nutrientnorms); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "zincMg": {
+      "value": 2.5,
+      "source": "USDA FDC: USDA FDC 171324 'Spices, fenugreek seed'; values seen only on secondary sites that mirror it (getfoodfacts, foodstruct, vegnt, nutrientnorms); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": 3,
+      "source": "USDA FDC: USDA FDC 171324 'Spices, fenugreek seed'; values seen only on secondary sites that mirror it (getfoodfacts, foodstruct, vegnt, nutrientnorms); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": 8.84,
+      "source": "USDA FDC: USDA FDC 171324 'Spices, fenugreek seed'; values seen only on secondary sites that mirror it (getfoodfacts, foodstruct, vegnt, nutrientnorms); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 171324 'Spices, fenugreek seed'; values seen only on secondary sites that mirror it (getfoodfacts, foodstruct, vegnt, nutrientnorms); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": 6.3,
+      "source": "USDA FDC: USDA FDC 171324 'Spices, fenugreek seed'; values seen only on secondary sites that mirror it (getfoodfacts, foodstruct, vegnt, nutrientnorms); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "copperMg": {
+      "value": 1.1,
+      "source": "USDA FDC: USDA FDC 171324 'Spices, fenugreek seed'; values seen only on secondary sites that mirror it (getfoodfacts, foodstruct, vegnt, nutrientnorms); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "manganeseMg": {
+      "value": 1.23,
+      "source": "USDA FDC: USDA FDC 171324 'Spices, fenugreek seed'; values seen only on secondary sites that mirror it (getfoodfacts, foodstruct, vegnt, nutrientnorms); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": 0.6,
+      "source": "USDA FDC: USDA FDC 171324 'Spices, fenugreek seed'; values seen only on secondary sites that mirror it (getfoodfacts, foodstruct, vegnt, nutrientnorms); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 171324 'Spices, fenugreek seed'; values seen only on secondary sites that mirror it (getfoodfacts, foodstruct, vegnt, nutrientnorms); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    }
+  },
   "macrosPer100Estimate": {
     "kcal": 323,
     "proteinG": 23,
-    "carbsG": 58,
+    "carbsG": 58.2,
     "fatG": 6.4,
-    "fibreG": 25
+    "fibreG": 24.8
   },
-  "storage": "Airtight jar at room temperature, dry place: up to 1–2 years.",
-  "looksLike": "small, hard, angular mustard-yellow to amber seeds (about 3 mm); bitter when raw.",
-  "howToPick": null,
-  "shelfLife": "12–24 months sealed.",
+  "storage": "Airtight jar, cool dark cupboard, away from damp, for up to about a year.",
+  "looksLike": "Small, hard, angular seeds, mustard-yellow to amber, about 3 mm; bitter when raw.",
+  "howToPick": "Hard, evenly golden-yellow seeds with a strong, slightly bitter smell; avoid dusty, dark, shrivelled or musty seeds and any with insect holes.",
+  "shelfLife": "About 1 year or more if kept dry (general guidance; not from a source in this run).",
   "substitutes": [
-    "Leave it out of dosa batter"
+    "Leave it out of dosa batter",
+    "Fenugreek (methi) powder",
+    "Skip it in dosa batter",
+    "Kasuri methi (dried leaves)"
   ],
   "usedIn": [
     {
       "dishNumber": 4,
       "quantity": 1,
       "unit": "g",
-      "raw": "1 g (a pinch, about ⅕ tsp)"
+      "raw": "1 g per serving (a pinch, about ⅕ tsp, soaked with the urad dal)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Ingredients_2026-10-04.md"
+    },
+    {
+      "date": "2026-11-01",
+      "file": "FitPlate_Ingredients_2026-11-01.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "storage": "newest",
@@ -84,6 +282,6 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 90.0–245.0 was wider than 30% of avg 165.0; narrowed to ±15%."
+    "Range 90.0–281.1 was wider than 30% of avg 201.1; narrowed to ±15%."
   ]
 }

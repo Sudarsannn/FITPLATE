@@ -5,7 +5,8 @@
   "cuisine": "South Indian (Udupi, Karnataka)",
   "dietType": "veg",
   "mealType": [
-    "breakfast"
+    "breakfast",
+    "dinner"
   ],
   "difficulty": "Intermediate",
   "prepMin": 30,
@@ -56,7 +57,7 @@
     },
     {
       "ingredientId": "cooking-oil-refined-sunflower-groundnut",
-      "name": "Oil (groundnut or sunflower) for the tawa",
+      "name": "Oil (sunflower; groundnut also used) for the tawa",
       "quantity": 5,
       "unit": "g",
       "householdMeasure": "1 tsp"
@@ -77,7 +78,7 @@
     },
     {
       "ingredientId": "cooking-oil-refined-sunflower-groundnut",
-      "name": "Oil (groundnut or sunflower)",
+      "name": "Oil (sunflower; groundnut also used)",
       "quantity": 5,
       "unit": "g",
       "householdMeasure": "1 tsp"
@@ -185,19 +186,21 @@
       "text": "(smallest practical batch: 190 g).",
       "timerSec": 60,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "short, opaque grains, level on the scale at 40 g",
       "cameraCheck": "the bowl of rice on the scale.",
-      "videoShot": "rice poured into a bowl on a kitchen scale."
+      "videoShot": "rice poured into a bowl on a kitchen scale.",
+      "watchOut": "scooping by cup instead of weight, which gives too much rice and a stiff batter; use the scale or 3 level tbsp."
     },
     {
       "n": 2,
       "title": "Rinse the rice 3 times in fresh water",
-      "text": ", swirling with your fingers, until the water is only slightly cloudy.",
+      "text": ", swirling with your fingers.",
       "timerSec": 120,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "the first water is white and thick, the third is thin and nearly see-through",
       "cameraCheck": "the bowl with the last rinse water.",
-      "videoShot": "a hand swirling rice in water, then the cloudy water poured off."
+      "videoShot": "a hand swirling rice in water, then the cloudy water poured off.",
+      "watchOut": "skipping the rinse, which leaves surface starch and a gummy batter; keep rinsing until the water is only faintly cloudy."
     },
     {
       "n": 3,
@@ -205,9 +208,10 @@
       "text": "about 2 cm above the grains.",
       "timerSec": 30,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "a clear layer of water about two finger-widths above the rice",
       "cameraCheck": "the bowl from the side, showing the water level.",
-      "videoShot": "water poured over the rice."
+      "videoShot": "water poured over the rice.",
+      "watchOut": "grains poking out, which stay hard; top up with water until they are covered."
     },
     {
       "n": 4,
@@ -215,9 +219,10 @@
       "text": "(batch: 60 g dal + 1/4 tsp methi).",
       "timerSec": 60,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "white dal with a few yellow seeds mixed in",
       "cameraCheck": "the bowl with white dal and the yellow seeds visible.",
-      "videoShot": "dal and methi seeds dropped into a bowl."
+      "videoShot": "dal and methi seeds dropped into a bowl.",
+      "watchOut": "using too much methi, which makes the dosa bitter; keep to a pinch (1 g)."
     },
     {
       "n": 5,
@@ -225,19 +230,21 @@
       "text": "2 cm above.",
       "timerSec": 120,
       "tip": "soak the dal and the rice separately. Urad dal is ground on its own to make it fluffy.",
-      "visualCue": null,
+      "visualCue": "the second rinse water is only slightly cloudy",
       "cameraCheck": "the soaking bowl.",
-      "videoShot": "dal rinsed and topped with water."
+      "videoShot": "dal rinsed and topped with water.",
+      "watchOut": "rinsing too long or too hard, which washes away the natural yeasts that help fermentation; two quick rinses are enough."
     },
     {
       "n": 6,
-      "title": "Leave both bowls covered for 4–5 hours",
+      "title": "Leave both bowls covered for 4-5 hours",
       "text": "If using poha, add 5 g poha to the rice bowl for the last 30 min.",
       "timerSec": 14400,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "the dal looks swollen and the rice grains turn chalky white and soft",
       "cameraCheck": "one rice grain pressed between two fingers.",
-      "videoShot": "a soaked grain crushed between fingertips."
+      "videoShot": "a soaked grain crushed between fingertips.",
+      "watchOut": "under-soaking, which leaves hard grains and a gritty batter; if a grain still resists, soak another hour."
     },
     {
       "n": 7,
@@ -245,19 +252,21 @@
       "text": "and put them in the mixer jar.",
       "timerSec": 60,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "plump, damp dal sitting in the jar with only a thin film of water",
       "cameraCheck": "the jar with drained dal.",
-      "videoShot": "dal tipped from a sieve into the mixer jar."
+      "videoShot": "dal tipped from a sieve into the mixer jar.",
+      "watchOut": "extra water in the jar, which makes the batter runny; drain well in a sieve."
     },
     {
       "n": 8,
       "title": "Add 2 tbsp cold water and grind the dal for 1 min",
-      "text": "Stop, scrape down the sides, add 1 more tbsp water, and grind for 1–2 min more.",
+      "text": "Stop, scrape down the sides, add 1 more tbsp water, and grind for 1-2 min more.",
       "timerSec": 240,
       "tip": "use cold water and grind in short bursts. A hot mixer makes the batter dense.",
-      "visualCue": null,
+      "visualCue": "a pale, airy, foamy batter that holds a soft peak on a spoon",
       "cameraCheck": "a spoon of dal batter lifted and dropped back.",
-      "videoShot": "a spoon lifting thick, foamy white batter."
+      "videoShot": "a spoon lifting thick, foamy white batter.",
+      "watchOut": "a hot, dense batter from grinding non-stop; grind in short bursts with cold water. If it is thin and flat, it will not ferment well, so add less water next time."
     },
     {
       "n": 9,
@@ -265,39 +274,43 @@
       "text": "Pour the dal batter into the large fermenting bowl",
       "timerSec": 60,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "a mound of fluffy white batter in a bowl big enough to double",
       "cameraCheck": "the fermenting bowl.",
-      "videoShot": "batter scraped into a big steel bowl."
+      "videoShot": "batter scraped into a big steel bowl.",
+      "watchOut": "a bowl that is too small, so the risen batter spills; use a bowl at least 3 times the batter volume."
     },
     {
       "n": 10,
       "title": "Drain the rice (and poha) and grind it with about 3 tbsp water",
-      "text": "for 2–3 min.",
+      "text": "for 2-3 min.",
       "timerSec": 240,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "a thick, creamy off-white batter with a slight grain when rubbed on a fingertip",
       "cameraCheck": "rice batter on a fingertip.",
-      "videoShot": "thick rice batter pouring from the jar."
+      "videoShot": "thick rice batter pouring from the jar.",
+      "watchOut": "grinding it perfectly smooth, which gives a soft, not crisp, dosa; keep a slight grain. If it is too thick for the blades, add 1 tbsp water at a time."
     },
     {
       "n": 11,
       "title": "Add the rice batter to the dal batter, add 1 g salt (batch: 3/4 tsp), and mix with your clean hand",
       "text": "for 1 min.",
       "timerSec": 120,
-      "tip": "mixing by hand adds the warmth and natural microbes that help fermentation.",
-      "visualCue": null,
+      "tip": "mixing by hand adds warmth and natural microbes that help fermentation.",
+      "visualCue": "one even off-white batter with no streaks of white dal",
       "cameraCheck": "the mixed batter dripping off a spoon.",
-      "videoShot": "a hand folding the two batters together."
+      "videoShot": "a hand folding the two batters together.",
+      "watchOut": "iodised salt used in a large amount, or a very dirty hand; use plain salt and a washed hand, otherwise fermentation can be slow."
     },
     {
       "n": 12,
-      "title": "Cover loosely and keep in a warm spot for 8–12 hours",
+      "title": "Cover loosely and keep in a warm spot for 8-12 hours",
       "text": "(overnight).",
       "timerSec": 28800,
-      "tip": "in winter it can take 14+ hours. In Mumbai summer, check it at 7–8 h so it does not turn too sour.",
-      "visualCue": null,
+      "tip": "in winter it can take 14+ hours. In Mumbai summer, check at 7-8 h so it does not turn too sour.",
+      "visualCue": "a domed top full of small bubbles, and a mild tangy smell like fresh curd",
       "cameraCheck": "the bowl from the side, showing the risen level and bubbles.",
-      "videoShot": "a spoon dipped into airy fermented batter."
+      "videoShot": "a spoon dipped into airy fermented batter.",
+      "watchOut": "batter that stays flat (too cold) or smells sharply sour (too long). If flat, give it more hours in a warmer spot; if too sour, add a spoon of rice flour and use it quickly for thicker dosas."
     },
     {
       "n": 13,
@@ -305,9 +318,10 @@
       "text": "Take out about 120 g (a heaped 1/2 cup) for this dosa and refrigerate the rest.",
       "timerSec": 60,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "a smooth batter that falls off the ladle in a slow, continuous stream",
       "cameraCheck": "1/2 cup of batter in a katori.",
-      "videoShot": "batter ladled into a small cup."
+      "videoShot": "batter ladled into a small cup.",
+      "watchOut": "stirring hard, which knocks out the bubbles and gives a flat dosa; fold gently 4-5 times."
     },
     {
       "n": 14,
@@ -315,9 +329,10 @@
       "text": "Wash the potato, put it in the pressure cooker with 1/2 cup water, and cook for 3 whistles on medium heat",
       "timerSec": 600,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "the potato skin cracks slightly and a knife goes in like into soft butter",
       "cameraCheck": "the potato pierced with a knife.",
-      "videoShot": "a knife slipping into a boiled potato."
+      "videoShot": "a knife slipping into a boiled potato.",
+      "watchOut": "an undercooked centre, which crumbles hard; give 1 more whistle. A burst-open, soggy potato means it was overcooked; use it quickly and add less water later."
     },
     {
       "n": 15,
@@ -325,9 +340,10 @@
       "text": "(do not mash it smooth).",
       "timerSec": 120,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "a mix of pea-sized chunks and some soft crumbs",
       "cameraCheck": "the plate of crumbled potato.",
-      "videoShot": "hands breaking up the warm potato."
+      "videoShot": "hands breaking up the warm potato.",
+      "watchOut": "a paste from over-mashing, which makes a gluey filling; break with fingers, not a masher."
     },
     {
       "n": 16,
@@ -335,9 +351,10 @@
       "text": "Slice 40 g onion thinly, chop 3 g ginger and 1 green chilli finely, and chop 1 tbsp coriander",
       "timerSec": 180,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "thin, even onion half-moons and tiny ginger pieces",
       "cameraCheck": "the board with onion, ginger, chilli and coriander.",
-      "videoShot": "a knife slicing the onion thinly."
+      "videoShot": "a knife slicing the onion thinly.",
+      "watchOut": "thick onion pieces, which stay crunchy in the soft masala; slice thinly."
     },
     {
       "n": 17,
@@ -345,9 +362,10 @@
       "text": "Heat 1 tsp oil in the kadai on medium heat",
       "timerSec": 60,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "faint ripples across the oil, and a drop of mustard seed sizzles at once",
       "cameraCheck": "the kadai with the oil.",
-      "videoShot": "oil swirled in a hot kadai."
+      "videoShot": "oil swirled in a hot kadai.",
+      "watchOut": "smoking oil, which tastes bitter; lower the heat and wait 10 seconds."
     },
     {
       "n": 18,
@@ -355,9 +373,10 @@
       "text": "Add 1/4 tsp mustard seeds",
       "timerSec": 20,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "seeds pop and jump within 10-20 seconds",
       "cameraCheck": "the kadai with popping seeds.",
-      "videoShot": "mustard seeds spluttering."
+      "videoShot": "mustard seeds spluttering.",
+      "watchOut": "seeds that do not pop (oil too cool) or burn black and bitter (too hot); wait for the pop and move on at once. If burnt, discard and start again."
     },
     {
       "n": 19,
@@ -365,9 +384,10 @@
       "text": "Add 1/2 tsp chana dal and 1/2 tsp urad dal",
       "timerSec": 30,
       "tip": "keep the heat at medium. The dals burn quickly.",
-      "visualCue": null,
+      "visualCue": "the dals change from pale yellow to light golden brown",
       "cameraCheck": "the golden dals in the oil.",
-      "videoShot": "the dals stirred until golden."
+      "videoShot": "the dals stirred until golden.",
+      "watchOut": "dark brown dals that taste bitter; keep the heat at medium and add the next ingredient the moment they turn golden."
     },
     {
       "n": 20,
@@ -375,9 +395,10 @@
       "text": "Add the curry leaves, green chilli, ginger and a pinch of hing",
       "timerSec": 20,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "curry leaves crisp up and curl, with a strong aroma",
       "cameraCheck": "the kadai after the leaves go in.",
-      "videoShot": "curry leaves sizzling."
+      "videoShot": "curry leaves sizzling.",
+      "watchOut": "spitting oil from wet curry leaves; dry the leaves first and stand back. Do not let the ginger brown."
     },
     {
       "n": 21,
@@ -385,9 +406,10 @@
       "text": "Add the sliced onion and sauté",
       "timerSec": 120,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "onion turns glassy and soft, and smells sweet",
       "cameraCheck": "the softened onion.",
-      "videoShot": "the onion stirred until glossy."
+      "videoShot": "the onion stirred until glossy.",
+      "watchOut": "browning, which changes the flavour from fresh to sweet-caramel; lower the heat and splash 1 tbsp water if it starts to brown."
     },
     {
       "n": 22,
@@ -395,9 +417,10 @@
       "text": "Add 1/8 tsp turmeric and stir for 10 sec",
       "timerSec": 10,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "bright, even yellow colour on the onion",
       "cameraCheck": "the yellow onion mixture.",
-      "videoShot": "turmeric stirred in."
+      "videoShot": "turmeric stirred in.",
+      "watchOut": "turmeric burning in dry oil, which tastes bitter; stir constantly and move to the next step within 10 seconds."
     },
     {
       "n": 23,
@@ -405,9 +428,10 @@
       "text": "Add the potato, 1/3 tsp salt and 3 tbsp water. Mix gently",
       "timerSec": 120,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "yellow-coated potato pieces that look moist and glossy, not powdery",
       "cameraCheck": "the masala in the kadai.",
-      "videoShot": "the potato folded into the onions."
+      "videoShot": "the potato folded into the onions.",
+      "watchOut": "a dry, crumbly masala (add 1 tbsp water) or a wet, pasty one (cook 30 more seconds uncovered)."
     },
     {
       "n": 24,
@@ -415,19 +439,21 @@
       "text": "Turn off the heat. Add the coriander and 1 tsp lemon juice (optional). Mix",
       "timerSec": 30,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "green flecks all through the yellow masala, with a fresh lemony smell",
       "cameraCheck": "the finished masala.",
-      "videoShot": "coriander scattered and folded in."
+      "videoShot": "coriander scattered and folded in.",
+      "watchOut": "adding lemon on the heat, which turns it bitter; switch the stove off first."
     },
     {
       "n": 25,
-      "title": "Heat the tawa on medium-high heat for 2–3 min",
-      "text": "Heat the tawa on medium-high heat for 2–3 min",
+      "title": "Heat the tawa on medium-high heat for 2-3 min",
+      "text": "Heat the tawa on medium-high heat for 2-3 min",
       "timerSec": 180,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "water drops hiss, dance and vanish in 2-3 seconds",
       "cameraCheck": "the water drops sizzling on the tawa.",
-      "videoShot": "water sprinkled and evaporating instantly."
+      "videoShot": "water sprinkled and evaporating instantly.",
+      "watchOut": "a tawa that is not hot enough (water sits and steams, dosa sticks) or smoking hot (water vanishes at once, batter will not spread); adjust the flame and test again."
     },
     {
       "n": 26,
@@ -435,9 +461,10 @@
       "text": "Wipe the tawa with a few drops of oil, using a cut onion or a paper towel. Then sprinkle a little water and wipe it off",
       "timerSec": 30,
       "tip": "if the batter clumps and will not spread, the tawa is too hot. Sprinkle water and wait 10 sec.",
-      "visualCue": null,
+      "visualCue": "a thin, even sheen and a faint mist from the water",
       "cameraCheck": "the greased tawa.",
-      "videoShot": "half an onion rubbed over the tawa."
+      "videoShot": "half an onion rubbed over the tawa.",
+      "watchOut": "too much oil, which makes the dosa fry and not spread, or a dry spot, which makes it stick; wipe off any pools with the paper towel."
     },
     {
       "n": 27,
@@ -445,9 +472,10 @@
       "text": "Spread it immediately with the back of the ladle in outward spirals to about 25 cm.",
       "timerSec": 20,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "a thin round with lacy holes, and the batter turns from glossy to matte as it sets",
       "cameraCheck": "the spread dosa on the tawa.",
-      "videoShot": "the ladle spiralling batter outward."
+      "videoShot": "the ladle spiralling batter outward.",
+      "watchOut": "pressing hard (tears the dosa) or spreading too slowly (batter sets in clumps); use light pressure and one smooth spiral. A thick dosa means too little spread, not a ruined batter."
     },
     {
       "n": 28,
@@ -455,9 +483,10 @@
       "text": "Drizzle 1/2 tsp oil around the edge and 1/2 tsp over the top",
       "timerSec": 10,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "oil sizzles and runs in thin lines along the edge",
       "cameraCheck": "the oiled dosa.",
-      "videoShot": "oil drizzled in a circle."
+      "videoShot": "oil drizzled in a circle.",
+      "watchOut": "too much oil, which makes the dosa greasy; keep to 1/2 tsp each."
     },
     {
       "n": 29,
@@ -465,19 +494,21 @@
       "text": "Cook on medium-high heat without flipping",
       "timerSec": 90,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "a golden-brown underside, edges curling up, and a dry matte top",
       "cameraCheck": "the edge lifted with a spatula, showing the golden underside.",
-      "videoShot": "the spatula lifting a crisp edge."
+      "videoShot": "the spatula lifting a crisp edge.",
+      "watchOut": "lifting too early (dosa tears) or leaving it too long (dark and brittle); the edges curling up on their own is the signal. If it sticks, cook 20 more seconds."
     },
     {
       "n": 30,
-      "title": "Spread 3–4 tbsp of the potato masala in a line down the centre",
-      "text": "Spread 3–4 tbsp of the potato masala in a line down the centre",
+      "title": "Spread 3-4 tbsp of the potato masala in a line down the centre",
+      "text": "Spread 3-4 tbsp of the potato masala in a line down the centre",
       "timerSec": 20,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "a neat, loose strip of yellow masala down the middle",
       "cameraCheck": "the masala on the dosa.",
-      "videoShot": "masala spooned along the centre."
+      "videoShot": "masala spooned along the centre.",
+      "watchOut": "too much filling, which tears the dosa when folded; use 3-4 tbsp only."
     },
     {
       "n": 31,
@@ -485,46 +516,116 @@
       "text": "Fold one side over the filling, then the other (or roll it), and slide the dosa onto a plate",
       "timerSec": 20,
       "tip": "the first dosa often sticks or tears. That is normal. Re-oil the tawa and the next one will be better.",
-      "visualCue": null,
+      "visualCue": "a crisp, golden roll or fold with the yellow filling just visible at the ends",
       "cameraCheck": "the plated dosa.",
-      "videoShot": "the dosa folded and slid onto the plate."
+      "videoShot": "the dosa folded and slid onto the plate.",
+      "watchOut": "a limp, soggy dosa from waiting too long; serve straight away."
     }
   ],
   "nutritionPerServing": {
-    "kcal": 450,
+    "kcal": 452.5,
     "proteinG": 11,
-    "carbsG": 76,
-    "fatG": 11,
-    "fibreG": 8
+    "carbsG": 76.5,
+    "fatG": 11.3,
+    "fibreG": 7
   },
   "microNutrientsEstimate": {
     "values": {
-      "calcium": 11.6,
+      "calcium": 31.3,
       "cholesterol": 0,
       "copper": 0,
-      "folate": 2,
-      "iron": 0.3,
-      "magnesium": 5.2,
+      "folate": 96.2,
+      "iron": 2,
+      "magnesium": 7.1,
       "manganese": 0,
-      "niacin": 0,
+      "niacin": 0.3,
       "phosphorus": 2.6,
-      "potassium": 728.8,
+      "potassium": 883.9,
       "riboflavin": 0,
-      "sodium": 12.6,
+      "selenium": 0.1,
+      "sodium": 13.9,
       "thiamine": 0,
-      "vitamin-a": 30.9,
+      "vitamin-a": 15.5,
       "vitamin-b12": 0,
       "vitamin-b6": 0.5,
       "vitamin-c": 40.8,
       "vitamin-d": 0.4,
       "vitamin-e": 4.2,
       "vitamin-k": 14.1,
-      "zinc": 0
+      "zinc": 0.1
     },
-    "coveragePct": 57,
+    "coveragePct": 63,
     "basis": "partial estimate from ingredient quantities"
   },
-  "asOrdered": null,
+  "asOrdered": {
+    "price": {
+      "priceHistory": [
+        {
+          "date": "2026-10-04",
+          "min": 130,
+          "max": 150,
+          "avg": 140,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-10-04.md"
+        },
+        {
+          "date": "2026-11-01",
+          "min": 100,
+          "max": 199,
+          "avg": 135,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-11-01.md"
+        }
+      ],
+      "currentEstimate": {
+        "min": 120,
+        "max": 160,
+        "avg": 140
+      },
+      "method": "wma",
+      "trend": "unknown",
+      "change30dPct": null,
+      "lastObserved": "2026-11-01",
+      "stale": false,
+      "seasonal": false,
+      "listingCount": 4,
+      "platforms": [
+        "Swiggy",
+        "Zomato"
+      ],
+      "outOfStock": false,
+      "confirmed": true,
+      "checkNotes": []
+    },
+    "nutrition": {
+      "calories": {
+        "value": null,
+        "source": null
+      },
+      "protein": {
+        "value": null,
+        "source": null
+      },
+      "carbs": {
+        "value": null,
+        "source": null
+      },
+      "fat": {
+        "value": null,
+        "source": null
+      },
+      "fibre": {
+        "value": null,
+        "source": null
+      }
+    },
+    "restaurantsSampled": null,
+    "platforms": [
+      "Swiggy",
+      "Zomato",
+      "magicpin"
+    ]
+  },
   "orderPrice": {
     "priceHistory": [
       {
@@ -534,20 +635,28 @@
         "avg": 140,
         "confidence": null,
         "sourceFile": "FitPlate_Dishes_2026-10-04.md"
+      },
+      {
+        "date": "2026-11-01",
+        "min": 100,
+        "max": 199,
+        "avg": 135,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-11-01.md"
       }
     ],
     "currentEstimate": {
-      "min": 130,
-      "max": 150,
+      "min": 120,
+      "max": 160,
       "avg": 140
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-11-01",
     "stale": false,
     "seasonal": false,
-    "listingCount": 3,
+    "listingCount": 4,
     "platforms": [
       "Swiggy",
       "Zomato"
@@ -560,16 +669,16 @@
     "score": 6,
     "restaurantScore": 4.5,
     "reasons": [
-      "fermented rice and urad batter is easy to digest and adds some protein. The home version uses only about 2 tsp oil and is not deep-fried. But it is carb-heavy (about 76 g, mostly white rice and potato), low in vegetables and modest in protein (about 11 g). Salt is moderate. Restaurant versions often add butter or ghee, more oil, larger dosas and more salt, and the sambar and chutney push calories up further."
+      "fermented rice and urad batter is easy to digest and adds some protein; the home version uses only about 2 tsp oil, is not deep-fried and has almost no saturated fat (about 1.5 g). But it is carb-heavy (about 77 g, mostly white rice and potato), low in vegetables, modest in protein (about 11 g), and salt is about 3 g (60% of the 5 g limit). Restaurant dosas often add butter or ghee, bigger size and more salt, and sambar and chutney add calories."
     ]
   },
   "researchRating": {
     "score": 4.6,
-    "basis": "masala dosa is one of India's most iconic and widely loved dishes. TasteAtlas's 2026 \"best pancakes in the world\" list placed it 6th with a 4.3 rating, and food guides and recipe blogs describe it as a must-eat. Some points are taken off because it is hard to get right at home (sticking, fermentation failures are a common complaint in recipe comments)."
+    "basis": "masala dosa is one of India's most loved dishes; TasteAtlas's May 2026 pancake list placed it 6th with a 4.3 rating, and a leading recipe blog's masala dosa recipe shows 4.98 from 334 votes. A little is taken off because dosas are hard to get right at home (fermentation and sticking are common problems)."
   },
-  "storage": "Cooked dosa: best eaten fresh. It goes limp within 10–15 min and is not good stored. Potato masala: fridge-safe in a closed box for up to 2 days. Freezing is not recommended (the potato turns grainy). Reheat in a pan with 1–2 tbsp water, or microwave covered for 1 min, until steaming hot. Batter: fridge for 3–4 days (it gets more sour each day). It can be frozen for up to 1 month; thaw overnight in the fridge and stir before use.",
-  "leftoverRemix": "turn leftover potato masala into masala dosa toasties. Spread it between two slices of bread with a little green chutney and grated cheese, and toast them on the tawa. Or use leftover batter to make uttapam topped with onion, tomato and the leftover masala.",
-  "burnOff": "about 6.4 km of running (70 kg adult, about 70 kcal per km), or about 9 km of brisk walking (est., about 50 kcal per km). With chutney and sambar (about 650 kcal), it is about 9.3 km running or about 13 km walking (est.).",
+  "storage": "Cooked dosa: best eaten fresh; it goes limp within 10-15 min and is not good stored. Potato masala: fridge-safe in a closed box for up to 2 days. Freezing is not recommended (the potato turns grainy). Reheat in a pan with 1-2 tbsp water, or microwave covered for 1 min, until steaming hot. Batter: fridge for 3-4 days (it gets more sour each day). It can be frozen for up to 1 month; thaw overnight in the fridge and stir before use.",
+  "leftoverRemix": "turn leftover potato masala into masala dosa toasties. Spread it between two slices of bread with a little green chutney and grated cheese, and toast on the tawa. Or use leftover batter to make uttapam topped with onion, tomato and the leftover masala.",
+  "burnOff": "about 6.5 km of running (70 kg adult, about 70 kcal per km), or about 9.1 km of brisk walking (est., about 50 kcal per km). With chutney and sambar (about 650 kcal), it is about 9.3 km running or about 13 km walking (est.).",
   "sources": [
     "Veg Recipes of India: Masala Dosa recipe: https://www.vegrecipesofindia.com/wprm_print/masala-dosa-recipe",
     "Veg Recipes of India: Dosa batter (traditional): https://www.vegrecipesofindia.com/dosa-recipe-dosa-batter/",
@@ -583,40 +692,126 @@
     "TasteAtlas: Best-rated dosa varieties: https://www.tasteatlas.com/best-rated-dosa-varieties-in-the-world ; coverage: https://www.dtnext.in/news/chennai/chennais-dosa-culture-gets-global-spotlight-as-masala-dosa-ranks-among-worlds-best , https://curlytales.com/india/trending/dosas-go-global-types-of-dosas-make-it-to-tasteatlas-best-pancakes-in-the-world-list/amp/",
     "Free Press Journal: Where to eat the best dosa in Mumbai: https://www.freepressjournal.in/amp/lifestyle/food-guide-where-to-eat-the-best-dosa-in-mumbai-head-to-these-affordable-restaurants-for-authentic-south-indian-breakfast",
     "Nutrition: IFCT 2017, National Institute of Nutrition (ICMR-NIN), https://www.nin.res.in ; USDA FoodData Central, https://fdc.nal.usda.gov",
-    "Prices: Swiggy, Mani's Cafe Palava City: https://www.swiggy.com/city/mumbai/manis-cafe-palava-city-rest1144729 ; Swiggy, Udupi Shri Krishna Dombivli East: https://www.swiggy.com/menu/292521 ; Swiggy, Satya Cafe Virar: https://www.swiggy.com/city/mumbai/satya-cafe-virar-rest1312827 ; Zomato, Dosa Factory Kharghar: https://www.zomato.com/mumbai/dosa-factory-kharghar-navi-mumbai/order ; Zomato, Dosa Raja BKC: https://www.zomato.com/mumbai/dosa-raja-bandra-kurla-complex/order ; magicpin, Dosa Library Malad (variants only): https://magicpin.in/Mumbai/Malad/Restaurant/Dosa-Library/store/124778/delivery"
+    "Prices: Swiggy, Mani's Cafe Palava City: https://www.swiggy.com/city/mumbai/manis-cafe-palava-city-rest1144729 ; Swiggy, Udupi Shri Krishna Dombivli East: https://www.swiggy.com/menu/292521 ; Swiggy, Satya Cafe Virar: https://www.swiggy.com/city/mumbai/satya-cafe-virar-rest1312827 ; Zomato, Dosa Factory Kharghar: https://www.zomato.com/mumbai/dosa-factory-kharghar-navi-mumbai/order ; Zomato, Dosa Raja BKC: https://www.zomato.com/mumbai/dosa-raja-bandra-kurla-complex/order ; magicpin, Dosa Library Malad (variants only): https://magicpin.in/Mumbai/Malad/Restaurant/Dosa-Library/store/124778/delivery",
+    "Veg Recipes of India: Masala Dosa: https://www.vegrecipesofindia.com/wprm_print/masala-dosa-recipe",
+    "Hebbar's Kitchen: Masala Dosa: https://hebbarskitchen.com/masala-dosa-recipe-crispy-masale-dose/",
+    "Swasthi's Recipes: Masala Dosa: https://www.indianhealthyrecipes.com/masala-dosa",
+    "Cook With Manali: Crispy Masala Dosa: https://cookwithmanali.com/crispy-masala-dosa",
+    "Foodviva: Masala Dosa: https://foodviva.com/south-indian-recipes/masala-dosa",
+    "TasteAtlas: https://www.tasteatlas.com/best-rated-dosa-varieties-in-the-world ; coverage: https://theprint.in/feature/masala-dosa-world-6th-best-pancake/2919347/ , https://starofmysore.com/masala-dosa-ranks-6th-in-worlds-best-pancakes-list/amp/",
+    "Nutrition: IFCT 2017, ICMR-NIN, https://www.nin.res.in ; USDA FoodData Central, https://fdc.nal.usda.gov ; comparison: FatSecret https://www.fatsecret.com.au/calories-nutrition/generic/masala-dosa and Arise https://www.arise-app.com/dish/Masala-Dosa",
+    "Prices: Swiggy, Fresh Breakfast Grant Road: https://swiggy.com/restaurants/fresh-breakfast-grant-road-central-kamathipura-mumbai-391607 ; Swiggy, Madras Dosa Thane: https://swiggy.com/city/mumbai/madras-dosa-wagbil-goan-road-thane-hiranandani-estate-rest767130 ; Swiggy, Dosa Factory Sector 20: https://www.swiggy.com/restaurants/dosa-factory-sector-20-dosa-factory-mumbai-800304 ; Zomato, Mani's Cafe Mulund East: https://www.zomato.com/mumbai/manis-cafe-1-mulund-east/order ; Zomato, Dosa Factory Kharghar: https://www.zomato.com/mumbai/dosa-factory-kharghar-navi-mumbai/order ; Zomato, Dosa Plaza Sion: https://www.zomato.com/mumbai/dosa-plaza-sion/order ; Zomato Jain masala dosa page: https://www.zomato.com/es/mumbai/restaurants/dish-jain-masala-dosa",
+    "Image: Wikimedia Commons: https://commons.wikimedia.org/wiki/File:A_plate_of_South_Indian_Masala_Dosa.jpg (author and licence read from the page)"
   ],
   "allergens": [
     "peanut",
     "gluten",
     "mustard"
   ],
-  "dietClaims": [],
-  "fasting": null,
-  "dietTags": null,
+  "dietClaims": [
+    "vegan",
+    "dairyFree"
+  ],
+  "fasting": {
+    "navratri": {
+      "status": "no",
+      "reason": "rice, urad dal and onion are not eaten on the common vrat rule set (grains and pulses avoided, assumption used)"
+    },
+    "ekadashi": {
+      "status": "no",
+      "reason": "rice and pulses are avoided on Ekadashi in the common rule set (assumption used)"
+    },
+    "jain": {
+      "status": "with-changes",
+      "reason": "drop onion and fresh ginger, swap potato for raw banana, add sonth (Jain variant below); the batter itself has no root vegetable"
+    },
+    "ramadan": {
+      "status": "yes",
+      "reason": "vegetarian, so no halal-meat issue; carb-heavy with modest protein, so pair with sambar for sehri"
+    }
+  },
+  "dietTags": {
+    "base": "Vegetarian",
+    "jain": {
+      "status": "with-changes",
+      "reason": "drop onion and fresh ginger (root vegetables), and replace the potato with raw banana (see Jain variant); use a pinch of dry ginger powder (sonth) instead of fresh ginger"
+    },
+    "vegan": {
+      "status": "yes",
+      "reason": "rice, urad dal, potato, oil and spices only; restaurant versions often add butter or ghee, so ask for oil"
+    },
+    "pescatarian": {
+      "status": "yes",
+      "reason": "vegetarian recipe with no meat, fish or egg"
+    },
+    "sattvik": {
+      "status": "with-changes",
+      "reason": "skip the 40 g onion in the masala (no garlic is used); some versions are made without onion"
+    },
+    "glutenFree": {
+      "status": "with-changes",
+      "reason": "batter is rice and urad dal; skip the optional hing (most Indian hing is compounded with wheat flour) or use gluten-free hing"
+    },
+    "dairyFree": {
+      "status": "yes",
+      "reason": "no milk, curd, butter or ghee in the recipe; restaurant \"butter masala dosa\" is not dairy-free"
+    },
+    "allergensDeclared": [
+      "peanut",
+      "mustard",
+      "gluten"
+    ]
+  },
   "tags": [
     "Veg",
+    "Vegan",
+    "Jain option",
+    "Dairy-free",
+    "Ramadan sehri / iftar",
     "Contains peanut",
     "Contains gluten",
     "Contains mustard",
     "Breakfast",
+    "Dinner",
     "South Indian",
     "Under 60 min",
     "Intermediate",
     "High fibre"
   ],
-  "description": null,
+  "description": "Family: dosa",
   "familyId": null,
-  "variants": [],
+  "variants": [
+    {
+      "category": "Vegan",
+      "status": "already-fits",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": "Main recipe already vegan (oil only; ask restaurants for oil instead of butter or ghee)."
+    },
+    {
+      "category": "Dairy-free",
+      "status": "already-fits",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": "Main recipe already dairy-free."
+    }
+  ],
   "needsReview": [],
   "versions": [
     {
       "date": "2026-10-04",
       "file": "FitPlate_Dishes_2026-10-04.md"
+    },
+    {
+      "date": "2026-11-01",
+      "file": "FitPlate_Dishes_2026-11-01.md"
     }
   ],
   "mergeMethod": {
-    "nutritionPerServing": "stable (single)",
-    "orderPrice": "price engine (single)",
+    "nutritionPerServing": "stable (mean-2)",
+    "orderPrice": "price engine (wma)",
     "ingredients": "newest",
     "steps": "newest",
     "healthiness": "newest",
@@ -625,6 +820,9 @@
     "tags": "tag engine (tags.ts) on the merged dish"
   },
   "mergeNotes": [
-    "2026-10-04: hing: compounded hing usually contains wheat flour"
+    "price flag: narrowed",
+    "Range 110.3–182.2 was wider than 30% of avg 136.7; narrowed to ±15%.",
+    "2026-10-04: hing: compounded hing usually contains wheat flour",
+    "2026-11-01: hing: compounded hing usually contains wheat flour"
   ]
 }
