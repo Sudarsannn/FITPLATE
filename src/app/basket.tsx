@@ -19,6 +19,7 @@ import { rupees } from '../services/costToMake';
 import { dishCost } from '../services/vendors';
 import { buildShoppingItems, cheapestPer100, isPantryStaple, itemAmountLabel, newShoppingList, offlineVariants, preselect, shoppingListText, variantLabel, type VariantOption } from '../services/vendors/basket';
 import { VENDOR_VISIBLE, VENDORS_PAUSED } from '../services/vendors/config';
+import { VendorCompare } from '../components/vendors/VendorCompare';
 import { VendorPlaceholders } from '../components/vendors/VendorLogos';
 import { instamartSearchUrl, openExternal, zeptoSearchUrl, zeptoTarget } from '../services/vendors/openApp';
 import type { VendorProduct } from '../services/vendors/types';
@@ -520,6 +521,7 @@ function ItemRow({
               {ingredient.shelfLife ? <Text style={[k.muted, { marginTop: 6, fontSize: 12 }]}>Keeps: {ingredient.shelfLife}</Text> : null}
             </View>
           ) : null}
+          <VendorCompare name={item.name} listings={ingredient?.vendorListings} />
           {loading ? <Loading label="Checking what’s in stock…" /> : null}
           {options.map((o, i) => {
             const z = zeptoTarget(o.links.zepto);

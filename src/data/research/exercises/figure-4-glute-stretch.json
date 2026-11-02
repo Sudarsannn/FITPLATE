@@ -1,0 +1,700 @@
+{
+  "id": "figure-4-glute-stretch",
+  "number": 9,
+  "name": "Figure-4 glute stretch",
+  "otherNames": [
+    "Supine figure-4 stretch",
+    "Reclined pigeon",
+    "Thread-the-needle legs",
+    "Sucirandhrasana (Eye of the Needle)",
+    "Seated figure-4",
+    "Chair figure-4",
+    "Piriformis stretch (figure-4 family)"
+  ],
+  "section": "yoga_stretch",
+  "type": "mobility",
+  "equipment": [
+    "yoga mat or carpet (optional)",
+    "strap, belt or dupatta (optional)",
+    "folded towel or thin pillow (optional)",
+    "wall (optional)",
+    "sturdy non-wheeled chair (seated version)"
+  ],
+  "noEquipmentAlternative": "Lying version on a carpet or bedsheet with the supporting foot on the floor, or the seated chair figure-4 at a desk",
+  "musclesPrimary": [
+    "gluteus maximus (stretched)",
+    "gluteus medius (stretched)",
+    "piriformis and deep hip rotators (stretched)"
+  ],
+  "musclesSecondary": [
+    "tensor fasciae latae and iliotibial band (lightly stretched)",
+    "erector spinae (relaxing)",
+    "hip flexors and abdominals of the supporting leg (holding)"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 2.3,
+  "compendiumCode": "02101",
+  "metOptions": [
+    {
+      "code": "02101",
+      "met": 2.3,
+      "activity": "MET: 2.3, 2024 Adult Compendium of Physical Activities, code 02101, \"Stretching, mild\" (Conditioning Exercise heading). This matches the beginner prescription (a light, still, static hold). Extras (te"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "flexibility",
+      "sets": 2,
+      "reps": "foot-on-floor hold per side",
+      "timeSec": 25,
+      "restSec": 10,
+      "tempo": "slow breaths, long exhale",
+      "perWeek": 4
+    },
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 1,
+      "reps": "hold per side after workout or at desk break",
+      "timeSec": 20,
+      "restSec": 0,
+      "tempo": "slow breaths",
+      "perWeek": 4
+    },
+    {
+      "level": "beginner",
+      "goal": "relaxation",
+      "sets": 1,
+      "reps": "hold per side, evening",
+      "timeSec": 40,
+      "restSec": 0,
+      "tempo": "long exhales",
+      "perWeek": 5
+    },
+    {
+      "level": "intermediate",
+      "goal": "flexibility",
+      "sets": 3,
+      "reps": "supporting foot lifted, hands behind thigh, per side",
+      "timeSec": 30,
+      "restSec": 10,
+      "tempo": "slow breaths",
+      "perWeek": 5
+    },
+    {
+      "level": "intermediate",
+      "goal": "relaxation",
+      "sets": 2,
+      "reps": "hold per side",
+      "timeSec": 45,
+      "restSec": 0,
+      "tempo": "long exhales",
+      "perWeek": 5
+    },
+    {
+      "level": "advanced",
+      "goal": "flexibility",
+      "sets": 3,
+      "reps": "strap or reclined pigeon variation, per side",
+      "timeSec": 50,
+      "restSec": 10,
+      "tempo": "slow breaths",
+      "perWeek": 5
+    },
+    {
+      "level": "advanced",
+      "goal": "relaxation",
+      "sets": 2,
+      "reps": "hold per side",
+      "timeSec": 60,
+      "restSec": 0,
+      "tempo": "slow breaths",
+      "perWeek": 5
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "hold_timer",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "hold_pull_in",
+        "joint": "supporting-leg hip (shoulder-hip-knee)",
+        "angleDeg": "<= 100",
+        "parsed": {
+          "op": "<=",
+          "value": 100,
+          "max": null
+        }
+      },
+      {
+        "name": "hold_figure4",
+        "joint": "crossed-leg knee (hip-knee-ankle)",
+        "angleDeg": "<= 120",
+        "parsed": {
+          "op": "<=",
+          "value": 120,
+          "max": null
+        }
+      },
+      {
+        "name": "hold_ankle_on_knee",
+        "joint": "crossed ankle near opposite knee",
+        "angleDeg": "position flag: crossed ankle landmark near the opposite knee",
+        "parsed": null
+      },
+      {
+        "name": "hold_still",
+        "joint": "hip landmarks sideways shift",
+        "angleDeg": "position flag: shift <= 8 cm",
+        "parsed": null
+      }
+    ],
+    "minRepSec": 5
+  },
+  "formChecks": [
+    {
+      "joint": "hip",
+      "rule": "supporting-leg hip angle > 100 deg (equals hold_pull_in phase threshold; thigh not drawn in enough)",
+      "message": "Draw your thigh a little closer, or slide your foot closer to your hips"
+    },
+    {
+      "joint": "knee",
+      "rule": "crossed-leg knee angle > 120 deg (equals hold_figure4 phase threshold; crossed leg not in the 4 shape)",
+      "message": "Cross the ankle over the thigh and let the knee open"
+    },
+    {
+      "joint": "ankle",
+      "rule": "crossed ankle landmark not near the opposite knee (equals hold_ankle_on_knee phase flag)",
+      "message": "Rest your ankle across your thigh, not on the kneecap"
+    },
+    {
+      "joint": "hips",
+      "rule": "hip landmarks shift more than 8 cm sideways during the hold (position flag, not an angle)",
+      "message": "Keep your hips level and still"
+    },
+    {
+      "joint": "time",
+      "rule": "hold longer than 60 s per side (cap, est.)",
+      "message": "Nice. Release and switch sides"
+    }
+  ],
+  "safetyFlags": [
+    "knee_pain_use_foot_on_floor_or_chair_version",
+    "hip_replacement_posterior_approach_do_not_cross_legs_or_bend_past_90_ask_surgeon",
+    "recent_hip_knee_spine_surgery_ask_doctor",
+    "sciatic_symptoms_stop_if_worse_see_clinician_for_red_flags",
+    "saddle_numbness_or_bladder_bowel_change_urgent_care",
+    "sacroiliac_pain_reduce_or_skip",
+    "pregnancy_after_16_weeks_use_seated_version",
+    "osteoporosis_gentle_no_forced_pull",
+    "no_pressing_on_knee",
+    "no_twisting_low_back",
+    "no_breath_holding",
+    "heart_disease_ask_doctor"
+  ],
+  "progressions": [
+    "Lift the supporting foot and hold behind the thigh, or use a strap",
+    "Longer holds 45-60 s per side with slow breaths",
+    "Reclined pigeon / gentle sway, standing figure-4 or Pigeon pose"
+  ],
+  "regressions": [
+    "Seated chair figure-4 at the desk, hinging from the hips",
+    "Foot-on-wall version or supporting foot flat on the floor",
+    "Strap, belt or towel behind the supporting thigh"
+  ],
+  "videoShots": [
+    {
+      "seconds": 6,
+      "angle": "side, 2 m at mat height",
+      "shows": "lying start, knees bent, feet flat",
+      "textOverlay": "Lie down. Feet flat."
+    },
+    {
+      "seconds": 8,
+      "angle": "front/foot end, 1.5 m",
+      "shows": "crossing the ankle over the opposite thigh to make the 4, foot flexed",
+      "textOverlay": "Ankle on thigh, not knee. Flex your foot."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "foot-on-floor hold, relaxed shoulders, low back down",
+      "textOverlay": "Hold 20-30 s. Breathe."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "supporting foot lifted, hands behind the thigh drawing it in",
+      "textOverlay": "Hands behind the thigh. Head down."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "foot-on-wall and strap version",
+      "textOverlay": "Use a wall or strap."
+    },
+    {
+      "seconds": 8,
+      "angle": "side/front, 2 m",
+      "shows": "seated chair figure-4, sit tall and hinge forward from the hips",
+      "textOverlay": "Sit tall. Lean from the hips."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, split screen, 2 m",
+      "shows": "wrong (pressing the knee, head lifted, back twisting) vs right",
+      "textOverlay": "Never press the knee"
+    },
+    {
+      "seconds": 6,
+      "angle": "side, 2 m",
+      "shows": "release, foot down, hug both knees for one breath",
+      "textOverlay": "Release. Switch sides."
+    }
+  ],
+  "lastResearched": "2026-11-02",
+  "setupSteps": [
+    "Mat and space. Lay the mat on a flat, non-slip floor with about 1.8 m clear, away from the wall and furniture; or place a sturdy chair on a non-slip floor (no wheels).",
+    "Clothes. Loose pants or leggings with some stretch; avoid very tight jeans that block the hip bend. Tuck in a long kurta so it does not bunch under the hips. Remove shoes for the lying version.",
+    "Props ready. Thin pillow or folded towel under the head if the chin lifts; strap, belt or dupatta (long enough to loop behind the thigh); wall space for the foot-on-wall version.",
+    "Starting position (lying). Lie on the back with both knees bent, feet flat on the floor, hip-width apart, arms resting by the sides. Keep the low back resting on the floor in its natural curve (not pressed flat, not arched hard).",
+    "Starting position (chair). Sit near the front of the chair with both feet flat on the floor, knees at about 90 degrees (est.), spine tall.",
+    "Camera. Phone on a low stool at mat height, 2 m to the side of the mat at hip level, landscape, so the head, shoulders, hips, knees and ankles are in frame (see section 11)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": "A. Supine figure-4 with the foot on the floor (the beginner default)",
+      "title": "Lie down and set the feet",
+      "action": "lie on your back, knees bent, both feet flat on the floor, hip-width apart.",
+      "feel": "back resting on the floor, neck relaxed.",
+      "breathing": "breathe normally.",
+      "tempo": "3 seconds.",
+      "visualCheck": "side view, knees up, back flat on the mat; front view, knees level."
+    },
+    {
+      "n": 2,
+      "part": "A. Supine figure-4 with the foot on the floor (the beginner default)",
+      "title": "Pick the side and lift the foot",
+      "action": "lift the right foot off the floor.",
+      "feel": "weight stays even through the shoulders and left foot.",
+      "breathing": "breathe out.",
+      "tempo": "2 seconds.",
+      "visualCheck": "only one foot on the floor, hips level."
+    },
+    {
+      "n": 3,
+      "part": "A. Supine figure-4 with the foot on the floor (the beginner default)",
+      "title": "Cross the ankle over the knee",
+      "action": "rest the right ankle across the left thigh, just above the left knee (on the thigh, not on the kneecap), and let the right knee fall gently out to the side so the legs make a \"4\".",
+      "feel": "a light stretch in the right buttock already; no pinch in the right knee or hip.",
+      "breathing": "breathe in.",
+      "tempo": "3 seconds.",
+      "visualCheck": "front view, a clear \"4\" shape; the right foot flexed (toes pulled toward the shin) to protect the knee."
+    },
+    {
+      "n": 4,
+      "part": "A. Supine figure-4 with the foot on the floor (the beginner default)",
+      "title": "Flex the crossed foot",
+      "action": "gently flex the right foot, pulling the toes toward the shin, and keep it that way.",
+      "feel": "the ankle and knee feel stable.",
+      "breathing": "breathe normally.",
+      "tempo": "2 seconds.",
+      "visualCheck": "foot not floppy or pointing, ankle in line with the shin."
+    },
+    {
+      "n": 5,
+      "part": "A. Supine figure-4 with the foot on the floor (the beginner default)",
+      "title": "Stay here or draw the thigh closer",
+      "action": "this is already a stretch for many people. To feel more, slide the left foot a little farther from the hips; to feel less, slide it closer (Hinge Health suggests the heel closer to the buttocks for an easier version). Simplest for beginners: leave the left foot on the floor and just stop here.",
+      "feel": "stretch in the right buttock.",
+      "breathing": "breathe out slowly.",
+      "tempo": "5 seconds.",
+      "visualCheck": "the right knee stays open, not collapsing in."
+    },
+    {
+      "n": 6,
+      "part": "A. Supine figure-4 with the foot on the floor (the beginner default)",
+      "title": "Optional deeper level: lift the supporting foot",
+      "action": "only if step 5 feels easy, lift the left foot off the floor so the left shin is parallel to the floor (knee above hip, about 90 degrees, est.).",
+      "feel": "a deeper stretch deep in the right buttock; the low back stays on the floor.",
+      "breathing": "breathe in.",
+      "tempo": "3 seconds.",
+      "visualCheck": "side view, left shin roughly level with the floor, low back still down."
+    },
+    {
+      "n": 7,
+      "part": "A. Supine figure-4 with the foot on the floor (the beginner default)",
+      "title": "Optional deeper level: hold behind the thigh",
+      "action": "thread the right hand through the gap and the left hand around the outside, and clasp the hands behind the left thigh (or loop a strap behind the thigh). Draw the left thigh gently toward the chest.",
+      "feel": "a deepening stretch in the right buttock, never a sharp pull in the hip or knee.",
+      "breathing": "breathe out as you draw in.",
+      "tempo": "4 seconds.",
+      "visualCheck": "head and shoulders stay down on the mat; neck long."
+    },
+    {
+      "n": 8,
+      "part": "A. Supine figure-4 with the foot on the floor (the beginner default)",
+      "title": "Hold and breathe",
+      "action": "stay still, press the tailbone gently toward the floor, and breathe slowly.",
+      "feel": "light effort 3-4/10 on the ACSM 0-10 effort scale (= Borg 9-11 on the 6-20 scale); a firm stretch, never pain, no tingling or numbness down the leg.",
+      "breathing": "slow breaths in through the nose, long out through the mouth, 3-5 breaths.",
+      "tempo": "hold 20-30 seconds per side (see section 7).",
+      "visualCheck": "body still, shoulders and head resting, ribs moving slightly."
+    },
+    {
+      "n": 9,
+      "part": "A. Supine figure-4 with the foot on the floor (the beginner default)",
+      "title": "Release",
+      "action": "let go of the thigh, set the left foot back on the floor, and lift the right foot off the knee. Hug both knees for one breath.",
+      "feel": "buttock softens, no dizziness.",
+      "breathing": "breathe in.",
+      "tempo": "5 seconds.",
+      "visualCheck": "legs come down smoothly, no jerk."
+    },
+    {
+      "n": 10,
+      "part": "A. Supine figure-4 with the foot on the floor (the beginner default)",
+      "title": "Repeat on the other side",
+      "action": "switch legs and repeat steps 2-9.",
+      "feel": "compare the sides; one is often tighter.",
+      "breathing": "as before.",
+      "tempo": "same hold.",
+      "visualCheck": "same shape mirrored."
+    },
+    {
+      "n": 11,
+      "part": "C. Seated chair figure-4 (office version)",
+      "title": "Sit tall near the front of the chair. Feet flat, spine long, shoulders relaxed, both hips on the seat. Breath normal",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 12,
+      "part": "C. Seated chair figure-4 (office version)",
+      "title": "Cross the ankle over the knee. Lift the right ankle and rest it across the left thigh just above the knee. Let the right knee open out. Flex the right foot. Visual check: side view, torso upright; front view, both hips level on the seat",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 13,
+      "part": "C. Seated chair figure-4 (office version)",
+      "title": "Hinge forward. Keep the back long and lean forward from the hips (not the waist) until a stretch is felt in the right buttock. Do not hunch the shoulders. You can rest the hands on the crossed shin or on the thighs. Breath out as you lean",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 14,
+      "part": "C. Seated chair figure-4 (office version)",
+      "title": "Hold 20-30 seconds (est.) breathing slowly, then sit up slowly and switch sides. Cleveland Clinic and desk-wellness sources support the same sit-and-lean form. If the crossed knee sits high above the other, put a folded towel or book under the planted foot or use a lower footstool so the pelvis stays level (est.)",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 15,
+      "part": "C. Seated chair figure-4 (office version)",
+      "title": "Hip-replacement and similar warnings apply: leaning forward while sitting takes the hip beyond 90 degrees and crossing the legs is on the usual posterior-approach \"avoid\" list (section 9)",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Pressing the crossed knee away with the hand",
+      "text": "Pressing the crossed knee away with the hand. It forces rotation through the knee, not the hip. Fix: keep the hand behind the supporting thigh, let the crossed knee open by itself, and keep the foot flexed (Cleveland Clinic warns against yanking; the Hinge Health guide uses a gentle pull)."
+    },
+    {
+      "title": "Letting the ankle rest on the kneecap",
+      "text": "Letting the ankle rest on the kneecap. It pinches the knee. Fix: place the ankle across the lower thigh just above the knee."
+    },
+    {
+      "title": "Pointing the crossed foot",
+      "text": "Pointing the crossed foot. It lets the ankle roll and loads the outside of the knee. Fix: flex the foot (toes toward the shin)."
+    },
+    {
+      "title": "Twisting the low back to get closer",
+      "text": "Twisting the low back to get closer. It adds spinal load, and a handout advises against letting the back twist (a PT-style handout, via search result). Fix: keep the pelvis level; reduce the range instead."
+    },
+    {
+      "title": "Lifting the head and shoulders off the floor and cranking the neck",
+      "text": "Lifting the head and shoulders off the floor and cranking the neck. Neck strain. Fix: rest the head down or use a thin pillow; use a strap if you cannot reach."
+    },
+    {
+      "title": "Pulling hard, bouncing or holding the breath",
+      "text": "Pulling hard, bouncing or holding the breath. Raises the risk of a muscle or joint strain and tension. Fix: stay at a \"mild tightness\" level, hold still, and breathe out slowly (ACSM guidance is stretch to mild tightness or slight discomfort)."
+    },
+    {
+      "title": "Pushing through tingling, numbness or sharp pain down the leg",
+      "text": "Pushing through tingling, numbness or sharp pain down the leg. That can mean the sciatic nerve is being irritated or compressed, not just muscles stretching. Fix: ease off, change position, and stop if it does not settle immediately (Cleveland Clinic and Spine-health on sciatic symptoms)."
+    },
+    {
+      "title": "Seated: hunching and twisting instead of hinging",
+      "text": "Seated: hunching and twisting instead of hinging. Strains the spine and gives a weak glute stretch. Fix: sit tall and lean from the hips with a flat back."
+    },
+    {
+      "title": "Doing it with a hip replacement without clearance",
+      "text": "Doing it with a hip replacement without clearance. The shape crosses the legs and bends the hip past 90 degrees, which posterior-approach precautions forbid. Fix: ask the surgeon or physio first (section 9)."
+    }
+  ],
+  "safetyNotes": [
+    "Knees (crossed leg): the crossed ankle sits on the knee or thigh and the knee is opened outward, which can twist the knee if forced. Keep the foot flexed, rest the ankle on the thigh not the kneecap, never press the knee, and stop for sharp or catching pain. Sucirandhrasana teaching lists knee injury as a contraindication (Pranayoga). A stretch-therapist source says stretches can irritate the meniscus and ligaments when flexibility is limited or the joint is unstable, so use a gentle controlled range (Fit&Well). For knee pain use the foot-on-floor or chair version, or skip it.",
+    "Hip flexion limits: the pose bends the hip of the supporting leg toward the chest and the crossed hip outward. After a total hip replacement (posterior approach), standard precautions say do not flex the hip past 90 degrees, do not cross the legs at the knees or ankles, and avoid turning the hip inward (a clinical guideline table and a physio source; West Suffolk NHS leaflet exists but its text could not be read here). A 2019 Hospital for Special Surgery study and a 2020 systematic review of 7 studies found no effect on dislocation rates from following hip precautions in posterior-approach replacements, but your surgeon's own instructions take priority. Do NOT use the figure-4 (lying or seated) unless your surgeon or physio clears it. Hip pain with a pinching \"catch\" in the front of the hip is another reason to ease off (hip impingement is a known issue with deep hip flexion; clinical source for this pose Not found).",
+    "Sciatic symptoms and piriformis syndrome: stretching is a common part of conservative care, but buttock pain is not always piriformis syndrome. Stop if the stretch increases leg pain, tingling or numbness. See a doctor promptly for loss of bladder or bowel control, numbness around the groin or inner thighs (saddle area), new or worsening leg weakness, severe pain after a fall or injury, or fever with back pain (Spine-health red-flag list, Cleveland Clinic).",
+    "Lower back: the lying version with the low back resting is gentle for most people, but do not twist the back to get closer; stop if back pain or leg symptoms increase.",
+    "Sacroiliac (SI) joint pain: Sucirandhrasana teaching lists sacroiliac issues as a contraindication (Pranayoga); a clinical source for the figure-4 specifically is Not found. Reduce range or skip.",
+    "Osteoporosis: use the gentle, foot-on-floor version; do not force the knee or pull with the arms or twist the spine (UK consensus statement on osteoporosis exercise; IOF). Ask a doctor with a known fracture.",
+    "Pregnancy: after about 16 weeks, avoid lying flat on the back for long periods (Tommy's). Choose the seated chair version with an upright torso and no deep fold over the belly; one article notes that people told not to lie flat may prefer seated or standing figure-4s. Check with the midwife or doctor.",
+    "Balance: standing figure-4 is a single-leg stretch and not for beginners with balance concerns; stay with lying or seated versions.",
+    "Recent surgery (hip, knee, spine, abdomen): wait for the surgeon or physio before crossing the legs or drawing the thigh to the chest.",
+    "Stop immediately if you feel: sharp or catching pain in the hip, groin or knee; tingling, burning or numbness down the leg; pain that spreads or gets worse after releasing; dizziness; or in pregnancy any pressure or pain in the belly.",
+    "Spotter: not needed.",
+    "Gym etiquette: use the stretching area or a mat out of walkways; wipe the mat after use; do not lie in a walkway. At the office, keep the chair stable and non-rolling; do not do it on a wheeled chair."
+  ],
+  "sources": [
+    "Cleveland Clinic, piriformis syndrome stretches and exercises: https://health.clevelandclinic.org/piriformis-syndrome-stretches-exercises",
+    "Hinge Health, how to do a figure four stretch: https://www.hingehealth.com/resources/articles/figure-four/",
+    "Physitrack exercise library, figure-4 stretch and variations (supine, seated, foot on wall): https://www.physitrack.com/it/exercise-library/how-to-perform-the-figure-4-stretch-exercise ; https://us.physitrack.com/home-exercise-video/piriformis-stretch-in-sitting ; https://us.physitrack.com/home-exercise-video/piriformis-stretch-against-wall",
+    "Red River College, June stretch of the month, the figure 4 stretch (desk): https://rrc.ca/well-being/2025/06/25/june-stretch-of-the-month-the-figure-4-stretch ; The Healthy, how to do a figure 4 stretch: https://www.thehealthy.com/?p=1167799 ; Peloton, figure 4 stretch: https://www.onepeloton.com/blog/figure-4-stretch",
+    "Pranayoga, Sucirandhrasana (Eye of the Needle): https://pranayoga.co.in/asana/sucirandhrasana-eye-of-the-needle-posture/ ; Yogapedia, Eye of the Needle pose: https://www.yogapedia.com/yoga-poses/eye-of-the-needle-pose/11/11135 ; DoYouYoga, thread the needle: https://www.doyouyoga.com/how-to-do-thread-the-needle-pose/ ; Spotebi, eye of the needle: https://spotebi.com/exercise-guide/eye-of-the-needle-pose/",
+    "Spine-health, piriformis muscle stretch and physical therapy: https://www.spine-health.com/conditions/sciatica/piriformis-muscle-stretch-and-physical-therapy ; Spine-health, piriformis syndrome when symptoms indicate a medical emergency: https://www.spine-health.com/conditions/sciatica/piriformis-syndrome-when-symptoms-indicate-medical-emergency",
+    "NHS Lothian / Edinburgh Orthopaedics, Piriformis Syndrome patient sheet: https://policyonline.nhslothian.scot/wp-content/uploads/2025/02/Piriformis-Syndrome.pdf ; StatPearls, piriformis syndrome (cited second-hand, not read here): https://www.ncbi.nlm.nih.gov/books/NBK448172/",
+    "Hospital for Special Surgery, study on skipping hip precautions: https://news.hss.edu/study-suggests-hip-replacement-patients-can-skip-hip-precautions ; Ohio State, total hip arthroplasty clinical practice guideline update 2022: https://medicine.osu.edu/-/media/files/medicine/departments/sports-medicine/medical-professionals/hip/total-hip-arthroplasty-cpg-update-2022.pdf ; West Suffolk NHS, joint protection after hip surgery, posterior approach (text could not be read here): https://www.wsh.nhs.uk/CMS-Documents/Patient-leaflets/OccupationalTherapy/5577-1JointProtectionfollowingHipSurgery-PosteriorApproach.pdf",
+    "Acute effect of hip external rotator stretches (figure-4) on hip internal rotation range (2015, 30 people): https://opact.sdu.edu.tr/vufind/SummonRecord/FETCH-LOGICAL-c673-93de5c48f8cbe8c9cf3f766627f3e8dcdfa720bd38e953c2f186c02cff10f89b3 ; Prolonged sitting and limited hip extension, cross-sectional study: https://pubmed.ncbi.nlm.nih.gov/33188982/",
+    "Fit&Well, knee-friendly stretches from a stretch therapist: https://www.fitandwell.com/exercise/flexibility/a-certified-stretch-therapist-says-these-are-the-best-knee-friendly-stretches-to-keep-daily-aches-and-pains-at-bay/ ; Sportskeeda, half lotus pose: https://www.sportskeeda.com/health-and-fitness/half-lotus-pose-yoga-correct-form-benefits",
+    "Herrmann SD et al., 2024 Adult Compendium of Physical Activities (02101 Stretching, mild 2.3; 02150 Yoga, Hatha): https://pacompendium.com/conditioning-exercise/ ; https://pubmed.ncbi.nlm.nih.gov/38242596/",
+    "ACSM, Stretching and flexibility guidelines update (10-30 s holds, 30-60 s for older adults, 2-3+ days a week, about 60 s total per muscle group): https://www.acsm.org/blog-detail/acsm-certified-blog/2021/03/18/stretching-and-flexibility-guidelines-update",
+    "Condition sources reused from earlier items (general guidance): UK consensus statement on osteoporosis, BJSM 2022: https://pubmed.ncbi.nlm.nih.gov/35577538/ ; International Osteoporosis Foundation: https://www.osteoporosis.foundation/health-professionals/prevention/exercise/exercise-individuals-with-osteoporosis ; ADA key points, PMC5317029: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/ ; BHF cool-down: https://www.bhf.org.uk/informationsupport/heart-matters-magazine/activity/cool-down-exercises ; Sutter Health hypertension exercise: https://www.Sutterhealth.Org/pdf/services/heart-vascular/hypertension-exercising.pdf ; PCOS position statement: https://researchers.westernsydney.edu.au/en/publications/exercise-in-the-management-of-polycystic-ovary-syndrome-a-positio/ ; Marshfield Clinic asthma: https://shine365.marshfieldclinic.org/wellness/asthma-exercise/ ; ECU Health asthma: https://healthlibrary.ecuhealth.org/lung-health/management/asthma-management-exercise-safety ; Royal Berkshire knee OA: https://royalberkshire.nhs.uk/leaflets/osteoarthritis-of-the-knee-advice-and-exercises ; Berkshire Healthcare low back pain: https://www.berkshirehealthcare.nhs.uk/media/qwqaccdd/bh1165n-low-back-pain-v1-feb-2026.pdf ; Tommy's yoga in pregnancy: https://www.tommys.org/pregnancy-information/im-pregnant/exercise-in-pregnancy/yoga-pregnancy ; Tommy's exercises to avoid: https://www.tommys.org/pregnancy-information/im-pregnant/exercise-pregnancy/exercises-avoid ; Tommy's C-section: https://Tommys.Org/pregnancy-information/giving-birth/caesarean-section/when-and-how-exercise-after-c-section ; East and North Herts NHS: https://www.enherts-tr.nhs.uk/content/uploads/2019/10/M-After-Your-C-Section-c-section_infoleaflet2014-1.pdf ; East Sussex NHS postnatal: https://www.esht.nhs.uk/wp-content/uploads/2021/01/0894.pdf ; UH Sussex abdominal surgery: https://www.uhsussex.nhs.uk/wp-content/uploads/2025/10/2637-Physiotherapy-advice-after-abdominal-surgery-2025.pdf ; Oxford laminectomy: https://WWW.OUH.NHS.UK/patient-guide/leaflets/files/100720laminectomy.pdf",
+    "Hold time: 15-30 s (handouts) vs 30-60 s (desk and general sources); ACSM 10-30 s for most adults, 30-60 s for older adults. We chose 20-30 s per side, 2 rounds.",
+    "Seated vs lying: lying gives a stronger, more controlled stretch; seated is easier and works at the desk and in pregnancy but is milder. We offer both, with lying as the default.",
+    "Which muscle: called piriformis, glute or hip-rotator stretch depending on the source; we describe the whole buttock and deep rotator group.",
+    "Benefit strength: the figure-4 is widely used in piriformis and sciatic-type programmes, but evidence is mostly small studies and clinical guidance; one small trial found no extra immediate rotation gain after a warm-up. We list comfort and flexibility, not cure claims.",
+    "Hip-replacement precautions: guideline tables say no flexion past 90 degrees and no leg crossing after posterior-approach replacement; a 2019 HSS study and a 2020 systematic review found no dislocation difference without precautions. We chose \"ask a doctor\" and the surgeon's own rules win.",
+    "Sucirandhrasana vs figure-4: same lying leg shape; some teachers add a rotation of the legs to the side. We treat the rotation as an advanced option.",
+    "Official AYUSH step text: Not found (Sucirandhrasana does not appear in the CYP list as far as secondary summaries show)."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 43.5,
+      "70kg": 37.3,
+      "80kg": 32.6
+    },
+    "per300kcal": {
+      "60kg": 130.4,
+      "70kg": 111.8,
+      "80kg": 97.8
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "yoga",
+    "mobility",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "small_flat",
+    "quiet",
+    "office_desk",
+    "2_5_min",
+    "warm_up",
+    "cool_down",
+    "desk_break",
+    "evening",
+    "relaxation"
+  ],
+  "swapsByAccess": {
+    "none": "Seated chair figure-4 at a desk, or a wall-supported version; or a lying hamstring stretch with a towel or dupatta",
+    "home_equipment": "Strap or belt behind the thigh, a block or folded towel under the head, or the foot-on-wall version",
+    "basic_gym": "Mat in the stretching area; or the seated figure-4 on a flat bench with the back tall",
+    "full_gym": "Mat and strap or foam roller in the stretching or studio area; or a supported lying figure-4 on a bench with a towel under the head"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "ok",
+      "change": "No pose-specific caution found; no breath-holding, exhale as you draw in, rise slowly; ask a doctor if on treatment",
+      "source": "Sutter Health hypertension exercise (general); Not found (pose-specific)"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "No pose-specific caution found; check feet and knees for sores or numbness before lying on a hard floor (est.)",
+      "source": "ADA exercise guidance via PMC5317029; Not found (pose-specific)"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "Gentle stretching fits a cool-down; avoid straining or breath-holding; ask your cardiac team before starting a new routine",
+      "source": "BHF cool-down (general); Not found (pose-specific)"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "No change (source not found)",
+      "source": "Not found"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Seated chair or foot-on-wall/strap version because belly size can limit the thigh reaching the chest; stable chair; get up slowly (est.)",
+      "source": "Not found (pose-specific)"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "No pose-specific caution found",
+      "source": "Position statement on exercise in PCOS (2023 guideline based); Not found (pose-specific)"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "No pose-specific caution found",
+      "source": "Not found"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "No pose-specific caution found; reliever inhaler nearby; stop if wheezing or breathless",
+      "source": "Marshfield Clinic and ECU Health asthma exercise-safety pages (general)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Foot-on-floor or chair version, foot flexed, ankle on the thigh not the kneecap, never press the knee, avoid forceful twisting; stop if pain increases; Sucirandhrasana teaching lists knee injury as a contraindication",
+      "source": "Pranayoga Sucirandhrasana; Fit&Well knee-friendly stretches; Royal Berkshire NHS knee OA leaflet (general)"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Foot-on-floor version in a pain-free range, no twisting the low back; stop if pain or leg symptoms increase; red flags need a clinician now",
+      "source": "Cleveland Clinic piriformis stretches; Spine-health piriformis red flags; Berkshire Healthcare low back pain leaflet"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "ok",
+      "change": "No pose-specific caution found; use a strap or hold the thigh; keep shoulders relaxed",
+      "source": "Not found (pose-specific)"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "modify",
+      "change": "Gentle foot-on-floor or chair version, no forced pulling or spinal twisting; known fracture: ask doctor or physio",
+      "source": "UK consensus statement (BJSM 2022); International Osteoporosis Foundation"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "modify",
+      "change": "After about 16 weeks avoid long periods lying flat on the back; use the seated chair version, upright torso, no fold over the belly; check with a midwife or doctor",
+      "source": "Tommy's yoga in pregnancy and exercises to avoid (general)"
+    },
+    {
+      "condition": "postpartum",
+      "status": "ask_doctor",
+      "change": "After C-section wait for clearance before drawing the thighs toward the belly; pose-specific source Not found",
+      "source": "Tommy's after a C-section; East and North Herts NHS leaflet; East Sussex NHS postnatal leaflet"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Follow surgeon or physio timeline; after posterior-approach hip replacement do not cross the legs or bend the hip past 90 degrees unless cleared; knee, spine or abdominal surgery needs clearance too",
+      "source": "HSS study on hip precautions; clinical guideline table for total hip arthroplasty; University Hospitals Sussex abdominal surgery advice (2025); Oxford laminectomy leaflet"
+    },
+    {
+      "condition": "other",
+      "status": "ask_doctor",
+      "change": "Hip replacement, sciatica, sacroiliac pain or hip impingement: check with a doctor or physio; stop if leg pain or numbness worsens",
+      "source": "Pranayoga; Spine-health; Cleveland Clinic"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "home",
+      "office_desk"
+    ],
+    "bodyRegion": [
+      "lower"
+    ],
+    "goalTags": [
+      "flexibility",
+      "relaxation",
+      "general_fitness"
+    ],
+    "intensity": "light",
+    "noise": "quiet",
+    "space": "mat_only",
+    "typicalMinutes": 4,
+    "kcalPer10min70kg": 27,
+    "difficulty1to5": 1,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Yoga & stretch",
+    "Home",
+    "Office desk",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Mobility",
+    "Glutes",
+    "Hold timer",
+    "Under 10 min"
+  ],
+  "needsReview": [
+    "rep_counter phase \"hold_ankle_on_knee\" (crossed ankle near opposite knee): angle \"position flag: crossed ankle landmark near the opposite knee\" is not a parseable angle",
+    "rep_counter phase \"hold_still\" (hip landmarks sideways shift): angle \"position flag: shift <= 8 cm\" is not a parseable angle"
+  ],
+  "versions": [
+    {
+      "date": "2026-11-02",
+      "file": "FitPlate_Fitness_2026-11-02.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

@@ -41,6 +41,10 @@ export const featureFlags = {
   savingsDashboard: true,
   /** Innovation (Day 14): "What can I cook with what I have?" from the ingredient inventory. */
   fridgeRescue: true,
+  /** Day 15G1: per-vendor price sightings and logo-tap search links on the shopping list. ON once tested. */
+  vendorLinks: true,
+  /** Day 15G1: Blinkit rows in that comparison. Stays OFF until Blinkit is hooked up. */
+  vendorBlinkit: false,
   /** Priority plan P1-b: Google sign-in inside the iPhone / Android dev build. Only shows when that platform's client ID is in .env. */
   nativeGoogleSignIn: true,
   /** Priority plan P2-c: read the research library from the server when it is newer than the bundled copy. */

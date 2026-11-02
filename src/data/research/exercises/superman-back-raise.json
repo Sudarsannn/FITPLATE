@@ -1,0 +1,794 @@
+{
+  "id": "superman-back-raise",
+  "number": 9,
+  "name": "Superman back raise (lower-range, alternating bird-dog style and full versions)",
+  "otherNames": [
+    "Superman",
+    "Superman hold",
+    "Prone back extension",
+    "Prone back raise",
+    "Lying back raise",
+    "Lower-range superman",
+    "Alternating prone arm-and-leg lift"
+  ],
+  "section": "home",
+  "type": "strength",
+  "equipment": [],
+  "noEquipmentAlternative": "No equipment needed; a mat, carpet or folded blanket under the body is enough.",
+  "musclesPrimary": [
+    "erector spinae"
+  ],
+  "musclesSecondary": [
+    "gluteus maximus",
+    "hamstrings",
+    "rhomboids",
+    "middle trapezius",
+    "lower trapezius",
+    "posterior deltoid",
+    "transversus abdominis",
+    "lumbar multifidus"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 2.8,
+  "compendiumCode": "02024",
+  "metOptions": [
+    {
+      "code": "02024",
+      "met": 2.8,
+      "activity": "MET: 2.8, Compendium code 02024, \"calisthenics (e.g., curl ups, abdominal crunches, plank), light effort\" (2024 Adult Compendium of Physical Activities). This is the code that matches the beginner pre"
+    },
+    {
+      "code": "02022",
+      "met": 3.8,
+      "activity": "Extras (text only, not used in the JSON): the full-height, higher-volume or interval superman circuit could map to 02022, \"calisthenics (e.g., pushups, sit ups, pull-ups, lunges), moderate effort\" = 3"
+    },
+    {
+      "code": "02020",
+      "met": 7.5,
+      "activity": "Extras (text only, not used in the JSON): the full-height, higher-volume or interval superman circuit could map to 02022, \"calisthenics (e.g., pushups, sit ups, pull-ups, lunges), moderate effort\" = 3"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 2,
+      "reps": "8 lower-range reps, 2-3 s pause at the top",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "2 s up, 2-3 s pause, 2 s down",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 2,
+      "reps": "8 reps as a circuit back station",
+      "timeSec": null,
+      "restSec": 30,
+      "tempo": "2 s up, 2 s pause, 2 s down",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "strength",
+      "sets": 2,
+      "reps": "6 reps, back-stability drill before strength work",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "2 s up, 2 s pause, 2 s down",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "1 hold per set (lower-range)",
+      "timeSec": 8,
+      "restSec": 30,
+      "tempo": "2 s up, hold, 2 s down",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "10 full or alternating reps, 3 s pause",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "2 s up, 3 s pause, 2 s down",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "10-12 reps with a 3 s pause",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2 s up, 3 s pause, 2 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "1 hold per set (full version)",
+      "timeSec": 25,
+      "restSec": 40,
+      "tempo": "2 s up, hold, 2 s down",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": 3,
+      "reps": "6-8 reps with light weight and 5 s pause",
+      "timeSec": null,
+      "restSec": 70,
+      "tempo": "2 s up, 5 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "1 long hold per set",
+      "timeSec": 40,
+      "restSec": 40,
+      "tempo": "2 s up, hold, 3 s down",
+      "perWeek": 3
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_ear",
+      "right_ear",
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "start_hip",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": ">= 175",
+        "parsed": {
+          "op": ">=",
+          "value": 175,
+          "max": null
+        }
+      },
+      {
+        "name": "lift_hip_standard",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": "<= 165",
+        "parsed": {
+          "op": "<=",
+          "value": 165,
+          "max": null
+        }
+      },
+      {
+        "name": "lift_hip_beginner",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": "<= 170",
+        "parsed": {
+          "op": "<=",
+          "value": 170,
+          "max": null
+        }
+      },
+      {
+        "name": "lift_hip_max",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": ">= 140",
+        "parsed": {
+          "op": ">=",
+          "value": 140,
+          "max": null
+        }
+      },
+      {
+        "name": "knee_straight",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": ">= 160",
+        "parsed": {
+          "op": ">=",
+          "value": 160,
+          "max": null
+        }
+      },
+      {
+        "name": "elbow_straight",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": ">= 160",
+        "parsed": {
+          "op": ">=",
+          "value": 160,
+          "max": null
+        }
+      },
+      {
+        "name": "neck_line",
+        "joint": "neck (ear-shoulder-hip)",
+        "angleDeg": ">= 150",
+        "parsed": {
+          "op": ">=",
+          "value": 150,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 3
+  },
+  "formChecks": [
+    {
+      "joint": "hip",
+      "rule": "hip angle > 165 degrees at lift phase, standard version (equals lift_hip_standard phase threshold): not counted, flagged",
+      "message": "Lift a little higher, if there is no pinch"
+    },
+    {
+      "joint": "hip",
+      "rule": "hip angle > 170 degrees at lift phase, lower-range version (equals lift_hip_beginner phase threshold)",
+      "message": "Lift just a little more"
+    },
+    {
+      "joint": "hip",
+      "rule": "hip angle < 140 degrees at lift phase (equals lift_hip_max phase threshold)",
+      "message": "Too high: lower a little"
+    },
+    {
+      "joint": "hip",
+      "rule": "hip angle < 175 degrees at start phase (equals start_hip phase threshold)",
+      "message": "Lower all the way down"
+    },
+    {
+      "joint": "knee",
+      "rule": "knee angle < 160 degrees during the lift (equals knee_straight phase threshold)",
+      "message": "Keep the legs straight but soft"
+    },
+    {
+      "joint": "elbow",
+      "rule": "elbow angle < 160 degrees during the lift (equals elbow_straight phase threshold)",
+      "message": "Keep the arms long but soft"
+    },
+    {
+      "joint": "neck",
+      "rule": "neck angle < 150 degrees at the lift (equals neck_line phase threshold)",
+      "message": "Neck long, eyes down"
+    },
+    {
+      "joint": "hip",
+      "rule": "lower-back-arch flag: ribcage landmark rising above the hip line beyond margin (separate flag, not an angle)",
+      "message": "Lift smaller to protect your lower back"
+    },
+    {
+      "joint": "hip",
+      "rule": "rep duration < 3.0 s (equals min_rep_sec)",
+      "message": "Slow down: 2 seconds up, 2 down"
+    }
+  ],
+  "safetyFlags": [
+    "lift_small_neck_long_do_not_arch_hard",
+    "breathe_steadily_never_hold_breath",
+    "hypertension_light_effort_rise_slowly",
+    "heart_disease_get_clearance_first",
+    "lower_back_pain_may_not_suit_stop_if_pinch_or_leg_symptoms",
+    "neck_head_in_line_eyes_down",
+    "knee_pain_pad_under_knees",
+    "shoulder_problems_arms_by_sides",
+    "osteoporosis_small_range_get_advice",
+    "pregnancy_prone_ask_obstetrician",
+    "postpartum_ask_physiotherapist_first",
+    "recent_surgery_get_approval",
+    "stop_with_chest_pain_dizziness_or_leg_symptoms"
+  ],
+  "progressions": [
+    "full superman with 3-5 s pause",
+    "longer holds 10-30 s",
+    "slower tempo",
+    "swimmers (intermediate to advanced)",
+    "light-weight superman"
+  ],
+  "regressions": [
+    "lower-range lift",
+    "arms-only or legs-only lift",
+    "alternating arm-and-opposite-leg lift with tiny range or goalpost arms"
+  ],
+  "videoShots": [
+    {
+      "seconds": 6,
+      "angle": "side, floor level, 2.5 m",
+      "shows": "setup: lie face down, arms ahead, legs hip-width, forehead on mat",
+      "textOverlay": "Long body. Forehead down."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, floor level, 2.5 m",
+      "shows": "brace and lower-range lift: limbs rise a hand's width, 2 s pause, lower",
+      "textOverlay": "Lift small. Neck long."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, floor level, 2.5 m",
+      "shows": "alternating bird-dog style lift: right arm with left leg, then switch",
+      "textOverlay": "Opposite arm and leg."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, floor level, 2.5 m",
+      "shows": "full superman: arms, legs and chest lift together with a pause",
+      "textOverlay": "Lift together. Keep breathing."
+    },
+    {
+      "seconds": 7,
+      "angle": "side, floor level, 2 m, split screen",
+      "shows": "wrong vs right: head thrown back and hard arch vs neck long and small lift",
+      "textOverlay": "Too high is not better."
+    },
+    {
+      "seconds": 6,
+      "angle": "front, floor level ahead of head, 2 m",
+      "shows": "hips level and flat in the alternating version",
+      "textOverlay": "Hips level."
+    },
+    {
+      "seconds": 7,
+      "angle": "side, floor level, 2.5 m",
+      "shows": "hold option: 5 s hold with timer overlay",
+      "textOverlay": "Hold 5 seconds. Breathe."
+    },
+    {
+      "seconds": 7,
+      "angle": "side, floor level, 2.5 m",
+      "shows": "easier one-limb lift and harder long hold",
+      "textOverlay": "Easier: one limb. Harder: longer hold."
+    }
+  ],
+  "lastResearched": "2026-11-02",
+  "setupSteps": [
+    "Floor and mat: use a non-slip mat or carpet on a firm floor. A soft bed lets the body sink and hides your range.",
+    "Noise: the movement is quiet. Place the mat so your feet are not touching a wall and your hands have room ahead of you.",
+    "Lie face down: a folded towel under the hips or forehead is allowed if the pelvis or kneecaps press uncomfortably (Hinge Health and others suggest padding if needed).",
+    "Legs: straight, about hip-width apart (Healthline), toes pointing back, feet relaxed. Squeeze the buttocks lightly before you lift.",
+    "Arms: stretch them straight ahead along the floor, shoulder-width apart, palms down (the usual start). Easier alternative: arms by your sides or in a \"goalpost\" position with elbows bent (physiotherapy sources use hands by the side or behind the back for easier loading, est.).",
+    "Head and neck: forehead resting on the floor, or a gaze on a spot just ahead of your hands. The neck stays long and in line with the spine (sources advise a slightly tucked chin and eyes down, not looking ahead).",
+    "Brace: gently draw the belly button up towards the spine, as if tightening a belt a notch (sources suggest this light brace). Do not hold your breath.",
+    "Clothing: fitted top and leggings or track pants so the camera can see shoulders, hips, knees and ankles. Loose kurtas hide the hip line.",
+    "Water: keep a bottle nearby; this is light work, but long holds feel long."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": "A. Lower-range beginner superman (arms and legs together, small lift)",
+      "title": "Lie down and set the start",
+      "action": "Lie face down, arms stretched ahead, legs straight and hip-width apart, forehead on the floor.",
+      "feel": "Whole front of the body resting; calm back.",
+      "breathing": "Breathe in normally.",
+      "tempo": null,
+      "visualCheck": "Side: shoulders, hips, knees and ankles in one low line on the mat. Front: arms level and shoulder-width apart."
+    },
+    {
+      "n": 2,
+      "part": "A. Lower-range beginner superman (arms and legs together, small lift)",
+      "title": "Brace gently",
+      "action": "Lightly draw the belly button up from the floor and squeeze the buttocks.",
+      "feel": "Slight tightness low in the belly and buttocks.",
+      "breathing": "Breathe out for the brace.",
+      "tempo": null,
+      "visualCheck": "Side: nothing has lifted yet; neck still in line."
+    },
+    {
+      "n": 3,
+      "part": "A. Lower-range beginner superman (arms and legs together, small lift)",
+      "title": "Lift the limbs a hand's width",
+      "action": "Raise both arms and both legs only a few centimetres, 5-8 cm (est.; sources say a few inches), keeping the head in line with the spine.",
+      "feel": "Work along the lower and mid back and buttocks. No pinch in the lower back.",
+      "breathing": "Breathe out gently while lifting.",
+      "tempo": null,
+      "visualCheck": "Side: only the limbs rise; the chest barely lifts and the neck stays long. Front: arms and legs rise evenly."
+    },
+    {
+      "n": 4,
+      "part": "A. Lower-range beginner superman (arms and legs together, small lift)",
+      "title": "Pause",
+      "action": "Hold the lift without lifting higher.",
+      "feel": "Steady work in the back and glutes.",
+      "breathing": "Keep breathing, short steady breaths.",
+      "tempo": null,
+      "visualCheck": "Knees straight, elbows straight, head not rising."
+    },
+    {
+      "n": 5,
+      "part": "A. Lower-range beginner superman (arms and legs together, small lift)",
+      "title": "Lower slowly",
+      "action": "Lower arms and legs back to the mat under control.",
+      "feel": "The muscles lengthen, no drop.",
+      "breathing": "Breathe in as you lower.",
+      "tempo": null,
+      "visualCheck": "Hands and feet land softly."
+    },
+    {
+      "n": 6,
+      "part": "A. Lower-range beginner superman (arms and legs together, small lift)",
+      "title": "Rest between reps",
+      "action": "Rest your cheek or forehead on the floor for a breath.",
+      "feel": "Relaxed back.",
+      "breathing": "One easy breath.",
+      "tempo": null,
+      "visualCheck": "Neck relaxed."
+    },
+    {
+      "n": 7,
+      "part": "A. Lower-range beginner superman (arms and legs together, small lift)",
+      "title": "Finish the set",
+      "action": "After the last rep rest, then push back into Child's Pose (Yoga & Stretch 8) if comfortable.",
+      "feel": "Back warm, no sharp pain.",
+      "breathing": "Slow breaths.",
+      "tempo": null,
+      "visualCheck": "Stop the set early if the neck strained or the lower back pinched."
+    },
+    {
+      "n": 8,
+      "part": "B. Alternating \"bird-dog style\" prone lift (right arm with left leg, then switch)",
+      "title": "Lie face down, arms stretched ahead, legs hip-width apart, forehead on the floor; brace as above",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 9,
+      "part": "B. Alternating \"bird-dog style\" prone lift (right arm with left leg, then switch)",
+      "title": "Breathe out and lift the right arm and the left leg together, a few centimetres only, while the left arm and right leg stay down (this is the same diagonal pairing as the all-fours bird dog; the Healthline bird-dog guide describes extending one arm and the opposite leg)",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 10,
+      "part": "B. Alternating \"bird-dog style\" prone lift (right arm with left leg, then switch)",
+      "title": "Pause 1-2 seconds, lower slowly (about 2 seconds), then switch sides",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 11,
+      "part": "B. Alternating \"bird-dog style\" prone lift (right arm with left leg, then switch)",
+      "title": "Keep the hips level on the mat; do not let the body roll or twist. This is a prone lift, so it is not exactly a bird dog; the all-fours bird dog (hands and knees) is a separate exercise and is listed in the swaps",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 12,
+      "part": "B. Alternating \"bird-dog style\" prone lift (right arm with left leg, then switch)",
+      "title": "For the hold option, stay up 3-5 seconds per side at first (the bird dog is commonly taught with holds of a few seconds to 10 seconds; Harvard Health's \"Three moves for better spine health\" shows a 10-second bird-dog hold, which is a different exercise)",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 13,
+      "part": "C. Full superman (beginner-to-intermediate)",
+      "title": "Same start. Brace",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 14,
+      "part": "C. Full superman (beginner-to-intermediate)",
+      "title": "Lift both arms, both legs and the chest together to a low-to-moderate height, with the head in line",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 15,
+      "part": "C. Full superman (beginner-to-intermediate)",
+      "title": "Hold 2-3 seconds for reps, or 5-10 seconds for the hold option. Keep breathing",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 16,
+      "part": "C. Full superman (beginner-to-intermediate)",
+      "title": "Lower slowly. Stop the set if the lower back pinches or the neck tightens",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Lifting the head too high or looking forward",
+      "text": "Lifting the head too high or looking forward. Why: strains the neck; it is the most cited error. Fix: forehead near the floor, eyes down, chin slightly tucked."
+    },
+    {
+      "title": "Lifting arms and legs too high (hard low-back arch)",
+      "text": "Lifting arms and legs too high (hard low-back arch). Why: a hard arch pinches the lower back and does not add useful work. Fix: lift only a hand's width and stop if you feel a pinch."
+    },
+    {
+      "title": "Kicking up with momentum",
+      "text": "Kicking up with momentum. Why: fast reps lose muscle control and raise injury risk. Fix: 2 s up, 2-3 s pause, 2 s down (est.)."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. Why: breath-holding raises blood pressure more than open breathing during effort (lab data from heavy lifting, PubMed 7741618). Fix: steady breaths; breathe out while lifting."
+    },
+    {
+      "title": "Shrugging the shoulders up to the ears",
+      "text": "Shrugging the shoulders up to the ears. Why: the neck and upper traps take over. Fix: slide the shoulder blades down and back before the lift."
+    },
+    {
+      "title": "Bent knees or flopping legs",
+      "text": "Bent knees or flopping legs. Why: the glutes and hamstrings are not working through a straight line. Fix: straight legs, toes pointing back."
+    },
+    {
+      "title": "Twisting or rolling the hips in the alternating version",
+      "text": "Twisting or rolling the hips in the alternating version. Why: the lower back twists instead of resisting. Fix: smaller lift, keep both hips pressed to the mat."
+    },
+    {
+      "title": "Doing it with pain",
+      "text": "Doing it with pain. Why: sources say people with chronic low back pain or recent back injury may not be suited to it (Healthline). Fix: stop, rest, and use a gentler alternative (swaps below) or see a clinician."
+    }
+  ],
+  "safetyNotes": [
+    "Back problems: Healthline says it may not suit chronic lower back pain or a recent back injury; a physiotherapy guide says prone extension can aggravate extension-intolerant backs. Use the lower-range version in a pain-free range; stop if pain increases, spreads down a leg, or you feel numbness.",
+    "Neck or shoulder problems: keep the head resting and limit arm height; use arms by the sides.",
+    "High blood pressure and heart disease: breathe steadily, avoid breath-holding, get up slowly from the floor; get clearance for severe or uncontrolled BP or known heart disease.",
+    "Pregnancy and postpartum: lying on the stomach is uncomfortable in later pregnancy (an inference); a doctor's advice is needed. After childbirth, ask a physiotherapist, especially after a C-section.",
+    "Recent surgery (especially back or abdominal), dizziness or balance problems on the floor: only with approval.",
+    "Osteoporosis: back-extensor strengthening is recommended in research, but forceful, high-range arching is not; individual advice is needed."
+  ],
+  "sources": [
+    "2024 Adult Compendium of Physical Activities (Herrmann et al., J Sport Health Sci 2024): codes 02020, 02022, 02024 (calisthenics: vigorous, moderate, light). https://pacompendium.com/conditioning-exercise ; https://pacompendium.com/wp-content/uploads/2024/02/1_2024-adult-compendium_1_2024.pdf ; https://pubmed.ncbi.nlm.nih.gov/38242596/",
+    "Healthline, Superman exercise (muscles, modifications, cautions for chronic lower back pain). https://www.healthline.com/health/fitness/superman-exercise",
+    "Healthline, Back extension exercise (beginner version, neutral neck). https://www.healthline.com/health/back-extension-exercise",
+    "Healthline, Bird dog exercise (opposite arm and leg). https://www.healthline.com/health/bird-dog-exercise",
+    "Hinge Health, How to do a superman. https://www.hingehealth.com/resources/articles/superman-exercise/",
+    "Marathon Handbook, The Superman exercise guide (2 beginner variations, arms-only or legs-only). https://marathonhandbook.com/superman-exercise/",
+    "Harvard Health, Three moves for better spine health (bird dog hold 10 s, McGill Big 3). https://www.health.harvard.edu/pain/three-moves-for-better-spine-health",
+    "Yahoo Lifestyle, How to do the superman exercise and improve posture (ACE-certified trainer: 3-5 s hold; Crunch trainer: 1-2 sets of 10-12 reps, 1 min rest). https://www.yahoo.com/lifestyle/superman-exercise-improve-posture-210000775.html",
+    "University of Calgary SHRED, Superman holds (2-3 s hold). https://ucalgary.ca/shred-injuries/all-sports/field-hockey/superman-holds",
+    "Special Olympics Pennsylvania, Superman (10 s hold option). https://specialolympicspa.org/media/attachments/2023/09/19/superman.pdf",
+    "Physitrack, Superman hold exercise; Physitrack insights, Back exercises by diagnosis (extension may aggravate some backs). https://www.physitrack.com/exercise-library/how-to-perform-the-superman-hold-exercise ; https://www.physitrack.com/de/insights/back-exercises-physical-therapist-guide-diagnosis",
+    "Famme, Superman (3 sets of 10-12, arms-only or legs-only). https://famme.com/blogs/trening/superman",
+    "PMC8136566, review noting superman vs bird dog surface EMG and the multifidus crosstalk caveat. https://pmc.ncbi.nlm.nih.gov/articles/PMC8136566",
+    "PolyU, EMG study of erector spinae and multifidus in two isometric back exercises (trunk and leg holds vs prone arch). https://research.polyu.edu.hk/en/publications/emg-study-of-erector-spinae-and-multifidus-in-two-isometric-back-/",
+    "PeaceHealth, Bird dog (hold about 6 s, building to 10-30 s). https://www.peacehealth.org/medical-topics/id/abo6321",
+    "Static vs dynamic back extensor endurance: ISRN Rehabilitation 2013 trial (McKenzie plus static endurance), PMC3716991; Scientific Reports systematic review of exercise in non-specific low back pain. https://pmc.ncbi.nlm.nih.gov/articles/PMC3716991 ; https://www.nature.com/articles/s41598-021-96403-7",
+    "Brooke-Wavell et al. (2022), Strong, steady and straight: UK consensus statement on physical activity and exercise for osteoporosis, Br J Sports Med. https://pubmed.ncbi.nlm.nih.gov/35577538/ ; https://bjsm.bmj.com/content/56/15/837",
+    "Mayo Clinic Professional news, Improving musculoskeletal health in patients with osteoporosis (Sinaki's work); PEDro record on back-extensor strengthening. https://mayoclinic.org/medical-professionals/news/improving-musculoskeletal-health-in-patients-with-osteoporosis/mac-20430142 ; https://search.pedro.org.au/search-results/record-detail/26459",
+    "ACSM-linked Borg RPE bands (light 9-11, moderate 12-13, vigorous 14-17) and talk test. https://pmc.ncbi.nlm.nih.gov/articles/PMC10310950/table/tbl1 ; https://pmc.ncbi.nlm.nih.gov/articles/PMC9618974/table/tbl4 ; https://blog.nasm.org/rate-of-perceived-exertion",
+    "Influence of breathing technique on arterial blood pressure during heavy weight lifting (1995). https://pubmed.ncbi.nlm.nih.gov/7741618/",
+    "IDEA Fitness, ACOG guidelines summary (back-lying after the first trimester; prone not covered). https://www.ideafit.com/acog-guidelines",
+    "NHS Lothian, DRAMs guidelines; Diastasis recti rehabilitation in the postpartum period: scoping review. https://apps.nhslothian.scot/files/sites/2/DRAMs-Guidelines.pdf ; https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11023973/",
+    "ACSM (Zaleski), exercise for the prevention and treatment of hypertension. https://acsm.org/exercise-for-the-prevention-and-treatment-of-hypertension/",
+    "Colberg SR et al. (2016), ADA position statement on physical activity/exercise and diabetes. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/",
+    "AHA, Recommendations for physical activity in adults; AHA Professional, Physical activity as first-line treatment for elevated BP or cholesterol. https://heart.org/en/healthy-living/exercise-and-physical-activity/fitness-basics/aha-recs-for-physical-activity-in-adults ; https://professional.heart.org/en/science-news/Physical-Activity-as-a-Critical-Component-of-First-Line-Treatment-for-Elevated-BP-or-Cholesterol/commentary",
+    "Donnelly JE et al. (2009), ACSM position stand on physical activity for weight loss; ACE Fitness, Tips for training clients impacted by obesity. https://pubmed.ncbi.nlm.nih.gov/19127177/ ; https://www.acefitness.org/education-and-resources/professional/expert-articles/6459/tips-for-training-clients-impacted-by-obesity/",
+    "Effect of physical exercise in people with hypothyroidism: systematic review and meta-analysis (2023). https://pubmed.ncbi.nlm.nih.gov/37999992/",
+    "Pharmacy Magazine CPD, Exercise and asthma; Cambridge University Hospitals, exercise-induced bronchoconstriction leaflet; warm-up review. https://www.pharmacymagazine.co.uk/cpd-modules/making-a-difference-in-asthma-care/exercise-and-asthma-528343 ; https://www.cuh.nhs.uk/patient-information/exercise-induced-bronchoconstriction-for-children-and-young-people/ ; https://pubmed.ncbi.nlm.nih.gov/21811185/",
+    "Harvard Health, Walking, cycling and swimming are best exercises for knee osteoarthritis. https://content.health.harvard.edu/blog/walking-cycling-and-swimming-are-best-exercises-for-knee-osteoarthritis",
+    "HSS Rehabilitation, Shoulder impingement non-operative guideline. https://www.hss.edu/files/HSSRehabilitationClinicalGuidelines-Shoulder-Impingement-Non-operative.pdf"
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 35.7,
+      "70kg": 30.6,
+      "80kg": 26.8
+    },
+    "per300kcal": {
+      "60kg": 107.1,
+      "70kg": 91.8,
+      "80kg": 80.4
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "strength",
+    "back",
+    "posture",
+    "mobility",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "small_flat",
+    "neighbours_below",
+    "quiet",
+    "short_sessions",
+    "no_equipment",
+    "warm_up_back_activation"
+  ],
+  "swapsByAccess": {
+    "none": "All-fours bird dog with a small range, or glute bridge (Home 4)",
+    "home_equipment": "Glute bridge (Home 4) on a mat, or a band row (Home 23, not yet researched)",
+    "basic_gym": "Back extension bench (Gym 31) with a small range, or all-fours bird dog on the mat area",
+    "full_gym": "Roman chair / back extension bench (Gym 31), seated cable row (Gym 26) or lat pulldown (Gym 25)"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "Light effort (3-4/10, Borg 9-11); short holds of 2-5 s; breathe out on effort and never hold the breath; rise slowly; severe or uncontrolled BP needs a medical check first",
+      "source": "ACSM hypertension guidance (Zaleski); Valsalva study (PubMed 7741618)"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "Counts as resistance work; usual glucose checks and fast carbohydrate on hand if on insulin or sulfonylureas; check feet if neuropathy",
+      "source": "ADA position statement (Colberg et al. 2016)"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "After clearance only: lower-range lift at light effort, steady breathing, short holds; stop with chest discomfort or breathlessness",
+      "source": "AHA physical activity recommendations; clearance specifics Not found"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "Counts toward the resistance part of the weekly mix; aerobic minutes still come from other items",
+      "source": "AHA recommendations; AHA statement (Gibbs et al.)"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Make sure getting down to and up from the floor is comfortable; pad under hips or ribs if uncomfortable; start with lower-range lifts",
+      "source": "ACE obesity training article; ACSM weight position stand (Donnelly 2009); superman-specific advice Not found"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "Fits general strength guidance; no superman-specific advice found",
+      "source": "Not found"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "Train as usual if controlled; start at beginner level if fatigued",
+      "source": "Systematic review 2023 (PubMed 37999992)"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Low-intensity floor work; keep reliever nearby; stop and use it if wheeze or cough starts",
+      "source": "Asthma UK tips via Pharmacy Magazine CPD; Cambridge University Hospitals leaflet; PubMed 21811185"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Knees stay straight while thighs lift; put a folded towel under the knees if kneecaps are sore",
+      "source": "Harvard Health low-impact analysis for knee OA; superman-specific knee advice Not found"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "May not suit chronic lower back pain or recent back injury; start with the lowest-range lift in a pain-free range; stop if the back pinches or pain spreads; some backs are extension-intolerant; ask a clinician if pain lasts",
+      "source": "Healthline superman article; Physitrack insights on back exercises by diagnosis; Hinge Health superman guide"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "modify",
+      "change": "Keep arms by the sides, goalpost arms or lift legs only; stop if pinching",
+      "source": "HSS shoulder impingement protocol; superman-specific shoulder advice Not found"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "modify",
+      "change": "Back-extension strengthening is supported by Sinaki trials and the UK Strong, Steady and Straight statement, which also advises avoiding high spinal flexion; use small ranges and no forceful arch; get individual advice, especially after a vertebral fracture",
+      "source": "Strong, Steady and Straight (BJSM 2022; PubMed 35577538); Mayo Clinic Professional news on Sinaki; PEDro record"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "ask_doctor",
+      "change": "Lying face down gets uncomfortable as the bump grows; ACOG-style summaries found cover lying on the back, not the stomach; ask your obstetrician; side-lying or all-fours alternatives",
+      "source": "ACOG via IDEA Fitness summary (supine only); UK physiotherapy good-practice statement; prone-specific advice Not found"
+    },
+    {
+      "condition": "postpartum",
+      "status": "ask_doctor",
+      "change": "Ask a women's health physiotherapist first, especially with abdominal separation or after a C-section; stop if the belly bulges or domes",
+      "source": "NHS Lothian DRAMs guidelines; scoping review PMC11023973; superman-specific advice Not found"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Only with surgeon or physiotherapist approval, especially after back or abdominal surgery",
+      "source": "Not found"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "home",
+      "gym"
+    ],
+    "bodyRegion": [
+      "core",
+      "lower"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "strength",
+      "endurance"
+    ],
+    "intensity": "light",
+    "noise": "quiet",
+    "space": "mat_only",
+    "typicalMinutes": 4,
+    "kcalPer10min70kg": 32.7,
+    "difficulty1to5": 2,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Home",
+    "Gym",
+    "No equipment",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Strength",
+    "Back",
+    "Rep counter",
+    "Under 10 min"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-11-02",
+      "file": "FitPlate_Fitness_2026-11-02.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

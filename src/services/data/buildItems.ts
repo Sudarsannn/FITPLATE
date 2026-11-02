@@ -12,6 +12,7 @@ import { slugify, splitName } from './markdown';
 import { checkPrice, type PriceCheckInput } from './priceChecks';
 import { computePriceEstimate, SEASONAL_PRODUCE, type PriceObservation } from './priceTrend';
 import { dishTags } from './tags';
+import { mergeVendorListings } from './vendorListings';
 
 const byDate = <T extends { date: string }>(a: T, b: T) => a.date.localeCompare(b.date);
 
@@ -201,6 +202,7 @@ export function buildIngredient(all: IngredientVersion[], today: string): Ingred
   if (nutritionPer100g) mergeMethod.nutritionPer100g = 'official (D3)';
   mergeMethod.aliases = 'union';
   mergeMethod.substitutes = 'union';
+  mergeMethod.vendorListings = 'newest sighting per vendor+product+pack';
   mergeMethod.storage = 'newest';
   mergeMethod.looksLike = 'newest';
   mergeMethod.usedIn = 'newest';
@@ -224,6 +226,7 @@ export function buildIngredient(all: IngredientVersion[], today: string): Ingred
     howToPick: newest('howToPick') as string | null,
     shelfLife: newest('shelfLife') as string | null,
     substitutes: unionList(...versions.map((v) => v.substitutes)),
+    vendorListings: mergeVendorListings(versions.map((v) => v.vendorListings ?? [])),
     usedIn: latest.usedIn ?? [],
     versions: versions.map((v) => ({ date: v.date, file: v.file })),
     mergeMethod,

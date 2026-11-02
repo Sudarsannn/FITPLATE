@@ -1,0 +1,724 @@
+{
+  "id": "hip-thrust",
+  "number": 17,
+  "name": "Hip thrust (barbell and machine)",
+  "otherNames": [
+    "Barbell hip thrust",
+    "Glute thrust",
+    "Bench hip thrust",
+    "Hip thrust machine",
+    "Plate-loaded hip thrust",
+    "Glute drive"
+  ],
+  "section": "gym",
+  "type": "strength",
+  "equipment": [
+    "Flat bench (about 35-40 cm high) against a wall or rack",
+    "Olympic barbell (usually 20 kg)",
+    "Weight plates",
+    "Collars",
+    "Bar pad or folded towel/mat",
+    "Flat shoes",
+    "Optional: plate-loaded or selectorised hip thrust machine"
+  ],
+  "noEquipmentAlternative": "Glute bridge (Home 4); with a dumbbell, a loaded glute bridge or couch/bench hip thrust holding a dumbbell",
+  "musclesPrimary": [
+    "gluteus maximus"
+  ],
+  "musclesSecondary": [
+    "hamstrings (biceps femoris, semitendinosus, semimembranosus)",
+    "adductor magnus",
+    "quadriceps",
+    "gluteus medius",
+    "erector spinae and abdominals (trunk stabilisers)"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": false,
+  "met": 3.5,
+  "compendiumCode": null,
+  "metOptions": [
+    {
+      "code": "02052",
+      "met": 5,
+      "activity": "Extras (text only, harder work): 02052, 5.0 METs, \"resistance (weight) training, squats, deadlift, slow or explosive effort\" (from earlier items); 02050, 6.0 METs, vigorous-effort resistance training "
+    },
+    {
+      "code": "02050",
+      "met": 6,
+      "activity": "Extras (text only, harder work): 02052, 5.0 METs, \"resistance (weight) training, squats, deadlift, slow or explosive effort\" (from earlier items); 02050, 6.0 METs, vigorous-effort resistance training "
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 2,
+      "reps": "10-12 at RIR 3 (glute bridge or empty bar)",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "2 s up, 1 s squeeze, 2 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 2,
+      "reps": "10-12 at RIR 3 (as one circuit station)",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2 s up, 1 s squeeze, 2 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "8-12 at RIR 2-3",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "2 s up, 1 s squeeze, 2 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "strength",
+      "sets": 3,
+      "reps": "6-8 at RIR 3",
+      "timeSec": null,
+      "restSec": 120,
+      "tempo": "2 s up, 1 s squeeze, 2 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 2,
+      "reps": "15-20 light at RIR 3-4",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2 s up, 0 s pause, 2 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "10-12 at RIR 2",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "2 s up, 1 s squeeze, 2 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "8-12 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "2 s up, 1 s squeeze, 2 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "strength",
+      "sets": 4,
+      "reps": "5-6 at RIR 2",
+      "timeSec": null,
+      "restSec": 150,
+      "tempo": "2 s up, 1 s squeeze, 1 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "15-20 at RIR 2",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2 s up, 0 s pause, 2 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "general_fitness",
+      "sets": 4,
+      "reps": "10 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "2 s up, 1 s squeeze, 2 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "6-12 at RIR 0-2",
+      "timeSec": null,
+      "restSec": 120,
+      "tempo": "2 s up, 1 s squeeze, 2 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": 5,
+      "reps": "3-6 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 180,
+      "tempo": "2 s up, 1 s squeeze, 1 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "endurance",
+      "sets": 4,
+      "reps": "20 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 53,
+      "tempo": "2 s up, 0 s pause, 2 s down",
+      "perWeek": 2
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle",
+      "left_heel",
+      "right_heel",
+      "left_foot_index",
+      "right_foot_index"
+    ],
+    "phases": [
+      {
+        "name": "bottom",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": "<= 125",
+        "parsed": {
+          "op": "<=",
+          "value": 125,
+          "max": null
+        }
+      },
+      {
+        "name": "top",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": ">= 165",
+        "parsed": {
+          "op": ">=",
+          "value": 165,
+          "max": null
+        }
+      },
+      {
+        "name": "knee_top_min",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": ">= 75",
+        "parsed": {
+          "op": ">=",
+          "value": 75,
+          "max": null
+        }
+      },
+      {
+        "name": "knee_top_max",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": "<= 110",
+        "parsed": {
+          "op": "<=",
+          "value": 110,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 3
+  },
+  "formChecks": [
+    {
+      "joint": "hip",
+      "rule": "top hip angle < 165 degrees (equals top phase threshold; rep not counted)",
+      "message": "Squeeze the hips up until thighs are level"
+    },
+    {
+      "joint": "hip",
+      "rule": "bottom hip angle > 125 degrees (equals bottom phase threshold)",
+      "message": "Lower your hips close to the floor"
+    },
+    {
+      "joint": "knee",
+      "rule": "top knee angle < 75 degrees (equals knee_top_min threshold)",
+      "message": "Move your feet away from the bench"
+    },
+    {
+      "joint": "knee",
+      "rule": "top knee angle > 110 degrees (equals knee_top_max threshold)",
+      "message": "Move your feet closer to the bench"
+    },
+    {
+      "joint": "spine",
+      "rule": "separate flag: ribs rise above the shoulder-hip line or a hollow forms in the lower back at the top (no angle used)",
+      "message": "Ribs down, don't arch your back"
+    },
+    {
+      "joint": "neck",
+      "rule": "separate flag: nose rises above the shoulder line at the top (no angle used)",
+      "message": "Chin tucked, eyes on your knees"
+    },
+    {
+      "joint": "ankle",
+      "rule": "separate flag: heel landmark rises above the foot-index line beyond a set margin (no angle used)",
+      "message": "Keep your feet flat"
+    },
+    {
+      "joint": "knee",
+      "rule": "front view only, separate flag: knee landmarks move inward of the ankles beyond a set margin at the top (no angle used)",
+      "message": "Knees out over your toes"
+    },
+    {
+      "joint": "hip",
+      "rule": "rep duration < 3 s or lowering < 2 s",
+      "message": "Slow down: 2 seconds down"
+    }
+  ],
+  "safetyFlags": [
+    "bench_against_wall_or_rack",
+    "start_with_glute_bridge_or_empty_bar",
+    "pad_the_bar",
+    "use_collars_every_set",
+    "load_both_sides_evenly",
+    "bar_in_hip_crease_not_belly",
+    "chin_tucked_ribs_down",
+    "no_lumbar_arch_at_top",
+    "shins_near_vertical_at_top",
+    "do_not_drop_or_bounce",
+    "hand_bar_on_and_off_with_spotter_for_heavy_sets",
+    "no_standard_bail_do_not_dump_bar",
+    "high_blood_pressure_no_breath_holding_no_failure_sets",
+    "resting_bp_180_120_do_not_lift",
+    "lower_back_pain_start_with_glute_bridge_ask_professional",
+    "knee_pain_reduce_load",
+    "pregnancy_ask_obstetrician",
+    "osteoporosis_ask_doctor_neutral_spine",
+    "recent_surgery_follow_surgeon_limits",
+    "check_bar_weight_label"
+  ],
+  "progressions": [
+    "add small plates or sets (double progression)",
+    "slow 3-4 s lowering with 2 s squeeze at the top (lighter weight)",
+    "single-leg, banded or heavier hip thrust (intermediate to advanced)"
+  ],
+  "regressions": [
+    "bodyweight glute bridge on the floor (Home 4)",
+    "dumbbell glute bridge or bodyweight hip thrust with upper back on the bench",
+    "machine hip thrust with a light stack or Smith machine hip thrust (Gym 14)"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "three-quarter front, 3 m",
+      "shows": "bench pushed against a wall or rack; bar, plates, collars and pad named",
+      "textOverlay": "Bench against the wall; pad on the bar"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "bench edge across the lower half of the shoulder blades (right) vs on the neck (wrong)",
+      "textOverlay": "Bench across the shoulder blades"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "bodyweight rep with the shin vertical at the top; foot-length adjustments",
+      "textOverlay": "Shins vertical at the top"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "rolling the empty bar over the knees onto the hip crease with the pad; hands outside the hips",
+      "textOverlay": "Bar in the hip crease"
+    },
+    {
+      "seconds": 10,
+      "angle": "side, hip height, 3 m",
+      "shows": "full empty-bar rep: 2 s up, 1 s pause, 2 s down; chin tucked, ribs down",
+      "textOverlay": "Up 2 - Squeeze 1 - Down 2"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "ribs down and level torso vs lower back arched with ribs flared",
+      "textOverlay": "Ribs down, no arch"
+    },
+    {
+      "seconds": 8,
+      "angle": "front, knee height, 2.5 m",
+      "shows": "knees over toes vs knees caving in",
+      "textOverlay": "Knees over toes"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "hip thrust machine: seat or back pad, belt across the hip crease, foot plate, drive to level",
+      "textOverlay": "Machine: belt on the hip crease"
+    }
+  ],
+  "lastResearched": "2026-11-02",
+  "setupSteps": [
+    "Pick a stable bench and fix it. The bench must not slide. Push its far end against a wall, a power rack upright or a weight stack (RitFit advises anchoring it). A bench on a smooth floor will skid backwards when you drive up.",
+    "Check bench height. Most guides give about 14–16 in (35–40 cm) with Contreras favouring about 16 in; a standard gym flat bench is often in that range, but the exact height of your gym's bench is Not found, so test it. If your torso is long or short, adjust by foot position, not by arching.",
+    "Check the bar. Learn its weight (often 20 kg; some gyms have lighter bars) and whether the sleeves rotate.",
+    "Get a pad. Use a purpose-made bar pad if the gym has one. If not, wrap a folded yoga mat or a thick folded towel around the middle of the bar and hold it with the bar against your hips; make sure it does not slide when you lift. The bar presses hard across the hip bones and lower belly, so padding is recommended (several guides; Gravitus, Major Fitness).",
+    "Load with collars. Load equal plates on both sides, push them against the stoppers and fit collars. For heavy loads use larger plates (45 cm / 20 kg plates) so the bar sits high enough off the floor to roll easily; with small plates the bar can be hard to roll over the knees.",
+    "Start with the empty bar, or just the bench and bodyweight, for your first sessions.",
+    "Sit on the floor with your back to the bench, knees bent, with the bench about one foot (30 cm, est.) behind you. Roll the bar to sit across your hips (roll it over your legs; do not lift it on your own with a bent back). With a heavy bar, ask someone to hand it to you.",
+    "Upper-back contact. Lean back until the bottom edge of your shoulder blades rests on the bench edge. Sources vary: the bottom of the shoulder blades (StrengthLog and other guides), the middle of the shoulder blades, or just below the shoulder blades. FitPlate choice: the bench edge crosses the lower half of your shoulder blades, never your neck, never your lower back. If the bench edge is on the neck or the lower back, shuffle until it is across the blades.",
+    "Foot placement. Feet flat, about hip-width to a bit wider (sources: hip-width to shoulder-width), toes pointing straight or slightly out (about 0–30°, est.). Place them so that, at the top of the lift, your shins are vertical or nearly so (the knee roughly above the ankle). A trial of four barbell hip thrust variations (Collazo García et al., 2020) found that moving the feet further away raised hamstring activity and lowered quadriceps activity; a guide says too-near feet shorten the range, too-far feet turn it into a quad exercise.",
+    "Test the shin angle before loading. Do a bodyweight rep or two with your hands on your hips; at the top, look from the side (or ask for a photo): the shin should be near vertical. Move your feet forward or back by a foot-length (30 cm, est.) at a time until it is.",
+    "Bar on the hip crease. Place the bar (with its pad) right in the crease where the thigh meets the pelvis. Hold it with a grip just wider than your hips so the bar cannot roll up toward your belly. Do not place it on your belly.",
+    "Chin tuck and rib position. Tuck your chin gently (as if holding a small ball under it), keep your eyes on a point ahead or slightly down at the knees, and pull your ribs down toward your hips before the first rep. Contreras's guide lists forward eye gaze, chin tuck, ribs down, level torso and slight posterior pelvic tilt as the target position."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Set the start position",
+      "action": "Upper back on the bench edge, feet flat, bar and pad on the hip crease, hands on the bar, chin tucked, ribs down.",
+      "feel": "Bar pressing evenly on the hip crease; weight carried by the feet and the bench edge on the upper back.",
+      "breathing": "Normal breath.",
+      "tempo": null,
+      "visualCheck": "Side: shoulder blades just touching the bench edge; hips lowered to about 1–2 in (2.5–5 cm, est.) above the floor; shins vertical when the hips are at the top. Front: knees over the second toe; feet even."
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Brace and take a breath",
+      "action": "Take a small breath in, tighten your stomach lightly, and pull the ribs toward the hips.",
+      "feel": "Firm trunk; ribs \"closed\".",
+      "breathing": "In through the nose; avoid a long breath-hold.",
+      "tempo": null,
+      "visualCheck": "Side: ribs level with the hips, not flared; chin tucked."
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Drive your hips up",
+      "action": "Push through the whole foot (the heels are often cued) and lift your hips until the thighs are level with the torso.",
+      "feel": "Buttocks squeezing hard; hamstrings working a little; no pinch in the lower back.",
+      "breathing": "Breathe out as the hips rise (the Valsalva breath-hold is a recognised blood-pressure risk; see Safety).",
+      "tempo": null,
+      "visualCheck": "Side: back, hips and thighs rise as one straight line from shoulder to knee; knees about 90° (est.). Front: knees stay over the toes, not caving in."
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Finish with a pause at the top",
+      "action": "Stop when your torso and thighs are level. Squeeze the buttocks, keep the ribs down and the chin tucked, and do not push the hips higher by arching the lower back.",
+      "feel": "Strong squeeze in the buttocks; lower back relaxed, not pinched.",
+      "breathing": "Finish the exhale.",
+      "tempo": null,
+      "visualCheck": "Side: torso roughly horizontal; shins vertical; a slight backward tilt of the pelvis (belt buckle toward the chin). Wrong: a hollow in the lower back and ribs poking up."
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Lower under control",
+      "action": "Let the hips travel back and down until they are about 1–2 in above the floor. Do not drop; do not touch and bounce.",
+      "feel": "Stretch in the buttocks and hamstrings; bar stays on the hips.",
+      "breathing": "Breathe in on the way down.",
+      "tempo": null,
+      "visualCheck": "Side: shoulders stay on the bench edge; head stays still; the chin stays tucked."
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Repeat smoothly for the planned reps. Reset the ribs and chin tuck if they drift",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Finish the set and put the bar down",
+      "action": "After the last rep, lower the hips to the floor, then roll the bar off your hips toward your feet and out over the knees (or ask a spotter to take it); set it on the floor and sit up.",
+      "feel": "Weight leaves the hips.",
+      "breathing": "Normal.",
+      "tempo": null,
+      "visualCheck": "Side: you lower your hips first; you do not let the bar roll while your hips are still up."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Arching the lower back to get \"extra height\"",
+      "text": "Arching the lower back to get \"extra height\". Why: the movement moves into the lumbar spine instead of the hips, takes tension off the glutes, and can irritate the back. Fix: chin tucked, ribs down, stop when thighs are level, squeeze the buttocks."
+    },
+    {
+      "title": "Looking at the ceiling",
+      "text": "Looking at the ceiling. Why: tends to flare the ribs and push the lower back into extension. Fix: eyes on your knees or a spot ahead."
+    },
+    {
+      "title": "Bench edge in the wrong place",
+      "text": "Bench edge in the wrong place. Why: on the neck it hurts and is unstable; on the lower back it cuts range and strains. Fix: edge across the lower half of the shoulder blades."
+    },
+    {
+      "title": "Feet too far forward or too close",
+      "text": "Feet too far forward or too close. Why: too far out hits the hamstrings and shortens the glute range; too close turns it into a quad exercise (Collazo García 2020; coaching guides). Fix: shins vertical at the top; adjust by a foot-length."
+    },
+    {
+      "title": "No bar pad",
+      "text": "No bar pad. Why: the bar bruises the hip bones and distracts you from lifting. Fix: pad, folded towel or mat."
+    },
+    {
+      "title": "Letting the bench slide",
+      "text": "Letting the bench slide. Why: the bench moves and the lift becomes unstable. Fix: push the bench against a wall or rack."
+    },
+    {
+      "title": "Bar sliding up to the belly or down toward the knees",
+      "text": "Bar sliding up to the belly or down toward the knees. Why: loses leverage and may cause the bar to roll off. Fix: bar in the hip crease, hands steady it."
+    },
+    {
+      "title": "Bouncing at the bottom or dropping the weight",
+      "text": "Bouncing at the bottom or dropping the weight. Why: loses tension and jars the spine and the bench. Fix: 2 s down, light touch, no bounce."
+    },
+    {
+      "title": "Loading too heavy too soon",
+      "text": "Loading too heavy too soon. Why: form breaks (arching, short range, hips twisting). Fix: empty bar until 3 x 10 are smooth; Contreras says stop a heavy set when you can no longer hold your spine and pelvis position."
+    },
+    {
+      "title": "Knees caving in",
+      "text": "Knees caving in. Why: strains the knee and shifts load. Fix: push knees out over toes; lighter weight."
+    },
+    {
+      "title": "Holding the breath on every rep",
+      "text": "Holding the breath on every rep. Why: raises blood pressure (see Safety). Fix: breathe out as the hips rise."
+    }
+  ],
+  "safetyNotes": [
+    "Back problems: keep the ribs down and avoid arching; start with a glute bridge. Hip thrust-specific evidence for people with back pain: Not found; ask a professional.",
+    "Knee problems: the knees stay bent about 90° with little extra knee load; reduce the load if the front of the knee hurts.",
+    "Hip or groin problems: the bar presses on the hip crease; pad well and reduce load if the hip bones or the pubic area hurt.",
+    "High blood pressure: the breath-hold (Valsalva manoeuvre) raises intra-abdominal pressure and blood pressure. A 2013 systematic review found it raises blood pressure during resistance exercise but its health risks remain unconfirmed. Breathe out on each lift, avoid sets to failure, and keep loads moderate. Do not lift when resting BP is 180/120 mmHg or higher.",
+    "Pregnancy, recent surgery, osteoporosis: see the table; ask a professional. Lying-back positions and a heavy bar over the belly are a problem in later pregnancy; ask your obstetrician.",
+    "Men and women: the bar presses on the hip bones and pelvic area; pad well and keep the bar on the hip crease (several guides)."
+  ],
+  "sources": [
+    "Contreras B et al. (2015), A comparison of gluteus maximus, biceps femoris and vastus lateralis EMG activity in the back squat and barbell hip thrust, J Appl Biomech 31(6):452-8. https://pubmed.ncbi.nlm.nih.gov/26214739/",
+    "Plotkin D, Contreras B et al. (2023), Muscle and strength outcomes of hip thrust vs back squat training, Frontiers in Physiology (seen via search summary). https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2023.1279170/full",
+    "Collazo García C et al. (2020), Differences in the electromyographic activity of lower-body muscles in hip thrust variations, J Strength Cond Res (abstract; foot-position details via secondary summary). https://pubmed.ncbi.nlm.nih.gov/30335717/",
+    "Bret Contreras, Heavy hip thrusts done right are not dangerous (chin tuck, ribs down, posterior pelvic tilt). https://bretcontreras.com/heavy-hip-thrusts-done-right-are-not-dangerous/ ; How to hip thrust: https://bretcontreras.com/how-to-hip-thrust/",
+    "Eric Cressey, In defense of the hip thrust. https://ericcressey.com/in-defense-of-the-hip-thrust",
+    "StrengthLog, How to do hip thrusts (bench position, foot position). https://www.strengthlog.com/hip-thrust/",
+    "Gravitus, Barbell hip thrust guide; How to lift heavy and fail safely (bar on the lower back is the risk). https://gravitus.com/guides/exercises/barbell-hip-thrust ; https://gravitus.com/blog/how-to-lift-heavy-and-fail-safely",
+    "RitFit Sports, How to do barbell hip thrust; workout bench for hip thrusts (anchor the bench). https://www.ritfitsports.com/blogs/article/how-to-do-barbell-hip-thrust ; https://www.ritfitsports.com/blogs/article/workout-bench-for-hip-thrusts",
+    "Major Fitness, How to do barbell hip thrusts (padding, foot position). https://www.majorfitness.com/blogs/wiki/how-to-do-barbell-hip-thrusts-for-ultimate-glute-activation",
+    "Adelphi University, Machine vs barbell hip thrust, electromyographic comparison (abstract). https://scholarlyworks.adelphi.edu/esploro/outputs/991004365122106266 ; BodyKore, Barbell vs machine hip thrust. https://www.bodykore.com/blog/barbell-vs-machine-hip-thrust",
+    "Healthline and LiveStrong, glute bridge vs hip thrust / barbell glute bridge (regression path). https://www.healthline.com/health/barbell-glute-bridge ; https://livestrong.com/article/13767413-glute-bridge-vs-hip-thrust",
+    "IndiaMART, Multi hip machine and glute machine listings (prices; plate-loaded hip thrust machine). https://m.indiamart.com/impcat/multi-hip-machine.html ; https://m.indiamart.com/impcat/glute-machine.html",
+    "2024 Adult Compendium of Physical Activities (Herrmann et al., J Sport Health Sci 2024): code 02054 (3.5 METs; older-adult table 4.3). https://pacompendium.com/conditioning-exercise ; https://pubmed.ncbi.nlm.nih.gov/38242596/",
+    "Zourdos MC et al. (2016), RIR-based RPE scale. https://openrepository.aut.ac.nz/items/efef3b25-6701-4fb5-bb82-55fcd2a26027/full",
+    "The Valsalva manoeuvre: its effect on intra-abdominal pressure and safety issues during resistance exercise (2013 systematic review). https://pubmed.ncbi.nlm.nih.gov/23222073/",
+    "ACSM (2009), Progression models in resistance training for healthy adults. https://www.sportgeneeskunde.com/wp-content/uploads/ACSM-Position-Stand-Progression-Models-in-Resistance-Training-for-Healthy-Adults.pdf",
+    "ACSM (Zaleski), exercise for hypertension. https://acsm.org/?p=18319",
+    "Colberg SR et al. (2016), ADA position statement. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/",
+    "ACC summary of the 2023 AHA statement on resistance exercise. https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2023/12/19/15/33/resistance-exercise-training",
+    "AHA Professional, physical activity for elevated BP or cholesterol (Gibbs et al.). https://professional.heart.org/en/science-news/Physical-Activity-as-a-Critical-Component-of-First-Line-Treatment-for-Elevated-BP-or-Cholesterol/commentary",
+    "Donnelly JE et al. (2009), ACSM position stand on weight loss. https://pubmed.ncbi.nlm.nih.gov/19127177/",
+    "PCOS exercise position statement / 2023 guideline evidence. https://vuir.vu.edu.au/45855/1/1-s2.0-S2772696723000054-main.pdf",
+    "Exercise in hypothyroidism, systematic review (2023). https://pubmed.ncbi.nlm.nih.gov/37999992/",
+    "Pharmacy Magazine CPD, Exercise and asthma. https://www.pharmacymagazine.co.uk/cpd-modules/making-a-difference-in-asthma-care/exercise-and-asthma-528343",
+    "Review of patellofemoral joint loading in squat and lunge (PMC; squat/lunge, not hip thrust). https://pmc.ncbi.nlm.nih.gov/articles/PMC4901792",
+    "LIFTMOR trial: Watson et al. (JBMR, via summaries). https://academic.oup.com/jbmr/article/33/2/211/7605709",
+    "Osteoporosis Canada, Too Fit To Fracture. https://osteoporosis.ca/wp-content/uploads/2014-07-25-Are-you-too-fit-to-fracture-for-patients.pdf",
+    "ACOG Committee Opinion No. 804 (abstract record). https://opqic.org/acog-committee-opinion-no-804-physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period/",
+    "NNUH NHS, Post-natal physiotherapy advice. https://www.nnuh.nhs.uk/publication/download/post-natal-physiotherapy-advice-and-exercises-v2-1",
+    "Royal Devon NHS, Postnatal physiotherapy advice. https://www.royaldevon.nhs.uk/media/ibneih1b/patient-information-leaflet-postnatal-physiotherapy-advice-rde-20-143-001.pdf",
+    "Note: nearly all hip-thrust-specific sources were seen only as search-result summaries (publisher pages not opened); many are coaching or retailer blogs. Not found: an ACE, NSCA, NASM or ExRx hip thrust page; any numeric starting load or rep standard; any hip-thrust-specific bail procedure; any numeric hip or knee angle from a study (angles are est.); the exact height of bench in Indian gyms; how common hip thrust machines are in Indian gyms; spinal-loading or clinical data for hip thrusts in back pain, pregnancy or knee OA. Condition rows for ADA, AHA, ACSM, PCOS, thyroid, asthma, Osteoporosis Canada, ACOG and NHS are carried over from earlier items' citations and were not re-opened this session."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 28.6,
+      "70kg": 24.5,
+      "80kg": 21.4
+    },
+    "per300kcal": {
+      "60kg": 85.7,
+      "70kg": 73.5,
+      "80kg": 64.3
+    }
+  },
+  "gymAccess": [
+    "full_gym",
+    "basic_gym"
+  ],
+  "suitsPreferences": [
+    "strength",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "leg_day",
+    "glute_day",
+    "full_body",
+    "free_weights",
+    "bodybuilding_split",
+    "30_to_60_min_sessions"
+  ],
+  "swapsByAccess": {
+    "none": "Glute bridge (Home 4), 3 x 12-15 with a 2-second squeeze",
+    "home_equipment": "Dumbbell glute bridge or couch/bench hip thrust holding a dumbbell; or resistance band squat and lateral walk (Home 24)",
+    "basic_gym": "Barbell hip thrust with a pad on a bench; or Smith machine hip thrust (Gym 14, if available)",
+    "full_gym": "Hip thrust machine (plate-loaded or selectorised) if available, or the barbell hip thrust"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "No breath-holding: breathe out on each lift; moderate loads 10-15 reps, stop 2-3 reps before failure; no lifting if resting BP >= 180/120; uncontrolled BP: ask a doctor",
+      "source": "2013 systematic review on the Valsalva manoeuvre (PubMed 23222073); NSCA column on Valsalva and hypertension; ACSM hypertension guidance"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "2-3 non-consecutive resistance days per week; usual glucose checks if on insulin or sulfonylureas",
+      "source": "ADA position statement, Colberg et al. 2016"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "After clearance: light load, 10-15 reps, continuous breathing, no straining",
+      "source": "AHA resistance exercise statements (via ACC summary 2023)"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "Part of 2+ days/week resistance work with aerobic activity",
+      "source": "AHA scientific statement (Gibbs et al.)"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Check bench fit and stability; start with glute bridge or bodyweight; pad the bar well; a machine with a belt may be easier",
+      "source": "ACSM weight management position stand (Donnelly et al. 2009)"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "Fits muscle-strengthening guidance; hip-thrust-specific advice not found",
+      "source": "International PCOS guideline 2023 / exercise position statement"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "Train normally if controlled; start at beginner level with ongoing fatigue",
+      "source": "Systematic review 2023 (PubMed 37999992)"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Warm up and keep reliever inhaler nearby",
+      "source": "Asthma exercise guidance (Pharmacy Magazine CPD citing Asthma UK)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Knees stay near 90 degrees with shins vertical, often better tolerated than deep squats; light load, slow tempo; stop if pain rises; hip-thrust-specific source not found",
+      "source": "Patellofemoral loading review (PMC4901792, squat/lunge context)"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Chin tucked, ribs down, no arching; start with bodyweight glute bridge; light load; stop if back pain rises; hip-thrust-specific clinical evidence not found",
+      "source": "Contreras, Heavy hip thrusts done right are not dangerous (coach article)"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "ok",
+      "change": "Hands only steady the bar; reduce load if shoulder blades or neck hurt",
+      "source": "Not found"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "ask_doctor",
+      "change": "Resistance work benefits bone, but with low bone mass or a spine fracture see a physiotherapist first; supervised, neutral-spine, progressive loading",
+      "source": "LIFTMOR trial (Watson et al., via summaries); Osteoporosis Canada"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "ask_doctor",
+      "change": "Ask obstetrician; a bar over the belly and lying back are poor choices later in pregnancy; hip-thrust-specific advice not found",
+      "source": "ACOG Committee Opinion 804 (secondary citations)"
+    },
+    {
+      "condition": "postpartum",
+      "status": "modify",
+      "change": "Pelvic floor work first; glute bridge is a gentle start; return to loaded hip thrusts once cleared, especially after caesarean",
+      "source": "NHS postnatal physiotherapy leaflets (NNUH, Royal Devon)"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Only with surgeon or physiotherapist approval; hip, spine and abdominal surgery often restricts this lift",
+      "source": "General clearance advice; condition-specific source not found"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "gym"
+    ],
+    "bodyRegion": [
+      "lower"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "fat_loss",
+      "muscle",
+      "strength",
+      "endurance"
+    ],
+    "intensity": "moderate",
+    "noise": "quiet",
+    "space": "machine",
+    "typicalMinutes": 9,
+    "kcalPer10min70kg": 41,
+    "difficulty1to5": 3,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Gym",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Strength",
+    "Glutes",
+    "Rep counter",
+    "Under 10 min"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-11-02",
+      "file": "FitPlate_Fitness_2026-11-02.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

@@ -1,0 +1,383 @@
+{
+  "id": "iron",
+  "name": "Iron",
+  "type": "mineral",
+  "subtype": "trace-mineral",
+  "unit": "mg",
+  "altUnits": [
+    {
+      "unit": "µg",
+      "toMainUnitFactor": 0.001
+    },
+    {
+      "unit": "mg ferrous sulfate (heptahydrate, as tablet weight)",
+      "toMainUnitFactor": 0.2
+    },
+    {
+      "unit": "mg ferrous fumarate (as tablet weight)",
+      "toMainUnitFactor": 0.33
+    },
+    {
+      "unit": "mg ferrous gluconate (as tablet weight)",
+      "toMainUnitFactor": 0.12
+    }
+  ],
+  "unitConversions": [
+    {
+      "fromUnit": "µg",
+      "compound": "/l serum ferritin",
+      "toMainUnitFactor": 1,
+      "raw": "1 µg/L serum ferritin | 1 ng/mL"
+    }
+  ],
+  "targets": [
+    {
+      "group": "adult_male_sedentary",
+      "ear": null,
+      "rda": 19,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "group": "adult_male_moderate",
+      "ear": null,
+      "rda": 19,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (secondary, unverified); activity levels assumed the same"
+    },
+    {
+      "group": "adult_male_heavy",
+      "ear": null,
+      "rda": 19,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (secondary, unverified); activity levels assumed the same"
+    },
+    {
+      "group": "adult_female_sedentary",
+      "ear": 15,
+      "rda": 29,
+      "ai": null,
+      "source": "ICMR-NIN 2020 via NIN Brief Note snippet (EAR column garbled, low confidence) (secondary, unverified)"
+    },
+    {
+      "group": "adult_female_moderate",
+      "ear": 15,
+      "rda": 29,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (secondary, unverified); activity levels assumed the same"
+    },
+    {
+      "group": "adult_female_heavy",
+      "ear": 15,
+      "rda": 29,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (secondary, unverified); activity levels assumed the same"
+    },
+    {
+      "group": "pregnant",
+      "ear": null,
+      "rda": 27,
+      "ai": null,
+      "source": "ICMR-NIN 2020 via FSSAI direction news report (secondary, unverified)"
+    },
+    {
+      "group": "lactating",
+      "ear": null,
+      "rda": null,
+      "ai": null,
+      "source": "ICMR value Not found; NIH about 9 mg/day (secondary)"
+    }
+  ],
+  "appDefaultTarget": {
+    "adult_male": 19,
+    "adult_female": 29,
+    "pregnant": 27,
+    "lactating": null,
+    "age_60_plus": null
+  },
+  "upperLimit": {
+    "value": 45,
+    "unit": "mg",
+    "appliesTo": "food_and_supplements",
+    "source": "NIH ODS (adults and teens 14+, from food, drinks and supplements); ICMR-NIN 2020 TUL 45 mg (secondary, unverified); doctors may prescribe more"
+  },
+  "topFoodSources": [
+    {
+      "food": "Garden cress seeds, halim (IFCT H008)",
+      "veg": true,
+      "per100g": 17.2,
+      "servingG": 5,
+      "servingLabel": "1 tsp soaked (est.)",
+      "perServing": 0.86
+    },
+    {
+      "food": "Gingelly seeds, white, til (IFCT H011)",
+      "veg": true,
+      "per100g": 15.04,
+      "servingG": 10,
+      "servingLabel": "2 tsp (est.)",
+      "perServing": 1.5
+    },
+    {
+      "food": "Chicken liver (IFCT N005)",
+      "veg": false,
+      "per100g": 9.92,
+      "servingG": 50,
+      "servingLabel": "small portion (est.)",
+      "perServing": 4.96
+    },
+    {
+      "food": "Lentil dal, masoor (IFCT B013)",
+      "veg": true,
+      "per100g": 7.06,
+      "servingG": 30,
+      "servingLabel": "30 g dry, 1 katori cooked (est.)",
+      "perServing": 2.12
+    },
+    {
+      "food": "Bajra (IFCT A003)",
+      "veg": true,
+      "per100g": 6.42,
+      "servingG": 50,
+      "servingLabel": "50 g flour, about 2 rotis (est.)",
+      "perServing": 3.21
+    },
+    {
+      "food": "Fenugreek leaves, methi (IFCT C020)",
+      "veg": true,
+      "per100g": 5.69,
+      "servingG": 50,
+      "servingLabel": "1 handful raw (est.)",
+      "perServing": 2.85
+    },
+    {
+      "food": "Rice flakes, poha (IFCT A011)",
+      "veg": true,
+      "per100g": 4.46,
+      "servingG": 60,
+      "servingLabel": "1 plate dry weight (est.)",
+      "perServing": 2.68
+    }
+  ],
+  "goodSourceDishes": [
+    {
+      "dishNumber": 77,
+      "dishName": "Keema Pav"
+    },
+    {
+      "dishNumber": 62,
+      "dishName": "Mutton Biryani"
+    },
+    {
+      "dishNumber": 68,
+      "dishName": "Chicken Chettinad"
+    },
+    {
+      "dishNumber": 93,
+      "dishName": "Mutton Keema"
+    },
+    {
+      "dishNumber": 56,
+      "dishName": "Pesarattu"
+    },
+    {
+      "dishNumber": 46,
+      "dishName": "Methi Thepla"
+    },
+    {
+      "dishNumber": 80,
+      "dishName": "Masoor Dal"
+    },
+    {
+      "dishNumber": 1,
+      "dishName": "Poha"
+    }
+  ],
+  "deficiencyRiskIndia": "high",
+  "absorptionBoosters": [
+    "Vitamin C-rich foods with the meal (lemon, amla, guava, tomato, capsicum)",
+    "Meat, fish or poultry at the same meal",
+    "Soaking, sprouting and fermenting grains and pulses (lower phytate)",
+    "Cooking acidic foods in iron cookware (small effect)"
+  ],
+  "absorptionBlockers": [
+    "Tea and coffee with meals",
+    "Calcium (milk, curd, calcium tablets) taken with iron",
+    "Phytate (bran, whole grains, pulses)",
+    "Oxalate (spinach)",
+    "Soy protein and polyphenols",
+    "Antacids, and thyroid, tetracycline or quinolone medicines taken at the same time"
+  ],
+  "logPresets": [
+    {
+      "label": "Multivitamin with iron, about 18 mg (est.)",
+      "amount": 18,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 18,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Low-dose iron supplement, 30 mg elemental (WHO lower daily dose)",
+      "amount": 30,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 30,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Government IFA tablet, 60 mg elemental iron + 500 µg folic acid (prescription dose)",
+      "amount": 60,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 60,
+      "mainAmountRange": null,
+      "prescriptionDose": true
+    },
+    {
+      "label": "Ferrous sulfate 325 mg tablet, about 65 mg elemental (prescription dose)",
+      "amount": 65,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 65,
+      "mainAmountRange": null,
+      "prescriptionDose": true
+    },
+    {
+      "label": "Ferrous fumarate 200 mg tablet, about 66 mg elemental (calc.) (prescription dose)",
+      "amount": 66,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 66,
+      "mainAmountRange": null,
+      "prescriptionDose": true
+    },
+    {
+      "label": "Doctor-prescribed 120 mg elemental iron/day for anaemia in pregnancy (WHO) (prescription dose)",
+      "amount": 120,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 120,
+      "mainAmountRange": null,
+      "prescriptionDose": true
+    }
+  ],
+  "warnings": [
+    "Iron tablets are a leading cause of poisoning in small children (secondary): keep out of reach; call a doctor or poison centre at once after any swallowing.",
+    "Do not start iron tablets without a blood test: thalassaemia trait, haemochromatosis and iron overload make extra iron harmful.",
+    "Iron over 45 mg/day from food and supplements is above the upper limit; only a doctor should set higher doses (prescription dose).",
+    "ICMR iron values are from snippets and are marked secondary, unverified; ICMR lactation and age 60+ values Not found.",
+    "Do not use IFCT spleen (53.1 mg/100 g) or turmeric (46.1 mg/100 g) as everyday iron sources; the IFCT 'Prawns, big' S008 row is flagged for sodium.",
+    "Users with chronic kidney disease, pregnancy, breastfeeding, haemochromatosis, thalassaemia or on levothyroxine, tetracyclines or quinolones: show 'Follow your doctor's advice' and do not set iron doses.",
+    "Black stools with weakness, or very heavy periods: see a doctor."
+  ],
+  "conditionAdjustments": [
+    {
+      "profileId": "P11",
+      "change": "Treatment dose is set by the doctor, often above the upper limit; alternate-day dosing studied; app does not set dose; requires doctor input",
+      "value": null,
+      "unit": "mg",
+      "source": "WHO 2016 antenatal guideline; Stoffel 2017 Lancet Haematology (via snippets)"
+    },
+    {
+      "profileId": "P13",
+      "change": "Anaemia in CKD is managed by the kidney doctor: oral iron trial 1-3 months in non-dialysis CKD (KDIGO 2012), IV iron favoured in haemodialysis (KDIGO 2026); requires doctor input",
+      "value": null,
+      "unit": "mg",
+      "source": "KDIGO 2012 and 2026 anaemia guidelines (via review snippets)"
+    },
+    {
+      "profileId": "P22",
+      "change": "RDA 27 mg/day; WHO 30-60 mg elemental iron daily with 400 µg folic acid; India programme 60 mg iron + 500 µg folic acid daily from 4th month; requires doctor input",
+      "value": 27,
+      "unit": "mg",
+      "source": "ICMR-NIN 2020 via FSSAI report (secondary, unverified); WHO 2016; Anemia Mukt Bharat"
+    },
+    {
+      "profileId": "P23",
+      "change": "ICMR lactation value Not found; programme continues the daily IFA tablet for mothers of babies 0-6 months; requires doctor input",
+      "value": null,
+      "unit": "mg",
+      "source": "Anemia Mukt Bharat via Vikaspedia (secondary)"
+    },
+    {
+      "profileId": "P24",
+      "change": "Need falls after periods stop; NHS 8.7 mg/day for women 50+, EFSA same as men; tablets only if a test shows deficiency",
+      "value": 8.7,
+      "unit": "mg",
+      "source": "NHS; EFSA 2015 (secondary)"
+    },
+    {
+      "profileId": "P31",
+      "change": "Older adults: men's value applies; unexplained low iron needs a doctor to check for blood loss",
+      "value": 19,
+      "unit": "mg",
+      "source": "EFSA 2015; NIH ODS (secondary); ICMR 60+ Not found"
+    },
+    {
+      "profileId": "P33",
+      "change": "Jain diet: no ICMR change found; rely on dals, millets, leafy greens above ground, seeds and jaggery with vitamin C; avoid tea at meals",
+      "value": null,
+      "unit": "mg",
+      "source": "No change found; IFCT 2017"
+    },
+    {
+      "profileId": "P34",
+      "change": "Vegan: non-heme iron only; NIH suggests about 1.8 times the usual intake; no ICMR change found",
+      "value": null,
+      "unit": "mg",
+      "source": "NIH ODS via snippets (secondary)"
+    },
+    {
+      "profileId": "P8",
+      "change": "No change found",
+      "value": null,
+      "unit": "mg",
+      "source": "No change found"
+    },
+    {
+      "profileId": "P19",
+      "change": "No change found",
+      "value": null,
+      "unit": "mg",
+      "source": "No change found"
+    },
+    {
+      "profileId": "P29",
+      "change": "No change found",
+      "value": null,
+      "unit": "mg",
+      "source": "No change found"
+    }
+  ],
+  "lastResearched": "2026-11-02",
+  "versions": [
+    {
+      "date": "2026-11-02",
+      "file": "FitPlate_Nutrients_2026-11-02.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3)",
+    "upperLimit": "official safety limit (D3, lower on conflict)",
+    "topFoodSources": "union; per100g official (D3)",
+    "logPresets": "union by label (newest), converted with own file factors",
+    "appDefaultTarget": "newest, kept only where it equals the ICMR row",
+    "lists": "union",
+    "warnings": "union (never dropped)",
+    "text": "newest"
+  },
+  "mergeNotes": [],
+  "needsReview": [
+    "2026-11-02 iron: \"group\" has unexpected value \"age_60_plus_male\"; treated as not found",
+    "2026-11-02 iron: \"group\" has unexpected value \"age_60_plus_female\"; treated as not found"
+  ]
+}

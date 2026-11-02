@@ -5,9 +5,10 @@
  * ingredient (schema fitplate.ingredient.v1) with the full nutrient profile.
  * The summary row is the backbone; the sections and JSON add detail.
  */
-import type { Confidence, Macros, NutrientPer100, SourcedValue } from '../../models/research';
+import type { Confidence, Macros, NutrientPer100, SourcedValue, VendorListing } from '../../models/research';
 import { fileDate } from './dishImporter';
 import { bullets, labelled, num, plain, rupee, rupeeRange, slugify, splitHeadings, splitName, tableRows } from './markdown';
+import { parseVendorListings } from './vendorListings';
 import { listingEvidence, parseListingTable, type ListingEvidence } from './priceChecks';
 
 export type IngredientVersion = {
@@ -33,6 +34,7 @@ export type IngredientVersion = {
   howToPick: string | null;
   shelfLife: string | null;
   substitutes: string[];
+  vendorListings: VendorListing[];
   macrosPer100: Macros | null;
   nutritionPer100g: NutrientPer100 | null;
   usedIn: UsedIn[];
@@ -254,6 +256,7 @@ export function parseIngredientFile(text: string, file: string): { items: Ingred
       howToPick: buying ? labelled(buying, ['How to pick']) : null,
       shelfLife: buying ? labelled(buying, ['Shelf life']) : null,
       substitutes,
+      vendorListings: parseVendorListings(body(2, /price/i), date),
       macrosPer100: parseMacros(body(6, /nutrition/i)),
       nutritionPer100g: json ? nutritionFromJson(json.nutrition ?? null) : null,
       usedIn: parseUsedIn(body(7, /used in/i)),

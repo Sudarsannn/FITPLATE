@@ -1,6 +1,6 @@
 {
   "schema": "fitplate.links.v1",
-  "generatedFor": "Day15",
+  "generatedFor": "Day15G1",
   "goodSourceDishes": {
     "biotin": [
       {
@@ -161,6 +161,48 @@
         "dishNumber": 56,
         "dishName": "Pesarattu",
         "dishId": "056-pesarattu"
+      }
+    ],
+    "iron": [
+      {
+        "dishNumber": 77,
+        "dishName": "Keema Pav",
+        "dishId": "077-keema-pav"
+      },
+      {
+        "dishNumber": 62,
+        "dishName": "Mutton Biryani",
+        "dishId": "062-mutton-biryani"
+      },
+      {
+        "dishNumber": 68,
+        "dishName": "Chicken Chettinad",
+        "dishId": "068-chicken-chettinad"
+      },
+      {
+        "dishNumber": 93,
+        "dishName": "Mutton Keema",
+        "dishId": "093-mutton-keema"
+      },
+      {
+        "dishNumber": 56,
+        "dishName": "Pesarattu",
+        "dishId": "056-pesarattu"
+      },
+      {
+        "dishNumber": 46,
+        "dishName": "Methi Thepla",
+        "dishId": "046-methi-thepla"
+      },
+      {
+        "dishNumber": 80,
+        "dishName": "Masoor Dal",
+        "dishId": "080-masoor-dal"
+      },
+      {
+        "dishNumber": 1,
+        "dishName": "Poha",
+        "dishId": "001-poha"
       }
     ],
     "niacin": [
@@ -935,6 +977,48 @@
         "dishName": "Kadai Paneer",
         "dishId": "022-kadai-paneer"
       }
+    ],
+    "zinc": [
+      {
+        "dishNumber": 93,
+        "dishName": "Mutton Keema",
+        "dishId": "093-mutton-keema"
+      },
+      {
+        "dishNumber": 62,
+        "dishName": "Mutton Biryani",
+        "dishId": "062-mutton-biryani"
+      },
+      {
+        "dishNumber": 77,
+        "dishName": "Keema Pav",
+        "dishId": "077-keema-pav"
+      },
+      {
+        "dishNumber": 2,
+        "dishName": "Chicken Biryani",
+        "dishId": "002-chicken-biryani"
+      },
+      {
+        "dishNumber": 45,
+        "dishName": "Tandoori Chicken",
+        "dishId": "045-tandoori-chicken"
+      },
+      {
+        "dishNumber": 50,
+        "dishName": "Chicken Korma",
+        "dishId": "050-chicken-korma"
+      },
+      {
+        "dishNumber": 53,
+        "dishName": "Paneer Tikka",
+        "dishId": "053-paneer-tikka"
+      },
+      {
+        "dishNumber": 84,
+        "dishName": "Egg Biryani",
+        "dishId": "084-egg-biryani"
+      }
     ]
   },
   "dishGoodSourceOf": {
@@ -954,7 +1038,8 @@
       "biotin",
       "calcium",
       "phosphorus",
-      "vitamin-b12"
+      "vitamin-b12",
+      "zinc"
     ],
     "017-palak-paneer": [
       "biotin",
@@ -1012,14 +1097,16 @@
       "phosphorus",
       "vitamin-b12",
       "vitamin-b6",
-      "vitamin-d"
+      "vitamin-d",
+      "zinc"
     ],
     "045-tandoori-chicken": [
       "biotin",
       "niacin",
       "pantothenic-acid",
       "vitamin-b12",
-      "vitamin-b6"
+      "vitamin-b6",
+      "zinc"
     ],
     "063-shahi-paneer": [
       "calcium",
@@ -1055,6 +1142,7 @@
     ],
     "046-methi-thepla": [
       "calcium",
+      "iron",
       "riboflavin",
       "vitamin-a",
       "vitamin-b6",
@@ -1082,9 +1170,38 @@
     ],
     "056-pesarattu": [
       "chloride",
+      "iron",
       "phosphorus",
       "potassium",
       "sodium"
+    ],
+    "077-keema-pav": [
+      "iron",
+      "zinc"
+    ],
+    "062-mutton-biryani": [
+      "iron",
+      "phosphorus",
+      "vitamin-b12",
+      "vitamin-b6",
+      "zinc"
+    ],
+    "068-chicken-chettinad": [
+      "iron"
+    ],
+    "093-mutton-keema": [
+      "iron",
+      "pantothenic-acid",
+      "vitamin-b6",
+      "zinc"
+    ],
+    "080-masoor-dal": [
+      "iron"
+    ],
+    "001-poha": [
+      "iron",
+      "niacin",
+      "vitamin-e"
     ],
     "023-mutton-rogan-josh": [
       "niacin",
@@ -1125,10 +1242,6 @@
       "riboflavin",
       "thiamine"
     ],
-    "001-poha": [
-      "niacin",
-      "vitamin-e"
-    ],
     "090-home-style-chicken-curry": [
       "pantothenic-acid",
       "vitamin-b6"
@@ -1137,10 +1250,6 @@
       "pantothenic-acid",
       "phosphorus",
       "thiamine",
-      "vitamin-b6"
-    ],
-    "093-mutton-keema": [
-      "pantothenic-acid",
       "vitamin-b6"
     ],
     "024-medu-vada": [
@@ -1159,11 +1268,6 @@
       "pantothenic-acid",
       "thiamine",
       "vitamin-a"
-    ],
-    "062-mutton-biryani": [
-      "phosphorus",
-      "vitamin-b12",
-      "vitamin-b6"
     ],
     "026-moong-dal-chilla": [
       "phosphorus",
@@ -1221,7 +1325,8 @@
       "vitamin-b12"
     ],
     "050-chicken-korma": [
-      "vitamin-b12"
+      "vitamin-b12",
+      "zinc"
     ],
     "032-aloo-gobi": [
       "vitamin-c",
@@ -1243,6 +1348,9 @@
     ],
     "020-vada-pav": [
       "vitamin-k"
+    ],
+    "084-egg-biryani": [
+      "zinc"
     ]
   },
   "families": [
@@ -1330,6 +1438,11 @@
       "met": 5
     },
     {
+      "exerciseId": "figure-4-glute-stretch",
+      "name": "Figure-4 glute stretch",
+      "met": 2.3
+    },
+    {
       "exerciseId": "glute-bridge",
       "name": "Glute bridge",
       "met": 3.5
@@ -1345,9 +1458,19 @@
       "met": 2.3
     },
     {
+      "exerciseId": "hip-abductor-adductor-machines",
+      "name": "Hip abductor and adductor machines",
+      "met": 3.5
+    },
+    {
       "exerciseId": "hip-flexor-stretch",
       "name": "Hip flexor stretch",
       "met": 2.3
+    },
+    {
+      "exerciseId": "hip-thrust",
+      "name": "Hip thrust (barbell and machine)",
+      "met": 3.5
     },
     {
       "exerciseId": "jumping-jacks",
@@ -1408,6 +1531,11 @@
       "exerciseId": "stationary-bike",
       "name": "Stationary bike (upright and recumbent)",
       "met": 5.8
+    },
+    {
+      "exerciseId": "superman-back-raise",
+      "name": "Superman back raise (lower-range, alternating bird-dog style and full versions)",
+      "met": 2.8
     },
     {
       "exerciseId": "surya-namaskar",
@@ -4521,6 +4649,11 @@
         "per100": 0.6,
         "unit": "µg",
         "source": "nutrient research (vitamin-b12 food sources)"
+      },
+      "zinc": {
+        "per100": 2.74,
+        "unit": "mg",
+        "source": "nutrient research (zinc food sources)"
       }
     },
     "pav-bhaji-masala": {

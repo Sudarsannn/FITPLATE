@@ -1,0 +1,801 @@
+{
+  "id": "pcos",
+  "type": "condition",
+  "name": "PCOS (polycystic ovary syndrome)",
+  "surveyQuestion": "Do you have any of these health conditions? (select all that apply) -> PCOS / PCOD. Check question: Has a doctor told you that you have PCOS or PCOD? Yes / Suspected, not confirmed (general guidance only, see a doctor) / No / Not sure. Follow-ups: height, weight, waist in cm; Are your periods regular, irregular or absent?; Are you trying to conceive now, planning in future, or not planning?; Do you take any medicine for PCOS? No / Yes / Not sure; Are you on metformin? Yes / No; optional latest fasting glucose, HbA1c, lipids, TSH, vitamin D, B12 and test date",
+  "targets": [
+    {
+      "nutrient": "energy",
+      "unit": "kcal/day",
+      "generalAdult": 1660,
+      "profileValue": null,
+      "min": 1200,
+      "max": null,
+      "direction": "limit",
+      "source": "ICMR-NIN 2020 (1660 sedentary woman, 55 kg) (secondary, unverified); deficit applies only if BMI 23 or more or waist 80 cm or more; 30% deficit or 500-750 kcal/day (about 1200-1500 kcal/day) from the 2018 international PCOS guideline wording via a Dutch adaptation (secondary); never below 1200 kcal/day without a doctor"
+    },
+    {
+      "nutrient": "weight_loss_if_overweight",
+      "unit": "% body weight",
+      "generalAdult": null,
+      "profileValue": 7,
+      "min": 5,
+      "max": 10,
+      "direction": "limit",
+      "source": "International Evidence-based PCOS Guideline 2023 and Indian Fertility Society guidance via search summaries: 5-10% within about 6 months is a successful goal; FOGSI: even 2-5% can improve ovulation; lean women: prevent weight gain instead"
+    },
+    {
+      "nutrient": "protein",
+      "unit": "g/kg/day",
+      "generalAdult": 0.83,
+      "profileValue": 0.83,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); no PCOS-specific protein value found"
+    },
+    {
+      "nutrient": "total_fat",
+      "unit": "% energy",
+      "generalAdult": 30,
+      "profileValue": 30,
+      "min": null,
+      "max": 30,
+      "direction": "same",
+      "source": "DGI 2024 (30% or less); WHO 2023; PCOS-specific total fat target Not found"
+    },
+    {
+      "nutrient": "saturated_fat",
+      "unit": "% energy",
+      "generalAdult": 10,
+      "profileValue": 10,
+      "min": null,
+      "max": 10,
+      "direction": "limit",
+      "source": "WHO 2023 (under 10%); about 18 g at 1660 kcal (calc.); P4 limit of 7% applies if P4 is selected; PCOS-specific figure Not found"
+    },
+    {
+      "nutrient": "trans_fat",
+      "unit": "% energy",
+      "generalAdult": 1,
+      "profileValue": 1,
+      "min": null,
+      "max": 1,
+      "direction": "limit",
+      "source": "WHO 2023 (under 1%); as P6"
+    },
+    {
+      "nutrient": "mufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "raise",
+      "source": "Not found as a number; groundnut, mustard, rice bran, sesame, olive oil and nuts in measured amounts; a 2013 systematic review favoured MUFA for weight loss (via search summary, secondary)"
+    },
+    {
+      "nutrient": "pufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "raise",
+      "source": "Not found as a number; rotate oils, seeds, walnuts, fish (as P6)"
+    },
+    {
+      "nutrient": "omega_3_fish",
+      "unit": "servings/week",
+      "generalAdult": null,
+      "profileValue": 2,
+      "min": 2,
+      "max": null,
+      "direction": "raise",
+      "source": "AHA 2021 (as P6); omega-3 supplements in PCOS: meta-analyses of 7-9 trials report lower triglycerides and HOMA-IR but a 2016 analysis of 3 RCTs found no insulin benefit (secondary); supplement decision belongs to the doctor; ICMR-NIN omega-3 value Not found"
+    },
+    {
+      "nutrient": "dietary_cholesterol",
+      "unit": "mg/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No PCOS-specific change found; P4 applies if selected"
+    },
+    {
+      "nutrient": "total_carbohydrate",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No ICMR total found; DGI 2024 cereals and millets cap 45% of energy (secondary, unverified); quality over quantity: low-GI diets lowered HOMA-IR by 0.78 in a 10-RCT meta-analysis (Kazemi 2021 via search summary, high heterogeneity); no best macronutrient split exists (2023 guideline)"
+    },
+    {
+      "nutrient": "refined_carbohydrate",
+      "unit": "portions/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "limit",
+      "source": "No numeric limit found; shift to dals, millets, oats, whole grains, vegetables (as P6)"
+    },
+    {
+      "nutrient": "added_sugar",
+      "unit": "g/day",
+      "generalAdult": 25,
+      "profileValue": 25,
+      "min": null,
+      "max": 25,
+      "direction": "limit",
+      "source": "WHO 2015 (5% of energy, about 25 g, conditional) as P6; PCOS-specific limit Not found"
+    },
+    {
+      "nutrient": "fibre",
+      "unit": "g/day",
+      "generalAdult": 30,
+      "profileValue": 25,
+      "min": 25,
+      "max": null,
+      "direction": "raise",
+      "source": "ICMR-NIN 2020 about 30 g per 2000 kcal, about 25 g at 1660 kcal (calc.) (secondary, unverified); women with PCOS ate more high-GI, low-fibre diets than controls in studies (via search summary, secondary); PCOS-specific fibre target Not found"
+    },
+    {
+      "nutrient": "sodium",
+      "unit": "mg/day",
+      "generalAdult": 2000,
+      "profileValue": 2000,
+      "min": null,
+      "max": 2000,
+      "direction": "limit",
+      "source": "WHO 2012; DGI 2024; as P3"
+    },
+    {
+      "nutrient": "salt",
+      "unit": "g/day",
+      "generalAdult": 5,
+      "profileValue": 5,
+      "min": null,
+      "max": 5,
+      "direction": "limit",
+      "source": "As P3"
+    },
+    {
+      "nutrient": "potassium",
+      "unit": "mg/day",
+      "generalAdult": 3510,
+      "profileValue": 3510,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "WHO 2012; ICMR-NIN 2020 3500 mg (secondary, unverified); P3/P13 safety rules apply"
+    },
+    {
+      "nutrient": "calcium",
+      "unit": "mg/day",
+      "generalAdult": 1000,
+      "profileValue": 1000,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); 2024 meta-analysis found limited evidence of a dairy-PCOS link"
+    },
+    {
+      "nutrient": "iron_women",
+      "unit": "mg/day",
+      "generalAdult": 29,
+      "profileValue": 29,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); heavy bleeding may need doctor review (P11)"
+    },
+    {
+      "nutrient": "magnesium_women",
+      "unit": "mg/day",
+      "generalAdult": 370,
+      "profileValue": 370,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 via FSSAI (secondary, unverified); PCOS-specific target Not found"
+    },
+    {
+      "nutrient": "vitamin_d",
+      "unit": "µg/day",
+      "generalAdult": 15,
+      "profileValue": 15,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); supplement trials in PCOS mixed (total testosterone lowered in some meta-analyses, HOMA-IR findings differ; PMC reviews 2018-2025, secondary); doctor decides after a blood test; no dose given"
+    },
+    {
+      "nutrient": "vitamin_b12",
+      "unit": "µg/day",
+      "generalAdult": 2.2,
+      "profileValue": 2.2,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 as adopted by FSSAI (secondary, unverified); long-term metformin can lower B12 (UK MHRA: check if symptoms, consider periodic checks with risk factors); doctor decides"
+    },
+    {
+      "nutrient": "folate_women",
+      "unit": "µg DFE/day",
+      "generalAdult": 220,
+      "profileValue": 220,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); preconception folic acid dose is set by the doctor (UK guidance via search summary: 400 µg usual; 5 mg for BMI 30 or more) and is not a FitPlate recommendation"
+    },
+    {
+      "nutrient": "zinc",
+      "unit": "mg/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found in this run; inadequate zinc intake was common in a Punjab study of women of reproductive age (95%, secondary); no PCOS-specific value"
+    },
+    {
+      "nutrient": "inositol",
+      "unit": "g/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not a food target; evidence limited and inconclusive (Fitz/Graca systematic review for the 2023 guideline, PMC11099481); myo-inositol:D-chiro 40:1 is a physiological ratio, not proven superior; doctor decides; no dose given"
+    },
+    {
+      "nutrient": "alcohol",
+      "unit": "standard drinks/day",
+      "generalAdult": null,
+      "profileValue": 0,
+      "min": null,
+      "max": null,
+      "direction": "limit",
+      "source": "Best none (WHO 2023 as P6); best none when trying to conceive; PCOS-specific alcohol evidence is thin"
+    },
+    {
+      "nutrient": "physical_activity",
+      "unit": "min/week",
+      "generalAdult": 150,
+      "profileValue": 150,
+      "min": 150,
+      "max": 300,
+      "direction": "raise",
+      "source": "International PCOS guideline 2023 via search summaries: 150-300 min moderate or 75-150 min vigorous plus muscle strengthening (2 or 3 days a week, summaries differ); WHO 2020"
+    },
+    {
+      "nutrient": "sleep",
+      "unit": "hours/night",
+      "generalAdult": 7,
+      "profileValue": 7,
+      "min": 7,
+      "max": 9,
+      "direction": "raise",
+      "source": "General adult 7-9 h; sleep apnoea pooled prevalence about 35-37% in PCOS (meta-analyses, secondary); PCOS-specific sleep-hours target Not found"
+    },
+    {
+      "nutrient": "waist_circumference_cutoff",
+      "unit": "cm",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "limit",
+      "source": "Raised at 80 cm or more (women, Asian Indians): Misra 2009 consensus, IDF South Asian (as P6); not a daily target"
+    },
+    {
+      "nutrient": "water",
+      "unit": "mL/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No change from FitPlate general water target; never pushed higher; Follow your doctor's advice"
+    }
+  ],
+  "bloodMarkers": [
+    {
+      "marker": "Menstrual cycle length",
+      "target": "Under 21 or over 35 days counts as irregular ovulation in adults (3 years after the first period until perimenopause)",
+      "unit": "days",
+      "source": "International Evidence-based PCOS Guideline 2023 (via search summaries)"
+    },
+    {
+      "marker": "Rotterdam criteria (context only)",
+      "target": "2 of 3: ovulatory dysfunction, clinical or biochemical hyperandrogenism, polycystic ovary morphology on ultrasound or raised AMH; other causes ruled out by a doctor",
+      "unit": "-",
+      "source": "International guideline 2023; Endocrine Society 2013 (via summaries)"
+    },
+    {
+      "marker": "Fasting glucose, OGTT, HbA1c",
+      "target": "Glucose status checked at diagnosis and every 1-3 years by risk (BMI over 25, Asians over 23); OGTT most accurate; ranges as P1/P2",
+      "unit": "mg/dL; %",
+      "source": "International guideline 2023 (via summary, secondary); P1/P2"
+    },
+    {
+      "marker": "Lipids (total cholesterol, LDL, HDL, triglycerides, non-HDL)",
+      "target": "Targets as P4/P5/P6; dyslipidaemia in 91.9% of Indian women with PCOS in the ICMR study (secondary)",
+      "unit": "mg/dL",
+      "source": "Ganie 2024 (secondary); P4-P6"
+    },
+    {
+      "marker": "Blood pressure",
+      "target": "Checked at diagnosis and regularly; ranges as P3",
+      "unit": "mmHg",
+      "source": "International guideline 2023 (via summary); P3"
+    },
+    {
+      "marker": "Waist circumference",
+      "target": "Raised at 80 or more (women, Asian Indians)",
+      "unit": "cm",
+      "source": "Misra 2009; IDF"
+    },
+    {
+      "marker": "BMI",
+      "target": "Asian Indian overweight cut-off 23 or more (FitPlate deficit trigger); lean PCOS under 23",
+      "unit": "kg/m2",
+      "source": "Misra 2009 (as P2/P6); Indian lean/obese PCOS studies using 23 (secondary)"
+    },
+    {
+      "marker": "AMH",
+      "target": "Can replace ultrasound for polycystic morphology in adults; cut-off Not found; not used alone and not within 8 years of the first period",
+      "unit": "ng/mL",
+      "source": "International guideline 2023 (via summary)"
+    },
+    {
+      "marker": "TSH and prolactin",
+      "target": "Checked by the doctor to exclude other causes; stored only; TSH ranges as P9",
+      "unit": "mIU/L; ng/mL",
+      "source": "Guideline (via Australian summary)"
+    },
+    {
+      "marker": "Vitamin D (25-OH)",
+      "target": "Stored only; deficiency often defined under 20 ng/mL; doctor decides on supplements",
+      "unit": "ng/mL",
+      "source": "PMC meta-analyses (secondary)"
+    },
+    {
+      "marker": "Vitamin B12",
+      "target": "Stored only; relevant for long-term metformin users and vegetarians; doctor decides",
+      "unit": "pg/mL",
+      "source": "UK MHRA drug safety update; Cureus 2022 (secondary)"
+    },
+    {
+      "marker": "Ferritin, haemoglobin",
+      "target": "Stored only; ranges as P11",
+      "unit": "ng/mL; g/dL",
+      "source": "P11"
+    },
+    {
+      "marker": "ALT and fatty liver",
+      "target": "Stored only; 32.9% of Indian women with PCOS had fatty liver (secondary); see P7",
+      "unit": "U/L",
+      "source": "Ganie 2024 (secondary); P7"
+    }
+  ],
+  "waterMl": {
+    "min": null,
+    "max": null,
+    "notes": "No change from FitPlate general water target; PCOS alone does not change water needs and no PCOS-specific fluid figure was found. Drink more in heat, exercise or fever per general rules. If pregnant or planning pregnancy, or with kidney, heart or liver disease, or on a diuretic (water pill, for example spironolactone), the app shows only the general range and never pushes a higher target. Metformin can cause loose stools; tell the doctor. Choose water, plain chaas and unsweetened drinks; limit sweet chai, soft drinks, packaged juice and sharbat. Follow your doctor's advice."
+  },
+  "sodiumMgMax": 2000,
+  "dietaryCholesterolMgMax": null,
+  "foodsFavour": [
+    "dals and whole pulses (rajma, chana, moong, masoor, urad, matki) and sprouts in place of extra rice",
+    "vegetables for half the plate (leafy greens, brinjal, bhindi, gourds, beans, cabbage)",
+    "millets (ragi, jowar, bajra), oats, barley, whole-wheat atta and brown or parboiled rice in measured portions",
+    "protein at breakfast (moong or besan chilla, eggs, curd, paneer, sprouts)",
+    "fish about twice a week, baked, grilled or in light curry",
+    "a small handful of nuts and seeds (almonds, walnuts, flaxseed, pumpkin seeds)",
+    "groundnut, mustard, rice bran, sesame or olive oil in measured amounts, rotated",
+    "whole fruit instead of juice",
+    "plain curd, plain chaas, water, unsweetened tea or coffee",
+    "unsweetened spearmint tea as an optional caffeine-free drink (evidence limited)"
+  ],
+  "foodsLimit": [
+    "sugar and sugary drinks (sweet chai, cold coffee, lassi, soft drinks, packaged juice, sharbat)",
+    "mithai and desserts; honey, jaggery and syrups count as sugar",
+    "refined flour and ultra-processed foods (white bread, pav, bakery items, noodles, maida rotis, namkeen, biscuits, instant mixes)",
+    "large portions of polished white rice (biryani, pulao, fried rice)",
+    "vanaspati, reused frying oil and deep-fried snacks (trans fat)",
+    "butter, cream, ghee, coconut milk and palm oil in large amounts (saturated fat)",
+    "alcohol",
+    "very low-carbohydrate, high-protein crash diets",
+    "over-the-counter inositol, berberine, herbal or supplement capsules started without a doctor",
+    "salt-heavy packaged snacks, pickles, papad"
+  ],
+  "goodFitDishes": [
+    {
+      "dishNumber": 66,
+      "dishName": "Sprouts Chaat"
+    },
+    {
+      "dishNumber": 56,
+      "dishName": "Pesarattu"
+    },
+    {
+      "dishNumber": 26,
+      "dishName": "Moong Dal Chilla"
+    },
+    {
+      "dishNumber": 16,
+      "dishName": "Besan Chilla"
+    },
+    {
+      "dishNumber": 80,
+      "dishName": "Masoor Dal"
+    },
+    {
+      "dishNumber": 5,
+      "dishName": "Dal Tadka"
+    },
+    {
+      "dishNumber": 8,
+      "dishName": "Chole (Chana Masala)"
+    },
+    {
+      "dishNumber": 12,
+      "dishName": "Rajma Chawal"
+    },
+    {
+      "dishNumber": 52,
+      "dishName": "Moong Dal Khichdi"
+    },
+    {
+      "dishNumber": 67,
+      "dishName": "Mix Veg Curry"
+    },
+    {
+      "dishNumber": 44,
+      "dishName": "Baingan Bharta"
+    },
+    {
+      "dishNumber": 37,
+      "dishName": "Bhindi Masala"
+    },
+    {
+      "dishNumber": 49,
+      "dishName": "Mushroom Masala"
+    },
+    {
+      "dishNumber": 31,
+      "dishName": "Indian-style Overnight Oats"
+    },
+    {
+      "dishNumber": 71,
+      "dishName": "Ragi Dosa"
+    },
+    {
+      "dishNumber": 45,
+      "dishName": "Tandoori Chicken"
+    },
+    {
+      "dishNumber": 55,
+      "dishName": "Prawn Masala"
+    },
+    {
+      "dishNumber": 21,
+      "dishName": "Masala Omelette"
+    },
+    {
+      "dishNumber": 14,
+      "dishName": "Egg Bhurji"
+    },
+    {
+      "dishNumber": 53,
+      "dishName": "Paneer Tikka"
+    },
+    {
+      "dishNumber": 69,
+      "dishName": "Paneer Bhurji"
+    },
+    {
+      "dishNumber": 17,
+      "dishName": "Palak Paneer"
+    },
+    {
+      "dishNumber": 88,
+      "dishName": "Avial"
+    },
+    {
+      "dishNumber": 85,
+      "dishName": "South Indian Veg Kurma"
+    }
+  ],
+  "cautionDishes": [
+    {
+      "dishNumber": 39,
+      "dishName": "Veg Biryani",
+      "reason": "About 94 g carbohydrate, large rice portion (est.)"
+    },
+    {
+      "dishNumber": 62,
+      "dishName": "Mutton Biryani",
+      "reason": "About 77 g carbohydrate, large rice portion, red meat (est.)"
+    },
+    {
+      "dishNumber": 2,
+      "dishName": "Chicken Biryani",
+      "reason": "About 74 g carbohydrate, large rice portion (est.)"
+    },
+    {
+      "dishNumber": 11,
+      "dishName": "Aloo Paratha",
+      "reason": "About 94 g carbohydrate for 2 parathas with potato (est.)"
+    },
+    {
+      "dishNumber": 20,
+      "dishName": "Vada Pav",
+      "reason": "About 93 g carbohydrate; refined-flour pav and deep-fried vada (est.)"
+    },
+    {
+      "dishNumber": 29,
+      "dishName": "Misal Pav",
+      "reason": "About 83 g carbohydrate; refined-flour pav (est.)"
+    },
+    {
+      "dishNumber": 13,
+      "dishName": "Pav Bhaji",
+      "reason": "About 72 g carbohydrate; refined-flour pav and butter (est.)"
+    },
+    {
+      "dishNumber": 65,
+      "dishName": "Puri Bhaji",
+      "reason": "About 81 g carbohydrate; fried puris (est.)"
+    },
+    {
+      "dishNumber": 40,
+      "dishName": "Sabudana Khichdi",
+      "reason": "About 86 g carbohydrate, mostly sago starch (est.)"
+    },
+    {
+      "dishNumber": 61,
+      "dishName": "Appam with Veg Stew",
+      "reason": "About 81 g carbohydrate and coconut milk (est.)"
+    },
+    {
+      "dishNumber": 57,
+      "dishName": "Tomato Rice",
+      "reason": "About 72 g carbohydrate, rice-based (est.)"
+    },
+    {
+      "dishNumber": 25,
+      "dishName": "Veg Pulao",
+      "reason": "About 73 g carbohydrate, rice-based (est.)"
+    },
+    {
+      "dishNumber": 30,
+      "dishName": "Lemon Rice",
+      "reason": "About 70 g carbohydrate, rice-based (est.)"
+    },
+    {
+      "dishNumber": 19,
+      "dishName": "Jeera Rice",
+      "reason": "About 61 g carbohydrate and little fibre (est.)"
+    },
+    {
+      "dishNumber": 10,
+      "dishName": "Veg Fried Rice",
+      "reason": "Refined rice with soy sauce and sugar (est.)"
+    },
+    {
+      "dishNumber": 15,
+      "dishName": "Veg Hakka Noodles",
+      "reason": "Refined noodles with sauces (est.)"
+    },
+    {
+      "dishNumber": 64,
+      "dishName": "Schezwan Noodles",
+      "reason": "About 69 g carbohydrate; refined noodles and sugary sauces (est.)"
+    },
+    {
+      "dishNumber": 59,
+      "dishName": "Chicken Kathi Roll",
+      "reason": "About 49 g carbohydrate; maida wrap (est.)"
+    },
+    {
+      "dishNumber": 36,
+      "dishName": "Rava Dosa",
+      "reason": "About 51.5 g carbohydrate; semolina and maida (est.)"
+    },
+    {
+      "dishNumber": 1,
+      "dishName": "Poha",
+      "reason": "About 57.6 g carbohydrate; refined starch breakfast, pair with sprouts or egg (est.)"
+    },
+    {
+      "dishNumber": 47,
+      "dishName": "Veg Manchurian",
+      "reason": "Maida batter, ketchup and sauces, fried (est.)"
+    },
+    {
+      "dishNumber": 79,
+      "dishName": "Gobi Manchurian",
+      "reason": "Maida batter, ketchup and sauces, fried (est.)"
+    },
+    {
+      "dishNumber": 24,
+      "dishName": "Medu Vada",
+      "reason": "Deep-fried; trans fat if oil is reused (est.)"
+    },
+    {
+      "dishNumber": 28,
+      "dishName": "Chicken 65",
+      "reason": "Deep-fried; trans fat if oil is reused (est.)"
+    },
+    {
+      "dishNumber": 3,
+      "dishName": "Paneer Butter Masala",
+      "reason": "Butter and cream gravy: high saturated fat (est., see P4)"
+    },
+    {
+      "dishNumber": 7,
+      "dishName": "Butter Chicken",
+      "reason": "Butter and cream gravy: high saturated fat (est., see P4)"
+    },
+    {
+      "dishNumber": 27,
+      "dishName": "Dal Makhani",
+      "reason": "Butter and cream; high saturated fat (est., see P4)"
+    },
+    {
+      "dishNumber": 42,
+      "dishName": "Malai Kofta",
+      "reason": "Cream and fried koftas (est., see P4)"
+    },
+    {
+      "dishNumber": 95,
+      "dishName": "Rice Kheer",
+      "reason": "Sweet dessert (est. high added sugar)"
+    },
+    {
+      "dishNumber": 96,
+      "dishName": "Gajar Halwa",
+      "reason": "Sweet dessert (est. high added sugar)"
+    },
+    {
+      "dishNumber": 97,
+      "dishName": "Gulab Jamun",
+      "reason": "Fried sugar-syrup dessert (est. high added sugar)"
+    },
+    {
+      "dishNumber": 98,
+      "dishName": "Mango Lassi",
+      "reason": "Sweetened drink (est. high added sugar)"
+    },
+    {
+      "dishNumber": 99,
+      "dishName": "Masala Chai",
+      "reason": "Sugar spoons add up across the day (est.)"
+    },
+    {
+      "dishNumber": 100,
+      "dishName": "Cold Coffee",
+      "reason": "Sweetened drink (est. high added sugar)"
+    }
+  ],
+  "conflictsWith": [
+    {
+      "profileId": "type-2-diabetes",
+      "rule": "Same direction; P1 carbohydrate and sugar rules apply; use the stricter sugar limit; doctor input"
+    },
+    {
+      "profileId": "prediabetes",
+      "rule": "Same direction; P2 rules; BMI 23 and waist triggers shared (waist 80 cm for women)"
+    },
+    {
+      "profileId": "low-hdl-metabolic-syndrome",
+      "rule": "Often co-exists; same food direction; use the stricter limit; doctor input"
+    },
+    {
+      "profileId": "high-triglycerides",
+      "rule": "Compatible; P5 sugar, refined-carbohydrate and alcohol limits apply; TG of 500 mg/dL or more: doctor's plan overrides"
+    },
+    {
+      "profileId": "high-ldl-cholesterol",
+      "rule": "Compatible; P4 fat quality and fibre goals; P4 saturated fat limit of 7% overrides the 10% default"
+    },
+    {
+      "profileId": "hypertension",
+      "rule": "Compatible; P3 sodium and potassium rules; spironolactone and other BP medicines are the doctor's call"
+    },
+    {
+      "profileId": "fatty-liver",
+      "rule": "Compatible and common together; P7 rules and doctor input; fluid follows P7"
+    },
+    {
+      "profileId": "hypothyroidism",
+      "rule": "Compatible; no target change; doctor handles thyroid and PCOS tests"
+    },
+    {
+      "profileId": "iron-deficiency-anaemia",
+      "rule": "Compatible; heavy bleeding is common in PCOS; P11 iron rules apply"
+    },
+    {
+      "profileId": "vitamin-d-b12-deficiency",
+      "rule": "Compatible; food-first; B12 gets extra attention with metformin; doctor decides on supplements"
+    },
+    {
+      "profileId": "chronic-kidney-disease",
+      "rule": "P13 overrides protein, potassium and fluid"
+    },
+    {
+      "profileId": "heart-disease",
+      "rule": "P21 overrides; fluid follows P21; doctor input"
+    },
+    {
+      "profileId": "pregnancy",
+      "rule": "Pregnancy overrides; no weight-loss deficit; doctor-led glucose screening and supplements; fluids follow P22"
+    },
+    {
+      "profileId": "breastfeeding",
+      "rule": "P23 energy needs apply; no deficit pushed until the doctor agrees"
+    },
+    {
+      "profileId": "fat-loss",
+      "rule": "Compatible; P25 sets the deficit with a floor of 1200 kcal/day; lean PCOS gets no weight-loss goal"
+    },
+    {
+      "profileId": "muscle-gain",
+      "rule": "Compatible; resistance training is useful; surplus from whole foods, not sweets"
+    },
+    {
+      "profileId": "endurance-running",
+      "rule": "Compatible; avoid routine sugary sports drinks; carbohydrate set by P29"
+    },
+    {
+      "profileId": "menopause",
+      "rule": "Doctor input; PCOS rules about sugar and fibre still apply; no target change"
+    },
+    {
+      "profileId": "jain-diet",
+      "rule": "Food filter; use pulses, nuts and seeds; check B12 with metformin"
+    },
+    {
+      "profileId": "vegan-diet",
+      "rule": "Food filter; watch B12 (especially on metformin), omega-3, zinc and iron gaps; plant omega-3 from flaxseed and walnuts"
+    }
+  ],
+  "requiresDoctorInput": true,
+  "requiresDoctorInputStated": true,
+  "fluidNote": null,
+  "warnings": [
+    "General information, not medical advice. FitPlate does not diagnose PCOS; a doctor must confirm it after tests and after ruling out thyroid disease, high prolactin and other causes.",
+    "The app never suggests starting, stopping or changing any medicine or supplement (metformin, combined pill, anti-androgens, letrozole, clomiphene, inositol, vitamin D, omega-3, folic acid, B12, berberine, herbal capsules). Follow your doctor.",
+    "Evidence for inositol, spearmint tea, cinnamon, omega-3 and vitamin D in PCOS is limited or mixed; none is a replacement for medical care.",
+    "No weight-loss deficit for lean women or for anyone under 18; never below 1,200 kcal/day without a doctor.",
+    "Long-term metformin can lower vitamin B12; ask your doctor whether a check is right for you. Do not stop metformin on your own.",
+    "Planning a pregnancy: talk to your doctor early about checks, folic acid and medicines; PCOS raises the chances of gestational diabetes and other pregnancy problems.",
+    "No period for 3 months or more, very heavy bleeding, new rapid hair growth, or symptoms of high sugar (thirst, frequent urination): talk to your doctor.",
+    "Emergency: sudden severe belly pain with fainting, chest pain, sudden breathlessness, one-sided leg swelling, or stroke signs (face droop, arm weakness, speech difficulty). Seek emergency care now (112).",
+    "With pregnancy, kidney, heart or liver disease, or diuretics (water pills, including spironolactone), follow your doctor's advice on fluids; the app never pushes a higher water target.",
+    "requires_doctor_input is true because PCOS is a diagnosis made by a doctor, its treatment (pill, metformin, anti-androgens, fertility drugs) and pregnancy planning are individual, and many users take medicines that interact with fluids, potassium or B12; the app sets only general food, weight, activity and sodium guidance on its own."
+  ],
+  "lastResearched": "2026-11-02",
+  "versions": [
+    {
+      "date": "2026-11-02",
+      "file": "FitPlate_Nutrients_2026-11-02.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3); max as safety limit",
+    "limits": "safety limit (lower on conflict)",
+    "lists": "union",
+    "requiresDoctorInput": "stated true in any version, else newest version (missing flag + limits → true)"
+  },
+  "mergeNotes": [],
+  "needsReview": []
+}

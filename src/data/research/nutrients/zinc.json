@@ -1,0 +1,357 @@
+{
+  "id": "zinc",
+  "name": "Zinc",
+  "type": "mineral",
+  "subtype": "trace-mineral",
+  "unit": "mg",
+  "altUnits": [
+    {
+      "unit": "µmol/L serum (blood level, not intake)",
+      "toMainUnitFactor": 0.153
+    }
+  ],
+  "unitConversions": [
+    {
+      "fromUnit": "µg",
+      "compound": "/dl serum zinc",
+      "toMainUnitFactor": 0.153,
+      "raw": "1 µg/dL serum zinc | 0.153 µmol/L"
+    }
+  ],
+  "targets": [
+    {
+      "group": "adult_male_sedentary",
+      "ear": null,
+      "rda": 17,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "group": "adult_male_moderate",
+      "ear": null,
+      "rda": 17,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (secondary, unverified); not split by activity in snippets"
+    },
+    {
+      "group": "adult_male_heavy",
+      "ear": null,
+      "rda": 17,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (secondary, unverified); not split by activity in snippets"
+    },
+    {
+      "group": "adult_female_sedentary",
+      "ear": null,
+      "rda": 13.2,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "group": "adult_female_moderate",
+      "ear": null,
+      "rda": 13.2,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (secondary, unverified); not split by activity in snippets"
+    },
+    {
+      "group": "adult_female_heavy",
+      "ear": null,
+      "rda": 13.2,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (secondary, unverified); not split by activity in snippets"
+    },
+    {
+      "group": "pregnant",
+      "ear": null,
+      "rda": null,
+      "ai": null,
+      "source": "ICMR value Not found; NIH 11 mg (secondary, unverified)"
+    },
+    {
+      "group": "lactating",
+      "ear": null,
+      "rda": null,
+      "ai": null,
+      "source": "ICMR value Not found; NIH 12 mg (secondary, unverified)"
+    }
+  ],
+  "appDefaultTarget": {
+    "adult_male": 17,
+    "adult_female": 13.2,
+    "pregnant": null,
+    "lactating": null,
+    "age_60_plus": null
+  },
+  "upperLimit": {
+    "value": 40,
+    "unit": "mg",
+    "appliesTo": "food_and_supplements",
+    "source": "US NASEM/IOM adult UL via NIH ODS (copper status endpoint); EFSA UL 25 mg; ICMR-NIN TUL Not found"
+  },
+  "topFoodSources": [
+    {
+      "food": "Goat/mutton, shoulder, raw (IFCT O001)",
+      "veg": false,
+      "per100g": 4.19,
+      "servingG": 80,
+      "servingLabel": "1 curry portion raw (est.)",
+      "perServing": 3.35
+    },
+    {
+      "food": "Chicken leg, skinless, raw (IFCT N001)",
+      "veg": false,
+      "per100g": 1.77,
+      "servingG": 100,
+      "servingLabel": "1 portion raw (est.)",
+      "perServing": 1.77
+    },
+    {
+      "food": "Paneer (IFCT L003)",
+      "veg": true,
+      "per100g": 2.74,
+      "servingG": 50,
+      "servingLabel": "a few cubes (est.)",
+      "perServing": 1.37
+    },
+    {
+      "food": "Cashew nut (IFCT H005)",
+      "veg": true,
+      "per100g": 5.34,
+      "servingG": 20,
+      "servingLabel": "about 12 nuts (est.)",
+      "perServing": 1.07
+    },
+    {
+      "food": "Gingelly seeds / til, white (IFCT H011)",
+      "veg": true,
+      "per100g": 7.77,
+      "servingG": 10,
+      "servingLabel": "2 tsp (est.)",
+      "perServing": 0.78
+    },
+    {
+      "food": "Bengal gram dal / chana dal (IFCT B001)",
+      "veg": true,
+      "per100g": 3.65,
+      "servingG": 30,
+      "servingLabel": "1 katori cooked dal, dry weight (est.)",
+      "perServing": 1.09
+    },
+    {
+      "food": "Wheat flour atta (IFCT A019)",
+      "veg": true,
+      "per100g": 2.85,
+      "servingG": 60,
+      "servingLabel": "2 rotis (est.)",
+      "perServing": 1.71
+    },
+    {
+      "food": "Egg, poultry, whole, boiled (IFCT M004)",
+      "veg": false,
+      "per100g": 1.31,
+      "servingG": 50,
+      "servingLabel": "1 egg",
+      "perServing": 0.66
+    }
+  ],
+  "goodSourceDishes": [
+    {
+      "dishNumber": 93,
+      "dishName": "Mutton Keema"
+    },
+    {
+      "dishNumber": 62,
+      "dishName": "Mutton Biryani"
+    },
+    {
+      "dishNumber": 77,
+      "dishName": "Keema Pav"
+    },
+    {
+      "dishNumber": 2,
+      "dishName": "Chicken Biryani"
+    },
+    {
+      "dishNumber": 45,
+      "dishName": "Tandoori Chicken"
+    },
+    {
+      "dishNumber": 50,
+      "dishName": "Chicken Korma"
+    },
+    {
+      "dishNumber": 53,
+      "dishName": "Paneer Tikka"
+    },
+    {
+      "dishNumber": 84,
+      "dishName": "Egg Biryani"
+    }
+  ],
+  "deficiencyRiskIndia": "moderate",
+  "absorptionBoosters": [
+    "Animal protein (meat, egg, dairy)",
+    "Fermentation (idli, dosa, dhokla batters)",
+    "Soaking dals and millets",
+    "Leavened or sourdough bread"
+  ],
+  "absorptionBlockers": [
+    "Phytate in whole grains, pulses, nuts and seeds",
+    "Iron supplements of 25 mg or more taken at the same time",
+    "High-dose calcium supplements",
+    "Quinolone and tetracycline antibiotics (two-way interaction)",
+    "Tea and coffee with meals (evidence mixed)"
+  ],
+  "logPresets": [
+    {
+      "label": "Multivitamin tablet, about 10 mg zinc (check label)",
+      "amount": 10,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 10,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Zinc 15 mg tablet",
+      "amount": 15,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 15,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Zinc 25 mg tablet",
+      "amount": 25,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 25,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Zinc 50 mg tablet or capsule (prescription dose)",
+      "amount": 50,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 50,
+      "mainAmountRange": null,
+      "prescriptionDose": true
+    },
+    {
+      "label": "Child zinc sulfate dispersible tablet 20 mg elemental, diarrhoea course (prescription dose)",
+      "amount": 20,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 20,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    }
+  ],
+  "warnings": [
+    "Log elemental zinc, not the weight of the zinc salt.",
+    "Total zinc from food and supplements above 40 mg/day over weeks can cause copper deficiency.",
+    "Phytate in cereal-pulse diets lowers absorption; intake in the ring is not the same as absorbed zinc.",
+    "Space zinc from quinolone or tetracycline antibiotics and penicillamine; ask a pharmacist for the gap.",
+    "Iron supplements of 25 mg or more taken together can lower zinc absorption.",
+    "Pregnancy, breastfeeding, kidney or liver disease, and children's diarrhoea courses: follow the doctor's or health worker's advice; the app does not set a higher target.",
+    "ICMR pregnancy, lactation, 60+ values and TUL were not found; placeholders are flagged.",
+    "IFCT oyster (Q006) zinc looks low versus other tables; not used."
+  ],
+  "conditionAdjustments": [
+    {
+      "profileId": "P11",
+      "change": "Iron supplements of 25 mg or more taken together can lower zinc absorption; separate and ask a doctor; no target change",
+      "value": null,
+      "unit": "mg",
+      "source": "NIH ODS zinc fact sheet (via snippet)"
+    },
+    {
+      "profileId": "P34",
+      "change": "Higher phytate and no animal zinc: keep ICMR target, emphasise soaked/fermented foods, legumes, soy, seeds; sourced extra amount Not found",
+      "value": null,
+      "unit": "mg",
+      "source": "Meta-analysis of vegetarian zinc status (PubMed 23595983); IZiNCG brief"
+    },
+    {
+      "profileId": "P33",
+      "change": "No change found",
+      "value": null,
+      "unit": "mg",
+      "source": "No change found"
+    },
+    {
+      "profileId": "P22",
+      "change": "ICMR value Not found; Indian trial shows frequent low zinc in pregnancy; doctor-led; requires doctor input",
+      "value": null,
+      "unit": "mg",
+      "source": "Women First trial (PMC11217030)"
+    },
+    {
+      "profileId": "P23",
+      "change": "ICMR value Not found; doctor-led; requires doctor input",
+      "value": null,
+      "unit": "mg",
+      "source": "Women First trial (PMC11217030)"
+    },
+    {
+      "profileId": "P13",
+      "change": "No sourced change; any zinc supplement needs a doctor; requires doctor input",
+      "value": null,
+      "unit": "mg",
+      "source": "No change found"
+    },
+    {
+      "profileId": "P3",
+      "change": "Thiazide diuretics increase urinary zinc loss; monitor with a doctor; no target change",
+      "value": null,
+      "unit": "mg",
+      "source": "Pharmacy interaction summary (secondary)"
+    },
+    {
+      "profileId": "P18",
+      "change": "Milk and curd are low in zinc anyway; use paneer, seeds, nuts, legumes; no target change",
+      "value": null,
+      "unit": "mg",
+      "source": "IFCT 2017 (milk 0.33 mg/100 g)"
+    },
+    {
+      "profileId": "P31",
+      "change": "No ICMR 60+ value found; adult target kept; inadequate absorbable zinc intake rising with ageing population",
+      "value": null,
+      "unit": "mg",
+      "source": "Food and Nutrition Bulletin 2019 (Inadequate Zinc Intake in India)"
+    }
+  ],
+  "lastResearched": "2026-11-02",
+  "versions": [
+    {
+      "date": "2026-11-02",
+      "file": "FitPlate_Nutrients_2026-11-02.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3)",
+    "upperLimit": "official safety limit (D3, lower on conflict)",
+    "topFoodSources": "union; per100g official (D3)",
+    "logPresets": "union by label (newest), converted with own file factors",
+    "appDefaultTarget": "newest, kept only where it equals the ICMR row",
+    "lists": "union",
+    "warnings": "union (never dropped)",
+    "text": "newest"
+  },
+  "mergeNotes": [],
+  "needsReview": [
+    "app_default_target.pregnant = 13.2 has no ICMR row to match (pregnant: \"ICMR value Not found; NIH 11 mg (secondary, unverified)\"); set to null",
+    "app_default_target.lactating = 13.2 has no ICMR row to match (lactating: \"ICMR value Not found; NIH 12 mg (secondary, unverified)\"); set to null",
+    "2026-11-02 zinc: \"group\" has unexpected value \"age_60_plus_male\"; treated as not found",
+    "2026-11-02 zinc: \"group\" has unexpected value \"age_60_plus_female\"; treated as not found"
+  ]
+}

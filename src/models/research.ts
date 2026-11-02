@@ -221,6 +221,19 @@ export type NutrientPer100 = {
   vitaminB12Ug: SourcedValue;
 };
 
+/**
+ * Day 15G1: one price a quick-commerce vendor was seen charging for a pack, read from the ingredient
+ * research's price table (a search-result snippet, never a live feed). Always shown with `observedOn`.
+ */
+export type VendorListing = {
+  vendor: 'zepto' | 'instamart' | 'blinkit';
+  product: string | null;
+  pack: string | null;
+  priceMinInr: number;
+  priceMaxInr: number;
+  observedOn: string;
+};
+
 export type Ingredient = Provenance & {
   id: string;
   name: string;
@@ -240,6 +253,8 @@ export type Ingredient = Provenance & {
   howToPick?: string | null;
   shelfLife?: string | null;
   substitutes: string[];
+  /** Day 15G1: what Zepto, Instamart and Blinkit were seen charging (newest sighting of each product); absent before the sync that added it. */
+  vendorListings?: VendorListing[];
   /** Spec F7: dishes the ingredient file says use it, with the quantity it gives (newest version). */
   usedIn: { dishNumber: number; quantity: number | null; unit: string | null; raw: string }[];
 };

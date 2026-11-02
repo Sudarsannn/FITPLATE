@@ -243,6 +243,24 @@
     "Chocolate ice cream topping or melted dark chocolate",
     "Omit"
   ],
+  "vendorListings": [
+    {
+      "vendor": "blinkit",
+      "product": "Hershey's Chocolate Syrup",
+      "pack": "200 g",
+      "priceMinInr": 106,
+      "priceMaxInr": 106,
+      "observedOn": "2026-10-31"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Hershey's Chocolate Syrup",
+      "pack": "623 g",
+      "priceMinInr": 238,
+      "priceMaxInr": 238,
+      "observedOn": "2026-10-31"
+    }
+  ],
   "usedIn": [
     {
       "dishNumber": 100,
@@ -263,6 +281,7 @@
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
+    "vendorListings": "newest sighting per vendor+product+pack",
     "storage": "newest",
     "looksLike": "newest",
     "usedIn": "newest"
