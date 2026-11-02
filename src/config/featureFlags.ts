@@ -41,6 +41,8 @@ export const featureFlags = {
   savingsDashboard: true,
   /** Innovation (Day 14): "What can I cook with what I have?" from the ingredient inventory. */
   fridgeRescue: true,
+  /** Innovation (Day 15): plain-words search such as "15 min no onion veg" on the Cook tab. */
+  plainSearch: true,
   /** Day 15G1: per-vendor price sightings and logo-tap search links on the shopping list. ON once tested. */
   vendorLinks: true,
   /** Day 15G1: Blinkit rows in that comparison. Stays OFF until Blinkit is hooked up. */

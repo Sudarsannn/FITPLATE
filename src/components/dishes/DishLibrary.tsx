@@ -21,6 +21,7 @@ import { IconBadge, type IconName } from '../Icon';
 import { GradientButton, PressableScale, TopGlow } from '../ui';
 import { RecentRows } from './RecentRows';
 import { SelectChip } from './parts';
+import { parsePlainQuery, passesPlain, type PlainQuery } from '../../services/plainSearch';
 import { ResearchDishCard } from './ResearchDishCard';
 
 /** One-tap chips above the list: the filters people reach for most. */
@@ -53,12 +54,14 @@ export function DishLibrary({ dishes = researchDishes }: { dishes?: readonly Dis
   const [sheet, setSheet] = useState<'filters' | 'sort' | null>(null);
   useRememberedAllergens(selection, setSelection);
 
+  const plain = useMemo<PlainQuery>(() => (featureFlags.plainSearch ? parsePlainQuery(deferredQuery) : { rest: deferredQuery, maxMinutes: null, diet: null, exclude: [], understood: [] }), [deferredQuery]);
   const groups = useMemo(() => dishFilterGroups(dishes), [dishes]);
   const sort = DISH_SORTS.find((s) => s.id === sortId) ?? RELEVANCE;
   const results = useMemo(() => {
-    const found = runSearch(dishes, { toDoc: dishDoc, query: deferredQuery, groups, selection, sort, tieBreak: byNumber }).map((r) => r.item);
-    return myKitchen && equipmentOwned.length ? found.filter((d) => worksWithKitchen(d, equipmentOwned)) : found;
-  }, [dishes, deferredQuery, groups, selection, sort, myKitchen, equipmentOwned]);
+    const found = runSearch(dishes, { toDoc: dishDoc, query: plain.rest, groups, selection, sort, tieBreak: byNumber }).map((r) => r.item);
+    const understood = featureFlags.plainSearch && plain.understood.length ? found.filter((d) => passesPlain(d, plain)) : found;
+    return myKitchen && equipmentOwned.length ? understood.filter((d) => worksWithKitchen(d, equipmentOwned)) : understood;
+  }, [dishes, plain, groups, selection, sort, myKitchen, equipmentOwned]);
   const counts = useMemo(() => (sheet === 'filters' ? optionCounts(dishes, groups, selection) : {}), [sheet, dishes, groups, selection]);
   const nActive = activeCount(selection);
   const activeChips = groups.flatMap((g) => g.options.filter((o) => selection[g.id]?.includes(o.id)).map((o) => ({ g, o })));
@@ -107,6 +110,7 @@ export function DishLibrary({ dishes = researchDishes }: { dishes?: readonly Dis
           </Pressable>
         ) : null}
       </View>
+      {plain.understood.length ? <Text style={styles.note}>Showing: {plain.understood.join(', ')}</Text> : null}
 
       <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.quickRow} contentContainerStyle={styles.quickContent} keyboardShouldPersistTaps="handled">
         <SelectChip
