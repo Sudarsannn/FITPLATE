@@ -15,70 +15,277 @@
         "avg": 875,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-05.md"
+      },
+      {
+        "date": "2026-11-03",
+        "min": 540,
+        "max": 960,
+        "avg": 760,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-03.md"
       }
     ],
     "currentEstimate": {
-      "min": 790,
-      "max": 960,
-      "avg": 875
+      "min": 680,
+      "max": 920,
+      "avg": 800
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-05",
+    "lastObserved": "2026-11-03",
     "stale": false,
     "seasonal": false,
-    "listingCount": 4,
+    "listingCount": 7,
     "platforms": [
-      "Amazon",
       "BigBasket",
-      "Grocery Prime"
+      "Flipkart",
+      "Zepto"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 79,
-    "max": 96,
-    "avg": 87.5
+    "min": 68,
+    "max": 92,
+    "avg": 80
   },
   "seasonal": false,
-  "nutritionPer100g": null,
-  "macrosPer100Estimate": {
-    "kcal": 330,
-    "proteinG": 2,
-    "carbsG": 75,
-    "fatG": 1,
-    "fibreG": 10
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "proteinG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "carbsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "sugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "sodiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    }
   },
-  "storage": "Airtight jar at room temperature, away from moisture. Amchur clumps easily in humid weather; keeping it in the fridge during the monsoon helps. Use within about 6 months of opening.",
-  "looksLike": "A fine, pale beige to light brown powder with a sharp sour smell, made from sun-dried slices of unripe green mango.",
-  "howToPick": null,
-  "shelfLife": "About 12 months unopened.",
+  "macrosPer100Estimate": {
+    "kcal": 335,
+    "proteinG": 2,
+    "carbsG": 82.5,
+    "fatG": 1,
+    "fibreG": 7
+  },
+  "storage": "Airtight jar away from moisture and light; use a dry spoon.",
+  "looksLike": "A fine, pale beige to light-brown powder with a sharp, fruity-sour smell.",
+  "howToPick": "Light, even beige-brown powder with a sour smell; avoid grey, dark brown or lumpy powder and any added colour or starch (adulteration).",
+  "shelfLife": "About 12 months sealed (general guidance; not from a source in this run).",
   "substitutes": [
     "Lemon juice (about ½ tsp for ¼ tsp amchur)",
     "Anardana (dried pomegranate seed) powder",
-    "Tamarind pulp"
+    "Tamarind pulp",
+    "Lemon juice or lime juice",
+    "Anardana (dried pomegranate seed powder)",
+    "Chaat masala"
   ],
-  "vendorListings": [],
+  "vendorListings": [
+    {
+      "vendor": "zepto",
+      "product": "Everest Amchur Powder",
+      "pack": "50 g",
+      "priceMinInr": 41,
+      "priceMaxInr": 41,
+      "observedOn": "2026-11-03"
+    }
+  ],
   "usedIn": [
     {
       "dishNumber": 8,
       "quantity": 0.5,
       "unit": "g",
-      "raw": "0.5 g (¼ tsp), optional, only if the chole masala is not tangy"
+      "raw": "0.5 g per serving (¼ tsp; optional, only if the chole masala is not tangy)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-05",
       "file": "FitPlate_Ingredients_2026-10-05.md"
+    },
+    {
+      "date": "2026-11-03",
+      "file": "FitPlate_Ingredients_2026-11-03.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "vendorListings": "newest sighting per vendor+product+pack",
@@ -86,5 +293,9 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 624.6–960.0 was wider than 30% of avg 798.9; narrowed to ±15%.",
+    "macrosPer100Estimate.fibreG: Versions 2026-10-05 (10) and 2026-11-03 (7) differ by more than 25%; kept the newer."
+  ]
 }

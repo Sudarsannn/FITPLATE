@@ -15,37 +15,225 @@
         "avg": 35,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-05.md"
+      },
+      {
+        "date": "2026-11-03",
+        "min": 17,
+        "max": 45,
+        "avg": 32,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-03.md"
       }
     ],
     "currentEstimate": {
-      "min": 30,
-      "max": 40,
-      "avg": 35
+      "min": 28,
+      "max": 38,
+      "avg": 33
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-05",
+    "lastObserved": "2026-11-03",
     "stale": false,
     "seasonal": false,
-    "listingCount": 2,
+    "listingCount": 6,
     "platforms": [
       "BigBasket",
-      "OneIndia"
+      "Blinkit"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 2 listings back the range (need 3)"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 3,
-    "max": 4,
-    "avg": 3.5
+    "min": 2.8,
+    "max": 3.8,
+    "avg": 3.3
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 25,
+      "source": "USDA FDC: USDA FDC 169975 'Cabbage, raw'; macros seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "proteinG": {
+      "value": 1.3,
+      "source": "USDA FDC: USDA FDC 169975 'Cabbage, raw'; macros seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "carbsG": {
+      "value": 5.8,
+      "source": "USDA FDC: USDA FDC 169975 'Cabbage, raw'; macros seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fatG": {
+      "value": 0.1,
+      "source": "USDA FDC: USDA FDC 169975 'Cabbage, raw'; macros seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 2.5,
+      "source": "USDA FDC: USDA FDC 169975 'Cabbage, raw'; macros seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sodiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 169975 'Cabbage, raw'; macros seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 169975 'Cabbage, raw'; macros seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    }
+  },
   "macrosPer100Estimate": {
     "kcal": 25,
     "proteinG": 1.3,
@@ -53,33 +241,49 @@
     "fatG": 0.1,
     "fibreG": 2.5
   },
-  "storage": "Whole head: unwashed, in a loose bag in the fridge crisper for 1–2 weeks. Peel off and discard wilted outer leaves before use. Cut/shredded: wrap tightly or keep in an airtight box in the fridge; use within 2–3 days. Blanched shreds can be frozen for cooking.",
-  "looksLike": "A round, heavy head of tightly packed, pale green, smooth leaves; outer leaves slightly darker. Usually 0.5–1.5 kg per head.",
-  "howToPick": null,
-  "shelfLife": "1–2 weeks whole in the fridge (up to 3 weeks if very fresh); 2–3 days at room temperature.",
+  "storage": "Keep the whole head unwashed in the fridge vegetable drawer; wrap a cut half tightly and use within about 3 to 4 days.",
+  "looksLike": "A round, heavy head of tightly packed pale green leaves; a head is usually 400 g to 1 kg.",
+  "howToPick": "Heavy for its size, firm and tight, with fresh crisp outer leaves. Avoid loose, yellowing or slimy leaves, black spots and a cut stem that looks dry and split.",
+  "shelfLife": "A whole head keeps about 1 to 2 weeks in the fridge (general guidance; not taken from a source in this run).",
   "substitutes": [
     "Chinese cabbage (napa)",
     "Bok choy or lettuce (iceberg)",
-    "Extra capsicum/beans"
+    "Extra capsicum/beans",
+    "Red or Chinese cabbage",
+    "Spring greens or cauliflower florets (finely chopped)"
   ],
-  "vendorListings": [],
+  "vendorListings": [
+    {
+      "vendor": "blinkit",
+      "product": "Cabbage , 400 g",
+      "pack": "400 g",
+      "priceMinInr": 18,
+      "priceMaxInr": 18,
+      "observedOn": "2026-11-03"
+    }
+  ],
   "usedIn": [
     {
       "dishNumber": 10,
       "quantity": 30,
       "unit": "g",
-      "raw": "30 g (½ cup finely shredded)"
+      "raw": "30 g per serving (about ½ cup finely shredded); the Jain variant uses 50 g"
     }
   ],
   "versions": [
     {
       "date": "2026-10-05",
       "file": "FitPlate_Ingredients_2026-10-05.md"
+    },
+    {
+      "date": "2026-11-03",
+      "file": "FitPlate_Ingredients_2026-11-03.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (wma)",
     "macrosPer100Estimate": "stable (single)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "vendorListings": "newest sighting per vendor+product+pack",
@@ -87,5 +291,8 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 21.4–43.3 was wider than 30% of avg 33.0; narrowed to ±15%."
+  ]
 }

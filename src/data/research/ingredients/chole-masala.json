@@ -16,69 +16,278 @@
         "avg": 800,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-05.md"
+      },
+      {
+        "date": "2026-11-03",
+        "min": 625,
+        "max": 965,
+        "avg": 795,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-03.md"
       }
     ],
     "currentEstimate": {
-      "min": 680,
-      "max": 920,
-      "avg": 800
+      "min": 675,
+      "max": 915,
+      "avg": 795
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-05",
+    "lastObserved": "2026-11-03",
     "stale": false,
     "seasonal": false,
-    "listingCount": 5,
+    "listingCount": 8,
     "platforms": [
       "Amazon",
-      "BigBasket"
+      "BigBasket",
+      "Flipkart",
+      "Swiggy Instamart"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 68,
-    "max": 92,
-    "avg": 80
+    "min": 67.5,
+    "max": 91.5,
+    "avg": 79.5
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 255.6,
+      "source": "Other: Nilon's Chhole Masala label values via thedesifood.com: Nilon's Chhole Masala label per 100 g via https://thedesifood.com/products/nilons-chhole-masala; brands vary widely; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "proteinG": {
+      "value": 12.7,
+      "source": "Other: Nilon's Chhole Masala label values via thedesifood.com: Nilon's Chhole Masala label per 100 g via https://thedesifood.com/products/nilons-chhole-masala; brands vary widely; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "carbsG": {
+      "value": 39.3,
+      "source": "Other: Nilon's Chhole Masala label values via thedesifood.com: Nilon's Chhole Masala label per 100 g via https://thedesifood.com/products/nilons-chhole-masala; brands vary widely; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "sugarsG": {
+      "value": 3.1,
+      "source": "Other: Nilon's Chhole Masala label values via thedesifood.com: Nilon's Chhole Masala label per 100 g via https://thedesifood.com/products/nilons-chhole-masala; brands vary widely; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "fatG": {
+      "value": 5.4,
+      "source": "Other: Nilon's Chhole Masala label values via thedesifood.com: Nilon's Chhole Masala label per 100 g via https://thedesifood.com/products/nilons-chhole-masala; brands vary widely; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "sodiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "Other: Nilon's Chhole Masala label values via thedesifood.com: Nilon's Chhole Masala label per 100 g via https://thedesifood.com/products/nilons-chhole-masala; brands vary widely; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "Other: Nilon's Chhole Masala label values via thedesifood.com: Nilon's Chhole Masala label per 100 g via https://thedesifood.com/products/nilons-chhole-masala; brands vary widely; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    }
+  },
   "macrosPer100Estimate": {
-    "kcal": 330,
-    "proteinG": 12,
-    "carbsG": 45,
-    "fatG": 10,
+    "kcal": 292.8,
+    "proteinG": 12.4,
+    "carbsG": 42.2,
+    "fatG": 5.4,
     "fibreG": 25
   },
-  "storage": "Room temperature, in an airtight jar away from the stove, sunlight and steam. Use within 3–4 months of opening for best aroma. Always use a dry spoon.",
-  "looksLike": "A dark brown, fairly coarse powder sold in small cartons or pouches. It smells roasted and sour because it usually holds dried pomegranate seed (anardana) or amchur along with coriander, cumin, black cardamom, cloves and chilli.",
-  "howToPick": null,
-  "shelfLife": "Typically 9–12 months unopened (see the pack date).",
+  "storage": "Airtight jar, cool dark place, dry spoon every time. Do not store near the stove.",
+  "looksLike": "A dark brown to near-black, fine powder with a tangy, roasted-spice smell.",
+  "howToPick": "Sealed pack, fresh dark colour and strong aroma; avoid clumps (moisture) or a flat smell. Check the label for onion/garlic powder or hing with wheat if relevant.",
+  "shelfLife": "About 6 to 12 months unopened; best within a few months of opening (general guidance; not from a source in this run).",
   "substitutes": [
     "Garam masala + amchur (about 3:1) + a pinch of chilli",
     "Pav bhaji or chana masala-style blends from the same brand",
-    "Homemade roasted blend (coriander, cumin, black cardamom, cloves, anardana, amchur)"
+    "Homemade roasted blend (coriander, cumin, black cardamom, cloves, anardana, amchur)",
+    "Garam masala plus amchur",
+    "Homemade chana masala powder",
+    "Pindi chole masala"
   ],
-  "vendorListings": [],
+  "vendorListings": [
+    {
+      "vendor": "instamart",
+      "product": "Everest Chole Masala",
+      "pack": "100 g",
+      "priceMinInr": 86,
+      "priceMaxInr": 86,
+      "observedOn": "2026-11-03"
+    }
+  ],
   "usedIn": [
     {
       "dishNumber": 8,
       "quantity": 3,
       "unit": "g",
-      "raw": "3 g (1 level tsp)"
+      "raw": "3 g per serving (1 level tsp)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-05",
       "file": "FitPlate_Ingredients_2026-10-05.md"
+    },
+    {
+      "date": "2026-11-03",
+      "file": "FitPlate_Ingredients_2026-11-03.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "vendorListings": "newest sighting per vendor+product+pack",
@@ -86,5 +295,9 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 636.2–955.8 was wider than 30% of avg 796.0; narrowed to ±15%.",
+    "macrosPer100Estimate.fatG: Versions 2026-10-05 (10) and 2026-11-03 (5.4) differ by more than 25%; kept the newer."
+  ]
 }

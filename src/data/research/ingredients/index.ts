@@ -89,6 +89,7 @@ import item_idli_dosa_batter_ready_made_packaged from './idli-dosa-batter-ready-
 import item_idli_rice_parboiled_rice from './idli-rice-parboiled-rice.json';
 import item_instant_coffee_powder from './instant-coffee-powder.json';
 import item_instant_yeast_dry from './instant-yeast-dry.json';
+import item_jaggery from './jaggery.json';
 import item_jaggery_block_powder from './jaggery-block-powder.json';
 import item_kalpasi_stone_flower_dried_lichen from './kalpasi-stone-flower-dried-lichen.json';
 import item_kashmiri_red_chilli_powder from './kashmiri-red-chilli-powder.json';
@@ -151,6 +152,7 @@ import item_sandwich_masala from './sandwich-masala.json';
 import item_schezwan_chutney_ready_made from './schezwan-chutney-ready-made.json';
 import item_seer_fish_kingfish_steaks from './seer-fish-kingfish-steaks.json';
 import item_seeraga_samba_rice from './seeraga-samba-rice.json';
+import item_semolina from './semolina.json';
 import item_semolina_fine_bombay_rava from './semolina-fine-bombay-rava.json';
 import item_sesame_oil_gingelly_til_oil_everyday_grade from './sesame-oil-gingelly-til-oil-everyday-grade.json';
 import item_sesame_seeds_white from './sesame-seeds-white.json';
@@ -161,6 +163,7 @@ import item_spinach from './spinach.json';
 import item_spring_onion from './spring-onion.json';
 import item_star_anise from './star-anise.json';
 import item_sugar from './sugar.json';
+import item_tamarind from './tamarind.json';
 import item_tamarind_date_chutney_ready_made from './tamarind-date-chutney-ready-made.json';
 import item_tamarind_paste_pulp from './tamarind-paste-pulp.json';
 import item_tamarind_seedless_block from './tamarind-seedless-block.json';
@@ -267,6 +270,7 @@ export const items: Ingredient[] = [
   item_idli_rice_parboiled_rice as unknown as Ingredient,
   item_instant_coffee_powder as unknown as Ingredient,
   item_instant_yeast_dry as unknown as Ingredient,
+  item_jaggery as unknown as Ingredient,
   item_jaggery_block_powder as unknown as Ingredient,
   item_kalpasi_stone_flower_dried_lichen as unknown as Ingredient,
   item_kashmiri_red_chilli_powder as unknown as Ingredient,
@@ -329,6 +333,7 @@ export const items: Ingredient[] = [
   item_schezwan_chutney_ready_made as unknown as Ingredient,
   item_seer_fish_kingfish_steaks as unknown as Ingredient,
   item_seeraga_samba_rice as unknown as Ingredient,
+  item_semolina as unknown as Ingredient,
   item_semolina_fine_bombay_rava as unknown as Ingredient,
   item_sesame_oil_gingelly_til_oil_everyday_grade as unknown as Ingredient,
   item_sesame_seeds_white as unknown as Ingredient,
@@ -339,6 +344,7 @@ export const items: Ingredient[] = [
   item_spring_onion as unknown as Ingredient,
   item_star_anise as unknown as Ingredient,
   item_sugar as unknown as Ingredient,
+  item_tamarind as unknown as Ingredient,
   item_tamarind_date_chutney_ready_made as unknown as Ingredient,
   item_tamarind_paste_pulp as unknown as Ingredient,
   item_tamarind_seedless_block as unknown as Ingredient,

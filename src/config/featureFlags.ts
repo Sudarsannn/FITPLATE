@@ -43,6 +43,8 @@ export const featureFlags = {
   fridgeRescue: true,
   /** Innovation (Day 15): plain-words search such as "15 min no onion veg" on the Cook tab. */
   plainSearch: true,
+  /** Day 15G2: confirm screen and official cart push from the shopping list. Stays OFF until an official integration exists. */
+  vendorCheckout: false,
   /** Day 15G1: per-vendor price sightings and logo-tap search links on the shopping list. ON once tested. */
   vendorLinks: true,
   /** Day 15G1: Blinkit rows in that comparison. Stays OFF until Blinkit is hooked up. */

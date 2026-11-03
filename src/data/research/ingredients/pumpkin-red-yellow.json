@@ -16,51 +16,244 @@
         "avg": 80,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-05.md"
+      },
+      {
+        "date": "2026-11-03",
+        "min": 55,
+        "max": 60,
+        "avg": 60,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-03.md"
       }
     ],
     "currentEstimate": {
-      "min": 68,
-      "max": 90,
-      "avg": 80
+      "min": 60,
+      "max": 75,
+      "avg": 70
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-05",
+    "lastObserved": "2026-11-03",
     "stale": false,
     "seasonal": false,
-    "listingCount": 4,
+    "listingCount": 1,
     "platforms": [
-      "BigBasket",
-      "Blinkit",
-      "eKrushak"
+      "VKS Agritech store"
     ],
     "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "confirmed": false,
+    "checkNotes": [
+      "only 1 listing backs the range (need 3)",
+      "only 1 platform (VKS Agritech store) backs the range"
+    ]
   },
   "per100Estimate": {
-    "min": 6.8,
-    "max": 9,
-    "avg": 8
+    "min": 6,
+    "max": 7.5,
+    "avg": 7
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 26,
+      "source": "USDA FDC: USDA FDC 168448 'Pumpkin, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "proteinG": {
+      "value": 1,
+      "source": "USDA FDC: USDA FDC 168448 'Pumpkin, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "carbsG": {
+      "value": 6.5,
+      "source": "USDA FDC: USDA FDC 168448 'Pumpkin, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sugarsG": {
+      "value": 2.8,
+      "source": "USDA FDC: USDA FDC 168448 'Pumpkin, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "fatG": {
+      "value": 0.1,
+      "source": "USDA FDC: USDA FDC 168448 'Pumpkin, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 0.5,
+      "source": "USDA FDC: USDA FDC 168448 'Pumpkin, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sodiumMg": {
+      "value": 1,
+      "source": "USDA FDC: USDA FDC 168448 'Pumpkin, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 168448 'Pumpkin, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 168448 'Pumpkin, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    }
+  },
   "macrosPer100Estimate": {
-    "kcal": 26,
+    "kcal": 27,
     "proteinG": 1,
     "carbsG": 6.5,
     "fatG": 0.1,
     "fibreG": 0.5
   },
-  "storage": "Whole: room temperature, away from sunlight, for 1–2 months. Cut: scoop out the seeds, wrap in cling film and refrigerate for 4–5 days. Peeled cubes freeze for about 3 months (for cooking only). Bottle gourd: fridge, 5–7 days whole; use cut pieces within 2 days.",
-  "looksLike": "A large, round-to-flattened gourd with a mottled green-to-orange skin and thick, bright orange-yellow flesh. Usually sold as a cut wedge or slice because whole ones weigh several kilograms. \"Disco\" pumpkin is a smaller, round, yellow type.",
-  "howToPick": null,
-  "shelfLife": "Whole: 1–2 months in a cool, dry place. Cut: 4–5 days in the fridge.",
+  "storage": "Keep whole pumpkin in a cool, dry place; refrigerate cut pieces wrapped tightly and use within about 4 days.",
+  "looksLike": "A large round to flattened gourd with mottled green-to-orange skin and thick orange-yellow flesh; usually sold as a cut wedge or slice because a whole one weighs several kilograms.",
+  "howToPick": "Heavy for its size with a hard, dull skin and bright orange flesh when cut. Avoid soft spots, mould or a watery, sour-smelling cut face.",
+  "shelfLife": "A whole pumpkin keeps for weeks in a cool place; cut pieces keep about 4 to 5 days in the fridge (general guidance; not taken from a source in this run).",
   "substitutes": [
     "Bottle gourd (lauki/dudhi)",
     "Ash gourd (petha / safed kaddu)",
-    "Carrot or sweet potato"
+    "Carrot or sweet potato",
+    "Bottle gourd (lauki)",
+    "Sweet potato or carrot (cubed)"
   ],
   "vendorListings": [
     {
@@ -77,18 +270,23 @@
       "dishNumber": 9,
       "quantity": 30,
       "unit": "g",
-      "raw": "30 g (about 5–6 small cubes), pumpkin or bottle gourd"
+      "raw": "30 g per serving (5-6 small cubes); the Jain variant uses 55 g"
     }
   ],
   "versions": [
     {
       "date": "2026-10-05",
       "file": "FitPlate_Ingredients_2026-10-05.md"
+    },
+    {
+      "date": "2026-11-03",
+      "file": "FitPlate_Ingredients_2026-11-03.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "vendorListings": "newest sighting per vendor+product+pack",
@@ -96,9 +294,5 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": [
-    "price flag: narrowed",
-    "Range 65.0–90.0 was wider than 30% of avg 80.0; narrowed to ±15%.",
-    "range clamped to observed prices: 68–92 → 68–90"
-  ]
+  "mergeNotes": []
 }

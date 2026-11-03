@@ -5,7 +5,8 @@
   "cuisine": "South Indian (Tamil Nadu / Karnataka, Udupi tiffin style)",
   "dietType": "veg",
   "mealType": [
-    "breakfast"
+    "breakfast",
+    "dinner"
   ],
   "difficulty": "Intermediate",
   "prepMin": 25,
@@ -52,7 +53,7 @@
       "name": "Water (to soak and grind)",
       "quantity": 30,
       "unit": "ml",
-      "householdMeasure": "about 2–3 tbsp"
+      "householdMeasure": "about 2-3 tbsp"
     },
     {
       "ingredientId": "cooking-oil-refined-sunflower-groundnut",
@@ -87,7 +88,7 @@
       "name": "Shallots (small onions, sambar onion)",
       "quantity": 25,
       "unit": "g",
-      "householdMeasure": "4–5 small, peeled"
+      "householdMeasure": "4-5 small, peeled"
     },
     {
       "ingredientId": "drumstick",
@@ -108,7 +109,7 @@
       "name": "Pumpkin (red/yellow pumpkin, kaddu) or bottle gourd (lauki)",
       "quantity": 30,
       "unit": "g",
-      "householdMeasure": "about 5–6 small cubes"
+      "householdMeasure": "5-6 small cubes"
     },
     {
       "ingredientId": "tomato",
@@ -118,7 +119,7 @@
       "householdMeasure": "1/4 medium, chopped"
     },
     {
-      "ingredientId": "tamarind-seedless-block",
+      "ingredientId": "tamarind",
       "name": "Tamarind (imli)",
       "quantity": 3,
       "unit": "g",
@@ -132,7 +133,7 @@
       "householdMeasure": "1 1/2 tsp"
     },
     {
-      "ingredientId": "jaggery-block-powder",
+      "ingredientId": "jaggery",
       "name": "Jaggery (gud), optional",
       "quantity": 2,
       "unit": "g",
@@ -168,7 +169,7 @@
     },
     {
       "ingredientId": "asafoetida",
-      "name": "Asafoetida (hing)",
+      "name": "Asafoetida (hing), optional",
       "quantity": null,
       "unit": null,
       "householdMeasure": "a pinch"
@@ -189,13 +190,13 @@
     }
   ],
   "equipment": [
-    "Mixer-grinder with a wet/chutney jar, or a wet grinder (a wet grinder gives the fluffiest idlis)",
-    "2 small bowls for soaking, and 1 large steel or glass bowl for fermenting (the batter rises 1.5–2 times)",
+    "Mixer-grinder with a wet/chutney jar, or a wet grinder (fluffiest idlis)",
+    "2 small bowls for soaking, and 1 large steel or glass bowl for fermenting (the batter rises 1.5-2 times)",
     "Idli stand (idli plates) with an idli steamer, or an idli stand inside a pressure cooker (lid on, whistle removed)",
-    "Pressure cooker for the dal (a small steel bowl inside it works for 20 g)",
-    "Saucepan or small kadai for the sambar, and a small tadka pan (or a ladle) for tempering",
+    "Pressure cooker for the dal (a small steel bowl inside works for 20 g)",
+    "Saucepan or small kadai for the sambar, and a small tadka pan (or ladle) for tempering",
     "Small bowl for soaking tamarind, a spoon to scoop idlis, a whisk or ladle to mash the dal",
-    "Knife, chopping board, measuring spoons",
+    "Knife, chopping board, measuring spoons, kitchen scale",
     "Warm place for fermenting"
   ],
   "steps": [
@@ -205,9 +206,10 @@
       "text": "(smallest practical batch: 200 g).",
       "timerSec": 60,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "short, thick, opaque grains, level at 40 g on the scale",
       "cameraCheck": "the bowl of rice on the scale.",
-      "videoShot": "rice poured into a bowl on a kitchen scale."
+      "videoShot": "rice poured into a bowl on a kitchen scale.",
+      "watchOut": "scooping by cup, which gives too much rice and a stiff batter; weigh it or use 3 level tbsp."
     },
     {
       "n": 2,
@@ -215,9 +217,10 @@
       "text": ", rubbing it gently between your fingers.",
       "timerSec": 120,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "the first water is thick and white, the third is thin and almost clear",
       "cameraCheck": "the bowl with the last rinse water.",
-      "videoShot": "a hand swirling rice, then the cloudy water poured off."
+      "videoShot": "a hand swirling rice, then the cloudy water poured off.",
+      "watchOut": "skipping the rinse, which leaves surface starch and a gummy batter; keep rinsing until the water is faintly cloudy."
     },
     {
       "n": 3,
@@ -225,9 +228,10 @@
       "text": "Add the 2 g poha now if using.",
       "timerSec": 30,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "a clear layer of water about two finger-widths above the rice",
       "cameraCheck": "the bowl from the side, showing the water level.",
-      "videoShot": "water poured over the rice."
+      "videoShot": "water poured over the rice.",
+      "watchOut": "grains poking out, which stay hard and grind unevenly; top up with water until covered."
     },
     {
       "n": 4,
@@ -235,9 +239,10 @@
       "text": "(batch: 50 g dal + 1/4 tsp methi).",
       "timerSec": 60,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "white dal with a few yellow seeds mixed in",
       "cameraCheck": "the bowl with white dal and a few yellow seeds.",
-      "videoShot": "dal and methi dropped into a bowl."
+      "videoShot": "dal and methi dropped into a bowl.",
+      "watchOut": "too much methi, which makes the idlis bitter; keep to a pinch."
     },
     {
       "n": 5,
@@ -245,19 +250,21 @@
       "text": "Rinse the dal twice, then cover it with water 3 cm above",
       "timerSec": 120,
       "tip": "soak and grind the dal separately from the rice. Whipped-up urad dal is what makes idlis light.",
-      "visualCue": null,
+      "visualCue": "the second rinse water is only slightly cloudy and the dal sits fully covered",
       "cameraCheck": "the soaking bowl.",
-      "videoShot": "dal rinsed and topped up with water."
+      "videoShot": "dal rinsed and topped up with water.",
+      "watchOut": "old or stale dal (more than a year old), which ferments poorly and gives flat idlis; use fresh dal or add a little more."
     },
     {
       "n": 6,
-      "title": "Leave both bowls covered for 4–5 hours",
-      "text": "Leave both bowls covered for 4–5 hours",
+      "title": "Leave both bowls covered for 4-5 hours",
+      "text": "Leave both bowls covered for 4-5 hours",
       "timerSec": 14400,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "swollen, plump dal and rice grains that no longer look glassy",
       "cameraCheck": "one rice grain pressed between two fingers.",
-      "videoShot": "a soaked grain crushed between fingertips."
+      "videoShot": "a soaked grain crushed between fingertips.",
+      "watchOut": "soaking in a hot place, which turns the water sour before grinding; keep it at room temperature and change the water if it smells off."
     },
     {
       "n": 7,
@@ -265,19 +272,21 @@
       "text": "Drain the urad dal (keep the soaking water) and put it in the mixer jar",
       "timerSec": 60,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "damp white dal in the jar and a bowl of cloudy water beside it",
       "cameraCheck": "the jar with drained dal.",
-      "videoShot": "dal tipped from a sieve into the jar."
+      "videoShot": "dal tipped from a sieve into the jar.",
+      "watchOut": "throwing away the soaking water, which you need for grinding; keep it."
     },
     {
       "n": 8,
-      "title": "Add 1 tbsp cold water and grind in 20-second bursts for about 2 min",
-      "text": "Scrape the sides, add 1 more tbsp water, and grind 1–2 min more.",
+      "title": "Add 1 tbsp cold soaking water and grind in 20-second bursts for about 2 min",
+      "text": "Scrape the sides, add 1 more tbsp, and grind 1-2 min more.",
       "timerSec": 240,
-      "tip": "use the cold soaking water and short bursts. A hot mixer makes dense, flat idlis.",
-      "visualCue": null,
+      "tip": null,
+      "visualCue": "pale, fluffy, doubled-in-volume batter that holds a soft peak on the spoon",
       "cameraCheck": "a spoon of dal batter dropped into water, floating.",
-      "videoShot": "fluffy white batter lifted on a spoon."
+      "videoShot": "fluffy white batter lifted on a spoon.",
+      "watchOut": "a hot jar from continuous grinding, which makes the batter heavy and the idlis dense; use short bursts and cold water, and rest the jar if it feels warm."
     },
     {
       "n": 9,
@@ -285,19 +294,21 @@
       "text": "Scrape the dal batter into the large fermenting bowl",
       "timerSec": 60,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "a high, airy mound of white batter in a bowl big enough to double",
       "cameraCheck": "the fermenting bowl.",
-      "videoShot": "batter scraped into a big steel bowl."
+      "videoShot": "batter scraped into a big steel bowl.",
+      "watchOut": "a small bowl, which overflows when the batter rises; choose one at least 3 times the batter volume."
     },
     {
       "n": 10,
-      "title": "Drain the rice (and poha) and grind it with about 1–2 tbsp water for 2–3 min",
-      "text": "Drain the rice (and poha) and grind it with about 1–2 tbsp water for 2–3 min",
+      "title": "Drain the rice (and poha) and grind with about 1-2 tbsp water for 2-3 min",
+      "text": "Drain the rice (and poha) and grind with about 1-2 tbsp water for 2-3 min",
       "timerSec": 180,
-      "tip": "idli rice batter should be a little coarser than dosa batter. Too smooth gives sticky idlis.",
-      "visualCue": null,
+      "tip": "idli rice batter should be a little coarser than dosa batter.",
+      "visualCue": "thick, creamy batter that feels like fine sand when rubbed",
       "cameraCheck": "a little rice batter rubbed on a fingertip.",
-      "videoShot": "thick, slightly grainy rice batter pouring from the jar."
+      "videoShot": "thick, slightly grainy rice batter pouring from the jar.",
+      "watchOut": "grinding too smooth, which gives sticky, gummy idlis; stop as soon as it is fine but still grainy."
     },
     {
       "n": 11,
@@ -305,19 +316,21 @@
       "text": "Add the rice batter to the dal batter, add 1.2 g salt (batch: 1 tsp), and mix with your clean hand for 1 min",
       "timerSec": 120,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "one uniform off-white batter with no streaks",
       "cameraCheck": "batter dripping slowly from a spoon.",
-      "videoShot": "a hand folding the two batters together."
+      "videoShot": "a hand folding the two batters together.",
+      "watchOut": "mixing with a metal spoon for too long, which knocks out air; fold gently, and use clean hands (their natural yeast helps fermenting). Some cooks add the salt after fermenting instead; both work."
     },
     {
       "n": 12,
-      "title": "Cover loosely and leave in a warm spot for 8–12 hours",
+      "title": "Cover loosely and leave in a warm spot for 8-12 hours",
       "text": "(overnight).",
       "timerSec": 28800,
-      "tip": "in Mumbai summer check at 6–8 h; in winter it may need 14 h or more. Judge by the rise and smell, not the clock.",
-      "visualCue": null,
+      "tip": "in Mumbai summer check at 6-8 h; in winter it may need 14 h or more. Judge by the rise and smell, not the clock.",
+      "visualCue": "a domed top with bubbles breaking at the surface and a faint sour-yeasty smell",
       "cameraCheck": "the bowl from the side, showing the risen level and bubbles.",
-      "videoShot": "a spoon dipped into airy, bubbly batter."
+      "videoShot": "a spoon dipped into airy, bubbly batter.",
+      "watchOut": "cold weather (little or no rise) or a tight lid (no room for gas); move the bowl somewhere warmer, leave the lid loose, and wait longer rather than adding anything."
     },
     {
       "n": 13,
@@ -325,19 +338,21 @@
       "text": "Rinse 20 g toor dal twice and put it in a small steel bowl with 100 ml water and a pinch of turmeric",
       "timerSec": 120,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "pale-yellow dal with a yellow tinge from the turmeric under about 2 cm of water",
       "cameraCheck": "the bowl of dal and water.",
-      "videoShot": "yellow dal rinsed and topped with water."
+      "videoShot": "yellow dal rinsed and topped with water.",
+      "watchOut": "too little water, which burns or leaves the dal hard; keep the water about 2 cm above the dal."
     },
     {
       "n": 14,
-      "title": "Pressure-cook the dal (bowl inside the cooker with 1 cup water at the base) for 3–4 whistles on medium heat",
+      "title": "Pressure-cook the dal (bowl inside the cooker with 1 cup water at the base) for 3-4 whistles on medium heat",
       "text": "Let the pressure drop on its own.",
       "timerSec": 720,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "the dal collapses into a thick yellow mush when pressed",
       "cameraCheck": "a spoon pressing the cooked dal.",
-      "videoShot": "the cooker lid opened and dal mashed."
+      "videoShot": "the cooker lid opened and dal mashed.",
+      "watchOut": "opening the cooker early, which is unsafe and leaves hard dal; wait until the steam stops. If the dal is still firm, cook 1-2 more whistles."
     },
     {
       "n": 15,
@@ -345,19 +360,21 @@
       "text": "While the dal cooks, soak 3 g tamarind in 2 tbsp hot water",
       "timerSec": 30,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "the pulp loosens and the water turns brown",
       "cameraCheck": "the tamarind in the small bowl.",
-      "videoShot": "hot water poured over tamarind."
+      "videoShot": "hot water poured over tamarind.",
+      "watchOut": "using boiling-hot water on a big piece, which takes forever to soften; break the piece up with a spoon."
     },
     {
       "n": 16,
-      "title": "Peel 4–5 shallots and halve the larger ones. Cut the drumstick into 5 cm pieces, and cube the carrot and pumpkin. Chop the tomato",
-      "text": "Peel 4–5 shallots and halve the larger ones. Cut the drumstick into 5 cm pieces, and cube the carrot and pumpkin. Chop the tomato",
+      "title": "Peel 4-5 shallots and halve the larger ones. Cut the drumstick into 5 cm pieces, and cube the carrot and pumpkin. Chop the tomato",
+      "text": "Peel 4-5 shallots and halve the larger ones. Cut the drumstick into 5 cm pieces, and cube the carrot and pumpkin. Chop the tomato",
       "timerSec": 300,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "even 1.5 cm cubes that will cook at the same speed",
       "cameraCheck": "the board with all the cut vegetables.",
-      "videoShot": "drumstick being cut into pieces."
+      "videoShot": "drumstick being cut into pieces.",
+      "watchOut": "very uneven pieces, so some turn to mush while others stay raw; cut carrot smaller than pumpkin."
     },
     {
       "n": 17,
@@ -365,9 +382,10 @@
       "text": "Squeeze the soaked tamarind with your fingers and strain the juice. Throw away the fibre and seeds",
       "timerSec": 60,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "a thin brown liquid with no seeds or strings",
       "cameraCheck": "the strained tamarind water.",
-      "videoShot": "tamarind squeezed and poured through a strainer."
+      "videoShot": "tamarind squeezed and poured through a strainer.",
+      "watchOut": "seeds slipping into the pot, which crack teeth; strain through a small sieve."
     },
     {
       "n": 18,
@@ -375,9 +393,10 @@
       "text": "Mash the cooked dal smooth with a whisk or the back of a ladle",
       "timerSec": 60,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "smooth, glossy, thick yellow dal",
       "cameraCheck": "the mashed dal.",
-      "videoShot": "dal whisked smooth."
+      "videoShot": "dal whisked smooth.",
+      "watchOut": "lumps, which make the sambar grainy; whisk until smooth, adding a spoon of water if stiff."
     },
     {
       "n": 19,
@@ -385,9 +404,10 @@
       "text": "Put the shallots, drumstick, carrot and pumpkin in the saucepan with 100 ml water and a pinch of salt. Cover and cook on medium heat",
       "timerSec": 360,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "soft but whole vegetables, drumstick skin slightly wrinkled",
       "cameraCheck": "a carrot cube pierced with a knife.",
-      "videoShot": "the lid lifted on simmering vegetables."
+      "videoShot": "the lid lifted on simmering vegetables.",
+      "watchOut": "overcooking until everything dissolves; test at 6 min and stop as soon as the knife slides in."
     },
     {
       "n": 20,
@@ -395,9 +415,10 @@
       "text": "Add the tomato, the tamarind water and 1 1/2 tsp sambar powder. Simmer",
       "timerSec": 180,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "the liquid turns reddish-brown and smells roasted and tangy",
       "cameraCheck": "the reddish-brown liquid in the pan.",
-      "videoShot": "sambar powder sprinkled in and stirred."
+      "videoShot": "sambar powder sprinkled in and stirred.",
+      "watchOut": "adding the powder to a dry hot pan, where it scorches and turns bitter; always add it to the liquid."
     },
     {
       "n": 21,
@@ -405,9 +426,10 @@
       "text": "Add the mashed dal, 1/4 tsp salt (minus the pinch already added) and the jaggery (optional). Stir, add a splash of water if too thick, and simmer",
       "timerSec": 180,
       "tip": "tiffin sambar for idli is meant to be thin, so the idlis can soak it up. It thickens as it cools.",
-      "visualCue": null,
+      "visualCue": "a pourable, lightly thick sambar that coats the back of a spoon thinly",
       "cameraCheck": "a ladle of sambar poured back into the pan.",
-      "videoShot": "sambar flowing off a ladle."
+      "videoShot": "sambar flowing off a ladle.",
+      "watchOut": "a thick, pasty sambar, which does not soak into the idli; thin it with hot water. If too salty, add a little more water and dal."
     },
     {
       "n": 22,
@@ -415,19 +437,21 @@
       "text": "Heat 1 tsp oil in the tadka pan on medium heat. Add 1/4 tsp mustard seeds",
       "timerSec": 60,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "seeds spluttering and jumping in the oil",
       "cameraCheck": "the pan with popping seeds.",
-      "videoShot": "mustard seeds spluttering."
+      "videoShot": "mustard seeds spluttering.",
+      "watchOut": "oil that is not hot enough, so the seeds do not pop and taste raw; wait for the first crackle before moving on."
     },
     {
       "n": 23,
-      "title": "Add the broken red chilli, the curry leaves and a pinch of hing",
-      "text": "Add the broken red chilli, the curry leaves and a pinch of hing",
+      "title": "Add the broken red chilli, the curry leaves and a pinch of hing (optional)",
+      "text": "Add the broken red chilli, the curry leaves and a pinch of hing (optional)",
       "timerSec": 15,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "curry leaves curling and crisp-looking, strong fragrance",
       "cameraCheck": "the tadka in the pan.",
-      "videoShot": "curry leaves sizzling."
+      "videoShot": "curry leaves sizzling.",
+      "watchOut": "burnt chilli and leaves, which taste bitter; if they go black, start the tadka again. Keep the pan lid close, because wet leaves spit."
     },
     {
       "n": 24,
@@ -435,9 +459,10 @@
       "text": "Keep it covered so it stays hot.",
       "timerSec": 30,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "dark seeds and green leaves floating on the surface",
       "cameraCheck": "the finished sambar with leaves and seeds on top.",
-      "videoShot": "the hot tadka hitting the sambar."
+      "videoShot": "the hot tadka hitting the sambar.",
+      "watchOut": "leaving the sambar uncovered, so it cools and forms a skin; keep it covered and reheat before serving."
     },
     {
       "n": 25,
@@ -445,9 +470,10 @@
       "text": "Pour about 3 cm of water into the idli steamer (or pressure cooker) and bring it to a boil on high heat",
       "timerSec": 180,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "a steady stream of steam from under the lid and rolling bubbles in the water",
       "cameraCheck": "the steaming pot.",
-      "videoShot": "water bubbling in the steamer base."
+      "videoShot": "water bubbling in the steamer base.",
+      "watchOut": "water touching the idli plate, which makes soggy bottoms; keep the water below the stand."
     },
     {
       "n": 26,
@@ -455,9 +481,10 @@
       "text": "Grease 3 cups of the idli plate with a few drops of oil (about 1/4 tsp in total)",
       "timerSec": 30,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "a glossy film in each cup with no puddles",
       "cameraCheck": "the greased idli plate.",
-      "videoShot": "a fingertip spreading oil in the moulds."
+      "videoShot": "a fingertip spreading oil in the moulds.",
+      "watchOut": "skipping the oil, so the idlis stick and tear; too much oil leaves oily patches."
     },
     {
       "n": 27,
@@ -465,9 +492,10 @@
       "text": "Take out about 150 g (a heaped 2/3 cup) and refrigerate the rest.",
       "timerSec": 60,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "bubbly batter that falls from the spoon in a slow ribbon",
       "cameraCheck": "the batter in a cup.",
-      "videoShot": "batter scooped into a cup, showing bubbles."
+      "videoShot": "batter scooped into a cup, showing bubbles.",
+      "watchOut": "vigorous stirring, which deflates the batter and gives flat idlis; fold only 3-4 times. A runny batter gives flat idlis, so add no water unless it is stiff."
     },
     {
       "n": 28,
@@ -475,29 +503,32 @@
       "text": "Fill each of the 3 cups to the brim, about 50 g batter each",
       "timerSec": 30,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "batter level with the rim and a smooth top",
       "cameraCheck": "the filled idli plate.",
-      "videoShot": "batter spooned into the moulds."
+      "videoShot": "batter spooned into the moulds.",
+      "watchOut": "underfilling, which gives small flat idlis, or overfilling so they merge; fill level with the rim."
     },
     {
       "n": 29,
       "title": "Place the plate in the steamer, cover with the lid (pressure cooker: remove the whistle), and steam on medium-high heat",
       "text": "Place the plate in the steamer, cover with the lid (pressure cooker: remove the whistle), and steam on medium-high heat",
       "timerSec": 600,
-      "tip": "do not open the lid in the first 8 minutes, or the idlis may sink.",
-      "visualCue": null,
+      "tip": null,
+      "visualCue": "risen, pale, glossy domes and a clean toothpick",
       "cameraCheck": "a toothpick pulled out of one idli.",
-      "videoShot": "the lid lifted, steam escaping from puffed idlis."
+      "videoShot": "the lid lifted, steam escaping from puffed idlis.",
+      "watchOut": "opening the lid in the first 8 minutes, which makes the idlis sink; if the toothpick has wet batter on it, steam 2 more minutes."
     },
     {
       "n": 30,
-      "title": "Take out the plate and let it rest for 2–3 minutes",
-      "text": "Take out the plate and let it rest for 2–3 minutes",
+      "title": "Take out the plate and let it rest for 2-3 minutes",
+      "text": "Take out the plate and let it rest for 2-3 minutes",
       "timerSec": 120,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "the surface looks matte and the edges lift away from the cup",
       "cameraCheck": "the plate on the counter.",
-      "videoShot": "the idli plate resting."
+      "videoShot": "the idli plate resting.",
+      "watchOut": "unmoulding at once, which tears the soft idlis; wait the 2-3 minutes."
     },
     {
       "n": 31,
@@ -505,9 +536,10 @@
       "text": "Dip a spoon in water, slide it round the edge of each idli and lift it out",
       "timerSec": 60,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "whole, spongy idlis with a smooth underside",
       "cameraCheck": "the 3 idlis on a plate.",
-      "videoShot": "a wet spoon lifting out a clean idli."
+      "videoShot": "a wet spoon lifting out a clean idli.",
+      "watchOut": "a dry spoon, which sticks and tears the idli; keep dipping it in water."
     },
     {
       "n": 32,
@@ -515,9 +547,10 @@
       "text": "(and coconut chutney if you like).",
       "timerSec": 30,
       "tip": null,
-      "visualCue": null,
+      "visualCue": "white idlis sitting in or beside steaming reddish sambar",
       "cameraCheck": "the full plate.",
-      "videoShot": "hot sambar ladled over soft idlis."
+      "videoShot": "hot sambar ladled over soft idlis.",
+      "watchOut": "cold sambar or idlis left to dry out; serve both piping hot, and cover idlis with a cloth if waiting."
     }
   ],
   "nutritionPerServing": {
@@ -529,11 +562,11 @@
   },
   "microNutrientsEstimate": {
     "values": {
-      "calcium": 76.3,
+      "calcium": 77.9,
       "cholesterol": 0,
       "copper": 0,
       "folate": 164.4,
-      "iron": 2.9,
+      "iron": 3.1,
       "magnesium": 24,
       "manganese": 0.1,
       "niacin": 0.3,
@@ -541,7 +574,7 @@
       "potassium": 466.7,
       "riboflavin": 0.1,
       "selenium": 0,
-      "sodium": 6.1,
+      "sodium": 6.4,
       "thiamine": 0.1,
       "vitamin-a": 956.2,
       "vitamin-b12": 0,
@@ -552,10 +585,79 @@
       "vitamin-k": 133.7,
       "zinc": 0.2
     },
-    "coveragePct": 53,
+    "coveragePct": 63,
     "basis": "partial estimate from ingredient quantities"
   },
-  "asOrdered": null,
+  "asOrdered": {
+    "price": {
+      "priceHistory": [
+        {
+          "date": "2026-10-05",
+          "min": 70,
+          "max": 100,
+          "avg": 76,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-10-05.md"
+        },
+        {
+          "date": "2026-11-03",
+          "min": 60,
+          "max": 150,
+          "avg": 98,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-11-03.md"
+        }
+      ],
+      "currentEstimate": {
+        "min": 80,
+        "max": 100,
+        "avg": 90
+      },
+      "method": "wma",
+      "trend": "unknown",
+      "change30dPct": null,
+      "lastObserved": "2026-11-03",
+      "stale": false,
+      "seasonal": false,
+      "listingCount": 7,
+      "platforms": [
+        "magicpin",
+        "Swiggy",
+        "Zomato"
+      ],
+      "outOfStock": false,
+      "confirmed": true,
+      "checkNotes": []
+    },
+    "nutrition": {
+      "calories": {
+        "value": null,
+        "source": null
+      },
+      "protein": {
+        "value": null,
+        "source": null
+      },
+      "carbs": {
+        "value": null,
+        "source": null
+      },
+      "fat": {
+        "value": null,
+        "source": null
+      },
+      "fibre": {
+        "value": null,
+        "source": null
+      }
+    },
+    "restaurantsSampled": null,
+    "platforms": [
+      "Swiggy",
+      "Zomato",
+      "magicpin"
+    ]
+  },
   "orderPrice": {
     "priceHistory": [
       {
@@ -565,43 +667,51 @@
         "avg": 76,
         "confidence": null,
         "sourceFile": "FitPlate_Dishes_2026-10-05.md"
+      },
+      {
+        "date": "2026-11-03",
+        "min": 60,
+        "max": 150,
+        "avg": 98,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-11-03.md"
       }
     ],
     "currentEstimate": {
-      "min": 70,
-      "max": 90,
-      "avg": 80
+      "min": 80,
+      "max": 100,
+      "avg": 90
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-05",
+    "lastObserved": "2026-11-03",
     "stale": false,
     "seasonal": false,
-    "listingCount": 3,
+    "listingCount": 7,
     "platforms": [
-      "Swiggy"
+      "magicpin",
+      "Swiggy",
+      "Zomato"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 1 platform (Swiggy) backs the range"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "healthiness": {
     "score": 7.5,
     "restaurantScore": 6,
     "reasons": [
-      "idlis are steamed, not fried, and fermentation makes them easy to digest. The home plate uses only about 1 1/4 tsp oil in total, and the sambar adds dal protein, fibre and four vegetables. Points are taken off because it is still mostly white rice (about 66 g carbs) with modest protein (about 12 g), and salt is moderate. Restaurant sambar is often oilier, sometimes sweetened, and served with large helpings of coconut chutney, which pushes up fat and salt."
+      "idlis are steamed, not fried, and fermentation makes them easy to digest. The home plate uses only about 1 1/4 tsp oil in total (saturated fat about 1.2 g), and the sambar adds dal protein, fibre (about 9 g) and four vegetables. Points are lost because it is mostly white rice (about 66 g carbs) with modest protein (about 12 g), and salt is about 2.7 g (54% of the 5 g limit). Restaurant sambar is often oilier, sometimes sweetened, and served with generous coconut chutney, which pushes up fat and salt."
     ]
   },
   "researchRating": {
     "score": 4.4,
-    "basis": "idli sambar is one of India's most-ordered and most-praised breakfasts. Swiggy reported about 3.3 crore plates of idli ordered in a year, with Mumbai among the top cities, and Mumbai food guides describe Matunga's idli as worth crossing the city for. It loses some points because it is seen as plain or \"everyday\" by some, and because flat, hard or sour idlis are a very common home problem (recipe sites devote long troubleshooting sections to soft idlis). TasteAtlas rating: Not found in search results, so not used."
+    "basis": "idli sambar is one of India's most-ordered and most-praised breakfasts. Swiggy has reported millions of idli orders a year (Outlook Business coverage), and Mumbai guides (LBB, The Infatuation, Homegrown, Curly Tales, Culture Trip) single out Matunga idli as worth the trip. It loses some points because some see it as plain or \"everyday\", and flat, hard or sour idlis are a very common home problem (recipe sites devote long troubleshooting sections to soft idlis). TasteAtlas rating: Not found in search results, so not used. A May 2026 Reddit thread still recommends Matunga idli places, so sentiment is unchanged."
   },
-  "storage": "Idlis: fridge-safe in a closed box for up to 2 days. They freeze well for up to 1 month (freeze on a plate, then bag). Reheat by steaming for 3–5 min (from frozen, 8–10 min), or microwave with a damp cloth over them for 30–60 sec. Sambar: fridge-safe for 2–3 days in a closed container; it can be frozen for up to 1 month. Reheat in a pan until boiling, adding a splash of water as it thickens. Batter: fridge for 3–4 days (it gets more sour each day; use older batter for dosa or uttapam). Can be frozen for up to 1 month; thaw in the fridge and stir.",
-  "leftoverRemix": "turn leftover idlis into idli upma or masala fried idli. Cut them into cubes, toss them in a pan with a mustard-curry leaf tempering, onion, a pinch of turmeric and a sprinkle of podi or sambar powder, and finish with lemon and coriander. Leftover sambar can be poured over the cubes for \"sambar idli bites\".",
-  "burnOff": "about 5.6 km of running (70 kg adult, about 70 kcal per km), or about 8 km of brisk walking (est., about 50 kcal per km). With 2 tbsp coconut chutney (about 475 kcal): about 6.8 km running or about 9.5 km walking (est.).",
+  "storage": "Idlis: fridge-safe in a closed box for up to 2 days. They freeze well for up to 1 month (freeze on a plate, then bag). Reheat by steaming for 3-5 min (from frozen, 8-10 min), or microwave with a damp cloth over them for 30-60 sec. Sambar: fridge-safe for 2-3 days in a closed container; it can be frozen for up to 1 month. Reheat in a pan until boiling, adding a splash of water as it thickens. Batter: fridge for 3-4 days (it gets more sour each day; use older batter for dosa or uttapam). Can be frozen for up to 1 month; thaw in the fridge and stir.",
+  "leftoverRemix": "turn leftover idlis into idli upma or masala fried idli. Cut them into cubes, toss in a pan with a mustard-curry leaf tempering, onion, a pinch of turmeric and a sprinkle of podi or sambar powder, and finish with lemon and coriander. Leftover sambar can be poured over the cubes for \"sambar idli bites\".",
+  "burnOff": "about 5.6 km of running (70 kg adult, about 70 kcal per km), or about 7.8 km of brisk walking (est., about 50 kcal per km). With 2 tbsp coconut chutney (about 475 kcal): about 6.8 km running or about 9.5 km walking (est.).",
   "sources": [
     "Cook with Manali: Idli recipe (batter ratio and soft-idli tips): https://cookwithmanali.com/idli-recipe",
     "Spice Up The Curry: Idli recipe (batter ratio and tips): https://www.spiceupthecurry.com/idli-recipe/",
@@ -616,7 +726,18 @@
     "Chitra's Food Book: Tiffin sambar: https://chitrasfoodbook.com/idli-sambar-recipe-how-to-make-tiffin/",
     "Nutrition: IFCT 2017, National Institute of Nutrition (ICMR-NIN), https://www.nin.res.in ; USDA FoodData Central, https://fdc.nal.usda.gov ; cross-check: FatSecret, Idli: https://www.fatsecret.co.nz/calories-nutrition/generic/idli",
     "Rating and sentiment: Deccan Herald, \"Indians ordered 3.3 cr plates of idli on Swiggy\": https://deccanherald.com/india/indians-ordered-33-cr-plates-of-idli-on-swiggy-in-last-one-year-1205080.html ; Outlook Business: https://www.outlookbusiness.com/news/hyderabad-based-swiggy-user-spent-rs-6-lakh-on-idlis-in-last-12-months-news-274704 ; The Infatuation, Cafe Madras: https://www.theinfatuation.com/mumbai/reviews/cafe-madras ; Table Journey, Cafe Madras: https://tablejourney.com/india/mumbai/restaurants/cafe-madras/ ; LBB, Udipi Idli House Matunga: https://lbb.in/delhi/udipi-idli-house ; Curly Tales, best South Indian restaurants in Mumbai: https://curlytales.com/best-south-indian-restaurants-in-mumbai-you-have-to-try-once/amp/",
-    "Prices: Swiggy, Naadbramha Idli Kopar Khairane: https://www.swiggy.com/restaurants/naadbramha-idli-kopar-khairane-vashi-mumbai-493651 ; Swiggy, Best Idli Sambar Restaurants in Mumbai (Dwaraka, Hotel Shreedevi, Suruchi Veg Restaurant): https://www.swiggy.com/city/mumbai/idli-sambar-dish-restaurants ; Swiggy, Sadguru Pure Veg Goregaon West: https://www.swiggy.com/city/mumbai/sadguru-pure-veg-goregaon-west-rest149861 ; Swiggy, Dabba Garam Thane: https://www.swiggy.com/city/mumbai/dabba-garam-homestyle-combo-thali-and-more--thane-hiranandani-estate-rest228368 ; Zomato, Chembur Fast Food: https://www.zomato.com/mumbai/chembur-fast-food-chembur/order ; Zomato, Mr Idli Kalyan: https://www.zomato.com/mumbai/mr-idli-2-kalyan-thane/order ; magicpin/Anna Idli (no price): https://yappe.in/maharashtra/mumbai/anna-idli/274619 ; Madras Diaries platter (not used): https://magicpin.com/blog/best-platters-under-700-mumbai"
+    "Prices: Swiggy, Naadbramha Idli Kopar Khairane: https://www.swiggy.com/restaurants/naadbramha-idli-kopar-khairane-vashi-mumbai-493651 ; Swiggy, Best Idli Sambar Restaurants in Mumbai (Dwaraka, Hotel Shreedevi, Suruchi Veg Restaurant): https://www.swiggy.com/city/mumbai/idli-sambar-dish-restaurants ; Swiggy, Sadguru Pure Veg Goregaon West: https://www.swiggy.com/city/mumbai/sadguru-pure-veg-goregaon-west-rest149861 ; Swiggy, Dabba Garam Thane: https://www.swiggy.com/city/mumbai/dabba-garam-homestyle-combo-thali-and-more--thane-hiranandani-estate-rest228368 ; Zomato, Chembur Fast Food: https://www.zomato.com/mumbai/chembur-fast-food-chembur/order ; Zomato, Mr Idli Kalyan: https://www.zomato.com/mumbai/mr-idli-2-kalyan-thane/order ; magicpin/Anna Idli (no price): https://yappe.in/maharashtra/mumbai/anna-idli/274619 ; Madras Diaries platter (not used): https://magicpin.com/blog/best-platters-under-700-mumbai",
+    "Hebbar's Kitchen: Soft idli recipe: https://hebbarskitchen.com/?p=189668",
+    "Sailu's Food: Idli recipe: https://sailusfood.com/?p=15010",
+    "Veg Recipes of India: Soft idli recipe: https://www.vegrecipesofindia.com/idli-recipe-how-to-make-soft-idlis/comment-page-1",
+    "Hebbar's Kitchen: Hotel-style tiffin sambar: https://hebbarskitchen.com/tiffin-sambar-recipe-hotel-style/",
+    "Shweta in the Kitchen: Idli sambar: https://shwetainthekitchen.com/idli-sambar-recipe-tiffin-sambar/",
+    "Subbu's Kitchen: Hotel-style tiffin sambar: https://www.subbuskitchen.com/wprm_print/hotel-style-tiffin-sambar-idli-dosa-sambar-recipe",
+    "Sharmis Passions: Hotel-style tiffin sambar: https://www.sharmispassions.com/hotel-style-tiffin-sambar-recipe-sidedish-for-idlidosa/",
+    "Nutrition: IFCT 2017, ICMR-NIN, https://www.nin.res.in ; USDA FoodData Central, https://fdc.nal.usda.gov ; comparison: Arise, https://www.arise-app.com/dish/Idli-with-Sambar-and-Chutney ; Tarla Dalal, https://www.tarladalal.com/calories-for-sambar--sambhar-idlis-and-dosas-1663",
+    "Rating and sentiment: Outlook Business, Swiggy idli orders: https://www.outlookbusiness.com/news/hyderabad-based-swiggy-user-spent-rs-6-lakh-on-idlis-in-last-12-months-news-274704 ; The Infatuation, Cafe Madras: https://www.theinfatuation.com/mumbai/reviews/cafe-madras ; LBB, best idlis in Mumbai: https://lbb.in/mumbai/best-idlis-in-mumbai ; Homegrown, Matunga food guide: https://homegrown.co.in/article/40134/the-ultimate-matunga-food-guide-11-best-south-indian-restaurants-what-to-eat-at-each ; Culture Trip, Matunga South Indian: https://theculturetrip.com/asia/india/articles/the-6-best-south-indian-eateries-of-matunga ; Curly Tales: https://curlytales.com/south-indian-breakfast-joints-you-need-to-try-in-mumbai-under-%e2%82%b9500/amp/",
+    "Prices: Swiggy, Amma Snacks and Caterers Mahim: https://www.swiggy.com/restaurants/amma-snacks-and-caterers-mahim-dadar-mumbai-880106 ; Swiggy, Mini Madras: https://www.swiggy.com/restaurants/mini-madras-borivali-malad-kandivali-west-mumbai-887121 ; Swiggy, Taste by Ruchira Virar: https://swiggy.com/city/mumbai/taste-by-ruchira-virar-rest1021874 ; Swiggy, JK Cafe Ambarnath: https://www.swiggy.com/city/mumbai/jk-cafe-ambarnath-rest1353633 ; Swiggy, Santosham Panchpakhadi (2-idli portion): https://www.swiggy.com/city/mumbai/santosham-l-b-s-road-thane-panchpakhadi-rest752648 ; Zomato, Cafe IDlish Khar: https://www.zomato.com/mumbai/cafe-idlish-idli-dosa-relish-khar/order ; Zomato, Santosham Naupada: https://www.zomato.com/id/mumbai/santosham-station-naupada-thane-west-thane/order ; magicpin, Madras Curd Rice Company Fort: https://magicpin.in/Mumbai/Fort/Restaurant/Madras-Curd-Rice-Company/store/17539c5/delivery ; not used: Zomato, Mr Idli Malad West: https://www.zomato.com/mumbai/mr-idli-malad-west/order ; Swiggy, Celebrations 365: https://www.swiggy.com/restaurants/celebrations-365-near-chetna-college-bandra-east-mumbai-25001",
+    "Image: Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Idli_Sambar-Noida-UP-SP004.jpg (author and licence read from the page)"
   ],
   "allergens": [
     "peanut",
@@ -624,36 +745,113 @@
     "sesame",
     "mustard"
   ],
-  "dietClaims": [],
-  "fasting": null,
-  "dietTags": null,
+  "dietClaims": [
+    "vegan",
+    "dairyFree"
+  ],
+  "fasting": {
+    "navratri": {
+      "status": "no",
+      "reason": "rice, urad dal, toor dal and shallots are not eaten on the common vrat rule set (grains and pulses avoided, assumption used)"
+    },
+    "ekadashi": {
+      "status": "no",
+      "reason": "rice and pulses are avoided on Ekadashi in the common rule set (assumption used)"
+    },
+    "jain": {
+      "status": null,
+      "reason": "drop shallots and carrot (roots) and use pumpkin and drumstick; no potato, ginger root or garlic is in the recipe (Jain variant below)"
+    },
+    "ramadan": {
+      "status": "yes",
+      "reason": "vegetarian, so no halal-meat issue; light and easy to digest, but carb-heavy with modest protein, so add extra dal in the sambar for sehri"
+    }
+  },
+  "dietTags": {
+    "base": "Vegetarian",
+    "jain": {
+      "status": "with-changes",
+      "reason": "drop the 25 g shallots (onion family) and the 25 g carrot (root vegetable); use extra pumpkin and drumstick instead (see Jain variant); the batter itself has no root vegetable"
+    },
+    "vegan": {
+      "status": "yes",
+      "reason": "rice, urad dal, dals, vegetables, oil and spices only; restaurant ghee idli or ghee in the tadka is not vegan, so ask for oil"
+    },
+    "pescatarian": {
+      "status": "yes",
+      "reason": "vegetarian recipe with no meat, fish or egg"
+    },
+    "sattvik": {
+      "status": "with-changes",
+      "reason": "skip the shallots in the sambar (no garlic is used); the idli itself has none"
+    },
+    "glutenFree": {
+      "status": "with-changes",
+      "reason": "idli batter is rice and urad dal; skip the pinch of hing (most Indian hing is compounded with wheat flour) or use gluten-free hing, and check that the sambar powder has no wheat filler"
+    },
+    "dairyFree": {
+      "status": "yes",
+      "reason": "no milk, curd, butter or ghee in the recipe; coconut chutney is dairy-free but ghee or podi-ghee idli is not"
+    },
+    "allergensDeclared": [
+      "peanut",
+      "mustard",
+      "sesame",
+      "gluten"
+    ]
+  },
   "tags": [
     "Veg",
+    "Vegan",
+    "Dairy-free",
+    "Ramadan sehri / iftar",
     "Contains peanut",
     "Contains gluten",
     "Contains sesame",
     "Contains mustard",
     "Breakfast",
+    "Dinner",
     "South Indian",
     "Under 60 min",
     "Intermediate",
     "High fibre"
   ],
-  "description": null,
+  "description": "Family: idli",
   "familyId": null,
-  "variants": [],
+  "variants": [
+    {
+      "category": "Vegan",
+      "status": "already-fits",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": "Main recipe already vegan (oil only; restaurant ghee idli and ghee tadka are not vegan, so ask for oil)."
+    },
+    {
+      "category": "Dairy-free",
+      "status": "already-fits",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": "Main recipe already dairy-free."
+    }
+  ],
   "needsReview": [
-    "price not confirmed (2026-10-05): only 1 platform (Swiggy) backs the range"
+    "Jain \"with-changes\" but the recipe keeps onion and the line doesn't say to skip it"
   ],
   "versions": [
     {
       "date": "2026-10-05",
       "file": "FitPlate_Dishes_2026-10-05.md"
+    },
+    {
+      "date": "2026-11-03",
+      "file": "FitPlate_Dishes_2026-11-03.md"
     }
   ],
   "mergeMethod": {
-    "nutritionPerServing": "stable (single)",
-    "orderPrice": "price engine (single)",
+    "nutritionPerServing": "stable (mean-2)",
+    "orderPrice": "price engine (wma)",
     "ingredients": "newest",
     "steps": "newest",
     "healthiness": "newest",
@@ -663,8 +861,8 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 70.0–100.0 was wider than 30% of avg 76.0; narrowed to ±15%.",
-    "range clamped to observed prices: 60–90 → 70–90",
-    "2026-10-05: hing: compounded hing usually contains wheat flour"
+    "Range 63.4–133.1 was wider than 30% of avg 90.6; narrowed to ±15%.",
+    "2026-10-05: hing: compounded hing usually contains wheat flour",
+    "2026-11-03: hing: compounded hing usually contains wheat flour"
   ]
 }

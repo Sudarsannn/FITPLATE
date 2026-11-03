@@ -5,6 +5,7 @@ import { Alert, Modal, Platform, Pressable, ScrollView, Share, StyleSheet, Text,
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { Checkbox, k, Loading, Notice, Radio, SampleBanner, ScreenTop, ZeptoCircle } from '../components/vendors/kit';
+import { featureFlags } from '../config/featureFlags';
 import { Bar, Chip, GradientButton, PressableScale } from '../components/ui';
 import { getDish, getIngredient } from '../data/research';
 import { select, success } from '../lib/haptics';
@@ -381,6 +382,25 @@ export default function BasketScreen() {
                   <View style={{ flex: 1 }}>
                     <Text style={k.strong}>Swiggy Instamart</Text>
                     <Text style={k.muted}>Whole basket in one go. Check the bill, then pay by UPI or cash.</Text>
+                  </View>
+                  <Ionicons name="chevron-forward" size={18} color={colors.muted} />
+                </PressableScale>
+              ) : null}
+              {featureFlags.vendorCheckout ? (
+                <PressableScale
+                  style={s.vendor}
+                  onPress={() => {
+                    setSheet(null);
+                    const id = listId ?? store.saveShoppingList(list);
+                    setTimeout(() => router.push({ pathname: '/checkout/confirm', params: { list: id, vendor: 'zepto' } }), Platform.OS === 'ios' ? 450 : 0);
+                  }}
+                >
+                  <View style={[s.logo, { backgroundColor: '#5B1E9E' }]}>
+                    <Text style={s.logoText}>Z</Text>
+                  </View>
+                  <View style={{ flex: 1 }}>
+                    <Text style={k.strong}>Check and send to Zepto</Text>
+                    <Text style={k.muted}>See the items and an estimated total first. You pay in Zepto.</Text>
                   </View>
                   <Ionicons name="chevron-forward" size={18} color={colors.muted} />
                 </PressableScale>

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 import type { VendorListing } from '../../models/research';
@@ -9,8 +10,9 @@ import { VendorLogo } from './VendorLogos';
 
 /** Shopping list: what each vendor was seen charging for this ingredient. Tap a logo to search it there. Flag `vendorLinks`. */
 export function VendorCompare({ name, listings }: { name: string; listings?: VendorListing[] }) {
+  const [now] = useState(() => Date.now());
   if (!featureFlags.vendorLinks) return null;
-  const rows = vendorRows(listings, name, featureFlags.vendorBlinkit);
+  const rows = vendorRows(listings, name, featureFlags.vendorBlinkit, now);
   const best = cheapestVendor(rows);
   return (
     <View style={s.box} testID="vendor-compare">

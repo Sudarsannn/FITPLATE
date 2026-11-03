@@ -64,3 +64,13 @@ describe('bundled ingredient data', () => {
     expect(Array.isArray(milk?.vendorListings ?? [])).toBe(true);
   });
 });
+
+describe('stale sightings', () => {
+  const l = [{ vendor: 'zepto' as const, product: null, pack: '1 L', priceMinInr: 60, priceMaxInr: 60, observedOn: '2026-10-01' }];
+  it('flags a sighting older than 14 days, but not without a clock or when fresh', () => {
+    const day = Date.UTC(2026, 10, 3);
+    expect(vendorRows(l, 'milk', false, day)[0].seenLabel).toMatch(/over 14 days old/);
+    expect(vendorRows(l, 'milk', false, Date.UTC(2026, 9, 10))[0].seenLabel).not.toMatch(/old/);
+    expect(vendorRows(l, 'milk', false)[0].seenLabel).not.toMatch(/old/);
+  });
+});

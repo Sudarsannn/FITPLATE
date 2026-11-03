@@ -27,7 +27,11 @@ const fmtDate = (iso: string) => {
 export const priceLabel = (l: VendorListing) =>
   `${l.priceMinInr === l.priceMaxInr ? `₹${l.priceMinInr}` : `₹${l.priceMinInr} to ₹${l.priceMaxInr}`}${l.pack ? ` for ${l.pack}` : ''}`;
 
-export function vendorRows(listings: VendorListing[] | undefined, query: string, showBlinkit: boolean): VendorRow[] {
+/** Day 15 innovation: a sighting older than this many days is flagged as possibly out of date. */
+export const STALE_DAYS = 14;
+export const sightingAgeDays = (iso: string, nowMs: number) => Math.floor((nowMs - new Date(`${iso}T00:00:00Z`).getTime()) / 86_400_000);
+
+export function vendorRows(listings: VendorListing[] | undefined, query: string, showBlinkit: boolean, nowMs: number | null = null): VendorRow[] {
   const vendors: VendorKey[] = showBlinkit ? ['zepto', 'instamart', 'blinkit'] : ['zepto', 'instamart'];
   return vendors.map((vendor) => {
     const mine = (listings ?? []).filter((l) => l.vendor === vendor);
@@ -38,7 +42,7 @@ export function vendorRows(listings: VendorListing[] | undefined, query: string,
       name: NAME[vendor],
       cheapest,
       priceLabel: cheapest ? priceLabel(cheapest) : 'no listing seen',
-      seenLabel: cheapest ? `seen ${fmtDate(cheapest.observedOn)}, not live` : null,
+      seenLabel: cheapest ? `seen ${fmtDate(cheapest.observedOn)}, not live${nowMs != null && sightingAgeDays(cheapest.observedOn, nowMs) > STALE_DAYS ? `, over ${STALE_DAYS} days old` : ''}` : null,
       url,
     };
   });

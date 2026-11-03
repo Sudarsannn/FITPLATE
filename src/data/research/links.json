@@ -1,6 +1,6 @@
 {
   "schema": "fitplate.links.v1",
-  "generatedFor": "Day15G1",
+  "generatedFor": "Day15G2",
   "goodSourceDishes": {
     "biotin": [
       {
@@ -2048,6 +2048,28 @@
         "source": "ingredient research (USDA FDC: FDC ID 169251 (NDB 11260) Mushrooms, white, raw (SR Legacy), via secondary sites (recipal.com label, fitnessvolt.com, triagemethod.com))"
       }
     },
+    "cabbage": {
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169975 'Cabbage, raw'; macros seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169975 'Cabbage, raw'; macros seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-c": {
+        "per100": 33.3,
+        "unit": "mg",
+        "source": "nutrient research (vitamin-c food sources)"
+      },
+      "vitamin-k": {
+        "per100": 113,
+        "unit": "µg",
+        "source": "nutrient research (vitamin-k food sources)"
+      }
+    },
     "carrot": {
       "iron": {
         "per100": 0.3,
@@ -2479,6 +2501,23 @@
         "source": "ingredient research (USDA FDC: Mixed secondary listings of USDA chicken thigh raw entries (FDC 171477 family); not one entry; zero by composition: carbohydrate_g, sugars_g, fibre_g)"
       }
     },
+    "chickpeas-dried": {
+      "sodium": {
+        "per100": 24,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 173756 'Chickpeas (garbanzo beans, bengal gram), mature seeds, raw' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 173756 'Chickpeas (garbanzo beans, bengal gram), mature seeds, raw' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 173756 'Chickpeas (garbanzo beans, bengal gram), mature seeds, raw' via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
     "chocolate-syrup": {
       "cholesterol": {
         "per100": 0,
@@ -2489,6 +2528,18 @@
         "per100": 0,
         "unit": "µg",
         "source": "ingredient research (USDA FDC: USDA FDC Branded entry for Hershey's chocolate syrup (ID not seen), values via a secondary page; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
+    "chole-masala": {
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (Other: Nilon's Chhole Masala label values via thedesifood.com: Nilon's Chhole Masala label per 100 g via https://thedesifood.com/products/nilons-chhole-masala; brands vary widely; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (Other: Nilon's Chhole Masala label values via thedesifood.com: Nilon's Chhole Masala label per 100 g via https://thedesifood.com/products/nilons-chhole-masala; brands vary widely; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
     "cinnamon-cassia": {
@@ -4142,6 +4193,28 @@
         "source": "ingredient research (USDA FDC: FDC ID 175043 Leavening agents, yeast, baker's, active dry (SR Legacy), via Wikipedia Baker's yeast nutrition table and getfoodfacts.com; zero by composition: cholesterol_mg)"
       }
     },
+    "jaggery": {
+      "iron": {
+        "per100": 11,
+        "unit": "mg",
+        "source": "ingredient research (Other: secondary sites quoting IFCT 2017: Foodnutrify jaggery calculator (quoting IFCT 2017 for iron); calcium about 80 mg from Medical News Today; no direct IFCT or USDA entry opened; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "calcium": {
+        "per100": 80,
+        "unit": "mg",
+        "source": "ingredient research (Other: secondary sites quoting IFCT 2017: Foodnutrify jaggery calculator (quoting IFCT 2017 for iron); calcium about 80 mg from Medical News Today; no direct IFCT or USDA entry opened; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (Other: secondary sites quoting IFCT 2017: Foodnutrify jaggery calculator (quoting IFCT 2017 for iron); calcium about 80 mg from Medical News Today; no direct IFCT or USDA entry opened; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (Other: secondary sites quoting IFCT 2017: Foodnutrify jaggery calculator (quoting IFCT 2017 for iron); calcium about 80 mg from Medical News Today; no direct IFCT or USDA entry opened; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
     "kashmiri-red-chilli-powder": {
       "cholesterol": {
         "per100": 0,
@@ -4912,6 +4985,23 @@
         "source": "ingredient research (USDA FDC: USDA FDC 173912 'Cereals ready-to-eat, rice, puffed, fortified' seen via FatSecret and recipal mirrors; used as a proxy for plain murmura; iron left out because the 31.7 mg shown is from fortification; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
+    "pumpkin-red-yellow": {
+      "sodium": {
+        "per100": 1,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 168448 'Pumpkin, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 168448 'Pumpkin, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 168448 'Pumpkin, raw'; values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
     "raisins-green-golden": {
       "iron": {
         "per100": 1.79,
@@ -5473,6 +5563,68 @@
         "source": "ingredient research (USDA FDC: USDA FDC 168878 'Rice, white, long-grain, regular, raw, unenriched' via triagemethod and recipal mirrors, used as a proxy for seeraga samba (no seeraga samba entry found); zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
+    "semolina": {
+      "iron": {
+        "per100": 4.36,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA 'Semolina, enriched' (mirror id 169715, not confirmed) seen via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "calcium": {
+        "per100": 17,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA 'Semolina, enriched' (mirror id 169715, not confirmed) seen via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "potassium": {
+        "per100": 186,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA 'Semolina, enriched' (mirror id 169715, not confirmed) seen via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "magnesium": {
+        "per100": 47,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA 'Semolina, enriched' (mirror id 169715, not confirmed) seen via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "zinc": {
+        "per100": 1.05,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA 'Semolina, enriched' (mirror id 169715, not confirmed) seen via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "folate": {
+        "per100": 261,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA 'Semolina, enriched' (mirror id 169715, not confirmed) seen via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA 'Semolina, enriched' (mirror id 169715, not confirmed) seen via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "phosphorus": {
+        "per100": 136,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA 'Semolina, enriched' (mirror id 169715, not confirmed) seen via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "selenium": {
+        "per100": 89.4,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA 'Semolina, enriched' (mirror id 169715, not confirmed) seen via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "thiamine": {
+        "per100": 0.811,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA 'Semolina, enriched' (mirror id 169715, not confirmed) seen via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "niacin": {
+        "per100": 5.99,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA 'Semolina, enriched' (mirror id 169715, not confirmed) seen via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA 'Semolina, enriched' (mirror id 169715, not confirmed) seen via secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
     "sesame-oil-gingelly-til-oil-everyday-grade": {
       "cholesterol": {
         "per100": 0,
@@ -5787,6 +5939,18 @@
         "per100": 1,
         "unit": "mg",
         "source": "ingredient research (USDA FDC: USDA FDC 169655 'Sugars, granulated' (SR Legacy); values seen only on secondary mirrors; zero by composition: protein_g, fat_g, fibre_g)"
+      }
+    },
+    "tamarind": {
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 167763 'Tamarinds, raw' (also listed as FDC 2709269 'Tamarind' survey entry); values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 167763 'Tamarinds, raw' (also listed as FDC 2709269 'Tamarind' survey entry); values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
     "tamarind-date-chutney-ready-made": {
@@ -6297,18 +6461,6 @@
         "per100": 0.25,
         "unit": "mg",
         "source": "nutrient research (vitamin-b6 food sources)"
-      }
-    },
-    "cabbage": {
-      "vitamin-c": {
-        "per100": 33.3,
-        "unit": "mg",
-        "source": "nutrient research (vitamin-c food sources)"
-      },
-      "vitamin-k": {
-        "per100": 113,
-        "unit": "µg",
-        "source": "nutrient research (vitamin-k food sources)"
       }
     }
   }

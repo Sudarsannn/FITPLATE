@@ -78,7 +78,7 @@
     },
     {
       "ingredientId": "cooking-oil-refined-sunflower-groundnut",
-      "name": "Vegetable oil (for searing)",
+      "name": "Sunflower oil (for searing)",
       "quantity": 5,
       "unit": "ml",
       "householdMeasure": "1 tsp"
@@ -186,7 +186,7 @@
       "name": "Fresh cream (Amul fresh cream, ~25% fat)",
       "quantity": 20,
       "unit": "ml",
-      "householdMeasure": "1 heaped tbsp (about 1⅓ tbsp)"
+      "householdMeasure": "1 heaped tbsp"
     },
     {
       "ingredientId": null,
@@ -208,22 +208,23 @@
     "Heavy non-stick pan or tawa for searing the chicken",
     "Kadai or heavy-bottomed pan (about 20 cm) for the gravy",
     "Mixer-grinder with small chutney jar",
-    "Small bowl for soaking cashews (hot water from a kettle or a small pan)",
+    "Small bowl for soaking cashews (hot water from a kettle or small pan)",
     "Chopping board and knife",
-    "Spatula / wooden spoon, and tongs or a fork for turning chicken",
-    "Measuring spoons (or use a regular teaspoon: 1 level tsp ≈ 5 ml)",
-    "Optional sieve, for a silky restaurant-smooth gravy"
+    "Spatula or wooden spoon, and tongs or a fork for turning chicken",
+    "Measuring spoons (or a regular teaspoon: 1 level tsp is about 5 ml)",
+    "Optional sieve for a silky restaurant-smooth gravy"
   ],
   "steps": [
     {
       "n": 1,
       "title": "Cut the chicken",
-      "text": "Cut 150 g boneless chicken thigh into 6–8 bite-size pieces (about 3 cm) and trim off any big bits of fat.",
+      "text": "Cut 150 g boneless chicken thigh into 6–8 pieces of about 3 cm and trim off big fat bits.",
       "timerSec": 180,
-      "tip": "wash your hands, knife and board with soap straight after handling raw chicken.",
+      "tip": "wash hands, knife and board with soap straight after handling raw chicken.",
       "visualCue": "even-size pieces, no large white fat strips",
       "cameraCheck": "chicken pieces on the board",
-      "videoShot": "knife slicing thigh into chunks"
+      "videoShot": "knife slicing thigh into chunks",
+      "watchOut": "uneven pieces, where small ones overcook while big ones stay pink; cut them as close to the same size as you can."
     },
     {
       "n": 2,
@@ -233,17 +234,19 @@
       "tip": null,
       "visualCue": "every piece coated red",
       "cameraCheck": "bowl of coated chicken",
-      "videoShot": "spoon tossing chicken in red spice"
+      "videoShot": "spoon tossing chicken in red spice",
+      "watchOut": "pale patches where no spice reached; toss again until none are left."
     },
     {
       "n": 3,
       "title": "Second marinade",
       "text": "Add 2 tbsp (30 g) thick curd, 1 tsp ginger-garlic paste, a pinch of turmeric and ¼ tsp garam masala. Mix until every piece is covered.",
       "timerSec": 60,
-      "tip": "if your curd is watery, hang it in a cloth or sieve for 15 min first. Watery curd makes the chicken steam instead of brown.",
+      "tip": null,
       "visualCue": "thick, pale-orange coating clinging to the chicken, not runny",
       "cameraCheck": "bowl of marinated chicken",
-      "videoShot": "curd folded through the chicken"
+      "videoShot": "curd folded through the chicken",
+      "watchOut": "watery curd, which makes a thin liquid pooling in the bowl and chicken that steams instead of browning; hang the curd in a cloth or sieve for 15 min first."
     },
     {
       "n": 4,
@@ -251,9 +254,10 @@
       "text": "Cover the bowl and leave it in the fridge.",
       "timerSec": 1800,
       "tip": null,
-      "visualCue": "covered bowl in the fridge",
+      "visualCue": "covered bowl on the fridge shelf",
       "cameraCheck": "covered bowl",
-      "videoShot": "bowl covered and placed on the fridge shelf"
+      "videoShot": "bowl covered and placed on the fridge shelf",
+      "watchOut": "leaving it on the counter, where raw chicken warms up unsafely; keep it cold the whole time."
     },
     {
       "n": 5,
@@ -263,7 +267,8 @@
       "tip": null,
       "visualCue": "cashews look slightly swollen and softer",
       "cameraCheck": "bowl of cashews submerged in water",
-      "videoShot": "hot water poured over cashews in a steel katori"
+      "videoShot": "hot water poured over cashews in a steel katori",
+      "watchOut": "throwing away the soaking water; you need it in step 21."
     },
     {
       "n": 6,
@@ -271,9 +276,10 @@
       "text": "Roughly chop 40 g (½ small) onion.",
       "timerSec": 60,
       "tip": null,
-      "visualCue": "rough 2 cm pieces; size doesn't matter, it all gets blended",
+      "visualCue": "rough 2 cm pieces; size does not matter because it all gets blended",
       "cameraCheck": "chopped onion on the board",
-      "videoShot": "knife cutting onion into chunks"
+      "videoShot": "knife cutting onion into chunks",
+      "watchOut": "tears and slipping; keep the cut side down on the board so the onion does not roll."
     },
     {
       "n": 7,
@@ -281,9 +287,10 @@
       "text": "Roughly chop 150 g (2 medium) tomatoes, removing the hard stem point.",
       "timerSec": 120,
       "tip": null,
-      "visualCue": "juicy chunks",
+      "visualCue": "juicy red chunks",
       "cameraCheck": "chopped tomatoes on the board",
-      "videoShot": "tomatoes quartered and chopped"
+      "videoShot": "tomatoes quartered and chopped",
+      "watchOut": "hard green stem bits, which stay woody after blending; cut them out."
     },
     {
       "n": 8,
@@ -293,7 +300,8 @@
       "tip": null,
       "visualCue": "separate heaps of whole and ground spices",
       "cameraCheck": "spice plate",
-      "videoShot": "spoon placing each spice on the plate"
+      "videoShot": "spoon placing each spice on the plate",
+      "watchOut": "looking for a spice with the pan already hot; once cooking starts there is no time to measure."
     },
     {
       "n": 9,
@@ -303,17 +311,19 @@
       "tip": null,
       "visualCue": "oil shimmers and flows freely",
       "cameraCheck": "the pan with oil",
-      "videoShot": "oil spreading across the hot pan"
+      "videoShot": "oil spreading across the hot pan",
+      "watchOut": "smoking oil, which means the pan is too hot; lower the heat for a moment."
     },
     {
       "n": 10,
       "title": "Lay in the chicken",
-      "text": "Place the chicken pieces in a single layer with space between them. Don't stir.",
+      "text": "Place the chicken pieces in a single layer with space between them. Do not stir.",
       "timerSec": 30,
-      "tip": "crowding the pan makes the chicken boil in its juices. Use a bigger pan if the pieces touch.",
+      "tip": null,
       "visualCue": "loud sizzle as each piece goes in",
       "cameraCheck": "the pan with chicken spread out",
-      "videoShot": "chicken pieces placed one by one, sizzling"
+      "videoShot": "chicken pieces placed one by one, sizzling",
+      "watchOut": "crowding, where the pieces touch and the chicken boils in its juices; use a bigger pan or sear in two rounds."
     },
     {
       "n": 11,
@@ -323,17 +333,19 @@
       "tip": null,
       "visualCue": "underside is golden-brown with a few dark charred spots; pieces release easily from the pan",
       "cameraCheck": "one piece lifted to show the browned side",
-      "videoShot": "tongs lifting a piece to show the char"
+      "videoShot": "tongs lifting a piece to show the char",
+      "watchOut": "tugging a piece that sticks; it is not ready, so wait another 30 seconds and it will let go."
     },
     {
       "n": 12,
       "title": "Sear the second side",
       "text": "Turn each piece over and cook.",
       "timerSec": 180,
-      "tip": "it will cook a little more in the gravy, so stop as soon as there is no pink.",
+      "tip": null,
       "visualCue": "both sides browned; the inside is white with no pink when you cut the thickest piece",
       "cameraCheck": "one piece cut open showing white meat",
-      "videoShot": "knife cutting a seared piece in half"
+      "videoShot": "knife cutting a seared piece in half",
+      "watchOut": "cooking until dry and hard; stop at the first sign of no pink because the chicken finishes cooking in the gravy."
     },
     {
       "n": 13,
@@ -343,7 +355,8 @@
       "tip": null,
       "visualCue": "plate of charred, orange-red chicken",
       "cameraCheck": "the plate of chicken",
-      "videoShot": "chicken tipped onto a steel plate"
+      "videoShot": "chicken tipped onto a steel plate",
+      "watchOut": "leaving the browned bits stuck to the pan, as they carry a lot of flavour."
     },
     {
       "n": 14,
@@ -353,7 +366,8 @@
       "tip": null,
       "visualCue": "butter melted and foaming gently, not brown",
       "cameraCheck": "the pan with melted butter",
-      "videoShot": "butter melting and foaming"
+      "videoShot": "butter melting and foaming",
+      "watchOut": "brown specks or a burnt smell, which mean the heat is too high; lower it before adding anything."
     },
     {
       "n": 15,
@@ -363,7 +377,8 @@
       "tip": null,
       "visualCue": "spices sizzle; cloves puff slightly; warm, sweet smell",
       "cameraCheck": "the pan",
-      "videoShot": "whole spices sizzling in butter"
+      "videoShot": "whole spices sizzling in butter",
+      "watchOut": "blackening spices, which turn bitter; move on to the onion straight away."
     },
     {
       "n": 16,
@@ -373,7 +388,8 @@
       "tip": null,
       "visualCue": "onion soft and translucent at the edges, not brown",
       "cameraCheck": "the pan",
-      "videoShot": "onion stirred in foaming butter"
+      "videoShot": "onion stirred in foaming butter",
+      "watchOut": "browning, which darkens the gravy and loses the bright orange colour; lower the heat and splash 1 tbsp water."
     },
     {
       "n": 17,
@@ -383,7 +399,8 @@
       "tip": null,
       "visualCue": "raw garlic smell fades",
       "cameraCheck": "the pan",
-      "videoShot": "paste stirred into onions"
+      "videoShot": "paste stirred into onions",
+      "watchOut": "sticking and scorching; stir constantly and add a spoon of water if it grabs the pan."
     },
     {
       "n": 18,
@@ -393,7 +410,8 @@
       "tip": null,
       "visualCue": "pan full of tomato chunks with cashews mixed through",
       "cameraCheck": "the pan",
-      "videoShot": "tomatoes and cashews tipped in"
+      "videoShot": "tomatoes and cashews tipped in",
+      "watchOut": "pouring the soaking water down the sink; keep it in a cup."
     },
     {
       "n": 19,
@@ -403,37 +421,41 @@
       "tip": null,
       "visualCue": "tomatoes are completely mushy and break when pressed",
       "cameraCheck": "the pan, pressing a tomato with the spatula",
-      "videoShot": "spatula squashing soft tomato"
+      "videoShot": "spatula squashing soft tomato",
+      "watchOut": "firm tomato pieces, which leave a raw sour taste; cook until you can crush a piece with the spatula."
     },
     {
       "n": 20,
       "title": "Remove whole spices and cool",
       "text": "Turn off the heat. Pick out the cinnamon, cloves and cardamom, then tip the mixture onto a plate to cool.",
       "timerSec": 300,
-      "tip": "never blend piping-hot food in a closed jar. Steam can blow the lid off. Removing the whole spices first stops gritty bits in the gravy.",
+      "tip": null,
       "visualCue": "warm, no longer steaming hard",
       "cameraCheck": "the plate, with the whole spices set aside",
-      "videoShot": "tongs lifting out the cinnamon stick"
+      "videoShot": "tongs lifting out the cinnamon stick",
+      "watchOut": "blending while hot; steam can blow the lid off the jar. Leaving the whole spices in makes the gravy gritty."
     },
     {
       "n": 21,
       "title": "Blend",
       "text": "Put the mixture in the small mixer jar with the saved cashew water and blend until completely smooth.",
       "timerSec": 60,
-      "tip": "for a restaurant-silky gravy, push it through a sieve (optional).",
+      "tip": null,
       "visualCue": "smooth, bright orange-red purée with no cashew flecks",
       "cameraCheck": "inside of the jar",
-      "videoShot": "purée pouring off a spoon in a smooth ribbon"
+      "videoShot": "purée pouring off a spoon in a smooth ribbon",
+      "watchOut": "gritty bits from under-blending; rub a drop between your fingers and blend longer if it feels grainy (a sieve fixes it too)."
     },
     {
       "n": 22,
       "title": "Bloom the chilli",
-      "text": "Return the kadai to low heat (there will be a little butter left in it). Add ½ tsp Kashmiri chilli powder and stir.",
+      "text": "Return the kadai to low heat (a little butter is left in it). Add ½ tsp Kashmiri chilli powder and stir.",
       "timerSec": 10,
-      "tip": "keep the heat low and have the purée ready. Chilli powder burns in seconds.",
-      "visualCue": "the fat turns deep red; smells toasty, not burnt",
+      "tip": null,
+      "visualCue": "the fat turns deep red; smells toasty",
       "cameraCheck": "the pan",
-      "videoShot": "red chilli swirling in the butter"
+      "videoShot": "red chilli swirling in the butter",
+      "watchOut": "a sharp burnt smell, which means the chilli has scorched and will turn the gravy bitter; keep the heat low and have the purée ready."
     },
     {
       "n": 23,
@@ -443,7 +465,8 @@
       "tip": null,
       "visualCue": "sauce bubbles gently and spits a little",
       "cameraCheck": "the pan",
-      "videoShot": "purée poured into the red butter"
+      "videoShot": "purée poured into the red butter",
+      "watchOut": "splashes; stand back a little and keep the lid ready."
     },
     {
       "n": 24,
@@ -453,17 +476,19 @@
       "tip": null,
       "visualCue": "gravy darkens a shade, thickens, and small drops of fat appear at the edges",
       "cameraCheck": "the pan edge showing fat separating",
-      "videoShot": "thick gravy bubbling with shiny edges"
+      "videoShot": "thick gravy bubbling with shiny edges",
+      "watchOut": "a raw tomato taste if cut short; wait for the fat to show at the edges."
     },
     {
       "n": 25,
       "title": "Season and loosen",
-      "text": "Add the sugar and salt and about 60–70 ml water. Stir and bring to a gentle simmer.",
+      "text": "Add the sugar, salt and about 60–70 ml water. Stir and bring to a gentle simmer.",
       "timerSec": 120,
       "tip": null,
       "visualCue": "gravy coats the back of a spoon and drips slowly; taste is tangy, mildly sweet, mildly spicy",
       "cameraCheck": "the back of the spoon coated in gravy",
-      "videoShot": "finger line drawn through gravy on a spoon"
+      "videoShot": "finger line drawn through gravy on a spoon",
+      "watchOut": "too thin or too thick; add water 1 tbsp at a time because it thickens as it simmers."
     },
     {
       "n": 26,
@@ -473,17 +498,19 @@
       "tip": null,
       "visualCue": "every piece coated in orange gravy",
       "cameraCheck": "the pan",
-      "videoShot": "chicken folded into the gravy"
+      "videoShot": "chicken folded into the gravy",
+      "watchOut": "breaking the pieces with hard stirring; fold, do not mash."
     },
     {
       "n": 27,
       "title": "Simmer",
       "text": "Cover and simmer on low so the chicken soaks up the gravy.",
       "timerSec": 300,
-      "tip": "if it gets too thick, add 1–2 tbsp water. Don't boil hard or the chicken toughens.",
+      "tip": null,
       "visualCue": "gravy bubbles lazily; chicken is hot right through",
       "cameraCheck": "the pan",
-      "videoShot": "slow bubbles around the chicken pieces"
+      "videoShot": "slow bubbles around the chicken pieces",
+      "watchOut": "a hard boil, which toughens the chicken; if the gravy gets too thick, add 1–2 tbsp water."
     },
     {
       "n": 28,
@@ -493,7 +520,8 @@
       "tip": null,
       "visualCue": "aroma becomes noticeably \"restaurant-like\"",
       "cameraCheck": "the pan",
-      "videoShot": "kasuri methi crushed between palms"
+      "videoShot": "kasuri methi crushed between palms",
+      "watchOut": "adding it too early, as the aroma cooks off; add it at the end."
     },
     {
       "n": 29,
@@ -503,17 +531,19 @@
       "tip": null,
       "visualCue": "evenly mixed",
       "cameraCheck": "the pan",
-      "videoShot": "garam masala sprinkled over"
+      "videoShot": "garam masala sprinkled over",
+      "watchOut": "a heavy hand; more than a pinch makes the gravy taste bitter and dusty."
     },
     {
       "n": 30,
       "title": "Finish with cream",
       "text": "Turn the heat off. Swirl in 20 ml (1 heaped tbsp) fresh cream.",
       "timerSec": 30,
-      "tip": "adding cream with the heat off stops it splitting.",
+      "tip": null,
       "visualCue": "gravy turns a paler, glossy orange",
       "cameraCheck": "the pan",
-      "videoShot": "white cream swirled through orange gravy"
+      "videoShot": "white cream swirled through orange gravy",
+      "watchOut": "curdled white flecks, which mean the cream went into a boiling pan; always switch off the heat first."
     },
     {
       "n": 31,
@@ -523,7 +553,8 @@
       "tip": null,
       "visualCue": "glossy orange curry with charred chicken pieces showing",
       "cameraCheck": "the finished bowl",
-      "videoShot": "slow pan across the finished bowl"
+      "videoShot": "slow pan across the finished bowl",
+      "watchOut": "serving it piping hot straight from the pan; let it sit 1 minute so the gravy settles."
     }
   ],
   "nutritionPerServing": {
@@ -561,7 +592,66 @@
     "coveragePct": 74,
     "basis": "partial estimate from ingredient quantities"
   },
-  "asOrdered": null,
+  "asOrdered": {
+    "price": {
+      "priceHistory": [
+        {
+          "date": "2026-10-05",
+          "min": 490,
+          "max": 520,
+          "avg": 500,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-10-05.md"
+        }
+      ],
+      "currentEstimate": {
+        "min": 490,
+        "max": 520,
+        "avg": 500
+      },
+      "method": "single",
+      "trend": "unknown",
+      "change30dPct": null,
+      "lastObserved": "2026-10-05",
+      "stale": false,
+      "seasonal": false,
+      "listingCount": 3,
+      "platforms": [
+        "magicpin"
+      ],
+      "outOfStock": false,
+      "confirmed": false,
+      "checkNotes": [
+        "only 1 platform (magicpin) backs the range"
+      ]
+    },
+    "nutrition": {
+      "calories": {
+        "value": null,
+        "source": null
+      },
+      "protein": {
+        "value": null,
+        "source": null
+      },
+      "carbs": {
+        "value": null,
+        "source": null
+      },
+      "fat": {
+        "value": null,
+        "source": null
+      },
+      "fibre": {
+        "value": null,
+        "source": null
+      }
+    },
+    "restaurantsSampled": null,
+    "platforms": [
+      "Swiggy"
+    ]
+  },
   "orderPrice": {
     "priceHistory": [
       {
@@ -598,15 +688,15 @@
     "score": 7,
     "restaurantScore": 4,
     "reasons": [
-      "The home version is high in protein (~37 g) from lean-ish chicken thigh and curd. The chicken is pan-seared in 1 tsp oil, not deep-fried, and the fat is moderate (~30 g) from 10 g butter, 20 ml cream and 10 g cashews. The gravy is tomato-based with very little sugar. Restaurant butter chicken typically uses several times the butter and cream, more sugar and salt, sometimes food colour, and comes with a butter naan, so the same bowl can easily pass 700–900 kcal (est.)."
+      "The home version is high in protein (~37 g) from chicken thigh and curd. The chicken is pan-seared in 1 tsp oil, not deep-fried, and the fat is moderate (~30 g) from 10 g butter, 20 ml cream and 10 g cashews. Saturated fat (about 57% of the daily limit) and sodium (about 53%) are the weak spots. Restaurant butter chicken typically uses several times the butter and cream, more sugar and salt, sometimes food colour, and comes with a butter naan, so a bowl can easily pass 700–900 kcal (est.)."
     ]
   },
   "researchRating": {
     "score": 4.7,
-    "basis": "one of India's best-known and most-loved dishes worldwide, with top-rated home recipes and a legacy so valued that two Delhi restaurant families are in court over who invented it. The main criticism, which recurs online, is that restaurant versions can be too sweet, too creamy or artificially coloured."
+    "basis": "one of India's best-known and most-loved dishes worldwide, with home recipes rated 4.9 or higher across several sites, and a legacy so valued that two Delhi restaurant families went to court over who invented it. The recurring criticism is that restaurant versions can be too sweet, too creamy or artificially coloured. The rating is unchanged from the last version."
   },
   "storage": "Fridge-safe in an airtight container for up to 2 days (cool it within 1 hour of cooking). Freezer: up to 1 month (est.); the cream may separate slightly but comes back when you stir it while reheating. Reheating: gently on the stove on low with 2–3 tbsp water, stirring, until steaming hot right through. In the microwave, use 1-minute bursts and stir in between. Reheat only once.",
-  "leftoverRemix": "Butter chicken toastie (Bombay-style grilled sandwich). Shred the leftover chicken into the thickened gravy, spread it on buttered bread with grated cheese, sliced onion and a smear of green chutney, then grill on a tawa until crisp.",
+  "leftoverRemix": "Butter chicken toastie (Bombay-style grilled sandwich). Shred the leftover chicken into the thickened gravy, spread it on buttered bread with grated cheese, sliced onion and a smear of green chutney, then grill on a tawa until crisp (contains gluten from the bread).",
   "burnOff": "about 7 km of running (at ~70 kcal/km), or about 10 km of brisk walking (at ~50 kcal/km, est.).",
   "sources": [
     "Swasthi's Recipes (Indian Healthy Recipes), Butter Chicken (Chicken Makhani): https://www.indianhealthyrecipes.com/butter-chicken/",
@@ -635,17 +725,99 @@
     "Zomato, Mumbai butter chicken delivery dish page (only cost-for-one figures seen; not used): https://www.zomato.com/mumbai/delivery/dish-butter-chicken",
     "Nothing But Chicken, Borivali East, Zomato (combo seen; excluded): https://www.zomato.com/mumbai/nothing-but-chicken-borivali-east/order",
     "IFCT 2017, Indian Food Composition Tables (ICMR-NIN): https://www.nin.res.in/ebooks/IFCT2017.pdf",
-    "USDA FoodData Central: https://fdc.nal.usda.gov/"
+    "USDA FoodData Central: https://fdc.nal.usda.gov/",
+    "Swasthi's Recipes, Chicken Butter Masala (mirror page): https://indianhealthyrecipes.pages.dev/posts/chicken-butter-masala-recipe-swasthi-s-recipes",
+    "Swasthi's Recipes, Butter Chicken (earlier cycle): https://www.indianhealthyrecipes.com/butter-chicken/",
+    "My Food Story, Restaurant Style Butter Chicken Masala: https://myfoodstory.com/easy-restaurant-style-butter-chicken-masala-murgh-makhani/",
+    "Chili Pepper Madness, Butter Chicken (Murgh Makhani): https://www.chilipeppermadness.com/wprm_print/butter-chicken-recipe-aka-murgh-makhani",
+    "Cook With Kushi, Indian Butter Chicken: https://www.cookwithkushi.com/wprm_print/indian-butter-chicken-recipe-best-chicken-makhani",
+    "Ruchik Randhap, Butter Chicken Restaurant Style: https://www.ruchikrandhap.com/wprm_print/butter-chicken-restaurant-style",
+    "Slurrp, Butter Chicken (Murgh Makhani): https://www.slurrp.com/recipes/butter-chicken-murgh-makhani-indian-hotel-style-1617947986",
+    "America's Test Kitchen, Indian Butter Chicken: https://www.americastestkitchen.com/recipes/11519-indian-butter-chicken-murgh-makhani",
+    "Maggi India, Butter Chicken: https://www.maggi.in/recipes/butter-chicken/",
+    "The Quint, Restaurant-Style Butter Chicken Made Easy: https://thequint.com/lifestyle/food/restaurant-style-butter-chicken-made-easy",
+    "RecipeTin Eats (4.96 from 1,106 votes, cached copy): https://www.recipetineats.com/butter-chicken/",
+    "Chili Pepper Madness (4.94 from 86): https://www.chilipeppermadness.com/wprm_print/butter-chicken-recipe-aka-murgh-makhani",
+    "Cook With Kushi (5 from 74): https://www.cookwithkushi.com/wprm_print/indian-butter-chicken-recipe-best-chicken-makhani",
+    "Slurrp (4.3 from 30): https://www.slurrp.com/recipes/butter-chicken-murgh-makhani-indian-hotel-style-1617947986",
+    "The Week, Moti Mahal vs Daryaganj (January 2024): https://www.theweek.in/news/india/2024/01/20/moti-mahal-vs-daryaganj-legal-tussle-over-who-invented-dal-makhni-butter-chicken.html",
+    "Kathmandu Post, butter chicken battle new court evidence (May 2024): https://kathmandupost.com/world/2024/05/17/india-s-butter-chicken-battle-heats-up-with-new-court-evidence",
+    "Curly Tales, Swiggy Restaurant Awards 2025 coverage: https://curlytales.com/from-legendary-establishments-to-rising-stars-swiggy-crowns-the-nations-culinary-icons/amp/",
+    "Swiggy, Cafe Sunlight, Kurla West: https://www.swiggy.com/restaurants/cafe-sunlight-kurla-kurla-west-mumbai-162040",
+    "Swiggy, Sahara Hotel, Kurla: https://www.swiggy.com/restaurants/sahara-hotel-kurla-near-kalpana-cinema-kurla-mumbai-48030",
+    "Swiggy, Sawantwadi Lunch Home, Lower Parel: https://swiggy.com/city/mumbai/sawantwadi-lunch-home-lower-parel-lower-parel-worli-rest802833",
+    "Swiggy, Deluxe Restaurant, Kurla West: https://www.swiggy.com/city/mumbai/deluxe-restaurant-west-kurla-rest19344",
+    "Swiggy, Goila Butter Chicken, Lokhandwala: https://www.swiggy.com/city/mumbai/goila-butter-chicken-lokhandwala-rest14020",
+    "Swiggy, Goila Butter Chicken, Veera Desai, Andheri West: https://www.swiggy.com/city/mumbai/goila-butter-chicken-veera-desai-andheri-west-rest14020",
+    "Swiggy, The Chicken Story, Manpada, Thane (MMR, not used): https://swiggy.com/city/mumbai/the-chicken-story-manpada-thane-rest883448",
+    "Swiggy, Desi We Desi, Kharghar (MMR, not used): https://swiggy.com/city/mumbai/desi-we-desi-sector-10-kharghar-rest734466",
+    "magicpin, Butter Chicken Factory, Andheri West (no butter chicken price in snippet): https://magicpin.in/Mumbai/Andheri-West/Restaurant/Butter-Chicken-Factory/store/c162b",
+    "magicpin, Butter Chicken Factory, Chincholi Bunder (no price in snippet): https://magicpin.in/Mumbai/Chincholi-Bunder/Restaurant/Butter-Chicken-Factory/store/2bcc79/",
+    "Tripoto, butter chicken in Mumbai (article, not a platform; not used): https://www.tripoto.com/mumbai/trips/looking-for-butter-chicken-in-mumbai-here-are-some-of-the-best-destinations-in-town-60816b8f5ba68",
+    "LBB, Butter chicken guide (undated article; not used): https://lbb.in/mumbai/butter-chicken-guide/"
   ],
   "allergens": [
+    "peanut",
     "treeNut",
     "milk"
   ],
-  "dietClaims": [],
-  "fasting": null,
-  "dietTags": null,
+  "dietClaims": [
+    "glutenFree"
+  ],
+  "fasting": {
+    "navratri": {
+      "status": "no",
+      "reason": "chicken, onion and garlic are all avoided in vrat"
+    },
+    "ekadashi": {
+      "status": "no",
+      "reason": "chicken, onion and garlic are avoided (most common rule set assumed)"
+    },
+    "jain": {
+      "status": "no",
+      "reason": "chicken, onion, garlic and fresh ginger (root rule, Patch 05)"
+    },
+    "ramadan": {
+      "status": "with-changes",
+      "reason": "use halal-sourced chicken; rich and fairly salty (about 50% of the 2,000 mg sodium limit), so better as the main iftar dish than as sehri"
+    }
+  },
+  "dietTags": {
+    "base": "Non-veg (chicken)",
+    "jain": {
+      "status": "no",
+      "reason": "chicken, onion, garlic and fresh ginger (a root) are all in the recipe"
+    },
+    "vegan": {
+      "status": "no",
+      "reason": "chicken, curd, butter and cream"
+    },
+    "pescatarian": {
+      "status": "no",
+      "reason": "contains chicken"
+    },
+    "sattvik": {
+      "status": "no",
+      "reason": "chicken is not sattvik, and the recipe uses onion and ginger-garlic paste"
+    },
+    "glutenFree": {
+      "status": "yes",
+      "reason": "chicken, curd, cashews, tomato and whole or ground spices; no wheat, rava, maida or hing (check the garam masala and chilli powder labels for fillers)"
+    },
+    "dairyFree": {
+      "status": "with-changes",
+      "reason": "curd 30 g, butter 10 g and cream 20 ml are dairy; use coconut yoghurt, oil and coconut cream (see Dairy-free variant)"
+    },
+    "allergensDeclared": [
+      "milk",
+      "peanut",
+      "treeNut"
+    ]
+  },
   "tags": [
     "Non-veg",
+    "Gluten-free",
+    "Contains peanut",
     "Contains tree nuts",
     "Contains milk",
     "Lunch",
@@ -655,9 +827,42 @@
     "Intermediate",
     "High protein"
   ],
-  "description": null,
+  "description": "Family: butter-chicken",
   "familyId": null,
-  "variants": [],
+  "variants": [
+    {
+      "category": "Jain",
+      "status": "not-appropriate",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": "the dish is defined by chicken, and the gravy is built on onion and ginger-garlic; a Jain version would be a different dish."
+    },
+    {
+      "category": "Vegan",
+      "status": "not-appropriate",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": "the dish is defined by chicken (plus butter, cream and curd); a plant-based makhani is a different dish."
+    },
+    {
+      "category": "Gluten-free",
+      "status": "already-fits",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": "Main recipe already gluten-free (no wheat, rava, maida or hing)."
+    },
+    {
+      "category": "Vegetarian",
+      "status": "not-appropriate",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": "replacing the chicken gives butter paneer / Paneer Butter Masala (dish 3), a different dish."
+    }
+  ],
   "needsReview": [
     "price not confirmed (2026-10-05): only 1 platform (magicpin) backs the range"
   ],
@@ -665,10 +870,14 @@
     {
       "date": "2026-10-05",
       "file": "FitPlate_Dishes_2026-10-05.md"
+    },
+    {
+      "date": "2026-11-03",
+      "file": "FitPlate_Dishes_2026-11-03.md"
     }
   ],
   "mergeMethod": {
-    "nutritionPerServing": "stable (single)",
+    "nutritionPerServing": "stable (mean-2)",
     "orderPrice": "price engine (single)",
     "ingredients": "newest",
     "steps": "newest",
@@ -677,5 +886,7 @@
     "sources": "union",
     "tags": "tag engine (tags.ts) on the merged dish"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "2026-11-03: research declares peanut not detected from ingredient names; added"
+  ]
 }
