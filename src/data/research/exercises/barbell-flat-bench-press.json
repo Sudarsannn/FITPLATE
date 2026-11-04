@@ -1,0 +1,723 @@
+{
+  "id": "barbell-flat-bench-press",
+  "number": 20,
+  "name": "Barbell flat bench press",
+  "otherNames": [
+    "Flat bench press",
+    "Bench press",
+    "Barbell chest press",
+    "Flat barbell press"
+  ],
+  "section": "gym",
+  "type": "strength",
+  "equipment": [
+    "Flat bench with rack uprights and J-hooks",
+    "Safety arms or pins",
+    "Olympic barbell (usually 20 kg; check the label)",
+    "Weight plates",
+    "Collars",
+    "Flat shoes"
+  ],
+  "noEquipmentAlternative": "Push-up or incline push-up (Home 2); dumbbell floor press or bench press (Home 21) with weights",
+  "musclesPrimary": [
+    "pectoralis major",
+    "anterior deltoid",
+    "triceps brachii"
+  ],
+  "musclesSecondary": [
+    "serratus anterior",
+    "rotator cuff (supraspinatus, infraspinatus, subscapularis, teres minor)",
+    "rhomboids and middle and lower trapezius",
+    "forearm grip muscles",
+    "glutes and quadriceps (leg drive)"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": false,
+  "met": 3.5,
+  "compendiumCode": null,
+  "metOptions": [
+    {
+      "code": "02050",
+      "met": 6,
+      "activity": "Extras (text only, harder work): 02050, 6.0 METs, \"resistance (weight) training, free weight, power lifting or body building, vigorous effort\"; 02052, 5.0 METs, \"squats, deadlift, slow or explosive ef"
+    },
+    {
+      "code": "02052",
+      "met": 5,
+      "activity": "Extras (text only, harder work): 02050, 6.0 METs, \"resistance (weight) training, free weight, power lifting or body building, vigorous effort\"; 02052, 5.0 METs, \"squats, deadlift, slow or explosive ef"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 2,
+      "reps": "8-10 at RIR 3 (empty bar or light load)",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "3 s down, 1 s touch, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 2,
+      "reps": "8-10 at RIR 3 (as one circuit station)",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "3 s down, 1 s touch, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "8-10 at RIR 2-3",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "3 s down, 1 s touch, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "strength",
+      "sets": 3,
+      "reps": "5-8 at RIR 3",
+      "timeSec": null,
+      "restSec": 120,
+      "tempo": "3 s down, 1 s touch, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 2,
+      "reps": "12-15 light at RIR 3-4",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2 s down, 0 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "8-10 at RIR 2",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "3 s down, 1 s touch, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "6-10 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 105,
+      "tempo": "3 s down, 1 s touch, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "strength",
+      "sets": 4,
+      "reps": "4-6 at RIR 2",
+      "timeSec": null,
+      "restSec": 180,
+      "tempo": "3 s down, 1 s touch, 1 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "15 at RIR 2",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2 s down, 0 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "general_fitness",
+      "sets": 4,
+      "reps": "8 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "3 s down, 1 s touch, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "5-10 at RIR 0-2",
+      "timeSec": null,
+      "restSec": 120,
+      "tempo": "3 s down, 1 s touch, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": 5,
+      "reps": "2-5 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 240,
+      "tempo": "3 s down, 1 s touch, 1 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "endurance",
+      "sets": 4,
+      "reps": "15-20 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 53,
+      "tempo": "2 s down, 0 s pause, 2 s up",
+      "perWeek": 2
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "top",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": ">= 160",
+        "parsed": {
+          "op": ">=",
+          "value": 160,
+          "max": null
+        }
+      },
+      {
+        "name": "bottom",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": "<= 90",
+        "parsed": {
+          "op": "<=",
+          "value": 90,
+          "max": null
+        }
+      },
+      {
+        "name": "top_max",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": "<= 175",
+        "parsed": {
+          "op": "<=",
+          "value": 175,
+          "max": null
+        }
+      },
+      {
+        "name": "flare_max",
+        "joint": "shoulder abduction (hip-shoulder-elbow), head-end or front view",
+        "angleDeg": "<= 75",
+        "parsed": {
+          "op": "<=",
+          "value": 75,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 3
+  },
+  "formChecks": [
+    {
+      "joint": "elbow",
+      "rule": "bottom elbow angle > 90 degrees (equals bottom phase threshold; rep not counted)",
+      "message": "Lower the bar to your lower chest"
+    },
+    {
+      "joint": "elbow",
+      "rule": "top elbow angle < 160 degrees (equals top phase threshold; rep not counted)",
+      "message": "Press all the way up"
+    },
+    {
+      "joint": "elbow",
+      "rule": "top elbow angle > 175 degrees (equals top_max threshold)",
+      "message": "Don't snap the elbows: finish soft"
+    },
+    {
+      "joint": "shoulder",
+      "rule": "bottom shoulder abduction angle > 75 degrees (equals flare_max threshold; head-end or front view)",
+      "message": "Tuck your elbows a little"
+    },
+    {
+      "joint": "hip",
+      "rule": "separate flag: hip rises above the bench line beyond a set margin (no angle used)",
+      "message": "Keep your seat on the bench"
+    },
+    {
+      "joint": "wrist",
+      "rule": "separate flag: left and right wrist heights differ beyond a set margin (no angle used)",
+      "message": "Keep the bar level"
+    },
+    {
+      "joint": "elbow",
+      "rule": "rep duration < 3 s or lowering < 2 s",
+      "message": "Slow down: 3 seconds down"
+    }
+  ],
+  "safetyFlags": [
+    "start_with_empty_bar",
+    "ask_spotter_or_staff_for_first_sessions",
+    "set_safety_arms_or_pins_just_below_bar_lowest_point",
+    "never_train_near_failure_alone_without_safeties",
+    "never_trap_bar_across_chest",
+    "use_smith_machine_or_dumbbells_if_no_safeties",
+    "thumbs_around_bar_no_thumbless_grip",
+    "five_points_of_contact",
+    "shoulder_blades_back_and_down",
+    "elbows_about_45_to_75_degrees_from_torso",
+    "no_bouncing_off_chest",
+    "glutes_stay_on_bench",
+    "wrists_stacked_over_forearms",
+    "bar_over_shoulder_joints_not_face",
+    "use_collars_with_spotter_or_safeties",
+    "high_blood_pressure_no_breath_holding_no_failure_sets",
+    "resting_bp_180_120_do_not_lift",
+    "shoulder_problems_ask_professional",
+    "pregnancy_avoid_flat_on_back_ask_obstetrician",
+    "osteoporosis_ask_doctor",
+    "recent_surgery_follow_surgeon_limits",
+    "check_bar_weight_label"
+  ],
+  "progressions": [
+    "add small plates or sets (double progression)",
+    "slow 4-5 s lowering with 1-2 s chest pause (lighter weight)",
+    "heavier, paused bench or incline bench press (Gym 21) with a spotter or safeties set (intermediate to advanced)"
+  ],
+  "regressions": [
+    "push-up or incline push-up (Home 2)",
+    "dumbbell floor press or bench press (Home 21)",
+    "chest press machine (Gym 22) or Smith machine bench press (Gym 14)"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "three-quarter front, 3 m",
+      "shows": "uprights, J-hooks, safety arms or pins, bar, plates and collars named",
+      "textOverlay": "Know the hooks, the pins and the collars"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "five points of contact: head, upper back, glutes, both feet; eyes under the bar",
+      "textOverlay": "Head - back - seat - both feet"
+    },
+    {
+      "seconds": 8,
+      "angle": "from behind the head, 1.5 m",
+      "shows": "grip slightly wider than shoulders; thumbs around; wrists stacked over forearms; bar low in the palm",
+      "textOverlay": "Thumbs around, wrists stacked"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "shoulder blades back and down; spotter hand-off; bar over the shoulder joints",
+      "textOverlay": "Blades back, bar over the shoulders"
+    },
+    {
+      "seconds": 10,
+      "angle": "side, bench height, 2.5 m",
+      "shows": "full empty-bar rep: 3 s down to lower chest, 1 s touch, 2 s up on a slight J path",
+      "textOverlay": "Down 3 - Touch 1 - Up 2"
+    },
+    {
+      "seconds": 8,
+      "angle": "front or head-end, 2 m",
+      "shows": "elbows about 45-75 degrees from the torso vs flared to 90 degrees",
+      "textOverlay": "Elbows 45-75 degrees"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "glutes down and feet flat vs hips lifting and heels up",
+      "textOverlay": "Seat down, feet flat"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "safe bail: lower the stuck bar to the chest then onto the pins and slide out; solo setup with pins just below the bar",
+      "textOverlay": "Pins below the bar, then slide out"
+    }
+  ],
+  "lastResearched": "2026-11-04",
+  "setupSteps": [
+    "Choose a free bench with stable uprights. Check the bench does not wobble and that the safety arms or pins (if any) can be set. If the bench has no safety arms or pins, do not train near failure alone; see the spotter section.",
+    "Check the bar. Look at its weight label (20 kg is the usual Olympic bar; confirm with staff) and make sure the sleeves are straight and plates are the same on both sides.",
+    "Set the bench under the bar (eyes under the bar). Lie down so your eyes are directly under the bar (a few sources say eyes slightly behind the bar to make the unrack easier). Then you can lift the bar off the hooks with a short move, about 1–3 inches (about 2.5–7.5 cm, from a coaching source) of lift-off, without stretching your arms far back.",
+    "Set the J-hooks (rack height). Lie on the bench, reach up, and the bar should sit where your elbows are still slightly bent. A flat-bench guide gives about mid-chest height for the hooks. If you cannot reach the bar without lifting your shoulders off the bench, ask staff to lower the hooks.",
+    "Set the safety arms or pins. Set them just under the bar's lowest point, about 1 inch (about 2.5 cm, est.) below the level your chest reaches when you press yourself into the bench, so the bar rests on them and you can slide out. Starting Strength notes that the height should be low enough not to catch the bar on every rep but high enough to catch it if you cave in. Set both sides the same.",
+    "Load evenly. Equal plates both sides. Use collars when training with a spotter or on a bench with safeties. Several solo-lifting sources say to skip collars only when training alone with no safeties, so plates can slide off if the bar tips; beginners should not train alone near failure at all.",
+    "Five points of contact: (1) back of the head on the bench, (2) upper back and shoulders on the bench, (3) glutes on the bench, (4) right foot flat on the floor, (5) left foot flat on the floor. All five stay in place for the whole set. Sources that list the five points agree on head, upper back, glutes and both feet.",
+    "Scapular retraction: before you grip, pull your shoulder blades together and down, as if tucking them into your back pockets, and keep them there. This forms a firm shelf for the shoulders and, in the 2024 study above, reduced posterior shear force at the shoulder joint. One source notes you do not need to over-squeeze, but you need to control the position.",
+    "A small natural arch is fine. Keep your glutes on the bench; do not lift your hips (see Safety). Sources differ on how big an arch to use; beginners should use a small, comfortable arch.",
+    "Foot position. Feet flat on the floor, about under or slightly behind the knees; not so far forward the weak base slides you, and not so far back the heels lift (sources). If the floor is too far (short legs), place plates or blocks under your feet. Press the whole foot into the floor.",
+    "Grip width. Sources differ: about one hand-width outside the knurling (the rough marks), or a grip with forearms vertical at the bottom, or a grip somewhere between shoulder width and about 1.5 times shoulder-bone width (biacromial width). FitPlate choice: a grip slightly wider than shoulder width (index fingers near the smooth ring marks if you can see them), adjusted so that at the bottom your forearms are vertical when seen from the front or the side.",
+    "Wrist stacking. Wrists straight, directly stacked over the elbows and forearms (forearms vertical at the bottom). The bar sits low in the palm, near the heel of the hand and over the forearm bones, not high in the fingers. Bent-back wrists tire the wrist and cost strength.",
+    "Thumbs around the bar. Wrap your thumbs around the bar in a full \"closed\" grip (sometimes called thumb-around grip). A thumbless or \"suicide\" grip means the thumb sits beside the fingers with nothing to stop the bar slipping off the palm; if the bar slips it can fall onto the chest, neck or face. Sources note it is not permitted in competition, and some lifters use it for wrist or elbow comfort, but FitPlate treats it as not for beginners. If you cannot keep your wrists straight with a closed grip, widen the grip slightly or ask for coaching rather than going thumbless.",
+    "Squeeze the bar as if trying to bend it into a \"U\" around your chest; this tightens your forearms and shoulders."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Lie down in position",
+      "action": "Sit on the end, lie back, set the five points of contact, eyes under the bar.",
+      "feel": "Back of head and shoulders pressed into the bench; feet pressing the floor.",
+      "breathing": "Breathe normally.",
+      "tempo": null,
+      "visualCheck": "Side: head, upper back, glutes on bench; feet flat. Front or behind the head: eyes under the bar, bar centred over the chest."
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Grip and retract",
+      "action": "Take the grip (thumbs around), pull the shoulder blades back and down, squeeze the bar.",
+      "feel": "Chest lifted slightly; shoulder blades pinned; wrists straight.",
+      "breathing": "Breathe in.",
+      "tempo": null,
+      "visualCheck": "Side: forearms near vertical; wrists straight. Front: hands even, equal distance from the centre."
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Unrack (with a hand-off if you have a spotter)",
+      "action": "Straighten the elbows to lift the bar off the hooks, then move it over your shoulder joints (not over the face) and stop with arms straight.",
+      "feel": "Weight settles over the shoulders, upper back stays tight.",
+      "breathing": "Take a breath in (not a long hold).",
+      "tempo": null,
+      "visualCheck": "Side: bar over the shoulder joint, elbows straight but soft. Front: bar level."
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Lower the bar",
+      "action": "Bend the elbows and lower the bar in a slow, controlled path to the lower chest.",
+      "feel": "Chest stretching; upper back stays tight.",
+      "breathing": "Hold your brace lightly; do not gasp.",
+      "tempo": null,
+      "visualCheck": "Side: forearms vertical; elbows about 45–75 degrees away from the body (see section 5). Front: elbows not at 90 degrees from the torso."
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Touch the chest",
+      "action": "Lightly touch the bar to the lower chest (about the nipple line to the bottom of the breastbone, from coaching sources); do not bounce.",
+      "feel": "Light contact only.",
+      "breathing": "Brace.",
+      "tempo": null,
+      "visualCheck": "Side: the bar touches at the lower chest, not the neck or stomach; shoulders and glutes stay down."
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Press up",
+      "action": "Push the floor away with your feet and press the bar up and slightly back toward your shoulders (a gentle J-shaped path), until your arms are straight.",
+      "feel": "Chest and triceps pushing; feet driving into the floor.",
+      "breathing": "Breathe out gently as you pass the hardest point.",
+      "tempo": null,
+      "visualCheck": "Side: the bar travels from the lower chest back toward the shoulder joint; hips stay on the bench. Front: bar level, both arms rise evenly."
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Lock out softly",
+      "action": "Finish with straight but not forcibly locked elbows over the shoulder joint.",
+      "feel": "Weight held by the bones in line, not by bouncing.",
+      "breathing": "Finish exhaling, breathe in again for the next rep.",
+      "tempo": null,
+      "visualCheck": "Side: bar over the shoulder joint. Front: arms even."
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Re-rack",
+      "action": "After the last rep, press the bar back toward the uprights (do not lower it forward onto the hooks yet); when it touches the uprights, lower it into the hooks and check it is seated on both sides before letting go.",
+      "feel": "Weight leaves your hands; shoulders relax.",
+      "breathing": "Normal.",
+      "tempo": null,
+      "visualCheck": "Side: bar sitting in both J-hooks. Front: even."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Bar over the face or neck at lock-out",
+      "text": "Bar over the face or neck at lock-out. Why: the bar can fall on the neck or face if you lose it. Fix: stop with the bar over the shoulder joints; ask for a hand-off."
+    },
+    {
+      "title": "Thumbless grip",
+      "text": "Thumbless grip. Why: the bar can slip out of the palm and land on the chest or neck. Fix: thumbs around the bar; widen the grip a little if the wrists hurt."
+    },
+    {
+      "title": "Elbows flared to 90 degrees",
+      "text": "Elbows flared to 90 degrees. Why: sources link this to more shoulder stress and a narrower gap for the rotator cuff tendons. Fix: tuck the elbows to about 45–75 degrees and keep forearms vertical."
+    },
+    {
+      "title": "Bouncing the bar off the chest",
+      "text": "Bouncing the bar off the chest. Why: shock to the breastbone and ribs and loss of control. Fix: lower in 3 seconds and touch lightly."
+    },
+    {
+      "title": "Lifting the hips or head off the bench",
+      "text": "Lifting the hips or head off the bench. Why: loads the lower back or neck and cuts the range. Fix: lighter weight, keep five points down."
+    },
+    {
+      "title": "Loose shoulder blades",
+      "text": "Loose shoulder blades. Why: the shoulders roll forward and the joint takes the load. Fix: retract before the unrack, keep them pinned."
+    },
+    {
+      "title": "Pressing straight up with the bar drifting over the face, or pressing too vertically off the chest",
+      "text": "Pressing straight up with the bar drifting over the face, or pressing too vertically off the chest. Why: a common sticking point 4–6 inches off the chest. Fix: press up and slightly back toward the shoulder joint."
+    },
+    {
+      "title": "Wrists bent back",
+      "text": "Wrists bent back. Why: pain and lost power. Fix: bar low in the palm, wrists stacked over the forearms."
+    },
+    {
+      "title": "Wide-open or uneven grip",
+      "text": "Wide-open or uneven grip. Why: uneven bar, shoulder strain. Fix: use the knurl marks as a guide and check the hands are equal."
+    },
+    {
+      "title": "Training alone to failure without safeties",
+      "text": "Training alone to failure without safeties. Why: the bar can trap you across the chest. Fix: set safety arms or pins, use a spotter, or switch to dumbbells or a Smith machine."
+    },
+    {
+      "title": "Ego loading",
+      "text": "Ego loading. Why: shaky reps and injury risk. Fix: empty bar until 3 sets of 8–10 are smooth."
+    }
+  ],
+  "safetyNotes": [
+    "Shoulder problems: the bench loads the shoulder joint; use a narrower grip with elbows tucked, a lighter load or machine press, and ask a professional.",
+    "Wrist or elbow pain: widen or narrow the grip slightly; stop if pain rises.",
+    "High blood pressure: the breath-hold (Valsalva manoeuvre) raises blood pressure. A 2013 systematic review found it raises pressure during resistance exercise but that its health risks remain unconfirmed; an NSCA article (1999) says its effects can be avoided with breathing instruction. Breathe out on each push, avoid sets to failure, keep loads moderate.",
+    "Pregnancy: lying flat on the back after the first trimester can reduce blood return to the heart; ACOG's older guidance advised avoiding supine exercise after the first trimester, but newer commentary treats it as comfort-based. Ask your obstetrician.",
+    "Recent surgery, osteoporosis, heart disease: see the table; ask a professional.",
+    "Do you need one? Yes for anything near hard effort and for your first sessions. With the empty bar and safeties correctly set, a spotter is optional but still sensible for a beginner. Starting Strength notes that a spotter's biggest help on the bench is the lift-off and rerack; a spotter cannot hold a stuck press, so safeties matter.",
+    "How to ask: ask gym staff or a trainer first. Otherwise ask someone who has just finished a set. Say it before the set: \"Could you spot me on the bench? I will do 8 reps. Please give me a hand-off, and only touch the bar if I ask.\" Sources advise telling the spotter your rep count and when to step in, and being wary of strangers you do not know.",
+    "Hand-off: you lie down, grip, retract, and say \"ready\" or \"on three\". The spotter holds the bar lightly (alternate grip, hands inside yours) and helps lift it off the hooks, then lets go once you have it over your shoulder joints. After your last rep, say \"take it\" so the spotter helps guide the bar back to the hooks. A hand-off lets you keep your back tight and shoulders pinned.",
+    "During the set: the spotter stands at the head of the bench, hands close to the bar but not on it, and follows it. If you stall, say \"help\" or \"spot\"; the spotter helps lift. Do not bounce or rush to fail.",
+    "When training alone: never use the bench without safety arms or pins, or a rack that traps the bar below chest height. Set the pins just below the bar's lowest point so the bar lands on them and you can slide out; never try to trap or roll the bar down your body. Take a lighter weight and stop 3 reps before failure. If you cannot set safeties, use dumbbells or a Smith machine (Gym 14) or a chest press machine (Gym 22) instead. Skip collars only if you have safeties and know how to tilt; beginners should keep collars on and not train alone near failure.",
+    "Bail-out: if the bar stalls and a safety is set, lower it to your chest, rest it on the pins, and slide out feet first. Practise with the empty bar first."
+  ],
+  "sources": [
+    "Barbell Logic, Finding the touch point for your bench press (elbows about 45–75 degrees from the body); How to bench press: setup, safety, bar path; How to use leg drive for bench press; Complete guide to barbell safety. https://barbell-logic.com/finding-the-touch-point-for-your-bench-press/ ; https://barbell-logic.com/?p=2660 ; https://barbell-logic.com/?p=4449 ; https://barbell-logic.com/?p=2716",
+    "Starting Strength, The importance of using safeties in the squat and bench press; Barbell safety. https://mail.startingstrength.com/article/the-importance-of-using-safeties-in-the-squat-and-bench-press ; https://startingstrength.com/article/barbell_safety",
+    "Art of Manliness, The 4 rules of bench pressing without a spotter. https://www.artofmanliness.com/strength/fitness/the-4-rules-of-bench-pressing-without-a-spotter/",
+    "Noteboom L et al. (2024), Effects of bench press technique variations on musculoskeletal shoulder loads and potential injury risk, Frontiers in Physiology 15:1393235 (PubMed 38974522). https://pubmed.ncbi.nlm.nih.gov/38974522/ ; https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2024.1393235/pdf",
+    "ACE Exercise Library, Chest press (barbell bench press, beginner). https://acefitness.org/resources/everyone/exercise-library/5/chest-press",
+    "Human Kinetics, A step by step guide for a proper bench press; CSCCa bench press technique (JMU); Top End Sports, Bench press. https://us.humankinetics.com/blogs/excerpt/a-step-by-step-guide-for-a-proper-bench-press ; https://educ.jmu.edu/~strength/CSCCA/CSCCa_ex_tech_Bench_Press.htm ; https://www.topendsports.com/fitness/technique/bench-press.htm",
+    "Powerlifting Technique, Suicide grip for bench press; Bench press wrist position; Best bench press bar path; Leg drive and foot position. https://powerliftingtechnique.com/suicide-grip-for-bench-press/ ; https://powerliftingtechnique.com/bench-press-wrist-position/ ; https://powerliftingtechnique.com/best-bench-press-bar-path/ ; https://powerliftingtechnique.com/should-you-bench-with-flat-feet-or-heels-up-an-expert-answers/",
+    "RitFit Sports, Solo lifting safety: power rack setup; Best bench press form. https://www.ritfitsports.com/blogs/article/solo-lifting-safety-master-power-rack-setup ; https://www.ritfitsports.com/blogs/article/best-bench-press-form",
+    "Major Fitness, How to use a power rack for bench press; Bells of Steel, Bench in a power rack (safety arm height). https://www.majorfitness.com/blogs/wiki/how-to-use-a-power-rack-for-bench-press-a-complete-guide ; https://bellsofsteel.us/blogs/content/bench-in-a-power-rack",
+    "Legion Athletics, Bench press setup; How to spot. https://legionathletics.com/bench-press-setup ; https://legionathletics.com/how-to-spot",
+    "Lifehacker, Why it's dangerous to ask a stranger for a spot; Set for Set, How to spot someone on bench press. https://www.lifehacker.com.au/2016/01/why-its-dangerous-to-ask-a-stranger-for-a-spot/ ; https://setforset.com/blogs/news/how-to-spot-someone-on-bench-press",
+    "NSCA CPT study guide, Free-weight press and pull patterns. https://open-exam-prep.com/study-guides/nsca-cpt/resistance-technique/press-pull-technique",
+    "The Valsalva manoeuvre: its effect on intra-abdominal pressure and safety issues during resistance exercise (2013 systematic review). https://pubmed.ncbi.nlm.nih.gov/23222073/ ; NSCA Strength and Conditioning Journal (1999) Valsalva article (seen via search summary only; stable URL Not found); Biology of Sport 2019 systematic review (hypertension, bench press). https://doaj.org/article/95188fd23ce340ca9179dcdf129de1d3",
+    "2024 Adult Compendium of Physical Activities (Herrmann et al., J Sport Health Sci 2024): codes 02054 (3.5), 02052 (5.0), 02050 (6.0). https://pacompendium.com/conditioning-exercise ; https://pubmed.ncbi.nlm.nih.gov/38242596/",
+    "Indian seller listings for 20 kg, 7 ft, 28 mm Olympic bars (IndiaMART, Leeway Fitness, Kibi Sports). https://m.indiamart.com/impcat/weight-lifting-bars.html ; https://shop.kibisports.com/products/olympic-lifting-barbell-20-kg-wpnzo",
+    "ACSM (2009), Progression models in resistance training for healthy adults. https://www.sportgeneeskunde.com/wp-content/uploads/ACSM-Position-Stand-Progression-Models-in-Resistance-Training-for-Healthy-Adults.pdf",
+    "Zourdos MC et al. (2016), RIR-based RPE scale. https://openrepository.aut.ac.nz/items/efef3b25-6701-4fb5-bb82-55fcd2a26027/full",
+    "IDEA, ACOG guidelines summary (supine exercise in pregnancy; secondary). https://www.ideafit.com/acog-guidelines",
+    "Condition rows carried over from earlier items' citations (not re-opened this session): Colberg et al. 2016 (ADA) https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/ ; ACC summary of AHA 2023 https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2023/12/19/15/33/resistance-exercise-training ; AHA Gibbs et al. https://professional.heart.org/en/science-news/Physical-Activity-as-a-Critical-Component-of-First-Line-Treatment-for-Elevated-BP-or-Cholesterol/commentary ; Donnelly et al. 2009 https://pubmed.ncbi.nlm.nih.gov/19127177/ ; PCOS https://vuir.vu.edu.au/45855/1/1-s2.0-S2772696723000054-main.pdf ; thyroid https://pubmed.ncbi.nlm.nih.gov/37999992/ ; asthma https://www.pharmacymagazine.co.uk/cpd-modules/making-a-difference-in-asthma-care/exercise-and-asthma-528343 ; LIFTMOR https://academic.oup.com/jbmr/article/33/2/211/7605709 ; Osteoporosis Canada https://osteoporosis.ca/wp-content/uploads/2014-07-25-Are-you-too-fit-to-fracture-for-patients.pdf ; ACOG CO 804 https://opqic.org/acog-committee-opinion-no-804-physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period/ ; NNUH https://www.nnuh.nhs.uk/publication/download/post-natal-physiotherapy-advice-and-exercises-v2-1",
+    "Note: most bench-specific sources were seen only as search-result summaries (pages not opened in full); many are coaching blogs. ExRx.net's bench press page was not retrieved. The 45–75 degree elbow range is a coaching guideline (Barbell Logic), with no validated clinical threshold found. Condition-specific sources for knee pain, lower back pain, obesity-specific and PCOS-specific bench advice are Not found."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 28.6,
+      "70kg": 24.5,
+      "80kg": 21.4
+    },
+    "per300kcal": {
+      "60kg": 85.7,
+      "70kg": 73.5,
+      "80kg": 64.3
+    }
+  },
+  "gymAccess": [
+    "full_gym",
+    "basic_gym"
+  ],
+  "suitsPreferences": [
+    "strength",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "upper_body_day",
+    "full_body",
+    "free_weights",
+    "bodybuilding_split",
+    "push_pull_legs",
+    "30_to_60_min_sessions"
+  ],
+  "swapsByAccess": {
+    "none": "Push-up or incline push-up (Home 2)",
+    "home_equipment": "Dumbbell floor press or bench press (Home 21)",
+    "basic_gym": "Smith machine bench press (Gym 14, if available) or chest press machine (Gym 22)",
+    "full_gym": "Chest press machine (Gym 22) for a supported option; barbell bench press once ready, with safeties or a spotter"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "No breath-holding: breathe out on each push; moderate loads 10-15 reps, stop 2-3 reps before failure; no lifting if resting BP >= 180/120; uncontrolled BP: ask a doctor",
+      "source": "Valsalva systematic review 2013 (PubMed 23222073); NSCA 1999 article on Valsalva; Biology of Sport 2019 systematic review"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "2-3 non-consecutive resistance days per week; usual glucose checks if on insulin or sulfonylureas",
+      "source": "ADA position statement, Colberg et al. 2016"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "After clearance: light load, 10-15 reps, continuous breathing, no straining",
+      "source": "AHA resistance exercise statement (via ACC summary 2023)"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "Part of 2+ days/week resistance work with aerobic activity",
+      "source": "AHA scientific statement (Gibbs et al.)"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Check bench width and weight limit; start with the empty bar; use a spotter; push-up, dumbbell or machine press if the bar setup is hard; bench-specific advice not found",
+      "source": "ACSM weight management position stand (Donnelly et al. 2009)"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "Fits muscle-strengthening guidance; bench-specific advice not found",
+      "source": "International PCOS guideline 2023"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "Train normally if controlled; start at beginner level with ongoing fatigue",
+      "source": "Systematic review 2023 (PubMed 37999992)"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Warm up and keep reliever inhaler nearby",
+      "source": "Asthma exercise guidance (Pharmacy Magazine CPD)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "ok",
+      "change": "Bench press loads the knee little; keep feet flat and do not push hard through a painful knee; condition-specific source not found",
+      "source": "Not found"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Keep glutes down and arch small; stop if the back hurts; use dumbbells or a machine press",
+      "source": "Not found"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "modify",
+      "change": "Narrower grip, elbows about 45-75 degrees, lighter load, or dumbbells or a machine; ask a professional if pain persists",
+      "source": "Noteboom et al. 2024, Frontiers in Physiology (PubMed 38974522); Barbell Logic touch-point article"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "ask_doctor",
+      "change": "Resistance work benefits bone, but with low bone mass or a spine fracture see a physiotherapist first",
+      "source": "LIFTMOR trial (Watson et al.); Osteoporosis Canada"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "ask_doctor",
+      "change": "Ask obstetrician; older ACOG guidance advised avoiding flat-on-back exercise after the first trimester; incline bench or dumbbells if cleared; no breath-holding",
+      "source": "ACOG guidance via IDEA summary (secondary); ACOG Committee Opinion 804"
+    },
+    {
+      "condition": "postpartum",
+      "status": "modify",
+      "change": "Pelvic floor work first; return to loaded pressing once cleared, especially after caesarean",
+      "source": "NHS postnatal physiotherapy leaflets (NNUH, Royal Devon)"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Only with surgeon or physiotherapist approval; chest, shoulder or abdominal surgery often restricts pressing and lying positions",
+      "source": "General clearance advice; condition-specific source not found"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "gym"
+    ],
+    "bodyRegion": [
+      "upper"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "fat_loss",
+      "muscle",
+      "strength",
+      "endurance"
+    ],
+    "intensity": "moderate",
+    "noise": "quiet",
+    "space": "large_area",
+    "typicalMinutes": 11,
+    "kcalPer10min70kg": 41,
+    "difficulty1to5": 3,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Gym",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Strength",
+    "Chest",
+    "Shoulders",
+    "Arms",
+    "Rep counter",
+    "10–20 min"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-11-04",
+      "file": "FitPlate_Fitness_2026-11-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

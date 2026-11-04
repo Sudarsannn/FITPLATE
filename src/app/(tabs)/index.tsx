@@ -17,7 +17,8 @@ import { DeskBreakCard } from '../../components/DeskBreakCard';
 import { LateNightCard } from '../../components/LateNightCard';
 import { LeftoversCard } from '../../components/LeftoversCard';
 import { StreakButton } from '../../components/StreakButton';
-import { addDays, dayKey, dayTotals, FIBRE_TARGET, GOALS, recommend, useStore, WATER_TARGET } from '../../lib/store';
+import { addDays, dayKey, dayTotals, FIBRE_TARGET, recommend, useStore, WATER_TARGET } from '../../lib/store';
+import { useTargets } from '../../lib/useTargets';
 import { BALANCE_LABEL } from '../../services/dishDetail';
 import { dayGroup } from '../../services/meals';
 import { colors, gradients, radius, type } from '../../theme';
@@ -71,7 +72,7 @@ function MiniStat({ icon, color, label, value }: { icon: keyof typeof Ionicons.g
 export default function Today() {
   const s = useStore();
   const { profile, today, moneySaved, user, sex } = s;
-  const goal = GOALS[profile.goal];
+  const { goal } = useTargets();
   const t = dayTotals(today);
   const left = goal.kcal - t.kcalIn + t.kcalOut;
   const picks = recommend(profile).slice(0, 6);

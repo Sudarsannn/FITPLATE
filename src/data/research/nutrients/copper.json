@@ -1,0 +1,419 @@
+{
+  "id": "copper",
+  "name": "Copper",
+  "type": "mineral",
+  "subtype": "trace-mineral",
+  "unit": "mg",
+  "altUnits": [
+    {
+      "unit": "µg",
+      "toMainUnitFactor": 0.001
+    },
+    {
+      "unit": "µmol",
+      "toMainUnitFactor": 0.0635
+    },
+    {
+      "unit": "mg copper sulfate pentahydrate",
+      "toMainUnitFactor": 0.255
+    },
+    {
+      "unit": "mg copper gluconate",
+      "toMainUnitFactor": 0.14
+    },
+    {
+      "unit": "mg copper bisglycinate",
+      "toMainUnitFactor": 0.3
+    }
+  ],
+  "unitConversions": [
+    {
+      "fromUnit": "mg",
+      "compound": "copper",
+      "toMainUnitFactor": 1,
+      "raw": "1 mg copper | 1,000 µg (mcg)"
+    },
+    {
+      "fromUnit": "µg",
+      "compound": "/dl copper in blood",
+      "toMainUnitFactor": 0.157,
+      "raw": "1 µg/dL copper in blood | 0.157 µmol/L"
+    }
+  ],
+  "targets": [
+    {
+      "group": "adult_male_sedentary",
+      "ear": null,
+      "rda": null,
+      "ai": 1.7,
+      "source": "ICMR-NIN 2020 via FSSAI adoption; one summary shows 2 mg (secondary, unverified)"
+    },
+    {
+      "group": "adult_male_moderate",
+      "ear": null,
+      "rda": null,
+      "ai": 1.7,
+      "source": "ICMR-NIN 2020 via FSSAI adoption (secondary, unverified); not split by activity in snippets"
+    },
+    {
+      "group": "adult_male_heavy",
+      "ear": null,
+      "rda": null,
+      "ai": 1.7,
+      "source": "ICMR-NIN 2020 via FSSAI adoption (secondary, unverified); not split by activity in snippets"
+    },
+    {
+      "group": "adult_female_sedentary",
+      "ear": null,
+      "rda": null,
+      "ai": 1.7,
+      "source": "ICMR-NIN 2020 via FSSAI adoption (secondary, unverified)"
+    },
+    {
+      "group": "adult_female_moderate",
+      "ear": null,
+      "rda": null,
+      "ai": 1.7,
+      "source": "ICMR-NIN 2020 via FSSAI adoption (secondary, unverified); not split by activity in snippets"
+    },
+    {
+      "group": "adult_female_heavy",
+      "ear": null,
+      "rda": null,
+      "ai": 1.7,
+      "source": "ICMR-NIN 2020 via FSSAI adoption (secondary, unverified); not split by activity in snippets"
+    },
+    {
+      "group": "pregnant",
+      "ear": null,
+      "rda": null,
+      "ai": null,
+      "source": "ICMR value Not found; NIH ODS RDA 1.0 mg and EFSA AI 1.5 mg (secondary); general adult 1.7 used as placeholder"
+    },
+    {
+      "group": "lactating",
+      "ear": null,
+      "rda": null,
+      "ai": null,
+      "source": "ICMR value Not found; NIH ODS RDA 1.3 mg and EFSA AI 1.5 mg (secondary); general adult 1.7 used as placeholder"
+    }
+  ],
+  "appDefaultTarget": {
+    "adult_male": 1.7,
+    "adult_female": 1.7,
+    "pregnant": null,
+    "lactating": null,
+    "age_60_plus": null
+  },
+  "upperLimit": {
+    "value": 10,
+    "unit": "mg",
+    "appliesTo": "food_and_supplements",
+    "source": "US NASEM/IOM adult UL via NIH ODS (snippet, secondary); EFSA/SCF UL 5 mg; ICMR-NIN TUL Not found; app flags supplement totals at 5 mg (est.)"
+  },
+  "topFoodSources": [
+    {
+      "food": "Goat liver, raw (IFCT O008)",
+      "veg": false,
+      "per100g": 3.7,
+      "servingG": 50,
+      "servingLabel": "50 g raw, 4-5 small pieces (est.)",
+      "perServing": 1.85
+    },
+    {
+      "food": "Sunflower seeds (IFCT H020)",
+      "veg": true,
+      "per100g": 2.78,
+      "servingG": 20,
+      "servingLabel": "2 tbsp (est.)",
+      "perServing": 0.56
+    },
+    {
+      "food": "Cashew nut (IFCT H005)",
+      "veg": true,
+      "per100g": 2.23,
+      "servingG": 20,
+      "servingLabel": "about 12-14 nuts (est.)",
+      "perServing": 0.45
+    },
+    {
+      "food": "Walnut (IFCT H021)",
+      "veg": true,
+      "per100g": 1.52,
+      "servingG": 20,
+      "servingLabel": "about 4 halves (est.)",
+      "perServing": 0.3
+    },
+    {
+      "food": "Sesame seeds, white (IFCT H011)",
+      "veg": true,
+      "per100g": 1.5,
+      "servingG": 10,
+      "servingLabel": "1 tbsp (est.)",
+      "perServing": 0.15
+    },
+    {
+      "food": "Toor dal, dry (IFCT B021)",
+      "veg": true,
+      "per100g": 1.14,
+      "servingG": 40,
+      "servingLabel": "1 katori cooked, 40 g dry (est.)",
+      "perServing": 0.46
+    },
+    {
+      "food": "Moong whole, dry (IFCT B011)",
+      "veg": true,
+      "per100g": 1,
+      "servingG": 40,
+      "servingLabel": "40 g dry (est.)",
+      "perServing": 0.4
+    },
+    {
+      "food": "Rajmah brown, dry (IFCT B019)",
+      "veg": true,
+      "per100g": 0.89,
+      "servingG": 40,
+      "servingLabel": "40 g dry (est.)",
+      "perServing": 0.36
+    },
+    {
+      "food": "Chana whole, dry (IFCT B002)",
+      "veg": true,
+      "per100g": 0.85,
+      "servingG": 40,
+      "servingLabel": "40 g dry (est.)",
+      "perServing": 0.34
+    },
+    {
+      "food": "Ragi flour (IFCT A010)",
+      "veg": true,
+      "per100g": 0.67,
+      "servingG": 50,
+      "servingLabel": "50 g flour (est.)",
+      "perServing": 0.34
+    },
+    {
+      "food": "Wheat atta (IFCT A019)",
+      "veg": true,
+      "per100g": 0.48,
+      "servingG": 60,
+      "servingLabel": "2 rotis (est.)",
+      "perServing": 0.29
+    }
+  ],
+  "goodSourceDishes": [
+    {
+      "dishNumber": 12,
+      "dishName": "Rajma Chawal"
+    },
+    {
+      "dishNumber": 56,
+      "dishName": "Pesarattu"
+    },
+    {
+      "dishNumber": 8,
+      "dishName": "Chole (Chana Masala)"
+    },
+    {
+      "dishNumber": 26,
+      "dishName": "Moong Dal Chilla"
+    },
+    {
+      "dishNumber": 27,
+      "dishName": "Dal Makhani"
+    },
+    {
+      "dishNumber": 66,
+      "dishName": "Sprouts Chaat"
+    },
+    {
+      "dishNumber": 78,
+      "dishName": "Navratan Korma"
+    },
+    {
+      "dishNumber": 42,
+      "dishName": "Malai Kofta"
+    },
+    {
+      "dishNumber": 63,
+      "dishName": "Shahi Paneer"
+    },
+    {
+      "dishNumber": 71,
+      "dishName": "Ragi Dosa"
+    }
+  ],
+  "deficiencyRiskIndia": "low",
+  "absorptionBoosters": [
+    "Low habitual intake (the gut absorbs a larger share when intake is under about 1 mg/day)"
+  ],
+  "absorptionBlockers": [
+    "High-dose zinc supplements",
+    "High-dose iron supplements",
+    "Very high-dose vitamin C (evidence mixed)",
+    "Phytate and fibre (weak, secondary)"
+  ],
+  "logPresets": [
+    {
+      "label": "Basic multivitamin tablet, about 30 µg on one common label (secondary)",
+      "amount": 0.03,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 0.03,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Multivitamin-mineral, about 0.5 mg copper on label",
+      "amount": 0.5,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "markdown",
+      "mainAmount": 0.5,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Multivitamin-mineral, about 1 mg copper on label",
+      "amount": 1,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "markdown",
+      "mainAmount": 1,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Copper-containing tablet, about 2 mg copper on label",
+      "amount": 2,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "markdown",
+      "mainAmount": 2,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    }
+  ],
+  "warnings": [
+    "Copper is tracked as a target with a ceiling: 1.7 mg/day goal (ICMR-NIN via FSSAI, secondary, unverified); upper limit 10 mg/day (US), 5 mg/day (EFSA).",
+    "Never suggest a copper supplement to fill the ring; food provides enough for almost everyone.",
+    "Wilson disease and Menkes disease are doctor-led (requires_doctor_input): no targets, no diet rules, show 'Follow your doctor's advice'.",
+    "Zinc supplements of 25 mg or more daily for more than 4 weeks can lower copper; suggest asking a doctor or pharmacist.",
+    "Anaemia that does not respond to iron, numbness or unsteady walking (especially after weight-loss surgery or long zinc use): talk to your doctor.",
+    "Do not boil or store milk (especially infant milk) in brass or copper vessels; avoid unlined copper or brass for acidic food such as tamarind, curd, tomato or lemon dishes.",
+    "Water stored in copper vessels gains copper with time (up to 0.82 mg/L in 168 hours in one Indian test); not advised for children, liver disease or Wilson disease.",
+    "Liver (organ meat) is the only common food that can overshoot the daily target in one serving; keep portions small.",
+    "Do not use IFCT octopus (R003 6.72 mg/100 g), beef liver (O032) or calf liver (O042): suspect values."
+  ],
+  "conditionAdjustments": [
+    {
+      "profileId": "P7",
+      "change": "No copper target change found; unexplained abnormal liver tests need a doctor (Wilson disease is one cause); no organ-meat pushes; requires doctor input",
+      "value": null,
+      "unit": "mg",
+      "source": "EASL Wilson disease guideline summaries (secondary); No change found for targets"
+    },
+    {
+      "profileId": "P11",
+      "change": "No target change; if haemoglobin does not rise on iron, ask the doctor about copper and zinc; high-dose iron can lower copper status",
+      "value": 1.7,
+      "unit": "mg",
+      "source": "Micronutrient interaction review (PubMed 11509108); copper deficiency reviews (PubMed 31209935)"
+    },
+    {
+      "profileId": "P12",
+      "change": "Copper deficiency can mimic B12 deficiency; persistent numbness or unsteadiness with normal or low-normal B12: doctor checks copper and zinc; requires doctor input for symptoms",
+      "value": null,
+      "unit": "mg",
+      "source": "Copper-deficiency myeloneuropathy case reports and reviews (PMC)"
+    },
+    {
+      "profileId": "P13",
+      "change": "No ICMR value found; zinc during dialysis has caused copper deficiency; requires doctor input",
+      "value": null,
+      "unit": "mg",
+      "source": "Copper-deficiency reviews (secondary); No change found for food targets"
+    },
+    {
+      "profileId": "P19",
+      "change": "Malabsorption can cause deficiency; target unchanged; symptoms prompt a doctor visit",
+      "value": 1.7,
+      "unit": "mg",
+      "source": "Consumer lists of causes (secondary); No change found"
+    },
+    {
+      "profileId": "P20",
+      "change": "No change found; weak bones are listed among deficiency effects",
+      "value": null,
+      "unit": "mg",
+      "source": "NIH ODS (snippet)"
+    },
+    {
+      "profileId": "P22",
+      "change": "Needs slightly higher (NIH 1.0, EFSA 1.5 mg); ICMR Not found; food first, no routine supplement; requires doctor input",
+      "value": null,
+      "unit": "mg",
+      "source": "NIH ODS (snippet); EFSA 2015 abstract"
+    },
+    {
+      "profileId": "P23",
+      "change": "Needs slightly higher (NIH 1.3, EFSA 1.5 mg); ICMR Not found; food first; requires doctor input for supplements",
+      "value": null,
+      "unit": "mg",
+      "source": "NIH ODS (snippet); EFSA 2015 abstract"
+    },
+    {
+      "profileId": "P27",
+      "change": "Check zinc-combo gym supplements: zinc 25 mg or more daily for weeks can lower copper; no change to copper target",
+      "value": 1.7,
+      "unit": "mg",
+      "source": "Zinc-copper interaction (NIH ODS UL basis; topic 22)"
+    },
+    {
+      "profileId": "P31",
+      "change": "ICMR 60+ Not found; general adult value; zinc-containing denture adhesives and long zinc use can cause deficiency",
+      "value": 1.7,
+      "unit": "mg",
+      "source": "Case reports (PMC, Ann Clin Biochem 2011)"
+    },
+    {
+      "profileId": "P33",
+      "change": "No change found; nuts, seeds, dals and whole grains are Jain-compatible sources",
+      "value": null,
+      "unit": "mg",
+      "source": "No change found"
+    },
+    {
+      "profileId": "P34",
+      "change": "No change found; vegetarian diets are often higher in copper but phytate lowers absorption",
+      "value": null,
+      "unit": "mg",
+      "source": "Review of trace elements in vegetarian diets (1994, secondary)"
+    }
+  ],
+  "lastResearched": "2026-11-04",
+  "versions": [
+    {
+      "date": "2026-11-04",
+      "file": "FitPlate_Nutrients_2026-11-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3)",
+    "upperLimit": "official safety limit (D3, lower on conflict)",
+    "topFoodSources": "union; per100g official (D3)",
+    "logPresets": "union by label (newest), converted with own file factors",
+    "appDefaultTarget": "newest, kept only where it equals the ICMR row",
+    "lists": "union",
+    "warnings": "union (never dropped)",
+    "text": "newest"
+  },
+  "mergeNotes": [],
+  "needsReview": [
+    "app_default_target.pregnant = 1.7 has no ICMR row to match (pregnant: \"ICMR value Not found; NIH ODS RDA 1.0 mg and EFSA AI 1.5 mg (secondary); general adult 1.7 used as placeholder\"); set to null",
+    "app_default_target.lactating = 1.7 has no ICMR row to match (lactating: \"ICMR value Not found; NIH ODS RDA 1.3 mg and EFSA AI 1.5 mg (secondary); general adult 1.7 used as placeholder\"); set to null",
+    "2026-11-04 copper: \"group\" has unexpected value \"age_60_plus_male\"; treated as not found",
+    "2026-11-04 copper: \"group\" has unexpected value \"age_60_plus_female\"; treated as not found"
+  ]
+}

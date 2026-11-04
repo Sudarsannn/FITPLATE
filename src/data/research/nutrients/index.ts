@@ -4,7 +4,9 @@ import type { Nutrient } from '../../../models/nutrient';
 import item_biotin from './biotin.json';
 import item_calcium from './calcium.json';
 import item_chloride from './chloride.json';
+import item_copper from './copper.json';
 import item_iron from './iron.json';
+import item_manganese from './manganese.json';
 import item_niacin from './niacin.json';
 import item_pantothenic_acid from './pantothenic-acid.json';
 import item_phosphorus from './phosphorus.json';
@@ -25,7 +27,9 @@ export const items: Nutrient[] = [
   item_biotin as unknown as Nutrient,
   item_calcium as unknown as Nutrient,
   item_chloride as unknown as Nutrient,
+  item_copper as unknown as Nutrient,
   item_iron as unknown as Nutrient,
+  item_manganese as unknown as Nutrient,
   item_niacin as unknown as Nutrient,
   item_pantothenic_acid as unknown as Nutrient,
   item_phosphorus as unknown as Nutrient,

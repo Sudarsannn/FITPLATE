@@ -9,7 +9,8 @@ import { DishRow } from '../../components/DishCard';
 import { SavingsCard } from '../../components/SavingsCard';
 import { IconBadge, type IconName } from '../../components/Icon';
 import { Bar, CountUp, FadeIn, Glass, SectionHeader } from '../../components/ui';
-import { addDays, allowedDishes, dayKey, dayTotals, FIBRE_TARGET, GOALS, useStore, WATER_TARGET } from '../../lib/store';
+import { addDays, allowedDishes, dayKey, dayTotals, FIBRE_TARGET, useStore, WATER_TARGET } from '../../lib/store';
+import { useTargets } from '../../lib/useTargets';
 import { colors, radius, type } from '../../theme';
 
 const DAY = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
@@ -42,7 +43,7 @@ type Ctx = { cooked: number; streak: number; saved: number; proteinDays: number;
 // `embedded` is set by the Track tab, which draws its own top inset and switcher.
 export function ProgressScreen({ embedded = false }: { embedded?: boolean }) {
   const { days, profile, moneySaved, streak } = useStore();
-  const goal = GOALS[profile.goal];
+  const { goal } = useTargets();
   const week = Array.from({ length: 7 }, (_, i) => addDays(new Date(), i - 6));
   const logs = week.map((d) => days[dayKey(d)]);
   const totals = logs.map((l) => (l ? dayTotals(l) : { kcalIn: 0, kcalOut: 0, protein: 0, fibre: 0 }));

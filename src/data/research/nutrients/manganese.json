@@ -1,0 +1,345 @@
+{
+  "id": "manganese",
+  "name": "Manganese",
+  "type": "mineral",
+  "subtype": "trace-mineral",
+  "unit": "mg",
+  "altUnits": [
+    {
+      "unit": "µg",
+      "toMainUnitFactor": 0.001
+    }
+  ],
+  "unitConversions": [
+    {
+      "fromUnit": "mg",
+      "compound": "mn",
+      "toMainUnitFactor": 1,
+      "raw": "1 mg Mn | 1,000 µg Mn"
+    },
+    {
+      "fromUnit": "µg",
+      "compound": "/l",
+      "toMainUnitFactor": 18.2,
+      "raw": "1 µg/L (blood or water) | 18.2 nmol/L"
+    }
+  ],
+  "targets": [
+    {
+      "group": "adult_male_sedentary",
+      "ear": null,
+      "rda": null,
+      "ai": 4,
+      "source": "ICMR-NIN 2020 single value 4 mg/day (secondary, unverified); EAR Not found"
+    },
+    {
+      "group": "adult_male_moderate",
+      "ear": null,
+      "rda": null,
+      "ai": 4,
+      "source": "ICMR-NIN 2020 (secondary, unverified); not split by activity in snippets"
+    },
+    {
+      "group": "adult_male_heavy",
+      "ear": null,
+      "rda": null,
+      "ai": 4,
+      "source": "ICMR-NIN 2020 (secondary, unverified); not split by activity in snippets"
+    },
+    {
+      "group": "adult_female_sedentary",
+      "ear": null,
+      "rda": null,
+      "ai": 4,
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "group": "adult_female_moderate",
+      "ear": null,
+      "rda": null,
+      "ai": 4,
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "group": "adult_female_heavy",
+      "ear": null,
+      "rda": null,
+      "ai": 4,
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "group": "pregnant",
+      "ear": null,
+      "rda": null,
+      "ai": null,
+      "source": "ICMR value Not found; NASEM AI 2.0 mg, EFSA 2013 AI 3 mg (secondary)"
+    },
+    {
+      "group": "lactating",
+      "ear": null,
+      "rda": null,
+      "ai": null,
+      "source": "ICMR value Not found; NASEM AI 2.6 mg, EFSA 2013 AI 3 mg (secondary)"
+    }
+  ],
+  "appDefaultTarget": {
+    "adult_male": 4,
+    "adult_female": 4,
+    "pregnant": null,
+    "lactating": null,
+    "age_60_plus": null
+  },
+  "upperLimit": {
+    "value": 11,
+    "unit": "mg",
+    "appliesTo": "food_and_supplements",
+    "source": "US NASEM 2001 UL for adults 19+ via NIH ODS and Harvard Nutrition Source summaries (secondary); ICMR TUL Not found; EFSA 2023 safe level 8 mg/day (not a UL)"
+  },
+  "topFoodSources": [
+    {
+      "food": "Ragi / finger millet (IFCT A010)",
+      "veg": true,
+      "per100g": 3.19,
+      "servingG": 40,
+      "servingLabel": "40 g flour, about 1 ragi dosa (est.)",
+      "perServing": 1.28
+    },
+    {
+      "food": "Whole wheat atta (IFCT A019)",
+      "veg": true,
+      "per100g": 2.98,
+      "servingG": 60,
+      "servingLabel": "60 g atta, 2 medium rotis (est.)",
+      "perServing": 1.79
+    },
+    {
+      "food": "Amaranth seed, black / rajgira (IFCT A001)",
+      "veg": true,
+      "per100g": 5.29,
+      "servingG": 30,
+      "servingLabel": "30 g, about 2 tbsp (est.)",
+      "perServing": 1.59
+    },
+    {
+      "food": "Bengal gram, whole / kala chana (IFCT B002)",
+      "veg": true,
+      "per100g": 2.71,
+      "servingG": 50,
+      "servingLabel": "50 g dry, about 1 katori cooked (est.)",
+      "perServing": 1.36
+    },
+    {
+      "food": "Walnut (IFCT H021)",
+      "veg": true,
+      "per100g": 3.47,
+      "servingG": 30,
+      "servingLabel": "30 g, about 6 halves (est.)",
+      "perServing": 1.04
+    },
+    {
+      "food": "Spinach / palak (IFCT C033)",
+      "veg": true,
+      "per100g": 1.12,
+      "servingG": 100,
+      "servingLabel": "100 g raw, about 1 katori cooked (est.)",
+      "perServing": 1.12
+    },
+    {
+      "food": "Brown rice, raw (IFCT A013)",
+      "veg": true,
+      "per100g": 1.7,
+      "servingG": 60,
+      "servingLabel": "60 g raw, about 1.5 katori cooked (est.)",
+      "perServing": 1.02
+    },
+    {
+      "food": "Black tea, brewed (infusion data, est.; not in IFCT)",
+      "veg": true,
+      "per100g": null,
+      "servingG": 165,
+      "servingLabel": "1 cup chai, 150-180 ml (est.)",
+      "perServing": 0.4
+    }
+  ],
+  "goodSourceDishes": [
+    {
+      "dishNumber": 11,
+      "dishName": "Aloo Paratha"
+    },
+    {
+      "dishNumber": 46,
+      "dishName": "Methi Thepla"
+    },
+    {
+      "dishNumber": 71,
+      "dishName": "Ragi Dosa"
+    },
+    {
+      "dishNumber": 8,
+      "dishName": "Chole (Chana Masala)"
+    },
+    {
+      "dishNumber": 16,
+      "dishName": "Besan Chilla"
+    },
+    {
+      "dishNumber": 6,
+      "dishName": "Upma"
+    },
+    {
+      "dishNumber": 56,
+      "dishName": "Pesarattu"
+    }
+  ],
+  "deficiencyRiskIndia": "low",
+  "absorptionBoosters": [
+    "Low iron stores increase manganese absorption (not a goal)",
+    "Whole grains and millets instead of polished grains keep more manganese in the food"
+  ],
+  "absorptionBlockers": [
+    "Iron (food or tablets)",
+    "Calcium",
+    "Phytate in whole grains and pulses",
+    "Soy-based infant formula lowers infant absorption"
+  ],
+  "logPresets": [
+    {
+      "label": "Multivitamin trace-mineral tablet, about 1 mg (check label)",
+      "amount": 1,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 1,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Multivitamin tablet, about 2 mg (check label)",
+      "amount": 2,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 2,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Multivitamin tablet, about 5 mg (some current Indian labels; check if elemental)",
+      "amount": 5,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 5,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Joint-health combination at trial-level dose, about 20 mg per dose (est.) (prescription dose)",
+      "amount": 20,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 20,
+      "mainAmountRange": null,
+      "prescriptionDose": true
+    }
+  ],
+  "warnings": [
+    "Manganese has a ceiling: US UL 11 mg/day (food + water + supplements); EFSA 2023 safe level 8 mg/day. ICMR TUL Not found.",
+    "ICMR 4 mg/day is a single value seen only through snippets (secondary, unverified); the 2019 FSSAI note traces 4.0 mg to ICMR 2010.",
+    "Labels may show compound weight, not elemental manganese: manganese sulfate monohydrate is 32.5% Mn, gluconate 12.3% (calc.).",
+    "Not for supplement suggestions in liver disease, cholestasis, parenteral nutrition, iron deficiency, pregnancy or breastfeeding without a doctor; requires doctor input.",
+    "Occupational exposure (welding, mining, battery or steel work) and high-manganese borewell water add to intake: BIS acceptable limit 0.1 mg/L; WHO provisional 0.08 mg/L.",
+    "Tea, besan, oats, kabuli chana and packaged foods have no IFCT manganese value: show approximate, never zero.",
+    "Tremor, stiffness, slowed movement or new mood or memory change with these risks: see a doctor."
+  ],
+  "conditionAdjustments": [
+    {
+      "profileId": "P7",
+      "change": "No change to food target; no manganese supplements without doctor input because bile excretion can fall in liver disease; requires doctor input",
+      "value": null,
+      "unit": "mg",
+      "source": "Manganese toxicity and PN/cholestasis reviews (PMC5606512, PMC4007395; via search summaries)"
+    },
+    {
+      "profileId": "P11",
+      "change": "No change to target; low iron raises manganese absorption, so avoid extra manganese supplements and treat the iron deficiency",
+      "value": null,
+      "unit": "mg",
+      "source": "Iron-manganese transporter reviews (animal and cell data) and observational Karachi data (via search summaries)"
+    },
+    {
+      "profileId": "P13",
+      "change": "Not found; ask the doctor before supplements; requires doctor input",
+      "value": null,
+      "unit": "mg",
+      "source": "Not found"
+    },
+    {
+      "profileId": "P20",
+      "change": "No change found; manganese supports bone-forming enzymes (animal evidence); no supplement push",
+      "value": null,
+      "unit": "mg",
+      "source": "Textbook-type summaries (low quality); No change found"
+    },
+    {
+      "profileId": "P22",
+      "change": "ICMR value Not found; NASEM AI 2.0, EFSA 3; EFSA 2023 safe level 8 includes pregnancy; food only unless the doctor advises; requires doctor input",
+      "value": 2,
+      "unit": "mg",
+      "source": "NASEM via Harvard Nutrition Source (secondary); EFSA 2013; EFSA 2023"
+    },
+    {
+      "profileId": "P23",
+      "change": "ICMR value Not found; NASEM AI 2.6, EFSA 3; food only unless the doctor advises; requires doctor input",
+      "value": 2.6,
+      "unit": "mg",
+      "source": "NASEM via Harvard Nutrition Source (secondary); EFSA 2013"
+    },
+    {
+      "profileId": "P31",
+      "change": "Same target; keep supplemental manganese low (EFSA earlier view 0.5 mg/day supplemental for older people)",
+      "value": 0.5,
+      "unit": "mg",
+      "source": "EFSA/EVM guidance via search summary (secondary, unverified)"
+    },
+    {
+      "profileId": "P33",
+      "change": "No change found; grains, millets, pulses, nuts and tea are all allowed; ginger and turmeric are minor sources",
+      "value": null,
+      "unit": "mg",
+      "source": "No change found; IFCT 2017"
+    },
+    {
+      "profileId": "P34",
+      "change": "No change found; plant-based diets tend to give more manganese",
+      "value": null,
+      "unit": "mg",
+      "source": "Frontiers in Nutrition 2024 vegan/vegetarian/omnivore study"
+    }
+  ],
+  "lastResearched": "2026-11-04",
+  "versions": [
+    {
+      "date": "2026-11-04",
+      "file": "FitPlate_Nutrients_2026-11-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3)",
+    "upperLimit": "official safety limit (D3, lower on conflict)",
+    "topFoodSources": "union; per100g official (D3)",
+    "logPresets": "union by label (newest), converted with own file factors",
+    "appDefaultTarget": "newest, kept only where it equals the ICMR row",
+    "lists": "union",
+    "warnings": "union (never dropped)",
+    "text": "newest"
+  },
+  "mergeNotes": [],
+  "needsReview": [
+    "app_default_target.pregnant = 4 has no ICMR row to match (pregnant: \"ICMR value Not found; NASEM AI 2.0 mg, EFSA 2013 AI 3 mg (secondary)\"); set to null",
+    "app_default_target.lactating = 4 has no ICMR row to match (lactating: \"ICMR value Not found; NASEM AI 2.6 mg, EFSA 2013 AI 3 mg (secondary)\"); set to null",
+    "2026-11-04 manganese: \"group\" has unexpected value \"age_60_plus_male\"; treated as not found",
+    "2026-11-04 manganese: \"group\" has unexpected value \"age_60_plus_female\"; treated as not found"
+  ]
+}

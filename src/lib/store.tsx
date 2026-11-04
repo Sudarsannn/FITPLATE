@@ -165,6 +165,9 @@ type Store = State & {
   /** From the profile; picks the ICMR-NIN target group for the nutrient bars (null = not given). */
   sex: 'male' | 'female' | null;
   setSex: (sex: 'male' | 'female') => void;
+  /** Private yes/no flags from the profile (pregnant, lactating). Never shown outside the app. */
+  privateFlags: Record<string, boolean>;
+  setPrivateFlag: (key: 'pregnant' | 'lactating', on: boolean) => void;
   /** Age, height, weight and activity from the profile (null = not given). */
   body: Pick<UserProfile, 'age' | 'heightCm' | 'weightKg' | 'activityLevel'>;
   /** Kitchen equipment from the survey (UserProfile.equipmentOwned). */
@@ -382,6 +385,8 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       addWeight: (kg) => s?.addWeight(kg),
       bodyWeightKg: bodyWeight,
       setSex: (sex) => s?.updateProfile({ sex }),
+      privateFlags: docs.profile && !docs.profile.deleted ? (docs.profile.privateFlags ?? {}) : {},
+      setPrivateFlag: (key, on) => s?.updateProfile({ privateFlags: { ...(docs.profile?.privateFlags ?? {}), [key]: on } }),
       body: {
         age: docs.profile && !docs.profile.deleted ? docs.profile.age : null,
         heightCm: docs.profile && !docs.profile.deleted ? docs.profile.heightCm : null,

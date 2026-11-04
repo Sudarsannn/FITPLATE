@@ -5,6 +5,7 @@ import item_fatty_liver from './fatty-liver.json';
 import item_high_ldl_cholesterol from './high-ldl-cholesterol.json';
 import item_high_triglycerides from './high-triglycerides.json';
 import item_hypertension from './hypertension.json';
+import item_hypothyroidism from './hypothyroidism.json';
 import item_low_hdl_metabolic_syndrome from './low-hdl-metabolic-syndrome.json';
 import item_pcos from './pcos.json';
 import item_prediabetes from './prediabetes.json';
@@ -15,6 +16,7 @@ export const items: HealthCondition[] = [
   item_high_ldl_cholesterol as unknown as HealthCondition,
   item_high_triglycerides as unknown as HealthCondition,
   item_hypertension as unknown as HealthCondition,
+  item_hypothyroidism as unknown as HealthCondition,
   item_low_hdl_metabolic_syndrome as unknown as HealthCondition,
   item_pcos as unknown as HealthCondition,
   item_prediabetes as unknown as HealthCondition,

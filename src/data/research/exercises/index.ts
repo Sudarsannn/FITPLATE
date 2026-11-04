@@ -5,8 +5,11 @@ import item_adho_mukha_svanasana from './adho-mukha-svanasana.json';
 import item_balasana_childs_pose from './balasana-childs-pose.json';
 import item_barbell_back_squat from './barbell-back-squat.json';
 import item_barbell_deadlift from './barbell-deadlift.json';
+import item_barbell_flat_bench_press from './barbell-flat-bench-press.json';
 import item_bhujangasana_cobra_pose from './bhujangasana-cobra-pose.json';
 import item_bodyweight_squat from './bodyweight-squat.json';
+import item_calf_raise from './calf-raise.json';
+import item_cat_cow from './cat-cow.json';
 import item_dead_bug from './dead-bug.json';
 import item_desk_neck_shoulder_release from './desk-neck-shoulder-release.json';
 import item_elliptical_cross_trainer from './elliptical-cross-trainer.json';
@@ -33,14 +36,18 @@ import item_superman_back_raise from './superman-back-raise.json';
 import item_surya_namaskar from './surya-namaskar.json';
 import item_thoracic_rotation_chest_opener from './thoracic-rotation-chest-opener.json';
 import item_treadmill from './treadmill.json';
+import item_wall_sit from './wall-sit.json';
 
 export const items: Exercise[] = [
   item_adho_mukha_svanasana as unknown as Exercise,
   item_balasana_childs_pose as unknown as Exercise,
   item_barbell_back_squat as unknown as Exercise,
   item_barbell_deadlift as unknown as Exercise,
+  item_barbell_flat_bench_press as unknown as Exercise,
   item_bhujangasana_cobra_pose as unknown as Exercise,
   item_bodyweight_squat as unknown as Exercise,
+  item_calf_raise as unknown as Exercise,
+  item_cat_cow as unknown as Exercise,
   item_dead_bug as unknown as Exercise,
   item_desk_neck_shoulder_release as unknown as Exercise,
   item_elliptical_cross_trainer as unknown as Exercise,
@@ -67,4 +74,5 @@ export const items: Exercise[] = [
   item_surya_namaskar as unknown as Exercise,
   item_thoracic_rotation_chest_opener as unknown as Exercise,
   item_treadmill as unknown as Exercise,
+  item_wall_sit as unknown as Exercise,
 ];

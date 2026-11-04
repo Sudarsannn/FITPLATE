@@ -9,7 +9,8 @@ import { MyMeals } from '../../components/meals/MyMeals';
 import { NutritionCard } from '../../components/NutritionCard';
 import { FadeIn, Glass, PressableScale, TopGlow } from '../../components/ui';
 import { select } from '../../lib/haptics';
-import { FIBRE_TARGET, GOALS, useStore } from '../../lib/store';
+import { FIBRE_TARGET, useStore } from '../../lib/store';
+import { useTargets } from '../../lib/useTargets';
 import { colors, radius, type } from '../../theme';
 import { PlanScreen } from './plan';
 import { ProgressScreen } from './progress';
@@ -65,8 +66,8 @@ export default function Track() {
 
 /** Every bar for today: calories, protein, fibre, carbs and fat, the calorie split, and each vitamin and mineral. */
 function NutritionScreen() {
-  const { today, profile, sex } = useStore();
-  const goal = GOALS[profile.goal];
+  const { today, sex } = useStore();
+  const { goal } = useTargets();
   return (
     <ScrollView contentContainerStyle={{ padding: 18, paddingBottom: 140 }} showsVerticalScrollIndicator={false}>
       <FadeIn i={0}>

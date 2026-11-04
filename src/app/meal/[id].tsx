@@ -11,7 +11,8 @@ import { useMealMoney } from '../../components/meals/MealPanel';
 import { Bar, FadeIn, Glass, GradientButton } from '../../components/ui';
 import { ScreenTop } from '../../components/vendors/kit';
 import { getDish, researchNutrients } from '../../data/research';
-import { FIBRE_TARGET, GOALS, useStore } from '../../lib/store';
+import { FIBRE_TARGET, useStore } from '../../lib/store';
+import { useTargets } from '../../lib/useTargets';
 import { dayMicros } from '../../services/dayNutrition';
 import { caloriesSaved } from '../../services/dishDetail';
 import { HOW_LABEL, MONEY_COLOR, SLOT_LABEL, findMeal, howOf, timeLabel, type MealRow } from '../../services/meals';
@@ -24,7 +25,8 @@ import { colors, radius, type } from '../../theme';
  */
 export default function MealPage() {
   const { id } = useLocalSearchParams<{ id: string }>();
-  const { days, profile, sex } = useStore();
+  const { days, sex } = useStore();
+  const { goal } = useTargets();
   const meal = id ? findMeal(days, id) : null;
   if (!meal) {
     return (
@@ -34,7 +36,7 @@ export default function MealPage() {
       </SafeAreaView>
     );
   }
-  return <Body meal={meal} days={days} goal={GOALS[profile.goal]} sex={sex} />;
+  return <Body meal={meal} days={days} goal={goal} sex={sex} />;
 }
 
 function Body({ meal, days, goal, sex }: { meal: MealRow; days: ReturnType<typeof useStore>['days']; goal: { kcal: number; protein: number; label: string }; sex: 'male' | 'female' | null }) {

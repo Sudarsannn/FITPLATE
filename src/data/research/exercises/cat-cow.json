@@ -1,0 +1,700 @@
+{
+  "id": "cat-cow",
+  "number": 10,
+  "name": "Marjaryasana-Bitilasana (Cat-Cow)",
+  "otherNames": [
+    "Cat-cow stretch",
+    "Marjari-Bitilasana",
+    "Marjari asana (cat stretch)",
+    "Tabletop spinal wave",
+    "Seated cat-cow",
+    "Chair cat-cow"
+  ],
+  "section": "yoga_stretch",
+  "type": "yoga_asana",
+  "equipment": [
+    "yoga mat or carpet (optional)",
+    "folded blanket or towel for knee padding (optional)",
+    "rolled towel or yoga blocks for wrists (optional)",
+    "sturdy non-wheeled chair (seated version)"
+  ],
+  "noEquipmentAlternative": "Tabletop cat-cow on a carpet or folded bedsheet, on the fists if the wrists are sore, or seated cat-cow at a desk",
+  "musclesPrimary": [
+    "erector spinae and multifidus (stretched and worked)",
+    "rectus abdominis and transversus abdominis (worked and stretched)"
+  ],
+  "musclesSecondary": [
+    "serratus anterior",
+    "rhomboids and trapezius",
+    "neck flexors and extensors",
+    "pectorals (stretched in cow)",
+    "hip flexors and glutes (steadying)",
+    "wrist and forearm muscles (loaded)"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 2.3,
+  "compendiumCode": "02150",
+  "metOptions": [
+    {
+      "code": "02150",
+      "met": 2.3,
+      "activity": "MET: 2.3, 2024 Adult Compendium of Physical Activities, code 02150, \"Yoga, Hatha\" (Conditioning Exercise heading). This matches the beginner prescription (a slow, light flowing yoga movement). Extras "
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "flexibility",
+      "sets": 1,
+      "reps": "8 cycles of cow plus cat",
+      "timeSec": null,
+      "restSec": 15,
+      "tempo": "one breath each way",
+      "perWeek": 6
+    },
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 1,
+      "reps": "8-10 cycles before exercise",
+      "timeSec": null,
+      "restSec": 0,
+      "tempo": "one breath each way",
+      "perWeek": 5
+    },
+    {
+      "level": "beginner",
+      "goal": "relaxation",
+      "sets": 1,
+      "reps": "10 slow cycles, evening",
+      "timeSec": null,
+      "restSec": 0,
+      "tempo": "5 s each way",
+      "perWeek": 5
+    },
+    {
+      "level": "intermediate",
+      "goal": "flexibility",
+      "sets": 2,
+      "reps": "10 cycles, small hip shifts or thread-the-needle",
+      "timeSec": null,
+      "restSec": 15,
+      "tempo": "4 s each way",
+      "perWeek": 6
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 2,
+      "reps": "10 cycles before yoga or lifting",
+      "timeSec": null,
+      "restSec": 10,
+      "tempo": "4 s each way",
+      "perWeek": 5
+    },
+    {
+      "level": "advanced",
+      "goal": "flexibility",
+      "sets": 3,
+      "reps": "12 cycles, larger range, bird-dog link",
+      "timeSec": null,
+      "restSec": 15,
+      "tempo": "4 s each way, 2 s pause",
+      "perWeek": 7
+    },
+    {
+      "level": "advanced",
+      "goal": "relaxation",
+      "sets": 3,
+      "reps": "10 slow cycles",
+      "timeSec": null,
+      "restSec": 0,
+      "tempo": "5 s each way",
+      "perWeek": 5
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "cow",
+        "joint": "head-spine proxy (nose-shoulder-hip)",
+        "angleDeg": ">= 165",
+        "parsed": {
+          "op": ">=",
+          "value": 165,
+          "max": null
+        }
+      },
+      {
+        "name": "cat",
+        "joint": "head-spine proxy (nose-shoulder-hip)",
+        "angleDeg": "<= 140",
+        "parsed": {
+          "op": "<=",
+          "value": 140,
+          "max": null
+        }
+      },
+      {
+        "name": "arms_straight",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": ">= 160",
+        "parsed": {
+          "op": ">=",
+          "value": 160,
+          "max": null
+        }
+      },
+      {
+        "name": "hips_stacked",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": "70 to 110",
+        "parsed": {
+          "op": "between",
+          "value": 70,
+          "max": 110
+        }
+      },
+      {
+        "name": "no_rock",
+        "joint": "hip landmarks front-to-back shift",
+        "angleDeg": "position flag: shift <= 10 cm",
+        "parsed": null
+      }
+    ],
+    "minRepSec": 3
+  },
+  "formChecks": [
+    {
+      "joint": "elbow",
+      "rule": "elbow angle < 160 deg (equals arms_straight phase threshold; arms bent)",
+      "message": "Keep your arms straight but soft"
+    },
+    {
+      "joint": "hip",
+      "rule": "hip angle < 70 or > 110 deg (equals hips_stacked phase threshold; hips not over knees)",
+      "message": "Keep your hips over your knees"
+    },
+    {
+      "joint": "neck",
+      "rule": "nose-shoulder-hip stays between 140 and 165 deg through a full breath (neither cow >= 165 nor cat <= 140 reached)",
+      "message": "Go a little further into the arch and the round"
+    },
+    {
+      "joint": "time",
+      "rule": "cycle shorter than 3 s (equals min_rep_sec)",
+      "message": "Slow down: one breath each way"
+    },
+    {
+      "joint": "hips",
+      "rule": "hip landmarks shift more than 10 cm front to back (equals no_rock phase flag, position flag not an angle)",
+      "message": "Rock less: tilt, don't shift"
+    }
+  ],
+  "safetyFlags": [
+    "wrist_injury_use_fists_forearms_or_chair_version",
+    "knee_pain_pad_knees_or_use_chair",
+    "lower_back_pain_small_pain_free_range",
+    "disc_herniation_with_leg_symptoms_ask_clinician",
+    "osteoporosis_gentle_range_ask_doctor_with_fracture",
+    "recent_spine_or_abdominal_surgery_ask_doctor",
+    "pregnancy_gentle_check_with_doctor",
+    "no_breath_holding",
+    "neck_do_not_force_chin",
+    "heart_disease_ask_doctor"
+  ],
+  "progressions": [
+    "Slower tempo (about 4 s each way) with a 2 s pause at each end",
+    "Thread-the-needle between cycles",
+    "Bird-dog link or hips shifted back in cat"
+  ],
+  "regressions": [
+    "Seated chair cat-cow",
+    "Padded tabletop with a smaller range",
+    "Fists, forearms or hands on a raised surface"
+  ],
+  "videoShots": [
+    {
+      "seconds": 6,
+      "angle": "side, 2 m at mat height",
+      "shows": "tabletop start, hands under shoulders, knees under hips",
+      "textOverlay": "Hands under shoulders. Knees under hips."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "cow, breathe in, tailbone up, chest forward",
+      "textOverlay": "Breathe in: lift chest."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "cat, breathe out, round the back, head relaxed",
+      "textOverlay": "Breathe out: round up."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 1.5 m",
+      "shows": "hands flat, fingers spread, plus fist and forearm versions",
+      "textOverlay": "Wrist sore? Use fists or forearms."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "folded blanket under the knees",
+      "textOverlay": "Pad your knees."
+    },
+    {
+      "seconds": 8,
+      "angle": "side/front, 2 m",
+      "shows": "seated chair cat-cow",
+      "textOverlay": "Desk reset: 8 slow reps."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, split screen, 2 m",
+      "shows": "wrong (fast, neck cranked, hips rocking) vs right",
+      "textOverlay": "Slow wave. Neck long."
+    },
+    {
+      "seconds": 6,
+      "angle": "side, 2 m",
+      "shows": "finish in Child's Pose",
+      "textOverlay": "Finish in Child's Pose."
+    }
+  ],
+  "lastResearched": "2026-11-04",
+  "setupSteps": [
+    "Mat and space. Lay the mat on a flat non-slip floor with about 1.8 m clear. Fold a blanket or towel into a thick pad if the floor is hard.",
+    "Clothes. Stretchy leggings or loose trousers that let the hips bend; tuck in long kurtas and dupattas so they do not bunch under the knees or hands. Bare feet or socks with grip; no shoes on the mat.",
+    "Padding. Put the folded blanket under the knees (and shins). If the wrists complain, a rolled towel under the heels of the hands or a pair of yoga blocks under the forearms (HealthLink BC and Brett Larkin style modifications).",
+    "Starting position (tabletop). Hands flat on the mat directly under the shoulders, fingers spread and pointing forward. Knees under the hips, hip-width apart. Arms straight but not locked (elbows soft). Back flat in neutral, head in line with the spine, eyes on the floor between the hands.",
+    "Starting position (chair). Sit near the front of a firm, non-wheeled chair, feet flat and hip-width apart, hands resting on the knees. Place the chair against a wall if it can slide.",
+    "Camera. Phone on a low stool at mat height, 2 m to the side of the mat at hip height, landscape, so head, shoulders, elbows, wrists, hips, knees and ankles are all in frame (see section 11)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": "A. Tabletop cat-cow on the mat (the default)",
+      "title": "Come to tabletop",
+      "action": "kneel, then place hands under shoulders and knees under hips.",
+      "feel": "weight shared on four points, no pinch in the wrists or knees.",
+      "breathing": "breathe normally.",
+      "tempo": "3 seconds.",
+      "visualCheck": "side view, back flat like a table; front view, hands and knees in two straight lines."
+    },
+    {
+      "n": 2,
+      "part": "A. Tabletop cat-cow on the mat (the default)",
+      "title": "Spread the hands and press down",
+      "action": "spread the fingers, press the whole palm (especially the base of the index finger and thumb) into the floor.",
+      "feel": "weight spread across the palm, not dumped into the heel of the hand.",
+      "breathing": "breathe normally.",
+      "tempo": "2 seconds.",
+      "visualCheck": "fingers pointing forward, elbows not locked."
+    },
+    {
+      "n": 3,
+      "part": "A. Tabletop cat-cow on the mat (the default)",
+      "title": "Set a neutral spine",
+      "action": "lengthen from the tailbone to the crown, head in line with the spine.",
+      "feel": "a long, quiet back; light tummy engagement.",
+      "breathing": "breathe normally.",
+      "tempo": "2 seconds.",
+      "visualCheck": "side view, ears, shoulders and hips in one straight line from the side."
+    },
+    {
+      "n": 4,
+      "part": "A. Tabletop cat-cow on the mat (the default)",
+      "title": "Breathe in and start the cow",
+      "action": "breathe in and gently tilt the tailbone up so the belly softens toward the floor.",
+      "feel": "a gentle arch in the lower back, a stretch across the front of the belly.",
+      "breathing": "slow breath in through the nose.",
+      "tempo": "3 seconds.",
+      "visualCheck": "side view, tailbone lifts first, back dips into a gentle curve."
+    },
+    {
+      "n": 5,
+      "part": "A. Tabletop cat-cow on the mat (the default)",
+      "title": "Open the chest and lift the gaze",
+      "action": "continue the same breath: slide the shoulder blades down the back, lift the chest forward, and look slightly forward, keeping the neck long.",
+      "feel": "chest opening, shoulder blades gliding down, no crunch at the back of the neck.",
+      "breathing": "finish the in-breath.",
+      "tempo": "1 to 2 seconds at the top.",
+      "visualCheck": "head lifts only a little; the chin does not jut and the neck does not crush."
+    },
+    {
+      "n": 6,
+      "part": "A. Tabletop cat-cow on the mat (the default)",
+      "title": "Breathe out and start the cat",
+      "action": "breathe out and tuck the tailbone toward the knees, drawing the belly button gently toward the spine.",
+      "feel": "tummy hollowing, low back lengthening.",
+      "breathing": "slow breath out through the nose or mouth.",
+      "tempo": "3 seconds.",
+      "visualCheck": "side view, the pelvis tilts under first."
+    },
+    {
+      "n": 7,
+      "part": "A. Tabletop cat-cow on the mat (the default)",
+      "title": "Round the upper back and release the head",
+      "action": "keep pressing the floor away, round the mid and upper back toward the ceiling, let the head hang loose without forcing the chin to the chest.",
+      "feel": "stretch between the shoulder blades and along the back of the spine.",
+      "breathing": "finish the out-breath, empty but not strained.",
+      "tempo": "1 to 2 seconds at the top.",
+      "visualCheck": "side view, a smooth round curve from tailbone to head, arms still straight."
+    },
+    {
+      "n": 8,
+      "part": "A. Tabletop cat-cow on the mat (the default)",
+      "title": "Return to neutral",
+      "action": "breathe normally and bring the back to flat for one breath.",
+      "feel": "a calm pause.",
+      "breathing": "one normal breath.",
+      "tempo": "2 seconds.",
+      "visualCheck": "tabletop again."
+    },
+    {
+      "n": 9,
+      "part": "A. Tabletop cat-cow on the mat (the default)",
+      "title": "Repeat the wave",
+      "action": "repeat steps 4 to 7 as one smooth wave, 8 to 10 times (see section 7).",
+      "feel": "spine loosening with each round; keep it pain-free.",
+      "breathing": "in for cow, out for cat.",
+      "tempo": "about 5 to 8 seconds per round (est.).",
+      "visualCheck": "same hip and hand position every rep; knees and hands do not drift."
+    },
+    {
+      "n": 10,
+      "part": "A. Tabletop cat-cow on the mat (the default)",
+      "title": "Finish",
+      "action": "after the last cat, return to neutral, then sit back toward the heels into Balasana (Child's Pose, Yoga & Stretch 8) for 2 to 3 breaths.",
+      "feel": "back soft and heavy.",
+      "breathing": "slow out-breaths.",
+      "tempo": "10 to 15 seconds.",
+      "visualCheck": "hips back on the heels, forehead down."
+    },
+    {
+      "n": 11,
+      "part": "C. Seated chair cat-cow (office version)",
+      "title": "Sit tall near the front of the chair. Feet flat, knees about 90 degrees (est.), hands on the knees. Breath normal",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 12,
+      "part": "C. Seated chair cat-cow (office version)",
+      "title": "Breathe in, lift the chest (cow). Gently arch the lower back, slide the shoulder blades down, look slightly ahead",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 13,
+      "part": "C. Seated chair cat-cow (office version)",
+      "title": "Breathe out, round the back (cat). Tuck the tailbone and chin gently, round from the lower back up, push the hands lightly into the knees",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 14,
+      "part": "C. Seated chair cat-cow (office version)",
+      "title": "Repeat 8 to 12 slow reps (est.) as sources advise (getfitcraft, Tom's Guide). The whole spine should move, not just the neck and shoulders. A firm chair works best; avoid soft sofas and wheeled chairs",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 15,
+      "part": "C. Seated chair cat-cow (office version)",
+      "title": "Finish with a pause sitting tall for two breaths",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Moving fast and aggressively between cat and cow",
+      "text": "Moving fast and aggressively between cat and cow. It strains the back and loses the breath link. Fix: one breath per phase, 3 to 4 seconds each (a seated-cat-cow article warns that people move quickly and aggressively)."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. Tension rises. Fix: in for cow, out for cat, never pause the breath."
+    },
+    {
+      "title": "Cranking the neck up in cow or forcing the chin to the chest in cat",
+      "text": "Cranking the neck up in cow or forcing the chin to the chest in cat. Neck strain. Fix: let the head follow the spine, keep the neck long, do not force the chin down (HealthLink BC cues)."
+    },
+    {
+      "title": "Only moving the neck and shoulders",
+      "text": "Only moving the neck and shoulders. The back barely moves. Fix: start each phase from the tailbone and let the wave travel up the spine."
+    },
+    {
+      "title": "Hips rocking back toward the heels or the shoulders drifting forward",
+      "text": "Hips rocking back toward the heels or the shoulders drifting forward. It turns the move into a forward-backward rock and loads the wrists. Fix: keep the hips over the knees and the wrists under the shoulders."
+    },
+    {
+      "title": "Collapsing the shoulders (sinking between the shoulder blades) in cow",
+      "text": "Collapsing the shoulders (sinking between the shoulder blades) in cow. Pinches the shoulders. Fix: push the floor away throughout."
+    },
+    {
+      "title": "Locked elbows or all the weight on the heels of the hands",
+      "text": "Locked elbows or all the weight on the heels of the hands. Wrist and elbow strain. Fix: soft elbows, spread the fingers, press through the whole palm; use fists or forearms if sore."
+    },
+    {
+      "title": "No padding on a hard floor",
+      "text": "No padding on a hard floor. Knee pain makes the whole move stop. Fix: folded blanket or two mats under the knees."
+    },
+    {
+      "title": "Forcing a bigger range through pain",
+      "text": "Forcing a bigger range through pain. Sinaki's case series (Pain Practice 2013) is cited second-hand as showing yoga spinal flexion harms some people with low bone density. Fix: stay in a small comfortable range; people with osteoporosis should ask a doctor."
+    }
+  ],
+  "safetyNotes": [
+    "Wrists: the pose loads the wrists with part of the body weight. Cow is listed as contraindicated with wrist injuries in at least one teaching source; yoga pages advise caution with wrist, shoulder or back injuries. Use fists, forearms, an elevated surface or the chair version. Persistent pain, tingling or numbness may be arthritis, carpal tunnel syndrome or a past sprain and needs a clinician.",
+    "Knees: use thick padding under the knees and shins; if padding does not help, use the seated version. One page advises not holding the pose for long with knee pain. Stop for sharp or catching knee pain.",
+    "Lower back / disc problems: keep the range small and pain-free. Aggressive spinal flexion is claimed on a commercial page to compress the front of the disc and worsen a posterior herniation; that claim is not backed by a clinical source here. Stop if back pain or leg symptoms get worse.",
+    "Osteoporosis: spinal flexion and rotation are flagged as the two movements to be careful with (University of Tennessee / Arkansas extension fact sheet). Opinions on cat-cow differ: one source advises a gentle range that avoids full rounding, a yoga teacher writing for osteoporosis says cat is fine because the abdominals support the spine. We chose a small, gentle range and ask-a-doctor with a known vertebral fracture.",
+    "Neck: do not force the chin up or down; skip the head movement if the neck is sore.",
+    "Pregnancy: hands-and-knees pelvic tilts are widely taught for pregnancy back pain and in the third trimester as an alternative to lying on the back; one page says the all-fours position lets the baby's weight fall forward and ease the lower back. Keep the movement gentle; stop for pain, bleeding, dizziness or pressure, and check with the doctor or midwife.",
+    "Recent surgery (spine, abdomen): one source advises skipping the cat phase and asking a spine specialist after recent abdominal or spinal surgery.",
+    "Stop immediately if you feel: sharp or burning pain in the back, neck, wrists or knees; tingling or numbness in the arms or legs; dizziness or chest pain; in pregnancy any pressure, pain in the belly, or vaginal bleeding.",
+    "Spotter: not needed.",
+    "Gym etiquette: use the stretching area or a mat out of walkways; wipe the mat after use. At the office, use a stable non-rolling chair."
+  ],
+  "sources": [
+    "Cleveland Clinic, cat-cow stretch: https://health.clevelandclinic.org/cat-cow-stretch",
+    "HealthLink BC, Yoga: cat cow pose: https://www.healthlinkbc.ca/healthwise/yoga-cat-cow-pose ; CommonSpirit, Cat-cow (with breathing): https://www.commonspirit.org/conditions-treatments/cat-cow-with-breathing",
+    "Liforme, How to do cat-cow stretches (Marjaryasana-Bitilasana): https://liforme.com/blogs/blog/cat-cow-stretches-bitilasana ; Brett Larkin, cow pose (Bitilasana): https://www.brettlarkin.com/cow-pose-bitilasana/ ; Yoga Outlet, how to do cat-cow: https://www.yogaoutlet.com/guides/how-to-do-cat-cow-pose-in-yoga/",
+    "Tom's Guide, cat-cow and chair mobility: https://www.tomsguide.com/how-to/how-to-do-cat-cow-pose ; https://www.tomsguide.com/wellness/workouts/less-stretching-more-mobility-3-simple-chair-exercises-for-better-spinal-mobility-and-a-healthier-lower-back ; getfitcraft seated cat cow: https://getfitcraft.com/exercises/seated-cat-cow ; The Healthy, cat-cow: https://www.thehealthy.com/exercise/cat-cow-stretch/",
+    "Art of Living, cat stretch (CYP-linked Marjari asana): https://www.artofliving.org/us-en/cat-stretch ; Tata AIA, marjariasana benefits: https://www.tataaia.com/blogs/health-and-lifestyle/health-benefits-of-marjariasana.html ; Common Yoga Protocol (AYUSH/MDNIY, via third-party PDFs; official text not read): https://new1.isro.gov.in/media_isro/pdf/CYP%20english.pdf",
+    "Acıbadem International, cat-cow stretch (physio article): https://acibademinternational.com/blog/cat-cow-stretch-why-physios-keep-prescribing-this-simple-flow/ ; Antranik, cat cow (fists): https://antranik.org/?p=5818 ; Prenatal Yoga Center, cat/cow: https://prenatalyogacenter.com/cat-cow-pose",
+    "University of Tennessee Extension (YOU fit fact sheet, osteoporosis spinal flexion and rotation): https://utia.tennessee.edu/extcovid19/wp-content/uploads/sites/79/2020/03/YOU-fit-Fact-sheet.pdf ; Sinaki M., yoga spinal flexion case series, Pain Practice 2013 (cited second-hand, not read)",
+    "Herrmann SD et al., 2024 Adult Compendium of Physical Activities (02150 Yoga, Hatha 2.3): https://pacompendium.com/conditioning-exercise ; https://pubmed.ncbi.nlm.nih.gov/38242596/",
+    "Condition sources reused from earlier items (general guidance): ADA key points, PMC5317029: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/ ; BHF cool-down: https://www.bhf.org.uk/informationsupport/heart-matters-magazine/activity/cool-down-exercises ; Sutter Health hypertension exercise: https://www.Sutterhealth.Org/pdf/services/heart-vascular/hypertension-exercising.pdf ; PCOS position statement: https://researchers.westernsydney.edu.au/en/publications/exercise-in-the-management-of-polycystic-ovary-syndrome-a-positio/ ; Marshfield Clinic asthma: https://shine365.marshfieldclinic.org/wellness/asthma-exercise/ ; ECU Health asthma: https://healthlibrary.ecuhealth.org/lung-health/management/asthma-management-exercise-safety ; Royal Berkshire knee OA: https://royalberkshire.nhs.uk/leaflets/osteoarthritis-of-the-knee-advice-and-exercises ; Berkshire Healthcare low back pain: https://www.berkshirehealthcare.nhs.uk/media/qwqaccdd/bh1165n-low-back-pain-v1-feb-2026.pdf ; Kaiser Permanente after-pregnancy exercises: https://healthy.kaiserpermanente.org/health-wellness/health-encyclopedia/he.after-pregnancy-exercises.zp4456",
+    "Reps and pace: up to 10 breaths (yoga page), 8 to 12 seated reps (desk pages), 1 to 2 minutes (others). We chose 8 to 10 cycles, one breath each way.",
+    "Breath pairing: cow on the in-breath and cat on the out-breath (all sources found).",
+    "Osteoporosis: one source suggests a gentle range avoiding full rounding; a teacher says cat is fine with abdominal support; a fact sheet flags spinal flexion. We chose small range and ask-a-doctor with a fracture.",
+    "Wrist options: fists, forearms (elbows) or elevated hands; sources are teaching pages, not clinical trials. We offer all three.",
+    "Evidence for back pain: commercial pages cite a 2017 study that could not be found; the physio article says it is not a treatment for all back or neck pain. We list comfort and mobility, not cure claims.",
+    "Official AYUSH step text: Not found.",
+    "Cat-cow specific MET and clinical angle norms: Not found."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 43.5,
+      "70kg": 37.3,
+      "80kg": 32.6
+    },
+    "per300kcal": {
+      "60kg": 130.4,
+      "70kg": 111.8,
+      "80kg": 97.8
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "yoga",
+    "mobility",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "small_flat",
+    "quiet",
+    "office_desk",
+    "2_5_min",
+    "warm_up",
+    "desk_break",
+    "morning",
+    "evening",
+    "relaxation"
+  ],
+  "swapsByAccess": {
+    "none": "Seated chair cat-cow at a desk, or the fists version on a carpet",
+    "home_equipment": "Forearms on yoga blocks or a rolled towel under the hands, blanket under the knees",
+    "basic_gym": "Mat in the stretching area, or seated cat-cow on a flat bench",
+    "full_gym": "Mat in the studio area, or hands on a bench for a wrist-friendly cat-cow"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "ok",
+      "change": "No pose-specific caution found; never hold the breath, rise slowly; ask a doctor if on treatment",
+      "source": "Sutter Health hypertension exercise (general); Not found (pose-specific)"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "No pose-specific caution found; check hands, wrists and knees for sores or numbness before putting weight on them (est.)",
+      "source": "ADA exercise guidance PMC5317029 (general); Not found (pose-specific)"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "Gentle mobility fits a warm-up or cool-down; avoid straining or breath-holding; ask the cardiac team before a new routine",
+      "source": "BHF cool-down (general); Not found (pose-specific)"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "No change (source not found)",
+      "source": "Not found"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Seated chair version or hands on a raised surface if wrists or knees ache; thick padding; get up slowly (est.)",
+      "source": "Not found (pose-specific)"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "No pose-specific caution found; use as a warm-up",
+      "source": "PCOS exercise position statement (general); Not found (pose-specific)"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "No pose-specific caution found",
+      "source": "Not found"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "No pose-specific caution found; slow breathing is fine, reliever inhaler nearby, stop if wheezing",
+      "source": "Marshfield Clinic and ECU Health asthma exercise-safety pages (general)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Thick knee padding or double mat, or the seated chair version; shorter sets; stop for sharp knee pain",
+      "source": "HealthLink BC cat-cow; Royal Berkshire NHS knee OA leaflet (general)"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Small pain-free range, avoid forcing deep rounding; stop if pain or leg symptoms increase; red flags need a clinician now",
+      "source": "Cleveland Clinic cat-cow; Acibadem physio article; Berkshire Healthcare low back pain leaflet"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "modify",
+      "change": "Fists or forearms version or the chair version; small range; stop if the shoulder pinches",
+      "source": "Brett Larkin cow pose; Not found (pose-specific clinical source)"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "modify",
+      "change": "Gentle small range, no forced rounding, bend from the hips not the spine; ask a doctor with a known fracture",
+      "source": "UTIA fact sheet on spinal flexion and rotation; Sinaki case series (second-hand)"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "modify",
+      "change": "Gentle all-fours tilts are widely taught; rest in wide-knee Child's Pose if uncomfortable; stop for pain or unusual symptoms; check with the midwife or doctor",
+      "source": "HealthLink BC; Prenatal Yoga Center; Not found (ACOG or Tommy's wording)"
+    },
+    {
+      "condition": "postpartum",
+      "status": "ask_doctor",
+      "change": "After a C-section or with abdominal separation concerns wait for clearance before core-engaging versions; pose-specific source Not found",
+      "source": "Kaiser Permanente after-pregnancy exercises (general); Not found (pose-specific)"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Follow the surgeon's timeline; after spine or abdominal surgery avoid the cat phase until cleared",
+      "source": "Seated cat-cow article (cat-phase caution); Not found (surgeon-specific)"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "home",
+      "office_desk"
+    ],
+    "bodyRegion": [
+      "core"
+    ],
+    "goalTags": [
+      "flexibility",
+      "relaxation",
+      "general_fitness"
+    ],
+    "intensity": "light",
+    "noise": "quiet",
+    "space": "mat_only",
+    "typicalMinutes": 3,
+    "kcalPer10min70kg": 27,
+    "difficulty1to5": 1,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Yoga & stretch",
+    "Home",
+    "Office desk",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Yoga",
+    "Back",
+    "Core",
+    "Rep counter",
+    "Under 10 min"
+  ],
+  "needsReview": [
+    "rep_counter phase \"no_rock\" (hip landmarks front-to-back shift): angle \"position flag: shift <= 10 cm\" is not a parseable angle"
+  ],
+  "versions": [
+    {
+      "date": "2026-11-04",
+      "file": "FitPlate_Fitness_2026-11-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

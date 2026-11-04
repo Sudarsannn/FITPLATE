@@ -1,0 +1,701 @@
+{
+  "id": "wall-sit",
+  "number": 10,
+  "name": "Wall sit (shallow beginner, quarter and parallel versions)",
+  "otherNames": [
+    "Wall squat",
+    "Isometric wall squat",
+    "Wall chair",
+    "Back-against-wall hold",
+    "Shallow wall sit"
+  ],
+  "section": "home",
+  "type": "strength",
+  "equipment": [],
+  "noEquipmentAlternative": "No equipment needed; a flat wall and a non-slip floor are enough.",
+  "musclesPrimary": [
+    "quadriceps"
+  ],
+  "musclesSecondary": [
+    "gluteus maximus",
+    "hamstrings",
+    "gastrocnemius",
+    "soleus",
+    "transversus abdominis",
+    "erector spinae"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 2.8,
+  "compendiumCode": "02024",
+  "metOptions": [
+    {
+      "code": "02024",
+      "met": 2.8,
+      "activity": "MET: 2.8, Compendium code 02024, \"calisthenics (e.g., curl ups, abdominal crunches, plank), light effort\" (2024 Adult Compendium of Physical Activities). This is the code that matches the beginner pre"
+    },
+    {
+      "code": "02022",
+      "met": 3.8,
+      "activity": "Extras (text only, not used in the JSON): quarter-to-parallel holds at moderate effort (5-6/10, Borg 12-13) could map to 02022, \"calisthenics (e.g., pushups, sit ups, pull-ups, lunges), moderate effor"
+    },
+    {
+      "code": "02020",
+      "met": 7.5,
+      "activity": "Extras (text only, not used in the JSON): quarter-to-parallel holds at moderate effort (5-6/10, Borg 12-13) could map to 02022, \"calisthenics (e.g., pushups, sit ups, pull-ups, lunges), moderate effor"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "1 shallow hold per set",
+      "timeSec": 20,
+      "restSec": 50,
+      "tempo": "2-3 s slide down, hold, 2-3 s slide up",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 3,
+      "reps": "1 shallow hold per set in a circuit",
+      "timeSec": 20,
+      "restSec": 30,
+      "tempo": "2-3 s slide down, hold, 2-3 s slide up",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "strength",
+      "sets": 2,
+      "reps": "1 shallow hold per set before strength work",
+      "timeSec": 15,
+      "restSec": 45,
+      "tempo": "2-3 s slide down, hold, 2-3 s slide up",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "1 shallow hold per set",
+      "timeSec": 30,
+      "restSec": 45,
+      "tempo": "2-3 s slide down, hold, 2-3 s slide up",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "1 quarter hold per set",
+      "timeSec": 40,
+      "restSec": 45,
+      "tempo": "2-3 s slide down, hold, 2-3 s slide up",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "1 quarter-to-parallel hold per set",
+      "timeSec": 40,
+      "restSec": 60,
+      "tempo": "2-3 s slide down, hold, 2-3 s slide up",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "1 quarter hold per set",
+      "timeSec": 55,
+      "restSec": 45,
+      "tempo": "2-3 s slide down, hold, 2-3 s slide up",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": 3,
+      "reps": "1 single-leg or weighted parallel hold per set",
+      "timeSec": 30,
+      "restSec": 75,
+      "tempo": "3 s slide down, hold, 3 s slide up",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "endurance",
+      "sets": 4,
+      "reps": "1 long parallel hold per set",
+      "timeSec": 90,
+      "restSec": 100,
+      "tempo": "3 s slide down, hold, 3 s slide up",
+      "perWeek": 3
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "hold_timer",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_ear",
+      "right_ear",
+      "left_shoulder",
+      "right_shoulder",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle",
+      "left_foot_index",
+      "right_foot_index"
+    ],
+    "phases": [
+      {
+        "name": "start_knee",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": ">= 165",
+        "parsed": {
+          "op": ">=",
+          "value": 165,
+          "max": null
+        }
+      },
+      {
+        "name": "hold_knee_upper",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": "<= 140",
+        "parsed": {
+          "op": "<=",
+          "value": 140,
+          "max": null
+        }
+      },
+      {
+        "name": "hold_knee_lower",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": ">= 90",
+        "parsed": {
+          "op": ">=",
+          "value": 90,
+          "max": null
+        }
+      },
+      {
+        "name": "hold_hip_min",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": ">= 80",
+        "parsed": {
+          "op": ">=",
+          "value": 80,
+          "max": null
+        }
+      },
+      {
+        "name": "neck_line",
+        "joint": "neck (ear-shoulder-hip)",
+        "angleDeg": ">= 150",
+        "parsed": {
+          "op": ">=",
+          "value": 150,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 3
+  },
+  "formChecks": [
+    {
+      "joint": "knee",
+      "rule": "knee angle > 140 degrees while sitting (equals hold_knee_upper phase threshold): timer paused",
+      "message": "Slide down a little more to start the timer"
+    },
+    {
+      "joint": "knee",
+      "rule": "knee angle < 90 degrees (equals hold_knee_lower phase threshold)",
+      "message": "Too deep: slide up a little"
+    },
+    {
+      "joint": "hip",
+      "rule": "hip angle < 80 degrees during the hold (equals hold_hip_min phase threshold)",
+      "message": "Back to the wall: sit tall"
+    },
+    {
+      "joint": "neck",
+      "rule": "neck angle < 150 degrees during the hold (equals neck_line phase threshold)",
+      "message": "Neck long, eyes forward"
+    },
+    {
+      "joint": "knee",
+      "rule": "knee angle < 165 degrees at the end of the set (equals start_knee phase threshold)",
+      "message": "Stand up fully before the next hold"
+    },
+    {
+      "joint": "knee",
+      "rule": "knees-past-toes flag: knee landmark ahead of toe landmark beyond margin (separate flag, not an angle)",
+      "message": "Walk your feet forward a little"
+    },
+    {
+      "joint": "knee",
+      "rule": "knee-caving flag in front view: knees closer than ankles beyond margin (separate flag, not an angle)",
+      "message": "Knees out: push them over your toes"
+    },
+    {
+      "joint": "knee",
+      "rule": "slide down shorter than 1.5 s (rushing)",
+      "message": "Slide down slowly"
+    }
+  ],
+  "safetyFlags": [
+    "breathe_steadily_never_hold_breath",
+    "hypertension_shallow_short_holds_get_clearance_for_severe",
+    "heart_disease_get_clearance_first",
+    "isometric_raises_blood_pressure_during_hold",
+    "knee_pain_stay_above_painful_depth",
+    "lower_back_pain_stop_if_pain_spreads",
+    "osteoporosis_shallow_clear_wall_and_grip",
+    "pregnancy_ask_obstetrician",
+    "postpartum_ask_physiotherapist_first",
+    "recent_surgery_get_approval",
+    "rise_slowly_dizziness",
+    "stop_with_chest_pain_dizziness_or_sharp_knee_pain"
+  ],
+  "progressions": [
+    "add 5-10 s per week up to 45-60 s",
+    "quarter then parallel depth",
+    "ball squeeze or heel raise",
+    "single-leg or weighted wall sit"
+  ],
+  "regressions": [
+    "shallower sit knee angle about 145-150 degrees",
+    "shorter holds 5-10 s with longer rest",
+    "partial bodyweight squat dips (Home 1)"
+  ],
+  "videoShots": [
+    {
+      "seconds": 6,
+      "angle": "side, hip height, 2 m",
+      "shows": "setup: back on wall, feet 60 cm forward, hips and shoulders touching",
+      "textOverlay": "Back flat. Feet forward."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, hip height, 2 m",
+      "shows": "shallow slide down and hold with timer",
+      "textOverlay": "Shallow is fine. Breathe."
+    },
+    {
+      "seconds": 7,
+      "angle": "front, chest height, 2 m",
+      "shows": "knees over the second toe, hands by sides",
+      "textOverlay": "Knees follow toes."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, hip height, 2 m",
+      "shows": "quarter wall sit with timer",
+      "textOverlay": "Quarter: hold 30 s."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, hip height, 2 m",
+      "shows": "parallel wall sit, thighs level",
+      "textOverlay": "Parallel: only when ready."
+    },
+    {
+      "seconds": 7,
+      "angle": "side, hip height, 2 m, split screen",
+      "shows": "wrong vs right: knees far past toes and hands pushing thighs vs knees behind toes",
+      "textOverlay": "Feet forward, hands off."
+    },
+    {
+      "seconds": 6,
+      "angle": "side, hip height, 2 m",
+      "shows": "breathing demo: slow nose-in, mouth-out, counting aloud",
+      "textOverlay": "Never hold your breath."
+    },
+    {
+      "seconds": 7,
+      "angle": "side, hip height, 2 m",
+      "shows": "slide up slowly; easier and harder options",
+      "textOverlay": "Slide up slowly."
+    }
+  ],
+  "lastResearched": "2026-11-04",
+  "setupSteps": [
+    "Wall choice: a flat, firm wall with nothing hanging on it and no sockets or switches at back height. Avoid freshly painted or damp walls.",
+    "Floor: a non-slip floor. If your socks slip, wear shoes with grip or barefoot on a mat. Do not use a mat that can slide.",
+    "Back position: stand with your back, hips and shoulders touching the wall. The head can touch the wall lightly.",
+    "Foot position: walk your feet forward about 60 cm (two feet, est.) from the wall, hip-width to shoulder-width apart, toes pointing straight ahead or turned out only slightly. The farther forward the feet are, the more the knees stay behind the toes (commonly taught; the research behind the \"knees behind toes\" rule is limited, so treat it as a coaching cue).",
+    "Arms: let your hands hang by your sides, or fold them across your chest. Do not push your hands down on your thighs (this takes load off the legs and can hide poor depth) and do not rest your hands on your knees.",
+    "Camera: place the phone at hip height about 2 m (est.) to your side, so shoulder, hip, knee and ankle are all in the frame.",
+    "Clothing: fitted leggings or track pants and a fitted top so the camera can see the knees and hips. Loose kurtas or dupattas hide the knee line.",
+    "Timer and water: have a visible clock or use the app timer. Keep a bottle nearby.",
+    "Blood pressure check: if you have high blood pressure or heart disease, read section 9 before the first hold."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": "A. Shallow beginner wall sit (about 130-140 degree knee angle, hold 15-30 s)",
+      "title": "Stand with your back to the wall",
+      "action": "Stand tall with shoulders, hips and back lightly touching the wall, feet hip-width apart.",
+      "feel": "Even weight through both feet; shoulders relaxed.",
+      "breathing": "Breathe in normally.",
+      "tempo": null,
+      "visualCheck": "Side: ear, shoulder, hip and ankle in one vertical line. Front: shoulders level, feet hip-width apart."
+    },
+    {
+      "n": 2,
+      "part": "A. Shallow beginner wall sit (about 130-140 degree knee angle, hold 15-30 s)",
+      "title": "Walk the feet forward",
+      "action": "Take small steps forward until your feet are about 60 cm (est.) from the wall, then put your back against the wall again.",
+      "feel": "Back and hips in light contact with the wall.",
+      "breathing": "Normal.",
+      "tempo": null,
+      "visualCheck": "Side: feet clearly in front of the hips. Front: feet parallel and level."
+    },
+    {
+      "n": 3,
+      "part": "A. Shallow beginner wall sit (about 130-140 degree knee angle, hold 15-30 s)",
+      "title": "Slide down a little",
+      "action": "Bend your knees and slide down the wall only about 10-15 cm (est.) so the knees bend about 40-50 degrees. Stop there.",
+      "feel": "Mild work in the front of the thighs. No pain in the kneecap or lower back.",
+      "breathing": "Breathe out gently as you slide.",
+      "tempo": null,
+      "visualCheck": "Side: knees clearly behind the toes, thigh well above horizontal. Front: knees over the second toe, not falling inward."
+    },
+    {
+      "n": 4,
+      "part": "A. Shallow beginner wall sit (about 130-140 degree knee angle, hold 15-30 s)",
+      "title": "Hold and breathe",
+      "action": "Stay still with your back on the wall, weight through the whole foot.",
+      "feel": "Thigh muscles working harder, maybe a mild burn late in the hold.",
+      "breathing": "Slow in through the nose and out through the mouth; never hold your breath (talk or count aloud if you tend to hold it).",
+      "tempo": null,
+      "visualCheck": "Side: depth does not change; head stays level. Front: both knees stay the same distance apart."
+    },
+    {
+      "n": 5,
+      "part": "A. Shallow beginner wall sit (about 130-140 degree knee angle, hold 15-30 s)",
+      "title": "Slide up",
+      "action": "Press through the whole foot and slide up the wall until the legs are straight, or follow the Cleveland Clinic exit: bring one foot back toward the wall and slide up.",
+      "feel": "Thighs relax; knees do not click.",
+      "breathing": "Breathe out as you rise.",
+      "tempo": null,
+      "visualCheck": "Side: back sliding up the wall, not bouncing."
+    },
+    {
+      "n": 6,
+      "part": "A. Shallow beginner wall sit (about 130-140 degree knee angle, hold 15-30 s)",
+      "title": "Rest",
+      "action": "Step away from the wall and shake your legs out.",
+      "feel": "Warm thighs, normal breathing.",
+      "breathing": "Three slow breaths.",
+      "tempo": null,
+      "visualCheck": "Stop for the day if the hold felt shaky or you felt dizzy."
+    },
+    {
+      "n": 7,
+      "part": "B. Quarter wall sit (knee angle about 120 degrees, est.)",
+      "title": "Same setup. Slide down until the knees bend about 60 degrees (knee angle about 120, est.). The thighs are well above level",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 8,
+      "part": "B. Quarter wall sit (knee angle about 120 degrees, est.)",
+      "title": "Hold 20-45 s with steady breathing. Stop at once if the front of the knee hurts",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 9,
+      "part": "C. Parallel wall sit (knee angle about 90-100 degrees)",
+      "title": "Same setup, but walk the feet far enough that the knees sit over the ankles at the bottom and the thighs are level with the floor (sources describe hips, knees and ankles at about 90 degrees)",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 10,
+      "part": "C. Parallel wall sit (knee angle about 90-100 degrees)",
+      "title": "Hold 30-60 s or longer. Only when you can hold the quarter version cleanly for 45 s (est.)",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Going too deep too soon",
+      "text": "Going too deep too soon. Why: deep holds are much harder, and kneecap pressure rises sharply past about 90 degrees of knee bend (fit-pro column, not a trial). Fix: start shallow and add depth only after clean holds."
+    },
+    {
+      "title": "Knees too far forward over the toes",
+      "text": "Knees too far forward over the toes. Why: a common coaching cue says it loads the knee more and the thighs less (limited research). Fix: walk the feet forward so the shins are near upright and the knees stay behind the toes."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. Why: breath-holding raises blood pressure more than open breathing during effort (lab data from heavy lifting, PubMed 7741618), and wall sits are isometric. Fix: slow breaths in and out, count aloud."
+    },
+    {
+      "title": "Pushing hands on the thighs",
+      "text": "Pushing hands on the thighs. Why: it takes load off the legs and can hide poor depth. Fix: arms by the sides or folded."
+    },
+    {
+      "title": "Knees caving in",
+      "text": "Knees caving in. Why: poor knee alignment is a common cue in every guide. Fix: push the knees out over the middle toes; if they still cave, slide up a little."
+    },
+    {
+      "title": "Heels lifting or weight on the toes",
+      "text": "Heels lifting or weight on the toes. Why: the thighs lose their base. Fix: heels down, feet flat."
+    },
+    {
+      "title": "Back peeling off the wall or leaning forward",
+      "text": "Back peeling off the wall or leaning forward. Why: the trunk is meant to rest, and leaning shifts the load. Fix: shoulders, hips and back touch the wall; shorten the hold."
+    },
+    {
+      "title": "Calling a high sit a full one without tracking depth",
+      "text": "Calling a high sit a full one without tracking depth. Why: a sit that is too high is a valid beginner rung but is not the same as parallel. Fix: name the depth (shallow, quarter, parallel) and film from the side."
+    },
+    {
+      "title": "Pushing through pain",
+      "text": "Pushing through pain. Why: sharp front-knee or back pain means the depth is too much (several guides advise stopping). Fix: slide up, rest, and use a shallower depth."
+    },
+    {
+      "title": "Rushing the exit",
+      "text": "Rushing the exit. Why: dropping to the floor or springing up can jolt the knees and cause dizziness. Fix: slide up slowly with palms or one foot back, and rise slowly if you feel light-headed."
+    }
+  ],
+  "safetyNotes": [
+    "High blood pressure and heart disease: isometric holds raise blood pressure while you hold, especially with breath-holding. Mayo Clinic advises checking with a provider before isometric exercise if you have high blood pressure or heart problems, and never to hold your breath or strain. Harvard Health advises breathing normally, with a big breath before the hold rather than straining. Use short, shallow, light holds, breathe throughout, rise slowly, and do not stop prescribed medicines. Severe or uncontrolled high blood pressure needs medical clearance first.",
+    "Knee problems: deep holds can irritate the front of the knee. Stay above the painful depth (a partial wall sit around 45 degrees knee bend, est.) and stop for sharp pain, swelling or locking.",
+    "Lower back problems: the back is supported by the wall, but stop if pain grows or spreads down a leg.",
+    "Pregnancy and postpartum: ask your doctor; use a ball or wall variation only with approval; lying or standing still can cause dizziness; stop for bleeding, pain or contractions.",
+    "Dizziness, balance problems, recent surgery: only with approval and with a wall and a clear space."
+  ],
+  "sources": [
+    "2024 Adult Compendium of Physical Activities (Herrmann et al., J Sport Health Sci 2024): codes 02022 and 02024 (calisthenics: moderate and light). https://pacompendium.com/conditioning-exercise ; https://pacompendium.com/wp-content/uploads/2024/02/1_2024-adult-compendium_1_2024.pdf ; https://pubmed.ncbi.nlm.nih.gov/38242596/",
+    "NASM, Wall sits: how trainers can program this isometric staple; NASM blog, wall sits (start 20-30 s, add 5-10 s a week to 60 s). https://www.nasm.org/resource-center/blog/training/wall-sits ; https://blog.nasm.org/wall-sits",
+    "Cleveland Clinic, Wall sits (benefits, exit method, any hold length counts). https://health.clevelandclinic.org/wall-sits",
+    "Physitrack, Step-by-step guide to the wall sit exercise. https://www.physitrack.com/exercise-library/how-to-perform-the-wall-sit-exercise",
+    "Edwards JJ et al. (2023), Exercise training and resting blood pressure: a large-scale pairwise and network meta-analysis, Br J Sports Med; BMJ blog summary. https://bjsm.bmj.com/content/bjsports/57/20/1317.full.pdf ; https://blogs.bmj.com/bjsm/?p=10795",
+    "Wiles J et al. (2018), hemodynamic safety of isometric wall squat in stage 1 hypertension, Medicine. https://pmc.ncbi.nlm.nih.gov/articles/PMC5882444",
+    "Mayo Clinic, Isometric exercises: good for strength training?; Mayo Clinic Health System, Isometric exercise using body weight to lower blood pressure. https://www.mayoclinic.org/health/isometric-exercises/AN02031 ; https://newsnetwork.mayoclinic.org/?p=381704",
+    "Harvard Health, The best strength-building exercise to lower blood pressure. https://www.health.harvard.edu/heart-health/the-best-strength-building-exercise-to-lower-blood-pressure",
+    "Influence of breathing technique on arterial blood pressure during heavy weight lifting (1995). https://pubmed.ncbi.nlm.nih.gov/7741618/",
+    "Knee angle and quadriceps EMG: effect of knee and foot position on superficial quadriceps EMG (JOSPT 1995); pilot study of wall-stance knee angle and EMG. https://pubmed.ncbi.nlm.nih.gov/7550299/ ; https://acikbilim.yok.gov.tr/handle/20.500.12812/80143",
+    "fit-pro, Functionally Fit: Wall sit (find the painful range, train above and below; kneecap pressure after 90 degrees). https://fit-pro.com/article-4523-Functionally-Fit-Wall-sit.html",
+    "Isometric quadriceps exercises for knee osteoarthritis, RCT (PMC9427309); Vanderbilt Sports Medicine knee OA quad exercises. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9427309/ ; https://www.vumc.org/sports-medicine/sites/vumc.org.sports-medicine/files/public_files/documents/Knee_OA_ex_quad.pdf",
+    "Isometric exercise training for blood pressure management: systematic review and meta-analysis. https://pubmed.ncbi.nlm.nih.gov/24582191/",
+    "Mayo Clinic, Pregnancy exercises; Texas TRS, exercise and pregnancy (ball-assisted wall squat). https://www.mayoclinic.org/healthy-lifestyle/pregnancy-week-by-week/in-depth/pregnancy-exercises/art-20546799 ; https://www.trs.texas.gov/learning-resources/publications/pulse/exercise-and-pregnancy-safe-workouts-expectant-mothers",
+    "Brooke-Wavell et al. (2022), Strong, steady and straight: UK consensus statement on osteoporosis, Br J Sports Med. https://pubmed.ncbi.nlm.nih.gov/35577538/",
+    "ACSM-linked Borg RPE bands (light 9-11, moderate 12-13, vigorous 14-17) and talk test. https://pmc.ncbi.nlm.nih.gov/articles/PMC10310950/table/tbl1 ; https://pmc.ncbi.nlm.nih.gov/articles/PMC9618974/table/tbl4 ; https://blog.nasm.org/rate-of-perceived-exertion",
+    "NHS Lothian, DRAMs guidelines; Diastasis recti rehabilitation in the postpartum period: scoping review. https://apps.nhslothian.scot/files/sites/2/DRAMs-Guidelines.pdf ; https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11023973/",
+    "Colberg SR et al. (2016), ADA position statement on physical activity/exercise and diabetes. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/",
+    "AHA, Recommendations for physical activity in adults; AHA Professional, Physical activity as first-line treatment for elevated BP or cholesterol. https://heart.org/en/healthy-living/exercise-and-physical-activity/fitness-basics/aha-recs-for-physical-activity-in-adults ; https://professional.heart.org/en/science-news/Physical-Activity-as-a-Critical-Component-of-First-Line-Treatment-for-Elevated-BP-or-Cholesterol/commentary",
+    "Donnelly JE et al. (2009), ACSM position stand on physical activity for weight loss; ACE Fitness, Tips for training clients impacted by obesity. https://pubmed.ncbi.nlm.nih.gov/19127177/ ; https://www.acefitness.org/education-and-resources/professional/expert-articles/6459/tips-for-training-clients-impacted-by-obesity/",
+    "Effect of physical exercise in people with hypothyroidism: systematic review and meta-analysis (2023). https://pubmed.ncbi.nlm.nih.gov/37999992/",
+    "Pharmacy Magazine CPD, Exercise and asthma; Cambridge University Hospitals, exercise-induced bronchoconstriction leaflet; warm-up review. https://www.pharmacymagazine.co.uk/cpd-modules/making-a-difference-in-asthma-care/exercise-and-asthma-528343 ; https://www.cuh.nhs.uk/patient-information/exercise-induced-bronchoconstriction-for-children-and-young-people/ ; https://pubmed.ncbi.nlm.nih.gov/21811185/",
+    "Harvard Health, Walking, cycling and swimming are best exercises for knee osteoarthritis. https://content.health.harvard.edu/blog/walking-cycling-and-swimming-are-best-exercises-for-knee-osteoarthritis",
+    "News report on a Journal of Physical Therapy Science study of wall squats vs squats for back pain (secondhand). https://www.fitandwell.com/news/do-squats-hurt-your-back-study-reveals-wall-sits-are-a-safe-effective-alternative",
+    "HSS Rehabilitation, Shoulder impingement non-operative guideline. https://www.hss.edu/files/HSSRehabilitationClinicalGuidelines-Shoulder-Impingement-Non-operative.pdf"
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 35.7,
+      "70kg": 30.6,
+      "80kg": 26.8
+    },
+    "per300kcal": {
+      "60kg": 107.1,
+      "70kg": 91.8,
+      "80kg": 80.4
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "strength",
+    "legs",
+    "endurance",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "small_flat",
+    "neighbours_below",
+    "quiet",
+    "short_sessions",
+    "no_equipment",
+    "low_impact"
+  ],
+  "swapsByAccess": {
+    "none": "Shallow bodyweight squat to a chair (Home 1) or glute bridge hold (Home 4)",
+    "home_equipment": "Band squat (Home 24, not yet researched) or light goblet squat (Home 15, not yet researched)",
+    "basic_gym": "Leg press (Gym 10) at light load and short range, or leg extension machine (Gym 11) at light load",
+    "full_gym": "Leg press (Gym 10), hack squat machine (Gym 13) or Smith machine squat (Gym 14) to a shallow depth"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "Shallow, short holds (10-20 s) at light effort 3-4/10, Borg 9-11; breathe slowly and never hold the breath; rise slowly; severe or uncontrolled BP needs a medical check first; do not use the 4 x 2 minute trial protocol without clearance",
+      "source": "Mayo Clinic isometric exercise guidance; Harvard Health; Edwards et al. BJSM 2023; Wiles et al. 2018 (PMC5882444); Valsalva study (PubMed 7741618)"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "Counts as resistance work; usual glucose checks and fast carbohydrate on hand if on insulin or sulfonylureas; check feet if neuropathy and wear shoes with grip",
+      "source": "ADA position statement (Colberg et al. 2016)"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "After clearance only: shallow, short holds at light effort, steady breathing; stop with chest discomfort, breathlessness or dizziness",
+      "source": "AHA physical activity recommendations; Mayo Clinic isometric guidance; clearance specifics Not found"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "Counts toward the resistance part of the weekly mix; aerobic minutes still come from other items",
+      "source": "AHA recommendations; AHA statement (Gibbs et al.)"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Shallow holds on a non-slip floor; long rests; slide in and out slowly",
+      "source": "ACE obesity training article; ACSM weight position stand (Donnelly 2009); wall-sit-specific advice Not found"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "Fits general strength guidance; no wall-sit-specific advice found",
+      "source": "Not found"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "Train as usual if controlled; start at beginner level if fatigued",
+      "source": "Systematic review 2023 (PubMed 37999992)"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Low-intensity hold; keep reliever nearby; steady breathing matters during holds; stop and use it if wheeze or cough starts",
+      "source": "Asthma UK tips via Pharmacy Magazine CPD; Cambridge University Hospitals leaflet; PubMed 21811185"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Slide down only to a pain-free depth (about 45 degree knee bend, est.), feet forward so knees stay behind toes; stop for sharp pain, swelling or locking; for kneecap pain train above the painful angle",
+      "source": "Vanderbilt Sports Medicine knee OA handout; isometric quadriceps RCT (PMC9427309); fit-pro column; Harvard Health low-impact analysis"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Wall supports the back and is often tolerated; use a shallow hold with the whole back touching; stop if pain increases or spreads down a leg",
+      "source": "Cleveland Clinic wall sits; news report of a small Journal of Physical Therapy Science study (secondhand)"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "ok",
+      "change": "Arms stay by the sides or folded; no load on the shoulders",
+      "source": "Not found"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "modify",
+      "change": "Weight-bearing leg strength is encouraged; shallow holds, non-slip floor and clear wall for balance; get individual advice especially after a fracture",
+      "source": "Strong, Steady and Straight (BJSM 2022; PubMed 35577538)"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "ask_doctor",
+      "change": "Ask your obstetrician; stop for bleeding, pain or contractions; avoid breath-holding",
+      "source": "Mayo Clinic pregnancy exercises; wall-sit-specific ACOG advice Not found"
+    },
+    {
+      "condition": "postpartum",
+      "status": "ask_doctor",
+      "change": "Ask a women's health physiotherapist first, especially with abdominal separation, pelvic floor symptoms or after a C-section; stop for leaking, heaviness or belly doming",
+      "source": "NHS Lothian DRAMs guidelines; scoping review PMC11023973"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Only with surgeon or physiotherapist approval, especially after knee, hip or abdominal surgery",
+      "source": "Not found"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "home",
+      "gym"
+    ],
+    "bodyRegion": [
+      "lower"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "strength",
+      "endurance"
+    ],
+    "intensity": "light",
+    "noise": "quiet",
+    "space": "small_room",
+    "typicalMinutes": 4,
+    "kcalPer10min70kg": 32.7,
+    "difficulty1to5": 2,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Home",
+    "Gym",
+    "No equipment",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Strength",
+    "Legs",
+    "Hold timer",
+    "Under 10 min"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-11-04",
+      "file": "FitPlate_Fitness_2026-11-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

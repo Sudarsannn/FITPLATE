@@ -1,0 +1,679 @@
+{
+  "id": "hypothyroidism",
+  "type": "condition",
+  "name": "Hypothyroidism",
+  "surveyQuestion": "Do you have any of these health conditions? (select all that apply) -> Underactive thyroid (hypothyroidism). Check question: Has a doctor told you that you have an underactive thyroid (hypothyroidism or Hashimoto's)? Yes, on treatment / Yes, not on treatment / Yes, borderline (subclinical; lifestyle-only mode) / No / Never tested / Not sure. Follow-ups: Do you take a thyroid tablet? Yes / No / Not sure (the app never comments on dose); When do you take it? Morning on an empty stomach / Bedtime / Other; Are you pregnant or planning pregnancy? Optional latest TSH and test date; Do you take biotin, calcium, iron, soy or high-fibre supplements?",
+  "targets": [
+    {
+      "nutrient": "energy",
+      "unit": "kcal/day",
+      "generalAdult": 2110,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (2110 sedentary man, 1660 sedentary woman) (secondary, unverified); no thyroid-specific energy value found; ATA: levothyroxine treatment not associated with clinically significant weight loss in most people"
+    },
+    {
+      "nutrient": "protein",
+      "unit": "g/kg/day",
+      "generalAdult": 0.83,
+      "profileValue": 0.83,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); no thyroid-specific change found"
+    },
+    {
+      "nutrient": "total_fat",
+      "unit": "% energy",
+      "generalAdult": 30,
+      "profileValue": 30,
+      "min": null,
+      "max": 30,
+      "direction": "same",
+      "source": "DGI 2024; WHO 2023 (as P6)"
+    },
+    {
+      "nutrient": "saturated_fat",
+      "unit": "% energy",
+      "generalAdult": 10,
+      "profileValue": 10,
+      "min": null,
+      "max": 10,
+      "direction": "same",
+      "source": "WHO 2023; under 7% if LDL is raised (P4); hypothyroidism can raise LDL (Marwaha, Asranna Indian studies via summaries)"
+    },
+    {
+      "nutrient": "trans_fat",
+      "unit": "% energy",
+      "generalAdult": 1,
+      "profileValue": 1,
+      "min": null,
+      "max": 1,
+      "direction": "limit",
+      "source": "WHO 2023"
+    },
+    {
+      "nutrient": "mufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found"
+    },
+    {
+      "nutrient": "pufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found"
+    },
+    {
+      "nutrient": "omega_3_fish",
+      "unit": "servings/week",
+      "generalAdult": null,
+      "profileValue": 2,
+      "min": 2,
+      "max": null,
+      "direction": "same",
+      "source": "AHA 2021 (as P5/P6); ICMR-NIN omega-3 value Not found"
+    },
+    {
+      "nutrient": "dietary_cholesterol",
+      "unit": "mg/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found; P4 applies if selected"
+    },
+    {
+      "nutrient": "total_carbohydrate",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No ICMR total found; DGI 2024 cereals and millets cap 45% of energy (as P4, secondary, unverified)"
+    },
+    {
+      "nutrient": "added_sugar",
+      "unit": "g/day",
+      "generalAdult": 25,
+      "profileValue": 25,
+      "min": null,
+      "max": 25,
+      "direction": "same",
+      "source": "WHO 2015 (5% of energy, conditional); as P5/P6"
+    },
+    {
+      "nutrient": "fibre",
+      "unit": "g/day",
+      "generalAdult": 30,
+      "profileValue": 30,
+      "min": 30,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 about 30 g per 2000 kcal (secondary, unverified); high-fibre meals or supplements can lower levothyroxine absorption, so keep them away from tablet time (Wiesner 2021 systematic review)"
+    },
+    {
+      "nutrient": "sodium",
+      "unit": "mg/day",
+      "generalAdult": 2000,
+      "profileValue": 2000,
+      "min": null,
+      "max": 2000,
+      "direction": "same",
+      "source": "WHO 2012; DGI 2024"
+    },
+    {
+      "nutrient": "salt",
+      "unit": "g/day",
+      "generalAdult": 5,
+      "profileValue": 5,
+      "min": null,
+      "max": 5,
+      "direction": "same",
+      "source": "DGI 2024 (iodised salt, maximum 5 g/day); NIDDCP: 30 ppm at manufacture, 15 ppm household, about 150 µg iodine from 5 g salt (calc.)"
+    },
+    {
+      "nutrient": "potassium",
+      "unit": "mg/day",
+      "generalAdult": 3510,
+      "profileValue": 3510,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "WHO 2012; ICMR-NIN 2020 3500 mg (secondary, unverified)"
+    },
+    {
+      "nutrient": "calcium",
+      "unit": "mg/day",
+      "generalAdult": 1000,
+      "profileValue": 1000,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); keep calcium tablets about 4 hours from levothyroxine (NICE via UK audit; Wiesner 2021); doctor decides"
+    },
+    {
+      "nutrient": "iron_men",
+      "unit": "mg/day",
+      "generalAdult": 19,
+      "profileValue": 19,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); keep iron tablets about 4 hours from levothyroxine (Campbell 1992 via summaries)"
+    },
+    {
+      "nutrient": "iron_women",
+      "unit": "mg/day",
+      "generalAdult": 29,
+      "profileValue": 29,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "magnesium_men",
+      "unit": "mg/day",
+      "generalAdult": 440,
+      "profileValue": 440,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 via FSSAI (secondary, unverified)"
+    },
+    {
+      "nutrient": "magnesium_women",
+      "unit": "mg/day",
+      "generalAdult": 370,
+      "profileValue": 370,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 via FSSAI (secondary, unverified)"
+    },
+    {
+      "nutrient": "vitamin_d",
+      "unit": "µg/day",
+      "generalAdult": 15,
+      "profileValue": 15,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); vitamin D deficiency more common in Hashimoto's in Indian case-control study (75% vs 20%, via summary); test by doctor"
+    },
+    {
+      "nutrient": "vitamin_b12",
+      "unit": "µg/day",
+      "generalAdult": 2.2,
+      "profileValue": 2.2,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 as adopted by FSSAI (secondary, unverified); low B12 associated with autoimmune hypothyroidism (Med Princ Pract 2020, 130 patients, via summary)"
+    },
+    {
+      "nutrient": "folate_men",
+      "unit": "µg DFE/day",
+      "generalAdult": 300,
+      "profileValue": 300,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "folate_women",
+      "unit": "µg DFE/day",
+      "generalAdult": 220,
+      "profileValue": 220,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "iodine",
+      "unit": "µg/day",
+      "generalAdult": 140,
+      "profileValue": 140,
+      "min": 140,
+      "max": 1100,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 RDA 140 µg, EAR 95 µg (secondary, unverified; another summary lists 150 µg); ATA/WHO/NIH 150 µg; NIH UL 1100 µg; ATA 2013 advises against iodine or kelp supplements above 500 µg/day; from food and iodised salt only"
+    },
+    {
+      "nutrient": "iodine_pregnancy",
+      "unit": "µg/day",
+      "generalAdult": null,
+      "profileValue": 250,
+      "min": null,
+      "max": null,
+      "direction": "raise",
+      "source": "WHO/ICCIDD 250 µg pregnancy and lactation; ICMR-NIN 2020 220 µg pregnancy and 290 µg lactation (secondary, unverified); doctor-led, requires_doctor_input"
+    },
+    {
+      "nutrient": "selenium",
+      "unit": "µg/day",
+      "generalAdult": 40,
+      "profileValue": 40,
+      "min": null,
+      "max": 400,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 adequate intake 40 µg (secondary, unverified); NIH ODS UL 400 µg all sources; supplementation for Hashimoto's not recommended by ETA survey 2018 (pub. 2020); Cochrane 2014 evidence unreliable; NIH RDA Not found in this run"
+    },
+    {
+      "nutrient": "biotin",
+      "unit": "µg/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No target found; high-dose biotin can falsely lower TSH and raise free T4/T3 on some immunoassays (FDA 2017/2019 via summaries); no biotin quick-add presets"
+    },
+    {
+      "nutrient": "water",
+      "unit": "mL/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No change from FitPlate general water target; never pushed higher; Follow your doctor's advice"
+    }
+  ],
+  "bloodMarkers": [
+    {
+      "marker": "TSH (general reference)",
+      "target": "Use the lab's own range. Fallback where none exists: 0.4-4.5 (ATA fallback quoted in an Indian obstetric editorial, secondary). Indian euthyroid data (5,812 adults): 97.5th percentile 4.3-4.6 at ages 18-29 rising to 6.1-6.4 at 60+",
+      "unit": "mIU/L",
+      "source": "ATA via editorial; Indian multicentre cross-sectional study 2025 (via search summary)"
+    },
+    {
+      "marker": "TSH (on levothyroxine)",
+      "target": "Set by the doctor. ETA 2013: aim for the lower half of the reference range (0.4-2.5) for most adults, recheck about 2 months after starting; InPACT: targets individual",
+      "unit": "mIU/L",
+      "source": "ETA 2013; InPACT (via search summaries)"
+    },
+    {
+      "marker": "TSH (subclinical hypothyroidism)",
+      "target": "Above the lab range with normal free T4. TSH 10 or more: treatment most clearly supported in younger adults (ETA 2013). ITS 2022 thresholds Not found",
+      "unit": "mIU/L",
+      "source": "ETA 2013 (via summary); ITS 2022 (Not found)"
+    },
+    {
+      "marker": "TSH (pregnancy)",
+      "target": "ITS 2012: 2.5 (1st trimester), 3.0 (2nd), 3.0 (3rd) via FOGSI newsletter; ATA 2017: pregnancy-specific local range, else 4.0 upper limit; North Indian study proposed 4.5. Doctor-led",
+      "unit": "mIU/L",
+      "source": "ITS 2012 (secondary); ATA 2017 (via summary); North Indian low-risk study (secondary)"
+    },
+    {
+      "marker": "Free T4 and free T3",
+      "target": "Lab range only; no Indian-specific target found",
+      "unit": "lab-specific",
+      "source": "Not found"
+    },
+    {
+      "marker": "Anti-TPO antibodies",
+      "target": "Positive suggests an autoimmune (Hashimoto's) cause; no numeric target; 21.85% positive in the 8-city study",
+      "unit": "IU/mL",
+      "source": "Unnikrishnan 2013 (via summary)"
+    },
+    {
+      "marker": "LDL cholesterol and total cholesterol",
+      "target": "Can be raised in hypothyroidism and fall after treatment (Indian studies); rise mainly with TSH above 10 mIU/L in one study; goals set by the doctor; see P4",
+      "unit": "mg/dL",
+      "source": "Marwaha; Asranna (via summaries); as P4"
+    },
+    {
+      "marker": "Triglycerides and HDL",
+      "target": "See P5 and P6; HDL did not change with treatment in one Indian study",
+      "unit": "mg/dL",
+      "source": "Asranna (via summary); as P5/P6"
+    },
+    {
+      "marker": "Haemoglobin and ferritin",
+      "target": "Iron deficiency and thyroid disease can co-exist; thyroid-specific target Not found; see P11",
+      "unit": "g/dL; ng/mL",
+      "source": "Not found; as P11"
+    },
+    {
+      "marker": "Vitamin D and vitamin B12",
+      "target": "Often tested at diagnosis in autoimmune hypothyroidism; ranges as P12",
+      "unit": "ng/mL; pg/mL",
+      "source": "Med Princ Pract 2020 (via summary); as P12"
+    },
+    {
+      "marker": "Biotin interference",
+      "target": "Tell the doctor and lab if taking biotin; no official stop period found",
+      "unit": "-",
+      "source": "FDA safety communication 2017/2019 (via summaries)"
+    }
+  ],
+  "waterMl": {
+    "min": null,
+    "max": null,
+    "notes": "No change from FitPlate general water target; hypothyroidism alone does not change water needs and no thyroid-specific fluid number was found. Never pushed higher: severe untreated hypothyroidism can impair water excretion and cause low sodium (myxedema coma, an emergency). Take the thyroid tablet with plain water. Drink more in heat, exercise or fever per general rules. With heart, kidney or liver disease, pregnancy or diuretics, show only the general range. Follow your doctor's advice."
+  },
+  "sodiumMgMax": 2000,
+  "dietaryCholesterolMgMax": null,
+  "foodsFavour": [
+    "iodised salt within 5 g/day as the main iodine source",
+    "milk, curd, eggs and fish in usual servings (iodine and selenium quantities Not found)",
+    "dals, pulses, sprouts, eggs, fish, chicken and paneer for protein",
+    "cooked vegetables including cauliflower, cabbage, methi and palak",
+    "whole grains and millets in measured portions, with variety",
+    "plain water; chai or coffee 30-60 minutes after the thyroid tablet"
+  ],
+  "foodsLimit": [
+    "iodine, kelp, seaweed and 'thyroid support' supplements unless a doctor advises (ATA: avoid above 500 µg/day)",
+    "biotin hair-and-nail supplements around blood tests",
+    "selenium supplements above the 400 µg/day UL or without a doctor",
+    "very large raw cruciferous servings in juices and smoothies (conservative)",
+    "calcium, iron, soy and high-fibre foods or tablets within about 4 hours of the thyroid tablet unless the doctor says otherwise",
+    "sweets, sweetened drinks, deep-fried snacks and refined flour (weight and lipids)",
+    "salt-heavy packaged foods, pickles, papad and namkeen"
+  ],
+  "goodFitDishes": [
+    {
+      "dishNumber": 5,
+      "dishName": "Dal Tadka"
+    },
+    {
+      "dishNumber": 8,
+      "dishName": "Chole (Chana Masala)"
+    },
+    {
+      "dishNumber": 12,
+      "dishName": "Rajma Chawal"
+    },
+    {
+      "dishNumber": 52,
+      "dishName": "Moong Dal Khichdi"
+    },
+    {
+      "dishNumber": 80,
+      "dishName": "Masoor Dal"
+    },
+    {
+      "dishNumber": 14,
+      "dishName": "Egg Bhurji"
+    },
+    {
+      "dishNumber": 21,
+      "dishName": "Masala Omelette"
+    },
+    {
+      "dishNumber": 33,
+      "dishName": "Goan Fish Curry"
+    },
+    {
+      "dishNumber": 45,
+      "dishName": "Tandoori Chicken"
+    },
+    {
+      "dishNumber": 66,
+      "dishName": "Sprouts Chaat"
+    },
+    {
+      "dishNumber": 16,
+      "dishName": "Besan Chilla"
+    },
+    {
+      "dishNumber": 26,
+      "dishName": "Moong Dal Chilla"
+    },
+    {
+      "dishNumber": 56,
+      "dishName": "Pesarattu"
+    },
+    {
+      "dishNumber": 9,
+      "dishName": "Idli with Sambar"
+    },
+    {
+      "dishNumber": 32,
+      "dishName": "Aloo Gobi"
+    },
+    {
+      "dishNumber": 17,
+      "dishName": "Palak Paneer"
+    },
+    {
+      "dishNumber": 67,
+      "dishName": "Mix Veg Curry"
+    },
+    {
+      "dishNumber": 88,
+      "dishName": "Avial"
+    },
+    {
+      "dishNumber": 35,
+      "dishName": "Curd Rice"
+    }
+  ],
+  "cautionDishes": [
+    {
+      "dishNumber": 31,
+      "dishName": "Indian-style Overnight Oats",
+      "reason": "High fibre: keep away from the thyroid tablet time (est.)"
+    },
+    {
+      "dishNumber": 46,
+      "dishName": "Methi Thepla",
+      "reason": "High fibre: keep away from the thyroid tablet time (est.)"
+    },
+    {
+      "dishNumber": 58,
+      "dishName": "Khaman Dhokla",
+      "reason": "High fibre: keep away from the thyroid tablet time (est.)"
+    },
+    {
+      "dishNumber": 71,
+      "dishName": "Ragi Dosa",
+      "reason": "Fibre timing only; millets need not be avoided (est.)"
+    },
+    {
+      "dishNumber": 99,
+      "dishName": "Masala Chai",
+      "reason": "Tea close to the tablet may reduce absorption; sugar adds up (est.)"
+    },
+    {
+      "dishNumber": 100,
+      "dishName": "Cold Coffee",
+      "reason": "Coffee close to the tablet reduces absorption; sweetened (est.)"
+    },
+    {
+      "dishNumber": 47,
+      "dishName": "Veg Manchurian",
+      "reason": "Soy sauce, fried, salty (est.)"
+    },
+    {
+      "dishNumber": 79,
+      "dishName": "Gobi Manchurian",
+      "reason": "Soy sauce, fried, salty; the cauliflower itself is not the problem (est.)"
+    },
+    {
+      "dishNumber": 20,
+      "dishName": "Vada Pav",
+      "reason": "Refined flour and deep-fried (est.)"
+    },
+    {
+      "dishNumber": 13,
+      "dishName": "Pav Bhaji",
+      "reason": "Refined flour and butter (est.)"
+    },
+    {
+      "dishNumber": 29,
+      "dishName": "Misal Pav",
+      "reason": "Refined flour and salty (est.)"
+    },
+    {
+      "dishNumber": 65,
+      "dishName": "Puri Bhaji",
+      "reason": "Fried puris (est.)"
+    },
+    {
+      "dishNumber": 11,
+      "dishName": "Aloo Paratha",
+      "reason": "Refined-heavy, calorie dense (est.)"
+    },
+    {
+      "dishNumber": 3,
+      "dishName": "Paneer Butter Masala",
+      "reason": "Butter and cream: high saturated fat, relevant if LDL is raised (est., see P4)"
+    },
+    {
+      "dishNumber": 7,
+      "dishName": "Butter Chicken",
+      "reason": "Butter and cream: high saturated fat (est., see P4)"
+    },
+    {
+      "dishNumber": 27,
+      "dishName": "Dal Makhani",
+      "reason": "Butter and cream: high saturated fat (est., see P4)"
+    },
+    {
+      "dishNumber": 42,
+      "dishName": "Malai Kofta",
+      "reason": "Cream and fried koftas (est., see P4)"
+    },
+    {
+      "dishNumber": 39,
+      "dishName": "Veg Biryani",
+      "reason": "Large rice portion (est.)"
+    },
+    {
+      "dishNumber": 62,
+      "dishName": "Mutton Biryani",
+      "reason": "Large rice portion, red meat (est.)"
+    },
+    {
+      "dishNumber": 2,
+      "dishName": "Chicken Biryani",
+      "reason": "Large rice portion (est.)"
+    },
+    {
+      "dishNumber": 95,
+      "dishName": "Rice Kheer",
+      "reason": "Sweet dessert (est. high added sugar)"
+    },
+    {
+      "dishNumber": 96,
+      "dishName": "Gajar Halwa",
+      "reason": "Sweet dessert (est. high added sugar)"
+    },
+    {
+      "dishNumber": 97,
+      "dishName": "Gulab Jamun",
+      "reason": "Fried sugar-syrup dessert (est. high added sugar)"
+    },
+    {
+      "dishNumber": 98,
+      "dishName": "Mango Lassi",
+      "reason": "Sweetened drink (est. high added sugar)"
+    }
+  ],
+  "conflictsWith": [
+    {
+      "profileId": "hyperthyroidism",
+      "rule": "Mutually exclusive unless the user clarifies a history of over-treatment; both need a doctor"
+    },
+    {
+      "profileId": "pregnancy",
+      "rule": "Pregnancy overrides; iodine (WHO 250 µg; ICMR-NIN 220 µg, secondary, unverified) and TSH goals are doctor-led"
+    },
+    {
+      "profileId": "breastfeeding",
+      "rule": "P23 applies; iodine need rises (WHO 250 µg; ICMR-NIN 290 µg, secondary, unverified); doctor-led"
+    },
+    {
+      "profileId": "pcos",
+      "rule": "Often co-exists; same food direction; doctor input"
+    },
+    {
+      "profileId": "high-ldl-cholesterol",
+      "rule": "Thyroid status is a known secondary cause; P4 fat-quality rules apply; doctor sets goals"
+    },
+    {
+      "profileId": "low-hdl-metabolic-syndrome",
+      "rule": "Compatible; P6 rules apply; no target conflict"
+    },
+    {
+      "profileId": "iron-deficiency-anaemia",
+      "rule": "Compatible; keep iron tablets about 4 hours from levothyroxine; doctor decides"
+    },
+    {
+      "profileId": "vitamin-d-b12-deficiency",
+      "rule": "Compatible; low vitamin D and B12 are common with Hashimoto's; doctor decides on tests and supplements"
+    },
+    {
+      "profileId": "celiac-disease",
+      "rule": "P19 overrides food rules; coeliac testing is a doctor decision"
+    },
+    {
+      "profileId": "chronic-kidney-disease",
+      "rule": "P13 overrides protein, potassium and fluid"
+    },
+    {
+      "profileId": "heart-disease",
+      "rule": "P21 overrides; fluid follows P21"
+    },
+    {
+      "profileId": "fat-loss",
+      "rule": "P25 sets the deficit; thyroid treatment does not guarantee weight loss"
+    },
+    {
+      "profileId": "jain-diet",
+      "rule": "Food filter; iodised salt becomes the main iodine source; check B12"
+    },
+    {
+      "profileId": "vegan-diet",
+      "rule": "Food filter; iodine, B12 and vitamin D gaps; iodised salt; no kelp supplements without a doctor"
+    }
+  ],
+  "requiresDoctorInput": true,
+  "requiresDoctorInputStated": true,
+  "fluidNote": null,
+  "warnings": [
+    "General information, not medical advice. FitPlate does not diagnose hypothyroidism; a doctor's examination and blood tests are needed.",
+    "The app never suggests starting, stopping or changing levothyroxine or any thyroid medicine, dose, brand or schedule. Follow your doctor.",
+    "Do not take iodine, kelp or seaweed supplements, or 'thyroid support' pills, without a doctor; the ATA advises against iodine or kelp supplements above 500 µg/day, and people with Hashimoto's are susceptible to harm from excess iodine.",
+    "Selenium supplements: evidence is limited; upper limit 400 µg/day from all sources (NIH); do not self-start.",
+    "High-dose biotin can distort thyroid blood tests; tell your doctor and lab.",
+    "Calcium and iron tablets are commonly kept about 4 hours from levothyroxine; coffee, soy and high-fibre foods can lower absorption. Follow the schedule your doctor gives.",
+    "Thyroid treatment does not reliably cause weight loss (ATA).",
+    "Use iodised salt within the 5 g/day limit; do not cut out salt entirely or swap to non-iodised salt without advice.",
+    "Emergency: extreme drowsiness, confusion, very low body temperature, very slow breathing or fainting with known hypothyroidism. Seek emergency care now (112).",
+    "With heart, kidney or liver disease, pregnancy or diuretics, follow your doctor's advice on fluids.",
+    "requires_doctor_input is true because thyroid disease needs a doctor-set diagnosis, monitoring and medicine dose, and pregnancy changes thyroid and iodine needs."
+  ],
+  "lastResearched": "2026-11-04",
+  "versions": [
+    {
+      "date": "2026-11-04",
+      "file": "FitPlate_Nutrients_2026-11-04.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3); max as safety limit",
+    "limits": "safety limit (lower on conflict)",
+    "lists": "union",
+    "requiresDoctorInput": "stated true in any version, else newest version (missing flag + limits → true)"
+  },
+  "mergeNotes": [],
+  "needsReview": []
+}

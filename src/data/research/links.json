@@ -1,6 +1,6 @@
 {
   "schema": "fitplate.links.v1",
-  "generatedFor": "Day15G2",
+  "generatedFor": "Day16",
   "goodSourceDishes": {
     "biotin": [
       {
@@ -163,6 +163,58 @@
         "dishId": "056-pesarattu"
       }
     ],
+    "copper": [
+      {
+        "dishNumber": 12,
+        "dishName": "Rajma Chawal",
+        "dishId": "012-rajma-chawal"
+      },
+      {
+        "dishNumber": 56,
+        "dishName": "Pesarattu",
+        "dishId": "056-pesarattu"
+      },
+      {
+        "dishNumber": 8,
+        "dishName": "Chole (Chana Masala)",
+        "dishId": "008-chole-chana-masala"
+      },
+      {
+        "dishNumber": 26,
+        "dishName": "Moong Dal Chilla",
+        "dishId": "026-moong-dal-chilla"
+      },
+      {
+        "dishNumber": 27,
+        "dishName": "Dal Makhani",
+        "dishId": "027-dal-makhani"
+      },
+      {
+        "dishNumber": 66,
+        "dishName": "Sprouts Chaat",
+        "dishId": "066-sprouts-chaat"
+      },
+      {
+        "dishNumber": 78,
+        "dishName": "Navratan Korma",
+        "dishId": "078-navratan-korma"
+      },
+      {
+        "dishNumber": 42,
+        "dishName": "Malai Kofta",
+        "dishId": "042-malai-kofta"
+      },
+      {
+        "dishNumber": 63,
+        "dishName": "Shahi Paneer",
+        "dishId": "063-shahi-paneer"
+      },
+      {
+        "dishNumber": 71,
+        "dishName": "Ragi Dosa",
+        "dishId": "071-ragi-dosa"
+      }
+    ],
     "iron": [
       {
         "dishNumber": 77,
@@ -203,6 +255,43 @@
         "dishNumber": 1,
         "dishName": "Poha",
         "dishId": "001-poha"
+      }
+    ],
+    "manganese": [
+      {
+        "dishNumber": 11,
+        "dishName": "Aloo Paratha",
+        "dishId": "011-aloo-paratha"
+      },
+      {
+        "dishNumber": 46,
+        "dishName": "Methi Thepla",
+        "dishId": "046-methi-thepla"
+      },
+      {
+        "dishNumber": 71,
+        "dishName": "Ragi Dosa",
+        "dishId": "071-ragi-dosa"
+      },
+      {
+        "dishNumber": 8,
+        "dishName": "Chole (Chana Masala)",
+        "dishId": "008-chole-chana-masala"
+      },
+      {
+        "dishNumber": 16,
+        "dishName": "Besan Chilla",
+        "dishId": "016-besan-chilla"
+      },
+      {
+        "dishNumber": 6,
+        "dishName": "Upma",
+        "dishId": "006-upma"
+      },
+      {
+        "dishNumber": 56,
+        "dishName": "Pesarattu",
+        "dishId": "056-pesarattu"
       }
     ],
     "niacin": [
@@ -1110,6 +1199,7 @@
     ],
     "063-shahi-paneer": [
       "calcium",
+      "copper",
       "phosphorus",
       "vitamin-b12"
     ],
@@ -1130,7 +1220,8 @@
       "vitamin-e"
     ],
     "078-navratan-korma": [
-      "calcium"
+      "calcium",
+      "copper"
     ],
     "035-curd-rice": [
       "calcium",
@@ -1138,11 +1229,14 @@
       "vitamin-b12"
     ],
     "071-ragi-dosa": [
-      "calcium"
+      "calcium",
+      "copper",
+      "manganese"
     ],
     "046-methi-thepla": [
       "calcium",
       "iron",
+      "manganese",
       "riboflavin",
       "vitamin-a",
       "vitamin-b6",
@@ -1160,6 +1254,7 @@
     ],
     "066-sprouts-chaat": [
       "chloride",
+      "copper",
       "potassium",
       "sodium",
       "vitamin-b6"
@@ -1170,10 +1265,43 @@
     ],
     "056-pesarattu": [
       "chloride",
+      "copper",
       "iron",
+      "manganese",
       "phosphorus",
       "potassium",
       "sodium"
+    ],
+    "012-rajma-chawal": [
+      "copper",
+      "niacin",
+      "pantothenic-acid",
+      "phosphorus",
+      "riboflavin",
+      "thiamine"
+    ],
+    "008-chole-chana-masala": [
+      "copper",
+      "manganese",
+      "pantothenic-acid",
+      "riboflavin",
+      "thiamine",
+      "vitamin-b6"
+    ],
+    "026-moong-dal-chilla": [
+      "copper",
+      "phosphorus",
+      "thiamine"
+    ],
+    "027-dal-makhani": [
+      "copper",
+      "pantothenic-acid",
+      "phosphorus",
+      "thiamine",
+      "vitamin-b6"
+    ],
+    "042-malai-kofta": [
+      "copper"
     ],
     "077-keema-pav": [
       "iron",
@@ -1203,6 +1331,21 @@
       "niacin",
       "vitamin-e"
     ],
+    "011-aloo-paratha": [
+      "manganese",
+      "niacin",
+      "pantothenic-acid",
+      "riboflavin",
+      "thiamine",
+      "vitamin-b6"
+    ],
+    "016-besan-chilla": [
+      "manganese",
+      "thiamine"
+    ],
+    "006-upma": [
+      "manganese"
+    ],
     "023-mutton-rogan-josh": [
       "niacin",
       "vitamin-b12",
@@ -1228,28 +1371,8 @@
       "niacin",
       "thiamine"
     ],
-    "011-aloo-paratha": [
-      "niacin",
-      "pantothenic-acid",
-      "riboflavin",
-      "thiamine",
-      "vitamin-b6"
-    ],
-    "012-rajma-chawal": [
-      "niacin",
-      "pantothenic-acid",
-      "phosphorus",
-      "riboflavin",
-      "thiamine"
-    ],
     "090-home-style-chicken-curry": [
       "pantothenic-acid",
-      "vitamin-b6"
-    ],
-    "027-dal-makhani": [
-      "pantothenic-acid",
-      "phosphorus",
-      "thiamine",
       "vitamin-b6"
     ],
     "024-medu-vada": [
@@ -1258,20 +1381,10 @@
     "004-masala-dosa": [
       "pantothenic-acid"
     ],
-    "008-chole-chana-masala": [
-      "pantothenic-acid",
-      "riboflavin",
-      "thiamine",
-      "vitamin-b6"
-    ],
     "009-idli-with-sambar": [
       "pantothenic-acid",
       "thiamine",
       "vitamin-a"
-    ],
-    "026-moong-dal-chilla": [
-      "phosphorus",
-      "thiamine"
     ],
     "005-dal-tadka": [
       "phosphorus",
@@ -1295,9 +1408,6 @@
       "vitamin-k"
     ],
     "029-misal-pav": [
-      "thiamine"
-    ],
-    "016-besan-chilla": [
       "thiamine"
     ],
     "096-gajar-halwa": [
@@ -1413,6 +1523,11 @@
       "met": 3.5
     },
     {
+      "exerciseId": "barbell-flat-bench-press",
+      "name": "Barbell flat bench press",
+      "met": 3.5
+    },
+    {
       "exerciseId": "bhujangasana-cobra-pose",
       "name": "Bhujangasana (Cobra pose)",
       "met": 2.3
@@ -1421,6 +1536,16 @@
       "exerciseId": "bodyweight-squat",
       "name": "Bodyweight squat",
       "met": 3.8
+    },
+    {
+      "exerciseId": "calf-raise",
+      "name": "Calf raise (standing and seated machines)",
+      "met": 3.5
+    },
+    {
+      "exerciseId": "cat-cow",
+      "name": "Marjaryasana-Bitilasana (Cat-Cow)",
+      "met": 2.3
     },
     {
       "exerciseId": "dead-bug",
@@ -1551,6 +1676,11 @@
       "exerciseId": "treadmill",
       "name": "Treadmill",
       "met": 4.8
+    },
+    {
+      "exerciseId": "wall-sit",
+      "name": "Wall sit (shallow beginner, quarter and parallel versions)",
+      "met": 2.8
     }
   ],
   "microTable": {
@@ -6077,6 +6207,11 @@
         "unit": "µg",
         "source": "ingredient research (Other: FNRI Philippines Food Composition Table, dried pigeon pea: FNRI PH FCT dried pigeon pea seed (i.fnri.dost.gov.ph/fct/library/report/3249, 3250, 3454); folate 456 µg quoted by a secondary page citing 'ICMR IFCT 2017' but not verified; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       },
+      "copper": {
+        "per100": 1.14,
+        "unit": "mg",
+        "source": "nutrient research (copper food sources)"
+      },
       "thiamine": {
         "per100": 0.45,
         "unit": "mg",
@@ -6391,6 +6526,11 @@
         "unit": "µg",
         "source": "nutrient research (biotin food sources)"
       },
+      "manganese": {
+        "per100": 1.12,
+        "unit": "mg",
+        "source": "nutrient research (manganese food sources)"
+      },
       "potassium": {
         "per100": 625,
         "unit": "mg",
@@ -6417,6 +6557,11 @@
         "per100": 364,
         "unit": "mg",
         "source": "nutrient research (calcium food sources)"
+      },
+      "copper": {
+        "per100": 0.67,
+        "unit": "mg",
+        "source": "nutrient research (copper food sources)"
       }
     },
     "mutton-goat-bone-in-curry-cut": {

@@ -10,7 +10,9 @@ import { PAGE_TITLE, SURVEY_PAGES } from '../components/survey/SurveyFlow';
 import { surveySummary } from '../components/survey/surveySummary';
 import { FadeIn, Glass, GradientButton, PressableScale, TopGlow } from '../components/ui';
 import { setReminders } from '../lib/reminders';
-import { GOALS, useStore } from '../lib/store';
+import { useStore } from '../lib/store';
+import { useTargets } from '../lib/useTargets';
+import { amountLabel } from '../services/dayNutrition';
 import { showBeginnerTips } from '../services/kitchen';
 import { syncStatusLine } from '../services/userSession';
 import { IconBadge } from '../components/Icon';
@@ -19,8 +21,9 @@ import { colors, type } from '../theme';
 // `asTab` is set by the Profile tab of the new shell: no back button, and room
 // at the bottom for the floating tab bar.
 export function ProfileScreen({ asTab = false }: { asTab?: boolean }) {
-  const { profile, updateProfile, settings, updateSettings, sex, body, equipmentOwned, signOut, deleteMyData, resetDemo, user, favourites, cloud, syncError } = useStore();
+  const { privateFlags, setPrivateFlag, profile, updateProfile, settings, updateSettings, sex, body, equipmentOwned, signOut, deleteMyData, resetDemo, user, favourites, cloud, syncError } = useStore();
   const [confirmDelete, setConfirmDelete] = useState(false);
+  const { goal: targets, energy, micros } = useTargets();
   const canDelete = Boolean(user && !user.guest && cloud);
   return (
     <SafeAreaView edges={asTab ? ['top'] : undefined} style={{ flex: 1, backgroundColor: colors.bg }}>
@@ -60,7 +63,7 @@ export function ProfileScreen({ asTab = false }: { asTab?: boolean }) {
           <Glass>
             <Text style={styles.label}>Your answers</Text>
             <Text style={[type.small, { color: colors.muted, marginBottom: 6 }]}>
-              Target {GOALS[profile.goal].kcal} kcal and {GOALS[profile.goal].protein} g protein a day. Tap any line to change it.
+              Target {targets.kcal} kcal and {targets.protein} g protein a day. Tap any line to change it.
             </Text>
             {SURVEY_PAGES.filter((pg) => pg !== 'name').map((pg) => (
               <PressableScale key={pg} onPress={() => router.push({ pathname: '/survey', params: { page: pg } })} style={styles.answer} scaleTo={0.98} accessibilityLabel={`Edit ${PAGE_TITLE[pg]}`}>
@@ -75,6 +78,40 @@ export function ProfileScreen({ asTab = false }: { asTab?: boolean }) {
             ))}
           </Glass>
         </FadeIn>
+
+        {featureFlags.personalTargets ? (
+          <FadeIn i={1}>
+            <Glass style={{ marginTop: 14 }}>
+              <Text style={styles.label}>Your daily targets</Text>
+              <Text style={{ color: colors.text, fontWeight: '800' }}>
+                {targets.kcal} kcal · {targets.protein} g protein
+              </Text>
+              <Text style={[type.small, { color: colors.muted, marginTop: 2 }]}>
+                {energy.source === 'formula'
+                  ? 'An estimate from your age, height, weight, activity and goal (Mifflin-St Jeor). Not medical advice.'
+                  : energy.note ?? 'A general starting point for your goal.'}
+              </Text>
+              {micros.some((m) => m.value != null) ? (
+                <Text style={[type.small, { color: colors.muted, marginTop: 8 }]}>
+                  {micros
+                    .filter((m) => m.value != null && ['iron', 'calcium', 'zinc', 'vitamin-c', 'vitamin-d'].includes(m.id))
+                    .map((m) => `${m.name} ${amountLabel(m.value as number, m.unit)}`)
+                    .join(' · ')}
+                  {'\n'}From ICMR-NIN figures as the research found them (some not yet confirmed from the source).
+                </Text>
+              ) : null}
+              <View style={styles.flagRow}>
+                <Text style={{ color: colors.text, flex: 1 }}>I am pregnant</Text>
+                <Switch value={Boolean(privateFlags.pregnant)} onValueChange={(v) => setPrivateFlag('pregnant', v)} trackColor={{ true: colors.accent, false: '#333' }} thumbColor="#fff" accessibilityLabel="I am pregnant" />
+              </View>
+              <View style={styles.flagRow}>
+                <Text style={{ color: colors.text, flex: 1 }}>I am breastfeeding</Text>
+                <Switch value={Boolean(privateFlags.lactating)} onValueChange={(v) => setPrivateFlag('lactating', v)} trackColor={{ true: colors.accent, false: '#333' }} thumbColor="#fff" accessibilityLabel="I am breastfeeding" />
+              </View>
+              <Text style={[type.small, { color: colors.faint }]}>Private to you. These only change your targets.</Text>
+            </Glass>
+          </FadeIn>
+        ) : null}
 
         <FadeIn i={2}>
           <Glass style={{ marginTop: 14, flexDirection: 'row', alignItems: 'center', gap: 12 }}>
@@ -228,6 +265,7 @@ export default function Profile() {
 }
 
 const styles = StyleSheet.create({
+  flagRow: { flexDirection: 'row', alignItems: 'center', minHeight: 44, marginTop: 6 },
   answer: { flexDirection: 'row', alignItems: 'center', gap: 10, minHeight: 54, borderTopWidth: 1, borderTopColor: colors.border },
   answerTitle: { color: colors.text, fontWeight: '800', fontSize: 14.5 },
   answerSub: { color: colors.muted, fontSize: 12.5, marginTop: 2 },
