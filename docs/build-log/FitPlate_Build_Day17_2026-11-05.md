@@ -21,7 +21,7 @@ Run once (`--today 2026-11-05 --build Day17`); no rejections. The hydration topi
 - One glass = about 250 ml (the app's counting unit; stored as glasses, so existing history is unchanged).
 - Target = `waterTarget()` from the Day 16 engine (8-glass default, labelled). Swap in the researched formula there when it arrives.
 - Streak: consecutive days at or above target; today counts once met, and is not a break while unmet.
-- Reminders (phone app only, local notifications, behind the switch): Mon-Fri at 8:30, 10:30, 13:30, 16:00 and 18:00 are the five slots... actually 10:30, 13:30, 16:00, 18:00 plus 8:30; quiet hours 21:00-08:00 are never scheduled. Turning off cancels `water-*` notifications; the other reminders no longer cancel them.
+- Reminders (phone app only, local notifications, behind the switch): Mon-Fri at 8:30, 10:30, 13:30, 16:00 and 18:00; quiet hours 21:00-08:00 are never scheduled. Turning off cancels `water-*` notifications; the other reminders no longer cancel them.
 - **Other drinks are not counted yet.** The spec asks for hydration % from research; no such table exists, and the app will not guess one. Add when the hydration files arrive.
 
 ## 5. INNOVATION
@@ -54,7 +54,7 @@ None.
 
 ## 12. KNOWN ISSUES
 
-Reminders are untested on a device (cloud only). The reminder list in the Design notes line above is: 8:30, 10:30, 13:30, 16:00, 18:00. Only plain water is counted.
+Reminders are untested on a device (cloud only). Only plain water is counted.
 
 ## 13. USER ACTIONS ADDED TODAY
 
