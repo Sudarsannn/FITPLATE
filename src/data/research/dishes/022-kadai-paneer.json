@@ -478,7 +478,7 @@
         }
       ],
       "currentEstimate": {
-        "min": 250,
+        "min": 260,
         "max": 340,
         "avg": 300
       },
@@ -538,7 +538,7 @@
       }
     ],
     "currentEstimate": {
-      "min": 250,
+      "min": 260,
       "max": 340,
       "avg": 300
     },
@@ -642,5 +642,9 @@
     "sources": "union",
     "tags": "tag engine (tags.ts) on the merged dish"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 250.0–340.0 was wider than 30% of avg 300.0; narrowed to ±15%.",
+    "range clamped to observed prices: 260–350 → 260–340"
+  ]
 }

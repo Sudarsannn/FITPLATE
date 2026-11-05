@@ -15,23 +15,31 @@
         "avg": 50,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-06.md"
+      },
+      {
+        "date": "2026-11-05",
+        "min": 42,
+        "max": 56,
+        "avg": 48,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-05.md"
       }
     ],
     "currentEstimate": {
-      "min": 45,
-      "max": 55,
-      "avg": 50
+      "min": 43,
+      "max": 56,
+      "avg": 49
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-06",
+    "lastObserved": "2026-11-05",
     "stale": false,
     "seasonal": false,
-    "listingCount": 5,
+    "listingCount": 6,
     "platforms": [
-      "Amazon",
       "BigBasket",
+      "Flipkart",
       "Swiggy Instamart"
     ],
     "outOfStock": false,
@@ -39,29 +47,229 @@
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 4.5,
-    "max": 5.5,
-    "avg": 5
+    "min": 4.3,
+    "max": 5.6,
+    "avg": 4.9
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 340,
+      "source": "USDA FDC: USDA FDC 168893 'Wheat flour, whole-grain'; values seen only on secondary sites that mirror it (myfooddata, foodstruct, getfoodfacts); IFCT 2017 entry not reachable; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "proteinG": {
+      "value": 13.2,
+      "source": "USDA FDC: USDA FDC 168893 'Wheat flour, whole-grain'; values seen only on secondary sites that mirror it (myfooddata, foodstruct, getfoodfacts); IFCT 2017 entry not reachable; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "carbsG": {
+      "value": 72,
+      "source": "USDA FDC: USDA FDC 168893 'Wheat flour, whole-grain'; values seen only on secondary sites that mirror it (myfooddata, foodstruct, getfoodfacts); IFCT 2017 entry not reachable; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fatG": {
+      "value": 2.5,
+      "source": "USDA FDC: USDA FDC 168893 'Wheat flour, whole-grain'; values seen only on secondary sites that mirror it (myfooddata, foodstruct, getfoodfacts); IFCT 2017 entry not reachable; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 10.7,
+      "source": "USDA FDC: USDA FDC 168893 'Wheat flour, whole-grain'; values seen only on secondary sites that mirror it (myfooddata, foodstruct, getfoodfacts); IFCT 2017 entry not reachable; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sodiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": 2.6,
+      "source": "USDA FDC: USDA FDC 168893 'Wheat flour, whole-grain'; values seen only on secondary sites that mirror it (myfooddata, foodstruct, getfoodfacts); IFCT 2017 entry not reachable; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 168893 'Wheat flour, whole-grain'; values seen only on secondary sites that mirror it (myfooddata, foodstruct, getfoodfacts); IFCT 2017 entry not reachable; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 168893 'Wheat flour, whole-grain'; values seen only on secondary sites that mirror it (myfooddata, foodstruct, getfoodfacts); IFCT 2017 entry not reachable; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    }
+  },
   "macrosPer100Estimate": {
     "kcal": 340,
-    "proteinG": 12,
-    "carbsG": 69,
-    "fatG": 1.8,
-    "fibreG": 11
+    "proteinG": 12.6,
+    "carbsG": 70.5,
+    "fatG": 2.5,
+    "fibreG": 10.9
   },
-  "storage": "Airtight steel or plastic container in a cool, dry cupboard: 2–3 months after opening. In hot, humid Mumbai months it keeps longer in the fridge (up to about 6 months). A couple of bay leaves in the tin is a common home trick against weevils.",
-  "looksLike": "Fine, light brown to creamy-beige flour with tiny bran specks. Feels soft between the fingers and smells faintly nutty and wheaty.",
-  "howToPick": "Choose a recent manufacturing date (atta keeps best within 2–3 months of milling). The flour should smell fresh and wheaty, not sour, musty or bitter. Avoid packs with lumps, webbing, small insects or a damp feel.",
-  "shelfLife": "Usually 3–4 months from packing (check the pack); loose chakki atta is best used within 1–2 months.",
+  "storage": "Keep in an airtight steel or glass container in a cool dry place for 2 to 3 months, or in the fridge in hot, humid Mumbai monsoon weather to slow insects and rancidity.",
+  "looksLike": "Fine, light brown to creamy-beige flour with small bran specks; soft to the touch with a mild wheaty smell.",
+  "howToPick": "Look for a recent packing date, an even light-brown colour with bran flecks, a fresh nutty smell and a sealed pack. Avoid flour that smells musty or sour, feels damp or has lumps or tiny insects.",
+  "shelfLife": "Packaged atta is usually labelled for a few months from packing; whole wheat flour goes stale sooner than maida because of the germ oil (general guidance, not from a source in this run).",
   "substitutes": [
     "Multigrain atta",
     "Half atta, half maida",
-    "Jowar or bajra atta"
+    "Jowar or bajra atta",
+    "Kuttu (buckwheat) flour",
+    "Half atta and half maida"
   ],
   "vendorListings": [
+    {
+      "vendor": "instamart",
+      "product": "Aashirvaad Shudh Chakki Atta, Gurgaon page",
+      "pack": "5 kg",
+      "priceMinInr": 239,
+      "priceMaxInr": 239,
+      "observedOn": "2026-11-05"
+    },
+    {
+      "vendor": "instamart",
+      "product": "Aashirvaad Shudh Chakki Atta, Surat page",
+      "pack": "5 kg",
+      "priceMinInr": 282,
+      "priceMaxInr": 282,
+      "observedOn": "2026-11-05"
+    },
     {
       "vendor": "instamart",
       "product": null,
@@ -76,18 +284,23 @@
       "dishNumber": 11,
       "quantity": 80,
       "unit": "g",
-      "raw": "80 g in the dough, plus about 10 g for dusting (about 5 g of it gets used)"
+      "raw": "80 g per serving in the dough, plus about 10 g for dusting (about 5 g gets used up)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-06",
       "file": "FitPlate_Ingredients_2026-10-06.md"
+    },
+    {
+      "date": "2026-11-05",
+      "file": "FitPlate_Ingredients_2026-11-05.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "vendorListings": "newest sighting per vendor+product+pack",
@@ -95,5 +308,7 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "macrosPer100Estimate.fatG: Versions 2026-10-06 (1.8) and 2026-11-05 (2.5) differ by more than 25%; kept the newer."
+  ]
 }

@@ -43,6 +43,8 @@ export const featureFlags = {
   fridgeRescue: true,
   /** Innovation (Day 15): plain-words search such as "15 min no onion veg" on the Cook tab. */
   plainSearch: true,
+  /** Day 17: water tracker screen, streak and workday reminders. ON. */
+  waterTracker: true,
   /** Day 16: calorie, protein and nutrient targets worked out from the profile. ON. */
   personalTargets: true,
   /** Day 15G2: confirm screen and official cart push from the shopping list. Stays OFF until an official integration exists. */

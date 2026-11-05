@@ -15,51 +15,243 @@
         "avg": 185,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-06.md"
+      },
+      {
+        "date": "2026-11-05",
+        "min": 180,
+        "max": 300,
+        "avg": 225,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-05.md"
       }
     ],
     "currentEstimate": {
-      "min": 150,
-      "max": 200,
-      "avg": 185
+      "min": 175,
+      "max": 235,
+      "avg": 205
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-06",
+    "lastObserved": "2026-11-05",
     "stale": false,
     "seasonal": false,
-    "listingCount": 5,
+    "listingCount": 3,
     "platforms": [
-      "Amazon",
       "BigBasket",
-      "pricee.com"
+      "Flipkart"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 15,
-    "max": 20,
-    "avg": 18.5
+    "min": 17.5,
+    "max": 23.5,
+    "avg": 20.5
   },
   "seasonal": false,
-  "nutritionPer100g": null,
-  "macrosPer100Estimate": {
-    "kcal": 345,
-    "proteinG": 24,
-    "carbsG": 60,
-    "fatG": 1,
-    "fibreG": 25
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 333,
+      "source": "USDA FDC: USDA FDC 175193 'Beans, kidney, all types, mature seeds, raw' for energy, protein, carbohydrate, fat and saturated fat (seen via foodstruct, happyforks, myfooddata mirrors); fibre and iron from IFCT 2017 figures quoted by organicmandya.com blog; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "proteinG": {
+      "value": 23.6,
+      "source": "USDA FDC: USDA FDC 175193 'Beans, kidney, all types, mature seeds, raw' for energy, protein, carbohydrate, fat and saturated fat (seen via foodstruct, happyforks, myfooddata mirrors); fibre and iron from IFCT 2017 figures quoted by organicmandya.com blog; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "carbsG": {
+      "value": 60,
+      "source": "USDA FDC: USDA FDC 175193 'Beans, kidney, all types, mature seeds, raw' for energy, protein, carbohydrate, fat and saturated fat (seen via foodstruct, happyforks, myfooddata mirrors); fibre and iron from IFCT 2017 figures quoted by organicmandya.com blog; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "sugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fatG": {
+      "value": 0.83,
+      "source": "USDA FDC: USDA FDC 175193 'Beans, kidney, all types, mature seeds, raw' for energy, protein, carbohydrate, fat and saturated fat (seen via foodstruct, happyforks, myfooddata mirrors); fibre and iron from IFCT 2017 figures quoted by organicmandya.com blog; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "saturatedFatG": {
+      "value": 0.12,
+      "source": "USDA FDC: USDA FDC 175193 'Beans, kidney, all types, mature seeds, raw' for energy, protein, carbohydrate, fat and saturated fat (seen via foodstruct, happyforks, myfooddata mirrors); fibre and iron from IFCT 2017 figures quoted by organicmandya.com blog; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "fibreG": {
+      "value": 15.2,
+      "source": "USDA FDC: USDA FDC 175193 'Beans, kidney, all types, mature seeds, raw' for energy, protein, carbohydrate, fat and saturated fat (seen via foodstruct, happyforks, myfooddata mirrors); fibre and iron from IFCT 2017 figures quoted by organicmandya.com blog; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "sodiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "ironMg": {
+      "value": 5.1,
+      "source": "USDA FDC: USDA FDC 175193 'Beans, kidney, all types, mature seeds, raw' for energy, protein, carbohydrate, fat and saturated fat (seen via foodstruct, happyforks, myfooddata mirrors); fibre and iron from IFCT 2017 figures quoted by organicmandya.com blog; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 175193 'Beans, kidney, all types, mature seeds, raw' for energy, protein, carbohydrate, fat and saturated fat (seen via foodstruct, happyforks, myfooddata mirrors); fibre and iron from IFCT 2017 figures quoted by organicmandya.com blog; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 175193 'Beans, kidney, all types, mature seeds, raw' for energy, protein, carbohydrate, fat and saturated fat (seen via foodstruct, happyforks, myfooddata mirrors); fibre and iron from IFCT 2017 figures quoted by organicmandya.com blog; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    }
   },
-  "storage": "Dry: airtight container in a cool, dark cupboard for up to 12 months. Add a dried red chilli or bay leaf against insects. Cooked: fridge 3–4 days; freezer up to 3 months.",
-  "looksLike": "Kidney-shaped dried beans about 1.5 cm long. Red rajma is glossy dark red-maroon; Chitra rajma is pale pinkish-beige with red speckles. Jammu/Kashmiri rajma is smaller and darker.",
-  "howToPick": "Beans should be even in size and colour, glossy and unbroken. Avoid wrinkled, cracked or dull beans, tiny holes (weevils), dust or a musty smell. Older beans take much longer to cook soft.",
-  "shelfLife": "About 9–12 months from packing; older beans stay hard after cooking.",
+  "macrosPer100Estimate": {
+    "kcal": 339,
+    "proteinG": 23.8,
+    "carbsG": 60,
+    "fatG": 0.9,
+    "fibreG": 15.2
+  },
+  "storage": "Store in an airtight container in a cool, dry place for up to 12 months; keep cooked rajma in the fridge for 3 to 4 days or freeze for a few weeks.",
+  "looksLike": "Kidney-shaped dried beans about 1.5 cm long; red rajma is glossy dark red-maroon, while Chitra rajma is smaller and pink with red speckles.",
+  "howToPick": "Whole, evenly coloured, glossy beans of similar size with no holes, dust or broken pieces. Old beans look dull and wrinkled and take much longer to soften.",
+  "shelfLife": "About a year in a dry airtight jar, but older beans cook slowly (general guidance, not from a source in this run).",
   "substitutes": [
     "Canned/boiled ready rajma",
     "Chitra or Jammu rajma",
-    "Kabuli chana or lobia (black-eyed beans)"
+    "Kabuli chana or lobia (black-eyed beans)",
+    "Canned red kidney beans (drained)",
+    "Chitra rajma or black-eyed beans (lobia)",
+    "Chhole (chickpeas)"
   ],
   "vendorListings": [],
   "usedIn": [
@@ -67,18 +259,23 @@
       "dishNumber": 12,
       "quantity": 50,
       "unit": "g",
-      "raw": "50 g dry (about 125 g once boiled)"
+      "raw": "50 g dry per serving (about 125 g once boiled)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-06",
       "file": "FitPlate_Ingredients_2026-10-06.md"
+    },
+    {
+      "date": "2026-11-05",
+      "file": "FitPlate_Ingredients_2026-11-05.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "vendorListings": "newest sighting per vendor+product+pack",
@@ -86,5 +283,9 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 165.0–250.0 was wider than 30% of avg 205.0; narrowed to ±15%.",
+    "macrosPer100Estimate.fibreG: Versions 2026-10-06 (25) and 2026-11-05 (15.2) differ by more than 25%; kept the newer."
+  ]
 }

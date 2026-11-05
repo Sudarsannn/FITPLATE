@@ -4,7 +4,7 @@
   "aliases": [
     "hakka noodles"
   ],
-  "category": "Packaged (grain/noodle)",
+  "category": "Grain",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -15,50 +15,244 @@
         "avg": 190,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-06.md"
+      },
+      {
+        "date": "2026-11-05",
+        "min": 200,
+        "max": 255,
+        "avg": 230,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-05.md"
       }
     ],
     "currentEstimate": {
-      "min": 180,
-      "max": 200,
-      "avg": 190
+      "min": 195,
+      "max": 235,
+      "avg": 215
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-06",
+    "lastObserved": "2026-11-05",
     "stale": false,
     "seasonal": false,
     "listingCount": 3,
     "platforms": [
-      "Amazon",
       "BigBasket"
     ],
     "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "confirmed": false,
+    "checkNotes": [
+      "only 1 platform (BigBasket) backs the range"
+    ]
   },
   "per100Estimate": {
-    "min": 18,
-    "max": 20,
-    "avg": 19
+    "min": 19.5,
+    "max": 23.5,
+    "avg": 21.5
   },
   "seasonal": false,
-  "nutritionPer100g": null,
-  "macrosPer100Estimate": {
-    "kcal": 370,
-    "proteinG": 13,
-    "carbsG": 75,
-    "fatG": 1.5,
-    "fibreG": 3
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 349,
+      "source": "Other: Zepto label (Ching's Secret veg hakka noodles): Zepto listing for Ching's Secret Veg Hakka Noodles per 100 g (https://www.zepto.com/pn/chings-secret-veg-hakka-noodles-cooks-in-5-7-mins-just-soak-drain/pvid/fce576d9-608c-412f-b1d7-1aff01f4785d); label data, not IFCT or USDA; sodium conflicts with Open Food Facts",
+      "confidence": "Low"
+    },
+    "proteinG": {
+      "value": 11.2,
+      "source": "Other: Zepto label (Ching's Secret veg hakka noodles): Zepto listing for Ching's Secret Veg Hakka Noodles per 100 g (https://www.zepto.com/pn/chings-secret-veg-hakka-noodles-cooks-in-5-7-mins-just-soak-drain/pvid/fce576d9-608c-412f-b1d7-1aff01f4785d); label data, not IFCT or USDA; sodium conflicts with Open Food Facts",
+      "confidence": "Low"
+    },
+    "carbsG": {
+      "value": 74.7,
+      "source": "Other: Zepto label (Ching's Secret veg hakka noodles): Zepto listing for Ching's Secret Veg Hakka Noodles per 100 g (https://www.zepto.com/pn/chings-secret-veg-hakka-noodles-cooks-in-5-7-mins-just-soak-drain/pvid/fce576d9-608c-412f-b1d7-1aff01f4785d); label data, not IFCT or USDA; sodium conflicts with Open Food Facts",
+      "confidence": "Low"
+    },
+    "sugarsG": {
+      "value": 0.5,
+      "source": "Other: Zepto label (Ching's Secret veg hakka noodles): Zepto listing for Ching's Secret Veg Hakka Noodles per 100 g (https://www.zepto.com/pn/chings-secret-veg-hakka-noodles-cooks-in-5-7-mins-just-soak-drain/pvid/fce576d9-608c-412f-b1d7-1aff01f4785d); label data, not IFCT or USDA; sodium conflicts with Open Food Facts",
+      "confidence": "Low"
+    },
+    "fatG": {
+      "value": 0.6,
+      "source": "Other: Zepto label (Ching's Secret veg hakka noodles): Zepto listing for Ching's Secret Veg Hakka Noodles per 100 g (https://www.zepto.com/pn/chings-secret-veg-hakka-noodles-cooks-in-5-7-mins-just-soak-drain/pvid/fce576d9-608c-412f-b1d7-1aff01f4785d); label data, not IFCT or USDA; sodium conflicts with Open Food Facts",
+      "confidence": "Low"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 4,
+      "source": "Other: Zepto label (Ching's Secret veg hakka noodles): Zepto listing for Ching's Secret Veg Hakka Noodles per 100 g (https://www.zepto.com/pn/chings-secret-veg-hakka-noodles-cooks-in-5-7-mins-just-soak-drain/pvid/fce576d9-608c-412f-b1d7-1aff01f4785d); label data, not IFCT or USDA; sodium conflicts with Open Food Facts",
+      "confidence": "Low"
+    },
+    "sodiumMg": {
+      "value": 2062,
+      "source": "Other: Zepto label (Ching's Secret veg hakka noodles): Zepto listing for Ching's Secret Veg Hakka Noodles per 100 g (https://www.zepto.com/pn/chings-secret-veg-hakka-noodles-cooks-in-5-7-mins-just-soak-drain/pvid/fce576d9-608c-412f-b1d7-1aff01f4785d); label data, not IFCT or USDA; sodium conflicts with Open Food Facts",
+      "confidence": "Low"
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": 0.5,
+      "source": "Other: Zepto label (Ching's Secret veg hakka noodles): Zepto listing for Ching's Secret Veg Hakka Noodles per 100 g (https://www.zepto.com/pn/chings-secret-veg-hakka-noodles-cooks-in-5-7-mins-just-soak-drain/pvid/fce576d9-608c-412f-b1d7-1aff01f4785d); label data, not IFCT or USDA; sodium conflicts with Open Food Facts",
+      "confidence": "Low"
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    }
   },
-  "storage": "Unopened: cool, dry cupboard until the best-before date. Opened: fold and clip the pouch or move to an airtight jar; use within 1–2 months. Boiled noodles keep 1–2 days in the fridge, tossed with a little oil.",
-  "looksLike": "Thin, wavy, pale cream strands pressed into flat bricks, sold in clear or printed pouches (usually 150 g). They look a bit like instant noodles but come without a seasoning sachet.",
-  "howToPick": null,
-  "shelfLife": "Typically 9–12 months unopened (check the pack).",
+  "macrosPer100Estimate": {
+    "kcal": 359.5,
+    "proteinG": 12.1,
+    "carbsG": 74.9,
+    "fatG": 0.6,
+    "fibreG": 4
+  },
+  "storage": "Keep in a cool, dry cupboard in the sealed pouch, or transfer opened noodles to an airtight box and use within a few weeks. Cooked noodles keep 1 to 2 days in the fridge (general guidance, not from a source in this run).",
+  "looksLike": "Thin, wavy, pale cream strands pressed into flat bricks, sold in 150 g pouches; the dish uses half a pouch (75 g).",
+  "howToPick": "Look for intact, unbroken noodle bricks in a sealed pouch with a clear manufacture date; avoid pouches with crushed powder or an oily smell. Check the ingredient list for refined wheat flour and whether a seasoning sachet is included.",
+  "shelfLife": "Usually several months from packing; follow the best-before date on the pouch (general guidance, not from a source in this run).",
   "substitutes": [
     "Whole-wheat hakka noodles",
     "Spaghetti or thin pasta",
-    "Rice noodles (thin)"
+    "Rice noodles (thin)",
+    "Whole-wheat hakka noodles or atta noodles",
+    "Spaghetti or thin vermicelli noodles",
+    "Rice noodles"
   ],
   "vendorListings": [],
   "usedIn": [
@@ -66,18 +260,23 @@
       "dishNumber": 15,
       "quantity": 75,
       "unit": "g",
-      "raw": "75 g dry (½ of a 150 g packet)"
+      "raw": "75 g per serving (half of a 150 g packet)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-06",
       "file": "FitPlate_Ingredients_2026-10-06.md"
+    },
+    {
+      "date": "2026-11-05",
+      "file": "FitPlate_Ingredients_2026-11-05.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "vendorListings": "newest sighting per vendor+product+pack",
@@ -85,5 +284,8 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "macrosPer100Estimate.fatG: Versions 2026-10-06 (1.5) and 2026-11-05 (0.6) differ by more than 25%; kept the newer.",
+    "macrosPer100Estimate.fibreG: Versions 2026-10-06 (3) and 2026-11-05 (4) differ by more than 25%; kept the newer."
+  ]
 }

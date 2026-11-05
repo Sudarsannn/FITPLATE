@@ -5,7 +5,7 @@
     "ladi pav",
     "soft bread rolls"
   ],
-  "category": "Bakery / packaged",
+  "category": "Bakery",
   "standardUnit": "piece",
   "price": {
     "priceHistory": [
@@ -40,41 +40,238 @@
   },
   "per100Estimate": null,
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 308,
+      "source": "Other: Britannia pav label on BigBasket: Britannia Pav 200 g pouch, BigBasket nutrition panel per 100 g (https://www.bigbasket.com/pd/20000008/britannia-britannia-pav-200-g-pouch); label states no trans fat or cholesterol; sodium and fibre not printed; no IFCT 2017 pav entry seen",
+      "confidence": "Low"
+    },
+    "proteinG": {
+      "value": 7,
+      "source": "Other: Britannia pav label on BigBasket: Britannia Pav 200 g pouch, BigBasket nutrition panel per 100 g (https://www.bigbasket.com/pd/20000008/britannia-britannia-pav-200-g-pouch); label states no trans fat or cholesterol; sodium and fibre not printed; no IFCT 2017 pav entry seen",
+      "confidence": "Low"
+    },
+    "carbsG": {
+      "value": 61,
+      "source": "Other: Britannia pav label on BigBasket: Britannia Pav 200 g pouch, BigBasket nutrition panel per 100 g (https://www.bigbasket.com/pd/20000008/britannia-britannia-pav-200-g-pouch); label states no trans fat or cholesterol; sodium and fibre not printed; no IFCT 2017 pav entry seen",
+      "confidence": "Low"
+    },
+    "sugarsG": {
+      "value": 6.5,
+      "source": "Other: Britannia pav label on BigBasket: Britannia Pav 200 g pouch, BigBasket nutrition panel per 100 g (https://www.bigbasket.com/pd/20000008/britannia-britannia-pav-200-g-pouch); label states no trans fat or cholesterol; sodium and fibre not printed; no IFCT 2017 pav entry seen",
+      "confidence": "Low"
+    },
+    "fatG": {
+      "value": 4,
+      "source": "Other: Britannia pav label on BigBasket: Britannia Pav 200 g pouch, BigBasket nutrition panel per 100 g (https://www.bigbasket.com/pd/20000008/britannia-britannia-pav-200-g-pouch); label states no trans fat or cholesterol; sodium and fibre not printed; no IFCT 2017 pav entry seen",
+      "confidence": "Low"
+    },
+    "saturatedFatG": {
+      "value": 1.5,
+      "source": "Other: Britannia pav label on BigBasket: Britannia Pav 200 g pouch, BigBasket nutrition panel per 100 g (https://www.bigbasket.com/pd/20000008/britannia-britannia-pav-200-g-pouch); label states no trans fat or cholesterol; sodium and fibre not printed; no IFCT 2017 pav entry seen",
+      "confidence": "Low"
+    },
+    "fibreG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "sodiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "Other: Britannia pav label on BigBasket: Britannia Pav 200 g pouch, BigBasket nutrition panel per 100 g (https://www.bigbasket.com/pd/20000008/britannia-britannia-pav-200-g-pouch); label states no trans fat or cholesterol; sodium and fibre not printed; no IFCT 2017 pav entry seen",
+      "confidence": "Low"
+    },
+    "transFatG": {
+      "value": 0,
+      "source": "Other: Britannia pav label on BigBasket: Britannia Pav 200 g pouch, BigBasket nutrition panel per 100 g (https://www.bigbasket.com/pd/20000008/britannia-britannia-pav-200-g-pouch); label states no trans fat or cholesterol; sodium and fibre not printed; no IFCT 2017 pav entry seen",
+      "confidence": "Low"
+    },
+    "mufaG": {
+      "value": 1.5,
+      "source": "Other: Britannia pav label on BigBasket: Britannia Pav 200 g pouch, BigBasket nutrition panel per 100 g (https://www.bigbasket.com/pd/20000008/britannia-britannia-pav-200-g-pouch); label states no trans fat or cholesterol; sodium and fibre not printed; no IFCT 2017 pav entry seen",
+      "confidence": "Low"
+    },
+    "pufaG": {
+      "value": 1,
+      "source": "Other: Britannia pav label on BigBasket: Britannia Pav 200 g pouch, BigBasket nutrition panel per 100 g (https://www.bigbasket.com/pd/20000008/britannia-britannia-pav-200-g-pouch); label states no trans fat or cholesterol; sodium and fibre not printed; no IFCT 2017 pav entry seen",
+      "confidence": "Low"
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    }
+  },
   "macrosPer100Estimate": {
-    "kcal": 280,
-    "proteinG": 9,
-    "carbsG": 52,
+    "kcal": 294,
+    "proteinG": 8,
+    "carbsG": 56.5,
     "fatG": 4,
     "fibreG": 3
   },
-  "storage": "Room temperature in its bag or a bread box, away from sunlight: 1–2 days (bakery), up to the pack date (packaged). Freeze in a zip bag up to 1 month; thaw and toast on a buttered tawa. Fridge storage makes pav go stale faster.",
-  "looksLike": "Small, soft, square-ish white bread rolls, baked joined together in a row or block (a \"ladi\"), with a golden-brown top and pale sides where they were pulled apart. Each roll is about 30–40 g.",
-  "howToPick": "Soft and springy when pressed, golden top, light for its size, fresh yeasty smell. Avoid dry, hard or crumbly rolls and any green/white mould spots. Bakery pav is best on the day it is baked; check the date on packaged pav.",
-  "shelfLife": "Bakery pav 1–2 days; packaged pav 3–5 days (check the pack).",
+  "storage": "Keep packaged pav in its pouch at room temperature and use within a few days; bakery pav is best the same day. Freeze with the pouch sealed for about a month (general guidance, not from a source in this run) and warm on a tawa before use.",
+  "looksLike": "Small, soft, pale rolls baked joined in a block (a \"ladi\"), golden on top, white where the rolls were pulled apart. Each roll is roughly 35 g (the dish file puts 2 rolls at about 70 g).",
+  "howToPick": "Soft and springy to the touch, springs back when pressed, even golden top, no sour or yeasty-sharp smell, no mould spots or dry hard edges. Check the packing date; packaged pav is a short-shelf-life product.",
+  "shelfLife": "A Harvest Gold Bombay Pav listing on Instamart states 5 days from the date of manufacture (https://www.swiggy.com/instamart/p/harvest-gold-bombay-pav-N5P4O80P1S). Bakery pav is best the same day or next day.",
   "substitutes": [
     "Burger buns or dinner rolls",
     "Whole-wheat pav",
-    "Sliced bread, toasted with butter"
+    "Sliced bread, toasted with butter",
+    "Slices of white bread, butter-toasted"
   ],
-  "vendorListings": [],
+  "vendorListings": [
+    {
+      "vendor": "zepto",
+      "product": "Britannia Pav",
+      "pack": "200 g (about 5.7 pcs at 35 g)",
+      "priceMinInr": 35,
+      "priceMaxInr": 35,
+      "observedOn": "2026-11-05"
+    }
+  ],
   "usedIn": [
     {
       "dishNumber": 13,
       "quantity": null,
       "unit": null,
-      "raw": "2 pav (about 70 g)"
+      "raw": "2 pav (about 70 g) per serving, 2 rolls from a ladi"
     }
   ],
   "versions": [
     {
       "date": "2026-10-06",
       "file": "FitPlate_Ingredients_2026-10-06.md"
+    },
+    {
+      "date": "2026-11-05",
+      "file": "FitPlate_Ingredients_2026-11-05.md"
     }
   ],
   "mergeMethod": {
     "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "vendorListings": "newest sighting per vendor+product+pack",

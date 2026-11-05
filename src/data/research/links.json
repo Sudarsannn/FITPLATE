@@ -1,6 +1,6 @@
 {
   "schema": "fitplate.links.v1",
-  "generatedFor": "Day16",
+  "generatedFor": "Day17",
   "goodSourceDishes": {
     "biotin": [
       {
@@ -2200,6 +2200,23 @@
         "source": "nutrient research (vitamin-k food sources)"
       }
     },
+    "carom-seeds": {
+      "potassium": {
+        "per100": 1507,
+        "unit": "mg",
+        "source": "ingredient research (Other: FatSecret generic ajwain entry: FatSecret generic 'ajwain' food entry (user-contributed database, not IFCT or USDA); other sites disagree widely; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (Other: FatSecret generic ajwain entry: FatSecret generic 'ajwain' food entry (user-contributed database, not IFCT or USDA); other sites disagree widely; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (Other: FatSecret generic ajwain entry: FatSecret generic 'ajwain' food entry (user-contributed database, not IFCT or USDA); other sites disagree widely; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
     "carrot": {
       "iron": {
         "per100": 0.3,
@@ -4124,6 +4141,13 @@
         "source": "ingredient research (USDA FDC: USDA 'Peppers, hot chili, green, raw' (getfoodfacts lists FDC 170497; ID not confirmed against FDC); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
+    "green-chilli-sauce": {
+      "sodium": {
+        "per100": 1803,
+        "unit": "mg",
+        "source": "ingredient research (Other: Ching's Secret label data via UK deal page and Open Food Facts: Ching's Secret Green Chilli Sauce 190 g: energy, protein, carbohydrate, sugars and fat from a hotukdeals listing (https://www.hotukdeals.com/deals/chings-secret-green-chilli-sauce-190g-york-4995955); sodium from Open Food Facts (https://world.openfoodfacts.org/product/8901595862733/green-chilli-sauce-ching-s-secret); label data per 100 g, not IFCT or USDA; sources conflict)"
+      }
+    },
     "green-chutney-ready-made": {
       "cholesterol": {
         "per100": 0,
@@ -4221,6 +4245,13 @@
         "per100": 0,
         "unit": "µg",
         "source": "ingredient research (USDA FDC: USDA 'Peas, green, frozen, unprepared' (NDB 11312; FDC IDs differ between mirrors); values seen only on secondary sites (Vitals Hub, Recipal, Happy Forks, nutritionvalue.org, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
+    "hakka-noodles-dry": {
+      "sodium": {
+        "per100": 2062,
+        "unit": "mg",
+        "source": "ingredient research (Other: Zepto label (Ching's Secret veg hakka noodles): Zepto listing for Ching's Secret Veg Hakka Noodles per 100 g (https://www.zepto.com/pn/chings-secret-veg-hakka-noodles-cooks-in-5-7-mins-just-soak-drain/pvid/fce576d9-608c-412f-b1d7-1aff01f4785d); label data, not IFCT or USDA; sodium conflicts with Open Food Facts)"
       }
     },
     "honey": {
@@ -4859,6 +4890,13 @@
         "source": "nutrient research (zinc food sources)"
       }
     },
+    "pav": {
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (Other: Britannia pav label on BigBasket: Britannia Pav 200 g pouch, BigBasket nutrition panel per 100 g (https://www.bigbasket.com/pd/20000008/britannia-britannia-pav-200-g-pouch); label states no trans fat or cholesterol; sodium and fibre not printed; no IFCT 2017 pav entry seen)"
+      }
+    },
     "pav-bhaji-masala": {
       "cholesterol": {
         "per100": 0,
@@ -5375,6 +5413,23 @@
         "per100": 1460,
         "unit": "mg",
         "source": "ingredient research (Other: retailer label listing: Ching's Secret Red Chilli Sauce 200 g, label-style values on indiamart-srl.odoo.com)"
+      }
+    },
+    "red-kidney-beans-dried": {
+      "iron": {
+        "per100": 5.1,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 175193 'Beans, kidney, all types, mature seeds, raw' for energy, protein, carbohydrate, fat and saturated fat (seen via foodstruct, happyforks, myfooddata mirrors); fibre and iron from IFCT 2017 figures quoted by organicmandya.com blog; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 175193 'Beans, kidney, all types, mature seeds, raw' for energy, protein, carbohydrate, fat and saturated fat (seen via foodstruct, happyforks, myfooddata mirrors); fibre and iron from IFCT 2017 figures quoted by organicmandya.com blog; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 175193 'Beans, kidney, all types, mature seeds, raw' for energy, protein, carbohydrate, fat and saturated fat (seen via foodstruct, happyforks, myfooddata mirrors); fibre and iron from IFCT 2017 figures quoted by organicmandya.com blog; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
     "roasted-gram-dal": {
@@ -6520,6 +6575,48 @@
         "source": "nutrient research (pantothenic-acid food sources)"
       }
     },
+    "whole-wheat-flour": {
+      "zinc": {
+        "per100": 2.6,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 168893 'Wheat flour, whole-grain'; values seen only on secondary sites that mirror it (myfooddata, foodstruct, getfoodfacts); IFCT 2017 entry not reachable; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 168893 'Wheat flour, whole-grain'; values seen only on secondary sites that mirror it (myfooddata, foodstruct, getfoodfacts); IFCT 2017 entry not reachable; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 168893 'Wheat flour, whole-grain'; values seen only on secondary sites that mirror it (myfooddata, foodstruct, getfoodfacts); IFCT 2017 entry not reachable; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "niacin": {
+        "per100": 2.37,
+        "unit": "mg",
+        "source": "nutrient research (niacin food sources)"
+      },
+      "phosphorus": {
+        "per100": 315,
+        "unit": "mg",
+        "source": "nutrient research (phosphorus food sources)"
+      },
+      "riboflavin": {
+        "per100": 0.15,
+        "unit": "mg",
+        "source": "nutrient research (riboflavin food sources)"
+      },
+      "thiamine": {
+        "per100": 0.42,
+        "unit": "mg",
+        "source": "nutrient research (thiamine food sources)"
+      },
+      "vitamin-b6": {
+        "per100": 0.25,
+        "unit": "mg",
+        "source": "nutrient research (vitamin-b6 food sources)"
+      }
+    },
     "spinach": {
       "biotin": {
         "per100": 4.14,
@@ -6577,33 +6674,6 @@
       },
       "vitamin-b6": {
         "per100": 0.31,
-        "unit": "mg",
-        "source": "nutrient research (vitamin-b6 food sources)"
-      }
-    },
-    "whole-wheat-flour": {
-      "niacin": {
-        "per100": 2.37,
-        "unit": "mg",
-        "source": "nutrient research (niacin food sources)"
-      },
-      "phosphorus": {
-        "per100": 315,
-        "unit": "mg",
-        "source": "nutrient research (phosphorus food sources)"
-      },
-      "riboflavin": {
-        "per100": 0.15,
-        "unit": "mg",
-        "source": "nutrient research (riboflavin food sources)"
-      },
-      "thiamine": {
-        "per100": 0.42,
-        "unit": "mg",
-        "source": "nutrient research (thiamine food sources)"
-      },
-      "vitamin-b6": {
-        "per100": 0.25,
         "unit": "mg",
         "source": "nutrient research (vitamin-b6 food sources)"
       }

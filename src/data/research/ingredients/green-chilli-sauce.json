@@ -4,7 +4,7 @@
   "aliases": [
     "hari mirch sauce"
   ],
-  "category": "Packaged (condiment)",
+  "category": "Condiment",
   "standardUnit": "l",
   "price": {
     "priceHistory": [
@@ -15,71 +15,276 @@
         "avg": 270,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-06.md"
+      },
+      {
+        "date": "2026-11-05",
+        "min": 215,
+        "max": 290,
+        "avg": 255,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-05.md"
       }
     ],
     "currentEstimate": {
-      "min": 260,
-      "max": 275,
-      "avg": 270
+      "min": 240,
+      "max": 285,
+      "avg": 265
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-06",
+    "lastObserved": "2026-11-05",
     "stale": false,
     "seasonal": false,
-    "listingCount": 2,
+    "listingCount": 10,
     "platforms": [
-      "Amazon",
-      "BigBasket"
+      "BigBasket",
+      "Blinkit"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 2 listings back the range (need 3)"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 26,
-    "max": 27.5,
-    "avg": 27
+    "min": 24,
+    "max": 28.5,
+    "avg": 26.5
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 29,
+      "source": "Other: Ching's Secret label data via UK deal page and Open Food Facts: Ching's Secret Green Chilli Sauce 190 g: energy, protein, carbohydrate, sugars and fat from a hotukdeals listing (https://www.hotukdeals.com/deals/chings-secret-green-chilli-sauce-190g-york-4995955); sodium from Open Food Facts (https://world.openfoodfacts.org/product/8901595862733/green-chilli-sauce-ching-s-secret); label data per 100 g, not IFCT or USDA; sources conflict",
+      "confidence": "Low"
+    },
+    "proteinG": {
+      "value": 1,
+      "source": "Other: Ching's Secret label data via UK deal page and Open Food Facts: Ching's Secret Green Chilli Sauce 190 g: energy, protein, carbohydrate, sugars and fat from a hotukdeals listing (https://www.hotukdeals.com/deals/chings-secret-green-chilli-sauce-190g-york-4995955); sodium from Open Food Facts (https://world.openfoodfacts.org/product/8901595862733/green-chilli-sauce-ching-s-secret); label data per 100 g, not IFCT or USDA; sources conflict",
+      "confidence": "Low"
+    },
+    "carbsG": {
+      "value": 5.5,
+      "source": "Other: Ching's Secret label data via UK deal page and Open Food Facts: Ching's Secret Green Chilli Sauce 190 g: energy, protein, carbohydrate, sugars and fat from a hotukdeals listing (https://www.hotukdeals.com/deals/chings-secret-green-chilli-sauce-190g-york-4995955); sodium from Open Food Facts (https://world.openfoodfacts.org/product/8901595862733/green-chilli-sauce-ching-s-secret); label data per 100 g, not IFCT or USDA; sources conflict",
+      "confidence": "Low"
+    },
+    "sugarsG": {
+      "value": 5.5,
+      "source": "Other: Ching's Secret label data via UK deal page and Open Food Facts: Ching's Secret Green Chilli Sauce 190 g: energy, protein, carbohydrate, sugars and fat from a hotukdeals listing (https://www.hotukdeals.com/deals/chings-secret-green-chilli-sauce-190g-york-4995955); sodium from Open Food Facts (https://world.openfoodfacts.org/product/8901595862733/green-chilli-sauce-ching-s-secret); label data per 100 g, not IFCT or USDA; sources conflict",
+      "confidence": "Low"
+    },
+    "fatG": {
+      "value": 0.4,
+      "source": "Other: Ching's Secret label data via UK deal page and Open Food Facts: Ching's Secret Green Chilli Sauce 190 g: energy, protein, carbohydrate, sugars and fat from a hotukdeals listing (https://www.hotukdeals.com/deals/chings-secret-green-chilli-sauce-190g-york-4995955); sodium from Open Food Facts (https://world.openfoodfacts.org/product/8901595862733/green-chilli-sauce-ching-s-secret); label data per 100 g, not IFCT or USDA; sources conflict",
+      "confidence": "Low"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "sodiumMg": {
+      "value": 1803,
+      "source": "Other: Ching's Secret label data via UK deal page and Open Food Facts: Ching's Secret Green Chilli Sauce 190 g: energy, protein, carbohydrate, sugars and fat from a hotukdeals listing (https://www.hotukdeals.com/deals/chings-secret-green-chilli-sauce-190g-york-4995955); sodium from Open Food Facts (https://world.openfoodfacts.org/product/8901595862733/green-chilli-sauce-ching-s-secret); label data per 100 g, not IFCT or USDA; sources conflict",
+      "confidence": "Low"
+    },
+    "ironMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    }
+  },
   "macrosPer100Estimate": {
-    "kcal": 70,
-    "proteinG": 0.5,
-    "carbsG": 16,
-    "fatG": 0.2,
+    "kcal": 29,
+    "proteinG": 1,
+    "carbsG": 5.5,
+    "fatG": 0.4,
     "fibreG": 0.5
   },
-  "storage": "Unopened: cool, dark cupboard. Opened: refrigerate with the cap tight; use within 1–2 months. Use a dry spoon.",
-  "looksLike": "Thin, pourable, pale green to yellow-green sauce in a glass or plastic bottle; sharp, sour and hot.",
-  "howToPick": null,
-  "shelfLife": "About 12 months unopened (check label).",
+  "storage": "Unopened: cool, dry cupboard. After opening, close the cap tightly and keep in the fridge, using within about 2 to 3 months or as the label says (general guidance, not from a source in this run).",
+  "looksLike": "A thin, pourable, pale green to yellow-green sauce in a glass or plastic bottle; sharp, sour and hot from green chilli and vinegar.",
+  "howToPick": "Check a sealed bottle, a clear green-yellow colour (not dark brown), a recent best-before date and a short ingredient list (green chilli, vinegar, salt, stabiliser). Avoid bulging caps, leaks or a fizzy smell.",
+  "shelfLife": "Unopened bottles generally last many months; follow the printed date (general guidance, not from a source in this run).",
   "substitutes": [
     "Fresh green chilli + vinegar",
     "Red chilli sauce",
-    "Schezwan sauce (small amount)"
+    "Schezwan sauce (small amount)",
+    "Fresh chopped green chilli with a splash of white vinegar",
+    "Tabasco-style hot sauce",
+    "Schezwan sauce"
   ],
-  "vendorListings": [],
+  "vendorListings": [
+    {
+      "vendor": "blinkit",
+      "product": "Ching's Green Chilli Sauce",
+      "pack": "190 g",
+      "priceMinInr": 54,
+      "priceMaxInr": 54,
+      "observedOn": "2026-11-05"
+    }
+  ],
   "usedIn": [
     {
       "dishNumber": 15,
       "quantity": 5,
       "unit": "ml",
-      "raw": "5 ml (1 tsp)"
+      "raw": "5 ml per serving (1 tsp)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-06",
       "file": "FitPlate_Ingredients_2026-10-06.md"
+    },
+    {
+      "date": "2026-11-05",
+      "file": "FitPlate_Ingredients_2026-11-05.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (wma)",
     "macrosPer100Estimate": "stable (single)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "vendorListings": "newest sighting per vendor+product+pack",
@@ -87,5 +292,10 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "macrosPer100Estimate.kcal: Versions 2026-10-06 (70) and 2026-11-05 (29) differ by more than 25%; kept the newer.",
+    "macrosPer100Estimate.proteinG: Versions 2026-10-06 (0.5) and 2026-11-05 (1) differ by more than 25%; kept the newer.",
+    "macrosPer100Estimate.carbsG: Versions 2026-10-06 (16) and 2026-11-05 (5.5) differ by more than 25%; kept the newer.",
+    "macrosPer100Estimate.fatG: Versions 2026-10-06 (0.2) and 2026-11-05 (0.4) differ by more than 25%; kept the newer."
+  ]
 }

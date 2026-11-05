@@ -205,12 +205,12 @@ export default function Today() {
             <LateNightCard />
             <Glass style={{ marginTop: 14 }}>
               <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
-                <View>
+                <PressableScale onPress={() => router.push('/water')} accessibilityLabel="Open the water tracker" scaleTo={0.98}>
                   <Text style={[type.h2, { color: colors.text }]}>Water</Text>
                   <Text style={[type.small, { color: colors.muted }]}>
-                    {today.water} of {WATER_TARGET} glasses
+                    {today.water} of {WATER_TARGET} glasses · tap for history
                   </Text>
-                </View>
+                </PressableScale>
                 <View style={{ flexDirection: 'row', gap: 8 }}>
                   <PressableScale onPress={() => s.addWater(-1)} style={styles.round}>
                     <Ionicons name="remove" size={18} color={colors.text} />
