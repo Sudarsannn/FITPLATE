@@ -1,0 +1,676 @@
+{
+  "id": "hyperthyroidism",
+  "type": "condition",
+  "name": "Hyperthyroidism",
+  "surveyQuestion": "Do you have any of these health conditions? (select all that apply) -> Overactive thyroid (hyperthyroidism / Graves' disease). Check question: Has a doctor told you that you have an overactive thyroid (hyperthyroidism or Graves' disease)? Yes, on treatment / Yes, not on treatment / Yes, treated with radioiodine or surgery / Yes, borderline (subclinical; lifestyle-only mode) / No / Never tested / Not sure. Follow-ups: Which treatment are you on? Antithyroid tablet / Beta-blocker / Radioiodine planned or done / Surgery done / None / Not sure (the app never comments on dose); Are you pregnant or planning pregnancy? Do you smoke? Any eye symptoms? Optional latest TSH and test date; Do you take biotin, iodine, kelp, calcium, vitamin D or selenium supplements? Has your hospital given you a low-iodine diet list?",
+  "targets": [
+    {
+      "nutrient": "energy",
+      "unit": "kcal/day",
+      "generalAdult": 2110,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "raise",
+      "source": "ICMR-NIN 2020 (secondary, unverified) (2110 sedentary man, 1660 sedentary woman); qualitative raise while overactive, no numeric uplift found; corrected REE about 28.7 to 21.5 kcal/kg before vs after treatment in one Graves' cohort (search summary, secondary)"
+    },
+    {
+      "nutrient": "protein",
+      "unit": "g/kg/day",
+      "generalAdult": 0.83,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "raise",
+      "source": "ICMR-NIN 2020 (secondary, unverified); reach at least the general target; no numeric hyperthyroid-specific protein target found"
+    },
+    {
+      "nutrient": "total_fat",
+      "unit": "% energy",
+      "generalAdult": 30,
+      "profileValue": 30,
+      "min": null,
+      "max": 30,
+      "direction": "same",
+      "source": "DGI 2024; WHO 2023 (as P6)"
+    },
+    {
+      "nutrient": "saturated_fat",
+      "unit": "% energy",
+      "generalAdult": 10,
+      "profileValue": 10,
+      "min": null,
+      "max": 10,
+      "direction": "same",
+      "source": "WHO 2023; P4 applies if LDL is raised"
+    },
+    {
+      "nutrient": "trans_fat",
+      "unit": "% energy",
+      "generalAdult": 1,
+      "profileValue": 1,
+      "min": null,
+      "max": 1,
+      "direction": "limit",
+      "source": "WHO 2023"
+    },
+    {
+      "nutrient": "mufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found"
+    },
+    {
+      "nutrient": "pufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found"
+    },
+    {
+      "nutrient": "omega_3_fish",
+      "unit": "servings/week",
+      "generalAdult": null,
+      "profileValue": 2,
+      "min": 2,
+      "max": null,
+      "direction": "same",
+      "source": "AHA 2021 (as P5/P6); ICMR-NIN omega-3 value Not found; seafood iodine per portion Not found"
+    },
+    {
+      "nutrient": "dietary_cholesterol",
+      "unit": "mg/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found; P4 applies if selected"
+    },
+    {
+      "nutrient": "total_carbohydrate",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No ICMR total found; DGI 2024 cereals and millets cap 45% of energy (as P4, secondary, unverified)"
+    },
+    {
+      "nutrient": "added_sugar",
+      "unit": "g/day",
+      "generalAdult": 25,
+      "profileValue": 25,
+      "min": null,
+      "max": 25,
+      "direction": "same",
+      "source": "WHO 2015 (5% of energy, conditional); as P5/P6"
+    },
+    {
+      "nutrient": "fibre",
+      "unit": "g/day",
+      "generalAdult": 30,
+      "profileValue": 30,
+      "min": 30,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified) about 30 g per 2000 kcal"
+    },
+    {
+      "nutrient": "sodium",
+      "unit": "mg/day",
+      "generalAdult": 2000,
+      "profileValue": 2000,
+      "min": null,
+      "max": 2000,
+      "direction": "same",
+      "source": "WHO 2012; DGI 2024; no extra salt for sweating at ordinary activity"
+    },
+    {
+      "nutrient": "salt",
+      "unit": "g/day",
+      "generalAdult": 5,
+      "profileValue": 5,
+      "min": null,
+      "max": 5,
+      "direction": "same",
+      "source": "DGI 2024; NIDDCP (as P9); iodised household salt within 5 g unless the doctor says otherwise; routine iodised-salt avoidance not established (2018 RCT via news summary; 2023 systematic review)"
+    },
+    {
+      "nutrient": "potassium",
+      "unit": "mg/day",
+      "generalAdult": 3510,
+      "profileValue": 3510,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "WHO 2012; ICMR-NIN 2020 3500 mg (secondary, unverified)"
+    },
+    {
+      "nutrient": "calcium",
+      "unit": "mg/day",
+      "generalAdult": 1000,
+      "profileValue": 1000,
+      "min": 1000,
+      "max": null,
+      "direction": "raise",
+      "source": "ICMR-NIN 2020 (secondary, unverified); meet the full target from food; bone loss in hyperthyroidism (Jyotsna IJMR 2012; Cureus 2023 review via summary); supplements are the doctor's decision"
+    },
+    {
+      "nutrient": "iron_men",
+      "unit": "mg/day",
+      "generalAdult": 19,
+      "profileValue": 19,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "iron_women",
+      "unit": "mg/day",
+      "generalAdult": 29,
+      "profileValue": 29,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "magnesium_men",
+      "unit": "mg/day",
+      "generalAdult": 440,
+      "profileValue": 440,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 via FSSAI (secondary, unverified)"
+    },
+    {
+      "nutrient": "magnesium_women",
+      "unit": "mg/day",
+      "generalAdult": 370,
+      "profileValue": 370,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 via FSSAI (secondary, unverified)"
+    },
+    {
+      "nutrient": "vitamin_d",
+      "unit": "µg/day",
+      "generalAdult": 15,
+      "profileValue": 15,
+      "min": 15,
+      "max": null,
+      "direction": "raise",
+      "source": "ICMR-NIN 2020 (secondary, unverified) (a blog table lists 5 µg: conflict, 15 µg kept as P9); meet target and ask doctor for a 25(OH)D test; Indian Graves' patients mean 12.67 ng/mL (Jyotsna IJMR 2012); about 95% of patients and controls deficient in a South Indian study, so not clearly due to hyperthyroidism"
+    },
+    {
+      "nutrient": "vitamin_b12",
+      "unit": "µg/day",
+      "generalAdult": 2.2,
+      "profileValue": 2.2,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 as adopted by FSSAI (secondary, unverified)"
+    },
+    {
+      "nutrient": "folate_men",
+      "unit": "µg DFE/day",
+      "generalAdult": 300,
+      "profileValue": 300,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "folate_women",
+      "unit": "µg DFE/day",
+      "generalAdult": 220,
+      "profileValue": 220,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "iodine",
+      "unit": "µg/day",
+      "generalAdult": 140,
+      "profileValue": 140,
+      "min": 140,
+      "max": 1100,
+      "direction": "limit",
+      "source": "ICMR-NIN 2020 (secondary, unverified) RDA 140 µg, EAR 95 µg (another summary lists 150 µg); ATA/WHO/NIH 150 µg; NIH UL 1100 µg; ATA 2013 advises against iodine or kelp supplements above 500 µg/day; low-iodine diet (under 50 µg/day for about 1-2 weeks) only as given by the doctor before radioiodine; from food and iodised salt only"
+    },
+    {
+      "nutrient": "iodine_pregnancy",
+      "unit": "µg/day",
+      "generalAdult": null,
+      "profileValue": 250,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "WHO/ICCIDD 250 µg pregnancy and lactation; ICMR-NIN 2020 220 µg pregnancy and 290 µg lactation (secondary, unverified); doctor-led, requires_doctor_input"
+    },
+    {
+      "nutrient": "selenium",
+      "unit": "µg/day",
+      "generalAdult": 40,
+      "profileValue": 40,
+      "min": null,
+      "max": 400,
+      "direction": "limit",
+      "source": "ICMR-NIN 2020 adequate intake 40 µg (secondary, unverified); NIH ODS UL 400 µg all sources (as P9); selenium 100 µg twice daily for 6 months helped mild Graves' orbitopathy (Marcocci NEJM 2011; ETA/EUGOGO 2016), doctor-led; no preset"
+    },
+    {
+      "nutrient": "biotin",
+      "unit": "µg/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No target found; high-dose biotin can falsely lower TSH and raise free T4/T3 (FDA 2017 via summaries); no biotin quick-add presets"
+    },
+    {
+      "nutrient": "caffeine",
+      "unit": "mg/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "limit",
+      "source": "Not found as a number; caffeine overlaps palpitations, tremor and anxiety (clinical reference table and patient pages, secondary, unverified)"
+    },
+    {
+      "nutrient": "water",
+      "unit": "mL/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No change from FitPlate general water target; no hyperthyroid-specific number found; never above the app cap; Follow your doctor's advice"
+    }
+  ],
+  "bloodMarkers": [
+    {
+      "marker": "TSH",
+      "target": "Use the lab's own range. Low or suppressed TSH with high free T4/T3 fits overt hyperthyroidism; low TSH with normal free T4/T3 is subclinical. TSH can stay suppressed for several months after treatment starts, so it is a poor early marker",
+      "unit": "mIU/L",
+      "source": "ATA 2016 (via ATA public summary); Indian euthyroid study 2025 (as P9)"
+    },
+    {
+      "marker": "Free T4 and free T3",
+      "target": "Lab range only; no Indian-specific target found; doctor follows during treatment",
+      "unit": "lab-specific",
+      "source": "Not found"
+    },
+    {
+      "marker": "TSH-receptor antibodies (TRAb)",
+      "target": "Positive supports Graves' disease; persistently high at 12-18 months guides drug vs radioiodine vs surgery (ETA 2018); in pregnancy measure at diagnosis and, if raised, repeat at 18-22 and 30-34 weeks (ATA 2017). No cut-off number found",
+      "unit": "lab-specific",
+      "source": "ETA 2018; ATA 2017 (via summaries)"
+    },
+    {
+      "marker": "Complete blood count with differential, liver profile",
+      "target": "ATA suggests a baseline before antithyroid drugs; insufficient evidence for or against routine liver tests afterwards",
+      "unit": "cells/uL; U/L",
+      "source": "ATA 2016 (via guideline tool summary)"
+    },
+    {
+      "marker": "25(OH) vitamin D",
+      "target": "Often low in India regardless of thyroid; ranges as P12; Indian Graves' mean 12.67 ng/mL",
+      "unit": "ng/mL",
+      "source": "Jyotsna IJMR 2012; as P12"
+    },
+    {
+      "marker": "Serum calcium and alkaline phosphatase",
+      "target": "Stored only; no thyroid-specific target found",
+      "unit": "mg/dL; U/L",
+      "source": "Not found"
+    },
+    {
+      "marker": "Bone density (DXA)",
+      "target": "Doctor decides; hip fracture HR 1.52 with endogenous subclinical hyperthyroidism, 1.61 when TSH under 0.10 mIU/L",
+      "unit": "T-score",
+      "source": "Blum, JAMA 2015 (via summary)"
+    },
+    {
+      "marker": "LDL, total cholesterol, triglycerides",
+      "target": "No sourced hyperthyroid-specific effect found; goals as P4/P5",
+      "unit": "mg/dL",
+      "source": "Not found"
+    },
+    {
+      "marker": "Biotin interference",
+      "target": "Tell the doctor and lab if taking biotin; secondary sources repeat about 72 hours before tests, no official hold time confirmed",
+      "unit": "-",
+      "source": "FDA 2017 (via summaries)"
+    }
+  ],
+  "waterMl": {
+    "min": null,
+    "max": null,
+    "notes": "No change from FitPlate general water target; no hyperthyroid-specific fluid number found. Overactive thyroid raises body heat and sweating, so the general hot-weather, exercise and fever rules apply, but the app never pushes a target above the general cap. Fever with confusion or very fast heartbeat is an emergency, not a hydration problem. With heart, kidney or liver disease, pregnancy or diuretics, show only the general range. Follow your doctor's advice."
+  },
+  "sodiumMgMax": 2000,
+  "dietaryCholesterolMgMax": null,
+  "foodsFavour": [
+    "dals, pulses, sprouts, eggs, chicken, fish in usual portions, paneer and curd for protein at every main meal",
+    "calcium foods: milk, curd, paneer, ragi, sesame, green leafy vegetables",
+    "regular meals and snacks if weight is falling unintentionally",
+    "plain water, buttermilk, nimbu pani and coconut water in heat and sweating",
+    "iodised household salt within 5 g/day unless the doctor says otherwise",
+    "vitamin D check and safe sun exposure"
+  ],
+  "foodsLimit": [
+    "seaweed, kelp, iodine and 'thyroid support' supplements (ATA: avoid above 500 µg/day)",
+    "biotin hair-and-nail supplements around blood tests",
+    "strong tea, coffee, cola and energy drinks if palpitations, tremor or anxiety",
+    "tobacco in any form; alcohol",
+    "sweets, deep-fried snacks and refined flour as calorie sources",
+    "salt-heavy packaged foods, pickles, papad and namkeen",
+    "self-started selenium or calcium supplements without a doctor"
+  ],
+  "goodFitDishes": [
+    {
+      "dishNumber": 5,
+      "dishName": "Dal Tadka"
+    },
+    {
+      "dishNumber": 12,
+      "dishName": "Rajma Chawal"
+    },
+    {
+      "dishNumber": 8,
+      "dishName": "Chole (Chana Masala)"
+    },
+    {
+      "dishNumber": 52,
+      "dishName": "Moong Dal Khichdi"
+    },
+    {
+      "dishNumber": 80,
+      "dishName": "Masoor Dal"
+    },
+    {
+      "dishNumber": 14,
+      "dishName": "Egg Bhurji"
+    },
+    {
+      "dishNumber": 21,
+      "dishName": "Masala Omelette"
+    },
+    {
+      "dishNumber": 38,
+      "dishName": "Egg Curry"
+    },
+    {
+      "dishNumber": 45,
+      "dishName": "Tandoori Chicken"
+    },
+    {
+      "dishNumber": 90,
+      "dishName": "Home-style Chicken Curry"
+    },
+    {
+      "dishNumber": 17,
+      "dishName": "Palak Paneer"
+    },
+    {
+      "dishNumber": 69,
+      "dishName": "Paneer Bhurji"
+    },
+    {
+      "dishNumber": 53,
+      "dishName": "Paneer Tikka"
+    },
+    {
+      "dishNumber": 35,
+      "dishName": "Curd Rice"
+    },
+    {
+      "dishNumber": 41,
+      "dishName": "Pongal"
+    },
+    {
+      "dishNumber": 16,
+      "dishName": "Besan Chilla"
+    },
+    {
+      "dishNumber": 26,
+      "dishName": "Moong Dal Chilla"
+    },
+    {
+      "dishNumber": 66,
+      "dishName": "Sprouts Chaat"
+    },
+    {
+      "dishNumber": 71,
+      "dishName": "Ragi Dosa"
+    },
+    {
+      "dishNumber": 31,
+      "dishName": "Indian-style Overnight Oats"
+    },
+    {
+      "dishNumber": 33,
+      "dishName": "Goan Fish Curry"
+    },
+    {
+      "dishNumber": 55,
+      "dishName": "Prawn Masala"
+    }
+  ],
+  "cautionDishes": [
+    {
+      "dishNumber": 99,
+      "dishName": "Masala Chai",
+      "reason": "Caffeine and sugar; limit if palpitations or tremor (est.)"
+    },
+    {
+      "dishNumber": 100,
+      "dishName": "Cold Coffee",
+      "reason": "Caffeine and sugar; limit if palpitations or tremor (est.)"
+    },
+    {
+      "dishNumber": 47,
+      "dishName": "Veg Manchurian",
+      "reason": "Soy sauce, fried, salty; soy is on some pre-radioiodine lists (est.)"
+    },
+    {
+      "dishNumber": 79,
+      "dishName": "Gobi Manchurian",
+      "reason": "Soy sauce, fried, salty (est.)"
+    },
+    {
+      "dishNumber": 20,
+      "dishName": "Vada Pav",
+      "reason": "Refined flour and deep-fried (est.)"
+    },
+    {
+      "dishNumber": 13,
+      "dishName": "Pav Bhaji",
+      "reason": "Refined flour and butter (est.)"
+    },
+    {
+      "dishNumber": 29,
+      "dishName": "Misal Pav",
+      "reason": "Refined flour and salty (est.)"
+    },
+    {
+      "dishNumber": 65,
+      "dishName": "Puri Bhaji",
+      "reason": "Fried puris (est.)"
+    },
+    {
+      "dishNumber": 11,
+      "dishName": "Aloo Paratha",
+      "reason": "Refined-heavy, calorie dense (est.)"
+    },
+    {
+      "dishNumber": 3,
+      "dishName": "Paneer Butter Masala",
+      "reason": "Butter and cream: high saturated fat (est.)"
+    },
+    {
+      "dishNumber": 7,
+      "dishName": "Butter Chicken",
+      "reason": "Butter and cream: high saturated fat (est.)"
+    },
+    {
+      "dishNumber": 27,
+      "dishName": "Dal Makhani",
+      "reason": "Butter and cream: high saturated fat (est.)"
+    },
+    {
+      "dishNumber": 42,
+      "dishName": "Malai Kofta",
+      "reason": "Cream and fried koftas (est.)"
+    },
+    {
+      "dishNumber": 39,
+      "dishName": "Veg Biryani",
+      "reason": "Large rice portion, salt (est.)"
+    },
+    {
+      "dishNumber": 62,
+      "dishName": "Mutton Biryani",
+      "reason": "Large rice portion, red meat (est.)"
+    },
+    {
+      "dishNumber": 2,
+      "dishName": "Chicken Biryani",
+      "reason": "Large rice portion (est.)"
+    },
+    {
+      "dishNumber": 95,
+      "dishName": "Rice Kheer",
+      "reason": "Sweet dessert (est. high added sugar)"
+    },
+    {
+      "dishNumber": 96,
+      "dishName": "Gajar Halwa",
+      "reason": "Sweet dessert (est. high added sugar)"
+    },
+    {
+      "dishNumber": 97,
+      "dishName": "Gulab Jamun",
+      "reason": "Fried sugar-syrup dessert (est. high added sugar)"
+    },
+    {
+      "dishNumber": 98,
+      "dishName": "Mango Lassi",
+      "reason": "Sweetened drink (est. high added sugar)"
+    }
+  ],
+  "conflictsWith": [
+    {
+      "profileId": "hypothyroidism",
+      "rule": "Mutually exclusive unless the user clarifies a history of over- or under-treatment (for example radioiodine then levothyroxine); then P9 applies; both need a doctor"
+    },
+    {
+      "profileId": "pregnancy",
+      "rule": "Pregnancy overrides; drug choice (PTU first trimester per ATA/ETA summaries), iodine (WHO 250 µg; ICMR-NIN 220 µg, secondary, unverified) and TRAb follow-up are doctor-led"
+    },
+    {
+      "profileId": "breastfeeding",
+      "rule": "P23 applies; iodine need rises (WHO 250 µg; ICMR-NIN 290 µg, secondary, unverified); doctor-led"
+    },
+    {
+      "profileId": "osteoporosis-low-bone-density",
+      "rule": "Compatible; both raise calcium and vitamin D focus; doctor decides on supplements"
+    },
+    {
+      "profileId": "heart-disease",
+      "rule": "P21 overrides; fluid follows P21; requires_doctor_input true"
+    },
+    {
+      "profileId": "chronic-kidney-disease",
+      "rule": "P13 overrides protein, potassium and fluid"
+    },
+    {
+      "profileId": "fatty-liver",
+      "rule": "P7 overrides fluid; liver profile is monitored on antithyroid drugs; doctor input"
+    },
+    {
+      "profileId": "fat-loss",
+      "rule": "Not offered during active weight loss from the disease; after treatment normal P25 rules with no crash deficit"
+    },
+    {
+      "profileId": "healthy-weight-gain",
+      "rule": "Compatible once the doctor confirms thyroid control"
+    },
+    {
+      "profileId": "muscle-gain",
+      "rule": "Compatible once the doctor confirms thyroid control; protein and calcium meters apply"
+    },
+    {
+      "profileId": "endurance-running",
+      "rule": "Needs the doctor's OK first (heart rate and rhythm)"
+    },
+    {
+      "profileId": "vitamin-d-b12-deficiency",
+      "rule": "Compatible; the doctor decides on tests and supplements"
+    },
+    {
+      "profileId": "iron-deficiency-anaemia",
+      "rule": "Compatible; the doctor decides"
+    },
+    {
+      "profileId": "jain-diet",
+      "rule": "Food filter; check calcium, vitamin D and protein; iodised salt remains the usual iodine source"
+    },
+    {
+      "profileId": "vegan-diet",
+      "rule": "Food filter; calcium, vitamin D, protein gaps; iodised salt; no seaweed or kelp supplements"
+    }
+  ],
+  "requiresDoctorInput": true,
+  "requiresDoctorInputStated": true,
+  "fluidNote": null,
+  "warnings": [
+    "General information, not medical advice. FitPlate does not diagnose hyperthyroidism; a doctor's examination and blood tests are needed.",
+    "The app never suggests starting, stopping, skipping or changing carbimazole, methimazole, PTU, beta-blockers or any thyroid treatment. Follow your doctor.",
+    "Emergency: fever with very fast heartbeat, agitation, confusion, vomiting or collapse in someone with overactive thyroid may be thyroid storm. Seek emergency care now (112).",
+    "Fever, sore throat or mouth ulcers while on antithyroid drugs: possible low white cells. Get urgent medical care; the doctor decides about the tablet.",
+    "Yellow skin or eyes, dark urine or abdominal pain on antithyroid drugs: contact the doctor the same day.",
+    "Do not take iodine, kelp or seaweed supplements or 'thyroid support' pills without a doctor; the ATA advises against iodine or kelp supplements above 500 µg/day; NIH upper limit is 1,100 µg/day.",
+    "A low-iodine diet before radioiodine is short and specific and is given by the doctor or hospital; the app does not create one.",
+    "Selenium supplements: doctor-led only (trial use in mild Graves' orbitopathy); upper limit 400 µg/day from all sources (NIH); do not self-start.",
+    "High-dose biotin can distort thyroid blood tests and imitate Graves' disease; tell your doctor and lab.",
+    "Caffeine can worsen palpitations, tremor and anxiety; no numeric limit found.",
+    "Weight commonly rises about 5-6 kg after treatment (UK cohorts); plan gently, no crash diets.",
+    "Smoking raises the risk and severity of Graves' eye disease; ask for quit support.",
+    "Drink more in heat per the general rules but never push a higher target; with heart, kidney or liver disease, pregnancy or diuretics, follow your doctor's advice.",
+    "requires_doctor_input is true because overactive thyroid needs a doctor-set diagnosis, monitoring and treatment, drug side effects and thyroid storm are urgent, and pregnancy changes drug choice and iodine needs."
+  ],
+  "lastResearched": "2026-11-06",
+  "versions": [
+    {
+      "date": "2026-11-06",
+      "file": "FitPlate_Nutrients_2026-11-06.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3); max as safety limit",
+    "limits": "safety limit (lower on conflict)",
+    "lists": "union",
+    "requiresDoctorInput": "stated true in any version, else newest version (missing flag + limits → true)"
+  },
+  "mergeNotes": [],
+  "needsReview": []
+}

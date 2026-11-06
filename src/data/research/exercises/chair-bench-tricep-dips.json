@@ -1,0 +1,744 @@
+{
+  "id": "chair-bench-tricep-dips",
+  "number": 11,
+  "name": "Chair or bench tricep dips (bent-knee beginner, straight-leg and feet-elevated versions)",
+  "otherNames": [
+    "Bench dips",
+    "Chair dips",
+    "Reverse dips",
+    "Triceps dips off a bench",
+    "Bent-knee bench dip"
+  ],
+  "section": "home",
+  "type": "strength",
+  "equipment": [
+    "sturdy chair or bench"
+  ],
+  "noEquipmentAlternative": "Wall push-back, counter push-back or close-grip incline push-up; no equipment needed.",
+  "musclesPrimary": [
+    "triceps brachii"
+  ],
+  "musclesSecondary": [
+    "anterior deltoid",
+    "pectoralis major",
+    "serratus anterior",
+    "rhomboids",
+    "levator scapulae",
+    "latissimus dorsi"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 2.8,
+  "compendiumCode": "02024",
+  "metOptions": [
+    {
+      "code": "02024",
+      "met": 2.8,
+      "activity": "MET: 2.8, Compendium code 02024, \"calisthenics (e.g., curl ups, abdominal crunches, plank), light effort\" (2024 Adult Compendium of Physical Activities). This is the code that matches the beginner pre"
+    },
+    {
+      "code": "02022",
+      "met": 3.8,
+      "activity": "Extras (text only, not used in the JSON): straight-leg or feet-elevated sets at moderate effort (5-6/10, Borg 12-13) could map to 02022, \"calisthenics (e.g., pushups, sit ups, pull-ups, lunges), moder"
+    },
+    {
+      "code": "02020",
+      "met": 7.5,
+      "activity": "Extras (text only, not used in the JSON): straight-leg or feet-elevated sets at moderate effort (5-6/10, Borg 12-13) could map to 02022, \"calisthenics (e.g., pushups, sit ups, pull-ups, lunges), moder"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "6-8 bent-knee partial-depth dips",
+      "timeSec": null,
+      "restSec": 50,
+      "tempo": "2 s down, 1 s pause, 1-2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 2,
+      "reps": "8 bent-knee partial-depth dips in a circuit",
+      "timeSec": null,
+      "restSec": 30,
+      "tempo": "2 s down, 1 s pause, 1-2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "strength",
+      "sets": 3,
+      "reps": "5-6 bent-knee partial-depth dips",
+      "timeSec": null,
+      "restSec": 70,
+      "tempo": "2 s down, 1 s pause, 1-2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "8-10 bent-knee partial-depth dips",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "2 s down, 1 s pause, 1-2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "8-10 straight-leg dips to about 90 degree elbow bend",
+      "timeSec": null,
+      "restSec": 50,
+      "tempo": "2 s down, 1 s pause, 1-2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "8-12 straight-leg dips",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2 s down, 1 s pause, 1-2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "12-15 bent-knee or straight-leg dips",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "2 s down, 1 s pause, 1-2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": 4,
+      "reps": "4-6 feet-elevated dips",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "3 s down, 1 s pause, 1-2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "8-12 feet-elevated dips",
+      "timeSec": null,
+      "restSec": 70,
+      "tempo": "3 s down, 1 s pause, 1-2 s up",
+      "perWeek": 2
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_ear",
+      "right_ear",
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee"
+    ],
+    "phases": [
+      {
+        "name": "top_elbow",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": ">= 160",
+        "parsed": {
+          "op": ">=",
+          "value": 160,
+          "max": null
+        }
+      },
+      {
+        "name": "bottom_elbow_counts",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": "<= 110",
+        "parsed": {
+          "op": "<=",
+          "value": 110,
+          "max": null
+        }
+      },
+      {
+        "name": "depth_limit_elbow",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": ">= 90",
+        "parsed": {
+          "op": ">=",
+          "value": 90,
+          "max": null
+        }
+      },
+      {
+        "name": "shoulder_limit",
+        "joint": "shoulder (elbow-shoulder-hip)",
+        "angleDeg": "<= 45",
+        "parsed": {
+          "op": "<=",
+          "value": 45,
+          "max": null
+        }
+      },
+      {
+        "name": "neck_line",
+        "joint": "neck (ear-shoulder-hip)",
+        "angleDeg": ">= 150",
+        "parsed": {
+          "op": ">=",
+          "value": 150,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 2
+  },
+  "formChecks": [
+    {
+      "joint": "elbow",
+      "rule": "elbow angle > 110 degrees at the bottom (equals bottom_elbow_counts phase threshold): rep not counted",
+      "message": "Lower a little more (about a hand's width)"
+    },
+    {
+      "joint": "elbow",
+      "rule": "elbow angle < 90 degrees (equals depth_limit_elbow phase threshold)",
+      "message": "Too deep: stop higher to protect your shoulders"
+    },
+    {
+      "joint": "shoulder",
+      "rule": "shoulder angle > 45 degrees at the bottom (equals shoulder_limit phase threshold)",
+      "message": "Hips closer to the chair: arms too far behind"
+    },
+    {
+      "joint": "elbow",
+      "rule": "elbow angle < 160 degrees at the top (equals top_elbow phase threshold)",
+      "message": "Straighten your arms to finish"
+    },
+    {
+      "joint": "neck",
+      "rule": "neck angle < 150 degrees (equals neck_line phase threshold)",
+      "message": "Neck long, eyes forward"
+    },
+    {
+      "joint": "hip",
+      "rule": "hip landmark too far from wrist landmark (position flag, not an angle)",
+      "message": "Slide closer to the chair"
+    },
+    {
+      "joint": "shoulder",
+      "rule": "ear-shoulder distance shortens beyond margin (shrug flag, not an angle)",
+      "message": "Shoulders down, away from your ears"
+    },
+    {
+      "joint": "elbow",
+      "rule": "rep shorter than 2.0 s (rushing)",
+      "message": "Slow down: 2 seconds down"
+    },
+    {
+      "joint": "elbow",
+      "rule": "front view: elbows wider than wrists beyond margin (flag, not an angle)",
+      "message": "Elbows back, not out"
+    }
+  ],
+  "safetyFlags": [
+    "shoulder_stressful_limit_depth_never_below_90_degree_elbow",
+    "avoid_with_shoulder_problems_use_push_back",
+    "keep_hips_close_to_chair_hands_beside_hips",
+    "breathe_never_hold_breath",
+    "hypertension_low_reps_get_clearance_if_uncontrolled",
+    "heart_disease_get_clearance_first",
+    "stable_chair_against_wall",
+    "wrist_elbow_pain_stop",
+    "osteoporosis_partial_depth_or_push_back",
+    "pregnancy_ask_obstetrician",
+    "postpartum_ask_physiotherapist_first",
+    "recent_surgery_get_approval",
+    "stop_with_front_shoulder_pinch_instability_or_numbness"
+  ],
+  "progressions": [
+    "bent-knee dip at full beginner depth with more reps",
+    "straight-leg bench dip to about 90 degree elbow bend",
+    "feet-elevated bench dip or light weight on lap (advanced)"
+  ],
+  "regressions": [
+    "wall push-back",
+    "counter push-back or incline close-grip push-up (Home 2)",
+    "bent-knee dip at shallower depth with feet closer"
+  ],
+  "videoShots": [
+    {
+      "seconds": 7,
+      "angle": "side, elbow height, 2 m",
+      "shows": "setup: chair against wall, hands beside hips, knees bent",
+      "textOverlay": "Chair against the wall. Hands beside hips."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, elbow height, 2 m",
+      "shows": "bent-knee partial-depth dip",
+      "textOverlay": "Shallow is fine. Shoulders down."
+    },
+    {
+      "seconds": 7,
+      "angle": "front, chest height, 2 m",
+      "shows": "elbows pointing back, shoulders away from ears",
+      "textOverlay": "Elbows back. Shoulders down."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, elbow height, 2 m, close-up on shoulder",
+      "shows": "depth limit: elbow no deeper than 90 degrees",
+      "textOverlay": "Never lower than 90 degrees."
+    },
+    {
+      "seconds": 7,
+      "angle": "side, elbow height, 2 m, split screen",
+      "shows": "wrong vs right: hips far from chair and shrugging vs hips close",
+      "textOverlay": "Hips close to the chair."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, elbow height, 2 m",
+      "shows": "straight-leg then feet-elevated dip",
+      "textOverlay": "Harder only when pain-free."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, standing at wall, 2 m",
+      "shows": "wall and counter push-back easy options",
+      "textOverlay": "Easier on the shoulders."
+    },
+    {
+      "seconds": 6,
+      "angle": "side, elbow height, 2 m",
+      "shows": "breathing demo and stop sign for shoulder pinch",
+      "textOverlay": "Never hold your breath. Pinch? Stop."
+    }
+  ],
+  "lastResearched": "2026-11-06",
+  "setupSteps": [
+    "Choose the support. A solid chair with four legs on a non-slip floor, with a flat, firm seat edge you can grip. Do not use a chair with wheels, a folding chair that can close, a plastic garden chair that flexes, a stool or a sofa that slides. Push on it hard from the side before you start; it must not move. The weight rating of home chairs: Not found; use a gym bench or a heavy dining chair if body weight is high.",
+    "Block the chair. Push the chair against a wall (back to the wall) or place a rubber mat under its legs so it cannot slide backwards.",
+    "Hand position. Sit on the front edge. Put your palms on the seat edge beside your hips (not far behind), shoulder-width apart or a hand-width inside, fingers pointing forward and gripping the edge, thumbs wrapped round it.",
+    "Slide off. Walk the feet forward and slide your hips just forward off the seat so your weight is on your hands and your bottom is about 10-15 cm (est.) in front of the edge. Keep the hips close to the chair; the further forward the hips drift, the more the arms are pushed behind the body.",
+    "Feet and knees. Beginner: knees bent about 90 degrees (est.), feet flat, under or just in front of the knees. Intermediate: legs straight, heels on the floor. Advanced: heels on a second chair at the same height.",
+    "Shoulders. Press down to straighten the arms, then pull the shoulders down and slightly back (away from the ears) and keep the chest open.",
+    "Camera. Place the phone at about elbow height, 2 m (est.) to your side, in landscape, so ear, shoulder, elbow, wrist, hip and knee are visible.",
+    "Clothing: a fitted short-sleeved or sleeveless top and fitted track pants so the camera can see elbows, hips and knees.",
+    "Before the first set: do 30-60 s of shoulder circles and wall push-backs (section 8) as a warm-up, and read section 9 if you have any shoulder, blood pressure or other condition."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": "A. Beginner bent-knee bench dip, partial depth (elbow bend about 100-110 degrees at the bottom)",
+      "title": "Sit on the chair edge",
+      "action": "Sit tall on the front edge of the chair, feet flat, knees bent, hands beside your hips.",
+      "feel": "Even weight through feet and hands; shoulders relaxed.",
+      "breathing": "Breathe in normally.",
+      "tempo": null,
+      "visualCheck": "Side: ear, shoulder and hip in a line, hands under the shoulders' line or just behind it. Front: shoulders level, hands even."
+    },
+    {
+      "n": 2,
+      "part": "A. Beginner bent-knee bench dip, partial depth (elbow bend about 100-110 degrees at the bottom)",
+      "title": "Grip the edge",
+      "action": "Grip the seat edge with fingers forward, thumbs round.",
+      "feel": "Firm, flat palms; no wrist strain.",
+      "breathing": "Normal.",
+      "tempo": null,
+      "visualCheck": "Front: wrists straight, fingers pointing forward."
+    },
+    {
+      "n": 3,
+      "part": "A. Beginner bent-knee bench dip, partial depth (elbow bend about 100-110 degrees at the bottom)",
+      "title": "Lift your bottom off the seat",
+      "action": "Press through the hands and slide your hips forward and off the seat, arms straight, shoulders pulled down.",
+      "feel": "Weight through the hands and feet, mild work in the arms; elbows not locked hard.",
+      "breathing": "Breathe out as you press up.",
+      "tempo": null,
+      "visualCheck": "Side: hips about 10-15 cm in front of the seat edge, back upright and close to the chair. Elbow angle about 165-175 degrees (est.)."
+    },
+    {
+      "n": 4,
+      "part": "A. Beginner bent-knee bench dip, partial depth (elbow bend about 100-110 degrees at the bottom)",
+      "title": "Bend the elbows to lower",
+      "action": "Bend the elbows so the elbows travel straight back and your body goes straight down, close to the chair. Stop when the elbows reach about a 100-110 degree bend (about a hand's width of drop, 10-15 cm, est.). Do not go deeper.",
+      "feel": "Front of the arms and back of the arms working; no pinch or pain at the front of the shoulder.",
+      "breathing": "Breathe in as you lower.",
+      "tempo": null,
+      "visualCheck": "Side: back stays close to the chair, shoulders stay down and not touching the ears, upper arm not far behind the trunk. Front: elbows point straight back, not flaring out."
+    },
+    {
+      "n": 5,
+      "part": "A. Beginner bent-knee bench dip, partial depth (elbow bend about 100-110 degrees at the bottom)",
+      "title": "Pause briefly",
+      "action": "Pause for 1 second at the shallow bottom, shoulders still pulled down.",
+      "feel": "Steady; no sinking into the shoulders.",
+      "breathing": "Brief pause in the breath; do not hold it.",
+      "tempo": null,
+      "visualCheck": "Side: depth does not change between reps."
+    },
+    {
+      "n": 6,
+      "part": "A. Beginner bent-knee bench dip, partial depth (elbow bend about 100-110 degrees at the bottom)",
+      "title": "Press back up",
+      "action": "Push through the palms and straighten the elbows until the arms are straight but not locked.",
+      "feel": "Back of the arms doing the work; chest open.",
+      "breathing": "Breathe out as you push.",
+      "tempo": null,
+      "visualCheck": "Side: elbow angle returns to about 160 degrees or more (est.); hips stay close to the chair."
+    },
+    {
+      "n": 7,
+      "part": "A. Beginner bent-knee bench dip, partial depth (elbow bend about 100-110 degrees at the bottom)",
+      "title": "Repeat",
+      "action": "Repeat from step 4 with the same depth.",
+      "feel": "Smooth rhythm; stop if the arms shake or the front shoulder aches.",
+      "breathing": "One full breath per rep.",
+      "tempo": null,
+      "visualCheck": "Same depth and posture on the last rep as the first."
+    },
+    {
+      "n": 8,
+      "part": "A. Beginner bent-knee bench dip, partial depth (elbow bend about 100-110 degrees at the bottom)",
+      "title": "Finish and rest",
+      "action": "Press to the top, then sit back on the chair, shake out the arms.",
+      "feel": "Warm arms; no joint pain.",
+      "breathing": "Three slow breaths.",
+      "tempo": null,
+      "visualCheck": "Stop for the day if the front of the shoulder, the wrist or the elbow hurts."
+    },
+    {
+      "n": 9,
+      "part": "B. Straight-leg bench dip (intermediate)",
+      "title": "Same setup but straighten the legs, heels on the floor, toes up (est.)",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 10,
+      "part": "B. Straight-leg bench dip (intermediate)",
+      "title": "Lower to an elbow bend of about 90-100 degrees (est.) and press up. Never deeper than about 90 degrees",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 11,
+      "part": "C. Feet-elevated bench dip (advanced)",
+      "title": "Put the heels on a second chair at similar height; hands on the first chair beside the hips. Lower to no deeper than about 90 degrees elbow bend, only if every straight-leg set is pain-free and clean. Chairs must be blocked and stable on a non-slip floor",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 12,
+      "part": "D. Easier options (push-back family, no dip position)",
+      "title": "Wall push-back: stand an arm's length from a wall, hands on the wall at shoulder height, fingers up. Bend the elbows so your chest nears the wall (elbows close to the body, pointing back), then straighten. 2 s down, 1 s up",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 13,
+      "part": "D. Easier options (push-back family, no dip position)",
+      "title": "Counter push-back (incline): hands on the edge of a firm kitchen counter or sturdy table, feet back, body straight like a plank leaning in, close-grip, elbows tucked. Lower the chest toward the counter edge and press back. The lower the surface, the harder it gets. This links to the incline push-up in Home 2",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 14,
+      "part": "D. Easier options (push-back family, no dip position)",
+      "title": "Neither version puts the arm behind the body, so the front-of-shoulder strain is much lower (inference from the shoulder-extension data in section 5, est.)",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Going too deep",
+      "text": "Going too deep. Why: past about a 90 degree elbow bend the shoulder is pushed far into backward extension, which loads the front of the shoulder joint capsule and structures (the 2022 study authors link this to possible anterior instability over time; this is a theoretical inference, not a measured injury rate; one coaching source argues full-depth controlled dips are not harmful, so sources disagree). Fix: stop at the beginner depth, never below 90 degrees; stop at any front-shoulder pinch."
+    },
+    {
+      "title": "Hips drifting away from the chair",
+      "text": "Hips drifting away from the chair. Why: the arms end up far behind the body and the shoulder extends more. Fix: keep the back close to the chair edge; hips 10-15 cm in front of the seat only."
+    },
+    {
+      "title": "Shoulders shrugging toward the ears",
+      "text": "Shoulders shrugging toward the ears. Why: the upper traps take over when the triceps tire, and the shoulder joint is pinched (coaching sources). Fix: press the shoulders down; stop the set when you cannot."
+    },
+    {
+      "title": "Elbows flaring out",
+      "text": "Elbows flaring out. Why: wider elbows are linked in coaching sources to more front-shoulder stress; I could not verify the study cited for that. Fix: point the elbows straight back."
+    },
+    {
+      "title": "Using the legs to push up",
+      "text": "Using the legs to push up. Why: the legs take over so the triceps work less. Fix: bring the feet closer, or lift only with the arms; use the push-back instead."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. Why: breath-holding raises blood pressure more than open breathing during effort (lab data from heavy lifting, PubMed 7741618). Fix: breathe in on the way down, out on the way up."
+    },
+    {
+      "title": "Using an unstable chair",
+      "text": "Using an unstable chair. Why: a chair that slides or folds can drop you backwards. Fix: wall behind the chair, mat beneath, test it, use a sturdy chair or bench."
+    },
+    {
+      "title": "Locking the elbows hard at the top or bouncing at the bottom",
+      "text": "Locking the elbows hard at the top or bouncing at the bottom. Why: it jolts the elbow and shoulder joints. Fix: stop just short of locked and lower with a 2 s count."
+    },
+    {
+      "title": "Hands too far behind or fingers turned inward",
+      "text": "Hands too far behind or fingers turned inward. Why: it increases wrist strain and shoulder extension. Fix: hands beside the hips, fingers forward."
+    },
+    {
+      "title": "Pushing through pain",
+      "text": "Pushing through pain. Why: sharp front-shoulder, wrist or elbow pain is a stop sign. Fix: stop, rest, and switch to wall or counter push-backs."
+    }
+  ],
+  "safetyNotes": [
+    "Shoulder problems (past dislocation, instability, impingement, rotator cuff injury, recent injury or surgery, or a front-shoulder pinch in any overhead or behind-the-back movement): avoid the dip position. Healthline says dips may not be a good choice with an existing shoulder injury and that poor form can cause impingement; ACE and the 2022 study both raise concern for the front of the shoulder. Use wall or counter push-backs, close-grip incline push-ups, or ask a clinician.",
+    "Hands behind the body is the risk position. Keep the hands beside the hips, hips close to the chair, and elbow bend never below about 90 degrees; beginners stay around 100-110 degrees (est.).",
+    "High blood pressure and heart disease: keep reps low (5-8), moderate effort, no holding the breath, and rise slowly; ask a clinician first if blood pressure is uncontrolled or you have heart disease. A Cooper Institute summary of Sorace et al. suggests beginning upper-body resistance at 30-40% of one-rep maximum and avoiding maximal efforts, which a dip with full body weight cannot be scaled to; so the push-back is the better start (snippet only).",
+    "Wrist, elbow or hand pain, or carpal tunnel symptoms: the wrists carry body weight bent back; use the push-back or a fist or neutral-wrist grip only with advice.",
+    "Knee, lower back and balance problems: the bent-knee version loads the knees little; keep the back close to the chair; do not use an unstable chair.",
+    "Body weight and the chair: high body weight raises the load on the arms and the chair. Use a sturdy chair or gym bench; the weight rating of home chairs: Not found.",
+    "Pregnancy, postpartum, recent surgery: ask your clinician before dips."
+  ],
+  "sources": [
+    "2024 Adult Compendium of Physical Activities (Herrmann et al., J Sport Health Sci 2024): codes 02022 and 02024 (calisthenics: moderate and light). https://pacompendium.com/conditioning-exercise ; https://pacompendium.com/wp-content/uploads/2024/02/1_2024-adult-compendium_1_2024.pdf ; https://pubmed.ncbi.nlm.nih.gov/38242596/ (seen only as snippets)",
+    "NASM Exercise Library, Bench dips (lower until the elbows bend about 90 degrees; triceps, shoulders, anterior deltoids). https://www.nasm.org/resource-center/exercise-library/bench-dips (seen only as snippets)",
+    "ACE-sponsored research, best triceps exercises (EMG, 15 women; triangle push-ups highest, kickbacks and dips next; safety concern for the shoulder with bench dips); ACE Certified news follow-up Q&A on dips. https://www.acefitness.org/certifiednewsarticle/1562/ace-study-identifies-best-triceps-exercises/ ; https://www.acefitness.org/certifiednewsarticle/1657/follow-up-q-and-a-dangerous-dips/ (seen only as snippets)",
+    "McKenzie et al. (2022), Bench, bar and ring dips: do kinematics and muscle activity differ? IJERPH 19(20):13211 (13 men; peak shoulder extension bench about 88 deg, bar 78, rings 62; authors suggest bench dips not be used often). https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9603242/ ; https://mdpi.com/1660-4601/19/20/13211 (seen only as snippets)",
+    "Healthline, Bench dips (dips may not suit an existing shoulder injury; poor form can cause impingement). https://www.healthline.com/health/fitness-exercise/bench-dips (seen only as snippets)",
+    "weighttraining.guide, Bent-knee bench dip (setup and muscles). https://weighttraining.guide/exercises/bent-knee-bench-dip (seen only as snippets)",
+    "Brookbush Institute, Exercise police: tricep dips (critique). https://brookbushinstitute.com/articles/exercise-police-tricep-dips (seen only as snippets)",
+    "Coaching and retailer pages on form and variations (ISSA, PureGym, Rogue, e3rehab, Cathe, FitnessVolt, Bullbar blogs; commercial or opinion sources, used for cues only). https://www.issaonline.com/blogs/corrective-exercise/mastering-triceps-dips-proper-form-variations-and-more ; https://www.puregym.com/exercises/arms-and-shoulders/tricep-extension/tricep-dips/ ; https://e3rehab.com/how-to-perform-dips/ ; https://cathe.com/are-triceps-dips-bad-for-your-shoulders/ ; https://fitnessvolt.com/exercise-vs-exercise/close-grip-push-up-on-knees-vs-dips-triceps-version (seen only as snippets)",
+    "Harvard Health, Strength training and blood pressure; Cooper Institute, Hypertension and weight training (30-40% one-rep maximum upper body start, summarising Sorace et al.). https://www.health.harvard.edu/heart-health/strength-training-and-blood-pressure ; https://www.cooperinstitute.org/blog/hypertension-and-weight-training-secrets-for-success (seen only as snippets)",
+    "Influence of breathing technique on arterial blood pressure during heavy weight lifting (1995). https://pubmed.ncbi.nlm.nih.gov/7741618/",
+    "Brooke-Wavell et al. (2022), Strong, steady and straight: UK consensus statement on osteoporosis, Br J Sports Med. https://pubmed.ncbi.nlm.nih.gov/35577538/ (seen only as snippets)",
+    "ACSM-linked Borg RPE bands (light 9-11, moderate 12-13, vigorous 14-17) and talk test. https://pmc.ncbi.nlm.nih.gov/articles/PMC10310950/table/tbl1 ; https://pmc.ncbi.nlm.nih.gov/articles/PMC9618974/table/tbl4 ; https://blog.nasm.org/rate-of-perceived-exertion (carried from Home 10 research)",
+    "Colberg SR et al. (2016), ADA position statement on physical activity/exercise and diabetes. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/ (carried from Home 10 research)",
+    "AHA, Recommendations for physical activity in adults; AHA Professional, Physical activity as first-line treatment for elevated BP or cholesterol. https://heart.org/en/healthy-living/exercise-and-physical-activity/fitness-basics/aha-recs-for-physical-activity-in-adults ; https://professional.heart.org/en/science-news/Physical-Activity-as-a-Critical-Component-of-First-Line-Treatment-for-Elevated-BP-or-Cholesterol/commentary (carried from Home 10 research)",
+    "Donnelly JE et al. (2009), ACSM position stand on physical activity for weight loss; ACE Fitness, Tips for training clients impacted by obesity. https://pubmed.ncbi.nlm.nih.gov/19127177/ ; https://www.acefitness.org/education-and-resources/professional/expert-articles/6459/tips-for-training-clients-impacted-by-obesity/ (carried from Home 10 research)",
+    "Effect of physical exercise in people with hypothyroidism: systematic review and meta-analysis (2023). https://pubmed.ncbi.nlm.nih.gov/37999992/ (carried from Home 10 research)",
+    "Pharmacy Magazine CPD, Exercise and asthma; Cambridge University Hospitals leaflet; warm-up review. https://www.pharmacymagazine.co.uk/cpd-modules/making-a-difference-in-asthma-care/exercise-and-asthma-528343 ; https://www.cuh.nhs.uk/patient-information/exercise-induced-bronchoconstriction-for-children-and-young-people/ ; https://pubmed.ncbi.nlm.nih.gov/21811185/ (carried from Home 10 research)",
+    "Vanderbilt Sports Medicine knee OA handout; Harvard Health, best exercises for knee osteoarthritis. https://www.vumc.org/sports-medicine/sites/vumc.org.sports-medicine/files/public_files/documents/Knee_OA_ex_quad.pdf ; https://content.health.harvard.edu/blog/walking-cycling-and-swimming-are-best-exercises-for-knee-osteoarthritis (carried from Home 10 research)",
+    "Mayo Clinic, Pregnancy exercises. https://www.mayoclinic.org/healthy-lifestyle/pregnancy-week-by-week/in-depth/pregnancy-exercises/art-20546799 (carried from Home 10 research)",
+    "NHS Lothian, DRAMs guidelines; Diastasis recti rehabilitation in the postpartum period: scoping review. https://apps.nhslothian.scot/files/sites/2/DRAMs-Guidelines.pdf ; https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11023973/ (carried from Home 10 research)"
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 35.7,
+      "70kg": 30.6,
+      "80kg": 26.8
+    },
+    "per300kcal": {
+      "60kg": 107.1,
+      "70kg": 91.8,
+      "80kg": 80.4
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "strength",
+    "arms",
+    "triceps",
+    "beginner",
+    "intermediate",
+    "small_flat",
+    "neighbours_below",
+    "quiet",
+    "short_sessions",
+    "low_impact",
+    "chair_needed"
+  ],
+  "swapsByAccess": {
+    "none": "Counter or wall push-back, or close-grip incline push-up (Home 2)",
+    "home_equipment": "Dumbbell overhead tricep extension or band tricep pushdown (not yet researched), or dumbbell floor press (Home 21, not yet researched) if the shoulder is comfortable",
+    "basic_gym": "Cable tricep pushdown (Gym 37) or chest press machine (Gym 22) at light load",
+    "full_gym": "Cable tricep pushdown (Gym 37), overhead tricep extension (Gym 41) or assisted pull-up and dip machine (Gym 27) with high assist and shallow depth"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "Start with wall or counter push-backs; 5-8 slow reps at light-to-moderate effort 3-5/10, Borg 9-12; breathe out on the push, never hold the breath; rest 60 s; rise slowly; uncontrolled or severe BP needs a medical check first",
+      "source": "Harvard Health strength training and blood pressure (snippet only); Cooper Institute hypertension and weight training (snippet only); breathing study PubMed 7741618; dip-specific advice Not found"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "Counts as resistance work if the shoulder is fine; usual glucose checks and fast carbohydrate on hand if on insulin or sulfonylureas; check wrist and hand comfort if neuropathy",
+      "source": "ADA position statement (Colberg et al. 2016)"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "After clearance only: push-back version, short sets, steady breathing; stop with chest discomfort, breathlessness or dizziness",
+      "source": "AHA physical activity recommendations; dip-specific clearance Not found"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "Counts toward the resistance part of the weekly mix; aerobic minutes still come from other items",
+      "source": "AHA recommendations; AHA statement (Gibbs et al.)"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Use a sturdy chair or gym bench on a non-slip floor; start with counter push-backs; bent-knee partial depth only; long rests",
+      "source": "ACE obesity training article; ACSM weight position stand (Donnelly 2009); dip-specific advice Not found"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "Fits general strength guidance if the shoulders are fine; no dip-specific advice found",
+      "source": "Not found"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "Train as usual if controlled; start at the push-back level if fatigued",
+      "source": "Systematic review 2023 (PubMed 37999992)"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Low-to-moderate effort; keep reliever nearby; steady breathing; stop and use it if wheeze or cough starts",
+      "source": "Asthma UK tips via Pharmacy Magazine CPD; Cambridge University Hospitals leaflet; PubMed 21811185"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "ok",
+      "change": "Bent-knee version loads the knees little; feet flat and slow; use wall push-back if the position hurts; avoid feet-elevated version if hip or knee is painful",
+      "source": "Vanderbilt Sports Medicine knee OA handout (general); Harvard Health low-impact analysis; dip-specific advice Not found"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Keep the back upright and close to the chair; shallow depth; stop if pain spreads down a leg",
+      "source": "Not found"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "avoid",
+      "change": "Avoid chair dips; use wall or counter push-backs or close-grip incline push-ups and ask a clinician before any dip; stop with a front-shoulder pinch, catching or instability",
+      "source": "ACE study and ACE dips Q&A (snippets only); McKenzie et al. 2022 (PMC9603242); Healthline bench dips (snippet only)"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "modify",
+      "change": "Strength training is encouraged; partial depth and stable chair; use the push-back if any wrist, shoulder or spine concern; avoid a slumped rounded spine; get individual advice especially after a fracture",
+      "source": "Strong, Steady and Straight (BJSM 2022; PubMed 35577538); dip-specific advice Not found"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "ask_doctor",
+      "change": "Ask your obstetrician; the arms-behind position stresses the shoulder so a push-back is the safer choice (est.); stop for bleeding, pain, dizziness or contractions",
+      "source": "Mayo Clinic pregnancy exercises; dip-specific ACOG advice Not found"
+    },
+    {
+      "condition": "postpartum",
+      "status": "ask_doctor",
+      "change": "Ask a women's health physiotherapist first, especially with abdominal separation, pelvic floor symptoms or after a C-section; stop for leaking, heaviness or belly doming",
+      "source": "NHS Lothian DRAMs guidelines; scoping review PMC11023973"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Only with surgeon or physiotherapist approval, especially after shoulder, chest, breast or abdominal surgery",
+      "source": "Not found"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "home",
+      "gym"
+    ],
+    "bodyRegion": [
+      "upper"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "strength",
+      "muscle",
+      "endurance"
+    ],
+    "intensity": "light",
+    "noise": "quiet",
+    "space": "small_room",
+    "typicalMinutes": 6,
+    "kcalPer10min70kg": 32.7,
+    "difficulty1to5": 3,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Home",
+    "Gym",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Strength",
+    "Arms",
+    "Rep counter",
+    "Under 10 min"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-11-06",
+      "file": "FitPlate_Fitness_2026-11-06.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

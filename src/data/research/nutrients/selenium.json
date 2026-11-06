@@ -1,0 +1,364 @@
+{
+  "id": "selenium",
+  "name": "Selenium",
+  "type": "mineral",
+  "subtype": "trace-mineral",
+  "unit": "µg",
+  "altUnits": [
+    {
+      "unit": "mg",
+      "toMainUnitFactor": 1000
+    },
+    {
+      "unit": "ng",
+      "toMainUnitFactor": 0.001
+    },
+    {
+      "unit": "µg sodium selenite (compound weight)",
+      "toMainUnitFactor": 0.457
+    },
+    {
+      "unit": "µg selenomethionine (compound weight)",
+      "toMainUnitFactor": 0.403
+    }
+  ],
+  "unitConversions": [
+    {
+      "fromUnit": "µg",
+      "compound": "",
+      "toMainUnitFactor": 1,
+      "raw": "1 µg (mcg) | 1,000 ng = 0.001 mg"
+    },
+    {
+      "fromUnit": "mg",
+      "compound": "/kg in food",
+      "toMainUnitFactor": 100,
+      "raw": "1 mg/kg in food | 100 µg per 100 g"
+    }
+  ],
+  "targets": [
+    {
+      "group": "adult_male_sedentary",
+      "ear": null,
+      "rda": null,
+      "ai": 40,
+      "source": "ICMR-NIN 2020 adequate intake (secondary, unverified); EAR and TUL Not found"
+    },
+    {
+      "group": "adult_male_moderate",
+      "ear": null,
+      "rda": null,
+      "ai": 40,
+      "source": "ICMR-NIN 2020 (secondary, unverified); no activity scaling seen"
+    },
+    {
+      "group": "adult_male_heavy",
+      "ear": null,
+      "rda": null,
+      "ai": 40,
+      "source": "ICMR-NIN 2020 (secondary, unverified); no activity scaling seen"
+    },
+    {
+      "group": "adult_female_sedentary",
+      "ear": null,
+      "rda": null,
+      "ai": 40,
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "group": "adult_female_moderate",
+      "ear": null,
+      "rda": null,
+      "ai": 40,
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "group": "adult_female_heavy",
+      "ear": null,
+      "rda": null,
+      "ai": 40,
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "group": "pregnant",
+      "ear": null,
+      "rda": 60,
+      "ai": null,
+      "source": "ICMR value Not found; NIH RDA 60 via Harvard Nutrition Source (secondary); EFSA 2014 AI 70 (secondary)"
+    },
+    {
+      "group": "lactating",
+      "ear": null,
+      "rda": 70,
+      "ai": null,
+      "source": "ICMR value Not found; NIH RDA 70 via Harvard Nutrition Source (secondary); EFSA 2014 AI 85 (secondary)"
+    }
+  ],
+  "appDefaultTarget": {
+    "adult_male": 40,
+    "adult_female": 40,
+    "pregnant": null,
+    "lactating": null,
+    "age_60_plus": null
+  },
+  "upperLimit": {
+    "value": 400,
+    "unit": "µg",
+    "appliesTo": "food_and_supplements",
+    "source": "NIH ODS / US NASEM UL for adults including pregnancy and lactation; ICMR-NIN TUL Not found; EFSA 2023 reported 255 µg (secondary, unverified)"
+  },
+  "topFoodSources": [
+    {
+      "food": "Mackerel (IFCT P034)",
+      "veg": false,
+      "per100g": 64.1,
+      "servingG": 100,
+      "servingLabel": "1 steak, edible portion (est.)",
+      "perServing": 64.1
+    },
+    {
+      "food": "Rohu (IFCT S006)",
+      "veg": false,
+      "per100g": 51.5,
+      "servingG": 100,
+      "servingLabel": "1 steak (est.)",
+      "perServing": 51.5
+    },
+    {
+      "food": "Egg, poultry, whole, boiled (IFCT M004)",
+      "veg": false,
+      "per100g": 46.1,
+      "servingG": 50,
+      "servingLabel": "1 egg",
+      "perServing": 23.1
+    },
+    {
+      "food": "Wheat flour, atta (IFCT A019; high-end value, varies by region)",
+      "veg": true,
+      "per100g": 53.1,
+      "servingG": 60,
+      "servingLabel": "2 rotis, dry flour (est.)",
+      "perServing": 31.9
+    },
+    {
+      "food": "Bengal gram dal / chana dal (IFCT B001)",
+      "veg": true,
+      "per100g": 51,
+      "servingG": 30,
+      "servingLabel": "1 small bowl cooked, dry weight (est.)",
+      "perServing": 15.3
+    },
+    {
+      "food": "Green gram dal / moong dal (IFCT B010)",
+      "veg": true,
+      "per100g": 50.1,
+      "servingG": 30,
+      "servingLabel": "1 small bowl cooked, dry weight (est.)",
+      "perServing": 15
+    },
+    {
+      "food": "Brazil nut (NIH ODS; not in IFCT; varies widely per nut)",
+      "veg": true,
+      "per100g": 1943,
+      "servingG": 5,
+      "servingLabel": "1 nut (est.)",
+      "perServing": 80
+    }
+  ],
+  "goodSourceDishes": [
+    {
+      "dishNumber": 55,
+      "dishName": "Prawn Masala"
+    },
+    {
+      "dishNumber": 14,
+      "dishName": "Egg Bhurji"
+    },
+    {
+      "dishNumber": 84,
+      "dishName": "Egg Biryani"
+    },
+    {
+      "dishNumber": 38,
+      "dishName": "Egg Curry"
+    },
+    {
+      "dishNumber": 73,
+      "dishName": "Rava Fish Fry"
+    },
+    {
+      "dishNumber": 33,
+      "dishName": "Goan Fish Curry"
+    },
+    {
+      "dishNumber": 11,
+      "dishName": "Aloo Paratha"
+    },
+    {
+      "dishNumber": 21,
+      "dishName": "Masala Omelette"
+    },
+    {
+      "dishNumber": 46,
+      "dishName": "Methi Thepla"
+    }
+  ],
+  "deficiencyRiskIndia": "moderate",
+  "absorptionBoosters": [
+    "Selenomethionine and selenium yeast forms absorbed better than selenite",
+    "Protein-containing meals"
+  ],
+  "absorptionBlockers": [],
+  "logPresets": [
+    {
+      "label": "1 Brazil nut (est.; range 10-100 µg per nut)",
+      "amount": 80,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 80,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "2 Brazil nuts (suggested maximum in a day; est.)",
+      "amount": 160,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 160,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Selenium tablet 50 µg (as on label)",
+      "amount": 50,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 50,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Selenium tablet 100 µg (as on label)",
+      "amount": 100,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 100,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Selenium tablet 200 µg (as on label)",
+      "amount": 200,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 200,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    }
+  ],
+  "warnings": [
+    "Upper limit 400 µg/day from food plus supplements (NIH ODS); ICMR-NIN TUL Not found; EFSA 2023 reported as 255 µg (secondary, unverified).",
+    "Brazil nuts vary hugely in selenium (about 10-100 µg per nut in different reports, single nuts up to thousands); limit to 1-2 nuts and not daily.",
+    "IFCT selenium 0 means not analysed, not zero (mushrooms, ghee, oils, refined flour, fresh coconut, ripe tomato, brinjal); do not count as zero.",
+    "Do not use IFCT amaranth leaves (C002-C006, about 10 times other greens) or the prawn rows S008/S010; use Q007 for prawns.",
+    "IFCT wheat atta (53.1 µg/100 g) is above the highest value in a north-west India wheat survey (27.2 µg/100 g); treat as regional, not a national average.",
+    "Raw milled rice in IFCT is 1.0 µg/100 g (low-confidence); rice-based diets may supply little selenium.",
+    "Selenium supplements for Hashimoto's are not recommended by current ETA guidance; evidence limited; no quick-add for thyroid-condition users unless doctor-prescribed.",
+    "Signs of too much: garlic breath, metallic taste, brittle hair or nails, hair loss, nausea; see a doctor.",
+    "Pregnancy, breastfeeding, blood thinners, statin-niacin, chemotherapy and thyroid disease: follow your doctor's advice before any selenium supplement."
+  ],
+  "conditionAdjustments": [
+    {
+      "profileId": "P9",
+      "change": "Same 40 µg from food; UL 400 µg all sources; supplements for Hashimoto's not recommended by ETA, Cochrane evidence incomplete, meta-analyses show lower TSH and TPOAb with unproven clinical benefit; no quick-add presets unless doctor-prescribed; requires doctor input",
+      "value": 400,
+      "unit": "µg",
+      "source": "ETA 2018 survey (pub. 2020); Cochrane CD010223 (2013; summary 2014); Huwiler 2024 and 2025 meta-analyses; NIH ODS"
+    },
+    {
+      "profileId": "P10",
+      "change": "Target Not found; ETA advises selenium only in mild Graves' orbitopathy (via 2023 review); doctor decides; requires doctor input",
+      "value": null,
+      "unit": "µg",
+      "source": "2023 review of ETA position (secondary)"
+    },
+    {
+      "profileId": "P22",
+      "change": "NIH RDA 60 µg; EFSA AI 70 µg; ICMR Not found; no supplement without doctor; requires doctor input",
+      "value": 60,
+      "unit": "µg",
+      "source": "NIH RDA via Harvard Nutrition Source (secondary); EFSA 2014 (secondary)"
+    },
+    {
+      "profileId": "P23",
+      "change": "NIH RDA 70 µg; EFSA AI 85 µg (70 + 15 for milk losses); ICMR Not found; requires doctor input",
+      "value": 70,
+      "unit": "µg",
+      "source": "NIH via Harvard Nutrition Source (secondary); EFSA 2014 via UK COT paper (secondary)"
+    },
+    {
+      "profileId": "P31",
+      "change": "No change found; ICMR 60+ value Not found; same ceiling",
+      "value": null,
+      "unit": "µg",
+      "source": "No change found"
+    },
+    {
+      "profileId": "P34",
+      "change": "Serum selenium lower in vegans and vegetarians in one German study (NuEva 2023); results differ across studies; use wheat, dals, sesame and at most 1 Brazil nut occasionally; supplement only on doctor's advice",
+      "value": null,
+      "unit": "µg",
+      "source": "Nutrients 2023 (NuEva); Swiss Nutrition Bulletin 2023; Br J Nutr 1985 (via snippets; secondary)"
+    },
+    {
+      "profileId": "P33",
+      "change": "No change found; main sources (grains, pulses, seeds) are Jain-friendly",
+      "value": null,
+      "unit": "µg",
+      "source": "No change found; IFCT 2017"
+    },
+    {
+      "profileId": "P21",
+      "change": "Antioxidant mix with selenium may blunt HDL rise on statin-niacin in one trial; no supplement without doctor; requires doctor input",
+      "value": null,
+      "unit": "µg",
+      "source": "Drug-interaction summary (secondary)"
+    },
+    {
+      "profileId": "P1",
+      "change": "No change found; observational link between higher selenium and lower diabetes risk does not support supplements; stay within UL",
+      "value": null,
+      "unit": "µg",
+      "source": "Observational toenail study (via news summary; secondary)"
+    }
+  ],
+  "lastResearched": "2026-11-06",
+  "versions": [
+    {
+      "date": "2026-11-06",
+      "file": "FitPlate_Nutrients_2026-11-06.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3)",
+    "upperLimit": "official safety limit (D3, lower on conflict)",
+    "topFoodSources": "union; per100g official (D3)",
+    "logPresets": "union by label (newest), converted with own file factors",
+    "appDefaultTarget": "newest, kept only where it equals the ICMR row",
+    "lists": "union",
+    "warnings": "union (never dropped)",
+    "text": "newest"
+  },
+  "mergeNotes": [],
+  "needsReview": [
+    "app_default_target.pregnant = 60 has no ICMR row to match (pregnant: \"ICMR value Not found; NIH RDA 60 via Harvard Nutrition Source (secondary); EFSA 2014 AI 70 (secondary)\"); set to null",
+    "app_default_target.lactating = 70 has no ICMR row to match (lactating: \"ICMR value Not found; NIH RDA 70 via Harvard Nutrition Source (secondary); EFSA 2014 AI 85 (secondary)\"); set to null",
+    "2026-11-06 selenium: \"group\" has unexpected value \"age_60_plus_male\"; treated as not found",
+    "2026-11-06 selenium: \"group\" has unexpected value \"age_60_plus_female\"; treated as not found"
+  ]
+}

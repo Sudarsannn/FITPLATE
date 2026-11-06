@@ -1,0 +1,723 @@
+{
+  "id": "wrist-forearm-stretch",
+  "number": 11,
+  "name": "Wrist and forearm stretch (for desk workers)",
+  "otherNames": [
+    "Wrist flexor stretch",
+    "Wrist extensor stretch",
+    "Prayer stretch",
+    "Reverse prayer stretch",
+    "Tendon glides",
+    "Nerve glides",
+    "Wrist circles",
+    "Finger spreads",
+    "Manibandha chakra (wrist rotation)",
+    "Desk wrist stretch"
+  ],
+  "section": "yoga_stretch",
+  "type": "mobility",
+  "equipment": [
+    "desk or wall (optional)",
+    "chair (optional)",
+    "small towel (optional)"
+  ],
+  "noEquipmentAlternative": "Seated or standing wrist stretches with the other hand, no equipment",
+  "musclesPrimary": [
+    "wrist and finger flexors (flexor carpi radialis, flexor carpi ulnaris, palmaris longus, flexor digitorum)",
+    "wrist and finger extensors (extensor carpi radialis, extensor carpi ulnaris, extensor digitorum)"
+  ],
+  "musclesSecondary": [
+    "hand muscles (thenar, hypothenar, lumbricals, interossei)",
+    "forearm pronators and supinators",
+    "median nerve (glides)"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 2.3,
+  "compendiumCode": "02101",
+  "metOptions": [
+    {
+      "code": "02101",
+      "met": 2.3,
+      "activity": "MET: 2.3, 2024 Adult Compendium of Physical Activities, code 02101, \"Stretching, mild\" (Conditioning Exercise heading). This matches the beginner prescription (light, seated stretching of 15 to 20 sec"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "flexibility",
+      "sets": 2,
+      "reps": "1 hold per hand per stretch",
+      "timeSec": 20,
+      "restSec": 5,
+      "tempo": "slow, steady, breathe normally",
+      "perWeek": 7
+    },
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 1,
+      "reps": "1 round before yoga or typing-heavy work",
+      "timeSec": 15,
+      "restSec": 5,
+      "tempo": "slow, steady",
+      "perWeek": 5
+    },
+    {
+      "level": "beginner",
+      "goal": "relaxation",
+      "sets": 1,
+      "reps": "1 round, slow breathing",
+      "timeSec": 20,
+      "restSec": 5,
+      "tempo": "slow breath each hold",
+      "perWeek": 5
+    },
+    {
+      "level": "intermediate",
+      "goal": "flexibility",
+      "sets": 3,
+      "reps": "1 hold per hand per stretch plus glides",
+      "timeSec": 25,
+      "restSec": 5,
+      "tempo": "slow, steady",
+      "perWeek": 7
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 2,
+      "reps": "2 rounds before Downward Dog or push-ups",
+      "timeSec": 20,
+      "restSec": 5,
+      "tempo": "slow",
+      "perWeek": 5
+    },
+    {
+      "level": "advanced",
+      "goal": "flexibility",
+      "sets": 3,
+      "reps": "1 hold per hand per stretch plus reverse-prayer and glides",
+      "timeSec": 30,
+      "restSec": 5,
+      "tempo": "slow",
+      "perWeek": 7
+    },
+    {
+      "level": "advanced",
+      "goal": "relaxation",
+      "sets": 2,
+      "reps": "2 rounds, slow breathing",
+      "timeSec": 30,
+      "restSec": 5,
+      "tempo": "slow breath each hold",
+      "perWeek": 5
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "hold_timer",
+    "cameraView": "either",
+    "landmarks": [
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_index",
+      "right_index",
+      "left_pinky",
+      "right_pinky",
+      "left_thumb",
+      "right_thumb"
+    ],
+    "phases": [
+      {
+        "name": "arm_straight",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": ">= 160",
+        "parsed": {
+          "op": ">=",
+          "value": 160,
+          "max": null
+        }
+      },
+      {
+        "name": "wrist_bent_stretch",
+        "joint": "wrist (elbow-wrist-index)",
+        "angleDeg": "<= 150",
+        "parsed": {
+          "op": "<=",
+          "value": 150,
+          "max": null
+        }
+      },
+      {
+        "name": "wrist_not_over_bent",
+        "joint": "wrist (elbow-wrist-index)",
+        "angleDeg": ">= 100",
+        "parsed": {
+          "op": ">=",
+          "value": 100,
+          "max": null
+        }
+      },
+      {
+        "name": "hold_long_enough",
+        "joint": "time",
+        "angleDeg": "hold >= 15 s (position flag, not an angle)",
+        "parsed": null
+      }
+    ],
+    "minRepSec": 15
+  },
+  "formChecks": [
+    {
+      "joint": "elbow",
+      "rule": "elbow angle < 160 deg (equals arm_straight phase threshold; arm bent)",
+      "message": "Keep your arm straight, elbow soft"
+    },
+    {
+      "joint": "wrist",
+      "rule": "wrist angle (elbow-wrist-index) > 150 deg during the hold (equals wrist_bent_stretch phase threshold; stretch not reached)",
+      "message": "Bend the hand a little more, gently"
+    },
+    {
+      "joint": "wrist",
+      "rule": "wrist angle (elbow-wrist-index) < 100 deg (equals wrist_not_over_bent phase threshold; over-bent)",
+      "message": "Too far: ease the wrist back"
+    },
+    {
+      "joint": "time",
+      "rule": "hold shorter than 15 s (equals min_rep_sec and hold_long_enough)",
+      "message": "Hold a little longer, breathe slowly"
+    }
+  ],
+  "safetyFlags": [
+    "stop_for_tingling_or_numbness",
+    "carpal_tunnel_or_wrist_pain_gentle_range_ask_clinician",
+    "recent_wrist_hand_forearm_surgery_or_fracture_ask_doctor",
+    "no_bouncing_or_yanking",
+    "no_breath_holding",
+    "diabetes_stiff_hands_gentle_range",
+    "pregnancy_gentle_pain_free",
+    "heart_disease_ask_doctor"
+  ],
+  "progressions": [
+    "Longer holds (up to 30 s)",
+    "Add reverse-prayer and gentle nerve glides if no symptoms",
+    "Weight-bearing wrist prep (palms on desk or wall, then hands and knees)"
+  ],
+  "regressions": [
+    "Smaller range, 10 s holds",
+    "Wrist circles and finger spreads only",
+    "Warm the hands first"
+  ],
+  "videoShots": [
+    {
+      "seconds": 6,
+      "angle": "side, 1 m at desk height",
+      "shows": "flexor stretch, arm straight, palm up, fingers drawn back",
+      "textOverlay": "Palm up. Fingers back. 20 s."
+    },
+    {
+      "seconds": 6,
+      "angle": "side, 1 m",
+      "shows": "extensor stretch, palm down, hand curled, gentle press",
+      "textOverlay": "Palm down. Curl and press."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 1 m",
+      "shows": "prayer stretch then reverse-prayer with elbows on desk",
+      "textOverlay": "Prayer, then reverse prayer."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 0.6 m",
+      "shows": "wrist circles, slow, forearm still",
+      "textOverlay": "Circles from the wrist."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 0.6 m",
+      "shows": "finger spreads and fist-open",
+      "textOverlay": "Open wide, close soft."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 0.6 m",
+      "shows": "tendon glide positions: straight, hook, fist, tabletop",
+      "textOverlay": "Move gently through each shape."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, split screen, 1 m",
+      "shows": "wrong (bounce, bent elbow) vs right (gentle pull, straight arm)",
+      "textOverlay": "Gentle pull. No tingling."
+    },
+    {
+      "seconds": 6,
+      "angle": "side, 1.5 m",
+      "shows": "desk setup: sit tall, shoulders down, wrists straight",
+      "textOverlay": "Straight wrists. Break every hour."
+    }
+  ],
+  "lastResearched": "2026-11-06",
+  "setupSteps": [
+    "Seat. Sit near the front of a firm, non-wheeled chair, feet flat, knees about 90 degrees (est.), back tall. A standing version (arm out in front, no desk needed) works too.",
+    "Clothes and jewellery. Slide sleeves up to the elbow, take off watch, bangles and smart-band so the wrist can bend freely.",
+    "Starting position. Shoulders down away from the ears, elbows soft, forearms free of the desk (or resting on it for the prayer stretch).",
+    "Warm the hands first. Rub the palms together for 10 seconds, or run them under warm water (est.). Gentle heat before exercises is suggested in an AAOS carpal tunnel handout (seen as snippet).",
+    "Rule for the whole set. Stretch to a firm, comfortable pull, never to sharp pain, tingling or numbness (every source seen says this).",
+    "Camera. Phone on the desk at forearm height, about 0.6 to 1 m from the side, so the elbow, wrist and hand are in frame (see sections 11 and 12)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": "A. Wrist flexor stretch (palm up)",
+      "title": "Extend the arm",
+      "action": "reach one arm straight in front at about chest height, elbow straight but not locked, palm facing up.",
+      "feel": "shoulder relaxed, nothing yet in the wrist.",
+      "breathing": "breathe normally.",
+      "tempo": "2 seconds.",
+      "visualCheck": "side view, arm level with the floor, elbow open."
+    },
+    {
+      "n": 2,
+      "part": "A. Wrist flexor stretch (palm up)",
+      "title": "Bend the hand down",
+      "action": "point the fingers toward the floor so the wrist bends down.",
+      "feel": "a mild pull starts on the inner forearm.",
+      "breathing": "slow out-breath.",
+      "tempo": "2 seconds.",
+      "visualCheck": "the hand hangs from the wrist, forearm stays level."
+    },
+    {
+      "n": 3,
+      "part": "A. Wrist flexor stretch (palm up)",
+      "title": "Add a light pull",
+      "action": "use the other hand to draw the fingers gently toward your body.",
+      "feel": "a firm but comfortable stretch along the palm side of the forearm; no pinch in the wrist.",
+      "breathing": "breathe slowly and steadily, do not hold the breath.",
+      "tempo": "hold 15 to 30 seconds (chosen 20; Mayo-linked and Healthwise pages say 15 to 30).",
+      "visualCheck": "elbow still straight, shoulder not hiked."
+    },
+    {
+      "n": 4,
+      "part": "A. Wrist flexor stretch (palm up)",
+      "title": "Release",
+      "action": "let go, shake the hand loose.",
+      "feel": "warmth or looseness.",
+      "breathing": "normal.",
+      "tempo": "5 seconds.",
+      "visualCheck": "wrist back in line with the forearm."
+    },
+    {
+      "n": 5,
+      "part": "A. Wrist flexor stretch (palm up)",
+      "title": "Repeat 2 times per hand (chosen; sources range 2 to 4)",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 6,
+      "part": "B. Wrist extensor stretch (palm down)",
+      "title": "Extend the arm, palm down",
+      "action": "reach one arm forward, elbow straight, palm facing the floor.",
+      "feel": "relaxed shoulder.",
+      "breathing": "normal.",
+      "tempo": "2 seconds.",
+      "visualCheck": "forearm level."
+    },
+    {
+      "n": 7,
+      "part": "B. Wrist extensor stretch (palm down)",
+      "title": "Curl the hand down",
+      "action": "make a loose fist and bend the wrist so the knuckles point toward the floor (fist version) or keep the fingers straight (fingers-straight version).",
+      "feel": "a pull starting on the back of the forearm.",
+      "breathing": "slow out-breath.",
+      "tempo": "2 seconds.",
+      "visualCheck": "fist hangs below the forearm line."
+    },
+    {
+      "n": 8,
+      "part": "B. Wrist extensor stretch (palm down)",
+      "title": "Add a light press",
+      "action": "with the other hand, gently press the back of the hand toward you.",
+      "feel": "a comfortable stretch on the outer forearm.",
+      "breathing": "steady.",
+      "tempo": "hold 15 to 30 seconds (chosen 20).",
+      "visualCheck": "elbow straight; no twisting of the shoulder."
+    },
+    {
+      "n": 9,
+      "part": "B. Wrist extensor stretch (palm down)",
+      "title": "Release and repeat 2 times per hand",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 10,
+      "part": "C. Prayer and reverse-prayer",
+      "title": "Prayer stretch",
+      "action": "press the palms together in front of the chest, fingers up, elbows out to the sides.",
+      "feel": "light stretch on the inner wrists and forearms.",
+      "breathing": "slow, steady.",
+      "tempo": "lower the hands slowly toward the waist until a mild pull, hold 15 to 30 seconds (chosen 20; one source says about 30 seconds).",
+      "visualCheck": "front view, palms touching along their full length; wrists in a neat V."
+    },
+    {
+      "n": 11,
+      "part": "C. Prayer and reverse-prayer",
+      "title": "Reverse-prayer stretch (seated, elbows on desk)",
+      "action": "rest the elbows on the desk, turn the hands so the backs of the hands touch with fingers pointing down, and press the backs of the hands lightly together.",
+      "feel": "stretch on the back of the forearms; stop if the wrists pinch.",
+      "breathing": "slow, steady.",
+      "tempo": "hold 10 to 20 seconds (est.; sources range 5 to 30 s).",
+      "visualCheck": "both hands at the same height, shoulders low."
+    },
+    {
+      "n": 12,
+      "part": "C. Prayer and reverse-prayer",
+      "title": "Release and shake the hands out for 5 seconds",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 13,
+      "part": "D. Wrist circles",
+      "title": "Make loose fists or relax the hands, forearms resting on the desk edge or held in front, elbows near the body",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 14,
+      "part": "D. Wrist circles",
+      "title": "Draw slow circles with the hand, moving only from the wrist, 5 to 10 circles one way, then the same the other way (est.; the yoga source says 10 each way)",
+      "action": null,
+      "feel": "smooth, easy movement; no grinding or pain.",
+      "breathing": "normal.",
+      "tempo": "about 2 to 3 seconds per circle (est.).",
+      "visualCheck": "forearm stays still; only the hand moves."
+    },
+    {
+      "n": 15,
+      "part": "E. Finger spreads and fist-open",
+      "title": "Open the hand wide, fingers spread as far as is comfortable, hold 3 seconds",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 16,
+      "part": "E. Finger spreads and fist-open",
+      "title": "Close to a soft fist with thumb outside or tucked, hold 3 seconds",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 17,
+      "part": "E. Finger spreads and fist-open",
+      "title": "Repeat 5 to 10 times per hand (est.). A pregnancy handout (Mater) suggests a gentle fist-opening exercise repeated 5 to 10 times, several times a day",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 18,
+      "part": "F. Gentle tendon and nerve glides (optional)",
+      "title": "Tendon glides (six-position style)",
+      "action": "from a straight hand, move slowly through: straight fingers, hook fist (fingertips bent at the top two joints), full fist, tabletop (bend at the knuckles only), straight fist; return to straight each time.",
+      "feel": "smooth movement, mild tightness at most.",
+      "breathing": "normal.",
+      "tempo": "hold each position about 3 seconds, 4 to 10 repeats (NHS leaflets say 4 to 6 times, up to 4 times a day; another handout says 10 times).",
+      "visualCheck": "front view, each position distinct, fingers fully open between positions."
+    },
+    {
+      "n": 19,
+      "part": "F. Gentle tendon and nerve glides (optional)",
+      "title": "Median nerve glide (gentle sliding version)",
+      "action": "with the arm out to the side and the palm up, slowly open the fingers and thumb and bend the wrist back a little, then relax. Move in and out of the position, do not hold it at the end range.",
+      "feel": "a very mild stretch; no tingling or pins and needles.",
+      "breathing": "slow, steady.",
+      "tempo": "5 to 10 slow repeats (est.).",
+      "visualCheck": "side or front view, shoulder relaxed, no neck tilt."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Bouncing or yanking the hand",
+      "text": "Bouncing or yanking the hand. It strains the wrist tendons and the nerve. Fix: apply a slow, steady, light pull and hold."
+    },
+    {
+      "title": "Stretching into tingling or numbness",
+      "text": "Stretching into tingling or numbness. Possible nerve irritation. Fix: ease off until the tingling stops; if it keeps coming back, see a clinician."
+    },
+    {
+      "title": "Bending the elbow",
+      "text": "Bending the elbow. The stretch moves to the elbow and loses the forearm. Fix: keep the arm straight but with a soft elbow."
+    },
+    {
+      "title": "Holding the breath or hiking the shoulders",
+      "text": "Holding the breath or hiking the shoulders. Tension builds. Fix: breathe slowly and drop the shoulders."
+    },
+    {
+      "title": "Pulling on the fingertips only",
+      "text": "Pulling on the fingertips only. The finger joints take the stress. Fix: use the whole hand to push or pull from the palm and base of the fingers."
+    },
+    {
+      "title": "Too long or too forceful a hold",
+      "text": "Too long or too forceful a hold. Little extra gain, more risk. Fix: stay at a firm pull, 15 to 30 seconds; two or three rounds are enough."
+    },
+    {
+      "title": "Forcing the reverse-prayer position",
+      "text": "Forcing the reverse-prayer position. It is hard on stiff or sore wrists. Fix: keep the elbows on the desk and use a smaller range, or use the single-wrist stretch instead."
+    },
+    {
+      "title": "Stretching but never changing the desk setup",
+      "text": "Stretching but never changing the desk setup. The stretch cannot undo hours of bent wrists. Fix: keep the wrists straight on the keyboard and take micro-breaks (workplace ergonomics sources)."
+    },
+    {
+      "title": "Doing nerve glides hard as a cure for CTS",
+      "text": "Doing nerve glides hard as a cure for CTS. Reviews show limited evidence and traditional glides may strain the nerve. Fix: keep them gentle and clinician-guided."
+    }
+  ],
+  "safetyNotes": [
+    "Pain, numbness and tingling: stop if the stretch causes pain, numbness or tingling. Sources say to ease off and stay in a firm but comfortable pull.",
+    "Carpal tunnel syndrome (CTS) or wrist pain: NHS pages describe CTS as tingling, numbness and pain in the thumb, index and middle fingers, often worse at night, with possible weak grip. They advise seeing a GP if symptoms are getting worse or not going away or if home care is not working, and say mild cases can improve with changing activities, exercises and a night splint. This stretch routine is for comfort, not a treatment for CTS.",
+    "Wrist and forearm stretches for stiff or sore wrists: use the smaller range, skip reverse-prayer, and avoid forcing the hand.",
+    "After wrist, hand or forearm surgery or a fracture: exercises must follow the surgeon or hand therapist; some protocols avoid certain wrist and finger combinations for the first weeks.",
+    "Pregnancy: hand swelling and CTS are common; a Mater hospital page lists splints, positioning and gentle pain-free fist-opening exercises, and advises a doctor, midwife or physiotherapist if symptoms persist.",
+    "Diabetes and thyroid: stiff hands (diabetes) and hand tingling that may link to hypothyroidism (thyroid) are possible and need a doctor if symptoms persist.",
+    "Stop immediately if you feel: sharp or burning pain in the wrist or forearm; tingling, numbness or loss of grip that does not settle; sudden swelling, redness or a deformed wrist; dizziness or chest pain.",
+    "Spotter: not needed.",
+    "Gym etiquette: use the stretching area or step aside from walkways; at the office, use a stable, non-rolling chair."
+  ],
+  "sources": [
+    "Mayo Clinic Care Network video, wrist and forearm stretches for the workplace (seen only as snippets via search): https://www.mymlc.com/health-information/videos/life-stage/adult/adult-health-and-wellness/healthy-at-work/video-wrist-and-forearm-stretches-for-the-workplace/ ; Middlesex Health, same video: https://MiddlesexHealth.org/learning-center/videos/video-wrist-and-forearm-stretches-for-the-workplace",
+    "Healthwise via HealthlinkBC, stretching exercises for the wrists (seen only as snippets): https://www.healthlinkbc.ca/healthwise/stretching-exercises-wrists ; Healthwise via CommonSpirit, wrist flexor stretch and wrist extensor stretch: https://www.commonspirit.org/conditions-treatments/wrist-flexor-stretch ; https://www.commonspirit.org/conditions-treatments/wrist-extensor-stretch-fingers-straight-or-fist",
+    "Kaiser Permanente, Wrist: exercises (snippet): https://healthy.kaiserpermanente.org/health-wellness/health-encyclopedia/he.Wrist-Exercises.ad1518 ; UCI EHS, hand and wrist stretches (snippet): https://ehs.uci.edu/safety/ergo-program/_pdf/stretching-guides/hand-and-wrist-stretches.pdf",
+    "Occupational-health stretch guidance (seen as snippets): University of Waterloo, ergonomic stretches: https://uwaterloo.ca/safety-office/programs-and-procedures/ergonomics/ergonomic-stretches ; CCOHS, stretching at the workstation: https://ccohs.gc.ca/oshanswers/ergonomics/office/stretching.html ; WorkSafe Saskatchewan, stretches for wrist and hand: https://www.worksafesask.ca/wp-content/uploads/2024/12/Stretches-for-wrist-and-hand-8.5x-14-poster.pdf",
+    "NHS, carpal tunnel syndrome (snippet): https://www.nhs.uk/conditions/carpal-tunnel-syndrome/ ; NHS tendon glide leaflets: East Kent Hospitals https://leaflets.ekhuft.nhs.uk/tendon-glide-exercises/html ; St George's https://www.stgeorges.nhs.uk/wp-content/uploads/2021/09/Tendon-gliding-exercises.pdf",
+    "AAOS OrthoInfo, 2022 therapeutic exercise program for carpal tunnel (snippet): https://orthoinfo.aaos.org:443/globalassets/pdfs/2022-therapeutic-exercise-program-for-carpal-tunnel.pdf ; Queen's University gliding exercises resource: https://elentra.healthsci.queensu.ca/community/carpaltunnelsyndrome:treatment/conservative/gliding_exercises",
+    "Systematic reviews of nerve gliding for CTS (snippets): Kim 2015, J Phys Ther Sci, https://www.jstage.jst.go.jp/article/jpts/27/8/27_jpts-2015-232/_article ; Ballestero-Perez 2017, https://pmc.ncbi.nlm.nih.gov/articles/PMC4563334 (attribution not verified) ; McKeon and Yancosek 2008, https://pubmed.ncbi.nlm.nih.gov/18708684/",
+    "Manibandha chakra (yoga schools; not AYUSH): BSYD practice sheet, https://www.jainqq.org/explore/009366/47 ; Pawanmuktasana Part 3, https://alambayoga.blogspot.com/2017/09/pawanmuktasana-1-anti-rheumatic-group_9.html ; Common Yoga Protocol (AYUSH/MDNIY, via third-party PDF; no wrist rotation seen): https://new1.isro.gov.in/media_isro/pdf/CYP%20english.pdf",
+    "Herrmann SD et al., 2024 Adult Compendium of Physical Activities (02101 Stretching, mild 2.3): https://pacompendium.com/conditioning-exercise ; https://pubmed.ncbi.nlm.nih.gov/38242596/",
+    "Condition sources (snippets and earlier items): Diabetic stiff hand reviews: https://pmc.ncbi.nlm.nih.gov/articles/PMC9767792 ; https://tcoyd.org/2021/03/stiff-hands-trigger-finger-and-carpal-tunnel/ ; Hypothyroidism and CTS: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12473067/ ; Mater, carpal tunnel in pregnancy: https://www.mater.org.au/health-services/our-services/carpal-tunnel-syndrome-in-pregnancy ; Hand-therapy leaflets after wrist surgery: https://www.sussexhandsurgery.co.uk/documents/wrist-rehab/wrist-exercises.pdf ; https://www.imperial.nhs.uk/~/media/website/patient-information-leaflets/orthopaedics/hand-therapy/fractured-wrist-after-surgery.pdf ; ADA PMC5317029: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/ ; BHF cool-down: https://www.bhf.org.uk/informationsupport/heart-matters-magazine/activity/cool-down-exercises ; Sutter Health: https://www.Sutterhealth.Org/pdf/services/heart-vascular/hypertension-exercising.pdf ; PCOS position statement: https://researchers.westernsydney.edu.au/en/publications/exercise-in-the-management-of-polycystic-ovary-syndrome-a-positio/ ; Marshfield Clinic asthma: https://shine365.marshfieldclinic.org/wellness/asthma-exercise/ ; ECU Health asthma: https://healthlibrary.ecuhealth.org/lung-health/management/asthma-management-exercise-safety",
+    "Hold time and reps: 5 s, 10 to 20 s, 15 to 30 s and about 30 s all appear. We chose 15 to 20 s, 2 rounds.",
+    "Frequency: every 30 to 60 min, hourly, 1 to 3 times a day. We chose every 1 to 2 hours in desk work, at least once or twice a day.",
+    "Nerve glides: reviews show limited evidence; one article suggests traditional glides may strain the nerve. We made them optional, gentle and clinician-guided.",
+    "Wrist range: no clinical norms were found. Our angle thresholds are estimates.",
+    "Official AYUSH or MDNIY step text for Manibandha chakra: Not found.",
+    "Wrist-stretch-specific MET and clinical wrist-angle norms: Not found.",
+    "Stretch-specific sources for most condition rows (blood pressure, cholesterol, obesity, PCOS, knee, back, shoulder, osteoporosis, postpartum) and ACOG/NHS pregnancy wording: Not found.",
+    "Most pages were seen only as search snippets; direct page fetches were not possible."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 43.5,
+      "70kg": 37.3,
+      "80kg": 32.6
+    },
+    "per300kcal": {
+      "60kg": 130.4,
+      "70kg": 111.8,
+      "80kg": 97.8
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "mobility",
+    "yoga",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "small_flat",
+    "quiet",
+    "office_desk",
+    "3_5_min",
+    "warm_up",
+    "desk_break",
+    "morning",
+    "evening",
+    "relaxation"
+  ],
+  "swapsByAccess": {
+    "none": "Whole routine seated at a desk, or standing with the arm out in front",
+    "home_equipment": "Soft stress ball or putty for gentle grip-and-release; small towel for the forearm",
+    "basic_gym": "Use the wall or a bench edge for palm-flat extension stretches",
+    "full_gym": "Cable-column bar or wall for hand-pressed extension stretches; physio area for supervised glides"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "ok",
+      "change": "No stretch-specific caution found; do not hold the breath; ask a doctor if on treatment",
+      "source": "Sutter Health hypertension exercise (general); Not found (stretch-specific)"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "modify",
+      "change": "Gentle finger and palm stretching a few times a day suggested for stiff hand syndrome; check for numbness or sores; check with a doctor if the prayer-sign gap is present",
+      "source": "Reviews of diabetic cheiroarthropathy (PMC9767792, TCOYD, snippets); ADA PMC5317029 (general)"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "Light seated stretching is part of a warm-up or cool-down; avoid straining or breath-holding; ask the cardiac team before a new routine",
+      "source": "BHF cool-down (general); Not found (stretch-specific)"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "No change (source not found)",
+      "source": "Not found"
+    },
+    {
+      "condition": "obesity",
+      "status": "ok",
+      "change": "Seated or standing desk version; no specific caution found",
+      "source": "Not found"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "No stretch-specific caution found",
+      "source": "PCOS exercise position statement (general); Not found (stretch-specific)"
+    },
+    {
+      "condition": "thyroid",
+      "status": "modify",
+      "change": "Hypothyroidism has a modest link to carpal tunnel syndrome in some studies; keep gentle and see a doctor for persistent hand tingling or numbness",
+      "source": "Studies on hypothyroidism and CTS (PMC12473067, snippets)"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "No stretch-specific caution found; reliever inhaler nearby; stop if wheezing",
+      "source": "Marshfield Clinic and ECU Health asthma exercise-safety pages (general)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "ok",
+      "change": "Seated version; no knee load",
+      "source": "Not found (stretch-specific)"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "ok",
+      "change": "Seated tall or standing; no spinal load; stop if back pain or leg symptoms increase",
+      "source": "Not found (stretch-specific)"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "modify",
+      "change": "Rest the forearm on the desk with the elbow bent if reaching the arm out hurts; stop if the shoulder pinches",
+      "source": "Not found (stretch-specific)"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "ok",
+      "change": "Gentle range, seated, no weight-bearing on the wrists; stretch-specific source not found",
+      "source": "Not found"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "modify",
+      "change": "Gentle pain-free stretches and fist-opening; splints and a doctor, midwife or physio for persistent tingling",
+      "source": "Mater (Australia) carpal tunnel in pregnancy (snippet); Not found (ACOG or NHS wording)"
+    },
+    {
+      "condition": "postpartum",
+      "status": "modify",
+      "change": "Gentle seated stretching is fine; ask a physio if wrist pain from holding the baby persists",
+      "source": "Not found"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Follow the surgeon or hand therapist's timeline; do not start wrist stretches alone after wrist, hand or forearm surgery",
+      "source": "Sussex Hand Surgery, Imperial NHS and other hand therapy leaflets (snippets)"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "office_desk",
+      "home"
+    ],
+    "bodyRegion": [
+      "upper"
+    ],
+    "goalTags": [
+      "flexibility",
+      "relaxation",
+      "general_fitness"
+    ],
+    "intensity": "light",
+    "noise": "quiet",
+    "space": "mat_only",
+    "typicalMinutes": 4,
+    "kcalPer10min70kg": 27,
+    "difficulty1to5": 1,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Yoga & stretch",
+    "Office desk",
+    "Home",
+    "No equipment",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Mobility",
+    "Arms",
+    "Hold timer",
+    "Under 10 min"
+  ],
+  "needsReview": [
+    "rep_counter phase \"hold_long_enough\" (time): angle \"hold >= 15 s (position flag, not an angle)\" is not a parseable angle"
+  ],
+  "versions": [
+    {
+      "date": "2026-11-06",
+      "file": "FitPlate_Fitness_2026-11-06.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

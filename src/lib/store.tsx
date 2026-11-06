@@ -8,6 +8,7 @@ import { featureFlags } from '../config/featureFlags';
 import { researchDishes } from '../data/research';
 import type { Dish as ResearchDish } from '../models/research';
 import type { Doc } from '../models/common';
+import type { SupplementLog } from '../models/logs';
 import { cookedDays, currentStreak } from '../services/streaks';
 import { portionPatch } from '../services/meals';
 import { DEFAULT_SETTINGS, type CookCompletion, type DishRating, type ShoppingList, type UserSettings } from '../models/prefs';
@@ -167,6 +168,10 @@ type Store = State & {
   setSex: (sex: 'male' | 'female') => void;
   /** Private yes/no flags from the profile (pregnant, lactating). Never shown outside the app. */
   privateFlags: Record<string, boolean>;
+  /** Supplements the user logged (Day 18), newest first. */
+  supplements: Doc<SupplementLog>[];
+  addSupplement: (sup: { name: string; nutrientId: string | null; dose: number | null; unit: string | null }) => void;
+  removeSupplement: (id: string) => void;
   setPrivateFlag: (key: 'pregnant' | 'lactating', on: boolean) => void;
   /** Age, height, weight and activity from the profile (null = not given). */
   body: Pick<UserProfile, 'age' | 'heightCm' | 'weightKg' | 'activityLevel'>;
@@ -385,6 +390,11 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       addWeight: (kg) => s?.addWeight(kg),
       bodyWeightKg: bodyWeight,
       setSex: (sex) => s?.updateProfile({ sex }),
+      supplements: Object.values(docs.supplementLogs)
+        .filter((x) => !x.deleted)
+        .sort((a, b) => b.timestamp - a.timestamp),
+      addSupplement: (sup) => s?.addSupplement(sup),
+      removeSupplement: (id) => s?.removeSupplement(id),
       privateFlags: docs.profile && !docs.profile.deleted ? (docs.profile.privateFlags ?? {}) : {},
       setPrivateFlag: (key, on) => s?.updateProfile({ privateFlags: { ...(docs.profile?.privateFlags ?? {}), [key]: on } }),
       body: {

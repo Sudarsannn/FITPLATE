@@ -1,0 +1,317 @@
+{
+  "id": "iodine",
+  "name": "Iodine",
+  "type": "mineral",
+  "subtype": "trace-mineral",
+  "unit": "µg",
+  "altUnits": [
+    {
+      "unit": "mg",
+      "toMainUnitFactor": 1000
+    },
+    {
+      "unit": "ppm in salt (µg per g salt)",
+      "toMainUnitFactor": 1
+    }
+  ],
+  "unitConversions": [
+    {
+      "fromUnit": "mg",
+      "compound": "iodine",
+      "toMainUnitFactor": 1000,
+      "raw": "1 mg iodine | 1,000 µg"
+    }
+  ],
+  "targets": [
+    {
+      "group": "adult_male_sedentary",
+      "ear": 95,
+      "rda": 150,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (secondary, unverified); one source shows RDA 140; WHO/NIH/EFSA 150"
+    },
+    {
+      "group": "adult_male_moderate",
+      "ear": 95,
+      "rda": 150,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (secondary, unverified); not scaled by activity"
+    },
+    {
+      "group": "adult_male_heavy",
+      "ear": 95,
+      "rda": 150,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (secondary, unverified); not scaled by activity"
+    },
+    {
+      "group": "adult_female_sedentary",
+      "ear": 95,
+      "rda": 150,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (secondary, unverified); one source shows RDA 140"
+    },
+    {
+      "group": "adult_female_moderate",
+      "ear": 95,
+      "rda": 150,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (secondary, unverified); not scaled by activity"
+    },
+    {
+      "group": "adult_female_heavy",
+      "ear": 95,
+      "rda": 150,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (secondary, unverified); not scaled by activity"
+    },
+    {
+      "group": "pregnant",
+      "ear": null,
+      "rda": 220,
+      "ai": null,
+      "source": "ICMR-NIN 2020 as reported by an educational resource (secondary, unverified; identical to US IOM; IOM EAR 160); WHO 250; EFSA AI 200; doctor-led"
+    },
+    {
+      "group": "lactating",
+      "ear": null,
+      "rda": 290,
+      "ai": null,
+      "source": "ICMR-NIN 2020 as reported by an educational resource (secondary, unverified; identical to US IOM); WHO 250; EFSA AI 200; doctor-led"
+    }
+  ],
+  "appDefaultTarget": {
+    "adult_male": 150,
+    "adult_female": 150,
+    "pregnant": 220,
+    "lactating": 290,
+    "age_60_plus": null
+  },
+  "upperLimit": {
+    "value": 1100,
+    "unit": "µg",
+    "appliesTo": "food_and_supplements",
+    "source": "NIH ODS UL for adults 19+ (secondary snippet); EFSA UL 600 µg (via BfR 2025); ATA 2013: avoid iodine/kelp supplements above 500 µg/day; ICMR TUL Not found"
+  },
+  "topFoodSources": [
+    {
+      "food": "Iodised salt at 15 ppm household minimum (before cooking loss)",
+      "veg": true,
+      "per100g": 1500,
+      "servingG": 1.5,
+      "servingLabel": "about 1/4 tsp (est.)",
+      "perServing": 22.5
+    },
+    {
+      "food": "Cow milk (Longvah 2013, 303 µg/L)",
+      "veg": true,
+      "per100g": 29.4,
+      "servingG": 206,
+      "servingLabel": "1 glass, 200 ml (est.)",
+      "perServing": 60
+    },
+    {
+      "food": "Curd, plain (est. similar to milk; not an Indian measurement)",
+      "veg": true,
+      "per100g": 30,
+      "servingG": 150,
+      "servingLabel": "2/3 cup (est.)",
+      "perServing": 45
+    },
+    {
+      "food": "Egg, whole (USDA-based, not Indian)",
+      "veg": false,
+      "per100g": 49,
+      "servingG": 50,
+      "servingLabel": "1 egg",
+      "perServing": 24.5
+    },
+    {
+      "food": "Bread, white commercial (Longvah 2013)",
+      "veg": true,
+      "per100g": 25,
+      "servingG": 50,
+      "servingLabel": "2 slices (est.)",
+      "perServing": 12.5
+    },
+    {
+      "food": "Marine fish, Indian coastal mean (one older study; wide range, secondary)",
+      "veg": false,
+      "per100g": 193,
+      "servingG": 100,
+      "servingLabel": "1 cooked portion (est.)",
+      "perServing": 193
+    }
+  ],
+  "goodSourceDishes": [
+    {
+      "dishNumber": 14,
+      "dishName": "Egg Bhurji"
+    },
+    {
+      "dishNumber": 21,
+      "dishName": "Masala Omelette"
+    },
+    {
+      "dishNumber": 35,
+      "dishName": "Curd Rice"
+    },
+    {
+      "dishNumber": 98,
+      "dishName": "Mango Lassi"
+    },
+    {
+      "dishNumber": 99,
+      "dishName": "Masala Chai"
+    },
+    {
+      "dishNumber": 33,
+      "dishName": "Goan Fish Curry"
+    }
+  ],
+  "deficiencyRiskIndia": "moderate",
+  "absorptionBoosters": [
+    "Iodised salt added late in cooking or at the table (keeps more iodine)",
+    "Adequate selenium and iron support thyroid hormone making (not sourced in this run)"
+  ],
+  "absorptionBlockers": [
+    "Goitrogens (cabbage, cauliflower, broccoli, soy, millets) matter mainly when iodine is low",
+    "Non-iodised salt (sea, rock, black, pink) in place of iodised salt"
+  ],
+  "logPresets": [
+    {
+      "label": "Prenatal or multivitamin tablet with 150 µg iodine (check your label)",
+      "amount": 150,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 150,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "1/4 tsp iodised salt, about 1.25 g, at 15 ppm (before cooking loss)",
+      "amount": 19,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 19,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "1 level tsp iodised salt, about 5 g, at 15 ppm (before cooking loss)",
+      "amount": 75,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 75,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Doctor-directed iodine, example 1,200 µg (prescription dose)",
+      "amount": 1200,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 1200,
+      "mainAmountRange": null,
+      "prescriptionDose": true
+    }
+  ],
+  "warnings": [
+    "IFCT 2017 has no iodine data; food iodine in the app is estimated and shown as approximate.",
+    "Do not take iodine, kelp or 'thyroid support' supplements above 500 µg/day without a doctor (ATA 2013); upper limit 1,100 µg/day (NIH).",
+    "Sea, rock, black and Himalayan pink salt are usually not iodised; check the pack.",
+    "Thyroid disease, pregnancy, breastfeeding, amiodarone use or recent iodine contrast: follow your doctor's advice; the app sets no iodine target on its own.",
+    "Shellfish iodine value (0.7-2.5 mg per 100 g, one old abstract) is suspect and not used."
+  ],
+  "conditionAdjustments": [
+    {
+      "profileId": "hypothyroidism",
+      "change": "Adequate, not extra: use iodised salt within 5 g/day; no iodine or kelp supplement above 500 µg/day and none without the doctor",
+      "value": 500,
+      "unit": "µg",
+      "source": "ATA 2013 statement"
+    },
+    {
+      "profileId": "hyperthyroidism",
+      "change": "Iodine advice is doctor-led; no numeric limit found",
+      "value": null,
+      "unit": "µg",
+      "source": "Not found"
+    },
+    {
+      "profileId": "pregnancy",
+      "change": "Higher need, doctor-led: ICMR-NIN as reported 220; WHO 250; EFSA 200; ATA suggests 150 µg supplement in prenatal vitamin",
+      "value": 220,
+      "unit": "µg",
+      "source": "ICMR-NIN 2020 (secondary, unverified); WHO/ICCIDD; EFSA 2014; ATA"
+    },
+    {
+      "profileId": "breastfeeding",
+      "change": "Higher need, doctor-led: ICMR-NIN as reported 290; WHO 250; EFSA 200",
+      "value": 290,
+      "unit": "µg",
+      "source": "ICMR-NIN 2020 (secondary, unverified); WHO/ICCIDD; EFSA 2014"
+    },
+    {
+      "profileId": "vegan-diet",
+      "change": "Gap: no dairy, eggs or fish; use iodised salt; do not rely on seaweed (variable, can exceed limit); few plant milks are iodine-fortified",
+      "value": 150,
+      "unit": "µg",
+      "source": "Systematic reviews of vegan iodine status (via snippets); NIH ODS"
+    },
+    {
+      "profileId": "jain-diet",
+      "change": "Iodised salt becomes the main source; check dairy intake",
+      "value": 150,
+      "unit": "µg",
+      "source": "Longvah 2013 (home vegetarian recipes without iodised salt about 2.9 µg/100 g)"
+    },
+    {
+      "profileId": "hypertension",
+      "change": "Keep total salt within 5 g/day and use iodised salt",
+      "value": 5,
+      "unit": "g salt",
+      "source": "ICMR-NIN DGI 2024 (secondary)"
+    },
+    {
+      "profileId": "heart-disease",
+      "change": "If on amiodarone or after iodinated contrast, ask the doctor about thyroid checks",
+      "value": null,
+      "unit": "µg",
+      "source": "Case reports and reviews (secondary)"
+    },
+    {
+      "profileId": "healthy-ageing",
+      "change": "No change found; EAR 95 and RDA 150 for 60+",
+      "value": 150,
+      "unit": "µg",
+      "source": "IJMR 2022 (ICMR-NIN values; secondary, unverified)"
+    }
+  ],
+  "lastResearched": "2026-11-06",
+  "versions": [
+    {
+      "date": "2026-11-06",
+      "file": "FitPlate_Nutrients_2026-11-06.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3)",
+    "upperLimit": "official safety limit (D3, lower on conflict)",
+    "topFoodSources": "union; per100g official (D3)",
+    "logPresets": "union by label (newest), converted with own file factors",
+    "appDefaultTarget": "newest, kept only where it equals the ICMR row",
+    "lists": "union",
+    "warnings": "union (never dropped)",
+    "text": "newest"
+  },
+  "mergeNotes": [],
+  "needsReview": [
+    "2026-11-06 iodine: \"group\" has unexpected value \"age_60_plus_male\"; treated as not found",
+    "2026-11-06 iodine: \"group\" has unexpected value \"age_60_plus_female\"; treated as not found"
+  ]
+}

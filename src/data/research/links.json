@@ -1,6 +1,6 @@
 {
   "schema": "fitplate.links.v1",
-  "generatedFor": "Day17",
+  "generatedFor": "Day18",
   "goodSourceDishes": {
     "biotin": [
       {
@@ -213,6 +213,38 @@
         "dishNumber": 71,
         "dishName": "Ragi Dosa",
         "dishId": "071-ragi-dosa"
+      }
+    ],
+    "iodine": [
+      {
+        "dishNumber": 14,
+        "dishName": "Egg Bhurji",
+        "dishId": "014-egg-bhurji"
+      },
+      {
+        "dishNumber": 21,
+        "dishName": "Masala Omelette",
+        "dishId": "021-masala-omelette"
+      },
+      {
+        "dishNumber": 35,
+        "dishName": "Curd Rice",
+        "dishId": "035-curd-rice"
+      },
+      {
+        "dishNumber": 98,
+        "dishName": "Mango Lassi",
+        "dishId": "098-mango-lassi"
+      },
+      {
+        "dishNumber": 99,
+        "dishName": "Masala Chai",
+        "dishId": "099-masala-chai"
+      },
+      {
+        "dishNumber": 33,
+        "dishName": "Goan Fish Curry",
+        "dishId": "033-goan-fish-curry"
       }
     ],
     "iron": [
@@ -607,6 +639,53 @@
         "dishNumber": 12,
         "dishName": "Rajma Chawal",
         "dishId": "012-rajma-chawal"
+      }
+    ],
+    "selenium": [
+      {
+        "dishNumber": 55,
+        "dishName": "Prawn Masala",
+        "dishId": "055-prawn-masala"
+      },
+      {
+        "dishNumber": 14,
+        "dishName": "Egg Bhurji",
+        "dishId": "014-egg-bhurji"
+      },
+      {
+        "dishNumber": 84,
+        "dishName": "Egg Biryani",
+        "dishId": "084-egg-biryani"
+      },
+      {
+        "dishNumber": 38,
+        "dishName": "Egg Curry",
+        "dishId": "038-egg-curry"
+      },
+      {
+        "dishNumber": 73,
+        "dishName": "Rava Fish Fry",
+        "dishId": "073-rava-fish-fry"
+      },
+      {
+        "dishNumber": 33,
+        "dishName": "Goan Fish Curry",
+        "dishId": "033-goan-fish-curry"
+      },
+      {
+        "dishNumber": 11,
+        "dishName": "Aloo Paratha",
+        "dishId": "011-aloo-paratha"
+      },
+      {
+        "dishNumber": 21,
+        "dishName": "Masala Omelette",
+        "dishId": "021-masala-omelette"
+      },
+      {
+        "dishNumber": 46,
+        "dishName": "Methi Thepla",
+        "dishId": "046-methi-thepla"
       }
     ],
     "sodium": [
@@ -1113,10 +1192,12 @@
   "dishGoodSourceOf": {
     "014-egg-bhurji": [
       "biotin",
+      "iodine",
       "niacin",
       "pantothenic-acid",
       "phosphorus",
       "riboflavin",
+      "selenium",
       "vitamin-a",
       "vitamin-b12",
       "vitamin-d",
@@ -1160,6 +1241,7 @@
       "biotin",
       "pantothenic-acid",
       "phosphorus",
+      "selenium",
       "vitamin-b12",
       "vitamin-d"
     ],
@@ -1171,8 +1253,10 @@
     "021-masala-omelette": [
       "biotin",
       "chloride",
+      "iodine",
       "pantothenic-acid",
       "riboflavin",
+      "selenium",
       "sodium",
       "vitamin-a",
       "vitamin-b12",
@@ -1225,6 +1309,7 @@
     ],
     "035-curd-rice": [
       "calcium",
+      "iodine",
       "phosphorus",
       "vitamin-b12"
     ],
@@ -1238,6 +1323,7 @@
       "iron",
       "manganese",
       "riboflavin",
+      "selenium",
       "vitamin-a",
       "vitamin-b6",
       "vitamin-k"
@@ -1245,6 +1331,7 @@
     "055-prawn-masala": [
       "calcium",
       "pantothenic-acid",
+      "selenium",
       "vitamin-b12",
       "vitamin-d"
     ],
@@ -1303,6 +1390,20 @@
     "042-malai-kofta": [
       "copper"
     ],
+    "098-mango-lassi": [
+      "iodine"
+    ],
+    "099-masala-chai": [
+      "iodine"
+    ],
+    "033-goan-fish-curry": [
+      "iodine",
+      "niacin",
+      "pantothenic-acid",
+      "selenium",
+      "vitamin-b12",
+      "vitamin-d"
+    ],
     "077-keema-pav": [
       "iron",
       "zinc"
@@ -1336,6 +1437,7 @@
       "niacin",
       "pantothenic-acid",
       "riboflavin",
+      "selenium",
       "thiamine",
       "vitamin-b6"
     ],
@@ -1360,12 +1462,6 @@
     ],
     "028-chicken-65": [
       "niacin"
-    ],
-    "033-goan-fish-curry": [
-      "niacin",
-      "pantothenic-acid",
-      "vitamin-b12",
-      "vitamin-d"
     ],
     "040-sabudana-khichdi": [
       "niacin",
@@ -1406,6 +1502,14 @@
     "082-methi-chicken": [
       "riboflavin",
       "vitamin-k"
+    ],
+    "084-egg-biryani": [
+      "selenium",
+      "zinc"
+    ],
+    "073-rava-fish-fry": [
+      "selenium",
+      "vitamin-d"
     ],
     "029-misal-pav": [
       "thiamine"
@@ -1450,17 +1554,11 @@
     "037-bhindi-masala": [
       "vitamin-c"
     ],
-    "073-rava-fish-fry": [
-      "vitamin-d"
-    ],
     "030-lemon-rice": [
       "vitamin-e"
     ],
     "020-vada-pav": [
       "vitamin-k"
-    ],
-    "084-egg-biryani": [
-      "zinc"
     ]
   },
   "families": [
@@ -1548,6 +1646,16 @@
       "met": 2.3
     },
     {
+      "exerciseId": "chair-bench-tricep-dips",
+      "name": "Chair or bench tricep dips (bent-knee beginner, straight-leg and feet-elevated versions)",
+      "met": 2.8
+    },
+    {
+      "exerciseId": "chest-press-machine",
+      "name": "Chest press machine (seated)",
+      "met": 3.5
+    },
+    {
       "exerciseId": "dead-bug",
       "name": "Dead bug (arms-only, heel-tap and full versions)",
       "met": 2.8
@@ -1595,6 +1703,11 @@
     {
       "exerciseId": "hip-thrust",
       "name": "Hip thrust (barbell and machine)",
+      "met": 3.5
+    },
+    {
+      "exerciseId": "incline-bench-press",
+      "name": "Incline bench press (barbell and dumbbell)",
       "met": 3.5
     },
     {
@@ -1681,6 +1794,11 @@
       "exerciseId": "wall-sit",
       "name": "Wall sit (shallow beginner, quarter and parallel versions)",
       "met": 2.8
+    },
+    {
+      "exerciseId": "wrist-forearm-stretch",
+      "name": "Wrist and forearm stretch (for desk workers)",
+      "met": 2.3
     }
   ],
   "microTable": {
@@ -3271,6 +3389,11 @@
         "per100": 0.4,
         "unit": "µg",
         "source": "ingredient research (USDA FDC: USDA FDC 171284 'Yogurt, plain, whole milk' seen via secondary sites; saturated_fat_g from docindia.org and cholesterol_mg from FatSecret dahi entry; no IFCT entry opened)"
+      },
+      "iodine": {
+        "per100": 30,
+        "unit": "µg",
+        "source": "nutrient research (iodine food sources)"
       }
     },
     "curry-leaves": {

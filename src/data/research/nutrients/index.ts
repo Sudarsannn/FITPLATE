@@ -5,6 +5,7 @@ import item_biotin from './biotin.json';
 import item_calcium from './calcium.json';
 import item_chloride from './chloride.json';
 import item_copper from './copper.json';
+import item_iodine from './iodine.json';
 import item_iron from './iron.json';
 import item_manganese from './manganese.json';
 import item_niacin from './niacin.json';
@@ -12,6 +13,7 @@ import item_pantothenic_acid from './pantothenic-acid.json';
 import item_phosphorus from './phosphorus.json';
 import item_potassium from './potassium.json';
 import item_riboflavin from './riboflavin.json';
+import item_selenium from './selenium.json';
 import item_sodium from './sodium.json';
 import item_thiamine from './thiamine.json';
 import item_vitamin_a from './vitamin-a.json';
@@ -28,6 +30,7 @@ export const items: Nutrient[] = [
   item_calcium as unknown as Nutrient,
   item_chloride as unknown as Nutrient,
   item_copper as unknown as Nutrient,
+  item_iodine as unknown as Nutrient,
   item_iron as unknown as Nutrient,
   item_manganese as unknown as Nutrient,
   item_niacin as unknown as Nutrient,
@@ -35,6 +38,7 @@ export const items: Nutrient[] = [
   item_phosphorus as unknown as Nutrient,
   item_potassium as unknown as Nutrient,
   item_riboflavin as unknown as Nutrient,
+  item_selenium as unknown as Nutrient,
   item_sodium as unknown as Nutrient,
   item_thiamine as unknown as Nutrient,
   item_vitamin_a as unknown as Nutrient,

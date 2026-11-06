@@ -1,5 +1,5 @@
 import type { BaseDoc, DateKey, Doc } from '../models/common';
-import type { Favourite, MealLog, MealPlanDay, SavingEntry, WaterLog, WorkoutLog } from '../models/logs';
+import type { Favourite, MealLog, MealPlanDay, SavingEntry, SupplementLog, WaterLog, WorkoutLog } from '../models/logs';
 import { DEFAULT_SETTINGS, type CookCompletion, type DishRating, type ShoppingList, type UserSettings, type WeightLog } from '../models/prefs';
 import { withSurveyDefaults } from '../models/survey';
 import { DEFAULT_PROFILE, type UserProfile } from '../models/user';
@@ -36,6 +36,8 @@ export type UserDocs = {
   weightLogs: Record<string, Doc<WeightLog>>;
   ratings: Record<string, Doc<DishRating>>;
   cookCompletions: Record<string, Doc<CookCompletion>>;
+  /** Day 18: supplements the user logged. */
+  supplementLogs: Record<string, Doc<SupplementLog>>;
 };
 
 /** Id of the one settings document. */
@@ -53,6 +55,7 @@ const LIST_COLLECTIONS: readonly ListCollection[] = [
   'weightLogs',
   'ratings',
   'cookCompletions',
+  'supplementLogs',
 ];
 
 export const EMPTY_DOCS: UserDocs = {
@@ -68,6 +71,7 @@ export const EMPTY_DOCS: UserDocs = {
   weightLogs: {},
   ratings: {},
   cookCompletions: {},
+  supplementLogs: {},
 };
 
 /** Set once the guest store on this device has been migrated from the demo blob, or seeded. */
@@ -83,7 +87,7 @@ export const dateKeyOf = (t: number): DateKey => {
 };
 
 export async function loadDocs(repos: Repositories): Promise<UserDocs> {
-  const [profile, mealLogs, waterLogs, workoutLogs, favourites, mealPlans, savings, settings, shoppingLists, weightLogs, ratings, cookCompletions] =
+  const [profile, mealLogs, waterLogs, workoutLogs, favourites, mealPlans, savings, settings, shoppingLists, weightLogs, ratings, cookCompletions, supplementLogs] =
     await Promise.all([
       repos.profile.get(PROFILE_ID),
       repos.mealLogs.list(),
@@ -97,6 +101,7 @@ export async function loadDocs(repos: Repositories): Promise<UserDocs> {
       repos.weightLogs.list(),
       repos.ratings.list(),
       repos.cookCompletions.list(),
+      repos.supplementLogs.list(),
     ]);
   return {
     profile,
@@ -111,6 +116,7 @@ export async function loadDocs(repos: Repositories): Promise<UserDocs> {
     weightLogs: byId(weightLogs),
     ratings: byId(ratings),
     cookCompletions: byId(cookCompletions),
+    supplementLogs: byId(supplementLogs),
   };
 }
 
@@ -389,6 +395,19 @@ export function createUserSession(
       if (!docs.mealLogs[id]) return;
       drop('mealLogs', id);
       enqueue(() => repos.mealLogs.remove(id));
+    },
+
+    addSupplement(sup: Omit<SupplementLog, 'timestamp' | 'dateKey'>) {
+      const t = now();
+      const doc: Doc<SupplementLog> = { ...sup, timestamp: t, dateKey: dateKeyOf(t), ...base(makeId(t), 'supplementLogs', t) };
+      put('supplementLogs', doc);
+      enqueue(() => repos.supplementLogs.create({ ...fieldsOf(doc), id: doc.id }));
+    },
+
+    removeSupplement(id: string) {
+      if (!docs.supplementLogs[id]) return;
+      drop('supplementLogs', id);
+      enqueue(() => repos.supplementLogs.remove(id));
     },
 
     addWorkout(w: Omit<WorkoutLog, 'timestamp' | 'dateKey'>) {

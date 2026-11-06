@@ -30,6 +30,8 @@ export type MicroBar = {
   label: string;
   unit: string;
   amount: number;
+  /** Part of `amount` that came from supplements (Day 18). */
+  fromSupplements: number;
   target: number | null;
   /** 0–1+, null when there's no researched target. */
   fraction: number | null;
@@ -63,21 +65,30 @@ export function dayMacros(meals: MealInput[], dish: (id: string) => Dish | undef
 export type TargetGroup = 'adult_male' | 'adult_female';
 
 /** Sums the micronutrient estimates of the day's research dishes and sets each against its researched target. */
-export function dayMicros(meals: MealInput[], dish: (id: string) => Dish | undefined, nutrients: readonly Nutrient[], group: TargetGroup): MicroBar[] {
+export type MicroOptions = {
+  /** Supplement amounts per nutrient id in main units (Day 18); counted on top of food. */
+  supplements?: Record<string, number>;
+  /** Personal targets per nutrient id (Day 16 engine). An id with no entry falls back to the topic's adult default. */
+  targets?: Record<string, number | null>;
+};
+
+export function dayMicros(meals: MealInput[], dish: (id: string) => Dish | undefined, nutrients: readonly Nutrient[], group: TargetGroup, opts: MicroOptions = {}): MicroBar[] {
   const totals: Record<string, number> = {};
+  const sup = opts.supplements ?? {};
   for (const m of meals) {
     const d = m.dishId ? dish(m.dishId) : undefined;
     for (const [id, v] of Object.entries(d?.microNutrientsEstimate?.values ?? {})) {
       if (v != null) totals[id] = (totals[id] ?? 0) + v;
     }
   }
+  for (const [id, v] of Object.entries(sup)) totals[id] = (totals[id] ?? 0) + v;
   const byId = new Map(nutrients.map((n) => [n.id, n]));
   const ids = new Set([...Object.keys(totals), ...nutrients.map((n) => n.id)]);
   const bars: MicroBar[] = [];
   for (const id of ids) {
     if (id === 'cholesterol') continue;
     const n = byId.get(id);
-    const target = n?.appDefaultTarget?.[group] ?? null;
+    const target = opts.targets && id in opts.targets ? opts.targets[id] : (n?.appDefaultTarget?.[group] ?? null);
     const amount = totals[id] ?? 0;
     const fraction = target ? amount / target : null;
     bars.push({
@@ -85,6 +96,7 @@ export function dayMicros(meals: MealInput[], dish: (id: string) => Dish | undef
       label: shortName(n?.name ?? nutrientLabel(id)),
       unit: n?.unit ?? UNIT_BY_ID[id] ?? '',
       amount,
+      fromSupplements: sup[id] ?? 0,
       target,
       fraction,
       band: fraction == null ? null : band(fraction),

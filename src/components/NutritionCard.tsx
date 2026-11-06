@@ -1,8 +1,12 @@
-import { useState } from 'react';
+import { router } from 'expo-router';
+import { useMemo, useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 import { getDish, researchNutrients } from '../data/research';
-import type { DayLog } from '../lib/store';
+import { featureFlags } from '../config/featureFlags';
+import { dayKey, useStore, type DayLog } from '../lib/store';
+import { useTargets } from '../lib/useTargets';
+import { LIMIT_NOTE, limitStatus, supplementTotals } from '../services/supplements';
 import { amountLabel, band, dayMacros, dayMicros, type Band, type MicroBar } from '../services/dayNutrition';
 import { colors, radius } from '../theme';
 import { Bar, Chip } from './ui';
@@ -77,7 +81,7 @@ function MicroRow({ bar }: { bar: MicroBar }) {
         {bar.fraction == null ? null : <Bar progress={bar.fraction} color={BAND_COLOR[bar.band!]} height={6} />}
       </View>
       <Text style={styles.microVal} numberOfLines={1}>
-        {bar.fraction == null ? amountLabel(bar.amount, bar.unit) : `${Math.round(bar.fraction * 100)}%`}
+        {bar.fraction == null ? amountLabel(bar.amount, bar.unit) : `${Math.round(bar.fraction * 100)}%`}{bar.fromSupplements > 0 ? ' +supp' : ''}
       </Text>
     </View>
   );
@@ -102,7 +106,25 @@ export function NutritionCard({
   const [tab, setTab] = useState<'vitamin' | 'mineral'>('vitamin');
   const [all, setAll] = useState(false);
   const m = dayMacros(today.meals, getDish);
-  const micros = dayMicros(today.meals, getDish, researchNutrients, sex === 'female' ? 'adult_female' : 'adult_male');
+  const { supplements } = useStore();
+  const { micros: personal } = useTargets();
+  const todays = supplements.filter((x) => x.dateKey === dayKey());
+  const { totals } = useMemo(
+    () => supplementTotals(todays.filter((x) => x.nutrientId && x.dose != null && x.unit).map((x) => ({ nutrientId: x.nutrientId as string, amount: x.dose as number, unit: x.unit as string })), researchNutrients),
+    [todays],
+  );
+  // Personal targets once the sex is known; before that the adult default stays, as it always did.
+  const targets = featureFlags.personalTargets && sex ? Object.fromEntries(personal.map((p) => [p.id, p.value])) : undefined;
+  const micros = dayMicros(today.meals, getDish, researchNutrients, sex === 'female' ? 'adult_female' : 'adult_male', { supplements: featureFlags.supplementLog ? totals : {}, targets });
+  const warnings = featureFlags.supplementLog
+    ? Object.entries(totals).flatMap(([id, sup]) => {
+        const nn = researchNutrients.find((x) => x.id === id);
+        const bar = micros.find((b) => b.id === id);
+        if (!nn || !bar) return [];
+        const st = limitStatus(nn, bar.amount - sup, sup);
+        return st.level === 'near' || st.level === 'over' ? [{ name: bar.label, st, unit: nn.unit }] : [];
+      })
+    : [];
   const loggedDishes = today.meals.some((x) => x.dishId && getDish(x.dishId));
   const shown = micros.filter((b) => b.kind === tab);
   const list = all ? shown : shown.slice(0, 6);
@@ -137,6 +159,17 @@ export function NutritionCard({
           <Chip label="Minerals" active={tab === 'mineral'} onPress={() => setTab('mineral')} />
         </View>
       </View>
+      <Text style={styles.note}>Partial estimate: only what the logged FitPlate dishes and your supplements add up to.</Text>
+      {warnings.map((w) => (
+        <Text key={w.name} style={[styles.note, { color: w.st.level === 'over' ? colors.bad : colors.warn }]}>
+          {w.name}: {w.st.level === 'over' ? 'over' : 'close to'} the researched upper limit ({amountLabel(w.st.limit as number, w.unit)}). {LIMIT_NOTE}
+        </Text>
+      ))}
+      {featureFlags.supplementLog ? (
+        <Text style={styles.more} onPress={() => router.push('/supplements')} accessibilityRole="link">
+          Log a supplement
+        </Text>
+      ) : null}
       {!loggedDishes ? <Text style={styles.empty}>Nothing to count yet: these fill as you log FitPlate dishes, because each one carries researched vitamin and mineral estimates. Meals you type in yourself only add calories and protein.</Text> : null}
       {list.length ? (
         list.map((b) => <MicroRow key={b.id} bar={b} />)

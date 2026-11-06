@@ -10,6 +10,8 @@ import item_bhujangasana_cobra_pose from './bhujangasana-cobra-pose.json';
 import item_bodyweight_squat from './bodyweight-squat.json';
 import item_calf_raise from './calf-raise.json';
 import item_cat_cow from './cat-cow.json';
+import item_chair_bench_tricep_dips from './chair-bench-tricep-dips.json';
+import item_chest_press_machine from './chest-press-machine.json';
 import item_dead_bug from './dead-bug.json';
 import item_desk_neck_shoulder_release from './desk-neck-shoulder-release.json';
 import item_elliptical_cross_trainer from './elliptical-cross-trainer.json';
@@ -20,6 +22,7 @@ import item_hamstring_stretch from './hamstring-stretch.json';
 import item_hip_abductor_adductor_machines from './hip-abductor-adductor-machines.json';
 import item_hip_flexor_stretch from './hip-flexor-stretch.json';
 import item_hip_thrust from './hip-thrust.json';
+import item_incline_bench_press from './incline-bench-press.json';
 import item_jumping_jacks from './jumping-jacks.json';
 import item_leg_curl from './leg-curl.json';
 import item_leg_extension_machine from './leg-extension-machine.json';
@@ -37,6 +40,7 @@ import item_surya_namaskar from './surya-namaskar.json';
 import item_thoracic_rotation_chest_opener from './thoracic-rotation-chest-opener.json';
 import item_treadmill from './treadmill.json';
 import item_wall_sit from './wall-sit.json';
+import item_wrist_forearm_stretch from './wrist-forearm-stretch.json';
 
 export const items: Exercise[] = [
   item_adho_mukha_svanasana as unknown as Exercise,
@@ -48,6 +52,8 @@ export const items: Exercise[] = [
   item_bodyweight_squat as unknown as Exercise,
   item_calf_raise as unknown as Exercise,
   item_cat_cow as unknown as Exercise,
+  item_chair_bench_tricep_dips as unknown as Exercise,
+  item_chest_press_machine as unknown as Exercise,
   item_dead_bug as unknown as Exercise,
   item_desk_neck_shoulder_release as unknown as Exercise,
   item_elliptical_cross_trainer as unknown as Exercise,
@@ -58,6 +64,7 @@ export const items: Exercise[] = [
   item_hip_abductor_adductor_machines as unknown as Exercise,
   item_hip_flexor_stretch as unknown as Exercise,
   item_hip_thrust as unknown as Exercise,
+  item_incline_bench_press as unknown as Exercise,
   item_jumping_jacks as unknown as Exercise,
   item_leg_curl as unknown as Exercise,
   item_leg_extension_machine as unknown as Exercise,
@@ -75,4 +82,5 @@ export const items: Exercise[] = [
   item_thoracic_rotation_chest_opener as unknown as Exercise,
   item_treadmill as unknown as Exercise,
   item_wall_sit as unknown as Exercise,
+  item_wrist_forearm_stretch as unknown as Exercise,
 ];
