@@ -6,6 +6,7 @@ import { getDish, researchNutrients } from '../data/research';
 import { featureFlags } from '../config/featureFlags';
 import { dayKey, useStore, type DayLog } from '../lib/store';
 import { useTargets } from '../lib/useTargets';
+import { DOCTOR_LINE } from '../services/healthLimits';
 import { LIMIT_NOTE, limitStatus, supplementTotals } from '../services/supplements';
 import { amountLabel, band, dayMacros, dayMicros, type Band, type MicroBar } from '../services/dayNutrition';
 import { colors, radius } from '../theme';
@@ -81,7 +82,7 @@ function MicroRow({ bar }: { bar: MicroBar }) {
         {bar.fraction == null ? null : <Bar progress={bar.fraction} color={BAND_COLOR[bar.band!]} height={6} />}
       </View>
       <Text style={styles.microVal} numberOfLines={1}>
-        {bar.fraction == null ? amountLabel(bar.amount, bar.unit) : `${Math.round(bar.fraction * 100)}%`}{bar.fromSupplements > 0 ? ' +supp' : ''}
+        {bar.fraction == null ? amountLabel(bar.amount, bar.unit) : `${Math.round(bar.fraction * 100)}%`}{bar.fromSupplements > 0 ? ' +supp' : ''}{bar.isLimit ? ' of limit' : ''}
       </Text>
     </View>
   );
@@ -107,7 +108,7 @@ export function NutritionCard({
   const [all, setAll] = useState(false);
   const m = dayMacros(today.meals, getDish);
   const { supplements } = useStore();
-  const { micros: personal } = useTargets();
+  const { micros: personal, health, sodium } = useTargets();
   const todays = supplements.filter((x) => x.dateKey === dayKey());
   const { totals } = useMemo(
     () => supplementTotals(todays.filter((x) => x.nutrientId && x.dose != null && x.unit).map((x) => ({ nutrientId: x.nutrientId as string, amount: x.dose as number, unit: x.unit as string })), researchNutrients),
@@ -115,7 +116,7 @@ export function NutritionCard({
   );
   // Personal targets once the sex is known; before that the adult default stays, as it always did.
   const targets = featureFlags.personalTargets && sex ? Object.fromEntries(personal.map((p) => [p.id, p.value])) : undefined;
-  const micros = dayMicros(today.meals, getDish, researchNutrients, sex === 'female' ? 'adult_female' : 'adult_male', { supplements: featureFlags.supplementLog ? totals : {}, targets });
+  const micros = dayMicros(today.meals, getDish, researchNutrients, sex === 'female' ? 'adult_female' : 'adult_male', { supplements: featureFlags.supplementLog ? totals : {}, targets, limits: sodium ? { sodium: sodium.mg } : undefined });
   const warnings = featureFlags.supplementLog
     ? Object.entries(totals).flatMap(([id, sup]) => {
         const nn = researchNutrients.find((x) => x.id === id);
@@ -159,12 +160,22 @@ export function NutritionCard({
           <Chip label="Minerals" active={tab === 'mineral'} onPress={() => setTab('mineral')} />
         </View>
       </View>
+      {health.needsDoctor || sodium ? (
+        <Text style={[styles.note, { color: colors.warn }]}>
+          {health.needsDoctor ? `${DOCTOR_LINE}. ` : ''}{sodium ? `Sodium is shown against a ${sodium.mg} mg limit (${sodium.source === 'doctor' ? 'the one your doctor gave' : `from the research for ${health.sodium?.from.join(', ')}`}).` : ''}
+        </Text>
+      ) : null}
       <Text style={styles.note}>Partial estimate: only what the logged FitPlate dishes and your supplements add up to.</Text>
       {warnings.map((w) => (
         <Text key={w.name} style={[styles.note, { color: w.st.level === 'over' ? colors.bad : colors.warn }]}>
           {w.name}: {w.st.level === 'over' ? 'over' : 'close to'} the researched upper limit ({amountLabel(w.st.limit as number, w.unit)}). {LIMIT_NOTE}
         </Text>
       ))}
+      {featureFlags.nutritionInsights ? (
+        <Text style={styles.more} onPress={() => router.push('/insights')} accessibilityRole="link">
+          Weekly insights and ideas
+        </Text>
+      ) : null}
       {featureFlags.supplementLog ? (
         <Text style={styles.more} onPress={() => router.push('/supplements')} accessibilityRole="link">
           Log a supplement

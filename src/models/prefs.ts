@@ -30,7 +30,11 @@ export type UserSettings = {
   pantry?: Record<string, PantryItem>;
   /** Cooked dishes put away as leftovers, with a use-by date (Day 14). */
   leftovers?: Leftover[];
+  /** Limits the user's doctor gave (review 2026-11-06). When set they replace the app's number. Private. */
+  doctorLimits?: DoctorLimits;
 };
+
+export type DoctorLimits = { waterMl?: number | null; sodiumMg?: number | null };
 
 /** A cooked dish kept as leftovers. `useByDays` comes from the dish's researched storage note. */
 export type Leftover = {

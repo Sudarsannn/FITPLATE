@@ -4,7 +4,7 @@
   "aliases": [
     "chawal ka atta"
   ],
-  "category": "Packaged (flour)",
+  "category": "Flour",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -15,70 +15,309 @@
         "avg": 65,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-07.md"
+      },
+      {
+        "date": "2026-11-07",
+        "min": 55,
+        "max": 130,
+        "avg": 75,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-07.md"
       }
     ],
     "currentEstimate": {
-      "min": 60,
-      "max": 70,
-      "avg": 65
+      "min": 62,
+      "max": 84,
+      "avg": 73
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-07",
+    "lastObserved": "2026-11-07",
     "stale": false,
     "seasonal": false,
-    "listingCount": 4,
+    "listingCount": 11,
     "platforms": [
-      "StoreKing"
+      "BigBasket",
+      "Blinkit",
+      "Swiggy Instamart",
+      "Zepto"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 1 platform (StoreKing) backs the range"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 6,
-    "max": 7,
-    "avg": 6.5
+    "min": 6.2,
+    "max": 8.4,
+    "avg": 7.3
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 366,
+      "source": "USDA FDC: USDA FDC 169714 'Rice flour, white, unenriched' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "proteinG": {
+      "value": 6,
+      "source": "USDA FDC: USDA FDC 169714 'Rice flour, white, unenriched' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "carbsG": {
+      "value": 80.1,
+      "source": "USDA FDC: USDA FDC 169714 'Rice flour, white, unenriched' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fatG": {
+      "value": 1.4,
+      "source": "USDA FDC: USDA FDC 169714 'Rice flour, white, unenriched' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 2.4,
+      "source": "USDA FDC: USDA FDC 169714 'Rice flour, white, unenriched' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sodiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "ironMg": {
+      "value": 0.22,
+      "source": "USDA FDC: USDA FDC 169714 'Rice flour, white, unenriched' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": 76,
+      "source": "USDA FDC: USDA FDC 169714 'Rice flour, white, unenriched' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "magnesiumMg": {
+      "value": 35,
+      "source": "USDA FDC: USDA FDC 169714 'Rice flour, white, unenriched' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": 4,
+      "source": "USDA FDC: USDA FDC 169714 'Rice flour, white, unenriched' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 169714 'Rice flour, white, unenriched' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": 98,
+      "source": "USDA FDC: USDA FDC 169714 'Rice flour, white, unenriched' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": 0.13,
+      "source": "USDA FDC: USDA FDC 169714 'Rice flour, white, unenriched' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": 0.436,
+      "source": "USDA FDC: USDA FDC 169714 'Rice flour, white, unenriched' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 169714 'Rice flour, white, unenriched' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    }
+  },
   "macrosPer100Estimate": {
-    "kcal": 366,
-    "proteinG": 6,
+    "kcal": 362.5,
+    "proteinG": 6.5,
     "carbsG": 80.1,
     "fatG": 1.4,
     "fibreG": 2.4
   },
-  "storage": "Airtight jar in a cool, dry cupboard for 2–3 months after opening; in the fridge for up to 6 months in humid weather.",
-  "looksLike": "A very fine, bright-white, slightly gritty flour made from milled raw white rice. It has almost no smell.",
-  "howToPick": null,
-  "shelfLife": "About 6 months unopened (check pack); 2–3 months after opening.",
+  "storage": "Airtight container in a cool, dry place; in monsoon, refrigerate.",
+  "looksLike": "A very fine, soft, bright white powder from raw milled rice; it feels dry and slightly squeaky between the fingers.",
+  "howToPick": "Bright white, fine, free of lumps and with no sour or musty smell; check the packing date.",
+  "shelfLife": "About 3 to 4 months sealed (general guidance, not taken from a source in this run); it can turn rancid or get weevils sooner in humid months.",
   "substitutes": [
     "Cornflour (cornstarch)",
     "Fine semolina (sooji)",
-    "Leave it out"
+    "Leave it out",
+    "Fine semolina (rava)",
+    "Skip it"
   ],
-  "vendorListings": [],
+  "vendorListings": [
+    {
+      "vendor": "blinkit",
+      "product": "Whole Farm Rice Flour",
+      "pack": "500 g",
+      "priceMinInr": 30,
+      "priceMaxInr": 30,
+      "observedOn": "2026-11-07"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Pansari Rice Flour",
+      "pack": "500 g",
+      "priceMinInr": 55,
+      "priceMaxInr": 55,
+      "observedOn": "2026-11-07"
+    },
+    {
+      "vendor": "instamart",
+      "product": "Supreme Harvest Rice Flour",
+      "pack": "500 g",
+      "priceMinInr": 34,
+      "priceMaxInr": 34,
+      "observedOn": "2026-11-07"
+    },
+    {
+      "vendor": "instamart",
+      "product": "Manna Rice Flour",
+      "pack": "500 g",
+      "priceMinInr": 56,
+      "priceMaxInr": 56,
+      "observedOn": "2026-11-07"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Bhagyalakshmi Rice Flour",
+      "pack": "500 g",
+      "priceMinInr": 34,
+      "priceMaxInr": 34,
+      "observedOn": "2026-11-07"
+    }
+  ],
   "usedIn": [
     {
       "dishNumber": 20,
       "quantity": 3,
       "unit": "g",
-      "raw": "3 g (1 tsp, in the besan batter)"
+      "raw": "3 g rice flour per serving (about 1 tsp, in the vada batter)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-07",
       "file": "FitPlate_Ingredients_2026-10-07.md"
+    },
+    {
+      "date": "2026-11-07",
+      "file": "FitPlate_Ingredients_2026-11-07.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "vendorListings": "newest sighting per vendor+product+pack",
@@ -86,5 +325,8 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 56.0–118.2 was wider than 30% of avg 73.0; narrowed to ±15%."
+  ]
 }

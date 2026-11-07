@@ -9,7 +9,9 @@ import { featureFlags } from '../config/featureFlags';
 import { select } from '../lib/haptics';
 import { setWaterReminders } from '../lib/reminders';
 import { addDays, dayKey, useStore } from '../lib/store';
-import { glassesToMl, litres, PRESETS, targetGlasses, waterHistory, waterStreak } from '../services/water';
+import { DOCTOR_LINE } from '../services/healthLimits';
+import { useTargets } from '../lib/useTargets';
+import { glassesToMl, litres, PRESETS, waterHistory, waterStreak } from '../services/water';
 import { waterTarget } from '../services/targets';
 import { colors, radius, type } from '../theme';
 
@@ -19,8 +21,10 @@ const dayLetter = (key: string) => ['S', 'M', 'T', 'W', 'T', 'F', 'S'][new Date(
 export default function WaterScreen() {
   const { days, today, addWater, settings, updateSettings } = useStore();
   const [now] = useState(() => new Date());
-  const target = targetGlasses();
+  const { health, water } = useTargets();
+  const target = water.glasses;
   const info = waterTarget();
+  const caution = health.waterCaution;
   const keysNewestFirst = useMemo(() => Array.from({ length: 30 }, (_, i) => dayKey(addDays(now, -i))), [now]);
   const week = useMemo(() => waterHistory(days, keysNewestFirst.slice(0, 7).reverse(), target), [days, keysNewestFirst, target]);
   const streak = useMemo(() => waterStreak(days, keysNewestFirst, target), [days, keysNewestFirst, target]);
@@ -36,17 +40,24 @@ export default function WaterScreen() {
         <FadeIn i={0}>
           <Glass>
             <Text style={[type.h1, { color: colors.text }]}>
-              {today.water} of {target} glasses
+              {today.water} {caution ? 'glasses today' : `of ${target} glasses`}
             </Text>
             <Text style={[type.small, { color: colors.muted }]}>
-              {litres(today.water)} of {litres(target)} today ({glassesToMl(today.water)} ml)
+              {caution && water.source === 'general' ? `${litres(today.water)} today (${glassesToMl(today.water)} ml). A general guide is about ${target} glasses.` : `${litres(today.water)} of ${litres(target)} today (${glassesToMl(today.water)} ml)`}
             </Text>
             <View style={styles.track} accessibilityRole="progressbar" accessibilityValue={{ now: Math.round(pct * 100), min: 0, max: 100 }}>
               <View style={[styles.fill, { width: `${pct * 100}%` }]} />
             </View>
-            <Text style={{ color: today.water >= target ? colors.accent : colors.muted, marginTop: 6, fontWeight: '700' }}>
-              {today.water >= target ? 'Target met. Nice.' : `${target - today.water} more to go`}
-            </Text>
+            {caution && water.source === 'general' ? (
+              <Text style={{ color: colors.warn, marginTop: 6, fontWeight: '700' }}>
+                {DOCTOR_LINE}. With {health.names.join(', ')} how much to drink is your doctor&apos;s call. Enter their number on your Profile if you have one.
+              </Text>
+            ) : (
+              <Text style={{ color: today.water >= target ? colors.accent : colors.muted, marginTop: 6, fontWeight: '700' }}>
+                {water.source === 'doctor' ? `${DOCTOR_LINE}: your doctor's limit is ${litres(target)}. ` : ''}
+                {today.water >= target ? 'Target met.' : `${target - today.water} more to go`}
+              </Text>
+            )}
             <View style={styles.presets}>
               {PRESETS.map((p) => (
                 <PressableScale
@@ -72,6 +83,7 @@ export default function WaterScreen() {
           </Glass>
         </FadeIn>
 
+        {caution ? null : (
         <FadeIn i={1}>
           <Glass style={{ marginTop: 14 }}>
             <Text style={{ color: colors.text, fontWeight: '800' }}>
@@ -91,6 +103,7 @@ export default function WaterScreen() {
             </View>
           </Glass>
         </FadeIn>
+        )}
 
         <FadeIn i={2}>
           <Glass style={{ marginTop: 14 }}>
@@ -98,6 +111,7 @@ export default function WaterScreen() {
               <View style={{ flex: 1 }}>
                 <Text style={{ color: colors.text, fontWeight: '800' }}>Water reminders</Text>
                 <Text style={[type.small, { color: colors.muted }]}>Weekdays, five nudges from 8:30 am to 6 pm. Quiet from 9 pm to 8 am. On the phone app only.</Text>
+                {caution ? <Text style={[type.small, { color: colors.warn }]}>Off by default for you. {DOCTOR_LINE} before turning on water reminders.</Text> : null}
               </View>
               <Switch
                 value={remindersOn}

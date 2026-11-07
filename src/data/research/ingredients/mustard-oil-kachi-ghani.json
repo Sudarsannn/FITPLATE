@@ -4,7 +4,7 @@
   "aliases": [
     "sarson ka tel"
   ],
-  "category": "Oil/fat",
+  "category": "Oil",
   "standardUnit": "l",
   "price": {
     "priceHistory": [
@@ -15,36 +15,44 @@
         "avg": 205,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-15.md"
+      },
+      {
+        "date": "2026-11-07",
+        "min": 135,
+        "max": 190,
+        "avg": 160,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-07.md"
       }
     ],
     "currentEstimate": {
-      "min": 180,
-      "max": 235,
-      "avg": 205
+      "min": 150,
+      "max": 205,
+      "avg": 175
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-15",
+    "lastObserved": "2026-11-07",
     "stale": false,
     "seasonal": false,
-    "listingCount": 6,
+    "listingCount": 8,
     "platforms": [
       "BigBasket",
-      "StoreKing"
+      "Swiggy Instamart"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 18,
-    "max": 23.5,
-    "avg": 20.5
+    "min": 15,
+    "max": 20.5,
+    "avg": 17.5
   },
   "seasonal": false,
   "nutritionPer100g": {
-    "basis": "100ml",
+    "basis": "100g",
     "energyKcal": {
       "value": 813,
       "source": "USDA FDC: USDA FDC 172337 Oil, mustard (SR Legacy), per 100 g via getfoodfacts.com, HealthifyMe and a USDA-citing listing; converted to per 100 ml at 0.92 g/ml (FitPlate dish-file density); zero by composition: protein_g, carbohydrate_g, sugars_g, fibre_g, added_sugars_g, cholesterol_mg, vitamin_b12_ug",
@@ -52,18 +60,18 @@
     },
     "proteinG": {
       "value": 0,
-      "source": "USDA FDC: USDA FDC 172337 Oil, mustard (SR Legacy), per 100 g via getfoodfacts.com, HealthifyMe and a USDA-citing listing; converted to per 100 ml at 0.92 g/ml (FitPlate dish-file density); zero by composition: protein_g, carbohydrate_g, sugars_g, fibre_g, added_sugars_g, cholesterol_mg, vitamin_b12_ug",
-      "confidence": "Medium"
+      "source": "USDA FDC: USDA FDC 172337 'Oil, mustard' (SR Legacy) as shown on getfoodfacts and foodstruct; fat 100 g from 'is 100% fat' on a summary page; zero by composition: protein_g, carbohydrate_g, sugars_g, fibre_g, cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
     },
     "carbsG": {
       "value": 0,
-      "source": "USDA FDC: USDA FDC 172337 Oil, mustard (SR Legacy), per 100 g via getfoodfacts.com, HealthifyMe and a USDA-citing listing; converted to per 100 ml at 0.92 g/ml (FitPlate dish-file density); zero by composition: protein_g, carbohydrate_g, sugars_g, fibre_g, added_sugars_g, cholesterol_mg, vitamin_b12_ug",
-      "confidence": "Medium"
+      "source": "USDA FDC: USDA FDC 172337 'Oil, mustard' (SR Legacy) as shown on getfoodfacts and foodstruct; fat 100 g from 'is 100% fat' on a summary page; zero by composition: protein_g, carbohydrate_g, sugars_g, fibre_g, cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
     },
     "sugarsG": {
       "value": 0,
-      "source": "USDA FDC: USDA FDC 172337 Oil, mustard (SR Legacy), per 100 g via getfoodfacts.com, HealthifyMe and a USDA-citing listing; converted to per 100 ml at 0.92 g/ml (FitPlate dish-file density); zero by composition: protein_g, carbohydrate_g, sugars_g, fibre_g, added_sugars_g, cholesterol_mg, vitamin_b12_ug",
-      "confidence": "Medium"
+      "source": "USDA FDC: USDA FDC 172337 'Oil, mustard' (SR Legacy) as shown on getfoodfacts and foodstruct; fat 100 g from 'is 100% fat' on a summary page; zero by composition: protein_g, carbohydrate_g, sugars_g, fibre_g, cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
     },
     "fatG": {
       "value": 92,
@@ -77,8 +85,8 @@
     },
     "fibreG": {
       "value": 0,
-      "source": "USDA FDC: USDA FDC 172337 Oil, mustard (SR Legacy), per 100 g via getfoodfacts.com, HealthifyMe and a USDA-citing listing; converted to per 100 ml at 0.92 g/ml (FitPlate dish-file density); zero by composition: protein_g, carbohydrate_g, sugars_g, fibre_g, added_sugars_g, cholesterol_mg, vitamin_b12_ug",
-      "confidence": "Medium"
+      "source": "USDA FDC: USDA FDC 172337 'Oil, mustard' (SR Legacy) as shown on getfoodfacts and foodstruct; fat 100 g from 'is 100% fat' on a summary page; zero by composition: protein_g, carbohydrate_g, sugars_g, fibre_g, cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
     },
     "sodiumMg": {
       "value": null,
@@ -132,8 +140,8 @@
     },
     "cholesterolMg": {
       "value": 0,
-      "source": "USDA FDC: USDA FDC 172337 Oil, mustard (SR Legacy), per 100 g via getfoodfacts.com, HealthifyMe and a USDA-citing listing; converted to per 100 ml at 0.92 g/ml (FitPlate dish-file density); zero by composition: protein_g, carbohydrate_g, sugars_g, fibre_g, added_sugars_g, cholesterol_mg, vitamin_b12_ug",
-      "confidence": "Medium"
+      "source": "USDA FDC: USDA FDC 172337 'Oil, mustard' (SR Legacy) as shown on getfoodfacts and foodstruct; fat 100 g from 'is 100% fat' on a summary page; zero by composition: protein_g, carbohydrate_g, sugars_g, fibre_g, cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
     },
     "transFatG": {
       "value": null,
@@ -222,8 +230,8 @@
     },
     "vitaminB12Ug": {
       "value": 0,
-      "source": "USDA FDC: USDA FDC 172337 Oil, mustard (SR Legacy), per 100 g via getfoodfacts.com, HealthifyMe and a USDA-citing listing; converted to per 100 ml at 0.92 g/ml (FitPlate dish-file density); zero by composition: protein_g, carbohydrate_g, sugars_g, fibre_g, added_sugars_g, cholesterol_mg, vitamin_b12_ug",
-      "confidence": "Medium"
+      "source": "USDA FDC: USDA FDC 172337 'Oil, mustard' (SR Legacy) as shown on getfoodfacts and foodstruct; fat 100 g from 'is 100% fat' on a summary page; zero by composition: protein_g, carbohydrate_g, sugars_g, fibre_g, cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
     }
   },
   "macrosPer100Estimate": {
@@ -233,81 +241,49 @@
     "fatG": 100,
     "fibreG": null
   },
-  "storage": "Room temperature, cap closed, away from the stove, sunlight and moisture. Pouches should be emptied into a clean, dry, closed bottle once opened. Use a dry spoon. A rancid or paint-like smell means it has gone off.",
-  "looksLike": "A clear, golden-yellow to amber oil with a sharp, pungent smell that stings the nose. It is darker and far stronger-smelling than refined sunflower or groundnut oil.",
-  "howToPick": null,
-  "shelfLife": "Check the pack; edible oils usually carry a best-before date of several months from packing. Use within a few months of opening.",
+  "storage": "Keep in a cool, dark place in a closed container; no refrigeration needed. Use within a few months of opening for best flavour.",
+  "looksLike": "A clear golden-yellow to amber oil with a sharp, pungent smell, darker and stronger than refined sunflower or groundnut oil.",
+  "howToPick": "Look for \"kachi ghani\" and \"pure\" on the label with an FSSAI licence number; a sharp, pungent smell and clear golden colour are normal. Blended mustard oil can no longer be sold in India since 8 June 2021 (FSSAI, https://mail.fssai.gov.in/upload/media/FSSAI_new_mustard_Express_28_06_2021.pdf), so a \"blended\" label is a red flag.",
+  "shelfLife": "Usually about a year from packing on the label; check the best-before date (general guidance, not from a source in this run).",
   "substitutes": [
     "Refined groundnut or sunflower oil",
     "Sesame (gingelly) oil",
-    "Ghee"
+    "Ghee",
+    "Refined sunflower or groundnut oil",
+    "Cold-pressed groundnut or sesame oil",
+    "Ghee or butter"
   ],
-  "vendorListings": [],
+  "vendorListings": [
+    {
+      "vendor": "instamart",
+      "product": "Kachi Ghani Mustard Oil price list entry",
+      "pack": "1 L",
+      "priceMinInr": 168,
+      "priceMaxInr": 168,
+      "observedOn": "2026-11-07"
+    }
+  ],
   "usedIn": [
     {
       "dishNumber": 18,
       "quantity": 5,
       "unit": "ml",
-      "raw": "5 ml (1 tsp; \"mustard oil or vegetable oil\")"
-    },
-    {
-      "dishNumber": 23,
-      "quantity": 10,
-      "unit": "ml",
-      "raw": "10 ml (2 tsp)"
-    },
-    {
-      "dishNumber": 38,
-      "quantity": 10,
-      "unit": "ml",
-      "raw": "10 ml (about 9 g; 2 tsp; \"or any cooking oil\")"
-    },
-    {
-      "dishNumber": 44,
-      "quantity": 15,
-      "unit": "ml",
-      "raw": "15 ml (about 13.6 g; 1 tbsp)"
-    },
-    {
-      "dishNumber": 45,
-      "quantity": 10,
-      "unit": "ml",
-      "raw": "10 ml (about 9 g; 2 tsp; \"or any cooking oil\")"
-    },
-    {
-      "dishNumber": 53,
-      "quantity": 10,
-      "unit": "ml",
-      "raw": "10 ml (about 9 g; 2 tsp; \"or any cooking oil\")"
-    },
-    {
-      "dishNumber": 32,
-      "quantity": 10,
-      "unit": "ml",
-      "raw": "10 ml sunflower oil \"or mustard oil / groundnut oil\""
-    },
-    {
-      "dishNumber": 37,
-      "quantity": 10,
-      "unit": "ml",
-      "raw": "10 ml sunflower oil \"or groundnut / mustard oil\""
-    },
-    {
-      "dishNumber": 59,
-      "quantity": 5,
-      "unit": "ml",
-      "raw": "5 ml \"groundnut, sunflower or mustard oil\", counted as groundnut/sunflower"
+      "raw": "5 ml per serving (about 1 tsp, half in the marinade and half for brushing; optional, vegetable oil can replace it)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-15",
       "file": "FitPlate_Ingredients_2026-10-15.md"
+    },
+    {
+      "date": "2026-11-07",
+      "file": "FitPlate_Ingredients_2026-11-07.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -318,7 +294,11 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 180.0–250.0 was wider than 30% of avg 205.0; narrowed to ±15%.",
-    "range clamped to observed prices: 175–235 → 180–235"
+    "Range 151.7–212.2 was wider than 30% of avg 176.7; narrowed to ±15%.",
+    "nutritionPer100g.energyKcal: Conflict (2026-10-15: 813 vs 2026-11-07: 884); both cite the official table, kept the previous value.",
+    "nutritionPer100g.fatG: Conflict (2026-10-15: 92 vs 2026-11-07: 100); both cite the official table, kept the previous value.",
+    "nutritionPer100g.saturatedFatG: Conflict (2026-10-15: 10.7 vs 2026-11-07: 11.6); both cite the official table, kept the previous value.",
+    "nutritionPer100g.mufaG: Conflict (2026-10-15: 54.5 vs 2026-11-07: 59.2); both cite the official table, kept the previous value.",
+    "nutritionPer100g.pufaG: Conflict (2026-10-15: 19.5 vs 2026-11-07: 21.2); both cite the official table, kept the previous value."
   ]
 }

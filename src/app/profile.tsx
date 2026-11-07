@@ -1,7 +1,7 @@
 import { Ionicons } from '@expo/vector-icons';
 import { router } from 'expo-router';
 import { useState } from 'react';
-import { Alert, Image, Pressable, ScrollView, StyleSheet, Switch, Text, View } from 'react-native';
+import { Alert, Image, Pressable, ScrollView, StyleSheet, Switch, Text, TextInput, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { featureFlags } from '../config/featureFlags';
@@ -13,6 +13,7 @@ import { setReminders } from '../lib/reminders';
 import { useStore } from '../lib/store';
 import { useTargets } from '../lib/useTargets';
 import { amountLabel } from '../services/dayNutrition';
+import { DOCTOR_LINE } from '../services/healthLimits';
 import { showBeginnerTips } from '../services/kitchen';
 import { syncStatusLine } from '../services/userSession';
 import { IconBadge } from '../components/Icon';
@@ -23,7 +24,11 @@ import { colors, type } from '../theme';
 export function ProfileScreen({ asTab = false }: { asTab?: boolean }) {
   const { privateFlags, setPrivateFlag, profile, updateProfile, settings, updateSettings, sex, body, equipmentOwned, signOut, deleteMyData, resetDemo, user, favourites, cloud, syncError } = useStore();
   const [confirmDelete, setConfirmDelete] = useState(false);
-  const { goal: targets, energy, micros } = useTargets();
+  const { goal: targets, energy, micros, health, sodium } = useTargets();
+  const saveLimit = (key: 'waterMl' | 'sodiumMg', text: string) => {
+    const v = Number(text.replace(/[^0-9.]/g, ''));
+    updateSettings({ doctorLimits: { ...settings.doctorLimits, [key]: v > 0 ? Math.round(v) : null } });
+  };
   const canDelete = Boolean(user && !user.guest && cloud);
   return (
     <SafeAreaView edges={asTab ? ['top'] : undefined} style={{ flex: 1, backgroundColor: colors.bg }}>
@@ -100,6 +105,44 @@ export function ProfileScreen({ asTab = false }: { asTab?: boolean }) {
                   {'\n'}From ICMR-NIN figures as the research found them (some not yet confirmed from the source).
                 </Text>
               ) : null}
+              {health.needsDoctor ? (
+                <Text style={[type.small, { color: colors.warn, marginTop: 8 }]}>
+                  {DOCTOR_LINE}. For {health.names.join(', ')} the research leaves limits to your doctor, so FitPlate pushes no higher water target.
+                </Text>
+              ) : null}
+              {sodium ? (
+                <Text style={[type.small, { color: colors.muted, marginTop: 6 }]}>
+                  Sodium limit {sodium.mg} mg a day ({sodium.source === 'doctor' ? 'from your doctor' : `researched for ${health.sodium?.from.join(', ')}`}).
+                </Text>
+              ) : null}
+              <Text style={[styles.label, { marginTop: 12 }]}>Your doctor&apos;s limits (optional)</Text>
+              <Text style={[type.small, { color: colors.muted }]}>If your doctor gave you a number, enter it. It replaces the app&apos;s number. Leave blank to use the app&apos;s.</Text>
+              <View style={styles.flagRow}>
+                <Text style={{ color: colors.text, flex: 1 }}>Water (ml a day)</Text>
+                <TextInput
+                  key={`w${settings.doctorLimits?.waterMl ?? ''}`}
+                  defaultValue={settings.doctorLimits?.waterMl ? String(settings.doctorLimits.waterMl) : ''}
+                  onEndEditing={(e) => saveLimit('waterMl', e.nativeEvent.text)}
+                  keyboardType="number-pad"
+                  placeholder="none"
+                  placeholderTextColor={colors.faint}
+                  style={styles.limitInput}
+                  accessibilityLabel="Doctor's water limit in millilitres"
+                />
+              </View>
+              <View style={styles.flagRow}>
+                <Text style={{ color: colors.text, flex: 1 }}>Sodium (mg a day)</Text>
+                <TextInput
+                  key={`s${settings.doctorLimits?.sodiumMg ?? ''}`}
+                  defaultValue={settings.doctorLimits?.sodiumMg ? String(settings.doctorLimits.sodiumMg) : ''}
+                  onEndEditing={(e) => saveLimit('sodiumMg', e.nativeEvent.text)}
+                  keyboardType="number-pad"
+                  placeholder="none"
+                  placeholderTextColor={colors.faint}
+                  style={styles.limitInput}
+                  accessibilityLabel="Doctor's sodium limit in milligrams"
+                />
+              </View>
               <View style={styles.flagRow}>
                 <Text style={{ color: colors.text, flex: 1 }}>I am pregnant</Text>
                 <Switch value={Boolean(privateFlags.pregnant)} onValueChange={(v) => setPrivateFlag('pregnant', v)} trackColor={{ true: colors.accent, false: '#333' }} thumbColor="#fff" accessibilityLabel="I am pregnant" />
@@ -265,6 +308,7 @@ export default function Profile() {
 }
 
 const styles = StyleSheet.create({
+  limitInput: { width: 100, minHeight: 44, borderRadius: 10, backgroundColor: colors.cardAlt, color: colors.text, paddingHorizontal: 10, textAlign: 'right' },
   flagRow: { flexDirection: 'row', alignItems: 'center', minHeight: 44, marginTop: 6 },
   answer: { flexDirection: 'row', alignItems: 'center', gap: 10, minHeight: 54, borderTopWidth: 1, borderTopColor: colors.border },
   answerTitle: { color: colors.text, fontWeight: '800', fontSize: 14.5 },

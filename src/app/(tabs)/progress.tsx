@@ -9,7 +9,7 @@ import { DishRow } from '../../components/DishCard';
 import { SavingsCard } from '../../components/SavingsCard';
 import { IconBadge, type IconName } from '../../components/Icon';
 import { Bar, CountUp, FadeIn, Glass, SectionHeader } from '../../components/ui';
-import { addDays, allowedDishes, dayKey, dayTotals, FIBRE_TARGET, useStore, WATER_TARGET } from '../../lib/store';
+import { addDays, allowedDishes, dayKey, dayTotals, FIBRE_TARGET, useStore } from '../../lib/store';
 import { useTargets } from '../../lib/useTargets';
 import { colors, radius, type } from '../../theme';
 
@@ -43,7 +43,7 @@ type Ctx = { cooked: number; streak: number; saved: number; proteinDays: number;
 // `embedded` is set by the Track tab, which draws its own top inset and switcher.
 export function ProgressScreen({ embedded = false }: { embedded?: boolean }) {
   const { days, profile, moneySaved, streak } = useStore();
-  const { goal } = useTargets();
+  const { goal, water, health } = useTargets();
   const week = Array.from({ length: 7 }, (_, i) => addDays(new Date(), i - 6));
   const logs = week.map((d) => days[dayKey(d)]);
   const totals = logs.map((l) => (l ? dayTotals(l) : { kcalIn: 0, kcalOut: 0, protein: 0, fibre: 0 }));
@@ -58,7 +58,7 @@ export function ProgressScreen({ embedded = false }: { embedded?: boolean }) {
     streak,
     saved: moneySaved,
     proteinDays: Object.values(days).filter((d) => dayTotals(d).protein >= goal.protein * 0.9).length,
-    waterDays: Object.values(days).filter((d) => d.water >= WATER_TARGET).length,
+    waterDays: health.waterCaution ? 0 : Object.values(days).filter((d) => d.water >= water.glasses).length,
     workouts: Object.values(days).reduce((s, d) => s + d.exercise.length, 0),
   };
   const researchPool = allowedDishes(profile);

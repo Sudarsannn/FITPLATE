@@ -43,6 +43,8 @@ export const featureFlags = {
   fridgeRescue: true,
   /** Innovation (Day 15): plain-words search such as "15 min no onion veg" on the Cook tab. */
   plainSearch: true,
+  /** Day 19: weekly nutrition insights with top gaps, tasty-first ideas and absorption tips. ON. */
+  nutritionInsights: true,
   /** Day 18: supplement logging with upper-limit warnings, counted in the vitamin and mineral bars. ON. */
   supplementLog: true,
   /** Day 17: water tracker screen, streak and workday reminders. ON. */

@@ -17,7 +17,7 @@ import { DeskBreakCard } from '../../components/DeskBreakCard';
 import { LateNightCard } from '../../components/LateNightCard';
 import { LeftoversCard } from '../../components/LeftoversCard';
 import { StreakButton } from '../../components/StreakButton';
-import { addDays, dayKey, dayTotals, FIBRE_TARGET, recommend, useStore, WATER_TARGET } from '../../lib/store';
+import { addDays, dayKey, dayTotals, FIBRE_TARGET, recommend, useStore } from '../../lib/store';
 import { useTargets } from '../../lib/useTargets';
 import { BALANCE_LABEL } from '../../services/dishDetail';
 import { dayGroup } from '../../services/meals';
@@ -72,7 +72,7 @@ function MiniStat({ icon, color, label, value }: { icon: keyof typeof Ionicons.g
 export default function Today() {
   const s = useStore();
   const { profile, today, moneySaved, user, sex } = s;
-  const { goal } = useTargets();
+  const { goal, water, health } = useTargets();
   const t = dayTotals(today);
   const left = goal.kcal - t.kcalIn + t.kcalOut;
   const picks = recommend(profile).slice(0, 6);
@@ -208,7 +208,7 @@ export default function Today() {
                 <PressableScale onPress={() => router.push('/water')} accessibilityLabel="Open the water tracker" scaleTo={0.98}>
                   <Text style={[type.h2, { color: colors.text }]}>Water</Text>
                   <Text style={[type.small, { color: colors.muted }]}>
-                    {today.water} of {WATER_TARGET} glasses · tap for history
+                    {today.water} {health.waterCaution && water.source === 'general' ? 'glasses' : `of ${water.glasses} glasses`} · tap for history
                   </Text>
                 </PressableScale>
                 <View style={{ flexDirection: 'row', gap: 8 }}>
@@ -221,7 +221,7 @@ export default function Today() {
                 </View>
               </View>
               <View style={styles.glasses}>
-                {Array.from({ length: WATER_TARGET }).map((_, i) => (
+                {Array.from({ length: water.glasses }).map((_, i) => (
                   <PressableScale
                     key={i}
                     haptic={false}

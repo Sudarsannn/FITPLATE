@@ -2,10 +2,11 @@
   "id": "016-besan-chilla",
   "number": 16,
   "name": "Besan Chilla",
-  "cuisine": null,
+  "cuisine": "North Indian (Rajasthan, Punjab, Uttar Pradesh; also \"besan ka cheela\", \"besan pudla\" in Gujarat, \"tomato omelette\" in Maharashtra)",
   "dietType": "veg",
   "mealType": [
-    "breakfast"
+    "breakfast",
+    "snack"
   ],
   "difficulty": "Beginner",
   "prepMin": 12,
@@ -17,7 +18,7 @@
       "name": "Gram flour (besan)",
       "quantity": 50,
       "unit": "g",
-      "householdMeasure": "½ cup, lightly spooned and levelled (a scant ½ cup)"
+      "householdMeasure": "a scant ½ cup, spooned and levelled"
     },
     {
       "ingredientId": null,
@@ -45,7 +46,7 @@
       "name": "Green chilli (hari mirch)",
       "quantity": 3,
       "unit": "g",
-      "householdMeasure": "½–1 chilli, finely chopped"
+      "householdMeasure": "½-1 chilli, finely chopped"
     },
     {
       "ingredientId": "ginger",
@@ -91,22 +92,21 @@
     },
     {
       "ingredientId": "cooking-oil-refined-sunflower-groundnut",
-      "name": "Groundnut oil (or any neutral cooking oil)",
+      "name": "Groundnut oil (or any neutral oil)",
       "quantity": 10,
       "unit": "ml",
       "householdMeasure": "2 tsp (1 tsp per chilla)"
     }
   ],
   "equipment": [
-    "Flat non-stick tawa or 9–10-inch non-stick frying pan",
+    "Flat non-stick tawa or 9-10-inch non-stick pan",
     "Mixing bowl (a deep steel bowl or large mug works)",
     "Whisk",
-    "Ladle (about ¼-cup / 60 ml)",
-    "Flat spatula (wide and thin is easiest for flipping)",
+    "Ladle (about ¼ cup / 60 ml)",
+    "Flat, thin spatula",
     "Chopping board and knife",
     "Grater for ginger",
-    "Measuring spoons and a measuring cup (normal teaspoons and a 200 ml steel glass are fine stand-ins)",
-    "Small bowl or brush for the oil (a teaspoon works)"
+    "Measuring spoons and cup (normal teaspoons and a 200 ml steel glass are fine stand-ins)"
   ],
   "steps": [
     {
@@ -114,30 +114,33 @@
       "title": "Chop the onion",
       "text": "Peel and finely chop 40 g (½ small) onion.",
       "timerSec": 60,
-      "tip": "Chop very fine. Big pieces make holes and the chilla tears when flipped.",
-      "visualCue": "Tiny, even pieces about the size of a rice grain.",
+      "tip": null,
+      "visualCue": "Tiny, even pieces about the size of a rice grain, roughly ⅓ cup.",
       "cameraCheck": "About ⅓ cup chopped onion on the board",
-      "videoShot": "The knife rocking through the onion."
+      "videoShot": "The knife rocking through the onion.",
+      "watchOut": "Big chunks poke through the batter and the chilla tears when you flip; chop them smaller or leave the onion out."
     },
     {
       "n": 2,
       "title": "Chop the tomato",
-      "text": "Cut ½ small tomato (40 g), scoop out the seeds and juice with a spoon, then finely chop the flesh.",
+      "text": "Halve a small tomato, scoop out seeds and juice with a spoon, finely chop 40 g of flesh.",
       "timerSec": 60,
-      "tip": "Removing the wet seeds keeps the batter from turning watery and the chilla from going soggy.",
-      "visualCue": "Small red cubes, no loose seeds or juice.",
+      "tip": null,
+      "visualCue": "Small red cubes with no loose seeds or juice on the board.",
       "cameraCheck": "About ¼ cup chopped tomato",
-      "videoShot": "The spoon scraping out seeds, then the knife dicing."
+      "videoShot": "The spoon scraping out seeds, then dicing.",
+      "watchOut": "Leaving the seeds in makes the batter watery and the chilla soggy; if the batter turns thin, whisk in 1 tbsp more besan."
     },
     {
       "n": 3,
-      "title": "Chop the chilli and coriander",
-      "text": "Finely chop ½–1 green chilli (3 g) and 1 tbsp (5 g) coriander leaves.",
+      "title": "Chop chilli and coriander",
+      "text": "Finely chop ½-1 green chilli (3 g) and 1 tbsp (5 g) coriander leaves.",
       "timerSec": 60,
       "tip": null,
-      "visualCue": "Fine green flecks in two small heaps",
-      "cameraCheck": "The chilli and coriander side by side",
-      "videoShot": "Coriander being chopped."
+      "visualCue": "Fine green flecks in two small heaps.",
+      "cameraCheck": "Chilli and coriander side by side",
+      "videoShot": "Coriander being chopped.",
+      "watchOut": "Too much chilli makes the whole batch hot; start with ½ chilli, since you cannot take it out later."
     },
     {
       "n": 4,
@@ -145,29 +148,32 @@
       "text": "Peel and grate ½ tsp (3 g) ginger.",
       "timerSec": 30,
       "tip": null,
-      "visualCue": "A small heap of moist, pale pulp",
+      "visualCue": "A small heap of moist, pale pulp and a sharp, fresh smell.",
       "cameraCheck": "½ tsp grated ginger on a spoon",
-      "videoShot": "Ginger rubbed on the fine side of the grater."
+      "videoShot": "Ginger rubbed on the grater.",
+      "watchOut": "Fibrous strings left in the batter catch on the spatula; pick them out or chop the ginger finer."
     },
     {
       "n": 5,
       "title": "Measure the besan",
       "text": "Spoon 50 g (a scant ½ cup) besan into the bowl and level it.",
       "timerSec": 30,
-      "tip": "Spoon the flour into the cup instead of scooping, or you will pack in too much.",
-      "visualCue": "A small mound of pale-yellow flour",
+      "tip": "Spoon the flour into the cup rather than scooping.",
+      "visualCue": "A small level mound of pale-yellow flour.",
       "cameraCheck": "The besan in the bowl",
-      "videoShot": "Besan tipped into the bowl."
+      "videoShot": "Besan tipped into the bowl.",
+      "watchOut": "Scooping with the cup packs in too much flour and the chilla turns thick and doughy; spoon it in instead."
     },
     {
       "n": 6,
       "title": "Add the dry spices",
-      "text": "Add ¼ tsp ajwain (crushed between your palms), ⅛ tsp turmeric, ¼ tsp Kashmiri chilli powder and ¼ tsp salt. Stir with a spoon.",
+      "text": "Add ¼ tsp ajwain (crushed between palms), ⅛ tsp turmeric, ¼ tsp Kashmiri chilli powder and ¼ tsp salt. Stir with a spoon.",
       "timerSec": 30,
       "tip": null,
-      "visualCue": "The flour turns evenly light yellow with red and green-brown specks.",
+      "visualCue": "The flour turns evenly light yellow with red and green-brown specks, and smells of thyme from the ajwain.",
       "cameraCheck": "The spiced dry flour",
-      "videoShot": "Ajwain rubbed between palms and falling into the bowl."
+      "videoShot": "Ajwain rubbed between palms into the bowl.",
+      "watchOut": "Streaks of plain flour mean uneven salt and colour; stir until the colour is even."
     },
     {
       "n": 7,
@@ -175,9 +181,10 @@
       "text": "Pour in about 50 ml (¼ cup) water.",
       "timerSec": 10,
       "tip": null,
-      "visualCue": "A thick, lumpy paste",
+      "visualCue": "A thick, lumpy paste, like soft dough.",
       "cameraCheck": "The paste in the bowl",
-      "videoShot": "Water poured into the flour."
+      "videoShot": "Water poured into the flour.",
+      "watchOut": "Pouring all the water at once makes stubborn lumps; keep half back."
     },
     {
       "n": 8,
@@ -185,19 +192,21 @@
       "text": "Whisk the thick paste hard until smooth.",
       "timerSec": 60,
       "tip": "Whisking while the paste is thick breaks lumps much faster than whisking a thin batter.",
-      "visualCue": "A smooth, thick paste with no dry pockets or lumps.",
+      "visualCue": "A smooth, thick paste, with no dry pockets when you press the whisk to the side of the bowl.",
       "cameraCheck": "The whisk lifted out of the smooth paste",
-      "videoShot": "The whisk beating in fast circles."
+      "videoShot": "The whisk beating in fast circles.",
+      "watchOut": "Small hard lumps that survive give raw, floury bites; press them against the bowl with a spoon and whisk again."
     },
     {
       "n": 9,
       "title": "Thin the batter",
-      "text": "Add the remaining 30–40 ml water a tablespoon at a time, whisking after each, until the batter flows off the spoon in a steady ribbon.",
+      "text": "Add the remaining 30-40 ml water a tablespoon at a time, whisking after each, until the batter flows off the spoon in a steady ribbon.",
       "timerSec": 60,
-      "tip": "Besan varies, so stop adding water as soon as it pours easily. Too thick = raw, doughy centre; too thin = it will not hold together.",
-      "visualCue": "Like thin pancake batter or dosa batter; it coats the back of a spoon and drips off freely.",
+      "tip": null,
+      "visualCue": "Like thin pancake or dosa batter; it coats the back of a spoon and drips off freely.",
       "cameraCheck": "Batter falling from a lifted spoon",
-      "videoShot": "A ribbon of batter falling back into the bowl."
+      "videoShot": "A ribbon of batter falling back into the bowl.",
+      "watchOut": "Too thick gives a raw, doughy centre; too thin tears when flipped. Fix thick with 1 tbsp water, thin with 1 tbsp besan."
     },
     {
       "n": 10,
@@ -205,19 +214,21 @@
       "text": "Stir in the onion, tomato, green chilli, ginger and coriander.",
       "timerSec": 30,
       "tip": null,
-      "visualCue": "Vegetables spread evenly through the yellow batter.",
-      "cameraCheck": "The finished batter with vegetables",
-      "videoShot": "The spoon folding in the vegetables."
+      "visualCue": "Flecks of red, white and green spread evenly through the yellow batter.",
+      "cameraCheck": "The finished batter",
+      "videoShot": "The spoon folding in the vegetables.",
+      "watchOut": "Tomato releases water, so the batter loosens a little; check it still ribbons off the spoon."
     },
     {
       "n": 11,
       "title": "Rest the batter (optional)",
-      "text": "Leave the batter for 5 min while the tawa heats.",
+      "text": "Leave it for 5 min while the tawa heats.",
       "timerSec": 300,
-      "tip": "If it thickens too much after resting, whisk in 1 tsp water.",
+      "tip": null,
       "visualCue": "The batter thickens slightly as the flour soaks up water.",
       "cameraCheck": "The resting batter",
-      "videoShot": "(none needed)"
+      "videoShot": "(none needed)",
+      "watchOut": "Over-thickened batter spreads badly; whisk in 1 tsp water."
     },
     {
       "n": 12,
@@ -225,29 +236,32 @@
       "text": "Put the tawa on medium heat. Add ½ tsp oil and spread it with a spoon or folded kitchen paper.",
       "timerSec": 90,
       "tip": null,
-      "visualCue": "A few drops of water flicked on the tawa sizzle and vanish in 2–3 seconds.",
+      "visualCue": "A few drops of water flicked on the tawa sizzle and vanish within 2-3 seconds.",
       "cameraCheck": "The lightly oiled tawa",
-      "videoShot": "The oil being spread over the tawa."
+      "videoShot": "Oil spread over the tawa.",
+      "watchOut": "A tawa that is too cool makes the chilla stick; too hot, and the batter sets before you can spread it. Water that vanishes at once means lower the heat."
     },
     {
       "n": 13,
       "title": "Pour the first chilla",
-      "text": "Stir the batter once (vegetables sink). Pour half the batter (about one ladle and a half) into the centre of the tawa.",
+      "text": "Stir the batter once (vegetables sink). Pour half the batter (about one and a half ladles) into the centre of the tawa.",
       "timerSec": 10,
       "tip": null,
-      "visualCue": "A round puddle of batter with vegetables visible.",
+      "visualCue": "A round puddle of batter with vegetables visible, and a soft sizzle.",
       "cameraCheck": "The batter on the tawa",
-      "videoShot": "The batter hitting the hot tawa."
+      "videoShot": "Batter hitting the hot tawa.",
+      "watchOut": "Skipping the stir gives a chilla of plain batter and a second one full of vegetables."
     },
     {
       "n": 14,
       "title": "Spread it",
-      "text": "Using the back of the ladle, spread the batter outward in gentle circles to about 7 inches across.",
+      "text": "With the back of the ladle, spread the batter outward in gentle circles to about 7 inches.",
       "timerSec": 20,
-      "tip": "Do not press hard. If the tawa is too hot the batter sticks to the ladle; lower the heat a little.",
-      "visualCue": "An even round, a little thicker than a dosa; no gaps.",
+      "tip": null,
+      "visualCue": "An even round, a little thicker than a dosa, with no gaps.",
       "cameraCheck": "The spread chilla",
-      "videoShot": "The ladle spiralling outwards."
+      "videoShot": "The ladle spiralling outwards.",
+      "watchOut": "Pressing hard tears the batter and it sticks to the ladle; if it drags, lower the heat and spread lighter and quicker."
     },
     {
       "n": 15,
@@ -257,27 +271,30 @@
       "tip": null,
       "visualCue": "The oil sizzles at the edges.",
       "cameraCheck": "Oil bubbling at the rim",
-      "videoShot": "Oil dripping off the spoon around the edge."
+      "videoShot": "Oil dripping around the edge.",
+      "watchOut": "Pools of oil on top make it greasy; use only a few drops."
     },
     {
       "n": 16,
       "title": "Cook the first side",
       "text": "Leave it on medium heat, untouched.",
       "timerSec": 120,
-      "tip": "Flipping too early is the main reason chillas break. Wait until the edges lift on their own.",
-      "visualCue": "The top turns from wet and glossy to dull and dry-looking; the edges lift and turn golden.",
+      "tip": null,
+      "visualCue": "The top changes from wet and glossy to dull and dry-looking; the edges lift and turn golden.",
       "cameraCheck": "A spatula lifting the edge to show a golden underside",
-      "videoShot": "Close-up of the top going from shiny to matte."
+      "videoShot": "The top going from shiny to matte.",
+      "watchOut": "Flipping while the top is still shiny breaks the chilla. Wait until the edges lift on their own and the spatula slides under easily."
     },
     {
       "n": 17,
       "title": "Flip it",
-      "text": "Slide the spatula fully under the chilla and flip it in one quick move.",
+      "text": "Slide the spatula fully under the chilla and flip in one quick move.",
       "timerSec": 10,
       "tip": null,
-      "visualCue": "Golden-brown underside with darker spots on the onions.",
+      "visualCue": "A golden-brown underside with darker spots where the onion touched the tawa.",
       "cameraCheck": "The flipped chilla showing the golden side",
-      "videoShot": "The flip."
+      "videoShot": "The flip.",
+      "watchOut": "A slow, half-under flip folds or tears it; slide the spatula in all the way, and if it tears, press the pieces together and carry on."
     },
     {
       "n": 18,
@@ -285,9 +302,10 @@
       "text": "Press lightly with the spatula and cook.",
       "timerSec": 90,
       "tip": null,
-      "visualCue": "Brown spots on the second side; the chilla feels firm, not soft, when pressed in the centre.",
+      "visualCue": "Brown spots on the second side; the centre feels firm, not soft, when pressed.",
       "cameraCheck": "The second side lifted on the spatula",
-      "videoShot": "The spatula pressing the chilla gently."
+      "videoShot": "The spatula pressing the chilla.",
+      "watchOut": "A soft, pale centre means it is still raw inside and tastes of raw flour; give it another 30 sec on low heat."
     },
     {
       "n": 19,
@@ -295,9 +313,10 @@
       "text": "Fold it in half or slide it flat onto a plate.",
       "timerSec": 10,
       "tip": null,
-      "visualCue": "Golden, slightly crisp edges, soft centre, no raw wet patches.",
+      "visualCue": "Golden, slightly crisp edges and a soft centre, with no wet patches.",
       "cameraCheck": "The first chilla on the plate",
-      "videoShot": "The chilla sliding onto the plate."
+      "videoShot": "The chilla sliding onto the plate.",
+      "watchOut": "Stacking hot chillas without a gap makes them steam and go limp; fold or lay them side by side."
     },
     {
       "n": 20,
@@ -307,17 +326,19 @@
       "tip": "Letting the tawa cool slightly before the second pour helps the batter spread instead of setting in lumps.",
       "visualCue": "A thin, even film of oil.",
       "cameraCheck": "The oiled tawa",
-      "videoShot": "Oil spread with a paper towel."
+      "videoShot": "Oil spread with kitchen paper.",
+      "watchOut": "Skipping this step makes the second chilla stick to the tawa."
     },
     {
       "n": 21,
       "title": "Make the second chilla",
-      "text": "Turn the heat back to medium. Stir the remaining batter, then repeat steps 13–19 (pour, spread, drizzle ½ tsp oil, cook 2–2.5 min, flip, cook 1.5–2 min).",
+      "text": "Turn the heat back to medium. Stir the remaining batter, then repeat steps 13-19 (pour, spread, drizzle ½ tsp oil, cook 2-2.5 min, flip, cook 1.5-2 min).",
       "timerSec": 270,
       "tip": null,
       "visualCue": "Same as the first: golden, set, no raw centre.",
       "cameraCheck": "Both chillas on the plate",
-      "videoShot": "The second chilla flipped."
+      "videoShot": "The second chilla flipped.",
+      "watchOut": "Leftover batter that has thickened spreads badly; whisk in 1 tsp water first."
     },
     {
       "n": 22,
@@ -325,9 +346,10 @@
       "text": "Serve hot, folded or stacked, with green chutney or ketchup on the side.",
       "timerSec": 20,
       "tip": null,
-      "visualCue": "Two golden rounds dotted with red, white and green vegetables.",
+      "visualCue": "Two golden rounds dotted with red, white and green.",
       "cameraCheck": "The served plate",
-      "videoShot": "A slow pan across the plate as a piece is torn off."
+      "videoShot": "A slow pan across the plate as a piece is torn off.",
+      "watchOut": "Chillas go limp within minutes of cooling; eat straight away."
     }
   ],
   "nutritionPerServing": {
@@ -339,32 +361,103 @@
   },
   "microNutrientsEstimate": {
     "values": {
-      "calcium": 9.3,
+      "calcium": 31.8,
       "cholesterol": 0,
-      "copper": 0,
-      "folate": 3.2,
-      "iron": 0.4,
-      "magnesium": 2.8,
-      "manganese": 0,
+      "copper": 0.5,
+      "folate": 221.7,
+      "iron": 2.8,
+      "magnesium": 85.8,
+      "manganese": 0.8,
       "niacin": 0,
-      "phosphorus": 3.7,
-      "potassium": 210.4,
+      "phosphorus": 162.7,
+      "potassium": 633.4,
       "riboflavin": 0,
-      "sodium": 6.5,
-      "thiamine": 0,
+      "selenium": 4.2,
+      "sodium": 38.5,
+      "thiamine": 0.2,
       "vitamin-a": 25.8,
       "vitamin-b12": 0,
-      "vitamin-b6": 0.1,
+      "vitamin-b6": 0.3,
       "vitamin-c": 17.4,
       "vitamin-d": 0.4,
-      "vitamin-e": 4.2,
-      "vitamin-k": 16,
-      "zinc": 0
+      "vitamin-e": 4.6,
+      "vitamin-k": 20.6,
+      "zinc": 1.4
     },
-    "coveragePct": 44,
+    "coveragePct": 66,
     "basis": "partial estimate from ingredient quantities"
   },
-  "asOrdered": null,
+  "asOrdered": {
+    "price": {
+      "priceHistory": [
+        {
+          "date": "2026-10-07",
+          "min": 50,
+          "max": 70,
+          "avg": 60,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-10-07.md"
+        },
+        {
+          "date": "2026-11-07",
+          "min": 80,
+          "max": 130,
+          "avg": 104,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-11-07.md"
+        }
+      ],
+      "currentEstimate": {
+        "min": 70,
+        "max": 90,
+        "avg": 80
+      },
+      "method": "spike-blend",
+      "trend": "unknown",
+      "change30dPct": null,
+      "lastObserved": "2026-11-07",
+      "stale": false,
+      "seasonal": false,
+      "listingCount": 2,
+      "platforms": [
+        "Swiggy",
+        "Zomato"
+      ],
+      "outOfStock": false,
+      "confirmed": false,
+      "checkNotes": [
+        "only 2 listings back the range (need 3)"
+      ]
+    },
+    "nutrition": {
+      "calories": {
+        "value": null,
+        "source": null
+      },
+      "protein": {
+        "value": null,
+        "source": null
+      },
+      "carbs": {
+        "value": null,
+        "source": null
+      },
+      "fat": {
+        "value": null,
+        "source": null
+      },
+      "fibre": {
+        "value": null,
+        "source": null
+      }
+    },
+    "restaurantsSampled": null,
+    "platforms": [
+      "Swiggy",
+      "Zomato",
+      "magicpin"
+    ]
+  },
   "orderPrice": {
     "priceHistory": [
       {
@@ -374,43 +467,52 @@
         "avg": 60,
         "confidence": null,
         "sourceFile": "FitPlate_Dishes_2026-10-07.md"
+      },
+      {
+        "date": "2026-11-07",
+        "min": 80,
+        "max": 130,
+        "avg": 104,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-11-07.md"
       }
     ],
     "currentEstimate": {
-      "min": 50,
-      "max": 70,
-      "avg": 60
+      "min": 70,
+      "max": 90,
+      "avg": 80
     },
-    "method": "single",
+    "method": "spike-blend",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-07",
+    "lastObserved": "2026-11-07",
     "stale": false,
     "seasonal": false,
-    "listingCount": 3,
+    "listingCount": 2,
     "platforms": [
-      "magicpin"
+      "Swiggy",
+      "Zomato"
     ],
     "outOfStock": false,
     "confirmed": false,
     "checkNotes": [
-      "only 1 platform (magicpin) backs the range"
+      "only 2 listings back the range (need 3)"
     ]
   },
   "healthiness": {
     "score": 8,
     "restaurantScore": null,
     "reasons": [
-      "besan gives about 11 g of plant protein and 5 g of fibre in 50 g, with a lower glycaemic load than refined-flour breakfasts, and the dish is shallow-cooked in only 2 tsp oil with onion, tomato and herbs folded in. It is naturally gluten-free and vegan. Points come off because the vegetable amount is small, protein is modest for a full meal on its own, and sodium is about 600 mg. Restaurant and street versions are often brushed with butter or extra oil (e.g. \"Butter Cheela\" listings), salted more heavily and served with sweet ketchup or mayonnaise-based dips."
+      "besan gives about 11 g of plant protein and 5 g of fibre in 50 g, with a lower glycaemic load than refined-flour breakfasts, and the dish is shallow-cooked in only 2 tsp oil with onion, tomato and herbs. It is naturally gluten-free and vegan. Points come off for the small vegetable amount, modest protein for a full meal, and about 625 mg sodium. Restaurant and street versions are often buttered or made with extra oil and served with sweet ketchup or mayonnaise dips."
     ]
   },
   "researchRating": {
     "score": 4.5,
-    "basis": "besan chilla is a hugely popular everyday North Indian breakfast, widely featured as a quick, healthy, high-protein, vegan \"eggless omelette\". Recipe pages score very high (Hebbar's Kitchen besan chilla / veg omelette shown at 5/5 from 268 votes in search results; Vegrecipesofindia 4.59/5 from 31 votes; Mrishtanna 5/5 from 14 votes), and nutrition sites like HealthifyMe list it as a go-to weight-loss breakfast. Small deductions because it is seen as a plain everyday dish rather than a treat, and because people often report chillas sticking, breaking or tasting raw if the batter or heat is wrong."
+    "basis": "a hugely popular everyday North Indian breakfast, widely featured as a quick, high-protein, vegan \"eggless omelette\". Recipe pages seen in search results this cycle: Hebbar's Kitchen 5/5 from 268 votes; Vegrecipesofindia about 4.59/5 from 31 votes on the print page (a third-party aggregator showed 4.8 from 65 ratings); Cook With Manali 5/5 from 3 votes; WhiskAffair 4.2 from 12 ratings (small samples). Small deductions because it is seen as a plain everyday dish, and because people often report chillas sticking, breaking or tasting raw if the batter or heat is wrong (WhiskAffair and Eat Healthy 365 both address sticking)."
   },
-  "storage": "Best eaten fresh; chillas go limp as they cool. Cooked chillas keep in an airtight box in the fridge for up to 1 day (stack them with butter paper between them). Freezing is not recommended; they turn rubbery. Reheat on a hot dry tawa for about 30–40 sec per side until warm and the edges crisp again. The uncooked batter (without tomato) keeps in the fridge for 1 day; add the tomato just before cooking.",
-  "leftoverRemix": "Chilla kathi roll. Warm a leftover chilla on the tawa, spread 1 tsp green chutney, add a few strips of onion, cucumber and 2 tbsp crumbled paneer or leftover sabzi, sprinkle chaat masala, roll tightly and wrap the bottom half in butter paper. A quick, eggless \"frankie\" for the lunchbox.",
-  "burnOff": "about 4.4 km of running (305 ÷ 70 kcal/km, for a 70 kg adult), or about 6.1 km of brisk walking (about 1 hr 15 min at 5 km/h, using about 50 kcal/km for walking) (est.).",
+  "storage": "Best eaten fresh; chillas go limp as they cool. Cooked chillas keep in an airtight box in the fridge for up to 1 day (butter paper between them). Freezing is not recommended; they turn rubbery. Reheat on a hot dry tawa for about 30-40 sec per side. Uncooked batter without tomato keeps in the fridge for 1 day; add the tomato just before cooking.",
+  "leftoverRemix": "Chilla kathi roll. Warm a leftover chilla on the tawa, spread 1 tsp green chutney, add strips of onion and cucumber and 2 tbsp crumbled paneer or leftover sabzi, sprinkle chaat masala, roll tightly and wrap the bottom half in butter paper.",
+  "burnOff": "about 4.4 km of running (305 ÷ 70 kcal/km, 70 kg adult), or about 6.1 km of brisk walking (about 1 hr 15 min at 5 km/h, using about 50 kcal/km) (est.).",
   "sources": [
     "Vegrecipesofindia, Besan Chilla Recipe (Besan ka Cheela): https://www.vegrecipesofindia.com/besan-cheela-recipe-besan-chilla/",
     "Vegrecipesofindia, print version (1 cup besan, makes 6; rating 4.59/5 from 31 votes): https://www.vegrecipesofindia.com/wprm_print/135656",
@@ -435,37 +537,138 @@
     "magicpin, WCH-Waffle Cheela House, Virar: https://magicpin.in/Mumbai/Virar/Restaurant/Wch-waffle-Cheela-House/store/2bc277/menu",
     "Zomato, Kha Healthy, Vikhroli: https://www.zomato.com/mumbai/kha-healthy-vikhroli/order",
     "Zomato, Mamma's Desi Kitchen, Kurla (price not found): https://www.zomato.com/mumbai/mammas-desi-kitchen-kurla/order",
-    "magicpin, Paratha Hub, Shahdara, New Delhi (dropped, not Mumbai): https://magicpin.in/New-Delhi/Shahdara/Restaurant/Paratha-Hub/store/4aa563/delivery/"
+    "magicpin, Paratha Hub, Shahdara, New Delhi (dropped, not Mumbai): https://magicpin.in/New-Delhi/Shahdara/Restaurant/Paratha-Hub/store/4aa563/delivery/",
+    "Hebbar's Kitchen, Besan Chilla (rating 5 from 268 votes in search result): https://hebbarskitchen.com/wprm_print/recipe/37795",
+    "Vegrecipesofindia, Besan Chilla (print version, 4.59 from 31 votes): https://www.vegrecipesofindia.com/wprm_print/135656",
+    "Indian Healthy Recipes (Swasthi), Besan Chilla: https://www.indianhealthyrecipes.com/cheela-recipe/",
+    "Spice Up The Curry, Besan Chilla (2 ways; runny batter, add water slowly, drizzle oil at edges): https://www.spiceupthecurry.com/besan-cheela-recipe/",
+    "WhiskAffair, Besan Chilla (4.2 from 12 ratings; sticking, thin equals crisp): https://www.whiskaffair.com/besan-chilla-recipe/",
+    "Eat Healthy 365, Authentic Besan Chilla (pan not hot enough or batter too thick): https://eathealthy365.com/authentic-besan-chilla/",
+    "Tarla Dalal, calories for Besan Chilla (about 236 kcal per chilla, 4 per batch): https://www.tarladalal.com/calories-for-besan-chilla-besan-cheela-33439",
+    "FatSecret, Besan Chilla generic entry (about 162 kcal per piece): https://www.fatsecret.com.au:443/calories-nutrition/generic/besan-chilla",
+    "IFCT 2017 (ICMR-NIN), cross-check only: https://www.nin.res.in/",
+    "Swiggy, Taste by Ruchira, Virar: https://swiggy.com/city/mumbai/taste-by-ruchira-virar-rest1021874",
+    "Swiggy, Jhatpat Foods Pitampura, Delhi (not Mumbai, not used): https://www.swiggy.com/restaurants/its-healthy-by-jhatpat-ready-msp-pitam-pura-delhi-96395",
+    "NewsBytes, where to find the best besan cheela breakfasts (Delhi street price context only): https://www.newsbytesapp.com/news/india/where-to-find-the-best-besan-cheela-breakfasts-in-india/story",
+    "magicpin, The Breakfast Waala, Vile Parle West (7 Oct snapshot, dated): https://magicpin.in/Mumbai/Vile-Parle-West/Restaurant/The-Breakfast-Waala/store/5c7849/",
+    "magicpin, Jhatpat Foods, Virar East (7 Oct snapshot, dated): https://magicpin.in/Mumbai/Virar-East/Restaurant/Jhatpat-Foods/store/609c2b/",
+    "magicpin, WCH-Waffle Cheela House, Virar (7 Oct snapshot, dated): https://magicpin.in/Mumbai/Virar/Restaurant/Wch-waffle-Cheela-House/store/2bc277/menu"
   ],
   "allergens": [
     "peanut"
   ],
-  "dietClaims": [],
-  "fasting": null,
-  "dietTags": null,
+  "dietClaims": [
+    "vegan",
+    "glutenFree",
+    "dairyFree"
+  ],
+  "fasting": {
+    "navratri": {
+      "status": "no",
+      "reason": "besan (chickpea flour) and onion are not eaten in most vrat rule sets (assumed: no grains or pulses, no onion)"
+    },
+    "ekadashi": {
+      "status": "no",
+      "reason": "besan is a pulse flour, and pulses and grains are avoided on Ekadashi in the common rule set"
+    },
+    "jain": {
+      "status": "with-changes",
+      "reason": "skip onion and fresh ginger, use sonth (dry ginger powder)"
+    },
+    "ramadan": {
+      "status": "yes",
+      "reason": "meat-free, 12 g protein and 7 g fibre keep you full for sehri; moderate sodium (about 625 mg), so use less salt at sehri"
+    }
+  },
+  "dietTags": {
+    "base": "Vegetarian",
+    "jain": {
+      "status": "with-changes",
+      "reason": "drop the onion and fresh ginger (root vegetables) and use a pinch of dry ginger powder (sonth) instead; tomato, green chilli and coriander are fine"
+    },
+    "vegan": {
+      "status": "yes",
+      "reason": "besan, vegetables, spices and oil only; no dairy, ghee or honey"
+    },
+    "pescatarian": {
+      "status": "yes",
+      "reason": "vegetarian dish with no meat"
+    },
+    "sattvik": {
+      "status": "with-changes",
+      "reason": "leave out the onion and add extra chopped tomato or capsicum (recipe has no garlic)"
+    },
+    "glutenFree": {
+      "status": "yes",
+      "reason": "besan is chickpea flour; the recipe uses no hing (most hing sold in India is compounded with wheat flour, so skip it or buy gluten-free hing)"
+    },
+    "dairyFree": {
+      "status": "yes",
+      "reason": "no dairy in the chilla; serve with a curd-free chutney"
+    },
+    "allergensDeclared": [
+      "peanut"
+    ]
+  },
   "tags": [
     "Veg",
+    "Vegan",
+    "Jain option",
+    "Gluten-free",
+    "Dairy-free",
+    "Ramadan sehri / iftar",
     "Contains peanut",
     "Breakfast",
+    "Snack",
+    "North Indian",
     "Under 30 min",
     "Beginner",
     "High fibre"
   ],
-  "description": null,
+  "description": "Family: chilla",
   "familyId": null,
-  "variants": [],
+  "variants": [
+    {
+      "category": "Vegan",
+      "status": "already-fits",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": ". Main recipe is vegan."
+    },
+    {
+      "category": "Gluten-free",
+      "status": "already-fits",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": ". Main recipe is gluten-free (leave out hing, or use gluten-free hing)."
+    },
+    {
+      "category": "Dairy-free",
+      "status": "already-fits",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": ". Main recipe is dairy-free (use a curd-free chutney)."
+    }
+  ],
   "needsReview": [
-    "price not confirmed (2026-10-07): only 1 platform (magicpin) backs the range"
+    "price not confirmed (2026-11-07): only 2 listings back the range (need 3)"
   ],
   "versions": [
     {
       "date": "2026-10-07",
       "file": "FitPlate_Dishes_2026-10-07.md"
+    },
+    {
+      "date": "2026-11-07",
+      "file": "FitPlate_Dishes_2026-11-07.md"
     }
   ],
   "mergeMethod": {
-    "nutritionPerServing": "stable (single)",
-    "orderPrice": "price engine (single)",
+    "nutritionPerServing": "stable (mean-2)",
+    "orderPrice": "price engine (spike-blend)",
     "ingredients": "newest",
     "steps": "newest",
     "healthiness": "newest",
@@ -474,7 +677,9 @@
     "tags": "tag engine (tags.ts) on the merged dish"
   },
   "mergeNotes": [
+    "price flag: possible-spike",
     "price flag: narrowed",
-    "Range 50.0–70.0 was wider than 30% of avg 60.0; narrowed to ±15%."
+    "Possible spike: latest avg 104 (2026-11-07) moved more than 35% from the previous estimate; using the halfway point.",
+    "Range 65.0–100.0 was wider than 30% of avg 82.0; narrowed to ±15%."
   ]
 }

@@ -4,7 +4,7 @@
   "aliases": [
     "besan"
   ],
-  "category": "Packaged (flour)",
+  "category": "Flour",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -15,35 +15,226 @@
         "avg": 110,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-07.md"
+      },
+      {
+        "date": "2026-11-07",
+        "min": 85,
+        "max": 140,
+        "avg": 115,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-07.md"
       }
     ],
     "currentEstimate": {
-      "min": 105,
-      "max": 120,
-      "avg": 110
+      "min": 95,
+      "max": 130,
+      "avg": 115
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-07",
+    "lastObserved": "2026-11-07",
     "stale": false,
     "seasonal": false,
-    "listingCount": 7,
+    "listingCount": 11,
     "platforms": [
-      "Amazon",
-      "BigBasket"
+      "BigBasket",
+      "Blinkit",
+      "Zepto"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 10.5,
-    "max": 12,
-    "avg": 11
+    "min": 9.5,
+    "max": 13,
+    "avg": 11.5
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 387,
+      "source": "USDA FDC: USDA FDC 174288 'Chickpea flour (besan)' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "proteinG": {
+      "value": 22.4,
+      "source": "USDA FDC: USDA FDC 174288 'Chickpea flour (besan)' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "carbsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "sugarsG": {
+      "value": 10.9,
+      "source": "USDA FDC: USDA FDC 174288 'Chickpea flour (besan)' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "fatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "saturatedFatG": {
+      "value": 0.7,
+      "source": "USDA FDC: USDA FDC 174288 'Chickpea flour (besan)' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "fibreG": {
+      "value": 10.8,
+      "source": "USDA FDC: USDA FDC 174288 'Chickpea flour (besan)' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "sodiumMg": {
+      "value": 64,
+      "source": "USDA FDC: USDA FDC 174288 'Chickpea flour (besan)' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "ironMg": {
+      "value": 4.86,
+      "source": "USDA FDC: USDA FDC 174288 'Chickpea flour (besan)' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "calciumMg": {
+      "value": 45,
+      "source": "USDA FDC: USDA FDC 174288 'Chickpea flour (besan)' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "potassiumMg": {
+      "value": 846,
+      "source": "USDA FDC: USDA FDC 174288 'Chickpea flour (besan)' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "magnesiumMg": {
+      "value": 166,
+      "source": "USDA FDC: USDA FDC 174288 'Chickpea flour (besan)' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "zincMg": {
+      "value": 2.81,
+      "source": "USDA FDC: USDA FDC 174288 'Chickpea flour (besan)' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": 437,
+      "source": "USDA FDC: USDA FDC 174288 'Chickpea flour (besan)' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 174288 'Chickpea flour (besan)' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": 1.5,
+      "source": "USDA FDC: USDA FDC 174288 'Chickpea flour (besan)' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "pufaG": {
+      "value": 3,
+      "source": "USDA FDC: USDA FDC 174288 'Chickpea flour (besan)' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": 318,
+      "source": "USDA FDC: USDA FDC 174288 'Chickpea flour (besan)' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "seleniumUg": {
+      "value": 8.3,
+      "source": "USDA FDC: USDA FDC 174288 'Chickpea flour (besan)' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "copperMg": {
+      "value": 0.91,
+      "source": "USDA FDC: USDA FDC 174288 'Chickpea flour (besan)' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "manganeseMg": {
+      "value": 1.6,
+      "source": "USDA FDC: USDA FDC 174288 'Chickpea flour (besan)' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": 0.8,
+      "source": "USDA FDC: USDA FDC 174288 'Chickpea flour (besan)' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminKUg": {
+      "value": 9.1,
+      "source": "USDA FDC: USDA FDC 174288 'Chickpea flour (besan)' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "thiaminMg": {
+      "value": 0.486,
+      "source": "USDA FDC: USDA FDC 174288 'Chickpea flour (besan)' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": 0.45,
+      "source": "USDA FDC: USDA FDC 174288 'Chickpea flour (besan)' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 174288 'Chickpea flour (besan)' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
+    }
+  },
   "macrosPer100Estimate": {
     "kcal": 387,
     "proteinG": 22.4,
@@ -51,39 +242,80 @@
     "fatG": 6.7,
     "fibreG": 10.8
   },
-  "storage": "Airtight steel or glass jar in a cool, dry cupboard: 2–3 months after opening. In humid Mumbai weather, keep it in the fridge in an airtight box for up to 6 months to prevent weevils and rancidity.",
-  "looksLike": "A fine, soft, pale-yellow flour ground from split, skinned chana dal (Bengal gram). It feels silky between the fingers and has a slightly nutty, raw-bean smell.",
-  "howToPick": null,
-  "shelfLife": "About 6 months from packing, unopened (check the pack). Once opened, use within 2–3 months.",
+  "storage": "Keep in an airtight jar in a cool, dry place; in monsoon, refrigerate to avoid weevils and rancid smell.",
+  "looksLike": "A fine, silky, pale-yellow flour ground from split, skinned chana dal (Bengal gram), with a mild nutty, raw-bean smell.",
+  "howToPick": "Check a fresh packing date, a uniform pale yellow colour and a clean, nutty smell. Avoid a sour or musty smell, lumps or clumps, or a whitish colour that may hint at wheat flour.",
+  "shelfLife": "About 3 to 6 months in sealed packs (pack label governs; general guidance, not taken from a source in this run).",
   "substitutes": [
     "Moong dal flour (or soaked, ground moong dal)",
     "Chickpea (kabuli chana) flour",
-    "Rice flour + a little besan"
+    "Rice flour + a little besan",
+    "Chickpea flour made at home from roasted chana dal",
+    "Moong dal flour",
+    "Ground oats or whole-wheat flour"
   ],
-  "vendorListings": [],
+  "vendorListings": [
+    {
+      "vendor": "blinkit",
+      "product": "Fortune Chana Dal Besan",
+      "pack": "500 g",
+      "priceMinInr": 50,
+      "priceMaxInr": 50,
+      "observedOn": "2026-11-07"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Tata Sampann Chana Dal Besan",
+      "pack": "500 g",
+      "priceMinInr": 60,
+      "priceMaxInr": 60,
+      "observedOn": "2026-11-07"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Fortune Chana Dal Besan",
+      "pack": "1 kg",
+      "priceMinInr": 87,
+      "priceMaxInr": 87,
+      "observedOn": "2026-11-07"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Aashirvaad 100% Chana Dal Besan",
+      "pack": "500 g",
+      "priceMinInr": 57,
+      "priceMaxInr": 57,
+      "observedOn": "2026-11-07"
+    }
+  ],
   "usedIn": [
     {
       "dishNumber": 16,
       "quantity": 50,
       "unit": "g",
-      "raw": "50 g (a scant ½ cup)"
+      "raw": "50 g besan per serving (a scant ½ cup)"
     },
     {
       "dishNumber": 20,
       "quantity": 30,
       "unit": "g",
-      "raw": "30 g (3½ tbsp, in the batter)"
+      "raw": "30 g besan per serving (about ¼ cup, for the vada batter)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-07",
       "file": "FitPlate_Ingredients_2026-10-07.md"
+    },
+    {
+      "date": "2026-11-07",
+      "file": "FitPlate_Ingredients_2026-11-07.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (wma)",
     "macrosPer100Estimate": "stable (single)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "vendorListings": "newest sighting per vendor+product+pack",
@@ -91,5 +323,8 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 91.6–133.4 was wider than 30% of avg 113.4; narrowed to ±15%."
+  ]
 }

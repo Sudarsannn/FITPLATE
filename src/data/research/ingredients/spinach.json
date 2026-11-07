@@ -4,7 +4,7 @@
   "aliases": [
     "palak"
   ],
-  "category": "Vegetable (leafy green)",
+  "category": "Vegetable",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -15,37 +15,225 @@
         "avg": 55,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-07.md"
+      },
+      {
+        "date": "2026-11-07",
+        "min": 30,
+        "max": 110,
+        "avg": 60,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-07.md"
       }
     ],
     "currentEstimate": {
-      "min": 47,
-      "max": 63,
-      "avg": 55
+      "min": 50,
+      "max": 67,
+      "avg": 58
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-07",
+    "lastObserved": "2026-11-07",
     "stale": false,
     "seasonal": false,
-    "listingCount": 2,
+    "listingCount": 4,
     "platforms": [
-      "BigBasket"
+      "BigBasket",
+      "Blinkit"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 2 listings back the range (need 3)",
-      "only 1 platform (BigBasket) backs the range"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 4.7,
-    "max": 6.3,
-    "avg": 5.5
+    "min": 5,
+    "max": 6.7,
+    "avg": 5.8
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 23,
+      "source": "USDA FDC: USDA FDC 168462 'Spinach, raw' as quoted by secondary sites (myfooddata, getfoodfacts, nutrition aggregators); calcium 99 mg and folate 194 µg from Organic Mandya, which cites USDA and IFCT 2017 without naming a food code; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "proteinG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "carbsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "sugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "sodiumMg": {
+      "value": 79,
+      "source": "USDA FDC: USDA FDC 168462 'Spinach, raw' as quoted by secondary sites (myfooddata, getfoodfacts, nutrition aggregators); calcium 99 mg and folate 194 µg from Organic Mandya, which cites USDA and IFCT 2017 without naming a food code; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "ironMg": {
+      "value": 2.7,
+      "source": "USDA FDC: USDA FDC 168462 'Spinach, raw' as quoted by secondary sites (myfooddata, getfoodfacts, nutrition aggregators); calcium 99 mg and folate 194 µg from Organic Mandya, which cites USDA and IFCT 2017 without naming a food code; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "calciumMg": {
+      "value": 99,
+      "source": "USDA FDC: USDA FDC 168462 'Spinach, raw' as quoted by secondary sites (myfooddata, getfoodfacts, nutrition aggregators); calcium 99 mg and folate 194 µg from Organic Mandya, which cites USDA and IFCT 2017 without naming a food code; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "potassiumMg": {
+      "value": 558,
+      "source": "USDA FDC: USDA FDC 168462 'Spinach, raw' as quoted by secondary sites (myfooddata, getfoodfacts, nutrition aggregators); calcium 99 mg and folate 194 µg from Organic Mandya, which cites USDA and IFCT 2017 without naming a food code; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": 194,
+      "source": "USDA FDC: USDA FDC 168462 'Spinach, raw' as quoted by secondary sites (myfooddata, getfoodfacts, nutrition aggregators); calcium 99 mg and folate 194 µg from Organic Mandya, which cites USDA and IFCT 2017 without naming a food code; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 168462 'Spinach, raw' as quoted by secondary sites (myfooddata, getfoodfacts, nutrition aggregators); calcium 99 mg and folate 194 µg from Organic Mandya, which cites USDA and IFCT 2017 without naming a food code; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 168462 'Spinach, raw' as quoted by secondary sites (myfooddata, getfoodfacts, nutrition aggregators); calcium 99 mg and folate 194 µg from Organic Mandya, which cites USDA and IFCT 2017 without naming a food code; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
+    }
+  },
   "macrosPer100Estimate": {
     "kcal": 23,
     "proteinG": 2.9,
@@ -53,33 +241,50 @@
     "fatG": 0.4,
     "fibreG": 2.2
   },
-  "storage": "unwashed, wrapped in a dry cloth or paper towel inside a bag or box, for 2–4 days. Wash just before use.",
-  "looksLike": "Bunches of flat, smooth, dark-green, spoon-shaped leaves on thin green stems, often sold with pinkish roots still attached and tied with a band.",
-  "howToPick": null,
-  "shelfLife": "2–4 days in the fridge.",
+  "storage": "Keep unwashed in a paper-lined box or bag in the fridge and use within 2 to 3 days. Blanched, squeezed purée can be frozen for later use.",
+  "looksLike": "Bunches of flat, smooth, dark-green, spoon-shaped leaves on thin green stems, sold with or without the pinkish roots.",
+  "howToPick": "Fresh, uniformly dark-green, crisp leaves with thin stems. Avoid yellow, slimy or wilted leaves, and bunches with a sour smell.",
+  "shelfLife": "Fresh leaves keep about 2 to 3 days in the fridge (general guidance, not from a source in this run).",
   "substitutes": [
     "Frozen spinach",
     "Methi (fenugreek) leaves",
-    "Bathua / chaulai (amaranth) leaves"
+    "Bathua / chaulai (amaranth) leaves",
+    "Frozen chopped spinach (thawed, squeezed)",
+    "Methi or sarson leaves",
+    "Amaranth (chaulai) leaves"
   ],
-  "vendorListings": [],
+  "vendorListings": [
+    {
+      "vendor": "blinkit",
+      "product": "Spinach , 200 g",
+      "pack": "200 g",
+      "priceMinInr": 14,
+      "priceMaxInr": 14,
+      "observedOn": "2026-11-07"
+    }
+  ],
   "usedIn": [
     {
       "dishNumber": 17,
       "quantity": 150,
       "unit": "g",
-      "raw": "150 g leaves (about 220 g as bought, with stems; ½ medium bunch)"
+      "raw": "150 g leaves per serving (about 220 g as bought with stems); the lighter variant uses 200 g"
     }
   ],
   "versions": [
     {
       "date": "2026-10-07",
       "file": "FitPlate_Ingredients_2026-10-07.md"
+    },
+    {
+      "date": "2026-11-07",
+      "file": "FitPlate_Ingredients_2026-11-07.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "vendorListings": "newest sighting per vendor+product+pack",
@@ -89,6 +294,6 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 40.0–70.0 was wider than 30% of avg 55.0; narrowed to ±15%."
+    "Range 33.3–96.9 was wider than 30% of avg 58.4; narrowed to ±15%."
   ]
 }

@@ -25,6 +25,9 @@ export function band(fraction: number): Band {
   return 'low';
 }
 
+/** For a limit: under 80% is fine, 80 to 100% is close, over is past it. Mapped onto the bar colours (green, amber, red). */
+export const limitBand = (fraction: number): Band => (fraction > 1 ? 'low' : fraction >= 0.8 ? 'getting-there' : 'on-track');
+
 export type MicroBar = {
   id: string;
   label: string;
@@ -37,6 +40,8 @@ export type MicroBar = {
   fraction: number | null;
   band: Band | null;
   kind: 'vitamin' | 'mineral' | 'other';
+  /** True when `target` is a limit to stay under rather than a goal to reach. */
+  isLimit: boolean;
 };
 
 const UNIT_BY_ID: Record<string, string> = Object.fromEntries(Object.values(PROFILE_TO_NUTRIENT).map((v) => [v!.id, v!.unit]));
@@ -70,6 +75,8 @@ export type MicroOptions = {
   supplements?: Record<string, number>;
   /** Personal targets per nutrient id (Day 16 engine). An id with no entry falls back to the topic's adult default. */
   targets?: Record<string, number | null>;
+  /** Daily LIMITS (e.g. sodium) per nutrient id: the bar shows intake against the limit, and over it is bad, not good. */
+  limits?: Record<string, number>;
 };
 
 export function dayMicros(meals: MealInput[], dish: (id: string) => Dish | undefined, nutrients: readonly Nutrient[], group: TargetGroup, opts: MicroOptions = {}): MicroBar[] {
@@ -88,7 +95,8 @@ export function dayMicros(meals: MealInput[], dish: (id: string) => Dish | undef
   for (const id of ids) {
     if (id === 'cholesterol') continue;
     const n = byId.get(id);
-    const target = opts.targets && id in opts.targets ? opts.targets[id] : (n?.appDefaultTarget?.[group] ?? null);
+    const limit = opts.limits?.[id] ?? null;
+    const target = limit ?? (opts.targets && id in opts.targets ? opts.targets[id] : (n?.appDefaultTarget?.[group] ?? null));
     const amount = totals[id] ?? 0;
     const fraction = target ? amount / target : null;
     bars.push({
@@ -99,7 +107,8 @@ export function dayMicros(meals: MealInput[], dish: (id: string) => Dish | undef
       fromSupplements: sup[id] ?? 0,
       target,
       fraction,
-      band: fraction == null ? null : band(fraction),
+      band: fraction == null ? null : limit != null ? limitBand(fraction) : band(fraction),
+      isLimit: limit != null,
       kind: n?.type ?? (VITAMINS.has(id) ? 'vitamin' : MINERALS.has(id) ? 'mineral' : 'other'),
     });
   }
