@@ -452,4 +452,4 @@ Day 14 sync (machine ledger: src/data/research/ledger.json): dishes 5 ingested, 
 | 3 | Decision: fasting-suitability field in dish research (idea 4) | Day 3 | closed: approved (2026-10-10); dish research PROMPT_PATCH_02 adds it from dish 36 (SPEC-ADDENDA §6) |
 | 4 | Decision: add per-vendor product name, price, pack size and link (Zepto, Instamart, Blinkit) to the daily ingredient research, for Day 15G1 (SPEC-ADDENDA §7) | 2026-10-10 (grocery supplement) | open: decision card posted in the auto-build thread; recommended "Add them" |
 
-**Next up: Day 15G1: Grocery vendor price comparison + logo-tap deep links (SPEC-ADDENDA §7), then 15G2, then Day 16 Profile and targets engine. Innovation: Plain-words search (ideas queue item 7). Data sync continues with any new research files.**
+**Next up: Day 21: Exercise library (Move tab). Data sync continues with any new research files.**
