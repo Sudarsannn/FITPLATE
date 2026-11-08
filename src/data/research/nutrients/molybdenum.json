@@ -1,0 +1,299 @@
+{
+  "id": "molybdenum",
+  "name": "Molybdenum",
+  "type": "mineral",
+  "subtype": "trace-mineral",
+  "unit": "µg",
+  "altUnits": [
+    {
+      "unit": "mg",
+      "toMainUnitFactor": 1000
+    },
+    {
+      "unit": "µmol",
+      "toMainUnitFactor": 95.95
+    }
+  ],
+  "unitConversions": [
+    {
+      "fromUnit": "mg",
+      "compound": "mo",
+      "toMainUnitFactor": 1000,
+      "raw": "1 mg Mo | 1,000 µg Mo"
+    }
+  ],
+  "targets": [
+    {
+      "group": "adult_male_sedentary",
+      "ear": null,
+      "rda": 45,
+      "ai": null,
+      "source": "FSSAI direction 2021 (adopts ICMR-NIN 2020) OCR, probable 45 µg (secondary, unverified); NASEM RDA 45; ICMR EAR Not found"
+    },
+    {
+      "group": "adult_male_moderate",
+      "ear": null,
+      "rda": 45,
+      "ai": null,
+      "source": "Same single adult value (secondary, unverified)"
+    },
+    {
+      "group": "adult_male_heavy",
+      "ear": null,
+      "rda": 45,
+      "ai": null,
+      "source": "Same single adult value (secondary, unverified)"
+    },
+    {
+      "group": "adult_female_sedentary",
+      "ear": null,
+      "rda": 45,
+      "ai": null,
+      "source": "FSSAI direction 2021 OCR (secondary, unverified); NASEM RDA 45"
+    },
+    {
+      "group": "adult_female_moderate",
+      "ear": null,
+      "rda": 45,
+      "ai": null,
+      "source": "Same single adult value (secondary, unverified)"
+    },
+    {
+      "group": "adult_female_heavy",
+      "ear": null,
+      "rda": 45,
+      "ai": null,
+      "source": "Same single adult value (secondary, unverified)"
+    },
+    {
+      "group": "pregnant",
+      "ear": null,
+      "rda": 50,
+      "ai": null,
+      "source": "ICMR Not found; NASEM/NHMRC 50 (NIH ODS and NHMRC snippets, secondary, unverified)"
+    },
+    {
+      "group": "lactating",
+      "ear": null,
+      "rda": 50,
+      "ai": null,
+      "source": "ICMR Not found; NASEM/NHMRC 50 (NIH ODS and NHMRC snippets, secondary, unverified)"
+    }
+  ],
+  "appDefaultTarget": {
+    "adult_male": 45,
+    "adult_female": null,
+    "pregnant": 50,
+    "lactating": 50,
+    "age_60_plus": null
+  },
+  "upperLimit": {
+    "value": 2000,
+    "unit": "µg",
+    "appliesTo": "food_and_supplements",
+    "source": "NASEM 2001 UL (via NIH ODS snippet); ICMR TUL Not found; app soft supplement warning at 600 µg (SCF 2000 via BfR)"
+  },
+  "topFoodSources": [
+    {
+      "food": "Lentil whole, yellowish / masoor (IFCT B015)",
+      "veg": true,
+      "per100g": 299,
+      "servingG": 30,
+      "servingLabel": "30 g raw (about 2 tbsp) (est.)",
+      "perServing": 90
+    },
+    {
+      "food": "Moong dal (IFCT B010)",
+      "veg": true,
+      "per100g": 162,
+      "servingG": 30,
+      "servingLabel": "30 g raw dal (about 2 tbsp) (est.)",
+      "perServing": 49
+    },
+    {
+      "food": "Toor dal (IFCT B021)",
+      "veg": true,
+      "per100g": 131,
+      "servingG": 30,
+      "servingLabel": "30 g raw dal (est.)",
+      "perServing": 39
+    },
+    {
+      "food": "Groundnut (IFCT H012)",
+      "veg": true,
+      "per100g": 108,
+      "servingG": 30,
+      "servingLabel": "1 handful (est.)",
+      "perServing": 32
+    },
+    {
+      "food": "Rice, raw, milled (IFCT A015)",
+      "veg": true,
+      "per100g": 56,
+      "servingG": 60,
+      "servingLabel": "60 g raw, about 1 katori cooked (est.)",
+      "perServing": 34
+    },
+    {
+      "food": "Wheat flour, atta (IFCT A019)",
+      "veg": true,
+      "per100g": 22,
+      "servingG": 60,
+      "servingLabel": "flour for about 3 rotis (est.)",
+      "perServing": 13
+    },
+    {
+      "food": "Sheep liver (IFCT O021)",
+      "veg": false,
+      "per100g": 150,
+      "servingG": 50,
+      "servingLabel": "50 g portion (est.)",
+      "perServing": 75
+    }
+  ],
+  "goodSourceDishes": [
+    {
+      "dishNumber": 12,
+      "dishName": "Rajma Chawal"
+    },
+    {
+      "dishNumber": 5,
+      "dishName": "Dal Tadka"
+    },
+    {
+      "dishNumber": 41,
+      "dishName": "Pongal"
+    },
+    {
+      "dishNumber": 56,
+      "dishName": "Pesarattu"
+    },
+    {
+      "dishNumber": 66,
+      "dishName": "Sprouts Chaat"
+    },
+    {
+      "dishNumber": 8,
+      "dishName": "Chole"
+    }
+  ],
+  "deficiencyRiskIndia": "low",
+  "absorptionBoosters": [],
+  "absorptionBlockers": [
+    "High sulphate intake may reduce uptake (animal and older data; not confirmed in this run)"
+  ],
+  "logPresets": [
+    {
+      "label": "Multivitamin tablet with 25 µg molybdenum (Supradyn-type label)",
+      "amount": 25,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 25,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Syrup or tablet with 22 µg molybdenum (Multibal-type label)",
+      "amount": 22,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 22,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Multivitamin or capsule with 45 µg molybdenum",
+      "amount": 45,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 45,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    }
+  ],
+  "warnings": [
+    "Food covers molybdenum for healthy people; supplements are rarely needed.",
+    "ICMR-NIN 2020 value could not be read in full; 45 µg is the probable FSSAI-adopted value (secondary, unverified).",
+    "IFCT zeros for milk, eggs, poultry and oils mean not analysed, not zero: store as not available.",
+    "Do not use IFCT fruit values (apple 839, bael 819, peach 713 µg/100 g): implausible outliers.",
+    "Soft supplement warning at 600 µg/day; US UL 2,000 µg/day.",
+    "Users with Wilson disease, kidney disease, gout, pregnancy or on parenteral nutrition: show only 'Follow your doctor's advice'; no supplement push."
+  ],
+  "conditionAdjustments": [
+    {
+      "profileId": "P13",
+      "change": "No molybdenum value found for CKD; avoid supplements unless a doctor says so; requires doctor input",
+      "value": null,
+      "unit": "µg",
+      "source": "No change found"
+    },
+    {
+      "profileId": "P15",
+      "change": "Normal food intake not linked to gout; avoid high-dose supplements (10-15 mg/day linked to gout-like symptoms in Armenia)",
+      "value": null,
+      "unit": "µg",
+      "source": "NASEM 2001 via review (secondary)"
+    },
+    {
+      "profileId": "P22",
+      "change": "50 µg/day; food covers it; prenatal supplement only with doctor approval; requires doctor input",
+      "value": 50,
+      "unit": "µg",
+      "source": "NASEM/NHMRC (secondary, unverified)"
+    },
+    {
+      "profileId": "P23",
+      "change": "50 µg/day; food covers it",
+      "value": 50,
+      "unit": "µg",
+      "source": "NASEM/NHMRC (secondary, unverified)"
+    },
+    {
+      "profileId": "P31",
+      "change": "No change found; adult 45 µg",
+      "value": 45,
+      "unit": "µg",
+      "source": "NHMRC snippet (adult value applies to 70+)"
+    },
+    {
+      "profileId": "P33",
+      "change": "No change found; pulses, grains and nuts are available to Jain diets",
+      "value": null,
+      "unit": "µg",
+      "source": "IFCT 2017"
+    },
+    {
+      "profileId": "P34",
+      "change": "No change found; plant foods are the main Mo sources",
+      "value": null,
+      "unit": "µg",
+      "source": "IFCT 2017"
+    }
+  ],
+  "lastResearched": "2026-11-08",
+  "versions": [
+    {
+      "date": "2026-11-08",
+      "file": "FitPlate_Nutrients_2026-11-08.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3)",
+    "upperLimit": "official safety limit (D3, lower on conflict)",
+    "topFoodSources": "union; per100g official (D3)",
+    "logPresets": "union by label (newest), converted with own file factors",
+    "appDefaultTarget": "newest, kept only where it equals the ICMR row",
+    "lists": "union",
+    "warnings": "union (never dropped)",
+    "text": "newest"
+  },
+  "mergeNotes": [],
+  "needsReview": [
+    "app_default_target.adult_female = 45 has no ICMR row to match (adult_female_sedentary: \"FSSAI direction 2021 OCR (secondary, unverified); NASEM RDA 45\"; adult_female_moderate: \"Same single adult value (secondary, unverified)\"; adult_female_heavy: \"Same single adult value (secondary, unverified)\"); set to null",
+    "2026-11-08 molybdenum: \"group\" has unexpected value \"age_60_plus_male\"; treated as not found",
+    "2026-11-08 molybdenum: \"group\" has unexpected value \"age_60_plus_female\"; treated as not found"
+  ]
+}

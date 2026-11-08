@@ -1,0 +1,413 @@
+{
+  "id": "chromium",
+  "name": "Chromium",
+  "type": "mineral",
+  "subtype": "trace-mineral",
+  "unit": "µg",
+  "altUnits": [
+    {
+      "unit": "mcg",
+      "toMainUnitFactor": 1
+    },
+    {
+      "unit": "mg",
+      "toMainUnitFactor": 1000
+    },
+    {
+      "unit": "ng",
+      "toMainUnitFactor": 0.001
+    }
+  ],
+  "unitConversions": [
+    {
+      "fromUnit": "µg",
+      "compound": "",
+      "toMainUnitFactor": 1,
+      "raw": "1 µg (mcg) | 1,000 ng = 0.001 mg"
+    },
+    {
+      "fromUnit": "mg",
+      "compound": "/kg in food",
+      "toMainUnitFactor": 100,
+      "raw": "1 mg/kg in food | 100 µg per 100 g"
+    }
+  ],
+  "targets": [
+    {
+      "group": "adult_male_sedentary",
+      "ear": null,
+      "rda": null,
+      "ai": 50,
+      "source": "ICMR-NIN 2020 (secondary, unverified); NIH AI 35 for comparison"
+    },
+    {
+      "group": "adult_male_moderate",
+      "ear": null,
+      "rda": null,
+      "ai": 50,
+      "source": "ICMR-NIN 2020 (secondary, unverified); single adult value, no activity scaling seen"
+    },
+    {
+      "group": "adult_male_heavy",
+      "ear": null,
+      "rda": null,
+      "ai": 50,
+      "source": "ICMR-NIN 2020 (secondary, unverified); single adult value, no activity scaling seen"
+    },
+    {
+      "group": "adult_female_sedentary",
+      "ear": null,
+      "rda": null,
+      "ai": 50,
+      "source": "ICMR-NIN 2020 (secondary, unverified); NIH AI 25 for comparison"
+    },
+    {
+      "group": "adult_female_moderate",
+      "ear": null,
+      "rda": null,
+      "ai": 50,
+      "source": "ICMR-NIN 2020 (secondary, unverified); single adult value, no activity scaling seen"
+    },
+    {
+      "group": "adult_female_heavy",
+      "ear": null,
+      "rda": null,
+      "ai": 50,
+      "source": "ICMR-NIN 2020 (secondary, unverified); single adult value, no activity scaling seen"
+    },
+    {
+      "group": "pregnant",
+      "ear": null,
+      "rda": null,
+      "ai": 30,
+      "source": "ICMR-NIN Not found; NIH/NASEM 2001 AI age 19-50 (secondary, unverified)"
+    },
+    {
+      "group": "lactating",
+      "ear": null,
+      "rda": null,
+      "ai": 45,
+      "source": "ICMR-NIN Not found; NIH/NASEM 2001 AI age 19-50 (secondary, unverified)"
+    }
+  ],
+  "appDefaultTarget": {
+    "adult_male": 50,
+    "adult_female": 50,
+    "pregnant": 30,
+    "lactating": 45,
+    "age_60_plus": null
+  },
+  "upperLimit": {
+    "value": null,
+    "unit": "µg",
+    "appliesTo": "supplements_only",
+    "source": "No UL set: US NASEM/NIH none; ICMR-NIN TUL Not found; EFSA no value. FitPlate soft caution 250 µg/day from supplements (est.; WHO 1996 and an EFSA picolinate figure, both secondary, unverified)"
+  },
+  "topFoodSources": [
+    {
+      "food": "Fenugreek leaves (methi), IFCT C020",
+      "veg": true,
+      "per100g": 39,
+      "servingG": 50,
+      "servingLabel": "small bunch, raw (est.)",
+      "perServing": 19.5
+    },
+    {
+      "food": "Spinach (palak), IFCT C033",
+      "veg": true,
+      "per100g": 28,
+      "servingG": 100,
+      "servingLabel": "1 serving, raw (est.)",
+      "perServing": 28
+    },
+    {
+      "food": "Ragi flour, IFCT A010",
+      "veg": true,
+      "per100g": 32,
+      "servingG": 50,
+      "servingLabel": "1 roti or dosa, dry (est.)",
+      "perServing": 16
+    },
+    {
+      "food": "Bajra, IFCT A003",
+      "veg": true,
+      "per100g": 25,
+      "servingG": 60,
+      "servingLabel": "2 rotis, dry (est.)",
+      "perServing": 15
+    },
+    {
+      "food": "Rajmah, red, IFCT B020",
+      "veg": true,
+      "per100g": 29,
+      "servingG": 40,
+      "servingLabel": "1 katori cooked, dry weight (est.)",
+      "perServing": 11.6
+    },
+    {
+      "food": "Bengal gram whole (kala chana), IFCT B002",
+      "veg": true,
+      "per100g": 15,
+      "servingG": 40,
+      "servingLabel": "1 katori cooked, dry weight (est.)",
+      "perServing": 6
+    },
+    {
+      "food": "Mackerel (bangda), IFCT P034",
+      "veg": false,
+      "per100g": 11,
+      "servingG": 100,
+      "servingLabel": "1 small piece (est.)",
+      "perServing": 11
+    },
+    {
+      "food": "Rohu, IFCT S006",
+      "veg": false,
+      "per100g": 9,
+      "servingG": 100,
+      "servingLabel": "1 steak (est.)",
+      "perServing": 9
+    },
+    {
+      "food": "Cow's milk whole, IFCT L002 (flagged)",
+      "veg": true,
+      "per100g": 4,
+      "servingG": 200,
+      "servingLabel": "1 glass, 200 ml (est.)",
+      "perServing": 8
+    },
+    {
+      "food": "Jowar, IFCT A005",
+      "veg": true,
+      "per100g": 10,
+      "servingG": 60,
+      "servingLabel": "2 rotis, dry (est.)",
+      "perServing": 6
+    },
+    {
+      "food": "Wheat flour atta, IFCT A019",
+      "veg": true,
+      "per100g": 6,
+      "servingG": 60,
+      "servingLabel": "2 rotis, dry (est.)",
+      "perServing": 3.6
+    },
+    {
+      "food": "Rice raw milled, IFCT A015 (flagged)",
+      "veg": true,
+      "per100g": 5,
+      "servingG": 75,
+      "servingLabel": "about 1 cup cooked, dry weight (est.)",
+      "perServing": 3.75
+    }
+  ],
+  "goodSourceDishes": [
+    {
+      "dishNumber": 17,
+      "dishName": "Palak Paneer"
+    },
+    {
+      "dishNumber": 12,
+      "dishName": "Rajma Chawal"
+    },
+    {
+      "dishNumber": 71,
+      "dishName": "Ragi Dosa"
+    },
+    {
+      "dishNumber": 46,
+      "dishName": "Methi Thepla"
+    },
+    {
+      "dishNumber": 56,
+      "dishName": "Pesarattu"
+    },
+    {
+      "dishNumber": 66,
+      "dishName": "Sprouts Chaat"
+    },
+    {
+      "dishNumber": 8,
+      "dishName": "Chole (Chana Masala)"
+    }
+  ],
+  "deficiencyRiskIndia": "low",
+  "absorptionBoosters": [
+    "Vitamin C (small human study; weak evidence)",
+    "Niacin (vitamin B3) (small human data; weak evidence)"
+  ],
+  "absorptionBlockers": [
+    "Antacids with calcium carbonate or magnesium hydroxide (rat data)",
+    "Phytate in whole grains and pulses (rat data)",
+    "High iron in the same meal, above about 7.5 mg (one Spanish study; low confidence)"
+  ],
+  "logPresets": [
+    {
+      "label": "Multivitamin with chromium (about 35 µg; enter label value)",
+      "amount": 35,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 35,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Chromium tablet or capsule 100 µg (as on label)",
+      "amount": 100,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 100,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Chromium tablet or capsule 200 µg (as on label)",
+      "amount": 200,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 200,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Chromium 500 µg (prescription dose)",
+      "amount": 500,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 500,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    }
+  ],
+  "warnings": [
+    "ICMR-NIN 2020 chromium 50 µg/day was seen only in secondary summaries (secondary, unverified); EAR, TUL and pregnancy, lactation and 60+ values Not found.",
+    "No upper limit is set by US NASEM/NIH or EFSA; FitPlate shows a soft supplement caution at 250 µg/day (est.; secondary, unverified sources).",
+    "IFCT chromium values look too high for staples (rice 5, atta 6, milk 4 µg/100 g vs about 1 µg/100 g or less in independent surveys; secondary) and are whole numbers; show chromium as approximate.",
+    "IFCT 0 means not analysed, not zero (eggs, chicken, ghee, oils); do not count as zero.",
+    "Do not use IFCT paneer (110), khoa (119) or black amaranth seed (1,227 µg/100 g) for chromium; they look like analysis or contamination errors.",
+    "Stainless-steel cookware can add chromium to acidic dishes; food values for tomato or tamarind gravies may be inflated.",
+    "Chromium may add to diabetes medicines (low blood sugar) and may reduce levothyroxine absorption; follow your doctor's advice.",
+    "Chromium supplements are not recommended by ADA for blood sugar control without a deficiency; do not stop diabetes medicines.",
+    "Chromium(III) in food is not the same as hexavalent chromium(VI), an industrial pollutant.",
+    "Never show a low-chromium warning; deficiency is documented only in long-term intravenous feeding."
+  ],
+  "conditionAdjustments": [
+    {
+      "profileId": "P1",
+      "change": "No change to food target; ADA says insufficient evidence for routine chromium for blood sugar; supplements may cause low sugar with diabetes medicines; requires doctor input",
+      "value": 50,
+      "unit": "µg",
+      "source": "ADA Standards of Care 2024 and 2026 (via summaries); NIH ODS consumer sheet (secondary)"
+    },
+    {
+      "profileId": "P2",
+      "change": "No change; same as P1, no supplement nudge",
+      "value": 50,
+      "unit": "µg",
+      "source": "ADA Standards of Care (via summary)"
+    },
+    {
+      "profileId": "P7",
+      "change": "Food unchanged; supplements not advised without a doctor (liver disease patients may be more susceptible); requires doctor input",
+      "value": null,
+      "unit": "µg",
+      "source": "IOM 2001 review summary (secondary)"
+    },
+    {
+      "profileId": "P8",
+      "change": "No change; evidence for chromium in PCOS is mixed (2017 meta-analysis favourable, other reviews no meaningful benefit); no supplement nudge",
+      "value": 50,
+      "unit": "µg",
+      "source": "Chromium and PCOS meta-analysis 2017 (via summary); Linus Pauling Institute (secondary)"
+    },
+    {
+      "profileId": "P9",
+      "change": "No change to food target; chromium may reduce levothyroxine absorption; hide presets unless doctor-prescribed; requires doctor input",
+      "value": 50,
+      "unit": "µg",
+      "source": "NIH ODS consumer sheet (via summary; secondary)"
+    },
+    {
+      "profileId": "P11",
+      "change": "No change; high iron in a meal reduced chromium absorption in one study (low confidence, no app rule)",
+      "value": null,
+      "unit": "µg",
+      "source": "Navarro-Alarcon et al. 2008 (via summary; secondary)"
+    },
+    {
+      "profileId": "P13",
+      "change": "Food unchanged; supplements not advised without a doctor (kidney disease patients may be more susceptible); requires doctor input",
+      "value": null,
+      "unit": "µg",
+      "source": "IOM 2001 review summary (secondary)"
+    },
+    {
+      "profileId": "P22",
+      "change": "NIH AI 30 µg; ICMR Not found; no chromium supplement without a doctor; requires doctor input",
+      "value": 30,
+      "unit": "µg",
+      "source": "NIH/NASEM 2001 via summaries (secondary, unverified)"
+    },
+    {
+      "profileId": "P23",
+      "change": "NIH AI 45 µg; ICMR Not found; no chromium supplement without a doctor; requires doctor input",
+      "value": 45,
+      "unit": "µg",
+      "source": "NIH/NASEM 2001 via summaries (secondary, unverified)"
+    },
+    {
+      "profileId": "P25",
+      "change": "No change; average weight loss about 0.75 kg in a 2019 meta-analysis, judged clinically small; no supplement nudge",
+      "value": 50,
+      "unit": "µg",
+      "source": "Tsang et al. 2019 Clin Obes (via summary); Linus Pauling Institute (secondary)"
+    },
+    {
+      "profileId": "P31",
+      "change": "ICMR 60+ value Not found; general 50 µg used; NIH AI for 51+ is 30 (men) and 20 (women)",
+      "value": 50,
+      "unit": "µg",
+      "source": "ICMR-NIN 2020 (secondary, unverified); NIH via summaries"
+    },
+    {
+      "profileId": "P33",
+      "change": "No change found; main sources are Jain-friendly",
+      "value": null,
+      "unit": "µg",
+      "source": "No change found; IFCT 2017"
+    },
+    {
+      "profileId": "P34",
+      "change": "No change found; top sources are plant foods",
+      "value": null,
+      "unit": "µg",
+      "source": "No change found; IFCT 2017"
+    }
+  ],
+  "lastResearched": "2026-11-08",
+  "versions": [
+    {
+      "date": "2026-11-08",
+      "file": "FitPlate_Nutrients_2026-11-08.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3)",
+    "upperLimit": "official safety limit (D3, lower on conflict)",
+    "topFoodSources": "union; per100g official (D3)",
+    "logPresets": "union by label (newest), converted with own file factors",
+    "appDefaultTarget": "newest, kept only where it equals the ICMR row",
+    "lists": "union",
+    "warnings": "union (never dropped)",
+    "text": "newest"
+  },
+  "mergeNotes": [],
+  "needsReview": [
+    "2026-11-08 chromium: \"group\" has unexpected value \"age_60_plus_male\"; treated as not found",
+    "2026-11-08 chromium: \"group\" has unexpected value \"age_60_plus_female\"; treated as not found"
+  ]
+}

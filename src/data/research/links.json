@@ -1,6 +1,6 @@
 {
   "schema": "fitplate.links.v1",
-  "generatedFor": "Day19",
+  "generatedFor": "Day20",
   "goodSourceDishes": {
     "biotin": [
       {
@@ -161,6 +161,43 @@
         "dishNumber": 56,
         "dishName": "Pesarattu",
         "dishId": "056-pesarattu"
+      }
+    ],
+    "chromium": [
+      {
+        "dishNumber": 17,
+        "dishName": "Palak Paneer",
+        "dishId": "017-palak-paneer"
+      },
+      {
+        "dishNumber": 12,
+        "dishName": "Rajma Chawal",
+        "dishId": "012-rajma-chawal"
+      },
+      {
+        "dishNumber": 71,
+        "dishName": "Ragi Dosa",
+        "dishId": "071-ragi-dosa"
+      },
+      {
+        "dishNumber": 46,
+        "dishName": "Methi Thepla",
+        "dishId": "046-methi-thepla"
+      },
+      {
+        "dishNumber": 56,
+        "dishName": "Pesarattu",
+        "dishId": "056-pesarattu"
+      },
+      {
+        "dishNumber": 66,
+        "dishName": "Sprouts Chaat",
+        "dishId": "066-sprouts-chaat"
+      },
+      {
+        "dishNumber": 8,
+        "dishName": "Chole (Chana Masala)",
+        "dishId": "008-chole-chana-masala"
       }
     ],
     "copper": [
@@ -324,6 +361,38 @@
         "dishNumber": 56,
         "dishName": "Pesarattu",
         "dishId": "056-pesarattu"
+      }
+    ],
+    "molybdenum": [
+      {
+        "dishNumber": 12,
+        "dishName": "Rajma Chawal",
+        "dishId": "012-rajma-chawal"
+      },
+      {
+        "dishNumber": 5,
+        "dishName": "Dal Tadka",
+        "dishId": "005-dal-tadka"
+      },
+      {
+        "dishNumber": 41,
+        "dishName": "Pongal",
+        "dishId": "041-pongal"
+      },
+      {
+        "dishNumber": 56,
+        "dishName": "Pesarattu",
+        "dishId": "056-pesarattu"
+      },
+      {
+        "dishNumber": 66,
+        "dishName": "Sprouts Chaat",
+        "dishId": "066-sprouts-chaat"
+      },
+      {
+        "dishNumber": 8,
+        "dishName": "Chole",
+        "dishId": "008-chole-chana-masala"
       }
     ],
     "niacin": [
@@ -1214,6 +1283,7 @@
     "017-palak-paneer": [
       "biotin",
       "calcium",
+      "chromium",
       "phosphorus",
       "riboflavin",
       "vitamin-a",
@@ -1315,11 +1385,13 @@
     ],
     "071-ragi-dosa": [
       "calcium",
+      "chromium",
       "copper",
       "manganese"
     ],
     "046-methi-thepla": [
       "calcium",
+      "chromium",
       "iron",
       "manganese",
       "riboflavin",
@@ -1341,7 +1413,9 @@
     ],
     "066-sprouts-chaat": [
       "chloride",
+      "chromium",
       "copper",
+      "molybdenum",
       "potassium",
       "sodium",
       "vitamin-b6"
@@ -1352,15 +1426,19 @@
     ],
     "056-pesarattu": [
       "chloride",
+      "chromium",
       "copper",
       "iron",
       "manganese",
+      "molybdenum",
       "phosphorus",
       "potassium",
       "sodium"
     ],
     "012-rajma-chawal": [
+      "chromium",
       "copper",
+      "molybdenum",
       "niacin",
       "pantothenic-acid",
       "phosphorus",
@@ -1368,8 +1446,10 @@
       "thiamine"
     ],
     "008-chole-chana-masala": [
+      "chromium",
       "copper",
       "manganese",
+      "molybdenum",
       "pantothenic-acid",
       "riboflavin",
       "thiamine",
@@ -1448,6 +1528,14 @@
     "006-upma": [
       "manganese"
     ],
+    "005-dal-tadka": [
+      "molybdenum",
+      "phosphorus",
+      "thiamine"
+    ],
+    "041-pongal": [
+      "molybdenum"
+    ],
     "023-mutton-rogan-josh": [
       "niacin",
       "vitamin-b12",
@@ -1481,10 +1569,6 @@
       "pantothenic-acid",
       "thiamine",
       "vitamin-a"
-    ],
-    "005-dal-tadka": [
-      "phosphorus",
-      "thiamine"
     ],
     "060-aloo-matar": [
       "potassium",
@@ -1636,6 +1720,11 @@
       "met": 3.8
     },
     {
+      "exerciseId": "cable-crossover-fly",
+      "name": "Cable crossover and cable fly",
+      "met": 3.5
+    },
+    {
       "exerciseId": "calf-raise",
       "name": "Calf raise (standing and seated machines)",
       "met": 3.5
@@ -1736,6 +1825,11 @@
       "met": 2.8
     },
     {
+      "exerciseId": "pec-deck",
+      "name": "Pec deck (fly machine)",
+      "met": 3.5
+    },
+    {
       "exerciseId": "plank-and-side-plank",
       "name": "Plank and side plank",
       "met": 2.8
@@ -1771,6 +1865,11 @@
       "met": 5.8
     },
     {
+      "exerciseId": "step-ups-stair-or-bench",
+      "name": "Step-ups (stair or bench): forward step-up, lateral step-up, step-down control, dumbbell progression",
+      "met": 3.8
+    },
+    {
       "exerciseId": "superman-back-raise",
       "name": "Superman back raise (lower-range, alternating bird-dog style and full versions)",
       "met": 2.8
@@ -1789,6 +1888,11 @@
       "exerciseId": "treadmill",
       "name": "Treadmill",
       "met": 4.8
+    },
+    {
+      "exerciseId": "vrikshasana-tree-pose",
+      "name": "Vrikshasana (Tree pose)",
+      "met": 2.3
     },
     {
       "exerciseId": "wall-sit",
@@ -3854,6 +3958,11 @@
         "unit": "µg",
         "source": "ingredient research (USDA FDC: USDA FDC 171324 'Spices, fenugreek seed'; values seen only on secondary sites that mirror it (getfoodfacts, foodstruct, vegnt, nutrientnorms); zero by composition: cholesterol_mg, vitamin_b12_ug)"
       },
+      "chromium": {
+        "per100": 39,
+        "unit": "µg",
+        "source": "nutrient research (chromium food sources)"
+      },
       "riboflavin": {
         "per100": 0.22,
         "unit": "mg",
@@ -4834,6 +4943,11 @@
         "per100": 625,
         "unit": "µg",
         "source": "ingredient research (USDA FDC: FDC ID 174256, Mung beans, mature seeds, raw (SR Legacy; whole seed used as proxy for split dal), via secondary sites)"
+      },
+      "molybdenum": {
+        "per100": 162,
+        "unit": "µg",
+        "source": "nutrient research (molybdenum food sources)"
       },
       "phosphorus": {
         "per100": 416,
@@ -6360,6 +6474,11 @@
         "unit": "µg",
         "source": "nutrient research (biotin food sources)"
       },
+      "chromium": {
+        "per100": 28,
+        "unit": "µg",
+        "source": "nutrient research (chromium food sources)"
+      },
       "manganese": {
         "per100": 1.12,
         "unit": "mg",
@@ -6647,6 +6766,11 @@
         "per100": 1.14,
         "unit": "mg",
         "source": "nutrient research (copper food sources)"
+      },
+      "molybdenum": {
+        "per100": 131,
+        "unit": "µg",
+        "source": "nutrient research (molybdenum food sources)"
       },
       "thiamine": {
         "per100": 0.45,

@@ -1,0 +1,660 @@
+{
+  "id": "vrikshasana-tree-pose",
+  "number": 12,
+  "name": "Vrikshasana (Tree pose)",
+  "otherNames": [
+    "Tree pose",
+    "Vrksasana",
+    "Vrikshasana",
+    "Vriksasana",
+    "Tree balance"
+  ],
+  "section": "yoga_stretch",
+  "type": "yoga_asana",
+  "equipment": [
+    "wall or sturdy chair (optional)",
+    "non-slip mat (optional)",
+    "yoga block (optional)"
+  ],
+  "noEquipmentAlternative": "Bare feet on a flat, non-slip floor with fingertips lightly on a wall",
+  "musclesPrimary": [
+    "standing-leg stabilisers (gluteus medius, gluteus minimus, quadriceps)",
+    "ankle muscles (tibialis anterior, peroneals, gastrocnemius, soleus)",
+    "deep core (transversus abdominis)"
+  ],
+  "musclesSecondary": [
+    "hip adductors and external rotators of the raised leg",
+    "foot arch muscles",
+    "erector spinae",
+    "deltoids (arms overhead)"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 2.3,
+  "compendiumCode": "02150",
+  "metOptions": [
+    {
+      "code": "02150",
+      "met": 2.3,
+      "activity": "MET: 2.3, 2024 Adult Compendium of Physical Activities, code 02150, \"Yoga, Hatha\" (Conditioning Exercise heading); the 2011 edition gave 2.5, so cite the edition. This matches the beginner prescriptio"
+    },
+    {
+      "code": "02101",
+      "met": 2.2,
+      "activity": "MET: 2.3, 2024 Adult Compendium of Physical Activities, code 02150, \"Yoga, Hatha\" (Conditioning Exercise heading); the 2011 edition gave 2.5, so cite the edition. This matches the beginner prescriptio"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "flexibility",
+      "sets": 2,
+      "reps": "1 hold per side, foot at ankle or calf, wall nearby",
+      "timeSec": 20,
+      "restSec": 15,
+      "tempo": "slow nose breathing, eyes on one point",
+      "perWeek": 4
+    },
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 2,
+      "reps": "1 hold per side, foot at calf",
+      "timeSec": 25,
+      "restSec": 15,
+      "tempo": "slow nose breathing",
+      "perWeek": 4
+    },
+    {
+      "level": "beginner",
+      "goal": "relaxation",
+      "sets": 2,
+      "reps": "1 hold per side, hands at chest",
+      "timeSec": 20,
+      "restSec": 15,
+      "tempo": "slow breath each hold",
+      "perWeek": 5
+    },
+    {
+      "level": "intermediate",
+      "goal": "flexibility",
+      "sets": 3,
+      "reps": "1 hold per side, foot at inner thigh",
+      "timeSec": 30,
+      "restSec": 15,
+      "tempo": "slow nose breathing",
+      "perWeek": 4
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "1 hold per side",
+      "timeSec": 40,
+      "restSec": 15,
+      "tempo": "slow nose breathing",
+      "perWeek": 4
+    },
+    {
+      "level": "advanced",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "1 hold per side, arms overhead or eyes up",
+      "timeSec": 60,
+      "restSec": 20,
+      "tempo": "slow nose breathing",
+      "perWeek": 5
+    },
+    {
+      "level": "advanced",
+      "goal": "relaxation",
+      "sets": 2,
+      "reps": "1 hold per side, slow breathing",
+      "timeSec": 45,
+      "restSec": 20,
+      "tempo": "slow breath each hold",
+      "perWeek": 5
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "hold_timer",
+    "cameraView": "front",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "standing_leg_straight",
+        "joint": "standing knee (hip-knee-ankle)",
+        "angleDeg": ">= 165",
+        "parsed": {
+          "op": ">=",
+          "value": 165,
+          "max": null
+        }
+      },
+      {
+        "name": "raised_knee_bent",
+        "joint": "raised knee (hip-knee-ankle)",
+        "angleDeg": "<= 120",
+        "parsed": {
+          "op": "<=",
+          "value": 120,
+          "max": null
+        }
+      },
+      {
+        "name": "hip_level",
+        "joint": "hip line tilt from horizontal",
+        "angleDeg": "<= 10",
+        "parsed": {
+          "op": "<=",
+          "value": 10,
+          "max": null
+        }
+      },
+      {
+        "name": "hold_long_enough",
+        "joint": "time",
+        "angleDeg": "hold >= 10 s (position flag, not an angle)",
+        "parsed": null
+      }
+    ],
+    "minRepSec": 10
+  },
+  "formChecks": [
+    {
+      "joint": "standing knee",
+      "rule": "standing knee angle < 165 deg (equals standing_leg_straight phase threshold; knee bent)",
+      "message": "Straighten the standing leg, knee soft"
+    },
+    {
+      "joint": "raised knee",
+      "rule": "raised knee angle > 120 deg (equals raised_knee_bent phase threshold; foot not lifted or leg too straight)",
+      "message": "Bend the raised knee and bring the foot to your leg"
+    },
+    {
+      "joint": "hips",
+      "rule": "hip line tilt > 10 deg (equals hip_level phase threshold; hip popping out)",
+      "message": "Level your hips: headlights forward"
+    },
+    {
+      "joint": "raised ankle",
+      "rule": "raised ankle at standing-knee height within about one knee-width band (position flag, not an angle)",
+      "message": "Foot off the knee: move it above or below"
+    },
+    {
+      "joint": "time",
+      "rule": "hold shorter than 10 s (equals min_rep_sec and hold_long_enough)",
+      "message": "Stay a little longer, breathe slowly"
+    }
+  ],
+  "safetyFlags": [
+    "never_foot_on_knee_joint",
+    "use_wall_or_chair_if_wobbly",
+    "stop_for_dizziness_or_sharp_joint_pain",
+    "hands_at_chest_with_high_blood_pressure",
+    "vertigo_or_dizziness_avoid_or_use_chair",
+    "recent_ankle_knee_hip_injury_or_surgery_ask_doctor",
+    "pregnancy_wall_support",
+    "osteoporosis_wall_or_chair",
+    "no_breath_holding"
+  ],
+  "progressions": [
+    "Foot at the inner thigh with hands overhead",
+    "Eyes up or slow head turn once steady",
+    "Eyes closed for 3 to 5 breaths near a wall (est.)"
+  ],
+  "regressions": [
+    "Kickstand: toes on the floor, heel at the ankle",
+    "Wall or chair support with fingertips",
+    "Foot at the inner ankle or calf, hands at the chest, optional block"
+  ],
+  "videoShots": [
+    {
+      "seconds": 6,
+      "angle": "front, 2.5 m",
+      "shows": "mountain pose, even weight, gaze on a point",
+      "textOverlay": "Stand tall. Pick a point."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 2.5 m",
+      "shows": "weight shift, lift the foot, place at the ankle (kickstand)",
+      "textOverlay": "Shift. Lift. Foot low."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 2 m",
+      "shows": "three foot heights: ankle, calf, inner thigh",
+      "textOverlay": "Ankle, calf or thigh. Never the knee."
+    },
+    {
+      "seconds": 6,
+      "angle": "front, 1 m",
+      "shows": "wrong (foot on knee) vs right (foot above or below)",
+      "textOverlay": "Not on the knee."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 2.5 m",
+      "shows": "hands to the chest, then slowly overhead",
+      "textOverlay": "Hands at chest or overhead."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 2.5 m",
+      "shows": "hold: hips level, eyes on the point",
+      "textOverlay": "Hips level. Eyes steady."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "wall support: fingertips on the wall, then no wall",
+      "textOverlay": "Touch the wall lightly."
+    },
+    {
+      "seconds": 6,
+      "angle": "front, 2.5 m",
+      "shows": "wrong (hip jutting, looking down) vs right",
+      "textOverlay": "Headlights forward."
+    }
+  ],
+  "lastResearched": "2026-11-08",
+  "setupSteps": [
+    "Space and floor. Clear about a 1 m × 1 m patch of flat, non-slip floor. Bare feet or a sticky mat on a hard floor; never socks on tiles or a thick, squishy mat that makes balance harder.",
+    "Wall. Stand about one arm's length from a wall or beside a sturdy chair or countertop. A beginner can start with the back or the side of the body near the wall.",
+    "Clothing. Wear clothes that let the knee bend and the hip open (shorts, leggings, loose pants rolled up). Avoid a long kurta or dupatta that can get under the standing foot.",
+    "Stance start. Stand tall with feet together or about 5 cm apart (the AYUSH protocol text, as seen in snippets, mentioned about two inches apart), weight even on both feet.",
+    "Pick a drishti (gaze point). Choose a still point at eye level on the wall, such as a mark or a picture frame, before lifting anything.",
+    "Camera. Phone on a shelf at hip height, 2 to 2.5 m in front (see sections 11 and 12)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Stand tall in Mountain pose",
+      "action": "feet together, arms by the sides, shoulders down, crown of the head lifted.",
+      "feel": "weight even through both feet, light core engagement.",
+      "breathing": "2 slow breaths in and out through the nose.",
+      "tempo": "5 seconds.",
+      "visualCheck": "front view, head, shoulders and hips level; side view, ear over shoulder over hip over ankle."
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Fix your gaze",
+      "action": "look at the chosen point at eye level and keep looking.",
+      "feel": "the head settles and the eyes soften.",
+      "breathing": "slow and even.",
+      "tempo": "stay on the point for the whole pose.",
+      "visualCheck": "chin level, not dropped toward the floor."
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Shift weight to the standing foot",
+      "action": "slowly move weight onto the left foot, pressing through the big toe, little toe and heel.",
+      "feel": "the standing leg wakes up; the other foot gets light.",
+      "breathing": "out-breath as you shift.",
+      "tempo": "2 to 3 seconds.",
+      "visualCheck": "front view, hips stay level; the standing hip does not push out sideways."
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Soften the standing knee",
+      "action": "keep the left leg straight but with the knee soft, never locked back.",
+      "feel": "thigh engaged, no strain behind the knee.",
+      "breathing": "steady.",
+      "tempo": "1 second.",
+      "visualCheck": "side view, knee straight but not pushed back."
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Lift the right foot, bending the knee",
+      "action": "bend the right knee and lift the foot off the floor, with the knee turning out to the side.",
+      "feel": "a gentle opening in the right hip.",
+      "breathing": "in-breath as you lift.",
+      "tempo": "2 to 3 seconds.",
+      "visualCheck": "front view, the raised knee points out to the side, hips still level."
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Place the foot (choose one height)",
+      "action": "set the sole of the right foot against the left leg. Beginner: toes on the floor with the heel at the left ankle (\"kickstand\"), or the foot on the inner ankle. Next level: the inner calf, below the knee. Advanced: the inner thigh, above the knee. Press the foot and the leg gently into each other. Never press the foot into the knee.",
+      "feel": "steady pressure between foot and leg; no pinch at the knee.",
+      "breathing": "slow out-breath.",
+      "tempo": "3 seconds to settle.",
+      "visualCheck": "front view, the foot sits clearly below or above the standing knee, not on it."
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Square the hips",
+      "action": "draw both hip points forward, like two headlights shining ahead, so the pelvis does not twist.",
+      "feel": "even weight, lower belly gently drawn in.",
+      "breathing": "steady.",
+      "tempo": "2 seconds.",
+      "visualCheck": "front view, hip line level; the raised-side hip is not jutting out."
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Bring the hands to the chest",
+      "action": "palms together in front of the chest (Anjali mudra), thumbs resting on the breastbone.",
+      "feel": "the chest lifts, shoulders relax.",
+      "breathing": "slow, deep breath in.",
+      "tempo": "2 seconds.",
+      "visualCheck": "front view, elbows out, shoulders not shrugged."
+    },
+    {
+      "n": 9,
+      "part": null,
+      "title": "Optional: raise the arms",
+      "action": "only if you are comfortable and have no high blood pressure concern, slowly raise the arms overhead, palms together or shoulder-width apart.",
+      "feel": "a lift through the sides of the body; no strain in the neck.",
+      "breathing": "breathe in as the arms rise.",
+      "tempo": "3 seconds.",
+      "visualCheck": "front view, ribs not flared, shoulders away from the ears."
+    },
+    {
+      "n": 10,
+      "part": null,
+      "title": "Hold",
+      "action": "stay steady, eyes on the point, small wobbles are normal.",
+      "feel": "ankle and hip making tiny corrections.",
+      "breathing": "slow nose breaths, do not hold your breath.",
+      "tempo": "20 to 30 seconds (about 5 to 8 breaths; chosen). Sources give breaths, not seconds: 5 to 8 and 5 to 10 breaths were seen.",
+      "visualCheck": "standing knee soft, hips level, head tall."
+    },
+    {
+      "n": 11,
+      "part": null,
+      "title": "Release",
+      "action": "lower the arms, then lower the raised foot slowly back to the floor, returning to Mountain pose.",
+      "feel": "a shake-out of the legs; warmth.",
+      "breathing": "slow out-breath.",
+      "tempo": "3 to 5 seconds.",
+      "visualCheck": "stand evenly on both feet."
+    },
+    {
+      "n": 12,
+      "part": null,
+      "title": "Repeat on the other side. Do the same hold on the right leg. Use the same height of foot placement on each side, or go lower on the harder side",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Foot on the knee joint",
+      "text": "Foot on the knee joint. A foot pressed into the side of the standing knee can strain the joint sideways. Fix: move the foot below the knee (calf or ankle) or above it (inner thigh)."
+    },
+    {
+      "title": "Looking down or around",
+      "text": "Looking down or around. The eyes drifting causes the head to drop and balance to go. Fix: choose an eye-level point before lifting the foot and keep it."
+    },
+    {
+      "title": "Hip jutting out to the side",
+      "text": "Hip jutting out to the side. The raised-side hip pops up and the torso twists, so balance is lost and the standing hip is over-loaded. Fix: draw both hip points forward and keep the hips level."
+    },
+    {
+      "title": "Locking the standing knee back",
+      "text": "Locking the standing knee back. It can strain the back of the knee and makes sway worse. Fix: keep a soft bend and engage the thigh."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. It raises tension and makes wobbles worse. Fix: breathe slowly through the nose."
+    },
+    {
+      "title": "Rushing up to the thigh",
+      "text": "Rushing up to the thigh. Too-high placement with a stiff hip makes the pelvis tilt or the knee torque. Fix: start with toes on the floor or the ankle and move up only when steady."
+    },
+    {
+      "title": "Gripping the foot or leg too hard with the toes",
+      "text": "Gripping the foot or leg too hard with the toes. It tires the foot and adds tension. Fix: press with the whole sole, keep the toes loose."
+    },
+    {
+      "title": "Arms overhead with high blood pressure or neck tension",
+      "text": "Arms overhead with high blood pressure or neck tension. Some teaching sources advise keeping hands at the chest if you have high blood pressure. Fix: Anjali mudra at the chest."
+    },
+    {
+      "title": "Practising on a slippery or soft surface, or in socks",
+      "text": "Practising on a slippery or soft surface, or in socks. Higher risk of slipping. Fix: bare feet on a flat, non-slip floor; wall nearby."
+    }
+  ],
+  "safetyNotes": [
+    "Foot placement: never on the knee joint. Use ankle, calf or inner thigh. Skip if placing the foot hurts the hip or knee.",
+    "Balance and falls: always start near a wall or sturdy support; the pose is a balance challenge, so use support if you wobble repeatedly.",
+    "Dizziness, vertigo, low or high blood pressure: sources listed vertigo and low blood pressure (when held too long) as cautions; one source also listed headache and insomnia as cautions. Skip arms overhead with high blood pressure.",
+    "Recent injury or surgery: one source advised against the pose for ankle or knee injuries less than 3 months old; others list hip, knee and shoulder injuries as reasons to modify. Ask a doctor.",
+    "Pregnancy: prenatal yoga sources advise a wall or chair nearby because balance can be affected by shifting centre of gravity; one prenatal page said to avoid the pose with symphysis pubis dysfunction (SPD). An ACOG statement on tree pose was Not found.",
+    "Stop immediately if you feel: sudden dizziness, sharp pain in the knee, hip or ankle, a twisting or popping feeling in the knee, chest pain, shortness of breath or a feeling of fainting.",
+    "Spotter: not needed; use a wall or chair as support.",
+    "Gym etiquette: use a clear spot in the stretching area, away from walkways and free weights."
+  ],
+  "sources": [
+    "Ministry of AYUSH Common Yoga Protocol, via third-party copies (seen only as snippets; official PDF not fetched): https://www.artofliving.org/international-yoga-day/Common-Yoga-Protocol ; https://new1.isro.gov.in/media_isro/pdf/CYP%20english.pdf ; https://www.scribd.com/document/521167185/Common-Yoga-Protocol-English",
+    "Art of Living, Tree pose (Vrikshasana) page; blood pressure and arms (snippets): https://www.artofliving.org/tree-pose-vrikshasana",
+    "Brett Larkin, tree pose techniques and variations (snippet): https://www.brettlarkin.com/tree-pose-vrikasana/ ; Apollo 247, tree pose benefits, steps and precautions (snippet): https://www.apollo247.com/health-topics/general-medical-consultation/benefits-steps-and-precautions-for-tree-pose",
+    "Foot placement and knee avoidance (snippets): Amy Jarvis, Does foot placement in tree pose really matter?: https://amymjarvis.substack.com/p/does-foot-placement-in-tree-pose ; Yoga Matters pose library: https://www.yogamatters.com/blogs/pose-library/tree-pose-vrikshasana ; Yoga Journal, 3 ways to safely modify tree pose: https://www.yogajournal.com/poses/3-ways-safely-modify-tree-pose",
+    "Gaze, wall support and hip alignment (snippets): Yoga with Adriene tree pose text: https://yogawithadriene.com/wp-content/uploads/2021/06/Tree-Pose-Vrksasana.en_.txt ; Momoyoga: https://momoyoga.com/en/blog/find-your-balance-in-tree-pose ; Gurukul Yogashala: https://gurukulyogashala.com/blog/?p=3466 ; Inside Yoga: https://insideyoga.org/asana-library/vrksasana/",
+    "Prenatal Yoga Center, Tree pose (pregnancy; snippet): https://prenatalyogacenter.com/tree-pose-vrksasana",
+    "Yoga for balance in people aged 60 and over, systematic review and meta-analysis (snippet): https://pubmed.ncbi.nlm.nih.gov/26707903/ ; Duke Health on yoga and falls (snippet): https://dhwblog.dukehealth.org/yoga-may-boost-balance-and-help-prevent-falls/",
+    "Larson-Meyer DE, Energy cost of yoga asanas, systematic review, Med Sci Sports Exerc 2016 (snippets): https://pubmed.ncbi.nlm.nih.gov/27433961/",
+    "Herrmann SD et al., 2024 Adult Compendium of Physical Activities (02150 Yoga, Hatha 2.3): https://pacompendium.com/conditioning-exercise ; https://pubmed.ncbi.nlm.nih.gov/38242596/",
+    "Osteoporosis and yoga (snippets): https://osteoporosis.ca/?p=22995 ; https://www.yogaanytime.com/blog/asana/osteoporosis-safe-yoga-poses",
+    "Condition sources (general, from earlier items): ADA PMC5317029: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/ ; BHF cool-down: https://www.bhf.org.uk/informationsupport/heart-matters-magazine/activity/cool-down-exercises ; PCOS position statement: https://researchers.westernsydney.edu.au/en/publications/exercise-in-the-management-of-polycystic-ovary-syndrome-a-positio/ ; Marshfield Clinic asthma: https://shine365.marshfieldclinic.org/wellness/asthma-exercise/ ; ECU Health asthma: https://healthlibrary.ecuhealth.org/lung-health/management/asthma-management-exercise-safety",
+    "Hold time: sources give 5 to 8 or 5 to 10 breaths. We chose 20 to 30 seconds, about 5 to 8 breaths.",
+    "Foot height: ankle (beginner), calf, inner thigh (advanced); the knee joint is avoided. We start beginners at the ankle or kickstand.",
+    "Arms: chest or overhead; we default to the chest and advise it for high blood pressure.",
+    "Official AYUSH or MDNIY step text for Vrikshasana: Not found (CYP content seen only as snippets from third-party copies).",
+    "Tree-pose-specific MET, joint-angle norms, and sway norms: Not found. Our thresholds are estimates.",
+    "Pose-specific condition sources (most rows; ACOG pregnancy wording; clinical knee OA guidance): Not found.",
+    "Most pages were seen only as search snippets; direct page fetches were not possible."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 43.5,
+      "70kg": 37.3,
+      "80kg": 32.6
+    },
+    "per300kcal": {
+      "60kg": 130.4,
+      "70kg": 111.8,
+      "80kg": 97.8
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "yoga",
+    "mobility",
+    "balance",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "small_flat",
+    "quiet",
+    "office_desk",
+    "3_5_min",
+    "warm_up",
+    "morning",
+    "evening",
+    "relaxation"
+  ],
+  "swapsByAccess": {
+    "none": "Kickstand or wall-supported version; or a single-leg stand holding a chair",
+    "home_equipment": "Yoga block or rolled towel under the raised foot; chair for hand support",
+    "basic_gym": "Squat rack upright or wall for light hand support",
+    "full_gym": "Cable-column upright or stable machine frame for light hand support away from moving parts"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "Hands at the chest, not overhead; breathe steadily; ask a doctor if on treatment",
+      "source": "Several yoga teaching sites (snippets); Not found (clinical)"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "modify",
+      "change": "Check feet for sores or numbness; use a wall; eat before practice if on glucose-lowering medicine; ask a doctor",
+      "source": "ADA PMC5317029 (general); Not found (pose-specific)"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "Light standing poses may be part of a warm-up or cool-down; avoid breath-holding and overhead arms; ask the cardiac team",
+      "source": "BHF cool-down (general); Not found (pose-specific)"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "No change (source not found)",
+      "source": "Not found"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Wall or chair, foot at ankle or calf, shorter holds",
+      "source": "Not found"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "No pose-specific caution found",
+      "source": "PCOS exercise position statement (general); Not found (pose-specific)"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "No pose-specific caution found; skip if dizzy",
+      "source": "Not found"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Reliever inhaler nearby; slow nose breathing; stop if wheezing",
+      "source": "Marshfield Clinic and ECU Health asthma exercise-safety pages (general)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Foot at the ankle or kickstand only; never on the knee; wall support; stop if the knee hurts",
+      "source": "Teaching sources (snippets); Not found (clinical OA guidance)"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Neutral spine, hands at the chest, wall support; avoid twisting; stop if pain or leg symptoms increase",
+      "source": "Not found (pose-specific)"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "modify",
+      "change": "Hands at the chest; skip overhead arms",
+      "source": "One yoga source (snippet); Not found (clinical)"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "modify",
+      "change": "Wall or chair for every balance pose; preventing a fall is the main aim; ask a doctor",
+      "source": "Osteoporosis Canada yoga guidance and other yoga-and-osteoporosis pages (snippets)"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "modify",
+      "change": "Wall or chair nearby; lower foot placement; avoid with symphysis pubis dysfunction; ask a midwife or doctor",
+      "source": "Prenatal Yoga Center tree pose page (snippet); Not found (ACOG wording)"
+    },
+    {
+      "condition": "postpartum",
+      "status": "modify",
+      "change": "Start gently with the wall nearby; ask a physio if pelvic or back pain",
+      "source": "Not found"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Follow the surgeon's advice; avoid single-leg standing after ankle, knee, hip or abdominal surgery until cleared",
+      "source": "Not found (pose-specific); one yoga source on recent ankle or knee injury (snippet)"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "home",
+      "office_desk"
+    ],
+    "bodyRegion": [
+      "lower",
+      "core"
+    ],
+    "goalTags": [
+      "flexibility",
+      "relaxation",
+      "general_fitness"
+    ],
+    "intensity": "light",
+    "noise": "quiet",
+    "space": "mat_only",
+    "typicalMinutes": 4,
+    "kcalPer10min70kg": 27,
+    "difficulty1to5": 2,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Yoga & stretch",
+    "Home",
+    "Office desk",
+    "No equipment",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Yoga",
+    "Glutes",
+    "Legs",
+    "Core",
+    "Hold timer",
+    "Under 10 min"
+  ],
+  "needsReview": [
+    "rep_counter phase \"hold_long_enough\" (time): angle \"hold >= 10 s (position flag, not an angle)\" is not a parseable angle"
+  ],
+  "versions": [
+    {
+      "date": "2026-11-08",
+      "file": "FitPlate_Fitness_2026-11-08.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

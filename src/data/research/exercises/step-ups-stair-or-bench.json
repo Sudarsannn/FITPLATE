@@ -1,0 +1,818 @@
+{
+  "id": "step-ups-stair-or-bench",
+  "number": 12,
+  "name": "Step-ups (stair or bench): forward step-up, lateral step-up, step-down control, dumbbell progression",
+  "otherNames": [
+    "Step-up",
+    "Box step-up",
+    "Bench step-up",
+    "Stair step-up",
+    "Lateral step-up",
+    "Side step-up",
+    "Step-down"
+  ],
+  "section": "home",
+  "type": "strength",
+  "equipment": [
+    "stair step or sturdy low step stool or bench",
+    "wall or handrail for balance",
+    "dumbbells (progression only)"
+  ],
+  "noEquipmentAlternative": "Use the bottom stair or a very sturdy low stool; if none is available, use bodyweight squats to a chair (Home 1) or a supported reverse lunge (Home 5).",
+  "musclesPrimary": [
+    "quadriceps",
+    "gluteus maximus"
+  ],
+  "musclesSecondary": [
+    "hamstrings",
+    "gluteus medius",
+    "gluteus minimus",
+    "gastrocnemius",
+    "soleus",
+    "trunk stabilisers"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 3.8,
+  "compendiumCode": "02022",
+  "metOptions": [
+    {
+      "code": "02022",
+      "met": 3.8,
+      "activity": "MET: 3.8, Compendium code 02022, \"calisthenics (e.g., pushups, sit ups, pull-ups, lunges), moderate effort\" (2024 Adult Compendium of Physical Activities). This is the code that matches the beginner p"
+    },
+    {
+      "code": "02024",
+      "met": 2.8,
+      "activity": "Extras (text only, not used in the JSON): very first sessions at light effort 3-4/10 (Borg 9-11) could map to 02024 \"calisthenics, light effort\" = 2.8 METs (2.8 x 70 x 0.1667 = about 32.7 kcal per 10 "
+    },
+    {
+      "code": "17133",
+      "met": 4.5,
+      "activity": "Extras (text only, not used in the JSON): very first sessions at light effort 3-4/10 (Borg 9-11) could map to 02024 \"calisthenics, light effort\" = 2.8 METs (2.8 x 70 x 0.1667 = about 32.7 kcal per 10 "
+    },
+    {
+      "code": "17131",
+      "met": 6.8,
+      "activity": "Extras (text only, not used in the JSON): very first sessions at light effort 3-4/10 (Borg 9-11) could map to 02024 \"calisthenics, light effort\" = 2.8 METs (2.8 x 70 x 0.1667 = about 32.7 kcal per 10 "
+    },
+    {
+      "code": "02001",
+      "met": 5.5,
+      "activity": "Extras (text only, not used in the JSON): very first sessions at light effort 3-4/10 (Borg 9-11) could map to 02024 \"calisthenics, light effort\" = 2.8 METs (2.8 x 70 x 0.1667 = about 32.7 kcal per 10 "
+    },
+    {
+      "code": "02002",
+      "met": 7.3,
+      "activity": "Extras (text only, not used in the JSON): very first sessions at light effort 3-4/10 (Borg 9-11) could map to 02024 \"calisthenics, light effort\" = 2.8 METs (2.8 x 70 x 0.1667 = about 32.7 kcal per 10 "
+    },
+    {
+      "code": "02003",
+      "met": 9,
+      "activity": "Extras (text only, not used in the JSON): very first sessions at light effort 3-4/10 (Borg 9-11) could map to 02024 \"calisthenics, light effort\" = 2.8 METs (2.8 x 70 x 0.1667 = about 32.7 kcal per 10 "
+    },
+    {
+      "code": "02065",
+      "met": 9.3,
+      "activity": "Extras (text only, not used in the JSON): very first sessions at light effort 3-4/10 (Borg 9-11) could map to 02024 \"calisthenics, light effort\" = 2.8 METs (2.8 x 70 x 0.1667 = about 32.7 kcal per 10 "
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "6-8 forward step-ups per leg on a 10-15 cm step",
+      "timeSec": null,
+      "restSec": 50,
+      "tempo": "1-2 s up, 1 s pause, 2-3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 2,
+      "reps": "8 forward step-ups per leg in a circuit",
+      "timeSec": null,
+      "restSec": 30,
+      "tempo": "1-2 s up, 1 s pause, 2-3 s down",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "strength",
+      "sets": 3,
+      "reps": "5-6 forward step-ups per leg on the same step",
+      "timeSec": null,
+      "restSec": 70,
+      "tempo": "1-2 s up, 1 s pause, 2-3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "10 forward step-ups per leg",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "1-2 s up, 1 s pause, 2-3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "8-10 step-ups per leg on a 15-25 cm step or lateral step-ups",
+      "timeSec": null,
+      "restSec": 50,
+      "tempo": "1-2 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "10-12 step-ups per leg",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "1-2 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "12-15 step-ups per leg",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "1-2 s up, 1 s pause, 2-3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": 4,
+      "reps": "4-6 step-ups per leg with dumbbells at the sides",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "1-2 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "8-12 step-ups per leg with dumbbells",
+      "timeSec": null,
+      "restSec": 70,
+      "tempo": "1-2 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_ear",
+      "right_ear",
+      "left_shoulder",
+      "right_shoulder",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle",
+      "left_heel",
+      "right_heel",
+      "left_foot_index",
+      "right_foot_index"
+    ],
+    "phases": [
+      {
+        "name": "loaded_start_knee_counts",
+        "joint": "lead knee (hip-knee-ankle)",
+        "angleDeg": "<= 150",
+        "parsed": {
+          "op": "<=",
+          "value": 150,
+          "max": null
+        }
+      },
+      {
+        "name": "depth_limit_knee",
+        "joint": "lead knee (hip-knee-ankle)",
+        "angleDeg": ">= 90",
+        "parsed": {
+          "op": ">=",
+          "value": 90,
+          "max": null
+        }
+      },
+      {
+        "name": "top_knee",
+        "joint": "lead knee (hip-knee-ankle)",
+        "angleDeg": ">= 165",
+        "parsed": {
+          "op": ">=",
+          "value": 165,
+          "max": null
+        }
+      },
+      {
+        "name": "top_hip",
+        "joint": "lead hip (shoulder-hip-knee)",
+        "angleDeg": ">= 165",
+        "parsed": {
+          "op": ">=",
+          "value": 165,
+          "max": null
+        }
+      },
+      {
+        "name": "lean_limit_hip",
+        "joint": "lead hip (shoulder-hip-knee)",
+        "angleDeg": ">= 100",
+        "parsed": {
+          "op": ">=",
+          "value": 100,
+          "max": null
+        }
+      },
+      {
+        "name": "neck_line",
+        "joint": "neck (ear-shoulder-hip)",
+        "angleDeg": ">= 150",
+        "parsed": {
+          "op": ">=",
+          "value": 150,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 3
+  },
+  "formChecks": [
+    {
+      "joint": "knee",
+      "rule": "lead knee angle > 150 degrees at the loaded start (equals loaded_start_knee_counts phase threshold): rep not counted",
+      "message": "Step a little higher or use a taller step"
+    },
+    {
+      "joint": "knee",
+      "rule": "lead knee angle < 90 degrees at the loaded start (equals depth_limit_knee phase threshold)",
+      "message": "Step is too high: use a lower step"
+    },
+    {
+      "joint": "knee",
+      "rule": "lead knee angle < 165 degrees at the top (equals top_knee phase threshold)",
+      "message": "Stand tall on the step"
+    },
+    {
+      "joint": "hip",
+      "rule": "lead hip angle < 165 degrees at the top (equals top_hip phase threshold)",
+      "message": "Squeeze your bottom and stand tall"
+    },
+    {
+      "joint": "hip",
+      "rule": "lead hip angle < 100 degrees at the loaded start (equals lean_limit_hip phase threshold)",
+      "message": "Chest up, smaller lean from the hips"
+    },
+    {
+      "joint": "neck",
+      "rule": "neck angle < 150 degrees (equals neck_line phase threshold)",
+      "message": "Eyes forward, neck long"
+    },
+    {
+      "joint": "knee",
+      "rule": "front view: knee inside the hip-ankle line beyond margin (position flag, not an angle)",
+      "message": "Knee caving in: point it over your second toe"
+    },
+    {
+      "joint": "hip",
+      "rule": "front view: hip height difference beyond margin (position flag, not an angle)",
+      "message": "Keep your hips level"
+    },
+    {
+      "joint": "knee",
+      "rule": "rep shorter than 3.0 s (rushing)",
+      "message": "Slow down: lower for 3 seconds"
+    },
+    {
+      "joint": "ankle",
+      "rule": "heel or toe landmarks off the step edge (position flag, not an angle)",
+      "message": "Whole foot on the step"
+    }
+  ],
+  "safetyFlags": [
+    "use_stable_low_step_10_to_15_cm_for_beginners",
+    "knee_bend_not_past_90_degrees",
+    "step_down_is_the_harder_phase_lower_slowly",
+    "knee_over_second_toe_no_collapse",
+    "light_fingertip_support_only_wall_or_handrail",
+    "test_step_non_slip_dry_surface",
+    "no_stomping_quiet_in_flat_and_stairwell",
+    "do_not_block_stairwell_or_fire_exit",
+    "knee_pain_use_very_low_step_no_step_downs",
+    "balance_problems_bottom_step_with_support",
+    "hypertension_no_breath_holding",
+    "heart_disease_get_clearance_first",
+    "dumbbells_only_after_clean_bodyweight_sets",
+    "pregnancy_ask_obstetrician",
+    "postpartum_ask_physiotherapist_first",
+    "recent_surgery_get_approval",
+    "stop_with_sharp_knee_pain_instability_dizziness_or_chest_pain"
+  ],
+  "progressions": [
+    "higher step (15-25 cm) with a 3 s controlled lowering",
+    "lateral step-up and step-down control",
+    "dumbbells held at the sides, then a goblet-style hold or knee drive (advanced)"
+  ],
+  "regressions": [
+    "lower step (5-10 cm) or partial step-up",
+    "fingertip support on a wall or rail, or a bar-assisted step-down (physiotherapy-guided)",
+    "sit-to-stand from a firm chair or supported bodyweight squat"
+  ],
+  "videoShots": [
+    {
+      "seconds": 7,
+      "angle": "side, hip height, 2 m",
+      "shows": "setup: low sturdy step, test it, wall or rail nearby",
+      "textOverlay": "Low and steady. Test it first."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, hip height, 2 m",
+      "shows": "forward step-up with 3 s slow lowering",
+      "textOverlay": "Whole foot. Push through the heel."
+    },
+    {
+      "seconds": 7,
+      "angle": "front, hip height, 2 m",
+      "shows": "knee over second toe, hips level; wrong knee-in version",
+      "textOverlay": "Knee over second toe."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, hip height, 2 m",
+      "shows": "step height guide: bottom stair vs high chair, knee bend not past 90 degrees",
+      "textOverlay": "Too high? Go lower."
+    },
+    {
+      "seconds": 7,
+      "angle": "side, hip height, 2 m, split screen",
+      "shows": "wrong vs right: pushing off the rear foot and stomping vs a light rear foot and soft landing",
+      "textOverlay": "Place, don't drop."
+    },
+    {
+      "seconds": 8,
+      "angle": "front or 45 degrees, hip height, 2 m",
+      "shows": "lateral step-up then step-down control",
+      "textOverlay": "Harder only when steady."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, hip height, 2 m",
+      "shows": "dumbbells at the sides progression and the sit-to-stand regression",
+      "textOverlay": "Add weight last."
+    },
+    {
+      "seconds": 6,
+      "angle": "side, hip height, 2 m",
+      "shows": "quiet building-stair technique, breathing, and stop sign for knee pain",
+      "textOverlay": "Quiet feet. Pain? Stop."
+    }
+  ],
+  "lastResearched": "2026-11-08",
+  "setupSteps": [
+    "Choose the step. Use the bottom stair (in an Indian building often 15-19 cm, est.), a heavy step stool, or a gym bench. Beginners aim for about 10-15 cm; add height only when 3 sets of 8 are smooth and pain-free. If a stair is higher than about 20 cm, start with the bottom stair only, or use a lower step; do not use a normal dining chair (about 45 cm, est.).",
+    "Test stability. Press down hard on the step with your hands, then your foot. It must not rock, slide, fold, flex or tip. Do not use a step with wheels, a wobbly stool, a stack of books, a cushion, a cane chair, a plastic garden chair that flexes, or a folding step that can close.",
+    "Check the surface. Dry, non-slip floor and a non-slip step top. Wet stairs in monsoon, polished marble and stair tiles with loose edges are not safe. Wear flat shoes with grip, or go barefoot on a dry rubber mat on a floor step; no socks on smooth floors.",
+    "Place the step against a wall (stool or bench) so that it cannot slide; for a building stair, stand with a handrail or wall within light reach on the side of the rail.",
+    "Stance. Stand tall, feet hip-width apart, facing the step about one foot-length (20-30 cm, est.) away. Eyes forward, ribs down, shoulders relaxed, arms by your sides or on your hips.",
+    "Foot position. The whole foot goes on the step, heel included, toes pointing forward, knee tracking over the second toe (not caving in).",
+    "Support rule. Use the wall or rail as light balance only: fingertips, not a pull. If you have to pull to get up, the step is too high.",
+    "Lighting and space (stairs). Good light, no shoes or bags on the stairs, nobody coming down, and not in a stairwell used as a fire exit at busy times (est.).",
+    "Camera. Phone in landscape at hip height (about 80-100 cm, est.), 2 m to your side (side view), with the full step and whole body visible.",
+    "Clothing. Fitted trousers or leggings and a fitted top so the camera sees hips, knees and ankles.",
+    "Warm up for 1-2 minutes with marching on the spot and a few bodyweight squats (Home 1) to a comfortable depth."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": "A. Beginner forward step-up (10-15 cm step, lead leg alternates by set)",
+      "title": "Stand tall facing the step",
+      "action": "Feet hip-width apart, about 20-30 cm (est.) from the step, hands on hips or fingertips on the wall.",
+      "feel": "Even weight on both feet; calm, upright.",
+      "breathing": "Breathe in normally.",
+      "tempo": null,
+      "visualCheck": "Side: ear, shoulder, hip and ankle roughly in a line. Front: shoulders and hips level."
+    },
+    {
+      "n": 2,
+      "part": "A. Beginner forward step-up (10-15 cm step, lead leg alternates by set)",
+      "title": "Place the lead foot",
+      "action": "Lift one foot and place the whole foot flat on the step, toes forward.",
+      "feel": "Heel and ball of the foot both pressed into the step; thigh engaged.",
+      "breathing": "Normal.",
+      "tempo": null,
+      "visualCheck": "Side: shin nearly upright, knee not far past the toes. Front: knee over the second toe, not falling inward."
+    },
+    {
+      "n": 3,
+      "part": "A. Beginner forward step-up (10-15 cm step, lead leg alternates by set)",
+      "title": "Lean slightly and shift weight onto the lead foot",
+      "action": "Lean the chest slightly forward from the hips, then move your weight over the lead foot. The rear foot stays on the floor and takes only a little weight.",
+      "feel": "Most of the weight in the lead heel and mid-foot.",
+      "breathing": "Breathe in.",
+      "tempo": null,
+      "visualCheck": "Side: trunk leaning only a little; hip not pushed far back."
+    },
+    {
+      "n": 4,
+      "part": "A. Beginner forward step-up (10-15 cm step, lead leg alternates by set)",
+      "title": "Press up",
+      "action": "Push through the lead heel and mid-foot to straighten the hip and knee and stand tall on the step. Do not push off the rear foot or bounce.",
+      "feel": "Thigh and bottom working on the step side.",
+      "breathing": "Breathe out as you rise.",
+      "tempo": null,
+      "visualCheck": "Side: smooth rise, no hip hitching. Front: knee and hip stay in line; pelvis stays level."
+    },
+    {
+      "n": 5,
+      "part": "A. Beginner forward step-up (10-15 cm step, lead leg alternates by set)",
+      "title": "Stand tall on the step",
+      "action": "Bring the rear foot up beside the lead foot or just tap it on the step; stand upright with the lead knee straight but not locked hard.",
+      "feel": "Tall, balanced, thigh and bottom squeezed.",
+      "breathing": "Let the breath settle.",
+      "tempo": null,
+      "visualCheck": "Side: knee and hip near straight (about 165 degrees or more, est.); torso upright. Front: hips level."
+    },
+    {
+      "n": 6,
+      "part": "A. Beginner forward step-up (10-15 cm step, lead leg alternates by set)",
+      "title": "Lower slowly (step-down control)",
+      "action": "Shift your weight onto the lead leg, then slowly lower the rear foot back to the floor, with the lead knee bending in a controlled way. Place the foot softly, toes first then heel, no stamping.",
+      "feel": "Thigh working to brake the descent; no wobble.",
+      "breathing": "Breathe in as you lower.",
+      "tempo": null,
+      "visualCheck": "Side: hips move back slightly, torso stays tall. Front: knee over the second toe, hips level."
+    },
+    {
+      "n": 7,
+      "part": "A. Beginner forward step-up (10-15 cm step, lead leg alternates by set)",
+      "title": "Return the lead foot",
+      "action": "Step the lead foot down beside the other so both feet are on the floor.",
+      "feel": "Balanced, weight even.",
+      "breathing": "Normal.",
+      "tempo": null,
+      "visualCheck": "Both feet flat, hip-width."
+    },
+    {
+      "n": 8,
+      "part": "A. Beginner forward step-up (10-15 cm step, lead leg alternates by set)",
+      "title": "Repeat",
+      "action": "Repeat from step 2 on the same leg for the planned reps (6-8 for a beginner), then change legs (or alternate legs each rep for a gentle, flowing version).",
+      "feel": "Smooth rhythm; stop if the knee pinches or balance wobbles.",
+      "breathing": "One full breath per rep.",
+      "tempo": null,
+      "visualCheck": "Same depth, tall finish and soft landing on the last rep as the first."
+    },
+    {
+      "n": 9,
+      "part": "A. Beginner forward step-up (10-15 cm step, lead leg alternates by set)",
+      "title": "Finish and rest",
+      "action": "Stand on the floor, shake out the legs.",
+      "feel": "Warm thighs; no joint pain.",
+      "breathing": "Three slow breaths.",
+      "tempo": null,
+      "visualCheck": "Stop for the day if a knee, hip or ankle hurts."
+    },
+    {
+      "n": 10,
+      "part": "B. Lateral step-up (intermediate)",
+      "title": "Stand sideways next to the step, near foot about 10 cm (est.) from it. Put the whole near foot on the step, toes forward, knee over the second toe",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 11,
+      "part": "B. Lateral step-up (intermediate)",
+      "title": "Keep the chest tall and the hips square (hips face forward, not twisted). Press through the near heel to stand tall on the step, tap the far foot beside it, then lower the far foot slowly to the floor (2-3 s). The far foot touches lightly; the near leg does the work",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 12,
+      "part": "B. Lateral step-up (intermediate)",
+      "title": "Do all reps on one side, then switch. Starting height: 10-15 cm; lateral usually bends the knee a little more than the forward version (a study in older adults found larger peak knee bend with lateral step-up than forward, est. same direction in young adults), so keep it as low as the forward version at first",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 13,
+      "part": "C. Step-down control (eccentric-focus step-up; intermediate)",
+      "title": "Stand on the step on one leg, other foot hovering beside it. Slowly bend the standing knee and sink down, tap the hovering heel lightly on the floor, then press back up",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 14,
+      "part": "C. Step-down control (eccentric-focus step-up; intermediate)",
+      "title": "Lower for 3 seconds (est.), keep the knee over the second toe, hips level and trunk tall. Use a low step (10-15 cm). Use a wall or rail for light balance. This is a knee-demanding version (the forward step-down gave higher patellofemoral force than step-up at the same knee bend; abstract only). If it causes knee pain, go back to the forward step-up or a smaller height",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 15,
+      "part": "D. Step-up holding dumbbells (advanced)",
+      "title": "Hold a light dumbbell in each hand at your sides (palms facing in), arms straight, shoulders down and back. Do the forward step-up exactly as in A, slower and with an upright chest. Start with weights you can control for 10-12 reps per leg (est.); a general weight-choice guide suggests small jumps of about 1-2.5 kg per dumbbell. Do not use a rail grip with dumbbells; use a lower step and a wall or no support. Stop if the weights swing or the posture slumps",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Step too high",
+      "text": "Step too high. Why: a step that forces the knee past about 90 degrees increases knee load, makes you pull on the rail and use the rear leg and momentum (ACE's older step guidance says knee bend should not pass 90 degrees under load; one study with aerobic steps found larger knee bend at higher steps, so people with knee issues should use low or medium steps). Fix: bottom stair or 10-15 cm step; build up slowly."
+    },
+    {
+      "title": "Pushing off the back foot",
+      "text": "Pushing off the back foot. Why: the rear leg does the work so the lead leg is not trained, and it hides balance problems (stated in a rehab handout and several coaching sources). Fix: keep the rear foot light; push through the lead heel."
+    },
+    {
+      "title": "Knee caving inward (valgus)",
+      "text": "Knee caving inward (valgus). Why: it is linked in clinical and coaching sources to more patellofemoral stress (the mechanism is inferred; a step-up-specific trial of how height affects valgus: Not found). Fix: cue the knee over the second toe, use a lower step, strengthen with the lateral step-up."
+    },
+    {
+      "title": "Dropping down fast or stomping",
+      "text": "Dropping down fast or stomping. Why: the lowering phase is harder on the knee than the rising phase (step-down gave higher patellofemoral force in the lab abstract) and it is loud in a flat. Fix: count 2-3 seconds down, place the foot toes first."
+    },
+    {
+      "title": "Leaning too far forward or backward",
+      "text": "Leaning too far forward or backward. Why: a big forward fold shifts the work to the back and hips and can strain the lower back; leaning back is unstable. Fix: small lean from the hips, chest proud."
+    },
+    {
+      "title": "Pulling on the handrail",
+      "text": "Pulling on the handrail. Why: the arms take over and the leg is not trained. Fix: fingertip balance only, or lower the step."
+    },
+    {
+      "title": "Only toes on the step or heel hanging off",
+      "text": "Only toes on the step or heel hanging off. Why: less stable, more load on the front of the ankle and knee (a sweat.com-style cue and commercial sources say to push through the heel; sources disagree on heel vs ball of the foot, so FitPlate uses the whole foot with weight in the heel and mid-foot). Fix: whole foot flat on the step."
+    },
+    {
+      "title": "Hips hitching or dropping",
+      "text": "Hips hitching or dropping. Why: weak side-hip control; one hip rises or falls. Fix: slower reps, lateral step-up, lower step."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. Why: breath-holding during effort raises blood pressure (lab data from heavy lifting, PubMed 7741618). Fix: breathe out as you rise, in as you lower."
+    },
+    {
+      "title": "Using an unstable step or slippery surface",
+      "text": "Using an unstable step or slippery surface. Why: a fall is the main real-world risk. Fix: test the step, wall behind it, non-slip footwear, dry floor."
+    },
+    {
+      "title": "Adding dumbbells too soon",
+      "text": "Adding dumbbells too soon. Why: weights make balance and form harder and raise the load on a knee that is not ready. Fix: add weight only after 3 x 8 per leg are smooth and pain-free at your step height, and only 1-2.5 kg per hand at a time (est.)."
+    }
+  ],
+  "safetyNotes": [
+    "Knee pain, knee osteoarthritis, patellofemoral (front-of-knee) pain, recent knee injury or surgery: use a very low step (about 5-10 cm), a handrail, and slow reps; avoid step-downs and higher steps until a physiotherapist approves. The lowering phase and deeper knee bend increase patellofemoral loading (abstract of Chinkulprasert et al.; a general rehab progression uses bar-assisted, then low-box step-downs while avoiding knee valgus).",
+    "Balance problems, dizziness, previous falls, or foot or ankle pain: do the exercise next to a wall or rail on the bottom step only, with a second person nearby, or choose the sit-to-stand.",
+    "High blood pressure and heart disease: keep sets short, effort at moderate 5-6/10 or lighter, no holding the breath, rise slowly; get clearance first if blood pressure is uncontrolled or you have heart disease.",
+    "Lower back pain: keep the chest tall with only a small forward lean; avoid rounding the back; stop if pain spreads down a leg.",
+    "High body weight: use a low, very sturdy step and long rests; check the step's strength (home stool weight rating: Not found).",
+    "Pregnancy, postpartum, recent surgery: ask your clinician before step-ups (balance changes in pregnancy raise fall risk).",
+    "Stairwell rules (Mumbai building): use the bottom step only, never the open edge of a landing, never a wet or dusty stair, never a stair used by others at that moment, and avoid doing it on a stair with a broken or loose edge (est.)."
+  ],
+  "sources": [
+    "2024 Adult Compendium of Physical Activities (Herrmann et al., J Sport Health Sci 2024): codes 02022 (3.8), 02024 (2.8), 02001-02003 (step aerobics 5.5, 7.3, 9.0), 02065 (stair treadmill 9.3), 17131 and 17133 (stair climbing 6.8 and 4.5, as reported on the walking page). https://pacompendium.com/conditioning-exercise ; https://pacompendium.com/walking/ ; https://pacompendium.com/wp-content/uploads/2024/02/1_2024-adult-compendium_1_2024.pdf ; https://pubmed.ncbi.nlm.nih.gov/38242596/ (seen only as snippets)",
+    "ACE Fit Facts, step training guidelines (beginner platform up to 6 inches; knee should not bend past 90 degrees under load; documents from step aerobics and dated). https://www.acefitness.org/images/webcontent/assets/education-resources/lifestyle/fitfacts/pdfs/fitfacts/itemid_2794.pdf ; https://www.acefitness.org/images/webcontent/assets/education-resources/lifestyle/fitfacts/pdfs/fitfacts/itemid_2582.pdf (seen only as snippets)",
+    "Chinkulprasert C, Vachalathiti R, Powers CM (2011), Patellofemoral joint forces and stress during forward step-up, lateral step-up, and forward step-down exercises, J Orthop Sports Phys Ther (abstract only; step height set for 45 degree knee bend; step-down highest). https://repository.li.mahidol.ac.th/handle/123456789/10556 ; https://data.zhenzhi.com/details/1/884749338 (seen only as snippets)",
+    "Lower-extremity joint contributions during forward step-up, lateral step-up and forward step-down exercises (Mahidol repository; EMG and kinetics). https://repository.li.mahidol.ac.th/handle/123456789/30105 (seen only as snippets)",
+    "Electromyographic activity during the Monopodal Squat, Forward Lunge and Lateral Step-Up (gluteus medius about 61% lateral step-up vs 63% forward step-up reported in the summary); older-adult comparison of lateral and forward step-ups (PMC3460801). https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7112217/ ; https://pmc.ncbi.nlm.nih.gov/articles/PMC3460801 (seen only as snippets; exact effect sizes Not found)",
+    "University of Michigan / UMM Health Library, Leg and Knee Exercises: Step-Ups and Lateral Step-Downs (3-5 inch support; no locking the knee; no pushing off with the free foot; sets and reps left to the clinician). https://ummhealth.org/health-library/leg-and-knee-exercises-step-ups ; https://uofmhealth.org/health-library/acd9358 ; https://www.ummhealth.org/health-library/leg-and-knee-exercises-lateral-step-downs (seen only as snippets)",
+    "Step aerobics studies on step height and knee angle (knee bend larger at higher steps; low or medium steps advised for knee problems). https://ojs.ub.uni-konstanz.de/cpa/article/view/1721/1621 (seen only as snippets)",
+    "University of Utah patient handout on patellofemoral pain syndrome (step-downs avoiding knee valgus as part of a progression); physiotherapy library entry on the bar-assisted step-down; eccentric quadriceps training trial for patellofemoral pain. https://www.hipandkneepreservation.med.utah.edu/pdfs/patellofemoral-pain-syndrome-new.pdf ; https://physiorehab-com.treepl.co/rehab-exercise-library/k1-step-down-bar ; https://pesquisa.bvsalud.org/gim/resource/en/wpr-905148 (seen only as snippets)",
+    "Wellhub, Step ups: how to do them (push through the heel); Pfizer Health Answers, How to do step-up exercises; TopEndSports step-ups; Sweat, step-up with knee raise; journaids.org, step-ups for knees and hips (technique and 4-6 inch beginner step; commercial or opinion sources, used for cues only). https://wellhub.com/en-us/blog/fitness/step-ups ; https://healthanswers.pfizer.com/physical-activity/aerobic/how-to-do-step-up-exercises ; https://www.topendsports.com/fitness/technique/step-ups.htm ; https://www.sweat.com/blogs/exercises/step-up-with-knee-raise ; https://journaids.org/step-ups-exercise-functional-strength-for-knees-and-hips (seen only as snippets)",
+    "Stair dimensions in Indian residential buildings (National Building Code of India, 2016; riser up to 190 mm residential per secondary sources, 150 mm for other buildings; tread 230-250 mm; sources disagree; official text not opened). https://www.houseyog.com/blog/?p=2613 ; https://infralens.in/handbook/staircase-design ; https://infralens.in/thumbrules/max-staircase-riser-residential (seen only as snippets; secondary sources)",
+    "Dumbbell starting-weight and double-progression guide (increments 1-2.5 kg per dumbbell; general guide, not NSCA or ACE). https://marathonhandbook.com/dumbbell-weight/ (seen only as snippets)",
+    "Stair exercise and handrail safety guidance (NHS and Mayo Clinic pages reported only as secondary summaries; Mayo Clinic Q and A on five stair exercises, title only). https://newsnetwork.mayoclinic.org/?p=314153 ; https://wellfitinsider.com/seniors/stair-exercises-for-seniors/ (seen only as snippets; primary NHS text Not found)",
+    "Influence of breathing technique on arterial blood pressure during heavy weight lifting (1995). https://pubmed.ncbi.nlm.nih.gov/7741618/ (carried from Home 11 research)",
+    "Harvard Health, Strength training and blood pressure; Cooper Institute, Hypertension and weight training. https://www.health.harvard.edu/heart-health/strength-training-and-blood-pressure ; https://www.cooperinstitute.org/blog/hypertension-and-weight-training-secrets-for-success (carried from Home 11 research; snippets only)",
+    "Brooke-Wavell et al. (2022), Strong, steady and straight: UK consensus statement on osteoporosis, Br J Sports Med. https://pubmed.ncbi.nlm.nih.gov/35577538/ (carried from Home 11 research)",
+    "ACSM-linked Borg RPE bands (light 9-11, moderate 12-13, vigorous 14-17) and talk test. https://pmc.ncbi.nlm.nih.gov/articles/PMC10310950/table/tbl1 ; https://pmc.ncbi.nlm.nih.gov/articles/PMC9618974/table/tbl4 ; https://blog.nasm.org/rate-of-perceived-exertion (carried from Home 10 research)",
+    "Colberg SR et al. (2016), ADA position statement on physical activity/exercise and diabetes. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/ (carried from Home 10 research)",
+    "AHA, Recommendations for physical activity in adults; AHA Professional, Physical activity as first-line treatment for elevated BP or cholesterol. https://heart.org/en/healthy-living/exercise-and-physical-activity/fitness-basics/aha-recs-for-physical-activity-in-adults ; https://professional.heart.org/en/science-news/Physical-Activity-as-a-Critical-Component-of-First-Line-Treatment-for-Elevated-BP-or-Cholesterol/commentary (carried from Home 10 research)",
+    "Donnelly JE et al. (2009), ACSM position stand on physical activity for weight loss; ACE Fitness, Tips for training clients impacted by obesity. https://pubmed.ncbi.nlm.nih.gov/19127177/ ; https://www.acefitness.org/education-and-resources/professional/expert-articles/6459/tips-for-training-clients-impacted-by-obesity/ (carried from Home 10 research)",
+    "Effect of physical exercise in people with hypothyroidism: systematic review and meta-analysis (2023). https://pubmed.ncbi.nlm.nih.gov/37999992/ (carried from Home 10 research)",
+    "Pharmacy Magazine CPD, Exercise and asthma; Cambridge University Hospitals leaflet; warm-up review. https://www.pharmacymagazine.co.uk/cpd-modules/making-a-difference-in-asthma-care/exercise-and-asthma-528343 ; https://www.cuh.nhs.uk/patient-information/exercise-induced-bronchoconstriction-for-children-and-young-people/ ; https://pubmed.ncbi.nlm.nih.gov/21811185/ (carried from Home 10 research)",
+    "Vanderbilt Sports Medicine knee OA handout; Harvard Health, best exercises for knee osteoarthritis. https://www.vumc.org/sports-medicine/sites/vumc.org.sports-medicine/files/public_files/documents/Knee_OA_ex_quad.pdf ; https://content.health.harvard.edu/blog/walking-cycling-and-swimming-are-best-exercises-for-knee-osteoarthritis (carried from Home 10 research)",
+    "Mayo Clinic, Pregnancy exercises. https://www.mayoclinic.org/healthy-lifestyle/pregnancy-week-by-week/in-depth/pregnancy-exercises/art-20546799 (carried from Home 10 research)",
+    "NHS Lothian, DRAMs guidelines; Diastasis recti rehabilitation in the postpartum period: scoping review. https://apps.nhslothian.scot/files/sites/2/DRAMs-Guidelines.pdf ; https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11023973/ (carried from Home 10 research)"
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 26.3,
+      "70kg": 22.6,
+      "80kg": 19.7
+    },
+    "per300kcal": {
+      "60kg": 78.9,
+      "70kg": 67.7,
+      "80kg": 59.2
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "strength",
+    "legs",
+    "glutes",
+    "balance",
+    "beginner",
+    "intermediate",
+    "small_flat",
+    "neighbours_below",
+    "quiet_if_slow",
+    "short_sessions",
+    "low_impact",
+    "stair_or_stool_needed"
+  ],
+  "swapsByAccess": {
+    "none": "Bodyweight squat to a chair (Home 1), supported reverse lunge (Home 5) or glute bridge (Home 4)",
+    "home_equipment": "Dumbbell goblet squat (Home 15, not yet researched) or resistance band squat (Home 24, not yet researched)",
+    "basic_gym": "Leg press (Gym 10) at light load, or step-up on a low gym step; leg extension and leg curl (Gym 11 and 12)",
+    "full_gym": "Leg press (Gym 10) or hack squat machine (Gym 13) at light load; Smith machine split squat (Gym 14); or stair climber (Gym 9) at a slow pace"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "Low step, 5-8 slow reps per leg at moderate effort 5-6/10 (Borg 12-13) or lighter; breathe out on the rise, never hold the breath; rest 60 s; rise slowly; uncontrolled or severe BP needs a medical check first",
+      "source": "Harvard Health strength training and blood pressure (snippet only); Cooper Institute hypertension and weight training (snippet only); breathing study PubMed 7741618; step-up-specific advice Not found"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "Counts as strength plus light cardio; usual glucose checks and fast carbohydrate on hand if on insulin or sulfonylureas; check feet and footwear if neuropathy",
+      "source": "ADA position statement (Colberg et al. 2016)"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "After clearance only: low step, short sets, steady breathing; stop with chest discomfort, breathlessness or dizziness",
+      "source": "AHA physical activity recommendations; step-up-specific clearance Not found"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "Counts toward the resistance part of the weekly mix; aerobic minutes still come from other items",
+      "source": "AHA recommendations; AHA statement (Gibbs et al.)"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Low, very sturdy step, non-slip shoes, rail within reach, long rests; start with 1-2 sets of 5-6 per leg",
+      "source": "ACE obesity training article; ACSM weight position stand (Donnelly 2009); step-up-specific advice Not found"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "Fits general strength and aerobic guidance; no step-up-specific advice found",
+      "source": "Not found"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "Train as usual if controlled; start with 1-2 sets if fatigued",
+      "source": "Systematic review 2023 (PubMed 37999992)"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Moderate effort with a warm-up; reliever nearby; steady breathing; stop and use it if wheeze or cough starts",
+      "source": "Asthma UK tips via Pharmacy Magazine CPD; Cambridge University Hospitals leaflet; PubMed 21811185"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Very low step (about 5-10 cm), rail support, slow lowering; skip step-downs and dumbbells until a physiotherapist agrees; stop with sharp or increasing knee pain",
+      "source": "Chinkulprasert et al. 2011 (abstract only); Utah patient handout on patellofemoral pain (snippet only); Vanderbilt knee OA handout (general); Harvard Health low-impact analysis"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Chest tall with only a small hip lean; no rounding; avoid dumbbells; stop if pain spreads down a leg",
+      "source": "Not found"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "ok",
+      "change": "No arm load in the bodyweight version; skip dumbbells or hold them lightly if the shoulder is sore; use a rail on the pain-free side",
+      "source": "Not found"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "ok",
+      "change": "Weight-bearing strength work is encouraged; low step with a rail, tall spine, avoid fall risk; get individual advice especially after a fracture",
+      "source": "Strong, Steady and Straight (BJSM 2022; PubMed 35577538); step-up-specific advice Not found"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "ask_doctor",
+      "change": "Ask your obstetrician; balance changes in pregnancy, so use the bottom step with a rail or a seated alternative; stop for bleeding, pain, dizziness or contractions",
+      "source": "Mayo Clinic pregnancy exercises; step-up-specific advice Not found"
+    },
+    {
+      "condition": "postpartum",
+      "status": "ask_doctor",
+      "change": "Ask a women's health physiotherapist first, especially with abdominal separation, pelvic floor symptoms or after a C-section; stop for leaking, heaviness or belly doming",
+      "source": "NHS Lothian DRAMs guidelines; scoping review PMC11023973"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Only with surgeon or physiotherapist approval, especially after knee, hip, ankle, spine or abdominal surgery",
+      "source": "Not found"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "home",
+      "gym"
+    ],
+    "bodyRegion": [
+      "lower"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "fat_loss",
+      "strength",
+      "muscle",
+      "endurance"
+    ],
+    "intensity": "moderate",
+    "noise": "quiet",
+    "space": "small_room",
+    "typicalMinutes": 6,
+    "kcalPer10min70kg": 44.3,
+    "difficulty1to5": 2,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Home",
+    "Gym",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Strength",
+    "Legs",
+    "Glutes",
+    "Rep counter",
+    "Under 10 min"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-11-08",
+      "file": "FitPlate_Fitness_2026-11-08.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

@@ -1,0 +1,509 @@
+{
+  "id": "iron-deficiency-anaemia",
+  "type": "condition",
+  "name": "Iron-deficiency anaemia",
+  "surveyQuestion": "Do you have any of these health conditions? (select all that apply) -> Iron-deficiency anaemia / low haemoglobin or low iron. Check question: Has a doctor or lab report told you that you have anaemia or low iron (low haemoglobin or low ferritin)? Yes, iron-deficiency anaemia / Yes, low ferritin but normal haemoglobin / Yes, anaemia but cause not known / Borderline (lifestyle-only mode) / No / Never tested (suggest a blood test) / Not sure. Follow-ups: pregnant or planning pregnancy; heavy or long periods; black or bloody stools; on iron tablets or IFA (name and doctor-set dose, stored only); diet (vegetarian, vegan, Jain, egg, non-veg); tea or coffee with meals; optional latest haemoglobin, ferritin, MCV, test date.",
+  "targets": [
+    {
+      "nutrient": "energy",
+      "unit": "kcal/day",
+      "generalAdult": 2110,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified): 2110 sedentary man, 1660 sedentary woman; no anaemia-specific change found"
+    },
+    {
+      "nutrient": "protein",
+      "unit": "g/kg/day",
+      "generalAdult": 0.83,
+      "profileValue": 0.83,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); Not found: anaemia-specific value"
+    },
+    {
+      "nutrient": "total_fat",
+      "unit": "% energy",
+      "generalAdult": 30,
+      "profileValue": null,
+      "min": null,
+      "max": 30,
+      "direction": "same",
+      "source": "DGI 2024; WHO 2023 (as P6)"
+    },
+    {
+      "nutrient": "saturated_fat",
+      "unit": "% energy",
+      "generalAdult": 10,
+      "profileValue": null,
+      "min": null,
+      "max": 10,
+      "direction": "same",
+      "source": "WHO 2023 (as P4/P6)"
+    },
+    {
+      "nutrient": "trans_fat",
+      "unit": "% energy",
+      "generalAdult": 1,
+      "profileValue": null,
+      "min": null,
+      "max": 1,
+      "direction": "limit",
+      "source": "WHO 2023"
+    },
+    {
+      "nutrient": "MUFA",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found"
+    },
+    {
+      "nutrient": "PUFA",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found"
+    },
+    {
+      "nutrient": "omega_3",
+      "unit": "servings fish/week",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No change (as P5/P6); Not found: anaemia-specific value"
+    },
+    {
+      "nutrient": "dietary_cholesterol",
+      "unit": "mg/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found"
+    },
+    {
+      "nutrient": "total_carbohydrate",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found; DGI 2024 cereal cap via P4 (secondary, unverified)"
+    },
+    {
+      "nutrient": "added_sugar",
+      "unit": "g/day",
+      "generalAdult": 25,
+      "profileValue": 25,
+      "min": null,
+      "max": 25,
+      "direction": "same",
+      "source": "WHO 2015; FitPlate cap 25 g/day"
+    },
+    {
+      "nutrient": "fibre",
+      "unit": "g/day",
+      "generalAdult": 30,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified): about 30 g per 2,000 kcal; high-phytate bran adds to iron inhibition, so spread fibre foods and pair with vitamin C (no numeric change)"
+    },
+    {
+      "nutrient": "sodium",
+      "unit": "mg/day",
+      "generalAdult": 2000,
+      "profileValue": 2000,
+      "min": null,
+      "max": 2000,
+      "direction": "same",
+      "source": "WHO 2012; DGI 2024"
+    },
+    {
+      "nutrient": "salt",
+      "unit": "g/day",
+      "generalAdult": 5,
+      "profileValue": 5,
+      "min": null,
+      "max": 5,
+      "direction": "same",
+      "source": "DGI 2024; WHO 2012"
+    },
+    {
+      "nutrient": "potassium",
+      "unit": "mg/day",
+      "generalAdult": 3500,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); WHO 2012 3,510"
+    },
+    {
+      "nutrient": "calcium",
+      "unit": "mg/day",
+      "generalAdult": 1000,
+      "profileValue": 1000,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); keep calcium foods and any calcium tablet away from the iron tablet is a doctor/pharmacist point (Not found: numeric gap in sources seen)"
+    },
+    {
+      "nutrient": "iron_men",
+      "unit": "mg/day",
+      "generalAdult": 19,
+      "profileValue": 19,
+      "min": null,
+      "max": 45,
+      "direction": null,
+      "source": "ICMR-NIN 2020 (secondary, unverified) RDA 19; UL 45 mg from food and supplements (NIH ODS; ICMR TUL 45 secondary, unverified). Treatment doses are set by the doctor and can be higher"
+    },
+    {
+      "nutrient": "iron_women",
+      "unit": "mg/day",
+      "generalAdult": 29,
+      "profileValue": 29,
+      "min": null,
+      "max": 45,
+      "direction": null,
+      "source": "ICMR-NIN 2020 (secondary, unverified) RDA 29 (27 in pregnancy); UL 45 (NIH ODS). Treatment doses are doctor-set"
+    },
+    {
+      "nutrient": "iron_children_UL",
+      "unit": "mg/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": 40,
+      "direction": "limit",
+      "source": "NIH ODS UL 40 mg/day up to 13 years; iron overdose in children is an emergency"
+    },
+    {
+      "nutrient": "vitamin_c",
+      "unit": "mg/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": null,
+      "source": "ICMR-NIN 2020 value Not found in this run; absorption booster (NIH ODS; search summaries)"
+    },
+    {
+      "nutrient": "magnesium",
+      "unit": "mg/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified): 440 men, 370 women via FSSAI (as P10); no change"
+    },
+    {
+      "nutrient": "vitamin_d",
+      "unit": "µg/day",
+      "generalAdult": 15,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified) (as P9/P10); no change"
+    },
+    {
+      "nutrient": "vitamin_b12",
+      "unit": "µg/day",
+      "generalAdult": 2.2,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); B12 deficiency often co-exists with iron deficiency in India; test before assuming iron alone"
+    },
+    {
+      "nutrient": "folate",
+      "unit": "µg DFE/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified): 300 men, 220 women (as P10); doctor decides folic acid; pregnancy see P22"
+    },
+    {
+      "nutrient": "water",
+      "unit": "mL/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "FitPlate general target; Follow your doctor's advice"
+    }
+  ],
+  "bloodMarkers": [
+    {
+      "marker": "Haemoglobin (anaemia cut-off, non-pregnant women 15+)",
+      "target": "below 12.0 = anaemia; mild 11.0-11.9, moderate 8.0-10.9, severe below 8.0",
+      "unit": "g/dL",
+      "source": "WHO thresholds via review tables (secondary)"
+    },
+    {
+      "marker": "Haemoglobin (men 15+)",
+      "target": "below 13.0 = anaemia; mild 11.0-12.9, moderate 8.0-10.9, severe below 8.0",
+      "unit": "g/dL",
+      "source": "WHO thresholds via review tables (secondary)"
+    },
+    {
+      "marker": "Haemoglobin (pregnancy and children 6-59 months)",
+      "target": "below 11.0 = anaemia; mild 10.0-10.9, moderate 7.0-9.9, severe below 7.0",
+      "unit": "g/dL",
+      "source": "WHO thresholds via review tables (secondary); same bands in Anemia Mukt Bharat 2018 (secondary)"
+    },
+    {
+      "marker": "Haemoglobin (children 5-11 years / 12-14 years)",
+      "target": "below 11.5 / below 12.0",
+      "unit": "g/dL",
+      "source": "WHO thresholds via review tables (secondary)"
+    },
+    {
+      "marker": "Serum ferritin (no infection)",
+      "target": "below 15 (age 5+); below 12 (under 5) = iron deficiency",
+      "unit": "µg/L (same as ng/mL)",
+      "source": "WHO 2020 ferritin guideline (NCBI Bookshelf)"
+    },
+    {
+      "marker": "Serum ferritin (infection or inflammation)",
+      "target": "below 70 (adults) or below 30 (children) may indicate iron deficiency",
+      "unit": "µg/L",
+      "source": "WHO 2020 (conditional, low-certainty evidence)"
+    },
+    {
+      "marker": "Transferrin saturation (TSAT)",
+      "target": "below 20% suggests low iron availability",
+      "unit": "%",
+      "source": "Australian Red Cross Lifeblood guidance (via search summary; secondary)"
+    },
+    {
+      "marker": "TIBC (total iron-binding capacity)",
+      "target": "Not found (numeric); lab range only. Rises in iron deficiency; some guidelines do not use serum iron or TIBC routinely",
+      "unit": "µg/dL",
+      "source": "BC Guidelines 2019 via summary (secondary)"
+    },
+    {
+      "marker": "MCV (red cell size)",
+      "target": "Not found (numeric); lab range only. Low MCV with normal ferritin raises the question of thalassaemia trait",
+      "unit": "fL",
+      "source": "Review summaries (secondary)"
+    },
+    {
+      "marker": "CRP",
+      "target": "Stored only; raised CRP can push ferritin up",
+      "unit": "mg/L",
+      "source": "Search summaries (secondary)"
+    }
+  ],
+  "waterMl": {
+    "min": null,
+    "max": null,
+    "notes": "No change from FitPlate general adult water target. Drink more in heat, exercise or fever per general rules. Follow your doctor's advice. Pregnancy, heart, kidney or liver disease or water pills: general range only, never a higher target. Follow your doctor's advice."
+  },
+  "sodiumMgMax": 2000,
+  "dietaryCholesterolMgMax": null,
+  "foodsFavour": [
+    "dals and pulses (masoor, moong, rajma, chana) with a vitamin C food",
+    "green leafy vegetables (methi, palak, amaranth/chaulai, drumstick leaves)",
+    "millets: bajra, ragi",
+    "sesame/til and garden cress seeds (halim), small amounts",
+    "eggs, chicken, fish, mutton and liver for heme iron (non-veg)",
+    "vitamin C foods with meals: lemon, amla, guava, tomato, capsicum, oranges",
+    "sprouts",
+    "jaggery in small amounts (counts as added sugar)"
+  ],
+  "foodsLimit": [
+    "tea and coffee with meals or iron tablets (keep about 1 hour apart, est.)",
+    "calcium tablets or large milk servings at the same time as iron tablets (ask doctor or pharmacist)",
+    "excess bran and unsoaked phytate-rich foods at the iron-rich meal",
+    "iron tablets without a blood test",
+    "very salty packaged foods (pickles, papad, namkeen)",
+    "raw or undercooked street food in areas with worm infection risk (see doctor about deworming)"
+  ],
+  "goodFitDishes": [
+    {
+      "dishNumber": 80,
+      "dishName": "Masoor Dal"
+    },
+    {
+      "dishNumber": 56,
+      "dishName": "Pesarattu"
+    },
+    {
+      "dishNumber": 46,
+      "dishName": "Methi Thepla"
+    },
+    {
+      "dishNumber": 48,
+      "dishName": "Bisi Bele Bath"
+    },
+    {
+      "dishNumber": 17,
+      "dishName": "Palak Paneer"
+    },
+    {
+      "dishNumber": 12,
+      "dishName": "Rajma Chawal"
+    },
+    {
+      "dishNumber": 8,
+      "dishName": "Chole (Chana Masala)"
+    },
+    {
+      "dishNumber": 66,
+      "dishName": "Sprouts Chaat"
+    },
+    {
+      "dishNumber": 71,
+      "dishName": "Ragi Dosa"
+    },
+    {
+      "dishNumber": 14,
+      "dishName": "Egg Bhurji"
+    },
+    {
+      "dishNumber": 82,
+      "dishName": "Methi Chicken"
+    },
+    {
+      "dishNumber": 77,
+      "dishName": "Keema Pav"
+    },
+    {
+      "dishNumber": 93,
+      "dishName": "Mutton Keema"
+    },
+    {
+      "dishNumber": 68,
+      "dishName": "Chicken Chettinad"
+    },
+    {
+      "dishNumber": 33,
+      "dishName": "Goan Fish Curry"
+    }
+  ],
+  "cautionDishes": [
+    {
+      "dishNumber": 99,
+      "dishName": "Masala Chai",
+      "reason": "Tea polyphenols cut non-heme iron absorption; drink about 1 hour away from meals and iron tablets (est.)"
+    },
+    {
+      "dishNumber": 100,
+      "dishName": "Cold Coffee",
+      "reason": "Coffee reduces iron absorption with a meal; keep apart from iron-rich meals and tablets (est.)"
+    },
+    {
+      "dishNumber": 98,
+      "dishName": "Mango Lassi",
+      "reason": "Dairy with an iron meal or tablet can lower absorption (est.); sugar; no iron"
+    },
+    {
+      "dishNumber": 35,
+      "dishName": "Curd Rice",
+      "reason": "Little iron; calcium-rich curd with an iron tablet is best avoided (est.)"
+    },
+    {
+      "dishNumber": 1,
+      "dishName": "Poha",
+      "reason": "Iron per serving varies widely by brand (dish file about 4 mg is probably high; IFCT arithmetic about 2.7 mg per 60 g dry); add lemon and peanuts"
+    },
+    {
+      "dishNumber": 20,
+      "dishName": "Vada Pav",
+      "reason": "Refined flour, low iron and little vitamin C; salty (est.)"
+    },
+    {
+      "dishNumber": 83,
+      "dishName": "Bhel Puri",
+      "reason": "Low in iron; salty snack; lemon and tomato help only a little (est.)"
+    },
+    {
+      "dishNumber": 97,
+      "dishName": "Gulab Jamun",
+      "reason": "Calories and sugar with almost no iron; as an extra sweet it replaces iron-rich food (est.)"
+    }
+  ],
+  "conflictsWith": [
+    {
+      "profileId": "P22",
+      "rule": "Pregnancy: IFA dose and anaemia treatment are doctor-led; app sets no iron dose; requires_doctor_input"
+    },
+    {
+      "profileId": "P13",
+      "rule": "Chronic kidney disease: anaemia treatment (oral or IV iron, ESA) set by kidney doctor; P13 limits override"
+    },
+    {
+      "profileId": "P33",
+      "rule": "Jain diet: no meat, no root vegetables; use dals, bajra, ragi, leafy greens, seeds, vitamin C; iron plus B12 check"
+    },
+    {
+      "profileId": "P34",
+      "rule": "Vegan diet: non-heme iron only; NIH suggests about 1.8 times the usual intake (secondary); B12 check; doctor-led supplements"
+    },
+    {
+      "profileId": "P19",
+      "rule": "Celiac disease is a common cause of unexplained iron deficiency; doctor tests; gluten-free filter must not remove iron foods"
+    },
+    {
+      "profileId": "P20",
+      "rule": "Calcium plans: keep calcium supplements and iron tablets apart (ask doctor or pharmacist)"
+    },
+    {
+      "profileId": "P25",
+      "rule": "Fat loss: no deficit that drops iron-rich foods; heavy-period users should not crash-diet"
+    }
+  ],
+  "requiresDoctorInput": true,
+  "requiresDoctorInputStated": true,
+  "fluidNote": null,
+  "warnings": [
+    "General information, not medical advice. FitPlate does not diagnose anaemia or iron deficiency.",
+    "The app never sets an iron tablet, IFA or injection dose; treatment doses are doctor-set and can exceed the 45 mg/day upper limit.",
+    "Do not start iron tablets on tiredness alone: confirm with a blood test, because B12 or folate deficiency, thalassaemia trait and chronic disease also cause anaemia.",
+    "Iron overdose is an emergency in children; keep tablets out of reach and call a doctor or poison centre at once.",
+    "Pallor with breathlessness at rest, chest pain, fainting, black or bloody stools, heavy bleeding, pregnancy, or a child with anaemia: see a doctor promptly.",
+    "Men and postmenopausal women with iron deficiency need a doctor to look for hidden blood loss.",
+    "Thalassaemia trait or haemochromatosis: do not take iron without medical advice."
+  ],
+  "lastResearched": "2026-11-08",
+  "versions": [
+    {
+      "date": "2026-11-08",
+      "file": "FitPlate_Nutrients_2026-11-08.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3); max as safety limit",
+    "limits": "safety limit (lower on conflict)",
+    "lists": "union",
+    "requiresDoctorInput": "stated true in any version, else newest version (missing flag + limits → true)"
+  },
+  "mergeNotes": [],
+  "needsReview": [
+    "2026-11-08 iron-deficiency-anaemia: \"direction\" has unexpected value \"raise (meet target)\"; treated as not found",
+    "2026-11-08 iron-deficiency-anaemia: \"direction\" has unexpected value \"raise (pair with iron foods)\"; treated as not found"
+  ]
+}
