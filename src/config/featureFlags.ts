@@ -45,6 +45,8 @@ export const featureFlags = {
   plainSearch: true,
   /** Day 19: weekly nutrition insights with top gaps, tasty-first ideas and absorption tips. ON. */
   nutritionInsights: true,
+  /** Day 21: search and filters on the Move tab. */
+  exerciseSearch: true,
   /** Day 18: supplement logging with upper-limit warnings, counted in the vitamin and mineral bars. ON. */
   supplementLog: true,
   /** Day 17: water tracker screen, streak and workday reminders. ON. */

@@ -1,9 +1,10 @@
 import { Ionicons } from '@expo/vector-icons';
 import { router } from 'expo-router';
-import { useState } from 'react';
-import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { useDeferredValue, useMemo, useState } from 'react';
+import { ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { featureFlags } from '../../config/featureFlags';
 import { Chip, FadeIn, Glass, GradientButton, PressableScale, TopGlow } from '../../components/ui';
 import { researchExercises, researchFitnessGuides } from '../../data/research';
 import { addDays, dayKey, useStore } from '../../lib/store';
@@ -11,6 +12,8 @@ import { WeekBars } from '../../components/viz';
 import type { ExerciseSection } from '../../models/exercise';
 import { lastSevenDaysActivity } from '../../services/activity';
 import { bySection, doseLabel, kcalPer10, musclesLine, prescriptionFor, SECTION_ICON, SECTION_LABEL, shortExerciseName } from '../../services/fitness';
+import { byNumber, exerciseDoc, exerciseFilterGroups } from '../../services/exerciseLibrary';
+import { activeCount, runSearch, toggle, type Selection } from '../../services/search';
 import { colors, radius, type } from '../../theme';
 
 const SECTIONS: ExerciseSection[] = ['home', 'yoga_stretch', 'gym'];
@@ -25,7 +28,18 @@ export default function Move() {
   const { days, bodyWeightKg, profile } = useStore();
   const week = lastSevenDaysActivity(days);
   const dates = Array.from({ length: 7 }, (_, i) => addDays(new Date(), i - 6));
-  const groups = bySection(researchExercises);
+  const [query, setQuery] = useState('');
+  const deferred = useDeferredValue(query);
+  const [selection, setSelection] = useState<Selection>({});
+  const [showFilters, setShowFilters] = useState(false);
+  const filterGroups = useMemo(() => exerciseFilterGroups(researchExercises), []);
+  const nActive = activeCount(selection);
+  const results = useMemo(
+    () => runSearch(researchExercises, { toDoc: exerciseDoc, query: deferred, groups: filterGroups, selection, sort: 'relevance', tieBreak: byNumber }).map((r) => r.item),
+    [deferred, filterGroups, selection],
+  );
+  const searching = deferred.trim() !== '' || nActive > 0;
+  const groups = bySection(featureFlags.exerciseSearch ? results : researchExercises);
   // One training place in the survey opens on its section; gym or mixed answers see everything.
   const where = profile.survey.trainWhere;
   const [section, setSection] = useState<ExerciseSection | 'all'>(where.length === 1 && where[0] === 'home' ? 'home' : 'all');
@@ -61,9 +75,53 @@ export default function Move() {
           </Glass>
         </FadeIn>
 
+        {featureFlags.exerciseSearch ? (
+          <FadeIn i={2}>
+            <View style={styles.searchBox}>
+              <Ionicons name="search" size={18} color={colors.muted} />
+              <TextInput
+                value={query}
+                onChangeText={setQuery}
+                placeholder="Search moves or muscles"
+                placeholderTextColor={colors.faint}
+                accessibilityLabel="Search exercises"
+                style={styles.searchInput}
+                autoCorrect={false}
+                returnKeyType="search"
+              />
+              {query ? (
+                <PressableScale onPress={() => setQuery('')} accessibilityLabel="Clear search">
+                  <Ionicons name="close-circle" size={18} color={colors.muted} />
+                </PressableScale>
+              ) : null}
+            </View>
+            <View style={{ flexDirection: 'row', alignItems: 'center', gap: 10, marginTop: 10 }}>
+              <Chip label={nActive ? `Filters (${nActive})` : 'Filters'} active={showFilters || nActive > 0} onPress={() => setShowFilters((v) => !v)} />
+              {nActive ? <Chip label="Clear filters" active={false} onPress={() => setSelection({})} /> : null}
+            </View>
+            {showFilters
+              ? filterGroups.map((g) => (
+                  <View key={g.id} style={{ marginTop: 10 }}>
+                    <Text style={styles.label}>{g.label}</Text>
+                    <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>
+                      {g.options.map((o) => (
+                        <Chip key={o.id} label={o.label} active={!!selection[g.id]?.includes(o.id)} onPress={() => setSelection((cur) => toggle(cur, g.id, o.id))} />
+                      ))}
+                    </View>
+                  </View>
+                ))
+              : null}
+            {searching ? (
+              <Text style={[type.small, { color: colors.muted, marginTop: 10 }]}>
+                {results.length} of {researchExercises.length} moves
+              </Text>
+            ) : null}
+          </FadeIn>
+        ) : null}
+
         <FadeIn i={2}>
           <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{ marginHorizontal: -18, marginTop: 18 }} contentContainerStyle={{ paddingHorizontal: 18, gap: 8 }}>
-            <Chip label={`All (${researchExercises.length})`} active={section === 'all'} onPress={() => setSection('all')} />
+            <Chip label={`All (${searching ? results.length : researchExercises.length})`} active={section === 'all'} onPress={() => setSection('all')} />
             {SECTIONS.map((s) => (
               <Chip key={s} label={`${SECTION_LABEL[s]} (${groups[s].length})`} active={section === s} onPress={() => setSection(s)} />
             ))}
@@ -114,7 +172,11 @@ export default function Move() {
           ) : null,
         )}
 
-        {researchFitnessGuides.length && (section === 'all' || section === 'gym') ? (
+        {searching && results.length === 0 ? (
+          <Text style={[type.body, { color: colors.muted, textAlign: 'center', marginTop: 28 }]}>No moves match. Try fewer filters or another word.</Text>
+        ) : null}
+
+        {researchFitnessGuides.length && !searching && (section === 'all' || section === 'gym') ? (
           <FadeIn i={7}>
             <View style={styles.sectionHead}>
               <View style={styles.icon}>
@@ -162,6 +224,8 @@ function Stat({ value, unit }: { value: number; unit: string }) {
 
 const styles = StyleSheet.create({
   label: { ...type.label, color: colors.muted, marginBottom: 10 },
+  searchBox: { flexDirection: 'row', alignItems: 'center', gap: 8, marginTop: 18, paddingHorizontal: 14, minHeight: 46, borderRadius: radius.md, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border },
+  searchInput: { flex: 1, color: colors.text, fontSize: 15, paddingVertical: 10 },
   stats: { flexDirection: 'row', gap: 10 },
   sectionHead: { flexDirection: 'row', alignItems: 'center', gap: 12, marginTop: 24, marginBottom: 10 },
   icon: { width: 38, height: 38, borderRadius: 19, backgroundColor: 'rgba(61,220,132,0.14)', alignItems: 'center', justifyContent: 'center' },

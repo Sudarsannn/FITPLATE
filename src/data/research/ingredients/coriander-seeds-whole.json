@@ -15,52 +15,58 @@
         "avg": 275,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-08.md"
+      },
+      {
+        "date": "2026-11-09",
+        "min": 175,
+        "max": 395,
+        "avg": 290,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-09.md"
       }
     ],
     "currentEstimate": {
-      "min": 235,
-      "max": 315,
-      "avg": 275
+      "min": 240,
+      "max": 325,
+      "avg": 285
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-08",
+    "lastObserved": "2026-11-09",
     "stale": false,
     "seasonal": false,
-    "listingCount": 2,
+    "listingCount": 7,
     "platforms": [
       "BigBasket",
-      "StoreKing"
+      "Flipkart"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 2 listings back the range (need 3)"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 23.5,
-    "max": 31.5,
-    "avg": 27.5
+    "min": 24,
+    "max": 32.5,
+    "avg": 28.5
   },
   "seasonal": false,
   "nutritionPer100g": {
     "basis": "100g",
     "energyKcal": {
       "value": 298,
-      "source": "USDA FDC: FDC ID 170922, Spices, coriander seed (SR Legacy), via secondary sites",
-      "confidence": "Medium"
+      "source": "USDA FDC: USDA FDC 'Spices, coriander seed' (SR Legacy; FDC ID not confirmed); values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
     },
     "proteinG": {
       "value": 12.4,
-      "source": "USDA FDC: FDC ID 170922, Spices, coriander seed (SR Legacy), via secondary sites",
-      "confidence": "Medium"
+      "source": "USDA FDC: USDA FDC 'Spices, coriander seed' (SR Legacy; FDC ID not confirmed); values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
     },
     "carbsG": {
       "value": 55,
-      "source": "USDA FDC: FDC ID 170922, Spices, coriander seed (SR Legacy), via secondary sites",
-      "confidence": "Medium"
+      "source": "USDA FDC: USDA FDC 'Spices, coriander seed' (SR Legacy; FDC ID not confirmed); values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
     },
     "sugarsG": {
       "value": null,
@@ -69,8 +75,8 @@
     },
     "fatG": {
       "value": 17.8,
-      "source": "USDA FDC: FDC ID 170922, Spices, coriander seed (SR Legacy), via secondary sites",
-      "confidence": "Medium"
+      "source": "USDA FDC: USDA FDC 'Spices, coriander seed' (SR Legacy; FDC ID not confirmed); values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
     },
     "saturatedFatG": {
       "value": 0.99,
@@ -79,8 +85,8 @@
     },
     "fibreG": {
       "value": 41.9,
-      "source": "USDA FDC: FDC ID 170922, Spices, coriander seed (SR Legacy), via secondary sites",
-      "confidence": "Medium"
+      "source": "USDA FDC: USDA FDC 'Spices, coriander seed' (SR Legacy; FDC ID not confirmed); values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
     },
     "sodiumMg": {
       "value": 35,
@@ -89,18 +95,18 @@
     },
     "ironMg": {
       "value": 16.3,
-      "source": "USDA FDC: FDC ID 170922, Spices, coriander seed (SR Legacy), via secondary sites",
-      "confidence": "Medium"
+      "source": "USDA FDC: USDA FDC 'Spices, coriander seed' (SR Legacy; FDC ID not confirmed); values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
     },
     "calciumMg": {
       "value": 709,
-      "source": "USDA FDC: FDC ID 170922, Spices, coriander seed (SR Legacy), via secondary sites",
-      "confidence": "Medium"
+      "source": "USDA FDC: USDA FDC 'Spices, coriander seed' (SR Legacy; FDC ID not confirmed); values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
     },
     "potassiumMg": {
       "value": 1267,
-      "source": "USDA FDC: FDC ID 170922, Spices, coriander seed (SR Legacy), via secondary sites",
-      "confidence": "Medium"
+      "source": "USDA FDC: USDA FDC 'Spices, coriander seed' (SR Legacy; FDC ID not confirmed); values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
     },
     "magnesiumMg": {
       "value": 330,
@@ -114,8 +120,8 @@
     },
     "vitaminCMg": {
       "value": 21,
-      "source": "USDA FDC: FDC ID 170922, Spices, coriander seed (SR Legacy), via secondary sites",
-      "confidence": "Medium"
+      "source": "USDA FDC: USDA FDC 'Spices, coriander seed' (SR Legacy; FDC ID not confirmed); values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
     },
     "vitaminAUgRae": {
       "value": null,
@@ -133,9 +139,9 @@
       "confidence": null
     },
     "cholesterolMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 'Spices, coriander seed' (SR Legacy; FDC ID not confirmed); values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
     },
     "transFatG": {
       "value": null,
@@ -173,9 +179,9 @@
       "confidence": null
     },
     "copperMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0.98,
+      "source": "USDA FDC: USDA FDC 'Spices, coriander seed' (SR Legacy; FDC ID not confirmed); values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
     },
     "manganeseMg": {
       "value": null,
@@ -223,20 +229,29 @@
       "confidence": null
     },
     "vitaminB12Ug": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 'Spices, coriander seed' (SR Legacy; FDC ID not confirmed); values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
     }
   },
-  "macrosPer100Estimate": null,
-  "storage": "Airtight glass or steel jar at room temperature, away from the stove, light and damp: 6–12 months whole. Ground kadai masala made from it: airtight jar, up to about 1 month (as the dish file notes). In humid monsoon months, keep a large stock in the fridge to stop weevils.",
-  "looksLike": "Small round seeds, about the size of a peppercorn, pale straw-brown to light tan, with fine ridges running from top to bottom. They split into two halves when pressed and smell warm and citrusy, especially once roasted.",
-  "howToPick": null,
-  "shelfLife": "About 1 year whole in a sealed pack; the aroma fades much faster once ground (1–2 months).",
+  "macrosPer100Estimate": {
+    "kcal": 298,
+    "proteinG": 12.4,
+    "carbsG": 55,
+    "fatG": 17.8,
+    "fibreG": 41.9
+  },
+  "storage": "Keep in an airtight jar in a cool, dark cupboard for up to about 1 year. Dry-roast and grind small amounts just before cooking for the best aroma.",
+  "looksLike": "Small, round, ridged, pale-brown to straw-coloured seeds with a warm, citrusy smell when crushed.",
+  "howToPick": "General guidance, not from a source in this run: choose evenly pale-brown to greenish-tan seeds with a fresh citrus smell; avoid dusty, very dark, musty or insect-damaged seeds.",
+  "shelfLife": "Whole seeds keep their flavour for about 1 year in a sealed jar; ground powder fades much sooner (general guidance).",
   "substitutes": [
     "Coriander powder (dhania powder)",
     "Ready kadai masala",
-    "Cumin seeds (small amount)"
+    "Cumin seeds (small amount)",
+    "Coriander (dhania) powder",
+    "Cumin seeds",
+    "Garam masala"
   ],
   "vendorListings": [],
   "usedIn": [
@@ -244,18 +259,22 @@
       "dishNumber": 22,
       "quantity": 3,
       "unit": "g",
-      "raw": "3 g (1 tsp), dry-roasted and ground into the fresh kadai masala"
+      "raw": "3 g per serving (1 tsp whole seeds, dry-roasted and ground in the kadai masala)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-08",
       "file": "FitPlate_Ingredients_2026-10-08.md"
+    },
+    {
+      "date": "2026-11-09",
+      "file": "FitPlate_Ingredients_2026-11-09.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (none)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (single)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -266,6 +285,7 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 220.0–330.0 was wider than 30% of avg 275.0; narrowed to ±15%."
+    "Range 197.0–363.3 was wider than 30% of avg 282.7; narrowed to ±15%.",
+    "nutritionPer100g.saturatedFatG: Conflict (2026-10-08: 0.99 vs 2026-11-09: 1); both cite the official table, kept the previous value."
   ]
 }

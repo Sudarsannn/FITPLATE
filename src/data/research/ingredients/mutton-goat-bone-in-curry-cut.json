@@ -16,69 +16,278 @@
         "avg": 915,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-08.md"
+      },
+      {
+        "date": "2026-11-09",
+        "min": 920,
+        "max": 1025,
+        "avg": 975,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-09.md"
       }
     ],
     "currentEstimate": {
-      "min": 885,
-      "max": 945,
-      "avg": 915
+      "min": 910,
+      "max": 1000,
+      "avg": 955
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-08",
+    "lastObserved": "2026-11-09",
     "stale": false,
     "seasonal": false,
-    "listingCount": 3,
+    "listingCount": 2,
     "platforms": [
       "BigBasket",
-      "OneIndia"
+      "Zepto"
     ],
     "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "confirmed": false,
+    "checkNotes": [
+      "only 2 listings back the range (need 3)"
+    ]
   },
   "per100Estimate": {
-    "min": 88.5,
-    "max": 94.5,
-    "avg": 91.5
+    "min": 91,
+    "max": 100,
+    "avg": 95.5
   },
   "seasonal": false,
-  "nutritionPer100g": null,
+  "nutritionPer100g": {
+    "basis": "100g",
+    "energyKcal": {
+      "value": 109,
+      "source": "USDA FDC: USDA FDC 175303 'Game meat, goat, raw' (SR Legacy); values seen only on mirror sites; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "proteinG": {
+      "value": 20.6,
+      "source": "USDA FDC: USDA FDC 175303 'Game meat, goat, raw' (SR Legacy); values seen only on mirror sites; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "carbsG": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 175303 'Game meat, goat, raw' (SR Legacy); values seen only on mirror sites; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "sugarsG": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 175303 'Game meat, goat, raw' (SR Legacy); values seen only on mirror sites; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "fatG": {
+      "value": 2.3,
+      "source": "USDA FDC: USDA FDC 175303 'Game meat, goat, raw' (SR Legacy); values seen only on mirror sites; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "saturatedFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "fibreG": {
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 175303 'Game meat, goat, raw' (SR Legacy); values seen only on mirror sites; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "sodiumMg": {
+      "value": 82,
+      "source": "USDA FDC: USDA FDC 175303 'Game meat, goat, raw' (SR Legacy); values seen only on mirror sites; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "ironMg": {
+      "value": 2.83,
+      "source": "USDA FDC: USDA FDC 175303 'Game meat, goat, raw' (SR Legacy); values seen only on mirror sites; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "calciumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "potassiumMg": {
+      "value": 385,
+      "source": "USDA FDC: USDA FDC 175303 'Game meat, goat, raw' (SR Legacy); values seen only on mirror sites; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "magnesiumMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "zincMg": {
+      "value": 4,
+      "source": "USDA FDC: USDA FDC 175303 'Game meat, goat, raw' (SR Legacy); values seen only on mirror sites; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "vitaminCMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminAUgRae": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "folateUgDfe": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "waterG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "cholesterolMg": {
+      "value": 57,
+      "source": "USDA FDC: USDA FDC 175303 'Game meat, goat, raw' (SR Legacy); values seen only on mirror sites; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "transFatG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "mufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "pufaG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "omega3G": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "addedSugarsG": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "phosphorusMg": {
+      "value": 180,
+      "source": "USDA FDC: USDA FDC 175303 'Game meat, goat, raw' (SR Legacy); values seen only on mirror sites; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Medium"
+    },
+    "seleniumUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "copperMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "manganeseMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "iodineUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminDUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminEMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminKUg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "thiaminMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "riboflavinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "niacinMg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB6Mg": {
+      "value": null,
+      "source": null,
+      "confidence": null
+    },
+    "vitaminB12Ug": {
+      "value": 1.13,
+      "source": "USDA FDC: USDA FDC 175303 'Game meat, goat, raw' (SR Legacy); values seen only on mirror sites; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Medium"
+    }
+  },
   "macrosPer100Estimate": {
-    "kcal": 111,
-    "proteinG": 21.1,
+    "kcal": 110,
+    "proteinG": 20.9,
     "carbsG": null,
-    "fatG": 2.4,
+    "fatG": 2.3,
     "fibreG": null
   },
-  "storage": "1–2 days, in a covered box on the lowest shelf.",
-  "looksLike": "Dark red goat meat chopped into chunks of about 4–5 cm, each with a piece of bone and a thin layer of white fat. In Indian shops \"mutton\" means goat meat, not sheep.",
-  "howToPick": null,
-  "shelfLife": "1–2 days in the fridge; packed chilled packs carry a use-by date of about 2–3 days.",
+  "storage": "Refrigerate at once in a closed box at the coldest shelf and cook within 1 to 2 days, or freeze in portions and thaw in the fridge.",
+  "looksLike": "Dark red meat cut into small pieces (about 5 to 6 pieces for a 200 g serving in the dish file) with bone attached and a little white fat. Goat meat is sold as \"mutton\" in India.",
+  "howToPick": "General guidance, not from a source in this run: fresh meat is pink-red to deep red with white (not yellow or grey) fat, a clean smell and no slime. Ask for pieces cut from shoulder or ribs for rogan josh. Avoid dull, sticky or sour-smelling meat.",
+  "shelfLife": "About 1 to 2 days in the fridge and a few months frozen (general guidance, not from a source in this run).",
   "substitutes": [
     "Lamb (sheep) curry cut",
     "Chicken curry cut (bone-in)",
-    "Boneless mutton"
+    "Boneless mutton",
+    "Boneless goat (leg or shoulder)",
+    "Lamb (bone-in)",
+    "Bone-in chicken"
   ],
-  "vendorListings": [],
+  "vendorListings": [
+    {
+      "vendor": "zepto",
+      "product": "Relish Goat Curry Cut",
+      "pack": "350 g",
+      "priceMinInr": 359,
+      "priceMaxInr": 359,
+      "observedOn": "2026-11-09"
+    }
+  ],
   "usedIn": [
     {
       "dishNumber": 23,
       "quantity": 200,
       "unit": "g",
-      "raw": "200 g bone-in curry cut (about 150 g edible meat; 5–6 medium pieces)"
+      "raw": "200 g bone-in curry cut per serving (about 150 g edible meat; 5-6 medium pieces)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-08",
       "file": "FitPlate_Ingredients_2026-10-08.md"
+    },
+    {
+      "date": "2026-11-09",
+      "file": "FitPlate_Ingredients_2026-11-09.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
+    "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
     "vendorListings": "newest sighting per vendor+product+pack",

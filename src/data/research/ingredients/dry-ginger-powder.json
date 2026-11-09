@@ -16,59 +16,68 @@
         "avg": 775,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-08.md"
+      },
+      {
+        "date": "2026-11-09",
+        "min": 700,
+        "max": 2220,
+        "avg": 1050,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-09.md"
       }
     ],
     "currentEstimate": {
-      "min": 660,
-      "max": 890,
-      "avg": 775
+      "min": 775,
+      "max": 1050,
+      "avg": 915
     },
-    "method": "single",
+    "method": "spike-blend",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-08",
+    "lastObserved": "2026-11-09",
     "stale": false,
     "seasonal": false,
-    "listingCount": 3,
+    "listingCount": 6,
     "platforms": [
-      "Amazon",
-      "BigBasket"
+      "1mg",
+      "BigBasket",
+      "Hunarsetu"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 66,
-    "max": 89,
-    "avg": 77.5
+    "min": 77.5,
+    "max": 105,
+    "avg": 91.5
   },
   "seasonal": false,
   "nutritionPer100g": {
     "basis": "100g",
     "energyKcal": {
       "value": 335,
-      "source": "USDA FDC: FDC ID 170926, Spices, ginger, ground (via getfoodfacts.com, recipal.com, soupersage.com)",
+      "source": "USDA FDC: USDA FDC 'Spices, ginger, ground' (cited as FDC 170926 / NDB 02021 by secondary sites getfoodfacts, triagemethod, listonic, foodstruct); IFCT 2017 not opened",
       "confidence": "Medium"
     },
     "proteinG": {
       "value": 9,
-      "source": "USDA FDC: FDC ID 170926, Spices, ginger, ground (via getfoodfacts.com, recipal.com, soupersage.com)",
+      "source": "USDA FDC: USDA FDC 'Spices, ginger, ground' (cited as FDC 170926 / NDB 02021 by secondary sites getfoodfacts, triagemethod, listonic, foodstruct); IFCT 2017 not opened",
       "confidence": "Medium"
     },
     "carbsG": {
       "value": 71.6,
-      "source": "USDA FDC: FDC ID 170926, Spices, ginger, ground (via getfoodfacts.com, recipal.com, soupersage.com)",
+      "source": "USDA FDC: USDA FDC 'Spices, ginger, ground' (cited as FDC 170926 / NDB 02021 by secondary sites getfoodfacts, triagemethod, listonic, foodstruct); IFCT 2017 not opened",
       "confidence": "Medium"
     },
     "sugarsG": {
       "value": 3.4,
-      "source": "USDA FDC: FDC ID 170926, Spices, ginger, ground (via getfoodfacts.com, recipal.com, soupersage.com)",
+      "source": "USDA FDC: USDA FDC 'Spices, ginger, ground' (cited as FDC 170926 / NDB 02021 by secondary sites getfoodfacts, triagemethod, listonic, foodstruct); IFCT 2017 not opened",
       "confidence": "Medium"
     },
     "fatG": {
       "value": 4.2,
-      "source": "USDA FDC: FDC ID 170926, Spices, ginger, ground (via getfoodfacts.com, recipal.com, soupersage.com)",
+      "source": "USDA FDC: USDA FDC 'Spices, ginger, ground' (cited as FDC 170926 / NDB 02021 by secondary sites getfoodfacts, triagemethod, listonic, foodstruct); IFCT 2017 not opened",
       "confidence": "Medium"
     },
     "saturatedFatG": {
@@ -78,12 +87,12 @@
     },
     "fibreG": {
       "value": 14.1,
-      "source": "USDA FDC: FDC ID 170926, Spices, ginger, ground (via getfoodfacts.com, recipal.com, soupersage.com)",
+      "source": "USDA FDC: USDA FDC 'Spices, ginger, ground' (cited as FDC 170926 / NDB 02021 by secondary sites getfoodfacts, triagemethod, listonic, foodstruct); IFCT 2017 not opened",
       "confidence": "Medium"
     },
     "sodiumMg": {
       "value": 27,
-      "source": "USDA FDC: FDC ID 170926, Spices, ginger, ground (via getfoodfacts.com, recipal.com, soupersage.com)",
+      "source": "USDA FDC: USDA FDC 'Spices, ginger, ground' (cited as FDC 170926 / NDB 02021 by secondary sites getfoodfacts, triagemethod, listonic, foodstruct); IFCT 2017 not opened",
       "confidence": "Medium"
     },
     "ironMg": {
@@ -97,9 +106,9 @@
       "confidence": null
     },
     "potassiumMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 1320,
+      "source": "USDA FDC: USDA FDC 'Spices, ginger, ground' (cited as FDC 170926 / NDB 02021 by secondary sites getfoodfacts, triagemethod, listonic, foodstruct); IFCT 2017 not opened",
+      "confidence": "Medium"
     },
     "magnesiumMg": {
       "value": null,
@@ -227,15 +236,23 @@
       "confidence": null
     }
   },
-  "macrosPer100Estimate": null,
-  "storage": "Airtight container at room temperature, away from heat, light and moisture. Keep the spoon dry to prevent clumping.",
-  "looksLike": "A fine, pale beige to light-tan powder with a warm, sharp, slightly lemony smell. It is ground from peeled, sun-dried ginger rhizome (sonth), which looks like pale, hard, wrinkled knobs.",
-  "howToPick": null,
-  "shelfLife": "About 6–12 months unopened; best used within 6 months of opening.",
+  "macrosPer100Estimate": {
+    "kcal": 335,
+    "proteinG": 9,
+    "carbsG": 71.6,
+    "fatG": 4.2,
+    "fibreG": 14.1
+  },
+  "storage": "Airtight jar in a cool, dry cupboard; keep away from steam and moisture.",
+  "looksLike": "A fine, pale beige to light-tan powder with a warm, sharp, slightly lemony smell. It is ground from peeled, sun-dried ginger rhizome.",
+  "howToPick": "Fine, pale beige powder with a sharp aroma, no lumps or damp patches. A grey tint, musty smell or stickiness suggests old or damp stock.",
+  "shelfLife": "About 6 to 12 months in a sealed pack.",
   "substitutes": [
     "Fresh ginger",
     "Ginger paste",
-    "Omit"
+    "Omit",
+    "Fresh ginger (about 3 times the weight)",
+    "Allspice or a pinch of garam masala"
   ],
   "vendorListings": [],
   "usedIn": [
@@ -243,18 +260,28 @@
       "dishNumber": 23,
       "quantity": 1,
       "unit": "g",
-      "raw": "1 g (½ tsp)"
+      "raw": "1 g dry ginger powder per serving (½ tsp)"
+    },
+    {
+      "dishNumber": 22,
+      "quantity": 0.3,
+      "unit": "g",
+      "raw": "0.3 g dry ginger powder per serving, replacing fresh ginger (not in the standard recipe)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-08",
       "file": "FitPlate_Ingredients_2026-10-08.md"
+    },
+    {
+      "date": "2026-11-09",
+      "file": "FitPlate_Ingredients_2026-11-09.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (none)",
+    "price": "price engine (spike-blend)",
+    "macrosPer100Estimate": "stable (single)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -264,7 +291,9 @@
     "usedIn": "newest"
   },
   "mergeNotes": [
+    "price flag: possible-spike",
     "price flag: narrowed",
-    "Range 650.0–900.0 was wider than 30% of avg 775.0; narrowed to ±15%."
+    "Possible spike: latest avg 1050 (2026-11-09) moved more than 35% from the previous estimate; using the halfway point.",
+    "Range 675.0–1560.0 was wider than 30% of avg 912.5; narrowed to ±15%."
   ]
 }

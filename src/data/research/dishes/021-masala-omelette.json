@@ -2,10 +2,11 @@
   "id": "021-masala-omelette",
   "number": 21,
   "name": "Masala Omelette",
-  "cuisine": "Pan-Indian (found in home kitchens, Irani cafés, highway dhabas and Mumbai omelette-pav carts)",
+  "cuisine": "Pan-Indian (home kitchens, Irani cafés, dhabas and Mumbai omelette-pav carts)",
   "dietType": "egg",
   "mealType": [
-    "breakfast"
+    "breakfast",
+    "snack"
   ],
   "difficulty": "Beginner",
   "prepMin": 7,
@@ -52,7 +53,7 @@
       "name": "Turmeric powder (haldi)",
       "quantity": 0.25,
       "unit": "g",
-      "householdMeasure": "a pinch (about ⅛ tsp, scant)"
+      "householdMeasure": "a pinch (scant ⅛ tsp)"
     },
     {
       "ingredientId": "kashmiri-red-chilli-powder",
@@ -69,8 +70,8 @@
       "householdMeasure": "a big pinch (about ⅙ tsp)"
     },
     {
-      "ingredientId": null,
-      "name": "Groundnut oil (or any neutral cooking oil, or ghee)",
+      "ingredientId": "cooking-oil-refined-sunflower-groundnut",
+      "name": "Groundnut oil (or any neutral cooking oil)",
       "quantity": 7.5,
       "unit": "ml",
       "householdMeasure": "1½ tsp"
@@ -80,7 +81,7 @@
     "8-inch (20 cm) frying pan or tawa, ideally non-stick",
     "Mixing bowl",
     "Fork or small whisk",
-    "Flat, wide spatula (wooden or silicone is gentlest on non-stick)",
+    "Flat, wide spatula (wooden or silicone is gentlest)",
     "Chopping board and a sharp knife",
     "Measuring spoons (normal teaspoons are a fine stand-in)"
   ],
@@ -90,40 +91,44 @@
       "title": "Chop the onion",
       "text": "Peel and very finely chop 30 g (¼ small) onion.",
       "timerSec": 60,
-      "tip": "Chop very fine. The omelette cooks in about 3 minutes, so big pieces stay raw and make it break when you flip.",
-      "visualCue": "Tiny, even pieces, smaller than a lentil.",
+      "tip": "Hold the onion's flat cut side down so it does not roll.",
+      "visualCue": "Tiny, even pieces, smaller than a lentil; about 3 tbsp on the board.",
       "cameraCheck": "About 3 tbsp chopped onion on the board",
-      "videoShot": "The knife rocking through the onion."
+      "videoShot": "The knife rocking through the onion.",
+      "watchOut": "Big chunks. The omelette cooks in about 3 minutes, so large pieces stay raw and crunchy and tear the omelette when you flip. If you see pieces bigger than a lentil, chop them again."
     },
     {
       "n": 2,
       "title": "Chop the tomato",
       "text": "Cut ¼ tomato, scoop out the seeds and watery pulp with a spoon, and very finely chop the flesh (25 g).",
       "timerSec": 60,
-      "tip": "Removing the seeds keeps the omelette from turning watery.",
-      "visualCue": "Small red cubes with no loose seeds or juice.",
+      "tip": null,
+      "visualCue": "Small red cubes with no loose seeds and no pooled juice on the board.",
       "cameraCheck": "About 2 tbsp chopped tomato",
-      "videoShot": "The spoon scooping out the seeds, then the knife dicing."
+      "videoShot": "The spoon scooping out the seeds, then the knife dicing.",
+      "watchOut": "Leaving the seeds in. The extra juice makes the omelette soggy and slow to set. If the board is wet with juice, pat the tomato dry with a paper towel."
     },
     {
       "n": 3,
       "title": "Chop the chilli and coriander",
       "text": "Very finely chop ½ green chilli (3 g) and 1 tbsp (3 g) coriander leaves.",
       "timerSec": 60,
-      "tip": "Remove the chilli seeds if you want it milder.",
-      "visualCue": "Fine green flecks",
+      "tip": null,
+      "visualCue": "Fine green flecks; the coriander smells fresh and the chilli smells sharp.",
       "cameraCheck": "The chopped chilli and coriander side by side",
-      "videoShot": "Coriander being chopped."
+      "videoShot": "Coriander being chopped.",
+      "watchOut": "Touching your eyes after cutting the chilli. Stinging fingers are the sign; wash your hands with soap, not just water. Take out the chilli seeds if you want it milder."
     },
     {
       "n": 4,
       "title": "Crack the eggs",
       "text": "Crack 2 eggs into the bowl, one at a time.",
       "timerSec": 30,
-      "tip": "Crack on a flat surface for fewer shell bits. Lift out any shell with a larger piece of shell.",
-      "visualCue": "Two whole yolks, no shell pieces",
+      "tip": "Crack on a flat surface rather than the bowl rim for fewer shell bits.",
+      "visualCue": "Two whole yolks in the bowl, no shell pieces.",
       "cameraCheck": "2 eggs in the bowl",
-      "videoShot": "An egg cracking on the counter edge and opening into the bowl."
+      "videoShot": "An egg cracking on the counter and opening into the bowl.",
+      "watchOut": "Shell fragments, which show as small white or brown specks in the egg. Lift them out with a larger piece of the shell, which works better than a finger."
     },
     {
       "n": 5,
@@ -131,19 +136,21 @@
       "text": "Add the salt (a big pinch, 1 g), a pinch of turmeric (0.25 g) and ¼ tsp Kashmiri chilli powder (0.5 g).",
       "timerSec": 20,
       "tip": null,
-      "visualCue": "Small coloured heaps on top of the eggs",
+      "visualCue": "Small yellow and red heaps sitting on top of the egg.",
       "cameraCheck": "The spices sitting on the eggs",
-      "videoShot": "The spices sprinkled into the bowl."
+      "videoShot": "The spices sprinkled into the bowl.",
+      "watchOut": "Too much turmeric, which makes the omelette taste bitter and look orange-brown. A pinch is only what fits between two fingertips; if you tipped in a spoonful, add one more egg to dilute it."
     },
     {
       "n": 6,
       "title": "Beat the eggs",
-      "text": "Beat with a fork until fully mixed (add the optional 1 tbsp milk now).",
+      "text": "Beat with a fork until fully mixed (add the optional 1 tbsp milk now if you want it).",
       "timerSec": 45,
-      "tip": "Tilt the bowl and whisk briskly; the air you beat in makes the omelette fluffy.",
-      "visualCue": "An even, golden-yellow mix with a light froth and no streaks of white.",
+      "tip": "Tilt the bowl and whisk briskly; the air you beat in makes the omelette fluffier.",
+      "visualCue": "An even golden-yellow mix with a light froth on top and no streaks of white.",
       "cameraCheck": "The beaten eggs in the bowl",
-      "videoShot": "The fork whisking in quick circles."
+      "videoShot": "The fork whisking in quick circles.",
+      "watchOut": "Streaks of clear egg white. They cook into rubbery white patches. If you see them, beat for 10 more seconds."
     },
     {
       "n": 7,
@@ -151,9 +158,10 @@
       "text": "Add the onion, tomato, chilli and coriander to the eggs and stir to combine.",
       "timerSec": 20,
       "tip": null,
-      "visualCue": "Vegetables spread evenly through the egg, not sunk in one heap.",
+      "visualCue": "Colourful flecks spread evenly through the egg, not sunk in one heap at the bottom.",
       "cameraCheck": "The speckled egg mix in the bowl",
-      "videoShot": "The fork folding the vegetables in."
+      "videoShot": "The fork folding the vegetables in.",
+      "watchOut": "Vegetables sinking to the bottom while you heat the pan. The omelette then has a bare half. Give the bowl one more stir right before pouring."
     },
     {
       "n": 8,
@@ -161,29 +169,32 @@
       "text": "Put the pan on medium heat. Add 1½ tsp (7.5 ml) oil and tilt the pan to coat the base.",
       "timerSec": 60,
       "tip": null,
-      "visualCue": "The oil looks thin and shimmers; a drop of egg sizzles at once. It should not smoke.",
+      "visualCue": "The oil looks thin and shimmery and spreads easily; a drop of egg dropped in sizzles at once.",
       "cameraCheck": "The oiled pan on the flame",
-      "videoShot": "Oil swirling across the pan."
+      "videoShot": "Oil swirling across the pan.",
+      "watchOut": "Smoking oil, which means the pan is too hot and the omelette will brown before the inside sets. If you see smoke, take the pan off the heat for 20 seconds and lower the flame."
     },
     {
       "n": 9,
       "title": "Pour in the eggs",
       "text": "Stir the egg mix once more, then pour it into the pan. Tilt the pan so it spreads into an even circle.",
       "timerSec": 15,
-      "tip": "Spread the vegetables with the spatula tip if they bunch in the middle.",
-      "visualCue": "A gentle sizzle; an even layer about ½ cm thick.",
+      "tip": "Nudge any bunched vegetables flat with the spatula tip.",
+      "visualCue": "A gentle sizzle, and an even layer about ½ cm thick reaching close to the pan edge.",
       "cameraCheck": "The egg spread across the pan",
-      "videoShot": "The speckled egg pouring in and spreading."
+      "videoShot": "The speckled egg pouring in and spreading.",
+      "watchOut": "A fierce, spitting sizzle with edges browning immediately means the pan is too hot. Lower the flame at once. A thick, small omelette means the pan is too small; it will stay wet in the middle."
     },
     {
       "n": 10,
       "title": "Let it set",
       "text": "Turn the heat to medium-low. Leave it untouched.",
       "timerSec": 90,
-      "tip": "Cover the pan with a lid for the last 30 seconds if the top stays very wet.",
-      "visualCue": "The edges turn opaque and lift slightly; the top is mostly set with only a thin wet layer left.",
+      "tip": null,
+      "visualCue": "The edges turn opaque and matte and lift slightly from the pan; the top is mostly set with only a thin shiny wet layer left.",
       "cameraCheck": "The setting omelette, top view",
-      "videoShot": "Close-up of the edges going from glossy to matte."
+      "videoShot": "Close-up of the edges going from glossy to matte.",
+      "watchOut": "Poking or stirring now, which turns it into scrambled egg. Leave it alone. If the top stays very wet after 2 minutes, cover the pan with a lid for 30 seconds."
     },
     {
       "n": 11,
@@ -191,19 +202,21 @@
       "text": "Run the spatula around the edge and under the omelette.",
       "timerSec": 15,
       "tip": null,
-      "visualCue": "The omelette slides freely when you shake the pan.",
+      "visualCue": "The omelette slides freely when you shake the pan gently.",
       "cameraCheck": "The spatula under the edge",
-      "videoShot": "The omelette gliding as the pan is shaken."
+      "videoShot": "The omelette gliding as the pan is shaken.",
+      "watchOut": "Sticking in one spot, which tears the omelette at the flip. Slide the spatula under that spot and add a few drops of oil at the edge."
     },
     {
       "n": 12,
       "title": "Flip it",
       "text": "Slide the wide spatula under the middle and turn the omelette over in one quick move.",
       "timerSec": 10,
-      "tip": "If it tears, press it back together; it still tastes the same. Or use the plate trick from the Equipment list.",
-      "visualCue": "The cooked side is golden with light brown spots.",
+      "tip": "Or use the plate trick from the Equipment list.",
+      "visualCue": "The cooked side is golden with a few light brown spots.",
       "cameraCheck": "The flipped, golden side",
-      "videoShot": "The flip."
+      "videoShot": "The flip.",
+      "watchOut": "Raw liquid egg running out when you lift it, a sign it needed another 20 seconds to set. Put it back down, wait, and try again. If it tears, press the pieces together; it tastes the same."
     },
     {
       "n": 13,
@@ -211,9 +224,10 @@
       "text": "Cook on medium-low.",
       "timerSec": 45,
       "tip": null,
-      "visualCue": "No wet egg at the edges; when pressed lightly in the centre, it feels springy, not liquid.",
+      "visualCue": "No wet egg at the edges; pressed lightly in the centre it feels springy, not liquid.",
       "cameraCheck": "The omelette in the pan, second side down",
-      "videoShot": "The spatula pressing the centre gently."
+      "videoShot": "The spatula pressing the centre gently.",
+      "watchOut": "A dark brown, dry underside, which means the heat was too high; the omelette turns rubbery. Take it off earlier next time."
     },
     {
       "n": 14,
@@ -223,7 +237,8 @@
       "tip": null,
       "visualCue": "Golden outside, soft and moist inside, with red, white and green flecks.",
       "cameraCheck": "The served omelette",
-      "videoShot": "The omelette sliding onto the plate, then a fork cutting into it."
+      "videoShot": "The omelette sliding onto the plate, then a fork cutting into it.",
+      "watchOut": "Leaving it in the hot pan, where it keeps cooking and dries out. Plate it straight away."
     }
   ],
   "nutritionPerServing": {
@@ -251,12 +266,13 @@
       "vitamin-b12": 0,
       "vitamin-b6": 0,
       "vitamin-c": 13.8,
-      "vitamin-e": 0.1,
-      "vitamin-k": 9.3,
+      "vitamin-d": 0.3,
+      "vitamin-e": 3.1,
+      "vitamin-k": 9.7,
       "zinc": 0
     },
-    "coveragePct": 89,
-    "basis": "partial estimate from ingredient quantities"
+    "coveragePct": 100,
+    "basis": "estimate from ingredient quantities"
   },
   "asOrdered": {
     "price": {
@@ -268,27 +284,37 @@
           "avg": 145,
           "confidence": null,
           "sourceFile": "FitPlate_Dishes_2026-10-08.md"
+        },
+        {
+          "date": "2026-11-09",
+          "min": 80,
+          "max": 160,
+          "avg": 120,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-11-09.md"
         }
       ],
       "currentEstimate": {
-        "min": 120,
-        "max": 160,
-        "avg": 150
+        "min": 110,
+        "max": 150,
+        "avg": 130
       },
-      "method": "single",
+      "method": "wma",
       "trend": "unknown",
       "change30dPct": null,
-      "lastObserved": "2026-10-08",
+      "lastObserved": "2026-11-09",
       "stale": false,
       "seasonal": false,
-      "listingCount": 4,
+      "listingCount": 6,
       "platforms": [
         "Swiggy",
         "Zomato"
       ],
-      "outOfStock": false,
-      "confirmed": true,
-      "checkNotes": []
+      "outOfStock": true,
+      "confirmed": false,
+      "checkNotes": [
+        "a listing used for the range is marked out of stock, closed or not taking orders"
+      ]
     },
     "nutrition": {
       "calories": {
@@ -297,7 +323,7 @@
       },
       "protein": {
         "value": 14,
-        "source": "Zomato listing, Protein Chef, Marol (Andheri East), \"Masala Omelette – High Protein\" (egg count and portion weight not stated). The Protein Chef Mulund West and Kharghar listings showed no protein value for this item in snippets."
+        "source": "Zomato listing, Protein Chef, Marol (Andheri East), \"Masala Omelette – High Protein\", as recorded on 8 Oct 2026 and not re-seen this run (egg count and weight not stated). A Swiggy listing for All Things Healthy, Pune also shows about 14 g for a similarly named item, but that is a different brand and city and is not used."
       },
       "carbs": {
         "value": null,
@@ -328,42 +354,52 @@
         "avg": 145,
         "confidence": null,
         "sourceFile": "FitPlate_Dishes_2026-10-08.md"
+      },
+      {
+        "date": "2026-11-09",
+        "min": 80,
+        "max": 160,
+        "avg": 120,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-11-09.md"
       }
     ],
     "currentEstimate": {
-      "min": 120,
-      "max": 160,
-      "avg": 150
+      "min": 110,
+      "max": 150,
+      "avg": 130
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-08",
+    "lastObserved": "2026-11-09",
     "stale": false,
     "seasonal": false,
-    "listingCount": 4,
+    "listingCount": 6,
     "platforms": [
       "Swiggy",
       "Zomato"
     ],
-    "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "outOfStock": true,
+    "confirmed": false,
+    "checkNotes": [
+      "a listing used for the range is marked out of stock, closed or not taking orders"
+    ]
   },
   "healthiness": {
     "score": 8,
     "restaurantScore": null,
     "reasons": [
-      "two whole eggs give about 13 g of complete protein for about 225 kcal, with only 1½ tsp oil and no frying beyond a quick pan-cook. Onion, tomato, chilli and coriander add flavour and a little fibre. Points come off for the cholesterol and saturated fat in the yolks and for low fibre overall. Café and street versions are often cooked in a tablespoon or more of butter, salted more heavily, and almost always sold with buttered pav or white bread, which can double the calories and add refined flour."
+      "two whole eggs give about 13 g of complete protein for about 225 kcal, with only 1½ tsp oil and a quick pan-cook. Onion, tomato, chilli and coriander add flavour and a little fibre and vitamin C. Points come off for the cholesterol (about 370 mg) and saturated fat in the yolks and for low fibre. Café and street versions often use a tablespoon or more of butter, more salt, and almost always come with buttered pav or white bread, which can double the calories."
     ]
   },
   "researchRating": {
     "score": 4.5,
-    "basis": "the masala omelette is one of India's most common everyday egg dishes, cooked at home, in Irani cafés and at Mumbai omelette-pav carts. Recipe pages rate it highly (The Love of Spice 5/5 from 16 votes; Whisk Affair 4.86/5 from 7 votes; Tiffin and Tea 5/5 from 6 votes; Tarla Dalal 5/5 from 4 reviews with about 132,000 views), and Mumbai food guides list it among the city's favourite egg dishes. Small deductions because vote counts are small and it is seen as a basic, everyday dish rather than a standout one; some café reviews call it ordinary."
+    "basis": "a staple everyday Indian egg dish. Recipe pages rate it highly but with small vote counts: Whisk Affair 4.86/5 (7 votes, updated Jan 2026), Cup of Yum 5.0 (21 reviews), Champagne Tastes 5/5 (5 votes), Marks & Spencer 5/5 (3 ratings), Caroline's Cooking 5/5 (2 votes), Yummy Tummy 4/5 (1 vote), Cookbooker (Madhur Jaffrey version) 4.0/5 (1 review); Tesco's recipe has 135 ratings but the average was not visible. Small deduction because vote counts are small and it is seen as a basic dish rather than a standout one. Compared with the previous version, the sources and the score both hold up at 4.5."
   },
-  "storage": "Best eaten fresh. Leftovers can go in the fridge in an airtight box within 2 hours of cooking and keep for up to 2 days (cooked egg dishes are generally safe for 3–4 days, but the omelette turns rubbery after day 1). Freezing is not recommended; it turns watery and spongy when thawed. To reheat, warm in a pan on low heat with a lid for 1–2 min per side, or microwave covered in 15-second bursts until hot all through.",
-  "leftoverRemix": "Omelette egg-fried rice (\"omelette pulao\"). Slice the cold omelette into thin strips. Heat ½ tsp oil, add 1 cup cooked rice, a pinch of salt, ¼ tsp pepper and ½ tsp soy sauce, and toss for 2 min. Fold in the omelette strips and a handful of spring onion greens, and toss for 30 sec more.",
-  "burnOff": "about 3.2 km of running (225 ÷ 70 kcal/km, for a 70 kg adult), or about 4.5 km of brisk walking (about 55 min at 5 km/h, using about 50 kcal/km for walking) (est.). With 2 buttered pav (about 465 kcal): about 6.6 km running or 9.3 km walking (est.).",
+  "storage": "Best eaten fresh. Fridge-safe in an airtight box within 2 hours of cooking, for up to 2 days, though it turns rubbery after day 1. Freezing is not recommended (watery and spongy when thawed). Reheat in a pan on low with a lid for 1–2 min per side, or microwave covered in 15-second bursts until hot all through.",
+  "leftoverRemix": "Omelette egg-fried rice (\"omelette pulao\"). Slice the cold omelette into strips. Heat ½ tsp oil, add 1 cup cooked rice, a pinch of salt, ¼ tsp pepper and ½ tsp soy sauce, toss 2 min. Fold in the strips and a handful of spring onion greens, toss 30 sec more.",
+  "burnOff": "about 3.2 km of running (225 ÷ 70 kcal/km, 70 kg adult) or about 4.5 km of brisk walking (about 55 min at 5 km/h, about 50 kcal/km) (est.). With 2 buttered pav (about 465 kcal): about 6.6 km running or 9.3 km walking (est.).",
   "sources": [
     "Whisk Affair, Masala Omelette (Indian Masala Omelet): https://www.whiskaffair.com/indian-masala-omelette/",
     "Tarla Dalal, Masala Omelette (Indian Style): https://www.tarladalal.com/masala-omelette-40756r",
@@ -393,40 +429,150 @@
     "magicpin, FreshMenu, IC Colony, Borivali West: https://magicpin.in/Mumbai/Ic-Colony/Restaurant/Freshmenu/store/15597b8/delivery",
     "magicpin, Mumbai Travancore Kitchen, Kanjurmarg West (dropped): https://magicpin.in/Mumbai/Powai/Restaurant/Mumbai-Travancore-Kitchen/store/4c80b5/delivery",
     "magicpin, Cafe Irani Chaii, Mahim (dropped, context): https://magicpin.in/Mumbai/Mahim/Restaurant/Cafe-Irani-Chaii/store/291c0",
-    "magicpin, Cafe Irani, Dana Bunder (dropped, context): https://magicpin.in/Mumbai/Dana-Bunder/Restaurant/Cafe-Irani/store/8c806/menu/"
+    "magicpin, Cafe Irani, Dana Bunder (dropped, context): https://magicpin.in/Mumbai/Dana-Bunder/Restaurant/Cafe-Irani/store/8c806/menu/",
+    "Whisk Affair, Masala Omelette (4.86/5, 7 votes): https://www.whiskaffair.com/indian-masala-omelette/",
+    "Tarla Dalal, Masala Omelette: https://www.tarladalal.com/masala-omelette-40756r",
+    "Lovefood, Masala omelette: https://www.lovefood.com/recipes/79092/masala-omelette-recipe",
+    "Cup of Yum, Masala Omelette: https://cupofyum.com/recipes/masala-omelette",
+    "Champagne Tastes, Masala Spiced Omelette: https://champagne-tastes.com/masala-spiced-omelette/",
+    "Marks & Spencer, Masala omelette: https://www.marksandspencer.com/c/food-and-wine/cooking/recipes/211688/masala-omelette/",
+    "Yummy Tummy, Masala Omelette: https://www.yummytummyaarthi.com/masala-omelette-recipe/",
+    "Cookbooker, A two-egg masala omelette (Madhur Jaffrey): https://cookbooker.com/recipes/67745/a-two-egg-masala-omelette",
+    "Wikipedia, Omelette (India section, masala omelette gallery): https://en.wikipedia.org/wiki/Omelets",
+    "Wikipedia, Indian omelette: https://en.wikipedia.org/wiki/Indian_omelette",
+    "Swiggy, Bombay Coffee House, Fort: https://www.swiggy.com/city/mumbai/bombay-coffee-house-fort-rest61313 and https://www.swiggy.com/menu/61313",
+    "Swiggy, Bombay Coffee House, Bandra West: https://www.swiggy.com/menu/18950",
+    "Swiggy, Aromas Cafe and Bistro, Bandra West (₹379, excluded premium): https://www.swiggy.com/restaurants/aromas-cafe-and-bistro-bandra-waterfield-road-bandra-west-mumbai-102413",
+    "EazyDiner, Aromas Cafe & Bistro (cost for two): https://www.eazydiner.com/mumbai/aromas-cafe-bandra-west-western-suburbs-661819",
+    "magicpin, Poptates, Town Hall, Lower Parel (₹324, excluded premium): https://magicpin.in/Mumbai/Town-Hall/Restaurant/Poptates/store/a177a/",
+    "Four Seasons Mumbai breakfast menu (hotel, not used): https://www.fourseasons.com/mumbai/dining/menus/the-club/the-club-breakfast",
+    "8 Oct 2026 version listings (not re-seen): Swiggy Bread Omelette Mumbai page https://www.swiggy.com/city/mumbai/bread-omelette-dish-restaurants; Zomato Protein Chef Marol https://www.zomato.com/mumbai/protein-chef-marol/order; Zomato Lo! https://www.zomato.com/mumbai/lo-low-carb-and-keto-foods-khar/order; Zomato Eggy Marol https://www.zomato.com/mumbai/eggy-marol/order; magicpin FreshMenu Kalina https://magicpin.in/Mumbai/Kalina/Restaurant/Freshmenu/store/15597c3/delivery"
   ],
   "allergens": [
     "peanut",
     "milk",
     "egg"
   ],
-  "dietClaims": [],
-  "fasting": null,
-  "dietTags": null,
+  "dietClaims": [
+    "glutenFree"
+  ],
+  "fasting": {
+    "navratri": {
+      "status": "no",
+      "reason": "egg, onion and table salt are all avoided in vrat (most common rule set assumed)"
+    },
+    "ekadashi": {
+      "status": "no",
+      "reason": "egg and onion are avoided on Ekadashi"
+    },
+    "jain": {
+      "status": "no",
+      "reason": "egg and onion"
+    },
+    "ramadan": {
+      "status": "yes",
+      "reason": "egg is halal; about 13 g protein for about 225 kcal keeps you full at sehri (pair with a roti; salt is moderate at about 1 g)"
+    }
+  },
+  "dietTags": {
+    "base": "Eggetarian (egg)",
+    "jain": {
+      "status": "no",
+      "reason": "contains egg and onion (egg is not Jain; onion is a root vegetable)"
+    },
+    "vegan": {
+      "status": "no",
+      "reason": "contains egg (and ghee/milk if the optional versions are used)"
+    },
+    "pescatarian": {
+      "status": "yes",
+      "reason": "eggs are allowed in a pescatarian diet; no meat"
+    },
+    "sattvik": {
+      "status": "no",
+      "reason": "contains onion and egg; dropping onion would still leave egg, which is not sattvik"
+    },
+    "glutenFree": {
+      "status": "yes",
+      "reason": "no wheat, rava, maida or hing in the recipe (do not add compounded hing, which usually contains wheat flour)"
+    },
+    "dairyFree": {
+      "status": "yes",
+      "reason": "cooked in oil; the optional 1 tbsp milk and any ghee or butter are left out"
+    },
+    "allergensDeclared": [
+      "egg",
+      "peanut",
+      "milk"
+    ]
+  },
   "tags": [
     "Egg",
+    "Gluten-free",
+    "Ramadan sehri / iftar",
     "Contains peanut",
     "Contains milk",
     "Contains egg",
     "Breakfast",
+    "Snack",
     "Pan-Indian",
     "Under 15 min",
     "Beginner",
     "Low calorie"
   ],
-  "description": null,
+  "description": "Family: omelette",
   "familyId": null,
-  "variants": [],
-  "needsReview": [],
+  "variants": [
+    {
+      "category": "Jain",
+      "status": "not-appropriate",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": "egg and onion are both outside Jain rules, and the dish is defined by egg."
+    },
+    {
+      "category": "Vegan",
+      "status": "not-appropriate",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": "the dish is defined by egg; an eggless chickpea-flour version is a different dish (see dish 16, Besan Chilla)."
+    },
+    {
+      "category": "Gluten-free",
+      "status": "already-fits",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": "main recipe already gluten-free (no hing; do not use compounded hing)."
+    },
+    {
+      "category": "Dairy-free",
+      "status": "already-fits",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": "main recipe already dairy-free (oil, no milk, ghee or butter)."
+    }
+  ],
+  "needsReview": [
+    "dropped \"dairyFree\" claim: recipe has milk",
+    "price not confirmed (2026-11-09): a listing used for the range is marked out of stock, closed or not taking orders"
+  ],
   "versions": [
     {
       "date": "2026-10-08",
       "file": "FitPlate_Dishes_2026-10-08.md"
+    },
+    {
+      "date": "2026-11-09",
+      "file": "FitPlate_Dishes_2026-11-09.md"
     }
   ],
   "mergeMethod": {
-    "nutritionPerServing": "stable (single)",
-    "orderPrice": "price engine (single)",
+    "nutritionPerServing": "stable (mean-2)",
+    "orderPrice": "price engine (wma)",
     "ingredients": "newest",
     "steps": "newest",
     "healthiness": "newest",
@@ -436,7 +582,8 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 110.0–160.0 was wider than 30% of avg 145.0; narrowed to ±15%.",
-    "range clamped to observed prices: 120–170 → 120–160"
+    "Range 89.7–160.0 was wider than 30% of avg 128.1; narrowed to ±15%.",
+    "recipe changed materially between 2026-10-08 and 2026-11-09; newest recipe used",
+    "2026-11-09: research declares milk not detected from ingredient names; added"
   ]
 }
