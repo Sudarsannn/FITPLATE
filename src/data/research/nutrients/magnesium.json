@@ -1,0 +1,455 @@
+{
+  "id": "magnesium",
+  "name": "Magnesium",
+  "type": "mineral",
+  "subtype": "macromineral",
+  "unit": "mg",
+  "altUnits": [
+    {
+      "unit": "mmol",
+      "toMainUnitFactor": 24.31
+    },
+    {
+      "unit": "mEq",
+      "toMainUnitFactor": 12.15
+    },
+    {
+      "unit": "mg magnesium oxide (salt weight)",
+      "toMainUnitFactor": 0.6
+    },
+    {
+      "unit": "mg magnesium citrate (salt weight; varies by product)",
+      "toMainUnitFactor": 0.16
+    }
+  ],
+  "unitConversions": [
+    {
+      "fromUnit": "mg",
+      "compound": "magnesium oxide",
+      "toMainUnitFactor": 0.6,
+      "raw": "1 mg magnesium oxide | x about 0.6"
+    },
+    {
+      "fromUnit": "mg",
+      "compound": "magnesium citrate",
+      "toMainUnitFactor": 0.16,
+      "raw": "1 mg magnesium citrate | x about 0.16"
+    },
+    {
+      "fromUnit": "mg",
+      "compound": "magnesium glycinate",
+      "toMainUnitFactor": 0.14,
+      "raw": "1 mg magnesium glycinate | x about 0.14"
+    }
+  ],
+  "targets": [
+    {
+      "group": "adult_male_sedentary",
+      "ear": 370,
+      "rda": 440,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (RDA 440 via trade-press report of FSSAI revision; EAR 370 via an unidentified comparison table; secondary, unverified)"
+    },
+    {
+      "group": "adult_male_moderate",
+      "ear": 370,
+      "rda": 440,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (RDA 440 via trade-press report of FSSAI revision; EAR 370 via an unidentified comparison table; secondary, unverified); no activity split seen in any source"
+    },
+    {
+      "group": "adult_male_heavy",
+      "ear": 370,
+      "rda": 440,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (RDA 440 via trade-press report of FSSAI revision; EAR 370 via an unidentified comparison table; secondary, unverified); no activity split seen in any source"
+    },
+    {
+      "group": "adult_female_sedentary",
+      "ear": 310,
+      "rda": 370,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (RDA 370 via trade-press report of FSSAI revision; EAR 310 via an unidentified comparison table; secondary, unverified)"
+    },
+    {
+      "group": "adult_female_moderate",
+      "ear": 310,
+      "rda": 370,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (RDA 370 via trade-press report of FSSAI revision; EAR 310 via an unidentified comparison table; secondary, unverified); no activity split seen in any source"
+    },
+    {
+      "group": "adult_female_heavy",
+      "ear": 310,
+      "rda": 370,
+      "ai": null,
+      "source": "ICMR-NIN 2020 (RDA 370 via trade-press report of FSSAI revision; EAR 310 via an unidentified comparison table; secondary, unverified); no activity split seen in any source"
+    },
+    {
+      "group": "pregnant",
+      "ear": null,
+      "rda": null,
+      "ai": null,
+      "source": "ICMR-NIN 2020 value Not found. For comparison only: NIH RDA 350 (19-30 y) / 360 (31-50 y) mg/day; EFSA AI 300 mg/day (same as non-pregnant women)"
+    },
+    {
+      "group": "lactating",
+      "ear": null,
+      "rda": null,
+      "ai": null,
+      "source": "ICMR-NIN 2020 value Not found. For comparison only: NIH RDA 310 / 320 mg/day; EFSA AI 300 mg/day"
+    }
+  ],
+  "appDefaultTarget": {
+    "adult_male": 440,
+    "adult_female": 370,
+    "pregnant": null,
+    "lactating": null,
+    "age_60_plus": null
+  },
+  "upperLimit": {
+    "value": 350,
+    "unit": "mg/day",
+    "appliesTo": "supplements_only",
+    "source": "US NASEM/IOM 1997 via NIH ODS (supplements and medicines only, not food) (secondary, unverified); EFSA/SCF 2001 figure is 250 mg/day for supplements (secondary, unverified); ICMR-NIN TUL for magnesium: Not found"
+  },
+  "topFoodSources": [
+    {
+      "food": "Pumpkin seeds, roasted (kaddu ke beej)",
+      "veg": true,
+      "per100g": 550,
+      "servingG": 28,
+      "servingLabel": "1 oz, about 2 tbsp",
+      "perServing": 156
+    },
+    {
+      "food": "Chia seeds",
+      "veg": true,
+      "per100g": null,
+      "servingG": 28,
+      "servingLabel": "1 oz, about 2 tbsp",
+      "perServing": 111
+    },
+    {
+      "food": "Almonds (badam), dry-roasted",
+      "veg": true,
+      "per100g": null,
+      "servingG": 28,
+      "servingLabel": "1 oz (28 g), about 22 almonds (est.)",
+      "perServing": 80
+    },
+    {
+      "food": "Spinach (palak), boiled",
+      "veg": true,
+      "per100g": null,
+      "servingG": 90,
+      "servingLabel": "1/2 cup cooked (about 90 g, est.)",
+      "perServing": 78
+    },
+    {
+      "food": "Kidney beans / black beans, cooked (rajma proxy)",
+      "veg": true,
+      "per100g": null,
+      "servingG": 86,
+      "servingLabel": "1/2 cup cooked (about 86 g, est.)",
+      "perServing": 60
+    },
+    {
+      "food": "Finger millet (ragi), raw grain",
+      "veg": true,
+      "per100g": 160,
+      "servingG": 50,
+      "servingLabel": "50 g flour, about 2 rotis",
+      "perServing": 80
+    },
+    {
+      "food": "Pearl millet (bajra), raw grain",
+      "veg": true,
+      "per100g": 135.6,
+      "servingG": 50,
+      "servingLabel": "50 g flour, about 1-2 rotis",
+      "perServing": 68
+    },
+    {
+      "food": "Foxtail millet (kangni), raw grain",
+      "veg": true,
+      "per100g": 81,
+      "servingG": 50,
+      "servingLabel": "50 g raw, about 1 katori cooked",
+      "perServing": 40
+    },
+    {
+      "food": "Soy milk, plain",
+      "veg": true,
+      "per100g": null,
+      "servingG": 244,
+      "servingLabel": "1 cup (about 240 ml)",
+      "perServing": 39
+    }
+  ],
+  "goodSourceDishes": [
+    {
+      "dishNumber": 31,
+      "dishName": "Indian-style Overnight Oats"
+    },
+    {
+      "dishNumber": 71,
+      "dishName": "Ragi Dosa"
+    },
+    {
+      "dishNumber": 12,
+      "dishName": "Rajma Chawal"
+    },
+    {
+      "dishNumber": 8,
+      "dishName": "Chole (Chana Masala)"
+    },
+    {
+      "dishNumber": 17,
+      "dishName": "Palak Paneer"
+    },
+    {
+      "dishNumber": 66,
+      "dishName": "Sprouts Chaat"
+    },
+    {
+      "dishNumber": 56,
+      "dishName": "Pesarattu"
+    },
+    {
+      "dishNumber": 29,
+      "dishName": "Misal Pav"
+    },
+    {
+      "dishNumber": 27,
+      "dishName": "Dal Makhani"
+    },
+    {
+      "dishNumber": 46,
+      "dishName": "Methi Thepla"
+    }
+  ],
+  "deficiencyRiskIndia": "moderate",
+  "absorptionBoosters": [
+    "Eating a varied diet with whole grains, pulses, nuts, seeds and greens, which lifts total intake",
+    "Splitting supplement doses across the day and taking them with food (less stomach upset)",
+    "Fermenting whole-grain batters (dosa, idli, sourdough-type) may free soluble magnesium (in-vitro evidence; human absorption data Not found)",
+    "Well-absorbed supplement forms such as citrate or glycinate versus oxide (evidence mixed; head-to-head human data weak)"
+  ],
+  "absorptionBlockers": [
+    "Phytate (whole grains, pulses, nuts) binds magnesium, partly offset by the higher magnesium content of whole foods",
+    "Oxalate in spinach and similar greens",
+    "Very high doses at one time (fraction absorbed falls and diarrhoea is more likely)",
+    "Heavy alcohol use, chronic diarrhoea or vomiting (higher losses)",
+    "Loop and thiazide water pills and long-term proton pump inhibitors (higher losses)",
+    "Magnesium taken within 2 hours of oral bisphosphonates, or close to tetracycline/quinolone antibiotics (they bind each other)"
+  ],
+  "logPresets": [
+    {
+      "label": "Magnesium tablet, 100 mg elemental",
+      "amount": 100,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 100,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Magnesium tablet, 200 mg elemental",
+      "amount": 200,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 200,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Magnesium tablet, 300 mg elemental (e.g. about 500 mg magnesium oxide)",
+      "amount": 300,
+      "unit": "mg",
+      "toMainFactor": 0.6,
+      "factorSource": "markdown",
+      "mainAmount": 180,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Magnesium 350 mg elemental in a day (equal to the US supplement limit)",
+      "amount": 350,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 350,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Magnesium 400 mg elemental in a day (prescription dose)",
+      "amount": 400,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 400,
+      "mainAmountRange": null,
+      "prescriptionDose": true
+    },
+    {
+      "label": "Magnesium 600 mg elemental in a day (prescription dose)",
+      "amount": 600,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 600,
+      "mainAmountRange": null,
+      "prescriptionDose": true
+    }
+  ],
+  "warnings": [
+    "General information, not medical advice. Check with a doctor before starting magnesium supplements.",
+    "Kidney disease: magnesium supplements, magnesium antacids and magnesium laxatives can cause high blood magnesium. Do not self-start; doctor input needed.",
+    "Heart-rhythm medicines, digoxin, diuretics, PPIs, bisphosphonates and tetracycline or quinolone antibiotics interact with magnesium or change magnesium levels; ask a doctor or pharmacist.",
+    "The 350 mg/day limit (US) applies to supplements and medicines, not to food. Loose stools or diarrhoea are the usual first sign of too much supplemental magnesium.",
+    "Labels may show the salt weight; enter the elemental magnesium figure.",
+    "ICMR-NIN requirement values for magnesium were seen only through secondary reports and could not be verified against the NIN document."
+  ],
+  "conditionAdjustments": [
+    {
+      "profileId": "P13 Chronic kidney disease (early stages)",
+      "change": "Kidneys clear magnesium, so supplements, magnesium antacids and laxatives can build up to high blood levels as kidney function falls; food magnesium target is not changed by the app. Requires doctor input; no supplement presets shown.",
+      "value": null,
+      "unit": "",
+      "source": "Clinical reviews of magnesium in CKD (PMC9920010, PMC11317063); Mayo Clinic supplement page"
+    },
+    {
+      "profileId": "P14 Kidney stones",
+      "change": "No change to the food target. Observational data (NHANES 2011-2018) link higher dietary magnesium with lower odds of stones; randomized evidence is limited and routine supplements are not supported over standard therapy. Supplements: doctor first.",
+      "value": null,
+      "unit": "",
+      "source": "PubMed 38015780; PMC13529825"
+    },
+    {
+      "profileId": "P1 Type 2 diabetes",
+      "change": "No ICMR change found. Pooled cohort studies link each extra 100 mg/day of dietary magnesium with about 14-19% lower diabetes risk (RR 0.81-0.86; observational). Small Indian studies report low serum magnesium in 12-45% of people with diabetes. Metformin or insulin users: doctor first for supplements.",
+      "value": null,
+      "unit": "",
+      "source": "Diabetes Care 2011 meta-analysis; PMC5133122; JK Science 2022 and other Indian studies"
+    },
+    {
+      "profileId": "P3 High blood pressure (hypertension)",
+      "change": "No target change found. Supplements lower BP by about 2-3 mmHg on average (larger in people on BP medicines or with low magnesium); not a replacement for medicines. Diuretic users: loop and thiazide types raise magnesium loss, potassium-sparing types lower it; doctor first.",
+      "value": null,
+      "unit": "",
+      "source": "Hypertension 2025 meta-analysis (PMC12529988); PMC11547496"
+    },
+    {
+      "profileId": "P22 Pregnancy",
+      "change": "ICMR value Not found. EFSA sets no extra need (AI 300 mg/day); NIH RDA 350-360 mg/day. App shows the adult-woman ICMR value as a floor; supplement dose is the doctor's decision. Requires doctor input.",
+      "value": null,
+      "unit": "",
+      "source": "EFSA 2015; NIH ODS"
+    },
+    {
+      "profileId": "P23 Breastfeeding",
+      "change": "ICMR value Not found. NIH RDA 310-320 mg/day; EFSA AI 300 mg/day (no extra). App shows the adult-woman ICMR value. Requires doctor input for supplements.",
+      "value": null,
+      "unit": "",
+      "source": "EFSA 2015 and 2017 DRV summary; NIH ODS"
+    },
+    {
+      "profileId": "P20 Osteoporosis and low bone density",
+      "change": "No target change found. Higher dietary magnesium is associated with higher hip bone density in observational data; no strong trial evidence for supplements. Magnesium taken within 2 hours of oral bisphosphonates can reduce their absorption.",
+      "value": 2,
+      "unit": "hours (spacing)",
+      "source": "NIH ODS health professional fact sheet; PubMed 26556742"
+    },
+    {
+      "profileId": "P17 Acid reflux (GERD)",
+      "change": "No target change. Proton pump inhibitors taken for 3 months or more (most cases after a year) can cause low magnesium (FDA label warning); magnesium-containing antacids add magnesium. Ask a doctor about checking blood magnesium.",
+      "value": 3,
+      "unit": "months of PPI use",
+      "source": "FDA PPI labels; PubMed 28078056"
+    },
+    {
+      "profileId": "P16 IBS",
+      "change": "No target change found. Diarrhoea and other gut losses can lower magnesium; magnesium salts are osmotic laxatives and can worsen loose stools. Supplements: doctor first.",
+      "value": null,
+      "unit": "",
+      "source": "PMC12383300; NHS/other secondary summaries"
+    },
+    {
+      "profileId": "P19 Celiac disease and gluten sensitivity",
+      "change": "No ICMR change. Harvard Health lists digestive disorders such as celiac disease among causes of higher deficiency risk even with adequate diet. Doctor guidance for testing.",
+      "value": null,
+      "unit": "",
+      "source": "Harvard Health Publishing"
+    },
+    {
+      "profileId": "P21 Heart disease (after a cardiac event)",
+      "change": "No target change. Both low and high magnesium can affect heart rhythm; Mayo advises telling the doctor about heart disease before magnesium supplements. Heart-rhythm medicines: doctor input needed. Requires doctor input.",
+      "value": null,
+      "unit": "",
+      "source": "Mayo Clinic supplement page"
+    },
+    {
+      "profileId": "P31 Healthy ageing (50+)",
+      "change": "ICMR age-60+ value Not found; NIH RDA 420 mg (men) and 320 mg (women) from age 31. Older adults and people on diuretics or PPIs are more likely to run low; kidney function matters before supplements.",
+      "value": null,
+      "unit": "",
+      "source": "NIH ODS; PMC10097335"
+    },
+    {
+      "profileId": "P29 Endurance and running",
+      "change": "No change found in the sources read. Sweat losses of magnesium: Not found.",
+      "value": null,
+      "unit": "",
+      "source": "Not found"
+    },
+    {
+      "profileId": "P33 Jain diet (no root vegetables; nutrient gaps and swaps)",
+      "change": "No change found. Nuts, seeds, millets, whole pulses and leafy vegetables remain available; Jain-specific magnesium data Not found.",
+      "value": null,
+      "unit": "",
+      "source": "No source found"
+    },
+    {
+      "profileId": "P34 Vegan diet (no dairy, eggs, meat, fish or honey)",
+      "change": "No change found. Plant foods (seeds, nuts, millets, pulses, greens) are the main magnesium sources; vegan-specific magnesium data Not found.",
+      "value": null,
+      "unit": "",
+      "source": "No source found"
+    },
+    {
+      "profileId": "P12 Vitamin D and B12 deficiency (diet follow-up)",
+      "change": "No direct link found in the sources read.",
+      "value": null,
+      "unit": "",
+      "source": "Not found"
+    }
+  ],
+  "lastResearched": "2026-10-28",
+  "versions": [
+    {
+      "date": "2026-10-28",
+      "file": "FitPlate_Nutrients_2026-10-28.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3)",
+    "upperLimit": "official safety limit (D3, lower on conflict)",
+    "topFoodSources": "union; per100g official (D3)",
+    "logPresets": "union by label (newest), converted with own file factors",
+    "appDefaultTarget": "newest, kept only where it equals the ICMR row",
+    "lists": "union",
+    "warnings": "union (never dropped)",
+    "text": "newest"
+  },
+  "mergeNotes": [],
+  "needsReview": [
+    "app_default_target.pregnant = 370 has no ICMR row to match (pregnant: \"ICMR-NIN 2020 value Not found. For comparison only: NIH RDA 350 (19-30 y) / 360 (31-50 y) mg/day; EFSA AI 300 mg/day (same as non-pregnant women)\"); set to null",
+    "app_default_target.lactating = 370 has no ICMR row to match (lactating: \"ICMR-NIN 2020 value Not found. For comparison only: NIH RDA 310 / 320 mg/day; EFSA AI 300 mg/day\"); set to null",
+    "2026-10-28 magnesium: \"group\" has unexpected value \"age_60_plus_male\"; treated as not found",
+    "2026-10-28 magnesium: \"group\" has unexpected value \"age_60_plus_female\"; treated as not found"
+  ]
+}

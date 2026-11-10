@@ -1,0 +1,746 @@
+{
+  "id": "quad-and-calf-stretch",
+  "number": 13,
+  "name": "Quad and calf stretch",
+  "otherNames": [
+    "Standing quad stretch",
+    "Quadriceps stretch",
+    "Wall calf stretch",
+    "Gastrocnemius stretch",
+    "Soleus stretch",
+    "Heel-to-buttock stretch"
+  ],
+  "section": "yoga_stretch",
+  "type": "mobility",
+  "equipment": [
+    "wall or sturdy chair",
+    "mat or folded towel (optional)",
+    "towel or strap (optional)"
+  ],
+  "noEquipmentAlternative": "Wall for balance and calf stretch; side-lying quad stretch on the floor",
+  "musclesPrimary": [
+    "quadriceps (rectus femoris, vastus lateralis, vastus medialis, vastus intermedius)",
+    "gastrocnemius",
+    "soleus"
+  ],
+  "musclesSecondary": [
+    "hip flexors (iliopsoas)",
+    "tibialis anterior",
+    "standing-leg glutes and ankle stabilisers",
+    "hamstrings (downward-dog option)"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 2.3,
+  "compendiumCode": "02101",
+  "metOptions": [
+    {
+      "code": "02101",
+      "met": 2.3,
+      "activity": "MET: 2.3, 2024 Adult Compendium of Physical Activities, code 02101, \"Stretching, mild\" (Conditioning Exercise heading; also 2.3 in the 2011 edition; a tracking guide showed ambiguous columns, but list"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "flexibility",
+      "sets": 2,
+      "reps": "1 hold per side for each of quad, calf straight-knee and calf bent-knee; wall support",
+      "timeSec": 30,
+      "restSec": 10,
+      "tempo": "slow nose breathing, mild tension, no bouncing",
+      "perWeek": 4
+    },
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 2,
+      "reps": "1 hold per side after a workout",
+      "timeSec": 30,
+      "restSec": 10,
+      "tempo": "slow nose breathing",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "relaxation",
+      "sets": 1,
+      "reps": "1 hold per side, slow breathing, evening",
+      "timeSec": 30,
+      "restSec": 10,
+      "tempo": "slow breath each hold",
+      "perWeek": 5
+    },
+    {
+      "level": "intermediate",
+      "goal": "flexibility",
+      "sets": 3,
+      "reps": "1 hold per side, add downward-dog pedals",
+      "timeSec": 40,
+      "restSec": 10,
+      "tempo": "slow nose breathing",
+      "perWeek": 5
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "1 hold per side after a workout",
+      "timeSec": 30,
+      "restSec": 10,
+      "tempo": "slow nose breathing",
+      "perWeek": 4
+    },
+    {
+      "level": "advanced",
+      "goal": "flexibility",
+      "sets": 4,
+      "reps": "1 hold per side, kneeling quad with the foot held",
+      "timeSec": 50,
+      "restSec": 15,
+      "tempo": "slow nose breathing",
+      "perWeek": 5
+    },
+    {
+      "level": "advanced",
+      "goal": "relaxation",
+      "sets": 2,
+      "reps": "1 hold per side, slow breathing",
+      "timeSec": 45,
+      "restSec": 15,
+      "tempo": "slow breath each hold",
+      "perWeek": 5
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "hold_timer",
+    "cameraView": "side",
+    "landmarks": [
+      "left_shoulder",
+      "right_shoulder",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle",
+      "left_heel",
+      "right_heel"
+    ],
+    "phases": [
+      {
+        "name": "quad_standing_knee_straight",
+        "joint": "standing knee (hip-knee-ankle)",
+        "angleDeg": ">= 165",
+        "parsed": {
+          "op": ">=",
+          "value": 165,
+          "max": null
+        }
+      },
+      {
+        "name": "quad_stretched_knee_bent",
+        "joint": "stretched knee (hip-knee-ankle)",
+        "angleDeg": "<= 90",
+        "parsed": {
+          "op": "<=",
+          "value": 90,
+          "max": null
+        }
+      },
+      {
+        "name": "quad_thigh_in_line",
+        "joint": "stretched-leg hip (shoulder-hip-knee)",
+        "angleDeg": ">= 160",
+        "parsed": {
+          "op": ">=",
+          "value": 160,
+          "max": null
+        }
+      },
+      {
+        "name": "calf_straight_back_knee",
+        "joint": "back knee (hip-knee-ankle)",
+        "angleDeg": ">= 165",
+        "parsed": {
+          "op": ">=",
+          "value": 165,
+          "max": null
+        }
+      },
+      {
+        "name": "calf_bent_back_knee",
+        "joint": "back knee (hip-knee-ankle)",
+        "angleDeg": "130 to 160",
+        "parsed": {
+          "op": "between",
+          "value": 130,
+          "max": 160
+        }
+      },
+      {
+        "name": "hold_long_enough",
+        "joint": "time",
+        "angleDeg": "hold >= 20 s (position flag, not an angle)",
+        "parsed": null
+      }
+    ],
+    "minRepSec": 20
+  },
+  "formChecks": [
+    {
+      "joint": "standing knee (quad stretch)",
+      "rule": "standing knee angle < 165 deg (equals quad_standing_knee_straight phase threshold)",
+      "message": "Stand tall, keep the supporting knee soft but straight"
+    },
+    {
+      "joint": "stretched knee (quad stretch)",
+      "rule": "stretched knee angle > 90 deg (equals quad_stretched_knee_bent phase threshold)",
+      "message": "Bring the heel closer to your buttock, gently"
+    },
+    {
+      "joint": "hip (quad stretch)",
+      "rule": "stretched-leg hip angle < 160 deg (equals quad_thigh_in_line phase threshold)",
+      "message": "Thigh points down; tuck the tailbone"
+    },
+    {
+      "joint": "back knee (calf straight-knee)",
+      "rule": "back knee angle < 165 deg (equals calf_straight_back_knee phase threshold)",
+      "message": "Straighten the back leg"
+    },
+    {
+      "joint": "back knee (calf bent-knee)",
+      "rule": "back knee angle > 160 deg or < 130 deg (outside calf_bent_back_knee band)",
+      "message": "Bend the back knee a little and keep the heel down, or ease up if bent too far"
+    },
+    {
+      "joint": "back heel",
+      "rule": "back heel lifts above the floor band (position flag, not an angle)",
+      "message": "Press the back heel down"
+    },
+    {
+      "joint": "time",
+      "rule": "hold shorter than 20 s (equals min_rep_sec and hold_long_enough)",
+      "message": "Stay a little longer, breathe slowly"
+    }
+  ],
+  "safetyFlags": [
+    "stop_at_pain_mild_tension_only",
+    "no_bouncing",
+    "warm_up_first",
+    "knee_pain_use_side_lying_or_half_kneeling_quad",
+    "achilles_tendinopathy_no_stepped_heel_drops_ask_professional",
+    "calf_pain_swelling_warmth_see_doctor_urgently",
+    "recent_leg_surgery_or_injury_ask_doctor",
+    "pregnancy_gentle_no_forced_range",
+    "osteoporosis_wall_support_no_forceful_stretch",
+    "diabetes_check_feet_first",
+    "no_breath_holding"
+  ],
+  "progressions": [
+    "Longer holds of 45 to 60 seconds at mild tension",
+    "Standing quad stretch with the hip pushed gently forward, or kneeling quad stretch with the foot held (est.)",
+    "Downward-dog pedals and active toes-up calf stretch"
+  ],
+  "regressions": [
+    "Towel or strap around the ankle for the quad stretch",
+    "Side-lying or half-kneeling quad stretch",
+    "Calf stretch with feet closer, or seated calf stretch with a towel; hold 15 to 20 s"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "standing quad stretch with hand on the wall, heel to buttock, tailbone tucked",
+      "textOverlay": "Wall hand. Knees together. Tuck."
+    },
+    {
+      "seconds": 6,
+      "angle": "side, 1.5 m",
+      "shows": "wrong (low back arched, thigh swung forward) vs right",
+      "textOverlay": "No arch. Thigh points down."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "side-lying quad stretch with the hand supporting the pelvis",
+      "textOverlay": "Side-lying: kinder on the knee."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "straight-knee wall calf stretch, heel down",
+      "textOverlay": "Back leg straight. Heel down."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "bent-knee wall calf stretch, knee forward, heel down",
+      "textOverlay": "Bend the back knee: lower calf."
+    },
+    {
+      "seconds": 6,
+      "angle": "front, 2 m",
+      "shows": "wrong (back foot turned out, heel up) vs right (toes forward)",
+      "textOverlay": "Toes to the wall."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "downward dog pedalling",
+      "textOverlay": "Pedal slowly. Heels need not touch."
+    },
+    {
+      "seconds": 6,
+      "angle": "side, 2.5 m",
+      "shows": "desk-break version at a wall or desk edge",
+      "textOverlay": "30 seconds at your desk."
+    }
+  ],
+  "lastResearched": "2026-11-10",
+  "setupSteps": [
+    "Warm up first. Do 2 to 5 minutes of walking or marching on the spot, or stretch after a workout, so the muscles are warm. Do not stretch cold muscles hard.",
+    "Floor. Flat, non-slip floor. Bare feet or a sticky mat; shoes with a flat sole are fine for the calf stretch. No socks on tiles.",
+    "Wall. Stand an arm's length from a smooth, clear wall. A chair or countertop works for the quad stretch.",
+    "Clothing. Shorts, leggings or loose pants rolled up so the knee can bend fully. A long kurta can be tucked at the waist.",
+    "Towel or strap. Keep a hand towel or belt ready if you cannot reach your foot without rounding your back.",
+    "Camera. Phone on a shelf at hip height, 2 to 2.5 m to the side, so hip, knee, ankle and heel are in frame (see sections 11 and 12)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": "A. Standing quad stretch (wall support)",
+      "title": "Stand tall beside the wall",
+      "action": "stand with the left hand flat on the wall at shoulder height, feet hip-width apart, knees soft.",
+      "feel": "steady and tall.",
+      "breathing": "2 slow breaths in and out.",
+      "tempo": "5 seconds.",
+      "visualCheck": "side view, ear over shoulder over hip over ankle."
+    },
+    {
+      "n": 2,
+      "part": "A. Standing quad stretch (wall support)",
+      "title": "Shift weight onto the wall-side leg",
+      "action": "press the left foot into the floor and keep the left knee soft but nearly straight.",
+      "feel": "the standing leg working lightly.",
+      "breathing": "out-breath as you shift.",
+      "tempo": "2 seconds.",
+      "visualCheck": "hips level; standing knee not locked back."
+    },
+    {
+      "n": 3,
+      "part": "A. Standing quad stretch (wall support)",
+      "title": "Bend the free knee",
+      "action": "bend the right knee and lift the heel toward your buttock.",
+      "feel": "the foot floats up behind you; no pinch behind the knee.",
+      "breathing": "steady.",
+      "tempo": "3 seconds.",
+      "visualCheck": "side view, the right thigh stays pointing straight down."
+    },
+    {
+      "n": 4,
+      "part": "A. Standing quad stretch (wall support)",
+      "title": "Hold the foot",
+      "action": "reach back with the right hand and hold the ankle (or loop a towel around it). Keep the knees close together.",
+      "feel": "mild pull along the front of the thigh.",
+      "breathing": "slow nose breaths; do not hold the breath.",
+      "tempo": "2 seconds to settle.",
+      "visualCheck": "do not hold the toes or twist the ankle sideways."
+    },
+    {
+      "n": 5,
+      "part": "A. Standing quad stretch (wall support)",
+      "title": "Tuck the pelvis slightly",
+      "action": "gently tuck the tailbone under, as if zipping the lower belly in. Do not pull the knee forward or behind.",
+      "feel": "the stretch moves higher into the front of the thigh and hip; the low back stays long.",
+      "breathing": "slow out-breath.",
+      "tempo": "2 seconds.",
+      "visualCheck": "side view, no arch in the low back, ribs down."
+    },
+    {
+      "n": 6,
+      "part": "A. Standing quad stretch (wall support)",
+      "title": "Hold",
+      "action": "stay still.",
+      "feel": "mild tension, not pain.",
+      "breathing": "continuous.",
+      "tempo": "30 seconds (chosen; sources give 15 to 30 seconds, 30 to 45 seconds and 30 seconds).",
+      "visualCheck": "head tall, standing knee soft, thigh pointing down."
+    },
+    {
+      "n": 7,
+      "part": "A. Standing quad stretch (wall support)",
+      "title": "Release and switch",
+      "action": "let the foot down slowly, shake the leg, repeat on the other side. Do 2 rounds per side.",
+      "feel": "warmth.",
+      "breathing": "out-breath.",
+      "tempo": "5 seconds, then 10 seconds rest.",
+      "visualCheck": "foot lands softly."
+    },
+    {
+      "n": 8,
+      "part": "B. Wall calf stretch, straight back knee (gastrocnemius)",
+      "title": "Face the wall",
+      "action": "stand an arm's length away, hands flat on the wall at chest height.",
+      "feel": "ready, stable.",
+      "breathing": "2 slow breaths.",
+      "tempo": "3 seconds.",
+      "visualCheck": "side view, body in a straight line when leaning."
+    },
+    {
+      "n": 9,
+      "part": "B. Wall calf stretch, straight back knee (gastrocnemius)",
+      "title": "Step the left foot back",
+      "action": "step the left foot back about one big stride (about 60 to 90 cm, est.). Point both feet straight at the wall.",
+      "feel": "the back leg long.",
+      "breathing": "steady.",
+      "tempo": "2 seconds.",
+      "visualCheck": "feet parallel, toes not turned out."
+    },
+    {
+      "n": 10,
+      "part": "B. Wall calf stretch, straight back knee (gastrocnemius)",
+      "title": "Bend the front knee",
+      "action": "bend the right knee. Keep the back leg straight and the back heel flat on the floor.",
+      "feel": "a pull in the upper calf of the back leg.",
+      "breathing": "slow out-breath.",
+      "tempo": "3 seconds.",
+      "visualCheck": "side view, back knee straight, heel down."
+    },
+    {
+      "n": 11,
+      "part": "B. Wall calf stretch, straight back knee (gastrocnemius)",
+      "title": "Lean in",
+      "action": "lean the hips toward the wall, bending the arms, until you feel a gentle pull.",
+      "feel": "mild stretch in the big calf muscle.",
+      "breathing": "continuous.",
+      "tempo": "3 seconds.",
+      "visualCheck": "head, spine and back leg in one line from the side."
+    },
+    {
+      "n": 12,
+      "part": "B. Wall calf stretch, straight back knee (gastrocnemius)",
+      "title": "Hold",
+      "action": "stay still; keep the arch of the back foot gently lifted and the foot facing forward.",
+      "feel": "mild tension, no sharp pain at the heel or Achilles.",
+      "breathing": "slow.",
+      "tempo": "30 seconds (NHS guidance seen: 30 seconds).",
+      "visualCheck": "heel flat, back knee straight."
+    },
+    {
+      "n": 13,
+      "part": "B. Wall calf stretch, straight back knee (gastrocnemius)",
+      "title": "Release and switch. Step in, shake out, repeat on the other leg. 2 rounds per side",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 14,
+      "part": "C. Wall calf stretch, bent back knee (soleus)",
+      "title": "Start as in B (step 1 and 2)",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 15,
+      "part": "C. Wall calf stretch, bent back knee (soleus)",
+      "title": "Bend the back knee",
+      "action": "keep the back heel down and bend the back knee, moving it forward toward the wall (over the toes), while the front knee also bends slightly.",
+      "feel": "the stretch moves lower in the calf, nearer the Achilles.",
+      "breathing": "slow out-breath.",
+      "tempo": "3 seconds.",
+      "visualCheck": "side view, back heel stays on the floor, knee moves forward in line with the second toe."
+    },
+    {
+      "n": 16,
+      "part": "C. Wall calf stretch, bent back knee (soleus)",
+      "title": "Sink gently",
+      "action": "lower the hips a little; stop before any sharp pain.",
+      "feel": "mild pull lower in the calf.",
+      "breathing": "continuous.",
+      "tempo": "3 seconds.",
+      "visualCheck": "heel does not lift."
+    },
+    {
+      "n": 17,
+      "part": "C. Wall calf stretch, bent back knee (soleus)",
+      "title": "Hold. 30 seconds, slow breathing",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    },
+    {
+      "n": 18,
+      "part": "C. Wall calf stretch, bent back knee (soleus)",
+      "title": "Release and switch. 2 rounds per side",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Bouncing",
+      "text": "Bouncing. Bouncing or jerking can trigger the muscle to tighten and risks a strain. Fix: ease in, hold still."
+    },
+    {
+      "title": "Arching the low back in the quad stretch",
+      "text": "Arching the low back in the quad stretch. The stretch then goes to the back, not the thigh. Fix: tuck the tailbone slightly and keep the knees close together."
+    },
+    {
+      "title": "Pulling the heel too hard to the buttock",
+      "text": "Pulling the heel too hard to the buttock. It can strain the knee. Fix: stop at mild tension; use a towel or a half-way position."
+    },
+    {
+      "title": "Back heel lifting in the calf stretch",
+      "text": "Back heel lifting in the calf stretch. The calf is not stretched. Fix: step the foot back less far and press the heel down."
+    },
+    {
+      "title": "Back foot turned out",
+      "text": "Back foot turned out. It shifts the stretch and twists the ankle and knee. Fix: point both feet straight to the wall."
+    },
+    {
+      "title": "Bent back knee when you wanted the big calf muscle",
+      "text": "Bent back knee when you wanted the big calf muscle. Straight-knee stretches the gastrocnemius; bent-knee goes to the soleus. Fix: use the version that matches the muscle you want, and do both."
+    },
+    {
+      "title": "Holding the breath or going to pain",
+      "text": "Holding the breath or going to pain. Tension rises and the muscle resists. Fix: breathe slowly; stretch to mild tension."
+    },
+    {
+      "title": "Stretching cold or right before power work",
+      "text": "Stretching cold or right before power work. Long static holds just before sprinting, jumping or lifting heavy can slightly reduce performance (Behm 2016; see section 7). Fix: warm up with dynamic movement first, and keep static holds short before hard efforts."
+    },
+    {
+      "title": "Dropping the heel off a step with an Achilles problem",
+      "text": "Dropping the heel off a step with an Achilles problem. Stepped heel drops are advised against by NHS-affiliated leaflets for insertional Achilles tendinopathy unless a physio says so. Fix: use the flat floor wall stretch only, and ask a professional."
+    }
+  ],
+  "safetyNotes": [
+    "Mild tension, never pain. Sources agree: stop at pain in the knee, ankle or Achilles.",
+    "Knee: the standing quad stretch compresses the knee most; with knee pain use the side-lying or half-kneeling version, a padded mat, and a shorter hold. Do not force the heel to the buttock.",
+    "Ankle and Achilles: a gentle floor-level wall stretch is common advice, but NHS-affiliated leaflets say not to do stepped heel drops with insertional Achilles tendinopathy, and some say calf stretches for Achilles problems should follow advice from a physio or podiatrist. A sudden pain, swelling or a pop in the back of the lower leg needs medical attention.",
+    "Warm muscles only: warm up first; do not do hard static stretches cold or immediately before sprinting or heavy lifts.",
+    "Balance: use the wall for the standing quad stretch; skip it if you cannot balance on one leg safely.",
+    "Stop immediately if you feel: sharp or burning pain, joint pain, pins and needles, numbness, sudden dizziness, a pop, or calf pain with swelling, redness or warmth (see a doctor urgently, possible clot).",
+    "Spotter: not needed; use a wall or chair.",
+    "Gym etiquette: use the stretching area or a clear wall space, not the walkways or racks."
+  ],
+  "sources": [
+    "ACSM stretching and flexibility guidelines update, and reproductions of Garber et al. 2011 (10-30 s holds, 2-4 reps, 2-3 days per week; seen only as snippets): https://www.acsm.org/blog-detail/acsm-certified-blog/2021/03/18/stretching-and-flexibility-guidelines-update ; https://www.aafp.org/pubs/afp/issues/1999/0115/p473.html",
+    "NHS trust calf stretch and plantar fasciitis leaflets (straight and bent knee, 30 s; snippets): https://roh.nhs.uk/services-information/foot-and-ankle/calf-stretching ; https://cuh.nhs.uk/patient-information/plantar-fasciitis ; https://www.ulh.nhs.uk/patients/patient-information-library/plantar-fasciitis-exercises/ ; Kaiser Permanente: https://healthy.kaiserpermanente.org/health-wellness/health-encyclopedia/he.ad1503 ; Bupa: https://www.bupa.co.uk/health-information/muscles-bones-joints/plantar-fasciitis ; Health New Zealand: https://info.health.nz/conditions-treatments/bones-and-joints/calf-stretch-exercises ; UMM bent-knee calf stretch: https://www.ummhealth.org/health-library/bent-knee-calf-stretch",
+    "Quad stretch guides (standing, side-lying, half-kneeling; snippets): ACE side-lying quadriceps stretch: https://www.acefitness.org/resources/everyone/exercise-library/149/side-lying-quadriceps-stretch/ ; Royal Wolverhampton NHS handout: https://royalwolverhampton.nhs.uk/wp-content/uploads/2025/11/Quads_stretch_in_side_lying.pdf ; Physitrack: https://uk.physitrack.com/home-exercise-video/quadriceps-stretch-in-standing ; Hinge Health: https://www.hingehealth.com/gb/en/resources/articles/quad-stretch/ ; Acibadem: https://acibademinternational.com/blog/quad-stretches-how-to-do-them-without-straining-your-knees/",
+    "Radford JA et al., Does stretching increase ankle dorsiflexion range of motion? Systematic review, BJSM 2006 (snippets): https://pmc.ncbi.nlm.nih.gov/articles/PMC2465055 ; Medeiros DM et al., chronic effect of stretching types on ankle dorsiflexion, The Foot 2018 (snippet via physio-network): https://physio-network.com/review/chronic-effect-of-different-types-of-stretching-on-ankle-dorsiflexion-range-of-motion-systematic-review-and-meta-analysis",
+    "Behm DG et al., acute effects of static and dynamic stretching on performance, range of motion and injury, 2016 review (snippets): https://nectar.northampton.ac.uk/id/eprint/8154/ ; https://ro.ecu.edu.au/ecuworkspost2013/2642",
+    "Achilles tendinopathy leaflets (no stepped heel drops for insertional; snippets): https://www.rnoh.nhs.uk/patients-and-visitors/patient-information-guides/achilles-tendinopathy ; https://www.kentcht.nhs.uk/leaflet/mid-substance-non-insertional-achilles-tendinopathy/ ; https://www.livewellsouthwest.co.uk/wp-content/uploads/2023/06/Achilles-Tendonopathy-Advice-Sheet-V1-July-2021.pdf",
+    "Downward dog calf stretch and pedalling (snippets): Yoga Journal: https://www.yogajournal.com/practice/yoga-for-tight-calves-practice/ ; Yoga With Adriene: https://yogawithadriene.com/wp-content/uploads/2024/05/Yoga-For-Calves.en_.txt ; Yoga International: https://yogainternational.com/article/view/yoga-for-tight-calves",
+    "Herrmann SD et al., 2024 Adult Compendium of Physical Activities (02101 Stretching, mild 2.3): https://pacompendium.com/conditioning-exercise ; https://pubmed.ncbi.nlm.nih.gov/38242596/",
+    "Desk break guidance (wellness sites; snippets): https://www.goodrx.com/well-being/movement-exercise/how-to-reduce-the-effects-of-sitting-all-day ; https://www.getluna.com/blog/stretches-for-desk-workers",
+    "Pregnancy joint laxity (consumer sources; snippets): https://feminapt.com/blog/joint-laxity-and-pregnancy-what-is-it-and-what-can-you-do-about-it/ ; https://onepeloton.com/blog/pregnancy-stretches",
+    "Condition sources (general, from earlier items): ADA PMC5317029: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/ ; BHF cool-down: https://www.bhf.org.uk/informationsupport/heart-matters-magazine/activity/cool-down-exercises ; PCOS position statement: https://researchers.westernsydney.edu.au/en/publications/exercise-in-the-management-of-polycystic-ovary-syndrome-a-positio/ ; Marshfield Clinic asthma: https://shine365.marshfieldclinic.org/wellness/asthma-exercise/ ; ECU Health asthma: https://healthlibrary.ecuhealth.org/lung-health/management/asthma-management-exercise-safety",
+    "Hold time: sources range from 10 to 60 seconds with 2 to 5 repetitions. We chose 30 seconds, 2 rounds per side.",
+    "Static before exercise: long static holds just before power work may slightly reduce performance, but within a full warm-up the effect is unclear. We chose dynamic movement before exercise and static holds after.",
+    "Standing quad stretch for sore knees: sources suggest side-lying or half-kneeling. We offer both and use the wall for the standing version.",
+    "Clinical evidence that calf stretching is useful: only small gains in ankle dorsiflexion (a few degrees) and unclear clinical importance. Stated honestly.",
+    "Quad-and-calf-specific MET, joint-angle norms, and hold-time dose-response: Not found. Our thresholds are estimates.",
+    "Pose-specific condition sources (most rows; ACOG pregnancy wording; clinical knee OA guidance; osteoporosis stretching): Not found.",
+    "Official AYUSH or MDNIY text: Not found for this item (it is not a named asana).",
+    "Most pages were seen only as search snippets; direct page fetches were not possible."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 43.5,
+      "70kg": 37.3,
+      "80kg": 32.6
+    },
+    "per300kcal": {
+      "60kg": 130.4,
+      "70kg": 111.8,
+      "80kg": 97.8
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "mobility",
+    "yoga",
+    "flexibility",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "small_flat",
+    "quiet",
+    "office_desk",
+    "6_10_min",
+    "cool_down",
+    "post_workout",
+    "evening",
+    "relaxation"
+  ],
+  "swapsByAccess": {
+    "none": "Wall calf stretch plus a side-lying or towel-assisted quad stretch",
+    "home_equipment": "Strap or band loop for the quad or calf; foam roller only after the floor version",
+    "basic_gym": "Squat-rack upright or wall for balance in the quad stretch; flat floor at a wall for calves",
+    "full_gym": "Stretching mat area and wall; cable column or machine frame for light balance; slant board only after the floor version is easy (est.)"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "ok",
+      "change": "Gentle stretches fine; breathe steadily; avoid head-below-heart positions if dizzy; ask a doctor if on treatment",
+      "source": "Not found (stretch-specific)"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "modify",
+      "change": "Check feet for sores or numbness before wall calf stretches; eat before if on glucose-lowering medicine; ask a doctor",
+      "source": "ADA PMC5317029 (general); Not found (stretch-specific)"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "Light stretching is usually part of a cool-down; avoid breath-holding; ask the cardiac team",
+      "source": "BHF cool-down (general); Not found (stretch-specific)"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "No change (source not found)",
+      "source": "Not found"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Wall or chair, side-lying quad, towel loop; shorter holds",
+      "source": "Not found"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "No stretch-specific caution found",
+      "source": "PCOS exercise position statement (general); Not found (stretch-specific)"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "No stretch-specific caution found; ease in if stiff or crampy",
+      "source": "Not found"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Reliever inhaler nearby; slow breathing; stop if wheezing",
+      "source": "Marshfield Clinic and ECU Health asthma exercise-safety pages (general)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Side-lying or half-kneeling quad on a pad; short holds; never force; stop if the knee hurts",
+      "source": "Quad-stretch guides (snippets); Not found (clinical OA guidance)"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Tuck the tailbone, keep the low back flat, side-lying version; stop if pain or leg symptoms increase",
+      "source": "Quad-stretch guides (snippets); Not found (clinical)"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "ok",
+      "change": "Hand on the wall at a comfortable height; towel to avoid reaching behind",
+      "source": "Not found"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "modify",
+      "change": "Wall for balance; no forceful or bouncing stretching; ask a doctor",
+      "source": "Not found (stretch-specific)"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "modify",
+      "change": "Gentle only, no forced range (looser ligaments); wall support; avoid long lying flat or prone; ask a midwife or doctor",
+      "source": "Consumer pages on relaxin and joint laxity (snippets); Not found (ACOG wording)"
+    },
+    {
+      "condition": "postpartum",
+      "status": "modify",
+      "change": "Start gently; joints may be lax; ask a physio if pain",
+      "source": "Not found"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Follow the surgeon's advice; avoid knee, ankle, Achilles, hip or abdomen stretching until cleared",
+      "source": "Not found"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "home",
+      "office_desk"
+    ],
+    "bodyRegion": [
+      "lower"
+    ],
+    "goalTags": [
+      "flexibility",
+      "relaxation",
+      "general_fitness"
+    ],
+    "intensity": "light",
+    "noise": "quiet",
+    "space": "mat_only",
+    "typicalMinutes": 8,
+    "kcalPer10min70kg": 27,
+    "difficulty1to5": 1,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Yoga & stretch",
+    "Home",
+    "Office desk",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Mobility",
+    "Legs",
+    "Hold timer",
+    "Under 10 min"
+  ],
+  "needsReview": [
+    "rep_counter phase \"hold_long_enough\" (time): angle \"hold >= 20 s (position flag, not an angle)\" is not a parseable angle"
+  ],
+  "versions": [
+    {
+      "date": "2026-11-10",
+      "file": "FitPlate_Fitness_2026-11-10.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

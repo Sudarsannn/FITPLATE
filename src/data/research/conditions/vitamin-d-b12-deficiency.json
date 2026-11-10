@@ -1,0 +1,470 @@
+{
+  "id": "vitamin-d-b12-deficiency",
+  "type": "condition",
+  "name": "Vitamin D and B12 deficiency (diet follow-up)",
+  "surveyQuestion": "Do you have any of these health conditions? (select all that apply) -> Vitamin D deficiency / Vitamin B12 deficiency. Check question: Has a doctor or lab report told you that your vitamin D or vitamin B12 is low? Yes, vitamin D low / Yes, B12 low / Yes, both / Yes, borderline (lifestyle-only mode) / No / Never tested (suggest asking a doctor if symptoms) / Not sure. Follow-ups: diet pattern (vegetarian, eggetarian, non-veg, Jain, vegan); latest 25(OH)D and serum B12 with units and date (enter or skip); Do you take any vitamin D or B12 tablets, sachets or injections? No / Yes (enter product, amount and unit, how often) / Not sure; Do you take metformin or acidity medicines (PPIs such as pantoprazole, omeprazole)? No / Yes / Not sure; hours outdoors in daytime and whether most skin is covered; Do you have tingling, numbness, balance problems or memory changes? No / Yes (shows doctor prompt); Are you pregnant or breastfeeding? No / Yes",
+  "targets": [
+    {
+      "nutrient": "energy",
+      "unit": "kcal/day",
+      "generalAdult": 2110,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified): 2110 sedentary man, 1660 sedentary woman; no change found for vitamin D or B12 deficiency (as P11)"
+    },
+    {
+      "nutrient": "protein",
+      "unit": "g/kg/day",
+      "generalAdult": 0.83,
+      "profileValue": 0.83,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); Not found: deficiency-specific value. B12 comes with animal protein foods, but protein target is unchanged"
+    },
+    {
+      "nutrient": "total_fat",
+      "unit": "% energy",
+      "generalAdult": 30,
+      "profileValue": null,
+      "min": null,
+      "max": 30,
+      "direction": "same",
+      "source": "DGI 2024; WHO 2023 (as P6). Vitamin D is fat-soluble; include some fat with the vitamin D meal (NIH ODS via topic 2, est.)"
+    },
+    {
+      "nutrient": "saturated_fat",
+      "unit": "% energy",
+      "generalAdult": 10,
+      "profileValue": null,
+      "min": null,
+      "max": 10,
+      "direction": "same",
+      "source": "WHO 2023 (as P4/P6); no change"
+    },
+    {
+      "nutrient": "trans_fat",
+      "unit": "% energy",
+      "generalAdult": 1,
+      "profileValue": null,
+      "min": null,
+      "max": 1,
+      "direction": "limit",
+      "source": "WHO 2023"
+    },
+    {
+      "nutrient": "mufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found"
+    },
+    {
+      "nutrient": "pufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found"
+    },
+    {
+      "nutrient": "omega_3",
+      "unit": "servings fish/week",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No change; oily fish also gives vitamin D and B12 (topics 2 and 13); Not found: deficiency-specific value"
+    },
+    {
+      "nutrient": "dietary_cholesterol",
+      "unit": "mg/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found. Egg yolk gives vitamin D and B12; no P12 change (as P5/P6 rules apply if the user also has high LDL)"
+    },
+    {
+      "nutrient": "total_carbohydrate",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found; DGI 2024 cereal cap via P4 (secondary, unverified)"
+    },
+    {
+      "nutrient": "added_sugar",
+      "unit": "g/day",
+      "generalAdult": 25,
+      "profileValue": 25,
+      "min": null,
+      "max": 25,
+      "direction": "same",
+      "source": "WHO 2015; FitPlate cap 25 g/day"
+    },
+    {
+      "nutrient": "fibre",
+      "unit": "g/day",
+      "generalAdult": 30,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified): about 30 g per 2,000 kcal; no change"
+    },
+    {
+      "nutrient": "sodium",
+      "unit": "mg/day",
+      "generalAdult": 2000,
+      "profileValue": 2000,
+      "min": null,
+      "max": 2000,
+      "direction": "same",
+      "source": "WHO 2012; DGI 2024"
+    },
+    {
+      "nutrient": "salt",
+      "unit": "g/day",
+      "generalAdult": 5,
+      "profileValue": 5,
+      "min": null,
+      "max": 5,
+      "direction": "same",
+      "source": "DGI 2024; WHO 2012"
+    },
+    {
+      "nutrient": "potassium",
+      "unit": "mg/day",
+      "generalAdult": 3500,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); WHO 2012 3,510"
+    },
+    {
+      "nutrient": "calcium",
+      "unit": "mg/day",
+      "generalAdult": 1000,
+      "profileValue": 1000,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); vitamin D helps calcium absorption (topic 2); calcium tablets are a doctor decision; vitamin D plus calcium products count toward the vitamin D total"
+    },
+    {
+      "nutrient": "iron_men",
+      "unit": "mg/day",
+      "generalAdult": 19,
+      "profileValue": 19,
+      "min": null,
+      "max": 45,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified) RDA 19; UL 45 (NIH ODS); anaemia in India often has more than one cause (see P11)"
+    },
+    {
+      "nutrient": "iron_women",
+      "unit": "mg/day",
+      "generalAdult": 29,
+      "profileValue": 29,
+      "min": null,
+      "max": 45,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified) RDA 29; UL 45 (NIH ODS); see P11"
+    },
+    {
+      "nutrient": "magnesium",
+      "unit": "mg/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified): 440 men, 370 women (as P11); magnesium is needed for vitamin D metabolism (general physiology, topic 2)"
+    },
+    {
+      "nutrient": "vitamin_d",
+      "unit": "µg/day",
+      "generalAdult": 15,
+      "profileValue": 15,
+      "min": null,
+      "max": 100,
+      "direction": "raise",
+      "source": "ICMR-NIN 2020 RDA 15 µg (600 IU), EAR 10 µg (400 IU) (secondary, unverified); food rarely meets it, so sun, fortified foods and doctor-advised supplements matter; UL 100 µg (4,000 IU) from food and supplements (NASEM 2011; EFSA 2023); ICMR TUL Not found. Weekly 60,000 IU course = 1,500 µg once (214 µg/day average, calc.), a doctor-set treatment, logged as prescription_dose"
+    },
+    {
+      "nutrient": "vitamin_b12",
+      "unit": "µg/day",
+      "generalAdult": 2.2,
+      "profileValue": 2.2,
+      "min": null,
+      "max": null,
+      "direction": "raise",
+      "source": "ICMR-NIN 2020 (secondary, unverified) RDA 2.2 µg (EAR 2.0); pregnancy 2.6 and lactation 2.8 (US NASEM; ICMR Not found); no UL (NASEM; SCF/EFSA); label amount logged, not absorbed amount; treatment doses (tablets or injections) are doctor-set"
+    },
+    {
+      "nutrient": "folate",
+      "unit": "µg DFE/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified): 300 men, 220 women (as P10/P11); folic acid alone can hide B12 deficiency (NHS), so the app never suggests folic acid on its own"
+    },
+    {
+      "nutrient": "water",
+      "unit": "mL/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "FitPlate general target; Follow your doctor's advice"
+    }
+  ],
+  "bloodMarkers": [
+    {
+      "marker": "Serum 25(OH)D (vitamin D status)",
+      "target": "Below 30 nmol/L (12 ng/mL): risk of deficiency; 30 to under 50 nmol/L (12 to under 20 ng/mL): inadequate for some people; 50 nmol/L (20 ng/mL) or more: adequate for most; above 125 nmol/L (50 ng/mL): possible harm. Many Indian lab reports use 30 ng/mL as sufficient; an Indian expert consensus (2025) aims for 40-60 ng/mL (100-150 nmol/L) (secondary). Doctor interprets",
+      "unit": "nmol/L or ng/mL (1 ng/mL = 2.5 nmol/L)",
+      "source": "NASEM/NIH ODS; Endocrine Society 2011 cut-offs via Indian consensus (<20 deficiency, 21-29 insufficiency, 30+ sufficient; secondary); Kalra et al., Indian J Endocrinol Metab 2025 (secondary)"
+    },
+    {
+      "marker": "Serum vitamin B12",
+      "target": "Below 200 pg/mL (about 148 pmol/L): deficiency; 200-350 pg/mL: possible deficiency, check MMA; Indian studies often use below 150 pmol/L; labs differ",
+      "unit": "pg/mL or pmol/L (1 pg/mL = 0.738 pmol/L)",
+      "source": "Cochrane (Wang 2018) used below 200 pg/mL (148 pmol/L); NICE CKS (below 200 ng/L); thresholds via secondary summaries"
+    },
+    {
+      "marker": "Methylmalonic acid (MMA)",
+      "target": "Above about 260 nmol/L suggests B12 deficiency in one study; cut-offs vary by lab; doctor interprets",
+      "unit": "nmol/L",
+      "source": "Published study cut-offs via secondary summary (secondary, unverified)"
+    },
+    {
+      "marker": "Homocysteine",
+      "target": "Above about 12 to 15 µmol/L raised in B12 deficiency (cut-offs vary by lab; also raised by folate or B6 shortage and kidney disease)",
+      "unit": "µmol/L",
+      "source": "Published study cut-offs via secondary summary (secondary, unverified)"
+    },
+    {
+      "marker": "Haemoglobin and MCV (blood count)",
+      "target": "Low haemoglobin with large red cells (high MCV) can point to B12 or folate deficiency, but nerve damage can occur with a normal MCV (about 25% per CKS)",
+      "unit": "g/dL; fL",
+      "source": "NICE CKS (via summary); see P11 for haemoglobin cut-offs"
+    },
+    {
+      "marker": "Serum calcium, phosphorus, alkaline phosphatase, PTH",
+      "target": "Doctor-ordered context tests for vitamin D deficiency or too much vitamin D; no app target",
+      "unit": "lab units",
+      "source": "NIH ODS (via topic 2)"
+    },
+    {
+      "marker": "Serum folate",
+      "target": "Usually checked with B12; no app target",
+      "unit": "lab units",
+      "source": "NHS"
+    }
+  ],
+  "waterMl": {
+    "min": null,
+    "max": null,
+    "notes": "No change from FitPlate general adult water target. Drink more in heat, exercise or fever per general rules. Vitamin D excess can cause thirst and passing a lot of urine, which is a reason to stop and see a doctor, not to drink more. Pregnancy, heart, kidney or liver disease, kidney stones or water pills: general range only, never a higher target. Follow your doctor's advice."
+  },
+  "sodiumMgMax": 2000,
+  "dietaryCholesterolMgMax": null,
+  "foodsFavour": [
+    "Oily fish (hilsa, tarli/sardine, bangda/mackerel, black pomfret) for vitamin D and B12",
+    "Eggs (country-hen eggs have more vitamin D in IFCT 2017)",
+    "Milk, curd and paneer in 2-3 servings spread across the day for B12",
+    "Mutton, chicken or fish curry eaten with the gravy",
+    "Fortified milk or oil with the +F logo, where the label gives the amount",
+    "Foods eaten with a little fat for vitamin D absorption",
+    "Daytime sun on bare skin as a separate optional habit"
+  ],
+  "foodsLimit": [
+    "Over-boiled, repeatedly re-boiled or heavily diluted milk (less B12, est.)",
+    "Relying on idli, dosa, dhokla, sprouts, mushrooms, spirulina or pickles for B12",
+    "Stacking vitamin D products (calcium plus D3, multivitamin, weekly sachet) without the doctor knowing",
+    "Folic acid on its own when B12 has not been checked",
+    "Window-glass or sunscreen-covered sun as a vitamin D plan"
+  ],
+  "goodFitDishes": [
+    {
+      "dishNumber": 33,
+      "dishName": "Goan Fish Curry"
+    },
+    {
+      "dishNumber": 73,
+      "dishName": "Rava Fish Fry"
+    },
+    {
+      "dishNumber": 55,
+      "dishName": "Prawn Masala"
+    },
+    {
+      "dishNumber": 23,
+      "dishName": "Mutton Rogan Josh"
+    },
+    {
+      "dishNumber": 62,
+      "dishName": "Mutton Biryani"
+    },
+    {
+      "dishNumber": 45,
+      "dishName": "Tandoori Chicken"
+    },
+    {
+      "dishNumber": 14,
+      "dishName": "Egg Bhurji"
+    },
+    {
+      "dishNumber": 21,
+      "dishName": "Masala Omelette"
+    },
+    {
+      "dishNumber": 38,
+      "dishName": "Egg Curry"
+    },
+    {
+      "dishNumber": 35,
+      "dishName": "Curd Rice"
+    },
+    {
+      "dishNumber": 31,
+      "dishName": "Indian-style Overnight Oats"
+    },
+    {
+      "dishNumber": 53,
+      "dishName": "Paneer Tikka"
+    }
+  ],
+  "cautionDishes": [
+    {
+      "dishNumber": 1,
+      "dishName": "Poha",
+      "reason": "No B12 and almost no vitamin D unless paired with milk, curd or eggs (est.)"
+    },
+    {
+      "dishNumber": 5,
+      "dishName": "Dal Tadka",
+      "reason": "No B12 (plant foods and ghee only, topic 13); good protein, so pair with curd or chaas"
+    },
+    {
+      "dishNumber": 9,
+      "dishName": "Idli with Sambar",
+      "reason": "Fermentation does not make B12; no reliable B12 or vitamin D (topic 13)"
+    },
+    {
+      "dishNumber": 12,
+      "dishName": "Rajma Chawal",
+      "reason": "No B12; add raita or a glass of milk for vegetarians"
+    },
+    {
+      "dishNumber": 52,
+      "dishName": "Moong Dal Khichdi",
+      "reason": "No B12 (topic 13); add curd or buttermilk"
+    },
+    {
+      "dishNumber": 58,
+      "dishName": "Khaman Dhokla",
+      "reason": "No B12 (topic 13); fermented gram flour is not a source"
+    },
+    {
+      "dishNumber": 66,
+      "dishName": "Sprouts Chaat",
+      "reason": "Sprouts are not a B12 source (topic 13)"
+    },
+    {
+      "dishNumber": 99,
+      "dishName": "Masala Chai",
+      "reason": "Only 0.2-0.45 µg B12 from the milk (est.); tea is not a vitamin D source; sweet chai adds sugar"
+    }
+  ],
+  "conflictsWith": [
+    {
+      "profileId": "P34",
+      "rule": "Vegan: food cannot meet the B12 target; always show 'ask your doctor about a reliable B12 source such as fortified foods or a supplement'; do not suggest milk, curd, eggs or fish; vitamin D food options are limited to fortified products, so keep the doctor prompt"
+    },
+    {
+      "profileId": "P33",
+      "rule": "Jain: dairy is the only natural B12 source, so suggest 2-3 servings of milk, curd or paneer a day; no eggs, fish or meat suggestions"
+    },
+    {
+      "profileId": "P22",
+      "rule": "Pregnancy: requires doctor input; B12 2.6 µg (NASEM) and vitamin D 15 µg from food; never set supplement doses; pregnancy overrides P12"
+    },
+    {
+      "profileId": "P23",
+      "rule": "Breastfeeding: requires doctor input; B12 2.8 µg (NASEM); baby's B12 depends on the mother; doctor review"
+    },
+    {
+      "profileId": "P13",
+      "rule": "Chronic kidney disease: doctor-led vitamin D handling; avoid high-dose B-vitamin combinations unless prescribed (DIVINe trial); P13 overrides potassium, fluid and supplement messages"
+    },
+    {
+      "profileId": "P14",
+      "rule": "Kidney stones: vitamin D and calcium products need doctor advice; show the vitamin D total against the 100 µg UL; never push a higher fluid target"
+    },
+    {
+      "profileId": "P1",
+      "rule": "Type 2 diabetes on metformin: show a one-time 'ask your doctor about a B12 test' card (MHRA 2022); no change to targets"
+    },
+    {
+      "profileId": "P17",
+      "rule": "Acid reflux on long-term PPIs or H2 blockers: show the same B12 test prompt; crystalline B12 in fortified foods is less affected (NASEM)"
+    },
+    {
+      "profileId": "P20",
+      "rule": "Osteoporosis: vitamin D and calcium together; keep calcium food target 1000 mg; supplements are the doctor's decision"
+    },
+    {
+      "profileId": "P11",
+      "rule": "Iron-deficiency anaemia: compatible; B12 deficiency often co-exists; suggest asking the doctor whether B12 was checked; iron rules from P11 still apply"
+    },
+    {
+      "profileId": "P19",
+      "rule": "Celiac disease, IBS or bowel surgery: absorption of B12 and vitamin D may be reduced; doctor input needed; no dose advice"
+    }
+  ],
+  "requiresDoctorInput": true,
+  "requiresDoctorInputStated": true,
+  "fluidNote": null,
+  "warnings": [
+    "General information, not medical advice; FitPlate does not diagnose vitamin D or B12 deficiency",
+    "Treatment doses (60,000 IU sachets, B12 tablets or injections) are set by a doctor; the app logs them without judging them",
+    "Tingling, numbness, balance or walking problems, memory change or confusion: see a doctor soon; nerve damage from B12 deficiency may not fully reverse",
+    "Vitamin D UL is 100 µg (4,000 IU) a day from all sources; repeated mega-dose courses or injections can cause high blood calcium",
+    "Do not take folic acid alone if B12 deficiency is possible; it can hide it",
+    "Pregnancy, breastfeeding, children and teenagers, kidney disease, metformin or PPI use: doctor input needed",
+    "Food alone rarely fixes vitamin D deficiency, and vegans cannot meet B12 from unfortified food"
+  ],
+  "lastResearched": "2026-11-10",
+  "versions": [
+    {
+      "date": "2026-11-10",
+      "file": "FitPlate_Nutrients_2026-11-10.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3); max as safety limit",
+    "limits": "safety limit (lower on conflict)",
+    "lists": "union",
+    "requiresDoctorInput": "stated true in any version, else newest version (missing flag + limits → true)"
+  },
+  "mergeNotes": [],
+  "needsReview": []
+}

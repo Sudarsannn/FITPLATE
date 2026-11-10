@@ -6,8 +6,11 @@ import item_calcium from './calcium.json';
 import item_chloride from './chloride.json';
 import item_chromium from './chromium.json';
 import item_copper from './copper.json';
+import item_fluoride from './fluoride.json';
+import item_folate from './folate.json';
 import item_iodine from './iodine.json';
 import item_iron from './iron.json';
+import item_magnesium from './magnesium.json';
 import item_manganese from './manganese.json';
 import item_molybdenum from './molybdenum.json';
 import item_niacin from './niacin.json';
@@ -33,8 +36,11 @@ export const items: Nutrient[] = [
   item_chloride as unknown as Nutrient,
   item_chromium as unknown as Nutrient,
   item_copper as unknown as Nutrient,
+  item_fluoride as unknown as Nutrient,
+  item_folate as unknown as Nutrient,
   item_iodine as unknown as Nutrient,
   item_iron as unknown as Nutrient,
+  item_magnesium as unknown as Nutrient,
   item_manganese as unknown as Nutrient,
   item_molybdenum as unknown as Nutrient,
   item_niacin as unknown as Nutrient,

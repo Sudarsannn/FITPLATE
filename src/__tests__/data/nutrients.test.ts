@@ -430,6 +430,20 @@ describe('validateNutrient', () => {
       'upper limit 1.5 mg is below lactating RDA 2.1',
     ]);
   });
+
+  it('lets a supplements-only limit sit below the RDA, but still rejects a food-and-supplements one (review 2026-11-09 FIX 1)', () => {
+    const n: Nutrient = ok();
+    expect(validateNutrient({ ...n, upperLimit: { value: 1.5, unit: 'mg', appliesTo: 'supplements_only', source: '' } })).toEqual([]);
+    expect(validateNutrient({ ...n, upperLimit: { value: 1.5, unit: 'mg', appliesTo: 'food_and_supplements', source: '' } })).not.toEqual([]);
+  });
+
+  it('accepts a main unit with a qualifier (µg DFE, mg NE) and compares by its mass unit', () => {
+    const n: Nutrient = ok();
+    const folate: Nutrient = { ...n, unit: 'µg DFE', targets: [{ group: 'adult_male_moderate', ear: null, rda: 400, ai: null, source: '' }], upperLimit: { value: 1000, unit: 'µg', appliesTo: 'food_and_supplements', source: '' } };
+    expect(validateNutrient(folate)).toEqual([]);
+    expect(validateNutrient({ ...folate, upperLimit: { value: 300, unit: 'µg', appliesTo: 'food_and_supplements', source: '' } })).toEqual(['upper limit 300 µg DFE is below adult_male_moderate RDA 400']);
+    expect(validateNutrient({ ...n, unit: 'mg NE' })).toEqual([]);
+  });
 });
 
 describe('cross-link helpers', () => {

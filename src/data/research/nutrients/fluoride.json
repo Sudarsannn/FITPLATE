@@ -1,0 +1,333 @@
+{
+  "id": "fluoride",
+  "name": "Fluoride",
+  "type": "mineral",
+  "subtype": "trace-mineral",
+  "unit": "mg",
+  "altUnits": [
+    {
+      "unit": "µg",
+      "toMainUnitFactor": 0.001
+    },
+    {
+      "unit": "mg/L water (ppm)",
+      "toMainUnitFactor": 1
+    }
+  ],
+  "unitConversions": [
+    {
+      "fromUnit": "mg",
+      "compound": "/l in water",
+      "toMainUnitFactor": 1,
+      "raw": "1 mg/L in water | 1 ppm = 1 mg fluoride per litre"
+    },
+    {
+      "fromUnit": "mg",
+      "compound": "fluoride",
+      "toMainUnitFactor": 2.2,
+      "raw": "1 mg fluoride | about 2.2 mg sodium fluoride"
+    }
+  ],
+  "targets": [
+    {
+      "group": "adult_male_sedentary",
+      "ear": null,
+      "rda": null,
+      "ai": 4,
+      "source": "ICMR-NIN 2020 Not found; NIH ODS/NASEM AI (secondary, unverified)"
+    },
+    {
+      "group": "adult_male_moderate",
+      "ear": null,
+      "rda": null,
+      "ai": 4,
+      "source": "NIH ODS/NASEM AI (secondary, unverified); not scaled by activity"
+    },
+    {
+      "group": "adult_male_heavy",
+      "ear": null,
+      "rda": null,
+      "ai": 4,
+      "source": "NIH ODS/NASEM AI (secondary, unverified); not scaled by activity"
+    },
+    {
+      "group": "adult_female_sedentary",
+      "ear": null,
+      "rda": null,
+      "ai": 3,
+      "source": "ICMR-NIN 2020 Not found; NIH ODS/NASEM AI (secondary, unverified)"
+    },
+    {
+      "group": "adult_female_moderate",
+      "ear": null,
+      "rda": null,
+      "ai": 3,
+      "source": "NIH ODS/NASEM AI (secondary, unverified)"
+    },
+    {
+      "group": "adult_female_heavy",
+      "ear": null,
+      "rda": null,
+      "ai": 3,
+      "source": "NIH ODS/NASEM AI (secondary, unverified)"
+    },
+    {
+      "group": "pregnant",
+      "ear": null,
+      "rda": null,
+      "ai": 3,
+      "source": "NIH ODS AI age 19-50 via search summary (secondary, unverified); EFSA 2013 0.05 mg/kg/day"
+    },
+    {
+      "group": "lactating",
+      "ear": null,
+      "rda": null,
+      "ai": 3,
+      "source": "NIH ODS AI age 19-50 via search summary (secondary, unverified); EFSA 2013 0.05 mg/kg/day"
+    }
+  ],
+  "appDefaultTarget": {
+    "adult_male": 4,
+    "adult_female": 3,
+    "pregnant": null,
+    "lactating": null,
+    "age_60_plus": null
+  },
+  "upperLimit": {
+    "value": 10,
+    "unit": "mg",
+    "appliesTo": "food_and_supplements",
+    "source": "NIH ODS/NASEM UL age 9+ (secondary, unverified); ICMR-NIN TUL Not found; BIS water limit 1.0 mg/L acceptable, 1.5 mg/L permissible"
+  },
+  "topFoodSources": [
+    {
+      "food": "Drinking water at 1.5 mg/L (BIS permissible limit)",
+      "veg": true,
+      "per100g": 0.15,
+      "servingG": 1000,
+      "servingLabel": "1 litre",
+      "perServing": 1.5
+    },
+    {
+      "food": "Drinking water at 1.0 mg/L (BIS acceptable limit)",
+      "veg": true,
+      "per100g": 0.1,
+      "servingG": 1000,
+      "servingLabel": "1 litre",
+      "perServing": 1
+    },
+    {
+      "food": "Chai / brewed black tea (Indian teas, mean 1.24 mg/L; est.)",
+      "veg": true,
+      "per100g": 0.124,
+      "servingG": 150,
+      "servingLabel": "1 cup, 150 ml (est.)",
+      "perServing": 0.19
+    },
+    {
+      "food": "Brewed coffee (NIH, secondary)",
+      "veg": true,
+      "per100g": null,
+      "servingG": 240,
+      "servingLabel": "1 cup",
+      "perServing": 0.22
+    },
+    {
+      "food": "Canned shrimp (NIH, secondary)",
+      "veg": false,
+      "per100g": null,
+      "servingG": 85,
+      "servingLabel": "3 oz",
+      "perServing": 0.17
+    }
+  ],
+  "goodSourceDishes": [
+    {
+      "dishNumber": 71,
+      "dishName": "Ragi Dosa"
+    },
+    {
+      "dishNumber": 81,
+      "dishName": "Paneer Paratha"
+    },
+    {
+      "dishNumber": 46,
+      "dishName": "Methi Thepla"
+    },
+    {
+      "dishNumber": 66,
+      "dishName": "Sprouts Chaat"
+    },
+    {
+      "dishNumber": 31,
+      "dishName": "Indian-style Overnight Oats"
+    }
+  ],
+  "deficiencyRiskIndia": "low",
+  "absorptionBoosters": [
+    "Empty stomach and high water intake (more water fluoride absorbed)",
+    "Kidney disease (reduced clearance)"
+  ],
+  "absorptionBlockers": [
+    "Calcium (dairy, ragi, sesame)",
+    "Magnesium",
+    "Aluminium in the gut",
+    "Vitamin C and fresh fruit reduce fluoride's effects (programme guidance; limited trial evidence)"
+  ],
+  "logPresets": [
+    {
+      "label": "1 cup chai, 150 ml (est.)",
+      "amount": 0.19,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 0.19,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "1 L water at 1.0 mg/L (BIS acceptable)",
+      "amount": 1,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 1,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "1 L water at 1.5 mg/L (BIS permissible limit)",
+      "amount": 1.5,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 1.5,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Pea-size toothpaste swallowed, 1,000 ppm (est.)",
+      "amount": 0.25,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 0.25,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Fluoride tablet 0.25 mg",
+      "amount": 0.25,
+      "unit": "mg",
+      "toMainFactor": 2.2,
+      "factorSource": "markdown",
+      "mainAmount": 0.55,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Fluoride tablet 0.5 mg",
+      "amount": 0.5,
+      "unit": "mg",
+      "toMainFactor": 2.2,
+      "factorSource": "markdown",
+      "mainAmount": 1.1,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Fluoride tablet 1 mg",
+      "amount": 1,
+      "unit": "mg",
+      "toMainFactor": 2.2,
+      "factorSource": "markdown",
+      "mainAmount": 2.2,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    }
+  ],
+  "warnings": [
+    "Fluoride is tracked as a soft ceiling, not a goal; there is no 'low fluoride' warning.",
+    "ICMR-NIN 2020 fluoride values were not found; NIH AI (4 mg men, 3 mg women) and UL 10 mg are secondary, unverified.",
+    "IFCT 2017 has no fluoride data; the app cannot estimate fluoride from dishes.",
+    "Drinking water above 1.5 mg/L (BIS permissible limit) should be treated (RO, Nalgonda, activated alumina) or replaced; boiling does not remove fluoride and can concentrate it.",
+    "Children under 6: pea-size toothpaste only, with supervision; no supplements without a doctor or dentist.",
+    "Kidney disease, pregnancy and breastfeeding: show only general information plus 'Follow your doctor's advice'.",
+    "Fluorosis (tooth mottling, joint stiffness) is generally not reversible: see a doctor or dentist."
+  ],
+  "conditionAdjustments": [
+    {
+      "profileId": "P13",
+      "change": "Kidney disease may reduce fluoride clearance; use safe water; no supplements; requires doctor input",
+      "value": null,
+      "unit": "mg",
+      "source": "Harvard Nutrition Source (via search summary; secondary)"
+    },
+    {
+      "profileId": "P20",
+      "change": "No fluoride supplement for bone density; research does not support it; keep calcium and vitamin D adequate",
+      "value": null,
+      "unit": "mg",
+      "source": "Harvard Nutrition Source (via search summary; secondary)"
+    },
+    {
+      "profileId": "P22",
+      "change": "EFSA AI applies to pregnancy; prefer water under 1.0 mg/L; requires doctor input for supplements",
+      "value": 3,
+      "unit": "mg",
+      "source": "EFSA 2013 (secondary); NIH ODS (secondary, unverified)"
+    },
+    {
+      "profileId": "P23",
+      "change": "EFSA AI applies to lactation; information only",
+      "value": 3,
+      "unit": "mg",
+      "source": "EFSA 2013 (secondary); NIH ODS (secondary, unverified)"
+    },
+    {
+      "profileId": "P31",
+      "change": "No change found; no fluoride supplement for fractures; ensure calcium and vitamin D",
+      "value": null,
+      "unit": "mg",
+      "source": "Harvard Nutrition Source (secondary); meta-analysis via search summary"
+    },
+    {
+      "profileId": "P33",
+      "change": "No change found; low-calcium diets give less protection in endemic areas",
+      "value": null,
+      "unit": "mg",
+      "source": "No change found"
+    },
+    {
+      "profileId": "P34",
+      "change": "No change found; use calcium-rich plant foods (ragi, sesame, greens) in endemic areas",
+      "value": null,
+      "unit": "mg",
+      "source": "No change found"
+    }
+  ],
+  "lastResearched": "2026-11-10",
+  "versions": [
+    {
+      "date": "2026-11-10",
+      "file": "FitPlate_Nutrients_2026-11-10.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3)",
+    "upperLimit": "official safety limit (D3, lower on conflict)",
+    "topFoodSources": "union; per100g official (D3)",
+    "logPresets": "union by label (newest), converted with own file factors",
+    "appDefaultTarget": "newest, kept only where it equals the ICMR row",
+    "lists": "union",
+    "warnings": "union (never dropped)",
+    "text": "newest"
+  },
+  "mergeNotes": [],
+  "needsReview": [
+    "app_default_target.pregnant = 3 has no ICMR row to match (pregnant: \"NIH ODS AI age 19-50 via search summary (secondary, unverified); EFSA 2013 0.05 mg/kg/day\"); set to null",
+    "app_default_target.lactating = 3 has no ICMR row to match (lactating: \"NIH ODS AI age 19-50 via search summary (secondary, unverified); EFSA 2013 0.05 mg/kg/day\"); set to null",
+    "2026-11-10 fluoride: \"group\" has unexpected value \"age_60_plus_male\"; treated as not found",
+    "2026-11-10 fluoride: \"group\" has unexpected value \"age_60_plus_female\"; treated as not found"
+  ]
+}

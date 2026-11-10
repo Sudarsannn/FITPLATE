@@ -1,0 +1,252 @@
+{
+  "id": "water-daily-requirement",
+  "type": "hydration",
+  "name": "Topic 30: Daily water requirement",
+  "defaultTargetFormula": "target_ml = base(sex: male 2500, female 2000, unknown 2500) + clamp((weight_kg - ref_weight) * 20, -400, 400) + min(workout_minutes * 8, 1000) + (hot_weather ? 500 : 0) + (pregnant ? 300 : 0) + (lactating ? 700 : 0); ref_weight male 65 kg, female 55 kg; clamp result 1500-4500 ml; round to nearest 50 ml. Drinks only; base uses EFSA 2010 total-water AI (2.5 / 2.0 L); pregnancy/lactation add-ons from EFSA 2010; other slopes are FitPlate estimates (est.). ICMR-NIN 2020 water values Not found.",
+  "inputs": [
+    "weight_kg",
+    "sex",
+    "activity_level",
+    "workout_minutes",
+    "hot_weather"
+  ],
+  "minMl": 1500,
+  "maxMl": 4500,
+  "quickAddPresetsMl": [
+    100,
+    150,
+    200,
+    250,
+    330,
+    500,
+    750,
+    1000
+  ],
+  "drinks": [
+    {
+      "name": "Plain water",
+      "countsAsWaterPct": 100,
+      "notes": "Reference drink; use safe, BIS-quality water"
+    },
+    {
+      "name": "Chai (milk tea with sugar)",
+      "countsAsWaterPct": 100,
+      "notes": "est.; caffeine about 30-65 mg per cup (secondary); watch sugar and milk calories"
+    },
+    {
+      "name": "Black or green tea, no sugar",
+      "countsAsWaterPct": 100,
+      "notes": "est.; caffeine; avoid within 1 hour of meals per ICMR-NIN 2024 (news summary)"
+    },
+    {
+      "name": "Coffee (filter or brewed)",
+      "countsAsWaterPct": 100,
+      "notes": "est.; up to about 3-4 cups; 80-120 mg caffeine per 150 ml brewed (secondary)"
+    },
+    {
+      "name": "Plain milk",
+      "countsAsWaterPct": 100,
+      "notes": "est.; protein, calcium, some sodium"
+    },
+    {
+      "name": "Chaas (buttermilk)",
+      "countsAsWaterPct": 100,
+      "notes": "est.; counts sodium from added salt (Topic 18)"
+    },
+    {
+      "name": "Nimbu pani",
+      "countsAsWaterPct": 100,
+      "notes": "est.; sugar and salt vary"
+    },
+    {
+      "name": "Tender coconut water",
+      "countsAsWaterPct": 100,
+      "notes": "est.; potassium-rich, values vary by source (Topic 19)"
+    },
+    {
+      "name": "ORS (WHO)",
+      "countsAsWaterPct": 100,
+      "notes": "For diarrhoea, vomiting or heat illness only; 75 mmol/L sodium, 75 mmol/L glucose"
+    },
+    {
+      "name": "Sports or electrolyte drink",
+      "countsAsWaterPct": 100,
+      "notes": "est.; sugar and sodium; only for long or very sweaty sessions"
+    },
+    {
+      "name": "Packaged fruit juice",
+      "countsAsWaterPct": 50,
+      "notes": "est.; product policy because of sugar"
+    },
+    {
+      "name": "Soft or cold drink (sugary)",
+      "countsAsWaterPct": 50,
+      "notes": "est.; product policy; ICMR-NIN says not a substitute for water (news summary)"
+    },
+    {
+      "name": "Alcohol",
+      "countsAsWaterPct": 0,
+      "notes": "Not counted"
+    }
+  ],
+  "drinksTable": [
+    {
+      "drink": "Plain water (boiled, filtered, RO)",
+      "counts": "Yes, 100%",
+      "notes": "Reference drink; check BIS-style quality",
+      "typicalServingMl": {
+        "min": 250,
+        "max": 250
+      }
+    },
+    {
+      "drink": "Chai (milk tea with sugar)",
+      "counts": "Yes (est. 100%), limit sugar",
+      "notes": "About 30-65 mg caffeine per cup (secondary); sugar and milk calories",
+      "typicalServingMl": {
+        "min": 100,
+        "max": 150
+      }
+    },
+    {
+      "drink": "Black tea / green tea, no sugar",
+      "counts": "Yes (est. 100%)",
+      "notes": "Caffeine; avoid within 1 hour of meals per ICMR-NIN 2024 news summary",
+      "typicalServingMl": {
+        "min": 150,
+        "max": 200
+      }
+    },
+    {
+      "drink": "Filter coffee / brewed coffee",
+      "counts": "Yes (est. 100%) up to about 3-4 cups",
+      "notes": "80-120 mg caffeine per 150 ml brewed; Killer 2014 supports moderate intake",
+      "typicalServingMl": {
+        "min": 100,
+        "max": 200
+      }
+    },
+    {
+      "drink": "Plain milk",
+      "counts": "Yes (est. 100%)",
+      "notes": "Protein, calcium, some sodium and potassium",
+      "typicalServingMl": {
+        "min": 200,
+        "max": 250
+      }
+    },
+    {
+      "drink": "Chaas / buttermilk (salted)",
+      "counts": "Yes",
+      "notes": "Little salt, probiotics; count its sodium (Topic 18)",
+      "typicalServingMl": {
+        "min": 200,
+        "max": 200
+      }
+    },
+    {
+      "drink": "Nimbu pani, homemade",
+      "counts": "Yes",
+      "notes": "Sugar and salt vary; unsweetened or lightly sweet is best",
+      "typicalServingMl": {
+        "min": 250,
+        "max": 250
+      }
+    },
+    {
+      "drink": "Tender coconut water",
+      "counts": "Yes",
+      "notes": "Potassium-rich; sodium low to moderate; values vary by source; sugar about naturally occurring",
+      "typicalServingMl": {
+        "min": 200,
+        "max": 300
+      }
+    },
+    {
+      "drink": "ORS (WHO)",
+      "counts": "Yes, for illness use",
+      "notes": "75 mmol/L sodium, 75 mmol/L glucose; not an everyday drink",
+      "typicalServingMl": {
+        "min": 200,
+        "max": 250
+      }
+    },
+    {
+      "drink": "Sports / electrolyte drinks",
+      "counts": "Yes, only if needed",
+      "notes": "Sugar and sodium; mostly for long or very sweaty sessions",
+      "typicalServingMl": {
+        "min": 250,
+        "max": 500
+      }
+    },
+    {
+      "drink": "Fruit juice (packaged)",
+      "counts": "Partly (est. 50%)",
+      "notes": "Sugar load; whole fruit is better",
+      "typicalServingMl": {
+        "min": 150,
+        "max": 200
+      }
+    },
+    {
+      "drink": "Soft / cold drinks (sugary)",
+      "counts": "Partly (est. 50%)",
+      "notes": "ICMR-NIN says synthetic soft drinks are not a substitute for water (news summary); sugar and caffeine",
+      "typicalServingMl": {
+        "min": 250,
+        "max": 330
+      }
+    },
+    {
+      "drink": "Alcohol (beer, spirits)",
+      "counts": "No (0%)",
+      "notes": "Diuretic, calories; not counted",
+      "typicalServingMl": null
+    }
+  ],
+  "reminderRules": [
+    {
+      "rule": "Up to 6 reminders per day at about 09:30, 11:30, 13:30, 15:30, 17:30, 19:30, each prompting about 250 ml (est.)",
+      "source": "FitPlate design (est.); drink-to-thirst / heat advisory context from NDMA and EAH consensus 2015"
+    },
+    {
+      "rule": "Skip a reminder if a drink was logged in the last 60 minutes; stop when target is reached; none after 21:00 (est.)",
+      "source": "FitPlate design (est.)"
+    },
+    {
+      "rule": "Add one extra reminder on hot-weather or workout days",
+      "source": "FitPlate design (est.); NDMA heat advisories (secondary)"
+    },
+    {
+      "rule": "Users aged 60+: keep scheduled reminders even if not thirsty",
+      "source": "Reviews on reduced thirst in older adults (PMC); EFSA 2010 same AI for elderly"
+    },
+    {
+      "rule": "Doctor-flag users (kidney, heart, liver, fluid limit, diuretics): no hydration reminders; show 'Follow your doctor's fluid advice'",
+      "source": "FitPlate safety design; Topic 18 and Topic 19 convention"
+    }
+  ],
+  "warnings": [
+    "General information, not medical advice.",
+    "No upper limit is set for healthy adults, but forced over-drinking can cause low blood sodium; drink to thirst during long exercise.",
+    "Users with kidney, heart or liver disease, fluid limits, diuretics, or pregnancy with swelling or high BP: show only 'Follow your doctor's advice'; no push to drink more.",
+    "Older adults: thirst is weaker; sip regularly unless a doctor has limited fluids.",
+    "ICMR-NIN 2020 water values Not found; the app default is a FitPlate estimate built on EFSA and NASEM adequate intakes.",
+    "ORS is for illness, not for daily use."
+  ],
+  "lastResearched": "2026-11-10",
+  "versions": [
+    {
+      "date": "2026-11-10",
+      "file": "FitPlate_Nutrients_2026-11-10.md"
+    }
+  ],
+  "mergeMethod": {
+    "maxMl": "safety limit (lower on conflict)",
+    "minMl": "newest",
+    "lists": "union"
+  },
+  "mergeNotes": [],
+  "needsReview": []
+}

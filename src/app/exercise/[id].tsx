@@ -10,6 +10,7 @@ import { researchExercises, researchFitnessGuides } from '../../data/research';
 import { useStore } from '../../lib/store';
 import type { Exercise, Guidance } from '../../models/exercise';
 import { splitSource } from '../../services/dishDetail';
+import { cautionLabel, cautionRows, checkpointRows, FILM_TIPS, planRows, shotList } from '../../services/exerciseDetail';
 import { doseLabel, kcalPer10, prescriptionFor, SECTION_LABEL, shortExerciseName } from '../../services/fitness';
 import { colors, radius, type } from '../../theme';
 
@@ -116,6 +117,34 @@ function ExerciseBody({ e }: { e: Exercise }) {
         {e.steps.length > 6 ? <More open={allSteps} count={e.steps.length} onPress={() => setAllSteps((v) => !v)} /> : null}
       </Card>
 
+      {planRows(e).length > 1 ? (
+        <Card title="Plans by level and goal">
+          {planRows(e).map((r) => (
+            <View key={r.key} style={styles.plan}>
+              <Text style={styles.strong}>
+                {r.level} · {r.goal}
+              </Text>
+              <Text style={styles.body}>
+                {r.dose}
+                {r.perWeek ? ` · ${r.perWeek}× a week` : ''}
+              </Text>
+              {r.tempo ? <Text style={styles.muted}>Tempo: {r.tempo}</Text> : null}
+            </View>
+          ))}
+        </Card>
+      ) : null}
+
+      {checkpointRows(e).length ? (
+        <Card title="Form checkpoints">
+          {checkpointRows(e).map((c, i) => (
+            <View key={i} style={styles.check}>
+              <Text style={styles.joint}>{c.joint}</Text>
+              <Text style={[styles.small, { flex: 1 }]}>{c.message}</Text>
+            </View>
+          ))}
+        </Card>
+      ) : null}
+
       {e.commonMistakes.length ? (
         <Card title="Common mistakes">
           {e.commonMistakes.slice(0, 5).map((m, i) => (
@@ -150,6 +179,43 @@ function ExerciseBody({ e }: { e: Exercise }) {
             <View key={i} style={styles.row}>
               <Ionicons name="warning" size={16} color={colors.warn} />
               <Text style={[styles.small, { flex: 1 }]}>{s}</Text>
+            </View>
+          ))}
+        </Card>
+      ) : null}
+
+      {cautionRows(e).length ? (
+        <Card title="If you have a health condition">
+          {cautionRows(e).map((c, i) => (
+            <View key={i} style={styles.plan}>
+              <Text style={styles.strong}>
+                {c.condition.replace(/_/g, ' ')}: {cautionLabel(c)}
+              </Text>
+              {c.change ? <Text style={styles.muted}>{c.change}</Text> : null}
+            </View>
+          ))}
+        </Card>
+      ) : null}
+
+      {shotList(e).length ? (
+        <Card title="Film yourself">
+          {FILM_TIPS.map((t, i) => (
+            <Bullet key={i} n={i + 1}>
+              {t}
+            </Bullet>
+          ))}
+          <Text style={[styles.strong, { marginTop: 10 }]}>Shot list</Text>
+          {shotList(e).map((v) => (
+            <View key={v.n} style={styles.plan}>
+              <Text style={styles.small}>
+                <Text style={styles.strong}>
+                  Clip {v.n}
+                  {v.seconds ? ` (${v.seconds} s)` : ''}:{' '}
+                </Text>
+                {v.shows}
+              </Text>
+              {v.angle ? <Text style={styles.muted}>Camera: {v.angle}</Text> : null}
+              {v.overlay ? <Text style={styles.muted}>Caption: {v.overlay}</Text> : null}
             </View>
           ))}
         </Card>
@@ -270,6 +336,9 @@ const styles = StyleSheet.create({
   muted: { color: colors.muted, fontSize: 13, lineHeight: 18, marginTop: 3 },
   strong: { color: colors.text, fontWeight: '800', fontSize: 14.5 },
   note: { color: colors.faint, fontSize: 12, lineHeight: 17, marginTop: 6 },
+  plan: { paddingVertical: 6 },
+  check: { flexDirection: 'row', gap: 10, paddingVertical: 6, alignItems: 'flex-start' },
+  joint: { width: 76, color: colors.accent2, fontWeight: '800', fontSize: 12.5, textTransform: 'capitalize', lineHeight: 19 },
   part: { color: colors.accent2, fontWeight: '800', fontSize: 13, marginTop: 12, marginBottom: 2 },
   step: { flexDirection: 'row', gap: 12, paddingVertical: 8 },
   num: { width: 26, height: 26, borderRadius: 13, backgroundColor: 'rgba(61,220,132,0.16)', alignItems: 'center', justifyContent: 'center', marginTop: 1 },

@@ -1,6 +1,6 @@
 {
   "schema": "fitplate.links.v1",
-  "generatedFor": "Day21",
+  "generatedFor": "Day22",
   "goodSourceDishes": {
     "biotin": [
       {
@@ -252,6 +252,115 @@
         "dishId": "071-ragi-dosa"
       }
     ],
+    "fluoride": [
+      {
+        "dishNumber": 71,
+        "dishName": "Ragi Dosa",
+        "dishId": "071-ragi-dosa"
+      },
+      {
+        "dishNumber": 81,
+        "dishName": "Paneer Paratha",
+        "dishId": "081-paneer-paratha"
+      },
+      {
+        "dishNumber": 46,
+        "dishName": "Methi Thepla",
+        "dishId": "046-methi-thepla"
+      },
+      {
+        "dishNumber": 66,
+        "dishName": "Sprouts Chaat",
+        "dishId": "066-sprouts-chaat"
+      },
+      {
+        "dishNumber": 31,
+        "dishName": "Indian-style Overnight Oats",
+        "dishId": "031-indian-style-overnight-oats"
+      }
+    ],
+    "folate": [
+      {
+        "dishNumber": 17,
+        "dishName": "Palak Paneer",
+        "dishId": "017-palak-paneer"
+      },
+      {
+        "dishNumber": 12,
+        "dishName": "Rajma Chawal",
+        "dishId": "012-rajma-chawal"
+      },
+      {
+        "dishNumber": 8,
+        "dishName": "Chole (Chana Masala)",
+        "dishId": "008-chole-chana-masala"
+      },
+      {
+        "dishNumber": 29,
+        "dishName": "Misal Pav",
+        "dishId": "029-misal-pav"
+      },
+      {
+        "dishNumber": 37,
+        "dishName": "Bhindi Masala",
+        "dishId": "037-bhindi-masala"
+      },
+      {
+        "dishNumber": 54,
+        "dishName": "Matar Paneer",
+        "dishId": "054-matar-paneer"
+      },
+      {
+        "dishNumber": 27,
+        "dishName": "Dal Makhani",
+        "dishId": "027-dal-makhani"
+      },
+      {
+        "dishNumber": 14,
+        "dishName": "Egg Bhurji",
+        "dishId": "014-egg-bhurji"
+      },
+      {
+        "dishNumber": 16,
+        "dishName": "Besan Chilla",
+        "dishId": "016-besan-chilla"
+      },
+      {
+        "dishNumber": 32,
+        "dishName": "Aloo Gobi",
+        "dishId": "032-aloo-gobi"
+      },
+      {
+        "dishNumber": 66,
+        "dishName": "Sprouts Chaat",
+        "dishId": "066-sprouts-chaat"
+      },
+      {
+        "dishNumber": 56,
+        "dishName": "Pesarattu",
+        "dishId": "056-pesarattu"
+      },
+      {
+        "dishNumber": 38,
+        "dishName": "Egg Curry",
+        "dishId": "038-egg-curry"
+      },
+      {
+        "dishNumber": 5,
+        "dishName": "Dal Tadka",
+        "dishId": "005-dal-tadka"
+      },
+      {
+        "dishNumber": 9,
+        "dishName": "Idli with Sambar",
+        "dishId": "009-idli-with-sambar"
+      },
+      {
+        "dishNumber": 58,
+        "dishName": "Khaman Dhokla",
+        "dishId": "058-khaman-dhokla"
+      }
+    ],
     "iodine": [
       {
         "dishNumber": 14,
@@ -324,6 +433,58 @@
         "dishNumber": 1,
         "dishName": "Poha",
         "dishId": "001-poha"
+      }
+    ],
+    "magnesium": [
+      {
+        "dishNumber": 31,
+        "dishName": "Indian-style Overnight Oats",
+        "dishId": "031-indian-style-overnight-oats"
+      },
+      {
+        "dishNumber": 71,
+        "dishName": "Ragi Dosa",
+        "dishId": "071-ragi-dosa"
+      },
+      {
+        "dishNumber": 12,
+        "dishName": "Rajma Chawal",
+        "dishId": "012-rajma-chawal"
+      },
+      {
+        "dishNumber": 8,
+        "dishName": "Chole (Chana Masala)",
+        "dishId": "008-chole-chana-masala"
+      },
+      {
+        "dishNumber": 17,
+        "dishName": "Palak Paneer",
+        "dishId": "017-palak-paneer"
+      },
+      {
+        "dishNumber": 66,
+        "dishName": "Sprouts Chaat",
+        "dishId": "066-sprouts-chaat"
+      },
+      {
+        "dishNumber": 56,
+        "dishName": "Pesarattu",
+        "dishId": "056-pesarattu"
+      },
+      {
+        "dishNumber": 29,
+        "dishName": "Misal Pav",
+        "dishId": "029-misal-pav"
+      },
+      {
+        "dishNumber": 27,
+        "dishName": "Dal Makhani",
+        "dishId": "027-dal-makhani"
+      },
+      {
+        "dishNumber": 46,
+        "dishName": "Methi Thepla",
+        "dishId": "046-methi-thepla"
       }
     ],
     "manganese": [
@@ -1261,6 +1422,7 @@
   "dishGoodSourceOf": {
     "014-egg-bhurji": [
       "biotin",
+      "folate",
       "iodine",
       "niacin",
       "pantothenic-acid",
@@ -1284,6 +1446,8 @@
       "biotin",
       "calcium",
       "chromium",
+      "folate",
+      "magnesium",
       "phosphorus",
       "riboflavin",
       "vitamin-a",
@@ -1309,6 +1473,7 @@
     ],
     "038-egg-curry": [
       "biotin",
+      "folate",
       "pantothenic-acid",
       "phosphorus",
       "selenium",
@@ -1318,6 +1483,7 @@
     "054-matar-paneer": [
       "biotin",
       "calcium",
+      "folate",
       "phosphorus"
     ],
     "021-masala-omelette": [
@@ -1368,6 +1534,8 @@
     "031-indian-style-overnight-oats": [
       "calcium",
       "chloride",
+      "fluoride",
+      "magnesium",
       "riboflavin",
       "sodium",
       "vitamin-b12",
@@ -1387,12 +1555,16 @@
       "calcium",
       "chromium",
       "copper",
+      "fluoride",
+      "magnesium",
       "manganese"
     ],
     "046-methi-thepla": [
       "calcium",
       "chromium",
+      "fluoride",
       "iron",
+      "magnesium",
       "manganese",
       "riboflavin",
       "selenium",
@@ -1409,12 +1581,16 @@
     ],
     "081-paneer-paratha": [
       "chloride",
+      "fluoride",
       "sodium"
     ],
     "066-sprouts-chaat": [
       "chloride",
       "chromium",
       "copper",
+      "fluoride",
+      "folate",
+      "magnesium",
       "molybdenum",
       "potassium",
       "sodium",
@@ -1428,7 +1604,9 @@
       "chloride",
       "chromium",
       "copper",
+      "folate",
       "iron",
+      "magnesium",
       "manganese",
       "molybdenum",
       "phosphorus",
@@ -1438,6 +1616,8 @@
     "012-rajma-chawal": [
       "chromium",
       "copper",
+      "folate",
+      "magnesium",
       "molybdenum",
       "niacin",
       "pantothenic-acid",
@@ -1448,6 +1628,8 @@
     "008-chole-chana-masala": [
       "chromium",
       "copper",
+      "folate",
+      "magnesium",
       "manganese",
       "molybdenum",
       "pantothenic-acid",
@@ -1462,6 +1644,8 @@
     ],
     "027-dal-makhani": [
       "copper",
+      "folate",
+      "magnesium",
       "pantothenic-acid",
       "phosphorus",
       "thiamine",
@@ -1469,6 +1653,41 @@
     ],
     "042-malai-kofta": [
       "copper"
+    ],
+    "029-misal-pav": [
+      "folate",
+      "magnesium",
+      "thiamine"
+    ],
+    "037-bhindi-masala": [
+      "folate",
+      "vitamin-c"
+    ],
+    "016-besan-chilla": [
+      "folate",
+      "manganese",
+      "thiamine"
+    ],
+    "032-aloo-gobi": [
+      "folate",
+      "vitamin-c",
+      "vitamin-e",
+      "vitamin-k"
+    ],
+    "005-dal-tadka": [
+      "folate",
+      "molybdenum",
+      "phosphorus",
+      "thiamine"
+    ],
+    "009-idli-with-sambar": [
+      "folate",
+      "pantothenic-acid",
+      "thiamine",
+      "vitamin-a"
+    ],
+    "058-khaman-dhokla": [
+      "folate"
     ],
     "098-mango-lassi": [
       "iodine"
@@ -1521,17 +1740,8 @@
       "thiamine",
       "vitamin-b6"
     ],
-    "016-besan-chilla": [
-      "manganese",
-      "thiamine"
-    ],
     "006-upma": [
       "manganese"
-    ],
-    "005-dal-tadka": [
-      "molybdenum",
-      "phosphorus",
-      "thiamine"
     ],
     "041-pongal": [
       "molybdenum"
@@ -1565,11 +1775,6 @@
     "004-masala-dosa": [
       "pantothenic-acid"
     ],
-    "009-idli-with-sambar": [
-      "pantothenic-acid",
-      "thiamine",
-      "vitamin-a"
-    ],
     "060-aloo-matar": [
       "potassium",
       "vitamin-b6"
@@ -1594,9 +1799,6 @@
     "073-rava-fish-fry": [
       "selenium",
       "vitamin-d"
-    ],
-    "029-misal-pav": [
-      "thiamine"
     ],
     "096-gajar-halwa": [
       "vitamin-a"
@@ -1626,17 +1828,9 @@
       "vitamin-b12",
       "zinc"
     ],
-    "032-aloo-gobi": [
-      "vitamin-c",
-      "vitamin-e",
-      "vitamin-k"
-    ],
     "015-veg-hakka-noodles": [
       "vitamin-c",
       "vitamin-k"
-    ],
-    "037-bhindi-masala": [
-      "vitamin-c"
     ],
     "030-lemon-rice": [
       "vitamin-e"
@@ -1682,7 +1876,194 @@
       "how": "name"
     }
   ],
-  "drinks": [],
+  "drinks": [
+    {
+      "id": "water-daily-requirement",
+      "drinks": [
+        {
+          "name": "Plain water",
+          "countsAsWaterPct": 100,
+          "notes": "Reference drink; use safe, BIS-quality water"
+        },
+        {
+          "name": "Chai (milk tea with sugar)",
+          "countsAsWaterPct": 100,
+          "notes": "est.; caffeine about 30-65 mg per cup (secondary); watch sugar and milk calories"
+        },
+        {
+          "name": "Black or green tea, no sugar",
+          "countsAsWaterPct": 100,
+          "notes": "est.; caffeine; avoid within 1 hour of meals per ICMR-NIN 2024 (news summary)"
+        },
+        {
+          "name": "Coffee (filter or brewed)",
+          "countsAsWaterPct": 100,
+          "notes": "est.; up to about 3-4 cups; 80-120 mg caffeine per 150 ml brewed (secondary)"
+        },
+        {
+          "name": "Plain milk",
+          "countsAsWaterPct": 100,
+          "notes": "est.; protein, calcium, some sodium"
+        },
+        {
+          "name": "Chaas (buttermilk)",
+          "countsAsWaterPct": 100,
+          "notes": "est.; counts sodium from added salt (Topic 18)"
+        },
+        {
+          "name": "Nimbu pani",
+          "countsAsWaterPct": 100,
+          "notes": "est.; sugar and salt vary"
+        },
+        {
+          "name": "Tender coconut water",
+          "countsAsWaterPct": 100,
+          "notes": "est.; potassium-rich, values vary by source (Topic 19)"
+        },
+        {
+          "name": "ORS (WHO)",
+          "countsAsWaterPct": 100,
+          "notes": "For diarrhoea, vomiting or heat illness only; 75 mmol/L sodium, 75 mmol/L glucose"
+        },
+        {
+          "name": "Sports or electrolyte drink",
+          "countsAsWaterPct": 100,
+          "notes": "est.; sugar and sodium; only for long or very sweaty sessions"
+        },
+        {
+          "name": "Packaged fruit juice",
+          "countsAsWaterPct": 50,
+          "notes": "est.; product policy because of sugar"
+        },
+        {
+          "name": "Soft or cold drink (sugary)",
+          "countsAsWaterPct": 50,
+          "notes": "est.; product policy; ICMR-NIN says not a substitute for water (news summary)"
+        },
+        {
+          "name": "Alcohol",
+          "countsAsWaterPct": 0,
+          "notes": "Not counted"
+        }
+      ],
+      "drinksTable": [
+        {
+          "drink": "Plain water (boiled, filtered, RO)",
+          "counts": "Yes, 100%",
+          "notes": "Reference drink; check BIS-style quality",
+          "typicalServingMl": {
+            "min": 250,
+            "max": 250
+          }
+        },
+        {
+          "drink": "Chai (milk tea with sugar)",
+          "counts": "Yes (est. 100%), limit sugar",
+          "notes": "About 30-65 mg caffeine per cup (secondary); sugar and milk calories",
+          "typicalServingMl": {
+            "min": 100,
+            "max": 150
+          }
+        },
+        {
+          "drink": "Black tea / green tea, no sugar",
+          "counts": "Yes (est. 100%)",
+          "notes": "Caffeine; avoid within 1 hour of meals per ICMR-NIN 2024 news summary",
+          "typicalServingMl": {
+            "min": 150,
+            "max": 200
+          }
+        },
+        {
+          "drink": "Filter coffee / brewed coffee",
+          "counts": "Yes (est. 100%) up to about 3-4 cups",
+          "notes": "80-120 mg caffeine per 150 ml brewed; Killer 2014 supports moderate intake",
+          "typicalServingMl": {
+            "min": 100,
+            "max": 200
+          }
+        },
+        {
+          "drink": "Plain milk",
+          "counts": "Yes (est. 100%)",
+          "notes": "Protein, calcium, some sodium and potassium",
+          "typicalServingMl": {
+            "min": 200,
+            "max": 250
+          }
+        },
+        {
+          "drink": "Chaas / buttermilk (salted)",
+          "counts": "Yes",
+          "notes": "Little salt, probiotics; count its sodium (Topic 18)",
+          "typicalServingMl": {
+            "min": 200,
+            "max": 200
+          }
+        },
+        {
+          "drink": "Nimbu pani, homemade",
+          "counts": "Yes",
+          "notes": "Sugar and salt vary; unsweetened or lightly sweet is best",
+          "typicalServingMl": {
+            "min": 250,
+            "max": 250
+          }
+        },
+        {
+          "drink": "Tender coconut water",
+          "counts": "Yes",
+          "notes": "Potassium-rich; sodium low to moderate; values vary by source; sugar about naturally occurring",
+          "typicalServingMl": {
+            "min": 200,
+            "max": 300
+          }
+        },
+        {
+          "drink": "ORS (WHO)",
+          "counts": "Yes, for illness use",
+          "notes": "75 mmol/L sodium, 75 mmol/L glucose; not an everyday drink",
+          "typicalServingMl": {
+            "min": 200,
+            "max": 250
+          }
+        },
+        {
+          "drink": "Sports / electrolyte drinks",
+          "counts": "Yes, only if needed",
+          "notes": "Sugar and sodium; mostly for long or very sweaty sessions",
+          "typicalServingMl": {
+            "min": 250,
+            "max": 500
+          }
+        },
+        {
+          "drink": "Fruit juice (packaged)",
+          "counts": "Partly (est. 50%)",
+          "notes": "Sugar load; whole fruit is better",
+          "typicalServingMl": {
+            "min": 150,
+            "max": 200
+          }
+        },
+        {
+          "drink": "Soft / cold drinks (sugary)",
+          "counts": "Partly (est. 50%)",
+          "notes": "ICMR-NIN says synthetic soft drinks are not a substitute for water (news summary); sugar and caffeine",
+          "typicalServingMl": {
+            "min": 250,
+            "max": 330
+          }
+        },
+        {
+          "drink": "Alcohol (beer, spirits)",
+          "counts": "No (0%)",
+          "notes": "Diuretic, calories; not counted",
+          "typicalServingMl": null
+        }
+      ]
+    }
+  ],
   "met": [
     {
       "exerciseId": "adho-mukha-svanasana",
@@ -1717,6 +2098,11 @@
     {
       "exerciseId": "bodyweight-squat",
       "name": "Bodyweight squat",
+      "met": 3.8
+    },
+    {
+      "exerciseId": "burpees",
+      "name": "Burpees (full burpee, step-back no-jump burpee, incline burpee)",
       "met": 3.8
     },
     {
@@ -1805,6 +2191,11 @@
       "met": 4.8
     },
     {
+      "exerciseId": "lat-pulldown",
+      "name": "Lat pulldown",
+      "met": 3.5
+    },
+    {
       "exerciseId": "leg-curl",
       "name": "Leg curl (lying and seated)",
       "met": 3.5
@@ -1840,6 +2231,11 @@
       "met": 3.8
     },
     {
+      "exerciseId": "quad-and-calf-stretch",
+      "name": "Quad and calf stretch",
+      "met": 2.3
+    },
+    {
       "exerciseId": "reverse-lunge",
       "name": "Reverse lunge",
       "met": 3.8
@@ -1848,6 +2244,11 @@
       "exerciseId": "rowing-machine",
       "name": "Rowing machine",
       "met": 5
+    },
+    {
+      "exerciseId": "seated-cable-row",
+      "name": "Seated cable row",
+      "met": 3.5
     },
     {
       "exerciseId": "smith-machine",

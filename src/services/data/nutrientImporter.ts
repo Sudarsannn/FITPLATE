@@ -735,7 +735,8 @@ export function checkDefaultTargets(
 /** The adult upper limit in the main unit, or null when there is none or its unit can't be compared. */
 function upperLimitInMain(ul: UpperLimit | null, mainUnit: string): number | null {
   if (!ul || ul.value === null) return null;
-  const main = normUnit(mainUnit);
+  // "µg DFE", "µg RAE" and "mg NE" compare by their leading mass unit; the full label stays for display.
+  const main = baseUnit(mainUnit) ?? normUnit(mainUnit);
   const base = baseUnit(ul.unit) ?? main;
   const f = base === main ? 1 : massFactor(base, main);
   return f === null ? null : ul.value * f;
@@ -1042,7 +1043,7 @@ export function validateNutrient(n: Nutrient): string[] {
   if (!n.id) errs.push('no id');
   if (!n.name) errs.push('no name');
   if (!n.unit) errs.push('no main unit');
-  else if (!MAIN_UNITS.has(normUnit(n.unit))) errs.push(`main unit "${n.unit}" is not µg, mg or g`);
+  else if (!MAIN_UNITS.has(baseUnit(n.unit) ?? normUnit(n.unit))) errs.push(`main unit "${n.unit}" is not µg, mg or g`);
   if (n.targets.length === 0) errs.push('no targets');
   if (n.lastResearched !== null && !ISO_DATE.test(n.lastResearched)) errs.push(`last_researched "${n.lastResearched}" is not YYYY-MM-DD`);
 
@@ -1069,7 +1070,8 @@ export function validateNutrient(n: Nutrient): string[] {
   }
 
   const ul = upperLimitInMain(n.upperLimit, n.unit);
-  if (ul !== null) {
+  // A supplements-only limit (magnesium) is judged against supplements alone, so it may sit below the food-and-supplement RDA.
+  if (ul !== null && n.upperLimit?.appliesTo !== 'supplements_only') {
     for (const t of n.targets) {
       const need = t.rda ?? t.ai;
       if (need !== null && ul < need) errs.push(`upper limit ${ul} ${n.unit} is below ${t.group} ${t.rda !== null ? 'RDA' : 'AI'} ${need}`);

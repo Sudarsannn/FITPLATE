@@ -12,6 +12,7 @@ import item_low_hdl_metabolic_syndrome from './low-hdl-metabolic-syndrome.json';
 import item_pcos from './pcos.json';
 import item_prediabetes from './prediabetes.json';
 import item_type_2_diabetes from './type-2-diabetes.json';
+import item_vitamin_d_b12_deficiency from './vitamin-d-b12-deficiency.json';
 
 export const items: HealthCondition[] = [
   item_fatty_liver as unknown as HealthCondition,
@@ -25,4 +26,5 @@ export const items: HealthCondition[] = [
   item_pcos as unknown as HealthCondition,
   item_prediabetes as unknown as HealthCondition,
   item_type_2_diabetes as unknown as HealthCondition,
+  item_vitamin_d_b12_deficiency as unknown as HealthCondition,
 ];

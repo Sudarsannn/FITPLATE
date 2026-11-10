@@ -8,6 +8,7 @@ import item_barbell_deadlift from './barbell-deadlift.json';
 import item_barbell_flat_bench_press from './barbell-flat-bench-press.json';
 import item_bhujangasana_cobra_pose from './bhujangasana-cobra-pose.json';
 import item_bodyweight_squat from './bodyweight-squat.json';
+import item_burpees from './burpees.json';
 import item_cable_crossover_fly from './cable-crossover-fly.json';
 import item_calf_raise from './calf-raise.json';
 import item_cat_cow from './cat-cow.json';
@@ -25,6 +26,7 @@ import item_hip_flexor_stretch from './hip-flexor-stretch.json';
 import item_hip_thrust from './hip-thrust.json';
 import item_incline_bench_press from './incline-bench-press.json';
 import item_jumping_jacks from './jumping-jacks.json';
+import item_lat_pulldown from './lat-pulldown.json';
 import item_leg_curl from './leg-curl.json';
 import item_leg_extension_machine from './leg-extension-machine.json';
 import item_leg_press from './leg-press.json';
@@ -32,8 +34,10 @@ import item_mountain_climbers from './mountain-climbers.json';
 import item_pec_deck from './pec-deck.json';
 import item_plank_and_side_plank from './plank-and-side-plank.json';
 import item_push_up from './push-up.json';
+import item_quad_and_calf_stretch from './quad-and-calf-stretch.json';
 import item_reverse_lunge from './reverse-lunge.json';
 import item_rowing_machine from './rowing-machine.json';
+import item_seated_cable_row from './seated-cable-row.json';
 import item_smith_machine from './smith-machine.json';
 import item_stair_climber from './stair-climber.json';
 import item_stationary_bike from './stationary-bike.json';
@@ -54,6 +58,7 @@ export const items: Exercise[] = [
   item_barbell_flat_bench_press as unknown as Exercise,
   item_bhujangasana_cobra_pose as unknown as Exercise,
   item_bodyweight_squat as unknown as Exercise,
+  item_burpees as unknown as Exercise,
   item_cable_crossover_fly as unknown as Exercise,
   item_calf_raise as unknown as Exercise,
   item_cat_cow as unknown as Exercise,
@@ -71,6 +76,7 @@ export const items: Exercise[] = [
   item_hip_thrust as unknown as Exercise,
   item_incline_bench_press as unknown as Exercise,
   item_jumping_jacks as unknown as Exercise,
+  item_lat_pulldown as unknown as Exercise,
   item_leg_curl as unknown as Exercise,
   item_leg_extension_machine as unknown as Exercise,
   item_leg_press as unknown as Exercise,
@@ -78,8 +84,10 @@ export const items: Exercise[] = [
   item_pec_deck as unknown as Exercise,
   item_plank_and_side_plank as unknown as Exercise,
   item_push_up as unknown as Exercise,
+  item_quad_and_calf_stretch as unknown as Exercise,
   item_reverse_lunge as unknown as Exercise,
   item_rowing_machine as unknown as Exercise,
+  item_seated_cable_row as unknown as Exercise,
   item_smith_machine as unknown as Exercise,
   item_stair_climber as unknown as Exercise,
   item_stationary_bike as unknown as Exercise,

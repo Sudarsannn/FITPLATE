@@ -1,0 +1,508 @@
+{
+  "id": "folate",
+  "name": "Folate (vitamin B9; folic acid, 5-MTHF / methylfolate, folinic acid)",
+  "type": "vitamin",
+  "subtype": "water-soluble",
+  "unit": "µg DFE",
+  "altUnits": [
+    {
+      "unit": "µg food folate",
+      "toMainUnitFactor": 1
+    },
+    {
+      "unit": "mcg folic acid (with food)",
+      "toMainUnitFactor": 1.7
+    },
+    {
+      "unit": "mg folic acid (with food)",
+      "toMainUnitFactor": 1700
+    },
+    {
+      "unit": "µg L-methylfolate (est., treated like folic acid)",
+      "toMainUnitFactor": 1.7
+    },
+    {
+      "unit": "mcg DFE",
+      "toMainUnitFactor": 1
+    }
+  ],
+  "unitConversions": [
+    {
+      "fromUnit": "µg",
+      "compound": "natural food folate",
+      "toMainUnitFactor": 1,
+      "raw": "1 µg natural food folate (dal, greens, eggs) | × 1.0"
+    },
+    {
+      "fromUnit": "µg",
+      "compound": "folic acid in fortified food or a supplement taken with food",
+      "toMainUnitFactor": 1.7,
+      "raw": "1 µg folic acid in fortified food or a supplement taken **with food** | × 1.7"
+    },
+    {
+      "fromUnit": "µg",
+      "compound": "folic acid supplement taken on an empty stomach",
+      "toMainUnitFactor": 2,
+      "raw": "1 µg folic acid supplement taken on an **empty stomach** | × 2.0"
+    },
+    {
+      "fromUnit": "µg",
+      "compound": "l-methylfolate",
+      "toMainUnitFactor": 1.7,
+      "raw": "1 µg L-methylfolate (5-MTHF salt) | × 1.7 **(est.)**"
+    }
+  ],
+  "targets": [
+    {
+      "group": "adult_male_sedentary",
+      "ear": 250,
+      "rda": 300,
+      "ai": null,
+      "source": "ICMR-NIN 2020 brief note and RDA 2020 short report, via search snippets (secondary, unverified)"
+    },
+    {
+      "group": "adult_male_moderate",
+      "ear": 250,
+      "rda": 300,
+      "ai": null,
+      "source": "ICMR-NIN 2020; one value per sex, not scaled by activity (secondary, unverified)"
+    },
+    {
+      "group": "adult_male_heavy",
+      "ear": 250,
+      "rda": 300,
+      "ai": null,
+      "source": "ICMR-NIN 2020; one value per sex, not scaled by activity (secondary, unverified)"
+    },
+    {
+      "group": "adult_female_sedentary",
+      "ear": 180,
+      "rda": 220,
+      "ai": null,
+      "source": "ICMR-NIN 2020 brief note and RDA 2020 short report, via search snippets (secondary, unverified)"
+    },
+    {
+      "group": "adult_female_moderate",
+      "ear": 180,
+      "rda": 220,
+      "ai": null,
+      "source": "ICMR-NIN 2020; one value per sex, not scaled by activity (secondary, unverified)"
+    },
+    {
+      "group": "adult_female_heavy",
+      "ear": 180,
+      "rda": 220,
+      "ai": null,
+      "source": "ICMR-NIN 2020; one value per sex, not scaled by activity (secondary, unverified)"
+    },
+    {
+      "group": "pregnant",
+      "ear": null,
+      "rda": 570,
+      "ai": null,
+      "source": "ICMR-NIN 2020 RDA 2020 table value via search snippets (secondary, unverified); method text implies +300 over women's RDA (520), unexplained; EAR not found"
+    },
+    {
+      "group": "lactating",
+      "ear": null,
+      "rda": 330,
+      "ai": null,
+      "source": "ICMR-NIN 2020 RDA 2020 table value via search snippets (secondary, unverified); method text implies +100 over women's RDA (320), unexplained; EAR not found"
+    }
+  ],
+  "appDefaultTarget": {
+    "adult_male": 300,
+    "adult_female": 220,
+    "pregnant": 570,
+    "lactating": 330,
+    "age_60_plus": null
+  },
+  "upperLimit": {
+    "value": 1000,
+    "unit": "µg/day folic acid (not DFE)",
+    "appliesTo": "supplements_only",
+    "source": "ICMR-NIN 2020 TUL for folic acid, adults, via FSSAI notice summary and CRN 2025 (secondary, unverified); same as US NASEM 1998 and EFSA 2023 (EFSA applies it to folic acid plus methylfolate salts combined). Applies to folic acid from supplements and fortified foods, not to natural food folate"
+  },
+  "topFoodSources": [
+    {
+      "food": "Chicken liver",
+      "veg": false,
+      "per100g": 1032,
+      "servingG": 50,
+      "servingLabel": "2-3 small pieces, raw weight",
+      "perServing": 516
+    },
+    {
+      "food": "Rajma, red (red kidney beans)",
+      "veg": true,
+      "per100g": 316,
+      "servingG": 50,
+      "servingLabel": "1 katori cooked, dry weight",
+      "perServing": 158
+    },
+    {
+      "food": "Spinach (palak)",
+      "veg": true,
+      "per100g": 142,
+      "servingG": 100,
+      "servingLabel": "about 1/2 katori cooked, raw weight",
+      "perServing": 142
+    },
+    {
+      "food": "Bengal gram, whole (kala chana)",
+      "veg": true,
+      "per100g": 233,
+      "servingG": 50,
+      "servingLabel": "1 katori cooked, dry weight",
+      "perServing": 117
+    },
+    {
+      "food": "Moth bean (matki)",
+      "veg": true,
+      "per100g": 349,
+      "servingG": 30,
+      "servingLabel": "1 small katori sprouts, dry weight",
+      "perServing": 105
+    },
+    {
+      "food": "Papaya, ripe",
+      "veg": true,
+      "per100g": 61,
+      "servingG": 150,
+      "servingLabel": "1 medium bowl, cubed",
+      "perServing": 91
+    },
+    {
+      "food": "Soya bean, white",
+      "veg": true,
+      "per100g": 288,
+      "servingG": 30,
+      "servingLabel": "1/2 katori cooked, dry weight",
+      "perServing": 86
+    },
+    {
+      "food": "Green gram, whole (sabut moong)",
+      "veg": true,
+      "per100g": 145,
+      "servingG": 50,
+      "servingLabel": "1 katori sprouts, dry weight",
+      "perServing": 73
+    },
+    {
+      "food": "Bengal gram dal / besan",
+      "veg": true,
+      "per100g": 182,
+      "servingG": 40,
+      "servingLabel": "1 large chilla or 1 serving dhokla",
+      "perServing": 73
+    },
+    {
+      "food": "Ladies finger (bhindi)",
+      "veg": true,
+      "per100g": 64,
+      "servingG": 100,
+      "servingLabel": "1 katori sabzi, raw weight",
+      "perServing": 64
+    },
+    {
+      "food": "Toor dal (red gram, split)",
+      "veg": true,
+      "per100g": 108,
+      "servingG": 50,
+      "servingLabel": "1 katori cooked dal, dry weight",
+      "perServing": 54
+    },
+    {
+      "food": "Egg, hen, whole",
+      "veg": false,
+      "per100g": 49,
+      "servingG": 100,
+      "servingLabel": "2 eggs",
+      "perServing": 49
+    }
+  ],
+  "goodSourceDishes": [
+    {
+      "dishNumber": 17,
+      "dishName": "Palak Paneer"
+    },
+    {
+      "dishNumber": 12,
+      "dishName": "Rajma Chawal"
+    },
+    {
+      "dishNumber": 8,
+      "dishName": "Chole (Chana Masala)"
+    },
+    {
+      "dishNumber": 29,
+      "dishName": "Misal Pav"
+    },
+    {
+      "dishNumber": 37,
+      "dishName": "Bhindi Masala"
+    },
+    {
+      "dishNumber": 54,
+      "dishName": "Matar Paneer"
+    },
+    {
+      "dishNumber": 27,
+      "dishName": "Dal Makhani"
+    },
+    {
+      "dishNumber": 14,
+      "dishName": "Egg Bhurji"
+    },
+    {
+      "dishNumber": 16,
+      "dishName": "Besan Chilla"
+    },
+    {
+      "dishNumber": 32,
+      "dishName": "Aloo Gobi"
+    },
+    {
+      "dishNumber": 66,
+      "dishName": "Sprouts Chaat"
+    },
+    {
+      "dishNumber": 56,
+      "dishName": "Pesarattu"
+    },
+    {
+      "dishNumber": 38,
+      "dishName": "Egg Curry"
+    },
+    {
+      "dishNumber": 5,
+      "dishName": "Dal Tadka"
+    },
+    {
+      "dishNumber": 9,
+      "dishName": "Idli with Sambar"
+    },
+    {
+      "dishNumber": 58,
+      "dishName": "Khaman Dhokla"
+    }
+  ],
+  "deficiencyRiskIndia": "high",
+  "absorptionBoosters": [
+    "eating the cooking liquid (dal water, gravy, sambar, rasam, blanching water used in gravy)",
+    "whole pulses and sprouts instead of only split dals",
+    "whole grains (atta, jowar, bajra, ragi) instead of maida and polished rice",
+    "steaming, pressure cooking with the water kept, quick stir-frying",
+    "raw folate foods daily (sprouts chaat, papaya, salads)",
+    "folic acid in tablets or +F fortified staples is absorbed better than food folate",
+    "adequate vitamin B12 so folate can be used"
+  ],
+  "absorptionBlockers": [
+    "boiling and draining (rice kanji, blanched greens, boiled vegetables)",
+    "long simmering and repeated reheating",
+    "grain refining (maida, polished rice) and dehusking of pulses",
+    "heavy alcohol use",
+    "malabsorption (celiac disease, inflammatory bowel disease)",
+    "methotrexate, anti-seizure medicines (phenytoin, carbamazepine, valproate, phenobarbital), sulfasalazine, trimethoprim and other antifolate medicines",
+    "low vitamin B12 (folate trapped as 5-MTHF)"
+  ],
+  "logPresets": [
+    {
+      "label": "Folic acid 400 mcg tablet, with food (680 µg DFE)",
+      "amount": 680,
+      "unit": "µg DFE",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 680,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "IFA red tablet: 60 mg iron + 500 mcg folic acid, with food (850 µg DFE)",
+      "amount": 850,
+      "unit": "µg DFE",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 850,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Folic acid 1 mg tablet, with food (1,700 µg DFE; at the upper limit)",
+      "amount": 1700,
+      "unit": "µg DFE",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 1700,
+      "mainAmountRange": null,
+      "prescriptionDose": true
+    },
+    {
+      "label": "L-methylfolate 1 mg, with food (about 1,700 µg DFE, est.; at the upper limit)",
+      "amount": 1700,
+      "unit": "µg DFE",
+      "toMainFactor": 1.7,
+      "factorSource": "markdown",
+      "mainAmount": 2890,
+      "mainAmountRange": null,
+      "prescriptionDose": true
+    },
+    {
+      "label": "Folic acid 5 mg tablet (8,500 µg DFE) (prescription dose)",
+      "amount": 8500,
+      "unit": "µg DFE",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 8500,
+      "mainAmountRange": null,
+      "prescriptionDose": true
+    },
+    {
+      "label": "Folinic acid / leucovorin, as prescribed (not converted to DFE) (prescription dose)",
+      "amount": null,
+      "unit": "µg DFE",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": null,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Multivitamin or B-complex (enter label value)",
+      "amount": null,
+      "unit": "µg DFE",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": null,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Custom amount (mcg or mg of folic acid, converted to µg DFE)",
+      "amount": null,
+      "unit": "µg DFE",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": null,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    }
+  ],
+  "warnings": [
+    "Folic acid from tablets and fortified foods has an upper limit of 1,000 mcg per day for adults (ICMR, US and EFSA); food folate has no limit.",
+    "High-dose folic acid can hide vitamin B12 deficiency while nerve damage continues; get B12 checked if you have anaemia, tiredness, numbness or tingling, especially if you are vegetarian, vegan, over 50 or take metformin.",
+    "Folic acid is found in IFA tablets, prenatal vitamins, B-complex and multivitamins, protein powders and +F fortified rice, atta and maida; add up all products you take.",
+    "If you are pregnant or planning a pregnancy, your doctor decides the folic acid dose; doctors usually advise starting before conception.",
+    "If you take methotrexate, anti-seizure medicines, sulfasalazine or trimethoprim, ask your doctor before taking or stopping folic acid.",
+    "5 mg folic acid tablets and folinic acid (leucovorin) are prescription doses.",
+    "General information, not medical advice. Check with a doctor before starting supplements."
+  ],
+  "conditionAdjustments": [
+    {
+      "profileId": "P22 Pregnancy",
+      "change": "Raise food target to ICMR pregnancy RDA. Folic acid supplement before conception to 12 weeks (WHO/NHS 400 µg; higher prescribed dose for high-risk women) and IFA tablets from the second trimester are set by the doctor; app never suggests a dose",
+      "value": 570,
+      "unit": "µg DFE/day",
+      "source": "ICMR-NIN 2020 (secondary, unverified); WHO via Gomes et al. 2016; NHS; MoHFW Anaemia Mukt Bharat"
+    },
+    {
+      "profileId": "P23 Breastfeeding",
+      "change": "Raise food target to ICMR lactation RDA; IFA tablet continued 6 months after delivery under the programme (doctor or health worker decides)",
+      "value": 330,
+      "unit": "µg DFE/day",
+      "source": "ICMR-NIN 2020 (secondary, unverified); MoHFW Anaemia Mukt Bharat"
+    },
+    {
+      "profileId": "P11 Iron-deficiency anaemia",
+      "change": "No change in food target; count folic acid in IFA and iron products toward the 1,000 µg folic acid counter; cause of anaemia for doctor to assess",
+      "value": null,
+      "unit": "µg DFE/day",
+      "source": "MoHFW Anaemia Mukt Bharat; NHS"
+    },
+    {
+      "profileId": "P12 Vitamin D and B12 deficiency (diet follow-up)",
+      "change": "No change in food target; firm warning not to self-treat with high-dose folic acid while B12 is low (masking)",
+      "value": null,
+      "unit": "µg DFE/day",
+      "source": "NASEM 1998; EFSA 2023; NHS"
+    },
+    {
+      "profileId": "P34 Vegan diet",
+      "change": "No change; folate easy from pulses and greens, but B12 masking caution applies",
+      "value": null,
+      "unit": "µg DFE/day",
+      "source": "NIH ODS; IFCT 2017"
+    },
+    {
+      "profileId": "P33 Jain diet",
+      "change": "No change; replace beetroot, onion and garlic with pulses, permitted greens, okra, papaya, groundnut and sesame",
+      "value": null,
+      "unit": "µg DFE/day",
+      "source": "IFCT 2017"
+    },
+    {
+      "profileId": "P1 Type 2 diabetes",
+      "change": "No change found; metformin lowers B12 (masking caution); diabetes plus pregnancy planning needs doctor input (higher prescribed folic acid dose possible)",
+      "value": null,
+      "unit": "µg DFE/day",
+      "source": "NIH ODS; NHS"
+    },
+    {
+      "profileId": "P8 PCOS",
+      "change": "No change found; metformin users see B12 caution; if planning pregnancy, see P22",
+      "value": null,
+      "unit": "µg DFE/day",
+      "source": "NIH ODS"
+    },
+    {
+      "profileId": "P13 Chronic kidney disease (early stages)",
+      "change": "No change to food target; dialysis removes water-soluble vitamins; any supplement is doctor-guided; requires doctor input",
+      "value": null,
+      "unit": "µg DFE/day",
+      "source": "NIH ODS"
+    },
+    {
+      "profileId": "P21 Heart disease (after a cardiac event)",
+      "change": "No change found; folic acid lowers homocysteine but trials did not clearly reduce major vascular events",
+      "value": null,
+      "unit": "µg DFE/day",
+      "source": "Harvard Health; trial reviews seen via search"
+    },
+    {
+      "profileId": "P31 Healthy ageing (50+)",
+      "change": "No change (adult value kept); B12 absorption falls with age, show masking caution",
+      "value": null,
+      "unit": "µg DFE/day",
+      "source": "NASEM 1998; EFSA 2014"
+    },
+    {
+      "profileId": "P19 Celiac disease and gluten sensitivity",
+      "change": "No change in target; malabsorption can lower folate status, testing is for the doctor",
+      "value": null,
+      "unit": "µg DFE/day",
+      "source": "NIH ODS"
+    }
+  ],
+  "lastResearched": "2026-10-21",
+  "versions": [
+    {
+      "date": "2026-10-21",
+      "file": "FitPlate_Nutrients_2026-10-21.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3)",
+    "upperLimit": "official safety limit (D3, lower on conflict)",
+    "topFoodSources": "union; per100g official (D3)",
+    "logPresets": "union by label (newest), converted with own file factors",
+    "appDefaultTarget": "newest, kept only where it equals the ICMR row",
+    "lists": "union",
+    "warnings": "union (never dropped)",
+    "text": "newest"
+  },
+  "mergeNotes": [],
+  "needsReview": [
+    "2026-10-21 folate: \"group\" has unexpected value \"age_60_plus_male\"; treated as not found",
+    "2026-10-21 folate: \"group\" has unexpected value \"age_60_plus_female\"; treated as not found"
+  ]
+}
