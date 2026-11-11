@@ -16,39 +16,49 @@
         "avg": 260,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-09.md"
+      },
+      {
+        "date": "2026-11-11",
+        "min": 170,
+        "max": 290,
+        "avg": 235,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-11.md"
       }
     ],
     "currentEstimate": {
-      "min": 220,
-      "max": 300,
-      "avg": 260
+      "min": 205,
+      "max": 275,
+      "avg": 240
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-09",
+    "lastObserved": "2026-11-11",
     "stale": false,
     "seasonal": false,
-    "listingCount": 8,
+    "listingCount": 11,
     "platforms": [
       "BigBasket",
-      "Flipkart"
+      "Blinkit",
+      "Flipkart",
+      "Zepto"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 22,
-    "max": 30,
-    "avg": 26
+    "min": 20.5,
+    "max": 27.5,
+    "avg": 24
   },
   "seasonal": false,
   "nutritionPer100g": {
     "basis": "100g",
     "energyKcal": {
       "value": 534,
-      "source": "Other: pack label (Haldiram's Snacks Mixture, via nutriscan.app): Haldiram's Snacks Mixture per 100 g, nutriscan.app; no IFCT 2017 or USDA FDC entry found",
+      "source": "Other: FatSecret India (Haldiram's Mixture, label-style entry): FatSecret India Haldiram's Mixture 100 g (user-supplied, updated 4 Aug 2024)",
       "confidence": "Low"
     },
     "proteinG": {
@@ -62,9 +72,9 @@
       "confidence": "Low"
     },
     "sugarsG": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0.82,
+      "source": "Other: FatSecret India (Haldiram's Mixture, label-style entry): FatSecret India Haldiram's Mixture 100 g (user-supplied, updated 4 Aug 2024)",
+      "confidence": "Low"
     },
     "fatG": {
       "value": 33,
@@ -78,12 +88,12 @@
     },
     "fibreG": {
       "value": 4.2,
-      "source": "Other: pack label (Haldiram's Snacks Mixture, via nutriscan.app): Haldiram's Snacks Mixture per 100 g, nutriscan.app; no IFCT 2017 or USDA FDC entry found",
+      "source": "Other: FatSecret India (Haldiram's Mixture, label-style entry): FatSecret India Haldiram's Mixture 100 g (user-supplied, updated 4 Aug 2024)",
       "confidence": "Low"
     },
     "sodiumMg": {
       "value": 675,
-      "source": "Other: pack label (Haldiram's Snacks Mixture, via nutriscan.app): Haldiram's Snacks Mixture per 100 g, nutriscan.app; no IFCT 2017 or USDA FDC entry found",
+      "source": "Other: FatSecret India (Haldiram's Mixture, label-style entry): FatSecret India Haldiram's Mixture 100 g (user-supplied, updated 4 Aug 2024)",
       "confidence": "Low"
     },
     "ironMg": {
@@ -137,9 +147,9 @@
       "confidence": null
     },
     "transFatG": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "Other: FatSecret India (Haldiram's Mixture, label-style entry): FatSecret India Haldiram's Mixture 100 g (user-supplied, updated 4 Aug 2024)",
+      "confidence": "Low"
     },
     "mufaG": {
       "value": null,
@@ -228,39 +238,78 @@
     }
   },
   "macrosPer100Estimate": {
-    "kcal": 549,
-    "proteinG": null,
-    "carbsG": null,
-    "fatG": 35.5,
-    "fibreG": null
+    "kcal": 541.5,
+    "proteinG": 15.8,
+    "carbsG": 45.1,
+    "fatG": 34.4,
+    "fibreG": 4.2
   },
-  "storage": "Keep in an airtight jar or a tightly clipped pack at room temperature, away from heat and damp, and use within 2–3 weeks of opening. It goes soggy quickly in Mumbai humidity. Add to misal only at the table; it softens within minutes in the gravy.",
+  "storage": "Keep in an airtight tin or zip-lock pouch at room temperature away from damp; use within 2 to 3 weeks of opening, and re-crisp on a dry pan for a minute if it softens.",
   "looksLike": "A crunchy golden-yellow mix of deep-fried gram-flour (besan) pieces: thin and thick sev, gathiya, boondi, often with peanuts, fried dal, curry leaves and a dusting of chilli and salt. Mumbai \"misal farsan\" is a mostly sev-and-gathiya mix.",
-  "howToPick": null,
-  "shelfLife": "Packaged: usually 3–6 months sealed (check the pack). Loose shop farsan: about 2–4 weeks.",
+  "howToPick": "Look for a sealed, puffed pouch (nitrogen-flushed), crisp pieces, and a fresh fried smell. Avoid a stale, oily or rancid smell, soft or chewy pieces, or a torn pack.",
+  "shelfLife": "About 3 to 6 months sealed per typical pack labels (general guidance; not taken from a source in this run); eat within 2 to 3 weeks once opened.",
   "substitutes": [
     "Thick sev (gathiya/bhavnagri sev) alone",
     "Poha chivda",
-    "Roasted chana or puffed rice (kurmura)"
+    "Roasted chana or puffed rice (kurmura)",
+    "Plain thick sev (nylon or ratlami sev)",
+    "Crushed roasted peanuts or farali mixture"
   ],
-  "vendorListings": [],
+  "vendorListings": [
+    {
+      "vendor": "blinkit",
+      "product": "Haldiram's All In One Mixture",
+      "pack": "400 g",
+      "priceMinInr": 115,
+      "priceMaxInr": 115,
+      "observedOn": "2026-11-11"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Haldiram's Mixture",
+      "pack": "200 g",
+      "priceMinInr": 41,
+      "priceMaxInr": 41,
+      "observedOn": "2026-11-11"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Haldiram's Classic Mixture",
+      "pack": "400 g",
+      "priceMinInr": 82,
+      "priceMaxInr": 82,
+      "observedOn": "2026-11-11"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Haldiram's All In One Mixture",
+      "pack": "400 g",
+      "priceMinInr": 109,
+      "priceMaxInr": 109,
+      "observedOn": "2026-11-11"
+    }
+  ],
   "usedIn": [
     {
       "dishNumber": 29,
       "quantity": 25,
       "unit": "g",
-      "raw": "25 g (¼ cup), sprinkled on top at the table"
+      "raw": "25 g per serving (¼ cup), sprinkled on top of the misal"
     }
   ],
   "versions": [
     {
       "date": "2026-10-09",
       "file": "FitPlate_Ingredients_2026-10-09.md"
+    },
+    {
+      "date": "2026-11-11",
+      "file": "FitPlate_Ingredients_2026-11-11.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -271,6 +320,10 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 220.0–300.0 was wider than 30% of avg 260.0; narrowed to ±15%."
+    "Range 179.5–291.9 was wider than 30% of avg 239.7; narrowed to ±15%.",
+    "nutritionPer100g.proteinG: Conflict (2026-10-09: 15.8 vs 2026-11-11: 15.81); kept 2026-10-09, which cites the official table.",
+    "nutritionPer100g.carbsG: Conflict (2026-10-09: 45 vs 2026-11-11: 45.11); kept 2026-10-09, which cites the official table.",
+    "nutritionPer100g.fatG: Conflict (2026-10-09: 33 vs 2026-11-11: 33.27); kept 2026-10-09, which cites the official table.",
+    "nutritionPer100g.saturatedFatG: Conflict (2026-10-09: 13 vs 2026-11-11: 13.2); kept 2026-10-09, which cites the official table."
   ]
 }

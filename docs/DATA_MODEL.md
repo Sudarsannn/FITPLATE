@@ -58,6 +58,7 @@ Types live in `src/models/`; versions and migrations in `src/services/storage/sc
 | `users/{uid}/mealLogs/{id}` | One meal eaten | 1 | Day 3 | `dishId` |
 | `users/{uid}/waterLogs/water-YYYY-MM-DD` | Glasses of water for one day (one document per day) | 1 | Day 3 | — |
 | `users/{uid}/supplementLogs/{id}` | Supplement taken | 1 | Day 3 | `nutrientId` |
+| `users/{uid}/routines/{id}` | Your own workout routine: name, ordered moves, days of the week (editable, not append-only) | 1 | Day 23 | `items[].exerciseId` |
 | `users/{uid}/workoutLogs/{id}` | One workout | 1 | Day 3 | `exerciseId` |
 | `users/{uid}/favourites/{dishId}` | Saved dish | 1 | Day 3 | `dishId` |
 | `users/{uid}/mealPlans/YYYY-MM-DD` | Planned dishes for one day | 1 | Day 3 | `dishId` |
@@ -77,6 +78,7 @@ Types live in `src/models/`; versions and migrations in `src/services/storage/sc
 - **mealLogs**: `name`, `emoji`, `dishId` (null for quick/custom), `source` 'dish'|'quick'|'custom', `kcal`, `proteinG`, `fibreG`, `cooked` (made at home).
 - **waterLogs**: `glasses`.
 - **supplementLogs**: `name`, `nutrientId`|null, `dose`|null, `unit`|null.
+- **routines** (Day 23): `name`, `items[]` of `{exerciseId, minutes?}`, `days[]` (0 = Sunday). Prebuilt routines are code, not documents.
 - **workoutLogs**: `type`, `exerciseId`|null, `minutes`, `kcal` (estimate).
 - **favourites**: `dishId`.
 - **mealPlans**: `dateKey`, `slots` { breakfast?, lunch?, dinner? } → dish ids.
@@ -127,3 +129,5 @@ Spark allows about 20,000 writes and 50,000 reads a day. Writes are batched and 
 - 2026-10-23 (Day 09): `shoppingLists` items may carry an optional `more` list (amounts in a unit that cannot be added to the main one, e.g. "2 small" beside "150 g"); `quantity`/`unit` are now folded to g or ml (kg, l and cups convert). Optional field, older lists read unchanged: no `schemaVersion` bump, no rules change. Bundled `Ingredient` gained `looksLike`, `howToPick` and `shelfLife` from the ingredient research (Basics and Buying guide).
 - 2026-10-24 (Day 10): no Firestore change. "Works with my kitchen", missing-item notes and beginner tips read existing fields (`profile.equipmentOwned`, `profile.level`); the beginner-tips switch is stored as `settings.featureToggles.beginnerTips` (existing map). Bundled research gained nutrients calcium and phosphorus, the high-triglycerides profile and 4 exercises.
 - 2026-10-24 (My Meals): `mealLogs` gain optional `how` ('cooked' | 'ordered' | 'logged'), `costInr`, `orderInr`, `servings`. Older logs have none of them and read as cooked when `cooked`, else logged. Time of day (breakfast / lunch / snacks / dinner) is worked out from `timestamp`, not stored. Additive and optional, so no migration.
+
+- 2026-11-11 (Day 23): `routines` collection (v1). Editable, so it is not in APPEND_ONLY and firestore.rules needs no change.

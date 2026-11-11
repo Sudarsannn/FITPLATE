@@ -15,41 +15,49 @@
         "avg": 140,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-09.md"
+      },
+      {
+        "date": "2026-11-11",
+        "min": 160,
+        "max": 200,
+        "avg": 185,
+        "confidence": "High",
+        "sourceFile": "FitPlate_Ingredients_2026-11-11.md"
       }
     ],
     "currentEstimate": {
-      "min": 120,
-      "max": 160,
-      "avg": 140
+      "min": 150,
+      "max": 190,
+      "avg": 175
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-09",
+    "lastObserved": "2026-11-11",
     "stale": false,
     "seasonal": false,
-    "listingCount": 2,
+    "listingCount": 4,
     "platforms": [
       "BigBasket",
+      "Flipkart",
+      "Healthy Buddha",
       "StoreKing"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 2 listings back the range (need 3)"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 12,
-    "max": 16,
-    "avg": 14
+    "min": 15,
+    "max": 19,
+    "avg": 17.5
   },
   "seasonal": false,
   "nutritionPer100g": {
     "basis": "100g",
     "energyKcal": {
       "value": 343,
-      "source": "USDA FDC: FDC ID 172425, Mothbeans, mature seeds, raw (SR Legacy), via secondary sites; calcium, magnesium, zinc and saturated fat converted from per-cup (196 g) values",
+      "source": "USDA FDC: USDA FDC 172425 'Mothbeans, mature seeds, raw' via happyforks.com, myfooddata.com and other mirrors; zero by composition: cholesterol_mg, vitamin_b12_ug; folate as listed (DFE not stated)",
       "confidence": "Medium"
     },
     "proteinG": {
@@ -84,7 +92,7 @@
     },
     "sodiumMg": {
       "value": 30,
-      "source": "USDA FDC: FDC ID 172425, Mothbeans, mature seeds, raw (SR Legacy), via secondary sites; calcium, magnesium, zinc and saturated fat converted from per-cup (196 g) values",
+      "source": "USDA FDC: USDA FDC 172425 'Mothbeans, mature seeds, raw' via happyforks.com, myfooddata.com and other mirrors; zero by composition: cholesterol_mg, vitamin_b12_ug; folate as listed (DFE not stated)",
       "confidence": "Medium"
     },
     "ironMg": {
@@ -109,7 +117,7 @@
     },
     "zincMg": {
       "value": 1.9,
-      "source": "USDA FDC: FDC ID 172425, Mothbeans, mature seeds, raw (SR Legacy), via secondary sites; calcium, magnesium, zinc and saturated fat converted from per-cup (196 g) values",
+      "source": "USDA FDC: USDA FDC 172425 'Mothbeans, mature seeds, raw' via happyforks.com, myfooddata.com and other mirrors; zero by composition: cholesterol_mg, vitamin_b12_ug; folate as listed (DFE not stated)",
       "confidence": "Medium"
     },
     "vitaminCMg": {
@@ -124,7 +132,7 @@
     },
     "folateUgDfe": {
       "value": 649,
-      "source": "USDA FDC: FDC ID 172425, Mothbeans, mature seeds, raw (SR Legacy), via secondary sites; calcium, magnesium, zinc and saturated fat converted from per-cup (196 g) values",
+      "source": "USDA FDC: USDA FDC 172425 'Mothbeans, mature seeds, raw' via happyforks.com, myfooddata.com and other mirrors; zero by composition: cholesterol_mg, vitamin_b12_ug; folate as listed (DFE not stated)",
       "confidence": "Medium"
     },
     "waterG": {
@@ -133,9 +141,9 @@
       "confidence": null
     },
     "cholesterolMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 172425 'Mothbeans, mature seeds, raw' via happyforks.com, myfooddata.com and other mirrors; zero by composition: cholesterol_mg, vitamin_b12_ug; folate as listed (DFE not stated)",
+      "confidence": "Medium"
     },
     "transFatG": {
       "value": null,
@@ -163,24 +171,24 @@
       "confidence": null
     },
     "phosphorusMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 489,
+      "source": "USDA FDC: USDA FDC 172425 'Mothbeans, mature seeds, raw' via happyforks.com, myfooddata.com and other mirrors; zero by composition: cholesterol_mg, vitamin_b12_ug; folate as listed (DFE not stated)",
+      "confidence": "Medium"
     },
     "seleniumUg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 8.2,
+      "source": "USDA FDC: USDA FDC 172425 'Mothbeans, mature seeds, raw' via happyforks.com, myfooddata.com and other mirrors; zero by composition: cholesterol_mg, vitamin_b12_ug; folate as listed (DFE not stated)",
+      "confidence": "Medium"
     },
     "copperMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0.688,
+      "source": "USDA FDC: USDA FDC 172425 'Mothbeans, mature seeds, raw' via happyforks.com, myfooddata.com and other mirrors; zero by composition: cholesterol_mg, vitamin_b12_ug; folate as listed (DFE not stated)",
+      "confidence": "Medium"
     },
     "manganeseMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 1.82,
+      "source": "USDA FDC: USDA FDC 172425 'Mothbeans, mature seeds, raw' via happyforks.com, myfooddata.com and other mirrors; zero by composition: cholesterol_mg, vitamin_b12_ug; folate as listed (DFE not stated)",
+      "confidence": "Medium"
     },
     "iodineUg": {
       "value": null,
@@ -223,26 +231,29 @@
       "confidence": null
     },
     "vitaminB12Ug": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 172425 'Mothbeans, mature seeds, raw' via happyforks.com, myfooddata.com and other mirrors; zero by composition: cholesterol_mg, vitamin_b12_ug; folate as listed (DFE not stated)",
+      "confidence": "Medium"
     }
   },
   "macrosPer100Estimate": {
-    "kcal": 672,
-    "proteinG": null,
-    "carbsG": null,
-    "fatG": null,
+    "kcal": 343,
+    "proteinG": 22.9,
+    "carbsG": 61.5,
+    "fatG": 1.6,
     "fibreG": null
   },
-  "storage": "Dry beans: airtight jar at room temperature, away from damp, 6–12 months. Sprouts: in a covered box lined with a paper towel in the fridge, 2–3 days. Cook (do not eat raw) if they smell sour or feel slimy, and throw them away if they do.",
-  "looksLike": "Tiny oblong beans about the size of a rice grain, light brown to beige, often with a slightly mottled skin. After 1–2 days of soaking and sprouting they grow short white tails.",
-  "howToPick": null,
-  "shelfLife": "About 6–12 months dry in a sealed pack. Sprouts last only 2–3 days.",
+  "storage": "Airtight jar in a cool, dry cupboard for 6 to 12 months. Sprouted matki keeps 2 to 3 days in the fridge in a lidded box.",
+  "looksLike": "Tiny, oval, brownish-beige beans about the size of a rice grain, smaller than moong. They sprout quickly into beans with a short white tail.",
+  "howToPick": "Look for small, clean, uniform brown beans with no holes, no dust and no musty smell. Old stock sprouts poorly, so ask for a recent pack if you plan to sprout.",
+  "shelfLife": "About 6 to 12 months in a sealed pack (check the best-before date).",
   "substitutes": [
     "Whole green moong (sabut moong)",
     "Mixed sprouts (moong, matki, chana)",
-    "Dried white peas (safed vatana)"
+    "Dried white peas (safed vatana)",
+    "Moong (whole green)",
+    "Kala chana or whole masoor sprouts",
+    "Store-bought matki sprouts"
   ],
   "vendorListings": [],
   "usedIn": [
@@ -250,17 +261,21 @@
       "dishNumber": 29,
       "quantity": 30,
       "unit": "g",
-      "raw": "30 g dry (2½ tbsp), giving about 80 g sprouts for the usal"
+      "raw": "30 g dry moth beans (matki) per serving (about 2½ tbsp), sprouted to about 80 g of sprouts"
     }
   ],
   "versions": [
     {
       "date": "2026-10-09",
       "file": "FitPlate_Ingredients_2026-10-09.md"
+    },
+    {
+      "date": "2026-11-11",
+      "file": "FitPlate_Ingredients_2026-11-11.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (wma)",
     "macrosPer100Estimate": "stable (single)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
@@ -270,5 +285,11 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "macrosPer100Estimate.kcal: Versions 2026-10-09 (672) and 2026-11-11 (343) differ by more than 25%; kept the newer.",
+    "nutritionPer100g.proteinG: Conflict (2026-10-09: 22.9 vs 2026-11-11: 22.94); both cite the official table, kept the previous value.",
+    "nutritionPer100g.carbsG: Conflict (2026-10-09: 61.5 vs 2026-11-11: 61.52); both cite the official table, kept the previous value.",
+    "nutritionPer100g.fatG: Conflict (2026-10-09: 1.6 vs 2026-11-11: 1.61); both cite the official table, kept the previous value.",
+    "nutritionPer100g.potassiumMg: Conflict (2026-10-09: 1191 vs 2026-11-11: 1190); both cite the official table, kept the previous value."
+  ]
 }

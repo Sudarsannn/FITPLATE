@@ -1,4 +1,5 @@
 import type { BaseDoc, DateKey, Doc } from '../models/common';
+import type { Routine } from '../models/routine';
 import type { Favourite, MealLog, MealPlanDay, SavingEntry, SupplementLog, WaterLog, WorkoutLog } from '../models/logs';
 import { DEFAULT_SETTINGS, type CookCompletion, type DishRating, type ShoppingList, type UserSettings, type WeightLog } from '../models/prefs';
 import { withSurveyDefaults } from '../models/survey';
@@ -38,6 +39,8 @@ export type UserDocs = {
   cookCompletions: Record<string, Doc<CookCompletion>>;
   /** Day 18: supplements the user logged. */
   supplementLogs: Record<string, Doc<SupplementLog>>;
+  /** Day 23: the user's own workout routines. */
+  routines: Record<string, Doc<Routine>>;
 };
 
 /** Id of the one settings document. */
@@ -56,6 +59,7 @@ const LIST_COLLECTIONS: readonly ListCollection[] = [
   'ratings',
   'cookCompletions',
   'supplementLogs',
+  'routines',
 ];
 
 export const EMPTY_DOCS: UserDocs = {
@@ -72,6 +76,7 @@ export const EMPTY_DOCS: UserDocs = {
   ratings: {},
   cookCompletions: {},
   supplementLogs: {},
+  routines: {},
 };
 
 /** Set once the guest store on this device has been migrated from the demo blob, or seeded. */
@@ -87,7 +92,7 @@ export const dateKeyOf = (t: number): DateKey => {
 };
 
 export async function loadDocs(repos: Repositories): Promise<UserDocs> {
-  const [profile, mealLogs, waterLogs, workoutLogs, favourites, mealPlans, savings, settings, shoppingLists, weightLogs, ratings, cookCompletions, supplementLogs] =
+  const [profile, mealLogs, waterLogs, workoutLogs, favourites, mealPlans, savings, settings, shoppingLists, weightLogs, ratings, cookCompletions, supplementLogs, routines] =
     await Promise.all([
       repos.profile.get(PROFILE_ID),
       repos.mealLogs.list(),
@@ -102,6 +107,7 @@ export async function loadDocs(repos: Repositories): Promise<UserDocs> {
       repos.ratings.list(),
       repos.cookCompletions.list(),
       repos.supplementLogs.list(),
+      repos.routines.list(),
     ]);
   return {
     profile,
@@ -117,6 +123,7 @@ export async function loadDocs(repos: Repositories): Promise<UserDocs> {
     ratings: byId(ratings),
     cookCompletions: byId(cookCompletions),
     supplementLogs: byId(supplementLogs),
+    routines: byId(routines),
   };
 }
 
@@ -483,6 +490,21 @@ export function createUserSession(
       put('shoppingLists', doc);
       enqueue(() => repos.shoppingLists.upsert(listId, list));
       return listId;
+    },
+
+    saveRoutine(routine: Routine, id?: string): string {
+      const t = now();
+      const rid = id ?? makeId(t);
+      const current = docs.routines[rid];
+      put('routines', { ...(current ?? base(rid, 'routines', t)), ...routine, updatedAt: current ? Math.max(t, current.updatedAt + 1) : t });
+      enqueue(() => repos.routines.upsert(rid, routine));
+      return rid;
+    },
+
+    removeRoutine(id: string) {
+      if (!docs.routines[id]) return;
+      drop('routines', id);
+      enqueue(() => repos.routines.remove(id));
     },
 
     removeShoppingList(id: string) {

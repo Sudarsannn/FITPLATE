@@ -1,3 +1,4 @@
+import type { Routine } from '../../models/routine';
 import type { Favourite, MealLog, MealPlanDay, SavingEntry, SupplementLog, WaterLog, WorkoutLog } from '../../models/logs';
 import type { CookCompletion, DishRating, ShoppingList, UserSettings, WeightLog } from '../../models/prefs';
 import type { UserProfile } from '../../models/user';
@@ -32,6 +33,7 @@ export function createRepositories(store: DocStore, deps: RepoDeps = {}) {
     weightLogs: createRepository<WeightLog>(store, SCHEMAS.weightLogs, deps),
     ratings: createRepository<DishRating>(store, SCHEMAS.ratings, deps),
     cookCompletions: createRepository<CookCompletion>(store, SCHEMAS.cookCompletions, deps),
+    routines: createRepository<Routine>(store, SCHEMAS.routines, deps),
   };
 }
 

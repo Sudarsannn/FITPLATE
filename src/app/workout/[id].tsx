@@ -5,6 +5,7 @@ import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import Animated, { FadeIn as RFadeIn } from 'react-native-reanimated';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { exerciseById, liveItems, resolveRoutine, startParams } from '../../services/routines';
 import { ScreenTop } from '../../components/vendors/kit';
 import { GuideCard } from '../../components/Guide';
 import { Celebrate } from '../../components/Icon';
@@ -25,7 +26,7 @@ import { colors, radius, type } from '../../theme';
  * spent can be logged, so the calories burnt reach Today.
  */
 export default function WorkoutScreen() {
-  const { id, minutes } = useLocalSearchParams<{ id: string; minutes?: string }>();
+  const { id, minutes, routine, at } = useLocalSearchParams<{ id: string; minutes?: string; routine?: string; at?: string }>();
   const e = researchExercises.find((x) => x.id === id);
   if (!e) {
     return (
@@ -38,11 +39,14 @@ export default function WorkoutScreen() {
       </SafeAreaView>
     );
   }
-  return <Player e={e} target={Number(minutes) || null} />;
+  return <Player e={e} target={Number(minutes) || null} routine={routine ? { id: routine, at: Number(at) || 0 } : null} />;
 }
 
-function Player({ e, target }: { e: Exercise; target: number | null }) {
-  const { bodyWeightKg, logWorkout } = useStore();
+function Player({ e, target, routine }: { e: Exercise; target: number | null; routine: { id: string; at: number } | null }) {
+  const { bodyWeightKg, logWorkout, routines } = useStore();
+  const rt = routine ? resolveRoutine(routine.id, routines.map((r) => ({ id: r.id, routine: r }))) : null;
+  const rItems = rt ? liveItems(rt.routine) : [];
+  const nextAt = routine && routine.at + 1 < rItems.length ? routine.at + 1 : null;
   const phases = useMemo(() => workoutPhases(e, target), [e, target]);
   const [at, setAt] = useState(-1); // -1 = before starting
   const [left, setLeft] = useState(0);
@@ -119,6 +123,17 @@ function Player({ e, target }: { e: Exercise; target: number | null }) {
                 success();
               }}
             />
+          ) : null}
+          {rt && routine ? (
+            nextAt != null ? (
+              <GradientButton
+                title={`Next: ${shortExerciseName(exerciseById(rItems[nextAt].exerciseId)?.name ?? 'move')} (${nextAt + 1} of ${rItems.length})`}
+                style={{ alignSelf: 'stretch', marginTop: 12 }}
+                onPress={() => router.replace({ pathname: '/workout/[id]', params: startParams(routine.id, rItems, nextAt) })}
+              />
+            ) : (
+              <Text style={[type.body, { color: colors.accent, fontWeight: '800', marginTop: 14 }]}>Routine finished: {rt.routine.name}</Text>
+            )
           ) : null}
           <View style={styles.links}>
             <LinkPill icon="home" label="Today" onPress={() => router.replace('/(tabs)')} />

@@ -132,6 +132,6 @@ describe('openUserData', () => {
 
   it('builds one repository per collection', () => {
     const repos = createRepositories(createLocalDocStore(memoryKeyValueStore(), 'guest'));
-    expect(Object.keys(repos).sort()).toEqual(['cookCompletions', 'favourites', 'mealLogs', 'mealPlans', 'profile', 'ratings', 'savings', 'settings', 'shoppingLists', 'supplementLogs', 'waterLogs', 'weightLogs', 'workoutLogs']);
+    expect(Object.keys(repos).sort()).toEqual(['cookCompletions', 'favourites', 'mealLogs', 'mealPlans', 'profile', 'ratings', 'routines', 'savings', 'settings', 'shoppingLists', 'supplementLogs', 'waterLogs', 'weightLogs', 'workoutLogs']);
   });
 });

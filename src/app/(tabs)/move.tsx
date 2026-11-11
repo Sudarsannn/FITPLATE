@@ -12,6 +12,7 @@ import { WeekBars } from '../../components/viz';
 import type { ExerciseSection } from '../../models/exercise';
 import { lastSevenDaysActivity } from '../../services/activity';
 import { bySection, doseLabel, kcalPer10, musclesLine, prescriptionFor, SECTION_ICON, SECTION_LABEL, shortExerciseName } from '../../services/fitness';
+import { scheduledOn } from '../../services/routines';
 import { byNumber, exerciseDoc, exerciseFilterGroups } from '../../services/exerciseLibrary';
 import { activeCount, runSearch, toggle, type Selection } from '../../services/search';
 import { colors, radius, type } from '../../theme';
@@ -25,7 +26,9 @@ const SECTION_BLURB: Record<ExerciseSection, string> = {
 
 /** The Move tab: the fitness research library, grouped Home / Yoga & stretch / Gym, plus gym know-how guides. */
 export default function Move() {
-  const { days, bodyWeightKg, profile } = useStore();
+  const { days, bodyWeightKg, profile, routines } = useStore();
+  const [today] = useState(() => new Date().getDay());
+  const todays = scheduledOn(today, routines.map((r) => ({ id: r.id, routine: r })));
   const week = lastSevenDaysActivity(days);
   const dates = Array.from({ length: 7 }, (_, i) => addDays(new Date(), i - 6));
   const [query, setQuery] = useState('');
@@ -74,6 +77,24 @@ export default function Move() {
             <GradientButton title="Log a workout" onPress={() => router.push({ pathname: '/log', params: { tab: 'exercise' } })} style={{ marginTop: 14 }} />
           </Glass>
         </FadeIn>
+
+        {featureFlags.routines ? (
+          <FadeIn i={2}>
+            <Glass style={{ marginTop: 14 }}>
+              <Text style={styles.label}>Routines</Text>
+              {todays.length ? (
+                todays.map((r) => (
+                  <PressableScale key={r.id} onPress={() => router.push({ pathname: '/routine/[id]', params: { id: r.id } })} style={{ paddingVertical: 6 }} accessibilityLabel={`Today: ${r.name}`}>
+                    <Text style={[type.body, { color: colors.text, fontWeight: '800' }]}>Today: {r.name}</Text>
+                  </PressableScale>
+                ))
+              ) : (
+                <Text style={[type.body, { color: colors.muted }]}>Several moves in one go: 15 minutes at home, a desk break, morning yoga or a beginner gym plan.</Text>
+              )}
+              <GradientButton title="See routines" variant="glass" onPress={() => router.push('/routines')} style={{ marginTop: 12 }} />
+            </Glass>
+          </FadeIn>
+        ) : null}
 
         {featureFlags.exerciseSearch ? (
           <FadeIn i={2}>

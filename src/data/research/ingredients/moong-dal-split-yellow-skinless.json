@@ -15,39 +15,49 @@
         "avg": 175,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-09.md"
+      },
+      {
+        "date": "2026-11-11",
+        "min": 150,
+        "max": 180,
+        "avg": 165,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-11.md"
       }
     ],
     "currentEstimate": {
       "min": 150,
-      "max": 200,
-      "avg": 175
+      "max": 190,
+      "avg": 170
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-09",
+    "lastObserved": "2026-11-11",
     "stale": false,
     "seasonal": false,
-    "listingCount": 5,
+    "listingCount": 2,
     "platforms": [
       "BigBasket",
-      "Flipkart"
+      "Blinkit"
     ],
     "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "confirmed": false,
+    "checkNotes": [
+      "only 2 listings back the range (need 3)"
+    ]
   },
   "per100Estimate": {
     "min": 15,
-    "max": 20,
-    "avg": 17.5
+    "max": 19,
+    "avg": 17
   },
   "seasonal": false,
   "nutritionPer100g": {
     "basis": "100g",
     "energyKcal": {
       "value": 347,
-      "source": "USDA FDC: FDC ID 174256, Mung beans, mature seeds, raw (SR Legacy; whole seed used as proxy for split dal), via secondary sites",
+      "source": "USDA FDC: USDA FDC 'Mung beans, mature seeds, raw' (whole seed; FDC ID not confirmed) via happyforks.com, nutritionadvance.com and triagemethod.com; used as the nearest match for split skinned dal; zero by composition: cholesterol_mg, vitamin_b12_ug; folate as listed (DFE not stated)",
       "confidence": "Medium"
     },
     "proteinG": {
@@ -77,37 +87,37 @@
     },
     "fibreG": {
       "value": 16.3,
-      "source": "USDA FDC: FDC ID 174256, Mung beans, mature seeds, raw (SR Legacy; whole seed used as proxy for split dal), via secondary sites",
+      "source": "USDA FDC: USDA FDC 'Mung beans, mature seeds, raw' (whole seed; FDC ID not confirmed) via happyforks.com, nutritionadvance.com and triagemethod.com; used as the nearest match for split skinned dal; zero by composition: cholesterol_mg, vitamin_b12_ug; folate as listed (DFE not stated)",
       "confidence": "Medium"
     },
     "sodiumMg": {
       "value": 15,
-      "source": "USDA FDC: FDC ID 174256, Mung beans, mature seeds, raw (SR Legacy; whole seed used as proxy for split dal), via secondary sites",
+      "source": "USDA FDC: USDA FDC 'Mung beans, mature seeds, raw' (whole seed; FDC ID not confirmed) via happyforks.com, nutritionadvance.com and triagemethod.com; used as the nearest match for split skinned dal; zero by composition: cholesterol_mg, vitamin_b12_ug; folate as listed (DFE not stated)",
       "confidence": "Medium"
     },
     "ironMg": {
       "value": 6.7,
-      "source": "USDA FDC: FDC ID 174256, Mung beans, mature seeds, raw (SR Legacy; whole seed used as proxy for split dal), via secondary sites",
+      "source": "USDA FDC: USDA FDC 'Mung beans, mature seeds, raw' (whole seed; FDC ID not confirmed) via happyforks.com, nutritionadvance.com and triagemethod.com; used as the nearest match for split skinned dal; zero by composition: cholesterol_mg, vitamin_b12_ug; folate as listed (DFE not stated)",
       "confidence": "Medium"
     },
     "calciumMg": {
       "value": 132,
-      "source": "USDA FDC: FDC ID 174256, Mung beans, mature seeds, raw (SR Legacy; whole seed used as proxy for split dal), via secondary sites",
+      "source": "USDA FDC: USDA FDC 'Mung beans, mature seeds, raw' (whole seed; FDC ID not confirmed) via happyforks.com, nutritionadvance.com and triagemethod.com; used as the nearest match for split skinned dal; zero by composition: cholesterol_mg, vitamin_b12_ug; folate as listed (DFE not stated)",
       "confidence": "Medium"
     },
     "potassiumMg": {
       "value": 1246,
-      "source": "USDA FDC: FDC ID 174256, Mung beans, mature seeds, raw (SR Legacy; whole seed used as proxy for split dal), via secondary sites",
+      "source": "USDA FDC: USDA FDC 'Mung beans, mature seeds, raw' (whole seed; FDC ID not confirmed) via happyforks.com, nutritionadvance.com and triagemethod.com; used as the nearest match for split skinned dal; zero by composition: cholesterol_mg, vitamin_b12_ug; folate as listed (DFE not stated)",
       "confidence": "Medium"
     },
     "magnesiumMg": {
       "value": 189,
-      "source": "USDA FDC: FDC ID 174256, Mung beans, mature seeds, raw (SR Legacy; whole seed used as proxy for split dal), via secondary sites",
+      "source": "USDA FDC: USDA FDC 'Mung beans, mature seeds, raw' (whole seed; FDC ID not confirmed) via happyforks.com, nutritionadvance.com and triagemethod.com; used as the nearest match for split skinned dal; zero by composition: cholesterol_mg, vitamin_b12_ug; folate as listed (DFE not stated)",
       "confidence": "Medium"
     },
     "zincMg": {
       "value": 2.7,
-      "source": "USDA FDC: FDC ID 174256, Mung beans, mature seeds, raw (SR Legacy; whole seed used as proxy for split dal), via secondary sites",
+      "source": "USDA FDC: USDA FDC 'Mung beans, mature seeds, raw' (whole seed; FDC ID not confirmed) via happyforks.com, nutritionadvance.com and triagemethod.com; used as the nearest match for split skinned dal; zero by composition: cholesterol_mg, vitamin_b12_ug; folate as listed (DFE not stated)",
       "confidence": "Medium"
     },
     "vitaminCMg": {
@@ -122,7 +132,7 @@
     },
     "folateUgDfe": {
       "value": 625,
-      "source": "USDA FDC: FDC ID 174256, Mung beans, mature seeds, raw (SR Legacy; whole seed used as proxy for split dal), via secondary sites",
+      "source": "USDA FDC: USDA FDC 'Mung beans, mature seeds, raw' (whole seed; FDC ID not confirmed) via happyforks.com, nutritionadvance.com and triagemethod.com; used as the nearest match for split skinned dal; zero by composition: cholesterol_mg, vitamin_b12_ug; folate as listed (DFE not stated)",
       "confidence": "Medium"
     },
     "waterG": {
@@ -131,9 +141,9 @@
       "confidence": null
     },
     "cholesterolMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 'Mung beans, mature seeds, raw' (whole seed; FDC ID not confirmed) via happyforks.com, nutritionadvance.com and triagemethod.com; used as the nearest match for split skinned dal; zero by composition: cholesterol_mg, vitamin_b12_ug; folate as listed (DFE not stated)",
+      "confidence": "Medium"
     },
     "transFatG": {
       "value": null,
@@ -161,24 +171,24 @@
       "confidence": null
     },
     "phosphorusMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 367,
+      "source": "USDA FDC: USDA FDC 'Mung beans, mature seeds, raw' (whole seed; FDC ID not confirmed) via happyforks.com, nutritionadvance.com and triagemethod.com; used as the nearest match for split skinned dal; zero by composition: cholesterol_mg, vitamin_b12_ug; folate as listed (DFE not stated)",
+      "confidence": "Medium"
     },
     "seleniumUg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 8.2,
+      "source": "USDA FDC: USDA FDC 'Mung beans, mature seeds, raw' (whole seed; FDC ID not confirmed) via happyforks.com, nutritionadvance.com and triagemethod.com; used as the nearest match for split skinned dal; zero by composition: cholesterol_mg, vitamin_b12_ug; folate as listed (DFE not stated)",
+      "confidence": "Medium"
     },
     "copperMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0.94,
+      "source": "USDA FDC: USDA FDC 'Mung beans, mature seeds, raw' (whole seed; FDC ID not confirmed) via happyforks.com, nutritionadvance.com and triagemethod.com; used as the nearest match for split skinned dal; zero by composition: cholesterol_mg, vitamin_b12_ug; folate as listed (DFE not stated)",
+      "confidence": "Medium"
     },
     "manganeseMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 1,
+      "source": "USDA FDC: USDA FDC 'Mung beans, mature seeds, raw' (whole seed; FDC ID not confirmed) via happyforks.com, nutritionadvance.com and triagemethod.com; used as the nearest match for split skinned dal; zero by composition: cholesterol_mg, vitamin_b12_ug; folate as listed (DFE not stated)",
+      "confidence": "Medium"
     },
     "iodineUg": {
       "value": null,
@@ -221,39 +231,60 @@
       "confidence": null
     },
     "vitaminB12Ug": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 'Mung beans, mature seeds, raw' (whole seed; FDC ID not confirmed) via happyforks.com, nutritionadvance.com and triagemethod.com; used as the nearest match for split skinned dal; zero by composition: cholesterol_mg, vitamin_b12_ug; folate as listed (DFE not stated)",
+      "confidence": "Medium"
     }
   },
-  "macrosPer100Estimate": null,
-  "storage": "Airtight steel, glass or plastic jar at room temperature, away from damp: up to 6 months after opening. A few dried red chillies or bay leaves in the jar help keep weevils away; in humid monsoon months, keep large stock in the fridge. Soaked dal: use the same day, or keep covered in the fridge for up to 1 day. Ground chilla batter keeps 1–2 days in the fridge.",
-  "looksLike": "Small, flat, pale-yellow half-seeds, a little smaller than a lentil, with no green skin left on. They soften quickly when soaked and cook to a creamy mush.",
-  "howToPick": null,
-  "shelfLife": "About 6–12 months in a sealed pack (check the best-before date).",
+  "macrosPer100Estimate": {
+    "kcal": 347,
+    "proteinG": 23.9,
+    "carbsG": null,
+    "fatG": null,
+    "fibreG": 16.3
+  },
+  "storage": "Airtight jar in a cool, dry cupboard for 6 to 12 months. In Mumbai's monsoon keep it dry and away from sunlight. Soaked or ground batter keeps about 1 day in the fridge.",
+  "looksLike": "Small, flat, pale-yellow half-beans with the green skin removed. They cook soft and creamy and turn a deeper yellow.",
+  "howToPick": "Even, pale-yellow split dal with no green or dark bits, no dust, no holes and no musty smell. Dull or mixed colours suggest old or blended stock.",
+  "shelfLife": "About 6 to 12 months in a sealed pack (check the best-before date).",
   "substitutes": [
     "Moong chilka (split green moong with skin)",
     "Whole green moong (sabut moong)",
-    "Besan (gram flour)"
+    "Besan (gram flour)",
+    "Moong dal with skin (chilka)",
+    "Masoor dal (split red)"
   ],
-  "vendorListings": [],
+  "vendorListings": [
+    {
+      "vendor": "blinkit",
+      "product": "Tata Sampann Unpolished Moong Dal Split",
+      "pack": "1 kg",
+      "priceMinInr": 164,
+      "priceMaxInr": 164,
+      "observedOn": "2026-11-11"
+    }
+  ],
   "usedIn": [
     {
       "dishNumber": 26,
       "quantity": 50,
       "unit": "g",
-      "raw": "50 g dry (¼ cup; about 100–110 g after soaking)"
+      "raw": "50 g dry split yellow moong dal per serving (about ¼ cup; 100–110 g after soaking)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-09",
       "file": "FitPlate_Ingredients_2026-10-09.md"
+    },
+    {
+      "date": "2026-11-11",
+      "file": "FitPlate_Ingredients_2026-11-11.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (none)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (single)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -262,5 +293,7 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "nutritionPer100g.proteinG: Conflict (2026-10-09: 23.9 vs 2026-11-11: 23.86); both cite the official table, kept the previous value."
+  ]
 }

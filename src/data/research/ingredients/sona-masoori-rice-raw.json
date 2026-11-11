@@ -15,17 +15,25 @@
         "avg": 70,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-09.md"
+      },
+      {
+        "date": "2026-11-11",
+        "min": 55,
+        "max": 100,
+        "avg": 70,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-11.md"
       }
     ],
     "currentEstimate": {
-      "min": 65,
-      "max": 80,
+      "min": 60,
+      "max": 81,
       "avg": 70
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-09",
+    "lastObserved": "2026-11-11",
     "stale": false,
     "seasonal": false,
     "listingCount": 5,
@@ -38,8 +46,8 @@
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 6.5,
-    "max": 8,
+    "min": 6,
+    "max": 8.1,
     "avg": 7
   },
   "seasonal": false,
@@ -47,7 +55,7 @@
     "basis": "100g",
     "energyKcal": {
       "value": 360,
-      "source": "USDA FDC: FDC ID 169760, Rice, white, medium-grain, raw, unenriched (SR Legacy), via secondary site",
+      "source": "USDA FDC: USDA FDC 'Rice, white, medium-grain, raw, unenriched' (FDC ID not confirmed) via happyforks.com; used as the nearest match for sona masoori; zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "proteinG": {
@@ -121,9 +129,9 @@
       "confidence": null
     },
     "folateUgDfe": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 9,
+      "source": "USDA FDC: USDA FDC 'Rice, white, medium-grain, raw, unenriched' (FDC ID not confirmed) via happyforks.com; used as the nearest match for sona masoori; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "waterG": {
       "value": null,
@@ -131,9 +139,9 @@
       "confidence": null
     },
     "cholesterolMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 'Rice, white, medium-grain, raw, unenriched' (FDC ID not confirmed) via happyforks.com; used as the nearest match for sona masoori; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "transFatG": {
       "value": null,
@@ -166,9 +174,9 @@
       "confidence": null
     },
     "seleniumUg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 15.1,
+      "source": "USDA FDC: USDA FDC 'Rice, white, medium-grain, raw, unenriched' (FDC ID not confirmed) via happyforks.com; used as the nearest match for sona masoori; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "copperMg": {
       "value": null,
@@ -176,9 +184,9 @@
       "confidence": null
     },
     "manganeseMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 1.1,
+      "source": "USDA FDC: USDA FDC 'Rice, white, medium-grain, raw, unenriched' (FDC ID not confirmed) via happyforks.com; used as the nearest match for sona masoori; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "iodineUg": {
       "value": null,
@@ -201,9 +209,9 @@
       "confidence": null
     },
     "thiaminMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0.07,
+      "source": "USDA FDC: USDA FDC 'Rice, white, medium-grain, raw, unenriched' (FDC ID not confirmed) via happyforks.com; used as the nearest match for sona masoori; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "riboflavinMg": {
       "value": null,
@@ -211,9 +219,9 @@
       "confidence": null
     },
     "niacinMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 1.6,
+      "source": "USDA FDC: USDA FDC 'Rice, white, medium-grain, raw, unenriched' (FDC ID not confirmed) via happyforks.com; used as the nearest match for sona masoori; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "vitaminB6Mg": {
       "value": null,
@@ -221,20 +229,29 @@
       "confidence": null
     },
     "vitaminB12Ug": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 'Rice, white, medium-grain, raw, unenriched' (FDC ID not confirmed) via happyforks.com; used as the nearest match for sona masoori; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     }
   },
-  "macrosPer100Estimate": null,
-  "storage": "Airtight steel or plastic bin at room temperature, away from moisture: 6–12 months. A few dried red chillies or bay leaves in the bin are a common home trick against weevils. Cooked rice: cool quickly and refrigerate within an hour; use within 1–2 days (the dish uses cooled or leftover rice).",
-  "looksLike": "Small, light, slightly plump white grains, shorter and fatter than basmati, about 5 mm long, with a smooth polished surface and only a faint aroma.",
-  "howToPick": null,
-  "shelfLife": "6–12 months in a sealed pack, kept dry; rice improves a little with age.",
+  "macrosPer100Estimate": {
+    "kcal": 360,
+    "proteinG": 6.6,
+    "carbsG": 79.3,
+    "fatG": 0.6,
+    "fibreG": 0.8
+  },
+  "storage": "Airtight container in a cool, dry place for about a year; keep it away from damp in the monsoon. Cooked rice should be cooled quickly and refrigerated within a couple of hours; use within 1 to 2 days.",
+  "looksLike": "Short to medium, slightly thick, lightweight white grains that cook soft and fluffy and are not sticky. Raw (non-parboiled) rice is a chalky white; boiled or steam rice is more translucent and cream-coloured.",
+  "howToPick": "Look for uniform, clean white grains with few broken pieces, no insect holes, no musty smell and no coloured or mouldy grains. Aged rice (the pack may say 12+ months old) cooks drier and more separate. For lemon rice, choose raw (not parboiled) rice.",
+  "shelfLife": "About 12 months or more in a sealed bag (check the best-before date).",
   "substitutes": [
     "Ponni or kolam rice",
     "Basmati (everyday/broken grade)",
-    "Leftover cooked rice of any kind"
+    "Leftover cooked rice of any kind",
+    "Any short or medium-grain raw white rice (Ponni, Surti Kolam, Ambemohar)",
+    "Basmati rice",
+    "Leftover cooked rice"
   ],
   "vendorListings": [],
   "usedIn": [
@@ -242,18 +259,22 @@
       "dishNumber": 30,
       "quantity": 75,
       "unit": "g",
-      "raw": "75 g raw (about 225 g cooked and cooled)"
+      "raw": "75 g raw sona masoori rice per serving (about 225 g cooked and cooled)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-09",
       "file": "FitPlate_Ingredients_2026-10-09.md"
+    },
+    {
+      "date": "2026-11-11",
+      "file": "FitPlate_Ingredients_2026-11-11.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (none)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (single)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -262,5 +283,11 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 58.2–93.6 was wider than 30% of avg 70.0; narrowed to ±15%.",
+    "nutritionPer100g.proteinG: Conflict (2026-10-09: 6.6 vs 2026-11-11: 6.61); both cite the official table, kept the previous value.",
+    "nutritionPer100g.carbsG: Conflict (2026-10-09: 79.3 vs 2026-11-11: 79.34); both cite the official table, kept the previous value.",
+    "nutritionPer100g.fatG: Conflict (2026-10-09: 0.6 vs 2026-11-11: 0.58); both cite the official table, kept the previous value."
+  ]
 }

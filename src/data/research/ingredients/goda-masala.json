@@ -15,46 +15,53 @@
         "avg": 710,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-09.md"
+      },
+      {
+        "date": "2026-11-11",
+        "min": 340,
+        "max": 720,
+        "avg": 565,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-11.md"
       }
     ],
     "currentEstimate": {
-      "min": 700,
-      "max": 720,
-      "avg": 710
+      "min": 520,
+      "max": 705,
+      "avg": 610
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-09",
+    "lastObserved": "2026-11-11",
     "stale": false,
     "seasonal": false,
-    "listingCount": 2,
+    "listingCount": 5,
     "platforms": [
       "BigBasket"
     ],
     "outOfStock": false,
     "confirmed": false,
     "checkNotes": [
-      "only 2 listings back the range (need 3)",
       "only 1 platform (BigBasket) backs the range"
     ]
   },
   "per100Estimate": {
-    "min": 70,
-    "max": 72,
-    "avg": 71
+    "min": 52,
+    "max": 70.5,
+    "avg": 61
   },
   "seasonal": false,
   "nutritionPer100g": {
     "basis": "100g",
     "energyKcal": {
       "value": 433,
-      "source": "Other: pack label (Tablespoon Goda Masala, via BigBasket listing): Tablespoon Goda Masala nutrition panel per 100 g as shown on BigBasket product 40277267; no IFCT 2017 or USDA FDC entry exists",
+      "source": "Other: BigBasket goda masala listing (brand not shown): BigBasket goda masala 100 g listing (search summary; brand not identified)",
       "confidence": "Low"
     },
     "proteinG": {
       "value": 15.8,
-      "source": "Other: pack label (Tablespoon Goda Masala, via BigBasket listing): Tablespoon Goda Masala nutrition panel per 100 g as shown on BigBasket product 40277267; no IFCT 2017 or USDA FDC entry exists",
+      "source": "Other: BigBasket goda masala listing (brand not shown): BigBasket goda masala 100 g listing (search summary; brand not identified)",
       "confidence": "Low"
     },
     "carbsG": {
@@ -229,20 +236,22 @@
     }
   },
   "macrosPer100Estimate": {
-    "kcal": 350,
-    "proteinG": null,
-    "carbsG": null,
-    "fatG": null,
-    "fibreG": null
+    "kcal": 391.5,
+    "proteinG": 15.8,
+    "carbsG": 60,
+    "fatG": 10,
+    "fibreG": 20
   },
-  "storage": "Airtight glass or steel jar at room temperature, away from the stove, light and damp. Use within about 3 months of opening. Because it contains sesame and dry coconut, it can go rancid in heat; in Mumbai's humid months keep the bulk of the pack in the fridge and a small jar out for daily use.",
+  "storage": "Keep in an airtight jar in a cool, dark cupboard; buy small pouches because ground spices fade within a few months.",
   "looksLike": "A fine dark-brown to almost black powder with an oily, slightly clumpy texture. It smells sweet-smoky rather than hot, because it is made from roasted coriander, sesame, dry coconut and whole spices including dagad phool (stone flower).",
-  "howToPick": null,
-  "shelfLife": "Usually 6–12 months sealed (check the pack); the aroma fades within 2–3 months of opening.",
+  "howToPick": "The powder should be dark, fragrant and fine with a roasted, sweet-spiced smell. Avoid a faded, flat smell or damp clumps. Brands differ a lot in dagad phool and coconut content, so buying a pouch from a Maharashtrian brand is closest to the traditional flavour.",
+  "shelfLife": "About 6 to 12 months sealed, and stronger in the first few months (general guidance; not taken from a source in this run).",
   "substitutes": [
     "Garam masala (about ½ tsp per 1 tsp goda masala)",
     "Kanda-lasun masala",
-    "Home-made goda masala"
+    "Home-made goda masala",
+    "Garam masala (½ tsp per 1 tsp goda)",
+    "Home blend"
   ],
   "vendorListings": [],
   "usedIn": [
@@ -250,18 +259,22 @@
       "dishNumber": 29,
       "quantity": 2,
       "unit": "g",
-      "raw": "2 g (1 tsp), added to the kat with the other ground spices"
+      "raw": "2 g per serving (1 tsp), added to the kat with Kashmiri chilli powder, coriander and turmeric"
     }
   ],
   "versions": [
     {
       "date": "2026-10-09",
       "file": "FitPlate_Ingredients_2026-10-09.md"
+    },
+    {
+      "date": "2026-11-11",
+      "file": "FitPlate_Ingredients_2026-11-11.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -270,5 +283,8 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 454.5–720.0 was wider than 30% of avg 611.1; narrowed to ±15%."
+  ]
 }

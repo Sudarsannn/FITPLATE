@@ -47,6 +47,8 @@ export const featureFlags = {
   nutritionInsights: true,
   /** Day 21: search and filters on the Move tab. */
   exerciseSearch: true,
+  /** Day 23: workout routines (ready-made and your own, with days of the week). */
+  routines: true,
   /** Day 18: supplement logging with upper-limit warnings, counted in the vitamin and mineral bars. ON. */
   supplementLog: true,
   /** Day 17: water tracker screen, streak and workday reminders. ON. */

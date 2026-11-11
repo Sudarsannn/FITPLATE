@@ -9,6 +9,7 @@ import { researchDishes } from '../data/research';
 import type { Dish as ResearchDish } from '../models/research';
 import type { Doc } from '../models/common';
 import type { SupplementLog } from '../models/logs';
+import type { Routine } from '../models/routine';
 import { cookedDays, currentStreak } from '../services/streaks';
 import { portionPatch } from '../services/meals';
 import { DEFAULT_SETTINGS, type CookCompletion, type DishRating, type ShoppingList, type UserSettings } from '../models/prefs';
@@ -172,6 +173,10 @@ type Store = State & {
   supplements: Doc<SupplementLog>[];
   addSupplement: (sup: { name: string; nutrientId: string | null; dose: number | null; unit: string | null }) => void;
   removeSupplement: (id: string) => void;
+  /** The user's own workout routines (Day 23), newest first. */
+  routines: Doc<Routine>[];
+  saveRoutine: (routine: Routine, id?: string) => string;
+  removeRoutine: (id: string) => void;
   setPrivateFlag: (key: 'pregnant' | 'lactating', on: boolean) => void;
   /** Age, height, weight and activity from the profile (null = not given). */
   body: Pick<UserProfile, 'age' | 'heightCm' | 'weightKg' | 'activityLevel'>;
@@ -395,6 +400,11 @@ export function StoreProvider({ children }: { children: ReactNode }) {
         .sort((a, b) => b.timestamp - a.timestamp),
       addSupplement: (sup) => s?.addSupplement(sup),
       removeSupplement: (id) => s?.removeSupplement(id),
+      routines: Object.values(docs.routines)
+        .filter((r) => !r.deleted)
+        .sort((a, b) => b.updatedAt - a.updatedAt),
+      saveRoutine: (routine, id) => s?.saveRoutine(routine, id) ?? id ?? '',
+      removeRoutine: (id) => s?.removeRoutine(id),
       privateFlags: docs.profile && !docs.profile.deleted ? (docs.profile.privateFlags ?? {}) : {},
       setPrivateFlag: (key, on) => s?.updateProfile({ privateFlags: { ...(docs.profile?.privateFlags ?? {}), [key]: on } }),
       body: {

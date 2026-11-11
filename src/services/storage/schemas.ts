@@ -23,6 +23,8 @@ export const SCHEMAS = {
   weightLogs: { collection: 'weightLogs', version: 1, migrations: {} },
   ratings: { collection: 'ratings', version: 1, migrations: {} },
   cookCompletions: { collection: 'cookCompletions', version: 1, migrations: {} },
+  // Day 23: the user's own workout routines (editable, so not append-only).
+  routines: { collection: 'routines', version: 1, migrations: {} },
 } satisfies Record<string, DocSchema>;
 
 export type CollectionName = keyof typeof SCHEMAS;
