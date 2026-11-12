@@ -77,3 +77,16 @@ export function moveFit(e: Pick<ExerciseData, 'conditionCautions'>, concerns: Co
 export function fitOrder(f: Fit): number {
   return RANK[f];
 }
+
+/** Words for a move's fit, for the Move tab, routines and the player. Research text only: `change` is the research's own advice. */
+export type FitNote = { level: 'avoid' | 'doctor' | 'unknown' | 'modify' | null; headline: string | null; lines: string[] };
+
+export function fitNote(f: MoveFit): FitNote {
+  const lines = (status: Fit) => f.notes.filter((n) => n.status === status && n.change).map((n) => `For your ${n.label}: ${n.change}`);
+  const labels = (status: Fit) => f.notes.filter((n) => n.status === status).map((n) => n.label).join(', ');
+  if (f.fit === 'avoid') return { level: 'avoid', headline: `The research says to avoid this with your ${labels('avoid')}`, lines: lines('avoid') };
+  if (f.fit === 'ask_doctor') return { level: 'doctor', headline: "Follow your doctor's advice", lines: lines('ask_doctor') };
+  if (f.fit === 'unknown') return { level: 'unknown', headline: 'No research for your answers yet: ask first', lines: [] };
+  if (f.fit === 'modify') return { level: 'modify', headline: null, lines: lines('modify') };
+  return { level: null, headline: null, lines: [] };
+}

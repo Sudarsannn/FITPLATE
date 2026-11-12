@@ -12,6 +12,7 @@ import { WeekBars } from '../../components/viz';
 import type { ExerciseSection } from '../../models/exercise';
 import { lastSevenDaysActivity } from '../../services/activity';
 import { bySection, doseLabel, kcalPer10, musclesLine, prescriptionFor, SECTION_ICON, SECTION_LABEL, shortExerciseName } from '../../services/fitness';
+import { moveFit, userConcerns } from '../../services/moveSafety';
 import { scheduledOn } from '../../services/routines';
 import { byNumber, exerciseDoc, exerciseFilterGroups } from '../../services/exerciseLibrary';
 import { activeCount, runSearch, toggle, type Selection } from '../../services/search';
@@ -42,7 +43,13 @@ export default function Move() {
     [deferred, filterGroups, selection],
   );
   const searching = deferred.trim() !== '' || nActive > 0;
-  const groups = bySection(featureFlags.exerciseSearch ? results : researchExercises);
+  // Injuries and conditions from the survey (research rules only): moves the research says to avoid are hidden, the rest carry a small note.
+  const { concerns, unresearched } = useMemo(() => userConcerns(profile.survey), [profile.survey]);
+  const fits = useMemo(() => new Map(researchExercises.map((x) => [x.id, moveFit(x, concerns)])), [concerns]);
+  const base = featureFlags.exerciseSearch ? results : researchExercises;
+  const visible = base.filter((x) => fits.get(x.id)?.fit !== 'avoid');
+  const hiddenN = base.length - visible.length;
+  const groups = bySection(visible);
   // One training place in the survey opens on its section; gym or mixed answers see everything.
   const where = profile.survey.trainWhere;
   const [section, setSection] = useState<ExerciseSection | 'all'>(where.length === 1 && where[0] === 'home' ? 'home' : 'all');
@@ -134,7 +141,7 @@ export default function Move() {
               : null}
             {searching ? (
               <Text style={[type.small, { color: colors.muted, marginTop: 10 }]}>
-                {results.length} of {researchExercises.length} moves
+                {visible.length} of {researchExercises.length} moves
               </Text>
             ) : null}
           </FadeIn>
@@ -142,7 +149,7 @@ export default function Move() {
 
         <FadeIn i={2}>
           <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{ marginHorizontal: -18, marginTop: 18 }} contentContainerStyle={{ paddingHorizontal: 18, gap: 8 }}>
-            <Chip label={`All (${searching ? results.length : researchExercises.length})`} active={section === 'all'} onPress={() => setSection('all')} />
+            <Chip label={`All (${visible.length})`} active={section === 'all'} onPress={() => setSection('all')} />
             {SECTIONS.map((s) => (
               <Chip key={s} label={`${SECTION_LABEL[s]} (${groups[s].length})`} active={section === s} onPress={() => setSection(s)} />
             ))}
@@ -178,6 +185,8 @@ export default function Move() {
                           {dose}
                         </Text>
                       ) : null}
+                      {fits.get(e.id)?.fit === 'ask_doctor' ? <Text style={styles.warn}>Ask first: needs a doctor&apos;s OK</Text> : null}
+                      {fits.get(e.id)?.fit === 'modify' ? <Text style={styles.warn}>Go easier: see the exercise page</Text> : null}
                     </View>
                     {k10 != null ? (
                       <View style={styles.kcal}>
@@ -193,7 +202,15 @@ export default function Move() {
           ) : null,
         )}
 
-        {searching && results.length === 0 ? (
+        {concerns.length || unresearched.length ? (
+          <Text style={[type.small, { color: colors.muted, marginTop: 14 }]}>
+            Checked with your answers{concerns.length ? ` (${concerns.map((c) => c.label).join(', ')})` : ''}.
+            {hiddenN ? ` ${hiddenN} move${hiddenN > 1 ? 's' : ''} the research says to avoid for you ${hiddenN > 1 ? 'are' : 'is'} hidden.` : ''} Moves marked &quot;Ask first&quot; need a doctor&apos;s OK.
+            {unresearched.length ? ` We have no research yet for your ${unresearched.join(', ')}, so stop if anything hurts.` : ''}
+          </Text>
+        ) : null}
+
+        {searching && visible.length === 0 ? (
           <Text style={[type.body, { color: colors.muted, textAlign: 'center', marginTop: 28 }]}>No moves match. Try fewer filters or another word.</Text>
         ) : null}
 
@@ -253,6 +270,7 @@ const styles = StyleSheet.create({
   row: { flexDirection: 'row', alignItems: 'center', gap: 12, padding: 14, borderRadius: radius.md, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, marginBottom: 8 },
   name: { color: colors.text, fontWeight: '800', fontSize: 15 },
   meta: { color: colors.muted, fontSize: 12.5, marginTop: 2, lineHeight: 17 },
+  warn: { color: colors.warn, fontSize: 12.5, fontWeight: '800', marginTop: 3 },
   dose: { color: colors.accent2, fontSize: 12.5, fontWeight: '700', marginTop: 3 },
   kcal: { alignItems: 'center', minWidth: 56 },
   kcalNum: { color: colors.warm, fontSize: 18, fontWeight: '900' },

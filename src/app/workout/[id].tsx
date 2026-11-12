@@ -20,6 +20,7 @@ import { clock, planMinutes, workoutPhases } from '../../services/workoutPlan';
 import { clampKg, clampRpe, countCue, countdownCue, effortWords, KG_STEP, repTarget, summarise, swapOptions } from '../../services/workoutSession';
 import { speakStep, stopSpeaking } from '../../lib/speak';
 import type { WorkoutSet } from '../../models/logs';
+import { fitNote, moveFit, userConcerns } from '../../services/moveSafety';
 import { colors, radius, type } from '../../theme';
 
 /**
@@ -46,7 +47,11 @@ export default function WorkoutScreen() {
 }
 
 function Player({ e, target, routine }: { e: Exercise; target: number | null; routine: { id: string; at: number } | null }) {
-  const { bodyWeightKg, logWorkout, routines } = useStore();
+  const { bodyWeightKg, logWorkout, routines, profile } = useStore();
+  const { concerns, unresearched } = useMemo(() => userConcerns(profile.survey), [profile.survey]);
+  const note = fitNote(moveFit(e, concerns));
+  const [override, setOverride] = useState(false);
+  const gated = note.level === 'avoid' && !override;
   const rt = routine ? resolveRoutine(routine.id, routines.map((r) => ({ id: r.id, routine: r }))) : null;
   const rItems = rt ? liveItems(rt.routine) : [];
   const nextAt = routine && routine.at + 1 < rItems.length ? routine.at + 1 : null;
@@ -118,7 +123,7 @@ function Player({ e, target, routine }: { e: Exercise; target: number | null; ro
     go(next);
   };
   const summary = summarise(results);
-  const alternatives = useMemo(() => swapOptions(e, researchExercises), [e]);
+  const alternatives = useMemo(() => swapOptions(e, researchExercises, 4, concerns), [e, concerns]);
   const mins = Math.max(1, Math.round(elapsed / 60));
   const kcal = e.met != null ? exerciseKcal(e.met, done ? mins : planMinutes(phases), bodyWeightKg) : null;
   const steps = e.steps;
@@ -202,6 +207,43 @@ function Player({ e, target, routine }: { e: Exercise; target: number | null; ro
               </Text>
               {target ? <Text style={styles.heroNote}>Aiming for about {target} min to balance your meal.</Text> : null}
             </View>
+            {note.level ? (
+              <View style={[styles.card, { borderColor: note.level === 'avoid' ? colors.bad : note.level === 'modify' ? colors.border : colors.warn }]} accessibilityRole="alert">
+                {note.headline ? <Text style={[styles.cueTitle, { color: note.level === 'avoid' ? colors.bad : colors.warn }]}>{note.headline}</Text> : null}
+                {note.lines.map((l, i) => (
+                  <Text key={i} style={styles.body}>
+                    {l}
+                  </Text>
+                ))}
+                {note.level === 'avoid' ? (
+                  <View style={{ gap: 4, marginTop: 8 }}>
+                    <PressableScale onPress={() => setSwapOpen(true)} style={styles.plain} accessibilityLabel="Swap this move">
+                      <Text style={[styles.plainText, { color: colors.accent }]}>Swap for a safer move</Text>
+                    </PressableScale>
+                    <PressableScale onPress={() => (nextAt != null && routine ? router.replace({ pathname: '/workout/[id]', params: startParams(routine.id, rItems, nextAt) }) : router.replace('/move'))} style={styles.plain} accessibilityLabel="Skip this move">
+                      <Text style={styles.plainText}>Skip this move</Text>
+                    </PressableScale>
+                    {!override ? (
+                      <PressableScale onPress={() => setOverride(true)} style={styles.plain} accessibilityLabel="Do it anyway">
+                        <Text style={styles.plainText}>I have checked with my doctor. Do it anyway</Text>
+                      </PressableScale>
+                    ) : null}
+                  </View>
+                ) : null}
+              </View>
+            ) : null}
+            {!note.level && unresearched.length ? <Text style={styles.note}>You told us about your {unresearched.join(', ')}. We have no research on which moves suit that yet, so stop if anything hurts.</Text> : null}
+            {swapOpen && !phase ? (
+              <View style={[styles.card, { gap: 4 }]}>
+                <Text style={styles.cardLabel}>Swap for</Text>
+                {alternatives.length === 0 ? <Text style={styles.muted}>No safe swap found. Skip this move or ask a doctor.</Text> : null}
+                {alternatives.map((a) => (
+                  <PressableScale key={a.id} onPress={() => router.replace({ pathname: '/workout/[id]', params: { id: a.id, ...(routine ? { routine: routine.id, at: String(routine.at) } : {}) } })} style={styles.plain} accessibilityLabel={`Swap to ${shortExerciseName(a.name)}`}>
+                    <Text style={[styles.plainText, { color: colors.text }]}>{shortExerciseName(a.name)}</Text>
+                  </PressableScale>
+                ))}
+              </View>
+            ) : null}
             <MusicPanel kind="workout" />
             {e.setupSteps.length ? (
               <View style={styles.card}>
@@ -303,7 +345,7 @@ function Player({ e, target, routine }: { e: Exercise; target: number | null; ro
       <View style={styles.footer}>
         {!phase ? (
           <>
-            <GradientButton title="▶  Start workout" onPress={() => go(0)} />
+            {gated ? <Text style={[styles.muted, { textAlign: 'center' }]}>Choose Swap or Skip above before starting.</Text> : <GradientButton title="▶  Start workout" onPress={() => go(0)} />}
             {e.met != null ? (
               <PressableScale onPress={() => router.push({ pathname: '/log', params: { tab: 'exercise', exercise: e.id, ...(target ? { minutes: String(target) } : {}) } })} style={styles.plain}>
                 <Text style={styles.plainText}>Already did it? Log it instead</Text>

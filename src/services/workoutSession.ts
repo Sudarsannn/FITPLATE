@@ -6,6 +6,7 @@
  */
 import type { Exercise } from '../models/exercise';
 import type { WorkoutSet } from '../models/logs';
+import { fitOrder, moveFit, type Concern } from './moveSafety';
 
 /** "8-12 (wall or knee version)" → 12; "10 per leg" → 10; text with no number → null. The top of a range, so "Done" is never offered early. */
 export function repTarget(reps: string | null | undefined): number | null {
@@ -50,8 +51,8 @@ const rank = (e: Pick<Exercise, 'gymAccess'>): number => {
   return r.length ? Math.min(...r) : 0;
 };
 
-/** Up to `n` moves that can stand in: same section and type, a shared muscle region, and no more equipment than the original. */
-export function swapOptions(e: Exercise, all: readonly Exercise[], n = 4): Exercise[] {
+/** Up to `n` moves that can stand in: same section and type, a shared muscle region, no more equipment than the original, and nothing the research says to avoid for the user's concerns. */
+export function swapOptions(e: Exercise, all: readonly Exercise[], n = 4, concerns: Concern[] = []): Exercise[] {
   const regions = e.searchTags?.bodyRegion ?? [];
   const muscles = new Set(e.musclesPrimary.map((m) => m.toLowerCase()));
   return all
@@ -62,7 +63,10 @@ export function swapOptions(e: Exercise, all: readonly Exercise[], n = 4): Exerc
       return { x, score: shared * 2 + same };
     })
     .filter((s) => s.score > 0)
-    .sort((a, b) => b.score - a.score || (a.x.number ?? 999) - (b.x.number ?? 999))
+    // The user's injuries and conditions (research rules only): never offer an "avoid" move, and put research-backed fits first.
+    .map((s) => ({ ...s, fit: moveFit(s.x, concerns).fit }))
+    .filter((s) => s.fit !== 'avoid')
+    .sort((a, b) => fitOrder(a.fit) - fitOrder(b.fit) || b.score - a.score || (a.x.number ?? 999) - (b.x.number ?? 999))
     .slice(0, n)
     .map((s) => s.x);
 }

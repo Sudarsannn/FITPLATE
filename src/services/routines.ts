@@ -8,6 +8,7 @@ import { researchExercises } from '../data/research';
 import type { Exercise } from '../models/exercise';
 import type { Routine, RoutineItem } from '../models/routine';
 import { exerciseKcal } from './fitness';
+import { moveFit, type Concern, type MoveFit } from './moveSafety';
 import { planMinutes, workoutPhases } from './workoutPlan';
 
 /** Walking to the next move and getting set. */
@@ -99,4 +100,9 @@ export function resolveRoutine(id: string, own: { id: string; routine: Routine }
 export function startParams(routineId: string, items: RoutineItem[], at: number): { id: string; routine: string; at: string; minutes?: string } {
   const item = items[at];
   return { id: item.exerciseId, routine: routineId, at: String(at), ...(item.minutes ? { minutes: String(item.minutes) } : {}) };
+}
+
+/** Each live item's fit for the user's concerns (research rules), and how many need attention. */
+export function routineFits(r: Pick<Routine, 'items'>, concerns: Concern[]): { item: RoutineItem; fit: MoveFit }[] {
+  return liveItems(r).map((item) => ({ item, fit: moveFit(byId.get(item.exerciseId)!, concerns) }));
 }

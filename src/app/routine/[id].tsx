@@ -1,5 +1,6 @@
 import { Ionicons } from '@expo/vector-icons';
 import { router, useLocalSearchParams } from 'expo-router';
+import { useMemo } from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -7,13 +8,15 @@ import { Chip, GradientButton, PressableScale } from '../../components/ui';
 import { ScreenTop } from '../../components/vendors/kit';
 import { useStore } from '../../lib/store';
 import { shortExerciseName } from '../../services/fitness';
-import { DAY_LABELS, exerciseById, itemMinutesLabel, liveItems, resolveRoutine, routineKcal, routineMinutes, startParams, toggleDay } from '../../services/routines';
+import { fitNote, userConcerns } from '../../services/moveSafety';
+import { DAY_LABELS, exerciseById, itemMinutesLabel, liveItems, resolveRoutine, routineFits, routineKcal, routineMinutes, startParams, toggleDay } from '../../services/routines';
 import { colors, radius, type } from '../../theme';
 
 /** Day 23: one routine: its moves, time and calories, schedule, and a Start button. */
 export default function RoutineScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
-  const { routines, bodyWeightKg, saveRoutine, removeRoutine } = useStore();
+  const { routines, bodyWeightKg, saveRoutine, removeRoutine, profile } = useStore();
+  const { concerns, unresearched } = useMemo(() => userConcerns(profile.survey), [profile.survey]);
   const found = resolveRoutine(id, routines.map((r) => ({ id: r.id, routine: r })));
   if (!found) {
     return (
@@ -28,6 +31,8 @@ export default function RoutineScreen() {
   }
   const { routine, own, blurb } = found;
   const items = liveItems(routine);
+  const fits = routineFits(routine, concerns);
+  const flagged = fits.filter((f) => f.fit.fit === 'avoid' || f.fit.fit === 'ask_doctor').length;
   const start = () => router.push({ pathname: '/workout/[id]', params: startParams(id, items, 0) });
   const makeMine = () => {
     const newId = saveRoutine({ name: routine.name, items: routine.items.map((i) => ({ ...i })), days: [...routine.days] });
@@ -44,6 +49,15 @@ export default function RoutineScreen() {
           <Stat value={`≈ ${routineKcal(routine, bodyWeightKg)}`} label="kcal (est.)" />
           <Stat value={`${items.length}`} label="moves" />
         </View>
+        {concerns.length || unresearched.length ? (
+          <View style={[styles.safety, flagged ? { borderColor: colors.warn } : null]} accessibilityRole="alert">
+            <Text style={styles.name}>Checked against your answers{concerns.length ? ` (${concerns.map((c) => c.label).join(', ')})` : ''}</Text>
+            <Text style={styles.meta}>
+              {flagged ? `${flagged} move${flagged > 1 ? 's need' : ' needs'} attention below. You can swap or skip them before they start.` : 'Nothing here is marked to avoid.'}
+              {unresearched.length ? ` We have no research yet for your ${unresearched.join(', ')}, so stop if anything hurts.` : ''}
+            </Text>
+          </View>
+        ) : null}
         <GradientButton title="▶  Start routine" onPress={start} disabled={items.length === 0} style={{ marginTop: 16 }} />
 
         <Text style={styles.head}>Days</Text>
@@ -68,6 +82,20 @@ export default function RoutineScreen() {
                   {shortExerciseName(e.name)}
                 </Text>
                 <Text style={styles.meta}>{itemMinutesLabel(it)}</Text>
+                {(() => {
+                  const n = fitNote(fits[i]?.fit ?? { fit: 'ok', notes: [] });
+                  if (!n.level) return null;
+                  return (
+                    <>
+                      {n.headline ? <Text style={[styles.warn, n.level === 'avoid' && { color: colors.bad }]}>{n.headline}</Text> : null}
+                      {n.lines.slice(0, 2).map((l, k) => (
+                        <Text key={k} style={styles.meta}>
+                          {l}
+                        </Text>
+                      ))}
+                    </>
+                  );
+                })()}
               </View>
               <Ionicons name="chevron-forward" size={18} color={colors.faint} />
             </PressableScale>
@@ -118,5 +146,7 @@ const styles = StyleSheet.create({
   n: { color: colors.accent, fontWeight: '900', width: 20, fontSize: 15 },
   name: { color: colors.text, fontWeight: '800', fontSize: 15 },
   meta: { color: colors.muted, fontSize: 12.5, marginTop: 2 },
+  safety: { marginTop: 14, padding: 12, borderRadius: radius.md, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border },
+  warn: { color: colors.warn, fontSize: 12.5, fontWeight: '800', marginTop: 3 },
   note: { color: colors.faint, fontSize: 12, lineHeight: 17, textAlign: 'center', marginTop: 20 },
 });
