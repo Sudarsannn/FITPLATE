@@ -2,6 +2,7 @@
 import type { Exercise } from '../../../models/exercise';
 
 import item_adho_mukha_svanasana from './adho-mukha-svanasana.json';
+import item_assisted_pull_up_dip_machine from './assisted-pull-up-dip-machine.json';
 import item_balasana_childs_pose from './balasana-childs-pose.json';
 import item_barbell_back_squat from './barbell-back-squat.json';
 import item_barbell_deadlift from './barbell-deadlift.json';
@@ -33,11 +34,13 @@ import item_leg_press from './leg-press.json';
 import item_mountain_climbers from './mountain-climbers.json';
 import item_pec_deck from './pec-deck.json';
 import item_plank_and_side_plank from './plank-and-side-plank.json';
+import item_pull_up_bar from './pull-up-bar.json';
 import item_push_up from './push-up.json';
 import item_quad_and_calf_stretch from './quad-and-calf-stretch.json';
 import item_reverse_lunge from './reverse-lunge.json';
 import item_rowing_machine from './rowing-machine.json';
 import item_seated_cable_row from './seated-cable-row.json';
+import item_skipping_rope from './skipping-rope.json';
 import item_smith_machine from './smith-machine.json';
 import item_stair_climber from './stair-climber.json';
 import item_stationary_bike from './stationary-bike.json';
@@ -46,12 +49,14 @@ import item_superman_back_raise from './superman-back-raise.json';
 import item_surya_namaskar from './surya-namaskar.json';
 import item_thoracic_rotation_chest_opener from './thoracic-rotation-chest-opener.json';
 import item_treadmill from './treadmill.json';
+import item_trikonasana_triangle_pose from './trikonasana-triangle-pose.json';
 import item_vrikshasana_tree_pose from './vrikshasana-tree-pose.json';
 import item_wall_sit from './wall-sit.json';
 import item_wrist_forearm_stretch from './wrist-forearm-stretch.json';
 
 export const items: Exercise[] = [
   item_adho_mukha_svanasana as unknown as Exercise,
+  item_assisted_pull_up_dip_machine as unknown as Exercise,
   item_balasana_childs_pose as unknown as Exercise,
   item_barbell_back_squat as unknown as Exercise,
   item_barbell_deadlift as unknown as Exercise,
@@ -83,11 +88,13 @@ export const items: Exercise[] = [
   item_mountain_climbers as unknown as Exercise,
   item_pec_deck as unknown as Exercise,
   item_plank_and_side_plank as unknown as Exercise,
+  item_pull_up_bar as unknown as Exercise,
   item_push_up as unknown as Exercise,
   item_quad_and_calf_stretch as unknown as Exercise,
   item_reverse_lunge as unknown as Exercise,
   item_rowing_machine as unknown as Exercise,
   item_seated_cable_row as unknown as Exercise,
+  item_skipping_rope as unknown as Exercise,
   item_smith_machine as unknown as Exercise,
   item_stair_climber as unknown as Exercise,
   item_stationary_bike as unknown as Exercise,
@@ -96,6 +103,7 @@ export const items: Exercise[] = [
   item_surya_namaskar as unknown as Exercise,
   item_thoracic_rotation_chest_opener as unknown as Exercise,
   item_treadmill as unknown as Exercise,
+  item_trikonasana_triangle_pose as unknown as Exercise,
   item_vrikshasana_tree_pose as unknown as Exercise,
   item_wall_sit as unknown as Exercise,
   item_wrist_forearm_stretch as unknown as Exercise,

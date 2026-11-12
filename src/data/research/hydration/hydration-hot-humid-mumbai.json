@@ -1,0 +1,215 @@
+{
+  "id": "hydration-hot-humid-mumbai",
+  "type": "hydration",
+  "name": "Topic 31: Hydration in hot and humid climates (Mumbai)",
+  "defaultTargetFormula": "target_ml = topic30_target_ml + heat_add_ml; heat_add_ml = min(band_add + outdoor_add + commute_add, 1000); band_add: comfortable 0, warm_humid 300, hot_humid 500 (same as Topic 30 hot_weather toggle), very_hot 750; outdoor_add 500 if outdoor sun work 2h or more; commute_add 250 if commute 60 min or more; clamp result 1500-4500 ml; round to nearest 50 ml; ceiling 250 ml per 15-20 min and 1400 ml per hour. All heat adds are FitPlate estimates (est.); ICMR-NIN 2020 hot-climate water values Not found.",
+  "inputs": [
+    "weight_kg",
+    "sex",
+    "activity_level",
+    "workout_minutes",
+    "hot_weather"
+  ],
+  "minMl": 1500,
+  "maxMl": 4500,
+  "quickAddPresetsMl": [
+    100,
+    150,
+    200,
+    250,
+    330,
+    500,
+    750,
+    1000
+  ],
+  "drinks": [
+    {
+      "name": "Plain water",
+      "countsAsWaterPct": 100,
+      "notes": "First choice in heat; safe boiled or filtered water"
+    },
+    {
+      "name": "Nimbu pani with a pinch of salt",
+      "countsAsWaterPct": 100,
+      "notes": "est.; about 200 mg sodium per glass (calc., est.); 1-2 teaspoons sugar"
+    },
+    {
+      "name": "Chaas (salted buttermilk)",
+      "countsAsWaterPct": 100,
+      "notes": "est.; about 300-500 mg sodium per glass (secondary, unverified); counts toward Topic 18"
+    },
+    {
+      "name": "Tender coconut water",
+      "countsAsWaterPct": 100,
+      "notes": "est.; potassium about 221-361 mg per 100 ml, varies by maturity (secondary, unverified); Topic 19"
+    },
+    {
+      "name": "Torani or aam panna",
+      "countsAsWaterPct": 100,
+      "notes": "est.; traditional heat-wave drinks; sugar and salt vary"
+    },
+    {
+      "name": "ORS (WHO reduced osmolarity)",
+      "countsAsWaterPct": 100,
+      "notes": "For diarrhoea, vomiting or heat illness only; 75 mmol/L sodium, 75 mmol/L glucose; not a daily drink"
+    },
+    {
+      "name": "Sports or electrolyte drink",
+      "countsAsWaterPct": 100,
+      "notes": "est.; sugar and sodium; only for 2 hours or more of sweaty effort"
+    },
+    {
+      "name": "Chai or coffee",
+      "countsAsWaterPct": 100,
+      "notes": "est.; caffeine; Indian heat advisories say limit; Topic 30"
+    },
+    {
+      "name": "Fruit juice or soft drink",
+      "countsAsWaterPct": 50,
+      "notes": "est.; product policy because of sugar"
+    },
+    {
+      "name": "Alcohol",
+      "countsAsWaterPct": 0,
+      "notes": "Not counted; avoid in heat"
+    }
+  ],
+  "drinksTable": [
+    {
+      "drink": "Plain water (boiled, filtered)",
+      "counts": "Yes, 100%",
+      "notes": "First choice; cool, not ice-cold, is easier to drink in quantity (est.)",
+      "typicalServingMl": {
+        "min": 250,
+        "max": 250
+      }
+    },
+    {
+      "drink": "Nimbu pani, pinch of salt",
+      "counts": "Yes",
+      "notes": "Sodium about 200 mg per glass (est., calc.); keep sugar to 1-2 teaspoons (est.)",
+      "typicalServingMl": {
+        "min": 250,
+        "max": 250
+      }
+    },
+    {
+      "drink": "Chaas (buttermilk), salted",
+      "counts": "Yes",
+      "notes": "About 300-500 mg sodium per glass (secondary, unverified); potassium, protein",
+      "typicalServingMl": {
+        "min": 200,
+        "max": 200
+      }
+    },
+    {
+      "drink": "Tender coconut water",
+      "counts": "Yes",
+      "notes": "Potassium about 221-361 mg/100 ml; sodium low to moderate; values vary (secondary, unverified); Topic 19",
+      "typicalServingMl": {
+        "min": 200,
+        "max": 300
+      }
+    },
+    {
+      "drink": "Torani / rice water, aam panna",
+      "counts": "Yes",
+      "notes": "Traditional heat-wave drinks in MoHFW/NDMA lists; sugar and salt vary",
+      "typicalServingMl": {
+        "min": 200,
+        "max": 200
+      }
+    },
+    {
+      "drink": "WHO ORS",
+      "counts": "Yes",
+      "notes": "75 mmol/L sodium, 75 mmol/L glucose; for illness or heat illness only, as per sachet",
+      "typicalServingMl": {
+        "min": 200,
+        "max": 200
+      }
+    },
+    {
+      "drink": "Sports or electrolyte drink",
+      "counts": "Yes, only if needed",
+      "notes": "Sugar and sodium; for 2 hours or more of sweaty effort",
+      "typicalServingMl": {
+        "min": 250,
+        "max": 500
+      }
+    },
+    {
+      "drink": "Chai, coffee",
+      "counts": "Yes (est.)",
+      "notes": "Caffeine; Indian heat advisories say limit tea and coffee; fine in moderation (Topic 30)",
+      "typicalServingMl": {
+        "min": 100,
+        "max": 150
+      }
+    },
+    {
+      "drink": "Fruit juice, soft drinks",
+      "counts": "Partly (est. 50%)",
+      "notes": "Sugar; Topic 30 policy",
+      "typicalServingMl": {
+        "min": 150,
+        "max": 330
+      }
+    },
+    {
+      "drink": "Alcohol",
+      "counts": "No (0%)",
+      "notes": "Worsens heat illness; avoid in heat (NDMA list)",
+      "typicalServingMl": null
+    }
+  ],
+  "reminderRules": [
+    {
+      "rule": "Keep the Topic 30 schedule (09:30, 11:30, 13:30, 15:30, 17:30, 19:30, about 250 ml each); on hot-humid or very hot days add 08:30 (before commute) and 16:30 (before evening commute); maximum 8 per day (est.)",
+      "source": "FitPlate design (est.); NDMA/MoHFW advice to drink often even if not thirsty (secondary)"
+    },
+    {
+      "rule": "Outdoor workers: prompt every 60-90 minutes during work hours; suggested sip no more than 250 ml per 15-20 minutes and no more than 1,400 ml per hour",
+      "source": "OSHA/NIOSH heat infosheet (1 cup every 15-20 min, 48 oz per hour limit; secondary); FitPlate design (est.)"
+    },
+    {
+      "rule": "No reminders 21:00-07:00; skip if a drink was logged in the last 60 minutes; stop when target met",
+      "source": "FitPlate design (est.), same as Topic 30"
+    },
+    {
+      "rule": "Show ORS prompt only after logged vomiting, loose motions or faintness in heat; never as a daily preset",
+      "source": "WHO/UNICEF ORS statement; MoHFW/NCDC advisory (secondary)"
+    },
+    {
+      "rule": "Heat red-flag report (confusion, fit, hot dry skin, no sweating, fainting): show 'Call 108/102 now', stop prompts",
+      "source": "NHS heat exhaustion and heatstroke guidance; MoHFW/NPCCHH heat-illness manuals (secondary)"
+    },
+    {
+      "rule": "Doctor-flag users (kidney, heart, liver, fluid limit, diuretics), pregnancy with swelling or high BP, and children: no extra-fluid or salt prompts; show 'Follow your doctor's advice'",
+      "source": "FitPlate safety design; kidney charity and dialysis guidance (patient pages, not guidelines); CDC pregnancy and heat"
+    }
+  ],
+  "warnings": [
+    "General information, not medical advice.",
+    "Heat stroke signs (confusion, fits, hot dry skin, collapse) are an emergency: call 108 or 102.",
+    "Do not drink more than about 1,400 ml per hour; over-drinking can cause low blood sodium.",
+    "No salt tablets; use food and chaas or nimbu pani; people with BP, kidney or heart disease should not add salt without advice.",
+    "ORS is for illness, not for daily use.",
+    "Children, older adults, pregnant or breastfeeding women, and people with kidney, heart or liver disease need a doctor's guidance; the app shows no extra-fluid rules for them.",
+    "ICMR-NIN 2020 hot-climate water values and official IMD monthly tables were not accessed; climate figures are secondary and heat adds are FitPlate estimates."
+  ],
+  "lastResearched": "2026-11-12",
+  "versions": [
+    {
+      "date": "2026-11-12",
+      "file": "FitPlate_Nutrients_2026-11-12.md"
+    }
+  ],
+  "mergeMethod": {
+    "maxMl": "safety limit (lower on conflict)",
+    "minMl": "newest",
+    "lists": "union"
+  },
+  "mergeNotes": [],
+  "needsReview": []
+}

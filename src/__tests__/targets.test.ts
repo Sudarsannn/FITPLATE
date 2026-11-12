@@ -1,7 +1,7 @@
 import { describe, expect, it } from '@jest/globals';
 
-import { researchNutrients } from '../data/research';
-import { energyTarget, GOAL_PRESETS, goalTargets, microTargets, restingEnergy, targetGroupFor, waterTarget, type TargetProfile } from '../services/targets';
+import { researchHydration, researchNutrients } from '../data/research';
+import { WATER_FORMULA, energyTarget, GOAL_PRESETS, goalTargets, microTargets, restingEnergy, targetGroupFor, waterTarget, type TargetProfile } from '../services/targets';
 
 const base: TargetProfile = { age: 30, sex: 'male', heightCm: 175, weightKg: 75, activityLevel: 'moderate', goal: 'maintain' };
 
@@ -59,7 +59,30 @@ describe('microTargets (researched ICMR-NIN rows only)', () => {
 });
 
 describe('waterTarget', () => {
-  it('is the labelled default until the water research arrives', () => {
+  const hyd = researchHydration.find((h) => h.id === 'water-daily-requirement')!;
+
+  it('is the labelled default without the research or a profile', () => {
     expect(waterTarget()).toMatchObject({ glasses: 8, researched: false });
+    expect(waterTarget({ sex: 'male', weightKg: 70, privateFlags: {} }, null)).toMatchObject({ glasses: 8, researched: false });
+  });
+
+  it('uses the same numbers as the researched formula', () => {
+    const f = hyd.defaultTargetFormula;
+    for (const n of [2500, 2000, 400, 300, 700, 20, 50]) expect(f).toContain(String(n));
+    expect(f).toMatch(/male 65 kg, female 55 kg/);
+    expect(WATER_FORMULA.baseMl).toEqual({ male: 2500, female: 2000, unknown: 2500 });
+  });
+
+  it('adjusts for sex, weight, pregnancy and breastfeeding within the researched limits', () => {
+    const at = (sex: 'male' | 'female' | 'other' | null, weightKg: number | null, privateFlags = {}) => waterTarget({ sex, weightKg, privateFlags }, hyd);
+    expect(at('male', 65).glasses).toBe(10); // 2500 ml
+    expect(at('female', 55).glasses).toBe(8); // 2000 ml
+    expect(at('female', 55).researched).toBe(true);
+    expect(at('male', 95).glasses).toBe(12); // +400 ml cap: 2900
+    expect(at('female', 40, {}).glasses).toBeLessThan(8); // -300 ml
+    expect(at('female', 55, { pregnant: true }).glasses).toBe(9); // 2300
+    expect(at('female', 55, { lactating: true }).glasses).toBe(11); // 2700
+    expect(at(null, null).glasses).toBe(10);
+    expect(at('male', 300).glasses).toBeLessThanOrEqual(Math.round(hyd.maxMl! / 250));
   });
 });

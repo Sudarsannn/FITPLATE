@@ -51,6 +51,9 @@ export type SupplementLog = LogBase & {
   unit: string | null;
 };
 
+/** One set done in the guided player (Day 24). Each field is null when you did not enter it. */
+export type WorkoutSet = { set: number; reps: number | null; weightKg: number | null; rpe: number | null };
+
 export type WorkoutLog = LogBase & {
   type: string;
   /** Research exercise id once the exercise library exists (Day 21). */
@@ -58,6 +61,8 @@ export type WorkoutLog = LogBase & {
   minutes: number;
   /** Estimate (MET × weight × hours). */
   kcal: number;
+  /** Sets recorded in the guided player (Day 24). Older logs have none. */
+  sets?: WorkoutSet[];
 };
 
 /** Saved dish (id = dishId). */

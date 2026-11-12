@@ -1,4 +1,4 @@
-import type { Nutrient, TargetGroup } from '../models/nutrient';
+import type { Hydration, Nutrient, TargetGroup } from '../models/nutrient';
 import type { ActivityLevel, Goal, UserProfile } from '../models/user';
 
 /**
@@ -109,6 +109,26 @@ export function microTargets(p: TargetProfile, nutrients: readonly Nutrient[]): 
 export type WaterTarget = { glasses: number; researched: boolean; note: string };
 export const DEFAULT_WATER_GLASSES = 8;
 
-export function waterTarget(): WaterTarget {
-  return { glasses: DEFAULT_WATER_GLASSES, researched: false, note: 'A general default. A target for your weight and activity arrives with the water research.' };
+/**
+ * The researched drink target (hydration Topic 30), from what the app knows:
+ * sex, weight, pregnancy and breastfeeding. Workout minutes and hot weather are
+ * not added yet (the research adds 8 ml a minute and 500 ml on hot days).
+ * The numbers are those of the research's `default_target_formula`; a test
+ * checks they still appear in it. Without the research the general default stays.
+ */
+export const WATER_FORMULA = { baseMl: { male: 2500, female: 2000, unknown: 2500 }, refKg: { male: 65, female: 55, unknown: 65 }, mlPerKg: 20, weightClampMl: 400, pregnantMl: 300, lactatingMl: 700, roundMl: 50 } as const;
+
+export function waterTarget(p?: Pick<TargetProfile, 'sex' | 'weightKg' | 'privateFlags'>, hydration?: Pick<Hydration, 'minMl' | 'maxMl'> | null): WaterTarget {
+  const general: WaterTarget = { glasses: DEFAULT_WATER_GLASSES, researched: false, note: 'A general default. Add your sex and weight in your profile for a target that fits you.' };
+  if (!p || !hydration || hydration.minMl == null || hydration.maxMl == null) return general;
+  const sex = p.sex === 'male' || p.sex === 'female' ? p.sex : 'unknown';
+  const F = WATER_FORMULA;
+  let ml: number = F.baseMl[sex];
+  if (p.weightKg != null && p.weightKg > 0) ml += Math.max(-F.weightClampMl, Math.min(F.weightClampMl, (p.weightKg - F.refKg[sex]) * F.mlPerKg));
+  if (isPregnant(p)) ml += F.pregnantMl;
+  if (isLactating(p)) ml += F.lactatingMl;
+  ml = Math.round(Math.max(hydration.minMl, Math.min(hydration.maxMl, ml)) / F.roundMl) * F.roundMl;
+  const glasses = Math.max(1, Math.round(ml / 250));
+  const why = [sex === 'unknown' ? 'a general adult figure' : sex, p.weightKg ? `${Math.round(p.weightKg)} kg` : null, isPregnant(p) ? 'pregnancy' : null, isLactating(p) ? 'breastfeeding' : null].filter(Boolean).join(', ');
+  return { glasses, researched: true, note: `About ${ml} ml of drinks a day for ${why}. A FitPlate estimate built on EFSA adequate intakes; exercise and hot days need more.` };
 }

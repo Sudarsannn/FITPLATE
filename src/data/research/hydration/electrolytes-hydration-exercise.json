@@ -1,0 +1,245 @@
+{
+  "id": "electrolytes-hydration-exercise",
+  "type": "hydration",
+  "name": "Topic 32: Electrolytes and hydration during exercise",
+  "defaultTargetFormula": "Daily target = Topic 30 formula (base + weight_adjust + min(workout_minutes*8, 1000) + heat_add), clamp 1500-4500 ml. Before: 300-500 ml in the 2 h before (about 5-7 ml/kg, est.; ACSM 2007 about 500 ml, Academy/DC/ACSM 2016 5-10 ml/kg secondary). During: sip 150-250 ml every 15-20 min on workouts over 30 min, drink to thirst, max 750 ml/h (est.). Electrolyte tip if workout >= 60 min AND (hot_weather OR salty_sweat OR workout >= 90 min); sodium plus carbohydrate if >= 120 min. After: 1.2-1.5 x kg lost x 1000 ml over 4-6 h (Sports Dietitians Australia 125-150%; ACSM 1.5 L/kg secondary), extra fluid cap 3000 ml/day (est.). ICMR-NIN 2020 exercise-fluid values Not found.",
+  "inputs": [
+    "weight_kg",
+    "sex",
+    "activity_level",
+    "workout_minutes",
+    "hot_weather"
+  ],
+  "minMl": 1500,
+  "maxMl": 4500,
+  "quickAddPresetsMl": [
+    150,
+    200,
+    250,
+    330,
+    500,
+    750,
+    1000
+  ],
+  "drinks": [
+    {
+      "name": "Plain water",
+      "countsAsWaterPct": 100,
+      "notes": "Enough for sessions under about 60 min"
+    },
+    {
+      "name": "Nimbu-namak-shakkar pani (homemade)",
+      "countsAsWaterPct": 100,
+      "notes": "About 1/2 tsp salt per litre (about 1,180 mg sodium per litre, est.) plus light sugar; for 60 min or more; not for doctor-flag users"
+    },
+    {
+      "name": "Tender coconut water",
+      "countsAsWaterPct": 100,
+      "notes": "Potassium about 165-310 mg per 100 g, sodium low and variable (secondary, unverified); some bloating"
+    },
+    {
+      "name": "Chaas (buttermilk, salted)",
+      "countsAsWaterPct": 100,
+      "notes": "Sodium about 68-105 mg per 100 g unsalted in non-Indian databases (secondary); count added salt (Topic 18)"
+    },
+    {
+      "name": "Sports drink",
+      "countsAsWaterPct": 100,
+      "notes": "About 6 g carbohydrate and 45-49 mg sodium per 100 ml (retail listings, secondary); for over 60 min"
+    },
+    {
+      "name": "WHO-formula ORS",
+      "countsAsWaterPct": 100,
+      "notes": "75 mmol/L sodium, 75 mmol/L glucose, 245 mOsm/L; for illness or heat illness, not daily"
+    },
+    {
+      "name": "Chai or coffee",
+      "countsAsWaterPct": 100,
+      "notes": "est.; up to about 450 mg caffeine per day showed no extra dehydration in regular users; sugar"
+    },
+    {
+      "name": "Energy drink",
+      "countsAsWaterPct": 50,
+      "notes": "est.; product policy; caffeine and sugar"
+    },
+    {
+      "name": "Soft drink",
+      "countsAsWaterPct": 50,
+      "notes": "est.; product policy; sugar and caffeine"
+    },
+    {
+      "name": "Alcohol",
+      "countsAsWaterPct": 0,
+      "notes": "Not counted"
+    }
+  ],
+  "drinksTable": [
+    {
+      "drink": "Plain water",
+      "counts": "Yes, 100%",
+      "notes": "Best for sessions under 60 min",
+      "typicalServingMl": {
+        "min": 250,
+        "max": 500
+      }
+    },
+    {
+      "drink": "Nimbu-namak-shakkar pani (homemade, lightly sweet)",
+      "counts": "Yes",
+      "notes": "About 1/2 tsp salt per litre (about 1,180 mg sodium per litre, est.), light sugar; for 60 min or more, not for BP or kidney users",
+      "typicalServingMl": {
+        "min": 250,
+        "max": 500
+      }
+    },
+    {
+      "drink": "Plain nimbu pani with sugar only",
+      "counts": "Yes",
+      "notes": "Sugar, no sodium; keep for short sessions or add a pinch of salt",
+      "typicalServingMl": {
+        "min": 250,
+        "max": 250
+      }
+    },
+    {
+      "drink": "Tender coconut water (nariyal pani)",
+      "counts": "Yes",
+      "notes": "Potassium about 165-310 mg per 100 g, sodium low (2-105 mg per 100 g, secondary); some bloating; short sessions or after workout",
+      "typicalServingMl": {
+        "min": 200,
+        "max": 300
+      }
+    },
+    {
+      "drink": "Chaas (buttermilk, salted)",
+      "counts": "Yes",
+      "notes": "Sodium about 68-105 mg per 100 g unsalted (non-Indian databases, secondary) plus added salt; protein; best after workout with a meal",
+      "typicalServingMl": {
+        "min": 200,
+        "max": 250
+      }
+    },
+    {
+      "drink": "Sports drink (commercial)",
+      "counts": "Yes, if needed",
+      "notes": "About 6 g carbohydrate and 45-49 mg sodium per 100 ml (secondary); useful over 60 min",
+      "typicalServingMl": {
+        "min": 250,
+        "max": 500
+      }
+    },
+    {
+      "drink": "Zero-sugar electrolyte drink or tablet in water",
+      "counts": "Yes",
+      "notes": "Sodium varies by product; check label; no carbohydrate for long sessions",
+      "typicalServingMl": {
+        "min": 250,
+        "max": 500
+      }
+    },
+    {
+      "drink": "WHO-formula ORS",
+      "counts": "Yes",
+      "notes": "75 mmol/L sodium (about 1,725 mg per litre, calc.); illness or heat illness; not an everyday gym drink",
+      "typicalServingMl": {
+        "min": 200,
+        "max": 250
+      }
+    },
+    {
+      "drink": "Chai / coffee (milk, sugar)",
+      "counts": "Yes (est. 100%)",
+      "notes": "Caffeine about 30-120 mg per cup (secondary); sugar; fine before a workout for regular drinkers",
+      "typicalServingMl": {
+        "min": 100,
+        "max": 200
+      }
+    },
+    {
+      "drink": "Plain milk or milkshake (post-workout)",
+      "counts": "Yes",
+      "notes": "Protein, sodium and potassium; sugar if sweetened",
+      "typicalServingMl": {
+        "min": 200,
+        "max": 300
+      }
+    },
+    {
+      "drink": "Energy drink (caffeinated, sugary)",
+      "counts": "Partly (est. 50%)",
+      "notes": "High caffeine and sugar; not for hydration",
+      "typicalServingMl": {
+        "min": 250,
+        "max": 250
+      }
+    },
+    {
+      "drink": "Soft drink / cola",
+      "counts": "Partly (est. 50%)",
+      "notes": "Sugar, caffeine, fizz; poor choice during exercise",
+      "typicalServingMl": {
+        "min": 250,
+        "max": 330
+      }
+    },
+    {
+      "drink": "Packaged fruit juice",
+      "counts": "Partly (est. 50%)",
+      "notes": "Sugar load",
+      "typicalServingMl": {
+        "min": 150,
+        "max": 200
+      }
+    },
+    {
+      "drink": "Alcohol",
+      "counts": "No (0%)",
+      "notes": "Not counted; avoid around exercise",
+      "typicalServingMl": null
+    }
+  ],
+  "reminderRules": [
+    {
+      "rule": "During a logged workout over 30 min, prompt a 150-250 ml sip at most every 20 min; stop prompting when the user says not thirsty after the first 30 min",
+      "source": "FitPlate design (est.); EAH consensus 2015 drink to thirst; ACSM 2007 individualised plans"
+    },
+    {
+      "rule": "Never prompt more than 750 ml per hour; after 2 h show 'drink to thirst'",
+      "source": "FitPlate design (est.); hyponatraemia caution, EAH consensus 2015"
+    },
+    {
+      "rule": "One after-session prompt 30 min after workout end showing 1.2-1.5 x kg lost x 1,000 ml over 4-6 h",
+      "source": "Sports Dietitians Australia 125-150% (via snippet); ACSM 1.5 L/kg (secondary)"
+    },
+    {
+      "rule": "If post-session weight is 0.5 kg or more above pre-session weight, show 'stop adding fluid'",
+      "source": "FitPlate design (est.); EAH consensus (weight gain suggests overdrinking)"
+    },
+    {
+      "rule": "Doctor-flag users (kidney, heart, liver, BP medicines, diuretics, fluid or salt limit): no exercise-fluid or electrolyte prompts; show 'Follow your doctor's fluid and salt advice'",
+      "source": "FitPlate safety design; Topic 18 and Topic 30 convention"
+    }
+  ],
+  "warnings": [
+    "General information, not medical advice.",
+    "Do not drink more than you sweat; over-drinking in long events can cause low blood sodium; drink to thirst.",
+    "Electrolyte drinks and added salt are not for users with kidney, heart or liver disease, salt or fluid limits, BP medicines or diuretics unless their doctor says so.",
+    "ORS is for illness or heat illness, not for daily gym use.",
+    "ICMR-NIN 2020 exercise-fluid values Not found; app logic uses ACSM, NATA, EAH consensus and Sports Dietitians Australia figures, several via secondary summaries (secondary, unverified).",
+    "Sweat sodium varies about 10-100 mmol/L between people; no India-specific sweat study was found."
+  ],
+  "lastResearched": "2026-11-12",
+  "versions": [
+    {
+      "date": "2026-11-12",
+      "file": "FitPlate_Nutrients_2026-11-12.md"
+    }
+  ],
+  "mergeMethod": {
+    "maxMl": "safety limit (lower on conflict)",
+    "minMl": "newest",
+    "lists": "union"
+  },
+  "mergeNotes": [],
+  "needsReview": []
+}

@@ -8,7 +8,7 @@ import { featureFlags } from '../config/featureFlags';
 import { researchDishes } from '../data/research';
 import type { Dish as ResearchDish } from '../models/research';
 import type { Doc } from '../models/common';
-import type { SupplementLog } from '../models/logs';
+import type { SupplementLog, WorkoutSet } from '../models/logs';
 import type { Routine } from '../models/routine';
 import { cookedDays, currentStreak } from '../services/streaks';
 import { portionPatch } from '../services/meals';
@@ -144,7 +144,7 @@ type Store = State & {
   /** A meal that isn't a FitPlate dish, with the user's own numbers. */
   logCustomMeal: (m: { name: string; kcal: number; protein: number; fibre: number }) => void;
   /** A research exercise for some minutes; kcal from its Compendium MET and the user's weight. */
-  logWorkout: (exercise: { id: string; name: string; met: number }, minutes: number) => void;
+  logWorkout: (exercise: { id: string; name: string; met: number }, minutes: number, sets?: WorkoutSet[]) => void;
   addWater: (n: number) => void;
   toggleFavourite: (id: string) => void;
   setPlan: (date: string, slot: Slot, dishId: string | null) => void;
@@ -377,7 +377,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       },
       deleteMeal: (id) => s?.removeMeal(id),
       logCustomMeal: (m) => s?.addMeal({ name: m.name, emoji: '', dishId: null, source: 'custom', kcal: Math.round(m.kcal), proteinG: Math.round(m.protein), fibreG: Math.round(m.fibre), cooked: false }),
-      logWorkout: (e, minutes) => s?.addWorkout({ type: e.name, exerciseId: e.id, minutes, kcal: exerciseKcal(e.met, minutes, bodyWeight) }),
+      logWorkout: (e, minutes, sets) => s?.addWorkout({ type: e.name, exerciseId: e.id, minutes, kcal: exerciseKcal(e.met, minutes, bodyWeight), ...(sets && sets.length ? { sets } : {}) }),
       addWater: (n) => s?.addWater(n),
       toggleFavourite: (id) => s?.toggleFavourite(id),
       setPlan: (date, slot, dishId) => s?.setPlan(date, slot, dishId),

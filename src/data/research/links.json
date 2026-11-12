@@ -1,6 +1,6 @@
 {
   "schema": "fitplate.links.v1",
-  "generatedFor": "Day23",
+  "generatedFor": "Day24",
   "goodSourceDishes": {
     "biotin": [
       {
@@ -1878,6 +1878,330 @@
   ],
   "drinks": [
     {
+      "id": "electrolytes-hydration-exercise",
+      "drinks": [
+        {
+          "name": "Plain water",
+          "countsAsWaterPct": 100,
+          "notes": "Enough for sessions under about 60 min"
+        },
+        {
+          "name": "Nimbu-namak-shakkar pani (homemade)",
+          "countsAsWaterPct": 100,
+          "notes": "About 1/2 tsp salt per litre (about 1,180 mg sodium per litre, est.) plus light sugar; for 60 min or more; not for doctor-flag users"
+        },
+        {
+          "name": "Tender coconut water",
+          "countsAsWaterPct": 100,
+          "notes": "Potassium about 165-310 mg per 100 g, sodium low and variable (secondary, unverified); some bloating"
+        },
+        {
+          "name": "Chaas (buttermilk, salted)",
+          "countsAsWaterPct": 100,
+          "notes": "Sodium about 68-105 mg per 100 g unsalted in non-Indian databases (secondary); count added salt (Topic 18)"
+        },
+        {
+          "name": "Sports drink",
+          "countsAsWaterPct": 100,
+          "notes": "About 6 g carbohydrate and 45-49 mg sodium per 100 ml (retail listings, secondary); for over 60 min"
+        },
+        {
+          "name": "WHO-formula ORS",
+          "countsAsWaterPct": 100,
+          "notes": "75 mmol/L sodium, 75 mmol/L glucose, 245 mOsm/L; for illness or heat illness, not daily"
+        },
+        {
+          "name": "Chai or coffee",
+          "countsAsWaterPct": 100,
+          "notes": "est.; up to about 450 mg caffeine per day showed no extra dehydration in regular users; sugar"
+        },
+        {
+          "name": "Energy drink",
+          "countsAsWaterPct": 50,
+          "notes": "est.; product policy; caffeine and sugar"
+        },
+        {
+          "name": "Soft drink",
+          "countsAsWaterPct": 50,
+          "notes": "est.; product policy; sugar and caffeine"
+        },
+        {
+          "name": "Alcohol",
+          "countsAsWaterPct": 0,
+          "notes": "Not counted"
+        }
+      ],
+      "drinksTable": [
+        {
+          "drink": "Plain water",
+          "counts": "Yes, 100%",
+          "notes": "Best for sessions under 60 min",
+          "typicalServingMl": {
+            "min": 250,
+            "max": 500
+          }
+        },
+        {
+          "drink": "Nimbu-namak-shakkar pani (homemade, lightly sweet)",
+          "counts": "Yes",
+          "notes": "About 1/2 tsp salt per litre (about 1,180 mg sodium per litre, est.), light sugar; for 60 min or more, not for BP or kidney users",
+          "typicalServingMl": {
+            "min": 250,
+            "max": 500
+          }
+        },
+        {
+          "drink": "Plain nimbu pani with sugar only",
+          "counts": "Yes",
+          "notes": "Sugar, no sodium; keep for short sessions or add a pinch of salt",
+          "typicalServingMl": {
+            "min": 250,
+            "max": 250
+          }
+        },
+        {
+          "drink": "Tender coconut water (nariyal pani)",
+          "counts": "Yes",
+          "notes": "Potassium about 165-310 mg per 100 g, sodium low (2-105 mg per 100 g, secondary); some bloating; short sessions or after workout",
+          "typicalServingMl": {
+            "min": 200,
+            "max": 300
+          }
+        },
+        {
+          "drink": "Chaas (buttermilk, salted)",
+          "counts": "Yes",
+          "notes": "Sodium about 68-105 mg per 100 g unsalted (non-Indian databases, secondary) plus added salt; protein; best after workout with a meal",
+          "typicalServingMl": {
+            "min": 200,
+            "max": 250
+          }
+        },
+        {
+          "drink": "Sports drink (commercial)",
+          "counts": "Yes, if needed",
+          "notes": "About 6 g carbohydrate and 45-49 mg sodium per 100 ml (secondary); useful over 60 min",
+          "typicalServingMl": {
+            "min": 250,
+            "max": 500
+          }
+        },
+        {
+          "drink": "Zero-sugar electrolyte drink or tablet in water",
+          "counts": "Yes",
+          "notes": "Sodium varies by product; check label; no carbohydrate for long sessions",
+          "typicalServingMl": {
+            "min": 250,
+            "max": 500
+          }
+        },
+        {
+          "drink": "WHO-formula ORS",
+          "counts": "Yes",
+          "notes": "75 mmol/L sodium (about 1,725 mg per litre, calc.); illness or heat illness; not an everyday gym drink",
+          "typicalServingMl": {
+            "min": 200,
+            "max": 250
+          }
+        },
+        {
+          "drink": "Chai / coffee (milk, sugar)",
+          "counts": "Yes (est. 100%)",
+          "notes": "Caffeine about 30-120 mg per cup (secondary); sugar; fine before a workout for regular drinkers",
+          "typicalServingMl": {
+            "min": 100,
+            "max": 200
+          }
+        },
+        {
+          "drink": "Plain milk or milkshake (post-workout)",
+          "counts": "Yes",
+          "notes": "Protein, sodium and potassium; sugar if sweetened",
+          "typicalServingMl": {
+            "min": 200,
+            "max": 300
+          }
+        },
+        {
+          "drink": "Energy drink (caffeinated, sugary)",
+          "counts": "Partly (est. 50%)",
+          "notes": "High caffeine and sugar; not for hydration",
+          "typicalServingMl": {
+            "min": 250,
+            "max": 250
+          }
+        },
+        {
+          "drink": "Soft drink / cola",
+          "counts": "Partly (est. 50%)",
+          "notes": "Sugar, caffeine, fizz; poor choice during exercise",
+          "typicalServingMl": {
+            "min": 250,
+            "max": 330
+          }
+        },
+        {
+          "drink": "Packaged fruit juice",
+          "counts": "Partly (est. 50%)",
+          "notes": "Sugar load",
+          "typicalServingMl": {
+            "min": 150,
+            "max": 200
+          }
+        },
+        {
+          "drink": "Alcohol",
+          "counts": "No (0%)",
+          "notes": "Not counted; avoid around exercise",
+          "typicalServingMl": null
+        }
+      ]
+    },
+    {
+      "id": "hydration-hot-humid-mumbai",
+      "drinks": [
+        {
+          "name": "Plain water",
+          "countsAsWaterPct": 100,
+          "notes": "First choice in heat; safe boiled or filtered water"
+        },
+        {
+          "name": "Nimbu pani with a pinch of salt",
+          "countsAsWaterPct": 100,
+          "notes": "est.; about 200 mg sodium per glass (calc., est.); 1-2 teaspoons sugar"
+        },
+        {
+          "name": "Chaas (salted buttermilk)",
+          "countsAsWaterPct": 100,
+          "notes": "est.; about 300-500 mg sodium per glass (secondary, unverified); counts toward Topic 18"
+        },
+        {
+          "name": "Tender coconut water",
+          "countsAsWaterPct": 100,
+          "notes": "est.; potassium about 221-361 mg per 100 ml, varies by maturity (secondary, unverified); Topic 19"
+        },
+        {
+          "name": "Torani or aam panna",
+          "countsAsWaterPct": 100,
+          "notes": "est.; traditional heat-wave drinks; sugar and salt vary"
+        },
+        {
+          "name": "ORS (WHO reduced osmolarity)",
+          "countsAsWaterPct": 100,
+          "notes": "For diarrhoea, vomiting or heat illness only; 75 mmol/L sodium, 75 mmol/L glucose; not a daily drink"
+        },
+        {
+          "name": "Sports or electrolyte drink",
+          "countsAsWaterPct": 100,
+          "notes": "est.; sugar and sodium; only for 2 hours or more of sweaty effort"
+        },
+        {
+          "name": "Chai or coffee",
+          "countsAsWaterPct": 100,
+          "notes": "est.; caffeine; Indian heat advisories say limit; Topic 30"
+        },
+        {
+          "name": "Fruit juice or soft drink",
+          "countsAsWaterPct": 50,
+          "notes": "est.; product policy because of sugar"
+        },
+        {
+          "name": "Alcohol",
+          "countsAsWaterPct": 0,
+          "notes": "Not counted; avoid in heat"
+        }
+      ],
+      "drinksTable": [
+        {
+          "drink": "Plain water (boiled, filtered)",
+          "counts": "Yes, 100%",
+          "notes": "First choice; cool, not ice-cold, is easier to drink in quantity (est.)",
+          "typicalServingMl": {
+            "min": 250,
+            "max": 250
+          }
+        },
+        {
+          "drink": "Nimbu pani, pinch of salt",
+          "counts": "Yes",
+          "notes": "Sodium about 200 mg per glass (est., calc.); keep sugar to 1-2 teaspoons (est.)",
+          "typicalServingMl": {
+            "min": 250,
+            "max": 250
+          }
+        },
+        {
+          "drink": "Chaas (buttermilk), salted",
+          "counts": "Yes",
+          "notes": "About 300-500 mg sodium per glass (secondary, unverified); potassium, protein",
+          "typicalServingMl": {
+            "min": 200,
+            "max": 200
+          }
+        },
+        {
+          "drink": "Tender coconut water",
+          "counts": "Yes",
+          "notes": "Potassium about 221-361 mg/100 ml; sodium low to moderate; values vary (secondary, unverified); Topic 19",
+          "typicalServingMl": {
+            "min": 200,
+            "max": 300
+          }
+        },
+        {
+          "drink": "Torani / rice water, aam panna",
+          "counts": "Yes",
+          "notes": "Traditional heat-wave drinks in MoHFW/NDMA lists; sugar and salt vary",
+          "typicalServingMl": {
+            "min": 200,
+            "max": 200
+          }
+        },
+        {
+          "drink": "WHO ORS",
+          "counts": "Yes",
+          "notes": "75 mmol/L sodium, 75 mmol/L glucose; for illness or heat illness only, as per sachet",
+          "typicalServingMl": {
+            "min": 200,
+            "max": 200
+          }
+        },
+        {
+          "drink": "Sports or electrolyte drink",
+          "counts": "Yes, only if needed",
+          "notes": "Sugar and sodium; for 2 hours or more of sweaty effort",
+          "typicalServingMl": {
+            "min": 250,
+            "max": 500
+          }
+        },
+        {
+          "drink": "Chai, coffee",
+          "counts": "Yes (est.)",
+          "notes": "Caffeine; Indian heat advisories say limit tea and coffee; fine in moderation (Topic 30)",
+          "typicalServingMl": {
+            "min": 100,
+            "max": 150
+          }
+        },
+        {
+          "drink": "Fruit juice, soft drinks",
+          "counts": "Partly (est. 50%)",
+          "notes": "Sugar; Topic 30 policy",
+          "typicalServingMl": {
+            "min": 150,
+            "max": 330
+          }
+        },
+        {
+          "drink": "Alcohol",
+          "counts": "No (0%)",
+          "notes": "Worsens heat illness; avoid in heat (NDMA list)",
+          "typicalServingMl": null
+        }
+      ]
+    },
+    {
       "id": "water-daily-requirement",
       "drinks": [
         {
@@ -2071,6 +2395,11 @@
       "met": 2.3
     },
     {
+      "exerciseId": "assisted-pull-up-dip-machine",
+      "name": "Assisted pull-up and dip machine",
+      "met": 3.5
+    },
+    {
       "exerciseId": "balasana-childs-pose",
       "name": "Balasana (Child's Pose)",
       "met": 2.3
@@ -2226,6 +2555,11 @@
       "met": 2.8
     },
     {
+      "exerciseId": "pull-up-bar",
+      "name": "Pull-up bar (pull-up and chin-up)",
+      "met": 3.8
+    },
+    {
       "exerciseId": "push-up",
       "name": "Push-up (with knee and incline versions)",
       "met": 3.8
@@ -2249,6 +2583,11 @@
       "exerciseId": "seated-cable-row",
       "name": "Seated cable row",
       "met": 3.5
+    },
+    {
+      "exerciseId": "skipping-rope",
+      "name": "Skipping rope (basic bounce, alternate-foot step, shadow skipping)",
+      "met": 8.3
     },
     {
       "exerciseId": "smith-machine",
@@ -2289,6 +2628,11 @@
       "exerciseId": "treadmill",
       "name": "Treadmill",
       "met": 4.8
+    },
+    {
+      "exerciseId": "trikonasana-triangle-pose",
+      "name": "Trikonasana (Triangle pose)",
+      "met": 2.3
     },
     {
       "exerciseId": "vrikshasana-tree-pose",

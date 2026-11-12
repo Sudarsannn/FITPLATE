@@ -1,0 +1,692 @@
+{
+  "id": "trikonasana-triangle-pose",
+  "number": 14,
+  "name": "Trikonasana (Triangle pose)",
+  "otherNames": [
+    "Utthita Trikonasana",
+    "Extended Triangle pose",
+    "Triangle pose"
+  ],
+  "section": "yoga_stretch",
+  "type": "yoga_asana",
+  "equipment": [
+    "wall",
+    "yoga block or thick book (optional)",
+    "mat (optional)"
+  ],
+  "noEquipmentAlternative": "Hand on the shin or a chair seat, back against a wall",
+  "musclesPrimary": [
+    "hamstrings (biceps femoris, semitendinosus, semimembranosus)",
+    "hip adductors",
+    "gluteus medius",
+    "obliques",
+    "quadratus lumborum"
+  ],
+  "musclesSecondary": [
+    "quadriceps",
+    "calves",
+    "erector spinae",
+    "deltoid and trapezius (top arm)",
+    "pectoralis (chest opening)"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 2.3,
+  "compendiumCode": "02150",
+  "metOptions": [
+    {
+      "code": "02150",
+      "met": 2.3,
+      "activity": "MET: 2.3, 2024 Adult Compendium of Physical Activities, code 02150, \"Yoga, Hatha\" (search results showed 2.3, Hatha high intensity 8.0, Hot 3.0, Power 4.0; one older guide gave 2.5, probably an earlie"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "flexibility",
+      "sets": 2,
+      "reps": "1 hold per side, block or wall",
+      "timeSec": 25,
+      "restSec": 10,
+      "tempo": "slow nose breathing, 3-5 breaths",
+      "perWeek": 4
+    },
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 2,
+      "reps": "1 hold per side inside a standing flow",
+      "timeSec": 20,
+      "restSec": 10,
+      "tempo": "3 slow breaths",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "relaxation",
+      "sets": 1,
+      "reps": "1 hold per side, evening",
+      "timeSec": 25,
+      "restSec": 10,
+      "tempo": "5 slow breaths",
+      "perWeek": 4
+    },
+    {
+      "level": "intermediate",
+      "goal": "flexibility",
+      "sets": 3,
+      "reps": "1 hold per side, hand on the shin or ankle",
+      "timeSec": 30,
+      "restSec": 10,
+      "tempo": "5 slow breaths",
+      "perWeek": 5
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "1 hold per side in a flow",
+      "timeSec": 25,
+      "restSec": 10,
+      "tempo": "5 slow breaths",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "flexibility",
+      "sets": 3,
+      "reps": "1 hold per side, hand to the floor, revolved or bound options",
+      "timeSec": 50,
+      "restSec": 15,
+      "tempo": "8-10 slow breaths",
+      "perWeek": 5
+    },
+    {
+      "level": "advanced",
+      "goal": "relaxation",
+      "sets": 2,
+      "reps": "1 hold per side",
+      "timeSec": 40,
+      "restSec": 15,
+      "tempo": "8 slow breaths",
+      "perWeek": 4
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "hold_timer",
+    "cameraView": "front",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "front_knee_straight",
+        "joint": "front knee (hip-knee-ankle)",
+        "angleDeg": ">= 165",
+        "parsed": {
+          "op": ">=",
+          "value": 165,
+          "max": null
+        }
+      },
+      {
+        "name": "back_knee_straight",
+        "joint": "back knee (hip-knee-ankle)",
+        "angleDeg": ">= 165",
+        "parsed": {
+          "op": ">=",
+          "value": 165,
+          "max": null
+        }
+      },
+      {
+        "name": "torso_hinged",
+        "joint": "front hip (shoulder-hip-knee of front leg)",
+        "angleDeg": "<= 120",
+        "parsed": {
+          "op": "<=",
+          "value": 120,
+          "max": null
+        }
+      },
+      {
+        "name": "legs_spread",
+        "joint": "leg spread (ankle-hip-ankle)",
+        "angleDeg": ">= 40",
+        "parsed": {
+          "op": ">=",
+          "value": 40,
+          "max": null
+        }
+      },
+      {
+        "name": "hold_long_enough",
+        "joint": "time",
+        "angleDeg": "hold >= 15 s (position flag, not an angle)",
+        "parsed": null
+      }
+    ],
+    "minRepSec": 15
+  },
+  "formChecks": [
+    {
+      "joint": "front knee",
+      "rule": "front knee angle < 165 deg (equals front_knee_straight phase threshold)",
+      "message": "Straighten the front leg, but keep the knee soft"
+    },
+    {
+      "joint": "back knee",
+      "rule": "back knee angle < 165 deg (equals back_knee_straight phase threshold)",
+      "message": "Straighten the back leg"
+    },
+    {
+      "joint": "front hip",
+      "rule": "front hip angle > 120 deg (equals torso_hinged phase threshold)",
+      "message": "Hinge from the hip; reach out over the front leg"
+    },
+    {
+      "joint": "leg spread",
+      "rule": "leg spread angle < 40 deg (equals legs_spread phase threshold)",
+      "message": "Step your feet a little wider"
+    },
+    {
+      "joint": "time",
+      "rule": "hold shorter than 15 s (equals min_rep_sec and hold_long_enough)",
+      "message": "Stay a little longer, breathe slowly"
+    }
+  ],
+  "safetyFlags": [
+    "stop_at_pain_mild_tension_only",
+    "hand_on_shin_or_block_never_on_knee",
+    "hinge_from_hip_not_side_bend",
+    "soft_front_knee_no_locking",
+    "neck_problems_gaze_down_or_ahead",
+    "hamstring_injury_skip_or_short_hinge",
+    "lower_back_pain_wall_and_block",
+    "hypertension_no_breath_holding_look_down",
+    "pregnancy_block_and_wide_stance",
+    "osteoporosis_block_no_deep_reach",
+    "dizziness_sit_down",
+    "recent_surgery_ask_doctor"
+  ],
+  "progressions": [
+    "Hand to the ankle or floor while keeping the long line",
+    "Top arm reaching over the ear, longer holds, gaze up to the top hand",
+    "Revolved or bound triangle (intermediate to advanced, est.)"
+  ],
+  "regressions": [
+    "Wall version with top hand on the hip",
+    "Block or chair under the lower hand",
+    "Shorter stance with soft knees and a small hinge"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "front, 3 m",
+      "shows": "stance width: feet about 3 to 3.5 feet apart, arms out",
+      "textOverlay": "Feet one long leg apart."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 2 m",
+      "shows": "foot angles: front foot 90 degrees, back foot in 15-30 degrees",
+      "textOverlay": "Front toes out. Back toes in."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 3 m",
+      "shows": "hinge from the hip with a long torso line",
+      "textOverlay": "Hip back first."
+    },
+    {
+      "seconds": 6,
+      "angle": "front, 3 m",
+      "shows": "wrong (side-bend, hand on knee) vs right (long line, hand on shin)",
+      "textOverlay": "Hand on shin, never the knee."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 3 m",
+      "shows": "block version, hand on a block outside the front foot",
+      "textOverlay": "No floor? Use a block."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 3 m",
+      "shows": "wall version, back and back heel on the wall",
+      "textOverlay": "Wall keeps you honest."
+    },
+    {
+      "seconds": 6,
+      "angle": "front, 1.5 m",
+      "shows": "gaze options: up, ahead, down",
+      "textOverlay": "Neck tender? Look down."
+    },
+    {
+      "seconds": 6,
+      "angle": "side, 3 m",
+      "shows": "top-arm options: hip, up, over the ear",
+      "textOverlay": "Pick your top arm."
+    }
+  ],
+  "lastResearched": "2026-11-12",
+  "setupSteps": [
+    "Warm up first. 2 to 5 minutes of walking on the spot, arm circles and a few easy hip circles. Do not do a deep triangle with cold hamstrings.",
+    "Floor. Flat, non-slip. A sticky mat or bare feet on a dry floor; never socks on tiles. Both feet must stay planted.",
+    "Wall. For the wall version, stand with the back of the pelvis and the back heel close to a smooth wall. Clear a space about 1 m wide.",
+    "Block. Keep a block (or a stack of books about 20 to 25 cm high, est.) beside the front foot, outside the foot, ready for the lower hand.",
+    "Clothing. Stretchy pants or shorts; a long kurta tucked or tied so you can see the legs; no tight jeans.",
+    "Mat direction. Face the long side of the room (or the long edge of the mat) so the legs spread along the mat.",
+    "Camera. Phone on a shelf at hip height, 2.5 to 3 m in front, so the whole body, both feet and the hands are in frame (see sections 11 and 12)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Stand tall in Tadasana",
+      "action": "stand with the feet together, arms by the sides, weight even on both feet.",
+      "feel": "tall and steady.",
+      "breathing": "2 slow breaths.",
+      "tempo": "5 seconds.",
+      "visualCheck": "front view, head over the hips, shoulders level."
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Step the feet wide",
+      "action": "step or walk the feet apart about 3 to 3.5 feet (about 90 to 105 cm, est.; roughly one long leg-length). A beginner can start slightly narrower.",
+      "feel": "a wide steady base, legs strong.",
+      "breathing": "out-breath as you step.",
+      "tempo": "3 seconds.",
+      "visualCheck": "front view, feet well apart, toes of both feet pointing forward toward the long side of the mat."
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Raise the arms (optional)",
+      "action": "lift the arms out to the sides to shoulder height, palms down, in line with the shoulders.",
+      "feel": "chest wide, shoulders soft.",
+      "breathing": "in-breath as you lift.",
+      "tempo": "3 seconds.",
+      "visualCheck": "front view, arms in one line from fingertip to fingertip."
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Turn the right foot out",
+      "action": "turn the right foot out 90 degrees so the toes point to the right short end of the mat. The right heel lines up with the middle of the left arch.",
+      "feel": "the right thigh turning out; no twist in the knee.",
+      "breathing": "steady.",
+      "tempo": "3 seconds.",
+      "visualCheck": "right kneecap points the same way as the right toes."
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Turn the left foot in",
+      "action": "turn the left foot in about 15 to 30 degrees (sources range 15 to 45). Keep the left leg straight and the left foot flat.",
+      "feel": "the left outer foot grounded.",
+      "breathing": "steady.",
+      "tempo": "3 seconds.",
+      "visualCheck": "front view, left foot slightly angled in, not rolled onto its edge."
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Square the hips",
+      "action": "keep the hips facing forward toward the long side of the mat as much as comfortable; the pelvis opens a little to the right but is not forced.",
+      "feel": "both legs active; the front thigh turning out, not forced.",
+      "breathing": "slow.",
+      "tempo": "3 seconds.",
+      "visualCheck": "front view, both hip points roughly level."
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Lengthen the spine",
+      "action": "breathe in and stretch up through the crown of the head, ribs lifted.",
+      "feel": "long waist both sides.",
+      "breathing": "in-breath.",
+      "tempo": "3 seconds.",
+      "visualCheck": "the torso is not leaning yet."
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Hinge from the front hip",
+      "action": "breathe out, push the right hip back and send the torso out over the right leg, as if sliding the hip crease back; keep both sides of the waist long. Do not side-bend the spine.",
+      "feel": "a stretch in the back of the right thigh and the inner groin; both legs working.",
+      "breathing": "slow out-breath.",
+      "tempo": "4 seconds.",
+      "visualCheck": "front view, the torso comes out over the leg in a long line with no collapse into the right side."
+    },
+    {
+      "n": 9,
+      "part": null,
+      "title": "Place the lower hand",
+      "action": "when you cannot go further with a long spine, rest the right hand on the shin, or on a block placed outside the right foot, or on the ankle. Never rest the hand on the knee joint.",
+      "feel": "support, not pressure; no pinch in the knee.",
+      "breathing": "continuous.",
+      "tempo": "3 seconds.",
+      "visualCheck": "hand on the shin below the knee or on the block; the knee is clear."
+    },
+    {
+      "n": 10,
+      "part": null,
+      "title": "Reach the top arm up",
+      "action": "stretch the left arm up so both arms form a line, the top arm over the shoulder. Options: arm straight up; top hand on the top hip (easiest); top arm reaching over the ear (harder).",
+      "feel": "chest opening, shoulder soft.",
+      "breathing": "in-breath.",
+      "tempo": "3 seconds.",
+      "visualCheck": "front view, arms in a line from the lower hand up through the top hand."
+    },
+    {
+      "n": 11,
+      "part": null,
+      "title": "Choose the gaze",
+      "action": "look at the top hand if the neck is comfortable; otherwise look straight ahead, or down at the floor or big toe.",
+      "feel": "neck long, no strain.",
+      "breathing": "steady.",
+      "tempo": "2 seconds.",
+      "visualCheck": "chin not jammed, neck not craned."
+    },
+    {
+      "n": 12,
+      "part": null,
+      "title": "Hold",
+      "action": "keep both knees straight but soft, and press the feet into the floor.",
+      "feel": "stretch in the thigh and side; mild, never pain.",
+      "breathing": "slow nose breaths, 3 to 5 breaths.",
+      "tempo": "about 15 to 30 seconds (est.; 5 breaths is about 25 seconds).",
+      "visualCheck": "no change in the line."
+    },
+    {
+      "n": 13,
+      "part": null,
+      "title": "Come up",
+      "action": "breathe in, press the back foot down, lead with the chest and the top arm and rise with a long spine. Bring the arms down.",
+      "feel": "the legs working as you lift.",
+      "breathing": "in-breath on rising.",
+      "tempo": "4 seconds.",
+      "visualCheck": "no jerking up with the neck."
+    },
+    {
+      "n": 14,
+      "part": null,
+      "title": "Switch",
+      "action": "turn the feet to the other side and repeat. Do both sides each round.",
+      "feel": "even work on both sides.",
+      "breathing": "out-breath.",
+      "tempo": "10 seconds rest in Tadasana.",
+      "visualCheck": "same line on both sides."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Side-bending instead of hinging",
+      "text": "Side-bending instead of hinging. The waist collapses on the lower side, the chest turns toward the floor. Fix: slide the front hip back and lengthen both sides of the waist; use a block."
+    },
+    {
+      "title": "Hand on the knee",
+      "text": "Hand on the knee. Pressure on the knee joint can strain it; the front knee may hyperextend. Fix: hand on the shin, ankle or a block."
+    },
+    {
+      "title": "Locked, hyperextended front knee",
+      "text": "Locked, hyperextended front knee. It can overstretch the back of the knee. Fix: keep a micro-bend, press the foot down, engage the thigh."
+    },
+    {
+      "title": "Stance too wide",
+      "text": "Stance too wide. The pelvis tilts and the hamstrings overstretch (BODi trainer snippet prefers a shorter stance). Fix: shorten the stance until the hips stay level."
+    },
+    {
+      "title": "Forcing the hand to the floor",
+      "text": "Forcing the hand to the floor. You lose the line and tense the neck. Fix: use a block, or the shin; the line matters more than touching."
+    },
+    {
+      "title": "Cranking the neck up",
+      "text": "Cranking the neck up. Looking up while the chin is misaligned strains the neck. Fix: look ahead or down."
+    },
+    {
+      "title": "Back foot too flat and back knee turned",
+      "text": "Back foot too flat and back knee turned. Twists the knee. Fix: turn the back foot in 15 to 30 degrees and keep the knees pointing the same way as the toes."
+    },
+    {
+      "title": "Hips rolling forward and leaning forward",
+      "text": "Hips rolling forward and leaning forward. The pose becomes a forward fold. Fix: use the wall behind you."
+    },
+    {
+      "title": "Holding the breath or hurrying out",
+      "text": "Holding the breath or hurrying out. Dizziness, especially with high blood pressure. Fix: slow nose breaths; rise slowly."
+    }
+  ],
+  "safetyNotes": [
+    "Mild tension, never pain. Stop at pain in the knee, back, neck or hamstring.",
+    "Neck: keep the neck neutral; if the neck is tender, look straight ahead or down and do not turn the head up (YogaUOnline, Art of Living, snippets). Cervical spondylitis was listed as a contraindication by one yoga institute.",
+    "Hamstring: do not force depth; a recent hamstring strain means skip or use the shortest hinge (a hamstring caution appears in a revolved-triangle source; standard triangle is generally described as a hamstring stretch).",
+    "Lower back: hinge from the hip, keep the spine long, use the wall and a block. Severe back problems: a yoga teacher or physio first (snippet). A slipped disc was on one institute's contraindication list.",
+    "Knee: hand on shin or block, never the knee; soft knee, no locking.",
+    "Blood pressure and dizziness: do not hold the breath; rise slowly; look down for high blood pressure (one guide); if you feel dizzy, sit down.",
+    "Stop immediately if you feel: sharp pain, numbness or tingling in the arm or leg, dizziness, chest pain or breathlessness, or a pull or pop in the hamstring.",
+    "Spotter: not needed; use a wall.",
+    "Gym etiquette: use a clear mat area and keep the block out of the walkway."
+  ],
+  "sources": [
+    "Ministry of AYUSH Common Yoga Protocol (CYP), standing asanas list incl. Trikonasana (Spanish edition, seen only as a snippet); MDNIY CYP 2023 English PDF (seen only as a link, Trikonasana page not retrieved): https://indembarg.gov.in/content/Common%20Yoga%20Protocol%20(Spanish).pdf ; https://yogamdniy.nic.in/files/pdf/CYP-2023-English.pdf ; https://www.mea.gov.in/images/pdf/common-yoga-protocol-english.pdf",
+    "Yoga International, Trikonasana Tricks (stance width, front knee, open top hip less; snippet): https://yogainternational.com/article/view/trikonasana-tricks-7-tips-for-refining-your-triangle-pose/",
+    "YogaUOnline triangle pose pages (hinge from the hips, props, wall, neck, revolved-triangle hamstring caution; snippets): https://yogauonline.com/yoga-poses/triangle-pose/ ; https://yogauonline.com/pose-library/versions-of-triangle-pose-trikonasana/ ; https://yogauonline.com/pose-library/yoga-pose-primer-unlock-parvrtta-trikonasanas-revolved-triangle-pose-benefits/",
+    "Foot angles and stance variation (snippets): Brett Larkin: https://www.brettlarkin.com/?p=19208 ; Byron Yoga: https://www.byronyoga.com/asana-spotlight-trikonasana/ ; Habuild: https://wp.habuild.in/?p=8489 ; BODi: https://bod-blog.prod.cd.beachbodyondemand.com/?p=156112",
+    "Art of Living triangle pose (wall for heart condition, top hand on hip; snippet): https://www.artofliving.org/us-en/yoga/poses/triangle-pose ; Lessons.com triangle pose (back heel at the wall; snippet): https://lessons.com/yoga-poses/triangle-pose",
+    "Contraindications and precautions lists (yoga institute and health-site pages; snippets): https://theyogainstitute.org/how-to-do-trikonasana-in-yoga-its-benefits/ ; https://www.bajajfinservhealth.in/articles/trikonasana-benefits ; https://www.apollo247.com/health-topics/general-medical-consultation/trikonasana-yoga-pose-steps-benefits",
+    "Pregnancy and osteoporosis block advice (snippets): https://prenatalyogacenter.com/triangle-pose-trikonasana ; https://yogauonline.com/pose-library/explore-the-many-faces-of-triangle-pose-trikonasana/ ; AHA prenatal yoga: https://www.heart.org/en/news/2024/03/12/prenatal-yoga-may-help-ease-stress-improve-fitness-during-pregnancy",
+    "Herrmann SD et al., 2024 Adult Compendium of Physical Activities (02150 Yoga, Hatha 2.3; seen via search snippet): https://pacompendium.com/conditioning-exercise ; https://pubmed.ncbi.nlm.nih.gov/38242596/",
+    "ACSM stretching guidance (Garber et al. 2011, via the earlier Yoga & Stretch 13 file; snippets): https://www.acsm.org/blog-detail/acsm-certified-blog/2021/03/18/stretching-and-flexibility-guidelines-update",
+    "Condition sources (general, from earlier items): ADA PMC5317029: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/ ; PCOS position statement: https://researchers.westernsydney.edu.au/en/publications/exercise-in-the-management-of-polycystic-ovary-syndrome-a-positio/ ; Marshfield Clinic asthma: https://shine365.marshfieldclinic.org/wellness/asthma-exercise/ ; ECU Health asthma: https://healthlibrary.ecuhealth.org/lung-health/management/asthma-management-exercise-safety",
+    "Stance width: about 3 to 4 feet, one leg's distance, or a shorter stance. We chose 3 to 3.5 feet, shorter for beginners.",
+    "Back-foot angle: 15, 30 to 45 and 45 degrees across sources. We chose 15 to 30 degrees for beginners.",
+    "Hand placement: shin, ankle, block or floor; the knee is advised against. We chose shin or block.",
+    "Gaze: up to the top hand (classic) versus ahead or down for neck or blood-pressure concerns. We offer all three, default ahead for beginners.",
+    "Lower-back pain: sources conflict (avoid versus helpful). We chose \"modify\" with wall and block.",
+    "Not found: official CYP step-by-step text and hold time for Trikonasana; MDNIY technique page; Trikonasana-specific MET; joint-angle norms; clinical condition sources (ACOG, ADA, AHA for this pose). Our thresholds are estimates.",
+    "Most pages were seen only as search snippets; direct page fetches were not possible."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 43.5,
+      "70kg": 37.3,
+      "80kg": 32.6
+    },
+    "per300kcal": {
+      "60kg": 130.4,
+      "70kg": 111.8,
+      "80kg": 97.8
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "yoga",
+    "mobility",
+    "flexibility",
+    "balance",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "small_flat",
+    "quiet",
+    "office_desk",
+    "5_10_min",
+    "warm_up",
+    "cool_down",
+    "morning",
+    "evening",
+    "relaxation"
+  ],
+  "swapsByAccess": {
+    "none": "Wall version with the hand on the shin, or short stance with hand on a chair seat",
+    "home_equipment": "Yoga block or thick books under the lower hand",
+    "basic_gym": "Bench or low plyo box under the lower hand; wall in the stretching area",
+    "full_gym": "Studio mat area with blocks and a wall; stable bench or low box for the hand"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "No breath-holding; look down or ahead; rise slowly; ask a doctor if on treatment",
+      "source": "Yoga institute list and gaze guide (snippets); Not found (clinical)"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "modify",
+      "change": "Check feet; eat first if on glucose-lowering medicine; wall for balance; ask a doctor",
+      "source": "ADA PMC5317029 (general); Not found (pose-specific)"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "If cleared, use the wall with top hand on the hip; no breath-holding",
+      "source": "Art of Living (snippet); yoga institute list (snippet); Not found (clinical)"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "No change (source not found)",
+      "source": "Not found"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Wall and high block or chair; shorter hold; stable wide stance",
+      "source": "Not found"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "No pose-specific caution found",
+      "source": "PCOS exercise position statement (general); Not found (pose-specific)"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "No pose-specific caution found; ease in if stiff",
+      "source": "Not found"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Reliever inhaler nearby; slow breathing; stop if wheezing",
+      "source": "Marshfield Clinic and ECU Health asthma exercise-safety pages (general)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Soft knee; hand on shin or block, not the knee; shorter stance and hold; stop if the knee hurts",
+      "source": "Teaching sources (snippets); Not found (clinical OA guidance)"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Wall, block, hip hinge, short holds; skip if pain or leg symptoms increase; ask a doctor for severe or disc problems",
+      "source": "Yoga institute list and teaching sources (snippets, conflicting); Not found (clinical)"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "modify",
+      "change": "Top hand on the hip instead of overhead",
+      "source": "Not found"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "modify",
+      "change": "Block under the hand; wall for balance; no forceful reach; ask a doctor",
+      "source": "Yoga site advising a block (snippet); Not found (clinical)"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "modify",
+      "change": "High block under the lower hand, wider stance, wall; stop if dizzy; ask a midwife or doctor",
+      "source": "Prenatal yoga sources (snippets); AHA prenatal yoga news (general); Not found (ACOG wording)"
+    },
+    {
+      "condition": "postpartum",
+      "status": "modify",
+      "change": "Start gently; joints may be lax; ask a physio if pain",
+      "source": "Not found"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Follow the surgeon's advice; abdominal surgery and hernia listed as contraindications by a yoga institute",
+      "source": "Yoga institute list (snippet); Not found (clinical)"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "home",
+      "office_desk"
+    ],
+    "bodyRegion": [
+      "full_body"
+    ],
+    "goalTags": [
+      "flexibility",
+      "relaxation",
+      "general_fitness"
+    ],
+    "intensity": "light",
+    "noise": "quiet",
+    "space": "small_room",
+    "typicalMinutes": 8,
+    "kcalPer10min70kg": 27,
+    "difficulty1to5": 2,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Yoga & stretch",
+    "Home",
+    "Office desk",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Yoga",
+    "Legs",
+    "Glutes",
+    "Core",
+    "Hold timer",
+    "Under 10 min"
+  ],
+  "needsReview": [
+    "rep_counter phase \"hold_long_enough\" (time): angle \"hold >= 15 s (position flag, not an angle)\" is not a parseable angle"
+  ],
+  "versions": [
+    {
+      "date": "2026-11-12",
+      "file": "FitPlate_Fitness_2026-11-12.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

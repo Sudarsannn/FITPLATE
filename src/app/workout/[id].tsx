@@ -17,6 +17,9 @@ import { useStore } from '../../lib/store';
 import type { Exercise } from '../../models/exercise';
 import { doseLabel, exerciseKcal, prescriptionFor, SECTION_LABEL, shortExerciseName } from '../../services/fitness';
 import { clock, planMinutes, workoutPhases } from '../../services/workoutPlan';
+import { clampKg, clampRpe, countCue, countdownCue, effortWords, KG_STEP, repTarget, summarise, swapOptions } from '../../services/workoutSession';
+import { speakStep, stopSpeaking } from '../../lib/speak';
+import type { WorkoutSet } from '../../models/logs';
 import { colors, radius, type } from '../../theme';
 
 /**
@@ -55,13 +58,25 @@ function Player({ e, target, routine }: { e: Exercise; target: number | null; ro
   const [cue, setCue] = useState(0);
   const [done, setDone] = useState(false);
   const [logged, setLogged] = useState(false);
+  const [count, setCount] = useState(0);
+  const [weight, setWeight] = useState(0);
+  const [rpe, setRpe] = useState(0);
+  const [results, setResults] = useState<WorkoutSet[]>([]);
+  const [voice, setVoice] = useState(true);
+  const [swapOpen, setSwapOpen] = useState(false);
   const phase = at >= 0 ? phases[at] : null;
   const name = shortExerciseName(e.name);
   const workSets = phases.filter((p) => p.kind === 'work').length;
 
   const leftRef = useRef(0);
+  const voiceRef = useRef(true);
+  useEffect(() => {
+    voiceRef.current = voice;
+  }, [voice]);
   const go = useCallback(
     (i: number) => {
+      stopSpeaking();
+      setCount(0);
       if (i >= phases.length) {
         success();
         setDone(true);
@@ -71,7 +86,7 @@ function Player({ e, target, routine }: { e: Exercise; target: number | null; ro
       leftRef.current = phases[i].seconds ?? 0;
       setLeft(leftRef.current);
     },
-    [phases],
+    [phases, setCount],
   );
 
   // One clock for the whole session; timed phases count down with it and move on at zero.
@@ -83,6 +98,8 @@ function Player({ e, target, routine }: { e: Exercise; target: number | null; ro
       if (!timed) return;
       leftRef.current = Math.max(0, leftRef.current - 1);
       setLeft(leftRef.current);
+      const c = voiceRef.current ? countdownCue(leftRef.current) : null;
+      if (c) speakStep(c);
       if (leftRef.current === 0) {
         success();
         go(at + 1);
@@ -91,6 +108,17 @@ function Player({ e, target, routine }: { e: Exercise; target: number | null; ro
     return () => clearInterval(t);
   }, [at, done, paused, phases, go]);
 
+  const isStrength = e.type === 'strength';
+  const target0 = phase && phase.kind === 'work' && !phase.seconds ? repTarget(phase.reps) : null;
+  /** Save this work set's numbers (reps tapped, weight, effort), then move on. */
+  const finishSet = (next: number) => {
+    if (phase && phase.kind === 'work') {
+      setResults((r) => [...r, { set: phase.set, reps: count > 0 ? count : null, weightKg: isStrength && weight > 0 ? weight : null, rpe: isStrength && rpe > 0 ? rpe : null }]);
+    }
+    go(next);
+  };
+  const summary = summarise(results);
+  const alternatives = useMemo(() => swapOptions(e, researchExercises), [e]);
   const mins = Math.max(1, Math.round(elapsed / 60));
   const kcal = e.met != null ? exerciseKcal(e.met, done ? mins : planMinutes(phases), bodyWeightKg) : null;
   const steps = e.steps;
@@ -111,6 +139,13 @@ function Player({ e, target, routine }: { e: Exercise; target: number | null; ro
             <Stat value={`${workSets}`} label={workSets === 1 ? 'set' : 'sets'} />
             <Stat value={kcal != null ? `≈ ${kcal}` : '–'} label="kcal (est.)" />
           </View>
+          {summary.reps > 0 || summary.avgRpe != null ? (
+            <Text style={[type.body, { color: colors.muted, marginTop: 12, textAlign: 'center' }]}>
+              {summary.reps > 0 ? `${summary.reps} reps` : ''}
+              {summary.volumeKg > 0 ? ` · ${summary.volumeKg} kg lifted in total` : ''}
+              {summary.avgRpe != null ? ` · effort ${summary.avgRpe} of 10 (${effortWords(summary.avgRpe).toLowerCase()})` : ''}
+            </Text>
+          ) : null}
           {e.met != null ? (
             <GradientButton
               title={logged ? 'Logged to Today' : `Log ${mins} min of ${name}`}
@@ -118,7 +153,7 @@ function Player({ e, target, routine }: { e: Exercise; target: number | null; ro
               disabled={logged}
               style={{ alignSelf: 'stretch', marginTop: 22 }}
               onPress={() => {
-                logWorkout({ id: e.id, name: e.name, met: e.met! }, mins);
+                logWorkout({ id: e.id, name: e.name, met: e.met! }, mins, results);
                 setLogged(true);
                 success();
               }}
@@ -199,15 +234,36 @@ function Player({ e, target, routine }: { e: Exercise; target: number | null; ro
               ) : (
                 <>
                   <Text style={styles.reps} numberOfLines={2} adjustsFontSizeToFit>
-                    {phase.kind === 'work' ? (phase.reps ?? 'Go') : ''}
+                    {phase.kind === 'work' ? (count > 0 ? String(count) : (phase.reps ?? 'Go')) : ''}
                   </Text>
-                  <Text style={styles.repsLabel}>reps</Text>
+                  <Text style={styles.repsLabel}>{count > 0 && target0 ? `of ${target0} reps` : 'reps'}</Text>
                 </>
               )}
             </Ring>
             {phase.kind === 'work' && phase.seconds && phase.reps ? <Text style={styles.hint}>{phase.reps}</Text> : null}
             {phase.kind === 'rest' ? <Text style={styles.hint}>Breathe. Next up: set {phase.nextSet}.</Text> : null}
             {paused ? <Text style={[styles.hint, { color: colors.warn }]}>Paused</Text> : null}
+
+            {phase.kind === 'work' && !phase.seconds ? (
+              <GradientButton
+                title={count > 0 ? `Tap for each rep · ${count}` : 'Tap for each rep'}
+                variant="glass"
+                style={{ alignSelf: 'stretch', marginTop: 14 }}
+                onPress={() => {
+                  select();
+                  const n = count + 1;
+                  setCount(n);
+                  if (voice) speakStep(countCue(n, target0));
+                }}
+              />
+            ) : null}
+            {phase.kind === 'work' && isStrength ? (
+              <View style={[styles.card, { alignSelf: 'stretch' }]}>
+                <Text style={styles.cardLabel}>This set</Text>
+                <Stepper label="Weight" value={weight > 0 ? `${weight} kg` : 'Bodyweight'} onMinus={() => setWeight((w) => clampKg(w - KG_STEP))} onPlus={() => setWeight((w) => clampKg(w + KG_STEP))} />
+                <Stepper label="Effort" value={rpe > 0 ? `${rpe} of 10 · ${effortWords(rpe)}` : 'Not set'} onMinus={() => setRpe((r) => (r <= 1 ? 0 : clampRpe(r - 1)))} onPlus={() => setRpe((r) => clampRpe(r === 0 ? 6 : r + 1))} />
+              </View>
+            ) : null}
 
             {phase.kind === 'work' && step ? (
               <View style={[styles.card, { alignSelf: 'stretch' }]}>
@@ -273,13 +329,60 @@ function Player({ e, target, routine }: { e: Exercise; target: number | null; ro
               onPress={() => {
                 success();
                 setPaused(false);
-                go(at + 1);
+                finishSet(at + 1);
               }}
             />
           </View>
         )}
+        {phase ? (
+          <View style={styles.sideRow}>
+            <PressableScale onPress={() => setVoice((v) => !v)} style={styles.plain} accessibilityLabel={voice ? 'Counting aloud is on' : 'Counting aloud is off'}>
+              <Text style={styles.plainText}>{voice ? 'Counting aloud: on' : 'Counting aloud: off'}</Text>
+            </PressableScale>
+            <PressableScale onPress={() => setSwapOpen((v) => !v)} style={styles.plain} accessibilityLabel="Swap this move">
+              <Text style={styles.plainText}>Swap move</Text>
+            </PressableScale>
+            <PressableScale
+              onPress={() => (nextAt != null && routine ? router.replace({ pathname: '/workout/[id]', params: startParams(routine.id, rItems, nextAt) }) : router.replace('/move'))}
+              style={styles.plain}
+              accessibilityLabel="Skip this move"
+            >
+              <Text style={styles.plainText}>Skip move</Text>
+            </PressableScale>
+          </View>
+        ) : null}
+        {phase && swapOpen ? (
+          <View style={{ gap: 6, marginTop: 6 }}>
+            {alternatives.length === 0 ? <Text style={styles.muted}>No easy swap for this one.</Text> : null}
+            {alternatives.map((a) => (
+              <PressableScale
+                key={a.id}
+                onPress={() => router.replace({ pathname: '/workout/[id]', params: { id: a.id, ...(routine ? { routine: routine.id, at: String(routine.at) } : {}) } })}
+                style={styles.plain}
+                accessibilityLabel={`Swap to ${shortExerciseName(a.name)}`}
+              >
+                <Text style={styles.plainText}>{shortExerciseName(a.name)}</Text>
+              </PressableScale>
+            ))}
+          </View>
+        ) : null}
       </View>
     </SafeAreaView>
+  );
+}
+
+function Stepper({ label, value, onMinus, onPlus }: { label: string; value: string; onMinus: () => void; onPlus: () => void }) {
+  return (
+    <View style={{ flexDirection: 'row', alignItems: 'center', gap: 10, marginTop: 8 }}>
+      <Text style={[styles.body, { width: 64, fontWeight: '800' }]}>{label}</Text>
+      <PressableScale onPress={onMinus} style={styles.cueBtn} accessibilityLabel={`Less ${label.toLowerCase()}`}>
+        <Ionicons name="remove" size={18} color={colors.text} />
+      </PressableScale>
+      <Text style={[styles.body, { flex: 1, textAlign: 'center' }]}>{value}</Text>
+      <PressableScale onPress={onPlus} style={styles.cueBtn} accessibilityLabel={`More ${label.toLowerCase()}`}>
+        <Ionicons name="add" size={18} color={colors.text} />
+      </PressableScale>
+    </View>
   );
 }
 
@@ -302,6 +405,7 @@ function LinkPill({ icon, label, onPress }: { icon: keyof typeof Ionicons.glyphM
 }
 
 const styles = StyleSheet.create({
+  sideRow: { flexDirection: 'row', justifyContent: 'space-between', marginTop: 6 },
   segments: { flexDirection: 'row', gap: 4, paddingHorizontal: 18 },
   segment: { flex: 1, height: 5, borderRadius: 3 },
   hero: { alignItems: 'center', paddingVertical: 22 },

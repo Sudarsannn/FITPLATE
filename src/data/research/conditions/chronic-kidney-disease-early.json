@@ -1,0 +1,492 @@
+{
+  "id": "chronic-kidney-disease-early",
+  "type": "condition",
+  "name": "Chronic kidney disease (early stages, G1-G3b)",
+  "surveyQuestion": "Do you have any of these health conditions? (select all that apply) -> Kidney disease (CKD). Check question: Has a doctor told you that you have chronic kidney disease, or that your eGFR is below 60 or there is protein (albumin) in your urine? Yes, stage 1-3 / Yes, stage 4-5 or on dialysis or kidney transplant (out of scope: show doctor-only message, no targets) / Yes, but I do not know my stage / Not sure / No. Follow-ups: latest eGFR, ACR, serum potassium and phosphate (optional); on water pills, ACE inhibitor, ARB, spironolactone or SGLT2 inhibitor (Yes/No/Not sure; app never comments on medicines); has your doctor given you a fluid, potassium, phosphorus or protein limit (Yes with numbers / No)",
+  "targets": [
+    {
+      "nutrient": "energy",
+      "unit": "kcal/day",
+      "generalAdult": 2110,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (2110 sedentary man, 1660 sedentary woman) (secondary, unverified); no CKD-specific energy value verified in this run (Not found); weight goal only if the doctor or dietitian sets it"
+    },
+    {
+      "nutrient": "protein",
+      "unit": "g/kg/day",
+      "generalAdult": 0.83,
+      "profileValue": 0.8,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "requires_doctor_input; KDIGO 2024 suggests 0.8 g/kg/day for adults with CKD G3-G5 not on dialysis (grade 2C) and avoiding above 1.3 g/kg/day (practice point), via guideline summaries; ICMR STW CKD (newer version) 0.8 g/kg/day, older version 0.6-0.8 g/kg/day; Indian vegetarians often eat less (39-57 g/day, Frontiers in Nutrition 2024, secondary) so doctor or dietitian checks before any restriction; no high-protein diets or protein powders; G1-G2: general ICMR-NIN value"
+    },
+    {
+      "nutrient": "total_fat",
+      "unit": "% energy",
+      "generalAdult": 30,
+      "profileValue": 30,
+      "min": null,
+      "max": 30,
+      "direction": "same",
+      "source": "No CKD-specific change found; DGI 2024 / WHO 2023 (as P4/P6)"
+    },
+    {
+      "nutrient": "saturated_fat",
+      "unit": "% energy",
+      "generalAdult": 10,
+      "profileValue": null,
+      "min": null,
+      "max": 10,
+      "direction": "same",
+      "source": "WHO 2023 general limit; heart-protective advice per P4/P21 if selected; KDIGO CKD-specific value Not found"
+    },
+    {
+      "nutrient": "trans_fat",
+      "unit": "% energy",
+      "generalAdult": 1,
+      "profileValue": 1,
+      "min": null,
+      "max": 1,
+      "direction": "limit",
+      "source": "WHO 2023 (under 1%)"
+    },
+    {
+      "nutrient": "mufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found"
+    },
+    {
+      "nutrient": "pufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found"
+    },
+    {
+      "nutrient": "omega_3",
+      "unit": "servings/week",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found for CKD in this run; fish is a protein and phosphorus source, so portions follow the doctor or dietitian plan; no fish-oil capsules suggested"
+    },
+    {
+      "nutrient": "dietary_cholesterol",
+      "unit": "mg/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found; as P4 if selected"
+    },
+    {
+      "nutrient": "total_carbohydrate",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found; as P1/P2 if diabetes is also selected"
+    },
+    {
+      "nutrient": "added_sugar",
+      "unit": "g/day",
+      "generalAdult": 25,
+      "profileValue": 25,
+      "min": null,
+      "max": 25,
+      "direction": "limit",
+      "source": "WHO 2015 conditional 5% of energy (as P5/P6); diabetes and hypertension are the leading causes of CKD in India (GBD 2021 via supplementary file, secondary)"
+    },
+    {
+      "nutrient": "fibre",
+      "unit": "g/day",
+      "generalAdult": 30,
+      "profileValue": 30,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "As P4; KDIGO 2024 favours a plant-rich diet (Mediterranean or DASH style, via summaries); potassium and phosphorus from beans and whole grains are doctor-guided"
+    },
+    {
+      "nutrient": "sodium",
+      "unit": "mg/day",
+      "generalAdult": 2000,
+      "profileValue": 2000,
+      "min": null,
+      "max": 2000,
+      "direction": "limit",
+      "source": "KDIGO 2024: under 2 g sodium (under 90 mmol, about 5 g salt) per day, grade 2C, not advised in sodium-wasting kidney disease; WHO 2012; DGI 2024; ICMR STW salt under 5 g/day; requires_doctor_input for edema, diuretics and BP"
+    },
+    {
+      "nutrient": "salt",
+      "unit": "g/day",
+      "generalAdult": 5,
+      "profileValue": 5,
+      "min": null,
+      "max": 5,
+      "direction": "limit",
+      "source": "As sodium (calc.: 2,000 mg sodium = about 5.1 g salt)"
+    },
+    {
+      "nutrient": "potassium",
+      "unit": "mg/day",
+      "generalAdult": 3510,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "requires_doctor_input; No automatic target and no push to eat more or less; KDIGO 2024 favours an individual plan from serum potassium and stage; the general 3,510 mg (ICMR-NIN 2020, WHO 2012; secondary, unverified) is shown as information only; no potassium supplements or KCl salt substitutes"
+    },
+    {
+      "nutrient": "phosphorus",
+      "unit": "mg/day",
+      "generalAdult": 1000,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "requires_doctor_input; No mg/day number found for Indian CKD (Not found); doctor or renal dietitian sets it; general ICMR-NIN 2020 1,000 mg (secondary, unverified) shown as information; avoid phosphate additives (NKF)"
+    },
+    {
+      "nutrient": "calcium",
+      "unit": "mg/day",
+      "generalAdult": 1000,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "requires_doctor_input; No change shown; calcium tablets and binders are doctor decisions (as P16 notes)"
+    },
+    {
+      "nutrient": "iron",
+      "unit": "mg/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "requires_doctor_input; General target shown as information; anaemia in CKD is treated by the doctor, no iron tablets suggested"
+    },
+    {
+      "nutrient": "magnesium",
+      "unit": "mg/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "requires_doctor_input; No change shown; supplements and magnesium antacids not suggested in CKD without a doctor"
+    },
+    {
+      "nutrient": "vitamin_d",
+      "unit": "ug/day",
+      "generalAdult": 15,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "requires_doctor_input; ICMR-NIN 2020 15 ug (secondary, unverified); CKD bone-mineral treatment is doctor-led; no doses given"
+    },
+    {
+      "nutrient": "vitamin_b12",
+      "unit": "ug/day",
+      "generalAdult": 2.2,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); no CKD-specific change found"
+    },
+    {
+      "nutrient": "folate",
+      "unit": "ug DFE/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found for CKD; general target applies"
+    },
+    {
+      "nutrient": "water",
+      "unit": "ml/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "requires_doctor_input; No automatic target and no push to drink more; NKF: people with early CKD may not need to limit fluid; fluid limit only if the nephrologist sets one. Follow your doctor's advice."
+    },
+    {
+      "nutrient": "alcohol",
+      "unit": "standard drinks/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "limit",
+      "source": "Best none; doctor advises (no CKD-specific number found)"
+    },
+    {
+      "nutrient": "tobacco",
+      "unit": "cigarettes/day",
+      "generalAdult": null,
+      "profileValue": 0,
+      "min": null,
+      "max": 0,
+      "direction": "limit",
+      "source": "Smoking worsens kidney and heart risk (general); quit support"
+    }
+  ],
+  "bloodMarkers": [
+    {
+      "marker": "eGFR (estimated glomerular filtration rate)",
+      "target": "G1 90 or more; G2 60-89; G3a 45-59; G3b 30-44; G4 15-29 and G5 under 15 are out of scope. CKD needs eGFR under 60 or ACR 30 mg/g or more for over 3 months; the doctor interprets",
+      "unit": "mL/min/1.73 m2",
+      "source": "KDIGO 2024 (thresholds via secondary summaries)"
+    },
+    {
+      "marker": "Urine albumin-creatinine ratio (ACR)",
+      "target": "A1 under 30; A2 30-300; A3 over 300 (boundary wording varies by source); doctor interprets",
+      "unit": "mg/g (3 and 30 mg/mmol)",
+      "source": "KDIGO 2024 (via secondary summaries)"
+    },
+    {
+      "marker": "Serum creatinine",
+      "target": "Lab's own range; used by the lab to calculate eGFR; creatine supplements can raise it without kidney damage (secondary)",
+      "unit": "mg/dL",
+      "source": "Lab report; secondary"
+    },
+    {
+      "marker": "Serum potassium",
+      "target": "Lab's normal range, about 3.5-5.3 mmol/L (as topic 19); above 5.5 needs a doctor; the app never sets a diet target from it",
+      "unit": "mmol/L",
+      "source": "As topic 19 (Mayo Clinic, NHS ThinkKidneys, secondary)"
+    },
+    {
+      "marker": "Serum phosphate",
+      "target": "Lab's range (hyperphosphataemia above about 4.5 mg/dL, labs vary); doctor sets the target",
+      "unit": "mg/dL",
+      "source": "As topic 16 (secondary)"
+    },
+    {
+      "marker": "Blood pressure",
+      "target": "Doctor-set; see P3",
+      "unit": "mmHg",
+      "source": "P3; KDIGO 2021 BP in CKD"
+    },
+    {
+      "marker": "HbA1c, fasting glucose",
+      "target": "Stored only; ranges as P1/P2",
+      "unit": "%; mg/dL",
+      "source": "P1/P2"
+    },
+    {
+      "marker": "Haemoglobin",
+      "target": "Stored only; low haemoglobin in CKD is a doctor matter",
+      "unit": "g/dL",
+      "source": "As P11"
+    },
+    {
+      "marker": "LDL, HDL, triglycerides, non-HDL",
+      "target": "Doctor sets goals (CKD is a high-risk state); see P4",
+      "unit": "mg/dL",
+      "source": "P4"
+    },
+    {
+      "marker": "Uric acid",
+      "target": "Stored only; see P15",
+      "unit": "mg/dL",
+      "source": "P15"
+    }
+  ],
+  "waterMl": {
+    "min": null,
+    "max": null,
+    "notes": "No automatic water target for CKD. Early CKD (G1-G3) usually needs no fluid limit (NKF: may not need to limit fluid), but FitPlate neither pushes a higher target nor sets a limit; any fluid restriction comes only from the nephrologist, especially with swelling, heart failure, diuretics or advanced CKD. If a doctor's limit is entered, it overrides everything. Follow your doctor's advice."
+  },
+  "sodiumMgMax": 2000,
+  "dietaryCholesterolMgMax": null,
+  "foodsFavour": [
+    "fresh home-cooked vegetables, fruit and whole grains in the portions your kidney team agrees",
+    "dals and legumes in doctor-agreed portions (plant protein)",
+    "fresh unprocessed foods cooked with little salt",
+    "lemon, jeera, hing, garlic, ginger, coriander and pepper to flavour food instead of salt",
+    "plain water as the main drink unless a limit is set"
+  ],
+  "foodsLimit": [
+    "pickles, papad, namkeen, instant noodles, chips, sauces and packaged foods (sodium and phosphate additives)",
+    "cola and processed cheese (phosphate additives; look for PHOS on labels)",
+    "low-sodium salt, Tata Salt Lite type salts and any KCl salt substitute",
+    "protein powders, high-protein supplements and creatine",
+    "herbal, ayurvedic and unlabelled traditional remedies, and painkillers of the NSAID type, unless the nephrologist agrees",
+    "large portions of potassium-rich foods only if the doctor has said to limit potassium"
+  ],
+  "goodFitDishes": [
+    {
+      "dishNumber": 1,
+      "dishName": "Poha"
+    },
+    {
+      "dishNumber": 9,
+      "dishName": "Idli with Sambar"
+    },
+    {
+      "dishNumber": 4,
+      "dishName": "Masala Dosa"
+    },
+    {
+      "dishNumber": 51,
+      "dishName": "Uttapam"
+    },
+    {
+      "dishNumber": 37,
+      "dishName": "Bhindi Masala"
+    },
+    {
+      "dishNumber": 67,
+      "dishName": "Mix Veg Curry"
+    },
+    {
+      "dishNumber": 80,
+      "dishName": "Masoor Dal"
+    },
+    {
+      "dishNumber": 14,
+      "dishName": "Egg Bhurji"
+    },
+    {
+      "dishNumber": 52,
+      "dishName": "Moong Dal Khichdi"
+    },
+    {
+      "dishNumber": 58,
+      "dishName": "Khaman Dhokla"
+    }
+  ],
+  "cautionDishes": [
+    {
+      "dishNumber": 12,
+      "dishName": "Rajma Chawal",
+      "reason": "Rajma is potassium and phosphorus rich (est.); portions per doctor or dietitian"
+    },
+    {
+      "dishNumber": 8,
+      "dishName": "Chole (Chana Masala)",
+      "reason": "Legume gravy, potassium and phosphorus (est.) and salt"
+    },
+    {
+      "dishNumber": 17,
+      "dishName": "Palak Paneer",
+      "reason": "Spinach and paneer: high potassium and phosphorus (est.)"
+    },
+    {
+      "dishNumber": 75,
+      "dishName": "Dum Aloo",
+      "reason": "Potato is high in potassium unless leached (est.); salty gravy"
+    },
+    {
+      "dishNumber": 39,
+      "dishName": "Veg Biryani",
+      "reason": "High sodium and large rice portion (est.); restaurant versions use salt and additives"
+    },
+    {
+      "dishNumber": 3,
+      "dishName": "Paneer Butter Masala",
+      "reason": "Paneer and cream: phosphorus, sodium and saturated fat (est.)"
+    },
+    {
+      "dishNumber": 28,
+      "dishName": "Chicken 65",
+      "reason": "Fried, salty, high protein portion (est.)"
+    },
+    {
+      "dishNumber": 98,
+      "dishName": "Mango Lassi",
+      "reason": "Dairy phosphorus, potassium and sugar (est.)"
+    },
+    {
+      "dishNumber": 20,
+      "dishName": "Vada Pav",
+      "reason": "Salty chutneys, refined flour, potato (est.)"
+    },
+    {
+      "dishNumber": 35,
+      "dishName": "Curd Rice",
+      "reason": "Dairy phosphorus and potassium (est.) and salt; portion matters"
+    }
+  ],
+  "conflictsWith": [
+    {
+      "profileId": "high-blood-pressure",
+      "rule": "P3 potassium-rich salt substitutes and any push to raise potassium are blocked when CKD is selected; sodium under 2,000 mg is shared; CKD requires doctor input"
+    },
+    {
+      "profileId": "muscle-gain",
+      "rule": "P27 high-protein targets, protein powders and creatine are blocked for CKD; protein follows 0.8 g/kg and the doctor"
+    },
+    {
+      "profileId": "type-2-diabetes",
+      "rule": "P1 15-20% protein share is capped by the CKD 0.8 g/kg; doctor decides medicines (SGLT2 inhibitors, metformin)"
+    },
+    {
+      "profileId": "kidney-stones",
+      "rule": "P14 advice to drink more water (2.5 L urine goal) must not apply with CKD; fluid is the nephrologist's call"
+    },
+    {
+      "profileId": "fat-loss",
+      "rule": "P25 high-protein deficit plans are capped at the CKD protein value"
+    },
+    {
+      "profileId": "healthy-ageing-50-plus",
+      "rule": "P31 higher protein advice for older adults does not apply; doctor sets protein"
+    },
+    {
+      "profileId": "gout-high-uric-acid",
+      "rule": "P15 tips on high water intake and NSAIDs do not apply; doctor decides"
+    }
+  ],
+  "requiresDoctorInput": true,
+  "requiresDoctorInputStated": true,
+  "fluidNote": null,
+  "warnings": [
+    "Not for stage 4-5 CKD, dialysis or kidney transplant: the app shows no targets",
+    "Protein, potassium, phosphorus, sodium and fluid limits depend on eGFR, labs, medicines and dialysis status and are set by the doctor or renal dietitian",
+    "No automatic fluid or potassium target",
+    "No potassium or low-sodium (KCl) salt substitutes",
+    "No protein powder, creatine, herbal or ayurvedic remedies, or NSAID painkillers without the nephrologist's OK",
+    "Swelling, much less urine, breathlessness, blood in urine, chest pain or palpitations: see a doctor (emergency if severe)"
+  ],
+  "lastResearched": "2026-11-12",
+  "versions": [
+    {
+      "date": "2026-11-12",
+      "file": "FitPlate_Nutrients_2026-11-12.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3); max as safety limit",
+    "limits": "safety limit (lower on conflict)",
+    "lists": "union",
+    "requiresDoctorInput": "stated true in any version, else newest version (missing flag + limits → true)"
+  },
+  "mergeNotes": [],
+  "needsReview": []
+}

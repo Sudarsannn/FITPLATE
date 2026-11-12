@@ -12,7 +12,6 @@ import { addDays, dayKey, useStore } from '../lib/store';
 import { DOCTOR_LINE } from '../services/healthLimits';
 import { useTargets } from '../lib/useTargets';
 import { glassesToMl, litres, PRESETS, waterHistory, waterStreak } from '../services/water';
-import { waterTarget } from '../services/targets';
 import { colors, radius, type } from '../theme';
 
 const dayLetter = (key: string) => ['S', 'M', 'T', 'W', 'T', 'F', 'S'][new Date(`${key}T00:00:00`).getDay()];
@@ -21,9 +20,9 @@ const dayLetter = (key: string) => ['S', 'M', 'T', 'W', 'T', 'F', 'S'][new Date(
 export default function WaterScreen() {
   const { days, today, addWater, settings, updateSettings } = useStore();
   const [now] = useState(() => new Date());
-  const { health, water } = useTargets();
+  const { health, water, waterInfo } = useTargets();
   const target = water.glasses;
-  const info = waterTarget();
+  const info = waterInfo;
   const caution = health.waterCaution;
   const keysNewestFirst = useMemo(() => Array.from({ length: 30 }, (_, i) => dayKey(addDays(now, -i))), [now]);
   const week = useMemo(() => waterHistory(days, keysNewestFirst.slice(0, 7).reverse(), target), [days, keysNewestFirst, target]);

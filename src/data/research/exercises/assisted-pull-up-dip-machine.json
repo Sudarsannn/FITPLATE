@@ -1,0 +1,764 @@
+{
+  "id": "assisted-pull-up-dip-machine",
+  "number": 27,
+  "name": "Assisted pull-up and dip machine",
+  "otherNames": [
+    "Assisted pull-up machine",
+    "Gravitron",
+    "Counterweight pull-up and dip machine",
+    "Pull-up assist",
+    "Dip assist"
+  ],
+  "section": "gym",
+  "type": "strength",
+  "equipment": [
+    "Assisted pull-up/dip machine (reverse weight stack with selector pin)",
+    "Kneel pad or step platform",
+    "Pull-up handles (wide, neutral, underhand)",
+    "Dip handles",
+    "Flat shoes"
+  ],
+  "noEquipmentAlternative": "Towel-door row; inverted or table rows only if the table is heavy, stable and rated for your weight; chair dips (Home 11); band-assisted pull-ups on a stable bar with a doorway bar caution",
+  "musclesPrimary": [
+    "latissimus dorsi (pull-up mode)",
+    "pectoralis major (dip mode)",
+    "triceps brachii (dip mode)"
+  ],
+  "musclesSecondary": [
+    "rhomboids",
+    "middle and lower trapezius",
+    "teres major",
+    "posterior deltoid",
+    "anterior deltoid",
+    "rotator cuff",
+    "biceps brachii",
+    "brachialis",
+    "brachioradialis",
+    "forearm flexors",
+    "trunk stabilisers"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": false,
+  "met": 3.5,
+  "compendiumCode": null,
+  "metOptions": [
+    {
+      "code": "02050",
+      "met": 6,
+      "activity": "Extras (text only, harder work): 02050, 6.0 METs, \"resistance (weight) training, free weight, power lifting or body building, vigorous effort\" (carried over, not re-opened). No Compendium code for the"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 2,
+      "reps": "8-10 at RIR 3-4",
+      "timeSec": null,
+      "restSec": 65,
+      "tempo": "2 s pull, 1 s pause, 3 s lower",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 2,
+      "reps": "8-10 at RIR 3-4 (as a circuit station)",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2 s pull, 1 s pause, 3 s lower",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "8-10 at RIR 2-3",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "2 s pull, 1 s pause, 3 s lower",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "strength",
+      "sets": 3,
+      "reps": "5-8 at RIR 3",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "2 s pull, 1 s pause, 3 s lower",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 2,
+      "reps": "12 at RIR 3-4",
+      "timeSec": null,
+      "restSec": 50,
+      "tempo": "2 s pull, 0 s pause, 2 s lower",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "8-10 at RIR 2-3",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2 s pull, 1 s pause, 3 s lower",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "8-12 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "2 s pull, 1 s pause, 3 s lower",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "strength",
+      "sets": 4,
+      "reps": "5-6 at RIR 2",
+      "timeSec": null,
+      "restSec": 105,
+      "tempo": "2 s pull, 1 s pause, 3 s lower",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "12-15 at RIR 2",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "2 s pull, 0 s pause, 2 s lower",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "8-10 at RIR 2 (low assistance)",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2 s pull, 1 s pause, 3 s lower",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "8-12 at RIR 0-2",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "2 s pull, 1 s pause, 3 s lower",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": 5,
+      "reps": "3-5 at RIR 1-2 (low assistance)",
+      "timeSec": null,
+      "restSec": 135,
+      "tempo": "2 s pull, 1 s pause, 3 s lower",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "endurance",
+      "sets": 4,
+      "reps": "15 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 38,
+      "tempo": "2 s pull, 0 s pause, 2 s lower",
+      "perWeek": 2
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "either",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip"
+    ],
+    "phases": [
+      {
+        "name": "pullup_bottom_hang",
+        "joint": "elbow (shoulder-elbow-wrist), both sides",
+        "angleDeg": ">= 150",
+        "parsed": {
+          "op": ">=",
+          "value": 150,
+          "max": null
+        }
+      },
+      {
+        "name": "pullup_top",
+        "joint": "elbow (shoulder-elbow-wrist), both sides",
+        "angleDeg": "<= 90",
+        "parsed": {
+          "op": "<=",
+          "value": 90,
+          "max": null
+        }
+      },
+      {
+        "name": "torso_lean_max",
+        "joint": "torso lean (hip-shoulder line against vertical)",
+        "angleDeg": "<= 30",
+        "parsed": {
+          "op": "<=",
+          "value": 30,
+          "max": null
+        }
+      },
+      {
+        "name": "dip_top",
+        "joint": "elbow (shoulder-elbow-wrist), both sides",
+        "angleDeg": ">= 150",
+        "parsed": {
+          "op": ">=",
+          "value": 150,
+          "max": null
+        }
+      },
+      {
+        "name": "dip_bottom",
+        "joint": "elbow (shoulder-elbow-wrist), both sides",
+        "angleDeg": "<= 90",
+        "parsed": {
+          "op": "<=",
+          "value": 90,
+          "max": null
+        }
+      },
+      {
+        "name": "dip_depth_floor",
+        "joint": "elbow (shoulder-elbow-wrist), both sides",
+        "angleDeg": ">= 70",
+        "parsed": {
+          "op": ">=",
+          "value": 70,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 3
+  },
+  "formChecks": [
+    {
+      "joint": "elbow",
+      "rule": "pull-up top elbow angle > 90 degrees (equals pullup_top threshold; rep not counted)",
+      "message": "Pull your chest toward the handles"
+    },
+    {
+      "joint": "elbow",
+      "rule": "pull-up bottom elbow angle < 150 degrees (equals pullup_bottom_hang threshold; rep not counted)",
+      "message": "Straighten your arms at the bottom"
+    },
+    {
+      "joint": "hip",
+      "rule": "torso lean > 30 degrees (equals torso_lean_max threshold)",
+      "message": "Stop swinging: brace your core"
+    },
+    {
+      "joint": "elbow",
+      "rule": "dip bottom elbow angle < 70 degrees (equals dip_depth_floor threshold)",
+      "message": "Too deep: stop at 90 degrees"
+    },
+    {
+      "joint": "elbow",
+      "rule": "dip bottom elbow angle > 90 degrees (equals dip_bottom threshold; rep not counted)",
+      "message": "Lower a little more, to about 90 degrees"
+    },
+    {
+      "joint": "wrist",
+      "rule": "separate flag: left and right wrist heights differ beyond a set margin (no angle used)",
+      "message": "Keep both sides level"
+    },
+    {
+      "joint": "shoulder",
+      "rule": "separate flag: shoulder height rises toward the ear line during the pull (no angle used)",
+      "message": "Shoulders down first"
+    },
+    {
+      "joint": "elbow",
+      "rule": "rep duration < 3 s or lowering < 2 s",
+      "message": "Slow down: 3 seconds on the way down"
+    }
+  ],
+  "safetyFlags": [
+    "more_weight_means_more_help",
+    "load_is_body_weight_minus_pin",
+    "pin_fully_in",
+    "start_with_high_assistance_8_to_10_clean_reps",
+    "reduce_assistance_in_small_steps",
+    "no_swinging_or_kicking",
+    "control_the_lowering_3_seconds",
+    "platform_for_balance_not_pushing",
+    "shoulder_blades_down_first",
+    "dip_depth_about_90_degrees_elbow",
+    "stop_if_front_of_shoulder_pinches",
+    "no_breath_holding",
+    "high_blood_pressure_no_failure_sets",
+    "resting_bp_180_110_do_not_lift",
+    "shoulder_problems_avoid_dip_mode_ask_professional",
+    "lower_back_pain_no_swinging",
+    "knee_pain_pad_loads_kneecaps",
+    "pregnancy_ask_obstetrician",
+    "osteoporosis_ask_doctor",
+    "recent_surgery_follow_surgeon_limits",
+    "stand_up_before_releasing_handles",
+    "ask_staff_first_session",
+    "doorway_bar_caution"
+  ],
+  "progressions": [
+    "lower the assistance by one step at a time",
+    "slow 3-5 s lowering with a 1-2 s pause at the top",
+    "negatives then a few full reps on the pull-up bar (Gym 28); bodyweight dips on a dip station (Gym 38)"
+  ],
+  "regressions": [
+    "more assistance on the pin, or lat pulldown at a light load (Gym 25)",
+    "band-assisted pull-ups on a stable bar, inverted or table rows if safe, or towel-door row",
+    "chair dips with feet far forward and short range (Home 11), or chest press machine (Gym 22)"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "three-quarter front, 3 m",
+      "shows": "stack, pin, kneel pad, step platform, pull-up and dip handles",
+      "textOverlay": "More weight = more help"
+    },
+    {
+      "seconds": 8,
+      "angle": "close front, 1 m",
+      "shows": "choosing the assistance and pushing the pin in",
+      "textOverlay": "Pin in. Load = body weight minus pin"
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 2.5 m",
+      "shows": "grips: wide overhand, neutral, underhand",
+      "textOverlay": "Wide - Neutral - Underhand"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "getting on the pad, knees on, arms straight; platform alternative",
+      "textOverlay": "Knees on pad, arms straight"
+    },
+    {
+      "seconds": 10,
+      "angle": "side, 2 m",
+      "shows": "one pull-up rep: shoulders down, elbows down, chest up, slow 3 s lowering",
+      "textOverlay": "Pull - Squeeze - Lower slowly"
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 2.5 m",
+      "shows": "shoulders down versus shrugging and craning",
+      "textOverlay": "Shoulders down first"
+    },
+    {
+      "seconds": 10,
+      "angle": "side, 2 m",
+      "shows": "dip mode: lower to about 90 degrees at the elbow, press up",
+      "textOverlay": "Stop at 90 degrees"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "finish: stand up holding the handles, let the pad rise gently",
+      "textOverlay": "Stand up, then let go"
+    }
+  ],
+  "lastResearched": "2026-11-12",
+  "setupSteps": [
+    "Remember the rule: more weight on the pin = more help = easier. The number is the help, not the load you lift.",
+    "Work out your lifted load: body weight minus the pin number. One guide's example: a 180 lb person using 50 lb of assistance lifts about 130 lb. In kg: a 70 kg person using 30 kg of help lifts about 40 kg (est.). Log that figure, not only the pin number.",
+    "Check the units and steps: many machines show kg or lb and step in plate increments that may be 5 lb or 5 kg or other values; read the placard. Increments vary by machine (the size of the step is Not found as a standard). Some machines add small \"half\" weights; ask staff.",
+    "Starting assistance: sources differ. One says about 60% of your body weight if you have never done it; others say enough help for 6–10 (or 8–10) clean, controlled reps; another says 3 sets of 5–8. FitPlate's choice: pick the assistance that allows 8–10 clean reps with 3–4 reps in reserve, which for many first-timers is roughly half to two-thirds of body weight (est., not validated). If you can do more than 12 reps easily, lower the help by one step next time.",
+    "Push the pin fully in so it cannot fall out; check the number before you kneel.",
+    "Kneel pad: place both knees on the pad, shins flat, torso upright and tall. The pad rises as you pull and sinks as you lower. Let it settle before you begin.",
+    "Step platform: stand on the platform with feet flat and use it for balance only; do not push off hard with your legs.",
+    "How to get on and off: step or kneel on with the pad at its lowest position, reach up and take the handles, and lower yourself until the arms are straight. At the end, stand up (or step back) and let the pad rise gently before letting go; never drop the last bit.",
+    "If your arms cannot reach straight: use a lower pad setting or a machine with a platform that starts lower; ask staff. Some machines have a height adjustment (not all).",
+    "Wide overhand (pronated): hands slightly outside shoulder width, thumbs around the handles, wrists straight. Most lat-focused.",
+    "Neutral (palms facing): hands about shoulder width on the parallel handles. Many people find it the kindest to the shoulders and elbows; often the best choice for beginners.",
+    "Underhand (supinated, chin-up): hands about shoulder width, palms facing you. Uses the biceps most; start with extra assistance and avoid it if elbows or wrists hurt.",
+    "No direct source was found comparing neutral and overhand grips specifically on this machine (Not found). One 2017 study of free pull-ups found a towel pull-up gave lower middle-trapezius activity than a traditional pull-up (snippet), so grips change which muscles work.",
+    "Switch to the dip handles: the machine has either a separate set of dip handles or a position change. Read the placard; ask staff the first time.",
+    "Platform or kneel pad: on many machines you kneel on the pad again, or stand on a platform with your hands on the dip bars at your sides and arms straight, shoulders pressed down away from the ears.",
+    "Depth limit: most sources say stop when the upper arms are roughly parallel to the floor, where the elbow bends to about 90 degrees (est.); one coaching blog argues the right depth depends on your shoulder and that parallel is a competition cue, not a universal limit. FitPlate uses about 90 degrees as the limit for beginners.",
+    "Torso: a slight forward lean works the chest more; upright works the triceps more (coach-level). Keep it small and steady."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": "Pull-up mode (neutral or overhand grip)",
+      "title": "Set the pin",
+      "action": "Choose the assistance (section 3, point 4) and push the pin fully in.",
+      "feel": "Nothing yet.",
+      "breathing": "Breathe normally.",
+      "tempo": null,
+      "visualCheck": "Side: pin in. Front: nothing blocking the handles."
+    },
+    {
+      "n": 2,
+      "part": "Pull-up mode (neutral or overhand grip)",
+      "title": "Get on the pad or platform",
+      "action": "Kneel on the pad with shins flat or stand on the platform; take the handles with straight arms.",
+      "feel": "A gentle hang through the arms and sides of the back.",
+      "breathing": "Breathe in.",
+      "tempo": null,
+      "visualCheck": "Side: torso upright, no swing. Front: hands level, wrists straight."
+    },
+    {
+      "n": 3,
+      "part": "Pull-up mode (neutral or overhand grip)",
+      "title": "Set the shoulder blades",
+      "action": "Pull the shoulder blades gently down, away from the ears, with arms still straight.",
+      "feel": "The muscles under the armpits switch on; shoulders away from the ears.",
+      "breathing": "Start breathing out.",
+      "tempo": null,
+      "visualCheck": "Front: shoulders drop, not shrugged."
+    },
+    {
+      "n": 4,
+      "part": "Pull-up mode (neutral or overhand grip)",
+      "title": "Pull the elbows down",
+      "action": "Drive the elbows down and toward your hips so the chest rises toward the handles.",
+      "feel": "The back muscles pulling the elbows, not the hands.",
+      "breathing": "Keep breathing out.",
+      "tempo": null,
+      "visualCheck": "Front: elbows pointing down; head stays neutral. Side: torso still."
+    },
+    {
+      "n": 5,
+      "part": "Pull-up mode (neutral or overhand grip)",
+      "title": "Reach the top",
+      "action": "Bring the chin level with or just above the handles, chest toward the hands, without craning the neck.",
+      "feel": "A squeeze between the shoulder blades.",
+      "breathing": "Finish breathing out.",
+      "tempo": null,
+      "visualCheck": "Front: elbows bent about 90 degrees or less (est.); chin not pushed forward."
+    },
+    {
+      "n": 6,
+      "part": "Pull-up mode (neutral or overhand grip)",
+      "title": "Lower slowly",
+      "action": "Straighten the arms under control; let the shoulder blades rise last; do not drop.",
+      "feel": "A controlled stretch in the lats while the pad sinks smoothly.",
+      "breathing": "Breathe in.",
+      "tempo": null,
+      "visualCheck": "Side: no bounce; arms end nearly straight."
+    },
+    {
+      "n": 7,
+      "part": "Pull-up mode (neutral or overhand grip)",
+      "title": "Repeat, then finish",
+      "action": "Repeat steps 3–6. After the last rep, stand up or step off while still holding the handles and let the pad rise gently.",
+      "feel": "Calm release.",
+      "breathing": "Normal.",
+      "tempo": null,
+      "visualCheck": "Nothing swings or crashes."
+    },
+    {
+      "n": 8,
+      "part": "Dip mode",
+      "title": "Take the dip position",
+      "action": "On the dip handles with arms straight, shoulders pressed down, chest slightly up.",
+      "feel": "Arms supporting you; shoulders away from the ears.",
+      "breathing": "Breathe in.",
+      "tempo": null,
+      "visualCheck": "Front: elbows close to the body, wrists straight. Side: small, steady lean."
+    },
+    {
+      "n": 9,
+      "part": "Dip mode",
+      "title": "Lower slowly",
+      "action": "Bend the elbows and lower until the upper arms are roughly parallel to the floor (about 90 degrees at the elbow, est.).",
+      "feel": "A stretch across the chest and a controlled load in the triceps; no pinching at the front of the shoulder.",
+      "breathing": "Keep breathing in.",
+      "tempo": null,
+      "visualCheck": "Side: elbows not flared, shoulders not rolling forward past the handles."
+    },
+    {
+      "n": 10,
+      "part": "Dip mode",
+      "title": "Press back up",
+      "action": "Push the handles down to straighten the arms, keeping the shoulders down.",
+      "feel": "Triceps and chest pushing; no shoulder shrug.",
+      "breathing": "Breathe out.",
+      "tempo": null,
+      "visualCheck": "Front: arms straight at the top without locking hard."
+    },
+    {
+      "n": 11,
+      "part": "Dip mode",
+      "title": "Stop if the front of the shoulder pinches. Reduce depth, add assistance, or switch to the chest press machine (Gym 22) or chair dips (Home 11) with a short range",
+      "action": null,
+      "feel": null,
+      "breathing": null,
+      "tempo": null,
+      "visualCheck": null
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Choosing too little assistance too early",
+      "text": "Choosing too little assistance too early. Why: the rep turns into a heave and the shoulders shrug. Fix: add assistance until you can do 8–10 clean reps."
+    },
+    {
+      "title": "Choosing too much assistance and riding the pad",
+      "text": "Choosing too much assistance and riding the pad. Why: one source warns that max assistance is not challenging enough to build strength. Fix: lower the help one step at a time once you reach the top of your rep range."
+    },
+    {
+      "title": "Reading the pin as your load",
+      "text": "Reading the pin as your load. Why: more weight is more help, so the \"heavier\" pin is the easier one. Fix: track body weight minus pin."
+    },
+    {
+      "title": "Swinging or kicking",
+      "text": "Swinging or kicking. Why: momentum replaces muscle and can strain the shoulders. Fix: brace the trunk, keep the knees on the pad and slow the tempo."
+    },
+    {
+      "title": "Dropping on the lowering phase",
+      "text": "Dropping on the lowering phase. Why: you lose the most useful part of the rep and can jolt the shoulders. Fix: 3 seconds down."
+    },
+    {
+      "title": "Pushing off the platform with the legs",
+      "text": "Pushing off the platform with the legs. Why: the legs do the work. Fix: use the platform for balance only (as one guide says)."
+    },
+    {
+      "title": "Shrugging and craning the neck to reach the top",
+      "text": "Shrugging and craning the neck to reach the top. Why: the upper trapezius takes over and the neck tightens. Fix: shoulders down first; chin level; stop a little lower rather than craning."
+    },
+    {
+      "title": "Going too deep in dips with flared elbows",
+      "text": "Going too deep in dips with flared elbows. Why: the front of the shoulder takes extra stress; the evidence is limited (see section 9), but pinching is a warning. Fix: stop at about 90 degrees at the elbow and keep the elbows close."
+    },
+    {
+      "title": "Stepping off and letting the pad crash up",
+      "text": "Stepping off and letting the pad crash up. Why: noise and a hazard for neighbours. Fix: stand up holding the handles and let the pad rise gently."
+    },
+    {
+      "title": "Skipping mode checks",
+      "text": "Skipping mode checks. Why: dip handles and pull-up handles use different positions and pads. Fix: read the placard; ask staff."
+    }
+  ],
+  "safetyNotes": [
+    "Shoulder problems: the fixed path can aggravate a painful shoulder (one retailer blog); dip mode is the main concern. A peer-reviewed review says evidence that dips injure the shoulder is limited (two case reports of pectoralis major rupture, anecdotes), and a 2022 study of dips to exhaustion in healthy men says injury claims have minimal support (snippets); still, avoid dips with current shoulder pain, impingement or instability, and use short range.",
+    "High blood pressure: avoid breath-holding; breathe out on the effort; moderate effort.",
+    "Lower back pain: no swinging or kicking; keep the trunk braced; use a lat pulldown or seated row if it hurts.",
+    "Pregnancy, recent surgery, osteoporosis, heart disease: see the table; ask a professional."
+  ],
+  "sources": [
+    "BullBarFit blog series on assisted pull-up machines (more weight = more help; kneel pad with shins flat, torso upright; start with enough assistance for 6–10 clean reps; reduce assistance gradually; fixed path can aggravate shoulder injuries). https://bullbarfit.com/blogs/q-as/how-to-use-a-pull-up-assist-machine-correctly-at-the-gym ; https://bullbarfit.com/blogs/updates/assisted-pull-up-machine-tutorial-treat-assistance-like-a-training-dial-not-a-verdict (retailer blog, snippets only)",
+    "BullBarFit dip posts (dip depth parallel versus shoulder-dependent; pinching means reduce depth). https://bullbarfit.com/blogs/updates/your-shoulders-own-your-dip-depth ; https://bullbarfit.com/blogs/updates/how-to-do-dips-correctly-lessons-from-200-years-of-parallel-bar-training (retailer blog, snippets only)",
+    "Motra (formerly Train Fitness), assisted pull-ups and assisted dips exercise pages (more counterweight = more help; dip targets triceps, chest, shoulders; torso angle). https://motra.com/exercises/assistedPullUps ; https://motra.com/exercises/assistedDips (snippets only)",
+    "Strengthlog, How to do assisted dips; Fitness Volt, Master assisted pull-ups and machine-assisted close neutral-grip pull-up (muscles and form). https://www.strengthlog.com/assisted-dips/ ; https://fitnessvolt.com/assisted-pull-up-guide/ ; https://fitnessvolt.com/machine-assisted-close-neutral-grip-pull-up-back (snippets only)",
+    "Weighttraining.guide, Assisted pull-up and machine-assisted close neutral-grip pull-up (dynamic stabilizers; progression by reducing assistance). https://weighttraining.guide/exercises/assisted-pull-up ; https://weighttraining.guide/exercises/machine-assisted-close-neutral-grip-pull-up (snippets only)",
+    "Bodybuilding.com, Machine assisted pull-up; Bodbot, Machine assisted dips; MuscleWiki and Jefit machine assisted pull-up entries (exercise-library cues; depth about parallel). https://bodybuilding.com/exercises/machine-assisted-pull-up ; https://www.bodbot.com/Exercises/1227/Machine-Assisted-Dips ; https://musclewiki.com/exercise/machine-assisted-pull-up (snippets only)",
+    "Strength Warehouse USA and Asphalt Green beginner guides (lifted load = body weight minus pin; about 60% of body weight start; 5–10 lb steps). https://strengthwarehouseusa.com/blogs/resources/how-to-use-the-assisted-pull-up-machine ; https://www.asphaltgreen.org/blog/the-beginners-guide-to-the-assisted-pull-up-machine (snippets only)",
+    "PMC review of bench, bar and ring dips (dip shoulder-injury evidence limited; two case reports of pectoralis major rupture). https://pmc.ncbi.nlm.nih.gov/articles/PMC9603242/ ; PMC study of bar dips to exhaustion in 15 healthy men. https://pmc.ncbi.nlm.nih.gov/articles/PMC9659300 (snippets only; page contents not opened)",
+    "Journal of Human Kinetics 2017 EMG comparison of traditional, suspension and towel pull-ups; a 2016 band-assisted versus machine-assisted pull-up study as cited by a blog (original not reached). https://johk.pl/?p=4308 ; https://johk.pl/wp-content/uploads/2023/03/10078-58-2017-v58-2017-01.pdf ; https://bullbarfit.com/blogs/updates/why-resistance-bands-beat-machines-for-learning-pull-ups-and-what-your-brain-has-to-do-with-it (snippets only)",
+    "ACE Exercise Library was searched for a dedicated assisted pull-up entry; none was found (Not found). NASM was searched; no NASM page on this machine appeared (Not found).",
+    "ACSM, Exercise for the prevention and treatment of hypertension; Cooper Institute summary (180/110); PubMed 7741618. https://acsm.org/exercise-for-the-prevention-and-treatment-of-hypertension/ ; https://www.cooperinstitute.org/blog/hypertension-and-weight-training-secrets-for-success ; https://pubmed.ncbi.nlm.nih.gov/7741618/ (carried over from Gym 25)",
+    "2024 Adult Compendium of Physical Activities (Herrmann et al., J Sport Health Sci 2024): code 02054 (3.5), re-confirmed by search this session; 2011 table also 3.5; older-adult table different code and value; 02050 (6.0) carried over. https://pacompendium.com/conditioning-exercise ; https://pacompendium.com/older-adult-compendium/ ; https://pubmed.ncbi.nlm.nih.gov/38242596/",
+    "ACSM (2009), Progression models in resistance training for healthy adults; Zourdos MC et al. (2016), RIR-based RPE scale (carried over). https://www.sportgeneeskunde.com/wp-content/uploads/ACSM-Position-Stand-Progression-Models-in-Resistance-Training-for-Healthy-Adults.pdf ; https://openrepository.aut.ac.nz/items/efef3b25-6701-4fb5-bb82-55fcd2a26027/full",
+    "Condition rows carried over from earlier Gym files (not re-opened this session): Valsalva review https://pubmed.ncbi.nlm.nih.gov/23222073/ ; Colberg et al. 2016 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/ ; ACC summary of AHA 2023 https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2023/12/19/15/33/resistance-exercise-training ; AHA Gibbs et al. https://professional.heart.org/en/science-news/Physical-Activity-as-a-Critical-Component-of-First-Line-Treatment-for-Elevated-BP-or-Cholesterol/commentary ; Donnelly et al. 2009 https://pubmed.ncbi.nlm.nih.gov/19127177/ ; PCOS https://vuir.vu.edu.au/45855/1/1-s2.0-S2772696723000054-main.pdf ; thyroid https://pubmed.ncbi.nlm.nih.gov/37999992/ ; asthma https://www.pharmacymagazine.co.uk/cpd-modules/making-a-difference-in-asthma-care/exercise-and-asthma-528343 ; LIFTMOR https://academic.oup.com/jbmr/article/33/2/211/7605709 ; Osteoporosis Canada https://osteoporosis.ca/wp-content/uploads/2014-07-25-Are-you-too-fit-to-fracture-for-patients.pdf ; ACOG CO 804 https://opqic.org/acog-committee-opinion-no-804-physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period/ ; NNUH https://www.nnuh.nhs.uk/publication/download/post-natal-physiotherapy-advice-and-exercises-v2-1",
+    "Note: all sources for this item were seen only as search-result summaries (pages not opened in full); nearly all are retailer or coaching blogs and exercise libraries, so the evidence base is weak. The 150/90 degree elbow thresholds, 70 degree dip depth floor, 30 degree swing limit, starting-assistance rule of thumb, and the sets, reps and rest values are FitPlate choices (est.), not validated. Not found: an ACE, NASM, NSCA or ExRx page for this machine; a direct EMG study of machine-assisted versus bodyweight pull-ups or of neutral versus overhand grips on the machine; a standard assistance increment size; a validated beginner starting-assistance norm; and condition-specific sources for knee pain, lower back pain, obesity and PCOS."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 28.6,
+      "70kg": 24.5,
+      "80kg": 21.4
+    },
+    "per300kcal": {
+      "60kg": 85.7,
+      "70kg": 73.5,
+      "80kg": 64.3
+    }
+  },
+  "gymAccess": [
+    "full_gym",
+    "basic_gym"
+  ],
+  "suitsPreferences": [
+    "strength",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "upper_body_day",
+    "full_body",
+    "machines",
+    "back_day",
+    "push_pull_legs",
+    "pull_up_preparation",
+    "30_to_60_min_sessions"
+  ],
+  "swapsByAccess": {
+    "none": "Inverted or table rows only if the table is heavy, stable and rated for your weight; or towel-door row; chair dips (Home 11)",
+    "home_equipment": "Band-assisted pull-ups on a stable bar with a doorway bar caution, or resistance band row (Home 23); chair dips (Home 11)",
+    "basic_gym": "Lat pulldown (Gym 25) or seated cable row (Gym 26) if the machine is busy",
+    "full_gym": "This machine at high assistance; lat pulldown (Gym 25) if busy; chest press machine (Gym 22) for the dip push"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "No breath-holding: breathe out on the effort; light to moderate loads, 2-4 sets of 8-12 reps per ACSM guidance; no lifting if resting BP >= 180/110; uncontrolled BP: ask a doctor",
+      "source": "ACSM hypertension guidance; PubMed 7741618; Valsalva systematic review 2013 (PubMed 23222073)"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "2-3 non-consecutive resistance days per week; usual glucose checks if on insulin or sulfonylureas",
+      "source": "ADA position statement, Colberg et al. 2016"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "After clearance: light effort, steady breathing, no straining",
+      "source": "AHA resistance exercise statement (via ACC summary 2023)"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "Part of 2+ days per week resistance work with aerobic activity",
+      "source": "AHA scientific statement (Gibbs et al.)"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Check you fit the pad or platform and handles; ask staff; machine weight limits not found as a standard; lat pulldown if the pad is uncomfortable",
+      "source": "ACSM weight management position stand (Donnelly et al. 2009)"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "Fits muscle-strengthening guidance; exercise-specific advice not found",
+      "source": "International PCOS guideline 2023"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "Train normally if controlled; start at beginner level with ongoing fatigue",
+      "source": "Systematic review 2023 (PubMed 37999992)"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Warm up and keep reliever inhaler nearby",
+      "source": "Asthma exercise guidance (Pharmacy Magazine CPD)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Kneel pad loads the kneecaps; use the step platform or a folded towel on the pad if comfortable; condition-specific source not found",
+      "source": "Not found"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "No swinging or kicking; braced trunk; light effort; lat pulldown if it hurts; condition-specific source not found",
+      "source": "Not found"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "modify",
+      "change": "Pull-up mode: neutral grip, short range, extra assistance; dip mode usually avoid; stop at any pinch; ask a professional",
+      "source": "Bullbarfit blogs (snippets, retailer); PMC review of bench, bar and ring dips (snippet); PMC study of dips to exhaustion (snippet)"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "ask_doctor",
+      "change": "Resistance work benefits bone, but with low bone mass or a spine fracture see a physiotherapist first",
+      "source": "LIFTMOR trial (Watson et al.); Osteoporosis Canada"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "ask_doctor",
+      "change": "Ask obstetrician; kneeling and hanging positions may be uncomfortable later; no breath-holding",
+      "source": "ACOG Committee Opinion 804"
+    },
+    {
+      "condition": "postpartum",
+      "status": "modify",
+      "change": "Pelvic floor work first; return to loaded work once cleared, especially after caesarean; extra assistance",
+      "source": "NHS postnatal physiotherapy leaflets (NNUH, Royal Devon)"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Only with surgeon or physiotherapist approval; shoulder, chest, abdominal or knee surgery often restricts this movement",
+      "source": "General clearance advice; condition-specific source not found"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "gym"
+    ],
+    "bodyRegion": [
+      "upper"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "fat_loss",
+      "muscle",
+      "strength",
+      "endurance"
+    ],
+    "intensity": "moderate",
+    "noise": "quiet",
+    "space": "machine",
+    "typicalMinutes": 9,
+    "kcalPer10min70kg": 41,
+    "difficulty1to5": 3,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Gym",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Strength",
+    "Back",
+    "Chest",
+    "Arms",
+    "Rep counter",
+    "Under 10 min"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-11-12",
+      "file": "FitPlate_Fitness_2026-11-12.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

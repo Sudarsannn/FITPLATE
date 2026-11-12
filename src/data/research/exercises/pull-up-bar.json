@@ -1,0 +1,714 @@
+{
+  "id": "pull-up-bar",
+  "number": 28,
+  "name": "Pull-up bar (pull-up and chin-up)",
+  "otherNames": [
+    "Pull-up",
+    "Chin-up",
+    "Neutral-grip pull-up",
+    "Dead hang",
+    "Scapular pull-up",
+    "Negative pull-up",
+    "Band-assisted pull-up"
+  ],
+  "section": "gym",
+  "type": "strength",
+  "equipment": [
+    "Fixed pull-up bar (gym rig, wall or ceiling mounted; doorway bar only if rated and fitted safely)",
+    "Box or bench to step up",
+    "Optional loop resistance band"
+  ],
+  "noEquipmentAlternative": "Band pull-downs, resistance band row (Home 23), one-arm dumbbell row (Home 17), table rows",
+  "musclesPrimary": [
+    "latissimus dorsi",
+    "lower trapezius",
+    "middle trapezius",
+    "posterior deltoid"
+  ],
+  "musclesSecondary": [
+    "biceps brachii",
+    "brachialis",
+    "forearm flexors and grip",
+    "pectoralis major",
+    "rhomboids",
+    "teres major",
+    "core",
+    "glutes"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": false,
+  "met": 3.8,
+  "compendiumCode": null,
+  "metOptions": [
+    {
+      "code": "02020",
+      "met": 7.5,
+      "activity": "Extras (text only, harder work): 02020, 7.5 METs, \"calisthenics (e.g., pushups, sit ups, pull-ups, jumping jacks, burpees, battling ropes), vigorous effort\" (2024 Adult Compendium; the 2011 table list"
+    },
+    {
+      "code": "02024",
+      "met": 2.8,
+      "activity": "Extras (text only, harder work): 02020, 7.5 METs, \"calisthenics (e.g., pushups, sit ups, pull-ups, jumping jacks, burpees, battling ropes), vigorous effort\" (2024 Adult Compendium; the 2011 table list"
+    },
+    {
+      "code": "02024",
+      "met": 8,
+      "activity": "Extras (text only, harder work): 02020, 7.5 METs, \"calisthenics (e.g., pushups, sit ups, pull-ups, jumping jacks, burpees, battling ropes), vigorous effort\" (2024 Adult Compendium; the 2011 table list"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "dead hang 15-30 s, 5-8 scapular pull-ups, 3-5 negatives per round",
+      "timeSec": 20,
+      "restSec": 75,
+      "tempo": "negatives 3-5 s lowering",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 3,
+      "reps": "dead hang 15-30 s, 5-8 scapular pull-ups, 3-5 negatives per round (as a circuit station)",
+      "timeSec": 20,
+      "restSec": 60,
+      "tempo": "negatives 3-5 s lowering",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "5-8 assisted pull-ups or 3-5 negatives at RIR 2-3",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "2 s up, 1 s pause, 4 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "strength",
+      "sets": 4,
+      "reps": "3-5 negatives at 4-5 s",
+      "timeSec": null,
+      "restSec": 120,
+      "tempo": "up by step, 4-5 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "8-10 scapular pull-ups or 30 s hang",
+      "timeSec": 30,
+      "restSec": 60,
+      "tempo": "1 s up, 1 s pause, 2 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "4-8 strict reps, stop 2 reps before failure",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "2 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "6-10 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 105,
+      "tempo": "2 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "strength",
+      "sets": 5,
+      "reps": "3-5",
+      "timeSec": null,
+      "restSec": 165,
+      "tempo": "2 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "8-12 at RIR 2",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "2 s up, 0 s pause, 2 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "8-12 at RIR 2",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "2 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "8-12 at RIR 0-2",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "2 s up, 1 s pause, 3 s down",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": 5,
+      "reps": "2-5 with added weight",
+      "timeSec": null,
+      "restSec": 180,
+      "tempo": "2 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "endurance",
+      "sets": 4,
+      "reps": "15+ at RIR 1-2",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2 s up, 0 s pause, 2 s down",
+      "perWeek": 2
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "front",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "hang_start",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": ">= 160",
+        "parsed": {
+          "op": ">=",
+          "value": 160,
+          "max": null
+        }
+      },
+      {
+        "name": "top_chin_above_bar",
+        "joint": "elbow (shoulder-elbow-wrist), nose above wrist line",
+        "angleDeg": "<= 90",
+        "parsed": {
+          "op": "<=",
+          "value": 90,
+          "max": null
+        }
+      },
+      {
+        "name": "hip_min",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": ">= 150",
+        "parsed": {
+          "op": ">=",
+          "value": 150,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 3
+  },
+  "formChecks": [
+    {
+      "joint": "elbow",
+      "rule": "elbow angle > 90 degrees at the top or nose below the bar line (equals top phase threshold; rep not counted)",
+      "message": "Pull until your chin clears the bar"
+    },
+    {
+      "joint": "elbow",
+      "rule": "elbow angle < 160 degrees at the bottom (equals hang phase threshold; rep not counted)",
+      "message": "Lower to straight arms"
+    },
+    {
+      "joint": "hip",
+      "rule": "hip angle < 150 degrees (equals hip_min threshold)",
+      "message": "No kipping: keep your body still"
+    },
+    {
+      "joint": "elbow",
+      "rule": "separate flag: lowering shorter than 2 s",
+      "message": "Lower slowly: 3 seconds"
+    },
+    {
+      "joint": "shoulder",
+      "rule": "separate flag: shoulder rises toward the ear relative to the start (no angle used)",
+      "message": "Shoulders down away from your ears"
+    },
+    {
+      "joint": "elbow",
+      "rule": "rep duration < 3 s",
+      "message": "Slow down: control each rep"
+    }
+  ],
+  "safetyFlags": [
+    "shake_test_bar_before_use",
+    "doorway_bar_only_if_rated_and_fitted",
+    "step_up_from_box_no_jumping_to_bar",
+    "full_closed_grip_thumbs_wrapped",
+    "no_kipping_for_beginners",
+    "no_dropping_from_bar",
+    "lower_slowly_to_straight_arms",
+    "hold_band_when_removing_foot",
+    "check_head_clearance",
+    "no_breath_holding",
+    "high_blood_pressure_no_failure_sets",
+    "shoulder_problems_avoid_or_ask_professional",
+    "elbow_tendon_pain_neutral_grip_or_pause",
+    "lower_back_pain_no_arching",
+    "pregnancy_ask_obstetrician",
+    "osteoporosis_ask_doctor",
+    "recent_surgery_follow_surgeon_limits",
+    "ask_staff_first_session"
+  ],
+  "progressions": [
+    "strict pull-up or chin-up, then more reps by double progression",
+    "slower negatives (5-7 s) and pauses at the top",
+    "weighted pull-ups or wide, neutral-grip and archer variations (intermediate and advanced)"
+  ],
+  "regressions": [
+    "assisted pull-up and dip machine (Gym 27) or lat pulldown (Gym 25)",
+    "feet-supported dead hang and scapular pull-ups, passive hang",
+    "band-assisted pull-up or bench-supported negatives"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "front, 3 m",
+      "shows": "bar shake test, box, clear floor and head clearance",
+      "textOverlay": "Shake the bar. Clear the space"
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 2.5 m",
+      "shows": "stepping up, overhand grip shoulder-width, thumbs wrapped",
+      "textOverlay": "Thumbs wrapped, shoulder-width"
+    },
+    {
+      "seconds": 10,
+      "angle": "side, 2.5 m",
+      "shows": "dead hang, feet lifted slowly, body still",
+      "textOverlay": "Dead hang 10-30 s, breathe"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "scapular pull-up, blades down 1 s, lower slowly",
+      "textOverlay": "Blades down. Elbows straight"
+    },
+    {
+      "seconds": 10,
+      "angle": "front, 2.5 m",
+      "shows": "negative pull-up from a box, 3-5 s lowering",
+      "textOverlay": "Lower for 3-5 s"
+    },
+    {
+      "seconds": 10,
+      "angle": "front, 3 m",
+      "shows": "strict or assisted rep, chin above the bar",
+      "textOverlay": "Chin above the bar. No kicking"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "wrong: kipping; right: still body",
+      "textOverlay": "No kipping, no swinging"
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 2.5 m",
+      "shows": "overhand, underhand and neutral grips",
+      "textOverlay": "Pull-up / chin-up / neutral"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "band set-up and removal; stepping down onto the box",
+      "textOverlay": "Hold the band. Feet on the box first"
+    }
+  ],
+  "lastResearched": "2026-11-12",
+  "setupSteps": [
+    "Bar height (gym or home): the bar should be high enough that you hang with straight arms and your feet clear of the floor, and low enough to reach safely from a box. One buying guide suggests standing reach plus about 8 inches (20 cm) as a target; another list notes ceiling-mounted bars need roughly 9 ft (2.7 m) of finished ceiling for good head clearance. These are vendor guidance, not a standard; no authoritative height rule was found.",
+    "Head clearance: your head must clear the ceiling and any light or fan at the top of the rep, with the chin above the bar. If it does not, use the lat pulldown (Gym 25) instead.",
+    "Dismount space: keep the area under and around the bar free of benches, weights and sharp edges; one guide suggests a non-slip mat on slick floors. No landing-zone dimensions were found.",
+    "Bar check: shake the bar before use; it should not wobble. Tell staff if it is loose, bent or the fixings look worn.",
+    "Doorway bars at home: use only a bar rated for your body weight (most listed ratings are about 100-135 kg, one review site, est.), fitted to a solid frame as the maker instructs, and check it every time. Do not kip or add weight on a doorway bar. If you cannot be sure the frame is sound, do not use it.",
+    "Use a box or bench for height: step up so the bar is at about forehead height and place your hands; do not jump up and swing from the floor as a beginner.",
+    "Hand placement: grip the bar with a full, closed grip (thumbs wrapped), hands about shoulder-width apart, palms away for a pull-up. One beginner guide says shoulder-width is enough, and another says slightly wider; wider grips shorten the range (ExRx notes range is compromised if the grip is too wide).",
+    "Take your feet off slowly, bending the knees, or keep one foot on the box for the first sets; ask staff or a partner to stand nearby the first time.",
+    "Keep thumbs wrapped (thumbless grips slip more easily; coach-level advice).",
+    "Lower under control to straight arms, then lower your feet to the box or floor; bend the knees on landing. Do not drop from a high hang with straight legs, and do not let go at the top.",
+    "If you cannot finish a rep: lower slowly to a hang, then step down; do not let go mid-air.",
+    "Pull-up (overhand): FitPlate start for the dead hang and scapular pull-up; ACE says a narrow overhand grip moves some load from the lats toward the upper back muscles.",
+    "Chin-up (underhand, about shoulder-width): usually easier for beginners because the biceps help more; use it if you can already do a few controlled negatives. Many sources agree it loads the biceps more.",
+    "Neutral grip (palms facing, on parallel handles): often friendlier on the wrists and shoulders (coach-level; one forum report of an elbow-tendon sufferer switching to neutral); FitPlate offers it as a variation for people with elbow or shoulder discomfort."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Step up and take the bar",
+      "action": "Stand on a box, take the bar with both hands, overhand, about shoulder-width, thumbs wrapped.",
+      "feel": "Firm grip; light stretch in the armpits.",
+      "breathing": "Breathe in.",
+      "tempo": null,
+      "visualCheck": "Front: hands level and even on the bar. Side: bar slightly in front of the face, not behind the head."
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Take your feet off, into a hang (Dead hang, A)",
+      "action": "Bend the knees and lift the feet slowly; hang with arms straight (not locked hard) and the body still.",
+      "feel": "Stretch in the shoulders, forearms working.",
+      "breathing": "Breathe normally; never hold your breath.",
+      "tempo": null,
+      "visualCheck": "Front: no twisting; side: body hangs straight under the bar."
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Set the shoulders (active hang)",
+      "action": "Gently draw the shoulder blades down away from the ears without bending the elbows. Some coaches prefer a fully relaxed passive hang first for a few weeks, so the passive hang is allowed as a regression.",
+      "feel": "Shoulders move away from the ears; body rises 1-2 cm.",
+      "breathing": "Breathe out as the blades move.",
+      "tempo": null,
+      "visualCheck": "Front: neck looks longer; elbows still straight."
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Scapular pull-up (B)",
+      "action": "From the hang, pull the shoulder blades down, pause 1 second, then let them rise slowly back to the dead hang.",
+      "feel": "Muscles under the shoulder blades and lats switch on.",
+      "breathing": "Out on the pull, in on the lowering.",
+      "tempo": null,
+      "visualCheck": "Side: only a small rise, elbows straight."
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Pull the chest up (strict rep or assisted rep)",
+      "action": "After the shoulder blades move, bend the elbows and pull the chest toward the bar, elbows down and back, trunk still.",
+      "feel": "Lats and upper back; biceps help.",
+      "breathing": "Breathe out on the pull.",
+      "tempo": null,
+      "visualCheck": "Front: elbows move down, not out to the side; side: no kick and no swinging."
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Chin above the bar",
+      "action": "Reach the top with the chin clearly above the bar; keep the neck neutral (do not crane the head).",
+      "feel": "Strong squeeze in the back.",
+      "breathing": "Finish breathing out.",
+      "tempo": null,
+      "visualCheck": "Front or side: nose above the bar line; body still."
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Controlled lowering (also Negative pull-up, C)",
+      "action": "Lower slowly all the way to straight arms. For a negative, start at the top (stepped up from a box) and lower for 3-5 seconds (est.; coaches suggest 5-7 s for stronger beginners).",
+      "feel": "Back and arms working as they lengthen.",
+      "breathing": "Breathe in during the lowering.",
+      "tempo": null,
+      "visualCheck": "Side: no dropping; elbows straight at the bottom."
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Finish and step down",
+      "action": "At the last rep, hang with straight arms, find the box with your feet, then let go.",
+      "feel": "Grip relaxes.",
+      "breathing": "Normal.",
+      "tempo": null,
+      "visualCheck": "Feet on the box or floor before the hands release."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Kipping or swinging",
+      "text": "Kipping or swinging. Why: it adds momentum, loads the shoulders and elbows in uncontrolled ways, and hides weak strength; most coaching sources say beginners should build 5-10 strict reps first (blogs; the specific research cited in blogs was not verified). Fix: start from a still hang, no leg drive, use negatives and bands instead."
+    },
+    {
+      "title": "Half reps (no full hang, or the chin not above the bar)",
+      "text": "Half reps (no full hang, or the chin not above the bar). Why: limits strength gains and range. Fix: start each rep from straight arms and finish with the chin above the bar; use a band or the assisted machine (Gym 27) to complete the range."
+    },
+    {
+      "title": "Dropping fast from the top",
+      "text": "Dropping fast from the top. Why: the shoulders and elbows take a sudden stretch. Fix: lower for 3-5 seconds."
+    },
+    {
+      "title": "Grip too wide",
+      "text": "Grip too wide. Why: the range shortens and the shoulder gets stressed (ExRx notes the range is compromised). Fix: shoulder-width grip."
+    },
+    {
+      "title": "Shrugging into the ears or craning the neck",
+      "text": "Shrugging into the ears or craning the neck. Why: the neck and upper trapezius take over. Fix: shoulder blades down first; neck long."
+    },
+    {
+      "title": "Pulling with the arms only (curling up)",
+      "text": "Pulling with the arms only (curling up). Why: the back stays quiet, the biceps and elbows tire. Fix: set the shoulder blades, then drive the elbows down."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. Why: raises blood pressure briefly. Fix: breathe out on the pull."
+    },
+    {
+      "title": "Jumping off the bar or letting go at the top",
+      "text": "Jumping off the bar or letting go at the top. Why: risk of ankle and knee injury and a hard landing. Fix: lower to straight arms and place the feet on the box or floor."
+    },
+    {
+      "title": "Using a loose or unrated bar",
+      "text": "Using a loose or unrated bar. Why: the bar can slip or the doorframe can fail. Fix: shake test; follow the maker's rating."
+    },
+    {
+      "title": "Using only bands to progress",
+      "text": "Using only bands to progress. Why: bands help most at the bottom and fade near the top, so strength at the top may lag. Fix: add negatives and thinner bands over time."
+    }
+  ],
+  "safetyNotes": [
+    "Shoulder problems: the full hang loads the shoulder with traction; people with a rotator cuff tear or impingement should avoid or modify it until a physiotherapist approves. Hanging-focused sites advise a physician or physiotherapist check first and warn that a fresh tear needs rest and assessment; sharp, catching or electric pain is a stop signal (several sources on unfamiliar domains; weighed lightly).",
+    "Elbow tendon pain (golfer's elbow or tennis elbow): grip-heavy pulling, especially an overhand grip, often aggravates it; reduce the load or use a neutral grip, or pause pull-ups, and see a professional (Penn Medicine for the condition; weaker blog sources for the exercise link).",
+    "High blood pressure: avoid breath-holding.",
+    "Lower back pain: do not arch or swing; ask a professional.",
+    "Pregnancy, recent surgery, osteoporosis, heart disease: see the table.",
+    "Spotter: not needed for dead hangs or scapular pull-ups. For negatives and assisted pull-ups, ask staff or a partner to stay near the first time and have a box under your feet.",
+    "Equipment check: shake the bar, check the band for cracks, wipe chalk and sweat; bands can snap back, so hold the band when removing the foot.",
+    "Gym etiquette: wipe the bar, do not hog the rig between sets, do not film other members and ask staff before filming."
+  ],
+  "sources": [
+    "ACE Exercise Library, Pull-ups and Chin-ups (starting position, overhand versus underhand grip, narrow pronated grip shifts load to the upper back, no swinging, shoulder-protection advice; snippets inconsistent between pages). https://www.acefitness.org/resources/everyone/exercise-library/191/pull-ups/ ; https://www.acefitness.org/exerciselibrary/190/chin-ups (snippets only)",
+    "ACE-sponsored research, What is the best back exercise (EMG, 19 men; pull-up and chin-up highest for lats; carried over from Gym 26). https://www.acefitness.org/continuing-education/certified/april-2018/6959/ace-sponsored-research-what-is-the-best-back-exercise/ (snippet only)",
+    "ExRx.net, Pull-up (overhand grip, chin above bar, lower to full extension; range compromised if the grip is too wide). https://exrx.net/WeightExercises/LatissimusDorsi/BWPullup (snippet only)",
+    "NASM Exercise Library, Pull-up and Band-assisted pull-up; NASM blog, How to get better at pull-ups (progress when you can do 2 extra reps for 2 sets; order of dead hang, scapular pull-up, negatives, strict). https://www.nasm.org/resource-center/exercise-library/pull-up ; https://www.nasm.org/resource-center/exercise-library/band-assisted-pull-up ; https://blog.nasm.org/how-to-get-better-at-pull-ups (snippets only; NASM library page had no steps in the snippet)",
+    "Youdas JW et al. (2010), J Strength Cond Res 24(12):3404-14, pull-up versus chin-up versus Perfect Pullup EMG (25 volunteers; pectoralis major and biceps higher in the chin-up; lower trapezius higher in the pull-up; mean elbow range about 93-101 degrees). https://pubmed.ncbi.nlm.nih.gov/21068680/ (abstract as shown in a search summary)",
+    "Dickie JA et al. (2017), Electromyographic analysis of muscle activation during pull-up variations. https://pubmed.ncbi.nlm.nih.gov/28011412/ (details seen only through a secondary blog summary; weighed lightly)",
+    "Lusk SJ, Hale BD, Russell DM (2010), Grip width and forearm orientation effects on muscle activity during the lat pull-down (pronated grip higher lat activity; no width effect). https://pure.psu.edu/en/publications/grip-width-and-forearm-orientation-effects-on-muscle-activity-dur/ (snippet only; related to Gym 25)",
+    "Garage Gym Reviews, How to do a pull-up and Pull-up variations; Sweat, How to do pull-ups; Strengthlog, Pull-up; MasterClass, Dead hang guide (grip, dead hang, scapular pull-up, negatives; coach-level). https://www.garagegymreviews.com/how-to-do-a-pull-up ; https://www.sweat.com/blogs/fitness/how-to-do-pull-ups ; https://www.strengthlog.com/pull-up/ ; https://www.masterclass.com/articles/dead-hang-exercise-guide (snippets only)",
+    "WebMD, How to do chin-ups (aim for three controlled reps; seek professional guidance for high-intensity versions). https://webmd.com/fitness-exercise/how-to-do-chin-up (snippet only)",
+    "Band-assisted set-up and safety: Burn the Fat Blog, Trainwell, Gymreapers, Torokhtiy, Barbell Logic (band loop, foot versus knee, thicker bands help more, bands can snap back). https://www.burnthefatblog.com/band-assisted-pull-ups ; https://www.trainwell.net/exercises/band-assisted-pull-up ; https://torokhtiy.com/?p=11742 ; https://barbell-logic.com/?p=83789 (snippets only; coaching and product blogs)",
+    "Bar height, doorway and dismount guidance: Bodyspec buyer's guide, DMoose, Gymcrafter, Bullbarfit, Medical News Today (vendor and buying guidance; no standard found). https://www.bodyspec.com/blog/post/pullup_bar_buyers_guide_choosing_the_right_bar_for_you ; https://www.dmoose.com/blogs/workout-equipment/are-doorway-pull-up-bars-safe ; https://gymcrafter.com/pull-up-bar-mounting-height-position/ (snippets only)",
+    "Kipping safety: Bullbarfit and Catalyst Athletics blogs (beginners strict first; research cited in blogs was not verified). https://bullbarfit.com/blogs/q-as/are-kipping-pull-ups-safe-for-beginners ; https://catalystathletics.com/article/91/The-Kipping-Pull-up-How-to-Do-It-Safely-and-Use-it-in-Traini (snippets only; weighed lightly)",
+    "Shoulder and elbow cautions: Pure Physiotherapy, Choose PT (impingement guidance); Penn Medicine, Medial epicondylitis (golfer's elbow); hanging-focused sites (weighed lightly); elbow blogs (Torokhtiy, Bullbarfit). https://purephysiotherapy.co.uk/conditions/shoulder-impingement-2 ; https://www.choosept.com/guide/physical-therapy-guide-shoulder-impingement ; https://www.pennmedicine.org/conditions/medial-epicondylitis-golfer-s-elbow ; https://torokhtiy.com/blogs/guides/elbow-pain-from-pull-ups (snippets only)",
+    "2024 Adult Compendium of Physical Activities (Herrmann et al., J Sport Health Sci 2024): code 02022 (3.8, calisthenics incl. pull-ups, moderate effort); 02020 (7.5, vigorous, extra); 02024 (2.8, light, not used). https://pacompendium.com/conditioning-exercise ; https://pubmed.ncbi.nlm.nih.gov/38242596/ (search summaries; official PDF not opened)",
+    "ACSM (2009), Progression models in resistance training for healthy adults (carried over). https://www.sportgeneeskunde.com/wp-content/uploads/ACSM-Position-Stand-Progression-Models-in-Resistance-Training-for-Healthy-Adults.pdf",
+    "Zourdos MC et al. (2016), RIR-based RPE scale (carried over). https://openrepository.aut.ac.nz/items/efef3b25-6701-4fb5-bb82-55fcd2a26027/full",
+    "Condition rows carried over from Gym 20, 21, 24 and 26 citations (not re-opened this session): Valsalva review https://pubmed.ncbi.nlm.nih.gov/23222073/ ; Colberg et al. 2016 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/ ; ACC summary of AHA 2023 https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2023/12/19/15/33/resistance-exercise-training ; AHA Gibbs et al. https://professional.heart.org/en/science-news/Physical-Activity-as-a-Critical-Component-of-First-Line-Treatment-for-Elevated-BP-or-Cholesterol/commentary ; Donnelly et al. 2009 https://pubmed.ncbi.nlm.nih.gov/19127177/ ; PCOS https://vuir.vu.edu.au/45855/1/1-s2.0-S2772696723000054-main.pdf ; thyroid https://pubmed.ncbi.nlm.nih.gov/37999992/ ; asthma https://www.pharmacymagazine.co.uk/cpd-modules/making-a-difference-in-asthma-care/exercise-and-asthma-528343 ; LIFTMOR https://academic.oup.com/jbmr/article/33/2/211/7605709 ; Osteoporosis Canada https://osteoporosis.ca/wp-content/uploads/2014-07-25-Are-you-too-fit-to-fracture-for-patients.pdf ; ACOG CO 804 https://opqic.org/acog-committee-opinion-no-804-physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period/ ; Contemporary OB/GYN https://www.contemporaryobgyn.net/sweating-it-out-exercise-in-pregnancy ; NNUH https://www.nnuh.nhs.uk/publication/download/post-natal-physiotherapy-advice-and-exercises-v2-1",
+    "Note: all sources for this item were seen only as search-result summaries (pages not opened in full); many are coaching blogs. The 160/90 degree elbow thresholds, the 150 degree hip limit, nose-above-bar top rule, the 3 s minimum rep, the 15-30 s hang and 3-5 s negative durations, and all sets, reps and rest values are FitPlate choices (est.), not validated. Not found: a professional-body prescription for dead hang, scapular pull-up or negative duration; an authoritative bar-height or landing-space standard; a verified doorway-bar weight standard; peer-reviewed support for the kipping-injury claims quoted in blogs; condition-specific sources for knee pain, lower back pain, obesity, PCOS and shoulder problems; Harvard Health and Mayo Clinic pages on pull-ups; the primary ACOG page on hanging exercises; full text of Dickie et al. 2017."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 26.3,
+      "70kg": 22.6,
+      "80kg": 19.7
+    },
+    "per300kcal": {
+      "60kg": 78.9,
+      "70kg": 67.7,
+      "80kg": 59.2
+    }
+  },
+  "gymAccess": [
+    "full_gym",
+    "basic_gym",
+    "home_equipment"
+  ],
+  "suitsPreferences": [
+    "strength",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "upper_body_day",
+    "pull_day",
+    "full_body",
+    "calisthenics",
+    "bodyweight",
+    "back_day",
+    "push_pull_legs",
+    "30_to_60_min_sessions"
+  ],
+  "swapsByAccess": {
+    "none": "Doorway pull-up bar only if rated and fitted safely; otherwise band pull-downs, table rows or one-arm dumbbell row (Home 17)",
+    "home_equipment": "Resistance band row (Home 23) or band pull-downs; band-assisted pull-up on a rated bar",
+    "basic_gym": "Lat pulldown (Gym 25), or a bar with a band and a box",
+    "full_gym": "Pull-up bar with the beginner ladder; assisted pull-up and dip machine (Gym 27) and lat pulldown (Gym 25) as stepping stones"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "No breath-holding; no long hangs near failure; stop 2-3 reps before failure; no lifting if resting BP >= 180/120; uncontrolled BP: ask a doctor",
+      "source": "Valsalva systematic review 2013 (PubMed 23222073); NSCA 1999 Valsalva article; Biology of Sport 2019 systematic review"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "2-3 non-consecutive resistance days per week; usual glucose checks if on insulin or sulfonylureas",
+      "source": "ADA position statement, Colberg et al. 2016"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "After clearance: assisted or machine versions at a light load, continuous breathing, no straining",
+      "source": "AHA resistance exercise statement (via ACC summary 2023)"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "Part of 2+ days per week resistance work with aerobic activity",
+      "source": "AHA scientific statement (Gibbs et al.)"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Check bar and doorway rating for your weight; use assisted machine (Gym 27) or lat pulldown (Gym 25) first; exercise-specific advice not found",
+      "source": "ACSM weight management position stand (Donnelly et al. 2009)"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "Fits muscle-strengthening guidance; exercise-specific advice not found",
+      "source": "International PCOS guideline 2023"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "Train normally if controlled; start at beginner level with ongoing fatigue",
+      "source": "Systematic review 2023 (PubMed 37999992)"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Warm up and keep reliever inhaler nearby",
+      "source": "Asthma exercise guidance (Pharmacy Magazine CPD)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "ok",
+      "change": "The bar loads the arms, not the knees; keep knees still and land softly from the box; condition-specific source not found",
+      "source": "Not found"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "No arching or swinging; ribs down; lat pulldown or assisted machine if the hang is uncomfortable; ask a professional if pain continues",
+      "source": "Not found"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "avoid",
+      "change": "Avoid hanging and pull-ups with a tear, instability or impingement until a physiotherapist clears you; light lat pulldown with a shorter range may suit; clinical range cut-off not found",
+      "source": "Physiotherapy impingement guidance (Pure Physiotherapy, Choose PT; snippets only); hanging-site cautions (weighed lightly)"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "ask_doctor",
+      "change": "Resistance work benefits bone, but with low bone mass or a spine fracture see a physiotherapist first; no jumping off the bar",
+      "source": "LIFTMOR trial (Watson et al.); Osteoporosis Canada"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "ask_doctor",
+      "change": "Ask obstetrician; hanging and pulling raises abdominal strain and needs balance; lat pulldown is the usual swap",
+      "source": "ACOG Committee Opinion 804; contemporaryobgyn.net summary (secondary)"
+    },
+    {
+      "condition": "postpartum",
+      "status": "modify",
+      "change": "Pelvic floor work first; return to loaded or hanging work once cleared, especially after caesarean; use assisted machine",
+      "source": "NHS postnatal physiotherapy leaflets (NNUH, Royal Devon)"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Only with surgeon or physiotherapist approval; shoulder, chest, abdominal or back surgery often restricts hanging and pulling",
+      "source": "General clearance advice; condition-specific source not found"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "gym",
+      "home"
+    ],
+    "bodyRegion": [
+      "upper"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "fat_loss",
+      "muscle",
+      "strength",
+      "endurance"
+    ],
+    "intensity": "moderate",
+    "noise": "quiet",
+    "space": "small_room",
+    "typicalMinutes": 9,
+    "kcalPer10min70kg": 44,
+    "difficulty1to5": 4,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Gym",
+    "Home",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Strength",
+    "Back",
+    "Shoulders",
+    "Rep counter",
+    "Under 10 min"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-11-12",
+      "file": "FitPlate_Fitness_2026-11-12.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}
