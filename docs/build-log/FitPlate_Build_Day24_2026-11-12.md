@@ -13,6 +13,14 @@ A player existed (timed sets, rests, cues). Day 24 adds the rest of the spec:
 - End summary: reps, total kg lifted, average effort. "Log N min" now saves a WorkoutLog with the sets (optional field `sets` on WorkoutLog; older logs unchanged).
 Also (carry-over from Day 22): the water target now uses the researched hydration formula (Topic 30): base 2.5 L male / 2.0 L female, plus or minus 20 ml per kg from 65 or 55 kg (capped at 400 ml), plus pregnancy 300 ml and breastfeeding 700 ml, 1500 to 4500 ml, rounded to 50 ml, shown in glasses. Workout minutes and hot-weather add-ons are not applied yet. Doctor limits and caution mode still override it. The Water screen explains the figure.
 
+## 2b. REVIEW 2026-11-12 FIX 1 (health and safety): DONE (on-demand, after the Day 24 run)
+Routines, the workout player, swap and the Move tab now use moveSafety.ts (research rules only):
+- Routine detail: a "Checked against your answers" box and, per move, the research's own text (avoid, ask your doctor, modify).
+- Player: an "avoid" move is never started silently. A gate card shows the research's change text with Swap for a safer move, Skip this move, or an explicit "I have checked with my doctor. Do it anyway". "Ask your doctor" moves show "Follow your doctor's advice" and the change text.
+- Swap: swapOptions drops avoid moves and ranks by fitOrder.
+- Move tab: moves the research says to avoid are hidden (with a count), "Ask first" and "Go easier" notes on the rest. Survey answers with no research condition (wrists, neck, ankles) get a "stop if anything hurts" line.
+Tests: routineSafety.test.ts (Shoulders user sees the pec-deck warning in gym-b and is not offered it as a swap; pregnancy gives hip thrust the ask-your-doctor note; no limits unchanged). 922 tests pass; click-through with a Shoulders survey answer confirmed the banner, the gate, the swap list and the hidden-moves note.
+
 ## 3. DATA SYNC REPORT
 Dishes and ingredients: nothing new (103 and 179). Nutrients/hydration: 44 in app (new: hydration-hot-humid-mumbai, electrolytes-hydration-exercise; condition chronic-kidney-disease-early). Fitness: 56 items (new: skipping rope, triangle pose, assisted pull-up/dip machine, pull-up bar). Still rejected: choline (alt_units factor 0), fenugreek-leaves-fresh (no price parsed).
 
