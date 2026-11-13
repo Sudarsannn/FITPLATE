@@ -15,33 +15,42 @@
         "avg": 700,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-10.md"
+      },
+      {
+        "date": "2026-11-13",
+        "min": 3040,
+        "max": 3740,
+        "avg": 3390,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-13.md"
       }
     ],
     "currentEstimate": {
-      "min": 600,
-      "max": 800,
-      "avg": 700
+      "min": 1820,
+      "max": 2270,
+      "avg": 2045
     },
-    "method": "single",
+    "method": "spike-blend",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-10",
+    "lastObserved": "2026-11-13",
     "stale": false,
     "seasonal": false,
-    "listingCount": 4,
+    "listingCount": 2,
     "platforms": [
-      "IndiaMART"
+      "BigBasket"
     ],
     "outOfStock": false,
     "confirmed": false,
     "checkNotes": [
-      "only 1 platform (IndiaMART) backs the range"
+      "only 2 listings back the range (need 3)",
+      "only 1 platform (BigBasket) backs the range"
     ]
   },
   "per100Estimate": {
-    "min": 60,
-    "max": 80,
-    "avg": 70
+    "min": 182,
+    "max": 227,
+    "avg": 204.5
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -57,14 +66,14 @@
       "confidence": "Low"
     },
     "carbsG": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "Other: Philippine FNRI FCT: Other: Philippine FNRI FCT 'Mackerel, Spanish' (Scomberomorus commerson), proxy; no IFCT 2017 entry seen; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Low"
     },
     "sugarsG": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "Other: Philippine FNRI FCT: Other: Philippine FNRI FCT 'Mackerel, Spanish' (Scomberomorus commerson), proxy; no IFCT 2017 entry seen; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Low"
     },
     "fatG": {
       "value": 2,
@@ -77,9 +86,9 @@
       "confidence": null
     },
     "fibreG": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "Other: Philippine FNRI FCT: Other: Philippine FNRI FCT 'Mackerel, Spanish' (Scomberomorus commerson), proxy; no IFCT 2017 entry seen; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Low"
     },
     "sodiumMg": {
       "value": 158,
@@ -87,14 +96,14 @@
       "confidence": "Low"
     },
     "ironMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 1,
+      "source": "Other: Philippine FNRI FCT: Other: Philippine FNRI FCT 'Mackerel, Spanish' (Scomberomorus commerson), proxy; no IFCT 2017 entry seen; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Low"
     },
     "calciumMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 23,
+      "source": "Other: Philippine FNRI FCT: Other: Philippine FNRI FCT 'Mackerel, Spanish' (Scomberomorus commerson), proxy; no IFCT 2017 entry seen; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Low"
     },
     "potassiumMg": {
       "value": 435,
@@ -228,20 +237,23 @@
     }
   },
   "macrosPer100Estimate": {
-    "kcal": null,
+    "kcal": 139,
     "proteinG": 19.3,
     "carbsG": null,
-    "fatG": null,
+    "fatG": 6.3,
     "fibreG": null
   },
-  "storage": "rinse, pat dry, keep in a covered box on ice or in the coldest part of the fridge; use within 1–2 days. Marinate only on the day of cooking.",
-  "looksLike": "A long, silver-grey, torpedo-shaped sea fish. It is almost always sold cut across into round steaks, about 1–2 cm thick, with pale pink-white flesh, a thin grey-silver skin rim and one small central bone.",
-  "howToPick": null,
-  "shelfLife": "Fresh: 1–2 days in the fridge. Frozen at -18 °C: about 3 months for best quality.",
+  "storage": "Fridge at the coldest point, covered, and cook within 1–2 days; freeze in a sealed bag for longer. Thaw overnight in the fridge.",
+  "looksLike": "A long silver-grey sea fish, sold cut across into round steaks about 1–2 cm thick, with pale pink-white flesh, a thin grey-silver skin edge and one small central bone.",
+  "howToPick": "Firm, springy flesh that does not leave a dent; shiny skin; clean sea smell. Avoid dull, grey or brown flesh, flaking, a sour or ammonia smell, or steaks sitting in milky liquid.",
+  "shelfLife": "Fresh: 1–2 days in the fridge; frozen: about 3 months for best quality (general guidance, not from a source in this run).",
   "substitutes": [
     "Pomfret (paplet)",
     "Indian mackerel (bangda)",
-    "Basa or rawas (Indian salmon) fillets"
+    "Basa or rawas (Indian salmon) fillets",
+    "Pomfret steaks or small whole pomfret",
+    "Basa fillet (frozen)",
+    "Bangda (mackerel)"
   ],
   "vendorListings": [],
   "usedIn": [
@@ -249,18 +261,22 @@
       "dishNumber": 33,
       "quantity": 150,
       "unit": "g",
-      "raw": "150 g raw steaks, skin and bone on (about 135 g edible; 2 medium steaks, about 1.5 cm thick)"
+      "raw": "150 g raw steaks, skin and bone on (about 2 medium steaks; about 135 g edible) per serving"
     }
   ],
   "versions": [
     {
       "date": "2026-10-10",
       "file": "FitPlate_Ingredients_2026-10-10.md"
+    },
+    {
+      "date": "2026-11-13",
+      "file": "FitPlate_Ingredients_2026-11-13.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (none)",
+    "price": "price engine (spike-blend)",
+    "macrosPer100Estimate": "stable (single)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -269,5 +285,11 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: possible-spike",
+    "Possible spike: latest avg 3390 (2026-11-13) moved more than 35% from the previous estimate; using the halfway point.",
+    "nutritionPer100g.energyKcal: Conflict (2026-10-10: 105 vs 2026-11-13: 80); both cite the official table, kept the previous value.",
+    "nutritionPer100g.proteinG: Conflict (2026-10-10: 20.28 vs 2026-11-13: 17.6); both cite the official table, kept the previous value.",
+    "nutritionPer100g.fatG: Conflict (2026-10-10: 2 vs 2026-11-13: 1.1); both cite the official table, kept the previous value."
+  ]
 }

@@ -15,26 +15,35 @@
         "avg": 41,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-10.md"
+      },
+      {
+        "date": "2026-11-13",
+        "min": 38.5,
+        "max": 39,
+        "avg": 39,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-13.md"
       }
     ],
     "currentEstimate": {
-      "min": 37,
-      "max": 44,
-      "avg": 41
+      "min": 38,
+      "max": 41,
+      "avg": 40
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-10",
+    "lastObserved": "2026-11-13",
     "stale": false,
     "seasonal": false,
-    "listingCount": 5,
+    "listingCount": 2,
     "platforms": [
       "BigBasket"
     ],
     "outOfStock": false,
     "confirmed": false,
     "checkNotes": [
+      "only 2 listings back the range (need 3)",
       "only 1 platform (BigBasket) backs the range"
     ]
   },
@@ -44,7 +53,7 @@
     "basis": "100g",
     "energyKcal": {
       "value": 354,
-      "source": "USDA FDC: FDC ID 170169, Nuts, coconut meat, raw (SR Legacy), via secondary sites",
+      "source": "USDA FDC: USDA FDC 170169 'Nuts, coconut meat, raw'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "proteinG": {
@@ -73,13 +82,13 @@
       "confidence": "Medium"
     },
     "fibreG": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 9,
+      "source": "USDA FDC: USDA FDC 170169 'Nuts, coconut meat, raw'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "sodiumMg": {
       "value": 20,
-      "source": "USDA FDC: FDC ID 170169, Nuts, coconut meat, raw (SR Legacy), via secondary sites",
+      "source": "USDA FDC: USDA FDC 170169 'Nuts, coconut meat, raw'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "ironMg": {
@@ -128,9 +137,9 @@
       "confidence": null
     },
     "cholesterolMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 170169 'Nuts, coconut meat, raw'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "transFatG": {
       "value": null,
@@ -173,9 +182,9 @@
       "confidence": null
     },
     "manganeseMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 1.5,
+      "source": "USDA FDC: USDA FDC 170169 'Nuts, coconut meat, raw'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "iodineUg": {
       "value": null,
@@ -218,26 +227,29 @@
       "confidence": null
     },
     "vitaminB12Ug": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 170169 'Nuts, coconut meat, raw'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     }
   },
   "macrosPer100Estimate": {
-    "kcal": 354,
+    "kcal": 361.5,
     "proteinG": null,
     "carbsG": null,
     "fatG": null,
     "fibreG": null
   },
-  "storage": "Whole: cool, dry place for 1–2 weeks. Opened halves: wrap and refrigerate, use within 2–3 days. Grated: airtight box in the fridge for 3–4 days, or freeze in portions (e.g. 40 g bags for this curry) for up to about 3 months; thaw before grinding.",
-  "looksLike": "A round, hard, brown, hairy shell about the size of a large fist (husk already removed), with water sloshing inside. Cracked open, it has a thick layer of firm, bright-white flesh, which is grated into moist white shreds.",
-  "howToPick": null,
-  "shelfLife": "Whole and unopened: 1–2 weeks at room temperature (longer in the fridge). Grated fresh: 3–4 days in the fridge. Frozen grated: several months.",
+  "storage": "Whole: cool, dry place. Grated: airtight box in the fridge for 1–2 days, or freeze in small portions for several weeks.",
+  "looksLike": "A round, hard, brown, hairy-husked or de-husked shell about the size of a large fist, with water inside. The thick white flesh is grated into moist white shreds.",
+  "howToPick": "Heavy for its size, with water that sloshes when shaken; no cracks, wet eyes or mould. A sour smell means it has turned.",
+  "shelfLife": "Whole nut: 1–2 weeks at room temperature; grated: use in 1–2 days chilled (general guidance, not from a source in this run).",
   "substitutes": [
     "Frozen grated coconut",
     "Thick coconut milk",
-    "Desiccated coconut (unsweetened)"
+    "Desiccated coconut (unsweetened)",
+    "Frozen grated coconut (thawed)",
+    "Thick coconut milk, 60 ml in place of 40 g grated",
+    "Desiccated coconut, soaked in warm water"
   ],
   "vendorListings": [],
   "usedIn": [
@@ -245,18 +257,22 @@
       "dishNumber": 33,
       "quantity": 40,
       "unit": "g",
-      "raw": "40 g grated (⅓ cup, loosely packed); fresh, or frozen and thawed"
+      "raw": "40 g per serving (about ⅓ cup, loosely packed), ground into the masala; 25 g in the lower-oil version"
     }
   ],
   "versions": [
     {
       "date": "2026-10-10",
       "file": "FitPlate_Ingredients_2026-10-10.md"
+    },
+    {
+      "date": "2026-11-13",
+      "file": "FitPlate_Ingredients_2026-11-13.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -265,5 +281,10 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "nutritionPer100g.proteinG: Conflict (2026-10-10: 3.33 vs 2026-11-13: 3.3); both cite the official table, kept the previous value.",
+    "nutritionPer100g.carbsG: Conflict (2026-10-10: 15.23 vs 2026-11-13: 15.2); both cite the official table, kept the previous value.",
+    "nutritionPer100g.fatG: Conflict (2026-10-10: 33.49 vs 2026-11-13: 33.5); both cite the official table, kept the previous value.",
+    "nutritionPer100g.saturatedFatG: Conflict (2026-10-10: 29.698 vs 2026-11-13: 29.7); both cite the official table, kept the previous value."
+  ]
 }

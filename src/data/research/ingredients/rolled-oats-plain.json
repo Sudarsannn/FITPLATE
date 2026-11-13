@@ -16,23 +16,32 @@
         "avg": 190,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-10.md"
+      },
+      {
+        "date": "2026-11-13",
+        "min": 160,
+        "max": 270,
+        "avg": 195,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-13.md"
       }
     ],
     "currentEstimate": {
       "min": 165,
-      "max": 215,
-      "avg": 190
+      "max": 220,
+      "avg": 195
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-10",
+    "lastObserved": "2026-11-13",
     "stale": false,
     "seasonal": false,
     "listingCount": 6,
     "platforms": [
-      "Amazon",
-      "BigBasket"
+      "BigBasket",
+      "Blinkit",
+      "Zepto"
     ],
     "outOfStock": false,
     "confirmed": true,
@@ -40,15 +49,15 @@
   },
   "per100Estimate": {
     "min": 16.5,
-    "max": 21.5,
-    "avg": 19
+    "max": 22,
+    "avg": 19.5
   },
   "seasonal": false,
   "nutritionPer100g": {
     "basis": "100g",
     "energyKcal": {
       "value": 379,
-      "source": "USDA FDC: SR Legacy Cereals, oats, regular and rolled and quick and instant, not fortified, dry (NDB 08120), FDC ID not confirmed, via secondary sites",
+      "source": "USDA FDC: Secondary pages quoting USDA oats entries (FDC ID not confirmed): energy, protein, carbohydrate, sugars, fat, fibre and sodium from one secondary oats page (not identified in the search summary); magnesium, manganese, phosphorus and thiamin from nutritionvalue.org 'Rolled Oat, dry'; iron from Signos; zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "proteinG": {
@@ -57,9 +66,9 @@
       "confidence": "Medium"
     },
     "carbsG": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 67.7,
+      "source": "USDA FDC: Secondary pages quoting USDA oats entries (FDC ID not confirmed): energy, protein, carbohydrate, sugars, fat, fibre and sodium from one secondary oats page (not identified in the search summary); magnesium, manganese, phosphorus and thiamin from nutritionvalue.org 'Rolled Oat, dry'; iron from Signos; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "sugarsG": {
       "value": 0.99,
@@ -67,9 +76,9 @@
       "confidence": "Medium"
     },
     "fatG": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 6.5,
+      "source": "USDA FDC: Secondary pages quoting USDA oats entries (FDC ID not confirmed): energy, protein, carbohydrate, sugars, fat, fibre and sodium from one secondary oats page (not identified in the search summary); magnesium, manganese, phosphorus and thiamin from nutritionvalue.org 'Rolled Oat, dry'; iron from Signos; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "saturatedFatG": {
       "value": 1.11,
@@ -78,12 +87,12 @@
     },
     "fibreG": {
       "value": 10.1,
-      "source": "USDA FDC: SR Legacy Cereals, oats, regular and rolled and quick and instant, not fortified, dry (NDB 08120), FDC ID not confirmed, via secondary sites",
+      "source": "USDA FDC: Secondary pages quoting USDA oats entries (FDC ID not confirmed): energy, protein, carbohydrate, sugars, fat, fibre and sodium from one secondary oats page (not identified in the search summary); magnesium, manganese, phosphorus and thiamin from nutritionvalue.org 'Rolled Oat, dry'; iron from Signos; zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "sodiumMg": {
       "value": 6,
-      "source": "USDA FDC: SR Legacy Cereals, oats, regular and rolled and quick and instant, not fortified, dry (NDB 08120), FDC ID not confirmed, via secondary sites",
+      "source": "USDA FDC: Secondary pages quoting USDA oats entries (FDC ID not confirmed): energy, protein, carbohydrate, sugars, fat, fibre and sodium from one secondary oats page (not identified in the search summary); magnesium, manganese, phosphorus and thiamin from nutritionvalue.org 'Rolled Oat, dry'; iron from Signos; zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "ironMg": {
@@ -103,7 +112,7 @@
     },
     "magnesiumMg": {
       "value": 138,
-      "source": "USDA FDC: SR Legacy Cereals, oats, regular and rolled and quick and instant, not fortified, dry (NDB 08120), FDC ID not confirmed, via secondary sites",
+      "source": "USDA FDC: Secondary pages quoting USDA oats entries (FDC ID not confirmed): energy, protein, carbohydrate, sugars, fat, fibre and sodium from one secondary oats page (not identified in the search summary); magnesium, manganese, phosphorus and thiamin from nutritionvalue.org 'Rolled Oat, dry'; iron from Signos; zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "zincMg": {
@@ -132,9 +141,9 @@
       "confidence": null
     },
     "cholesterolMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "USDA FDC: Secondary pages quoting USDA oats entries (FDC ID not confirmed): energy, protein, carbohydrate, sugars, fat, fibre and sodium from one secondary oats page (not identified in the search summary); magnesium, manganese, phosphorus and thiamin from nutritionvalue.org 'Rolled Oat, dry'; iron from Signos; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "transFatG": {
       "value": null,
@@ -162,9 +171,9 @@
       "confidence": null
     },
     "phosphorusMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 410,
+      "source": "USDA FDC: Secondary pages quoting USDA oats entries (FDC ID not confirmed): energy, protein, carbohydrate, sugars, fat, fibre and sodium from one secondary oats page (not identified in the search summary); magnesium, manganese, phosphorus and thiamin from nutritionvalue.org 'Rolled Oat, dry'; iron from Signos; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "seleniumUg": {
       "value": null,
@@ -177,9 +186,9 @@
       "confidence": null
     },
     "manganeseMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 3.63,
+      "source": "USDA FDC: Secondary pages quoting USDA oats entries (FDC ID not confirmed): energy, protein, carbohydrate, sugars, fat, fibre and sodium from one secondary oats page (not identified in the search summary); magnesium, manganese, phosphorus and thiamin from nutritionvalue.org 'Rolled Oat, dry'; iron from Signos; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "iodineUg": {
       "value": null,
@@ -202,9 +211,9 @@
       "confidence": null
     },
     "thiaminMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0.46,
+      "source": "USDA FDC: Secondary pages quoting USDA oats entries (FDC ID not confirmed): energy, protein, carbohydrate, sugars, fat, fibre and sodium from one secondary oats page (not identified in the search summary); magnesium, manganese, phosphorus and thiamin from nutritionvalue.org 'Rolled Oat, dry'; iron from Signos; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "riboflavinMg": {
       "value": null,
@@ -222,22 +231,38 @@
       "confidence": null
     },
     "vitaminB12Ug": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "USDA FDC: Secondary pages quoting USDA oats entries (FDC ID not confirmed): energy, protein, carbohydrate, sugars, fat, fibre and sodium from one secondary oats page (not identified in the search summary); magnesium, manganese, phosphorus and thiamin from nutritionvalue.org 'Rolled Oat, dry'; iron from Signos; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     }
   },
-  "macrosPer100Estimate": null,
-  "storage": "Room temperature in an airtight jar or the zip-lock pouch, away from heat and damp: 1–2 months after opening. In humid Mumbai monsoon months, a sealed jar in the fridge keeps out moisture and weevils for longer.",
-  "looksLike": "Flat, oval, pale-beige to cream flakes, each a steamed oat grain pressed flat. Old-fashioned rolled oats are thicker and more whole-looking than instant/quick oats, which are smaller, thinner and broken.",
-  "howToPick": null,
-  "shelfLife": "Usually 9–12 months sealed (check the pack); best used within 1–2 months of opening.",
+  "macrosPer100Estimate": {
+    "kcal": 382,
+    "proteinG": 13.2,
+    "carbsG": 67.7,
+    "fatG": 6.5,
+    "fibreG": 10.1
+  },
+  "storage": "Airtight jar in a cool, dry cupboard for 2 to 3 months once opened; in Mumbai's monsoon keep the jar dry and away from the stove. Overnight oats jars keep 2 days in the fridge.",
+  "looksLike": "Flat, pale-beige, oval flakes, thicker and sturdier than instant oats, which look like fine bits or powder.",
+  "howToPick": "Choose whole, thick, even flakes (not powder or curled bits), with a mild, sweet, nutty smell. Avoid packs that smell musty or bitter, have clumps or show moisture or insect webbing. For a gluten-free diet pick oats labelled gluten-free, because plain oats are often cross-contaminated with wheat.",
+  "shelfLife": "About 9 to 12 months sealed (check the printed best-before date).",
   "substitutes": [
     "Quick/instant oats",
     "Steel-cut oats",
-    "Thick poha (flattened rice)"
+    "Thick poha (flattened rice)",
+    "Quick-cooking or instant oats",
+    "Dalia (broken wheat) or millet flakes"
   ],
   "vendorListings": [
+    {
+      "vendor": "blinkit",
+      "product": "Quaker Rolled Instant Oats 1 kg",
+      "pack": "1 kg",
+      "priceMinInr": 164,
+      "priceMaxInr": 164,
+      "observedOn": "2026-11-13"
+    },
     {
       "vendor": "instamart",
       "product": null,
@@ -245,6 +270,14 @@
       "priceMinInr": 242,
       "priceMaxInr": 242,
       "observedOn": "2026-10-10"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Quaker Rolled Instant Oats",
+      "pack": "1 kg",
+      "priceMinInr": 175,
+      "priceMaxInr": 175,
+      "observedOn": "2026-11-13"
     }
   ],
   "usedIn": [
@@ -252,18 +285,22 @@
       "dishNumber": 31,
       "quantity": 40,
       "unit": "g",
-      "raw": "40 g raw (½ cup), soaked overnight in milk and curd"
+      "raw": "40 g raw rolled oats per serving (½ cup)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-10",
       "file": "FitPlate_Ingredients_2026-10-10.md"
+    },
+    {
+      "date": "2026-11-13",
+      "file": "FitPlate_Ingredients_2026-11-13.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (none)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (single)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -272,5 +309,11 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 161.6–252.8 was wider than 30% of avg 193.4; narrowed to ±15%.",
+    "nutritionPer100g.proteinG: Conflict (2026-10-10: 13.15 vs 2026-11-13: 13.2); both cite the official table, kept the previous value.",
+    "nutritionPer100g.sugarsG: Conflict (2026-10-10: 0.99 vs 2026-11-13: 1); both cite the official table, kept the previous value.",
+    "nutritionPer100g.ironMg: Conflict (2026-10-10: 4.25 vs 2026-11-13: 3.25); both cite the official table, kept the previous value."
+  ]
 }

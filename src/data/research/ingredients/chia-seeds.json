@@ -4,7 +4,7 @@
   "aliases": [
     "chia beej"
   ],
-  "category": "Nut/seed",
+  "category": "Seed",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -15,49 +15,57 @@
         "avg": 690,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-10.md"
+      },
+      {
+        "date": "2026-11-13",
+        "min": 550,
+        "max": 1400,
+        "avg": 795,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-13.md"
       }
     ],
     "currentEstimate": {
-      "min": 585,
-      "max": 795,
-      "avg": 690
+      "min": 650,
+      "max": 875,
+      "avg": 760
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-10",
+    "lastObserved": "2026-11-13",
     "stale": false,
     "seasonal": false,
-    "listingCount": 6,
+    "listingCount": 10,
     "platforms": [
-      "Amazon",
-      "BigBasket"
+      "BigBasket",
+      "Blinkit"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 58.5,
-    "max": 79.5,
-    "avg": 69
+    "min": 65,
+    "max": 87.5,
+    "avg": 76
   },
   "seasonal": false,
   "nutritionPer100g": {
     "basis": "100g",
     "energyKcal": {
       "value": 486,
-      "source": "USDA FDC: FDC ID 170554, Seeds, chia seeds, dried (SR Legacy), via secondary sites",
+      "source": "USDA FDC: USDA FDC 170554 'Seeds, chia seeds, dried' as reproduced by foodstruct.com, nutritionvalue.org, myfooddata.com and Wikipedia; zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "proteinG": {
       "value": 16.5,
-      "source": "USDA FDC: FDC ID 170554, Seeds, chia seeds, dried (SR Legacy), via secondary sites",
+      "source": "USDA FDC: USDA FDC 170554 'Seeds, chia seeds, dried' as reproduced by foodstruct.com, nutritionvalue.org, myfooddata.com and Wikipedia; zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "carbsG": {
       "value": 42.1,
-      "source": "USDA FDC: FDC ID 170554, Seeds, chia seeds, dried (SR Legacy), via secondary sites",
+      "source": "USDA FDC: USDA FDC 170554 'Seeds, chia seeds, dried' as reproduced by foodstruct.com, nutritionvalue.org, myfooddata.com and Wikipedia; zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "sugarsG": {
@@ -67,17 +75,17 @@
     },
     "fatG": {
       "value": 30.7,
-      "source": "USDA FDC: FDC ID 170554, Seeds, chia seeds, dried (SR Legacy), via secondary sites",
+      "source": "USDA FDC: USDA FDC 170554 'Seeds, chia seeds, dried' as reproduced by foodstruct.com, nutritionvalue.org, myfooddata.com and Wikipedia; zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "saturatedFatG": {
       "value": 3.3,
-      "source": "USDA FDC: FDC ID 170554, Seeds, chia seeds, dried (SR Legacy), via secondary sites",
+      "source": "USDA FDC: USDA FDC 170554 'Seeds, chia seeds, dried' as reproduced by foodstruct.com, nutritionvalue.org, myfooddata.com and Wikipedia; zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "fibreG": {
       "value": 34.4,
-      "source": "USDA FDC: FDC ID 170554, Seeds, chia seeds, dried (SR Legacy), via secondary sites",
+      "source": "USDA FDC: USDA FDC 170554 'Seeds, chia seeds, dried' as reproduced by foodstruct.com, nutritionvalue.org, myfooddata.com and Wikipedia; zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "sodiumMg": {
@@ -87,22 +95,22 @@
     },
     "ironMg": {
       "value": 7.7,
-      "source": "USDA FDC: FDC ID 170554, Seeds, chia seeds, dried (SR Legacy), via secondary sites",
+      "source": "USDA FDC: USDA FDC 170554 'Seeds, chia seeds, dried' as reproduced by foodstruct.com, nutritionvalue.org, myfooddata.com and Wikipedia; zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "calciumMg": {
       "value": 631,
-      "source": "USDA FDC: FDC ID 170554, Seeds, chia seeds, dried (SR Legacy), via secondary sites",
+      "source": "USDA FDC: USDA FDC 170554 'Seeds, chia seeds, dried' as reproduced by foodstruct.com, nutritionvalue.org, myfooddata.com and Wikipedia; zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "potassiumMg": {
       "value": 407,
-      "source": "USDA FDC: FDC ID 170554, Seeds, chia seeds, dried (SR Legacy), via secondary sites",
+      "source": "USDA FDC: USDA FDC 170554 'Seeds, chia seeds, dried' as reproduced by foodstruct.com, nutritionvalue.org, myfooddata.com and Wikipedia; zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "magnesiumMg": {
       "value": 335,
-      "source": "USDA FDC: FDC ID 170554, Seeds, chia seeds, dried (SR Legacy), via secondary sites",
+      "source": "USDA FDC: USDA FDC 170554 'Seeds, chia seeds, dried' as reproduced by foodstruct.com, nutritionvalue.org, myfooddata.com and Wikipedia; zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "zincMg": {
@@ -131,9 +139,9 @@
       "confidence": null
     },
     "cholesterolMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 170554 'Seeds, chia seeds, dried' as reproduced by foodstruct.com, nutritionvalue.org, myfooddata.com and Wikipedia; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "transFatG": {
       "value": null,
@@ -151,9 +159,9 @@
       "confidence": null
     },
     "omega3G": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 17.83,
+      "source": "USDA FDC: USDA FDC 170554 'Seeds, chia seeds, dried' as reproduced by foodstruct.com, nutritionvalue.org, myfooddata.com and Wikipedia; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "addedSugarsG": {
       "value": null,
@@ -161,24 +169,24 @@
       "confidence": null
     },
     "phosphorusMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 860,
+      "source": "USDA FDC: USDA FDC 170554 'Seeds, chia seeds, dried' as reproduced by foodstruct.com, nutritionvalue.org, myfooddata.com and Wikipedia; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "seleniumUg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 55.2,
+      "source": "USDA FDC: USDA FDC 170554 'Seeds, chia seeds, dried' as reproduced by foodstruct.com, nutritionvalue.org, myfooddata.com and Wikipedia; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "copperMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0.92,
+      "source": "USDA FDC: USDA FDC 170554 'Seeds, chia seeds, dried' as reproduced by foodstruct.com, nutritionvalue.org, myfooddata.com and Wikipedia; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "manganeseMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 2.723,
+      "source": "USDA FDC: USDA FDC 170554 'Seeds, chia seeds, dried' as reproduced by foodstruct.com, nutritionvalue.org, myfooddata.com and Wikipedia; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "iodineUg": {
       "value": null,
@@ -191,9 +199,9 @@
       "confidence": null
     },
     "vitaminEMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0.5,
+      "source": "USDA FDC: USDA FDC 170554 'Seeds, chia seeds, dried' as reproduced by foodstruct.com, nutritionvalue.org, myfooddata.com and Wikipedia; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "vitaminKUg": {
       "value": null,
@@ -221,39 +229,76 @@
       "confidence": null
     },
     "vitaminB12Ug": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 170554 'Seeds, chia seeds, dried' as reproduced by foodstruct.com, nutritionvalue.org, myfooddata.com and Wikipedia; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     }
   },
-  "macrosPer100Estimate": null,
-  "storage": "Airtight jar at room temperature, away from heat and moisture: 6–12 months after opening. Fridge in a sealed jar for longer keeping or in the humid monsoon months. Soaked chia (or the soaked jar of oats): fridge, use within 2–3 days.",
-  "looksLike": "Tiny oval seeds, about 1–2 mm, speckled black, grey and some white. In liquid they swell and form a clear jelly-like coat within 10–15 minutes.",
-  "howToPick": null,
-  "shelfLife": "About 12–24 months sealed (check the pack); several months after opening if kept dry.",
+  "macrosPer100Estimate": {
+    "kcal": 517,
+    "proteinG": null,
+    "carbsG": null,
+    "fatG": null,
+    "fibreG": null
+  },
+  "storage": "Airtight jar in a cool, dry cupboard for 6 to 12 months; in monsoon or a warm kitchen, the fridge keeps the oils fresh. Soaked chia keeps 2 to 3 days in the fridge.",
+  "looksLike": "Tiny, oval, grey-black seeds with white-and-brown speckles. In liquid they swell and form a clear gel coat around each seed (the soaked seeds look jelly-like).",
+  "howToPick": "Look for dry, loose, uniform grey-black seeds with no clumps, no musty or rancid smell, and a sealed pack. Check the label says 100% chia (not a seed mix) and note the packing date.",
+  "shelfLife": "About 12 to 18 months sealed (check the printed best-before date).",
   "substitutes": [
     "Sabja (sweet basil seeds)",
     "Ground flaxseed (alsi)",
-    "Skip it"
+    "Skip it",
+    "Flax (alsi) seeds, ground",
+    "Sabja (basil) seeds"
   ],
-  "vendorListings": [],
+  "vendorListings": [
+    {
+      "vendor": "blinkit",
+      "product": "Henley Premium Chia Seeds 250 g",
+      "pack": "250 g",
+      "priceMinInr": 189,
+      "priceMaxInr": 189,
+      "observedOn": "2026-11-13"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "True Elements Premium Chia Seeds 250 g",
+      "pack": "250 g",
+      "priceMinInr": 195,
+      "priceMaxInr": 195,
+      "observedOn": "2026-11-13"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Organic Box Chia Seeds",
+      "pack": "500 g",
+      "priceMinInr": 280,
+      "priceMaxInr": 280,
+      "observedOn": "2026-11-13"
+    }
+  ],
   "usedIn": [
     {
       "dishNumber": 31,
       "quantity": 5,
       "unit": "g",
-      "raw": "5 g (1 tsp), soaked with the oats"
+      "raw": "5 g chia seeds per serving (1 tsp)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-10",
       "file": "FitPlate_Ingredients_2026-10-10.md"
+    },
+    {
+      "date": "2026-11-13",
+      "file": "FitPlate_Ingredients_2026-11-13.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (none)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (single)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -264,6 +309,7 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 580.0–800.0 was wider than 30% of avg 690.0; narrowed to ±15%."
+    "Range 559.4–1212.1 was wider than 30% of avg 762.1; narrowed to ±15%.",
+    "nutritionPer100g.zincMg: Conflict (2026-10-10: 4.6 vs 2026-11-13: 4.58); both cite the official table, kept the previous value."
   ]
 }

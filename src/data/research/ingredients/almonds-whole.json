@@ -4,7 +4,7 @@
   "aliases": [
     "badam"
   ],
-  "category": "Nut/seed",
+  "category": "Nut",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -15,39 +15,47 @@
         "avg": 1090,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-10.md"
+      },
+      {
+        "date": "2026-11-13",
+        "min": 860,
+        "max": 1650,
+        "avg": 1225,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-13.md"
       }
     ],
     "currentEstimate": {
-      "min": 1000,
-      "max": 1175,
-      "avg": 1090
+      "min": 1005,
+      "max": 1360,
+      "avg": 1185
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-10",
+    "lastObserved": "2026-11-13",
     "stale": false,
     "seasonal": false,
-    "listingCount": 10,
+    "listingCount": 11,
     "platforms": [
-      "Amazon",
-      "BigBasket"
+      "BigBasket",
+      "Blinkit"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 100,
-    "max": 117.5,
-    "avg": 109
+    "min": 100.5,
+    "max": 136,
+    "avg": 118.5
   },
   "seasonal": false,
   "nutritionPer100g": {
     "basis": "100g",
     "energyKcal": {
       "value": 579,
-      "source": "USDA FDC: FDC ID 170567, Nuts, almonds (SR Legacy) for macros via getfoodfacts.com; micros combined from fitnessvolt.com, triagemethod.com and nutritionvalue.org raw almond pages",
+      "source": "USDA FDC: Secondary pages quoting USDA raw almonds (SR Legacy; myfooddata.com lists FDC 2346393 'Nuts, almonds, whole, raw' for the Foundation entry; neither confirmed): energy, protein, fat and fibre from a USDA-quoting summary; MUFA and PUFA from a USDA-derived profile; saturated fat from a calculator page; vitamin E and calcium from search summaries; thiamin, riboflavin and B6 from nutritionvalue.org 'Almonds, whole, raw'; zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Low"
     },
     "proteinG": {
@@ -67,17 +75,17 @@
     },
     "fatG": {
       "value": 49.9,
-      "source": "USDA FDC: FDC ID 170567, Nuts, almonds (SR Legacy) for macros via getfoodfacts.com; micros combined from fitnessvolt.com, triagemethod.com and nutritionvalue.org raw almond pages",
+      "source": "USDA FDC: Secondary pages quoting USDA raw almonds (SR Legacy; myfooddata.com lists FDC 2346393 'Nuts, almonds, whole, raw' for the Foundation entry; neither confirmed): energy, protein, fat and fibre from a USDA-quoting summary; MUFA and PUFA from a USDA-derived profile; saturated fat from a calculator page; vitamin E and calcium from search summaries; thiamin, riboflavin and B6 from nutritionvalue.org 'Almonds, whole, raw'; zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Low"
     },
     "saturatedFatG": {
       "value": 3.8,
-      "source": "USDA FDC: FDC ID 170567, Nuts, almonds (SR Legacy) for macros via getfoodfacts.com; micros combined from fitnessvolt.com, triagemethod.com and nutritionvalue.org raw almond pages",
+      "source": "USDA FDC: Secondary pages quoting USDA raw almonds (SR Legacy; myfooddata.com lists FDC 2346393 'Nuts, almonds, whole, raw' for the Foundation entry; neither confirmed): energy, protein, fat and fibre from a USDA-quoting summary; MUFA and PUFA from a USDA-derived profile; saturated fat from a calculator page; vitamin E and calcium from search summaries; thiamin, riboflavin and B6 from nutritionvalue.org 'Almonds, whole, raw'; zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Low"
     },
     "fibreG": {
       "value": 12.5,
-      "source": "USDA FDC: FDC ID 170567, Nuts, almonds (SR Legacy) for macros via getfoodfacts.com; micros combined from fitnessvolt.com, triagemethod.com and nutritionvalue.org raw almond pages",
+      "source": "USDA FDC: Secondary pages quoting USDA raw almonds (SR Legacy; myfooddata.com lists FDC 2346393 'Nuts, almonds, whole, raw' for the Foundation entry; neither confirmed): energy, protein, fat and fibre from a USDA-quoting summary; MUFA and PUFA from a USDA-derived profile; saturated fat from a calculator page; vitamin E and calcium from search summaries; thiamin, riboflavin and B6 from nutritionvalue.org 'Almonds, whole, raw'; zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Low"
     },
     "sodiumMg": {
@@ -92,7 +100,7 @@
     },
     "calciumMg": {
       "value": 269,
-      "source": "USDA FDC: FDC ID 170567, Nuts, almonds (SR Legacy) for macros via getfoodfacts.com; micros combined from fitnessvolt.com, triagemethod.com and nutritionvalue.org raw almond pages",
+      "source": "USDA FDC: Secondary pages quoting USDA raw almonds (SR Legacy; myfooddata.com lists FDC 2346393 'Nuts, almonds, whole, raw' for the Foundation entry; neither confirmed): energy, protein, fat and fibre from a USDA-quoting summary; MUFA and PUFA from a USDA-derived profile; saturated fat from a calculator page; vitamin E and calcium from search summaries; thiamin, riboflavin and B6 from nutritionvalue.org 'Almonds, whole, raw'; zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Low"
     },
     "potassiumMg": {
@@ -131,9 +139,9 @@
       "confidence": null
     },
     "cholesterolMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "USDA FDC: Secondary pages quoting USDA raw almonds (SR Legacy; myfooddata.com lists FDC 2346393 'Nuts, almonds, whole, raw' for the Foundation entry; neither confirmed): energy, protein, fat and fibre from a USDA-quoting summary; MUFA and PUFA from a USDA-derived profile; saturated fat from a calculator page; vitamin E and calcium from search summaries; thiamin, riboflavin and B6 from nutritionvalue.org 'Almonds, whole, raw'; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
     },
     "transFatG": {
       "value": null,
@@ -141,14 +149,14 @@
       "confidence": null
     },
     "mufaG": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 30.89,
+      "source": "USDA FDC: Secondary pages quoting USDA raw almonds (SR Legacy; myfooddata.com lists FDC 2346393 'Nuts, almonds, whole, raw' for the Foundation entry; neither confirmed): energy, protein, fat and fibre from a USDA-quoting summary; MUFA and PUFA from a USDA-derived profile; saturated fat from a calculator page; vitamin E and calcium from search summaries; thiamin, riboflavin and B6 from nutritionvalue.org 'Almonds, whole, raw'; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
     },
     "pufaG": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 12.07,
+      "source": "USDA FDC: Secondary pages quoting USDA raw almonds (SR Legacy; myfooddata.com lists FDC 2346393 'Nuts, almonds, whole, raw' for the Foundation entry; neither confirmed): energy, protein, fat and fibre from a USDA-quoting summary; MUFA and PUFA from a USDA-derived profile; saturated fat from a calculator page; vitamin E and calcium from search summaries; thiamin, riboflavin and B6 from nutritionvalue.org 'Almonds, whole, raw'; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
     },
     "omega3G": {
       "value": null,
@@ -191,9 +199,9 @@
       "confidence": null
     },
     "vitaminEMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 25.6,
+      "source": "USDA FDC: Secondary pages quoting USDA raw almonds (SR Legacy; myfooddata.com lists FDC 2346393 'Nuts, almonds, whole, raw' for the Foundation entry; neither confirmed): energy, protein, fat and fibre from a USDA-quoting summary; MUFA and PUFA from a USDA-derived profile; saturated fat from a calculator page; vitamin E and calcium from search summaries; thiamin, riboflavin and B6 from nutritionvalue.org 'Almonds, whole, raw'; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
     },
     "vitaminKUg": {
       "value": null,
@@ -201,14 +209,14 @@
       "confidence": null
     },
     "thiaminMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0.16,
+      "source": "USDA FDC: Secondary pages quoting USDA raw almonds (SR Legacy; myfooddata.com lists FDC 2346393 'Nuts, almonds, whole, raw' for the Foundation entry; neither confirmed): energy, protein, fat and fibre from a USDA-quoting summary; MUFA and PUFA from a USDA-derived profile; saturated fat from a calculator page; vitamin E and calcium from search summaries; thiamin, riboflavin and B6 from nutritionvalue.org 'Almonds, whole, raw'; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
     },
     "riboflavinMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 1.14,
+      "source": "USDA FDC: Secondary pages quoting USDA raw almonds (SR Legacy; myfooddata.com lists FDC 2346393 'Nuts, almonds, whole, raw' for the Foundation entry; neither confirmed): energy, protein, fat and fibre from a USDA-quoting summary; MUFA and PUFA from a USDA-derived profile; saturated fat from a calculator page; vitamin E and calcium from search summaries; thiamin, riboflavin and B6 from nutritionvalue.org 'Almonds, whole, raw'; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
     },
     "niacinMg": {
       "value": null,
@@ -216,50 +224,96 @@
       "confidence": null
     },
     "vitaminB6Mg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0.101,
+      "source": "USDA FDC: Secondary pages quoting USDA raw almonds (SR Legacy; myfooddata.com lists FDC 2346393 'Nuts, almonds, whole, raw' for the Foundation entry; neither confirmed): energy, protein, fat and fibre from a USDA-quoting summary; MUFA and PUFA from a USDA-derived profile; saturated fat from a calculator page; vitamin E and calcium from search summaries; thiamin, riboflavin and B6 from nutritionvalue.org 'Almonds, whole, raw'; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
     },
     "vitaminB12Ug": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "USDA FDC: Secondary pages quoting USDA raw almonds (SR Legacy; myfooddata.com lists FDC 2346393 'Nuts, almonds, whole, raw' for the Foundation entry; neither confirmed): energy, protein, fat and fibre from a USDA-quoting summary; MUFA and PUFA from a USDA-derived profile; saturated fat from a calculator page; vitamin E and calcium from search summaries; thiamin, riboflavin and B6 from nutritionvalue.org 'Almonds, whole, raw'; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
     }
   },
   "macrosPer100Estimate": {
-    "kcal": null,
-    "proteinG": null,
+    "kcal": 626,
+    "proteinG": 21.2,
     "carbsG": null,
-    "fatG": 3.8,
-    "fibreG": null
+    "fatG": 49.9,
+    "fibreG": 12.5
   },
-  "storage": "about 6 months; freezer: up to a year. Soaked almonds keep 2–3 days in the fridge.",
-  "looksLike": "Flat, teardrop-shaped kernels about 2–2.5 cm long, with a thin, ridged, light-brown skin and a creamy-white inside. California almonds are fairly uniform and smooth; Indian-grown or Mamra almonds are smaller, more curved and rougher.",
-  "howToPick": null,
-  "shelfLife": "About 6–12 months in a sealed pack; 2–3 months once opened at room temperature in Mumbai's humidity.",
+  "storage": "Airtight jar in a cool, dry cupboard for 3 to 6 months; in Mumbai's heat and monsoon humidity the fridge keeps them fresh for up to a year. Soaked and peeled almonds keep 1 to 2 days in the fridge.",
+  "looksLike": "Flat, oval, teardrop-shaped kernels with a brown, slightly wrinkled skin and a cream-white inside.",
+  "howToPick": "Choose plump, uniform, light-brown kernels with intact skin that snap cleanly, with a sweet nutty smell. Avoid shrivelled, dark, oily-looking or musty-smelling nuts (a sign of rancid oil) and very bitter ones.",
+  "shelfLife": "About 6 to 12 months sealed; the oil can turn rancid in warm, humid storage.",
   "substitutes": [
     "Cashews (kaju)",
     "Walnuts (akhrot)",
-    "Pumpkin or sunflower seeds"
+    "Pumpkin or sunflower seeds",
+    "Skip or use melon seeds (magaz)"
   ],
-  "vendorListings": [],
+  "vendorListings": [
+    {
+      "vendor": "blinkit",
+      "product": "Wonderland Foods Raw California Almonds",
+      "pack": "500 g",
+      "priceMinInr": 513,
+      "priceMaxInr": 513,
+      "observedOn": "2026-11-13"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Nutraj California Almonds",
+      "pack": "500 g",
+      "priceMinInr": 517,
+      "priceMaxInr": 517,
+      "observedOn": "2026-11-13"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Happilo California Almonds",
+      "pack": "450 g",
+      "priceMinInr": 551,
+      "priceMaxInr": 551,
+      "observedOn": "2026-11-13"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Whole Farm Premium American Almonds",
+      "pack": "500 g",
+      "priceMinInr": 592,
+      "priceMaxInr": 592,
+      "observedOn": "2026-11-13"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Tata Sampann Pure California Almonds",
+      "pack": "500 g",
+      "priceMinInr": 635,
+      "priceMaxInr": 635,
+      "observedOn": "2026-11-13"
+    }
+  ],
   "usedIn": [
     {
       "dishNumber": 31,
       "quantity": 8,
       "unit": "g",
-      "raw": "8 g (6 almonds, chopped), stirred in the night before"
+      "raw": "8 g whole almonds per serving (6 almonds, chopped)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-10",
       "file": "FitPlate_Ingredients_2026-10-10.md"
+    },
+    {
+      "date": "2026-11-13",
+      "file": "FitPlate_Ingredients_2026-11-13.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (none)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (single)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -268,5 +322,10 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 903.8–1501.3 was wider than 30% of avg 1182.7; narrowed to ±15%.",
+    "macrosPer100Estimate.fatG: Versions 2026-10-10 (3.8) and 2026-11-13 (49.9) differ by more than 25%; kept the newer.",
+    "nutritionPer100g.proteinG: Conflict (2026-10-10: 21.1 vs 2026-11-13: 21.2); both cite the official table, kept the previous value."
+  ]
 }

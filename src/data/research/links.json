@@ -1,6 +1,6 @@
 {
   "schema": "fitplate.links.v1",
-  "generatedFor": "Day24",
+  "generatedFor": "Day25",
   "goodSourceDishes": {
     "biotin": [
       {
@@ -2692,7 +2692,7 @@
       "calcium": {
         "per100": 269,
         "unit": "mg",
-        "source": "ingredient research (USDA FDC: FDC ID 170567, Nuts, almonds (SR Legacy) for macros via getfoodfacts.com; micros combined from fitnessvolt.com, triagemethod.com and nutritionvalue.org raw almond pages)"
+        "source": "ingredient research (USDA FDC: Secondary pages quoting USDA raw almonds (SR Legacy; myfooddata.com lists FDC 2346393 'Nuts, almonds, whole, raw' for the Foundation entry; neither confirmed): energy, protein, fat and fibre from a USDA-quoting summary; MUFA and PUFA from a USDA-derived profile; saturated fat from a calculator page; vitamin E and calcium from search summaries; thiamin, riboflavin and B6 from nutritionvalue.org 'Almonds, whole, raw'; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       },
       "potassium": {
         "per100": 733,
@@ -2719,10 +2719,35 @@
         "unit": "µg",
         "source": "ingredient research (USDA FDC: FDC ID 170567, Nuts, almonds (SR Legacy) for macros via getfoodfacts.com; micros combined from fitnessvolt.com, triagemethod.com and nutritionvalue.org raw almond pages)"
       },
-      "vitamin-e": {
-        "per100": 24.9,
+      "cholesterol": {
+        "per100": 0,
         "unit": "mg",
-        "source": "nutrient research (vitamin-e food sources)"
+        "source": "ingredient research (USDA FDC: Secondary pages quoting USDA raw almonds (SR Legacy; myfooddata.com lists FDC 2346393 'Nuts, almonds, whole, raw' for the Foundation entry; neither confirmed): energy, protein, fat and fibre from a USDA-quoting summary; MUFA and PUFA from a USDA-derived profile; saturated fat from a calculator page; vitamin E and calcium from search summaries; thiamin, riboflavin and B6 from nutritionvalue.org 'Almonds, whole, raw'; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-e": {
+        "per100": 25.6,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: Secondary pages quoting USDA raw almonds (SR Legacy; myfooddata.com lists FDC 2346393 'Nuts, almonds, whole, raw' for the Foundation entry; neither confirmed): energy, protein, fat and fibre from a USDA-quoting summary; MUFA and PUFA from a USDA-derived profile; saturated fat from a calculator page; vitamin E and calcium from search summaries; thiamin, riboflavin and B6 from nutritionvalue.org 'Almonds, whole, raw'; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "thiamine": {
+        "per100": 0.16,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: Secondary pages quoting USDA raw almonds (SR Legacy; myfooddata.com lists FDC 2346393 'Nuts, almonds, whole, raw' for the Foundation entry; neither confirmed): energy, protein, fat and fibre from a USDA-quoting summary; MUFA and PUFA from a USDA-derived profile; saturated fat from a calculator page; vitamin E and calcium from search summaries; thiamin, riboflavin and B6 from nutritionvalue.org 'Almonds, whole, raw'; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "riboflavin": {
+        "per100": 1.14,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: Secondary pages quoting USDA raw almonds (SR Legacy; myfooddata.com lists FDC 2346393 'Nuts, almonds, whole, raw' for the Foundation entry; neither confirmed): energy, protein, fat and fibre from a USDA-quoting summary; MUFA and PUFA from a USDA-derived profile; saturated fat from a calculator page; vitamin E and calcium from search summaries; thiamin, riboflavin and B6 from nutritionvalue.org 'Almonds, whole, raw'; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b6": {
+        "per100": 0.101,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: Secondary pages quoting USDA raw almonds (SR Legacy; myfooddata.com lists FDC 2346393 'Nuts, almonds, whole, raw' for the Foundation entry; neither confirmed): energy, protein, fat and fibre from a USDA-quoting summary; MUFA and PUFA from a USDA-derived profile; saturated fat from a calculator page; vitamin E and calcium from search summaries; thiamin, riboflavin and B6 from nutritionvalue.org 'Almonds, whole, raw'; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: Secondary pages quoting USDA raw almonds (SR Legacy; myfooddata.com lists FDC 2346393 'Nuts, almonds, whole, raw' for the Foundation entry; neither confirmed): energy, protein, fat and fibre from a USDA-quoting summary; MUFA and PUFA from a USDA-derived profile; saturated fat from a calculator page; vitamin E and calcium from search summaries; thiamin, riboflavin and B6 from nutritionvalue.org 'Almonds, whole, raw'; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
     "asafoetida": {
@@ -3456,22 +3481,22 @@
       "iron": {
         "per100": 7.7,
         "unit": "mg",
-        "source": "ingredient research (USDA FDC: FDC ID 170554, Seeds, chia seeds, dried (SR Legacy), via secondary sites)"
+        "source": "ingredient research (USDA FDC: USDA FDC 170554 'Seeds, chia seeds, dried' as reproduced by foodstruct.com, nutritionvalue.org, myfooddata.com and Wikipedia; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       },
       "calcium": {
         "per100": 631,
         "unit": "mg",
-        "source": "ingredient research (USDA FDC: FDC ID 170554, Seeds, chia seeds, dried (SR Legacy), via secondary sites)"
+        "source": "ingredient research (USDA FDC: USDA FDC 170554 'Seeds, chia seeds, dried' as reproduced by foodstruct.com, nutritionvalue.org, myfooddata.com and Wikipedia; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       },
       "potassium": {
         "per100": 407,
         "unit": "mg",
-        "source": "ingredient research (USDA FDC: FDC ID 170554, Seeds, chia seeds, dried (SR Legacy), via secondary sites)"
+        "source": "ingredient research (USDA FDC: USDA FDC 170554 'Seeds, chia seeds, dried' as reproduced by foodstruct.com, nutritionvalue.org, myfooddata.com and Wikipedia; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       },
       "magnesium": {
         "per100": 335,
         "unit": "mg",
-        "source": "ingredient research (USDA FDC: FDC ID 170554, Seeds, chia seeds, dried (SR Legacy), via secondary sites)"
+        "source": "ingredient research (USDA FDC: USDA FDC 170554 'Seeds, chia seeds, dried' as reproduced by foodstruct.com, nutritionvalue.org, myfooddata.com and Wikipedia; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       },
       "zinc": {
         "per100": 4.6,
@@ -3492,6 +3517,41 @@
         "per100": 49,
         "unit": "µg",
         "source": "ingredient research (USDA FDC: FDC ID 170554, Seeds, chia seeds, dried (SR Legacy), via secondary sites)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170554 'Seeds, chia seeds, dried' as reproduced by foodstruct.com, nutritionvalue.org, myfooddata.com and Wikipedia; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "phosphorus": {
+        "per100": 860,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170554 'Seeds, chia seeds, dried' as reproduced by foodstruct.com, nutritionvalue.org, myfooddata.com and Wikipedia; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "selenium": {
+        "per100": 55.2,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170554 'Seeds, chia seeds, dried' as reproduced by foodstruct.com, nutritionvalue.org, myfooddata.com and Wikipedia; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "copper": {
+        "per100": 0.92,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170554 'Seeds, chia seeds, dried' as reproduced by foodstruct.com, nutritionvalue.org, myfooddata.com and Wikipedia; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "manganese": {
+        "per100": 2.723,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170554 'Seeds, chia seeds, dried' as reproduced by foodstruct.com, nutritionvalue.org, myfooddata.com and Wikipedia; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-e": {
+        "per100": 0.5,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170554 'Seeds, chia seeds, dried' as reproduced by foodstruct.com, nutritionvalue.org, myfooddata.com and Wikipedia; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170554 'Seeds, chia seeds, dried' as reproduced by foodstruct.com, nutritionvalue.org, myfooddata.com and Wikipedia; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
     "chicken-curry-cut-bone-in-skinless": {
@@ -3775,6 +3835,18 @@
         "per100": 0,
         "unit": "µg",
         "source": "ingredient research (USDA FDC: FDC ID 170173 Nuts, coconut milk, canned (liquid expressed from grated meat and water), via getfoodfacts.com, triagemethod.com and recipal.com; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      }
+    },
+    "coconut-oil": {
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171412 'Oil, coconut'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 171412 'Oil, coconut'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
     "cooking-oil-refined-sunflower-groundnut": {
@@ -4887,7 +4959,7 @@
       "sodium": {
         "per100": 20,
         "unit": "mg",
-        "source": "ingredient research (USDA FDC: FDC ID 170169, Nuts, coconut meat, raw (SR Legacy), via secondary sites)"
+        "source": "ingredient research (USDA FDC: USDA FDC 170169 'Nuts, coconut meat, raw'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       },
       "vitamin-c": {
         "per100": 3.3,
@@ -4898,6 +4970,21 @@
         "per100": 26,
         "unit": "µg",
         "source": "ingredient research (USDA FDC: FDC ID 170169, Nuts, coconut meat, raw (SR Legacy), via secondary sites)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170169 'Nuts, coconut meat, raw'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "manganese": {
+        "per100": 1.5,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170169 'Nuts, coconut meat, raw'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170169 'Nuts, coconut meat, raw'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
     "fruit-salt-plain": {
@@ -5436,10 +5523,20 @@
       }
     },
     "honey": {
+      "iron": {
+        "per100": 0.42,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169640 'Honey' (SR Legacy) as reproduced by batchbase.com.au, rawhoneyguide.com and other secondary pages)"
+      },
+      "potassium": {
+        "per100": 52,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169640 'Honey' (SR Legacy) as reproduced by batchbase.com.au, rawhoneyguide.com and other secondary pages)"
+      },
       "sodium": {
         "per100": 4,
         "unit": "mg",
-        "source": "ingredient research (USDA FDC: FDC ID 169640, Honey (SR Legacy), via secondary sites)"
+        "source": "ingredient research (USDA FDC: USDA FDC 169640 'Honey' (SR Legacy) as reproduced by batchbase.com.au, rawhoneyguide.com and other secondary pages)"
       }
     },
     "idli-dosa-batter-ready-made-packaged": {
@@ -6230,6 +6327,11 @@
         "unit": "mg",
         "source": "ingredient research (USDA FDC: FDC ID 170184, Nuts, pistachio nuts, raw (SR Legacy) and FDC ID 2515379, Nuts, pistachio nuts, raw (Foundation), via secondary sites)"
       },
+      "potassium": {
+        "per100": 1025,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170184 'Nuts, pistachio nuts, raw' as cited by secondary pages (foodstruct, myfooddata, nutritionvalue.org, nutrientoptimiser); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
       "magnesium": {
         "per100": 110,
         "unit": "mg",
@@ -6238,22 +6340,72 @@
       "zinc": {
         "per100": 2.2,
         "unit": "mg",
-        "source": "ingredient research (USDA FDC: FDC ID 170184, Nuts, pistachio nuts, raw (SR Legacy) and FDC ID 2515379, Nuts, pistachio nuts, raw (Foundation), via secondary sites)"
+        "source": "ingredient research (USDA FDC: USDA FDC 170184 'Nuts, pistachio nuts, raw' as cited by secondary pages (foodstruct, myfooddata, nutritionvalue.org, nutrientoptimiser); zero by composition: cholesterol_mg, vitamin_b12_ug)"
       },
       "sodium": {
         "per100": 0,
         "unit": "mg",
         "source": "ingredient research (USDA FDC: FDC ID 170184, Nuts, pistachio nuts, raw (SR Legacy) and FDC ID 2515379, Nuts, pistachio nuts, raw (Foundation), via secondary sites)"
       },
+      "vitamin-c": {
+        "per100": 5.6,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170184 'Nuts, pistachio nuts, raw' as cited by secondary pages (foodstruct, myfooddata, nutritionvalue.org, nutrientoptimiser); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
       "vitamin-a": {
         "per100": 35,
         "unit": "µg",
         "source": "ingredient research (USDA FDC: FDC ID 170184, Nuts, pistachio nuts, raw (SR Legacy) and FDC ID 2515379, Nuts, pistachio nuts, raw (Foundation), via secondary sites)"
       },
-      "thiamine": {
-        "per100": 0.98,
+      "folate": {
+        "per100": 51,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170184 'Nuts, pistachio nuts, raw' as cited by secondary pages (foodstruct, myfooddata, nutritionvalue.org, nutrientoptimiser); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
         "unit": "mg",
-        "source": "nutrient research (thiamine food sources)"
+        "source": "ingredient research (USDA FDC: USDA FDC 170184 'Nuts, pistachio nuts, raw' as cited by secondary pages (foodstruct, myfooddata, nutritionvalue.org, nutrientoptimiser); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "selenium": {
+        "per100": 7,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170184 'Nuts, pistachio nuts, raw' as cited by secondary pages (foodstruct, myfooddata, nutritionvalue.org, nutrientoptimiser); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "manganese": {
+        "per100": 1.2,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170184 'Nuts, pistachio nuts, raw' as cited by secondary pages (foodstruct, myfooddata, nutritionvalue.org, nutrientoptimiser); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-d": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170184 'Nuts, pistachio nuts, raw' as cited by secondary pages (foodstruct, myfooddata, nutritionvalue.org, nutrientoptimiser); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-e": {
+        "per100": 2.86,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170184 'Nuts, pistachio nuts, raw' as cited by secondary pages (foodstruct, myfooddata, nutritionvalue.org, nutrientoptimiser); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "thiamine": {
+        "per100": 0.87,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170184 'Nuts, pistachio nuts, raw' as cited by secondary pages (foodstruct, myfooddata, nutritionvalue.org, nutrientoptimiser); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "riboflavin": {
+        "per100": 0.16,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170184 'Nuts, pistachio nuts, raw' as cited by secondary pages (foodstruct, myfooddata, nutritionvalue.org, nutrientoptimiser); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "niacin": {
+        "per100": 1.3,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170184 'Nuts, pistachio nuts, raw' as cited by secondary pages (foodstruct, myfooddata, nutritionvalue.org, nutrientoptimiser); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 170184 'Nuts, pistachio nuts, raw' as cited by secondary pages (foodstruct, myfooddata, nutritionvalue.org, nutrientoptimiser); zero by composition: cholesterol_mg, vitamin_b12_ug)"
       },
       "vitamin-b6": {
         "per100": 0.96,
@@ -6703,9 +6855,9 @@
     },
     "red-chilli-sauce": {
       "sodium": {
-        "per100": 1460,
+        "per100": 1338,
         "unit": "mg",
-        "source": "ingredient research (Other: retailer label listing: Ching's Secret Red Chilli Sauce 200 g, label-style values on indiamart-srl.odoo.com)"
+        "source": "ingredient research (Other: USDA FDC via secondary site (closest proxy): USDA FDC 171595 'Sauce, tomato chili sauce, bottled, with salt' (energy, sugars and sodium only, seen via getfoodfacts.com); proxy for sweet bottled Chinese-style red chilli sauce; no direct IFCT or USDA entry for this product)"
       }
     },
     "red-kidney-beans-dried": {
@@ -6892,7 +7044,7 @@
       "magnesium": {
         "per100": 138,
         "unit": "mg",
-        "source": "ingredient research (USDA FDC: SR Legacy Cereals, oats, regular and rolled and quick and instant, not fortified, dry (NDB 08120), FDC ID not confirmed, via secondary sites)"
+        "source": "ingredient research (USDA FDC: Secondary pages quoting USDA oats entries (FDC ID not confirmed): energy, protein, carbohydrate, sugars, fat, fibre and sodium from one secondary oats page (not identified in the search summary); magnesium, manganese, phosphorus and thiamin from nutritionvalue.org 'Rolled Oat, dry'; iron from Signos; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       },
       "zinc": {
         "per100": 3.64,
@@ -6902,12 +7054,37 @@
       "sodium": {
         "per100": 6,
         "unit": "mg",
-        "source": "ingredient research (USDA FDC: SR Legacy Cereals, oats, regular and rolled and quick and instant, not fortified, dry (NDB 08120), FDC ID not confirmed, via secondary sites)"
+        "source": "ingredient research (USDA FDC: Secondary pages quoting USDA oats entries (FDC ID not confirmed): energy, protein, carbohydrate, sugars, fat, fibre and sodium from one secondary oats page (not identified in the search summary); magnesium, manganese, phosphorus and thiamin from nutritionvalue.org 'Rolled Oat, dry'; iron from Signos; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       },
       "folate": {
         "per100": 32,
         "unit": "µg",
         "source": "ingredient research (USDA FDC: SR Legacy Cereals, oats, regular and rolled and quick and instant, not fortified, dry (NDB 08120), FDC ID not confirmed, via secondary sites)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: Secondary pages quoting USDA oats entries (FDC ID not confirmed): energy, protein, carbohydrate, sugars, fat, fibre and sodium from one secondary oats page (not identified in the search summary); magnesium, manganese, phosphorus and thiamin from nutritionvalue.org 'Rolled Oat, dry'; iron from Signos; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "phosphorus": {
+        "per100": 410,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: Secondary pages quoting USDA oats entries (FDC ID not confirmed): energy, protein, carbohydrate, sugars, fat, fibre and sodium from one secondary oats page (not identified in the search summary); magnesium, manganese, phosphorus and thiamin from nutritionvalue.org 'Rolled Oat, dry'; iron from Signos; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "manganese": {
+        "per100": 3.63,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: Secondary pages quoting USDA oats entries (FDC ID not confirmed): energy, protein, carbohydrate, sugars, fat, fibre and sodium from one secondary oats page (not identified in the search summary); magnesium, manganese, phosphorus and thiamin from nutritionvalue.org 'Rolled Oat, dry'; iron from Signos; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "thiamine": {
+        "per100": 0.46,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: Secondary pages quoting USDA oats entries (FDC ID not confirmed): energy, protein, carbohydrate, sugars, fat, fibre and sodium from one secondary oats page (not identified in the search summary); magnesium, manganese, phosphorus and thiamin from nutritionvalue.org 'Rolled Oat, dry'; iron from Signos; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: Secondary pages quoting USDA oats entries (FDC ID not confirmed): energy, protein, carbohydrate, sugars, fat, fibre and sodium from one secondary oats page (not identified in the search summary); magnesium, manganese, phosphorus and thiamin from nutritionvalue.org 'Rolled Oat, dry'; iron from Signos; zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
     "rose-water": {
@@ -7025,6 +7202,16 @@
       }
     },
     "seer-fish-kingfish-steaks": {
+      "iron": {
+        "per100": 1,
+        "unit": "mg",
+        "source": "ingredient research (Other: Philippine FNRI FCT: Other: Philippine FNRI FCT 'Mackerel, Spanish' (Scomberomorus commerson), proxy; no IFCT 2017 entry seen; zero by composition: carbohydrate_g, sugars_g, fibre_g)"
+      },
+      "calcium": {
+        "per100": 23,
+        "unit": "mg",
+        "source": "ingredient research (Other: Philippine FNRI FCT: Other: Philippine FNRI FCT 'Mackerel, Spanish' (Scomberomorus commerson), proxy; no IFCT 2017 entry seen; zero by composition: carbohydrate_g, sugars_g, fibre_g)"
+      },
       "potassium": {
         "per100": 435,
         "unit": "mg",
@@ -7154,7 +7341,7 @@
       "cholesterol": {
         "per100": 0,
         "unit": "mg",
-        "source": "ingredient research (USDA FDC: USDA SR Legacy Oil, sesame, salad or cooking (FDC ID not shown), per 100 g via fitnessvolt.com and soupersage.com, cholesterol cross-checked on Knowde (USDA) and Matvaretabellen; converted to per 100 ml at 0.92 g/ml (FitPlate dish-file density); zero by composition: protein_g, carbohydrate_g, sugars_g, fibre_g, added_sugars_g, cholesterol_mg, vitamin_b12_ug)"
+        "source": "ingredient research (Other: USDA-based entries via secondary sites: USDA SR sesame oil (FDC 171016 as cited by one aggregator) values seen via foodstruct.com, Wikipedia and soupersage.com; zero by composition: protein_g, carbohydrate_g, sugars_g, fibre_g, added_sugars_g, cholesterol_mg, vitamin_b12_ug)"
       },
       "vitamin-e": {
         "per100": 1.3,
@@ -7169,7 +7356,7 @@
       "vitamin-b12": {
         "per100": 0,
         "unit": "µg",
-        "source": "ingredient research (USDA FDC: USDA SR Legacy Oil, sesame, salad or cooking (FDC ID not shown), per 100 g via fitnessvolt.com and soupersage.com, cholesterol cross-checked on Knowde (USDA) and Matvaretabellen; converted to per 100 ml at 0.92 g/ml (FitPlate dish-file density); zero by composition: protein_g, carbohydrate_g, sugars_g, fibre_g, added_sugars_g, cholesterol_mg, vitamin_b12_ug)"
+        "source": "ingredient research (Other: USDA-based entries via secondary sites: USDA SR sesame oil (FDC 171016 as cited by one aggregator) values seen via foodstruct.com, Wikipedia and soupersage.com; zero by composition: protein_g, carbohydrate_g, sugars_g, fibre_g, added_sugars_g, cholesterol_mg, vitamin_b12_ug)"
       }
     },
     "sesame-seeds-white": {
@@ -7655,7 +7842,7 @@
       "calcium": {
         "per100": 15,
         "unit": "mg",
-        "source": "ingredient research (USDA FDC: FDC ID 168556, Catsup (SR Legacy), via getfoodfacts.com and other secondary sites)"
+        "source": "ingredient research (Other: USDA-based ketchup entries via secondary sites: USDA-based generic ketchup values seen via getfoodfacts.com (restaurant ketchup, sodium 949 mg), foodstruct.com (101 kcal, sodium 907 mg, vitamin A 26 ug) and backecke.com (vitamin C, calcium, iron); no FDC ID confirmed; no IFCT entry found)"
       },
       "potassium": {
         "per100": 281,
@@ -7676,6 +7863,11 @@
         "per100": 4.1,
         "unit": "mg",
         "source": "ingredient research (USDA FDC: FDC ID 168556, Catsup (SR Legacy), via getfoodfacts.com and other secondary sites)"
+      },
+      "vitamin-a": {
+        "per100": 26,
+        "unit": "µg",
+        "source": "ingredient research (Other: USDA-based ketchup entries via secondary sites: USDA-based generic ketchup values seen via getfoodfacts.com (restaurant ketchup, sodium 949 mg), foodstruct.com (101 kcal, sodium 907 mg, vitamin A 26 ug) and backecke.com (vitamin C, calcium, iron); no FDC ID confirmed; no IFCT entry found)"
       }
     },
     "toor-dal": {

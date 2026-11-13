@@ -16,34 +16,40 @@
         "avg": 825,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-10.md"
+      },
+      {
+        "date": "2026-11-13",
+        "min": 320,
+        "max": 730,
+        "avg": 515,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-13.md"
       }
     ],
     "currentEstimate": {
-      "min": 700,
-      "max": 950,
-      "avg": 825
+      "min": 570,
+      "max": 770,
+      "avg": 670
     },
-    "method": "single",
+    "method": "spike-blend",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-10",
+    "lastObserved": "2026-11-13",
     "stale": false,
     "seasonal": false,
-    "listingCount": 2,
+    "listingCount": 3,
     "platforms": [
       "BigBasket",
-      "magicdrop.in roundup"
+      "Bio Basics (biobasics.org"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 2 listings back the range (need 3)"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 70,
-    "max": 95,
-    "avg": 82.5
+    "min": 57,
+    "max": 77,
+    "avg": 67
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -234,16 +240,18 @@
     "proteinG": null,
     "carbsG": null,
     "fatG": null,
-    "fibreG": null
+    "fibreG": 2
   },
-  "storage": "Airtight glass or steel jar at room temperature, away from damp and sunlight: 6–12 months. In humid Mumbai monsoon months, keep it in the fridge to stop mould. If white salt crystals appear on the surface, that is normal for salted kokum.",
-  "looksLike": "Dark purple to almost black, leathery, slightly sticky curled pieces of dried fruit rind, a few cm across. Very sour, with a faint fruity smell. Soaking it in water turns the water deep pink-purple.",
-  "howToPick": null,
-  "shelfLife": "About 1 year in a sealed pack; 6–12 months once opened if kept dry.",
+  "storage": "Airtight jar at room temperature, away from damp. Soaked kokum water keeps 1–2 days in the fridge.",
+  "looksLike": "Dark purple to near-black, leathery, slightly sticky curled pieces of dried fruit rind, a few cm across. Very sour. Soaking turns the water pink-purple.",
+  "howToPick": "Pliable, dark, glossy pieces with a clean sour smell. Avoid dusty, mouldy or rock-hard pieces, and pieces with white crystals or damp patches.",
+  "shelfLife": "About a year in a dry airtight jar (general guidance, not from a source in this run).",
   "substitutes": [
     "Tamarind (imli)",
     "Kokum agal (liquid concentrate)",
-    "Raw mango (in season) or a squeeze of lime at the end"
+    "Raw mango (in season) or a squeeze of lime at the end",
+    "Tamarind paste",
+    "Raw mango or lime juice"
   ],
   "vendorListings": [],
   "usedIn": [
@@ -251,18 +259,22 @@
       "dishNumber": 33,
       "quantity": 5,
       "unit": "g",
-      "raw": "5 g (3 pieces), soaked in 30 ml warm water"
+      "raw": "5 g per serving (3 pieces), soaked in 30 ml warm water"
     }
   ],
   "versions": [
     {
       "date": "2026-10-10",
       "file": "FitPlate_Ingredients_2026-10-10.md"
+    },
+    {
+      "date": "2026-11-13",
+      "file": "FitPlate_Ingredients_2026-11-13.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (spike-blend)",
+    "macrosPer100Estimate": "stable (mean-2)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -272,7 +284,9 @@
     "usedIn": "newest"
   },
   "mergeNotes": [
+    "price flag: possible-spike",
     "price flag: narrowed",
-    "Range 700.0–950.0 was wider than 30% of avg 825.0; narrowed to ±15%."
+    "Possible spike: latest avg 515 (2026-11-13) moved more than 35% from the previous estimate; using the halfway point.",
+    "Range 510.0–840.0 was wider than 30% of avg 670.0; narrowed to ±15%."
   ]
 }

@@ -15,56 +15,66 @@
         "avg": 290,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-10.md"
+      },
+      {
+        "date": "2026-11-13",
+        "min": 370,
+        "max": 500,
+        "avg": 455,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-13.md"
       }
     ],
     "currentEstimate": {
-      "min": 280,
-      "max": 300,
-      "avg": 290
+      "min": 325,
+      "max": 400,
+      "avg": 375
     },
-    "method": "single",
+    "method": "spike-blend",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-10",
+    "lastObserved": "2026-11-13",
     "stale": false,
     "seasonal": false,
-    "listingCount": 4,
+    "listingCount": 5,
     "platforms": [
-      "BigBasket"
+      "Amazon",
+      "BigBasket",
+      "Blinkit",
+      "Flipkart",
+      "Zepto"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 1 platform (BigBasket) backs the range"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 28,
-    "max": 30,
-    "avg": 29
+    "min": 32.5,
+    "max": 40,
+    "avg": 37.5
   },
   "seasonal": false,
   "nutritionPer100g": {
-    "basis": "100ml",
+    "basis": "100g",
     "energyKcal": {
       "value": 820,
       "source": "Other: FatSecret label entry (SPAR refined coconut oil) + USDA FDC 171412: Energy and saturated fat per 100 ml from FatSecret SPAR refined coconut oil label; total fat from USDA FDC ID 171412 Oil, coconut (99.1 g/100 g) x 0.92 g/ml (estimated density)",
       "confidence": "Low"
     },
     "proteinG": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 171412 'Oil, coconut'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "carbsG": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 171412 'Oil, coconut'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "sugarsG": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 171412 'Oil, coconut'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "fatG": {
       "value": 91.2,
@@ -77,9 +87,9 @@
       "confidence": "Low"
     },
     "fibreG": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 171412 'Oil, coconut'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "sodiumMg": {
       "value": null,
@@ -132,9 +142,9 @@
       "confidence": null
     },
     "cholesterolMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 171412 'Oil, coconut'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "transFatG": {
       "value": null,
@@ -142,14 +152,14 @@
       "confidence": null
     },
     "mufaG": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 6.3,
+      "source": "USDA FDC: USDA FDC 171412 'Oil, coconut'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "pufaG": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 1.7,
+      "source": "USDA FDC: USDA FDC 171412 'Oil, coconut'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "omega3G": {
       "value": null,
@@ -222,9 +232,9 @@
       "confidence": null
     },
     "vitaminB12Ug": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 171412 'Oil, coconut'; values seen only on secondary sites; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     }
   },
   "macrosPer100Estimate": {
@@ -234,32 +244,54 @@
     "fatG": null,
     "fibreG": null
   },
-  "storage": "Room temperature, tightly closed, away from the stove and sunlight. It will set solid in cool weather; stand the bottle in warm water for a few minutes to melt it. Use a dry spoon; water or food bits make it go rancid faster. Refrigeration is not needed.",
-  "looksLike": "A clear, colourless to pale-yellow oil with a mild coconut smell. Below about 24 °C it sets into a white, waxy solid, so in a cool room or an air-conditioned kitchen it may look like white lard.",
-  "howToPick": null,
-  "shelfLife": "Typically 12–18 months unopened (check pack); use within about 6 months once opened.",
+  "storage": "Cool, dry cupboard, tightly closed. It solidifies in cold weather; this is normal and reversible by warming the bottle.",
+  "looksLike": "Clear, colourless liquid with a coconut smell; it turns white and solid below about 24 °C.",
+  "howToPick": "Clear, with a clean coconut smell and a sealed cap; check that the label says edible. Avoid a sour or rancid smell and cloudy liquid in warm weather.",
+  "shelfLife": "About a year unopened; use within 3–6 months once opened (general guidance, not from a source in this run).",
   "substitutes": [
     "Sunflower or groundnut oil",
     "Virgin coconut oil",
-    "Ghee"
+    "Ghee",
+    "Mustard oil"
   ],
-  "vendorListings": [],
+  "vendorListings": [
+    {
+      "vendor": "blinkit",
+      "product": "Parachute 1 L pet jar",
+      "pack": "1 L",
+      "priceMinInr": 461,
+      "priceMaxInr": 461,
+      "observedOn": "2026-11-13"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Parachute coconut oil jar",
+      "pack": "1 L",
+      "priceMinInr": 498,
+      "priceMaxInr": 498,
+      "observedOn": "2026-11-13"
+    }
+  ],
   "usedIn": [
     {
       "dishNumber": 33,
       "quantity": 10,
       "unit": "ml",
-      "raw": "10 ml (about 9 g; 2 tsp)"
+      "raw": "10 ml (about 9 g, 2 tsp) per serving; 5 ml in the lower-oil version"
     }
   ],
   "versions": [
     {
       "date": "2026-10-10",
       "file": "FitPlate_Ingredients_2026-10-10.md"
+    },
+    {
+      "date": "2026-11-13",
+      "file": "FitPlate_Ingredients_2026-11-13.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (spike-blend)",
     "macrosPer100Estimate": "stable (single)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
@@ -269,5 +301,11 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: possible-spike",
+    "Possible spike: latest avg 455 (2026-11-13) moved more than 35% from the previous estimate; using the halfway point.",
+    "nutritionPer100g.energyKcal: Conflict (2026-10-10: 820 vs 2026-11-13: 892); both cite the official table, kept the previous value.",
+    "nutritionPer100g.fatG: Conflict (2026-10-10: 91.2 vs 2026-11-13: 99.1); both cite the official table, kept the previous value.",
+    "nutritionPer100g.saturatedFatG: Conflict (2026-10-10: 74 vs 2026-11-13: 82.5); both cite the official table, kept the previous value."
+  ]
 }

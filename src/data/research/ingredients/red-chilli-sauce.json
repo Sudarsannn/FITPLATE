@@ -15,24 +15,32 @@
         "avg": 260,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-10.md"
+      },
+      {
+        "date": "2026-11-13",
+        "min": 245,
+        "max": 285,
+        "avg": 260,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-13.md"
       }
     ],
     "currentEstimate": {
       "min": 245,
-      "max": 280,
+      "max": 285,
       "avg": 260
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-10",
+    "lastObserved": "2026-11-13",
     "stale": false,
     "seasonal": false,
-    "listingCount": 5,
+    "listingCount": 6,
     "platforms": [
-      "Amazon",
       "BigBasket",
-      "Flipkart"
+      "Flipkart",
+      "Swiggy Instamart"
     ],
     "outOfStock": false,
     "confirmed": true,
@@ -40,15 +48,15 @@
   },
   "per100Estimate": {
     "min": 24.5,
-    "max": 28,
+    "max": 28.5,
     "avg": 26
   },
   "seasonal": false,
   "nutritionPer100g": {
     "basis": "100g",
     "energyKcal": {
-      "value": 40,
-      "source": "Other: retailer label listing: Ching's Secret Red Chilli Sauce 200 g, label-style values on indiamart-srl.odoo.com",
+      "value": 92,
+      "source": "Other: USDA FDC via secondary site (closest proxy): USDA FDC 171595 'Sauce, tomato chili sauce, bottled, with salt' (energy, sugars and sodium only, seen via getfoodfacts.com); proxy for sweet bottled Chinese-style red chilli sauce; no direct IFCT or USDA entry for this product",
       "confidence": "Low"
     },
     "proteinG": {
@@ -62,8 +70,8 @@
       "confidence": "Low"
     },
     "sugarsG": {
-      "value": 8.7,
-      "source": "Other: retailer label listing: Ching's Secret Red Chilli Sauce 200 g, label-style values on indiamart-srl.odoo.com",
+      "value": 13.3,
+      "source": "Other: USDA FDC via secondary site (closest proxy): USDA FDC 171595 'Sauce, tomato chili sauce, bottled, with salt' (energy, sugars and sodium only, seen via getfoodfacts.com); proxy for sweet bottled Chinese-style red chilli sauce; no direct IFCT or USDA entry for this product",
       "confidence": "Low"
     },
     "fatG": {
@@ -82,8 +90,8 @@
       "confidence": null
     },
     "sodiumMg": {
-      "value": 1460,
-      "source": "Other: retailer label listing: Ching's Secret Red Chilli Sauce 200 g, label-style values on indiamart-srl.odoo.com",
+      "value": 1338,
+      "source": "Other: USDA FDC via secondary site (closest proxy): USDA FDC 171595 'Sauce, tomato chili sauce, bottled, with salt' (energy, sugars and sodium only, seen via getfoodfacts.com); proxy for sweet bottled Chinese-style red chilli sauce; no direct IFCT or USDA entry for this product",
       "confidence": "Low"
     },
     "ironMg": {
@@ -228,38 +236,54 @@
     }
   },
   "macrosPer100Estimate": {
-    "kcal": 129,
-    "proteinG": null,
-    "carbsG": 30.7,
-    "fatG": null,
-    "fibreG": null
+    "kcal": 92,
+    "proteinG": 0.9,
+    "carbsG": 3.9,
+    "fatG": 0.6,
+    "fibreG": 0.7
   },
-  "storage": "Unopened: cool, dry cupboard away from sunlight. Opened: refrigerate with the cap tightly closed; use within 2–3 months. Use a clean, dry spoon.",
-  "looksLike": "Thick, bright-red, slightly translucent sauce with visible chilli flecks, in glass or plastic bottles. Hot, sweet, sour and garlicky.",
-  "howToPick": null,
-  "shelfLife": "About 12 months unopened (check the pack); 2–3 months once opened, refrigerated.",
+  "storage": "Unopened: cool, dry cupboard. Opened: refrigerate with the cap closed and use within about 2 to 3 months (general guidance; check the label).",
+  "looksLike": "Thick, bright red sauce, often with flecks of chilli, sold in small glass or plastic bottles and pouches. Hot, sweet and sour.",
+  "howToPick": "Check the manufacture date, an intact seal and a bright red colour without separation or mould at the neck. Check labels for onion/garlic powder (Jain) and wheat/malt vinegar (gluten).",
+  "shelfLife": "Usually printed as about 9 to 12 months unopened (check the bottle); not taken from a source in this run.",
   "substitutes": [
     "Red chilli paste plus a pinch of sugar and a few drops of vinegar",
     "Schezwan sauce",
-    "Sriracha"
+    "Sriracha",
+    "Schezwan sauce or sriracha",
+    "Tomato ketchup plus chilli flakes",
+    "Fresh red chilli paste with a pinch of sugar and vinegar"
   ],
-  "vendorListings": [],
+  "vendorListings": [
+    {
+      "vendor": "instamart",
+      "product": "Knorr Red Chilli Sauce, Surat listing",
+      "pack": "200 g",
+      "priceMinInr": 49,
+      "priceMaxInr": 49,
+      "observedOn": "2026-11-13"
+    }
+  ],
   "usedIn": [
     {
       "dishNumber": 34,
       "quantity": 8,
       "unit": "g",
-      "raw": "8 g (1½ tsp), in the sauce"
+      "raw": "8 g per serving (about 1½ tsp)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-10",
       "file": "FitPlate_Ingredients_2026-10-10.md"
+    },
+    {
+      "date": "2026-11-13",
+      "file": "FitPlate_Ingredients_2026-11-13.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (wma)",
     "macrosPer100Estimate": "stable (single)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
@@ -269,5 +293,11 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "macrosPer100Estimate.kcal: Versions 2026-10-10 (129) and 2026-11-13 (92) differ by more than 25%; kept the newer.",
+    "macrosPer100Estimate.carbsG: Versions 2026-10-10 (30.7) and 2026-11-13 (3.9) differ by more than 25%; kept the newer.",
+    "nutritionPer100g.energyKcal: Conflict (2026-10-10: 40 vs 2026-11-13: 92); kept 2026-11-13, which cites the official table.",
+    "nutritionPer100g.sugarsG: Conflict (2026-10-10: 8.7 vs 2026-11-13: 13.3); kept 2026-11-13, which cites the official table.",
+    "nutritionPer100g.sodiumMg: Conflict (2026-10-10: 1460 vs 2026-11-13: 1338); kept 2026-11-13, which cites the official table."
+  ]
 }

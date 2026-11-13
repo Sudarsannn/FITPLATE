@@ -15,32 +15,40 @@
         "avg": 155,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-10.md"
+      },
+      {
+        "date": "2026-11-13",
+        "min": 105,
+        "max": 265,
+        "avg": 165,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-13.md"
       }
     ],
     "currentEstimate": {
-      "min": 145,
-      "max": 170,
-      "avg": 155
+      "min": 140,
+      "max": 185,
+      "avg": 160
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-10",
+    "lastObserved": "2026-11-13",
     "stale": false,
     "seasonal": false,
-    "listingCount": 3,
+    "listingCount": 6,
     "platforms": [
       "BigBasket",
-      "Mishry"
+      "Flipkart"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 14.5,
-    "max": 17,
-    "avg": 15.5
+    "min": 14,
+    "max": 18.5,
+    "avg": 16
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -92,8 +100,8 @@
     },
     "calciumMg": {
       "value": 15,
-      "source": "USDA FDC: FDC ID 168556, Catsup (SR Legacy), via getfoodfacts.com and other secondary sites",
-      "confidence": "Medium"
+      "source": "Other: USDA-based ketchup entries via secondary sites: USDA-based generic ketchup values seen via getfoodfacts.com (restaurant ketchup, sodium 949 mg), foodstruct.com (101 kcal, sodium 907 mg, vitamin A 26 ug) and backecke.com (vitamin C, calcium, iron); no FDC ID confirmed; no IFCT entry found",
+      "confidence": "Low"
     },
     "potassiumMg": {
       "value": 281,
@@ -116,9 +124,9 @@
       "confidence": "Medium"
     },
     "vitaminAUgRae": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 26,
+      "source": "Other: USDA-based ketchup entries via secondary sites: USDA-based generic ketchup values seen via getfoodfacts.com (restaurant ketchup, sodium 949 mg), foodstruct.com (101 kcal, sodium 907 mg, vitamin A 26 ug) and backecke.com (vitamin C, calcium, iron); no FDC ID confirmed; no IFCT entry found",
+      "confidence": "Low"
     },
     "folateUgDfe": {
       "value": null,
@@ -226,15 +234,24 @@
       "confidence": null
     }
   },
-  "macrosPer100Estimate": null,
-  "storage": "Unopened: cool, dry cupboard. Opened: keep refrigerated with the cap closed; 1–2 months. Decant refill pouches into a clean bottle and refrigerate.",
-  "looksLike": "Thick, glossy, bright-red sweet-and-tangy sauce sold in squeeze bottles, glass bottles and refill pouches. In India it is often just called \"tomato sauce\".",
-  "howToPick": null,
-  "shelfLife": "About 9–12 months unopened (check the pack). Once opened, best used within 1–2 months.",
+  "macrosPer100Estimate": {
+    "kcal": 118,
+    "proteinG": 1.1,
+    "carbsG": 26.8,
+    "fatG": 0.6,
+    "fibreG": null
+  },
+  "storage": "Unopened: cool cupboard. Opened: refrigerate and use within about 2 to 3 months, or follow the label.",
+  "looksLike": "A smooth, thick, bright red tomato sauce, sweet-sour, sold in squeeze bottles, doy-pouches and sachets.",
+  "howToPick": "Look for a good red colour, a thick pour without watery separation, intact seal and a fresh manufacture date. Check the label for the tomato percentage; cheaper sauces often add more sugar and starch.",
+  "shelfLife": "Printed on the pack (commonly 9 to 12 months unopened; not taken from a source in this run).",
   "substitutes": [
     "Tomato puree plus a little sugar and vinegar",
     "Hot & sweet tomato-chilli sauce (e.g. Maggi Hot & Sweet)",
-    "Leave it out"
+    "Leave it out",
+    "Tomato puree with a pinch of sugar, salt and vinegar",
+    "Red chilli sauce",
+    "Tomato chutney"
   ],
   "vendorListings": [],
   "usedIn": [
@@ -242,18 +259,22 @@
       "dishNumber": 34,
       "quantity": 8,
       "unit": "g",
-      "raw": "8 g (1½ tsp), in the sauce"
+      "raw": "8 g per serving (about 1½ tsp)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-10",
       "file": "FitPlate_Ingredients_2026-10-10.md"
+    },
+    {
+      "date": "2026-11-13",
+      "file": "FitPlate_Ingredients_2026-11-13.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (none)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (single)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -262,5 +283,16 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 117.5–235.3 was wider than 30% of avg 161.9; narrowed to ±15%.",
+    "nutritionPer100g.energyKcal: Conflict (2026-10-10: 101 vs 2026-11-13: 117); both cite the official table, kept the previous value.",
+    "nutritionPer100g.proteinG: Conflict (2026-10-10: 1 vs 2026-11-13: 1.1); both cite the official table, kept the previous value.",
+    "nutritionPer100g.carbsG: Conflict (2026-10-10: 27.4 vs 2026-11-13: 26.8); both cite the official table, kept the previous value.",
+    "nutritionPer100g.sugarsG: Conflict (2026-10-10: 21.3 vs 2026-11-13: 21); both cite the official table, kept the previous value.",
+    "nutritionPer100g.fatG: Conflict (2026-10-10: 0.1 vs 2026-11-13: 0.6); both cite the official table, kept the previous value.",
+    "nutritionPer100g.sodiumMg: Conflict (2026-10-10: 907 vs 2026-11-13: 949); both cite the official table, kept the previous value.",
+    "nutritionPer100g.ironMg: Conflict (2026-10-10: 0.35 vs 2026-11-13: 0.5); both cite the official table, kept the previous value.",
+    "nutritionPer100g.vitaminCMg: Conflict (2026-10-10: 4.1 vs 2026-11-13: 8); both cite the official table, kept the previous value."
+  ]
 }

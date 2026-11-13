@@ -2,10 +2,11 @@
   "id": "031-indian-style-overnight-oats",
   "number": 31,
   "name": "Indian-style Overnight Oats",
-  "cuisine": "Modern Indian fusion (a home-kitchen and café trend; flavoured like kesar-elaichi kheer or kulfi)",
+  "cuisine": "Modern Indian fusion (home-kitchen and café trend; flavoured like kesar-elaichi kheer or kulfi)",
   "dietType": "veg",
   "mealType": [
-    "breakfast"
+    "breakfast",
+    "snack"
   ],
   "difficulty": "Beginner",
   "prepMin": 10,
@@ -24,7 +25,7 @@
       "name": "Milk (toned, about 3% fat)",
       "quantity": 120,
       "unit": "ml",
-      "householdMeasure": "½ cup (1 tbsp of it used warm for the saffron)"
+      "householdMeasure": "½ cup (1 tbsp of it warmed for the saffron)"
     },
     {
       "ingredientId": "curd-plain",
@@ -52,7 +53,7 @@
       "name": "Green cardamom (elaichi)",
       "quantity": 2,
       "unit": null,
-      "householdMeasure": "2 pods, seeds crushed (or a scant ¼ tsp cardamom powder)"
+      "householdMeasure": "2 pods, seeds crushed (or a scant ¼ tsp powder)"
     },
     {
       "ingredientId": "honey",
@@ -91,75 +92,81 @@
     }
   ],
   "equipment": [
-    "Glass jar with a lid, about 300–350 ml (a washed jam or mason jar)",
-    "Measuring cup (½ cup / ¼ cup) and measuring spoons",
-    "Small katori (bowl) for soaking the saffron",
-    "Mortar and pestle for crushing cardamom",
+    "Glass jar with a lid, 300–350 ml (a washed jam or mason jar)",
+    "Measuring cup (½ cup, ¼ cup) and measuring spoons",
+    "Small katori (bowl) for blooming the saffron",
+    "Mortar and pestle for the cardamom",
     "Chopping board and small knife for the nuts",
-    "Spoon for stirring (a long spoon reaches the bottom of a jar more easily)",
+    "Long spoon (reaches the jar bottom)",
     "Microwave or small pan to warm 1 tbsp milk",
-    "Refrigerator (essential; the soak must happen in the fridge, not on the counter, because the milk and curd would sour overnight in Mumbai heat)"
+    "Refrigerator (essential: milk and curd would sour overnight on a Mumbai counter)"
   ],
   "steps": [
     {
       "n": 1,
       "title": "Warm a little milk",
-      "text": "Take 1 tbsp (15 ml) of the 120 ml milk in a small katori and warm it.",
+      "text": "Pour 1 tbsp (15 ml) of the 120 ml milk into a small katori and warm it.",
       "timerSec": 15,
       "tip": null,
-      "visualCue": "Warm to the touch, steaming slightly, not boiling",
+      "visualCue": "The milk feels warm to the touch and gives off a thin wisp of steam; no bubbles at the edge.",
       "cameraCheck": "1 tbsp milk in the katori",
-      "videoShot": "A spoon of milk poured into the katori."
+      "videoShot": "A spoon of milk poured into the katori.",
+      "watchOut": "Boiling milk, shown by a skin or bubbles at the rim; it dulls the saffron aroma. If it boils, let it cool for a minute before the saffron goes in."
     },
     {
       "n": 2,
-      "title": "Soak the saffron",
+      "title": "Bloom the saffron",
       "text": "Crumble 8–10 saffron strands into the warm milk and leave it.",
       "timerSec": 300,
-      "tip": "Saffron releases colour and aroma much better in warm liquid than in cold milk.",
-      "visualCue": "The milk turns pale yellow-orange around the threads.",
+      "tip": "Saffron releases colour and aroma much better in warm liquid than in cold.",
+      "visualCue": "The milk turns pale yellow-orange around the threads and smells sweetly floral.",
       "cameraCheck": "The saffron milk in the katori",
-      "videoShot": "Red threads bleeding colour into the milk."
+      "videoShot": "Red threads bleeding colour into the milk.",
+      "watchOut": "Cold milk, which leaves the strands pale with little colour; if it has cooled, warm it for 5 seconds more."
     },
     {
       "n": 3,
       "title": "Open the cardamom",
-      "text": "Press 2 green cardamom pods with your thumb until they split, and tip out the seeds. Throw away the husks.",
+      "text": "Press 2 green pods with your thumb until they split and tip out the seeds; discard the husks.",
       "timerSec": 30,
       "tip": null,
-      "visualCue": "A small heap of sticky black seeds",
+      "visualCue": "A small heap of sticky black seeds in your palm.",
       "cameraCheck": "The seeds in your palm",
-      "videoShot": "A thumb cracking a green pod open."
+      "videoShot": "A thumb cracking a green pod open.",
+      "watchOut": "Seeds lost in the husks or on the counter; open the pods over a plate."
     },
     {
       "n": 4,
       "title": "Crush the cardamom",
-      "text": "Crush the seeds in a mortar and pestle until powdery.",
+      "text": "Crush the seeds in the mortar until powdery.",
       "timerSec": 30,
       "tip": null,
-      "visualCue": "A fine, dark-grey powder; a strong sweet, floral smell",
+      "visualCue": "A fine dark-grey powder and a strong sweet, floral smell.",
       "cameraCheck": "The crushed cardamom in the mortar",
-      "videoShot": "The pestle grinding the seeds."
+      "videoShot": "The pestle grinding the seeds.",
+      "watchOut": "Whole seeds left uncrushed; they bite hard in the soft oats. Keep pressing until no round seed shapes remain."
     },
     {
       "n": 5,
       "title": "Chop the nuts",
-      "text": "Roughly chop 6 almonds (8 g) and 5–6 pistachios (4 g). Keep them in two small heaps.",
+      "text": "Roughly chop 6 almonds (8 g) and 5–6 pistachios (4 g) and keep them in two small heaps.",
       "timerSec": 120,
       "tip": null,
-      "visualCue": "Small, uneven pieces, about the size of a grain of rice",
-      "cameraCheck": "The two heaps of chopped nuts on the board",
-      "videoShot": "The knife rocking through the almonds."
+      "visualCue": "Uneven pieces about the size of a grain of rice.",
+      "cameraCheck": "The two heaps of chopped nuts",
+      "videoShot": "The knife rocking through the almonds.",
+      "watchOut": "Nut pieces flying off the board or cut too fine (they turn to dust and go soggy); hold the knife tip down and rock it."
     },
     {
       "n": 6,
       "title": "Add the oats",
       "text": "Put 40 g (½ cup) rolled oats into the jar.",
       "timerSec": 20,
-      "tip": "Use rolled oats, not instant or \"quick\" oats; instant oats turn to paste overnight.",
-      "visualCue": "The jar is about one-third full of flakes.",
+      "tip": "Use rolled oats, not instant oats.",
+      "visualCue": "The flakes fill the jar to about one-third.",
       "cameraCheck": "½ cup oats in the jar",
-      "videoShot": "Oats poured from the cup into the jar."
+      "videoShot": "Oats poured from the cup into the jar.",
+      "watchOut": "Instant or \"quick\" oats, which look like fine powder or tiny curled bits and turn to paste overnight; use thick, whole flakes."
     },
     {
       "n": 7,
@@ -167,19 +174,21 @@
       "text": "Add 1 tsp (5 g) chia seeds, the crushed cardamom and a tiny pinch of salt.",
       "timerSec": 20,
       "tip": null,
-      "visualCue": "Black chia seeds and grey cardamom specks on top of the oats",
+      "visualCue": "Black chia dots and grey cardamom specks on top of the oats.",
       "cameraCheck": "The jar from above",
-      "videoShot": "A spoon tipping chia seeds in."
+      "videoShot": "A spoon tipping chia seeds in.",
+      "watchOut": "Too much salt (a pinch is what fits on a fingertip); the jar would taste flat and salty rather than sweet."
     },
     {
       "n": 8,
       "title": "Stir the dry mix",
       "text": "Stir so the chia and cardamom spread through the oats.",
       "timerSec": 15,
-      "tip": "Mixing chia in while dry stops it forming a jelly lump at the bottom.",
-      "visualCue": "No clumps of chia; specks evenly spread",
+      "tip": "Mixing chia in while dry stops lumps.",
+      "visualCue": "The specks are spread evenly and no chia clump is visible.",
       "cameraCheck": "The mixed dry ingredients",
-      "videoShot": "The spoon turning the oats."
+      "videoShot": "The spoon turning the oats.",
+      "watchOut": "Chia left in one patch, which turns into a jelly lump at the bottom; scrape the base of the jar while you stir."
     },
     {
       "n": 9,
@@ -187,9 +196,10 @@
       "text": "Spoon in 60 g (¼ cup) curd.",
       "timerSec": 20,
       "tip": null,
-      "visualCue": "A white dollop on top of the oats",
+      "visualCue": "A white dollop sits on top of the oats.",
       "cameraCheck": "¼ cup curd in the jar",
-      "videoShot": "Curd sliding off the spoon into the jar."
+      "videoShot": "Curd sliding off the spoon into the jar.",
+      "watchOut": "Sour or watery curd; taste a drop first, because a sour curd makes the whole jar sour. If it is only slightly sour, use a little less and add the rest as milk."
     },
     {
       "n": 10,
@@ -197,9 +207,10 @@
       "text": "Pour in the remaining 105 ml milk, then the saffron milk with its threads.",
       "timerSec": 20,
       "tip": null,
-      "visualCue": "The oats are just covered with liquid; yellow streaks from the saffron",
+      "visualCue": "The oats are just covered with liquid, with yellow streaks from the saffron.",
       "cameraCheck": "The jar with milk added",
-      "videoShot": "Saffron milk poured in, swirling yellow."
+      "videoShot": "Saffron milk poured in, swirling yellow.",
+      "watchOut": "Pouring in saffron milk without scraping the katori; the strands cling to the sides, so rinse it with a spoon of the plain milk."
     },
     {
       "n": 11,
@@ -207,29 +218,32 @@
       "text": "Add 1½ tsp (10 g) honey.",
       "timerSec": 15,
       "tip": null,
-      "visualCue": "A golden ribbon of honey on top",
+      "visualCue": "A golden ribbon of honey sits on top.",
       "cameraCheck": "The spoon of honey over the jar",
-      "videoShot": "Honey dripping off the spoon."
+      "videoShot": "Honey dripping off the spoon.",
+      "watchOut": "Honey sticking to the spoon and not reaching the jar; warm the spoon under hot water first, or use a pre-oiled spoon, and let it slide in."
     },
     {
       "n": 12,
       "title": "Mix well",
-      "text": "Stir thoroughly, scraping the bottom and the sides of the jar, until the curd and honey are fully blended in.",
+      "text": "Stir thoroughly, scraping the bottom and sides, until curd and honey blend in.",
       "timerSec": 30,
-      "tip": "It should look too runny now. The oats and chia soak up most of the liquid overnight.",
-      "visualCue": "An even, pale-cream mixture with no white curd lumps; loose and pourable, with a thin layer of milk on top",
+      "tip": "It should look too runny now; the oats and chia absorb most of it overnight.",
+      "visualCue": "An even, pale-cream mixture with no white curd lumps; it looks loose and pourable with a thin layer of milk on top.",
       "cameraCheck": "The mixture on the spoon",
-      "videoShot": "The spoon lifting a loose, milky scoop."
+      "videoShot": "The spoon lifting a loose, milky scoop.",
+      "watchOut": "Honey or curd pooled at the bottom, which makes one layer too sweet or sour in the morning; keep stirring until every spoonful looks the same colour."
     },
     {
       "n": 13,
       "title": "Stir in the raisins and half the nuts",
-      "text": "Add 1 tbsp (8 g) raisins and the chopped almonds. Keep the pistachios for the morning.",
+      "text": "Add 1 tbsp (8 g) raisins and the chopped almonds; keep the pistachios for the morning.",
       "timerSec": 15,
-      "tip": "Raisins soaked overnight plump up and add natural sweetness, so you need less honey.",
-      "visualCue": "Raisins and almond bits spread through the jar",
+      "tip": "Soaked raisins plump up and sweeten the jar, so you need less honey.",
+      "visualCue": "Raisins and almond bits are spread through the jar.",
       "cameraCheck": "The jar from the side",
-      "videoShot": "Raisins dropping in."
+      "videoShot": "Raisins dropping in.",
+      "watchOut": "Raisins that stay in a clump; break them apart with your fingers before dropping them in."
     },
     {
       "n": 14,
@@ -237,9 +251,10 @@
       "text": "Put the lid on tightly and place the jar in the fridge.",
       "timerSec": 10,
       "tip": null,
-      "visualCue": "Jar sealed and in the fridge",
+      "visualCue": "The jar is sealed and standing upright on a fridge shelf.",
       "cameraCheck": "The closed jar on the fridge shelf",
-      "videoShot": "The fridge door closing on the jar."
+      "videoShot": "The fridge door closing on the jar.",
+      "watchOut": "Leaving it on the counter \"for a bit\" in Mumbai heat; curd and milk turn sour within a couple of hours, shown by a sharp smell. Refrigerate right away."
     },
     {
       "n": 15,
@@ -247,9 +262,10 @@
       "text": "Open the jar and stir.",
       "timerSec": 20,
       "tip": null,
-      "visualCue": "Thick and creamy, like a set kheer; the oats are soft with a slight chew; the chia is swollen and jelly-like",
+      "visualCue": "Thick and creamy like set kheer; the oats are soft with a slight chew and the chia is swollen and jelly-like.",
       "cameraCheck": "A spoonful held up to the camera",
-      "videoShot": "The spoon pulling up a thick scoop."
+      "videoShot": "The spoon pulling up a thick scoop.",
+      "watchOut": "Dry, stiff oats with no liquid left (too little milk or too short a soak); stir in cold milk in step 16 and give it 15 more minutes. Hard, raw-tasting flakes mean it needs a longer soak."
     },
     {
       "n": 16,
@@ -257,19 +273,21 @@
       "text": "If it is too thick, stir in 1–2 tbsp cold milk (not counted in nutrition).",
       "timerSec": 15,
       "tip": null,
-      "visualCue": "It falls slowly off the spoon instead of standing in a stiff lump.",
+      "visualCue": "The mixture falls slowly off the spoon instead of standing in a stiff lump.",
       "cameraCheck": "The loosened oats on the spoon",
-      "videoShot": "A splash of milk stirred in."
+      "videoShot": "A splash of milk stirred in.",
+      "watchOut": "Adding too much milk at once, which makes it watery; add 1 tbsp, stir, then judge."
     },
     {
       "n": 17,
       "title": "Top and serve",
-      "text": "Sprinkle the chopped pistachios (and a few saffron strands, if you like) on top.",
+      "text": "Sprinkle the chopped pistachios (and a few saffron strands if you like) on top.",
       "timerSec": 15,
       "tip": null,
-      "visualCue": "Green pistachio bits on a cream-yellow surface",
+      "visualCue": "Green pistachio bits on a cream-yellow surface.",
       "cameraCheck": "The finished jar from above",
-      "videoShot": "Pistachios scattered over the jar."
+      "videoShot": "Pistachios scattered over the jar.",
+      "watchOut": "Adding the pistachios the night before; they go soft and lose their colour, so keep them for the morning."
     }
   ],
   "nutritionPerServing": {
@@ -283,20 +301,25 @@
     "values": {
       "calcium": 134,
       "cholesterol": 8.4,
-      "folate": 6.2,
+      "copper": 0,
+      "folate": 8.3,
       "iodine": 18,
       "iron": 1,
       "magnesium": 44.6,
-      "phosphorus": 60,
-      "potassium": 234.7,
-      "riboflavin": 0.1,
+      "manganese": 0.2,
+      "niacin": 0.1,
+      "phosphorus": 103,
+      "potassium": 280.9,
+      "riboflavin": 0.2,
+      "selenium": 3,
       "sodium": 29.9,
       "thiamine": 0,
       "vitamin-a": 19.4,
       "vitamin-b12": 0.2,
       "vitamin-b6": 0,
-      "vitamin-c": 0.4,
-      "vitamin-e": 2,
+      "vitamin-c": 0.6,
+      "vitamin-d": 0,
+      "vitamin-e": 2.2,
       "vitamin-k": 0.3,
       "zinc": 0.6
     },
@@ -313,27 +336,38 @@
           "avg": 300,
           "confidence": null,
           "sourceFile": "FitPlate_Dishes_2026-10-10.md"
+        },
+        {
+          "date": "2026-11-13",
+          "min": 210,
+          "max": 570,
+          "avg": 384,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-11-13.md"
         }
       ],
       "currentEstimate": {
-        "min": 270,
-        "max": 350,
-        "avg": 300
+        "min": 300,
+        "max": 410,
+        "avg": 360
       },
-      "method": "single",
+      "method": "wma",
       "trend": "unknown",
       "change30dPct": null,
-      "lastObserved": "2026-10-10",
+      "lastObserved": "2026-11-13",
       "stale": false,
       "seasonal": false,
-      "listingCount": 4,
+      "listingCount": 6,
       "platforms": [
         "magicpin",
+        "Swiggy",
         "Zomato"
       ],
-      "outOfStock": false,
-      "confirmed": true,
-      "checkNotes": []
+      "outOfStock": true,
+      "confirmed": false,
+      "checkNotes": [
+        "a listing used for the range is marked out of stock, closed or not taking orders"
+      ]
     },
     "nutrition": {
       "calories": {
@@ -341,7 +375,7 @@
         "source": null
       },
       "protein": {
-        "value": 24,
+        "value": null,
         "source": null
       },
       "carbs": {
@@ -373,27 +407,38 @@
         "avg": 300,
         "confidence": null,
         "sourceFile": "FitPlate_Dishes_2026-10-10.md"
+      },
+      {
+        "date": "2026-11-13",
+        "min": 210,
+        "max": 570,
+        "avg": 384,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-11-13.md"
       }
     ],
     "currentEstimate": {
-      "min": 270,
-      "max": 350,
-      "avg": 300
+      "min": 300,
+      "max": 410,
+      "avg": 360
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-10",
+    "lastObserved": "2026-11-13",
     "stale": false,
     "seasonal": false,
-    "listingCount": 4,
+    "listingCount": 6,
     "platforms": [
       "magicpin",
+      "Swiggy",
       "Zomato"
     ],
-    "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "outOfStock": true,
+    "confirmed": false,
+    "checkNotes": [
+      "a listing used for the range is marked out of stock, closed or not taking orders"
+    ]
   },
   "healthiness": {
     "score": 8,
@@ -401,11 +446,11 @@
     "reasons": []
   },
   "researchRating": {
-    "score": 4.2,
-    "basis": "overnight oats are widely loved as an easy, make-ahead, no-cook breakfast, and Indian flavours (kesar badam, kulfi, thandai, curd-rice style) are popular on Indian food blogs. Points are lost because recipe vote counts for the Indian versions are small (e.g. Whisk Affair's kesar badam version shows 5/5 from 1 vote), and common complaints are a \"raw\" or slimy texture for people new to cold oats, and mushiness when instant oats are used."
+    "score": 4.3,
+    "basis": "overnight oats are widely loved as an easy make-ahead no-cook breakfast, and Indian flavours (kesar badam, kulfi, thandai, curd-rice style) are well covered on Indian food blogs. The one well-sampled rating found is Kitchen at Hoskins' Indian (kulfi) overnight oats at 4.7 from 13 votes, with a reader saying it tastes exactly like kulfi; Whisk Affair's kesar badam version shows 5/5 from only 1 vote. Points are lost because vote counts for Indian versions are small, and common complaints are a raw or slimy texture for people new to cold oats and mushiness when instant oats are used."
   },
-  "storage": "Keep it refrigerated (below 5 °C) with the lid closed. Best within 24 hours; safe for up to 2 days (Kitchen at Hoskins also says up to 2 days). Add the nuts in the morning if making it 2 days ahead, so they stay crunchy. Never leave it out of the fridge for more than about 2 hours (milk and curd sour quickly in Mumbai's heat). Freezing is not recommended: the curd separates and the oats turn watery when thawed.",
-  "leftoverRemix": "Kesar oats lassi. Blend the leftover half-jar (about 130 g) with ½ cup chilled curd, 2–3 ice cubes and a pinch of cardamom until smooth. Pour into a glass and top with a few saffron strands. It turns into a thick, kesar-badam lassi-style smoothie with a different texture.",
+  "storage": "Keep it refrigerated (below 5 °C) with the lid closed. Best within 24 hours; safe for up to 2 days (Kitchen at Hoskins; Whisk Affair says up to 5 days, but with curd in the jar FitPlate keeps to 2). Add the nuts in the morning if making it 2 days ahead so they stay crunchy. Never leave it out of the fridge for more than about 2 hours in Mumbai's heat. Freezing is not recommended: the curd separates and the oats turn watery when thawed.",
+  "leftoverRemix": "Kesar oats lassi. Blend the leftover half-jar (about 130 g) with ½ cup chilled curd, 2–3 ice cubes and a pinch of cardamom until smooth, then pour into a glass with a few saffron strands on top. It becomes a thick kesar-badam lassi-style drink.",
   "burnOff": "about 5.8 km of running (405 ÷ 70 kcal/km, for a 70 kg adult), or about 8.1 km of brisk walking (about 1 hour 40 minutes at 5 km/h, using about 50 kcal/km for walking) (est.).",
   "sources": [
     "Whisk Affair, Kesar Badam Overnight Oats (rolled oats, full-fat yogurt, whole milk, chia, saffron, cardamom, crushed almonds, honey; 5/5 from 1 vote): https://www.whiskaffair.com/kesar-badam-overnight-oats-recipe",
@@ -439,7 +484,29 @@
     "Swiggy Instamart, GOAT Life Mango Madness Overnight Oats 75 g (retail context): https://www.swiggy.com/instamart/p/goat-life-mango-madness-overnight-oats-U268299YB7",
     "1mg, Oateo Overnight Oats 500 g (retail context): https://www.1mg.com/otc/oateo-overnight-oats-otc635990",
     "Pluckk, DIY Overnight Oats Kit, pack of 3 (retail context): https://pluckk.in/diy-overnight-oats-kit-pack-of-3?sku=8123611808AF",
-    "Over & Oat (Mumbai ready-to-eat overnight oats brand; retail context): https://overandoat.com/"
+    "Over & Oat (Mumbai ready-to-eat overnight oats brand; retail context): https://overandoat.com/",
+    "Whisk Affair, Kesar Badam Overnight Oats (rolled oats, yogurt, milk, chia, saffron, cardamom, almonds, honey; 8 h soak; up to 5 days fridge; 5/5 from 1 vote): https://www.whiskaffair.com/kesar-badam-overnight-oats-recipe",
+    "Kitchen at Hoskins, Indian (kulfi) overnight oats (milk, sugar, chia, cardamom, saffron, pistachios; 4.7 from 13 votes): https://www.kitchenathoskins.com/kulfi-overnight-oats/",
+    "Profusion Curry, Indian dessert-inspired (vegan, gluten-free) overnight oats with almond milk: https://profusioncurry.com/indian-dessert-inspired-overnight-oats/",
+    "Cheftina's Kitchen, Indian overnight oats with saffron and pistachios (full-fat milk): https://cheftinaskitchen.com/indian-overnight-oats-with-saffron-and-pistachios-recipe/print/93908",
+    "Archana's Kitchen, Curd Rice Style Overnight Oats (savoury): https://archanaskitchen.com/curd-rice-style-overnight-oats-recipe",
+    "Indian Veggie Delight, Indian-style overnight oats with chia (savoury tadka): https://www.indianveggiedelight.com/indian-style-overnight-oats-with-chia-savory-tadka-oats/",
+    "Indian Veggie Delight, Curd oats (serve chilled or at room temperature, do not heat): https://www.indianveggiedelight.com/curd-oats-recipe-oatmeal-yogurt",
+    "Jeyashri's Kitchen, Overnight savory oats: https://www.jeyashriskitchen.com/2018/08/overnight-savory-oats-recipe.html",
+    "Vegrecipesofindia, Basic overnight oats: https://www.vegrecipesofindia.com/wprm_print/basic-overnight-oats-recipe",
+    "InstaCuppa, Overnight oats, 10 Indian flavour variations: https://instacuppastore.com/blogs/main-page/overnight-oats-recipe-10-indian-flavour-variations-2026",
+    "IFCT 2017 (ICMR-NIN): https://www.nin.res.in/ebooks/IFCT2017.pdf",
+    "Swiggy, Jain Meals by EatFit, Malad West (Fruit Pop Oatmeal ₹210, serves 1): https://swiggy.com/restaurants/jain-meals-by-eatfit-opp-sai-palace-grand-hotel-malad-west-mumbai-605340",
+    "Swiggy, Jain Meals by EatFit, Lower Parel (Muesli Oatmeal ₹228, dropped): https://www.swiggy.com/restaurants/jain-meals-by-eatfit-delisle-road-lower-parel-mumbai-605374",
+    "Zomato, That Grocery Cafe by Foodstories, Andheri Lokhandwala (Chocolate Hazelnut Overnight Oats ₹405): https://www.zomato.com/mumbai/that-grocery-cafe-by-foodstories-andheri-lokhandwala/order",
+    "Swiggy, Fitness Bakery, Bandra West (overnight oats ₹450, up to ₹570; outside delivery area): https://www.swiggy.com/city/mumbai/fitness-bakery-1st-floor-5aa-mac-ronells-compound-st-andrews-road-bandra-west-rest90473",
+    "Zomato, Pluckk'd, Vikhroli (soaked oats bowls; Coffee & Cream 494 kcal, 14 g protein; price not seen): https://www.zomato.com/mumbai/pluckkd-fresh-healthy-vikhroli/order",
+    "Zomato, Stand By Coffee, Worli (overnight oats, no price seen): https://www.zomato.com/mumbai/stand-by-coffee-worli/order",
+    "Zomato, Zella's Cafe & Bistro, Versova (Exotic Overnight Oats Bowl, no price seen): https://www.zomato.com/mumbai/zellas-cafe-bistro-versova/order",
+    "Bombay Sweet Shop, Bombay's Trail Mix coffee popcorn (₹250, dropped): https://bombaysweetshop.com/products/bombays-trail-mix-coffee-popcorn_hustlerani",
+    "Pluckk, DIY Overnight Oats Kit (retail context, ₹249): https://pluckk.in/diy-overnight-oats-kit-with-fruits",
+    "Swiggy, Ministry of Oats, Domlur, Bengaluru (₹209–299; context only): https://www.swiggy.com/city/bangalore/ministry-of-oats-kodihalli-domlur-layout-rest872064",
+    "Cycle 1 snapshots (not re-seen today): Zomato, Protein Chef Kharghar: https://www.zomato.com/it/mumbai/protein-chef-kharghar-navi-mumbai/order ; magicpin, Protein Chef Kurla: https://magicpin.in/Mumbai/Sunder-Nagar/Restaurant/Protein-Chef/store/16a5766/delivery ; magicpin, Protein Chef Airoli: https://magicpin.in/Navi-Mumbai/Sector-8/Restaurant/Protein-Chef/store/16ab855/delivery ; Zomato, The Pure Kitchen Chembur: https://www.zomato.com/mumbai/the-pure-kitchen-chembur/order ; magicpin, Kitchen Garden Juhu: https://magicpin.in/Mumbai/Juhu/Restaurant/Kitchen-Garden/store/16a9a77/delivery"
   ],
   "allergens": [
     "treeNut",
@@ -447,32 +514,125 @@
     "gluten"
   ],
   "dietClaims": [],
-  "fasting": null,
-  "dietTags": null,
+  "fasting": {
+    "navratri": {
+      "status": "no",
+      "reason": "rolled oats are a cereal grain, avoided on the common vrat rule set (common rule set assumed; a makhana or singhara-based bowl would be a different dish)"
+    },
+    "ekadashi": {
+      "status": "no",
+      "reason": "grains such as oats are avoided on Ekadashi in the common rule set (families differ)"
+    },
+    "jain": {
+      "status": "with-changes",
+      "reason": "replace the honey with jaggery powder; everything else is allowed (no roots, onion or garlic)"
+    },
+    "ramadan": {
+      "status": "yes",
+      "reason": "vegetarian, so no halal-meat issue; a cold, filling sehri jar with slow-release fibre and about 14.7 g protein (est.); also gentle for iftar"
+    }
+  },
+  "dietTags": {
+    "base": "Vegetarian",
+    "jain": {
+      "status": "with-changes",
+      "reason": "swap the honey (10 g, usually avoided in Jain homes) for jaggery powder; no root vegetables or onion/garlic in the recipe (see Jain variant)"
+    },
+    "vegan": {
+      "status": "with-changes",
+      "reason": "milk (120 ml), curd (60 g) and honey (10 g) are animal-derived; use almond or soy milk, plant yoghurt and dates (see Vegan variant)"
+    },
+    "pescatarian": {
+      "status": "yes",
+      "reason": "vegetarian recipe with no meat, fish or egg"
+    },
+    "sattvik": {
+      "status": "yes",
+      "reason": "no onion, garlic or hing in the recipe"
+    },
+    "glutenFree": {
+      "status": "with-changes",
+      "reason": "oats are naturally gluten-free but are often cross-contaminated with wheat; use oats labelled gluten-free (see Gluten-free variant)"
+    },
+    "dairyFree": {
+      "status": "with-changes",
+      "reason": "milk and curd are dairy; use plant milk and plant yoghurt (see Dairy-free variant)"
+    },
+    "allergensDeclared": [
+      "milk",
+      "treeNut",
+      "gluten"
+    ]
+  },
   "tags": [
     "Veg",
+    "Jain option",
+    "Vegan option",
+    "Gluten-free option",
+    "No onion-garlic",
+    "Ramadan sehri / iftar",
     "Contains tree nuts",
     "Contains milk",
     "Contains gluten",
     "Breakfast",
+    "Snack",
     "Modern Indian fusion",
     "Under 15 min",
     "Beginner",
     "High fibre"
   ],
-  "description": null,
+  "description": "Family: overnight-oats",
   "familyId": null,
-  "variants": [],
-  "needsReview": [],
+  "variants": [
+    {
+      "category": "Jain",
+      "status": "variant",
+      "name": "Jaggery kesar-elaichi oats",
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": null
+    },
+    {
+      "category": "Vegan",
+      "status": "variant",
+      "name": "Almond-milk, coconut-yoghurt and dates oats",
+      "origin": "established",
+      "linkedDishNumber": null,
+      "reason": null
+    },
+    {
+      "category": "Gluten-free",
+      "status": "variant",
+      "name": "Certified gluten-free oats jar",
+      "origin": "established",
+      "linkedDishNumber": null,
+      "reason": null
+    },
+    {
+      "category": "Savoury (masala curd oats)",
+      "status": "variant",
+      "name": "Masala curd overnight oats",
+      "origin": "established",
+      "linkedDishNumber": null,
+      "reason": null
+    }
+  ],
+  "needsReview": [
+    "price not confirmed (2026-11-13): a listing used for the range is marked out of stock, closed or not taking orders"
+  ],
   "versions": [
     {
       "date": "2026-10-10",
       "file": "FitPlate_Dishes_2026-10-10.md"
+    },
+    {
+      "date": "2026-11-13",
+      "file": "FitPlate_Dishes_2026-11-13.md"
     }
   ],
   "mergeMethod": {
-    "nutritionPerServing": "stable (single)",
-    "orderPrice": "price engine (single)",
+    "nutritionPerServing": "stable (mean-2)",
+    "orderPrice": "price engine (wma)",
     "ingredients": "newest",
     "steps": "newest",
     "healthiness": "newest",
@@ -482,8 +642,8 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 270.0–400.0 was wider than 30% of avg 300.0; narrowed to ±15%.",
-    "range clamped to observed prices: 260–350 → 270–350",
-    "2026-10-10: oats: often cross-contaminated with wheat"
+    "Range 228.8–516.8 was wider than 30% of avg 357.7; narrowed to ±15%.",
+    "2026-10-10: oats: often cross-contaminated with wheat",
+    "2026-11-13: oats: often cross-contaminated with wheat"
   ]
 }
