@@ -1,0 +1,583 @@
+{
+  "id": "kidney-stones",
+  "type": "condition",
+  "name": "Kidney stones",
+  "surveyQuestion": "Do you have any of these health conditions? (select all that apply) -> Kidney stones. Check question: Have you had a kidney stone, or has a doctor told you that you form kidney stones? Yes, now / Yes, in the past / Not sure (check with a doctor) / No. Follow-ups: Do you know your stone type? Calcium oxalate / Calcium phosphate / Uric acid / Struvite / Cystine / Mixed / Don't know. Has your doctor given you a fluid goal or limit (enter number)? Do you have kidney disease, heart disease or heart failure, liver disease, are you pregnant, or take a water pill (diuretic)? Yes / No / Not sure. Optional lab values: 24-hour urine volume, uric acid, calcium, creatinine. Your city or state.",
+  "targets": [
+    {
+      "nutrient": "energy",
+      "unit": "kcal/day",
+      "generalAdult": 2110,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (2110 sedentary man, 1660 sedentary woman) (secondary, unverified); weight loss only if overweight; no stone-specific change"
+    },
+    {
+      "nutrient": "protein",
+      "unit": "g/kg/day",
+      "generalAdult": 0.83,
+      "profileValue": 0.83,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); EAU animal protein 0.8-1.0 g/kg/day (via search snippet)"
+    },
+    {
+      "nutrient": "animal_protein_non_dairy",
+      "unit": "g/kg/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": 1,
+      "direction": "limit",
+      "source": "EAU 2024 (0.8-1.0 g/kg/day, via search snippet); AUA 2014 (limit non-dairy animal protein); Borghi 2002 diet allowed about 93 g/day animal protein (15% of energy, via search summary)"
+    },
+    {
+      "nutrient": "total_fat",
+      "unit": "% energy",
+      "generalAdult": 30,
+      "profileValue": 30,
+      "min": null,
+      "max": 30,
+      "direction": "same",
+      "source": "DGI 2024; WHO 2023; no stone-specific change found"
+    },
+    {
+      "nutrient": "saturated_fat",
+      "unit": "% energy",
+      "generalAdult": 10,
+      "profileValue": 10,
+      "min": null,
+      "max": 10,
+      "direction": "same",
+      "source": "WHO 2023; no stone-specific change found"
+    },
+    {
+      "nutrient": "trans_fat",
+      "unit": "% energy",
+      "generalAdult": 1,
+      "profileValue": 1,
+      "min": null,
+      "max": 1,
+      "direction": "same",
+      "source": "WHO 2023; no stone-specific change found"
+    },
+    {
+      "nutrient": "mufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found; no stone-specific change"
+    },
+    {
+      "nutrient": "pufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found; no stone-specific change"
+    },
+    {
+      "nutrient": "omega_3",
+      "unit": "servings/week",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found; no stone-specific advice found"
+    },
+    {
+      "nutrient": "dietary_cholesterol",
+      "unit": "mg/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found; no stone-specific advice"
+    },
+    {
+      "nutrient": "total_carbohydrate",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No ICMR total found; DGI 2024 cereals and millets cap 45% of energy (secondary, unverified)"
+    },
+    {
+      "nutrient": "added_sugar",
+      "unit": "g/day",
+      "generalAdult": 25,
+      "profileValue": 25,
+      "min": null,
+      "max": 25,
+      "direction": "limit",
+      "source": "WHO 2015 (5% of energy, conditional), as P6; sugar-sweetened cola +23% and non-cola +33% stone risk, highest vs lowest intake (Ferraro, CJASN 2013, via search)"
+    },
+    {
+      "nutrient": "fibre",
+      "unit": "g/day",
+      "generalAdult": 30,
+      "profileValue": 30,
+      "min": 30,
+      "max": null,
+      "direction": "same",
+      "source": "As P4; phytate from whole grains and pulses linked to fewer stones (Curhan 2004, via search)"
+    },
+    {
+      "nutrient": "sodium",
+      "unit": "mg/day",
+      "generalAdult": 2000,
+      "profileValue": 2000,
+      "min": 1500,
+      "max": 2000,
+      "direction": "limit",
+      "source": "DGI 2024 and topic 18; AUA News summary under 2,300 mg (100 mEq); EAU 4-5 g NaCl (about 1,570-1,970 mg sodium, calc.); NIDDK"
+    },
+    {
+      "nutrient": "salt",
+      "unit": "g/day",
+      "generalAdult": 5,
+      "profileValue": 5,
+      "min": null,
+      "max": 5,
+      "direction": "limit",
+      "source": "As above; 2,000 mg sodium = 5 g salt"
+    },
+    {
+      "nutrient": "potassium",
+      "unit": "mg/day",
+      "generalAdult": 3500,
+      "profileValue": 3500,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020; WHO 3,510 mg; topic 19; from food only; DASH-style eating cut stone risk (Taylor 2009, via search); doctor sets limit in kidney disease; no KCl salt substitutes without doctor"
+    },
+    {
+      "nutrient": "calcium",
+      "unit": "mg/day",
+      "generalAdult": 1000,
+      "profileValue": 1100,
+      "min": 1000,
+      "max": 1200,
+      "direction": "same",
+      "source": "AUA 2014 (1,000-1,200 mg, via search); EAU 1.0-1.2 g/day; topic 15; ICMR-NIN 2020 (secondary, unverified); do not restrict food calcium; supplements only on doctor advice, with meals"
+    },
+    {
+      "nutrient": "iron",
+      "unit": "mg/day",
+      "generalAdult": 19,
+      "profileValue": 19,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (men 19, women 29) (secondary, unverified); no stone-specific change"
+    },
+    {
+      "nutrient": "magnesium",
+      "unit": "mg/day",
+      "generalAdult": 440,
+      "profileValue": 440,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (men 440, women 370) (secondary, unverified); no change; supplements doctor first"
+    },
+    {
+      "nutrient": "vitamin_d",
+      "unit": "ug/day",
+      "generalAdult": 15,
+      "profileValue": 15,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); Malihi 2016 meta-analysis (no significant rise in stones, more hypercalcaemia); USPSTF evidence summary (calcium plus vitamin D linked to more stones) (via search); no high-dose supplements without doctor"
+    },
+    {
+      "nutrient": "vitamin_b12",
+      "unit": "ug/day",
+      "generalAdult": 2.2,
+      "profileValue": 2.2,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "folate",
+      "unit": "ug DFE/day",
+      "generalAdult": 300,
+      "profileValue": 300,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (men 300, women 220) (secondary, unverified)"
+    },
+    {
+      "nutrient": "vitamin_c",
+      "unit": "mg/day",
+      "generalAdult": 80,
+      "profileValue": 80,
+      "min": null,
+      "max": null,
+      "direction": "limit",
+      "source": "ICMR-NIN 2020 (men 80, women 65; topic 5); from food only; supplements of 1,000 mg/day or more linked to more stones in men (Ferraro pooled HR 1.19, 95% CI 1.01-1.40; Thomas 2013 about double; via search, observational)"
+    },
+    {
+      "nutrient": "oxalate",
+      "unit": "mg/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "limit",
+      "source": "No numeric app limit; AUA 2014 limit oxalate-rich foods mainly if urine oxalate is high, keep calcium normal (Expert Opinion); pair oxalate foods with calcium foods; doctor decides"
+    },
+    {
+      "nutrient": "alcohol",
+      "unit": "drinks/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "limit",
+      "source": "Evidence mixed (2024 NHANES cross-sectional analysis linked moderate beer to lower risk; via search); WHO 2023 no safe level; best none"
+    },
+    {
+      "nutrient": "water",
+      "unit": "mL/day",
+      "generalAdult": 2500,
+      "profileValue": 2750,
+      "min": 2500,
+      "max": 3000,
+      "direction": "raise",
+      "source": "AUA 2014 (urine volume at least 2.5 L/day, via search summary); EAU 2024 (2.5-3.0 L fluid, urine 2.0-2.5 L, via search snippet); Borghi J Urol 1996; topic 30 (men 2,500 ml, women 2,000 ml) and topic 31 (heat top-up); not for kidney disease, heart disease, fluid limits or water pills. Follow your doctor's advice."
+    }
+  ],
+  "bloodMarkers": [
+    {
+      "marker": "24-hour urine volume",
+      "target": "at least 2.5 L/day (AUA); EAU target 2.0-2.5 L/day",
+      "unit": "L/day",
+      "source": "AUA 2014; EAU 2024 (via search)"
+    },
+    {
+      "marker": "24-hour urine calcium, oxalate, citrate, uric acid, sodium, potassium",
+      "target": "Not found; doctor interprets",
+      "unit": "mg/day",
+      "source": "AUA 2014 lists these as the minimum 24-hour urine analysis (via search); numeric cut-offs not found in this run"
+    },
+    {
+      "marker": "urine pH (uric acid stones)",
+      "target": "about 6.5-7.0 with potassium citrate under a doctor; uric acid about 11 times more soluble at pH 6.5 than 5.0",
+      "unit": "pH",
+      "source": "Review summary via search (secondary)"
+    },
+    {
+      "marker": "serum calcium",
+      "target": "Not found; stored only",
+      "unit": "mg/dL",
+      "source": "Not found"
+    },
+    {
+      "marker": "serum uric acid",
+      "target": "Not found; stored only; see P15",
+      "unit": "mg/dL",
+      "source": "Not found"
+    },
+    {
+      "marker": "eGFR",
+      "target": "Not found; stored only; see P13",
+      "unit": "mL/min/1.73 m2",
+      "source": "Not found"
+    }
+  ],
+  "waterMl": {
+    "min": 2500,
+    "max": 3000,
+    "notes": "Higher fluid goal for stone prevention: about 2,500-3,000 ml of fluids a day aiming for urine over 2.5 L/day (AUA 2014; EAU 2024 2.5-3.0 L fluid, target urine 2.0-2.5 L), plus the topic 31 heat top-up (+500 to +1,000 ml, app cap 4,500 ml). Water preferred; count plain chaas, nimbu pani, unsweetened tea or coffee, tender coconut water; avoid sugary sodas and packaged juice. requires_doctor_input: for kidney disease, heart disease or failure, liver disease, pregnancy, a fluid limit, a single kidney or anyone on a water pill (diuretic) the app shows only the general range and never pushes this higher target. Follow your doctor's advice."
+  },
+  "sodiumMgMax": 2000,
+  "dietaryCholesterolMgMax": null,
+  "foodsFavour": [
+    "plain water through the day; plain chaas, nimbu pani with little sugar, tender coconut water in moderation",
+    "milk, curd, chaas and measured paneer with meals for food calcium (1,000-1,200 mg/day)",
+    "fruits and vegetables, DASH-style (orange, mosambi, lemon, banana, papaya, gourds, cabbage, cauliflower)",
+    "dal, sprouts and whole pulses as main protein",
+    "small portions of chicken or fish",
+    "oxalate-rich foods eaten with a calcium food at the same meal",
+    "lemon, jeera, coriander, garlic and herbs instead of extra salt"
+  ],
+  "foodsLimit": [
+    "salty foods: pickles, papad, namkeen, farsan, chips, instant noodles, sauces, processed meat, cheese, pav and bread, chaat masala, black salt",
+    "large portions of mutton, red meat, organ meat and shellfish; purine-rich foods if uric acid stones",
+    "high-oxalate foods in large or daily amounts if the doctor finds high urine oxalate: palak, chaulai, bathua, beetroot, nuts, soy, strong tea, chocolate, sweet potato",
+    "sugar-sweetened cola, soft drinks, packaged juice, sharbat, sweet lassi",
+    "vitamin C supplements of 1,000 mg/day or more",
+    "calcium or vitamin D supplements without the doctor",
+    "herbal powders or tablets sold to dissolve stones"
+  ],
+  "goodFitDishes": [
+    {
+      "dishNumber": 35,
+      "dishName": "Curd Rice"
+    },
+    {
+      "dishNumber": 9,
+      "dishName": "Idli with Sambar"
+    },
+    {
+      "dishNumber": 51,
+      "dishName": "Uttapam"
+    },
+    {
+      "dishNumber": 52,
+      "dishName": "Moong Dal Khichdi"
+    },
+    {
+      "dishNumber": 66,
+      "dishName": "Sprouts Chaat"
+    },
+    {
+      "dishNumber": 67,
+      "dishName": "Mix Veg Curry"
+    },
+    {
+      "dishNumber": 44,
+      "dishName": "Baingan Bharta"
+    },
+    {
+      "dishNumber": 41,
+      "dishName": "Pongal"
+    },
+    {
+      "dishNumber": 69,
+      "dishName": "Paneer Bhurji"
+    },
+    {
+      "dishNumber": 53,
+      "dishName": "Paneer Tikka"
+    },
+    {
+      "dishNumber": 72,
+      "dishName": "Kadhi Pakora"
+    },
+    {
+      "dishNumber": 88,
+      "dishName": "Avial"
+    },
+    {
+      "dishNumber": 85,
+      "dishName": "South Indian Veg Kurma"
+    },
+    {
+      "dishNumber": 5,
+      "dishName": "Dal Tadka"
+    }
+  ],
+  "cautionDishes": [
+    {
+      "dishNumber": 17,
+      "dishName": "Palak Paneer",
+      "reason": "Spinach is high in oxalate; paneer calcium helps bind it; limit portions if urine oxalate is high (est.)"
+    },
+    {
+      "dishNumber": 31,
+      "dishName": "Indian-style Overnight Oats",
+      "reason": "Nuts and seeds add oxalate if large amounts; serve with milk or curd (est.)"
+    },
+    {
+      "dishNumber": 99,
+      "dishName": "Masala Chai",
+      "reason": "Strong tea has oxalate (milk helps); keep sugar low; not yet researched (est.)"
+    },
+    {
+      "dishNumber": 98,
+      "dishName": "Mango Lassi",
+      "reason": "Sugar and fructose; not yet researched (est.)"
+    },
+    {
+      "dishNumber": 100,
+      "dishName": "Cold Coffee",
+      "reason": "Added sugar; not yet researched (est.)"
+    },
+    {
+      "dishNumber": 2,
+      "dishName": "Chicken Biryani",
+      "reason": "Large animal protein portion and salt (est.)"
+    },
+    {
+      "dishNumber": 62,
+      "dishName": "Mutton Biryani",
+      "reason": "Red meat, large animal protein portion and salt (est.)"
+    },
+    {
+      "dishNumber": 23,
+      "dishName": "Mutton Rogan Josh",
+      "reason": "Red meat and purines; salt (est.)"
+    },
+    {
+      "dishNumber": 93,
+      "dishName": "Mutton Keema",
+      "reason": "Red meat and purines (est.)"
+    },
+    {
+      "dishNumber": 77,
+      "dishName": "Keema Pav",
+      "reason": "Red meat, pav salt (est.)"
+    },
+    {
+      "dishNumber": 7,
+      "dishName": "Butter Chicken",
+      "reason": "Animal protein, salt and cream (est.)"
+    },
+    {
+      "dishNumber": 28,
+      "dishName": "Chicken 65",
+      "reason": "Salt, sauces and animal protein (est.)"
+    },
+    {
+      "dishNumber": 87,
+      "dishName": "Chilli Chicken",
+      "reason": "Salt, soy sauce and animal protein (est.)"
+    },
+    {
+      "dishNumber": 55,
+      "dishName": "Prawn Masala",
+      "reason": "Shellfish purines for uric acid stones; salt (est.)"
+    },
+    {
+      "dishNumber": 20,
+      "dishName": "Vada Pav",
+      "reason": "Hidden salt in pav and chutneys (est.)"
+    },
+    {
+      "dishNumber": 13,
+      "dishName": "Pav Bhaji",
+      "reason": "Hidden salt in pav, masala and butter (est.)"
+    },
+    {
+      "dishNumber": 29,
+      "dishName": "Misal Pav",
+      "reason": "Salt in farsan, pav and rassa (est.)"
+    },
+    {
+      "dishNumber": 83,
+      "dishName": "Bhel Puri",
+      "reason": "Salt in sev, chutneys and chaat masala (est.)"
+    },
+    {
+      "dishNumber": 47,
+      "dishName": "Veg Manchurian",
+      "reason": "Soy sauce, ketchup, fried (est.)"
+    },
+    {
+      "dishNumber": 95,
+      "dishName": "Rice Kheer",
+      "reason": "Sugar; not yet researched (est.)"
+    },
+    {
+      "dishNumber": 97,
+      "dishName": "Gulab Jamun",
+      "reason": "Sugar; not yet researched (est.)"
+    }
+  ],
+  "conflictsWith": [
+    {
+      "profileId": "chronic-kidney-disease",
+      "rule": "P13 overrides fluid, potassium, protein and salt-substitute rules; the higher stone fluid goal is never shown"
+    },
+    {
+      "profileId": "heart-disease",
+      "rule": "P21 overrides fluid; requires_doctor_input true"
+    },
+    {
+      "profileId": "pregnancy",
+      "rule": "Pregnancy overrides; stone colic in pregnancy is an emergency; the doctor sets fluid"
+    },
+    {
+      "profileId": "breastfeeding",
+      "rule": "Keep fluids per P23; no extra restriction; the doctor decides on supplements"
+    },
+    {
+      "profileId": "hypertension",
+      "rule": "Same sodium direction (2,000 mg); thiazides can change fluids and potassium; doctor input"
+    },
+    {
+      "profileId": "gout-high-uric-acid",
+      "rule": "Same purine, alcohol and fluid direction; shared uric acid stone rules"
+    },
+    {
+      "profileId": "osteoporosis",
+      "rule": "Compatible; calcium 1,000-1,200 mg from food; supplements doctor decides; do not cut dairy"
+    },
+    {
+      "profileId": "type-2-diabetes",
+      "rule": "Compatible; weight loss helps; sugar cap 25 g; doctor input"
+    },
+    {
+      "profileId": "prediabetes",
+      "rule": "Compatible; obesity and insulin resistance raise uric acid stone risk"
+    },
+    {
+      "profileId": "fat-loss",
+      "rule": "Compatible; avoid crash and very high-protein diets; fluids stay high"
+    },
+    {
+      "profileId": "muscle-gain",
+      "rule": "Limit animal protein and protein powders; hydrate more; doctor input"
+    },
+    {
+      "profileId": "endurance-running",
+      "rule": "Compatible; more fluids on sweaty days; avoid routine sugary sports drinks"
+    },
+    {
+      "profileId": "jain-diet",
+      "rule": "Food filter; pair oxalate foods (nuts, greens) with curd or milk"
+    },
+    {
+      "profileId": "vegan-diet",
+      "rule": "Food filter; soy, nuts and greens add oxalate; use calcium-set tofu or fortified plant milk with them"
+    }
+  ],
+  "requiresDoctorInput": true,
+  "requiresDoctorInputStated": true,
+  "fluidNote": "Follow your doctor's advice",
+  "warnings": [
+    "General information, not medical advice. FitPlate does not diagnose kidney stones or stone type; a doctor, imaging, stone analysis and a 24-hour urine test are needed.",
+    "Diet advice depends on the stone type (calcium oxalate, calcium phosphate, uric acid, struvite, cystine); the app cannot know it and shows general guidance only.",
+    "Do not cut dietary calcium; keep 1,000-1,200 mg from food. Calcium or vitamin D supplements only on doctor advice and with meals.",
+    "Avoid vitamin C supplements of 1,000 mg/day or more; do not use herbal stone-dissolving products.",
+    "The higher fluid goal (2,500-3,000 ml) is not for kidney disease, heart disease or failure, liver disease, pregnancy, fluid limits, a single kidney or anyone on a water pill; the app shows only the general range and \"Follow your doctor's advice\" for these.",
+    "Emergency: severe flank pain with fever or chills, repeated vomiting, or no urine. Seek emergency care now (112).",
+    "Blood in the urine, painful urination or a stone that comes back: see a doctor soon.",
+    "Potassium-chloride salt substitutes only with the doctor's approval.",
+    "requires_doctor_input is true because the right diet depends on stone type and 24-hour urine results, treatment may include medicines, and fluid advice can be unsafe in kidney or heart disease."
+  ],
+  "lastResearched": "2026-11-14",
+  "versions": [
+    {
+      "date": "2026-11-14",
+      "file": "FitPlate_Nutrients_2026-11-14.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3); max as safety limit",
+    "limits": "safety limit (lower on conflict)",
+    "lists": "union",
+    "requiresDoctorInput": "stated true in any version, else newest version (missing flag + limits → true)"
+  },
+  "mergeNotes": [],
+  "needsReview": []
+}

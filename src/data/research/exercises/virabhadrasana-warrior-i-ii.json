@@ -1,0 +1,754 @@
+{
+  "id": "virabhadrasana-warrior-i-ii",
+  "number": 15,
+  "name": "Virabhadrasana I and II (Warrior I and II)",
+  "otherNames": [
+    "Warrior pose",
+    "Warrior I",
+    "Warrior II",
+    "Veerabhadrasana",
+    "Virabhadrasana"
+  ],
+  "section": "yoga_stretch",
+  "type": "yoga_asana",
+  "equipment": [
+    "wall (optional)",
+    "chair (optional)",
+    "mat (optional)"
+  ],
+  "noEquipmentAlternative": "Hands on hips, shorter stance, back near a wall, or a hand on a sturdy chair back",
+  "musclesPrimary": [
+    "quadriceps",
+    "gluteus maximus",
+    "gluteus medius",
+    "hip adductors",
+    "hip flexors of the back leg (psoas, rectus femoris)",
+    "deltoid"
+  ],
+  "musclesSecondary": [
+    "calves",
+    "trapezius",
+    "serratus anterior",
+    "erector spinae",
+    "transversus abdominis",
+    "obliques",
+    "pectoralis (chest opening)"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 2.3,
+  "compendiumCode": "02150",
+  "metOptions": [
+    {
+      "code": "02150",
+      "met": 2.3,
+      "activity": "MET: 2.3, 2024 Adult Compendium of Physical Activities, code 02150, \"Yoga, Hatha\" (search results showed 2.3, up from 2.5 in the 2011 edition, with 02153 Hatha high intensity at 8.0). This matches the"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "flexibility",
+      "sets": 2,
+      "reps": "1 hold each of Warrior I and II per side, shorter stance",
+      "timeSec": 25,
+      "restSec": 10,
+      "tempo": "slow nose breathing, 3-5 breaths",
+      "perWeek": 4
+    },
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 2,
+      "reps": "1 hold each of Warrior I and II per side inside a standing flow",
+      "timeSec": 20,
+      "restSec": 10,
+      "tempo": "3-5 slow breaths",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "relaxation",
+      "sets": 1,
+      "reps": "1 hold each of Warrior I and II per side, arms in a V or on hips, evening",
+      "timeSec": 25,
+      "restSec": 10,
+      "tempo": "5 slow breaths",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "flexibility",
+      "sets": 3,
+      "reps": "1 hold each of Warrior I and II per side",
+      "timeSec": 30,
+      "restSec": 10,
+      "tempo": "5 slow breaths",
+      "perWeek": 4
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "1 hold each of Warrior I and II per side in a flow",
+      "timeSec": 25,
+      "restSec": 10,
+      "tempo": "5 slow breaths",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": 3,
+      "reps": "1 hold each of Warrior I and II per side, deeper bend and longer stance",
+      "timeSec": 50,
+      "restSec": 15,
+      "tempo": "8-10 slow breaths",
+      "perWeek": 4
+    },
+    {
+      "level": "advanced",
+      "goal": "relaxation",
+      "sets": 2,
+      "reps": "1 hold each of Warrior I and II per side",
+      "timeSec": 40,
+      "restSec": 15,
+      "tempo": "8 slow breaths",
+      "perWeek": 4
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "hold_timer",
+    "cameraView": "front",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "front_knee_bent",
+        "joint": "front knee (hip-knee-ankle)",
+        "angleDeg": "<= 120",
+        "parsed": {
+          "op": "<=",
+          "value": 120,
+          "max": null
+        }
+      },
+      {
+        "name": "front_knee_not_too_deep",
+        "joint": "front knee (hip-knee-ankle)",
+        "angleDeg": ">= 80",
+        "parsed": {
+          "op": ">=",
+          "value": 80,
+          "max": null
+        }
+      },
+      {
+        "name": "back_knee_straight",
+        "joint": "back knee (hip-knee-ankle)",
+        "angleDeg": ">= 165",
+        "parsed": {
+          "op": ">=",
+          "value": 165,
+          "max": null
+        }
+      },
+      {
+        "name": "legs_spread",
+        "joint": "leg spread (ankle-hip-ankle)",
+        "angleDeg": ">= 60",
+        "parsed": {
+          "op": ">=",
+          "value": 60,
+          "max": null
+        }
+      },
+      {
+        "name": "torso_upright",
+        "joint": "torso lean (shoulder-hip line against vertical)",
+        "angleDeg": "<= 20",
+        "parsed": {
+          "op": "<=",
+          "value": 20,
+          "max": null
+        }
+      },
+      {
+        "name": "arms_overhead_warrior_i",
+        "joint": "arm lift (hip-shoulder-wrist)",
+        "angleDeg": ">= 150",
+        "parsed": {
+          "op": ">=",
+          "value": 150,
+          "max": null
+        }
+      },
+      {
+        "name": "arms_level_warrior_ii",
+        "joint": "arm lift (hip-shoulder-wrist)",
+        "angleDeg": ">= 75",
+        "parsed": {
+          "op": ">=",
+          "value": 75,
+          "max": null
+        }
+      },
+      {
+        "name": "hold_long_enough",
+        "joint": "time",
+        "angleDeg": "hold >= 15 s (position flag, not an angle)",
+        "parsed": null
+      }
+    ],
+    "minRepSec": 15
+  },
+  "formChecks": [
+    {
+      "joint": "front knee",
+      "rule": "front knee angle > 120 deg (equals front_knee_bent phase threshold)",
+      "message": "Bend the front knee a little more, keep it over the ankle"
+    },
+    {
+      "joint": "front knee",
+      "rule": "front knee angle < 80 deg (equals front_knee_not_too_deep phase threshold)",
+      "message": "Too deep: ease up so the knee stays over the ankle"
+    },
+    {
+      "joint": "back knee",
+      "rule": "back knee angle < 165 deg (equals back_knee_straight phase threshold)",
+      "message": "Straighten the back leg"
+    },
+    {
+      "joint": "leg spread",
+      "rule": "leg spread angle < 60 deg (equals legs_spread phase threshold)",
+      "message": "Step your feet a little wider"
+    },
+    {
+      "joint": "torso",
+      "rule": "torso lean > 20 deg (equals torso_upright phase threshold)",
+      "message": "Stand tall: lift the chest, do not lean"
+    },
+    {
+      "joint": "arms (Warrior I)",
+      "rule": "arm lift < 150 deg (equals arms_overhead_warrior_i phase threshold)",
+      "message": "Reach the arms up, or place hands on hips"
+    },
+    {
+      "joint": "arms (Warrior II)",
+      "rule": "arm lift < 75 deg (equals arms_level_warrior_ii phase threshold)",
+      "message": "Lift the arms to shoulder height"
+    },
+    {
+      "joint": "time",
+      "rule": "hold shorter than 15 s (equals min_rep_sec and hold_long_enough)",
+      "message": "Stay a little longer, breathe slowly"
+    }
+  ],
+  "safetyFlags": [
+    "stop_at_pain_mild_effort_only",
+    "front_knee_over_ankle_never_past_toes",
+    "knee_tracks_over_second_toe_no_inward_collapse",
+    "do_not_force_hips_square",
+    "back_foot_out_45_deg_warrior_i_90_deg_warrior_ii",
+    "shoulder_problems_hands_on_hips",
+    "neck_problems_gaze_ahead",
+    "lower_back_pain_short_stance_hands_on_hips",
+    "knee_pain_shallow_bend",
+    "ankle_injury_use_chair_or_skip",
+    "hypertension_no_breath_holding_arms_low",
+    "pregnancy_wider_stance_and_support",
+    "osteoporosis_wall_or_chair",
+    "dizziness_sit_down",
+    "recent_surgery_ask_doctor"
+  ],
+  "progressions": [
+    "Deeper bend and longer stance, longer holds",
+    "Flow between Warrior I and II on the breath, then reverse or humble warrior (est.)",
+    "Warrior III or hands pressed overhead (intermediate to advanced, est.)"
+  ],
+  "regressions": [
+    "Hands on hips with a shorter stance and a small knee bend",
+    "Wall or chair support, or seated Warrior II",
+    "Shallower bend and shorter hold"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "front, 3 m",
+      "shows": "stance: feet about 3.5 to 4 feet apart, hands on hips",
+      "textOverlay": "Step wide, hands on hips."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 2 m",
+      "shows": "foot angles: front foot straight, back foot out 45 degrees (I) and 90 degrees (II)",
+      "textOverlay": "Back toes out."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 3 m",
+      "shows": "front knee over the ankle, never past the toes; shin vertical",
+      "textOverlay": "Knee over ankle."
+    },
+    {
+      "seconds": 6,
+      "angle": "front, 1.5 m",
+      "shows": "wrong (knee collapsing inward) vs right (knee over second toe)",
+      "textOverlay": "Knee towards little toe."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 3 m",
+      "shows": "Warrior I: hips facing front, arms overhead",
+      "textOverlay": "Lift tall, ribs in."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 3 m",
+      "shows": "Warrior II: hips open, arms level, gaze over the front hand",
+      "textOverlay": "Arms long, gaze over the hand."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 3 m",
+      "shows": "wall and chair versions, shorter stance",
+      "textOverlay": "Wall or chair keeps you steady."
+    },
+    {
+      "seconds": 6,
+      "angle": "front, 1.5 m",
+      "shows": "gaze and arm options: hands on hips, V, arms out",
+      "textOverlay": "Shoulders sore? Hands on hips."
+    }
+  ],
+  "lastResearched": "2026-11-14",
+  "setupSteps": [
+    "Warm up first. 2 to 5 minutes of walking on the spot, arm circles, gentle hip circles and a few easy squats. Do not drop into a deep lunge with cold legs.",
+    "Floor. Flat and non-slip. A sticky mat or bare feet on a dry floor; never socks on tiles. The back foot must not slide.",
+    "Stance room. Face the long side of the room or the mat. Clear about 1.4 m by 1 m for the legs and 2 m of height for the arms (est.).",
+    "Wall or chair (optional). For the wall version, stand with your back about one foot-length from a smooth wall so the back heel can touch it. For the chair version, a sturdy chair with its back against a wall, beside the front leg.",
+    "Clothing. Stretchy pants or shorts; a long kurta tucked in so you can see the knees; no tight jeans.",
+    "Mark the stance. Step the feet apart once, check the distance (about 3.5 to 4 feet, est.), then keep the same distance for the next side.",
+    "Camera. Phone on a shelf at hip height, 2.5 to 3 m in front, so the whole body, both feet and the hands are in frame (see sections 11 and 12)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Stand tall in Tadasana",
+      "action": "feet together, arms by the sides, weight even on both feet.",
+      "feel": "tall and steady.",
+      "breathing": "2 slow breaths.",
+      "tempo": "5 seconds.",
+      "visualCheck": "front view, head over the hips, shoulders level."
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Step the feet apart",
+      "action": "step the left foot back about 3.5 to 4 feet (about 105 to 120 cm, est.), with the right foot forward. Hold the hands on the hips.",
+      "feel": "a long, steady base; the back leg stretching a little.",
+      "breathing": "out-breath as you step.",
+      "tempo": "4 seconds.",
+      "visualCheck": "front view, feet well apart, front foot pointing straight ahead."
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Set the back foot (Warrior I)",
+      "action": "turn the left (back) foot out about 45 degrees (sources: 45 to 60). Keep the heel down if you can; if the heel lifts, raise it a little rather than twisting the knee.",
+      "feel": "the outer edge of the back foot grounded; no twist in the back knee.",
+      "breathing": "steady.",
+      "tempo": "3 seconds.",
+      "visualCheck": "front view, back foot angled out, back kneecap points along the back toes."
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Turn the hips toward the front",
+      "action": "turn the pelvis toward the front of the mat as far as comfortable. A perfectly square pelvis is not required; let the back hip stay slightly open if the back knee or lower back complains.",
+      "feel": "the back hip stretching, not the back knee.",
+      "breathing": "slow.",
+      "tempo": "3 seconds.",
+      "visualCheck": "front view, both hip points roughly level and facing the camera."
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Bend the front knee",
+      "action": "bend the right knee so it moves forward over the ankle, tracking over the second toe (towards the pinky-toe side, not inward). Stop when the knee is above the ankle; never let it pass the toes. Keep the back leg straight but soft.",
+      "feel": "the front thigh and buttock working; the back-leg hip flexor stretching.",
+      "breathing": "slow out-breath.",
+      "tempo": "4 seconds.",
+      "visualCheck": "front view, the knee over the middle toes, no inward collapse; you can still see your toes past the knee."
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Lift the arms (Warrior I)",
+      "action": "breathe in and raise both arms overhead, palms facing, shoulder-width. Shorter: hands on the hips. Gentler for shoulders: arms in a V.",
+      "feel": "ribs lifting; the shoulders soft, not shrugged.",
+      "breathing": "in-breath as the arms rise.",
+      "tempo": "3 seconds.",
+      "visualCheck": "front view, wrists above the shoulders, arms straight, neck long."
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Choose the gaze",
+      "action": "look straight ahead, or up at the hands if the neck is comfortable.",
+      "feel": "neck long; no jammed chin.",
+      "breathing": "steady.",
+      "tempo": "2 seconds.",
+      "visualCheck": "chin not poking forward; head over the shoulders."
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Hold Warrior I",
+      "action": "press both feet down, lift the chest, keep the torso upright over the pelvis (not leaning over the front leg or arching the lower back).",
+      "feel": "leg work, a stretch in the front of the back hip; no pinch in the lower back or knees.",
+      "breathing": "slow nose breaths, 3 to 5 breaths.",
+      "tempo": "about 15 to 30 seconds (est.; 5 breaths is about 25 seconds).",
+      "visualCheck": "no change in the line."
+    },
+    {
+      "n": 9,
+      "part": null,
+      "title": "Open to Warrior II",
+      "action": "breathe out, lower the arms; turn the whole pelvis and chest to face the long side of the room, as the back foot turns to about 90 degrees (parallel to the short edge of the mat). Keep the front knee over the ankle. The front heel lines up with the back foot's arch (or a little closer if you feel unstable).",
+      "feel": "the inner thighs opening; the front knee steady.",
+      "breathing": "slow out-breath.",
+      "tempo": "5 seconds.",
+      "visualCheck": "front view, hips open towards the long side of the mat, torso centred over the pelvis."
+    },
+    {
+      "n": 10,
+      "part": null,
+      "title": "Extend the arms (Warrior II)",
+      "action": "raise both arms to shoulder height, palms down, reaching in one line from fingertip to fingertip. Back wrist roughly over the back ankle.",
+      "feel": "wide chest; shoulders soft; arms light.",
+      "breathing": "in-breath.",
+      "tempo": "3 seconds.",
+      "visualCheck": "front view, arms level and in one line, shoulders directly above the hips."
+    },
+    {
+      "n": 11,
+      "part": null,
+      "title": "Gaze over the front hand",
+      "action": "turn the head and look over the front fingertips; if the neck is tender, look straight ahead.",
+      "feel": "neck relaxed.",
+      "breathing": "steady.",
+      "tempo": "2 seconds.",
+      "visualCheck": "chin level, not tilted."
+    },
+    {
+      "n": 12,
+      "part": null,
+      "title": "Hold Warrior II",
+      "action": "keep pressing the feet down, the front knee tracking over the second toe, the torso upright, the arms up.",
+      "feel": "heat in the front thigh and shoulders; mild effort, not burning pain.",
+      "breathing": "slow nose breaths, 3 to 5 breaths.",
+      "tempo": "about 15 to 30 seconds (est.).",
+      "visualCheck": "front knee not collapsing in; shoulders not lifting to the ears."
+    },
+    {
+      "n": 13,
+      "part": null,
+      "title": "Come out",
+      "action": "straighten the front leg, lower the arms, turn the feet forward and step the back foot to the front. Rest in Tadasana for 2 to 3 breaths.",
+      "feel": "the legs light.",
+      "breathing": "out-breath.",
+      "tempo": "10 seconds.",
+      "visualCheck": "no jerking up with the neck."
+    },
+    {
+      "n": 14,
+      "part": null,
+      "title": "Switch",
+      "action": "repeat on the other side (left foot forward). Do both sides each round.",
+      "feel": "even work on both sides.",
+      "breathing": "out-breath.",
+      "tempo": "10 seconds rest in Tadasana.",
+      "visualCheck": "same shape on both sides."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Front knee past the toes",
+      "text": "Front knee past the toes. It loads the kneecap and knee joint more. Fix: take the front foot a little farther forward, or bend less; if you cannot see your toes past the knee, back off."
+    },
+    {
+      "title": "Front knee collapsing inward",
+      "text": "Front knee collapsing inward. It twists the knee and often means weak outer hips. Fix: press the outer edge of the front foot down and steer the knee toward the little-toe side."
+    },
+    {
+      "title": "Forcing the hips square in Warrior I",
+      "text": "Forcing the hips square in Warrior I. Pulling the back hip forward can torque the back knee and strain the sacroiliac joint. Fix: let the back hip stay a little open; widen the stance a little; lift the back heel if the ankle is tight."
+    },
+    {
+      "title": "Back foot too straight, or heel dragged down",
+      "text": "Back foot too straight, or heel dragged down. It twists the back knee or compresses the lower back. Fix: turn the back foot out about 45 degrees (I) or about 90 degrees (II); lift the heel a little if needed."
+    },
+    {
+      "title": "Leaning forward and arching the lower back",
+      "text": "Leaning forward and arching the lower back. The torso falls over the front leg. Fix: lift the chest, draw the tailbone down, shorten the stance, or place hands on hips."
+    },
+    {
+      "title": "Shrugged shoulders and craned neck",
+      "text": "Shrugged shoulders and craned neck. It strains the neck and shoulders. Fix: draw the shoulders down, lower the arms, or place hands on hips; look ahead."
+    },
+    {
+      "title": "Stance too short, or too long",
+      "text": "Stance too short, or too long. Too short makes a deep knee bend and a tipped pelvis; too long makes it hard to hold. Fix: adjust until the front shin is vertical and you can breathe."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. It raises effort and can make you dizzy. Fix: slow nose breaths; lower the arms if needed."
+    },
+    {
+      "title": "Warrior II: leaning toward the front leg, or sinking the hips",
+      "text": "Warrior II: leaning toward the front leg, or sinking the hips. Fix: keep the torso centred over the pelvis, back wrist over the back ankle."
+    }
+  ],
+  "safetyNotes": [
+    "Mild effort, never pain. Stop at pain in the knee, hip, lower back, neck or shoulder.",
+    "Knee: knee over the ankle and over the second toe; no inward collapse, no knee past the toes. One source warns that the Warriors can strain the ACL if the knee is not kept in line with the ankle. A shallower bend suits knee problems.",
+    "Hip and back: a slightly open back hip is fine in Warrior I; do not force the hips square. Warrior II is sometimes taught with strain on the hip, sacroiliac joints and lower back, so check the hips are not tilting.",
+    "Shoulder and neck: overhead arms can aggravate a rotator cuff (a source says so); use hands on hips or a V. Neck problems: look ahead, do not turn or tilt the head up.",
+    "Ankle: one health guide lists ankle injury among reasons to avoid the pose; use a chair for support or skip.",
+    "Blood pressure and dizziness: do not hold the breath; avoid keeping the arms overhead for long; come out slowly; if you feel dizzy, sit down.",
+    "Stop immediately if you feel: sharp pain in the knee, hip or back, numbness or tingling, dizziness, chest pain or breathlessness, or a pop or pull.",
+    "Spotter: not needed; use a wall or chair.",
+    "Gym etiquette: use a clear mat area and keep the chair out of the walkway."
+  ],
+  "sources": [
+    "Ministry of AYUSH Common Yoga Protocol (CYP): standing-asana section opens with Tadasana (seen only as a snippet); Warrior I and II not confirmed in the CYP; MDNIY CYP 2023 English PDF (seen only as a link): https://yogamdniy.nic.in/files/pdf/CYP-2023-English.pdf ; https://www.mea.gov.in/images/pdf/common-yoga-protocol-english.pdf ; https://indembarg.gov.in/content/Common%20Yoga%20Protocol%20(Spanish).pdf",
+    "Inside Yoga, Virabhadrasana I (traditional vs lifted back heel, 45-60 degree back foot, lower-back compression; snippets): https://insideyoga.org/asana-library/virabhadrasana-i-traditional/ ; https://insideyoga.org/asana-library/virabhadrasana-i/",
+    "Yoga U Online (hips squaring called outdated, wider stance for back, hip and pregnancy; wall Warrior II; snippets): https://yogauonline.com/?p=10294 ; https://yogauonline.com/?p=9067 ; https://yogauonline.com/yoga-practice-teaching-tips/yoga-practice-tips/yoga-at-the-wall-support-and-alignment-in-warrior-ii/",
+    "Yoga International (square hips myth, back-knee torque, knee loading 90 vs 125 degrees, Warrior II mistakes; snippets): https://yogainternational.com/article/view/five-things-you-might-not-know-about-warrior-i ; https://yogainternational.com/article/view/pose-breakdown-8-tips-to-demystify-warrior-i ; https://yogainternational.com/article/view/how-to-please-the-knees-in-high-lunges-and-warriors/ ; https://yogainternational.com/article/view/the-five-most-common-alignment-mistakes-in-warrior-ii",
+    "Teaching pages for stance, foot angle, knee tracking and gaze (snippets): Kavaalya: https://kavaalya.com/blog/virabhadrasana-warrior-1/ ; Brett Larkin: https://www.brettlarkin.com/?p=17251 ; https://www.brettlarkin.com/?p=18985 ; Peloton: https://www.onepeloton.com/blog/warrior-2-pose ; Do You Yoga: https://www.doyouyoga.com/9-alignment-tips-for-a-powerful-warrior-two/ ; Yoga Matters: https://www.yogamatters.com/blogs/pose-library/warrior-1-virabhadrasana-i ; Habuild: https://habuild.in/habitology/asana-mudra/virabhadrasana-1",
+    "Student biomechanics page on Warrior I (knee close to 90 degrees; no measured data; snippet): https://ffden-2.phys.uaf.edu/211_fall2013.web.dir/Molly_Tedesche/Page_1.html",
+    "Modifications and cautions (snippets): ISSA shoulder (hands on hips): https://www.issaonline.com/blog/index.cfm/2021/yoga-and-shoulder-injury-from-healing-to-prevention ; Do You Yoga shoulder: https://www.doyouyoga.com/5-yoga-pose-modifications-to-avoid-shoulder-injury-27018/ ; Yoga International adapting for knees: https://yogainternational.com/article/view/adapting-yoga-for-knee-issues-alignment-tips-and-best-practices ; health guide list of reasons to avoid: https://www.truemeds.in/blog/benefits-of-virabhadrasana-warrior-pose",
+    "Pregnancy and osteoporosis (snippets): Prenatal Yoga Center: https://prenatalyogacenter.com/warrior-one-virabhadrasana-one ; https://prenatalyogacenter.com/warrior-two-virabhadrasana-two ; Harvard Health: https://health.harvard.edu/blog/yoga-in-pregnancy-many-poses-are-safer-than-once-thought-201512298898",
+    "Herrmann SD et al., 2024 Adult Compendium of Physical Activities (02150 Yoga, Hatha 2.3; 02153 Hatha high intensity 8.0; seen via search snippet): https://pacompendium.com/conditioning-exercise ; https://pubmed.ncbi.nlm.nih.gov/38242596/",
+    "ACSM stretching guidance (Garber et al. 2011, via the earlier Yoga & Stretch 13 file; snippet): https://www.acsm.org/blog-detail/acsm-certified-blog/2021/03/18/stretching-and-flexibility-guidelines-update",
+    "Condition sources (general, from earlier items): ADA PMC5317029: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/ ; PCOS position statement: https://researchers.westernsydney.edu.au/en/publications/exercise-in-the-management-of-polycystic-ovary-syndrome-a-positio/ ; Marshfield Clinic asthma: https://shine365.marshfieldclinic.org/wellness/asthma-exercise/ ; ECU Health asthma: https://healthlibrary.ecuhealth.org/lung-health/management/asthma-management-exercise-safety",
+    "Stance length: 3.5 to 4 feet, 4 to 4.5 feet (Iyengar), or as long as you can manage. We chose about 3.5 to 4 feet, shorter for beginners.",
+    "Front-knee depth: about 90 degrees is the classic ideal; more than 90 is fine if the knee complains. We chose knee over ankle, about 90 to 120 degrees (est.).",
+    "Back foot: about 45 degrees (Warrior I; some say 45 to 60); about 90 degrees (Warrior II; some use a looser angle).",
+    "Back heel in Warrior I: down (traditional) versus lifted (modern, more accessible but less stable). We chose heel down if comfortable, lifted a little if not.",
+    "Square hips: traditional teaching says square them; others call full squaring a myth. We chose \"only as far as the knee and back allow\".",
+    "Hold time: 3 to 5 breaths, 5 to 10 breaths, or 30 to 60 seconds. We chose 3 to 5 breaths.",
+    "Not found: official CYP text for Warrior I and II (and whether they are in the CYP at all); MDNIY technique page; Warrior-specific MET; measured joint-angle norms or EMG data; wall-specific front-knee cue; clinical condition sources (ACOG, AHA, ADA for this pose). Our thresholds are estimates.",
+    "Most pages were seen only as search snippets; direct page fetches were not possible."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 43.5,
+      "70kg": 37.3,
+      "80kg": 32.6
+    },
+    "per300kcal": {
+      "60kg": 130.4,
+      "70kg": 111.8,
+      "80kg": 97.8
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "yoga",
+    "mobility",
+    "flexibility",
+    "balance",
+    "strength",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "small_flat",
+    "quiet",
+    "office_desk",
+    "6_10_min",
+    "warm_up",
+    "cool_down",
+    "morning",
+    "evening",
+    "relaxation"
+  ],
+  "swapsByAccess": {
+    "none": "Hands on hips, shorter stance, back near a wall, or a hand on a sturdy chair back",
+    "home_equipment": "Chair for balance; strap held overhead for tight shoulders",
+    "basic_gym": "Sturdy bench or locked Smith bar for one hand; wall in the stretching area",
+    "full_gym": "Studio mat area with a wall; stable rail or bench for one hand"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "No breath-holding; hands on hips or arms low; shorter holds; rise slowly; ask a doctor if on treatment",
+      "source": "Teaching sources and a health guide list (snippets); Not found (clinical)"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "modify",
+      "change": "Check feet; eat first if on glucose-lowering medicine; wall or chair for balance; ask a doctor",
+      "source": "ADA PMC5317029 (general); Not found (pose-specific)"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "If cleared, hands on hips, no breath-holding, short holds",
+      "source": "Standing-pose guide (snippet); Not found (clinical)"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "No change (source not found)",
+      "source": "Not found"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Shorter stance, hands on hips, wall or chair, shorter holds; wider stance for belly space",
+      "source": "Teaching source (snippet); Not found (clinical)"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "No pose-specific caution found",
+      "source": "PCOS exercise position statement (general); Not found (pose-specific)"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "No pose-specific caution found; ease in if stiff",
+      "source": "Not found"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Reliever inhaler nearby; slow breathing; stop if wheezing",
+      "source": "Marshfield Clinic and ECU Health asthma exercise-safety pages (general)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Shallow bend, knee over ankle and second toe, shorter hold, chair for support; stop if the knee hurts",
+      "source": "Yoga International knee articles, Yoga U Online (snippets); Not found (clinical OA guidance)"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Wider or shorter stance, back hip slightly open, hands on hips, lift the back heel, short holds; ask a doctor for spinal conditions",
+      "source": "Yoga U Online, Inside Yoga (snippets); Not found (clinical)"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "modify",
+      "change": "Hands on hips instead of arms overhead or out; arms in a V",
+      "source": "ISSA shoulder article, Do You Yoga (snippets)"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "modify",
+      "change": "Wall or chair support; shorter stance; ask a doctor",
+      "source": "One yoga teacher blog (snippet); Not found (clinical)"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "modify",
+      "change": "Wider stance, wall or chair; stop if dizzy; ask a midwife or doctor",
+      "source": "Prenatal Yoga Center pages (snippets); Harvard Health prenatal yoga blog (general); Not found (ACOG wording)"
+    },
+    {
+      "condition": "postpartum",
+      "status": "modify",
+      "change": "Start gently; joints may be lax; ask a physio if pain",
+      "source": "Not found"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Follow the surgeon's advice; spinal conditions and ankle injury listed as reasons to avoid by a health guide",
+      "source": "Health guide list (snippet); Not found (clinical)"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "home",
+      "office_desk"
+    ],
+    "bodyRegion": [
+      "lower",
+      "full_body"
+    ],
+    "goalTags": [
+      "flexibility",
+      "strength",
+      "relaxation",
+      "general_fitness"
+    ],
+    "intensity": "light",
+    "noise": "quiet",
+    "space": "small_room",
+    "typicalMinutes": 8,
+    "kcalPer10min70kg": 27,
+    "difficulty1to5": 3,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Yoga & stretch",
+    "Home",
+    "Office desk",
+    "No equipment",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Yoga",
+    "Legs",
+    "Glutes",
+    "Hips",
+    "Shoulders",
+    "Hold timer",
+    "Under 10 min"
+  ],
+  "needsReview": [
+    "rep_counter phase \"hold_long_enough\" (time): angle \"hold >= 15 s (position flag, not an angle)\" is not a parseable angle"
+  ],
+  "versions": [
+    {
+      "date": "2026-11-14",
+      "file": "FitPlate_Fitness_2026-11-14.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

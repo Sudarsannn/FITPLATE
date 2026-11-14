@@ -27,7 +27,15 @@
       "expo-router",
       "expo-video",
       "expo-web-browser",
-      "expo-font"
+      "expo-font",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "FitPlate uses the camera to show you while you move and to record a clip you can watch back. Clips stay on your phone.",
+          "microphonePermission": false,
+          "recordAudioAndroid": false
+        }
+      ]
     ],
     "scheme": "fitplate",
     "experiments": {

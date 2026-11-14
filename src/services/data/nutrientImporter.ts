@@ -543,6 +543,24 @@ function topicHeadings(text: string): Heading[] {
 }
 
 /**
+ * Research ids that belong to one topic number. A later topic that reuses such an id
+ * (Topic 34 reused "water-daily-requirement", the id of Topic 30) would otherwise
+ * count as a new version of the first topic and replace its target formula.
+ * It gets an id from its own title instead.
+ */
+const OWNED_IDS: Record<string, string> = { 'water-daily-requirement': '30' };
+
+export function fixIdCollision(id: string, topicNumber: string | null, title: string | null): string {
+  const owner = OWNED_IDS[id];
+  const fromTitle = title ? /^topic\s*(\d+)/i.exec(title)?.[1] ?? null : null;
+  const topic = fromTitle ?? topicNumber;
+  if (!owner || !topic || topic === owner || !title) return id;
+  topicNumber = topic;
+  const slug = normaliseId(title.replace(/^topic\s*\d+\s*[:.-]?\s*/i, ''));
+  return slug && slug !== id ? slug : `${id}-topic-${topicNumber}`;
+}
+
+/**
  * Parses one nutrient research file into topic versions. A block that is
  * not valid JSON, has no id, or has an unknown "type" becomes an error
  * entry for the report (spec G: back to the backlog, never guessed).
@@ -577,7 +595,7 @@ export function parseNutrientFile(text: string, file: string): { items: Nutrient
       errors.push(`${where}: JSON block has no "id"`);
       continue;
     }
-    const id = normaliseId(parsed.id);
+    const id = fixIdCollision(normaliseId(parsed.id), heading?.number ?? null, heading?.title ?? null);
     const type = typeof parsed.type === 'string' ? parsed.type.trim().toLowerCase() : '';
     const notes: string[] = [];
     const r = new Reader(`${date} ${id}`, notes);

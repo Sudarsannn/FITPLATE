@@ -1,0 +1,682 @@
+{
+  "id": "dumbbell-goblet-squat",
+  "number": 15,
+  "name": "Dumbbell goblet squat",
+  "otherNames": [
+    "Goblet squat",
+    "Kettlebell goblet squat",
+    "Rucksack goblet squat",
+    "Water-bottle goblet squat",
+    "Front-loaded squat",
+    "Box goblet squat",
+    "Chair goblet squat"
+  ],
+  "section": "home",
+  "type": "strength",
+  "equipment": [
+    "dumbbell or kettlebell",
+    "non-slip exercise mat",
+    "chair or box (optional regression)"
+  ],
+  "noEquipmentAlternative": "A rucksack packed with books or a filled 2-5 litre water bottle held at the chest, or a bodyweight squat with the hands clasped at the chest.",
+  "musclesPrimary": [
+    "quadriceps",
+    "gluteus maximus"
+  ],
+  "musclesSecondary": [
+    "adductors",
+    "hamstrings",
+    "gastrocnemius",
+    "soleus",
+    "rectus abdominis",
+    "transversus abdominis",
+    "erector spinae",
+    "trapezius",
+    "anterior deltoid",
+    "biceps brachii"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 3.5,
+  "compendiumCode": "02054",
+  "metOptions": [
+    {
+      "code": "02054",
+      "met": 3.5,
+      "activity": "MET: 3.5, Compendium code 02054, \"resistance (weight) training, multiple exercises, 8-15 repetitions at varied resistance\" (2024 Adult Compendium of Physical Activities, conditioning-exercise table; v"
+    },
+    {
+      "code": "02052",
+      "met": 5,
+      "activity": "Extras (text only, not used in the JSON): one search summary gave 02052 (squat and deadlift training) = 5.0 METs (70 kg: 58.3 kcal per 10 min, est.; about 51.4 min for 300 kcal), 02055 (circuit-style "
+    },
+    {
+      "code": "02055",
+      "met": 5.8,
+      "activity": "Extras (text only, not used in the JSON): one search summary gave 02052 (squat and deadlift training) = 5.0 METs (70 kg: 58.3 kcal per 10 min, est.; about 51.4 min for 300 kcal), 02055 (circuit-style "
+    },
+    {
+      "code": "02050",
+      "met": 6,
+      "activity": "Extras (text only, not used in the JSON): one search summary gave 02052 (squat and deadlift training) = 5.0 METs (70 kg: 58.3 kcal per 10 min, est.; about 51.4 min for 300 kcal), 02055 (circuit-style "
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "8-10 slow reps, RPE 5-6 with 3-4 reps in reserve",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "3 s down, 1 s pause, 1-2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 3,
+      "reps": "10 slow reps, RPE 5-6, paired with walking or a cardio block",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "3 s down, 1 s pause, 1-2 s up",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "10-12 reps, 3 reps in reserve",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "3 s down, 1 s pause, 1-2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "strength",
+      "sets": 3,
+      "reps": "6-8 reps with a heavier weight, 2-3 reps in reserve, clean form",
+      "timeSec": null,
+      "restSec": 105,
+      "tempo": "3 s down, 1 s pause, controlled up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 2,
+      "reps": "15 light reps, 3-4 reps in reserve",
+      "timeSec": null,
+      "restSec": 50,
+      "tempo": "2 s down, 1 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "8-12 reps, 1-3 reps in reserve",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "3 s down, 1 s pause, 1 s up",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": 4,
+      "reps": "3-6 heavy reps or paused reps, 0-2 reps in reserve",
+      "timeSec": null,
+      "restSec": 120,
+      "tempo": "3 s down, 2 s pause, explosive up",
+      "perWeek": 2
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_ear",
+      "right_ear",
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle",
+      "left_heel",
+      "right_heel",
+      "left_foot_index",
+      "right_foot_index"
+    ],
+    "phases": [
+      {
+        "name": "top_knee",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": ">= 165",
+        "parsed": {
+          "op": ">=",
+          "value": 165,
+          "max": null
+        }
+      },
+      {
+        "name": "top_hip",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": ">= 165",
+        "parsed": {
+          "op": ">=",
+          "value": 165,
+          "max": null
+        }
+      },
+      {
+        "name": "bottom_knee",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": "<= 100",
+        "parsed": {
+          "op": "<=",
+          "value": 100,
+          "max": null
+        }
+      },
+      {
+        "name": "bottom_hip",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": ">= 45",
+        "parsed": {
+          "op": ">=",
+          "value": 45,
+          "max": null
+        }
+      },
+      {
+        "name": "neck_line",
+        "joint": "neck (ear-shoulder-hip)",
+        "angleDeg": ">= 150",
+        "parsed": {
+          "op": ">=",
+          "value": 150,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 1.5
+  },
+  "formChecks": [
+    {
+      "joint": "knee",
+      "rule": "knee angle < 165 degrees at the top (equals top_knee phase threshold)",
+      "message": "Stand all the way up"
+    },
+    {
+      "joint": "hip",
+      "rule": "hip angle < 165 degrees at the top (equals top_hip phase threshold)",
+      "message": "Stand tall, hips under shoulders"
+    },
+    {
+      "joint": "knee",
+      "rule": "knee angle > 100 degrees at the bottom (equals bottom_knee phase threshold)",
+      "message": "A little deeper: thighs to parallel"
+    },
+    {
+      "joint": "hip",
+      "rule": "hip angle < 45 degrees at the bottom (equals bottom_hip phase threshold)",
+      "message": "Chest up: sit between your heels"
+    },
+    {
+      "joint": "neck",
+      "rule": "neck angle < 150 degrees (equals neck_line phase threshold)",
+      "message": "Eyes up on the wall"
+    },
+    {
+      "joint": "heel",
+      "rule": "heel rises above its start level by more than the set margin (position flag, not an angle)",
+      "message": "Heels down: press the floor away"
+    },
+    {
+      "joint": "knee",
+      "rule": "knee distance narrower than ankle distance on the way down, front view (position flag, not an angle)",
+      "message": "Knees out: follow your toes"
+    },
+    {
+      "joint": "wrist",
+      "rule": "wrists forward of the shoulders by more than the set margin (position flag, not an angle)",
+      "message": "Hug the weight to your chest"
+    },
+    {
+      "joint": "knee",
+      "rule": "rep shorter than 1.5 s (rushing)",
+      "message": "Slow down: 3 seconds down"
+    }
+  ],
+  "safetyFlags": [
+    "set_weight_down_gently_on_mat_or_towel_no_dropping",
+    "light_weight_3_to_4_reps_in_reserve_for_beginners",
+    "do_not_hold_breath_breathe_out_as_you_stand",
+    "stop_at_depth_where_back_stays_straight_and_heels_stay_down",
+    "box_or_chair_back_against_wall_no_collapsing",
+    "hypertension_light_load_no_breath_holding",
+    "heart_disease_ask_doctor_first",
+    "knee_pain_use_box_and_partial_range",
+    "lower_back_pain_light_load_stay_tall",
+    "shoulder_problems_hold_at_chest_or_bodyweight_squat",
+    "osteoporosis_ask_doctor_avoid_loaded_spinal_rounding",
+    "pregnancy_ask_obstetrician",
+    "postpartum_ask_physiotherapist_first",
+    "recent_surgery_get_approval",
+    "stop_with_chest_pain_dizziness_or_sharp_pain"
+  ],
+  "progressions": [
+    "paused goblet squat (2-3 s) or slow tempo 4 s down",
+    "heavier dumbbell, kettlebell or rucksack within 1-3 reps in reserve",
+    "Bulgarian split squat (Home 22) or barbell front or back squat in a gym (Gym 15)"
+  ],
+  "regressions": [
+    "bodyweight squat with hands clasped at the chest (Home 1)",
+    "box or chair goblet squat to knee height with a light weight",
+    "very light weight with a small heel plate, or holding a counter for balance"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "front, hip height, 2.5 m",
+      "shows": "choosing a weight: bottle, rucksack, dumbbell, kettlebell; 3-4 reps in reserve test",
+      "textOverlay": "Light enough for 3-4 reps left."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, hip height, 2.5 m",
+      "shows": "how to hold the weight at the chest for each object",
+      "textOverlay": "Hug it to your chest."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, hip height, 2.5 m",
+      "shows": "stance: feet shoulder-width, toes slightly out, mat clear",
+      "textOverlay": "Feet shoulder-width, toes out a bit."
+    },
+    {
+      "seconds": 10,
+      "angle": "side, hip height, 2.5 m",
+      "shows": "full rep: sit between the heels, elbows inside the knees, press up",
+      "textOverlay": "Sit down. Stay tall. Stand up."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, hip height, 2.5 m",
+      "shows": "knee tracking: correct versus caving in; elbows push the knees out",
+      "textOverlay": "Knees follow your toes."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, hip height, 2.5 m",
+      "shows": "box or chair goblet squat: touch lightly, chair against a wall",
+      "textOverlay": "Touch the chair. Don't drop."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, hip height, 2.5 m",
+      "shows": "faults: heels lifting, back rounding, weight drifting; heel plate fix",
+      "textOverlay": "Heels down. Chest tall."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, hip height, 2.5 m",
+      "shows": "quiet set-down onto a towel with a 3 s count; breathe out as you stand",
+      "textOverlay": "Set it down softly."
+    }
+  ],
+  "lastResearched": "2026-11-14",
+  "setupSteps": [
+    "Choose the weight. Start with the lightest option that lets you do 10 clean slow reps with 3-4 reps left in the tank (see section 7). If you are new, the first session can be a bodyweight squat with the hands clasped at the chest.",
+    "Mat. A non-slip mat on a flat spot; clear 1 m x 1 m. Put a folded towel or a second mat beside you to set the weight down on.",
+    "Chair or box (optional, recommended for week 1). Place a sturdy chair, stool or box behind you so that its seat is at about knee height (a seat height of about 40-45 cm suits most adults, est.). The chair must not slide: put its back against a wall.",
+    "Pick the weight up safely. Bend the knees and hips to lift it from the floor (a mini squat), do not round the back to pick it up.",
+    "Hold position. Dumbbell: stand it vertically and hold the top end with both hands cupped under the upper head. Kettlebell: grip the horns or the sides of the handle with the bell hanging down. Rucksack: hug it to the chest by the top handle or both arms. Water bottle: both hands around the bottle at the sternum. Hold the weight against the breastbone with the elbows pointing down and slightly in front of the ribs.",
+    "Stance. Feet about shoulder-width apart (sources describe a stance between hip-width and a bit wider than the shoulders, with the toes turned out about 15-30 degrees, est.; the exact numbers vary, so use the width where your knees and hips feel free at depth). If you cannot get deep, try slightly wider and more turned out.",
+    "Stand tall. Ears over shoulders over hips; chest proud (not leaned back), ribs down over the hips, gaze forward at a spot on the wall at eye level.",
+    "Heels. Feet flat; if your heels lift in the squat, put a small stable plate or flat book under each heel (0.5-2 cm; sources vary from about 1.3 to 5 cm for the lift, est.) and work on ankle mobility between sessions (Fit&Well, Human Kinetics, snippets).",
+    "Camera. Phone in landscape at about hip height (80-100 cm, est.), 2-2.5 m to the side (side view), full body from head to floor in frame.",
+    "Warm up 3-5 minutes (est.): march on the spot, hip circles, 5-8 bodyweight squats (Home 1), a few arm circles, and one or two light goblet squats with a lighter object."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Stand tall with the weight at your chest",
+      "action": "Feet shoulder-width, toes turned out slightly, weight held against the breastbone, elbows pointing down.",
+      "feel": "Weight light against the chest, shoulders relaxed, belly gently firm.",
+      "breathing": "Breathe in through the nose.",
+      "tempo": null,
+      "visualCheck": "Side: ear, shoulder, hip and ankle roughly in one line; the weight touches the chest. Front: shoulders level, feet even."
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Brace",
+      "action": "Lightly tighten the tummy as if about to be tapped, ribs down.",
+      "feel": "A firm trunk, not a held breath.",
+      "breathing": "A comfortable breath in; do not hold it for the whole rep.",
+      "tempo": null,
+      "visualCheck": "Side: ribs not flared, lower back neutral (not hollowed)."
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Start sitting down: hips and knees bend together",
+      "action": "Push the hips back and bend the knees at the same time, as if sitting into a chair.",
+      "feel": "Weight spread across the whole foot, thighs working.",
+      "breathing": "Breathe in while you lower.",
+      "tempo": null,
+      "visualCheck": "Side: shins lean forward and the torso leans only a little; the knees travel forward in line with the toes. Front: knees track over the 2nd-3rd toe."
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Keep the chest tall and the elbows low",
+      "action": "As you lower, keep the chest up and the weight against the chest; let the elbows move down between the knees.",
+      "feel": "Tall spine, a slight stretch in the inner thighs and hips.",
+      "breathing": "Continue breathing in.",
+      "tempo": null,
+      "visualCheck": "Side: spine stays in one line (no rounding). Front: elbows approach the inside of the knees; the common cue is elbows to inside of knees, which also pushes the knees out (coaching sources)."
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Reach a comfortable depth",
+      "action": "Go down until the thighs are about parallel to the floor or as deep as you can while the heels stay flat and the back stays straight. Many guides use parallel or hips just below the knees; ACE's listing says continue lowering until the hips drop below the knees (snippet). For a beginner, box or chair height is the depth target. Prioritise form over depth.",
+      "feel": "Strong thighs and bottom, heels pressing down, no pinching in the front of the hips.",
+      "breathing": "Fully in at the bottom.",
+      "tempo": null,
+      "visualCheck": "Side: thighs about parallel (knee angle roughly 80-100 degrees, est.); heels flat; torso still tall. Front: knees over the toes, not caving in; feet flat."
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Press the floor away and stand",
+      "action": "Push through the whole foot, keep the chest tall, and drive the hips and knees up together.",
+      "feel": "Thighs and bottom pushing; the weight stays at the chest.",
+      "breathing": "Breathe out as you stand (do not hold the breath).",
+      "tempo": null,
+      "visualCheck": "Side: hips do not shoot up first; the torso angle stays about the same. Front: knees stay in line with the toes."
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Finish tall",
+      "action": "Stand straight, hips under shoulders, squeeze the bottom gently; do not lean back.",
+      "feel": "Tall and balanced; a calm bottom squeeze.",
+      "breathing": "Breathe in for the next rep.",
+      "tempo": null,
+      "visualCheck": "Side: ears over shoulders over hips; knees extended but not locked back. Front: weight still centred at the chest."
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Set the weight down safely",
+      "action": "After the last rep, bend the knees and hips and place the weight gently on the towel or mat, with a 2-3 s lowering count.",
+      "feel": "Controlled legs, no back rounding.",
+      "breathing": "Breathe out.",
+      "tempo": null,
+      "visualCheck": "Side: back neutral; no drop. The only sound should be a soft touch."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Letting the weight drift away from the chest",
+      "text": "Letting the weight drift away from the chest. Why: the load pulls you forward and the counterbalance benefit is lost (coaching source in snippets). Fix: hug the weight to the breastbone, elbows down."
+    },
+    {
+      "title": "Rounding the back at the bottom",
+      "text": "Rounding the back at the bottom. Why: the trunk loses its brace and loads the lower back. Fix: stop at a depth where the spine stays straight (use a box or chair target), keep the chest proud and the ribs down."
+    },
+    {
+      "title": "Heels lifting",
+      "text": "Heels lifting. Why: tight ankles shift weight to the toes and tip you forward. Fix: a small stable plate or flat book under the heels, slower reps, ankle mobility work between sessions; reduce plate height as the ankle improves (Human Kinetics, Fit&Well, snippets)."
+    },
+    {
+      "title": "Knees caving in",
+      "text": "Knees caving in. Why: dynamic knee valgus is widely treated as a risk factor for knee injuries, although some studies are contradictory (narrative reviews, snippets). Fix: elbows push the knees out, feet turned out slightly, lighter weight, and front-view video check; a band above the knees is a cue some coaches use, but one barbell study found it increased valgus, so do not rely on it."
+    },
+    {
+      "title": "Hips shooting up first",
+      "text": "Hips shooting up first. Why: turns the squat into a good-morning, loading the back instead of the thighs. Fix: slower ascent, \"chest up and hips up together\", lighter weight."
+    },
+    {
+      "title": "Dropping too fast and bouncing",
+      "text": "Dropping too fast and bouncing. Why: loses control and adds noise on the floor below. Fix: 3 s lowering count, 1 s pause at the bottom, and press up smoothly."
+    },
+    {
+      "title": "Chasing depth with a rounded back",
+      "text": "Chasing depth with a rounded back. Why: a \"butt wink\" (tucking of the pelvis) at the bottom puts load on the spine. Fix: stop where the back stays straight; use the box depth; depth comes with practice."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. Why: raises blood pressure and brings dizziness (breathing study PubMed 7741618, carried from earlier items). Fix: breathe in on the way down, out on the way up."
+    },
+    {
+      "title": "Too heavy too soon",
+      "text": "Too heavy too soon. Why: form fails by rep 4-5. Fix: use 3-4 reps in reserve; the last rep should look like the first."
+    },
+    {
+      "title": "Wobbly chair or sliding box",
+      "text": "Wobbly chair or sliding box. Why: a collapse onto the seat jars the spine. Fix: back the chair against a wall, sit lightly and stand, do not drop onto it."
+    }
+  ],
+  "safetyNotes": [
+    "Knee problems: use the box or chair, a partial range, light load; keep pain low; a clinic guideline lists half squats and wall squats for moderate knee osteoarthritis, with changes by the clinician (Sanford Health, snippet). One physiotherapy programme caps pain at 4/10 (Pure Physiotherapy, snippet); that is one clinic's rule, not a general standard.",
+    "Lower back problems: use a light weight, stay tall, keep the box, and stop if pain spreads down a leg or is sharp.",
+    "Shoulder problems: the goblet hold is a low-demand grip, but if holding the weight at the chest hurts, use the bodyweight squat with the arms crossed or a lighter object hugged to the chest.",
+    "High blood pressure and heart disease: breathe out as you stand; do not hold the breath; use light weights and moderate effort; get medical clearance first if you have heart disease or uncontrolled blood pressure.",
+    "Osteoporosis: strength training is generally recommended; avoid loaded rounding or twisting of the spine, and with severe osteoporosis or a prior vertebral fracture ask a clinician first (reviews, snippets).",
+    "Pregnancy and postpartum: squats are commonly used, but ask your obstetrician, midwife or women's health physiotherapist; stop with pelvic heaviness, leaking or pain; box squats and lighter loads are typical modifications.",
+    "Mumbai flat: put the weight down gently, on a mat or towel, with a controlled lowering count; do not drop a dumbbell on a tile floor; avoid the balcony slab."
+  ],
+  "sources": [
+    "2024 Adult Compendium of Physical Activities (Herrmann et al., J Sport Health Sci 2024): conditioning-exercise table, code 02054 (resistance training, multiple exercises, 8-15 repetitions, 3.5); tracking guide; other resistance codes (02050, 02052, 02055) seen only as a search summary. https://pacompendium.com/conditioning-exercise ; https://pacompendium.com/wp-content/uploads/2025/02/4_2024_adult-compendium-tracking-guide-1-2024.pdf ; https://pacompendium.com/wp-content/uploads/2024/02/1_2024-adult-compendium_1_2024.pdf ; https://pubmed.ncbi.nlm.nih.gov/38242596/ (snippets)",
+    "ACE Exercise Library, goblet squat (listing: glutes, thighs, dumbbell; \"lower until the hips are below the knees, then push both feet into the floor\"); NASM exercise library and trainer's coaching guide to the goblet squat. https://acefitness.org/resources/everyone/exercise-library/362/goblet-squat ; https://www.nasm.org/resource-center/exercise-library/goblet-squat ; https://www.nasm.org/resource-center/blog/training/how-to-perform-goblet-squats (snippets)",
+    "Goblet squat technique and starting weights: Myprotein, how to do the goblet squat; Gymshark, goblet squats (water bottle or backpack substitutes); MasterClass, goblet squat guide (2-3 sets of 6-10); Breaking Muscle, how to do the perfect goblet squat; StrengthLog, how to goblet squat; University of Sussex sport, goblet squat PDF; Old School Labs; WebMD. https://myprotein.ie/blog/training/dumbbell-goblet-squat-benefits-technique-common-mistakes ; https://www.gymshark.com/blog/article/goblet-squats ; https://www.masterclass.com/articles/goblet-squat-guide ; https://breakingmuscle.com/learn/how-to-do-the-perfect-goblet-squat ; https://www.strengthlog.com/goblet-squat/ ; https://www.sussex.ac.uk/sport/documents/goblet-squat.pdf ; https://www.oldschoollabs.com/goblet-squat/ ; https://webmd.com/fitness-exercise/how-to-do-goblet-squat (snippets)",
+    "Counterbalance and teaching role (credited to Dan John): Training and Conditioning, coaching the goblet squat and starting with the goblet; Bodybuilding.com, grab-sit-repeat; Onnit, kettlebell goblet squat. https://training-conditioning.com/news/coaching-the-goblet-squat ; https://training-conditioning.com/article/starting-with-the-goblet ; https://bodybuilding.com/fun/grab-sit-repeat-the-simple-power-of-the-goblet-squat.html ; https://www.onnit.com/academy/kettlebell-goblet-squat-how-to-do-it-get-ripped (snippets)",
+    "Box and chair squat regression, knee tracking and heel elevation: fit-pro dumbbell goblet box squat; Fit&Well, heels and ankle mobility; Human Kinetics, heel-raised squats; Sweat, squat guide; Tom's Guide, squat regressions. https://fit-pro.com/article-4889-Dumbbell-Goblet-Box-Squat.html ; https://www.fitandwell.com/exercise/flexibility/cant-keep-your-heels-down-when-you-squat-heres-what-it-means-and-three-exercises-thatll-help-fix-this-common-issue ; https://us.humankinetics.com/blogs/strength-conditioning-fitness/heel-raised-squats-aren-t-bad ; https://sweat.com/blogs/fitness/squats ; https://www.tomsguide.com/wellness/fitness/i-asked-3-personal-trainers-for-3-moves-they-give-clients-who-struggle-to-squat-they-said-these-make-the-biggest-difference (snippets)",
+    "Squat depth, knee angle and knee valgus: PMC4064719 (90 degrees knee flexion definition); Catalyst Athletics, knee valgus in the squat; narrative review of elastic bands and squat kinematics (International Journal of Sports Physical Therapy 2023, DOAJ); Menno Henselmans on valgus research (commentary). https://pmc.ncbi.nlm.nih.gov/articles/PMC4064719 ; https://catalystathletics.com/article/2270/Knee-Valgus-in-the-Squat/ ; https://doaj.org/article/8550b47ef5be492abf62442e4a38dce6 ; https://mennohenselmans.com/is-knee-valgus-actually-a-good-thing-new-research/ (snippets)",
+    "Front versus back squat muscle activity (indirect evidence, goblet squat not studied): Frontiers in Physiology 2025; PubMed 25630691; PMC7831128. https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2025.1727141/full ; https://pubmed.ncbi.nlm.nih.gov/25630691/ ; https://pmc.ncbi.nlm.nih.gov/articles/PMC7831128 (snippets)",
+    "Effort and starting weight: Repetitions in reserve as a load-prescription tool (JSCR 2022, PubMed 36135029); NASM, reps in reserve; Fitness Volt RPE guides; Lyfta RPE guide. https://pubmed.ncbi.nlm.nih.gov/36135029/ ; https://www.nasm.org/resource-center/blog/training/reps-in-reserve-coaching-intensity-with-rir ; https://fitnessvolt.com/rpe-training/guides/rpe-for-beginners/ ; https://www.lyfta.app/articles/rpe-strength-training (snippets)",
+    "Novice resistance training volume (ACSM 2002 position stand summarised; 2009 update): Journal of Clinical Exercise Physiology article; ACSM resistance PDF copy. https://jcep.kglmeridian.com/view/journals/ceph/2/1/article-p8.xml ; https://sfu.ca/~ryand/kin343/ACSMresistance.pdf (snippets, secondary summaries)",
+    "Noise in flats: Snuggym quiet home gym guides; Lazada dumbbell apartment guide; Skelcore noise guides (commercial, decibel claims unsourced and not used). https://snuggym.pages.dev/noise-control-renter-quiet-home-gym-tips ; https://www.skelcore.com/blogs/news/how-to-reduce-noise-from-dropped-weights-in-a-busy-gym-build-a-quieter-better-run-strength-floor (snippets)",
+    "Conditions: ADA position statement (Colberg et al. 2016) https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/ and PMC2992214 https://pmc.ncbi.nlm.nih.gov/articles/PMC2992214 ; osteoporosis: https://pmc.ncbi.nlm.nih.gov/articles/PMC9304091 , RACGP HANDI https://www.racgp.org.au/clinical-resources/clinical-guidelines/handi/conditions/musculoskeletal/exercise-for-preventing-bone-loss-and-reducing-fra ; knee osteoarthritis: Sanford Health guideline https://www.sanfordhealth.org/-/media/org/files/medical-services/physical-therapy/014000-01512-flyer-sosm-knee-osteoarthritis-rehabilitation-guideline-11x8_5.pdf , University of Melbourne physiotherapy library https://healthsciences.unimelb.edu.au/departments/physiotherapy/chesm/video-library/exercise/hip-oa/functionalquadriceps-exercises , Pure Physiotherapy https://purephysiotherapy.co.uk/wp-content/uploads/2024/09/Knee-Osteoarthritis-Advanced-Pure.pdf (snippets)",
+    "Carried from earlier Home research (snippets only, not re-checked here): breathing study PubMed 7741618 https://pubmed.ncbi.nlm.nih.gov/7741618/ ; AHA recommendations https://heart.org/en/healthy-living/exercise-and-physical-activity/fitness-basics/aha-recs-for-physical-activity-in-adults ; Donnelly et al. 2009 ACSM position stand https://pubmed.ncbi.nlm.nih.gov/19127177/ ; hypothyroidism review https://pubmed.ncbi.nlm.nih.gov/37999992/ ; asthma sources https://www.pharmacymagazine.co.uk/cpd-modules/making-a-difference-in-asthma-care/exercise-and-asthma-528343 and https://pubmed.ncbi.nlm.nih.gov/21811185/ ; Vanderbilt knee OA handout https://www.vumc.org/sports-medicine/sites/vumc.org.sports-medicine/files/public_files/documents/Knee_OA_ex_quad.pdf ; Harvard Health, strength training and blood pressure https://www.health.harvard.edu/heart-health/strength-training-and-blood-pressure ; Brooke-Wavell et al. 2022 https://pubmed.ncbi.nlm.nih.gov/35577538/ ; Mayo Clinic pregnancy exercises https://www.mayoclinic.org/healthy-lifestyle/pregnancy-week-by-week/in-depth/pregnancy-exercises/art-20546799 ; NHS Lothian DRAMs guidelines https://apps.nhslothian.scot/files/sites/2/DRAMs-Guidelines.pdf ; ACE HIIT for clinical populations https://www.acefitness.org/certifiednewsarticle/2589/high-intensity-interval-training-for-clinical/ ; Goom, Donnelly and Brockwell 2019 https://athleticsni.org/download/files/Returning_to_running_postnatal_guideline_for_medical_health_and_fitness_professionals_managing_this_population.05.pdf",
+    "NHS, ExRx.net, Harvard Health and Mayo Clinic pages on the goblet squat itself: Not found (searches returned no such pages)."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 28.6,
+      "70kg": 24.5,
+      "80kg": 21.4
+    },
+    "per300kcal": {
+      "60kg": 85.7,
+      "70kg": 73.5,
+      "80kg": 64.3
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "strength",
+    "muscle",
+    "general_fitness",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "short_sessions",
+    "no_gym",
+    "low_cost_equipment",
+    "small_flat",
+    "neighbours_below_with_gentle_set_down",
+    "low_ceiling",
+    "circuit"
+  ],
+  "swapsByAccess": {
+    "none": "Bodyweight squat to a chair (Home 1) or wall sit (Home 10, not yet researched); or a rucksack goblet squat",
+    "home_equipment": "Resistance band squat (Home 24, not yet researched), dumbbell Romanian deadlift (Home 16, not yet researched) or Bulgarian split squat (Home 22, not yet researched)",
+    "basic_gym": "Leg press (Gym 10), or a dumbbell goblet squat on the gym floor",
+    "full_gym": "Leg press (Gym 10), hack squat machine (Gym 13) or Smith machine squat (Gym 14); barbell back squat (Gym 15) when ready"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "Light weight, 3-4 reps in reserve, breathe out as you stand and never hold the breath; avoid straining; check blood pressure is controlled; ask a doctor if readings are very high or if medicines cause dizziness",
+      "source": "Harvard Health strength training and blood pressure (carried); breathing study PubMed 7741618 (carried); goblet-squat-specific advice Not found"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "Resistance training 2-3 non-consecutive days a week is recommended; usual glucose checks and fast carbohydrate on hand if on insulin or sulfonylureas; check feet and shoes; start light",
+      "source": "ADA position statement 2016, secondary summary (PMC5317029, carried; PMC2992214 snippet); goblet-squat-specific advice Not found"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "Only with clearance and a plan; light loads, no breath-holding, stop with chest discomfort, dizziness or breathlessness",
+      "source": "ACE HIIT for clinical populations (carried, snippet); goblet-squat-specific clearance Not found"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "Fits regular exercise advice; start light and build up",
+      "source": "AHA recommendations (carried); goblet-squat-specific advice Not found"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Start with the box or chair goblet squat and a light weight, slow reps, 60-90 s rest; build volume gradually; combine with walking",
+      "source": "ACSM weight position stand (Donnelly 2009, carried); goblet-squat-specific advice Not found"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "Standard strength guidance applies; start with 2 sets and build; goblet-squat-specific advice Not found",
+      "source": "Not found"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "Train as usual if controlled; start light if fatigued; stop for palpitations or faintness",
+      "source": "Systematic review 2023 (PubMed 37999992, carried)"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Warm up, reliever nearby; strength work is usually well tolerated; stop and use the reliever if wheeze or cough starts",
+      "source": "Asthma UK tips via Pharmacy Magazine CPD (carried); PubMed 21811185 (carried)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Box or chair, partial range, light weight, knees over toes, pain low; one physiotherapy programme keeps pain at 4/10 or less; stop with sharp or increasing pain",
+      "source": "Sanford Health knee OA guideline (snippet); University of Melbourne physiotherapy library (snippet); Pure Physiotherapy knee OA programme (snippet); Vanderbilt knee OA handout (carried)"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Light weight, stay tall, keep the chest up; use the box; stop if pain spreads down a leg; avoid rounding under load",
+      "source": "Goblet-squat-specific clinical guidance Not found; general coaching sources (snippets)"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "modify",
+      "change": "Hold the weight at the chest with elbows down (low-demand grip), or use a bodyweight squat; stop with pinching or sharp pain",
+      "source": "Goblet-squat-specific advice Not found"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "ask_doctor",
+      "change": "Loaded strength training is generally recommended for bone; avoid loaded spinal rounding and twisting; with severe osteoporosis or a vertebral fracture, get individual advice first",
+      "source": "PMC9304091 (snippet); RACGP HANDI exercise for bone loss (snippet); BMJ Open paper (snippet); Brooke-Wavell et al. 2022 (carried)"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "ask_doctor",
+      "change": "Ask your obstetrician or midwife; squats are commonly used, with lighter loads and a box; stop with pain, leaking, dizziness or heaviness; avoid lying flat on the back",
+      "source": "Mayo Clinic pregnancy exercises (carried); ACOG's own wording Not found"
+    },
+    {
+      "condition": "postpartum",
+      "status": "ask_doctor",
+      "change": "Ask a women's health physiotherapist; start with bodyweight squats and breathing; stop with leaking, heaviness or pain",
+      "source": "Goom, Donnelly and Brockwell 2019 (carried); NHS Lothian DRAMs (carried)"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Only with surgeon or physiotherapist approval, especially after leg, hip, spine, abdominal, pelvic or heart surgery",
+      "source": "Not found"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "home",
+      "gym"
+    ],
+    "bodyRegion": [
+      "lower"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "muscle",
+      "strength"
+    ],
+    "intensity": "moderate",
+    "noise": "quiet",
+    "space": "mat_only",
+    "typicalMinutes": 10,
+    "kcalPer10min70kg": 40.8,
+    "difficulty1to5": 2,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Home",
+    "Gym",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Strength",
+    "Legs",
+    "Glutes",
+    "Rep counter",
+    "10–20 min"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-11-14",
+      "file": "FitPlate_Fitness_2026-11-14.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

@@ -5,6 +5,7 @@ import item_adho_mukha_svanasana from './adho-mukha-svanasana.json';
 import item_assisted_pull_up_dip_machine from './assisted-pull-up-dip-machine.json';
 import item_balasana_childs_pose from './balasana-childs-pose.json';
 import item_barbell_back_squat from './barbell-back-squat.json';
+import item_barbell_bent_over_row from './barbell-bent-over-row.json';
 import item_barbell_deadlift from './barbell-deadlift.json';
 import item_barbell_flat_bench_press from './barbell-flat-bench-press.json';
 import item_bhujangasana_cobra_pose from './bhujangasana-cobra-pose.json';
@@ -17,6 +18,7 @@ import item_chair_bench_tricep_dips from './chair-bench-tricep-dips.json';
 import item_chest_press_machine from './chest-press-machine.json';
 import item_dead_bug from './dead-bug.json';
 import item_desk_neck_shoulder_release from './desk-neck-shoulder-release.json';
+import item_dumbbell_goblet_squat from './dumbbell-goblet-squat.json';
 import item_elliptical_cross_trainer from './elliptical-cross-trainer.json';
 import item_figure_4_glute_stretch from './figure-4-glute-stretch.json';
 import item_glute_bridge from './glute-bridge.json';
@@ -47,9 +49,11 @@ import item_stationary_bike from './stationary-bike.json';
 import item_step_ups_stair_or_bench from './step-ups-stair-or-bench.json';
 import item_superman_back_raise from './superman-back-raise.json';
 import item_surya_namaskar from './surya-namaskar.json';
+import item_t_bar_row from './t-bar-row.json';
 import item_thoracic_rotation_chest_opener from './thoracic-rotation-chest-opener.json';
 import item_treadmill from './treadmill.json';
 import item_trikonasana_triangle_pose from './trikonasana-triangle-pose.json';
+import item_virabhadrasana_warrior_i_ii from './virabhadrasana-warrior-i-ii.json';
 import item_vrikshasana_tree_pose from './vrikshasana-tree-pose.json';
 import item_wall_sit from './wall-sit.json';
 import item_wrist_forearm_stretch from './wrist-forearm-stretch.json';
@@ -59,6 +63,7 @@ export const items: Exercise[] = [
   item_assisted_pull_up_dip_machine as unknown as Exercise,
   item_balasana_childs_pose as unknown as Exercise,
   item_barbell_back_squat as unknown as Exercise,
+  item_barbell_bent_over_row as unknown as Exercise,
   item_barbell_deadlift as unknown as Exercise,
   item_barbell_flat_bench_press as unknown as Exercise,
   item_bhujangasana_cobra_pose as unknown as Exercise,
@@ -71,6 +76,7 @@ export const items: Exercise[] = [
   item_chest_press_machine as unknown as Exercise,
   item_dead_bug as unknown as Exercise,
   item_desk_neck_shoulder_release as unknown as Exercise,
+  item_dumbbell_goblet_squat as unknown as Exercise,
   item_elliptical_cross_trainer as unknown as Exercise,
   item_figure_4_glute_stretch as unknown as Exercise,
   item_glute_bridge as unknown as Exercise,
@@ -101,9 +107,11 @@ export const items: Exercise[] = [
   item_step_ups_stair_or_bench as unknown as Exercise,
   item_superman_back_raise as unknown as Exercise,
   item_surya_namaskar as unknown as Exercise,
+  item_t_bar_row as unknown as Exercise,
   item_thoracic_rotation_chest_opener as unknown as Exercise,
   item_treadmill as unknown as Exercise,
   item_trikonasana_triangle_pose as unknown as Exercise,
+  item_virabhadrasana_warrior_i_ii as unknown as Exercise,
   item_vrikshasana_tree_pose as unknown as Exercise,
   item_wall_sit as unknown as Exercise,
   item_wrist_forearm_stretch as unknown as Exercise,

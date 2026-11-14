@@ -5,6 +5,7 @@ import { Linking, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { ScreenTop } from '../../components/vendors/kit';
+import { isEnabled } from '../../config/featureFlags';
 import { GradientButton, PressableScale } from '../../components/ui';
 import { researchExercises, researchFitnessGuides } from '../../data/research';
 import { useStore } from '../../lib/store';
@@ -227,6 +228,9 @@ function ExerciseBody({ e }: { e: Exercise }) {
       </Text>
 
       <GradientButton title="▶  Start workout" style={{ marginTop: 16 }} onPress={() => router.push({ pathname: '/workout/[id]', params: { id: e.id } })} />
+      {isEnabled('cameraWorkout') && e.repCounter && e.repCounter.mode !== 'none' ? (
+        <GradientButton title="Camera: count and record" variant="glass" style={{ marginTop: 10 }} onPress={() => router.push({ pathname: '/camera/[id]', params: { id: e.id } })} />
+      ) : null}
       <GradientButton title={`Log ${shortExerciseName(e.name)}`} variant="glass" style={{ marginTop: 10 }} onPress={() => router.push({ pathname: '/log', params: { tab: 'exercise', exercise: e.id } })} />
     </ScrollView>
   );

@@ -1,6 +1,6 @@
 {
   "schema": "fitplate.links.v1",
-  "generatedFor": "Day25",
+  "generatedFor": "Day26",
   "goodSourceDishes": {
     "biotin": [
       {
@@ -1878,6 +1878,129 @@
   ],
   "drinks": [
     {
+      "id": "dehydration-signs-and-the-urine-colour-check",
+      "drinks": [
+        {
+          "name": "Plain water",
+          "countsAsWaterPct": 100,
+          "notes": "Everyday drink; not enough alone for heavy diarrhoea"
+        },
+        {
+          "name": "WHO/UNICEF reduced-osmolarity ORS",
+          "countsAsWaterPct": 100,
+          "notes": "75 mmol/L sodium, 75 mmol/L glucose, 20 mmol/L potassium, 245 mOsm/L; for diarrhoea, vomiting or heat illness; made with stated water volume; not a daily drink"
+        },
+        {
+          "name": "Home ORS (stop-gap)",
+          "countsAsWaterPct": 100,
+          "notes": "Half level teaspoon salt and 6 level teaspoons sugar per litre (secondary, unverified); only if no sachet"
+        },
+        {
+          "name": "Sports or electrolyte drink",
+          "countsAsWaterPct": 100,
+          "notes": "About 18 mmol/L sodium, 6% carbohydrate (secondary); not a diarrhoea treatment"
+        },
+        {
+          "name": "Tender coconut water",
+          "countsAsWaterPct": 100,
+          "notes": "About 6.6 mmol/L sodium, 50 mmol/L potassium (secondary, unverified); caution with potassium limits (Topic 19)"
+        },
+        {
+          "name": "Chaas (salted)",
+          "countsAsWaterPct": 100,
+          "notes": "est.; sodium depends on salt added (Topic 18)"
+        },
+        {
+          "name": "Nimbu pani",
+          "countsAsWaterPct": 100,
+          "notes": "est.; sugar and salt vary"
+        },
+        {
+          "name": "Packaged fruit juice",
+          "countsAsWaterPct": 50,
+          "notes": "est.; product policy; avoid in diarrhoea"
+        },
+        {
+          "name": "Soft or cold drink (sugary)",
+          "countsAsWaterPct": 50,
+          "notes": "est.; product policy; avoid in diarrhoea"
+        },
+        {
+          "name": "Alcohol",
+          "countsAsWaterPct": 0,
+          "notes": "Not counted; diuretic effect"
+        }
+      ],
+      "drinksTable": [
+        {
+          "drink": "Plain water",
+          "counts": "Yes, 100%",
+          "notes": "None",
+          "typicalServingMl": null
+        },
+        {
+          "drink": "WHO/UNICEF reduced-osmolarity ORS",
+          "counts": "Yes (rehydration therapy)",
+          "notes": "75 mmol/L Na (about 1,725 mg per litre, calc.), 75 mmol/L glucose (13.5 g/L), 20 mmol/L K, 245 mOsm/L",
+          "typicalServingMl": null
+        },
+        {
+          "drink": "ORS of 45 mmol/L Na (study product)",
+          "counts": "Yes",
+          "notes": "45.0 mmol/L Na, about 2.5% carbohydrate",
+          "typicalServingMl": null
+        },
+        {
+          "drink": "Home ORS (stop-gap, secondary)",
+          "counts": "Yes",
+          "notes": "About half a level teaspoon salt plus 6 level teaspoons sugar per litre (Topic 31; about 1,200 mg Na, calc.; recipes vary, news says 2 tsp per glass; unverified)",
+          "typicalServingMl": null
+        },
+        {
+          "drink": "Sports or electrolyte drink",
+          "counts": "Yes",
+          "notes": "About 18.3 mmol/L Na, 6% carbohydrate (Bell and Spriet; Gatorade retail about 45-49 mg Na per 100 ml, Topic 32)",
+          "typicalServingMl": null
+        },
+        {
+          "drink": "Tender coconut water",
+          "counts": "Yes",
+          "notes": "About 6.6 mmol/L Na, about 50.2 mmol/L K (Bell and Spriet; other sources differ, Topic 30); sugar not found",
+          "typicalServingMl": {
+            "min": 19,
+            "max": 19
+          }
+        },
+        {
+          "drink": "Chaas (salted) / nimbu pani with salt",
+          "counts": "Yes",
+          "notes": "Not found (depends on salt added; see Topic 18)",
+          "typicalServingMl": null
+        },
+        {
+          "drink": "Milk, chai, coffee",
+          "counts": "Yes (est. 100%)",
+          "notes": "Not a rehydration drink for diarrhoea",
+          "typicalServingMl": {
+            "min": 30,
+            "max": 30
+          }
+        },
+        {
+          "drink": "Juice and soft drinks",
+          "counts": "Partly (est. 50%)",
+          "notes": "High sugar; sugary drinks may worsen diarrhoea (WHO-derived, snippet)",
+          "typicalServingMl": null
+        },
+        {
+          "drink": "Alcohol",
+          "counts": "No (0%)",
+          "notes": "Diuretic effect",
+          "typicalServingMl": null
+        }
+      ]
+    },
+    {
       "id": "electrolytes-hydration-exercise",
       "drinks": [
         {
@@ -2386,6 +2509,266 @@
           "typicalServingMl": null
         }
       ]
+    },
+    {
+      "id": "water-food-and-drinks",
+      "drinks": [
+        {
+          "name": "Plain water",
+          "countsAsWaterPct": 100,
+          "notes": "Reference drink; 250 ml glass"
+        },
+        {
+          "name": "Chai (milk tea, up to 2 tsp sugar)",
+          "countsAsWaterPct": 100,
+          "notes": "est.; 120 ml; caffeine 30-65 mg per cup (secondary); about 8-10 g sugar; sodium about 10 mg, potassium about 45 mg (est.); more than 2 tsp sugar counts 50%"
+        },
+        {
+          "name": "Black or green tea, no sugar",
+          "countsAsWaterPct": 100,
+          "notes": "est.; 150 ml; caffeine 30-65 mg (secondary); first 4 tea/coffee cups full"
+        },
+        {
+          "name": "Filter coffee with milk",
+          "countsAsWaterPct": 100,
+          "notes": "est.; 100-150 ml; caffeine 80-120 mg per 150 ml brewed (secondary); beyond 4 cups counts 50%"
+        },
+        {
+          "name": "Instant coffee with milk",
+          "countsAsWaterPct": 100,
+          "notes": "est.; 150 ml; caffeine 50-65 mg (secondary)"
+        },
+        {
+          "name": "Milk, whole cow",
+          "countsAsWaterPct": 100,
+          "notes": "200 ml; IFCT 2017 water 86.64%, sodium 25.4 mg/100 g, potassium 115 mg/100 g; BHI about 1.5 (Maughan 2016)"
+        },
+        {
+          "name": "Chaas (salted buttermilk)",
+          "countsAsWaterPct": 100,
+          "notes": "est.; 200 ml; sodium about 170 mg and potassium about 284 mg (secondary, unverified); sodium varies with salt (Topic 18)"
+        },
+        {
+          "name": "Sweet lassi",
+          "countsAsWaterPct": 100,
+          "notes": "est.; 200 ml; about 16-20 g sugar (est.); sodium 50-80 mg/100 ml (secondary, unverified); counts 50% if free sugar above 8 g/100 ml"
+        },
+        {
+          "name": "Tender coconut water",
+          "countsAsWaterPct": 100,
+          "notes": "200 ml; IFCT 2017 water 95.77%, potassium 215 mg/100 g, sodium 28 mg/100 g, carbohydrate 3.16 g/100 g; kidney and potassium-medicine users need doctor advice (Topic 19)"
+        },
+        {
+          "name": "Nimbu pani (homemade)",
+          "countsAsWaterPct": 100,
+          "notes": "est.; 250 ml; about 8-10 g sugar and about 200 mg sodium (est.); reduce sugar and salt"
+        },
+        {
+          "name": "Sugarcane juice",
+          "countsAsWaterPct": 50,
+          "notes": "est., product policy; 200 ml; IFCT 2017 water 85.54%, 13.1 g carbohydrate/100 g, about 26 g sugar per glass; ICMR-NIN 2024 says minimise (secondary)"
+        },
+        {
+          "name": "Fresh fruit juice, no added sugar",
+          "countsAsWaterPct": 100,
+          "notes": "est.; 150 ml; prefer whole fruit; ICMR-NIN 2024: use 100-150 g fruit (secondary)"
+        },
+        {
+          "name": "Packaged fruit juice",
+          "countsAsWaterPct": 50,
+          "notes": "est., product policy; 150-200 ml; about 10 g sugar/100 ml (est.); WHO counts juice sugar as free sugar"
+        },
+        {
+          "name": "Soft drink or cola",
+          "countsAsWaterPct": 50,
+          "notes": "est., product policy; 250-330 ml; about 10.6 g sugar/100 ml (est.); cola caffeine about 40 mg per 355 ml (EUFIC); ICMR-NIN: not a substitute for water (secondary)"
+        },
+        {
+          "name": "ORS (WHO)",
+          "countsAsWaterPct": 100,
+          "notes": "For diarrhoea, vomiting or heat illness only; 75 mmol/L sodium (about 172 mg/100 ml, calc.), 75 mmol/L glucose; follow sachet label"
+        },
+        {
+          "name": "Sports or electrolyte drink",
+          "countsAsWaterPct": 100,
+          "notes": "est.; use label; only for long or very sweaty sessions; 50% if sugar above 8 g/100 ml"
+        },
+        {
+          "name": "Alcohol",
+          "countsAsWaterPct": 0,
+          "notes": "Not counted; higher-strength alcohol raises urine output"
+        }
+      ],
+      "drinksTable": [
+        {
+          "drink": "Plain water",
+          "counts": "250 (glass)",
+          "notes": "Yes, 100%",
+          "typicalServingMl": {
+            "min": 100,
+            "max": 100
+          }
+        },
+        {
+          "drink": "Chai (milk tea, 2 tsp sugar)",
+          "counts": "120",
+          "notes": "Yes, 100% (est.) if sugar up to 2 tsp",
+          "typicalServingMl": {
+            "min": 88,
+            "max": 92
+          }
+        },
+        {
+          "drink": "Black or green tea, no sugar",
+          "counts": "150",
+          "notes": "Yes, 100% (est.)",
+          "typicalServingMl": {
+            "min": 99,
+            "max": 99
+          }
+        },
+        {
+          "drink": "Filter coffee with milk and sugar",
+          "counts": "100-150",
+          "notes": "Yes, 100% (est.) up to 4 cups",
+          "typicalServingMl": {
+            "min": 88,
+            "max": 92
+          }
+        },
+        {
+          "drink": "Instant coffee, milk",
+          "counts": "150",
+          "notes": "Yes, 100% (est.)",
+          "typicalServingMl": {
+            "min": 90,
+            "max": 90
+          }
+        },
+        {
+          "drink": "Milk, whole cow",
+          "counts": "200",
+          "notes": "Yes, 100% (est.)",
+          "typicalServingMl": {
+            "min": 86.64,
+            "max": 86.64
+          }
+        },
+        {
+          "drink": "Milk, whole buffalo",
+          "counts": "200",
+          "notes": "Yes, 100% (est.)",
+          "typicalServingMl": {
+            "min": 80.68,
+            "max": 80.68
+          }
+        },
+        {
+          "drink": "Chaas (salted buttermilk)",
+          "counts": "200",
+          "notes": "Yes, 100%",
+          "typicalServingMl": {
+            "min": 95,
+            "max": 97
+          }
+        },
+        {
+          "drink": "Plain curd (dahi), bowl",
+          "counts": "100 g",
+          "notes": "Partly as food water",
+          "typicalServingMl": {
+            "min": 85,
+            "max": 90
+          }
+        },
+        {
+          "drink": "Sweet lassi",
+          "counts": "200",
+          "notes": "Yes, 100% (est.) if free sugar up to 8 g/100 ml, else 50%",
+          "typicalServingMl": {
+            "min": 80,
+            "max": 85
+          }
+        },
+        {
+          "drink": "Tender coconut water",
+          "counts": "200",
+          "notes": "Yes, 100%",
+          "typicalServingMl": {
+            "min": 95.77,
+            "max": 95.77
+          }
+        },
+        {
+          "drink": "Nimbu pani (2 tsp sugar, pinch salt)",
+          "counts": "250",
+          "notes": "Yes, 100% (est.)",
+          "typicalServingMl": {
+            "min": 96,
+            "max": 96
+          }
+        },
+        {
+          "drink": "Sugarcane juice",
+          "counts": "200",
+          "notes": "Counts at 50% (est., sugar over 8 g/100 ml)",
+          "typicalServingMl": {
+            "min": 85.54,
+            "max": 85.54
+          }
+        },
+        {
+          "drink": "Fresh orange juice (homemade)",
+          "counts": "150",
+          "notes": "Yes, 100% (est.) if no sugar added",
+          "typicalServingMl": {
+            "min": 89,
+            "max": 89
+          }
+        },
+        {
+          "drink": "Packaged fruit juice",
+          "counts": "150-200",
+          "notes": "Counts at 50% (est.)",
+          "typicalServingMl": {
+            "min": 85,
+            "max": 88
+          }
+        },
+        {
+          "drink": "Soft drink / cola",
+          "counts": "250-330",
+          "notes": "Counts at 50% (est.)",
+          "typicalServingMl": {
+            "min": 89,
+            "max": 89
+          }
+        },
+        {
+          "drink": "ORS (WHO reduced osmolarity, mixed)",
+          "counts": "200",
+          "notes": "Yes, 100%, for illness only",
+          "typicalServingMl": {
+            "min": 98,
+            "max": 98
+          }
+        },
+        {
+          "drink": "Sports / electrolyte drink",
+          "counts": "250-500",
+          "notes": "Yes, 100% (est.) if sugar up to 8 g/100 ml",
+          "typicalServingMl": {
+            "min": 92,
+            "max": 95
+          }
+        },
+        {
+          "drink": "Beer or other alcohol",
+          "counts": "n/a",
+          "notes": "No, 0%",
+          "typicalServingMl": null
+        }
+      ]
     }
   ],
   "met": [
@@ -2407,6 +2790,11 @@
     {
       "exerciseId": "barbell-back-squat",
       "name": "Barbell back squat",
+      "met": 3.5
+    },
+    {
+      "exerciseId": "barbell-bent-over-row",
+      "name": "Barbell bent-over row",
       "met": 3.5
     },
     {
@@ -2468,6 +2856,11 @@
       "exerciseId": "desk-neck-shoulder-release",
       "name": "Desk neck and shoulder release",
       "met": 2.3
+    },
+    {
+      "exerciseId": "dumbbell-goblet-squat",
+      "name": "Dumbbell goblet squat",
+      "met": 3.5
     },
     {
       "exerciseId": "elliptical-cross-trainer",
@@ -2620,6 +3013,11 @@
       "met": 3.5
     },
     {
+      "exerciseId": "t-bar-row",
+      "name": "T-bar row (landmine and chest-supported)",
+      "met": 3.5
+    },
+    {
       "exerciseId": "thoracic-rotation-chest-opener",
       "name": "Thoracic rotation and chest opener",
       "met": 2.3
@@ -2632,6 +3030,11 @@
     {
       "exerciseId": "trikonasana-triangle-pose",
       "name": "Trikonasana (Triangle pose)",
+      "met": 2.3
+    },
+    {
+      "exerciseId": "virabhadrasana-warrior-i-ii",
+      "name": "Virabhadrasana I and II (Warrior I and II)",
       "met": 2.3
     },
     {

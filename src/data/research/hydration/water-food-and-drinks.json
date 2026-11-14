@@ -1,0 +1,326 @@
+{
+  "id": "water-food-and-drinks",
+  "type": "hydration",
+  "name": "Topic 33: Water from food and drinks (tea, coffee, coconut water, buttermilk)",
+  "defaultTargetFormula": "No separate target. Uses Topic 30 drinks target (male 2500 ml, female 2000 ml, est.). Logged drink counts_as_water_pct x ml. Rules (est.): plain water, unsweetened tea/coffee, milk, chaas, tender coconut water, lemon water with free sugar <= 8 g/100 ml = 100%; first 4 tea/coffee cups = 100%, beyond 4 cups = 50%; drinks with free sugar > 8 g/100 ml (sugarcane juice, packaged juice, soft drinks) = 50%; alcohol = 0%. Food water (about 20% of total water, NASEM/Mayo secondary) is shown as information only and is not added to the goal. ICMR-NIN 2020 water values Not found.",
+  "inputs": [
+    "weight_kg",
+    "sex",
+    "activity_level",
+    "workout_minutes",
+    "hot_weather"
+  ],
+  "minMl": 1500,
+  "maxMl": 4500,
+  "quickAddPresetsMl": [
+    100,
+    120,
+    150,
+    200,
+    250,
+    330,
+    500,
+    750,
+    1000
+  ],
+  "drinks": [
+    {
+      "name": "Plain water",
+      "countsAsWaterPct": 100,
+      "notes": "Reference drink; 250 ml glass"
+    },
+    {
+      "name": "Chai (milk tea, up to 2 tsp sugar)",
+      "countsAsWaterPct": 100,
+      "notes": "est.; 120 ml; caffeine 30-65 mg per cup (secondary); about 8-10 g sugar; sodium about 10 mg, potassium about 45 mg (est.); more than 2 tsp sugar counts 50%"
+    },
+    {
+      "name": "Black or green tea, no sugar",
+      "countsAsWaterPct": 100,
+      "notes": "est.; 150 ml; caffeine 30-65 mg (secondary); first 4 tea/coffee cups full"
+    },
+    {
+      "name": "Filter coffee with milk",
+      "countsAsWaterPct": 100,
+      "notes": "est.; 100-150 ml; caffeine 80-120 mg per 150 ml brewed (secondary); beyond 4 cups counts 50%"
+    },
+    {
+      "name": "Instant coffee with milk",
+      "countsAsWaterPct": 100,
+      "notes": "est.; 150 ml; caffeine 50-65 mg (secondary)"
+    },
+    {
+      "name": "Milk, whole cow",
+      "countsAsWaterPct": 100,
+      "notes": "200 ml; IFCT 2017 water 86.64%, sodium 25.4 mg/100 g, potassium 115 mg/100 g; BHI about 1.5 (Maughan 2016)"
+    },
+    {
+      "name": "Chaas (salted buttermilk)",
+      "countsAsWaterPct": 100,
+      "notes": "est.; 200 ml; sodium about 170 mg and potassium about 284 mg (secondary, unverified); sodium varies with salt (Topic 18)"
+    },
+    {
+      "name": "Sweet lassi",
+      "countsAsWaterPct": 100,
+      "notes": "est.; 200 ml; about 16-20 g sugar (est.); sodium 50-80 mg/100 ml (secondary, unverified); counts 50% if free sugar above 8 g/100 ml"
+    },
+    {
+      "name": "Tender coconut water",
+      "countsAsWaterPct": 100,
+      "notes": "200 ml; IFCT 2017 water 95.77%, potassium 215 mg/100 g, sodium 28 mg/100 g, carbohydrate 3.16 g/100 g; kidney and potassium-medicine users need doctor advice (Topic 19)"
+    },
+    {
+      "name": "Nimbu pani (homemade)",
+      "countsAsWaterPct": 100,
+      "notes": "est.; 250 ml; about 8-10 g sugar and about 200 mg sodium (est.); reduce sugar and salt"
+    },
+    {
+      "name": "Sugarcane juice",
+      "countsAsWaterPct": 50,
+      "notes": "est., product policy; 200 ml; IFCT 2017 water 85.54%, 13.1 g carbohydrate/100 g, about 26 g sugar per glass; ICMR-NIN 2024 says minimise (secondary)"
+    },
+    {
+      "name": "Fresh fruit juice, no added sugar",
+      "countsAsWaterPct": 100,
+      "notes": "est.; 150 ml; prefer whole fruit; ICMR-NIN 2024: use 100-150 g fruit (secondary)"
+    },
+    {
+      "name": "Packaged fruit juice",
+      "countsAsWaterPct": 50,
+      "notes": "est., product policy; 150-200 ml; about 10 g sugar/100 ml (est.); WHO counts juice sugar as free sugar"
+    },
+    {
+      "name": "Soft drink or cola",
+      "countsAsWaterPct": 50,
+      "notes": "est., product policy; 250-330 ml; about 10.6 g sugar/100 ml (est.); cola caffeine about 40 mg per 355 ml (EUFIC); ICMR-NIN: not a substitute for water (secondary)"
+    },
+    {
+      "name": "ORS (WHO)",
+      "countsAsWaterPct": 100,
+      "notes": "For diarrhoea, vomiting or heat illness only; 75 mmol/L sodium (about 172 mg/100 ml, calc.), 75 mmol/L glucose; follow sachet label"
+    },
+    {
+      "name": "Sports or electrolyte drink",
+      "countsAsWaterPct": 100,
+      "notes": "est.; use label; only for long or very sweaty sessions; 50% if sugar above 8 g/100 ml"
+    },
+    {
+      "name": "Alcohol",
+      "countsAsWaterPct": 0,
+      "notes": "Not counted; higher-strength alcohol raises urine output"
+    }
+  ],
+  "drinksTable": [
+    {
+      "drink": "Plain water",
+      "counts": "250 (glass)",
+      "notes": "Yes, 100%",
+      "typicalServingMl": {
+        "min": 100,
+        "max": 100
+      }
+    },
+    {
+      "drink": "Chai (milk tea, 2 tsp sugar)",
+      "counts": "120",
+      "notes": "Yes, 100% (est.) if sugar up to 2 tsp",
+      "typicalServingMl": {
+        "min": 88,
+        "max": 92
+      }
+    },
+    {
+      "drink": "Black or green tea, no sugar",
+      "counts": "150",
+      "notes": "Yes, 100% (est.)",
+      "typicalServingMl": {
+        "min": 99,
+        "max": 99
+      }
+    },
+    {
+      "drink": "Filter coffee with milk and sugar",
+      "counts": "100-150",
+      "notes": "Yes, 100% (est.) up to 4 cups",
+      "typicalServingMl": {
+        "min": 88,
+        "max": 92
+      }
+    },
+    {
+      "drink": "Instant coffee, milk",
+      "counts": "150",
+      "notes": "Yes, 100% (est.)",
+      "typicalServingMl": {
+        "min": 90,
+        "max": 90
+      }
+    },
+    {
+      "drink": "Milk, whole cow",
+      "counts": "200",
+      "notes": "Yes, 100% (est.)",
+      "typicalServingMl": {
+        "min": 86.64,
+        "max": 86.64
+      }
+    },
+    {
+      "drink": "Milk, whole buffalo",
+      "counts": "200",
+      "notes": "Yes, 100% (est.)",
+      "typicalServingMl": {
+        "min": 80.68,
+        "max": 80.68
+      }
+    },
+    {
+      "drink": "Chaas (salted buttermilk)",
+      "counts": "200",
+      "notes": "Yes, 100%",
+      "typicalServingMl": {
+        "min": 95,
+        "max": 97
+      }
+    },
+    {
+      "drink": "Plain curd (dahi), bowl",
+      "counts": "100 g",
+      "notes": "Partly as food water",
+      "typicalServingMl": {
+        "min": 85,
+        "max": 90
+      }
+    },
+    {
+      "drink": "Sweet lassi",
+      "counts": "200",
+      "notes": "Yes, 100% (est.) if free sugar up to 8 g/100 ml, else 50%",
+      "typicalServingMl": {
+        "min": 80,
+        "max": 85
+      }
+    },
+    {
+      "drink": "Tender coconut water",
+      "counts": "200",
+      "notes": "Yes, 100%",
+      "typicalServingMl": {
+        "min": 95.77,
+        "max": 95.77
+      }
+    },
+    {
+      "drink": "Nimbu pani (2 tsp sugar, pinch salt)",
+      "counts": "250",
+      "notes": "Yes, 100% (est.)",
+      "typicalServingMl": {
+        "min": 96,
+        "max": 96
+      }
+    },
+    {
+      "drink": "Sugarcane juice",
+      "counts": "200",
+      "notes": "Counts at 50% (est., sugar over 8 g/100 ml)",
+      "typicalServingMl": {
+        "min": 85.54,
+        "max": 85.54
+      }
+    },
+    {
+      "drink": "Fresh orange juice (homemade)",
+      "counts": "150",
+      "notes": "Yes, 100% (est.) if no sugar added",
+      "typicalServingMl": {
+        "min": 89,
+        "max": 89
+      }
+    },
+    {
+      "drink": "Packaged fruit juice",
+      "counts": "150-200",
+      "notes": "Counts at 50% (est.)",
+      "typicalServingMl": {
+        "min": 85,
+        "max": 88
+      }
+    },
+    {
+      "drink": "Soft drink / cola",
+      "counts": "250-330",
+      "notes": "Counts at 50% (est.)",
+      "typicalServingMl": {
+        "min": 89,
+        "max": 89
+      }
+    },
+    {
+      "drink": "ORS (WHO reduced osmolarity, mixed)",
+      "counts": "200",
+      "notes": "Yes, 100%, for illness only",
+      "typicalServingMl": {
+        "min": 98,
+        "max": 98
+      }
+    },
+    {
+      "drink": "Sports / electrolyte drink",
+      "counts": "250-500",
+      "notes": "Yes, 100% (est.) if sugar up to 8 g/100 ml",
+      "typicalServingMl": {
+        "min": 92,
+        "max": 95
+      }
+    },
+    {
+      "drink": "Beer or other alcohol",
+      "counts": "n/a",
+      "notes": "No, 0%",
+      "typicalServingMl": null
+    }
+  ],
+  "reminderRules": [
+    {
+      "rule": "Use Topic 30 reminders (up to 6 per day, 09:30 to 19:30, skip if a drink was logged in the last 60 minutes, none after 21:00)",
+      "source": "FitPlate design (est.), Topic 30"
+    },
+    {
+      "rule": "After 3 tea/coffee logs in a day, suggest water or chaas for the next reminder",
+      "source": "FitPlate design (est.); ICMR-NIN 2024 caffeine about 300 mg/day (news summary, secondary, unverified); EFSA 2015 400 mg/day"
+    },
+    {
+      "rule": "No tea/coffee prompts within 1 hour of meals for users flagged iron-deficient",
+      "source": "ICMR-NIN 2024 (news summary, secondary, unverified); Topic 21"
+    },
+    {
+      "rule": "Doctor-flag users (kidney, heart, liver, fluid limit, diuretics, diabetes needing sugar limits): no hydration reminders and no coconut-water or ORS suggestions; show 'Follow your doctor's advice'",
+      "source": "FitPlate safety design; Topic 18, 19 and 30 convention"
+    }
+  ],
+  "warnings": [
+    "General information, not medical advice.",
+    "Food water is a cushion (about 20% of total water, secondary); the app goal counts logged drinks only.",
+    "Caffeine: about 300 mg/day (ICMR-NIN 2024, news summary, secondary, unverified); EFSA 2015: 400 mg/day, 200 mg/day in pregnancy.",
+    "Drinks with more than 8 g free sugar per 100 ml count at 50% (est., product policy); WHO: free sugars under 10% of energy, ideally under 5% (about 25 g/day).",
+    "Tender coconut water is potassium-rich (IFCT 2017: 215 mg/100 g); users with kidney disease or on potassium-affecting medicines need doctor advice.",
+    "Salted chaas, nimbu pani and ORS add sodium; count toward Topic 18 and ask a doctor if you have hypertension, heart or kidney disease.",
+    "Alcohol counts 0%.",
+    "ICMR-NIN 2020 water values Not found; ICMR-NIN 2024 content is from news summaries (secondary, unverified).",
+    "IFCT 2017 has no values for curd, chaas, lassi or cooked dishes; those numbers are est. or secondary."
+  ],
+  "lastResearched": "2026-11-14",
+  "versions": [
+    {
+      "date": "2026-11-14",
+      "file": "FitPlate_Nutrients_2026-11-14.md"
+    }
+  ],
+  "mergeMethod": {
+    "maxMl": "safety limit (lower on conflict)",
+    "minMl": "newest",
+    "lists": "union"
+  },
+  "mergeNotes": [],
+  "needsReview": []
+}

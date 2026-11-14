@@ -24,6 +24,7 @@ import {
   type NutrientTopicVersion,
   type NutrientVersion,
 } from '../../services/data/nutrientImporter';
+import { fixIdCollision } from '../../services/data/nutrientImporter';
 import { FOLLOW_DOCTOR_LINE, type Nutrient } from '../../models/nutrient';
 
 // Fixtures copy the shapes of the real nutrient files (thiamine, vitamin A, vitamin E cases).
@@ -565,5 +566,13 @@ describe('condition profiles default to "ask your doctor" (review 2026-10-15 FIX
     const olderFalse = cond('2026-10-24', { requires_doctor_input: false });
     const newerDefault = cond('2026-11-14', { sodium_mg_max: 1500 });
     expect(buildCondition([olderFalse, newerDefault], '2026-11-15').requiresDoctorInput).toBe(true);
+  });
+});
+
+describe('fixIdCollision (Topic 34 reused the id of Topic 30)', () => {
+  it('keeps the owner topic and gives a later topic an id from its own title', () => {
+    expect(fixIdCollision('water-daily-requirement', null, 'Topic 30: Daily water requirement')).toBe('water-daily-requirement');
+    expect(fixIdCollision('water-daily-requirement', null, 'Topic 34: Dehydration signs and the urine-colour check')).toBe('dehydration-signs-and-the-urine-colour-check');
+    expect(fixIdCollision('water-food-and-drinks', null, 'Topic 33: Water from food and drinks')).toBe('water-food-and-drinks');
   });
 });

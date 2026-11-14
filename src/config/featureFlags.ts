@@ -15,6 +15,8 @@ export const featureFlags = {
   reminders: false,
   /** Day 26: live pose-based rep counting (needs a dev build). */
   poseRepCounter: false,
+  /** Day 26: camera screen with a placement guide, a manual rep counter and clip recording (works in Expo Go). ON since Day 26; needs the iPhone app rebuilt once for expo-camera. */
+  cameraWorkout: true,
   /** Day 32: free vs paid locks. Everything is free until Sudarsan decides. */
   paywall: false,
   /** Day 03b: Firestore as the store for signed-in users (SPEC-ADDENDA §5). ON since Day 03b; false keeps a signed-in user's data on the device only. */

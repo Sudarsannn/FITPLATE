@@ -1,0 +1,195 @@
+{
+  "id": "dehydration-signs-and-the-urine-colour-check",
+  "type": "hydration",
+  "name": "Topic 34: Dehydration signs and the urine-colour check",
+  "defaultTargetFormula": "No new target. Use Topic 30 target_ml = base(sex: male 2500, female 2000, unknown 2500) + clamp((weight_kg - ref_weight) * 20, -400, 400) + min(workout_minutes * 8, 1000) + (hot_weather ? 500 : 0) + pregnancy/lactation adds; Topic 31 heat adds; clamp 1500-4500 ml; round to 50 ml. Urine-colour check: optional score 1-5 (1 almost clear; 2 pale straw; 3 light-mid yellow; 4 dark yellow or amber; 5 brown, orange-brown, red, pink or unsure); score 3 or 4 on two checks in a row adds one 250 ml prompt (est.), never above the 4500 ml cap; score 5 shows doctor note and no hydration tip. ICMR-NIN 2020 dehydration thresholds Not found.",
+  "inputs": [
+    "weight_kg",
+    "sex",
+    "activity_level",
+    "workout_minutes",
+    "hot_weather"
+  ],
+  "minMl": 1500,
+  "maxMl": 4500,
+  "quickAddPresetsMl": [
+    100,
+    150,
+    200,
+    250,
+    330,
+    500,
+    750,
+    1000
+  ],
+  "drinks": [
+    {
+      "name": "Plain water",
+      "countsAsWaterPct": 100,
+      "notes": "Everyday drink; not enough alone for heavy diarrhoea"
+    },
+    {
+      "name": "WHO/UNICEF reduced-osmolarity ORS",
+      "countsAsWaterPct": 100,
+      "notes": "75 mmol/L sodium, 75 mmol/L glucose, 20 mmol/L potassium, 245 mOsm/L; for diarrhoea, vomiting or heat illness; made with stated water volume; not a daily drink"
+    },
+    {
+      "name": "Home ORS (stop-gap)",
+      "countsAsWaterPct": 100,
+      "notes": "Half level teaspoon salt and 6 level teaspoons sugar per litre (secondary, unverified); only if no sachet"
+    },
+    {
+      "name": "Sports or electrolyte drink",
+      "countsAsWaterPct": 100,
+      "notes": "About 18 mmol/L sodium, 6% carbohydrate (secondary); not a diarrhoea treatment"
+    },
+    {
+      "name": "Tender coconut water",
+      "countsAsWaterPct": 100,
+      "notes": "About 6.6 mmol/L sodium, 50 mmol/L potassium (secondary, unverified); caution with potassium limits (Topic 19)"
+    },
+    {
+      "name": "Chaas (salted)",
+      "countsAsWaterPct": 100,
+      "notes": "est.; sodium depends on salt added (Topic 18)"
+    },
+    {
+      "name": "Nimbu pani",
+      "countsAsWaterPct": 100,
+      "notes": "est.; sugar and salt vary"
+    },
+    {
+      "name": "Packaged fruit juice",
+      "countsAsWaterPct": 50,
+      "notes": "est.; product policy; avoid in diarrhoea"
+    },
+    {
+      "name": "Soft or cold drink (sugary)",
+      "countsAsWaterPct": 50,
+      "notes": "est.; product policy; avoid in diarrhoea"
+    },
+    {
+      "name": "Alcohol",
+      "countsAsWaterPct": 0,
+      "notes": "Not counted; diuretic effect"
+    }
+  ],
+  "drinksTable": [
+    {
+      "drink": "Plain water",
+      "counts": "Yes, 100%",
+      "notes": "None",
+      "typicalServingMl": null
+    },
+    {
+      "drink": "WHO/UNICEF reduced-osmolarity ORS",
+      "counts": "Yes (rehydration therapy)",
+      "notes": "75 mmol/L Na (about 1,725 mg per litre, calc.), 75 mmol/L glucose (13.5 g/L), 20 mmol/L K, 245 mOsm/L",
+      "typicalServingMl": null
+    },
+    {
+      "drink": "ORS of 45 mmol/L Na (study product)",
+      "counts": "Yes",
+      "notes": "45.0 mmol/L Na, about 2.5% carbohydrate",
+      "typicalServingMl": null
+    },
+    {
+      "drink": "Home ORS (stop-gap, secondary)",
+      "counts": "Yes",
+      "notes": "About half a level teaspoon salt plus 6 level teaspoons sugar per litre (Topic 31; about 1,200 mg Na, calc.; recipes vary, news says 2 tsp per glass; unverified)",
+      "typicalServingMl": null
+    },
+    {
+      "drink": "Sports or electrolyte drink",
+      "counts": "Yes",
+      "notes": "About 18.3 mmol/L Na, 6% carbohydrate (Bell and Spriet; Gatorade retail about 45-49 mg Na per 100 ml, Topic 32)",
+      "typicalServingMl": null
+    },
+    {
+      "drink": "Tender coconut water",
+      "counts": "Yes",
+      "notes": "About 6.6 mmol/L Na, about 50.2 mmol/L K (Bell and Spriet; other sources differ, Topic 30); sugar not found",
+      "typicalServingMl": {
+        "min": 19,
+        "max": 19
+      }
+    },
+    {
+      "drink": "Chaas (salted) / nimbu pani with salt",
+      "counts": "Yes",
+      "notes": "Not found (depends on salt added; see Topic 18)",
+      "typicalServingMl": null
+    },
+    {
+      "drink": "Milk, chai, coffee",
+      "counts": "Yes (est. 100%)",
+      "notes": "Not a rehydration drink for diarrhoea",
+      "typicalServingMl": {
+        "min": 30,
+        "max": 30
+      }
+    },
+    {
+      "drink": "Juice and soft drinks",
+      "counts": "Partly (est. 50%)",
+      "notes": "High sugar; sugary drinks may worsen diarrhoea (WHO-derived, snippet)",
+      "typicalServingMl": null
+    },
+    {
+      "drink": "Alcohol",
+      "counts": "No (0%)",
+      "notes": "Diuretic effect",
+      "typicalServingMl": null
+    }
+  ],
+  "reminderRules": [
+    {
+      "rule": "Optional urine-colour prompt at most twice a day; hidden for doctor-flag users",
+      "source": "FitPlate design (est.); Armstrong 1994; Perrier 2017 (colour is a clue, not a test)"
+    },
+    {
+      "rule": "Two urine scores of 3 or 4 in a row on a normal day add one 250 ml prompt, never beyond the 4500 ml cap",
+      "source": "FitPlate design (est.); Topic 30 cap"
+    },
+    {
+      "rule": "Urine score 5 (brown, orange-brown, red, pink, unsure) shows a doctor note and no hydration tip",
+      "source": "NHS-derived haematuria guidance; MSD Manual (bilirubin) via search snippets (secondary)"
+    },
+    {
+      "rule": "Any red flag tick (no urine 8 h or more, confusion, fainting, fast heartbeat, repeated vomiting or loose motions, infant or older adult unwell) shows 'Please speak to a doctor or call 112' and pauses prompts",
+      "source": "NHS-derived dehydration pages; Irish HPSC infant guidance (8-12 h window; shorter used); WHO plans via MSF/NCBI"
+    },
+    {
+      "rule": "Vomiting or loose motions logged: offer ORS quick-add (50-100 ml sips), continue food, ask a doctor about zinc for under-5s; adults on SGLT2 inhibitors, diuretics, metformin, ACE inhibitors or ARBs see 'ask your doctor'",
+      "source": "WHO/UNICEF ORS statement; IAP/Indian Pediatrics 2010; UK sick-day leaflets via snippets (secondary)"
+    },
+    {
+      "rule": "Users aged 60+: keep scheduled reminders even if not thirsty",
+      "source": "Kenney and Chiu review (abstract only; secondary)"
+    }
+  ],
+  "warnings": [
+    "General information, not medical advice. The urine-colour check is a hydration nudge, not a diagnosis.",
+    "Red, pink, brown or cola-coloured urine not explained by food or a medicine needs a doctor, not more water.",
+    "No urine for 8 hours or more, confusion, fainting, fast heartbeat, repeated vomiting or diarrhoea, or any illness in a baby or older adult: seek medical help.",
+    "ORS is for illness, not for daily use. Use WHO-formula ORS made with the stated water volume; do not add extra salt.",
+    "Zinc for children with diarrhoea (10 mg/day under 6 months, 20 mg/day from 6 months, 10-14 days) is given on a doctor's advice.",
+    "Diuretics, SGLT2 inhibitors, metformin, ACE inhibitors, ARBs, kidney, heart or liver disease and diabetes: follow your doctor's fluid and sick-day advice.",
+    "High thirst with frequent urination can signal high blood sugar: get tested.",
+    "ICMR-NIN 2020 dehydration thresholds Not found; all numeric thresholds here are secondary, unverified."
+  ],
+  "lastResearched": "2026-11-14",
+  "versions": [
+    {
+      "date": "2026-11-14",
+      "file": "FitPlate_Nutrients_2026-11-14.md"
+    }
+  ],
+  "mergeMethod": {
+    "maxMl": "safety limit (lower on conflict)",
+    "minMl": "newest",
+    "lists": "union"
+  },
+  "mergeNotes": [],
+  "needsReview": []
+}
