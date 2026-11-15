@@ -11,6 +11,9 @@ Most of this day already existed (burnt calories use MET x kg x hours from the r
 - Weekly activity summary card on Today and Progress: minutes per day bars, days active, calories burnt, the 150 minute weekly guide (WHO, low end) as a progress bar, and the typical eaten-minus-burnt. For anyone whose chosen conditions need a doctor's advice there is no target, only "Follow your doctor's advice on how much to do." Wording is gentle: "any amount helps", no "you must burn this".
 - The existing "left" figure still adds burnt calories back to the goal; the new Net line is the plain eaten minus burnt.
 
+## 2b. REVIEW 2026-11-15 FIX (privacy): DONE on demand (relayed by the coordinator, after the Day 27 run)
+"Delete my data" now also removes the workout videos recorded in camera mode. They live only on the phone (the `clips` folder), so the cloud delete alone left them behind. `src/services/clips.ts` `deleteAllClips()` removes the folder and is called by the store's `deleteMyData` after the cloud delete succeeds; if the folder cannot be removed it throws, the confirm box shows the failure and the person can try again. The failure text now reads "Couldn't finish deleting. Check your connection and try again; your data is only fully deleted once this message goes away." Your data page says videos are included, and that Sign out leaves them on the phone. Tests: `clips.test.ts` (4). Checks after the change: tsc, lint, jest 76 suites / 981 tests, web export OK. The Day 28 run should record this as done and not redo it.
+
 ## 3. DATA SYNC REPORT
 Dishes 5 re-ingested from newer versions and ingredients 3 (103 dishes, 179 ingredients in app); nutrients 47 and fitness 60 unchanged. Nothing newly rejected. Report not kept.
 
