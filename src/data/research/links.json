@@ -1,6 +1,6 @@
 {
   "schema": "fitplate.links.v1",
-  "generatedFor": "Day26",
+  "generatedFor": "Day27",
   "goodSourceDishes": {
     "biotin": [
       {
@@ -6581,7 +6581,7 @@
       "calcium": {
         "per100": 82,
         "unit": "mg",
-        "source": "ingredient research (USDA FDC: FDC ID 169260, Okra, raw (SR Legacy), via secondary sites)"
+        "source": "ingredient research (USDA FDC: USDA FDC 169260 'Okra, raw' (SR Legacy) as mirrored by secondary sites; potassium and sodium from patient.info (UK table); zero by composition: cholesterol_mg, vitamin_b12_ug)"
       },
       "potassium": {
         "per100": 299,
@@ -6591,7 +6591,7 @@
       "magnesium": {
         "per100": 57,
         "unit": "mg",
-        "source": "ingredient research (USDA FDC: FDC ID 169260, Okra, raw (SR Legacy), via secondary sites)"
+        "source": "ingredient research (USDA FDC: USDA FDC 169260 'Okra, raw' (SR Legacy) as mirrored by secondary sites; potassium and sodium from patient.info (UK table); zero by composition: cholesterol_mg, vitamin_b12_ug)"
       },
       "zinc": {
         "per100": 0.58,
@@ -6606,7 +6606,7 @@
       "vitamin-c": {
         "per100": 23,
         "unit": "mg",
-        "source": "ingredient research (USDA FDC: FDC ID 169260, Okra, raw (SR Legacy), via secondary sites)"
+        "source": "ingredient research (USDA FDC: USDA FDC 169260 'Okra, raw' (SR Legacy) as mirrored by secondary sites; potassium and sodium from patient.info (UK table); zero by composition: cholesterol_mg, vitamin_b12_ug)"
       },
       "vitamin-a": {
         "per100": 36,
@@ -6616,7 +6616,22 @@
       "folate": {
         "per100": 60,
         "unit": "µg",
-        "source": "ingredient research (USDA FDC: FDC ID 169260, Okra, raw (SR Legacy), via secondary sites)"
+        "source": "ingredient research (USDA FDC: USDA FDC 169260 'Okra, raw' (SR Legacy) as mirrored by secondary sites; potassium and sodium from patient.info (UK table); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169260 'Okra, raw' (SR Legacy) as mirrored by secondary sites; potassium and sodium from patient.info (UK table); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "manganese": {
+        "per100": 0.79,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169260 'Okra, raw' (SR Legacy) as mirrored by secondary sites; potassium and sodium from patient.info (UK table); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169260 'Okra, raw' (SR Legacy) as mirrored by secondary sites; potassium and sodium from patient.info (UK table); zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
     "onion": {
@@ -7426,6 +7441,16 @@
         "per100": 34000,
         "unit": "mg",
         "source": "ingredient research (Other: product label data: BigBasket Himalayan pink salt listing (sodium 34 g per 100 g); no IFCT 2017 or USDA FDC entry found)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (Other: secondary web pages (no IFCT or USDA entry for sendha namak found): No IFCT 2017 or USDA FDC entry found; sodium 38182 mg from a secondary page; zero by composition: energy_kcal, protein_g, carbohydrate_g, sugars_g, fat_g, saturated_fat_g, fibre_g, cholesterol_mg, trans_fat_g, mufa_g, pufa_g, omega3_g, added_sugars_g, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (Other: secondary web pages (no IFCT or USDA entry for sendha namak found): No IFCT 2017 or USDA FDC entry found; sodium 38182 mg from a secondary page; zero by composition: energy_kcal, protein_g, carbohydrate_g, sugars_g, fat_g, saturated_fat_g, fibre_g, cholesterol_mg, trans_fat_g, mufa_g, pufa_g, omega3_g, added_sugars_g, vitamin_b12_ug)"
       }
     },
     "rolled-oats-plain": {
@@ -7528,32 +7553,47 @@
       "iron": {
         "per100": 1.58,
         "unit": "mg",
-        "source": "ingredient research (USDA FDC: FDC ID 169717, Tapioca, pearl, dry (SR Legacy), via secondary sites; Mg and Zn converted from per-cup (152 g) values)"
+        "source": "ingredient research (USDA FDC: USDA FDC 169717 'Tapioca, pearl, dry' (SR Legacy 20068) as mirrored by secondary sites; magnesium, zinc and phosphorus converted from per 1 cup (152 g); zero by composition: cholesterol_mg, vitamin_b12_ug)"
       },
       "calcium": {
         "per100": 20,
         "unit": "mg",
-        "source": "ingredient research (USDA FDC: FDC ID 169717, Tapioca, pearl, dry (SR Legacy), via secondary sites; Mg and Zn converted from per-cup (152 g) values)"
+        "source": "ingredient research (USDA FDC: USDA FDC 169717 'Tapioca, pearl, dry' (SR Legacy 20068) as mirrored by secondary sites; magnesium, zinc and phosphorus converted from per 1 cup (152 g); zero by composition: cholesterol_mg, vitamin_b12_ug)"
       },
       "potassium": {
         "per100": 11,
         "unit": "mg",
-        "source": "ingredient research (USDA FDC: FDC ID 169717, Tapioca, pearl, dry (SR Legacy), via secondary sites; Mg and Zn converted from per-cup (152 g) values)"
+        "source": "ingredient research (USDA FDC: USDA FDC 169717 'Tapioca, pearl, dry' (SR Legacy 20068) as mirrored by secondary sites; magnesium, zinc and phosphorus converted from per 1 cup (152 g); zero by composition: cholesterol_mg, vitamin_b12_ug)"
       },
       "magnesium": {
         "per100": 1,
         "unit": "mg",
-        "source": "ingredient research (USDA FDC: FDC ID 169717, Tapioca, pearl, dry (SR Legacy), via secondary sites; Mg and Zn converted from per-cup (152 g) values)"
+        "source": "ingredient research (USDA FDC: USDA FDC 169717 'Tapioca, pearl, dry' (SR Legacy 20068) as mirrored by secondary sites; magnesium, zinc and phosphorus converted from per 1 cup (152 g); zero by composition: cholesterol_mg, vitamin_b12_ug)"
       },
       "zinc": {
         "per100": 0.12,
         "unit": "mg",
-        "source": "ingredient research (USDA FDC: FDC ID 169717, Tapioca, pearl, dry (SR Legacy), via secondary sites; Mg and Zn converted from per-cup (152 g) values)"
+        "source": "ingredient research (USDA FDC: USDA FDC 169717 'Tapioca, pearl, dry' (SR Legacy 20068) as mirrored by secondary sites; magnesium, zinc and phosphorus converted from per 1 cup (152 g); zero by composition: cholesterol_mg, vitamin_b12_ug)"
       },
       "sodium": {
         "per100": 1,
         "unit": "mg",
-        "source": "ingredient research (USDA FDC: FDC ID 169717, Tapioca, pearl, dry (SR Legacy), via secondary sites; Mg and Zn converted from per-cup (152 g) values)"
+        "source": "ingredient research (USDA FDC: USDA FDC 169717 'Tapioca, pearl, dry' (SR Legacy 20068) as mirrored by secondary sites; magnesium, zinc and phosphorus converted from per 1 cup (152 g); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "cholesterol": {
+        "per100": 0,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169717 'Tapioca, pearl, dry' (SR Legacy 20068) as mirrored by secondary sites; magnesium, zinc and phosphorus converted from per 1 cup (152 g); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "phosphorus": {
+        "per100": 7,
+        "unit": "mg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169717 'Tapioca, pearl, dry' (SR Legacy 20068) as mirrored by secondary sites; magnesium, zinc and phosphorus converted from per 1 cup (152 g); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-b12": {
+        "per100": 0,
+        "unit": "µg",
+        "source": "ingredient research (USDA FDC: USDA FDC 169717 'Tapioca, pearl, dry' (SR Legacy 20068) as mirrored by secondary sites; magnesium, zinc and phosphorus converted from per 1 cup (152 g); zero by composition: cholesterol_mg, vitamin_b12_ug)"
       }
     },
     "salt": {

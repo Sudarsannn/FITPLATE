@@ -15,6 +15,8 @@ export const featureFlags = {
   reminders: false,
   /** Day 26: live pose-based rep counting (needs a dev build). */
   poseRepCounter: false,
+  /** Day 27: net calories line and weekly activity card on Today and Progress, walk and run distances on the balance page. ON since Day 27. */
+  burnBalance: true,
   /** Day 26: camera screen with a placement guide, a manual rep counter and clip recording (works in Expo Go). ON since Day 26; needs the iPhone app rebuilt once for expo-camera. */
   cameraWorkout: true,
   /** Day 32: free vs paid locks. Everything is free until Sudarsan decides. */

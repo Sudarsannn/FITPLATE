@@ -16,49 +16,58 @@
         "avg": 90,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-11.md"
+      },
+      {
+        "date": "2026-11-15",
+        "min": 20,
+        "max": 110,
+        "avg": 55,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-15.md"
       }
     ],
     "currentEstimate": {
-      "min": 77,
-      "max": 103,
-      "avg": 90
+      "min": 62,
+      "max": 83,
+      "avg": 73
     },
-    "method": "single",
+    "method": "spike-blend",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-11",
+    "lastObserved": "2026-11-15",
     "stale": false,
     "seasonal": false,
-    "listingCount": 3,
+    "listingCount": 4,
     "platforms": [
-      "BigBasket",
-      "Pluckk"
+      "BigBasket"
     ],
     "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "confirmed": false,
+    "checkNotes": [
+      "only 1 platform (BigBasket) backs the range"
+    ]
   },
   "per100Estimate": {
-    "min": 7.7,
-    "max": 10.3,
-    "avg": 9
+    "min": 6.2,
+    "max": 8.3,
+    "avg": 7.3
   },
   "seasonal": false,
   "nutritionPer100g": {
     "basis": "100g",
     "energyKcal": {
       "value": 33,
-      "source": "USDA FDC: FDC ID 169260, Okra, raw (SR Legacy), via secondary sites",
+      "source": "USDA FDC: USDA FDC 169260 'Okra, raw' (SR Legacy) as mirrored by secondary sites; potassium and sodium from patient.info (UK table); zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "proteinG": {
       "value": 1.93,
-      "source": "USDA FDC: FDC ID 169260, Okra, raw (SR Legacy), via secondary sites",
+      "source": "USDA FDC: USDA FDC 169260 'Okra, raw' (SR Legacy) as mirrored by secondary sites; potassium and sodium from patient.info (UK table); zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "carbsG": {
       "value": 7.45,
-      "source": "USDA FDC: FDC ID 169260, Okra, raw (SR Legacy), via secondary sites",
+      "source": "USDA FDC: USDA FDC 169260 'Okra, raw' (SR Legacy) as mirrored by secondary sites; potassium and sodium from patient.info (UK table); zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "sugarsG": {
@@ -68,7 +77,7 @@
     },
     "fatG": {
       "value": 0.19,
-      "source": "USDA FDC: FDC ID 169260, Okra, raw (SR Legacy), via secondary sites",
+      "source": "USDA FDC: USDA FDC 169260 'Okra, raw' (SR Legacy) as mirrored by secondary sites; potassium and sodium from patient.info (UK table); zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "saturatedFatG": {
@@ -78,7 +87,7 @@
     },
     "fibreG": {
       "value": 3.2,
-      "source": "USDA FDC: FDC ID 169260, Okra, raw (SR Legacy), via secondary sites",
+      "source": "USDA FDC: USDA FDC 169260 'Okra, raw' (SR Legacy) as mirrored by secondary sites; potassium and sodium from patient.info (UK table); zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "sodiumMg": {
@@ -93,7 +102,7 @@
     },
     "calciumMg": {
       "value": 82,
-      "source": "USDA FDC: FDC ID 169260, Okra, raw (SR Legacy), via secondary sites",
+      "source": "USDA FDC: USDA FDC 169260 'Okra, raw' (SR Legacy) as mirrored by secondary sites; potassium and sodium from patient.info (UK table); zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "potassiumMg": {
@@ -103,7 +112,7 @@
     },
     "magnesiumMg": {
       "value": 57,
-      "source": "USDA FDC: FDC ID 169260, Okra, raw (SR Legacy), via secondary sites",
+      "source": "USDA FDC: USDA FDC 169260 'Okra, raw' (SR Legacy) as mirrored by secondary sites; potassium and sodium from patient.info (UK table); zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "zincMg": {
@@ -113,7 +122,7 @@
     },
     "vitaminCMg": {
       "value": 23,
-      "source": "USDA FDC: FDC ID 169260, Okra, raw (SR Legacy), via secondary sites",
+      "source": "USDA FDC: USDA FDC 169260 'Okra, raw' (SR Legacy) as mirrored by secondary sites; potassium and sodium from patient.info (UK table); zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "vitaminAUgRae": {
@@ -123,7 +132,7 @@
     },
     "folateUgDfe": {
       "value": 60,
-      "source": "USDA FDC: FDC ID 169260, Okra, raw (SR Legacy), via secondary sites",
+      "source": "USDA FDC: USDA FDC 169260 'Okra, raw' (SR Legacy) as mirrored by secondary sites; potassium and sodium from patient.info (UK table); zero by composition: cholesterol_mg, vitamin_b12_ug",
       "confidence": "Medium"
     },
     "waterG": {
@@ -132,9 +141,9 @@
       "confidence": null
     },
     "cholesterolMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 169260 'Okra, raw' (SR Legacy) as mirrored by secondary sites; potassium and sodium from patient.info (UK table); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "transFatG": {
       "value": null,
@@ -177,9 +186,9 @@
       "confidence": null
     },
     "manganeseMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0.79,
+      "source": "USDA FDC: USDA FDC 169260 'Okra, raw' (SR Legacy) as mirrored by secondary sites; potassium and sodium from patient.info (UK table); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "iodineUg": {
       "value": null,
@@ -222,9 +231,9 @@
       "confidence": null
     },
     "vitaminB12Ug": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "USDA FDC: USDA FDC 169260 'Okra, raw' (SR Legacy) as mirrored by secondary sites; potassium and sodium from patient.info (UK table); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     }
   },
   "macrosPer100Estimate": {
@@ -232,16 +241,17 @@
     "proteinG": 1.9,
     "carbsG": 7.5,
     "fatG": 0.2,
-    "fibreG": null
+    "fibreG": 3.2
   },
-  "storage": "unwashed and dry, loosely wrapped in paper or a paper-lined bag in the vegetable drawer, 3–5 days. Moisture makes it slimy and mouldy, so wash only just before cooking and pat fully dry.",
-  "looksLike": "Slim, bright green pods about the length of a finger, with five or so lengthwise ridges, fine fuzz on the skin and a pointed tip. Cut open, they show rows of small white seeds and a sticky, slimy sap.",
-  "howToPick": null,
-  "shelfLife": "2–3 days at room temperature; 3–5 days in the fridge.",
+  "storage": "Keep unwashed and dry in a paper bag in the fridge; wash only just before cooking.",
+  "looksLike": "Slim, bright green, ridged pods about the length of a finger with a pointed tip and fine fuzz; cut open they show white seeds and a sticky sap.",
+  "howToPick": "Small to medium pods that snap crisply at the tip, bright green, no black spots or shrivelling; avoid bendy, hard or sticky pods.",
+  "shelfLife": "About 2 to 3 days in the fridge (dish 37 note: keep unwashed in a paper bag).",
   "substitutes": [
     "Frozen cut okra",
     "Tindora (ivy gourd) or French beans",
-    "Arbi (colocasia)"
+    "Arbi (colocasia)",
+    "Ridge gourd or French beans"
   ],
   "vendorListings": [],
   "usedIn": [
@@ -249,18 +259,22 @@
       "dishNumber": 37,
       "quantity": 200,
       "unit": "g",
-      "raw": "200 g as bought (about 185 g trimmed), 18–20 medium pods sliced into 1.5–2 cm pieces"
+      "raw": "200 g as bought per serving (about 185 g trimmed; 18–20 medium pods)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-11",
       "file": "FitPlate_Ingredients_2026-10-11.md"
+    },
+    {
+      "date": "2026-11-15",
+      "file": "FitPlate_Ingredients_2026-11-15.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (spike-blend)",
+    "macrosPer100Estimate": "stable (mean-2)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -270,7 +284,11 @@
     "usedIn": "newest"
   },
   "mergeNotes": [
+    "price flag: possible-spike",
     "price flag: narrowed",
-    "Range 75.0–110.0 was wider than 30% of avg 90.0; narrowed to ±15%."
+    "Possible spike: latest avg 55 (2026-11-15) moved more than 35% from the previous estimate; using the halfway point.",
+    "Range 47.5–110.0 was wider than 30% of avg 72.5; narrowed to ±15%.",
+    "nutritionPer100g.sodiumMg: Conflict (2026-10-11: 7 vs 2026-11-15: 8); both cite the official table, kept the previous value.",
+    "nutritionPer100g.potassiumMg: Conflict (2026-10-11: 299 vs 2026-11-15: 330); both cite the official table, kept the previous value."
   ]
 }

@@ -5,6 +5,7 @@ import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import Animated, { Easing, useAnimatedStyle, useSharedValue, withDelay, withTiming } from 'react-native-reanimated';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { ActivityWeekCard } from '../../components/ActivityWeekCard';
 import { DishRow } from '../../components/DishCard';
 import { SavingsCard } from '../../components/SavingsCard';
 import { IconBadge, type IconName } from '../../components/Icon';
@@ -108,6 +109,10 @@ export function ProgressScreen({ embedded = false }: { embedded?: boolean }) {
               <Mini label="home-cooked" value={`${homeShare}%`} color={colors.accent} />
             </View>
           </Glass>
+        </FadeIn>
+
+        <FadeIn i={2}>
+          <ActivityWeekCard />
         </FadeIn>
 
         <FadeIn i={2}>

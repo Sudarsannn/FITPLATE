@@ -6,7 +6,7 @@
   "dietType": "veg",
   "mealType": [
     "breakfast",
-    "dinner"
+    "snack"
   ],
   "difficulty": "Beginner",
   "prepMin": 5,
@@ -23,9 +23,9 @@
     {
       "ingredientId": null,
       "name": "Water, for soaking",
-      "quantity": 80,
+      "quantity": 90,
       "unit": "ml",
-      "householdMeasure": "about ⅓ cup (just enough to sit level with the pearls)"
+      "householdMeasure": "about ⅓ cup plus 1 tbsp (just level with the pearls)"
     },
     {
       "ingredientId": "peanuts-raw",
@@ -101,7 +101,7 @@
   "equipment": [
     "Mixing bowl (for washing and soaking) and a lid or plate to cover it",
     "Fine strainer or colander",
-    "Heavy-bottomed or non-stick kadai or frying pan (8 inch) with a lid",
+    "Non-stick kadai or frying pan (8 inch) with a lid",
     "Small pan or tawa to dry-roast the peanuts (or buy ready roasted peanuts)",
     "Mortar and pestle (khalbatta) to crush the peanuts",
     "Spatula (flat, wooden or silicone), knife and chopping board",
@@ -114,39 +114,43 @@
       "text": "Put 75 g (about ½ cup) sabudana in a bowl.",
       "timerSec": 30,
       "tip": "Buy \"medium\" or \"nylon\" sabudana for khichdi. Very small pearls turn mushy; very large ones need a longer soak.",
-      "visualCue": "A small heap of dry, white pearls.",
+      "visualCue": "A small heap of dry, white pearls, all about the same size.",
       "cameraCheck": "The ½ cup of sabudana in the bowl",
-      "videoShot": "Dry pearls pouring into a steel bowl."
+      "videoShot": "Dry pearls pouring into a steel bowl.",
+      "watchOut": "Mixed sizes in one pack (some tiny, some large) soak unevenly and leave hard centres; sort out the odd large ones or soak a little longer."
     },
     {
       "n": 2,
       "title": "Wash out the starch",
       "text": "Cover the pearls with water, rub them gently between your fingers for a few seconds, and pour off the cloudy water. Repeat 3–4 times.",
       "timerSec": 120,
-      "tip": "This is the first half of the \"non-sticky pearls\" trick. The milky water is loose starch; if it stays, it glues the pearls together when cooked.",
+      "tip": "This is the first half of the \"non-sticky pearls\" trick.",
       "visualCue": "The water is clear or only very slightly cloudy on the last rinse.",
       "cameraCheck": "The bowl with the clear rinse water",
-      "videoShot": "Fingers rubbing pearls in milky water, then the water being poured away."
+      "videoShot": "Fingers rubbing pearls in milky water, then the water being poured away.",
+      "watchOut": "Water that stays milky means loose starch is left, which glues the pearls together later; rinse once or twice more."
     },
     {
       "n": 3,
-      "title": "Soak with just a little water",
-      "text": "Drain completely, then add 80–90 ml water (about ⅓ cup), just enough to sit level with the top of the pearls, not above them. Cover and leave on the counter.",
+      "title": "Soak with a measured amount of water",
+      "text": "Drain completely, then add 90 ml water (about ⅓ cup plus 1 tbsp), just level with the top of the pearls, not above them. Cover and leave on the counter.",
       "timerSec": 14400,
-      "tip": "This is the second half of the trick: less water, longer time. Too much water makes soggy, sticky pearls. Different brands absorb differently, so note what works for yours.",
+      "tip": "Brands absorb differently, so note what works for yours.",
       "visualCue": "All the water is absorbed and the pearls have swollen to about double their size.",
       "cameraCheck": "The water level with the pearls before covering",
-      "videoShot": "Water poured in just up to the pearl line, then the lid going on."
+      "videoShot": "Water poured in just up to the pearl line, then the lid going on.",
+      "watchOut": "Too much water gives soggy, sticky pearls (sign: a puddle at the bottom after soaking; drain it in a strainer for 10 min). Too little leaves hard white centres. Do not use hot water to hurry it, as that makes them sticky."
     },
     {
       "n": 4,
       "title": "Check the soak",
       "text": "Press one pearl between your thumb and finger.",
       "timerSec": 30,
-      "tip": "Still a hard centre? Sprinkle 1–2 tbsp water, cover and wait 30 min more. Water pooling at the bottom? Tip it into a strainer and let it drain for 10 min.",
+      "tip": null,
       "visualCue": "It squashes easily with no hard white dot in the centre. The pearls look separate and slightly glossy, not sitting in water.",
       "cameraCheck": "A squashed pearl on your fingertip",
-      "videoShot": "A pearl being pressed flat between two fingers."
+      "videoShot": "A pearl being pressed flat between two fingers.",
+      "watchOut": "A hard centre means under-soaked; sprinkle 1–2 tbsp water, cover and wait 30 min more, then check again."
     },
     {
       "n": 5,
@@ -156,7 +160,8 @@
       "tip": null,
       "visualCue": "Loose, individual pearls that fall apart when you lift a handful.",
       "cameraCheck": "A handful of loose pearls",
-      "videoShot": "Fingers lifting and dropping fluffy pearls."
+      "videoShot": "Fingers lifting and dropping fluffy pearls.",
+      "watchOut": "Mashing or squeezing breaks the pearls and makes paste; lift and separate gently."
     },
     {
       "n": 6,
@@ -166,7 +171,8 @@
       "tip": null,
       "visualCue": "The skins crack and darken in spots, and they smell nutty.",
       "cameraCheck": "The roasted peanuts in the pan",
-      "videoShot": "Peanuts tossing in a dry pan, skins starting to blister."
+      "videoShot": "Peanuts tossing in a dry pan, skins starting to blister.",
+      "watchOut": "Peanuts that smell sharp or bitter are burnt; they keep cooking in the hot pan, so tip them out onto a plate as soon as they smell toasty."
     },
     {
       "n": 7,
@@ -176,7 +182,8 @@
       "tip": null,
       "visualCue": "A coarse powder with some small chunks, still dry and crumbly (not oily paste).",
       "cameraCheck": "The crushed peanuts in the mortar",
-      "videoShot": "The pestle pounding peanuts into coarse crumbs."
+      "videoShot": "The pestle pounding peanuts into coarse crumbs.",
+      "watchOut": "Over-crushing, or crushing while hot, turns them into oily paste; stop when some small chunks remain."
     },
     {
       "n": 8,
@@ -186,7 +193,8 @@
       "tip": "Coating the pearls before they hit the pan (a step most Maharashtrian recipes use) keeps them separate and seasons them evenly.",
       "visualCue": "Every pearl is lightly coated with peanut powder.",
       "cameraCheck": "The coated sabudana in the bowl",
-      "videoShot": "Peanut crumbs sprinkled over the pearls and tossed through."
+      "videoShot": "Peanut crumbs sprinkled over the pearls and tossed through.",
+      "watchOut": "Salt added in lumps leaves some pearls bland; sprinkle it evenly and toss."
     },
     {
       "n": 9,
@@ -196,7 +204,8 @@
       "tip": null,
       "visualCue": "Small, even cubes.",
       "cameraCheck": "The potato cubes on the board",
-      "videoShot": "The knife dicing a potato half."
+      "videoShot": "The knife dicing a potato half.",
+      "watchOut": "Big or uneven cubes stay raw in the middle when the pearls are done; keep them to 1 cm."
     },
     {
       "n": 10,
@@ -206,7 +215,8 @@
       "tip": null,
       "visualCue": "Small chilli rings or bits, a little heap of coriander.",
       "cameraCheck": "The chopped chilli, coriander and curry leaves",
-      "videoShot": "Overhead shot of the small heaps on the board."
+      "videoShot": "Overhead shot of the small heaps on the board.",
+      "watchOut": "Wet leaves spit in hot ghee; pat the curry leaves dry."
     },
     {
       "n": 11,
@@ -216,27 +226,30 @@
       "tip": null,
       "visualCue": "The cumin sizzles and turns one shade darker within about 20 seconds.",
       "cameraCheck": "The cumin in the ghee",
-      "videoShot": "Cumin seeds sizzling in melted ghee."
+      "videoShot": "Cumin seeds sizzling in melted ghee.",
+      "watchOut": "Cumin that turns dark brown is burnt and bitter; if it darkens fast, lift the pan off the heat and start with fresh ghee and cumin."
     },
     {
       "n": 12,
       "title": "Add the chilli and curry leaves",
       "text": "Add the green chilli and curry leaves and stir.",
       "timerSec": 20,
-      "tip": "Stand back a little; wet curry leaves splatter.",
+      "tip": null,
       "visualCue": "The curry leaves crackle and turn glossy; a sharp chilli smell rises.",
       "cameraCheck": "The kadai with chilli and leaves",
-      "videoShot": "Curry leaves spluttering in the pan."
+      "videoShot": "Curry leaves spluttering in the pan.",
+      "watchOut": "Splatter from wet leaves; stand back and keep the heat at medium."
     },
     {
       "n": 13,
       "title": "Cook the potato",
       "text": "Add the potato cubes, stir, cover and cook on low-medium heat, stirring once or twice.",
       "timerSec": 300,
-      "tip": "Cutting the potato small means it cooks raw in the pan. If you have a boiled potato, cube it and fry it for just 1 min instead.",
+      "tip": "With a boiled potato, cube it and fry it for just 1 min instead.",
       "visualCue": "The potato is soft when pressed with the spatula and lightly golden on some sides.",
       "cameraCheck": "A potato cube pressed with the spatula",
-      "videoShot": "The lid lifting off golden potato cubes."
+      "videoShot": "The lid lifting off golden potato cubes.",
+      "watchOut": "Potato stuck and browning too dark means the heat is too high; lower it and sprinkle 1 tbsp water. A hard cube in the middle means more covered time."
     },
     {
       "n": 14,
@@ -246,17 +259,19 @@
       "tip": null,
       "visualCue": "Pearls, potato and spices are evenly mixed; the pearls are still white.",
       "cameraCheck": "The mixture in the kadai",
-      "videoShot": "The spatula folding the pearls into the potatoes."
+      "videoShot": "The spatula folding the pearls into the potatoes.",
+      "watchOut": "Fast stirring on high heat breaks the pearls and they stick to the pan; keep the heat low and fold slowly."
     },
     {
       "n": 15,
       "title": "Cook until the pearls turn see-through",
       "text": "Keep on low heat, stirring gently every 30 seconds. Cover for 1 minute in between if your pan is not non-stick.",
       "timerSec": 240,
-      "tip": "Stop as soon as most pearls turn clear. Overcooking is the other main reason sabudana khichdi goes chewy and lumpy; the leftover white centres finish cooking from the heat once the gas is off.",
+      "tip": null,
       "visualCue": "Most pearls turn translucent (glassy) with only a faint white centre; they look glossy and stay separate.",
       "cameraCheck": "A spoonful of translucent pearls",
-      "videoShot": "Close-up of white pearls turning glassy."
+      "videoShot": "Close-up of white pearls turning glassy.",
+      "watchOut": "Overcooking or constant stirring makes the khichdi chewy and gummy; stop as soon as most pearls are clear, since the faint white centres finish in the pan's heat."
     },
     {
       "n": 16,
@@ -266,7 +281,8 @@
       "tip": null,
       "visualCue": "Green flecks through glossy, separate pearls; it smells of ghee and peanuts.",
       "cameraCheck": "The finished khichdi in the pan",
-      "videoShot": "Lemon squeezed over the pan."
+      "videoShot": "Lemon squeezed over the pan.",
+      "watchOut": "Lemon added on the flame turns bitter and can make the pearls sticky; add it only after switching off."
     },
     {
       "n": 17,
@@ -276,7 +292,8 @@
       "tip": null,
       "visualCue": "Fluffy, glistening pearls with peanut crumbs and golden potato bits.",
       "cameraCheck": "The plate of sabudana khichdi",
-      "videoShot": "Khichdi spooned onto a plate next to a bowl of curd."
+      "videoShot": "Khichdi spooned onto a plate next to a bowl of curd.",
+      "watchOut": "It firms up and turns chewy as it cools; serve at once, and if it has stiffened, sprinkle 1–2 tsp water, cover and warm it for 1 min."
     }
   ],
   "nutritionPerServing": {
@@ -296,7 +313,7 @@
       "magnesium": 5.3,
       "manganese": 0,
       "niacin": 0,
-      "phosphorus": 6.6,
+      "phosphorus": 11.9,
       "potassium": 308.6,
       "riboflavin": 0,
       "selenium": 0.1,
@@ -310,7 +327,7 @@
       "vitamin-k": 9.4,
       "zinc": 0.2
     },
-    "coveragePct": 70,
+    "coveragePct": 67,
     "basis": "partial estimate from ingredient quantities"
   },
   "asOrdered": {
@@ -323,20 +340,28 @@
           "avg": 100,
           "confidence": null,
           "sourceFile": "FitPlate_Dishes_2026-10-11.md"
+        },
+        {
+          "date": "2026-11-15",
+          "min": 79,
+          "max": 259,
+          "avg": 141,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-11-15.md"
         }
       ],
       "currentEstimate": {
-        "min": 90,
-        "max": 110,
-        "avg": 100
+        "min": 100,
+        "max": 140,
+        "avg": 120
       },
-      "method": "single",
+      "method": "spike-blend",
       "trend": "unknown",
       "change30dPct": null,
-      "lastObserved": "2026-10-11",
+      "lastObserved": "2026-11-15",
       "stale": false,
       "seasonal": false,
-      "listingCount": 3,
+      "listingCount": 9,
       "platforms": [
         "Swiggy"
       ],
@@ -384,20 +409,28 @@
         "avg": 100,
         "confidence": null,
         "sourceFile": "FitPlate_Dishes_2026-10-11.md"
+      },
+      {
+        "date": "2026-11-15",
+        "min": 79,
+        "max": 259,
+        "avg": 141,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-11-15.md"
       }
     ],
     "currentEstimate": {
-      "min": 90,
-      "max": 110,
-      "avg": 100
+      "min": 100,
+      "max": 140,
+      "avg": 120
     },
-    "method": "single",
+    "method": "spike-blend",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-11",
+    "lastObserved": "2026-11-15",
     "stale": false,
     "seasonal": false,
-    "listingCount": 3,
+    "listingCount": 9,
     "platforms": [
       "Swiggy"
     ],
@@ -411,15 +444,15 @@
     "score": 5,
     "restaurantScore": 4,
     "reasons": [
-      "no deep-frying, a modest 2 tsp ghee, and peanuts add some protein, fibre and good fats. But sabudana is close to pure refined starch with a high glycaemic index and almost no protein or micronutrients, so the plate is filling for a short time and then leaves you hungry; it is about 560 kcal with only about 8 g protein. Restaurant versions are often greasy (reviewers have called some Mumbai versions oily) with 1 tbsp+ of ghee or oil per plate."
+      "no deep-frying, a modest 2 tsp ghee, and peanuts add some protein, fibre and good fats. But sabudana is close to pure refined starch with a high glycaemic index and almost no protein or micronutrients; the plate is about 560 kcal with only about 8 g protein, and saturated fat is about a third of the WHO limit. Restaurant versions are often oilier, with 1 tbsp or more of ghee or oil per plate and larger portions (a 400 g plate is listed on Swiggy)."
     ]
   },
   "researchRating": {
     "score": 4.5,
-    "basis": "one of the best-known Maharashtrian dishes and the default fasting food across western and northern India, featured in nearly every \"best Maharashtrian breakfast in Mumbai\" guide (LBB, Homegrown, Curly Tales) and served at classic Mumbai spots such as Prakash (Dadar), Aaswad (Dadar), Panshikar (Girgaum) and Ladu Samrat (Lalbaug). Recipes are well reviewed (Hebbar's Kitchen 5/5 from 194 votes; Whisk Affair 4.75/5; Ministry of Curry 4.67/5), and many recipe pages are built around fixing sticky results. Small deduction because it is easy to get wrong (sticky or chewy) and many people find it heavy."
+    "basis": "one of the best-known Maharashtrian dishes and the default fasting food across western and northern India, covered in nearly every Maharashtrian breakfast guide for Mumbai (LBB, Homegrown) and on recipe sites built around fixing sticky results. Recipe ratings seen this cycle: Cook With Manali 4.99 from 62 votes, Whisk Affair 4.75 from 4 votes (updated January 2026), Hebbar's Kitchen 5 from 3 votes on the current main page (the green \"hariyali\" variant shows 5 from 95 votes). Small deduction because it is easy to get wrong (sticky or chewy) and many people find it heavy."
   },
   "storage": "Best eaten fresh; the pearls harden and turn chewy as they cool. Fridge: up to 1 day in an airtight box, within 2 hours of cooking. Freezing is not recommended (the pearls go rubbery and the potato grainy). To reheat, sprinkle 1–2 tsp water, cover and microwave for 1 min, or warm in a covered non-stick pan on low heat for 2–3 min, stirring gently.",
-  "leftoverRemix": "Sabudana vada / tikki. Mash 1 cup leftover khichdi with 1 small boiled potato and a few extra crushed peanuts, shape into 4 flat patties, and shallow-fry them on a tawa with 1 tsp ghee or oil per side until crisp and golden (or air-fry at 190 °C for about 12 min). Serve with green chutney or curd: a crispy snack from soft leftovers.",
+  "leftoverRemix": "Sabudana vada / tikki. Mash 1 cup leftover khichdi with 1 small boiled potato and a few extra crushed peanuts, shape into 4 flat patties, and shallow-fry them on a tawa with 1 tsp ghee or oil per side until crisp and golden (or air-fry at 190 °C for about 12 min). Serve with green chutney or curd.",
   "burnOff": "about 8.0 km of running (560 ÷ 70 kcal/km, for a 70 kg adult), or about 11 km of brisk walking (about 2 h 15 min at 5 km/h, using about 50 kcal/km for walking) (est.). A bowl of curd on the side adds about 1–1.5 km of running.",
   "sources": [
     "Veg Recipes of India, Sabudana Khichdi (Maharashtrian style; peanut oil or ghee, sendha namak): https://www.vegrecipesofindia.com/sabudana-khichdi-recipe-maharashtrian-style/",
@@ -448,35 +481,95 @@
     "Zomato, Shree Sawariya Sabudana Khichadi, Andheri East (₹40): https://www.zomato.com/mumbai/shree-sawariya-sabudana-khichadi-near-andheri-east-station/order",
     "Zomato, Lunchbox, Manpada, Thane West (no price visible): https://www.zomato.com/mumbai/lunchbox-manpada-thane-west-thane/order",
     "Zomato, Sabudana Khichdi in Mumbai (dish page; only \"for two\" figures): https://www.zomato.com/mumbai/restaurants/dish-sabudana-khichdi",
-    "magicpin, Home Style Cooking, Mahalaxmi (price unreadable): https://magicpin.in/Mumbai/Mahalaxmi/Restaurant/Home-Style-Cooking/store/1758090/delivery"
+    "magicpin, Home Style Cooking, Mahalaxmi (price unreadable): https://magicpin.in/Mumbai/Mahalaxmi/Restaurant/Home-Style-Cooking/store/1758090/delivery",
+    "Cook With Manali, Sabudana Khichdi (4.99 from 62 votes): https://cookwithmanali.com/sabudana-khichdi",
+    "Whisk Affair, Sabudana khichdi (4.75 from 4 votes, updated January 2026): https://www.whiskaffair.com/spicy-sabudana-khichdi-recipe/",
+    "Hebbar's Kitchen, Sabudana khichdi, 5 tips for non-sticky: https://hebbarskitchen.com/sabudana-khichdi-recipe-sabakki-khichdi-recipe/ and https://hebbarskitchen.com/wprm_print/sabudana-khichdi-recipe-5-tips-for-nonsticky",
+    "Veg Recipes of India, Sabudana Khichdi (Maharashtrian style; peanut oil or ghee; vegan and gluten-free): https://www.vegrecipesofindia.com/sabudana-khichdi-recipe-maharashtrian-style/ and https://www.vegrecipesofindia.com/sabudana-khichdi-navratri-vrat-recipe",
+    "Swasthi's Recipes (Indian Healthy Recipes), Sabudana khichdi, fluffy non-sticky: https://www.indianhealthyrecipes.com/sabudana-khichdi-recipe",
+    "Ruchi's Kitchen, How to soak sabudana for khichdi: https://www.ruchiskitchen.com/wprm_print/how-to-soak-sabudana-for-khichdi",
+    "Shweta in the Kitchen, Sabudana khichdi (potatoes optional): https://shwetainthekitchen.com/sabudana-khichdi-recipe/",
+    "Indian Veggie Delight, Sabudana khichdi (potato-free option, version without onion and garlic): https://www.indianveggiedelight.com/sabudana-khichdi-recipe/",
+    "Simmer to Slimmer, Non sticky sabudana khichdi: https://simmertoslimmer.com/sabudana-khichdi/",
+    "Tarla Dalal, Sabudana khichdi calories (655 kcal per serving): https://m.tarladalal.com/calories-for-sabudana-khichdi-39657",
+    "FatSecret, ClearCals (calorie databases, seen only as a cross-check, not used for numbers): https://fatsecret.co.za/calories-nutrition/generic/sabudana-khichdi and https://clearcals.com/recipes/sabudana-khichdi",
+    "Wikimedia Commons photo page: https://commons.wikimedia.org/wiki/File:Upwas_Special_Sabudana_Khichadi.jpg",
+    "Homegrown, Maharashtrian dishes in Mumbai: https://homegrown.co.in/article/53047/19-essential-maharashtrian-dishes-in-mumbai-you-need-to-try-where-to-get-them",
+    "Swiggy, Mumbai Ladu Samrat, Parel (₹95): https://www.swiggy.com/city/mumbai/mumbai-ladu-samrat-parel-rest999268",
+    "Swiggy, Mamledar Misal, Oshiwara, Andheri West (₹89): https://swiggy.com/city/mumbai/mamledar-misal-oshiwara-andheri-west-rest916972",
+    "Swiggy, Upvas, Goregaon (₹120): https://swiggy.com/city/mumbai/upvas-opp-oberoi-mall-goregaon-rest134517",
+    "Swiggy, Gopalas Veg Kitchen, Kanjurmarg West (₹140): https://swiggy.com/city/mumbai/gopalas-veg-kitchen-kanjurmarg-west-bhandup-west-rest27633",
+    "Swiggy, Khichdi Bar, Sakinaka-Powai (₹259, 400 g): https://www.swiggy.com/city/mumbai/khichdi-bar-sakinaka-powai-rest1121954",
+    "Swiggy, Swaminee Maharashtrian Kitchen, Kalyan (₹79, MMR): https://www.swiggy.com/restaurants/swaminee-maharashtrian-kitchen-katemanivali-kalyan-mumbai-468057",
+    "Swiggy, Aradhya's Herbiage Food Products, Vashi (₹80, MMR): https://www.swiggy.com/restaurants/aradhyas-herbiage-food-products-vashi-raheja-tesla-industrial-park-mumbai-554183",
+    "Swiggy, Swad Thali, Naupada, Thane (₹90, MMR): https://swiggy.com/city/mumbai/swad-thali-naupada-rest55038",
+    "Swiggy, Udupi Xpress, Kharghar (₹154, MMR): https://www.swiggy.com/city/mumbai/udupi-xpress-kharghar-rest1169778",
+    "Swiggy, Veg Meals by Lunchbox, Antop Hill (curd meal ₹249, not used): https://www.swiggy.com/city/mumbai/veg-meals-by-lunchbox-s-m-road-antop-hill-rest263645",
+    "Swiggy, Maharashtrian restaurants in Mumbai (listing pages): https://www.swiggy.com/city/mumbai/maharashtrian-dish-restaurants"
   ],
   "allergens": [
     "peanut",
     "milk"
   ],
-  "dietClaims": [],
+  "dietClaims": [
+    "glutenFree"
+  ],
   "fasting": {
     "navratri": {
       "status": "yes",
-      "reason": "sabudana, peanuts, potato, green chilli, cumin and sendha namak (rock salt, already used in this recipe) are standard upvas foods; assumes the common Maharashtrian/North Indian rule set, and some families also skip cumin or curry leaves."
+      "reason": "sabudana, peanuts, potato, green chilli, cumin and sendha namak (rock salt, already in this recipe) are standard upvas foods; assumes the common Maharashtrian/North Indian rule set, and some families also skip cumin or curry leaves."
     },
     "ekadashi": {
       "status": "yes",
-      "reason": "a classic Ekadashi dish with no rice, wheat, pulses, onion, garlic or table salt; peanuts and potato are generally allowed, though some strict sampradayas have extra rules."
+      "reason": "a classic Ekadashi dish with no rice, wheat, pulses, onion, garlic or table salt (sources call it popular on Ekadashi, Navratri and Mahashivratri); some strict sampradayas have extra rules."
     },
     "jain": {
       "status": "with-changes",
-      "reason": "skip the potato (root vegetable) and add more peanuts; Swiggy Mumbai lists a \"Jain\" sabudana khichdi, but practice on sabudana itself (a cassava-starch product) varies by family."
+      "reason": "skip the potato (root vegetable) and add more peanuts; Swiggy Mumbai has listed a \"Jain\" sabudana khichdi, but practice on sabudana varies by family."
     },
     "ramadan": {
       "status": "yes",
-      "reason": "vegetarian, so there is no halal concern; it is mostly quick-digesting starch, so for sehri serve it with curd and the peanuts for staying power; also a common light iftar plate."
+      "reason": "vegetarian, so no halal concern; it is mostly quick-digesting starch, so serve with curd for staying power at sehri; also a light iftar plate."
     }
   },
-  "dietTags": null,
+  "dietTags": {
+    "base": "Vegetarian",
+    "jain": {
+      "status": "with-changes",
+      "reason": "drop the potato (a root vegetable) and add 10 g more peanuts; the recipe has no onion, garlic or fresh ginger. Practice on sabudana itself (a cassava-starch product) varies by family."
+    },
+    "vegan": {
+      "status": "with-changes",
+      "reason": "use groundnut oil 10 ml instead of the 9 g ghee (see the Vegan variant)"
+    },
+    "pescatarian": {
+      "status": "yes",
+      "reason": "vegetarian, no meat; dairy is allowed"
+    },
+    "sattvik": {
+      "status": "yes",
+      "reason": "no onion or garlic in the recipe"
+    },
+    "glutenFree": {
+      "status": "yes",
+      "reason": "sabudana (cassava starch), peanuts and potato contain no gluten; the recipe uses no hing (asafoetida), which is often compounded with wheat flour"
+    },
+    "dairyFree": {
+      "status": "with-changes",
+      "reason": "ghee is the only dairy; use groundnut oil (see the Dairy-free variant)"
+    },
+    "allergensDeclared": [
+      "milk",
+      "peanut"
+    ]
+  },
   "tags": [
     "Veg",
     "Jain option",
+    "Vegan option",
+    "Gluten-free",
+    "Dairy-free option",
+    "No onion-garlic",
     "Navratri / vrat",
     "Ekadashi",
     "Ramadan sehri / iftar",
@@ -484,26 +577,64 @@
     "Contains peanut",
     "Contains milk",
     "Breakfast",
-    "Dinner",
+    "Snack",
     "Maharashtrian",
     "Under 30 min",
     "Beginner"
   ],
-  "description": null,
+  "description": "Family: sabudana-khichdi",
   "familyId": null,
-  "variants": [],
+  "variants": [
+    {
+      "category": "Jain",
+      "status": "variant",
+      "name": "Potato-free sabudana khichdi",
+      "origin": "established",
+      "linkedDishNumber": null,
+      "reason": null
+    },
+    {
+      "category": "Vegan",
+      "status": "variant",
+      "name": "Groundnut-oil sabudana khichdi",
+      "origin": "established",
+      "linkedDishNumber": null,
+      "reason": null
+    },
+    {
+      "category": "Gluten-free",
+      "status": "already-fits",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": "Main recipe already gluten-free (no wheat, no hing)."
+    },
+    {
+      "category": "Dairy-free",
+      "status": "variant",
+      "name": null,
+      "origin": null,
+      "linkedDishNumber": null,
+      "reason": null
+    }
+  ],
   "needsReview": [
-    "price not confirmed (2026-10-11): only 1 platform (Swiggy) backs the range"
+    "dropped \"dairyFree\" claim: recipe has milk",
+    "price not confirmed (2026-11-15): only 1 platform (Swiggy) backs the range"
   ],
   "versions": [
     {
       "date": "2026-10-11",
       "file": "FitPlate_Dishes_2026-10-11.md"
+    },
+    {
+      "date": "2026-11-15",
+      "file": "FitPlate_Dishes_2026-11-15.md"
     }
   ],
   "mergeMethod": {
-    "nutritionPerServing": "stable (single)",
-    "orderPrice": "price engine (single)",
+    "nutritionPerServing": "stable (mean-2)",
+    "orderPrice": "price engine (spike-blend)",
     "ingredients": "newest",
     "steps": "newest",
     "healthiness": "newest",
@@ -511,5 +642,10 @@
     "sources": "union",
     "tags": "tag engine (tags.ts) on the merged dish"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: possible-spike",
+    "price flag: narrowed",
+    "Possible spike: latest avg 141 (2026-11-15) moved more than 35% from the previous estimate; using the halfway point.",
+    "Range 84.5–184.5 was wider than 30% of avg 120.5; narrowed to ±15%."
+  ]
 }

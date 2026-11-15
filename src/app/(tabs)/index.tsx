@@ -14,11 +14,14 @@ import { CountUp, FadeIn, Glass, Glow, PressableScale, Ring, SectionHeader } fro
 import { dishLibraryHref, profileHref } from '../../config/tabs';
 import { select, success } from '../../lib/haptics';
 import { DeskBreakCard } from '../../components/DeskBreakCard';
+import { ActivityWeekCard } from '../../components/ActivityWeekCard';
 import { LateNightCard } from '../../components/LateNightCard';
 import { LeftoversCard } from '../../components/LeftoversCard';
 import { StreakButton } from '../../components/StreakButton';
 import { addDays, dayKey, dayTotals, FIBRE_TARGET, recommend, useStore } from '../../lib/store';
 import { useTargets } from '../../lib/useTargets';
+import { isEnabled } from '../../config/featureFlags';
+import { netEnergy } from '../../services/burnBalance';
 import { BALANCE_LABEL } from '../../services/dishDetail';
 import { dayGroup } from '../../services/meals';
 import { colors, gradients, radius, type } from '../../theme';
@@ -131,6 +134,11 @@ export default function Today() {
                 </PressableScale>
                 <MiniStat icon="flag" color={colors.blue} label="Goal" value={goal.kcal} />
               </View>
+              {isEnabled('burnBalance') ? (
+                <Text style={styles.net} accessibilityLabel={`${netEnergy(t.kcalIn, t.kcalOut).label}. ${netEnergy(t.kcalIn, t.kcalOut).detail}`}>
+                  <Text style={styles.netStrong}>{netEnergy(t.kcalIn, t.kcalOut).label}</Text> · {netEnergy(t.kcalIn, t.kcalOut).detail}
+                </Text>
+              ) : null}
               {left < 0 ? (
                 <PressableScale onPress={() => router.push({ pathname: '/balance', params: { kcal: String(-left) } })} style={styles.balance} scaleTo={0.98} accessibilityLabel={BALANCE_LABEL}>
                   <Ionicons name="walk" size={16} color={colors.warm} />
@@ -166,6 +174,7 @@ export default function Today() {
 
           <FadeIn i={2}>
             <WeekCard days={s.days} goalKcal={goal.kcal} />
+            <ActivityWeekCard />
           </FadeIn>
 
           <FadeIn i={2}>
@@ -285,6 +294,8 @@ export default function Today() {
 }
 
 const styles = StyleSheet.create({
+  net: { color: colors.muted, fontSize: 12.5, marginTop: 10, textAlign: 'center' },
+  netStrong: { color: colors.text, fontWeight: '800' },
   panel: { flexDirection: 'row', alignItems: 'center', gap: 12, padding: 14, borderRadius: radius.lg, borderWidth: 1 },
   panelTitle: { color: colors.text, fontWeight: '800', fontSize: 15 },
   panelSub: { color: colors.muted, fontSize: 12.5, lineHeight: 17, marginTop: 2 },

@@ -7,6 +7,8 @@ import { Notice, ScreenTop } from '../components/vendors/kit';
 import { FadeIn, PressableScale } from '../components/ui';
 import { getDish, researchExercises, researchLinks } from '../data/research';
 import { useStore } from '../lib/store';
+import { isEnabled } from '../config/featureFlags';
+import { distanceWays } from '../services/burnBalance';
 import { burnWays, DEFAULT_WEIGHT_KG, durationLabel } from '../services/dishDetail';
 import { fitOrder, moveFit, userConcerns, type Fit } from '../services/moveSafety';
 import { workoutFit } from '../services/surveyMatch';
@@ -38,6 +40,10 @@ export default function Balance() {
     .filter((w) => safety(w.exerciseId).fit !== 'avoid')
     .sort((a, b) => fitOrder(safety(a.exerciseId).fit) - fitOrder(safety(b.exerciseId).fit) || fit(b.exerciseId) - fit(a.exerciseId) || a.minutes - b.minutes);
   const hidden = all.length - ways.length;
+  // Walk and run distances come from the treadmill rows of the research; hidden when the research says avoid.
+  const treadmill = byId.get('treadmill');
+  const tFit = treadmill ? safety('treadmill').fit : 'avoid';
+  const distances = isEnabled('burnBalance') && treadmill && tFit !== 'avoid' ? distanceWays(kcal, bodyWeightKg, treadmill.metOptions) : [];
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: colors.bg }}>
@@ -66,6 +72,27 @@ export default function Balance() {
               </Notice>
             ) : null}
           </View>
+        ) : null}
+
+        {distances.length ? (
+          <FadeIn i={1}>
+            <View style={styles.card}>
+              <Text style={styles.name}>By distance</Text>
+              {tFit === 'ask_doctor' || tFit === 'unknown' ? <Text style={styles.warn}>Ask first: check with a doctor before walking or running for exercise</Text> : null}
+              {distances.map((d) => (
+                <View key={d.label} style={styles.distRow}>
+                  <View style={{ flex: 1 }}>
+                    <Text style={styles.name}>{d.label}</Text>
+                    <Text style={styles.meta}>about {d.speedKmh} km/h</Text>
+                  </View>
+                  <View style={{ alignItems: 'flex-end' }}>
+                    <Text style={styles.mins}>{d.km} km</Text>
+                    <Text style={styles.minsUnit}>{durationLabel(d.minutes)}</Text>
+                  </View>
+                </View>
+              ))}
+            </View>
+          </FadeIn>
         ) : null}
 
         {ways.length ? (
@@ -121,13 +148,14 @@ export default function Balance() {
           <Text style={styles.allText}>Browse every workout in Move</Text>
           <Ionicons name="chevron-forward" size={16} color={colors.muted} />
         </PressableScale>
-        <Text style={styles.note}>Minutes = calories ÷ (Compendium MET × weight), using the fitness research. Gentle stretches are left out because they would take hours. Moves come from the fitness research; where it has no rule for your answers we ask you to check first. Check with a doctor before starting new exercise.</Text>
+        <Text style={styles.note}>Minutes = calories ÷ (Compendium MET × weight), using the fitness research. Walk and run distances use the treadmill METs and speeds from the same research. Gentle stretches are left out because they would take hours. Moves come from the fitness research; where it has no rule for your answers we ask you to check first. Check with a doctor before starting new exercise.</Text>
       </ScrollView>
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
+  distRow: { flexDirection: 'row', alignItems: 'center', paddingTop: 10 },
   hero: { alignItems: 'center', paddingVertical: 18 },
   kcal: { color: colors.warm, fontSize: 52, fontWeight: '900', letterSpacing: -2 },
   kcalUnit: { color: colors.text, fontWeight: '800', fontSize: 14 },
