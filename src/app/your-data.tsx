@@ -105,11 +105,11 @@ export default function YourData() {
 
         <Section i={4} title="Your choices">
           <Point>
-            <Text style={styles.strong}>Sign out</Text> removes your data from this device. Your account keeps it in the cloud.
+            <Text style={styles.strong}>Sign out</Text> removes your data from this device. Your account keeps it in the cloud. Workout videos you recorded stay on this phone until you delete them or use Delete my data.
           </Point>
           <Point>
             <Text style={styles.strong}>Delete my data</Text> (in Profile, when signed in) permanently removes everything we saved for your
-            account, from the cloud and this device.
+            account, from the cloud and this device, including any workout videos you recorded in camera mode.
           </Point>
           <Point>Deleting your whole account and downloading a copy of your data are coming soon.</Point>
         </Section>

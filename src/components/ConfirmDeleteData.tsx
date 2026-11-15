@@ -54,7 +54,7 @@ export function ConfirmDeleteData({ visible, onConfirm, onDone, onCancel }: Prop
           </Text>
           {failed ? (
             <Text style={styles.error} accessibilityLiveRegion="polite">
-              Couldn’t reach the cloud. Nothing was deleted. Check your connection and try again.
+              Couldn’t finish deleting. Check your connection and try again; your data is only fully deleted once this message goes away.
             </Text>
           ) : null}
           {busy ? (

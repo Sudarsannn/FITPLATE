@@ -37,6 +37,7 @@ import {
   type UserDocs,
   type UserSession,
 } from '../services/userSession';
+import { deleteAllClips } from '../services/clips';
 import { firebaseConfigured, getFirebaseAuth } from './firebase';
 
 /** The user's diet preference (the research dishes carry `dietType`). */
@@ -363,6 +364,8 @@ export function StoreProvider({ children }: { children: ReactNode }) {
         await Promise.race([active.firstSync.catch(() => {}), new Promise((r) => setTimeout(r, FIRST_SYNC_WAIT_MS))]);
         await active.session.idle();
         await deleteMyData(active.data, active.remote, active.owner, kv);
+        // Workout videos recorded in camera mode live only on this phone; they go too. A failure throws, so the screen can say it and the person can try again.
+        deleteAllClips();
         // The data is gone, so sign out without the usual flush.
         await endAuth();
       },
