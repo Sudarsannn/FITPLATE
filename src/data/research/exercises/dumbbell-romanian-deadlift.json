@@ -1,0 +1,697 @@
+{
+  "id": "dumbbell-romanian-deadlift",
+  "number": 16,
+  "name": "Dumbbell Romanian deadlift",
+  "otherNames": [
+    "Dumbbell RDL",
+    "Romanian deadlift (dumbbells)",
+    "Single-dumbbell Romanian deadlift",
+    "Single-leg dumbbell Romanian deadlift",
+    "Kickstand Romanian deadlift",
+    "Water-bottle Romanian deadlift",
+    "Rucksack Romanian deadlift",
+    "Broomstick hip-hinge drill"
+  ],
+  "section": "home",
+  "type": "strength",
+  "equipment": [
+    "pair of dumbbells",
+    "non-slip exercise mat",
+    "broomstick or dowel (optional hinge drill)"
+  ],
+  "noEquipmentAlternative": "Two filled 1-2 litre plastic water bottles or a rucksack with books held at the front of the thighs, or an unweighted hip hinge with a broomstick or rolled towel along the back.",
+  "musclesPrimary": [
+    "hamstrings",
+    "gluteus maximus"
+  ],
+  "musclesSecondary": [
+    "erector spinae",
+    "adductor magnus",
+    "trapezius",
+    "rhomboids",
+    "latissimus dorsi",
+    "forearm finger flexors",
+    "transversus abdominis",
+    "obliques"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 3.5,
+  "compendiumCode": "02054",
+  "metOptions": [
+    {
+      "code": "02054",
+      "met": 3.5,
+      "activity": "MET: 3.5, Compendium code 02054, \"resistance (weight) training, multiple exercises, 8-15 repetitions at varied resistance\" (2024 Adult Compendium of Physical Activities, conditioning-exercise table an"
+    },
+    {
+      "code": "02052",
+      "met": 5,
+      "activity": "Extras (text only, not used in the JSON): one search summary gave 02052 (squat and deadlift training) = 5.0 METs (70 kg: 58.3 kcal per 10 min, est.; about 51.4 min for 300 kcal), 02055 (circuit-style)"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "8-10 slow reps, RPE 5-6 with 3-4 reps in reserve",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "3 s down, 1 s pause, 1-2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 3,
+      "reps": "10 slow reps, RPE 5-6, paired with walking or a cardio block",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "3 s down, 1 s pause, 1-2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "10-12 reps, 3 reps in reserve",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "3 s down, 1 s pause, 1-2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "strength",
+      "sets": 3,
+      "reps": "6-8 reps with a heavier weight, 2-3 reps in reserve, clean hinge",
+      "timeSec": null,
+      "restSec": 105,
+      "tempo": "3 s down, 1 s pause, controlled up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 2,
+      "reps": "12-15 light reps, 3-4 reps in reserve",
+      "timeSec": null,
+      "restSec": 50,
+      "tempo": "2 s down, 1 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "8-12 reps, 1-3 reps in reserve, single-dumbbell or split stance",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "3 s down, 1 s pause, 1 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": 4,
+      "reps": "4-6 heavy reps or single-leg, 0-2 reps in reserve",
+      "timeSec": null,
+      "restSec": 120,
+      "tempo": "3 s down, 1 s pause, controlled up",
+      "perWeek": 2
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_ear",
+      "right_ear",
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle",
+      "left_heel",
+      "right_heel",
+      "left_foot_index",
+      "right_foot_index"
+    ],
+    "phases": [
+      {
+        "name": "top_hip",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": ">= 165",
+        "parsed": {
+          "op": ">=",
+          "value": 165,
+          "max": null
+        }
+      },
+      {
+        "name": "top_knee",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": ">= 165",
+        "parsed": {
+          "op": ">=",
+          "value": 165,
+          "max": null
+        }
+      },
+      {
+        "name": "bottom_hip",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": "<= 120",
+        "parsed": {
+          "op": "<=",
+          "value": 120,
+          "max": null
+        }
+      },
+      {
+        "name": "depth_floor_hip",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": ">= 70",
+        "parsed": {
+          "op": ">=",
+          "value": 70,
+          "max": null
+        }
+      },
+      {
+        "name": "soft_knee",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": ">= 140",
+        "parsed": {
+          "op": ">=",
+          "value": 140,
+          "max": null
+        }
+      },
+      {
+        "name": "neck_line",
+        "joint": "neck (ear-shoulder-hip)",
+        "angleDeg": ">= 150",
+        "parsed": {
+          "op": ">=",
+          "value": 150,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 2
+  },
+  "formChecks": [
+    {
+      "joint": "hip",
+      "rule": "hip angle < 165 degrees at the top (equals top_hip phase threshold)",
+      "message": "Stand all the way up, hips forward"
+    },
+    {
+      "joint": "knee",
+      "rule": "knee angle < 165 degrees at the top (equals top_knee phase threshold)",
+      "message": "Straighten your knees to soft, stand tall"
+    },
+    {
+      "joint": "hip",
+      "rule": "hip angle > 120 degrees at the bottom (equals bottom_hip phase threshold)",
+      "message": "Hinge a little further: hips back"
+    },
+    {
+      "joint": "hip",
+      "rule": "hip angle < 70 degrees at the bottom (equals depth_floor_hip phase threshold)",
+      "message": "Stop higher: keep your back flat"
+    },
+    {
+      "joint": "knee",
+      "rule": "knee angle < 140 degrees at any time (equals soft_knee phase threshold)",
+      "message": "Keep your knees soft, not squatting"
+    },
+    {
+      "joint": "neck",
+      "rule": "neck angle < 150 degrees (equals neck_line phase threshold)",
+      "message": "Neck long: eyes on the floor ahead"
+    },
+    {
+      "joint": "wrist",
+      "rule": "wrists forward of the ankles or knees by more than the set margin (position flag, not an angle)",
+      "message": "Slide the weights down your legs"
+    },
+    {
+      "joint": "heel",
+      "rule": "heel rises above its start level by more than the set margin (position flag, not an angle)",
+      "message": "Heels down: weight in the whole foot"
+    },
+    {
+      "joint": "hip",
+      "rule": "rep shorter than 2.0 s (rushing)",
+      "message": "Slow down: 3 seconds down"
+    }
+  ],
+  "safetyFlags": [
+    "set_weights_down_gently_on_mat_or_towel_no_dropping",
+    "learn_unweighted_hinge_first_broomstick_drill",
+    "light_weight_3_to_4_reps_in_reserve_for_beginners",
+    "do_not_hold_breath_breathe_out_as_you_stand",
+    "keep_back_flat_stop_before_it_rounds",
+    "keep_weights_close_to_legs",
+    "soft_knees_do_not_squat_or_lock",
+    "hypertension_light_load_no_breath_holding",
+    "heart_disease_ask_doctor_first",
+    "knee_pain_small_range_soft_knees",
+    "lower_back_pain_hinge_drill_light_load_stop_if_pain_increases",
+    "single_leg_avoid_with_back_pain_or_hamstring_injury",
+    "shoulder_problems_use_bottles_or_unweighted_hinge",
+    "osteoporosis_ask_doctor_flat_back_only",
+    "pregnancy_ask_obstetrician",
+    "postpartum_ask_physiotherapist_first",
+    "recent_surgery_get_approval",
+    "no_glass_bottles",
+    "stop_with_chest_pain_dizziness_or_sharp_pain"
+  ],
+  "progressions": [
+    "heavier dumbbells within 1-3 reps in reserve, or slower 4 s lowering with a 2 s pause",
+    "single-dumbbell, split-stance or kickstand Romanian deadlift",
+    "single-leg Romanian deadlift with a dumbbell in the opposite hand, or barbell Romanian deadlift or barbell deadlift (Gym 16) in a gym"
+  ],
+  "regressions": [
+    "broomstick or towel hip-hinge drill with no weight (head, upper back, tailbone touching)",
+    "hands-on-thighs or wall-tap hinge with no weight",
+    "light water bottles or rucksack to knee height with a short range"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "side, hip height, 2.5 m",
+      "shows": "broomstick hinge drill: stick touches head, upper back, tailbone; soft knees",
+      "textOverlay": "Three points touch the stick."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, hip height, 2.5 m",
+      "shows": "how to hold dumbbells, bottles or rucksack at the front of the thighs",
+      "textOverlay": "Weights on your thighs."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, hip height, 2.5 m",
+      "shows": "stance: feet hip-width, knees soft, mat clear, towel beside",
+      "textOverlay": "Feet hip-width, knees soft."
+    },
+    {
+      "seconds": 10,
+      "angle": "side, hip height, 2.5 m",
+      "shows": "full rep: hips back, weights slide down legs, back flat, stop at stretch, hips forward to stand",
+      "textOverlay": "Hips back. Back flat. Hips forward."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, hip height, 2.5 m",
+      "shows": "depth: knee height versus mid-shin; correct versus rounded back",
+      "textOverlay": "Stop where your back stays flat."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, hip height, 2.5 m",
+      "shows": "fault: squatting the movement versus a true hinge; weights drifting away",
+      "textOverlay": "Don't sit. Hinge."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, hip height, 2.5 m",
+      "shows": "single-dumbbell and kickstand variants with a light weight and a hand on a wall",
+      "textOverlay": "Lighter for one leg."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, hip height, 2.5 m",
+      "shows": "quiet set-down onto a towel with a 3 s count",
+      "textOverlay": "Set them down softly."
+    }
+  ],
+  "lastResearched": "2026-11-16",
+  "setupSteps": [
+    "Learn the hinge first (no weight). Hold a broomstick, mop handle or rolled towel along your back so it touches three points: the back of the head, the upper back, and the tailbone. Hinge with a slight knee bend while keeping all three points in contact. If the tailbone leaves the stick, you are bending the spine, not hinging at the hips (Prehab Guys, Rehab Hero, snippets). Move on after about 8 clean reps (one source's rule, est.).",
+    "Choose the weight. Start with the lightest option that lets you do 10 clean slow reps with 3-4 reps left in the tank (section 7). Water bottles or a rucksack are good first loads.",
+    "Mat. A non-slip mat on a flat spot; clear 1 m x 1 m and keep the floor in front of your toes free. Put a folded towel beside you to set the weights down on.",
+    "Pick the weights up safely. Bend the knees and hips to lift them from the floor (a mini squat), keep the back flat; do not round the back to pick them up.",
+    "Grip. Hold one dumbbell in each hand with an overhand grip, palms facing the thighs, weights in front of the hips. Single-dumbbell version: hold one dumbbell upright with both hands in front of the thighs. Rucksack: hold it by the top handle or both arms against the thighs. Bottles: one in each hand.",
+    "Stance. Feet hip-width apart (sources say hip-width to about shoulder-width), toes pointing forward or slightly out, weight spread over the whole foot with a bit more towards the heels (sources vary; use the width where you feel steady).",
+    "Soft knees. Bend the knees a little, just enough to unlock them (soft knee), and keep that same bend all the way down and up. The knees do not bend further as you lower.",
+    "Stand tall and set the shoulders. Chest proud, shoulder blades gently down and back (the \"back pockets\" cue), ribs down, gaze about 2 m ahead on the floor so the neck stays in line with the spine.",
+    "Camera. Phone in landscape at about hip height (80-100 cm, est.), 2-2.5 m to the side (side view), full body from head to floor in frame.",
+    "Warm up 3-5 minutes (est.): march on the spot, hip circles, 5-8 bodyweight squats (Home 1), 6-8 unweighted broomstick hinges, a few glute bridges (Home 4), and one set with very light bottles."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Stand tall holding the weights in front of the thighs",
+      "action": "Feet hip-width, knees softly bent, weights resting in front of the thighs, palms facing the body.",
+      "feel": "Weights light against the thighs, shoulders relaxed and slightly back.",
+      "breathing": "Breathe in through the nose.",
+      "tempo": null,
+      "visualCheck": "Side: ear, shoulder, hip and ankle roughly in one line; slight knee bend. Front: shoulders level, feet even, weights at the sides of the thighs."
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Brace and set the shoulders",
+      "action": "Lightly tighten the tummy as if about to be tapped, ribs down, shoulder blades gently down and back.",
+      "feel": "A firm, long trunk, not a held breath.",
+      "breathing": "A comfortable breath in; do not hold it for the whole rep.",
+      "tempo": null,
+      "visualCheck": "Side: ribs not flared, lower back neutral (not hollowed)."
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Start the hinge: send the hips back",
+      "action": "Push the hips straight back, as if closing a car door behind you with your bottom. The knees stay soft and do not bend more.",
+      "feel": "Weight moves towards the heels; the back of the thighs begins to stretch.",
+      "breathing": "Breathe in while you lower.",
+      "tempo": null,
+      "visualCheck": "Side: hips travel backwards; shins stay nearly vertical. Front: knees stay in line with the toes."
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Slide the weights down the legs",
+      "action": "Let the arms hang straight and keep the weights close to the thighs and shins, as if sliding down a pole; the further the weight is from the body, the more stress on the spine (Barbell Logic, Myprotein, snippets).",
+      "feel": "Shoulder blades staying back; light pull in the upper back and a growing stretch in the hamstrings.",
+      "breathing": "Continue breathing in.",
+      "tempo": null,
+      "visualCheck": "Side: dumbbells travel close to the legs in a near-vertical line. Front: dumbbells stay beside the thighs, not out to the sides."
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Keep the back flat and the neck long",
+      "action": "Keep the chest proud and the spine in one long line from the tailbone to the head; look at the floor 2 m ahead, not your feet.",
+      "feel": "A strong long back; no pinching or rounding.",
+      "breathing": "Hold the comfortable breath at depth only briefly.",
+      "tempo": null,
+      "visualCheck": "Side: back flat (no hump), neck in line; no tucking of the pelvis."
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Stop at your depth",
+      "action": "Stop when you feel a strong stretch in the hamstrings or when the back would start to round, or when the weights reach about mid-shin, whichever comes first. Beginners often reach only knee or just below-knee height, and that is fine. Hamstring flexibility sets how low you can go; forcing more makes the back round or the knees bend (NASM, Myprotein, snippets).",
+      "feel": "A firm, comfortable stretch in the back of the thighs, no pain in the back.",
+      "breathing": "Fully in at the bottom.",
+      "tempo": null,
+      "visualCheck": "Side: torso tipped forward (roughly 90-120 deg at the hip, est.), knees still soft, weights at or below the knee. Front: weights close to the legs."
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Drive the hips forward to stand",
+      "action": "Push the feet into the floor, squeeze the bottom, and bring the hips forward under the shoulders; the back stays flat as the torso rises.",
+      "feel": "The bottom and back of the thighs doing the work; the weights follow the legs up.",
+      "breathing": "Breathe out as you stand (do not hold the breath).",
+      "tempo": null,
+      "visualCheck": "Side: hips lead the movement, torso and hips rise together; no leaning back. Front: weights close to the thighs."
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Finish tall",
+      "action": "Stand straight, hips under shoulders, squeeze the bottom gently; do not lean back or over-arch.",
+      "feel": "Tall and balanced; a calm bottom squeeze.",
+      "breathing": "Breathe in for the next rep.",
+      "tempo": null,
+      "visualCheck": "Side: ears over shoulders over hips; knees extended but soft (not locked back). Front: weights at the sides of the thighs."
+    },
+    {
+      "n": 9,
+      "part": null,
+      "title": "Set the weights down safely",
+      "action": "After the last rep, bend the knees and hips (a mini squat), keep the back flat, and place the weights gently on the towel or mat with a 2-3 s count.",
+      "feel": "Controlled legs, no back rounding.",
+      "breathing": "Breathe out.",
+      "tempo": null,
+      "visualCheck": "Side: back flat; no drop. The only sound should be a soft touch."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Rounding the back",
+      "text": "Rounding the back. Why: loads the spine in a flexed position, a plausible injury mechanism named by ACE (a mechanism, not an established cause); thoracic rounding under load without strength raises risk (sources, snippets). Fix: lighter weights, stop higher up the legs, broomstick drill, film from the side."
+    },
+    {
+      "title": "Bending the knees too much (squatting the movement)",
+      "text": "Bending the knees too much (squatting the movement). Why: shifts the work to the thighs and takes the stretch away from the hamstrings; it is one of the two most common RDL faults cited (Myprotein, snippet). Fix: soften the knees once, keep that angle, and send the hips back instead of down."
+    },
+    {
+      "title": "Holding the weights away from the legs",
+      "text": "Holding the weights away from the legs. Why: the further the weight is from the body, the more stress on the back (Barbell Logic, snippet). Fix: slide the weights down the thighs and shins as if on a pole; keep the shoulder blades back."
+    },
+    {
+      "title": "Reaching with the arms or leading with the head",
+      "text": "Reaching with the arms or leading with the head. Why: the movement then comes from the shoulders and upper back, not the hips. Fix: arms stay long and relaxed; hips go back first."
+    },
+    {
+      "title": "Going too low for your flexibility",
+      "text": "Going too low for your flexibility. Why: the back rounds or the knees bend to force extra range, and extra depth adds little hamstring tension (Jeff Nippard summary, SimpliFaster, snippets). Fix: stop at the hamstring stretch, even if that is at knee height; depth comes with practice."
+    },
+    {
+      "title": "Locking the knees (stiff-leg)",
+      "text": "Locking the knees (stiff-leg). Why: it becomes a stiff-leg deadlift, a different, more demanding exercise (snippets). Fix: keep the soft knee, no hyperextension at the top."
+    },
+    {
+      "title": "Leaning back or over-arching at the top",
+      "text": "Leaning back or over-arching at the top. Why: loads the lower back. Fix: finish with the hips under the shoulders and a gentle bottom squeeze."
+    },
+    {
+      "title": "Dropping fast and bouncing",
+      "text": "Dropping fast and bouncing. Why: loses control, skips the slow lowering phase, and adds noise for neighbours below. Fix: 3 s lowering count, 1 s pause, controlled stand."
+    },
+    {
+      "title": "Weights too heavy too soon",
+      "text": "Weights too heavy too soon. Why: NASM lists weights too heavy to hold a good spinal position as a common error (snippet). Fix: use 3-4 reps in reserve; the last rep should look like the first."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. Why: raises blood pressure and brings dizziness (breathing study PubMed 7741618, carried from earlier items). Fix: breathe in on the way down, out on the way up."
+    }
+  ],
+  "safetyNotes": [
+    "Lower back problems: the hinge is often used in back-pain rehab, but flexed-spine hinging or going too deep can irritate it; learn the hinge unweighted, use light loads, stay flat, stop if pain increases or spreads down a leg. One source advises that people with lower back pain or hamstring injuries should avoid the single-leg version (snippet). Clinical guidance specific to the weighted dumbbell RDL: Not found.",
+    "Hamstring strain or recent hamstring pain: avoid deep stretching under load; stop at a mild stretch, not a pull. Return-to-RDL guidance: Not found.",
+    "Knee problems: the knees stay soft and almost still, so loading is mostly on the hips; use a small range, and stop with sharp pain. RDL-specific knee guidance: Not found.",
+    "Shoulder problems: the arms hang with the weights, a low-demand position; if holding the weights hurts, use bottles or a rucksack hugged at the thighs, or the unweighted hinge.",
+    "High blood pressure and heart disease: breathe out as you stand; do not hold the breath; use light weights and moderate effort; get medical clearance first if you have heart disease or uncontrolled blood pressure.",
+    "Osteoporosis: loaded strength work is generally recommended; avoid loaded spinal rounding and twisting; with severe osteoporosis or a prior vertebral fracture, ask a clinician first (reviews, snippets).",
+    "Pregnancy and postpartum: hinging is commonly kept with changes; coaches suggest a wider stance or a raised start to limit range; one ACSM-based guideline in a secondary source says keep RPE at 8/10 or below with some reps in reserve; ACOG's own wording was not reached, so ask your obstetrician, midwife or women's health physiotherapist; stop with pelvic heaviness, leaking or pain.",
+    "Mumbai flat: set the weights down gently, on a mat or towel, with a controlled lowering count; do not drop a dumbbell on a tile floor; no glass bottles; avoid the balcony slab."
+  ],
+  "sources": [
+    "2024 Adult Compendium of Physical Activities (Herrmann et al., J Sport Health Sci 2024): conditioning-exercise table and tracking guide, code 02054 (resistance training, multiple exercises, 8-15 repetitions, 3.5); Older Adult Compendium equivalent 0205460 = 4.3 on a different baseline (not used); other resistance codes seen only as a search summary. https://pacompendium.com/conditioning-exercise ; https://pacompendium.com/wp-content/uploads/2025/02/4_2024_adult-compendium-tracking-guide-1-2024.pdf ; https://pacompendium.com/wp-content/uploads/2024/02/1_2024-adult-compendium_1_2024.pdf ; https://pacompendium.com/older-adult-compendium/ ; https://pubmed.ncbi.nlm.nih.gov/38242596/ (snippets)",
+    "NASM exercise library, dumbbell Romanian deadlift (hamstrings, glutes; intermediate; common errors) and NASM blog, Romanian deadlift basics. https://www.nasm.org/resource-center/exercise-library/dumbbell-romanian-deadlift ; https://blog.nasm.org/romanian-deadlift-basics (snippets)",
+    "ACE technique series, Romanian deadlift (hinge as the base; lumbar flexion under load as a possible mechanism; dumbbell adaptation; barbell and single-leg versions as advanced). https://www.acefitness.org/education-and-resources/professional/prosource/january-2016/5767/ace-technique-series-romanian-deadlift ; https://www.acefitness.org/education-and-resources/lifestyle/exercise-library/127/single-arm-single-leg-romanian-dead-lift (snippets)",
+    "Dumbbell RDL technique and cues: Sweat, how to dumbbell Romanian deadlift; Tom's Guide, how to do a Romanian deadlift; Motra exercise guide; Liftosaur; Fitbod; The Manual; Garage Gym Reviews; Chuze Fitness; Barbell Logic; Peloton; University of Sussex sport, Romanian deadlift (dumbbells) PDF; Catalyst Athletics. https://sweat.com/blogs/fitness/how-to-dumbbell-romanian-deadlift ; https://www.tomsguide.com/how-to/how-to-do-a-romanian-deadlift ; https://motra.com/exercises/dumbbellRomanianDeadlift ; https://www.liftosaur.com/exercises/dumbbell-romanian-deadlift ; https://fitbod.me/exercises/dumbbell-romanian-deadlift ; https://themanual.com/fitness/how-to-do-the-dumbbell-romanian-deadlift ; https://www.garagegymreviews.com/how-to-deadlift-with-dumbbells ; https://chuzefitness.com/blog/dumbbell-rdl/ ; https://barbell-logic.com/how-to-do-romanian-deadlifts/ ; https://www.onepeloton.com/en-GB/blog/how-to-do-a-rdl ; https://www.sussex.ac.uk/sport/documents/romanian-deadlift-(dumbbells).pdf ; https://www.catalystathletics.com/exercise/101/Romanian-Deadlift-RDL/ (snippets)",
+    "Common mistakes (rounding, knee bend, weight away from the body, depth): Myprotein RDL form and common mistakes; Total Shape; Planfit; Boxlife Magazine; Uppper; SimpliFaster, Romanian deadlifts proper implementation; 1st Phorm, RDL form; Gravitus guide; Jeff Nippard video summary. https://us.myprotein.com/thezone/training/romanian-deadlift-exercise-form-common-mistakes ; https://totalshape.com/training/romanian-deadlift-benefits/ ; https://planfit.ai/en/blog/deadlift-form ; https://boxlifemagazine.com/how-to-do-rdls/ ; https://simplifaster.com/articles/romanian-deadlift/ ; https://1stphorm.com/blogs/news/rdl-form-how-to-master-the-romanian-deadlift ; https://gravitus.com/guides/exercises/romanian-deadlift (snippets)",
+    "Hamstring and gluteal EMG, RDL versus conventional deadlift: Lee et al. 2018, J Exerc Sci Fit (PubMed 30662500); Northumbria study (Lyons et al.); 2024 AIP proceedings study (Janep et al.); QUT thesis on RDL variants (MRI and EMG); Breed et al. hamstring demand paper (fragmentary). https://pubmed.ncbi.nlm.nih.gov/30662500/ ; https://journals.northumbria.ac.uk/index.php/gjsscmr/article/view/1595 ; https://eprints.qut.edu.au/208155/ ; https://ctsq.qc.ca/wp-content/uploads/2026/07/Hamstring-force-and-stretch.pdf (snippets)",
+    "Hip-hinge drill with a dowel or broomstick (three points of contact): The Prehab Guys, hip hinge with dowel; Rehab Hero, dowel hip hinge; elitefts, teaching the hip hinge; Dummies, broomstick drill. https://library.theprehabguys.com/vimeo-video/hip-hinge-dowel/ ; https://www.rehabhero.ca/exercise/dowel-hip-hinge ; https://elitefts.com/blogs/training/teaching-the-hip-hinge ; https://www.dummies.com/health/exercise/paleo-fitness-hinging-skill-drill-the-broomstick-drill/ (snippets)",
+    "Single-leg and kickstand versions: NFPT, kickstand Romanian deadlift; 24 Hour Fitness, single-leg Romanian deadlift; Hevy; BarBend single-leg RDL progressions; The Prehab Guys single-leg RDL. https://www.nfpt.com/kickstand-romanian-deadlift/ ; https://24hourfitness.com/24life/fitness/2018/master-this-move-single-leg-romanian-deadlift ; https://www.hevyapp.com/exercises/how-to-single-leg-romanian-deadlift-dumbbell/ ; https://barbend.com/single-leg-rdl-progressions/ ; https://library.theprehabguys.com/single-leg-romanian-deadlift/ (snippets)",
+    "No-equipment alternatives: Men's Fitness backpack workout; Fitwill bottle-weighted Romanian deadlift. https://mensfitness.co.uk/workouts/backpack-workout ; https://fitwill.app/exercise/6041/bottle-weighted-romanian-deadlift/ (snippets)",
+    "Starting weight, RPE and sets and reps: Barpath Fitness; Fitness Volt RPE guide; BoxRox; Find Your Edge beginner RDL guide; Coach CM Fit; ExercisePick (commercial, low quality). https://barpathfitness.com/blog/what-weights-should-i-start-with-for-strength-training/ ; https://fitnessvolt.com/rpe-training/exercise/romanian-deadlift/ ; https://www.boxrox.com/?p=249450 ; https://www.findyouredge.app/news/how-to-do-a-romanian-deadlift-beginners-uk-2026 ; https://coachcmfit-website.pages.dev/blog/how-to-do-a-romanian-deadlift ; https://exercisepick.com/what-weight-to-use-for-romanian-deadlift/ (snippets)",
+    "Hip hinge and low back pain: Hinge Health hip-hinge guide (company page); chiropractic column on the hip hinge; clinic articles. https://www.hingehealth.com/us/es/resources/articles/hip-hinge/ ; https://www.bainbridgereview.com/?p=112299 ; https://personalinjurydoctorgroup.com/2024/12/03/mastering-the-hip-hinge-a-key-movement-for-back-health (snippets)",
+    "Pregnancy and deadlifts (secondary sources only): Mend Colorado physical therapy blog; Garage Gym Reviews; Progressive Rehab and Strength; PMC11193983. https://www.mendcolorado.com/physical-therapy-blog/2025/10/24/deadlifting-through-pregnancy-how-to-stay-strong-safe-and-confident/ ; https://www.garagegymreviews.com/can-you-lift-weights-while-pregnant ; https://pmc.ncbi.nlm.nih.gov/articles/PMC11193983 (snippets)",
+    "Carried from earlier Home research (snippets only, not re-checked here): breathing study PubMed 7741618 https://pubmed.ncbi.nlm.nih.gov/7741618/ ; AHA recommendations https://heart.org/en/healthy-living/exercise-and-physical-activity/fitness-basics/aha-recs-for-physical-activity-in-adults ; ADA position statement (Colberg et al. 2016) https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/ and https://pmc.ncbi.nlm.nih.gov/articles/PMC2992214 ; Donnelly et al. 2009 ACSM position stand https://pubmed.ncbi.nlm.nih.gov/19127177/ ; hypothyroidism review https://pubmed.ncbi.nlm.nih.gov/37999992/ ; asthma sources https://www.pharmacymagazine.co.uk/cpd-modules/making-a-difference-in-asthma-care/exercise-and-asthma-528343 and https://pubmed.ncbi.nlm.nih.gov/21811185/ ; Vanderbilt knee OA handout https://www.vumc.org/sports-medicine/sites/vumc.org.sports-medicine/files/public_files/documents/Knee_OA_ex_quad.pdf ; Harvard Health, strength training and blood pressure https://www.health.harvard.edu/heart-health/strength-training-and-blood-pressure ; osteoporosis PMC9304091 https://pmc.ncbi.nlm.nih.gov/articles/PMC9304091 , RACGP HANDI https://www.racgp.org.au/clinical-resources/clinical-guidelines/handi/conditions/musculoskeletal/exercise-for-preventing-bone-loss-and-reducing-fra , Brooke-Wavell et al. 2022 https://pubmed.ncbi.nlm.nih.gov/35577538/ ; Mayo Clinic pregnancy exercises https://www.mayoclinic.org/healthy-lifestyle/pregnancy-week-by-week/in-depth/pregnancy-exercises/art-20546799 ; NHS Lothian DRAMs guidelines https://apps.nhslothian.scot/files/sites/2/DRAMs-Guidelines.pdf ; ACE HIIT for clinical populations https://www.acefitness.org/certifiednewsarticle/2589/high-intensity-interval-training-for-clinical/ ; Goom, Donnelly and Brockwell 2019 https://athleticsni.org/download/files/Returning_to_running_postnatal_guideline_for_medical_health_and_fitness_professionals_managing_this_population.05.pdf",
+    "NHS, ExRx.net, Harvard Health and Mayo Clinic pages on the dumbbell RDL itself, and ACOG's own pregnancy-lifting wording: Not found (searches returned no such pages)."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 28.6,
+      "70kg": 24.5,
+      "80kg": 21.4
+    },
+    "per300kcal": {
+      "60kg": 85.7,
+      "70kg": 73.5,
+      "80kg": 64.3
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "strength",
+    "muscle",
+    "general_fitness",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "short_sessions",
+    "no_gym",
+    "low_cost_equipment",
+    "small_flat",
+    "neighbours_below_with_gentle_set_down",
+    "low_ceiling",
+    "circuit"
+  ],
+  "swapsByAccess": {
+    "none": "Glute bridge (Home 4) or the broomstick hinge; or a rucksack Romanian deadlift with a short range",
+    "home_equipment": "Dumbbell goblet squat (Home 15) or a single-dumbbell Romanian deadlift; resistance band squat (Home 24, not yet researched)",
+    "basic_gym": "Leg curl (Gym 12), or a dumbbell Romanian deadlift on the gym floor",
+    "full_gym": "Leg curl (Gym 12), hip thrust (Gym 17) or back extension bench (Gym 31); barbell deadlift (Gym 16) when ready"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "Light weight, 3-4 reps in reserve, breathe out as you stand and never hold the breath; avoid straining; check blood pressure is controlled; ask a doctor if readings are very high or if medicines cause dizziness",
+      "source": "Harvard Health strength training and blood pressure (carried); breathing study PubMed 7741618 (carried); RDL-specific advice Not found"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "Resistance training 2-3 non-consecutive days a week is recommended; usual glucose checks and fast carbohydrate on hand if on insulin or sulfonylureas; check feet and shoes; start light",
+      "source": "ADA position statement 2016, secondary summary (PMC5317029, carried; PMC2992214 snippet); RDL-specific advice Not found"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "Only with clearance and a plan; light loads, no breath-holding, stop with chest discomfort, dizziness or breathlessness",
+      "source": "ACE HIIT for clinical populations (carried, snippet); RDL-specific clearance Not found"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "Fits regular exercise advice; start light and build up",
+      "source": "AHA recommendations (carried); RDL-specific advice Not found"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Start with the unweighted hinge and light bottles, small range, 60-90 s rest; build gradually; combine with walking",
+      "source": "ACSM weight position stand (Donnelly 2009, carried); RDL-specific advice Not found"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "Standard strength guidance applies; start with 2 sets and build",
+      "source": "Not found"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "Train as usual if controlled; start light if fatigued; stop for palpitations or faintness",
+      "source": "Systematic review 2023 (PubMed 37999992, carried)"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Warm up, reliever nearby; strength work is usually well tolerated; stop and use the reliever if wheeze or cough starts",
+      "source": "Asthma UK tips via Pharmacy Magazine CPD (carried); PubMed 21811185 (carried)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Soft knees, small range, light weights; the knee bends little so loading is mostly the hip; stop with sharp or increasing pain",
+      "source": "RDL-specific knee guidance Not found; Vanderbilt knee OA handout (carried)"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Hinge drill first, light weight, flat back, small range; stop if pain increases or spreads down a leg; avoid the single-leg version while symptoms last; get advice if pain persists",
+      "source": "Hinge Health hip-hinge guide, company page (snippet); chiropractic and clinic hinge articles (snippets); RDL-specific clinical guidance Not found"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "modify",
+      "change": "Hold bottles or a rucksack close to the thighs, or use the unweighted hinge; stop with pinching or sharp pain",
+      "source": "RDL-specific advice Not found"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "ask_doctor",
+      "change": "Loaded strength training is generally recommended for bone; keep the back flat, no loaded rounding or twisting; with severe osteoporosis or a vertebral fracture, get individual advice first",
+      "source": "PMC9304091 (carried, snippet); RACGP HANDI exercise for bone loss (carried, snippet); Brooke-Wavell et al. 2022 (carried)"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "ask_doctor",
+      "change": "Ask your obstetrician or midwife; hinging is commonly kept with a wider stance or raised start and light loads; stop with pain, leaking, dizziness or heaviness",
+      "source": "Mayo Clinic pregnancy exercises (carried); secondary sources on deadlifts in pregnancy (snippets); ACOG's own wording Not found"
+    },
+    {
+      "condition": "postpartum",
+      "status": "ask_doctor",
+      "change": "Ask a women's health physiotherapist; start with the unweighted hinge and breathing; stop with leaking, heaviness or pain",
+      "source": "Goom, Donnelly and Brockwell 2019 (carried); NHS Lothian DRAMs (carried)"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Only with surgeon or physiotherapist approval, especially after back, hip, abdominal, pelvic or heart surgery",
+      "source": "Not found"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "home",
+      "gym"
+    ],
+    "bodyRegion": [
+      "lower"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "muscle",
+      "strength"
+    ],
+    "intensity": "moderate",
+    "noise": "quiet",
+    "space": "mat_only",
+    "typicalMinutes": 10,
+    "kcalPer10min70kg": 40.8,
+    "difficulty1to5": 3,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Home",
+    "Gym",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Strength",
+    "Legs",
+    "Glutes",
+    "Rep counter",
+    "10–20 min"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-11-16",
+      "file": "FitPlate_Fitness_2026-11-16.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

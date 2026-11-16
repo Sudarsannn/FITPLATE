@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it, jest } from '@jest/globals';
 
-import { deleteAllClips } from '../services/clips';
+import { clipCountLine, countClips, deleteAllClips } from '../services/clips';
 
 type Entry = { name: string };
 const mockState: { exists: boolean; entries: Entry[]; failDelete: boolean; deleted: number; noModule: boolean } = { exists: true, entries: [], failDelete: false, deleted: 0, noModule: false };
@@ -41,5 +41,16 @@ describe('deleteAllClips (part of Delete my data)', () => {
   it('throws when the folder is still there, so the person is told', () => {
     mockState.failDelete = true;
     expect(() => deleteAllClips()).toThrow(/could not be deleted/);
+  });
+
+  it('counts clips for the Your data line, and deleting leaves none', () => {
+    expect(countClips()).toBe(2);
+    expect(clipCountLine(2)).toBe('Workout clips on this phone: 2 (deleted with your data)');
+    deleteAllClips();
+    expect(countClips()).toBe(0);
+  });
+  it('has no count when the file module is missing', () => {
+    mockState.noModule = true;
+    expect(countClips()).toBeNull();
   });
 });

@@ -1,11 +1,12 @@
 import { Ionicons } from '@expo/vector-icons';
 import { router } from 'expo-router';
-import type { ReactNode } from 'react';
+import { useState, type ReactNode } from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { FadeIn, Glass, PressableScale } from '../components/ui';
 import { useStore } from '../lib/store';
+import { clipCountLine, countClips } from '../services/clips';
 import { IconBadge, type IconName } from '../components/Icon';
 import { colors, type } from '../theme';
 
@@ -45,6 +46,7 @@ function Point({ children }: { children: ReactNode }) {
 export default function YourData() {
   const { user } = useStore();
   const signedIn = Boolean(user && !user.guest);
+  const [clips] = useState(countClips);
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: colors.bg }}>
@@ -73,6 +75,15 @@ export default function YourData() {
               </View>
             </View>
           ))}
+          {clips !== null ? (
+            <View style={styles.row}>
+              <IconBadge name="videocam-outline" size={34} />
+              <View style={{ flex: 1 }}>
+                <Text style={styles.rowTitle}>Workout clips</Text>
+                <Text style={styles.small}>{clipCountLine(clips)}. They stay on this phone and are never uploaded.</Text>
+              </View>
+            </View>
+          ) : null}
           {signedIn ? (
             <Text style={[styles.small, { marginTop: 6 }]}>
               Signing in with Google also shares your name, email and photo with FitPlate. Firebase sign-in keeps them with your account.

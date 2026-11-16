@@ -1,0 +1,614 @@
+{
+  "id": "gout-high-uric-acid",
+  "type": "condition",
+  "name": "Gout and high uric acid",
+  "surveyQuestion": "Do you have any of these health conditions? (select all that apply) -> Gout or high uric acid. Check question: Has a doctor told you that you have gout, or that your uric acid is high? Yes, gout / Yes, high uric acid only / Not sure (check with a doctor) / No. Follow-ups: Do you take a urate-lowering medicine or colchicine? Yes / No / Not sure (stored only). Do you have kidney disease, heart disease or failure, liver disease, are you pregnant, or take a water pill (diuretic)? Yes / No / Not sure. Optional serum uric acid and eGFR with date. Has your doctor given you a fluid goal or limit (enter number)? Do you fast for vrat or religious reasons? Yes / No.",
+  "targets": [
+    {
+      "nutrient": "energy",
+      "unit": "kcal/day",
+      "generalAdult": 2110,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (2110 sedentary man, 1660 sedentary woman) (secondary, unverified); gradual weight loss only if overweight or obese; ACR 2020 conditional (via search summary)"
+    },
+    {
+      "nutrient": "protein",
+      "unit": "g/kg/day",
+      "generalAdult": 0.83,
+      "profileValue": 0.83,
+      "min": 0.8,
+      "max": 1,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); 0.8-1.0 g/kg is an app range (est.), not a gout-specific guideline value; total protein not linked to gout (Choi NEJM 2004, via search); P13 overrides in CKD"
+    },
+    {
+      "nutrient": "total_fat",
+      "unit": "% energy",
+      "generalAdult": 30,
+      "profileValue": 30,
+      "min": null,
+      "max": 30,
+      "direction": "same",
+      "source": "DGI 2024; WHO 2023; no gout-specific change found; prefer low-fat dairy"
+    },
+    {
+      "nutrient": "saturated_fat",
+      "unit": "% energy",
+      "generalAdult": 10,
+      "profileValue": 10,
+      "min": null,
+      "max": 10,
+      "direction": "same",
+      "source": "WHO 2023; Malaysian MOH gout CPG limits saturated fat in DASH-style advice (via search)"
+    },
+    {
+      "nutrient": "trans_fat",
+      "unit": "% energy",
+      "generalAdult": 1,
+      "profileValue": 1,
+      "min": null,
+      "max": 1,
+      "direction": "same",
+      "source": "WHO 2023; no gout-specific change found"
+    },
+    {
+      "nutrient": "mufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found; no gout-specific change"
+    },
+    {
+      "nutrient": "pufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found; no gout-specific change"
+    },
+    {
+      "nutrient": "omega_3",
+      "unit": "servings/week",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found; oily fish is a purine food so not pushed for gout"
+    },
+    {
+      "nutrient": "dietary_cholesterol",
+      "unit": "mg/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found; no gout-specific advice"
+    },
+    {
+      "nutrient": "total_carbohydrate",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No ICMR total found; DGI 2024 cereals and millets cap 45% of energy (secondary, unverified)"
+    },
+    {
+      "nutrient": "added_sugar",
+      "unit": "g/day",
+      "generalAdult": 25,
+      "profileValue": 25,
+      "min": null,
+      "max": 25,
+      "direction": "limit",
+      "source": "WHO 2015 (5% of energy, conditional), as P6/P14; ACR 2020 limit high-fructose corn syrup (conditional, very low certainty); sugary soft drinks 2+/day RR 1.85 men (Choi BMJ 2008), 2.39 women (JAMA 2010) (via search)"
+    },
+    {
+      "nutrient": "fibre",
+      "unit": "g/day",
+      "generalAdult": 30,
+      "profileValue": 30,
+      "min": 30,
+      "max": null,
+      "direction": "same",
+      "source": "As P4; no gout-specific change"
+    },
+    {
+      "nutrient": "sodium",
+      "unit": "mg/day",
+      "generalAdult": 2000,
+      "profileValue": 2000,
+      "min": 1500,
+      "max": 2000,
+      "direction": "limit",
+      "source": "DGI 2024 and topic 18; DASH diet lowered urate about 0.35 mg/dL (via search); do not raise salt"
+    },
+    {
+      "nutrient": "salt",
+      "unit": "g/day",
+      "generalAdult": 5,
+      "profileValue": 5,
+      "min": null,
+      "max": 5,
+      "direction": "limit",
+      "source": "As above; 2,000 mg sodium = 5 g salt"
+    },
+    {
+      "nutrient": "potassium",
+      "unit": "mg/day",
+      "generalAdult": 3500,
+      "profileValue": 3500,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020; WHO 3,510 mg; topic 19; from food only; no KCl salt substitute without doctor (CKD, ACE inhibitor, ARB)"
+    },
+    {
+      "nutrient": "calcium",
+      "unit": "mg/day",
+      "generalAdult": 1000,
+      "profileValue": 1000,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); low-fat dairy counts; dairy RR about 0.56 (Choi NEJM 2004, via search)"
+    },
+    {
+      "nutrient": "iron",
+      "unit": "mg/day",
+      "generalAdult": 19,
+      "profileValue": 19,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (men 19, women 29) (secondary, unverified); no gout-specific change"
+    },
+    {
+      "nutrient": "magnesium",
+      "unit": "mg/day",
+      "generalAdult": 440,
+      "profileValue": 440,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (men 440, women 370) (secondary, unverified); no change"
+    },
+    {
+      "nutrient": "vitamin_d",
+      "unit": "ug/day",
+      "generalAdult": 15,
+      "profileValue": 15,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); no gout-specific change"
+    },
+    {
+      "nutrient": "vitamin_b12",
+      "unit": "ug/day",
+      "generalAdult": 2.2,
+      "profileValue": 2.2,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "folate",
+      "unit": "ug DFE/day",
+      "generalAdult": 300,
+      "profileValue": 300,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (men 300, women 220) (secondary, unverified)"
+    },
+    {
+      "nutrient": "vitamin_c",
+      "unit": "mg/day",
+      "generalAdult": 80,
+      "profileValue": 80,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (men 80, women 65; topic 5) (secondary, unverified); ACR 2020 conditionally recommends against adding vitamin C; meta-analysis of trials (median 500 mg/day) showed small urate fall (Juraschek 2011, via search); avoid 1,000 mg/day or more because of kidney stones (P14); food only"
+    },
+    {
+      "nutrient": "purines_animal",
+      "unit": "portions/week",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "limit",
+      "source": "No numeric limit found; ACR 2020 limit purine-rich foods (conditional, low certainty); meat RR 1.41, seafood RR 1.51 top vs bottom fifth, men (Choi NEJM 2004, via search)"
+    },
+    {
+      "nutrient": "purines_plant",
+      "unit": "portions/week",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No limit; purine-rich vegetables not linked to gout (Choi NEJM 2004, via search); Nutrients 2019 review of plant-based diets"
+    },
+    {
+      "nutrient": "alcohol",
+      "unit": "drinks/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "limit",
+      "source": "ACR 2020 limit alcohol (conditional, low certainty); beer RR about 2.5 and spirits about 1.6 for 2+ a day, men (Choi Lancet 2004, via search); WHO 2023 no safe level; numeric limit Not found"
+    },
+    {
+      "nutrient": "water",
+      "unit": "mL/day",
+      "generalAdult": 2500,
+      "profileValue": 2500,
+      "min": 2000,
+      "max": 3000,
+      "direction": "raise",
+      "source": "Neogi case-crossover (5-8 glasses water about 40% fewer attacks; observational; via news summary); topic 30 (men 2,500 ml, women 2,000 ml) and topic 31 (heat); not for kidney, heart or liver disease, fluid limits or water pills. Follow your doctor's advice."
+    }
+  ],
+  "bloodMarkers": [
+    {
+      "marker": "Serum uric acid (urate), treatment target",
+      "target": "under 6 mg/dL (360 umol/L) for most people on urate-lowering treatment; under 5 mg/dL (300 umol/L) for severe gout (tophi, chronic arthropathy, frequent attacks); long-term under 3 mg/dL not advised; set by the doctor",
+      "unit": "mg/dL",
+      "source": "ACR 2020; EULAR 2016 (via search summaries)"
+    },
+    {
+      "marker": "Serum urate saturation (hyperuricaemia definition)",
+      "target": "above about 6.8 mg/dL (crystals can form)",
+      "unit": "mg/dL",
+      "source": "ACR 2020 definition (via review summary; secondary)"
+    },
+    {
+      "marker": "Serum uric acid, normal range in Indian labs",
+      "target": "Not found; lab ranges differ by sex and lab",
+      "unit": "mg/dL",
+      "source": "Not found"
+    },
+    {
+      "marker": "Serum creatinine / eGFR",
+      "target": "Not found; stored only; see P13; kidney function affects allopurinol, colchicine and NSAID safety",
+      "unit": "mL/min/1.73 m2",
+      "source": "ACR 2020 (via search); P13"
+    },
+    {
+      "marker": "Blood pressure",
+      "target": "Not found here; stored only; see P3",
+      "unit": "mmHg",
+      "source": "Not found"
+    },
+    {
+      "marker": "HbA1c / fasting glucose",
+      "target": "Not found here; stored only; see P1/P2",
+      "unit": "% / mg/dL",
+      "source": "Not found"
+    }
+  ],
+  "waterMl": {
+    "min": 2000,
+    "max": 3000,
+    "notes": "Default fluids for gout or high uric acid: about 2,000-3,000 ml a day, mostly water (observational signal: 5-8 glasses of water linked to about 40% fewer attacks, Neogi; low evidence), plus the topic 31 heat top-up (+500 to +1,000 ml, app cap 4,500 ml). Count plain chaas, unsweetened tea or coffee, nimbu pani with little sugar, tender coconut water; avoid sugary drinks and alcohol. requires_doctor_input: for kidney disease (P13), heart disease or failure (P21), liver disease, pregnancy, a fluid limit or anyone on a water pill (diuretic) the app shows only the general range (topic 30) and never pushes the higher default. Follow your doctor's advice."
+  },
+  "sodiumMgMax": 2000,
+  "dietaryCholesterolMgMax": null,
+  "foodsFavour": [
+    "plain water through the day; plain chaas, nimbu pani with little sugar, tender coconut water in moderation",
+    "low-fat milk, curd and chaas",
+    "dal, whole pulses, sprouts in normal portions (plant purines did not raise gout risk in cohorts)",
+    "vegetables including palak, mushroom, cauliflower and peas; whole grains, millets; fruit in measured portions",
+    "unsweetened tea or coffee if already used",
+    "cherries or unsweetened tart cherry as an optional extra (low evidence)",
+    "gradual weight loss if overweight"
+  ],
+  "foodsLimit": [
+    "organ meats (liver, kidney, brain), mutton and red meat, shellfish and prawns, sardine-type oily fish and anchovies",
+    "beer, whisky and other spirits",
+    "sugar-sweetened drinks: cola, packaged juice, sharbat, sweet lassi, energy drinks",
+    "salty foods: pickles, papad, namkeen, farsan, chips, instant noodles, sauces, processed meat",
+    "fasting and crash diets followed by feasting; very long gaps without water",
+    "vitamin C tablets, high-dose niacin, and herbal or ayurvedic 'uric acid cure' powders without the doctor",
+    "large portions of sweets and fried snacks"
+  ],
+  "goodFitDishes": [
+    {
+      "dishNumber": 9,
+      "dishName": "Idli with Sambar"
+    },
+    {
+      "dishNumber": 35,
+      "dishName": "Curd Rice"
+    },
+    {
+      "dishNumber": 52,
+      "dishName": "Moong Dal Khichdi"
+    },
+    {
+      "dishNumber": 26,
+      "dishName": "Moong Dal Chilla"
+    },
+    {
+      "dishNumber": 16,
+      "dishName": "Besan Chilla"
+    },
+    {
+      "dishNumber": 1,
+      "dishName": "Poha"
+    },
+    {
+      "dishNumber": 6,
+      "dishName": "Upma"
+    },
+    {
+      "dishNumber": 71,
+      "dishName": "Ragi Dosa"
+    },
+    {
+      "dishNumber": 66,
+      "dishName": "Sprouts Chaat"
+    },
+    {
+      "dishNumber": 67,
+      "dishName": "Mix Veg Curry"
+    },
+    {
+      "dishNumber": 37,
+      "dishName": "Bhindi Masala"
+    },
+    {
+      "dishNumber": 44,
+      "dishName": "Baingan Bharta"
+    },
+    {
+      "dishNumber": 32,
+      "dishName": "Aloo Gobi"
+    },
+    {
+      "dishNumber": 49,
+      "dishName": "Mushroom Masala"
+    },
+    {
+      "dishNumber": 14,
+      "dishName": "Egg Bhurji"
+    },
+    {
+      "dishNumber": 69,
+      "dishName": "Paneer Bhurji"
+    },
+    {
+      "dishNumber": 5,
+      "dishName": "Dal Tadka"
+    },
+    {
+      "dishNumber": 41,
+      "dishName": "Pongal"
+    },
+    {
+      "dishNumber": 19,
+      "dishName": "Jeera Rice"
+    }
+  ],
+  "cautionDishes": [
+    {
+      "dishNumber": 23,
+      "dishName": "Mutton Rogan Josh",
+      "reason": "Red meat, purine-rich; large portions raise risk; salt and fat (est.)"
+    },
+    {
+      "dishNumber": 62,
+      "dishName": "Mutton Biryani",
+      "reason": "Red meat portion, salt and calories (est.)"
+    },
+    {
+      "dishNumber": 93,
+      "dishName": "Mutton Keema",
+      "reason": "Red meat, purine-rich (est.)"
+    },
+    {
+      "dishNumber": 77,
+      "dishName": "Keema Pav",
+      "reason": "Red meat and pav salt (est.)"
+    },
+    {
+      "dishNumber": 55,
+      "dishName": "Prawn Masala",
+      "reason": "Shellfish purines; limit portions (est.)"
+    },
+    {
+      "dishNumber": 33,
+      "dishName": "Goan Fish Curry",
+      "reason": "Fish and seafood intake raised risk in cohort; smaller portions (est.)"
+    },
+    {
+      "dishNumber": 73,
+      "dishName": "Rava Fish Fry",
+      "reason": "Fish purines; fried; salt (est.)"
+    },
+    {
+      "dishNumber": 2,
+      "dishName": "Chicken Biryani",
+      "reason": "Large animal protein portion, salt, calories (est.)"
+    },
+    {
+      "dishNumber": 7,
+      "dishName": "Butter Chicken",
+      "reason": "Animal protein, cream and salt (est.)"
+    },
+    {
+      "dishNumber": 28,
+      "dishName": "Chicken 65",
+      "reason": "Fried, salt and animal protein (est.)"
+    },
+    {
+      "dishNumber": 87,
+      "dishName": "Chilli Chicken",
+      "reason": "Soy sauce, salt, animal protein (est.)"
+    },
+    {
+      "dishNumber": 92,
+      "dishName": "Kothu Parotta",
+      "reason": "Mixed meat or egg with refined parotta; fat and salt (est.)"
+    },
+    {
+      "dishNumber": 98,
+      "dishName": "Mango Lassi",
+      "reason": "Added sugar and fructose; not yet researched (est.)"
+    },
+    {
+      "dishNumber": 99,
+      "dishName": "Masala Chai",
+      "reason": "Added sugar; tea and coffee themselves fine unsweetened; not yet researched (est.)"
+    },
+    {
+      "dishNumber": 100,
+      "dishName": "Cold Coffee",
+      "reason": "Added sugar; not yet researched (est.)"
+    },
+    {
+      "dishNumber": 95,
+      "dishName": "Rice Kheer",
+      "reason": "Sugar; not yet researched (est.)"
+    },
+    {
+      "dishNumber": 96,
+      "dishName": "Gajar Halwa",
+      "reason": "Sugar and ghee; not yet researched (est.)"
+    },
+    {
+      "dishNumber": 97,
+      "dishName": "Gulab Jamun",
+      "reason": "Sugar; not yet researched (est.)"
+    },
+    {
+      "dishNumber": 40,
+      "dishName": "Sabudana Khichdi",
+      "reason": "Common vrat dish: refined starch, fried peanut, ghee; fasting pattern; small portion and drink water (est.)"
+    },
+    {
+      "dishNumber": 13,
+      "dishName": "Pav Bhaji",
+      "reason": "Hidden salt, refined carbs, butter (est.)"
+    },
+    {
+      "dishNumber": 20,
+      "dishName": "Vada Pav",
+      "reason": "Hidden salt, fried, refined carbs (est.)"
+    },
+    {
+      "dishNumber": 83,
+      "dishName": "Bhel Puri",
+      "reason": "Salt in sev, chutneys and chaat masala (est.)"
+    }
+  ],
+  "conflictsWith": [
+    {
+      "profileId": "chronic-kidney-disease-early",
+      "rule": "P13 overrides fluid, potassium, protein, NSAID and salt-substitute rules; the higher gout fluid default is not shown; doctor decides"
+    },
+    {
+      "profileId": "heart-disease",
+      "rule": "P21 overrides fluid; requires_doctor_input true"
+    },
+    {
+      "profileId": "kidney-stones",
+      "rule": "Shared direction on fluids, weight and purines; stone fluid target applies only if no kidney, heart or liver exclusion; vitamin C 1,000 mg or more stays off; do not cut dairy"
+    },
+    {
+      "profileId": "hypertension",
+      "rule": "Same sodium cap (2,000 mg); diuretics and BP medicines are the doctor's; thiazide and loop water pills can raise urate"
+    },
+    {
+      "profileId": "type-2-diabetes",
+      "rule": "Compatible; weight loss and sugar cap help both; fructose drinks avoided; doctor input"
+    },
+    {
+      "profileId": "prediabetes",
+      "rule": "Compatible; obesity and insulin resistance raise urate"
+    },
+    {
+      "profileId": "low-hdl-metabolic-syndrome",
+      "rule": "Compatible; same weight, sugar and alcohol direction"
+    },
+    {
+      "profileId": "fatty-liver",
+      "rule": "Compatible; limit alcohol and sugary drinks; liver disease puts fluids in doctor mode"
+    },
+    {
+      "profileId": "fat-loss",
+      "rule": "Gradual loss only; no crash or fasting plans; fluids stay up"
+    },
+    {
+      "profileId": "muscle-gain",
+      "rule": "Flag red-meat-heavy and powder-heavy plans; hydrate more; doctor input if CKD"
+    },
+    {
+      "profileId": "endurance-running",
+      "rule": "Compatible; hydrate before, during and after; avoid sugary sports drinks as routine"
+    },
+    {
+      "profileId": "pregnancy",
+      "rule": "Pregnancy overrides; doctor input; no gout targets set"
+    },
+    {
+      "profileId": "osteoporosis",
+      "rule": "Compatible; low-fat dairy counts for calcium"
+    },
+    {
+      "profileId": "jain-diet",
+      "rule": "Food filter; compatible; watch refined carbs and sugar"
+    },
+    {
+      "profileId": "vegan-diet",
+      "rule": "Compatible; vegan diets are not automatically low in urate; watch sugar, refined carbs and mock-meat products"
+    }
+  ],
+  "requiresDoctorInput": true,
+  "requiresDoctorInputStated": true,
+  "fluidNote": "Follow your doctor's advice",
+  "warnings": [
+    "General information, not medical advice. FitPlate does not diagnose gout or tell anyone whether a painful joint is gout; a doctor is needed.",
+    "A high uric acid number alone is not gout. The treatment target (under 6 mg/dL, or under 5 mg/dL in tophi) and any medicine are set by the doctor.",
+    "Never start or stop allopurinol, febuxostat, colchicine or any painkiller because of diet, a lab result or a flare; ask your doctor.",
+    "Colchicine and NSAID painkillers need dose changes or avoidance in kidney disease; the app gives no doses and no drug advice.",
+    "Low-dose aspirin, thiazide or loop water pills and high-dose niacin can raise uric acid; do not stop them on your own; ask your doctor.",
+    "The higher fluid default (2,000-3,000 ml) is not for kidney, heart or liver disease, pregnancy, fluid limits or anyone on a water pill; the app shows only the general range and \"Follow your doctor's advice\" for these.",
+    "Emergency: a hot, red, swollen, very painful joint with fever or chills, or feeling very unwell. Seek emergency care now (112).",
+    "Rash, swelling of face or lips, fever or breathlessness after starting a new medicine: seek care now.",
+    "Do not fast hard or crash-diet; ask your doctor before any vrat or religious fast; keep taking your medicine.",
+    "Herbal, ayurvedic and apple cider vinegar 'uric acid cures' are not proven; do not use them in place of medical care.",
+    "requires_doctor_input is true because diagnosis, urate-lowering and flare medicines, kidney and heart conditions and fluid advice need a doctor."
+  ],
+  "lastResearched": "2026-11-16",
+  "versions": [
+    {
+      "date": "2026-11-16",
+      "file": "FitPlate_Nutrients_2026-11-16.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3); max as safety limit",
+    "limits": "safety limit (lower on conflict)",
+    "lists": "union",
+    "requiresDoctorInput": "stated true in any version, else newest version (missing flag + limits → true)"
+  },
+  "mergeNotes": [],
+  "needsReview": []
+}

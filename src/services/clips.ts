@@ -18,3 +18,18 @@ export function deleteAllClips(): number {
   if (dir.exists) throw new Error('The workout videos could not be deleted.');
   return count;
 }
+
+/** How many workout clips are on this phone, or null when this app cannot hold any (no file module, or the web). */
+export function countClips(): number | null {
+  const F = loadFiles();
+  if (!F) return null;
+  try {
+    const dir = new F.Directory(F.Paths.document, CLIP_DIR);
+    return dir.exists ? dir.list().length : 0;
+  } catch {
+    return null;
+  }
+}
+
+/** The one line for the Your data screen. */
+export const clipCountLine = (n: number) => `Workout clips on this phone: ${n} (deleted with your data)`;

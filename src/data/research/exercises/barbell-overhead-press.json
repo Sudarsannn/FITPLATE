@@ -1,0 +1,722 @@
+{
+  "id": "barbell-overhead-press",
+  "number": 32,
+  "name": "Barbell overhead press",
+  "otherNames": [
+    "Standing military press",
+    "Strict press",
+    "Military press",
+    "Standing barbell shoulder press",
+    "Seated barbell press with back support (regression)"
+  ],
+  "section": "gym",
+  "type": "strength",
+  "equipment": [
+    "Barbell",
+    "Plates",
+    "Collars or clips",
+    "Squat rack with safety pins or straps",
+    "Optional upright bench with back support"
+  ],
+  "noEquipmentAlternative": "Dumbbell shoulder press (Home 18) with bags or water bottles, or a push-up variant",
+  "musclesPrimary": [
+    "anterior deltoid",
+    "lateral deltoid",
+    "triceps brachii",
+    "upper pectoralis major"
+  ],
+  "musclesSecondary": [
+    "upper trapezius",
+    "lower trapezius",
+    "serratus anterior",
+    "rotator cuff",
+    "glutes",
+    "abdominals",
+    "obliques",
+    "erector spinae",
+    "forearm grip muscles"
+  ],
+  "level": "intermediate",
+  "impact": "low",
+  "flatFriendly": false,
+  "met": 3.5,
+  "compendiumCode": null,
+  "metOptions": [
+    {
+      "code": "02052",
+      "met": 5,
+      "activity": "Extras (text only, harder work): code 02052 (5.0 METs, resistance training, squats and deadlifts, slow or explosive effort) and code 02050 (6.0 METs, vigorous effort, power lifting or body building) a"
+    },
+    {
+      "code": "02050",
+      "met": 6,
+      "activity": "Extras (text only, harder work): code 02052 (5.0 METs, resistance training, squats and deadlifts, slow or explosive effort) and code 02050 (6.0 METs, vigorous effort, power lifting or body building) a"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "8-10 with an empty bar or light load, RIR 2-3",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "1 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 3,
+      "reps": "8-10 with an empty bar or light load (circuit station)",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "1 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "8-10 at RIR 2-3",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "1 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "strength",
+      "sets": 3,
+      "reps": "5 with clean form only",
+      "timeSec": null,
+      "restSec": 120,
+      "tempo": "1 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 2,
+      "reps": "12-15 light",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "1 s up, 0 s pause, 2 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "8-10 at RIR 2",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "1 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "8-12 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "1 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "strength",
+      "sets": 4,
+      "reps": "4-6 at RIR 2",
+      "timeSec": null,
+      "restSec": 150,
+      "tempo": "1 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "12-15 at RIR 2",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "1 s up, 0 s pause, 2 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "8-12",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "1 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "6-12 at RIR 0-2",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "1 s up, 1 s pause, 3 s down",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": 5,
+      "reps": "3-5",
+      "timeSec": null,
+      "restSec": 180,
+      "tempo": "1 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "endurance",
+      "sets": 4,
+      "reps": "15+",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "1 s up, 0 s pause, 2 s down",
+      "perWeek": 2
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "either",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "rack_start",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": "<= 90",
+        "parsed": {
+          "op": "<=",
+          "value": 90,
+          "max": null
+        }
+      },
+      {
+        "name": "top_lockout",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": ">= 165",
+        "parsed": {
+          "op": ">=",
+          "value": 165,
+          "max": null
+        }
+      },
+      {
+        "name": "lean_back_limit",
+        "joint": "torso lean from vertical (shoulder-hip line against the vertical, side view)",
+        "angleDeg": "<= 15",
+        "parsed": {
+          "op": "<=",
+          "value": 15,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 3
+  },
+  "formChecks": [
+    {
+      "joint": "elbow",
+      "rule": "elbow angle < 165 degrees at the top (equals top phase threshold; rep not counted)",
+      "message": "Press all the way up and lock out"
+    },
+    {
+      "joint": "elbow",
+      "rule": "elbow angle > 90 degrees at the bottom (equals start phase threshold; rep not counted)",
+      "message": "Lower the bar to your shoulders"
+    },
+    {
+      "joint": "torso",
+      "rule": "separate flag: torso lean from vertical > 15 degrees (equals lean_back_limit threshold)",
+      "message": "Ribs down, glutes tight: do not lean back"
+    },
+    {
+      "joint": "wrist",
+      "rule": "separate front-view flag: wrist x-position more than about half a shoulder-width from the shoulder x-position at the top (no joint angle)",
+      "message": "Finish with the bar over your shoulders and mid-foot"
+    },
+    {
+      "joint": "wrist",
+      "rule": "separate front-view flag: one wrist higher than the other by more than about 10 percent of shoulder width",
+      "message": "Press both arms evenly"
+    },
+    {
+      "joint": "knee",
+      "rule": "separate flag: knee angle < 160 degrees during the press",
+      "message": "Keep legs still: strict press"
+    },
+    {
+      "joint": "elbow",
+      "rule": "rep duration < 3 s",
+      "message": "Slow down: control each rep"
+    }
+  ],
+  "safetyFlags": [
+    "set_safety_pins_below_lowest_bar_position",
+    "test_pins_with_empty_bar",
+    "empty_bar_first",
+    "collars_every_set",
+    "even_plates",
+    "rerack_only_when_bar_touches_uprights",
+    "know_the_forward_bail_with_empty_bar",
+    "no_arching_or_lean_back",
+    "glutes_and_abs_braced",
+    "no_long_breath_holding",
+    "high_blood_pressure_no_failure_sets",
+    "shoulder_problems_modify_or_use_machine",
+    "lower_back_pain_use_seated_back_supported_or_machine",
+    "osteoporosis_ask_doctor",
+    "pregnancy_ask_obstetrician",
+    "postpartum_modify",
+    "recent_surgery_follow_surgeon_limits",
+    "ask_staff_first_session"
+  ],
+  "progressions": [
+    "add small plates by double progression",
+    "paused presses",
+    "push press (intermediate and advanced)"
+  ],
+  "regressions": [
+    "seated press with back support (barbell or dumbbell)",
+    "dumbbell shoulder press (Home 18)",
+    "shoulder press machine (Gym 33) or landmine press"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "front, 3 m",
+      "shows": "bar at upper-chest height, safeties set, collars on",
+      "textOverlay": "Set the pins. Collars on"
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 2 m",
+      "shows": "grip just outside shoulders, forearms near vertical",
+      "textOverlay": "Forearms vertical"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "unrack, step back, brace glutes and abs",
+      "textOverlay": "Squeeze glutes. Ribs down"
+    },
+    {
+      "seconds": 10,
+      "angle": "side, 2.5 m",
+      "shows": "one slow rep: head back, bar close to the face, head through, lockout, 2-3 s lowering",
+      "textOverlay": "Head back, then through"
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 2.5 m",
+      "shows": "straight lockout, wrists over shoulders, bar level",
+      "textOverlay": "Lock out over mid-foot"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "wrong: leaning back and arching; right: staying tall",
+      "textOverlay": "No lean-back"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "reracking: bar touches uprights, then lower",
+      "textOverlay": "Rerack: touch, then lower"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "seated version with back pad",
+      "textOverlay": "Seated: back supported"
+    }
+  ],
+  "lastResearched": "2026-11-16",
+  "setupSteps": [
+    "Set the hooks. FitPlate beginner choice: set the bar in the rack at about upper-chest height (est.), so you only need to dip slightly to get under it and do not have to stand on your toes to unrack. Sources differ: one guide says roughly eye level or slightly above, others say shoulder or upper-chest level. Pick the height where you unrack with a small bend of the knees and no lean.",
+    "Set the safeties. Place the pins or straps just below the lowest point of your press, about chest-to-upper-chest height (est.; no press-specific standard found, sources say \"just below shoulder level\"). Test with the empty bar: lower it onto the safeties to confirm it clears you.",
+    "Choose the load. Start with the empty bar (about 20 kg for a standard Olympic bar, est.; check the bar label, lighter training bars exist). Beginner guides suggest empty-bar sets of 5-12 reps first; do not add weight until sets are clean.",
+    "Collars or clips on every loaded set. Fit them on both ends and load both sides evenly; a rep-fitness article calls collars mandatory for the overhead press because plates can shift.",
+    "Feet: about hip-to-shoulder width, toes slightly out, weight over the whole foot (mid-foot). Feet too close together makes balance harder.",
+    "Grip: overhand, hands just outside shoulder width (est.), so that at the bottom the forearms are close to vertical and the wrists are above the elbows. Sources agree on \"just outside the shoulders\"; wider shoulders often prefer a slightly wider grip.",
+    "Hold the bar low in the palm with the thumbs wrapped, the wrist straight (bar over the wrist and forearm, not resting back on bent fingers).",
+    "Elbows slightly in front of the bar (not flared out to the sides), pointing forward and slightly down; this is the front-rack position.",
+    "Get under the bar with the bar resting on the front of the shoulders and upper chest; stand up to lift it off the hooks.",
+    "Step back one or two small steps and set your feet. Check that you are clear of the hooks and other people.",
+    "Brace: squeeze the glutes, pull the ribs down, tighten the abdominals as if bracing for a light punch; knees locked but not hyper-extended (soft-straight).",
+    "Seated version (regression): use an upright bench with a back pad (about 75-90 degrees, sources vary; est.), feet flat, lower back against the pad with a natural curve only (not a hard arch), bar at upper-chest height on the rack or taken from a spotter or staff the first time.",
+    "Spotter or staff: not essential with correct safeties, but ask staff to watch the first session and check the pin height."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Take the bar out of the rack",
+      "action": "Dip under the bar, bar on the front shoulders, lift it off the hooks by standing up.",
+      "feel": "Weight on the front of the shoulders and legs.",
+      "breathing": "Breathe in as you stand.",
+      "tempo": null,
+      "visualCheck": "Front: elbows just in front of the bar, wrists straight. Side: the bar over mid-foot."
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Step back and set your feet",
+      "action": "Take one or two small steps back, feet hip to shoulder width.",
+      "feel": "Whole foot on the floor.",
+      "breathing": "Breathe normally.",
+      "tempo": null,
+      "visualCheck": "Front: feet even. Side: knees soft-straight."
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Brace the glutes and abdominals",
+      "action": "Squeeze the glutes, ribs down, belly tight.",
+      "feel": "Trunk like a solid column.",
+      "breathing": "Breathe in and brace, do not hold for long.",
+      "tempo": null,
+      "visualCheck": "Side: ribs not flared; lower back not arched."
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Start the press",
+      "action": "Press the bar up from the shoulders; the elbows stay slightly in front.",
+      "feel": "Front shoulders and triceps working.",
+      "breathing": "Start breathing out as the bar moves.",
+      "tempo": null,
+      "visualCheck": "Front: forearms near vertical; bar does not drift forward."
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Move the head back as the bar passes the face",
+      "action": "Tip the head back slightly (move the whole head, not just the chin) so the bar travels close to the face in a straight line.",
+      "feel": "Bar skims past the nose and forehead.",
+      "breathing": "Out.",
+      "tempo": null,
+      "visualCheck": "Side: bar moves up in a near-vertical line; the torso does not lean back."
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Push the head through as the bar clears the forehead",
+      "action": "Once the bar is above the forehead, push the head and chest forward through the arms so the bar finishes over the body.",
+      "feel": "Shoulders and triceps drive the last part.",
+      "breathing": "Out, then hold briefly.",
+      "tempo": null,
+      "visualCheck": "Front: the bar moving to centre; side: head slightly forward of the bar."
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Lock out over mid-foot",
+      "action": "Straighten the elbows fully, shrug slightly to lock out with the bar over the middle of the feet (the Starting Strength school calls this the active shrug).",
+      "feel": "Arms straight, shoulders up near the ears, trunk tight.",
+      "breathing": "Brief hold.",
+      "tempo": null,
+      "visualCheck": "Front: both wrists over the shoulders, bar level. Side: bar, shoulder, hip and ankle roughly in one vertical line."
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Pause briefly",
+      "action": "Hold stable at the top.",
+      "feel": "Solid balance.",
+      "breathing": "Breathe out and in once.",
+      "tempo": null,
+      "visualCheck": "Front: no sway; side: no lean-back."
+    },
+    {
+      "n": 9,
+      "part": null,
+      "title": "Lower under control",
+      "action": "Lower the bar back to the front shoulders along the same line; move the head back as it passes the face and then forward again.",
+      "feel": "Shoulders and triceps control the lowering.",
+      "breathing": "Breathe in.",
+      "tempo": null,
+      "visualCheck": "Side: straight path, trunk still; front: elbows end slightly in front of the bar."
+    },
+    {
+      "n": 10,
+      "part": null,
+      "title": "Rerack after the last rep",
+      "action": "After the final rep, walk forward until the bar touches the hooks, check both sides, then lower the bar onto them gently.",
+      "feel": "Weight settles onto the hooks.",
+      "breathing": "Out.",
+      "tempo": null,
+      "visualCheck": "Front: both ends of the bar sit in the hooks; never rerack by feel or in a hurry (a missed hook can drop the bar on you, Starting Strength)."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Leaning back and arching the lower back",
+      "text": "Leaning back and arching the lower back. Why: the lumbar spine bends backward to put the bar overhead, which loads the lower-back joints and discs, and a physiotherapy-oriented source calls it the most common cause of low back pain from the press (coach-level). Fix: squeeze the glutes, ribs down, lighter bar, or use a seated press with back support or a machine (Gym 33)."
+    },
+    {
+      "title": "Pushing the bar out in front of the face",
+      "text": "Pushing the bar out in front of the face. Why: a forward bar path makes the lift harder and pulls you off balance. Fix: move the head back so the bar goes straight up, then push the head through."
+    },
+    {
+      "title": "Elbows flared to the sides",
+      "text": "Elbows flared to the sides. Why: shortens the path and stresses the shoulder front. Fix: keep the elbows slightly in front of the bar and the forearms near vertical."
+    },
+    {
+      "title": "Not locking out over mid-foot",
+      "text": "Not locking out over mid-foot. Why: the bar over the toes or heels means balance is poor and the shoulders can tire early. Fix: finish with the bar over the middle of the foot, head through, a small shrug."
+    },
+    {
+      "title": "Using the legs (accidental push press)",
+      "text": "Using the legs (accidental push press). Why: a knee dip makes it a different lift and hides weak shoulders. Fix: knees straight, a slow strict press, drop the load."
+    },
+    {
+      "title": "Holding the breath for long",
+      "text": "Holding the breath for long. Why: raises blood pressure briefly. Fix: brace, press, breathe out near the top; do not hold through the whole set."
+    },
+    {
+      "title": "No collars or uneven plates",
+      "text": "No collars or uneven plates. Why: a plate can slide and tip the bar overhead. Fix: collars every loaded set and a tug test."
+    },
+    {
+      "title": "Safeties too low, too high or not set",
+      "text": "Safeties too low, too high or not set. Why: pins too low do not catch a missed rep; too high get in the way. Fix: set just below the lowest bar position and test with an empty bar (no press-specific standard found)."
+    },
+    {
+      "title": "Reracking by feel",
+      "text": "Reracking by feel. Why: a missed hook can drop the bar on you. Fix: walk forward until the bar touches the uprights, look, and lower slowly."
+    },
+    {
+      "title": "Going too heavy too soon",
+      "text": "Going too heavy too soon. Why: form breaks, spine and shoulder risk. Fix: empty bar first, add 1.25-2.5 kg when all sets are clean."
+    }
+  ],
+  "safetyNotes": [
+    "Safeties and collars: set the pins just below the lowest bar position, use collars on every loaded set, rerack only after the bar touches the uprights.",
+    "Shoulder impingement: the evidence is mixed. A 2012 meta-analysis (Timmons) found less upward rotation of the shoulder blade in people with impingement, while a 2016 meta-analysis (Park) found no difference in subacromial space; no study was found that shows the barbell press causes impingement. Practical advice: press in the scapular plane (elbows slightly in front), avoid shrugging high early, avoid behind-the-neck, stop with sharp or pinching pain.",
+    "Lower back: keep ribs down and glutes tight; stop if you feel a pinch or pain in the lower back. Strength coaches and Barbell Medicine suggest limiting end-range back extension and using a seated back-supported press or a staggered stance during early spondylolysis; this is coach-level, and symptom-free spondylolysis is not an automatic ban.",
+    "High blood pressure: brace but do not hold the breath through the set; stop short of failure.",
+    "Spotter: not required if the safeties are correct, but ask staff to check your first session.",
+    "Gym etiquette: do not rack or unrack on only one side; strip plates after use; do not block the rack for long rests; wipe the bar; do not film other members."
+  ],
+  "sources": [
+    "2024 Adult Compendium of Physical Activities (Herrmann et al., J Sport Health Sci 2024): code 02054, 3.5 METs, resistance training, multiple exercises, 8-15 reps at varied resistance; extras 02052 (5.0) and 02050 (6.0) (search summaries; official pages not opened). https://pacompendium.com/conditioning-exercise ; https://pacompendium.com/wp-content/uploads/2025/02/4_2024_adult-compendium-tracking-guide-1-2024.pdf ; https://pubmed.ncbi.nlm.nih.gov/38242596/ (snippets only)",
+    "ACE Fitness exercise library, Standing barbell shoulder press (advanced; bar at shoulder height, step back, tall straight back, press directly overhead, lower slowly) and Seated shoulder press (intermediate). https://www.acefitness.org/exerciselibrary/71/standing-barbell-shoulder-press ; https://www.acefitness.org/resources/everyone/exercise-library/43/seated-shoulder-press/ (snippets only; full steps not seen)",
+    "ExRx.net, Barbell Military Press and Barbell Seated Military Press (page headers only; seated has a more upright torso). https://exrx.net/WeightExercises/DeltoidAnterior/BBMilitaryPress ; https://exrx.net/WeightExercises/DeltoidAnterior/BBSeatedMilitaryPress (snippets only; instructions and muscle lists not confirmed)",
+    "StrongLifts, How to overhead press with proper form (grip, near-vertical bar path, lockout, starting with the empty bar). https://stronglifts.com/overhead-press/ (snippet only)",
+    "Starting Strength, Balance in the press, The double layback and Safety in a barbell training gym / The importance of using safeties (lean from hip extension not the lumbar spine; active shrug lockout; reracking caution; safeties). https://startingstrength.com/training/balance-in-the-press-you-have-to-lay-back ; https://mail.startingstrength.com/article/the-double-layback-a-lifters-approach ; https://mail.startingstrength.com/article/safety-in-a-barbell-training-gym ; https://mail.startingstrength.com/article/the-importance-of-using-safeties-in-the-squat-and-bench-press (snippets only)",
+    "Barbell Logic, Proper precautions for strength training safety (record hook and pin heights; pins low enough not to interfere, high enough to catch). https://barbell-logic.com/proper-precautions-for-strength-training-safety/ (snippet only)",
+    "RepFitness, How to fail heavy lifts without becoming a meme (collars mandatory for the press; forward bail). https://repfitness.com/blogs/training/how-to-fail-heavy-lifts (snippet only; retailer blog)",
+    "Garage Gym Reviews, Squat rack safety (pins versus straps). https://www.garagegymreviews.com/squat-rack-safety (snippet only)",
+    "GymNation, Barbell standing military press (glutes squeezed, ribs down, leaning back means too heavy). https://gymnation.com/exercise-library/barbell-standing-military-press (snippet only; gym-chain guidance)",
+    "Catalyst Athletics, Press (no dramatic backward lean needed in training). https://www.catalystathletics.com/exercise/90/Press/ (snippet only)",
+    "Bodybuilding.com, Mastering the overhead press form (grip that stacks the wrist over the elbow); Physio-Network, The best damn overhead press article for physios (front-rack wrist; individual variation). https://bodybuilding.com/content/mastering-overhead-press-form-essential-techniques-and-cues.html ; https://www.physio-network.com/blog/best-damn-overhead-press-article-physios/ (snippets only)",
+    "Seated versus standing press EMG: 2013 Journal of Strength and Conditioning Research study (15 men) as summarised by Breaking Muscle, Fitness Volt and Cathe. https://breakingmuscle.com/fitness/the-core-during-the-overhead-press-and-other-core-related-shenanigans ; https://fitnessvolt.com/?p=310069 (snippets only; original paper not opened; percentages conflict between write-ups)",
+    "Seated press setup (bench angle about 75-90 degrees): GymNation seated overhead press, Fitness Volt, Hevy. https://gymnation.com/exercise-library/barbell-seated-overhead-press ; https://fitnessvolt.com/seated-military-press/ (snippets only; no peer-reviewed angle found)",
+    "Shoulder impingement evidence: Timmons et al. 2012 (scapular kinematics meta-analysis); Michener et al. 2003; Park et al. 2016 (via Muscle and Motion summary). https://pages.uoregon.edu/biomech/obl/articles/2012_timmons.pdf ; https://pages.uoregon.edu/biomech/obl/articles/2003_michener_clinbiomech.pdf ; https://www.muscleandmotion.com/blog/the-evolution-of-shoulder-impingement/ (snippets only)",
+    "Shoulder pain and pressing modifications: Physio-Network, Mike Reinold. https://www.physio-network.com/?p=45617 ; https://mikereinold.com/getting-back-to-overhead-exercises-in-the-gym/ (snippets only; clinician blogs)",
+    "Lower back and the press: Powerlifting Technique, MEND Colorado, Barbell Medicine (spondylolysis). https://powerliftingtechnique.com/overhead-press-back-pain/ ; https://www.mendcolorado.com/physical-therapy-blog/2022/7/19/low-back-tightness-or-pain-with-overhead-press/ ; https://www.barbellmedicine.com/blog/spondypartone/ (snippets only; coach and clinician blogs)",
+    "Beginner loading: Bodybuilding.com beginner guide, Gravitus, Boostcamp, StrongLifts 5x5 summaries (empty bar start, small steps). https://gravitus.com/guides/exercises/overhead-press ; https://boostcamp.app/blogs/mastering-overhead-press-a-beginners-guide (snippets only; fitness blogs, weighed lightly)",
+    "ACSM (2009), Progression models in resistance training for healthy adults (carried over). https://www.sportgeneeskunde.com/wp-content/uploads/ACSM-Position-Stand-Progression-Models-in-Resistance-Training-for-Healthy-Adults.pdf",
+    "Zourdos MC et al. (2016), RIR-based RPE scale (carried over). https://openrepository.aut.ac.nz/items/efef3b25-6701-4fb5-bb82-55fcd2a26027/full",
+    "Condition rows carried over from Gym 20, 21, 24, 26, 28 and 29 citations (not re-opened this session): Valsalva review https://pubmed.ncbi.nlm.nih.gov/23222073/ ; Colberg et al. 2016 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/ ; ACC summary of AHA 2023 https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2023/12/19/15/33/resistance-exercise-training ; AHA Gibbs et al. https://professional.heart.org/en/science-news/Physical-Activity-as-a-Critical-Component-of-First-Line-Treatment-for-Elevated-BP-or-Cholesterol/commentary ; Donnelly et al. 2009 https://pubmed.ncbi.nlm.nih.gov/19127177/ ; PCOS https://vuir.vu.edu.au/45855/1/1-s2.0-S2772696723000054-main.pdf ; thyroid https://pubmed.ncbi.nlm.nih.gov/37999992/ ; asthma https://www.pharmacymagazine.co.uk/cpd-modules/making-a-difference-in-asthma-care/exercise-and-asthma-528343 ; LIFTMOR https://academic.oup.com/jbmr/article/33/2/211/7605709 ; Osteoporosis Canada https://osteoporosis.ca/wp-content/uploads/2014-07-25-Are-you-too-fit-to-fracture-for-patients.pdf ; ACOG CO 804 https://opqic.org/acog-committee-opinion-no-804-physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period/ ; Contemporary OB/GYN https://www.contemporaryobgyn.net/sweating-it-out-exercise-in-pregnancy ; NNUH https://www.nnuh.nhs.uk/publication/download/post-natal-physiotherapy-advice-and-exercises-v2-1",
+    "Note: all sources for this item were seen only as search-result summaries (pages not opened in full); many are coaching blogs. The elbow thresholds (90 and 165 degrees), the lean-back limit (15 degrees from vertical), the 3 s minimum rep, the knee-dip and wrist-alignment thresholds, the empty-bar start, plate steps, pin and rack heights and all sets, reps and rest values are FitPlate choices (est.), not validated. Not found: a full ACE, NASM, NSCA, Harvard Health, NHS or Mayo Clinic page with press steps; the ExRx step-by-step text; a peer-reviewed standard for rack or safety-pin height; a validated forearm or elbow angle at the shoulders; a validated lean-back threshold; a peer-reviewed seated bench angle; direct evidence that the barbell press causes impingement; a press-specific professional-body prescription; condition-specific sources for knee pain, obesity and PCOS; the primary ACOG page."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 28.6,
+      "70kg": 24.5,
+      "80kg": 21.4
+    },
+    "per300kcal": {
+      "60kg": 85.7,
+      "70kg": 73.5,
+      "80kg": 64.3
+    }
+  },
+  "gymAccess": [
+    "full_gym",
+    "basic_gym"
+  ],
+  "suitsPreferences": [
+    "strength",
+    "intermediate",
+    "upper_body_day",
+    "push_day",
+    "full_body",
+    "shoulder_day",
+    "push_pull_legs",
+    "30_to_60_min_sessions"
+  ],
+  "swapsByAccess": {
+    "none": "Dumbbell shoulder press (Home 18) with bags or water bottles, or a push-up variant (Home 2)",
+    "home_equipment": "Dumbbell shoulder press (Home 18) with adjustable dumbbells",
+    "basic_gym": "Shoulder press machine (Gym 33) or seated dumbbell press",
+    "full_gym": "Barbell overhead press with empty bar; seated back-supported press, dumbbell shoulder press (Home 18) and shoulder press machine (Gym 33) as stepping stones"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "No long breath-holding; stop 2-3 reps before failure; no lifting if resting BP >= 180/120; uncontrolled BP: ask a doctor",
+      "source": "Valsalva systematic review 2013 (PubMed 23222073); NSCA 1999 Valsalva article; Biology of Sport 2019 systematic review"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "2-3 non-consecutive resistance days per week; usual glucose checks if on insulin or sulfonylureas",
+      "source": "ADA position statement, Colberg et al. 2016"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "After clearance: machine or seated press at a light load, continuous breathing, no straining",
+      "source": "AHA resistance exercise statement (via ACC summary 2023)"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "Part of 2+ days per week resistance work with aerobic activity",
+      "source": "AHA scientific statement (Gibbs et al.)"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "A large belly can make bracing and bar path harder; start with a seated press or machine; exercise-specific advice not found",
+      "source": "ACSM weight management position stand (Donnelly et al. 2009)"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "Fits muscle-strengthening guidance; exercise-specific advice not found",
+      "source": "International PCOS guideline 2023"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "Train normally if controlled; start at beginner level with ongoing fatigue",
+      "source": "Systematic review 2023 (PubMed 37999992)"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Warm up and keep reliever inhaler nearby",
+      "source": "Asthma exercise guidance (Pharmacy Magazine CPD)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "ok",
+      "change": "Press loads the knees little; keep soft-straight, no dip; seated press if standing is painful; condition-specific source not found",
+      "source": "Not found"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Use seated press with back support, machine or dumbbells; standing barbell press only if pain-free with ribs down and no arching; acute pain or disc or spondylolysis problems: ask a professional",
+      "source": "Powerlifting Technique and MEND Colorado blogs (snippets); Barbell Medicine spondylolysis article (snippet)"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "modify",
+      "change": "Dumbbells in the scapular plane, landmine press or machine; stop with sharp or pinching pain; pain over 2 weeks, night pain, weakness or catching: see a clinician",
+      "source": "Physio-Network and Mike Reinold pages (snippets); Timmons 2012 and Park 2016 meta-analyses (snippets)"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "ask_doctor",
+      "change": "Resistance work benefits bone, but a loaded standing press with low bone mass or a spine fracture needs a physiotherapist first",
+      "source": "LIFTMOR trial (Watson et al.); Osteoporosis Canada"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "ask_doctor",
+      "change": "Ask obstetrician; seated back-supported press or dumbbells as balance and lean-back get harder",
+      "source": "ACOG Committee Opinion 804; contemporaryobgyn.net summary (secondary)"
+    },
+    {
+      "condition": "postpartum",
+      "status": "modify",
+      "change": "Pelvic floor work first; return to loaded overhead work once cleared, especially after caesarean; use light dumbbells or a machine",
+      "source": "NHS postnatal physiotherapy leaflets (NNUH, Royal Devon)"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Only with surgeon or physiotherapist approval; shoulder, chest, abdominal or back surgery often restricts overhead loaded work",
+      "source": "General clearance advice; condition-specific source not found"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "gym"
+    ],
+    "bodyRegion": [
+      "upper"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "fat_loss",
+      "muscle",
+      "strength",
+      "endurance"
+    ],
+    "intensity": "moderate",
+    "noise": "moderate",
+    "space": "large_area",
+    "typicalMinutes": 10,
+    "kcalPer10min70kg": 41,
+    "difficulty1to5": 4,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Gym",
+    "Intermediate",
+    "Low impact",
+    "Strength",
+    "Shoulders",
+    "Arms",
+    "Chest",
+    "Rep counter",
+    "10–20 min"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-11-16",
+      "file": "FitPlate_Fitness_2026-11-16.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

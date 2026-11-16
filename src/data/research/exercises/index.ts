@@ -8,6 +8,7 @@ import item_barbell_back_squat from './barbell-back-squat.json';
 import item_barbell_bent_over_row from './barbell-bent-over-row.json';
 import item_barbell_deadlift from './barbell-deadlift.json';
 import item_barbell_flat_bench_press from './barbell-flat-bench-press.json';
+import item_barbell_overhead_press from './barbell-overhead-press.json';
 import item_bhujangasana_cobra_pose from './bhujangasana-cobra-pose.json';
 import item_bodyweight_squat from './bodyweight-squat.json';
 import item_burpees from './burpees.json';
@@ -19,6 +20,7 @@ import item_chest_press_machine from './chest-press-machine.json';
 import item_dead_bug from './dead-bug.json';
 import item_desk_neck_shoulder_release from './desk-neck-shoulder-release.json';
 import item_dumbbell_goblet_squat from './dumbbell-goblet-squat.json';
+import item_dumbbell_romanian_deadlift from './dumbbell-romanian-deadlift.json';
 import item_elliptical_cross_trainer from './elliptical-cross-trainer.json';
 import item_figure_4_glute_stretch from './figure-4-glute-stretch.json';
 import item_glute_bridge from './glute-bridge.json';
@@ -40,8 +42,10 @@ import item_pull_up_bar from './pull-up-bar.json';
 import item_push_up from './push-up.json';
 import item_quad_and_calf_stretch from './quad-and-calf-stretch.json';
 import item_reverse_lunge from './reverse-lunge.json';
+import item_roman_chair_back_extension from './roman-chair-back-extension.json';
 import item_rowing_machine from './rowing-machine.json';
 import item_seated_cable_row from './seated-cable-row.json';
+import item_setu_bandhasana_bridge_pose from './setu-bandhasana-bridge-pose.json';
 import item_skipping_rope from './skipping-rope.json';
 import item_smith_machine from './smith-machine.json';
 import item_stair_climber from './stair-climber.json';
@@ -66,6 +70,7 @@ export const items: Exercise[] = [
   item_barbell_bent_over_row as unknown as Exercise,
   item_barbell_deadlift as unknown as Exercise,
   item_barbell_flat_bench_press as unknown as Exercise,
+  item_barbell_overhead_press as unknown as Exercise,
   item_bhujangasana_cobra_pose as unknown as Exercise,
   item_bodyweight_squat as unknown as Exercise,
   item_burpees as unknown as Exercise,
@@ -77,6 +82,7 @@ export const items: Exercise[] = [
   item_dead_bug as unknown as Exercise,
   item_desk_neck_shoulder_release as unknown as Exercise,
   item_dumbbell_goblet_squat as unknown as Exercise,
+  item_dumbbell_romanian_deadlift as unknown as Exercise,
   item_elliptical_cross_trainer as unknown as Exercise,
   item_figure_4_glute_stretch as unknown as Exercise,
   item_glute_bridge as unknown as Exercise,
@@ -98,8 +104,10 @@ export const items: Exercise[] = [
   item_push_up as unknown as Exercise,
   item_quad_and_calf_stretch as unknown as Exercise,
   item_reverse_lunge as unknown as Exercise,
+  item_roman_chair_back_extension as unknown as Exercise,
   item_rowing_machine as unknown as Exercise,
   item_seated_cable_row as unknown as Exercise,
+  item_setu_bandhasana_bridge_pose as unknown as Exercise,
   item_skipping_rope as unknown as Exercise,
   item_smith_machine as unknown as Exercise,
   item_stair_climber as unknown as Exercise,

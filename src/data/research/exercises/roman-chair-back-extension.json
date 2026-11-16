@@ -1,0 +1,661 @@
+{
+  "id": "roman-chair-back-extension",
+  "number": 31,
+  "name": "Roman chair / back extension bench",
+  "otherNames": [
+    "Back extension",
+    "Hyperextension",
+    "45 degree hyperextension",
+    "Roman chair back extension",
+    "90 degree back extension"
+  ],
+  "section": "gym",
+  "type": "strength",
+  "equipment": [
+    "45 degree back extension bench or horizontal Roman chair",
+    "Optional weight plate"
+  ],
+  "noEquipmentAlternative": "Superman back raise (Home 9) or glute bridge (Home 4)",
+  "musclesPrimary": [
+    "erector spinae",
+    "gluteus maximus",
+    "hamstrings"
+  ],
+  "musclesSecondary": [
+    "multifidus",
+    "gluteus medius",
+    "adductor magnus"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": false,
+  "met": 2.8,
+  "compendiumCode": "02024",
+  "metOptions": [
+    {
+      "code": "02024",
+      "met": 2.8,
+      "activity": "MET (beginner prescription): 2.8, Compendium code 02024, \"calisthenics (e.g., curl ups, abdominal crunches, plank), light effort\" (2024 Adult Compendium; confirmed by search this session; 2.8 METs fal"
+    },
+    {
+      "code": "02054",
+      "met": 3.5,
+      "activity": "Extras (text only): code 02054, 3.5 METs, \"resistance (weight) training, multiple exercises, 8-15 reps at varied resistance\" applies once a plate is added and effort is moderate (ACSM 5-6/10 = Borg 12"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 2,
+      "reps": "10-12 bodyweight at RIR 3+",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2 s down, 1 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 2,
+      "reps": "10-12 bodyweight (circuit finisher)",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "2 s down, 1 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "10-12 bodyweight at RIR 3",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "2 s down, 1 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "strength",
+      "sets": 3,
+      "reps": "8-10 bodyweight or light plate at RIR 3",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "2 s down, 1 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 2,
+      "reps": "12-15 bodyweight at RIR 3",
+      "timeSec": null,
+      "restSec": 50,
+      "tempo": "2 s down, 0 s pause, 2 s up",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "10-12 at RIR 2",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2 s down, 1 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "8-12 with plate at RIR 2",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "2 s down, 1 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "strength",
+      "sets": 4,
+      "reps": "6-8 with plate at RIR 2",
+      "timeSec": null,
+      "restSec": 120,
+      "tempo": "2 s down, 1 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "15-20 at RIR 2",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "2 s down, 0 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "12-15 at RIR 2",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2 s down, 1 s pause, 2 s up",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "8-12 with plate at RIR 1-2",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "2 s down, 1 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": 4,
+      "reps": "5-8 with plate at RIR 1-2",
+      "timeSec": null,
+      "restSec": 150,
+      "tempo": "2 s down, 1 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "endurance",
+      "sets": 4,
+      "reps": "20+ at RIR 2",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "2 s down, 0 s pause, 2 s up",
+      "perWeek": 2
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "side",
+    "landmarks": [
+      "left_shoulder",
+      "right_shoulder",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "top_straight_line",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": ">= 165",
+        "parsed": {
+          "op": ">=",
+          "value": 165,
+          "max": null
+        }
+      },
+      {
+        "name": "bottom_hinged",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": "<= 120",
+        "parsed": {
+          "op": "<=",
+          "value": 120,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 3
+  },
+  "formChecks": [
+    {
+      "joint": "hip",
+      "rule": "hip angle < 165 degrees at the top (equals top phase threshold; rep not counted)",
+      "message": "Rise to a straight line"
+    },
+    {
+      "joint": "hip",
+      "rule": "hip angle > 120 degrees at the bottom (equals bottom phase threshold; rep not counted)",
+      "message": "Hinge a little lower, keep your back long"
+    },
+    {
+      "joint": "spine",
+      "rule": "separate flag: shoulder above the hip-to-ankle line at the top (hyperextension; no angle used)",
+      "message": "Stop at a straight line: no arch"
+    },
+    {
+      "joint": "hip",
+      "rule": "rep duration < 3 s",
+      "message": "Slow down: control each rep"
+    },
+    {
+      "joint": "neck",
+      "rule": "separate flag: ear or nose rises above the shoulder line at the top (no angle used)",
+      "message": "Keep your neck long"
+    }
+  ],
+  "safetyFlags": [
+    "set_pad_below_hip_bones",
+    "lock_ankles_under_rollers",
+    "stop_at_straight_line_no_hyperextension",
+    "keep_back_long_no_rounding",
+    "no_swinging_or_bouncing",
+    "no_breath_holding",
+    "high_blood_pressure_no_failure_sets",
+    "lower_back_pain_pain_free_range_only",
+    "disc_disease_ask_clinician",
+    "osteoporosis_ask_doctor_before_loaded_hinge",
+    "pregnancy_ask_obstetrician_no_face_down",
+    "recent_surgery_follow_surgeon_limits",
+    "add_plate_only_after_12_clean_bodyweight_reps",
+    "ask_staff_first_session"
+  ],
+  "progressions": [
+    "fingertips behind the head",
+    "plate or dumbbell held at the chest (small steps)",
+    "90 degree / horizontal Roman chair with a 2 s pause at the top"
+  ],
+  "regressions": [
+    "Superman back raise (Home 9)",
+    "glute bridge (Home 4)",
+    "45 degree bench, half range, arms crossed"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "side, 3 m",
+      "shows": "pad adjusted just below the hip bones",
+      "textOverlay": "Pad just below the hip bones"
+    },
+    {
+      "seconds": 6,
+      "angle": "front-side, 2 m",
+      "shows": "heels under the upper roller, ankles against the lower roller",
+      "textOverlay": "Lock the ankles"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 3 m",
+      "shows": "straight line from head to heels, arms crossed",
+      "textOverlay": "Straight line: head to heels"
+    },
+    {
+      "seconds": 10,
+      "angle": "side, 3 m",
+      "shows": "one rep: hinge down, pause, rise, squeeze",
+      "textOverlay": "Hinge, pause, rise, squeeze"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 3 m",
+      "shows": "wrong: arching past straight; right: stopping at a straight line",
+      "textOverlay": "Stop at straight: no arch"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 3 m",
+      "shows": "wrong: rounded lower back; right: long flat back as the torso tips",
+      "textOverlay": "Fold at the hips"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 3 m",
+      "shows": "plate held flat on the chest, close to the breastbone",
+      "textOverlay": "Plate close to the chest"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 3 m",
+      "shows": "horizontal Roman chair: parallel to the floor, hinge and rise",
+      "textOverlay": "Rise to level, not past"
+    }
+  ],
+  "lastResearched": "2026-11-16",
+  "setupSteps": [
+    "Set the pad height. Most guides place the thigh pad so its top edge sits just below the hip bones (the front hip points), at the crease where the thigh meets the torso, so the hips are free to fold. If the pad rides up over the hip bones or the stomach, you will bend at the spine instead of the hip (coach-level; no source gave centimetres, Not found).",
+    "Set the ankle rollers. Hook the heels under the upper roller and press the front of the ankles against the lower roller (or sit the lower pad over the heel and Achilles area, depending on the machine). The rollers should hold you without crushing the ankle. Some benches adjust the roller distance so the hips sit correctly (product pages and guides, snippets only).",
+    "Feet and knees: feet shoulder-width or slightly wider, toes straight or turned out a little, knees soft but not bent.",
+    "Hands: cross the arms over the chest (easier), or place the fingertips behind the head (harder), or hold a plate against the chest (see section 7). Do not pull on the neck.",
+    "Start position: lock the body in a straight line from head to heels, head in line with the spine, eyes looking at the floor just ahead.",
+    "Pad height and rollers: same rule as above; the pad sits just below the hip bones and the ankles are locked under the rollers. At 90 degrees the body is parallel to the floor, so the hips must be clear of the pad's top edge to fold.",
+    "Starting position: body parallel to the floor, arms crossed on the chest. Hinge down by folding at the hips (not the spine) until you feel the hamstrings stretch, then rise to the straight line. Many guides say rise to level, not past level.",
+    "Check the angle setting: if your bench can be set to 45 or 90 degrees, a 90 degree set-up gives a shorter range and heavier top position, so use less load (coach-level)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Step onto the bench and set your hips",
+      "action": "Place the hips on the pad, just below the hip bones, and slide the heels under the rollers.",
+      "feel": "Pad pressing the front of the upper thighs; ankles firmly held.",
+      "breathing": "Normal.",
+      "tempo": null,
+      "visualCheck": "Side: pad is below the hip bones; front: feet even and straight."
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Cross your arms",
+      "action": "Cross both arms over the chest, hands on the opposite shoulders.",
+      "feel": "Weight of the upper body hanging forward.",
+      "breathing": "Normal.",
+      "tempo": null,
+      "visualCheck": "Front: elbows tucked, shoulders level."
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Rise to the straight line",
+      "action": "Squeeze the buttocks and lift until the body forms a straight line from head to heels.",
+      "feel": "Buttocks and lower back switched on; no pinch.",
+      "breathing": "Normal.",
+      "tempo": null,
+      "visualCheck": "Side: shoulders, hips and ankles in one straight line; chin level."
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Brace",
+      "action": "Gently tighten the stomach as if bracing for a light poke.",
+      "feel": "Trunk firm, ribs down.",
+      "breathing": "Breathe in.",
+      "tempo": null,
+      "visualCheck": "Side: ribs not flared up; lower back not arched."
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Hinge forward",
+      "action": "Fold at the hips and lower the upper body slowly, back long and neutral, until the hamstrings feel a stretch.",
+      "feel": "Stretch behind the thighs; lower back stays steady.",
+      "breathing": "Breathe in during the lowering.",
+      "tempo": null,
+      "visualCheck": "Side: back stays flat as the torso tips; neck stays in line with the spine; no rounding of the lower back."
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Pause at the bottom",
+      "action": "Hold briefly without bouncing.",
+      "feel": "Hamstring stretch, glutes ready.",
+      "breathing": "Hold the in-breath only for a moment, do not strain.",
+      "tempo": null,
+      "visualCheck": "Side: torso well below level, hips still on the pad."
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Rise by squeezing the glutes",
+      "action": "Drive the hips into the pad and lift the torso back up, leading with the buttocks, not by flinging the head up.",
+      "feel": "Glutes and hamstrings pushing, lower back supporting.",
+      "breathing": "Breathe out while rising.",
+      "tempo": null,
+      "visualCheck": "Side: smooth lift, neck neutral, no head snapping back."
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Stop at the straight line",
+      "action": "Finish when the body is in a straight line and squeeze the buttocks for one second. Do not lean back or arch past the line.",
+      "feel": "Buttocks tight; lower back working but not pinched.",
+      "breathing": "Finish breathing out.",
+      "tempo": null,
+      "visualCheck": "Side: shoulders, hips and ankles in a line; no deep curve in the lower back."
+    },
+    {
+      "n": 9,
+      "part": null,
+      "title": "Finish the set",
+      "action": "After the last rep, hinge slowly forward and step off the bench.",
+      "feel": "Back relaxes; legs steady.",
+      "breathing": "Normal.",
+      "tempo": null,
+      "visualCheck": "Side: smooth, no jerk; walk away slowly."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Arching past a straight line (hyperextension)",
+      "text": "Arching past a straight line (hyperextension). Why: loads the small joints and the discs at the end of the range, and the glutes stop doing the work. Fix: stop when the body is straight; squeeze the glutes; look at the floor."
+    },
+    {
+      "title": "Pad set too high",
+      "text": "Pad set too high. Why: the hips cannot fold, so the lower spine does the bending. Fix: set the pad just below the hip bones."
+    },
+    {
+      "title": "Swinging and bouncing at the bottom",
+      "text": "Swinging and bouncing at the bottom. Why: momentum, shorter control and higher spinal stress. Fix: 2-3 s down, 1 s pause, 2 s up."
+    },
+    {
+      "title": "Rounding the lower back as you hinge down",
+      "text": "Rounding the lower back as you hinge down. Why: a flexed spine under load stresses the discs. Fix: keep the back long and hinge from the hips; use less range if you cannot keep it flat."
+    },
+    {
+      "title": "Throwing the head back at the top",
+      "text": "Throwing the head back at the top. Why: strains the neck and shortens the hinge. Fix: neck stays in line with the spine."
+    },
+    {
+      "title": "Using too much weight too soon",
+      "text": "Using too much weight too soon. Why: the plate pulls the torso forward and shifts the work to the spine. Fix: master 12-15 clean bodyweight reps before adding a plate."
+    },
+    {
+      "title": "Hands pulling on the neck",
+      "text": "Hands pulling on the neck. Why: the neck bends forward and the hands help the lift. Fix: cross arms on the chest first; fingertips only if the neck stays neutral."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. Why: raises blood pressure briefly. Fix: breathe in as you lower and out as you rise."
+    },
+    {
+      "title": "Ankle rollers too loose",
+      "text": "Ankle rollers too loose. Why: the legs shift and the hinge slips. Fix: adjust the rollers before the first rep."
+    }
+  ],
+  "safetyNotes": [
+    "Lower back: the lower back muscles work hard at the top; the exercise is not for acute back pain or a flare-up.",
+    "Disc and spine: ACE-related guidance lists disc disease, sciatica and stenosis among conditions needing particular care; some people feel better with extension, others do not.",
+    "Osteoporosis: the Bone Health and Osteoporosis Foundation advises avoiding trunk flexion exercise and says trunk extension and abdominal stabilisation exercise are safe for people at high fracture risk; Mayo Clinic advises avoiding bending forward at the waist. A loaded hinge forward is a flexion move, so ask a professional.",
+    "High blood pressure: avoid breath-holding.",
+    "Spotter: not needed for bodyweight or light plate. Ask staff to check the pad height the first time.",
+    "Gym etiquette: wipe the pad and rollers, return the plate, do not film other members."
+  ],
+  "sources": [
+    "ExRx.net, 45 degree hyperextension and related pages (listed in search; page content not returned, Not found). https://exrx.net/WeightExercises/ErectorSpinae/Wt45Hyperextension ; https://exrx.net/WeightExercises/ErectorSpinae/BW45HyperextensionHips (seen only as links)",
+    "Schoenfeld BJ, Kolber MJ, Contreras B, Hanney WJ (2017), Roman chair back extension is/is not a safe and effective exercise?, Strength and Conditioning Journal 39(3):42-45 (point-counterpoint; Schoenfeld side concluded viable with proper technique; Kolber's side not seen). https://stars.library.ucf.edu/scopus2015/5853 ; https://bretcontreras.com/wp-content/uploads/Roman-Chair-Back-Extension-IsIs-Not-a-Safe-and-Effective-Exercise.pdf (seen only as snippets)",
+    "Andersen V et al. (2021), Romanian deadlift vs 45 degree Roman chair vs seated machine back extension in 15 resistance-trained women, J Sports Sci Med 20(2):181. https://jssm.org/jssm-20-181.xml-abst ; https://pmc.ncbi.nlm.nih.gov/articles/PMC8057707 (seen only as snippets)",
+    "Lorenzetti S et al. (2017), BMC Sports Science, Medicine and Rehabilitation (Roman chair angle versus gluteal and hamstring activity; wording of the comparison unclear). https://bmcsportsscimedrehabil.biomedcentral.com/track/pdf/10.1186/s13102-017-0074-0 (snippet only)",
+    "Variable-angle Roman chair training trial, Spine 2002 (back extension endurance +42 percent; no change in lumbar extension strength). https://pubmed.ncbi.nlm.nih.gov/12195070/ (snippet only)",
+    "Healthline, Back extension exercise (neutral head and neck, finish in a straight line to avoid overextension, arms crossed on chest as the harder option). https://www.healthline.com/health/back-extension-exercise (snippet only)",
+    "Freak Athlete, Back/hyper extensions 45 degree vs 90 degree (90 favours glutes and lower back, 45 favours hamstrings and mid-lower back; coach-level). https://freakathlete.co/blogs/learn/backhyper-extensions-45-degree-vs-90-degree (snippet only); Liftbigeatbig and Generation Iron (peak tension and range at 90 versus 45; coach-level). https://liftbigeatbig.com/?p=7815 ; https://generationiron.com/45-degree-back-extension/ (snippets only)",
+    "BarBend and Mirafit (glute-focused rounded-upper-back variant); Gravitus (pad just below the hip bones; neutral spine; weighted version); Flashmavi; Caliverse (stop before full extension). https://barbend.com/?p=18570 ; https://mirafit.co.uk/blog/correct-your-form-hyperextension/ ; https://gravitus.com/guides/exercises/weighted-hyperextension ; https://www.flashmavi.com/learn/hyperextensions-back-extensions ; https://www.caliverse.app/exercises/hyperextension-137 (snippets only; coaching and commercial sites)",
+    "Sunny Health and Fitness product page (hip pad adjustable, ankle rollers, 45 degree incline and flat positions). https://sunnyhealthfitness.com/products/adjustable-roman-chair-hyperextension-bench-sf-bh625080 (snippet only; vendor, weighed lightly)",
+    "ACE, Herniated discs: what can a fitness professional do to help? (care with back extension in disc disease, sciatica, stenosis). https://www.acefitness.org/education-and-resources/professional/prosource/june-2014/4840/herniated-discs-what-can-a-fitness-professional-do-to-help (snippet only); Squat University, Reverse hyper and Roman chair back extensions (extension intolerance). https://squatuniversity.com/2019/06/29/reverse-hyper-roman-chair-back-extensions (snippet only)",
+    "Mayo Clinic, Exercising with osteoporosis: stay active the safe way (avoid bending forward at the waist). https://www.mayoclinic.org/diseases-conditions/osteoporosis/in-depth/osteoporosis/art-20044989 ; Bone Health and Osteoporosis Foundation / International Osteoporosis Foundation, Exercise for individuals with osteoporosis (avoid trunk flexion; trunk extension and abdominal stabilisation safe at high fracture risk). https://www.osteoporosis.foundation/health-professionals/prevention/exercise/exercise-individuals-with-osteoporosis (snippets only)",
+    "Sinaki M and colleagues (1984, 1996, 2002), back extensor strength and vertebral fractures (small studies; seen only in secondary summaries). https://mayoclinic.org/medical-professionals/news/improving-musculoskeletal-health-in-patients-with-osteoporosis/mac-20430142 (snippet only)",
+    "2024 Adult Compendium of Physical Activities (Herrmann et al., J Sport Health Sci 2024): code 02024, 2.8 METs, calisthenics, light effort; code 02054, 3.5 METs, resistance training, multiple exercises, 8-15 reps at varied resistance. https://pacompendium.com/conditioning-exercise ; https://pmc.ncbi.nlm.nih.gov/articles/PMC10818145/ (search summaries; official PDF not opened)",
+    "ACSM (2009) Progression models in resistance training; Zourdos et al. (2016) RIR-based RPE (carried over from Gym 30). https://www.sportgeneeskunde.com/wp-content/uploads/ACSM-Position-Stand-Progression-Models-in-Resistance-Training-for-Healthy-Adults.pdf ; https://openrepository.aut.ac.nz/items/efef3b25-6701-4fb5-bb82-55fcd2a26027/full",
+    "Condition rows carried over from Gym 20, 21, 24, 26, 28 and 30 citations (not re-opened this session): Valsalva review https://pubmed.ncbi.nlm.nih.gov/23222073/ ; Colberg et al. 2016 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/ ; ACC summary of AHA 2023 https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2023/12/19/15/33/resistance-exercise-training ; AHA Gibbs et al. https://professional.heart.org/en/science-news/Physical-Activity-as-a-Critical-Component-of-First-Line-Treatment-for-Elevated-BP-or-Cholesterol/commentary ; Donnelly et al. 2009 https://pubmed.ncbi.nlm.nih.gov/19127177/ ; PCOS https://vuir.vu.edu.au/45855/1/1-s2.0-S2772696723000054-main.pdf ; thyroid https://pubmed.ncbi.nlm.nih.gov/37999992/ ; asthma https://www.pharmacymagazine.co.uk/cpd-modules/making-a-difference-in-asthma-care/exercise-and-asthma-528343 ; ACOG CO 804 https://opqic.org/acog-committee-opinion-no-804-physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period/ ; Contemporary OB/GYN https://www.contemporaryobgyn.net/sweating-it-out-exercise-in-pregnancy ; NNUH https://www.nnuh.nhs.uk/publication/download/post-natal-physiotherapy-advice-and-exercises-v2-1",
+    "Note: all sources for this item were seen only as search-result summaries (pages not opened in full); most are coaching and commercial sites. The 165/120 degree hip thresholds, the 3 s minimum rep, the 2-1-2 tempo, the 2.5-5 kg starting plate, and all sets, reps and rest values are FitPlate choices (est.), not validated. Not found: ExRx page text; any NSCA, NASM, Harvard Health, Mayo Clinic or NHS page on the Roman chair; a direct EMG comparison of 45 versus 90 degrees; a pad-height measurement in centimetres; hip joint-angle data; a Roman-chair-specific Compendium code and a verified vigorous resistance code; condition-specific sources for knee pain, shoulder problems, obesity, PCOS and recent surgery; Kolber's counterpoint text."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 35.7,
+      "70kg": 30.6,
+      "80kg": 26.8
+    },
+    "per300kcal": {
+      "60kg": 107.1,
+      "70kg": 91.8,
+      "80kg": 80.4
+    }
+  },
+  "gymAccess": [
+    "full_gym",
+    "basic_gym"
+  ],
+  "suitsPreferences": [
+    "strength",
+    "beginner",
+    "intermediate",
+    "lower_body_day",
+    "posterior_chain",
+    "full_body",
+    "core_and_back_day",
+    "20_to_60_min_sessions"
+  ],
+  "swapsByAccess": {
+    "none": "Superman back raise (Home 9) or glute bridge (Home 4)",
+    "home_equipment": "Superman back raise (Home 9) or glute bridge (Home 4) with a backpack or dumbbell on the hips",
+    "basic_gym": "Roman chair or 45 degree bench; otherwise glute bridge (Home 4)",
+    "full_gym": "45 degree back extension bench; hip thrust (Gym 17) for glutes; barbell deadlift (Gym 16) later"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "No breath-holding; stop 2-3 reps before failure; no lifting if resting BP >= 180/120; uncontrolled BP: ask a doctor",
+      "source": "Valsalva systematic review 2013 (PubMed 23222073); NSCA 1999 Valsalva article"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "2-3 non-consecutive resistance days per week; usual glucose checks if on insulin or sulfonylureas",
+      "source": "ADA position statement, Colberg et al. 2016"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "After clearance: bodyweight at light effort, continuous breathing, no straining",
+      "source": "AHA resistance exercise statement (via ACC summary 2023)"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "Part of 2+ days per week resistance work with aerobic activity",
+      "source": "AHA scientific statement (Gibbs et al.)"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Adjust pad and rollers for body size; bodyweight is often enough; exercise-specific advice not found",
+      "source": "ACSM weight management position stand (Donnelly et al. 2009)"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "Fits muscle-strengthening guidance; exercise-specific advice not found",
+      "source": "International PCOS guideline 2023"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "Train normally if controlled; start at beginner level with ongoing fatigue",
+      "source": "Systematic review 2023 (PubMed 37999992)"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Warm up and keep reliever inhaler nearby",
+      "source": "Asthma exercise guidance (Pharmacy Magazine CPD)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "ok",
+      "change": "Legs held straight by the rollers; knees take little load; condition-specific source not found",
+      "source": "Not found"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Only pain-free range, bodyweight, strict hinge; avoid in flare-ups or with leg pain, numbness or weakness; disc disease or stenosis: ask a clinician; floor options are bird-dog, partial prone back extension, glute bridge",
+      "source": "Schoenfeld and Kolber et al. NSCA Strength and Conditioning Journal 2017 (abstract only); ACE herniated discs article (snippet only); Squat University (coach-level)"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "ok",
+      "change": "Shoulders unloaded with arms crossed; keep any plate light; condition-specific advice not found",
+      "source": "Not found"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "ask_doctor",
+      "change": "BHOF: extension work is safe at high fracture risk, trunk flexion should be avoided; Mayo: avoid bending forward at the waist; the forward hinge and any plate need physiotherapist approval",
+      "source": "BHOF / International Osteoporosis Foundation exercise page (snippet); Mayo Clinic exercising with osteoporosis (snippet); Sinaki studies (secondary summaries)"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "ask_doctor",
+      "change": "Ask obstetrician; face-down bench not suitable as the belly grows; standing or all-fours swaps",
+      "source": "ACOG Committee Opinion 804; contemporaryobgyn.net summary (secondary)"
+    },
+    {
+      "condition": "postpartum",
+      "status": "modify",
+      "change": "Pelvic floor and deep core work first; return to loaded hinges when cleared, especially after caesarean",
+      "source": "NHS postnatal physiotherapy leaflets (NNUH, Royal Devon)"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Only with surgeon or physiotherapist approval; back, abdominal or hip surgery often restricts this exercise",
+      "source": "General clearance advice; condition-specific source not found"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "gym"
+    ],
+    "bodyRegion": [
+      "lower",
+      "core"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "fat_loss",
+      "muscle",
+      "strength",
+      "endurance"
+    ],
+    "intensity": "light",
+    "noise": "quiet",
+    "space": "machine",
+    "typicalMinutes": 7,
+    "kcalPer10min70kg": 33,
+    "difficulty1to5": 2,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Gym",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Strength",
+    "Back",
+    "Glutes",
+    "Legs",
+    "Rep counter",
+    "Under 10 min"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-11-16",
+      "file": "FitPlate_Fitness_2026-11-16.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

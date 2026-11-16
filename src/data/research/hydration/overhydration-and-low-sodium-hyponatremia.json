@@ -1,0 +1,215 @@
+{
+  "id": "overhydration-and-low-sodium-hyponatremia",
+  "type": "hydration",
+  "name": "Topic 35: Overhydration and low sodium (hyponatremia)",
+  "defaultTargetFormula": "No new target. Use Topic 30 target_ml = base(sex: male 2500, female 2000, unknown 2500) + clamp((weight_kg - ref_weight) * 20, -400, 400) + min(workout_minutes * 8, 1000) + (hot_weather ? 500 : 0) + pregnancy/lactation adds; Topic 31 heat adds; clamp 1500-4500 ml; round to 50 ml. Overhydration guards (est.): level 1 soft warning if logged_ml in rolling 60 min > 750; level 2 if >= 1000 ml in 60 min or >= 1500 ml in 120 min; daily soft warning at the user's cap (max 4500 ml); daily hard stop above 5000 ml with doctor note and confirm tap; guards never raise the target. ICMR-NIN 2020 overhydration threshold Not found.",
+  "inputs": [
+    "weight_kg",
+    "sex",
+    "activity_level",
+    "workout_minutes",
+    "hot_weather"
+  ],
+  "minMl": 1500,
+  "maxMl": 4500,
+  "quickAddPresetsMl": [
+    100,
+    150,
+    200,
+    250,
+    330,
+    500,
+    750,
+    1000
+  ],
+  "drinks": [
+    {
+      "name": "Plain water",
+      "countsAsWaterPct": 100,
+      "notes": "No sodium; large fast volumes can dilute blood sodium"
+    },
+    {
+      "name": "WHO/UNICEF reduced-osmolarity ORS",
+      "countsAsWaterPct": 100,
+      "notes": "75 mmol/L sodium (about 1724 mg per litre, calc.), 75 mmol/L glucose, 245 mOsm/L; for diarrhoea or vomiting only; made with the stated water volume"
+    },
+    {
+      "name": "Sports or electrolyte drink",
+      "countsAsWaterPct": 100,
+      "notes": "About 18 mmol/L sodium (about 420 mg per litre, calc.), 6% carbohydrate (secondary); does not replace drinking to thirst"
+    },
+    {
+      "name": "Chaas (salted)",
+      "countsAsWaterPct": 100,
+      "notes": "About 85-200 mg sodium per 100 ml (secondary, unverified); depends on salt added; counts toward Topic 18 sodium"
+    },
+    {
+      "name": "Nimbu pani with a pinch of salt",
+      "countsAsWaterPct": 100,
+      "notes": "est.; about 200 mg sodium per 250 ml from the pinch of salt; sugar varies"
+    },
+    {
+      "name": "Tender coconut water",
+      "countsAsWaterPct": 100,
+      "notes": "Low sodium (about 15-28 mg per 100 ml, sources differ), potassium-rich; not a sodium fix; Topic 19 caution"
+    },
+    {
+      "name": "Tea or coffee",
+      "countsAsWaterPct": 100,
+      "notes": "First 4 cups per Topic 33; low sodium"
+    },
+    {
+      "name": "Fruit juice or soft drink",
+      "countsAsWaterPct": 50,
+      "notes": "est.; product policy; sugar, little sodium"
+    },
+    {
+      "name": "Alcohol or beer",
+      "countsAsWaterPct": 0,
+      "notes": "Not counted; beer potomania risk with low solute intake"
+    }
+  ],
+  "drinksTable": [
+    {
+      "drink": "Plain water",
+      "counts": "Yes (100%)",
+      "notes": "No sodium (tap and mineral water vary); the usual drink in overhydration; sodium diluted if drunk in large volumes quickly",
+      "typicalServingMl": {
+        "min": 250,
+        "max": 250
+      }
+    },
+    {
+      "drink": "WHO/UNICEF reduced-osmolarity ORS",
+      "counts": "Yes, but for illness only",
+      "notes": "75 mmol/L sodium (about 1,724 mg per litre, calc.; about 345 mg per 200 ml), 75 mmol/L glucose, 245 mOsm/L (Topic 34, WHO/UNICEF); not a daily drink; made with the stated water",
+      "typicalServingMl": {
+        "min": 50,
+        "max": 200
+      }
+    },
+    {
+      "drink": "ORS study product (45 mmol/L)",
+      "counts": "Yes",
+      "notes": "45 mmol/L sodium (about 1,035 mg/L, calc.), 2.5% carbohydrate (Nutrients 2023); not WHO formula",
+      "typicalServingMl": {
+        "min": 250,
+        "max": 250
+      }
+    },
+    {
+      "drink": "Sports or electrolyte drink",
+      "counts": "Yes",
+      "notes": "About 18.3 mmol/L sodium (about 420 mg per litre, calc.), 3.3 mmol/L potassium, 6% carbohydrate (Bell and Spriet); Gatorade retail about 45-49 mg per 100 ml (Topic 32); sugar load; only partly replaces sweat sodium",
+      "typicalServingMl": {
+        "min": 250,
+        "max": 500
+      }
+    },
+    {
+      "drink": "Chaas (salted)",
+      "counts": "Yes",
+      "notes": "Plain chaas about 85 mg sodium and 142 mg potassium per 100 ml (database, Topic 33); masala up to about 200 mg per 100 ml; a 200 ml glass about 170-400 mg sodium (est.); depends on salt added",
+      "typicalServingMl": {
+        "min": 200,
+        "max": 250
+      }
+    },
+    {
+      "drink": "Nimbu pani with a pinch of salt",
+      "counts": "Yes",
+      "notes": "About 200 mg sodium per 250 ml from the salt, 8-10 g sugar (est., calc., Topic 33); salt and sugar adjustable",
+      "typicalServingMl": {
+        "min": 250,
+        "max": 250
+      }
+    },
+    {
+      "drink": "Tender coconut water",
+      "counts": "Yes",
+      "notes": "Sodium about 6.6 mmol/L (about 150 mg per litre, 15 mg per 100 ml, calc.; Bell and Spriet) but IFCT 2017 gives 28 mg per 100 g; potassium about 50 mmol/L (about 215 mg per 100 g, IFCT); sources disagree, so it is a low-sodium drink and not a sodium fix (Topic 19 for potassium caution)",
+      "typicalServingMl": {
+        "min": 200,
+        "max": 300
+      }
+    },
+    {
+      "drink": "Chai, coffee",
+      "counts": "Yes (Topic 33 counts first 4 cups)",
+      "notes": "Low sodium (milk adds some); caffeine 30-120 mg per cup (Topic 33); large volumes of tea with little food is a \"tea and toast\" risk",
+      "typicalServingMl": {
+        "min": 100,
+        "max": 150
+      }
+    },
+    {
+      "drink": "Fruit juice, soft drinks",
+      "counts": "Partly (50%, est.)",
+      "notes": "High sugar; little sodium; heavy volumes contribute fluid without sodium",
+      "typicalServingMl": {
+        "min": 150,
+        "max": 330
+      }
+    },
+    {
+      "drink": "Alcohol and beer",
+      "counts": "No (0%)",
+      "notes": "Beer potomania (low solute plus high volume); not counted",
+      "typicalServingMl": null
+    }
+  ],
+  "reminderRules": [
+    {
+      "rule": "Soft warning when logged water exceeds 750 ml in any rolling 60 minutes; pause reminders for 2 hours",
+      "source": "FitPlate design (est.); Topic 32 ceiling; EAH consensus 2015 drink-to-thirst"
+    },
+    {
+      "rule": "Strong warning when 1000 ml or more is logged in 60 minutes or 1500 ml or more in 2 hours; stop reminders for the day; show symptoms and 'call 112' red flags",
+      "source": "FitPlate design (est.); kidney excretion about 0.8-1.0 L/h (Verbalis via Scientific American; secondary, unverified)"
+    },
+    {
+      "rule": "Daily soft warning at the user's target cap (maximum 4500 ml) with 'No need to go beyond this'; hard stop with confirm tap and doctor note above 5000 ml",
+      "source": "FitPlate design (est.); Topic 30 cap"
+    },
+    {
+      "rule": "'I feel unwell' with confusion, severe headache, repeated vomiting, seizure or collapse shows 'Call 112, do not drink more water'",
+      "source": "European hyponatraemia guideline 2014 symptom classes; WMS 2019 EAH guideline (via snippets, secondary)"
+    },
+    {
+      "rule": "Doctor-flag users (heart, kidney or liver disease, SIADH, thiazide, SSRI, carbamazepine, MDMA, labour, fluid limit): remove target and reminders, ask for the doctor's ml limit and warn at 100% of it",
+      "source": "Liamis review; NICE and UK NHS trust labour guidance; Topic 34 (secondary); requires_doctor_input"
+    },
+    {
+      "rule": "Fasting (vrat) days: show 'sip to thirst' and a salted chaas or nimbu pani idea, no extra water reminders",
+      "source": "FitPlate design (est.); Indian media advice (secondary)"
+    },
+    {
+      "rule": "No water reminders during or within 2 hours after a level 1 or 2 warning; exercise sessions over 1 hour show drink-to-thirst",
+      "source": "EAH consensus 2015; Topic 32"
+    }
+  ],
+  "warnings": [
+    "General information, not medical advice. Low blood sodium (hyponatraemia, serum sodium below 135 mmol/L) can be an emergency.",
+    "Confusion, severe headache, repeated vomiting, seizure or collapse after heavy drinking: call 112 and do not give more water or fluid.",
+    "Healthy kidneys clear about 0.8-1.0 L of water per hour at best, less during long exercise (secondary, unverified): do not chug litres in an hour.",
+    "Drink to thirst during exercise; do not force fluid and do not use salt tablets or home saline without a doctor.",
+    "Heart, kidney or liver disease, SIADH, thiazide diuretics, SSRIs, carbamazepine, MDMA, pregnancy and labour, and infants: follow your doctor's or midwife's fluid advice (requires_doctor_input).",
+    "Very low salt and low protein diets with large volumes of tea or water can lower blood sodium; do not stop BP medicine or add extra water.",
+    "ORS is for diarrhoea or vomiting only and must be made with the stated water volume.",
+    "No ICMR-NIN 2020 overhydration limit found; 1000 ml/h and 5000 ml/day marks are FitPlate (est.); all other numbers are secondary, unverified."
+  ],
+  "lastResearched": "2026-11-16",
+  "versions": [
+    {
+      "date": "2026-11-16",
+      "file": "FitPlate_Nutrients_2026-11-16.md"
+    }
+  ],
+  "mergeMethod": {
+    "maxMl": "safety limit (lower on conflict)",
+    "minMl": "newest",
+    "lists": "union"
+  },
+  "mergeNotes": [],
+  "needsReview": []
+}

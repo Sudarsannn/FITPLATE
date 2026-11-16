@@ -1,0 +1,250 @@
+{
+  "id": "hydration-timing-workday",
+  "type": "hydration",
+  "name": "Topic 36: Hydration timing across a workday",
+  "defaultTargetFormula": "No separate target; uses Topic 30 drinks target (male 2500 ml, female 2000 ml, est.) distributed over the day: about 12% on waking, 35-40% before lunch, about 40% from afternoon to early evening, 10-15% with dinner, little after 21:00 (FitPlate design, est.). Slot size 200-300 ml, never prompt more than 500 ml at once. ICMR-NIN 2020 water values Not found; timing evidence is weak.",
+  "inputs": [
+    "weight_kg",
+    "sex",
+    "activity_level",
+    "workout_minutes",
+    "hot_weather"
+  ],
+  "minMl": 1500,
+  "maxMl": 4500,
+  "quickAddPresetsMl": [
+    100,
+    120,
+    150,
+    200,
+    250,
+    330,
+    500,
+    750,
+    1000
+  ],
+  "drinks": [
+    {
+      "name": "Plain water",
+      "countsAsWaterPct": 100,
+      "notes": "Best on waking, between meals, before lunch (optional preload), with dinner sips"
+    },
+    {
+      "name": "Chai (milk tea, up to 2 tsp sugar)",
+      "countsAsWaterPct": 100,
+      "notes": "est.; 120 ml; mid-morning or 17:00; keep 1 h away from meals if iron-deficient; caffeine 30-65 mg (secondary); not within about 5 h of sleep"
+    },
+    {
+      "name": "Black or green tea",
+      "countsAsWaterPct": 100,
+      "notes": "est.; 150 ml; between meals; polyphenols cut iron absorption near meals"
+    },
+    {
+      "name": "Filter or instant coffee with milk",
+      "countsAsWaterPct": 100,
+      "notes": "est.; first 4 tea/coffee cups full, beyond 4 cups 50%; morning to early afternoon"
+    },
+    {
+      "name": "Chaas (salted buttermilk)",
+      "countsAsWaterPct": 100,
+      "notes": "est.; 200 ml; with or after lunch or mid-afternoon; sodium about 170-400 mg (secondary, est.); Topic 18"
+    },
+    {
+      "name": "Nimbu pani (homemade)",
+      "countsAsWaterPct": 100,
+      "notes": "est.; 250 ml; commute home or hot afternoon; reduce sugar and salt"
+    },
+    {
+      "name": "Tender coconut water",
+      "countsAsWaterPct": 100,
+      "notes": "200-250 ml; afternoon or after heat/exercise; potassium-rich (IFCT 2017 215 mg/100 g); kidney caution (Topic 19)"
+    },
+    {
+      "name": "Milk, plain",
+      "countsAsWaterPct": 100,
+      "notes": "est.; 200 ml; breakfast or small bedtime amount; retains fluid longer (Maughan 2016)"
+    },
+    {
+      "name": "Sweet lassi, packaged juice, sugarcane juice, soft drink",
+      "countsAsWaterPct": 50,
+      "notes": "est., product policy; free sugar over 8 g/100 ml; occasional"
+    },
+    {
+      "name": "Herbal tea, caffeine-free",
+      "countsAsWaterPct": 100,
+      "notes": "est.; evening up to about 2 h before bed; check ingredients"
+    },
+    {
+      "name": "ORS",
+      "countsAsWaterPct": 100,
+      "notes": "Illness only (diarrhoea, vomiting, heat illness); follow sachet label"
+    },
+    {
+      "name": "Alcohol",
+      "countsAsWaterPct": 0,
+      "notes": "Not counted; raises urine output; disturbs sleep"
+    }
+  ],
+  "drinksTable": [
+    {
+      "drink": "Plain water",
+      "counts": "Yes, 100%",
+      "notes": "Waking, between meals, before lunch, with dinner sips",
+      "typicalServingMl": null
+    },
+    {
+      "drink": "Warm water or jeera water",
+      "counts": "Yes, 100%",
+      "notes": "Waking or after dinner",
+      "typicalServingMl": null
+    },
+    {
+      "drink": "Chai (milk tea, up to 2 tsp sugar)",
+      "counts": "Yes, 100% (first 4 tea/coffee cups)",
+      "notes": "Mid-morning or 17:00, 1 h away from meals if iron-deficient",
+      "typicalServingMl": {
+        "min": 30,
+        "max": 65
+      }
+    },
+    {
+      "drink": "Black or green tea",
+      "counts": "Yes, 100%",
+      "notes": "Between meals",
+      "typicalServingMl": {
+        "min": 10999016,
+        "max": 10999016
+      }
+    },
+    {
+      "drink": "Filter or instant coffee with milk",
+      "counts": "Yes, 100% (first 4 cups)",
+      "notes": "Morning to early afternoon",
+      "typicalServingMl": {
+        "min": 50,
+        "max": 120
+      }
+    },
+    {
+      "drink": "Chaas (salted buttermilk)",
+      "counts": "Yes, 100%",
+      "notes": "With or after lunch; mid-afternoon in summer",
+      "typicalServingMl": {
+        "min": 170,
+        "max": 400
+      }
+    },
+    {
+      "drink": "Nimbu pani (homemade)",
+      "counts": "Yes, 100%",
+      "notes": "Commute home, hot afternoons, after workout",
+      "typicalServingMl": {
+        "min": 1,
+        "max": 2
+      }
+    },
+    {
+      "drink": "Tender coconut water",
+      "counts": "Yes, 100%",
+      "notes": "Afternoon or after heat/exercise",
+      "typicalServingMl": {
+        "min": 215,
+        "max": 215
+      }
+    },
+    {
+      "drink": "Milk (plain)",
+      "counts": "Yes, 100%",
+      "notes": "Breakfast or bedtime in small amount",
+      "typicalServingMl": {
+        "min": 2016,
+        "max": 2016
+      }
+    },
+    {
+      "drink": "Sweet lassi, packaged juice, sugarcane juice, soft drink",
+      "counts": "50% (free sugar over 8 g/100 ml; est., product policy)",
+      "notes": "Occasional; not as the main afternoon drink",
+      "typicalServingMl": {
+        "min": 2024,
+        "max": 2024
+      }
+    },
+    {
+      "drink": "ORS",
+      "counts": "Yes, for illness only",
+      "notes": "During diarrhoea, vomiting, heat illness",
+      "typicalServingMl": null
+    },
+    {
+      "drink": "Alcohol",
+      "counts": "No, 0%",
+      "notes": "Not counted",
+      "typicalServingMl": null
+    },
+    {
+      "drink": "Herbal tea (caffeine-free)",
+      "counts": "Yes, 100% (est.)",
+      "notes": "Evening (up to about 2 h before bed)",
+      "typicalServingMl": null
+    }
+  ],
+  "reminderRules": [
+    {
+      "rule": "Maximum 6 reminders per day (7 on hot or workout days), at least 60 minutes apart",
+      "source": "FitPlate design (est.); Topic 30"
+    },
+    {
+      "rule": "Current weekday app schedule 08:30, 10:30, 13:30, 16:00, 18:00 fits commuter and meal anchors; suggest adding or moving one reminder to about 12:45 for an optional pre-lunch glass, and starting the first reminder 30-60 minutes after the user's wake time",
+      "source": "FitPlate design (est.); preload studies Davy 2008, Dennis 2010, Parretti 2016 (small effects)"
+    },
+    {
+      "rule": "Skip a reminder if a drink of 150 ml or more was logged in the last 60 minutes; stop when the target is reached",
+      "source": "FitPlate design (est.)"
+    },
+    {
+      "rule": "Quiet hours default 21:00-08:00 on weekdays; last reminder at least 2-3 hours before the user's sleep time; night-shift users set quiet hours around their sleep",
+      "source": "Swansea Bay NHS nocturia guidance (2 h before bed); Oelke 2017 review; FitPlate design (est.)"
+    },
+    {
+      "rule": "Never prompt for more than about 500 ml at once; typical nudge 200-250 ml",
+      "source": "Healthy kidney clears about 0.8-1.0 L/h at rest, less under stress (Verbalis via secondary summaries); Topic 35 (est.)"
+    },
+    {
+      "rule": "No tea/coffee prompts within 1 hour of meals for users flagged iron-deficient; after 3 tea/coffee logs suggest water or chaas",
+      "source": "ICMR-NIN 2024 (news summary, secondary, unverified); PubMed 10999016; Topic 21, 33"
+    },
+    {
+      "rule": "Fasting mode (Ramadan, vrat): move reminders to allowed windows (iftar to suhoor); no reminders during fasting hours",
+      "source": "Nutrients 2020 PRISMA review PMC7468808; Leiper and Molla 2003 (est.)"
+    },
+    {
+      "rule": "Doctor-flag users (kidney disease, heart failure, diuretics, liver disease, fluid limit, nocturia or BPH on treatment, diabetes insipidus, pregnancy complications, uncontrolled diabetes): no automatic reminders or 'drink more' nudges; show 'Follow your doctor's fluid advice'",
+      "source": "FitPlate safety design; Topics 18, 19, 30, 33 convention"
+    }
+  ],
+  "warnings": [
+    "General information, not medical advice.",
+    "Evidence on the timing of water is thin; the schedule is a practical design (est.), not a proven protocol.",
+    "ICMR-NIN 2020 water values: Not found (primary). ICMR-NIN 2024 tea/coffee spacing is from news summaries (secondary, unverified).",
+    "Kidney, heart, liver disease, diuretics, nocturia/BPH, diabetes insipidus and pregnancy complications need doctor-set fluid timing (requires_doctor_input).",
+    "Do not drink more than about 500 ml at once; healthy kidneys clear about 0.8-1.0 L/h at rest and far less under stress; see Topic 35.",
+    "Waterless fasting in heat can cause dizziness and low blood pressure; people with medical conditions should ask a doctor.",
+    "Pre-meal water has small, uncertain effects on weight (Parretti 2016, Davy 2008; small non-Indian trials).",
+    "The Dubnov-Raz 2015 preload paper named in the brief could not be verified and is not used."
+  ],
+  "lastResearched": "2026-11-16",
+  "versions": [
+    {
+      "date": "2026-11-16",
+      "file": "FitPlate_Nutrients_2026-11-16.md"
+    }
+  ],
+  "mergeMethod": {
+    "maxMl": "safety limit (lower on conflict)",
+    "minMl": "newest",
+    "lists": "union"
+  },
+  "mergeNotes": [],
+  "needsReview": []
+}

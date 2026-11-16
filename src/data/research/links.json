@@ -1,6 +1,6 @@
 {
   "schema": "fitplate.links.v1",
-  "generatedFor": "Day27",
+  "generatedFor": "Day28",
   "goodSourceDishes": {
     "biotin": [
       {
@@ -2325,6 +2325,314 @@
       ]
     },
     {
+      "id": "hydration-timing-workday",
+      "drinks": [
+        {
+          "name": "Plain water",
+          "countsAsWaterPct": 100,
+          "notes": "Best on waking, between meals, before lunch (optional preload), with dinner sips"
+        },
+        {
+          "name": "Chai (milk tea, up to 2 tsp sugar)",
+          "countsAsWaterPct": 100,
+          "notes": "est.; 120 ml; mid-morning or 17:00; keep 1 h away from meals if iron-deficient; caffeine 30-65 mg (secondary); not within about 5 h of sleep"
+        },
+        {
+          "name": "Black or green tea",
+          "countsAsWaterPct": 100,
+          "notes": "est.; 150 ml; between meals; polyphenols cut iron absorption near meals"
+        },
+        {
+          "name": "Filter or instant coffee with milk",
+          "countsAsWaterPct": 100,
+          "notes": "est.; first 4 tea/coffee cups full, beyond 4 cups 50%; morning to early afternoon"
+        },
+        {
+          "name": "Chaas (salted buttermilk)",
+          "countsAsWaterPct": 100,
+          "notes": "est.; 200 ml; with or after lunch or mid-afternoon; sodium about 170-400 mg (secondary, est.); Topic 18"
+        },
+        {
+          "name": "Nimbu pani (homemade)",
+          "countsAsWaterPct": 100,
+          "notes": "est.; 250 ml; commute home or hot afternoon; reduce sugar and salt"
+        },
+        {
+          "name": "Tender coconut water",
+          "countsAsWaterPct": 100,
+          "notes": "200-250 ml; afternoon or after heat/exercise; potassium-rich (IFCT 2017 215 mg/100 g); kidney caution (Topic 19)"
+        },
+        {
+          "name": "Milk, plain",
+          "countsAsWaterPct": 100,
+          "notes": "est.; 200 ml; breakfast or small bedtime amount; retains fluid longer (Maughan 2016)"
+        },
+        {
+          "name": "Sweet lassi, packaged juice, sugarcane juice, soft drink",
+          "countsAsWaterPct": 50,
+          "notes": "est., product policy; free sugar over 8 g/100 ml; occasional"
+        },
+        {
+          "name": "Herbal tea, caffeine-free",
+          "countsAsWaterPct": 100,
+          "notes": "est.; evening up to about 2 h before bed; check ingredients"
+        },
+        {
+          "name": "ORS",
+          "countsAsWaterPct": 100,
+          "notes": "Illness only (diarrhoea, vomiting, heat illness); follow sachet label"
+        },
+        {
+          "name": "Alcohol",
+          "countsAsWaterPct": 0,
+          "notes": "Not counted; raises urine output; disturbs sleep"
+        }
+      ],
+      "drinksTable": [
+        {
+          "drink": "Plain water",
+          "counts": "Yes, 100%",
+          "notes": "Waking, between meals, before lunch, with dinner sips",
+          "typicalServingMl": null
+        },
+        {
+          "drink": "Warm water or jeera water",
+          "counts": "Yes, 100%",
+          "notes": "Waking or after dinner",
+          "typicalServingMl": null
+        },
+        {
+          "drink": "Chai (milk tea, up to 2 tsp sugar)",
+          "counts": "Yes, 100% (first 4 tea/coffee cups)",
+          "notes": "Mid-morning or 17:00, 1 h away from meals if iron-deficient",
+          "typicalServingMl": {
+            "min": 30,
+            "max": 65
+          }
+        },
+        {
+          "drink": "Black or green tea",
+          "counts": "Yes, 100%",
+          "notes": "Between meals",
+          "typicalServingMl": {
+            "min": 10999016,
+            "max": 10999016
+          }
+        },
+        {
+          "drink": "Filter or instant coffee with milk",
+          "counts": "Yes, 100% (first 4 cups)",
+          "notes": "Morning to early afternoon",
+          "typicalServingMl": {
+            "min": 50,
+            "max": 120
+          }
+        },
+        {
+          "drink": "Chaas (salted buttermilk)",
+          "counts": "Yes, 100%",
+          "notes": "With or after lunch; mid-afternoon in summer",
+          "typicalServingMl": {
+            "min": 170,
+            "max": 400
+          }
+        },
+        {
+          "drink": "Nimbu pani (homemade)",
+          "counts": "Yes, 100%",
+          "notes": "Commute home, hot afternoons, after workout",
+          "typicalServingMl": {
+            "min": 1,
+            "max": 2
+          }
+        },
+        {
+          "drink": "Tender coconut water",
+          "counts": "Yes, 100%",
+          "notes": "Afternoon or after heat/exercise",
+          "typicalServingMl": {
+            "min": 215,
+            "max": 215
+          }
+        },
+        {
+          "drink": "Milk (plain)",
+          "counts": "Yes, 100%",
+          "notes": "Breakfast or bedtime in small amount",
+          "typicalServingMl": {
+            "min": 2016,
+            "max": 2016
+          }
+        },
+        {
+          "drink": "Sweet lassi, packaged juice, sugarcane juice, soft drink",
+          "counts": "50% (free sugar over 8 g/100 ml; est., product policy)",
+          "notes": "Occasional; not as the main afternoon drink",
+          "typicalServingMl": {
+            "min": 2024,
+            "max": 2024
+          }
+        },
+        {
+          "drink": "ORS",
+          "counts": "Yes, for illness only",
+          "notes": "During diarrhoea, vomiting, heat illness",
+          "typicalServingMl": null
+        },
+        {
+          "drink": "Alcohol",
+          "counts": "No, 0%",
+          "notes": "Not counted",
+          "typicalServingMl": null
+        },
+        {
+          "drink": "Herbal tea (caffeine-free)",
+          "counts": "Yes, 100% (est.)",
+          "notes": "Evening (up to about 2 h before bed)",
+          "typicalServingMl": null
+        }
+      ]
+    },
+    {
+      "id": "overhydration-and-low-sodium-hyponatremia",
+      "drinks": [
+        {
+          "name": "Plain water",
+          "countsAsWaterPct": 100,
+          "notes": "No sodium; large fast volumes can dilute blood sodium"
+        },
+        {
+          "name": "WHO/UNICEF reduced-osmolarity ORS",
+          "countsAsWaterPct": 100,
+          "notes": "75 mmol/L sodium (about 1724 mg per litre, calc.), 75 mmol/L glucose, 245 mOsm/L; for diarrhoea or vomiting only; made with the stated water volume"
+        },
+        {
+          "name": "Sports or electrolyte drink",
+          "countsAsWaterPct": 100,
+          "notes": "About 18 mmol/L sodium (about 420 mg per litre, calc.), 6% carbohydrate (secondary); does not replace drinking to thirst"
+        },
+        {
+          "name": "Chaas (salted)",
+          "countsAsWaterPct": 100,
+          "notes": "About 85-200 mg sodium per 100 ml (secondary, unverified); depends on salt added; counts toward Topic 18 sodium"
+        },
+        {
+          "name": "Nimbu pani with a pinch of salt",
+          "countsAsWaterPct": 100,
+          "notes": "est.; about 200 mg sodium per 250 ml from the pinch of salt; sugar varies"
+        },
+        {
+          "name": "Tender coconut water",
+          "countsAsWaterPct": 100,
+          "notes": "Low sodium (about 15-28 mg per 100 ml, sources differ), potassium-rich; not a sodium fix; Topic 19 caution"
+        },
+        {
+          "name": "Tea or coffee",
+          "countsAsWaterPct": 100,
+          "notes": "First 4 cups per Topic 33; low sodium"
+        },
+        {
+          "name": "Fruit juice or soft drink",
+          "countsAsWaterPct": 50,
+          "notes": "est.; product policy; sugar, little sodium"
+        },
+        {
+          "name": "Alcohol or beer",
+          "countsAsWaterPct": 0,
+          "notes": "Not counted; beer potomania risk with low solute intake"
+        }
+      ],
+      "drinksTable": [
+        {
+          "drink": "Plain water",
+          "counts": "Yes (100%)",
+          "notes": "No sodium (tap and mineral water vary); the usual drink in overhydration; sodium diluted if drunk in large volumes quickly",
+          "typicalServingMl": {
+            "min": 250,
+            "max": 250
+          }
+        },
+        {
+          "drink": "WHO/UNICEF reduced-osmolarity ORS",
+          "counts": "Yes, but for illness only",
+          "notes": "75 mmol/L sodium (about 1,724 mg per litre, calc.; about 345 mg per 200 ml), 75 mmol/L glucose, 245 mOsm/L (Topic 34, WHO/UNICEF); not a daily drink; made with the stated water",
+          "typicalServingMl": {
+            "min": 50,
+            "max": 200
+          }
+        },
+        {
+          "drink": "ORS study product (45 mmol/L)",
+          "counts": "Yes",
+          "notes": "45 mmol/L sodium (about 1,035 mg/L, calc.), 2.5% carbohydrate (Nutrients 2023); not WHO formula",
+          "typicalServingMl": {
+            "min": 250,
+            "max": 250
+          }
+        },
+        {
+          "drink": "Sports or electrolyte drink",
+          "counts": "Yes",
+          "notes": "About 18.3 mmol/L sodium (about 420 mg per litre, calc.), 3.3 mmol/L potassium, 6% carbohydrate (Bell and Spriet); Gatorade retail about 45-49 mg per 100 ml (Topic 32); sugar load; only partly replaces sweat sodium",
+          "typicalServingMl": {
+            "min": 250,
+            "max": 500
+          }
+        },
+        {
+          "drink": "Chaas (salted)",
+          "counts": "Yes",
+          "notes": "Plain chaas about 85 mg sodium and 142 mg potassium per 100 ml (database, Topic 33); masala up to about 200 mg per 100 ml; a 200 ml glass about 170-400 mg sodium (est.); depends on salt added",
+          "typicalServingMl": {
+            "min": 200,
+            "max": 250
+          }
+        },
+        {
+          "drink": "Nimbu pani with a pinch of salt",
+          "counts": "Yes",
+          "notes": "About 200 mg sodium per 250 ml from the salt, 8-10 g sugar (est., calc., Topic 33); salt and sugar adjustable",
+          "typicalServingMl": {
+            "min": 250,
+            "max": 250
+          }
+        },
+        {
+          "drink": "Tender coconut water",
+          "counts": "Yes",
+          "notes": "Sodium about 6.6 mmol/L (about 150 mg per litre, 15 mg per 100 ml, calc.; Bell and Spriet) but IFCT 2017 gives 28 mg per 100 g; potassium about 50 mmol/L (about 215 mg per 100 g, IFCT); sources disagree, so it is a low-sodium drink and not a sodium fix (Topic 19 for potassium caution)",
+          "typicalServingMl": {
+            "min": 200,
+            "max": 300
+          }
+        },
+        {
+          "drink": "Chai, coffee",
+          "counts": "Yes (Topic 33 counts first 4 cups)",
+          "notes": "Low sodium (milk adds some); caffeine 30-120 mg per cup (Topic 33); large volumes of tea with little food is a \"tea and toast\" risk",
+          "typicalServingMl": {
+            "min": 100,
+            "max": 150
+          }
+        },
+        {
+          "drink": "Fruit juice, soft drinks",
+          "counts": "Partly (50%, est.)",
+          "notes": "High sugar; little sodium; heavy volumes contribute fluid without sodium",
+          "typicalServingMl": {
+            "min": 150,
+            "max": 330
+          }
+        },
+        {
+          "drink": "Alcohol and beer",
+          "counts": "No (0%)",
+          "notes": "Beer potomania (low solute plus high volume); not counted",
+          "typicalServingMl": null
+        }
+      ]
+    },
+    {
       "id": "water-daily-requirement",
       "drinks": [
         {
@@ -2808,6 +3116,11 @@
       "met": 3.5
     },
     {
+      "exerciseId": "barbell-overhead-press",
+      "name": "Barbell overhead press",
+      "met": 3.5
+    },
+    {
       "exerciseId": "bhujangasana-cobra-pose",
       "name": "Bhujangasana (Cobra pose)",
       "met": 2.3
@@ -2860,6 +3173,11 @@
     {
       "exerciseId": "dumbbell-goblet-squat",
       "name": "Dumbbell goblet squat",
+      "met": 3.5
+    },
+    {
+      "exerciseId": "dumbbell-romanian-deadlift",
+      "name": "Dumbbell Romanian deadlift",
       "met": 3.5
     },
     {
@@ -2968,6 +3286,11 @@
       "met": 3.8
     },
     {
+      "exerciseId": "roman-chair-back-extension",
+      "name": "Roman chair / back extension bench",
+      "met": 2.8
+    },
+    {
       "exerciseId": "rowing-machine",
       "name": "Rowing machine",
       "met": 5
@@ -2976,6 +3299,11 @@
       "exerciseId": "seated-cable-row",
       "name": "Seated cable row",
       "met": 3.5
+    },
+    {
+      "exerciseId": "setu-bandhasana-bridge-pose",
+      "name": "Setu Bandhasana (Bridge pose)",
+      "met": 2.3
     },
     {
       "exerciseId": "skipping-rope",

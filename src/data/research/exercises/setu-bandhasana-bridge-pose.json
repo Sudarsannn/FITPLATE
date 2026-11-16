@@ -1,0 +1,659 @@
+{
+  "id": "setu-bandhasana-bridge-pose",
+  "number": 16,
+  "name": "Setu Bandhasana (Bridge pose)",
+  "otherNames": [
+    "Bridge pose",
+    "Bridge posture",
+    "Setubandhasana",
+    "Setu Bandha Sarvangasana",
+    "Half bridge"
+  ],
+  "section": "yoga_stretch",
+  "type": "yoga_asana",
+  "equipment": [
+    "mat (optional)",
+    "yoga block, firm cushion or folded blanket (optional)",
+    "strap (optional)"
+  ],
+  "noEquipmentAlternative": "Half-height bridge with no support, or a firm cushion or folded blanket under the sacrum",
+  "musclesPrimary": [
+    "gluteus maximus",
+    "hamstrings",
+    "erector spinae",
+    "multifidus",
+    "hip adductors"
+  ],
+  "musclesSecondary": [
+    "transversus abdominis",
+    "obliques",
+    "quadriceps",
+    "rhomboids",
+    "middle trapezius",
+    "hip flexors (stretch)",
+    "pectoralis (chest opening)"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 2.3,
+  "compendiumCode": "02150",
+  "metOptions": [
+    {
+      "code": "02150",
+      "met": 2.3,
+      "activity": "MET: 2.3, 2024 Adult Compendium of Physical Activities, code 02150, \"Yoga, Hatha\" (search results showed 2.3, up from 2.5 in the 2011 edition; 02153 Hatha high intensity 8.0 was seen in an earlier fil"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "flexibility",
+      "sets": 2,
+      "reps": "1 hold per round, feet hip-width, thighs level",
+      "timeSec": 25,
+      "restSec": 15,
+      "tempo": "inhale to lift, 5 slow breaths, exhale to lower",
+      "perWeek": 4
+    },
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 2,
+      "reps": "1 hold per round, hips level",
+      "timeSec": 25,
+      "restSec": 15,
+      "tempo": "5 slow breaths",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "relaxation",
+      "sets": 1,
+      "reps": "1 supported hold on a low block",
+      "timeSec": 120,
+      "restSec": 0,
+      "tempo": "slow nose breathing",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "flexibility",
+      "sets": 3,
+      "reps": "1 hold per round",
+      "timeSec": 35,
+      "restSec": 15,
+      "tempo": "5-8 slow breaths",
+      "perWeek": 4
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "1 hold per round, block between thighs",
+      "timeSec": 40,
+      "restSec": 15,
+      "tempo": "8 slow breaths",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": 3,
+      "reps": "1 hold per round, longer hold or single-leg variation",
+      "timeSec": 50,
+      "restSec": 20,
+      "tempo": "10 slow breaths",
+      "perWeek": 4
+    },
+    {
+      "level": "advanced",
+      "goal": "relaxation",
+      "sets": 1,
+      "reps": "1 supported hold",
+      "timeSec": 300,
+      "restSec": 0,
+      "tempo": "slow nose breathing",
+      "perWeek": 4
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "hold_timer",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "hips_lifted",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": ">= 150",
+        "parsed": {
+          "op": ">=",
+          "value": 150,
+          "max": null
+        }
+      },
+      {
+        "name": "knee_not_too_bent",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": "<= 110",
+        "parsed": {
+          "op": "<=",
+          "value": 110,
+          "max": null
+        }
+      },
+      {
+        "name": "knee_not_too_straight",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": ">= 70",
+        "parsed": {
+          "op": ">=",
+          "value": 70,
+          "max": null
+        }
+      },
+      {
+        "name": "hold_long_enough",
+        "joint": "time",
+        "angleDeg": "hold >= 10 s (position flag, not an angle)",
+        "parsed": null
+      }
+    ],
+    "minRepSec": 10
+  },
+  "formChecks": [
+    {
+      "joint": "hip",
+      "rule": "hip angle < 150 deg (equals hips_lifted phase threshold)",
+      "message": "Lift the hips a little higher, press the feet down"
+    },
+    {
+      "joint": "knee",
+      "rule": "knee angle > 110 deg (equals knee_not_too_bent phase threshold)",
+      "message": "Bring the feet a little closer to your hips"
+    },
+    {
+      "joint": "knee",
+      "rule": "knee angle < 70 deg (equals knee_not_too_straight phase threshold)",
+      "message": "Move your feet a little farther from your hips"
+    },
+    {
+      "joint": "time",
+      "rule": "hold shorter than 10 s (equals min_rep_sec and hold_long_enough)",
+      "message": "Stay a little longer, breathe slowly"
+    },
+    {
+      "joint": "head",
+      "rule": "head turns away from straight up (position flag, not an angle)",
+      "message": "Keep your head still, eyes on the ceiling"
+    }
+  ],
+  "safetyFlags": [
+    "stop_at_pain_mild_effort_only",
+    "keep_head_still_no_neck_turning",
+    "neck_or_shoulder_injury_skip_or_ask_doctor",
+    "cervical_disc_problem_ask_doctor",
+    "knees_over_ankles_hip_width_feet",
+    "do_not_over_arch_lower_back",
+    "lower_back_pain_half_bridge_or_block",
+    "ulcer_hernia_skip_or_ask_doctor",
+    "hypertension_ask_doctor_short_holds_no_breath_holding",
+    "heart_disease_ask_doctor",
+    "pregnancy_ask_doctor_supported_only",
+    "osteoporosis_ask_doctor",
+    "dizziness_rest_then_sit_up_slowly",
+    "recent_surgery_ask_doctor",
+    "lower_slowly_tailbone_last"
+  ],
+  "progressions": [
+    "Block between the knees",
+    "Longer hold or clasped hands under the back (healthy neck and shoulders only)",
+    "Single-leg or leg-extended bridge (est.; intermediate to advanced)"
+  ],
+  "regressions": [
+    "Half-height bridge with a small lift",
+    "Block-supported bridge at the lowest height",
+    "Pelvic tilts on the floor, or a blanket under the shoulders"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "start: knees bent, feet hip-width, heels near the buttocks",
+      "textOverlay": "Feet hip-width, heels close."
+    },
+    {
+      "seconds": 6,
+      "angle": "front (from the feet), 1.5 m",
+      "shows": "parallel feet, knees over ankles; fingertip-to-heel check",
+      "textOverlay": "Fingertips touch the heels."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "the lift: tailbone first, then lower, then mid back, to a level line",
+      "textOverlay": "Lift slowly, line to the knees."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 2 m",
+      "shows": "head still, nose up, shoulders down; wrong (head turned) vs right",
+      "textOverlay": "Head still. Eyes up."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "hold: steady line, easy breathing, level thighs",
+      "textOverlay": "Breathe slow, 5 breaths."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "block under the sacrum at the lowest height; supported rest",
+      "textOverlay": "Block under the sacrum, lowest height."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "lowering one part at a time, tailbone last",
+      "textOverlay": "Roll down, tailbone last."
+    },
+    {
+      "seconds": 6,
+      "angle": "front, 1.5 m",
+      "shows": "wrong (knees splaying) vs right (knees over ankles); block between thighs",
+      "textOverlay": "Knees over ankles."
+    }
+  ],
+  "lastResearched": "2026-11-16",
+  "setupSteps": [
+    "Warm up first. 1 to 3 minutes of gentle cat-cow or knee hugs (Yoga & Stretch 10) and a few pelvic tilts on the back.",
+    "Floor. Flat, non-slip mat or a rug on a dry floor. Avoid slippery tiles for the feet.",
+    "Lie down. On your back, arms alongside the body, palms down.",
+    "Knees and feet. Bend the knees. Feet flat on the floor, hip-width apart (about two fists apart, est.), parallel, toes pointing straight ahead. Walk the heels in until your fingertips can just touch the back of the heels (a common teaching test).",
+    "Neck. Keep the back of the head on the floor and the chin neutral (not tucked hard onto the chest). Look at the ceiling for the whole hold. If the neck feels strained, slide a thin folded towel under the shoulders (not under the head).",
+    "Block (optional, supported version). Keep a block, firm cushion or folded blanket stack within reach. Use the lowest height first (a lower block is more stable; sources note the tallest height is the least stable).",
+    "Clothing. Stretchy pants; no tight jeans; fitted top so the camera sees the shoulders and hips.",
+    "Camera. Phone on the floor or a low stool, 2 to 2.5 m to the side, hip height or lower, so the whole body from shoulders to feet is in frame (see sections 11 and 12)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Lie down and relax",
+      "action": "lie on your back, arms by the sides, palms down, knees bent.",
+      "feel": "the whole back heavy on the floor.",
+      "breathing": "2 slow breaths.",
+      "tempo": "6 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Set the feet",
+      "action": "feet flat, hip-width apart, parallel, heels close to the buttocks.",
+      "feel": "the whole sole of each foot pressing down, weight even.",
+      "breathing": "steady.",
+      "tempo": "5 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Tilt the pelvis a little",
+      "action": "press the lower back softly toward the floor, then release; stay in a neutral low back.",
+      "feel": "the lower belly gently switching on.",
+      "breathing": "out-breath as you press.",
+      "tempo": "3 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Press the feet and arms down",
+      "action": "push the feet into the floor and the backs of the arms and palms into the mat.",
+      "feel": "thighs and buttocks waking up; shoulders firm.",
+      "breathing": "slow in-breath.",
+      "tempo": "2 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Lift the hips",
+      "action": "on the in-breath, raise the tailbone first, then the lower back, then the middle back, as one smooth movement, until the thighs are about level with the floor (parallel to each other and to the floor).",
+      "feel": "the buttocks and back of the thighs working; a light stretch at the front of the hips.",
+      "breathing": "in-breath while rising.",
+      "tempo": "3 to 4 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Keep the neck still",
+      "action": "keep the gaze on the ceiling. Do not turn the head left or right; do not lift the chin.",
+      "feel": "the back of the neck long and free; weight on the shoulders and upper arms, not the neck.",
+      "breathing": "steady.",
+      "tempo": "for the whole hold.",
+      "visualCheck": null
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Check the knees and thighs",
+      "action": "keep the knees over the ankles and the thighs parallel (not splayed). If the knees drift out, press the outer edges of the feet down; a block or strap between the thighs can help.",
+      "feel": "inner thighs gently working.",
+      "breathing": "steady.",
+      "tempo": "2 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Optional: slide the block under the sacrum",
+      "action": "lower the hips slightly, slide a block (lowest height first) under the sacrum (the flat bone at the base of the spine, not the lower back), then rest the weight on it. Let the feet press lightly; the legs can soften.",
+      "feel": "supported; the back of the pelvis resting; no pinching in the lower back.",
+      "breathing": "slow out-breath.",
+      "tempo": "5 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 9,
+      "part": null,
+      "title": "Hold",
+      "action": "stay with an even, slow nose breath. Unsupported: about 5 breaths (about 25 seconds, est.); sources range from 10 to 30 seconds (AYUSH-style source) up to 30 to 60 seconds (5 to 10 breaths). Supported on a block: 1 to 3 minutes for a beginner (est.; sources say 2 to 5 minutes).",
+      "feel": "steady effort in the buttocks and thighs, no pain, no neck pressure.",
+      "breathing": "slow nose breaths, count each out-breath.",
+      "tempo": "15 to 30 seconds unsupported (est.).",
+      "visualCheck": null
+    },
+    {
+      "n": 10,
+      "part": null,
+      "title": "Lower slowly",
+      "action": "on an out-breath, lower the spine one part at a time: upper back first, then the middle back, then the lower back, and the tailbone last. If a block is under you, lift the hips slightly first and slide it out, then lower.",
+      "feel": "each vertebra touching the floor in order.",
+      "breathing": "slow out-breath.",
+      "tempo": "4 to 6 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 11,
+      "part": null,
+      "title": "Rest",
+      "action": "let the knees fall together or hug the knees to the chest.",
+      "feel": "the lower back soft and released.",
+      "breathing": "3 slow breaths.",
+      "tempo": "10 to 15 seconds between rounds.",
+      "visualCheck": "back flat on the floor; neck free."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Turning or lifting the head",
+      "text": "Turning or lifting the head. It strains the neck, the most common cause of bridge-related neck pain. Fix: keep the gaze on the ceiling and the head still; place a thin towel under the shoulders if the neck feels loaded."
+    },
+    {
+      "title": "Knees splaying out or falling in",
+      "text": "Knees splaying out or falling in. It stresses the knees and takes work off the hips. Fix: keep the feet hip-width and parallel, press the outer edges of the feet down; a block between the thighs can help."
+    },
+    {
+      "title": "Feet too far from or too close to the buttocks",
+      "text": "Feet too far from or too close to the buttocks. Too far strains the hamstrings (cramp); too close pinches the knees. Fix: walk the heels in until the fingertips just brush the heels."
+    },
+    {
+      "title": "Over-lifting and arching the lower back",
+      "text": "Over-lifting and arching the lower back. It compresses the lower back and pushes the ribs up. Fix: lift only until the thighs are level; draw the lower belly in and the tailbone toward the knees."
+    },
+    {
+      "title": "Pushing the chest up toward the chin",
+      "text": "Pushing the chest up toward the chin. It jams the neck (a neck-compression risk named in teaching sources). Fix: let the chest rise only from the lift, not from pulling the chin to it; keep the neck long."
+    },
+    {
+      "title": "Dropping the hips or letting one hip sag",
+      "text": "Dropping the hips or letting one hip sag. Uneven work and a twist in the pelvis. Fix: squeeze the buttocks evenly; lower and reset."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. It raises effort and blood pressure. Fix: slow nose breathing during the whole hold."
+    },
+    {
+      "title": "Dropping down fast",
+      "text": "Dropping down fast. The back and neck get a jolt. Fix: roll down one part at a time, tailbone last."
+    },
+    {
+      "title": "Block too high or on the lower back",
+      "text": "Block too high or on the lower back. It pinches the back and feels unstable. Fix: use the lowest height; place it under the sacrum (flat bone), not the waist."
+    }
+  ],
+  "safetyNotes": [
+    "Mild effort, never pain. Stop at pain in the neck, back, knee, hip or shoulder.",
+    "Neck: keep the head still. A yoga teacher source advises avoiding the pose until a current neck or shoulder injury is healed; a yoga-injury database lists herniated cervical disc among contraindications (snippets). With a neck injury, ask a doctor or an experienced teacher first.",
+    "Lower back: do not over-arch. Use a small lift or a block. Stop if pain spreads, or if leg symptoms (tingling, numbness) appear.",
+    "Knees: feet close to the hips but not so close the knees pinch; knees over the ankles, no inward collapse.",
+    "Digestive: the CYP-style caution lists peptic ulcer and hernia; skip or ask a doctor.",
+    "Blood pressure and heart: the CYP-style snippet lists avoiding the practices with cardiac problems or high blood pressure. Bridge is a mild, head-below-hips pose (hips lifted, head on the floor); Harvard Health advises caution about heart-above-head poses in general (snippet). Use short holds, never hold the breath, come out slowly.",
+    "Dizziness: after lowering, rest and breathe; sit up slowly.",
+    "Stop immediately if you feel: sharp pain in the neck or back, numbness or tingling in the arms or legs, dizziness, chest pain or breathlessness, a cramp in the back of the thigh that does not ease, or a pop or pull.",
+    "Spotter: not needed. Gym etiquette: keep the block and mat out of the walkway; do not take the only mat in a crowded stretching area for a long supported hold."
+  ],
+  "sources": [
+    "Ministry of AYUSH Common Yoga Protocol (CYP): supine postures list Setubandhasana (seen only as a search summary and links; official PDF text not opened): MDNIY CYP 2023 English PDF: https://yogamdniy.nic.in/files/pdf/CYP-2023-English.pdf ; https://www.iiap.res.in/files/CommonYogaProtocol.pdf ; https://mea.gov.in/images/attach/Booklet_english_2016.pdf ; https://indembarg.gov.in/content/Common%20Yoga%20Protocol%20(Spanish).pdf ; https://www.indoindians.com/42-yoga-poses-of-common-yoga-protocol-of-international-day-of-yoga/",
+    "Ministry of Information video page quoting International Day of Yoga 2015 / nhp.gov.in text for Setubandhasana (10-30 s hold, normal breathing, ulcer/hernia/pregnancy cautions; snippet; not confirmed as MDNIY's own text): https://www.letsplayindex.com/video/setubandhasana-the-bridge-posture-ministry-of-information-mqN6N2Ku9rE",
+    "Yoga U Online bridge pose pages (feet, knees over ankles, neck cautions, block; snippets): https://yogauonline.com/yoga-poses/bridge-pose/ ; https://yogauonline.com/yoga-poses/bridge-pose/teaching/ ; https://yogauonline.com/yoga-practice-teaching-tips/yoga-practice-tips/the-secret-to-bridge-pose-top-tips-to-transform-your-yoga-practice",
+    "Brett Larkin and Ekhart Yoga bridge pose pages (technique, block between thighs; snippets): https://brettlarkin.com/bridge-pose-setu-bandha-sarvangasana ; https://www.ekhartyoga.com/more-yoga/yoga-poses/bridge-pose",
+    "Yoga Vastu, Iyengar-style supported bridge, and Liforme block setup pages (block under the sacrum, longer supported holds; snippets): https://yogavastu.com/p/supported-setu-bandha-sarvangasana/ ; https://liforme.com/blogs/blog/bridge-pose-setu-bandhasana ; https://myyogateacher.com/yoga-asana/setu-bandha-sarvangasana",
+    "Yoga Journal bridge pose page (benefits and variations; seen only as a link, alignment cues not confirmed): https://www.yogajournal.com/poses/bridge-pose",
+    "Indian health and teaching pages on benefits and precautions (spinal/shoulder/neck cautions, thyroid and other benefit claims treated as unproven; snippets): https://hariomyogavidyaschool.com/?p=1296 ; https://www.artofliving.org/us-en/blog/yoga/poses/bridge-pose ; https://www.rishikulyogshala.org/blog/?p=23710 ; https://www.bajajfinservhealth.in/articles/bridge-pose",
+    "Pregnancy and neck-injury cautions (snippets): Yoga International: https://yogainternational.com/article/view/6-tips-for-modifying-your-class-for-pregnant-students ; Yoga U Online prenatal: https://yogauonline.com/yoga-health-benefits/prenatal-yoga/prenatal-yoga-dos-and-donts/ ; Brett Larkin: https://www.brettlarkin.com/yoga-modifications-for-pregnancy/ ; Harvard Health: https://health.harvard.edu/blog/yoga-in-pregnancy-many-poses-are-safer-than-once-thought-201512298898",
+    "Harvard Health, yoga and high blood pressure (caution with poses that put the heart above the head; snippet): https://www.health.harvard.edu/heart-health/yoga-and-high-blood-pressure",
+    "Glute bridge EMG studies (gluteus maximus about 34% MVIC, hamstrings about 28% in single-leg bridge; knee angle effect; snippets): https://pmc.ncbi.nlm.nih.gov/articles/PMC5534144 ; https://pmc.ncbi.nlm.nih.gov/articles/PMC10529521/ ; https://brookbushinstitute.com/articles/electromyographic-analysis-of-gluteus-maximus-and-hamstring-activity-during-the-supine-resisted-hip-extension-exercise-versus-supine-unilateral-bridge-to-neutral",
+    "Herrmann SD et al., 2024 Adult Compendium of Physical Activities (02150 Yoga, Hatha 2.3; seen via search snippet): https://pacompendium.com/conditioning-exercise ; https://pubmed.ncbi.nlm.nih.gov/38242596/",
+    "Condition sources (general, from earlier items): ADA PMC5317029: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/ ; PCOS position statement: https://researchers.westernsydney.edu.au/en/publications/exercise-in-the-management-of-polycystic-ovary-syndrome-a-positio/ ; Marshfield Clinic asthma: https://shine365.marshfieldclinic.org/wellness/asthma-exercise/ ; ECU Health asthma: https://healthlibrary.ecuhealth.org/lung-health/management/asthma-management-exercise-safety",
+    "Hold time: 10 to 30 seconds (AYUSH-style), 30 to 60 seconds or 5 to 10 breaths (teaching), several minutes if block-supported. We chose about 5 breaths (about 25 s, est.) unsupported and 1 to 3 minutes supported (est.).",
+    "Hand position: hands by the sides, clasped under the back, or holding the ankles. We chose hands by the sides.",
+    "Hip height: thighs level in most sources; some push higher. We chose level thighs, not height chasing.",
+    "Pregnancy: listed as an avoid pose by some sources, a supported option by others. We chose \"ask a doctor; supported only if cleared\".",
+    "Not found: official CYP text for Setubandhasana (only snippets); an MDNIY technique page; a bridge-specific MET; measured joint-angle norms or EMG for the yoga bridge pose; clinical sources on osteoporosis, postpartum, thyroid, cholesterol for this pose; ACOG wording for this pose; a direct comparison of yoga bridge with glute bridge. Our thresholds are estimates.",
+    "Most pages were seen only as search snippets or summaries; direct page fetches were not possible."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 43.5,
+      "70kg": 37.3,
+      "80kg": 32.6
+    },
+    "per300kcal": {
+      "60kg": 130.4,
+      "70kg": 111.8,
+      "80kg": 97.8
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "yoga",
+    "mobility",
+    "flexibility",
+    "relaxation",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "small_flat",
+    "quiet",
+    "3_6_min",
+    "warm_up",
+    "cool_down",
+    "morning",
+    "evening",
+    "lower_back_friendly_modified"
+  ],
+  "swapsByAccess": {
+    "none": "Half-height bridge with no support, pelvic tilts on the floor, or Child's pose",
+    "home_equipment": "Block, firm cushion or bolster under the sacrum for a supported hold",
+    "basic_gym": "Floor mat area with a block or step; the same supported bridge",
+    "full_gym": "Studio mat area with block and strap; hip thrust or glute bridge station for the strength version"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "ask_doctor",
+      "change": "CYP-style caution; if cleared, low block, short holds, no breath-holding, rise slowly",
+      "source": "CYP snippet (via search summary); Harvard Health (snippet); Not found (bridge-specific clinical)"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "modify",
+      "change": "Check feet; eat first if on glucose-lowering medicine; slow rise; ask a doctor",
+      "source": "ADA PMC5317029 (general); Not found (pose-specific)"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "CYP-style caution; if cleared, short holds, low block, no breath-holding",
+      "source": "CYP snippet (via search summary); Not found (clinical)"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "No change (source not found)",
+      "source": "Not found"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Grip mat, lower lift, block support, shorter holds, slow rise",
+      "source": "Not found (pose-specific)"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "No pose-specific caution found",
+      "source": "PCOS exercise position statement (general); Not found (pose-specific)"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "No clinical caution found; neck comfort matters",
+      "source": "Not found"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Reliever inhaler nearby; slow breathing; stop if wheezing",
+      "source": "Marshfield Clinic and ECU Health asthma exercise-safety pages (general)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Feet a little farther if knees pinch; knees over ankles; small lift with block; stop if the knee hurts",
+      "source": "Teaching sources (snippets); Not found (clinical OA guidance)"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Small lift or half bridge, block support, no over-arching; ask a doctor or physio for spinal conditions",
+      "source": "Secondary source reporting studies (snippet, glute-focused); Not found (yoga-pose clinical)"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "modify",
+      "change": "Arms by the sides, palms down, no clasped hands; blanket under the shoulders; skip if shoulder injury",
+      "source": "Search snippets (Hariom Yoga, Art of Living); Not found (clinical)"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "ask_doctor",
+      "change": "Ask a doctor before any backbend; if cleared, small lift, no force",
+      "source": "Not found"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "ask_doctor",
+      "change": "CYP-style caution for advanced pregnancy; sources conflict; supported version only if a midwife or doctor agrees; avoid long flat-on-back time in later pregnancy",
+      "source": "CYP snippet; Yoga International and Brett Larkin pages (snippets); Harvard Health prenatal yoga blog (general); Not found (ACOG wording)"
+    },
+    {
+      "condition": "postpartum",
+      "status": "modify",
+      "change": "Start gently after clearance, small lift; stop if pelvic or abdominal pain",
+      "source": "Not found"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Follow the surgeon's advice; back, neck, abdominal and hernia surgery especially",
+      "source": "Not found (CYP-style caution lists hernia)"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "home"
+    ],
+    "bodyRegion": [
+      "lower",
+      "core"
+    ],
+    "goalTags": [
+      "flexibility",
+      "relaxation",
+      "general_fitness",
+      "strength"
+    ],
+    "intensity": "light",
+    "noise": "quiet",
+    "space": "mat_only",
+    "typicalMinutes": 5,
+    "kcalPer10min70kg": 27,
+    "difficulty1to5": 2,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Yoga & stretch",
+    "Home",
+    "No equipment",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Yoga",
+    "Glutes",
+    "Legs",
+    "Back",
+    "Hold timer",
+    "Under 10 min"
+  ],
+  "needsReview": [
+    "rep_counter phase \"hold_long_enough\" (time): angle \"hold >= 10 s (position flag, not an angle)\" is not a parseable angle"
+  ],
+  "versions": [
+    {
+      "date": "2026-11-16",
+      "file": "FitPlate_Fitness_2026-11-16.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

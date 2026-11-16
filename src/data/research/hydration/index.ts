@@ -4,6 +4,8 @@ import type { Hydration } from '../../../models/nutrient';
 import item_dehydration_signs_and_the_urine_colour_check from './dehydration-signs-and-the-urine-colour-check.json';
 import item_electrolytes_hydration_exercise from './electrolytes-hydration-exercise.json';
 import item_hydration_hot_humid_mumbai from './hydration-hot-humid-mumbai.json';
+import item_hydration_timing_workday from './hydration-timing-workday.json';
+import item_overhydration_and_low_sodium_hyponatremia from './overhydration-and-low-sodium-hyponatremia.json';
 import item_water_daily_requirement from './water-daily-requirement.json';
 import item_water_food_and_drinks from './water-food-and-drinks.json';
 
@@ -11,6 +13,8 @@ export const items: Hydration[] = [
   item_dehydration_signs_and_the_urine_colour_check as unknown as Hydration,
   item_electrolytes_hydration_exercise as unknown as Hydration,
   item_hydration_hot_humid_mumbai as unknown as Hydration,
+  item_hydration_timing_workday as unknown as Hydration,
+  item_overhydration_and_low_sodium_hyponatremia as unknown as Hydration,
   item_water_daily_requirement as unknown as Hydration,
   item_water_food_and_drinks as unknown as Hydration,
 ];
