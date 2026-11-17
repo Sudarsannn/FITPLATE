@@ -14,7 +14,7 @@ Phase 4 starts. The Track tab now has two new views, **Charts** and **Prices**, 
 Full report: sync29.md (scratchpad). Dishes: 5 re-versioned (103 in app, backlog 0), micronutrient estimates moved slightly because 25 ingredient versions updated (179 in app, backlog 0). Nutrients: 0 new (50 in app). Fitness: 0 new (64 in app). No invalid files.
 
 ## 4. SNAPSHOT
-Not an integration day, so no snapshot. Next one: Day 36.
+Not an integration day, so no snapshot. Next one: Day 37 (final integration).
 
 ## 5. INNOVATION
 - **"In plain words" notes**: a few honest sentences written from the logs only where the data supports them (best protein day, change against the period before, days near the protein goal, minutes of movement, rupees saved). Nothing is said from fewer than 2 to 3 logged days.
