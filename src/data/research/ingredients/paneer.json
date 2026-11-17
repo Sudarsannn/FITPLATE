@@ -23,32 +23,42 @@
         "avg": 415,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      },
+      {
+        "date": "2026-11-17",
+        "min": 450,
+        "max": 495,
+        "avg": 470,
+        "confidence": "High",
+        "sourceFile": "FitPlate_Ingredients_2026-11-17.md"
       }
     ],
     "currentEstimate": {
-      "min": 410,
+      "min": 435,
       "max": 500,
-      "avg": 445
+      "avg": 460
     },
     "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-25",
+    "trend": "stable",
+    "change30dPct": 0.2,
+    "lastObserved": "2026-11-17",
     "stale": false,
     "seasonal": false,
-    "listingCount": 7,
+    "listingCount": 6,
     "platforms": [
       "BigBasket",
-      "StoreKing"
+      "Blinkit",
+      "Rozmo price tracker",
+      "Swiggy Instamart"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 41,
+    "min": 43.5,
     "max": 50,
-    "avg": 44.5
+    "avg": 46
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -235,10 +245,10 @@
     }
   },
   "macrosPer100Estimate": {
-    "kcal": 291.5,
-    "proteinG": 16,
+    "kcal": 293,
+    "proteinG": 14,
     "carbsG": 2,
-    "fatG": 24.1,
+    "fatG": 25.1,
     "fibreG": 0
   },
   "storage": "Refrigerate in the pack; once opened, keep submerged in clean water in a closed box and change the water daily, or freeze in cubes.",
@@ -254,6 +264,38 @@
   ],
   "vendorListings": [
     {
+      "vendor": "blinkit",
+      "product": "Amul Fresh Malai Paneer",
+      "pack": "200 g",
+      "priceMinInr": 95,
+      "priceMaxInr": 95,
+      "observedOn": "2026-11-17"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Amul Malai Paneer",
+      "pack": "200 g",
+      "priceMinInr": 99,
+      "priceMaxInr": 99,
+      "observedOn": "2026-11-17"
+    },
+    {
+      "vendor": "instamart",
+      "product": "Gowardhan Fresh Paneer",
+      "pack": "200 g",
+      "priceMinInr": 90,
+      "priceMaxInr": 90,
+      "observedOn": "2026-11-17"
+    },
+    {
+      "vendor": "instamart",
+      "product": "Mother Dairy Fresh Paneer",
+      "pack": "200 g",
+      "priceMinInr": 92,
+      "priceMaxInr": 92,
+      "observedOn": "2026-11-17"
+    },
+    {
       "vendor": "instamart",
       "product": null,
       "pack": "200 g",
@@ -264,10 +306,10 @@
   ],
   "usedIn": [
     {
-      "dishNumber": 81,
+      "dishNumber": 42,
       "quantity": 40,
       "unit": "g",
-      "raw": "40 g per serving (about 4 tbsp crumbled or grated)"
+      "raw": "40 g per serving (full-fat, about ⅓ cup grated)"
     }
   ],
   "versions": [
@@ -278,11 +320,15 @@
     {
       "date": "2026-10-25",
       "file": "FitPlate_Ingredients_2026-10-25.md"
+    },
+    {
+      "date": "2026-11-17",
+      "file": "FitPlate_Ingredients_2026-11-17.md"
     }
   ],
   "mergeMethod": {
     "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -291,5 +337,7 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "macrosPer100Estimate.proteinG: Excluded outlier 18 from 2026-10-04: more than 25% from the other versions."
+  ]
 }

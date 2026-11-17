@@ -23,32 +23,42 @@
         "avg": 670,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      },
+      {
+        "date": "2026-11-17",
+        "min": 640,
+        "max": 715,
+        "avg": 655,
+        "confidence": "High",
+        "sourceFile": "FitPlate_Ingredients_2026-11-17.md"
       }
     ],
     "currentEstimate": {
-      "min": 550,
-      "max": 740,
-      "avg": 645
+      "min": 595,
+      "max": 735,
+      "avg": 650
     },
     "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-25",
+    "trend": "stable",
+    "change30dPct": 3,
+    "lastObserved": "2026-11-17",
     "stale": false,
     "seasonal": false,
-    "listingCount": 8,
+    "listingCount": 7,
     "platforms": [
       "BigBasket",
-      "Swiggy Instamart"
+      "Blinkit",
+      "Swiggy Instamart",
+      "Zepto"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 55,
-    "max": 74,
-    "avg": 64.5
+    "min": 59.5,
+    "max": 73.5,
+    "avg": 65
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -235,7 +245,7 @@
     }
   },
   "macrosPer100Estimate": {
-    "kcal": 898.5,
+    "kcal": 897,
     "proteinG": 0,
     "carbsG": 0,
     "fatG": 61.9,
@@ -254,6 +264,14 @@
   ],
   "vendorListings": [
     {
+      "vendor": "blinkit",
+      "product": "Amul Cow Ghee",
+      "pack": "1 L",
+      "priceMinInr": 675,
+      "priceMaxInr": 675,
+      "observedOn": "2026-11-17"
+    },
+    {
       "vendor": "instamart",
       "product": "Gowardhan Pure Cow Ghee jar",
       "pack": "500 ml",
@@ -265,29 +283,41 @@
       "vendor": "instamart",
       "product": "Mother Dairy Cow Ghee",
       "pack": "1 L",
-      "priceMinInr": 621,
-      "priceMaxInr": 621,
-      "observedOn": "2026-10-25"
+      "priceMinInr": 647,
+      "priceMaxInr": 647,
+      "observedOn": "2026-11-17"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Amul Cow Ghee jar",
+      "pack": "1 L",
+      "priceMinInr": 638,
+      "priceMaxInr": 638,
+      "observedOn": "2026-11-17"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Amul Cow Ghee pouch",
+      "pack": "1 L",
+      "priceMinInr": 638,
+      "priceMaxInr": 638,
+      "observedOn": "2026-11-17"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Amul Cow Ghee carton/refill",
+      "pack": "1 L",
+      "priceMinInr": 639,
+      "priceMaxInr": 639,
+      "observedOn": "2026-11-17"
     }
   ],
   "usedIn": [
     {
-      "dishNumber": 81,
-      "quantity": 5,
+      "dishNumber": 41,
+      "quantity": 13,
       "unit": "g",
-      "raw": "5 g per serving (1 tsp)"
-    },
-    {
-      "dishNumber": 84,
-      "quantity": 5,
-      "unit": "g",
-      "raw": "5 g per serving (1 tsp)"
-    },
-    {
-      "dishNumber": 101,
-      "quantity": 7,
-      "unit": "g",
-      "raw": "7 g per serving (1½ tsp)"
+      "raw": "13 g per serving (about 14 ml; 1 tbsp: 1 tsp in the cooker, 2 tsp in the tempering)"
     }
   ],
   "versions": [
@@ -298,11 +328,15 @@
     {
       "date": "2026-10-25",
       "file": "FitPlate_Ingredients_2026-10-25.md"
+    },
+    {
+      "date": "2026-11-17",
+      "file": "FitPlate_Ingredients_2026-11-17.md"
     }
   ],
   "mergeMethod": {
     "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -311,8 +345,5 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": [
-    "price flag: narrowed",
-    "Range 526.4–761.0 was wider than 30% of avg 645.2; narrowed to ±15%."
-  ]
+  "mergeNotes": []
 }

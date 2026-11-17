@@ -23,33 +23,40 @@
         "avg": 185,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      },
+      {
+        "date": "2026-11-17",
+        "min": 150,
+        "max": 195,
+        "avg": 175,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-17.md"
       }
     ],
     "currentEstimate": {
-      "min": 175,
+      "min": 165,
       "max": 195,
-      "avg": 185
+      "avg": 180
     },
     "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-25",
+    "trend": "stable",
+    "change30dPct": -3.8,
+    "lastObserved": "2026-11-17",
     "stale": false,
     "seasonal": false,
-    "listingCount": 5,
+    "listingCount": 3,
     "platforms": [
-      "Amazon",
       "BigBasket",
-      "Flipkart"
+      "Zepto"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 17.5,
+    "min": 16.5,
     "max": 19.5,
-    "avg": 18.5
+    "avg": 18
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -254,31 +261,28 @@
     "Rice bran oil",
     "Mustard or coconut oil"
   ],
-  "vendorListings": [],
+  "vendorListings": [
+    {
+      "vendor": "zepto",
+      "product": "Gold Winner Refined Sunflower Oil pouch",
+      "pack": "1 L",
+      "priceMinInr": 151,
+      "priceMaxInr": 153,
+      "observedOn": "2026-11-17"
+    }
+  ],
   "usedIn": [
     {
-      "dishNumber": 82,
+      "dishNumber": 42,
+      "quantity": 8,
+      "unit": "g",
+      "raw": "about 8 g absorbed per serving from deep-frying (est.; about 250 ml oil sits in the kadai, so a first fry needs about 1 cup) plus 5 ml (about 4.6 g, 1 tsp) in the gravy"
+    },
+    {
+      "dishNumber": 43,
       "quantity": 12,
-      "unit": "g",
-      "raw": "12 g per serving (about 1 tbsp, a scant; sunflower oil or any neutral oil)"
-    },
-    {
-      "dishNumber": 84,
-      "quantity": 10,
-      "unit": "g",
-      "raw": "10 g per serving (2 tsp; 3 g for the eggs, 7 g for the onion)"
-    },
-    {
-      "dishNumber": 85,
-      "quantity": 6,
-      "unit": "g",
-      "raw": "6 g per serving (1½ tsp)"
-    },
-    {
-      "dishNumber": 101,
-      "quantity": 5,
       "unit": "ml",
-      "raw": "5 ml per serving (1 tsp)"
+      "raw": "12 ml per serving (about 11 g, 2½ tsp; sunflower by default, groundnut oil also works)"
     }
   ],
   "versions": [
@@ -289,11 +293,15 @@
     {
       "date": "2026-10-25",
       "file": "FitPlate_Ingredients_2026-10-25.md"
+    },
+    {
+      "date": "2026-11-17",
+      "file": "FitPlate_Ingredients_2026-11-17.md"
     }
   ],
   "mergeMethod": {
     "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",

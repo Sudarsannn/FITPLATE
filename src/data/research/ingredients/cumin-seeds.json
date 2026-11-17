@@ -4,7 +4,7 @@
   "aliases": [
     "jeera"
   ],
-  "category": "Spice (ground)",
+  "category": "Spice (whole)",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -23,33 +23,41 @@
         "avg": 450,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      },
+      {
+        "date": "2026-11-17",
+        "min": 520,
+        "max": 1195,
+        "avg": 770,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-17.md"
       }
     ],
     "currentEstimate": {
-      "min": 430,
-      "max": 585,
-      "avg": 510
+      "min": 545,
+      "max": 735,
+      "avg": 640
     },
-    "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-25",
+    "method": "spike-blend",
+    "trend": "stable",
+    "change30dPct": 24.3,
+    "lastObserved": "2026-11-17",
     "stale": false,
     "seasonal": false,
-    "listingCount": 11,
+    "listingCount": 4,
     "platforms": [
       "BigBasket",
-      "Flipkart",
-      "Swiggy Instamart"
+      "Blinkit",
+      "Zepto"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 43,
-    "max": 58.5,
-    "avg": 51
+    "min": 54.5,
+    "max": 73.5,
+    "avg": 64
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -256,23 +264,53 @@
   ],
   "vendorListings": [
     {
+      "vendor": "blinkit",
+      "product": "Catch Cumin Seeds",
+      "pack": "100 g",
+      "priceMinInr": 60,
+      "priceMaxInr": 60,
+      "observedOn": "2026-11-17"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Catch Cumin Seeds",
+      "pack": "200 g",
+      "priceMinInr": 104,
+      "priceMaxInr": 104,
+      "observedOn": "2026-11-17"
+    },
+    {
       "vendor": "instamart",
       "product": "Supreme Harvest Cumin Whole, page updated 24 Jun 2026",
       "pack": "500 g",
       "priceMinInr": 190,
       "priceMaxInr": 190,
       "observedOn": "2026-10-25"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Zoff Foods Whole Cumin Seeds",
+      "pack": "200 g",
+      "priceMinInr": 239,
+      "priceMaxInr": 239,
+      "observedOn": "2026-11-17"
     }
   ],
   "usedIn": [
     {
-      "dishNumber": 82,
+      "dishNumber": 41,
       "quantity": 1,
       "unit": "g",
       "raw": "1 g per serving (½ tsp)"
     },
     {
-      "dishNumber": 84,
+      "dishNumber": 42,
+      "quantity": 0.5,
+      "unit": "g",
+      "raw": "0.5 g per serving (¼ tsp)"
+    },
+    {
+      "dishNumber": 44,
       "quantity": 1,
       "unit": "g",
       "raw": "1 g per serving (½ tsp)"
@@ -286,10 +324,14 @@
     {
       "date": "2026-10-25",
       "file": "FitPlate_Ingredients_2026-10-25.md"
+    },
+    {
+      "date": "2026-11-17",
+      "file": "FitPlate_Ingredients_2026-11-17.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (wma)",
+    "price": "price engine (spike-blend)",
     "macrosPer100Estimate": "stable (single)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
@@ -300,8 +342,10 @@
     "usedIn": "newest"
   },
   "mergeNotes": [
+    "price flag: possible-spike",
     "price flag: narrowed",
-    "Range 333.3–698.3 was wider than 30% of avg 507.9; narrowed to ±15%.",
-    "macrosPer100Estimate.fatG: Versions 2026-10-04 (22) and 2026-10-25 (14) differ by more than 25%; kept the newer."
+    "Possible spike: latest avg 770 (2026-11-17) moved more than 35% from the previous estimate; using the halfway point.",
+    "Range 426.6–946.6 was wider than 30% of avg 639.0; narrowed to ±15%.",
+    "macrosPer100Estimate.fatG: Excluded outlier 22 from 2026-10-04: more than 25% from the other versions."
   ]
 }

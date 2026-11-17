@@ -23,33 +23,40 @@
         "avg": 100,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      },
+      {
+        "date": "2026-11-17",
+        "min": 70,
+        "max": 165,
+        "avg": 115,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-17.md"
       }
     ],
     "currentEstimate": {
-      "min": 78,
-      "max": 105,
-      "avg": 92
+      "min": 100,
+      "max": 130,
+      "avg": 115
     },
-    "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-25",
+    "method": "latest-trend",
+    "trend": "rising",
+    "change30dPct": 24.3,
+    "lastObserved": "2026-11-17",
     "stale": false,
     "seasonal": false,
-    "listingCount": 6,
+    "listingCount": 9,
     "platforms": [
-      "BigBasket"
+      "BigBasket",
+      "Zepto"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 1 platform (BigBasket) backs the range"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 7.8,
-    "max": 10.5,
-    "avg": 9.2
+    "min": 10,
+    "max": 13,
+    "avg": 11.5
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -254,25 +261,22 @@
     "Coconut yoghurt (unsweetened)",
     "Buttermilk or lemon juice in water"
   ],
-  "vendorListings": [],
+  "vendorListings": [
+    {
+      "vendor": "zepto",
+      "product": "Amul Masti Dahi, cup",
+      "pack": "400 g",
+      "priceMinInr": 47,
+      "priceMaxInr": 47,
+      "observedOn": "2026-11-17"
+    }
+  ],
   "usedIn": [
     {
-      "dishNumber": 82,
+      "dishNumber": 45,
       "quantity": 40,
       "unit": "g",
-      "raw": "40 g whisked curd per serving."
-    },
-    {
-      "dishNumber": 84,
-      "quantity": 40,
-      "unit": "g",
-      "raw": "40 g curd per serving."
-    },
-    {
-      "dishNumber": 101,
-      "quantity": 20,
-      "unit": "g",
-      "raw": "20 g curd per serving."
+      "raw": "40 g hung curd (strained dahi) per serving, made from about 80 g (⅓ cup) plain curd strained for 30 minutes"
     }
   ],
   "versions": [
@@ -283,11 +287,15 @@
     {
       "date": "2026-10-25",
       "file": "FitPlate_Ingredients_2026-10-25.md"
+    },
+    {
+      "date": "2026-11-17",
+      "file": "FitPlate_Ingredients_2026-11-17.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (latest-trend)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -298,8 +306,7 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 74.6–107.9 was wider than 30% of avg 91.6; narrowed to ±15%.",
-    "macrosPer100Estimate.kcal: Versions 2026-10-04 (60) and 2026-10-25 (77) differ by more than 25%; kept the newer.",
-    "macrosPer100Estimate.fatG: Versions 2026-10-04 (4) and 2026-10-25 (2.3) differ by more than 25%; kept the newer."
+    "Range 70.0–165.0 was wider than 30% of avg 115.0; narrowed to ±15%.",
+    "macrosPer100Estimate.fatG: Excluded outlier 4 from 2026-10-04: more than 25% from the other versions."
   ]
 }

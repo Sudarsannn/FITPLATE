@@ -4,7 +4,7 @@
   "aliases": [
     "Kashmiri lal mirch"
   ],
-  "category": "Spice (ground)",
+  "category": "Spice",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -23,32 +23,41 @@
         "avg": 1195,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      },
+      {
+        "date": "2026-11-17",
+        "min": 600,
+        "max": 1330,
+        "avg": 1100,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-17.md"
       }
     ],
     "currentEstimate": {
-      "min": 950,
-      "max": 1285,
-      "avg": 1120
+      "min": 940,
+      "max": 1275,
+      "avg": 1105
     },
     "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-25",
+    "trend": "stable",
+    "change30dPct": 2.6,
+    "lastObserved": "2026-11-17",
     "stale": false,
     "seasonal": false,
-    "listingCount": 5,
+    "listingCount": 8,
     "platforms": [
+      "Amazon",
       "BigBasket",
-      "Flipkart"
+      "Blinkit"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 95,
-    "max": 128.5,
-    "avg": 112
+    "min": 94,
+    "max": 127.5,
+    "avg": 110.5
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -235,11 +244,11 @@
     }
   },
   "macrosPer100Estimate": {
-    "kcal": 291,
+    "kcal": 292,
     "proteinG": 13,
     "carbsG": 63,
     "fatG": 10,
-    "fibreG": 34
+    "fibreG": 35
   },
   "storage": "Airtight container away from light and heat; colour fades with time, so use within about 6 months once opened.",
   "looksLike": "a bright, deep red powder with mild heat, used to colour gravies red without making them very hot.",
@@ -255,6 +264,46 @@
   "vendorListings": [
     {
       "vendor": "blinkit",
+      "product": "Eastern Kashmiri Red Chilli Powder",
+      "pack": "100 g",
+      "priceMinInr": 60,
+      "priceMaxInr": 81,
+      "observedOn": "2026-11-17"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Catch Kashmiri chilli powder",
+      "pack": "100 g",
+      "priceMinInr": 89,
+      "priceMaxInr": 109,
+      "observedOn": "2026-11-17"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Everest Kashmiri Red Chilli Powder",
+      "pack": "100 g",
+      "priceMinInr": 92,
+      "priceMaxInr": 132,
+      "observedOn": "2026-11-17"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Orika Kashmiri Red Chilli Powder",
+      "pack": "100 g",
+      "priceMinInr": 100,
+      "priceMaxInr": 126,
+      "observedOn": "2026-11-17"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "MDH Kashmiri Red Chilli Powder",
+      "pack": "100 g",
+      "priceMinInr": 102,
+      "priceMaxInr": 133,
+      "observedOn": "2026-11-17"
+    },
+    {
+      "vendor": "blinkit",
       "product": null,
       "pack": "100 g",
       "priceMinInr": 119,
@@ -264,28 +313,22 @@
   ],
   "usedIn": [
     {
-      "dishNumber": 82,
-      "quantity": 2,
-      "unit": "g",
-      "raw": "2 g per serving (¾ tsp)"
-    },
-    {
-      "dishNumber": 83,
-      "quantity": 0.2,
-      "unit": "g",
-      "raw": "0.2 g per serving (a small pinch, in the green chutney; the dish lists it as \"red chilli powder (Kashmiri)\")"
-    },
-    {
-      "dishNumber": 85,
-      "quantity": 0.5,
-      "unit": "g",
-      "raw": "0.5 g per serving (¼ tsp)"
-    },
-    {
-      "dishNumber": 102,
+      "dishNumber": 42,
       "quantity": 1,
       "unit": "g",
-      "raw": "1 g per serving (½ tsp; the dish names it \"red chilli powder (lal mirch, Kashmiri)\", so it is counted here, not under regular lal mirch)"
+      "raw": "1 g per serving (½ tsp)"
+    },
+    {
+      "dishNumber": 44,
+      "quantity": 1,
+      "unit": "g",
+      "raw": "1 g per serving (½ tsp)"
+    },
+    {
+      "dishNumber": 45,
+      "quantity": 2.5,
+      "unit": "g",
+      "raw": "2.5 g per serving (1¼ tsp in total: ½ tsp in the first rub and ¾ tsp in the marinade)"
     }
   ],
   "versions": [
@@ -296,11 +339,15 @@
     {
       "date": "2026-10-25",
       "file": "FitPlate_Ingredients_2026-10-25.md"
+    },
+    {
+      "date": "2026-11-17",
+      "file": "FitPlate_Ingredients_2026-11-17.md"
     }
   ],
   "mergeMethod": {
     "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -311,8 +358,7 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 922.2–1306.5 was wider than 30% of avg 1117.7; narrowed to ±15%.",
-    "macrosPer100Estimate.carbsG: Versions 2026-10-04 (50) and 2026-10-25 (63) differ by more than 25%; kept the newer.",
-    "macrosPer100Estimate.fatG: Versions 2026-10-04 (14) and 2026-10-25 (10) differ by more than 25%; kept the newer."
+    "Range 727.6–1320.7 was wider than 30% of avg 1107.0; narrowed to ±15%.",
+    "macrosPer100Estimate.fatG: Excluded outlier 14 from 2026-10-04: more than 25% from the other versions."
   ]
 }

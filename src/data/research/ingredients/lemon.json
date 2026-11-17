@@ -4,7 +4,7 @@
   "aliases": [
     "nimbu"
   ],
-  "category": "Fruit (citrus)",
+  "category": "Fruit",
   "standardUnit": "piece",
   "price": {
     "priceHistory": [
@@ -23,24 +23,31 @@
         "avg": 9,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      },
+      {
+        "date": "2026-11-17",
+        "min": 5,
+        "max": 13,
+        "avg": 7,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-17.md"
       }
     ],
     "currentEstimate": {
       "min": 6,
-      "max": 8,
-      "avg": 7
+      "max": 9,
+      "avg": 8
     },
-    "method": "spike-blend",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-25",
+    "method": "wma",
+    "trend": "stable",
+    "change30dPct": 17,
+    "lastObserved": "2026-11-17",
     "stale": false,
     "seasonal": true,
-    "listingCount": 3,
+    "listingCount": 4,
     "platforms": [
-      "Blinkit",
-      "Swiggy Instamart",
-      "Zepto"
+      "BigBasket",
+      "Blinkit"
     ],
     "outOfStock": false,
     "confirmed": true,
@@ -262,9 +269,9 @@
       "vendor": "blinkit",
       "product": "Lemon 220–250 g",
       "pack": "about 235 g",
-      "priceMinInr": 30,
-      "priceMaxInr": 30,
-      "observedOn": "2026-10-25"
+      "priceMinInr": 28,
+      "priceMaxInr": 28,
+      "observedOn": "2026-11-17"
     },
     {
       "vendor": "instamart",
@@ -285,28 +292,10 @@
   ],
   "usedIn": [
     {
-      "dishNumber": 82,
-      "quantity": 3,
+      "dishNumber": 45,
+      "quantity": 10,
       "unit": "ml",
-      "raw": "3 ml juice per serving (½ tsp)"
-    },
-    {
-      "dishNumber": 83,
-      "quantity": 8,
-      "unit": "ml",
-      "raw": "8 ml juice per serving (1½ tsp)"
-    },
-    {
-      "dishNumber": 84,
-      "quantity": 5,
-      "unit": "ml",
-      "raw": "5 ml juice per serving (1 tsp, about ¼ lemon)"
-    },
-    {
-      "dishNumber": 101,
-      "quantity": 3,
-      "unit": "ml",
-      "raw": "3 ml juice per serving (½ tsp)"
+      "raw": "10 ml lemon juice per serving (2 tsp, about ½ small lemon), for the first rub"
     }
   ],
   "versions": [
@@ -317,10 +306,14 @@
     {
       "date": "2026-10-25",
       "file": "FitPlate_Ingredients_2026-10-25.md"
+    },
+    {
+      "date": "2026-11-17",
+      "file": "FitPlate_Ingredients_2026-11-17.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (spike-blend)",
+    "price": "price engine (wma)",
     "macrosPer100Estimate": "stable (single)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
@@ -331,9 +324,7 @@
     "usedIn": "newest"
   },
   "mergeNotes": [
-    "price flag: possible-spike",
     "price flag: narrowed",
-    "Possible spike: latest avg 9 (2026-10-25) moved more than 35% from the previous estimate; using the halfway point.",
-    "Range 4.5–10.5 was wider than 30% of avg 7.0; narrowed to ±15%."
+    "Range 4.9–12.9 was wider than 30% of avg 7.6; narrowed to ±15%."
   ]
 }

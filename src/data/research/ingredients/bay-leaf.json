@@ -23,34 +23,42 @@
         "avg": 590,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      },
+      {
+        "date": "2026-11-17",
+        "min": 300,
+        "max": 1400,
+        "avg": 700,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-17.md"
       }
     ],
     "currentEstimate": {
-      "min": 500,
-      "max": 675,
-      "avg": 585
+      "min": 595,
+      "max": 805,
+      "avg": 700
     },
-    "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-25",
+    "method": "latest-trend",
+    "trend": "rising",
+    "change30dPct": 12.5,
+    "lastObserved": "2026-11-17",
     "stale": false,
     "seasonal": false,
-    "listingCount": 2,
+    "listingCount": 4,
     "platforms": [
-      "Hunar Setu",
-      "StoreKing"
+      "BigBasket",
+      "Biobasics own site",
+      "StoreKing",
+      "Vridhi Stores"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 2 listings back the range (need 3)"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 50,
-    "max": 67.5,
-    "avg": 58.5
+    "min": 59.5,
+    "max": 80.5,
+    "avg": 70
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -256,22 +264,10 @@
   "vendorListings": [],
   "usedIn": [
     {
-      "dishNumber": 82,
+      "dishNumber": 42,
       "quantity": null,
       "unit": null,
-      "raw": "1 leaf per serving"
-    },
-    {
-      "dishNumber": 84,
-      "quantity": null,
-      "unit": null,
-      "raw": "1 leaf per serving"
-    },
-    {
-      "dishNumber": 85,
-      "quantity": null,
-      "unit": null,
-      "raw": "1 leaf per serving"
+      "raw": "1 small leaf per serving (in the gravy tempering)"
     }
   ],
   "versions": [
@@ -282,10 +278,14 @@
     {
       "date": "2026-10-25",
       "file": "FitPlate_Ingredients_2026-10-25.md"
+    },
+    {
+      "date": "2026-11-17",
+      "file": "FitPlate_Ingredients_2026-11-17.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (wma)",
+    "price": "price engine (latest-trend)",
     "macrosPer100Estimate": "stable (single)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
@@ -297,6 +297,6 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 368.6–803.8 was wider than 30% of avg 586.2; narrowed to ±15%."
+    "Range 300.0–1400.0 was wider than 30% of avg 700.0; narrowed to ±15%."
   ]
 }

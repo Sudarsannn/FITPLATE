@@ -23,33 +23,41 @@
         "avg": 1115,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      },
+      {
+        "date": "2026-11-17",
+        "min": 980,
+        "max": 1740,
+        "avg": 1285,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-17.md"
       }
     ],
     "currentEstimate": {
-      "min": 945,
-      "max": 1275,
-      "avg": 1110
+      "min": 1090,
+      "max": 1480,
+      "avg": 1285
     },
-    "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-25",
+    "method": "latest-trend",
+    "trend": "rising",
+    "change30dPct": 10.6,
+    "lastObserved": "2026-11-17",
     "stale": false,
     "seasonal": false,
-    "listingCount": 8,
+    "listingCount": 10,
     "platforms": [
-      "Amazon",
       "BigBasket",
-      "PharmEasy"
+      "Blinkit",
+      "Zepto"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 94.5,
-    "max": 127.5,
-    "avg": 111
+    "min": 109,
+    "max": 148,
+    "avg": 128.5
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -236,7 +244,7 @@
     }
   },
   "macrosPer100Estimate": {
-    "kcal": 543,
+    "kcal": 533,
     "proteinG": 18,
     "carbsG": 30,
     "fatG": 7.8,
@@ -256,20 +264,74 @@
   ],
   "vendorListings": [
     {
+      "vendor": "blinkit",
+      "product": "Happilo Whole Cashews",
+      "pack": "200 g",
+      "priceMinInr": 282,
+      "priceMaxInr": 282,
+      "observedOn": "2026-11-17"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Whole Farm Premium Cashew",
+      "pack": "500 g",
+      "priceMinInr": 503,
+      "priceMaxInr": 503,
+      "observedOn": "2026-11-17"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Tata Sampann Pure Premium Cashews",
+      "pack": "500 g",
+      "priceMinInr": 562,
+      "priceMaxInr": 562,
+      "observedOn": "2026-11-17"
+    },
+    {
       "vendor": "instamart",
       "product": null,
       "pack": "500 g",
       "priceMinInr": 550,
       "priceMaxInr": 550,
       "observedOn": "2026-10-04"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Daily Good Cashew W320",
+      "pack": "100 g",
+      "priceMinInr": 152,
+      "priceMaxInr": 152,
+      "observedOn": "2026-11-17"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Popular Essentials Cashew Whole",
+      "pack": "250 g",
+      "priceMinInr": 366,
+      "priceMaxInr": 366,
+      "observedOn": "2026-11-17"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Krishival Cashew",
+      "pack": "250 g",
+      "priceMinInr": 435,
+      "priceMaxInr": 435,
+      "observedOn": "2026-11-17"
     }
   ],
   "usedIn": [
     {
-      "dishNumber": 85,
-      "quantity": 6,
+      "dishNumber": 41,
+      "quantity": 8,
       "unit": "g",
-      "raw": "6 g (about 4 cashews) per serving."
+      "raw": "8 g per serving (about 6 cashews, halves or broken)"
+    },
+    {
+      "dishNumber": 42,
+      "quantity": 15,
+      "unit": "g",
+      "raw": "15 g per serving (12 g for the gravy paste, about 8 cashews, plus 3 g, 2 cashews, chopped for the stuffing)"
     }
   ],
   "versions": [
@@ -280,11 +342,15 @@
     {
       "date": "2026-10-25",
       "file": "FitPlate_Ingredients_2026-10-25.md"
+    },
+    {
+      "date": "2026-11-17",
+      "file": "FitPlate_Ingredients_2026-11-17.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "price": "price engine (latest-trend)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -295,7 +361,7 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 927.9–1313.1 was wider than 30% of avg 1109.3; narrowed to ±15%.",
-    "macrosPer100Estimate.fatG: Versions 2026-10-04 (44) and 2026-10-25 (7.8) differ by more than 25%; kept the newer."
+    "Range 980.0–1740.0 was wider than 30% of avg 1285.0; narrowed to ±15%.",
+    "macrosPer100Estimate.fatG: Excluded outlier 44 from 2026-10-04: more than 25% from the other versions."
   ]
 }

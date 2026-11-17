@@ -23,34 +23,40 @@
         "avg": 51,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      },
+      {
+        "date": "2026-11-17",
+        "min": 32,
+        "max": 280,
+        "avg": 190,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-17.md"
       }
     ],
     "currentEstimate": {
-      "min": 58,
-      "max": 78,
-      "avg": 68
+      "min": 110,
+      "max": 150,
+      "avg": 130
     },
     "method": "spike-blend",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-25",
+    "trend": "stable",
+    "change30dPct": 60.2,
+    "lastObserved": "2026-11-17",
     "stale": false,
     "seasonal": true,
-    "listingCount": 2,
+    "listingCount": 5,
     "platforms": [
-      "BigBasket"
+      "BigBasket",
+      "Zepto"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 2 listings back the range (need 3)",
-      "only 1 platform (BigBasket) backs the range"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 5.8,
-    "max": 7.8,
-    "avg": 6.8
+    "min": 11,
+    "max": 15,
+    "avg": 13
   },
   "seasonal": true,
   "nutritionPer100g": {
@@ -255,37 +261,28 @@
     "Frozen or dried coriander",
     "Parsley"
   ],
-  "vendorListings": [],
+  "vendorListings": [
+    {
+      "vendor": "zepto",
+      "product": "Coriander Leaves 100 g page",
+      "pack": "100 g",
+      "priceMinInr": 28,
+      "priceMaxInr": 28,
+      "observedOn": "2026-11-17"
+    }
+  ],
   "usedIn": [
     {
-      "dishNumber": 81,
+      "dishNumber": 42,
       "quantity": 3,
       "unit": "g",
-      "raw": "3 g per serving."
+      "raw": "3 g per serving (2 tsp chopped, optional garnish)"
     },
     {
-      "dishNumber": 83,
-      "quantity": 12,
-      "unit": "g",
-      "raw": "12 g per serving (8 g in chutney, 4 g garnish)."
-    },
-    {
-      "dishNumber": 84,
+      "dishNumber": 44,
       "quantity": 5,
       "unit": "g",
-      "raw": "5 g per serving."
-    },
-    {
-      "dishNumber": 85,
-      "quantity": 2,
-      "unit": "g",
-      "raw": "2 g per serving."
-    },
-    {
-      "dishNumber": 101,
-      "quantity": 5,
-      "unit": "g",
-      "raw": "5 g per serving."
+      "raw": "5 g per serving (2 tbsp chopped)"
     }
   ],
   "versions": [
@@ -296,11 +293,15 @@
     {
       "date": "2026-10-25",
       "file": "FitPlate_Ingredients_2026-10-25.md"
+    },
+    {
+      "date": "2026-11-17",
+      "file": "FitPlate_Ingredients_2026-11-17.md"
     }
   ],
   "mergeMethod": {
     "price": "price engine (spike-blend)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -312,8 +313,8 @@
   "mergeNotes": [
     "price flag: possible-spike",
     "price flag: narrowed",
-    "Possible spike: latest avg 51 (2026-10-25) moved more than 35% from the previous estimate; using the halfway point.",
-    "Range 51.0–85.0 was wider than 30% of avg 68.0; narrowed to ±15%.",
-    "macrosPer100Estimate.fatG: Versions 2026-10-04 (0.5) and 2026-10-25 (0.014) differ by more than 25%; kept the newer."
+    "Possible spike: latest avg 190 (2026-11-17) moved more than 35% from the previous estimate; using the halfway point.",
+    "Range 41.5–182.5 was wider than 30% of avg 129.0; narrowed to ±15%.",
+    "macrosPer100Estimate.fatG: Excluded outlier 0.5 from 2026-10-04: more than 25% from the other versions."
   ]
 }

@@ -24,34 +24,42 @@
         "avg": 49,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      },
+      {
+        "date": "2026-11-17",
+        "min": 45,
+        "max": 66,
+        "avg": 53,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-17.md"
       }
     ],
     "currentEstimate": {
       "min": 44,
-      "max": 59,
-      "avg": 51
+      "max": 60,
+      "avg": 52
     },
     "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-25",
+    "trend": "stable",
+    "change30dPct": -2.4,
+    "lastObserved": "2026-11-17",
     "stale": false,
     "seasonal": true,
-    "listingCount": 5,
+    "listingCount": 1,
     "platforms": [
-      "BigBasket",
-      "Blinkit",
-      "Swiggy Instamart",
-      "Zepto"
+      "BigBasket"
     ],
     "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "confirmed": false,
+    "checkNotes": [
+      "only 1 listing backs the range (need 3)",
+      "only 1 platform (BigBasket) backs the range"
+    ]
   },
   "per100Estimate": {
     "min": 4.4,
-    "max": 5.9,
-    "avg": 5.1
+    "max": 6,
+    "avg": 5.2
   },
   "seasonal": true,
   "nutritionPer100g": {
@@ -238,9 +246,9 @@
     }
   },
   "macrosPer100Estimate": {
-    "kcal": 39,
-    "proteinG": 1,
-    "carbsG": 8.9,
+    "kcal": 38,
+    "proteinG": 0.9,
+    "carbsG": 8.5,
     "fatG": 0.1,
     "fibreG": 1.7
   },
@@ -292,34 +300,22 @@
   ],
   "usedIn": [
     {
-      "dishNumber": 82,
+      "dishNumber": 42,
+      "quantity": 50,
+      "unit": "g",
+      "raw": "50 g per serving (½ medium onion, roughly chopped, for the gravy)"
+    },
+    {
+      "dishNumber": 43,
+      "quantity": 30,
+      "unit": "g",
+      "raw": "30 g per serving (¼ medium onion, thinly sliced or diced)"
+    },
+    {
+      "dishNumber": 44,
       "quantity": 70,
       "unit": "g",
-      "raw": "70 g per serving (½ medium, thinly sliced)"
-    },
-    {
-      "dishNumber": 83,
-      "quantity": 30,
-      "unit": "g",
-      "raw": "30 g per serving (2 tbsp, finely chopped)"
-    },
-    {
-      "dishNumber": 84,
-      "quantity": 80,
-      "unit": "g",
-      "raw": "80 g per serving (1 small onion, thinly sliced)"
-    },
-    {
-      "dishNumber": 85,
-      "quantity": 40,
-      "unit": "g",
-      "raw": "40 g per serving (½ small)"
-    },
-    {
-      "dishNumber": 102,
-      "quantity": 30,
-      "unit": "g",
-      "raw": "30 g per serving (¼ medium, finely chopped)"
+      "raw": "70 g per serving (1 small-medium onion, finely chopped)"
     }
   ],
   "versions": [
@@ -330,11 +326,15 @@
     {
       "date": "2026-10-25",
       "file": "FitPlate_Ingredients_2026-10-25.md"
+    },
+    {
+      "date": "2026-11-17",
+      "file": "FitPlate_Ingredients_2026-11-17.md"
     }
   ],
   "mergeMethod": {
     "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -345,6 +345,7 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 35.1–63.1 was wider than 30% of avg 51.3; narrowed to ±15%."
+    "Range 38.5–64.1 was wider than 30% of avg 51.9; narrowed to ±15%.",
+    "macrosPer100Estimate.proteinG: Excluded outlier 1.1 from 2026-10-04: more than 25% from the other versions."
   ]
 }

@@ -23,33 +23,42 @@
         "avg": 135,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      },
+      {
+        "date": "2026-11-17",
+        "min": 68,
+        "max": 124,
+        "avg": 96,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-17.md"
       }
     ],
     "currentEstimate": {
-      "min": 100,
+      "min": 95,
       "max": 130,
-      "avg": 115
+      "avg": 110
     },
-    "method": "spike-blend",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-25",
+    "method": "wma",
+    "trend": "stable",
+    "change30dPct": -0.1,
+    "lastObserved": "2026-11-17",
     "stale": false,
     "seasonal": true,
-    "listingCount": 6,
+    "listingCount": 2,
     "platforms": [
-      "BigBasket",
-      "Blinkit",
-      "Swiggy Instamart"
+      "BigBasket"
     ],
     "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "confirmed": false,
+    "checkNotes": [
+      "only 2 listings back the range (need 3)",
+      "only 1 platform (BigBasket) backs the range"
+    ]
   },
   "per100Estimate": {
-    "min": 10,
+    "min": 9.5,
     "max": 13,
-    "avg": 11.5
+    "avg": 11
   },
   "seasonal": true,
   "nutritionPer100g": {
@@ -274,40 +283,16 @@
   ],
   "usedIn": [
     {
-      "dishNumber": 81,
-      "quantity": 3,
+      "dishNumber": 43,
+      "quantity": 2,
       "unit": "g",
-      "raw": "3 g per serving (½ small chilli, finely chopped)"
+      "raw": "2 g per serving (1 small chilli, slit or chopped)"
     },
     {
-      "dishNumber": 82,
+      "dishNumber": 44,
       "quantity": 4,
       "unit": "g",
-      "raw": "4 g per serving (1 medium, slit)"
-    },
-    {
-      "dishNumber": 83,
-      "quantity": 3,
-      "unit": "g",
-      "raw": "3 g per serving (1 small, half in chutney and half chopped)"
-    },
-    {
-      "dishNumber": 84,
-      "quantity": 4,
-      "unit": "g",
-      "raw": "4 g per serving (1 medium, slit)"
-    },
-    {
-      "dishNumber": 85,
-      "quantity": 3,
-      "unit": "g",
-      "raw": "3 g per serving (1 small)"
-    },
-    {
-      "dishNumber": 101,
-      "quantity": 6,
-      "unit": "g",
-      "raw": "6 g per serving (1 to 2 medium)"
+      "raw": "4 g per serving (1 chilli, finely chopped)"
     }
   ],
   "versions": [
@@ -318,10 +303,14 @@
     {
       "date": "2026-10-25",
       "file": "FitPlate_Ingredients_2026-10-25.md"
+    },
+    {
+      "date": "2026-11-17",
+      "file": "FitPlate_Ingredients_2026-11-17.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (spike-blend)",
+    "price": "price engine (wma)",
     "macrosPer100Estimate": "stable (single)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
@@ -332,9 +321,7 @@
     "usedIn": "newest"
   },
   "mergeNotes": [
-    "price flag: possible-spike",
     "price flag: narrowed",
-    "Possible spike: latest avg 135 (2026-10-25) moved more than 35% from the previous estimate; using the halfway point.",
-    "Range 77.5–155.0 was wider than 30% of avg 115.0; narrowed to ±15%."
+    "Range 73.1–152.9 was wider than 30% of avg 111.6; narrowed to ±15%."
   ]
 }

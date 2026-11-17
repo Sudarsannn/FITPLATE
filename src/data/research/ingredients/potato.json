@@ -24,34 +24,42 @@
         "avg": 30,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      },
+      {
+        "date": "2026-11-17",
+        "min": 21,
+        "max": 34,
+        "avg": 28,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-17.md"
       }
     ],
     "currentEstimate": {
-      "min": 22,
-      "max": 30,
-      "avg": 26
+      "min": 23,
+      "max": 31,
+      "avg": 27
     },
-    "method": "spike-blend",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-25",
+    "method": "wma",
+    "trend": "stable",
+    "change30dPct": 14.6,
+    "lastObserved": "2026-11-17",
     "stale": false,
     "seasonal": true,
-    "listingCount": 4,
+    "listingCount": 2,
     "platforms": [
       "BigBasket",
-      "Blinkit",
-      "Swiggy Instamart",
-      "Zepto"
+      "Vridhi Stores"
     ],
     "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "confirmed": false,
+    "checkNotes": [
+      "only 2 listings back the range (need 3)"
+    ]
   },
   "per100Estimate": {
-    "min": 2.2,
-    "max": 3,
-    "avg": 2.6
+    "min": 2.3,
+    "max": 3.1,
+    "avg": 2.7
   },
   "seasonal": true,
   "nutritionPer100g": {
@@ -283,16 +291,10 @@
   ],
   "usedIn": [
     {
-      "dishNumber": 83,
-      "quantity": 40,
+      "dishNumber": 42,
+      "quantity": 35,
       "unit": "g",
-      "raw": "40 g per serving, boiled (about ½ small potato, diced)"
-    },
-    {
-      "dishNumber": 85,
-      "quantity": 40,
-      "unit": "g",
-      "raw": "40 g per serving (½ small)"
+      "raw": "35 g boiled and peeled per serving (1 small potato, about 45 g raw), grated into the kofta mix"
     }
   ],
   "versions": [
@@ -303,10 +305,14 @@
     {
       "date": "2026-10-25",
       "file": "FitPlate_Ingredients_2026-10-25.md"
+    },
+    {
+      "date": "2026-11-17",
+      "file": "FitPlate_Ingredients_2026-11-17.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (spike-blend)",
+    "price": "price engine (wma)",
     "macrosPer100Estimate": "stable (single)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
@@ -317,9 +323,7 @@
     "usedIn": "newest"
   },
   "mergeNotes": [
-    "price flag: possible-spike",
     "price flag: narrowed",
-    "Possible spike: latest avg 30 (2026-10-25) moved more than 35% from the previous estimate; using the halfway point.",
-    "Range 20.5–34.0 was wider than 30% of avg 26.0; narrowed to ±15%."
+    "Range 20.8–35.4 was wider than 30% of avg 27.3; narrowed to ±15%."
   ]
 }

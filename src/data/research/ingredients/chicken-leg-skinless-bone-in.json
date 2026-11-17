@@ -18,17 +18,25 @@
         "avg": 665,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-12.md"
+      },
+      {
+        "date": "2026-11-17",
+        "min": 250,
+        "max": 435,
+        "avg": 345,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-17.md"
       }
     ],
     "currentEstimate": {
-      "min": 565,
-      "max": 765,
-      "avg": 665
+      "min": 430,
+      "max": 580,
+      "avg": 505
     },
-    "method": "single",
+    "method": "spike-blend",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-12",
+    "lastObserved": "2026-11-17",
     "stale": false,
     "seasonal": false,
     "listingCount": 2,
@@ -43,9 +51,9 @@
     ]
   },
   "per100Estimate": {
-    "min": 56.5,
-    "max": 76.5,
-    "avg": 66.5
+    "min": 43,
+    "max": 58,
+    "avg": 50.5
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -253,18 +261,22 @@
       "dishNumber": 45,
       "quantity": 250,
       "unit": "g",
-      "raw": "250 g raw (1 whole leg, cut at the joint into 2 pieces; about 180 g edible meat, est.)"
+      "raw": "250 g raw per serving (1 whole leg, cut at the joint into 2 pieces; about 180 g edible meat, est.)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-12",
       "file": "FitPlate_Ingredients_2026-10-12.md"
+    },
+    {
+      "date": "2026-11-17",
+      "file": "FitPlate_Ingredients_2026-11-17.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (spike-blend)",
+    "macrosPer100Estimate": "stable (mean-2)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -274,7 +286,9 @@
     "usedIn": "newest"
   },
   "mergeNotes": [
+    "price flag: possible-spike",
     "price flag: narrowed",
-    "Range 520.0–810.0 was wider than 30% of avg 665.0; narrowed to ±15%."
+    "Possible spike: latest avg 345 (2026-11-17) moved more than 35% from the previous estimate; using the halfway point.",
+    "Range 385.0–622.5 was wider than 30% of avg 505.0; narrowed to ±15%."
   ]
 }

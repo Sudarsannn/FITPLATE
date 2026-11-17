@@ -4,10 +4,13 @@ import { useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { ChartsView } from '../../components/track/ChartsView';
+import { PricesView } from '../../components/track/PricesView';
 import { Inventory } from '../../components/pantry/Inventory';
 import { MyMeals } from '../../components/meals/MyMeals';
 import { NutritionCard } from '../../components/NutritionCard';
 import { FadeIn, Glass, PressableScale, TopGlow } from '../../components/ui';
+import { isEnabled } from '../../config/featureFlags';
 import { select } from '../../lib/haptics';
 import { FIBRE_TARGET, useStore } from '../../lib/store';
 import { useTargets } from '../../lib/useTargets';
@@ -15,10 +18,12 @@ import { colors, radius, type } from '../../theme';
 import { PlanScreen } from './plan';
 import { ProgressScreen } from './progress';
 
-type TrackView = 'nutrition' | 'meals' | 'progress' | 'plan' | 'ingredients';
+type TrackView = 'nutrition' | 'charts' | 'prices' | 'meals' | 'progress' | 'plan' | 'ingredients';
 
 const OPTIONS: { key: TrackView; label: string }[] = [
   { key: 'nutrition', label: 'Nutrition' },
+  { key: 'charts', label: 'Charts' },
+  { key: 'prices', label: 'Prices' },
   { key: 'meals', label: 'Meals' },
   { key: 'progress', label: 'Progress' },
   { key: 'plan', label: 'Plan' },
@@ -26,8 +31,9 @@ const OPTIONS: { key: TrackView; label: string }[] = [
 ];
 
 // Day 2 shell: Track holds today's full nutrition, Progress and Plan behind a
-// switcher (Today shows the summary and links here). Day 29 turns it into the full dashboard.
+// switcher (Today shows the summary and links here). Day 29 added the Charts and Prices views.
 export default function Track() {
+  const options = OPTIONS.filter((o) => isEnabled('trackCharts') || (o.key !== 'charts' && o.key !== 'prices'));
   const params = useLocalSearchParams<{ view?: TrackView }>();
   const [view, setView] = useState<TrackView>(params.view ?? 'nutrition');
   // A link from Today ("Full breakdown") can land here while the tab is already open.
@@ -39,8 +45,9 @@ export default function Track() {
   return (
     <SafeAreaView edges={['top']} style={{ flex: 1, backgroundColor: colors.bg }}>
       <TopGlow color={colors.blue} />
-      <View style={styles.switcher} accessibilityRole="tablist">
-        {OPTIONS.map((o) => {
+      <View style={styles.switcherWrap}>
+      <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.switcher} accessibilityRole="tablist">
+        {options.map((o) => {
           const on = view === o.key;
           return (
             <Pressable
@@ -58,8 +65,9 @@ export default function Track() {
             </Pressable>
           );
         })}
+      </ScrollView>
       </View>
-      {view === 'nutrition' ? <NutritionScreen /> : view === 'meals' ? <MyMeals /> : view === 'progress' ? <ProgressScreen embedded /> : view === 'ingredients' ? <Inventory /> : <PlanScreen embedded />}
+      {view === 'nutrition' ? <NutritionScreen /> : view === 'charts' ? <ChartsView /> : view === 'prices' ? <PricesView /> : view === 'meals' ? <MyMeals /> : view === 'progress' ? <ProgressScreen embedded /> : view === 'ingredients' ? <Inventory /> : <PlanScreen embedded />}
     </SafeAreaView>
   );
 }
@@ -99,17 +107,9 @@ const styles = StyleSheet.create({
   links: { flexDirection: 'row', gap: 10, marginTop: 14 },
   linkBtn: { flex: 1, minHeight: 46, flexDirection: 'row', gap: 8, alignItems: 'center', justifyContent: 'center', borderRadius: radius.pill, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border },
   linkText: { color: colors.text, fontWeight: '800', fontSize: 14 },
-  switcher: {
-    flexDirection: 'row',
-    marginHorizontal: 12,
-    marginTop: 8,
-    padding: 4,
-    borderRadius: radius.pill,
-    backgroundColor: colors.card,
-    borderWidth: 1,
-    borderColor: colors.border,
-  },
-  option: { flex: 1, minHeight: 40, borderRadius: radius.pill, alignItems: 'center', justifyContent: 'center' },
+  switcherWrap: { marginHorizontal: 12, marginTop: 8, borderRadius: radius.pill, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, overflow: 'hidden' },
+  switcher: { padding: 4, gap: 2 },
+  option: { minHeight: 40, paddingHorizontal: 14, borderRadius: radius.pill, alignItems: 'center', justifyContent: 'center' },
   optionOn: { backgroundColor: colors.accent },
   optionText: { fontWeight: '800', fontSize: 11.5 },
 });

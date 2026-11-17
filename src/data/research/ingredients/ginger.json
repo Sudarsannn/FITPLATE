@@ -23,34 +23,41 @@
         "avg": 220,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      },
+      {
+        "date": "2026-11-17",
+        "min": 115,
+        "max": 200,
+        "avg": 155,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-17.md"
       }
     ],
     "currentEstimate": {
-      "min": 130,
-      "max": 175,
-      "avg": 150
+      "min": 135,
+      "max": 185,
+      "avg": 160
     },
-    "method": "spike-blend",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-25",
+    "method": "wma",
+    "trend": "stable",
+    "change30dPct": 30.9,
+    "lastObserved": "2026-11-17",
     "stale": false,
     "seasonal": false,
-    "listingCount": 2,
+    "listingCount": 4,
     "platforms": [
-      "BigBasket"
+      "BigBasket",
+      "JioMart",
+      "Swiggy Instamart"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 2 listings back the range (need 3)",
-      "only 1 platform (BigBasket) backs the range"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 13,
-    "max": 17.5,
-    "avg": 15
+    "min": 13.5,
+    "max": 18.5,
+    "avg": 16
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -255,37 +262,46 @@
     "Ginger paste (jar)",
     "Galangal"
   ],
-  "vendorListings": [],
+  "vendorListings": [
+    {
+      "vendor": "instamart",
+      "product": "Ginger",
+      "pack": "200 g",
+      "priceMinInr": 32,
+      "priceMaxInr": 32,
+      "observedOn": "2026-11-17"
+    }
+  ],
   "usedIn": [
     {
-      "dishNumber": 81,
-      "quantity": 2,
-      "unit": "g",
-      "raw": "2 g per serving."
-    },
-    {
-      "dishNumber": 82,
+      "dishNumber": 41,
       "quantity": 5,
       "unit": "g",
-      "raw": "5 g per serving."
+      "raw": "5 g per serving (1 cm piece, about 1 tsp chopped)"
     },
     {
-      "dishNumber": 84,
+      "dishNumber": 42,
+      "quantity": 3,
+      "unit": "g",
+      "raw": "3 g per serving (¼-inch piece, grated)"
+    },
+    {
+      "dishNumber": 43,
+      "quantity": 3,
+      "unit": "g",
+      "raw": "3 g per serving (½-inch piece)"
+    },
+    {
+      "dishNumber": 44,
       "quantity": 4,
       "unit": "g",
-      "raw": "4 g per serving."
+      "raw": "4 g per serving (1 tsp chopped)"
     },
     {
-      "dishNumber": 85,
-      "quantity": 2,
-      "unit": "g",
-      "raw": "2 g per serving."
-    },
-    {
-      "dishNumber": 101,
+      "dishNumber": 45,
       "quantity": 5,
       "unit": "g",
-      "raw": "5 g per serving."
+      "raw": "5 g per serving (1 tsp grated or paste)"
     }
   ],
   "versions": [
@@ -296,10 +312,14 @@
     {
       "date": "2026-10-25",
       "file": "FitPlate_Ingredients_2026-10-25.md"
+    },
+    {
+      "date": "2026-11-17",
+      "file": "FitPlate_Ingredients_2026-11-17.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (spike-blend)",
+    "price": "price engine (wma)",
     "macrosPer100Estimate": "stable (single)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
@@ -310,9 +330,7 @@
     "usedIn": "newest"
   },
   "mergeNotes": [
-    "price flag: possible-spike",
     "price flag: narrowed",
-    "Possible spike: latest avg 220 (2026-10-25) moved more than 35% from the previous estimate; using the halfway point.",
-    "Range 125.0–177.5 was wider than 30% of avg 150.0; narrowed to ±15%."
+    "Range 124.3–197.2 was wider than 30% of avg 158.8; narrowed to ±15%."
   ]
 }

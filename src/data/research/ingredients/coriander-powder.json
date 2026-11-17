@@ -4,7 +4,7 @@
   "aliases": [
     "dhania powder"
   ],
-  "category": "Spice (ground)",
+  "category": "Spice",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -23,33 +23,41 @@
         "avg": 355,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      },
+      {
+        "date": "2026-11-17",
+        "min": 260,
+        "max": 460,
+        "avg": 325,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-17.md"
       }
     ],
     "currentEstimate": {
-      "min": 300,
-      "max": 400,
-      "avg": 355
+      "min": 285,
+      "max": 385,
+      "avg": 335
     },
     "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-25",
+    "trend": "stable",
+    "change30dPct": -6.2,
+    "lastObserved": "2026-11-17",
     "stale": false,
     "seasonal": false,
-    "listingCount": 8,
+    "listingCount": 9,
     "platforms": [
-      "BigBasket"
+      "Amazon",
+      "Blinkit",
+      "DMart Ready"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 1 platform (BigBasket) backs the range"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 30,
-    "max": 40,
-    "avg": 35.5
+    "min": 28.5,
+    "max": 38.5,
+    "avg": 33.5
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -255,31 +263,87 @@
   "vendorListings": [
     {
       "vendor": "blinkit",
+      "product": "Aashirvaad Coriander Powder",
+      "pack": "100 g",
+      "priceMinInr": 26,
+      "priceMaxInr": 30,
+      "observedOn": "2026-11-17"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Catch Coriander Powder",
+      "pack": "100 g",
+      "priceMinInr": 30,
+      "priceMaxInr": 33,
+      "observedOn": "2026-11-17"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Everest Coriander Powder",
+      "pack": "100 g",
+      "priceMinInr": 40,
+      "priceMaxInr": 46,
+      "observedOn": "2026-11-17"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Tata Sampann Coriander Powder",
+      "pack": "100 g",
+      "priceMinInr": 41,
+      "priceMaxInr": 42,
+      "observedOn": "2026-11-17"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Catch Coriander Powder",
+      "pack": "200 g",
+      "priceMinInr": 57,
+      "priceMaxInr": 62,
+      "observedOn": "2026-11-17"
+    },
+    {
+      "vendor": "blinkit",
       "product": null,
       "pack": "200 g",
       "priceMinInr": 61,
       "priceMaxInr": 61,
       "observedOn": "2026-10-04"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Tata Sampann Coriander Powder",
+      "pack": "200 g",
+      "priceMinInr": 64,
+      "priceMaxInr": 83,
+      "observedOn": "2026-11-17"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Everest Coriander Powder",
+      "pack": "200 g",
+      "priceMinInr": 78,
+      "priceMaxInr": 92,
+      "observedOn": "2026-11-17"
     }
   ],
   "usedIn": [
     {
-      "dishNumber": 82,
-      "quantity": 3,
+      "dishNumber": 42,
+      "quantity": 1,
       "unit": "g",
-      "raw": "3 g per serving (1 tsp)"
+      "raw": "1 g per serving (½ tsp)"
     },
     {
-      "dishNumber": 84,
-      "quantity": 2,
-      "unit": "g",
-      "raw": "2 g per serving (¾ tsp)"
-    },
-    {
-      "dishNumber": 85,
+      "dishNumber": 44,
       "quantity": 1.5,
       "unit": "g",
       "raw": "1.5 g per serving (¾ tsp)"
+    },
+    {
+      "dishNumber": 45,
+      "quantity": 1,
+      "unit": "g",
+      "raw": "1 g per serving (½ tsp)"
     }
   ],
   "versions": [
@@ -290,11 +354,15 @@
     {
       "date": "2026-10-25",
       "file": "FitPlate_Ingredients_2026-10-25.md"
+    },
+    {
+      "date": "2026-11-17",
+      "file": "FitPlate_Ingredients_2026-11-17.md"
     }
   ],
   "mergeMethod": {
     "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -305,7 +373,6 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 273.6–400.0 was wider than 30% of avg 355.0; narrowed to ±15%.",
-    "range clamped to observed prices: 300–410 → 300–400"
+    "Range 265.4–436.2 was wider than 30% of avg 336.9; narrowed to ±15%."
   ]
 }

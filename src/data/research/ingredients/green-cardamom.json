@@ -23,32 +23,41 @@
         "avg": 4550,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      },
+      {
+        "date": "2026-11-17",
+        "min": 3000,
+        "max": 5015,
+        "avg": 4190,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-17.md"
       }
     ],
     "currentEstimate": {
-      "min": 4185,
-      "max": 5665,
-      "avg": 4925
+      "min": 3560,
+      "max": 4820,
+      "avg": 4190
     },
-    "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-25",
+    "method": "latest-trend",
+    "trend": "falling",
+    "change30dPct": -20,
+    "lastObserved": "2026-11-17",
     "stale": false,
     "seasonal": false,
-    "listingCount": 5,
+    "listingCount": 4,
     "platforms": [
-      "BigBasket",
-      "StoreKing"
+      "BigBasket"
     ],
     "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "confirmed": false,
+    "checkNotes": [
+      "only 1 platform (BigBasket) backs the range"
+    ]
   },
   "per100Estimate": {
-    "min": 418.5,
-    "max": 566.5,
-    "avg": 492.5
+    "min": 356,
+    "max": 482,
+    "avg": 419
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -236,8 +245,8 @@
   },
   "macrosPer100Estimate": {
     "kcal": 311,
-    "proteinG": 10.9,
-    "carbsG": 68.3,
+    "proteinG": 10.8,
+    "carbsG": 68.5,
     "fatG": 6.7,
     "fibreG": 28
   },
@@ -256,22 +265,10 @@
   "vendorListings": [],
   "usedIn": [
     {
-      "dishNumber": 84,
+      "dishNumber": 42,
       "quantity": null,
       "unit": null,
-      "raw": "2 pods per serving (1 in the rice water, 1 in the masala)"
-    },
-    {
-      "dishNumber": 85,
-      "quantity": null,
-      "unit": null,
-      "raw": "1 pod per serving"
-    },
-    {
-      "dishNumber": 101,
-      "quantity": null,
-      "unit": null,
-      "raw": "2 pods per serving"
+      "raw": "1 pod per serving (about 0.3 g, lightly crushed, in the gravy tempering)"
     }
   ],
   "versions": [
@@ -282,11 +279,15 @@
     {
       "date": "2026-10-25",
       "file": "FitPlate_Ingredients_2026-10-25.md"
+    },
+    {
+      "date": "2026-11-17",
+      "file": "FitPlate_Ingredients_2026-11-17.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "price": "price engine (latest-trend)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -297,6 +298,6 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 3762.0–6100.0 was wider than 30% of avg 4925.3; narrowed to ±15%."
+    "Range 3000.0–5015.0 was wider than 30% of avg 4190.0; narrowed to ±15%."
   ]
 }

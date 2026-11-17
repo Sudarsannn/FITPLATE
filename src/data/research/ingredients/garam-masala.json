@@ -21,32 +21,41 @@
         "avg": 890,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      },
+      {
+        "date": "2026-11-17",
+        "min": 675,
+        "max": 960,
+        "avg": 840,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-17.md"
       }
     ],
     "currentEstimate": {
-      "min": 810,
-      "max": 1095,
-      "avg": 955
+      "min": 715,
+      "max": 965,
+      "avg": 840
     },
-    "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-25",
+    "method": "latest-trend",
+    "trend": "falling",
+    "change30dPct": -16.2,
+    "lastObserved": "2026-11-17",
     "stale": false,
     "seasonal": false,
-    "listingCount": 7,
+    "listingCount": 3,
     "platforms": [
-      "Amazon",
       "BigBasket"
     ],
     "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "confirmed": false,
+    "checkNotes": [
+      "only 1 platform (BigBasket) backs the range"
+    ]
   },
   "per100Estimate": {
-    "min": 81,
-    "max": 109.5,
-    "avg": 95.5
+    "min": 71.5,
+    "max": 96.5,
+    "avg": 84
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -269,28 +278,22 @@
   ],
   "usedIn": [
     {
-      "dishNumber": 81,
-      "quantity": 0.3,
+      "dishNumber": 42,
+      "quantity": 0.7,
       "unit": "g",
-      "raw": "0.3 g per serving (a pinch, ⅛ tsp)"
+      "raw": "0.7 g per serving in total (0.2 g, a small pinch, in the kofta mix; 0.5 g, ¼ tsp, in the gravy)"
     },
     {
-      "dishNumber": 82,
-      "quantity": 1,
-      "unit": "g",
-      "raw": "1 g per serving (½ tsp)"
-    },
-    {
-      "dishNumber": 84,
-      "quantity": 1.5,
-      "unit": "g",
-      "raw": "1.5 g per serving (¾ tsp)"
-    },
-    {
-      "dishNumber": 85,
+      "dishNumber": 44,
       "quantity": 0.5,
       "unit": "g",
       "raw": "0.5 g per serving (¼ tsp)"
+    },
+    {
+      "dishNumber": 45,
+      "quantity": 0.5,
+      "unit": "g",
+      "raw": "0.5 g per serving (¼ tsp, in the marinade)"
     }
   ],
   "versions": [
@@ -301,11 +304,15 @@
     {
       "date": "2026-10-25",
       "file": "FitPlate_Ingredients_2026-10-25.md"
+    },
+    {
+      "date": "2026-11-17",
+      "file": "FitPlate_Ingredients_2026-11-17.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (latest-trend)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -316,7 +323,7 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 791.2–1082.9 was wider than 30% of avg 952.9; narrowed to ±15%.",
-    "macrosPer100Estimate.kcal: Versions 2026-10-04 (380) and 2026-10-25 (260) differ by more than 25%; kept the newer."
+    "Range 675.0–960.0 was wider than 30% of avg 840.0; narrowed to ±15%.",
+    "macrosPer100Estimate.kcal: Excluded outlier 380 from 2026-10-04: more than 25% from the other versions."
   ]
 }

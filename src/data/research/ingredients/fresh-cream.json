@@ -23,23 +23,34 @@
         "avg": 240,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      },
+      {
+        "date": "2026-11-17",
+        "min": 210,
+        "max": 300,
+        "avg": 255,
+        "confidence": "High",
+        "sourceFile": "FitPlate_Ingredients_2026-11-17.md"
       }
     ],
     "currentEstimate": {
       "min": 215,
-      "max": 280,
-      "avg": 245
+      "max": 290,
+      "avg": 250
     },
     "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-25",
+    "trend": "stable",
+    "change30dPct": 1.5,
+    "lastObserved": "2026-11-17",
     "stale": false,
     "seasonal": false,
-    "listingCount": 4,
+    "listingCount": 6,
     "platforms": [
+      "Amazon",
       "BigBasket",
-      "StoreKing"
+      "Blinkit",
+      "JioMart",
+      "Zepto"
     ],
     "outOfStock": false,
     "confirmed": true,
@@ -47,25 +58,25 @@
   },
   "per100Estimate": {
     "min": 21.5,
-    "max": 28,
-    "avg": 24.5
+    "max": 29,
+    "avg": 25
   },
   "seasonal": false,
   "nutritionPer100g": {
     "basis": "100g",
     "energyKcal": {
       "value": 292,
-      "source": "USDA FDC: USDA SR 'Cream, fluid, light whipping' (getfoodfacts id 170858) seen only on mirror sites; a close match, not Indian fresh cream",
+      "source": "USDA FDC: USDA SR 'Cream, fluid, light whipping' (FDC 170858) seen only on mirror sites (getfoodfacts, MyFoodData, nutrola); calcium, potassium and vitamin A converted from a 120 g serving; a close match, not Indian fresh cream",
       "confidence": "Medium"
     },
     "proteinG": {
       "value": 2.2,
-      "source": "USDA FDC: USDA SR 'Cream, fluid, light whipping' (getfoodfacts id 170858) seen only on mirror sites; a close match, not Indian fresh cream",
+      "source": "USDA FDC: USDA SR 'Cream, fluid, light whipping' (FDC 170858) seen only on mirror sites (getfoodfacts, MyFoodData, nutrola); calcium, potassium and vitamin A converted from a 120 g serving; a close match, not Indian fresh cream",
       "confidence": "Medium"
     },
     "carbsG": {
       "value": 3,
-      "source": "USDA FDC: USDA SR 'Cream, fluid, light whipping' (getfoodfacts id 170858) seen only on mirror sites; a close match, not Indian fresh cream",
+      "source": "USDA FDC: USDA SR 'Cream, fluid, light whipping' (FDC 170858) seen only on mirror sites (getfoodfacts, MyFoodData, nutrola); calcium, potassium and vitamin A converted from a 120 g serving; a close match, not Indian fresh cream",
       "confidence": "Medium"
     },
     "sugarsG": {
@@ -75,13 +86,13 @@
     },
     "fatG": {
       "value": 30.9,
-      "source": "USDA FDC: USDA SR 'Cream, fluid, light whipping' (getfoodfacts id 170858) seen only on mirror sites; a close match, not Indian fresh cream",
+      "source": "USDA FDC: USDA SR 'Cream, fluid, light whipping' (FDC 170858) seen only on mirror sites (getfoodfacts, MyFoodData, nutrola); calcium, potassium and vitamin A converted from a 120 g serving; a close match, not Indian fresh cream",
       "confidence": "Medium"
     },
     "saturatedFatG": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 19.3,
+      "source": "USDA FDC: USDA SR 'Cream, fluid, light whipping' (FDC 170858) seen only on mirror sites (getfoodfacts, MyFoodData, nutrola); calcium, potassium and vitamin A converted from a 120 g serving; a close match, not Indian fresh cream",
+      "confidence": "Medium"
     },
     "fibreG": {
       "value": null,
@@ -89,9 +100,9 @@
       "confidence": null
     },
     "sodiumMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 34,
+      "source": "USDA FDC: USDA SR 'Cream, fluid, light whipping' (FDC 170858) seen only on mirror sites (getfoodfacts, MyFoodData, nutrola); calcium, potassium and vitamin A converted from a 120 g serving; a close match, not Indian fresh cream",
+      "confidence": "Medium"
     },
     "ironMg": {
       "value": null,
@@ -99,14 +110,14 @@
       "confidence": null
     },
     "calciumMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 69,
+      "source": "USDA FDC: USDA SR 'Cream, fluid, light whipping' (FDC 170858) seen only on mirror sites (getfoodfacts, MyFoodData, nutrola); calcium, potassium and vitamin A converted from a 120 g serving; a close match, not Indian fresh cream",
+      "confidence": "Medium"
     },
     "potassiumMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 97,
+      "source": "USDA FDC: USDA SR 'Cream, fluid, light whipping' (FDC 170858) seen only on mirror sites (getfoodfacts, MyFoodData, nutrola); calcium, potassium and vitamin A converted from a 120 g serving; a close match, not Indian fresh cream",
+      "confidence": "Medium"
     },
     "magnesiumMg": {
       "value": null,
@@ -124,9 +135,9 @@
       "confidence": null
     },
     "vitaminAUgRae": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 279,
+      "source": "USDA FDC: USDA SR 'Cream, fluid, light whipping' (FDC 170858) seen only on mirror sites (getfoodfacts, MyFoodData, nutrola); calcium, potassium and vitamin A converted from a 120 g serving; a close match, not Indian fresh cream",
+      "confidence": "Medium"
     },
     "folateUgDfe": {
       "value": null,
@@ -139,9 +150,9 @@
       "confidence": null
     },
     "cholesterolMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 111,
+      "source": "USDA FDC: USDA SR 'Cream, fluid, light whipping' (FDC 170858) seen only on mirror sites (getfoodfacts, MyFoodData, nutrola); calcium, potassium and vitamin A converted from a 120 g serving; a close match, not Indian fresh cream",
+      "confidence": "Medium"
     },
     "transFatG": {
       "value": null,
@@ -235,10 +246,10 @@
     }
   },
   "macrosPer100Estimate": {
-    "kcal": 268.5,
-    "proteinG": 2.1,
-    "carbsG": 3.3,
-    "fatG": 28,
+    "kcal": 292,
+    "proteinG": 2.2,
+    "carbsG": 3,
+    "fatG": 30.9,
     "fibreG": 0
   },
   "storage": "Keep refrigerated, upright. Freezing cream splits it, so freeze only if it will be cooked into a sauce later.",
@@ -253,13 +264,38 @@
     "Cashew paste (soaked, blended) or coconut cream",
     "Thick curd/Greek yoghurt with a little milk"
   ],
-  "vendorListings": [],
+  "vendorListings": [
+    {
+      "vendor": "blinkit",
+      "product": "Amul Fresh Cream",
+      "pack": "1 L",
+      "priceMinInr": 250,
+      "priceMaxInr": 250,
+      "observedOn": "2026-11-17"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Amul Fresh Cream",
+      "pack": "250 ml",
+      "priceMinInr": 75,
+      "priceMaxInr": 75,
+      "observedOn": "2026-11-17"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Amul Fresh Cream",
+      "pack": "1 L",
+      "priceMinInr": 250,
+      "priceMaxInr": 250,
+      "observedOn": "2026-11-17"
+    }
+  ],
   "usedIn": [
     {
-      "dishNumber": 102,
-      "quantity": 30,
-      "unit": "g",
-      "raw": "30 g per serving (2 tbsp; fresh cream about 25% fat)"
+      "dishNumber": 42,
+      "quantity": 20,
+      "unit": "ml",
+      "raw": "20 ml (about 20 g) per serving (4 tsp; fresh cream about 25% fat, e.g. Amul fresh cream)"
     }
   ],
   "versions": [
@@ -270,11 +306,15 @@
     {
       "date": "2026-10-25",
       "file": "FitPlate_Ingredients_2026-10-25.md"
+    },
+    {
+      "date": "2026-11-17",
+      "file": "FitPlate_Ingredients_2026-11-17.md"
     }
   ],
   "mergeMethod": {
     "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -283,5 +323,8 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 211.3–292.1 was wider than 30% of avg 251.2; narrowed to ±15%."
+  ]
 }

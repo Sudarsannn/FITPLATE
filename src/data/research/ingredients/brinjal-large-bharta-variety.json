@@ -16,17 +16,25 @@
         "avg": 85,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-12.md"
+      },
+      {
+        "date": "2026-11-17",
+        "min": 37,
+        "max": 57,
+        "avg": 45,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-17.md"
       }
     ],
     "currentEstimate": {
-      "min": 75,
-      "max": 90,
-      "avg": 85
+      "min": 56,
+      "max": 74,
+      "avg": 65
     },
-    "method": "single",
+    "method": "spike-blend",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-12",
+    "lastObserved": "2026-11-17",
     "stale": false,
     "seasonal": false,
     "listingCount": 3,
@@ -40,16 +48,16 @@
     ]
   },
   "per100Estimate": {
-    "min": 7.5,
-    "max": 9,
-    "avg": 8.5
+    "min": 5.6,
+    "max": 7.4,
+    "avg": 6.5
   },
   "seasonal": false,
   "nutritionPer100g": {
     "basis": "100g",
     "energyKcal": {
       "value": 25,
-      "source": "USDA FDC: FDC ID 169228 Eggplant, raw (SR Legacy) and FDC ID 2685577 Eggplant, raw (Foundation), via secondary sites (getfoodfacts.com, recipal.com, fatsecret)",
+      "source": "USDA FDC: USDA FDC 169228 Eggplant, raw (SR Legacy) via getfoodfacts.com/triagemethod.com/Nutrition Advance; folate, phosphorus and water from FDC 2685577 (Foundation) via getfoodfacts.com; zero by composition: cholesterol_mg",
       "confidence": "Low"
     },
     "proteinG": {
@@ -63,9 +71,9 @@
       "confidence": "Low"
     },
     "sugarsG": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 3.5,
+      "source": "USDA FDC: USDA FDC 169228 Eggplant, raw (SR Legacy) via getfoodfacts.com/triagemethod.com/Nutrition Advance; folate, phosphorus and water from FDC 2685577 (Foundation) via getfoodfacts.com; zero by composition: cholesterol_mg",
+      "confidence": "Low"
     },
     "fatG": {
       "value": 0.1,
@@ -83,9 +91,9 @@
       "confidence": "Low"
     },
     "sodiumMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 2,
+      "source": "USDA FDC: USDA FDC 169228 Eggplant, raw (SR Legacy) via getfoodfacts.com/triagemethod.com/Nutrition Advance; folate, phosphorus and water from FDC 2685577 (Foundation) via getfoodfacts.com; zero by composition: cholesterol_mg",
+      "confidence": "Low"
     },
     "ironMg": {
       "value": null,
@@ -98,9 +106,9 @@
       "confidence": null
     },
     "potassiumMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 230,
+      "source": "USDA FDC: USDA FDC 169228 Eggplant, raw (SR Legacy) via getfoodfacts.com/triagemethod.com/Nutrition Advance; folate, phosphorus and water from FDC 2685577 (Foundation) via getfoodfacts.com; zero by composition: cholesterol_mg",
+      "confidence": "Low"
     },
     "magnesiumMg": {
       "value": null,
@@ -113,9 +121,9 @@
       "confidence": null
     },
     "vitaminCMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 2.2,
+      "source": "USDA FDC: USDA FDC 169228 Eggplant, raw (SR Legacy) via getfoodfacts.com/triagemethod.com/Nutrition Advance; folate, phosphorus and water from FDC 2685577 (Foundation) via getfoodfacts.com; zero by composition: cholesterol_mg",
+      "confidence": "Low"
     },
     "vitaminAUgRae": {
       "value": null,
@@ -124,17 +132,17 @@
     },
     "folateUgDfe": {
       "value": 20,
-      "source": "USDA FDC: FDC ID 169228 Eggplant, raw (SR Legacy) and FDC ID 2685577 Eggplant, raw (Foundation), via secondary sites (getfoodfacts.com, recipal.com, fatsecret)",
+      "source": "USDA FDC: USDA FDC 169228 Eggplant, raw (SR Legacy) via getfoodfacts.com/triagemethod.com/Nutrition Advance; folate, phosphorus and water from FDC 2685577 (Foundation) via getfoodfacts.com; zero by composition: cholesterol_mg",
       "confidence": "Low"
     },
     "waterG": {
       "value": 93.1,
-      "source": "USDA FDC: FDC ID 169228 Eggplant, raw (SR Legacy) and FDC ID 2685577 Eggplant, raw (Foundation), via secondary sites (getfoodfacts.com, recipal.com, fatsecret)",
+      "source": "USDA FDC: USDA FDC 169228 Eggplant, raw (SR Legacy) via getfoodfacts.com/triagemethod.com/Nutrition Advance; folate, phosphorus and water from FDC 2685577 (Foundation) via getfoodfacts.com; zero by composition: cholesterol_mg",
       "confidence": "Low"
     },
     "cholesterolMg": {
       "value": 0,
-      "source": "USDA FDC: FDC ID 169228 Eggplant, raw (SR Legacy) and FDC ID 2685577 Eggplant, raw (Foundation), via secondary sites (getfoodfacts.com, recipal.com, fatsecret)",
+      "source": "USDA FDC: USDA FDC 169228 Eggplant, raw (SR Legacy) via getfoodfacts.com/triagemethod.com/Nutrition Advance; folate, phosphorus and water from FDC 2685577 (Foundation) via getfoodfacts.com; zero by composition: cholesterol_mg",
       "confidence": "Low"
     },
     "transFatG": {
@@ -164,7 +172,7 @@
     },
     "phosphorusMg": {
       "value": 22.8,
-      "source": "USDA FDC: FDC ID 169228 Eggplant, raw (SR Legacy) and FDC ID 2685577 Eggplant, raw (Foundation), via secondary sites (getfoodfacts.com, recipal.com, fatsecret)",
+      "source": "USDA FDC: USDA FDC 169228 Eggplant, raw (SR Legacy) via getfoodfacts.com/triagemethod.com/Nutrition Advance; folate, phosphorus and water from FDC 2685577 (Foundation) via getfoodfacts.com; zero by composition: cholesterol_mg",
       "confidence": "Low"
     },
     "seleniumUg": {
@@ -198,9 +206,9 @@
       "confidence": null
     },
     "vitaminKUg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 3.5,
+      "source": "USDA FDC: USDA FDC 169228 Eggplant, raw (SR Legacy) via getfoodfacts.com/triagemethod.com/Nutrition Advance; folate, phosphorus and water from FDC 2685577 (Foundation) via getfoodfacts.com; zero by composition: cholesterol_mg",
+      "confidence": "Low"
     },
     "thiaminMg": {
       "value": null,
@@ -231,9 +239,9 @@
   "macrosPer100Estimate": {
     "kcal": 25,
     "proteinG": 0.9,
-    "carbsG": 5.4,
-    "fatG": 0.1,
-    "fibreG": 2.4
+    "carbsG": 5.6,
+    "fatG": 0.2,
+    "fibreG": 3
   },
   "storage": "Keep it whole and unwashed, in a cool spot or the fridge vegetable drawer, loosely wrapped, for up to about a week. Do not stack heavy items on it, because it bruises easily. Roasted and mashed brinjal (before tempering) keeps in a closed box in the fridge for 1–2 days.",
   "looksLike": "A big, round or oval brinjal, usually 400–700 g each, with smooth, glossy, dark-purple skin and a green cap and stem. It is far larger than the small round or long thin brinjals used in sambar and bhaji. A pale-green bharta type is also sold, but the purple one is the usual choice.",
@@ -250,18 +258,22 @@
       "dishNumber": 44,
       "quantity": 300,
       "unit": "g",
-      "raw": "300 g as bought (1 large brinjal; about 240 g flesh after removing the stem and skin)"
+      "raw": "300 g as bought per serving (1 large round brinjal; about 240 g flesh after removing the stem and skin)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-12",
       "file": "FitPlate_Ingredients_2026-10-12.md"
+    },
+    {
+      "date": "2026-11-17",
+      "file": "FitPlate_Ingredients_2026-11-17.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (spike-blend)",
+    "macrosPer100Estimate": "stable (mean-2)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -270,5 +282,14 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: possible-spike",
+    "Possible spike: latest avg 45 (2026-11-17) moved more than 35% from the previous estimate; using the halfway point.",
+    "macrosPer100Estimate.fatG: Versions 2026-10-12 (0.1) and 2026-11-17 (0.18) differ by more than 25%; kept the newer.",
+    "macrosPer100Estimate.fibreG: Versions 2026-10-12 (2.4) and 2026-11-17 (3) differ by more than 25%; kept the newer.",
+    "nutritionPer100g.proteinG: Conflict (2026-10-12: 0.9 vs 2026-11-17: 0.98); both cite the official table, kept the previous value.",
+    "nutritionPer100g.carbsG: Conflict (2026-10-12: 5.4 vs 2026-11-17: 5.88); both cite the official table, kept the previous value.",
+    "nutritionPer100g.fatG: Conflict (2026-10-12: 0.1 vs 2026-11-17: 0.18); both cite the official table, kept the previous value.",
+    "nutritionPer100g.fibreG: Conflict (2026-10-12: 2.4 vs 2026-11-17: 3); both cite the official table, kept the previous value."
+  ]
 }

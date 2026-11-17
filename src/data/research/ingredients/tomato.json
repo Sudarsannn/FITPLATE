@@ -23,38 +23,43 @@
         "avg": 54,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      },
+      {
+        "date": "2026-11-17",
+        "min": 28,
+        "max": 100,
+        "avg": 57,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-17.md"
       }
     ],
     "currentEstimate": {
-      "min": 41,
-      "max": 56,
-      "avg": 49
+      "min": 48,
+      "max": 66,
+      "avg": 57
     },
-    "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-25",
+    "method": "latest-trend",
+    "trend": "rising",
+    "change30dPct": 21.7,
+    "lastObserved": "2026-11-17",
     "stale": false,
     "seasonal": true,
-    "listingCount": 7,
+    "listingCount": 8,
     "platforms": [
       "Amazon",
-      "BigBasket",
       "Blinkit",
       "DMart Ready",
-      "JioMart",
-      "Swiggy Instamart"
+      "Swiggy Instamart",
+      "Zepto"
     ],
-    "outOfStock": true,
-    "confirmed": false,
-    "checkNotes": [
-      "a listing used for the range is marked out of stock, closed or not taking orders"
-    ]
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 4.1,
-    "max": 5.6,
-    "avg": 4.9
+    "min": 4.8,
+    "max": 6.6,
+    "avg": 5.7
   },
   "seasonal": true,
   "nutritionPer100g": {
@@ -115,9 +120,9 @@
       "confidence": "Medium"
     },
     "magnesiumMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 11,
+      "source": "USDA FDC: USDA FDC 170457 'Tomatoes, red, ripe, raw, year round average' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "zincMg": {
       "value": null,
@@ -130,9 +135,9 @@
       "confidence": "Medium"
     },
     "vitaminAUgRae": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 42,
+      "source": "USDA FDC: USDA FDC 170457 'Tomatoes, red, ripe, raw, year round average' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "folateUgDfe": {
       "value": null,
@@ -175,9 +180,9 @@
       "confidence": null
     },
     "phosphorusMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 24,
+      "source": "USDA FDC: USDA FDC 170457 'Tomatoes, red, ripe, raw, year round average' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Medium"
     },
     "seleniumUg": {
       "value": null,
@@ -261,38 +266,74 @@
   ],
   "vendorListings": [
     {
+      "vendor": "blinkit",
+      "product": "hybrid tomato",
+      "pack": "1 kg",
+      "priceMinInr": 48,
+      "priceMaxInr": 48,
+      "observedOn": "2026-11-17"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "desi tomato",
+      "pack": "1 kg",
+      "priceMinInr": 62,
+      "priceMaxInr": 62,
+      "observedOn": "2026-11-17"
+    },
+    {
       "vendor": "instamart",
       "product": "Indian Tomato 500 g",
       "pack": "500 g",
       "priceMinInr": 20,
       "priceMaxInr": 20,
       "observedOn": "2026-10-25"
+    },
+    {
+      "vendor": "instamart",
+      "product": "hybrid tomato",
+      "pack": "1 kg",
+      "priceMinInr": 28,
+      "priceMaxInr": 28,
+      "observedOn": "2026-11-17"
+    },
+    {
+      "vendor": "instamart",
+      "product": "desi tomato",
+      "pack": "1 kg",
+      "priceMinInr": 40,
+      "priceMaxInr": 40,
+      "observedOn": "2026-11-17"
+    },
+    {
+      "vendor": "zepto",
+      "product": "hybrid tomato",
+      "pack": "1 kg",
+      "priceMinInr": 90,
+      "priceMaxInr": 90,
+      "observedOn": "2026-11-17"
+    },
+    {
+      "vendor": "zepto",
+      "product": "desi tomato",
+      "pack": "1 kg",
+      "priceMinInr": 100,
+      "priceMaxInr": 100,
+      "observedOn": "2026-11-17"
     }
   ],
   "usedIn": [
     {
-      "dishNumber": 82,
-      "quantity": 60,
+      "dishNumber": 42,
+      "quantity": 80,
       "unit": "g",
-      "raw": "60 g per serving (½ medium, chopped)"
+      "raw": "80 g per serving (1 small-medium tomato, roughly chopped)"
     },
     {
-      "dishNumber": 83,
-      "quantity": 30,
+      "dishNumber": 44,
+      "quantity": 90,
       "unit": "g",
-      "raw": "30 g per serving (2 tbsp, finely chopped)"
-    },
-    {
-      "dishNumber": 84,
-      "quantity": 60,
-      "unit": "g",
-      "raw": "60 g per serving (½ medium, chopped)"
-    },
-    {
-      "dishNumber": 85,
-      "quantity": 40,
-      "unit": "g",
-      "raw": "40 g per serving (½ small)"
+      "raw": "90 g per serving (1 medium tomato, finely chopped)"
     }
   ],
   "versions": [
@@ -303,10 +344,14 @@
     {
       "date": "2026-10-25",
       "file": "FitPlate_Ingredients_2026-10-25.md"
+    },
+    {
+      "date": "2026-11-17",
+      "file": "FitPlate_Ingredients_2026-11-17.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (wma)",
+    "price": "price engine (latest-trend)",
     "macrosPer100Estimate": "stable (single)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
@@ -318,6 +363,6 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 35.6–66.7 was wider than 30% of avg 48.7; narrowed to ±15%."
+    "Range 28.0–100.0 was wider than 30% of avg 57.0; narrowed to ±15%."
   ]
 }
