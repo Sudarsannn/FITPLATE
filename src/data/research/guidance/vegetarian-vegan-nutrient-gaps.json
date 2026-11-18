@@ -1,0 +1,74 @@
+{
+  "id": "vegetarian-vegan-nutrient-gaps",
+  "type": "guidance",
+  "name": "Topic 38: Vegetarian and vegan nutrient gaps",
+  "rules": [
+    {
+      "if": "diet_pattern == 'vegan'",
+      "then": "Always show a vitamin B12 card: food alone cannot meet 2.2 ug/day; use B12-fortified foods or a B12 supplement (label examples 10 ug/day, 50 ug/day or 2,000 ug once a week) and ask a doctor what suits you. No UL is set for B12.",
+      "source": "ICMR-NIN 2020 RDA 2.2 ug (secondary, unverified); Vegan Society guidance (secondary); NIH ODS; topic 13"
+    },
+    {
+      "if": "diet_pattern in ['veg','jain'] and (milk_ml_per_day + curd_g_per_day) is low",
+      "then": "Show a B12 nudge: 1 glass milk plus 1 katori curd gives about 1.5 ug (about 66% of 2.2 ug, est.); suggest a blood test if tired or tingling, and fortified foods or a supplement after talking to a doctor.",
+      "source": "Topic 13 (USDA-based estimates, est.); Naik et al. 2013 Nutrition Journal (secondary)"
+    },
+    {
+      "if": "diet_pattern in ['veg','jain','vegan']",
+      "then": "Do not multiply ICMR iron (19 mg men, 29 mg women) or zinc (17 mg men, 13.2 mg women) targets by a vegetarian factor; instead show absorption tips: soak or sprout pulses, add a vitamin C food (lemon, guava, tomato, capsicum), keep tea and coffee away from meals.",
+      "source": "ICMR-NIN 2020 (secondary, unverified); NIH ODS 1.8x iron factor is a US rule (secondary); IFCT 2017 phytate values"
+    },
+    {
+      "if": "diet_pattern == 'jain'",
+      "then": "Flag iron and B12 as priority gaps; suggest guava, lemon, capsicum, tomato for vitamin C and dals, banana, coconut water for potassium to replace potato and onion; do not suggest onion, garlic or root vegetables.",
+      "source": "IFCT 2017 (calc.); Surat iron-status study of Brahmin, Jain and Muslim communities (secondary)"
+    },
+    {
+      "if": "diet_pattern == 'vegan'",
+      "then": "Show calcium plan to reach 1,000 mg/day (ICMR-NIN 2020, secondary, unverified) using ragi (50 g about 182 mg), sesame (10 g about 128 mg), calcium-set tofu, fortified plant milk and low-oxalate greens; do not count spinach as a reliable calcium source (about 5% absorbed).",
+      "source": "IFCT 2017 (calc.); calcium bioavailability tables (secondary)"
+    },
+    {
+      "if": "diet_pattern in ['vegan','jain'] or iodised_salt_used == false",
+      "then": "Remind to use iodised salt within the 5 g/day salt limit as the main iodine source (150 ug/day target); warn against kelp or seaweed supplements; thyroid disease needs a doctor.",
+      "source": "ICMR-NIN 2020 (secondary, unverified); NIH ODS UL 1,100 ug/day; topic 25; PMC7352501 systematic review"
+    },
+    {
+      "if": "diet_pattern in ['veg','jain','vegan']",
+      "then": "Show protein pairing: dal with roti or rice raises lysine from about 24 to 37 mg/g protein (cereal alone) to about 43 to 52 mg/g (calc., IFCT 2017); no need to pair in the same meal.",
+      "source": "IFCT 2017 (calc.); PMFIAS DGI 2024 summary (secondary)"
+    },
+    {
+      "if": "diet_pattern == 'vegan' and omega3_goal == true",
+      "then": "Suggest ALA foods (walnut 20 g about 1.7 g ALA, ground flax 10 g about 1.3 g ALA) and mention algal-oil DHA as the only plant source of DHA; conversion of ALA to DHA is low (about 0.5 to 9%).",
+      "source": "IFCT 2017 (calc.); omega-3 conversion reviews (secondary)"
+    },
+    {
+      "if": "life_stage in ['pregnant','breastfeeding','infant','child','teen','age_60_plus'] or condition in ['anaemia','thyroid_disease','kidney_disease'] or medication in ['metformin','ppi','h2_blocker']",
+      "then": "Show only general food tips and a doctor or dietitian card; give no supplement dose; requires_doctor_input.",
+      "source": "Academy of Nutrition and Dietetics 2025 (secondary); AAP and ESPGHAN positions (secondary); topic 13, 21, 25"
+    },
+    {
+      "if": "any supplement preset above its upper limit (iron 45 mg/day, zinc 40 mg/day, calcium 2,500 mg/day, iodine 1,100 ug/day)",
+      "then": "Label the preset '(prescription dose)', set prescription_dose true and never offer it as a quick-add.",
+      "source": "NIH ODS ULs; topics 15, 21, 22, 25"
+    },
+    {
+      "if": "food_data_requested == 'vitamin_d' for a plant food",
+      "then": "Hide the IFCT 2017 plant vitamin D value; show 'no reliable data'.",
+      "source": "IFCT 2017 sanity check (this topic)"
+    }
+  ],
+  "lastResearched": "2026-11-18",
+  "versions": [
+    {
+      "date": "2026-11-18",
+      "file": "FitPlate_Nutrients_2026-11-18.md"
+    }
+  ],
+  "mergeMethod": {
+    "rules": "union (newest wording of the same rule)"
+  },
+  "mergeNotes": [],
+  "needsReview": []
+}

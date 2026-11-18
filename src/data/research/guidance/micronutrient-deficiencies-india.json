@@ -1,0 +1,69 @@
+{
+  "id": "micronutrient-deficiencies-india",
+  "type": "guidance",
+  "name": "Topic 37: Common micronutrient deficiencies in India",
+  "rules": [
+    {
+      "if": "sex is female and age is between 12 and 49",
+      "then": "Add iron and folate to the watch list; show food-first tips and the message 'Many women in India fall short of iron. Worth checking with your doctor.' Never state that the user is anaemic.",
+      "source": "NFHS-5 2019-21 (secondary, unverified); ICMR-NIN 2020"
+    },
+    {
+      "if": "diet is vegetarian, Jain or vegan",
+      "then": "Add vitamin B12, iron, zinc, calcium and omega-3 to the watch list; B12 message suggests talking to a doctor about testing and fortified foods.",
+      "source": "CNNS 2016-18; B12 reviews 2020 and 2025 (secondary, unverified)"
+    },
+    {
+      "if": "dairy servings per day is below 2",
+      "then": "Add calcium and riboflavin to the watch list; suggest ragi, sesame, milk, curd or paneer within the user's diet pattern.",
+      "source": "ICMR-NIN 2020 calcium RDA 1000 mg/day (secondary, unverified)"
+    },
+    {
+      "if": "sun exposure is low (mostly indoors or fully covered)",
+      "then": "Add vitamin D to the watch list; word as 'commonly low in India'; do not suggest a dose; point to a doctor for a 25(OH)D test.",
+      "source": "IJEM 2017 systematic review; ICMR-NIN 2020 15 ug/day RDA"
+    },
+    {
+      "if": "tea or coffee is taken with main meals",
+      "then": "Show tip to keep tea or coffee at least one hour away from iron-rich meals and add iron and zinc to the watch list.",
+      "source": "Topic 39 (absorption blockers)"
+    },
+    {
+      "if": "age is under 18",
+      "then": "Add zinc, B12, folate and iron to the watch list; show a parent or doctor message.",
+      "source": "CNNS 2016-18 (AJCN zinc, PMC10346745 B12 and folate)"
+    },
+    {
+      "if": "user is pregnant, planning pregnancy or lactating",
+      "then": "Set requires_doctor_input true; show only a generic 'talk to your doctor or ANC provider about iron, folic acid, B12 and iodine' message; never suggest doses.",
+      "source": "Anemia Mukt Bharat (MoHFW); ICMR-NIN 2020"
+    },
+    {
+      "if": "user uses only non-iodised salt",
+      "then": "Add iodine to the watch list and suggest iodised salt (ask a doctor first for thyroid disease).",
+      "source": "NISI 2014-15 (77.5% households adequately iodised); topic 25"
+    },
+    {
+      "if": "user reports fatigue, breathlessness, numbness, hair loss or bone pain",
+      "then": "Show 'These symptoms have many causes; please see a doctor' and do not attach a nutrient label.",
+      "source": "General clinical guidance; not medical advice"
+    },
+    {
+      "if": "any watch-list nutrient is shown",
+      "then": "Include the line 'General information, not medical advice. Labs such as CBC, ferritin, 25(OH)D, B12 and TSH are ordered and read by a doctor.'",
+      "source": "FitPlate spec policy"
+    }
+  ],
+  "lastResearched": "2026-11-18",
+  "versions": [
+    {
+      "date": "2026-11-18",
+      "file": "FitPlate_Nutrients_2026-11-18.md"
+    }
+  ],
+  "mergeMethod": {
+    "rules": "union (newest wording of the same rule)"
+  },
+  "mergeNotes": [],
+  "needsReview": []
+}

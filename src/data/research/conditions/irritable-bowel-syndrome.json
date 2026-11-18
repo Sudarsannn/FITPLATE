@@ -1,0 +1,507 @@
+{
+  "id": "irritable-bowel-syndrome",
+  "type": "condition",
+  "name": "Irritable bowel syndrome (IBS)",
+  "surveyQuestion": "Do you have any of these health conditions? (select all that apply) -> Irritable bowel syndrome (IBS). Check: Has a doctor told you that you have IBS? Yes, IBS-D (loose stools) / Yes, IBS-C (constipation) / Yes, IBS-mixed / Yes, not sure which type / Not sure (see a doctor) / No. Red-flag screen first: blood in stool, weight loss without trying, anaemia, night symptoms, new symptoms after age 50, fever, family history of colon cancer, coeliac disease or IBD.",
+  "targets": [
+    {
+      "nutrient": "energy",
+      "unit": "kcal/day",
+      "generalAdult": 2110,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (2110 sedentary man, 1660 sedentary woman) (secondary, unverified); do not skip meals (NICE CG61)"
+    },
+    {
+      "nutrient": "protein",
+      "unit": "g/kg/day",
+      "generalAdult": 0.83,
+      "profileValue": 0.83,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); replace removed pulses with tolerated sources"
+    },
+    {
+      "nutrient": "total_fat",
+      "unit": "% energy",
+      "generalAdult": 30,
+      "profileValue": 30,
+      "min": null,
+      "max": 30,
+      "direction": "same",
+      "source": "WHO 2023; DGI 2024; very fatty meals may trigger symptoms (BDA/NICE, low evidence)"
+    },
+    {
+      "nutrient": "saturated_fat",
+      "unit": "% energy",
+      "generalAdult": 10,
+      "profileValue": 10,
+      "min": null,
+      "max": 10,
+      "direction": "same",
+      "source": "WHO 2023"
+    },
+    {
+      "nutrient": "trans_fat",
+      "unit": "% energy",
+      "generalAdult": 1,
+      "profileValue": 1,
+      "min": null,
+      "max": 1,
+      "direction": "same",
+      "source": "WHO 2023"
+    },
+    {
+      "nutrient": "mufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found"
+    },
+    {
+      "nutrient": "pufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found"
+    },
+    {
+      "nutrient": "omega_3",
+      "unit": "servings/week",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found"
+    },
+    {
+      "nutrient": "dietary_cholesterol",
+      "unit": "mg/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found"
+    },
+    {
+      "nutrient": "total_carbohydrate",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No ICMR total found; DGI 2024 cereals and millets cap 45% of energy (secondary, unverified); low-FODMAP grain choice in elimination (Monash, via search)"
+    },
+    {
+      "nutrient": "added_sugar",
+      "unit": "g/day",
+      "generalAdult": 25,
+      "profileValue": 25,
+      "min": null,
+      "max": 25,
+      "direction": "limit",
+      "source": "WHO 2015 (5% of energy, conditional); honey, polyols and high-fructose items limited during elimination (Monash, via search)"
+    },
+    {
+      "nutrient": "fibre",
+      "unit": "g/day",
+      "generalAdult": 30,
+      "profileValue": 30,
+      "min": 30,
+      "max": null,
+      "direction": "same",
+      "source": "As P4; soluble-first (oats, isabgol, carrot, unripe banana), raise slowly, avoid bran; NICE CG61, ACG 2021 (via search); psyllium dose 3-4 to 10 g/day not found in guidelines opened (est.), doctor or dietitian decides"
+    },
+    {
+      "nutrient": "sodium",
+      "unit": "mg/day",
+      "generalAdult": 2000,
+      "profileValue": 2000,
+      "min": null,
+      "max": 2000,
+      "direction": "limit",
+      "source": "DGI 2024 and topic 18"
+    },
+    {
+      "nutrient": "salt",
+      "unit": "g/day",
+      "generalAdult": 5,
+      "profileValue": 5,
+      "min": null,
+      "max": 5,
+      "direction": "limit",
+      "source": "As above; 2,000 mg sodium = 5 g salt"
+    },
+    {
+      "nutrient": "potassium",
+      "unit": "mg/day",
+      "generalAdult": 3500,
+      "profileValue": 3500,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020; topic 19; no KCl salt substitute without doctor; severe diarrhoea needs a doctor"
+    },
+    {
+      "nutrient": "calcium",
+      "unit": "mg/day",
+      "generalAdult": 1000,
+      "profileValue": 1000,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); at risk if dairy is cut during elimination (low-FODMAP nutrition reviews, abstracts)"
+    },
+    {
+      "nutrient": "iron",
+      "unit": "mg/day",
+      "generalAdult": 19,
+      "profileValue": 19,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (men 19, women 29) (secondary, unverified); anaemia needs a doctor"
+    },
+    {
+      "nutrient": "magnesium",
+      "unit": "mg/day",
+      "generalAdult": 440,
+      "profileValue": 440,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (men 440, women 370) (secondary, unverified)"
+    },
+    {
+      "nutrient": "vitamin_d",
+      "unit": "ug/day",
+      "generalAdult": 15,
+      "profileValue": 15,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "vitamin_b12",
+      "unit": "ug/day",
+      "generalAdult": 2.2,
+      "profileValue": 2.2,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "folate",
+      "unit": "ug DFE/day",
+      "generalAdult": 300,
+      "profileValue": 300,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (men 300, women 220) (secondary, unverified)"
+    },
+    {
+      "nutrient": "caffeine_drinks",
+      "unit": "drinks/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": 3,
+      "direction": "limit",
+      "source": "BDA IBS fact sheet: about 3 caffeinated drinks a day (via search summary); evidence low"
+    },
+    {
+      "nutrient": "alcohol",
+      "unit": "drinks/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "limit",
+      "source": "BDA/NICE-based leaflet: not every day, no more than 2 units a day (via search); WHO 2023: no level is safe"
+    },
+    {
+      "nutrient": "water",
+      "unit": "mL/day",
+      "generalAdult": 2500,
+      "profileValue": 2000,
+      "min": 1500,
+      "max": 2500,
+      "direction": "same",
+      "source": "Topic 30 (men 2,500 ml, women 2,000 ml); BDA at least 8 cups of fluid (via search); 1,500 ml is a practical floor (est.); Follow your doctor's advice"
+    }
+  ],
+  "bloodMarkers": [
+    {
+      "marker": "Haemoglobin and ferritin (context, to exclude anaemia or iron loss)",
+      "target": "Not set by FitPlate; see P11; low values are an alarm feature for a doctor",
+      "unit": "g/dL; ng/mL",
+      "source": "NICE CG61 (via secondary summaries); P11"
+    },
+    {
+      "marker": "CRP or faecal calprotectin (context, to exclude inflammation)",
+      "target": "Not found; doctor interprets",
+      "unit": "mg/L; ug/g",
+      "source": "NICE CG61 (via secondary summaries)"
+    },
+    {
+      "marker": "Coeliac serology (tTG-IgA)",
+      "target": "Test before stopping gluten; doctor interprets; see P19",
+      "unit": "Not applicable",
+      "source": "NICE CG61 (via secondary summaries); P19"
+    },
+    {
+      "marker": "TSH",
+      "target": "Not found here; see P9",
+      "unit": "mIU/L",
+      "source": "Not found"
+    },
+    {
+      "marker": "Cholesterol types, HbA1c, uric acid, eGFR",
+      "target": "Not applicable",
+      "unit": "Not applicable",
+      "source": "Not applicable"
+    }
+  ],
+  "waterMl": {
+    "min": 1500,
+    "max": 2500,
+    "notes": "No change from general range (topic 30: 2,500 ml men, 2,000 ml women); at least about 1,500-2,000 ml matters, especially in IBS-C; more in heat or loose stools (topic 31, cap 4,500, est.); severe diarrhoea needs a doctor; with kidney, heart or liver disease, pregnancy, fluid limit or diuretic show general range only. Follow your doctor's advice."
+  },
+  "sodiumMgMax": 2000,
+  "dietaryCholesterolMgMax": null,
+  "foodsFavour": [
+    "rice",
+    "poha without onion",
+    "oats",
+    "eggs",
+    "chicken and fish",
+    "firm tofu",
+    "lactose-free curd and milk",
+    "soaked well-cooked moong in small portions",
+    "carrot",
+    "spinach",
+    "tomato",
+    "cucumber",
+    "unripe banana",
+    "orange",
+    "ginger and jeera",
+    "asafoetida (hing) in oil",
+    "isabgol only as doctor or dietitian advises"
+  ],
+  "foodsLimit": [
+    "onion",
+    "garlic",
+    "large wheat roti portions",
+    "rajma and chana",
+    "cauliflower and mushroom",
+    "apple and mango",
+    "milk and soft curd if lactose is a trigger",
+    "honey",
+    "sugar-free sweets with polyols",
+    "fried and very fatty food",
+    "strong chilli if it triggers symptoms",
+    "tea and coffee over 3 a day",
+    "fizzy drinks",
+    "alcohol",
+    "wheat bran"
+  ],
+  "goodFitDishes": [
+    {
+      "dishNumber": 1,
+      "dishName": "Poha"
+    },
+    {
+      "dishNumber": 19,
+      "dishName": "Jeera Rice"
+    },
+    {
+      "dishNumber": 30,
+      "dishName": "Lemon Rice"
+    },
+    {
+      "dishNumber": 52,
+      "dishName": "Moong Dal Khichdi"
+    },
+    {
+      "dishNumber": 41,
+      "dishName": "Pongal"
+    },
+    {
+      "dishNumber": 57,
+      "dishName": "Tomato Rice"
+    },
+    {
+      "dishNumber": 35,
+      "dishName": "Curd Rice"
+    },
+    {
+      "dishNumber": 14,
+      "dishName": "Egg Bhurji"
+    },
+    {
+      "dishNumber": 21,
+      "dishName": "Masala Omelette"
+    },
+    {
+      "dishNumber": 9,
+      "dishName": "Idli with Sambar"
+    },
+    {
+      "dishNumber": 31,
+      "dishName": "Indian-style Overnight Oats"
+    },
+    {
+      "dishNumber": 45,
+      "dishName": "Tandoori Chicken"
+    }
+  ],
+  "cautionDishes": [
+    {
+      "dishNumber": 12,
+      "dishName": "Rajma Chawal",
+      "reason": "High-GOS pulses plus onion and garlic gravy (est.)"
+    },
+    {
+      "dishNumber": 8,
+      "dishName": "Chole (Chana Masala)",
+      "reason": "Chickpeas high FODMAP; onion and garlic (est.)"
+    },
+    {
+      "dishNumber": 27,
+      "dishName": "Dal Makhani",
+      "reason": "Rajma and urad, cream, onion and garlic (est.)"
+    },
+    {
+      "dishNumber": 3,
+      "dishName": "Paneer Butter Masala",
+      "reason": "Onion-garlic gravy, cream and fat (est.)"
+    },
+    {
+      "dishNumber": 63,
+      "dishName": "Shahi Paneer",
+      "reason": "Onion, cashew gravy, cream, fat (est.)"
+    },
+    {
+      "dishNumber": 13,
+      "dishName": "Pav Bhaji",
+      "reason": "Onion, garlic, cauliflower, wheat pav, butter (est.)"
+    },
+    {
+      "dishNumber": 20,
+      "dishName": "Vada Pav",
+      "reason": "Fried, garlic chutney, wheat pav (est.)"
+    },
+    {
+      "dishNumber": 11,
+      "dishName": "Aloo Paratha",
+      "reason": "Wheat and fat; onion or garlic in filling (est.)"
+    },
+    {
+      "dishNumber": 32,
+      "dishName": "Aloo Gobi",
+      "reason": "Cauliflower contains polyols (est.)"
+    },
+    {
+      "dishNumber": 66,
+      "dishName": "Sprouts Chaat",
+      "reason": "Legumes, onion, spice (est.)"
+    },
+    {
+      "dishNumber": 83,
+      "dishName": "Bhel Puri",
+      "reason": "Onion, chaat masala, spice, salt (est.)"
+    },
+    {
+      "dishNumber": 28,
+      "dishName": "Chicken 65",
+      "reason": "Fried, garlic, chilli (est.)"
+    },
+    {
+      "dishNumber": 98,
+      "dishName": "Mango Lassi",
+      "reason": "Mango fructose and lactose (est.)"
+    },
+    {
+      "dishNumber": 99,
+      "dishName": "Masala Chai",
+      "reason": "Caffeine and lactose; counts toward 3 caffeine drinks a day (est.)"
+    },
+    {
+      "dishNumber": 100,
+      "dishName": "Cold Coffee",
+      "reason": "Caffeine, milk lactose, sugar (est.)"
+    },
+    {
+      "dishNumber": 95,
+      "dishName": "Rice Kheer",
+      "reason": "Milk lactose and sugar (est.)"
+    }
+  ],
+  "conflictsWith": [
+    {
+      "profileId": "celiac-disease-gluten-sensitivity",
+      "rule": "Coeliac disease overrides FODMAP wheat tolerance: strict gluten-free; test before dropping gluten (P19)"
+    },
+    {
+      "profileId": "lactose-intolerance",
+      "rule": "Use lactose-free swaps; lactose limit applies only if lactose is a trigger (P18)"
+    },
+    {
+      "profileId": "jain-diet",
+      "rule": "No onion and garlic lowers FODMAP load, but pulses, iron and fibre need dietitian review (P33)"
+    },
+    {
+      "profileId": "vegan-diet",
+      "rule": "Pulses and soy are protein base but often high FODMAP; dietitian needed (P34)"
+    },
+    {
+      "profileId": "iron-deficiency-anaemia",
+      "rule": "Anaemia must be checked by a doctor before being attributed to IBS (P11)"
+    },
+    {
+      "profileId": "fat-loss",
+      "rule": "No crash diets or skipped meals (P25)"
+    }
+  ],
+  "requiresDoctorInput": true,
+  "requiresDoctorInputStated": true,
+  "fluidNote": "Follow your doctor's advice",
+  "warnings": [
+    "IBS is diagnosed by a doctor; Rome IV criteria shown for information only",
+    "Red flags: blood in stool, weight loss, anaemia, night symptoms, onset after 50, fever, family history of colon cancer, coeliac disease or IBD: see a doctor before any diet plan",
+    "Low-FODMAP elimination is dietitian-led and time-limited (about 2-6 weeks), then reintroduce; not long term",
+    "Never advise medicines, peppermint capsules, probiotics, laxatives or fibre supplement doses",
+    "Test for coeliac disease before removing gluten",
+    "Follow your doctor's advice on fluids"
+  ],
+  "lastResearched": "2026-11-18",
+  "versions": [
+    {
+      "date": "2026-11-18",
+      "file": "FitPlate_Nutrients_2026-11-18.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3); max as safety limit",
+    "limits": "safety limit (lower on conflict)",
+    "lists": "union",
+    "requiresDoctorInput": "stated true in any version, else newest version (missing flag + limits → true)"
+  },
+  "mergeNotes": [],
+  "needsReview": []
+}

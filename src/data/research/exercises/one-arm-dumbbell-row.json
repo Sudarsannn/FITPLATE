@@ -1,0 +1,660 @@
+{
+  "id": "one-arm-dumbbell-row",
+  "number": 17,
+  "name": "One-arm dumbbell row",
+  "otherNames": [
+    "Single-arm dumbbell row",
+    "One-arm row",
+    "Bent-over one-arm row",
+    "Bench-supported dumbbell row",
+    "Staggered-stance dumbbell row (hand on thigh)",
+    "Water-bottle row",
+    "Rucksack row",
+    "Towel-door row"
+  ],
+  "section": "home",
+  "type": "strength",
+  "equipment": [
+    "one dumbbell",
+    "bench, sturdy chair or sofa seat",
+    "non-slip exercise mat"
+  ],
+  "noEquipmentAlternative": "A filled 1-2 litre plastic water bottle or a rucksack with books held by its top handle, rowed with one hand on a chair or the front thigh; or a towel looped over a sturdy door handle for a two-handed towel row.",
+  "musclesPrimary": [
+    "latissimus dorsi",
+    "rhomboids",
+    "middle trapezius",
+    "posterior deltoid"
+  ],
+  "musclesSecondary": [
+    "biceps brachii",
+    "brachialis",
+    "brachioradialis",
+    "teres major",
+    "forearm finger flexors",
+    "erector spinae",
+    "obliques",
+    "transversus abdominis"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 3.5,
+  "compendiumCode": "02054",
+  "metOptions": [
+    {
+      "code": "02054",
+      "met": 3.5,
+      "activity": "MET: 3.5, Compendium code 02054, \"resistance (weight) training, multiple exercises, 8-15 repetitions at varied resistance\" (2024 Adult Compendium of Physical Activities, conditioning-exercise table an"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "8-10 slow reps per arm, RPE 5-6 with 3-4 reps in reserve",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "2 s pull, 1 s pause, 3 s lower",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 3,
+      "reps": "10 slow reps per arm, RPE 5-6, paired with walking or a cardio block",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2 s pull, 1 s pause, 3 s lower",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "10-12 reps per arm, 3 reps in reserve",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "2 s pull, 1 s pause, 3 s lower",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "strength",
+      "sets": 3,
+      "reps": "6-8 reps per arm with a heavier weight, 2-3 reps in reserve, clean form",
+      "timeSec": null,
+      "restSec": 105,
+      "tempo": "2 s pull, 1 s pause, 3 s lower",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 2,
+      "reps": "12-15 light reps per arm, 3-4 reps in reserve",
+      "timeSec": null,
+      "restSec": 50,
+      "tempo": "2 s pull, 1 s lower",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "8-12 reps per arm, 1-3 reps in reserve, staggered stance or paused",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "2 s pull, 1 s pause, 3 s lower",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": 4,
+      "reps": "4-6 heavy reps per arm, 0-2 reps in reserve",
+      "timeSec": null,
+      "restSec": 120,
+      "tempo": "2 s pull, 1 s pause, 3 s lower",
+      "perWeek": 2
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "either",
+    "landmarks": [
+      "nose",
+      "left_ear",
+      "right_ear",
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "bottom_elbow",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": ">= 160",
+        "parsed": {
+          "op": ">=",
+          "value": 160,
+          "max": null
+        }
+      },
+      {
+        "name": "top_elbow",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": "<= 90",
+        "parsed": {
+          "op": "<=",
+          "value": 90,
+          "max": null
+        }
+      },
+      {
+        "name": "torso_still_hip",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": "70 to 135",
+        "parsed": {
+          "op": "between",
+          "value": 70,
+          "max": 135
+        }
+      },
+      {
+        "name": "neck_line",
+        "joint": "neck (ear-shoulder-hip)",
+        "angleDeg": ">= 150",
+        "parsed": {
+          "op": ">=",
+          "value": 150,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 2
+  },
+  "formChecks": [
+    {
+      "joint": "elbow",
+      "rule": "elbow angle < 160 degrees at the bottom (equals bottom_elbow phase threshold)",
+      "message": "Let the arm hang straight between reps"
+    },
+    {
+      "joint": "elbow",
+      "rule": "elbow angle > 90 degrees at the top (equals top_elbow phase threshold)",
+      "message": "Pull the elbow back toward your hip"
+    },
+    {
+      "joint": "hip",
+      "rule": "hip angle < 70 or > 135 degrees during the set (equals torso_still_hip phase range)",
+      "message": "Keep your back still and level"
+    },
+    {
+      "joint": "neck",
+      "rule": "neck angle < 150 degrees (equals neck_line phase threshold)",
+      "message": "Neck long: eyes on the floor"
+    },
+    {
+      "joint": "shoulders",
+      "rule": "trunk twist flag: shoulder line tilts away from hip line, or working shoulder rises, by more than the set margin (position flag, not an angle)",
+      "message": "Don't twist: shoulders level"
+    },
+    {
+      "joint": "shoulder",
+      "rule": "shrug flag: working shoulder rises toward the ear by more than the set margin (position flag, not an angle)",
+      "message": "Shoulder down, away from your ear"
+    },
+    {
+      "joint": "elbow",
+      "rule": "rep shorter than 2.0 s (rushing)",
+      "message": "Slow down: 3 seconds to lower"
+    }
+  ],
+  "safetyFlags": [
+    "set_dumbbell_down_gently_on_mat_or_towel_no_dropping",
+    "bench_or_chair_on_non_slip_mat_or_against_wall",
+    "supported_version_first_light_weight",
+    "light_weight_3_to_4_reps_in_reserve_for_beginners",
+    "do_not_hold_breath_breathe_out_on_pull",
+    "keep_back_flat_no_twisting",
+    "no_shrugging_shoulder_down_and_back",
+    "hypertension_light_load_no_breath_holding",
+    "heart_disease_ask_doctor_first",
+    "knee_pain_use_staggered_stance_or_pad_knee",
+    "lower_back_pain_raise_support_light_weight_stop_if_pain_increases",
+    "shoulder_problems_light_short_range_or_band_row",
+    "osteoporosis_ask_doctor_flat_back_only",
+    "pregnancy_ask_obstetrician_avoid_lying_flat",
+    "postpartum_ask_physiotherapist_first",
+    "recent_surgery_get_approval",
+    "no_glass_bottles",
+    "towel_row_only_on_solid_door_and_handle",
+    "stop_with_chest_pain_dizziness_or_sharp_pain"
+  ],
+  "progressions": [
+    "heavier dumbbell within 1-3 reps in reserve, or a 2 s squeeze at the top and a 4 s lowering",
+    "staggered-stance row with the free hand on the thigh, then unsupported row, with a lighter weight",
+    "Meadows row or chest-supported row; in a gym, seated cable row (Gym 26) or barbell bent-over row (Gym 29)"
+  ],
+  "regressions": [
+    "hand-supported row with the support raised (sofa seat, chair or table) and light weight",
+    "light bottle or empty-hand row with the elbow-to-hip action and a short range",
+    "towel-door row or band row with an easy lean"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "side, waist height, 2.5 m",
+      "shows": "setup: knee and hand on the bench, other foot on the floor, back flat, arm hanging",
+      "textOverlay": "Knee and hand on the bench. Back flat."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, waist height, 2.5 m",
+      "shows": "hang and shoulder set: dumbbell under the shoulder, shoulder blade down and back",
+      "textOverlay": "Arm hangs. Shoulder away from the ear."
+    },
+    {
+      "seconds": 10,
+      "angle": "side, waist height, 2.5 m",
+      "shows": "full rep: elbow draws toward the hip, pause, slow lower",
+      "textOverlay": "Elbow to hip. Slow down."
+    },
+    {
+      "seconds": 8,
+      "angle": "front-three-quarter, waist height, 2.5 m",
+      "shows": "trunk still: shoulders and hips level; correct versus twisted torso",
+      "textOverlay": "No twisting: shoulders level."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, waist height, 2.5 m",
+      "shows": "flat back versus rounded or arched back",
+      "textOverlay": "Long back, eyes on the floor."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, waist height, 2.5 m",
+      "shows": "shrug fault versus shoulder blade down and back",
+      "textOverlay": "Don't shrug."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, waist height, 2.5 m",
+      "shows": "staggered-stance version with free hand on the thigh, plus bottle or rucksack row",
+      "textOverlay": "Hand on thigh. No bench? Use a bottle."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, waist height, 2.5 m",
+      "shows": "quiet set-down onto a towel with a 3 s count, bench on a mat",
+      "textOverlay": "Set it down softly."
+    }
+  ],
+  "lastResearched": "2026-11-18",
+  "setupSteps": [
+    "Pick the version. *Bench-supported (recommended first):* a bench, a firm chair or a sofa seat (it must not slide or tip). Place the left hand and left knee on it (if rowing with the right arm). One source calls this \"knee and same-side hand on a flat bench\" and notes it helps keep the back flat (snippet). *Staggered-stance, hand on the thigh:* stand with one foot a half-step ahead, rest the free hand on the front thigh just above the knee, and hinge forward. Keep hand contact light so you do not lean on it. One source says the split stance suits people who can hinge with a neutral spine (snippet). *No equipment:* a bottle or rucksack in the working hand, in either stance; or the towel row.",
+    "Floor. A non-slip mat on a flat spot; put a folded towel on the floor beside the support to set the weight down on. Put the bench or chair on a rubber mat or against a wall.",
+    "Bench version foot and knee placement. The supporting knee sits on the bench directly under the hip; the supporting hand sits flat on the bench under the shoulder, a little ahead of the knee, elbow soft (not locked). The other foot stands on the floor out to the side, about hip-width (est.) from the bench, toes forward, knee softly bent.",
+    "Back position. Hips and shoulders level, back roughly parallel to the floor in the bench version (a gentle slope is fine), spine long from tailbone to head, ribs down.",
+    "Neck. Gaze at the floor a hand-width ahead of the bench; the back of the neck is long, not looking up.",
+    "Grip. Hold the dumbbell with a firm overhand or neutral grip (palm facing the bench). The arm hangs straight down from the shoulder, dumbbell below the shoulder, not out in front.",
+    "Shoulder blade. Slide the working shoulder blade gently down and back before the first pull (\"back pocket\" cue), so the shoulder is not shrugged toward the ear.",
+    "Choose the weight. The lightest weight that lets you do 10 clean, slow reps with 3-4 left in the tank (section 7).",
+    "Camera. Phone in landscape at about hip-to-waist height (80-100 cm, est.), 2-2.5 m away. A side view shows the back line and elbow path; a front-three-quarter view shows trunk twist. Full body in frame.",
+    "Warm up 3-5 minutes (est.): march on the spot, arm circles, a few cat-cow movements (Yoga & Stretch 10), 6-8 bodyweight hinges, and one set of 6 reps with a very light weight or an empty hand."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Get on the bench",
+      "action": "Place the left hand and left knee on the bench, the right foot on the floor, the back flat.",
+      "feel": "A stable three-point base; weight spread evenly.",
+      "breathing": "Breathe in and out normally.",
+      "tempo": null,
+      "visualCheck": "Side: back roughly level, head in line with the spine. Front: shoulders and hips level, not tilted."
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Pick the dumbbell up safely",
+      "action": "Before you get on the bench, stand with the dumbbell beside the bench, bend the knees and hips to pick it up with a flat back, then hold it as you set your hand and knee. Or have it on the floor and reach down with the working hand once you are in position.",
+      "feel": "Legs doing the lift, not the back.",
+      "breathing": "Breathe out as you lift.",
+      "tempo": null,
+      "visualCheck": "Side: back flat; no hunched pickup."
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Hang the arm and set the shoulder",
+      "action": "Let the arm hang straight down, shoulder blade slid gently down and back, ribs down, tummy lightly tight.",
+      "feel": "A long, firm torso; a mild stretch along the side of the back.",
+      "breathing": "Breathe in.",
+      "tempo": null,
+      "visualCheck": "Side: dumbbell directly under the shoulder. Front: shoulders level, no hunch, shoulder not shrugged."
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Pull the elbow toward the hip",
+      "action": "Lead with the elbow, not the hand: draw the elbow up and back toward the hip, keeping it fairly close to the body (sources prefer \"toward the hip\"; some say \"back and up\").",
+      "feel": "The mid-back and the wide back muscle shortening; the biceps helping but not leading.",
+      "breathing": "Breathe out as you pull (ACE gives exhale on the pull, snippet).",
+      "tempo": null,
+      "visualCheck": "Side: the elbow travels up and back in a smooth arc to just above the back line; the dumbbell ends near the lower ribs or hip. Front-three-quarter: shoulders and hips stay square to the floor."
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Keep the torso still",
+      "action": "Do not twist or lift the chest on the working side; keep both shoulders and both hips level with the floor.",
+      "feel": "The trunk muscles working to stay still, like a table top.",
+      "breathing": "Keep breathing; do not hold the breath.",
+      "tempo": null,
+      "visualCheck": "Front-three-quarter: the line between the shoulders stays level and stays parallel to the line between the hips; the back stays flat in the side view."
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Pause and squeeze",
+      "action": "At the top, the elbow is near the hip and slightly above the back line; stop for a beat and squeeze the shoulder blade gently toward the spine; do not shrug.",
+      "feel": "A gentle squeeze between the shoulder blade and the spine, shoulder away from the ear.",
+      "breathing": "Brief pause; breathe out fully.",
+      "tempo": null,
+      "visualCheck": "Side: elbow bent roughly 90 degrees or less (est.), upper arm roughly in line with the back; no neck craning. Front: shoulder low."
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Lower under control",
+      "action": "Straighten the arm slowly back to hanging, letting the shoulder blade glide forward slightly at the bottom; do not drop.",
+      "feel": "A controlled stretch along the side of the back.",
+      "breathing": "Breathe in as you lower.",
+      "tempo": null,
+      "visualCheck": "Side: dumbbell travels in the same path back down; arm nearly straight at the bottom; the back stays flat. Front: shoulders level."
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Repeat for all reps, then change sides",
+      "action": "Do all the reps with one arm, set the dumbbell down gently, swap hand and knee, and do the same for the other arm. Start with the weaker arm and match its reps on the other side (a coaching tip, snippet).",
+      "feel": "Even effort on both sides.",
+      "breathing": "Breathe normally between sets.",
+      "tempo": null,
+      "visualCheck": "Both arms follow the same path and range."
+    },
+    {
+      "n": 9,
+      "part": null,
+      "title": "Set the dumbbell down safely",
+      "action": "After the last rep, lower the dumbbell to the floor on the towel or mat with a 2-3 s count, then step off the bench; do not drop it.",
+      "feel": "Controlled arm and legs, no back rounding.",
+      "breathing": "Breathe out.",
+      "tempo": null,
+      "visualCheck": "Side: back flat while lowering; the only sound is a soft touch."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Twisting the torso to lift the weight",
+      "text": "Twisting the torso to lift the weight. Why: shifts work from the back to the trunk and shoulder (Livestrong, Fitness and Power, ACE, snippets); sources call it among the most common errors. Fix: lighter weight, hips and shoulders pointing at the floor, film from the front; slow the pull."
+    },
+    {
+      "title": "Rounding or over-arching the back",
+      "text": "Rounding or over-arching the back. Why: puts pressure on the spine; sources call back arching the most common row error (snippets). Fix: lighter weight, a higher support surface, tummy lightly tight, eyes on the floor."
+    },
+    {
+      "title": "Shrugging the shoulder toward the ear",
+      "text": "Shrugging the shoulder toward the ear. Why: the upper trapezius and neck take over (snippets). Fix: slide the shoulder blade down and back first; lead with the elbow, not the hand."
+    },
+    {
+      "title": "Jerking or heaving the weight (momentum)",
+      "text": "Jerking or heaving the weight (momentum). Why: lets the swing do the work and invites back strain (NFPT, snippet). Fix: 2 s pull, 1 s pause, 3 s lower; reduce the weight."
+    },
+    {
+      "title": "Weight too heavy, causing compensation",
+      "text": "Weight too heavy, causing compensation. Why: forces twisting, rounding and a short range (snippet). Fix: choose the weight by 3-4 reps in reserve (section 7)."
+    },
+    {
+      "title": "Pulling the hand to the chest instead of the elbow toward the hip",
+      "text": "Pulling the hand to the chest instead of the elbow toward the hip. Why: it turns the movement into an arm curl and a shoulder shrug. Fix: think \"elbow to hip pocket\"; dumbbell ends near the lower ribs."
+    },
+    {
+      "title": "Not lowering fully (half reps)",
+      "text": "Not lowering fully (half reps). Why: short range cuts the stretch and the work; the arm should hang nearly straight at the bottom. Fix: let the arm straighten at the bottom with the shoulder blade moving slightly forward."
+    },
+    {
+      "title": "Locking the supporting elbow or leaning heavily on the support",
+      "text": "Locking the supporting elbow or leaning heavily on the support. Why: the shoulder gets stuck and the torso twists. Fix: soft support elbow; on the thigh version, light touch."
+    },
+    {
+      "title": "Dropping the dumbbell at the end or letting it hit the floor",
+      "text": "Dropping the dumbbell at the end or letting it hit the floor. Why: noise for neighbours below and risk to feet. Fix: lower it with a 2-3 s count onto a mat or towel; keep feet clear."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. Why: raises blood pressure and brings dizziness (breathing study PubMed 7741618, carried from earlier items). Fix: breathe out on the pull, in on the lowering."
+    }
+  ],
+  "safetyNotes": [
+    "Lower back problems: the supported version with a high support surface takes load off the back; one source suggests more supported variations and lighter loads for anyone with a history of low back pain (snippet); stop if pain increases or spreads down a leg. Clinical guidance specific to the weighted one-arm row: Not found.",
+    "Shoulder problems: rowing can aggravate the shoulder if it does not track cleanly; sources suggest a lighter dumbbell, a shorter range, or a band row, and to pause until a clinician clears you if pain flares (snippets); stop with pinching or sharp pain. Clinical guidance: Not found.",
+    "Neck pain: a shrug or craning neck during the row can irritate the neck; lower the weight and cue the shoulder down (snippet).",
+    "Knee problems: the bench version loads one knee; use a cushion, or use the staggered-stance or chair version. RDL-style knee guidance: Not found.",
+    "High blood pressure and heart disease: breathe out on the pull; do not hold the breath; light weight and moderate effort; get medical clearance first if you have heart disease or uncontrolled blood pressure.",
+    "Osteoporosis: loaded strength work is generally recommended; avoid loaded spinal rounding and twisting; with severe osteoporosis or a prior vertebral fracture, ask a clinician first (reviews, snippets).",
+    "Pregnancy and postpartum: resistance training is commonly recommended for uncomplicated pregnancies (snippet); the standing or hand-supported version avoids lying flat; ACOG's own wording was not reached, so ask your obstetrician, midwife or women's health physiotherapist; stop with dizziness, pelvic heaviness, leaking or pain.",
+    "Mumbai flat: put the bench or chair on a non-slip mat or against a wall; set the dumbbell down gently on a mat or towel; do not drop it on a tile floor; no glass bottles; use a towel row only on a solid door and handle, never a hollow or loose one; avoid the balcony slab."
+  ],
+  "sources": [
+    "2024 Adult Compendium of Physical Activities (Herrmann et al., J Sport Health Sci 2024): conditioning-exercise table and tracking guide, code 02054 (resistance training, multiple exercises, 8-15 repetitions, 3.5); other resistance codes seen as a search summary. https://pacompendium.com/conditioning-exercise ; https://pacompendium.com/wp-content/uploads/2025/02/4_2024_adult-compendium-tracking-guide-1-2024.pdf ; https://pacompendium.com/wp-content/uploads/2024/02/1_2024-adult-compendium_1_2024.pdf ; https://pubmed.ncbi.nlm.nih.gov/38242596/ (snippets)",
+    "ACE exercise library, single-arm row and single-arm dumbbell row (intermediate; bench and dumbbells; exhale on the pull; lower with a flat back and retracted shoulder; reach toward the floor without torso rotation; use a mirror to check). https://www.acefitness.org/resources/everyone/exercise-library/126/single-arm-dumbbell-row/ ; https://www.acefitness.org/education-and-resources/lifestyle/exercise-library/126/single-arm-row (snippets)",
+    "NFPT, proper form for a one-arm dumbbell row (rounding and momentum as common errors). https://nfpt.com/proper-form-for-a-one-arm-dumbbell-row/ (snippet)",
+    "Technique and cues for the one-arm row: Breaking Muscle; Liftosaur; Gravitus; Fitness and Power; Set for Set; Coachweb; Powerlifting Technique; Tom's Guide; Fitbod; BarBend; MasterClass; Julie Lohre; Catalyst Athletics; PureGym. https://breakingmuscle.com/single-arm-dumbbell-row/ ; https://liftosaur.com/exercises/dumbbell-bent-over-one-arm-row ; https://gravitus.com/guides/exercises/one-arm-dumbbell-row ; https://www.fitnessandpower.com/training/bodybuilding-exercises/back-exercises/one-arm-dumbbell-row ; https://www.setforset.com/blogs/news/one-arm-dumbbell-rows ; https://www.coachweb.com/dumbbell-exercises/7380/how-to-do-the-one-arm-dumbbell-row ; https://powerliftingtechnique.com/dumbbell-row/ ; https://tomsguide.com/how-to/how-to-do-a-dumbbell-row ; https://fitbod.me/exercises/dumbbell-row ; https://barbend.com/dumbbell-row/ ; https://www.masterclass.com/articles/dumbbell-row-guide ; https://julielohre.com/dumbbell-row-single-arm-bent-over-rows/ ; https://catalystathletics.com/exercise/568/Single-Arm-Dumbbell-Row/ ; https://one.puregym.com/exercises/back/rows/single-arm-dumbbell-row (snippets)",
+    "Common mistakes (torso rotation, back arching, shrugging, momentum, weight too heavy): Livestrong; Cathe; Garage Gym Reviews; Men's Health Australia; Tony Gentilcore. https://livestrong.com/article/13730419-dumbbell-row-exercise-mistakes ; https://cathe.com/6-mistakes-youre-making-with-barbell-dumbbell-rows/amp ; https://www.garagegymreviews.com/dumbbell-rows ; https://menshealth.com.au/?p=59559 ; https://tonygentilcore.com/tag/db-row-mistakes/ (snippets)",
+    "Staggered-stance and thigh-supported rows, bench support and chest-supported rows: Trainwell staggered-stance row; Fitwill split-stance row; Livestrong row variations; BarBend best single-arm row variations; Sole Treadmills Meadows row; Onnit and Hussle chest-supported row notes. https://www.trainwell.net/exercises/dumbbell-staggered-stance-row ; https://fitwill.app/exercise/7474/dumbbell-split-stance-bent-over-row/ ; https://livestrong.com/article/13730396-dumbbell-row-exercise-variations ; https://barbend.com/best-single-arm-row-variations/ ; https://www.soletreadmills.com/blogs/news/meadows-row-dumbbell-variations-correct-form-benefits-muscles-worked ; https://onnit.com/academy/do-chest-supported-rows-to-build-back-strength ; https://www.hussle.com/blog/how-why-the-chest-supported-row/ (snippets)",
+    "Muscle activation (no reliable dumbbell-row EMG percentages found): Dynamic Medicine 2004 study of pulldown and row variations; Jefit ranking (uncited, not used). https://link.springer.com/article/10.1186/1476-5918-3-4 ; https://www.jefit.com/blog/best-back-exercises-for-maximum-muscle-activation (snippets)",
+    "No-equipment alternatives: Gymshark weight substitutes; Bulk full-body workout with a bag; Mountaineers bag rows; Men's Fitness backpack workout; Workout Labs water-bottle rows; Strengthlog, Fitness Volt and Fitwill towel rows. https://www.gymshark.com/blog/article/best-weight-substitutes-for-resistance-training-at-home ; https://www.bulkpowders.co.uk/the-core/full-body-home-workout-with-bag/ ; https://mountaineers.org/blog/peak-performance-bag-rows-for-upper-body-strength ; https://mensfitness.co.uk/workouts/backpack-workout ; https://workoutlabs.com/exercise-guide/bent-over-two-armed-water-bottle-rows/ ; https://www.strengthlog.com/towel-row/ ; https://fitnessvolt.com/24600/one-arm-towel-row/ ; https://fitwill.app/exercise/1773/one-arm-towel-row/ (snippets)",
+    "RPE, reps in reserve and dosage: Repetitions in Reserve reliability study (PubMed 36135029); Fitness Volt RPE guide; South Dakota State extension RIR handout; ACSM exam-prep study guide (secondary); T3 and Set for Set beginner dumbbell plans. https://pubmed.ncbi.nlm.nih.gov/36135029/ ; https://fitnessvolt.com/rpe-training/guides/complete-beginners-guide/ ; https://rabbitfood.sdstate.edu/hubfs/Training%20with%20Repetitions%20in%20Reserve.docx ; https://open-exam-prep.com/study-guides/acsm-ep/resistance-flexibility-neuromotor/resistance-training ; https://www.t3.com/active/workouts/this-beginner-dumbbell-workout-builds-strength-longevity-and-will-boost-your-overall-fitness ; https://www.setforset.com/blogs/news/beginner-dumbbell-workout-plan (snippets)",
+    "Shoulder, neck and lower back cautions for rows: The Prehab Guys (neck pain with rowing); No Regrets PT; Rehab Hero bench-supported row; Breaking Muscle shoulder articles; Fitness Volt shoulder pain. https://library.theprehabguys.com/vimeo-video/episode-672-neck-pain-with-rowing-1/ ; https://noregretspt.com.au/how-to-correctly-execute-rowing-exercises-in-the-gym-for-optimal-shoulder-strength-function/ ; https://www.rehabhero.ca/exercise/bench-supported-row ; https://breakingmuscle.com/solving-shoulder-injuries-for-gym-bros/ ; https://fitnessvolt.com/avoid-shoulder-pain/ (snippets)",
+    "Pregnancy and resistance training (secondary sources only): ACE prenatal fitness modifications; IDEA ACOG guidelines summary; Healthline; Perinatology. https://www.acefitness.org/education-and-resources/professional/expert-articles/5558/prenatal-fitness-modifications-for-safety-and-comfort ; https://www.ideafit.com/acog-guidelines ; https://healthline.com/health/fitness/exercises-to-avoid-while-pregnant ; https://www.perinatology.com/Exercise%20in%20Pregnancy.htm (snippets)",
+    "Carried from earlier Home research (snippets only, not re-checked here): breathing study PubMed 7741618 https://pubmed.ncbi.nlm.nih.gov/7741618/ ; AHA recommendations https://heart.org/en/healthy-living/exercise-and-physical-activity/fitness-basics/aha-recs-for-physical-activity-in-adults ; ADA position statement (Colberg et al. 2016) https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/ and https://pmc.ncbi.nlm.nih.gov/articles/PMC2992214 ; Donnelly et al. 2009 ACSM position stand https://pubmed.ncbi.nlm.nih.gov/19127177/ ; hypothyroidism review https://pubmed.ncbi.nlm.nih.gov/37999992/ ; asthma sources https://www.pharmacymagazine.co.uk/cpd-modules/making-a-difference-in-asthma-care/exercise-and-asthma-528343 and https://pubmed.ncbi.nlm.nih.gov/21811185/ ; Vanderbilt knee OA handout https://www.vumc.org/sports-medicine/sites/vumc.org.sports-medicine/files/public_files/documents/Knee_OA_ex_quad.pdf ; Harvard Health, strength training and blood pressure https://www.health.harvard.edu/heart-health/strength-training-and-blood-pressure ; osteoporosis PMC9304091 https://pmc.ncbi.nlm.nih.gov/articles/PMC9304091 , RACGP HANDI https://www.racgp.org.au/clinical-resources/clinical-guidelines/handi/conditions/musculoskeletal/exercise-for-preventing-bone-loss-and-reducing-fra , Brooke-Wavell et al. 2022 https://pubmed.ncbi.nlm.nih.gov/35577538/ ; Mayo Clinic pregnancy exercises https://www.mayoclinic.org/healthy-lifestyle/pregnancy-week-by-week/in-depth/pregnancy-exercises/art-20546799 ; NHS Lothian DRAMs guidelines https://apps.nhslothian.scot/files/sites/2/DRAMs-Guidelines.pdf ; ACE HIIT for clinical populations https://www.acefitness.org/certifiednewsarticle/2589/high-intensity-interval-training-for-clinical/ ; Goom, Donnelly and Brockwell 2019 https://athleticsni.org/download/files/Returning_to_running_postnatal_guideline_for_medical_health_and_fitness_professionals_managing_this_population.05.pdf",
+    "NHS, ExRx.net, Harvard Health and Mayo Clinic pages on the one-arm dumbbell row itself, NASM's own row page, joint-angle sources, a reliable beginner starting weight, and ACOG's own pregnancy wording: Not found (searches returned no such pages)."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 28.6,
+      "70kg": 24.5,
+      "80kg": 21.4
+    },
+    "per300kcal": {
+      "60kg": 85.7,
+      "70kg": 73.5,
+      "80kg": 64.3
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "strength",
+    "muscle",
+    "general_fitness",
+    "posture",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "short_sessions",
+    "no_gym",
+    "low_cost_equipment",
+    "small_flat",
+    "neighbours_below_with_gentle_set_down",
+    "low_ceiling",
+    "circuit"
+  ],
+  "swapsByAccess": {
+    "none": "Towel-door row on a solid door, or a bottle or rucksack row with the hand on a chair; or superman back raise (Home 9)",
+    "home_equipment": "Resistance band row and pull-apart (Home 23, not yet researched), or the dumbbell row with the hand on the thigh",
+    "basic_gym": "Seated cable row (Gym 26) or lat pulldown (Gym 25)",
+    "full_gym": "Seated cable row (Gym 26), lat pulldown (Gym 25) or T-bar row (Gym 30); barbell bent-over row (Gym 29) when ready"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "Light weight, 3-4 reps in reserve, breathe out on the pull and never hold the breath; avoid straining; check blood pressure is controlled; ask a doctor if readings are very high or if medicines cause dizziness",
+      "source": "Harvard Health strength training and blood pressure (carried); breathing study PubMed 7741618 (carried); row-specific advice Not found"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "Resistance training 2-3 non-consecutive days a week is recommended; usual glucose checks and fast carbohydrate on hand if on insulin or sulfonylureas; check feet and shoes; start light",
+      "source": "ADA position statement 2016, secondary summary (PMC5317029, carried; PMC2992214 snippet); row-specific advice Not found"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "Only with clearance and a plan; light loads, no breath-holding, stop with chest discomfort, dizziness or breathlessness",
+      "source": "ACE HIIT for clinical populations (carried, snippet); row-specific clearance Not found"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "Fits regular exercise advice; start light and build up",
+      "source": "AHA recommendations (carried); row-specific advice Not found"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Use the supported version with a light weight, 60-90 s rest; build gradually; combine with walking",
+      "source": "ACSM weight position stand (Donnelly 2009, carried); row-specific advice Not found"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "Standard strength guidance applies; start with 2 sets and build",
+      "source": "Not found"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "Train as usual if controlled; start light if fatigued; stop for palpitations or faintness",
+      "source": "Systematic review 2023 (PubMed 37999992, carried)"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Warm up, reliever nearby; strength work is usually well tolerated; stop and use the reliever if wheeze or cough starts",
+      "source": "Asthma UK tips via Pharmacy Magazine CPD (carried); PubMed 21811185 (carried)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Avoid kneeling on the bench: use the staggered-stance or chair-supported version, or pad the knee; stop with sharp or increasing pain",
+      "source": "Row-specific knee guidance Not found; Vanderbilt knee OA handout (carried)"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Supported version with the support raised, light weight, flat back, short range; stop if pain increases or spreads down a leg; get advice if pain persists",
+      "source": "Supported-variation and lighter-load advice from practical coaching sites (snippets); row-specific clinical guidance Not found"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "modify",
+      "change": "Light weight, short range, shoulder blade down and back, or a band row; pause and see a clinician if pain flares",
+      "source": "Rowing-and-shoulder coaching and physiotherapy blog notes (snippets); clinical row guidance Not found"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "ask_doctor",
+      "change": "Loaded strength training is generally recommended for bone; keep the back flat, no loaded rounding or twisting; with severe osteoporosis or a vertebral fracture, get individual advice first",
+      "source": "PMC9304091 (carried, snippet); RACGP HANDI exercise for bone loss (carried, snippet); Brooke-Wavell et al. 2022 (carried)"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "ask_doctor",
+      "change": "Ask your obstetrician or midwife; use the standing or hand-supported version and avoid lying flat on the back; light loads; stop with pain, leaking, dizziness or heaviness",
+      "source": "Mayo Clinic pregnancy exercises (carried); secondary summaries of ACOG guidance (snippets; ACOG's own wording Not found)"
+    },
+    {
+      "condition": "postpartum",
+      "status": "ask_doctor",
+      "change": "Ask a women's health physiotherapist; start with light weight and breathing; stop with leaking, heaviness or pain",
+      "source": "Goom, Donnelly and Brockwell 2019 (carried); NHS Lothian DRAMs (carried)"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Only with surgeon or physiotherapist approval, especially after back, shoulder, abdominal or heart surgery",
+      "source": "Not found"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "home",
+      "gym"
+    ],
+    "bodyRegion": [
+      "upper"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "muscle",
+      "strength"
+    ],
+    "intensity": "moderate",
+    "noise": "quiet",
+    "space": "small_room",
+    "typicalMinutes": 10,
+    "kcalPer10min70kg": 40.8,
+    "difficulty1to5": 2,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Home",
+    "Gym",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Strength",
+    "Back",
+    "Shoulders",
+    "Rep counter",
+    "10–20 min"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-11-18",
+      "file": "FitPlate_Fitness_2026-11-18.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

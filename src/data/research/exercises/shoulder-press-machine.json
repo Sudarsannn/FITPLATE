@@ -1,0 +1,680 @@
+{
+  "id": "shoulder-press-machine",
+  "number": 33,
+  "name": "Shoulder press machine",
+  "otherNames": [
+    "Machine shoulder press",
+    "Seated overhead press machine",
+    "Lever shoulder press",
+    "Converging shoulder press",
+    "Neutral-grip shoulder press machine"
+  ],
+  "section": "gym",
+  "type": "strength",
+  "equipment": [
+    "Selectorised shoulder press machine (weight stack and pin) or plate-loaded shoulder press machine",
+    "Adjustable seat",
+    "Back pad"
+  ],
+  "noEquipmentAlternative": "Dumbbell shoulder press (Home 18) with bags or water bottles, pike push-up or resistance band overhead press",
+  "musclesPrimary": [
+    "anterior deltoid",
+    "lateral deltoid",
+    "triceps brachii"
+  ],
+  "musclesSecondary": [
+    "upper pectoralis major",
+    "upper trapezius",
+    "serratus anterior",
+    "rotator cuff",
+    "abdominals",
+    "erector spinae"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": false,
+  "met": 3.5,
+  "compendiumCode": null,
+  "metOptions": [
+    {
+      "code": "02052",
+      "met": 5,
+      "activity": "Extras (text only, harder work): code 02052 (5.0 METs, squats and deadlifts, slow or explosive effort) and code 02050 (6.0 METs, vigorous effort, power lifting or body building) apply to heavier work "
+    },
+    {
+      "code": "02050",
+      "met": 6,
+      "activity": "Extras (text only, harder work): code 02052 (5.0 METs, squats and deadlifts, slow or explosive effort) and code 02050 (6.0 METs, vigorous effort, power lifting or body building) apply to heavier work "
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "10-12, RIR 2-3",
+      "timeSec": null,
+      "restSec": 70,
+      "tempo": "1 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 3,
+      "reps": "10-12 (circuit station)",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "1 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "8-12, RIR 2-3",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "1 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "strength",
+      "sets": 3,
+      "reps": "6-8 with clean form",
+      "timeSec": null,
+      "restSec": 120,
+      "tempo": "1 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 2,
+      "reps": "15 light",
+      "timeSec": null,
+      "restSec": 50,
+      "tempo": "1 s up, 0 s pause, 2 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "10-12 at RIR 2",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "1 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "8-12 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 80,
+      "tempo": "1 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "strength",
+      "sets": 4,
+      "reps": "5-6 at RIR 2",
+      "timeSec": null,
+      "restSec": 150,
+      "tempo": "1 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "15-20 at RIR 2",
+      "timeSec": null,
+      "restSec": 50,
+      "tempo": "1 s up, 0 s pause, 2 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "10-15",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "1 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "6-12 at RIR 0-2",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "1 s up, 1 s pause, 3 s down",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": 5,
+      "reps": "3-5",
+      "timeSec": null,
+      "restSec": 180,
+      "tempo": "1 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "endurance",
+      "sets": 4,
+      "reps": "20+",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "1 s up, 0 s pause, 2 s down",
+      "perWeek": 3
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "either",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "start_handles_at_shoulders",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": "<= 100",
+        "parsed": {
+          "op": "<=",
+          "value": 100,
+          "max": null
+        }
+      },
+      {
+        "name": "top_near_lockout",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": ">= 160",
+        "parsed": {
+          "op": ">=",
+          "value": 160,
+          "max": null
+        }
+      },
+      {
+        "name": "back_arch_limit",
+        "joint": "torso lean from vertical (shoulder-hip line against the vertical, side view)",
+        "angleDeg": "<= 15",
+        "parsed": {
+          "op": "<=",
+          "value": 15,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 2.5
+  },
+  "formChecks": [
+    {
+      "joint": "elbow",
+      "rule": "elbow angle < 160 degrees at the top (equals top phase threshold; rep not counted)",
+      "message": "Press up until your arms are nearly straight"
+    },
+    {
+      "joint": "elbow",
+      "rule": "elbow angle > 100 degrees at the bottom (equals start phase threshold; rep not counted)",
+      "message": "Lower the handles to shoulder level"
+    },
+    {
+      "joint": "torso",
+      "rule": "separate flag: torso lean from vertical > 15 degrees (equals back_arch_limit threshold)",
+      "message": "Back on the pad: do not arch"
+    },
+    {
+      "joint": "shoulder",
+      "rule": "separate flag: shoulder-to-ear distance shrinks by more than about 15 percent of the start value at the top (no joint angle)",
+      "message": "Shoulders down: do not shrug"
+    },
+    {
+      "joint": "wrist",
+      "rule": "separate front-view flag: one wrist higher than the other by more than about 10 percent of shoulder width",
+      "message": "Press both arms evenly"
+    },
+    {
+      "joint": "elbow",
+      "rule": "rep duration < 2.5 s",
+      "message": "Slow down: control each rep"
+    }
+  ],
+  "safetyFlags": [
+    "pin_all_the_way_in",
+    "set_handles_at_shoulder_level",
+    "back_on_pad_no_arching",
+    "no_shrugging",
+    "no_momentum_controlled_lowering",
+    "no_long_breath_holding",
+    "high_blood_pressure_no_failure_sets",
+    "shoulder_problems_neutral_grip_or_lighter_load",
+    "stop_with_pinching_shoulder_pain",
+    "lower_back_pain_light_load_back_on_pad",
+    "osteoporosis_ask_doctor",
+    "pregnancy_ask_obstetrician",
+    "postpartum_start_light_when_cleared",
+    "recent_surgery_follow_surgeon_limits",
+    "ask_staff_first_session"
+  ],
+  "progressions": [
+    "add weight by double progression",
+    "single-arm presses and slow lowering",
+    "dumbbell shoulder press (Home 18), then barbell overhead press (Gym 32)"
+  ],
+  "regressions": [
+    "lighter load or smaller pain-free range",
+    "landmine press or chest press machine (Gym 22)",
+    "band press or wall slide for shoulder-blade control"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "seat height: handles at shoulder to upper-chest level",
+      "textOverlay": "Handles at shoulder height"
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 1.5 m",
+      "shows": "grip choice: neutral versus overhand, thumbs wrapped",
+      "textOverlay": "Wrists straight, thumbs around"
+    },
+    {
+      "seconds": 6,
+      "angle": "side, 1.5 m",
+      "shows": "stack pin fully inserted, light tug",
+      "textOverlay": "Pin all the way in"
+    },
+    {
+      "seconds": 10,
+      "angle": "side, 2 m",
+      "shows": "one slow rep: back on pad, press, soft elbows, 2-3 s lowering",
+      "textOverlay": "Back on the pad"
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 2 m",
+      "shows": "both handles rising evenly, no shrug",
+      "textOverlay": "Shoulders down, press evenly"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "wrong: arching and lifting off the pad; right: staying flat",
+      "textOverlay": "Do not arch"
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 2 m",
+      "shows": "wrong: shrugging; right: shoulders low",
+      "textOverlay": "No shrugging"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "finish: lower slowly, let go, stack settles",
+      "textOverlay": "Lower slowly, then let go"
+    }
+  ],
+  "lastResearched": "2026-11-18",
+  "setupSteps": [
+    "Check the machine. Look at the placard for the correct grip and seat adjustment; make sure the stack pin or plate horns are free and nothing is under the weight.",
+    "Choose the grip. If the machine has several handle positions, pick the neutral (palms facing each other) or angled one if overhand feels pinchy; either is fine for a beginner. A wide pronated grip is also common. Converging handles bring the hands together overhead; fixed handles stay the same distance apart.",
+    "Select the load. Put the weight-stack pin in a low plate (about 20-30 percent of what you think you can press, est.) or load small plates evenly. Push the pin all the way in so it cannot slip.",
+    "Seat height: set the seat so that, with you sitting tall and your arms lowered, the handles line up at about shoulder level or just above (ACE; PureGym; est.). The handles should not start below the shoulders (you would be pressing from too low and the elbows would drop behind the body) and should not be above the ears at the start. Sources vary between shoulder level and between shoulders and ears; FitPlate beginner choice: handles at about shoulder to upper-chest level at the start (est.).",
+    "Back pad: sit all the way back; the whole upper back and the lower back lightly touch the pad, with only a natural curve in the lower back (not a hard arch). If the pad has an angle, a slightly reclined pad is fine; it is not an incline chest press.",
+    "Feet: flat on the floor (or on the foot rest if the seat is high), hip-width apart, knees about 90 degrees.",
+    "Handle grip: hands around the handles with thumbs wrapped, wrists straight and stacked over the forearms, elbows slightly below the shoulders at the start. Elbows point out and slightly forward, not flared far to the sides.",
+    "Start-gate or assist lever: if the machine has a start lever (it moves the handles into the starting position), use it, then remove your foot or hand from the lever before you press.",
+    "Brace and breathe. Sit tall, ribs down, shoulders away from the ears, belly gently tight."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Sit and set your back",
+      "action": "Sit all the way back and set your feet.",
+      "feel": "Back flat against the pad.",
+      "breathing": "Breathe normally.",
+      "tempo": null,
+      "visualCheck": "Side: head over shoulders, ribs not flared. Front: both shoulders level."
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Take the handles",
+      "action": "Grip both handles with thumbs wrapped; check hands start at about shoulder level or just above.",
+      "feel": "Weight on the front of the shoulders.",
+      "breathing": "Breathe in.",
+      "tempo": null,
+      "visualCheck": "Front: wrists above the elbows; elbows slightly below shoulders."
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Set the shoulders down",
+      "action": "Gently pull the shoulders down and back, away from your ears.",
+      "feel": "Neck long, not shrugged.",
+      "breathing": "Breathe in and brace lightly.",
+      "tempo": null,
+      "visualCheck": "Front: shoulders low, not touching ears."
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Press up",
+      "action": "Press the handles up and slightly inward (on a converging machine they follow the path), without lifting your back off the pad.",
+      "feel": "Front shoulders and triceps working.",
+      "breathing": "Breathe out as you press.",
+      "tempo": null,
+      "visualCheck": "Side: back stays on the pad. Front: both handles rise evenly."
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Finish near full extension",
+      "action": "Straighten the arms until just short of locking the elbows (a soft elbow); full straight arms are allowed if comfortable.",
+      "feel": "Triceps working, shoulders not hunched.",
+      "breathing": "Out, short pause.",
+      "tempo": null,
+      "visualCheck": "Front: wrists above the shoulders; no shrug up to the ears."
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Pause briefly",
+      "action": "Hold steady at the top.",
+      "feel": "Weight stable, no arch.",
+      "breathing": "One easy breath.",
+      "tempo": null,
+      "visualCheck": "Side: lower back still against the pad."
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Lower under control",
+      "action": "Lower the handles back to about shoulder level (engage the lats to control the descent, ACE) without letting the stack drop.",
+      "feel": "Shoulders and triceps resisting the weight.",
+      "breathing": "Breathe in as you lower.",
+      "tempo": null,
+      "visualCheck": "Front: handles level and elbows slightly below the shoulders; the plates or stack do not touch between reps (light touch is fine)."
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Finish the set",
+      "action": "After the last rep, lower the handles slowly to the start and let go.",
+      "feel": "Weight settles on the stops.",
+      "breathing": "Breathe out.",
+      "tempo": null,
+      "visualCheck": "Both hands off together; stack at rest; then re-adjust or leave."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Arching the lower back and lifting off the pad",
+      "text": "Arching the lower back and lifting off the pad. Why: it turns the press into a worse incline chest press and loads the lower back (most common machine error in the sources). Fix: lower the weight, brace the abdominals, keep the back flat on the pad."
+    },
+    {
+      "title": "Seat too low or too high",
+      "text": "Seat too low or too high. Why: too low starts the press with the elbows far behind the body and stresses the shoulder front; too high shortens the range. Fix: set handles at about shoulder to upper-chest level at the start."
+    },
+    {
+      "title": "Shrugging toward the ears",
+      "text": "Shrugging toward the ears. Why: shifts work from the shoulders to the upper traps, and a persistent shrug can pinch the neck and shoulder. Fix: shoulders down and back; drop the load if the shoulders keep rising."
+    },
+    {
+      "title": "Slamming into full lockout",
+      "text": "Slamming into full lockout. Why: snaps the elbows and ends the rep with momentum. Fix: stop just short of lockout if you wish (optional); straighten smoothly."
+    },
+    {
+      "title": "Using momentum or letting the stack drop",
+      "text": "Using momentum or letting the stack drop. Why: removes the tension and risks the shoulder. Fix: 1-2 s up, 2-3 s down; lower with control."
+    },
+    {
+      "title": "Flaring or dropping the elbows far behind the body",
+      "text": "Flaring or dropping the elbows far behind the body. Why: strains the shoulder front. Fix: keep the elbows slightly below the shoulders and in line with the handles."
+    },
+    {
+      "title": "Holding the breath for the whole rep",
+      "text": "Holding the breath for the whole rep. Why: raises blood pressure briefly. Fix: breathe out as you press; do not hold through the set."
+    },
+    {
+      "title": "Going too heavy for the shoulder",
+      "text": "Going too heavy for the shoulder. Why: overloads the shoulder joint and tempts the back to arch. Fix: choose a load with 2-3 reps in reserve (RIR)."
+    },
+    {
+      "title": "Wrong pin or half-inserted pin",
+      "text": "Wrong pin or half-inserted pin. Why: the pin can slip out and the stack can drop. Fix: push the pin all the way in and give a light tug."
+    },
+    {
+      "title": "Skipping the machine's adjustment instructions",
+      "text": "Skipping the machine's adjustment instructions. Why: handle starts too low, or the arms are mismatched. Fix: read the placard and ask staff the first time."
+    }
+  ],
+  "safetyNotes": [
+    "Pin and weights: push the weight-stack pin all the way in, check it before pressing; for plate-loaded, load both sides evenly and check the plates are fully on the horns.",
+    "Shoulder impingement: the evidence is mixed. A 2012 meta-analysis (Timmons) found less upward rotation of the shoulder blade in people with impingement, while a 2016 meta-analysis (Park) found no difference in subacromial space; no study was found that shows the machine press causes impingement. Practical advice: start the handles at shoulder level (not below), keep elbows slightly forward in the scapular plane if the machine allows it, use a neutral or angled grip if overhand pinches, avoid pressing through pinching or a painful arc (roughly 60-120 degrees of arm raise, an NSCA tactical-S&C excerpt, snippet), and stop with sharp pain. A machine fixes the path, but the path may not fit your shoulder.",
+    "Lower back: keep the back on the pad and ribs down; stop if you feel a pinch or pain in the lower back.",
+    "Neck: if you feel neck strain, drop the load and keep the shoulders down.",
+    "High blood pressure: breathe continuously; stop 2-3 reps short of failure.",
+    "Spotter: not needed on a machine; if you cannot finish a rep, lower the handles slowly to the start.",
+    "Gym etiquette: wipe the seat and handles; do not leave the pin set at a heavy load; do not sit on a machine between sets for long when others wait; return plates to the rack; do not film other members."
+  ],
+  "sources": [
+    "2024 Adult Compendium of Physical Activities (Herrmann et al., J Sport Health Sci 2024): code 02054, 3.5 METs, resistance training, multiple exercises, 8-15 reps at varied resistance (same in the 2011 version; older-adult version 0205460 = 4.3 MET60+). https://pacompendium.com/conditioning-exercise ; https://pacompendium.com/wp-content/uploads/2025/02/4_2024_adult-compendium-tracking-guide-1-2024.pdf ; https://pacompendium.com/older-adult-compendium/ (seen only as snippets)",
+    "ACE Fitness exercise library, Seated machine close-grip shoulder press (brace abs, keep the low back's natural arch, shoulder blades down and back; one-arm progression) and Seated shoulder press (handles at or just above shoulder level; engage lats to control lowering; shoulder relatively unstable overhead). https://www.acefitness.org/resources/everyone/exercise-library/187/seated-machine-close-grip-shoulder-press/ ; https://www.acefitness.org/resources/everyone/exercise-library/186/seated-shoulder-press/ (seen only as snippets)",
+    "PureGym, Shoulder press machine (hands in line with shoulders; pin in; sit back; feet on floor) and beginner equipment guide (hands slightly below shoulders; neutral or wide grip). https://www.puregym.com/exercises/arms-and-shoulders/shoulder-press/shoulder-press-machine/ ; https://www.puregym.com/blog/how-to-use-gym-equipment/ (seen only as snippets; gym-chain guidance)",
+    "Western University Campus Recreation, Shoulder equipment guide (handles between shoulders and ears; back against pad). https://uwo.ca/campusrec/orientation/equipment_guides/shoulders.html (seen only as a snippet)",
+    "Powerlifting Technique, Shoulder press machine; Skelcore, Shoulder press machine guide (handle height, arching and shrugging as load-too-high signs); WellFit Insider; Livestrong; Stack (common mistakes; lockout optional, ribs down). https://powerliftingtechnique.com/shoulder-press-machine/ ; https://www.skelcore.com/guides/shoulder-press-machine-guide ; https://wellfitinsider.com/workout-tips/shoulder-press-machine/ ; https://livestrong.com/article/13722704-shoulder-press-mistakes ; https://www.stack.com/a/shoulder-press-mistakes (seen only as snippets; mostly retail, app or media sites, weighed lightly)",
+    "Bodybuilding.com, Machine shoulder press (machine approximates the free-weight press; selectorised or plate-loaded). https://bodybuilding.com/exercises/leverage-shoulder-press (snippet only)",
+    "Neutral grip and shoulder pain: Generation Iron, Breaking Muscle, Stack (coach-level; no controlled machine study found). https://generationiron.com/neutral-grip-shoulder-pain/ ; https://breakingmuscle.com/essential-movement-tips-to-keep-injured-shoulders-happy/ ; https://www.stack.com/?p=117077 (snippets only)",
+    "NSCA, Modification of exercises to allow injured individuals to continue training (dumbbells in the scapular plane; painful arc about 60-120 degrees). https://www.nsca.com/certification/tsac-f/essentials-of-tactical-strength-training-and-conditioning-2nd-edition/excerpts/modification-of-exercises-to-allow-injured-individuals-to-continue-training/ (snippet only)",
+    "HSS, Shoulder impingement non-operative rehabilitation guidelines (scapular-plane range of motion, progress with pain). https://www.hss.edu/files/HSSRehabilitationClinicalGuidelines-Shoulder-Impingement-Non-operative.pdf (snippet only)",
+    "Machine versus free-weight EMG: Schick et al. 2010 (Smith machine versus free-weight bench press); McCaw et al. 1994. https://pubmed.ncbi.nlm.nih.gov/20093960/ ; https://www.cooperinstitute.org/blog/smith-machine-versus-free-weight-bench-a-battle-of-goals (snippets only; bench press, not shoulder press)",
+    "Shoulder impingement evidence: Timmons et al. 2012; Park et al. 2016 (via summaries, carried over from Gym 32). https://pages.uoregon.edu/biomech/obl/articles/2012_timmons.pdf ; https://www.muscleandmotion.com/blog/the-evolution-of-shoulder-impingement/",
+    "ACSM (2009), Progression models in resistance training for healthy adults (carried over). https://www.sportgeneeskunde.com/wp-content/uploads/ACSM-Position-Stand-Progression-Models-in-Resistance-Training-for-Healthy-Adults.pdf",
+    "Zourdos MC et al. (2016), RIR-based RPE scale (carried over). https://openrepository.aut.ac.nz/items/efef3b25-6701-4fb5-bb82-55fcd2a26027/full",
+    "Condition rows carried over from Gym 32 citations (not re-opened this session): Valsalva review https://pubmed.ncbi.nlm.nih.gov/23222073/ ; Colberg et al. 2016 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/ ; ACC summary of AHA 2023 https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2023/12/19/15/33/resistance-exercise-training ; AHA Gibbs et al. https://professional.heart.org/en/science-news/Physical-Activity-as-a-Critical-Component-of-First-Line-Treatment-for-Elevated-BP-or-Cholesterol/commentary ; Donnelly et al. 2009 https://pubmed.ncbi.nlm.nih.gov/19127177/ ; PCOS https://vuir.vu.edu.au/45855/1/1-s2.0-S2772696723000054-main.pdf ; thyroid https://pubmed.ncbi.nlm.nih.gov/37999992/ ; asthma https://www.pharmacymagazine.co.uk/cpd-modules/making-a-difference-in-asthma-care/exercise-and-asthma-528343 ; LIFTMOR https://academic.oup.com/jbmr/article/33/2/211/7605709 ; Osteoporosis Canada https://osteoporosis.ca/wp-content/uploads/2014-07-25-Are-you-too-fit-to-fracture-for-patients.pdf ; ACOG CO 804 https://opqic.org/acog-committee-opinion-no-804-physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period/ ; Contemporary OB/GYN https://www.contemporaryobgyn.net/sweating-it-out-exercise-in-pregnancy ; NNUH https://www.nnuh.nhs.uk/publication/download/post-natal-physiotherapy-advice-and-exercises-v2-1",
+    "Note: all sources for this item were seen only as search-result summaries (pages not opened in full); many are gym-chain, retail and coaching sites. The elbow thresholds (100 and 160 degrees), the 15 degree back-arch limit, the 2.5 s minimum rep, the shrug and symmetry thresholds, starting loads, plate steps and all sets, reps and rest values are FitPlate choices (est.), not validated. Not found: a full NSCA, NASM, Harvard Health, NHS or Mayo Clinic page with machine shoulder press steps; the ExRx machine-press page; a peer-reviewed handle-height standard; a validated elbow angle at the start or top; a study comparing converging versus fixed handles or neutral versus overhand grip on a press machine; a study comparing machine and free-weight shoulder presses directly; direct evidence that the machine press causes or prevents impingement; a press-machine-specific professional-body prescription; condition-specific sources for knee pain, obesity and PCOS; the primary ACOG page."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 28.6,
+      "70kg": 24.5,
+      "80kg": 21.4
+    },
+    "per300kcal": {
+      "60kg": 85.7,
+      "70kg": 73.5,
+      "80kg": 64.3
+    }
+  },
+  "gymAccess": [
+    "full_gym",
+    "basic_gym"
+  ],
+  "suitsPreferences": [
+    "strength",
+    "beginner",
+    "upper_body_day",
+    "push_day",
+    "full_body",
+    "machine_circuit",
+    "shoulder_day",
+    "quiet",
+    "20_to_60_min_sessions"
+  ],
+  "swapsByAccess": {
+    "none": "Dumbbell shoulder press (Home 18) with bags or water bottles, pike push-up or band overhead press",
+    "home_equipment": "Dumbbell shoulder press (Home 18) with adjustable dumbbells, or a band overhead press",
+    "basic_gym": "Shoulder press machine or seated dumbbell shoulder press",
+    "full_gym": "Shoulder press machine first; step up to dumbbell shoulder press (Home 18) and barbell overhead press (Gym 32)"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "No long breath-holding; stop 2-3 reps before failure; no lifting if resting BP >= 180/120; uncontrolled BP: ask a doctor",
+      "source": "Valsalva systematic review 2013 (PubMed 23222073); NSCA 1999 Valsalva article; Biology of Sport 2019 systematic review"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "2-3 non-consecutive resistance days per week; usual glucose checks if on insulin or sulfonylureas",
+      "source": "ADA position statement, Colberg et al. 2016"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "After clearance: light load, continuous breathing, no straining; overhead arm work can raise blood pressure more",
+      "source": "AHA resistance exercise statement (via ACC summary 2023)"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "Part of 2+ days per week resistance work with aerobic activity",
+      "source": "AHA scientific statement (Gibbs et al.)"
+    },
+    {
+      "condition": "obesity",
+      "status": "ok",
+      "change": "Seated, supported machine is a reasonable start; adjust the seat or handle width if the belly gets in the way; exercise-specific advice not found",
+      "source": "ACSM weight management position stand (Donnelly et al. 2009)"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "Fits muscle-strengthening guidance; exercise-specific advice not found",
+      "source": "International PCOS guideline 2023"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "Train normally if controlled; start at beginner level with ongoing fatigue",
+      "source": "Systematic review 2023 (PubMed 37999992)"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Warm up and keep reliever inhaler nearby",
+      "source": "Asthma exercise guidance (Pharmacy Magazine CPD)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "ok",
+      "change": "Machine loads the knees little; feet flat; condition-specific source not found",
+      "source": "Not found"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Back on the pad with a light load; stop if pain; avoid arching; chest press machine may be gentler; acute pain or disc problems: ask a professional",
+      "source": "Powerlifting Technique and MEND Colorado blogs (snippets)"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "modify",
+      "change": "Neutral or angled grip, handles starting at shoulder level, lighter load, or chest press machine or landmine press; stop with sharp or pinching pain; pain over 2 weeks, night pain, weakness or catching: see a clinician",
+      "source": "NSCA tactical S&C excerpt (snippet); HSS non-operative shoulder impingement guidelines (snippet); Timmons 2012 and Park 2016 meta-analyses (snippets)"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "ask_doctor",
+      "change": "Resistance work benefits bone, but a loaded overhead press with low bone mass or a spine fracture needs a physiotherapist first",
+      "source": "LIFTMOR trial (Watson et al.); Osteoporosis Canada"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "ask_doctor",
+      "change": "Ask obstetrician; seated back-supported machine at a light load is a common swap; sit more upright",
+      "source": "ACOG Committee Opinion 804; contemporaryobgyn.net summary (secondary)"
+    },
+    {
+      "condition": "postpartum",
+      "status": "ok",
+      "change": "Pelvic floor work first; return to loaded overhead work once cleared, especially after caesarean; start light",
+      "source": "NHS postnatal physiotherapy leaflets (NNUH, Royal Devon)"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Only with surgeon or physiotherapist approval; shoulder, chest, abdominal or back surgery often restricts overhead loaded work",
+      "source": "General clearance advice; condition-specific source not found"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "gym"
+    ],
+    "bodyRegion": [
+      "upper"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "fat_loss",
+      "muscle",
+      "strength",
+      "endurance"
+    ],
+    "intensity": "moderate",
+    "noise": "quiet",
+    "space": "machine",
+    "typicalMinutes": 8,
+    "kcalPer10min70kg": 41,
+    "difficulty1to5": 2,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Gym",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Strength",
+    "Shoulders",
+    "Arms",
+    "Rep counter",
+    "Under 10 min"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-11-18",
+      "file": "FitPlate_Fitness_2026-11-18.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

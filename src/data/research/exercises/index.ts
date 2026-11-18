@@ -32,10 +32,12 @@ import item_hip_thrust from './hip-thrust.json';
 import item_incline_bench_press from './incline-bench-press.json';
 import item_jumping_jacks from './jumping-jacks.json';
 import item_lat_pulldown from './lat-pulldown.json';
+import item_lateral_raise_cable_dumbbell from './lateral-raise-cable-dumbbell.json';
 import item_leg_curl from './leg-curl.json';
 import item_leg_extension_machine from './leg-extension-machine.json';
 import item_leg_press from './leg-press.json';
 import item_mountain_climbers from './mountain-climbers.json';
+import item_one_arm_dumbbell_row from './one-arm-dumbbell-row.json';
 import item_pec_deck from './pec-deck.json';
 import item_plank_and_side_plank from './plank-and-side-plank.json';
 import item_pull_up_bar from './pull-up-bar.json';
@@ -46,6 +48,7 @@ import item_roman_chair_back_extension from './roman-chair-back-extension.json';
 import item_rowing_machine from './rowing-machine.json';
 import item_seated_cable_row from './seated-cable-row.json';
 import item_setu_bandhasana_bridge_pose from './setu-bandhasana-bridge-pose.json';
+import item_shoulder_press_machine from './shoulder-press-machine.json';
 import item_skipping_rope from './skipping-rope.json';
 import item_smith_machine from './smith-machine.json';
 import item_stair_climber from './stair-climber.json';
@@ -57,6 +60,7 @@ import item_t_bar_row from './t-bar-row.json';
 import item_thoracic_rotation_chest_opener from './thoracic-rotation-chest-opener.json';
 import item_treadmill from './treadmill.json';
 import item_trikonasana_triangle_pose from './trikonasana-triangle-pose.json';
+import item_utkatasana_chair_pose from './utkatasana-chair-pose.json';
 import item_virabhadrasana_warrior_i_ii from './virabhadrasana-warrior-i-ii.json';
 import item_vrikshasana_tree_pose from './vrikshasana-tree-pose.json';
 import item_wall_sit from './wall-sit.json';
@@ -94,10 +98,12 @@ export const items: Exercise[] = [
   item_incline_bench_press as unknown as Exercise,
   item_jumping_jacks as unknown as Exercise,
   item_lat_pulldown as unknown as Exercise,
+  item_lateral_raise_cable_dumbbell as unknown as Exercise,
   item_leg_curl as unknown as Exercise,
   item_leg_extension_machine as unknown as Exercise,
   item_leg_press as unknown as Exercise,
   item_mountain_climbers as unknown as Exercise,
+  item_one_arm_dumbbell_row as unknown as Exercise,
   item_pec_deck as unknown as Exercise,
   item_plank_and_side_plank as unknown as Exercise,
   item_pull_up_bar as unknown as Exercise,
@@ -108,6 +114,7 @@ export const items: Exercise[] = [
   item_rowing_machine as unknown as Exercise,
   item_seated_cable_row as unknown as Exercise,
   item_setu_bandhasana_bridge_pose as unknown as Exercise,
+  item_shoulder_press_machine as unknown as Exercise,
   item_skipping_rope as unknown as Exercise,
   item_smith_machine as unknown as Exercise,
   item_stair_climber as unknown as Exercise,
@@ -119,6 +126,7 @@ export const items: Exercise[] = [
   item_thoracic_rotation_chest_opener as unknown as Exercise,
   item_treadmill as unknown as Exercise,
   item_trikonasana_triangle_pose as unknown as Exercise,
+  item_utkatasana_chair_pose as unknown as Exercise,
   item_virabhadrasana_warrior_i_ii as unknown as Exercise,
   item_vrikshasana_tree_pose as unknown as Exercise,
   item_wall_sit as unknown as Exercise,

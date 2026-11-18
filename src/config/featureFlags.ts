@@ -65,6 +65,8 @@ export const featureFlags = {
   vendorLinks: true,
   /** Day 15G1: Blinkit rows in that comparison. Stays OFF until Blinkit is hooked up. */
   vendorBlinkit: false,
+  /** Day 30: "What should I eat?" picks and a workout for today. ON. */
+  recommendations: true,
   /** Day 29: Charts and Prices views on the Track tab. ON. */
   trackCharts: true,
   /** Priority plan P1-b: Google sign-in inside the iPhone / Android dev build. Only shows when that platform's client ID is in .env. */

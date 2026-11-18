@@ -1,0 +1,665 @@
+{
+  "id": "utkatasana-chair-pose",
+  "number": 17,
+  "name": "Utkatasana (Chair pose)",
+  "otherNames": [
+    "Chair pose",
+    "Fierce pose",
+    "Powerful pose",
+    "Awkward chair pose"
+  ],
+  "section": "yoga_stretch",
+  "type": "yoga_asana",
+  "equipment": [
+    "mat (optional)",
+    "wall (optional)",
+    "sturdy chair (optional)",
+    "yoga block (optional)"
+  ],
+  "noEquipmentAlternative": "Wall chair pose or a hover over a sturdy chair with no equipment",
+  "musclesPrimary": [
+    "quadriceps (rectus femoris, vastus lateralis, vastus medialis, vastus intermedius)",
+    "gluteus maximus",
+    "calves (gastrocnemius, soleus)",
+    "tibialis anterior",
+    "erector spinae"
+  ],
+  "musclesSecondary": [
+    "hamstrings",
+    "hip adductors",
+    "transversus abdominis",
+    "obliques",
+    "deltoids",
+    "trapezius",
+    "serratus anterior"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 2.3,
+  "compendiumCode": "02150",
+  "metOptions": [
+    {
+      "code": "02150",
+      "met": 2.3,
+      "activity": "MET: 2.3, 2024 Adult Compendium of Physical Activities, code 02150, \"Yoga, Hatha\" (seen in the pacompendium.com conditioning-exercise table via search summary; neighbouring codes: 02153 Hatha high int"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 2,
+      "reps": "1 hold per round, shallow depth",
+      "timeSec": 25,
+      "restSec": 15,
+      "tempo": "exhale to bend, 5 slow breaths, inhale to stand",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 2,
+      "reps": "1 hold per round, wall version",
+      "timeSec": 30,
+      "restSec": 15,
+      "tempo": "6 slow breaths",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "relaxation",
+      "sets": 1,
+      "reps": "1 gentle hold, hands at the chest, then forward fold",
+      "timeSec": 15,
+      "restSec": 0,
+      "tempo": "3 slow breaths",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "1 hold per round",
+      "timeSec": 40,
+      "restSec": 15,
+      "tempo": "8 slow breaths",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "1 hold per round, block between thighs",
+      "timeSec": 50,
+      "restSec": 15,
+      "tempo": "10 slow breaths",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": 3,
+      "reps": "1 hold per round, deeper, arms overhead",
+      "timeSec": 60,
+      "restSec": 20,
+      "tempo": "10 to 12 slow breaths",
+      "perWeek": 4
+    },
+    {
+      "level": "advanced",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "1 hold per round, deep or twisting",
+      "timeSec": 75,
+      "restSec": 20,
+      "tempo": "12 to 15 slow breaths",
+      "perWeek": 4
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "hold_timer",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "knees_bent_enough",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": "<= 150",
+        "parsed": {
+          "op": "<=",
+          "value": 150,
+          "max": null
+        }
+      },
+      {
+        "name": "knees_not_too_deep",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": ">= 100",
+        "parsed": {
+          "op": ">=",
+          "value": 100,
+          "max": null
+        }
+      },
+      {
+        "name": "hips_back_enough",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": "<= 150",
+        "parsed": {
+          "op": "<=",
+          "value": 150,
+          "max": null
+        }
+      },
+      {
+        "name": "chest_not_folded_forward",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": ">= 80",
+        "parsed": {
+          "op": ">=",
+          "value": 80,
+          "max": null
+        }
+      },
+      {
+        "name": "hold_long_enough",
+        "joint": "time",
+        "angleDeg": "hold >= 10 s (position flag, not an angle)",
+        "parsed": null
+      }
+    ],
+    "minRepSec": 10
+  },
+  "formChecks": [
+    {
+      "joint": "knee",
+      "rule": "knee angle > 150 deg (equals knees_bent_enough phase threshold)",
+      "message": "Bend your knees a little more, sit your hips back"
+    },
+    {
+      "joint": "knee",
+      "rule": "knee angle < 100 deg (equals knees_not_too_deep phase threshold)",
+      "message": "Come up a little, keep your heels down"
+    },
+    {
+      "joint": "hip",
+      "rule": "hip angle > 150 deg (equals hips_back_enough phase threshold)",
+      "message": "Send your hips back and down"
+    },
+    {
+      "joint": "hip",
+      "rule": "hip angle < 80 deg (equals chest_not_folded_forward phase threshold)",
+      "message": "Lift your chest, keep your back long"
+    },
+    {
+      "joint": "time",
+      "rule": "hold shorter than 10 s (equals min_rep_sec and hold_long_enough)",
+      "message": "Stay a little longer, breathe slowly"
+    },
+    {
+      "joint": "ankle",
+      "rule": "heels lift off the floor or knees collapse inward (position flag, not an angle)",
+      "message": "Press the heels down, knees over the toes"
+    }
+  ],
+  "safetyFlags": [
+    "stop_at_joint_pain_no_knee_pain",
+    "weight_in_heels_knees_over_second_toe",
+    "knee_injury_or_arthritis_shallow_or_avoid_ask_doctor",
+    "do_not_over_arch_lower_back",
+    "lower_back_pain_shallow_lower_belly_in",
+    "shoulder_strain_hands_at_chest",
+    "hypertension_short_holds_no_breath_holding",
+    "heart_disease_ask_doctor",
+    "pregnancy_ask_doctor_wide_stance_wall_only_if_cleared",
+    "osteoporosis_ask_doctor",
+    "headache_dizziness_stop_and_rest",
+    "recent_surgery_ask_doctor",
+    "rise_slowly_on_an_inhale"
+  ],
+  "progressions": [
+    "Deeper bend with weight still in the heels",
+    "Block between the thighs and arms overhead",
+    "Longer hold or twisting chair (est.; intermediate to advanced, healthy knees and spine)"
+  ],
+  "regressions": [
+    "Shallow chair with hands on the hips",
+    "Wall chair with the back supported",
+    "Chair-touch hover over a sturdy chair"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "start in Tadasana, feet hip-width, weight in the heels",
+      "textOverlay": "Stand tall, heels heavy."
+    },
+    {
+      "seconds": 6,
+      "angle": "front, 2 m",
+      "shows": "feet hip-width, knees over the second toe",
+      "textOverlay": "Knees over second toe."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "hips send back and down, spine long",
+      "textOverlay": "Sit back like onto a chair."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "hold with arms overhead, steady breathing",
+      "textOverlay": "Breathe slow, 5 breaths."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "wall version, feet 2 feet out, back touching",
+      "textOverlay": "Back on the wall, feet out."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "chair-touch: hips hover over a sturdy chair",
+      "textOverlay": "Hover over the chair."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "wrong (heels lifting, back arched) vs right",
+      "textOverlay": "Heels down, lower belly in."
+    },
+    {
+      "seconds": 6,
+      "angle": "front, 2 m",
+      "shows": "wrong (knees caving in) vs right; block between thighs",
+      "textOverlay": "Knees out, over the toes."
+    }
+  ],
+  "lastResearched": "2026-11-18",
+  "setupSteps": [
+    "Warm up first. 1 to 3 minutes of ankle circles, gentle hip hinges and a few easy mini-squats (see Bodyweight squat, Home 1) or one round of Tadasana breathing.",
+    "Floor. Flat, non-slip mat or bare floor with grip; avoid slippery socks on tiles.",
+    "Stand in Tadasana. Feet together (big toes touching, heels slightly apart) for the classic form, or hip-width (about two fists apart, est.) for steadier balance and easier knees. Beginners should start hip-width.",
+    "Weight. Spread the weight evenly over the whole foot, then shift it slightly back toward the heels.",
+    "Support (optional). Wall: stand with the back to the wall and walk the feet about 2 feet (60 cm) out, so the pelvis, ribs and shoulders can touch as you bend; farther from the wall makes it deeper (teaching sources, snippets). Chair: stand in front of a sturdy chair with the seat behind you, hips hovering just above or lightly touching the seat. Block: hold between the thighs for alignment.",
+    "Arms. Beginners start with hands together at the chest or hands on the hips; raise the arms overhead only if the shoulders are comfortable.",
+    "Clothing. Stretchy pants; no tight jeans; fitted top so the camera sees the shoulders and hips.",
+    "Camera. Phone on a stool or shelf at about hip height, 2 to 2.5 m to the side, so the whole body from head to feet is in frame (see sections 11 and 12)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Stand tall",
+      "action": "stand in Tadasana, feet hip-width, arms by the sides.",
+      "feel": "the whole sole of each foot pressing down, spine long.",
+      "breathing": "2 slow breaths.",
+      "tempo": "6 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Set the weight",
+      "action": "feel the weight settle into the heels without lifting the toes.",
+      "feel": "the arches lifting a little, the toes spread and relaxed.",
+      "breathing": "steady.",
+      "tempo": "3 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Soften the knees",
+      "action": "bend the knees a small amount first (a shallow chair).",
+      "feel": "the front of the thighs switching on lightly.",
+      "breathing": "breathe out as you bend.",
+      "tempo": "2 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Send the hips back and down",
+      "action": "sit the hips back and down as if lowering onto a low chair, keeping the spine long and the chest lifted.",
+      "feel": "the buttocks and thighs working; the weight staying in the heels.",
+      "breathing": "slow out-breath.",
+      "tempo": "3 to 4 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Draw the lower belly in",
+      "action": "gently draw the lower belly in and up to support the lower back; keep the ribs soft, not flaring.",
+      "feel": "a light brace around the waist, no big arch in the lower back.",
+      "breathing": "steady.",
+      "tempo": "2 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Check the knees",
+      "action": "knees over the second toe, hip-width, not caving in. A block between the thighs can help.",
+      "feel": "inner thighs lightly working.",
+      "breathing": "steady.",
+      "tempo": "2 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Bring the arms up (optional)",
+      "action": "on an in-breath, reach the arms forward and up beside the ears, palms facing in, or keep hands at the chest.",
+      "feel": "shoulders away from the ears, ribs not pushed forward.",
+      "breathing": "in-breath while lifting.",
+      "tempo": "2 to 3 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Hold",
+      "action": "stay with a slow, even nose breath. Beginners about 5 breaths (about 25 seconds, est.); sources range from a few breaths to 30 to 60 seconds.",
+      "feel": "steady burn in the thighs, no pain in the knees or lower back.",
+      "breathing": "slow nose breaths, count each out-breath; never hold the breath.",
+      "tempo": "15 to 30 seconds (est.).",
+      "visualCheck": null
+    },
+    {
+      "n": 9,
+      "part": null,
+      "title": "Stand up",
+      "action": "on an in-breath, press through the heels and straighten the legs, arms coming down (or staying up if the shoulders are fine).",
+      "feel": "thighs and buttocks driving the lift.",
+      "breathing": "in-breath rising.",
+      "tempo": "3 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 10,
+      "part": null,
+      "title": "Rest",
+      "action": "shake out the legs, stand in Tadasana or fold forward gently with bent knees.",
+      "feel": "the thighs soft and loose.",
+      "breathing": "3 slow breaths.",
+      "tempo": "10 to 15 seconds between rounds.",
+      "visualCheck": "standing tall, balanced."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Lifting the heels or tipping onto the toes",
+      "text": "Lifting the heels or tipping onto the toes. It loads the front of the knees and ruins balance. Fix: shift the weight back, wiggle the toes, and sit the hips farther back."
+    },
+    {
+      "title": "Knees caving in",
+      "text": "Knees caving in. It stresses the inside of the knee. Fix: knees over the second toe; squeeze a block lightly between the thighs."
+    },
+    {
+      "title": "Pushing the knees far forward past the toes",
+      "text": "Pushing the knees far forward past the toes. Sources disagree on whether this is harmful, but it commonly means the hips are not sent back and the load shifts to the knee joint. Fix: send the hips back, soften the bend, hinge forward from the hips, and keep the heels down."
+    },
+    {
+      "title": "Over-arching the lower back",
+      "text": "Over-arching the lower back. Pushing the tailbone out and the ribs forward compresses the lower back. Fix: draw the lower belly in and up, tailbone slightly down."
+    },
+    {
+      "title": "Rounding the back or collapsing the chest",
+      "text": "Rounding the back or collapsing the chest. It loses the point of the pose. Fix: lift the chest, keep the spine long, and lean forward from the hips only."
+    },
+    {
+      "title": "Shrugging the shoulders or looking up with the chin lifted",
+      "text": "Shrugging the shoulders or looking up with the chin lifted. It strains the neck. Fix: shoulders down, gaze forward."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. It raises effort and blood pressure. Fix: slow nose breathing for the whole hold; Harvard Health advises coming out of a pose briefly if held longer than about 10 seconds with high blood pressure (snippet)."
+    },
+    {
+      "title": "Going too deep too soon",
+      "text": "Going too deep too soon. Knee or thigh pain follows. Fix: shallow depth, use the wall or chair, add depth gradually."
+    },
+    {
+      "title": "Standing up fast",
+      "text": "Standing up fast. Dizziness can follow. Fix: rise slowly on an in-breath."
+    }
+  ],
+  "safetyNotes": [
+    "Moderate effort, never joint pain. Stop at pain in the knee, back, hip or shoulder.",
+    "Knees: keep the weight in the heels, knees over the second toe, and do not collapse inward. Sources advise avoiding or going very shallow with chronic knee pain, arthritis, damaged ligaments or a recent knee, ankle or foot injury (snippets; one gives under two months as a caution). Use a shallow depth or the wall, and ask a doctor or physio.",
+    "Lower back: do not over-arch; draw the lower belly in and keep the spine long. Stop if pain spreads or leg tingling or numbness appears.",
+    "Shoulders: skip the overhead arms if the shoulders are sore; keep hands at the chest.",
+    "Blood pressure and heart: Harvard Health says blood pressure rises during yoga, especially with quick movement or longer holds, and advises moving slowly between poses and briefly coming out of a pose if held longer than about 10 seconds (snippet; chair pose not discussed). Sustained isometric effort and breath-holding are plausible raisers of blood pressure (our inference, not a source statement). Use short holds, never hold the breath, rise slowly.",
+    "Dizziness or headache: a few sources list headache or insomnia as cautions for the pose (snippet). Stop, rest and sit down.",
+    "Stop immediately if you feel: sharp knee or back pain, numbness or tingling, dizziness, chest pain or breathlessness, a pop or pull.",
+    "Spotter: not needed. Gym etiquette: keep the mat and block out of the walkway; do not take the only mat in a crowded stretching area for long."
+  ],
+  "sources": [
+    "Ministry of AYUSH Common Yoga Protocol (CYP): standing postures listed as Tadasana, Vrikshasana, Padahastasana with Uttanasana, Ardha Chakrasana and Trikonasana; Utkatasana not seen in the list (search summaries only; official PDF text not opened): https://yogamdniy.nic.in/ckfinder/userfiles/files/IDY_2025_Handbook_2_0_English.pdf ; https://new1.isro.gov.in/media_isro/pdf/CYP%20english.pdf ; https://www.mea.gov.in/images/pdf/common-yoga-protocol-english.pdf ; https://mea.gov.in/images/attach/Booklet_english_2016.pdf ; https://www.indoindians.com/42-yoga-poses-of-common-yoga-protocol-of-international-day-of-yoga/ ; https://www.artofliving.org/standing-yoga-postures",
+    "Ekhart Yoga chair pose pages (technique and cues; snippets): https://ekhartyoga.com/more-yoga/yoga-poses/chair-pose-powerful-pose ; https://www.ekhartyoga.com/resources/yoga-poses/chair-pose-powerful-pose",
+    "Yoga Journal chair pose pages (weight in the heels, a few breaths; only partial text seen): https://www.yogajournal.com/practice/beginners/how-to/chair-pose/ ; https://www.yogajournal.com/poses/types/standing/chair-pose-2/",
+    "Yoga U Online chair pose and wall-variation pages (alignment, wall version; snippets): https://yogauonline.com/pose-library/yoga-strength-building-add-oomph-to-chair-pose-with-these-wall-variations/ ; https://yogauonline.com/?p=170515",
+    "Brett Larkin, Liforme, Inside Yoga, Yoga Matters and Be Yogi chair pose pages (technique, variations, cautions; snippets): https://www.brettlarkin.com/chair-pose-utkatasana/ ; https://liforme.com/blog/chair-pose-utkatasana/ ; https://insideyoga.org/asana-library/utkatasana/ ; https://www.yogamatters.com/blogs/pose-library/chair-pose-utkatasana ; https://beyogi.com/poses/chair-pose/",
+    "Yoga International (knees past toes, adapting yoga for knee issues; mythology of Utkatasana; snippets): https://yogainternational.com/article/view/adapting-yoga-for-knee-issues-alignment-tips-and-best-practices ; https://yogainternational.com/article/view/the-mythology-behind-utkatasana-chair-pose-fierce-pose",
+    "Peloton chair pose article (knees past ankles and toes; snippet): https://onepeloton.com/blog/chair-pose",
+    "Liu et al., 2021, IJERPH 18(16):8402, lower limb biomechanics and EMG in five standing yoga poses including Chair (11 instructors; summaries only): https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8391656/ ; https://www.pubmed.gov/34444151/",
+    "Indian teaching and health pages on benefits and precautions (knee, ankle, shoulder, headache cautions; snippets; weakly supported claims treated as unproven): https://www.rishikulyogshalarishikesh.com/blog/utkatasana-chair-pose ; https://www.truemeds.in/blog/utkatasana-benefits-how-to-do-chair-pose ; https://www.godigit.com/healthy-living/health-benefits-of-utkatasana ; https://hariomyogavidyaschool.com/?p=896",
+    "Harvard Health, yoga and high blood pressure (blood pressure rises with longer holds; move slowly; snippet): https://www.health.harvard.edu/heart-health/yoga-and-high-blood-pressure",
+    "Prenatal chair pose pages (wide stance, wall, block; snippets): https://prenatalyogacenter.com/chair-pose-utkatasana-strengthening-and-endurance-for-pregnant-students ; https://www.sheknows.com/parenting/articles/2025934/prenatal-yoga/",
+    "Knee osteoarthritis chair yoga (131 older adults; snippet via Healthline) and PT-oriented handout (snippet): https://www.healthline.com/health-news/knee-osteoarthritis-yoga-may-offer-pain-relief-improve-physical-function ; https://dptcapstone.web.unc.edu/2020/04/17/integrating-yoga-and-physical-therapy-for-the-management-of-knee-osteoarthritis/",
+    "Herrmann SD et al., 2024 Adult Compendium of Physical Activities (02150 Yoga, Hatha 2.3; seen via search snippet): https://pacompendium.com/conditioning-exercise ; https://pacompendium.com/wp-content/uploads/2024/01/2024-adult-compendium_1_2024.pdf ; https://pubmed.ncbi.nlm.nih.gov/38242596/",
+    "Condition sources (general, from earlier items): ADA PMC5317029: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/ ; PCOS position statement: https://researchers.westernsydney.edu.au/en/publications/exercise-in-the-management-of-polycystic-ovary-syndrome-a-positio/ ; Marshfield Clinic asthma: https://shine365.marshfieldclinic.org/wellness/asthma-exercise/ ; ECU Health asthma: https://healthlibrary.ecuhealth.org/lung-health/management/asthma-management-exercise-safety",
+    "Hold time: a few breaths, 30 to 60 seconds, or one breath in a dynamic class. We chose about 5 breaths (about 25 s, est.).",
+    "Knees past toes: a long-standing cue versus research-based views that allow it. We chose weight in the heels, knees over the second toe, hips back, and no hard rule.",
+    "Feet together or hip-width: classical versus modern teaching. We chose hip-width for beginners.",
+    "Arms: overhead versus hands at the chest. We chose hands at the chest for beginners.",
+    "Low blood pressure: allowed with slow rising versus listed as a caution. We chose \"rise slowly\".",
+    "Not found: official CYP or MDNIY text for Utkatasana (it appeared not to be a CYP posture, but only from summaries); a chair-pose-specific MET; measured joint-angle norms for the held yoga pose; the full text of the Liu et al. 2021 EMG values; clinical sources for osteoporosis, postpartum, thyroid, cholesterol and heart disease for this pose; ACOG wording; a direct comparison with the bodyweight squat. Our thresholds are estimates.",
+    "Most pages were seen only as search snippets or summaries; direct page fetches were not possible."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 43.5,
+      "70kg": 37.3,
+      "80kg": 32.6
+    },
+    "per300kcal": {
+      "60kg": 130.4,
+      "70kg": 111.8,
+      "80kg": 97.8
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "yoga",
+    "mobility",
+    "strength_endurance",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "small_flat",
+    "quiet",
+    "3_6_min",
+    "warm_up",
+    "finisher",
+    "morning",
+    "evening",
+    "knee_friendly_modified"
+  ],
+  "swapsByAccess": {
+    "none": "Wall chair pose, chair-touch hover, or Bodyweight squat (Home 1)",
+    "home_equipment": "Block between the thighs or sturdy chair; dumbbell goblet squat (Home 15) for the strength version",
+    "basic_gym": "Floor mat area with a wall; bench for the chair-touch; leg press (Gym 10) for the strength version",
+    "full_gym": "Studio mat area with wall and block; leg press (Gym 10) or hack squat (Gym 13) for the strength version"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "Short holds, slow movement, never hold the breath, rise slowly; ask a doctor if on medicine",
+      "source": "Harvard Health, Yoga and high blood pressure (snippet); Not found (chair-pose-specific)"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "modify",
+      "change": "Check feet; eat first if on glucose-lowering medicine; rise slowly; ask a doctor",
+      "source": "ADA PMC5317029 (general); Not found (pose-specific)"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "Personal clearance needed; if cleared, short holds, shallow depth, no breath-holding",
+      "source": "Not found (pose-specific); Harvard Health (general, snippet)"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "No change (source not found)",
+      "source": "Not found"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Wall or chair support, shallow depth, grip mat, shorter holds, rise slowly",
+      "source": "Not found (pose-specific)"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "No pose-specific caution found",
+      "source": "PCOS exercise position statement (general); Not found (pose-specific)"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "No clinical caution found",
+      "source": "Not found"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Reliever inhaler nearby; slow breathing; stop if wheezing",
+      "source": "Marshfield Clinic and ECU Health asthma exercise-safety pages (general)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Shallow depth, wall or chair support, block between the knees; stop if the knee hurts; avoid with recent injury or ligament damage and ask a doctor",
+      "source": "Chair yoga study via Healthline (snippet); PT-oriented handout (snippet); Not found (clinical guideline for Chair pose)"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Shallow depth, long spine, lower belly drawn in, wall support; ask a doctor or physio for spinal conditions",
+      "source": "Teaching sources (snippets); Not found (clinical)"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "modify",
+      "change": "Hands at the chest or on the hips instead of arms overhead",
+      "source": "Teaching sources (snippets); Not found (clinical)"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "ask_doctor",
+      "change": "Ask a doctor; keep a long spine, no force",
+      "source": "Not found"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "ask_doctor",
+      "change": "Wide stance, less depth, wall or chair support, block between thighs, only if a midwife or doctor agrees",
+      "source": "Prenatal Yoga Center and SheKnows (snippets); Not found (ACOG)"
+    },
+    {
+      "condition": "postpartum",
+      "status": "modify",
+      "change": "Start gently after clearance; shallow depth; stop if pelvic or abdominal pain or leaking",
+      "source": "Not found"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Follow the surgeon's advice; knee, hip, back and abdominal surgery especially",
+      "source": "Not found"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "home",
+      "office_desk"
+    ],
+    "bodyRegion": [
+      "lower",
+      "core"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "endurance",
+      "strength",
+      "relaxation"
+    ],
+    "intensity": "light",
+    "noise": "quiet",
+    "space": "mat_only",
+    "typicalMinutes": 5,
+    "kcalPer10min70kg": 27,
+    "difficulty1to5": 3,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Yoga & stretch",
+    "Home",
+    "Office desk",
+    "No equipment",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Yoga",
+    "Legs",
+    "Glutes",
+    "Back",
+    "Hold timer",
+    "Under 10 min"
+  ],
+  "needsReview": [
+    "rep_counter phase \"hold_long_enough\" (time): angle \"hold >= 10 s (position flag, not an angle)\" is not a parseable angle"
+  ],
+  "versions": [
+    {
+      "date": "2026-11-18",
+      "file": "FitPlate_Fitness_2026-11-18.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}
