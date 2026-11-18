@@ -10,9 +10,12 @@
 - **A workout for today**: one routine chosen from the ready-made and your own routines by where you train, session length, experience, gentle evenings, an easier day after hard days, what is on your plan today, and the research safety checks (anything avoid, ask-doctor or unresearched for your answers is left out; people whose conditions need a doctor see only gentle options). After enough movement today it suggests a stretch.
 - Logic is a pure module (`src/services/recommend.ts`) with 22 tests that run it across profiles (diet, allergy, goal, time, budget, level, late night, over goal, nutrient gap, recent dish, workout cases).
 
+## 2b. REVIEW FIX (supervisor review 18 Nov, FIX 1, relayed by the coordinator): done
+Cause: dish files list the daily reference values behind the %DV column in one sentence ("rounded reference values used: energy 2,110 kcal, protein 54 g, fibre 30 g ..."), and the nutrition parser read that sentence before the table. Fix in `parseNutrition` (`src/services/data/dishImporter.ts`): the reference sentence is removed before parsing, a two-column table row ("| Protein | ~12.5 g (est.) | ~23% |") now wins over loose mentions, and an "| Energy | ~305 kcal |" row is read. Two new tests. After a rebuild of all dishes from the research files: dal tadka 12.5 g protein and 6.5 g fibre, chole 13.5 and 11, rajma chawal 18.5 and 12, veg fried rice 8 and 4.5, veg hakka noodles 12.5 and 5.5. No other dish has protein over 40 g (tandoori chicken 40 g is right). The 45 g suggestion guard stays as a safety net. Meals people already logged keep the number saved at logging time (a logged value is the person's own record and is not rewritten); new logs use the correct values.
+
 ## 3. DATA SYNC REPORT
 Full report: sync30.md (scratchpad). Dishes: 0 new (103 in app). Ingredients: 0 new (179). Nutrients: 3 new items (guidance on micronutrient deficiencies in India, guidance on vegetarian and vegan nutrient gaps, irritable bowel syndrome profile), 53 in app. Fitness: 4 new exercises (one-arm dumbbell row, utkatasana chair pose, shoulder press machine, lateral raise), 68 in app. No invalid files.
-**Research data slip found (for the research owners):** dishes 005 dal tadka (305 kcal), 008 chole (355 kcal) and 012 rajma chawal (540 kcal) carry 54 g protein, and 005 and 008 also 30 g fibre (012: 40 g). The merge kept the newer research version (2026-11-01) over 12.5 g. These are not plausible for one serving. The app now ignores any single-serving protein over 45 g or over 60 percent of its calories when recommending (`plausibleProtein`), but the dish pages still show the bundled numbers until research corrects them.
+**Data slip found (fixed in 2b; it was an importer bug, not a research error):** dishes 005 dal tadka (305 kcal), 008 chole (355 kcal) and 012 rajma chawal (540 kcal) carry 54 g protein, and 005 and 008 also 30 g fibre (012: 40 g). The merge kept the newer research version (2026-11-01) over 12.5 g. These are not plausible for one serving. The app now ignores any single-serving protein over 45 g or over 60 percent of its calories when recommending (`plausibleProtein`), but the dish pages still show the bundled numbers until research corrects them.
 
 ## 4. SNAPSHOT
 Not an integration day, so no snapshot. Next one: Day 37 (final integration).
@@ -40,7 +43,7 @@ None added.
 3. Change your diet or goal in Profile and open the screen again: the picks change.
 
 ## 11. KNOWN ISSUES
-- Dishes 005, 008 and 012 still show 54 g protein on their own pages (research data slip, see section 3).
+- Meals logged before the 18 Nov fix keep the 54 g protein that was saved with them (see 2b).
 - Only dishes with a researched calorie value are suggested; AI-made dishes can appear if they meet every rule.
 - The workout pick uses the six ready-made routines plus your own; there is no suggestion built from single exercises yet.
 - The pantry is not used yet (idea 31c).

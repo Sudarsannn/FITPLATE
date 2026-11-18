@@ -174,6 +174,25 @@ const INGREDIENT_FILE = `Based on: FitPlate_Dishes_2026-10-04.md
 \`\`\`
 `;
 
+describe('parseNutrition reference values (review 18 Nov FIX 1)', () => {
+  const body = [
+    'Dal only. %DV is against ICMR-NIN 2020 (rounded reference values used: energy 2,110 kcal, protein 54 g, fibre 30 g, calcium 1,000 mg).',
+    '| Nutrient | Amount | % daily value (est.) | Main contributing ingredient |',
+    '|---|---|---|---|',
+    '| Energy | ~305 kcal (est.) | ~14% | Toor dal |',
+    '| Protein | ~12.5 g (est.) | ~23% | Toor dal |',
+    '| Carbohydrate | ~36 g (est.) | Not set | Toor dal |',
+    '| Fibre | ~6.5 g (est.) | ~22% | Toor dal |',
+    '| Fat | ~11 g (est.) | Not set | Ghee |',
+  ].join('\n');
+  it('reads the dish values, not the daily reference values', () => {
+    expect(parseNutrition(body)).toEqual({ kcal: 305, proteinG: 12.5, carbsG: 36, fatG: 11, fibreG: 6.5 });
+  });
+  it('still ignores the reference sentence when it is the only mention', () => {
+    expect(parseNutrition('(rounded reference values used: protein 54 g, fibre 30 g)\n| Energy | ~305 kcal | ~14% |').proteinG).toBeNull();
+  });
+});
+
 describe('markdown helpers', () => {
   it('reads durations and timers', () => {
     expect(minutes('about 1 hr 40 min (incl. marination)')).toBe(100);

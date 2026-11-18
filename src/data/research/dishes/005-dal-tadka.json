@@ -438,10 +438,10 @@
   ],
   "nutritionPerServing": {
     "kcal": 305,
-    "proteinG": 54,
+    "proteinG": 12.5,
     "carbsG": 36,
-    "fatG": 22,
-    "fibreG": 30
+    "fatG": 11,
+    "fibreG": 6.5
   },
   "microNutrientsEstimate": {
     "values": {
@@ -698,7 +698,6 @@
     "North Indian",
     "Under 60 min",
     "Beginner",
-    "High protein",
     "High fibre"
   ],
   "description": "Family: dal-tadka",
@@ -716,7 +715,7 @@
     }
   ],
   "mergeMethod": {
-    "nutritionPerServing": "stable (single)",
+    "nutritionPerServing": "stable (mean-2)",
     "orderPrice": "price engine (wma)",
     "ingredients": "newest",
     "steps": "newest",
@@ -726,9 +725,6 @@
     "tags": "tag engine (tags.ts) on the merged dish"
   },
   "mergeNotes": [
-    "nutritionPerServing.proteinG: Versions 2026-10-04 (12.5) and 2026-11-01 (54) differ by more than 25%; kept the newer.",
-    "nutritionPerServing.fatG: Versions 2026-10-04 (11) and 2026-11-01 (22) differ by more than 25%; kept the newer.",
-    "nutritionPerServing.fibreG: Versions 2026-10-04 (6.5) and 2026-11-01 (30) differ by more than 25%; kept the newer.",
     "price flag: narrowed",
     "Range 126.2–219.7 was wider than 30% of avg 172.4; narrowed to ±15%.",
     "2026-10-04: hing: compounded hing usually contains wheat flour",

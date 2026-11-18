@@ -391,10 +391,10 @@
   ],
   "nutritionPerServing": {
     "kcal": 395,
-    "proteinG": 54,
+    "proteinG": 8,
     "carbsG": 67,
-    "fatG": 22,
-    "fibreG": 30
+    "fatG": 10.5,
+    "fibreG": 4.5
   },
   "microNutrientsEstimate": {
     "values": {
@@ -666,9 +666,7 @@
     "Dinner",
     "Indo-Chinese",
     "Under 30 min",
-    "Beginner",
-    "High protein",
-    "High fibre"
+    "Beginner"
   ],
   "description": "Family: fried-rice",
   "familyId": "fried-rice",
@@ -712,7 +710,7 @@
     }
   ],
   "mergeMethod": {
-    "nutritionPerServing": "stable (single)",
+    "nutritionPerServing": "stable (mean-2)",
     "orderPrice": "price engine (spike-blend)",
     "ingredients": "newest",
     "steps": "newest",
@@ -722,9 +720,6 @@
     "tags": "tag engine (tags.ts) on the merged dish"
   },
   "mergeNotes": [
-    "nutritionPerServing.proteinG: Versions 2026-10-05 (8) and 2026-11-03 (54) differ by more than 25%; kept the newer.",
-    "nutritionPerServing.fatG: Versions 2026-10-05 (10.5) and 2026-11-03 (22) differ by more than 25%; kept the newer.",
-    "nutritionPerServing.fibreG: Versions 2026-10-05 (4.5) and 2026-11-03 (30) differ by more than 25%; kept the newer.",
     "price flag: possible-spike",
     "price flag: narrowed",
     "Possible spike: latest avg 230 (2026-11-03) moved more than 35% from the previous estimate; using the halfway point.",

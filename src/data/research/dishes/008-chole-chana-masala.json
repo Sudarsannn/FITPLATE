@@ -471,10 +471,10 @@
   ],
   "nutritionPerServing": {
     "kcal": 355,
-    "proteinG": 54,
+    "proteinG": 13.5,
     "carbsG": 47,
-    "fatG": 22,
-    "fibreG": 30
+    "fatG": 14,
+    "fibreG": 11
   },
   "microNutrientsEstimate": {
     "values": {
@@ -748,7 +748,6 @@
     "Punjabi",
     "Under 60 min",
     "Beginner",
-    "High protein",
     "High fibre"
   ],
   "description": "Family: chole",
@@ -793,7 +792,7 @@
     }
   ],
   "mergeMethod": {
-    "nutritionPerServing": "stable (single)",
+    "nutritionPerServing": "stable (mean-2)",
     "orderPrice": "price engine (wma)",
     "ingredients": "newest",
     "steps": "newest",
@@ -803,9 +802,6 @@
     "tags": "tag engine (tags.ts) on the merged dish"
   },
   "mergeNotes": [
-    "nutritionPerServing.proteinG: Versions 2026-10-05 (13.5) and 2026-11-03 (54) differ by more than 25%; kept the newer.",
-    "nutritionPerServing.fatG: Versions 2026-10-05 (14) and 2026-11-03 (22) differ by more than 25%; kept the newer.",
-    "nutritionPerServing.fibreG: Versions 2026-10-05 (11) and 2026-11-03 (30) differ by more than 25%; kept the newer.",
     "price flag: narrowed",
     "Range 163.8–273.7 was wider than 30% of avg 227.1; narrowed to ±15%."
   ]

@@ -532,10 +532,10 @@
   ],
   "nutritionPerServing": {
     "kcal": 540,
-    "proteinG": 54,
+    "proteinG": 18.5,
     "carbsG": 92,
     "fatG": 12,
-    "fibreG": 40
+    "fibreG": 12
   },
   "microNutrientsEstimate": {
     "values": {
@@ -847,7 +847,7 @@
     }
   ],
   "mergeMethod": {
-    "nutritionPerServing": "stable (single)",
+    "nutritionPerServing": "stable (mean-2)",
     "orderPrice": "price engine (wma)",
     "ingredients": "newest",
     "steps": "newest",
@@ -857,8 +857,6 @@
     "tags": "tag engine (tags.ts) on the merged dish"
   },
   "mergeNotes": [
-    "nutritionPerServing.proteinG: Versions 2026-10-06 (18.5) and 2026-11-05 (54) differ by more than 25%; kept the newer.",
-    "nutritionPerServing.fibreG: Versions 2026-10-06 (12) and 2026-11-05 (40) differ by more than 25%; kept the newer.",
     "price flag: narrowed",
     "Range 186.7–313.3 was wider than 30% of avg 246.7; narrowed to ±15%.",
     "recipe changed materially between 2026-10-06 and 2026-11-05; newest recipe used"

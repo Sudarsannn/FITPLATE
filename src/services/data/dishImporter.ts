@@ -167,18 +167,27 @@ function parseSteps(body: string): DishStep[] {
  * The per-ingredient table comes after the totals, so the first match wins.
  */
 export function parseNutrition(body: string): Macros {
-  const text = plain(body);
+  // Some files list the daily reference values used for the %DV column ("protein 54 g, fibre 30 g, ...").
+  // Those are not the dish's own amounts, so they are removed before anything is read (review 18 Nov FIX 1).
+  const text = plain(body).replace(/\(\s*rounded reference values used:[^)]*\)/gi, '');
   const kcal = /(?:Total(?:\s*\((?:[^()]|\([^()]*\))*\))?:\s*(?:about|~|≈)?\s*|Calories\s*(?:\(kcal\))?\s*[:|]\s*(?:about|~|≈)?\s*)([\d,]+(?:\.\d+)?)\s*kcal/i.exec(text);
   // Newer files give one table row per nutrient: "| Energy (kcal) | ~290 | 14% |", "| Protein (g) | ~8.5 | 16% |".
   const row = (label: string) => {
     const m = new RegExp(`\\|\\s*(?:${label})\\s*\\(g\\)\\s*\\|\\s*(?:about|~|≈)?\\s*(\\d+(?:\\.\\d+)?)`, 'i').exec(text);
     return m ? num(m[1]) : null;
   };
+  // A two-column table row ("| Protein | ~12.5 g (est.) | ~23% |") is the dish's own figure and beats any loose mention.
+  const cell = (label: string) => {
+    const m = new RegExp(`\\|\\s*(?:${label})\\s*\\|\\s*(?:about|~|≈)?\\s*(\\d+(?:\\.\\d+)?)\\s*g\\b`, 'i').exec(text);
+    return m ? num(m[1]) : null;
+  };
   const grams = (label: string) => {
+    const c = cell(label);
+    if (c != null) return c;
     const m = new RegExp(`\\b(?:${label})\\b[^0-9\\n|]*\\|?\\s*(?:about|~|≈)?\\s*(\\d+(?:\\.\\d+)?)\\s*g\\b`, 'i').exec(text);
     return row(label) ?? (m ? num(m[1]) : null);
   };
-  const energyRow = /\|\s*Energy\s*\(kcal\)\s*\|\s*(?:about|~|≈)?\s*([\d,]+(?:\.\d+)?)/i.exec(text);
+  const energyRow = /\|\s*Energy\s*(?:\(kcal\))?\s*\|\s*(?:about|~|≈)?\s*([\d,]+(?:\.\d+)?)/i.exec(text);
   return {
     kcal: kcal ? num(kcal[1]) : energyRow ? num(energyRow[1]) : null,
     proteinG: grams('Protein'),
