@@ -21,6 +21,14 @@
         "avg": 120,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
+      },
+      {
+        "date": "2026-11-19",
+        "min": 100,
+        "max": 120,
+        "avg": 115,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-19.md"
       }
     ],
     "currentEstimate": {
@@ -29,20 +37,20 @@
       "avg": 115
     },
     "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-29",
+    "trend": "stable",
+    "change30dPct": 15.1,
+    "lastObserved": "2026-11-19",
     "stale": false,
     "seasonal": false,
-    "listingCount": 9,
+    "listingCount": 3,
     "platforms": [
-      "Amazon",
-      "BigBasket",
-      "Blinkit"
+      "BigBasket"
     ],
     "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "confirmed": false,
+    "checkNotes": [
+      "only 1 platform (BigBasket) backs the range"
+    ]
   },
   "per100Estimate": {
     "min": 9.5,
@@ -271,10 +279,10 @@
   ],
   "usedIn": [
     {
-      "dishNumber": 88,
-      "quantity": 25,
+      "dishNumber": 48,
+      "quantity": 20,
       "unit": "g",
-      "raw": "25 g per serving (4–5 beans)"
+      "raw": "20 g per serving (about 4 beans, cut in 2 cm pieces)"
     }
   ],
   "versions": [
@@ -285,6 +293,10 @@
     {
       "date": "2026-10-29",
       "file": "FitPlate_Ingredients_2026-10-29.md"
+    },
+    {
+      "date": "2026-11-19",
+      "file": "FitPlate_Ingredients_2026-11-19.md"
     }
   ],
   "mergeMethod": {
@@ -300,6 +312,6 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 95.5–163.3 was wider than 30% of avg 113.3; narrowed to ±15%."
+    "Range 97.3–146.5 was wider than 30% of avg 114.0; narrowed to ±15%."
   ]
 }

@@ -23,23 +23,30 @@
         "avg": 90,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
+      },
+      {
+        "date": "2026-11-19",
+        "min": 40,
+        "max": 105,
+        "avg": 70,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-19.md"
       }
     ],
     "currentEstimate": {
-      "min": 74,
-      "max": 100,
-      "avg": 87
+      "min": 68,
+      "max": 92,
+      "avg": 80
     },
     "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-29",
+    "trend": "stable",
+    "change30dPct": -3.5,
+    "lastObserved": "2026-11-19",
     "stale": false,
     "seasonal": false,
-    "listingCount": 6,
+    "listingCount": 4,
     "platforms": [
       "BigBasket",
-      "Blinkit",
       "Swiggy Instamart"
     ],
     "outOfStock": false,
@@ -47,9 +54,9 @@
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 7.4,
-    "max": 10,
-    "avg": 8.7
+    "min": 6.8,
+    "max": 9.2,
+    "avg": 8
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -274,23 +281,23 @@
       "vendor": "instamart",
       "product": "small green capsicum, 250 g",
       "pack": "250 g",
-      "priceMinInr": 16,
-      "priceMaxInr": 16,
-      "observedOn": "2026-10-29"
+      "priceMinInr": 26,
+      "priceMaxInr": 26,
+      "observedOn": "2026-11-19"
     }
   ],
   "usedIn": [
     {
-      "dishNumber": 87,
-      "quantity": 40,
-      "unit": "g",
-      "raw": "40 g per serving (¼ medium capsicum, cubed)"
-    },
-    {
-      "dishNumber": 89,
+      "dishNumber": 47,
       "quantity": 25,
       "unit": "g",
-      "raw": "25 g per serving (¼ medium, small pieces)"
+      "raw": "25 g per serving (¼ medium capsicum, cut into 1 cm squares, in the gravy)"
+    },
+    {
+      "dishNumber": 48,
+      "quantity": null,
+      "unit": null,
+      "raw": "optional extra only, not counted"
     }
   ],
   "versions": [
@@ -301,11 +308,15 @@
     {
       "date": "2026-10-29",
       "file": "FitPlate_Ingredients_2026-10-29.md"
+    },
+    {
+      "date": "2026-11-19",
+      "file": "FitPlate_Ingredients_2026-11-19.md"
     }
   ],
   "mergeMethod": {
     "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -316,6 +327,6 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 46.7–156.6 was wider than 30% of avg 86.7; narrowed to ±15%."
+    "Range 44.1–136.6 was wider than 30% of avg 80.2; narrowed to ±15%."
   ]
 }

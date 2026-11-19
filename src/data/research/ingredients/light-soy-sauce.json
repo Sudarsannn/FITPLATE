@@ -24,32 +24,41 @@
         "avg": 240,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
+      },
+      {
+        "date": "2026-11-19",
+        "min": 125,
+        "max": 335,
+        "avg": 270,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-19.md"
       }
     ],
     "currentEstimate": {
       "min": 225,
-      "max": 300,
-      "avg": 260
+      "max": 305,
+      "avg": 265
     },
     "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-29",
+    "trend": "stable",
+    "change30dPct": -8,
+    "lastObserved": "2026-11-19",
     "stale": false,
     "seasonal": false,
-    "listingCount": 7,
+    "listingCount": 6,
     "platforms": [
-      "BigBasket",
-      "Swiggy Instamart"
+      "BigBasket"
     ],
     "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "confirmed": false,
+    "checkNotes": [
+      "only 1 platform (BigBasket) backs the range"
+    ]
   },
   "per100Estimate": {
     "min": 22.5,
-    "max": 30,
-    "avg": 26
+    "max": 30.5,
+    "avg": 26.5
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -266,10 +275,10 @@
   ],
   "usedIn": [
     {
-      "dishNumber": 87,
-      "quantity": 13,
-      "unit": "ml",
-      "raw": "13 ml per serving in all (5 ml in the marinade, 8 ml in the sauce); the Gluten-free variant swaps it for tamari"
+      "dishNumber": 47,
+      "quantity": 6,
+      "unit": "g",
+      "raw": "6 g (5 ml, 1 tsp) per serving, in the gravy (the dish file names dark or all-purpose soy sauce, e.g. Ching's)"
     }
   ],
   "versions": [
@@ -280,11 +289,15 @@
     {
       "date": "2026-10-29",
       "file": "FitPlate_Ingredients_2026-10-29.md"
+    },
+    {
+      "date": "2026-11-19",
+      "file": "FitPlate_Ingredients_2026-11-19.md"
     }
   ],
   "mergeMethod": {
     "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -295,6 +308,6 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 169.3–325.9 was wider than 30% of avg 261.9; narrowed to ±15%."
+    "Range 146.8–330.5 was wider than 30% of avg 266.0; narrowed to ±15%."
   ]
 }

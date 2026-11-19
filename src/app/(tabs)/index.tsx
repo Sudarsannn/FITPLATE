@@ -15,6 +15,7 @@ import { dishLibraryHref, profileHref } from '../../config/tabs';
 import { select, success } from '../../lib/haptics';
 import { DeskBreakCard } from '../../components/DeskBreakCard';
 import { ActivityWeekCard } from '../../components/ActivityWeekCard';
+import { ProfileGapsCard } from '../../components/ProfileGapsCard';
 import { RecommendCard } from '../../components/RecommendCard';
 import { LateNightCard } from '../../components/LateNightCard';
 import { LeftoversCard } from '../../components/LeftoversCard';
@@ -212,6 +213,7 @@ export default function Today() {
           <FadeIn i={4}>
             <LeftoversCard />
             <RecommendCard />
+            <ProfileGapsCard />
             <DeskBreakCard />
             <LateNightCard />
             <Glass style={{ marginTop: 14 }}>

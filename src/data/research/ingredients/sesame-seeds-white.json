@@ -15,32 +15,42 @@
         "avg": 750,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-13.md"
+      },
+      {
+        "date": "2026-11-19",
+        "min": 350,
+        "max": 610,
+        "avg": 505,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-19.md"
       }
     ],
     "currentEstimate": {
-      "min": 640,
-      "max": 860,
-      "avg": 750
+      "min": 490,
+      "max": 665,
+      "avg": 580
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-13",
+    "lastObserved": "2026-11-19",
     "stale": false,
     "seasonal": false,
-    "listingCount": 3,
+    "listingCount": 6,
     "platforms": [
-      "Amazon",
-      "BigBasket"
+      "BigBasket",
+      "Blinkit"
     ],
-    "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "outOfStock": true,
+    "confirmed": false,
+    "checkNotes": [
+      "a listing used for the range is marked out of stock, closed or not taking orders"
+    ]
   },
   "per100Estimate": {
-    "min": 64,
-    "max": 86,
-    "avg": 75
+    "min": 49,
+    "max": 66.5,
+    "avg": 58
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -242,7 +252,48 @@
     "Ajwain or nigella (kalonji) seeds",
     "Leave it out"
   ],
-  "vendorListings": [],
+  "vendorListings": [
+    {
+      "vendor": "blinkit",
+      "product": "Catch White Sesame Seeds",
+      "pack": "100 g",
+      "priceMinInr": 45,
+      "priceMaxInr": 45,
+      "observedOn": "2026-11-19"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Safe Harvest White Sesame Seeds",
+      "pack": "100 g",
+      "priceMinInr": 51,
+      "priceMaxInr": 51,
+      "observedOn": "2026-11-19"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Tata Sampann White Sesame Seeds",
+      "pack": "100 g",
+      "priceMinInr": 53,
+      "priceMaxInr": 53,
+      "observedOn": "2026-11-19"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Orika White Sesame Seeds",
+      "pack": "100 g",
+      "priceMinInr": 61,
+      "priceMaxInr": 61,
+      "observedOn": "2026-11-19"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "On1y White Sesame Seeds",
+      "pack": "100 g",
+      "priceMinInr": 61,
+      "priceMaxInr": 61,
+      "observedOn": "2026-11-19"
+    }
+  ],
   "usedIn": [
     {
       "dishNumber": 46,
@@ -255,10 +306,14 @@
     {
       "date": "2026-10-13",
       "file": "FitPlate_Ingredients_2026-10-13.md"
+    },
+    {
+      "date": "2026-11-19",
+      "file": "FitPlate_Ingredients_2026-11-19.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (wma)",
     "macrosPer100Estimate": "stable (none)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
@@ -270,6 +325,6 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 585.0–920.0 was wider than 30% of avg 750.0; narrowed to ±15%."
+    "Range 420.1–702.5 was wider than 30% of avg 578.1; narrowed to ±15%."
   ]
 }

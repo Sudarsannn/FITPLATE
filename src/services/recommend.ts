@@ -54,6 +54,8 @@ export type MealInput = {
   /** Dish ids cooked in the last few days. */
   recentIds?: readonly string[];
   costOf: (d: Dish) => number | null;
+  /** Day 31: dishes you can already mostly make from your kitchen inventory (id to what you have and still need). */
+  pantry?: ReadonlyMap<string, { have: string[]; missing: string[] }>;
 };
 
 export type MealPick = { dish: Dish; score: number; minutes: number | null; costInr: number | null; reasons: string[] };
@@ -151,8 +153,13 @@ export function recommendMeals(i: MealInput, max = MAX_PICKS): { slot: Slot; pic
     else if (costInr != null && reasons.length < 4) reasons.push(`About ₹${fmt(costInr)} to make`);
     if (i.level === 'beginner' && d.difficulty === 'Beginner') reasons.push('Beginner friendly');
     if (worksWithKitchen(d, i.equipmentOwned) === true) reasons.push('Works with the kitchen you have');
+    const stock = i.pantry?.get(d.id);
+    if (stock && stock.missing.length <= 2) {
+      score += 1 + Math.min(stock.have.length, 4) * 0.5 - stock.missing.length * 0.5;
+      reasons.unshift(stock.missing.length === 0 ? `You have everything for it: ${stock.have.slice(0, 3).join(', ')}` : `You already have ${stock.have.length} of its ${stock.have.length + stock.missing.length} main ingredients, only ${stock.missing.join(' and ')} to buy`);
+    }
     if (recent.has(d.id)) score -= 3;
-    picks.push({ dish: d, score, minutes, costInr, reasons: reasons.slice(0, 4) });
+    picks.push({ dish: d, score, minutes, costInr, reasons: reasons.slice(0, 5) });
   }
   picks.sort((a, b) => b.score - a.score || a.dish.number - b.dish.number);
   return { slot, picks: picks.slice(0, max), notes };

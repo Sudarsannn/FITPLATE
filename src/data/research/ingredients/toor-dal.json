@@ -24,33 +24,41 @@
         "avg": 170,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
+      },
+      {
+        "date": "2026-11-19",
+        "min": 150,
+        "max": 245,
+        "avg": 190,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-19.md"
       }
     ],
     "currentEstimate": {
-      "min": 130,
-      "max": 180,
-      "avg": 155
+      "min": 160,
+      "max": 220,
+      "avg": 190
     },
-    "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-29",
+    "method": "latest-trend",
+    "trend": "rising",
+    "change30dPct": 22.8,
+    "lastObserved": "2026-11-19",
     "stale": false,
     "seasonal": false,
-    "listingCount": 4,
+    "listingCount": 7,
     "platforms": [
       "BigBasket",
-      "Blinkit",
-      "Flipkart"
+      "Flipkart",
+      "Swiggy Instamart"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 13,
-    "max": 18,
-    "avg": 15.5
+    "min": 16,
+    "max": 22,
+    "avg": 19
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -237,10 +245,10 @@
     }
   },
   "macrosPer100Estimate": {
-    "kcal": 341.5,
-    "proteinG": 21.6,
-    "carbsG": 59.1,
-    "fatG": 1.4,
+    "kcal": 348,
+    "proteinG": 21.2,
+    "carbsG": 63.2,
+    "fatG": 1.2,
     "fibreG": 9
   },
   "storage": "Store in an airtight jar at room temperature, away from damp. Pests are the main risk; a refrigerator or freezer for a few days before storing can help (general guidance).",
@@ -270,14 +278,22 @@
       "priceMinInr": 182,
       "priceMaxInr": 182,
       "observedOn": "2026-10-29"
+    },
+    {
+      "vendor": "instamart",
+      "product": "Super Desi Toor Dal",
+      "pack": "1 kg",
+      "priceMinInr": 247,
+      "priceMaxInr": 247,
+      "observedOn": "2026-11-19"
     }
   ],
   "usedIn": [
     {
-      "dishNumber": 103,
-      "quantity": 22,
+      "dishNumber": 48,
+      "quantity": 30,
       "unit": "g",
-      "raw": "22 g per serving (1½ tbsp)"
+      "raw": "30 g per serving (about 2½ tbsp, dry, cooked with the rice)"
     }
   ],
   "versions": [
@@ -288,11 +304,15 @@
     {
       "date": "2026-10-29",
       "file": "FitPlate_Ingredients_2026-10-29.md"
+    },
+    {
+      "date": "2026-11-19",
+      "file": "FitPlate_Ingredients_2026-11-19.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "price": "price engine (latest-trend)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -303,6 +323,7 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 124.6–182.0 was wider than 30% of avg 155.6; narrowed to ±15%."
+    "Range 150.0–245.0 was wider than 30% of avg 190.0; narrowed to ±15%.",
+    "macrosPer100Estimate.fatG: Excluded outlier 1.5 from 2026-10-04: more than 25% from the other versions."
   ]
 }

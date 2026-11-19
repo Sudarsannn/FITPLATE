@@ -24,33 +24,40 @@
         "avg": 50,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
+      },
+      {
+        "date": "2026-11-19",
+        "min": 30,
+        "max": 160,
+        "avg": 80,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-19.md"
       }
     ],
     "currentEstimate": {
-      "min": 85,
-      "max": 115,
-      "avg": 100
+      "min": 71,
+      "max": 96,
+      "avg": 83
     },
-    "method": "spike-blend",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-29",
+    "method": "wma",
+    "trend": "stable",
+    "change30dPct": -58.3,
+    "lastObserved": "2026-11-19",
     "stale": false,
     "seasonal": false,
-    "listingCount": 3,
+    "listingCount": 5,
     "platforms": [
-      "BigBasket"
+      "BigBasket",
+      "Healthy Buddha"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 1 platform (BigBasket) backs the range"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 8.5,
-    "max": 11.5,
-    "avg": 10
+    "min": 7.1,
+    "max": 9.6,
+    "avg": 8.3
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -257,10 +264,10 @@
   "vendorListings": [],
   "usedIn": [
     {
-      "dishNumber": 103,
+      "dishNumber": 48,
       "quantity": 25,
       "unit": "g",
-      "raw": "25 g per serving (3 to 4 peeled)"
+      "raw": "25 g per serving (about 4 small onions, peeled and halved)"
     }
   ],
   "versions": [
@@ -271,10 +278,14 @@
     {
       "date": "2026-10-29",
       "file": "FitPlate_Ingredients_2026-10-29.md"
+    },
+    {
+      "date": "2026-11-19",
+      "file": "FitPlate_Ingredients_2026-11-19.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (spike-blend)",
+    "price": "price engine (wma)",
     "macrosPer100Estimate": "stable (single)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
@@ -285,9 +296,7 @@
     "usedIn": "newest"
   },
   "mergeNotes": [
-    "price flag: possible-spike",
     "price flag: narrowed",
-    "Possible spike: latest avg 50 (2026-10-29) moved more than 35% from the previous estimate; using the halfway point.",
-    "Range 80.0–127.5 was wider than 30% of avg 100.0; narrowed to ±15%."
+    "Range 47.3–139.7 was wider than 30% of avg 83.2; narrowed to ±15%."
   ]
 }

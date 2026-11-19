@@ -1,7 +1,8 @@
 import { useMemo, useState } from 'react';
 
-import { researchNutrients } from '../data/research';
+import { getIngredient, researchNutrients } from '../data/research';
 import { makeCost } from '../services/dishLibrary';
+import { fridgeRescue } from '../services/fridgeRescue';
 import { weeklyCoverage } from '../services/insights';
 import { userConcerns } from '../services/moveSafety';
 import { cookAgainIds } from '../services/recentDishes';
@@ -16,7 +17,7 @@ export type RecommendOptions = { slot?: Slot; maxMinutes?: number | null; budget
 
 /** Day 30: gathers what the engine needs from the person's logs, profile and targets. */
 export function useRecommend(opts: RecommendOptions = {}) {
-  const { today, days, profile, equipmentOwned, bodyWeightKg, routines, sex, supplements } = useStore();
+  const { settings, today, days, profile, equipmentOwned, bodyWeightKg, routines, sex, supplements } = useStore();
   const { goal, micros, health } = useTargets();
   const dishes = useResearchDishes();
   const [now] = useState(() => new Date());
@@ -29,6 +30,8 @@ export function useRecommend(opts: RecommendOptions = {}) {
     const targetMap = sex ? Object.fromEntries(micros.map((m) => [m.id, m.value])) : undefined;
     const week = weeklyCoverage(days, keys, (id) => dishes.find((d) => d.id === id), researchNutrients, sex === 'female' ? 'adult_female' : 'adult_male', { targets: targetMap, supplementsByDay });
     const gaps = week.gaps.map((g) => ({ id: g.id, name: g.name, target: g.target }));
+    const stocked = settings.pantry && Object.keys(settings.pantry).length ? fridgeRescue(dishes, settings.pantry, { category: (id) => getIngredient(id)?.category ?? null, limit: 500 }) : [];
+    const pantry = new Map(stocked.map((m) => [m.dish.id, { have: m.have, missing: m.missing }]));
     const totals = dayTotals(today);
     const meals = recommendMeals({
       dishes,
@@ -49,6 +52,7 @@ export function useRecommend(opts: RecommendOptions = {}) {
       gaps,
       recentIds: cookAgainIds(days, 6),
       costOf: (d) => makeCost(d)?.avg ?? null,
+      pantry,
     });
     const recent = [1, 2].map((n) => (days[dayKey(addDays(now, -n))]?.exercise ?? []).reduce((s, e) => s + e.minutes, 0));
     const workout = recommendWorkout(
@@ -65,5 +69,5 @@ export function useRecommend(opts: RecommendOptions = {}) {
       bodyWeightKg,
     );
     return { meals, workout, gaps, kcalLeft: health.needsDoctor ? null : Math.max(0, goal.kcal - totals.kcalIn), proteinLeft: Math.max(0, goal.protein - totals.protein) };
-  }, [now, dishes, days, today, profile, equipmentOwned, bodyWeightKg, routines, sex, supplements, goal, micros, health, opts.slot, opts.maxMinutes, opts.budget]);
+  }, [now, dishes, days, today, profile, equipmentOwned, bodyWeightKg, routines, sex, supplements, settings.pantry, goal, micros, health, opts.slot, opts.maxMinutes, opts.budget]);
 }

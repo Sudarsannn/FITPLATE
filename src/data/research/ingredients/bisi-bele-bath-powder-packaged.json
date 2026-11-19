@@ -15,34 +15,45 @@
         "avg": 775,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-13.md"
+      },
+      {
+        "date": "2026-11-19",
+        "min": 690,
+        "max": 890,
+        "avg": 805,
+        "confidence": "High",
+        "sourceFile": "FitPlate_Ingredients_2026-11-19.md"
       }
     ],
     "currentEstimate": {
       "min": 690,
-      "max": 850,
-      "avg": 775
+      "max": 880,
+      "avg": 795
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-13",
+    "lastObserved": "2026-11-19",
     "stale": false,
     "seasonal": false,
-    "listingCount": 6,
+    "listingCount": 9,
     "platforms": [
       "Amazon",
       "BigBasket",
-      "Hunarsetu",
-      "Swiggy Instamart"
+      "Blinkit",
+      "Swiggy Instamart",
+      "Zepto"
     ],
-    "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "outOfStock": true,
+    "confirmed": false,
+    "checkNotes": [
+      "a listing used for the range is marked out of stock, closed or not taking orders"
+    ]
   },
   "per100Estimate": {
     "min": 69,
-    "max": 85,
-    "avg": 77.5
+    "max": 88,
+    "avg": 79.5
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -247,11 +258,27 @@
   "vendorListings": [
     {
       "vendor": "instamart",
+      "product": "MTR Bisibele Bath Masala Powder",
+      "pack": "100 g",
+      "priceMinInr": 83,
+      "priceMaxInr": 83,
+      "observedOn": "2026-11-19"
+    },
+    {
+      "vendor": "instamart",
       "product": "Adukale bisi bele bhath powder",
       "pack": "200 g",
       "priceMinInr": 152,
       "priceMaxInr": 152,
       "observedOn": "2026-10-13"
+    },
+    {
+      "vendor": "zepto",
+      "product": "MTR Masala Bisibelebath Powder",
+      "pack": "100 g",
+      "priceMinInr": 69,
+      "priceMaxInr": 69,
+      "observedOn": "2026-11-19"
     }
   ],
   "usedIn": [
@@ -266,11 +293,15 @@
     {
       "date": "2026-10-13",
       "file": "FitPlate_Ingredients_2026-10-13.md"
+    },
+    {
+      "date": "2026-11-19",
+      "file": "FitPlate_Ingredients_2026-11-19.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",

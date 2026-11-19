@@ -23,20 +23,28 @@
         "avg": 180,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
+      },
+      {
+        "date": "2026-11-19",
+        "min": 115,
+        "max": 335,
+        "avg": 235,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-19.md"
       }
     ],
     "currentEstimate": {
-      "min": 165,
-      "max": 225,
-      "avg": 195
+      "min": 185,
+      "max": 250,
+      "avg": 215
     },
     "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-29",
+    "trend": "stable",
+    "change30dPct": 2.1,
+    "lastObserved": "2026-11-19",
     "stale": false,
     "seasonal": false,
-    "listingCount": 4,
+    "listingCount": 3,
     "platforms": [
       "BigBasket",
       "Flipkart"
@@ -46,9 +54,9 @@
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 16.5,
-    "max": 22.5,
-    "avg": 19.5
+    "min": 18.5,
+    "max": 25,
+    "avg": 21.5
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -235,11 +243,11 @@
     }
   },
   "macrosPer100Estimate": {
-    "kcal": 488.5,
-    "proteinG": 25.5,
+    "kcal": 469,
+    "proteinG": 24.9,
     "carbsG": 28.1,
-    "fatG": 32.4,
-    "fibreG": 13.4
+    "fatG": 28.8,
+    "fibreG": 14.7
   },
   "storage": "Keep in an airtight container at room temperature, away from moisture and sunlight.",
   "looksLike": "Tiny round seeds about 1 mm across, dark brown to black for the small 'rai' used in tadka; they pop when added to hot oil.",
@@ -255,10 +263,10 @@
   "vendorListings": [],
   "usedIn": [
     {
-      "dishNumber": 103,
+      "dishNumber": 48,
       "quantity": 1,
       "unit": "g",
-      "raw": "1 g per serving (½ tsp, tempered in oil)"
+      "raw": "1 g per serving (¼ tsp, tempered in ghee)"
     }
   ],
   "versions": [
@@ -269,11 +277,15 @@
     {
       "date": "2026-10-29",
       "file": "FitPlate_Ingredients_2026-10-29.md"
+    },
+    {
+      "date": "2026-11-19",
+      "file": "FitPlate_Ingredients_2026-11-19.md"
     }
   ],
   "mergeMethod": {
     "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -284,6 +296,7 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 145.6–250.0 was wider than 30% of avg 196.2; narrowed to ±15%."
+    "Range 130.0–293.3 was wider than 30% of avg 216.0; narrowed to ±15%.",
+    "macrosPer100Estimate.fatG: Excluded outlier 36 from 2026-10-04: more than 25% from the other versions."
   ]
 }

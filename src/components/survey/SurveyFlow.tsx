@@ -27,6 +27,7 @@ import { select, success } from '../../lib/haptics';
 import { GOALS, useStore, type Goal, type Level } from '../../lib/store';
 import type { Survey } from '../../models/survey';
 import type { ActivityLevel, DietType, Sex } from '../../models/user';
+import { QUICK_PAGES } from '../../services/onboardingFlow';
 import { colors, radius, type } from '../../theme';
 import { Bar, GradientButton, PressableScale, VideoBackground } from '../ui';
 
@@ -156,7 +157,7 @@ export function SurveyFlow({ mode, start = 'name' }: { mode: 'onboarding' | 'edi
   const store = useStore();
   const { profile, user, body, sex, updateProfile, updateBody, equipmentOwned, setEquipmentOwned } = store;
   // Editing from Profile opens just the one page, with Save.
-  const pages: readonly SurveyPage[] = mode === 'onboarding' ? SURVEY_PAGES : [start];
+  const pages: readonly SurveyPage[] = mode === 'onboarding' ? QUICK_PAGES : [start];
   const [step, setStep] = useState(Math.max(0, pages.indexOf(start)));
   const [d, setD] = useState<Draft>({
     name: profile.name || user?.name || '',

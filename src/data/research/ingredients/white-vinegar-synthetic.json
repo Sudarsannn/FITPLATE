@@ -23,17 +23,25 @@
         "avg": 140,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
+      },
+      {
+        "date": "2026-11-19",
+        "min": 65,
+        "max": 210,
+        "avg": 130,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-19.md"
       }
     ],
     "currentEstimate": {
-      "min": 100,
+      "min": 105,
       "max": 140,
-      "avg": 120
+      "avg": 125
     },
-    "method": "spike-blend",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-29",
+    "method": "wma",
+    "trend": "stable",
+    "change30dPct": 16.8,
+    "lastObserved": "2026-11-19",
     "stale": false,
     "seasonal": false,
     "listingCount": 5,
@@ -46,9 +54,9 @@
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 10,
+    "min": 10.5,
     "max": 14,
-    "avg": 12
+    "avg": 12.5
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -256,10 +264,10 @@
   "vendorListings": [],
   "usedIn": [
     {
-      "dishNumber": 87,
-      "quantity": 3,
+      "dishNumber": 47,
+      "quantity": 2.5,
       "unit": "ml",
-      "raw": "3 ml per serving (½ tsp, in the sauce)"
+      "raw": "2.5 ml per serving (½ tsp, stirred into the gravy at the end)"
     }
   ],
   "versions": [
@@ -270,11 +278,15 @@
     {
       "date": "2026-10-29",
       "file": "FitPlate_Ingredients_2026-10-29.md"
+    },
+    {
+      "date": "2026-11-19",
+      "file": "FitPlate_Ingredients_2026-11-19.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (spike-blend)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -284,9 +296,7 @@
     "usedIn": "newest"
   },
   "mergeNotes": [
-    "price flag: possible-spike",
     "price flag: narrowed",
-    "Possible spike: latest avg 140 (2026-10-29) moved more than 35% from the previous estimate; using the halfway point.",
-    "Range 80.0–162.5 was wider than 30% of avg 120.0; narrowed to ±15%."
+    "Range 73.7–181.1 was wider than 30% of avg 123.5; narrowed to ±15%."
   ]
 }

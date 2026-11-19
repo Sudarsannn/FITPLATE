@@ -23,26 +23,30 @@
         "avg": 75,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
+      },
+      {
+        "date": "2026-11-19",
+        "min": 80,
+        "max": 110,
+        "avg": 90,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-19.md"
       }
     ],
     "currentEstimate": {
-      "min": 62,
-      "max": 84,
-      "avg": 73
+      "min": 77,
+      "max": 103,
+      "avg": 90
     },
-    "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-29",
+    "method": "latest-trend",
+    "trend": "rising",
+    "change30dPct": 20.9,
+    "lastObserved": "2026-11-19",
     "stale": false,
     "seasonal": false,
-    "listingCount": 12,
+    "listingCount": 4,
     "platforms": [
-      "Amazon",
       "BigBasket",
-      "Blinkit",
-      "Flipkart",
-      "JioMart",
       "Zepto"
     ],
     "outOfStock": false,
@@ -50,9 +54,9 @@
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 6.2,
-    "max": 8.4,
-    "avg": 7.3
+    "min": 7.7,
+    "max": 10.3,
+    "avg": 9
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -268,6 +272,14 @@
     },
     {
       "vendor": "zepto",
+      "product": "Carrot , 250 g",
+      "pack": "250 g",
+      "priceMinInr": 27,
+      "priceMaxInr": 27,
+      "observedOn": "2026-11-19"
+    },
+    {
+      "vendor": "zepto",
       "product": "Carrot , 500 g",
       "pack": "500 g",
       "priceMinInr": 36,
@@ -277,16 +289,16 @@
   ],
   "usedIn": [
     {
-      "dishNumber": 88,
-      "quantity": 25,
-      "unit": "g",
-      "raw": "25 g per serving (¼ medium carrot)"
-    },
-    {
-      "dishNumber": 89,
+      "dishNumber": 47,
       "quantity": 20,
       "unit": "g",
-      "raw": "20 g per serving (2 tbsp diced)"
+      "raw": "20 g per serving (¼ small carrot, finely grated, in the balls)"
+    },
+    {
+      "dishNumber": 48,
+      "quantity": 25,
+      "unit": "g",
+      "raw": "25 g per serving (about ¼ medium carrot, in 1 cm cubes)"
     }
   ],
   "versions": [
@@ -297,10 +309,14 @@
     {
       "date": "2026-10-29",
       "file": "FitPlate_Ingredients_2026-10-29.md"
+    },
+    {
+      "date": "2026-11-19",
+      "file": "FitPlate_Ingredients_2026-11-19.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (wma)",
+    "price": "price engine (latest-trend)",
     "macrosPer100Estimate": "stable (single)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
@@ -312,6 +328,6 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 45.6–116.6 was wider than 30% of avg 72.8; narrowed to ±15%."
+    "Range 80.0–110.0 was wider than 30% of avg 90.0; narrowed to ±15%."
   ]
 }

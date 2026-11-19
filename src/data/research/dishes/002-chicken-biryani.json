@@ -573,7 +573,7 @@
       "trend": "unknown",
       "change30dPct": null,
       "lastObserved": "2026-10-04",
-      "stale": false,
+      "stale": true,
       "seasonal": false,
       "listingCount": 6,
       "platforms": [
@@ -635,7 +635,7 @@
     "trend": "unknown",
     "change30dPct": null,
     "lastObserved": "2026-10-04",
-    "stale": false,
+    "stale": true,
     "seasonal": false,
     "listingCount": 6,
     "platforms": [
@@ -834,7 +834,9 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
+    "price flag: stale",
     "Range 120.0–360.0 was wider than 30% of avg 226.0; narrowed to ±15%.",
+    "Latest observation 2026-10-04 is more than 45 days old.",
     "recipe changed materially between 2026-10-04 and 2026-11-01; newest recipe used",
     "2026-11-01: research declares peanut not detected from ingredient names; added"
   ]

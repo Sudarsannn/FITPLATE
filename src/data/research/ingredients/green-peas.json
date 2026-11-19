@@ -15,34 +15,41 @@
         "avg": 200,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
+      },
+      {
+        "date": "2026-11-19",
+        "min": 165,
+        "max": 300,
+        "avg": 220,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-19.md"
       }
     ],
     "currentEstimate": {
-      "min": 170,
-      "max": 230,
-      "avg": 200
+      "min": 180,
+      "max": 240,
+      "avg": 210
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-29",
+    "lastObserved": "2026-11-19",
     "stale": false,
     "seasonal": false,
-    "listingCount": 12,
+    "listingCount": 7,
     "platforms": [
-      "BigBasket",
-      "Blinkit",
-      "Swiggy Instamart",
-      "Zepto"
+      "BigBasket"
     ],
     "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "confirmed": false,
+    "checkNotes": [
+      "only 1 platform (BigBasket) backs the range"
+    ]
   },
   "per100Estimate": {
-    "min": 17,
-    "max": 23,
-    "avg": 20
+    "min": 18,
+    "max": 24,
+    "avg": 21
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -274,20 +281,24 @@
   ],
   "usedIn": [
     {
-      "dishNumber": 89,
-      "quantity": 25,
+      "dishNumber": 48,
+      "quantity": 15,
       "unit": "g",
-      "raw": "25 g per serving (2 tbsp, fresh or frozen)"
+      "raw": "15 g per serving (about 1½ tbsp, fresh or frozen)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-29",
       "file": "FitPlate_Ingredients_2026-10-29.md"
+    },
+    {
+      "date": "2026-11-19",
+      "file": "FitPlate_Ingredients_2026-11-19.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (wma)",
     "macrosPer100Estimate": "stable (none)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
@@ -299,6 +310,6 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 130.0–250.0 was wider than 30% of avg 200.0; narrowed to ±15%."
+    "Range 145.7–272.4 was wider than 30% of avg 209.0; narrowed to ±15%."
   ]
 }

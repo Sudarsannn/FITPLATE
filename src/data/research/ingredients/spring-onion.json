@@ -23,34 +23,41 @@
         "avg": 135,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
+      },
+      {
+        "date": "2026-11-19",
+        "min": 45,
+        "max": 95,
+        "avg": 65,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-19.md"
       }
     ],
     "currentEstimate": {
-      "min": 100,
-      "max": 130,
-      "avg": 115
+      "min": 77,
+      "max": 103,
+      "avg": 90
     },
     "method": "spike-blend",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-29",
+    "trend": "stable",
+    "change30dPct": -17.9,
+    "lastObserved": "2026-11-19",
     "stale": false,
     "seasonal": false,
-    "listingCount": 11,
+    "listingCount": 3,
     "platforms": [
-      "Amazon",
-      "BigBasket",
-      "Blinkit",
-      "Zepto"
+      "BigBasket"
     ],
     "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "confirmed": false,
+    "checkNotes": [
+      "only 1 platform (BigBasket) backs the range"
+    ]
   },
   "per100Estimate": {
-    "min": 10,
-    "max": 13,
-    "avg": 11.5
+    "min": 7.7,
+    "max": 10.3,
+    "avg": 9
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -283,10 +290,10 @@
   ],
   "usedIn": [
     {
-      "dishNumber": 87,
-      "quantity": 10,
+      "dishNumber": 47,
+      "quantity": 18,
       "unit": "g",
-      "raw": "10 g per serving (1 stalk, whites and greens)"
+      "raw": "18 g per serving in all (8 g, 1 stalk, in the balls; 5 g of whites in the gravy; 5 g of greens as garnish)"
     }
   ],
   "versions": [
@@ -297,6 +304,10 @@
     {
       "date": "2026-10-29",
       "file": "FitPlate_Ingredients_2026-10-29.md"
+    },
+    {
+      "date": "2026-11-19",
+      "file": "FitPlate_Ingredients_2026-11-19.md"
     }
   ],
   "mergeMethod": {
@@ -313,7 +324,7 @@
   "mergeNotes": [
     "price flag: possible-spike",
     "price flag: narrowed",
-    "Possible spike: latest avg 135 (2026-10-29) moved more than 35% from the previous estimate; using the halfway point.",
-    "Range 70.0–172.5 was wider than 30% of avg 115.0; narrowed to ±15%."
+    "Possible spike: latest avg 65 (2026-11-19) moved more than 35% from the previous estimate; using the halfway point.",
+    "Range 57.5–133.8 was wider than 30% of avg 90.0; narrowed to ±15%."
   ]
 }

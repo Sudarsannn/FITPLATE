@@ -24,33 +24,40 @@
         "avg": 58,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
+      },
+      {
+        "date": "2026-11-19",
+        "min": 50,
+        "max": 65,
+        "avg": 60,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-19.md"
       }
     ],
     "currentEstimate": {
-      "min": 51,
+      "min": 50,
       "max": 65,
-      "avg": 58
+      "avg": 59
     },
     "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-29",
+    "trend": "stable",
+    "change30dPct": 2.2,
+    "lastObserved": "2026-11-19",
     "stale": false,
     "seasonal": false,
-    "listingCount": 8,
+    "listingCount": 6,
     "platforms": [
       "BigBasket",
-      "Swiggy Instamart",
-      "Zepto"
+      "Swiggy Instamart"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 5.1,
+    "min": 5,
     "max": 6.5,
-    "avg": 5.8
+    "avg": 5.9
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -256,11 +263,35 @@
   "vendorListings": [
     {
       "vendor": "instamart",
+      "product": "Supreme Harvest Crystal Sugar",
+      "pack": "1 kg",
+      "priceMinInr": 55,
+      "priceMaxInr": 55,
+      "observedOn": "2026-11-19"
+    },
+    {
+      "vendor": "instamart",
+      "product": "Madhur Pure & Hygienic White Sugar",
+      "pack": "1 kg",
+      "priceMinInr": 61,
+      "priceMaxInr": 61,
+      "observedOn": "2026-11-19"
+    },
+    {
+      "vendor": "instamart",
       "product": "PARRY Pure Refined Sugar pouch",
       "pack": "1 kg",
       "priceMinInr": 65,
       "priceMaxInr": 65,
       "observedOn": "2026-10-29"
+    },
+    {
+      "vendor": "instamart",
+      "product": "Fortune Sugar",
+      "pack": "1 kg",
+      "priceMinInr": 66,
+      "priceMaxInr": 66,
+      "observedOn": "2026-11-19"
     },
     {
       "vendor": "zepto",
@@ -273,22 +304,16 @@
   ],
   "usedIn": [
     {
-      "dishNumber": 95,
-      "quantity": 20,
+      "dishNumber": 46,
+      "quantity": 2,
       "unit": "g",
-      "raw": "20 g per serving (4 tsp); the Low-sugar variant uses 10 g"
+      "raw": "2 g per serving (½ tsp; the dish allows jaggery instead)"
     },
     {
-      "dishNumber": 87,
-      "quantity": 1.5,
-      "unit": "g",
-      "raw": "1.5 g per serving (½ tsp, in the sauce)"
-    },
-    {
-      "dishNumber": 94,
+      "dishNumber": 47,
       "quantity": null,
       "unit": null,
-      "raw": "not counted (only an optional pinch if the tomatoes are sour)"
+      "raw": "not counted (an optional ¼ tsp in the gravy only)"
     }
   ],
   "versions": [
@@ -299,11 +324,15 @@
     {
       "date": "2026-10-29",
       "file": "FitPlate_Ingredients_2026-10-29.md"
+    },
+    {
+      "date": "2026-11-19",
+      "file": "FitPlate_Ingredients_2026-11-19.md"
     }
   ],
   "mergeMethod": {
     "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -313,6 +342,6 @@
     "usedIn": "newest"
   },
   "mergeNotes": [
-    "macrosPer100Estimate.fatG: Versions 2026-10-04 (0) and 2026-10-29 (0.32) differ by more than 25%; kept the newer."
+    "macrosPer100Estimate.fatG: Excluded outlier 0 from 2026-10-04: more than 25% from the other versions."
   ]
 }

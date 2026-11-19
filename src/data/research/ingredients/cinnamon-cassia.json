@@ -15,33 +15,41 @@
         "avg": 1235,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-04.md"
+      },
+      {
+        "date": "2026-11-19",
+        "min": 560,
+        "max": 2520,
+        "avg": 1300,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-19.md"
       }
     ],
     "currentEstimate": {
-      "min": 1185,
-      "max": 1295,
-      "avg": 1235
+      "min": 1090,
+      "max": 1475,
+      "avg": 1285
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-04",
+    "lastObserved": "2026-11-19",
     "stale": false,
     "seasonal": false,
-    "listingCount": 3,
+    "listingCount": 4,
     "platforms": [
-      "BigBasket"
+      "BigBasket",
+      "Flipkart",
+      "Hunarsetu"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 1 platform (BigBasket) backs the range"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 118.5,
-    "max": 129.5,
-    "avg": 123.5
+    "min": 109,
+    "max": 147.5,
+    "avg": 128.5
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -228,7 +236,7 @@
     }
   },
   "macrosPer100Estimate": {
-    "kcal": 254,
+    "kcal": 261,
     "proteinG": 4,
     "carbsG": 81,
     "fatG": 1.2,
@@ -246,22 +254,16 @@
   "vendorListings": [],
   "usedIn": [
     {
-      "dishNumber": 84,
-      "quantity": 1,
+      "dishNumber": 50,
+      "quantity": 0.5,
       "unit": "g",
-      "raw": "1 g (a 1 cm piece) per serving"
+      "raw": "0.5 g per serving (one 2 cm piece)"
     },
     {
-      "dishNumber": 85,
-      "quantity": null,
-      "unit": null,
-      "raw": "1 cm stick per serving"
-    },
-    {
-      "dishNumber": 101,
+      "dishNumber": 48,
       "quantity": 1,
       "unit": "g",
-      "raw": "1 g (a 1 cm piece) per serving"
+      "raw": "1 g (a 2 cm piece) in the homemade powder batch of about 60 g, which makes 6 servings (about 0.17 g per serving at 10 g of powder; not used if store-bought powder is chosen)"
     }
   ],
   "versions": [
@@ -272,11 +274,15 @@
     {
       "date": "2026-10-25",
       "file": "FitPlate_Ingredients_2026-10-25.md"
+    },
+    {
+      "date": "2026-11-19",
+      "file": "FitPlate_Ingredients_2026-11-19.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -285,5 +291,8 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 720.5–2205.5 was wider than 30% of avg 1283.3; narrowed to ±15%."
+  ]
 }

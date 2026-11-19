@@ -23,20 +23,28 @@
         "avg": 340,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      },
+      {
+        "date": "2026-11-19",
+        "min": 280,
+        "max": 420,
+        "avg": 345,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-19.md"
       }
     ],
     "currentEstimate": {
-      "min": 275,
-      "max": 370,
-      "avg": 320
+      "min": 295,
+      "max": 395,
+      "avg": 345
     },
-    "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-25",
+    "method": "latest-trend",
+    "trend": "rising",
+    "change30dPct": 7.7,
+    "lastObserved": "2026-11-19",
     "stale": false,
     "seasonal": false,
-    "listingCount": 5,
+    "listingCount": 3,
     "platforms": [
       "BigBasket"
     ],
@@ -47,9 +55,9 @@
     ]
   },
   "per100Estimate": {
-    "min": 27.5,
-    "max": 37,
-    "avg": 32
+    "min": 29.5,
+    "max": 39.5,
+    "avg": 34.5
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -236,10 +244,10 @@
     }
   },
   "macrosPer100Estimate": {
-    "kcal": 119.5,
-    "proteinG": 20.7,
+    "kcal": 119,
+    "proteinG": 21.4,
     "carbsG": 0,
-    "fatG": 3.6,
+    "fatG": 3.1,
     "fibreG": 0
   },
   "storage": "Keep in the coldest part of the fridge and cook within a day or two, or freeze in a sealed bag; thaw in the fridge, not on the counter.",
@@ -257,10 +265,10 @@
   "vendorListings": [],
   "usedIn": [
     {
-      "dishNumber": 101,
-      "quantity": 170,
+      "dishNumber": 50,
+      "quantity": 200,
       "unit": "g",
-      "raw": "170 g per serving (about 120 g edible meat; 4 small pieces)"
+      "raw": "200 g raw per serving (about 150 g edible meat, est.; 4 to 5 medium pieces)"
     }
   ],
   "versions": [
@@ -271,11 +279,15 @@
     {
       "date": "2026-10-25",
       "file": "FitPlate_Ingredients_2026-10-25.md"
+    },
+    {
+      "date": "2026-11-19",
+      "file": "FitPlate_Ingredients_2026-11-19.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "price": "price engine (latest-trend)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -286,6 +298,7 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 275.0–375.9 was wider than 30% of avg 320.7; narrowed to ±15%."
+    "Range 280.0–420.0 was wider than 30% of avg 345.0; narrowed to ±15%.",
+    "macrosPer100Estimate.fatG: Excluded outlier 4 from 2026-10-04: more than 25% from the other versions."
   ]
 }

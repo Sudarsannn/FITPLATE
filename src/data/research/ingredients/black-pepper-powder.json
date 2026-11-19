@@ -23,20 +23,28 @@
         "avg": 1575,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
+      },
+      {
+        "date": "2026-11-19",
+        "min": 1310,
+        "max": 1600,
+        "avg": 1455,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-19.md"
       }
     ],
     "currentEstimate": {
-      "min": 1330,
-      "max": 1800,
-      "avg": 1565
+      "min": 1275,
+      "max": 1715,
+      "avg": 1515
     },
     "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-29",
+    "trend": "stable",
+    "change30dPct": -4.3,
+    "lastObserved": "2026-11-19",
     "stale": false,
     "seasonal": false,
-    "listingCount": 9,
+    "listingCount": 5,
     "platforms": [
       "BigBasket"
     ],
@@ -47,9 +55,9 @@
     ]
   },
   "per100Estimate": {
-    "min": 133,
-    "max": 180,
-    "avg": 156.5
+    "min": 127.5,
+    "max": 171.5,
+    "avg": 151.5
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -255,22 +263,10 @@
   "vendorListings": [],
   "usedIn": [
     {
-      "dishNumber": 87,
-      "quantity": 0.5,
+      "dishNumber": 47,
+      "quantity": 0.6,
       "unit": "g",
-      "raw": "0.5 g per serving (¼ tsp)"
-    },
-    {
-      "dishNumber": 94,
-      "quantity": 0.3,
-      "unit": "g",
-      "raw": "0.3 g per serving (a pinch)"
-    },
-    {
-      "dishNumber": 91,
-      "quantity": null,
-      "unit": null,
-      "raw": "only in the Navratri variant swap (about 0.5 g black pepper instead of chaat masala); not in the main recipe"
+      "raw": "0.6 g per serving in all (a pinch, 0.3 g, in the balls and another 0.3 g in the gravy)"
     }
   ],
   "versions": [
@@ -281,11 +277,15 @@
     {
       "date": "2026-10-29",
       "file": "FitPlate_Ingredients_2026-10-29.md"
+    },
+    {
+      "date": "2026-11-19",
+      "file": "FitPlate_Ingredients_2026-11-19.md"
     }
   ],
   "mergeMethod": {
     "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -294,8 +294,5 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": [
-    "price flag: narrowed",
-    "Range 1247.6–1801.9 was wider than 30% of avg 1564.3; narrowed to ±15%."
-  ]
+  "mergeNotes": []
 }

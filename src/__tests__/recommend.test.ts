@@ -34,6 +34,24 @@ describe('slots and shares', () => {
   });
 });
 
+describe('pantry first', () => {
+  it('lifts a dish you can nearly make and says what is left to buy', () => {
+    const plain = recommendMeals(base({ hour: 20 }), 100).picks;
+    const target = plain[plain.length - 1].dish;
+    const r = recommendMeals(base({ hour: 20, pantry: new Map([[target.id, { have: ['onion', 'tomato', 'paneer'], missing: ['cream'] }]]) }), 100).picks;
+    const pick = r.find((p) => p.dish.id === target.id)!;
+    expect(r.indexOf(pick)).toBeLessThan(plain.length - 1);
+    expect(pick.reasons[0]).toMatch(/already have 3 of its 4 main ingredients, only cream to buy/);
+  });
+  it('says so when nothing is missing, and ignores dishes missing more than two', () => {
+    const d = recommendMeals(base({ hour: 20 }), 3).picks[0].dish;
+    const all = recommendMeals(base({ hour: 20, pantry: new Map([[d.id, { have: ['a', 'b'], missing: [] }]]) }), 100).picks.find((p) => p.dish.id === d.id)!;
+    expect(all.reasons[0]).toMatch(/You have everything/);
+    const far = recommendMeals(base({ hour: 20, pantry: new Map([[d.id, { have: ['a', 'b'], missing: ['x', 'y', 'z'] }]]) }), 100).picks.find((p) => p.dish.id === d.id)!;
+    expect(far.reasons.some((x) => /already have|everything/.test(x))).toBe(false);
+  });
+});
+
 describe('protein safety net', () => {
   it('ignores a serving with an impossible protein number', () => {
     expect(plausibleProtein(54, 540)).toBeNull();

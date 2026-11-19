@@ -23,20 +23,28 @@
         "avg": 205,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
+      },
+      {
+        "date": "2026-11-19",
+        "min": 75,
+        "max": 360,
+        "avg": 185,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-19.md"
       }
     ],
     "currentEstimate": {
-      "min": 130,
-      "max": 175,
-      "avg": 155
+      "min": 150,
+      "max": 205,
+      "avg": 175
     },
-    "method": "spike-blend",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-29",
+    "method": "wma",
+    "trend": "stable",
+    "change30dPct": 32.7,
+    "lastObserved": "2026-11-19",
     "stale": false,
     "seasonal": false,
-    "listingCount": 5,
+    "listingCount": 3,
     "platforms": [
       "BigBasket",
       "Blinkit"
@@ -46,9 +54,9 @@
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 13,
-    "max": 17.5,
-    "avg": 15.5
+    "min": 15,
+    "max": 20.5,
+    "avg": 17.5
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -257,27 +265,15 @@
       "pack": "50 g",
       "priceMinInr": 18,
       "priceMaxInr": 18,
-      "observedOn": "2026-10-29"
+      "observedOn": "2026-11-19"
     }
   ],
   "usedIn": [
     {
-      "dishNumber": 92,
-      "quantity": 3,
+      "dishNumber": 48,
+      "quantity": 1,
       "unit": "g",
-      "raw": "3 g per serving (about 6 leaves)"
-    },
-    {
-      "dishNumber": 88,
-      "quantity": 1.5,
-      "unit": "g",
-      "raw": "1.5 g per serving (10 leaves)"
-    },
-    {
-      "dishNumber": 103,
-      "quantity": null,
-      "unit": null,
-      "raw": "5 leaves per serving (weight not stated; about 0.8 g at the Kothu Parotta rate of 0.5 g per leaf)"
+      "raw": "1 g per serving (6 to 8 leaves, in the final ghee tempering)"
     }
   ],
   "versions": [
@@ -288,11 +284,15 @@
     {
       "date": "2026-10-29",
       "file": "FitPlate_Ingredients_2026-10-29.md"
+    },
+    {
+      "date": "2026-11-19",
+      "file": "FitPlate_Ingredients_2026-11-19.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (spike-blend)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -302,10 +302,8 @@
     "usedIn": "newest"
   },
   "mergeNotes": [
-    "price flag: possible-spike",
     "price flag: narrowed",
-    "Possible spike: latest avg 205 (2026-10-29) moved more than 35% from the previous estimate; using the halfway point.",
-    "Range 75.0–245.0 was wider than 30% of avg 152.5; narrowed to ±15%.",
-    "macrosPer100Estimate.kcal: Versions 2026-10-04 (108) and 2026-10-29 (457) differ by more than 25%; kept the newer."
+    "Range 75.0–319.5 was wider than 30% of avg 176.3; narrowed to ±15%.",
+    "macrosPer100Estimate.kcal: Excluded outlier 108 from 2026-10-04: more than 25% from the other versions."
   ]
 }

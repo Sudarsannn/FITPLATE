@@ -23,33 +23,40 @@
         "avg": 1555,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      },
+      {
+        "date": "2026-11-19",
+        "min": 1130,
+        "max": 2420,
+        "avg": 1880,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-19.md"
       }
     ],
     "currentEstimate": {
-      "min": 1570,
-      "max": 2125,
-      "avg": 1845
+      "min": 1585,
+      "max": 2140,
+      "avg": 1860
     },
     "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-25",
+    "trend": "stable",
+    "change30dPct": -6.3,
+    "lastObserved": "2026-11-19",
     "stale": false,
     "seasonal": false,
-    "listingCount": 5,
+    "listingCount": 8,
     "platforms": [
-      "BigBasket"
+      "BigBasket",
+      "Flipkart"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 1 platform (BigBasket) backs the range"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 157,
-    "max": 212.5,
-    "avg": 184.5
+    "min": 158.5,
+    "max": 214,
+    "avg": 186
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -236,7 +243,7 @@
     }
   },
   "macrosPer100Estimate": {
-    "kcal": 298.5,
+    "kcal": 323,
     "proteinG": 6,
     "carbsG": 66,
     "fatG": 20,
@@ -257,22 +264,16 @@
   "vendorListings": [],
   "usedIn": [
     {
-      "dishNumber": 84,
+      "dishNumber": 50,
       "quantity": null,
       "unit": null,
-      "raw": "2 buds per serving (1 in the rice water, 1 in the masala)"
+      "raw": "2 buds per serving (about 0.2 g)"
     },
     {
-      "dishNumber": 85,
+      "dishNumber": 48,
       "quantity": null,
       "unit": null,
-      "raw": "2 buds per serving"
-    },
-    {
-      "dishNumber": 101,
-      "quantity": null,
-      "unit": null,
-      "raw": "2 buds per serving"
+      "raw": "3 buds (0.3 g) in the homemade powder batch of about 60 g, which makes 6 servings (about 0.05 g per serving at 10 g of powder; not used if store-bought powder is chosen)"
     }
   ],
   "versions": [
@@ -283,11 +284,15 @@
     {
       "date": "2026-10-25",
       "file": "FitPlate_Ingredients_2026-10-25.md"
+    },
+    {
+      "date": "2026-11-19",
+      "file": "FitPlate_Ingredients_2026-11-19.md"
     }
   ],
   "mergeMethod": {
     "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -298,7 +303,7 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 1499.7–2359.5 was wider than 30% of avg 1847.5; narrowed to ±15%.",
-    "macrosPer100Estimate.fatG: Versions 2026-10-04 (13) and 2026-10-25 (20) differ by more than 25%; kept the newer."
+    "Range 1335.6–2386.4 was wider than 30% of avg 1861.9; narrowed to ±15%.",
+    "macrosPer100Estimate.fatG: Excluded outlier 13 from 2026-10-04: more than 25% from the other versions."
   ]
 }

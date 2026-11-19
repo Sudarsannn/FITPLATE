@@ -62,6 +62,7 @@ import item_elephant_foot_yam from './elephant-foot-yam.json';
 import item_farsan_mixed_namkeen from './farsan-mixed-namkeen.json';
 import item_fennel_powder from './fennel-powder.json';
 import item_fennel_seeds_whole from './fennel-seeds-whole.json';
+import item_fenugreek_leaves_fresh from './fenugreek-leaves-fresh.json';
 import item_fenugreek_seeds from './fenugreek-seeds.json';
 import item_flattened_rice_thick from './flattened-rice-thick.json';
 import item_french_beans from './french-beans.json';
@@ -243,6 +244,7 @@ export const items: Ingredient[] = [
   item_farsan_mixed_namkeen as unknown as Ingredient,
   item_fennel_powder as unknown as Ingredient,
   item_fennel_seeds_whole as unknown as Ingredient,
+  item_fenugreek_leaves_fresh as unknown as Ingredient,
   item_fenugreek_seeds as unknown as Ingredient,
   item_flattened_rice_thick as unknown as Ingredient,
   item_french_beans as unknown as Ingredient,

@@ -4,7 +4,7 @@
   "aliases": [
     "lal mirch"
   ],
-  "category": "Spice (ground)",
+  "category": "Spice",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -23,33 +23,42 @@
         "avg": 520,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      },
+      {
+        "date": "2026-11-19",
+        "min": 460,
+        "max": 660,
+        "avg": 550,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-19.md"
       }
     ],
     "currentEstimate": {
-      "min": 435,
-      "max": 590,
-      "avg": 515
+      "min": 455,
+      "max": 615,
+      "avg": 535
     },
     "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-25",
+    "trend": "stable",
+    "change30dPct": 4.9,
+    "lastObserved": "2026-11-19",
     "stale": false,
     "seasonal": false,
-    "listingCount": 9,
+    "listingCount": 7,
     "platforms": [
-      "BigBasket"
+      "BigBasket",
+      "Blinkit",
+      "Citymall",
+      "Zepto"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 1 platform (BigBasket) backs the range"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 43.5,
-    "max": 59,
-    "avg": 51.5
+    "min": 45.5,
+    "max": 61.5,
+    "avg": 53.5
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -260,20 +269,30 @@
       "priceMinInr": 92,
       "priceMaxInr": 92,
       "observedOn": "2026-10-04"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Everest Tikhalal Red Chilli Powder",
+      "pack": "200 g",
+      "priceMinInr": 132,
+      "priceMaxInr": 132,
+      "observedOn": "2026-11-19"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Everest Tikhalal Hot & Red Chilli Powder pouch",
+      "pack": "200 g",
+      "priceMinInr": 109,
+      "priceMaxInr": 109,
+      "observedOn": "2026-11-19"
     }
   ],
   "usedIn": [
     {
-      "dishNumber": 81,
-      "quantity": 0.3,
+      "dishNumber": 46,
+      "quantity": 1,
       "unit": "g",
-      "raw": "0.3 g per serving (a pinch, ⅛ tsp)"
-    },
-    {
-      "dishNumber": 84,
-      "quantity": 2,
-      "unit": "g",
-      "raw": "2 g per serving (¾ tsp)"
+      "raw": "1 g per serving (½ tsp)"
     }
   ],
   "versions": [
@@ -284,11 +303,15 @@
     {
       "date": "2026-10-25",
       "file": "FitPlate_Ingredients_2026-10-25.md"
+    },
+    {
+      "date": "2026-11-19",
+      "file": "FitPlate_Ingredients_2026-11-19.md"
     }
   ],
   "mergeMethod": {
     "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (single)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -299,7 +322,6 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 442.1–639.3 was wider than 30% of avg 514.5; narrowed to ±15%.",
-    "macrosPer100Estimate.kcal: Versions 2026-10-04 (282) and 2026-10-25 (375) differ by more than 25%; kept the newer."
+    "Range 453.1–652.0 was wider than 30% of avg 536.3; narrowed to ±15%."
   ]
 }
