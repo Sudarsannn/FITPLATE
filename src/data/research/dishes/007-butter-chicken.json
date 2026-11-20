@@ -614,7 +614,7 @@
       "trend": "unknown",
       "change30dPct": null,
       "lastObserved": "2026-10-05",
-      "stale": false,
+      "stale": true,
       "seasonal": false,
       "listingCount": 3,
       "platforms": [
@@ -673,7 +673,7 @@
     "trend": "unknown",
     "change30dPct": null,
     "lastObserved": "2026-10-05",
-    "stale": false,
+    "stale": true,
     "seasonal": false,
     "listingCount": 3,
     "platforms": [
@@ -888,6 +888,8 @@
     "tags": "tag engine (tags.ts) on the merged dish"
   },
   "mergeNotes": [
+    "price flag: stale",
+    "Latest observation 2026-10-05 is more than 45 days old.",
     "2026-11-03: research declares peanut not detected from ingredient names; added"
   ]
 }

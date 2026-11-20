@@ -1,0 +1,488 @@
+{
+  "id": "acid-reflux-gerd",
+  "type": "condition",
+  "name": "Acid reflux (GERD)",
+  "surveyQuestion": "Do you have any of these health conditions? (select all that apply) -> Acid reflux / GERD. Check: Has a doctor told you that you have GERD or acid reflux? Yes, GERD / Yes, on regular acid medicine (PPI or similar) / Heartburn sometimes, not diagnosed / Not sure (see a doctor) / No. Red-flag screen first: trouble or pain swallowing, weight loss without trying, repeated vomiting, black stools or vomiting blood, low haemoglobin or anaemia, new symptoms after age 50, chest pain, symptoms for more than 2 weeks despite lifestyle changes.",
+  "targets": [
+    {
+      "nutrient": "energy",
+      "unit": "kcal/day",
+      "generalAdult": 2110,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); weight loss only if overweight (ACG 2022, via search summary)"
+    },
+    {
+      "nutrient": "protein",
+      "unit": "g/kg/day",
+      "generalAdult": 0.83,
+      "profileValue": 0.83,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "total_fat",
+      "unit": "% energy",
+      "generalAdult": 30,
+      "profileValue": null,
+      "min": null,
+      "max": 30,
+      "direction": "same",
+      "source": "WHO 2023; DGI 2024; limit very fatty or fried meals if they trigger symptoms (ACG 2022 trigger-food advice, low certainty)"
+    },
+    {
+      "nutrient": "saturated_fat",
+      "unit": "% energy",
+      "generalAdult": 10,
+      "profileValue": null,
+      "min": null,
+      "max": 10,
+      "direction": "same",
+      "source": "WHO 2023"
+    },
+    {
+      "nutrient": "trans_fat",
+      "unit": "% energy",
+      "generalAdult": 1,
+      "profileValue": null,
+      "min": null,
+      "max": 1,
+      "direction": "same",
+      "source": "WHO 2023"
+    },
+    {
+      "nutrient": "mufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found"
+    },
+    {
+      "nutrient": "pufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found"
+    },
+    {
+      "nutrient": "omega_3",
+      "unit": "servings/week",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found"
+    },
+    {
+      "nutrient": "dietary_cholesterol",
+      "unit": "mg/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found"
+    },
+    {
+      "nutrient": "total_carbohydrate",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No GERD-specific value found; DGI 2024 (secondary, unverified)"
+    },
+    {
+      "nutrient": "added_sugar",
+      "unit": "g/day",
+      "generalAdult": null,
+      "profileValue": 25,
+      "min": null,
+      "max": 25,
+      "direction": "limit",
+      "source": "FitPlate app-wide cap (as P6, P14, P16); WHO 2015 under 10% energy; no GERD-specific source"
+    },
+    {
+      "nutrient": "fibre",
+      "unit": "g/day",
+      "generalAdult": 30,
+      "profileValue": 30,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "As P4 (about 30 g per 2,000 kcal); no GERD-specific fibre target found; ACG 2022 does not set one (via search, not confirmed in full text)"
+    },
+    {
+      "nutrient": "sodium",
+      "unit": "mg/day",
+      "generalAdult": 2000,
+      "profileValue": 2000,
+      "min": null,
+      "max": 2000,
+      "direction": "limit",
+      "source": "DGI 2024; topic 18; no GERD-specific sodium advice found"
+    },
+    {
+      "nutrient": "salt",
+      "unit": "g/day",
+      "generalAdult": 5,
+      "profileValue": 5,
+      "min": null,
+      "max": 5,
+      "direction": "limit",
+      "source": "DGI 2024; topic 18"
+    },
+    {
+      "nutrient": "potassium",
+      "unit": "mg/day",
+      "generalAdult": 3500,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); topic 19"
+    },
+    {
+      "nutrient": "calcium",
+      "unit": "mg/day",
+      "generalAdult": 1000,
+      "profileValue": 1000,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); topic 15; food first; long-term PPI may lower absorption (Ito and Jensen 2010; Heidelbaugh 2013)"
+    },
+    {
+      "nutrient": "iron",
+      "unit": "mg/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Men 19, women 29: ICMR-NIN 2020 (secondary, unverified); topic 21; long-term acid suppression may lower absorption; anaemia is a red flag (doctor)"
+    },
+    {
+      "nutrient": "magnesium",
+      "unit": "mg/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Men 440, women 370: ICMR-NIN 2020 (secondary, unverified); topic 17; FDA 2011: PPI use over about 1 year can lower magnesium"
+    },
+    {
+      "nutrient": "vitamin_d",
+      "unit": "ug/day",
+      "generalAdult": 15,
+      "profileValue": 15,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "vitamin_b12",
+      "unit": "ug/day",
+      "generalAdult": 2.2,
+      "profileValue": 2.2,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); topic 13; acid-reducing drugs can reduce B12 release from food (NIH ODS consumer sheet)"
+    },
+    {
+      "nutrient": "folate",
+      "unit": "ug DFE/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Men 300, women 220: ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "caffeine_drinks",
+      "unit": "drinks/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "limit",
+      "source": "No numeric limit found in GERD guidelines; reduce only if coffee or tea triggers your symptoms"
+    },
+    {
+      "nutrient": "alcohol",
+      "unit": "drinks/day",
+      "generalAdult": null,
+      "profileValue": 0,
+      "min": null,
+      "max": null,
+      "direction": "limit",
+      "source": "ACG 2022 (via search: avoid trigger foods; alcohol avoidance limited evidence); WHO 2023: no safe level"
+    },
+    {
+      "nutrient": "water",
+      "unit": "mL/day",
+      "generalAdult": 2500,
+      "profileValue": null,
+      "min": 1500,
+      "max": 2500,
+      "direction": "same",
+      "source": "FitPlate general range (topic 30): 2,500 ml men, 2,000 ml women; sip between meals; no GERD-specific volume found. Follow your doctor's advice."
+    }
+  ],
+  "bloodMarkers": [
+    {
+      "marker": "Haemoglobin and ferritin (context, anaemia is an alarm feature)",
+      "target": "Not set by FitPlate; see P11; unexplained anaemia needs a doctor",
+      "unit": "g/dL; ng/mL",
+      "source": "ASGE 2024 (via guideline summary); P11"
+    },
+    {
+      "marker": "Vitamin B12 (context if on long-term acid medicine)",
+      "target": "Not set by FitPlate; routine screening not recommended by Heidelbaugh 2013 review; doctor decides",
+      "unit": "pg/mL",
+      "source": "Heidelbaugh, Ther Adv Drug Saf 2013 (via search); topic 13"
+    },
+    {
+      "marker": "Serum magnesium (context if on long-term PPI)",
+      "target": "Not set by FitPlate; FDA 2011 says doctors may check it periodically, especially with digoxin or diuretics",
+      "unit": "mg/dL",
+      "source": "FDA Drug Safety Communication 2011 (via search); topic 17"
+    },
+    {
+      "marker": "Serum calcium (context if taking calcium carbonate antacids often)",
+      "target": "Not set by FitPlate; high calcium with antacid overuse is calcium-alkali syndrome; doctor interprets",
+      "unit": "mg/dL",
+      "source": "Case-series review via search (PMC9873449)"
+    },
+    {
+      "marker": "Cholesterol types, HbA1c, uric acid, eGFR, TSH",
+      "target": "Not applicable",
+      "unit": "",
+      "source": "Not applicable"
+    }
+  ],
+  "waterMl": {
+    "min": 1500,
+    "max": 2500,
+    "notes": "No change from the general FitPlate range (topic 30: 2,500 ml men, 2,000 ml women). Sip between meals and avoid large volumes with meals or just before lying down (est.). Plain still water is fine; fizzy water and soft drinks lower sphincter pressure in small studies, so limit if they trigger symptoms. In heat or exercise follow topic 31 (cap 4,500, est.). With kidney, heart or liver disease, pregnancy, a fluid limit or a diuretic show the general range only. Follow your doctor's advice."
+  },
+  "sodiumMgMax": 2000,
+  "dietaryCholesterolMgMax": null,
+  "foodsFavour": [
+    "smaller, earlier dinners",
+    "oats",
+    "poha and upma with less oil",
+    "idli and plain dosa",
+    "moong dal khichdi",
+    "boiled or steamed vegetables (lauki, tinda, carrot, beans)",
+    "grilled or baked chicken, fish and eggs without heavy gravy",
+    "low-fat curd or buttermilk if tolerated",
+    "ripe banana, papaya, melon (if tolerated)",
+    "water between meals",
+    "fibre from whole grains, dal and vegetables (est.)"
+  ],
+  "foodsLimit": [
+    "large late dinners",
+    "food within 2-3 hours of bedtime",
+    "fried snacks (samosa, pakora, vada pav)",
+    "very spicy or oily gravies if they trigger symptoms",
+    "pickles and papad (also salt)",
+    "chai or coffee on an empty stomach if it triggers symptoms",
+    "chocolate, mint and fizzy drinks if they trigger symptoms",
+    "citrus, tomato-heavy gravies and onion/garlic if they trigger symptoms",
+    "alcohol",
+    "tobacco",
+    "ENO or baking soda in repeated use (sodium load)",
+    "calcium carbonate antacids beyond label directions"
+  ],
+  "goodFitDishes": [
+    {
+      "dishNumber": 9,
+      "dishName": "Idli with Sambar"
+    },
+    {
+      "dishNumber": 1,
+      "dishName": "Poha"
+    },
+    {
+      "dishNumber": 52,
+      "dishName": "Moong Dal Khichdi"
+    },
+    {
+      "dishNumber": 41,
+      "dishName": "Pongal"
+    },
+    {
+      "dishNumber": 31,
+      "dishName": "Indian-style Overnight Oats"
+    },
+    {
+      "dishNumber": 35,
+      "dishName": "Curd Rice"
+    },
+    {
+      "dishNumber": 14,
+      "dishName": "Egg Bhurji"
+    },
+    {
+      "dishNumber": 71,
+      "dishName": "Ragi Dosa"
+    },
+    {
+      "dishNumber": 45,
+      "dishName": "Tandoori Chicken"
+    },
+    {
+      "dishNumber": 19,
+      "dishName": "Jeera Rice"
+    },
+    {
+      "dishNumber": 37,
+      "dishName": "Bhindi Masala"
+    },
+    {
+      "dishNumber": 80,
+      "dishName": "Masoor Dal"
+    }
+  ],
+  "cautionDishes": [
+    {
+      "dishNumber": 20,
+      "dishName": "Vada Pav",
+      "reason": "Fried, spicy chutney, late-evening snack (est.)"
+    },
+    {
+      "dishNumber": 65,
+      "dishName": "Puri Bhaji",
+      "reason": "Deep-fried and fatty, large meal (est.)"
+    },
+    {
+      "dishNumber": 28,
+      "dishName": "Chicken 65",
+      "reason": "Fried, chilli-heavy (est.)"
+    },
+    {
+      "dishNumber": 2,
+      "dishName": "Chicken Biryani",
+      "reason": "Large, oily, spicy dinner portion (est.)"
+    },
+    {
+      "dishNumber": 7,
+      "dishName": "Butter Chicken",
+      "reason": "Cream, butter and tomato gravy; high fat (est.)"
+    },
+    {
+      "dishNumber": 3,
+      "dishName": "Paneer Butter Masala",
+      "reason": "Cream, butter, tomato; high fat (est.)"
+    },
+    {
+      "dishNumber": 13,
+      "dishName": "Pav Bhaji",
+      "reason": "Butter, spice, tomato; often eaten late (est.)"
+    },
+    {
+      "dishNumber": 29,
+      "dishName": "Misal Pav",
+      "reason": "Very spicy, fried farsan topping (est.)"
+    },
+    {
+      "dishNumber": 79,
+      "dishName": "Gobi Manchurian",
+      "reason": "Fried, chilli and sauces, high salt (est.)"
+    },
+    {
+      "dishNumber": 11,
+      "dishName": "Aloo Paratha",
+      "reason": "Fat-heavy; large breakfast portion (est.)"
+    },
+    {
+      "dishNumber": 99,
+      "dishName": "Masala Chai",
+      "reason": "Caffeine; on an empty stomach it bothers some people (est.)"
+    },
+    {
+      "dishNumber": 100,
+      "dishName": "Cold Coffee",
+      "reason": "Caffeine, cold and sweet; trigger for some (est.)"
+    },
+    {
+      "dishNumber": 97,
+      "dishName": "Gulab Jamun",
+      "reason": "Fried and very sweet, late-night dessert (est.)"
+    }
+  ],
+  "conflictsWith": [
+    {
+      "profileId": "kidney-stones",
+      "rule": "Calcium carbonate antacids add calcium on top of food: stone formers ask a doctor first; fluid goal stays doctor-led (P14)"
+    },
+    {
+      "profileId": "high-blood-pressure",
+      "rule": "ENO, baking soda and effervescent antacids carry sodium; keep sodium under 2,000 mg (P3, topic 18)"
+    },
+    {
+      "profileId": "chronic-kidney-disease-early",
+      "rule": "Doctor sets fluids, sodium, magnesium and calcium; antacids with magnesium, aluminium or calcium need doctor input (P13)"
+    },
+    {
+      "profileId": "pregnancy",
+      "rule": "Pregnancy heartburn is common; doctor chooses any medicine; app shows lifestyle tips only (P22)"
+    },
+    {
+      "profileId": "fat-loss",
+      "rule": "Weight loss is the best-supported reflux measure if overweight, but no crash diets or long fasts; keep dinner earlier and smaller (P25)"
+    },
+    {
+      "profileId": "irritable-bowel-syndrome",
+      "rule": "Low-FODMAP and GERD trigger lists can clash (onion, garlic); change one thing at a time with a dietitian (P16)"
+    },
+    {
+      "profileId": "iron-deficiency-anaemia",
+      "rule": "Anaemia with reflux is an alarm feature: doctor first; acid medicine can reduce iron absorption (P11)"
+    }
+  ],
+  "requiresDoctorInput": true,
+  "requiresDoctorInputStated": true,
+  "fluidNote": "Follow your doctor's advice",
+  "warnings": [
+    "GERD is diagnosed by a doctor; FitPlate gives general food and habit information only",
+    "Red flags: trouble or pain swallowing, weight loss without trying, repeated vomiting, black stools or vomiting blood, anaemia, new symptoms after age 50, chest pain (rule out heart cause first), symptoms lasting more than 2 weeks despite lifestyle changes: see a doctor before any diet plan",
+    "Never advise on PPIs, H2 blockers, antacid doses, stopping or starting medicines",
+    "Calcium carbonate antacids: stay within label directions; very large amounts can cause high calcium (calcium-alkali syndrome); stone formers ask a doctor",
+    "ENO and baking soda contain sodium (about 0.7-0.85 g sodium per 4.3-5 g sachet, label-dependent); avoid regular use with high BP, heart, kidney or liver disease",
+    "Ayurvedic powders and churnas: no GERD evidence found; some Indian-made products had lead or mercury in a 2004 JAMA study of 70 products; ask a doctor",
+    "Pregnancy and infants: doctor; infants are out of scope"
+  ],
+  "lastResearched": "2026-11-20",
+  "versions": [
+    {
+      "date": "2026-11-20",
+      "file": "FitPlate_Nutrients_2026-11-20.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3); max as safety limit",
+    "limits": "safety limit (lower on conflict)",
+    "lists": "union",
+    "requiresDoctorInput": "stated true in any version, else newest version (missing flag + limits → true)"
+  },
+  "mergeNotes": [],
+  "needsReview": []
+}

@@ -239,6 +239,16 @@ export function ProfileScreen({ asTab = false }: { asTab?: boolean }) {
               <Ionicons name="chevron-forward" size={18} color={colors.muted} />
             </Glass>
           </PressableScale>
+          <PressableScale onPress={() => router.push('/settings')} accessibilityLabel="Settings" style={{ marginTop: 14 }}>
+            <Glass style={styles.linkRow}>
+              <IconBadge name="settings-outline" color={colors.muted} size={42} />
+              <View style={{ flex: 1 }}>
+                <Text style={{ color: colors.text, fontWeight: '800' }}>Settings</Text>
+                <Text style={[type.small, { color: colors.muted }]}>Units, notifications, export, privacy and about</Text>
+              </View>
+              <Ionicons name="chevron-forward" size={18} color={colors.muted} />
+            </Glass>
+          </PressableScale>
           <PressableScale onPress={() => router.push('/your-data')} accessibilityLabel="Your data: what we save and where" style={{ marginTop: 14 }}>
             <Glass style={styles.linkRow}>
               <IconBadge name="lock-closed-outline" color={colors.blue} size={42} />

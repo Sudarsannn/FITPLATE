@@ -10,6 +10,7 @@ import { useRecommend } from '../lib/useRecommend';
 import type { Budget } from '../models/survey';
 import { plausibleProtein, slotFor, SLOT_LABEL, type Slot } from '../services/recommend';
 import { colors, type } from '../theme';
+import { Gate } from '../components/LockedCard';
 
 const SLOTS: Slot[] = ['breakfast', 'lunch', 'snack', 'dinner'];
 const TIMES: { label: string; value: number | null }[] = [{ label: 'Any time', value: null }, { label: '15 min', value: 15 }, { label: '30 min', value: 30 }, { label: '60 min', value: 60 }];
@@ -23,6 +24,14 @@ const BUDGETS: { label: string; value: Budget | null | undefined }[] = [
 
 /** Day 30: "What should I eat?" and a workout for today, with the reasons for each pick (flag `recommendations`). */
 export default function Suggest() {
+  return (
+    <Gate feature="recommendations">
+      <SuggestBody />
+    </Gate>
+  );
+}
+
+function SuggestBody() {
   const [slot, setSlot] = useState<Slot | undefined>(undefined);
   const [maxMinutes, setMaxMinutes] = useState<number | null>(null);
   const [budget, setBudget] = useState<Budget | null | undefined>(undefined);

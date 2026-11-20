@@ -16,9 +16,18 @@ import { INSIGHTS_NOTE, suggestionsFor, weeklyCoverage } from '../services/insig
 import { supplementTotals } from '../services/supplements';
 import { fitsSurvey } from '../services/surveyMatch';
 import { colors, radius, type } from '../theme';
+import { Gate } from '../components/LockedCard';
 
 /** Day 19: this week's vitamin and mineral coverage, the top gaps, tasty-first ideas for each, and absorption tips (flag `nutritionInsights`). */
 export default function Insights() {
+  return (
+    <Gate feature="insights">
+      <InsightsBody />
+    </Gate>
+  );
+}
+
+function InsightsBody() {
   const { days, sex, profile, supplements } = useStore();
   const { micros } = useTargets();
   const dishes = useResearchDishes();

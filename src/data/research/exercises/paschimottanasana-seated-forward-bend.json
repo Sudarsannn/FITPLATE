@@ -1,0 +1,632 @@
+{
+  "id": "paschimottanasana-seated-forward-bend",
+  "number": 18,
+  "name": "Paschimottanasana (Seated Forward Bend)",
+  "otherNames": [
+    "Seated Forward Bend",
+    "Seated Forward Fold",
+    "Intense West Stretch",
+    "Back-body Stretch"
+  ],
+  "section": "yoga_stretch",
+  "type": "yoga_asana",
+  "equipment": [
+    "mat (optional)",
+    "folded blanket (optional)",
+    "yoga strap or towel (optional)"
+  ],
+  "noEquipmentAlternative": "Sit on a folded towel or thick book with bent knees and loop a towel around the feet",
+  "musclesPrimary": [
+    "hamstrings (biceps femoris, semitendinosus, semimembranosus)",
+    "calves (gastrocnemius, soleus)",
+    "erector spinae"
+  ],
+  "musclesSecondary": [
+    "gluteus maximus",
+    "deep back muscles",
+    "rectus femoris",
+    "quadriceps",
+    "deltoids",
+    "biceps"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 2.3,
+  "compendiumCode": "02150",
+  "metOptions": [
+    {
+      "code": "02150",
+      "met": 2.3,
+      "activity": "MET: 2.3, 2024 Adult Compendium of Physical Activities, code 02150, \"Yoga, Hatha\" (seen in the pacompendium.com conditioning-exercise listing via search summary; neighbouring code 02153 Hatha high int"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "flexibility",
+      "sets": 3,
+      "reps": "1 hold per round, blanket, soft knees, strap",
+      "timeSec": 30,
+      "restSec": 15,
+      "tempo": "exhale to hinge, 5 slow breaths, inhale to rise",
+      "perWeek": 4
+    },
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 2,
+      "reps": "1 hold per round, as a cool-down",
+      "timeSec": 30,
+      "restSec": 15,
+      "tempo": "5 slow breaths",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "relaxation",
+      "sets": 1,
+      "reps": "1 hold, pillow under the chest or on the knees",
+      "timeSec": 45,
+      "restSec": 0,
+      "tempo": "8 slow breaths",
+      "perWeek": 4
+    },
+    {
+      "level": "intermediate",
+      "goal": "flexibility",
+      "sets": 3,
+      "reps": "1 hold per round",
+      "timeSec": 45,
+      "restSec": 15,
+      "tempo": "8 slow breaths",
+      "perWeek": 4
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "1 hold per round",
+      "timeSec": 35,
+      "restSec": 15,
+      "tempo": "6 slow breaths",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "flexibility",
+      "sets": 3,
+      "reps": "1 hold per round, straight legs, hands at the feet",
+      "timeSec": 60,
+      "restSec": 15,
+      "tempo": "10 slow breaths",
+      "perWeek": 5
+    },
+    {
+      "level": "advanced",
+      "goal": "relaxation",
+      "sets": 1,
+      "reps": "1 long hold",
+      "timeSec": 90,
+      "restSec": 0,
+      "tempo": "12 slow breaths",
+      "perWeek": 4
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "hold_timer",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "folded_forward_enough",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": "<= 75",
+        "parsed": {
+          "op": "<=",
+          "value": 75,
+          "max": null
+        }
+      },
+      {
+        "name": "not_over_folded",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": ">= 20",
+        "parsed": {
+          "op": ">=",
+          "value": 20,
+          "max": null
+        }
+      },
+      {
+        "name": "legs_not_too_bent",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": ">= 140",
+        "parsed": {
+          "op": ">=",
+          "value": 140,
+          "max": null
+        }
+      },
+      {
+        "name": "hold_long_enough",
+        "joint": "time",
+        "angleDeg": "hold >= 10 s (position flag, not an angle)",
+        "parsed": null
+      }
+    ],
+    "minRepSec": 10
+  },
+  "formChecks": [
+    {
+      "joint": "hip",
+      "rule": "hip angle > 75 deg (equals folded_forward_enough phase threshold)",
+      "message": "Fold a little deeper from your hips"
+    },
+    {
+      "joint": "hip",
+      "rule": "hip angle < 20 deg (equals not_over_folded phase threshold)",
+      "message": "Come up a little, keep your back long"
+    },
+    {
+      "joint": "knee",
+      "rule": "knee angle < 140 deg (equals legs_not_too_bent phase threshold)",
+      "message": "Legs a little straighter, or keep a gentle bend only"
+    },
+    {
+      "joint": "time",
+      "rule": "hold shorter than 10 s (equals min_rep_sec and hold_long_enough)",
+      "message": "Stay a little longer, breathe slowly"
+    },
+    {
+      "joint": "spine",
+      "rule": "rounded back, C-curve between shoulder and hip (position flag, not an angle)",
+      "message": "Lengthen your back, fold from the hips"
+    }
+  ],
+  "safetyFlags": [
+    "mild_stretch_never_pain",
+    "do_not_round_back_hinge_from_hips",
+    "sciatica_disc_problem_avoid_ask_doctor",
+    "lower_back_pain_ask_doctor",
+    "osteoporosis_avoid_spinal_flexion_ask_doctor",
+    "pregnancy_ask_doctor_legs_wide_no_belly_compression",
+    "hypertension_slow_no_breath_holding",
+    "heart_disease_ask_doctor",
+    "recent_hamstring_injury_avoid",
+    "knee_pain_soft_knees",
+    "recent_surgery_ask_doctor",
+    "rise_slowly_on_an_inhale"
+  ],
+  "progressions": [
+    "Straighter legs with hands at the ankles or feet while the back stays long",
+    "Longer hold of 8 to 12 breaths",
+    "Hands holding the feet with the chest nearer the thighs (est.; advanced, healthy back and hamstrings only)"
+  ],
+  "regressions": [
+    "Knees bent with a strap around the feet",
+    "Rolled blanket under the knees, hands on the shins",
+    "Chair-supported hip hinge or lying hamstring stretch with a strap"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "sit tall on a folded blanket, legs forward",
+      "textOverlay": "Sit on a blanket. Sit tall."
+    },
+    {
+      "seconds": 6,
+      "angle": "front, 1.5 m",
+      "shows": "feet flexed, kneecaps up, soft knees",
+      "textOverlay": "Toes up, soft knees."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "breathe in to lengthen, out to hinge from the hips",
+      "textOverlay": "Fold from the hips, not the waist."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "hold with a strap around the feet, steady breathing",
+      "textOverlay": "Strap on. 5 slow breaths."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "bent-knee version with a rolled blanket under the knees",
+      "textOverlay": "Bend the knees if you need to."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "easing out: lengthen forward and up, roll up slowly",
+      "textOverlay": "Come up slow, head last."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "wrong (rounded back, hauling on toes) vs right (long back, strap)",
+      "textOverlay": "Long back beats touching toes."
+    },
+    {
+      "seconds": 6,
+      "angle": "side, 1.5 m",
+      "shows": "wrong (flat on the floor, tucked pelvis) vs right (on a blanket, pelvis tipped)",
+      "textOverlay": "Sit higher, tip the pelvis."
+    }
+  ],
+  "lastResearched": "2026-11-20",
+  "setupSteps": [
+    "Warm up first. 2 to 3 minutes of gentle movement (a few cat-cows, ankle circles, easy knee hugs), or do the pose after other poses. Never stretch cold.",
+    "Floor. Flat mat or carpeted floor; avoid slippery tiles with bare skin.",
+    "Sit on a prop. Place a folded blanket or firm cushion about 5 to 10 cm thick (est.) under the sitting bones. Sources explain that raising the hips above the knees makes it easier to tip the pelvis forward, which is what the pose needs.",
+    "Legs. Stretch both legs straight in front, feet together or a few cm apart, toes pointing up. If the hamstrings or lower back pull, bend the knees softly or place a rolled blanket under the knees (sources suggest both).",
+    "Sit tall. Press the sitting bones down, lengthen the spine up (Dandasana, Staff pose), hands beside the hips.",
+    "Strap or towel (optional). Loop it around the balls of both feet and hold the ends like reins, elbows slightly bent. Use it whenever the hands cannot reach the feet without rounding the back.",
+    "Clothing. Stretchy pants; no tight jeans; a fitted top so the camera sees the shoulder and hip.",
+    "Camera. Phone on the floor or a low stool at about hip height (about 40 to 60 cm, est.), about 2 m to the side, so the whole body from head to feet is in frame (see sections 11 and 12)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Sit tall",
+      "action": "sit on the blanket with legs forward, spine long, hands by the hips.",
+      "feel": "sitting bones pressing down, crown of the head lifting.",
+      "breathing": "2 slow breaths.",
+      "tempo": "6 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Flex the feet",
+      "action": "draw the toes toward the shins and press lightly through the heels.",
+      "feel": "a light stretch in the calves; the thighs gently awake.",
+      "breathing": "steady.",
+      "tempo": "3 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Soften the knees if needed",
+      "action": "let the knees bend a small amount, or place the roll under them; keep them softly bent for the whole pose if the back of the legs pull.",
+      "feel": "pull in the hamstrings easing; the pelvis free to tip forward.",
+      "breathing": "breathe out as you soften.",
+      "tempo": "2 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Lengthen on an in-breath",
+      "action": "breathe in and lift the chest, reaching the arms forward (or up beside the ears).",
+      "feel": "the spine growing taller, the ribs lifting away from the belly.",
+      "breathing": "in-breath.",
+      "tempo": "3 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Hinge from the hips",
+      "action": "breathe out and tip the pelvis forward, leading with the chest, as if folding at the hip joint, not at the waist.",
+      "feel": "a pull in the hamstrings and, lightly, along the back; the belly moving toward the thighs.",
+      "breathing": "slow out-breath.",
+      "tempo": "4 to 5 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Reach only as far as the back stays long",
+      "action": "rest the hands on the shins, ankles, feet or on the strap, wherever the spine can stay long.",
+      "feel": "a comfortable stretch, about 4 to 5 out of 10, no pain.",
+      "breathing": "steady.",
+      "tempo": "3 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Hold",
+      "action": "stay with slow nose breaths. Beginners about 5 breaths (about 30 seconds, est.); sources range from a few breaths to 30 seconds, with The Yoga Institute suggesting building up toward 1 to 2 minutes.",
+      "feel": "slow release of the hamstrings; with each out-breath a tiny bit more fold, never forced.",
+      "breathing": "slow nose breaths; count each out-breath; never hold the breath.",
+      "tempo": "20 to 40 seconds (est.).",
+      "visualCheck": null
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Ease out slowly",
+      "action": "on an in-breath, lengthen the chest forward and up, then roll up with a long spine; the hands slide back to the floor beside the hips.",
+      "feel": "the back muscles lifting you; no dizziness.",
+      "breathing": "in-breath rising.",
+      "tempo": "4 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 9,
+      "part": null,
+      "title": "Rest",
+      "action": "sit tall or lean back on the hands; shake out the legs or hug the knees.",
+      "feel": "the hamstrings soft and warm.",
+      "breathing": "3 slow breaths.",
+      "tempo": "10 to 15 seconds between rounds.",
+      "visualCheck": "sitting tall, relaxed shoulders."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Rounding the back to reach the toes",
+      "text": "Rounding the back to reach the toes. It loads the lower back and discs, and takes the stretch off the hamstrings. Fix: hinge from the hips, use a strap, bend the knees, reach only as far as the back stays long."
+    },
+    {
+      "title": "Sitting flat on the floor with a tucked pelvis",
+      "text": "Sitting flat on the floor with a tucked pelvis. The pelvis cannot tip forward, so the back rounds. Fix: sit on a folded blanket so the hips are higher than the knees."
+    },
+    {
+      "title": "Locking or hyperextending the knees",
+      "text": "Locking or hyperextending the knees. It can strain the back of the knee. Fix: keep a soft bend in the knees."
+    },
+    {
+      "title": "Yanking with the strap or arms",
+      "text": "Yanking with the strap or arms. Pulling hard forces the stretch and risks a hamstring strain. Fix: hold lightly and let the out-breath do the work."
+    },
+    {
+      "title": "Bouncing or forcing deeper",
+      "text": "Bouncing or forcing deeper. Fast pulses can overstretch the muscle. Fix: stay still, add depth only with each exhale, no pain."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. It raises effort and tension. Fix: slow nose breaths; count out-breaths."
+    },
+    {
+      "title": "Chasing the forehead to the knees (or toes touching) as the goal",
+      "text": "Chasing the forehead to the knees (or toes touching) as the goal. It leads to rounding. Fix: aim for a long spine, not a touch."
+    },
+    {
+      "title": "Coming up fast",
+      "text": "Coming up fast. Dizziness can follow, especially with low or high blood pressure. Fix: lengthen the chest forward first, then rise slowly on an in-breath."
+    },
+    {
+      "title": "Stretching cold or one-sided",
+      "text": "Stretching cold or one-sided. Stiff muscles resist; uneven pulling twists the pelvis. Fix: warm up; keep both sitting bones heavy and level."
+    }
+  ],
+  "safetyNotes": [
+    "Mild stretch, never pain. A pull at the back of the thighs is normal; sharp pain, a pinch in the back or knee, or tingling is not.",
+    "Back and discs: forward flexion of the spine loads the lower back; the NIOS manual says people with sciatica, slip disc or any back problems should avoid this asana, and teaching sources list disc problems, sacroiliac pain and sciatica as contraindications (snippets). Healthline notes a seated forward bend with a rounded spine can strain the low back and irritate the sciatic nerve (snippet). If the doctor allows it, hinge from the hips with a neutral spine, bend the knees and use a strap.",
+    "Osteoporosis: a 2013 review (International Journal of Yoga Therapy; seen as a snippet) concluded that movements with spinal flexion can raise the risk of vertebral compression fractures; some sources attribute similar advice to the National Osteoporosis Foundation (secondary reports only). Ask a doctor; if cleared, keep the spine long and fold from the hips only.",
+    "Pregnancy: teaching sources list the second and third trimesters as a precaution for this pose (snippets). If cleared by a doctor or midwife, sit with the legs wide apart, do not compress the belly and do not lie flat on the back for long after about 20 weeks (ACOG concern as quoted by Lamaze; snippet).",
+    "Blood pressure: sources disagree on gentle forward folds for high blood pressure; Harvard Health stresses care with poses where the head is below the heart and advises checking with a doctor (snippet); this seated fold keeps the head near hip level. Move slowly, do not hold the breath, come up slowly.",
+    "Hamstring injury: avoid stretching a recent hamstring strain; stop at sharp pain.",
+    "Stop immediately if you feel: sharp back or leg pain, numbness or tingling down the leg, dizziness, a pop or pull in the back of the thigh, chest pain or breathlessness.",
+    "Spotter: not needed. Gym etiquette: keep the mat and strap out of the walkway; do not hog a stretching area."
+  ],
+  "sources": [
+    "Ministry of AYUSH Common Yoga Protocol (CYP): sitting postures seen in search summaries as Bhadrasana, Vajrasana and Virasana; Paschimottanasana not seen in the retrieved text (official PDF text not opened): https://yogamdniy.nic.in/files/pdf/CYP-2023-English.pdf ; https://new1.isro.gov.in/media_isro/pdf/CYP%20english.pdf ; https://www.mea.gov.in/images/pdf/common-yoga-protocol-english.pdf ; https://mea.gov.in/images/attach/Booklet_english_2016.pdf ; https://www.indoindians.com/42-yoga-poses-of-common-yoga-protocol-of-international-day-of-yoga/",
+    "NIOS (National Institute of Open Schooling) yoga practical manual: technique (hinge from hips, 3 to 5 rounds) and the avoid-with-sciatica or slip-disc limitation (snippet): https://digital.nios.ac.in/content/373en/Pract/20.pdf",
+    "The Yoga Institute (Mumbai), Paschimottanasana page: hold about 30 seconds, building up to 1 to 2 minutes (snippet): https://theyogainstitute.org/yogendra-paschimottanasana/",
+    "Yoga U Online, Seated Forward Bend pages (strap and blanket version, contraindications: sciatica, sacroiliac dysfunction, disc problems, second and third trimesters; snippets): https://yogauonline.com/yoga-poses/seated-forward-bend-pose/ ; https://yogauonline.com/pose-library/yoga-pose-primer-seated-forward-bend-pose-paschimottanasana/ ; https://yogauonline.com/yoga-practice-tips-and-inspiration/yoga-practice-tips-spine-heathy-forward-bends",
+    "Brett Larkin, Liforme, Yoga Matters and Inside Yoga pose pages (technique, strap, blanket, bent knees; snippets): https://www.brettlarkin.com/seated-forward-bend-pose-paschimottanasana/ ; https://liforme.com/es-nl/blogs/blog/seated-forward-fold-paschimottanasana ; https://www.yogamatters.com/blogs/pose-library/seated-forward-fold-paschimottanasana ; https://insideyoga.org/asana-library/paschimottanasana/",
+    "Dr. Weil, Seated Forward Bend (comfortable range; snippet) and Art of Living pose page (snippet): https://www.drweil.com/health-wellness/balanced-living/seated-forward-bend-pose/ ; https://www.artofliving.org/us-en/seated-forward-bend-paschimottanasana",
+    "Yoga, vertebral fractures and osteoporosis: research and recommendations (Int J Yoga Therapy, 2013; spinal flexion and vertebral compression fracture risk; snippet): https://pubmed.ncbi.nlm.nih.gov/24016820/",
+    "Healthline, sciatica exercises to avoid (seated forward bend with rounded spine; snippet) and Live Science, Yoga made safer (osteoporosis and forward bending; snippet): https://healthline.com/health/back-pain/sciatica-exercises-to-avoid ; https://livescience.com/18059-yoga-safe-tips-avoid-injuries.html",
+    "Hamstring flexibility and yoga: International Journal of Yoga 2021 rugby players trial (DOAJ record; snippet): https://doaj.org/article/66448b3e18e64ab896c4e5780cdd1bee ; 2025 IJHSR tailors hatha yoga study (snippet): https://www.ijhsr.org/IJHSR_Vol.15_Issue.8_August2025/IJHSR22.pdf",
+    "Harvard Health, Yoga and high blood pressure (head-below-heart caution; snippet): https://www.health.harvard.edu/heart-health/yoga-and-high-blood-pressure ; PMC table on hypertension precautions: https://pmc.ncbi.nlm.nih.gov/articles/PMC10989416/table/T3",
+    "ACOG Committee Opinion 804, Physical Activity and Exercise During Pregnancy and the Postpartum Period (via PubMed listing and summaries); Lamaze quoting ACOG on lying on the back after 20 weeks (snippet); ACE prenatal modifications (snippet): https://pubmed.ncbi.nlm.nih.gov/33481513/ ; https://lamaze.org/Giving-Birth-with-Confidence/GBWC-Post/simple-fitness-routines-to-fit-into-your-pregnancy ; https://www.acefitness.org/education-and-resources/professional/expert-articles/5558/prenatal-fitness-modifications-for-safety-and-comfort",
+    "Yoga and knee osteoarthritis review (2019, weak recommendation; snippet): https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2019.00661/pdf ; NIH NCCAM yoga fact sheet (archived; asthma evidence; snippet): https://webarchive.library.unt.edu/web/20120915111222/http://nccam.nih.gov/health/yoga/introduction.htm",
+    "Herrmann SD et al., 2024 Adult Compendium of Physical Activities (02150 Yoga, Hatha 2.3; seen via search snippet): https://pacompendium.com/conditioning-exercise ; https://pacompendium.com/wp-content/uploads/2024/01/2024-adult-compendium_1_2024.pdf ; https://pubmed.ncbi.nlm.nih.gov/38242596/",
+    "Condition sources (general, from earlier items): ADA PMC5317029: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/ ; PCOS position statement: https://researchers.westernsydney.edu.au/en/publications/exercise-in-the-management-of-polycystic-ovary-syndrome-a-positio/ ; Marshfield Clinic asthma: https://shine365.marshfieldclinic.org/wellness/asthma-exercise/",
+    "Hold time: about 30 seconds building to 1 to 2 minutes (Yoga Institute) versus 3 to 5 rounds (NIOS). We chose 5 breaths (about 30 s, est.).",
+    "Straight versus bent knees: classical straight legs versus modern soft knees or a roll. We chose soft knees for beginners.",
+    "Touching toes versus a long spine: traditional goal versus a hinge with a strap. We chose the long spine.",
+    "Back conditions: NIOS says avoid with sciatica, slip disc or back problems; modern sources allow a modified hinge. We chose \"ask a doctor; do not round; stop at leg symptoms\".",
+    "Not found: MDNIY technique page; confirmation that the pose is in the AYUSH CYP (it did not appear in retrieved text); a pose-specific MET; measured joint-angle norms; the full text of the osteoporosis and hamstring trials; ACOG pose-specific wording; clinical sources for cholesterol, thyroid, heart disease, postpartum, surgery for this pose; Harvard Health text on forward folds (paywalled). Our thresholds are estimates.",
+    "Most pages were seen only as search snippets or summaries; direct page fetches were not possible."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 43.5,
+      "70kg": 37.3,
+      "80kg": 32.6
+    },
+    "per300kcal": {
+      "60kg": 130.4,
+      "70kg": 111.8,
+      "80kg": 97.8
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "yoga",
+    "mobility",
+    "stretching",
+    "flexibility",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "small_flat",
+    "quiet",
+    "3_5_min",
+    "cool_down",
+    "evening",
+    "any_time",
+    "relaxation"
+  ],
+  "swapsByAccess": {
+    "none": "Lying hamstring stretch with a towel around one foot, or chair-supported hip hinge (Hamstring stretch, Yoga & Stretch 5)",
+    "home_equipment": "Strap or resistance band around the feet, bolster or cushion under the hips; or Hamstring stretch (Yoga & Stretch 5)",
+    "basic_gym": "Floor-mat area with a folded mat under the hips, or a bench for a seated hinge; or Hamstring stretch (Yoga & Stretch 5)",
+    "full_gym": "Studio mat area with blocks and straps; or the lying hamstring stretch on a bench"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "Slow movement, no breath-holding, shallow hinge with the chest high, rise slowly; ask a doctor if on medicine",
+      "source": "Harvard Health, Yoga and high blood pressure (snippet); Not found (pose-specific)"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "modify",
+      "change": "Check feet; eat first if on glucose-lowering medicine; rise slowly; ask a doctor",
+      "source": "ADA PMC5317029 (general); yoga-studio resource (snippet); Not found (pose-specific)"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "Personal clearance needed; if cleared, slow, shallow, no breath-holding",
+      "source": "Not found (pose-specific)"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "No change (source not found)",
+      "source": "Not found"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Sit higher on a firm blanket, bend the knees, use a strap, spread the legs slightly; avoid compressing the belly",
+      "source": "Not found (pose-specific)"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "No pose-specific caution found",
+      "source": "PCOS exercise position statement (general); Not found (pose-specific)"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "No clinical caution found",
+      "source": "Not found"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Reliever inhaler nearby; shallow fold and slow breathing; stop if wheezing",
+      "source": "NIH NCCAM yoga fact sheet (snippet); Marshfield Clinic asthma exercise page (general)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Soft or bent knees with a roll or blanket under them; stop at knee pain",
+      "source": "2019 yoga and knee osteoarthritis review (snippet); Not found (pose-specific)"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "ask_doctor",
+      "change": "Only a hinge with a neutral spine, bent knees, a high seat and a strap; avoid rounding; stop if pain spreads; NIOS says avoid with sciatica or slip disc",
+      "source": "NIOS yoga practical manual (snippet); Yoga U (snippet); Not found (clinical)"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "modify",
+      "change": "Hands on the thighs or shins instead of reaching or pulling a strap",
+      "source": "Teaching sources (snippets); Not found (clinical)"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "ask_doctor",
+      "change": "Avoid spinal rounding; if cleared, hinge from the hips with a long spine and a high seat",
+      "source": "Int J Yoga Therapy 2013 review PubMed 24016820 (snippet); NOF advice via secondary sites (snippets)"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "ask_doctor",
+      "change": "Second and third trimesters listed as a precaution; if cleared, legs wide, do not compress the belly, hinge only",
+      "source": "Yoga U (snippet); Lamaze quoting ACOG (snippet); ACOG Committee Opinion 804 (general)"
+    },
+    {
+      "condition": "postpartum",
+      "status": "modify",
+      "change": "Start gently after clearance; keep the back long; stop if pelvic, abdominal or back pain or leaking",
+      "source": "ACOG Committee Opinion 804 via summaries (snippet); Not found (pose-specific)"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Follow the surgeon's advice; back, hip, hamstring, knee and abdominal surgery especially",
+      "source": "Not found"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "home",
+      "office_desk"
+    ],
+    "bodyRegion": [
+      "lower",
+      "core"
+    ],
+    "goalTags": [
+      "flexibility",
+      "relaxation",
+      "general_fitness"
+    ],
+    "intensity": "light",
+    "noise": "quiet",
+    "space": "mat_only",
+    "typicalMinutes": 4,
+    "kcalPer10min70kg": 27,
+    "difficulty1to5": 2,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Yoga & stretch",
+    "Home",
+    "Office desk",
+    "No equipment",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Yoga",
+    "Legs",
+    "Back",
+    "Hold timer",
+    "Under 10 min"
+  ],
+  "needsReview": [
+    "rep_counter phase \"hold_long_enough\" (time): angle \"hold >= 10 s (position flag, not an angle)\" is not a parseable angle"
+  ],
+  "versions": [
+    {
+      "date": "2026-11-20",
+      "file": "FitPlate_Fitness_2026-11-20.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

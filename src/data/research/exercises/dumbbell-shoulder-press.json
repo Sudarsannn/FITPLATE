@@ -1,0 +1,648 @@
+{
+  "id": "dumbbell-shoulder-press",
+  "number": 18,
+  "name": "Dumbbell shoulder press",
+  "otherNames": [
+    "Dumbbell overhead press",
+    "Seated dumbbell press",
+    "Standing dumbbell press",
+    "Neutral-grip dumbbell press",
+    "Parallel-grip dumbbell press",
+    "Palms-forward dumbbell press",
+    "Water-bottle press",
+    "Rucksack press",
+    "Pike push-up (no-equipment alternative)"
+  ],
+  "section": "home",
+  "type": "strength",
+  "equipment": [
+    "pair of dumbbells",
+    "chair with firm upright back or bench",
+    "non-slip exercise mat"
+  ],
+  "noEquipmentAlternative": "Two filled 1-2 litre plastic water bottles or a rucksack with books held by its top handle, pressed overhead seated or standing; or the pike push-up (hands on the floor, hips high) as a bodyweight overhead-type press.",
+  "musclesPrimary": [
+    "anterior deltoid",
+    "medial deltoid",
+    "triceps brachii"
+  ],
+  "musclesSecondary": [
+    "upper pectoralis major",
+    "upper trapezius",
+    "serratus anterior",
+    "rotator cuff",
+    "rectus abdominis",
+    "obliques",
+    "transversus abdominis",
+    "gluteus maximus",
+    "erector spinae"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 3.5,
+  "compendiumCode": "02054",
+  "metOptions": [
+    {
+      "code": "02054",
+      "met": 3.5,
+      "activity": "MET: 3.5, Compendium code 02054, \"resistance (weight) training, multiple exercises, 8-15 repetitions at varied resistance\" (2024 Adult Compendium of Physical Activities, conditioning-exercise table; v"
+    },
+    {
+      "code": "02050",
+      "met": 4.3,
+      "activity": "Extras (text only, not used in the JSON): 02052 (squat and deadlift training) = 5.0, 02055 (circuit-style) = 5.8 and 02050 (vigorous free-weight) = 6.0 from search summaries; the wording of 02050 was "
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "8-10 slow reps, seated, neutral grip, RPE 5-6 with 3-4 reps in reserve",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "2 s press, 1 s hold, 3 s lower",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 3,
+      "reps": "10 slow reps, RPE 5-6, paired with walking or a cardio block",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2 s press, 1 s hold, 3 s lower",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "10-12 reps, 3 reps in reserve",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "2 s press, 1 s hold, 3 s lower",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "strength",
+      "sets": 3,
+      "reps": "6-8 reps with a heavier weight, 2-3 reps in reserve, clean form",
+      "timeSec": null,
+      "restSec": 105,
+      "tempo": "2 s press, 1 s hold, 3 s lower",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 2,
+      "reps": "12-15 light reps, 3-4 reps in reserve",
+      "timeSec": null,
+      "restSec": 50,
+      "tempo": "2 s press, 3 s lower",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "8-12 reps, standing, 1-3 reps in reserve",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "2 s press, 1 s hold, 3 s lower",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": 4,
+      "reps": "4-6 heavy reps, 0-2 reps in reserve",
+      "timeSec": null,
+      "restSec": 120,
+      "tempo": "2 s press, 1 s hold, 3 s lower",
+      "perWeek": 2
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "either",
+    "landmarks": [
+      "nose",
+      "left_ear",
+      "right_ear",
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "bottom_elbow",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": "<= 100",
+        "parsed": {
+          "op": "<=",
+          "value": 100,
+          "max": null
+        }
+      },
+      {
+        "name": "top_elbow",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": ">= 165",
+        "parsed": {
+          "op": ">=",
+          "value": 165,
+          "max": null
+        }
+      },
+      {
+        "name": "trunk_line_hip_standing",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": ">= 165",
+        "parsed": {
+          "op": ">=",
+          "value": 165,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 2.5
+  },
+  "formChecks": [
+    {
+      "joint": "elbow",
+      "rule": "elbow angle > 100 degrees at the bottom (equals bottom_elbow phase threshold)",
+      "message": "Lower the weights to shoulder height"
+    },
+    {
+      "joint": "elbow",
+      "rule": "elbow angle < 165 degrees at the top (equals top_elbow phase threshold)",
+      "message": "Press up until your arms are nearly straight"
+    },
+    {
+      "joint": "hip",
+      "rule": "hip angle < 165 degrees during the set, standing version (equals trunk_line_hip_standing phase threshold)",
+      "message": "Stand tall: ribs down, glutes tight"
+    },
+    {
+      "joint": "lower_back",
+      "rule": "back arch flag: shoulder landmark moves behind the hip landmark by more than the set margin in the side view (position flag, not an angle)",
+      "message": "Don't arch your back: ribs down"
+    },
+    {
+      "joint": "wrists",
+      "rule": "asymmetry flag: one wrist finishes higher than the other at the top by more than the set margin in the front view (position flag, not an angle)",
+      "message": "Press both arms evenly"
+    },
+    {
+      "joint": "shoulders",
+      "rule": "shrug flag: shoulders rise toward the ears by more than the set margin (position flag, not an angle)",
+      "message": "Shoulders down, away from your ears"
+    },
+    {
+      "joint": "elbow",
+      "rule": "rep shorter than 2.5 s (rushing)",
+      "message": "Slow down: 3 seconds to lower"
+    }
+  ],
+  "safetyFlags": [
+    "check_ceiling_height_and_switch_off_fan_before_pressing",
+    "set_dumbbells_down_gently_on_mat_or_towel_no_dropping",
+    "chair_on_non_slip_mat_or_against_wall",
+    "seated_neutral_grip_light_weight_first",
+    "light_weight_3_to_4_reps_in_reserve_for_beginners",
+    "do_not_hold_breath_breathe_out_on_press",
+    "do_not_arch_lower_back_ribs_down",
+    "no_hard_lockout_soft_elbows",
+    "no_glass_bottles",
+    "hypertension_light_load_no_breath_holding",
+    "heart_disease_ask_doctor_first",
+    "shoulder_problems_stop_if_pinching_or_painful_arc_use_incline_or_floor_press",
+    "lower_back_pain_seated_with_back_support_no_arching",
+    "osteoporosis_ask_doctor_neutral_spine",
+    "pregnancy_ask_obstetrician_seated_supported_light",
+    "postpartum_ask_physiotherapist_first",
+    "recent_surgery_get_approval",
+    "stop_with_chest_pain_dizziness_headache_or_sharp_pain"
+  ],
+  "progressions": [
+    "standing dumbbell press, then palms-forward grip, with a lighter weight at first",
+    "heavier dumbbells within 1-3 reps in reserve, a 1-2 s pause at the top or a 4 s lowering",
+    "single-arm or alternating press, then push press or feet-raised pike push-up; in a gym barbell overhead press (Gym 32) or shoulder press machine (Gym 33)"
+  ],
+  "regressions": [
+    "seated neutral-grip press with very light weights or two bottles and a short range",
+    "incline press or front raise to eye level with lighter weights, a more horizontal press for sore shoulders",
+    "empty-hand overhead reach and wall slide, or a one-arm-at-a-time press with the free hand on the thigh"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "front, chest height, 2.5 m",
+      "shows": "setup: sitting back in the chair, feet flat, dumbbells on thighs; ceiling and fan check",
+      "textOverlay": "Back against the chair. Fan off. Check the ceiling."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, chest height, 2.5 m",
+      "shows": "start position: dumbbells at shoulder height, neutral grip, forearms vertical, wrists over elbows",
+      "textOverlay": "Forearms straight up. Wrists over elbows."
+    },
+    {
+      "seconds": 10,
+      "angle": "side, chest height, 2.5 m",
+      "shows": "full rep: brace, press, soft lockout, slow lower",
+      "textOverlay": "Brace. Press up. Lower in 3."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, chest height, 2.5 m",
+      "shows": "both arms rise together and finish level; symmetric versus uneven",
+      "textOverlay": "Both arms together."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, chest height, 2.5 m",
+      "shows": "ribs down versus arched lower back",
+      "textOverlay": "Ribs down. Glutes on."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, chest height, 2.5 m",
+      "shows": "shrug fault versus shoulders down and away from the ears",
+      "textOverlay": "Don't shrug."
+    },
+    {
+      "seconds": 8,
+      "angle": "front-three-quarter, chest height, 2.5 m",
+      "shows": "standing version, palms-forward grip, and bottle or rucksack press",
+      "textOverlay": "Standing: glutes tight. No dumbbells? Use bottles."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, floor height, 2.5 m",
+      "shows": "quiet set-down onto a towel with a 3 s count, chair on a mat, and a pike push-up clip",
+      "textOverlay": "Set them down softly."
+    }
+  ],
+  "lastResearched": "2026-11-20",
+  "setupSteps": [
+    "Pick the version. *Seated on a chair or bench (recommended first):* a firm chair with an upright back (no wheels, no arms that block the elbows) or a bench with back support. Sit all the way back, feet flat on the floor, hip-width apart. *Standing:* feet hip-width, knees soft, weight even on the whole foot. *No equipment:* bottles or a rucksack in the same positions; or the pike push-up.",
+    "Overhead clearance check. Hold your arms straight up and check: nothing within an arm and a dumbbell's reach above (light fitting, ceiling fan, shelf, door frame); fan switched off and stopped; if it is too low, use a shortened lockout or the pike push-up.",
+    "Floor. A non-slip mat on a flat spot; chair on the mat or against a wall; a folded towel beside the chair to set the weights on.",
+    "Pick up the dumbbells safely. With the dumbbells on the floor, bend knees and hips and keep the back flat to lift them to the thighs, then kick or lift one at a time to shoulder height. Do not swing them up with the back.",
+    "Starting position. Dumbbells at shoulder height, forearms vertical, elbows bent to roughly 90 degrees (est.) and a little in front of the body, not straight out to the sides (sources say about 30 degrees in front of the line of the shoulders, the \"scapular plane\"; this is a coaching convention, one source says there is no single correct angle, so adjust to comfort; snippets).",
+    "Grip. *Neutral grip (recommended first):* palms facing each other, fingers toward the face; the easier-on-joints option most guides give. *Palms-forward:* knuckles pointing up, palms facing away; a common variant, but it asks more of the shoulder, so use a lighter weight. Wrists straight and stacked over the elbows. Grip firm, thumbs wrapped around the handle.",
+    "Brace. Ribs down toward the hips, glutes lightly squeezed (also in the seated version, feet pressing into the floor), tummy tight as if for a light punch, take a breath in before the first press (sources: brace the trunk and squeeze the glutes so the lower back does not arch; snippets).",
+    "Neck. Chin slightly tucked, eyes straight ahead, head back in line with the spine (do not push the head forward as the dumbbells rise).",
+    "Choose the weight. The lightest weight that lets you do 10 clean, slow reps with 3-4 left in the tank (section 7).",
+    "Camera. Phone in landscape at about chest height (110-130 cm, est.), 2-2.5 m away. Front view first for lockout and symmetry, side view next for back arch. Full body and the dumbbells above the head in frame.",
+    "Warm up 3-5 minutes (est.): march on the spot, shoulder rolls and arm circles, cat-cow (Yoga & Stretch 10), thoracic rotation (Yoga & Stretch 7), and one set of 6-8 reps with very light dumbbells or empty hands."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Sit tall with the dumbbells on the thighs",
+      "action": "Sit all the way back with feet flat, the dumbbells resting on the thighs.",
+      "feel": "A stable seat; weight through the sitting bones and feet.",
+      "breathing": "Breathe in and out normally.",
+      "tempo": null,
+      "visualCheck": "Side: back against the chair, head over shoulders. Front: shoulders level."
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Bring the dumbbells to shoulder height",
+      "action": "One at a time, lift each dumbbell to shoulder height (kick up with the knee if heavy), palms facing each other, elbows bent about 90 degrees and slightly in front.",
+      "feel": "Weight held by the arms, the shoulders not shrugged.",
+      "breathing": "Breathe out as you lift each one.",
+      "tempo": null,
+      "visualCheck": "Front: wrists above elbows, forearms vertical, dumbbells beside the shoulders. Side: elbows slightly in front of the body."
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Brace",
+      "action": "Pull the ribs down, squeeze the glutes, tighten the tummy, tuck the chin slightly.",
+      "feel": "A tight, tall trunk; lower back long, not hollowed.",
+      "breathing": "Breathe in and hold a short breath of air for the brace, then let it out on the press (do not hold it throughout).",
+      "tempo": null,
+      "visualCheck": "Side: ribs and hips stacked, no gap between lower back and chair back (seated) or a straight line from ear to hip to ankle (standing)."
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Press the dumbbells up",
+      "action": "Press both dumbbells up and slightly together in an arc until the arms are almost straight, with the hands above the shoulders.",
+      "feel": "The shoulders and back of the arms working; the shoulders not shrugged into the ears.",
+      "breathing": "Breathe out as you press.",
+      "tempo": null,
+      "visualCheck": "Front: both arms rise together and finish at the same height; side: dumbbells travel up over the shoulders, not out in front; the back stays against the chair or stays straight."
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Finish with a soft lockout",
+      "action": "Reach the top with the arms nearly straight (a very slight bend; one source warns to stop before hard lockout, snippet), dumbbells over the shoulders, ribs still down.",
+      "feel": "Weight stacked over the shoulders; no pinching in the shoulder.",
+      "breathing": "Pause with the breath out.",
+      "tempo": null,
+      "visualCheck": "Front: elbow angle at or above about 165 degrees (est.), arms level with each other. Side: ears, shoulders and hips stacked, no arched back."
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Lower under control",
+      "action": "Bend the elbows and lower the dumbbells slowly back to shoulder height (one source cues pulling them down with the back muscles rather than letting them drop; snippet).",
+      "feel": "A controlled stretch of the shoulders and the back of the arms.",
+      "breathing": "Breathe in as you lower.",
+      "tempo": null,
+      "visualCheck": "Front: forearms vertical again, elbows slightly in front; side: the same path back down; no hip shift or back lean."
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Reset and repeat",
+      "action": "At the bottom, check the wrists, ribs and glutes, take a breath in, and press again.",
+      "feel": "Even effort in both arms.",
+      "breathing": "Normal; breathe out on each press.",
+      "tempo": null,
+      "visualCheck": "Both arms follow the same path and range."
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Set the dumbbells down safely",
+      "action": "After the last rep, lower the dumbbells to the thighs, then to the floor on a towel or mat with a 2-3 s count and a flat back; do not drop them from shoulder height.",
+      "feel": "Controlled arms and legs, no back rounding.",
+      "breathing": "Breathe out.",
+      "tempo": null,
+      "visualCheck": "Side: back flat while lowering; the only sound is a soft touch."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Arching the lower back",
+      "text": "Arching the lower back. Why: puts load on the lower spine; one source calls excessive lower-back extension the number-one cause of lower-back pain from overhead presses (snippet). Fix: ribs down, glutes tight, lighter weight, seated with back support."
+    },
+    {
+      "title": "Weight too heavy",
+      "text": "Weight too heavy. Why: forces compensation in the neck and back (snippet) and a short range. Fix: choose the weight by 3-4 reps in reserve (section 7)."
+    },
+    {
+      "title": "Flaring the elbows straight out to the sides",
+      "text": "Flaring the elbows straight out to the sides. Why: can stress the shoulder joint; ACE material says the shoulder blade plane (about 30-35 degrees forward of the sides, snippet) gives the joint room and frontal-plane pressing with the arm rotated outward can cause impingement (snippet). Fix: elbows slightly in front, wrists over elbows."
+    },
+    {
+      "title": "Shrugging the shoulders to the ears",
+      "text": "Shrugging the shoulders to the ears. Why: the upper trapezius and neck take over. Fix: shoulders down at the start; press the weights up, not the shoulders."
+    },
+    {
+      "title": "Pushing the head forward or looking up",
+      "text": "Pushing the head forward or looking up. Why: strains the neck. Fix: chin tucked, head stays stacked over the shoulders as the weights pass."
+    },
+    {
+      "title": "Pressing out in front instead of overhead",
+      "text": "Pressing out in front instead of overhead. Why: turns it into a front raise, loads the shoulder joint badly. Fix: dumbbells finish over the shoulders; check the side view."
+    },
+    {
+      "title": "Dropping the dumbbells fast or bouncing at the bottom (momentum)",
+      "text": "Dropping the dumbbells fast or bouncing at the bottom (momentum). Why: jerks the shoulder and elbow. Fix: 3 s lowering and a calm start for each rep."
+    },
+    {
+      "title": "Hard-locking the elbows or stopping short",
+      "text": "Hard-locking the elbows or stopping short. Why: hard lockout jams the elbow (MasterClass, snippet); a short press cuts the work. Fix: nearly straight with a soft bend, and the same range each rep."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. Why: raises blood pressure and brings dizziness (breathing study PubMed 7741618, carried from earlier items). Fix: breathe out on the press, in on the lowering."
+    },
+    {
+      "title": "Dropping the weights at the end or hitting the floor",
+      "text": "Dropping the weights at the end or hitting the floor. Why: noise for neighbours below and risk to feet and the chair. Fix: lower to the thighs, then to a mat with a 2-3 s count; keep feet clear."
+    },
+    {
+      "title": "Ignoring the ceiling and the fan",
+      "text": "Ignoring the ceiling and the fan. Why: injury and damage. Fix: do the clearance check (section 3) every time."
+    }
+  ],
+  "safetyNotes": [
+    "Shoulder problems and impingement: the shoulder-pain sources suggest that overhead pressing is often the hardest movement when the shoulder hurts, the pain tends to come in the middle of the arm lift (a painful arc), and that people often modify with a more horizontal press, a smaller range, a narrower or different grip, lighter weight or less weekly volume (physio and clinic blogs, snippets; practice-based, not controlled trials). Stop if the shoulder pinches or the pain sharpens; ask a clinician. Clinical guidance for the dumbbell press itself: Not found.",
+    "Lower back problems: the seated press with back support is the usual starting point (snippets), keep the ribs down, no arching, stop if pain increases or spreads down a leg. Clinical guidance specific to this lift: Not found.",
+    "Neck pain: pushing the head forward or shrugging can irritate the neck; lower the weight and keep the chin tucked.",
+    "High blood pressure and heart disease: breathe out on the press, do not hold the breath, use light weight and moderate effort; overhead arm work raises the heart's workload for the same weight in some people, so get medical clearance first with heart disease or uncontrolled blood pressure (clinical source for the overhead position specifically: Not found).",
+    "Osteoporosis: loaded strength work is generally recommended; the LIFTMOR trial used supervised overhead presses in postmenopausal women with low bone density (snippet) but it is not a template for unsupervised home use; avoid arching and loaded twisting; with a vertebral fracture, severe osteoporosis or kyphosis, ask a clinician first (snippets).",
+    "Pregnancy and postpartum: resistance training is generally supported in uncomplicated pregnancy (PMC review, snippet); sources differ on overhead presses: one lists overhead lifting after the first trimester as something to avoid (Healthline), another lists a light overhead press as acceptable with a stop rule for dizziness and headache (perinatology.com), and pregnancy trainers suggest a seated or supported press with ribs down and a landmine or incline press as alternatives (snippets); ACOG's own wording was not reached (Committee Opinion 804 was named but not read), so ask your obstetrician, midwife or women's health physiotherapist; stop with dizziness, headache, pelvic heaviness, leaking or pain.",
+    "Mumbai flat: put the chair on a non-slip mat or against a wall; check the ceiling height and switch off and stop the fan before pressing; set the dumbbells down gently on a mat or towel; do not drop them on a tile floor; no glass bottles; keep clear of the balcony slab and open windows; do not press near a door frame."
+  ],
+  "sources": [
+    "2024 Adult Compendium of Physical Activities (Herrmann et al., J Sport Health Sci 2024): conditioning-exercise table and tracking guide, code 02054 (resistance training, multiple exercises, 8-15 repetitions, 3.5); neighbouring codes and the Older Adult value seen as a search summary. https://pacompendium.com/conditioning-exercise ; https://pacompendium.com/wp-content/uploads/2025/02/4_2024_adult-compendium-tracking-guide-1-2024.pdf ; https://pacompendium.com/older-adult-compendium/ ; https://pubmed.ncbi.nlm.nih.gov/38242596/ (snippets)",
+    "ACE exercise library, seated overhead press (back supported, core braced, shoulder blades down and back, press without arching the low back, engage the lats on the way down, spotter recommended); ACE continuing-education article on shoulder mechanics (scapular plane, about 35 degrees glenoid orientation). https://www.acefitness.org/resources/everyone/exercise-library/45/seated-overhead-press/ ; https://www.acefitness.org/continuing-education/certified/september-2025/8951/a-pro-s-guide-to-muscle-mechanics-the-shoulders/ (snippets)",
+    "Saeterbakken and Fimland 2013, effects of body position and loading modality on muscle activity and strength in shoulder presses, J Strength Cond Res (EMG at 80% of 1-RM, 15 men). https://pubmed.ncbi.nlm.nih.gov/23096062/ (abstract seen as snippet)",
+    "Technique and cues for the dumbbell shoulder press: Livestrong; Liftosaur (parallel grip); REP Fitness; Muscle and Strength; BarBend; MasterClass; Sportskeeda; Healthline; Grady Health; Physitrack; Herts university single-arm press; PureGym; Sweat; TopEndSports; T3; Women's Fitness. https://livestrong.com/article/13769175-shoulder-press ; https://liftosaur.com/exercises/dumbbell-shoulder-press-parallel-grip ; https://at.repfitness.com/blogs/guides/how-to-properly-do-a-dumbbell-shoulder-press ; https://www.muscleandstrength.com/exercises/standing-dumbbell-press.html ; https://barbend.com/dumbbell-Shoulder-Press/ ; https://www.masterclass.com/articles/dumbbell-overhead-press-guide ; https://www.masterclass.com/articles/shoulder-press-guide ; https://sportskeeda.com/health-and-fitness/dumbbell-shoulder-press-how-upper-body-exercise-correctly ; https://www.healthline.com/nutrition/dumbbell-push-press ; https://healthlibrary.gradyhealth.org/wellness/fitness/your-exercise-routine-overhead-shoulder-press ; https://us.physitrack.com/home-exercise-video/overhead-press---seated-with-dumbbells ; https://sport.herts.ac.uk/news-exercise-of-the-month-1164 ; https://one.puregym.com/exercises/arms-and-shoulders/shoulder-press/dumbbell-shoulder-press ; https://new.topendsports.com/fitness/technique/shoulder-press-dumbbell.htm (snippets)",
+    "Bracing, rib position and lower-back arch: Powerlifting Technique overhead press cues and back-pain pages; Livestrong shoulder press mistakes; Garage Gym Reviews; Prehab Guys; Gravitus. https://powerliftingtechnique.com/overhead-press-cues/ ; https://powerliftingtechnique.com/overhead-press-back-pain/ ; https://livestrong.com/article/13722704-shoulder-press-mistakes ; https://www.garagegymreviews.com/overhead-press ; https://library.theprehabguys.com/must-do-exercises-to-master-overhead-lifting/ ; https://gravitus.com/guides/exercises/overhead-press (snippets)",
+    "Scapular plane, elbow position, impingement debate: Reinold et al. exercise rationale; Eric Cressey, The Overhead Press; Athletics Weekly; Iron Athlete Clinics; Rehab Hero military press; Built With Science. https://blogcontent.summit-education.com/wp-content/uploads/Reinold-et-al-current-concepts-in-the-scientific-and-clinical-rationale-behind-exercises-for-GH-and-ST-musculature.pdf ; https://ericcressey.com/?p=111 ; https://athleticsweekly.com/?p=9961 ; https://www.ironathleteclinics.com/?p=4981 ; https://www.rehabhero.ca/exercise/military-press ; https://builtwithscience.com/overhead-press-mistakes/ (snippets)",
+    "Shoulder pain and pressing modifications: Physio-Network, return to pressing with shoulder pain; Human Kinetics excerpt on modifying weight training; Berkshire Healthcare NHS subacromial pain syndrome leaflet (Feb 2026); BASEM subacromial injuries. https://www.physio-network.com/?p=45617 ; https://us.humankinetics.com/blogs/excerpt/how-to-modify-weight-training-due-to-shoulder-pain ; https://www.berkshirehealthcare.nhs.uk/media/q3rpsebb/bh1165r-subacromial-pain-syndrome-v1-feb-2026.pdf ; https://basem.co.uk/wp-content/uploads/2024/01/Subacromial-injuries-FINAL-FINAL-1.pdf (snippets)",
+    "No-equipment alternatives: Workout Labs water-bottle overhead press; Jim Stoppani equipment-free shoulder workout; Men's Fitness backpack workout; HSS how to exercise at home; Physitrack bottle press; NASM, Coachweb, Tom's Guide and Powerlifting Technique on pike push-ups. https://workoutlabs.com/exercise-guide/water-bottle-overhead-shoulder-press/ ; https://www.jimstoppani.com/training/at-home-equipment-free-shoulder-workout ; https://mensfitness.co.uk/workouts/backpack-workout ; https://www.hss.edu/health-library/move-better/how-to-exercise-at-home ; https://ca.physitrack.com/home-exercise-video/single-arm-shoulder-press-in-sitting-with-water-bottle ; https://www.nasm.org/resource-center/exercise-library/pike-push-up ; https://www.coachweb.com/fitness/shoulder-exercises/pike-push-up ; https://www.tomsguide.com/wellness/fitness/do-you-find-the-overhead-press-uncomfortable-swap-in-pike-push-ups-to-build-upper-body-strength-mobility-and-stability ; https://powerliftingtechnique.com/pike-push-up-alternatives/ (snippets)",
+    "Starting weight and dosage: StrengthLevel dumbbell shoulder press standards (1RM, not working weights); beginner dumbbell-weight guides; Repetitions in Reserve reliability study (PubMed 36135029); South Dakota State extension RIR handout; ACSM exam-prep study guide (secondary). https://strengthlevel.com/strength-standards/dumbbell-shoulder-press/kg ; https://pubmed.ncbi.nlm.nih.gov/36135029/ ; https://rabbitfood.sdstate.edu/hubfs/Training%20with%20Repetitions%20in%20Reserve.docx ; https://open-exam-prep.com/study-guides/acsm-ep/resistance-flexibility-neuromotor/resistance-training (snippets)",
+    "Pregnancy and osteoporosis overhead pressing (secondary sources only): Healthline weight lifting while pregnant; Perinatology exercise in pregnancy; PMC11193983 resistance training in pregnancy; Mama Stefit vertical press modifications; LIFTMOR summaries (Be Mobile Physio, UKY). https://www.healthline.com/health/pregnancy/weight-lifting-while-pregnant ; https://www.perinatology.com/Exercise%20in%20Pregnancy.htm ; https://pmc.ncbi.nlm.nih.gov/articles/PMC11193983 ; https://mamastefit.com/vertical-press-modifications-for-pregnancy/ ; https://www.bemobilephysio.com.au/blog/bone-density-two-heavy-lifts-you-can-start-at-home ; https://livewell.uky.edu/news/october-overhead-exercise-0 (snippets)",
+    "Carried from earlier Home research (snippets only, not re-checked here): breathing study PubMed 7741618 https://pubmed.ncbi.nlm.nih.gov/7741618/ ; AHA recommendations https://heart.org/en/healthy-living/exercise-and-physical-activity/fitness-basics/aha-recs-for-physical-activity-in-adults ; ADA position statement (Colberg et al. 2016) https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/ and https://pmc.ncbi.nlm.nih.gov/articles/PMC2992214 ; Donnelly et al. 2009 ACSM position stand https://pubmed.ncbi.nlm.nih.gov/19127177/ ; hypothyroidism review https://pubmed.ncbi.nlm.nih.gov/37999992/ ; asthma sources https://www.pharmacymagazine.co.uk/cpd-modules/making-a-difference-in-asthma-care/exercise-and-asthma-528343 and https://pubmed.ncbi.nlm.nih.gov/21811185/ ; Vanderbilt knee OA handout https://www.vumc.org/sports-medicine/sites/vumc.org.sports-medicine/files/public_files/documents/Knee_OA_ex_quad.pdf ; Harvard Health, strength training and blood pressure https://www.health.harvard.edu/heart-health/strength-training-and-blood-pressure ; osteoporosis PMC9304091 https://pmc.ncbi.nlm.nih.gov/articles/PMC9304091 , RACGP HANDI https://www.racgp.org.au/clinical-resources/clinical-guidelines/handi/conditions/musculoskeletal/exercise-for-preventing-bone-loss-and-reducing-fra , Brooke-Wavell et al. 2022 https://pubmed.ncbi.nlm.nih.gov/35577538/ ; Mayo Clinic pregnancy exercises https://www.mayoclinic.org/healthy-lifestyle/pregnancy-week-by-week/in-depth/pregnancy-exercises/art-20546799 ; NHS Lothian DRAMs guidelines https://apps.nhslothian.scot/files/sites/2/DRAMs-Guidelines.pdf ; ACE HIIT for clinical populations https://www.acefitness.org/certifiednewsarticle/2589/high-intensity-interval-training-for-clinical/ ; Goom, Donnelly and Brockwell 2019 https://athleticsni.org/download/files/Returning_to_running_postnatal_guideline_for_medical_health_and_fitness_professionals_managing_this_population.05.pdf",
+    "NHS, ExRx.net, Harvard Health and Mayo Clinic pages on the dumbbell shoulder press itself, joint-angle sources, a reliable beginner starting weight, per-muscle EMG percentages for the press, a controlled study of grip type and impingement, ACOG's own pregnancy wording (Committee Opinion 804 was named but not read), and decibel data: Not found (searches returned no such pages)."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 28.6,
+      "70kg": 24.5,
+      "80kg": 21.4
+    },
+    "per300kcal": {
+      "60kg": 85.7,
+      "70kg": 73.5,
+      "80kg": 64.3
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "strength",
+    "muscle",
+    "general_fitness",
+    "posture",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "short_sessions",
+    "no_gym",
+    "low_cost_equipment",
+    "small_flat",
+    "neighbours_below_with_gentle_set_down",
+    "check_ceiling_height",
+    "circuit"
+  ],
+  "swapsByAccess": {
+    "none": "Pike push-up (or incline push-up), or a seated bottle or rucksack press, or a push-up (Home 2)",
+    "home_equipment": "Dumbbell floor press (Home 21), resistance band chest press (Home 25) or light dumbbell lateral raise (Home 20)",
+    "basic_gym": "Shoulder press machine (Gym 33) or incline dumbbell press (Gym 21)",
+    "full_gym": "Shoulder press machine (Gym 33), Smith machine press (Gym 14) or barbell overhead press (Gym 32) when ready; incline bench press (Gym 21) for sore shoulders"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "Light weight, 3-4 reps in reserve, breathe out on the press and never hold the breath; avoid straining; check blood pressure is controlled; ask a doctor if readings are very high or if medicines cause dizziness",
+      "source": "Harvard Health strength training and blood pressure (carried); breathing study PubMed 7741618 (carried); press-specific advice Not found"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "Resistance training 2-3 non-consecutive days a week is recommended; usual glucose checks and fast carbohydrate on hand if on insulin or sulfonylureas; check feet and shoes; start light",
+      "source": "ADA position statement 2016, secondary summary (PMC5317029, carried; PMC2992214 snippet); press-specific advice Not found"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "Only with clearance and a plan; light loads, no breath-holding, stop with chest discomfort, dizziness or breathlessness",
+      "source": "ACE HIIT for clinical populations (carried, snippet); press-specific clearance Not found"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "Fits regular exercise advice; start light and build up",
+      "source": "AHA recommendations (carried); press-specific advice Not found"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Use the seated version with a light weight, 60-90 s rest; build gradually; combine with walking",
+      "source": "ACSM weight position stand (Donnelly 2009, carried); press-specific advice Not found"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "Standard strength guidance applies; start with 2 sets and build",
+      "source": "Not found"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "Train as usual if controlled; start light if fatigued; stop for palpitations or faintness",
+      "source": "Systematic review 2023 (PubMed 37999992, carried)"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Warm up, reliever nearby; strength work is usually well tolerated; stop and use the reliever if wheeze or cough starts",
+      "source": "Asthma UK tips via Pharmacy Magazine CPD (carried); PubMed 21811185 (carried)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "ok",
+      "change": "The seated press puts little load on the knees; use a firm chair that does not need deep knee bend; stop with sharp or increasing pain; use standing only if comfortable",
+      "source": "Press-specific knee guidance Not found; Vanderbilt knee OA handout (carried)"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Seated with back support, light weight, ribs down, no arching, short range; stop if pain increases or spreads down a leg; get advice if pain persists",
+      "source": "Seated-press and arch-avoidance advice from coaching and physiotherapy sites (snippets); clinical guidance specific to this lift Not found"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "modify",
+      "change": "Light weight, comfortable range, neutral grip, elbows slightly in front; swap to an incline or floor press or reduce weekly pressing volume if it pinches; pause and see a clinician if pain flares or there is a painful arc",
+      "source": "Physio-network, Human Kinetics excerpt, Berkshire NHS subacromial pain leaflet (snippets); clinical guidance for the dumbbell press itself Not found"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "ask_doctor",
+      "change": "Loaded strength training is generally recommended for bone; keep the spine neutral, no arching or loaded twisting; with severe osteoporosis, kyphosis or a vertebral fracture, get individual advice first",
+      "source": "PMC9304091 (carried, snippet); RACGP HANDI exercise for bone loss (carried, snippet); Brooke-Wavell et al. 2022 (carried); LIFTMOR summary (snippet)"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "ask_doctor",
+      "change": "Ask your obstetrician or midwife; use a seated, supported, light press with ribs down; stop with pain, dizziness, headache, leaking or heaviness",
+      "source": "Mayo Clinic pregnancy exercises (carried); perinatology.com and Healthline (snippets, sources differ); ACOG's own wording Not found"
+    },
+    {
+      "condition": "postpartum",
+      "status": "ask_doctor",
+      "change": "Ask a women's health physiotherapist; start with light weight and breathing; stop with leaking, heaviness or pain",
+      "source": "Goom, Donnelly and Brockwell 2019 (carried); NHS Lothian DRAMs (carried)"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Only with surgeon or physiotherapist approval, especially after shoulder, neck, back, abdominal or heart surgery",
+      "source": "Not found"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "home",
+      "gym"
+    ],
+    "bodyRegion": [
+      "upper"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "muscle",
+      "strength"
+    ],
+    "intensity": "moderate",
+    "noise": "quiet",
+    "space": "small_room",
+    "typicalMinutes": 10,
+    "kcalPer10min70kg": 40.8,
+    "difficulty1to5": 2,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Home",
+    "Gym",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Strength",
+    "Shoulders",
+    "Arms",
+    "Rep counter",
+    "10–20 min"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-11-20",
+      "file": "FitPlate_Fitness_2026-11-20.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

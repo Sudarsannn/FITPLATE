@@ -26,7 +26,7 @@
     "trend": "unknown",
     "change30dPct": null,
     "lastObserved": "2026-10-05",
-    "stale": false,
+    "stale": true,
     "seasonal": false,
     "listingCount": null,
     "platforms": [],
@@ -67,7 +67,9 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
+    "price flag: stale",
     "Range 100.0–140.0 was wider than 30% of avg 120.0; narrowed to ±15%.",
+    "Latest observation 2026-10-05 is more than 45 days old.",
     "2026-10-05: no detail section found"
   ]
 }

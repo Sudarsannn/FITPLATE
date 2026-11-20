@@ -14,6 +14,7 @@ import { useStore } from '../lib/store';
 import { PHASES, type AiPhase } from '../services/ai/client';
 import { askNotifyPermission, cancelAiJob, clock, dismissAiJob, getAiJob, secondsLeft, setMinimised, setNotify, startAiJob, useAiJob } from '../services/ai/job';
 import { colors, radius, type } from '../theme';
+import { Gate } from '../components/LockedCard';
 
 const EXAMPLES = [
   { name: 'Paneer lababdar', description: 'Rich tomato and cashew gravy with soft paneer, like at a dhaba' },
@@ -31,6 +32,14 @@ const TIPS = [
 
 /** "Create your own dish with AI": describe a dish, FitPlate researches and writes it, then it works like any other dish (cook only, no ordering). */
 export default function CreateDish() {
+  return (
+    <Gate feature="aiDishes">
+      <CreateDishBody />
+    </Gate>
+  );
+}
+
+function CreateDishBody() {
   const params = useLocalSearchParams<{ name?: string; description?: string; returnTo?: string }>();
   const { profile } = useStore();
   const [name, setName] = useState(params.name ?? '');

@@ -471,13 +471,13 @@
       "currentEstimate": {
         "min": 100,
         "max": 130,
-        "avg": 120
+        "avg": 110
       },
       "method": "single",
       "trend": "unknown",
       "change30dPct": null,
       "lastObserved": "2026-10-05",
-      "stale": false,
+      "stale": true,
       "seasonal": false,
       "listingCount": 5,
       "platforms": [
@@ -531,13 +531,13 @@
     "currentEstimate": {
       "min": 100,
       "max": 130,
-      "avg": 120
+      "avg": 110
     },
     "method": "single",
     "trend": "unknown",
     "change30dPct": null,
     "lastObserved": "2026-10-05",
-    "stale": false,
+    "stale": true,
     "seasonal": false,
     "listingCount": 5,
     "platforms": [
@@ -752,7 +752,9 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
+    "price flag: stale",
     "Range 90.0–140.0 was wider than 30% of avg 115.0; narrowed to ±15%.",
+    "Latest observation 2026-10-05 is more than 45 days old.",
     "2026-10-05: hing: compounded hing usually contains wheat flour",
     "2026-11-03: hing: compounded hing usually contains wheat flour"
   ]

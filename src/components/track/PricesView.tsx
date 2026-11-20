@@ -6,6 +6,7 @@ import { useResearchVersion } from '../../lib/useResearch';
 import { priceRows, priceSummary, PRICE_NOTE, VERDICT_TEXT, type PriceFilter, type PriceRow, type PriceSort } from '../../services/trends';
 import { colors, radius, type } from '../../theme';
 import { LineChart } from '../charts';
+import { Gate } from '../LockedCard';
 import { Chip, FadeIn, Glass, PressableScale } from '../ui';
 
 const SORTS: { key: PriceSort; label: string }[] = [
@@ -27,6 +28,14 @@ const rupee = (n: number) => `₹${Math.round(n).toLocaleString('en-IN')}`;
 
 /** Day 29: ingredient price trends over the dates the research recorded them. Estimates, not live shop prices. */
 export function PricesView() {
+  return (
+    <Gate feature="prices">
+      <PricesBody />
+    </Gate>
+  );
+}
+
+function PricesBody() {
   useResearchVersion();
   const [query, setQuery] = useState('');
   const [sort, setSort] = useState<PriceSort>('biggest-change');

@@ -135,6 +135,8 @@ type Store = State & {
    * Throws (and changes nothing) when the cloud can't be reached. No-op otherwise.
    */
   deleteMyData: () => Promise<void>;
+  /** Day 32: everything saved on this device for the current owner, as readable JSON. */
+  exportMyData: () => Promise<string>;
   updateProfile: (p: Partial<Profile>) => void;
   /** One serving of a research dish, eaten (not necessarily cooked here). `ordered` marks a takeaway, with what it cost. */
   logDish: (dish: ResearchDish, how?: 'logged' | 'ordered', orderInr?: number | null, servings?: number) => void;
@@ -356,6 +358,11 @@ export function StoreProvider({ children }: { children: ReactNode }) {
           await signOutDevice(active.data);
         }
         await endAuth();
+      },
+      exportMyData: async () => {
+        if (!active) return '{}';
+        await active.session.idle();
+        return JSON.stringify({ exportedAt: new Date(clock.now()).toISOString(), app: 'FitPlate', data: await active.data.exportAll() }, null, 2);
       },
       deleteMyData: async () => {
         if (!ready || !active || active.owner === GUEST_OWNER || !active.data.cloud || !active.remote) return;

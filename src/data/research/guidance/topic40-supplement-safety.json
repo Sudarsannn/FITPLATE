@@ -1,0 +1,99 @@
+{
+  "id": "topic40-supplement-safety",
+  "type": "guidance",
+  "name": "Topic 40: Supplements: safety, upper limits, and when food is enough",
+  "rules": [
+    {
+      "if": "supplement log adds a nutrient to a day total at or above 80% of its upper limit (UL) and the UL applies to supplements or total intake",
+      "then": "show a yellow notice: 'You are close to the upper limit for [nutrient]. Check all your products, and ask a doctor or pharmacist if this is regular.'",
+      "source": "FitPlate design (est.); ULs from topics 1-29 (NIH ODS, NASEM, EFSA, ICMR-NIN 2020 via secondary sources)"
+    },
+    {
+      "if": "supplement log is above 100% of the UL for a nutrient (supplement dose, not food)",
+      "then": "show a red warning with the UL and unit; do not save a preset above the UL unless it is labelled prescription_dose",
+      "source": "NASEM/NIH ODS/EFSA ULs; ICMR-NIN 2020 TUL where found (secondary, unverified)"
+    },
+    {
+      "if": "user marks a product 'prescribed by doctor' or picks a prescription_dose preset (e.g. 60,000 IU vitamin D weekly sachet, iron 100 mg, B12 injection)",
+      "then": "log it as prescription_dose, do not count it against the daily UL, show the prescriber's course and end date, and never suggest dose changes",
+      "source": "Kalra et al. 2025 India consensus (secondary); Kaur, Mishra, Mithal 2013 case series; BMJ Case Rep 2013"
+    },
+    {
+      "if": "user logs a 60,000 IU vitamin D sachet more than once in 7 days without a prescription_dose flag",
+      "then": "show a stop-and-ask notice: the usual prescribed pattern is one sachet per week; daily use has caused severe high blood calcium and kidney injury; ask the doctor or pharmacist",
+      "source": "BMJ Case Rep 2013 (75-year-old woman, daily sachet for 2 weeks); Kaur et al. 2013"
+    },
+    {
+      "if": "user is pregnant, planning pregnancy or breastfeeding and logs any supplement",
+      "then": "set requires_doctor_input=true; do not raise or lower doses; show 'follow your doctor's iron-folic acid and calcium advice'; warn about vitamin A (preformed) above 3,000 µg/day and about herbal or ayurvedic products",
+      "source": "Anemia Mukt Bharat (60 mg iron + 500 µg folic acid tablet; secondary); ICMR-NIN 2020 vitamin A TUL 3,000 µg (secondary); MotherToBaby"
+    },
+    {
+      "if": "user has kidney disease (CKD), liver disease, thyroid disease, cancer treatment, surgery planned, or takes anticoagulants/antiplatelets, digoxin, levothyroxine, metformin, antiepileptics, antidepressants",
+      "then": "set requires_doctor_input=true; show supplements as logged only; hide 'add more' nudges; show 'ask your doctor or pharmacist before any supplement, herbal or ayurvedic product'",
+      "source": "NCCIH herb-drug interactions; NIH ODS; UCSD anticoagulation guidance (secondary)"
+    },
+    {
+      "if": "user takes warfarin or another vitamin K antagonist and logs vitamin K, vitamin E above 400 IU/day, or a herbal product",
+      "then": "show 'keep vitamin K intake steady and tell your doctor before changing any supplement'; do not give a number to aim for",
+      "source": "NCCIH; UCSD anticoagulation guidelines; Pharmacy Times (secondary)"
+    },
+    {
+      "if": "user logs biotin of 1 mg (1,000 µg) or more a day (common in hair-skin-nail products)",
+      "then": "show 'Biotin can make thyroid and heart (troponin) blood tests read wrong. Tell the lab and your doctor, and ask whether to pause it before tests.'",
+      "source": "FDA safety communication 2017, update 5 Nov 2019 (via secondary coverage)"
+    },
+    {
+      "if": "supplement iron tablet is logged and household has children under 6",
+      "then": "show 'Keep iron tablets locked away from children; accidental iron overdose is a leading cause of fatal poisoning in children under 6' and 'call a doctor or poison centre at once if swallowed'",
+      "source": "US FDA iron warning rule (1997/2003 guidance)"
+    },
+    {
+      "if": "calcium supplement logged and user has kidney stones, CKD or takes calcium plus vitamin D plus antacids",
+      "then": "set requires_doctor_input=true; show total calcium vs UL (2,500 mg/day, 2,000 mg from 51); remind that calcium from food is not linked to stones but supplements may be",
+      "source": "NIH ODS calcium; WHI CaD trial HR 1.17 (secondary summary)"
+    },
+    {
+      "if": "user logs a supplement with unknown or unlicensed source (no FSSAI licence number, no AYUSH or drug licence, gummies, 'miracle' herbal or imported product, sold on social media)",
+      "then": "show 'Check the licence number on the label. Herbal and ayurvedic products can contain lead, mercury, arsenic or hidden drugs.' and mark the log 'unverified product'",
+      "source": "Saper et al. JAMA 2008 (via SFDA/FDA summaries); FDA tainted-supplement review 2007-2016 (776 products); FSSAI health-supplement labelling rules (secondary)"
+    },
+    {
+      "if": "diet logs show the user's 7-day average reaches 100% of the ICMR-NIN RDA for a nutrient and no doctor-diagnosed deficiency, pregnancy or special diet is on file",
+      "then": "show 'Your food already covers [nutrient]. A supplement is not needed unless your doctor advises it.'",
+      "source": "ICMR-NIN 2020 RDA (secondary, unverified); NIH ODS food-first position"
+    },
+    {
+      "if": "user follows a vegan diet or has a documented B12 or vitamin D deficiency",
+      "then": "do not say supplements are unnecessary; show fortified-food and supplement options and mark dose as requires_doctor_input for deficiency treatment",
+      "source": "Topics 37, 38, P12 of this file; Academy of Nutrition and Dietetics 2025 (secondary)"
+    },
+    {
+      "if": "label dose is in IU",
+      "then": "convert to the main unit before checking the UL: vitamin D 1 µg = 40 IU; vitamin A retinol 1 IU = 0.3 µg RAE; vitamin E ask natural or synthetic (1 IU = 0.67 mg d-alpha or 0.45 mg dl-alpha); folic acid in µg, not IU",
+      "source": "NIH ODS label conversion rules (general knowledge; not re-opened this run); topics 1, 2, 3 of this file"
+    },
+    {
+      "if": "user is a child under 18 or logging for a child",
+      "then": "set requires_doctor_input=true; use child ULs only from the per-nutrient topics; never show adult presets; warn about gummies being eaten like sweets",
+      "source": "EFSA 2023 vitamin B6 child ULs; FDA iron warning"
+    },
+    {
+      "if": "an athlete or sport user asks which product is safe",
+      "then": "explain NSF Certified for Sport, Informed Sport and USP Verified are third-party marks; tell them to check the certifier's own database; say availability in India is limited",
+      "source": "NSF/USP/Informed Sport descriptions (secondary); fitlabreviews India guide (weak)"
+    }
+  ],
+  "lastResearched": "2026-11-20",
+  "versions": [
+    {
+      "date": "2026-11-20",
+      "file": "FitPlate_Nutrients_2026-11-20.md"
+    }
+  ],
+  "mergeMethod": {
+    "rules": "union (newest wording of the same rule)"
+  },
+  "mergeNotes": [],
+  "needsReview": []
+}

@@ -4,6 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { featureFlags } from '../config/featureFlags';
 import { useStore } from '../lib/store';
 import { useTargets } from '../lib/useTargets';
+import { useEntitled } from '../lib/useEntitlement';
 import { useRecommend } from '../lib/useRecommend';
 import { SLOT_LABEL } from '../services/recommend';
 import { colors, type } from '../theme';
@@ -12,10 +13,11 @@ import { Glass, PressableScale } from './ui';
 
 /** Today: the single best next meal and a workout, with one reason each. Opens the full list. Hidden when switched off or nothing fits. */
 export function RecommendCard() {
+  const entitled = useEntitled('recommendations');
   const r = useRecommend();
   const { water, health } = useTargets();
   const { profile } = useStore();
-  if (!featureFlags.recommendations) return null;
+  if (!featureFlags.recommendations || !entitled) return null;
   const top = r.meals.picks[0];
   const w = r.workout.pick;
   if (!top && !w) return null;

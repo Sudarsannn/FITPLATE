@@ -12,12 +12,21 @@ import { supplementTotals } from '../../services/supplements';
 import { buildBuckets, changePct, coveragePct, notes, PERIODS, seriesStats, streakRows, type Metric, type Period } from '../../services/trends';
 import { colors, type } from '../../theme';
 import { ColumnChart, EmptyChart } from '../charts';
+import { Gate } from '../LockedCard';
 import { Chip, FadeIn, Glass, PressableScale } from '../ui';
 
 const fmt = (n: number | null, d = 0) => (n == null ? 'none yet' : n.toLocaleString('en-IN', { maximumFractionDigits: d }));
 
 /** Day 29: day, week and month charts from the person's own logs. Empty periods say so plainly. */
 export function ChartsView() {
+  return (
+    <Gate feature="charts">
+      <ChartsBody />
+    </Gate>
+  );
+}
+
+function ChartsBody() {
   const { days, sex, supplements } = useStore();
   const { goal, water, micros, health } = useTargets();
   const dishes = useResearchDishes();

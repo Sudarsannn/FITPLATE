@@ -1,0 +1,89 @@
+{
+  "id": "absorption-boosters-blockers",
+  "type": "guidance",
+  "name": "Topic 39: Absorption boosters and blockers",
+  "rules": [
+    {
+      "if": "meal_logged contains any of ['dal','rajma','chana','ragi','palak','poha'] and meal has no vitamin_c_food and user.has_iron_flag != false",
+      "then": "Meal tip: add a vitamin C food (lemon, tomato, guava, capsicum, amla) in the same meal; vitamin C raised non-haem iron absorption by about 5.9 percentage points in pooled trials. Show IFCT vitamin C per 100 g (guava 214 to 222 mg, capsicum 123 mg, lemon juice 48 mg, tomato 25 to 27 mg), not a promised percentage.",
+      "source": "Heffernan 2017 meta-analysis (secondary); Hallberg and Hulthen 2000 (secondary); IFCT 2017 (calc.)"
+    },
+    {
+      "if": "tea_or_coffee_logged within 60 minutes before or after a main meal and meal is iron_relevant",
+      "then": "Show at most one nudge per day: keep tea or coffee about 1 hour away from meals (ICMR-NIN DGI 2024 as reported); milk in the tea does not remove the effect; caffeine cap 300 mg/day per DGI coverage.",
+      "source": "ICMR-NIN DGI 2024 news coverage (secondary, unverified); Hurrell 1999 Br J Nutr (secondary snippet)"
+    },
+    {
+      "if": "iron_tablet_logged and calcium_tablet_or_large_milk_portion_logged in same meal",
+      "then": "Suggest taking them at different meals and ask the doctor or pharmacist for the schedule; calcium 300 to 600 mg cut iron absorption 50 to 60% in single meals. requires_doctor_input.",
+      "source": "Hallberg 1991 AJCN (secondary snippet); NIH ODS iron fact sheet (secondary)"
+    },
+    {
+      "if": "user.medication contains 'levothyroxine' and any of ['calcium','iron','antacid','magnesium'] logged within 4 hours",
+      "then": "Show a reminder to follow the doctor or label spacing (label commonly says about 4 hours from calcium, iron, antacids); do not set or change the interval. requires_doctor_input.",
+      "source": "Synthroid label as reported on secondary pages; American Thyroid Association reported only second-hand (secondary)"
+    },
+    {
+      "if": "user.medication contains any of ['ciprofloxacin','levofloxacin','doxycycline','tetracycline'] and dairy_or_calcium_or_iron_or_zinc_or_magnesium_or_antacid logged same day",
+      "then": "Show: these antibiotics bind calcium, iron, zinc and magnesium; ask the pharmacist about timing and never skip the antibiotic. requires_doctor_input.",
+      "source": "NHS Scotland tetracycline and fluoroquinolone interaction guidance (secondary snippet); patient information pages (secondary)"
+    },
+    {
+      "if": "user.medication contains any of ['metformin','ppi','h2_blocker']",
+      "then": "Show doctor card: these medicines can lower vitamin B12 over time; ask about a B12 check; no dose from the app. requires_doctor_input.",
+      "source": "ADA Standards of Care B12 monitoring (secondary); 2025 systematic review of PPIs and nutrients (secondary)"
+    },
+    {
+      "if": "meal contains carotene_food (carrot, papaya, pumpkin, leafy greens, tomato) and meal_fat_g < 3",
+      "then": "Suggest a teaspoon of oil or ghee in the tadka or a few nuts; about 3 g of monounsaturated-oil fat gave most of the carotenoid absorption in a trial; respect the user's fat limits.",
+      "source": "Brown 2004 AJCN (secondary); Ferruzzi 2012 Purdue (secondary)"
+    },
+    {
+      "if": "calcium_plan requested and food in ['spinach','bathua','amaranth_leaves','colocasia_leaves']",
+      "then": "Mark the calcium as 'oxalate-rich: less available'; spinach calcium about 5% absorbed vs milk about 32% and kale about 41%; prefer ragi, drumstick leaves, fenugreek, mustard leaves, curry leaves.",
+      "source": "Heaney and Weaver 1990 (secondary); IFCT 2017 oxalate and calcium (calc.)"
+    },
+    {
+      "if": "food in ['idli','dosa'] or method in ['soak','sprout','ferment']",
+      "then": "Show a positive tip: fermenting idli/dosa batter, soaking and sprouting lower phytate and can raise iron bioaccessibility; do not claim zinc gain from sprouting; dhokla batter did not improve.",
+      "source": "Hemalatha, Platel, Srinivasan 2007 (secondary, in vitro); sprouting study snippets (secondary)"
+    },
+    {
+      "if": "user.condition == 'hypothyroidism' or user.medication contains 'levothyroxine' or iodised_salt_used == false",
+      "then": "Do not suggest avoiding cabbage, cauliflower or millets on the app's own; remind to use iodised salt within 5 g/day and ask the doctor about goitrogen-rich foods and soy. requires_doctor_input.",
+      "source": "Delange et al (cassava and iodine; secondary); PubMed 15218979; PubMed 8675242 (secondary)"
+    },
+    {
+      "if": "food in ['turmeric','haldi'] and goal == 'curcumin_absorption'",
+      "then": "Say: turmeric cooked with black pepper and oil is traditional; kitchen turmeric is not a supplement dose; the '2,000%' claim comes from a tiny 1998 study and is not a promise.",
+      "source": "Shoba 1998 Planta Med; UK COT turmeric statement (secondary)"
+    },
+    {
+      "if": "vitamin_d_supplement_logged and meal_fat_g < 3",
+      "then": "Suggest taking it with the biggest meal of the day, as the doctor advised; evidence for the size of the benefit is mixed (15 to about 50% higher levels in studies). requires_doctor_input for the dose.",
+      "source": "Mulligan and Licata 2010 JBMR (secondary); 326-person RCT abstract (secondary)"
+    },
+    {
+      "if": "food_data_requested in ['phytate','oxalate']",
+      "then": "Show IFCT 2017 raw-food values in mg/100 g with a note that cooking, soaking and fermentation change them and that the values describe content, not absorption; flag sesame and spice oxalate as high but eaten in small portions.",
+      "source": "IFCT 2017 index.csv, columns phytac, oxalt, oxals, oxali (sanity-checked)"
+    },
+    {
+      "if": "supplement_dose logged above upper_limit (iron 45 mg/day, zinc 40 mg/day, calcium 2500 mg/day)",
+      "then": "Label '(prescription dose)', never offer as quick-add, add spacing note only after the doctor card.",
+      "source": "NIH ODS ULs via topics 15, 21, 22; ICMR-NIN 2020 (secondary, unverified)"
+    }
+  ],
+  "lastResearched": "2026-11-20",
+  "versions": [
+    {
+      "date": "2026-11-20",
+      "file": "FitPlate_Nutrients_2026-11-20.md"
+    }
+  ],
+  "mergeMethod": {
+    "rules": "union (newest wording of the same rule)"
+  },
+  "mergeNotes": [],
+  "needsReview": []
+}

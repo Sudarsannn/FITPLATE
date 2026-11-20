@@ -15,9 +15,18 @@ import { CLIP_DIR, clipFileName, clipLabel, clockLabel, getPoseProvider, MAX_CLI
 import { shortExerciseName } from '../../services/fitness';
 import { configFor, createEngine, type Update } from '../../services/repCounter';
 import { colors, radius, type } from '../../theme';
+import { Gate } from '../../components/LockedCard';
 
 /** Camera workout: where to put the phone, a counter, and a recorded clip to watch back. */
 export default function CameraWorkoutScreen() {
+  return (
+    <Gate feature="cameraWorkout">
+      <CameraWorkoutScreenBody />
+    </Gate>
+  );
+}
+
+function CameraWorkoutScreenBody() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const exercise = researchExercises.find((e) => e.id === id);
   return (
