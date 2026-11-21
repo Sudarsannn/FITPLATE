@@ -5,7 +5,8 @@
   "cuisine": "South Indian (Tamil Nadu / Karnataka; an Udupi-restaurant staple across Mumbai)",
   "dietType": "veg",
   "mealType": [
-    "breakfast"
+    "breakfast",
+    "dinner"
   ],
   "difficulty": "Beginner",
   "prepMin": 10,
@@ -380,6 +381,14 @@
           "avg": 165,
           "confidence": null,
           "sourceFile": "FitPlate_Dishes_2026-10-14.md"
+        },
+        {
+          "date": "2026-11-21",
+          "min": 100,
+          "max": 230,
+          "avg": 165,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-11-21.md"
         }
       ],
       "currentEstimate": {
@@ -387,20 +396,22 @@
         "max": 190,
         "avg": 170
       },
-      "method": "single",
+      "method": "wma",
       "trend": "unknown",
       "change30dPct": null,
-      "lastObserved": "2026-10-14",
+      "lastObserved": "2026-11-21",
       "stale": false,
       "seasonal": false,
-      "listingCount": 6,
+      "listingCount": 5,
       "platforms": [
         "magicpin",
         "Swiggy"
       ],
-      "outOfStock": false,
-      "confirmed": true,
-      "checkNotes": []
+      "outOfStock": true,
+      "confirmed": false,
+      "checkNotes": [
+        "a listing used for the range is marked out of stock, closed or not taking orders"
+      ]
     },
     "nutrition": {
       "calories": {
@@ -440,6 +451,14 @@
         "avg": 165,
         "confidence": null,
         "sourceFile": "FitPlate_Dishes_2026-10-14.md"
+      },
+      {
+        "date": "2026-11-21",
+        "min": 100,
+        "max": 230,
+        "avg": 165,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-11-21.md"
       }
     ],
     "currentEstimate": {
@@ -447,20 +466,22 @@
       "max": 190,
       "avg": 170
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-14",
+    "lastObserved": "2026-11-21",
     "stale": false,
     "seasonal": false,
-    "listingCount": 6,
+    "listingCount": 5,
     "platforms": [
       "magicpin",
       "Swiggy"
     ],
-    "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "outOfStock": true,
+    "confirmed": false,
+    "checkNotes": [
+      "a listing used for the range is marked out of stock, closed or not taking orders"
+    ]
   },
   "healthiness": {
     "score": 8,
@@ -512,10 +533,21 @@
     "Zomato, Onion Uttapam in Mumbai (cost-for-two only; not used for prices): https://www.zomato.com/mumbai/restaurants/dish-onion-uttapam",
     "USDA FoodData Central: https://fdc.nal.usda.gov/",
     "IFCT 2017, Indian Food Composition Tables (ICMR-NIN): https://www.nin.res.in/",
-    "ICMR-NIN, Nutrient Requirements for Indians 2020 (RDA / EAR): https://www.nin.res.in/"
+    "ICMR-NIN, Nutrient Requirements for Indians 2020 (RDA / EAR): https://www.nin.res.in/",
+    "Swiggy, Mini Madras, Borivali (Onion Tomato Uttapam ₹100): https://www.swiggy.com/restaurants/mini-madras-borivali-malad-kandivali-west-mumbai-887121",
+    "Swiggy, Amma Snacks and Caterers, Mahim (Onion Uttapam ₹120): https://www.swiggy.com/restaurants/amma-snacks-and-caterers-mahim-dadar-mumbai-880106",
+    "Swiggy, Sri Krishna, Grant Road (Onion Uttapam ₹185; not delivering): https://www.swiggy.com/menu/106788 and https://www.swiggy.com/city/mumbai/sri-krishna-grant-road-rest106788",
+    "Swiggy, Bhagwati Veg Restaurant, Kandivali (Onion Uttapam ₹229): https://www.swiggy.com/city/mumbai/bhagwati-veg-restaurant-kandivali-rest9033",
+    "Swiggy, Kailash Parbat, Andheri West (₹215; premium, excluded): https://swiggy.com/restaurants/kailash-parbat-new-link-road-andheri-west-mumbai-24387",
+    "Swiggy, Udupi Shree Krishna 1979 (plain uttapam ₹140; not used): https://www.swiggy.com/restaurants/udupi-shree-krishna-1979-usk-dhake-colony-andheri-west-mumbai-489348",
+    "Swiggy MMR context: Swamy's Idli Tiffin Thane https://www.swiggy.com/city/mumbai/swamys-idli-tiffin-wagle-estate-thane-panchpakhadi-rest35355 ; Taste by Ruchira Virar https://swiggy.com/city/mumbai/taste-by-ruchira-virar-rest1021874 ; Hotel New Coffee House Dombivli https://www.swiggy.com/restaurants/hotel-new-coffee-house-pure-veg-krishna-radha-society-dombivali-east-mumbai-342976",
+    "magicpin, Madras Cafe, Colaba (Onion Uttapam ₹115): https://magicpin.in/Mumbai/Colaba/Restaurant/Madras-Cafe/store/8ac8a/delivery",
+    "SnapCalorie, Uttapam nutrition (generic; not used as as-ordered): https://www.snapcalorie.com/nutrition/uttapam_nutrition.html",
+    "Wikimedia Commons, File:Flavorful Onion Uttapam.jpg (page not opened): https://commons.wikimedia.org/wiki/File:Flavorful_Onion_Uttapam.jpg"
   ],
   "allergens": [
-    "peanut"
+    "peanut",
+    "sesame"
   ],
   "dietClaims": [
     "vegan",
@@ -566,7 +598,10 @@
       "status": "yes",
       "reason": "no dairy; cooked in oil, not ghee or butter"
     },
-    "allergensDeclared": []
+    "allergensDeclared": [
+      "peanut",
+      "sesame"
+    ]
   },
   "tags": [
     "Veg",
@@ -576,19 +611,21 @@
     "Dairy-free",
     "Ramadan sehri / iftar",
     "Contains peanut",
+    "Contains sesame",
     "Breakfast",
+    "Dinner",
     "South Indian",
     "Under 15 min",
     "Beginner"
   ],
-  "description": "A vegetarian, vegan, gluten-free and dairy-free South Indian pancake of fermented rice-and-urad batter topped with onion and tomato; Jain, sattvik and instant versions below.",
+  "description": "Family: dosa",
   "familyId": null,
   "variants": [
     {
       "category": "Jain",
       "status": "variant",
       "name": "Jain Tomato-Capsicum Uttapam (no onion)",
-      "origin": "fitplate-created",
+      "origin": "established",
       "linkedDishNumber": null,
       "reason": null
     },
@@ -628,7 +665,7 @@
       "category": "Low-oil",
       "status": "variant",
       "name": "Light Uttapam (1 tsp oil)",
-      "origin": "fitplate-created",
+      "origin": null,
       "linkedDishNumber": null,
       "reason": null
     },
@@ -649,16 +686,22 @@
       "reason": null
     }
   ],
-  "needsReview": [],
+  "needsReview": [
+    "price not confirmed (2026-11-21): a listing used for the range is marked out of stock, closed or not taking orders"
+  ],
   "versions": [
     {
       "date": "2026-10-14",
       "file": "FitPlate_Dishes_2026-10-14.md"
+    },
+    {
+      "date": "2026-11-21",
+      "file": "FitPlate_Dishes_2026-11-21.md"
     }
   ],
   "mergeMethod": {
-    "nutritionPerServing": "stable (single)",
-    "orderPrice": "price engine (single)",
+    "nutritionPerServing": "stable (mean-2)",
+    "orderPrice": "price engine (wma)",
     "ingredients": "newest",
     "steps": "newest",
     "healthiness": "newest",
@@ -668,6 +711,7 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 120.0–210.0 was wider than 30% of avg 165.0; narrowed to ±15%."
+    "Range 105.9–224.1 was wider than 30% of avg 165.0; narrowed to ±15%.",
+    "2026-11-21: research declares sesame not detected from ingredient names; added"
   ]
 }

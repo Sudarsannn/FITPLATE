@@ -5,7 +5,7 @@
     "idli chawal",
     "ukda chawal"
   ],
-  "category": "Grain",
+  "category": "Grain (rice)",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -24,23 +24,33 @@
         "avg": 60,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
+      },
+      {
+        "date": "2026-11-21",
+        "min": 50,
+        "max": 75,
+        "avg": 62,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-21.md"
       }
     ],
     "currentEstimate": {
       "min": 53,
-      "max": 72,
-      "avg": 63
+      "max": 71,
+      "avg": 62
     },
     "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-29",
+    "trend": "stable",
+    "change30dPct": -5.1,
+    "lastObserved": "2026-11-21",
     "stale": false,
     "seasonal": false,
-    "listingCount": 6,
+    "listingCount": 5,
     "platforms": [
       "BigBasket",
-      "Swiggy Instamart"
+      "Blinkit",
+      "Swiggy Instamart",
+      "Zepto"
     ],
     "outOfStock": false,
     "confirmed": true,
@@ -48,8 +58,8 @@
   },
   "per100Estimate": {
     "min": 5.3,
-    "max": 7.2,
-    "avg": 6.3
+    "max": 7.1,
+    "avg": 6.2
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -236,11 +246,11 @@
     }
   },
   "macrosPer100Estimate": {
-    "kcal": 367,
+    "kcal": 374,
     "proteinG": 7.5,
-    "carbsG": 79.9,
+    "carbsG": 80.9,
     "fatG": 1,
-    "fibreG": 1.9
+    "fibreG": 1.8
   },
   "storage": "Keep in an airtight container at room temperature in a dry place; a few dried neem leaves or a cool spot helps against insects (general guidance).",
   "looksLike": "Short to medium, slightly plump cream or pale-yellow grains, parboiled before milling so they stay firm when cooked.",
@@ -256,20 +266,52 @@
   ],
   "vendorListings": [
     {
+      "vendor": "blinkit",
+      "product": "Udhaiyam Idli Rice",
+      "pack": "1 kg",
+      "priceMinInr": 59,
+      "priceMaxInr": 59,
+      "observedOn": "2026-11-21"
+    },
+    {
+      "vendor": "instamart",
+      "product": "Udhaiyam Idly Rice",
+      "pack": "1 kg",
+      "priceMinInr": 75,
+      "priceMaxInr": 75,
+      "observedOn": "2026-11-21"
+    },
+    {
       "vendor": "instamart",
       "product": null,
       "pack": "5 kg",
       "priceMinInr": 268,
       "priceMaxInr": 268,
       "observedOn": "2026-10-29"
+    },
+    {
+      "vendor": "instamart",
+      "product": "Udhaiyam Idly Rice",
+      "pack": "5 kg",
+      "priceMinInr": 341,
+      "priceMaxInr": 341,
+      "observedOn": "2026-11-21"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Indrizo Idli Dosa Rice",
+      "pack": "5 kg",
+      "priceMinInr": 333,
+      "priceMaxInr": 333,
+      "observedOn": "2026-11-21"
     }
   ],
   "usedIn": [
     {
-      "dishNumber": 103,
-      "quantity": 65,
+      "dishNumber": 51,
+      "quantity": 55,
       "unit": "g",
-      "raw": "65 g per serving (about ⅓ cup of parboiled rice, puzhungal arisi)"
+      "raw": "55 g per serving (about ¼ cup; batch of 200 g makes the batter with urad dal and methi)"
     }
   ],
   "versions": [
@@ -280,11 +322,15 @@
     {
       "date": "2026-10-29",
       "file": "FitPlate_Ingredients_2026-10-29.md"
+    },
+    {
+      "date": "2026-11-21",
+      "file": "FitPlate_Ingredients_2026-11-21.md"
     }
   ],
   "mergeMethod": {
     "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -295,7 +341,6 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 52.9–77.0 was wider than 30% of avg 62.5; narrowed to ±15%.",
-    "macrosPer100Estimate.fatG: Versions 2026-10-04 (0.8) and 2026-10-29 (1.03) differ by more than 25%; kept the newer."
+    "Range 50.9–75.6 was wider than 30% of avg 62.2; narrowed to ±15%."
   ]
 }

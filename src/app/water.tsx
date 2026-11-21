@@ -7,7 +7,7 @@ import { Notice, ScreenTop } from '../components/vendors/kit';
 import { FadeIn, Glass, PressableScale } from '../components/ui';
 import { featureFlags } from '../config/featureFlags';
 import { select } from '../lib/haptics';
-import { setWaterReminders } from '../lib/reminders';
+import { useReminders } from '../lib/useReminders';
 import { addDays, dayKey, useStore } from '../lib/store';
 import { DOCTOR_LINE } from '../services/healthLimits';
 import { useTargets } from '../lib/useTargets';
@@ -18,7 +18,8 @@ const dayLetter = (key: string) => ['S', 'M', 'T', 'W', 'T', 'F', 'S'][new Date(
 
 /** Day 17: the full water screen: today's progress, one-tap presets, the last 7 days, the streak, and workday reminders (flag `waterTracker`). */
 export default function WaterScreen() {
-  const { days, today, addWater, settings, updateSettings } = useStore();
+  const { days, today, addWater, settings } = useStore();
+  const reminders = useReminders();
   const [now] = useState(() => new Date());
   const { health, water, waterInfo } = useTargets();
   const target = water.glasses;
@@ -109,15 +110,14 @@ export default function WaterScreen() {
             <View style={{ flexDirection: 'row', alignItems: 'center', gap: 12 }}>
               <View style={{ flex: 1 }}>
                 <Text style={{ color: colors.text, fontWeight: '800' }}>Water reminders</Text>
-                <Text style={[type.small, { color: colors.muted }]}>Weekdays, five nudges from 8:30 am to 6 pm. Quiet from 9 pm to 8 am. On the phone app only.</Text>
+                <Text style={[type.small, { color: colors.muted }]}>Weekdays through your workday (set the hours in Settings, Reminders). Quiet from 9 pm to 8 am. On the phone app only.</Text>
                 {caution ? <Text style={[type.small, { color: colors.warn }]}>Off by default for you. {DOCTOR_LINE} before turning on water reminders.</Text> : null}
               </View>
               <Switch
                 value={remindersOn}
                 onValueChange={async (v) => {
-                  updateSettings({ featureToggles: { ...settings.featureToggles, waterReminders: v } });
-                  const ok = await setWaterReminders(v);
-                  setNote(v && !ok ? 'Reminders need the phone app and notification permission.' : null);
+                  const res = await reminders.change({ water: v });
+                  setNote(v && res !== 'scheduled' ? 'Reminders need the phone app and notification permission.' : null);
                 }}
                 trackColor={{ true: colors.accent, false: '#333' }}
                 thumbColor="#fff"

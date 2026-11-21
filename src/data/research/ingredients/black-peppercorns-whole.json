@@ -23,32 +23,41 @@
         "avg": 1360,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
+      },
+      {
+        "date": "2026-11-21",
+        "min": 1320,
+        "max": 1990,
+        "avg": 1735,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-21.md"
       }
     ],
     "currentEstimate": {
-      "min": 1290,
-      "max": 1750,
-      "avg": 1520
+      "min": 1400,
+      "max": 1895,
+      "avg": 1650
     },
     "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-29",
+    "trend": "stable",
+    "change30dPct": 3.9,
+    "lastObserved": "2026-11-21",
     "stale": false,
     "seasonal": false,
     "listingCount": 8,
     "platforms": [
+      "Amazon",
       "BigBasket",
-      "Flipkart"
+      "Blinkit"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 129,
-    "max": 175,
-    "avg": 152
+    "min": 140,
+    "max": 189.5,
+    "avg": 165
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -252,13 +261,30 @@
     "Long pepper (pippali) or white peppercorns",
     "Dried red chilli"
   ],
-  "vendorListings": [],
+  "vendorListings": [
+    {
+      "vendor": "blinkit",
+      "product": "Aashirvaad black pepper 100 g",
+      "pack": "100 g",
+      "priceMinInr": 163,
+      "priceMaxInr": 163,
+      "observedOn": "2026-11-21"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Catch Black Pepper Whole",
+      "pack": "100 g",
+      "priceMinInr": 191,
+      "priceMaxInr": 191,
+      "observedOn": "2026-11-21"
+    }
+  ],
   "usedIn": [
     {
-      "dishNumber": 93,
-      "quantity": null,
-      "unit": null,
-      "raw": "3 corns per serving (about 0.1 g, in the whole-spice tempering)"
+      "dishNumber": 52,
+      "quantity": 0.3,
+      "unit": "g",
+      "raw": "0.3 g per serving (4–5 peppercorns, in the cumin tempering)"
     }
   ],
   "versions": [
@@ -269,11 +295,15 @@
     {
       "date": "2026-10-29",
       "file": "FitPlate_Ingredients_2026-10-29.md"
+    },
+    {
+      "date": "2026-11-21",
+      "file": "FitPlate_Ingredients_2026-11-21.md"
     }
   ],
   "mergeMethod": {
     "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (single)",
+    "macrosPer100Estimate": "stable (mean-2)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -284,8 +314,10 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 1270.0–1805.9 was wider than 30% of avg 1520.0; narrowed to ±15%.",
+    "Range 1300.2–1917.1 was wider than 30% of avg 1649.9; narrowed to ±15%.",
     "nutritionPer100g.carbsG: Conflict (2026-10-08: 64 vs 2026-10-29: 63.9); both cite the official table, kept the previous value.",
-    "nutritionPer100g.zincMg: Conflict (2026-10-08: 1.2 vs 2026-10-29: 1.19); both cite the official table, kept the previous value."
+    "nutritionPer100g.carbsG: Conflict (2026-10-08: 64 vs 2026-11-21: 63.9); both cite the official table, kept the previous value.",
+    "nutritionPer100g.zincMg: Conflict (2026-10-08: 1.2 vs 2026-10-29: 1.19); both cite the official table, kept the previous value.",
+    "nutritionPer100g.zincMg: Conflict (2026-10-08: 1.2 vs 2026-11-21: 1.19); both cite the official table, kept the previous value."
   ]
 }

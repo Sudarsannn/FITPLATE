@@ -16,33 +16,42 @@
         "avg": 95,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-14.md"
+      },
+      {
+        "date": "2026-11-21",
+        "min": 65,
+        "max": 135,
+        "avg": 90,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-21.md"
       }
     ],
     "currentEstimate": {
-      "min": 80,
+      "min": 78,
       "max": 105,
-      "avg": 95
+      "avg": 91
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-14",
+    "lastObserved": "2026-11-21",
     "stale": false,
     "seasonal": false,
-    "listingCount": 5,
+    "listingCount": 8,
     "platforms": [
-      "Amazon",
       "BigBasket",
-      "Swiggy Instamart"
+      "Blinkit",
+      "Swiggy Instamart",
+      "Zepto"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 8,
+    "min": 7.8,
     "max": 10.5,
-    "avg": 9.5
+    "avg": 9.1
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -63,9 +72,9 @@
       "confidence": "Low"
     },
     "sugarsG": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "Other: iD Fresh product page label: iD Fresh classic idli and dosa batter label per 100 g (idfreshfood.com), via search results",
+      "confidence": "Low"
     },
     "fatG": {
       "value": 1.6,
@@ -73,9 +82,9 @@
       "confidence": "Low"
     },
     "saturatedFatG": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0.62,
+      "source": "Other: iD Fresh product page label: iD Fresh classic idli and dosa batter label per 100 g (idfreshfood.com), via search results",
+      "confidence": "Low"
     },
     "fibreG": {
       "value": null,
@@ -134,7 +143,7 @@
     },
     "cholesterolMg": {
       "value": 0,
-      "source": "Other: iD idly dosa batter pack label: iD idly dosa batter 1 kg label values via BigBasket listing, Mishry review and FatSecret India iD dosa batter entry",
+      "source": "Other: iD Fresh product page label: iD Fresh classic idli and dosa batter label per 100 g (idfreshfood.com), via search results",
       "confidence": "Low"
     },
     "transFatG": {
@@ -229,29 +238,63 @@
     }
   },
   "macrosPer100Estimate": {
-    "kcal": 143.4,
-    "proteinG": 5.5,
+    "kcal": 141,
+    "proteinG": 1.7,
     "carbsG": 26.3,
     "fatG": 1.6,
-    "fibreG": null
+    "fibreG": 1.9
   },
-  "storage": "Fridge (below 5 °C), sealed, and use within the date on the pack; once opened, use within 2–3 days and take out only what you need with a clean ladle. Do not leave it at room temperature for long; it keeps fermenting and turns sour. Freezing is possible but changes texture.",
-  "looksLike": "A thick, pale cream batter with small bubbles and a mild sour smell, sold chilled in plastic pouches or tubs. It is made from soaked and wet-ground rice and urad dal (often with a little fenugreek and salt), then fermented.",
+  "storage": "Keep in the fridge at all times; stir before use. Freezing is possible but changes texture. Cooked idli or dosa: fridge, 1–2 days.",
+  "looksLike": "Thick, pale cream, slightly sour-smelling batter with tiny bubbles, sold chilled in 500 g and 1 kg pouches or tubs.",
   "howToPick": null,
-  "shelfLife": "Short: usually a few days to about a week from manufacture under refrigeration (check the pack). FSSAI has said packaged batter must carry manufacture and expiry dates and expired batter may not be sold.",
+  "shelfLife": "Typically a few days chilled to about a week; follow the date on the pack. Once opened, use within 2–3 days.",
   "substitutes": [
     "Homemade batter",
     "Instant rava uttapam batter",
-    "Ragi or millet idli-dosa batter"
+    "Ragi or millet idli-dosa batter",
+    "Instant dosa or idli mix",
+    "Rava or oats batter"
   ],
   "vendorListings": [
+    {
+      "vendor": "blinkit",
+      "product": "Khetika Fresh idli dosa batter",
+      "pack": "1 kg",
+      "priceMinInr": 96,
+      "priceMaxInr": 96,
+      "observedOn": "2026-11-21"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "iD idli and dosa batter",
+      "pack": "1 kg",
+      "priceMinInr": 125,
+      "priceMaxInr": 137,
+      "observedOn": "2026-11-21"
+    },
+    {
+      "vendor": "instamart",
+      "product": "Khetika Fresh idli dosa batter",
+      "pack": "1 kg",
+      "priceMinInr": 75,
+      "priceMaxInr": 75,
+      "observedOn": "2026-11-21"
+    },
     {
       "vendor": "instamart",
       "product": "iD Fresh idli and dosa batter",
       "pack": "1 kg",
-      "priceMinInr": 90,
-      "priceMaxInr": 90,
-      "observedOn": "2026-10-14"
+      "priceMinInr": 99,
+      "priceMaxInr": 99,
+      "observedOn": "2026-11-21"
+    },
+    {
+      "vendor": "zepto",
+      "product": "iD Fresh idli and dosa batter",
+      "pack": "1 kg",
+      "priceMinInr": 95,
+      "priceMaxInr": 95,
+      "observedOn": "2026-11-21"
     }
   ],
   "usedIn": [
@@ -259,18 +302,22 @@
       "dishNumber": 51,
       "quantity": 180,
       "unit": "g",
-      "raw": "180 g (about ¾ cup) store-bought batter; or homemade from 55 g idli/dosa rice, 18 g split urad dal, 0.4 g methi seeds and 1 g salt (those ingredients are priced separately)"
+      "raw": "180 g fermented batter per serving (2 uttapams, 90 g each). The dish file's base recipe makes this batter at home from idli rice (55 g), split urad dal (18 g), fenugreek seeds (0.4 g) and salt (1 g) per serving's share of a 650 g batch, priced through those ingredients' own entries; ready-made packaged batter, priced here, is the shop-bought alternative for the same 180 g. Use one costing or the other, not both."
     }
   ],
   "versions": [
     {
       "date": "2026-10-14",
       "file": "FitPlate_Ingredients_2026-10-14.md"
+    },
+    {
+      "date": "2026-11-21",
+      "file": "FitPlate_Ingredients_2026-11-21.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -279,5 +326,14 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 69.4–126.2 was wider than 30% of avg 91.5; narrowed to ±15%.",
+    "macrosPer100Estimate.proteinG: Versions 2026-10-14 (5.5) and 2026-11-21 (1.74) differ by more than 25%; kept the newer.",
+    "nutritionPer100g.energyKcal: Conflict (2026-10-14: 143.4 vs 2026-11-21: 138.7); neither cites the official table, kept the previous value.",
+    "nutritionPer100g.proteinG: Conflict (2026-10-14: 5.5 vs 2026-11-21: 1.74); neither cites the official table, kept the previous value.",
+    "nutritionPer100g.carbsG: Conflict (2026-10-14: 26.3 vs 2026-11-21: 26.32); neither cites the official table, kept the previous value.",
+    "nutritionPer100g.fatG: Conflict (2026-10-14: 1.6 vs 2026-11-21: 1.61); neither cites the official table, kept the previous value.",
+    "nutritionPer100g.sodiumMg: Conflict (2026-10-14: 92 vs 2026-11-21: 142.4); neither cites the official table, kept the previous value."
+  ]
 }

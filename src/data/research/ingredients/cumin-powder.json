@@ -23,33 +23,40 @@
         "avg": 575,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
+      },
+      {
+        "date": "2026-11-21",
+        "min": 460,
+        "max": 945,
+        "avg": 720,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-21.md"
       }
     ],
     "currentEstimate": {
-      "min": 535,
-      "max": 725,
-      "avg": 630
+      "min": 570,
+      "max": 770,
+      "avg": 670
     },
     "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-29",
+    "trend": "stable",
+    "change30dPct": 3.9,
+    "lastObserved": "2026-11-21",
     "stale": false,
     "seasonal": false,
-    "listingCount": 6,
+    "listingCount": 14,
     "platforms": [
-      "BigBasket"
+      "BigBasket",
+      "Blinkit"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 1 platform (BigBasket) backs the range"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 53.5,
-    "max": 72.5,
-    "avg": 63
+    "min": 57,
+    "max": 77,
+    "avg": 67
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -238,8 +245,8 @@
   "macrosPer100Estimate": {
     "kcal": 375,
     "proteinG": 18,
-    "carbsG": 44.1,
-    "fatG": 22.2,
+    "carbsG": 44.2,
+    "fatG": 22.3,
     "fibreG": 10.5
   },
   "storage": "Airtight jar in a cool, dark cupboard; keep the spoon dry.",
@@ -254,13 +261,70 @@
     "Garam masala or coriander powder",
     "Caraway seeds"
   ],
-  "vendorListings": [],
+  "vendorListings": [
+    {
+      "vendor": "blinkit",
+      "product": "Catch Jeera Powder",
+      "pack": "100 g",
+      "priceMinInr": 57,
+      "priceMaxInr": 57,
+      "observedOn": "2026-11-21"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Zoff Jeera Powder",
+      "pack": "100 g",
+      "priceMinInr": 62,
+      "priceMaxInr": 62,
+      "observedOn": "2026-11-21"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "JK Jeera Powder",
+      "pack": "100 g",
+      "priceMinInr": 66,
+      "priceMaxInr": 66,
+      "observedOn": "2026-11-21"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Aashirvaad Jeera Powder",
+      "pack": "100 g",
+      "priceMinInr": 68,
+      "priceMaxInr": 68,
+      "observedOn": "2026-11-21"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Tata Sampann Jeera Powder",
+      "pack": "100 g",
+      "priceMinInr": 81,
+      "priceMaxInr": 81,
+      "observedOn": "2026-11-21"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Eastern Jeera Powder",
+      "pack": "100 g",
+      "priceMinInr": 84,
+      "priceMaxInr": 84,
+      "observedOn": "2026-11-21"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Everest Jeera Powder",
+      "pack": "100 g",
+      "priceMinInr": 92,
+      "priceMaxInr": 92,
+      "observedOn": "2026-11-21"
+    }
+  ],
   "usedIn": [
     {
-      "dishNumber": 91,
-      "quantity": 1,
+      "dishNumber": 53,
+      "quantity": 0.5,
       "unit": "g",
-      "raw": "1 g per serving (½ tsp)"
+      "raw": "0.5 g per serving (¼ tsp, in the marinade)"
     }
   ],
   "versions": [
@@ -271,6 +335,10 @@
     {
       "date": "2026-10-29",
       "file": "FitPlate_Ingredients_2026-10-29.md"
+    },
+    {
+      "date": "2026-11-21",
+      "file": "FitPlate_Ingredients_2026-11-21.md"
     }
   ],
   "mergeMethod": {
@@ -286,6 +354,6 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 469.0–828.9 was wider than 30% of avg 631.7; narrowed to ±15%."
+    "Range 465.0–879.9 was wider than 30% of avg 670.5; narrowed to ±15%."
   ]
 }

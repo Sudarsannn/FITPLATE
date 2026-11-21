@@ -9,7 +9,7 @@ import { ConfirmDeleteData } from '../components/ConfirmDeleteData';
 import { PAGE_TITLE, SURVEY_PAGES } from '../components/survey/SurveyFlow';
 import { surveySummary } from '../components/survey/surveySummary';
 import { FadeIn, Glass, GradientButton, PressableScale, TopGlow } from '../components/ui';
-import { setReminders } from '../lib/reminders';
+import { useReminders } from '../lib/useReminders';
 import { useStore } from '../lib/store';
 import { useTargets } from '../lib/useTargets';
 import { amountLabel } from '../services/dayNutrition';
@@ -22,7 +22,8 @@ import { colors, type } from '../theme';
 // `asTab` is set by the Profile tab of the new shell: no back button, and room
 // at the bottom for the floating tab bar.
 export function ProfileScreen({ asTab = false }: { asTab?: boolean }) {
-  const { privateFlags, setPrivateFlag, profile, updateProfile, settings, updateSettings, sex, body, equipmentOwned, signOut, deleteMyData, resetDemo, user, favourites, cloud, syncError } = useStore();
+  const { privateFlags, setPrivateFlag, profile, settings, updateSettings, sex, body, equipmentOwned, signOut, deleteMyData, resetDemo, user, favourites, cloud, syncError } = useStore();
+  const reminders = useReminders();
   const [confirmDelete, setConfirmDelete] = useState(false);
   const { goal: targets, energy, micros, health, sodium } = useTargets();
   const saveLimit = (key: 'waterMl' | 'sodiumMg', text: string) => {
@@ -161,13 +162,12 @@ export function ProfileScreen({ asTab = false }: { asTab?: boolean }) {
             <IconBadge name="moon-outline" color={colors.violet} size={42} />
             <View style={{ flex: 1 }}>
               <Text style={{ color: colors.text, fontWeight: '800' }}>Breakfast & batch-cook nudges</Text>
-              <Text style={[type.small, { color: colors.muted }]}>9 pm prep reminder, Sunday batch-cook reminder</Text>
+              <Text style={[type.small, { color: colors.muted }]}>Night-before prep reminder, Sunday batch-cook reminder. More in Settings.</Text>
             </View>
             <Switch
               value={profile.breakfastReminder}
               onValueChange={(v) => {
-                updateProfile({ breakfastReminder: v });
-                setReminders(v).catch(() => {});
+                reminders.change({ cookPrep: v }).catch(() => {});
               }}
               trackColor={{ true: colors.accent, false: '#333' }}
               thumbColor="#fff"

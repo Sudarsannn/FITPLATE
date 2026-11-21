@@ -16,50 +16,58 @@
         "avg": 1185,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-14.md"
+      },
+      {
+        "date": "2026-11-21",
+        "min": 630,
+        "max": 1400,
+        "avg": 985,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-21.md"
       }
     ],
     "currentEstimate": {
-      "min": 1055,
-      "max": 1295,
-      "avg": 1185
+      "min": 885,
+      "max": 1200,
+      "avg": 1045
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-14",
+    "lastObserved": "2026-11-21",
     "stale": false,
     "seasonal": false,
-    "listingCount": 4,
+    "listingCount": 5,
     "platforms": [
       "BigBasket",
-      "Flipkart"
+      "Vichare"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 105.5,
-    "max": 129.5,
-    "avg": 118.5
+    "min": 88.5,
+    "max": 120,
+    "avg": 104.5
   },
   "seasonal": false,
   "nutritionPer100g": {
     "basis": "100g",
     "energyKcal": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 384,
+      "source": "Other: brand label (Veejeya Malavani Masala): Veejeya Malavani Masala product page label per 100 g; brand-dependent blend",
+      "confidence": "Low"
     },
     "proteinG": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 11,
+      "source": "Other: brand label (Veejeya Malavani Masala): Veejeya Malavani Masala product page label per 100 g; brand-dependent blend",
+      "confidence": "Low"
     },
     "carbsG": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 54.6,
+      "source": "Other: brand label (Veejeya Malavani Masala): Veejeya Malavani Masala product page label per 100 g; brand-dependent blend",
+      "confidence": "Low"
     },
     "sugarsG": {
       "value": null,
@@ -67,14 +75,14 @@
       "confidence": null
     },
     "fatG": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 13.5,
+      "source": "Other: brand label (Veejeya Malavani Masala): Veejeya Malavani Masala product page label per 100 g; brand-dependent blend",
+      "confidence": "Low"
     },
     "saturatedFatG": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 3.9,
+      "source": "Other: brand label (Veejeya Malavani Masala): Veejeya Malavani Masala product page label per 100 g; brand-dependent blend",
+      "confidence": "Low"
     },
     "fibreG": {
       "value": null,
@@ -82,9 +90,9 @@
       "confidence": null
     },
     "sodiumMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 370,
+      "source": "Other: brand label (Veejeya Malavani Masala): Veejeya Malavani Masala product page label per 100 g; brand-dependent blend",
+      "confidence": "Low"
     },
     "ironMg": {
       "value": null,
@@ -227,11 +235,17 @@
       "confidence": null
     }
   },
-  "macrosPer100Estimate": null,
-  "storage": "Airtight jar at room temperature, away from heat, light and steam; use a dry spoon. Keeps best flavour for 2–3 months after opening; can be kept in the fridge in humid Mumbai weather.",
-  "looksLike": "A dark red-brown, coarse-to-fine powder with a smoky, hot, warm-spice smell, sold in small pouches or boxes. It is built on roasted dried red chillies and coriander with whole spices such as pepper, cloves, cinnamon, star anise, fennel and cardamom, plus turmeric and asafoetida.",
+  "macrosPer100Estimate": {
+    "kcal": 384,
+    "proteinG": 11,
+    "carbsG": 54.6,
+    "fatG": 13.5,
+    "fibreG": null
+  },
+  "storage": "Airtight jar at room temperature away from heat, light and steam; use a dry spoon. Fridge helps in humid Mumbai weather.",
+  "looksLike": "Dark red-brown, coarse-to-fine powder with a smoky, hot, warm-spice smell, sold in small pouches or boxes. Built on dried red chillies and coriander with whole spices such as pepper, cloves, cinnamon, fennel and stone flower (labels seen in search results); some brands add salt and oil.",
   "howToPick": null,
-  "shelfLife": "Usually around 9–12 months unopened (one Khamkar pack showed an expiry of March 2027); aroma fades within 2–3 months of opening.",
+  "shelfLife": "Usually about 9–12 months unopened; aroma fades within 2–3 months of opening.",
   "substitutes": [
     "Kashmiri chilli powder + garam masala (3:1)",
     "Kolhapuri or Koli masala",
@@ -250,11 +264,15 @@
     {
       "date": "2026-10-14",
       "file": "FitPlate_Ingredients_2026-10-14.md"
+    },
+    {
+      "date": "2026-11-21",
+      "file": "FitPlate_Ingredients_2026-11-21.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (none)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (single)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -263,5 +281,8 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 754.8–1369.2 was wider than 30% of avg 1043.7; narrowed to ±15%."
+  ]
 }

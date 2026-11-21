@@ -32,6 +32,8 @@ export type UserSettings = {
   leftovers?: Leftover[];
   /** Limits the user's doctor gave (review 2026-11-06). When set they replace the app's number. Private. */
   doctorLimits?: DoctorLimits;
+  /** Day 33: the person's workday window for reminders (hours, 24-hour clock). Defaults to 9 to 19. */
+  reminderHours?: { start: number; end: number };
 };
 
 export type DoctorLimits = { waterMl?: number | null; sodiumMg?: number | null };

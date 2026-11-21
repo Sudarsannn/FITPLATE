@@ -16,59 +16,68 @@
         "avg": 1130,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-14.md"
+      },
+      {
+        "date": "2026-11-21",
+        "min": 1100,
+        "max": 1200,
+        "avg": 1135,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-21.md"
       }
     ],
     "currentEstimate": {
-      "min": 1045,
-      "max": 1185,
-      "avg": 1130
+      "min": 1090,
+      "max": 1195,
+      "avg": 1135
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-14",
+    "lastObserved": "2026-11-21",
     "stale": false,
     "seasonal": false,
     "listingCount": 3,
     "platforms": [
       "BigBasket",
-      "Swiggy Instamart"
+      "Swiggy Instamart",
+      "Zepto"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 104.5,
-    "max": 118.5,
-    "avg": 113
+    "min": 109,
+    "max": 119.5,
+    "avg": 113.5
   },
   "seasonal": false,
   "nutritionPer100g": {
     "basis": "100g",
     "energyKcal": {
       "value": 85,
-      "source": "USDA FDC: FDC ID 175179 Crustaceans, shrimp, raw (SR Legacy), via getfoodfacts.com",
+      "source": "USDA FDC: FDC ID 175179 Crustaceans, shrimp, raw (SR Legacy), via getfoodfacts.com; zero by composition: carbohydrate_g, sugars_g, fibre_g",
       "confidence": "Medium"
     },
     "proteinG": {
       "value": 20.1,
-      "source": "USDA FDC: FDC ID 175179 Crustaceans, shrimp, raw (SR Legacy), via getfoodfacts.com",
+      "source": "USDA FDC: FDC ID 175179 Crustaceans, shrimp, raw (SR Legacy), via getfoodfacts.com; zero by composition: carbohydrate_g, sugars_g, fibre_g",
       "confidence": "Medium"
     },
     "carbsG": {
       "value": 0,
-      "source": "USDA FDC: FDC ID 175179 Crustaceans, shrimp, raw (SR Legacy), via getfoodfacts.com",
+      "source": "USDA FDC: FDC ID 175179 Crustaceans, shrimp, raw (SR Legacy), via getfoodfacts.com; zero by composition: carbohydrate_g, sugars_g, fibre_g",
       "confidence": "Medium"
     },
     "sugarsG": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "USDA FDC: FDC ID 175179 Crustaceans, shrimp, raw (SR Legacy), via getfoodfacts.com; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Medium"
     },
     "fatG": {
       "value": 0.5,
-      "source": "USDA FDC: FDC ID 175179 Crustaceans, shrimp, raw (SR Legacy), via getfoodfacts.com",
+      "source": "USDA FDC: FDC ID 175179 Crustaceans, shrimp, raw (SR Legacy), via getfoodfacts.com; zero by composition: carbohydrate_g, sugars_g, fibre_g",
       "confidence": "Medium"
     },
     "saturatedFatG": {
@@ -77,13 +86,13 @@
       "confidence": null
     },
     "fibreG": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "USDA FDC: FDC ID 175179 Crustaceans, shrimp, raw (SR Legacy), via getfoodfacts.com; zero by composition: carbohydrate_g, sugars_g, fibre_g",
+      "confidence": "Medium"
     },
     "sodiumMg": {
       "value": 119,
-      "source": "USDA FDC: FDC ID 175179 Crustaceans, shrimp, raw (SR Legacy), via getfoodfacts.com",
+      "source": "USDA FDC: FDC ID 175179 Crustaceans, shrimp, raw (SR Legacy), via getfoodfacts.com; zero by composition: carbohydrate_g, sugars_g, fibre_g",
       "confidence": "Medium"
     },
     "ironMg": {
@@ -133,7 +142,7 @@
     },
     "cholesterolMg": {
       "value": 161,
-      "source": "USDA FDC: FDC ID 175179 Crustaceans, shrimp, raw (SR Legacy), via getfoodfacts.com",
+      "source": "USDA FDC: FDC ID 175179 Crustaceans, shrimp, raw (SR Legacy), via getfoodfacts.com; zero by composition: carbohydrate_g, sugars_g, fibre_g",
       "confidence": "Medium"
     },
     "transFatG": {
@@ -228,22 +237,32 @@
     }
   },
   "macrosPer100Estimate": {
-    "kcal": 85,
-    "proteinG": 20.1,
+    "kcal": 78,
+    "proteinG": 13.6,
     "carbsG": 0,
     "fatG": 0.5,
     "fibreG": null
   },
-  "storage": "Fresh: keep in a closed box on the coldest shelf of the fridge (or on ice) and cook within 1–2 days. Frozen: keep at -18 °C; thaw in a sealed bag in cold water or overnight in the fridge, never at room temperature. Do not refreeze after thawing. Cooked prawn masala: fridge, closed box, up to 1–2 days.",
-  "looksLike": "Curled, C-shaped prawns about the length of a finger joint to a thumb, grey and see-through when raw, with the head, shell and legs removed and the dark vein along the back cut out. They turn pink-orange and firm when cooked. Medium size usually means about 20–40 pieces per 500 g.",
+  "storage": "Fresh: closed box on the coldest fridge shelf (or on ice), cook within 1–2 days. Frozen: keep at -18 °C; thaw in a sealed bag in cold water or overnight in the fridge; do not refreeze after thawing. Cooked prawn masala: fridge, closed box, 1–2 days.",
+  "looksLike": "Curled, C-shaped prawns about the length of a finger joint to a thumb, grey and see-through when raw, with head, shell and legs removed and the dark vein cut out. They turn pink-orange and firm when cooked. Medium usually means roughly 20–40 pieces per 500 g.",
   "howToPick": null,
-  "shelfLife": "Fresh cleaned prawns: 1–2 days in the fridge. Frozen packs: several months in the freezer, up to the date on the pack.",
+  "shelfLife": "Fresh cleaned: 1–2 days in the fridge. Frozen: several months to the pack date.",
   "substitutes": [
     "Whole head-on or shell-on prawns, cleaned at home",
     "Small prawns (kolambi/karandi)",
-    "Firm white fish (surmai or basa cubes)"
+    "Firm white fish (surmai or basa cubes)",
+    "Small prawns (karandi)",
+    "Firm white fish cubes (surmai, basa)"
   ],
   "vendorListings": [
+    {
+      "vendor": "instamart",
+      "product": "ITC Master Chef medium prawns, peeled and deveined, frozen",
+      "pack": "200 g",
+      "priceMinInr": 221,
+      "priceMaxInr": 221,
+      "observedOn": "2026-11-21"
+    },
     {
       "vendor": "instamart",
       "product": "Pattammal Seafoods prawn medium, peeled and deveined",
@@ -251,6 +270,14 @@
       "priceMinInr": 296,
       "priceMaxInr": 296,
       "observedOn": "2026-10-14"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Relish white prawns medium, peeled and deveined",
+      "pack": "250 g",
+      "priceMinInr": 299,
+      "priceMaxInr": 299,
+      "observedOn": "2026-11-21"
     }
   ],
   "usedIn": [
@@ -265,11 +292,15 @@
     {
       "date": "2026-10-14",
       "file": "FitPlate_Ingredients_2026-10-14.md"
+    },
+    {
+      "date": "2026-11-21",
+      "file": "FitPlate_Ingredients_2026-11-21.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -278,5 +309,7 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "macrosPer100Estimate.proteinG: Versions 2026-10-14 (20.1) and 2026-11-21 (13.6) differ by more than 25%; kept the newer."
+  ]
 }

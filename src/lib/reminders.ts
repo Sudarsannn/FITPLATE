@@ -2,28 +2,7 @@ import { Platform } from 'react-native';
 
 import type { Leftover } from '../models/prefs';
 import { reminderAt } from '../services/leftovers';
-import { WORKDAYS, waterReminderTimes } from '../services/water';
-
-// Night-before nudge for the tired-corporate user: prep tomorrow's breakfast at 9 pm,
-// and a Sunday batch-cook nudge. Local notifications only, no server needed.
-export async function setReminders(enabled: boolean) {
-  if (Platform.OS === 'web') return false;
-  const N = await import('expo-notifications');
-  // Leave the leftover reminders alone; they are scheduled one by one below.
-  for (const n of await N.getAllScheduledNotificationsAsync()) if (!n.identifier.startsWith('leftover-') && !n.identifier.startsWith('water-')) await N.cancelScheduledNotificationAsync(n.identifier);
-  if (!enabled) return false;
-  const perm = await N.requestPermissionsAsync();
-  if (!perm.granted) return false;
-  await N.scheduleNotificationAsync({
-    content: { title: 'Tomorrow-you says thanks', body: '5 minutes now = breakfast ready in the morning. Overnight oats or soak the dal?' },
-    trigger: { type: N.SchedulableTriggerInputTypes.DAILY, hour: 21, minute: 0 },
-  });
-  await N.scheduleNotificationAsync({
-    content: { title: 'Sunday batch-cook', body: 'One session today covers three weekday lunches. Rajma is on the menu.' },
-    trigger: { type: N.SchedulableTriggerInputTypes.WEEKLY, weekday: 1, hour: 11, minute: 0 },
-  });
-  return true;
-}
+import { planReminders, shouldStreakNudge, streakNudgeDate, type ReminderPrefs } from '../services/reminderPlan';
 
 const reminderId = (dishId: string) => `leftover-${dishId}`;
 
@@ -57,24 +36,58 @@ export async function cancelLeftoverReminder(dishId: string): Promise<void> {
   }
 }
 
-/** Day 17: workday water nudges outside quiet hours. Local notifications on the phone app only; turning it off cancels them. */
-export async function setWaterReminders(enabled: boolean): Promise<boolean> {
-  if (Platform.OS === 'web') return false;
+export type ApplyResult = 'scheduled' | 'off' | 'unsupported' | 'denied';
+
+/**
+ * Day 33: schedules everything in the plan and cancels what is no longer wanted (leftover reminders are left alone).
+ * Local notifications on the phone app only. With every category off it just cancels, and needs no permission.
+ */
+export async function applyReminders(prefs: ReminderPrefs, scheduled: Record<number, string[]>): Promise<ApplyResult> {
+  if (Platform.OS === 'web') return 'unsupported';
   try {
     const N = await import('expo-notifications');
-    for (const n of await N.getAllScheduledNotificationsAsync()) if (n.identifier.startsWith('water-')) await N.cancelScheduledNotificationAsync(n.identifier);
-    if (!enabled) return false;
+    for (const n of await N.getAllScheduledNotificationsAsync()) {
+      if (n.identifier.startsWith('leftover-')) continue;
+      if (n.identifier === STREAK_ID && prefs.streakNudges) continue;
+      await N.cancelScheduledNotificationAsync(n.identifier);
+    }
+    const plan = planReminders(prefs, scheduled);
+    if (!plan.length && !prefs.streakNudges) return 'off';
     const perm = await N.getPermissionsAsync();
-    if (!perm.granted && !(await N.requestPermissionsAsync()).granted) return false;
-    for (const day of WORKDAYS)
-      for (const t of waterReminderTimes())
-        await N.scheduleNotificationAsync({
-          identifier: `water-${day}-${t.hour}-${t.minute}`,
-          content: { title: 'Water break', body: 'A glass of water now keeps the afternoon slump away.' },
-          trigger: { type: N.SchedulableTriggerInputTypes.WEEKLY, weekday: day, hour: t.hour, minute: t.minute },
-        });
-    return true;
+    if (!perm.granted && !(await N.requestPermissionsAsync()).granted) return 'denied';
+    for (const r of plan)
+      await N.scheduleNotificationAsync({
+        identifier: r.id,
+        content: { title: r.title, body: r.body },
+        trigger:
+          r.weekday == null
+            ? { type: N.SchedulableTriggerInputTypes.DAILY, hour: r.hour, minute: r.minute }
+            : { type: N.SchedulableTriggerInputTypes.WEEKLY, weekday: r.weekday, hour: r.hour, minute: r.minute },
+      });
+    return plan.length || prefs.streakNudges ? 'scheduled' : 'off';
   } catch {
-    return false;
+    return 'unsupported';
+  }
+}
+
+const STREAK_ID = 'rem-streak';
+
+/** Keeps today's single streak nudge in step with what has been cooked. Called when Today opens and when meals change. Fails quietly. */
+export async function refreshStreakNudge(i: { enabled: boolean; streak: number; cookedToday: boolean; now?: Date }): Promise<void> {
+  if (Platform.OS === 'web') return;
+  try {
+    const now = i.now ?? new Date();
+    const N = await import('expo-notifications');
+    await N.cancelScheduledNotificationAsync(STREAK_ID).catch(() => {});
+    if (!shouldStreakNudge({ ...i, now })) return;
+    const perm = await N.getPermissionsAsync();
+    if (!perm.granted) return;
+    await N.scheduleNotificationAsync({
+      identifier: STREAK_ID,
+      content: { title: `Your ${i.streak} day streak`, body: 'One home-cooked meal today keeps it going. Even something quick counts.' },
+      trigger: { type: N.SchedulableTriggerInputTypes.DATE, date: streakNudgeDate(now) },
+    });
+  } catch {
+    // nothing to do
   }
 }

@@ -27,7 +27,7 @@
     "trend": "unknown",
     "change30dPct": null,
     "lastObserved": "2026-10-06",
-    "stale": false,
+    "stale": true,
     "seasonal": false,
     "listingCount": 4,
     "platforms": [
@@ -279,5 +279,8 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: stale",
+    "Latest observation 2026-10-06 is more than 45 days old."
+  ]
 }

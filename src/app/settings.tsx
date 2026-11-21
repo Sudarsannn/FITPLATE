@@ -42,8 +42,9 @@ export default function Settings() {
         </Block>
 
         <Block title="Notifications" i={1}>
-          <Link title="Water reminders" sub="Times, quiet hours and turning them off" onPress={() => router.push('/water')} />
-          <Text style={small}>Leftover reminders are set on the Done screen after cooking. All reminders will be gathered on one screen soon.</Text>
+          <Text style={body}>Water, meal logging, workouts and cook prep, planned around your workday, each with its own off switch.</Text>
+          <Link title="Reminders" sub="Choose which reminders you want, and your workday hours" onPress={() => router.push('/reminders')} />
+          <Text style={small}>Leftover reminders are set on the Done screen after cooking.</Text>
         </Block>
 
         <Block title="Your data" i={2}>
