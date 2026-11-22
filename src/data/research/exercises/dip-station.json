@@ -1,0 +1,714 @@
+{
+  "id": "dip-station",
+  "number": 38,
+  "name": "Dip station (parallel-bar dips)",
+  "otherNames": [
+    "Parallel bar dip",
+    "Bar dip",
+    "Chest dip",
+    "Triceps dip",
+    "Support hold",
+    "Negative dip",
+    "Assisted dip"
+  ],
+  "section": "gym",
+  "type": "strength",
+  "equipment": [
+    "Parallel dip bars (dip station or power tower)",
+    "Box or bench to step up",
+    "Optional loop resistance band or assisted machine (Gym 27)"
+  ],
+  "noEquipmentAlternative": "Bench dips (Home 11) with the back close to the bench, or close-grip push-ups (Home 2)",
+  "musclesPrimary": [
+    "triceps brachii",
+    "pectoralis major"
+  ],
+  "musclesSecondary": [
+    "anterior deltoid",
+    "serratus anterior",
+    "lower trapezius",
+    "latissimus dorsi",
+    "teres major",
+    "forearm flexors and grip",
+    "core"
+  ],
+  "level": "intermediate",
+  "impact": "low",
+  "flatFriendly": false,
+  "met": 3.8,
+  "compendiumCode": null,
+  "metOptions": [
+    {
+      "code": "02020",
+      "met": 7.5,
+      "activity": "Extras (text only, harder work): 02020, 7.5 METs, \"calisthenics ... vigorous effort\" (2024 Adult Compendium; the 2011 table lists 8.0, via a secondary copy). The code 02024 (2.8 METs) is \"calisthenics"
+    },
+    {
+      "code": "02024",
+      "met": 2.8,
+      "activity": "Extras (text only, harder work): 02020, 7.5 METs, \"calisthenics ... vigorous effort\" (2024 Adult Compendium; the 2011 table lists 8.0, via a secondary copy). The code 02024 (2.8 METs) is \"calisthenics"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "support hold 10-20 s + 3-5 negatives or 5-8 assisted dips per round",
+      "timeSec": 15,
+      "restSec": 75,
+      "tempo": "negatives 3-4 s lowering",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 3,
+      "reps": "support hold 10-20 s + 3-5 negatives or 5-8 assisted dips per round (as a circuit station)",
+      "timeSec": 15,
+      "restSec": 60,
+      "tempo": "negatives 3-4 s lowering",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "6-8 assisted dips at RIR 2-3",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "3 s down, 1 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "strength",
+      "sets": 4,
+      "reps": "3-5 negatives at 4-5 s",
+      "timeSec": null,
+      "restSec": 120,
+      "tempo": "4-5 s down, step up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "8-10 short-range assisted dips or 30 s hold",
+      "timeSec": 30,
+      "restSec": 60,
+      "tempo": "2 s down, 1 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "4-8 strict dips, stop 2 reps before failure",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "3 s down, 1 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "6-10 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 105,
+      "tempo": "3 s down, 1 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "strength",
+      "sets": 5,
+      "reps": "3-5",
+      "timeSec": null,
+      "restSec": 150,
+      "tempo": "3 s down, 1 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "8-12 at RIR 2",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "2 s down, 0 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "8-12 at RIR 2",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "3 s down, 1 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "8-12 at RIR 0-2",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "3 s down, 1 s pause, 2 s up",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": 5,
+      "reps": "2-5 with added weight",
+      "timeSec": null,
+      "restSec": 180,
+      "tempo": "3 s down, 1 s pause, 2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "endurance",
+      "sets": 4,
+      "reps": "15+ at RIR 1-2",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2 s down, 0 s pause, 2 s up",
+      "perWeek": 2
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "top_lockout",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": ">= 160",
+        "parsed": {
+          "op": ">=",
+          "value": 160,
+          "max": null
+        }
+      },
+      {
+        "name": "bottom",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": "<= 90",
+        "parsed": {
+          "op": "<=",
+          "value": 90,
+          "max": null
+        }
+      },
+      {
+        "name": "depth_limit",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": ">= 60",
+        "parsed": {
+          "op": ">=",
+          "value": 60,
+          "max": null
+        }
+      },
+      {
+        "name": "hip_min",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": ">= 130",
+        "parsed": {
+          "op": ">=",
+          "value": 130,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 3
+  },
+  "formChecks": [
+    {
+      "joint": "elbow",
+      "rule": "elbow angle > 90 degrees at the bottom (equals bottom phase threshold; rep not counted)",
+      "message": "Lower to about 90 degrees at the elbow"
+    },
+    {
+      "joint": "elbow",
+      "rule": "elbow angle < 60 degrees (equals depth_limit threshold)",
+      "message": "Too deep: stop at 90 degrees"
+    },
+    {
+      "joint": "elbow",
+      "rule": "elbow angle < 160 degrees at the top (equals top phase threshold; rep not counted)",
+      "message": "Press up to straight arms"
+    },
+    {
+      "joint": "hip",
+      "rule": "hip angle < 130 degrees (equals hip_min threshold)",
+      "message": "Keep your body still: no swinging"
+    },
+    {
+      "joint": "elbow",
+      "rule": "separate flag: lowering shorter than 2 s",
+      "message": "Lower slowly: 3 seconds"
+    },
+    {
+      "joint": "shoulder",
+      "rule": "separate flag: shoulder rises toward the ear relative to the top (shrug; no angle used)",
+      "message": "Shoulders down away from your ears"
+    },
+    {
+      "joint": "shoulder",
+      "rule": "separate flag: shoulder point moves forward of the wrist line at the bottom (forward shoulder; no angle used)",
+      "message": "Chest up: do not roll your shoulders forward"
+    },
+    {
+      "joint": "elbow",
+      "rule": "rep duration < 3 s",
+      "message": "Slow down: control each rep"
+    }
+  ],
+  "safetyFlags": [
+    "shake_test_bars_before_use",
+    "step_up_from_box_no_jumping_to_bars",
+    "closed_grip_thumbs_wrapped",
+    "shoulder_width_bars_not_extra_wide",
+    "stop_at_90_degrees_elbow",
+    "no_swinging_or_kipping",
+    "shoulders_down_and_back",
+    "lower_slowly",
+    "no_dropping_off_bars",
+    "no_breath_holding",
+    "high_blood_pressure_no_failure_sets",
+    "shoulder_problems_avoid",
+    "elbow_pain_modify",
+    "sternoclavicular_clicking_stop",
+    "lower_back_pain_no_arching",
+    "pregnancy_ask_obstetrician",
+    "osteoporosis_ask_doctor",
+    "recent_surgery_follow_surgeon_limits",
+    "ask_staff_first_session"
+  ],
+  "progressions": [
+    "strict full-range dip to about 90 degrees, then more reps by double progression",
+    "slower negatives (5-8 s) and pauses at the bottom",
+    "weighted dips (intermediate and advanced) or ring dips (advanced)"
+  ],
+  "regressions": [
+    "assisted pull-up and dip machine (Gym 27)",
+    "support hold with feet on a box, then negative dips",
+    "bench dips (Home 11) with back close to the bench, or short-range band or box dips"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "front, 3 m",
+      "shows": "bar shake test, box, clear floor",
+      "textOverlay": "Shake the bars. Clear the space"
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 2.5 m",
+      "shows": "stepping up, neutral grip, thumbs wrapped, shoulder-width bars",
+      "textOverlay": "Thumbs wrapped, wrists straight"
+    },
+    {
+      "seconds": 10,
+      "angle": "side, 2.5 m",
+      "shows": "support hold, shoulders down and back, ankles crossed",
+      "textOverlay": "Push the bars away, shoulders down"
+    },
+    {
+      "seconds": 10,
+      "angle": "side, 2.5 m",
+      "shows": "negative dip, 3-5 s lowering to about 90 degrees",
+      "textOverlay": "Lower for 3-5 s. Stop at 90 degrees"
+    },
+    {
+      "seconds": 10,
+      "angle": "side, 2.5 m",
+      "shows": "strict dip with slight forward lean (chest)",
+      "textOverlay": "Chest lean: elbows near 45 degrees"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "upright dip, elbows close (triceps)",
+      "textOverlay": "Upright: elbows close"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "wrong: too deep, shrug, swing; right: still body",
+      "textOverlay": "Not deeper than 90 degrees. No swinging"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "assisted dip or feet on a box; stepping off onto the box",
+      "textOverlay": "Feet on the box first"
+    }
+  ],
+  "lastResearched": "2026-11-22",
+  "setupSteps": [
+    "Bar height: you should be able to start with straight arms, feet clear of the floor (knees bent) or just clear. A step up from a box is fine if the bars are high. No standard height was found.",
+    "Bar width: most guides suggest shoulder-width, or slightly wider (one guide says about 18-24 inches, 45-60 cm, vendor-level). Very wide grips force the shoulder into extreme rotation (elitefts). If the bars are adjustable, set them at shoulder-width plus a little, then change after one set if the shoulders feel pinched.",
+    "Bar check: grip the bars and push sideways; they should not wobble or twist. Report loose bolts to staff. Wipe chalk and sweat.",
+    "Clear space: nothing under or behind your legs; a mat or smooth floor to land on.",
+    "Stand between the bars, grip each bar with palms facing in (neutral grip), thumbs wrapped, wrists straight. On angled handles use the grip that keeps wrists straight.",
+    "Use a box or a small step to reach the top position rather than jumping up and swinging; sources allow a small jump, but a beginner should step up. Ask staff to stand nearby on the first visit.",
+    "Press up to straight arms, push the bars away and draw the shoulders down and back, chest up, so you hold the top (\"support\") position before any rep.",
+    "Legs: bend the knees and cross the ankles behind you (StrongLifts), or keep the legs straight if the bars are high.",
+    "Finish at the top with straight arms, find the box or floor with your feet, and lower your body weight onto them before letting go.",
+    "If you cannot finish a rep: do not drop into the bottom. Stop where you are, press up if you can, or lower slowly then step down; never let go mid-air.",
+    "Chest emphasis: lean the torso forward slightly, elbows slightly out (about 45 degrees to the body, RDL Fitness), hips behind.",
+    "Triceps emphasis: keep the body more upright, elbows close to the sides (ExRx assisted triceps dip page).",
+    "FitPlate start: a slight forward lean with elbows close, as one coaching source says this balances stress between the shoulder and elbow. Switch lean only when the form is clean."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Step up and take the bars",
+      "action": "Stand between the bars on a box, grip with palms facing in, thumbs wrapped.",
+      "feel": "Firm grip, wrists straight.",
+      "breathing": "Breathe in.",
+      "tempo": null,
+      "visualCheck": "Front: hands level and shoulder-width apart. Side: bars beside the ribs."
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Press up into the support hold (A)",
+      "action": "Straighten the elbows without locking them hard, push the bars away and draw the shoulders down and back.",
+      "feel": "Shoulders away from the ears; chest, triceps and front shoulder working.",
+      "breathing": "Breathe normally; never hold your breath.",
+      "tempo": null,
+      "visualCheck": "Side: arms straight, shoulders level with or above the hands, body still. Front: no hunched shoulders."
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Set the body",
+      "action": "Bend the knees, cross the ankles behind you, squeeze the glutes and lightly brace the stomach.",
+      "feel": "Body firm, legs still.",
+      "breathing": "Breathe out gently.",
+      "tempo": null,
+      "visualCheck": "Side: body in one steady line, no legs kicking out."
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Start the lowering by bending the elbows",
+      "action": "Bend the elbows slowly and let the body sink, shoulders staying down and back; keep elbows close (triceps) or slightly out with a slight lean (chest).",
+      "feel": "Triceps and chest lengthening under control.",
+      "breathing": "Breathe in.",
+      "tempo": null,
+      "visualCheck": "Side: elbows go back, not flaring; chest does not collapse."
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Stop at about 90 degrees at the elbow (negative dip B and short-range reps)",
+      "action": "Lower until the upper arms are about parallel to the floor (elbow near 90 degrees) or as far as you can keep the shoulder blades tight, whichever comes first. Do not sink lower.",
+      "feel": "Stretch in the chest, no pinch at the front of the shoulder.",
+      "breathing": "Hold the breath for no more than a moment; keep air moving.",
+      "tempo": null,
+      "visualCheck": "Side: upper arm about level with the floor, shoulders not rolling forward past the hands."
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Press up",
+      "action": "Push the bars away and straighten the elbows, keeping shoulders down.",
+      "feel": "Triceps and chest drive; no shrugging.",
+      "breathing": "Breathe out.",
+      "tempo": null,
+      "visualCheck": "Side: elbows straighten smoothly; hips and legs do not swing."
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Lock out and reset",
+      "action": "Reach straight arms and set the shoulders again before the next rep.",
+      "feel": "Strong, steady top.",
+      "breathing": "Breathe in.",
+      "tempo": null,
+      "visualCheck": "Side: shoulders above the hands, neck long."
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Finish and step down",
+      "action": "At the last rep, rest at the top, find the box with your feet, then let go.",
+      "feel": "Grip relaxes.",
+      "breathing": "Normal.",
+      "tempo": null,
+      "visualCheck": "Feet on the box or floor before the hands release."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Going too deep",
+      "text": "Going too deep. Why: the shoulder is pushed into end-range extension under load, which is thought to stress the front of the shoulder capsule and the chest tendon, especially when tired (review of the bar dip; evidence is mainly case reports). Fix: stop about 90 degrees at the elbow."
+    },
+    {
+      "title": "Shrugging into the ears",
+      "text": "Shrugging into the ears. Why: the neck and upper traps take over and the chest unloads. Fix: push the bars away and set the shoulders down at the start of every rep; if you cannot, go back to support holds."
+    },
+    {
+      "title": "Swinging or kipping legs",
+      "text": "Swinging or kipping legs. Why: momentum hides weak strength and loads the shoulders and elbows in an uncontrolled way. Fix: cross ankles, squeeze glutes, brace the stomach."
+    },
+    {
+      "title": "Grip too wide",
+      "text": "Grip too wide. Why: wide grips force extreme shoulder rotation (elitefts). Fix: shoulder-width bars or slightly wider."
+    },
+    {
+      "title": "Elbows flaring or tucking hard",
+      "text": "Elbows flaring or tucking hard. Why: flared elbows add shoulder strain and tight tucking can overload the elbow. Fix: elbows near 45 degrees to the body."
+    },
+    {
+      "title": "Rolling the shoulders forward at the bottom",
+      "text": "Rolling the shoulders forward at the bottom. Why: the front of the shoulder takes the load. Fix: keep the chest up and shoulder blades tight; stop earlier."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. Why: raises blood pressure briefly. Fix: breathe out on the press."
+    },
+    {
+      "title": "Jumping onto or off the bars",
+      "text": "Jumping onto or off the bars. Why: hard landing and loss of control. Fix: step up from a box, press up, step down onto the box."
+    },
+    {
+      "title": "Switching to bench dips with hands far behind the body to \"go easier.\"",
+      "text": "Switching to bench dips with hands far behind the body to \"go easier.\" Why: the further behind the body the hands sit, the more the shoulder extends at the bottom; one source says the bar dip lets you change torso angle to keep the shoulder less extended. Fix: keep the back close to the bench and use the assisted machine or the support hold instead."
+    },
+    {
+      "title": "Training dips every day or when the shoulder is sore",
+      "text": "Training dips every day or when the shoulder is sore. Why: recovery. Fix: 2-3 sessions per week with at least 48 hours between them (one coaching source)."
+    }
+  ],
+  "safetyNotes": [
+    "Shoulder problems: dips load the shoulder into extension and rotation. Parallel dips are not advised for people with anterior shoulder instability, throwers or pre-existing elbow pain (elitefts); a review notes supporting evidence for injury is limited to case reports (including two chest-tendon rupture reports for the bar dip). Avoid with a tear, instability or impingement until a physiotherapist clears you.",
+    "Sternoclavicular (collarbone-to-breastbone) joint: no dip-specific source was found (Not found). General sources describe sternoclavicular injury as mostly from high-energy trauma, with spontaneous slipping possible in people with loose ligaments. Stop if you feel clicking, pain or a \"slipping\" feeling at the front of the chest.",
+    "Elbow tendon pain: pre-existing elbow pain is a listed reason to avoid parallel dips (elitefts); reduce range or use another push exercise.",
+    "High blood pressure: avoid breath-holding.",
+    "Lower back pain: do not arch or swing; ask a professional.",
+    "Pregnancy, recent surgery, osteoporosis, heart disease: see the table.",
+    "Spotter: not needed for the support hold. For negatives and assisted dips, have staff or a partner nearby the first time and a box under your feet.",
+    "Equipment check: shake the bars, check that the base is stable and not tipping, wipe chalk and sweat.",
+    "Gym etiquette: wipe the bars, do not hog the station between sets, do not film other members, ask staff before filming. A captain's chair on the same frame is covered in Gym 43."
+  ],
+  "sources": [
+    "McKenzie CR et al. (2022), Bench, Bar, and Ring Dips: Do Kinematics and Muscle Activity Differ? Int J Environ Res Public Health 19(20):13211 (EMG and motion capture; bench versus bar peak triceps about 0.83 versus 1.04 mV; notes limited evidence for dip injury claims and the end-range shoulder extension concern). https://pmc.ncbi.nlm.nih.gov/articles/PMC9603242/ (seen as search summaries only)",
+    "Soylu and Yilmaz, parallel-bar dip elbow angle EMG study (10 male volunteers; 75 degrees favoured for triceps; no chest difference). https://www.dlib.si/stream/URN:NBN:SI:doc-YPXBNDWF/178e911e-8f55-496f-9a45-104a72dff3bc/PDF (seen only as a snippet; author names via a secondary summary)",
+    "ExRx.net, Chest Dip, Assisted Chest Dip and Assisted Triceps Dip (forward lean shifts load to the chest; more upright favours the triceps). https://exrx.net/WeightExercises/PectoralSternal/BWChestDip ; https://exrx.net/WeightExercises/Triceps/ASTricepsDipSelf (snippets only)",
+    "elitefts, Dips done right (shoulder-width grip, wide grips force extreme rotation; parallel dips not advised for anterior instability, throwers or elbow pain). https://elitefts.com/blogs/training/dips-done-right (snippet only; blog-level)",
+    "StrongLifts, How to do dips with proper form (bent knees crossed feet, shoulders down, slight lean). https://stronglifts.com/dips/ (snippet only)",
+    "Strengthlog, How to do bar dips. https://www.strengthlog.com/bar-dip/ (snippet only)",
+    "RDL Fitness, How to do the parallel bar dip (lean forward, elbows about 45 degrees). https://www.rdlfitness.com/blog/how-to-dip-with-parallel-bars (snippet only)",
+    "Nike, How and why to do a triceps dip (go only as low as scapular tension holds). https://www.nike.com/a/how-and-why-to-do-tricep-dips (snippet only; Men's Health text via summary)",
+    "Fitnessvolt, Chest dips vs triceps dips (coaches use lean for chest; no study compares the two leans). https://fitnessvolt.com/chest-dips-vs-triceps-dips/ (snippet only)",
+    "NASM, Bench dips (mistakes: shrugging, elbow flare, forward lean) and AthleanX, How to do bench dips (hands behind the body increase shoulder extension). https://www.nasm.org/resource-center/exercise-library/bench-dips ; https://athleanx.com/articles/how-to-do-bench-dips (snippets only)",
+    "Progression guides: Bible of Calisthenics, Stack, Bullbarfit (support hold, negatives, assisted; 30 s hold and 5 negatives as readiness; 2-3 sessions per week), Gornation. https://bibleofcalisthenics.substack.com/p/dips-progression-from-beginner-to ; https://www.stack.com/?p=286618 ; https://bullbarfit.com/blogs/updates/stop-starting-dips-on-a-bench-the-support-hold-comes-first (snippets only; coaching blogs)",
+    "Sternoclavicular joint background: AAOS OrthoInfo; StatPearls; Physiopedia (general SC joint injuries, not dip-specific). https://orthoinfo.aaos.org/en/diseases--conditions/sternoclavicular-sc-joint-disorders/ ; https://www.ncbi.nlm.nih.gov/books/NBK507894/ (snippets only)",
+    "2024 Adult Compendium of Physical Activities (Herrmann et al., J Sport Health Sci 2024): 02022 (3.8, moderate calisthenics); 02024 (2.8, light, not used); 02020 (7.5, vigorous, extra). https://pacompendium.com/conditioning-exercise ; https://pubmed.ncbi.nlm.nih.gov/38242596/ (search summaries; official PDF not opened)",
+    "Condition rows carried over from Gym 20, 21, 24, 26 and 28 citations (not re-opened): Valsalva review https://pubmed.ncbi.nlm.nih.gov/23222073/ ; Colberg et al. 2016 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/ ; ACC summary of AHA 2023 https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2023/12/19/15/33/resistance-exercise-training ; AHA Gibbs et al. https://professional.heart.org/en/science-news/Physical-Activity-as-a-Critical-Component-of-First-Line-Treatment-for-Elevated-BP-or-Cholesterol/commentary ; Donnelly et al. 2009 https://pubmed.ncbi.nlm.nih.gov/19127177/ ; PCOS https://vuir.vu.edu.au/45855/1/1-s2.0-S2772696723000054-main.pdf ; thyroid https://pubmed.ncbi.nlm.nih.gov/37999992/ ; asthma https://www.pharmacymagazine.co.uk/cpd-modules/making-a-difference-in-asthma-care/exercise-and-asthma-528343 ; LIFTMOR https://academic.oup.com/jbmr/article/33/2/211/7605709 ; Osteoporosis Canada https://osteoporosis.ca/wp-content/uploads/2014-07-25-Are-you-too-fit-to-fracture-for-patients.pdf ; ACOG CO 804 https://opqic.org/acog-committee-opinion-no-804-physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period/ ; NNUH https://www.nnuh.nhs.uk/publication/download/post-natal-physiotherapy-advice-and-exercises-v2-1",
+    "Note: all sources for this item were seen only as search-result summaries (pages not opened in full); many are coaching blogs. The 160/90/60 degree elbow thresholds, torso-lean bands, 130 degree hip limit, 3 s minimum rep, support-hold and negative durations, and all sets, reps and rest values are FitPlate choices (est.), not validated. Not found: an ACE, Mayo Clinic or Harvard Health parallel-bar dip page; a professional-body prescription for support hold or negative duration; an authoritative dip-bar height or width standard; a peer-reviewed comparison of upright versus forward-lean dips (percentages quoted in blogs were not verified and not used); any dip-specific sternoclavicular injury source; the quoted Kibler et al. shoulder-capsule paper; condition-specific sources for knee pain, lower back pain, obesity, PCOS and shoulder problems."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 26.3,
+      "70kg": 22.6,
+      "80kg": 19.7
+    },
+    "per300kcal": {
+      "60kg": 78.9,
+      "70kg": 67.7,
+      "80kg": 59.2
+    }
+  },
+  "gymAccess": [
+    "full_gym",
+    "basic_gym"
+  ],
+  "suitsPreferences": [
+    "strength",
+    "beginner_assisted",
+    "intermediate",
+    "advanced",
+    "upper_body_day",
+    "push_day",
+    "full_body",
+    "calisthenics",
+    "bodyweight",
+    "push_pull_legs",
+    "30_to_60_min_sessions"
+  ],
+  "swapsByAccess": {
+    "none": "Bench dips (Home 11) with back close to the bench, or close-grip push-ups (Home 2)",
+    "home_equipment": "Close-grip push-ups or dumbbell floor press (Home 21); resistance band chest press (Home 25)",
+    "basic_gym": "Chest press machine (Gym 22) or cable tricep pushdown (Gym 37)",
+    "full_gym": "Dip station with the beginner ladder; assisted dip machine (Gym 27) as the stepping stone"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "No breath-holding; no holds near failure; stop 2-3 reps before failure; no lifting if resting BP >= 180/120; uncontrolled BP: ask a doctor",
+      "source": "Valsalva systematic review 2013 (PubMed 23222073); NSCA 1999 Valsalva article"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "2-3 non-consecutive resistance days per week; usual glucose checks if on insulin or sulfonylureas",
+      "source": "ADA position statement, Colberg et al. 2016"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "After clearance: assisted machine at a light load, continuous breathing, no straining",
+      "source": "AHA resistance exercise statement (via ACC summary 2023)"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "Part of 2+ days per week resistance work with aerobic activity",
+      "source": "AHA scientific statement (Gibbs et al.)"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Use assisted machine (Gym 27) first; check station weight rating; exercise-specific advice not found",
+      "source": "ACSM weight management position stand (Donnelly et al. 2009)"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "Fits muscle-strengthening guidance; exercise-specific advice not found",
+      "source": "International PCOS guideline 2023"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "Train normally if controlled; start at beginner level with ongoing fatigue",
+      "source": "Systematic review 2023 (PubMed 37999992)"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Warm up and keep reliever inhaler nearby",
+      "source": "Asthma exercise guidance (Pharmacy Magazine CPD)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "ok",
+      "change": "Bars load the arms, not the knees; land softly from the box; condition-specific source not found",
+      "source": "Not found"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "No arching or swinging; ribs down; assisted machine or chest press machine if uncomfortable; ask a professional if pain continues",
+      "source": "Not found"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "avoid",
+      "change": "Avoid with a tear, instability or impingement until a physiotherapist clears you; light chest press machine with shorter range may suit; clinical range cut-off not found",
+      "source": "elitefts dip contraindications (blog-level); McKenzie et al. 2022 review text on dip injury evidence"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "ask_doctor",
+      "change": "Resistance work benefits bone, but with low bone mass or a spine fracture see a physiotherapist first; no jumping on or off the bars",
+      "source": "LIFTMOR trial (Watson et al.); Osteoporosis Canada"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "ask_doctor",
+      "change": "Ask obstetrician; balance and abdominal strain; chest press machine is the usual swap",
+      "source": "ACOG Committee Opinion 804"
+    },
+    {
+      "condition": "postpartum",
+      "status": "modify",
+      "change": "Pelvic floor work first; return to loaded bodyweight pushing once cleared, especially after caesarean; use assisted machine",
+      "source": "NHS postnatal physiotherapy leaflets (NNUH, Royal Devon)"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Only with surgeon or physiotherapist approval; shoulder, chest, abdominal or back surgery often restricts this",
+      "source": "General clearance advice; condition-specific source not found"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "gym"
+    ],
+    "bodyRegion": [
+      "upper"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "fat_loss",
+      "muscle",
+      "strength",
+      "endurance"
+    ],
+    "intensity": "moderate",
+    "noise": "quiet",
+    "space": "machine",
+    "typicalMinutes": 7,
+    "kcalPer10min70kg": 44,
+    "difficulty1to5": 4,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Gym",
+    "Quiet",
+    "Intermediate",
+    "Low impact",
+    "Strength",
+    "Arms",
+    "Chest",
+    "Rep counter",
+    "Under 10 min"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-11-22",
+      "file": "FitPlate_Fitness_2026-11-22.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

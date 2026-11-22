@@ -1,0 +1,660 @@
+{
+  "id": "cable-tricep-pushdown",
+  "number": 37,
+  "name": "Cable tricep pushdown",
+  "otherNames": [
+    "Triceps pressdown",
+    "Cable pushdown",
+    "Rope pushdown",
+    "Straight-bar pushdown",
+    "V-bar pushdown",
+    "Two-armed standing triceps extension"
+  ],
+  "section": "gym",
+  "type": "strength",
+  "equipment": [
+    "Cable station with high pulley",
+    "Straight bar, rope or V-bar attachment"
+  ],
+  "noEquipmentAlternative": "Resistance band pushdown anchored high; bench dips (Home 11) or close-grip push-ups with no band",
+  "musclesPrimary": [
+    "triceps brachii (long, lateral and medial heads)"
+  ],
+  "musclesSecondary": [
+    "forearm flexors and extensors",
+    "anterior deltoid",
+    "lateral deltoid",
+    "abdominals",
+    "glutes"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": false,
+  "met": 3.5,
+  "compendiumCode": null,
+  "metOptions": [
+    {
+      "code": "02052",
+      "met": 5,
+      "activity": "Extras (text only, harder work): code 02052 (5.0 METs, squats and deadlifts) and code 02050 (6.0 METs, vigorous effort, power lifting or body building) apply to heavier work; not used here (carried ov"
+    },
+    {
+      "code": "02050",
+      "met": 6,
+      "activity": "Extras (text only, harder work): code 02052 (5.0 METs, squats and deadlifts) and code 02050 (6.0 METs, vigorous effort, power lifting or body building) apply to heavier work; not used here (carried ov"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "10-12 at RIR 2-3",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "1 s press, 1 s squeeze, 3 s return",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 3,
+      "reps": "10-12 light (circuit station)",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "1 s press, 1 s squeeze, 3 s return",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "8-12 at RIR 2-3",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "1 s press, 1 s squeeze, 3 s return",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "strength",
+      "sets": 3,
+      "reps": "8-10 strict",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "1 s press, 1 s squeeze, 3 s return",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 2,
+      "reps": "15-20 light",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "1 s press, 0 s squeeze, 2 s return",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "10-12 at RIR 2",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "1 s press, 1 s squeeze, 3 s return",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "8-12 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "1 s press, 1 s squeeze, 3 s return",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "strength",
+      "sets": 4,
+      "reps": "6-8 at RIR 2",
+      "timeSec": null,
+      "restSec": 105,
+      "tempo": "1 s press, 1 s squeeze, 3 s return",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "20 at RIR 2",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "1 s press, 0 s squeeze, 2 s return",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "12-15",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "1 s press, 1 s squeeze, 3 s return",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "8-15 at RIR 0-2",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "1 s press, 1 s squeeze, 3 s return",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": 5,
+      "reps": "5-8 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 120,
+      "tempo": "1 s press, 1 s squeeze, 3 s return",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "endurance",
+      "sets": 4,
+      "reps": "20-25",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "1 s press, 0 s squeeze, 2 s return",
+      "perWeek": 3
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "side",
+    "landmarks": [
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip"
+    ],
+    "phases": [
+      {
+        "name": "start_forearms_parallel",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": "<= 100",
+        "parsed": {
+          "op": "<=",
+          "value": 100,
+          "max": null
+        }
+      },
+      {
+        "name": "end_arms_straight",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": ">= 165",
+        "parsed": {
+          "op": ">=",
+          "value": 165,
+          "max": null
+        }
+      },
+      {
+        "name": "elbow_pinned",
+        "joint": "shoulder (hip-shoulder-elbow)",
+        "angleDeg": "<= 30",
+        "parsed": {
+          "op": "<=",
+          "value": 30,
+          "max": null
+        }
+      },
+      {
+        "name": "lean_limit",
+        "joint": "trunk lean from vertical (shoulder-hip line against the vertical, side view)",
+        "angleDeg": "<= 15",
+        "parsed": {
+          "op": "<=",
+          "value": 15,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 2
+  },
+  "formChecks": [
+    {
+      "joint": "elbow",
+      "rule": "elbow angle < 165 degrees at the bottom (equals end phase threshold; rep not counted)",
+      "message": "Press all the way to straight arms"
+    },
+    {
+      "joint": "elbow",
+      "rule": "elbow angle > 100 degrees at the top (equals start phase threshold; rep not counted)",
+      "message": "Let the forearms rise to parallel"
+    },
+    {
+      "joint": "shoulder",
+      "rule": "separate flag: elbow drift, shoulder angle > 30 degrees (equals elbow_pinned threshold)",
+      "message": "Pin your elbows to your sides"
+    },
+    {
+      "joint": "torso",
+      "rule": "separate flag: trunk lean from vertical > 15 degrees (equals lean_limit threshold)",
+      "message": "Stand tall: do not lean over the bar"
+    },
+    {
+      "joint": "elbow",
+      "rule": "rep duration < 2 s",
+      "message": "Slow down: control each rep"
+    }
+  ],
+  "safetyFlags": [
+    "light_load_only",
+    "elbows_pinned_at_sides",
+    "no_leaning_over_bar",
+    "straight_wrists",
+    "no_hard_lockout_snap",
+    "no_long_breath_holding",
+    "check_attachment_and_pin",
+    "control_the_cable_return",
+    "check_band_and_anchor",
+    "stop_with_sharp_elbow_or_wrist_pain",
+    "shoulder_problems_modify",
+    "osteoporosis_ask_doctor",
+    "pregnancy_ask_obstetrician",
+    "recent_surgery_follow_surgeon_limits"
+  ],
+  "progressions": [
+    "add small load by double progression",
+    "slower lowering or longer pause at the bottom",
+    "single-arm or reverse-grip pushdown; dip station (Gym 38) or overhead extension (Gym 41)"
+  ],
+  "regressions": [
+    "band pushdown anchored high with a light band",
+    "half-range pushdown with very light weight",
+    "bench dips with bent knees (Home 11) or wall push-up"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "setup: pulley at the top, attachment locked on, light weight",
+      "textOverlay": "Pulley high, light weight"
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 1.5 m",
+      "shows": "bar, rope and V-bar grips side by side",
+      "textOverlay": "Pick the grip that keeps wrists straight"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "start: elbows at ribs, forearms about parallel, chest tall",
+      "textOverlay": "Elbows to ribs"
+    },
+    {
+      "seconds": 10,
+      "angle": "side, 2.5 m",
+      "shows": "one slow rep: press to straight arms, pause, return in 2-3 s",
+      "textOverlay": "Press down, arms straight"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "wrong: elbows drifting forward; right: elbows pinned",
+      "textOverlay": "Elbows stay put"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "wrong: leaning over the bar; right: standing tall",
+      "textOverlay": "Stand tall, arms only"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 1.5 m",
+      "shows": "wrong: wrist bent back; right: wrist straight",
+      "textOverlay": "Straight wrists"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "home: band pushdown anchored high",
+      "textOverlay": "Home: band anchored high"
+    }
+  ],
+  "lastResearched": "2026-11-22",
+  "setupSteps": [
+    "Set the pulley at the top. ACE describes the attachment above head height; some sources use the highest position (snippets).",
+    "Choose the attachment. Straight bar: simplest and lets you use the most load; rope: lets you pull the ends apart at the bottom and is more comfortable for some wrists; V-bar: a short angled bar between the two. Pick the one that lets you feel the triceps most and keeps the wrists comfortable (Human Kinetics advice, snippet). Check that the clip is locked.",
+    "Choose a light weight. Pick a load you can control for 8-12 reps without swinging (MasterClass-style advice, snippet). Plate weights vary by machine and are not standardised.",
+    "Stand close. Stand about one hand-width to one foot from the stack, feet hip-width, one foot slightly forward if you like, knees soft.",
+    "Grip. Bar or V-bar: overhand (palms down), hands about shoulder-width or a little narrower. Rope: palms facing each other, thumbs on top.",
+    "Pin the elbows. Pull the attachment down to chest height, tuck the elbows against your sides, forearms about parallel to the floor (or slightly above, see Fitnessvolt vs Workout Labs).",
+    "Brace. Chest tall, ribs down, shoulders down away from the ears, wrists straight, slight forward tilt from the hips at most.",
+    "Check the view. For the camera, stand side-on to the phone so the elbow and the hip are visible.",
+    "Anchor high: door anchor on a door that closes away from you, or a sturdy post; check it before each set. Hold the band in each hand and follow the same steps."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Take the attachment to the start",
+      "action": "Hold the bar, V-bar or rope, tuck elbows to your sides, forearms about parallel to the floor.",
+      "feel": "Light stretch at the back of the arm.",
+      "breathing": "Breathe in.",
+      "tempo": null,
+      "visualCheck": "Side: upper arm vertical, elbow near the ribs, forearm about level with the floor; front: both elbows the same width."
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Set the shoulders and trunk",
+      "action": "Shoulders down, chest tall, ribs down, hips still.",
+      "feel": "Stable trunk, neck long.",
+      "breathing": "Normal.",
+      "tempo": null,
+      "visualCheck": "Side: ears over shoulders, slight forward lean at most."
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Press down",
+      "action": "Straighten the elbows and push the attachment down toward your thighs; the upper arms do not move.",
+      "feel": "Back of the upper arm working.",
+      "breathing": "Breathe out.",
+      "tempo": null,
+      "visualCheck": "Side: elbow stays beside the ribs; hands travel down in a straight line."
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Finish with straight arms",
+      "action": "Press until the arms are fully straight and the hands are beside the thighs, without locking out hard or leaning on the cable. ACE says to extend fully without \"locking out\"; Human Kinetics suggests stopping slightly short if the elbow hurts (snippets).",
+      "feel": "Triceps tight at the end.",
+      "breathing": "Finish the exhale.",
+      "tempo": null,
+      "visualCheck": "Side: arm straight, wrist straight, shoulders still. Rope version: ends split apart slightly at the bottom."
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Pause",
+      "action": "Squeeze the triceps for about 1 second without shrugging or leaning.",
+      "feel": "Strong squeeze at the back of the arm.",
+      "breathing": "Brief hold only; do not strain.",
+      "tempo": null,
+      "visualCheck": "Side: trunk upright, elbows still beside the ribs."
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Return under control",
+      "action": "Let the attachment rise slowly by bending the elbows, elbows staying at your sides, until the forearms are about parallel (elbow about 90 degrees, est.).",
+      "feel": "Triceps controlling the weight.",
+      "breathing": "Breathe in.",
+      "tempo": null,
+      "visualCheck": "Side: elbows do not move forward; the stack does not slam."
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Reset",
+      "action": "Pause with the cable taut, then repeat.",
+      "feel": "Tension reset.",
+      "breathing": "Breathe in.",
+      "tempo": null,
+      "visualCheck": "Side: shoulders still low, ribs down."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Using too heavy a load",
+      "text": "Using too heavy a load. Why: form breaks and the body takes over. Fix: lower the weight until all reps are strict and you can pause 1 second at the bottom."
+    },
+    {
+      "title": "Elbows drifting forward or back",
+      "text": "Elbows drifting forward or back. Why: it creates momentum and lets the shoulders and lats help; ACE and several coaching pages call it the most common error. Fix: pin the elbows to the ribs and move only the forearms."
+    },
+    {
+      "title": "Leaning over the bar",
+      "text": "Leaning over the bar. Why: body weight pushes the attachment, so the triceps do less. Fix: stand tall, step slightly back and lighten the load."
+    },
+    {
+      "title": "Flaring the elbows out",
+      "text": "Flaring the elbows out. Why: shifts load to the shoulders and strains the elbow. Fix: think \"elbows to ribs\"."
+    },
+    {
+      "title": "Bending the wrists back",
+      "text": "Bending the wrists back. Why: excessive wrist extension can irritate wrists and forearms and often limits full extension (snippet). Fix: keep wrists straight and stacked over the forearms; try the rope or V-bar."
+    },
+    {
+      "title": "Short range of motion",
+      "text": "Short range of motion. Why: the triceps get less work. Fix: return to about 90 degrees and press to straight arms."
+    },
+    {
+      "title": "Slamming the lockout or locking hard",
+      "text": "Slamming the lockout or locking hard. Why: stresses the elbow. Fix: extend fully with control; stop a little short if the elbow hurts."
+    },
+    {
+      "title": "Letting the stack slam on the way up",
+      "text": "Letting the stack slam on the way up. Why: loses control and jerks the elbow. Fix: take 2-3 seconds to return and do not rest the stack between reps."
+    },
+    {
+      "title": "Shrugging or rolling the shoulders forward",
+      "text": "Shrugging or rolling the shoulders forward. Why: shifts work to the upper trapezius and front shoulder. Fix: keep shoulders down and still."
+    }
+  ],
+  "safetyNotes": [
+    "Keep the load light enough to hold the elbows still. If you swing, lean or flare the elbows, the weight is too heavy.",
+    "Elbow and wrist caution. Pain at the back of the elbow during pushing or strengthening can point to triceps tendon irritation (snippet; clinicians often frame it as a load management problem). Wrist pain with gripping can suggest forearm overload. No pushdown-specific trial of tendinopathy was found. Lower the load, use a rope or V-bar, keep wrists straight, stop slightly short of lockout and see a clinician if pain lasts.",
+    "High blood pressure: avoid long breath-holding; stop 2-3 reps before failure.",
+    "Cable station: check the attachment is locked on, do not let go with the stack raised, return the attachment gently, keep others clear. Band at home: inspect for nicks, use a secure anchor on a door that closes away from you, and do not release a stretched band.",
+    "Spotter: not needed.",
+    "Gym etiquette: re-hang the attachment, wipe the handles, do not hog the cable station during long rests, do not film other members."
+  ],
+  "sources": [
+    "2024 Adult Compendium of Physical Activities (Herrmann et al., J Sport Health Sci 2024): code 02054, 3.5 METs, resistance training, multiple exercises, 8-15 reps at varied resistance. https://pacompendium.com/conditioning-exercise ; https://pubmed.ncbi.nlm.nih.gov/38242596/ ; https://pacompendium.com/wp-content/uploads/2024/02/1_2024-adult-compendium_1_2024.pdf ; https://pacompendium.com/wp-content/uploads/2025/02/4_2024_adult-compendium-tracking-guide-1-2024.pdf (snippets only). Extras 02052 (5.0) and 02050 (6.0) carried over from earlier files.",
+    "ACE exercise library, Triceps pushdowns and Triceps pressdown (beginner level; attachment above head height; extend fully without locking out; elbow drift recruits the lats). https://www.acefitness.org/education-and-resources/lifestyle/exercise-library/185/triceps-pushdowns ; https://www.acefitness.org/resources/everyone/exercise-library/333/tricep-pressdown/ (snippets only)",
+    "Human Kinetics, Cable push-down and Rope triceps pressdown excerpts (Delavier; grip that gives the best contraction, elbows close, hands to thighs, gentler on the elbow than other triceps work, isolation of the elbow joint). https://us.humankinetics.com/blogs/excerpt/cable-push-down ; https://uk.humankinetics.com/blogs/excerpt/cable-push-down ; https://us.humankinetics.com/blogs/excerpt/rope-triceps-pressdown-exercise (snippets only)",
+    "MasterClass, BarBend, Set for Set, PureGym, Workout Labs, Fitnessvolt, Fitbod (form, forearm start parallel versus slightly above, lockout, wrist posture, reps and sets). https://www.masterclass.com/articles/tricep-pushdown-guide ; https://barbend.com/triceps-pushdown/ ; https://www.setforset.com/blogs/news/triceps-pushdown ; https://puregym.com/exercises/arms-and-shoulders/tricep-extension/tricep-pushdowns ; https://workoutlabs.com/exercise-guide/triceps-pushdowns/ ; https://fitnessvolt.com/cable-triceps-pushdown/ ; https://fitbod.me/exercises/cable-tricep-pushdown (snippets only; fitness-site level)",
+    "Attachment comparison: Fitnessvolt rope vs straight bar vs V-bar; Boeckh-Behrens and Buskies (2000, Sportverletz Sportschaden, cited second-hand); Boehler 2011 thesis, University of Wisconsin. https://fitnessvolt.com/rope-vs-straight-bar-vs-v-bar/ ; https://minds.wisc.edu/items/4876923b-3a14-47c3-9a69-decf731bd027 ; https://www.boxrox.com/?p=236009 (snippets only)",
+    "Push-down muscle-activity studies: Frontiers in Physiology 2020 (speed and intensity); International Journal of Strength and Conditioning 2024 (forearm position). https://doaj.org/article/0109c4e220c64205bd350f3d697c137b ; https://doaj.org/article/057b76722f1943c58c30d63d1b0533a1 (snippets only)",
+    "Common mistakes: Myprotein, Sportskeeda, Muscular Strength, Origym, Squat Wolf, Gymnation, Catalyst Athletics, Wikipedia (elbow drift, flared elbows, wrist bend, leaning, too heavy; grip emphasis). https://www.myprotein.com/thezone/training/triceps-pushdown-exercise-technique-common-mistakes/ ; https://sportskeeda.com/health-and-fitness/triceps-pushdown-correct-form-benefits-tips ; https://muscularstrength.com/article/three-triceps-pushdown-mistakes-everyone-makes ; https://gymnation.com/exercise-library/cable-pushdown ; https://catalystathletics.com/exercise/911/Tricep-Pushdown/ ; https://en.wikipedia.org/wiki/Push-down_(exercise) (snippets only)",
+    "Reps, sets and rest: Gymgeek, Breaking Muscle, Man of Many, Totalshape, BoxRox. https://gymgeek.com/exercises/arms/what-the-tricep-pushdown-is-and-how-to-do-it-correctly/ ; https://breakingmuscle.com/triceps-pushdown/ ; https://manofmany.com/lifestyle/fitness/best-tricep-exercises-for-men ; https://totalshape.com/training/how-to-do-triceps-pushdown/ ; https://www.boxrox.com/?p=253094 (snippets only)",
+    "Elbow and wrist cautions: triceps tendinopathy and epicondylitis overviews (UTHealth ortho, StatPearls NBK431092, Hinge Health, e3rehab; PMC8190485, PMC3435941). https://med.uth.edu/ortho/triceps-tendonitis/ ; https://www.ncbi.nlm.nih.gov/books/NBK431092/ ; https://pmc.ncbi.nlm.nih.gov/articles/PMC8190485 (snippets only; general, not pushdown-specific)",
+    "NHS physical activity guidelines for adults 19 to 64 (muscle-strengthening on at least 2 days a week, arms included). https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-for-adults-aged-19-to-64/ (snippet only)",
+    "ACSM (2009), Progression models in resistance training for healthy adults; Zourdos et al. (2016), RIR-based RPE scale (carried over). https://www.sportgeneeskunde.com/wp-content/uploads/ACSM-Position-Stand-Progression-Models-in-Resistance-Training-for-Healthy-Adults.pdf ; https://openrepository.aut.ac.nz/items/efef3b25-6701-4fb5-bb82-55fcd2a26027/full",
+    "Condition rows carried over from earlier gym files (not re-opened this session): Valsalva review https://pubmed.ncbi.nlm.nih.gov/23222073/ ; Colberg et al. 2016 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/ ; ACC summary of AHA 2023 https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2023/12/19/15/33/resistance-exercise-training ; AHA Gibbs et al. https://professional.heart.org/en/science-news/Physical-Activity-as-a-Critical-Component-of-First-Line-Treatment-for-Elevated-BP-or-Cholesterol/commentary ; Donnelly et al. 2009 https://pubmed.ncbi.nlm.nih.gov/19127177/ ; PCOS https://vuir.vu.edu.au/45855/1/1-s2.0-S2772696723000054-main.pdf ; thyroid https://pubmed.ncbi.nlm.nih.gov/37999992/ ; asthma https://www.pharmacymagazine.co.uk/cpd-modules/making-a-difference-in-asthma-care/exercise-and-asthma-528343 ; LIFTMOR https://academic.oup.com/jbmr/article/33/2/211/7605709 ; Osteoporosis Canada https://osteoporosis.ca/wp-content/uploads/2014-07-25-Are-you-too-fit-to-fracture-for-patients.pdf ; ACOG CO 804 https://opqic.org/acog-committee-opinion-no-804-physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period/ ; Contemporary OB/GYN https://www.contemporaryobgyn.net/sweating-it-out-exercise-in-pregnancy ; NNUH https://www.nnuh.nhs.uk/publication/download/post-natal-physiotherapy-advice-and-exercises-v2-1",
+    "Note: all sources for this item were seen only as search-result summaries (pages not opened in full); many are fitness-site blogs. The angle thresholds (100 and 165 degrees for the elbow, 30 degrees for elbow drift), the lean limit (15 degrees), the 2 s minimum rep, and all sets, reps and rest values are FitPlate choices (est.), not validated. Not found: an NASM or ExRx pushdown page; a Mayo Clinic, Harvard Health or NSCA pushdown page; the primary rope-versus-bar EMG papers and any V-bar EMG data; a pushdown-specific professional-body prescription or Compendium code; a validated starting load; condition-specific sources for knee pain, lower back pain, shoulder problems, obesity and PCOS; a trial of pushdowns in triceps tendinopathy; the primary ACOG page."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 28.6,
+      "70kg": 24.5,
+      "80kg": 21.4
+    },
+    "per300kcal": {
+      "60kg": 85.7,
+      "70kg": 73.5,
+      "80kg": 64.3
+    }
+  },
+  "gymAccess": [
+    "full_gym",
+    "basic_gym",
+    "home_equipment"
+  ],
+  "suitsPreferences": [
+    "strength",
+    "beginner",
+    "upper_body_day",
+    "push_day",
+    "arm_day",
+    "full_body",
+    "small_flat_with_band",
+    "20_to_60_min_sessions"
+  ],
+  "swapsByAccess": {
+    "none": "Bench dips (Home 11) or close-grip push-ups",
+    "home_equipment": "Band pushdown anchored high, bench dips (Home 11), or close-grip push-ups",
+    "basic_gym": "Cable pushdown with a bar or rope if a cable station is available; otherwise band pushdown or bench dips (Home 11)",
+    "full_gym": "Cable pushdown with rope, bar or V-bar; dip station (Gym 38) or overhead tricep extension (Gym 41) if the cable feels awkward or wrists complain"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "No long breath-holding; stop 2-3 reps before failure; no lifting if resting BP >= 180/120; uncontrolled BP: ask a doctor",
+      "source": "Valsalva systematic review 2013 (PubMed 23222073); NSCA 1999 Valsalva article; Biology of Sport 2019 systematic review"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "2-3 non-consecutive resistance days per week; usual glucose checks if on insulin or sulfonylureas",
+      "source": "ADA position statement, Colberg et al. 2016"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "After clearance: light loads, continuous breathing, no straining",
+      "source": "AHA resistance exercise statement (via ACC summary 2023)"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "Part of 2+ days per week resistance work with aerobic activity",
+      "source": "AHA scientific statement (Gibbs et al.)"
+    },
+    {
+      "condition": "obesity",
+      "status": "ok",
+      "change": "Light and standing; stagger stance if balance is a worry; exercise-specific advice not found",
+      "source": "ACSM weight management position stand (Donnelly et al. 2009)"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "Fits muscle-strengthening guidance; exercise-specific advice not found",
+      "source": "International PCOS guideline 2023"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "Train normally if controlled; start at beginner level with ongoing fatigue",
+      "source": "Systematic review 2023 (PubMed 37999992)"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Warm up and keep reliever inhaler nearby",
+      "source": "Asthma exercise guidance (Pharmacy Magazine CPD)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "ok",
+      "change": "Standing loads the knees little; split stance if standing is painful; condition-specific source not found",
+      "source": "Not found"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "ok",
+      "change": "Stand tall, no leaning over the bar, light load; acute pain or disc problems: ask a professional; condition-specific source not found",
+      "source": "Not found"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "modify",
+      "change": "Keep elbows pinned in front of the body, lighter load, stop before pinching; pain over 2 weeks, night pain, weakness or catching: see a clinician; pushdown-specific source not found",
+      "source": "Not found"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "ask_doctor",
+      "change": "Light resistance work benefits bone, but ask a doctor or physiotherapist about loaded work with low bone mass or a spine fracture",
+      "source": "LIFTMOR trial (Watson et al.); Osteoporosis Canada"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "ask_doctor",
+      "change": "Ask obstetrician; light weights or band version as balance changes",
+      "source": "ACOG Committee Opinion 804; contemporaryobgyn.net summary (secondary)"
+    },
+    {
+      "condition": "postpartum",
+      "status": "ok",
+      "change": "Pelvic floor work first; return to loaded work once cleared, especially after caesarean; start with very light weights",
+      "source": "NHS postnatal physiotherapy leaflets (NNUH, Royal Devon)"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Only with surgeon or physiotherapist approval; arm, shoulder, chest or abdominal surgery often restricts loaded arm work",
+      "source": "General clearance advice; condition-specific source not found"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "gym",
+      "home"
+    ],
+    "bodyRegion": [
+      "upper"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "fat_loss",
+      "muscle",
+      "strength",
+      "endurance"
+    ],
+    "intensity": "light",
+    "noise": "quiet",
+    "space": "machine",
+    "typicalMinutes": 8,
+    "kcalPer10min70kg": 41,
+    "difficulty1to5": 2,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Gym",
+    "Home",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Strength",
+    "Arms",
+    "Rep counter",
+    "Under 10 min"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-11-22",
+      "file": "FitPlate_Fitness_2026-11-22.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

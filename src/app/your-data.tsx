@@ -122,7 +122,9 @@ export default function YourData() {
             <Text style={styles.strong}>Delete my data</Text> (in Profile, when signed in) permanently removes everything we saved for your
             account, from the cloud and this device, including any workout videos you recorded in camera mode.
           </Point>
-          <Point>Deleting your whole account and downloading a copy of your data are coming soon.</Point>
+          <Point>
+            <Text style={styles.strong}>Delete my account</Text> (also in Profile) does the same and removes your sign-in too. <Text style={styles.strong}>Export my data</Text> in Settings gives you a copy first.
+          </Point>
         </Section>
 
         <Text style={styles.foot}>General information about how this app handles your data, not legal advice.</Text>

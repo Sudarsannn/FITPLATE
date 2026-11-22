@@ -1,0 +1,603 @@
+{
+  "id": "lactose-intolerance",
+  "type": "condition",
+  "name": "Lactose intolerance",
+  "surveyQuestion": "Do you have any of these health conditions? (select all that apply) -> Lactose intolerance. Check question: Has a doctor or a breath test told you that you cannot digest lactose, or do milk, curd or sweets reliably cause bloating, gas, cramps or loose stools within about 30 minutes to 2 hours? Yes, diagnosed / Yes, I think so (lifestyle-only mode) / No / Not sure. Safety question: Is this for a baby or child under 18, or do you get hives, swelling, wheeze, vomiting or blood in stool after milk? (Yes: no targets set, see a doctor)",
+  "targets": [
+    {
+      "nutrient": "energy",
+      "unit": "kcal/day",
+      "generalAdult": 2110,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); no lactose-specific change found"
+    },
+    {
+      "nutrient": "protein",
+      "unit": "g/kg/day",
+      "generalAdult": 0.83,
+      "profileValue": 0.83,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "total_fat",
+      "unit": "% energy",
+      "generalAdult": 30,
+      "profileValue": 30,
+      "min": null,
+      "max": 30,
+      "direction": "same",
+      "source": "WHO 2023; DGI 2024"
+    },
+    {
+      "nutrient": "saturated_fat",
+      "unit": "% energy",
+      "generalAdult": 10,
+      "profileValue": 10,
+      "min": null,
+      "max": 10,
+      "direction": "same",
+      "source": "WHO 2023"
+    },
+    {
+      "nutrient": "trans_fat",
+      "unit": "% energy",
+      "generalAdult": 1,
+      "profileValue": 1,
+      "min": null,
+      "max": 1,
+      "direction": "same",
+      "source": "WHO 2023"
+    },
+    {
+      "nutrient": "mufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found"
+    },
+    {
+      "nutrient": "pufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found"
+    },
+    {
+      "nutrient": "omega_3_fish",
+      "unit": "servings/week",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found"
+    },
+    {
+      "nutrient": "dietary_cholesterol",
+      "unit": "mg/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found"
+    },
+    {
+      "nutrient": "total_carbohydrate",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "DGI 2024 (secondary, unverified)"
+    },
+    {
+      "nutrient": "added_sugar",
+      "unit": "g/day",
+      "generalAdult": 25,
+      "profileValue": 25,
+      "min": null,
+      "max": 25,
+      "direction": "limit",
+      "source": "WHO 2015; as P6, P14, P16, P17"
+    },
+    {
+      "nutrient": "fibre",
+      "unit": "g/day",
+      "generalAdult": 30,
+      "profileValue": 30,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "As P4; P16"
+    },
+    {
+      "nutrient": "lactose_single_dose",
+      "unit": "g per single sitting",
+      "generalAdult": null,
+      "profileValue": 12,
+      "min": null,
+      "max": 12,
+      "direction": "limit",
+      "source": "NIH consensus (Suchy 2010); AHRQ review (Wilt 2010); Shaukat 2010 (via search)"
+    },
+    {
+      "nutrient": "lactose_daily_divided",
+      "unit": "g/day",
+      "generalAdult": null,
+      "profileValue": 24,
+      "min": null,
+      "max": 24,
+      "direction": "limit",
+      "source": "AHRQ evidence report 192 (via NIH consensus summary)"
+    },
+    {
+      "nutrient": "sodium",
+      "unit": "mg/day",
+      "generalAdult": 2000,
+      "profileValue": 2000,
+      "min": null,
+      "max": 2000,
+      "direction": "limit",
+      "source": "DGI 2024; WHO 2012; topic 18"
+    },
+    {
+      "nutrient": "salt",
+      "unit": "g/day",
+      "generalAdult": 5,
+      "profileValue": 5,
+      "min": null,
+      "max": 5,
+      "direction": "limit",
+      "source": "As above"
+    },
+    {
+      "nutrient": "potassium",
+      "unit": "mg/day",
+      "generalAdult": 3500,
+      "profileValue": 3500,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); topic 19"
+    },
+    {
+      "nutrient": "calcium",
+      "unit": "mg/day",
+      "generalAdult": 1000,
+      "profileValue": 1000,
+      "min": 1000,
+      "max": null,
+      "direction": "raise",
+      "source": "ICMR-NIN 2020 (secondary, unverified); IFCT 2017; topic 15"
+    },
+    {
+      "nutrient": "vitamin_d",
+      "unit": "ug/day",
+      "generalAdult": 15,
+      "profileValue": 15,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "vitamin_b12",
+      "unit": "ug/day",
+      "generalAdult": 2.2,
+      "profileValue": 2.2,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 as adopted (secondary, unverified); topic 13"
+    },
+    {
+      "nutrient": "riboflavin_b2",
+      "unit": "mg/day",
+      "generalAdult": 2,
+      "profileValue": 2,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); topic 7"
+    },
+    {
+      "nutrient": "iodine",
+      "unit": "ug/day",
+      "generalAdult": 150,
+      "profileValue": 150,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); topic 25"
+    },
+    {
+      "nutrient": "phosphorus",
+      "unit": "mg/day",
+      "generalAdult": 1000,
+      "profileValue": 1000,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); topic 16"
+    },
+    {
+      "nutrient": "iron",
+      "unit": "mg/day",
+      "generalAdult": 19,
+      "profileValue": 19,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); topic 21"
+    },
+    {
+      "nutrient": "magnesium",
+      "unit": "mg/day",
+      "generalAdult": 440,
+      "profileValue": 440,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); topic 17"
+    },
+    {
+      "nutrient": "folate",
+      "unit": "ug DFE/day",
+      "generalAdult": 300,
+      "profileValue": 300,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "water",
+      "unit": "ml/day",
+      "generalAdult": 2500,
+      "profileValue": null,
+      "min": 1500,
+      "max": 2500,
+      "direction": "same",
+      "source": "Topic 30; no lactose-specific fluid value found"
+    }
+  ],
+  "bloodMarkers": [
+    {
+      "marker": "Hydrogen breath test after 25 g lactose (diagnostic; doctor-ordered)",
+      "target": "A rise of 20 ppm or more above baseline is positive for lactose malabsorption; symptoms during the test are recorded",
+      "unit": "ppm H2",
+      "source": "Rezaie et al., North American Consensus 2017 (via search)"
+    },
+    {
+      "marker": "Calcium intake (diet, not a blood test)",
+      "target": "1,000 mg/day (1,200 for 60+); blood calcium is kept in range by bone so it does not show a low intake",
+      "unit": "mg/day",
+      "source": "ICMR-NIN 2020 (secondary, unverified); topic 15"
+    },
+    {
+      "marker": "Serum 25(OH) vitamin D",
+      "target": "Doctor-set; no lactose-specific target; stored only (see P12)",
+      "unit": "ng/mL or nmol/L",
+      "source": "P12"
+    },
+    {
+      "marker": "Vitamin B12 (serum)",
+      "target": "Doctor-set; stored only (see P12, topic 13)",
+      "unit": "pg/mL",
+      "source": "P12; topic 13"
+    },
+    {
+      "marker": "Haemoglobin, ferritin",
+      "target": "Stored only; unexplained anaemia is a red flag",
+      "unit": "g/dL; ng/mL",
+      "source": "P11"
+    },
+    {
+      "marker": "Total cholesterol, LDL, HDL, triglycerides, HbA1c, uric acid, eGFR, TSH",
+      "target": "Not applicable to this profile",
+      "unit": "-",
+      "source": "-"
+    }
+  ],
+  "waterMl": {
+    "min": 1500,
+    "max": 2500,
+    "notes": "No change from the general FitPlate range (topic 30: 2,500 ml men, 2,000 ml women). Lactose intolerance does not call for more or less water. During a bout of diarrhoea keep drinking normally (ORS from a pharmacist if advised) and see a doctor if it lasts more than a few days or there is blood. Milk, curd and chaas count as fluid but may bring symptoms; use water, nimbu pani without added sugar, or lactose-free options. With kidney, heart or liver disease, pregnancy, a fluid limit or a diuretic show the general range only. Follow your doctor's advice."
+  },
+  "sodiumMgMax": 2000,
+  "dietaryCholesterolMgMax": null,
+  "foodsFavour": [
+    "lactose-free milk (lactase-treated, checked label)",
+    "live-culture dahi/curd and thick strained curd in small portions (often better tolerated than milk)",
+    "paneer (low lactose, est. 1-3 g per 100 g)",
+    "ghee in normal cooking amounts (near zero lactose)",
+    "hard aged cheese in small amounts",
+    "ragi, sesame (til) and almonds for calcium",
+    "methi, drumstick leaves and curry leaves (low-oxalate greens)",
+    "calcium-set tofu and fortified soy milk or other fortified plant milks (unsweetened, check calcium on label)",
+    "small fish eaten with bones (sardine, anchovy)",
+    "dal, eggs, fish, poultry, soy and nuts for protein, B12 and riboflavin"
+  ],
+  "foodsLimit": [
+    "large single servings of milk (more than about 1 cup / 250 ml at once) on an empty stomach",
+    "kheer, rabri, basundi, gajar halwa, milk-based mithai (khoa/mawa, peda, barfi, gulab jamun)",
+    "milk-heavy drinks (cold coffee, milkshake, sweet lassi, several cups of milk chai)",
+    "cream and khoa-based gravies (malai kofta, shahi paneer, navratan korma)",
+    "milk powder (SMP), whey and milk-solids in packaged foods when they trigger symptoms",
+    "processed cheese spreads and cheese slices in large amounts (est.)"
+  ],
+  "goodFitDishes": [
+    {
+      "dishNumber": 1,
+      "dishName": "Poha"
+    },
+    {
+      "dishNumber": 6,
+      "dishName": "Upma"
+    },
+    {
+      "dishNumber": 9,
+      "dishName": "Idli with Sambar"
+    },
+    {
+      "dishNumber": 5,
+      "dishName": "Dal Tadka"
+    },
+    {
+      "dishNumber": 8,
+      "dishName": "Chole (Chana Masala)"
+    },
+    {
+      "dishNumber": 12,
+      "dishName": "Rajma Chawal"
+    },
+    {
+      "dishNumber": 16,
+      "dishName": "Besan Chilla"
+    },
+    {
+      "dishNumber": 26,
+      "dishName": "Moong Dal Chilla"
+    },
+    {
+      "dishNumber": 56,
+      "dishName": "Pesarattu"
+    },
+    {
+      "dishNumber": 71,
+      "dishName": "Ragi Dosa"
+    },
+    {
+      "dishNumber": 66,
+      "dishName": "Sprouts Chaat"
+    },
+    {
+      "dishNumber": 14,
+      "dishName": "Egg Bhurji"
+    },
+    {
+      "dishNumber": 33,
+      "dishName": "Goan Fish Curry"
+    },
+    {
+      "dishNumber": 55,
+      "dishName": "Prawn Masala"
+    },
+    {
+      "dishNumber": 45,
+      "dishName": "Tandoori Chicken"
+    },
+    {
+      "dishNumber": 52,
+      "dishName": "Moong Dal Khichdi"
+    },
+    {
+      "dishNumber": 41,
+      "dishName": "Pongal"
+    },
+    {
+      "dishNumber": 37,
+      "dishName": "Bhindi Masala"
+    },
+    {
+      "dishNumber": 44,
+      "dishName": "Baingan Bharta"
+    },
+    {
+      "dishNumber": 80,
+      "dishName": "Masoor Dal"
+    },
+    {
+      "dishNumber": 4,
+      "dishName": "Masala Dosa"
+    },
+    {
+      "dishNumber": 30,
+      "dishName": "Lemon Rice"
+    }
+  ],
+  "cautionDishes": [
+    {
+      "dishNumber": 100,
+      "dishName": "Cold Coffee",
+      "reason": "Made with about 200 ml milk: about 9-10 g lactose (est.); use lactose-free or soy milk"
+    },
+    {
+      "dishNumber": 95,
+      "dishName": "Rice Kheer",
+      "reason": "Milk-based, about 8-12 g lactose per bowl (est.)"
+    },
+    {
+      "dishNumber": 96,
+      "dishName": "Gajar Halwa",
+      "reason": "Milk and often khoa: about 6-12 g lactose per serving (est.)"
+    },
+    {
+      "dishNumber": 97,
+      "dishName": "Gulab Jamun",
+      "reason": "Khoa-based; 2 pieces about 5-10 g lactose (est.)"
+    },
+    {
+      "dishNumber": 98,
+      "dishName": "Mango Lassi",
+      "reason": "Curd and milk: about 6-9 g lactose per glass (est.); fermented curd part is easier"
+    },
+    {
+      "dishNumber": 99,
+      "dishName": "Masala Chai",
+      "reason": "Milk tea: about 4-5 g lactose per cup of about 100 ml milk (est.); several cups add up; also see added sugar"
+    },
+    {
+      "dishNumber": 31,
+      "dishName": "Indian-style Overnight Oats",
+      "reason": "Soaked in milk or curd: about 6-10 g lactose (est.); swap lactose-free or soy milk"
+    },
+    {
+      "dishNumber": 42,
+      "dishName": "Malai Kofta",
+      "reason": "Khoa, paneer, cream: about 3-6 g lactose (est.)"
+    },
+    {
+      "dishNumber": 78,
+      "dishName": "Navratan Korma",
+      "reason": "Cream, milk, khoa in gravy: about 3-5 g lactose (est.)"
+    },
+    {
+      "dishNumber": 63,
+      "dishName": "Shahi Paneer",
+      "reason": "Cream and milk in gravy: about 3-5 g lactose (est.); paneer itself low"
+    },
+    {
+      "dishNumber": 3,
+      "dishName": "Paneer Butter Masala",
+      "reason": "Cream and butter in gravy plus paneer: about 2-5 g lactose (est.)"
+    },
+    {
+      "dishNumber": 7,
+      "dishName": "Butter Chicken",
+      "reason": "Cream, butter, curd: about 2-4 g lactose (est.)"
+    },
+    {
+      "dishNumber": 18,
+      "dishName": "Chicken Tikka Masala",
+      "reason": "Cream and curd: about 2-4 g lactose (est.)"
+    },
+    {
+      "dishNumber": 27,
+      "dishName": "Dal Makhani",
+      "reason": "Cream and butter: about 1-3 g lactose (est.)"
+    },
+    {
+      "dishNumber": 35,
+      "dishName": "Curd Rice",
+      "reason": "Curd (fermented) about 4-6 g lactose (est.); often tolerated, try small portion"
+    },
+    {
+      "dishNumber": 72,
+      "dishName": "Kadhi Pakora",
+      "reason": "Curd or buttermilk base: about 3-5 g lactose (est.)"
+    },
+    {
+      "dishNumber": 81,
+      "dishName": "Paneer Paratha",
+      "reason": "Paneer filling low in lactose (est. 1-2 g) but buttered; usually fine in small amounts"
+    },
+    {
+      "dishNumber": 17,
+      "dishName": "Palak Paneer",
+      "reason": "Paneer low lactose; some recipes add cream: about 1-3 g (est.)"
+    },
+    {
+      "dishNumber": 13,
+      "dishName": "Pav Bhaji",
+      "reason": "Butter-heavy; pav may contain milk solids: about 0.5-2 g lactose (est.); check bakery label"
+    },
+    {
+      "dishNumber": 50,
+      "dishName": "Chicken Korma",
+      "reason": "Curd, cream, nuts: about 2-4 g lactose (est.)"
+    },
+    {
+      "dishNumber": 86,
+      "dishName": "Bombay Veg Sandwich",
+      "reason": "Butter and sometimes cheese slice or milk bread: about 0.5-3 g lactose (est.)"
+    },
+    {
+      "dishNumber": 94,
+      "dishName": "Pasta in Red Sauce (Indian-style)",
+      "reason": "Cheese topping adds lactose; hard cheese is low (est.)"
+    }
+  ],
+  "conflictsWith": [
+    {
+      "profileId": "irritable-bowel-syndrome",
+      "rule": "Lactose is one FODMAP; do one change at a time with a diary so symptoms are not blamed on lactose alone (P16). Do not remove dairy and wheat together without a doctor or dietitian"
+    },
+    {
+      "profileId": "celiac-disease-gluten-sensitivity",
+      "rule": "Untreated celiac disease can cause secondary lactose intolerance that fades as the gut heals; test before dropping gluten; lactose limit may be temporary (P19; doctor-led)"
+    },
+    {
+      "profileId": "osteoporosis-low-bone-density",
+      "rule": "Calcium target 1,000-1,200 mg must be met without dairy; the higher calcium need overrides; doctor sets any supplement (P20)"
+    },
+    {
+      "profileId": "vitamin-d-b12-deficiency",
+      "rule": "Dairy cuts can lower B12 and calcium intake; use the stricter of the two profiles' reminders; supplements are doctor-led (P12)"
+    },
+    {
+      "profileId": "vegan-diet",
+      "rule": "Vegan already excludes dairy; P18 adds nothing but the hidden-lactose label check; P34 rules for calcium, B12, iodine apply"
+    },
+    {
+      "profileId": "kidney-stones",
+      "rule": "If calcium-rich foods or supplements are used to replace dairy, stone-formers keep calcium from food and avoid high-oxalate greens (P14); doctor decides"
+    },
+    {
+      "profileId": "chronic-kidney-disease-early",
+      "rule": "Replacing milk with nuts, tofu or fortified plant milks changes potassium and phosphorus; P13 rules override and the doctor sets the plan"
+    }
+  ],
+  "requiresDoctorInput": true,
+  "requiresDoctorInputStated": true,
+  "fluidNote": "Follow your doctor's advice",
+  "warnings": [
+    "General information, not medical advice; FitPlate does not diagnose lactose intolerance.",
+    "Infants and children under 18: no targets set; see a paediatrician (milk allergy is different and can be dangerous).",
+    "Hives, lip or face swelling, wheeze, repeated vomiting or blood in stool after milk: possible milk allergy, seek care now.",
+    "Blood in stool, unexplained weight loss, persistent diarrhoea, night-time symptoms, anaemia, fever or severe pain: doctor first, do not assume lactose.",
+    "Do not stop all dairy for months without a calcium, vitamin D, protein and B12 plan.",
+    "Lactase enzyme tablets or drops, probiotics and calcium or vitamin D supplements: the doctor or pharmacist decides; no dose is given by the app.",
+    "A2 milk is not lactose-free.",
+    "Pregnancy and breastfeeding: the doctor sets calcium and any supplements (P22, P23)."
+  ],
+  "lastResearched": "2026-11-22",
+  "versions": [
+    {
+      "date": "2026-11-22",
+      "file": "FitPlate_Nutrients_2026-11-22.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3); max as safety limit",
+    "limits": "safety limit (lower on conflict)",
+    "lists": "union",
+    "requiresDoctorInput": "stated true in any version, else newest version (missing flag + limits → true)"
+  },
+  "mergeNotes": [],
+  "needsReview": []
+}

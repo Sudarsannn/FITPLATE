@@ -1,0 +1,84 @@
+{
+  "id": "topic41-cooking-storage-effects",
+  "type": "guidance",
+  "name": "Topic 41: How cooking and storage affect vitamins and minerals",
+  "rules": [
+    {
+      "if": "dish_method is boil_water_discarded AND dish lists vitamin C, folate or thiamine as a key nutrient",
+      "then": "Apply conservative est. factors (vitamin C 0.50, folate 0.50, thiamine 0.65, B6 0.70, carotenoids 0.80, minerals 0.75); show as 'about' with an estimate label; tip: steam or sauté briefly, or eat the cooking water",
+      "source": "Zeng 2013 (Emerald), UK spinach folate study, Rickman Barrett Bruhn 2007 (JSFA 87:930-944) (all secondary, unverified); factors est."
+    },
+    {
+      "if": "dish_method is boil_water_eaten OR pressure_cook",
+      "then": "Use factors vitamin C 0.70, folate 0.75 to 0.80, thiamine 0.80, B6 0.85, minerals 1.00 (est.); tip: use the dal water in the next dish",
+      "source": "Indian cowpea pod study; 2024 legume thiamine study (1.9 to 34.5% pressure vs 9.2 to 47.1% pan); ICMR-NIN DGI 2024 guideline 13 (secondary, unverified); factors est."
+    },
+    {
+      "if": "dish_method is steam OR microwave_little_water",
+      "then": "Use factors vitamin C 0.75 to 0.85, folate 0.80 to 0.90, thiamine 0.85 (est.); cap combined cooking penalty so retained vitamin C, folate and thiamine never show below 0.30 (est.)",
+      "source": "Zeng 2013; J Food Sci 2007 broccoli study (sources conflict on microwave: 72% to over 90% vitamin C kept) (secondary, unverified); factors est."
+    },
+    {
+      "if": "food is idli, dosa or dhokla batter",
+      "then": "Count vitamin B12 as 0; do not add a B-vitamin uplift for fermentation; may say fermentation improves iron and zinc bioaccessibility in lab tests; point to curd, milk, eggs, fortified foods or B12 supplement as sources",
+      "source": "Hemalatha 2007; J Appl Microbiol idli study (jam.13453); no measured B12 in batter found (secondary, unverified)"
+    },
+    {
+      "if": "rice cooked in excess water AND water discarded",
+      "then": "Use est. factors folate 0.40, thiamine 0.45, B6 0.50, iron 0.55; tip: cook with measured water and use the starchy water in soup or dal; rinse rice once or twice only",
+      "source": "FAO rice washing and cooking loss table; 2015 Food Additives and Contaminants rice study (secondary; column mapping uncertain); factors est."
+    },
+    {
+      "if": "user has kidney_stone_history OR doctor-advised low-oxalate diet AND dish contains spinach, amaranth or other high-oxalate greens",
+      "then": "Suggest blanching in plenty of water and discarding the water (soluble oxalate falls about 30 to 87% in spinach, depending on study) instead of the generic 'use the cooking water' tip; pair with a vitamin C food; note vitamin C and folate fall; requires_doctor_input for dietary limits",
+      "source": "Chai and Liebman 2005 (J Agric Food Chem); Pakistani vegetable oxalate study (secondary, unverified); topic 39"
+    },
+    {
+      "if": "leftover contains cooked rice",
+      "then": "Show: cool and refrigerate within about 1 hour of cooking, eat within 1 to 2 days, reheat only once until steaming hot all through; reheating does not remove Bacillus cereus toxin",
+      "source": "NHS advice as reported by secondary outlets; Healthy WA; NZ MPI (secondary, unverified; fridge days differ by source)"
+    },
+    {
+      "if": "dish is reheated after chilling",
+      "then": "Apply extra est. factor vitamin C 0.85, folate 0.85, B6 0.90, thiamine 0.95 once; do not double count with storage; no nutrient claim for protein, minerals, fibre",
+      "source": "Vitamin retention in cook/chill and cook/hot-hold hospital food-services (PubMed 8621875; secondary, unverified); factors est."
+    },
+    {
+      "if": "product is milk AND (stored in clear container in light OR repeatedly boiled)",
+      "then": "Tip: keep in opaque pack or container in the fridge; heat packet milk briefly; riboflavin falls fast in light and thiamine and riboflavin fall about 27% on household boiling of loose milk in one study",
+      "source": "Light-induced riboflavin loss studies (UMN, Unimi, MSU abstracts); Pakistani milk boiling study (secondary, unverified)"
+    },
+    {
+      "if": "juice is opened packaged OR stored more than a day",
+      "then": "Do not count packaged juice as a dependable vitamin C source after opening; fresh juice: drink within hours, est. 0.90 per 24 h in fridge",
+      "source": "Arizona State (Johnston) orange juice study via news report (secondary, unverified); est."
+    },
+    {
+      "if": "user stores whole-wheat atta",
+      "then": "Tip: buy small packs or fresh-ground, airtight, cool and dry, fridge in humid season; discard bitter or musty flour; no vitamin E number",
+      "source": "Whole-wheat flour lipase and shelf-life patents and trade press (secondary, unverified); atta-specific data Not found"
+    },
+    {
+      "if": "user reuses frying oil",
+      "then": "Tip: do not reuse deep-frying oil repeatedly; discard dark, smoky, foamy or off-smelling oil; FSSAI 25% total polar compounds limit applies to food businesses only",
+      "source": "FSSAI RUCO page and 2018 guidance note (secondary)"
+    },
+    {
+      "if": "user cooks in iron kadai, tawa or pot",
+      "then": "Tip only: more iron is added with acidic, moist, long-cooked food; no numeric iron adjustment; iron-overload conditions need doctor advice; still affected by tea and calcium (topic 39)",
+      "source": "Brittin and Nossaman 1986 (JADA); Cheng and Brittin 1991; J Evid Based Med Healthc 2016 (n=6) (secondary abstracts; mg increase Not found)"
+    }
+  ],
+  "lastResearched": "2026-11-22",
+  "versions": [
+    {
+      "date": "2026-11-22",
+      "file": "FitPlate_Nutrients_2026-11-22.md"
+    }
+  ],
+  "mergeMethod": {
+    "rules": "union (newest wording of the same rule)"
+  },
+  "mergeNotes": [],
+  "needsReview": []
+}

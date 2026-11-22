@@ -131,3 +131,4 @@ Spark allows about 20,000 writes and 50,000 reads a day. Writes are batched and 
 - 2026-10-24 (My Meals): `mealLogs` gain optional `how` ('cooked' | 'ordered' | 'logged'), `costInr`, `orderInr`, `servings`. Older logs have none of them and read as cooked when `cooked`, else logged. Time of day (breakfast / lunch / snacks / dinner) is worked out from `timestamp`, not stored. Additive and optional, so no migration.
 
 - 2026-11-11 (Day 23): `routines` collection (v1). Editable, so it is not in APPEND_ONLY and firestore.rules needs no change.
+- 2026-11-22 (Day 34): no schema change. Sync flush now merges with the cloud (newest updatedAt wins) on the retry after a failed send, so an older offline edit cannot overwrite a newer copy saved from another device. New store action deleteMyAccount deletes all data first, then the Firebase sign-in.

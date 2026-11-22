@@ -1,0 +1,59 @@
+{
+  "id": "special-micronutrient-needs-by-sex-life-stage",
+  "type": "guidance",
+  "name": "Topic 42: Micronutrient needs by sex and life stage",
+  "rules": [
+    {
+      "if": "profile has sex, age 19-59 and no pregnancy or lactation flag",
+      "then": "use the adult male or adult female column of the master table (ICMR-NIN 2020 first); apply activity scaling only to thiamine, riboflavin, niacin and B6; label values (secondary, unverified)",
+      "source": "ICMR-NIN 2020 (secondary, unverified); FitPlate topics 1-29"
+    },
+    {
+      "if": "pregnancy flag is true (private)",
+      "then": "show pregnancy column (iron 27 mg, folate 570 ug DFE, iodine 220 ug, calcium 1000 mg where found); for Not found rows show 'ask your doctor'; set requires_doctor_input; never recommend supplements",
+      "source": "ICMR-NIN 2020 (secondary, unverified); Anemia Mukt Bharat (MoHFW, secondary)"
+    },
+    {
+      "if": "lactation flag is true (private)",
+      "then": "show lactation column (calcium 1200 mg, folate 330 ug DFE, iodine 290 ug, vitamin C 115 mg where found); iron shows 'ask your doctor' because ICMR lactation iron was Not found; requires_doctor_input",
+      "source": "ICMR-NIN 2020 (secondary, unverified); Anemia Mukt Bharat (MoHFW, secondary)"
+    },
+    {
+      "if": "age is 60 or over",
+      "then": "use calcium 1200 mg and iodine 150 ug (ICMR-NIN 2020 as tabulated in IJMR 2022); use the adult value for other nutrients labelled 'no separate 60+ value found'; use iron 19 mg (est.) for women; prompt B12, vitamin D, protein and fluids; supplements are requires_doctor_input",
+      "source": "ICMR-NIN 2020 (secondary, unverified); IJMR 2022 elderly status paper"
+    },
+    {
+      "if": "sex is female and age is 10 to 49",
+      "then": "add iron, folate and vitamin C pairing tips; show 'Many women and girls in India fall short of iron. Worth checking with your doctor.'; never state the user is anaemic",
+      "source": "NFHS-5 2019-21 (secondary, unverified); Anemia Mukt Bharat"
+    },
+    {
+      "if": "age is under 19",
+      "then": "app does not yet support child or adolescent targets; show 'Not found: ICMR age-band values not confirmed' and advise a doctor or dietitian",
+      "source": "ICMR-NIN 2020 age bands Not found in this research"
+    },
+    {
+      "if": "values differ between files (potassium 3500 vs 3510, B12 2.5 vs 2.2, iodine 140 vs 150)",
+      "then": "use potassium 3510 mg, B12 2.2 ug, iodine 150 ug (ICMR-NIN first)",
+      "source": "FitPlate topics 13, 19, 25; FSSAI August 2021 correction (secondary)"
+    },
+    {
+      "if": "a nutrient has no ICMR value for the user's group",
+      "then": "show adult value as 'reference only' or the named non-ICMR standard, with 'ask your doctor' for pregnancy, lactation and 60+",
+      "source": "FitPlate topics 1-29"
+    }
+  ],
+  "lastResearched": "2026-11-22",
+  "versions": [
+    {
+      "date": "2026-11-22",
+      "file": "FitPlate_Nutrients_2026-11-22.md"
+    }
+  ],
+  "mergeMethod": {
+    "rules": "union (newest wording of the same rule)"
+  },
+  "mergeNotes": [],
+  "needsReview": []
+}

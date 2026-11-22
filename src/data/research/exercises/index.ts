@@ -2,6 +2,7 @@
 import type { Exercise } from '../../../models/exercise';
 
 import item_adho_mukha_svanasana from './adho-mukha-svanasana.json';
+import item_ardha_matsyendrasana_seated_twist from './ardha-matsyendrasana-seated-twist.json';
 import item_assisted_pull_up_dip_machine from './assisted-pull-up-dip-machine.json';
 import item_balasana_childs_pose from './balasana-childs-pose.json';
 import item_barbell_back_squat from './barbell-back-squat.json';
@@ -14,12 +15,15 @@ import item_bodyweight_squat from './bodyweight-squat.json';
 import item_burpees from './burpees.json';
 import item_cable_crossover_fly from './cable-crossover-fly.json';
 import item_cable_face_pull from './cable-face-pull.json';
+import item_cable_tricep_pushdown from './cable-tricep-pushdown.json';
 import item_calf_raise from './calf-raise.json';
 import item_cat_cow from './cat-cow.json';
 import item_chair_bench_tricep_dips from './chair-bench-tricep-dips.json';
 import item_chest_press_machine from './chest-press-machine.json';
 import item_dead_bug from './dead-bug.json';
 import item_desk_neck_shoulder_release from './desk-neck-shoulder-release.json';
+import item_dip_station from './dip-station.json';
+import item_dumbbell_bicep_curl_hammer_curl from './dumbbell-bicep-curl-hammer-curl.json';
 import item_dumbbell_goblet_squat from './dumbbell-goblet-squat.json';
 import item_dumbbell_romanian_deadlift from './dumbbell-romanian-deadlift.json';
 import item_dumbbell_shoulder_press from './dumbbell-shoulder-press.json';
@@ -72,6 +76,7 @@ import item_wrist_forearm_stretch from './wrist-forearm-stretch.json';
 
 export const items: Exercise[] = [
   item_adho_mukha_svanasana as unknown as Exercise,
+  item_ardha_matsyendrasana_seated_twist as unknown as Exercise,
   item_assisted_pull_up_dip_machine as unknown as Exercise,
   item_balasana_childs_pose as unknown as Exercise,
   item_barbell_back_squat as unknown as Exercise,
@@ -84,12 +89,15 @@ export const items: Exercise[] = [
   item_burpees as unknown as Exercise,
   item_cable_crossover_fly as unknown as Exercise,
   item_cable_face_pull as unknown as Exercise,
+  item_cable_tricep_pushdown as unknown as Exercise,
   item_calf_raise as unknown as Exercise,
   item_cat_cow as unknown as Exercise,
   item_chair_bench_tricep_dips as unknown as Exercise,
   item_chest_press_machine as unknown as Exercise,
   item_dead_bug as unknown as Exercise,
   item_desk_neck_shoulder_release as unknown as Exercise,
+  item_dip_station as unknown as Exercise,
+  item_dumbbell_bicep_curl_hammer_curl as unknown as Exercise,
   item_dumbbell_goblet_squat as unknown as Exercise,
   item_dumbbell_romanian_deadlift as unknown as Exercise,
   item_dumbbell_shoulder_press as unknown as Exercise,

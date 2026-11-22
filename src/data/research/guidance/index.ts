@@ -3,12 +3,16 @@ import type { Guidance } from '../../../models/nutrient';
 
 import item_absorption_boosters_blockers from './absorption-boosters-blockers.json';
 import item_micronutrient_deficiencies_india from './micronutrient-deficiencies-india.json';
+import item_special_micronutrient_needs_by_sex_life_stage from './special-micronutrient-needs-by-sex-life-stage.json';
 import item_topic40_supplement_safety from './topic40-supplement-safety.json';
+import item_topic41_cooking_storage_effects from './topic41-cooking-storage-effects.json';
 import item_vegetarian_vegan_nutrient_gaps from './vegetarian-vegan-nutrient-gaps.json';
 
 export const items: Guidance[] = [
   item_absorption_boosters_blockers as unknown as Guidance,
   item_micronutrient_deficiencies_india as unknown as Guidance,
+  item_special_micronutrient_needs_by_sex_life_stage as unknown as Guidance,
   item_topic40_supplement_safety as unknown as Guidance,
+  item_topic41_cooking_storage_effects as unknown as Guidance,
   item_vegetarian_vegan_nutrient_gaps as unknown as Guidance,
 ];

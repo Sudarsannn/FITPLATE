@@ -1,0 +1,651 @@
+{
+  "id": "ardha-matsyendrasana-seated-twist",
+  "number": 19,
+  "name": "Ardha Matsyendrasana (Seated Twist)",
+  "otherNames": [
+    "Half Spinal Twist",
+    "Half Lord of the Fishes Pose",
+    "Seated Spinal Twist",
+    "Seated Twist"
+  ],
+  "section": "yoga_stretch",
+  "type": "yoga_asana",
+  "equipment": [
+    "mat (optional)",
+    "folded blanket (optional)",
+    "block or cushion (optional)"
+  ],
+  "noEquipmentAlternative": "Sit on a folded towel or on a chair and twist toward the back of the chair",
+  "musclesPrimary": [
+    "internal and external obliques",
+    "multifidus and rotatores",
+    "thoracic erector spinae",
+    "gluteus medius",
+    "gluteus maximus",
+    "piriformis"
+  ],
+  "musclesSecondary": [
+    "pectoralis major",
+    "anterior deltoid",
+    "rhomboids",
+    "lower trapezius",
+    "transversus abdominis",
+    "sternocleidomastoid"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 2.3,
+  "compendiumCode": "02150",
+  "metOptions": [
+    {
+      "code": "02150",
+      "met": 2.3,
+      "activity": "MET: 2.3, 2024 Adult Compendium of Physical Activities, code 02150, \"Yoga, Hatha\" (verified via search summary of pacompendium.com; related codes: 02153 Yoga, Hatha, high intensity 8.0; 02175 Yoga, Ge"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "flexibility",
+      "sets": 2,
+      "reps": "1 hold per side per round, easy version on a blanket",
+      "timeSec": 30,
+      "restSec": 15,
+      "tempo": "exhale to twist, 5 slow breaths, unwind slowly",
+      "perWeek": 4
+    },
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 1,
+      "reps": "1 hold per side, as part of a flow",
+      "timeSec": 30,
+      "restSec": 15,
+      "tempo": "5 slow breaths",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "relaxation",
+      "sets": 1,
+      "reps": "1 hold per side, chair or easy cross-leg twist",
+      "timeSec": 40,
+      "restSec": 10,
+      "tempo": "6 slow breaths",
+      "perWeek": 4
+    },
+    {
+      "level": "intermediate",
+      "goal": "flexibility",
+      "sets": 3,
+      "reps": "1 hold per side per round",
+      "timeSec": 45,
+      "restSec": 15,
+      "tempo": "8 slow breaths",
+      "perWeek": 4
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 2,
+      "reps": "1 hold per side per round",
+      "timeSec": 40,
+      "restSec": 15,
+      "tempo": "6 slow breaths",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "flexibility",
+      "sets": 3,
+      "reps": "1 hold per side per round, elbow hook or bind",
+      "timeSec": 60,
+      "restSec": 15,
+      "tempo": "10 slow breaths",
+      "perWeek": 5
+    },
+    {
+      "level": "advanced",
+      "goal": "relaxation",
+      "sets": 1,
+      "reps": "1 long hold per side",
+      "timeSec": 75,
+      "restSec": 10,
+      "tempo": "10 slow breaths",
+      "perWeek": 4
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "hold_timer",
+    "cameraView": "front",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "twisted_enough",
+        "joint": "trunk rotation (shoulder line vs hip line)",
+        "angleDeg": ">= 20",
+        "parsed": {
+          "op": ">=",
+          "value": 20,
+          "max": null
+        }
+      },
+      {
+        "name": "not_over_twisted",
+        "joint": "trunk rotation (shoulder line vs hip line)",
+        "angleDeg": "<= 60",
+        "parsed": {
+          "op": "<=",
+          "value": 60,
+          "max": null
+        }
+      },
+      {
+        "name": "raised_knee_bent",
+        "joint": "knee (hip-knee-ankle), standard version only",
+        "angleDeg": "<= 100",
+        "parsed": {
+          "op": "<=",
+          "value": 100,
+          "max": null
+        }
+      },
+      {
+        "name": "hold_long_enough",
+        "joint": "time",
+        "angleDeg": "hold >= 10 s (position flag, not an angle)",
+        "parsed": null
+      }
+    ],
+    "minRepSec": 10
+  },
+  "formChecks": [
+    {
+      "joint": "trunk",
+      "rule": "trunk rotation < 20 deg (equals twisted_enough phase threshold)",
+      "message": "Turn a little more from your mid-back"
+    },
+    {
+      "joint": "trunk",
+      "rule": "trunk rotation > 60 deg (equals not_over_twisted phase threshold)",
+      "message": "Ease off, keep the twist gentle"
+    },
+    {
+      "joint": "knee",
+      "rule": "raised knee angle > 100 deg (equals raised_knee_bent phase threshold; standard version only)",
+      "message": "Keep the foot planted and the knee bent"
+    },
+    {
+      "joint": "time",
+      "rule": "hold shorter than 10 s (equals min_rep_sec and hold_long_enough)",
+      "message": "Stay a little longer, breathe slowly"
+    },
+    {
+      "joint": "spine",
+      "rule": "slumped spine or lifted hip (position flag, not an angle)",
+      "message": "Sit tall, keep both hips down"
+    }
+  ],
+  "safetyFlags": [
+    "mild_twist_never_pain",
+    "twist_from_mid_back_not_lower_back",
+    "no_breath_holding",
+    "disc_problem_sciatica_spinal_surgery_ask_doctor",
+    "lower_back_pain_ask_doctor",
+    "osteoporosis_gentle_mid_range_only_ask_doctor",
+    "pregnancy_ask_doctor_open_twist_only",
+    "recent_abdominal_surgery_hernia_ulcer_avoid_ask_doctor",
+    "hypertension_slow_no_breath_holding",
+    "heart_disease_ask_doctor",
+    "knee_pain_extended_leg_or_chair_version",
+    "recent_surgery_ask_doctor",
+    "unwind_slowly"
+  ],
+  "progressions": [
+    "Elbow-hooked twist with the bent knee drawn closer while the spine stays long",
+    "Longer hold of 8 to 10 breaths per side",
+    "Bound twist (est.; advanced, healthy back and hips only)"
+  ],
+  "regressions": [
+    "Chair twist holding the chair back",
+    "Easy cross-leg twist on a blanket with a small turn",
+    "Lying twist with knees dropping to one side"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "front, 2 m",
+      "shows": "sit tall on a folded blanket, legs set, hands by the hips",
+      "textOverlay": "Sit on a blanket. Sit tall."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "set the legs: bent knee up, foot flat outside the other leg; easy cross-leg option",
+      "textOverlay": "Pick your legs. Easy or standard."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 2 m",
+      "shows": "back hand behind the hips, elbow hooked or hand on the knee",
+      "textOverlay": "Hand behind. Shoulders level."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 2 m",
+      "shows": "in-breath to lengthen, out-breath to twist from the mid-back",
+      "textOverlay": "Grow tall, then turn."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 2 m",
+      "shows": "the hold with slow breathing, gaze over the shoulder",
+      "textOverlay": "5 slow breaths. Keep the neck easy."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 2 m",
+      "shows": "unwinding: head first, then shoulders and chest",
+      "textOverlay": "Unwind slowly, head first."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 2 m",
+      "shows": "wrong (slumped, hip lifted, cranking the arm) vs right (long spine, hips down)",
+      "textOverlay": "Twist from the mid-back, not the waist."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 2 m",
+      "shows": "chair twist and extended-leg easy versions",
+      "textOverlay": "No floor? Twist on a chair."
+    }
+  ],
+  "lastResearched": "2026-11-22",
+  "setupSteps": [
+    "Warm up first. 2 to 3 minutes of gentle movement (a few cat-cows, shoulder rolls, easy knee hugs) or do the pose after other poses. Never twist cold.",
+    "Floor. Flat mat or carpet; avoid slippery tiles.",
+    "Sit on a prop. Place a folded blanket or firm cushion about 5 to 10 cm thick (est.) under the sitting bones. Raising the hips makes it easier to sit tall and keep the spine long.",
+    "Legs, easy version. Either (a) sit cross-legged (Sukhasana) with the shins loosely crossed, or (b) extend the bottom leg straight and place the other foot flat outside it. Use whichever lets you sit tall without the lower back rounding.",
+    "Legs, standard version. From a seated position with the legs forward (Dandasana), bend one knee and place that foot flat outside the opposite thigh or knee. The other leg stays straight, or is folded in with the foot near the opposite hip.",
+    "Sit tall. Press both sitting bones down evenly; lengthen the spine up; hands on the floor beside you.",
+    "Clothing. Stretchy pants and a fitted top so the camera sees the shoulder line and hip line; no tight jeans.",
+    "Camera. Phone at about chest height on a stool or shelf (about 60 to 90 cm, est.), about 2 m in front, so the whole body from head to knees is in frame (see sections 11 and 12)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Sit tall",
+      "action": "sit on the blanket, legs forward or crossed, spine long, hands by the hips.",
+      "feel": "sitting bones pressing down, crown of the head lifting.",
+      "breathing": "2 slow breaths.",
+      "tempo": "6 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Set the legs",
+      "action": "for the standard version, bend the right knee and place the right foot flat outside the left thigh; keep the left leg straight. For the easy version, cross the legs loosely.",
+      "feel": "both sitting bones still heavy and level.",
+      "breathing": "steady.",
+      "tempo": "5 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Place the hands",
+      "action": "set the right hand on the floor behind you, fingers pointing away, a hand-width behind the hips. Hook the left elbow outside the right knee, or rest the left hand on the knee.",
+      "feel": "arms supporting; shoulders away from the ears.",
+      "breathing": "breathe out as you place.",
+      "tempo": "3 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Lengthen on an in-breath",
+      "action": "breathe in and lift the spine, pressing the back hand into the floor to grow taller.",
+      "feel": "the ribs lifting away from the hips; the spine long, not slumped.",
+      "breathing": "in-breath.",
+      "tempo": "3 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Twist on the out-breath",
+      "action": "breathe out and turn the chest toward the bent knee, rotating from the mid-back; the ribs, then the shoulders, then the head follow.",
+      "feel": "a gentle wringing along the mid-back; very little in the lower back.",
+      "breathing": "slow out-breath.",
+      "tempo": "4 to 5 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Add a little more only with each in-breath",
+      "action": "on each in-breath lengthen again; on each out-breath turn slightly further, only if the spine stays long.",
+      "feel": "comfortable, 4 to 5 out of 10, no pinching.",
+      "breathing": "steady nose breaths.",
+      "tempo": "3 seconds per small adjustment.",
+      "visualCheck": null
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Turn the gaze",
+      "action": "gaze over the back shoulder only if the neck feels comfortable; otherwise keep the chin level, looking straight ahead.",
+      "feel": "a light stretch in the side of the neck, no strain.",
+      "breathing": "steady.",
+      "tempo": "2 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Hold",
+      "action": "stay with slow nose breaths. Beginners 5 breaths (about 30 seconds, est.); sources say about 30 seconds minimum (one snippet) and The Yoga Institute holds with the breath suspended for 6 seconds, which we do not teach.",
+      "feel": "slow release in the mid-back and hip; the twist deepening a tiny bit with each out-breath.",
+      "breathing": "slow nose breaths; count out-breaths; never hold the breath.",
+      "tempo": "20 to 40 seconds (est.).",
+      "visualCheck": null
+    },
+    {
+      "n": 9,
+      "part": null,
+      "title": "Unwind slowly",
+      "action": "on an out-breath, turn the head back first, then the shoulders and chest, unwinding in reverse order; the hands return to the floor.",
+      "feel": "the spine uncoiling smoothly; no dizziness.",
+      "breathing": "slow out-breath.",
+      "tempo": "5 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 10,
+      "part": null,
+      "title": "Rest and switch sides",
+      "action": "sit tall, shake out the legs, then repeat with the left knee bent and a twist to the left.",
+      "feel": "both sides compared; do not force the stiffer side to match.",
+      "breathing": "3 slow breaths.",
+      "tempo": "10 to 15 seconds between sides.",
+      "visualCheck": "sitting tall, relaxed shoulders."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Twisting from the lower back and rounding",
+      "text": "Twisting from the lower back and rounding. The lumbar spine rotates little, so forcing it risks the discs and joints. Fix: sit tall first, rotate from the mid-back and ribs, keep the lower back long."
+    },
+    {
+      "title": "Cranking with the arm",
+      "text": "Cranking with the arm. Pulling hard against the knee forces a deeper twist than the spine is ready for. Fix: use the arm to lengthen up, turn only with the out-breath."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. It raises effort and blood pressure. Fix: slow nose breaths; count out-breaths. Note that The Yoga Institute's version suspends the breath for 6 seconds, but we do not teach it."
+    },
+    {
+      "title": "Letting a hip lift off the floor",
+      "text": "Letting a hip lift off the floor. The twist then comes from the pelvis, not the spine. Fix: keep both sitting bones heavy, use a blanket, or bend the lifted-side leg less."
+    },
+    {
+      "title": "Slumping",
+      "text": "Slumping. The twist then collapses the chest. Fix: lift the chest on every in-breath; sit on a blanket."
+    },
+    {
+      "title": "Cranking the neck",
+      "text": "Cranking the neck. Gazing over the shoulder past a comfortable range strains the neck. Fix: keep the chin level if the neck is tight."
+    },
+    {
+      "title": "Forcing the bent knee across the body or pulling the planted foot",
+      "text": "Forcing the bent knee across the body or pulling the planted foot. It can irritate the knee or hip. Fix: keep the foot planted without twisting the knee; stop at knee pain."
+    },
+    {
+      "title": "Twisting hard on a full stomach",
+      "text": "Twisting hard on a full stomach. The pose compresses the abdomen. Fix: practise on an empty or light stomach (several sources advise waiting a few hours after meals)."
+    },
+    {
+      "title": "Doing one side only or forcing the stiffer side to match",
+      "text": "Doing one side only or forcing the stiffer side to match. Fix: do both sides, spend about equal time, and accept differences."
+    },
+    {
+      "title": "Unwinding fast",
+      "text": "Unwinding fast. Dizziness or a back twinge can follow. Fix: unwind head first, then shoulders, then chest, slowly."
+    }
+  ],
+  "safetyNotes": [
+    "Mild twist, never pain. A gentle wringing in the mid-back and outer hip is normal; sharp pain, a pinch in the back, a pull in the knee or tingling is not.",
+    "Back and discs: several sources list recent or acute back injury, herniated disc and spinal surgery as reasons to avoid or seek professional advice (snippets). The Yoga Institute lists spinal injuries and hernia among its limitations. Sciatica sources conflict (see section 7), so ask a doctor. If cleared, keep the twist gentle and the spine long.",
+    "Osteoporosis: the 2013 International Journal of Yoga Therapy review (PubMed 24016820; snippet) concluded that spinal flexion carries the main fracture concern, though cautious guidance also warns against deep or end-range twisting. Ask a doctor; if cleared, keep rotation gentle and mid-range.",
+    "Pregnancy: The Yoga Institute and Sivananda say avoid; Do You Yoga says avoid deep closed twists that compress the abdomen; Liforme suggests an open twist away from the top leg for more room (snippets). Ask a doctor or midwife; if cleared, open twist only, small range, never compress the belly.",
+    "Recent abdominal surgery or hernia, peptic ulcer: The Yoga Institute and PharmEasy list hernia and peptic ulcer as limitations; for post-surgery and post-caesarean twisting, no source gave a fixed wait (Not found); sources agree on provider clearance first (snippets).",
+    "Blood pressure and heart: The Yoga Institute lists hypertension and cardiac ailments as limitations (snippet). Move slowly, never hold the breath, unwind slowly.",
+    "Knee and hip: keep the planted foot without twisting the knee; stop at knee pain.",
+    "Stop immediately if you feel: sharp back or neck pain, numbness or tingling down the leg or arm, dizziness, chest pain or breathlessness, a pull in the abdomen or an incision, or any pain in the knee.",
+    "Spotter: not needed. Gym etiquette: keep the mat out of walkways; do not hog the stretching area."
+  ],
+  "sources": [
+    "Ministry of AYUSH Common Yoga Protocol (CYP): sitting postures seen in search summaries as Marichyasana/Vakrasana, Bhadrasana, Vajrasana, Virasana, Ardha Ushtrasana, Ushtrasana, Shashankasana, Uttana Mandukasana; Ardha Matsyendrasana not seen in the retrieved text (official PDF text not opened): https://www.mea.gov.in/images/pdf/common-yoga-protocol-english.pdf ; https://mea.gov.in/images/attach/Booklet_english_2016.pdf ; https://www.iiap.res.in/files/CommonYogaProtocol.pdf ; https://new1.isro.gov.in/media_isro/pdf/CYP%20english.pdf ; https://www.sanskrit.nic.in/uploads/CYP_2022/English.pdf ; BIS IS 19114:2024 draft: https://services.bis.gov.in/tmp/PDDAYD44423006_18122024_0.pdf ; PMC table pairing Vakrasana/Ardhamatsyendrasana: https://pmc.ncbi.nlm.nih.gov/articles/PMC6746053/table/T3",
+    "The Yoga Institute (Mumbai), Ardhamatsyendrasana page: lateral spinal twist, 6-second breath suspension, limitations hypertension, cardiac ailments, hernia, pregnancy, peptic ulcers, spinal injuries (snippet): https://theyogainstitute.org/ardhamatsyendrasana-the-spinal-half-twist-posture/",
+    "Sivananda Yoga Vedanta (Google Arts and Culture), Half Spinal Twist: lumbar spine twists little, consult before practising in pregnancy or ill health (snippet): https://artsandculture.google.com/story/nAUBoRlvEcL7JQ",
+    "Art of Living, Sitting Half Spinal Twist; Apollo 247; PharmEasy (benefits, 3-5 days a week, diabetes study claim, avoid in pregnancy; snippets): https://www.artofliving.org/in-en/yoga/yoga-poses/sitting-half-spinal-twist-ardha-matsyendrasana ; https://www.apollo247.com/health-topics/general-medical-consultation/ardha-matsyendrasana-benefits-steps ; https://pharmeasy.in/blog/health-fitness-benefits-of-ardha-matsyendrasana-and-how-to-do-it/",
+    "Brett Larkin (sciatica and digestive contraindications), Lessons.com (sciatica claim conflict), Yoga Journal, Yoga International, Yoga U Online, Liforme, Satyori, Do You Yoga (technique, pregnancy open twist, closed twist caution; snippets): https://www.brettlarkin.com/seated-spinal-twist-half-lord-of-the-fishes-ardha-matsyendrasana/ ; https://lessons.com/yoga-classes/yoga-poses/half-lord-of-the-fishes-pose ; https://www.yogajournal.com/poses/half-lord-of-the-fishes-pose/ ; https://yogainternational.com/article/view/half-lord-of-the-fishes-pose-seated-half-spinal-twist ; https://yogauonline.com/yoga-poses/half-lord-of-the-fishes-pose/ ; https://liforme.com/blogs/blog/how-to-do-ardha-matsyendrasana-half-lord-of-the-fishes-pose ; https://satyori.com/yoga/pose/ardha-matsyendrasana/ ; https://www.doyouyoga.com/is-it-safe-to-do-yoga-twists-during-pregnancy-31681/",
+    "Yoga, vertebral fractures and osteoporosis: research and recommendations (Int J Yoga Therapy 2013; flexion concern; snippet): https://pubmed.ncbi.nlm.nih.gov/24016820/ ; Yoga U Online on twisting and osteoporosis (snippet): https://yogauonline.com/yoga-for-osteoporosis/yoga-osteoporosis-vertebral-fracture-risk-pros-cons-twisting-yoga-postures",
+    "Herrmann SD et al., 2024 Adult Compendium of Physical Activities (02150 Yoga, Hatha 2.3; seen via search summary): https://pacompendium.com/conditioning-exercise ; https://pacompendium.com/wp-content/uploads/2024/01/2024-adult-compendium_1_2024.pdf ; https://pubmed.ncbi.nlm.nih.gov/38242596/ ; The metabolic cost of hatha yoga (2005; snippet): https://pubmed.ncbi.nlm.nih.gov/16095417/",
+    "Postpartum and caesarean twist cautions (blogs; snippets; not clinical): https://www.mother.ly/birth/yoga-moves-to-avoid-after-giving-birth/ ; https://prenatalyogacenter.com/postnatal-yoga-and-diastasis-recti/ ; https://scienceinsights.org/when-can-you-do-yoga-after-a-c-section/",
+    "ACOG Committee Opinion 804, Physical Activity and Exercise During Pregnancy and the Postpartum Period (general; pose-specific Not found): https://pubmed.ncbi.nlm.nih.gov/33481513/",
+    "Condition sources (general, from earlier items): ADA PMC5317029: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/ ; PCOS position statement: https://researchers.westernsydney.edu.au/en/publications/exercise-in-the-management-of-polycystic-ovary-syndrome-a-positio/ ; Marshfield Clinic asthma: https://shine365.marshfieldclinic.org/wellness/asthma-exercise/ ; Frontiers in Psychology 2019 yoga and knee OA review: https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2019.00661/pdf",
+    "CYP listing: the CYP lists Vakrasana/Marichyasana; Ardha Matsyendrasana by name was not found. We present it as a close seated-twist relative and do not claim it is a CYP posture.",
+    "Hold time and breath: about 30 seconds minimum or 3-5 days a week (teaching sources) versus a 6-second breath suspension (The Yoga Institute). We chose 5 slow breaths (about 30 s, est.), no breath-holding.",
+    "Sciatica: avoid (Brett Larkin) versus helps (Lessons.com). We chose \"ask a doctor; stop at leg symptoms\".",
+    "Pregnancy: avoid (Yoga Institute, Sivananda) versus an open twist (Liforme, Satyori). We chose \"ask a doctor; if cleared, open twist only\".",
+    "Osteoporosis: flexion is the main concern; extreme twisting is also cautioned; no study shows twist fractures (Yoga U). We chose \"ask a doctor; gentle mid-range only\".",
+    "Not found: MDNIY technique page; confirmation of the pose in the AYUSH CYP; a pose-specific MET; measured joint-angle norms; trial evidence for this pose alone; a fixed wait for twisting after caesarean or abdominal surgery; clinical sources for cholesterol, thyroid, heart disease and surgery for this pose. Our thresholds are estimates.",
+    "Most pages were seen only as search snippets or summaries; direct page fetches were not possible."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 43.5,
+      "70kg": 37.3,
+      "80kg": 32.6
+    },
+    "per300kcal": {
+      "60kg": 130.4,
+      "70kg": 111.8,
+      "80kg": 97.8
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "yoga",
+    "mobility",
+    "stretching",
+    "flexibility",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "small_flat",
+    "quiet",
+    "4_6_min",
+    "mid_flow",
+    "cool_down",
+    "evening",
+    "any_time",
+    "relaxation",
+    "desk_break"
+  ],
+  "swapsByAccess": {
+    "none": "Chair twist or lying knees-to-one-side twist; or Thoracic rotation (Yoga & Stretch 7)",
+    "home_equipment": "Cushion or bolster under the hips, strap or block under the back hand; or Thoracic rotation (Yoga & Stretch 7)",
+    "basic_gym": "Floor-mat area with a folded mat under the hips, or a bench twist sitting sideways; or Thoracic rotation (Yoga & Stretch 7)",
+    "full_gym": "Studio mat area with blocks and bolsters; or the lying twist"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "Slow, no breath-holding, small twist, unwind slowly; ask a doctor if on medicine",
+      "source": "The Yoga Institute (snippet); Not found (clinical, pose-specific)"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "modify",
+      "change": "Check feet; eat first if on glucose-lowering medicine; unwind slowly; ask a doctor",
+      "source": "PharmEasy (snippet); ADA PMC5317029 (general); Not found (pose-specific)"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "Personal clearance needed; if cleared, slow, small twist, no breath-holding",
+      "source": "The Yoga Institute (snippet); Not found (clinical, pose-specific)"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "No change (source not found)",
+      "source": "Not found"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Sit higher on a firm blanket; use the extended-leg or chair version; avoid compressing the belly",
+      "source": "Not found (pose-specific)"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "No pose-specific caution found",
+      "source": "PCOS exercise position statement (general); Not found (pose-specific)"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "No clinical caution found",
+      "source": "Not found"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Reliever inhaler nearby; small twist and slow breathing; stop if wheezing",
+      "source": "Marshfield Clinic asthma exercise page (general); NIH NCCAM yoga fact sheet (general)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Extended-leg or chair version; do not twist or pull the knee; stop at knee pain",
+      "source": "Frontiers in Psychology 2019 review (general); Not found (pose-specific)"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "ask_doctor",
+      "change": "Chair twist only, gentle, with a long spine; stop if pain spreads; sciatica sources disagree",
+      "source": "Brett Larkin (snippet); Lessons.com (snippet); Apollo 247 (snippet); Not found (clinical)"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "modify",
+      "change": "Back hand on a block or hip, or chair twist; skip the elbow hook or bind",
+      "source": "Teaching sources (snippets); Not found (clinical)"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "ask_doctor",
+      "change": "Gentle, mid-range rotation only; avoid end-range; clinician-guided after a vertebral fracture",
+      "source": "Int J Yoga Therapy 2013 review PubMed 24016820 (snippet); Yoga U Online (snippet)"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "ask_doctor",
+      "change": "Avoid deep closed twists; if cleared, open twist away from the top leg only, small range, no belly compression",
+      "source": "Do You Yoga (snippet); Liforme (snippet); The Yoga Institute (snippet); ACOG Committee Opinion 804 (general)"
+    },
+    {
+      "condition": "postpartum",
+      "status": "ask_doctor",
+      "change": "Wait for clearance (commonly about 6 weeks; caesarean provider advice first); avoid deep rotation until incision and diastasis recti heal; stop if pelvic, abdominal or back pain or leaking",
+      "source": "Mother.ly and Prenatal Yoga Center (snippets; not clinical); ACOG Committee Opinion 804 via summaries; Not found (pose-specific)"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Follow the surgeon's advice; spine, abdominal, hip and chest surgery especially",
+      "source": "The Yoga Institute (snippet); Not found (clinical)"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "home",
+      "office_desk"
+    ],
+    "bodyRegion": [
+      "core",
+      "upper"
+    ],
+    "goalTags": [
+      "flexibility",
+      "relaxation",
+      "general_fitness"
+    ],
+    "intensity": "light",
+    "noise": "quiet",
+    "space": "mat_only",
+    "typicalMinutes": 5,
+    "kcalPer10min70kg": 27,
+    "difficulty1to5": 2,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Yoga & stretch",
+    "Home",
+    "Office desk",
+    "No equipment",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Yoga",
+    "Core",
+    "Back",
+    "Glutes",
+    "Hold timer",
+    "Under 10 min"
+  ],
+  "needsReview": [
+    "rep_counter phase \"hold_long_enough\" (time): angle \"hold >= 10 s (position flag, not an angle)\" is not a parseable angle"
+  ],
+  "versions": [
+    {
+      "date": "2026-11-22",
+      "file": "FitPlate_Fitness_2026-11-22.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

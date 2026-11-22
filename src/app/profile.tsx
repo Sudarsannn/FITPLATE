@@ -22,9 +22,10 @@ import { colors, type } from '../theme';
 // `asTab` is set by the Profile tab of the new shell: no back button, and room
 // at the bottom for the floating tab bar.
 export function ProfileScreen({ asTab = false }: { asTab?: boolean }) {
-  const { privateFlags, setPrivateFlag, profile, settings, updateSettings, sex, body, equipmentOwned, signOut, deleteMyData, resetDemo, user, favourites, cloud, syncError } = useStore();
+  const { privateFlags, setPrivateFlag, profile, settings, updateSettings, sex, body, equipmentOwned, signOut, deleteMyData, deleteMyAccount, resetDemo, user, favourites, cloud, syncError } = useStore();
   const reminders = useReminders();
   const [confirmDelete, setConfirmDelete] = useState(false);
+  const [confirmAccount, setConfirmAccount] = useState(false);
   const { goal: targets, energy, micros, health, sodium } = useTargets();
   const saveLimit = (key: 'waterMl' | 'sodiumMg', text: string) => {
     const v = Number(text.replace(/[^0-9.]/g, ''));
@@ -295,6 +296,18 @@ export function ProfileScreen({ asTab = false }: { asTab?: boolean }) {
               <Text style={styles.dangerText}>Delete my data</Text>
             </Pressable>
           ) : null}
+          {canDelete ? (
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel="Delete my account"
+              accessibilityHint="Deletes your data and your FitPlate sign-in"
+              onPress={() => setConfirmAccount(true)}
+              style={({ pressed }) => [styles.danger, pressed && { opacity: 0.7 }]}
+            >
+              <Ionicons name="person-remove-outline" size={18} color={colors.bad} />
+              <Text style={styles.dangerText}>Delete my account</Text>
+            </Pressable>
+          ) : null}
         </View>
         <Text style={[type.small, { color: colors.faint, textAlign: 'center', marginTop: 20 }]}>
           FitPlate demo · nutrition and prices are estimates, not medical advice.
@@ -306,6 +319,18 @@ export function ProfileScreen({ asTab = false }: { asTab?: boolean }) {
         onCancel={() => setConfirmDelete(false)}
         onDone={() => {
           setConfirmDelete(false);
+          router.replace('/');
+        }}
+      />
+      <ConfirmDeleteData
+        account
+        visible={confirmAccount}
+        onConfirm={async () => {
+          await deleteMyAccount();
+        }}
+        onCancel={() => setConfirmAccount(false)}
+        onDone={() => {
+          setConfirmAccount(false);
           router.replace('/');
         }}
       />

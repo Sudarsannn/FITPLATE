@@ -13,13 +13,15 @@ type Props = {
   /** Called after a successful delete. */
   onDone: () => void;
   onCancel: () => void;
+  /** Delete the sign-in too: changes the wording only. */
+  account?: boolean;
 };
 
 /**
  * The "Delete my data" confirmation. An in-app Modal rather than Alert.alert,
  * which does nothing on web.
  */
-export function ConfirmDeleteData({ visible, onConfirm, onDone, onCancel }: Props) {
+export function ConfirmDeleteData({ visible, onConfirm, onDone, onCancel, account }: Props) {
   const [busy, setBusy] = useState(false);
   const [failed, setFailed] = useState(false);
 
@@ -47,10 +49,11 @@ export function ConfirmDeleteData({ visible, onConfirm, onDone, onCancel }: Prop
       <View style={styles.backdrop}>
         <View style={styles.card} accessibilityViewIsModal accessibilityRole="alert">
           <IconBadge name="trash-outline" color={colors.bad} size={52} style={{ marginBottom: 10 }} />
-          <Text style={styles.title}>Delete all your FitPlate data?</Text>
+          <Text style={styles.title}>{account ? 'Delete your FitPlate account?' : 'Delete all your FitPlate data?'}</Text>
           <Text style={styles.body}>
             This permanently deletes your profile, meal, water and workout logs, saved dishes, meal plans and savings, from the cloud and from
             this device. It can’t be undone. You’ll be signed out afterwards.
+            {account ? ' Your sign-in is removed too. If Google asks you to sign in again first, your data is already deleted; sign in and tap Delete my account once more to remove the sign-in.' : ''}
           </Text>
           {failed ? (
             <Text style={styles.error} accessibilityLiveRegion="polite">
@@ -66,14 +69,14 @@ export function ConfirmDeleteData({ visible, onConfirm, onDone, onCancel }: Prop
             <View style={styles.buttons}>
               <Pressable
                 accessibilityRole="button"
-                accessibilityLabel="Delete everything"
+                accessibilityLabel={account ? 'Delete account and everything' : 'Delete everything'}
                 onPress={() => {
                   tap();
                   confirm();
                 }}
                 style={({ pressed }) => [styles.danger, pressed && { opacity: 0.8 }]}
               >
-                <Text style={styles.dangerText}>Delete everything</Text>
+                <Text style={styles.dangerText}>{account ? 'Delete account' : 'Delete everything'}</Text>
               </Pressable>
               <GradientButton title="Cancel" variant="glass" onPress={cancel} />
             </View>

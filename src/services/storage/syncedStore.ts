@@ -36,6 +36,9 @@ export function createSyncedDocStore(opts: {
   const { local, remote, kv, owner, debounceMs = 1500, onError } = opts;
   let timer: ReturnType<typeof setTimeout> | null = null;
   let flushing: Promise<number> | null = null;
+  // Collections whose last send failed (usually offline). Another device may have saved newer copies meanwhile,
+  // so the retry merges with the cloud (newest wins) instead of blindly overwriting it.
+  const retryByMerge = new Set<string>();
   // Outbox reads and writes run one at a time so a save and a flush never lose each other's ids.
   let outboxLock: Promise<unknown> = Promise.resolve();
   function withOutbox<R>(fn: (o: Outbox) => Promise<R> | R): Promise<R> {
@@ -89,8 +92,11 @@ export function createSyncedDocStore(opts: {
       const all = await local.getAll(collection);
       const docs = ids.map((id) => all[id]).filter((d): d is BaseDoc => d !== undefined);
       try {
-        await remote.putMany(collection, docs);
+        if (retryByMerge.has(collection)) await pull(collection);
+        else await remote.putMany(collection, docs);
+        retryByMerge.delete(collection);
       } catch (e) {
+        retryByMerge.add(collection);
         onError?.(e);
         continue; // keep these ids for the next try
       }

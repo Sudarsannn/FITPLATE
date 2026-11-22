@@ -1,5 +1,5 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { onAuthStateChanged, signOut as fbSignOut } from 'firebase/auth';
+import { deleteUser as fbDeleteUser, onAuthStateChanged, signOut as fbSignOut } from 'firebase/auth';
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
 import { AppState } from 'react-native';
 
@@ -135,6 +135,8 @@ type Store = State & {
    * Throws (and changes nothing) when the cloud can't be reached. No-op otherwise.
    */
   deleteMyData: () => Promise<void>;
+  /** Deletes the data like deleteMyData, then the sign-in itself. Resolves false when the data went but Firebase wants a fresh sign-in before it removes the account. */
+  deleteMyAccount: () => Promise<boolean>;
   /** Day 32: everything saved on this device for the current owner, as readable JSON. */
   exportMyData: () => Promise<string>;
   updateProfile: (p: Partial<Profile>) => void;
@@ -363,6 +365,26 @@ export function StoreProvider({ children }: { children: ReactNode }) {
         if (!active) return '{}';
         await active.session.idle();
         return JSON.stringify({ exportedAt: new Date(clock.now()).toISOString(), app: 'FitPlate', data: await active.data.exportAll() }, null, 2);
+      },
+      deleteMyAccount: async () => {
+        if (!ready || !active || active.owner === GUEST_OWNER || !active.data.cloud || !active.remote) return false;
+        await Promise.race([active.firstSync.catch(() => {}), new Promise((r) => setTimeout(r, FIRST_SYNC_WAIT_MS))]);
+        await active.session.idle();
+        // Data first: once the account is gone the access rules would refuse the delete.
+        await deleteMyData(active.data, active.remote, active.owner, kv);
+        deleteAllClips();
+        let removed = false;
+        try {
+          const current = getFirebaseAuth()?.currentUser;
+          if (current) {
+            await fbDeleteUser(current);
+            removed = true;
+          }
+        } catch {
+          // Most often auth/requires-recent-login: the data is already gone, the person signs in again to finish.
+        }
+        await endAuth();
+        return removed;
       },
       deleteMyData: async () => {
         if (!ready || !active || active.owner === GUEST_OWNER || !active.data.cloud || !active.remote) return;

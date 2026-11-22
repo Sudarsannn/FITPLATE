@@ -12,7 +12,7 @@
 - Water, Profile and Settings toggles now all go through the same hook, so they cannot disagree.
 
 ## 3. DATA SYNC REPORT
-Full report: sync33.md (scratchpad). Dishes: 5 new (uttapam, moong dal khichdi, paneer tikka, matar paneer, prawn masala), 108 in app. Ingredients: 6 new (prawns, Malvani masala, idli-dosa batter, idli rice, whole black peppercorns, cumin powder). Nutrients: 56 in app. Fitness: 72 in app. No invalid files.
+Full report: sync33.md (scratchpad). Dishes: 5 new (uttapam, moong dal khichdi, paneer tikka, matar paneer, prawn masala), 103 in app (corrected from 108 on Day 34). Ingredients: 6 new (prawns, Malvani masala, idli-dosa batter, idli rice, whole black peppercorns, cumin powder). Nutrients: 56 in app. Fitness: 72 in app. No invalid files.
 
 ## 4. SNAPSHOT
 Not an integration day, so no snapshot. Next one: Day 37 (final integration).
