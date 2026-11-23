@@ -4,7 +4,7 @@
   "aliases": [
     "kasuri methi"
   ],
-  "category": "Herb (dried)",
+  "category": "Dried herb",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -23,20 +23,28 @@
         "avg": 880,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-11-01.md"
+      },
+      {
+        "date": "2026-11-23",
+        "min": 560,
+        "max": 1650,
+        "avg": 870,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-23.md"
       }
     ],
     "currentEstimate": {
-      "min": 770,
-      "max": 1040,
-      "avg": 905
+      "min": 755,
+      "max": 1020,
+      "avg": 890
     },
     "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-11-01",
+    "trend": "stable",
+    "change30dPct": -3.8,
+    "lastObserved": "2026-11-23",
     "stale": false,
     "seasonal": false,
-    "listingCount": 13,
+    "listingCount": 11,
     "platforms": [
       "BigBasket",
       "Flipkart"
@@ -46,9 +54,9 @@
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 77,
-    "max": 104,
-    "avg": 90.5
+    "min": 75.5,
+    "max": 102,
+    "avg": 89
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -235,9 +243,9 @@
     }
   },
   "macrosPer100Estimate": {
-    "kcal": 311.5,
-    "proteinG": 21.5,
-    "carbsG": 54,
+    "kcal": 323,
+    "proteinG": 23,
+    "carbsG": 58,
     "fatG": 5,
     "fibreG": 25
   },
@@ -254,10 +262,22 @@
   "vendorListings": [],
   "usedIn": [
     {
-      "dishNumber": 3,
+      "dishNumber": 60,
       "quantity": 0.5,
       "unit": "g",
-      "raw": "0.5 g per serving (about ½ tsp, crushed)"
+      "raw": "0.5 g (½ tsp, crushed)"
+    },
+    {
+      "dishNumber": 63,
+      "quantity": 0.5,
+      "unit": "g",
+      "raw": "0.5 g (½ tsp, crushed)"
+    },
+    {
+      "dishNumber": 67,
+      "quantity": 0.5,
+      "unit": "g",
+      "raw": "0.5 g (½ tsp, crushed)"
     }
   ],
   "versions": [
@@ -268,11 +288,15 @@
     {
       "date": "2026-11-01",
       "file": "FitPlate_Ingredients_2026-11-01.md"
+    },
+    {
+      "date": "2026-11-23",
+      "file": "FitPlate_Ingredients_2026-11-23.md"
     }
   ],
   "mergeMethod": {
     "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -283,6 +307,6 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 664.9–1317.5 was wider than 30% of avg 903.0; narrowed to ±15%."
+    "Range 617.9–1466.5 was wider than 30% of avg 888.2; narrowed to ±15%."
   ]
 }

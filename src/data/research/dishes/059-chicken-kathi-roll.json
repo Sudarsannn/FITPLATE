@@ -475,23 +475,32 @@
           "avg": 236,
           "confidence": null,
           "sourceFile": "FitPlate_Dishes_2026-10-15.md"
+        },
+        {
+          "date": "2026-11-23",
+          "min": 110,
+          "max": 349,
+          "avg": 204,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-11-23.md"
         }
       ],
       "currentEstimate": {
-        "min": 210,
-        "max": 280,
-        "avg": 240
+        "min": 180,
+        "max": 250,
+        "avg": 210
       },
-      "method": "single",
+      "method": "wma",
       "trend": "unknown",
       "change30dPct": null,
-      "lastObserved": "2026-10-15",
+      "lastObserved": "2026-11-23",
       "stale": false,
       "seasonal": false,
-      "listingCount": 5,
+      "listingCount": 11,
       "platforms": [
         "magicpin",
-        "Swiggy"
+        "Swiggy",
+        "Zomato"
       ],
       "outOfStock": false,
       "confirmed": true,
@@ -535,23 +544,32 @@
         "avg": 236,
         "confidence": null,
         "sourceFile": "FitPlate_Dishes_2026-10-15.md"
+      },
+      {
+        "date": "2026-11-23",
+        "min": 110,
+        "max": 349,
+        "avg": 204,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-11-23.md"
       }
     ],
     "currentEstimate": {
-      "min": 210,
-      "max": 280,
-      "avg": 240
+      "min": 180,
+      "max": 250,
+      "avg": 210
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-15",
+    "lastObserved": "2026-11-23",
     "stale": false,
     "seasonal": false,
-    "listingCount": 5,
+    "listingCount": 11,
     "platforms": [
       "magicpin",
-      "Swiggy"
+      "Swiggy",
+      "Zomato"
     ],
     "outOfStock": false,
     "confirmed": true,
@@ -600,7 +618,8 @@
     "Swiggy outside Mumbai (context): Kathi Roll Smuggler, Jaipur: https://www.swiggy.com/city/jaipur/kathi-roll-smuggler-c-scheme-rest1381529 ; KJ Kathi Roll, Dehradun: https://www.swiggy.com/city/dehradun/kj-kathi-roll-panditwari-rest81154 ; Azad Hind Hotel, Kolkata: https://www.swiggy.com/menu/16930",
     "Free Press Journal, Street food: Mumbai on a roll (Mumbai Tawa menu, branches): https://www.freepressjournal.in/food/street-food-mumbai-on-a-roll",
     "The Quint, Ayub's Kitchen (rolls ₹230–250; dated): https://thequint.com/amp/story/neon/what-the-food/ayubs-kitchen-deepika-padukone-go-to-place-for-kathi-rolls ; LBB, chicken tikka rolls at Ayub's: https://lbb.in/mumbai/ayubs-kala-ghoda-late-night-kebabs-mumbai/",
-    "Homegrown, Mumbai's 14 most delicious wraps and rolls: https://homegrown.co.in/homegrown-explore/mumbais-14-most-delicious-wraps-rolls-for-people-on-the-go"
+    "Homegrown, Mumbai's 14 most delicious wraps and rolls: https://homegrown.co.in/homegrown-explore/mumbais-14-most-delicious-wraps-rolls-for-people-on-the-go",
+    "Refresh 23 Nov 2026 (search snippets): Swiggy, Kusum Rolls, Andheri East (Egg Chicken Roll ₹119): https://www.swiggy.com/restaurants/kusum-rolls-andheri-east-mumbai-221691 ; Swiggy, Bay of Bengal, Dadar/Mahim (Chicken Kathi Roll ₹150): https://www.swiggy.com/city/mumbai/bay-of-bengal-dadar-mahim-rest232085 ; Swiggy, Mealful Rolls, Borivali West (Chicken Mughlai Roll ₹219, not used): https://www.swiggy.com/restaurants/mealful-rolls-indias-biggest-rolls-i-c-colony-borivali-west-mumbai-274860 ; Swiggy, TRC Shakti Mills (Harissa Roll ₹420, not used): https://www.swiggy.com/restaurants/trc-the-roll-company-shakti-mills-lower-parel-worli-mumbai-7936 ; Zomato, The Famous Shawarma, Carter Road (₹170): https://www.zomato.com/mumbai/the-famous-shawarma-carter-road-bandra-west/order ; Zomato, Go Biryan, Andheri Lokhandwala (₹349): https://www.zomato.com/mumbai/go-biryan-andheri-lokhandwala/order ; Zomato, Behrouz Biryani, Andheri East (₹299, ₹339): https://www.zomato.com/mumbai/behrouz-biryani-near-andheri-east-station/order ; Zomato, Kathi Roll Company, Mira Road (MMR context): https://www.zomato.com/mumbai/kathi-roll-company-1-mira-road/order ; Zomato, The Kathi Roll Project, Kalyan (MMR context): https://www.zomato.com/mumbai/the-kathi-roll-project-kalyan-thane/order ; magicpin, Only Rolls, Chembur West (Egg Chicken Roll ₹110): https://magicpin.in/Mumbai/Chembur-West/Restaurant/Only-Rolls/store/29960/menu ; magicpin, Hangla's (₹225 re-seen) and Rollzilla (₹210 re-seen), URLs below."
   ],
   "allergens": [
     "peanut",
@@ -700,11 +719,15 @@
     {
       "date": "2026-10-15",
       "file": "FitPlate_Dishes_2026-10-15.md"
+    },
+    {
+      "date": "2026-11-23",
+      "file": "FitPlate_Dishes_2026-11-23.md"
     }
   ],
   "mergeMethod": {
-    "nutritionPerServing": "stable (single)",
-    "orderPrice": "price engine (single)",
+    "nutritionPerServing": "stable (mean-2)",
+    "orderPrice": "price engine (wma)",
     "ingredients": "newest",
     "steps": "newest",
     "healthiness": "newest",
@@ -712,5 +735,8 @@
     "sources": "union",
     "tags": "tag engine (tags.ts) on the merged dish"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 138.9–329.1 was wider than 30% of avg 213.2; narrowed to ±15%."
+  ]
 }

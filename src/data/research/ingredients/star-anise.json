@@ -16,34 +16,41 @@
         "avg": 1405,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-21.md"
+      },
+      {
+        "date": "2026-11-23",
+        "min": 1105,
+        "max": 2880,
+        "avg": 2070,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-23.md"
       }
     ],
     "currentEstimate": {
-      "min": 1340,
-      "max": 1475,
-      "avg": 1405
+      "min": 1475,
+      "max": 2000,
+      "avg": 1740
     },
-    "method": "single",
+    "method": "spike-blend",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-21",
+    "lastObserved": "2026-11-23",
     "stale": false,
     "seasonal": false,
-    "listingCount": 2,
+    "listingCount": 4,
     "platforms": [
-      "Amazon",
-      "BigBasket"
+      "BigBasket",
+      "Flipkart",
+      "Meesho"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 2 listings back the range (need 3)"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 134,
-    "max": 147.5,
-    "avg": 140.5
+    "min": 147.5,
+    "max": 200,
+    "avg": 174
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -258,11 +265,15 @@
     {
       "date": "2026-10-21",
       "file": "FitPlate_Ingredients_2026-10-21.md"
+    },
+    {
+      "date": "2026-11-23",
+      "file": "FitPlate_Ingredients_2026-11-23.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (spike-blend)",
+    "macrosPer100Estimate": "stable (mean-2)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -271,5 +282,10 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: possible-spike",
+    "price flag: narrowed",
+    "Possible spike: latest avg 2070 (2026-11-23) moved more than 35% from the previous estimate; using the halfway point.",
+    "Range 1222.5–2177.5 was wider than 30% of avg 1737.5; narrowed to ±15%."
+  ]
 }

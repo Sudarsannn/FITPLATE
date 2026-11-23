@@ -2,7 +2,7 @@
   "id": "chicken-thigh-boneless-skinless",
   "name": "Chicken thigh, boneless, skinless",
   "aliases": [],
-  "category": "Meat (poultry)",
+  "category": "Meat/seafood",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -21,34 +21,41 @@
         "avg": 640,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
+      },
+      {
+        "date": "2026-11-23",
+        "min": 665,
+        "max": 800,
+        "avg": 710,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-23.md"
       }
     ],
     "currentEstimate": {
-      "min": 600,
-      "max": 745,
-      "avg": 665
+      "min": 640,
+      "max": 780,
+      "avg": 695
     },
     "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-29",
+    "trend": "stable",
+    "change30dPct": 1.8,
+    "lastObserved": "2026-11-23",
     "stale": false,
     "seasonal": false,
-    "listingCount": 2,
+    "listingCount": 3,
     "platforms": [
-      "BigBasket"
+      "BigBasket",
+      "Meatigo",
+      "Zepto"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 2 listings back the range (need 3)",
-      "only 1 platform (BigBasket) backs the range"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 60,
-    "max": 74.5,
-    "avg": 66.5
+    "min": 64,
+    "max": 78,
+    "avg": 69.5
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -236,7 +243,7 @@
   },
   "macrosPer100Estimate": {
     "kcal": 121,
-    "proteinG": 19.2,
+    "proteinG": 18.6,
     "carbsG": 0,
     "fatG": 7.9,
     "fibreG": 0
@@ -260,14 +267,22 @@
       "priceMinInr": 359,
       "priceMaxInr": 359,
       "observedOn": "2026-10-05"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Licious Chicken Thigh",
+      "pack": "450 g",
+      "priceMinInr": 359,
+      "priceMaxInr": 359,
+      "observedOn": "2026-11-23"
     }
   ],
   "usedIn": [
     {
-      "dishNumber": 87,
-      "quantity": 150,
+      "dishNumber": 59,
+      "quantity": 100,
       "unit": "g",
-      "raw": "150 g per serving (boneless chicken, thigh or breast; about 2 thighs)"
+      "raw": "100 g raw boneless thigh per serving (about 6 to 8 strips; the dish file allows breast instead)"
     }
   ],
   "versions": [
@@ -278,11 +293,15 @@
     {
       "date": "2026-10-29",
       "file": "FitPlate_Ingredients_2026-10-29.md"
+    },
+    {
+      "date": "2026-11-23",
+      "file": "FitPlate_Ingredients_2026-11-23.md"
     }
   ],
   "mergeMethod": {
     "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -292,6 +311,6 @@
     "usedIn": "newest"
   },
   "mergeNotes": [
-    "macrosPer100Estimate.fatG: Versions 2026-10-05 (4.1) and 2026-10-29 (7.9) differ by more than 25%; kept the newer."
+    "macrosPer100Estimate.fatG: Excluded outlier 4.1 from 2026-10-05: more than 25% from the other versions."
   ]
 }

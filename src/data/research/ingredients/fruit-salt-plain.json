@@ -4,7 +4,7 @@
   "aliases": [
     "Eno"
   ],
-  "category": "Other",
+  "category": "Other (packaged)",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -15,33 +15,41 @@
         "avg": 1475,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-15.md"
+      },
+      {
+        "date": "2026-11-23",
+        "min": 1445,
+        "max": 1760,
+        "avg": 1635,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-23.md"
       }
     ],
     "currentEstimate": {
-      "min": 1390,
-      "max": 1560,
-      "avg": 1475
+      "min": 1430,
+      "max": 1700,
+      "avg": 1590
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-15",
+    "lastObserved": "2026-11-23",
     "stale": false,
     "seasonal": false,
-    "listingCount": 3,
+    "listingCount": 5,
     "platforms": [
-      "Apollo Pharmacy",
+      "BigBasket",
       "PharmEasy",
-      "Tata 1mg"
+      "Truemeds"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 139,
-    "max": 156,
-    "avg": 147.5
+    "min": 143,
+    "max": 170,
+    "avg": 159
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -250,10 +258,14 @@
     {
       "date": "2026-10-15",
       "file": "FitPlate_Ingredients_2026-10-15.md"
+    },
+    {
+      "date": "2026-11-23",
+      "file": "FitPlate_Ingredients_2026-11-23.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (wma)",
     "macrosPer100Estimate": "stable (none)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",

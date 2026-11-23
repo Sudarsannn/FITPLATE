@@ -232,9 +232,9 @@
   },
   "macrosPer100Estimate": {
     "kcal": 333,
-    "proteinG": 19.9,
-    "carbsG": 50,
-    "fatG": 14.8,
+    "proteinG": 19.8,
+    "carbsG": 49.9,
+    "fatG": 14.6,
     "fibreG": 38
   },
   "storage": "Airtight jar, cool and dry, away from light; whole seeds keep their aroma better than ground.",
@@ -251,10 +251,10 @@
   "vendorListings": [],
   "usedIn": [
     {
-      "dishNumber": 2,
-      "quantity": 1,
+      "dishNumber": 62,
+      "quantity": 0.5,
       "unit": "g",
-      "raw": "1 g per serving (about ½ tsp, added to the rice water; the dish notes regular jeera can replace it)"
+      "raw": "0.5 g per serving (about ¼ tsp; thin, dark, curved seeds), added with the whole spices for the rice."
     }
   ],
   "versions": [
@@ -265,11 +265,15 @@
     {
       "date": "2026-11-01",
       "file": "FitPlate_Ingredients_2026-11-01.md"
+    },
+    {
+      "date": "2026-11-23",
+      "file": "FitPlate_Ingredients_2026-11-23.md"
     }
   ],
   "mergeMethod": {
     "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",

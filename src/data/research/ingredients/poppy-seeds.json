@@ -16,33 +16,40 @@
         "avg": 2470,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-13.md"
+      },
+      {
+        "date": "2026-11-23",
+        "min": 2410,
+        "max": 3690,
+        "avg": 2860,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-23.md"
       }
     ],
     "currentEstimate": {
-      "min": 2115,
-      "max": 2780,
-      "avg": 2470
+      "min": 2285,
+      "max": 3095,
+      "avg": 2690
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-13",
+    "lastObserved": "2026-11-23",
     "stale": false,
     "seasonal": false,
-    "listingCount": 6,
+    "listingCount": 7,
     "platforms": [
-      "Amazon",
       "BigBasket",
-      "Hunar Setu"
+      "Flipkart"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 211.5,
-    "max": 278,
-    "avg": 247
+    "min": 228.5,
+    "max": 309.5,
+    "avg": 269
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -235,7 +242,7 @@
     "fatG": 42,
     "fibreG": 20
   },
-  "storage": "Airtight jar in a cool, dark cupboard for up to about 3 months after opening; in the fridge or freezer, in an airtight container, for 6 months or more (keeps the oil from going rancid). Homemade bisi bele bath powder containing roasted poppy seeds: airtight jar, 1–2 months at room temperature, longer in the fridge.",
+  "storage": "Airtight jar in a cool, dark cupboard for up to about 3 months after opening; in the fridge or freezer, in an airtight container, for 6 months or more (keeps the oil from going rancid). Chettinad masala containing roasted poppy seeds: airtight jar, 1–2 months at room temperature, longer in the fridge.",
   "looksLike": "Tiny, round, cream to off-white seeds, much smaller than mustard seeds, that pour like fine sand. The Indian kind is white; the blue-grey European kind is rarely sold here.",
   "howToPick": null,
   "shelfLife": "About 6–12 months unopened (check the pack); best used within 3–6 months once opened, because the seeds are oily.",
@@ -247,21 +254,25 @@
   "vendorListings": [],
   "usedIn": [
     {
-      "dishNumber": 48,
-      "quantity": 0.5,
+      "dishNumber": 68,
+      "quantity": 2,
       "unit": "g",
-      "raw": "0.5 g per serving, inside the homemade bisi bele bath powder (3 g, 1 tsp, in a 60 g batch that makes 6 servings of 10 g each). None if a store-bought masala is used."
+      "raw": "2 g (¾ tsp) per serving, in the Chettinad masala (ground)."
     }
   ],
   "versions": [
     {
       "date": "2026-10-13",
       "file": "FitPlate_Ingredients_2026-10-13.md"
+    },
+    {
+      "date": "2026-11-23",
+      "file": "FitPlate_Ingredients_2026-11-23.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -270,5 +281,8 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 2281.1–3292.5 was wider than 30% of avg 2689.6; narrowed to ±15%."
+  ]
 }

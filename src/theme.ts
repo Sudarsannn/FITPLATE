@@ -6,7 +6,7 @@ export const colors = {
   cardAlt: 'rgba(255,255,255,0.10)',
   text: '#F5F7F6',
   muted: '#97A39D',
-  faint: '#5E6A64',
+  faint: '#7F8B85',
   accent: '#3DDC84',
   accent2: '#B4F461',
   accentDark: '#14532D',

@@ -16,34 +16,40 @@
         "avg": 335,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-21.md"
+      },
+      {
+        "date": "2026-11-23",
+        "min": 290,
+        "max": 335,
+        "avg": 320,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-23.md"
       }
     ],
     "currentEstimate": {
-      "min": 300,
-      "max": 365,
-      "avg": 335
+      "min": 295,
+      "max": 345,
+      "avg": 325
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-21",
+    "lastObserved": "2026-11-23",
     "stale": false,
     "seasonal": false,
-    "listingCount": 2,
+    "listingCount": 4,
     "platforms": [
-      "Cavinkart",
-      "Swiggy Instamart"
+      "BigBasket",
+      "Blinkit"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 2 listings back the range (need 3)"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 30,
-    "max": 36.5,
-    "avg": 33.5
+    "min": 29.5,
+    "max": 34.5,
+    "avg": 32.5
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -247,6 +253,14 @@
   ],
   "vendorListings": [
     {
+      "vendor": "blinkit",
+      "product": "Garden Nylon Sev",
+      "pack": "150 g",
+      "priceMinInr": 50,
+      "priceMaxInr": 50,
+      "observedOn": "2026-11-23"
+    },
+    {
       "vendor": "instamart",
       "product": "Garden Nylon Sev",
       "pack": "150 g",
@@ -267,11 +281,15 @@
     {
       "date": "2026-10-21",
       "file": "FitPlate_Ingredients_2026-10-21.md"
+    },
+    {
+      "date": "2026-11-23",
+      "file": "FitPlate_Ingredients_2026-11-23.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",

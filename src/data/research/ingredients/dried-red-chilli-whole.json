@@ -23,32 +23,42 @@
         "avg": 930,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-11-01.md"
+      },
+      {
+        "date": "2026-11-23",
+        "min": 475,
+        "max": 2700,
+        "avg": 1245,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-23.md"
       }
     ],
     "currentEstimate": {
-      "min": 670,
-      "max": 910,
-      "avg": 790
+      "min": 1060,
+      "max": 1430,
+      "avg": 1245
     },
-    "method": "spike-blend",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-11-01",
+    "method": "latest-trend",
+    "trend": "rising",
+    "change30dPct": 33.8,
+    "lastObserved": "2026-11-23",
     "stale": false,
     "seasonal": false,
-    "listingCount": 7,
+    "listingCount": 2,
     "platforms": [
       "BigBasket",
       "Flipkart"
     ],
     "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "confirmed": false,
+    "checkNotes": [
+      "only 2 listings back the range (need 3)"
+    ]
   },
   "per100Estimate": {
-    "min": 67,
-    "max": 91,
-    "avg": 79
+    "min": 106,
+    "max": 143,
+    "avg": 124.5
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -236,9 +246,9 @@
   },
   "macrosPer100Estimate": {
     "kcal": 415,
-    "proteinG": 13,
-    "carbsG": 57.6,
-    "fatG": 15.6,
+    "proteinG": 14,
+    "carbsG": 58.2,
+    "fatG": 14.1,
     "fibreG": 27
   },
   "storage": "Airtight jar or tin in a cool, dry place; sun-dry briefly in monsoon if pods feel soft; keep away from moisture.",
@@ -254,10 +264,10 @@
   "vendorListings": [],
   "usedIn": [
     {
-      "dishNumber": 5,
-      "quantity": null,
-      "unit": null,
-      "raw": "1 whole pod per serving (a shrivelled dark-red pod, about 5 cm long)"
+      "dishNumber": 68,
+      "quantity": 3,
+      "unit": "g",
+      "raw": "3 g per serving (2–3 dried pods; Kashmiri for colour, Guntur for heat), in the Chettinad masala."
     }
   ],
   "versions": [
@@ -268,11 +278,15 @@
     {
       "date": "2026-11-01",
       "file": "FitPlate_Ingredients_2026-11-01.md"
+    },
+    {
+      "date": "2026-11-23",
+      "file": "FitPlate_Ingredients_2026-11-23.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (spike-blend)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (latest-trend)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -282,10 +296,7 @@
     "usedIn": "newest"
   },
   "mergeNotes": [
-    "price flag: possible-spike",
     "price flag: narrowed",
-    "Possible spike: latest avg 930 (2026-11-01) moved more than 35% from the previous estimate; using the halfway point.",
-    "Range 512.5–1182.5 was wider than 30% of avg 790.0; narrowed to ±15%.",
-    "macrosPer100Estimate.kcal: Versions 2026-10-04 (318) and 2026-11-01 (415) differ by more than 25%; kept the newer."
+    "Range 475.0–2700.0 was wider than 30% of avg 1245.0; narrowed to ±15%."
   ]
 }

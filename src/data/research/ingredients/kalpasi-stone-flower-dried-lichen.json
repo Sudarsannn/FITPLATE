@@ -16,34 +16,41 @@
         "avg": 4470,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-21.md"
+      },
+      {
+        "date": "2026-11-23",
+        "min": 1140,
+        "max": 4560,
+        "avg": 2960,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-23.md"
       }
     ],
     "currentEstimate": {
-      "min": 4380,
-      "max": 4560,
-      "avg": 4470
+      "min": 2760,
+      "max": 3730,
+      "avg": 3245
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-21",
+    "lastObserved": "2026-11-23",
     "stale": false,
     "seasonal": false,
-    "listingCount": 2,
+    "listingCount": 5,
     "platforms": [
-      "Amazon"
+      "Amazon",
+      "BigBasket",
+      "Flipkart"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 2 listings back the range (need 3)",
-      "only 1 platform (Amazon) backs the range"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 438,
-    "max": 456,
-    "avg": 447
+    "min": 276,
+    "max": 373,
+    "avg": 324.5
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -252,10 +259,14 @@
     {
       "date": "2026-10-21",
       "file": "FitPlate_Ingredients_2026-10-21.md"
+    },
+    {
+      "date": "2026-11-23",
+      "file": "FitPlate_Ingredients_2026-11-23.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (wma)",
     "macrosPer100Estimate": "stable (none)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
@@ -265,5 +276,8 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 1752.8–4560.0 was wider than 30% of avg 3245.6; narrowed to ±15%."
+  ]
 }

@@ -4,7 +4,7 @@
   "aliases": [
     "kala namak"
   ],
-  "category": "Condiment",
+  "category": "Condiment (salt)",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -15,32 +15,41 @@
         "avg": 195,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-21.md"
+      },
+      {
+        "date": "2026-11-23",
+        "min": 145,
+        "max": 300,
+        "avg": 215,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-23.md"
       }
     ],
     "currentEstimate": {
-      "min": 165,
-      "max": 225,
-      "avg": 195
+      "min": 175,
+      "max": 240,
+      "avg": 210
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-21",
+    "lastObserved": "2026-11-23",
     "stale": false,
     "seasonal": false,
-    "listingCount": 4,
+    "listingCount": 3,
     "platforms": [
-      "BigBasket",
-      "Swiggy Instamart"
+      "BigBasket"
     ],
     "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "confirmed": false,
+    "checkNotes": [
+      "only 1 platform (BigBasket) backs the range"
+    ]
   },
   "per100Estimate": {
-    "min": 16.5,
-    "max": 22.5,
-    "avg": 19.5
+    "min": 17.5,
+    "max": 24,
+    "avg": 21
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -251,17 +260,21 @@
       "dishNumber": 66,
       "quantity": 0.5,
       "unit": "g",
-      "raw": "0.5 g (a pinch, about ⅛ tsp), sprinkled with the chaat masala; no table salt is added."
+      "raw": "0.5 g (a pinch, about ⅛ tsp), sprinkled with the chaat masala."
     }
   ],
   "versions": [
     {
       "date": "2026-10-21",
       "file": "FitPlate_Ingredients_2026-10-21.md"
+    },
+    {
+      "date": "2026-11-23",
+      "file": "FitPlate_Ingredients_2026-11-23.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (wma)",
     "macrosPer100Estimate": "stable (none)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
@@ -273,6 +286,6 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 145.0–235.0 was wider than 30% of avg 195.0; narrowed to ±15%."
+    "Range 145.0–279.3 was wider than 30% of avg 208.6; narrowed to ±15%."
   ]
 }

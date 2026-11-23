@@ -23,34 +23,42 @@
         "avg": 109,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-11-01.md"
+      },
+      {
+        "date": "2026-11-23",
+        "min": 105,
+        "max": 136,
+        "avg": 121,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-23.md"
       }
     ],
     "currentEstimate": {
-      "min": 100,
-      "max": 120,
-      "avg": 110
+      "min": 105,
+      "max": 130,
+      "avg": 115
     },
     "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-11-01",
+    "trend": "stable",
+    "change30dPct": 5.4,
+    "lastObserved": "2026-11-23",
     "stale": false,
     "seasonal": false,
     "listingCount": 2,
     "platforms": [
-      "BigBasket"
+      "BigBasket",
+      "Swiggy Instamart"
     ],
     "outOfStock": false,
     "confirmed": false,
     "checkNotes": [
-      "only 2 listings back the range (need 3)",
-      "only 1 platform (BigBasket) backs the range"
+      "only 2 listings back the range (need 3)"
     ]
   },
   "per100Estimate": {
-    "min": 10,
-    "max": 12,
-    "avg": 11
+    "min": 10.5,
+    "max": 13,
+    "avg": 11.5
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -237,11 +245,11 @@
     }
   },
   "macrosPer100Estimate": {
-    "kcal": 369,
-    "proteinG": 20.8,
-    "carbsG": 59.5,
-    "fatG": 5.5,
-    "fibreG": 13.6
+    "kcal": 378,
+    "proteinG": 20.5,
+    "carbsG": 63,
+    "fatG": 6,
+    "fibreG": 12.2
   },
   "storage": "Airtight container at room temperature, away from damp and sunlight; refrigerate in humid weather to keep weevils away.",
   "looksLike": "Small yellow split lentils, larger and rounder than toor dal, with one flat side.",
@@ -255,13 +263,22 @@
     "Split urad dal (extra)",
     "Omit"
   ],
-  "vendorListings": [],
+  "vendorListings": [
+    {
+      "vendor": "instamart",
+      "product": "Kitchen Gems Chana Dal",
+      "pack": "1 kg",
+      "priceMinInr": 136,
+      "priceMaxInr": 136,
+      "observedOn": "2026-11-23"
+    }
+  ],
   "usedIn": [
     {
-      "dishNumber": 4,
+      "dishNumber": 57,
       "quantity": 3,
       "unit": "g",
-      "raw": "3 g per serving (about ½ tsp, in the tempering)"
+      "raw": "3 g per serving (about 1 tsp, in the tempering)"
     }
   ],
   "versions": [
@@ -272,11 +289,15 @@
     {
       "date": "2026-11-01",
       "file": "FitPlate_Ingredients_2026-11-01.md"
+    },
+    {
+      "date": "2026-11-23",
+      "file": "FitPlate_Ingredients_2026-11-23.md"
     }
   ],
   "mergeMethod": {
     "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",

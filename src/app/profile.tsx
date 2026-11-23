@@ -166,6 +166,7 @@ export function ProfileScreen({ asTab = false }: { asTab?: boolean }) {
               <Text style={[type.small, { color: colors.muted }]}>Night-before prep reminder, Sunday batch-cook reminder. More in Settings.</Text>
             </View>
             <Switch
+              accessibilityLabel="Breakfast and batch-cook nudges"
               value={profile.breakfastReminder}
               onValueChange={(v) => {
                 reminders.change({ cookPrep: v }).catch(() => {});

@@ -24,32 +24,41 @@
         "avg": 240,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-11-01.md"
+      },
+      {
+        "date": "2026-11-23",
+        "min": 158,
+        "max": 270,
+        "avg": 233,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-23.md"
       }
     ],
     "currentEstimate": {
-      "min": 180,
-      "max": 230,
-      "avg": 205
+      "min": 185,
+      "max": 250,
+      "avg": 215
     },
-    "method": "spike-blend",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-11-01",
+    "method": "wma",
+    "trend": "stable",
+    "change30dPct": 19.7,
+    "lastObserved": "2026-11-23",
     "stale": false,
     "seasonal": false,
     "listingCount": 3,
     "platforms": [
-      "BigBasket",
       "Flipkart"
     ],
     "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "confirmed": false,
+    "checkNotes": [
+      "only 1 platform (Flipkart) backs the range"
+    ]
   },
   "per100Estimate": {
-    "min": 18,
-    "max": 23,
-    "avg": 20.5
+    "min": 18.5,
+    "max": 25,
+    "avg": 21.5
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -236,10 +245,10 @@
     }
   },
   "macrosPer100Estimate": {
-    "kcal": 340.5,
-    "proteinG": 24,
-    "carbsG": 55.5,
-    "fatG": 1.8,
+    "kcal": 341,
+    "proteinG": 25,
+    "carbsG": 59,
+    "fatG": 2,
     "fibreG": 18.3
   },
   "storage": "Airtight jar at room temperature, away from damp; refrigerate or add a dried neem leaf or bay leaf in humid weather to deter weevils.",
@@ -256,10 +265,16 @@
   "vendorListings": [],
   "usedIn": [
     {
-      "dishNumber": 4,
-      "quantity": 13,
+      "dishNumber": 57,
+      "quantity": 2,
       "unit": "g",
-      "raw": "13 g per serving in the batter (about 1 tbsp, raw) plus 2 g in the tempering, 15 g in total"
+      "raw": "2 g per serving (about ½ tsp, in the tempering)"
+    },
+    {
+      "dishNumber": 65,
+      "quantity": 2,
+      "unit": "g",
+      "raw": "2 g per serving (about ½ tsp, in the bhaji tempering)"
     }
   ],
   "versions": [
@@ -270,11 +285,15 @@
     {
       "date": "2026-11-01",
       "file": "FitPlate_Ingredients_2026-11-01.md"
+    },
+    {
+      "date": "2026-11-23",
+      "file": "FitPlate_Ingredients_2026-11-23.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (spike-blend)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -284,8 +303,8 @@
     "usedIn": "newest"
   },
   "mergeNotes": [
-    "price flag: possible-spike",
-    "Possible spike: latest avg 240 (2026-11-01) moved more than 35% from the previous estimate; using the halfway point.",
-    "macrosPer100Estimate.fibreG: Versions 2026-10-04 (12) and 2026-11-01 (18.3) differ by more than 25%; kept the newer."
+    "price flag: narrowed",
+    "Range 169.6–247.4 was wider than 30% of avg 215.7; narrowed to ±15%.",
+    "macrosPer100Estimate.fibreG: Excluded outlier 12 from 2026-10-04: more than 25% from the other versions."
   ]
 }

@@ -478,28 +478,36 @@
           "avg": 350,
           "confidence": null,
           "sourceFile": "FitPlate_Dishes_2026-10-16.md"
+        },
+        {
+          "date": "2026-11-23",
+          "min": 300,
+          "max": 380,
+          "avg": 331,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-11-23.md"
         }
       ],
       "currentEstimate": {
-        "min": 320,
+        "min": 310,
         "max": 380,
-        "avg": 350
+        "avg": 340
       },
-      "method": "single",
+      "method": "wma",
       "trend": "unknown",
       "change30dPct": null,
-      "lastObserved": "2026-10-16",
+      "lastObserved": "2026-11-23",
       "stale": false,
       "seasonal": false,
-      "listingCount": 2,
+      "listingCount": 5,
       "platforms": [
         "magicpin",
         "Swiggy"
       ],
-      "outOfStock": false,
+      "outOfStock": true,
       "confirmed": false,
       "checkNotes": [
-        "only 2 listings back the range (need 3)"
+        "a listing used for the range is marked out of stock, closed or not taking orders"
       ]
     },
     "nutrition": {
@@ -524,7 +532,7 @@
         "source": null
       }
     },
-    "restaurantsSampled": 4,
+    "restaurantsSampled": null,
     "platforms": [
       "Swiggy",
       "Zomato",
@@ -540,28 +548,36 @@
         "avg": 350,
         "confidence": null,
         "sourceFile": "FitPlate_Dishes_2026-10-16.md"
+      },
+      {
+        "date": "2026-11-23",
+        "min": 300,
+        "max": 380,
+        "avg": 331,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-11-23.md"
       }
     ],
     "currentEstimate": {
-      "min": 320,
+      "min": 310,
       "max": 380,
-      "avg": 350
+      "avg": 340
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-16",
+    "lastObserved": "2026-11-23",
     "stale": false,
     "seasonal": false,
-    "listingCount": 2,
+    "listingCount": 5,
     "platforms": [
       "magicpin",
       "Swiggy"
     ],
-    "outOfStock": false,
+    "outOfStock": true,
     "confirmed": false,
     "checkNotes": [
-      "only 2 listings back the range (need 3)"
+      "a listing used for the range is marked out of stock, closed or not taking orders"
     ]
   },
   "healthiness": {
@@ -611,7 +627,14 @@
     "Swiggy, Navaratna Veg Restaurant, Vashi (Shahi Paneer ₹462; premium, excluded): https://www.swiggy.com/restaurants/navaratna-veg-restaurant-vashi-mumbai-286146 ; https://www.swiggy.com/menu/286146",
     "bestmenuhub.com, Taj Hotel Mumbai menu (Shahi Paneer ₹895; not a platform; premium, excluded): https://bestmenuhub.com/taj-hotel-mumbai-menu/",
     "Zomato, Shahi Paneer in Mumbai (cost for two only): https://www.zomato.com/mumbai/restaurants/dish-shahi-paneer",
-    "Famous Biryaniwala, Paneer Shahi Korma (per kg; not used): https://famousbiryaniwala.com/product/main-course/veg-main-course-2/paneer-shahi-korma/"
+    "Famous Biryaniwala, Paneer Shahi Korma (per kg; not used): https://famousbiryaniwala.com/product/main-course/veg-main-course-2/paneer-shahi-korma/",
+    "Swiggy, Great Punjab, Kalyan West (Shahi Paneer ₹329; MMR): https://www.swiggy.com/city/mumbai/great-punjab-kalyan-west-rest72885",
+    "Swiggy, Swad Veg Treats, Panvel (Shahi Paneer ₹330; MMR): https://www.swiggy.com/city/mumbai/swad-veg-treats-sector-10-panvel-rest48193 ; https://www.swiggy.com/city/mumbai/swad-veg-treats-1-rest48193",
+    "Swiggy, Suruchi Bhog, Airoli (Paneer Shahi Masala ₹300; MMR): https://swiggy.com/city/mumbai/suruchi-bhog-airoli-rest37797",
+    "Swiggy, Navaratna Veg Restaurant, Vashi (Shahi Paneer ₹462; premium, excluded): https://www.swiggy.com/menu/286146 ; https://www.swiggy.com/restaurants/navaratna-veg-restaurant-vashi-mumbai-286146",
+    "magicpin, Lucky Restaurant, Bandra West (Shahi Paneer Korma ₹380; dated 2026-10-16, not re-found): https://magicpin.in/Mumbai/Bandra-West/Restaurant/Lucky-Restaurant/store/2333b/delivery/?itemId=4848982",
+    "bestmenuhub.com, Taj Hotel Mumbai menu (Shahi Paneer ₹895; dated 2026-10-16; not a platform; premium, excluded): https://bestmenuhub.com/taj-hotel-mumbai-menu/",
+    "Zomato, Shahi Paneer in Mumbai (cost for two only; seen 16 Oct): https://www.zomato.com/mumbai/restaurants/dish-shahi-paneer"
   ],
   "allergens": [
     "peanut",
@@ -733,17 +756,21 @@
   ],
   "needsReview": [
     "Jain \"with-changes\" but the recipe keeps onion, garlic, fresh ginger and the line doesn't say to skip them",
-    "price not confirmed (2026-10-16): only 2 listings back the range (need 3)"
+    "price not confirmed (2026-11-23): a listing used for the range is marked out of stock, closed or not taking orders"
   ],
   "versions": [
     {
       "date": "2026-10-16",
       "file": "FitPlate_Dishes_2026-10-16.md"
+    },
+    {
+      "date": "2026-11-23",
+      "file": "FitPlate_Dishes_2026-11-23.md"
     }
   ],
   "mergeMethod": {
-    "nutritionPerServing": "stable (single)",
-    "orderPrice": "price engine (single)",
+    "nutritionPerServing": "stable (mean-2)",
+    "orderPrice": "price engine (wma)",
     "ingredients": "newest",
     "steps": "newest",
     "healthiness": "newest",
@@ -752,6 +779,7 @@
     "tags": "tag engine (tags.ts) on the merged dish"
   },
   "mergeNotes": [
-    "2026-10-16: research declares peanut not detected from ingredient names; added"
+    "2026-10-16: research declares peanut not detected from ingredient names; added",
+    "2026-11-23: research declares peanut not detected from ingredient names; added"
   ]
 }

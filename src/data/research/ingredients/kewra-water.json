@@ -16,34 +16,40 @@
         "avg": 270,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-16.md"
+      },
+      {
+        "date": "2026-11-23",
+        "min": 300,
+        "max": 1350,
+        "avg": 695,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-23.md"
       }
     ],
     "currentEstimate": {
-      "min": 260,
-      "max": 275,
-      "avg": 270
+      "min": 410,
+      "max": 555,
+      "avg": 485
     },
-    "method": "single",
+    "method": "spike-blend",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-16",
+    "lastObserved": "2026-11-23",
     "stale": false,
     "seasonal": false,
-    "listingCount": 2,
+    "listingCount": 6,
     "platforms": [
-      "1mg",
-      "StoreKing"
+      "Amazon",
+      "Rudra Centre"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 2 listings back the range (need 3)"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 26,
-    "max": 27.5,
-    "avg": 27
+    "min": 41,
+    "max": 55.5,
+    "avg": 48.5
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -258,11 +264,15 @@
     {
       "date": "2026-10-16",
       "file": "FitPlate_Ingredients_2026-10-16.md"
+    },
+    {
+      "date": "2026-11-23",
+      "file": "FitPlate_Ingredients_2026-11-23.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (spike-blend)",
+    "macrosPer100Estimate": "stable (mean-2)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -271,5 +281,10 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: possible-spike",
+    "price flag: narrowed",
+    "Possible spike: latest avg 695 (2026-11-23) moved more than 35% from the previous estimate; using the halfway point.",
+    "Range 280.0–812.5 was wider than 30% of avg 482.5; narrowed to ±15%."
+  ]
 }

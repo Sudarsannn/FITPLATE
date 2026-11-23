@@ -16,34 +16,42 @@
         "avg": 375,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-21.md"
+      },
+      {
+        "date": "2026-11-23",
+        "min": 270,
+        "max": 400,
+        "avg": 345,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-23.md"
       }
     ],
     "currentEstimate": {
-      "min": 350,
+      "min": 300,
       "max": 400,
-      "avg": 375
+      "avg": 350
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-21",
+    "lastObserved": "2026-11-23",
     "stale": false,
     "seasonal": false,
-    "listingCount": 2,
+    "listingCount": 7,
     "platforms": [
-      "BigBasket"
+      "BigBasket",
+      "Blinkit",
+      "Swiggy Instamart",
+      "Zepto"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 2 listings back the range (need 3)",
-      "only 1 platform (BigBasket) backs the range"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 35,
+    "min": 30,
     "max": 40,
-    "avg": 37.5
+    "avg": 35
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -245,7 +253,40 @@
     "Coriander-only chutney",
     "Extra lemon juice and a pinch of chaat masala"
   ],
-  "vendorListings": [],
+  "vendorListings": [
+    {
+      "vendor": "blinkit",
+      "product": "Kissan Chatpati Hari Chutney",
+      "pack": "200 g",
+      "priceMinInr": 75,
+      "priceMaxInr": 75,
+      "observedOn": "2026-11-23"
+    },
+    {
+      "vendor": "instamart",
+      "product": "Mother's Recipe Dhaniya Pudhina Chutney",
+      "pack": "200 g",
+      "priceMinInr": 60,
+      "priceMaxInr": 60,
+      "observedOn": "2026-11-23"
+    },
+    {
+      "vendor": "instamart",
+      "product": "Tata Sampann Chatpati Dhaniya Pudina Chutney Dip",
+      "pack": "200 g",
+      "priceMinInr": 69,
+      "priceMaxInr": 69,
+      "observedOn": "2026-11-23"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Kissan Chatpati Hari Chutney doy pack",
+      "pack": "200 g",
+      "priceMinInr": 54,
+      "priceMaxInr": 54,
+      "observedOn": "2026-11-23"
+    }
+  ],
   "usedIn": [
     {
       "dishNumber": 66,
@@ -258,11 +299,15 @@
     {
       "date": "2026-10-21",
       "file": "FitPlate_Ingredients_2026-10-21.md"
+    },
+    {
+      "date": "2026-11-23",
+      "file": "FitPlate_Ingredients_2026-11-23.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -271,5 +316,9 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 285.1–400.0 was wider than 30% of avg 350.7; narrowed to ±15%.",
+    "range clamped to observed prices: 300–405 → 300–400"
+  ]
 }

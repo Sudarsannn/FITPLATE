@@ -16,20 +16,28 @@
         "avg": 380,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-16.md"
+      },
+      {
+        "date": "2026-11-23",
+        "min": 390,
+        "max": 475,
+        "avg": 430,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-23.md"
       }
     ],
     "currentEstimate": {
-      "min": 340,
-      "max": 400,
-      "avg": 380
+      "min": 375,
+      "max": 455,
+      "avg": 415
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-16",
+    "lastObserved": "2026-11-23",
     "stale": false,
     "seasonal": false,
-    "listingCount": 4,
+    "listingCount": 5,
     "platforms": [
       "BigBasket"
     ],
@@ -40,9 +48,9 @@
     ]
   },
   "per100Estimate": {
-    "min": 34,
-    "max": 40,
-    "avg": 38
+    "min": 37.5,
+    "max": 45.5,
+    "avg": 41.5
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -257,11 +265,15 @@
     {
       "date": "2026-10-16",
       "file": "FitPlate_Ingredients_2026-10-16.md"
+    },
+    {
+      "date": "2026-11-23",
+      "file": "FitPlate_Ingredients_2026-11-23.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",

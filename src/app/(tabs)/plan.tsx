@@ -106,7 +106,7 @@ export function PlanScreen({ embedded = false }: { embedded?: boolean }) {
                   <DishRow
                     dish={dish}
                     right={
-                      <Pressable hitSlop={12} onPress={() => setPlan(key, slot, null)}>
+                      <Pressable hitSlop={12} accessibilityRole="button" accessibilityLabel="Remove from plan" onPress={() => setPlan(key, slot, null)}>
                         <Ionicons name="close-circle" size={24} color={colors.faint} />
                       </Pressable>
                     }
@@ -163,7 +163,7 @@ export function PlanScreen({ embedded = false }: { embedded?: boolean }) {
       {picking ? (
         <View style={StyleSheet.absoluteFill}>
           <Animated.View entering={RFadeIn} exiting={FadeOut} style={[StyleSheet.absoluteFill, { backgroundColor: 'rgba(0,0,0,0.6)' }]}>
-            <Pressable style={{ flex: 1 }} onPress={() => setPicking(null)} />
+            <Pressable style={{ flex: 1 }} accessibilityRole="button" accessibilityLabel="Close" onPress={() => setPicking(null)} />
           </Animated.View>
           <Animated.View entering={SlideInDown.springify().damping(20)} exiting={SlideOutDown.duration(200)} style={styles.sheet}>
             <View style={styles.grabber} />

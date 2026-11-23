@@ -21,32 +21,40 @@
         "avg": 1435,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-11-01.md"
+      },
+      {
+        "date": "2026-11-23",
+        "min": 1060,
+        "max": 1495,
+        "avg": 1265,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-23.md"
       }
     ],
     "currentEstimate": {
-      "min": 1195,
-      "max": 1615,
-      "avg": 1405
+      "min": 1130,
+      "max": 1530,
+      "avg": 1330
     },
     "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-11-01",
+    "trend": "stable",
+    "change30dPct": -3.4,
+    "lastObserved": "2026-11-23",
     "stale": false,
     "seasonal": false,
-    "listingCount": 13,
+    "listingCount": 6,
     "platforms": [
-      "Amazon",
-      "BigBasket"
+      "BigBasket",
+      "Flipkart"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 119.5,
-    "max": 161.5,
-    "avg": 140.5
+    "min": 113,
+    "max": 153,
+    "avg": 133
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -233,8 +241,8 @@
     }
   },
   "macrosPer100Estimate": {
-    "kcal": 319.5,
-    "proteinG": 12.6,
+    "kcal": 289,
+    "proteinG": 13.2,
     "carbsG": 32,
     "fatG": 12,
     "fibreG": 16
@@ -251,10 +259,10 @@
   "vendorListings": [],
   "usedIn": [
     {
-      "dishNumber": 2,
+      "dishNumber": 62,
       "quantity": 3,
       "unit": "g",
-      "raw": "3 g per serving (1 tsp), in the chicken marinade"
+      "raw": "3 g (1 tsp; the dish file allows garam masala instead)"
     }
   ],
   "versions": [
@@ -265,11 +273,15 @@
     {
       "date": "2026-11-01",
       "file": "FitPlate_Ingredients_2026-11-01.md"
+    },
+    {
+      "date": "2026-11-23",
+      "file": "FitPlate_Ingredients_2026-11-23.md"
     }
   ],
   "mergeMethod": {
     "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -280,8 +292,8 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 847.4–1760.7 was wider than 30% of avg 1405.8; narrowed to ±15%.",
-    "macrosPer100Estimate.carbsG: Versions 2026-10-04 (50) and 2026-11-01 (32) differ by more than 25%; kept the newer.",
-    "macrosPer100Estimate.fibreG: Versions 2026-10-04 (25) and 2026-11-01 (16) differ by more than 25%; kept the newer."
+    "Range 958.4–1622.0 was wider than 30% of avg 1332.3; narrowed to ±15%.",
+    "macrosPer100Estimate.carbsG: Excluded outlier 50 from 2026-10-04: more than 25% from the other versions.",
+    "macrosPer100Estimate.fibreG: Excluded outlier 25 from 2026-10-04: more than 25% from the other versions."
   ]
 }

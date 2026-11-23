@@ -23,32 +23,42 @@
         "avg": 110,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
+      },
+      {
+        "date": "2026-11-23",
+        "min": 48,
+        "max": 139,
+        "avg": 81,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-23.md"
       }
     ],
     "currentEstimate": {
-      "min": 68,
-      "max": 92,
-      "avg": 80
+      "min": 72,
+      "max": 97,
+      "avg": 84
     },
-    "method": "spike-blend",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-29",
+    "method": "wma",
+    "trend": "stable",
+    "change30dPct": 22.1,
+    "lastObserved": "2026-11-23",
     "stale": false,
     "seasonal": false,
-    "listingCount": 8,
+    "listingCount": 2,
     "platforms": [
-      "BigBasket",
-      "Blinkit"
+      "BigBasket"
     ],
     "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "confirmed": false,
+    "checkNotes": [
+      "only 2 listings back the range (need 3)",
+      "only 1 platform (BigBasket) backs the range"
+    ]
   },
   "per100Estimate": {
-    "min": 6.8,
-    "max": 9.2,
-    "avg": 8
+    "min": 7.2,
+    "max": 9.7,
+    "avg": 8.4
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -262,7 +272,14 @@
       "observedOn": "2026-10-29"
     }
   ],
-  "usedIn": [],
+  "usedIn": [
+    {
+      "dishNumber": 67,
+      "quantity": 50,
+      "unit": "g",
+      "raw": "50 g per serving (4–5 small florets, about ½ cup)"
+    }
+  ],
   "versions": [
     {
       "date": "2026-10-06",
@@ -271,11 +288,15 @@
     {
       "date": "2026-10-29",
       "file": "FitPlate_Ingredients_2026-10-29.md"
+    },
+    {
+      "date": "2026-11-23",
+      "file": "FitPlate_Ingredients_2026-11-23.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (spike-blend)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -285,9 +306,7 @@
     "usedIn": "newest"
   },
   "mergeNotes": [
-    "price flag: possible-spike",
     "price flag: narrowed",
-    "Possible spike: latest avg 110 (2026-10-29) moved more than 35% from the previous estimate; using the halfway point.",
-    "Range 52.5–110.0 was wider than 30% of avg 80.0; narrowed to ±15%."
+    "Range 51.0–132.1 was wider than 30% of avg 84.2; narrowed to ±15%."
   ]
 }

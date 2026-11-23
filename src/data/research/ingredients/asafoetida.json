@@ -24,20 +24,28 @@
         "avg": 2050,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-11-01.md"
+      },
+      {
+        "date": "2026-11-23",
+        "min": 1050,
+        "max": 1720,
+        "avg": 1485,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-23.md"
       }
     ],
     "currentEstimate": {
-      "min": 1635,
-      "max": 2215,
-      "avg": 1925
+      "min": 1440,
+      "max": 1950,
+      "avg": 1695
     },
     "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-11-01",
+    "trend": "stable",
+    "change30dPct": -5.7,
+    "lastObserved": "2026-11-23",
     "stale": false,
     "seasonal": false,
-    "listingCount": 18,
+    "listingCount": 5,
     "platforms": [
       "BigBasket",
       "Flipkart"
@@ -47,9 +55,9 @@
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 163.5,
-    "max": 221.5,
-    "avg": 192.5
+    "min": 144,
+    "max": 195,
+    "avg": 169.5
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -254,16 +262,16 @@
   "vendorListings": [],
   "usedIn": [
     {
-      "dishNumber": 4,
-      "quantity": null,
-      "unit": null,
-      "raw": "a pinch (about 0.1 g; optional)"
+      "dishNumber": 58,
+      "quantity": 0.05,
+      "unit": "g",
+      "raw": "0.05 g (a tiny pinch)"
     },
     {
-      "dishNumber": 5,
+      "dishNumber": 65,
       "quantity": 0.1,
       "unit": "g",
-      "raw": "0.1 g per serving (1 pinch)"
+      "raw": "0.1 g (a small pinch)"
     }
   ],
   "versions": [
@@ -274,11 +282,15 @@
     {
       "date": "2026-11-01",
       "file": "FitPlate_Ingredients_2026-11-01.md"
+    },
+    {
+      "date": "2026-11-23",
+      "file": "FitPlate_Ingredients_2026-11-23.md"
     }
   ],
   "mergeMethod": {
     "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -289,6 +301,6 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 1179.6–2915.7 was wider than 30% of avg 1924.6; narrowed to ±15%."
+    "Range 1112.0–2291.8 was wider than 30% of avg 1695.2; narrowed to ±15%."
   ]
 }

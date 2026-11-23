@@ -15,32 +15,41 @@
         "avg": 525,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-16.md"
+      },
+      {
+        "date": "2026-11-23",
+        "min": 275,
+        "max": 395,
+        "avg": 340,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-23.md"
       }
     ],
     "currentEstimate": {
-      "min": 445,
-      "max": 605,
-      "avg": 525
+      "min": 370,
+      "max": 495,
+      "avg": 435
     },
-    "method": "single",
+    "method": "spike-blend",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-16",
+    "lastObserved": "2026-11-23",
     "stale": false,
     "seasonal": false,
     "listingCount": 5,
     "platforms": [
-      "1mg",
-      "BigBasket"
+      "Apollo Pharmacy",
+      "BigBasket",
+      "Zepto"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 44.5,
-    "max": 60.5,
-    "avg": 52.5
+    "min": 37,
+    "max": 49.5,
+    "avg": 43.5
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -242,7 +251,16 @@
     "A drop of rose essence diluted in a spoon of water",
     "Leave it out"
   ],
-  "vendorListings": [],
+  "vendorListings": [
+    {
+      "vendor": "zepto",
+      "product": "Dabur Gulabari Premium Rose Water",
+      "pack": "250 ml",
+      "priceMinInr": 82,
+      "priceMaxInr": 82,
+      "observedOn": "2026-11-23"
+    }
+  ],
   "usedIn": [
     {
       "dishNumber": 62,
@@ -255,11 +273,15 @@
     {
       "date": "2026-10-16",
       "file": "FitPlate_Ingredients_2026-10-16.md"
+    },
+    {
+      "date": "2026-11-23",
+      "file": "FitPlate_Ingredients_2026-11-23.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (spike-blend)",
+    "macrosPer100Estimate": "stable (mean-2)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -269,7 +291,9 @@
     "usedIn": "newest"
   },
   "mergeNotes": [
+    "price flag: possible-spike",
     "price flag: narrowed",
-    "Range 260.0–900.0 was wider than 30% of avg 525.0; narrowed to ±15%."
+    "Possible spike: latest avg 340 (2026-11-23) moved more than 35% from the previous estimate; using the halfway point.",
+    "Range 267.5–647.5 was wider than 30% of avg 432.5; narrowed to ±15%."
   ]
 }

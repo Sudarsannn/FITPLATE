@@ -23,32 +23,41 @@
         "avg": 360,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
+      },
+      {
+        "date": "2026-11-23",
+        "min": 230,
+        "max": 545,
+        "avg": 345,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-23.md"
       }
     ],
     "currentEstimate": {
-      "min": 315,
-      "max": 425,
-      "avg": 370
+      "min": 295,
+      "max": 395,
+      "avg": 345
     },
-    "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-29",
+    "method": "latest-trend",
+    "trend": "falling",
+    "change30dPct": -5.1,
+    "lastObserved": "2026-11-23",
     "stale": false,
     "seasonal": false,
-    "listingCount": 11,
+    "listingCount": 9,
     "platforms": [
       "BigBasket",
-      "Flipkart"
+      "Flipkart",
+      "HealthKart"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 31500,
-    "max": 42500,
-    "avg": 37000
+    "min": 29500,
+    "max": 39500,
+    "avg": 34500
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -236,9 +245,9 @@
   },
   "macrosPer100Estimate": {
     "kcal": 310,
-    "proteinG": 11.2,
-    "carbsG": 65.2,
-    "fatG": 5.9,
+    "proteinG": 11.4,
+    "carbsG": 65.4,
+    "fatG": 5.8,
     "fibreG": 3.9
   },
   "storage": "Keep the box tightly closed in a cool, dark, dry cupboard, away from light and damp. Soak threads in 1 to 2 tbsp warm milk for 10 to 15 minutes before use.",
@@ -254,10 +263,10 @@
   "vendorListings": [],
   "usedIn": [
     {
-      "dishNumber": 95,
-      "quantity": 0.05,
-      "unit": "g",
-      "raw": "about 0.05 g per serving (3 threads, optional)"
+      "dishNumber": 62,
+      "quantity": null,
+      "unit": null,
+      "raw": "6–8 strands (a pinch; optional per the dish file, soaked in warm milk). The dish file gives no weight; about 0.1–0.13 g is an estimate from earlier thread counts."
     }
   ],
   "versions": [
@@ -268,11 +277,15 @@
     {
       "date": "2026-10-29",
       "file": "FitPlate_Ingredients_2026-10-29.md"
+    },
+    {
+      "date": "2026-11-23",
+      "file": "FitPlate_Ingredients_2026-11-23.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "price": "price engine (latest-trend)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -283,6 +296,6 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 277.6–478.9 was wider than 30% of avg 367.9; narrowed to ±15%."
+    "Range 230.0–545.0 was wider than 30% of avg 345.0; narrowed to ±15%."
   ]
 }

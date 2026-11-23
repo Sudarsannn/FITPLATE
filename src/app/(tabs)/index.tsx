@@ -227,10 +227,10 @@ export default function Today() {
                   </Text>
                 </PressableScale>
                 <View style={{ flexDirection: 'row', gap: 8 }}>
-                  <PressableScale onPress={() => s.addWater(-1)} style={styles.round}>
+                  <PressableScale onPress={() => s.addWater(-1)} style={styles.round} accessibilityLabel="Remove a glass of water">
                     <Ionicons name="remove" size={18} color={colors.text} />
                   </PressableScale>
-                  <PressableScale onPress={() => s.addWater(1)} style={[styles.round, { backgroundColor: colors.blue }]}>
+                  <PressableScale onPress={() => s.addWater(1)} style={[styles.round, { backgroundColor: colors.blue }]} accessibilityLabel="Add a glass of water">
                     <Ionicons name="add" size={18} color="#04202b" />
                   </PressableScale>
                 </View>
@@ -239,6 +239,7 @@ export default function Today() {
                 {Array.from({ length: water.glasses }).map((_, i) => (
                   <PressableScale
                     key={i}
+                    accessibilityLabel={`Set water to ${i + 1} glasses`}
                     haptic={false}
                     onPress={() => {
                       select();

@@ -16,34 +16,42 @@
         "avg": 355,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-21.md"
+      },
+      {
+        "date": "2026-11-23",
+        "min": 330,
+        "max": 450,
+        "avg": 360,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-23.md"
       }
     ],
     "currentEstimate": {
-      "min": 350,
-      "max": 355,
-      "avg": 355
+      "min": 335,
+      "max": 430,
+      "avg": 360
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-21",
+    "lastObserved": "2026-11-23",
     "stale": false,
     "seasonal": false,
-    "listingCount": 2,
+    "listingCount": 7,
     "platforms": [
-      "BigBasket"
+      "Amazon",
+      "BigBasket",
+      "Blinkit",
+      "Zepto"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 2 listings back the range (need 3)",
-      "only 1 platform (BigBasket) backs the range"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 35,
-    "max": 35.5,
-    "avg": 35.5
+    "min": 33.5,
+    "max": 43,
+    "avg": 36
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -245,7 +253,40 @@
     "Saunth (tamarind with dried ginger and jaggery)",
     "Extra lemon juice and a pinch of chaat masala"
   ],
-  "vendorListings": [],
+  "vendorListings": [
+    {
+      "vendor": "blinkit",
+      "product": "Tata Sampann Meethi Imli Khajur Chutney Dip",
+      "pack": "200 g",
+      "priceMinInr": 67,
+      "priceMaxInr": 67,
+      "observedOn": "2026-11-23"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Mother's Recipe Tamarind Date Chutney",
+      "pack": "200 g",
+      "priceMinInr": 67,
+      "priceMaxInr": 67,
+      "observedOn": "2026-11-23"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Kissan Khatti Meethi Imli Khajoor Chutney",
+      "pack": "200 g",
+      "priceMinInr": 75,
+      "priceMaxInr": 75,
+      "observedOn": "2026-11-23"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Kissan Khatti Meethi Imli Khajoor Chutney doy",
+      "pack": "200 g",
+      "priceMinInr": 66,
+      "priceMaxInr": 66,
+      "observedOn": "2026-11-23"
+    }
+  ],
   "usedIn": [
     {
       "dishNumber": 66,
@@ -258,11 +299,15 @@
     {
       "date": "2026-10-21",
       "file": "FitPlate_Ingredients_2026-10-21.md"
+    },
+    {
+      "date": "2026-11-23",
+      "file": "FitPlate_Ingredients_2026-11-23.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",

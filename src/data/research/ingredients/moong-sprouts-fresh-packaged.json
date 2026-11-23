@@ -15,33 +15,42 @@
         "avg": 235,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-21.md"
+      },
+      {
+        "date": "2026-11-23",
+        "min": 200,
+        "max": 325,
+        "avg": 265,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-23.md"
       }
     ],
     "currentEstimate": {
-      "min": 200,
-      "max": 270,
-      "avg": 235
+      "min": 215,
+      "max": 295,
+      "avg": 255
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-21",
+    "lastObserved": "2026-11-23",
     "stale": false,
     "seasonal": false,
-    "listingCount": 5,
+    "listingCount": 2,
     "platforms": [
       "BigBasket"
     ],
     "outOfStock": false,
     "confirmed": false,
     "checkNotes": [
+      "only 2 listings back the range (need 3)",
       "only 1 platform (BigBasket) backs the range"
     ]
   },
   "per100Estimate": {
-    "min": 20,
-    "max": 27,
-    "avg": 23.5
+    "min": 21.5,
+    "max": 29.5,
+    "avg": 25.5
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -243,17 +252,21 @@
       "dishNumber": 66,
       "quantity": 105,
       "unit": "g",
-      "raw": "about 105 g sprouted (from 40 g dry whole green moong; about 1 cup), boiled about 5 minutes"
+      "raw": "about 105 g sprouted (from 40 g dry whole green moong), about 1 cup, boiled about 5 minutes"
     }
   ],
   "versions": [
     {
       "date": "2026-10-21",
       "file": "FitPlate_Ingredients_2026-10-21.md"
+    },
+    {
+      "date": "2026-11-23",
+      "file": "FitPlate_Ingredients_2026-11-23.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (wma)",
     "macrosPer100Estimate": "stable (none)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
@@ -265,6 +278,6 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 180.0–325.0 was wider than 30% of avg 235.0; narrowed to ±15%."
+    "Range 193.6–325.0 was wider than 30% of avg 255.5; narrowed to ±15%."
   ]
 }

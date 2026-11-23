@@ -5,7 +5,8 @@
   "cuisine": "Maharashtrian / Mumbai (batata bhaji with puri; Udupi-restaurant and home breakfast across Mumbai, also a railway-platform snack in central India)",
   "dietType": "veg",
   "mealType": [
-    "breakfast"
+    "breakfast",
+    "lunch"
   ],
   "difficulty": "Intermediate",
   "prepMin": 25,
@@ -526,27 +527,36 @@
           "avg": 146,
           "confidence": null,
           "sourceFile": "FitPlate_Dishes_2026-10-16.md"
+        },
+        {
+          "date": "2026-11-23",
+          "min": 110,
+          "max": 280,
+          "avg": 171,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-11-23.md"
         }
       ],
       "currentEstimate": {
-        "min": 120,
-        "max": 170,
-        "avg": 150
+        "min": 140,
+        "max": 190,
+        "avg": 160
       },
-      "method": "single",
+      "method": "wma",
       "trend": "unknown",
       "change30dPct": null,
-      "lastObserved": "2026-10-16",
+      "lastObserved": "2026-11-23",
       "stale": false,
       "seasonal": false,
-      "listingCount": 5,
+      "listingCount": 7,
       "platforms": [
-        "magicpin",
         "Swiggy"
       ],
       "outOfStock": false,
-      "confirmed": true,
-      "checkNotes": []
+      "confirmed": false,
+      "checkNotes": [
+        "only 1 platform (Swiggy) backs the range"
+      ]
     },
     "nutrition": {
       "calories": {
@@ -586,27 +596,36 @@
         "avg": 146,
         "confidence": null,
         "sourceFile": "FitPlate_Dishes_2026-10-16.md"
+      },
+      {
+        "date": "2026-11-23",
+        "min": 110,
+        "max": 280,
+        "avg": 171,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-11-23.md"
       }
     ],
     "currentEstimate": {
-      "min": 120,
-      "max": 170,
-      "avg": 150
+      "min": 140,
+      "max": 190,
+      "avg": 160
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-16",
+    "lastObserved": "2026-11-23",
     "stale": false,
     "seasonal": false,
-    "listingCount": 5,
+    "listingCount": 7,
     "platforms": [
-      "magicpin",
       "Swiggy"
     ],
     "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "confirmed": false,
+    "checkNotes": [
+      "only 1 platform (Swiggy) backs the range"
+    ]
   },
   "healthiness": {
     "score": 5,
@@ -666,7 +685,19 @@
     "Zomato, Puri Bhaji in Mumbai and Puri Sabji in Mumbai dish pages (cost for two only): https://www.zomato.com/mumbai/restaurants/dish-puri-bhaji ; https://www.zomato.com/mumbai/restaurants/dish-puri-sabji",
     "myyshopp, Khaugalli Street Food Junction, Goregaon East (₹70 per set; context): https://www.myyshopp.com/ITEM-172500-PuriBhaji--KhaugalliStreetFoodJunction-1Set",
     "Bhavana Foods, Navi Mumbai (₹60, 5 puris + bhaji; dated; context): https://bhavana-foods.ueniweb.com/products/available-items/puri-bhaji-26658795",
-    "FoodiaQ, Puri Bhaji (₹210, 250 g bhaji + 4 puris; context): https://www.foodiaq.com/product/puri-bhaji-5/"
+    "FoodiaQ, Puri Bhaji (₹210, 250 g bhaji + 4 puris; context): https://www.foodiaq.com/product/puri-bhaji-5/",
+    "Swiggy, Best Poori (Breakfast) restaurants in Mumbai (Dabba Garam ₹109, Saoji's Kitchen ₹135, Amar Juice Center ₹160, Khichdi Express ₹209): https://www.swiggy.com/city/mumbai/poori-breakfast--dish-restaurants",
+    "Swiggy, Khamanng Katta, Borivali (Puri Bhaji 4 Pcs ₹135): https://swiggy.com/city/mumbai/khamanng-katta-borivali-mandapeshwar-opp-hcg-hospital-rest805468",
+    "Swiggy, Aai Shappath Marathi Pure Veg, Mulund (Poori Bhaji ₹170): https://www.swiggy.com/city/mumbai/aai-shappath-marathi-pure-veg-mulund-rest1059625",
+    "Swiggy, Mumbai pure-veg dish page (Punjabi Puttar Puri Bhaji (Pure Ghee) ₹280): https://www.swiggy.com/city/mumbai/pure-veg-dish-restaurants",
+    "Swiggy, Udupi Xpress, Kharghar (₹179 / ₹189; MMR): https://www.swiggy.com/city/mumbai/udupi-xpress-kharghar-rest1169778",
+    "Swiggy, Ganesh Bhuvan, Panchpakhadi, Thane (₹85; MMR): https://www.swiggy.com/city/mumbai/ganesh-bhuvan-thane-panchpakhadi-thane-panchpakadi-rest450435",
+    "Swiggy, Tasty Kitchen, Dombivli (₹298; MMR): https://www.swiggy.com/city/mumbai/tasty-kitchen-shashtri-nagar-dombivli-rest1180779",
+    "Swiggy, Poori Chowk, Kalwa (combo/aloo poori; context): https://www.swiggy.com/city/mumbai/poori-chowk-kalwa-rest1354954",
+    "Swiggy, Gopalas Veg Kitchen, Kanjurmarg (rajgira puri bhaji ₹199; context): https://swiggy.com/city/mumbai/gopalas-veg-kitchen-kanjurmarg-west-bhandup-west-rest27633",
+    "Zomato, Best Puri Sabji Delivery Restaurants in Mumbai and outlet pages (no puri bhaji price visible): https://www.zomato.com/mumbai/delivery?dish=puri-sabji&dish_id=1152 ; https://www.zomato.com/mumbai/pancham-puriwala-fort/order ; https://www.zomato.com/mumbai/balaji-restaurant-hill-road-bandra-west/order",
+    "Dated magicpin prices from 2026-10-16 (not re-found): Hotel Udupi Oshiwara https://magicpin.in/Mumbai/Oshiwara/Restaurant/Hotel-Udupi/store/1543379/menu ; Udupi 2 Mumbai Dadar East https://magicpin.in/Mumbai/Dadar-East/Restaurant/Udupi-2-Mumbai/store/155a832/delivery ; Udupi 2 Mumbai Kopar Khairane https://magicpin.in/Navi-Mumbai/Sector-4a/Restaurant/Udupi-2-Mumbai/store/a33408 ; Udupi Shree Annapurna Dombivli https://magicpin.in/Mumbai/Dombivali/Restaurant/Udupi-Shree-Annapurna/store/1661137/menu ; Thambbi Thane https://magicpin.in/Thane/Panch-Pakhadi/Restaurant/Thambbi/store/c13b0/menu",
+    "Context from the previous version (not re-checked): Haldiram's Bangalore https://www.swiggy.com/menu/1076900 ; Khaugalli https://www.myyshopp.com/ITEM-172500-PuriBhaji--KhaugalliStreetFoodJunction-1Set ; FoodiaQ https://www.foodiaq.com/product/puri-bhaji-5/"
   ],
   "allergens": [
     "peanut",
@@ -737,6 +768,7 @@
     "Contains gluten",
     "Contains mustard",
     "Breakfast",
+    "Lunch",
     "Maharashtrian",
     "Under 60 min",
     "Intermediate",
@@ -765,17 +797,22 @@
   "needsReview": [
     "Jain \"with-changes\" but the recipe keeps onion, potato, fresh ginger and the line doesn't say to skip them",
     "Navratri \"with-changes\" but the recipe has grain, onion with no skip",
-    "Ekadashi \"with-changes\" but the recipe has grain, onion with no skip"
+    "Ekadashi \"with-changes\" but the recipe has grain, onion with no skip",
+    "price not confirmed (2026-11-23): only 1 platform (Swiggy) backs the range"
   ],
   "versions": [
     {
       "date": "2026-10-16",
       "file": "FitPlate_Dishes_2026-10-16.md"
+    },
+    {
+      "date": "2026-11-23",
+      "file": "FitPlate_Dishes_2026-11-23.md"
     }
   ],
   "mergeMethod": {
-    "nutritionPerServing": "stable (single)",
-    "orderPrice": "price engine (single)",
+    "nutritionPerServing": "stable (mean-2)",
+    "orderPrice": "price engine (wma)",
     "ingredients": "newest",
     "steps": "newest",
     "healthiness": "newest",
@@ -785,7 +822,8 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 110.0–210.0 was wider than 30% of avg 146.0; narrowed to ±15%.",
-    "2026-10-16: hing: compounded hing usually contains wheat flour"
+    "Range 110.0–259.4 was wider than 30% of avg 163.7; narrowed to ±15%.",
+    "2026-10-16: hing: compounded hing usually contains wheat flour",
+    "2026-11-23: hing: compounded hing usually contains wheat flour"
   ]
 }

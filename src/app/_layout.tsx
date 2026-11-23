@@ -8,6 +8,7 @@ import { useServerResearch } from '../lib/researchLoader';
 import { loadAiDishes } from '../services/ai/store';
 import { syncSharedDishes } from '../services/ai/shared';
 import { AiJobBar } from '../components/AiJobBar';
+import { ErrorScreen } from '../components/ErrorScreen';
 import { StoreProvider } from '../lib/store';
 import { colors } from '../theme';
 
@@ -60,4 +61,9 @@ export default function RootLayout() {
       </StoreProvider>
     </GestureHandlerRootView>
   );
+}
+
+/** expo-router shows this when any screen throws, instead of a blank page. */
+export function ErrorBoundary({ retry }: { error: Error; retry: () => Promise<void> }) {
+  return <ErrorScreen title="Something went wrong" body="This screen hit a problem. Your saved data is not affected. Try again, or go back to Today." retry={() => void retry()} />;
 }

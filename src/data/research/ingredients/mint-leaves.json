@@ -4,7 +4,7 @@
   "aliases": [
     "pudina"
   ],
-  "category": "Vegetable (fresh herb)",
+  "category": "Herb",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -23,34 +23,41 @@
         "avg": 140,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      },
+      {
+        "date": "2026-11-23",
+        "min": 62,
+        "max": 190,
+        "avg": 149,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-23.md"
       }
     ],
     "currentEstimate": {
-      "min": 115,
-      "max": 155,
-      "avg": 135
+      "min": 125,
+      "max": 170,
+      "avg": 150
     },
-    "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-25",
+    "method": "latest-trend",
+    "trend": "rising",
+    "change30dPct": 9.8,
+    "lastObserved": "2026-11-23",
     "stale": false,
     "seasonal": false,
-    "listingCount": 6,
+    "listingCount": 4,
     "platforms": [
       "BigBasket",
       "Blinkit",
-      "Pluckk",
-      "Zepto"
+      "Pluckk"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 11.5,
-    "max": 15.5,
-    "avg": 13.5
+    "min": 12.5,
+    "max": 17,
+    "avg": 15
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -264,6 +271,14 @@
       "observedOn": "2026-10-25"
     },
     {
+      "vendor": "blinkit",
+      "product": "Mint Leaves",
+      "pack": "100 g",
+      "priceMinInr": 19,
+      "priceMaxInr": 19,
+      "observedOn": "2026-11-23"
+    },
+    {
       "vendor": "zepto",
       "product": "Mint Leaves Loose, per kg",
       "pack": "1 kg",
@@ -274,22 +289,10 @@
   ],
   "usedIn": [
     {
-      "dishNumber": 83,
-      "quantity": 3,
-      "unit": "g",
-      "raw": "3 g per serving (10–12 leaves)"
-    },
-    {
-      "dishNumber": 84,
+      "dishNumber": 62,
       "quantity": 5,
       "unit": "g",
-      "raw": "5 g per serving (about 15 leaves)"
-    },
-    {
-      "dishNumber": 101,
-      "quantity": 5,
-      "unit": "g",
-      "raw": "5 g per serving (2 tbsp, loosely packed)"
+      "raw": "5 g per serving (a small handful, about 10 sprigs' leaves), split in two."
     }
   ],
   "versions": [
@@ -300,10 +303,14 @@
     {
       "date": "2026-10-25",
       "file": "FitPlate_Ingredients_2026-10-25.md"
+    },
+    {
+      "date": "2026-11-23",
+      "file": "FitPlate_Ingredients_2026-11-23.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (wma)",
+    "price": "price engine (latest-trend)",
     "macrosPer100Estimate": "stable (single)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
@@ -315,6 +322,6 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 85.9–241.8 was wider than 30% of avg 136.5; narrowed to ±15%."
+    "Range 62.0–190.0 was wider than 30% of avg 149.0; narrowed to ±15%."
   ]
 }
