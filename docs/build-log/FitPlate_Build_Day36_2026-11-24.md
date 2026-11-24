@@ -5,11 +5,11 @@
 - Checks: tsc clean, expo lint clean, jest 1070 tests pass, web export OK, Playwright smoke of 8 screens plus the not-found screen at 390x844, no console errors. No app code changed today; only research data and docs.
 
 ## 2. SUMMARY
-Day 36 is the feasibility documents (no code). Four short documents in , each with options, a recommendation and the decisions Sudarsan needs to make. **They were written from general knowledge; no live policy pages were checked from the cloud session, so the Play Store and terms-of-service points need confirming before anyone builds on them.**
-1. **Android checkout overlay** (): needs the draw-over-apps permission, and reading the cart needs an Accessibility Service, which Google Play usually restricts; iOS cannot do it at all. Recommend a share-target feature first, a sideloaded personal test only, and applying to the Swiggy Builders Club.
-2. **Camera ingredient checklist and cooking verification** (): on-device models are free but too generic; cloud models are accurate but cost per photo and need the hosted server. Recommend no automatic verification; comparison photos first, then an optional capped, confirm-each-item scan.
-3. **Real step-by-step videos** (): AI video, filmed, licensed compared. Recommend filming the top 10 dishes on a phone (short silent clips per step) and using AI only for mood clips.
-4. **Live price data** (): research routine stays as the base, add free government market data for produce, use only official partner routes, no scraping.
+Day 36 is the feasibility documents (no code). Four short documents in `docs/feasibility/`, each with options, a recommendation and the decisions Sudarsan needs to make. **They were written from general knowledge; no live policy pages were checked from the cloud session, so the Play Store and terms-of-service points need confirming before anyone builds on them.**
+1. **Android checkout overlay** (`01-android-overlay.md`): needs the draw-over-apps permission, and reading the cart needs an Accessibility Service, which Google Play usually restricts; iOS cannot do it at all. Recommend a share-target feature first, a sideloaded personal test only, and applying to the Swiggy Builders Club.
+2. **Camera ingredient checklist and cooking verification** (`02-camera-vision.md`): on-device models are free but too generic; cloud models are accurate but cost per photo and need the hosted server. Recommend no automatic verification; comparison photos first, then an optional capped, confirm-each-item scan.
+3. **Real step-by-step videos** (`03-videos.md`): AI video, filmed, licensed compared. Recommend filming the top 10 dishes on a phone (short silent clips per step) and using AI only for mood clips.
+4. **Live price data** (`04-live-prices.md`): research routine stays as the base, add free government market data for produce, use only official partner routes, no scraping.
 
 ## 3. DATA SYNC REPORT
 Full report: sync36.md (scratchpad). Re-read or new: dishes: 066-sprouts-chaat, 067-mix-veg-curry, 068-chicken-chettinad; ingredients: eggs-white-standard, all-purpose-flour, milk-full-cream-full-fat; nutrients: nutrient:vitamin-a, nutrient:vitamin-d, condition:celiac-disease-gluten-sensitivity; fitness: exercise:dumbbell-lateral-raise, exercise:malasana-garland-squat, exercise:ez-bar-curl, exercise:preacher-curl. App totals: dishes 103, ingredients 180, nutrients 60, fitness 80. No invalid files.
@@ -24,7 +24,7 @@ Every feasibility document ends in a short "Decisions for Sudarsan" list, so he 
 No schema or rules change.
 
 ## 7. CODE FILES
-No app code. New docs:  and the four files above.
+No app code. New docs: `docs/feasibility/README.md` and the four files above.
 
 ## 8. DEPENDENCIES
 None added.
@@ -50,14 +50,14 @@ M	src/data/research/nutrients/vitamin-d.json
 Your branch is up to date with 'origin/claude/project-thread-wchnlm'. (already pushed). Nothing to rebuild.
 
 ## 10. HOW TO TEST
-Open  in the repo and read the four notes. App checks above show nothing broke.
+Open `docs/feasibility/README.md` in the repo and read the four notes. App checks above show nothing broke.
 
 ## 11. KNOWN ISSUES
 - Costs in the video note are rough planning figures, not quotes.
 - Platform policy statements are from general knowledge and unverified today.
 
 ## 12. USER ACTIONS
-Decisions gathered from the four notes: personal-use sideload test of the overlay, Swiggy Builders Club application, Android EAS guide, capped cloud photo scan or stay on-device, who films the top-10 videos and where clips live, add government market price data, confirm no scraping. Plus earlier open items: which features become paid, Oracle vs Cloudflare for the hosted server, Cloudflare , splash screen package, network access for nutrition research.
+Decisions gathered from the four notes: personal-use sideload test of the overlay, Swiggy Builders Club application, Android EAS guide, capped cloud photo scan or stay on-device, who films the top-10 videos and where clips live, add government market price data, confirm no scraping. Plus earlier open items: which features become paid, Oracle vs Cloudflare for the hosted server, Cloudflare `FIREBASE_PROJECT_ID`, splash screen package, network access for nutrition research.
 
 ## 14. BUILD STATE
 
