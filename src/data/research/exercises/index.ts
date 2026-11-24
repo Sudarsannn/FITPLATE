@@ -25,9 +25,11 @@ import item_desk_neck_shoulder_release from './desk-neck-shoulder-release.json';
 import item_dip_station from './dip-station.json';
 import item_dumbbell_bicep_curl_hammer_curl from './dumbbell-bicep-curl-hammer-curl.json';
 import item_dumbbell_goblet_squat from './dumbbell-goblet-squat.json';
+import item_dumbbell_lateral_raise from './dumbbell-lateral-raise.json';
 import item_dumbbell_romanian_deadlift from './dumbbell-romanian-deadlift.json';
 import item_dumbbell_shoulder_press from './dumbbell-shoulder-press.json';
 import item_elliptical_cross_trainer from './elliptical-cross-trainer.json';
+import item_ez_bar_curl from './ez-bar-curl.json';
 import item_figure_4_glute_stretch from './figure-4-glute-stretch.json';
 import item_glute_bridge from './glute-bridge.json';
 import item_hack_squat_machine from './hack-squat-machine.json';
@@ -42,11 +44,13 @@ import item_lateral_raise_cable_dumbbell from './lateral-raise-cable-dumbbell.js
 import item_leg_curl from './leg-curl.json';
 import item_leg_extension_machine from './leg-extension-machine.json';
 import item_leg_press from './leg-press.json';
+import item_malasana_garland_squat from './malasana-garland-squat.json';
 import item_mountain_climbers from './mountain-climbers.json';
 import item_one_arm_dumbbell_row from './one-arm-dumbbell-row.json';
 import item_paschimottanasana_seated_forward_bend from './paschimottanasana-seated-forward-bend.json';
 import item_pec_deck from './pec-deck.json';
 import item_plank_and_side_plank from './plank-and-side-plank.json';
+import item_preacher_curl from './preacher-curl.json';
 import item_pull_up_bar from './pull-up-bar.json';
 import item_push_up from './push-up.json';
 import item_quad_and_calf_stretch from './quad-and-calf-stretch.json';
@@ -99,9 +103,11 @@ export const items: Exercise[] = [
   item_dip_station as unknown as Exercise,
   item_dumbbell_bicep_curl_hammer_curl as unknown as Exercise,
   item_dumbbell_goblet_squat as unknown as Exercise,
+  item_dumbbell_lateral_raise as unknown as Exercise,
   item_dumbbell_romanian_deadlift as unknown as Exercise,
   item_dumbbell_shoulder_press as unknown as Exercise,
   item_elliptical_cross_trainer as unknown as Exercise,
+  item_ez_bar_curl as unknown as Exercise,
   item_figure_4_glute_stretch as unknown as Exercise,
   item_glute_bridge as unknown as Exercise,
   item_hack_squat_machine as unknown as Exercise,
@@ -116,11 +122,13 @@ export const items: Exercise[] = [
   item_leg_curl as unknown as Exercise,
   item_leg_extension_machine as unknown as Exercise,
   item_leg_press as unknown as Exercise,
+  item_malasana_garland_squat as unknown as Exercise,
   item_mountain_climbers as unknown as Exercise,
   item_one_arm_dumbbell_row as unknown as Exercise,
   item_paschimottanasana_seated_forward_bend as unknown as Exercise,
   item_pec_deck as unknown as Exercise,
   item_plank_and_side_plank as unknown as Exercise,
+  item_preacher_curl as unknown as Exercise,
   item_pull_up_bar as unknown as Exercise,
   item_push_up as unknown as Exercise,
   item_quad_and_calf_stretch as unknown as Exercise,

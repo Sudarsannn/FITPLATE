@@ -1,0 +1,651 @@
+{
+  "id": "dumbbell-lateral-raise",
+  "number": 20,
+  "name": "Dumbbell lateral raise",
+  "otherNames": [
+    "Side raise",
+    "Lateral deltoid raise",
+    "Dumbbell side raise",
+    "Standing lateral raise",
+    "Seated lateral raise",
+    "Water-bottle side raise",
+    "Rucksack raise",
+    "Band-under-foot lateral raise (no-equipment alternative)"
+  ],
+  "section": "home",
+  "type": "strength",
+  "equipment": [
+    "pair of light dumbbells",
+    "optional chair with firm upright back",
+    "non-slip exercise mat"
+  ],
+  "noEquipmentAlternative": "Two filled 500 ml to 1 litre plastic water bottles held one in each hand, thumbs forward; or a light rucksack held by its straps; or a light resistance band looped under one foot.",
+  "musclesPrimary": [
+    "medial deltoid",
+    "supraspinatus"
+  ],
+  "musclesSecondary": [
+    "anterior deltoid",
+    "posterior deltoid",
+    "upper trapezius",
+    "serratus anterior",
+    "middle trapezius",
+    "lower trapezius",
+    "rotator cuff",
+    "forearm flexors",
+    "grip muscles",
+    "rectus abdominis",
+    "obliques",
+    "erector spinae",
+    "gluteus maximus"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 3.5,
+  "compendiumCode": "02054",
+  "metOptions": [
+    {
+      "code": "02054",
+      "met": 3.5,
+      "activity": "MET: 3.5, Compendium code 02054, \"resistance (weight) training, multiple exercises, 8-15 repetitions at varied resistance\" (2024 Adult Compendium of Physical Activities, conditioning-exercise table; v"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "10-12 slow reps, thumbs forward, standing or seated, RPE 5-6 with 3-4 reps in reserve",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "2 s up, 1 s hold, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 3,
+      "reps": "12 slow reps, RPE 5-6, paired with walking or a cardio block",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2 s up, 1 s hold, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "12-15 reps, 3 reps in reserve",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "2 s up, 1 s hold, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "strength",
+      "sets": 3,
+      "reps": "8-10 reps with a slightly heavier weight, 2-3 reps in reserve, clean form",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "2 s up, 1 s hold, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 2,
+      "reps": "15 light reps, 3-4 reps in reserve",
+      "timeSec": null,
+      "restSec": 50,
+      "tempo": "2 s up, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "10-15 reps, standing, 1-3 reps in reserve",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2 s up, 1 s hold, 3 s down",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": 4,
+      "reps": "6-10 heavy strict reps, 0-2 reps in reserve",
+      "timeSec": null,
+      "restSec": 120,
+      "tempo": "2 s up, 1 s hold, 3 s down",
+      "perWeek": 2
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "front",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "bottom_shoulder",
+        "joint": "shoulder (hip-shoulder-elbow)",
+        "angleDeg": "<= 25",
+        "parsed": {
+          "op": "<=",
+          "value": 25,
+          "max": null
+        }
+      },
+      {
+        "name": "top_shoulder_min",
+        "joint": "shoulder (hip-shoulder-elbow)",
+        "angleDeg": ">= 75",
+        "parsed": {
+          "op": ">=",
+          "value": 75,
+          "max": null
+        }
+      },
+      {
+        "name": "top_shoulder_max",
+        "joint": "shoulder (hip-shoulder-elbow)",
+        "angleDeg": "<= 100",
+        "parsed": {
+          "op": "<=",
+          "value": 100,
+          "max": null
+        }
+      },
+      {
+        "name": "elbow_bend",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": ">= 140",
+        "parsed": {
+          "op": ">=",
+          "value": 140,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 3
+  },
+  "formChecks": [
+    {
+      "joint": "shoulder",
+      "rule": "shoulder angle > 25 degrees at the bottom (equals bottom_shoulder phase threshold)",
+      "message": "Lower your arms to your sides"
+    },
+    {
+      "joint": "shoulder",
+      "rule": "shoulder angle < 75 degrees at the top (equals top_shoulder_min phase threshold)",
+      "message": "Lift your elbows to shoulder height"
+    },
+    {
+      "joint": "shoulder",
+      "rule": "shoulder angle > 100 degrees at the top (equals top_shoulder_max phase threshold)",
+      "message": "Too high: stop at shoulder height"
+    },
+    {
+      "joint": "elbow",
+      "rule": "elbow angle < 140 degrees during the raise (equals elbow_bend phase threshold)",
+      "message": "Keep a soft, slight bend in your elbows"
+    },
+    {
+      "joint": "trunk",
+      "rule": "trunk swing flag: shoulder landmark moves more than the set margin relative to the hip landmark in the side view (position flag, not an angle)",
+      "message": "Don't swing: keep your body still"
+    },
+    {
+      "joint": "shoulders",
+      "rule": "shrug flag: shoulder rises toward the ear by more than the set margin (position flag, not an angle)",
+      "message": "Shoulders down, away from your ears"
+    },
+    {
+      "joint": "elbows",
+      "rule": "asymmetry flag: one elbow finishes higher than the other at the top by more than the set margin in the front view (position flag, not an angle)",
+      "message": "Lift both arms evenly"
+    },
+    {
+      "joint": "shoulder",
+      "rule": "rep shorter than 3 s (rushing)",
+      "message": "Slow down: 3 seconds to lower"
+    }
+  ],
+  "safetyFlags": [
+    "stop_at_shoulder_height_do_not_go_higher",
+    "thumbs_forward_and_arms_slightly_in_front_of_body",
+    "no_swinging_trunk_back_near_wall_or_seated",
+    "no_shrugging_shoulders_down",
+    "slight_elbow_bend_not_locked",
+    "controlled_3s_lowering_no_dropping",
+    "very_light_weight_3_to_4_reps_in_reserve_for_beginners",
+    "do_not_hold_breath_breathe_out_on_lift",
+    "set_weights_down_gently_on_mat_or_towel",
+    "no_glass_bottles",
+    "shoulder_problems_pain_free_range_ask_physiotherapist",
+    "hypertension_very_light_no_breath_holding",
+    "heart_disease_ask_doctor_first",
+    "lower_back_pain_seated_or_back_near_wall",
+    "osteoporosis_ask_doctor",
+    "pregnancy_ask_obstetrician_seated_light",
+    "postpartum_ask_physiotherapist_first",
+    "recent_surgery_get_approval",
+    "stop_with_chest_pain_dizziness_or_shoulder_pinching_or_sharp_pain"
+  ],
+  "progressions": [
+    "standing raise with a heavier weight and 1-3 reps in reserve",
+    "slower 4 s lowering or a 1-2 s pause at the top, then the next weight when 15 reps are clean",
+    "band-under-foot raise; in a gym cable lateral raise (Gym 34), rear-delt machine (Gym 35) or shoulder press machine (Gym 33)"
+  ],
+  "regressions": [
+    "seated raise with very light weights or part-filled bottles and a short range",
+    "one arm at a time with the other hand on a wall or chair for balance",
+    "isometric hold at about 45 degrees with empty hands or a bottle at RPE 4-5"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "front, chest height, 3 m",
+      "shows": "setup: stance, weights at the sides, thumbs forward, soft elbows",
+      "textOverlay": "Feet hip-width. Soft elbows."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, chest height, 3 m",
+      "shows": "start position and plane: arms slightly in front of the body line",
+      "textOverlay": "Lift a little in front of you."
+    },
+    {
+      "seconds": 10,
+      "angle": "front, chest height, 3 m",
+      "shows": "full rep: elbows lead up to shoulder height, hold, lower in 3",
+      "textOverlay": "Up in 2. Down in 3."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, chest height, 3 m",
+      "shows": "shrug fault versus shoulders down",
+      "textOverlay": "Shoulders away from your ears."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, chest height, 3 m",
+      "shows": "swing fault versus still trunk",
+      "textOverlay": "No swinging. Body stays still."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, chest height, 3 m",
+      "shows": "too high versus stop at shoulder height",
+      "textOverlay": "Stop at shoulder height."
+    },
+    {
+      "seconds": 8,
+      "angle": "front-three-quarter, chest height, 3 m",
+      "shows": "seated version with two water bottles",
+      "textOverlay": "No dumbbells? Use water bottles."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, floor height, 3 m",
+      "shows": "quiet set-down onto a towel with a 3 s count",
+      "textOverlay": "Set them down softly."
+    }
+  ],
+  "lastResearched": "2026-11-24",
+  "setupSteps": [
+    "Pick the version. *Standing:* feet hip-width, knees soft, back near a wall if you tend to rock. *Seated:* a firm upright chair with a back, feet flat, sit tall. A seat takes the legs out of the move and makes it harder to rock (coaching view, snippets). *No equipment:* bottles, rucksack or band in the same positions.",
+    "Floor. Non-slip mat on a flat spot; a folded towel beside you to set the weights on. Clear a 1.2 m wide space with nothing the elbows can hit.",
+    "Pick up the weights safely. Bend knees and hips, keep the back flat, lift them to your sides. Do not rock them up with the back.",
+    "Starting position. Arms hanging at the sides (or in front of the thighs), elbows slightly bent (about 10-30 degrees of bend per ExRx, snippet), not locked.",
+    "Grip and turn. Palms facing the thighs (neutral, thumbs forward) is the recommended first version for beginners. Palms down is the common standard (several guides, snippets); one guide suggests thumbs-up if palms-down feels poor (snippet). One coach argues the thumb should end slightly higher than the little finger (Stoppani, snippet, a coaching view). FitPlate default: thumbs forward, little turning.",
+    "Plane. Raise the arms about 20-30 degrees in front of the body line, not straight out to the side (scapular plane; several coaches and clinical tests use it, snippets).",
+    "Brace. Ribs down, glutes lightly tight, tummy tight, shoulders down and slightly back, chin level.",
+    "Choose the weight. The lightest weight that lets you do 12 slow reps with 3-4 in the tank (section 7). Many beginners need very little (a bottle is fine).",
+    "Camera. Phone in landscape at about chest height (110-130 cm, est.), 2.5-3 m away, filming the front of the body with both arms in frame.",
+    "Warm up 3-5 minutes (est.): march on the spot, arm circles, shoulder rolls, and one set of 8 reps with empty hands."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Stand tall with the weights at your sides",
+      "action": "Stand with feet hip-width, weights hanging at your sides, thumbs forward.",
+      "feel": "Weight in both hands, whole foot on the floor.",
+      "breathing": "Breathe in and out normally.",
+      "tempo": null,
+      "visualCheck": "Front: shoulders level, arms by the sides. Side: ear, shoulder and hip in a line."
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Soften the elbows and brace",
+      "action": "Bend the elbows very slightly and hold that bend, then brace the tummy and press the shoulders down.",
+      "feel": "Shoulders low, away from the ears; tummy tight.",
+      "breathing": "Breathe in.",
+      "tempo": null,
+      "visualCheck": "Front: shoulder-to-ear gap clear; elbows very slightly bent."
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Start the raise with the elbows",
+      "action": "Lift the elbows out and slightly forward; the weights follow. Let the elbows lead the move (Experience Life, eatthis, snippets).",
+      "feel": "The side of the shoulder starting to work; no pull in the neck.",
+      "breathing": "Breathe out as you lift.",
+      "tempo": null,
+      "visualCheck": "Front: arms rise evenly; hands stay slightly below the elbows."
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Stop at shoulder height",
+      "action": "Stop when the elbows reach about shoulder height (hip-shoulder-elbow angle about 80-90 degrees, est.); do not go higher.",
+      "feel": "A tight side of the shoulder, no pinching.",
+      "breathing": "Hold the out-breath briefly.",
+      "tempo": null,
+      "visualCheck": "Front: elbows level with the shoulders; arms look like a loose \"T\"; shoulders not shrugged. Side: arms slightly in front of the body line."
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Lower slowly",
+      "action": "Lower the elbows back toward the body in a controlled way.",
+      "feel": "The side shoulder lengthening under control, no dropping.",
+      "breathing": "Breathe in.",
+      "tempo": null,
+      "visualCheck": "Front: both arms lower at the same speed along the same path."
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Reach the bottom with relaxed arms",
+      "action": "Let the weights come to the sides, then pause before the next rep. Do not bounce or let the weights hit the thighs.",
+      "feel": "A small pause with the arms hanging.",
+      "breathing": "Normal.",
+      "tempo": null,
+      "visualCheck": "Front: hip-shoulder-elbow angle back to about 25 degrees or less (est.)."
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Repeat for 10-12 reps",
+      "action": "Repeat from step 3 with the same range each rep.",
+      "feel": "Even effort in both shoulders.",
+      "breathing": "Out on the lift, in on the lowering.",
+      "tempo": null,
+      "visualCheck": "Both arms follow the same path and height."
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Set the weights down safely",
+      "action": "Bend the knees and hips with a flat back and set the weights on the mat or towel with a 2-3 s count.",
+      "feel": "Controlled legs, no back rounding.",
+      "breathing": "Breathe out.",
+      "tempo": null,
+      "visualCheck": "Side: back flat; the only sound is a soft touch."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Swinging the body (momentum)",
+      "text": "Swinging the body (momentum). Why: the work moves to the trunk and upper trapezius, and a heavy weight is the usual cause (Peloton, Yahoo/AOL and T3 snippets). Fix: lighter weight, seated or back near a wall, 3 s lowering."
+    },
+    {
+      "title": "Shrugging",
+      "text": "Shrugging. Why: the upper trapezius takes over from the side shoulder (several snippets; the Coratella study shows upper trapezius activity changes with arm rotation). Fix: shoulders down, think \"elbows out, shoulders away from the ears\"."
+    },
+    {
+      "title": "Raising above shoulder height",
+      "text": "Raising above shoulder height. Why: sources warn against elbows well above shoulder level (several snippets), and Kolber et al. linked it with impingement signs. Fix: stop when the elbows reach shoulder height."
+    },
+    {
+      "title": "Hands higher than the elbows (\"pouring a jug\")",
+      "text": "Hands higher than the elbows (\"pouring a jug\"). Why: turns the arm inward and loads the upper trapezius and front of the shoulder (Coratella, Stoppani, snippets). Fix: thumbs forward and let the elbows lead."
+    },
+    {
+      "title": "Locking the elbows straight",
+      "text": "Locking the elbows straight. Why: jolts the elbow and lengthens the load lever. Fix: keep a slight bend (10-30 deg per ExRx) throughout."
+    },
+    {
+      "title": "Raising straight sideways with force, with a locked or jammed shoulder",
+      "text": "Raising straight sideways with force, with a locked or jammed shoulder. Why: coaches prefer the scapular plane, about 20-30 degrees in front, for comfort (snippets; a clinical test uses it with thumbs up to reduce pain). Fix: raise a little in front of the body."
+    },
+    {
+      "title": "Weight too heavy",
+      "text": "Weight too heavy. Why: causes most of the above. Fix: choose by 3-4 reps in reserve (section 7); a bottle is a normal starting weight."
+    },
+    {
+      "title": "Dropping the weights fast",
+      "text": "Dropping the weights fast. Why: loses half the work and jerks the shoulder. Fix: 3 s down."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. Why: raises blood pressure and brings dizziness (PubMed 7741618, carried). Fix: out on the lift, in on the lowering."
+    },
+    {
+      "title": "Dropping dumbbells on the floor",
+      "text": "Dropping dumbbells on the floor. Why: noise for neighbours below and risk to feet. Fix: lower with a 2-3 s count onto a mat."
+    }
+  ],
+  "safetyNotes": [
+    "Shoulder problems (impingement, rotator cuff, instability): Kolber et al. linked lateral raises above 90 degrees with impingement signs in weight trainers (snippet; association only). A fluoroscopy study found the subacromial space narrowest at lower elevation angles (snippet), so stopping at shoulder height does not remove the risk. Use thumbs forward, the scapular plane, a pain-free range, and stop if you feel pinching or pain in the shoulder; ask a physiotherapist. Harvard Health's impingement page (snippet) lists rest and physio as first-line care.",
+    "High blood pressure and heart disease: breathe out on the lift, never hold the breath, very light weight; arms above the heart raise blood-pressure load (coaching view, not sourced); get clearance first with heart disease or uncontrolled blood pressure.",
+    "Lower back problems: use the seated version or stand with the back near a wall, no leaning or rocking.",
+    "Neck pain or trapezius tension: shrugging overloads the neck; use very light weight and a short range.",
+    "Osteoporosis: loaded strength work is generally recommended; the raise itself loads the spine very little if the trunk stays still; with a vertebral fracture or severe osteoporosis ask a clinician.",
+    "Pregnancy and postpartum: a light seated raise is generally treated as low risk in uncomplicated pregnancy (PMC11193983 resistance training in pregnancy, carried; snippet), but ask your obstetrician, midwife or women's health physiotherapist; stop with dizziness, headache, pain, leaking or pelvic heaviness. ACOG's own wording: Not found.",
+    "Mumbai flat: mat under your feet, set the weights down gently, no glass bottles, keep clear of furniture, fans, windows and the balcony, and do not swing a rucksack near people."
+  ],
+  "sources": [
+    "2024 Adult Compendium of Physical Activities (Herrmann et al., J Sport Health Sci 2024): conditioning-exercise table, code 02054 (resistance training, multiple exercises, 8-15 repetitions, 3.5), moderate = 3.0-5.9 METs; older adult version separate. https://pacompendium.com/conditioning-exercise ; https://pubmed.ncbi.nlm.nih.gov/38242596/ ; https://pacompendium.com/older-adult-compendium/ (snippets)",
+    "Coratella et al. 2020, EMG of lateral raise variations and frontal raise in competitive bodybuilders (Int J Environ Res Public Health). https://pmc.ncbi.nlm.nih.gov/articles/PMC7503819 ; https://www.mdpi.com/1660-4601/17/17/6015 (snippets)",
+    "Larsen et al. 2025, dumbbell versus cable lateral raises for lateral deltoid hypertrophy (Frontiers in Physiology). https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2025.1611468/full (snippet)",
+    "Ludewig and Cook-style trapezius EMG: surface EMG of exercises for the trapezius and serratus anterior (JOSPT 2003). https://pubmed.ncbi.nlm.nih.gov/12774999/ (snippet)",
+    "Kolber et al., characteristics of shoulder impingement in the recreational weight-training population. https://pubmed.ncbi.nlm.nih.gov/24077379/ (snippet); Harvard Health, how to treat shoulder impingement. https://www.health.harvard.edu/pain/how-to-treat-shoulder-impingement (snippet)",
+    "ExRx.net dumbbell lateral raise (elbow bend 10-30 degrees; seen second-hand): https://exrx.net/WeightExercises/DeltoidLateral/DBLateralRaise",
+    "Technique, height, plane and mistakes: Peloton lateral raises; Experience Life break-it-down and get-the-most guides; MasterClass; Gymshark; RepFitness; coachweb; Nourish Move Love; T3; Yahoo/AOL; Fitbod; Fitnessvolt; Jim Stoppani; Catalyst Athletics; MSU Extension video; UNMC transcript; Muscle and Strength; Garage Gym Reviews. https://www.onepeloton.com/blog/lateral-raises ; https://experiencelife.lifetime.life/article/break-it-down-the-lateral-raise/ ; https://experiencelife.lifetime.life/article/heres-how-to-get-the-most-out-of-your-lateral-raise/ ; https://www.masterclass.com/articles/lateral-raise-guide ; https://www.gymshark.com/blog/article/how-to-do-lateral-raises ; https://repfitness.com/blogs/training/how-to-do-dumbbell-lateral-raises ; https://www.coachweb.com/exercises/shoulder-exercises/206/lateral-raises-how-do-them-and-why-you-should ; https://www.nourishmovelove.com/lateral-raises/ ; https://www.t3.com/features/three-lateral-raise-mistakes-that-are-stopping-your-shoulder-gains ; https://www.yahoo.com/lifestyle/lateral-raises-without-messing-shoulders-130000217.html ; https://fitbod.me/exercises/dumbbell-lateral-raise ; https://fitnessvolt.com/exercises/dumbbell-lateral-raise/ ; https://jimstoppani.com/training/lateral-raise ; https://catalystathletics.com/exercise/859/Leanaway-Lateral-Raise/ ; https://www.canr.msu.edu/videos/dumbbell-side-lateral-raise ; https://www.unmc.edu/cfhl/_documents/dumbbell_lateral_raise_transcript.txt ; https://www.muscleandstrength.com/exercises/dumbbell-lateral-raise.html ; https://www.garagegymreviews.com/lateral-raises ; https://www.medicinenet.com/what_do_lateral_raises_do/article.htm (snippets)",
+    "No-equipment options: topendsports lateral raise at home; fitwill bottle-weighted lateral raise; Illinois Extension side arm raises; justaveragejen water-bottle workouts; Sole Treadmills cable lateral raise alternatives; eatthis water-bottle exercises. https://www.topendsports.com/fitness/technique/lateral-raise-home.htm ; https://fitwill.app/exercise/8080/bottle-weighted-lateral-raise/ ; https://eat-move-save.extension.illinois.edu/move/exercise/side-arm-raises ; https://www.justaveragejen.com/water-bottle-workouts.html ; https://www.soletreadmills.com/blogs/news/top-3-cable-lateral-raise-alternatives-at-home ; https://www.eatthis.com/water-bottle-exercises-arm-strength-after-65/ (snippets)",
+    "Shoulder biomechanics: scapular-plane and subacromial-space studies. https://pages.uoregon.edu/biomech/obl/articles/2004_mcclure_pt.pdf ; https://doi.org/10.1016/S0268-0033(03)00047-0 ; https://bmcmusculoskeletdisord.biomedcentral.com/articles/10.1186/s12891-021-04659-x (snippets, details not seen)",
+    "Carried from earlier Home research (snippets only, not re-checked here): breathing study PubMed 7741618 https://pubmed.ncbi.nlm.nih.gov/7741618/ ; AHA recommendations https://heart.org/en/healthy-living/exercise-and-physical-activity/fitness-basics/aha-recs-for-physical-activity-in-adults ; ADA position statement https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/ and https://pmc.ncbi.nlm.nih.gov/articles/PMC2992214 ; Donnelly et al. 2009 https://pubmed.ncbi.nlm.nih.gov/19127177/ ; hypothyroidism review https://pubmed.ncbi.nlm.nih.gov/37999992/ ; asthma https://www.pharmacymagazine.co.uk/cpd-modules/making-a-difference-in-asthma-care/exercise-and-asthma-528343 and https://pubmed.ncbi.nlm.nih.gov/21811185/ ; Vanderbilt knee OA handout https://www.vumc.org/sports-medicine/sites/vumc.org.sports-medicine/files/public_files/documents/Knee_OA_ex_quad.pdf ; Harvard Health https://www.health.harvard.edu/heart-health/strength-training-and-blood-pressure ; osteoporosis https://pmc.ncbi.nlm.nih.gov/articles/PMC9304091 , https://pubmed.ncbi.nlm.nih.gov/35577538/ ; Mayo Clinic pregnancy exercises https://www.mayoclinic.org/healthy-lifestyle/pregnancy-week-by-week/in-depth/pregnancy-exercises/art-20546799 ; PMC11193983 https://pmc.ncbi.nlm.nih.gov/articles/PMC11193983 ; NHS Lothian DRAMs https://apps.nhslothian.scot/files/sites/2/DRAMs-Guidelines.pdf ; ACE HIIT for clinical populations https://www.acefitness.org/certifiednewsarticle/2589/high-intensity-interval-training-for-clinical/ ; Goom, Donnelly and Brockwell 2019 https://athleticsni.org/download/files/Returning_to_running_postnatal_guideline_for_medical_health_and_fitness_professionals_managing_this_population.05.pdf",
+    "NHS, ACE and Mayo Clinic pages on the lateral raise itself, a lateral-raise-specific joint-angle standard, an EMG comparison of grip positions, a trial of lateral raises for shoulder rehab, a reliable beginner starting weight, ACOG's own pregnancy wording, MET for rucksack or band raises and decibel data: Not found."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 28.6,
+      "70kg": 24.5,
+      "80kg": 21.4
+    },
+    "per300kcal": {
+      "60kg": 85.7,
+      "70kg": 73.5,
+      "80kg": 64.3
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "strength",
+    "muscle",
+    "general_fitness",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "short_sessions",
+    "no_gym",
+    "low_cost_equipment",
+    "small_flat",
+    "neighbours_below_with_gentle_set_down",
+    "no_overhead_clearance_needed",
+    "circuit"
+  ],
+  "swapsByAccess": {
+    "none": "Low-height bottle raise, wall slide or isometric hold; or knee push-up (Home 2) if the shoulder is comfortable",
+    "home_equipment": "Band-under-foot raise, or light dumbbell shoulder press (Home 18) or band pull-apart (Home 23)",
+    "basic_gym": "Shoulder press machine (Gym 33) or cable lateral raise if available",
+    "full_gym": "Cable lateral raise (Gym 34), shoulder press machine (Gym 33) or rear-delt machine (Gym 35)"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "Very light weight, 3-4 reps in reserve, breathe out on the lift and never hold the breath; avoid straining; check blood pressure is controlled; ask a doctor if readings are very high or if medicines cause dizziness",
+      "source": "Harvard Health strength training and blood pressure (carried); breathing study PubMed 7741618 (carried); raise-specific advice Not found"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "Resistance training 2-3 non-consecutive days a week is recommended; usual glucose checks and fast carbohydrate on hand if on insulin or sulfonylureas; check feet and shoes; start light",
+      "source": "ADA position statement 2016, secondary summary (PMC5317029, carried; PMC2992214 snippet); raise-specific advice Not found"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "Only with clearance and a plan; very light loads, no breath-holding, stop with chest discomfort, dizziness or breathlessness",
+      "source": "ACE HIIT for clinical populations (carried, snippet); raise-specific clearance Not found"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "Fits regular exercise advice; start light and build up",
+      "source": "AHA recommendations (carried); raise-specific advice Not found"
+    },
+    {
+      "condition": "obesity",
+      "status": "ok",
+      "change": "Standing or seated, light weight, 60-90 s rest; build gradually; combine with walking",
+      "source": "ACSM weight position stand (Donnelly 2009, carried); raise-specific advice Not found"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "Standard strength guidance applies; start with 2 sets and build",
+      "source": "Not found"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "Train as usual if controlled; start light if fatigued; stop for palpitations or faintness",
+      "source": "Systematic review 2023 (PubMed 37999992, carried)"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Warm up, reliever nearby; strength work is usually well tolerated; stop and use the reliever if wheeze or cough starts",
+      "source": "Asthma UK tips via Pharmacy Magazine CPD (carried); PubMed 21811185 (carried)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "ok",
+      "change": "The raise puts little load on the knees; sit on a firm chair if standing is hard; stop with sharp or increasing pain",
+      "source": "Raise-specific knee guidance Not found; Vanderbilt knee OA handout (carried)"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Seated or back near a wall, light weight, no rocking or leaning; stop if pain increases or spreads down a leg; get advice if pain persists",
+      "source": "Coaching sources (Yahoo/AOL, Peloton, snippets); clinical guidance specific to raises Not found"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "modify",
+      "change": "Thumbs forward, arms slightly in front of the body, pain-free range, stop at shoulder height or lower, very light weight; stop with pinching or pain and ask a physiotherapist; avoid if there is an acute injury",
+      "source": "Kolber et al. PubMed 24077379 (snippet; association only); Harvard Health how to treat shoulder impingement (snippet); lateral-raise-specific clinical guidance Not found"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "ask_doctor",
+      "change": "Loaded strength training is generally recommended for bone; keep the trunk still; with severe osteoporosis or a vertebral fracture get individual advice first",
+      "source": "PMC9304091 (carried, snippet); RACGP HANDI exercise for bone loss (carried, snippet); Brooke-Wavell et al. 2022 (carried)"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "ask_doctor",
+      "change": "Ask your obstetrician or midwife; use a seated, very light raise; stop with pain, dizziness, headache, leaking or heaviness",
+      "source": "Mayo Clinic pregnancy exercises (carried); PMC11193983 (carried, snippet); ACOG's own wording Not found"
+    },
+    {
+      "condition": "postpartum",
+      "status": "ask_doctor",
+      "change": "Ask a women's health physiotherapist; start with very light weight and breathing; stop with leaking, heaviness or pain",
+      "source": "Goom, Donnelly and Brockwell 2019 (carried); NHS Lothian DRAMs (carried)"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Only with surgeon or physiotherapist approval, especially after shoulder, neck, chest, breast or abdominal surgery",
+      "source": "General guidance Not found"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "home",
+      "gym"
+    ],
+    "bodyRegion": [
+      "upper"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "muscle",
+      "strength"
+    ],
+    "intensity": "moderate",
+    "noise": "quiet",
+    "space": "small_room",
+    "typicalMinutes": 8,
+    "kcalPer10min70kg": 40.8,
+    "difficulty1to5": 2,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Home",
+    "Gym",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Strength",
+    "Shoulders",
+    "Rep counter",
+    "Under 10 min"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-11-24",
+      "file": "FitPlate_Fitness_2026-11-24.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

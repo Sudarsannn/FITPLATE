@@ -4,7 +4,7 @@
   "aliases": [
     "maida"
   ],
-  "category": "Flour (refined wheat flour)",
+  "category": "Flour",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -23,31 +23,38 @@
         "avg": 67,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-31.md"
+      },
+      {
+        "date": "2026-11-23",
+        "min": 45,
+        "max": 80,
+        "avg": 60,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-23.md"
       }
     ],
     "currentEstimate": {
-      "min": 52,
+      "min": 51,
       "max": 70,
       "avg": 61
     },
     "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-31",
+    "trend": "stable",
+    "change30dPct": 4.2,
+    "lastObserved": "2026-11-23",
     "stale": false,
     "seasonal": false,
-    "listingCount": 9,
+    "listingCount": 7,
     "platforms": [
-      "BigBasket"
+      "BigBasket",
+      "Blinkit"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 1 platform (BigBasket) backs the range"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 5.2,
+    "min": 5.1,
     "max": 7,
     "avg": 6.1
   },
@@ -254,13 +261,30 @@
     "Rice flour or arrowroot",
     "Omit"
   ],
-  "vendorListings": [],
+  "vendorListings": [
+    {
+      "vendor": "blinkit",
+      "product": "Whole Farm Premium Maida",
+      "pack": "1 kg",
+      "priceMinInr": 45,
+      "priceMaxInr": 45,
+      "observedOn": "2026-11-23"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Fortune Maida",
+      "pack": "1 kg",
+      "priceMinInr": 68,
+      "priceMaxInr": 68,
+      "observedOn": "2026-11-23"
+    }
+  ],
   "usedIn": [
     {
-      "dishNumber": 97,
-      "quantity": 8,
+      "dishNumber": 59,
+      "quantity": 50,
       "unit": "g",
-      "raw": "8 g per serving (about 1 tbsp)"
+      "raw": "50 g per serving (about ⅓ cup + 1 tbsp, for the paratha)"
     }
   ],
   "versions": [
@@ -271,11 +295,15 @@
     {
       "date": "2026-10-31",
       "file": "FitPlate_Ingredients_2026-10-31.md"
+    },
+    {
+      "date": "2026-11-23",
+      "file": "FitPlate_Ingredients_2026-11-23.md"
     }
   ],
   "mergeMethod": {
     "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (single)",
+    "macrosPer100Estimate": "stable (mean-2)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -286,10 +314,14 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 51.3–76.2 was wider than 30% of avg 60.9; narrowed to ±15%.",
+    "Range 48.6–77.8 was wider than 30% of avg 60.5; narrowed to ±15%.",
     "nutritionPer100g.energyKcal: Conflict (2026-10-10: 366 vs 2026-10-31: 364); both cite the official table, kept the previous value.",
+    "nutritionPer100g.energyKcal: Conflict (2026-10-10: 366 vs 2026-11-23: 364); both cite the official table, kept the previous value.",
     "nutritionPer100g.proteinG: Conflict (2026-10-10: 10.9 vs 2026-10-31: 10.3); both cite the official table, kept the previous value.",
+    "nutritionPer100g.proteinG: Conflict (2026-10-10: 10.9 vs 2026-11-23: 10.3); both cite the official table, kept the previous value.",
     "nutritionPer100g.carbsG: Conflict (2026-10-10: 77.3 vs 2026-10-31: 76.3); both cite the official table, kept the previous value.",
-    "nutritionPer100g.fatG: Conflict (2026-10-10: 1.5 vs 2026-10-31: 1); both cite the official table, kept the previous value."
+    "nutritionPer100g.carbsG: Conflict (2026-10-10: 77.3 vs 2026-11-23: 76.3); both cite the official table, kept the previous value.",
+    "nutritionPer100g.fatG: Conflict (2026-10-10: 1.5 vs 2026-10-31: 1); both cite the official table, kept the previous value.",
+    "nutritionPer100g.fatG: Conflict (2026-10-10: 1.5 vs 2026-11-23: 1); both cite the official table, kept the previous value."
   ]
 }

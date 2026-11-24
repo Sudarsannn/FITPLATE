@@ -1,6 +1,6 @@
 {
   "schema": "fitplate.links.v1",
-  "generatedFor": "Day35",
+  "generatedFor": "Day36",
   "goodSourceDishes": {
     "biotin": [
       {
@@ -1047,6 +1047,41 @@
         "dishNumber": 21,
         "dishName": "Masala Omelette",
         "dishId": "021-masala-omelette"
+      },
+      {
+        "dishNumber": 67,
+        "dishName": "Mix Veg Curry",
+        "dishId": "067-mix-veg-curry"
+      },
+      {
+        "dishNumber": 70,
+        "dishName": "Egg Fried Rice",
+        "dishId": "070-egg-fried-rice"
+      },
+      {
+        "dishNumber": 43,
+        "dishName": "Chicken Fried Rice",
+        "dishId": "043-chicken-fried-rice"
+      },
+      {
+        "dishNumber": 73,
+        "dishName": "Rava Fish Fry",
+        "dishId": "073-rava-fish-fry"
+      },
+      {
+        "dishNumber": 53,
+        "dishName": "Paneer Tikka",
+        "dishId": "053-paneer-tikka"
+      },
+      {
+        "dishNumber": 78,
+        "dishName": "Navratan Korma",
+        "dishId": "078-navratan-korma"
+      },
+      {
+        "dishNumber": 39,
+        "dishName": "Veg Biryani",
+        "dishId": "039-veg-biryani"
       }
     ],
     "vitamin-b12": [
@@ -1280,6 +1315,11 @@
         "dishNumber": 38,
         "dishName": "Egg Curry",
         "dishId": "038-egg-curry"
+      },
+      {
+        "dishNumber": 31,
+        "dishName": "Indian-style Overnight Oats",
+        "dishId": "031-indian-style-overnight-oats"
       }
     ],
     "vitamin-e": [
@@ -1439,6 +1479,7 @@
       "biotin",
       "calcium",
       "phosphorus",
+      "vitamin-a",
       "vitamin-b12",
       "zinc"
     ],
@@ -1539,11 +1580,13 @@
       "riboflavin",
       "sodium",
       "vitamin-b12",
+      "vitamin-d",
       "vitamin-e"
     ],
     "078-navratan-korma": [
       "calcium",
-      "copper"
+      "copper",
+      "vitamin-a"
     ],
     "035-curd-rice": [
       "calcium",
@@ -1783,7 +1826,8 @@
       "potassium"
     ],
     "067-mix-veg-curry": [
-      "potassium"
+      "potassium",
+      "vitamin-a"
     ],
     "044-baingan-bharta": [
       "potassium"
@@ -1798,6 +1842,7 @@
     ],
     "073-rava-fish-fry": [
       "selenium",
+      "vitamin-a",
       "vitamin-d"
     ],
     "096-gajar-halwa": [
@@ -1818,10 +1863,17 @@
     "025-veg-pulao": [
       "vitamin-a"
     ],
-    "059-chicken-kathi-roll": [
+    "070-egg-fried-rice": [
+      "vitamin-a",
       "vitamin-b12"
     ],
-    "070-egg-fried-rice": [
+    "043-chicken-fried-rice": [
+      "vitamin-a"
+    ],
+    "039-veg-biryani": [
+      "vitamin-a"
+    ],
+    "059-chicken-kathi-roll": [
       "vitamin-b12"
     ],
     "050-chicken-korma": [
@@ -3201,6 +3253,11 @@
       "met": 3.5
     },
     {
+      "exerciseId": "dumbbell-lateral-raise",
+      "name": "Dumbbell lateral raise",
+      "met": 3.5
+    },
+    {
       "exerciseId": "dumbbell-romanian-deadlift",
       "name": "Dumbbell Romanian deadlift",
       "met": 3.5
@@ -3214,6 +3271,11 @@
       "exerciseId": "elliptical-cross-trainer",
       "name": "Elliptical cross-trainer",
       "met": 5
+    },
+    {
+      "exerciseId": "ez-bar-curl",
+      "name": "EZ-bar curl",
+      "met": 3.5
     },
     {
       "exerciseId": "figure-4-glute-stretch",
@@ -3286,6 +3348,11 @@
       "met": 3.5
     },
     {
+      "exerciseId": "malasana-garland-squat",
+      "name": "Malasana (Garland Squat)",
+      "met": 2.3
+    },
+    {
       "exerciseId": "mountain-climbers",
       "name": "Mountain climbers (with a slow, quiet, hands-elevated beginner version)",
       "met": 2.8
@@ -3309,6 +3376,11 @@
       "exerciseId": "plank-and-side-plank",
       "name": "Plank and side plank",
       "met": 2.8
+    },
+    {
+      "exerciseId": "preacher-curl",
+      "name": "Preacher curl bench (EZ-bar, dumbbell and machine)",
+      "met": 3.5
     },
     {
       "exerciseId": "pull-up-bar",
@@ -8253,6 +8325,11 @@
         "per100": 39,
         "unit": "µg",
         "source": "ingredient research (USDA FDC: SR Legacy, Fish, mackerel, king, raw (FDC ID not confirmed), via recipal.com/fatsecret; Mg, Zn and vitamin A via triagemethod.com (AFCD + SR Legacy))"
+      },
+      "vitamin-d": {
+        "per100": 1.64,
+        "unit": "µg",
+        "source": "nutrient research (vitamin-d food sources)"
       }
     },
     "seeraga-samba-rice": {

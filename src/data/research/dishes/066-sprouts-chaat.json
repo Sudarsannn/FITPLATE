@@ -398,20 +398,28 @@
           "avg": 140,
           "confidence": null,
           "sourceFile": "FitPlate_Dishes_2026-10-21.md"
+        },
+        {
+          "date": "2026-11-23",
+          "min": 80,
+          "max": 180,
+          "avg": 142,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-11-23.md"
         }
       ],
       "currentEstimate": {
         "min": 120,
-        "max": 150,
+        "max": 160,
         "avg": 140
       },
-      "method": "single",
+      "method": "wma",
       "trend": "unknown",
       "change30dPct": null,
-      "lastObserved": "2026-10-21",
+      "lastObserved": "2026-11-23",
       "stale": false,
       "seasonal": false,
-      "listingCount": 4,
+      "listingCount": 6,
       "platforms": [
         "magicpin",
         "Zomato"
@@ -458,20 +466,28 @@
         "avg": 140,
         "confidence": null,
         "sourceFile": "FitPlate_Dishes_2026-10-21.md"
+      },
+      {
+        "date": "2026-11-23",
+        "min": 80,
+        "max": 180,
+        "avg": 142,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-11-23.md"
       }
     ],
     "currentEstimate": {
       "min": 120,
-      "max": 150,
+      "max": 160,
       "avg": 140
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-21",
+    "lastObserved": "2026-11-23",
     "stale": false,
     "seasonal": false,
-    "listingCount": 4,
+    "listingCount": 6,
     "platforms": [
       "magicpin",
       "Zomato"
@@ -531,7 +547,19 @@
     "Swiggy, Best Breakfast Restaurants in Mumbai (\"Sprouts Salad - Mix\" ₹198, restaurant not shown; context): https://www.swiggy.com/city/mumbai/breakfast-dish-restaurants",
     "Zomato, Sprouts Chaat, Dr Yagnik Road, Rajkot (context, outside Mumbai): https://www.zomato.com/rajkot/sprouts-chaat-dr-yagnik-road/order",
     "magicpin, Mitti Cafe, Bangalore (Chatpata Sprout Salad ₹190; context, outside Mumbai): https://magicpin.in/Bangalore/Embassy-Manyata-Business-Park/Restaurant/Mitti-Cafe/store/b2cc17/delivery",
-    "Swiggy Instamart, Green Moong Sprouts 200 g ₹52 (grocery): https://www.swiggy.com/stores/instamart/p/green-moong-sprouts-UJI4TMXHZX?storeId=1239162"
+    "Swiggy Instamart, Green Moong Sprouts 200 g ₹52 (grocery): https://www.swiggy.com/stores/instamart/p/green-moong-sprouts-UJI4TMXHZX?storeId=1239162",
+    "magicpin, Saurashtra Farsan Mart, Vile Parle (Sprout Chaat ₹80; dated, not re-found): https://magicpin.in/Mumbai/Vile-Parle/Restaurant/Saurashtra-Farsan-Mart/store/59579a/menu",
+    "magicpin, 20 GMS Protein, Malad (Tasty Sprout Chaat [Medium] ₹149; seen 2026-11-23): https://magicpin.in/Mumbai/Malad/Restaurant/20-Gms-Protein/store/1744783",
+    "Swiggy, 20gms Protein, Andheri East (sprout chaat ₹149 Medium / ₹199 Large; seen 2026-11-23): https://www.swiggy.com/city/mumbai/20gms-protein-andheri-east-rest1121273",
+    "Zomato, 20 GMS Protein, Ghatkopar West (no price seen): https://www.zomato.com/mumbai/20-gms-protein-ghatkopar-west/order",
+    "Zomato, Healthy Fruit And Juice, Powai (Spicy Sprouts ₹149; Healthy Sprouts ₹189; sprouts salad ₹199; seen 2026-11-23): https://www.zomato.com/mumbai/healthy-fruit-and-juice-powai/order",
+    "Zomato, The Healthy Farm, Sakinaka (sprout salads ₹149; seen 2026-11-23): https://www.zomato.com/mumbai/the-healthy-farm-sakinaka/order",
+    "Zomato, House Of Healthy Snacks, near Andheri East station (Sprout Chat ₹150; dated): https://www.zomato.com/mumbai/house-of-healthy-snacks-near-andheri-east-station/order",
+    "Zomato, House Of Healthy Snacks, Airoli (MMR; no price seen): https://www.zomato.com/mumbai/house-of-healthy-snacks-airoli-navi-mumbai/order",
+    "Zomato, Healthy Food Forever (Sprout Chat ₹180; area unclear; dated): https://www.zomato.com/mumbai/healthy-food-forever-marol/order",
+    "Zomato, Fruut.in, Mahim (Classic Sprout Salad ₹199; context; seen 2026-11-23): https://www.zomato.com/mumbai/fruut-in-mahim/order",
+    "magicpin, Andheri West, Sprout Salad (Raw) / Healthy Sprout Crunchy Chaat Salad ₹120 (restaurant not named; context): https://magicpin.in/Mumbai/Andheri-West/Restaurant/product/Sprout-Salad-(Raw)/",
+    "magicpin, Fruitiffin, Airoli (Navi Mumbai, MMR; sprout chaat, price not shown; context): https://magicpin.in/Navi-Mumbai/Sector-4,-Airoli/Restaurant/Fruitiffin/store/373470/photos/?img=Store-Images&id=3"
   ],
   "allergens": [
     "peanut",
@@ -630,11 +658,15 @@
     {
       "date": "2026-10-21",
       "file": "FitPlate_Dishes_2026-10-21.md"
+    },
+    {
+      "date": "2026-11-23",
+      "file": "FitPlate_Dishes_2026-11-23.md"
     }
   ],
   "mergeMethod": {
-    "nutritionPerServing": "stable (single)",
-    "orderPrice": "price engine (single)",
+    "nutritionPerServing": "stable (mean-2)",
+    "orderPrice": "price engine (wma)",
     "ingredients": "newest",
     "steps": "newest",
     "healthiness": "newest",
@@ -644,8 +676,8 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 80.0–150.0 was wider than 30% of avg 140.0; narrowed to ±15%.",
-    "range clamped to observed prices: 120–160 → 120–150",
-    "2026-10-21: research declares gluten, peanut not detected from ingredient names; added"
+    "Range 80.0–170.5 was wider than 30% of avg 141.4; narrowed to ±15%.",
+    "2026-10-21: research declares gluten, peanut not detected from ingredient names; added",
+    "2026-11-23: research declares gluten, peanut not detected from ingredient names; added"
   ]
 }

@@ -15,32 +15,41 @@
         "avg": 75,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
+      },
+      {
+        "date": "2026-11-23",
+        "min": 70,
+        "max": 75,
+        "avg": 75,
+        "confidence": "High",
+        "sourceFile": "FitPlate_Ingredients_2026-11-23.md"
       }
     ],
     "currentEstimate": {
-      "min": 68,
-      "max": 80,
+      "min": 70,
+      "max": 76,
       "avg": 75
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-29",
+    "lastObserved": "2026-11-23",
     "stale": false,
     "seasonal": false,
-    "listingCount": 3,
+    "listingCount": 6,
     "platforms": [
-      "BigBasket"
+      "Blinkit",
+      "Starquik",
+      "Swiggy Instamart",
+      "Zepto"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 1 platform (BigBasket) backs the range"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 6.8,
-    "max": 8,
+    "min": 7,
+    "max": 7.6,
     "avg": 7.5
   },
   "seasonal": false,
@@ -61,24 +70,61 @@
     "Full-fat milk plus a little cream or khoya",
     "Unsweetened plant milk (soy or oat)"
   ],
-  "vendorListings": [],
+  "vendorListings": [
+    {
+      "vendor": "blinkit",
+      "product": "Mother Dairy Full Cream",
+      "pack": "1 L",
+      "priceMinInr": 72,
+      "priceMaxInr": 72,
+      "observedOn": "2026-11-23"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Amul Gold Full Cream Milk",
+      "pack": "1 L",
+      "priceMinInr": 76,
+      "priceMaxInr": 76,
+      "observedOn": "2026-11-23"
+    },
+    {
+      "vendor": "instamart",
+      "product": "Gokul Full Cream Milk",
+      "pack": "500 ml",
+      "priceMinInr": 37,
+      "priceMaxInr": 37,
+      "observedOn": "2026-11-23"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Amul Gold Full Cream Fresh Milk pouch",
+      "pack": "1 L",
+      "priceMinInr": 72,
+      "priceMaxInr": 72,
+      "observedOn": "2026-11-23"
+    }
+  ],
   "usedIn": [
     {
-      "dishNumber": 95,
-      "quantity": 200,
+      "dishNumber": 62,
+      "quantity": 15,
       "unit": "ml",
-      "raw": "200 ml per serving (about ¾ cup)"
+      "raw": "15 ml warm milk per serving (1 tbsp; the dish file does not state the fat level, so full-cream is assumed)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-29",
       "file": "FitPlate_Ingredients_2026-10-29.md"
+    },
+    {
+      "date": "2026-11-23",
+      "file": "FitPlate_Ingredients_2026-11-23.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
     "aliases": "union",
     "substitutes": "union",
     "vendorListings": "newest sighting per vendor+product+pack",

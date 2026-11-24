@@ -10,63 +10,106 @@
       "toMainUnitFactor": 0.025
     }
   ],
-  "unitConversions": [],
+  "unitConversions": [
+    {
+      "fromUnit": "µg",
+      "compound": "vitamin d",
+      "toMainUnitFactor": 40,
+      "raw": "1 µg vitamin D | 40 IU"
+    },
+    {
+      "fromUnit": "iu",
+      "compound": "",
+      "toMainUnitFactor": 0.025,
+      "raw": "1 IU | 0.025 µg"
+    },
+    {
+      "fromUnit": "iu",
+      "compound": "",
+      "toMainUnitFactor": 0.025,
+      "raw": "600 IU (the RDA) | 15 µg"
+    },
+    {
+      "fromUnit": "iu",
+      "compound": "",
+      "toMainUnitFactor": 0.1,
+      "raw": "1,000 IU | 25 µg; 2,000 IU = 50 µg; 4,000 IU = 100 µg"
+    },
+    {
+      "fromUnit": "iu",
+      "compound": "",
+      "toMainUnitFactor": 0.025,
+      "raw": "60,000 IU (one weekly sachet) | 1,500 µg once; about 214 µg per day if averaged over 7 days (1,500 ÷ 7, calc.)"
+    },
+    {
+      "fromUnit": "iu",
+      "compound": "",
+      "toMainUnitFactor": 0.025,
+      "raw": "600,000 IU (one injection) | 15,000 µg"
+    },
+    {
+      "fromUnit": "µg",
+      "compound": "calcifediol",
+      "toMainUnitFactor": 2.5,
+      "raw": "1 µg calcifediol (25-OH-D3) | about 2.5 µg vitamin D equivalents"
+    }
+  ],
   "targets": [
     {
       "group": "adult_male_sedentary",
       "ear": 10,
       "rda": 15,
       "ai": null,
-      "source": "ICMR-NIN 2020 (EAR 400 IU, RDA 600 IU)"
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
     },
     {
       "group": "adult_male_moderate",
       "ear": 10,
       "rda": 15,
       "ai": null,
-      "source": "ICMR-NIN 2020 (no activity adjustment)"
+      "source": "ICMR-NIN 2020 (secondary, unverified); no activity adjustment"
     },
     {
       "group": "adult_male_heavy",
       "ear": 10,
       "rda": 15,
       "ai": null,
-      "source": "ICMR-NIN 2020 (no activity adjustment)"
+      "source": "ICMR-NIN 2020 (secondary, unverified); no activity adjustment"
     },
     {
       "group": "adult_female_sedentary",
       "ear": 10,
       "rda": 15,
       "ai": null,
-      "source": "ICMR-NIN 2020 (EAR 400 IU, RDA 600 IU)"
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
     },
     {
       "group": "adult_female_moderate",
       "ear": 10,
       "rda": 15,
       "ai": null,
-      "source": "ICMR-NIN 2020 (no activity adjustment)"
+      "source": "ICMR-NIN 2020 (secondary, unverified); no activity adjustment"
     },
     {
       "group": "adult_female_heavy",
       "ear": 10,
       "rda": 15,
       "ai": null,
-      "source": "ICMR-NIN 2020 (no activity adjustment)"
+      "source": "ICMR-NIN 2020 (secondary, unverified); no activity adjustment"
     },
     {
       "group": "pregnant",
       "ear": null,
       "rda": 15,
       "ai": null,
-      "source": "ICMR-NIN 2020 via secondary summary (primary table not confirmed); NASEM 2011 RDA 15 µg"
+      "source": "ICMR-NIN 2020 via secondary summary (unverified); NASEM 2011 RDA 15"
     },
     {
       "group": "lactating",
       "ear": null,
       "rda": 15,
       "ai": null,
-      "source": "ICMR-NIN 2020 via secondary summary (primary table not confirmed); NASEM 2011 RDA 15 µg"
+      "source": "ICMR-NIN 2020 via secondary summary (unverified); NASEM 2011 RDA 15"
     },
     {
       "group": "age_60_plus",
@@ -87,7 +130,7 @@
     "value": 100,
     "unit": "µg",
     "appliesTo": "food_and_supplements",
-    "source": "NASEM/IOM 2011 and EFSA 2023 (ICMR-NIN 2020 TUL value not found)"
+    "source": "NASEM/IOM 2011 and EFSA 2023 (100 µg = 4,000 IU; ICMR-NIN 2020 TUL Not found)"
   },
   "topFoodSources": [
     {
@@ -95,7 +138,7 @@
       "veg": false,
       "per100g": 5.98,
       "servingG": 100,
-      "servingLabel": "1 medium piece",
+      "servingLabel": "1 steak (est.)",
       "perServing": 5.98
     },
     {
@@ -107,11 +150,11 @@
       "perServing": 3.51
     },
     {
-      "food": "Black pomfret (halwa)",
+      "food": "Black pomfret",
       "veg": false,
       "per100g": 2.94,
       "servingG": 100,
-      "servingLabel": "1 medium piece",
+      "servingLabel": "1 piece (est.)",
       "perServing": 2.94
     },
     {
@@ -135,7 +178,7 @@
       "veg": false,
       "per100g": 1.01,
       "servingG": 100,
-      "servingLabel": "1 piece",
+      "servingLabel": "1 piece (est.)",
       "perServing": 1.01
     },
     {
@@ -159,7 +202,7 @@
       "veg": false,
       "per100g": 2.64,
       "servingG": 50,
-      "servingLabel": "2-3 pieces",
+      "servingLabel": "about 3-4 pieces (est.)",
       "perServing": 1.32
     },
     {
@@ -185,6 +228,70 @@
       "servingG": 50,
       "servingLabel": "about 1/2 cup sliced",
       "perServing": 10.27
+    },
+    {
+      "food": "Sardine (tarli/mathi)",
+      "veg": false,
+      "per100g": 3.51,
+      "servingG": 100,
+      "servingLabel": "3-4 small fish (est.)",
+      "perServing": 3.51
+    },
+    {
+      "food": "Milk, whole, buffalo",
+      "veg": true,
+      "per100g": 1.63,
+      "servingG": 206,
+      "servingLabel": "1 glass, 200 ml (est.)",
+      "perServing": 3.36
+    },
+    {
+      "food": "Milk, whole, cow",
+      "veg": true,
+      "per100g": 1.22,
+      "servingG": 206,
+      "servingLabel": "1 glass, 200 ml (est.)",
+      "perServing": 2.51
+    },
+    {
+      "food": "Seer fish (vanjaram/surmai)",
+      "veg": false,
+      "per100g": 1.64,
+      "servingG": 100,
+      "servingLabel": "1 steak (est.)",
+      "perServing": 1.64
+    },
+    {
+      "food": "Egg, country hen, boiled",
+      "veg": false,
+      "per100g": 2.99,
+      "servingG": 50,
+      "servingLabel": "1 egg (est.)",
+      "perServing": 1.5
+    },
+    {
+      "food": "Tiger prawns, brown",
+      "veg": false,
+      "per100g": 1.53,
+      "servingG": 100,
+      "servingLabel": "about 8 prawns (est.)",
+      "perServing": 1.53
+    },
+    {
+      "food": "Egg, poultry (farm), boiled",
+      "veg": false,
+      "per100g": 0.74,
+      "servingG": 50,
+      "servingLabel": "1 egg (est.)",
+      "perServing": 0.37
+    },
+    {
+      "food": "+F fortified toned milk (use pack label)",
+      "veg": true,
+      "per100g": null,
+      "servingG": 206,
+      "servingLabel": "1 glass, 200 ml; reported 5-7.5 µg/L (est.)",
+      "perServing": 1.25
     }
   ],
   "goodSourceDishes": [
@@ -215,6 +322,10 @@
     {
       "dishNumber": 38,
       "dishName": "Egg Curry"
+    },
+    {
+      "dishNumber": 31,
+      "dishName": "Indian-style Overnight Oats"
     }
   ],
   "deficiencyRiskIndia": "high",
@@ -222,7 +333,11 @@
     "Midday sunlight on bare skin (UVB); ICMR-NIN 2024 recommends sun exposure",
     "Eating vitamin D foods or supplements with a meal containing fat",
     "Vitamin D3 form (raises blood levels more than D2)",
-    "Healthy body weight"
+    "Healthy body weight",
+    "Midday UVB sunlight on bare skin (not counted as intake)",
+    "Fat in the same meal (about 32% higher peak blood D3 in one trial)",
+    "Vitamin D3 form (more effective than D2 in most meta-analyses)",
+    "Adequate magnesium (general)"
   ],
   "absorptionBlockers": [
     "Window glass (blocks UVB)",
@@ -232,7 +347,11 @@
     "Fat malabsorption conditions and very low-fat meals",
     "Obesity",
     "Older age (less skin synthesis)",
-    "Some medicines: glucocorticoids, certain anti-seizure and anti-TB drugs, orlistat, bile-acid binders"
+    "Some medicines: glucocorticoids, certain anti-seizure and anti-TB drugs, orlistat, bile-acid binders",
+    "Covering clothes, window glass, smog, sunscreen, darker skin and winter reduce skin production",
+    "Obesity (stored in fat)",
+    "Fat malabsorption (celiac, IBD) and very low-fat diets",
+    "Anti-seizure medicines, steroids, orlistat, cholestyramine, long-term stimulant laxatives (ask a doctor)"
   ],
   "logPresets": [
     {
@@ -304,6 +423,26 @@
       "mainAmount": 12.5,
       "mainAmountRange": null,
       "prescriptionDose": false
+    },
+    {
+      "label": "Vitamin D3 60,000 IU weekly sachet/capsule (prescription dose)",
+      "amount": 1500,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 1500,
+      "mainAmountRange": null,
+      "prescriptionDose": true
+    },
+    {
+      "label": "Vitamin D3 injection 600,000 IU (prescription dose)",
+      "amount": 15000,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 15000,
+      "mainAmountRange": null,
+      "prescriptionDose": true
     }
   ],
   "warnings": [
@@ -314,14 +453,124 @@
     "Never warn on food or sunlight; sun exposure cannot cause vitamin D toxicity.",
     "IFCT 2017 plant vitamin D2 values are low confidence and are excluded from the progress ring by default.",
     "People with kidney disease, kidney stones, sarcoidosis, high calcium, or on thiazide diuretics or digoxin should seek medical advice before supplementing.",
-    "General information, not medical advice."
+    "General information, not medical advice.",
+    "Upper limit 100 µg (4,000 IU) a day from food plus supplements (NASEM, EFSA); ICMR TUL not found",
+    "60,000 IU sachets and 600,000 IU injections are doctor-set treatment courses, not daily supplements; taking the weekly dose daily has caused toxicity in India",
+    "Count every product: calcium-D3, multivitamin and D3 drops add up",
+    "IFCT 2017 plant vitamin D values (ragi, curry leaves, soya, mushrooms) are implausible and must not be shown",
+    "Fortified milk and oil amounts conflict between sources: use the pack label",
+    "Sunlight is not counted as intake; avoid sunburn",
+    "General information, not medical advice; pregnancy, kidney disease, stones and regular medicines need a doctor"
   ],
-  "conditionAdjustments": [],
-  "lastResearched": "2026-10-09",
+  "conditionAdjustments": [
+    {
+      "profileId": "P12",
+      "change": "Target unchanged (15 µg, UL 100 µg); treatment doses are doctor-set; Indian consensus 2025 aims for 25(OH)D 40-60 ng/mL; requires_doctor_input",
+      "value": 15,
+      "unit": "µg",
+      "source": "ICMR-NIN 2020 (secondary, unverified); Kalra et al. IJEM 2025 (abstract only)"
+    },
+    {
+      "profileId": "P1",
+      "change": "No change to food target; Endocrine Society 2024 suggests empiric vitamin D only for high-risk prediabetes, a doctor decision",
+      "value": null,
+      "unit": "µg",
+      "source": "Endocrine Society 2024 (via search summaries)"
+    },
+    {
+      "profileId": "P2",
+      "change": "Endocrine Society 2024 suggests empiric vitamin D with lifestyle change for high-risk prediabetes; doctor decision; requires_doctor_input",
+      "value": null,
+      "unit": "µg",
+      "source": "Endocrine Society 2024 (via search summaries)"
+    },
+    {
+      "profileId": "P13",
+      "change": "Kidney disease changes vitamin D handling; no sourced numeric change; requires_doctor_input before any vitamin D or calcium supplement",
+      "value": null,
+      "unit": "µg",
+      "source": "No change found (general; doctor decides)"
+    },
+    {
+      "profileId": "P14",
+      "change": "No sourced change; avoid high-dose vitamin D or calcium supplements unless a doctor advises; requires_doctor_input",
+      "value": null,
+      "unit": "µg",
+      "source": "No change found (Mayo Clinic: high calcium risk with excess)"
+    },
+    {
+      "profileId": "P19",
+      "change": "Fat malabsorption is a cause of low vitamin D; doctor-guided testing and dose; requires_doctor_input",
+      "value": null,
+      "unit": "µg",
+      "source": "Mayo Clinic (via search summary)"
+    },
+    {
+      "profileId": "P20",
+      "change": "Keep vitamin D (15 µg) and calcium adequate; any supplement is doctor-led",
+      "value": 15,
+      "unit": "µg",
+      "source": "ICMR-NIN 2020 (secondary, unverified); topic 15"
+    },
+    {
+      "profileId": "P22",
+      "change": "RDA 15 µg; Endocrine Society 2024 suggests empiric vitamin D in pregnancy (dose not seen); MoHFW 2014 calcium 500 mg with 250 IU (6.25 µg) vitamin D; requires_doctor_input",
+      "value": 15,
+      "unit": "µg",
+      "source": "ICMR-NIN 2020 (secondary, unverified); Endocrine Society 2024; MoHFW 2014 (secondary snippet)"
+    },
+    {
+      "profileId": "P23",
+      "change": "RDA 15 µg; calcium with vitamin D per MoHFW 2014 (secondary); doctor-led",
+      "value": 15,
+      "unit": "µg",
+      "source": "ICMR-NIN 2020 (secondary, unverified); MoHFW 2014 (secondary snippet)"
+    },
+    {
+      "profileId": "P24",
+      "change": "Calcium and vitamin D matter more after menopause; show a prompt, no dose change; any supplement doctor-led",
+      "value": 15,
+      "unit": "µg",
+      "source": "ICMR-NIN 2020 (secondary, unverified); Endocrine Society 2024"
+    },
+    {
+      "profileId": "P25",
+      "change": "Obesity is a risk group for low vitamin D; no sourced dose change",
+      "value": null,
+      "unit": "µg",
+      "source": "Mayo Clinic (via search summary)"
+    },
+    {
+      "profileId": "P31",
+      "change": "No ICMR 60+ value found; NASEM 20 µg at 71+; Endocrine Society 2024 suggests empiric vitamin D at 75+ and no routine supplement at 50-74; requires_doctor_input",
+      "value": 15,
+      "unit": "µg",
+      "source": "NASEM 2011; Endocrine Society 2024 (via search summaries)"
+    },
+    {
+      "profileId": "P33",
+      "change": "No change found; no eggs or fish, so milk, fortified foods and sun; doctor-led supplement if low",
+      "value": null,
+      "unit": "µg",
+      "source": "No change found"
+    },
+    {
+      "profileId": "P34",
+      "change": "No animal sources; use +F fortified plant sources or vegan D3 (lichen) or D2; vitamin D often needs a doctor-led supplement; requires_doctor_input",
+      "value": 15,
+      "unit": "µg",
+      "source": "UK SACN 2016 rapid review (via search); FSSAI fortification (secondary)"
+    }
+  ],
+  "lastResearched": "2026-11-24",
   "versions": [
     {
       "date": "2026-10-09",
       "file": "FitPlate_Nutrients_2026-10-09.md"
+    },
+    {
+      "date": "2026-11-24",
+      "file": "FitPlate_Nutrients_2026-11-24.md"
     }
   ],
   "mergeMethod": {
@@ -336,6 +585,7 @@
   },
   "mergeNotes": [],
   "needsReview": [
-    "app_default_target.age_60_plus = 15 has no ICMR row to match (age_60_plus: \"Not found as separate ICMR-NIN value; NASEM 2011: RDA 15 µg to age 70, 20 µg from 71\"); set to null"
+    "2026-11-24 vitamin-d: \"group\" has unexpected value \"age_60_plus_male\"; treated as not found",
+    "2026-11-24 vitamin-d: \"group\" has unexpected value \"age_60_plus_female\"; treated as not found"
   ]
 }

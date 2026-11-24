@@ -2,6 +2,7 @@
 import type { HealthCondition } from '../../../models/nutrient';
 
 import item_acid_reflux_gerd from './acid-reflux-gerd.json';
+import item_celiac_disease_gluten_sensitivity from './celiac-disease-gluten-sensitivity.json';
 import item_chronic_kidney_disease_early from './chronic-kidney-disease-early.json';
 import item_fatty_liver from './fatty-liver.json';
 import item_gout_high_uric_acid from './gout-high-uric-acid.json';
@@ -22,6 +23,7 @@ import item_vitamin_d_b12_deficiency from './vitamin-d-b12-deficiency.json';
 
 export const items: HealthCondition[] = [
   item_acid_reflux_gerd as unknown as HealthCondition,
+  item_celiac_disease_gluten_sensitivity as unknown as HealthCondition,
   item_chronic_kidney_disease_early as unknown as HealthCondition,
   item_fatty_liver as unknown as HealthCondition,
   item_gout_high_uric_acid as unknown as HealthCondition,

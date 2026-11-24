@@ -10,7 +10,7 @@
       "toMainUnitFactor": 0.3
     },
     {
-      "unit": "µg beta-carotene (food, ICMR 6:1)",
+      "unit": "µg beta-carotene (supplement, NIH 2:1; not counted toward the upper limit)",
       "toMainUnitFactor": 0.1667
     },
     {
@@ -20,38 +20,48 @@
     {
       "unit": "mcg RAE (US label, preformed vitamin A)",
       "toMainUnitFactor": 1
+    },
+    {
+      "unit": "µg RAE or µg RE (preformed vitamin A on labels)",
+      "toMainUnitFactor": 1
     }
   ],
   "unitConversions": [
     {
       "fromUnit": "µg",
-      "compound": "retinol",
+      "compound": "retinol or retinyl ester",
       "toMainUnitFactor": 1,
-      "raw": "1 µg retinol (or retinyl esters as retinol) | 1 µg"
+      "raw": "1 µg retinol or retinyl ester (as retinol) | 1 µg"
     },
     {
       "fromUnit": "iu",
       "compound": "retinol",
       "toMainUnitFactor": 0.3,
-      "raw": "1 IU of retinol (vitamin A as on capsule labels) | 0.3 µg"
+      "raw": "1 IU retinol (capsule labels) | 0.3 µg"
     },
     {
       "fromUnit": "µg",
-      "compound": "beta-carotene from food",
+      "compound": "beta-carotene in food",
       "toMainUnitFactor": 0.167,
-      "raw": "1 µg β-carotene from food | 1/6 = 0.167 µg (ICMR 6:1)"
+      "raw": "1 µg β-carotene in food | 1/6 = 0.167 µg (ICMR 6:1)"
     },
     {
       "fromUnit": "µg",
-      "compound": "alpha-carotene or beta-cryptoxanthin from food",
+      "compound": "alpha-carotene or beta-cryptoxanthin in food",
       "toMainUnitFactor": 0.083,
-      "raw": "1 µg α-carotene or β-cryptoxanthin from food | 1/12 = 0.083 µg (ICMR 12:1)"
+      "raw": "1 µg α-carotene or β-cryptoxanthin in food | 1/12 = 0.083 µg (ICMR 12:1)"
     },
     {
       "fromUnit": "µg",
-      "compound": "rae",
-      "toMainUnitFactor": 1,
-      "raw": "1 µg RAE (US labels) | treat as 1 µg retinol when the source is preformed vitamin A"
+      "compound": "beta-carotene in a supplement",
+      "toMainUnitFactor": 0.5,
+      "raw": "1 µg β-carotene in a supplement | 0.5 µg RAE (NIH 2:1) (est. for ICMR)"
+    },
+    {
+      "fromUnit": "iu",
+      "compound": "dietary beta-carotene",
+      "toMainUnitFactor": 0.05,
+      "raw": "1 IU dietary β-carotene | 0.05 µg RAE (US); 1 IU dietary α-carotene or β-cryptoxanthin 0.025 µg RAE"
     }
   ],
   "targets": [
@@ -60,56 +70,56 @@
       "ear": 460,
       "rda": 1000,
       "ai": null,
-      "source": "ICMR-NIN 2020"
+      "source": "ICMR-NIN 2020 (secondary, unverified); retinol basis, beta-carotene 6:1"
     },
     {
       "group": "adult_male_moderate",
       "ear": 460,
       "rda": 1000,
       "ai": null,
-      "source": "ICMR-NIN 2020"
+      "source": "ICMR-NIN 2020 (secondary, unverified); one value for all activity levels"
     },
     {
       "group": "adult_male_heavy",
       "ear": 460,
       "rda": 1000,
       "ai": null,
-      "source": "ICMR-NIN 2020"
+      "source": "ICMR-NIN 2020 (secondary, unverified); one value for all activity levels"
     },
     {
       "group": "adult_female_sedentary",
       "ear": 390,
       "rda": 840,
       "ai": null,
-      "source": "ICMR-NIN 2020"
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
     },
     {
       "group": "adult_female_moderate",
       "ear": 390,
       "rda": 840,
       "ai": null,
-      "source": "ICMR-NIN 2020"
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
     },
     {
       "group": "adult_female_heavy",
       "ear": 390,
       "rda": 840,
       "ai": null,
-      "source": "ICMR-NIN 2020"
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
     },
     {
       "group": "pregnant",
       "ear": null,
       "rda": 900,
       "ai": null,
-      "source": "ICMR-NIN 2020 (RDA via secondary summary; EAR not found)"
+      "source": "ICMR-NIN 2020 RDA via secondary summary (secondary, unverified); EAR Not found"
     },
     {
       "group": "lactating",
       "ear": null,
       "rda": 950,
       "ai": null,
-      "source": "ICMR-NIN 2020 (RDA via secondary summary; EAR not found)"
+      "source": "ICMR-NIN 2020 RDA via secondary summary (secondary, unverified); EAR Not found"
     },
     {
       "group": "age_60_plus",
@@ -128,57 +138,57 @@
   },
   "upperLimit": {
     "value": 3000,
-    "unit": "µg/day preformed vitamin A (retinol)",
+    "unit": "µg/day preformed vitamin A (retinol and esters)",
     "appliesTo": "food_and_supplements",
-    "source": "ICMR-NIN 2020 (as reported by CRN); same value NASEM 2001 and EFSA 2024; does not apply to beta-carotene from food"
+    "source": "ICMR-NIN 2020 TUL as reported by CRN 2025 (secondary, unverified); same value NASEM 2001 and EFSA 2024 (3,000 µg RE); does not apply to carotenoids from food; soft notice at 1,500 µg for age 50+ (NHS)"
   },
   "topFoodSources": [
     {
-      "food": "Drumstick leaves (moringa)",
+      "food": "Drumstick leaves (IFCT C019)",
       "veg": true,
       "per100g": 2924,
       "servingG": 25,
-      "servingLabel": "1/2 cup leaves",
+      "servingLabel": "about 1/2 cup leaves (est.)",
       "perServing": 731
     },
     {
-      "food": "Amaranth leaves, green (chaulai)",
+      "food": "Amaranth leaves, green (chaulai, IFCT C002)",
       "veg": true,
       "per100g": 1426,
       "servingG": 100,
-      "servingLabel": "1 small katori cooked",
+      "servingLabel": "100 g raw, about 1 small katori cooked (est.)",
       "perServing": 1426
     },
     {
-      "food": "Fenugreek leaves (methi)",
+      "food": "Fenugreek leaves (methi, IFCT C020)",
       "veg": true,
       "per100g": 1541,
       "servingG": 50,
-      "servingLabel": "1 cup loosely packed raw",
+      "servingLabel": "1 loose cup raw (est.)",
       "perServing": 770
     },
     {
-      "food": "Spinach (palak)",
+      "food": "Spinach (palak, IFCT C033)",
       "veg": true,
       "per100g": 434,
       "servingG": 100,
-      "servingLabel": "1/2 katori cooked",
+      "servingLabel": "100 g raw, about 1/2 katori cooked (est.)",
       "perServing": 434
     },
     {
-      "food": "Carrot, orange (gajar)",
+      "food": "Carrot, orange (gajar, IFCT F002)",
       "veg": true,
       "per100g": 1125,
       "servingG": 60,
-      "servingLabel": "1 medium",
+      "servingLabel": "1 medium carrot (est.)",
       "perServing": 675
     },
     {
-      "food": "Sweet potato, brown skin (shakarkand)",
+      "food": "Sweet potato, brown skin (IFCT F013)",
       "veg": true,
       "per100g": 896,
       "servingG": 100,
-      "servingLabel": "1 small",
+      "servingLabel": "1 small (est.)",
       "perServing": 896
     },
     {
@@ -190,19 +200,19 @@
       "perServing": 63
     },
     {
-      "food": "Mango, ripe, kesar",
+      "food": "Mango, ripe, kesar (IFCT E039)",
       "veg": true,
       "per100g": 211,
       "servingG": 150,
-      "servingLabel": "1 cup cubes",
+      "servingLabel": "1 small mango or 1 cup cubes (est.)",
       "perServing": 317
     },
     {
-      "food": "Papaya, ripe",
+      "food": "Papaya, ripe (IFCT E049)",
       "veg": true,
       "per100g": 170,
       "servingG": 150,
-      "servingLabel": "1 cup cubes",
+      "servingLabel": "1 cup cubes (est.)",
       "perServing": 255
     },
     {
@@ -214,11 +224,11 @@
       "perServing": 7828
     },
     {
-      "food": "Chicken liver",
+      "food": "Chicken liver (IFCT N005)",
       "veg": false,
       "per100g": 3486,
       "servingG": 50,
-      "servingLabel": "3-4 pieces",
+      "servingLabel": "3-4 pieces (est.)",
       "perServing": 1743
     },
     {
@@ -228,6 +238,30 @@
       "servingG": 50,
       "servingLabel": "1 egg",
       "perServing": 91
+    },
+    {
+      "food": "Egg, hen, whole, boiled (IFCT M004)",
+      "veg": false,
+      "per100g": 182,
+      "servingG": 50,
+      "servingLabel": "1 egg",
+      "perServing": 91
+    },
+    {
+      "food": "Ghee, cow (NIN Nutrition Atlas via snippet, secondary, unverified; IFCT shows 0)",
+      "veg": true,
+      "per100g": 600,
+      "servingG": 5,
+      "servingLabel": "1 tsp (est.)",
+      "perServing": 30
+    },
+    {
+      "food": "Goat liver (kaleji, IFCT O008); above the upper limit per serving",
+      "veg": false,
+      "per100g": 15655,
+      "servingG": 50,
+      "servingLabel": "small kaleji fry (est.)",
+      "perServing": 7828
     }
   ],
   "goodSourceDishes": [
@@ -266,6 +300,34 @@
     {
       "dishNumber": 21,
       "dishName": "Masala Omelette"
+    },
+    {
+      "dishNumber": 67,
+      "dishName": "Mix Veg Curry"
+    },
+    {
+      "dishNumber": 70,
+      "dishName": "Egg Fried Rice"
+    },
+    {
+      "dishNumber": 43,
+      "dishName": "Chicken Fried Rice"
+    },
+    {
+      "dishNumber": 73,
+      "dishName": "Rava Fish Fry"
+    },
+    {
+      "dishNumber": 53,
+      "dishName": "Paneer Tikka"
+    },
+    {
+      "dishNumber": 78,
+      "dishName": "Navratan Korma"
+    },
+    {
+      "dishNumber": 39,
+      "dishName": "Veg Biryani"
     }
   ],
   "deficiencyRiskIndia": "moderate",
@@ -274,7 +336,12 @@
     "cooking, chopping or pureeing vegetables",
     "sauteing, steaming or pressure cooking rather than long open boiling",
     "turmeric during cooking (better beta-carotene retention)",
-    "adequate protein and zinc"
+    "adequate protein and zinc",
+    "Fat or oil in the same meal (tadka, ghee, curd, nuts)",
+    "Cooking, chopping or pureeing greens and carrots (release carotenoids)",
+    "Pressure cooking leafy greens; keeping the cooking water",
+    "Turmeric and onion during cooking (better beta-carotene retention)",
+    "Adequate protein and zinc (retinol-binding protein)"
   ],
   "absorptionBlockers": [
     "very low-fat meals",
@@ -283,7 +350,10 @@
     "intestinal worms and frequent diarrhoea",
     "long cooking with tamarind",
     "sun-drying greens",
-    "discarding cooking water"
+    "discarding cooking water",
+    "Very-low-fat meals",
+    "Fat malabsorption (celiac disease, pancreatic or liver disease, orlistat)",
+    "Worms and repeated diarrhoea"
   ],
   "logPresets": [
     {
@@ -325,6 +395,66 @@
       "mainAmount": null,
       "mainAmountRange": null,
       "prescriptionDose": false
+    },
+    {
+      "label": "Multivitamin: vitamin A 2,500 IU as retinol (est. typical label)",
+      "amount": 750,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 750,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Multivitamin or eye product: 5,000 IU as retinol (est. typical label)",
+      "amount": 1500,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 1500,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Cod-liver oil capsule (enter label value)",
+      "amount": null,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": null,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Vitamin A capsule 25,000 IU (prescription dose)",
+      "amount": 7500,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 7500,
+      "mainAmountRange": null,
+      "prescriptionDose": true
+    },
+    {
+      "label": "Vitamin A chewable tablet 50,000 IU (prescription dose)",
+      "amount": 15000,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 15000,
+      "mainAmountRange": null,
+      "prescriptionDose": true
+    },
+    {
+      "label": "Programme dose 2 lakh IU, children only (prescription dose)",
+      "amount": 60000,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 60000,
+      "mainAmountRange": null,
+      "prescriptionDose": true
     }
   ],
   "warnings": [
@@ -335,14 +465,134 @@
     "Smokers and ex-smokers should avoid high-dose beta-carotene supplements (raised lung cancer risk in trials).",
     "Do not combine vitamin A supplements with oral retinoid medicines; check with a doctor if taking blood thinners, fat-blocking weight-loss drugs or liver-affecting medicines.",
     "A 50 g portion of goat liver can exceed the daily upper limit; limit liver to about once a week and avoid vitamin A supplements in that week.",
-    "General information, not medical advice. Check with a doctor before starting supplements."
+    "General information, not medical advice. Check with a doctor before starting supplements.",
+    "Preformed vitamin A (retinol and esters) from supplements, liver and fortified foods must stay at or below 3,000 µg per day from all sources.",
+    "Carotenoids from fruits and vegetables do not count toward the upper limit; skin tinting from carrots or papaya is harmless.",
+    "Pregnancy or planning pregnancy: avoid vitamin A supplements, fish-liver oil and liver unless a doctor prescribes them; high preformed vitamin A can cause birth defects.",
+    "Age 50+, post-menopause or osteoporosis: NHS advises staying at or below about 1,500 µg per day from food and supplements and liver no more than once a week.",
+    "Smokers and ex-smokers should avoid high-dose beta-carotene and retinyl palmitate supplements (more lung cancer in trials).",
+    "Do not combine vitamin A supplements with oral retinoids (isotretinoin, acitretin); check with a doctor if taking blood thinners, orlistat or liver-affecting medicines, or with kidney or liver disease.",
+    "A 50 g portion of goat liver is about 7,800 µg and exceeds the daily upper limit; chicken liver 50 g is about 1,700 µg.",
+    "ICMR-NIN 2020 values are from search snippets and summaries (secondary, unverified); the pregnancy RDA of 900 µg looks low against the stated extra allowance and should be checked in the printed report.",
+    "Plant carotenoids are counted at ICMR 6:1; isotope studies suggest less conversion (spinach about 21:1, carrot about 15:1), so plant-only totals are 'on paper'.",
+    "IFCT has no retinol for milk, curd, paneer or ghee and has suspect values for dry dates, pink-skin sweet potato and Tholam fish; do not use them unchecked."
   ],
-  "conditionAdjustments": [],
-  "lastResearched": "2026-10-09",
+  "conditionAdjustments": [
+    {
+      "profileId": "P22",
+      "change": "Keep food carotenoids; no vitamin A supplements, fish-liver oil or regular liver unless prescribed; upper limit 3,000 µg preformed; RDA 900; requires doctor input",
+      "value": 900,
+      "unit": "µg",
+      "source": "ICMR-NIN 2020 (secondary, unverified); EFSA 2024; NHS; Dibley 2001; WHO guideline"
+    },
+    {
+      "profileId": "P23",
+      "change": "RDA 950 µg (US/EFSA 1,300); limit 3,000 µg unchanged; supplements only on a doctor's advice",
+      "value": 950,
+      "unit": "µg",
+      "source": "ICMR-NIN 2020 (secondary, unverified); NIH ODS; EFSA 2015"
+    },
+    {
+      "profileId": "P20",
+      "change": "Soft notice above 1,500 µg preformed vitamin A; liver no more than weekly",
+      "value": 1500,
+      "unit": "µg",
+      "source": "NHS; EFSA 2024 (fracture link not established below 3,000 µg)"
+    },
+    {
+      "profileId": "P24",
+      "change": "Post-menopause: soft notice above 1,500 µg preformed vitamin A",
+      "value": 1500,
+      "unit": "µg",
+      "source": "NHS; EFSA 2024"
+    },
+    {
+      "profileId": "P31",
+      "change": "Age 50+: soft notice above 1,500 µg preformed vitamin A",
+      "value": 1500,
+      "unit": "µg",
+      "source": "NHS"
+    },
+    {
+      "profileId": "P7",
+      "change": "Avoid high-dose vitamin A supplements and frequent liver; alcohol adds risk; requires doctor input",
+      "value": null,
+      "unit": "",
+      "source": "Medscape and MSK via search snippets"
+    },
+    {
+      "profileId": "P13",
+      "change": "Avoid vitamin A supplements unless the kidney doctor advises (not sourced in this run); requires doctor input",
+      "value": null,
+      "unit": "",
+      "source": "Not sourced in this run"
+    },
+    {
+      "profileId": "P19",
+      "change": "Higher risk of low vitamin A from fat malabsorption; keep some fat with meals; a doctor may check levels",
+      "value": null,
+      "unit": "",
+      "source": "StatPearls via snippet"
+    },
+    {
+      "profileId": "P25",
+      "change": "Keep about 5-10 g oil per main meal for absorption; orlistat users separate multivitamin by 2 hours",
+      "value": null,
+      "unit": "",
+      "source": "StatPearls and MSK via snippets; amount est."
+    },
+    {
+      "profileId": "P8",
+      "change": "No vitamin A supplements with oral retinoids (isotretinoin, acitretin) unless the prescriber says so",
+      "value": null,
+      "unit": "",
+      "source": "Medscape via snippet"
+    },
+    {
+      "profileId": "P33",
+      "change": "No carrot or sweet potato: use methi, palak, chaulai, pumpkin, mango, papaya and dairy",
+      "value": null,
+      "unit": "",
+      "source": "FitPlate dish files (Jain variants); IFCT 2017"
+    },
+    {
+      "profileId": "P34",
+      "change": "No preformed vitamin A in the diet; aim for two servings of leafy or orange vegetables daily with oil; show the stricter 12:1 view",
+      "value": null,
+      "unit": "",
+      "source": "IFCT 2017; AJCN 2023 isotope study; NIH ODS"
+    },
+    {
+      "profileId": "P21",
+      "change": "No beta-carotene supplements (no benefit in trials); food sources only",
+      "value": null,
+      "unit": "",
+      "source": "Harvard Nutrition Source"
+    },
+    {
+      "profileId": "P1",
+      "change": "No change found",
+      "value": null,
+      "unit": "",
+      "source": ""
+    },
+    {
+      "profileId": "P29",
+      "change": "No change found",
+      "value": null,
+      "unit": "",
+      "source": ""
+    }
+  ],
+  "lastResearched": "2026-11-24",
   "versions": [
     {
       "date": "2026-10-09",
       "file": "FitPlate_Nutrients_2026-10-09.md"
+    },
+    {
+      "date": "2026-11-24",
+      "file": "FitPlate_Nutrients_2026-11-24.md"
     }
   ],
   "mergeMethod": {
@@ -357,6 +607,7 @@
   },
   "mergeNotes": [],
   "needsReview": [
-    "app_default_target.age_60_plus = 840 has no ICMR row to match (age_60_plus: \"Not found in ICMR-NIN 2020; app uses adult RDA by sex\"); set to null"
+    "2026-11-24 vitamin-a: \"group\" has unexpected value \"age_60_plus_male\"; treated as not found",
+    "2026-11-24 vitamin-a: \"group\" has unexpected value \"age_60_plus_female\"; treated as not found"
   ]
 }

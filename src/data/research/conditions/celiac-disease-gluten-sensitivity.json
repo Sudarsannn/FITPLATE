@@ -1,0 +1,628 @@
+{
+  "id": "celiac-disease-gluten-sensitivity",
+  "type": "condition",
+  "name": "Celiac disease and gluten sensitivity",
+  "surveyQuestion": "Do you have any of these health conditions? (select all that apply) -> Celiac disease or gluten sensitivity. Check question: Has a doctor diagnosed celiac disease (blood test or biopsy), wheat allergy, or non-celiac gluten sensitivity, or do you avoid gluten because wheat upsets you? Yes, celiac diagnosed / Yes, gluten or wheat sensitivity diagnosed / I avoid gluten but was never tested / No. Safety question: Are you thinking of starting a gluten-free diet before testing, or is this for a child under 18? (Yes: no targets set; see a doctor first and keep eating gluten until tests are done)",
+  "targets": [
+    {
+      "nutrient": "energy",
+      "unit": "kcal/day",
+      "generalAdult": 2110,
+      "profileValue": 2110,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); no celiac-specific change found. Weight regain after diagnosis may need a doctor/dietitian plan"
+    },
+    {
+      "nutrient": "protein",
+      "unit": "g/kg/day",
+      "generalAdult": 0.83,
+      "profileValue": 0.83,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "total_fat",
+      "unit": "% energy",
+      "generalAdult": 30,
+      "profileValue": 30,
+      "min": null,
+      "max": 30,
+      "direction": "same",
+      "source": "WHO 2023; DGI 2024. Gluten-free packaged foods often carry more fat (label surveys, secondary)"
+    },
+    {
+      "nutrient": "saturated_fat",
+      "unit": "% energy",
+      "generalAdult": 10,
+      "profileValue": 10,
+      "min": null,
+      "max": 10,
+      "direction": "same",
+      "source": "WHO 2023"
+    },
+    {
+      "nutrient": "trans_fat",
+      "unit": "% energy",
+      "generalAdult": 1,
+      "profileValue": 1,
+      "min": null,
+      "max": 1,
+      "direction": "same",
+      "source": "WHO 2023"
+    },
+    {
+      "nutrient": "mufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found"
+    },
+    {
+      "nutrient": "pufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found"
+    },
+    {
+      "nutrient": "omega_3_fish",
+      "unit": "servings/week",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found"
+    },
+    {
+      "nutrient": "dietary_cholesterol",
+      "unit": "mg/day",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found"
+    },
+    {
+      "nutrient": "total_carbohydrate",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No ICMR total found; DGI 2024 cereal cap applies (secondary, unverified). Swap gluten grains for gluten-free grains, not for refined starch"
+    },
+    {
+      "nutrient": "added_sugar",
+      "unit": "g/day",
+      "generalAdult": null,
+      "profileValue": 25,
+      "min": null,
+      "max": 25,
+      "direction": "limit",
+      "source": "FitPlate app-wide cap (WHO 2015 5% of energy, conditional); gluten-free biscuits, cakes and mixes can be high (est.)"
+    },
+    {
+      "nutrient": "fibre",
+      "unit": "g/day",
+      "generalAdult": 30,
+      "profileValue": 30,
+      "min": 30,
+      "max": null,
+      "direction": "raise",
+      "source": "About 30 g per 2,000 kcal (as P4/P18); FitPlate keeps the same total and flags it as at risk on a gluten-free diet; sources: ragi, jowar, bajra, maize, pulses, vegetables, fruit (IFCT 2017)"
+    },
+    {
+      "nutrient": "sodium",
+      "unit": "mg/day",
+      "generalAdult": 2000,
+      "profileValue": 2000,
+      "min": null,
+      "max": 2000,
+      "direction": "limit",
+      "source": "Topic 18; WHO 2012; DGI 2024"
+    },
+    {
+      "nutrient": "salt",
+      "unit": "g/day",
+      "generalAdult": 5,
+      "profileValue": 5,
+      "min": null,
+      "max": 5,
+      "direction": "limit",
+      "source": "As above"
+    },
+    {
+      "nutrient": "potassium",
+      "unit": "mg/day",
+      "generalAdult": 3500,
+      "profileValue": 3500,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); topic 19"
+    },
+    {
+      "nutrient": "calcium",
+      "unit": "mg/day",
+      "generalAdult": 1000,
+      "profileValue": 1000,
+      "min": 1000,
+      "max": null,
+      "direction": "raise",
+      "source": "ICMR-NIN 2020 (secondary, unverified); topic 15; 1,200 mg at 60+ and after menopause; priority for bone (P20); ragi is the top gluten-free source (IFCT 2017)"
+    },
+    {
+      "nutrient": "iron",
+      "unit": "mg/day",
+      "generalAdult": 19,
+      "profileValue": 19,
+      "min": 19,
+      "max": null,
+      "direction": "raise",
+      "source": "ICMR-NIN 2020 (secondary, unverified) (women 29); topic 21; doctor tests ferritin and sets any iron tablet (P11)"
+    },
+    {
+      "nutrient": "magnesium",
+      "unit": "mg/day",
+      "generalAdult": 440,
+      "profileValue": 440,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified) (women 370); topic 17"
+    },
+    {
+      "nutrient": "zinc",
+      "unit": "mg/day",
+      "generalAdult": 17,
+      "profileValue": 17,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified) (women 13.2); topic 22"
+    },
+    {
+      "nutrient": "vitamin_d",
+      "unit": "ug/day",
+      "generalAdult": 15,
+      "profileValue": 15,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); topic 2; lab-guided dose is a doctor decision (P12)"
+    },
+    {
+      "nutrient": "vitamin_b12",
+      "unit": "ug/day",
+      "generalAdult": 2.2,
+      "profileValue": 2.2,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); topic 13; doctor checks level (P12)"
+    },
+    {
+      "nutrient": "folate",
+      "unit": "ug DFE/day",
+      "generalAdult": 300,
+      "profileValue": 300,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified) (women 220); topic 12; gluten-free flours are rarely fortified"
+    },
+    {
+      "nutrient": "water",
+      "unit": "ml/day",
+      "generalAdult": 2500,
+      "profileValue": 2500,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Topic 30 (women 2,000 ml); no celiac-specific fluid value found. Follow your doctor's advice."
+    }
+  ],
+  "bloodMarkers": [
+    {
+      "marker": "tTG-IgA (tissue transglutaminase IgA antibody) with total IgA",
+      "target": "Diagnostic test only valid while eating gluten; positive cut-off is lab-specific (Not found as one number); the doctor interprets. After diagnosis the doctor may repeat it to check diet adherence; no FitPlate target",
+      "unit": "lab-specific (U/mL)",
+      "source": "ACG 2023 via AAFP and JAMA summaries (secondary); ICMR celiac guideline (not opened)"
+    },
+    {
+      "marker": "Duodenal biopsy (Marsh grade)",
+      "target": "Doctor-led confirmation; the app stores no value",
+      "unit": "Not applicable",
+      "source": "ACG 2023 via MDCalc summary; IAPM-ISG 2021 biopsy consensus (via search)"
+    },
+    {
+      "marker": "Haemoglobin",
+      "target": "WHO anaemia cut-offs 13.0 (men) and 12.0 g/dL (women) as in P11; doctor decides",
+      "unit": "g/dL",
+      "source": "WHO 2011 (as P11; secondary, unverified)"
+    },
+    {
+      "marker": "Ferritin",
+      "target": "Doctor-interpreted; see P11 and topic 21",
+      "unit": "ug/L",
+      "source": "As P11"
+    },
+    {
+      "marker": "Vitamin B12, folate",
+      "target": "Stored only; doctor-interpreted; see P12, topics 12 and 13",
+      "unit": "pg/mL; ng/mL",
+      "source": "As P12"
+    },
+    {
+      "marker": "25-OH vitamin D",
+      "target": "Stored only; ranges as P12",
+      "unit": "ng/mL",
+      "source": "As P12"
+    },
+    {
+      "marker": "DEXA bone density (T-score)",
+      "target": "Doctor-led; adults at diagnosis may be scanned; see P20",
+      "unit": "T-score",
+      "source": "NICE NG20 surveillance discussion (via search; exact wording not confirmed); P20"
+    },
+    {
+      "marker": "Calcium, magnesium, zinc, ALT, TSH, blood sugar",
+      "target": "Stored only; no FitPlate comment. Celiac disease is linked with raised liver enzymes and thyroid and type 1 diabetes autoimmunity (general; Not sourced here)",
+      "unit": "-",
+      "source": "Not found in this run"
+    }
+  ],
+  "waterMl": {
+    "min": 1500,
+    "max": 2500,
+    "notes": "No change from the general FitPlate range (topic 30: 2,500 ml men, 2,000 ml women as drinks, est.). Celiac disease alone does not change the target. During diarrhoea keep drinking as usual and see a doctor if it lasts more than a few days, or if there is blood, fever or dizziness. With kidney, heart or liver disease, pregnancy, a fluid limit or a diuretic show the general range only. Follow your doctor's advice."
+  },
+  "sodiumMgMax": 2000,
+  "dietaryCholesterolMgMax": null,
+  "foodsFavour": [
+    "rice, idli, dosa, poha (check), khichdi, steamed rice dishes",
+    "ragi, jowar, bajra, maize (makka), rajgira (amaranth), kuttu (buckwheat), quinoa, sabudana in measured portions",
+    "dals, rajma, chole, chana, moong, sprouts and besan from a gluten-free source",
+    "vegetables, fruit, curd, chaas, paneer, eggs, fish, chicken cooked at home",
+    "ragi and sesame for calcium; methi, drumstick and amaranth leaves; nuts and seeds (topics 15, 21)",
+    "packaged foods only with a gluten-free label (FSSAI: below 20 mg/kg) or an ingredient list checked every time",
+    "pure or certified gluten-free oats only after the doctor/dietitian agrees"
+  ],
+  "foodsLimit": [
+    "wheat, atta, maida, suji/rava, dalia, sevai/semiya, barley (jau), rye and all their products (roti, paratha, naan, puri, bread, pav, biscuits, noodles, pasta)",
+    "regular oats and 'multigrain' atta or sattu blends (barley or wheat may be inside)",
+    "soy sauce, malt, malt vinegar, beer, sauces and ketchup, stock cubes, instant soups, masala blends and compounded hing unless the label says gluten-free",
+    "papad, namkeen, fried foods cooked in shared oil, street food from shared tawas",
+    "refined gluten-free biscuits, cakes and breads as daily foods (more sugar and fat, less protein and fibre in label surveys; secondary)",
+    "'gluten-free' claims on loose flour from a shared chakki"
+  ],
+  "goodFitDishes": [
+    {
+      "dishNumber": 9,
+      "dishName": "Idli with Sambar"
+    },
+    {
+      "dishNumber": 4,
+      "dishName": "Masala Dosa"
+    },
+    {
+      "dishNumber": 5,
+      "dishName": "Dal Tadka"
+    },
+    {
+      "dishNumber": 8,
+      "dishName": "Chole (Chana Masala)"
+    },
+    {
+      "dishNumber": 12,
+      "dishName": "Rajma Chawal"
+    },
+    {
+      "dishNumber": 16,
+      "dishName": "Besan Chilla"
+    },
+    {
+      "dishNumber": 26,
+      "dishName": "Moong Dal Chilla"
+    },
+    {
+      "dishNumber": 52,
+      "dishName": "Moong Dal Khichdi"
+    },
+    {
+      "dishNumber": 56,
+      "dishName": "Pesarattu"
+    },
+    {
+      "dishNumber": 71,
+      "dishName": "Ragi Dosa"
+    },
+    {
+      "dishNumber": 41,
+      "dishName": "Pongal"
+    },
+    {
+      "dishNumber": 35,
+      "dishName": "Curd Rice"
+    },
+    {
+      "dishNumber": 37,
+      "dishName": "Bhindi Masala"
+    },
+    {
+      "dishNumber": 32,
+      "dishName": "Aloo Gobi"
+    },
+    {
+      "dishNumber": 44,
+      "dishName": "Baingan Bharta"
+    },
+    {
+      "dishNumber": 66,
+      "dishName": "Sprouts Chaat"
+    },
+    {
+      "dishNumber": 45,
+      "dishName": "Tandoori Chicken"
+    },
+    {
+      "dishNumber": 33,
+      "dishName": "Goan Fish Curry"
+    },
+    {
+      "dishNumber": 38,
+      "dishName": "Egg Curry"
+    },
+    {
+      "dishNumber": 14,
+      "dishName": "Egg Bhurji"
+    },
+    {
+      "dishNumber": 21,
+      "dishName": "Masala Omelette"
+    },
+    {
+      "dishNumber": 88,
+      "dishName": "Avial"
+    },
+    {
+      "dishNumber": 61,
+      "dishName": "Appam with Veg Stew"
+    },
+    {
+      "dishNumber": 17,
+      "dishName": "Palak Paneer"
+    }
+  ],
+  "cautionDishes": [
+    {
+      "dishNumber": 6,
+      "dishName": "Upma",
+      "reason": "Made from suji/rava (wheat)"
+    },
+    {
+      "dishNumber": 76,
+      "dishName": "Semiya Upma",
+      "reason": "Semiya/vermicelli is wheat"
+    },
+    {
+      "dishNumber": 36,
+      "dishName": "Rava Dosa",
+      "reason": "Rava is wheat"
+    },
+    {
+      "dishNumber": 11,
+      "dishName": "Aloo Paratha",
+      "reason": "Wheat atta dough"
+    },
+    {
+      "dishNumber": 81,
+      "dishName": "Paneer Paratha",
+      "reason": "Wheat atta dough"
+    },
+    {
+      "dishNumber": 46,
+      "dishName": "Methi Thepla",
+      "reason": "Wheat atta dough"
+    },
+    {
+      "dishNumber": 65,
+      "dishName": "Puri Bhaji",
+      "reason": "Puri is wheat"
+    },
+    {
+      "dishNumber": 20,
+      "dishName": "Vada Pav",
+      "reason": "Pav is maida bread"
+    },
+    {
+      "dishNumber": 29,
+      "dishName": "Misal Pav",
+      "reason": "Pav is maida bread"
+    },
+    {
+      "dishNumber": 13,
+      "dishName": "Pav Bhaji",
+      "reason": "Pav is maida bread"
+    },
+    {
+      "dishNumber": 77,
+      "dishName": "Keema Pav",
+      "reason": "Pav is maida bread"
+    },
+    {
+      "dishNumber": 86,
+      "dishName": "Bombay Veg Sandwich",
+      "reason": "Bread"
+    },
+    {
+      "dishNumber": 59,
+      "dishName": "Chicken Kathi Roll",
+      "reason": "Maida or wheat roll"
+    },
+    {
+      "dishNumber": 92,
+      "dishName": "Kothu Parotta",
+      "reason": "Parotta is maida"
+    },
+    {
+      "dishNumber": 15,
+      "dishName": "Veg Hakka Noodles",
+      "reason": "Wheat noodles and soy sauce"
+    },
+    {
+      "dishNumber": 64,
+      "dishName": "Schezwan Noodles",
+      "reason": "Wheat noodles and sauces"
+    },
+    {
+      "dishNumber": 94,
+      "dishName": "Pasta in Red Sauce (Indian-style)",
+      "reason": "Wheat pasta"
+    },
+    {
+      "dishNumber": 47,
+      "dishName": "Veg Manchurian",
+      "reason": "Maida/cornflour batter and soy sauce"
+    },
+    {
+      "dishNumber": 79,
+      "dishName": "Gobi Manchurian",
+      "reason": "Maida/cornflour batter and soy sauce"
+    },
+    {
+      "dishNumber": 87,
+      "dishName": "Chilli Chicken",
+      "reason": "Soy sauce, flour coating"
+    },
+    {
+      "dishNumber": 34,
+      "dishName": "Chilli Paneer",
+      "reason": "Soy sauce, flour coating"
+    },
+    {
+      "dishNumber": 28,
+      "dishName": "Chicken 65",
+      "reason": "Flour in batter in many kitchens (est.)"
+    },
+    {
+      "dishNumber": 73,
+      "dishName": "Rava Fish Fry",
+      "reason": "Rava coating"
+    },
+    {
+      "dishNumber": 10,
+      "dishName": "Veg Fried Rice",
+      "reason": "Soy sauce is usually wheat-based"
+    },
+    {
+      "dishNumber": 31,
+      "dishName": "Indian-style Overnight Oats",
+      "reason": "Regular oats are often cross-contaminated; only certified gluten-free oats, if the doctor agrees"
+    },
+    {
+      "dishNumber": 97,
+      "dishName": "Gulab Jamun",
+      "reason": "Many recipes use maida (est.)"
+    },
+    {
+      "dishNumber": 39,
+      "dishName": "Veg Biryani",
+      "reason": "Dum biryani is sometimes sealed with wheat dough; ask"
+    },
+    {
+      "dishNumber": 24,
+      "dishName": "Medu Vada",
+      "reason": "Hing and shared frying oil; some batters add rava (est.)"
+    },
+    {
+      "dishNumber": 58,
+      "dishName": "Khaman Dhokla",
+      "reason": "Hing; some mixes add suji (est.)"
+    },
+    {
+      "dishNumber": 72,
+      "dishName": "Kadhi Pakora",
+      "reason": "Hing and masala check; besan source"
+    },
+    {
+      "dishNumber": 91,
+      "dishName": "Aloo Tikki",
+      "reason": "Bread crumbs or maida binder in many recipes (est.)"
+    }
+  ],
+  "conflictsWith": [
+    {
+      "profileId": "lactose-intolerance",
+      "rule": "Untreated celiac disease can cause secondary lactose intolerance that often fades as the gut heals; lactose limits may be temporary; changes are doctor/dietitian-led (P18)"
+    },
+    {
+      "profileId": "irritable-bowel-syndrome",
+      "rule": "IBS is diagnosed only after celiac testing; do not drop wheat before tests; one change at a time with a diary (P16)"
+    },
+    {
+      "profileId": "iron-deficiency-anaemia",
+      "rule": "Celiac disease is a cause of iron-deficiency anaemia; iron target raised in priority; ferritin and any tablet are doctor-led (P11, topic 21)"
+    },
+    {
+      "profileId": "vitamin-d-b12-deficiency",
+      "rule": "Malabsorption can lower vitamin D, B12 and folate; levels and doses are doctor-led (P12)"
+    },
+    {
+      "profileId": "osteoporosis-low-bone-density",
+      "rule": "Bone loss can accompany celiac disease; calcium 1,000-1,200 mg and DEXA are doctor-led (P20)"
+    },
+    {
+      "profileId": "type-2-diabetes",
+      "rule": "Gluten-free breads, biscuits and rice-based swaps can raise glycaemic load; the diabetes carbohydrate and fibre rules (P1) apply on top of gluten-free rules"
+    },
+    {
+      "profileId": "vegan-diet",
+      "rule": "Vegan plus gluten-free narrows protein and B12 sources; use pulses, soy, quinoa and fortified foods; B12 is doctor-checked (P34)"
+    },
+    {
+      "profileId": "jain-diet",
+      "rule": "Jain plus gluten-free: hing is common in Jain cooking, so use gluten-free hing; iron and B12 gaps as P33 (P33)"
+    }
+  ],
+  "requiresDoctorInput": true,
+  "requiresDoctorInputStated": true,
+  "fluidNote": "Follow your doctor's advice",
+  "warnings": [
+    "Do not start a gluten-free diet before blood tests and, if advised, a biopsy; stopping gluten first can give a false-negative result",
+    "Celiac disease can only be diagnosed by a doctor; FitPlate does not diagnose",
+    "Once diagnosed, the diet is strict and lifelong; even small amounts of gluten matter, so check labels, shared utensils, chakki-milled flour and eating out",
+    "Millets, besan and sattu are not automatically safe: cross-contamination at mills, 'multigrain' blends and barley sattu contain gluten",
+    "Children under 18, pregnancy and breastfeeding: doctor and dietitian first",
+    "Blood in stool, weight loss, severe diarrhoea, anaemia, blistering itchy rash, fractures or poor growth in a child: talk to a doctor",
+    "The app never suggests supplement doses; iron, calcium, vitamin D, B12 and folate tablets are doctor-led"
+  ],
+  "lastResearched": "2026-11-24",
+  "versions": [
+    {
+      "date": "2026-11-24",
+      "file": "FitPlate_Nutrients_2026-11-24.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3); max as safety limit",
+    "limits": "safety limit (lower on conflict)",
+    "lists": "union",
+    "requiresDoctorInput": "stated true in any version, else newest version (missing flag + limits → true)"
+  },
+  "mergeNotes": [],
+  "needsReview": []
+}

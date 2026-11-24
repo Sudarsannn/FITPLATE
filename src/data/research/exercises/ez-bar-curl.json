@@ -1,0 +1,670 @@
+{
+  "id": "ez-bar-curl",
+  "number": 39,
+  "name": "EZ-bar curl",
+  "otherNames": [
+    "EZ curl",
+    "EZ barbell curl",
+    "Cambered bar curl",
+    "Curl bar curl",
+    "Standing EZ bar biceps curl"
+  ],
+  "section": "gym",
+  "type": "strength",
+  "equipment": [
+    "EZ bar",
+    "Weight plates",
+    "Collars or clips"
+  ],
+  "noEquipmentAlternative": "Dumbbell curl (Home 19) or resistance band curl; towel curl or loaded backpack curl with nothing at all",
+  "musclesPrimary": [
+    "biceps brachii (long and short heads)",
+    "brachialis",
+    "brachioradialis"
+  ],
+  "musclesSecondary": [
+    "forearm flexors and extensors",
+    "anterior deltoid",
+    "upper back",
+    "abdominals",
+    "glutes"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": false,
+  "met": 3.5,
+  "compendiumCode": null,
+  "metOptions": [
+    {
+      "code": "02052",
+      "met": 5,
+      "activity": "Extras (text only, harder work): code 02052 (5.0 METs, squats and deadlifts) and code 02050 (6.0 METs, vigorous effort, power lifting or body building) apply to heavier work; not used here (carried ov"
+    },
+    {
+      "code": "02050",
+      "met": 6,
+      "activity": "Extras (text only, harder work): code 02052 (5.0 METs, squats and deadlifts) and code 02050 (6.0 METs, vigorous effort, power lifting or body building) apply to heavier work; not used here (carried ov"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "10-12 at RIR 2-3",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "1-2 s curl, 1 s squeeze, 3 s lower",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 3,
+      "reps": "10-12 light (circuit station)",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "1-2 s curl, 1 s squeeze, 3 s lower",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "8-12 at RIR 2-3",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "1-2 s curl, 1 s squeeze, 3 s lower",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "strength",
+      "sets": 3,
+      "reps": "8-10 strict",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "1-2 s curl, 1 s squeeze, 3 s lower",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 2,
+      "reps": "15-20 light",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "1 s curl, 0 s squeeze, 2 s lower",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "10-12 at RIR 2",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "1-2 s curl, 1 s squeeze, 3 s lower",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "8-12 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "1-2 s curl, 1 s squeeze, 3 s lower",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "strength",
+      "sets": 4,
+      "reps": "6-8 at RIR 2",
+      "timeSec": null,
+      "restSec": 105,
+      "tempo": "1-2 s curl, 1 s squeeze, 3 s lower",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "20 at RIR 2",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "1 s curl, 0 s squeeze, 2 s lower",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "12-15",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "1-2 s curl, 1 s squeeze, 3 s lower",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "8-15 at RIR 0-2",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "1-2 s curl, 1 s squeeze, 3 s lower",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": 5,
+      "reps": "5-8 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 120,
+      "tempo": "1-2 s curl, 1 s squeeze, 3 s lower",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "endurance",
+      "sets": 4,
+      "reps": "20-25",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "1 s curl, 0 s squeeze, 2 s lower",
+      "perWeek": 3
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "side",
+    "landmarks": [
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip"
+    ],
+    "phases": [
+      {
+        "name": "start_arms_nearly_straight",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": ">= 160",
+        "parsed": {
+          "op": ">=",
+          "value": 160,
+          "max": null
+        }
+      },
+      {
+        "name": "top_fully_curled",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": "<= 50",
+        "parsed": {
+          "op": "<=",
+          "value": 50,
+          "max": null
+        }
+      },
+      {
+        "name": "elbow_pinned",
+        "joint": "shoulder (hip-shoulder-elbow)",
+        "angleDeg": "<= 30",
+        "parsed": {
+          "op": "<=",
+          "value": 30,
+          "max": null
+        }
+      },
+      {
+        "name": "lean_limit",
+        "joint": "trunk lean from vertical (shoulder-hip line against the vertical, side view)",
+        "angleDeg": "<= 15",
+        "parsed": {
+          "op": "<=",
+          "value": 15,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 2
+  },
+  "formChecks": [
+    {
+      "joint": "elbow",
+      "rule": "elbow angle > 50 degrees at the top (equals top phase threshold; rep not counted)",
+      "message": "Curl higher: bring the bar toward your shoulders"
+    },
+    {
+      "joint": "elbow",
+      "rule": "elbow angle < 160 degrees at the bottom (equals start phase threshold; rep not counted)",
+      "message": "Lower all the way to nearly straight arms"
+    },
+    {
+      "joint": "shoulder",
+      "rule": "separate flag: elbow drift, shoulder angle > 30 degrees (equals elbow_pinned threshold)",
+      "message": "Pin your elbows to your sides"
+    },
+    {
+      "joint": "torso",
+      "rule": "separate flag: trunk lean from vertical > 15 degrees (equals lean_limit threshold)",
+      "message": "Stand tall: do not lean back to swing"
+    },
+    {
+      "joint": "elbow",
+      "rule": "rep duration < 2 s",
+      "message": "Slow down: control each rep"
+    }
+  ],
+  "safetyFlags": [
+    "light_load_only",
+    "elbows_pinned_at_sides",
+    "no_swinging_or_leaning_back",
+    "straight_wrists",
+    "slow_lowering",
+    "no_long_breath_holding",
+    "use_collars_and_load_evenly",
+    "hip_hinge_to_lift_and_rack_bar",
+    "stop_with_sharp_elbow_or_wrist_pain",
+    "lower_back_pain_modify",
+    "osteoporosis_ask_doctor",
+    "pregnancy_ask_obstetrician",
+    "recent_surgery_follow_surgeon_limits"
+  ],
+  "progressions": [
+    "add small load by double progression",
+    "slower lowering or longer pause at the top",
+    "preacher curl (Gym 40), close-grip, reverse-grip or incline EZ curl"
+  ],
+  "regressions": [
+    "dumbbell bicep curl (Home 19)",
+    "resistance band curl standing on the band",
+    "half-range or back-to-wall curl with the empty bar"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "front, 1.5 m",
+      "shows": "EZ bar with collars locked, hands on the inner angled grips about shoulder width",
+      "textOverlay": "Hands on the angled grips"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "start: arms nearly straight, elbows at ribs, chest tall",
+      "textOverlay": "Elbows to ribs"
+    },
+    {
+      "seconds": 10,
+      "angle": "side, 2.5 m",
+      "shows": "one slow rep: curl up, pause, lower in 2-3 s",
+      "textOverlay": "Curl up, lower slowly"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "wrong: elbows drifting forward; right: elbows pinned",
+      "textOverlay": "Elbows stay put"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "wrong: leaning back and swinging; right: standing tall",
+      "textOverlay": "Stand tall, arms only"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 1.5 m",
+      "shows": "wrong: wrist bent back; right: wrist straight",
+      "textOverlay": "Straight wrists"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "back-to-wall option for people who swing",
+      "textOverlay": "Back near a wall, no swing"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "home: dumbbell or band curl",
+      "textOverlay": "Home: dumbbell or band curl"
+    }
+  ],
+  "lastResearched": "2026-11-24",
+  "setupSteps": [
+    "Choose the bar. Take an EZ bar with a firm bend; a steeper bend shifts work from the biceps toward the brachioradialis (one coaching source, snippet). A straight bar is an alternative if the wrists are comfortable.",
+    "Load light. Pick a load you can curl for 10-12 strict reps without swinging. Plate weights and bar weights vary by gym (the bar itself is often lighter than a 20 kg straight bar; not standardised, Not found as a fixed number). Fit collars or clips on both sides so the plates cannot slide.",
+    "Stand. Feet about shoulder-width, knees soft, chest tall, ribs down, shoulders down away from the ears.",
+    "Grip. Hold the bar with palms facing up and forward, hands on the angled sections about shoulder-width apart. A closer grip is said to favour the long head (AthleanX, coaching claim; no EMG test of grip width was found). The 2023 bodybuilder study placed the hands about shoulder width.",
+    "Start position. Let the bar hang in front of the thighs with the arms nearly straight, elbows beside the ribs, wrists straight.",
+    "Back-to-wall option. If you tend to swing, stand with your back lightly against a wall or pillar (Gravitus, snippet). Do not let the lower back arch off or press into the wall hard.",
+    "Check the view. For the camera, stand side-on to the phone so the shoulder, elbow, wrist and hip are all visible."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Take the bar to the start",
+      "action": "Lift the bar from the rack or floor with a hip hinge, stand tall and let the arms hang with the bar near the thighs.",
+      "feel": "Light stretch at the front of the arm; grip steady.",
+      "breathing": "Breathe in.",
+      "tempo": null,
+      "visualCheck": "Side: upper arm vertical, elbow beside the ribs, arm nearly straight; front: both elbows the same width, bar level."
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Set the shoulders and trunk",
+      "action": "Shoulders down, chest tall, ribs down, hips still, knees soft.",
+      "feel": "Stable trunk, neck long.",
+      "breathing": "Normal.",
+      "tempo": null,
+      "visualCheck": "Side: ears over shoulders, no backward lean."
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Curl up",
+      "action": "Bend the elbows and raise the bar toward the shoulders; the upper arms do not move forward.",
+      "feel": "Front of the upper arm working.",
+      "breathing": "Breathe out.",
+      "tempo": null,
+      "visualCheck": "Side: elbows stay beside the ribs; the bar travels in a smooth arc, not swung by the hips."
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Finish at the top",
+      "action": "Curl until the forearms are close to vertical and the bar is near the upper chest, without lifting the elbows or shrugging.",
+      "feel": "Strong biceps squeeze.",
+      "breathing": "Finish the exhale.",
+      "tempo": null,
+      "visualCheck": "Side: elbow angle about 50 degrees or less (est.), shoulders still low; front: wrists straight."
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Pause",
+      "action": "Squeeze for about 1 second.",
+      "feel": "Peak contraction.",
+      "breathing": "Brief hold only; do not strain.",
+      "tempo": null,
+      "visualCheck": "Side: trunk upright, elbows still beside the ribs."
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Lower under control",
+      "action": "Slowly straighten the elbows until the arms are almost straight again, elbows still at your sides.",
+      "feel": "Biceps controlling the weight on the way down.",
+      "breathing": "Breathe in.",
+      "tempo": null,
+      "visualCheck": "Side: no drop or rebound at the bottom; elbows do not move back or forward."
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Reset",
+      "action": "Pause with the arms nearly straight and the bar near the thighs, then repeat.",
+      "feel": "Tension reset.",
+      "breathing": "Breathe in.",
+      "tempo": null,
+      "visualCheck": "Side: shoulders low, ribs down."
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Rack the bar",
+      "action": "After the last rep, hinge at the hips with a flat back and lower the bar to the floor or the rack with both hands.",
+      "feel": "Legs and trunk doing the lowering, not the back.",
+      "breathing": "Breathe out.",
+      "tempo": null,
+      "visualCheck": "Side: back flat, knees bent."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Swinging the bar with momentum",
+      "text": "Swinging the bar with momentum. Why: it takes work off the biceps and loads the elbow and lower back; the most cited curl error (Livestrong, BoxRox, Rep Fitness, snippets). Fix: lower the weight, pause 1 second at the top, or stand with your back near a wall."
+    },
+    {
+      "title": "Using too heavy a load",
+      "text": "Using too heavy a load. Why: form breaks and the body takes over. Fix: reduce until every rep is strict, with a 2-3 second lowering."
+    },
+    {
+      "title": "Elbows drifting forward or flaring out",
+      "text": "Elbows drifting forward or flaring out. Why: the front shoulder helps and the biceps get less tension. Fix: think \"elbows to ribs\" and keep the upper arms still."
+    },
+    {
+      "title": "Leaning back at the top",
+      "text": "Leaning back at the top. Why: stresses the lower back, especially as fatigue builds. Fix: stand tall, ribs down, squeeze the glutes lightly, and lighten the load."
+    },
+    {
+      "title": "Dropping the bar on the way down",
+      "text": "Dropping the bar on the way down. Why: loses half the exercise and jerks the elbow. Fix: take 2-3 seconds to lower and straighten the arms under control."
+    },
+    {
+      "title": "Short range of motion",
+      "text": "Short range of motion. Why: the biceps get less work if the arms never straighten or the bar never rises. Fix: start almost straight and curl until the forearms are near vertical."
+    },
+    {
+      "title": "Bending the wrists",
+      "text": "Bending the wrists. Why: strains the forearm and wrist and shifts load. Fix: keep wrists straight on the angled grips; try a slightly closer or wider grip if one hand is uncomfortable."
+    },
+    {
+      "title": "Shrugging the shoulders",
+      "text": "Shrugging the shoulders. Why: shifts work to the upper trapezius. Fix: shoulders down and still."
+    },
+    {
+      "title": "Hips thrusting forward",
+      "text": "Hips thrusting forward. Why: it starts the bar with the legs. Fix: keep the knees soft and still and the hips under the shoulders."
+    }
+  ],
+  "safetyNotes": [
+    "Keep the load light enough to hold the elbows still. If you swing, lean or let the elbows drift, the weight is too heavy.",
+    "Elbow and wrist caution. Distal biceps tendinopathy (pain at the front of the elbow crease) can follow overuse of elbow bending and hand turning; one physiotherapy source advises going easy on curls during a flare and dropping the load a lot (snippet). The research on conservative care is thin, and one rupture study listed curls as the activity in 5 of 55 cases (9%; figures from a search summary; deadlifts 67%). A sudden cheat swing loading the tendon is a plausible risk but no source states it directly (inference). Lower the load, keep the lowering slow, use the EZ bar for wrist comfort and see a clinician if pain lasts.",
+    "High blood pressure: avoid long breath-holding; stop 2-3 reps before failure.",
+    "Barbell handling: always fit collars, load plates evenly, lift the bar from the rack or floor with a hip hinge and a flat back, do not drop the bar from a curled position, and keep the area around you clear.",
+    "Spotter: not needed for light loads; for heavy sets ask someone to stand nearby, never to pull the bar up.",
+    "Gym etiquette: re-rack the EZ bar and strip plates, wipe the bar grips, do not curl in the squat rack when others need it, do not film other members."
+  ],
+  "sources": [
+    "2024 Adult Compendium of Physical Activities (Herrmann et al., J Sport Health Sci 2024): code 02054, 3.5 METs, resistance training, multiple exercises, 8-15 reps at varied resistance; older-adult code 0205460 at 4.3. https://pacompendium.com/conditioning-exercise ; https://pubmed.ncbi.nlm.nih.gov/38242596/ ; https://pacompendium.com/wp-content/uploads/2024/01/2024-adult-compendium_1_2024.pdf ; https://pacompendium.com/older-adult-compendium/ (snippets only). Extras 02052 (5.0) and 02050 (6.0) carried over from earlier files.",
+    "PeerJ 2018, Differences in electromyographic activity of biceps brachii and brachioradialis while performing three variants of curl (EZ bar higher than dumbbell across the rep; EZ vs straight bar a matter of comfort). https://peerj.com/articles/5165 ; https://pubmed.ncbi.nlm.nih.gov/30013836 ; https://pmc.ncbi.nlm.nih.gov/articles/PMC6047503/ (snippets only)",
+    "2023 study in competitive bodybuilders, straight versus EZ barbell (slight biceps advantage for the straight bar; hands about shoulder width). https://pubmed.ncbi.nlm.nih.gov/36810497 ; https://pmc.ncbi.nlm.nih.gov/articles/PMC9944112 (snippets only)",
+    "ExRx.net, Barbell curl page (cambered-bar variant also called EZ bar curl). https://exrx.net/WeightExercises/Biceps/BBCurl (snippet only)",
+    "Fitness-site form guides: AthleanX, Fitbod, Gravitus, Strengthlog, Muscle & Strength, Generation Iron, Sportskeeda, Fitnessvolt, Catalyst Athletics, Coachweb (grip, elbows at sides, back-to-wall, muscles worked, variants). https://learn.athleanx.com/articles/how-to-do-ez-bar-curls ; https://fitbod.me/exercises/ez-bar-curl ; https://gravitus.com/guides/exercises/ez-bar-curl ; https://www.strengthlog.com/ez-curl/ ; https://www.muscleandstrength.com/exercises/ez-bar-curl.html ; https://generationiron.com/supinated-ez-bar-curl-exercise-guide/ ; https://sportskeeda.com/health-and-fitness/add-ez-bar-curls-arms-routine-muscular-toned-biceps ; https://catalystathletics.com/exercise/838/EZ-Curl/ ; https://www.coachweb.com/biceps-exercises/7123/how-to-master-the-ez-bar-curl (snippets only; fitness-site level)",
+    "EZ bar versus straight bar, retail and media pieces: Rogue Fitness, Sports Illustrated. https://www.roguefitness.com/gb/theindex/gear-how-tos/ez-curl-bar-vs-straight-bar-which-should-you-use ; https://www.si.com/showcase/fitness/ez-curl-bar-vs-straight-bar (snippets only; commercial)",
+    "Common mistakes: Livestrong, BoxRox, Rep Fitness, Garage Gym Reviews. https://livestrong.com/article/13722123-biceps-curl-mistakes ; https://www.boxrox.com/barbell-curl-mistakes/ ; https://repfitness.com/blogs/training/how-to-do-barbell-curls-with-perfect-form ; https://www.garagegymreviews.com/barbell-curl (snippets only)",
+    "Reps, sets and rest: BoxRox, Bodybuilding.com, Fitbod workouts, MasterClass. https://www.boxrox.com/?p=254743 ; https://bodybuilding.com/fun/one-move-for-big-biceps-the-ez-bar-curl.html ; https://fitbod.me/workouts/beginner-workouts-with-ez-bar-to-build-muscle-mass ; https://www.masterclass.com/articles/barbell-curl-guide (snippets only)",
+    "Cable EZ-bar curl variant: Human Kinetics excerpt. https://us.humankinetics.com/blogs/excerpt/build-strength-with-the-cable-ez-bar-biceps-curl (snippet only)",
+    "Distal biceps tendinopathy and rupture overviews (physiotherapy and case-report sources: UMM Health, Prehab Guys, Sports Injury Physio, PMC6449020, PMC9718688, MDPI J Funct Morphol Kinesiol 2020). https://www.ummhealth.org/health-library/understanding-biceps-tendonitis-distal ; https://library.theprehabguys.com/?p=18806 ; https://www.sports-injury-physio.com/post/distal-biceps-tendonitis-causes-and-treatment ; https://pmc.ncbi.nlm.nih.gov/articles/PMC6449020 ; https://pmc.ncbi.nlm.nih.gov/articles/PMC9718688 ; https://mdpi.com/2411-5142/5/3/56 (snippets only; general, not curl-specific)",
+    "NHS physical activity guidelines for adults 19 to 64 (muscle-strengthening on at least 2 days a week, arms included) and NHS strength exercises (biceps curl instructions for older adults). https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-for-adults-aged-19-to-64/ ; https://www.nhs.uk/live-well/exercise/strength-and-flexibility-exercises/strength-exercises/ (snippets only)",
+    "ACSM (2009), Progression models in resistance training for healthy adults; Zourdos et al. (2016), RIR-based RPE scale (carried over). https://www.sportgeneeskunde.com/wp-content/uploads/ACSM-Position-Stand-Progression-Models-in-Resistance-Training-for-Healthy-Adults.pdf ; https://openrepository.aut.ac.nz/items/efef3b25-6701-4fb5-bb82-55fcd2a26027/full",
+    "Condition rows carried over from earlier gym files (not re-opened this session): Valsalva review https://pubmed.ncbi.nlm.nih.gov/23222073/ ; Colberg et al. 2016 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/ ; ACC summary of AHA 2023 https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2023/12/19/15/33/resistance-exercise-training ; AHA Gibbs et al. https://professional.heart.org/en/science-news/Physical-Activity-as-a-Critical-Component-of-First-Line-Treatment-for-Elevated-BP-or-Cholesterol/commentary ; Donnelly et al. 2009 https://pubmed.ncbi.nlm.nih.gov/19127177/ ; PCOS https://vuir.vu.edu.au/45855/1/1-s2.0-S2772696723000054-main.pdf ; thyroid https://pubmed.ncbi.nlm.nih.gov/37999992/ ; asthma https://www.pharmacymagazine.co.uk/cpd-modules/making-a-difference-in-asthma-care/exercise-and-asthma-528343 ; LIFTMOR https://academic.oup.com/jbmr/article/33/2/211/7605709 ; Osteoporosis Canada https://osteoporosis.ca/wp-content/uploads/2014-07-25-Are-you-too-fit-to-fracture-for-patients.pdf ; ACOG CO 804 https://opqic.org/acog-committee-opinion-no-804-physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period/ ; Contemporary OB/GYN https://www.contemporaryobgyn.net/sweating-it-out-exercise-in-pregnancy ; NNUH https://www.nnuh.nhs.uk/publication/download/post-natal-physiotherapy-advice-and-exercises-v2-1",
+    "Note: all sources for this item were seen only as search-result summaries (pages not opened in full); many are fitness-site blogs. The angle thresholds (160 and 50 degrees for the elbow, 30 degrees for elbow drift), the lean limit (15 degrees), the 2 s minimum rep, and all sets, reps and rest values are FitPlate choices (est.), not validated. Not found: ACE, NASM, Mayo Clinic, Harvard Health or NSCA EZ-curl pages (an ACE entry was searched for and not returned; the ExRx page was seen only as a short excerpt); a BarBend EZ-curl article; an EZ-bar-specific professional-body prescription or Compendium code; a fixed EZ bar weight; an EMG study of grip width on the EZ bar; full text of the 2023 straight-versus-EZ study; a peer-reviewed wrist-comfort trial of EZ versus straight bar; a curl-specific link to distal biceps tendon injury from cheat swings; condition-specific sources for knee pain, lower back pain, shoulder problems, obesity and PCOS; the primary ACOG page."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 28.6,
+      "70kg": 24.5,
+      "80kg": 21.4
+    },
+    "per300kcal": {
+      "60kg": 85.7,
+      "70kg": 73.5,
+      "80kg": 64.3
+    }
+  },
+  "gymAccess": [
+    "full_gym",
+    "basic_gym",
+    "home_equipment"
+  ],
+  "suitsPreferences": [
+    "strength",
+    "beginner",
+    "upper_body_day",
+    "pull_day",
+    "arm_day",
+    "full_body",
+    "small_flat_with_dumbbell_or_band",
+    "20_to_60_min_sessions"
+  ],
+  "swapsByAccess": {
+    "none": "Towel curl or loaded backpack curl (est.), or band curl if available",
+    "home_equipment": "Dumbbell bicep curl and hammer curl (Home 19) or band curl standing on the band",
+    "basic_gym": "EZ-bar curl if available; otherwise straight-bar curl or dumbbell curls",
+    "full_gym": "EZ-bar curl; preacher curl bench (Gym 40) if swing is a problem, or cable EZ-bar curl for steady tension"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "No long breath-holding; stop 2-3 reps before failure; no lifting if resting BP >= 180/120; uncontrolled BP: ask a doctor",
+      "source": "Valsalva systematic review 2013 (PubMed 23222073); NSCA 1999 Valsalva article; Biology of Sport 2019 systematic review"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "2-3 non-consecutive resistance days per week; usual glucose checks if on insulin or sulfonylureas",
+      "source": "ADA position statement, Colberg et al. 2016"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "After clearance: light loads, continuous breathing, no straining",
+      "source": "AHA resistance exercise statement (via ACC summary 2023)"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "Part of 2+ days per week resistance work with aerobic activity",
+      "source": "AHA scientific statement (Gibbs et al.)"
+    },
+    {
+      "condition": "obesity",
+      "status": "ok",
+      "change": "Light and standing; stagger stance if balance is a worry; exercise-specific advice not found",
+      "source": "ACSM weight management position stand (Donnelly et al. 2009)"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "Fits muscle-strengthening guidance; exercise-specific advice not found",
+      "source": "International PCOS guideline 2023"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "Train normally if controlled; start at beginner level with ongoing fatigue",
+      "source": "Systematic review 2023 (PubMed 37999992)"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Warm up and keep reliever inhaler nearby",
+      "source": "Asthma exercise guidance (Pharmacy Magazine CPD)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "ok",
+      "change": "Standing loads the knees little; seated dumbbell curl if standing is painful; condition-specific source not found",
+      "source": "Not found"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Stand tall, no leaning back, light load, back-to-wall or seated dumbbell curl; acute pain or disc problems: ask a professional; condition-specific source not found",
+      "source": "Not found"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "ok",
+      "change": "Keep elbows at the sides, lighter load, stop before pinching; pain over 2 weeks, night pain, weakness or catching: see a clinician; curl-specific source not found",
+      "source": "Not found"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "ask_doctor",
+      "change": "Light resistance work benefits bone, but ask a doctor or physiotherapist about loaded work with low bone mass or a spine fracture; avoid leaning and twisting under load",
+      "source": "LIFTMOR trial (Watson et al.); Osteoporosis Canada"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "ask_doctor",
+      "change": "Ask obstetrician; light dumbbells or band as balance changes; avoid leaning back",
+      "source": "ACOG Committee Opinion 804; contemporaryobgyn.net summary (secondary)"
+    },
+    {
+      "condition": "postpartum",
+      "status": "ok",
+      "change": "Pelvic floor work first; return to loaded work once cleared, especially after caesarean; start with very light weights",
+      "source": "NHS postnatal physiotherapy leaflets (NNUH, Royal Devon)"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Only with surgeon or physiotherapist approval; arm, shoulder, chest or abdominal surgery often restricts loaded arm work",
+      "source": "General clearance advice; condition-specific source not found"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "gym",
+      "home"
+    ],
+    "bodyRegion": [
+      "upper"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "fat_loss",
+      "muscle",
+      "strength",
+      "endurance"
+    ],
+    "intensity": "light",
+    "noise": "quiet",
+    "space": "small_room",
+    "typicalMinutes": 8,
+    "kcalPer10min70kg": 41,
+    "difficulty1to5": 2,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Gym",
+    "Home",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Strength",
+    "Arms",
+    "Rep counter",
+    "Under 10 min"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-11-24",
+      "file": "FitPlate_Fitness_2026-11-24.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

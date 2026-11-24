@@ -23,28 +23,36 @@
         "avg": 135,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
+      },
+      {
+        "date": "2026-11-23",
+        "min": 100,
+        "max": 130,
+        "avg": 115,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-23.md"
       }
     ],
     "currentEstimate": {
-      "min": 115,
-      "max": 145,
-      "avg": 125
+      "min": 105,
+      "max": 135,
+      "avg": 120
     },
     "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-29",
+    "trend": "stable",
+    "change30dPct": -2.9,
+    "lastObserved": "2026-11-23",
     "stale": false,
     "seasonal": false,
-    "listingCount": 4,
+    "listingCount": 7,
     "platforms": [
-      "BigBasket"
+      "BigBasket",
+      "Blinkit",
+      "Swiggy Instamart"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 1 platform (BigBasket) backs the range"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": null,
   "seasonal": false,
@@ -249,13 +257,62 @@
     "Egg whites only",
     "Paneer crumble or tofu scramble"
   ],
-  "vendorListings": [],
+  "vendorListings": [
+    {
+      "vendor": "blinkit",
+      "product": "Yojana Poultry Power white eggs",
+      "pack": "12 pcs",
+      "priceMinInr": 126,
+      "priceMaxInr": 126,
+      "observedOn": "2026-11-23"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Everyday White Eggs",
+      "pack": "12 pcs",
+      "priceMinInr": 130,
+      "priceMaxInr": 130,
+      "observedOn": "2026-11-23"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Unique Life white eggs",
+      "pack": "12 pcs",
+      "priceMinInr": 132,
+      "priceMaxInr": 132,
+      "observedOn": "2026-11-23"
+    },
+    {
+      "vendor": "instamart",
+      "product": "Fresh Eggs white",
+      "pack": "12 pcs",
+      "priceMinInr": 99,
+      "priceMaxInr": 99,
+      "observedOn": "2026-11-23"
+    },
+    {
+      "vendor": "instamart",
+      "product": "Egg First white",
+      "pack": "12 pcs",
+      "priceMinInr": 99,
+      "priceMaxInr": 99,
+      "observedOn": "2026-11-23"
+    },
+    {
+      "vendor": "instamart",
+      "product": "KKP white",
+      "pack": "12 pcs",
+      "priceMinInr": 105,
+      "priceMaxInr": 105,
+      "observedOn": "2026-11-23"
+    }
+  ],
   "usedIn": [
     {
-      "dishNumber": 92,
+      "dishNumber": 59,
       "quantity": null,
       "unit": null,
-      "raw": "2 eggs per serving (about 100 g)"
+      "raw": "1 egg per serving (about 50 g without shell)"
     }
   ],
   "versions": [
@@ -266,6 +323,10 @@
     {
       "date": "2026-10-29",
       "file": "FitPlate_Ingredients_2026-10-29.md"
+    },
+    {
+      "date": "2026-11-23",
+      "file": "FitPlate_Ingredients_2026-11-23.md"
     }
   ],
   "mergeMethod": {

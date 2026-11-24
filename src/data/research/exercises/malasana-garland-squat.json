@@ -1,0 +1,645 @@
+{
+  "id": "malasana-garland-squat",
+  "number": 20,
+  "name": "Malasana (Garland Squat)",
+  "otherNames": [
+    "Garland Pose",
+    "Yogic Squat",
+    "Yoga Squat",
+    "Deep Squat",
+    "Squat Pose"
+  ],
+  "section": "yoga_stretch",
+  "type": "yoga_asana",
+  "equipment": [
+    "mat (optional)",
+    "rolled blanket or towel for heels (optional)",
+    "block, cushion or low stool (optional)"
+  ],
+  "noEquipmentAlternative": "Supported half squat holding a chair back or door frame, or a squat with a folded towel under the heels",
+  "musclesPrimary": [
+    "hip adductors",
+    "gracilis",
+    "gluteus maximus",
+    "deep hip rotators",
+    "quadriceps",
+    "soleus"
+  ],
+  "musclesSecondary": [
+    "erector spinae",
+    "transversus abdominis",
+    "tibialis anterior",
+    "hamstrings",
+    "pectoralis major",
+    "serratus anterior"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 2.3,
+  "compendiumCode": "02150",
+  "metOptions": [
+    {
+      "code": "02150",
+      "met": 2.3,
+      "activity": "MET: 2.3, 2024 Adult Compendium of Physical Activities, code 02150, \"Yoga, Hatha\" (carried from the code verified in the earlier Yoga & Stretch 19 research via a pacompendium.com summary; this round's"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "flexibility",
+      "sets": 2,
+      "reps": "1 hold per round, heels on a blanket, block under hips",
+      "timeSec": 30,
+      "restSec": 15,
+      "tempo": "lower in 4-5 s, 5 slow breaths, rise slowly",
+      "perWeek": 4
+    },
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 1,
+      "reps": "1 hold, as part of a flow",
+      "timeSec": 30,
+      "restSec": 15,
+      "tempo": "5 slow breaths",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "relaxation",
+      "sets": 1,
+      "reps": "1 hold, wall or chair supported",
+      "timeSec": 40,
+      "restSec": 10,
+      "tempo": "6 slow breaths",
+      "perWeek": 4
+    },
+    {
+      "level": "intermediate",
+      "goal": "flexibility",
+      "sets": 3,
+      "reps": "1 hold per round, heels flat",
+      "timeSec": 45,
+      "restSec": 15,
+      "tempo": "8 slow breaths",
+      "perWeek": 4
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 2,
+      "reps": "1 hold per round",
+      "timeSec": 40,
+      "restSec": 15,
+      "tempo": "6 slow breaths",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "flexibility",
+      "sets": 3,
+      "reps": "1 hold per round, forward lean or bind",
+      "timeSec": 60,
+      "restSec": 15,
+      "tempo": "10 slow breaths",
+      "perWeek": 5
+    },
+    {
+      "level": "advanced",
+      "goal": "relaxation",
+      "sets": 1,
+      "reps": "1 long hold",
+      "timeSec": 75,
+      "restSec": 10,
+      "tempo": "10 slow breaths",
+      "perWeek": 4
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "hold_timer",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "knee_deep_enough",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": "<= 100",
+        "parsed": {
+          "op": "<=",
+          "value": 100,
+          "max": null
+        }
+      },
+      {
+        "name": "hip_deep_enough",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": "<= 100",
+        "parsed": {
+          "op": "<=",
+          "value": 100,
+          "max": null
+        }
+      },
+      {
+        "name": "hold_long_enough",
+        "joint": "time",
+        "angleDeg": "hold >= 10 s (position flag, not an angle)",
+        "parsed": null
+      }
+    ],
+    "minRepSec": 10
+  },
+  "formChecks": [
+    {
+      "joint": "knee",
+      "rule": "knee angle > 100 deg (equals knee_deep_enough phase threshold)",
+      "message": "Sink a little lower, use a block if needed"
+    },
+    {
+      "joint": "hip",
+      "rule": "hip angle > 100 deg (equals hip_deep_enough phase threshold)",
+      "message": "Sit your hips back and down"
+    },
+    {
+      "joint": "time",
+      "rule": "hold shorter than 10 s (equals min_rep_sec and hold_long_enough)",
+      "message": "Stay a little longer, breathe slowly"
+    },
+    {
+      "joint": "spine",
+      "rule": "rounded spine or lifted heels (position flag, not an angle)",
+      "message": "Chest up, heels down or on a blanket"
+    },
+    {
+      "joint": "knee",
+      "rule": "knees caving inward (position flag, not an angle)",
+      "message": "Press your knees toward your little toes"
+    }
+  ],
+  "safetyFlags": [
+    "mild_stretch_never_pain",
+    "knee_ankle_hip_injury_avoid",
+    "knee_pain_supported_half_squat",
+    "keep_spine_long_no_rounding",
+    "no_breath_holding",
+    "rise_slowly_dizziness",
+    "hypertension_slow_no_breath_holding",
+    "heart_disease_ask_doctor",
+    "lower_back_pain_block_under_hips_ask_doctor",
+    "osteoporosis_ask_doctor",
+    "pregnancy_ask_doctor_supported_shallow_only",
+    "postpartum_tearing_caesarean_ask_doctor",
+    "recent_surgery_ask_doctor"
+  ],
+  "progressions": [
+    "Heels flat with the hips off the support",
+    "Longer hold of 8 to 10 breaths",
+    "Forward-lean or arm-bind version (est.; advanced, healthy knees and hips only)"
+  ],
+  "regressions": [
+    "Heels on a rolled blanket",
+    "Block or stool under the hips",
+    "Wall or chair supported half squat"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "front, 2 m",
+      "shows": "feet a little wider than the hips, toes turned out about 45 degrees",
+      "textOverlay": "Feet wide, toes out."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "rolled blanket under the heels, or heels flat",
+      "textOverlay": "Heels heavy. Blanket if they lift."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "lowering with the chest lifted, hands on a chair or wall",
+      "textOverlay": "Lower slowly. Chest up."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 2 m",
+      "shows": "palms together, elbows pressing the inner knees",
+      "textOverlay": "Elbows press knees. Knees press back."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "the hold with a long spine and slow breathing",
+      "textOverlay": "5 slow breaths. Tall spine."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "rising slowly with the hands on the floor or chair",
+      "textOverlay": "Rise slowly. Head last."
+    },
+    {
+      "seconds": 8,
+      "angle": "side and front, 2 m",
+      "shows": "wrong (heels lifting, rounded back, knees caving) vs right (heels down or supported, long spine, knees over toes)",
+      "textOverlay": "Heels down, back long, knees out."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "block under the hips, wall-supported and chair half-squat versions",
+      "textOverlay": "No depth? Use a block or chair."
+    }
+  ],
+  "lastResearched": "2026-11-24",
+  "setupSteps": [
+    "Warm up first. 2 to 3 minutes of gentle movement (ankle circles, a few bodyweight squats, cat-cows, hip circles). Never go deep cold.",
+    "Floor. Flat mat or carpet; avoid slippery tiles (feet can slide out).",
+    "Heel support. If the heels lift or you cannot reach low, place a folded or rolled blanket or towel under the heels (Yoga Journal; Yoga U Online; snippets). Keep the arches lifted; do not force the heels down.",
+    "Hip support (optional). Place a block, cushion or low stool 15 to 25 cm high (est.) between the feet to sit on if the hips will not reach the floor. Beginners can also stay at a half squat, hands on a chair seat.",
+    "Stance. Feet a little wider than the hips, toes turned out about 45 degrees (Yoga Journal; snippet); knees will track over the toes.",
+    "Hands. Hands in prayer at the chest, elbows ready to press into the inner knees; or hold a wall, door frame or chair for balance.",
+    "Clothing. Stretchy pants and a fitted top so the camera sees hips, knees and ankles; no tight jeans (they restrict the squat).",
+    "Camera. Phone at about hip height on a stool or shelf (about 60 to 90 cm, est.), about 2 m to the side, so the whole body from head to feet is in frame (see sections 11 and 12). A second front view checks the knees."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Set the feet",
+      "action": "stand at the front of the mat, feet a little wider than the hips, toes turned out about 45 degrees.",
+      "feel": "weight even on both feet.",
+      "breathing": "2 slow breaths.",
+      "tempo": "6 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Place the heel support (if needed)",
+      "action": "slide a rolled blanket under both heels, or keep the heels flat on the mat.",
+      "feel": "heels grounded, arches lifted.",
+      "breathing": "steady.",
+      "tempo": "4 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Start lowering",
+      "action": "bend the knees and send the hips back and down slowly, hands on a chair or wall if you want.",
+      "feel": "thighs working, a light stretch at the ankles and groin.",
+      "breathing": "out-breath on the way down.",
+      "tempo": "4 to 5 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Settle the hips",
+      "action": "lower as far as you can while the heels stay down and the back stays long; sit on a block if the hips do not reach the floor.",
+      "feel": "weight in the feet and the sitting bones, not the toes.",
+      "breathing": "steady.",
+      "tempo": "3 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Bring the palms together",
+      "action": "press the palms together at the chest, thumbs lightly touching the breastbone.",
+      "feel": "chest open, shoulders away from the ears.",
+      "breathing": "breathe in as the hands come together.",
+      "tempo": "3 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Press elbows against the knees",
+      "action": "set the elbows on the inner knees and press them gently apart while the knees press back.",
+      "feel": "a gentle opening in the inner thighs and hips, with the knees tracking over the toes.",
+      "breathing": "slow out-breath.",
+      "tempo": "3 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Lengthen the spine",
+      "action": "lift the chest and the crown of the head, then grow tall on each in-breath.",
+      "feel": "the ribs lifting away from the hips; the tailbone heavy.",
+      "breathing": "in-breath.",
+      "tempo": "3 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Hold",
+      "action": "stay with slow nose breaths. Beginners hold 5 breaths (about 30 seconds, est.); sources range from 10 to 30 seconds for the first tries up to 30 to 60 seconds, or 5 to 10 breaths.",
+      "feel": "a slow release in the groin and hips; weight even through both feet; no pain in the knees.",
+      "breathing": "slow nose breaths; never hold the breath.",
+      "tempo": "20 to 40 seconds (est.).",
+      "visualCheck": null
+    },
+    {
+      "n": 9,
+      "part": null,
+      "title": "Rise slowly",
+      "action": "place the hands on the floor or a chair, press through the feet and stand up on an out-breath, with the chest lifted and the head last.",
+      "feel": "legs working, no dizziness.",
+      "breathing": "slow out-breath.",
+      "tempo": "5 to 6 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 10,
+      "part": null,
+      "title": "Rest and repeat",
+      "action": "stand, shake out the legs and shift the weight side to side, then do a second round.",
+      "feel": "legs warm, no pain.",
+      "breathing": "3 slow breaths.",
+      "tempo": "10 to 15 seconds between rounds.",
+      "visualCheck": "standing tall, relaxed shoulders."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Heels lifting off the floor",
+      "text": "Heels lifting off the floor. It points to tight calves or ankles (Yoga International: the deep calf muscle, the soleus, stays long when the knee is bent). Fix: roll a blanket under the heels, work on ankle mobility, and do not force them down."
+    },
+    {
+      "title": "Rounding the spine (tucking the tailbone)",
+      "text": "Rounding the spine (tucking the tailbone). It compresses the back and limits depth. Fix: lift the chest, sit on a block, or squat less deeply."
+    },
+    {
+      "title": "Knees caving inward",
+      "text": "Knees caving inward. It stresses the inner knee and can come from weak glutes or tight inner thighs (Yoga International, snippet). Fix: press the elbows against the inner knees, turn the toes out a little more, and squat less deep."
+    },
+    {
+      "title": "Dropping the hips fast or bouncing",
+      "text": "Dropping the hips fast or bouncing. It loads the knees. Fix: lower in 4 to 5 seconds and rise slowly."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. It raises effort and blood pressure. Fix: slow nose breaths; count out-breaths."
+    },
+    {
+      "title": "Forcing depth with knee or ankle pain",
+      "text": "Forcing depth with knee or ankle pain. Harvard Health advises avoiding deep squats if they hurt and keeping a small stool to sit on (snippet). Fix: use a block, a chair or a half squat; stop at pain."
+    },
+    {
+      "title": "Gripping with the toes or rolling to the outer edges of the feet",
+      "text": "Gripping with the toes or rolling to the outer edges of the feet. It strains the arches and ankles. Fix: spread the toes and keep weight even across the feet."
+    },
+    {
+      "title": "Rising too fast",
+      "text": "Rising too fast. Blood pressure can drop and cause dizziness (a standing yoga guide, snippet, warns sudden movements may cause dizziness or fainting). Fix: rise slowly with a hand on a chair or wall."
+    },
+    {
+      "title": "Squatting on a full stomach or on slippery tiles",
+      "text": "Squatting on a full stomach or on slippery tiles. Fix: practise on a light or empty stomach and on a mat."
+    },
+    {
+      "title": "Squatting for a long time every day",
+      "text": "Squatting for a long time every day. The strongest concern in the research is prolonged job-related kneeling or squatting (a 2000 case-control study linked it to knee osteoarthritis, with the highest risk in people with obesity; observational). Fix: hold a short time, rest between rounds, and stop at knee pain."
+    }
+  ],
+  "safetyNotes": [
+    "Mild stretch, never pain. A gentle opening in the groin and hips and a light stretch at the ankles is normal; sharp pain, a pinch in the knee or hip, or tingling is not.",
+    "Knees and ankles: sources say to avoid the pose with knee, ankle, hip or groin injury or recent knee surgery (snippets). Harvard Health advises avoiding deep squats if they hurt. Use heel support, a block or a chair, and stop at knee pain.",
+    "Back: sources conflict on lower back pain (one says to avoid with knee or lower back pain; another says do not rely on it for back relief). Keep the spine long; a rounded, tucking back is the warning sign. Ask a doctor with a disc or spine problem.",
+    "Pregnancy: Mother.ly (snippet) describes a gentle squat that opens the pelvis and advises checking with a doctor or midwife first. Lamaze (snippet) advises against deep squats if the baby is engaged or in a posterior position. Ask a doctor or midwife; if cleared, a supported, shallow squat only.",
+    "Postpartum and after surgery: one yoga site lists postpartum, tearing or caesarean, spine surgery and hip replacement as reasons to avoid the pose (snippets). A fixed wait after birth or surgery: Not found; sources agree on provider clearance first.",
+    "Osteoporosis: a Mayo Clinic-linked case series (PubMed 22448849; snippet) raised concern about spinal flexion positions in osteopenia and osteoporosis; Osteoporosis Canada and other sources caution against deep hip openers and forward bends (snippets). The Malasana-specific verdict: Not found. Ask a doctor; if cleared, keep the spine long, avoid rounding, and use a chair.",
+    "Blood pressure and heart: a 2013 study found blood pressure rises during yoga, most in standing poses; breath-holding is not recommended with hypertension (snippets). Malasana is not named in these sources. Move slowly, never hold the breath, and rise slowly to avoid dizziness.",
+    "Stop immediately if you feel: sharp knee, hip or ankle pain, numbness or tingling, dizziness or faintness, chest pain or breathlessness, back pain, or pelvic, abdominal or incision pain.",
+    "Spotter: not needed. Gym etiquette: keep the mat out of walkways; do not hog the stretching area."
+  ],
+  "sources": [
+    "Yoga Journal (garland pose, beginner how-to; squat in yoga; anatomy page; heel support on blankets, toes out about 45 degrees, forward lean; snippets): https://www.yogajournal.com/practice/beginners/how-to/garland-pose-2/ ; https://www.yogajournal.com/practice/squat-in-yoga/ ; https://www.yogajournal.com/poses/anatomy/spine/garland-pose/",
+    "Yoga International (What your Malasana squat can tell you; soleus and ankle dorsiflexion, knees caving; Garland Pose deep squat; snippets): https://yogainternational.com/article/view/What-Your-Malasana-Squat-Can-Tell-You-About-Your-Body ; https://yogainternational.com/article/view/garland-pose-deep-squat",
+    "Yoga U Online (garland pose, 5 easy fixes, hip and ankle mobility with a heel blanket; snippets): https://yogauonline.com/yoga-poses/garland-pose-yogic-squat/ ; https://www.yogauonline.com/yoga-practice-tips-and-inspiration/refine-your-yoga-practice-5-easy-fixes-for-malasana ; https://yogauonline.com/yoga-practice-teaching-tips/yoga-practice-tips/garland-pose-deep-squat-for-hip-and-ankle-mobility-with-kate-heffernan/",
+    "Peloton, ISSA, Lessons.com, MasterClass, Gaia, Mindbodygreen, Liforme, Yoga Matters, Triyoga (technique, modifications, hold time, cautions; snippets): https://www.onepeloton.com/blog/garland-pose-malasana ; https://yoga.issaonline.com/blog/post/garland-pose-malasana-benefits-steps-variations ; https://lessons.com/yoga-classes/yoga-poses/garland-pose ; https://www.masterclass.com/articles/garland-pose ; https://gaia.com/article/squat-pose-malasana ; https://www.mindbodygreen.com/articles/garland-pose-malasana-how-to-tips-modifications-and-benefits ; https://liforme.com/blogs/blog/garland-pose-malasana ; https://www.yogamatters.com/blogs/pose-library/garland-pose-malasana ; https://triyoga.co.uk/blog/asana-lab/demystifying-malasana-deep-squat/",
+    "Indian teaching sources (Habuild, MyYogaTeacher, Pranayoga, Rishikul Yogshala, Bajaj Finserv, Pinkvilla, Kavaalya; steps, precautions, hold time; snippets or titles only): https://habuild.in/habitology/asana-mudra/malasana-benefits/ ; https://myyogateacher.com/yoga-asana/malasana ; https://pranayoga.co.in/asana/malasana-garland-posture ; https://rishikulyogshala.org/blog/?p=8913 ; https://www.bajajfinserv.in/insurance/health-benefits-of-malasana ; https://www.pinkvilla.com/health/fitness/malasana-pose-1275404 ; https://kavaalya.com/blog/malasana-garland-pose/",
+    "Livestrong, Well+Good, SCMP, Marie Claire, Patient.info, Hello! (benefits, hold time, ankle limits, lower-body mobility; popular press; snippets): https://livestrong.com/article/344633-benefits-of-the-yoga-squat ; https://wellandgood.com/?p=1207612 ; https://www.scmp.com/lifestyle/health-wellness/article/3278190/how-deep-squats-benefit-body-and-mind-plus-how-do-them-and-tips-beginners ; https://marieclaire.co.uk/life/health-fitness/yogi-squats-every-day ; https://patient.info/features/healthy-living/deep-resting-squat-can-this-simple-posture-unlock-flexibility-mobility-and-longevity ; https://www.hellomagazine.com/healthandbeauty/health-and-fitness/866356/malasana-benefits-how-to-do-garland-pose",
+    "Wikipedia, Malasana (name used for several squatting asanas; snippet): https://en.wikipedia.org/wiki/Malasana",
+    "Squat range-of-motion studies (hip flexion range and ankle dorsiflexion predicting squat depth, PMC4415844; hip angle at pelvic tilt onset PMC6033510; snippets): https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4415844/ ; https://pmc.ncbi.nlm.nih.gov/articles/PMC6033510 ; https://pubmed.ncbi.nlm.nih.gov/22100617/",
+    "Knee and squatting: occupational kneeling/squatting and knee osteoarthritis (PubMed 10902744); squatting depth load analysis (PubMed 23821469); Harvard Health, Do these activities hurt your knees? (snippets): https://pubmed.ncbi.nlm.nih.gov/10902744/ ; https://pubmed.ncbi.nlm.nih.gov/23821469/ ; https://www.health.harvard.edu/pain/do-these-activities-hurt-your-knees",
+    "Pregnancy and squatting: Mother.ly, Lamaze, Healthline, observational labour study PMC11042859 (snippets): https://www.mother.ly/birth/labor-delivery/yoga-poses-to-induce-labor ; https://lamaze.org/Giving-Birth-with-Confidence/GBWC-Post/not-all-squats-are-created-equal-in-labor-birth ; https://www.healthline.com/health/pregnancy/squatting-birth ; https://pmc.ncbi.nlm.nih.gov/articles/PMC11042859/",
+    "Postpartum and osteoporosis: Mother.ly yoga moves to avoid after birth; Mayo Clinic-linked yoga spinal flexion case series PubMed 22448849; Osteoporosis Canada yoga suggestions (snippets): https://www.mother.ly/birth/yoga-moves-to-avoid-after-giving-birth/ ; https://pubmed.ncbi.nlm.nih.gov/22448849/ ; https://osteoporosis.ca/?p=22995",
+    "Blood pressure and yoga: arterial pressure responses to yoga practice (PubMed 23341425); hypertension yoga review PMC10989416 (snippets): https://pubmed.ncbi.nlm.nih.gov/23341425/ ; https://pmc.ncbi.nlm.nih.gov/articles/PMC10989416/",
+    "Herrmann SD et al., 2024 Adult Compendium of Physical Activities (02150 Yoga, Hatha 2.3; carried from the earlier item's summary; not re-seen this round): https://pacompendium.com/conditioning-exercise ; https://pubmed.ncbi.nlm.nih.gov/38242596/ ; The metabolic cost of hatha yoga (2005; snippet): https://pubmed.ncbi.nlm.nih.gov/16095417/",
+    "Condition sources (general, from earlier items): ADA PMC5317029: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/ ; PCOS position statement: https://researchers.westernsydney.edu.au/en/publications/exercise-in-the-management-of-polycystic-ovary-syndrome-a-positio/ ; Marshfield Clinic asthma: https://shine365.marshfieldclinic.org/wellness/asthma-exercise/ ; ACOG Committee Opinion 804: https://pubmed.ncbi.nlm.nih.gov/33481513/",
+    "Naming: several sources use Malasana for different squats (foot width, prayer hands). We present the garland pose and do not claim it is a Common Yoga Protocol posture.",
+    "Hold time: 10 seconds up to 30 to 60 seconds, or 5 to 10 breaths. We chose 5 slow breaths (about 30 s, est.), no breath-holding.",
+    "Squatting and knees: prolonged job-related squatting linked to knee osteoarthritis versus reviews calling moderate deep squatting beneficial or fears unfounded. We chose \"short holds, pain is the guide, modify with knee pain\".",
+    "Pregnancy: gentle supported squat (Mother.ly, Lamaze) versus avoiding it if the baby is engaged or posterior and pelvic floor strain from intense squatting. We chose \"ask a doctor; supported shallow only if cleared\".",
+    "Lower back pain: one source says avoid with back pain; another says do not rely on it for back relief. We chose \"modify; ask a doctor with a disc problem or ongoing pain\".",
+    "Not found: Ministry of AYUSH Common Yoga Protocol, MDNIY and The Yoga Institute (Mumbai) pages for Malasana; a pose-specific MET; measured joint-angle norms for the held pose; trial evidence for this pose alone; a fixed wait after birth or surgery; clinical sources for cholesterol, thyroid, heart disease and surgery for this pose. Our thresholds are estimates.",
+    "Most pages were seen only as search snippets or summaries; direct page fetches were not possible."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 43.5,
+      "70kg": 37.3,
+      "80kg": 32.6
+    },
+    "per300kcal": {
+      "60kg": 130.4,
+      "70kg": 111.8,
+      "80kg": 97.8
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "yoga",
+    "mobility",
+    "stretching",
+    "flexibility",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "small_flat",
+    "quiet",
+    "3_5_min",
+    "mid_flow",
+    "cool_down",
+    "evening",
+    "any_time",
+    "relaxation",
+    "hip_opener",
+    "desk_break"
+  ],
+  "swapsByAccess": {
+    "none": "Chair-supported half squat or door-frame supported squat; or Utkatasana (Yoga & Stretch 17)",
+    "home_equipment": "Block or cushion under the hips and rolled towel under the heels; or a wall-supported squat",
+    "basic_gym": "Bench or step platform to sit on in the squat, or a plate under each heel; or a mat in the stretching area",
+    "full_gym": "Studio mat area with blocks and bolsters; or a supported squat holding a rack; or Utkatasana (Yoga & Stretch 17)"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "Slow, no breath-holding, shallow or supported squat, rise slowly; ask a doctor if on medicine",
+      "source": "PubMed 23341425 (snippet); PMC10989416 (snippet); Not found (pose-specific)"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "modify",
+      "change": "Check feet; eat first if on glucose-lowering medicine; rise slowly; ask a doctor",
+      "source": "ADA PMC5317029 (general); Not found (pose-specific)"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "Personal clearance needed; if cleared, short supported squat, no breath-holding, rise slowly",
+      "source": "Not found (pose-specific)"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "No change (source not found)",
+      "source": "Not found"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Block or stool under the hips, wider stance, shorter hold; avoid long job-related squatting",
+      "source": "PubMed 10902744 (snippet); Not found (pose-specific)"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "No pose-specific caution found",
+      "source": "PCOS exercise position statement (general); Not found (pose-specific)"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "No clinical caution found",
+      "source": "Not found"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Reliever inhaler nearby; slow breathing; stop if wheezing",
+      "source": "Marshfield Clinic asthma exercise page (general); NIH NCCAM yoga fact sheet (general)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Supported or half squat, heels on a rolled blanket, hips on a block or chair; avoid pain",
+      "source": "Harvard Health (snippet); 2019 knee osteoarthritis squatting review (snippet); PubMed 10902744 (snippet)"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Block under the hips, keep the spine long, shorter hold, wall support; ask a doctor with a disc problem or ongoing pain",
+      "source": "myyogateacher (snippet); Peloton (snippet); Not found (clinical)"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "ok",
+      "change": "Little shoulder load; hands at the chest or on the knees instead of pressing the elbows",
+      "source": "Not found"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "ask_doctor",
+      "change": "Keep the spine long, avoid rounding and deep forward leaning; chair or wall support; clinician-guided after a vertebral fracture",
+      "source": "PubMed 22448849 (snippet); Osteoporosis Canada (snippet); Not found (pose-specific)"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "ask_doctor",
+      "change": "Avoid deep squats if the baby is engaged or posterior; if cleared, supported shallow squat only",
+      "source": "Mother.ly (snippet); Lamaze (snippet); ACOG Committee Opinion 804 (general)"
+    },
+    {
+      "condition": "postpartum",
+      "status": "ask_doctor",
+      "change": "Wait for clearance; avoid after tearing or caesarean until healed; stop if pelvic, abdominal or back pain or leaking",
+      "source": "myyogateacher (snippet); Mother.ly (snippet); ACOG Committee Opinion 804 (general)"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Follow the surgeon's advice; knee, hip and spine surgery especially",
+      "source": "myyogateacher (snippet); Not found (clinical)"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "home",
+      "office_desk"
+    ],
+    "bodyRegion": [
+      "lower"
+    ],
+    "goalTags": [
+      "flexibility",
+      "relaxation",
+      "general_fitness"
+    ],
+    "intensity": "light",
+    "noise": "quiet",
+    "space": "mat_only",
+    "typicalMinutes": 4,
+    "kcalPer10min70kg": 27,
+    "difficulty1to5": 2,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Yoga & stretch",
+    "Home",
+    "Office desk",
+    "No equipment",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Yoga",
+    "Legs",
+    "Glutes",
+    "Hold timer",
+    "Under 10 min"
+  ],
+  "needsReview": [
+    "rep_counter phase \"hold_long_enough\" (time): angle \"hold >= 10 s (position flag, not an angle)\" is not a parseable angle"
+  ],
+  "versions": [
+    {
+      "date": "2026-11-24",
+      "file": "FitPlate_Fitness_2026-11-24.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}
