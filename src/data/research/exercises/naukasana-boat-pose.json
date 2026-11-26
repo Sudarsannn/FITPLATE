@@ -1,0 +1,649 @@
+{
+  "id": "naukasana-boat-pose",
+  "number": 21,
+  "name": "Naukasana (Boat Pose)",
+  "otherNames": [
+    "Boat Pose",
+    "Navasana",
+    "Paripurna Navasana (full boat)",
+    "Ardha Navasana (half boat)"
+  ],
+  "section": "yoga_stretch",
+  "type": "yoga_asana",
+  "equipment": [
+    "mat (optional)",
+    "folded blanket (optional)",
+    "strap, block or wall (optional)"
+  ],
+  "noEquipmentAlternative": "Seated lean-back with hands behind the thighs and feet on the floor, lifting one foot at a time",
+  "musclesPrimary": [
+    "transversus abdominis",
+    "rectus abdominis",
+    "iliopsoas",
+    "rectus femoris",
+    "erector spinae"
+  ],
+  "musclesSecondary": [
+    "hip adductors",
+    "quadriceps",
+    "internal obliques",
+    "external obliques",
+    "anterior deltoid",
+    "serratus anterior",
+    "hamstrings"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 2.3,
+  "compendiumCode": "02150",
+  "metOptions": [
+    {
+      "code": "02150",
+      "met": 2.3,
+      "activity": "MET: 2.3, 2024 Adult Compendium of Physical Activities, code 02150, \"Yoga, Hatha\" (search of the pacompendium.com conditioning-exercise listing and the PubMed record this round showed 02150 Yoga, Hath"
+    },
+    {
+      "code": "02153",
+      "met": 8,
+      "activity": "MET: 2.3, 2024 Adult Compendium of Physical Activities, code 02150, \"Yoga, Hatha\" (search of the pacompendium.com conditioning-exercise listing and the PubMed record this round showed 02150 Yoga, Hath"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "1 hold per round, bent knees, hands behind thighs",
+      "timeSec": 20,
+      "restSec": 20,
+      "tempo": "4 slow breaths, lower slowly",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "1 hold per round, bent knees",
+      "timeSec": 25,
+      "restSec": 20,
+      "tempo": "5 slow breaths",
+      "perWeek": 3
+    },
+    {
+      "level": "beginner",
+      "goal": "relaxation",
+      "sets": 1,
+      "reps": "1 hold, feet on the floor, wall or hand support",
+      "timeSec": 15,
+      "restSec": 15,
+      "tempo": "3 slow breaths",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "1 hold per round, arms forward, shins parallel",
+      "timeSec": 35,
+      "restSec": 20,
+      "tempo": "6 slow breaths",
+      "perWeek": 3
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 4,
+      "reps": "1 hold per round",
+      "timeSec": 45,
+      "restSec": 20,
+      "tempo": "8 slow breaths",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "1 hold per round, legs straight at about 45 degrees",
+      "timeSec": 45,
+      "restSec": 20,
+      "tempo": "8 slow breaths",
+      "perWeek": 4
+    },
+    {
+      "level": "advanced",
+      "goal": "endurance",
+      "sets": 4,
+      "reps": "1 hold per round, full boat",
+      "timeSec": 60,
+      "restSec": 20,
+      "tempo": "10 slow breaths",
+      "perWeek": 4
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "hold_timer",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "hip_lifted_enough",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": "<= 100",
+        "parsed": {
+          "op": "<=",
+          "value": 100,
+          "max": null
+        }
+      },
+      {
+        "name": "knee_bent_enough",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": "<= 120",
+        "parsed": {
+          "op": "<=",
+          "value": 120,
+          "max": null
+        }
+      },
+      {
+        "name": "hold_long_enough",
+        "joint": "time",
+        "angleDeg": "hold >= 8 s (position flag, not an angle)",
+        "parsed": null
+      }
+    ],
+    "minRepSec": 8
+  },
+  "formChecks": [
+    {
+      "joint": "hip",
+      "rule": "hip angle > 100 deg (equals hip_lifted_enough phase threshold)",
+      "message": "Lean back a little and lift the chest"
+    },
+    {
+      "joint": "knee",
+      "rule": "knee angle > 120 deg (equals knee_bent_enough phase threshold)",
+      "message": "Bend your knees to keep your back long"
+    },
+    {
+      "joint": "time",
+      "rule": "hold shorter than 8 s (equals min_rep_sec and hold_long_enough)",
+      "message": "Stay a little longer, breathe slowly"
+    },
+    {
+      "joint": "spine",
+      "rule": "rounded back or sagging chest (position flag, not an angle)",
+      "message": "Chest up, back long. Bend the knees"
+    },
+    {
+      "joint": "ankle",
+      "rule": "feet on the floor (position flag, not an angle)",
+      "message": "Lift your feet to shin-level, or hold the thighs"
+    }
+  ],
+  "safetyFlags": [
+    "firm_belly_never_pain",
+    "bent_knees_for_beginners",
+    "keep_spine_long_no_collapse",
+    "no_breath_holding",
+    "lower_back_pain_bent_knees_ask_doctor",
+    "hernia_spine_injury_neck_avoid",
+    "stomach_abdominal_surgery_avoid",
+    "hypertension_short_holds_ask_doctor",
+    "heart_disease_ask_doctor",
+    "osteoporosis_ask_doctor",
+    "pregnancy_avoid_ask_doctor",
+    "postpartum_ask_doctor",
+    "recent_surgery_ask_doctor",
+    "light_stomach"
+  ],
+  "progressions": [
+    "Arms forward in the bent-knee boat",
+    "Longer hold of 6 to 10 breaths with a long spine",
+    "Straighten the legs toward about 45 degrees (full boat; est.; intermediate)"
+  ],
+  "regressions": [
+    "Feet on the floor, lean back with a long spine",
+    "One foot lifted at a time",
+    "Hands behind the thighs with shins parallel (half boat), or strap or wall support"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "sitting tall on the sitting bones, knees bent, feet flat",
+      "textOverlay": "Sit tall. Knees bent."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "hands behind the thighs, chest lifting, leaning back a little",
+      "textOverlay": "Hold your thighs. Chest up."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "one foot lifting a few centimetres, then the other (balance check)",
+      "textOverlay": "Lift one foot at a time."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "both feet lifted, shins about parallel to the floor, V shape",
+      "textOverlay": "Shins level. Back long."
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 2 m",
+      "shows": "arms reaching forward alongside the knees, shoulders level",
+      "textOverlay": "Arms long. Shoulders down."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "the hold with slow breathing and a long spine",
+      "textOverlay": "4 slow breaths. Tall spine."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "wrong (rounded back, sagging chest, straight legs with a curved spine, leaning too far) vs right (bent knees, long spine, chest lifted)",
+      "textOverlay": "Back round? Bend the knees."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2 m",
+      "shows": "lowering the feet slowly; feet-down, strap and wall-supported versions",
+      "textOverlay": "Lower slowly. Feet down is fine."
+    }
+  ],
+  "lastResearched": "2026-11-26",
+  "setupSteps": [
+    "Warm up first. 2 to 3 minutes of gentle movement (cat-cow, pelvic tilts, a few seated knee lifts). Do not go in cold.",
+    "Floor. Flat mat or carpet; avoid slippery tiles (the hips can slide).",
+    "Seat. Sit near the middle of the mat on the sitting bones. A thin folded blanket under the hips helps if the tailbone feels bony.",
+    "Starting position. Knees bent, feet flat on the floor about hip-width apart, hands beside the hips.",
+    "Support (optional). Keep a wall behind you at a lean-back distance, or loop a strap round the soles of the feet (Yoga U; snippet), or plan to hold the backs of the thighs.",
+    "Stomach. Practise on a light or empty stomach; sources note the pose presses on the stomach area.",
+    "Clothing. Stretchy pants and a fitted top so the camera sees shoulders, hips, knees and ankles; no loose kurta hiding the hips.",
+    "Camera. Phone at about hip height on a stool or shelf (about 40 to 60 cm, est.), about 2 m to the side, so the whole body from head to feet is in frame (see sections 11 and 12)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Sit tall with knees bent",
+      "action": "sit with the knees bent, feet flat on the floor, hands beside the hips.",
+      "feel": "weight on the sitting bones, spine long.",
+      "breathing": "2 slow breaths.",
+      "tempo": "6 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Hold the backs of the thighs",
+      "action": "place the hands behind the thighs, just above the knees, elbows slightly bent.",
+      "feel": "chest opening, shoulders away from the ears.",
+      "breathing": "breathe in as the chest lifts.",
+      "tempo": "3 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Lean back a little",
+      "action": "tip the torso back a few centimetres while keeping the chest lifted; the tailbone stays heavy.",
+      "feel": "the front of the belly switching on; weight rolling just behind the sitting bones.",
+      "breathing": "slow out-breath.",
+      "tempo": "3 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Lift one foot",
+      "action": "lift one foot a few centimetres, then lower; this is the balance check (optional if steady).",
+      "feel": "the lifting hip flexor working, the belly firm.",
+      "breathing": "steady.",
+      "tempo": "3 seconds per foot.",
+      "visualCheck": null
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Lift both feet to shin-parallel",
+      "action": "lift both feet until the shins are about parallel to the floor, knees still bent.",
+      "feel": "belly and front-of-hip working, balance on the sitting bones.",
+      "breathing": "out-breath as the feet lift.",
+      "tempo": "3 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Reach the arms forward",
+      "action": "if steady, let go of the thighs and reach the arms forward, palms facing in, parallel to the floor and alongside the knees.",
+      "feel": "shoulders relaxed, chest lifted; the belly working harder.",
+      "breathing": "breathe in as the arms rise.",
+      "tempo": "3 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Lengthen the spine",
+      "action": "lift the chest and the crown of the head; let the lower back stay long rather than rounding or arching hard.",
+      "feel": "the ribs lifting away from the hips; the tailbone heavy.",
+      "breathing": "in-breath.",
+      "tempo": "3 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Hold",
+      "action": "stay with slow nose breaths. Beginners hold 4 breaths (about 20 seconds, est.); sources range from 3 to 5 breaths, 15 to 30 seconds, and 2 to 5 breaths working up to 10.",
+      "feel": "a steady, strong belly and front of hip, no back or neck strain.",
+      "breathing": "slow nose breaths; never hold the breath.",
+      "tempo": "15 to 25 seconds (est.).",
+      "visualCheck": null
+    },
+    {
+      "n": 9,
+      "part": null,
+      "title": "Lower with control",
+      "action": "bring the feet back to the floor on an out-breath, then the hands to the floor beside the hips.",
+      "feel": "legs and belly releasing, no dizziness.",
+      "breathing": "slow out-breath.",
+      "tempo": "4 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 10,
+      "part": null,
+      "title": "Rest and repeat",
+      "action": "hug the knees or sit tall and shake out the legs, then do the next round.",
+      "feel": "belly warm, no pain.",
+      "breathing": "3 slow breaths.",
+      "tempo": "15 to 20 seconds between rounds.",
+      "visualCheck": "sitting tall, relaxed shoulders."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Rounding the back and collapsing the chest",
+      "text": "Rounding the back and collapsing the chest. It puts the weight on the tailbone and the sacrum and the core switches off (Yoga International; Yoga Journal; snippets). Fix: bend the knees more, hold the thighs, lift the chest, or put the feet down."
+    },
+    {
+      "title": "Straightening the legs too soon",
+      "text": "Straightening the legs too soon. The leg weight pulls the back into a curve. Fix: keep the knees bent until the back stays long (Liforme; Yoga International; snippets)."
+    },
+    {
+      "title": "Leaning back too far",
+      "text": "Leaning back too far. The belly lets go and the low back strains. Fix: lean back only a few centimetres, keep the chest lifted."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. It raises effort and blood pressure. Fix: slow nose breaths and count out-breaths."
+    },
+    {
+      "title": "Pulling hard on the legs or hunching the shoulders",
+      "text": "Pulling hard on the legs or hunching the shoulders. Fix: hold the thighs lightly, shoulders down, or reach the arms forward."
+    },
+    {
+      "title": "Cranking the neck or jutting the chin",
+      "text": "Cranking the neck or jutting the chin. It strains the neck. Fix: keep the gaze forward and the neck long."
+    },
+    {
+      "title": "Letting the knees splay wide or the feet drop unevenly",
+      "text": "Letting the knees splay wide or the feet drop unevenly. It weakens the balance. Fix: knees together or hip-width, lift both feet together; a block between the knees can help."
+    },
+    {
+      "title": "Dropping the feet quickly",
+      "text": "Dropping the feet quickly. Fix: lower slowly over 4 seconds."
+    },
+    {
+      "title": "Holding too long on the first tries",
+      "text": "Holding too long on the first tries. Fix: start with 2 to 3 breaths and build up; stop when the form fades."
+    },
+    {
+      "title": "Practising on a full stomach",
+      "text": "Practising on a full stomach. The pose presses on the stomach area. Fix: practise on a light or empty stomach."
+    }
+  ],
+  "safetyNotes": [
+    "Firm belly, never pain. A strong, steady effort in the belly and the front of the hip is normal; sharp back pain, neck strain, or a pinch in the hip is not.",
+    "Back and neck: Yoga International (snippet) says not to practise the pose with a lumbar herniation, hernia or prolapse, and suggests a bent-knee or supported boat is a better route for low back issues. Tata AIA (snippet) advises avoiding it with spinal injuries or neck problems. Sources disagree on whether it helps chronic back pain. Keep the spine long; a collapsing back is the warning sign. Ask a doctor with a disc or spine problem.",
+    "Stomach and abdomen: PharmEasy and Dr Weil (snippets) list recent stomach surgery or ulcers as reasons to avoid it, since the pose presses on the stomach area. Practise on a light stomach.",
+    "Pregnancy: Art of Living (snippet) advises women to avoid the pose in pregnancy and in the first two days of the period; another source says to ask a doctor before any pregnancy exercise. Our choice: avoid it in pregnancy; ask a doctor for alternatives.",
+    "Postpartum and after surgery: a fixed wait after birth or surgery: Not found; sources agree on clearance from the provider first, especially after abdominal or caesarean surgery.",
+    "Osteoporosis: a Mayo Clinic-linked case series (PubMed 22448849; snippet, from the earlier Yoga & Stretch 20 research) raised concern about spinal flexion in osteopenia and osteoporosis; the search for boat pose and osteoporosis returned nothing. The Naukasana-specific verdict: Not found. Ask a doctor; if cleared, keep the spine long, avoid rounding, use bent knees and feet-down versions.",
+    "Blood pressure and heart: several sources (Dr Weil, Sportskeeda, a physician-guidance note; snippets) list high or low blood pressure, recent heart attack and heart conditions as cautions. Move slowly, never hold the breath, and ask a doctor first.",
+    "Other cautions: asthma, diarrhea, headaches, migraine and vertigo are listed by wellness sources (Dr Weil, PharmEasy, Sportskeeda; snippets). Clinical backing: Not found.",
+    "Stop immediately if you feel: sharp back, neck or hip pain, numbness or tingling, dizziness or faintness, chest pain or breathlessness, nausea, or pelvic, abdominal or incision pain.",
+    "Spotter: not needed. Gym etiquette: keep the mat out of walkways; do not hog the stretching area."
+  ],
+  "sources": [
+    "Yoga Journal (Full Boat Pose; start with bent knees; snippets): https://www.yogajournal.com/poses/full-boat-pose-2/",
+    "Yoga International (Boat Pose; 3 Ways to Rock Your Boat Pose; Connecting to Your Core; Mythology Behind Navasana; bent knees, pelvis tilt, lumbar herniation caution; snippets): https://yogainternational.com/article/view/boat-pose ; https://yogainternational.com/article/view/3-ways-to-rock-your-boat-pose ; https://yogainternational.com/article/view/connecting-to-your-core-4-ways-to-practice-boat-pose ; https://yogainternational.com/article/view/the-mythology-behind-navasana-boat-pose",
+    "Yoga U Online (3 variations of Navasana; hip flexors and psoas, spine cue; strap loop; snippets): https://yogauonline.com/yoga-practice-teaching-tips/yoga-practice-tips/navasana-3-yoga-variations-for-practicing-boat-pose ; https://yogauonline.com/yoga-practice-teaching-tips/yoga-practice-tips/should-you-keep-your-spine-straight-in-boat-pose ; https://yogauonline.com/yoga-poses/how-to-do-boat-pose/",
+    "Art of Living (Boat Pose Naukasana; 45-degree thighs, pregnancy and menstruation cautions, hernia claim; snippets): https://www.artofliving.org/us-en/boat-pose-navasana ; https://www.artofliving.org/in-en/boat-posture",
+    "Indian health and wellness pages (Tata AIA, PharmEasy, Bajaj Finserv, Aditya Birla Capital, Truemeds, ICICI Lombard; Ardha Naukasana, hold time, cautions; snippets): https://www.tataaia.com/blogs/health-and-lifestyle/health-benefits-of-naukasana.html ; https://pharmeasy.in/blog/health-fitness-benefits-of-naukasana-and-how-to-do-it/ ; https://www.bajajfinserv.in/insurance/health-benefits-of-naukasana ; https://www.adityabirlacapital.com/abc-of-money/health-benefits-of-naukasana ; https://www.truemeds.in/blog/health-benefits-of-naukasana-boat-pose-yoga-and-how-to-do-it ; https://www.icicilombard.com/health-insurance/wellness/blogs/steps-to-perform-naukasana",
+    "Dr Weil (Full Boat Pose; 45-degree V; physician-first cautions; snippets) and Lessons.com: https://www.drweil.com/?p=101431 ; https://lessons.com/yoga-poses/boat-pose",
+    "Peloton, MasterClass, Liforme, Well+Good, WebMD, Human Kinetics, Sportskeeda, Ekhart Yoga, Do You Yoga (technique, hold time, mistakes, modifications; popular press; snippets): https://www.onepeloton.com/blog/boat-pose ; https://www.masterclass.com/articles/boat-pose-explained ; https://liforme.com/blogs/blog/boat-pose-navasana ; https://wellandgood.com/boat-pose ; https://www.webmd.com/fitness-exercise/yoga-how-to-the-boat-pose ; https://us.humankinetics.com/blogs/active-at-home/boat-pose-for-core-strength-and-balance ; https://www.sportskeeda.com/health-and-fitness/what-is-boat-pose-navasana-in-yoga-tips-technique-correct-form-benefits-common-mistakes ; https://ekhartyoga.com/more-yoga/yoga-poses/boat-pose ; https://www.doyouyoga.com/common-misalignments-in-boat-pose-and-how-to-fix-them-84485/",
+    "Wikipedia and Yogapedia (Navasana name, Ardha versus Paripurna; snippets): https://en.wikipedia.org/wiki/Navasana ; https://www.yogapedia.com/definition/5187/navasana",
+    "Tom's Guide, Fox News, Cleveland Clinic (instructor claims on core training; no trial named; snippets): https://www.tomsguide.com/wellness/workouts/i-asked-a-yoga-instructor-for-a-single-pose-thatll-help-me-build-deep-core-strength-and-balance-heres-what-she-recommended ; https://www.foxnews.com/health/fitness-expert-reveals-one-simple-exercise-stronger-core-not-sit-up ; https://health.clevelandclinic.org/yoga-poses-that-can-strengthen-your-core-muscles",
+    "Ministry of AYUSH Common Yoga Protocol booklet (published with MDNIY; Naukasana text not confirmed): https://www.mea.gov.in/images/pdf/common-yoga-protocol-english.pdf ; https://www.sanskrit.nic.in/uploads/CYP_2022/English.pdf",
+    "MyDr, Boat Pose video transcript (snippet): https://www.mydr.com.au/video-boat-pose/",
+    "Herrmann SD et al., 2024 Adult Compendium of Physical Activities (02150 Yoga, Hatha 2.3; 02153 high intensity 8.0; snippets): https://pacompendium.com/conditioning-exercise ; https://pubmed.ncbi.nlm.nih.gov/38242596/ ; https://pmc.ncbi.nlm.nih.gov/articles/PMC10818145/",
+    "Condition sources (general, from earlier items): ADA PMC5317029: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/ ; PCOS position statement: https://researchers.westernsydney.edu.au/en/publications/exercise-in-the-management-of-polycystic-ovary-syndrome-a-positio/ ; Marshfield Clinic asthma: https://shine365.marshfieldclinic.org/wellness/asthma-exercise/ ; ACOG Committee Opinion 804: https://pubmed.ncbi.nlm.nih.gov/33481513/ ; yoga and blood pressure PubMed 23341425: https://pubmed.ncbi.nlm.nih.gov/23341425/ ; yoga spinal flexion case series PubMed 22448849: https://pubmed.ncbi.nlm.nih.gov/22448849/",
+    "Start position: sitting versus lying on the back. We chose sitting (clear for the camera and the bent-knee form).",
+    "Hold time: 3 to 5 breaths, 15 to 30 seconds, or 2 to 5 breaths building to 10. We chose 4 breaths (about 20 s, est.), no breath-holding.",
+    "Spine cue: \"straighten the spine\" versus a slight pelvic roll back for the psoas. We chose a long spine with the tailbone heavy, no collapse and no hard arch.",
+    "Back pain: helps chronic back pain (one source) versus compresses the back and neck with poor form. We chose \"modify: bent knees; ask a doctor\".",
+    "Hernia: useful (Art of Living) versus avoid (Tata AIA, Yoga International). We chose avoid and ask a doctor.",
+    "Muscle emphasis: hip flexors dominate (yoga-anatomy sources) versus the abdominals as the main target (popular sources). We list both and note that a measured EMG study of Navasana was Not found.",
+    "Not found: Ministry of AYUSH Common Yoga Protocol, MDNIY and The Yoga Institute (Mumbai) Naukasana technique pages; a pose-specific MET; measured joint-angle norms for the held pose; EMG or trial evidence for this pose alone; an osteoporosis-specific verdict; a fixed wait after birth or surgery; clinical sources for cholesterol, thyroid, PCOS, knee pain, shoulder problems and heart disease for this pose. Our thresholds are estimates.",
+    "Most pages were seen only as search snippets or summaries; direct page fetches were not possible."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 43.5,
+      "70kg": 37.3,
+      "80kg": 32.6
+    },
+    "per300kcal": {
+      "60kg": 130.4,
+      "70kg": 111.8,
+      "80kg": 97.8
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "yoga",
+    "mobility",
+    "core_strength",
+    "balance",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "small_flat",
+    "quiet",
+    "2_4_min",
+    "mid_flow",
+    "core_finisher",
+    "any_time"
+  ],
+  "swapsByAccess": {
+    "none": "Feet-down seated lean-back, or a dead bug (Home 8)",
+    "home_equipment": "Strap round the feet or a block between the knees; or the wall-supported lean-back",
+    "basic_gym": "Mat in the stretching area; or a seated knee-raise on a flat bench (est.)",
+    "full_gym": "Studio mat area with a strap and blocks; or a captain's chair knee raise (Gym 43) or an ab crunch machine (Gym 42)"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "Short holds, no breath-holding, slow lifts and lowering; ask a doctor if on medicine",
+      "source": "Dr Weil (snippet); Sportskeeda (snippet); PubMed 23341425 (general); Not found (pose-specific clinical)"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "modify",
+      "change": "Check feet; eat first if on glucose-lowering medicine; ask a doctor",
+      "source": "ADA PMC5317029 (general); Not found (pose-specific)"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "Personal clearance needed; if cleared, short bent-knee holds, no breath-holding",
+      "source": "Dr Weil (snippet); Not found (clinical)"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "No change (source not found)",
+      "source": "Not found"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Hands behind the thighs, feet on the floor or one foot at a time, shorter holds, blanket under the hips",
+      "source": "Not found (pose-specific)"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "No pose-specific caution found",
+      "source": "PCOS exercise position statement (general); Not found (pose-specific)"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "No clinical caution found",
+      "source": "Not found"
+    },
+    {
+      "condition": "asthma",
+      "status": "modify",
+      "change": "Reliever inhaler nearby; slow breathing; stop if wheezing or tight chest",
+      "source": "Dr Weil (snippet); Sportskeeda (snippet); Marshfield Clinic (general)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "ok",
+      "change": "Little knee load; keep the knees bent and relaxed, hold the thighs above the knees",
+      "source": "Not found"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Bent knees, hands behind thighs, shorter holds, feet on the floor if the back sags; ask a doctor with a disc problem or ongoing pain",
+      "source": "Yoga International (snippet); Tata AIA (snippet); MyDr video transcript (snippet); Not found (clinical)"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "ok",
+      "change": "Hold the thighs instead of reaching the arms forward",
+      "source": "Not found"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "ask_doctor",
+      "change": "Keep the spine long and avoid rounding; bent knees or feet-down versions; clinician-guided after a vertebral fracture",
+      "source": "PubMed 22448849 (snippet); Not found (pose-specific)"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "avoid",
+      "change": "Avoid the pose; ask a doctor or midwife for alternatives",
+      "source": "Art of Living (snippet); Dr Weil (snippet); ACOG Committee Opinion 804 (general)"
+    },
+    {
+      "condition": "postpartum",
+      "status": "ask_doctor",
+      "change": "Wait for clearance; extra care after a caesarean or abdominal separation; stop if pelvic, abdominal or back pain or leaking",
+      "source": "ACOG Committee Opinion 804 (general); Not found (pose-specific)"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Follow the surgeon's advice; abdominal, stomach and spine surgery especially",
+      "source": "PharmEasy (snippet); Dr Weil (snippet); Not found (clinical)"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "home",
+      "office_desk"
+    ],
+    "bodyRegion": [
+      "core"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "endurance",
+      "relaxation"
+    ],
+    "intensity": "light",
+    "noise": "quiet",
+    "space": "mat_only",
+    "typicalMinutes": 3,
+    "kcalPer10min70kg": 27,
+    "difficulty1to5": 3,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Yoga & stretch",
+    "Home",
+    "Office desk",
+    "No equipment",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Yoga",
+    "Core",
+    "Hips",
+    "Legs",
+    "Back",
+    "Hold timer",
+    "Under 10 min"
+  ],
+  "needsReview": [
+    "rep_counter phase \"hold_long_enough\" (time): angle \"hold >= 8 s (position flag, not an angle)\" is not a parseable angle"
+  ],
+  "versions": [
+    {
+      "date": "2026-11-26",
+      "file": "FitPlate_Fitness_2026-11-26.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

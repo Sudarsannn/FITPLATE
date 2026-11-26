@@ -1,0 +1,641 @@
+{
+  "id": "dumbbell-bench-press-floor-press",
+  "number": 21,
+  "name": "Dumbbell bench press and floor press",
+  "otherNames": [
+    "Dumbbell chest press",
+    "Flat dumbbell press",
+    "DB bench press",
+    "Dumbbell floor press",
+    "Floor chest press",
+    "Water-bottle floor press",
+    "Can press",
+    "Rucksack floor press (no-equipment alternative)"
+  ],
+  "section": "home",
+  "type": "strength",
+  "equipment": [
+    "pair of dumbbells",
+    "flat stable bench (bench press version only)",
+    "non-slip exercise mat"
+  ],
+  "noEquipmentAlternative": "Floor press with two filled 1 litre plastic water bottles or small cans, or a rucksack loaded with books held by its top handle and strap (never glass); the floor press needs no bench.",
+  "musclesPrimary": [
+    "pectoralis major (sternal head)",
+    "anterior deltoid",
+    "triceps brachii"
+  ],
+  "musclesSecondary": [
+    "serratus anterior",
+    "rotator cuff",
+    "middle trapezius",
+    "lower trapezius",
+    "forearm flexors",
+    "grip muscles",
+    "rectus abdominis",
+    "transversus abdominis",
+    "gluteus maximus"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 3.5,
+  "compendiumCode": "02054",
+  "metOptions": [
+    {
+      "code": "02054",
+      "met": 3.5,
+      "activity": "MET: 3.5, Compendium code 02054, \"resistance (weight) training, multiple exercises, 8-15 repetitions at varied resistance\" (2024 Adult Compendium of Physical Activities, conditioning-exercise table; v"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "10-12 slow floor press reps, elbows about 45 degrees, RPE 5-6 with 3-4 reps in reserve",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "2-3 s down, 1 s pause on the floor, 1-2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 3,
+      "reps": "10-12 slow reps, RPE 5-6, paired with walking or a cardio block",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2-3 s down, 1 s pause, 1-2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "10-12 reps, 3 reps in reserve",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "2-3 s down, 1 s pause, 1-2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "strength",
+      "sets": 3,
+      "reps": "8-10 reps with a slightly heavier weight, 2-3 reps in reserve, clean form",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "2-3 s down, 1 s pause, 1-2 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 2,
+      "reps": "15 light reps, 3-4 reps in reserve",
+      "timeSec": null,
+      "restSec": 50,
+      "tempo": "2 s down, 1 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "8-12 reps, bench or floor press, 1-3 reps in reserve",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "2-3 s down, 1 s pause, 1-2 s up",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": 4,
+      "reps": "3-6 heavy controlled reps on a bench, 0-2 reps in reserve, with a safety plan",
+      "timeSec": null,
+      "restSec": 150,
+      "tempo": "2-3 s down, 1 s pause, controlled up",
+      "perWeek": 2
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "top_elbow",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": ">= 160",
+        "parsed": {
+          "op": ">=",
+          "value": 160,
+          "max": null
+        }
+      },
+      {
+        "name": "bottom_elbow",
+        "joint": "elbow (shoulder-elbow-wrist)",
+        "angleDeg": "<= 100",
+        "parsed": {
+          "op": "<=",
+          "value": 100,
+          "max": null
+        }
+      },
+      {
+        "name": "elbow_flare",
+        "joint": "upper arm to trunk (hip-shoulder-elbow)",
+        "angleDeg": "<= 75",
+        "parsed": {
+          "op": "<=",
+          "value": 75,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 3
+  },
+  "formChecks": [
+    {
+      "joint": "elbow",
+      "rule": "elbow angle > 100 degrees at the bottom (equals bottom_elbow phase threshold)",
+      "message": "Lower until your upper arms touch the floor"
+    },
+    {
+      "joint": "elbow",
+      "rule": "elbow angle < 160 degrees at the top (equals top_elbow phase threshold)",
+      "message": "Press until your arms are straight"
+    },
+    {
+      "joint": "shoulder",
+      "rule": "upper-arm-to-trunk angle > 75 degrees at the bottom (equals elbow_flare phase threshold)",
+      "message": "Tuck your elbows to about 45 degrees"
+    },
+    {
+      "joint": "hips",
+      "rule": "hips lifting flag: hip landmark rises above the shoulder-to-knee line by more than the set margin (position flag, not an angle)",
+      "message": "Hips down: keep your back flat"
+    },
+    {
+      "joint": "wrists",
+      "rule": "asymmetry flag: one wrist finishes higher than the other at the top by more than the set margin (position flag, not an angle)",
+      "message": "Press both arms evenly"
+    },
+    {
+      "joint": "elbow",
+      "rule": "rep shorter than 3 s (rushing)",
+      "message": "Slow down: 3 seconds to lower"
+    }
+  ],
+  "safetyFlags": [
+    "floor_press_first_upper_arms_touch_floor_lightly",
+    "elbows_about_45_degrees_not_flared",
+    "wrists_over_elbows",
+    "shoulder_blades_back_and_down",
+    "no_big_arch_hips_stay_down",
+    "light_weight_3_to_4_reps_in_reserve_for_beginners",
+    "do_not_hold_breath_breathe_out_on_press",
+    "never_drop_dumbbells_from_over_face_lower_to_thighs_one_at_a_time",
+    "spotter_for_heavy_bench_press",
+    "set_dumbbells_down_gently_on_mat",
+    "no_glass_bottles",
+    "shoulder_problems_pain_free_range_ask_physiotherapist",
+    "hypertension_light_no_breath_holding",
+    "heart_disease_ask_doctor_first",
+    "lower_back_pain_floor_press_knees_bent",
+    "osteoporosis_ask_doctor",
+    "pregnancy_ask_obstetrician_avoid_lying_flat_later_in_pregnancy",
+    "postpartum_ask_physiotherapist_first",
+    "recent_surgery_get_approval",
+    "stop_with_chest_pain_dizziness_or_shoulder_pinching_or_sharp_pain"
+  ],
+  "progressions": [
+    "floor press with a heavier pair and 1-3 reps in reserve, next weight when 12 reps are clean",
+    "dumbbell bench press on a flat bench, or a paused floor press with a 2 s pause on the floor",
+    "in a gym barbell flat bench press (Gym 20), incline bench press (Gym 21) or chest press machine (Gym 22); at home a 4 s lowering or one-arm press"
+  ],
+  "regressions": [
+    "wall or incline push-up on knees (Home 2), or a bottle press with a short range",
+    "floor press with bottles, cans or a light rucksack at very light effort",
+    "single-dumbbell or neutral-grip floor press with light weights"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "side, floor height about 40 cm, 2.5 m",
+      "shows": "setup: mat, knees bent, dumbbells on thighs, head resting",
+      "textOverlay": "Lie down. Knees bent."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, floor height, 2.5 m",
+      "shows": "getting the dumbbells up: knees help, one at a time",
+      "textOverlay": "Knees help. One at a time."
+    },
+    {
+      "seconds": 10,
+      "angle": "side, floor height, 2.5 m",
+      "shows": "full rep: lower in 3, upper arms touch the floor, pause, press up",
+      "textOverlay": "Down in 3. Touch. Press."
+    },
+    {
+      "seconds": 8,
+      "angle": "foot-end, floor height, 2.5 m",
+      "shows": "elbows about 45 degrees versus flared straight out",
+      "textOverlay": "Elbows about 45 degrees."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, floor height, 2.5 m",
+      "shows": "wrists over elbows versus bent back",
+      "textOverlay": "Wrists over elbows."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, floor height, 2.5 m",
+      "shows": "flat hips versus arched back and lifted hips",
+      "textOverlay": "Hips down. No big arch."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, floor height, 2.5 m",
+      "shows": "bottle or rucksack floor press as the no-equipment option; mention a bench and a bench press",
+      "textOverlay": "No dumbbells? Use bottles or a rucksack."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, floor height, 2.5 m",
+      "shows": "safe finish: dumbbells to the thighs one at a time, roll to the side, set on the mat",
+      "textOverlay": "Thighs first. Set them down softly."
+    }
+  ],
+  "lastResearched": "2026-11-26",
+  "setupSteps": [
+    "Pick the version. *Floor press (start here):* lie on a mat on a flat floor, knees bent and feet flat (Bodybuilding.com says knees bent or flat both work, snippet). Bent knees are the FitPlate default because they ease the lower back (coaching view). *Bench press:* a flat, stable bench that does not wobble; feet flat on the floor, wider than the hips for balance. *No equipment:* two filled bottles or cans, or a rucksack gripped by the top handle and strap, used in the floor position.",
+    "Floor. Non-slip mat, a clear 2 m x 1.2 m. Move furniture, fans and shelves; keep the area above your chest clear. Keep dumbbells close, one on each side.",
+    "Get the dumbbells into position safely. Sit with a dumbbell standing on each thigh near the hip, then lie back (or roll down) and use the knees to help lift each dumbbell to the chest, one at a time. This sit-and-roll method is common coaching practice; no authoritative source was found for the kick-up method: Not found. For heavier weights get a helper to hand them to you, and never lift more than you can place down safely.",
+    "Starting position. Dumbbells over the chest, arms straight but elbows not locked, palms facing the feet (or palms facing each other for a neutral grip, which suits shoulder discomfort; fitnessvolt and similar snippets).",
+    "Elbow angle. Elbows at about 45 degrees from the body, widest allowed about 60 (sources: 45 degrees in several, 45-60 in one; snippets). Wrists stay directly over the elbows, forearms upright when the dumbbells are low.",
+    "Shoulder blades. Draw the shoulder blades back and down gently and keep them there; the Noteboom et al. 2024 model study (barbell bench press) linked scapular retraction and narrower grips with lower rotator-cuff activity and lower shear forces (snippet; healthy experienced lifters, not clinical results).",
+    "Brace. Ribs down, tummy lightly tight, glutes gently on, head resting on the mat or bench, chin slightly tucked, eyes up at the ceiling.",
+    "Choose the weight. The lightest dumbbells that allow 10-12 slow reps with 3-4 clean reps in the tank (section 7). Many beginners need only a very light pair, or bottles.",
+    "Camera. Phone in landscape on the floor or a low stool about 40-60 cm high (est.), about 2.5-3 m to the side of your body, so the shoulder, elbow and wrist of one arm are in frame.",
+    "Warm up 3-5 minutes (est.): march on the spot, arm circles, shoulder rolls and a set of 8 empty-hand or very light presses."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Get into position",
+      "action": "Lie on the mat with knees bent, feet flat, and the dumbbells resting on the thighs.",
+      "feel": "Back and head supported, feet pressing the floor.",
+      "breathing": "Normal.",
+      "tempo": null,
+      "visualCheck": "Side: head, upper back and hips on the floor, knees bent about 90 degrees. Front: shoulders level."
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Lift the dumbbells to the start",
+      "action": "Use your knees to help lift each dumbbell to chest height, one at a time, then press both up.",
+      "feel": "A firm hold with the shoulders low and pinned to the floor.",
+      "breathing": "Breathe out as you press up.",
+      "tempo": null,
+      "visualCheck": "Side: dumbbells directly over the shoulders; elbows straight but not locked."
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Set the shoulders and brace",
+      "action": "Draw the shoulder blades back and down, tighten the tummy, keep the wrists straight.",
+      "feel": "Chest slightly lifted, shoulders away from the ears.",
+      "breathing": "Breathe in.",
+      "tempo": null,
+      "visualCheck": "Side: wrists above the elbows; neck long."
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Lower the dumbbells slowly",
+      "action": "Bend the elbows and lower the dumbbells with the elbows at about 45 degrees from the body, until the upper arms touch the floor (or the dumbbells are beside the chest on a bench).",
+      "feel": "A stretch across the chest, controlled shoulders, nothing pinching.",
+      "breathing": "Breathe in.",
+      "tempo": null,
+      "visualCheck": "Front: elbows angled down toward the hips, not flared straight out. Side: forearms upright; elbow angle about 90 degrees (est.)."
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Touch and pause",
+      "action": "Let the upper arms rest lightly on the floor for a short pause. Do not bounce or relax into the floor.",
+      "feel": "A brief stop with the muscles still switched on.",
+      "breathing": "Hold the in-breath only briefly, no longer than the pause.",
+      "tempo": null,
+      "visualCheck": "Side: upper arm lightly on the mat, wrist still over the elbow."
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Press up",
+      "action": "Push the dumbbells up and slightly together over the chest until the arms are straight but not locked.",
+      "feel": "The chest and the back of the arms pushing; no strain in the neck.",
+      "breathing": "Breathe out as you press.",
+      "tempo": null,
+      "visualCheck": "Side: dumbbells rise in a smooth line back over the shoulders. Front: both arms rise at the same speed."
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Top position",
+      "action": "Pause at the top with the elbows straight but soft, wrists over the elbows, shoulders still low and pinned to the floor.",
+      "feel": "Chest slightly squeezed; no locking pain.",
+      "breathing": "Normal.",
+      "tempo": null,
+      "visualCheck": "Side: elbow angle about 160-180 degrees (est.)."
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Repeat for 10-12 reps",
+      "action": "Repeat from step 4 with the same depth and speed each rep.",
+      "feel": "Even effort in both arms.",
+      "breathing": "Out on the press, in on the lowering.",
+      "tempo": null,
+      "visualCheck": "Same elbow angle and path every rep."
+    },
+    {
+      "n": 9,
+      "part": null,
+      "title": "Set the dumbbells down safely",
+      "action": "Lower the dumbbells to your chest, then to the thighs one at a time, then roll onto your side or sit up, and put them on the mat beside you. Do not drop them from over your face.",
+      "feel": "Controlled, no sudden pull in the shoulder.",
+      "breathing": "Breathe out.",
+      "tempo": null,
+      "visualCheck": "Side: dumbbells go to the thighs first; no dropping."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Flaring the elbows straight out (about 90 degrees from the body)",
+      "text": "Flaring the elbows straight out (about 90 degrees from the body). Why: coaches link it with more front-shoulder load and more shoulder stress, and one source puts the line at about 45 degrees (AOL/trainer, boxrox, jeromybryk, snippets). Fix: tuck the elbows to about 45-60 degrees, \"elbows pointing toward the hips\"."
+    },
+    {
+      "title": "Too much weight",
+      "text": "Too much weight. Why: causes bouncing, uneven arms and a bigger arch (Livestrong, builtwithscience, snippets). Fix: choose by 3-4 reps in reserve (section 7); a bottle is a normal start."
+    },
+    {
+      "title": "Bouncing the upper arms off the floor (or the dumbbells off the chest)",
+      "text": "Bouncing the upper arms off the floor (or the dumbbells off the chest). Why: lose control at the bottom and jerk the shoulder (coaching view). Fix: touch lightly, 1 s pause."
+    },
+    {
+      "title": "Arching the back and lifting the hips",
+      "text": "Arching the back and lifting the hips. Why: a common cause of lower-back strain (aaptiv, boxrox snippets). Fix: floor press with knees bent, ribs down, hips on the mat."
+    },
+    {
+      "title": "Wrists bent back or hands wider than the elbows",
+      "text": "Wrists bent back or hands wider than the elbows. Why: strain on the wrist and an uneven push (Livestrong, AOL, snippets). Fix: wrists straight, forearms upright."
+    },
+    {
+      "title": "Dumbbells drifting toward the face or too far forward",
+      "text": "Dumbbells drifting toward the face or too far forward. Why: loses the line over the shoulders and adds shoulder strain (coaching view). Fix: keep the dumbbells over the shoulders and press up and slightly together."
+    },
+    {
+      "title": "Shrugging or letting the shoulders roll forward",
+      "text": "Shrugging or letting the shoulders roll forward. Why: removes the stable base (Noteboom et al., scapular retraction snippet). Fix: shoulder blades back and down."
+    },
+    {
+      "title": "Not controlling the lowering",
+      "text": "Not controlling the lowering. Why: loses half the work and risks shoulder strain (coaching view). Fix: 2-3 s down."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. Why: raises blood pressure and brings dizziness (PubMed 7741618, carried). Fix: out on the press, in on the lowering."
+    },
+    {
+      "title": "Dropping dumbbells from over the face or onto the floor",
+      "text": "Dropping dumbbells from over the face or onto the floor. Why: danger to face and teeth, and noise below. Fix: lower to the thighs one at a time, then to the mat; lighten the load."
+    }
+  ],
+  "safetyNotes": [
+    "Shoulder problems (impingement, rotator cuff, instability, past dislocation): the Noteboom et al. 2024 study (snippet) says no biomechanical evidence yet shows what lowers bench press shoulder injury risk, and one cited study found tendinitis in about 76% of strength trainers reporting bench-related shoulder pain (snippet). Use the floor press for a limited depth, palms facing each other if more comfortable, elbows tucked, a pain-free range, and stop with pinching or pain; ask a physiotherapist.",
+    "High blood pressure and heart disease: breathe out on the press, never hold the breath, very light weight; get clearance first with heart disease or uncontrolled blood pressure (PubMed 7741618, carried).",
+    "Lower back problems: use the floor press with knees bent, no arching, a light weight; stop if pain increases.",
+    "Neck pain: keep the head resting and the chin slightly tucked; use a very light weight.",
+    "Osteoporosis: loaded strength work is generally recommended; the floor press loads the spine little if the trunk stays still; with a vertebral fracture or severe osteoporosis ask a clinician.",
+    "Pregnancy and postpartum: ACOG's guidance as summarised by secondary sources advises avoiding exercise lying flat on the back in the second and third trimesters because of reduced blood flow (snippet); a 2019 systematic review found insufficient evidence either way (PubMed 30337348, snippet); another source says lying exercise causes problems mainly if you feel lightheaded or nauseous (HSS, snippet). Ask your obstetrician or midwife; an inclined or seated press is often used instead. ACOG's own wording: Not found.",
+    "Mumbai flat: mat under you, lower the dumbbells gently, keep clear of furniture and fans, no glass bottles, and never press over the face with anything heavier than you can control."
+  ],
+  "sources": [
+    "2024 Adult Compendium of Physical Activities (Herrmann et al., J Sport Health Sci 2024): conditioning-exercise table, code 02054 (resistance training, multiple exercises, 8-15 repetitions, 3.5), moderate = 3.0-5.9 METs. https://pacompendium.com/conditioning-exercise ; https://pacompendium.com/wp-content/uploads/2024/02/1_2024-adult-compendium_1_2024.pdf ; https://pubmed.ncbi.nlm.nih.gov/38242596/ ; Springer review on resistance exercise METs https://link.springer.com/article/10.1007/s40279-024-02047-8 (snippets)",
+    "Noteboom et al. 2024, effects of bench press technique variations on musculoskeletal shoulder loads and potential injury risk (Frontiers in Physiology). https://pubmed.ncbi.nlm.nih.gov/38974522/ ; https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11224528/ ; https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2024.1393235/pdf (snippets)",
+    "2015 PeerJ bench press EMG and shoulder range of motion study (flat vs COR bench). https://peerj.com/articles/1365 (snippet); body position and loading modality in shoulder presses https://pubmed.ncbi.nlm.nih.gov/23096062/ (snippet)",
+    "Dumbbell bench press technique: Human Kinetics excerpt; MasterClass; Fitbod; RepFitness; Livestrong; Cleveland Clinic bench press form; UNMC transcript; AOL/trainer pieces; T3; Barbend; WebMD; Wikipedia. https://us.humankinetics.com/blogs/excerpt/how-to-perform-a-dumbbell-bench-press ; https://www.masterclass.com/articles/dumbbell-bench-presses ; https://fitbod.me/exercises/dumbbell-bench-press ; https://repfitness.com/blogs/training/how-to-dumbell-bench-press-correctly ; https://livestrong.com/article/13778211-dumbbell-bench-press ; https://health.clevelandclinic.org/bench-press-form ; https://www.unmc.edu/cfhl/_documents/dumbbell_bench_press_trasncript.txt ; https://www.aol.com/lifestyle/top-trainer-shared-5-common-145800417.html ; https://www.t3.com/features/three-dumbbell-bench-press-mistakes-you-need-to-stop-making ; https://barbend.com/dumbbell-Bench-Press/ ; https://www.webmd.com/fitness-exercise/how-to-bench-press ; https://wikipedia.com/wiki/Benchpress (snippets)",
+    "Floor press: Myprotein, Fitbod, Bodybuilding.com, Garage Gym Reviews, Fitnessvolt, Elitefts, Dick's Sporting Goods, Stack, AthleanX, Fitness Education, Muscle and Strength. https://us.myprotein.com/thezone/training/dumbbell-floor-press-form-benefits ; https://fitbod.me/exercises/dumbbell-floor-press ; https://www.bodybuilding.com/exercises/dumbbell-floor-press ; https://www.garagegymreviews.com/floor-press-exercise ; https://fitnessvolt.com/dumbbell-floor-press-guide/ ; https://elitefts.com/blogs/motivation/floor-press-dumbbells ; https://www.dickssportinggoods.com/protips/sports-and-activities/exercise-and-fitness/how-to-do-the-dumbbell-floor-press ; https://learn.athleanx.com/articles/how-to-do-the-floor-press ; https://www.muscleandstrength.com/exercises/dumbbell-floor-press.html (snippets)",
+    "Mistakes and elbow flare: boxrox, Livestrong, builtwithscience, thatfitfriend, dr-muscle, jeromybryk substack, aaptiv. https://www.boxrox.com/12-biggest-bench-press-mistakes-p82490175/ ; https://livestrong.com/article/13722610-bench-press-mistakes ; https://builtwithscience.com/dumbbell-bench-press-mistakes/ ; https://thatfitfriend.com/dumbbell-bench-press-mistakes-fixes/ ; https://jeromybryk.substack.com/p/fixing-common-bench-press-mistakes (snippets)",
+    "Starting weight and reps in reserve: BoxRox beginner bench; Strengthlog; Livestrong dumbbell sizes; ritfitsports; Fitbod. https://www.boxrox.com/?p=248934 ; https://www.strengthlog.com/beginner-bench-press-program/ ; https://livestrong.com/article/443300-what-size-dumbbells-should-i-use ; https://www.ritfitsports.com/blogs/article/what-dumbbell-weight-should-a-man-start (snippets)",
+    "No-equipment options: workoutlabs water-bottle floor chest press; Soletreadmills bench press alternatives without equipment; Whoop alternative weights; Gymshark weight substitutes; HSS how to exercise at home. https://workoutlabs.com/exercise-guide/water-bottle-floor-chest-press/ ; https://www.soletreadmills.com/blogs/news/top-3-barbell-bench-press-alternatives-without-equipment ; https://www.whoop.com/en-au/thelocker/alternative-weights-at-home ; https://www.gymshark.com/blog/article/best-weight-substitutes-for-resistance-training-at-home ; https://www.hss.edu/health-library/move-better/how-to-exercise-at-home (snippets)",
+    "Pregnancy and lying on the back: systematic review of supine exercise https://pubmed.ncbi.nlm.nih.gov/30337348/ ; HSS pregnancy exercise myths https://www.hss.edu/health-library/move-better/pregnancy-exercise-myths ; ACE prenatal fitness modifications https://www.acefitness.org/education-and-resources/professional/expert-articles/5558/prenatal-fitness-modifications-for-safety-and-comfort (snippets)",
+    "Carried from earlier Home research (snippets only, not re-checked here): breathing study PubMed 7741618 https://pubmed.ncbi.nlm.nih.gov/7741618/ ; AHA recommendations https://heart.org/en/healthy-living/exercise-and-physical-activity/fitness-basics/aha-recs-for-physical-activity-in-adults ; ADA position statement https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/ and https://pmc.ncbi.nlm.nih.gov/articles/PMC2992214 ; Donnelly et al. 2009 https://pubmed.ncbi.nlm.nih.gov/19127177/ ; hypothyroidism review https://pubmed.ncbi.nlm.nih.gov/37999992/ ; asthma https://www.pharmacymagazine.co.uk/cpd-modules/making-a-difference-in-asthma-care/exercise-and-asthma-528343 and https://pubmed.ncbi.nlm.nih.gov/21811185/ ; Vanderbilt knee OA handout https://www.vumc.org/sports-medicine/sites/vumc.org.sports-medicine/files/public_files/documents/Knee_OA_ex_quad.pdf ; Harvard Health https://www.health.harvard.edu/heart-health/strength-training-and-blood-pressure ; osteoporosis https://pmc.ncbi.nlm.nih.gov/articles/PMC9304091 , https://pubmed.ncbi.nlm.nih.gov/35577538/ ; Mayo Clinic pregnancy exercises https://www.mayoclinic.org/healthy-lifestyle/pregnancy-week-by-week/in-depth/pregnancy-exercises/art-20546799 ; NHS Lothian DRAMs https://apps.nhslothian.scot/files/sites/2/DRAMs-Guidelines.pdf ; ACE HIIT for clinical populations https://www.acefitness.org/certifiednewsarticle/2589/high-intensity-interval-training-for-clinical/ ; Goom, Donnelly and Brockwell 2019 https://athleticsni.org/download/files/Returning_to_running_postnatal_guideline_for_medical_health_and_fitness_professionals_managing_this_population.05.pdf",
+    "ExRx.net, NHS and ACSM pages on the dumbbell bench press or floor press itself, any study comparing floor press with bench press, a floor-press-specific joint-angle standard, a floor-press spine-position source, a safe dumbbell kick-up source, a reliable beginner starting weight, ACOG's own pregnancy wording, MET for bottle or rucksack presses and decibel data: Not found."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 28.6,
+      "70kg": 24.5,
+      "80kg": 21.4
+    },
+    "per300kcal": {
+      "60kg": 85.7,
+      "70kg": 73.5,
+      "80kg": 64.3
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "strength",
+    "muscle",
+    "general_fitness",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "short_sessions",
+    "no_gym",
+    "low_cost_equipment",
+    "small_flat",
+    "neighbours_below_with_gentle_set_down",
+    "no_bench_needed_floor_press",
+    "circuit"
+  ],
+  "swapsByAccess": {
+    "none": "Push-up on knees or incline push-up (Home 2), or a bottle floor press with a short range",
+    "home_equipment": "Dumbbell floor press, band chest press (Home 25) or push-up (Home 2)",
+    "basic_gym": "Chest press machine (Gym 22) or dumbbell bench press on a flat bench",
+    "full_gym": "Chest press machine (Gym 22), barbell flat bench press (Gym 20) or incline bench press (Gym 21)"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "Light weight, 3-4 reps in reserve, breathe out on the press and never hold the breath; avoid straining; check blood pressure is controlled; ask a doctor if readings are very high or medicines cause dizziness",
+      "source": "Harvard Health strength training and blood pressure (carried); breathing study PubMed 7741618 (carried); press-specific advice Not found"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "Resistance training 2-3 non-consecutive days a week is recommended; usual glucose checks and fast carbohydrate on hand if on insulin or sulfonylureas; check feet and shoes; start light",
+      "source": "ADA position statement 2016, secondary summary (PMC5317029, carried; PMC2992214 snippet); press-specific advice Not found"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "Only with clearance and a plan; very light loads, no breath-holding, stop with chest discomfort, dizziness or breathlessness",
+      "source": "ACE HIIT for clinical populations (carried, snippet); press-specific clearance Not found"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "Fits regular exercise advice; start light and build up",
+      "source": "AHA recommendations (carried); press-specific advice Not found"
+    },
+    {
+      "condition": "obesity",
+      "status": "ok",
+      "change": "Floor press on a mat (check you can get down and up easily; a bench may be easier), light weight, 60-90 s rest; build gradually; combine with walking",
+      "source": "ACSM weight position stand (Donnelly 2009, carried); press-specific advice Not found"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "Standard strength guidance applies; start with 2 sets and build",
+      "source": "Not found"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "Train as usual if controlled; start light if fatigued; stop for palpitations or faintness",
+      "source": "Systematic review 2023 (PubMed 37999992, carried)"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Warm up, reliever nearby; strength work is usually well tolerated; stop and use the reliever if wheeze or cough starts",
+      "source": "Asthma UK tips via Pharmacy Magazine CPD (carried); PubMed 21811185 (carried)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "ok",
+      "change": "The press puts little load on the knees; bent knees are fine on the floor, or keep the legs on a bench or use a chair if getting down is hard; stop with sharp or increasing pain",
+      "source": "Press-specific knee guidance Not found; Vanderbilt knee OA handout (carried)"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Floor press with knees bent, no arching, light weight; stop if pain increases or spreads down a leg; get advice if pain persists",
+      "source": "Coaching sources (aaptiv, boxrox, bodybuilding.com, snippets); clinical guidance specific to the press Not found"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "modify",
+      "change": "Floor press for limited depth, elbows tucked, pain-free range, light weight; stop with pinching or pain and ask a physiotherapist; avoid if there is an acute injury",
+      "source": "Noteboom et al. 2024 PubMed 38974522 (snippet; model-based, healthy athletes); Myprotein and Fitbod floor press pages (coaching snippets); clinical guidance specific to the press Not found"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "ask_doctor",
+      "change": "Loaded strength training is generally recommended for bone; keep the trunk still; with severe osteoporosis or a vertebral fracture get individual advice first",
+      "source": "PMC9304091 (carried, snippet); RACGP HANDI exercise for bone loss (carried, snippet); Brooke-Wavell et al. 2022 (carried)"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "ask_doctor",
+      "change": "Ask your obstetrician or midwife; avoid long periods flat on the back later in pregnancy (use an incline or seated press); stop with dizziness, headache, pain, leaking or heaviness",
+      "source": "ACOG FAQ via secondary summary (snippet); PubMed 30337348 systematic review (snippet); Mayo Clinic pregnancy exercises (carried); ACOG's own wording Not found"
+    },
+    {
+      "condition": "postpartum",
+      "status": "ask_doctor",
+      "change": "Ask a women's health physiotherapist; start with light weight and breathing; stop with leaking, heaviness or pain",
+      "source": "Goom, Donnelly and Brockwell 2019 (carried); NHS Lothian DRAMs (carried)"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Only with surgeon or physiotherapist approval, especially after shoulder, neck, chest, breast or abdominal surgery",
+      "source": "General guidance Not found"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "home",
+      "gym"
+    ],
+    "bodyRegion": [
+      "upper"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "muscle",
+      "strength"
+    ],
+    "intensity": "moderate",
+    "noise": "quiet",
+    "space": "small_room",
+    "typicalMinutes": 10,
+    "kcalPer10min70kg": 40.8,
+    "difficulty1to5": 3,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Home",
+    "Gym",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Strength",
+    "Chest",
+    "Shoulders",
+    "Arms",
+    "Rep counter",
+    "10–20 min"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-11-26",
+      "file": "FitPlate_Fitness_2026-11-26.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

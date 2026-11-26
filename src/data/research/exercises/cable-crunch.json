@@ -1,0 +1,681 @@
+{
+  "id": "cable-crunch",
+  "number": 42,
+  "name": "Cable crunch and ab crunch machine",
+  "otherNames": [
+    "Kneeling cable crunch",
+    "Rope crunch",
+    "Cable ab crunch",
+    "Seated crunch machine",
+    "Ab crunch machine"
+  ],
+  "section": "gym",
+  "type": "strength",
+  "equipment": [
+    "Cable station with high pulley",
+    "Rope attachment",
+    "Mat or towel",
+    "Ab crunch machine"
+  ],
+  "noEquipmentAlternative": "Floor crunch, band crunch, or dead bug (Home 8)",
+  "musclesPrimary": [
+    "rectus abdominis"
+  ],
+  "musclesSecondary": [
+    "external obliques",
+    "internal obliques",
+    "hip flexors (iliopsoas, rectus femoris)",
+    "forearm grip",
+    "shoulder stabilisers"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": false,
+  "met": 3.5,
+  "compendiumCode": null,
+  "metOptions": [],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 2,
+      "reps": "10-12 at RIR 2-3",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 2,
+      "reps": "10-12 at RIR 2-3 (as a circuit station)",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "2 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "10-12 at RIR 2-3",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "2 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "strength",
+      "sets": 3,
+      "reps": "8-10 at RIR 2-3",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "2 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 2,
+      "reps": "15 at RIR 3",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "2 s up, 0 s pause, 2 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "10-12 at RIR 2",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "8-12 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "2 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "strength",
+      "sets": 4,
+      "reps": "6-8 at RIR 2",
+      "timeSec": null,
+      "restSec": 120,
+      "tempo": "2 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "endurance",
+      "sets": 3,
+      "reps": "15-20 at RIR 2",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "2 s up, 0 s pause, 2 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "general_fitness",
+      "sets": 3,
+      "reps": "10-15 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "muscle",
+      "sets": 4,
+      "reps": "8-15 at RIR 0-2",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "2 s up, 1 s pause, 3 s down",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": 4,
+      "reps": "6-8 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 120,
+      "tempo": "2 s up, 1 s pause, 3 s down",
+      "perWeek": 2
+    },
+    {
+      "level": "advanced",
+      "goal": "endurance",
+      "sets": 4,
+      "reps": "20-25 at RIR 1-2",
+      "timeSec": null,
+      "restSec": 45,
+      "tempo": "2 s up, 0 s pause, 2 s down",
+      "perWeek": 2
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "start_upright",
+        "joint": "trunk (shoulder-hip-knee)",
+        "angleDeg": ">= 150",
+        "parsed": {
+          "op": ">=",
+          "value": 150,
+          "max": null
+        }
+      },
+      {
+        "name": "end_curled",
+        "joint": "trunk (shoulder-hip-knee)",
+        "angleDeg": "<= 110",
+        "parsed": {
+          "op": "<=",
+          "value": 110,
+          "max": null
+        }
+      },
+      {
+        "name": "knee_min",
+        "joint": "knee (hip-knee-ankle)",
+        "angleDeg": ">= 70",
+        "parsed": {
+          "op": ">=",
+          "value": 70,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 3
+  },
+  "formChecks": [
+    {
+      "joint": "trunk",
+      "rule": "trunk angle > 110 degrees at the end (equals end_curled threshold; rep not counted)",
+      "message": "Curl lower: ribs toward hips"
+    },
+    {
+      "joint": "trunk",
+      "rule": "trunk angle < 150 degrees at the start (equals start_upright threshold; rep not counted)",
+      "message": "Return tall before the next rep"
+    },
+    {
+      "joint": "knee",
+      "rule": "knee angle < 70 degrees (equals knee_min threshold; kneeling cable only)",
+      "message": "Keep your hips up: don't sit on your heels"
+    },
+    {
+      "joint": "trunk",
+      "rule": "separate flag: lowering shorter than 2 s",
+      "message": "Lower slowly: 3 seconds"
+    },
+    {
+      "joint": "elbow",
+      "rule": "separate flag: elbows travel downward before the trunk bends (no angle used)",
+      "message": "Arms stay still, abs do the work"
+    },
+    {
+      "joint": "spine",
+      "rule": "separate flag: ribs flare and back arches past upright at the start (no angle used)",
+      "message": "Start tall, not arched"
+    },
+    {
+      "joint": "trunk",
+      "rule": "rep duration < 3 s",
+      "message": "Slow down: control each rep"
+    }
+  ],
+  "safetyFlags": [
+    "check_rope_clip_and_stack_pin",
+    "light_weight_first",
+    "hips_stay_still",
+    "arms_do_not_pull",
+    "lower_slowly_3_seconds",
+    "no_back_arch_at_start",
+    "no_breath_holding",
+    "high_blood_pressure_no_failure_sets",
+    "lower_back_pain_modify",
+    "osteoporosis_avoid",
+    "neck_strain_rope_beside_face",
+    "pregnancy_ask_obstetrician",
+    "postpartum_ask_about_diastasis",
+    "recent_surgery_follow_surgeon_limits",
+    "stop_if_sharp_back_or_neck_pain"
+  ],
+  "progressions": [
+    "more reps then more load by double progression",
+    "slower lowering (4-5 s) or a short pause at the end",
+    "standing cable crunch, cable oblique crunch or hanging leg raise (Gym 43)"
+  ],
+  "regressions": [
+    "floor crunch or dead bug (Home 8)",
+    "ab crunch machine with a very light stack",
+    "band crunch with the band anchored high"
+  ],
+  "videoShots": [
+    {
+      "seconds": 8,
+      "angle": "front, 3 m",
+      "shows": "pulley at the highest notch, rope clipped on, light stack pinned",
+      "textOverlay": "High pulley, rope, light weight"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "kneeling position, hips above knees, rope beside the face",
+      "textOverlay": "Rope beside your face. Hips above knees"
+    },
+    {
+      "seconds": 10,
+      "angle": "side, 2.5 m",
+      "shows": "curl ribs toward hips with hips still, elbows toward thighs",
+      "textOverlay": "Curl the ribs to the hips"
+    },
+    {
+      "seconds": 10,
+      "angle": "side, 2.5 m",
+      "shows": "slow 3 s lowering back to upright, no arch",
+      "textOverlay": "Lower for 3 s. Stay tall"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "wrong: hips sinking, arms pulling, back arching; right: still hips",
+      "textOverlay": "Hips still. Arms don't pull"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "ab crunch machine seat set so the pivot is at the lower ribs",
+      "textOverlay": "Pivot at the lower ribs"
+    },
+    {
+      "seconds": 8,
+      "angle": "side, 2.5 m",
+      "shows": "machine crunch with the same cues",
+      "textOverlay": "Same form on the machine"
+    },
+    {
+      "seconds": 8,
+      "angle": "front, 2.5 m",
+      "shows": "choosing weight, lowering the stack gently, resetting the pulley",
+      "textOverlay": "Light weight. Stack down gently"
+    }
+  ],
+  "lastResearched": "2026-11-26",
+  "setupSteps": [
+    "Pulley height: set the pulley to its highest notch (Rep Fitness, Masterclass, Bodybuilding.com).",
+    "Attachment: clip on a rope attachment and check the clip is closed.",
+    "Weight: pick a light weight on the stack; check the pin is fully in.",
+    "Knee pad: put a mat or folded towel under your knees if the floor is hard.",
+    "Distance: kneel about 30-60 cm back from the stack, facing it, knees hip-width apart (distance is an est.; sources say \"a foot or two\").",
+    "Hands: hold the rope ends with both hands and bring them beside your face or against your forehead, elbows pointing down. Do not hold the rope behind your neck for your first sessions; it makes the neck pull easy to do.",
+    "Hips: sit your hips slightly back but keep them above your heels; your thighs should stay roughly upright, not sitting on your heels.",
+    "Spotter: not needed for light weight.",
+    "Seat height: release the pin and set the seat so the machine's pivot is roughly level with your lower ribs or mid-torso (Legion Athletics; the Hoist HD-3600 manual describes changing the seat with a pull pin). Machines differ, so read the label.",
+    "Pads and handles: the chest or shoulder pad should sit on the upper chest below the collarbone, handles at a comfortable reach; hands or elbows only hold on. Foot rollers or shin pads, where fitted, keep the hips still.",
+    "Back: sit all the way back with your lower back against the pad, knees about 90 degrees (est.).",
+    "Weight: pin the lightest stack that lets you do 12 slow reps; ask staff to check the first time."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Get into position",
+      "action": "Kneel at the cable (or sit on the machine) with the rope beside your face (or hands on the handles), back long and chest tall.",
+      "feel": "Steady, hips still, shoulders relaxed.",
+      "breathing": "Breathe in.",
+      "tempo": null,
+      "visualCheck": "Side: head over shoulders, shoulders over hips, thighs about upright. Front: elbows level, knees hip-width apart."
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Set the neck and arms",
+      "action": "Lock the rope beside your face, elbows pointing down; keep your arms still and do not pull with them.",
+      "feel": "Light hold in the hands, no neck strain.",
+      "breathing": "Breathe out gently.",
+      "tempo": null,
+      "visualCheck": "Side: rope does not move relative to the head. Front: elbows even."
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Brace the abdomen",
+      "action": "Tighten the belly as if preparing to cough and keep the hips still.",
+      "feel": "Belly firm, no arch in the lower back.",
+      "breathing": "Breathe in, then out as you start.",
+      "tempo": null,
+      "visualCheck": "Side: ribs level with the pelvis (not flared out)."
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Curl the ribs toward the hips",
+      "action": "Bend the spine forward, bringing your elbows toward your thighs, shortening the distance between ribs and pelvis. Hips stay where they are.",
+      "feel": "Abs squeezing; not the arms or the neck.",
+      "breathing": "Breathe out.",
+      "tempo": null,
+      "visualCheck": "Side: the upper back rounds slightly and the trunk bends forward; the hips do not move toward your heels."
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Squeeze at the end",
+      "action": "Stop when your elbows are near your thighs or knees; do not sit back onto your heels.",
+      "feel": "Peak abdominal squeeze.",
+      "breathing": "Keep breathing out.",
+      "tempo": null,
+      "visualCheck": "Side: trunk angle (shoulder-hip-knee) about 110 degrees or less (est.); hips still."
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Lower slowly",
+      "action": "Return slowly to upright by straightening the spine, taking at least as long as the lift.",
+      "feel": "Abs lengthening under tension.",
+      "breathing": "Breathe in.",
+      "tempo": null,
+      "visualCheck": "Side: the weight stack moves smoothly; no bounce."
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Stop at upright, not arched",
+      "action": "At the top stop with the trunk upright and the back straight; do not let the weight pull you into a back arch.",
+      "feel": "Gentle stretch, tall and steady.",
+      "breathing": "Breathe in, then out as you lift again.",
+      "tempo": null,
+      "visualCheck": "Side: trunk angle about 150 degrees or more but not past about 180 (est.)."
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Finish",
+      "action": "After the last rep, lower the stack until it rests, release the rope, and stand up slowly.",
+      "feel": "Abs relax.",
+      "breathing": "Normal.",
+      "tempo": null,
+      "visualCheck": "Weight stack is resting before you let go."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Moving the hips",
+      "text": "Moving the hips. Why: the hips take over, making it a hip-flexor exercise and increasing the chance of lower back strain (coaching sources). Fix: lock the hips and only curl the spine."
+    },
+    {
+      "title": "Pulling with the arms",
+      "text": "Pulling with the arms. Why: the arms pull the rope down, which reduces the work for the abs and can strain the neck. Fix: lighter weight, hold the rope beside the face and let the arms stay still."
+    },
+    {
+      "title": "Going too heavy",
+      "text": "Going too heavy. Why: leads to back, neck or disc strain in coaching guidance and to swinging. Fix: use a weight you can lower for 3 seconds for 10-12 reps with 2-3 reps in reserve."
+    },
+    {
+      "title": "Using a short range of motion",
+      "text": "Using a short range of motion. Why: the abs do not shorten fully (one coaching guide notes many people use a restricted range). Fix: curl until the elbows approach the thighs."
+    },
+    {
+      "title": "Arching the back at the start",
+      "text": "Arching the back at the start. Why: lets the weight pull the lower back into extension under load. Fix: start upright with the ribs level to the pelvis."
+    },
+    {
+      "title": "Sitting back on the heels",
+      "text": "Sitting back on the heels. Why: the thighs and hips move instead of the spine. Fix: keep the hips above the knees."
+    },
+    {
+      "title": "Rushing and bouncing",
+      "text": "Rushing and bouncing. Why: momentum replaces muscle work. Fix: 2 seconds up, 1 pause, 3 seconds down."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. Why: can raise blood pressure briefly. Fix: breathe out as you curl."
+    },
+    {
+      "title": "Machine: pushing with the arms or feet instead of curling",
+      "text": "Machine: pushing with the arms or feet instead of curling. Why: reduces the abs' share. Fix: hold lightly and curl the ribs to the pelvis."
+    },
+    {
+      "title": "Doing it every day",
+      "text": "Doing it every day. Why: recovery. Fix: 2-3 sessions per week with a rest day between (est.)."
+    }
+  ],
+  "safetyNotes": [
+    "Loaded spinal flexion: the exercise repeatedly bends the spine under load. Laboratory and modelling work (McGill and colleagues) links this to disc stress; a 2011 NSCA review (Contreras and Schoenfeld) says the idea of a limited number of bending cycles is an assumption and that evidence in living people is limited. Beginners should keep the weight light, move slowly and stop if the lower back hurts.",
+    "Neck: pulling the rope into the neck can strain it; keep the rope beside the face and the arms still.",
+    "Hip flexor and lower back: small surface-EMG studies found high rectus femoris activity during machine crunches and caution for people with lower back problems; no cable crunch study was found.",
+    "Osteoporosis: consensus guidance advises avoiding forward spine bending under load; this exercise is an avoid for most people with low bone mass or a spine fracture (see table).",
+    "Pregnancy and postpartum: advice conflicts (some trainers say avoid crunches, one 2015 study reported narrowing of the gap with crunches); ask an obstetrician or pelvic health physiotherapist.",
+    "High blood pressure: avoid breath-holding; stop 2-3 reps before failure.",
+    "Spotter: not needed. Machine: ask staff to check the first time.",
+    "Equipment check: check the rope clip, the stack pin, the pulley height lock, and on the machine the seat pin and pad bolts.",
+    "Gym etiquette: wipe the pads and handles, return the rope, reset the pulley, do not hog the station between sets, ask staff before filming and do not film other members."
+  ],
+  "sources": [
+    "ACE Fitness exercise library, Seated crunch (selectorized machine, beginner level, sit with hips back, shins on the roller, slow return). https://www.acefitness.org/resources/everyone/exercise-library/291/seated-crunch (search summary only)",
+    "University of Western Ontario Campus Rec, abs equipment guide (machine setup). https://www.uwo.ca/campusrec/orientation/equipment_guides/abs.html (snippet only)",
+    "ExRx.net, Kneeling cable crunch and related crunch pages (setup; muscles lists not retrieved). https://exrx.net/WeightExercises/RectusAbdominis/CBKneelingCrunch (snippet only)",
+    "Escamilla RF et al. (2006), An electromyographic analysis of commercial and common abdominal exercises, J Orthop Sports Phys Ther. https://pubmed.ncbi.nlm.nih.gov/16494072/ (summary only)",
+    "Sundstrup E et al. (2012), Swiss ball abdominal crunch with added elastic resistance is an effective alternative to training machines (rectus femoris 27% vs 65% nEMG). https://pubmed.ncbi.nlm.nih.gov/22893857/ (summary only)",
+    "Contreras B and Schoenfeld B (2011), To crunch or not to crunch, Strength Cond J (NSCA); McGill spine work (Waterloo). https://bretcontreras.com/wp-content/uploads/To-Crunch-or-Not-to-Crunch-An-Evidence-Based-Examination-of-Spinal-Flexion-Exercises-Their-Potential-Risks-and-Their-Applicability-to-Program-Design.pdf ; https://uwaterloo.ca/kinesiology-health-sciences/hes-got-our-backs (summaries only)",
+    "Rep Fitness, Cable crunches guide; Masterclass, Cable crunches; Legion Athletics, Cable crunches and Ab crunch machine; Fitnessvolt, Kneeling cable crunch; Coachweb; Bodybuilding.com, Rope crunch. https://repfitness.com/blogs/training/cable-crunches ; https://www.masterclass.com/articles/cable-crunches-guide ; https://legionathletics.com/cable-crunches ; https://legionathletics.com/ab-crunch-machine/ ; https://fitnessvolt.com/kneeling-cable-crunch/ ; https://bodybuilding.com/exercises/rope-crunch (snippets only; blog-level)",
+    "Hoist HD-3600 Ab Crunch/Low Back (seat height pull pin). https://www.hoistfitness.com/pages/hd-3600-ab-crunch-low-back (snippet only)",
+    "RP Strength and BoxRox, ab training rep ranges (8-15, 15-25). https://rpstrength.com/blogs/articles/ab-training ; https://www.boxrox.com/?p=233233 (snippets only; blog-level)",
+    "Bone Health and Osteoporosis Foundation, protecting your spine; osteoporosis exercise table. https://www.bonehealthandosteoporosis.org/patients/treatment/exercisesafe-movement/protecting-your-spine/ ; https://pmc.ncbi.nlm.nih.gov/articles/PMC5101068/table/T5 ; https://www.nj.gov/humanservices/doas/documents/osteo_exercise_do_dont.pdf (snippets only)",
+    "NASM blog, diastasis recti and crunches; 2015 study of 84 first-time mothers. https://blog.nasm.org/womens-fitness/how-to-prevent-diastasis-recti-with-crunches ; https://pubmed.ncbi.nlm.nih.gov/26304639/ (snippets only)",
+    "2024 Adult Compendium of Physical Activities (Herrmann et al., J Sport Health Sci 2024): 02054 (3.5, resistance training, 8-15 reps), code carried over from earlier items. https://pacompendium.com/conditioning-exercise ; https://pubmed.ncbi.nlm.nih.gov/38242596/ (not re-opened this session)",
+    "Condition rows carried over from earlier gym items (not re-opened): Valsalva review https://pubmed.ncbi.nlm.nih.gov/23222073/ ; Colberg et al. 2016 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5317029/ ; ACC summary of AHA 2023 https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2023/12/19/15/33/resistance-exercise-training ; AHA Gibbs et al. https://professional.heart.org/en/science-news/Physical-Activity-as-a-Critical-Component-of-First-Line-Treatment-for-Elevated-BP-or-Cholesterol/commentary ; Donnelly et al. 2009 https://pubmed.ncbi.nlm.nih.gov/19127177/ ; PCOS https://vuir.vu.edu.au/45855/1/1-s2.0-S2772696723000054-main.pdf ; thyroid https://pubmed.ncbi.nlm.nih.gov/37999992/ ; asthma https://www.pharmacymagazine.co.uk/cpd-modules/making-a-difference-in-asthma-care/exercise-and-asthma-528343 ; ACOG CO 804 https://opqic.org/acog-committee-opinion-no-804-physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period/ ; NNUH https://www.nnuh.nhs.uk/publication/download/post-natal-physiotherapy-advice-and-exercises-v2-1",
+    "Note: all sources for this item were seen only as search-result summaries (pages not opened in full); many are coaching blogs. The 150/110 degree trunk thresholds, 70 degree knee limit, 3 s minimum rep, sets, reps, rest, tempo and starting-weight steps are FitPlate choices (est.), not validated. Not found: an ACSM, ACE (beyond the seated crunch listing), NSCA, NHS, Mayo Clinic or Harvard Health cable-crunch page or prescription; EMG data for the cable crunch itself; the ExRx muscle lists for the cable crunch; a standard cable-crunch hand position; a controlled trial of ab rep ranges; condition-specific sources for knee pain, shoulder problems, obesity, PCOS and lower back pain with cable or machine crunches."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 28.6,
+      "70kg": 24.5,
+      "80kg": 21.4
+    },
+    "per300kcal": {
+      "60kg": 85.7,
+      "70kg": 73.5,
+      "80kg": 64.3
+    }
+  },
+  "gymAccess": [
+    "full_gym",
+    "basic_gym"
+  ],
+  "suitsPreferences": [
+    "strength",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "core_day",
+    "full_body",
+    "upper_lower",
+    "push_pull_legs",
+    "30_to_60_min_sessions"
+  ],
+  "swapsByAccess": {
+    "none": "Floor crunch or dead bug (Home 8)",
+    "home_equipment": "Band crunch with the band anchored high, or a dumbbell held on the chest for a floor crunch",
+    "basic_gym": "Ab crunch machine or kneeling cable crunch with light weight",
+    "full_gym": "Kneeling cable crunch with a rope; machine crunch if the cable is busy or knees are sore"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "No breath-holding; stop 2-3 reps before failure; no lifting if resting BP >= 180/120; uncontrolled BP: ask a doctor",
+      "source": "Valsalva systematic review 2013 (PubMed 23222073); NSCA 1999 Valsalva article"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "2-3 non-consecutive resistance days per week; usual glucose checks if on insulin or sulfonylureas",
+      "source": "ADA position statement, Colberg et al. 2016"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "After clearance: light load, continuous breathing, no straining",
+      "source": "AHA resistance exercise statement (via ACC summary 2023)"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "Part of 2+ days per week resistance work with aerobic activity",
+      "source": "AHA scientific statement (Gibbs et al.)"
+    },
+    {
+      "condition": "obesity",
+      "status": "ok",
+      "change": "Machine version may be easier than kneeling; check seat weight rating; exercise-specific advice not found",
+      "source": "ACSM weight management position stand (Donnelly et al. 2009)"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "Fits muscle-strengthening guidance; exercise-specific advice not found",
+      "source": "International PCOS guideline 2023"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "Train normally if controlled; start at beginner level with ongoing fatigue",
+      "source": "Systematic review 2023 (PubMed 37999992)"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Warm up and keep reliever inhaler nearby",
+      "source": "Asthma exercise guidance (Pharmacy Magazine CPD)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Kneeling can irritate sore knees; use the seated machine or a thick pad; condition-specific source not found",
+      "source": "Not found"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Loaded spine bending can aggravate some people; machine crunches showed high rectus femoris activity (caution for lumbar pain); start very light or choose dead bug; stop if pain continues; ask a physiotherapist",
+      "source": "Sundstrup et al. 2012 (PubMed 22893857); Escamilla et al. 2006 (PubMed 16494072)"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "ok",
+      "change": "Arms stay still; use a lighter load; condition-specific source not found",
+      "source": "Not found"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "avoid",
+      "change": "Avoid loaded forward spine bending; trunk extension and abdominal stabilisation are safer; ask a doctor or physiotherapist",
+      "source": "Bone Health and Osteoporosis Foundation (protecting your spine); PMC5101068"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "ask_doctor",
+      "change": "Ask obstetrician; advice on crunches is mixed; kneeling and machine positions get awkward later",
+      "source": "NASM blog on diastasis; ACOG Committee Opinion 804"
+    },
+    {
+      "condition": "postpartum",
+      "status": "ask_doctor",
+      "change": "Pelvic floor and deep core first; ask about diastasis recti before loaded crunches, especially after caesarean",
+      "source": "PubMed 26304639; NHS postnatal physiotherapy leaflets"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Only with surgeon or physiotherapist approval; abdominal, spinal or hernia surgery often restricts trunk flexion and straining",
+      "source": "General clearance advice; condition-specific source not found"
+    },
+    {
+      "condition": "other",
+      "status": "modify",
+      "change": "Neck pain or disc problems: keep the rope beside the face, very light weight or avoid; ask a physiotherapist",
+      "source": "Contreras and Schoenfeld, NSCA 2011 review; coaching guides (blog-level)"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "gym"
+    ],
+    "bodyRegion": [
+      "core"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "fat_loss",
+      "muscle",
+      "strength",
+      "endurance"
+    ],
+    "intensity": "moderate",
+    "noise": "quiet",
+    "space": "machine",
+    "typicalMinutes": 6,
+    "kcalPer10min70kg": 41,
+    "difficulty1to5": 2,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Gym",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Strength",
+    "Core",
+    "Rep counter",
+    "Under 10 min"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-11-26",
+      "file": "FitPlate_Fitness_2026-11-26.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

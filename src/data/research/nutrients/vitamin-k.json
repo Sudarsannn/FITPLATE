@@ -34,56 +34,56 @@
       "ear": null,
       "rda": null,
       "ai": 55,
-      "source": "ICMR-NIN 2020 adult recommendation (55 µg/day, via short-report snippets and secondary summaries; RDA vs AI label not confirmed; EAR not found)"
+      "source": "ICMR-NIN 2020 adult value 55 µg (secondary, unverified; RDA vs AI label unconfirmed; EAR Not found)"
     },
     {
       "group": "adult_male_moderate",
       "ear": null,
       "rda": null,
       "ai": 55,
-      "source": "ICMR-NIN 2020 (same adult value; no split by activity found)"
+      "source": "ICMR-NIN 2020 (secondary, unverified); no activity adjustment"
     },
     {
       "group": "adult_male_heavy",
       "ear": null,
       "rda": null,
       "ai": 55,
-      "source": "ICMR-NIN 2020 (same adult value; no split by activity found)"
+      "source": "ICMR-NIN 2020 (secondary, unverified); no activity adjustment"
     },
     {
       "group": "adult_female_sedentary",
       "ear": null,
       "rda": null,
       "ai": 55,
-      "source": "ICMR-NIN 2020 adult recommendation (55 µg/day, via secondary sources)"
+      "source": "ICMR-NIN 2020 adult value 55 µg (secondary, unverified)"
     },
     {
       "group": "adult_female_moderate",
       "ear": null,
       "rda": null,
       "ai": 55,
-      "source": "ICMR-NIN 2020 (same adult value; no split by activity found)"
+      "source": "ICMR-NIN 2020 (secondary, unverified); no activity adjustment"
     },
     {
       "group": "adult_female_heavy",
       "ear": null,
       "rda": null,
       "ai": 55,
-      "source": "ICMR-NIN 2020 (same adult value; no split by activity found)"
+      "source": "ICMR-NIN 2020 (secondary, unverified); no activity adjustment"
     },
     {
       "group": "pregnant",
       "ear": null,
       "rda": null,
       "ai": 55,
-      "source": "ICMR-NIN 2020 pregnancy value not found; adult value applied (FAO/WHO 2004 also 55 µg)"
+      "source": "Adult ICMR value applied via topic 42 (secondary, unverified); NASEM 90; EFSA 70"
     },
     {
       "group": "lactating",
       "ear": null,
       "rda": null,
       "ai": 55,
-      "source": "ICMR-NIN 2020 lactation value not found; adult value applied (FAO/WHO 2004 also 55 µg)"
+      "source": "Adult ICMR value applied via topic 42 (secondary, unverified); NASEM 90; EFSA 70"
     },
     {
       "group": "age_60_plus",
@@ -96,15 +96,15 @@
   "appDefaultTarget": {
     "adult_male": 55,
     "adult_female": 55,
-    "pregnant": null,
-    "lactating": null,
+    "pregnant": 55,
+    "lactating": 55,
     "age_60_plus": null
   },
   "upperLimit": {
     "value": null,
-    "unit": "µg/day",
+    "unit": "µg",
     "appliesTo": "supplements_only",
-    "source": "No UL set: ICMR-NIN TUL not found; NASEM 2001 UL not determinable; EFSA none. App notice uses UK EVM 2003 guidance (via NHS) of 1000 µg/day from supplements, which is not a formal UL"
+    "source": "No UL set: ICMR-NIN TUL Not found; NASEM/IOM 2001 not determinable; EFSA 2017 none. App notice only at 1,000 µg/day from supplements (UK EVM 2003 guidance level via NHS; not a formal UL)"
   },
   "topFoodSources": [
     {
@@ -112,15 +112,15 @@
       "veg": true,
       "per100g": 325,
       "servingG": 100,
-      "servingLabel": "1/2 katori cooked",
+      "servingLabel": "about 1/2 katori cooked (est.)",
       "perServing": 325
     },
     {
-      "food": "Amaranth leaves, green (chaulai)",
+      "food": "Amaranth leaves, green (chaulai, thotakura)",
       "veg": true,
       "per100g": 280,
       "servingG": 100,
-      "servingLabel": "1 small katori cooked",
+      "servingLabel": "about 1 small katori cooked (est.)",
       "perServing": 280
     },
     {
@@ -128,7 +128,7 @@
       "veg": true,
       "per100g": 428,
       "servingG": 50,
-      "servingLabel": "1 cup loosely packed raw",
+      "servingLabel": "about 1.5 cups loosely packed (est.)",
       "perServing": 214
     },
     {
@@ -136,7 +136,7 @@
       "veg": true,
       "per100g": 192,
       "servingG": 100,
-      "servingLabel": "1/2 katori sarson saag",
+      "servingLabel": "about 1/2 katori sarson saag (est.)",
       "perServing": 192
     },
     {
@@ -144,7 +144,7 @@
       "veg": true,
       "per100g": 479,
       "servingG": 25,
-      "servingLabel": "1/2 cup leaves",
+      "servingLabel": "1/2 cup leaves (est.)",
       "perServing": 120
     },
     {
@@ -159,16 +159,16 @@
       "food": "Cabbage, green (patta gobi)",
       "veg": true,
       "per100g": 113,
-      "servingG": 50,
-      "servingLabel": "3/4 cup shredded",
-      "perServing": 57
+      "servingG": 75,
+      "servingLabel": "1 cup shredded (est.)",
+      "perServing": 85
     },
     {
       "food": "Coriander leaves (dhania)",
       "veg": true,
       "per100g": 274,
       "servingG": 10,
-      "servingLabel": "2 tbsp chopped",
+      "servingLabel": "2 tbsp chopped (est.)",
       "perServing": 27
     },
     {
@@ -188,11 +188,11 @@
       "perServing": 9
     },
     {
-      "food": "Chicken breast, skinless",
+      "food": "Chicken breast, skinless (K2)",
       "veg": false,
       "per100g": 28,
       "servingG": 100,
-      "servingLabel": "1 small breast",
+      "servingLabel": "1 small breast (est.)",
       "perServing": 28
     },
     {
@@ -201,6 +201,38 @@
       "per100g": 13,
       "servingG": 50,
       "servingLabel": "1 egg",
+      "perServing": 6.5
+    },
+    {
+      "food": "Curry leaves (kadi patta)",
+      "veg": true,
+      "per100g": 275,
+      "servingG": 3,
+      "servingLabel": "about 10 leaves (est.)",
+      "perServing": 8
+    },
+    {
+      "food": "Red gram dal (toor), dry",
+      "veg": true,
+      "per100g": 42,
+      "servingG": 40,
+      "servingLabel": "1 katori dal, dry weight (est.)",
+      "perServing": 17
+    },
+    {
+      "food": "Egg, country hen, boiled (K2)",
+      "veg": false,
+      "per100g": 60,
+      "servingG": 50,
+      "servingLabel": "1 egg (est.)",
+      "perServing": 30
+    },
+    {
+      "food": "Egg, poultry (farm), boiled (K2)",
+      "veg": false,
+      "per100g": 13,
+      "servingG": 50,
+      "servingLabel": "1 egg (est.)",
       "perServing": 6.5
     }
   ],
@@ -244,6 +276,14 @@
     {
       "dishNumber": 22,
       "dishName": "Kadai Paneer"
+    },
+    {
+      "dishNumber": 9,
+      "dishName": "Idli with Sambar"
+    },
+    {
+      "dishNumber": 37,
+      "dishName": "Bhindi Masala"
     }
   ],
   "deficiencyRiskIndia": "low",
@@ -251,7 +291,9 @@
     "dietary fat or oil in the same meal",
     "cooking greens (sauteing, steaming, pressure cooking) to break cell walls",
     "eating greens with dal, curd or paneer",
-    "normal bile flow and fat digestion"
+    "normal bile flow and fat digestion",
+    "Fat or oil in the same meal (about 3 times more K1 from spinach with butter in one trial)",
+    "Cooking greens (sauteing, boiling) increases bioaccessible K1 in lab digestion"
   ],
   "absorptionBlockers": [
     "very low-fat meals",
@@ -259,7 +301,10 @@
     "bile acid sequestrant cholesterol medicines",
     "fat-blocking weight-loss medicines",
     "long antibiotic courses",
-    "light exposure during storage of oils"
+    "light exposure during storage of oils",
+    "Fat malabsorption (celiac disease, cystic fibrosis, bile duct and liver disease, intestinal resection)",
+    "Orlistat and bile-acid binding cholesterol medicines",
+    "Long broad-spectrum antibiotic courses (lower gut-made menaquinone)"
   ],
   "logPresets": [
     {
@@ -311,6 +356,46 @@
       "mainAmount": null,
       "mainAmountRange": null,
       "prescriptionDose": false
+    },
+    {
+      "label": "D3 + K2 tablet (K2 as MK-7, typical label 55 µg)",
+      "amount": 55,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 55,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Vitamin K2 (MK-7) 200 µg capsule",
+      "amount": 200,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 200,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Vitamin K1 (phytonadione) 5 mg tablet (prescription dose)",
+      "amount": 5000,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 5000,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Vitamin K1 (phytonadione) 10 mg tablet or injection (prescription dose)",
+      "amount": 10000,
+      "unit": "µg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 10000,
+      "mainAmountRange": null,
+      "prescriptionDose": false
     }
   ],
   "warnings": [
@@ -320,14 +405,112 @@
     "Unexplained bruising, bleeding gums, nosebleeds, very heavy periods or blood in urine or stool should be checked by a doctor.",
     "Newborns need the vitamin K injection at birth as per Government of India guidelines; any bleeding in a baby needs urgent medical care.",
     "Pregnancy and breastfeeding: take vitamin K supplements only if a doctor advises them.",
-    "General information, not medical advice. Check with a doctor before starting supplements."
+    "General information, not medical advice. Check with a doctor before starting supplements.",
+    "Warfarin-type blood thinners: keep vitamin K intake steady day to day and do not start, stop or change any vitamin K supplement (including D3 + K2 or calcium + K2 combinations) without your doctor; requires_doctor_input",
+    "DOAC users (apixaban, rivaroxaban, dabigatran, edoxaban) do not need to restrict vitamin K, but should tell the prescriber about supplements and herbs",
+    "No tolerable upper limit exists for vitamin K; UK guidance considers up to 1,000 µg/day from supplements unlikely to cause harm (not a UL)",
+    "Menadione (vitamin K3) is not used in human supplements",
+    "Newborns need the vitamin K injection at birth (WHO 1 mg IM; Indian guidance 1 mg IM, 0.5 mg if under 1,000 g); any bleeding in a baby needs urgent medical care",
+    "Do not show IFCT 2017 vitamin K values flagged as implausible (brown tiger prawn, black pomfret, snappers, walnut, custard apple)",
+    "K2 supplements for bone or heart health are not proven; no health claims in the app",
+    "Pregnancy and breastfeeding: use supplements only if a doctor advises",
+    "General information, not medical advice"
   ],
-  "conditionAdjustments": [],
-  "lastResearched": "2026-10-10",
+  "conditionAdjustments": [
+    {
+      "profileId": "P21",
+      "change": "Heart disease: many users take warfarin or other anticoagulants; show steady-intake view for warfarin, no target change; any vitamin K supplement needs the doctor; requires_doctor_input",
+      "value": null,
+      "unit": "µg",
+      "source": "Mayo Clinic warfarin guidance (via search); NIH ODS (via search)"
+    },
+    {
+      "profileId": "P20",
+      "change": "Keep vitamin K from greens adequate (55 µg); K2 supplements not routine because trials are mixed; any supplement doctor-led; see osteoporosis profile",
+      "value": 55,
+      "unit": "µg",
+      "source": "ICMR-NIN 2020 (secondary, unverified); Feskanich 1999; 2022 meta-analysis of 16 RCTs (via search)"
+    },
+    {
+      "profileId": "P24",
+      "change": "No numeric change; vitamin K, calcium and vitamin D matter for bone after menopause; supplements doctor-led",
+      "value": 55,
+      "unit": "µg",
+      "source": "ICMR-NIN 2020 (secondary, unverified); Harvard Nutrition Source (via search)"
+    },
+    {
+      "profileId": "P31",
+      "change": "No separate ICMR 60+ value; NASEM AI 120 men / 90 women; show 55 with doctor-led note if on any blood thinner; requires_doctor_input for anticoagulant users",
+      "value": 55,
+      "unit": "µg",
+      "source": "NASEM/IOM 2001; ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "profileId": "P19",
+      "change": "Fat malabsorption can cause vitamin K deficiency; doctor-guided testing and dosing; requires_doctor_input",
+      "value": null,
+      "unit": "µg",
+      "source": "Merck Manual (via search)"
+    },
+    {
+      "profileId": "P16",
+      "change": "If IBS causes fat malabsorption or long antibiotic use, vitamin K status may fall; no numeric change; requires_doctor_input for any supplement",
+      "value": null,
+      "unit": "µg",
+      "source": "Merck Manual (via search); No change found"
+    },
+    {
+      "profileId": "P25",
+      "change": "Orlistat reduces absorption; very low-fat meals absorb less K1 from greens; no dose change",
+      "value": null,
+      "unit": "µg",
+      "source": "NIH ODS consumer sheet (via search)"
+    },
+    {
+      "profileId": "P13",
+      "change": "Kidney disease: vitamin K linked to vessel calcification research but no sourced target change; many patients on warfarin or other medicines; requires_doctor_input before supplements",
+      "value": null,
+      "unit": "µg",
+      "source": "No change found (doctor decides)"
+    },
+    {
+      "profileId": "P22",
+      "change": "Adult 55 µg applied (NASEM 90, EFSA 70); supplements only if a doctor advises; requires_doctor_input",
+      "value": 55,
+      "unit": "µg",
+      "source": "ICMR-NIN 2020 via topic 42 (secondary, unverified); EFSA 2017; NASEM 2001"
+    },
+    {
+      "profileId": "P23",
+      "change": "Adult 55 µg applied (NASEM 90, EFSA 70); supplements only if a doctor advises",
+      "value": 55,
+      "unit": "µg",
+      "source": "ICMR-NIN 2020 via topic 42 (secondary, unverified); EFSA 2017; NASEM 2001"
+    },
+    {
+      "profileId": "P33",
+      "change": "No change found; leafy greens are allowed in Jain diets, root vegetables are not needed for vitamin K",
+      "value": null,
+      "unit": "µg",
+      "source": "No change found; IFCT 2017"
+    },
+    {
+      "profileId": "P34",
+      "change": "No change found; K1 from greens covers the target; K2 comes mainly from animal and fermented foods but no K2 requirement exists",
+      "value": null,
+      "unit": "µg",
+      "source": "No change found; IFCT 2017; EFSA 2017 (AI is for phylloquinone only)"
+    }
+  ],
+  "lastResearched": "2026-11-26",
   "versions": [
     {
       "date": "2026-10-10",
       "file": "FitPlate_Nutrients_2026-10-10.md"
+    },
+    {
+      "date": "2026-11-26",
+      "file": "FitPlate_Nutrients_2026-11-26.md"
     }
   ],
   "mergeMethod": {
@@ -342,8 +525,7 @@
   },
   "mergeNotes": [],
   "needsReview": [
-    "app_default_target.pregnant = 55 has no ICMR row to match (pregnant: \"ICMR-NIN 2020 pregnancy value not found; adult value applied (FAO/WHO 2004 also 55 µg)\"); set to null",
-    "app_default_target.lactating = 55 has no ICMR row to match (lactating: \"ICMR-NIN 2020 lactation value not found; adult value applied (FAO/WHO 2004 also 55 µg)\"); set to null",
-    "app_default_target.age_60_plus = 55 has no ICMR row to match (age_60_plus: \"ICMR-NIN 2020 value for 60+ not found; adult value applied\"); set to null"
+    "2026-11-26 vitamin-k: \"group\" has unexpected value \"age_60_plus_male\"; treated as not found",
+    "2026-11-26 vitamin-k: \"group\" has unexpected value \"age_60_plus_female\"; treated as not found"
   ]
 }

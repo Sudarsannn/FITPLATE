@@ -1,6 +1,6 @@
 {
   "schema": "fitplate.links.v1",
-  "generatedFor": "Day36",
+  "generatedFor": "Day37",
   "goodSourceDishes": {
     "biotin": [
       {
@@ -1362,6 +1362,26 @@
         "dishNumber": 10,
         "dishName": "Veg Fried Rice",
         "dishId": "010-veg-fried-rice"
+      },
+      {
+        "dishNumber": 55,
+        "dishName": "Prawn Masala",
+        "dishId": "055-prawn-masala"
+      },
+      {
+        "dishNumber": 38,
+        "dishName": "Egg Curry",
+        "dishId": "038-egg-curry"
+      },
+      {
+        "dishNumber": 33,
+        "dishName": "Goan Fish Curry",
+        "dishId": "033-goan-fish-curry"
+      },
+      {
+        "dishNumber": 88,
+        "dishName": "Avial",
+        "dishId": "088-avial"
       }
     ],
     "vitamin-k": [
@@ -1414,6 +1434,16 @@
         "dishNumber": 22,
         "dishName": "Kadai Paneer",
         "dishId": "022-kadai-paneer"
+      },
+      {
+        "dishNumber": 9,
+        "dishName": "Idli with Sambar",
+        "dishId": "009-idli-with-sambar"
+      },
+      {
+        "dishNumber": 37,
+        "dishName": "Bhindi Masala",
+        "dishId": "037-bhindi-masala"
       }
     ],
     "zinc": [
@@ -1519,7 +1549,8 @@
       "phosphorus",
       "selenium",
       "vitamin-b12",
-      "vitamin-d"
+      "vitamin-d",
+      "vitamin-e"
     ],
     "054-matar-paneer": [
       "biotin",
@@ -1620,7 +1651,8 @@
       "pantothenic-acid",
       "selenium",
       "vitamin-b12",
-      "vitamin-d"
+      "vitamin-d",
+      "vitamin-e"
     ],
     "081-paneer-paratha": [
       "chloride",
@@ -1704,7 +1736,8 @@
     ],
     "037-bhindi-masala": [
       "folate",
-      "vitamin-c"
+      "vitamin-c",
+      "vitamin-k"
     ],
     "016-besan-chilla": [
       "folate",
@@ -1727,7 +1760,8 @@
       "folate",
       "pantothenic-acid",
       "thiamine",
-      "vitamin-a"
+      "vitamin-a",
+      "vitamin-k"
     ],
     "058-khaman-dhokla": [
       "folate"
@@ -1744,7 +1778,8 @@
       "pantothenic-acid",
       "selenium",
       "vitamin-b12",
-      "vitamin-d"
+      "vitamin-d",
+      "vitamin-e"
     ],
     "077-keema-pav": [
       "iron",
@@ -1885,6 +1920,9 @@
       "vitamin-k"
     ],
     "030-lemon-rice": [
+      "vitamin-e"
+    ],
+    "088-avial": [
       "vitamin-e"
     ],
     "020-vada-pav": [
@@ -3198,6 +3236,11 @@
       "met": 3.5
     },
     {
+      "exerciseId": "cable-crunch",
+      "name": "Cable crunch and ab crunch machine",
+      "met": 3.5
+    },
+    {
       "exerciseId": "cable-face-pull",
       "name": "Cable face pull",
       "met": 3.5
@@ -3241,6 +3284,11 @@
       "exerciseId": "dip-station",
       "name": "Dip station (parallel-bar dips)",
       "met": 3.8
+    },
+    {
+      "exerciseId": "dumbbell-bench-press-floor-press",
+      "name": "Dumbbell bench press and floor press",
+      "met": 3.5
     },
     {
       "exerciseId": "dumbbell-bicep-curl-hammer-curl",
@@ -3358,8 +3406,18 @@
       "met": 2.8
     },
     {
+      "exerciseId": "naukasana-boat-pose",
+      "name": "Naukasana (Boat Pose)",
+      "met": 2.3
+    },
+    {
       "exerciseId": "one-arm-dumbbell-row",
       "name": "One-arm dumbbell row",
+      "met": 3.5
+    },
+    {
+      "exerciseId": "overhead-tricep-extension",
+      "name": "Overhead tricep extension (cable and dumbbell)",
       "met": 3.5
     },
     {
@@ -5325,6 +5383,11 @@
         "per100": 0,
         "unit": "µg",
         "source": "ingredient research (Other: nutritionhab blog and ICAR review: Other: nutritionhab blog and ICAR review of fresh Murraya koenigii leaves (no IFCT/USDA entry seen); vitamin A as beta-carotene/12; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-k": {
+        "per100": 275,
+        "unit": "µg",
+        "source": "nutrient research (vitamin-k food sources)"
       }
     },
     "desiccated-coconut": {

@@ -1,0 +1,552 @@
+{
+  "id": "osteoporosis-low-bone-density",
+  "type": "condition",
+  "name": "Osteoporosis and low bone density",
+  "surveyQuestion": "Do you have any of these health conditions? (select all that apply) -> Osteoporosis or low bone density. Check question: Has a doctor told you that you have osteoporosis or low bone density (osteopenia), or have you ever broken a bone from a minor fall or lift? Yes, osteoporosis / Yes, osteopenia / Yes, fragility fracture / No. Safety question: Do you take warfarin-type blood thinners, an osteoporosis tablet or injection, have kidney disease or kidney stones, or have you had a recent fall or sudden back pain? (Yes: no automatic supplement hints; show talk to your doctor)",
+  "targets": [
+    {
+      "nutrient": "energy",
+      "unit": "kcal/day",
+      "generalAdult": 2110,
+      "profileValue": 2110,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); low BMI is a FRAX risk factor, avoid crash diets (FRAX tables via search)"
+    },
+    {
+      "nutrient": "protein",
+      "unit": "g/kg/day",
+      "generalAdult": 0.83,
+      "profileValue": 1.1,
+      "min": 1,
+      "max": 1.2,
+      "direction": "raise",
+      "source": "PROT-AGE and ESPEN 2014: at least 1.0-1.2 g/kg/day for older adults (via search; secondary); IOF/ESCEO 2019 dropped the numeric target; not with CKD (P13: doctor, 0.8 g/kg per KDIGO info) or advanced liver disease; ICMR-NIN 2020 (secondary, unverified) general 0.83"
+    },
+    {
+      "nutrient": "total_fat",
+      "unit": "% energy",
+      "generalAdult": 30,
+      "profileValue": 30,
+      "min": null,
+      "max": 30,
+      "direction": "same",
+      "source": "WHO 2023; DGI 2024"
+    },
+    {
+      "nutrient": "saturated_fat",
+      "unit": "% energy",
+      "generalAdult": 10,
+      "profileValue": 10,
+      "min": null,
+      "max": 10,
+      "direction": "same",
+      "source": "WHO 2023"
+    },
+    {
+      "nutrient": "trans_fat",
+      "unit": "% energy",
+      "generalAdult": 1,
+      "profileValue": 1,
+      "min": null,
+      "max": 1,
+      "direction": "same",
+      "source": "WHO 2023"
+    },
+    {
+      "nutrient": "mufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found"
+    },
+    {
+      "nutrient": "pufa",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found"
+    },
+    {
+      "nutrient": "omega_3",
+      "unit": "servings/week",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Not found"
+    },
+    {
+      "nutrient": "total_carbohydrate",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No ICMR total found; DGI 2024 (secondary, unverified)"
+    },
+    {
+      "nutrient": "added_sugar",
+      "unit": "g/day",
+      "generalAdult": null,
+      "profileValue": 25,
+      "min": null,
+      "max": 25,
+      "direction": "limit",
+      "source": "FitPlate cap; WHO 2015 under 10% energy; as P6, P18, P19"
+    },
+    {
+      "nutrient": "fibre",
+      "unit": "g/day",
+      "generalAdult": 30,
+      "profileValue": 30,
+      "min": 30,
+      "max": null,
+      "direction": "same",
+      "source": "As P4, P19; about 30 g per 2,000 kcal; topic 39 on phytate"
+    },
+    {
+      "nutrient": "sodium",
+      "unit": "mg/day",
+      "generalAdult": 2000,
+      "profileValue": 2000,
+      "min": null,
+      "max": 2000,
+      "direction": "limit",
+      "source": "Topic 18; WHO 2012; higher sodium raises urinary calcium (topic 15)"
+    },
+    {
+      "nutrient": "salt",
+      "unit": "g/day",
+      "generalAdult": 5,
+      "profileValue": 5,
+      "min": null,
+      "max": 5,
+      "direction": "limit",
+      "source": "Topic 18; WHO 2012; DGI 2024"
+    },
+    {
+      "nutrient": "potassium",
+      "unit": "mg/day",
+      "generalAdult": 3500,
+      "profileValue": 3500,
+      "min": 3500,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); topic 19; vegetables and fruit encouraged; not to be raised in CKD (P13) or with potassium-raising BP medicines"
+    },
+    {
+      "nutrient": "calcium",
+      "unit": "mg/day",
+      "generalAdult": 1000,
+      "profileValue": 1200,
+      "min": 1000,
+      "max": 2000,
+      "direction": "raise",
+      "source": "BHOF 2022 (via search): 1,200 mg women 51+ and men 71+, 1,000 mg men 50-70, food plus supplements; ISBMR 2021 at least 1,000 mg (secondary, unverified); topic 15; upper counter 2,000 mg at 51+ NASEM (secondary); supplement dose is the doctor's; with kidney stones P14 do not cut food calcium"
+    },
+    {
+      "nutrient": "iron",
+      "unit": "mg/day",
+      "generalAdult": 19,
+      "profileValue": 19,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); 19 mg men, 29 mg women (value shown is men; women 29)"
+    },
+    {
+      "nutrient": "magnesium",
+      "unit": "mg/day",
+      "generalAdult": 440,
+      "profileValue": 440,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); topic 17; 370 mg women; keep 2 hours from oral bisphosphonate tablets"
+    },
+    {
+      "nutrient": "vitamin_d",
+      "unit": "µg/day",
+      "generalAdult": 15,
+      "profileValue": 15,
+      "min": 15,
+      "max": 25,
+      "direction": "raise",
+      "source": "ICMR-NIN 2020 (secondary, unverified); app target stays 15 µg (600 IU) as topic 2; BHOF 2022 800-1,000 IU (20-25 µg) at 50+ shown as context; ISBMR 1,000-2,000 IU doctor-led (secondary, unverified); UL counter 100 µg; dose and levels doctor-led"
+    },
+    {
+      "nutrient": "vitamin_k",
+      "unit": "µg/day",
+      "generalAdult": 55,
+      "profileValue": 55,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); topic 4; food only; steady intake on warfarin; 2019 meta-analysis found evidence for fracture reduction insufficient (via search)"
+    },
+    {
+      "nutrient": "vitamin_b12",
+      "unit": "µg/day",
+      "generalAdult": 2.2,
+      "profileValue": 2.2,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "nutrient": "folate",
+      "unit": "µg DFE/day",
+      "generalAdult": 300,
+      "profileValue": 300,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); 220 µg women"
+    },
+    {
+      "nutrient": "water",
+      "unit": "ml/day",
+      "generalAdult": 2500,
+      "profileValue": 2500,
+      "min": 1500,
+      "max": 2500,
+      "direction": "same",
+      "source": "Topic 30: FitPlate general 2,500 ml men, 2,000 ml women as drinks (est.); no change. Follow your doctor's advice."
+    }
+  ],
+  "bloodMarkers": [
+    {
+      "marker": "DEXA T-score (bone density scan, not a blood test)",
+      "target": "Normal -1.0 or above; osteopenia -1.0 to -2.5; osteoporosis -2.5 or below; the doctor decides with age, fractures and FRAX",
+      "unit": "SD (T-score)",
+      "source": "WHO criteria via reviews and clinical tables (via search)"
+    },
+    {
+      "marker": "FRAX 10-year probability (India model)",
+      "target": "One Indian study applied major osteoporotic fracture above 20% or hip fracture above 3% as treatment thresholds; the doctor sets the threshold",
+      "unit": "%",
+      "source": "FRAX India and an Indian study (via search; secondary)"
+    },
+    {
+      "marker": "25-hydroxyvitamin D",
+      "target": "BHOF 30-50 ng/mL in known or suspected metabolic bone disease (20 ng/mL or above may be enough in healthy people); ISBMR slide summary above 20 ng/mL; Indian expert consensus 40-60 ng/mL (topic 2, P12); sources disagree, doctor decides",
+      "unit": "ng/mL",
+      "source": "BHOF 2022 (via search); ISBMR (secondary, unverified); topic 2"
+    },
+    {
+      "marker": "Serum calcium, phosphate, ALP, PTH, magnesium",
+      "target": "Doctor-ordered to look for causes; no app target (Not found as one number); blood calcium is usually normal with a low-calcium diet",
+      "unit": "mg/dL (calcium); lab-specific",
+      "source": "Topic 15"
+    },
+    {
+      "marker": "eGFR and creatinine",
+      "target": "Checked before calcium, vitamin D and some osteoporosis medicines; CKD changes the plan",
+      "unit": "mL/min/1.73 m2",
+      "source": "P13"
+    },
+    {
+      "marker": "TSH",
+      "target": "Excess thyroid hormone treatment or an overactive thyroid can cause bone loss; doctor adjusts",
+      "unit": "mIU/L",
+      "source": "FRAX factor tables (via search); P9, P10"
+    },
+    {
+      "marker": "Bone turnover markers (CTX, P1NP)",
+      "target": "Specialist monitoring only; Not found as targets",
+      "unit": "lab-specific",
+      "source": "Not found"
+    },
+    {
+      "marker": "Total, LDL, HDL, non-HDL cholesterol, triglycerides, Lp(a), HbA1c, fasting glucose, uric acid, haemoglobin, ferritin",
+      "target": "Not applicable",
+      "unit": "",
+      "source": ""
+    }
+  ],
+  "waterMl": {
+    "min": 1500,
+    "max": 2500,
+    "notes": "No change from the general FitPlate range (topic 30: 2,500 ml men, 2,000 ml women as drinks, est.). Osteoporosis alone does not change the target. With an oral bisphosphonate tablet the label says a full glass (about 180-240 ml) of plain water on an empty stomach and upright for at least 30 minutes. With kidney, heart or liver disease, pregnancy, a fluid limit or a diuretic show the general range only. Follow your doctor's advice."
+  },
+  "sodiumMgMax": 2000,
+  "dietaryCholesterolMgMax": null,
+  "foodsFavour": [
+    "milk, curd, paneer, buttermilk",
+    "ragi (roti, dosa, porridge)",
+    "methi, drumstick, agathi and knol-khol leaves (low oxalate)",
+    "white or black til in small amounts",
+    "calcium-set tofu and calcium-fortified foods (check label)",
+    "small fish eaten with bones (calcium not in IFCT 2017)",
+    "eggs, fish, dal, soy and lean meat for protein",
+    "vegetables and fruit",
+    "almonds"
+  ],
+  "foodsLimit": [
+    "pickles, papad, namkeen, chips, instant noodles and sauces (sodium)",
+    "alcohol (3 or more units a day is a FRAX risk factor)",
+    "tobacco",
+    "sugary drinks and sweets (added sugar under 25 g)",
+    "spinach, chaulai and bathua as a calcium source (oxalate)",
+    "tea and coffee beyond about 3-4 cups (est.)",
+    "stacking calcium tablets, antacids and fortified foods above 2,000 mg total",
+    "loaded forward bending and twisting exercise in diagnosed osteoporosis"
+  ],
+  "goodFitDishes": [
+    {
+      "dishNumber": 53,
+      "dishName": "Paneer Tikka"
+    },
+    {
+      "dishNumber": 17,
+      "dishName": "Palak Paneer"
+    },
+    {
+      "dishNumber": 22,
+      "dishName": "Kadai Paneer"
+    },
+    {
+      "dishNumber": 63,
+      "dishName": "Shahi Paneer"
+    },
+    {
+      "dishNumber": 69,
+      "dishName": "Paneer Bhurji"
+    },
+    {
+      "dishNumber": 54,
+      "dishName": "Matar Paneer"
+    },
+    {
+      "dishNumber": 71,
+      "dishName": "Ragi Dosa"
+    },
+    {
+      "dishNumber": 35,
+      "dishName": "Curd Rice"
+    },
+    {
+      "dishNumber": 31,
+      "dishName": "Indian-style Overnight Oats"
+    },
+    {
+      "dishNumber": 55,
+      "dishName": "Prawn Masala"
+    },
+    {
+      "dishNumber": 33,
+      "dishName": "Goan Fish Curry"
+    },
+    {
+      "dishNumber": 14,
+      "dishName": "Egg Bhurji"
+    },
+    {
+      "dishNumber": 38,
+      "dishName": "Egg Curry"
+    },
+    {
+      "dishNumber": 26,
+      "dishName": "Moong Dal Chilla"
+    },
+    {
+      "dishNumber": 52,
+      "dishName": "Moong Dal Khichdi"
+    },
+    {
+      "dishNumber": 56,
+      "dishName": "Pesarattu"
+    },
+    {
+      "dishNumber": 66,
+      "dishName": "Sprouts Chaat"
+    },
+    {
+      "dishNumber": 12,
+      "dishName": "Rajma Chawal"
+    },
+    {
+      "dishNumber": 8,
+      "dishName": "Chole (Chana Masala)"
+    },
+    {
+      "dishNumber": 88,
+      "dishName": "Avial"
+    }
+  ],
+  "cautionDishes": [
+    {
+      "dishNumber": 20,
+      "dishName": "Vada Pav",
+      "reason": "High sodium, fried, low calcium (est.)"
+    },
+    {
+      "dishNumber": 13,
+      "dishName": "Pav Bhaji",
+      "reason": "High sodium and fat, low calcium (est.)"
+    },
+    {
+      "dishNumber": 28,
+      "dishName": "Chicken 65",
+      "reason": "Fried, high sodium (est.)"
+    },
+    {
+      "dishNumber": 83,
+      "dishName": "Bhel Puri",
+      "reason": "Salty street snack, low calcium (est.)"
+    },
+    {
+      "dishNumber": 91,
+      "dishName": "Aloo Tikki",
+      "reason": "Fried, sodium, low calcium (est.)"
+    },
+    {
+      "dishNumber": 47,
+      "dishName": "Veg Manchurian",
+      "reason": "Sauces are high in sodium (est.)"
+    },
+    {
+      "dishNumber": 79,
+      "dishName": "Gobi Manchurian",
+      "reason": "Sauces are high in sodium (est.)"
+    },
+    {
+      "dishNumber": 64,
+      "dishName": "Schezwan Noodles",
+      "reason": "Sauces are high in sodium (est.)"
+    },
+    {
+      "dishNumber": 2,
+      "dishName": "Chicken Biryani",
+      "reason": "Restaurant versions are usually salty (est.)"
+    },
+    {
+      "dishNumber": 19,
+      "dishName": "Jeera Rice",
+      "reason": "Little calcium or protein; pair with dal and curd (est.)"
+    },
+    {
+      "dishNumber": 40,
+      "dishName": "Sabudana Khichdi",
+      "reason": "Starch, little calcium or protein (est.)"
+    },
+    {
+      "dishNumber": 98,
+      "dishName": "Mango Lassi",
+      "reason": "Milk adds calcium but sugar adds up; keep added sugar under 25 g"
+    },
+    {
+      "dishNumber": 99,
+      "dishName": "Masala Chai",
+      "reason": "Milk helps calcium; keep tea and coffee within about 3-4 cups and sugar low (est.)"
+    },
+    {
+      "dishNumber": 100,
+      "dishName": "Cold Coffee",
+      "reason": "Caffeine and sugar; use milk, keep within about 3-4 cups (est.)"
+    },
+    {
+      "dishNumber": 97,
+      "dishName": "Gulab Jamun",
+      "reason": "Added sugar; occasional"
+    },
+    {
+      "dishNumber": 96,
+      "dishName": "Gajar Halwa",
+      "reason": "Added sugar; occasional"
+    },
+    {
+      "dishNumber": 95,
+      "dishName": "Rice Kheer",
+      "reason": "Added sugar; occasional"
+    },
+    {
+      "dishNumber": 17,
+      "dishName": "Palak Paneer",
+      "reason": "If the user also has calcium oxalate stones (P14): spinach oxalate 592 mg/100 g; kidney profile overrides"
+    },
+    {
+      "dishNumber": 46,
+      "dishName": "Methi Thepla",
+      "reason": "Contains wheat: P19 if celiac disease is selected"
+    },
+    {
+      "dishNumber": 81,
+      "dishName": "Paneer Paratha",
+      "reason": "Contains wheat: P19 if celiac disease is selected"
+    }
+  ],
+  "conflictsWith": [
+    {
+      "profileId": "chronic-kidney-disease-early",
+      "rule": "Kidney profile wins on protein (0.8 g/kg per KDIGO info, no 1.0-1.2 g/kg push), potassium, phosphorus, calcium and vitamin D; supplements are the kidney team's (P13)"
+    },
+    {
+      "profileId": "kidney-stones",
+      "rule": "Do not cut dietary calcium (1,000-1,200 mg from food); calcium supplements doctor first and with meals; limit oxalate-rich spinach, chaulai and til; keep sodium low; P14 wins on oxalate and fluid advice"
+    },
+    {
+      "profileId": "lactose-intolerance",
+      "rule": "Same calcium target; use curd, paneer, buttermilk, lactose-free milk, ragi, til, greens and fortified milk; do not drop all dairy without a plan (P18)"
+    },
+    {
+      "profileId": "celiac-disease-gluten-sensitivity",
+      "rule": "Malabsorption and low bone density are linked; gluten-free calcium sources are ragi, rajgira and dairy; check wheat dishes; bone health, DEXA and supplements are doctor-led (P19)"
+    },
+    {
+      "profileId": "vitamin-d-b12-deficiency",
+      "rule": "Vitamin D treatment doses are doctor-set; P20 shows food and the 100 µg UL counter only (P12)"
+    },
+    {
+      "profileId": "hypothyroidism",
+      "rule": "Keep calcium at least about 4 hours from levothyroxine; doctor manages thyroid dose (P9)"
+    },
+    {
+      "profileId": "vegan-diet",
+      "rule": "Same calcium target but harder to reach; ragi, til, low-oxalate greens, calcium-set tofu, fortified plant milk; supplements by doctor or dietitian (P34)"
+    },
+    {
+      "profileId": "acid-reflux-gerd",
+      "rule": "Oral bisphosphonate tablets can irritate the gullet; doctor review; antacid calcium counts toward the total; PPIs and fracture risk reviewed by the doctor (P17)"
+    }
+  ],
+  "requiresDoctorInput": true,
+  "requiresDoctorInputStated": true,
+  "fluidNote": "Follow your doctor's advice",
+  "warnings": [
+    "General information, not medical advice; the app does not diagnose osteopenia or osteoporosis",
+    "Fragility fracture, sudden back pain with height loss, repeated falls or a suspected hip fracture: see a doctor; hip fracture or spinal cord symptoms: emergency care",
+    "Never advise a calcium, vitamin D, vitamin K or magnesium dose; supplement doses and bone medicines are doctor-led",
+    "Total calcium from food and supplements should stay within 2,000 mg/day at age 51+ (NASEM, secondary); count antacids, Calcium + D3 and fortified foods",
+    "Do not stop denosumab or any bone medicine without the prescriber; oral bisphosphonates need plain water, empty stomach, upright for 30 minutes",
+    "Exercise for diagnosed osteoporosis needs doctor or physiotherapist clearance; avoid loaded forward bending and rapid or end-range twisting",
+    "Kidney disease, kidney stones, warfarin: kidney, stone and blood-thinner rules override (P13, P14, topic 4)",
+    "India-wide prevalence, ISBMR and BHOF values come from search summaries (secondary, unverified)"
+  ],
+  "lastResearched": "2026-11-26",
+  "versions": [
+    {
+      "date": "2026-11-26",
+      "file": "FitPlate_Nutrients_2026-11-26.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3); max as safety limit",
+    "limits": "safety limit (lower on conflict)",
+    "lists": "union",
+    "requiresDoctorInput": "stated true in any version, else newest version (missing flag + limits → true)"
+  },
+  "mergeNotes": [],
+  "needsReview": []
+}

@@ -16,6 +16,7 @@ import item_irritable_bowel_syndrome from './irritable-bowel-syndrome.json';
 import item_kidney_stones from './kidney-stones.json';
 import item_lactose_intolerance from './lactose-intolerance.json';
 import item_low_hdl_metabolic_syndrome from './low-hdl-metabolic-syndrome.json';
+import item_osteoporosis_low_bone_density from './osteoporosis-low-bone-density.json';
 import item_pcos from './pcos.json';
 import item_prediabetes from './prediabetes.json';
 import item_type_2_diabetes from './type-2-diabetes.json';
@@ -37,6 +38,7 @@ export const items: HealthCondition[] = [
   item_kidney_stones as unknown as HealthCondition,
   item_lactose_intolerance as unknown as HealthCondition,
   item_low_hdl_metabolic_syndrome as unknown as HealthCondition,
+  item_osteoporosis_low_bone_density as unknown as HealthCondition,
   item_pcos as unknown as HealthCondition,
   item_prediabetes as unknown as HealthCondition,
   item_type_2_diabetes as unknown as HealthCondition,

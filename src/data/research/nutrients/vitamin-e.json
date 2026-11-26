@@ -28,50 +28,58 @@
     {
       "unit": "mg alpha-TE (older food tables, est. average factor)",
       "toMainUnitFactor": 0.8
+    },
+    {
+      "unit": "IU natural (d-alpha)",
+      "toMainUnitFactor": 0.67
+    },
+    {
+      "unit": "IU synthetic (dl-alpha)",
+      "toMainUnitFactor": 0.45
     }
   ],
   "unitConversions": [
     {
-      "fromUnit": "mg",
-      "compound": "rrr-alpha-tocopherol",
-      "toMainUnitFactor": 1,
-      "raw": "1 mg RRR-α-tocopherol (d-α-tocopherol, natural) | 1 mg"
-    },
-    {
       "fromUnit": "iu",
-      "compound": "natural vitamin e",
+      "compound": "natural",
       "toMainUnitFactor": 0.67,
-      "raw": "1 IU natural vitamin E (d-α-tocopherol or its esters) | 0.67 mg"
+      "raw": "1 IU natural (d-α-tocopherol or its ester) | 0.67 mg"
     },
     {
       "fromUnit": "iu",
-      "compound": "synthetic vitamin e",
+      "compound": "synthetic",
       "toMainUnitFactor": 0.45,
-      "raw": "1 IU synthetic vitamin E (dl-α-tocopherol or its esters) | 0.45 mg"
+      "raw": "1 IU synthetic (dl-α-tocopherol or its ester) | 0.45 mg"
+    },
+    {
+      "fromUnit": "mg",
+      "compound": "alpha-tocopherol",
+      "toMainUnitFactor": 1.49,
+      "raw": "1 mg α-tocopherol (RRR-equivalent) | 1.49 IU natural, or 2.22 IU synthetic"
     },
     {
       "fromUnit": "mg",
       "compound": "dl-alpha-tocopheryl acetate",
-      "toMainUnitFactor": 0.45,
-      "raw": "1 mg dl-α-tocopheryl acetate (synthetic ester; 1 mg = 1 IU by definition) | 0.45 mg"
+      "toMainUnitFactor": 1,
+      "raw": "1 mg dl-α-tocopheryl acetate | 1 IU by definition, so 0.45 mg"
     },
     {
       "fromUnit": "mg",
       "compound": "d-alpha-tocopheryl acetate",
-      "toMainUnitFactor": 0.91,
-      "raw": "1 mg d-α-tocopheryl acetate (natural ester; 1 mg = 1.36 IU) | about 0.91 mg"
+      "toMainUnitFactor": 1.36,
+      "raw": "1 mg d-α-tocopheryl acetate | about 1.36 IU, so about 0.91 mg (calc.)"
     },
     {
       "fromUnit": "mg",
-      "compound": "dl-alpha-tocopherol",
-      "toMainUnitFactor": 0.5,
-      "raw": "1 mg dl-α-tocopherol (synthetic, free form; 1 mg = 1.1 IU) | about 0.50 mg"
+      "compound": "",
+      "toMainUnitFactor": 1.5,
+      "raw": "1,000 mg (the NIH supplement UL) | about 1,500 IU natural, or about 1,100 IU synthetic"
     },
     {
       "fromUnit": "mg",
       "compound": "alpha-te",
       "toMainUnitFactor": 0.8,
-      "raw": "1 mg α-TE (older food tables) | about 0.8 mg (est., average factor for mixed diets, IOM 2000)"
+      "raw": "1 mg α-TE (older food tables) | about 0.8 mg α-tocopherol (est.)"
     }
   ],
   "targets": [
@@ -80,55 +88,55 @@
       "ear": null,
       "rda": null,
       "ai": 10,
-      "source": "ICMR-NIN 2020 (0.8 mg alpha-tocopherol per g dietary essential fatty acids, about 7.5-10 mg/day; men set at top of range per WHO/FAO 2004 split; EAR not found)"
+      "source": "ICMR-NIN 2020 range 7.5-10 mg (secondary, unverified); male 10 per WHO/FAO 2004 split"
     },
     {
       "group": "adult_male_moderate",
       "ear": null,
       "rda": null,
       "ai": 10,
-      "source": "ICMR-NIN 2020 (same range; no activity-specific value found)"
+      "source": "ICMR-NIN 2020 (secondary, unverified); no activity adjustment found"
     },
     {
       "group": "adult_male_heavy",
       "ear": null,
       "rda": null,
       "ai": 10,
-      "source": "ICMR-NIN 2020 (same range; need scales with essential fatty acid intake)"
+      "source": "ICMR-NIN 2020 (secondary, unverified); no activity adjustment found"
     },
     {
       "group": "adult_female_sedentary",
       "ear": null,
       "rda": null,
       "ai": 7.5,
-      "source": "ICMR-NIN 2020 (about 7.5-10 mg/day; women set at bottom of range per WHO/FAO 2004 split; EAR not found)"
+      "source": "ICMR-NIN 2020 range 7.5-10 mg (secondary, unverified); female 7.5 per WHO/FAO 2004 split"
     },
     {
       "group": "adult_female_moderate",
       "ear": null,
       "rda": null,
       "ai": 7.5,
-      "source": "ICMR-NIN 2020 (same range; no activity-specific value found)"
+      "source": "ICMR-NIN 2020 (secondary, unverified); no activity adjustment found"
     },
     {
       "group": "adult_female_heavy",
       "ear": null,
       "rda": null,
       "ai": 7.5,
-      "source": "ICMR-NIN 2020 (same range; need scales with essential fatty acid intake)"
+      "source": "ICMR-NIN 2020 (secondary, unverified); no activity adjustment found"
     },
     {
       "group": "pregnant",
       "ear": 12,
       "rda": 15,
-      "ai": null,
+      "ai": 7.5,
       "source": "ICMR-NIN value not found; NASEM 2000 / NIH ODS shown (no increase over non-pregnant adults)"
     },
     {
       "group": "lactating",
       "ear": 16,
       "rda": 19,
-      "ai": null,
+      "ai": 10,
       "source": "ICMR-NIN value not found; NASEM 2000 / NIH ODS shown"
     },
     {
@@ -148,9 +156,9 @@
   },
   "upperLimit": {
     "value": 300,
-    "unit": "mg/day alpha-tocopherol",
+    "unit": "mg",
     "appliesTo": "food_and_supplements",
-    "source": "EFSA 2024 (ICMR-NIN TUL not found). Comparison: NASEM 2000 UL 1000 mg/day from supplements and fortified foods only; UK NHS 540 mg (800 IU) or less from supplements. Does not apply to people on anticoagulant or antiplatelet medicines."
+    "source": "EFSA 2024 (300 mg/day α-tocopherol, adults incl. pregnancy; does not cover anticoagulant users); NASEM/NIH 1,000 mg supplements only used as hard stop; ICMR-NIN TUL 1,000 mg seen only in a search summary (secondary, unverified)"
   },
   "topFoodSources": [
     {
@@ -159,7 +167,7 @@
       "per100g": 24.9,
       "servingG": 15,
       "servingLabel": "about 10 almonds",
-      "perServing": 3.7
+      "perServing": 3.73
     },
     {
       "food": "Sunflower seeds",
@@ -167,14 +175,14 @@
       "per100g": 21.4,
       "servingG": 10,
       "servingLabel": "1 tbsp",
-      "perServing": 2.1
+      "perServing": 2.14
     },
     {
-      "food": "Sunflower oil (est., NIH ODS)",
+      "food": "Sunflower oil (not in IFCT; est.)",
       "veg": true,
       "per100g": 41,
       "servingG": 10,
-      "servingLabel": "2 tsp",
+      "servingLabel": "2 tsp (est.)",
       "perServing": 4.1
     },
     {
@@ -226,11 +234,11 @@
       "perServing": 0.6
     },
     {
-      "food": "Rohu (fish)",
+      "food": "Rohu",
       "veg": false,
       "per100g": 2.4,
       "servingG": 100,
-      "servingLabel": "2 medium pieces",
+      "servingLabel": "2 medium pieces (est.)",
       "perServing": 2.4
     },
     {
@@ -238,8 +246,8 @@
       "veg": false,
       "per100g": 3,
       "servingG": 100,
-      "servingLabel": "about 8-10 medium prawns",
-      "perServing": 3
+      "servingLabel": "about 8 prawns (est.)",
+      "perServing": 3.04
     },
     {
       "food": "Egg, hen, whole, boiled",
@@ -248,6 +256,62 @@
       "servingG": 50,
       "servingLabel": "1 egg",
       "perServing": 0.7
+    },
+    {
+      "food": "Egg, country hen, boiled",
+      "veg": false,
+      "per100g": 2,
+      "servingG": 50,
+      "servingLabel": "1 egg (est.)",
+      "perServing": 1
+    },
+    {
+      "food": "Groundnuts (peanuts), raw",
+      "veg": true,
+      "per100g": 4.26,
+      "servingG": 30,
+      "servingLabel": "small handful (est.)",
+      "perServing": 1.28
+    },
+    {
+      "food": "Spinach (palak)",
+      "veg": true,
+      "per100g": 1.27,
+      "servingG": 100,
+      "servingLabel": "100 g raw, about 1 katori cooked (est.)",
+      "perServing": 1.27
+    },
+    {
+      "food": "Coconut, fresh kernel",
+      "veg": true,
+      "per100g": 2.39,
+      "servingG": 30,
+      "servingLabel": "2.5 tbsp grated (est.)",
+      "perServing": 0.72
+    },
+    {
+      "food": "Bengal gram, whole (kala chana)",
+      "veg": true,
+      "per100g": 1.59,
+      "servingG": 30,
+      "servingLabel": "2 tbsp dry (est.)",
+      "perServing": 0.48
+    },
+    {
+      "food": "Pumpkin, green",
+      "veg": true,
+      "per100g": 0.86,
+      "servingG": 100,
+      "servingLabel": "1 katori (est.)",
+      "perServing": 0.86
+    },
+    {
+      "food": "Wheat flour, atta",
+      "veg": true,
+      "per100g": 0.21,
+      "servingG": 60,
+      "servingLabel": "2 rotis (est.)",
+      "perServing": 0.13
     }
   ],
   "goodSourceDishes": [
@@ -282,6 +346,22 @@
     {
       "dishNumber": 10,
       "dishName": "Veg Fried Rice"
+    },
+    {
+      "dishNumber": 55,
+      "dishName": "Prawn Masala"
+    },
+    {
+      "dishNumber": 38,
+      "dishName": "Egg Curry"
+    },
+    {
+      "dishNumber": 33,
+      "dishName": "Goan Fish Curry"
+    },
+    {
+      "dishNumber": 88,
+      "dishName": "Avial"
     }
   ],
   "deficiencyRiskIndia": "low",
@@ -291,7 +371,10 @@
     "whole grains instead of refined grains",
     "fruit and vegetables rich in vitamin C",
     "fresh (not reused) cooking oil",
-    "nuts and seeds stored airtight, cool and dark"
+    "nuts and seeds stored airtight, cool and dark",
+    "Some fat in the same meal (absorption about 10% fat-free vs about 33% with 21% of calories as fat in one trial; effect contested)",
+    "Whole grains and unrefined foods keep more tocopherol",
+    "Vitamin C and selenium help regenerate vitamin E (general)"
   ],
   "absorptionBlockers": [
     "very low-fat meals",
@@ -299,7 +382,10 @@
     "orlistat and other fat-absorption blockers",
     "reused or overheated frying oil",
     "rancid nuts and oils",
-    "refined cereals (maida, polished rice)"
+    "refined cereals (maida, polished rice)",
+    "Very low-fat diets and fat malabsorption (celiac, cystic fibrosis, liver or pancreatic disease)",
+    "Fat-blocking medicines such as orlistat (general; ask a doctor)",
+    "Heavily re-used frying oil has already lost most of its vitamin E"
   ],
   "logPresets": [
     {
@@ -354,6 +440,66 @@
       "mainAmount": null,
       "mainAmountRange": null,
       "prescriptionDose": false
+    },
+    {
+      "label": "Vitamin E 100 IU natural (d-alpha)",
+      "amount": 67,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 67,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Vitamin E 200 IU natural (d-alpha)",
+      "amount": 134,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 134,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Vitamin E 400 IU natural (d-alpha)",
+      "amount": 268,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 268,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Vitamin E 100 IU synthetic (dl-alpha)",
+      "amount": 45,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 45,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Vitamin E 400 IU synthetic (dl-alpha) or tocopheryl acetate 400 mg dl-",
+      "amount": 180,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 180,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Vitamin E 800 IU natural (prescription dose)",
+      "amount": 536,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 536,
+      "mainAmountRange": null,
+      "prescriptionDose": true
     }
   ],
   "warnings": [
@@ -364,14 +510,124 @@
     "Antioxidant supplements may reduce the benefit of statin plus niacin treatment and may interact with cancer treatment; ask the treating doctor.",
     "Indian 400 mg tocopheryl acetate capsules may equal 180-364 mg alpha-tocopherol depending on whether the form is synthetic or natural.",
     "Pregnancy: take vitamin E supplements only if prescribed.",
-    "General information, not medical advice. Check with a doctor before starting supplements."
+    "General information, not medical advice. Check with a doctor before starting supplements.",
+    "Upper limit: early alert 300 mg/day (EFSA 2024); hard stop 1,000 mg/day from supplements (NASEM/NIH); ICMR TUL not confirmed",
+    "Natural (d-) and synthetic (dl-) differ: 1 IU = 0.67 mg natural or 0.45 mg synthetic; if the label does not say, assume synthetic for requirement and use mass-based mg for the safety check",
+    "Do not offer vitamin E capsules to anyone on warfarin, aspirin, clopidogrel or other blood thinners without a doctor",
+    "High-dose vitamin E: SELECT found more prostate cancer (HR 1.17) and HOPE-TOO more heart failure (RR 1.13) at 400 IU/day",
+    "Pregnancy and breastfeeding: no routine vitamin E capsule; follow your doctor",
+    "IFCT 2017 has no oil values and some implausible rows (pistachio 31.4 mg, groundnut and sunflower-seed α-TE below α-tocopherol): use the α-tocopherol column and flag the rest",
+    "General information, not medical advice"
   ],
-  "conditionAdjustments": [],
-  "lastResearched": "2026-10-10",
+  "conditionAdjustments": [
+    {
+      "profileId": "P7",
+      "change": "No food change; vitamin E 800 IU/day is a doctor-only option for selected biopsy-proven NASH in non-diabetic adults; no quick-add; requires_doctor_input",
+      "value": null,
+      "unit": "mg",
+      "source": "PIVENS (Sanyal, NEJM 2010) and older AASLD guidance via search (secondary); 2024 meta-analysis (secondary)"
+    },
+    {
+      "profileId": "P21",
+      "change": "No supplement unless the doctor advises; HOPE-TOO found more heart failure at 400 IU/day; requires_doctor_input",
+      "value": null,
+      "unit": "mg",
+      "source": "Lonn et al. JAMA 2005 (PubMed 15769967)"
+    },
+    {
+      "profileId": "P4",
+      "change": "Antioxidant mix with 800 IU vitamin E blunted the HDL2 rise from simvastatin plus niacin; no supplement without the doctor; requires_doctor_input if on statin plus niacin",
+      "value": null,
+      "unit": "mg",
+      "source": "HATS (PubMed 11757504)"
+    },
+    {
+      "profileId": "P6",
+      "change": "Same HATS caution for statin plus niacin users; food target unchanged",
+      "value": null,
+      "unit": "mg",
+      "source": "HATS (PubMed 11757504)"
+    },
+    {
+      "profileId": "P1",
+      "change": "No change to food target; HOPE-TOO authors advised against vitamin E supplements in people with diabetes or vascular disease; requires_doctor_input for capsules",
+      "value": null,
+      "unit": "mg",
+      "source": "Lonn et al. JAMA 2005"
+    },
+    {
+      "profileId": "P22",
+      "change": "No routine vitamin E capsule; Cochrane 2015 found no pre-eclampsia benefit (RR 0.91) and more term PROM; UK COT 2026 statement still draft; requires_doctor_input",
+      "value": 7.5,
+      "unit": "mg",
+      "source": "Cochrane CD004069 (2015); UK COT 2026 draft (not final)"
+    },
+    {
+      "profileId": "P23",
+      "change": "No separate ICMR value found; lactation est. 10 mg; NASEM 19 mg reference; supplements doctor-led",
+      "value": 10,
+      "unit": "mg",
+      "source": "EFSA 2015; NIH ODS via search"
+    },
+    {
+      "profileId": "P16",
+      "change": "Fat malabsorption can lower vitamin E; testing and dose doctor-led; requires_doctor_input",
+      "value": null,
+      "unit": "mg",
+      "source": "Harvard Nutrition Source; MSD Manual"
+    },
+    {
+      "profileId": "P19",
+      "change": "Celiac disease and fat malabsorption are recognised causes of low vitamin E; doctor-guided testing and dose; requires_doctor_input",
+      "value": null,
+      "unit": "mg",
+      "source": "Harvard Nutrition Source; MSD Manual"
+    },
+    {
+      "profileId": "P25",
+      "change": "Very low-fat diets cut vitamin E; keep 1-2 spoons of oil and a small portion of nuts or seeds; target unchanged",
+      "value": 10,
+      "unit": "mg",
+      "source": "FitPlate analysis of IFCT 2017 (est.)"
+    },
+    {
+      "profileId": "P31",
+      "change": "No separate older-adult value found; no supplement without a doctor",
+      "value": null,
+      "unit": "mg",
+      "source": "No change found (EFSA 2015; NASEM)"
+    },
+    {
+      "profileId": "P33",
+      "change": "No change; oils, nuts, seeds and leafy greens are all Jain-compatible",
+      "value": null,
+      "unit": "mg",
+      "source": "No change found; IFCT 2017"
+    },
+    {
+      "profileId": "P34",
+      "change": "No change; main sources are plant foods; check that capsules are vegan",
+      "value": null,
+      "unit": "mg",
+      "source": "No change found; IFCT 2017"
+    },
+    {
+      "profileId": "anticoagulant_user",
+      "change": "No vitamin E supplement without a doctor; EFSA UL does not apply; requires_doctor_input",
+      "value": null,
+      "unit": "mg",
+      "source": "EFSA 2024; UCSD anticoagulation guidance"
+    }
+  ],
+  "lastResearched": "2026-11-26",
   "versions": [
     {
       "date": "2026-10-10",
       "file": "FitPlate_Nutrients_2026-10-10.md"
+    },
+    {
+      "date": "2026-11-26",
+      "file": "FitPlate_Nutrients_2026-11-26.md"
     }
   ],
   "mergeMethod": {
@@ -384,12 +640,20 @@
     "warnings": "union (never dropped)",
     "text": "newest"
   },
-  "mergeNotes": [],
+  "mergeNotes": [
+    "topFoodSources.almonds.per100g: Conflict (2026-10-10: 24.9 vs 2026-11-26: 24.88); neither cites the official table, kept the previous value.",
+    "topFoodSources.sunflower-seeds.per100g: Conflict (2026-10-10: 21.4 vs 2026-11-26: 21.39); neither cites the official table, kept the previous value.",
+    "topFoodSources.tiger-prawns-brown.per100g: Conflict (2026-10-10: 3 vs 2026-11-26: 3.04); neither cites the official table, kept the previous value."
+  ],
   "needsReview": [
+    "topFoodSources.almonds.per100g: Conflict (2026-10-10: 24.9 vs 2026-11-26: 24.88); neither cites the official table, kept the previous value.",
+    "topFoodSources.sunflower-seeds.per100g: Conflict (2026-10-10: 21.4 vs 2026-11-26: 21.39); neither cites the official table, kept the previous value.",
+    "topFoodSources.tiger-prawns-brown.per100g: Conflict (2026-10-10: 3 vs 2026-11-26: 3.04); neither cites the official table, kept the previous value.",
     "log preset \"Vitamin E capsule 400 mg tocopheryl acetate (form not stated; counted as 180 mg toward target, 364 mg toward limit)\": unit \"mg tocopheryl acetate\" matches several factors (0.45, 0.91); the form is ambiguous, so no single mg amount",
     "log preset \"Custom amount in IU\": unit \"IU\" matches several factors (0.45, 0.67); the form is ambiguous, so no single mg amount",
     "app_default_target.pregnant = 7.5 has no ICMR row to match (pregnant: \"ICMR-NIN value not found; NASEM 2000 / NIH ODS shown (no increase over non-pregnant adults)\"); set to null",
     "app_default_target.lactating = 10 has no ICMR row to match (lactating: \"ICMR-NIN value not found; NASEM 2000 / NIH ODS shown\"); set to null",
-    "app_default_target.age_60_plus = 7.5 has no ICMR row to match (age_60_plus: \"Not found in ICMR-NIN 2020; app uses adult value by sex\"); set to null"
+    "2026-11-26 vitamin-e: \"group\" has unexpected value \"age_60_plus_male\"; treated as not found",
+    "2026-11-26 vitamin-e: \"group\" has unexpected value \"age_60_plus_female\"; treated as not found"
   ]
 }

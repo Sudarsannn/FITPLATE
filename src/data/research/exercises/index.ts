@@ -14,6 +14,7 @@ import item_bhujangasana_cobra_pose from './bhujangasana-cobra-pose.json';
 import item_bodyweight_squat from './bodyweight-squat.json';
 import item_burpees from './burpees.json';
 import item_cable_crossover_fly from './cable-crossover-fly.json';
+import item_cable_crunch from './cable-crunch.json';
 import item_cable_face_pull from './cable-face-pull.json';
 import item_cable_tricep_pushdown from './cable-tricep-pushdown.json';
 import item_calf_raise from './calf-raise.json';
@@ -23,6 +24,7 @@ import item_chest_press_machine from './chest-press-machine.json';
 import item_dead_bug from './dead-bug.json';
 import item_desk_neck_shoulder_release from './desk-neck-shoulder-release.json';
 import item_dip_station from './dip-station.json';
+import item_dumbbell_bench_press_floor_press from './dumbbell-bench-press-floor-press.json';
 import item_dumbbell_bicep_curl_hammer_curl from './dumbbell-bicep-curl-hammer-curl.json';
 import item_dumbbell_goblet_squat from './dumbbell-goblet-squat.json';
 import item_dumbbell_lateral_raise from './dumbbell-lateral-raise.json';
@@ -46,7 +48,9 @@ import item_leg_extension_machine from './leg-extension-machine.json';
 import item_leg_press from './leg-press.json';
 import item_malasana_garland_squat from './malasana-garland-squat.json';
 import item_mountain_climbers from './mountain-climbers.json';
+import item_naukasana_boat_pose from './naukasana-boat-pose.json';
 import item_one_arm_dumbbell_row from './one-arm-dumbbell-row.json';
+import item_overhead_tricep_extension from './overhead-tricep-extension.json';
 import item_paschimottanasana_seated_forward_bend from './paschimottanasana-seated-forward-bend.json';
 import item_pec_deck from './pec-deck.json';
 import item_plank_and_side_plank from './plank-and-side-plank.json';
@@ -92,6 +96,7 @@ export const items: Exercise[] = [
   item_bodyweight_squat as unknown as Exercise,
   item_burpees as unknown as Exercise,
   item_cable_crossover_fly as unknown as Exercise,
+  item_cable_crunch as unknown as Exercise,
   item_cable_face_pull as unknown as Exercise,
   item_cable_tricep_pushdown as unknown as Exercise,
   item_calf_raise as unknown as Exercise,
@@ -101,6 +106,7 @@ export const items: Exercise[] = [
   item_dead_bug as unknown as Exercise,
   item_desk_neck_shoulder_release as unknown as Exercise,
   item_dip_station as unknown as Exercise,
+  item_dumbbell_bench_press_floor_press as unknown as Exercise,
   item_dumbbell_bicep_curl_hammer_curl as unknown as Exercise,
   item_dumbbell_goblet_squat as unknown as Exercise,
   item_dumbbell_lateral_raise as unknown as Exercise,
@@ -124,7 +130,9 @@ export const items: Exercise[] = [
   item_leg_press as unknown as Exercise,
   item_malasana_garland_squat as unknown as Exercise,
   item_mountain_climbers as unknown as Exercise,
+  item_naukasana_boat_pose as unknown as Exercise,
   item_one_arm_dumbbell_row as unknown as Exercise,
+  item_overhead_tricep_extension as unknown as Exercise,
   item_paschimottanasana_seated_forward_bend as unknown as Exercise,
   item_pec_deck as unknown as Exercise,
   item_plank_and_side_plank as unknown as Exercise,
