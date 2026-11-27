@@ -23,23 +23,33 @@
         "avg": 570,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-11-05.md"
+      },
+      {
+        "date": "2026-11-27",
+        "min": 400,
+        "max": 970,
+        "avg": 610,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-27.md"
       }
     ],
     "currentEstimate": {
-      "min": 475,
-      "max": 645,
-      "avg": 560
+      "min": 520,
+      "max": 700,
+      "avg": 610
     },
-    "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-11-05",
+    "method": "latest-trend",
+    "trend": "rising",
+    "change30dPct": 9.3,
+    "lastObserved": "2026-11-27",
     "stale": false,
     "seasonal": false,
-    "listingCount": 3,
+    "listingCount": 11,
     "platforms": [
       "Amazon",
       "BigBasket",
+      "Blinkit",
+      "Swiggy Instamart",
       "Zepto"
     ],
     "outOfStock": false,
@@ -47,9 +57,9 @@
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 47.5,
-    "max": 64.5,
-    "avg": 56
+    "min": 52,
+    "max": 70,
+    "avg": 61
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -236,8 +246,8 @@
     }
   },
   "macrosPer100Estimate": {
-    "kcal": 325.5,
-    "proteinG": 17.4,
+    "kcal": 346,
+    "proteinG": 17.8,
     "carbsG": 49.8,
     "fatG": 16.1,
     "fibreG": 35.3
@@ -255,20 +265,66 @@
   ],
   "vendorListings": [
     {
+      "vendor": "blinkit",
+      "product": "Whole Farm Premium Ajwain",
+      "pack": "100 g",
+      "priceMinInr": 40,
+      "priceMaxInr": 40,
+      "observedOn": "2026-11-27"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Aashirvaad Pure Whole Ajwain",
+      "pack": "100 g",
+      "priceMinInr": 55,
+      "priceMaxInr": 55,
+      "observedOn": "2026-11-27"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Chukde Ajwain Seeds",
+      "pack": "100 g",
+      "priceMinInr": 63,
+      "priceMaxInr": 63,
+      "observedOn": "2026-11-27"
+    },
+    {
+      "vendor": "instamart",
+      "product": "Catch Ajwain Seeds",
+      "pack": "100 g",
+      "priceMinInr": 55,
+      "priceMaxInr": 86,
+      "observedOn": "2026-11-27"
+    },
+    {
       "vendor": "zepto",
       "product": "Popular Essentials Ajwain Whole",
       "pack": "100 g",
       "priceMinInr": 63,
       "priceMaxInr": 63,
       "observedOn": "2026-11-05"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Catch Ajwain Seeds",
+      "pack": "100 g",
+      "priceMinInr": 73,
+      "priceMaxInr": 73,
+      "observedOn": "2026-11-27"
     }
   ],
   "usedIn": [
     {
-      "dishNumber": 11,
-      "quantity": 0.5,
+      "dishNumber": 72,
+      "quantity": 0.2,
       "unit": "g",
-      "raw": "0.5 g per serving (¼ tsp, crushed into the potato filling)"
+      "raw": "0.2 g per serving (a pinch, about ⅛ tsp, crushed into the pakora batter)"
+    },
+    {
+      "dishNumber": 81,
+      "quantity": 0.2,
+      "unit": "g",
+      "raw": "0.2 g per serving (a small pinch in the dough)"
     }
   ],
   "versions": [
@@ -279,11 +335,15 @@
     {
       "date": "2026-11-05",
       "file": "FitPlate_Ingredients_2026-11-05.md"
+    },
+    {
+      "date": "2026-11-27",
+      "file": "FitPlate_Ingredients_2026-11-27.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "price": "price engine (latest-trend)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -294,9 +354,9 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 307.0–762.0 was wider than 30% of avg 559.0; narrowed to ±15%.",
-    "macrosPer100Estimate.carbsG: Versions 2026-10-06 (25) and 2026-11-05 (49.8) differ by more than 25%; kept the newer.",
-    "macrosPer100Estimate.fatG: Versions 2026-10-06 (22) and 2026-11-05 (16.1) differ by more than 25%; kept the newer.",
-    "macrosPer100Estimate.fibreG: Versions 2026-10-06 (21) and 2026-11-05 (35.3) differ by more than 25%; kept the newer."
+    "Range 400.0–970.0 was wider than 30% of avg 610.0; narrowed to ±15%.",
+    "macrosPer100Estimate.carbsG: Excluded outlier 25 from 2026-10-06: more than 25% from the other versions.",
+    "macrosPer100Estimate.fatG: Excluded outlier 22 from 2026-10-06: more than 25% from the other versions.",
+    "macrosPer100Estimate.fibreG: Excluded outlier 21 from 2026-10-06: more than 25% from the other versions."
   ]
 }

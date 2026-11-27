@@ -13,7 +13,7 @@
   "servings": 1,
   "ingredients": [
     {
-      "ingredientId": "wheat-vermicelli-roasted-or-plain-packaged",
+      "ingredientId": "wheat-vermicelli-roasted-or-plain",
       "name": "Wheat vermicelli, roasted or plain (semiya, seviyan)",
       "quantity": 50,
       "unit": "g",
@@ -34,7 +34,7 @@
       "householdMeasure": "½ tsp"
     },
     {
-      "ingredientId": "masoor-dal-packaged",
+      "ingredientId": "urad-dal-split-skinned",
       "name": "Urad dal (split black gram, skinned)",
       "quantity": 2,
       "unit": "g",
@@ -313,16 +313,16 @@
   },
   "microNutrientsEstimate": {
     "values": {
-      "calcium": 31.5,
+      "calcium": 34.2,
       "cholesterol": 0,
       "copper": 0.1,
-      "folate": 14.3,
-      "iron": 1,
+      "folate": 26.9,
+      "iron": 1.2,
       "magnesium": 30.6,
       "manganese": 0.2,
       "niacin": 0.1,
       "phosphorus": 62.8,
-      "potassium": 246.2,
+      "potassium": 265.9,
       "riboflavin": 0,
       "selenium": 1.2,
       "sodium": 606.2,
@@ -336,11 +336,38 @@
       "vitamin-k": 20.3,
       "zinc": 0.6
     },
-    "coveragePct": 31,
+    "coveragePct": 32,
     "basis": "partial estimate from ingredient quantities"
   },
   "asOrdered": {
-    "price": null,
+    "price": {
+      "priceHistory": [
+        {
+          "date": "2026-11-27",
+          "min": 80,
+          "max": 129,
+          "avg": 105,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-11-27.md"
+        }
+      ],
+      "currentEstimate": {
+        "min": 90,
+        "max": 120,
+        "avg": 110
+      },
+      "method": "single",
+      "trend": "unknown",
+      "change30dPct": null,
+      "lastObserved": "2026-11-27",
+      "stale": false,
+      "seasonal": false,
+      "listingCount": null,
+      "platforms": [],
+      "outOfStock": false,
+      "confirmed": true,
+      "checkNotes": []
+    },
     "nutrition": {
       "calories": {
         "value": null,
@@ -370,7 +397,34 @@
       "magicpin"
     ]
   },
-  "orderPrice": null,
+  "orderPrice": {
+    "priceHistory": [
+      {
+        "date": "2026-11-27",
+        "min": 80,
+        "max": 129,
+        "avg": 105,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-11-27.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 90,
+      "max": 120,
+      "avg": 110
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-11-27",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": null,
+    "platforms": [],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
+  },
   "healthiness": {
     "score": 6,
     "restaurantScore": 4,
@@ -398,7 +452,8 @@
     "Show Me the Curry, Gluten Free Rice Sticks Upma: https://showmethecurry.com/quickfixes/gluten-free-rice-sticks-upma-recipe.html",
     "Dr Mohan's, Semiya Upma Calories: https://drmohans.com/semiya-upma-calories/ ; Clearcals tomato semiya upma: https://clearcals.com/recipes/thakkali-semiya-upma",
     "Prices (context only): Swiggy Hyderabad upma page https://www.swiggy.com/city/hyderabad/upma-dish-restaurants ; Swiggy Chennai upma page https://www.swiggy.com/city/chennai/upma-dish-restaurants ; FoodiaQ https://www.foodiaq.com/product/vegetables-semiya-upma/ ; Swiggy Mamledar Misal menu https://www.swiggy.com/menu/97635",
-    "Image file name evidence: DBpedia mirror of the Wikipedia Upma article https://dbpedia-live.demo.openlinksw.com/page/Upma"
+    "Image file name evidence: DBpedia mirror of the Wikipedia Upma article https://dbpedia-live.demo.openlinksw.com/page/Upma",
+    "Prices seen 27 Nov 2026 via search snippets (context only): Swiggy Udupi Xpress Kharghar https://www.swiggy.com/city/mumbai/udupi-xpress-kharghar-rest1169778 ; Taste by Ruchira Virar https://swiggy.com/city/mumbai/taste-by-ruchira-virar-rest1021874 ; Swad Thali Naupada https://swiggy.com/city/mumbai/swad-thali-naupada-rest55038 ; Mini Madras Borivali https://www.swiggy.com/restaurants/mini-madras-borivali-malad-kandivali-west-mumbai-887121 ; Khamanng Katta https://swiggy.com/city/mumbai/khamanng-katta-borivali-mandapeshwar-opp-hcg-hospital-rest805468 ; FoodiaQ https://www.foodiaq.com/product/semiya-upma/ . Earlier: Swiggy Hyderabad upma page https://www.swiggy.com/city/hyderabad/upma-dish-restaurants ; Swiggy Chennai upma page https://www.swiggy.com/city/chennai/upma-dish-restaurants ; FoodiaQ https://www.foodiaq.com/product/vegetables-semiya-upma/ ; Swiggy Mamledar Misal menu https://www.swiggy.com/menu/97635"
   ],
   "allergens": [
     "peanut",
@@ -511,10 +566,15 @@
     {
       "date": "2026-10-23",
       "file": "FitPlate_Dishes_2026-10-23.md"
+    },
+    {
+      "date": "2026-11-27",
+      "file": "FitPlate_Dishes_2026-11-27.md"
     }
   ],
   "mergeMethod": {
-    "nutritionPerServing": "stable (single)",
+    "nutritionPerServing": "stable (mean-2)",
+    "orderPrice": "price engine (single)",
     "ingredients": "newest",
     "steps": "newest",
     "healthiness": "newest",
@@ -523,6 +583,9 @@
     "tags": "tag engine (tags.ts) on the merged dish"
   },
   "mergeNotes": [
-    "2026-10-23: research declares peanut, milk not detected from ingredient names; added"
+    "price flag: narrowed",
+    "Range 80.0–129.0 was wider than 30% of avg 105.0; narrowed to ±15%.",
+    "2026-10-23: research declares peanut, milk not detected from ingredient names; added",
+    "2026-11-27: research declares peanut, milk not detected from ingredient names; added"
   ]
 }

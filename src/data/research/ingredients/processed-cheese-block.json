@@ -17,32 +17,42 @@
         "avg": 605,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      },
+      {
+        "date": "2026-11-27",
+        "min": 515,
+        "max": 720,
+        "avg": 590,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-27.md"
       }
     ],
     "currentEstimate": {
-      "min": 520,
-      "max": 645,
-      "avg": 605
+      "min": 515,
+      "max": 680,
+      "avg": 595
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-25",
+    "lastObserved": "2026-11-27",
     "stale": false,
     "seasonal": false,
-    "listingCount": 5,
+    "listingCount": 8,
     "platforms": [
       "BigBasket",
-      "Swiggy Instamart"
+      "Blinkit",
+      "Swiggy Instamart",
+      "Zepto"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 52,
-    "max": 64.5,
-    "avg": 60.5
+    "min": 51.5,
+    "max": 68,
+    "avg": 59.5
   },
   "seasonal": false,
   "nutritionPer100g": null,
@@ -56,7 +66,7 @@
   "storage": "Keep refrigerated in the carton or foil, wrapped tightly once opened; use within about 3 to 4 weeks of opening (general guidance).",
   "looksLike": "A pale yellow, firm, smooth block in a carton or tin that grates or slices easily; also sold as individually wrapped slices, spread, cubes and shredded.",
   "howToPick": "Check the sealed pack, a mild milky smell and no oily sweating or mould on the surface; the date on the carton matters.",
-  "shelfLife": "Several months unopened in the fridge on the carton date (general guidance, not from a source in this run).",
+  "shelfLife": "Several months unopened in the fridge on the carton date (Zepto's Britannia page shows 9 months; other packs follow the carton).",
   "substitutes": [
     "Cheddar or mozzarella, grated",
     "Parmesan (small amount)",
@@ -64,37 +74,68 @@
   ],
   "vendorListings": [
     {
+      "vendor": "blinkit",
+      "product": "Amul Cheese Block",
+      "pack": "200 g",
+      "priceMinInr": 125,
+      "priceMaxInr": 125,
+      "observedOn": "2026-11-27"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Amul Cheese Block",
+      "pack": "500 g",
+      "priceMinInr": 290,
+      "priceMaxInr": 290,
+      "observedOn": "2026-11-27"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Amul Cheese Block",
+      "pack": "1 kg",
+      "priceMinInr": 559,
+      "priceMaxInr": 559,
+      "observedOn": "2026-11-27"
+    },
+    {
+      "vendor": "instamart",
+      "product": "Britannia Laughing Cow Cheese Block",
+      "pack": "200 g",
+      "priceMinInr": 122,
+      "priceMaxInr": 122,
+      "observedOn": "2026-11-27"
+    },
+    {
       "vendor": "instamart",
       "product": "Amul Processed Cheese Block",
       "pack": "200 g",
       "priceMinInr": 125,
       "priceMaxInr": 125,
       "observedOn": "2026-10-25"
-    }
-  ],
-  "usedIn": [
-    {
-      "dishNumber": 102,
-      "quantity": 15,
-      "unit": "g",
-      "raw": "15 g grated per serving (2 tbsp)"
     },
     {
-      "dishNumber": 81,
-      "quantity": null,
-      "unit": null,
-      "raw": "optional 1 tbsp grated, not counted in the base recipe"
+      "vendor": "zepto",
+      "product": "Britannia Cheese Block",
+      "pack": "200 g",
+      "priceMinInr": 104,
+      "priceMaxInr": 104,
+      "observedOn": "2026-11-27"
     }
   ],
+  "usedIn": [],
   "versions": [
     {
       "date": "2026-10-25",
       "file": "FitPlate_Ingredients_2026-10-25.md"
+    },
+    {
+      "date": "2026-11-27",
+      "file": "FitPlate_Ingredients_2026-11-27.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
     "aliases": "union",
     "substitutes": "union",
     "vendorListings": "newest sighting per vendor+product+pack",
@@ -102,5 +143,9 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 515.9–705.8 was wider than 30% of avg 592.8; narrowed to ±15%.",
+    "range clamped to observed prices: 505–680 → 515–680"
+  ]
 }

@@ -4,7 +4,7 @@
   "aliases": [
     "kishmish"
   ],
-  "category": "Fruit (dried)",
+  "category": "Fruit",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -23,20 +23,28 @@
         "avg": 530,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-31.md"
+      },
+      {
+        "date": "2026-11-27",
+        "min": 425,
+        "max": 540,
+        "avg": 495,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-27.md"
       }
     ],
     "currentEstimate": {
-      "min": 465,
-      "max": 625,
-      "avg": 545
+      "min": 425,
+      "max": 540,
+      "avg": 495
     },
-    "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-31",
+    "method": "latest-trend",
+    "trend": "falling",
+    "change30dPct": -9,
+    "lastObserved": "2026-11-27",
     "stale": false,
     "seasonal": false,
-    "listingCount": 9,
+    "listingCount": 7,
     "platforms": [
       "BigBasket",
       "Flipkart",
@@ -47,9 +55,9 @@
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 46.5,
-    "max": 62.5,
-    "avg": 54.5
+    "min": 42.5,
+    "max": 54,
+    "avg": 49.5
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -236,7 +244,7 @@
     }
   },
   "macrosPer100Estimate": {
-    "kcal": 316.5,
+    "kcal": 332,
     "proteinG": 3.3,
     "carbsG": 80,
     "fatG": 0.2,
@@ -260,15 +268,15 @@
       "pack": "500 g",
       "priceMinInr": 250,
       "priceMaxInr": 250,
-      "observedOn": "2026-10-31"
+      "observedOn": "2026-11-27"
     }
   ],
   "usedIn": [
     {
-      "dishNumber": 96,
+      "dishNumber": 78,
       "quantity": 5,
       "unit": "g",
-      "raw": "5 g per serving (8 to 10 raisins)"
+      "raw": "5 g per serving (1 tsp)"
     }
   ],
   "versions": [
@@ -279,11 +287,15 @@
     {
       "date": "2026-10-31",
       "file": "FitPlate_Ingredients_2026-10-31.md"
+    },
+    {
+      "date": "2026-11-27",
+      "file": "FitPlate_Ingredients_2026-11-27.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "price": "price engine (latest-trend)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -293,14 +305,19 @@
     "usedIn": "newest"
   },
   "mergeNotes": [
-    "price flag: narrowed",
-    "Range 447.4–701.9 was wider than 30% of avg 545.2; narrowed to ±15%.",
     "nutritionPer100g.proteinG: Conflict (2026-10-10: 3.39 vs 2026-10-31: 3.3); both cite the official table, kept the previous value.",
+    "nutritionPer100g.proteinG: Conflict (2026-10-10: 3.39 vs 2026-11-27: 3.3); both cite the official table, kept the previous value.",
     "nutritionPer100g.carbsG: Conflict (2026-10-10: 79.52 vs 2026-10-31: 80); both cite the official table, kept the previous value.",
+    "nutritionPer100g.carbsG: Conflict (2026-10-10: 79.52 vs 2026-11-27: 80); both cite the official table, kept the previous value.",
     "nutritionPer100g.sugarsG: Conflict (2026-10-10: 59.19 vs 2026-10-31: 65.7); both cite the official table, kept the previous value.",
+    "nutritionPer100g.sugarsG: Conflict (2026-10-10: 59.19 vs 2026-11-27: 65.7); both cite the official table, kept the previous value.",
     "nutritionPer100g.fatG: Conflict (2026-10-10: 0.46 vs 2026-10-31: 0.2); both cite the official table, kept the previous value.",
+    "nutritionPer100g.fatG: Conflict (2026-10-10: 0.46 vs 2026-11-27: 0.2); both cite the official table, kept the previous value.",
     "nutritionPer100g.fibreG: Conflict (2026-10-10: 4 vs 2026-10-31: 3.3); both cite the official table, kept the previous value.",
+    "nutritionPer100g.fibreG: Conflict (2026-10-10: 4 vs 2026-11-27: 3.3); both cite the official table, kept the previous value.",
     "nutritionPer100g.sodiumMg: Conflict (2026-10-10: 12 vs 2026-10-31: 24); both cite the official table, kept the previous value.",
-    "nutritionPer100g.calciumMg: Conflict (2026-10-10: 53 vs 2026-10-31: 64); both cite the official table, kept the previous value."
+    "nutritionPer100g.sodiumMg: Conflict (2026-10-10: 12 vs 2026-11-27: 24); both cite the official table, kept the previous value.",
+    "nutritionPer100g.calciumMg: Conflict (2026-10-10: 53 vs 2026-10-31: 64); both cite the official table, kept the previous value.",
+    "nutritionPer100g.calciumMg: Conflict (2026-10-10: 53 vs 2026-11-27: 64); both cite the official table, kept the previous value."
   ]
 }

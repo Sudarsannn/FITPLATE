@@ -15,32 +15,41 @@
         "avg": 1915,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      },
+      {
+        "date": "2026-11-27",
+        "min": 1980,
+        "max": 2860,
+        "avg": 2495,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-27.md"
       }
     ],
     "currentEstimate": {
-      "min": 1630,
-      "max": 2200,
-      "avg": 1915
+      "min": 2030,
+      "max": 2745,
+      "avg": 2385
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-25",
+    "lastObserved": "2026-11-27",
     "stale": false,
     "seasonal": false,
-    "listingCount": 4,
+    "listingCount": 6,
     "platforms": [
-      "BAPS Amrut shop",
-      "BigBasket"
+      "BigBasket",
+      "Blinkit",
+      "Zepto"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 163,
-    "max": 220,
-    "avg": 191.5
+    "min": 203,
+    "max": 274.5,
+    "avg": 238.5
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -242,24 +251,46 @@
     "Dried marjoram or thyme",
     "Fresh oregano or basil"
   ],
-  "vendorListings": [],
-  "usedIn": [
+  "vendorListings": [
     {
-      "dishNumber": 102,
-      "quantity": 1,
-      "unit": "g",
-      "raw": "1 g (½ tsp) per serving"
+      "vendor": "blinkit",
+      "product": "Keya Oregano Seasoning",
+      "pack": "50 g",
+      "priceMinInr": 127,
+      "priceMaxInr": 127,
+      "observedOn": "2026-11-27"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Milagro Farm Oregano",
+      "pack": "20 g",
+      "priceMinInr": 57,
+      "priceMaxInr": 57,
+      "observedOn": "2026-11-27"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Keya Oregano Seasoning",
+      "pack": "50 g",
+      "priceMinInr": 122,
+      "priceMaxInr": 122,
+      "observedOn": "2026-11-27"
     }
   ],
+  "usedIn": [],
   "versions": [
     {
       "date": "2026-10-25",
       "file": "FitPlate_Ingredients_2026-10-25.md"
+    },
+    {
+      "date": "2026-11-27",
+      "file": "FitPlate_Ingredients_2026-11-27.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -270,6 +301,6 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 1395.0–2500.0 was wider than 30% of avg 1915.0; narrowed to ±15%."
+    "Range 1869.4–2791.9 was wider than 30% of avg 2385.3; narrowed to ±15%."
   ]
 }

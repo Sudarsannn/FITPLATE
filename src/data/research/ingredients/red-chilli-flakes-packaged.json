@@ -1,0 +1,124 @@
+{
+  "id": "red-chilli-flakes-packaged",
+  "name": "Red chilli flakes, packaged",
+  "aliases": [
+    "Keya",
+    "Catch",
+    "Weikfield",
+    "mirchi flakes"
+  ],
+  "category": "Spice",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-11-27",
+        "min": 1575,
+        "max": 2250,
+        "avg": 1985,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-27.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 1685,
+      "max": 2250,
+      "avg": 1985
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-11-27",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 5,
+    "platforms": [
+      "BigBasket",
+      "Blinkit",
+      "Swiggy Instamart",
+      "Zepto"
+    ],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
+  },
+  "per100Estimate": {
+    "min": 168.5,
+    "max": 225,
+    "avg": 198.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 333,
+    "proteinG": null,
+    "carbsG": 56.6,
+    "fatG": null,
+    "fibreG": null
+  },
+  "storage": "Keep in a closed, dry jar away from light and steam; do not shake the bottle directly over a hot pan.",
+  "looksLike": "Coarsely crushed dried red chillies with visible seeds, sold in small shaker bottles and sachets.",
+  "howToPick": "Bright red flakes with a sharp smell; avoid dull brown, clumped or damp packs.",
+  "shelfLife": "About 12 months on the pack (general guidance, not from a source in this run); flavour fades earlier once opened.",
+  "substitutes": [
+    "Red chilli powder (about half the quantity)",
+    "Fresh red chilli, finely chopped",
+    "Black pepper or paprika"
+  ],
+  "vendorListings": [
+    {
+      "vendor": "blinkit",
+      "product": "Catch Red Chilli Flakes Sprinkler",
+      "pack": "35 g",
+      "priceMinInr": 64,
+      "priceMaxInr": 64,
+      "observedOn": "2026-11-27"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Keya Red Chilli Flakes",
+      "pack": "40 g",
+      "priceMinInr": 90,
+      "priceMaxInr": 90,
+      "observedOn": "2026-11-27"
+    },
+    {
+      "vendor": "instamart",
+      "product": "Keya Wonder Hot Red Chilli Flakes",
+      "pack": "40 g",
+      "priceMinInr": 85,
+      "priceMaxInr": 85,
+      "observedOn": "2026-11-27"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Keya Wonder Hot Red Chilli Flakes",
+      "pack": "40 g",
+      "priceMinInr": 63,
+      "priceMaxInr": 63,
+      "observedOn": "2026-11-27"
+    }
+  ],
+  "usedIn": [],
+  "versions": [
+    {
+      "date": "2026-11-27",
+      "file": "FitPlate_Ingredients_2026-11-27.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "vendorListings": "newest sighting per vendor+product+pack",
+    "storage": "newest",
+    "looksLike": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 1575.0–2250.0 was wider than 30% of avg 1985.0; narrowed to ±15%.",
+    "range clamped to observed prices: 1685–2285 → 1685–2250"
+  ]
+}

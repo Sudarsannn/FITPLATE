@@ -23,32 +23,40 @@
         "avg": 590,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
+      },
+      {
+        "date": "2026-11-27",
+        "min": 440,
+        "max": 630,
+        "avg": 540,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-27.md"
       }
     ],
     "currentEstimate": {
-      "min": 520,
+      "min": 480,
       "max": 625,
-      "avg": 585
+      "avg": 565
     },
     "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-29",
+    "trend": "stable",
+    "change30dPct": -4.6,
+    "lastObserved": "2026-11-27",
     "stale": false,
     "seasonal": false,
-    "listingCount": 6,
+    "listingCount": 8,
     "platforms": [
       "BigBasket",
-      "Swiggy Instamart"
+      "Zepto"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 52,
+    "min": 48,
     "max": 62.5,
-    "avg": 58.5
+    "avg": 56.5
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -235,8 +243,8 @@
     }
   },
   "macrosPer100Estimate": {
-    "kcal": 715.5,
-    "proteinG": 0.9,
+    "kcal": 714,
+    "proteinG": 0.8,
     "carbsG": 0.1,
     "fatG": 81,
     "fibreG": 0
@@ -284,20 +292,44 @@
       "priceMinInr": 130,
       "priceMaxInr": 130,
       "observedOn": "2026-10-29"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Amul Salted Butter 100 g",
+      "pack": "100 g",
+      "priceMinInr": 55,
+      "priceMaxInr": 55,
+      "observedOn": "2026-11-27"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Amul Salted Butter 200 g",
+      "pack": "200 g",
+      "priceMinInr": 112,
+      "priceMaxInr": 112,
+      "observedOn": "2026-11-27"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Amul Salted Butter 500 g",
+      "pack": "500 g",
+      "priceMinInr": 274,
+      "priceMaxInr": 274,
+      "observedOn": "2026-11-27"
     }
   ],
   "usedIn": [
     {
-      "dishNumber": 86,
-      "quantity": 15,
+      "dishNumber": 69,
+      "quantity": 5,
       "unit": "g",
-      "raw": "15 g per serving (10 g inside, 5 g outside the bread)"
+      "raw": "5 g per serving (1 tsp, salted or unsalted)"
     },
     {
-      "dishNumber": 89,
+      "dishNumber": 77,
       "quantity": 8,
       "unit": "g",
-      "raw": "8 g per serving"
+      "raw": "8 g per serving (2 tsp)"
     }
   ],
   "versions": [
@@ -308,11 +340,15 @@
     {
       "date": "2026-10-29",
       "file": "FitPlate_Ingredients_2026-10-29.md"
+    },
+    {
+      "date": "2026-11-27",
+      "file": "FitPlate_Ingredients_2026-11-27.md"
     }
   ],
   "mergeMethod": {
     "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",

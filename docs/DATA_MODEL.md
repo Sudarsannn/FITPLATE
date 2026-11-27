@@ -132,3 +132,4 @@ Spark allows about 20,000 writes and 50,000 reads a day. Writes are batched and 
 
 - 2026-11-11 (Day 23): `routines` collection (v1). Editable, so it is not in APPEND_ONLY and firestore.rules needs no change.
 - 2026-11-22 (Day 34): no schema change. Sync flush now merges with the cloud (newest updatedAt wins) on the retry after a failed send, so an older offline edit cannot overwrite a newer copy saved from another device. New store action deleteMyAccount deletes all data first, then the Firebase sign-in.
+- 2026-11-27 (Day 38, maintenance): settings.heatDay {date, band: warm|hot|very} added to UserSettings (optional, today only); Water screen sets it, waterTarget adds 300/500/750 ml per hydration Topic 31, never for doctor-set water, water caution, pregnancy, breastfeeding or age 60+. No collection or rules change.

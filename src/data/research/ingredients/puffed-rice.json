@@ -17,32 +17,42 @@
         "avg": 133,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      },
+      {
+        "date": "2026-11-27",
+        "min": 100,
+        "max": 200,
+        "avg": 163,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-27.md"
       }
     ],
     "currentEstimate": {
-      "min": 115,
-      "max": 155,
-      "avg": 135
+      "min": 135,
+      "max": 180,
+      "avg": 155
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-25",
+    "lastObserved": "2026-11-27",
     "stale": false,
     "seasonal": false,
-    "listingCount": 3,
+    "listingCount": 6,
     "platforms": [
       "BigBasket",
-      "Swiggy Instamart"
+      "Blinkit",
+      "Swiggy Instamart",
+      "Zepto"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 11.5,
-    "max": 15.5,
-    "avg": 13.5
+    "min": 13.5,
+    "max": 18,
+    "avg": 15.5
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -235,9 +245,9 @@
     "fatG": 0.5,
     "fibreG": 1.7
   },
-  "storage": "Keep in an airtight tin or zip pouch at room temperature, away from damp; re-crisp in a dry pan or microwave 30 to 40 sec (dish 83 tip) if it softens.",
+  "storage": "Keep in an airtight tin or zip pouch at room temperature, away from damp; re-crisp in a dry pan or microwave 30 to 40 sec if it softens.",
   "looksLike": "Tiny, white, very light and hollow puffs of rice that crunch and go soft quickly in moisture. Sold plain or salted; the plain kind is used for bhel.",
-  "howToPick": "Choose white, dry, light puffs that snap crisply. Avoid damp, chewy, yellowish or unusually bright-white puffs; a consumer-health page seen in search results warned that urea or bleaching agents are sometimes used to make puffed rice look very white in the Indian market (the page was not opened in full, so treat as a caution only).",
+  "howToPick": "Choose white, dry, light puffs that snap crisply. Avoid damp, chewy, yellowish or unusually bright-white puffs; a consumer-health page seen in an earlier run warned that urea or bleaching agents are sometimes used to make puffed rice look very white in the Indian market (treat as a caution only).",
   "shelfLife": "A few months sealed per typical pack labels (general guidance; not taken from a source in this run), but it softens within hours once the pack is open in humid weather.",
   "substitutes": [
     "Thick poha (flattened rice), lightly toasted",
@@ -246,31 +256,60 @@
   ],
   "vendorListings": [
     {
+      "vendor": "blinkit",
+      "product": "Rajdhani Puffed Rice",
+      "pack": "200 g",
+      "priceMinInr": 29,
+      "priceMaxInr": 29,
+      "observedOn": "2026-11-27"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Whole Farm Premium Puffed Rice",
+      "pack": "200 g",
+      "priceMinInr": 40,
+      "priceMaxInr": 40,
+      "observedOn": "2026-11-27"
+    },
+    {
       "vendor": "instamart",
       "product": "Supreme Harvest Puffed Rice , MRP ₹49",
       "pack": "200 g",
       "priceMinInr": 36,
       "priceMaxInr": 36,
       "observedOn": "2026-10-25"
-    }
-  ],
-  "usedIn": [
+    },
     {
-      "dishNumber": 83,
-      "quantity": 25,
-      "unit": "g",
-      "raw": "25 g per serving (about 2½ cups loosely packed); the Jain swap that drops the potato may add 10 g more puffed rice"
+      "vendor": "instamart",
+      "product": "Supreme Harvest Puffed Rice",
+      "pack": "200 g",
+      "priceMinInr": 39,
+      "priceMaxInr": 39,
+      "observedOn": "2026-11-27"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Vijay Gold Murmura Rice",
+      "pack": "200 g",
+      "priceMinInr": 31,
+      "priceMaxInr": 31,
+      "observedOn": "2026-11-27"
     }
   ],
+  "usedIn": [],
   "versions": [
     {
       "date": "2026-10-25",
       "file": "FitPlate_Ingredients_2026-10-25.md"
+    },
+    {
+      "date": "2026-11-27",
+      "file": "FitPlate_Ingredients_2026-11-27.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -281,6 +320,6 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 98.0–180.0 was wider than 30% of avg 133.0; narrowed to ±15%."
+    "Range 99.6–196.2 was wider than 30% of avg 157.3; narrowed to ±15%."
   ]
 }

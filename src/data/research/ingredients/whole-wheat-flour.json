@@ -4,7 +4,7 @@
   "aliases": [
     "atta"
   ],
-  "category": "Grain (flour)",
+  "category": "Flour",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -23,33 +23,41 @@
         "avg": 48,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-11-05.md"
+      },
+      {
+        "date": "2026-11-27",
+        "min": 49,
+        "max": 58,
+        "avg": 55,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-27.md"
       }
     ],
     "currentEstimate": {
-      "min": 43,
-      "max": 56,
-      "avg": 49
+      "min": 46,
+      "max": 57,
+      "avg": 52
     },
     "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-11-05",
+    "trend": "stable",
+    "change30dPct": 5,
+    "lastObserved": "2026-11-27",
     "stale": false,
     "seasonal": false,
-    "listingCount": 6,
+    "listingCount": 7,
     "platforms": [
       "BigBasket",
-      "Flipkart",
-      "Swiggy Instamart"
+      "Blinkit",
+      "KartCompare aggregator"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 4.3,
-    "max": 5.6,
-    "avg": 4.9
+    "min": 4.6,
+    "max": 5.7,
+    "avg": 5.2
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -237,10 +245,10 @@
   },
   "macrosPer100Estimate": {
     "kcal": 340,
-    "proteinG": 12.6,
-    "carbsG": 70.5,
+    "proteinG": 13.2,
+    "carbsG": 72,
     "fatG": 2.5,
-    "fibreG": 10.9
+    "fibreG": 10.7
   },
   "storage": "Keep in an airtight steel or glass container in a cool dry place for 2 to 3 months, or in the fridge in hot, humid Mumbai monsoon weather to slow insects and rancidity.",
   "looksLike": "Fine, light brown to creamy-beige flour with small bran specks; soft to the touch with a mild wheaty smell.",
@@ -254,6 +262,14 @@
     "Half atta and half maida"
   ],
   "vendorListings": [
+    {
+      "vendor": "blinkit",
+      "product": "Aashirvaad Shudh Chakki Atta, 100% atta, 0% maida",
+      "pack": "5 kg",
+      "priceMinInr": 244,
+      "priceMaxInr": 244,
+      "observedOn": "2026-11-27"
+    },
     {
       "vendor": "instamart",
       "product": "Aashirvaad Shudh Chakki Atta, Gurgaon page",
@@ -281,10 +297,10 @@
   ],
   "usedIn": [
     {
-      "dishNumber": 11,
-      "quantity": 80,
+      "dishNumber": 81,
+      "quantity": 50,
       "unit": "g",
-      "raw": "80 g per serving in the dough, plus about 10 g for dusting (about 5 g gets used up)"
+      "raw": "50 g per serving in the dough, plus 5 g (1 tsp) for dusting"
     }
   ],
   "versions": [
@@ -295,11 +311,15 @@
     {
       "date": "2026-11-05",
       "file": "FitPlate_Ingredients_2026-11-05.md"
+    },
+    {
+      "date": "2026-11-27",
+      "file": "FitPlate_Ingredients_2026-11-27.md"
     }
   ],
   "mergeMethod": {
     "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -309,6 +329,6 @@
     "usedIn": "newest"
   },
   "mergeNotes": [
-    "macrosPer100Estimate.fatG: Versions 2026-10-06 (1.8) and 2026-11-05 (2.5) differ by more than 25%; kept the newer."
+    "macrosPer100Estimate.fatG: Excluded outlier 1.8 from 2026-10-06: more than 25% from the other versions."
   ]
 }

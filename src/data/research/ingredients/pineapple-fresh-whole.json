@@ -16,33 +16,41 @@
         "avg": 135,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-23.md"
+      },
+      {
+        "date": "2026-11-27",
+        "min": 40,
+        "max": 70,
+        "avg": 55,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-27.md"
       }
     ],
     "currentEstimate": {
-      "min": 115,
-      "max": 155,
-      "avg": 135
+      "min": 81,
+      "max": 109,
+      "avg": 95
     },
-    "method": "single",
+    "method": "spike-blend",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-23",
+    "lastObserved": "2026-11-27",
     "stale": false,
     "seasonal": false,
-    "listingCount": 5,
+    "listingCount": 3,
     "platforms": [
-      "BigBasket",
-      "Blinkit",
-      "Flipkart"
+      "BigBasket"
     ],
     "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "confirmed": false,
+    "checkNotes": [
+      "only 1 platform (BigBasket) backs the range"
+    ]
   },
   "per100Estimate": {
-    "min": 11.5,
-    "max": 15.5,
-    "avg": 13.5
+    "min": 8.1,
+    "max": 10.9,
+    "avg": 9.5
   },
   "seasonal": false,
   "nutritionPer100g": null,
@@ -71,17 +79,21 @@
       "dishNumber": 78,
       "quantity": 15,
       "unit": "g",
-      "raw": "15 g per serving (1 tbsp chopped); the Jain variant also keeps it"
+      "raw": "15 g per serving (1 tbsp chopped)"
     }
   ],
   "versions": [
     {
       "date": "2026-10-23",
       "file": "FitPlate_Ingredients_2026-10-23.md"
+    },
+    {
+      "date": "2026-11-27",
+      "file": "FitPlate_Ingredients_2026-11-27.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (spike-blend)",
     "macrosPer100Estimate": "stable (none)",
     "aliases": "union",
     "substitutes": "union",
@@ -91,7 +103,9 @@
     "usedIn": "newest"
   },
   "mergeNotes": [
+    "price flag: possible-spike",
     "price flag: narrowed",
-    "Range 75.0–180.0 was wider than 30% of avg 135.0; narrowed to ±15%."
+    "Possible spike: latest avg 55 (2026-11-27) moved more than 35% from the previous estimate; using the halfway point.",
+    "Range 57.5–125.0 was wider than 30% of avg 95.0; narrowed to ±15%."
   ]
 }

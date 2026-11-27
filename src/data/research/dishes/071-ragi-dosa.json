@@ -14,7 +14,7 @@
   "servings": 1,
   "ingredients": [
     {
-      "ingredientId": "ragi-flour-packaged",
+      "ingredientId": "ragi-flour",
       "name": "Ragi flour (finger millet flour, nachni atta)",
       "quantity": 40,
       "unit": "g",
@@ -336,12 +336,13 @@
   },
   "microNutrientsEstimate": {
     "values": {
-      "calcium": 195.4,
+      "calcium": 187.4,
       "cholesterol": 4.2,
+      "chromium": 12.8,
       "copper": 0.3,
-      "folate": 41.5,
+      "folate": 55.4,
       "iodine": 9,
-      "iron": 1.1,
+      "iron": 2.7,
       "magnesium": 15.6,
       "manganese": 0,
       "niacin": 0.9,
@@ -350,7 +351,7 @@
       "riboflavin": 0,
       "selenium": 13.4,
       "sodium": 598.5,
-      "thiamine": 0.1,
+      "thiamine": 0.3,
       "vitamin-a": 22.8,
       "vitamin-b12": 0.1,
       "vitamin-b6": 0.1,
@@ -373,27 +374,36 @@
           "avg": 180,
           "confidence": null,
           "sourceFile": "FitPlate_Dishes_2026-10-22.md"
+        },
+        {
+          "date": "2026-11-27",
+          "min": 110,
+          "max": 280,
+          "avg": 194,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-11-27.md"
         }
       ],
       "currentEstimate": {
-        "min": 150,
-        "max": 210,
-        "avg": 180
+        "min": 160,
+        "max": 220,
+        "avg": 190
       },
-      "method": "single",
+      "method": "wma",
       "trend": "unknown",
       "change30dPct": null,
-      "lastObserved": "2026-10-22",
+      "lastObserved": "2026-11-27",
       "stale": false,
       "seasonal": false,
-      "listingCount": 3,
+      "listingCount": 15,
       "platforms": [
-        "Swiggy"
+        "magicpin",
+        "Swiggy",
+        "Zomato"
       ],
       "outOfStock": true,
       "confirmed": false,
       "checkNotes": [
-        "only 1 platform (Swiggy) backs the range",
         "a listing used for the range is marked out of stock, closed or not taking orders"
       ]
     },
@@ -435,27 +445,36 @@
         "avg": 180,
         "confidence": null,
         "sourceFile": "FitPlate_Dishes_2026-10-22.md"
+      },
+      {
+        "date": "2026-11-27",
+        "min": 110,
+        "max": 280,
+        "avg": 194,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-11-27.md"
       }
     ],
     "currentEstimate": {
-      "min": 150,
-      "max": 210,
-      "avg": 180
+      "min": 160,
+      "max": 220,
+      "avg": 190
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-22",
+    "lastObserved": "2026-11-27",
     "stale": false,
     "seasonal": false,
-    "listingCount": 3,
+    "listingCount": 15,
     "platforms": [
-      "Swiggy"
+      "magicpin",
+      "Swiggy",
+      "Zomato"
     ],
     "outOfStock": true,
     "confirmed": false,
     "checkNotes": [
-      "only 1 platform (Swiggy) backs the range",
       "a listing used for the range is marked out of stock, closed or not taking orders"
     ]
   },
@@ -497,7 +516,22 @@
     "Swiggy, Andhra Dosa, Kharghar (ragi dosas ₹170–250; plain price not seen): https://www.swiggy.com/city/mumbai/andhra-dosa-chaturbhuj-chs-kharghar-rest997673",
     "Free Press Journal, where to eat the best dosa in Mumbai (Banana Leaf ragi dosa ₹248; not a platform): https://www.freepressjournal.in/amp/lifestyle/food-guide-where-to-eat-the-best-dosa-in-mumbai-head-to-these-affordable-restaurants-for-authentic-south-indian-breakfast",
     "Swiggy, outside Mumbai (context): https://www.swiggy.com/city/bangalore/the-millets-cafe-ramamurthy-nagar-rest1120604 ; https://www.swiggy.com/city/bangalore/cafe-svarasya-jp-nagar-rest822624 ; https://www.swiggy.com/city/hassan/hotel-suvarna-sagar-bangalore-mangalore-road-hassan-locality-rest148146 ; https://www.swiggy.com/city/kolkata/idlygo-plus-lake-town-rest958964 ; https://www.swiggy.com/menu/491800 (Tamil Pasanga Cafe, Ahmedabad; Ragi Masala Dosai 250 Cal., ₹410)",
-    "Storyboard18, Swiggy 2023 report (124% growth in millet-dish orders; ragi among top healthy searches): https://www.storyboard18.com/quantum-brief/mumbai-user-placed-food-orders-worth-rs-42-3-lakh-on-swiggy-in-2023-swiggy-report-18965.htm"
+    "Storyboard18, Swiggy 2023 report (124% growth in millet-dish orders; ragi among top healthy searches): https://www.storyboard18.com/quantum-brief/mumbai-user-placed-food-orders-worth-rs-42-3-lakh-on-swiggy-in-2023-swiggy-report-18965.htm",
+    "Swiggy, Mani's Cafe, Mulund (Ragi Dosa ₹110, onion ₹120, masala ₹130): https://www.swiggy.com/city/mumbai/manis-cafe-mulund-rest363819 ; Mulund West outlet: https://www.swiggy.com/city/mumbai/manis-cafe-mulund-west-rest584153",
+    "Zomato, Mani's Cafe, Kandivali West (Ragi Dosa ₹150, masala ₹180): https://www.zomato.com/it/mumbai/manis-cafe-kandivali-west/order",
+    "Swiggy, South Tiffin House, Metro station Andheri East (₹145 / ₹175): https://swiggy.com/city/mumbai/south-tiffin-house-metro-station-andheri-east-rest796039 ; Azad Nagar / Metro Line 1 outlets (₹180 plain, masala ₹225–240): https://swiggy.com/city/mumbai/south-tiffin-house-azad-nagar-andheri-east-rest862058 ; https://www.swiggy.com/city/mumbai/south-tiffin-house-metro-line-1-andheri-east-rest794718",
+    "Swiggy, Anna Idli, Fort / Churchgate (Ragi Plain Dosa ₹270 or ₹220; masala ₹290 or ₹240): https://www.swiggy.com/city/mumbai/anna-idli-churchgate-rest694658 ; https://www.swiggy.com/restaurants/anna-idli-fort-mumbai-694658",
+    "Swiggy, Rivaaz Restaurant by The Sahil Hotel, Mumbai Central (Ragi Dosa ₹229, masala ₹259, ragi idli ₹150): https://www.swiggy.com/menu/46078",
+    "Zomato, Mutuswami, Dadar East (₹219) and Khar (₹276): https://www.zomato.com/mumbai/mutuswami-dadar-east/order ; https://www.zomato.com/mumbai/mutuswami-khar/order",
+    "Zomato, Hare Rama Hare Krishna Pure Veg, Chakala (ghee ragi dosa ₹160, variant): https://www.zomato.com/mumbai/hare-rama-hare-krishna-chakala/order",
+    "magicpin, Udupi 2 Mumbai (Dadar East ₹250, Malad West ₹170, Kopar Khairane ₹165): https://magicpin.in/Mumbai/Dadar-East/Restaurant/Udupi-2-Mumbai/store/155a832/delivery ; https://magicpin.in/Mumbai/Malad-West/Restaurant/Udupi-2-Mumbai/store/168076c/ ; https://magicpin.in/Navi-Mumbai/Sector-4a/Restaurant/Udupi-2-Mumbai/store/a33408/delivery",
+    "magicpin, Mumbai Murugan, Fort (₹130): https://magicpin.in/Mumbai/Fort/Restaurant/Mumbai-Murugan/store/85b063/",
+    "magicpin, Banana Leaf, Kandivali West (₹270, premium, excluded): https://magicpin.in/Mumbai/Chikuwadi/Restaurant/Banana-Leaf/store/c362b/delivery",
+    "magicpin, Udupi Spices, Airoli (₹60, MMR): https://magicpin.in/Navi-Mumbai/Sector-20,-Airoli/Restaurant/Udupi-Spices/store/16a171b/",
+    "Swiggy, Malgudi, Vashi (₹250; another snippet ₹270) (MMR): https://www.swiggy.com/restaurants/malgudi-sector-30-a-vashi-mumbai-24120 ; https://www.swiggy.com/city/mumbai/malgudi-vashi-malad-west-rest24120",
+    "Swiggy, Rapid Anna, Thane (₹140, MMR): https://www.swiggy.com/city/mumbai/rapid-anna-west-thane-rest832158",
+    "Swiggy, Prakash Dosa, Parel (no usable ragi price): https://www.swiggy.com/city/mumbai/prakash-dosa-parel-rest1374048",
+    "From the 22 Oct version, not re-found (dated, 2026-10-22): Swiggy, Mani's Cafe, Palava City: https://www.swiggy.com/city/mumbai/manis-cafe-palava-city-rest1144729 ; Andhra Dosa, Kharghar: https://www.swiggy.com/city/mumbai/andhra-dosa-chaturbhuj-chs-kharghar-rest997673 ; Free Press Journal guide (Banana Leaf ₹248): https://www.freepressjournal.in/amp/lifestyle/food-guide-where-to-eat-the-best-dosa-in-mumbai-head-to-these-affordable-restaurants-for-authentic-south-indian-breakfast ; outside Mumbai: https://www.swiggy.com/city/bangalore/the-millets-cafe-ramamurthy-nagar-rest1120604 ; https://www.swiggy.com/city/bangalore/cafe-svarasya-jp-nagar-rest822624 ; https://www.swiggy.com/city/hassan/hotel-suvarna-sagar-bangalore-mangalore-road-hassan-locality-rest148146 ; https://www.swiggy.com/city/kolkata/idlygo-plus-lake-town-rest958964 ; https://www.swiggy.com/menu/491800"
   ],
   "allergens": [
     "peanut",
@@ -619,18 +653,21 @@
   "needsReview": [
     "dropped \"glutenFree\" claim: recipe has gluten",
     "Jain \"with-changes\" but the recipe keeps onion, fresh ginger and the line doesn't say to skip them",
-    "price not confirmed (2026-10-22): only 1 platform (Swiggy) backs the range",
-    "price not confirmed (2026-10-22): a listing used for the range is marked out of stock, closed or not taking orders"
+    "price not confirmed (2026-11-27): a listing used for the range is marked out of stock, closed or not taking orders"
   ],
   "versions": [
     {
       "date": "2026-10-22",
       "file": "FitPlate_Dishes_2026-10-22.md"
+    },
+    {
+      "date": "2026-11-27",
+      "file": "FitPlate_Dishes_2026-11-27.md"
     }
   ],
   "mergeMethod": {
-    "nutritionPerServing": "stable (single)",
-    "orderPrice": "price engine (single)",
+    "nutritionPerServing": "stable (mean-2)",
+    "orderPrice": "price engine (wma)",
     "ingredients": "newest",
     "steps": "newest",
     "healthiness": "newest",
@@ -640,7 +677,8 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 110.0–230.0 was wider than 30% of avg 180.0; narrowed to ±15%.",
-    "2026-10-22: research declares peanut not detected from ingredient names; added"
+    "Range 110.0–264.8 was wider than 30% of avg 189.8; narrowed to ±15%.",
+    "2026-10-22: research declares peanut not detected from ingredient names; added",
+    "2026-11-27: research declares peanut not detected from ingredient names; added"
   ]
 }

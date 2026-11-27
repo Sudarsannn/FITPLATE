@@ -16,35 +16,42 @@
         "avg": 1660,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-13.md"
+      },
+      {
+        "date": "2026-11-27",
+        "min": 1200,
+        "max": 2800,
+        "avg": 1690,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-27.md"
       }
     ],
     "currentEstimate": {
-      "min": 1410,
-      "max": 1910,
-      "avg": 1660
+      "min": 1435,
+      "max": 1940,
+      "avg": 1685
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-13",
+    "lastObserved": "2026-11-27",
     "stale": false,
     "seasonal": false,
-    "listingCount": 6,
+    "listingCount": 5,
     "platforms": [
-      "Aharmantra",
-      "Big Dry Fruits",
-      "Indian Jadi Booti",
+      "BigBasket",
       "Kerala Spices Online",
-      "Piqurs"
+      "Piqurs",
+      "Podhigai Herbs"
     ],
     "outOfStock": false,
     "confirmed": true,
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 141,
-    "max": 191,
-    "avg": 166
+    "min": 143.5,
+    "max": 194,
+    "avg": 168.5
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -238,7 +245,7 @@
     "fibreG": null
   },
   "storage": "Keep in an airtight jar in a cool, dark, dry place for up to about a year. Grind only when making the masala; the ground powder loses aroma within weeks.",
-  "looksLike": "Dried, unopened flower buds, dark brown to black, shaped like a large, stubby clove (dish 48 describes them as bigger than cloves) with a rough, woody skin. They smell woody, floral and slightly pungent.",
+  "looksLike": "Dried, unopened flower buds, dark brown to black, shaped like a large, stubby clove (the earlier dish file describes them as bigger than cloves) with a rough, woody skin. They smell woody, floral and slightly pungent.",
   "howToPick": null,
   "shelfLife": "About a year whole in a sealed pack; aroma fades over time.",
   "substitutes": [
@@ -246,22 +253,19 @@
     "Leave it out"
   ],
   "vendorListings": [],
-  "usedIn": [
-    {
-      "dishNumber": 48,
-      "quantity": 1,
-      "unit": "g",
-      "raw": "1 g (1–2 buds) per batch of homemade bisi bele bath powder, which makes 6 servings, so about 0.17 g per serving; optional, and not needed when packaged powder is used"
-    }
-  ],
+  "usedIn": [],
   "versions": [
     {
       "date": "2026-10-13",
       "file": "FitPlate_Ingredients_2026-10-13.md"
+    },
+    {
+      "date": "2026-11-27",
+      "file": "FitPlate_Ingredients_2026-11-27.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (wma)",
     "macrosPer100Estimate": "stable (none)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
@@ -273,6 +277,6 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 500.0–4200.0 was wider than 30% of avg 1660.0; narrowed to ±15%."
+    "Range 1094.8–3010.3 was wider than 30% of avg 1685.5; narrowed to ±15%."
   ]
 }

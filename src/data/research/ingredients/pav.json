@@ -16,23 +16,33 @@
         "avg": 5,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-06.md"
+      },
+      {
+        "date": "2026-11-27",
+        "min": 3,
+        "max": 7,
+        "avg": 6,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-27.md"
       }
     ],
     "currentEstimate": {
       "min": 5,
-      "max": 6,
-      "avg": 5
+      "max": 7,
+      "avg": 6
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-06",
-    "stale": true,
+    "lastObserved": "2026-11-27",
+    "stale": false,
     "seasonal": false,
     "listingCount": 4,
     "platforms": [
       "BigBasket",
-      "IndiaMART"
+      "Blinkit",
+      "Swiggy Instamart",
+      "Zepto"
     ],
     "outOfStock": false,
     "confirmed": true,
@@ -224,9 +234,9 @@
     }
   },
   "macrosPer100Estimate": {
-    "kcal": 294,
-    "proteinG": 8,
-    "carbsG": 56.5,
+    "kcal": 308,
+    "proteinG": 7,
+    "carbsG": 61,
     "fatG": 4,
     "fibreG": 3
   },
@@ -242,20 +252,44 @@
   ],
   "vendorListings": [
     {
+      "vendor": "blinkit",
+      "product": "Britannia Pav",
+      "pack": "250 g (6 pcs, about 42 g each)",
+      "priceMinInr": 40,
+      "priceMaxInr": 40,
+      "observedOn": "2026-11-27"
+    },
+    {
+      "vendor": "instamart",
+      "product": "Britannia Pav",
+      "pack": "6 pcs (250 g pack)",
+      "priceMinInr": 40,
+      "priceMaxInr": 40,
+      "observedOn": "2026-11-27"
+    },
+    {
       "vendor": "zepto",
       "product": "Britannia Pav",
       "pack": "200 g (about 5.7 pcs at 35 g)",
       "priceMinInr": 35,
       "priceMaxInr": 35,
       "observedOn": "2026-11-05"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Britannia Pav",
+      "pack": "200 g (about 5.7 pcs)",
+      "priceMinInr": 40,
+      "priceMaxInr": 40,
+      "observedOn": "2026-11-27"
     }
   ],
   "usedIn": [
     {
-      "dishNumber": 13,
+      "dishNumber": 77,
       "quantity": null,
       "unit": null,
-      "raw": "2 pav (about 70 g) per serving, 2 rolls from a ladi"
+      "raw": "2 pav (70 g) per serving, toasted in butter"
     }
   ],
   "versions": [
@@ -266,11 +300,15 @@
     {
       "date": "2026-11-05",
       "file": "FitPlate_Ingredients_2026-11-05.md"
+    },
+    {
+      "date": "2026-11-27",
+      "file": "FitPlate_Ingredients_2026-11-27.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -280,7 +318,8 @@
     "usedIn": "newest"
   },
   "mergeNotes": [
-    "price flag: stale",
-    "Latest observation 2026-10-06 is more than 45 days old."
+    "price flag: narrowed",
+    "Range 3.3–6.9 was wider than 30% of avg 5.9; narrowed to ±15%.",
+    "macrosPer100Estimate.proteinG: Excluded outlier 9 from 2026-10-06: more than 25% from the other versions."
   ]
 }

@@ -17,33 +17,41 @@
         "avg": 180,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      },
+      {
+        "date": "2026-11-27",
+        "min": 130,
+        "max": 435,
+        "avg": 210,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-27.md"
       }
     ],
     "currentEstimate": {
-      "min": 155,
-      "max": 205,
-      "avg": 180
+      "min": 170,
+      "max": 230,
+      "avg": 200
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-25",
+    "lastObserved": "2026-11-27",
     "stale": false,
     "seasonal": false,
-    "listingCount": 3,
+    "listingCount": 6,
     "platforms": [
-      "BigBasket"
+      "Amazon",
+      "BigBasket",
+      "Swiggy Instamart"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 1 platform (BigBasket) backs the range"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 15.5,
-    "max": 20.5,
-    "avg": 18
+    "min": 17,
+    "max": 23,
+    "avg": 20
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -245,24 +253,30 @@
     "Besan (gram flour) lightly roasted",
     "Whole roasted chana (with skin)"
   ],
-  "vendorListings": [],
-  "usedIn": [
+  "vendorListings": [
     {
-      "dishNumber": 85,
-      "quantity": 4,
-      "unit": "g",
-      "raw": "4 g per serving (1 tsp); the Low-oil variant uses 8 g"
+      "vendor": "instamart",
+      "product": "Supreme Harvest Roasted Bengal Gram Split , 39% off",
+      "pack": "500 g",
+      "priceMinInr": 64,
+      "priceMaxInr": 64,
+      "observedOn": "2026-11-27"
     }
   ],
+  "usedIn": [],
   "versions": [
     {
       "date": "2026-10-25",
       "file": "FitPlate_Ingredients_2026-10-25.md"
+    },
+    {
+      "date": "2026-11-27",
+      "file": "FitPlate_Ingredients_2026-11-27.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -273,6 +287,6 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 145.0–210.0 was wider than 30% of avg 180.0; narrowed to ±15%."
+    "Range 134.8–363.4 was wider than 30% of avg 200.5; narrowed to ±15%."
   ]
 }

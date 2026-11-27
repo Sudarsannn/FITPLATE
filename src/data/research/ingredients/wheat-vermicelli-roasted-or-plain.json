@@ -1,0 +1,94 @@
+{
+  "id": "wheat-vermicelli-roasted-or-plain",
+  "name": "Wheat vermicelli, roasted or plain",
+  "aliases": [
+    "semiya",
+    "seviyan"
+  ],
+  "category": "Grain",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-11-27",
+        "min": 95,
+        "max": 210,
+        "avg": 135,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-27.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 115,
+      "max": 155,
+      "avg": 135
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-11-27",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 6,
+    "platforms": [
+      "BigBasket"
+    ],
+    "outOfStock": false,
+    "confirmed": false,
+    "checkNotes": [
+      "only 1 platform (BigBasket) backs the range"
+    ]
+  },
+  "per100Estimate": {
+    "min": 11.5,
+    "max": 15.5,
+    "avg": 13.5
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 371,
+    "proteinG": null,
+    "carbsG": null,
+    "fatG": null,
+    "fibreG": null
+  },
+  "storage": "Airtight jar in a cool, dry cupboard; use within about 2 months of opening, longer if kept dry. In the humid monsoon, keep sealed to prevent insects.",
+  "looksLike": "Very thin, short strands, golden-brown when roasted and pale cream when plain. Sold in a pouch, usually 150 g to 450 g.",
+  "howToPick": "Strands should be uniform, dry and brittle, with a toasted smell if roasted. Avoid damp, sticky or musty packs, or a pack with many crushed fragments. Check the label for egg.",
+  "shelfLife": "About 6 to 12 months unopened (check the printed date).",
+  "substitutes": [
+    "Rice vermicelli (rice sevai)",
+    "Whole-wheat vermicelli",
+    "Broken spaghetti or thin noodles"
+  ],
+  "vendorListings": [],
+  "usedIn": [
+    {
+      "dishNumber": 76,
+      "quantity": 50,
+      "unit": "g",
+      "raw": "50 g dry wheat vermicelli per serving (about ½ cup of broken pieces)"
+    }
+  ],
+  "versions": [
+    {
+      "date": "2026-11-27",
+      "file": "FitPlate_Ingredients_2026-11-27.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "vendorListings": "newest sighting per vendor+product+pack",
+    "storage": "newest",
+    "looksLike": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 95.0–210.0 was wider than 30% of avg 135.0; narrowed to ±15%."
+  ]
+}

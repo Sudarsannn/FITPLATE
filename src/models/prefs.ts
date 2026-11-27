@@ -34,6 +34,8 @@ export type UserSettings = {
   doctorLimits?: DoctorLimits;
   /** Day 33: the person's workday window for reminders (hours, 24-hour clock). Defaults to 9 to 19. */
   reminderHours?: { start: number; end: number };
+  /** A hot or humid day the person marked on the Water screen. Only counts on that date (hydration Topic 31). */
+  heatDay?: { date: string; band: 'warm' | 'hot' | 'very' };
 };
 
 export type DoctorLimits = { waterMl?: number | null; sodiumMg?: number | null };

@@ -5,7 +5,7 @@
     "rava",
     "sooji"
   ],
-  "category": "Grain (milled wheat)",
+  "category": "Grain",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -16,6 +16,14 @@
         "avg": 75,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-11-03.md"
+      },
+      {
+        "date": "2026-11-27",
+        "min": 49,
+        "max": 116,
+        "avg": 75,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-27.md"
       }
     ],
     "currentEstimate": {
@@ -23,16 +31,16 @@
       "max": 86,
       "avg": 75
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-11-03",
+    "lastObserved": "2026-11-27",
     "stale": false,
     "seasonal": false,
-    "listingCount": 4,
+    "listingCount": 5,
     "platforms": [
       "BigBasket",
-      "Flipkart"
+      "Zepto"
     ],
     "outOfStock": false,
     "confirmed": true,
@@ -228,7 +236,7 @@
     }
   },
   "macrosPer100Estimate": null,
-  "storage": "Airtight jar in a cool dry place; roasted rava keeps about a month (FitPlate dish 6 note). Refrigerate in monsoon to avoid weevils.",
+  "storage": "Airtight jar in a cool dry place; roasted rava keeps about a month. Refrigerate in monsoon to avoid weevils.",
   "looksLike": "Cream-coloured, sandy granules, coarser than flour but finer than dalia.",
   "howToPick": "Even, dry, creamy-white grains with a clean smell; avoid musty smell, lumps, insects or a yellowish tinge.",
   "shelfLife": "About 4 to 6 months in a sealed pack (general guidance; not from a source in this run).",
@@ -237,23 +245,42 @@
     "Dalia (broken wheat) or millet rava",
     "Fine poha"
   ],
-  "vendorListings": [],
+  "vendorListings": [
+    {
+      "vendor": "zepto",
+      "product": "Popular Essentials Upma Sooji",
+      "pack": "1 kg",
+      "priceMinInr": 80,
+      "priceMaxInr": 80,
+      "observedOn": "2026-11-27"
+    }
+  ],
   "usedIn": [
     {
-      "dishNumber": 6,
-      "quantity": 50,
+      "dishNumber": 71,
+      "quantity": 15,
       "unit": "g",
-      "raw": "50 g dry rava per serving (about ⅓ cup)"
+      "raw": "15 g per serving (fine rava, 1½ tbsp)"
+    },
+    {
+      "dishNumber": 73,
+      "quantity": 20,
+      "unit": "g",
+      "raw": "20 g per serving (fine or medium semolina that sticks to the fish; 30 g put on the plate)"
     }
   ],
   "versions": [
     {
       "date": "2026-11-03",
       "file": "FitPlate_Ingredients_2026-11-03.md"
+    },
+    {
+      "date": "2026-11-27",
+      "file": "FitPlate_Ingredients_2026-11-27.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (wma)",
     "macrosPer100Estimate": "stable (none)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",

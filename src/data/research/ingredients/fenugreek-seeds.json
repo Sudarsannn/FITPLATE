@@ -23,33 +23,40 @@
         "avg": 220,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-11-01.md"
+      },
+      {
+        "date": "2026-11-27",
+        "min": 105,
+        "max": 395,
+        "avg": 235,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-27.md"
       }
     ],
     "currentEstimate": {
-      "min": 170,
-      "max": 230,
-      "avg": 200
+      "min": 200,
+      "max": 270,
+      "avg": 235
     },
-    "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-11-01",
+    "method": "latest-trend",
+    "trend": "rising",
+    "change30dPct": 17.8,
+    "lastObserved": "2026-11-27",
     "stale": false,
     "seasonal": false,
-    "listingCount": 7,
+    "listingCount": 9,
     "platforms": [
-      "BigBasket"
+      "BigBasket",
+      "Flipkart"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 1 platform (BigBasket) backs the range"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 17,
-    "max": 23,
-    "avg": 20
+    "min": 20,
+    "max": 27,
+    "avg": 23.5
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -238,9 +245,9 @@
   "macrosPer100Estimate": {
     "kcal": 323,
     "proteinG": 23,
-    "carbsG": 58.2,
+    "carbsG": 58.4,
     "fatG": 6.4,
-    "fibreG": 24.8
+    "fibreG": 24.6
   },
   "storage": "Airtight jar, cool dark cupboard, away from damp, for up to about a year.",
   "looksLike": "Small, hard, angular seeds, mustard-yellow to amber, about 3 mm; bitter when raw.",
@@ -255,10 +262,16 @@
   "vendorListings": [],
   "usedIn": [
     {
-      "dishNumber": 4,
-      "quantity": 1,
+      "dishNumber": 72,
+      "quantity": 0.3,
       "unit": "g",
-      "raw": "1 g per serving (a pinch, about ⅕ tsp, soaked with the urad dal)"
+      "raw": "0.3 g per serving (8 to 10 seeds in the tadka)"
+    },
+    {
+      "dishNumber": 74,
+      "quantity": 0.3,
+      "unit": "g",
+      "raw": "0.3 g per serving (a pinch, 6 to 8 seeds)"
     }
   ],
   "versions": [
@@ -269,11 +282,15 @@
     {
       "date": "2026-11-01",
       "file": "FitPlate_Ingredients_2026-11-01.md"
+    },
+    {
+      "date": "2026-11-27",
+      "file": "FitPlate_Ingredients_2026-11-27.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "price": "price engine (latest-trend)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -284,6 +301,6 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 90.0–281.1 was wider than 30% of avg 201.1; narrowed to ±15%."
+    "Range 105.0–395.0 was wider than 30% of avg 235.0; narrowed to ±15%."
   ]
 }

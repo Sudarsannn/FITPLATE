@@ -359,28 +359,37 @@
           "avg": 335,
           "confidence": null,
           "sourceFile": "FitPlate_Dishes_2026-10-21.md"
+        },
+        {
+          "date": "2026-11-27",
+          "min": 200,
+          "max": 450,
+          "avg": 304,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-11-27.md"
         }
       ],
       "currentEstimate": {
-        "min": 280,
-        "max": 390,
-        "avg": 330
+        "min": 270,
+        "max": 360,
+        "avg": 310
       },
-      "method": "single",
+      "method": "wma",
       "trend": "unknown",
       "change30dPct": null,
-      "lastObserved": "2026-10-21",
+      "lastObserved": "2026-11-27",
       "stale": false,
       "seasonal": false,
-      "listingCount": 2,
+      "listingCount": 16,
       "platforms": [
-        "Swiggy"
+        "magicpin",
+        "Swiggy",
+        "Zomato"
       ],
-      "outOfStock": false,
+      "outOfStock": true,
       "confirmed": false,
       "checkNotes": [
-        "only 2 listings back the range (need 3)",
-        "only 1 platform (Swiggy) backs the range"
+        "a listing used for the range is marked out of stock, closed or not taking orders"
       ]
     },
     "nutrition": {
@@ -405,7 +414,7 @@
         "source": null
       }
     },
-    "restaurantsSampled": 3,
+    "restaurantsSampled": null,
     "platforms": [
       "Swiggy",
       "Zomato",
@@ -421,28 +430,37 @@
         "avg": 335,
         "confidence": null,
         "sourceFile": "FitPlate_Dishes_2026-10-21.md"
+      },
+      {
+        "date": "2026-11-27",
+        "min": 200,
+        "max": 450,
+        "avg": 304,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-11-27.md"
       }
     ],
     "currentEstimate": {
-      "min": 280,
-      "max": 390,
-      "avg": 330
+      "min": 270,
+      "max": 360,
+      "avg": 310
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-21",
+    "lastObserved": "2026-11-27",
     "stale": false,
     "seasonal": false,
-    "listingCount": 2,
+    "listingCount": 16,
     "platforms": [
-      "Swiggy"
+      "magicpin",
+      "Swiggy",
+      "Zomato"
     ],
-    "outOfStock": false,
+    "outOfStock": true,
     "confirmed": false,
     "checkNotes": [
-      "only 2 listings back the range (need 3)",
-      "only 1 platform (Swiggy) backs the range"
+      "a listing used for the range is marked out of stock, closed or not taking orders"
     ]
   },
   "healthiness": {
@@ -490,7 +508,13 @@
     "Swiggy, unnamed outlet (Paneer Bhurji with 2 butter pav ₹255; location not stated, not used): https://www.swiggy.com/menu/622792",
     "Swiggy, Best Paneer Bhurji Restaurants Near Me (city list only, no Mumbai prices): https://www.swiggy.com/paneer-bhurji-dish-restaurants-near-me",
     "magicpin, Princess Dock breakfast listing (New Shanti Bhuvan Hotel paneer bhurji review, no price): https://magicpin.in/india/Mumbai/Princess-Dock/Restaurant/Breakfast/?amp=1",
-    "Hyperpure, frozen Paneer Bhurji packs (context): https://www.hyperpure.com/in/paneer-bhurji-by-hyperpure-pack-of-1kg-frozen"
+    "Hyperpure, frozen Paneer Bhurji packs (context): https://www.hyperpure.com/in/paneer-bhurji-by-hyperpure-pack-of-1kg-frozen",
+    "Swiggy: Greens, Malad West (₹439 serves 2) https://www.swiggy.com/restaurants/greens-restaurant-linkway-estate-malad-west-mumbai-6379 ; Ruchi Veg, Goregaon East (₹290) https://swiggy.com/restaurants/ruchi-veg-restaurant-east-goregaon-mumbai-36633 ; Neo Welcome, Ghatkopar West (₹315) https://swiggy.com/city/mumbai/neo-welcome-restaurant-ghatkopar-west-rest6278 ; Radha Krishna, Andheri West (₹440) https://swiggy.com/restaurants/radha-krishna-near-station-andheri-west-mumbai-313634 ; Tulsi Vihar, Kandivali West (₹330) https://www.swiggy.com/city/mumbai/tulsi-vihar-kandivali-west-rest110123 ; Swadesh, Andheri West (₹330) https://www.swiggy.com/city/mumbai/swadesh-restaurant-7-bungalows-lokhandwala-rest50604",
+    "Swiggy, MMR (not used): Suruchi Bhog, Airoli (₹280) https://swiggy.com/city/mumbai/suruchi-bhog-airoli-rest37797 ; Navaratna, Vashi (₹434) https://www.swiggy.com/restaurants/navaratna-veg-restaurant-vashi-mumbai-286146 ; Swad Veg Treats, Panvel https://www.swiggy.com/city/mumbai/swad-veg-treats-1-rest48193 ; Surya Veg, Panvel https://swiggy.com/city/mumbai/surya-veg-restaurant-panvel-rest108744 ; The Ginger Kitchen, Kalyan https://www.swiggy.com/restaurants/the-ginger-kitchen-hanuman-nagar-kalyan-mumbai-699250 ; Temptation, Nerul https://www.swiggy.com/city/mumbai/temptation-nerul-rest110863",
+    "Zomato: Fujjis, Mahim (₹199) https://www.zomato.com/mumbai/fujjis-mahim/order ; The Malai Paneer Company, Churchgate (₹450) https://www.zomato.com/mumbai/the-malai-paneer-company-churchgate/order ; Biryani, Pizza And More, Mulund West (₹399) https://www.zomato.com/mumbai/biryani-pizza-and-more-mulund-west/order ; Shahi, Mira Road (₹380, MMR) https://www.zomato.com/mumbai/shahi-mira-road/order ; Chote Nawab, Chembur, Bhakti Family Hhub (no price) https://www.zomato.com/mumbai/chote-nawab-chembur/order",
+    "magicpin: Arasa (₹219) https://magicpin.in/Mumbai/Vijay-Nagar/Restaurant/Arasa/store/23274/delivery?itemId=16042223 ; Radhe Shyam (₹240) https://magicpin.in/Mumbai/Lower-Parel/Restaurant/Radhe-Shyam/store/250a1/delivery?itemId=466964 ; Shri Gurukrupa (₹230) https://magicpin.in/Mumbai/Ghatkopar-East/Restaurant/Shri-Gurukrupa-Veg-Restaurant/store/186c11/delivery ; Bharat Family Bar & Restaurant (₹273) https://magicpin.in/Mumbai/The-Mall/Restaurant/Bharat-Family-Bar-and-Restaurant/store/120c28/delivery ; Star Restaurant (₹280) https://magicpin.in/Mumbai/Vikhroli/Restaurant/Star-Restaurant/store/24932/delivery ; Bhagat Tarachand (₹300, Jain ₹320) https://magicpin.in/Mumbai/Ramwadi/Restaurant/Bhagat-Tarachand-Restaurant/store/18711a/delivery ; Tawaa Mystery (₹350) https://magicpin.in/Mumbai/Andheri-West/Restaurant/Tawaa-Mystery/store/1637673/delivery ; combos not used: Folk, Fable Powai, Bachelorr's, Pav Bhaji Factory (same domain)",
+    "Directory, context: Threebestrated, Navaratna Vashi (₹399) https://threebestrated.in/navaratna-veg-restaurant-pure-vegetarian-restuarants-navi-mumbai-mh-R4UtQ",
+    "Previous version only (not re-found, dated 2026-10-21): Swiggy, Pet Pooja Point (₹280) https://www.swiggy.com/city/mumbai/pet-pooja-point-bhoiwada-rest133442"
   ],
   "allergens": [
     "peanut",
@@ -602,18 +626,21 @@
   ],
   "needsReview": [
     "Jain \"with-changes\" but the recipe keeps onion, garlic, fresh ginger and the line doesn't say to skip them",
-    "price not confirmed (2026-10-21): only 2 listings back the range (need 3)",
-    "price not confirmed (2026-10-21): only 1 platform (Swiggy) backs the range"
+    "price not confirmed (2026-11-27): a listing used for the range is marked out of stock, closed or not taking orders"
   ],
   "versions": [
     {
       "date": "2026-10-21",
       "file": "FitPlate_Dishes_2026-10-21.md"
+    },
+    {
+      "date": "2026-11-27",
+      "file": "FitPlate_Dishes_2026-11-27.md"
     }
   ],
   "mergeMethod": {
-    "nutritionPerServing": "stable (single)",
-    "orderPrice": "price engine (single)",
+    "nutritionPerServing": "stable (mean-2)",
+    "orderPrice": "price engine (wma)",
     "ingredients": "newest",
     "steps": "newest",
     "healthiness": "newest",
@@ -623,7 +650,8 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 280.0–390.0 was wider than 30% of avg 335.0; narrowed to ±15%.",
-    "2026-10-21: research declares peanut not detected from ingredient names; added"
+    "Range 223.9–432.1 was wider than 30% of avg 313.3; narrowed to ±15%.",
+    "2026-10-21: research declares peanut not detected from ingredient names; added",
+    "2026-11-27: research declares peanut not detected from ingredient names; added"
   ]
 }

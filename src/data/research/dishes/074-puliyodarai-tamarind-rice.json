@@ -449,29 +449,35 @@
           "avg": 120,
           "confidence": null,
           "sourceFile": "FitPlate_Dishes_2026-10-22.md"
+        },
+        {
+          "date": "2026-11-27",
+          "min": 80,
+          "max": 245,
+          "avg": 180,
+          "confidence": null,
+          "sourceFile": "FitPlate_Dishes_2026-11-27.md"
         }
       ],
       "currentEstimate": {
-        "min": 100,
-        "max": 140,
-        "avg": 120
+        "min": 130,
+        "max": 170,
+        "avg": 150
       },
-      "method": "single",
+      "method": "spike-blend",
       "trend": "unknown",
       "change30dPct": null,
-      "lastObserved": "2026-10-22",
+      "lastObserved": "2026-11-27",
       "stale": false,
       "seasonal": false,
-      "listingCount": 2,
+      "listingCount": 4,
       "platforms": [
-        "magicpin"
+        "magicpin",
+        "Swiggy"
       ],
       "outOfStock": false,
-      "confirmed": false,
-      "checkNotes": [
-        "only 2 listings back the range (need 3)",
-        "only 1 platform (magicpin) backs the range"
-      ]
+      "confirmed": true,
+      "checkNotes": []
     },
     "nutrition": {
       "calories": {
@@ -511,29 +517,35 @@
         "avg": 120,
         "confidence": null,
         "sourceFile": "FitPlate_Dishes_2026-10-22.md"
+      },
+      {
+        "date": "2026-11-27",
+        "min": 80,
+        "max": 245,
+        "avg": 180,
+        "confidence": null,
+        "sourceFile": "FitPlate_Dishes_2026-11-27.md"
       }
     ],
     "currentEstimate": {
-      "min": 100,
-      "max": 140,
-      "avg": 120
+      "min": 130,
+      "max": 170,
+      "avg": 150
     },
-    "method": "single",
+    "method": "spike-blend",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-22",
+    "lastObserved": "2026-11-27",
     "stale": false,
     "seasonal": false,
-    "listingCount": 2,
+    "listingCount": 4,
     "platforms": [
-      "magicpin"
+      "magicpin",
+      "Swiggy"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 2 listings back the range (need 3)",
-      "only 1 platform (magicpin) backs the range"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "healthiness": {
     "score": 6,
@@ -588,7 +600,13 @@
     "Zomato, Puliyogare Palace, Vijayawada (context): https://www.zomato.com/te/vijayawada/puliyogare-palace-shri-ramachandra-nagar/order",
     "magicpin, Puliyogare Point, Basavanagudi, Bangalore (context): https://magicpin.in/Bangalore/Basavanagudi/Restaurant/Puliyogare-Point/store/57aa/menu/",
     "Swiggy, Sri Madhuram Hot Spot, Tirunelveli (context): https://www.swiggy.com/city/tirunelveli/sri-madhuram-hot-spot-thiyagarajanagar-sivanthipatti-main-road-thiyagarajanagar-rest117220",
-    "Swiggy, Rice Express by Shero, Hyderabad (context): https://www.swiggy.com/city/hyderabad/rice-express-by-shero-nizampet-pragathi-nagar-rest516607"
+    "Swiggy, Rice Express by Shero, Hyderabad (context): https://www.swiggy.com/city/hyderabad/rice-express-by-shero-nizampet-pragathi-nagar-rest516607",
+    "Swiggy, Madras Curd Rice Company, Naya Bazar, Kalyan (MMR; Tamarind Rice ₹239; new 27 Nov 2026): https://swiggy.com/city/mumbai/madras-curd-rice-company-naya-bazar-kalyan-rest1009824",
+    "Swiggy, Dakshinadi Village, Vashi (MMR; Pulihora ₹245; new 27 Nov 2026): https://www.swiggy.com/city/mumbai/dakshinadi-village-vashi-rest1287366",
+    "Swiggy, Udupi Xpress, Kharghar (Puliyogare Sevai ₹145; different dish, not used; 27 Nov 2026): https://www.swiggy.com/city/mumbai/udupi-xpress-kharghar-rest1169778",
+    "Swiggy, The Tanjore Tiffin Room, Versova / Khar West (no tamarind rice price seen; not used): https://www.swiggy.com/city/mumbai/the-tanjore-tiffin-room-versova-rest383532",
+    "Outlook India, Platefuls of Thanjavur (\"My Puliyogare Rice\" Rs 180, restaurant not named in the snippet; not used): https://www.outlookindia.com/society/platefuls-of-thanjavur-news-293515",
+    "magicpin, Madras Curd Rice Company, Khar (curd rice items only, no tamarind rice price): https://magicpin.in/Mumbai/Khar/Restaurant/Madras-Curd-Rice-Company/store/17539c2/delivery"
   ],
   "allergens": [
     "peanut",
@@ -688,19 +706,20 @@
       "reason": null
     }
   ],
-  "needsReview": [
-    "price not confirmed (2026-10-22): only 2 listings back the range (need 3)",
-    "price not confirmed (2026-10-22): only 1 platform (magicpin) backs the range"
-  ],
+  "needsReview": [],
   "versions": [
     {
       "date": "2026-10-22",
       "file": "FitPlate_Dishes_2026-10-22.md"
+    },
+    {
+      "date": "2026-11-27",
+      "file": "FitPlate_Dishes_2026-11-27.md"
     }
   ],
   "mergeMethod": {
-    "nutritionPerServing": "stable (single)",
-    "orderPrice": "price engine (single)",
+    "nutritionPerServing": "stable (mean-2)",
+    "orderPrice": "price engine (spike-blend)",
     "ingredients": "newest",
     "steps": "newest",
     "healthiness": "newest",
@@ -709,8 +728,11 @@
     "tags": "tag engine (tags.ts) on the merged dish"
   },
   "mergeNotes": [
+    "price flag: possible-spike",
     "price flag: narrowed",
-    "Range 80.0–155.0 was wider than 30% of avg 120.0; narrowed to ±15%.",
-    "2026-10-22: hing: compounded hing usually contains wheat flour"
+    "Possible spike: latest avg 180 (2026-11-27) moved more than 35% from the previous estimate; using the halfway point.",
+    "Range 80.0–200.0 was wider than 30% of avg 150.0; narrowed to ±15%.",
+    "2026-10-22: hing: compounded hing usually contains wheat flour",
+    "2026-11-27: hing: compounded hing usually contains wheat flour"
   ]
 }

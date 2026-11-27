@@ -4,7 +4,7 @@
   "aliases": [
     "amchur"
   ],
-  "category": "Spice (powder)",
+  "category": "Spice",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -23,23 +23,30 @@
         "avg": 760,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-11-03.md"
+      },
+      {
+        "date": "2026-11-27",
+        "min": 540,
+        "max": 960,
+        "avg": 700,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-27.md"
       }
     ],
     "currentEstimate": {
-      "min": 680,
-      "max": 920,
-      "avg": 800
+      "min": 595,
+      "max": 805,
+      "avg": 700
     },
-    "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-11-03",
+    "method": "latest-trend",
+    "trend": "falling",
+    "change30dPct": -13.4,
+    "lastObserved": "2026-11-27",
     "stale": false,
     "seasonal": false,
-    "listingCount": 7,
+    "listingCount": 5,
     "platforms": [
       "BigBasket",
-      "Flipkart",
       "Zepto"
     ],
     "outOfStock": false,
@@ -47,9 +54,9 @@
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 68,
-    "max": 92,
-    "avg": 80
+    "min": 59.5,
+    "max": 80.5,
+    "avg": 70
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -236,9 +243,9 @@
     }
   },
   "macrosPer100Estimate": {
-    "kcal": 335,
+    "kcal": 340,
     "proteinG": 2,
-    "carbsG": 82.5,
+    "carbsG": 90,
     "fatG": 1,
     "fibreG": 7
   },
@@ -261,15 +268,15 @@
       "pack": "50 g",
       "priceMinInr": 41,
       "priceMaxInr": 41,
-      "observedOn": "2026-11-03"
+      "observedOn": "2026-11-27"
     }
   ],
   "usedIn": [
     {
-      "dishNumber": 8,
+      "dishNumber": 81,
       "quantity": 0.5,
       "unit": "g",
-      "raw": "0.5 g per serving (¼ tsp; optional, only if the chole masala is not tangy)"
+      "raw": "0.5 g per serving (¼ tsp in the filling)"
     }
   ],
   "versions": [
@@ -280,11 +287,15 @@
     {
       "date": "2026-11-03",
       "file": "FitPlate_Ingredients_2026-11-03.md"
+    },
+    {
+      "date": "2026-11-27",
+      "file": "FitPlate_Ingredients_2026-11-27.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "price": "price engine (latest-trend)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -295,7 +306,7 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 624.6–960.0 was wider than 30% of avg 798.9; narrowed to ±15%.",
-    "macrosPer100Estimate.fibreG: Versions 2026-10-05 (10) and 2026-11-03 (7) differ by more than 25%; kept the newer."
+    "Range 540.0–960.0 was wider than 30% of avg 700.0; narrowed to ±15%.",
+    "macrosPer100Estimate.fibreG: Excluded outlier 10 from 2026-10-05: more than 25% from the other versions."
   ]
 }

@@ -4,21 +4,29 @@ import { ScrollView, StyleSheet, Switch, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { Notice, ScreenTop } from '../components/vendors/kit';
-import { FadeIn, Glass, PressableScale } from '../components/ui';
+import { Chip, FadeIn, Glass, PressableScale } from '../components/ui';
 import { featureFlags } from '../config/featureFlags';
 import { select } from '../lib/haptics';
 import { useReminders } from '../lib/useReminders';
 import { addDays, dayKey, useStore } from '../lib/store';
 import { DOCTOR_LINE } from '../services/healthLimits';
 import { useTargets } from '../lib/useTargets';
+import type { HeatBand } from '../services/targets';
 import { glassesToMl, litres, PRESETS, waterHistory, waterStreak } from '../services/water';
 import { colors, radius, type } from '../theme';
+
+const HEAT_CHOICES: { key: HeatBand | null; label: string }[] = [
+  { key: null, label: 'Normal day' },
+  { key: 'warm', label: 'Warm and humid' },
+  { key: 'hot', label: 'Hot and humid' },
+  { key: 'very', label: 'Very hot' },
+];
 
 const dayLetter = (key: string) => ['S', 'M', 'T', 'W', 'T', 'F', 'S'][new Date(`${key}T00:00:00`).getDay()];
 
 /** Day 17: the full water screen: today's progress, one-tap presets, the last 7 days, the streak, and workday reminders (flag `waterTracker`). */
 export default function WaterScreen() {
-  const { days, today, addWater, settings } = useStore();
+  const { days, today, addWater, settings, updateSettings } = useStore();
   const reminders = useReminders();
   const [now] = useState(() => new Date());
   const { health, water, waterInfo } = useTargets();
@@ -29,6 +37,7 @@ export default function WaterScreen() {
   const week = useMemo(() => waterHistory(days, keysNewestFirst.slice(0, 7).reverse(), target), [days, keysNewestFirst, target]);
   const streak = useMemo(() => waterStreak(days, keysNewestFirst, target), [days, keysNewestFirst, target]);
   const pct = Math.min(1, today.water / target);
+  const heatToday = settings.heatDay?.date === dayKey(now) ? settings.heatDay.band : null;
   const remindersOn = Boolean(settings.featureToggles.waterReminders);
   const [note, setNote] = useState<string | null>(null);
 
@@ -82,6 +91,28 @@ export default function WaterScreen() {
             <Text style={[type.small, { color: colors.faint, marginTop: 8 }]}>One glass is about 250 ml. {info.note}</Text>
           </Glass>
         </FadeIn>
+
+        {caution || water.source === 'doctor' || !info.heatOk ? null : (
+          <FadeIn i={1}>
+            <Glass style={{ marginTop: 14 }}>
+              <Text style={{ color: colors.text, fontWeight: '800' }}>Hot or humid today?</Text>
+              <Text style={[type.small, { color: colors.muted }]}>Adds extra water to today only: 300, 500 or 750 ml. These are FitPlate estimates. Stop and rest if you feel dizzy or confused.</Text>
+              <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginTop: 10 }}>
+                {HEAT_CHOICES.map((c) => (
+                  <Chip
+                    key={c.key ?? 'none'}
+                    label={c.label}
+                    active={(heatToday ?? null) === c.key}
+                    onPress={() => {
+                      select();
+                      updateSettings({ heatDay: c.key ? { date: dayKey(now), band: c.key } : undefined });
+                    }}
+                  />
+                ))}
+              </View>
+            </Glass>
+          </FadeIn>
+        )}
 
         {caution ? null : (
         <FadeIn i={1}>

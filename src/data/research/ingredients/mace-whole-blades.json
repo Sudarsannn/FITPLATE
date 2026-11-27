@@ -15,34 +15,43 @@
         "avg": 3900,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      },
+      {
+        "date": "2026-11-27",
+        "min": 3840,
+        "max": 6800,
+        "avg": 5245,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-27.md"
       }
     ],
     "currentEstimate": {
-      "min": 3315,
-      "max": 4485,
-      "avg": 3900
+      "min": 4240,
+      "max": 5740,
+      "avg": 4990
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-25",
+    "lastObserved": "2026-11-27",
     "stale": false,
     "seasonal": false,
-    "listingCount": 2,
+    "listingCount": 7,
     "platforms": [
+      "Amazon",
       "BigBasket",
-      "Flipkart"
+      "Rajlakshmi Smart Shop",
+      "Swadesiway",
+      "Zepto"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 2 listings back the range (need 3)"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 331.5,
-    "max": 448.5,
-    "avg": 390
+    "min": 424,
+    "max": 574,
+    "avg": 499
   },
   "seasonal": false,
   "nutritionPer100g": null,
@@ -62,24 +71,38 @@
     "Garam masala or biryani masala",
     "Omit"
   ],
-  "vendorListings": [],
-  "usedIn": [
+  "vendorListings": [
     {
-      "dishNumber": 101,
-      "quantity": null,
-      "unit": null,
-      "raw": "1 small blade (about 0.2 g) per serving"
+      "vendor": "zepto",
+      "product": "Popular Essentials Mace/Javitri",
+      "pack": "20 g",
+      "priceMinInr": 104,
+      "priceMaxInr": 104,
+      "observedOn": "2026-11-27"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Daily Good Javitri/Mace",
+      "pack": "50 g",
+      "priceMinInr": 192,
+      "priceMaxInr": 192,
+      "observedOn": "2026-11-27"
     }
   ],
+  "usedIn": [],
   "versions": [
     {
       "date": "2026-10-25",
       "file": "FitPlate_Ingredients_2026-10-25.md"
+    },
+    {
+      "date": "2026-11-27",
+      "file": "FitPlate_Ingredients_2026-11-27.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
     "aliases": "union",
     "substitutes": "union",
     "vendorListings": "newest sighting per vendor+product+pack",
@@ -89,6 +112,6 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 3220.0–4575.0 was wider than 30% of avg 3900.0; narrowed to ±15%."
+    "Range 3722.7–6379.2 was wider than 30% of avg 4990.6; narrowed to ±15%."
   ]
 }

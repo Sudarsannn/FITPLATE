@@ -23,17 +23,25 @@
         "avg": 58,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-10-31.md"
+      },
+      {
+        "date": "2026-11-27",
+        "min": 54,
+        "max": 60,
+        "avg": 57,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-27.md"
       }
     ],
     "currentEstimate": {
-      "min": 56,
+      "min": 55,
       "max": 60,
-      "avg": 58
+      "avg": 57
     },
     "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-31",
+    "trend": "stable",
+    "change30dPct": -1,
+    "lastObserved": "2026-11-27",
     "stale": false,
     "seasonal": false,
     "listingCount": 5,
@@ -47,9 +55,9 @@
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 5.6,
+    "min": 5.5,
     "max": 6,
-    "avg": 5.8
+    "avg": 5.7
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -236,9 +244,9 @@
     }
   },
   "macrosPer100Estimate": {
-    "kcal": 58.1,
-    "proteinG": 3.1,
-    "carbsG": 4.7,
+    "kcal": 58.2,
+    "proteinG": 3,
+    "carbsG": 4.8,
     "fatG": 3,
     "fibreG": 0
   },
@@ -261,7 +269,15 @@
       "pack": "500 ml pouch",
       "priceMinInr": 28,
       "priceMaxInr": 28,
-      "observedOn": "2026-10-31"
+      "observedOn": "2026-11-27"
+    },
+    {
+      "vendor": "instamart",
+      "product": "Amul Taaza toned milk",
+      "pack": "500 ml pouch",
+      "priceMinInr": 30,
+      "priceMaxInr": 30,
+      "observedOn": "2026-11-27"
     },
     {
       "vendor": "zepto",
@@ -269,15 +285,21 @@
       "pack": "500 ml pouch",
       "priceMinInr": 28,
       "priceMaxInr": 28,
-      "observedOn": "2026-10-31"
+      "observedOn": "2026-11-27"
     }
   ],
   "usedIn": [
     {
-      "dishNumber": 100,
-      "quantity": 200,
+      "dishNumber": 69,
+      "quantity": 15,
       "unit": "ml",
-      "raw": "200 ml per serving (chilled toned milk). Dishes 96 Gajar Halwa, 98 Mango Lassi and 99 Masala Chai use full-fat milk, which is not this ingredient and is not counted here."
+      "raw": "15 ml per serving (1 tbsp, toned milk)"
+    },
+    {
+      "dishNumber": 78,
+      "quantity": 50,
+      "unit": "ml",
+      "raw": "50 ml per serving (the dish names plain full-fat milk; toned milk is the closest priced item, so cost is indicative)"
     }
   ],
   "versions": [
@@ -288,11 +310,15 @@
     {
       "date": "2026-10-31",
       "file": "FitPlate_Ingredients_2026-10-31.md"
+    },
+    {
+      "date": "2026-11-27",
+      "file": "FitPlate_Ingredients_2026-11-27.md"
     }
   ],
   "mergeMethod": {
     "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",

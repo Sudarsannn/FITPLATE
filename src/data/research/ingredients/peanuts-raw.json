@@ -5,7 +5,7 @@
     "moongphali",
     "shengdana"
   ],
-  "category": "Nut / oilseed",
+  "category": "Nut/seed",
   "standardUnit": "kg",
   "price": {
     "priceHistory": [
@@ -24,24 +24,32 @@
         "avg": 210,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-11-01.md"
+      },
+      {
+        "date": "2026-11-27",
+        "min": 180,
+        "max": 230,
+        "avg": 205,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-27.md"
       }
     ],
     "currentEstimate": {
       "min": 175,
-      "max": 240,
+      "max": 235,
       "avg": 205
     },
     "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-11-01",
+    "trend": "stable",
+    "change30dPct": 1.4,
+    "lastObserved": "2026-11-27",
     "stale": false,
     "seasonal": false,
-    "listingCount": 9,
+    "listingCount": 6,
     "platforms": [
-      "Amazon",
       "BigBasket",
-      "Flipkart"
+      "Flipkart",
+      "Swiggy Instamart"
     ],
     "outOfStock": false,
     "confirmed": true,
@@ -49,7 +57,7 @@
   },
   "per100Estimate": {
     "min": 17.5,
-    "max": 24,
+    "max": 23.5,
     "avg": 20.5
   },
   "seasonal": false,
@@ -238,9 +246,9 @@
   },
   "macrosPer100Estimate": {
     "kcal": 567,
-    "proteinG": 25.9,
+    "proteinG": 25.8,
     "carbsG": 16.1,
-    "fatG": 49.1,
+    "fatG": 49.2,
     "fibreG": 8.5
   },
   "storage": "Airtight container in a cool, dry place for a few months; refrigerate in hot, humid Mumbai weather for longer life.",
@@ -255,10 +263,27 @@
     "Cashew pieces or chana dal (fried)",
     "Omit"
   ],
-  "vendorListings": [],
+  "vendorListings": [
+    {
+      "vendor": "instamart",
+      "product": "Supreme Harvest Groundnut",
+      "pack": "500 g",
+      "priceMinInr": 108,
+      "priceMaxInr": 108,
+      "observedOn": "2026-11-27"
+    },
+    {
+      "vendor": "instamart",
+      "product": "Supreme Harvest Groundnut , shown as \"34% OFF 215 330\"",
+      "pack": "1 kg",
+      "priceMinInr": 215,
+      "priceMaxInr": 215,
+      "observedOn": "2026-11-27"
+    }
+  ],
   "usedIn": [
     {
-      "dishNumber": 1,
+      "dishNumber": 74,
       "quantity": 10,
       "unit": "g",
       "raw": "10 g per serving (about 1 tbsp, raw, fried in the tempering)"
@@ -272,11 +297,15 @@
     {
       "date": "2026-11-01",
       "file": "FitPlate_Ingredients_2026-11-01.md"
+    },
+    {
+      "date": "2026-11-27",
+      "file": "FitPlate_Ingredients_2026-11-27.md"
     }
   ],
   "mergeMethod": {
     "price": "price engine (wma)",
-    "macrosPer100Estimate": "stable (mean-2)",
+    "macrosPer100Estimate": "stable (median-3)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -287,6 +316,6 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 166.9–262.5 was wider than 30% of avg 206.6; narrowed to ±15%."
+    "Range 174.0–244.8 was wider than 30% of avg 205.7; narrowed to ±15%."
   ]
 }

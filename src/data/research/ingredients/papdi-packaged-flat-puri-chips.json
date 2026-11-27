@@ -16,34 +16,41 @@
         "avg": 415,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      },
+      {
+        "date": "2026-11-27",
+        "min": 620,
+        "max": 775,
+        "avg": 700,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-27.md"
       }
     ],
     "currentEstimate": {
-      "min": 395,
-      "max": 435,
-      "avg": 415
+      "min": 510,
+      "max": 605,
+      "avg": 560
     },
-    "method": "single",
+    "method": "spike-blend",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-25",
+    "lastObserved": "2026-11-27",
     "stale": false,
     "seasonal": false,
-    "listingCount": 2,
+    "listingCount": 4,
     "platforms": [
-      "BigBasket"
+      "Amazon"
     ],
     "outOfStock": false,
     "confirmed": false,
     "checkNotes": [
-      "only 2 listings back the range (need 3)",
-      "only 1 platform (BigBasket) backs the range"
+      "only 1 platform (Amazon) backs the range"
     ]
   },
   "per100Estimate": {
-    "min": 39.5,
-    "max": 43.5,
-    "avg": 41.5
+    "min": 51,
+    "max": 60.5,
+    "avg": 56
   },
   "seasonal": false,
   "nutritionPer100g": null,
@@ -56,31 +63,29 @@
   },
   "storage": "Keep in an airtight container at room temperature, away from damp; never store mixed with chutney or bhel.",
   "looksLike": "Small, flat, thin, crisp round wafers, golden-brown, about 3 to 4 cm across, sold in a pouch. They are broken over bhel, sev puri and dahi papdi chaat.",
-  "howToPick": "Look for a sealed pouch with a recent packing date, pale golden colour and pieces that are whole. Avoid pouches that smell stale or oily, or papdi that bends instead of snapping (dish 83 notes soft papdi can be crisped in a dry pan for 30 sec).",
+  "howToPick": "Look for a sealed pouch with a recent packing date, pale golden colour and pieces that are whole. Avoid pouches that smell stale or oily, or papdi that bends instead of snapping (soft papdi can be crisped in a dry pan for 30 sec).",
   "shelfLife": "A few months sealed per typical pack labels (general guidance; not taken from a source in this run); eat within 2 to 3 weeks of opening.",
   "substitutes": [
     "Crushed sev puri or plain flat puri",
     "Roasted peanuts or roasted gram (dish 83 gluten-free variant uses 5 g roasted peanuts)",
-    "Homemade papdi"
+    "Homemade papdi",
+    "Roasted peanuts or roasted gram"
   ],
   "vendorListings": [],
-  "usedIn": [
-    {
-      "dishNumber": 83,
-      "quantity": 10,
-      "unit": "g",
-      "raw": "10 g per serving (2 papdi); 0 g in the Low-oil variant and replaced by 5 g roasted peanuts in the Gluten-free variant"
-    }
-  ],
+  "usedIn": [],
   "versions": [
     {
       "date": "2026-10-25",
       "file": "FitPlate_Ingredients_2026-10-25.md"
+    },
+    {
+      "date": "2026-11-27",
+      "file": "FitPlate_Ingredients_2026-11-27.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (spike-blend)",
+    "macrosPer100Estimate": "stable (mean-2)",
     "aliases": "union",
     "substitutes": "union",
     "vendorListings": "newest sighting per vendor+product+pack",
@@ -88,5 +93,8 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: possible-spike",
+    "Possible spike: latest avg 700 (2026-11-27) moved more than 35% from the previous estimate; using the halfway point."
+  ]
 }

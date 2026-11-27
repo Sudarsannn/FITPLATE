@@ -16,33 +16,42 @@
         "avg": 1195,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-23.md"
+      },
+      {
+        "date": "2026-11-27",
+        "min": 1140,
+        "max": 1400,
+        "avg": 1265,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-27.md"
       }
     ],
     "currentEstimate": {
-      "min": 1015,
-      "max": 1375,
-      "avg": 1195
+      "min": 1055,
+      "max": 1430,
+      "avg": 1245
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-23",
+    "lastObserved": "2026-11-27",
     "stale": false,
     "seasonal": false,
-    "listingCount": 3,
+    "listingCount": 2,
     "platforms": [
-      "Amazon",
-      "Halalbox",
-      "Licious website"
+      "BigBasket"
     ],
     "outOfStock": false,
-    "confirmed": true,
-    "checkNotes": []
+    "confirmed": false,
+    "checkNotes": [
+      "only 2 listings back the range (need 3)",
+      "only 1 platform (BigBasket) backs the range"
+    ]
   },
   "per100Estimate": {
-    "min": 101.5,
-    "max": 137.5,
-    "avg": 119.5
+    "min": 105.5,
+    "max": 143,
+    "avg": 124.5
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -257,11 +266,15 @@
     {
       "date": "2026-10-23",
       "file": "FitPlate_Ingredients_2026-10-23.md"
+    },
+    {
+      "date": "2026-11-27",
+      "file": "FitPlate_Ingredients_2026-11-27.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -272,6 +285,6 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 815.0–1685.0 was wider than 30% of avg 1195.0; narrowed to ±15%."
+    "Range 1039.8–1487.8 was wider than 30% of avg 1243.4; narrowed to ±15%."
   ]
 }

@@ -16,33 +16,41 @@
         "avg": 260,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      },
+      {
+        "date": "2026-11-27",
+        "min": 160,
+        "max": 395,
+        "avg": 230,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-27.md"
       }
     ],
     "currentEstimate": {
-      "min": 220,
-      "max": 300,
-      "avg": 260
+      "min": 200,
+      "max": 270,
+      "avg": 235
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-25",
+    "lastObserved": "2026-11-27",
     "stale": false,
     "seasonal": false,
-    "listingCount": 6,
+    "listingCount": 8,
     "platforms": [
-      "BigBasket"
+      "BigBasket",
+      "Blinkit",
+      "Zepto"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 1 platform (BigBasket) backs the range"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 22,
-    "max": 30,
-    "avg": 26
+    "min": 20,
+    "max": 27,
+    "avg": 23.5
   },
   "seasonal": false,
   "nutritionPer100g": null,
@@ -62,24 +70,46 @@
     "Whole wheat or multigrain penne",
     "Gluten-free penne (rice, corn or chickpea)"
   ],
-  "vendorListings": [],
-  "usedIn": [
+  "vendorListings": [
     {
-      "dishNumber": 102,
-      "quantity": 75,
-      "unit": "g",
-      "raw": "75 g dry penne per serving (about ¾ cup)"
+      "vendor": "blinkit",
+      "product": "Disano Penne Pasta",
+      "pack": "500 g",
+      "priceMinInr": 81,
+      "priceMaxInr": 81,
+      "observedOn": "2026-11-27"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Chef's Basket Durum Wheat Semolina Penne",
+      "pack": "534 g",
+      "priceMinInr": 86,
+      "priceMaxInr": 86,
+      "observedOn": "2026-11-27"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Del Monte Penne Rigate Durum Wheat",
+      "pack": "500 g",
+      "priceMinInr": 150,
+      "priceMaxInr": 150,
+      "observedOn": "2026-11-27"
     }
   ],
+  "usedIn": [],
   "versions": [
     {
       "date": "2026-10-25",
       "file": "FitPlate_Ingredients_2026-10-25.md"
+    },
+    {
+      "date": "2026-11-27",
+      "file": "FitPlate_Ingredients_2026-11-27.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
     "aliases": "union",
     "substitutes": "union",
     "vendorListings": "newest sighting per vendor+product+pack",
@@ -89,6 +119,6 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 115.0–395.0 was wider than 30% of avg 260.0; narrowed to ±15%."
+    "Range 151.5–395.0 was wider than 30% of avg 235.7; narrowed to ±15%."
   ]
 }

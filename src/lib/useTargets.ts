@@ -5,7 +5,7 @@ import { waterTarget, energyTarget, GOAL_PRESETS, microTargets, type EnergyTarge
 import { researchConditions, researchHydration, researchNutrients } from '../data/research';
 import { healthContext, sodiumLimit, waterGlasses, type HealthContext } from '../services/healthLimits';
 import { GLASS_ML } from '../services/water';
-import { GOALS, useStore } from './store';
+import { dayKey, GOALS, useStore } from './store';
 
 /** The signed-in user's targets (Day 16, flag `personalTargets`). With the flag off, or details missing, the goal presets. */
 export function useTargets(): { goal: (typeof GOALS)[keyof typeof GOALS]; energy: EnergyTarget; micros: MicroTarget[]; health: HealthContext; sodium: ReturnType<typeof sodiumLimit>; water: ReturnType<typeof waterGlasses>; waterInfo: ReturnType<typeof waterTarget> } {
@@ -15,12 +15,14 @@ export function useTargets(): { goal: (typeof GOALS)[keyof typeof GOALS]; energy
     const energy = featureFlags.personalTargets ? energyTarget(p) : { ...GOAL_PRESETS[profile.goal], source: 'preset' as const, note: null, bmr: null };
     const health = healthContext(profile.survey, researchConditions);
     const doctor = settings.doctorLimits;
-    const waterInfo = waterTarget(p, researchHydration.find((h) => h.id === 'water-daily-requirement') ?? researchHydration[0] ?? null);
+    // A hot day only counts on its own date, and never for people whose doctor sets their water.
+    const heat = !health.waterCaution && settings.heatDay?.date === dayKey(new Date()) ? settings.heatDay.band : null;
+    const waterInfo = waterTarget({ ...p, age: body.age }, researchHydration.find((h) => h.id === 'water-daily-requirement') ?? researchHydration[0] ?? null, heat);
     return {
       health,
       sodium: sodiumLimit(health, doctor),
       water: waterGlasses(waterInfo.glasses, GLASS_ML, doctor),
       waterInfo,
       goal: { ...GOALS[profile.goal], kcal: energy.kcal, protein: energy.protein }, energy, micros: featureFlags.personalTargets ? microTargets(p, researchNutrients) : [] };
-  }, [profile.goal, profile.survey, body, sex, privateFlags, settings.doctorLimits]);
+  }, [profile.goal, profile.survey, body, sex, privateFlags, settings.doctorLimits, settings.heatDay]);
 }

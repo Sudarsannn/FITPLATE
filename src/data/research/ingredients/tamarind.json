@@ -15,22 +15,30 @@
         "avg": 290,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-11-03.md"
+      },
+      {
+        "date": "2026-11-27",
+        "min": 235,
+        "max": 415,
+        "avg": 305,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-27.md"
       }
     ],
     "currentEstimate": {
-      "min": 245,
-      "max": 335,
-      "avg": 290
+      "min": 255,
+      "max": 345,
+      "avg": 300
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-11-03",
+    "lastObserved": "2026-11-27",
     "stale": false,
     "seasonal": false,
-    "listingCount": 11,
+    "listingCount": 10,
     "platforms": [
-      "Amazon",
+      "1mg",
       "BigBasket"
     ],
     "outOfStock": false,
@@ -38,9 +46,9 @@
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 24.5,
-    "max": 33.5,
-    "avg": 29
+    "min": 25.5,
+    "max": 34.5,
+    "avg": 30
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -239,20 +247,24 @@
   "vendorListings": [],
   "usedIn": [
     {
-      "dishNumber": 9,
-      "quantity": 3,
+      "dishNumber": 74,
+      "quantity": 10,
       "unit": "g",
-      "raw": "3 g per serving (a small marble-sized piece, about ½ tsp packed)"
+      "raw": "10 g per serving (seedless block, soaked in 100 ml hot water)"
     }
   ],
   "versions": [
     {
       "date": "2026-11-03",
       "file": "FitPlate_Ingredients_2026-11-03.md"
+    },
+    {
+      "date": "2026-11-27",
+      "file": "FitPlate_Ingredients_2026-11-27.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (wma)",
     "macrosPer100Estimate": "stable (none)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
@@ -264,6 +276,6 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 235.0–395.0 was wider than 30% of avg 290.0; narrowed to ±15%."
+    "Range 235.0–407.7 was wider than 30% of avg 299.5; narrowed to ±15%."
   ]
 }

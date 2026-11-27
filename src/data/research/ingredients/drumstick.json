@@ -25,33 +25,41 @@
         "avg": 90,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-29.md"
+      },
+      {
+        "date": "2026-11-27",
+        "min": 65,
+        "max": 215,
+        "avg": 170,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-27.md"
       }
     ],
     "currentEstimate": {
-      "min": 80,
-      "max": 108,
-      "avg": 94
+      "min": 110,
+      "max": 150,
+      "avg": 130
     },
-    "method": "wma",
-    "trend": "unknown",
-    "change30dPct": null,
-    "lastObserved": "2026-10-29",
+    "method": "spike-blend",
+    "trend": "stable",
+    "change30dPct": 30.2,
+    "lastObserved": "2026-11-27",
     "stale": false,
     "seasonal": false,
-    "listingCount": 4,
+    "listingCount": 10,
     "platforms": [
-      "BigBasket"
+      "BigBasket",
+      "ekrushak.com",
+      "Pure Green Veggies"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 1 platform (BigBasket) backs the range"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 8,
-    "max": 10.8,
-    "avg": 9.4
+    "min": 11,
+    "max": 15,
+    "avg": 13
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -256,14 +264,7 @@
     "Raw mango strips or green beans"
   ],
   "vendorListings": [],
-  "usedIn": [
-    {
-      "dishNumber": 88,
-      "quantity": 25,
-      "unit": "g",
-      "raw": "25 g per serving (1 piece, about 6 cm)"
-    }
-  ],
+  "usedIn": [],
   "versions": [
     {
       "date": "2026-10-05",
@@ -272,10 +273,14 @@
     {
       "date": "2026-10-29",
       "file": "FitPlate_Ingredients_2026-10-29.md"
+    },
+    {
+      "date": "2026-11-27",
+      "file": "FitPlate_Ingredients_2026-11-27.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (wma)",
+    "price": "price engine (spike-blend)",
     "macrosPer100Estimate": "stable (single)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
@@ -286,7 +291,9 @@
     "usedIn": "newest"
   },
   "mergeNotes": [
+    "price flag: possible-spike",
     "price flag: narrowed",
-    "Range 70.5–120.0 was wider than 30% of avg 93.6; narrowed to ±15%."
+    "Possible spike: latest avg 170 (2026-11-27) moved more than 35% from the previous estimate; using the halfway point.",
+    "Range 67.7–167.5 was wider than 30% of avg 131.8; narrowed to ±15%."
   ]
 }

@@ -15,35 +15,41 @@
         "avg": 2660,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-08.md"
+      },
+      {
+        "date": "2026-11-27",
+        "min": 2390,
+        "max": 13000,
+        "avg": 5795,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-27.md"
       }
     ],
     "currentEstimate": {
-      "min": 2260,
-      "max": 3060,
-      "avg": 2660
+      "min": 3595,
+      "max": 4860,
+      "avg": 4230
     },
-    "method": "single",
+    "method": "spike-blend",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-08",
-    "stale": true,
+    "lastObserved": "2026-11-27",
+    "stale": false,
     "seasonal": false,
-    "listingCount": 3,
+    "listingCount": 4,
     "platforms": [
       "1mg",
-      "myUpchar",
-      "PharmEasy"
+      "Amazon",
+      "Wild for Herbs"
     ],
-    "outOfStock": true,
-    "confirmed": false,
-    "checkNotes": [
-      "a listing used for the range is marked out of stock, closed or not taking orders"
-    ]
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 226,
-    "max": 306,
-    "avg": 266
+    "min": 359.5,
+    "max": 486,
+    "avg": 423
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -134,9 +140,9 @@
       "confidence": null
     },
     "cholesterolMg": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "Other: none found: No IFCT 2017 or USDA FDC entry found for alkanet / ratan jot root (Alkanna tinctoria or Onosma echioides); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
     },
     "transFatG": {
       "value": null,
@@ -224,38 +230,35 @@
       "confidence": null
     },
     "vitaminB12Ug": {
-      "value": null,
-      "source": null,
-      "confidence": null
+      "value": 0,
+      "source": "Other: none found: No IFCT 2017 or USDA FDC entry found for alkanet / ratan jot root (Alkanna tinctoria or Onosma echioides); zero by composition: cholesterol_mg, vitamin_b12_ug",
+      "confidence": "Low"
     }
   },
   "macrosPer100Estimate": null,
-  "storage": "Room temperature in an airtight glass jar, away from light and moisture, for 1–2 years. It stains plastic boxes and fingers.",
+  "storage": "Room temperature in an airtight glass jar, away from light and moisture, for 1 to 2 years. It stains plastic boxes and fingers.",
   "looksLike": "Thin, twisted pieces of root with flaky, papery, dark purple-red bark. Rubbed between the fingers it leaves a red-purple stain; warmed in oil it turns the oil deep red.",
   "howToPick": null,
-  "shelfLife": "1–2 years dry, in an airtight jar.",
+  "shelfLife": "1 to 2 years dry, in an airtight jar (the 1mg listing shows an expiry of December 2026 for its current batch).",
   "substitutes": [
     "Kashmiri red chilli powder (extra ½ tsp, bloomed in the oil)",
     "Paprika",
     "Skip it"
   ],
   "vendorListings": [],
-  "usedIn": [
-    {
-      "dishNumber": 23,
-      "quantity": null,
-      "unit": null,
-      "raw": "optional, 1 small piece (about 1 g; one thin 2–3 cm shaving)"
-    }
-  ],
+  "usedIn": [],
   "versions": [
     {
       "date": "2026-10-08",
       "file": "FitPlate_Ingredients_2026-10-08.md"
+    },
+    {
+      "date": "2026-11-27",
+      "file": "FitPlate_Ingredients_2026-11-27.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (spike-blend)",
     "macrosPer100Estimate": "stable (none)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
@@ -266,9 +269,9 @@
     "usedIn": "newest"
   },
   "mergeNotes": [
+    "price flag: possible-spike",
     "price flag: narrowed",
-    "price flag: stale",
-    "Range 2160.0–3440.0 was wider than 30% of avg 2660.0; narrowed to ±15%.",
-    "Latest observation 2026-10-08 is more than 45 days old."
+    "Possible spike: latest avg 5795 (2026-11-27) moved more than 35% from the previous estimate; using the halfway point.",
+    "Range 2275.0–8220.0 was wider than 30% of avg 4227.5; narrowed to ±15%."
   ]
 }

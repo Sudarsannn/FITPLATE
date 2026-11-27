@@ -15,23 +15,31 @@
         "avg": 135,
         "confidence": "Medium",
         "sourceFile": "FitPlate_Ingredients_2026-11-03.md"
+      },
+      {
+        "date": "2026-11-27",
+        "min": 95,
+        "max": 155,
+        "avg": 110,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-27.md"
       }
     ],
     "currentEstimate": {
-      "min": 115,
-      "max": 155,
-      "avg": 135
+      "min": 100,
+      "max": 135,
+      "avg": 120
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-11-03",
+    "lastObserved": "2026-11-27",
     "stale": false,
     "seasonal": false,
-    "listingCount": 5,
+    "listingCount": 6,
     "platforms": [
       "BigBasket",
-      "Flipkart",
+      "Blinkit",
       "Zepto"
     ],
     "outOfStock": false,
@@ -39,9 +47,9 @@
     "checkNotes": []
   },
   "per100Estimate": {
-    "min": 11.5,
-    "max": 15.5,
-    "avg": 13.5
+    "min": 10,
+    "max": 13.5,
+    "avg": 12
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -238,30 +246,66 @@
   ],
   "vendorListings": [
     {
+      "vendor": "blinkit",
+      "product": "Whole Farm Premium Jaggery",
+      "pack": "1 kg",
+      "priceMinInr": 95,
+      "priceMaxInr": 95,
+      "observedOn": "2026-11-27"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Dhampur Green vacuum-packed gur / jaggery block",
+      "pack": "1 kg",
+      "priceMinInr": 120,
+      "priceMaxInr": 120,
+      "observedOn": "2026-11-27"
+    },
+    {
       "vendor": "zepto",
       "product": "Parry's Jaggery Powder, 500 g",
       "pack": "500 g",
       "priceMinInr": 55,
       "priceMaxInr": 55,
       "observedOn": "2026-11-03"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Daily Good Gur block, category page",
+      "pack": "500 g",
+      "priceMinInr": 55,
+      "priceMaxInr": 55,
+      "observedOn": "2026-11-27"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Daily Good Jaggery / Gur / Gud",
+      "pack": "1 kg",
+      "priceMinInr": 155,
+      "priceMaxInr": 155,
+      "observedOn": "2026-11-27"
     }
   ],
   "usedIn": [
     {
-      "dishNumber": 9,
-      "quantity": 2,
+      "dishNumber": 74,
+      "quantity": 3,
       "unit": "g",
-      "raw": "2 g per serving (a small pinch, about ½ tsp grated; optional)"
+      "raw": "3 g per serving (½ tsp grated; rounds off the sourness)"
     }
   ],
   "versions": [
     {
       "date": "2026-11-03",
       "file": "FitPlate_Ingredients_2026-11-03.md"
+    },
+    {
+      "date": "2026-11-27",
+      "file": "FitPlate_Ingredients_2026-11-27.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (wma)",
     "macrosPer100Estimate": "stable (none)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
@@ -273,6 +317,6 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 100.0–250.0 was wider than 30% of avg 135.0; narrowed to ±15%."
+    "Range 96.8–189.7 was wider than 30% of avg 119.1; narrowed to ±15%."
   ]
 }

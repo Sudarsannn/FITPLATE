@@ -1,7 +1,7 @@
 import { describe, expect, it } from '@jest/globals';
 
 import { researchHydration, researchNutrients } from '../data/research';
-import { WATER_FORMULA, energyTarget, GOAL_PRESETS, goalTargets, microTargets, restingEnergy, targetGroupFor, waterTarget, type TargetProfile } from '../services/targets';
+import { HEAT_ADD_ML, WATER_FORMULA, energyTarget, GOAL_PRESETS, goalTargets, microTargets, restingEnergy, targetGroupFor, waterTarget, type TargetProfile } from '../services/targets';
 
 const base: TargetProfile = { age: 30, sex: 'male', heightCm: 175, weightKg: 75, activityLevel: 'moderate', goal: 'maintain' };
 
@@ -84,5 +84,30 @@ describe('waterTarget', () => {
     expect(at('female', 55, { lactating: true }).glasses).toBe(11); // 2700
     expect(at(null, null).glasses).toBe(10);
     expect(at('male', 300).glasses).toBeLessThanOrEqual(Math.round(hyd.maxMl! / 250));
+  });
+
+  it('adds the researched heat amounts for a hot day and still respects the limits', () => {
+    const base = (heat?: 'warm' | 'hot' | 'very') => waterTarget({ sex: 'female', weightKg: 55, privateFlags: {} }, hyd, heat);
+    expect(base().glasses).toBe(8); // 2000 ml
+    expect(base('warm').glasses).toBe(9); // 2300
+    expect(base('hot').glasses).toBe(10); // 2500
+    expect(base('very').glasses).toBe(11); // 2750
+    expect(base('hot').note).toMatch(/500 ml extra/);
+    expect(waterTarget({ sex: 'male', weightKg: 300, privateFlags: {} }, hyd, 'very').glasses).toBeLessThanOrEqual(Math.round(hyd.maxMl! / 250));
+  });
+
+  it('adds no heat water for pregnancy, breastfeeding or age 60 and over (the research gives no rule for them)', () => {
+    const f = (extra: object, heat?: 'hot') => waterTarget({ sex: 'female', weightKg: 55, privateFlags: {}, ...extra }, hyd, heat);
+    expect(f({ age: 65 }, 'hot').glasses).toBe(f({ age: 65 }).glasses);
+    expect(f({ privateFlags: { pregnant: true } }, 'hot').glasses).toBe(f({ privateFlags: { pregnant: true } }).glasses);
+    expect(f({ age: 65 }).heatOk).toBe(false);
+    expect(f({ age: 30 }).heatOk).toBe(true);
+  });
+
+  it('uses the same heat numbers as hydration Topic 31', () => {
+    const topic = researchHydration.find((h) => h.id === 'hydration-hot-humid-mumbai')!;
+    expect(topic.defaultTargetFormula).toMatch(/warm_humid 300, hot_humid 500/);
+    expect(topic.defaultTargetFormula).toMatch(/very_hot 750/);
+    expect(HEAT_ADD_ML).toEqual({ warm: 300, hot: 500, very: 750 });
   });
 });

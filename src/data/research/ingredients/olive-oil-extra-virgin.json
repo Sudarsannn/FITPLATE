@@ -17,6 +17,14 @@
         "avg": 1195,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      },
+      {
+        "date": "2026-11-27",
+        "min": 1000,
+        "max": 1440,
+        "avg": 1195,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-27.md"
       }
     ],
     "currentEstimate": {
@@ -24,16 +32,18 @@
       "max": 1375,
       "avg": 1195
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-25",
+    "lastObserved": "2026-11-27",
     "stale": false,
     "seasonal": false,
-    "listingCount": 7,
+    "listingCount": 10,
     "platforms": [
       "BigBasket",
-      "Swiggy Instamart"
+      "Blinkit",
+      "Swiggy Instamart",
+      "Zepto"
     ],
     "outOfStock": false,
     "confirmed": true,
@@ -64,31 +74,84 @@
   ],
   "vendorListings": [
     {
+      "vendor": "blinkit",
+      "product": "Borges Cold Pressed Extra Virgin",
+      "pack": "500 ml",
+      "priceMinInr": 582,
+      "priceMaxInr": 582,
+      "observedOn": "2026-11-27"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Figaro Extra Virgin",
+      "pack": "500 ml",
+      "priceMinInr": 607,
+      "priceMaxInr": 607,
+      "observedOn": "2026-11-27"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Borges Extra Virgin",
+      "pack": "500 ml",
+      "priceMinInr": 619,
+      "priceMaxInr": 619,
+      "observedOn": "2026-11-27"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Borges Cold-Pressed Extra Virgin",
+      "pack": "1 L",
+      "priceMinInr": 1093,
+      "priceMaxInr": 1093,
+      "observedOn": "2026-11-27"
+    },
+    {
+      "vendor": "instamart",
+      "product": "Borges Extra Virgin",
+      "pack": "500 ml",
+      "priceMinInr": 569,
+      "priceMaxInr": 569,
+      "observedOn": "2026-11-27"
+    },
+    {
       "vendor": "instamart",
       "product": "Borges Extra Virgin Olive Oil",
       "pack": "1 L",
       "priceMinInr": 1218,
       "priceMaxInr": 1218,
       "observedOn": "2026-10-25"
-    }
-  ],
-  "usedIn": [
+    },
     {
-      "dishNumber": 102,
-      "quantity": 9,
-      "unit": "g",
-      "raw": "9 g (10 ml, 2 tsp) per serving"
+      "vendor": "zepto",
+      "product": "Borges Cold Pressed Extra Virgin",
+      "pack": "500 ml",
+      "priceMinInr": 581,
+      "priceMaxInr": 581,
+      "observedOn": "2026-11-27"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Borges Extra Virgin",
+      "pack": "500 ml",
+      "priceMinInr": 720,
+      "priceMaxInr": 720,
+      "observedOn": "2026-11-27"
     }
   ],
+  "usedIn": [],
   "versions": [
     {
       "date": "2026-10-25",
       "file": "FitPlate_Ingredients_2026-10-25.md"
+    },
+    {
+      "date": "2026-11-27",
+      "file": "FitPlate_Ingredients_2026-11-27.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
     "aliases": "union",
     "substitutes": "union",
     "vendorListings": "newest sighting per vendor+product+pack",
@@ -98,6 +161,6 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 855.0–1500.0 was wider than 30% of avg 1195.0; narrowed to ±15%."
+    "Range 972.6–1451.3 was wider than 30% of avg 1195.0; narrowed to ±15%."
   ]
 }
