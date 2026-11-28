@@ -20,7 +20,10 @@ function reversedClientId(id) {
 
 module.exports = ({ config }) => {
   const iosGoogle = reversedClientId(process.env.EXPO_PUBLIC_GOOGLE_IOS_CLIENT_ID);
-  const schemes = ['fitplate', ...(iosGoogle ? [iosGoogle] : [])];
+  const androidPackage = (config.android && config.android.package) || 'com.fitplate.app';
+  // Android Google sign-in returns to "<package>:/oauthredirect", so the package
+  // name is registered as a scheme too (harmless on iOS and web).
+  const schemes = ['fitplate', androidPackage, ...(iosGoogle ? [iosGoogle] : [])];
   const querySchemes = Array.from(new Set([...queried.zepto, ...queried.swiggy, ...queried.upi]));
 
   return withoutRemotePush({
