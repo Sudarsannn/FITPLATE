@@ -120,12 +120,20 @@ Keep the same keystore (never delete it), or the update will not install.
 
 ## Mac route (same result)
 
+Run these one at a time in the `Fitplate` folder:
+
 ```bash
-cd Fitplate
-npm install -g eas-cli        # free
-eas login                     # your Expo account
-eas init                      # links the project (Claude can then commit the result)
-eas env:create --environment preview   # once per variable from Step 4
-eas build -p android --profile preview # prints a link/QR to open on the Oppo
-eas credentials -p android    # shows the SHA-1 for Step 8
+sudo xcodebuild -license accept        # once; git and builds stop working until this is accepted
+git pull
+npm install                            # ALWAYS after a pull: new packages (e.g. expo-camera) arrive with it
+npx expo config --json > /dev/null && echo CONFIG OK   # should print CONFIG OK
+npm install -g eas-cli                 # free, once
+eas login                              # your Expo account
+eas env:push --environment preview --path .env   # copies your .env settings to Expo (else the APK starts in guest mode)
+eas build -p android --profile preview # say yes to "create a project" and "generate a new Android Keystore"
+eas credentials -p android             # shows the SHA-1 for Step 8
 ```
+
+If `eas build` says "expo config --json exited with non-zero code", it is
+almost always a missing `npm install`. Run `npx expo config --json` to see the
+real error line and send it to Claude.
