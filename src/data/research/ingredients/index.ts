@@ -170,6 +170,7 @@ import item_sugar from './sugar.json';
 import item_tamarind from './tamarind.json';
 import item_tamarind_date_chutney_ready_made from './tamarind-date-chutney-ready-made.json';
 import item_tamarind_paste_pulp from './tamarind-paste-pulp.json';
+import item_tamarind_paste_pulp_ready_concentrate from './tamarind-paste-pulp-ready-concentrate.json';
 import item_tamarind_seedless_block from './tamarind-seedless-block.json';
 import item_thin_sev_plain from './thin-sev-plain.json';
 import item_tomato from './tomato.json';
@@ -356,6 +357,7 @@ export const items: Ingredient[] = [
   item_tamarind as unknown as Ingredient,
   item_tamarind_date_chutney_ready_made as unknown as Ingredient,
   item_tamarind_paste_pulp as unknown as Ingredient,
+  item_tamarind_paste_pulp_ready_concentrate as unknown as Ingredient,
   item_tamarind_seedless_block as unknown as Ingredient,
   item_thin_sev_plain as unknown as Ingredient,
   item_tomato as unknown as Ingredient,

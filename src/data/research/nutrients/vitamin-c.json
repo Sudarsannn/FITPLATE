@@ -10,11 +10,11 @@
       "toMainUnitFactor": 1000
     },
     {
-      "unit": "mg sodium ascorbate (calc.)",
+      "unit": "mg sodium ascorbate",
       "toMainUnitFactor": 0.889
     },
     {
-      "unit": "mg calcium ascorbate dihydrate (calc.)",
+      "unit": "mg calcium ascorbate dihydrate",
       "toMainUnitFactor": 0.826
     },
     {
@@ -26,100 +26,63 @@
       "toMainUnitFactor": 0.05
     }
   ],
-  "unitConversions": [
-    {
-      "fromUnit": "mg",
-      "compound": "l-ascorbic acid",
-      "toMainUnitFactor": 1,
-      "raw": "1 mg L-ascorbic acid | 1 mg"
-    },
-    {
-      "fromUnit": "mg",
-      "compound": "sodium ascorbate",
-      "toMainUnitFactor": 0.889,
-      "raw": "1 mg sodium ascorbate | 0.889 mg (calc. from molecular weights 176.1 ÷ 198.1)"
-    },
-    {
-      "fromUnit": "mg",
-      "compound": "calcium ascorbate",
-      "toMainUnitFactor": 0.826,
-      "raw": "1 mg calcium ascorbate (dihydrate) | about 0.826 mg (calc., 352.2 ÷ 426.3)"
-    },
-    {
-      "fromUnit": "mg",
-      "compound": "ascorbyl palmitate",
-      "toMainUnitFactor": 0.425,
-      "raw": "1 mg ascorbyl palmitate | about 0.425 mg (calc., 176.1 ÷ 414.5)"
-    },
-    {
-      "fromUnit": "g",
-      "compound": "",
-      "toMainUnitFactor": 1000,
-      "raw": "1 g | 1,000 mg"
-    },
-    {
-      "fromUnit": "iu",
-      "compound": "",
-      "toMainUnitFactor": 0.05,
-      "raw": "1 IU (historical) | 0.05 mg"
-    }
-  ],
+  "unitConversions": [],
   "targets": [
     {
       "group": "adult_male_sedentary",
       "ear": 65,
       "rda": 80,
       "ai": null,
-      "source": "ICMR-NIN 2020 (RDA high confidence; EAR read from short-report excerpts, medium confidence)"
+      "source": "ICMR-NIN 2020 (secondary, unverified)"
     },
     {
       "group": "adult_male_moderate",
       "ear": 65,
       "rda": 80,
       "ai": null,
-      "source": "ICMR-NIN 2020 (no activity-specific value; same as sedentary)"
+      "source": "ICMR-NIN 2020 (secondary, unverified); no activity split"
     },
     {
       "group": "adult_male_heavy",
       "ear": 65,
       "rda": 80,
       "ai": null,
-      "source": "ICMR-NIN 2020 (no activity-specific value; same as sedentary)"
+      "source": "ICMR-NIN 2020 (secondary, unverified); no activity split"
     },
     {
       "group": "adult_female_sedentary",
       "ear": 55,
       "rda": 65,
       "ai": null,
-      "source": "ICMR-NIN 2020 (RDA high confidence; EAR read from short-report excerpts, medium confidence)"
+      "source": "ICMR-NIN 2020 (secondary, unverified; EAR 55 from one garbled table)"
     },
     {
       "group": "adult_female_moderate",
       "ear": 55,
       "rda": 65,
       "ai": null,
-      "source": "ICMR-NIN 2020 (no activity-specific value; same as sedentary)"
+      "source": "ICMR-NIN 2020 (secondary, unverified); no activity split"
     },
     {
       "group": "adult_female_heavy",
       "ear": 55,
       "rda": 65,
       "ai": null,
-      "source": "ICMR-NIN 2020 (no activity-specific value; same as sedentary)"
+      "source": "ICMR-NIN 2020 (secondary, unverified); no activity split"
     },
     {
       "group": "pregnant",
       "ear": null,
       "rda": 80,
       "ai": null,
-      "source": "ICMR-NIN 2020 (women's RDA 65 + 15 mg, as reported by a secondary source; EAR not found)"
+      "source": "ICMR-NIN 2020 (65 + 15), secondary, unverified; EAR Not found; NASEM 85; EFSA 105"
     },
     {
       "group": "lactating",
       "ear": null,
       "rda": 115,
       "ai": null,
-      "source": "ICMR-NIN 2020 (women's RDA 65 + 50 mg, as reported by a secondary source; EAR not found)"
+      "source": "ICMR-NIN 2020 (65 + 50), secondary, unverified; one calculator says 85 (conflict); EAR Not found; NASEM 120; EFSA 155"
     },
     {
       "group": "age_60_plus",
@@ -138,17 +101,17 @@
   },
   "upperLimit": {
     "value": 2000,
-    "unit": "mg/day",
+    "unit": "mg",
     "appliesTo": "food_and_supplements",
-    "source": "US NASEM 2000 / NIH ODS (ICMR-NIN TUL not found). EFSA set no UL; UK NHS: under 1000 mg/day from supplements unlikely to cause harm."
+    "source": "NASEM/IOM 2000 and NIH ODS (secondary); ICMR-NIN TUL Not found; EFSA none set; gentle FitPlate notice at 1,000 mg/day from supplements (NHS)"
   },
   "topFoodSources": [
     {
-      "food": "Guava (amrood), white flesh",
+      "food": "Guava, white flesh (amrood)",
       "veg": true,
       "per100g": 214,
       "servingG": 100,
-      "servingLabel": "1 medium (est.)",
+      "servingLabel": "1 medium guava (est.)",
       "perServing": 214
     },
     {
@@ -168,12 +131,12 @@
       "perServing": 61.5
     },
     {
-      "food": "Papaya, ripe",
+      "food": "Papaya, ripe (papita)",
       "veg": true,
       "per100g": 43.1,
       "servingG": 150,
-      "servingLabel": "1 cup cubes",
-      "perServing": 64.6
+      "servingLabel": "1 cup cubes (est.)",
+      "perServing": 64.7
     },
     {
       "food": "Sweet lime (mosambi), pulp",
@@ -181,10 +144,10 @@
       "per100g": 47,
       "servingG": 130,
       "servingLabel": "pulp of 1 medium (est.)",
-      "perServing": 61
+      "perServing": 61.1
     },
     {
-      "food": "Orange, pulp",
+      "food": "Orange (santra), pulp",
       "veg": true,
       "per100g": 42.7,
       "servingG": 130,
@@ -196,15 +159,15 @@
       "veg": true,
       "per100g": 83.5,
       "servingG": 100,
-      "servingLabel": "100 g raw (about 1/2 katori cooked)",
+      "servingLabel": "100 g raw, about half a katori cooked (est.)",
       "perServing": 83.5
     },
     {
-      "food": "Cauliflower, raw",
+      "food": "Cauliflower (phool gobi), raw",
       "veg": true,
       "per100g": 47.1,
       "servingG": 100,
-      "servingLabel": "about 1 katori florets",
+      "servingLabel": "1 katori florets (est.)",
       "perServing": 47.1
     },
     {
@@ -212,7 +175,7 @@
       "veg": true,
       "per100g": 108,
       "servingG": 25,
-      "servingLabel": "about 1/2 cup leaves (est.)",
+      "servingLabel": "half a cup leaves (est.)",
       "perServing": 27
     },
     {
@@ -238,6 +201,38 @@
       "servingG": 50,
       "servingLabel": "1/2 cup shredded",
       "perServing": 16.6
+    },
+    {
+      "food": "Capsicum, green (shimla mirch)",
+      "veg": true,
+      "per100g": 123,
+      "servingG": 50,
+      "servingLabel": "half a medium capsicum (est.)",
+      "perServing": 61.5
+    },
+    {
+      "food": "Mango, green raw (kairi)",
+      "veg": true,
+      "per100g": 90.2,
+      "servingG": 50,
+      "servingLabel": "about 1/3 raw mango as chutney or panna base (est.)",
+      "perServing": 45.1
+    },
+    {
+      "food": "Tomato, ripe, hybrid",
+      "veg": true,
+      "per100g": 25.3,
+      "servingG": 75,
+      "servingLabel": "1 small-medium tomato (est.)",
+      "perServing": 19
+    },
+    {
+      "food": "Lemon juice",
+      "veg": true,
+      "per100g": 48.2,
+      "servingG": 15,
+      "servingLabel": "15 ml, about 3 tsp (est.)",
+      "perServing": 7.2
     }
   ],
   "goodSourceDishes": [
@@ -272,6 +267,26 @@
     {
       "dishNumber": 17,
       "dishName": "Palak Paneer"
+    },
+    {
+      "dishNumber": 39,
+      "dishName": "Veg Biryani"
+    },
+    {
+      "dishNumber": 67,
+      "dishName": "Mix Veg Curry"
+    },
+    {
+      "dishNumber": 98,
+      "dishName": "Mango Lassi"
+    },
+    {
+      "dishNumber": 53,
+      "dishName": "Paneer Tikka"
+    },
+    {
+      "dishNumber": 66,
+      "dishName": "Sprouts Chaat"
     }
   ],
   "deficiencyRiskIndia": "moderate",
@@ -282,7 +297,10 @@
     "steaming, microwaving or quick stir-frying instead of long boiling",
     "cutting vegetables just before cooking, in larger pieces",
     "spreading intake across meals",
-    "not smoking or using tobacco"
+    "not smoking or using tobacco",
+    "Split doses; at 200 mg a single dose is nearly fully absorbed, above 500 mg less is absorbed",
+    "Eating raw or lightly cooked fresh fruit and vegetables",
+    "Adding lemon, tomato or amchur after cooking"
   ],
   "absorptionBlockers": [
     "long boiling and discarding cooking water",
@@ -291,7 +309,9 @@
     "baking soda in cooking",
     "storing cut fruit and vegetables for long",
     "smoking, chewing tobacco and heavy alcohol use",
-    "kidney dialysis and severe malabsorption"
+    "kidney dialysis and severe malabsorption",
+    "Very large single doses (over 500 mg) lose more in urine",
+    "Heat, long boiling with discarded water, reheating, cut and stored produce, opened packaged juice"
   ],
   "logPresets": [
     {
@@ -343,6 +363,66 @@
       "mainAmount": null,
       "mainAmountRange": null,
       "prescriptionDose": false
+    },
+    {
+      "label": "Multivitamin share (about 60 mg)",
+      "amount": 60,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 60,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Vitamin C 100 mg tablet",
+      "amount": 100,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 100,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Vitamin C 250 mg tablet",
+      "amount": 250,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 250,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Vitamin C 500 mg chewable (Limcee or Celin type)",
+      "amount": 500,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 500,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Vitamin C 1,000 mg effervescent tablet",
+      "amount": 1000,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 1000,
+      "mainAmountRange": null,
+      "prescriptionDose": false
+    },
+    {
+      "label": "Doctor-advised high-dose vitamin C course 3,000 mg/day (prescription dose)",
+      "amount": 3000,
+      "unit": "mg",
+      "toMainFactor": 1,
+      "factorSource": "same-unit",
+      "mainAmount": 3000,
+      "mainAmountRange": null,
+      "prescriptionDose": true
     }
   ],
   "warnings": [
@@ -352,14 +432,142 @@
     "People with iron-overload conditions (haemochromatosis, frequent transfusions) or G6PD deficiency should take vitamin C supplements only on medical advice.",
     "High-dose antioxidants may interact with chemotherapy or radiotherapy, statin plus niacin treatment, warfarin, oestrogen-containing medicines and aluminium antacids; ask the doctor or pharmacist.",
     "Vitamin C from ordinary food does not need an upper-limit warning.",
-    "General information, not medical advice. Check with a doctor before starting supplements."
+    "General information, not medical advice. Check with a doctor before starting supplements.",
+    "Supplements of 1,000 mg/day or more can cause stomach upset and, in men, may raise kidney stone risk; gentle app notice at 1,000 mg/day from supplements",
+    "Upper limit 2,000 mg/day from food plus supplements (NASEM); ICMR-NIN TUL Not found; EFSA sets none",
+    "Kidney stone history or kidney disease: food vitamin C is fine; avoid vitamin C supplements of 1,000 mg/day or more; requires_doctor_input",
+    "Iron overload (haemochromatosis, thalassaemia major on deferoxamine): no vitamin C supplement quick-add; doses above 500 mg/day were linked to heart problems with deferoxamine; requires_doctor_input",
+    "G6PD deficiency: high-dose, especially intravenous, vitamin C has caused red-cell destruction; requires_doctor_input",
+    "Glucose sensors (CGM) and some meters and lab tests can read falsely high with vitamin C tablets (Libre 2 label: over 500 mg/day; Libre 3: over 1,000 mg/day); tell your doctor or lab",
+    "Chemotherapy or radiation, warfarin, statin plus niacin, aluminium-containing medicines: ask your doctor before vitamin C supplements",
+    "Pregnancy and breastfeeding: supplements only if a doctor advises",
+    "Vitamin C does not prevent colds in the general population; no immunity-boost claims",
+    "No ICMR-NIN value could be read from the NIN document; ICMR values are secondary, unverified",
+    "General information, not medical advice"
   ],
-  "conditionAdjustments": [],
-  "lastResearched": "2026-10-11",
+  "conditionAdjustments": [
+    {
+      "profileId": "P22",
+      "change": "Pregnancy RDA 80 mg (65 + 15); supplements only if a doctor advises; requires_doctor_input",
+      "value": 80,
+      "unit": "mg",
+      "source": "ICMR-NIN 2020 via topic 42 (secondary, unverified); NASEM 85; EFSA 105"
+    },
+    {
+      "profileId": "P23",
+      "change": "Lactation RDA 115 mg (65 + 50; one calculator lists 85: conflict); supplements only if a doctor advises",
+      "value": 115,
+      "unit": "mg",
+      "source": "ICMR-NIN 2020 via topic 42 (secondary, unverified); NASEM 120; EFSA 155"
+    },
+    {
+      "profileId": "P11",
+      "change": "Keep RDA; pair a vitamin C food (about 25 to 50 mg) with iron-rich meals; no supplement advice",
+      "value": null,
+      "unit": "mg",
+      "source": "FitPlate topic 39 (Heffernan 2017 meta-analysis, secondary); ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "profileId": "P14",
+      "change": "Food vitamin C fine; avoid vitamin C supplements of 1,000 mg/day or more; requires_doctor_input",
+      "value": 1000,
+      "unit": "mg",
+      "source": "Thomas 2013 (JAMA Intern Med); Ferraro 2016 (Am J Kidney Dis); FitPlate P14 (secondary, observational)"
+    },
+    {
+      "profileId": "P13",
+      "change": "Food fine; no supplements without the doctor (stone risk, aluminium-containing medicines); requires_doctor_input",
+      "value": null,
+      "unit": "mg",
+      "source": "Mayo Clinic vitamin C page (secondary); NASEM 2000"
+    },
+    {
+      "profileId": "P15",
+      "change": "Food only; trials show small urate fall (minus 0.35 mg/dL at median 500 mg/day) but ACR 2020 conditionally advises against adding vitamin C; no tablet advice",
+      "value": null,
+      "unit": "mg",
+      "source": "Juraschek 2011; ACR 2020 via FitPlate topic 15 (secondary)"
+    },
+    {
+      "profileId": "P1",
+      "change": "No target change; vitamin C tablets may falsely raise CGM and meter readings; tell your doctor",
+      "value": null,
+      "unit": "mg",
+      "source": "Abbott FreeStyle Libre labelling; FDA 510(k) review K193371 (secondary)"
+    },
+    {
+      "profileId": "P2",
+      "change": "No change found; same CGM caution if a sensor is used",
+      "value": null,
+      "unit": "mg",
+      "source": "No change found; Abbott labelling"
+    },
+    {
+      "profileId": "P21",
+      "change": "No supplement for heart protection (PHS II); statin plus niacin users ask the doctor; requires_doctor_input for anticoagulant or lipid-drug users",
+      "value": null,
+      "unit": "mg",
+      "source": "Sesso 2008 PHS II (JAMA); Mayo Clinic (secondary)"
+    },
+    {
+      "profileId": "P31",
+      "change": "Same RDA as adults (80 men, 65 women); older adults were the most deficient group in India; encourage daily fruit",
+      "value": null,
+      "unit": "mg",
+      "source": "Ravindran 2011 (PLoS One); ICMR-NIN 2020 (secondary, unverified)"
+    },
+    {
+      "profileId": "P33",
+      "change": "No change found; citrus, guava, amla, capsicum, papaya and raw above-ground vegetables cover it; potato and root vegetables not needed",
+      "value": null,
+      "unit": "mg",
+      "source": "No change found; IFCT 2017"
+    },
+    {
+      "profileId": "P34",
+      "change": "No change found; plant sources cover it; vitamin C also helps vegan iron absorption",
+      "value": null,
+      "unit": "mg",
+      "source": "No change found; IFCT 2017; FitPlate topic 39"
+    },
+    {
+      "profileId": "P16",
+      "change": "No numeric change; high-dose tablets cause diarrhoea and cramps",
+      "value": null,
+      "unit": "mg",
+      "source": "NHS 111 Wales (secondary); No change found"
+    },
+    {
+      "profileId": "P17",
+      "change": "No numeric change; acidic fruit or effervescent tablets may trigger symptoms in some people (individual)",
+      "value": null,
+      "unit": "mg",
+      "source": "No change found"
+    },
+    {
+      "profileId": "P25",
+      "change": "No change found; keep raw fruit and salad at meals",
+      "value": null,
+      "unit": "mg",
+      "source": "No change found"
+    },
+    {
+      "profileId": "P12",
+      "change": "No change found",
+      "value": null,
+      "unit": "mg",
+      "source": "No change found"
+    }
+  ],
+  "lastResearched": "2026-11-28",
   "versions": [
     {
       "date": "2026-10-11",
       "file": "FitPlate_Nutrients_2026-10-11.md"
+    },
+    {
+      "date": "2026-11-28",
+      "file": "FitPlate_Nutrients_2026-11-28.md"
     }
   ],
   "mergeMethod": {
@@ -374,6 +582,7 @@
   },
   "mergeNotes": [],
   "needsReview": [
-    "app_default_target.age_60_plus = 65 has no ICMR row to match (age_60_plus: \"Not found in ICMR-NIN 2020; app uses adult value by sex (80 mg men, 65 mg women)\"); set to null"
+    "2026-11-28 vitamin-c: \"group\" has unexpected value \"age_60_plus_male\"; treated as not found",
+    "2026-11-28 vitamin-c: \"group\" has unexpected value \"age_60_plus_female\"; treated as not found"
   ]
 }

@@ -16,33 +16,41 @@
         "avg": 305,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      },
+      {
+        "date": "2026-11-27",
+        "min": 265,
+        "max": 470,
+        "avg": 395,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-27.md"
       }
     ],
     "currentEstimate": {
-      "min": 260,
-      "max": 345,
-      "avg": 305
+      "min": 310,
+      "max": 420,
+      "avg": 365
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-25",
+    "lastObserved": "2026-11-27",
     "stale": false,
     "seasonal": false,
-    "listingCount": 3,
+    "listingCount": 4,
     "platforms": [
-      "BigBasket"
+      "Amazon",
+      "BigBasket",
+      "Swiggy Instamart"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 1 platform (BigBasket) backs the range"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 26,
-    "max": 34.5,
-    "avg": 30.5
+    "min": 31,
+    "max": 42,
+    "avg": 36.5
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -242,26 +250,33 @@
   "substitutes": [
     "Raw peanuts, dry-roasted at home in a pan (2 to 3 min)",
     "Roasted chana or roasted gram dal (dish 83 low-oil variant adds 10 g roasted chana)",
-    "Chopped cashew or almond"
+    "Chopped cashew or almond",
+    "Roasted chana or roasted gram dal"
   ],
-  "vendorListings": [],
-  "usedIn": [
+  "vendorListings": [
     {
-      "dishNumber": 83,
-      "quantity": 8,
-      "unit": "g",
-      "raw": "8 g per serving (1 tbsp); 5 g in the Gluten-free variant (replacing papdi)"
+      "vendor": "instamart",
+      "product": "Rajaram's Roasted Peanuts , MRP ₹99",
+      "pack": "200 g",
+      "priceMinInr": 81,
+      "priceMaxInr": 81,
+      "observedOn": "2026-11-27"
     }
   ],
+  "usedIn": [],
   "versions": [
     {
       "date": "2026-10-25",
       "file": "FitPlate_Ingredients_2026-10-25.md"
+    },
+    {
+      "date": "2026-11-27",
+      "file": "FitPlate_Ingredients_2026-11-27.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -270,5 +285,8 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": []
+  "mergeNotes": [
+    "price flag: narrowed",
+    "Range 263.4–430.2 was wider than 30% of avg 366.4; narrowed to ±15%."
+  ]
 }

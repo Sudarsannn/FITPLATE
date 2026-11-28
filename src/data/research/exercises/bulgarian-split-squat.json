@@ -1,0 +1,635 @@
+{
+  "id": "bulgarian-split-squat",
+  "number": 22,
+  "name": "Bulgarian split squat (bench or sofa)",
+  "otherNames": [
+    "Rear-foot-elevated split squat",
+    "RFESS",
+    "Single-leg split squat on a bench",
+    "Bench split squat",
+    "Sofa split squat"
+  ],
+  "section": "home",
+  "type": "strength",
+  "equipment": [
+    "stable bench, firm sofa arm or chair braced against a wall",
+    "non-slip exercise mat",
+    "dumbbells (optional)"
+  ],
+  "noEquipmentAlternative": "Plain split squat or reverse lunge on the floor with one hand on a wall; a rucksack with books or filled bottles can replace dumbbells.",
+  "musclesPrimary": [
+    "quadriceps (rectus femoris, vastus muscles)",
+    "gluteus maximus"
+  ],
+  "musclesSecondary": [
+    "hamstrings (biceps femoris)",
+    "adductor magnus",
+    "gluteus medius",
+    "gastrocnemius",
+    "soleus",
+    "transversus abdominis",
+    "obliques",
+    "iliopsoas (rear-leg stretch)"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 3.8,
+  "compendiumCode": "02022",
+  "metOptions": [
+    {
+      "code": "02022",
+      "met": 3.8,
+      "activity": "MET: 3.8, Compendium code 02022, \"calisthenics (e.g., push-ups, sit-ups, pull-ups, lunges), moderate effort\" (2024 Adult Compendium of Physical Activities, conditioning-exercise table; value and descr"
+    },
+    {
+      "code": "02054",
+      "met": 3.5,
+      "activity": "Extras (text only, not used in the JSON): 02054 = 3.5 METs (resistance training, multiple exercises, 8-15 repetitions, varied resistance) applies when this is one block in a loaded dumbbell session. N"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "general_fitness",
+      "sets": 2,
+      "reps": "6-8 per leg, hand on a wall, RPE 5-6 with 3-4 reps in reserve",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "2 s down, 1 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "fat_loss",
+      "sets": 2,
+      "reps": "6-8 per leg, RPE 5-6, paired with walking or a cardio block",
+      "timeSec": null,
+      "restSec": 60,
+      "tempo": "2 s down, 1 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "8-10 per leg, 3 reps in reserve",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "2 s down, 1 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "strength",
+      "sets": 2,
+      "reps": "6-8 per leg, 3 reps in reserve, clean form",
+      "timeSec": null,
+      "restSec": 90,
+      "tempo": "2 s down, controlled up",
+      "perWeek": 2
+    },
+    {
+      "level": "beginner",
+      "goal": "endurance",
+      "sets": 2,
+      "reps": "10-12 per leg, 3-4 reps in reserve",
+      "timeSec": null,
+      "restSec": 50,
+      "tempo": "2 s down, 1 s up",
+      "perWeek": 2
+    },
+    {
+      "level": "intermediate",
+      "goal": "muscle",
+      "sets": 3,
+      "reps": "8-12 per leg, bodyweight or light dumbbells, 2-3 reps in reserve",
+      "timeSec": null,
+      "restSec": 75,
+      "tempo": "3 s down, 1 s up",
+      "perWeek": 3
+    },
+    {
+      "level": "advanced",
+      "goal": "strength",
+      "sets": 4,
+      "reps": "5-6 per leg with heavier dumbbells, 1-2 reps in reserve",
+      "timeSec": null,
+      "restSec": 135,
+      "tempo": "controlled",
+      "perWeek": 2
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "reps",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_shoulder",
+      "right_shoulder",
+      "left_elbow",
+      "right_elbow",
+      "left_wrist",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee",
+      "left_ankle",
+      "right_ankle"
+    ],
+    "phases": [
+      {
+        "name": "top_knee",
+        "joint": "front knee (hip-knee-ankle)",
+        "angleDeg": ">= 165",
+        "parsed": {
+          "op": ">=",
+          "value": 165,
+          "max": null
+        }
+      },
+      {
+        "name": "bottom_knee",
+        "joint": "front knee (hip-knee-ankle)",
+        "angleDeg": "<= 100",
+        "parsed": {
+          "op": "<=",
+          "value": 100,
+          "max": null
+        }
+      },
+      {
+        "name": "torso_tilt",
+        "joint": "torso tilt from vertical (hip-shoulder line)",
+        "angleDeg": "<= 45",
+        "parsed": {
+          "op": "<=",
+          "value": 45,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 2.5
+  },
+  "formChecks": [
+    {
+      "joint": "front knee",
+      "rule": "knee angle < 165 degrees at the top (equals top_knee phase threshold)",
+      "message": "Stand all the way up"
+    },
+    {
+      "joint": "front knee",
+      "rule": "knee angle > 100 degrees at the bottom (equals bottom_knee phase threshold)",
+      "message": "Go a little lower"
+    },
+    {
+      "joint": "torso",
+      "rule": "torso tilt from vertical > 45 degrees at the bottom (equals torso_tilt phase threshold)",
+      "message": "Chest up: stay tall"
+    },
+    {
+      "joint": "front knee",
+      "rule": "knee caving flag: knee landmark inside the hip-to-ankle line in the front view by more than the set margin (position flag, not an angle)",
+      "message": "Knee caving in: push it out"
+    },
+    {
+      "joint": "front heel",
+      "rule": "heel lift flag: front ankle landmark rises during the rep (position flag, not an angle)",
+      "message": "Keep your heel down"
+    },
+    {
+      "joint": "front knee",
+      "rule": "rep shorter than 2.5 s (rushing)",
+      "message": "Slow down: 2 seconds to lower"
+    }
+  ],
+  "safetyFlags": [
+    "plain_split_squat_first_then_low_support",
+    "hand_on_wall_or_chair_for_beginners",
+    "bench_braced_against_wall",
+    "front_foot_distance_shin_near_vertical",
+    "knee_over_toes_not_caving",
+    "front_heel_stays_down",
+    "rear_foot_is_support_not_pusher",
+    "bodyweight_first_then_dumbbells",
+    "do_not_hold_breath_breathe_out_on_way_up",
+    "no_jumping_quiet_step_off",
+    "knee_pain_modify_or_avoid",
+    "balance_problems_use_floor_version",
+    "lower_back_pain_upright_no_weights",
+    "shoulder_problems_bodyweight_only",
+    "hypertension_no_breath_holding",
+    "heart_disease_ask_doctor_first",
+    "osteoporosis_wall_support",
+    "pregnancy_ask_obstetrician",
+    "postpartum_ask_physiotherapist_first",
+    "recent_surgery_get_approval",
+    "stop_with_sharp_knee_pain_dizziness_chest_pain_or_loss_of_balance"
+  ],
+  "progressions": [
+    "bodyweight with no hand support and a 3 s lowering",
+    "one dumbbell in each hand or one held at the chest, added after 3 clean sets of 12",
+    "2-3 s bottom pause then heavier dumbbells; in a gym leg press (Gym 10), hack squat (Gym 13) or Smith machine split squat (Gym 14)"
+  ],
+  "regressions": [
+    "plain split squat on the floor with a hand on a wall",
+    "rear foot on a very low support (stair step or low firm cushion) with a hand on a wall or chair",
+    "partial range or a 2 s hold at the halfway point"
+  ],
+  "videoShots": [
+    {
+      "seconds": 6,
+      "angle": "side, hip height about 90 cm, 3 m",
+      "shows": "setup: back foot on the bench, front foot placement",
+      "textOverlay": "Back foot on the bench. Front foot two foot-lengths out."
+    },
+    {
+      "seconds": 5,
+      "angle": "front, hip height, 2.5 m",
+      "shows": "starting position, hips square, hand on the wall",
+      "textOverlay": "Hips square. Eyes ahead."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, hip height, 3 m",
+      "shows": "one slow rep: down in 2, up in 1, slow motion at the bottom",
+      "textOverlay": "Down 2. Up 1."
+    },
+    {
+      "seconds": 5,
+      "angle": "side close-up, front foot to knee",
+      "shows": "heel stays down, shin near vertical",
+      "textOverlay": "Heel stays down."
+    },
+    {
+      "seconds": 6,
+      "angle": "front, knee height, 2 m",
+      "shows": "knee tracks over the second toe",
+      "textOverlay": "Knee over toes. Not caving."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, hip height, 3 m",
+      "shows": "mistake: front foot too close, then fixed",
+      "textOverlay": "Step the front foot out."
+    },
+    {
+      "seconds": 6,
+      "angle": "front, knee height, 2 m",
+      "shows": "mistake: knee caves in, then corrects",
+      "textOverlay": "Push the knee out."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, hip height, 3 m",
+      "shows": "optional dumbbell version",
+      "textOverlay": "Add weight after 3 clean sets of 12."
+    }
+  ],
+  "lastResearched": "2026-11-28",
+  "setupSteps": [
+    "Pick the support. A bench or a firm sofa arm roughly knee height or a little lower (about 40-45 cm, est.). Lower is easier to balance on. A beginner may start with a stair step or a low cushion over a firm base.",
+    "Make it stable. Push the bench or sofa against a wall so it cannot slide or tip. A pile of loose cushions is not safe.",
+    "Floor. Non-slip mat, a clear 1 m x 2 m. Move furniture, shoes and toys behind you. Keep a wall or a heavy chair within arm's reach for the first sessions.",
+    "Footwear. Shoes or grippy socks; avoid bare feet on a slippery floor.",
+    "Stand with your back to the bench, about two of your own foot-lengths in front of it (about 60-80 cm, est.). You will fine-tune this in step 7.",
+    "Place the rear foot. Lift one foot behind you and rest the top of the shoe (the laces side) on the bench edge. Elitefts-style coaching says to sit back into the rear foot lightly; the rear foot is a support, not a pusher.",
+    "Find your front-foot distance. Step or hop the front foot forward until, at the bottom, the front shin is near vertical and the heel stays down. If the front knee travels far past the toes, step further forward; if you feel an overstretched hip in front of the back leg, step slightly closer (Livestrong and others: too close stresses the knee, too far stresses the hip; snippets).",
+    "Square the hips. Both feet point straight ahead; front foot about hip-width from the centreline for balance, hips facing the front.",
+    "Hands. For the first sessions put one hand on the wall or a chair, or both hands on the hips. If using dumbbells later, hold them hanging at your sides with neutral wrists.",
+    "Camera. Phone in portrait on a stool or shelf about 90-100 cm high (est.), about 2.5-3 m to the side of your front leg, so hip, knee and ankle are in frame.",
+    "Warm up 3-5 minutes (est.): march on the spot, 8 bodyweight squats, 5 slow split squats per leg with both feet on the floor."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Take the starting position",
+      "action": "Stand tall on the front foot with the rear foot on the bench, hands on hips or one hand on the wall.",
+      "feel": "Weight mostly on the front foot, a light stretch at the front of the back hip.",
+      "breathing": "Breathe in.",
+      "tempo": null,
+      "visualCheck": "Side: front shin near vertical, torso upright. Front: hips level, knee pointing the same way as the toes."
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Brace",
+      "action": "Gently tighten the belly as if zipping up tight trousers.",
+      "feel": "A firm trunk, ribs stacked over the hips.",
+      "breathing": "Hold the in-breath only for a moment; do not strain.",
+      "tempo": null,
+      "visualCheck": "Side: no hard arch in the lower back."
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Start lowering",
+      "action": "Bend the front knee and hip together, as if sitting straight down in a lift.",
+      "feel": "The front thigh and buttock taking the load.",
+      "breathing": "Breathe in slowly.",
+      "tempo": null,
+      "visualCheck": "Side: torso upright or a slight lean. Front: knee in line with the second toe."
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Keep the heel down",
+      "action": "Press the whole front foot into the floor, mostly heel and mid-foot.",
+      "feel": "Pressure through the heel.",
+      "breathing": "Continue the slow in-breath.",
+      "tempo": null,
+      "visualCheck": "Side: front heel never lifts."
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Reach the bottom",
+      "action": "Stop when the front thigh is about parallel to the floor, or as low as you can control, with the rear knee hovering a few centimetres above the floor or just below the bench level.",
+      "feel": "A strong stretch at the front of the back hip, burn in the front thigh.",
+      "breathing": "End of the in-breath.",
+      "tempo": null,
+      "visualCheck": "Side: front knee angle about 90 degrees (est.); pelvis level; no wobble."
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Press up",
+      "action": "Push through the front heel and mid-foot to stand, without pushing from the back foot.",
+      "feel": "The front buttock and thigh pushing the floor away.",
+      "breathing": "Breathe out as you rise.",
+      "tempo": null,
+      "visualCheck": "Front: knee does not cave inward. Side: hips rise straight up."
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Finish tall",
+      "action": "Straighten the front leg without snapping the knee back.",
+      "feel": "A light squeeze in the buttock.",
+      "breathing": "Finish the out-breath.",
+      "tempo": null,
+      "visualCheck": "Side: front knee almost straight, torso upright."
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Repeat for the set",
+      "action": "Repeat from step 3 with the same depth and speed each rep.",
+      "feel": "Steady, even effort.",
+      "breathing": "One breath cycle per rep: in on the way down, out on the way up.",
+      "tempo": null,
+      "visualCheck": "Same depth and knee path every rep."
+    },
+    {
+      "n": 9,
+      "part": null,
+      "title": "Swap legs and finish safely",
+      "action": "Step off the bench carefully, rest 60-90 s, then repeat on the other leg. Start with the weaker leg and match its reps on the stronger side.",
+      "feel": "Controlled, no sudden pull in the knee or back.",
+      "breathing": "Breathe normally.",
+      "tempo": null,
+      "visualCheck": "Side: depth matches on both legs."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Front foot too close to the bench",
+      "text": "Front foot too close to the bench. Why: pushes the knee far past the toes, which sources link with knee pain (Livestrong, snippets). Fix: step the front foot a few centimetres further forward until the shin is near vertical at the bottom."
+    },
+    {
+      "title": "Front foot too far away",
+      "text": "Front foot too far away. Why: overstretches the rear hip and takes load off the front leg (snippets). Fix: shorten the stance until the stretch is comfortable."
+    },
+    {
+      "title": "Front knee caving inward",
+      "text": "Front knee caving inward. Why: stresses the knee and points to weak hip stabilisers (coaching view; one study cited more knee valgus in this exercise). Fix: push the knee toward the little toe, lower the support, or return to a plain split squat."
+    },
+    {
+      "title": "Pushing hard off the back foot",
+      "text": "Pushing hard off the back foot. Why: turns it into a two-leg exercise and can irritate the rear knee (snippets). Fix: keep the rear foot relaxed; think \"front leg does the work\"."
+    },
+    {
+      "title": "Leaning far forward or rounding the back",
+      "text": "Leaning far forward or rounding the back. Why: shifts load to the lower back and hips. Fix: eyes up, chest tall, go less deep."
+    },
+    {
+      "title": "Rushing and wobbling",
+      "text": "Rushing and wobbling. Why: balance loss risks a fall or a twisted ankle. Fix: 2 s down, keep a wall or chair in reach."
+    },
+    {
+      "title": "Bench too high or unstable",
+      "text": "Bench too high or unstable. Why: the rear foot slides or the bench tips. Fix: a lower, firm support braced against a wall."
+    },
+    {
+      "title": "Adding weight too soon",
+      "text": "Adding weight too soon. Why: form breaks and the knee takes the load. Fix: master bodyweight first; add load only when every rep is clean (Sweat and others advise bodyweight first)."
+    },
+    {
+      "title": "Holding the breath",
+      "text": "Holding the breath. Why: raises blood pressure and brings dizziness (ACSM warns against the Valsalva manoeuvre in resistance exercise). Fix: out on the way up, in on the way down."
+    }
+  ],
+  "safetyNotes": [
+    "Knee or ankle pain or injury: sources say the exercise may not suit you; use a plain split squat or mini squats, a shallow depth and a wall hand, and stop with sharp or increasing pain (Livestrong, snippet; Royal Orthopaedic Hospital NHS leaflet recommends gentle quadriceps work and stopping if there are problems).",
+    "People who struggle with ordinary lunges are not ready for this yet (snippet); build up through the floor split squat.",
+    "Balance problems or dizziness: use the floor version with firm support, or skip it.",
+    "Lower back problems: upright torso, shallow depth, no weights; stop if pain increases.",
+    "Shoulder problems: do it bodyweight; skip the dumbbells.",
+    "High blood pressure and heart disease: breathe out on the way up, never hold the breath, keep to moderate effort; get clearance first with heart disease or uncontrolled blood pressure (ACSM, snippet).",
+    "Pregnancy and postpartum: balance changes and looser joints raise the fall risk; ask your obstetrician or midwife. ACOG Committee Opinion 804 is the main guidance; its wording on this exercise: Not found.",
+    "Recent surgery: do not start without clearance.",
+    "Mumbai flat: mat under you, bench against a wall, clear floor behind you, keep children and pets away, no jumping."
+  ],
+  "sources": [
+    "2024 Adult Compendium of Physical Activities (Herrmann et al., J Sport Health Sci 2024): conditioning-exercise table, code 02022 (calisthenics, moderate effort, 3.8) and 02054 (resistance training, multiple exercises, 8-15 repetitions, 3.5). https://pacompendium.com/conditioning-exercise ; https://pacompendium.com/wp-content/uploads/2024/02/1_2024-adult-compendium_1_2024.pdf ; https://pubmed.ncbi.nlm.nih.gov/38242596/ (snippets)",
+    "Helme et al. 2022, Is the rear foot elevated split squat unilateral? (J Strength Cond Res). https://pubmed.ncbi.nlm.nih.gov/32796420/ (snippet)",
+    "Rear-leg-elevated split squat versus back squat and split squat, muscle activity in nine trained men. https://pmc.ncbi.nlm.nih.gov/articles/PMC4831851 (snippet); Bulgarian split squat and rear-leg load. https://pmc.ncbi.nlm.nih.gov/articles/PMC12408075 (snippet)",
+    "Technique: NASM exercise library; Experience Life; Sweat; Tonal; Elitefts; Peloton blog; RepFitness. https://www.nasm.org/exercise-library/bulgarian-split-squat ; https://experiencelife.lifetime.life/article/break-it-down-how-to-do-the-bulgarian-split-squat/ ; https://sweat.com/blogs/fitness/bulgarian-split-squat ; https://tonal.com/pages/resource-hub-exercises/bulgarian-split-squat ; https://www.elitefts.com/education/exercise-index/barbell-split-squat-2 ; https://www.onepeloton.com/blog/rear-foot-elevated-split-squat ; https://de.repfitness.com/blogs/training/bulgarian-split-squats-how-to (snippets)",
+    "Mistakes and knee pain: Livestrong; Experience Life split squat and lunge errors; Tonal tips. https://livestrong.com/article/13764398-bulgarian-split-squat-mistakes ; https://experiencelife.lifetime.life/article/watch-out-for-these-common-split-squat-and-lunge-errors/ ; https://tonal.com/blogs/all/bulgarian-split-squats-tips (snippets)",
+    "Reps and sets: Sweat, Tonal, AOL (Men's Health) pieces. https://www.aol.com/lifestyle/master-bulgarian-split-squat-better-211100053.html ; https://www.aol.com/lifestyle/leg-day-exercise-super-effective-164000626.html (snippets)",
+    "Health conditions: ACSM exercise for hypertension https://acsm.org/exercise-for-the-prevention-and-treatment-of-hypertension/ ; ACOG Committee Opinion 804 https://pubmed.ncbi.nlm.nih.gov/33481513/ ; Royal Orthopaedic Hospital NHS exercises for knee osteoarthritis https://roh.nhs.uk/services-information/therapy/exercises-for-osteoarthritis-of-the-knee ; secondary slide summary of exercise for special populations (osteoporosis) https://fr.slideshare.net/ShanePrendergast4/exercise-for-special-populations (snippets)",
+    "ExRx.net and ACE pages on this exercise (no usable text returned), any study of beginners learning the exercise, a fixed front-foot distance, a rear-knee angle standard, an exercise-specific source for diabetes, high cholesterol, obesity, PCOS, thyroid, asthma, shoulder problems and recent surgery, ACOG's own wording on lunges or balance, a primary source on osteoporosis, MET for the loaded dumbbell version beyond 02054, and decibel data: Not found."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 26.3,
+      "70kg": 22.6,
+      "80kg": 19.7
+    },
+    "per300kcal": {
+      "60kg": 78.9,
+      "70kg": 67.7,
+      "80kg": 59.2
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "strength",
+    "muscle",
+    "general_fitness",
+    "beginner",
+    "intermediate",
+    "advanced",
+    "short_sessions",
+    "no_gym",
+    "small_flat",
+    "neighbours_below_with_mat",
+    "legs_glutes",
+    "circuit"
+  ],
+  "swapsByAccess": {
+    "none": "Plain split squat or reverse lunge (Home 5) with a hand on a wall, or bodyweight squat (Home 1)",
+    "home_equipment": "Dumbbell goblet squat (Home 15) or dumbbell Romanian deadlift (Home 16)",
+    "basic_gym": "Leg press (Gym 10) or Smith machine split squat (Gym 14)",
+    "full_gym": "Leg press (Gym 10), hack squat machine (Gym 13) or a dumbbell Bulgarian split squat"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "Breathe out on the way up, never hold the breath; moderate effort (RPE 5-6); ask a doctor if on medication or if blood pressure is poorly controlled",
+      "source": "ACSM hypertension guidance (snippet); exercise-specific advice Not found"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ask_doctor",
+      "change": "Check medication, blood sugar plan and foot care with your doctor before starting",
+      "source": "Not found for this exercise"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "Get clearance before resistance exercise; avoid straining or breath-holding",
+      "source": "ACSM breath-holding warning (snippet); specific clearance rules Not found"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "No exercise-specific change found; start light and build gradually",
+      "source": "Not found"
+    },
+    {
+      "condition": "obesity",
+      "status": "modify",
+      "change": "Low support, shallow depth and wall support; start with a plain split squat; stop if knees hurt",
+      "source": "Not found for this exercise"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "No exercise-specific caution found; follow beginner volume",
+      "source": "Not found"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "No exercise-specific caution found; build gradually",
+      "source": "ACOG Committee Opinion 804 (pregnancy context only, snippet)"
+    },
+    {
+      "condition": "asthma",
+      "status": "ok",
+      "change": "Moderate effort, reliever nearby, rest between sets",
+      "source": "Not found"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Start with a plain split squat or mini squats; avoid if painful; shallow depth; stop with sharp or increasing pain",
+      "source": "Royal Orthopaedic Hospital NHS leaflet (snippet); Livestrong and Experience Life (coaching snippets)"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Upright torso, shallow depth, no weights; stop if pain increases",
+      "source": "NASM exercise library (snippet)"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "modify",
+      "change": "Bodyweight with hands on hips or on a wall; skip dumbbells",
+      "source": "Not found"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "modify",
+      "change": "Weight-bearing exercise is advised; avoid falls and jarring; use wall support",
+      "source": "ACSM-related secondary summary (snippet); primary source Not found"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "ask_doctor",
+      "change": "Balance and joint looseness change; ask your obstetrician or midwife; poorly controlled hypertension or pre-eclampsia rules out exercise",
+      "source": "ACOG Committee Opinion 804 (snippet)"
+    },
+    {
+      "condition": "postpartum",
+      "status": "ask_doctor",
+      "change": "Return gradually after medical clearance; start with a plain split squat",
+      "source": "ACOG Committee Opinion 804 (general, snippet); specifics Not found"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Do not start until your surgeon or physiotherapist clears it",
+      "source": "General guidance Not found"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "home"
+    ],
+    "bodyRegion": [
+      "lower"
+    ],
+    "goalTags": [
+      "general_fitness",
+      "muscle",
+      "strength",
+      "fat_loss"
+    ],
+    "intensity": "moderate",
+    "noise": "quiet",
+    "space": "small_room",
+    "typicalMinutes": 12,
+    "kcalPer10min70kg": 44.3,
+    "difficulty1to5": 3,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Home",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Strength",
+    "Legs",
+    "Glutes",
+    "Rep counter",
+    "10–20 min"
+  ],
+  "needsReview": [],
+  "versions": [
+    {
+      "date": "2026-11-28",
+      "file": "FitPlate_Fitness_2026-11-28.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}

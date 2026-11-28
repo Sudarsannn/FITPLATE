@@ -6,6 +6,7 @@ import item_celiac_disease_gluten_sensitivity from './celiac-disease-gluten-sens
 import item_chronic_kidney_disease_early from './chronic-kidney-disease-early.json';
 import item_fatty_liver from './fatty-liver.json';
 import item_gout_high_uric_acid from './gout-high-uric-acid.json';
+import item_heart_disease_after_cardiac_event from './heart-disease-after-cardiac-event.json';
 import item_high_ldl_cholesterol from './high-ldl-cholesterol.json';
 import item_high_triglycerides from './high-triglycerides.json';
 import item_hypertension from './hypertension.json';
@@ -28,6 +29,7 @@ export const items: HealthCondition[] = [
   item_chronic_kidney_disease_early as unknown as HealthCondition,
   item_fatty_liver as unknown as HealthCondition,
   item_gout_high_uric_acid as unknown as HealthCondition,
+  item_heart_disease_after_cardiac_event as unknown as HealthCondition,
   item_high_ldl_cholesterol as unknown as HealthCondition,
   item_high_triglycerides as unknown as HealthCondition,
   item_hypertension as unknown as HealthCondition,

@@ -21,6 +21,7 @@ import item_riboflavin from './riboflavin.json';
 import item_selenium from './selenium.json';
 import item_sodium from './sodium.json';
 import item_thiamine from './thiamine.json';
+import item_thiamine_b1 from './thiamine-b1.json';
 import item_vitamin_a from './vitamin-a.json';
 import item_vitamin_b12 from './vitamin-b12.json';
 import item_vitamin_b6 from './vitamin-b6.json';
@@ -51,6 +52,7 @@ export const items: Nutrient[] = [
   item_selenium as unknown as Nutrient,
   item_sodium as unknown as Nutrient,
   item_thiamine as unknown as Nutrient,
+  item_thiamine_b1 as unknown as Nutrient,
   item_vitamin_a as unknown as Nutrient,
   item_vitamin_b12 as unknown as Nutrient,
   item_vitamin_b6 as unknown as Nutrient,

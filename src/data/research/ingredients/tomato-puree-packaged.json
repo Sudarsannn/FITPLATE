@@ -17,33 +17,41 @@
         "avg": 133,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      },
+      {
+        "date": "2026-11-27",
+        "min": 105,
+        "max": 125,
+        "avg": 117,
+        "confidence": "Medium",
+        "sourceFile": "FitPlate_Ingredients_2026-11-27.md"
       }
     ],
     "currentEstimate": {
-      "min": 115,
-      "max": 155,
-      "avg": 135
+      "min": 105,
+      "max": 130,
+      "avg": 120
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-25",
+    "lastObserved": "2026-11-27",
     "stale": false,
     "seasonal": false,
-    "listingCount": 3,
+    "listingCount": 7,
     "platforms": [
-      "BigBasket"
+      "BigBasket",
+      "Blinkit",
+      "Zepto"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 1 platform (BigBasket) backs the range"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 11.5,
-    "max": 15.5,
-    "avg": 13.5
+    "min": 10.5,
+    "max": 13,
+    "avg": 12
   },
   "seasonal": false,
   "nutritionPer100g": null,
@@ -57,23 +65,53 @@
     "Tomato paste thinned with water (1 part to 2 parts)",
     "Canned chopped tomatoes, blended"
   ],
-  "vendorListings": [],
-  "usedIn": [
+  "vendorListings": [
     {
-      "dishNumber": 102,
-      "quantity": 80,
-      "unit": "g",
-      "raw": "80 g per serving (about ⅓ cup)"
+      "vendor": "blinkit",
+      "product": "Hommade Tomato Puree",
+      "pack": "200 g",
+      "priceMinInr": 23,
+      "priceMaxInr": 23,
+      "observedOn": "2026-11-27"
+    },
+    {
+      "vendor": "blinkit",
+      "product": "Kissan Tomato Puree",
+      "pack": "200 g",
+      "priceMinInr": 25,
+      "priceMaxInr": 25,
+      "observedOn": "2026-11-27"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Dabur Hommade Tomato Puree",
+      "pack": "200 g",
+      "priceMinInr": 23,
+      "priceMaxInr": 23,
+      "observedOn": "2026-11-27"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Kissan Tomato Puree",
+      "pack": "200 g",
+      "priceMinInr": 24,
+      "priceMaxInr": 24,
+      "observedOn": "2026-11-27"
     }
   ],
+  "usedIn": [],
   "versions": [
     {
       "date": "2026-10-25",
       "file": "FitPlate_Ingredients_2026-10-25.md"
+    },
+    {
+      "date": "2026-11-27",
+      "file": "FitPlate_Ingredients_2026-11-27.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
+    "price": "price engine (wma)",
     "macrosPer100Estimate": "stable (none)",
     "aliases": "union",
     "substitutes": "union",
@@ -82,8 +120,5 @@
     "looksLike": "newest",
     "usedIn": "newest"
   },
-  "mergeNotes": [
-    "price flag: narrowed",
-    "Range 115.0–158.0 was wider than 30% of avg 133.0; narrowed to ±15%."
-  ]
+  "mergeNotes": []
 }

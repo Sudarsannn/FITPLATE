@@ -1,0 +1,99 @@
+{
+  "id": "tamarind-paste-pulp-ready-concentrate",
+  "name": "Tamarind paste / pulp, ready concentrate",
+  "aliases": [
+    "imli ka paste"
+  ],
+  "category": "Packaged / condiment",
+  "standardUnit": "kg",
+  "price": {
+    "priceHistory": [
+      {
+        "date": "2026-11-27",
+        "min": 245,
+        "max": 295,
+        "avg": 270,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-27.md"
+      }
+    ],
+    "currentEstimate": {
+      "min": 245,
+      "max": 295,
+      "avg": 270
+    },
+    "method": "single",
+    "trend": "unknown",
+    "change30dPct": null,
+    "lastObserved": "2026-11-27",
+    "stale": false,
+    "seasonal": false,
+    "listingCount": 3,
+    "platforms": [
+      "Blinkit",
+      "Zepto"
+    ],
+    "outOfStock": false,
+    "confirmed": true,
+    "checkNotes": []
+  },
+  "per100Estimate": {
+    "min": 24.5,
+    "max": 29.5,
+    "avg": 27
+  },
+  "seasonal": false,
+  "nutritionPer100g": null,
+  "macrosPer100Estimate": {
+    "kcal": 239,
+    "proteinG": 2.8,
+    "carbsG": 62.5,
+    "fatG": 0.6,
+    "fibreG": 5.1
+  },
+  "storage": "Keep unopened jars in a cool cupboard; once opened, refrigerate and use clean dry spoons; it keeps for months in the fridge (general guidance).",
+  "looksLike": "A dark brown, sticky, sour paste in a small jar or tub, thicker than ketchup.",
+  "howToPick": "Look for an ingredient list of tamarind and water only (some add salt or preservatives); a smooth, dark, glossy paste without mould. Seedless paste saves straining.",
+  "shelfLife": "About 12 months unopened (general guidance, not from a source in this run).",
+  "substitutes": [
+    "Block tamarind (soaked, strained)",
+    "Amchur (dry mango powder) or lemon juice",
+    "Kokum"
+  ],
+  "vendorListings": [
+    {
+      "vendor": "blinkit",
+      "product": "Mother's Recipe Tamarind Paste",
+      "pack": "200 g",
+      "priceMinInr": 51,
+      "priceMaxInr": 51,
+      "observedOn": "2026-11-27"
+    },
+    {
+      "vendor": "zepto",
+      "product": "Mother's Recipe Tamarind Paste",
+      "pack": "200 g",
+      "priceMinInr": 49,
+      "priceMaxInr": 49,
+      "observedOn": "2026-11-27"
+    }
+  ],
+  "usedIn": [],
+  "versions": [
+    {
+      "date": "2026-11-27",
+      "file": "FitPlate_Ingredients_2026-11-27.md"
+    }
+  ],
+  "mergeMethod": {
+    "price": "price engine (single)",
+    "macrosPer100Estimate": "stable (single)",
+    "aliases": "union",
+    "substitutes": "union",
+    "vendorListings": "newest sighting per vendor+product+pack",
+    "storage": "newest",
+    "looksLike": "newest",
+    "usedIn": "newest"
+  },
+  "mergeNotes": []
+}

@@ -15,34 +15,40 @@
         "avg": 160,
         "confidence": "Low",
         "sourceFile": "FitPlate_Ingredients_2026-10-25.md"
+      },
+      {
+        "date": "2026-11-27",
+        "min": 100,
+        "max": 175,
+        "avg": 125,
+        "confidence": "Low",
+        "sourceFile": "FitPlate_Ingredients_2026-11-27.md"
       }
     ],
     "currentEstimate": {
-      "min": 135,
-      "max": 185,
-      "avg": 160
+      "min": 115,
+      "max": 155,
+      "avg": 135
     },
-    "method": "single",
+    "method": "wma",
     "trend": "unknown",
     "change30dPct": null,
-    "lastObserved": "2026-10-25",
+    "lastObserved": "2026-11-27",
     "stale": false,
     "seasonal": false,
-    "listingCount": 2,
+    "listingCount": 5,
     "platforms": [
-      "BigBasket"
+      "BigBasket",
+      "Flipkart"
     ],
     "outOfStock": false,
-    "confirmed": false,
-    "checkNotes": [
-      "only 2 listings back the range (need 3)",
-      "only 1 platform (BigBasket) backs the range"
-    ]
+    "confirmed": true,
+    "checkNotes": []
   },
   "per100Estimate": {
-    "min": 13.5,
-    "max": 18.5,
-    "avg": 16
+    "min": 11.5,
+    "max": 15.5,
+    "avg": 13.5
   },
   "seasonal": false,
   "nutritionPer100g": {
@@ -245,23 +251,20 @@
     "Regular sona masuri"
   ],
   "vendorListings": [],
-  "usedIn": [
-    {
-      "dishNumber": 101,
-      "quantity": 80,
-      "unit": "g",
-      "raw": "80 g raw rice per serving (6 tbsp)"
-    }
-  ],
+  "usedIn": [],
   "versions": [
     {
       "date": "2026-10-25",
       "file": "FitPlate_Ingredients_2026-10-25.md"
+    },
+    {
+      "date": "2026-11-27",
+      "file": "FitPlate_Ingredients_2026-11-27.md"
     }
   ],
   "mergeMethod": {
-    "price": "price engine (single)",
-    "macrosPer100Estimate": "stable (single)",
+    "price": "price engine (wma)",
+    "macrosPer100Estimate": "stable (mean-2)",
     "nutritionPer100g": "official (D3)",
     "aliases": "union",
     "substitutes": "union",
@@ -272,6 +275,6 @@
   },
   "mergeNotes": [
     "price flag: narrowed",
-    "Range 110.0–215.0 was wider than 30% of avg 160.0; narrowed to ±15%."
+    "Range 103.2–187.7 was wider than 30% of avg 136.1; narrowed to ±15%."
   ]
 }

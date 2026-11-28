@@ -1,6 +1,6 @@
 {
   "schema": "fitplate.links.v1",
-  "generatedFor": "Day38",
+  "generatedFor": "Day39",
   "goodSourceDishes": {
     "biotin": [
       {
@@ -1002,6 +1002,68 @@
         "dishId": "040-sabudana-khichdi"
       }
     ],
+    "thiamine-b1": [
+      {
+        "dishNumber": 11,
+        "dishName": "Aloo Paratha",
+        "dishId": "011-aloo-paratha"
+      },
+      {
+        "dishNumber": 46,
+        "dishName": "Methi Thepla",
+        "dishId": "046-methi-thepla"
+      },
+      {
+        "dishNumber": 29,
+        "dishName": "Misal Pav",
+        "dishId": "029-misal-pav"
+      },
+      {
+        "dishNumber": 56,
+        "dishName": "Pesarattu",
+        "dishId": "056-pesarattu"
+      },
+      {
+        "dishNumber": 5,
+        "dishName": "Dal Tadka",
+        "dishId": "005-dal-tadka"
+      },
+      {
+        "dishNumber": 8,
+        "dishName": "Chole (Chana Masala)",
+        "dishId": "008-chole-chana-masala"
+      },
+      {
+        "dishNumber": 9,
+        "dishName": "Idli with Sambar",
+        "dishId": "009-idli-with-sambar"
+      },
+      {
+        "dishNumber": 66,
+        "dishName": "Sprouts Chaat",
+        "dishId": "066-sprouts-chaat"
+      },
+      {
+        "dishNumber": 12,
+        "dishName": "Rajma Chawal",
+        "dishId": "012-rajma-chawal"
+      },
+      {
+        "dishNumber": 71,
+        "dishName": "Ragi Dosa",
+        "dishId": "071-ragi-dosa"
+      },
+      {
+        "dishNumber": 16,
+        "dishName": "Besan Chilla",
+        "dishId": "016-besan-chilla"
+      },
+      {
+        "dishNumber": 27,
+        "dishName": "Dal Makhani",
+        "dishId": "027-dal-makhani"
+      }
+    ],
     "vitamin-a": [
       {
         "dishNumber": 17,
@@ -1278,6 +1340,31 @@
         "dishNumber": 17,
         "dishName": "Palak Paneer",
         "dishId": "017-palak-paneer"
+      },
+      {
+        "dishNumber": 39,
+        "dishName": "Veg Biryani",
+        "dishId": "039-veg-biryani"
+      },
+      {
+        "dishNumber": 67,
+        "dishName": "Mix Veg Curry",
+        "dishId": "067-mix-veg-curry"
+      },
+      {
+        "dishNumber": 98,
+        "dishName": "Mango Lassi",
+        "dishId": "098-mango-lassi"
+      },
+      {
+        "dishNumber": 53,
+        "dishName": "Paneer Tikka",
+        "dishId": "053-paneer-tikka"
+      },
+      {
+        "dishNumber": 66,
+        "dishName": "Sprouts Chaat",
+        "dishId": "066-sprouts-chaat"
       }
     ],
     "vitamin-d": [
@@ -1511,6 +1598,7 @@
       "phosphorus",
       "vitamin-a",
       "vitamin-b12",
+      "vitamin-c",
       "zinc"
     ],
     "017-palak-paneer": [
@@ -1631,7 +1719,8 @@
       "copper",
       "fluoride",
       "magnesium",
-      "manganese"
+      "manganese",
+      "thiamine-b1"
     ],
     "046-methi-thepla": [
       "calcium",
@@ -1642,6 +1731,7 @@
       "manganese",
       "riboflavin",
       "selenium",
+      "thiamine-b1",
       "vitamin-a",
       "vitamin-b6",
       "vitamin-k"
@@ -1669,7 +1759,9 @@
       "molybdenum",
       "potassium",
       "sodium",
-      "vitamin-b6"
+      "thiamine-b1",
+      "vitamin-b6",
+      "vitamin-c"
     ],
     "051-uttapam": [
       "chloride",
@@ -1686,7 +1778,8 @@
       "molybdenum",
       "phosphorus",
       "potassium",
-      "sodium"
+      "sodium",
+      "thiamine-b1"
     ],
     "012-rajma-chawal": [
       "chromium",
@@ -1698,7 +1791,8 @@
       "pantothenic-acid",
       "phosphorus",
       "riboflavin",
-      "thiamine"
+      "thiamine",
+      "thiamine-b1"
     ],
     "008-chole-chana-masala": [
       "chromium",
@@ -1710,6 +1804,7 @@
       "pantothenic-acid",
       "riboflavin",
       "thiamine",
+      "thiamine-b1",
       "vitamin-b6"
     ],
     "026-moong-dal-chilla": [
@@ -1724,6 +1819,7 @@
       "pantothenic-acid",
       "phosphorus",
       "thiamine",
+      "thiamine-b1",
       "vitamin-b6"
     ],
     "042-malai-kofta": [
@@ -1732,7 +1828,8 @@
     "029-misal-pav": [
       "folate",
       "magnesium",
-      "thiamine"
+      "thiamine",
+      "thiamine-b1"
     ],
     "037-bhindi-masala": [
       "folate",
@@ -1742,7 +1839,8 @@
     "016-besan-chilla": [
       "folate",
       "manganese",
-      "thiamine"
+      "thiamine",
+      "thiamine-b1"
     ],
     "032-aloo-gobi": [
       "folate",
@@ -1754,12 +1852,14 @@
       "folate",
       "molybdenum",
       "phosphorus",
-      "thiamine"
+      "thiamine",
+      "thiamine-b1"
     ],
     "009-idli-with-sambar": [
       "folate",
       "pantothenic-acid",
       "thiamine",
+      "thiamine-b1",
       "vitamin-a",
       "vitamin-k"
     ],
@@ -1767,7 +1867,8 @@
       "folate"
     ],
     "098-mango-lassi": [
-      "iodine"
+      "iodine",
+      "vitamin-c"
     ],
     "099-masala-chai": [
       "iodine"
@@ -1816,6 +1917,7 @@
       "riboflavin",
       "selenium",
       "thiamine",
+      "thiamine-b1",
       "vitamin-b6"
     ],
     "006-upma": [
@@ -1862,7 +1964,8 @@
     ],
     "067-mix-veg-curry": [
       "potassium",
-      "vitamin-a"
+      "vitamin-a",
+      "vitamin-c"
     ],
     "044-baingan-bharta": [
       "potassium"
@@ -1906,7 +2009,8 @@
       "vitamin-a"
     ],
     "039-veg-biryani": [
-      "vitamin-a"
+      "vitamin-a",
+      "vitamin-c"
     ],
     "059-chicken-kathi-roll": [
       "vitamin-b12"
@@ -3176,6 +3280,11 @@
       "met": 2.3
     },
     {
+      "exerciseId": "anulom-vilom",
+      "name": "Anulom Vilom (alternate nostril breathing)",
+      "met": 2.3
+    },
+    {
       "exerciseId": "ardha-matsyendrasana-seated-twist",
       "name": "Ardha Matsyendrasana (Seated Twist)",
       "met": 2.3
@@ -3226,6 +3335,11 @@
       "met": 3.8
     },
     {
+      "exerciseId": "bulgarian-split-squat",
+      "name": "Bulgarian split squat (bench or sofa)",
+      "met": 3.8
+    },
+    {
       "exerciseId": "burpees",
       "name": "Burpees (full burpee, step-back no-jump burpee, incline burpee)",
       "met": 3.8
@@ -3251,9 +3365,19 @@
       "met": 3.5
     },
     {
+      "exerciseId": "cable-woodchopper",
+      "name": "Cable woodchopper (high-to-low and low-to-high)",
+      "met": 3.5
+    },
+    {
       "exerciseId": "calf-raise",
       "name": "Calf raise (standing and seated machines)",
       "met": 3.5
+    },
+    {
+      "exerciseId": "captains-chair-leg-raise",
+      "name": "Captain's chair leg raise (bent-knee beginner version)",
+      "met": 3.8
     },
     {
       "exerciseId": "cat-cow",
@@ -6625,6 +6749,11 @@
         "per100": 0,
         "unit": "µg",
         "source": "ingredient research (USDA FDC: USDA 'Peas, green, frozen, unprepared' (NDB 11312; FDC IDs differ between mirrors); values seen only on secondary sites (Vitals Hub, Recipal, Happy Forks, nutritionvalue.org, MyFoodData); zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "thiamine-b1": {
+        "per100": 0.27,
+        "unit": "mg",
+        "source": "nutrient research (thiamine-b1 food sources)"
       }
     },
     "hakka-noodles-dry": {
@@ -6812,6 +6941,11 @@
         "per100": 0,
         "unit": "µg",
         "source": "ingredient research (USDA FDC: USDA FDC 167746 'Lemons, raw, without peel' (SR Legacy); values seen only on secondary sites that mirror it; zero by composition: cholesterol_mg, vitamin_b12_ug)"
+      },
+      "vitamin-c": {
+        "per100": 48.2,
+        "unit": "mg",
+        "source": "nutrient research (vitamin-c food sources)"
       }
     },
     "light-soy-sauce": {
@@ -9530,6 +9664,11 @@
         "per100": 2.02,
         "unit": "mg",
         "source": "nutrient research (pantothenic-acid food sources)"
+      },
+      "thiamine-b1": {
+        "per100": 0.45,
+        "unit": "mg",
+        "source": "nutrient research (thiamine-b1 food sources)"
       }
     },
     "whole-wheat-flour": {

@@ -1,7 +1,7 @@
 import { describe, expect, it } from '@jest/globals';
 
 import { researchHydration, researchNutrients } from '../data/research';
-import { HEAT_ADD_ML, WATER_FORMULA, energyTarget, GOAL_PRESETS, goalTargets, microTargets, restingEnergy, targetGroupFor, waterTarget, type TargetProfile } from '../services/targets';
+import { HEAT_ADD_ML, WORKOUT_ADD_MAX_ML, WORKOUT_ML_PER_MIN, WATER_FORMULA, energyTarget, GOAL_PRESETS, goalTargets, microTargets, restingEnergy, targetGroupFor, waterTarget, type TargetProfile } from '../services/targets';
 
 const base: TargetProfile = { age: 30, sex: 'male', heightCm: 175, weightKg: 75, activityLevel: 'moderate', goal: 'maintain' };
 
@@ -102,6 +102,21 @@ describe('waterTarget', () => {
     expect(f({ privateFlags: { pregnant: true } }, 'hot').glasses).toBe(f({ privateFlags: { pregnant: true } }).glasses);
     expect(f({ age: 65 }).heatOk).toBe(false);
     expect(f({ age: 30 }).heatOk).toBe(true);
+  });
+
+  it('adds 8 ml per workout minute, at most 1000 ml, and says so', () => {
+    const w = (min?: number | null) => waterTarget({ sex: 'female', weightKg: 55, privateFlags: {} }, hyd, null, min);
+    expect(w().glasses).toBe(8); // 2000 ml
+    expect(w(0).glasses).toBe(8);
+    expect(w(60).glasses).toBe(10); // +480 -> 2500 (rounded to 50)
+    expect(w(60).note).toMatch(/480 ml extra for today's 60 workout minutes/);
+    expect(w(500).glasses).toBe(12); // capped at +1000 -> 3000
+    expect(WORKOUT_ML_PER_MIN).toBe(8);
+    expect(WORKOUT_ADD_MAX_ML).toBe(1000);
+  });
+
+  it('uses the workout numbers written in hydration Topic 30', () => {
+    expect(hyd.defaultTargetFormula).toMatch(/min\(workout_minutes \* 8, 1000\)/);
   });
 
   it('uses the same heat numbers as hydration Topic 31', () => {

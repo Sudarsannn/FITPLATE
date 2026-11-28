@@ -1,0 +1,681 @@
+{
+  "id": "heart-disease-after-cardiac-event",
+  "type": "condition",
+  "name": "Heart disease (after a cardiac event)",
+  "surveyQuestion": "Has a doctor told you that you have heart disease, or had a heart attack, a stent (angioplasty) or bypass surgery? (Yes, heart attack / Yes, stent or bypass / Yes, angina or stable heart disease / Yes, heart failure / Not sure / No)",
+  "targets": [
+    {
+      "nutrient": "Energy",
+      "unit": "kcal",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Individual; weight goal as P6 if BMI 23+ or waist 90/80 cm+; unplanned weight loss in heart failure is a doctor flag"
+    },
+    {
+      "nutrient": "Protein",
+      "unit": "g/kg/day",
+      "generalAdult": 0.8,
+      "profileValue": 0.8,
+      "min": 0.8,
+      "max": 1,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); CKD: 0.8 g/kg doctor-set (P13); requires_doctor_input in heart failure with muscle loss"
+    },
+    {
+      "nutrient": "Total fat",
+      "unit": "% energy",
+      "generalAdult": 30,
+      "profileValue": null,
+      "min": 20,
+      "max": 30,
+      "direction": "same",
+      "source": "DGI 2024 (secondary, unverified); as P4"
+    },
+    {
+      "nutrient": "Saturated fat",
+      "unit": "% energy",
+      "generalAdult": 10,
+      "profileValue": 7,
+      "min": null,
+      "max": 7,
+      "direction": "limit",
+      "source": "As P4 (NLA; ICMR 2018 via Viswanathan 2019; AHA 5-6% stretch); ESC 2021 and WHO 2023 under 10%"
+    },
+    {
+      "nutrient": "Trans fat",
+      "unit": "% energy",
+      "generalAdult": 1,
+      "profileValue": 1,
+      "min": null,
+      "max": 1,
+      "direction": "limit",
+      "source": "WHO 2023; FSSAI 2022 (2% of fat in foods); ideally none"
+    },
+    {
+      "nutrient": "MUFA",
+      "unit": "share of fat",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "raise",
+      "source": "Not found as a number; mustard, rice bran, groundnut, sesame oils, nuts (WHO 2023; Indo-Mediterranean Diet Heart Study 2002)"
+    },
+    {
+      "nutrient": "PUFA",
+      "unit": "share of fat",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "raise",
+      "source": "Not found as a number; replace saturated fat with PUFA (WHO 2023; AHA)"
+    },
+    {
+      "nutrient": "Omega-3",
+      "unit": "servings of fish/week",
+      "generalAdult": null,
+      "profileValue": 2,
+      "min": 2,
+      "max": null,
+      "direction": "raise",
+      "source": "AHA 2021 (fish about twice a week, as P5); ESC 2021 at least once a week (secondary); capsules doctor-led; requires_doctor_input for supplements"
+    },
+    {
+      "nutrient": "Dietary cholesterol",
+      "unit": "mg",
+      "generalAdult": null,
+      "profileValue": 200,
+      "min": null,
+      "max": 200,
+      "direction": "limit",
+      "source": "As P4 (NLA soft guide; AHA 2019 gives no number)"
+    },
+    {
+      "nutrient": "Total carbohydrate",
+      "unit": "% energy",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No change; swap refined for whole grains and millets; diabetes as P1"
+    },
+    {
+      "nutrient": "Added sugar",
+      "unit": "g",
+      "generalAdult": null,
+      "profileValue": 25,
+      "min": null,
+      "max": 25,
+      "direction": "limit",
+      "source": "As P6 (WHO conditional 5% of energy); DGI 2024 about 30 g (secondary, unverified)"
+    },
+    {
+      "nutrient": "Fibre",
+      "unit": "g",
+      "generalAdult": 30,
+      "profileValue": 30,
+      "min": 30,
+      "max": null,
+      "direction": "raise",
+      "source": "As P4 (ICMR-NIN 2020 about 30 g per 2,000 kcal; secondary, unverified)"
+    },
+    {
+      "nutrient": "Sodium",
+      "unit": "mg",
+      "generalAdult": 2000,
+      "profileValue": 2000,
+      "min": null,
+      "max": 2000,
+      "direction": "limit",
+      "source": "DGI 2024; WHO 2012; ESC 2021; topic 18; heart failure limit doctor-set (may be stricter or looser); SODIUM-HF 2022; requires_doctor_input"
+    },
+    {
+      "nutrient": "Salt",
+      "unit": "g",
+      "generalAdult": 5,
+      "profileValue": 5,
+      "min": null,
+      "max": 5,
+      "direction": "limit",
+      "source": "DGI 2024; WHO; ESC 2021; heart failure doctor-set; requires_doctor_input"
+    },
+    {
+      "nutrient": "Potassium",
+      "unit": "mg",
+      "generalAdult": 3510,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "WHO 2012; topic 19; doctor-set with ACE inhibitor, ARB, spironolactone, diuretics or kidney disease; requires_doctor_input"
+    },
+    {
+      "nutrient": "Calcium",
+      "unit": "mg",
+      "generalAdult": 1000,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); no change"
+    },
+    {
+      "nutrient": "Iron",
+      "unit": "mg",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); no change; test before iron; P11"
+    },
+    {
+      "nutrient": "Magnesium",
+      "unit": "mg",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Topic 17; diuretics can lower; supplements doctor-led; requires_doctor_input"
+    },
+    {
+      "nutrient": "Vitamin D",
+      "unit": "ug",
+      "generalAdult": 15,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); VITAL showed no heart benefit from supplements; dose doctor-led"
+    },
+    {
+      "nutrient": "Vitamin B12",
+      "unit": "ug",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); no change; test as P12"
+    },
+    {
+      "nutrient": "Folate",
+      "unit": "ug",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "ICMR-NIN 2020 (secondary, unverified); no change"
+    },
+    {
+      "nutrient": "Vitamin K",
+      "unit": "ug",
+      "generalAdult": 55,
+      "profileValue": 55,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "Topic 4; keep intake steady on warfarin; DOACs different (confirm with doctor, not verified); requires_doctor_input"
+    },
+    {
+      "nutrient": "Alcohol",
+      "unit": "g/week",
+      "generalAdult": null,
+      "profileValue": 0,
+      "min": null,
+      "max": 100,
+      "direction": "limit",
+      "source": "ESC 2021 ceiling 100 g/week (secondary); best none; AHA 2021; WHO no safe level"
+    },
+    {
+      "nutrient": "Water and fluid",
+      "unit": "ml",
+      "generalAdult": null,
+      "profileValue": null,
+      "min": null,
+      "max": null,
+      "direction": "same",
+      "source": "No app target; fluid may be doctor-restricted in heart failure (often 1.5-2 L, doctor-set); topic 30 and 35; requires_doctor_input"
+    }
+  ],
+  "bloodMarkers": [
+    {
+      "marker": "LDL cholesterol",
+      "target": "Very high risk (clinical CAD, MI, stent, CABG): under 55; high risk: under 70; low and moderate risk: under 100; extreme risk 30 or lower (LAI); doctor-set; requires_doctor_input",
+      "unit": "mg/dL",
+      "source": "CSI dyslipidaemia guideline, Indian Heart J 2023/24 (secondary); LAI via P4"
+    },
+    {
+      "marker": "Non-HDL cholesterol",
+      "target": "Very high risk under 85; high risk under 100; low and moderate under 130",
+      "unit": "mg/dL",
+      "source": "CSI 2023/24 (secondary)"
+    },
+    {
+      "marker": "HDL cholesterol",
+      "target": "Low: under 40 men, under 50 women (context); do not chase HDL with pills",
+      "unit": "mg/dL",
+      "source": "As P6"
+    },
+    {
+      "marker": "Triglycerides",
+      "target": "Under 150 context; 500 or more: doctor's plan",
+      "unit": "mg/dL",
+      "source": "As P5"
+    },
+    {
+      "marker": "Lp(a)",
+      "target": "About 50 or more raises risk; diet does not change it; doctor decides testing",
+      "unit": "mg/dL",
+      "source": "As P4 (Enas, Indian Heart J 2019; secondary)"
+    },
+    {
+      "marker": "Blood pressure",
+      "target": "Doctor-set; home 135/85 context",
+      "unit": "mmHg",
+      "source": "As P3; requires_doctor_input"
+    },
+    {
+      "marker": "HbA1c / fasting glucose",
+      "target": "Doctor-set; see P1",
+      "unit": "% / mg/dL",
+      "source": "As P1"
+    },
+    {
+      "marker": "eGFR and blood potassium",
+      "target": "Doctor-monitored with ACE inhibitor, ARB, MRA, diuretics; the doctor sets the diet",
+      "unit": "mL/min/1.73 m2; mmol/L",
+      "source": "P13; topic 19; requires_doctor_input"
+    },
+    {
+      "marker": "INR",
+      "target": "Warfarin users only; doctor-set range",
+      "unit": "ratio",
+      "source": "Topic 4; requires_doctor_input"
+    }
+  ],
+  "waterMl": {
+    "min": null,
+    "max": null,
+    "notes": "requires_doctor_input: no app water target; heart failure fluid limit (often 1.5-2 L, doctor-set, only in selected patients per HFA 2024) is entered by the user as a doctor-set ceiling; never push drink-more or hydration streaks; call the doctor if vomiting, diarrhoea or fever on diuretics, ACE inhibitor, ARB, SGLT2 inhibitor or spironolactone. Follow your doctor's advice."
+  },
+  "sodiumMgMax": 2000,
+  "dietaryCholesterolMgMax": 200,
+  "foodsFavour": [
+    "dals and pulses (moong, masoor, chana, rajma, lobia)",
+    "sprouts",
+    "vegetables (bhindi, brinjal, gourds, leafy greens)",
+    "whole fruit",
+    "oats, ragi, jowar, bajra, whole grains in measured amounts",
+    "plain curd and chaas (low salt)",
+    "unsalted nuts (walnuts, almonds, groundnuts) in small amounts",
+    "fish about twice a week",
+    "skinless chicken and eggs in moderation",
+    "mustard, rice bran, groundnut, sunflower, sesame oil in measured teaspoons",
+    "herbs, lemon, jeera, dhania, haldi instead of salt"
+  ],
+  "foodsLimit": [
+    "ghee, butter, cream, malai, khoya (count against saturated fat budget)",
+    "vanaspati, margarine, bakery items with hydrogenated fat",
+    "coconut oil and palm oil in large amounts",
+    "deep-fried snacks and reused frying oil",
+    "pickles, papad, namkeen, instant noodles, sauces, soup cubes (hidden salt)",
+    "processed meats, mutton, keema",
+    "sweets, mithai, sugary drinks, sweet chai",
+    "alcohol",
+    "tobacco in any form",
+    "potassium-rich coconut water, salt substitutes and potassium supplements unless the doctor says (ACE inhibitor/ARB/spironolactone/kidney)",
+    "vitamin E, fish oil, garlic, ginkgo capsules and herbal products with blood thinners unless the doctor says",
+    "grapefruit with simvastatin or atorvastatin unless the doctor says"
+  ],
+  "goodFitDishes": [
+    {
+      "dishNumber": 9,
+      "dishName": "Idli with Sambar"
+    },
+    {
+      "dishNumber": 56,
+      "dishName": "Pesarattu"
+    },
+    {
+      "dishNumber": 71,
+      "dishName": "Ragi Dosa"
+    },
+    {
+      "dishNumber": 26,
+      "dishName": "Moong Dal Chilla"
+    },
+    {
+      "dishNumber": 16,
+      "dishName": "Besan Chilla"
+    },
+    {
+      "dishNumber": 52,
+      "dishName": "Moong Dal Khichdi"
+    },
+    {
+      "dishNumber": 5,
+      "dishName": "Dal Tadka"
+    },
+    {
+      "dishNumber": 80,
+      "dishName": "Masoor Dal"
+    },
+    {
+      "dishNumber": 66,
+      "dishName": "Sprouts Chaat"
+    },
+    {
+      "dishNumber": 31,
+      "dishName": "Indian-style Overnight Oats"
+    },
+    {
+      "dishNumber": 37,
+      "dishName": "Bhindi Masala"
+    },
+    {
+      "dishNumber": 44,
+      "dishName": "Baingan Bharta"
+    },
+    {
+      "dishNumber": 67,
+      "dishName": "Mix Veg Curry"
+    },
+    {
+      "dishNumber": 12,
+      "dishName": "Rajma Chawal"
+    },
+    {
+      "dishNumber": 8,
+      "dishName": "Chole (Chana Masala)"
+    },
+    {
+      "dishNumber": 45,
+      "dishName": "Tandoori Chicken"
+    },
+    {
+      "dishNumber": 33,
+      "dishName": "Goan Fish Curry"
+    },
+    {
+      "dishNumber": 35,
+      "dishName": "Curd Rice"
+    },
+    {
+      "dishNumber": 58,
+      "dishName": "Khaman Dhokla"
+    },
+    {
+      "dishNumber": 48,
+      "dishName": "Bisi Bele Bath"
+    }
+  ],
+  "cautionDishes": [
+    {
+      "dishNumber": 3,
+      "dishName": "Paneer Butter Masala",
+      "reason": "butter, cream and salt: high saturated fat"
+    },
+    {
+      "dishNumber": 7,
+      "dishName": "Butter Chicken",
+      "reason": "butter and cream gravy: high saturated fat and salt"
+    },
+    {
+      "dishNumber": 18,
+      "dishName": "Chicken Tikka Masala",
+      "reason": "cream gravy and salt"
+    },
+    {
+      "dishNumber": 27,
+      "dishName": "Dal Makhani",
+      "reason": "butter and cream; high saturated fat"
+    },
+    {
+      "dishNumber": 42,
+      "dishName": "Malai Kofta",
+      "reason": "fried, cream and cashew gravy"
+    },
+    {
+      "dishNumber": 63,
+      "dishName": "Shahi Paneer",
+      "reason": "cream, cashew and saturated fat"
+    },
+    {
+      "dishNumber": 78,
+      "dishName": "Navratan Korma",
+      "reason": "cream, nuts and coconut gravy"
+    },
+    {
+      "dishNumber": 50,
+      "dishName": "Chicken Korma",
+      "reason": "cream, coconut and saturated fat"
+    },
+    {
+      "dishNumber": 23,
+      "dishName": "Mutton Rogan Josh",
+      "reason": "red meat and ghee/oil"
+    },
+    {
+      "dishNumber": 93,
+      "dishName": "Mutton Keema",
+      "reason": "red meat and fat"
+    },
+    {
+      "dishNumber": 77,
+      "dishName": "Keema Pav",
+      "reason": "red meat, butter and refined pav"
+    },
+    {
+      "dishNumber": 62,
+      "dishName": "Mutton Biryani",
+      "reason": "red meat, ghee and large rice portion"
+    },
+    {
+      "dishNumber": 11,
+      "dishName": "Aloo Paratha",
+      "reason": "butter or ghee and refined flour"
+    },
+    {
+      "dishNumber": 65,
+      "dishName": "Puri Bhaji",
+      "reason": "deep-fried and salty"
+    },
+    {
+      "dishNumber": 81,
+      "dishName": "Paneer Paratha",
+      "reason": "butter/ghee, full-fat paneer and salt"
+    },
+    {
+      "dishNumber": 20,
+      "dishName": "Vada Pav",
+      "reason": "deep-fried and refined bread; salt"
+    },
+    {
+      "dishNumber": 13,
+      "dishName": "Pav Bhaji",
+      "reason": "butter and salt"
+    },
+    {
+      "dishNumber": 28,
+      "dishName": "Chicken 65",
+      "reason": "deep-fried and high sodium"
+    },
+    {
+      "dishNumber": 87,
+      "dishName": "Chilli Chicken",
+      "reason": "fried and sauces high in salt"
+    },
+    {
+      "dishNumber": 79,
+      "dishName": "Gobi Manchurian",
+      "reason": "deep-fried and sauces high in salt"
+    },
+    {
+      "dishNumber": 47,
+      "dishName": "Veg Manchurian",
+      "reason": "deep-fried and sauces high in salt"
+    },
+    {
+      "dishNumber": 34,
+      "dishName": "Chilli Paneer",
+      "reason": "fried and salty sauces"
+    },
+    {
+      "dishNumber": 24,
+      "dishName": "Medu Vada",
+      "reason": "deep-fried"
+    },
+    {
+      "dishNumber": 92,
+      "dishName": "Kothu Parotta",
+      "reason": "refined flour, oil and salt"
+    },
+    {
+      "dishNumber": 2,
+      "dishName": "Chicken Biryani",
+      "reason": "ghee, oil, salt and large rice portion"
+    },
+    {
+      "dishNumber": 39,
+      "dishName": "Veg Biryani",
+      "reason": "ghee, oil, salt and large rice portion"
+    },
+    {
+      "dishNumber": 84,
+      "dishName": "Egg Biryani",
+      "reason": "ghee, oil, salt and large rice portion"
+    },
+    {
+      "dishNumber": 97,
+      "dishName": "Gulab Jamun",
+      "reason": "sugar plus saturated fat"
+    },
+    {
+      "dishNumber": 95,
+      "dishName": "Rice Kheer",
+      "reason": "sugar and full-fat milk"
+    },
+    {
+      "dishNumber": 96,
+      "dishName": "Gajar Halwa",
+      "reason": "sugar and ghee"
+    },
+    {
+      "dishNumber": 98,
+      "dishName": "Mango Lassi",
+      "reason": "added sugar"
+    },
+    {
+      "dishNumber": 83,
+      "dishName": "Bhel Puri",
+      "reason": "salty chutneys and sev"
+    },
+    {
+      "dishNumber": 29,
+      "dishName": "Misal Pav",
+      "reason": "salt and fried farsan"
+    },
+    {
+      "dishNumber": 72,
+      "dishName": "Kadhi Pakora",
+      "reason": "fried pakora and salt"
+    },
+    {
+      "dishNumber": 73,
+      "dishName": "Rava Fish Fry",
+      "reason": "shallow-fried; watch oil and salt"
+    },
+    {
+      "dishNumber": 94,
+      "dishName": "Pasta in Red Sauce (Indian-style)",
+      "reason": "salty sauce, cheese and refined flour"
+    },
+    {
+      "dishNumber": 99,
+      "dishName": "Masala Chai",
+      "reason": "added sugar and full-fat milk; use unsweetened"
+    },
+    {
+      "dishNumber": 100,
+      "dishName": "Cold Coffee",
+      "reason": "added sugar and milk fat"
+    }
+  ],
+  "conflictsWith": [
+    {
+      "profileId": "high-blood-pressure",
+      "rule": "Same direction; sodium 2,000 mg; P21 potassium rule (doctor-set with ACE inhibitor/ARB/MRA/diuretics) overrides P3's eat-more-potassium message; no salt substitute"
+    },
+    {
+      "profileId": "high-ldl-cholesterol",
+      "rule": "Same direction; stricter of fat and fibre rules; LDL goal shown as doctor-set context only"
+    },
+    {
+      "profileId": "high-triglycerides",
+      "rule": "Compatible; P5 sugar, refined-carbohydrate and alcohol limits apply; TG 500 mg/dL or more: doctor's plan overrides"
+    },
+    {
+      "profileId": "low-hdl-metabolic-syndrome",
+      "rule": "Compatible; P6 activity and weight rules apply only after doctor clearance for exercise"
+    },
+    {
+      "profileId": "type-2-diabetes",
+      "rule": "P1 carbohydrate and glucose rules apply; SGLT2 inhibitor sick-day advice is doctor-led"
+    },
+    {
+      "profileId": "chronic-kidney-disease",
+      "rule": "P13 overrides protein, potassium and fluid; both need the doctor; no potassium suggestions"
+    },
+    {
+      "profileId": "fat-loss",
+      "rule": "Only a gentle plan after doctor clearance; no aggressive deficit; unplanned weight loss in heart failure is a red flag"
+    },
+    {
+      "profileId": "muscle-gain",
+      "rule": "No high-protein push and no stimulant pre-workout; exercise only after doctor clearance"
+    },
+    {
+      "profileId": "endurance-running",
+      "rule": "Exercise only after doctor or cardiac rehabilitation clearance; stop and call for chest pain, fainting or palpitations"
+    },
+    {
+      "profileId": "pregnancy",
+      "rule": "Pregnancy overrides; doctor-led (cardiology and obstetrics)"
+    }
+  ],
+  "requiresDoctorInput": true,
+  "requiresDoctorInputStated": true,
+  "fluidNote": null,
+  "warnings": [
+    "Not medical advice; never changes or comments on medicines",
+    "Chest pain, severe breathlessness, fainting or stroke signs: call 112 or 108",
+    "Fluid limit, sodium in heart failure, potassium, vitamin K, LDL goal and exercise are doctor-set",
+    "No vitamin E, fish oil, garlic, ginkgo or herbal products with antiplatelets, warfarin or DOACs without the doctor",
+    "No potassium supplements or salt substitutes unless the doctor confirms",
+    "Grapefruit can interact with simvastatin and atorvastatin",
+    "Cardiac rehabilitation and graded exercise only after doctor clearance"
+  ],
+  "lastResearched": "2026-11-28",
+  "versions": [
+    {
+      "date": "2026-11-28",
+      "file": "FitPlate_Nutrients_2026-11-28.md"
+    }
+  ],
+  "mergeMethod": {
+    "targets": "official (D3); max as safety limit",
+    "limits": "safety limit (lower on conflict)",
+    "lists": "union",
+    "requiresDoctorInput": "stated true in any version, else newest version (missing flag + limits → true)"
+  },
+  "mergeNotes": [],
+  "needsReview": []
+}

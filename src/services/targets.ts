@@ -111,18 +111,22 @@ export const DEFAULT_WATER_GLASSES = 8;
 
 /**
  * The researched drink target (hydration Topic 30), from what the app knows:
- * sex, weight, pregnancy and breastfeeding. Workout minutes and hot weather are
- * not added yet (the research adds 8 ml a minute and 500 ml on hot days).
+ * sex, weight, pregnancy and breastfeeding, plus (when given) the workout minutes
+ * logged today (8 ml a minute, at most 1000 ml) and a hot day (see HEAT_ADD_ML).
  * The numbers are those of the research's `default_target_formula`; a test
  * checks they still appear in it. Without the research the general default stays.
  */
 export const WATER_FORMULA = { baseMl: { male: 2500, female: 2000, unknown: 2500 }, refKg: { male: 65, female: 55, unknown: 65 }, mlPerKg: 20, weightClampMl: 400, pregnantMl: 300, lactatingMl: 700, roundMl: 50 } as const;
 
 /** Extra ml for a hot or humid day (hydration Topic 31: warm and humid 300, hot and humid 500, very hot 750). FitPlate estimates. */
+/** Hydration Topic 30: 8 ml for each workout minute logged today, at most 1000 ml. */
+export const WORKOUT_ML_PER_MIN = 8;
+export const WORKOUT_ADD_MAX_ML = 1000;
+
 export const HEAT_ADD_ML = { warm: 300, hot: 500, very: 750 } as const;
 export type HeatBand = keyof typeof HEAT_ADD_ML;
 
-export function waterTarget(p?: Pick<TargetProfile, 'sex' | 'weightKg' | 'privateFlags'> & { age?: number | null }, hydration?: Pick<Hydration, 'minMl' | 'maxMl'> | null, heat?: HeatBand | null): WaterTarget {
+export function waterTarget(p?: Pick<TargetProfile, 'sex' | 'weightKg' | 'privateFlags'> & { age?: number | null }, hydration?: Pick<Hydration, 'minMl' | 'maxMl'> | null, heat?: HeatBand | null, workoutMinutes?: number | null): WaterTarget {
   const general: WaterTarget = { glasses: DEFAULT_WATER_GLASSES, researched: false, note: 'A general default. Add your sex and weight in your profile for a target that fits you.', heatOk: false };
   if (!p || !hydration || hydration.minMl == null || hydration.maxMl == null) return general;
   const sex = p.sex === 'male' || p.sex === 'female' ? p.sex : 'unknown';
@@ -133,9 +137,11 @@ export function waterTarget(p?: Pick<TargetProfile, 'sex' | 'weightKg' | 'privat
   if (isLactating(p)) ml += F.lactatingMl;
   // Topic 31 gives no extra-fluid rule for pregnancy, breastfeeding or age 60 and over: ask a doctor instead.
   const heatOk = !isPregnant(p) && !isLactating(p) && !(p.age != null && p.age >= 60);
+  const workoutMl = workoutMinutes && workoutMinutes > 0 ? Math.min(Math.round(workoutMinutes * WORKOUT_ML_PER_MIN), WORKOUT_ADD_MAX_ML) : 0;
+  ml += workoutMl;
   if (heat && heatOk) ml += HEAT_ADD_ML[heat];
   ml = Math.round(Math.max(hydration.minMl, Math.min(hydration.maxMl, ml)) / F.roundMl) * F.roundMl;
   const glasses = Math.max(1, Math.round(ml / 250));
   const why = [sex === 'unknown' ? 'a general adult figure' : sex, p.weightKg ? `${Math.round(p.weightKg)} kg` : null, isPregnant(p) ? 'pregnancy' : null, isLactating(p) ? 'breastfeeding' : null].filter(Boolean).join(', ');
-  return { glasses, researched: true, heatOk, note: `About ${ml} ml of drinks a day for ${why}. A FitPlate estimate built on EFSA adequate intakes; exercise needs more.${heat && heatOk ? ` Includes ${HEAT_ADD_ML[heat]} ml extra for a ${heat === 'warm' ? 'warm and humid' : heat === 'hot' ? 'hot and humid' : 'very hot'} day.` : ' Hot days need more.'}` };
+  return { glasses, researched: true, heatOk, note: `About ${ml} ml of drinks a day for ${why}. A FitPlate estimate built on EFSA adequate intakes; ${workoutMl ? ` Includes ${workoutMl} ml extra for today's ${Math.round(workoutMinutes ?? 0)} workout minutes (8 ml a minute, drink to thirst).` : ' Workouts need more.'}${heat && heatOk ? ` Includes ${HEAT_ADD_ML[heat]} ml extra for a ${heat === 'warm' ? 'warm and humid' : heat === 'hot' ? 'hot and humid' : 'very hot'} day.` : ' Hot days need more.'}` };
 }

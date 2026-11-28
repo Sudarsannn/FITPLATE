@@ -2,6 +2,7 @@
 import type { Exercise } from '../../../models/exercise';
 
 import item_adho_mukha_svanasana from './adho-mukha-svanasana.json';
+import item_anulom_vilom from './anulom-vilom.json';
 import item_ardha_matsyendrasana_seated_twist from './ardha-matsyendrasana-seated-twist.json';
 import item_assisted_pull_up_dip_machine from './assisted-pull-up-dip-machine.json';
 import item_balasana_childs_pose from './balasana-childs-pose.json';
@@ -12,12 +13,15 @@ import item_barbell_flat_bench_press from './barbell-flat-bench-press.json';
 import item_barbell_overhead_press from './barbell-overhead-press.json';
 import item_bhujangasana_cobra_pose from './bhujangasana-cobra-pose.json';
 import item_bodyweight_squat from './bodyweight-squat.json';
+import item_bulgarian_split_squat from './bulgarian-split-squat.json';
 import item_burpees from './burpees.json';
 import item_cable_crossover_fly from './cable-crossover-fly.json';
 import item_cable_crunch from './cable-crunch.json';
 import item_cable_face_pull from './cable-face-pull.json';
 import item_cable_tricep_pushdown from './cable-tricep-pushdown.json';
+import item_cable_woodchopper from './cable-woodchopper.json';
 import item_calf_raise from './calf-raise.json';
+import item_captains_chair_leg_raise from './captains-chair-leg-raise.json';
 import item_cat_cow from './cat-cow.json';
 import item_chair_bench_tricep_dips from './chair-bench-tricep-dips.json';
 import item_chest_press_machine from './chest-press-machine.json';
@@ -84,6 +88,7 @@ import item_wrist_forearm_stretch from './wrist-forearm-stretch.json';
 
 export const items: Exercise[] = [
   item_adho_mukha_svanasana as unknown as Exercise,
+  item_anulom_vilom as unknown as Exercise,
   item_ardha_matsyendrasana_seated_twist as unknown as Exercise,
   item_assisted_pull_up_dip_machine as unknown as Exercise,
   item_balasana_childs_pose as unknown as Exercise,
@@ -94,12 +99,15 @@ export const items: Exercise[] = [
   item_barbell_overhead_press as unknown as Exercise,
   item_bhujangasana_cobra_pose as unknown as Exercise,
   item_bodyweight_squat as unknown as Exercise,
+  item_bulgarian_split_squat as unknown as Exercise,
   item_burpees as unknown as Exercise,
   item_cable_crossover_fly as unknown as Exercise,
   item_cable_crunch as unknown as Exercise,
   item_cable_face_pull as unknown as Exercise,
   item_cable_tricep_pushdown as unknown as Exercise,
+  item_cable_woodchopper as unknown as Exercise,
   item_calf_raise as unknown as Exercise,
+  item_captains_chair_leg_raise as unknown as Exercise,
   item_cat_cow as unknown as Exercise,
   item_chair_bench_tricep_dips as unknown as Exercise,
   item_chest_press_machine as unknown as Exercise,

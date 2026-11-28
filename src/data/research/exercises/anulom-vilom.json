@@ -1,0 +1,597 @@
+{
+  "id": "anulom-vilom",
+  "number": 22,
+  "name": "Anulom Vilom (alternate nostril breathing)",
+  "otherNames": [
+    "Anuloma Viloma",
+    "Nadi Shodhana",
+    "Alternate nostril breathing"
+  ],
+  "section": "yoga_stretch",
+  "type": "pranayama",
+  "equipment": [],
+  "noEquipmentAlternative": "Sit on a folded blanket or a firm chair with the feet flat; no equipment needed",
+  "musclesPrimary": [
+    "diaphragm",
+    "intercostals"
+  ],
+  "musclesSecondary": [
+    "erector spinae",
+    "transversus abdominis",
+    "right deltoid",
+    "biceps brachii"
+  ],
+  "level": "beginner",
+  "impact": "low",
+  "flatFriendly": true,
+  "met": 2.3,
+  "compendiumCode": "02150",
+  "metOptions": [
+    {
+      "code": "02150",
+      "met": 2.3,
+      "activity": "MET: 2.3, 2024 Adult Compendium of Physical Activities, code 02150, \"Yoga, Hatha\" (pacompendium.com conditioning-exercise listing and the PubMed record showed 02150 Yoga, Hatha = 2.3 and 02153 Yoga, H"
+    },
+    {
+      "code": "02153",
+      "met": 1,
+      "activity": "MET: 2.3, 2024 Adult Compendium of Physical Activities, code 02150, \"Yoga, Hatha\" (pacompendium.com conditioning-exercise listing and the PubMed record showed 02150 Yoga, Hatha = 2.3 and 02153 Yoga, H"
+    },
+    {
+      "code": "02150",
+      "met": 1.5,
+      "activity": "MET: 2.3, 2024 Adult Compendium of Physical Activities, code 02150, \"Yoga, Hatha\" (pacompendium.com conditioning-exercise listing and the PubMed record showed 02150 Yoga, Hatha = 2.3 and 02153 Yoga, H"
+    },
+    {
+      "code": "02153",
+      "met": 8,
+      "activity": "MET: 2.3, 2024 Adult Compendium of Physical Activities, code 02150, \"Yoga, Hatha\" (pacompendium.com conditioning-exercise listing and the PubMed record showed 02150 Yoga, Hatha = 2.3 and 02153 Yoga, H"
+    }
+  ],
+  "prescriptions": [
+    {
+      "level": "beginner",
+      "goal": "relaxation",
+      "sets": 1,
+      "reps": "5 rounds (in left, out right, in right, out left); no breath holding",
+      "timeSec": 120,
+      "restSec": 0,
+      "tempo": "4 s in, 4 s out (1:1)",
+      "perWeek": 7
+    },
+    {
+      "level": "intermediate",
+      "goal": "relaxation",
+      "sets": 1,
+      "reps": "8-10 rounds; no breath holding",
+      "timeSec": 240,
+      "restSec": 0,
+      "tempo": "4 s in, 8 s out (1:2)",
+      "perWeek": 7
+    },
+    {
+      "level": "advanced",
+      "goal": "relaxation",
+      "sets": 1,
+      "reps": "10+ rounds; any retention only with a qualified teacher",
+      "timeSec": 600,
+      "restSec": 0,
+      "tempo": "Teacher-led ratio; app default stays 1:2 without holds",
+      "perWeek": 7
+    }
+  ],
+  "cardioSettings": null,
+  "repCounter": {
+    "mode": "hold_timer",
+    "cameraView": "side",
+    "landmarks": [
+      "nose",
+      "left_ear",
+      "right_ear",
+      "left_shoulder",
+      "right_shoulder",
+      "right_elbow",
+      "right_wrist",
+      "left_hip",
+      "right_hip",
+      "left_knee",
+      "right_knee"
+    ],
+    "phases": [
+      {
+        "name": "seated_upright",
+        "joint": "hip (shoulder-hip-knee)",
+        "angleDeg": ">= 85 and <= 140",
+        "parsed": null
+      },
+      {
+        "name": "neck_neutral",
+        "joint": "neck (ear-shoulder-hip)",
+        "angleDeg": ">= 150",
+        "parsed": {
+          "op": ">=",
+          "value": 150,
+          "max": null
+        }
+      },
+      {
+        "name": "hand_at_nose",
+        "joint": "right elbow (shoulder-elbow-wrist)",
+        "angleDeg": "<= 120",
+        "parsed": {
+          "op": "<=",
+          "value": 120,
+          "max": null
+        }
+      }
+    ],
+    "minRepSec": 12
+  },
+  "formChecks": [
+    {
+      "joint": "hip",
+      "rule": "hip angle < 85 deg (equals seated_upright lower threshold)",
+      "message": "Slouching: sit taller"
+    },
+    {
+      "joint": "hip",
+      "rule": "hip angle > 140 deg (equals seated_upright upper threshold)",
+      "message": "Leaning back: bring your back upright"
+    },
+    {
+      "joint": "neck",
+      "rule": "neck angle < 150 deg (equals neck_neutral phase threshold)",
+      "message": "Head forward: tuck the chin slightly and lift the crown"
+    },
+    {
+      "joint": "right elbow",
+      "rule": "elbow angle > 120 deg with hand at nose (equals hand_at_nose phase threshold)",
+      "message": "Bring the hand to the nose, elbow low"
+    },
+    {
+      "joint": "shoulders",
+      "rule": "one shoulder clearly higher than the other (position flag, not an angle)",
+      "message": "Shoulders uneven: relax both down"
+    }
+  ],
+  "safetyFlags": [
+    "no_breath_holding_for_beginners",
+    "blocked_nose_or_cold_skip",
+    "hypertension_no_holds_ask_doctor",
+    "heart_disease_ask_doctor",
+    "asthma_gentle_ask_doctor_inhaler_near",
+    "pregnancy_no_retention_or_forceful_breathing",
+    "stop_if_dizzy_tingling_chest_pain",
+    "recent_surgery_ask_doctor",
+    "empty_or_light_stomach"
+  ],
+  "progressions": [
+    "Lengthen the exhale to 8 s (1:2 ratio)",
+    "Increase to 8-10 rounds, then about 5 minutes",
+    "Short breath holds only with a qualified teacher (not default)"
+  ],
+  "regressions": [
+    "Chair version",
+    "Breathe without finger closing for 5 rounds",
+    "3 rounds with a 3 s in, 3 s out count"
+  ],
+  "videoShots": [
+    {
+      "seconds": 6,
+      "angle": "front, chest height, 1.5 m",
+      "shows": "sitting tall, hands on knees, calm face",
+      "textOverlay": "Sit tall. Relax the shoulders."
+    },
+    {
+      "seconds": 8,
+      "angle": "front close-up on right hand, 0.5 m",
+      "shows": "folding the index and middle fingers into Vishnu mudra",
+      "textOverlay": "Fold two fingers. Thumb and ring finger stay free."
+    },
+    {
+      "seconds": 6,
+      "angle": "front close-up on nose",
+      "shows": "thumb and ring finger on the soft sides of the nose",
+      "textOverlay": "Light touch on the soft part."
+    },
+    {
+      "seconds": 10,
+      "angle": "front, 1.5 m",
+      "shows": "close the right nostril, inhale through the left for 4 counts",
+      "textOverlay": "In through the LEFT: 1-2-3-4."
+    },
+    {
+      "seconds": 10,
+      "angle": "front, 1.5 m",
+      "shows": "switch fingers, exhale through the right for 4 counts",
+      "textOverlay": "Out through the RIGHT: 1-2-3-4."
+    },
+    {
+      "seconds": 10,
+      "angle": "front, 1.5 m",
+      "shows": "inhale right, switch, exhale left to finish a round",
+      "textOverlay": "In RIGHT, out LEFT. One round done."
+    },
+    {
+      "seconds": 8,
+      "angle": "side, hip height, 2 m",
+      "shows": "ear-shoulder-hip line, low right elbow",
+      "textOverlay": "Side check: ear, shoulder, hip in line."
+    },
+    {
+      "seconds": 6,
+      "angle": "front, 1.5 m",
+      "shows": "chair version: feet flat, back tall, same hand shape",
+      "textOverlay": "Chair works just as well."
+    }
+  ],
+  "lastResearched": "2026-11-28",
+  "setupSteps": [
+    "Empty stomach. Practise about 3 to 4 hours after a heavy meal (one source says about 4 hours); a light stomach is fine.",
+    "Place. Quiet corner, fresh air but no fan blowing on you. Phone on Do Not Disturb.",
+    "Clear the nose. Blow your nose gently first. If one side stays blocked, do not force it (see Safety).",
+    "Seat. (a) Cross-legged on a folded blanket so the hips sit higher than the knees; (b) on a firm chair, feet flat, knees about hip height, back away from the backrest; or (c) on the heels (Vajrasana) if the knees are comfortable.",
+    "Left hand. On the left knee, palm up or down, thumb and index finger lightly touching if you like. Shoulder relaxed.",
+    "Right hand (Vishnu mudra). Fold the index and middle fingers gently into the palm. The thumb will close the right nostril; the ring finger (and little finger) will close the left.",
+    "Spine and head. Lift the crown of the head, keep the back of the neck long, chin level. Eyes closed or soft gaze. Relax the face, jaw and belly.",
+    "Pace. Beginner count: 4 seconds in, 4 seconds out (1:1). Use the app timer or count in your head. No holds.",
+    "Camera. Phone at chest height seated, about 1.5 to 2 m to the side, so the head, shoulders, hips and knees are in frame (see sections 11 and 12)."
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "part": null,
+      "title": "Settle",
+      "action": "sit tall, hands in position, breathe normally through the nose.",
+      "feel": "seat bones pressing down, chest lifting slightly.",
+      "breathing": "3 natural breaths.",
+      "tempo": "about 10 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 2,
+      "part": null,
+      "title": "Raise the right hand to the nose",
+      "action": "bend the right elbow and bring the thumb and ring finger to the soft sides of the nose, below the bony bridge, elbow lower than the wrist.",
+      "feel": "light touch, arm relaxed.",
+      "breathing": "natural.",
+      "tempo": "3 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 3,
+      "part": null,
+      "title": "Close the right nostril and empty gently",
+      "action": "close the right nostril with the thumb and breathe out softly through the left.",
+      "feel": "the right side sealed, no squeezing.",
+      "breathing": "one slow exhale.",
+      "tempo": "about 4 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 4,
+      "part": null,
+      "title": "Inhale through the left",
+      "action": "breathe in slowly and smoothly through the left nostril.",
+      "feel": "cool air along the left nostril, ribs widening, belly gently rising.",
+      "breathing": "inhale, count 1-2-3-4.",
+      "tempo": "4 seconds (beginner).",
+      "visualCheck": null
+    },
+    {
+      "n": 5,
+      "part": null,
+      "title": "Switch",
+      "action": "close the left nostril with the ring finger, then lift the thumb off the right nostril.",
+      "feel": "a smooth switch, no pause and no breath hold at the top.",
+      "breathing": "tiny natural turn; no hold for beginners.",
+      "tempo": "about 1 second.",
+      "visualCheck": null
+    },
+    {
+      "n": 6,
+      "part": null,
+      "title": "Exhale through the right",
+      "action": "breathe out slowly through the right nostril.",
+      "feel": "warm air, ribs softening, belly drawing in gently.",
+      "breathing": "exhale, count 1-2-3-4.",
+      "tempo": "4 seconds (beginner); 8 seconds for the 1:2 ratio later.",
+      "visualCheck": null
+    },
+    {
+      "n": 7,
+      "part": null,
+      "title": "Inhale through the right",
+      "action": "breathe in slowly through the same right nostril you just breathed out of.",
+      "feel": "the same quiet, smooth flow.",
+      "breathing": "inhale, count 1-2-3-4.",
+      "tempo": "4 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 8,
+      "part": null,
+      "title": "Switch again",
+      "action": "close the right nostril with the thumb and release the left nostril.",
+      "feel": "smooth, no hold.",
+      "breathing": "natural, no hold.",
+      "tempo": "about 1 second.",
+      "visualCheck": null
+    },
+    {
+      "n": 9,
+      "part": null,
+      "title": "Exhale through the left",
+      "action": "breathe out slowly through the left nostril. This completes round 1.",
+      "feel": "a long gentle emptying, calm.",
+      "breathing": "exhale, count 1-2-3-4.",
+      "tempo": "4 seconds.",
+      "visualCheck": null
+    },
+    {
+      "n": 10,
+      "part": null,
+      "title": "Repeat",
+      "action": "repeat steps 4 to 9 for the planned rounds (beginner 5 rounds).",
+      "feel": "the breath getting quieter and more even.",
+      "breathing": "keep inhale and exhale equal.",
+      "tempo": "about 16 to 18 seconds per round (est.).",
+      "visualCheck": "nothing moves except the hand."
+    },
+    {
+      "n": 11,
+      "part": null,
+      "title": "Finish",
+      "action": "lower the right hand to the right knee, release both nostrils, eyes closed.",
+      "feel": "lightness, a calmer chest.",
+      "breathing": "5 to 6 natural breaths.",
+      "tempo": "about 30 seconds.",
+      "visualCheck": "relaxed jaw, hands resting on the knees."
+    }
+  ],
+  "commonMistakes": [
+    {
+      "title": "Forcing or sniffing the breath",
+      "text": "Forcing or sniffing the breath. It makes noise, tires the nose and can cause dizziness. Fix: make the breath so quiet you could not hear it an arm's length away; shorten the count."
+    },
+    {
+      "title": "Holding the breath too early",
+      "text": "Holding the breath too early. Breath retention can raise blood pressure and heart rate during the hold (review table PMC10989416; a pilot study found systolic pressure rose during 30-second holds). Fix: no holds for beginners; any retention only with a qualified teacher."
+    },
+    {
+      "title": "Pressing hard on the nose or the bony bridge",
+      "text": "Pressing hard on the nose or the bony bridge. It hurts and can bend the cartilage. Fix: use the soft sides, the lightest touch."
+    },
+    {
+      "title": "Slouching or leaning back",
+      "text": "Slouching or leaning back. It squashes the diaphragm so the breath feels short. Fix: sit on a cushion or chair; stack ears over shoulders over hips."
+    },
+    {
+      "title": "Raising the shoulder and elbow high",
+      "text": "Raising the shoulder and elbow high. It tires the arm and neck. Fix: keep the right elbow low, or support it with the left hand."
+    },
+    {
+      "title": "Unequal counts or speeding up",
+      "text": "Unequal counts or speeding up. An in-breath longer than the out-breath feels breathless. Fix: use the timer cue; keep the exhale at least as long as the inhale."
+    },
+    {
+      "title": "Practising with a full stomach, a blocked nose or when ill",
+      "text": "Practising with a full stomach, a blocked nose or when ill. It feels hard and uncomfortable. Fix: wait, clear the nose gently, or use plain slow breathing."
+    },
+    {
+      "title": "Doing too much on day one",
+      "text": "Doing too much on day one. Tiredness or lightheadedness. Fix: start with 5 rounds (about 2 minutes) and add 1 to 2 rounds a week."
+    }
+  ],
+  "safetyNotes": [
+    "Soft and silent, never strained. The breath should feel easy; air hunger, dizziness or noise means you are pushing too hard.",
+    "Breath retention (kumbhaka): a review table on yoga for hypertension (PMC10989416) says retention raises systolic and diastolic pressure and mean arterial pressure because heart rate and resistance both rise, and advises against long retention in hypertension. A guide says people who are pregnant, have high blood pressure or heart disease, or a condition affecting breathing or consciousness should speak to a health professional before breath retention. Beginners should not hold their breath at all.",
+    "Blocked nose, cold, sinus infection or nosebleeds: skip, or use plain slow breathing.",
+    "Pregnancy: the Government of India WCD \"Yoga for Pregnant Ladies\" guide lists alternate nostril breathing but advises skipping breath retention and fast breathing. Gentle only, supported sitting, check with the doctor or midwife. A pregnancy trial of this practice: Not found.",
+    "High blood pressure and heart disease: no breath holding; ask a doctor first, especially with heart disease; keep taking medicine.",
+    "Asthma and COPD: ask a doctor; gentle pace, no forced or fast breathing, keep the reliever inhaler nearby; skip during an attack or cold. Small studies of pranayama in asthma were seen only in search summaries and a registered trial (NCT07529847) has no results; Anulom Vilom-specific asthma evidence: Not found.",
+    "Other cautions: vertigo, fainting, panic attacks (stop if lightheaded); recent chest or abdominal surgery (ask the surgeon); back or knee problems (sit on a chair). Wellness blogs list dizziness and muscle strain as possible risks when done too fast or incorrectly (snippets).",
+    "Stop immediately if you feel: dizziness, tingling in the hands or lips, chest pain or tightness, wheeze or unusual shortness of breath, a faint feeling, sudden headache, or pain in the nose or ears. Return to natural breathing; if it continues, seek medical help.",
+    "Spotter: not needed. Gym etiquette: not relevant; if practising in a gym studio, keep the space quiet."
+  ],
+  "sources": [
+    "Ministry of AYUSH / MDNIY Common Yoga Protocol (Nadi Shodhana / Anuloma Viloma, 5 rounds in the pranayama block; technique text not confirmed; search summaries): https://www.mea.gov.in/images/pdf/common-yoga-protocol-english.pdf ; https://www.sanskrit.nic.in/uploads/CYP_2022/English.pdf",
+    "AYUSH five-minute professional protocol (news report, snippet): https://udayavani.com/?p=1112453",
+    "Alternate nostril breathing and the parasympathetic nervous system in young adults (snippet): https://pubmed.ncbi.nlm.nih.gov/23814719/ ; Yoga-Mimamsa 2020, Nadi Shodhana 1:3:2 and heart rate (snippet): https://doaj.org/article/bab5f84ba8cf40239bec08e10d243031",
+    "Trials on blood pressure and heart rate (snippets and tables): https://pmc.ncbi.nlm.nih.gov/articles/PMC6691618 ; https://pmc.ncbi.nlm.nih.gov/articles/PMC4247229/ ; https://pubmed.ncbi.nlm.nih.gov/25035609/ ; https://pmc.ncbi.nlm.nih.gov/articles/PMC9748160/table/t0003 ; https://pubmed.ncbi.nlm.nih.gov/18700626/",
+    "Nam et al. 2024, alternate nostril breathing on blood pressure, systematic review and meta-analysis (Karger): https://karger.com/cmr/article/31/5/449/910373/ ; breathing exercises meta-analysis: https://pmc.ncbi.nlm.nih.gov/articles/PMC10765252/",
+    "Yoga for hypertension, precautions and contraindications (table): https://pmc.ncbi.nlm.nih.gov/articles/PMC10989416/table/T3",
+    "Government of India WCD, Yoga for Pregnant Ladies: https://wcd.nic.in/poshan/NNM-Web-Contents/LEFT-MENU/Guidelines/Yoga_for_Pregnant_Ladies_English.pdf",
+    "Healthline and WebMD (Anulom Vilom; snippets): https://www.healthline.com/health/anulom-vilom-pranayama ; https://webmd.com/balance/what-is-anulom-vilom",
+    "Technique and ratio summaries (snippets): https://www.yogapoint.com/pranayama/Nadi_shodhan.htm ; https://pharmeasy.in/blog/health-fitness-benefits-of-anulom-vilom-and-how-to-do-it/ ; https://ask-ayurveda.com/articles/1208-how-to-do-anulom-vilom-stepbystep-guide-and-benefits ; https://astrosight.ai/spirituality/anulom-vilom-pranayama-benefits-how-to",
+    "2024 Adult Compendium of Physical Activities (02150 Yoga, Hatha 2.3; 02153 high intensity 8.0; snippets): https://pacompendium.com/wp-content/uploads/2024/01/2024-adult-compendium_1_2024.pdf ; https://pacompendium.com/conditioning-exercise ; https://pubmed.ncbi.nlm.nih.gov/38242596/ ; older adult compendium: https://pacompendium.com/older-adult-compendium/",
+    "Asthma: registered trial NCT07529847 (no results): https://clinicaltrials.gov/study/NCT07529847 ; small pranayama-in-asthma studies seen only in search summaries",
+    "Condition sources: diabetes breathing trial https://pubmed.ncbi.nlm.nih.gov/23869306/ ; PCOS yoga trial https://pubmed.ncbi.nlm.nih.gov/22507264/",
+    "Ratio: 1:1 then 1:2 (beginner guides) versus 1:3:2 (one study) versus 1:4:2 (traditional text via a pharmacy blog). We chose 1:1 then 1:2 with no retention.",
+    "Anulom Vilom versus Nadi Shodhana: some sources say the first has no holds and the second adds them; the CYP uses both names. We chose no holds.",
+    "Blood pressure: a meta-analysis and a 5-day trial report drops; a healthy-volunteer trial found no significant change. We describe it as possible, small and uncertain.",
+    "MET: no pranayama code found; we chose Hatha yoga 02150 = 2.3 as the nearest confirmed code and flagged it as an upper bound.",
+    "Not found: the AYUSH/MDNIY technique text and its definition of a round; a 2024 Compendium pranayama, meditation or sitting-quietly code; official joint angles for seated posture; Anulom Vilom-specific asthma trial results; pregnancy trial evidence; strong evidence for sleep benefit; condition sources for high cholesterol, obesity, knee pain, lower back pain, shoulder problems, osteoporosis, postpartum, recent surgery, and thyroid. Our thresholds are estimates.",
+    "Most pages were seen only as search snippets or summaries; direct page fetches were not possible, so effect sizes are as reported in abstracts or tables."
+  ],
+  "burnMinutes": {
+    "per100kcal": {
+      "60kg": 43.5,
+      "70kg": 37.3,
+      "80kg": 32.6
+    },
+    "per300kcal": {
+      "60kg": 130.4,
+      "70kg": 111.8,
+      "80kg": 97.8
+    }
+  },
+  "gymAccess": [
+    "none",
+    "home_equipment",
+    "basic_gym",
+    "full_gym"
+  ],
+  "suitsPreferences": [
+    "yoga",
+    "mobility",
+    "relaxation",
+    "stress_relief",
+    "beginner",
+    "small_flat",
+    "quiet",
+    "2_10_min",
+    "morning",
+    "work_break",
+    "evening"
+  ],
+  "swapsByAccess": {
+    "none": "Slow belly breathing (in 4, out 6) or Bhramari",
+    "home_equipment": "Same as none; no equipment needed",
+    "basic_gym": "Seated slow breathing on a bench, or Shavasana on a mat",
+    "full_gym": "Seated slow breathing or Shavasana in a quiet stretching corner"
+  },
+  "conditionCautions": [
+    {
+      "condition": "hypertension",
+      "status": "modify",
+      "change": "Plain slow breathing, no breath holding; ask a doctor",
+      "source": "PMC10989416; Nam 2024 meta-analysis (Karger)"
+    },
+    {
+      "condition": "type2_diabetes",
+      "status": "ok",
+      "change": "Seated, low effort; do not skip medicine; evidence is for a different yogic breathing programme",
+      "source": "PubMed 23869306; Not found (Anulom Vilom-specific)"
+    },
+    {
+      "condition": "heart_disease",
+      "status": "ask_doctor",
+      "change": "Ask a cardiologist; no breath holding; stop for chest discomfort",
+      "source": "PMC10989416"
+    },
+    {
+      "condition": "high_cholesterol",
+      "status": "ok",
+      "change": "No change expected",
+      "source": "Not found"
+    },
+    {
+      "condition": "obesity",
+      "status": "ok",
+      "change": "Chair if the floor is hard; no breath holding",
+      "source": "Not found"
+    },
+    {
+      "condition": "pcos",
+      "status": "ok",
+      "change": "Safe within a wider routine; breathing-only effect unknown",
+      "source": "PubMed 22507264"
+    },
+    {
+      "condition": "thyroid",
+      "status": "ok",
+      "change": "Seated and gentle; evidence limited",
+      "source": "Not found"
+    },
+    {
+      "condition": "asthma",
+      "status": "modify",
+      "change": "Ask a doctor; gentle pace, no forced breathing or holds, inhaler nearby; skip during an attack or cold",
+      "source": "Healthline and WebMD (snippets); NCT07529847 (ongoing); Not found (clinical)"
+    },
+    {
+      "condition": "knee_pain",
+      "status": "modify",
+      "change": "Sit on a chair or cushion; do not force cross-legged",
+      "source": "Not found"
+    },
+    {
+      "condition": "lower_back_pain",
+      "status": "modify",
+      "change": "Chair with a small cushion behind the low back",
+      "source": "Not found"
+    },
+    {
+      "condition": "shoulder_problems",
+      "status": "modify",
+      "change": "Support the right elbow or use the left hand",
+      "source": "Not found"
+    },
+    {
+      "condition": "osteoporosis",
+      "status": "ok",
+      "change": "Seated, low effort; sit tall without forcing the spine",
+      "source": "Not found"
+    },
+    {
+      "condition": "pregnancy",
+      "status": "modify",
+      "change": "Gentle only, no breath retention or fast breathing, supported sitting, check with the doctor",
+      "source": "Government of India WCD, Yoga for Pregnant Ladies"
+    },
+    {
+      "condition": "postpartum",
+      "status": "ask_doctor",
+      "change": "Get clearance after a caesarean or complications; no holds",
+      "source": "Not found"
+    },
+    {
+      "condition": "recent_surgery",
+      "status": "ask_doctor",
+      "change": "Ask the surgeon; avoid deep chest or abdominal breathing if it pulls on stitches",
+      "source": "Not found"
+    }
+  ],
+  "searchTags": {
+    "location": [
+      "home",
+      "office_desk"
+    ],
+    "bodyRegion": [
+      "core"
+    ],
+    "goalTags": [
+      "relaxation",
+      "general_fitness"
+    ],
+    "intensity": "light",
+    "noise": "quiet",
+    "space": "mat_only",
+    "typicalMinutes": 5,
+    "kcalPer10min70kg": 27,
+    "difficulty1to5": 1,
+    "cameraTrackable": true
+  },
+  "tags": [
+    "Yoga & stretch",
+    "Home",
+    "Office desk",
+    "No equipment",
+    "Flat-friendly",
+    "Quiet",
+    "Beginner",
+    "Low impact",
+    "Pranayama",
+    "Hold timer",
+    "Under 10 min"
+  ],
+  "needsReview": [
+    "rep_counter phase \"seated_upright\" (hip (shoulder-hip-knee)): angle \">= 85 and <= 140\" is not a parseable angle"
+  ],
+  "versions": [
+    {
+      "date": "2026-11-28",
+      "file": "FitPlate_Fitness_2026-11-28.md"
+    }
+  ],
+  "mergeMethod": {
+    "met": "single",
+    "instructions": "single",
+    "repCounterThresholds": "single",
+    "lists": "union",
+    "safety": "union (never dropped)",
+    "description": "newest"
+  },
+  "mergeNotes": []
+}
